@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           https://next.voz.vn/
+@namespace      USO Archive
+@author         David Roland
+@description    `clear all* ads (update: 8/25/2018)full width`
+@version        2020103.9.47
+@license        CC-BY-NC-ND-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("voz.vn") {
+  .u-bottomFixer.js-bottomFixTarget {
+    display: none !important; 
+  }
+
+  .u-scrollButtons.js-scrollButtons {
+    opacity: 1 !important; 
+    display: block !important; 
+  }
+  .p-body-main {
+    display: block !important; 
+  }
+  .p-body-inner {
+    max-width: inherit;
+  }
+}

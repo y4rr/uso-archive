@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Switch ☑︎ Trello
+@namespace      USO Archive
+@author         YOSHIOKA Ko
+@description    `Switch display of Trello complete check box.`
+@version        2018524.5.27
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("trello.com") {
+  .checklist-item-state-complete {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Switch JIRA done task
+@namespace      USO Archive
+@author         YOSHIOKA Ko
+@description    `Switch display of JIRA done task on the board.`
+@version        2018418.4.54
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("atlassian.net") {
+    .ghx-issues .ghx-done {
+        display: none !important;
+    }
+}

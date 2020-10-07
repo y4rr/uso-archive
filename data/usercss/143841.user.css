@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           dn.se | Read articles for free
+@namespace      USO Archive
+@author         cocostyle
+@description    `Enables you to read premium articles on DN.se`
+@version        2017612.15.26
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain(dn.se) {
+	.article__lead {
+		position: inherit;
+	}
+	
+  	.paywall {
+  		display: none;
+	}
+	
+  	.article__premium-content {
+  		display: block;
+	}
+}

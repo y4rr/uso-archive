@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           OSN Hide Join/Leave Messages
+@namespace      USO Archive
+@author         Vladmek Sevenwaters
+@description    `Hides the channel join/leave messages,`
+@version        2015116.1.42
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("openscrimnetwork.slack.com") {
+.joined, .left {
+    display: none !important;
+  }
+}

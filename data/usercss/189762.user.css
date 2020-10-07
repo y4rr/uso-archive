@@ -1,0 +1,202 @@
+/* ==UserStyle==
+@name           e-earphone for laptop
+@namespace      USO Archive
+@author         align-x
+@description    `「e☆イヤホンWeb本店」の2020年夏にリニューアルされた新サイトを、ノートパソコンの小さな画面でも見やすく。`
+@version        2020923.16.12
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("e-earphone.jp") {
+/* ヘッダー広告消したい場合 */
+/*.header-area-bn {
+    display:none;
+}*/
+
+/* カテゴリーをアイコン・テキスト2段化 */
+.cate-area-nav {
+    padding: 0 0 10px 0;
+    margin-top: -10px;
+    height: 77px;
+}
+.cate-area-nav li.cate-link {
+    margin: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+.cate-area-nav li.cate-link > ul {
+    top: 75px;
+    text-align: left;
+    width: auto;
+}
+/* カテゴリーメニューの文字を小さく */
+.cate-area-nav li.cate-link > ul > li > a,
+.cate-second-link .accordion-third-item .cate-third-link {
+    font-size: 14px;
+    width: 220px;
+}
+/* カテゴリーサブメニューの微調整 */
+.cate-second-link .accordion-third-item {
+    z-index: 1100;
+    left: 250px;
+}
+.cate-area-nav li.cate-link.arrow-left .accordion-third-item {
+    right: 255px;
+}
+
+/* トップのスライダーバナー画像縮小 */
+ul.slider li.slider-item {
+    height: 229px;
+}
+
+/* トップのスクエアバナー群縮小 */
+.item-col3 ul li {
+    width: 130px;
+    height: 145px;
+    margin: 0 5px 10px;
+}
+.item-col3 ul li img {
+    max-width: 130px;
+}
+.item-col3 ul.pb {
+    padding-bottom: 20px;
+}
+
+
+/* h2各タイトル部 マージンとりすぎ問題 */
+.item-col5 h2.item-area-title,
+.item-col3.item-col3r h2.item-area-title,
+.bn-list-contents h2.bn-area-title {
+    padding: 20px 0 20px;
+    margin: 0;
+}
+
+.item-col5 h2.item-area-title::after,
+.item-col3.item-col3r h2.item-area-title::after {
+    display: none;
+}
+
+/* 総合ランキングのみ 横幅100%補正 */
+.front_page .detail-under-contents-warp .detail-under-contents.total-ranking.pb {
+    width: 100%;
+}
+
+/* 製品・アイテムの調整 */
+.item-list .item-list__contents {
+    margin: 10px 15px 0 0;
+}
+/* 最近チェックしたアイテムの調整 */
+.item-col5 ul.item-list-col5 li.item-list-contents:nth-child(5n-4),
+.item-col5 ul.item-list-col5 li.item-list-contents {
+    margin-bottom: 40px;
+}
+
+/* ランキング */
+.front_page .total-ranking .item-list__contents {
+    margin-bottom: 30px;
+}
+
+/* 中古リスト */
+.item-list .item-list__contents {
+    margin-bottom: 10px;
+}
+/* もっと見るボタンを右へ */
+.contents-btn-box,
+.contents-btn-box.pt80,
+.common-button,
+.common-button.top-pb {
+    text-align: right;
+    padding: 10px 0 10px 0;
+}
+.item-col5 button,
+.item-col3 button {
+    margin: 0 0 20px 0;
+}
+/* 読みものもっとボタンを右へ(なぜか変則) */
+.item-col5 ul li a.button.white {
+    margin: 0 0 20px 610px;
+}
+
+
+/* 総合レビューでかすぎるので小さく*/
+.item-col3.item-col3r li {
+    width: 30%;
+    height: 400px;
+}
+.item-col3.item-col3r li .photo-box-img-col3r {
+    max-height: 145px;
+}
+
+/* おすすめ・特集のタイトルまわりをスッキリさせる */
+.common-border-top-box {
+    padding-top: 0;
+}
+.item-col5 h2.item-area-title,
+.item-col3.item-col3r h2.item-area-title,
+.bn-list-contents h2.bn-area-title {
+    background: #fff;
+}
+
+/* 左カラム */
+/* ニュース・新製品情報をトップに移動 */
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    margin-top:-7px;
+}
+.leftColumn .ec-role {
+    order: 1;
+}
+/* サイドバナー群は下に */
+.leftColumn .side_bnr_wrap {
+    order: 2;
+}
+
+/* ニュース・新製品情報の表示をシンプルに */
+.leftColumn .ec-newsRole__product_news {
+    max-height: 600px;
+}
+.leftColumn .ec-newsRole__news,
+.leftColumn .ec-newsRole__product_news {
+    padding: 0;
+}
+.leftColumn .ec-newsRole__product_newsItem:not(:last-child),
+.leftColumn .ec-newsRole__newsItem:not(:last-child) {
+    border: 0;
+}
+.ec-newsRole__newsDate,
+.ec-newsRole__product_newsDate {
+    background: #f1f1f1;
+    padding: 5px;
+    margin-bottom: 0.5em;
+}
+.ec-newsRole__newsColumn,
+.ec-newsRole__product_newsColumn {
+    padding: 5px;
+}
+
+/* 本日発売 */
+.ec-newsRole__product_newsTitle p[style="color:#de5d50;"],
+.ec-newsRole__product_newsTitle p[style="color:#367da9;"] {
+    font-size: 0px;
+}
+.ec-newsRole__product_newsTitle p[style="color:#de5d50;"]:before {
+    font-size: 12px;
+    content: "本日発売";
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+    border-radius: 3px;
+    background: #de5d50;
+    color: #fff;
+}
+/* 新製品 */
+.ec-newsRole__product_newsTitle p[style="color:#367da9;"]:before {
+    font-size: 12px;
+    content: "新製品";
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+    border-radius: 3px;
+    background: #367da9;
+    color: #fff;
+}
+}

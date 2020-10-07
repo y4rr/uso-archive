@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Twitter Hidden Promotion Cards
+@namespace      USO Archive
+@author         sharkpp
+@description    `Twitter プロモーションカード を非表示にします。`
+@version        201611.4.23
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url("https://twitter.com/") {
+.promoted-tweet {
+    display: none;
+}
+}

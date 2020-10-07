@@ -1,0 +1,72 @@
+/* ==UserStyle==
+@name           AnimeFLV Dark (Beta)
+@namespace      USO Archive
+@author         Abel DLR
+@description    `Plataforma de AnimeFLV mejorada en modo oscuro aun en desarrollo.NOVEDADES:v.1.0- Interfaz modo oscuro.`
+@version        2020104.21.43
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain(animeflv.net) {
+   .CapiTcn tab-content {
+      height: 615px;
+  }
+  .Body {
+      background-color: #101010;
+      color: #c7c7c7;
+  }
+  .CpCnA .CapiTop .Title {
+      color: #fff;
+  }
+  .BtnNw {
+      background-color: #353a3d;
+      color: #c5c5c5 !important;
+  }
+  .WdgtCn {
+      background-color: #080808;
+  }
+  .textarea-outer-wrapper .textarea-wrapper {
+      background: #2b2b2b !important;
+      border: 2px solid #01bcf3 !important;
+  }
+  .Header {
+      background-color: #1f1f1f;
+  }
+  .Wdgt {
+      background-color: #0a0a0a;
+  }
+  .Wdgt>.Top {
+      border-bottom: 1px solid #01bcf3;
+      color: #bfbfbf;
+  }
+  a, .Title {
+      color: #bdbdbd;
+  }
+  .Anime.alt .Image {
+      background-color: #01bcf3;
+  }
+  .Title.Page h1, .Title.Page h2, .Title.Page h3, .Title.Page h4, .Title.Page h5, .Title.Page h6 {
+      color: #cacaca;
+  }
+  .Anime.alt>a>.Title {
+	color: #c7c7c7;
+    transition: all .3s;
+  }
+  .ListCaps>li {
+      border-bottom: 1px solid #01bcf3;
+  }
+  .ListAnmRel>li>a {
+    color: #00f3ff;
+  }
+  .ListCaps>li .Title, .ListCaps>li p:hover {
+  	color: #01bcf3;
+  }
+  @media (min-width: 1020px) {
+	.CpCn.show .CpCnA:before, .CpCn.show .CpCnA:after {
+		background-color: #101010;
+	}
+  }
+  .ShrCnB .Title {
+   color: #dedede; 
+  }
+}

@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Hürriyet - Reklamsız 2020
+@namespace      USO Archive
+@author         Ender Topaloğlu
+@description    `Hürriyet.com.tr Reklamlarını ve Adblock engelleyicisini kaldırma`
+@version        2020926.9.26
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("hurriyet.com.tr") {
+.header-masthead, .premium-popup-container {
+    display:none !important;
+}
+#retouch-main-slider .swiper-pagination {
+    padding:10px;
+}
+
+#retouch-main-slider .swiper-pagination-bullet {
+    height:auto;
+    line-height:normal;
+    margin:0 2px 0 0 !important;
+    width:38.1px;
+    border-radius:5px;
+    padding:5px 0;
+}
+#retouch-flash-slider .swiper-pagination .swiper-pagination-bullet {
+    border-radius:5px;
+    height:auto;
+    padding:5px;
+    width:auto;
+}
+.h16-breaking-news-wrapper {
+    margin-bottom:0px;
+}
+
+.pageskin-fix-control {
+    margin-bottom:90px !important;
+}
+}
