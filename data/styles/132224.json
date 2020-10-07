@@ -1,0 +1,575 @@
+{
+  "id": 132224,
+  "info": {
+    "name": "Vanilla Dark 2 VK Fix/Mod PART 1 of 2",
+    "description": "стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second part\r\nVanilla Dark 2 VK Fix/Mod PART 2 of 2\r\nздесь / is here:\r\nhttps://userstyles.org/styles/165927/\r\n\r\nЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.\r\nНЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 \r\nПосле обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.\r\nПаблос в ВКшечке: https://vk.com/worstmod\r\n\r\nThis Fix/Mod IS NOT A STANDALONE THEME.\r\nMake sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2\r\nThis Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.\r\nCheck https://vk.com/worstmod if you have any questions/suggestions.",
+    "additionalInfo": "НЕКОТОРЫЕ ФИЧИ:\r\n➤ блоки и шапка чёрные и прозрачные (интенсивность видимости настраивается в пределах 0 ... 0.5 ... 1)\r\n➤ мод меню редактирования фоток\r\n➤ квадратные авки где возможно\r\n➤ онлайн индикатор полоска под авкой вместо кружка (включается с квадратными авками)\r\n➤ убираются ссылки слева снизу в меню, сердце на фотках, собственная авка возле поля комментирования\r\n➤ настраиваемая яркость обоев (например 1-оригинальная, 0.5 - половина, 2-двойная)\r\n➤ плеер в шапке сделан шире \r\n➤ всплывающий плеер смещён вправо\r\n▶ + фиксы для Vanilla Dark 2 и ВК",
+    "format": "uso",
+    "category": "vk",
+    "createdAt": "2016-09-01T23:09:08.000Z",
+    "updatedAt": "2020-10-07T05:39:34.000Z",
+    "license": "CC-BY-NC-4.0",
+    "author": {
+      "id": 283125,
+      "name": "awesome_doze"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 9509,
+      "weekly": 6
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "132224_after.jpeg",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "132224_additional_23902.jpeg",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 4,
+      "commentsCount": 7
+    },
+    "data": [
+      {
+        "id": 55524,
+        "title": "Как изменить фон?",
+        "createdAt": "2017-05-01T12:39:03.000Z",
+        "author": {
+          "id": 421795,
+          "name": "Heavy Jke"
+        }
+      },
+      {
+        "id": 55630,
+        "title": "Hernja",
+        "createdAt": "2017-05-05T01:26:48.000Z",
+        "author": {
+          "id": 423765,
+          "name": "freefly"
+        }
+      },
+      {
+        "id": 63159,
+        "title": "Баг",
+        "createdAt": "2018-01-13T08:40:06.000Z",
+        "author": {
+          "id": 582560,
+          "name": "Дмитрий Шорох"
+        }
+      },
+      {
+        "id": 66914,
+        "title": "Сделай непрозрачной нижнюю панельку при просмотре статьи пожалуйста.",
+        "createdAt": "2018-06-03T13:06:19.000Z",
+        "author": {
+          "id": 659707,
+          "name": "John Kerns"
+        }
+      }
+    ]
+  },
+  "style": {
+    "css": "@-moz-document regexp('https?://vk.com/(?!dev/|dev$|apps.act=manage|about$|about.z=|jobs$|jobs.w=|products$|messenger$|ads$|ads/|adscreate$|adsmarket.act=|ads.act=).*'){\r\n\r\ndiv::-webkit-scrollbar{width:12px!important;height:12px!important}\r\ndiv::-webkit-scrollbar-thumb:hover{background:#444!important}\r\n:not(div)::-webkit-scrollbar{width:10px!important;height:10px!important}\r\n:not(div)::-webkit-scrollbar-thumb{background:#333!important}\r\n:not(div)::-webkit-scrollbar-thumb:hover{background:#444!important}\r\n:not(div)::-webkit-scrollbar-corner,::-webkit-scrollbar-track{background:#090909!important}\r\n:not(div)::-webkit-scrollbar-track-piece{background:#171717!important}\r\n\r\n/*[[backgroundorcolor]]*/\r\n\r\n/* fuck tweak.pro / imgur.com (fix https security issue) */\r\n.ui_header_ext_search{filter:var(--filtw)}\r\n.search_filters_minimized_text{background-image:none!important}\r\n.search_filters_minimized_text:before{position:absolute;display:block;content:' ';width:20px;height:20px;left:16px;top:14px;background:url(\"https://vk.com/images/icons/advanced_search.png?2\")no-repeat;filter:var(--filtw)}\r\n[dir] .page_actions_dd_label,[dir] .page_actions_header_inner{background:url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat right 6px!important}\r\n\r\n:root{--dots:url(\"https://vk.com/images/icons/profile_dots.png?1\")!important}\r\n.page_actions_cont.narrow .page_actions_header, .page_actions_cont.narrow .page_extra_actions_btn{color:#93A3BC!important;filter:var(--filtw)}\r\n.page_actions_item.page_actions_item_lock{filter:var(--filt2)}\r\n.page_actions_cont.narrow .page_actions_header_inner{color:#93A3BC!important}\r\n.media_selector .ms_item_more_label,#friend_status .page_actions_header_inner, .page_actions_dd_label, .ui_search_fltr_control, .olist_filter_label,#page_actions_item_lists{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAQAAAC7znxOAAAAR0lEQVQI12P4zzCf8T8DDM5n/c/AMJ9v/rn5zlAB+/n350uAGA3zv4EEgQJf5rcBVf2HCZZDBKBCQMHW+f8hAnAhoKAXjAUAd2U4s6X48xcAAAAASUVORK5CYII=)}\r\n.im-page .im-page--center-empty,.pv_closed_commments_placeholder,.pv_no_commments_placeholder,.im-page .im-page--chat-search-empty{background-image:url(\"https://vk.com/images/icons/first_comment.png\");opacity:.5}\r\n\r\n/*[[lolsquare]]*/\r\n\r\n/*[[darkasshit]]*/\r\n\r\n/*[[hollowhead]]*/\r\n\r\n/*[[nameremove]]*/\r\n\r\n/* поправляем левую менюшку (и логотип) */\r\n#side_bar ol{background:rgba(0,0,0,/*[[opaque]]*/);padding:0px 0px 0px 8px;border:1px solid #2A2A2C;border-radius:4px}\r\n#side_bar li span.left_label.inl_bl{opacity:1!important}\r\n#side_bar .more_div{margin:5px 9px 0px 0px;padding-top:2px;border-top:1px solid #111}\r\n/*[[sidebarnotext]]*/\r\n.top_home_link .top_home_logo{padding-left:8px}\r\n.left_label{transition:filter .3s}\r\n.left_label:hover{filter:brightness(1.4)saturate(.8)}\r\n  \r\n/* и фиксим левый скролл */\r\n#stl_bg{border-right:1px solid #2A2A2C!important}\r\n.stl_active.over #stl_bg{opacity:.8}\r\n\r\n/* фикс страница не найдена */\r\nbody[style*='(https://vk.com/images/error404.png)']:before{background:#595959 url(https://vk.com/images/error404.png) no-repeat 50% 50%;width:100%;height:100%;filter:saturate(0)brightness(.5)contrast(1.3)}\r\n   \r\n/* мод меню редактирования фоток */\r\n#pv_more_act_download.pv_more_act_item:not([href=\"#\"]):before{transform:rotate(180deg)translateY(2px)}\r\n.pv_more_acts{display:flex;flex-direction:row;justify-content:center}\r\n#pv_more_acts_tt{background:rgba(0,0,0,.85);border:1px solid var(--color3)}\r\n.pv_more_act_item{filter:brightness(.6)}\r\n.pv_more_act_item:hover{background:#111!important;filter:none!important}\r\n.eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow_back{border-bottom-color:transparent!important;border-top-color:var(--color3)!important}\r\n.eltt.eltt_top.eltt_arrow_size_normal .eltt_arrow{border-top-color:rgba(0,0,0,.85)!important}\r\n\r\n[dir] #pv_more_acts_tt .pv_more_act_item_sep{display:none}\r\n[dir] #pv_more_acts_tt .pv_more_acts_hidden{border-bottom:1px solid var(--color3);margin-bottom:5px}\r\n[dir] #pv_more_acts_tt .pv_more_act_item{width:0px;overflow:hidden;padding:2px 24px 2px 4px}\r\n[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item{width:144px!important}\r\n[dir] .pv_more_acts_hidden .pv_more_act_item.pv_more_spam_act_item:before{width:0px!important}\r\n[dir] #pv_more_acts_tt{min-width:60px}\r\n[dir] #pv_more_acts_tt .pv_more_act_item:before{width:18px}\r\n    \r\n[dir] #pv_more_acts_tt #pv_more_act_pe:before{background-position:0 -99px}\r\n[dir] #pv_more_acts_tt #pv_more_act_spe::before{background-position:1px -1px!important}\r\n#pv_more_act_rotate_ccw{order:1}\r\n#pv_more_act_rotate_cw{order:2}\r\n#pv_more_act_spe{order:3}\r\n#pv_more_act_pe{order:4}\r\n#pv_more_act_move_to{order:5}\r\n#pv_more_act_download{order:6}\r\n#pv_more_act_to_profile{order:7}\r\n#pv_more_act_place{order:8}\r\n#pv_more_act_market{order:9}\r\n#pv_more_act_as_title{order:10}\r\n#pv_more_act_spam{order:11}\r\n  \r\n/*  мод меню редактирования фоток - подсказки */\r\n#pv_more_act_rotate_ccw:after,#pv_more_act_rotate_cw:after,#pv_more_act_move_to:after,#pv_more_act_pe:after,#pv_more_act_spe:after,#pv_more_act_place:after,#pv_more_act_to_profile:after,#pv_more_act_as_title:after,#pv_more_act_download:after,#pv_more_act_spam:after,#pv_more_act_to_dialog:after,#pv_more_act_market:after{color:#888;display:none;background:var(--color3);border:1px solid #222;padding:3px;margin:-46px -5px}\r\n#pv_more_act_rotate_ccw:hover:after,#pv_more_act_rotate_cw:hover:after,#pv_more_act_move_to:hover:after,#pv_more_act_pe:hover:after,#pv_more_act_spe:hover:after,#pv_more_act_place:hover:after,#pv_more_act_to_profile:hover:after,#pv_more_act_as_title:hover:after,#pv_more_act_download:hover:after,#pv_more_act_spam:hover:after,#pv_more_act_to_dialog:hover:after,#pv_more_act_market:hover:after{display:block;position:absolute}\r\n    \r\n#pv_more_act_rotate_ccw:after{content:\"поворот влево\"}/*ROTATE LEFT*/\r\n#pv_more_act_rotate_cw:after{content:\"поворот вправо\"}/*ROTATE RIGHT*/\r\n#pv_more_act_move_to:after{content:\"в альбом\"}/*MOVE TO ALBUM*/\r\n#pv_more_act_pe:after{content:\"редактор\"}/*PICTURE EDITOR*/\r\n#pv_more_act_spe:after{content:\"эффекты\"}/*EFFECTS*/\r\n#pv_more_act_place:after{content:\"указать место\"}/*MARK PLACE*/\r\n#pv_more_act_to_profile:after{content:\"на аватар\"}/*SET AS AVATAR*/\r\n#pv_more_act_as_title:after{content:\"обложка альбома\"}/*SET AS ALBUM COVER*/\r\n#pv_more_act_download:after{content:\"открыть оригинал\"}/*OPEN ORIGINAL*/\r\n#pv_more_act_spam:after{content:\"пожаловаться\"}/*SPAM*/\r\n#pv_more_act_to_dialog:after{content:\"на обложку беседы\"}/*DIALOG PIC*/\r\n#pv_more_act_market:after{content:\"прикрепление товара\"}/*MARKET*/\r\n\r\n/* мод закладок */\r\n[dir] .bookmarks_rows_group,[dir] .bookmarks_rows_user{padding:10px 5px 14px}\r\n[dir] .bookmark_page_item{height:136px;width:100px;padding:0px 4px}\r\n[dir] .bookmark_page_item .bookmark_page_item__name{margin-top:2px}\r\n[dir] .bookmark_rows_mini .ui_actions_menu_icons{top:9px;right:9px}\r\n[dir] .bookmark_page_item .bookmark_page_item__actions .ui_actions_menu_icons{width:18px;height:14px;border-radius:22%;background-color:rgba(0,0,0,.6);border:1px solid #272727;filter:none!important}\r\n[dir] .bookmark_page_item .bookmark_page_item__actions .ui_actions_menu{right:-12px;top:32px}\r\n\r\n/* делаем блоки чёрными и прозрачными */\r\n.page_block{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-radius:4px;box-shadow:0 1px 0 0 #151515,0 0 0 1px #151515!important}\r\n.wall_module .reply_form,.wr_header:hover,#stl_bg,.audios_module .audio_row.inlined:hover, .wall_audio_rows .audio_row.inlined:hover, .wall_text .audio_row.inlined:hover,#wide_column .audio_row._audio_row:hover,.replies_open:hover,.profile_more_info_link:hover,.video_item .video_restore,.ok_msg,.chat_onl_inner,.im-create .im-create--table > div,.im-page .im-page--header-chat,.nim-dialog:hover,.nim-dialog.nim-dialog_simple:hover,.nim-dialog.nim-dialog_hovered, .nim-dialog:hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted):hover,.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,.im-page.im-page_classic .im-page--mess-search,.nim-dialog.nim-dialog_classic:hover,.reply_box_inner_wrap.fixed,.flat_button.secondary_dark.more_link.flat_btn_lock,.im-to-end._im_to_end,.notifier_baloon,#profile_groups_link:hover,.feed_reposts_more_link,.im-page.im-page_classic.im-page_history-show .im-page--history,.sticker_hints_tt,.mention_tt_actions{background-color:rgba(0,0,0,/*[[opaque]]*/)!important}\r\n.tt_w.tt_default.rich.wall_tt,.tt_w.tt_default.mention_tt{background-color:rgba(0,0,0,.95)!important}\r\n.nim-dialog.nim-dialog_selected:not(.nim-dialog_deleted){background-color:rgba(0,0,0,.8)!important}\r\n.page_block_header.clear_fix,.page_block_header,.settings_block_footer,.flat_button.ui_load_more_btn:not(:hover){background-color:rgba(0,0,0,.3)!important;border-color:transparent}\r\n.photos_container .photos_row,.photos_album_page .photos_row:first-child, .photos_album_page .photos_row:last-child{background-color:rgba(0,0,0,.1)!important;border:1px solid var(--color5)}\r\n.photos_album_thumb.crisp_image{background-color:rgba(0,0,0,.3)!important}\r\n.closed_page{background-color:rgba(0,0,0,.3)!important;border:1px solid var(--color5)}\r\n.closed_page .closed_details{color:var(--color2)}\r\n.ui_tabs, .ui_search_input_block{background-color:rgba(0,0,0,.5)!important}\r\n#wall_search.ui_search_field._field{background-color:rgba(0,0,0,.85)}\r\n.ui_tabs,#friends_search_input_wrap .ui_search_input_block{border-bottom:1px solid #111}\r\n.im-page.im-page_classic .im-page--header{border-top:15px solid rgba(0,0,0,.9)!important;border-left:1px solid #111;border-right:1px solid #111;border-radius:0px;border-bottom:1px solid #111}\r\n.im-page.im-page_classic .im-page--dialogs-search{border-radius:0px}\r\n.im-page.im-page_classic .im-page--dialogs,.im-page.im-page_classic .im-page--dcontent{border-radius:0px;border-top:none}\r\n.im-page.im-page_classic .im-page--dialogs-search,.im-page.im-page_classic .im-page--mess-search{box-shadow:none!important;}\r\n.ui_search{border:none}\r\n.im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:rgba(0,0,0,.9)!important;border-top:1px solid #111!important}\r\n.video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:rgba(0,0,0,.5)!important}\r\n.wall_comments_header{background-color:rgba(0,0,0,.6) !important;border-color:#111 !important}\r\n.wall_module .replies_list{border-top:1px solid #111!important}\r\n#feed_rows .page_media_thumbed_link,#wide_column .page_media_thumbed_link,.im-mess-stack--content .page_media_thumbed_link,.medadd_c_linkcon{background-color:rgba(0,0,0,.5)!important;border-color:transparent}\r\n.page_status_editor .editor{background-color:rgba(0,0,0,.85)!important;border:none}\r\n.page_status_editor .editor div[contenteditable=true]{background-color:transparent;border:none}\r\n.my_current_info{transition:color .5s}\r\n.my_current_info:hover{background-color:transparent;color:#ccc}\r\n\r\n#post_field,#post_field.submit_post_field.dark.submit_post_inited,.wall_module .reply_form .reply_field.submit_post_field,.wr_header,.feed_filters_wrap,.right_list_header,#feed_wall .wall_module .reply_fakebox,[dir] #feed_wall .wall_module .reply_box_inner_wrap,#profile_wall .reply_fakebox,#profile_wall .reply_box_inner_wrap,.reply_fakebox_wrap,.audio_friends_list_wrap,._audio_additional_block._audio_additional_block_friends,.audio_friends_list_wrap,.audio_friends_list._audio_friends_list,.replies_open,#side_bar ol li,.wall_module .reply_fakebox,.profile_info_header,.profile_info_edit,#chat_tab_wrap,#side_bar li span,.im-page.im-page_classic .im-page--dcontent,.im-mess::before,#friends_search_input_wrap,.ui_search_custom input,.ui_search,.im-create.im-create_classic.im-create_material,.im-page.im-page_classic.im-page_creating,.im-create .im-create--chat-name .ui_search_input_block,.pv_cont .pv_reply_form_wrap,.search_filters_minimized_text,.wk_history_tabs,.wall_module .reply_box,.submit_post,.wall_module div.page_media_link_desc_wrap,.im-page.im-page_classic .im-page--chat-body-wrap-inner,.video_desktop_live_intro_wrap,.box_body.box_no_buttons,.mail_box_cont,.box_title_wrap.box_grey,.box_title_wrap.box_grey .box_title,.box_title_wrap,.box_title,.box_controls,.deep_active:not(.closed_comments) .replies .reply_field_wrap .reply_field{background-color:transparent!important}\r\n.like_share_wrap{background-color:rgba(0,0,0,.5)!important}\r\n\r\n#all_shown{color:var(--color1)!important;background:rgba(0,0,0,/*[[opaque]]*/);border:1px solid var(--color3)}\r\n#all_shown:hover{color:#111!important;background:var(--color2);border:1px solid var(--color5)}\r\n\r\n#wl_reply_form_inner.reply_box_open,#wl_reply_form.wl_reply_form_wrap.wall_module.wl_reply_form_fixed{background-color:rgba(0,0,0,.6)!important}\r\n.submit_post{border-color:#111}\r\n.post_upload_dropbox{background:rgba(0,0,0,.9)}\r\n\r\n.wall_module a.wall_reply_greeting{color:#b1b1b1}\r\n.wall_module .replies_open,.wall_module .wr_header{color:var(--color2);transition:color .5s}\r\n.wall_module .replies_open:hover,.wall_module .wr_header:hover{color:var(--color1)}\r\n\r\n.top_profile_vkconnect_name{color:var(--color1)}\r\n.top_profile_vkconnect_row:hover{background-color:var(--color3)}\r\n\r\n/* кнопки */\r\n.flat_button{background-color:rgba(14,14,14,.7)}\r\n.flat_button.secondary{background-color:rgba(10,10,10,.7)}\r\n#wk_content .reply_wrap .flat_button:not(.secondary){background-color:rgba(25,25,25,.7)}\r\n#wk_content .reply_wrap .flat_button:not(.secondary):hover{background-color:var(--color2)}\r\n.page_extra_actions_btn,.page_actions_btn,#profile_edit_act,#profile_gift_send_btn{background-color:rgba(14,14,14,.7)!important}\r\n.page_extra_actions_btn:hover,.page_actions_btn:hover,#profile_edit_act:hover,#profile_gift_send_btn:hover{background-color:rgba(30,30,30,.7)!important}\r\n.page_actions_item:hover:not(.grey_hoverable){background:var(--color3)}\r\n#wk_content #wk_like_wrap,#wk_content ._wk_subscribe_btn{background-color:rgba(25,25,25,.5)}\r\n#wk_content #wk_like_wrap:hover,#wk_content ._wk_subscribe_btn:hover,.flat_button.secondary.feed_ignore_owner_button:hover{background-color:var(--color2);color:#111}\r\n.feed_reposts_more_link:hover,#show_more_link:hover{background-color:var(--color2)!important}\r\n#show_more_link{background-color:rgba(0,0,0,.75)}\r\n.flat_button:not(:hover):active{background-color:var(--color2)!important;color:#333!important}\r\n.flat_button.ui_load_more_btn:hover,.flat_button:hover b{color:#111!important}\r\n.round_button.round_button_large_white{background-color:#2f2f2f;color:#fff;border-radius:8px}\r\n.round_button.round_button_large_white:hover{background-color:#111;color:var(--color1)}\r\n.ownerButton__title{color:#888}\r\n.ownerButton b{color:#969696}\r\n\r\n/* сужаем разделитель годов в фотках */ \r\n.photos_container .photos_period_delimiter{padding:8px 0px 10px}\r\n.photos_period_delimiter_fixed{padding:8px 20px 10px;background-color:rgba(0,0,0,/*[[headopaque]]*/)!important;font-weight:500}\r\n\r\n/* фикс окна быстрого чата - глюк при просмотре картинок*/\r\n.rb_box_wrap.fixed.rb_active.fc_tobottom.hidden{z-index:1!important}\r\n\r\n/* фикс микрочата */\r\n.fc_clist_filter_wrap{border-radius:0px!important}\r\n\r\n/* окна быстрого чата */\r\n.fc_editable.dark{background:transparent!important}\r\n#fc_clist_filter.dark{background:transparent!important}\r\n/*[[fastchat]]*/\r\n\r\n/* иконка выбора фоток/видео */ \r\n.media_check_btn,.photos_photo_edit_row_selector_icon{filter:invert(.93)hue-rotate(170deg)var(--filt2)brightness(.95)!important}\r\n.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector_icon{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20width%3D%2222%22%20height%3D%2222%22%20fill%3D%22%235181B8%22%20rx%3D%2211%22%2F%3E%3Cpath%20stroke%3D%22%23FFF%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M6%2012l3%203%207-7%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E\")}\r\n.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector,.media_check_btn{opacity:.85}\r\n.photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector:hover,.media_check_btn:hover{opacity:1}\r\n\r\n/* чиним фон при загрузке фоток в альбом */\r\n.photos_container_edit_grid .photo_mask_progress{background-color:rgba(30,30,30,.84)}\r\n.photos_photo_edit_row_thumb{background-color:#2A2A2A!important}\r\n.ui_progress .ui_progress_back{background-color:#211F1F;border:1px solid #323232}\r\n.ui_progress .ui_progress_bar{filter:hue-rotate(260deg)contrast(1.4)saturate(.7)}\r\n\r\n/* фикс редактирования фотоальбома */ \r\n.photos_edit_selection_header{background:rgba(0,0,0,.3);margin:0}\r\n.photos_edit_selection_header.photos_header_fixed{padding:8px 20px 10px;background:rgba(0,0,0,/*[[headopaque]]*/)}\r\n.photos_edit_selection_header:not(.photos_header_fixed) .fl_l{margin-left:20px}\r\n.photos_edit_selection_header:not(.photos_header_fixed) .fl_r{margin-right:20px}\r\n.photos_container_edit_grid .photos_photo_edit_row{background:transparent}\r\n.photos_photo_edit_row_desc_input{background:rgba(0,0,0,.3);border-color:var(--color3)!important}\r\n.photos_photo_edit_row_desc_input:focus{background:rgba(0,0,0,.7)!important}\r\n.photos_container_edit_grid .photos_photo_edit_row_desc_placeholder{background:rgba(0,0,0,.3)}\r\n.photos_cancel_move{background-color:rgba(0,0,0,.8)}\r\n\r\n/* альбом без фоток подпись */\r\n.photos_container_albums .photos_album_no_cover .photos_album_title_wrap{color:var(--color7)}\r\n\r\n/* фотки товара */\r\n.market_ei_photo_add{background-color:#EFEFEF;filter:invert(.95)saturate(0)}\r\n.market_ei_photo_add_label{color:#AAA}\r\n.market_ei_photo{background-color:#1C1C1C}\r\n.market_edit_item_box .result_list li.disabled{border-top:1px solid var(--color3)}\r\n[src=\"/images/market_camera.png\"]{filter:invert(.98)hue-rotate(180deg)saturate(.3)}\r\n\r\n/* треклист / плееры */\r\n.ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}\r\n.audio_page_player2{background:rgba(0,0,0,.5)}\r\n.audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)}\r\n\r\n\r\n\r\n/*[[moveplayer]]*/\r\n\r\n/*[[blackaudioplay]]*/\r\n/*[[audioplayhollow]]*/\r\n\r\n/*[[burnmotherfucker]]*/\r\n/*[[emojizoom]]*/\r\n/*[[flushshit]]*/\r\n/*[[fuckstories]]*/\r\n/*[[chaticonremove]]*/\r\n/*[[audiosendremove]]*/\r\n/*[[nomoneysend]]*/\r\n\r\n/*[[countsfold]]*/\r\n\r\n\r\n}\r\n\r\n\r\n@-moz-document regexp('https?://vk\\\\.com/doc-?[0-9]*\\_[0-9]*.*'),regexp('https?://vk\\\\.com/away\\\\.php.*'){\r\nbody:before{filter:brightness(.5)!important}\r\n.can_zoom,.can_zoom_out{box-shadow:0px 0px 30px 10px #000;margin-top:10px}\r\n.docs_panel{background-color:rgba(0,0,0,/*[[opaque]]*/)}\r\n}\r\n\r\n@-moz-document regexp('https?://vk\\\\.com/video.*'),regexp('https?://vk\\\\.com/audios.*'){\r\n/* фикс поиска видео/аудио */\r\n#page_wrap,#page_layout{overflow:visible!important}\r\n}\r\n\r\n@-moz-document regexp('https?://vk\\\\.com/widget_like.php.*'){\r\n/* фикс виджетов */\r\n.widgets_popup_box_body, .widgets_popup_box_body #box_layer_bg, .widgets_popup_box_body #box_loader{background:transparent!important}\r\n.widgets_popup_box_body .popup_box_container .box_layout{box-shadow:0px 1px 0px 0px var(--color5),0px 0px 0px 1px var(--color4)}\r\n.widget_body .box_title_wrap.box_grey .box_title, .widget_body .box_title_wrap, .widget_body .box_title_wrap.box_grey, .widget_body .mention_tt_actions{background-color:var(--color3)!important}\r\n.widget_body #wpost_post, .widget_body .box_body, .widget_body .tt_default, .widget_body .tt_default_right{background-color:var(--color9)!important;border-color:var(--color5)!important}\r\n.widget_body .flat_button{background-color:var(--color3)!important}\r\n.widget_body .flat_button:hover{background-color:var(--color1)!important;color:var(--color5)!important}\r\n}\r\n\r\n",
+    "settings": [
+      {
+        "key": "blackaudioplay",
+        "label": "Чёрные кнопки плеера + загрузчики:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "blackaudioplaycream",
+            "label": "Cream",
+            "value": "/* чёрные кнопки плеера Cream */  \r\n.audio_play {filter:invert(1)hue-rotate(18deg)brightness(1.14)!important}\r\n.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.8)saturate(0.5)!important}\r\n  \r\n/* фикс VK Music Downloader - Cream */\r\n.wall_module .post_share_icon[class=\"download_all clear_fix post_share_icon \"]{opacity: 0.6!important;filter:invert(1)hue-rotate(18deg)brightness(1.15)saturate(1)!important}\r\n\r\n/* аудиопоиск - Cream */\r\n.ui_search_new .ui_search_controls{filter:invert(0)saturate(1.5)hue-rotate(0deg)brightness(0.9)!important}\r\n.ui_search_button_search,/*кнопка отправки сообщения*/.im-send-btn{filter:invert(0)saturate(1.5)brightness(1)hue-rotate(190deg)!important}\r\n.ui_multiselect_cnt .token .token_del,.ui_search_filters_pane .token .token_del{filter:brightness(0.9)hue-rotate(190deg)!important}\r\n.ui_multiselect_cnt .token .token_del:hover,.ui_search_filters_pane .token .token_del:hover{filter:brightness(0.5)hue-rotate(190deg)!important}\r\n\r\n/* tweak.pro death fix - Cream */  \r\n:root{--filtw:hue-rotate(190deg)brightness(0.9)}  \r\n",
+            "default": true
+          },
+          {
+            "key": "blackaudioplayaqua",
+            "label": "Aqua",
+            "value": "/* чёрные кнопки плеера Aqua */  \r\n.audio_play {filter:invert(1)hue-rotate(138deg)brightness(1)saturate(1.5)!important}\r\n.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.2)saturate(1)!important}\r\n\r\n/* фикс VK Music Downloader - Aqua */\r\n.wall_module .post_share_icon[class=\"download_all clear_fix post_share_icon \"]{opacity: 0.6!important;filter:invert(1)hue-rotate(138deg)brightness(1.15)saturate(1)!important}\r\n\r\n/* аудиопоиск - Aqua */\r\n.ui_search_new .ui_search_progress{filter:invert(0.95)hue-rotate(138deg)brightness(1)saturate(1.5)!important}\r\n\r\n/* tweak.pro death fix - Aqua  */\r\n:root{--filtw:hue-rotate(330deg)saturate(1.5)}\r\n",
+            "default": false
+          },
+          {
+            "key": "blackaudioplayrose",
+            "label": "Rose",
+            "value": "/* чёрные кнопки плеера Rose */  \r\n.audio_play {filter:invert(1)hue-rotate(330deg)brightness(1)saturate(2.7)!important}\r\n.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(180deg)brightness(1.4)saturate(1)!important}\r\n  \r\n/* фикс VK Music Downloader - Rose */\r\n.wall_module .post_share_icon[class=\"download_all clear_fix post_share_icon \"]{opacity: 0.6!important;filter:invert(1)hue-rotate(330deg)brightness(1)saturate(2.7)!important}\r\n  \r\n/* аудиопоиск - Rose */\r\n.ui_search_button_search,/*кнопка отправки сообщения*/.im-send-btn{filter:invert(0)saturate(3)brightness(1)hue-rotate(160deg)!important}\r\n.ui_search_new .ui_search_progress{filter:invert(0.92)hue-rotate(330deg)brightness(1)saturate(1.7)}\r\n\r\n.im-page.im-page_classic .im-page--back:before,.im-page .im-page--header-icon.im-page--header-icon_search::before{filter:hue-rotate(150deg)saturate(2.7)}\r\n\t\r\n/* tweak.pro death fix - Rose */\r\n:root{--filtw:hue-rotate(150deg)saturate(2.5)}\r\n",
+            "default": false
+          },
+          {
+            "key": "blackaudioplaymint",
+            "label": "Mint",
+            "value": "/* чёрные кнопки плеера Mint */ \r\n.audio_play {filter:invert(1)hue-rotate(100deg)brightness(1)saturate(2)!important}\r\n.audio_page_player .audio_page_player_play {filter:invert(1)hue-rotate(195deg)brightness(1.4)saturate(1)!important}\r\n  \r\n/* фикс VK Music Downloader - Mint */\r\n.wall_module .post_share_icon[class=\"download_all clear_fix post_share_icon \"]{opacity: 0.6!important;filter:invert(1)hue-rotate(100deg)brightness(1)saturate(2)!important}\r\n\r\n/* аудиопоиск - Mint */\r\n.ui_search_new .ui_search_controls{filter:invert(0)brightness(1)saturate(1.9)!important}\r\n.ui_search_button_search,/*кнопка отправки сообщения*/.im-send-btn{filter:hue-rotate(260deg)brightness(1)saturate(3)}\r\n.ui_multiselect_cnt .token .token_del,.ui_search_filters_pane .token .token_del{filter:brightness(0.9)hue-rotate(260deg)!important}\r\n.ui_multiselect_cnt .token .token_del:hover,.ui_search_filters_pane .token .token_del:hover{filter:brightness(0.5)hue-rotate(260deg)!important}\r\n\r\n/* tweak.pro death fix - Mint */\r\n:root{--filtw:hue-rotate(280deg)saturate(2.5)}\r\n",
+            "default": false
+          },
+          {
+            "key": "blackaudioplayoff",
+            "label": "off",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "audioplayhollow",
+        "label": "Прозрачные кнопки плеера:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "audioplayhollowon",
+            "label": "Вкл",
+            "value": "/* прозрачные кнопки плеера */  \r\n[dir] .audio_row__play_btn,.audio_row.audio_row__playing .audio_row__play_btn{width:0px!important}\r\n[dir] .audio_page_player .audio_page_player_play,[dir] .audio_pl_snippet_play_small{filter:none!important}\r\n[dir] .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row .audio_row__cover_icon,[dir] .audio_pl_snippet_play_small,[dir] .audio_pl_attach_preview .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play .icon,[dir] .audio_artist_snippet__play:before{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C18.9991283%20C7%2C19.5518945%207.3722949%2C19.7518034%207.8248086%2C19.4501276%20L18.1751914%2C12.5498724%20C18.6307206%2C12.2461863%2018.6277051%2C11.7518034%2018.1751914%2C11.4501276%20L7.8248086%2C4.5498724%20C7.36927939%2C4.24618626%207%2C4.44463086%207%2C5.00087166%20L7%2C18.9991283%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E\")!important}\r\n[dir] .audio_row.audio_row__playing .audio_row__play_btn:after,[dir] .audio_w_covers .audio_row.audio_row__playing .audio_row__cover_icon,[dir] .audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:before,[dir] .audio_pl_snippet2.audio_pl__playing .audio_pl_snippet__action_btn_listen:hover:before,[dir] .audio_page_player2 .audio_page_player_play.audio_playing .icon,[dir] .audio_pl__playing .audio_artist_snippet__play:before{background-image:url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%2224%22%20height%3D%2224%22%20opacity%3D%22.2%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M7%2C4.7081449%20C7%2C4.31704727%207.31387329%2C4%207.69674683%2C4%20L10.3032532%2C4%20C10.6880558%2C4%2011%2C4.30533409%2011%2C4.7081449%20L11%2C19.2918551%20C11%2C19.6829527%2010.6861267%2C20%2010.3032532%2C20%20L7.69674683%2C20%20C7.31194418%2C20%207%2C19.6946659%207%2C19.2918551%20L7%2C4.7081449%20Z%20M13%2C4.7081449%20C13%2C4.31704727%2013.3138733%2C4%2013.6967468%2C4%20L16.3032532%2C4%20C16.6880558%2C4%2017%2C4.30533409%2017%2C4.7081449%20L17%2C19.2918551%20C17%2C19.6829527%2016.6861267%2C20%2016.3032532%2C20%20L13.6967468%2C20%20C13.3119442%2C20%2013%2C19.6946659%2013%2C19.2918551%20L13%2C4.7081449%20Z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E\")!important}\r\n.audio_row__play_btn:after,.audio_row.audio_row__playing .audio_row__play_btn:after{width:24px;height:24px;display:block;content:' ';opacity:.7;transform:scale(.7)}\r\n.audio_row:hover .audio_row__play_btn:after,.audio_w_covers .audio_row .audio_row__cover_icon:hover{opacity:.9}\r\n.audio_pl_snippet_play_small,.audio_pl_attach_preview .audio_pl_attach_preview__play,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before{background-color:transparent!important;opacity:.6}\r\n.audio_w_covers .audio_row .audio_row__cover_icon,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:before,.audio_artist_snippet__play:before{opacity:.7;transition:opacity .5s}\r\n.audio_pl_attach_preview .audio_pl_attach_preview__play:hover,.audio_pl_snippet2 .audio_pl_snippet__action_btn_listen:hover:before,.audio_artist_snippet__play:hover:before{opacity:1}\r\n.audio_pl_attach_preview.audio_pl__playing .audio_pl_attach_preview__play{transform:scale(.8)}\r\n.audio_page_player2 .audio_page_player_play .icon,.audio_page_player2 .audio_page_player_play.audio_playing .icon{background-color:transparent!important;background-position:3px 2px;opacity:.7;transition:opacity .5s}\r\n.audio_page_player2 .audio_page_player_play .icon:hover,.audio_page_player2 .audio_page_player_play.audio_playing .icon:hover{opacity:1}\r\n",
+            "default": true
+          },
+          {
+            "key": "audioplayhollowoff",
+            "label": "Неа",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "lolsquare",
+        "label": "Оквадрачивание:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "lolsquareon",
+            "label": "банзай",
+            "value": "/* .............. <ОКВАДРАЧИВАНИЕ> .............. */\r\n\r\n/* квадратные авки */\r\n.ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .top_notify_cont .feedback_img, .feedback_img, .ui_zoom_inner, .top_profile_img, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage{border-radius:2px!important} \r\n\r\n[dir] .like_share_ava.wdd_imgs .wdd_img_full{border-radius:0px!important;border:solid 2px transparent;box-shadow: 0px 0px 1px 1px var(--color2)}\r\n[dir] .like_share_ava.wdd_imgs .wdd_img_full .wdd_img{border-radius:0px!important} \r\n\r\n[dir] .im-invitation--user img{border-radius:10px!important}\r\n\r\n[dir] svg+.media_voting_footer_voted_friend+.media_voting_footer_voted_friend,[dir] svg+.media_voting_footer_voted_friend+.media_voting_footer_voted_friend+.media_voting_footer_voted_friend{clip-path:none}\r\n\r\n[dir] .notifier_image{clip-path:none!important}\r\n\r\n/* прямоугольное поле поиска в шапке и плашка перехода вниз в сообщениях */\r\n[dir] input.text.ts_input,[dir] .im-to-end .im-to-end--label{border-radius:2px}\r\n\r\n/* прямоугольные иконки импорта контактов из соцсетей */\r\n[dir] .friends_import_icon,[dir] .friends_import_box_icon{border-radius:2px} \r\n\r\n/* квадратные аудио иконки */\r\n[dir] .audio_play,[dir] .audio_page_player .audio_page_player_play .icon{border-radius:2px}\r\n\r\n/* диалог есть непрочитанные - полоска слева вместо кружка справа, квадрат вместо кружка */   \r\n[dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {display:block;border-radius:0px!important;min-width:3px;width:0px;bottom:0px;left:-85px;height:100%;opacity:0.7!important}\r\n[dir] .nim-dialog--unread._im_dialog_unread_ct{border-radius:2px!important;opacity:0.7!important;font-weight:700}\r\n[dir] .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread{display:block;border-radius:0px!important;min-width:3px;width:0px!important;bottom:0px;left:-72px;height:100%!important;opacity:0.7!important}\r\n\r\n/* прямоугольные списки друзей */\r\n[dir] .friends_lists .friends_lists_group{border-radius:2px}\r\n\r\n/* квадратный счётчик уведомлений */  \r\n[dir] .top_notify_count{padding:1px 3px;border-radius:2px;height:10px;line-height:10px;left:24px}\r\n[dir] .ui_rmenu_count{font-weight:900;padding:1px 6px 2px;border-radius:2px;font-size:11px;color:var(--color5);}\r\n[dir] #side_bar ol li .left_row .left_count_wrap{border-radius:2px!important} \r\n\r\n/* квадратный счётчик миничата */ \r\n[dir] .chat_tab_counter{padding:0px 2px 0px 0px;border-radius:2px;font-weight:700;font-size:10px}\r\n\r\n/* квадратная иконка закрытия миничата */ \r\n[dir] .chat_tab_close{width:12px;height:12px;border-radius:2px}\r\n\r\n/* иконка видео и гифок */\r\n[dir] .video_module .video .page_video_play_icon,[dir] .video_thumb_play,[dir] .page_post_video_play_inline,[dir] .page_gif_play_icon,[dir] .page_gif_progress_icon{background:rgba(0,0,0,0.3) url(\"https://vk.com/images/icons/video_play_small.png?1\") no-repeat scroll 11px 6px;width:36px;height:36px;border-radius:4px}\r\n[dir] .page_video_play_icon:active,[dir] .video_thumb_play:active,[dir] .page_post_video_play_inline:active,[dir] .page_gif_play_icon:active,[dir] .page_gif_progress_icon:active{background:rgba(0,0,0,0.6) url(\"https://vk.com/images/icons/video_play_small.png?1\") no-repeat scroll 11px 6px;transform:scale(0.85)}\r\n[dir] .video_module .video .page_video_play_icon,[dir] .page_post_video_play_inline,[dir] .page_gif_play_icon,[dir] .page_gif_progress_icon{opacity:0.5;transition:opacity 0.3s}\r\n[dir] .video_module .video .page_video_play_icon:hover,[dir] .page_post_video_play_inline:hover,[dir] .page_gif_play_icon:hover,[dir] .page_gif_progress_icon:hover{opacity:1;transition:opacity 0.7s}\r\n\r\n/* стрелка сворачивания комментов */ \r\n[dir] .replies_side_wrap .replies_side{width:32px;height:32px;border-radius:5px!important;filter:invert(0.95)saturate(0)!important}\r\n\r\n/* онлайн индикатор полоска под авкой вместо кружка */  \r\n[dir] .feed_asc_user_thumb._online.online:not(.mobile)::after,[dir] .post_image._online.online:not(.mobile)::after,[dir] .wddi_thumb._online.online:not(.mobile)::after,[dir] .nim-peer.online:not(.mobile)::after,[dir] .chat_tab_imgcont.online:not(.mobile)::after,[dir] span.fc_contact_photo.online:not(.mobile)::after,[dir] .online:not(.mobile)::after,[dir] .ts_contact_photo.online:not(.mobile)::after,[dir] .ui_zoom_wrap .online:not(.mobile)::after,[dir] .im-create .im-creation--item .olist_item_photo_wrap.online:not(.mobile)::after,[dir] .search_item_img_link._online:not(.mobile)::after,[dir] .group_u_photo._online.online:not(.mobile)::after,[dir] .Avatar--online:after{bottom:-3px;left:0%;height:2px;width:100%;border:0px;border-radius:0%;content:' ';display: block;filter:saturate(1.7)}\r\n\r\n[dir] .friends_user_row .online::after,[dir] .fans_fan_ph.online::after{bottom:-4px;right:0%;border:0px;height:3px;width:100%;border-radius:0%}  \r\n  \r\n[dir] .feed_asc_user_thumb,[dir] .friends_photo_wrap,[dir] .fans_fanph_wrap,[dir] .wddi_thumb,[dir] .post_image._online,[dir] .nim-peer,[dir] .chat_tab_imgcont,[dir] ._chat_tab_image._online,[dir] span.fc_contact_photo,[dir] .ts_contact_photo,[dir] .ui_zoom_wrap,[dir] .online,[dir] .search_item_img_link._online.online,[dir] .search_item_img,[dir] .search_row .img,[dir] .group_u_bigph_wrap,[dir] .MessageForward__content .ListItem__main{overflow:visible!important}\r\n\r\n/* фильтр + фикс индикатора онлайн с мобилки */ \r\n[dir] .online.mobile::after{filter:saturate(1.7);background-color:var(--color4)!important;border:1px solid #111!important;left:0px;bottom:0px!important}\r\n[dir] .Avatar--online.Avatar--mobile:after{background-color:#191919}\r\n\r\n/* друзья в группе  */\r\n[dir] .group_friends_image{border-radius:4px}\r\n\r\n/* меня твои истории просто доебали уже */\r\n[dir] .story_feed_new_item .stories_feed_item_ava,[dir] .stories_feed_item_ava,[dir] .story_view_info .story_view_row_ava,[dir] .story_view_answer_form_ava,[dir] .stories_feed_item_ava_img{border-radius:2px!important}\r\n[dir] .story_view_feedback_button{border-radius:5px!important}\r\n\r\n/* ^^^^^^^^^^^^^^^ <ОКВАДРАЧИВАНИЕ> ^^^^^^^^^^^^^^^ */\r\n",
+            "default": true
+          },
+          {
+            "key": "lolsquareof",
+            "label": "не, кружочки няшные ( ´ ▽ ` ).｡ｏ♡",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "darkasshit",
+        "label": "Цвета темнее:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "darkasfuck",
+            "label": "для совсем сумрачных личностей",
+            "value": "/* совсем тёмные цвета темы */\r\n:root{--color3:#111111;--color4:#090909;--color5:#050505;--color9:rgba(5,5,5,0.95)}\r\n.top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)}\r\n#pv_box{background:var(--color4)}\r\n#pv_box .pv_reply_form_wrap{margin-top:0px!important;border-top:1px solid var(--color3)}\r\n.audio_layer_rows_cont{background-color:transparent!important}\r\n",
+            "default": false
+          },
+          {
+            "key": "darkasshiton",
+            "label": "чутка",
+            "value": "/* цвета темы потемнее */\r\n:root{--color3:#191919;--color4:#0A0A0A;--color5:#070707;--color9:rgba(20,20,20,0.85)}\r\n.top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(0.7)opacity(1)}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)}\r\n#pv_box{background:var(--color4)}\r\n#pv_box .pv_reply_form_wrap{margin-top:0px!important;border-top:1px solid var(--color3)}\r\n.audio_layer_rows_cont{background-color:rgba(0,0,0,0.6)!important}\r\n",
+            "default": true
+          },
+          {
+            "key": "darkasshitoff",
+            "label": "выкл",
+            "value": ".audio_layer_rows_cont{background-color:rgba(0,0,0,0.5)!important}\r\n",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "moveplayer",
+        "label": "➤ Всплывающий плеер справа:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "moveplayeron",
+            "label": "давай",
+            "value": "/* всплывающий плеер справа */\r\n#top_audio_layer_place > #audio_layer_tt{position:fixed!important;top:42px!important;right:0px!important;left:auto!important}\r\n#audio_layer_tt > .eltt_arrow_back{display:none}",
+            "default": true
+          },
+          {
+            "key": "moveplayeroff",
+            "label": "отбой",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "burnmotherfucker",
+        "label": "🔥💔 Сжечь сердца:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "burnmotherfuckerburn",
+            "label": "жги огнём!",
+            "value": "/* сжечь сердца */\r\n.like_btns .like_btn.like .like_button_icon{background:transparent url(https://vk.com/images/icons/apps_catalog_icons.png)no-repeat -7px -313px!important;width:16px;height:18px;margin-left:4px}\r\n.like_wrap.lite .like_button_icon{transform:scale(0.85);width:16px;height:17px;position:relative;bottom:1px}\r\n.wall_module .reply .like_btn,.wcomments_post_content .like_btn{padding:10px 10px 0 10px!important}\r\n.like_btn.like .like_button_icon, .like_btn.comment .like_button_icon, .like_btn.share .like_button_icon,.like_button_icon.mv_plus_icon.mv_add_icon_curr{filter:brightness(.3)sepia(100)saturate(1)hue-rotate(170deg)var(--filt2)!important}\r\n.like_btn.like.active .like_button_icon,.like_button_icon.mv_added_icon.mv_add_icon_curr{filter:brightness(.5)sepia(100)saturate(1.8)hue-rotate(170deg)var(--filt2)!important}\r\n.like_button_count,.like_views._views{color:var(--color2)}\r\n.like_views._views:before{filter:var(--filt2)}\r\n",
+            "default": true
+          },
+          {
+            "key": "burnmotherfuckernope",
+            "label": "пощадить бабские сердечки",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "emojizoom",
+        "label": "😊 Увеличение смайликов:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "emojizoomon",
+            "label": "вкл",
+            "value": "/* увеличение смайликов */\r\n.emoji_tt_wrap{zoom:125%;bottom:24px;right:-8px}\r\n.im-chat-input .emoji_tt_wrap.tt_down{bottom:30px;right:-12px}\r\n.im-mess--text img.emoji,.im-mess--text img.emoji_css,.reply_text img.emoji,.reply_text img.emoji_css,.reply_field img.emoji,.reply_field img.emoji_css,.im-chat-input--text img.emoji,.im-chat-input--text img.emoji_css,#submit_post_box img.emoji,#submit_post_box img.emoji_css,.wall_post_text img.emoji,.wall_post_text img.emoji_css,#wpe_text img.emoji,#wpe_text img.emoji_css{zoom:125%}",
+            "default": true
+          },
+          {
+            "key": "emojizoomoff",
+            "label": "выкл",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "fastchat",
+        "label": "Окна быстрого чата:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "fastchatblack",
+            "label": "прозрачно-чёрные",
+            "value": "/* окна быстрого чата (прозрачные) */\r\n.fc_tab_head,.fc_tab_txt{background:rgba(0,0,0,/*[[opaque]]*/)!important;border-color:#222!important}\r\n.fc_tab{background:rgba(0,0,0,0.9);border-color:#222!important}\r\n.fc_msgs_wrap:not(.fc_msgs_out) .fc_msgs{background:#111!important}\r\n.chats_sp.rb_resize{filter:brightness(0.2)!important}\r\n.fc_clist_filter_wrap{background:rgba(0,0,0,0.9)!important;border-color:#222!important}\r\n.fc_contacts{background:rgba(0,0,0,0.9)!important}\r\n.fc_contact.clear_fix.fc_contact_over{background:#111!important}\r\n.fc_tab_notify{background:#090909!important;border:none}\r\n.fc_tab_pointer::before{border-left-color:#282828!important}\r\n.fc_tab_pointer::after{border-left-color:#000!important}\r\n.fc_msgs_unread {background-color:rgba(47,47,47,0.3)!important}",
+            "default": true
+          },
+          {
+            "key": "fastchatsimple",
+            "label": "обычные (неплохо для сумрачных личностей)",
+            "value": "/* окна быстрого чата (непрозрачные) */\r\n.fc_clist_filter_wrap{background:var(--color4)!important}\r\n.fc_contacts,.fc_tab{background:var(--color4)!important}\r\n.fc_tab_pointer::before{border-left-color:var(--color3)}\r\n.fc_tab_pointer::after{border-left-color:var(--color4)}\r\n",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "hollowhead",
+        "label": "Прозрачная шапка:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "hollowheadon",
+            "label": "вкл",
+            "value": "/* прозрачная шапка */\r\n[dir] #page_header_cont{background-color:rgba(0,0,0,0.75)!important;border:none!important}\r\n[dir] .TopSearch__input{background-color:transparent!important;color:#fff;filter:var(--filt2)saturate(.7)brightness(.7)}\r\n#ts_wrap .input_back .input_back_content{color:#999!important}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)!important}\r\n.top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(2.5)opacity(1)!important}\r\n[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}\r\n\r\n/* затемняем лого - букву Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.4;transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:0.8;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке цвет текста */\r\n.top_audio_player .top_audio_player_title{color:#909090!important}\r\n",
+            "default": true
+          },
+          {
+            "key": "hollowheadoff",
+            "label": "выкл",
+            "value": "/* поиск в шапке фикс фона */\r\n[dir] .TopSearch__input{background-color:var(--color4)}\r\n\r\n/* затемняем лого - букву Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.4;transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:0.8;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке цвет текста */\r\n.top_audio_player .top_audio_player_title{color: #909090 !important}\r\n",
+            "default": false
+          },
+          {
+            "key": "hollowheadoffcolor",
+            "label": "выкл (цветная шапка)",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "headopaque",
+        "label": "➥ Непрозрачность шапки:",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": ".8",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "opaque",
+        "label": "➥ Непрозрачность блоков:",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": ".77",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "wallbrightness",
+        "label": "➦ Яркость обоины:",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": ".75",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "wallsetup",
+        "label": "Обои:",
+        "type": "image",
+        "options": [
+          {
+            "key": "wallmountplanets",
+            "label": "➤ Горы и планеты",
+            "value": "https://pp.userapi.com/c622022/v622022443/27a46/fi30MbHBZ4g.jpg",
+            "default": true
+          },
+          {
+            "key": "wallminimalglitch",
+            "label": "➤ Озеро и горы глитч",
+            "value": "https://pp.userapi.com/c836724/v836724428/f080/tsrV8cA4ih8.jpg",
+            "default": false
+          },
+          {
+            "key": "wallyosemiteroad",
+            "label": "➤ Дорога Йосемите",
+            "value": "https://pp.userapi.com/c7010/v7010434/d2ae/fUDU1qPsk-Q.jpg",
+            "default": false
+          },
+          {
+            "key": "wallnuthouse",
+            "label": "➤ Дурдом",
+            "value": "https://pp.userapi.com/c836724/v836724428/f01c/j5s_HXyOEIY.jpg",
+            "default": false
+          },
+          {
+            "key": "wallgreydots",
+            "label": "➤ Точки",
+            "value": "https://pp.userapi.com/c836724/v836724428/eff4/ZQCyWMJca2A.jpg",
+            "default": false
+          },
+          {
+            "key": "wallflowers",
+            "label": "➤ Цветочки",
+            "value": "https://pp.userapi.com/c628618/v628618428/518fc/iX0weUIDv1U.jpg",
+            "default": false
+          },
+          {
+            "key": "wallnightbridge",
+            "label": "➤ Ночь сказочный мост ",
+            "value": "https://pp.userapi.com/c624330/v624330499/117e8/gfGTAKr7Oio.jpg",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "backgroundorcolor",
+        "label": "Сплошной цвет вместо обоев:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "backgroundon",
+            "label": "нафиг это",
+            "value": "/* обоина */\r\nbody:before{content:\"\";position:fixed;left:0;right:0;top:0;bottom:0;z-index:-1;display:block;\r\n/* ссылка на обои */\r\n  background: #111 url(/*[[wallsetup]]*/) center fixed;background-size:cover;background-repeat:no-repeat;\r\n  width:20000px;height:20000px;\r\n/* фильтры обоев (яркость)*/\r\n  filter:brightness(/*[[wallbrightness]]*/);\r\n}\r\nbody[onresize]{background:#111!important}\r\n",
+            "default": true
+          },
+          {
+            "key": "backcoloron",
+            "label": "давай (цвет настраивай ниже)",
+            "value": "/* цвет вместо обоины */\r\nbody{background:/*[[backcolor#]]*/!important}\r\n",
+            "default": false
+          },
+          {
+            "key": "backgroundvanilla",
+            "label": "обои как в Ванилле (цвет настраивай ниже)",
+            "value": "/* цвет фона обоины ваниллы */\r\nbody{background-color:/*[[backcolor#]]*/!important}\r\n",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "backcolor#",
+        "label": "Цвет сплошного цвета:",
+        "type": "color",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "#070707",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "flushshit",
+        "label": " ♻ Убрать шлак:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "flushshiton",
+            "label": "ну канешн",
+            "value": "/* чистим шлак: нафиг ссылки слева в меню, нафиг сердце на фотках, нафиг вскукареки о заполнении инфы, нафиг рекламу рекомендаций из ленты */\r\n.left_menu_nav_wrap,.pv_cont .pv_hh_like,.profile_rate_warning,.mv_chat_reply_author_photo{display:none}\r\n.mv_chat_reply_input_wrap{margin-left:10px}\r\n.mv_chat_reply_submit_btn{padding-right:10px}\r\n.pv_cont .pv_reply_form_wrap .reply_field_wrap{margin:0 4px 0 4px}\r\n.pv_cont .wall_module .reply .dld{padding-left:0px}\r\n\r\n/* возможные друзья в ленте новостей */\r\n#feed_filters .friends_possible_block,.feed_friends_recomm{display:none!important}\r\n\r\n/* реклама */\r\n._ads_promoted_post_data_w,[class*=\"_ads_block\"]{display:none!important}\r\n\r\n/* fuck мылору */\r\n[aria-label=\"Актуальные новости\"]{display:none}\r\n\r\n/* лента рекомендаций */\r\n.page_block.feed_to_recomm,.apps_feedRightAppsBlock_collaborative_recommend_apps{display:none!important}\r\n\r\n/* нах рекомендации паблосов из ленты */ \r\n.page_block.feed_groups_recomm{display:none}\r\n\r\n",
+            "default": true
+          },
+          {
+            "key": "flushshitoff",
+            "label": "пускай остаётся",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "nameremove",
+        "label": " ♻ Убрать имя из шапки:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "nameremoveon",
+            "label": "нафиг",
+            "value": "/* убираем имя из шапки */\r\n.top_profile_name{display:none}\r\n",
+            "default": true
+          },
+          {
+            "key": "nameavaremoveon",
+            "label": "и аву с ним",
+            "value": "/* убираем имя и авку из шапки */\r\n.top_profile_name,.top_profile_img{display:none}\r\n#top_nav .top_nav_link{padding:0!important;width:28px;height:42px;display:block;content:' ';background:8px 18px/40% url(https://vk.com/images/svg_icons/contour_arrow.svg) no-repeat !important;filter:var(--filt2)saturate(.0)brightness(.7)!important}\r\n[dir] .top_nav_link.active,[dir] .top_nav_link:hover{filter:var(--filt2)brightness(1)saturate(.2)!important;background-color:transparent!important}",
+            "default": false
+          },
+          {
+            "key": "namestayremoveava",
+            "label": "лучше авку",
+            "value": "/* убираем авку из шапки */\r\n.top_profile_img{display:none}\r\n",
+            "default": false
+          },
+          {
+            "key": "nameremoveoff",
+            "label": "пусть будет",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "chaticonremove",
+        "label": " ♻ Выпилить иконку диалога в чате:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "chaticonremoveon",
+            "label": "нафиг",
+            "value": "/* убрать иконку диалога в чате */ \r\n.im-page--aside-photo{display:none;margin:0px!important}\r\n.im-page_classic .im-page--aside{padding:0px 7px;min-width:78px}\r\n.im-page--back{width:92px}\r\n",
+            "default": true
+          },
+          {
+            "key": "chaticonremoveoff",
+            "label": "пусть будет",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "audiosendremove",
+        "label": " ♻ Выпилить отправку аудио в чате:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "audiosendremoveon",
+            "label": "вжух-вжух",
+            "value": "/* убрать кнопку отправки аудио в сообщениях */\r\n.im-send-btn_audio{display:none}\r\n",
+            "default": false
+          },
+          {
+            "key": "audiosendremoveoff",
+            "label": "оставить",
+            "value": "",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "fuckstories",
+        "label": " ♻ Меня твои истории просто до***ли уже:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "fuckstorieshard",
+            "label": "я не могу их больше слушать.",
+            "value": "/* меня твои истории просто до***ли уже */\r\n#stories_feed_wrap{display:none!important}\r\n",
+            "default": false
+          },
+          {
+            "key": "dontfuckstories",
+            "label": "та не, нормас.",
+            "value": "",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "nomoneysend",
+        "label": " ♻ Деньги я лучше оставлю при себе:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "nomoneysendon",
+            "label": "точняк.",
+            "value": "/* убрать из меню пункт отправить деньги */\r\n.page_actions_item[onclick*=\"Page.moneyTransferBox\"]{display:none}\r\n",
+            "default": true
+          },
+          {
+            "key": "nomoneysendoff",
+            "label": "да не, я щедрый.",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "countsfold",
+        "label": "★ Сворачивать счётчики инфы страницы:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "countsfoldon",
+            "label": "вкл",
+            "value": "/* сворачивать счётчики */\r\n.counts_module {height:0px!important;transition:height 0.7s;border: none;box-shadow:inset 0px 1px 0px 0px #111;background-color:rgba(0,0,0,0.4)}\r\n.profile_more_info_link:not(.info_shown){height:0px!important;opacity:0;transition:height .7s, opacity .7s;pointer-events:none}\r\n#wide_column div:nth-child(1):hover .counts_module{height:70px!important;transition:height 0.7s}\r\n#wide_column div:nth-child(1):hover .profile_more_info_link{height:34px!important;opacity:1;transition:height 0.7s, opacity .7s;pointer-events:all}\r\n\r\n\r\n",
+            "default": true
+          },
+          {
+            "key": "countsfoldoff",
+            "label": "выкл",
+            "value": "",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "sidebarnotext",
+        "label": "Фикс для панельки слева без текста:",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "sidebarnotextyep",
+            "label": "вкл",
+            "value": "/* фикс для панельки слева без текста */\r\n#side_bar ol{width:26px!important}",
+            "default": false
+          },
+          {
+            "key": "sidebarnotextnope",
+            "label": "выкл",
+            "value": "",
+            "default": true
+          }
+        ]
+      }
+    ]
+  }
+}

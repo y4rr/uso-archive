@@ -1,0 +1,49 @@
+{
+  "id": 132317,
+  "info": {
+    "name": "Abyss for 4Chan",
+    "description": "Another dark theme for another website. Similar to my <a href=\"https://userstyles.org/styles/132301/abyss-for-google\">Abyss for Google</a> CSS.",
+    "additionalInfo": "Changelog\r\n>09/27/20 - V1.0.3:\r\n  *Improved catalog colors\r\n>06/01/19 - V1.0.2:\r\n  *Fixed userstyle for 4channel\r\n  *A few other small tweaks\r\n>09/05/16 - V1.0.1:\r\n  *Made dead links and code more legible\r\n>09/03/16 - V1.0.0:\r\n  *Theme released!",
+    "format": "uso",
+    "category": "4chan",
+    "createdAt": "2016-09-04T02:19:16.000Z",
+    "updatedAt": "2020-09-27T19:21:00.000Z",
+    "license": "CC0-1.0",
+    "author": {
+      "id": 354302,
+      "name": "Badiz"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 477,
+      "weekly": 1
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "132317_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 1,
+      "commentsCount": 0
+    },
+    "data": [
+      {
+        "id": 72306,
+        "title": "4channel",
+        "createdAt": "2018-11-24T00:24:32.000Z",
+        "author": {
+          "id": 750893,
+          "name": "Josh C"
+        }
+      }
+    ]
+  },
+  "style": {
+    "css": "@-moz-document domain(\"4chan.org\"), domain(\"4channel.org\") {\r\nbody, html {\r\n\tbackground-image: none !important;\r\n\t/*background color of whole page*/\r\n\tbackground-color: #2A2D2D !important;\r\n\t/*color of general text*/\r\n\tcolor: #8C8C8C !important;\r\n}\r\n\r\nhr, .cdr_sep, .yotsuba_new #watchList li:first-child {\r\n\t/*changes colors of those horizontal lines*/\r\n\tborder-top-color: #3C3C3C;\r\n}\r\n\r\na.replylink:not(:hover),\r\ndiv#absbot a:not(:hover),\r\n.yotsuba_new .postMenuBtn,\r\na,\r\na:visited,\r\n.postblock {\r\n\t/*color of links*/\r\n\tcolor: #00ADEE !important;\r\n}\r\n\r\na:hover,\r\ndiv.post div.postInfoM span.postNum a, div.postInfo span.postNum a:hover {\r\n\tcolor: red !important;\r\n}\r\n\r\ndiv.pagelist, #ft li {\r\n\t/*color of bottom page list*/\r\n\tbackground-color: #242424 !important;\r\n\t/*border color of page list*/\r\n\tborder-color: #191919;\r\n}\r\n\r\n#ft li.first {\r\n\tborder-left: 1px solid #191919;\r\n}\r\n\r\n#ft ul {\r\n\tborder-top: 0px;\r\n}\r\n\r\ndiv.boardBanner,\r\ndiv.postInfo {\r\n\t/*color of board title and post info*/\r\n\tcolor: #FFFFFF;\r\n}\r\n\r\n/*ad shrinking/hiding (still use adblock)*/\r\n.topad > div, .ad-plea, .belowLeaderboard {\r\n\tdisplay: none;\r\n}\r\n\r\n.fill {\r\n\tvisibility: hidden;\r\n}\r\n\r\n/*main image hidng*/\r\n#logo-fp {\r\n\tdisplay: none;\r\n}\r\n\r\n.top-box .menubutton {\r\n\tbackground-image: none;\r\n}\r\n\r\n/*dropdown*/\r\n.yui-skin-sam .yuimenu .bd {\r\n\tbackground: #242424;\r\n\tbox-shadow: 0px 1px 4px 0px rgba(0,0,0,0.8);\r\n\tborder: none;\r\n}\r\n\r\n.yuimenuitem:hover, .postblock, div.post div.postInfoM {\r\n\tbackground-color: #191919 !important;\r\n}\r\n\r\n.yui-skin-sam .yuimenu ul, div.post div.postInfoM, .panelHeader {\r\n\tborder-color: #191919;\r\n}\r\n\r\n\r\n/*FAQ*/\r\na[name=\"basics\"], a[name=\"contribution\"], a[name=\"features\"], a[name=\"administration\"], a[name=\"banishment\"], a[name=\"technical\"], a[name=\"donations\"], a[name=\"events\"], a[name=\"about\"]     {\r\n\tcolor: #800!important;\r\n}\r\n\t\r\n.subject, dt {\r\n\t/*color of post title*/\r\n\tcolor: #376FC8 !important;\r\n}\r\n\r\n.nameBlock.capcodeMod span.name, \r\nspan.capcodeMod a span.name, \r\nspan.capcodeMod span.postertrip, \r\nspan.capcodeMod strong.capcode {\r\n\t/*mod colors*/\r\n\tcolor: #C400C4 !important;\r\n}\r\n\r\ndiv.post div.postInfo \r\nspan.nameBlock \r\nspan.name {\r\n\t/*default name color*/\r\n\tcolor: #1CA05C;\r\n}\r\n\r\nspan.postNum a,\r\ndiv.post div.postInfoM span.postNum, div.postInfo span.postNum {\r\n\t/*color of the post number text*/\r\n\tcolor: #FFFFFF !important;\r\n}\r\n\r\ndiv#boardNavDesktop,\r\ndiv#boardNavDesktopFoot,\r\ndiv#absbot, .boxcontent, div.pagelist, .yotsuba_new #qrFile {\r\n\tcolor: #8C8C8C;\r\n}\r\n\r\ndiv.post div.postInfoM span.postNum a, div.postInfo span.postNum a {\r\n\tcolor: #8C8C8C !important;\r\n}\r\n\r\ndiv#boardNavDesktop a,\r\ndiv#boardNavDesktopFoot a {\r\n\tcolor: #5B63B9 !important;\r\n}\r\n\r\n.button {\r\n    color: #5B63B9;\r\n}\r\n\r\ndiv#boardNavDesktop a:hover,\r\ndiv#boardNavDesktopFoot a:hover {\r\n\tcolor: #FF0000 !important;\r\n}\r\n\r\ndiv.reply,\r\n.box-inner, .box-outer, \r\n#threadWatcher,\r\n.panel {\r\n\t/*background color of thread comment*/\r\n\tbackground-color: #242424;\r\n\tbox-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);\r\n\tborder: none;\r\n\t/*colors of comment borders*/\r\n\tborder-color: #191919;\r\n\tmargin-top: 10px;\r\n}\r\n\r\n.boxbar, div#boardNavMobile {\r\n\tbackground-color: #191919;\r\n\tcolor: red;\r\n}\r\n\r\n#qrFile {\r\n\twidth: 220px;\r\n}\r\n\r\n.post.op.highlight,\r\n.highlightPost:not(.op),\r\ntable.flashListing tr:nth-of-type(2n+1),\r\n#quote-preview,\r\n.yotsuba_b_new #quote-preview.highlight,\r\n.reply.highlight,\r\n.reply:target {\r\n\t/*background color of highlighted posts*/\r\n\tbackground-color: #353535 !important;\r\n\t/*highlighted reply border colors*/\r\n\tborder: none !important;\r\n\tborder-color: #2B2B2B !important;\r\n}\r\n\r\nblockquote > span.quote {\r\n\t/*green text colors*/\r\n\tcolor: #A1FF0A;\r\n}\r\n\r\n.quotelink,\r\n.burichan_new .backlink a, \r\n.yotsuba_b_new .backlink a {\r\n\t/*color of quote links*/\r\n\tcolor: #7E949E !important;\r\n}\r\n\r\n.deadlink {\r\n\t/*color of dead links*/\r\n\tcolor: #44545A !important;\r\n}\r\n\r\n.prettyprint {\r\n\t/*color of code text background*/\r\n   background-color: #464646 !important;\r\n}\r\n\r\n.kwd {\r\n\tcolor: #7C7CFF;\r\n}\r\n\r\n.pun {\r\n\tcolor: #DEDE1A;\r\n}\r\n\r\n.typ {\r\n\tcolor: #e539e5;\r\n}\r\n\r\n.com {\r\n\tcolor: #A1FF0A;\r\n}\r\n\r\n.str {\r\n\tcolor: #54FF54;\r\n}\r\n\r\n.lit {\r\n\tcolor: #00ADFF;\r\n}\r\n\r\n#bannerCnt, .c-thread img, .boxcontent dd, .postblock {\r\n\t/*removes border around banner*/\r\n\tborder: none;\r\n}\r\n\r\ndiv.pagelist div.cataloglink {\r\n\tborder-left: 1px solid #191919;\r\n}\r\n\r\n.pln {\r\n\tcolor: #FFFFFF !important;\r\n}\r\n}"
+  }
+}
