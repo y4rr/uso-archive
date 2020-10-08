@@ -7,31 +7,31 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yyy "Choose a wallpaper:" {
-	Dark linen "Dark linen*" <<<EOT http://www.designbolts.com/wp-content/uploads/2012/11/Free-Stressed-linen-patterns.jpg EOT;
-Black brick "Black brick" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/fake_brick.png EOT;
-Grey linen "Grey linen" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_linen_v2.png EOT;
+	Dark-linen "Dark linen*" <<<EOT http://www.designbolts.com/wp-content/uploads/2012/11/Free-Stressed-linen-patterns.jpg EOT;
+Black-brick "Black brick" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/fake_brick.png EOT;
+Grey-linen "Grey linen" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_linen_v2.png EOT;
 Cartographer "Cartographer" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cartographer.png EOT;
-Grey denim "Grey denim" <<<EOT http://www.designbolts.com/wp-content/uploads/2012/11/Dark-Denim-Seamless-Pattern-for-clothing-websites.jpg EOT;
-Vertical cloth "Vertical cloth" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/vertical_cloth.png EOT;
+Grey-denim "Grey denim" <<<EOT http://www.designbolts.com/wp-content/uploads/2012/11/Dark-Denim-Seamless-Pattern-for-clothing-websites.jpg EOT;
+Vertical-cloth "Vertical cloth" <<<EOT http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/vertical_cloth.png EOT;
 
 }
 @advanced dropdown img "Choose own image:" {
-leave empty (no imag "leave empty (no image)*" <<<EOT  EOT;
+leave-empty--no-imag "leave empty (no image)*" <<<EOT  EOT;
 
 	img-custom-dropdown "Custom" <<<EOT /*[[img-custom]]*\/ EOT;
 }
 @advanced text img-custom "Choose own image: (Custom)" "https://example.com/image.png"
 @advanced dropdown adj "Adjust image" {
 	center "center*" <<<EOT center EOT;
-to left "to left" <<<EOT left EOT;
-to right "to right" <<<EOT right EOT;
+to-left "to left" <<<EOT left EOT;
+to-right "to right" <<<EOT right EOT;
 
 }
 @advanced color pla "Choose color: Now playing row in playlists + active player controls (default color no. 0099FF)" #0099FF
 @advanced color mar "Choose color: All other options (0099FF)" #0099FF
 @advanced color hov "Choose color: Hover row in playlists (FF6666)" #FF6666
 @advanced dropdown x-scrthumb-x "Scrollbar will" {
-	stay visible "stay visible (d)*" <<<EOT scrollbar [orient="vertical"] thumb, scrollbar[orient="horizontal"] thumb {
+	stay-visible "stay visible (d)*" <<<EOT scrollbar [orient="vertical"] thumb, scrollbar[orient="horizontal"] thumb {
     -moz-appearance: none !important;
     opacity: 0.5 !important;}
 
@@ -80,7 +80,7 @@ scrollbar[orient="horizontal"] thumb {
     max-height: 7px !important;
     min-height: 7px !important;
     min-width: 80px !important;} EOT;
-be hidden "be hidden" <<<EOT scrollbar, scrollbar thumb, scrollbarbutton {
+be-hidden "be hidden" <<<EOT scrollbar, scrollbar thumb, scrollbarbutton {
     display: none !important;} EOT;
 
 }

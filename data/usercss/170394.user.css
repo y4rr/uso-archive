@@ -6,8 +6,8 @@
 @version        201987.20.55
 @license        CC-BY-4.0
 @preprocessor   uso
-@advanced dropdown don icons "Icons" {
-	new icons "New*" <<<EOT /* searchbar icon replace *\/
+@advanced dropdown don-icons "Icons" {
+	new-icons "New*" <<<EOT /* searchbar icon replace *\/
 form[action="/search"] img {
     display: none;
 }
@@ -99,14 +99,14 @@ table.line-chart .line-chart-box-heading img {
     background-repeat: no-repeat;
     margin-top: 5px;
 } EOT;
-old icons "Old" <<<EOT img[src="/img/cross.png"], img[src*="edit.png"], img[src*="eye_minus.png"], img[src="/img/collapse.jpg"], img[src="/img/expand.jpg"], form[action="/search"] img, img[src="/img/door-open-in.png"] {
+old-icons "Old" <<<EOT img[src="/img/cross.png"], img[src*="edit.png"], img[src*="eye_minus.png"], img[src="/img/collapse.jpg"], img[src="/img/expand.jpg"], form[action="/search"] img, img[src="/img/door-open-in.png"] {
     background-color: transparent;
     padding: 0;
 } EOT;
 
 }
-@advanced dropdown back to top "Back to top button" {
-	btt line "Line on the left side of a page*" <<<EOT #tophref {
+@advanced dropdown back-to-top "Back to top button" {
+	btt-line "Line on the left side of a page*" <<<EOT #tophref {
 	position:fixed;
 	bottom: 0;
 	left: 0;
@@ -131,7 +131,7 @@ old icons "Old" <<<EOT img[src="/img/cross.png"], img[src*="edit.png"], img[src*
     background-position: 50% 2px;
     opacity: 1;
 } EOT;
-btt button "Button" <<<EOT #tophref {
+btt-button "Button" <<<EOT #tophref {
 	position:fixed;
 	bottom: 50px;
 	left: 10px;
@@ -156,7 +156,7 @@ btt button "Button" <<<EOT #tophref {
     box-shadow: 0 0 2px 2px #414141;
     transform: translatey(-5px);
 } EOT;
-btt deff "Keep as it is" <<<EOT  EOT;
+btt-deff "Keep as it is" <<<EOT  EOT;
 
 }
 @advanced dropdown Chat "Enable chat" {
@@ -709,11 +709,11 @@ table td[style*="background-color:#DEDEDE"] {
 	border: 1px solid var(--input-border-color) !important;
 }
 
-/*[[don icons]]*/
+/*[[don-icons]]*/
 
 /*[[Chat]]*/
 
-/*[[back to top]]*/
+/*[[back-to-top]]*/
 
 }
 

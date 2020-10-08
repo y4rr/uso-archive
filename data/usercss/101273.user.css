@@ -6,7 +6,7 @@
 @version        2015810.0.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown hidecompleted? "Hide completed dailies?" {
+@advanced dropdown hidecompleted- "Hide completed dailies?" {
 	hidecompleted "Yes!  Begone, defeated tasks!*" <<<EOT .task.daily.completed {display: none !important;} EOT;
 showcompleted "No, I'd like to have them shown." <<<EOT  EOT;
 
@@ -752,7 +752,7 @@ nav.toolbar .toolbar-subscribe {display: none !important;}
 
 
 
-/*[[hidecompleted?]]*/
+/*[[hidecompleted-]]*/
 
 /*[[animations]]*/
 

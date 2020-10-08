@@ -41,19 +41,19 @@ disabled "Нет, спасибо" <<<EOT  EOT;
 
 }
 @advanced dropdown visited "Подсвечивать просмотренные материалы" {
-	Да "Да*" <<<EOT /*подсвечивание просмотренных материалов*\/
+	-- "Да*" <<<EOT /*подсвечивание просмотренных материалов*\/
   a:visited.b-poster-tile__link *,
   a:visited.b-poster-tile__link{
     color:gray !important;border:none !important;
     background:#F8F8E6!important;
     text-shadow:0px 1px 1px white;
 } EOT;
-Нет "Нет" <<<EOT  EOT;
+--- "Нет" <<<EOT  EOT;
 
 }
 @advanced dropdown stretch "Масштабирование фоновой картинки" {
-	Да "Растянуть на весь экран*" <<<EOT background-size:cover !important; EOT;
-Нет "Оставить как есть" <<<EOT background-size:contain!important; EOT;
+	-- "Растянуть на весь экран*" <<<EOT background-size:cover !important; EOT;
+--- "Оставить как есть" <<<EOT background-size:contain!important; EOT;
 
 }
 @advanced color mycolor "Заливка одним цветом - выбрать:" #1C222C
@@ -69,8 +69,8 @@ darkblue "Darkblue" <<<EOT https://img-fotki.yandex.ru/get/5412/18576996.0/0_c01
 }
 @advanced text bkgr-custom "Фоновая картинка (Custom)" "https://example.com/image.png"
 @advanced dropdown social "Показывать кнопки соц.сетей" {
-	Нет "Нет*" <<<EOT   .b-share,.b-feedback__touch{display:none !important} EOT;
-Да "Да" <<<EOT   .b-share{position:absolute;bottom:0px;right:0px;opacity:0.2}
+	--- "Нет*" <<<EOT   .b-share,.b-feedback__touch{display:none !important} EOT;
+-- "Да" <<<EOT   .b-share{position:absolute;bottom:0px;right:0px;opacity:0.2}
   .b-share:hover{opacity:1} EOT;
 
 }

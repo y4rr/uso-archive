@@ -7,23 +7,23 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown col "Цвет шрифта" {
-	Синий "Синий" <<<EOT blue EOT;
-Зеленый "Зеленый" <<<EOT green EOT;
-Красный "Красный" <<<EOT red EOT;
-Черный "Черный" <<<EOT black EOT;
-Коричневый "Коричневый" <<<EOT brown EOT;
-Темно-оранжевый "Темно-оранжевый" <<<EOT darkorange EOT;
+	----- "Синий" <<<EOT blue EOT;
+------- "Зеленый" <<<EOT green EOT;
+------- "Красный" <<<EOT red EOT;
+------ "Черный" <<<EOT black EOT;
+---------- "Коричневый" <<<EOT brown EOT;
+--------------- "Темно-оранжевый" <<<EOT darkorange EOT;
 
 }
 @advanced dropdown dom "Включить поддержку и на сайтах домена .lwgame.net?" {
-	Нет "Нет" <<<EOT www.l EOT;
-Да "Да" <<<EOT l EOT;
-Я не знаю что это зн "Я не знаю что это значит" <<<EOT www.l EOT;
+	--- "Нет" <<<EOT www.l EOT;
+-- "Да" <<<EOT l EOT;
+-------------------- "Я не знаю что это значит" <<<EOT www.l EOT;
 
 }
 @advanced dropdown hov "Показывать постоянно или при наводе мышкой?" {
-	Постоянно "Постоянно" <<<EOT > EOT;
-При наводе мышкой "При наводе мышкой" <<<EOT :hover> EOT;
+	--------- "Постоянно" <<<EOT > EOT;
+----------------- "При наводе мышкой" <<<EOT :hover> EOT;
 
 }
 

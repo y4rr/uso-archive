@@ -7,11 +7,11 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown hoverOrClickMode "Expand when ..." {
-	Hovering or focusing "Hovering or focusing*" <<<EOT #search-container:hover .searchbar-textbox {
+	Hovering-or-focusing "Hovering or focusing*" <<<EOT #search-container:hover .searchbar-textbox {
     -moz-transition-delay:300ms!important;			/* ← Delay before expanding when hovering *\/
 }
 #search-container:hover .searchbar-textbox, EOT;
-Focusing only "Focusing only" <<<EOT #search-container .searchbar-textbox:not([focused]) .textbox-input-box {
+Focusing-only "Focusing only" <<<EOT #search-container .searchbar-textbox:not([focused]) .textbox-input-box {
     margin-left:-9999px!important;
     margin-right:-9999px!important;
 }

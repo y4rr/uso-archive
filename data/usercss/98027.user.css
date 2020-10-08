@@ -7,7 +7,7 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown color-progress-bar "Farbe Fortschrittsbalken/Tune-in-Button" {
-	RFK-Grün "RFK-Grün*" <<<EOT     .progress-bar, .btn-primary {
+	RFK-Gr-n "RFK-Grün*" <<<EOT     .progress-bar, .btn-primary {
        background-image: linear-gradient(to bottom, #a9d7a9 0%, #4a6049 100%) !important;
        background-repeat: repeat-x !important;
     }
@@ -19,11 +19,11 @@
     .btn-primary:hover, .btn-primary:focus {
        background-color: #4a6049 !important;
     } EOT;
-Unverändert (Blau) "Unverändert (Blau)" <<<EOT  EOT;
+Unver-ndert--Blau- "Unverändert (Blau)" <<<EOT  EOT;
 
 }
 @advanced dropdown current-show "Sendungskasten" {
-	CSS ohne Script "CSS ohne Script*" <<<EOT     .nowplaying-banner .current-show {
+	CSS-ohne-Script "CSS ohne Script*" <<<EOT     .nowplaying-banner .current-show {
        min-height: 156px !important;
     }
     
@@ -48,7 +48,7 @@ Unverändert (Blau) "Unverändert (Blau)" <<<EOT  EOT;
     .outline {
        color: #FFFFFF !important;
     } EOT;
-CSS für Script "CSS für Script" <<<EOT     .current-show {
+CSS-f-r-Script "CSS für Script" <<<EOT     .current-show {
        padding: 0px !important; 
         background-color: grey !important;
        text-align: center !important;
@@ -87,7 +87,7 @@ CSS für Script "CSS für Script" <<<EOT     .current-show {
     .outline {
         color: #FFFFFF !important;
     }     EOT;
-Unverändert "Unverändert" <<<EOT  EOT;
+Unver-ndert "Unverändert" <<<EOT  EOT;
 
 }
 

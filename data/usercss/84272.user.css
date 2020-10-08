@@ -7,53 +7,53 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown vendor-width-a "你用的浏览器" {
-	Google Chrome 谷歌浏览器 "Google Chrome 谷歌浏览器*" <<<EOT -webkit EOT;
-Mozilla Firefox 火狐浏览 "Mozilla Firefox 火狐浏览器" <<<EOT -moz EOT;
+	Google-Chrome------ "Google Chrome 谷歌浏览器*" <<<EOT -webkit EOT;
+Mozilla-Firefox----- "Mozilla Firefox 火狐浏览器" <<<EOT -moz EOT;
 
 }
 @advanced dropdown vendor-width-b "你用的浏览器" {
-	Google Chrome 谷歌浏览器 "Google Chrome 谷歌浏览器*" <<<EOT -webkit-fill EOT;
-Mozilla Firefox 火狐浏览 "Mozilla Firefox 火狐浏览器" <<<EOT -moz EOT;
+	Google-Chrome------ "Google Chrome 谷歌浏览器*" <<<EOT -webkit-fill EOT;
+Mozilla-Firefox----- "Mozilla Firefox 火狐浏览器" <<<EOT -moz EOT;
 
 }
 @advanced dropdown screen-width "你的屏幕水平分辨率大概为" {
-	小于等于1366px "小于等于1366px*" <<<EOT none EOT;
-大于1366px "大于1366px" <<<EOT 1313px EOT;
+	----1366px "小于等于1366px*" <<<EOT none EOT;
+--1366px "大于1366px" <<<EOT 1313px EOT;
 
 }
 @advanced dropdown link-underline "去掉链接下划线" {
-	是 "是*" <<<EOT text-decoration: none !important; EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT text-decoration: none !important; EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown sign-pic "隐藏签名档" {
-	是 "是*" <<<EOT .d_sign_split, .j_user_sign, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT .d_sign_split, .j_user_sign, EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown mod-sign "隐藏签到模块" {
-	是 "是*" <<<EOT #sign_mod, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT #sign_mod, EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown mod-share "隐藏分享模块" {
-	是 "是*" <<<EOT #bdshare, #bdshare_s, .p_sharebar, .share_thread, #share_out, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT #bdshare, #bdshare_s, .p_sharebar, .share_thread, #share_out, EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown mod-fav "隐藏收藏模块" {
-	是 "是*" <<<EOT .fav-wrapper, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT .fav-wrapper, EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown thread-media "隐藏贴子预览图片" {
-	是 "是*" <<<EOT .threadlist_media, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT .threadlist_media, EOT;
+- "否" <<<EOT  EOT;
 
 }
 @advanced dropdown feed-media "隐藏i贴吧动态预览图片" {
-	是 "是*" <<<EOT .feat_right .media, EOT;
-否 "否" <<<EOT  EOT;
+	- "是*" <<<EOT .feat_right .media, EOT;
+- "否" <<<EOT  EOT;
 
 }
 

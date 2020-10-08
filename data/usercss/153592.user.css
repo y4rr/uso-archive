@@ -10,9 +10,9 @@
 @advanced color Secondary "Secondary Background" #2C3037
 @advanced color Border "Border" #3C414C
 @advanced color Link "Link" #4B97F8
-@advanced color Primary Text "Primary Text" #EBEBEB
-@advanced color Secondary Text "Secondary Text" #BEBEBE
-@advanced color Tertiary Text "Tertiary Text" #888888
+@advanced color Primary-Text "Primary Text" #EBEBEB
+@advanced color Secondary-Text "Secondary Text" #BEBEBE
+@advanced color Tertiary-Text "Tertiary Text" #888888
 
 ==/UserStyle== */
 /*
@@ -33,22 +33,22 @@ url(http://www.webtoons.com) {
 body, html {
     background: /*[[Primary]]*/ !important;
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 body.td .kr {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 input, textarea, select, option {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ranking_lst .title_area .sort_area .checked,
 .ranking_lst .title_area h2 a, .ranking_lst .title_area h2 span {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 img {
@@ -60,11 +60,11 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
- color: /*[[Primary Text]]*/ !important;
+ color: /*[[Primary-Text]]*/ !important;
 }
 
 .sign_up_area .agree_txt {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .tool_area {
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .viewer_lst .day_info {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #header {
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .paginate a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #container.bg {
@@ -96,29 +96,29 @@ h1, h2, h3, h4, h5, h6 {
 .detail_body,
 .aside.detail.v2,
 .aside.detail {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .grade_area em {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .aside.detail .day_info {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .detail_other .lst_type1 li {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .aside.detail .summary {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .snb_sort .checked,
 .snb_sort .sort_box a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .u_cbox .u_cbox_recomm_set .u_cbox_btn_recomm, .u_cbox .u_cbox_recomm_set .u_cbox_btn_unrecomm {
@@ -182,16 +182,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .ly_loginbox.bg_wh .loginbox_cont .t_login,
 .foot_app .foot_down_msg .txt {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ranking_lst .title_area .sort_box a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .u_cbox .u_cbox_paginate .u_cbox_page,
 .u_cbox .u_cbox_name {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .viewer .challenge_spot,
@@ -202,13 +202,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .u_cbox .u_cbox_comment .u_cbox_text_wrap
 {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .ranking_lst .title_area .sort_box {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .foot_sns a, 
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .u_cbox .u_cbox_write_count {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
 }
 
 .u_cbox .u_cbox_write .u_cbox_inbox {
@@ -238,34 +238,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .u_cbox {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .discover_spot .tit {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .cont_box .report_area .lk_report,
 .ly_lst_genre {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .detail_body .detail_lst .tx {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .episode_area {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .episode_lst .subj {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .episode_lst li .on .subj {
@@ -275,23 +275,23 @@ h1, h2, h3, h4, h5, h6 {
 .spi_area .bx {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .viewer_lst .dsc_encourage {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .detail_body .detail_lst .subj span {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .language .ly_lang a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .detail_body .detail_lst li a:visited .subj span, .detail_body .detail_lst li a:visited .date, .detail_body .detail_lst li a:visited .tx, .detail_body .detail_lst li a:visited .like_area {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .discover_item .subj span {
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .language .ly_lang .on a {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
 }
 
 .language .ly_lang .ico_lang_arr2 {
@@ -309,13 +309,13 @@ h1, h2, h3, h4, h5, h6 {
 .ly_loginbox.v2 .bg_line .line_txt, .loginbox2 .bg_line .line_txt {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ly_loginbox {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ly_loginbox, .ly_loginbox.v2 {
@@ -327,28 +327,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ly_loginbox.bg_wh .loginbox_cont .t_login.v2 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search_area .lst_autocomplete .info, 
 .search_area .lst_autocomplete .info .author
 {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .search_area .lst_autocomplete .subj,
 .search_area .ly_autocomplete .title {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search_area .ly_autocomplete {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .detail_body .detail_notice {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search_area .lst_autocomplete li {
@@ -359,7 +359,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
 .input_box {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search_area {
@@ -375,7 +375,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
 .sign_up_area .bg_line .line_txt {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .sign_up_area .bg_line {
@@ -385,7 +385,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
 .ly_box {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ly_creator .other_card_item .subj {
@@ -395,36 +395,36 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
 .ly_creator .other_card li {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ly_creator .author,
 .ly_creator .creator_txt {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .btn_type1 {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .recently_lst .tit {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .recently_lst .subj {
-color: /*[[Secondary Text]]*/ !important;
+color: /*[[Secondary-Text]]*/ !important;
 }
 
 .ly_loginbox.favorites .logoutbox_tab {
         background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .card_nodata .dsc {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .noti_area .btn_lineset {
@@ -434,31 +434,31 @@ color: /*[[Secondary Text]]*/ !important;
 .login_with_area, .account_area {
         background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .publish_form_dsc3 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .publish_thumb_info {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .login_with_cont .txt,
 .noti_area .txt {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .account_area .edit_btn, .account_area .add_btn, .account_area .delete_btn, .account_area .save_btn.v2, .account_area .register_btn,
 .login_with_cont .login_info .reset_pw_btn {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .noti_area li:first-child .txt {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .btn_type2,
@@ -471,7 +471,7 @@ color: /*[[Secondary Text]]*/ !important;
 .btn_type9 {
     background: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ly_loginbox.v2 .lk_forgot_passowrd, .loginbox2 .lk_forgot_passowrd {
@@ -487,15 +487,15 @@ color: /*[[Secondary Text]]*/ !important;
 .language .lk_lang {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .sta .lk_publish {
-     background: /*[[Primary Text]]*/ !important;
+     background: /*[[Primary-Text]]*/ !important;
 }
 
 .lnb li a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ranking_top {
@@ -503,23 +503,23 @@ color: /*[[Secondary Text]]*/ !important;
 }
 
 .btn_daily {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .ranking_tab a span {
-color: /*[[Primary Text]]*/ !important;
+color: /*[[Primary-Text]]*/ !important;
 }
 
 .lst_type1 .info_area .subj {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .lst_type1 .info_area .author {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .lst_type1 .ranking_top .summary {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .ranking_tab {
@@ -535,12 +535,12 @@ color: /*[[Primary Text]]*/ !important;
 }
 
 .ranking_tab li.on a span {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
 }
 
 .sta > a {
     color: #000000 !important;
-    background-color: /*[[Primary Text]]*/ !important;
+    background-color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
@@ -558,7 +558,7 @@ color: /*[[Primary Text]]*/ !important;
 }
 
 .btn_findout {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .daily_section.on h2 a {
@@ -577,7 +577,7 @@ color: /*[[Primary Text]]*/ !important;
 }
 
 .daily_section h2 a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .discover_lst li {
@@ -591,17 +591,17 @@ color: /*[[Primary Text]]*/ !important;
 
 .daily_tab li.on .btn_daily {
     background: /*[[Primary]]*/ !important;
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .snb a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .snb li.on a {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
@@ -615,11 +615,11 @@ color: /*[[Primary Text]]*/ !important;
 }
 
 .genre_menu a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .main_hotnew h2 {
-     color: /*[[Primary Text]]*/ !important;
+     color: /*[[Primary-Text]]*/ !important;
 }
 
 .daily_card_item {

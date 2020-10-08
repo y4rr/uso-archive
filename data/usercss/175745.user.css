@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown top-nav-purple "Top Navigation Menu" {
-	TopNav Purple "Purple*" <<<EOT #37266D EOT;
-TopNav Default "Grey" <<<EOT #18181B EOT;
+	TopNav-Purple "Purple*" <<<EOT #37266D EOT;
+TopNav-Default "Grey" <<<EOT #18181B EOT;
 
 }
 @advanced dropdown smooth-chat-scroll "Smooth Chat Scrolling" {
-	SmoothScroll Enabled "Enable*" <<<EOT     scroll-behavior: smooth !important
+	SmoothScroll-Enabled "Enable*" <<<EOT     scroll-behavior: smooth !important
 }
 
 @supports (-moz-appearance: none) {
@@ -21,9 +21,9 @@ TopNav Default "Grey" <<<EOT #18181B EOT;
       position: sticky !important
     }
 } EOT;
-SmoothScroll Disable "Disable" <<<EOT     scroll-behavior: auto !important
+SmoothScroll-Disable "Disable" <<<EOT     scroll-behavior: auto !important
 } EOT;
-SmoothScroll FF "Enable - Smooth Fix (Firefox)" <<<EOT     scroll-behavior: smooth !important
+SmoothScroll-FF "Enable - Smooth Fix (Firefox)" <<<EOT     scroll-behavior: smooth !important
 }
 
 @supports (-moz-appearance: none) {
@@ -36,21 +36,21 @@ SmoothScroll FF "Enable - Smooth Fix (Firefox)" <<<EOT     scroll-behavior: smoo
 
 }
 @advanced dropdown channel-info-bar "Channel Info Background Colour" {
-	ChannelInfoBG Grey "Grey*" <<<EOT     background-color: #18181B !important;
+	ChannelInfoBG-Grey "Grey*" <<<EOT     background-color: #18181B !important;
     border-left: 1px ridge #252126 !important EOT;
-ChannelInfoBG Grey G "Grey (Gradient)" <<<EOT     background: linear-gradient(0deg, #0E0E10, rgba(0, 0, 0, .25)), linear-gradient(150deg, rgb(46, 46, 48), rgba(0, 0, 0, .25)) !important EOT;
-ChannelInfoBG Pur G "Purple (Gradient)" <<<EOT     background: linear-gradient(0deg, #0F0E11, rgba(0, 0, 0, .25)), linear-gradient(150deg, #37266D, rgba(0, 0, 0, .25)) !important EOT;
-ChannelInfoBG Def "Default" <<<EOT     background-color: unset EOT;
+ChannelInfoBG-Grey-G "Grey (Gradient)" <<<EOT     background: linear-gradient(0deg, #0E0E10, rgba(0, 0, 0, .25)), linear-gradient(150deg, rgb(46, 46, 48), rgba(0, 0, 0, .25)) !important EOT;
+ChannelInfoBG-Pur-G "Purple (Gradient)" <<<EOT     background: linear-gradient(0deg, #0F0E11, rgba(0, 0, 0, .25)), linear-gradient(150deg, #37266D, rgba(0, 0, 0, .25)) !important EOT;
+ChannelInfoBG-Def "Default" <<<EOT     background-color: unset EOT;
 
 }
 @advanced dropdown live-time-format "Live Time Format (Experimental)" {
-	Live Time hmms "h:mm:ss (Default)*" <<<EOT   content: '' EOT;
-Live Time hmm "h:mm" <<<EOT   max-width: 33px !important;
+	Live-Time-hmms "h:mm:ss (Default)*" <<<EOT   content: '' EOT;
+Live-Time-hmm "h:mm" <<<EOT   max-width: 33px !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: '' !important;
   display: block !important; EOT;
-Live Time remove "Remove" <<<EOT   display: none !important; EOT;
+Live-Time-remove "Remove" <<<EOT   display: none !important; EOT;
 
 }
 

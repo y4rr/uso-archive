@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown userOS "Operating System" {
-	Windows 7 "Windows 7" <<<EOT @media all and (-moz-windows-default-theme) 
+	Windows-7 "Windows 7" <<<EOT @media all and (-moz-windows-default-theme) 
 {
 	#TabsToolbar #new-tab-button:not(:-moz-lwtheme) 
 	{
@@ -23,7 +23,7 @@
 			-moz-linear-gradient(hsl(214,44%,87%), hsl(214,44%,87%)) !important;
 	}
 } EOT;
-Windows XP "Windows XP" <<<EOT @media all and (-moz-windows-theme: luna-blue) 
+Windows-XP "Windows XP" <<<EOT @media all and (-moz-windows-theme: luna-blue) 
 {
 	#TabsToolbar #new-tab-button
 	{

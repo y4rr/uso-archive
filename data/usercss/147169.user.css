@@ -13,14 +13,14 @@ Opacity50 "50% Visible" <<<EOT --image-opacity         : 0.50;           /* 1 is
 Opacity25 "25% Visible" <<<EOT --image-opacity         : 0.25;           /* 1 is brightest (completly opaque) .0 is see through *\/ EOT;
 
 }
-@advanced dropdown Display Option "Display Ads?" {
+@advanced dropdown Display-Option "Display Ads?" {
 	AdsYes "Yes*" <<<EOT --display-none          : Initial; EOT;
 AdsNo "No" <<<EOT --display-none          : none; EOT;
 
 }
-@advanced color Link Color "HyperLink Text Color" #33B1D7
-@advanced color Link Visited "HyperLink Visited Color" #9A6EFF
-@advanced color Link Hover "HyperLink Hover Color" #10C4FB
+@advanced color Link-Color "HyperLink Text Color" #33B1D7
+@advanced color Link-Visited "HyperLink Visited Color" #9A6EFF
+@advanced color Link-Hover "HyperLink Hover Color" #10C4FB
 
 ==/UserStyle== */
 @-moz-document domain("newegg.com") {
@@ -45,11 +45,11 @@ AdsNo "No" <<<EOT --display-none          : none; EOT;
     
     /*[[Opacity]]*/
     
-    --text-color-links      : /*[[Link Color]]*/;       /* Standard link color   - Default(Light Blue/Cyan) */
-    --text-color-visited    : /*[[Link Visited]]*/;       /* Visited link color    - Default(Purple) */
-    --text-color-hover      : /*[[Link Hover]]*/;       /* Link hover color     - Default(slightly lighter than link color) */
+    --text-color-links      : /*[[Link-Color]]*/;       /* Standard link color   - Default(Light Blue/Cyan) */
+    --text-color-visited    : /*[[Link-Visited]]*/;       /* Visited link color    - Default(Purple) */
+    --text-color-hover      : /*[[Link-Hover]]*/;       /* Link hover color     - Default(slightly lighter than link color) */
     
-    /*[[Display Option]]*/  
+    /*[[Display-Option]]*/  
     
     /* -------------- User changeable Values ----------------- */
     

@@ -7,14 +7,14 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown height "Video size" {
-	720p (for 22" or big "720p (for 22\" or bigger screens)*" <<<EOT 750 EOT;
+	720p--for-22--or-big "720p (for 22\" or bigger screens)*" <<<EOT 750 EOT;
 480p "480p" <<<EOT 530 EOT;
-600p (for 19" or big "600p (for 19\" or bigger screens)" <<<EOT 650 EOT;
-1080p (for huge scre "1080p (for huge screens)" <<<EOT 1130 EOT;
+600p--for-19--or-big "600p (for 19\" or bigger screens)" <<<EOT 650 EOT;
+1080p--for-huge-scre "1080p (for huge screens)" <<<EOT 1130 EOT;
 
 }
 @advanced dropdown comments "Comments" {
-	Hidden until I mouse "Hidden until I mouse over them*" <<<EOT #watch-discussion {
+	Hidden-until-I-mouse "Hidden until I mouse over them*" <<<EOT #watch-discussion {
   opacity:0.2 !important;
 }
 #watch-discussion:hover {
@@ -27,7 +27,7 @@ Hidden "Hidden" <<<EOT #watch-discussion {
 
 }
 @advanced dropdown playlistbar "That annoying bar at the bottom" {
-	Hidden until I move  "Hidden until I move my mouse to the bottom of the window*" <<<EOT #playlist-bar {
+	Hidden-until-I-move- "Hidden until I move my mouse to the bottom of the window*" <<<EOT #playlist-bar {
   opacity:0 !important;
 }
 #playlist-bar:hover {

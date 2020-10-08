@@ -6,13 +6,13 @@
 @version        2013425.10.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown /*[[bgimg]]*\/ "背景" {
-五更琉璃 "五更琉璃*" <<<EOT https://ouqffa.dm1.livefilestore.com/y1pmWsabLMFiDwYMT6OiuM-EjNWJlMUmMTl-MN3hv2p6Dmw8PBoNUAtvnK6muWxuEdJbIpISCWJwjA6hXRCnTyWgkzHa113LCfV/gr.jpg EOT;
-喵 "喵" <<<EOT https://ouqffa.dm1.livefilestore.com/y1pXX02Y6e-geSCQ21yM1DmQ4cT6s6Y6NxCyDVLtX8CPzzO3FvyHtJgg2VAuB_ZpzSJ-ogp0S6PHYNwTHy_mzOaVkvYg-nqyevu/miao.jpg EOT;
+@advanced dropdown ----bgimg---- "背景" {
+---- "五更琉璃*" <<<EOT https://ouqffa.dm1.livefilestore.com/y1pmWsabLMFiDwYMT6OiuM-EjNWJlMUmMTl-MN3hv2p6Dmw8PBoNUAtvnK6muWxuEdJbIpISCWJwjA6hXRCnTyWgkzHa113LCfV/gr.jpg EOT;
+- "喵" <<<EOT https://ouqffa.dm1.livefilestore.com/y1pXX02Y6e-geSCQ21yM1DmQ4cT6s6Y6NxCyDVLtX8CPzzO3FvyHtJgg2VAuB_ZpzSJ-ogp0S6PHYNwTHy_mzOaVkvYg-nqyevu/miao.jpg EOT;
 
-	/*[[bgimg]]*\/-custom-dropdown "Custom" <<<EOT /*[[/*[[bgimg]]*\/-custom]]*\/ EOT;
+	----bgimg-----custom-dropdown "Custom" <<<EOT /*[[----bgimg-----custom]]*\/ EOT;
 }
-@advanced text /*[[bgimg]]*\/-custom "背景 (Custom)" "https://example.com/image.png"
+@advanced text ----bgimg-----custom "背景 (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);

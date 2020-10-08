@@ -14,11 +14,11 @@ BGI "По умолчанию стоит*" <<<EOT http://my8.imgsmail.ru/mail/ru/
 }
 @advanced text BGI-custom "Фоновое изображение (Custom)" "https://example.com/image.png"
 @advanced dropdown ImagePos "Выравнивание изображения" {
-	center center "По центру*" <<<EOT center center EOT;
-top center "По верху" <<<EOT top center EOT;
-bottom center "По низу" <<<EOT bottom center EOT;
-center right "По правой стороне" <<<EOT center right EOT;
-center left "По левой стороне" <<<EOT center left EOT;
+	center-center "По центру*" <<<EOT center center EOT;
+top-center "По верху" <<<EOT top center EOT;
+bottom-center "По низу" <<<EOT bottom center EOT;
+center-right "По правой стороне" <<<EOT center right EOT;
+center-left "По левой стороне" <<<EOT center left EOT;
 
 }
 @advanced dropdown ImgFix "Прокручивать изображение" {

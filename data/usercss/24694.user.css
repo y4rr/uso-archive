@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown chatterboxstatushide "Members' chatterbox status" {
-	Leave as is "Leave as is*" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
+	Leave-as-is "Leave as is*" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
 Hide "Hide" <<<EOT /* ------------------------------------------------------------------------- *\/
 
 /* Removes the 'chatterbox status' decorations that accompanies every 
@@ -27,7 +27,7 @@ Hide "Hide" <<<EOT /* ----------------------------------------------------------
 
 }
 @advanced dropdown topictodaystandout "'Today' marker to 'last-post' indexes." {
-	Make it stand out "Make it stand out*" <<<EOT /* ------------------------------------------------------------------------- *\/
+	Make-it-stand-out "Make it stand out*" <<<EOT /* ------------------------------------------------------------------------- *\/
 
 /*  In topic & board index pages; In the "Last post" column; alter the
  *  background-color of "Today" (or in fact, any first thing that's in
@@ -40,12 +40,12 @@ Hide "Hide" <<<EOT /* ----------------------------------------------------------
 
 /* ------------------------------------------------------------------------- *\/
  EOT;
-Leave as is "Leave as is" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
+Leave-as-is "Leave as is" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
 
 }
 @advanced dropdown fixquotemarginbottom "Implicit blank line below [quote]-ed content" {
-	Leave as is "Leave as is*" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
-Remove it "Remove it" <<<EOT /* ------------------------------------------------------------------------- *\/
+	Leave-as-is "Leave as is*" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
+Remove-it "Remove it" <<<EOT /* ------------------------------------------------------------------------- *\/
 
 /*  Remove the extra spacing below a [quote]...[/quote] block.
  *  This re-instates the forum's behaviour from before the 2010-Jan-19 change.
@@ -59,7 +59,7 @@ Remove it "Remove it" <<<EOT /* ------------------------------------------------
 
 }
 @advanced dropdown topicnewfixtoleft "'New' label to topic subjects:" {
-	"Replace" into previ "\"Replace\" into previous column*" <<<EOT /* ------------------------------------------------------------------------- *\/
+	-Replace--into-previ "\"Replace\" into previous column*" <<<EOT /* ------------------------------------------------------------------------- *\/
 
 /*  Move the 'new' marker into the column to the left of a topic's subject
  *  text. The icon normally in that column is rendered invisible.
@@ -106,8 +106,8 @@ Remove it "Remove it" <<<EOT /* ------------------------------------------------
   background: transparent url(data:image/gif;base64,R0lGODdhGgALAIAAAP////+DACwAAAAAGgALAAACI4yPqcvtDw+YQE5zc0069L8hIOVVHWemKBaKanmVbETX9r0UADs=) top left no-repeat !important;}
 
 /* ------------------------------------------------------------------------- *\/ EOT;
-Leave as is "Leave as is" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
-Move to left of subj "Move to left of subject" <<<EOT /* ------------------------------------------------------------------------- *\/
+Leave-as-is "Leave as is" <<<EOT /* ------------------------------------------------------------------------- *\/ EOT;
+Move-to-left-of-subj "Move to left of subject" <<<EOT /* ------------------------------------------------------------------------- *\/
 
 /*  Move the 'new' marker to the left of a topic's subject text so it
  *  stands out more.

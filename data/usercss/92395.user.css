@@ -13,28 +13,28 @@ none "none" <<<EOT border: 0px !important; EOT;
 }
 @advanced dropdown bubblecolour "Speech Bubble Colour" {
 	darker "darker*" <<<EOT background: #efefef !important; EOT;
-darkest; old tumblr  "darkest; old tumblr default" <<<EOT background: #e7eaec !Important; EOT;
-tumblr default "tumblr default" <<<EOT  EOT;
+darkest--old-tumblr- "darkest; old tumblr default" <<<EOT background: #e7eaec !Important; EOT;
+tumblr-default "tumblr default" <<<EOT  EOT;
 
 }
 @advanced dropdown fontcolour "Text Colour" {
-	default (unchanged) "default (unchanged)*" <<<EOT  EOT;
-old tumblr default ( "old tumblr default (blue-ish)" <<<EOT color: #38485c !important; EOT;
+	default--unchanged- "default (unchanged)*" <<<EOT  EOT;
+old-tumblr-default-- "old tumblr default (blue-ish)" <<<EOT color: #38485c !important; EOT;
 
 }
 @advanced dropdown blockquotefix "Alter Blockquote Border" {
-	darker for easier vi "darker for easier visibility*" <<<EOT border-color: #b9b9b9 !important; EOT;
-no change "no change" <<<EOT  EOT;
+	darker-for-easier-vi "darker for easier visibility*" <<<EOT border-color: #b9b9b9 !important; EOT;
+no-change "no change" <<<EOT  EOT;
 
 }
 @advanced dropdown speecharrow "Speech Arrow Colour (pick same as bubble background)" {
 	darker "darker*" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
 border-right: 15px solid #efefef;
 } EOT;
-darkest; old tumblr  "darkest; old tumblr default" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
+darkest--old-tumblr- "darkest; old tumblr default" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
 border-right: 15px solid #e7eaec;
 } EOT;
-tumblr default "tumblr default" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
+tumblr-default "tumblr default" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
 border-right: 15px solid #f5f5f5;
 } EOT;
 
@@ -46,8 +46,8 @@ center "center" <<<EOT text-align: center !important; EOT;
 
 }
 @advanced dropdown askedremove "Remove \"Asked:\" Label" {
-	yes, remove it "yes, remove it*" <<<EOT font-size: 0px !important; EOT;
-no, leave it "no, leave it" <<<EOT  EOT;
+	yes--remove-it "yes, remove it*" <<<EOT font-size: 0px !important; EOT;
+no--leave-it "no, leave it" <<<EOT  EOT;
 
 }
 @advanced dropdown answeralign "Answerer Name Alignment" {
@@ -57,14 +57,14 @@ center "center" <<<EOT text-align: center !important; EOT;
 
 }
 @advanced dropdown answeredremove "Remove \"Answered:\" Label?" {
-	yes, remove it "yes, remove it*" <<<EOT font-size: 0px !important; EOT;
-no, leave it "no, leave it" <<<EOT  EOT;
+	yes--remove-it "yes, remove it*" <<<EOT font-size: 0px !important; EOT;
+no--leave-it "no, leave it" <<<EOT  EOT;
 
 }
 @advanced dropdown avatarhover "Enlarge Icons on Hover?" {
-	yes, enlarge them "yes, enlarge them*" <<<EOT width: 45px !important;
+	yes--enlarge-them "yes, enlarge them*" <<<EOT width: 45px !important;
 height: 45px !important; EOT;
-no, keep them small "no, keep them small" <<<EOT  EOT;
+no--keep-them-small "no, keep them small" <<<EOT  EOT;
 
 }
 @advanced dropdown borderaskthing "Border Before Answer/Content" {
@@ -86,29 +86,29 @@ display: none !important;
 
 }
 @advanced dropdown showbubblearrow "Show Speech Bubble Arrow?" {
-	yes, show it "yes, show it*" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
+	yes--show-it "yes, show it*" <<<EOT .post_body .note_item:after, .post_body .note_item:before {
     border-bottom: 15px solid transparent;
     bottom: -15px;
     content: '';
     position: absolute;
     left: 60px;
 } EOT;
-no, hide it "no, hide it" <<<EOT  EOT;
+no--hide-it "no, hide it" <<<EOT  EOT;
 
 }
 @advanced dropdown bubblefontsize "Speech Bubble Font Size" {
 	smaller "smaller*" <<<EOT font-size: 10pt !important; EOT;
-tumblr default "tumblr default" <<<EOT  EOT;
+tumblr-default "tumblr default" <<<EOT  EOT;
 
 }
 @advanced dropdown otherfontsize "Font Size Outside Bubbles" {
-	tumblr default "tumblr default*" <<<EOT  EOT;
+	tumblr-default "tumblr default*" <<<EOT  EOT;
 smaller "smaller" <<<EOT font-size: 10pt !important; EOT;
 
 }
 @advanced dropdown padding "Lessen Padding to Save Space?" {
-	yes, lessen it "yes, lessen it*" <<<EOT padding: 8px !important; EOT;
-no, leave it large "no, leave it large" <<<EOT  EOT;
+	yes--lessen-it "yes, lessen it*" <<<EOT padding: 8px !important; EOT;
+no--leave-it-large "no, leave it large" <<<EOT  EOT;
 
 }
 

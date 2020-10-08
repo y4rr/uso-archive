@@ -6,10 +6,10 @@
 @version        20151128.9.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown .png "版本" {
-	原版主题 "原版主题*" <<<EOT .png EOT;
-FXChrome 38+ "FXChrome 38+" <<<EOT -dk.png EOT;
-FXChrome 34+ "FXChrome 34+" <<<EOT .png EOT;
+@advanced dropdown -png "版本" {
+	---- "原版主题*" <<<EOT .png EOT;
+FXChrome-38- "FXChrome 38+" <<<EOT -dk.png EOT;
+FXChrome-34- "FXChrome 34+" <<<EOT .png EOT;
 
 }
 
@@ -65,14 +65,14 @@ list-style-image: url("chrome://backtoclose/content/tabclose16.png") !important;
 /* 转到上一页 -- Back *
 #context-back, menuitem[oncommand="BrowserBack(event, true)"],#historyMenuBack
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 36px, 18px, 18px) !important;
 }
 
 /* 转到下一页 -- Forward *
 #context-forward, menuitem[oncommand="BrowserForward(event, true)"],#historyMenuForward
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 72px, 18px, 54px) !important;
 }
 
@@ -83,7 +83,7 @@ list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
 /* 重新载入框架 -- Reload Frame*/
 #context-reloadframe, menuitem[oncommand="gContextMenu.reloadFrame();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/")!important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/")!important;
 -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
 }
 
@@ -97,7 +97,7 @@ list-style-image: url("chrome://browser/skin/reload-stop-go.png") !important;
 #context-home, /* 主页 -- Home */  /*没找到*/
 menuitem[oncommand="BrowserGoHome(event);"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 126px, 18px, 108px) !important;
 }
 
@@ -106,7 +106,7 @@ menuitem[command="cmd_newNavigator"],
 #context-openframe, /* 在新窗口中打开框架 -- Open Frame in New Window */
 menuitem[oncommand="gContextMenu.openFrame();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 342px, 18px, 324px) !important;
 }
 
@@ -118,7 +118,7 @@ menuitem[oncommand="gBrowser.openInverseLink();"],
 #context-openframeintab, /* 在新标签页中打开框架 -- Open Frame in New Tab  */
 menuitem[oncommand="gContextMenu.openFrameInTab();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 360px, 18px, 342px) !important;
 }
 
@@ -151,7 +151,7 @@ menuitem[oncommand="gContextMenu.savePageToPocket();"],
 #context-savelinktopocket, /* 将链接保存到Pocket -- Save Link to Pocket */
 menuitem[oncommand="gContextMenu.saveLinkToPocket();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar@2x/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar@2x/*[[-png]]*/") !important;
 -moz-image-region: rect(36px, 1548px, 72px, 1512px) !important;
 }
 
@@ -195,7 +195,7 @@ menuitem[oncommand="gContextMenu.copyMediaLocation();"],
 #context-copyaudiourl, /* 复制音频地址 -- Copy Audio Url */
 menuitem[oncommand="gContextMenu.copyMediaLocation();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 522px 18px 504px) !important;
 }
 
@@ -206,7 +206,7 @@ menuitem[oncommand="gContextMenu.viewBGImage(event);"],
 #context-viewvideo, /* 查看视频 -- View Video */
 menuitem[oncommand="gContextMenu.viewMedia(event);"]
 {
-list-style-image: url("chrome://browser/skin/pageInfo/*[[.png]]*/")!important;
+list-style-image: url("chrome://browser/skin/pageInfo/*[[-png]]*/")!important;
 -moz-image-region: rect(7px, 60px, 25px, 41px) !important;
 }
 
@@ -267,7 +267,7 @@ menuitem[oncommand="gContextMenu.showOnlyThisFrame();"]
 #context-printframe, /* 打印框架 -- Print Frame... */
 menuitem[oncommand="gContextMenu.printFrame();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
  -moz-image-region: rect(0 414px 18px 396px) !important;
 }
 
@@ -292,7 +292,7 @@ menuitem[oncommand="gContextMenu.viewFrameInfo();"]
 #context-viewinfo, 	/* 查看页面信息 -- View Page Info */
 menuitem[oncommand="gContextMenu.viewInfo();"]
 {
-list-style-image: url("chrome://browser/skin/pageInfo/*[[.png]]*/")  !important;
+list-style-image: url("chrome://browser/skin/pageInfo/*[[-png]]*/")  !important;
 -moz-image-region: rect(0px, 32px, 32px, 0px)  !important;
 }
 
@@ -338,7 +338,7 @@ menuitem[label="Next persona"]
 menuitem[command="cmd_cut"],
 menuitem[cmd="cmd_cut"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 504px 18px 486px) !important;
 }
 
@@ -346,7 +346,7 @@ list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
 menuitem[command="cmd_copy"],
 menuitem[cmd="cmd_copy"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 522px 18px 504px) !important;
 }
 
@@ -354,7 +354,7 @@ list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
 menuitem[command="cmd_paste"],
 menuitem[cmd="cmd_paste"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 540px 18px 522px) !important;
 }
 
@@ -399,21 +399,21 @@ menuitem[oncommand="AddKeywordForSearchField();"]
 #context_reloadTab, /* 重新载入标签页 -- Reload Tab */
 menuitem[oncommand="gBrowser.reloadTab(TabContextMenu.contextTab);"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
 }
 
 #context_reloadAllTabs, /* 重新载入全部标签页 -- Reload All Tabs */
 menuitem[oncommand="gBrowser.reloadAllTabs();"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
 }
 
 /* 重新载入其他标签页 -- Reload Other Tabs */ /*没找到*/
 menuitem[oncommand="gBrowser.reloadAllTabsBut(TabContextMenu.contextTab);"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
 }
 
@@ -444,7 +444,7 @@ list-style-image: url("chrome://browser/skin/tabbrowser/newtab.png")  !important
 #context_openTabInWindow, /* 移到新窗口 -- Move to New Window */
 menuitem[oncommand="gBrowser.replaceTabWithWindow(TabContextMenu.contextTab);"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 342px, 18px, 324px) !important;
 }
 
@@ -506,20 +506,20 @@ list-style-image: url("chrome://browser/skin/devtools/command-paintflashing@2x.p
 /*在新标签页中打开*/
 menuitem[command="placesCmd_open:tab"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 360px, 18px, 342px) !important;
 }
 
 /*在新窗口中打开*/
 menuitem[command="placesCmd_open:window"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 342px, 18px, 324px) !important;
 }
 
 menuitem[label="在标签页中打开书签组"] /*Open All in Tabs*/
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 64px, 32px, 32px) !important;
 }
 
@@ -568,19 +568,19 @@ list-style-image: url("chrome://global/skin/icons/close.png") !important;
 
 #placesContext_cut /* 剪切 -- Cut */
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 504px 18px 486px) !important;
 }
 
 #placesContext_copy /* 复制 -- Copy */
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 522px 18px 504px) !important;
 }
 
 #placesContext_paste /* 粘贴 -- Paste */
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 540px 18px 522px) !important;
 }
 
@@ -651,7 +651,7 @@ list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAY
 menuitem[oncommand="performCommand('cmd_copyLocation');"],
 menuitem[cmd="cmd_copyLocation"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 522px 18px 504px) !important;
 }
 
@@ -739,7 +739,7 @@ menuitem[command="cmd_uninstallItem"]
 #menuitem_preferences,
 menuitem[command="cmd_showItemPreferences"]
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 32px,  32px, 0)!important;
 }
 
@@ -830,7 +830,7 @@ menubar > menu#view-menu ,#menu_view
 
 /*历史*/
 menubar > menu#history-menu{
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 180px, 18px, 162px) !important;
 }
 
@@ -903,7 +903,7 @@ menuitem[command="cmd_printPreview"]
 #menu_print,
 menuitem[command="cmd_print"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px 414px 18px 396px) !important;
 } 
 
@@ -911,7 +911,7 @@ list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
 #menu_import,
 menuitem[oncommand="BrowserImport();"]
 {
-list-style-image: url("chrome://browser/skin/places/libraryToolbar/*[[.png]]*/")  !important;
+list-style-image: url("chrome://browser/skin/places/libraryToolbar/*[[-png]]*/")  !important;
 -moz-image-region: rect(0px, 48px, 16px, 32px)  !important;
 }
 
@@ -978,14 +978,14 @@ menu[id="viewSidebarMenuMenu"]
 #menu_bookmarksSidebar,
 #BMB_viewBookmarksSidebar
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 144px, 18px, 126px) !important;
 }
 
 /*侧栏-历史*/
 #menu_historySidebar
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 126px, 18px, 108px) !important;
 }
 
@@ -997,7 +997,7 @@ menu[id="viewFullZoomMenu"], menuitem[label="Inspect"], #context-inspect, #cmRes
 #menu_zoomEnlarge,
 menuitem[command="cmd_fullZoomEnlarge"]
 {
-list-style-image: url("chrome://browser/skin/menuPanel-small/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/menuPanel-small/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 96px, 16px, 80px) !important;
 }
 
@@ -1005,7 +1005,7 @@ list-style-image: url("chrome://browser/skin/menuPanel-small/*[[.png]]*/") !impo
 #menu_zoomReduce,
 menuitem[command="cmd_fullZoomReduce"]
 {
-list-style-image: url("chrome://browser/skin/menuPanel-small/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/menuPanel-small/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 80px, 16px, 64px) !important;
 }
 
@@ -1013,7 +1013,7 @@ list-style-image: url("chrome://browser/skin/menuPanel-small/*[[.png]]*/") !impo
 #menu_zoomReset,
 menuitem[command="cmd_fullZoomReset"]
 {
- list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+ list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
  -moz-image-region: rect(0, 270px, 18px, 252px) !important;
 }
 
@@ -1026,7 +1026,7 @@ menuitem[command="cmd_fullZoomReset"]
 /*页面样式*/
 menu[id="pageStyleMenu"]
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 96px, 32px, 64px) !important;
 height:16px !important;
 }
@@ -1035,7 +1035,7 @@ height:16px !important;
 menu[id="charsetMenu"],
 menu[id="appmenu_developer_charsetMenu"]
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(16px, 93px, 32px, 75px) !important;
 }
 
@@ -1051,7 +1051,7 @@ menuitem[label="&fullScreenCmd.label;"],
 menuitem[observes="View:FullScreen"],
 checkbox[observes="View:FullScreen"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0px, 432px, 18px, 414px) !important;
 }
 
@@ -1074,7 +1074,7 @@ menuitem[oncommand="SwitchDocumentDirection(window.content)"]
 #menu_showAllHistory,
 menuitem[command="Browser:ShowAllHistory"]
 {
-list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 180px, 18px, 162px) !important;
 }
 
@@ -1150,7 +1150,7 @@ menuitem[oncommand="gSyncUI.openSetup()"]
 /*立即同步*/
 menuitem[oncommand="gSyncUI.doSync(event);"]
 {
-	list-style-image: url("chrome://browser/skin/Toolbar/*[[.png]]*/") !important;
+	list-style-image: url("chrome://browser/skin/Toolbar/*[[-png]]*/") !important;
     -moz-image-region: rect(0px, 270px, 18px, 252px) !important;
 }
 
@@ -1158,7 +1158,7 @@ menuitem[oncommand="gSyncUI.doSync(event);"]
 #webDeveloperMenu,
 #menu_domInspector /*DOM Inspector*/
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 224px, 32px, 192px) !important;
 height: 16px !important;
 }
@@ -1173,7 +1173,7 @@ height: 16px !important;
 #javascriptConsole,/*错误控制台*/
 menuitem[oncommand="toJavaScriptConsole();"]
 {
-list-style-image: url("chrome://global/skin/console/console-Toolbar/*[[.png]]*/")  !important;
+list-style-image: url("chrome://global/skin/console/console-Toolbar/*[[-png]]*/")  !important;
 -moz-image-region: rect(0px 24px 24px 0px)  !important;
 }
 
@@ -1196,7 +1196,7 @@ menuitem[oncommand="openUILinkIn('https://addons.mozilla.org/firefox/collections
 #menu_pageInfo,
 menuitem[command="View:PageInfo"]
 {
-list-style-image: url("chrome://browser/skin/pageInfo/*[[.png]]*/")  !important;
+list-style-image: url("chrome://browser/skin/pageInfo/*[[-png]]*/")  !important;
 -moz-image-region: rect(0px, 32px, 32px, 0px)  !important;
 }
 
@@ -1209,7 +1209,7 @@ menuitem[command="Tools:PrivateBrowsing"]
 #sanitizeItem,
 menuitem[command="Tools:Sanitize"]
 {
-list-style-image: url("chrome://global/skin/console/console-Toolbar/*[[.png]]*/")  !important;
+list-style-image: url("chrome://global/skin/console/console-Toolbar/*[[-png]]*/")  !important;
 -moz-image-region: rect(0px 120px 24px 96px)  !important;
 }
 
@@ -1217,7 +1217,7 @@ list-style-image: url("chrome://global/skin/console/console-Toolbar/*[[.png]]*/"
 #menu_preferences,
 menuitem[oncommand="openPreferences();"]
 {
-list-style-image: url("chrome://browser/skin/preferences/Options/*[[.png]]*/") !important;
+list-style-image: url("chrome://browser/skin/preferences/Options/*[[-png]]*/") !important;
 -moz-image-region: rect(0, 32px, 32px, 0)!important;
 }
 

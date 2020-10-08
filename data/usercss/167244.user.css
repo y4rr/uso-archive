@@ -7,10 +7,10 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown mask "光标放置显示黑条" {
-	mask.on "启用*" <<<EOT .mark:hover {
+	mask-on "启用*" <<<EOT .mark:hover {
     color: #2b2b2b !important;
 } EOT;
-mask.off "关闭" <<<EOT  EOT;
+mask-off "关闭" <<<EOT  EOT;
 
 }
 

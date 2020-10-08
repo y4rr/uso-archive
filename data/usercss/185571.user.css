@@ -6,23 +6,23 @@
 @version        2020929.8.43
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown Option(preview) "操作バーホバー時に表示される物" {
-	表示 "表示*" <<<EOT 	[id="player-container"]:not([class="style-scope ytd-miniplayer"]) 		[class*="ytp-bottom"]
+@advanced dropdown Option-preview- "操作バーホバー時に表示される物" {
+	-- "表示*" <<<EOT 	[id="player-container"]:not([class="style-scope ytd-miniplayer"]) 		[class*="ytp-bottom"]
 	{
 		opacity: 1 !important;
 	} EOT;
-非表示 "非表示" <<<EOT 	[id="player-container"]:not([class="style-scope ytd-miniplayer"]) 		[class*="ytp-bottom"]
+--- "非表示" <<<EOT 	[id="player-container"]:not([class="style-scope ytd-miniplayer"]) 		[class*="ytp-bottom"]
 	{
 		opacity: 0 !important;
 	} EOT;
 
 }
-@advanced dropdown Option(livetime) "生放送経過時間" {
-	非表示 "非表示*" <<<EOT 	[class*="ytp-live"] [class="ytp-time-current"]
+@advanced dropdown Option-livetime- "生放送経過時間" {
+	--- "非表示*" <<<EOT 	[class*="ytp-live"] [class="ytp-time-current"]
 	{
 		display: none !important;
 	} EOT;
-表示 "表示" <<<EOT 	[class*="ytp-live"] [class="ytp-time-current"]
+-- "表示" <<<EOT 	[class*="ytp-live"] [class="ytp-time-current"]
 	{
 		display: inline-block !important;
 		padding-right: 10px !important;
@@ -318,8 +318,8 @@ ytd-watch-flexy[theater] [id="movie_player"][class*="ad-interrupting"] [class*="
 	}
 
 	/* ----- 操作バーホバー時に表示される物 ----- */
-	/*[[Option(preview)]]*/
+	/*[[Option-preview-]]*/
 
 	/* ----- 生放送経過時間 ----- */
-	/*[[Option(livetime)]]*/
+	/*[[Option-livetime-]]*/
 }

@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown unreadcounts "Unread counts in left menu" {
-	unreadcounts hide "Hide*" <<<EOT /*
+	unreadcounts-hide "Hide*" <<<EOT /*
  * Hide unread count in left menu.
  *\/
 .bsU
@@ -15,11 +15,11 @@
 	display: none !important;
 }
  EOT;
-unreadcounts show "Show" <<<EOT  EOT;
+unreadcounts-show "Show" <<<EOT  EOT;
 
 }
 @advanced dropdown stars "Stars in e-mail listing" {
-	stars hide "Hide*" <<<EOT /*
+	stars-hide "Hide*" <<<EOT /*
  * Hide stars in e-mail listing.
  *\/
 .apU 
@@ -27,18 +27,18 @@ unreadcounts show "Show" <<<EOT  EOT;
 	visibility: hidden !important;
 }
  EOT;
-stars show "Show" <<<EOT  EOT;
+stars-show "Show" <<<EOT  EOT;
 
 }
 @advanced dropdown datetime "Date and time in e-mail listing" {
-	datetime hide "Hide*" <<<EOT /*
+	datetime-hide "Hide*" <<<EOT /*
  * Hide date/time in e-mail listing.
  *\/
 .xW
 {
 	display: none !important;
 } EOT;
-datetime show "Show" <<<EOT  EOT;
+datetime-show "Show" <<<EOT  EOT;
 
 }
 @advanced dropdown scrollbars "Scrollbars in e-mail listing" {

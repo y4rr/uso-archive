@@ -30,23 +30,23 @@ Red "Red" <<<EOT 360 EOT;
 
 }
 @advanced dropdown inst "Toolbar Smoothness" {
-	95% (Plane) "95% (Plane)*" <<<EOT 95% EOT;
-92% (Default) "92% (Default)" <<<EOT 92% EOT;
-85% "85%" <<<EOT 85% EOT;
-79% (Faint) "79% (Faint)" <<<EOT 79% EOT;
-58% "58%" <<<EOT 58% EOT;
-38%(Dark) "38%(Dark)" <<<EOT 38% EOT;
-20% (More Dark) "20% (More Dark)" <<<EOT 20% EOT;
+	95---Plane- "95% (Plane)*" <<<EOT 95% EOT;
+92---Default- "92% (Default)" <<<EOT 92% EOT;
+85- "85%" <<<EOT 85% EOT;
+79---Faint- "79% (Faint)" <<<EOT 79% EOT;
+58- "58%" <<<EOT 58% EOT;
+38--Dark- "38%(Dark)" <<<EOT 38% EOT;
+20---More-Dark- "20% (More Dark)" <<<EOT 20% EOT;
 
 }
 @advanced dropdown nt "Blank page" {
-	White (default) "White (default)*" <<<EOT background-color: white !important; EOT;
+	White--default- "White (default)*" <<<EOT background-color: white !important; EOT;
 Blank "Blank" <<<EOT background-color: black !important; EOT;
-According to the col "According to the color" <<<EOT background-color: none !important; EOT;
+According-to-the-col "According to the color" <<<EOT background-color: none !important; EOT;
 
 }
 @advanced dropdown appicon "App Menu" {
-	Top left corner of t "Top left corner of the window (default)*" <<<EOT   padding: 0 45px!important;
+	Top-left-corner-of-t "Top left corner of the window (default)*" <<<EOT   padding: 0 45px!important;
   height: 30px !important;
   background-color: transparent;
 }
@@ -62,7 +62,7 @@ According to the col "According to the color" <<<EOT background-color: none !imp
 }
 #main-window[sizemode="normal"] #appmenu-button {
     margin-bottom: -10px !important; EOT;
-By a movable button  "By a movable button (using MFB addon)" <<<EOT   padding: 0 4px!important;
+By-a-movable-button- "By a movable button (using MFB addon)" <<<EOT   padding: 0 4px!important;
   height: 30px !important;
   background-color: transparent;
 }

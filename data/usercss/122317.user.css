@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown fx_legacy "Firefox version:" {
-	fx42+ "Firefox 42 or newer*" <<<EOT  EOT;
+	fx42- "Firefox 42 or newer*" <<<EOT  EOT;
 fx42- "Firefox 41 or older" <<<EOT   /* workaround for Personas Expression *\/
   *|window:not([style*="background-position"]) #newtab-vertical-margin {
     background-color: #14171A;

@@ -7,15 +7,15 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown rozszerzForum "Rozszerzenie forum:" {
-	Nie chcę "Nie chcę*" <<<EOT /* Rozszerzenie forum nie zostało wybrane *\/ EOT;
-Ciemna skóra (Infini "Ciemna skóra (Infinite Dark)" <<<EOT /* Rozszerzenie forum - ciemna skórka *\/
+	Nie-chc- "Nie chcę*" <<<EOT /* Rozszerzenie forum nie zostało wybrane *\/ EOT;
+Ciemna-sk-ra--Infini "Ciemna skóra (Infinite Dark)" <<<EOT /* Rozszerzenie forum - ciemna skórka *\/
 div.wrapper {
 	width: 96% !important;
 }
 div.primary_nav {
 	width: calc(100%-37px) !important;
 } EOT;
-Jasna skóra (IP.Boar "Jasna skóra (IP.Board) + poprawka panelu moderatorskiego" <<<EOT /* Rozszerzenie forum - jasna skórka *\/
+Jasna-sk-ra--IP-Boar "Jasna skóra (IP.Board) + poprawka panelu moderatorskiego" <<<EOT /* Rozszerzenie forum - jasna skórka *\/
 div#content {
 	width: 96% !important;
 }
@@ -43,7 +43,7 @@ img.ipsUserPhoto {
 
 }
 @advanced dropdown infoPodAv "Mniej informacji pod avatarem:" {
-	Nic nie zmieniaj "Nic nie zmieniaj*" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem nie zostało wybrane *\/ EOT;
+	Nic-nie-zmieniaj "Nic nie zmieniaj*" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem nie zostało wybrane *\/ EOT;
 Nic "Nic" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem *\/
 p.member_title, li.group_icon, ul.custom_fields {
 	display: none;
@@ -61,7 +61,7 @@ ul.basic_info > li {
 li.post_count, li.group_title {
 	display: none;
 } EOT;
-Sama ranga "Sama ranga" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem *\/
+Sama-ranga "Sama ranga" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem *\/
 p.member_title, li.group_icon, ul.custom_fields {
 	display: none;
 }
@@ -83,7 +83,7 @@ ul.basic_info > li {
 li.post_count {
 	display: none;
 } EOT;
-Ranga i ilość postów "Ranga i ilość postów" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem *\/
+Ranga-i-ilo---post-w "Ranga i ilość postów" <<<EOT /* Zmniejszenie ilości bzdetów pod avatarem *\/
 p.member_title, li.group_icon, ul.custom_fields {
 	display: none;
 }
@@ -106,22 +106,22 @@ ul.basic_info > li {
 }
 @advanced dropdown scrollSig "Scrollbar w sygnaturze:" {
 	Nie "Nie*" <<<EOT /* Pasek przewijania w sygnaturze nie został wybrany *\/ EOT;
-Tak (100 pikseli) "Tak (100 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
+Tak--100-pikseli- "Tak (100 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
 div.signature {
 	max-height: 100px;
 	overflow: auto;
 } EOT;
-Tak (150 pikseli) "Tak (150 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
+Tak--150-pikseli- "Tak (150 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
 div.signature {
 	max-height: 150px;
 	overflow: auto;
 } EOT;
-Tak (200 pikseli) "Tak (200 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
+Tak--200-pikseli- "Tak (200 pikseli)" <<<EOT /* Pasek przewijania w sygnaturze *\/
 div.signature {
 	max-height: 200px;
 	overflow: auto;
 } EOT;
-Ukryj całkiem sygnat "Ukryj całkiem sygnatury" <<<EOT /* Ukrycie sygnatur *\/
+Ukryj-ca-kiem-sygnat "Ukryj całkiem sygnatury" <<<EOT /* Ukrycie sygnatur *\/
 div.signature {
 	display: none;
 } EOT;
@@ -190,13 +190,13 @@ Tak "Tak" <<<EOT /* Zmiana domyślnego koloru postów *\/
 @advanced color domyslnyKolorPostow "Domyślny kolor postów:" #FFFFFF
 @advanced dropdown czcionkaSzybkaOdp "Zmiana czcionki na Consolas w Szybkiej Odp.:" {
 	Nie "Nie*" <<<EOT /* Zmiana czcionki w Szybkiej Odpowiedzi nie została wybrana *\/ EOT;
-Tak (własny kolor) "Tak (własny kolor)" <<<EOT /* Zmiana czcionki i jej koloru w Szybkiej Odpowiedzi *\/
+Tak--w-asny-kolor- "Tak (własny kolor)" <<<EOT /* Zmiana czcionki i jej koloru w Szybkiej Odpowiedzi *\/
 .cke_skin_ips textarea.cke_source { 
 	font-family: "Consolas", monospace !important;
 	color: /*[[kolorSzybkaOdp]]*\/;
 	font-size: 12px;
 } EOT;
-Tak (domyślny kolor) "Tak (domyślny kolor)" <<<EOT /* Zmiana czcionki w Szybkiej Odpowiedzi *\/
+Tak--domy-lny-kolor- "Tak (domyślny kolor)" <<<EOT /* Zmiana czcionki w Szybkiej Odpowiedzi *\/
 .cke_skin_ips textarea.cke_source { 
 	font-family: "Consolas", monospace !important;
 	font-size: 12px;
@@ -206,7 +206,7 @@ Tak (domyślny kolor) "Tak (domyślny kolor)" <<<EOT /* Zmiana czcionki w Szybki
 @advanced color kolorSzybkaOdp "Kolor tekstu w Szybkiej Odpowiedzi" #FFFFFF
 @advanced dropdown postEdit "Zmiana wyglądu dopisków \"[post] Edytowany przez...\":" {
 	Nie "Nie*" <<<EOT /* Zmiana wyglądu dopisków "[post] Edytowany przez..." nie została wybrana *\/ EOT;
-Tak (ciemna skóra) "Tak (ciemna skóra)" <<<EOT /* Zmiana wyglądu dopisków "[post] Edytowany przez..." - ciemna skórka *\/
+Tak--ciemna-sk-ra- "Tak (ciemna skóra)" <<<EOT /* Zmiana wyglądu dopisków "[post] Edytowany przez..." - ciemna skórka *\/
 p.edit {
 	padding-top: 3px;
 	background: url("http://forum.cdaction.pl/public/style_images/infinite_dark/comment_edit.png") 6px 4px no-repeat !important;
@@ -216,7 +216,7 @@ p.edit {
 	text-shadow: #000000 0px 1px 0px !important;
 	width: 350px;
 } EOT;
-Tak (jasna skóra) "Tak (jasna skóra)" <<<EOT /* Zmiana wyglądu dopisków "[post] Edytowany przez..." - jasna skórka *\/
+Tak--jasna-sk-ra- "Tak (jasna skóra)" <<<EOT /* Zmiana wyglądu dopisków "[post] Edytowany przez..." - jasna skórka *\/
 p.edit {
 	padding-top: 3px;
 	background: url("http://forum.cdaction.pl/public/style_images/infinite_dark/comment_edit.png") 6px 4px no-repeat !important;
@@ -266,7 +266,7 @@ Tak "Tak" <<<EOT /* Ukrycie reklam typu "Ogłoszenie" *\/
 }
 @advanced dropdown gornyPasek "Nowy górny pasek i nagłówek forum:" {
 	Nie "Nie*" <<<EOT /* Nowy górny pasek i nagłówek forum nie został wybrany *\/ EOT;
-Tak (ciemna skóra) "Tak (ciemna skóra)" <<<EOT /* Nowy górny pasek i nagłówek forum *\/
+Tak--ciemna-sk-ra- "Tak (ciemna skóra)" <<<EOT /* Nowy górny pasek i nagłówek forum *\/
 #ajax_loading {
 	top: 29px !important;
 }

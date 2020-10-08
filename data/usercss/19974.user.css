@@ -7,133 +7,133 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown NeedCalendar "カレンダー設定" {
-	非表示にする "非表示にする*" <<<EOT #pbindexbg{display:none !important;} EOT;
-表示する "表示する" <<<EOT #pbcalendar table td a{border:0 !important;} EOT;
+	------ "非表示にする*" <<<EOT #pbindexbg{display:none !important;} EOT;
+---- "表示する" <<<EOT #pbcalendar table td a{border:0 !important;} EOT;
 
 }
-@advanced dropdown Y!shopping "Y! ショッピング" {
-	表示する "表示する*" <<<EOT /* a.cbysC1{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC1{display:none !important;} EOT;
+@advanced dropdown Y-shopping "Y! ショッピング" {
+	---- "表示する*" <<<EOT /* a.cbysC1{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC1{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!auction "Y! オークション" {
-	表示する "表示する*" <<<EOT /* a.cbysC2{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC2{display:none !important;} EOT;
+@advanced dropdown Y-auction "Y! オークション" {
+	---- "表示する*" <<<EOT /* a.cbysC2{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC2{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!travel "Y! 旅行、出張" {
-	表示する "表示する*" <<<EOT /* a.cbysC5{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC5{display:none !important;} EOT;
+@advanced dropdown Y-travel "Y! 旅行、出張" {
+	---- "表示する*" <<<EOT /* a.cbysC5{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC5{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!news "Y! ニュース" {
-	表示する "表示する*" <<<EOT /* a.cbysC12{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC12{display:none !important;} EOT;
+@advanced dropdown Y-news "Y! ニュース" {
+	---- "表示する*" <<<EOT /* a.cbysC12{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC12{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!weather "Y! 天気" {
-	表示する "表示する*" <<<EOT /* a.cbysC13{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC13{display:none !important;} EOT;
+@advanced dropdown Y-weather "Y! 天気" {
+	---- "表示する*" <<<EOT /* a.cbysC13{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC13{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!sports "Y! スポーツ" {
-	表示する "表示する*" <<<EOT /* a.cbysC14{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC14{display:none !important;} EOT;
+@advanced dropdown Y-sports "Y! スポーツ" {
+	---- "表示する*" <<<EOT /* a.cbysC14{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC14{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!finance "Y! ファイナンス" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC15{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC15{display:none !important;} *\/ EOT;
+@advanced dropdown Y-finance "Y! ファイナンス" {
+	------ "非表示にする*" <<<EOT a.cbysC15{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC15{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!tv "Y! テレビ" {
-	表示する "表示する*" <<<EOT /* a.cbysC25{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC25{display:none !important;} EOT;
+@advanced dropdown Y-tv "Y! テレビ" {
+	---- "表示する*" <<<EOT /* a.cbysC25{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC25{display:none !important;} EOT;
 
 }
-@advanced dropdown gyao! "GyaO!" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC26{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC26{display:none !important;} *\/ EOT;
+@advanced dropdown gyao- "GyaO!" {
+	------ "非表示にする*" <<<EOT a.cbysC26{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC26{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!mobage "Y! モバゲー" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC97{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC97{display:none !important;} *\/ EOT;
+@advanced dropdown Y-mobage "Y! モバゲー" {
+	------ "非表示にする*" <<<EOT a.cbysC97{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC97{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!map "Y! 地図" {
-	表示する "表示する*" <<<EOT /* a.cbysC33{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC33{display:none !important;} EOT;
+@advanced dropdown Y-map "Y! 地図" {
+	---- "表示する*" <<<EOT /* a.cbysC33{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC33{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!transit "Y! 路線" {
-	表示する "表示する*" <<<EOT /* a.cbysC34{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC34{display:none !important;} EOT;
+@advanced dropdown Y-transit "Y! 路線" {
+	---- "表示する*" <<<EOT /* a.cbysC34{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC34{display:none !important;} EOT;
 
 }
-@advanced dropdown Y!gourmet "食べログ" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC41{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC41{display:none !important;} *\/ EOT;
+@advanced dropdown Y-gourmet "食べログ" {
+	------ "非表示にする*" <<<EOT a.cbysC41{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC41{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!recnavi "Y! 求人" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC73{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC73{display:none !important;} *\/ EOT;
+@advanced dropdown Y-recnavi "Y! 求人" {
+	------ "非表示にする*" <<<EOT a.cbysC73{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC73{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!realestate "Y! 不動産" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC48{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC48{display:none !important;} *\/ EOT;
+@advanced dropdown Y-realestate "Y! 不動産" {
+	------ "非表示にする*" <<<EOT a.cbysC48{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC48{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!autos "Y! 自動車" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC37{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC37{display:none !important;} *\/ EOT;
+@advanced dropdown Y-autos "Y! 自動車" {
+	------ "非表示にする*" <<<EOT a.cbysC37{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC37{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!messages "Y! 掲示板" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC53{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC53{display:none !important;} *\/ EOT;
+@advanced dropdown Y-messages "Y! 掲示板" {
+	------ "非表示にする*" <<<EOT a.cbysC53{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC53{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!blog "Y! ブログ" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC57{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC57{display:none !important;} *\/ EOT;
+@advanced dropdown Y-blog "Y! ブログ" {
+	------ "非表示にする*" <<<EOT a.cbysC57{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC57{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!beauty "Y! 服、ビューティー" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC46{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC46{display:none !important;} *\/ EOT;
+@advanced dropdown Y-beauty "Y! 服、ビューティー" {
+	------ "非表示にする*" <<<EOT a.cbysC46{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC46{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!partner "Y! 出会い" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC44{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC44{display:none !important;} *\/ EOT;
+@advanced dropdown Y-partner "Y! 出会い" {
+	------ "非表示にする*" <<<EOT a.cbysC44{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC44{display:none !important;} *\/ EOT;
 
 }
-@advanced dropdown Y!area "Y! 地域" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC32{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC32{display:none !important;} *\/ EOT;
+@advanced dropdown Y-area "Y! 地域" {
+	------ "非表示にする*" <<<EOT a.cbysC32{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC32{display:none !important;} *\/ EOT;
 
 }
 @advanced dropdown cookpad "クックパッド" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC98{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC98{display:none !important;} *\/ EOT;
+	------ "非表示にする*" <<<EOT a.cbysC98{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC98{display:none !important;} *\/ EOT;
 
 }
 @advanced dropdown lohaco "日用品宅配" {
-	表示する "表示する*" <<<EOT /* a.cbysC115{display:none !important;} *\/ EOT;
-非表示にする "非表示にする" <<<EOT a.cbysC115{display:none !important;} EOT;
+	---- "表示する*" <<<EOT /* a.cbysC115{display:none !important;} *\/ EOT;
+------ "非表示にする" <<<EOT a.cbysC115{display:none !important;} EOT;
 
 }
 @advanced dropdown game "ゲーム" {
-	非表示にする "非表示にする*" <<<EOT a.cbysC20{display:none !important;} EOT;
-表示する "表示する" <<<EOT /* a.cbysC20{display:none !important;} *\/ EOT;
+	------ "非表示にする*" <<<EOT a.cbysC20{display:none !important;} EOT;
+---- "表示する" <<<EOT /* a.cbysC20{display:none !important;} *\/ EOT;
 
 }
 @advanced dropdown Facebook "Facebook通知" {
-	非表示にする "非表示にする*" <<<EOT /* ,#contents>#division>#sub>#facebook *\/ EOT;
-表示する "表示する" <<<EOT ,#contents>#division>#sub>#facebook EOT;
+	------ "非表示にする*" <<<EOT /* ,#contents>#division>#sub>#facebook *\/ EOT;
+---- "表示する" <<<EOT ,#contents>#division>#sub>#facebook EOT;
 
 }
 
@@ -210,73 +210,73 @@
 /* リンクに当たっているpaddingを無効化 */
 #contentbox ul li a{padding:0 0 0 20px !important;}
 /* ショッピング */
-/*[[Y!shopping]]*/
+/*[[Y-shopping]]*/
 
 /* オークション */
-/*[[Y!auction]]*/
+/*[[Y-auction]]*/
 
 /* 日用品宅配 */
 /*[[lohaco]]*/
 
 /* 旅行、出張 */
-/*[[Y!travel]]*/
+/*[[Y-travel]]*/
 
 /* ニュース */
-/*[[Y!news]]*/
+/*[[Y-news]]*/
 
 /* 天気 */
-/*[[Y!weather]]*/
+/*[[Y-weather]]*/
 
 /* スポーツ */
-/*[[Y!sports]]*/
+/*[[Y-sports]]*/
 
 /* ファイナンス */
-/*[[Y!finance]]*/
+/*[[Y-finance]]*/
 
 /* テレビ */
-/*[[Y!tv]]*/
+/*[[Y-tv]]*/
 
 /* ゲーム */
 /*[[game]]*/
 
 /* Gyao! */
-/*[[gyao!]]*/
+/*[[gyao-]]*/
 
 /* Y!モバゲー */
-/*[[Y!mobage]]*/
+/*[[Y-mobage]]*/
 
 /* 地図 */
-/*[[Y!map]]*/
+/*[[Y-map]]*/
 
 /* 路線 */
-/*[[Y!transit]]*/
+/*[[Y-transit]]*/
 
 /* グルメ */
-/*[[Y!gourmet]]*/
+/*[[Y-gourmet]]*/
 
 /* 求人 */
-/*[[Y!recnavi]]*/
+/*[[Y-recnavi]]*/
 
 /* 不動産 */
-/*[[Y!realestate]]*/
+/*[[Y-realestate]]*/
 
 /* 自動車 */
-/*[[Y!autos]]*/
+/*[[Y-autos]]*/
 
 /* 掲示板 */
-/*[[Y!messages]]*/
+/*[[Y-messages]]*/
 
 /* ブログ */
-/*[[Y!blog]]*/
+/*[[Y-blog]]*/
 
 /* 服、ビューティー */
-/*[[Y!beauty]]*/
+/*[[Y-beauty]]*/
 
 /* 出会い */
-/*[[Y!partner]]*/
+/*[[Y-partner]]*/
 
 /* 地域 */
-/*[[Y!area]]*/
+/*[[Y-area]]*/
 
 /* クックパッド */
 /*[[cookpad]]*/

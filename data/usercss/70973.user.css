@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown namefield-hide "Namefield" {
-	Hide Namefield "Hide Namefield*" <<<EOT 
+	Hide-Namefield "Hide Namefield*" <<<EOT 
 #qrname {
 color:transparent
 }
@@ -21,22 +21,22 @@ color:#2c2c2c!important
 color:#2c2c2c!important;
 transition:color .25s ease-in-out
 } EOT;
-Don't hide Namefield "Don't hide Namefield" <<<EOT  EOT;
+Don-t-hide-Namefield "Don't hide Namefield" <<<EOT  EOT;
 
 }
 @advanced dropdown submit-button-width "QR" {
-	Set width for Submit "Set width for Submit button*" <<<EOT 
+	Set-width-for-Submit "Set width for Submit button*" <<<EOT 
 #qrsubmit {
 margin-left:38px;
 position:relative!important;
 width:46px!important
 } EOT;
-Don't set width for  "Don't set width for Submit button" <<<EOT  EOT;
+Don-t-set-width-for- "Don't set width for Submit button" <<<EOT  EOT;
 
 }
 @advanced dropdown add-reply-counter "Counter" {
-	Don't show reply cou "Don't show reply counter*" <<<EOT  EOT;
-Show reply counter "Show reply counter" <<<EOT 
+	Don-t-show-reply-cou "Don't show reply counter*" <<<EOT  EOT;
+Show-reply-counter "Show reply counter" <<<EOT 
 .reply:not([class~=post-hover]):after {
 content:counter(reply) ".";
 counter-increment:reply;
@@ -50,7 +50,7 @@ counter-reset:reply
 
 }
 @advanced dropdown slim-replies "Replies" {
-	Set slim replies "Set slim replies*" <<<EOT 
+	Set-slim-replies "Set slim replies*" <<<EOT 
 .body {
 margin-top:4px!important
 }
@@ -58,7 +58,7 @@ margin-top:4px!important
 .intro,.body {
 margin-bottom:0!important
 } EOT;
-Don't set slim repli "Don't set slim replies" <<<EOT  EOT;
+Don-t-set-slim-repli "Don't set slim replies" <<<EOT  EOT;
 
 }
 

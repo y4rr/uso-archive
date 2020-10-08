@@ -12,12 +12,12 @@ chrome "chrome" <<<EOT  EOT;
 
 }
 @advanced dropdown settingplaceholder2 "阴影颜色" {
-	灰色 "灰色*" <<<EOT box-shadow: 2px 2px 4px -1px #D4D4D4,
+	-- "灰色*" <<<EOT box-shadow: 2px 2px 4px -1px #D4D4D4,
                     2px 2px 3px -1px #D4D4D4,
                     0px 0px 8px rgba(255,255,255,0),
                     0 0 2px #CCC 
                     !important; EOT;
-蓝色 (适合夜间主题) "蓝色 (适合夜间主题)" <<<EOT box-shadow: 2px 2px 4px -2px #57D,
+----------- "蓝色 (适合夜间主题)" <<<EOT box-shadow: 2px 2px 4px -2px #57D,
                     2px 2px 4px -2px #57D,
                     0px 0px 8px rgba(255,255,255,0),
                     0 0 2px #57D 

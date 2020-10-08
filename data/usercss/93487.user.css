@@ -7,13 +7,13 @@
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown fixMaxHeight "動画説明文のスクロール表示" {
-	スクロールしない、全文表示 "スクロールしない、全文表示*" <<<EOT  EOT;
-高さを固定、スクロール表示 "高さを固定、スクロール表示" <<<EOT   max-height: 207px;
+	------------- "スクロールしない、全文表示*" <<<EOT  EOT;
+------------- "高さを固定、スクロール表示" <<<EOT   max-height: 207px;
   overflow: auto; EOT;
 
 }
 @advanced dropdown MenuButtonDesc "メニューボタン説明文の表示" {
-	デフォルト "デフォルト*" <<<EOT #videoHeader:not(.infoActive) #videoMenuTopList > li {
+	----- "デフォルト*" <<<EOT #videoHeader:not(.infoActive) #videoMenuTopList > li {
   height: 36px !important;
   overflow: hidden !important;
 }
@@ -62,7 +62,7 @@
 #videoHeader:not(.infoActive) #videoMenuTopList > li.userChennel:hover:after {
   content: "投稿者を推薦";
 } EOT;
-常に非表示 "常に非表示" <<<EOT #videoMenuTopList > li {
+----- "常に非表示" <<<EOT #videoMenuTopList > li {
   height: 36px !important;
   overflow: hidden !important;
 }
@@ -114,16 +114,16 @@
 
 }
 @advanced dropdown allowSideScroll "横スクロールバーの表示" {
-	許可する "許可する*" <<<EOT  EOT;
-許可しない "許可しない" <<<EOT /* 横スクロールを許可しない *\/
+	---- "許可する*" <<<EOT  EOT;
+----- "許可しない" <<<EOT /* 横スクロールを許可しない *\/
 body {
   min-width: 0 !important;
 } EOT;
 
 }
 @advanced dropdown playlistWidth "再生リストの幅" {
-	プレイヤーサイズに合わせる "プレイヤーサイズに合わせる*" <<<EOT  EOT;
-横幅いっぱいに表示 "横幅いっぱいに表示" <<<EOT /* 再生リストを横幅いっぱいに
+	------------- "プレイヤーサイズに合わせる*" <<<EOT  EOT;
+--------- "横幅いっぱいに表示" <<<EOT /* 再生リストを横幅いっぱいに
 ======================================== *\/
 body #content #playlist {
   max-width: 100% !important;

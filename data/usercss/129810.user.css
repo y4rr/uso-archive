@@ -15,12 +15,12 @@
 0 "Solid color" <<<EOT /*[[back]]*\/ EOT;
 
 }
-@advanced dropdown . "Wallpaper" {
+@advanced dropdown - "Wallpaper" {
 0 "Galaxy*" <<<EOT https://i.ytimg.com/vi/cWoF0ctZ2E0/maxresdefault.jpg EOT;
 
-	.-custom-dropdown "Custom" <<<EOT /*[[.-custom]]*\/ EOT;
+	--custom-dropdown "Custom" <<<EOT /*[[--custom]]*\/ EOT;
 }
-@advanced text .-custom "Wallpaper (Custom)" "https://example.com/image.png"
+@advanced text --custom "Wallpaper (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document regexp("https?://(?!plus|notifications|docs|drive|mail|fonts|photos|calendar|get|productforums|hangouts).*.google.[a-z.]{2,6}/(?!_/chrome/newtab?|culturalinstitute|maps).*"){

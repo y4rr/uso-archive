@@ -6,8 +6,8 @@
 @version        2019318.14.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown 氪金道具 "是否支持“bilibili 直播间调整”的移除氪金道具？" {
-	移除氪金道具 "不资瓷（默认）*" <<<EOT .count-down.m-auto.t-center.b-box.none-select {
+@advanced dropdown ---- "是否支持“bilibili 直播间调整”的移除氪金道具？" {
+	------ "不资瓷（默认）*" <<<EOT .count-down.m-auto.t-center.b-box.none-select {
     position: relative;
     top: -35px !important;
 }
@@ -27,7 +27,7 @@
 .gift-control-section.p-relative.border-box.z-gift-control-section {
     height: 120px !important;
 } EOT;
-不移除氪金道具 "资瓷" <<<EOT .count-down.m-auto.t-center.b-box.none-select {
+------- "资瓷" <<<EOT .count-down.m-auto.t-center.b-box.none-select {
     position: relative;
     top: -25px !important;
 }
@@ -49,11 +49,11 @@
 } EOT;
 
 }
-@advanced dropdown 搜索栏置顶 "是否支持“Bilibili Evolved”的搜索栏置顶？" {
-	不置顶 "不资瓷（默认）*" <<<EOT .bili-header-m .nav-search .nav-search-keyword{
+@advanced dropdown ----- "是否支持“Bilibili Evolved”的搜索栏置顶？" {
+	--- "不资瓷（默认）*" <<<EOT .bili-header-m .nav-search .nav-search-keyword{
     width: 180px;
 } EOT;
-置顶 "资瓷（选择样式调整后无需选择此项）" <<<EOT .bili-header-m .showSearch.nav-search{
+-- "资瓷（选择样式调整后无需选择此项）" <<<EOT .bili-header-m .showSearch.nav-search{
     width: 255px !important;
 }
 .bili-header-m .nav-search .nav-search-keyword{
@@ -61,28 +61,28 @@
 } EOT;
 
 }
-@advanced dropdown 排行榜图标 "未勾选“显示排行榜图标”时是否调整搜索栏？" {
-	显示 "否（默认）*" <<<EOT  EOT;
-不显示 "是（未安装Bilibili Evolved时请不要选择此项）" <<<EOT .nav-search-keyword{
+@advanced dropdown ----- "未勾选“显示排行榜图标”时是否调整搜索栏？" {
+	-- "否（默认）*" <<<EOT  EOT;
+--- "是（未安装Bilibili Evolved时请不要选择此项）" <<<EOT .nav-search-keyword{
     position: relative;
     left: 10px !important
 } EOT;
 
 }
-@advanced dropdown 颜色 "顶栏小电视是默认（蓝色）还是黑色？" {
-	蓝色 "默认*" <<<EOT html{
+@advanced dropdown -- "顶栏小电视是默认（蓝色）还是黑色？" {
+	-- "默认*" <<<EOT html{
     --invert-filter: none;
 } EOT;
-黑色 "黑色" <<<EOT html{
+-- "黑色" <<<EOT html{
     --invert-filter: invert(0);
 } EOT;
 
 }
 @advanced color HEX2 "自定义顶栏小电视颜色（上个选项请选默认）" #66CCFF
 @advanced color HEX "Bilibili Evolved的按钮颜色" #66CCFF
-@advanced dropdown 样式调整 "是否开启了Bilibili Evolved的样式调整" {
-	不调 "否（默认）*" <<<EOT  EOT;
-调 "是" <<<EOT .link-navbar .nav-item:hover .nav-link .label[data-v-6403ccf3]:hover,
+@advanced dropdown ---- "是否开启了Bilibili Evolved的样式调整" {
+	-- "否（默认）*" <<<EOT  EOT;
+- "是" <<<EOT .link-navbar .nav-item:hover .nav-link .label[data-v-6403ccf3]:hover,
 .my-link-btn .label[data-v-1aa93496]:hover,
 .shortcuts-ctnr .shortcut-item .label-wrapper .text[data-v-1ff6fd87]:hover,
 .publish-btn.pointer.f-left {
@@ -118,9 +118,9 @@
 } EOT;
 
 }
-@advanced dropdown 我能怎么办 "上个选项是否选了“是”" {
-	我也很绝望 "否*" <<<EOT  EOT;
-不得不这么做 "是" <<<EOT .u-link {
+@advanced dropdown ----- "上个选项是否选了“是”" {
+	----- "否*" <<<EOT  EOT;
+------ "是" <<<EOT .u-link {
     top: -7px !important;
     height: 50px !important;
     left: -21px !important;
@@ -691,7 +691,7 @@ em,
     display: none !important;
 }
 /*氪金道具*/
-/*[[氪金道具]]*/
+/*[[----]]*/
 }
 
 @-moz-document domain("space.bilibili.com") {
@@ -720,13 +720,13 @@ div.num {
     box-shadow: 0 0px 0px 0 #0000!important;
 }
 /*样式调整*/
-/*[[样式调整]]*/
+/*[[----]]*/
 /*搜索栏置顶*/
-/*[[搜索栏置顶]]*/
+/*[[-----]]*/
 /*排行榜图标*/
-/*[[排行榜图标]]*/
+/*[[-----]]*/
 /*颜色*/
-/*[[颜色]]*/
+/*[[--]]*/
 /*HEX*/
 /*[[HEX]]*/
 .gui-settings-checkbox {
@@ -917,7 +917,7 @@ div.num {
     display: none !important;
 }
 /*我能怎么办*/
-/*[[我能怎么办]]*/
+/*[[-----]]*/
 #app > .v-wrap #arc_toolbar_report {
     background-color: #fff;
     padding: 12px;

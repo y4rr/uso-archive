@@ -7,7 +7,7 @@
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown colorscheme "Color scheme:" {
-	Dark grey "Dark grey*" <<<EOT /* Dark grey *\/
+	Dark-grey "Dark grey*" <<<EOT /* Dark grey *\/
 
 * {color:#777!important;
     background-color:#262626!important;
@@ -166,20 +166,20 @@ Normal "Normal" <<<EOT .side-col {top:0px!important;} EOT;
 
 }
 @advanced dropdown hidefooter "Hide footer" {
-	✓ "✓*" <<<EOT /* Hide footer *\/
+	- "✓*" <<<EOT /* Hide footer *\/
 #Footer.super-footer {display:none!important;} EOT;
 No "No" <<<EOT  EOT;
 
 }
 @advanced dropdown hideads "Hide ads" {
 	No "No*" <<<EOT  EOT;
-✓ "✓" <<<EOT /* Hide ads *\/
+- "✓" <<<EOT /* Hide ads *\/
 .banner-wrapper {display:none!important;} EOT;
 
 }
 @advanced dropdown hidefbcomments "Hide facebook comments" {
 	No "No*" <<<EOT  EOT;
-✓ "✓" <<<EOT /*Hide facebook comments *\/
+- "✓" <<<EOT /*Hide facebook comments *\/
 .box.comments {display:none!important;} EOT;
 
 }

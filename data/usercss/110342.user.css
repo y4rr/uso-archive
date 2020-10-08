@@ -25,7 +25,7 @@
 {
     display: block;
 } EOT;
-[post] "Never shorten posts" <<<EOT .b-height_shortener
+-post- "Never shorten posts" <<<EOT .b-height_shortener
 {
     display: none;
 }
@@ -51,7 +51,7 @@
  div.tooltip-inner, .b-feedback>.message>.inner {
 	background-color: rgba(10,10,10,0.7)!important;
 } EOT;
-[opacity] "0.7 - less transparent" <<<EOT .l-page {  
+-opacity- "0.7 - less transparent" <<<EOT .l-page {  
       background-color: rgba(10,10,10,0.7)!important;
       color: rgba(190,190,190,1.0)!important;
 }
@@ -64,7 +64,7 @@
  div.tooltip-inner, .b-feedback>.message>.inner {
 	background-color: rgba(10,10,10,0.8)!important;
 } EOT;
-[[opacity]] "0.8 - less opaque" <<<EOT .l-page {  
+--opacity-- "0.8 - less opaque" <<<EOT .l-page {  
       background-color: rgba(10,10,10,0.8)!important;
       color: rgba(190,190,190,1.0)!important;
 }
@@ -77,7 +77,7 @@
  div.tooltip-inner, .b-feedback>.message>.inner {
 	background-color: rgba(10,10,10,0.9)!important;
 } EOT;
-[[[opacity]]] "0.9 - max opacity (almost full black)" <<<EOT .l-page {  
+---opacity--- "0.9 - max opacity (almost full black)" <<<EOT .l-page {  
       background-color: rgba(10,10,10,0.9)!important;
       color: rgba(190,190,190,1.0)!important;
 }
@@ -93,7 +93,7 @@
 
 }
 @advanced dropdown BG "Custom Background" {
-[BG] "Samurai*" <<<EOT http://s30.postimg.org/3ru6cy6kh/8481.jpg EOT;
+-BG- "Samurai*" <<<EOT http://s30.postimg.org/3ru6cy6kh/8481.jpg EOT;
 BG "Sakurakou K-ON Bu" <<<EOT http://s2.postimg.org/eh7xgrh6x/image.jpg EOT;
 
 	BG-custom-dropdown "Custom" <<<EOT /*[[BG-custom]]*\/ EOT;

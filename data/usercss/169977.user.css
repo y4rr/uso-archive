@@ -6,7 +6,7 @@
 @version        2019320.6.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown 固定顶部 "固定顶部" {
+@advanced dropdown ---- "固定顶部" {
 	1 "固定*" <<<EOT .nowcoder-header{
     position:relative;
     margin-bottom:10px;
@@ -25,7 +25,7 @@
 } EOT;
 
 }
-@advanced dropdown 允许宽屏 "允许宽屏" {
+@advanced dropdown ---- "允许宽屏" {
 	1 "宽屏*" <<<EOT /*修正回复框长度*\/
 .reply-input.reply-input-textarea.js-ipt{
     width:550px !important;
@@ -90,7 +90,7 @@
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 去除推荐 "去除推荐/广告" {
+@advanced dropdown ---- "去除推荐/广告" {
 	1 "去除*" <<<EOT a.identity-banner{
     /*身份认证*\/
     display:none;
@@ -106,7 +106,7 @@
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 名字对比度提升 "名字对比度提升" {
+@advanced dropdown ------- "名字对比度提升" {
 	1 "提升*" <<<EOT /*名字对比度提升*\/
 
 a[class*="level-color"]{
@@ -117,7 +117,7 @@ a[class*="level-color"]{
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 简化楼层 "简化楼层" {
+@advanced dropdown ---- "简化楼层" {
 	1 "简化*" <<<EOT .reply-box{
     padding: 0 10px;
 }
@@ -141,7 +141,7 @@ a[class*="level-color"]{
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 缩小聊天图 "缩小聊天图" {
+@advanced dropdown ----- "缩小聊天图" {
 	1 "动画缩放*" <<<EOT .reply-content img[data-card-emoji]{
     width:30px;
     height:30px;
@@ -154,28 +154,28 @@ a[class*="level-color"]{
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 信息卡突出 "信息卡突出" {
+@advanced dropdown ----- "信息卡突出" {
 	1 "边框阴影*" <<<EOT .profile-card{
     box-shadow:1px 1px 17px 0 rgba(0,0,0,0.8);
 } EOT;
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 标题颜色过渡 "标题颜色过渡" {
+@advanced dropdown ------ "标题颜色过渡" {
 	1 "过渡渐变*" <<<EOT .discuss-main a{
     transition:color 0.25s;
 } EOT;
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 去“面试”角标 "去“面试”角标" {
+@advanced dropdown ------- "去“面试”角标" {
 	1 "去除*" <<<EOT .ico-nav-new{
     display:none;
 } EOT;
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 移除无用按钮 "移除无用按钮" {
+@advanced dropdown ------ "移除无用按钮" {
 	1 "移除*" <<<EOT .fixed-menu ul >li+li+li+li{
     display:none
 }
@@ -183,14 +183,14 @@ a[class*="level-color"]{
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 淡化回复列表 "淡化回复列表" {
+@advanced dropdown ------ "淡化回复列表" {
 	1 "淡化*" <<<EOT .reply-box{
     background-color:rgba(237, 238, 240,0.6)
 } EOT;
 2 "原网页默认" <<<EOT  EOT;
 
 }
-@advanced dropdown 修正回复内容中图片最大大小 "修正回复内容中图片最大大小" {
+@advanced dropdown ------------- "修正回复内容中图片最大大小" {
 	1 "图片缩放动画*" <<<EOT .answer-brief.nc-post-content img{
     max-width:120px;
     transition:max-width 0.25s;
@@ -212,30 +212,30 @@ a[class*="level-color"]{
 
 ==/UserStyle== */
 @-moz-document regexp("https?:\\/\\/www\\.nowcoder\\.com\\/discuss.*") {
-/*[[固定顶部]]*/
+/*[[----]]*/
 
-/*[[允许宽屏]]*/
+/*[[----]]*/
 
-/*[[去除推荐]]*/
+/*[[----]]*/
 
 
-/*[[名字对比度提升]]*/
+/*[[-------]]*/
 
-/*[[简化楼层]]*/
+/*[[----]]*/
 
-/*[[缩小聊天图]]*/
+/*[[-----]]*/
 
-/*[[信息卡突出]]*/
+/*[[-----]]*/
 
-/*[[标题颜色过渡]]*/
+/*[[------]]*/
 
-/*[[去“面试”角标]]*/
+/*[[-------]]*/
 
-/*[[移除无用按钮]]*/
+/*[[------]]*/
 
-/*[[淡化回复列表]]*/
+/*[[------]]*/
 
-/*[[修正回复内容中图片最大大小]]*/
+/*[[-------------]]*/
 
 
 }

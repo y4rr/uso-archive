@@ -9,14 +9,14 @@
 @advanced dropdown Mascot "Sidebar pony" {
 	None "None*" <<<EOT  EOT;
 Colgate "Colgate" <<<EOT content: url('http://i.imgur.com/8mO6DWX.png'); EOT;
-Twilight Sparkle "Twilight Sparkle" <<<EOT content: url('http://i.imgur.com/WmMwz.png'); EOT;
-Rainbow Dash "Rainbow Dash" <<<EOT content: url('http://i.imgur.com/R1L7w.png'); EOT;
-Pinkie Pie "Pinkie Pie" <<<EOT content: url('http://i.imgur.com/Dkls9.png'); EOT;
+Twilight-Sparkle "Twilight Sparkle" <<<EOT content: url('http://i.imgur.com/WmMwz.png'); EOT;
+Rainbow-Dash "Rainbow Dash" <<<EOT content: url('http://i.imgur.com/R1L7w.png'); EOT;
+Pinkie-Pie "Pinkie Pie" <<<EOT content: url('http://i.imgur.com/Dkls9.png'); EOT;
 Fluttershy "Fluttershy" <<<EOT content: url('http://i.imgur.com/gu57S.png'); EOT;
 Luna "Luna" <<<EOT content: url('http://i.imgur.com/R81sP.png'); /* Best Pony and Princess *\/ EOT;
 Celestia "Celestia" <<<EOT content: url('http://i.imgur.com/7SUUE.png'); EOT;
 Chrysalis "Chrysalis" <<<EOT content: url('http://i.imgur.com/3t5l1.png'); EOT;
-Berry Punch "Berry Punch" <<<EOT content: url('http://i.imgur.com/RR9QH.png'); EOT;
+Berry-Punch "Berry Punch" <<<EOT content: url('http://i.imgur.com/RR9QH.png'); EOT;
 Lyra "Lyra" <<<EOT content: url('http://i.imgur.com/eWSaa.png'); EOT;
 
 }
@@ -53,8 +53,8 @@ Yes "Yes" <<<EOT #qrname {
 
 }
 @advanced dropdown theme "Themes" {
-	Ponychan Themes "Ponychan Themes*" <<<EOT  EOT;
-Nightmare Night "Nightmare Night" <<<EOT /* Nightmare Night Theme *\/
+	Ponychan-Themes "Ponychan Themes*" <<<EOT  EOT;
+Nightmare-Night "Nightmare Night" <<<EOT /* Nightmare Night Theme *\/
     .boardpage {
         background: none !important;
         background-color: #2c2c2c !important;
@@ -260,12 +260,12 @@ Nightmare Night "Nightmare Night" <<<EOT /* Nightmare Night Theme *\/
     } EOT;
 
 }
-@advanced dropdown image expanded "Rescale expanded images" {
-	Yes (normal behaviou "Yes (normal behaviour)*" <<<EOT .expanded {
+@advanced dropdown image-expanded "Rescale expanded images" {
+	Yes--normal-behaviou "Yes (normal behaviour)*" <<<EOT .expanded {
         max-width: 95% !important;
         max-height: none !important;
     } EOT;
-No (full image will  "No (full image will be shown)" <<<EOT .expanded {
+No--full-image-will- "No (full image will be shown)" <<<EOT .expanded {
         max-width: none !important;
         max-height: none !important;
     } EOT;
@@ -275,7 +275,7 @@ No (full image will  "No (full image will be shown)" <<<EOT .expanded {
 	Yes "Yes (Default)*" <<<EOT .boardpage img.banner {
         margin-top: 11px !important;
     } EOT;
-In sidebar "Sidebar (scaled)" <<<EOT .boardpage img.banner {
+In-sidebar "Sidebar (scaled)" <<<EOT .boardpage img.banner {
         position: fixed;
         bottom: 303px;
         right: 5px;
@@ -694,7 +694,7 @@ No "No" <<<EOT  EOT;
         padding: 2px 0 0 2px !important;
     }
 
-    /*[[image expanded]]*/
+    /*[[image-expanded]]*/
         
     .image-hover {
         z-index: 30 !important;

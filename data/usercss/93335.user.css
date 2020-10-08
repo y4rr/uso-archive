@@ -7,17 +7,17 @@
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown niwanews "ニコ割エリア" {
-	非表示 "非表示*" <<<EOT #textMarquee { display: none !important; }
+	--- "非表示*" <<<EOT #textMarquee { display: none !important; }
 
 body.size_medium:not(.full_with_browser):not(.up_marquee) #playerContainer { height: 461px !important; }
 body.size_normal:not(.full_with_browser):not(.up_marquee) #playerContainer { height: 557px !important; }
  EOT;
-表示 "表示" <<<EOT  EOT;
+-- "表示" <<<EOT  EOT;
 
 }
 @advanced dropdown videoExplorerPlayer "左上再生窓" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT body.size_small.no_setting_panel.videoExplorer #playerContainerSlideArea {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT body.size_small.no_setting_panel.videoExplorer #playerContainerSlideArea {
   width: 0 !important;
   height: 0 !important;
   overflow: hidden !important;
@@ -71,15 +71,15 @@ body.size_small.no_setting_panel.videoExplorer.content-fix.playlist.nofix .video
 
 }
 @advanced dropdown playlist "プレイリスト" {
-	表示:固定幅 "表示:固定幅*" <<<EOT #playlist,
+	------ "表示:固定幅*" <<<EOT #playlist,
 #videoExplorerExpand {
   width: 980px !important;
   margin: 0 auto !important;
 }
 
 #videoExplorerExpand { width: 980px !important; } EOT;
-表示:可変幅 "表示:可変幅" <<<EOT  EOT;
-表示:操作バーのみ "表示:操作バーのみ" <<<EOT #playlist,
+------ "表示:可変幅" <<<EOT  EOT;
+--------- "表示:操作バーのみ" <<<EOT #playlist,
 #videoExplorerExpand {
   width: 980px !important;
   margin: 0 auto !important;
@@ -203,7 +203,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
   box-shadow: -1px 0 1px rgba(0, 0, 0, .2) !important;
 }
  EOT;
-非表示 "非表示" <<<EOT #playlist,
+--- "非表示" <<<EOT #playlist,
 #videoExplorerExpand { display: none !important; }
 #videoShareLinks > .socialLinks { top: -35px !important; }
 #outline { padding: 0 0 50px !important; }
@@ -212,7 +212,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 
 }
 @advanced dropdown ichibaTile "下部" {
-	原宿風 "原宿風*" <<<EOT #nicommendContainer,
+	--- "原宿風*" <<<EOT #nicommendContainer,
 #nicommendMoreButtonSide,
 .contentWrap.addContent,
 .contentWrap.addContent + div,
@@ -288,7 +288,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 .expandContainerBottom:after,
 #ichibaMainFooter { clear: both; }
  EOT;
-銀座改 "銀座改" <<<EOT #outline #ichibaMainLogo {
+--- "銀座改" <<<EOT #outline #ichibaMainLogo {
 	width: 100% !important;
 	height: auto !important;
 	background: #eee !important;
@@ -432,7 +432,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 #ichibaMain .thumbnail { border: 1px #ccc solid !important; }
 #ichibaMainFooter { clear: both !important; }
  EOT;
-原宿風+詳細情報 "原宿風+詳細情報" <<<EOT #nicommendContainer,
+-------- "原宿風+詳細情報" <<<EOT #nicommendContainer,
 #nicommendMoreButtonSide,
 .contentWrap.addContent,
 .contentWrap.addContent + div,
@@ -505,9 +505,9 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 .expandContainerBottom:after,
 #ichibaMainFooter { clear: both; }
  EOT;
-非表示 "非表示" <<<EOT #outline,
+--- "非表示" <<<EOT #outline,
 #bottomVideoDetailInformation { display: none !important; } EOT;
-非表示+詳細情報 "非表示+詳細情報" <<<EOT #outline .outer { margin: 0 auto !important; }
+-------- "非表示+詳細情報" <<<EOT #outline .outer { margin: 0 auto !important; }
 
 #outline .outer > :not(.main),
 #outline .main > :not(#videoInfo),
@@ -518,8 +518,8 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 
 }
 @advanced dropdown wall_setting "Wall設定" {
-	デフォルト "デフォルト*" <<<EOT  EOT;
-画像を指定する "画像を指定する" <<<EOT .wallPaletteItem:nth-child(2) > .wallPaletteItemName { color: #fff !important; }
+	----- "デフォルト*" <<<EOT  EOT;
+------- "画像を指定する" <<<EOT .wallPaletteItem:nth-child(2) > .wallPaletteItemName { color: #fff !important; }
 
 .wallPaletteItem:nth-child(2).active > .wallPaletteItemName {
   color: #000 !important;
@@ -538,7 +538,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 
 #videoExplorer { background: #f2f2f2 url(/*[[wall_img]]*\/) fixed !important; }
  EOT;
-非表示 "非表示" <<<EOT #wallImageContainer,
+--- "非表示" <<<EOT #wallImageContainer,
 #chipWallList {
   display: none !important;
 }
@@ -546,7 +546,7 @@ body:not(.videoExplorer) #videoShareLinks > .socialLinks {
 
 }
 @advanced dropdown wall_img "Wall画像" {
-設定しない "設定しない*" <<<EOT  EOT;
+----- "設定しない*" <<<EOT  EOT;
 
 	wall_img-custom-dropdown "Custom" <<<EOT /*[[wall_img-custom]]*\/ EOT;
 }

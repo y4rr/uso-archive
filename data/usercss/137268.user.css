@@ -7,20 +7,20 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown backhp "Backgrounds Start Page" {
-backhp 2 "Image 2*" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl2.jpg EOT;
-backhp 1 "Image 1" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl1.jpg EOT;
-backhp 3 "Image 3" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl3.jpg EOT;
+backhp-2 "Image 2*" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl2.jpg EOT;
+backhp-1 "Image 1" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl1.jpg EOT;
+backhp-3 "Image 3" <<<EOT https://file1.hpage.com/010270/19/bilder/hpninjagirl3.jpg EOT;
 
 	backhp-custom-dropdown "Custom" <<<EOT /*[[backhp-custom]]*\/ EOT;
 }
 @advanced text backhp-custom "Backgrounds Start Page (Custom)" "https://example.com/image.png"
 @advanced dropdown backsearch "Backgrounds in the Search Page" {
-backsh 6 "Female Samurai GIF Images 1-3 (changes every 10 sec)*" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninjagif.gif EOT;
-backsh 1 "Female Samurai 1" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja1.jpg EOT;
-backsh 2 "Female Samurai 2" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja2.jpg EOT;
-backsh 3 "Female Samurai 3" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja3.jpg EOT;
-backsh 4 "Female Samurai 4" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja4.jpg EOT;
-backsh 5 "Female Samurai 5" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja5.jpg EOT;
+backsh-6 "Female Samurai GIF Images 1-3 (changes every 10 sec)*" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninjagif.gif EOT;
+backsh-1 "Female Samurai 1" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja1.jpg EOT;
+backsh-2 "Female Samurai 2" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja2.jpg EOT;
+backsh-3 "Female Samurai 3" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja3.jpg EOT;
+backsh-4 "Female Samurai 4" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja4.jpg EOT;
+backsh-5 "Female Samurai 5" <<<EOT https://file1.hpage.com/010270/19/bilder/girlninja5.jpg EOT;
 
 	backsearch-custom-dropdown "Custom" <<<EOT /*[[backsearch-custom]]*\/ EOT;
 }

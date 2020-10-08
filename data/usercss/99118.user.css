@@ -65,7 +65,7 @@ Blue "Blue" <<<EOT 20,20,120 EOT;
 
 }
 @advanced dropdown borderstyle "Border Style" {
-	No Borders "No Borders*" <<<EOT none EOT;
+	No-Borders "No Borders*" <<<EOT none EOT;
 Solid "Solid" <<<EOT solid EOT;
 Dotted "Dotted" <<<EOT dotted EOT;
 Dashed "Dashed" <<<EOT dashed EOT;
@@ -74,7 +74,7 @@ Inset "Inset" <<<EOT inset EOT;
 
 }
 @advanced dropdown bordersize "Border Size" {
-	Very Small "Very Small*" <<<EOT 1px EOT;
+	Very-Small "Very Small*" <<<EOT 1px EOT;
 Small "Small" <<<EOT 2px EOT;
 Medium "Medium" <<<EOT 3px EOT;
 Large "Large" <<<EOT 4px EOT;
@@ -95,7 +95,7 @@ Opaque "Opaque" <<<EOT 1 EOT;
 
 }
 @advanced dropdown borderradius "Round Corners" {
-	Slightly Round (unro "Slightly Round (unround nav side)*" <<<EOT #urlbar {
+	Slightly-Round--unro "Slightly Round (unround nav side)*" <<<EOT #urlbar {
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 }
@@ -103,7 +103,7 @@ Opaque "Opaque" <<<EOT 1 EOT;
 .searchbar-textbox {
     border-radius: 5px !important;
 } EOT;
-Very Round (unround  "Very Round (unround nav side)" <<<EOT #urlbar {
+Very-Round--unround- "Very Round (unround nav side)" <<<EOT #urlbar {
     border-top-right-radius: 9px !important;
     border-bottom-right-radius: 9px !important;
 }
@@ -111,11 +111,11 @@ Very Round (unround  "Very Round (unround nav side)" <<<EOT #urlbar {
 .searchbar-textbox {
     border-radius: 9px !important;
 } EOT;
-Slightly Round (all  "Slightly Round (all corners)" <<<EOT #urlbar,
+Slightly-Round--all- "Slightly Round (all corners)" <<<EOT #urlbar,
 .searchbar-textbox {
     border-radius: 5px !important;
 } EOT;
-Very Round (all corn "Very Round (all corners)" <<<EOT #urlbar,
+Very-Round--all-corn "Very Round (all corners)" <<<EOT #urlbar,
 .searchbar-textbox {
     border-radius: 9px !important;
 } EOT;

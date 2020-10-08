@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown addonControl "アドオン一覧のボタン" {
-	今まで通り表示する（下の選択肢より重くな "今まで通り表示する（下の選択肢より重くなります）" <<<EOT /* アドオン一覧のボタン *\/
+	-------------------- "今まで通り表示する（下の選択肢より重くなります）" <<<EOT /* アドオン一覧のボタン *\/
 #search-list .addon-control,
 #addon-list .addon-control,
 #updates-list .addon-control {
@@ -19,27 +19,27 @@
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset,
     0 0 0 2px rgba(255, 255, 255, 0.1) inset !important;
 } EOT;
-背景色と枠線だけ簡易表示する（下の選択肢 "背景色と枠線だけ簡易表示する（下の選択肢より少し重くなります）" <<<EOT /* アドオン一覧のボタン（簡易表示） *\/
+-------------------- "背景色と枠線だけ簡易表示する（下の選択肢より少し重くなります）" <<<EOT /* アドオン一覧のボタン（簡易表示） *\/
 #search-list .addon-control,
 #addon-list .addon-control,
 #updates-list .addon-control {
   background-color: #F5F5F5 !important;
   border: 1px solid #ABABAB !important;
 } EOT;
-背景色や枠線などを表示しない（重くなりま "背景色や枠線などを表示しない（重くなりませんが少し見づらくなります）" <<<EOT  EOT;
+-------------------- "背景色や枠線などを表示しない（重くなりませんが少し見づらくなります）" <<<EOT  EOT;
 
 }
 @advanced dropdown categoryName "左側のカテゴリー名" {
-	今まで通り表示する "今まで通り表示する" <<<EOT  EOT;
-表示しない "表示しない" <<<EOT /* カテゴリー名を隠す *\/
+	--------- "今まで通り表示する" <<<EOT  EOT;
+----- "表示しない" <<<EOT /* カテゴリー名を隠す *\/
 #categories .category-name {
   display: none !important;
 } EOT;
 
 }
 @advanced dropdown creator "アドオン一覧の作成者名" {
-	今まで通り表示する "今まで通り表示する" <<<EOT  EOT;
-表示しない "表示しない" <<<EOT /* 一覧の作成者名を隠す *\/
+	--------- "今まで通り表示する" <<<EOT  EOT;
+----- "表示しない" <<<EOT /* 一覧の作成者名を隠す *\/
 #search-list .creator,
 #addon-list .creator,
 #updates-list .creator {

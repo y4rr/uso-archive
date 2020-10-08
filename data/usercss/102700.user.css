@@ -25,7 +25,7 @@ background-position:center !important;background-attachment:fixed!important;} EO
 	image-custom-dropdown "Custom" <<<EOT /*[[image-custom]]*\/ EOT;
 }
 @advanced text image-custom "自定义背景图 (Custom)" "https://example.com/image.png"
-@advanced dropdown !important "右侧列表是否半透明" {
+@advanced dropdown -important "右侧列表是否半透明" {
 	2 "透明（可见完整背景图）*" <<<EOT !important EOT;
 1 "不透明" <<<EOT  EOT;
 
@@ -66,7 +66,7 @@ background-position:center !important;background-attachment:fixed!important;} EO
 .module-aside {;background:rgba(222,222,222,/*[[rgba-0]]*/) !important}
 
 /*右侧背景不透明度*/
-.FcQMwt,.fufHyA.yfHIsP,.MdLxwM,.fsWV2B,#layoutMain {background:/*[[color-1]]*/ !important;background:rgba(222,222,222,/*[[rgba-1]]*/) /*[[!important]]*/}
+.FcQMwt,.fufHyA.yfHIsP,.MdLxwM,.fsWV2B,#layoutMain {background:/*[[color-1]]*/ !important;background:rgba(222,222,222,/*[[rgba-1]]*/) /*[[-important]]*/}
 
 /*右侧文件列表鼠标划过、点击*/
 .open-enable.prWzXA,.g-clearfix.AuPKyz.open-enable:hover,.fufHyA:hover,.item-active,.hover-item,#layoutMain .g-button:not(.blue-upload),.form-box{background:rgba(/*[[rgba-2]]*/,/*[[rgba-3]]*/) !important;}

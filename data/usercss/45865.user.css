@@ -7,13 +7,13 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown transition "Плавное изменение прозрачности" {
-	быстрое (default) "быстрое (default)" <<<EOT -moz-transition: 0.1s opacity linear !important;
+	---------default- "быстрое (default)" <<<EOT -moz-transition: 0.1s opacity linear !important;
   -webkit-transition: 0.1s opacity linear !important;
   -o-transition: 0.1s opacity linear !important; EOT;
-медленное "медленное" <<<EOT -moz-transition: 0.3s opacity linear !important;
+--------- "медленное" <<<EOT -moz-transition: 0.3s opacity linear !important;
   -webkit-transition: 0.3s opacity linear !important;
   -o-transition: 0.3s opacity linear !important; EOT;
-отключено "отключено" <<<EOT  EOT;
+--------- "отключено" <<<EOT  EOT;
 
 }
 

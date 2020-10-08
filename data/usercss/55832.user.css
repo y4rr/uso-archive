@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown snippet "Colour" {
-	Brave (Blue) "Brave (Blue)*" <<<EOT     /* BLUE SNIPPET *\/
+	Brave--Blue- "Brave (Blue)*" <<<EOT     /* BLUE SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #header, #container, #content, .content, .top, .bottom {
         background: #2C4762 !important;
@@ -55,7 +55,7 @@
     .tab_notice {
         background: #B9160D !important;
     } EOT;
-Wise (Green) "Wise (Green)" <<<EOT /* GREEN SNIPPET *\/
+Wise--Green- "Wise (Green)" <<<EOT /* GREEN SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #header, #container, #content, .content, .top, .bottom {
         background: #477527 !important;
@@ -103,7 +103,7 @@ Wise (Green) "Wise (Green)" <<<EOT /* GREEN SNIPPET *\/
     .tab_notice {
         background: #B9160D !important;
     } EOT;
-Noble (Purple) "Noble (Purple)" <<<EOT /* PURPLE SNIPPET *\/
+Noble--Purple- "Noble (Purple)" <<<EOT /* PURPLE SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #header, #container, #content, .content, .top, .bottom {
         background: #612748 !important;
@@ -152,7 +152,7 @@ Noble (Purple) "Noble (Purple)" <<<EOT /* PURPLE SNIPPET *\/
         background: #eee !important;
         color: #222 !important;
     } EOT;
-Wine (Red) "Wine (Red)" <<<EOT /* RED SNIPPET *\/
+Wine--Red- "Wine (Red)" <<<EOT /* RED SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #header, #container, #content, .content, .top, .bottom {
         background: #991208 !important;
@@ -201,7 +201,7 @@ Wine (Red) "Wine (Red)" <<<EOT /* RED SNIPPET *\/
         background: #eee !important;
         color: #222 !important;
     } EOT;
-Human (Orange) "Human (Orange)" <<<EOT     /* ORANGE SNIPPET *\/
+Human--Orange- "Human (Orange)" <<<EOT     /* ORANGE SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #header, #container, #content, .content, .top, .bottom {
         background: #D67618 !important;
@@ -250,7 +250,7 @@ Human (Orange) "Human (Orange)" <<<EOT     /* ORANGE SNIPPET *\/
         background: #eee !important;
         color: #222 !important;
     } EOT;
-Void (Transparent) "Void (Transparent)" <<<EOT     /* TRANSPARENT SNIPPET *\/
+Void--Transparent- "Void (Transparent)" <<<EOT     /* TRANSPARENT SNIPPET *\/
     /***** DASHBOARD COLOUR *****\/
     #container, #content, .content, .top, .bottom {
         background: transparent !important;
@@ -332,7 +332,7 @@ Void (Transparent) "Void (Transparent)" <<<EOT     /* TRANSPARENT SNIPPET *\/
     #content {
         padding-top: 28px !important;
     } EOT;
-Always Visible "Always Visible" <<<EOT /* HEAEDER ALWAYS VISIBLE *\/
+Always-Visible "Always Visible" <<<EOT /* HEAEDER ALWAYS VISIBLE *\/
     #header {
         margin-top: -12px !important;
         position: fixed !important;
@@ -354,21 +354,21 @@ Classic "Classic" <<<EOT /* HEAEDER CLASSIC *\/
 
 }
 @advanced dropdown background "Background" {
-	(Tile) Nebula "(Tile) Nebula*" <<<EOT #214 url('http://i.imgur.com/DLqEX.jpg') fixed top left EOT;
-(Simple) Black "(Simple) Black" <<<EOT #000 EOT;
-(Simple) Dark Grey "(Simple) Dark Grey" <<<EOT #333 EOT;
-(Simple) Grey "(Simple) Grey" <<<EOT #777 EOT;
-(Simple) White "(Simple) White" <<<EOT #fff EOT;
-(Tile) Stripes "(Tile) Stripes" <<<EOT #000 fixed center url('http://29.media.tumblr.com/tumblr_lt0fpzUcKj1qcayx8o1_100.png') EOT;
-(Tile) Not Good With "(Tile) Not Good With Computer" <<<EOT #777 url('http://25.media.tumblr.com/tumblr_lucmacgNlf1qcayx8o1_400.png') fixed center EOT;
-(Tile) Froggy Pal "(Tile) Froggy Pal" <<<EOT #4a6 url('http://i.imgur.com/U1ZXX.png') fixed EOT;
-(Texture) Concrete "(Texture) Concrete" <<<EOT #444 url('http://i1121.photobucket.com/albums/l508/famellad/OpenfootageNEtconcretet8copy.jpg') fixed EOT;
-(Texture) Wood "(Texture) Wood" <<<EOT #444 url('http://img268.imageshack.us/img268/9904/79openfootagenetoldwood.jpg') fixed top EOT;
-(Texture) Grate "(Texture) Grate" <<<EOT #999 url('http://i.imgur.com/IjGbG.jpg') fixed top center EOT;
-(Texture) Cityscape "(Texture) Cityscape" <<<EOT #666 url('http://i.imgur.com/rBlXk.jpg') fixed center EOT;
-(Texture) Clockwork "(Texture) Clockwork" <<<EOT #444 url('http://i.imgur.com/RoAdn.jpg') fixed center EOT;
-(Texture) Eta Carinæ "(Texture) Eta Carinæ" <<<EOT #000 url('http://img163.imageshack.us/img163/8284/86messier781.jpg') fixed top center EOT;
-(Portrait) Nic Cage "(Portrait) Nic Cage" <<<EOT #444 url('http://i.imgur.com/U6WQf.png') no-repeat bottom right fixed EOT;
+	-Tile--Nebula "(Tile) Nebula*" <<<EOT #214 url('http://i.imgur.com/DLqEX.jpg') fixed top left EOT;
+-Simple--Black "(Simple) Black" <<<EOT #000 EOT;
+-Simple--Dark-Grey "(Simple) Dark Grey" <<<EOT #333 EOT;
+-Simple--Grey "(Simple) Grey" <<<EOT #777 EOT;
+-Simple--White "(Simple) White" <<<EOT #fff EOT;
+-Tile--Stripes "(Tile) Stripes" <<<EOT #000 fixed center url('http://29.media.tumblr.com/tumblr_lt0fpzUcKj1qcayx8o1_100.png') EOT;
+-Tile--Not-Good-With "(Tile) Not Good With Computer" <<<EOT #777 url('http://25.media.tumblr.com/tumblr_lucmacgNlf1qcayx8o1_400.png') fixed center EOT;
+-Tile--Froggy-Pal "(Tile) Froggy Pal" <<<EOT #4a6 url('http://i.imgur.com/U1ZXX.png') fixed EOT;
+-Texture--Concrete "(Texture) Concrete" <<<EOT #444 url('http://i1121.photobucket.com/albums/l508/famellad/OpenfootageNEtconcretet8copy.jpg') fixed EOT;
+-Texture--Wood "(Texture) Wood" <<<EOT #444 url('http://img268.imageshack.us/img268/9904/79openfootagenetoldwood.jpg') fixed top EOT;
+-Texture--Grate "(Texture) Grate" <<<EOT #999 url('http://i.imgur.com/IjGbG.jpg') fixed top center EOT;
+-Texture--Cityscape "(Texture) Cityscape" <<<EOT #666 url('http://i.imgur.com/rBlXk.jpg') fixed center EOT;
+-Texture--Clockwork "(Texture) Clockwork" <<<EOT #444 url('http://i.imgur.com/RoAdn.jpg') fixed center EOT;
+-Texture--Eta-Carin- "(Texture) Eta Carinæ" <<<EOT #000 url('http://img163.imageshack.us/img163/8284/86messier781.jpg') fixed top center EOT;
+-Portrait--Nic-Cage "(Portrait) Nic Cage" <<<EOT #444 url('http://i.imgur.com/U6WQf.png') no-repeat bottom right fixed EOT;
 
 }
 @advanced dropdown dashboard "Dashboard Style" {
@@ -438,7 +438,7 @@ Classic "Classic" <<<EOT /* *\/ EOT;
 
 }
 @advanced dropdown notif "Notification Style" {
-	Inline Avatar "Inline Avatar*" <<<EOT     .avatar_frame {
+	Inline-Avatar "Inline Avatar*" <<<EOT     .avatar_frame {
         float: left !important;
         position: relative !important;
         left: 0px !important;
@@ -503,13 +503,13 @@ Katakana "Katakana" <<<EOT     #logo {
 }
 @advanced dropdown imanim "Image Transitions" {
 	Non-animated "Non-animated*" <<<EOT /* *\/ EOT;
-Animated (Slow) "Animated (Slow)" <<<EOT     /* Image animation *\/
+Animated--Slow- "Animated (Slow)" <<<EOT     /* Image animation *\/
     .post img {
         -webkit-transition: 0.7s;
         -moz-transition: 0.7s;
         -o-transition: 0.7s;        
     } EOT;
-Animated (Fast) "Animated (Fast)" <<<EOT     /* Image animation *\/
+Animated--Fast- "Animated (Fast)" <<<EOT     /* Image animation *\/
     .post img {
         -webkit-transition: 0.4s;
         -moz-transition: 0.4s;
@@ -527,11 +527,11 @@ No "No" <<<EOT /* *\/ EOT;
 }
 @advanced dropdown sidebar_style "Fixed Sidebar" {
 	Classic "Classic*" <<<EOT /* *\/ EOT;
-Fixed (non-scrolling "Fixed (non-scrolling)" <<<EOT     #right_column {
+Fixed--non-scrolling "Fixed (non-scrolling)" <<<EOT     #right_column {
         position: fixed !important;
         right: 18% !important;
     } EOT;
-Fixed with Scrollbar "Fixed with Scrollbar (behaves weird)" <<<EOT     #right_column {
+Fixed-with-Scrollbar "Fixed with Scrollbar (behaves weird)" <<<EOT     #right_column {
         position: fixed !important;
         right: 18% !important;
         height: 100% !important;

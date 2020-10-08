@@ -7,34 +7,34 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg-option "background?" {
-bokeh snow "bokeh snow*" <<<EOT http://i.imgur.com/mqQ74Sr.jpg EOT;
+bokeh-snow "bokeh snow*" <<<EOT http://i.imgur.com/mqQ74Sr.jpg EOT;
 fireflies "fireflies" <<<EOT http://i.imgur.com/PFJQtHd.jpg EOT;
-[texture] dark paper "[texture] dark paper" <<<EOT http://i.imgur.com/S48Fs.jpg EOT;
-blank, dark "blank, dark" <<<EOT http://i.imgur.com/roj7crR.png EOT;
+-texture--dark-paper "[texture] dark paper" <<<EOT http://i.imgur.com/S48Fs.jpg EOT;
+blank--dark "blank, dark" <<<EOT http://i.imgur.com/roj7crR.png EOT;
 
 	bg-option-custom-dropdown "Custom" <<<EOT /*[[bg-option-custom]]*\/ EOT;
 }
 @advanced text bg-option-custom "background? (Custom)" "https://example.com/image.png"
 @advanced dropdown bgfit-option "background fit?" {
-	cover (for images) "cover (for images)*" <<<EOT     /* Option 1: Cover *\/
+	cover--for-images- "cover (for images)*" <<<EOT     /* Option 1: Cover *\/
       html {
         background-size: cover!important;
         background-repeat: no-repeat!important;
       } EOT;
-tile (for textures/b "tile (for textures/blank)" <<<EOT     /* Option 2: Tile *\/
+tile--for-textures-b "tile (for textures/blank)" <<<EOT     /* Option 2: Tile *\/
       html {
         background-repeat: repeat!important;
       } EOT;
 
 }
 @advanced dropdown ads-option "ads?" {
-	remove ads "remove ads*" <<<EOT     /* Option 4: remove ads *\/
+	remove-ads "remove ads*" <<<EOT     /* Option 4: remove ads *\/
       [id$="-ad"],
       .ad
         {display: none!important;} EOT;
 unchanged "unchanged" <<<EOT     /* Option 1: unchanged ads *\/
       /* no code *\/ EOT;
-hover-activate ads "hover-activate ads" <<<EOT     /* Option 2: activatable ads *\/
+hover-activate-ads "hover-activate ads" <<<EOT     /* Option 2: activatable ads *\/
       #post-install-ad > * {
         visibility: hidden!important;
       }

@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown banner "1. Activate Custom Banner Options" {
-	Default: no change "Default: no change*" <<<EOT  EOT;
-Yes Let's do this! "Yes Let's do this!" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/"){
+	Default--no-change "Default: no change*" <<<EOT  EOT;
+Yes-Let-s-do-this- "Yes Let's do this!" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/"){
 /*[[banpos]]*\/
 
 
@@ -17,7 +17,7 @@ Yes Let's do this! "Yes Let's do this!" <<<EOT @-moz-document url-prefix("http:/
 
 }
 @advanced dropdown banpos "a. Banner Position" {
-	Default: Left "Default: Left*" <<<EOT img.banner {
+	Default--Left "Default: Left*" <<<EOT img.banner {
     opacity: /*[[banop]]*\/ !important;
 } EOT;
 Right "Right" <<<EOT img.rssline {
@@ -41,22 +41,22 @@ opacity: /*[[banop]]*\/ !important;
 
 }
 @advanced dropdown banop "b. Banner Opacity" {
-	Default: 1.0 "Default: 1.0*" <<<EOT 1.0 EOT;
-0.9 "0.9" <<<EOT 0.9 EOT;
-0.8 "0.8" <<<EOT 0.8 EOT;
-0.7 "0.7" <<<EOT 0.7 EOT;
-0.6 "0.6" <<<EOT 0.6 EOT;
-0.5 "0.5" <<<EOT 0.5 EOT;
-0.4 "0.4" <<<EOT 0.4 EOT;
-0.3 "0.3" <<<EOT 0.3 EOT;
-0.2 "0.2" <<<EOT 0.2 EOT;
-0.1 "0.1" <<<EOT 0.1 EOT;
-0.00  (invisible) "0.00  (invisible)" <<<EOT 0.00 EOT;
+	Default--1-0 "Default: 1.0*" <<<EOT 1.0 EOT;
+0-9 "0.9" <<<EOT 0.9 EOT;
+0-8 "0.8" <<<EOT 0.8 EOT;
+0-7 "0.7" <<<EOT 0.7 EOT;
+0-6 "0.6" <<<EOT 0.6 EOT;
+0-5 "0.5" <<<EOT 0.5 EOT;
+0-4 "0.4" <<<EOT 0.4 EOT;
+0-3 "0.3" <<<EOT 0.3 EOT;
+0-2 "0.2" <<<EOT 0.2 EOT;
+0-1 "0.1" <<<EOT 0.1 EOT;
+0-00---invisible- "0.00  (invisible)" <<<EOT 0.00 EOT;
 
 }
 @advanced dropdown Navb "2. Custom Navbar Buttons" {
 	Default "Default*" <<<EOT  EOT;
-Custom Colors "Custom Colors" <<<EOT #menu a {
+Custom-Colors "Custom Colors" <<<EOT #menu a {
     color: /*[[Navbcl]]*\/ !important;
     background-color: /*[[Navbcl2]]*\/ !important;
 }
@@ -73,8 +73,8 @@ Custom Colors "Custom Colors" <<<EOT #menu a {
 @advanced color Navbcl4 "     c. Navber button Hover Text color" #FFC0CB
 @advanced color Navbcl3 "     d. Navbar button Hover BG color" #B300B3
 @advanced dropdown Obtn "3. Other Buttons" {
-	     a. Default: Ora "     a. Default: Orange    :P*" <<<EOT  EOT;
-     b. Custom Color "     b. Custom Color" <<<EOT a.button{
+	-----a--Default--Ora "     a. Default: Orange    :P*" <<<EOT  EOT;
+-----b--Custom-Color "     b. Custom Color" <<<EOT a.button{
 background-color: /*[[btncl1]]*\/ !important;
 color: /*[[btncl2]]*\/ !important;
 

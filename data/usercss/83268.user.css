@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "页面风格颜色" {
-	透明白 "透明白*" <<<EOT rgba(255,255,255,0.4) EOT;
-透明黑（尚未实验，如有bug请联系） "透明黑（尚未实验，如有bug请联系）" <<<EOT rgba(0,0,0,0.4) EOT;
+	--- "透明白*" <<<EOT rgba(255,255,255,0.4) EOT;
+-----------bug---- "透明黑（尚未实验，如有bug请联系）" <<<EOT rgba(0,0,0,0.4) EOT;
 
 }
 @advanced dropdown pgbg "页面背景设定" {
-使用visual time工作室提供的自 "使用visual time工作室提供的自动更换壁纸*" <<<EOT http://pine.visual-times.com/action/randombg.php EOT;
+--visual-time------- "使用visual time工作室提供的自动更换壁纸*" <<<EOT http://pine.visual-times.com/action/randombg.php EOT;
 
 	pgbg-custom-dropdown "Custom" <<<EOT /*[[pgbg-custom]]*\/ EOT;
 }
@@ -20,10 +20,10 @@
 @advanced color dfcl "图片加载失败时页面背景色（推荐勿改）" #333333
 @advanced color ftcl "输入框颜色" #FFA500
 @advanced dropdown ftcl2 "按钮风格" {
-	清新橙 "清新橙*" <<<EOT #su {background-color: orange;}
+	--- "清新橙*" <<<EOT #su {background-color: orange;}
 #su:hover {background-color: rgb(255,180,0);}
 #su:active {background-color: #212121;} EOT;
-天然蓝 "天然蓝" <<<EOT #su {background-color: rgb(0,144,198);}
+--- "天然蓝" <<<EOT #su {background-color: rgb(0,144,198);}
 #su:hover {background-color: rgb(30,130,204);}
 #su:active {background-color: #212121;} EOT;
 

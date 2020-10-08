@@ -11,13 +11,13 @@
 none "Default" <<<EOT none EOT;
 
 }
-@advanced text max-width=value "Set max-width" "1000px"
+@advanced text max-width-value "Set max-width" "1000px"
 @advanced dropdown max-height "Maximum height" {
 	value "Enter value below*" <<<EOT /*[[max-height=value]]*\/ EOT;
 none "Default" <<<EOT none EOT;
 
 }
-@advanced text max-height=value "Set max-height" "500px"
+@advanced text max-height-value "Set max-height" "500px"
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);

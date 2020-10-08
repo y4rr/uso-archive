@@ -6,7 +6,7 @@
 @version        201732.9.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown havePinnedTabs? "Do you have pinned tab(s)?" {
+@advanced dropdown havePinnedTabs- "Do you have pinned tab(s)?" {
 	no "No, I don't have.*" <<<EOT  EOT;
 yes "Yes, I have." <<<EOT /* with pinned tab(s) *\/
 .tabbrowser-arrowscrollbox {
@@ -45,4 +45,4 @@ yes "Yes, I have." <<<EOT /* with pinned tab(s) *\/
 .tab-stack {
   padding-bottom: 2px;
 }
-/*[[havePinnedTabs?]]*/
+/*[[havePinnedTabs-]]*/

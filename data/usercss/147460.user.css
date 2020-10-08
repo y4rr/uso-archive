@@ -8,13 +8,13 @@
 @preprocessor   uso
 @advanced color color "Choose a color" #2793E6
 @advanced dropdown border "Border between comments" {
-	with border "YES*" <<<EOT /*add border between main comments*\/
+	with-border "YES*" <<<EOT /*add border between main comments*\/
 ytd-comment-thread-renderer{
    border-bottom: 1px #2D2D2D solid;
 	border-width: 1px;
     width: 100%;
 } EOT;
-without border "NO" <<<EOT  EOT;
+without-border "NO" <<<EOT  EOT;
 
 }
 @advanced dropdown vote "Voting Buttons Color" {

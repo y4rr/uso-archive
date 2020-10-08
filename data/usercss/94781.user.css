@@ -7,20 +7,20 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown spoilerz "Автораскрытие спойлеров" {
-	Да "Да*" <<<EOT #800000 EOT;
-Нет "Нет" <<<EOT #E6CBC0 EOT;
+	-- "Да*" <<<EOT #800000 EOT;
+--- "Нет" <<<EOT #E6CBC0 EOT;
 
 }
 @advanced dropdown hideimgbanner "Скрыть баннеры" {
-	Нет "Нет*" <<<EOT /* none *\/ EOT;
-Да "Да" <<<EOT .logo br, .logo img, .banner {
+	--- "Нет*" <<<EOT /* none *\/ EOT;
+-- "Да" <<<EOT .logo br, .logo img, .banner {
   display:none !important;
 } EOT;
 
 }
 @advanced dropdown hideabarlinks "Скрыть ссылки на доски" {
-	Нет "Нет*" <<<EOT /* none *\/ EOT;
-Да "Да" <<<EOT .adminbar:first-child {
+	--- "Нет*" <<<EOT /* none *\/ EOT;
+-- "Да" <<<EOT .adminbar:first-child {
   display: none !important;
 } EOT;
 

@@ -6,9 +6,9 @@
 @version        201816.20.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown Navbar Settings "Navbar Settings" {
-	Default Navbar "Default Navbar*" <<<EOT  EOT;
-Greyscale Navbar "Greyscale Navbar" <<<EOT   nav.navbar 
+@advanced dropdown Navbar-Settings "Navbar Settings" {
+	Default-Navbar "Default Navbar*" <<<EOT  EOT;
+Greyscale-Navbar "Greyscale Navbar" <<<EOT   nav.navbar 
   {
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
@@ -24,7 +24,7 @@ Greyscale Navbar "Greyscale Navbar" <<<EOT   nav.navbar
   {
     box-shadow: 0px -4px 0px #969499 inset;
   } EOT;
-Dark Bg Navbar "Dark Background Navbar" <<<EOT   nav.navbar, .navbar.navbar-inverse div#nav_collapse
+Dark-Bg-Navbar "Dark Background Navbar" <<<EOT   nav.navbar, .navbar.navbar-inverse div#nav_collapse
   {
     background: #444444 !important;
   }
@@ -35,8 +35,8 @@ Dark Bg Navbar "Dark Background Navbar" <<<EOT   nav.navbar, .navbar.navbar-inve
   } EOT;
 
 }
-@advanced dropdown Compactness Settings "Compactness Settings" {
-	Default Compactness "Default Compactness*" <<<EOT   #app-header
+@advanced dropdown Compactness-Settings "Compactness Settings" {
+	Default-Compactness "Default Compactness*" <<<EOT   #app-header
   {
     background-color: #EDECEE !important; 
     height: 153px !important;
@@ -53,7 +53,7 @@ Dark Bg Navbar "Dark Background Navbar" <<<EOT   nav.navbar, .navbar.navbar-inve
     margin-top: -120px !important; 
     height: 120px !important;
   }  EOT;
-Extra Compact "Extra Compact" <<<EOT   #app-header
+Extra-Compact "Extra Compact" <<<EOT   #app-header
   {
     background-color: #EDECEE !important; 
     height: 148px !important;
@@ -132,7 +132,7 @@ Extra Compact "Extra Compact" <<<EOT   #app-header
 @-moz-document domain("habitica.com")
 {
 
-/*[[Compactness Settings]]*/
+/*[[Compactness-Settings]]*/
 
   #app-header .member-details.d-flex .progress
   {
@@ -166,6 +166,6 @@ Extra Compact "Extra Compact" <<<EOT   #app-header
     left: -1vw !important;
   }
 
-/*[[Navbar Settings]]*/
+/*[[Navbar-Settings]]*/
 
 }

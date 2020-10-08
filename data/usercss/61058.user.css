@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown Topnavi "Display Top Navi" {
-	40% "40%*" <<<EOT /* CHANGE OPACITY OF TOP NAVI *\/
+	40- "40%*" <<<EOT /* CHANGE OPACITY OF TOP NAVI *\/
     #navbar
     {
         opacity:.4;
@@ -25,48 +25,48 @@ No "No" <<<EOT /* CHANGE OPACITY OF TOP NAVI *\/
 
 }
 @advanced dropdown LogoOpacity "Wolfram|Alpha Logo Opacity" {
-	100% "100%*" <<<EOT opacity:1; EOT;
-80% "80%" <<<EOT opacity:.8; EOT;
-60% "60%" <<<EOT opacity:.6; EOT;
-40% "40%" <<<EOT opacity:.4; EOT;
-20% "20%" <<<EOT opacity:.2; EOT;
-do not show at all "do not show at all" <<<EOT display:none !important; EOT;
+	100- "100%*" <<<EOT opacity:1; EOT;
+80- "80%" <<<EOT opacity:.8; EOT;
+60- "60%" <<<EOT opacity:.6; EOT;
+40- "40%" <<<EOT opacity:.4; EOT;
+20- "20%" <<<EOT opacity:.2; EOT;
+do-not-show-at-all "do not show at all" <<<EOT display:none !important; EOT;
 
 }
 @advanced dropdown LSidebarOpacity "Left Sidebar Opacity" {
-	60% "60%*" <<<EOT opacity:.6; EOT;
-100% "100%" <<<EOT opacity:1; EOT;
-80% "80%" <<<EOT opacity:.8; EOT;
-40% "40%" <<<EOT opacity:.4; EOT;
-20% "20%" <<<EOT opacity:.2; EOT;
-do not show at all "do not show at all" <<<EOT display:none !important; EOT;
+	60- "60%*" <<<EOT opacity:.6; EOT;
+100- "100%" <<<EOT opacity:1; EOT;
+80- "80%" <<<EOT opacity:.8; EOT;
+40- "40%" <<<EOT opacity:.4; EOT;
+20- "20%" <<<EOT opacity:.2; EOT;
+do-not-show-at-all "do not show at all" <<<EOT display:none !important; EOT;
 
 }
 @advanced dropdown LSidebarElements "Left Sidebar Elements (Opacity must be 20% or higher)" {
-	only display "Relate "only display \"Related Queries\"*" <<<EOT #proSidebar
+	only-display--Relate "only display \"Related Queries\"*" <<<EOT #proSidebar
     {
         display:none !important;
     } EOT;
-no change "no change" <<<EOT  EOT;
+no-change "no change" <<<EOT  EOT;
 
 }
 @advanced dropdown RSidebarOpacity "Right Sidebar Opacity" {
-	20% "20%*" <<<EOT opacity:.2; EOT;
-100% "100%" <<<EOT opacity:1; EOT;
-80% "80%" <<<EOT opacity:.8; EOT;
-60% "60%" <<<EOT opacity:.6; EOT;
-40% "40%" <<<EOT opacity:.4; EOT;
-do not show at all "do not show at all" <<<EOT display:none !important; EOT;
+	20- "20%*" <<<EOT opacity:.2; EOT;
+100- "100%" <<<EOT opacity:1; EOT;
+80- "80%" <<<EOT opacity:.8; EOT;
+60- "60%" <<<EOT opacity:.6; EOT;
+40- "40%" <<<EOT opacity:.4; EOT;
+do-not-show-at-all "do not show at all" <<<EOT display:none !important; EOT;
 
 }
 @advanced dropdown RSidebarElements "Right Sidebar Elements (Opacity must be 20% or higher)" {
-	only display "Relate "only display \"Related Links\"*" <<<EOT #share,
+	only-display--Relate "only display \"Related Links\"*" <<<EOT #share,
     #newbie,
     #sponsor-ad
     {
         display:none !important;
     } EOT;
-no change "no change" <<<EOT #sponsor-ad
+no-change "no change" <<<EOT #sponsor-ad
     {
         display:none !important;
     } EOT;
@@ -91,22 +91,22 @@ Yes "Yes" <<<EOT  EOT;
 
 }
 @advanced dropdown Whitespace "Whitespace On Bottom" {
-	200 Pixel "200 Pixel*" <<<EOT /* AD BOTTOM MARGIN *\/
+	200-Pixel "200 Pixel*" <<<EOT /* AD BOTTOM MARGIN *\/
     #solutions
     {
         margin-bottom:200px !important;
     }
 
  EOT;
-0 Pixel "0 Pixel" <<<EOT  EOT;
-100 Pixel "100 Pixel" <<<EOT /* AD BOTTOM MARGIN *\/
+0-Pixel "0 Pixel" <<<EOT  EOT;
+100-Pixel "100 Pixel" <<<EOT /* AD BOTTOM MARGIN *\/
     #solutions
     {
         margin-bottom:100px !important;
     }
 
  EOT;
-300 Pixel "300 Pixel" <<<EOT /* AD BOTTOM MARGIN *\/
+300-Pixel "300 Pixel" <<<EOT /* AD BOTTOM MARGIN *\/
     #solutions
     {
         margin-bottom:300px !important;

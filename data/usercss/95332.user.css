@@ -16,23 +16,23 @@ Grassfield "Grassfield" <<<EOT http://i.imgur.com/QUmWneB.jpg EOT;
 @advanced color bgcol "Background Color" #4F5755
 @advanced color themecol "Theme Color" #3EBFC4
 @advanced dropdown navico "Navigation Icons" {
-	Dark Glossy "Dark Glossy*" <<<EOT   /* header icons *\/
+	Dark-Glossy "Dark Glossy*" <<<EOT   /* header icons *\/
   #header .iconic > a { background-image: url("http://i.imgur.com/IZtVice.png") !important; }
   /* tumblr logo *\/
   #logo a { background-image: url("http://i.imgur.com/DvMUOvP.png") !important; }
   #header #logo { width: 380px !important; height: 48px !important; margin: 11px 13px 0 15px !important; } EOT;
-Dark Flat "Dark Flat" <<<EOT   /* header icons *\/
+Dark-Flat "Dark Flat" <<<EOT   /* header icons *\/
   #header .iconic > a { background-image: url("http://i.imgur.com/Y2se3h2.png") !important; }
   /* tumblr logo *\/
   #logo a { background-image: url("http://i.imgur.com/t7S3H1W.png") !important; } EOT;
-White (Tumblr defaul "White (Tumblr default)" <<<EOT /* using default *\/ EOT;
+White--Tumblr-defaul "White (Tumblr default)" <<<EOT /* using default *\/ EOT;
 
 }
 @advanced dropdown contrans "Content Transparency (no effect if using content background)" {
-	60% "60%*" <<<EOT rgba(0,0,0,0.6) EOT;
-40% "40%" <<<EOT rgba(0,0,0,0.4) EOT;
-20% "20%" <<<EOT rgba(0,0,0,0.2) EOT;
-0% "0%" <<<EOT rgba(0,0,0,0) EOT;
+	60- "60%*" <<<EOT rgba(0,0,0,0.6) EOT;
+40- "40%" <<<EOT rgba(0,0,0,0.4) EOT;
+20- "20%" <<<EOT rgba(0,0,0,0.2) EOT;
+0- "0%" <<<EOT rgba(0,0,0,0) EOT;
 
 }
 @advanced dropdown conbg "Content Background" {

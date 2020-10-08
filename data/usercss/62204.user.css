@@ -205,7 +205,7 @@ No "No" <<<EOT  EOT;
 
 }
 @advanced dropdown scroll "Minimal & Floating Scrollbars?" {
-	Yes - mnml "Yes - mnml*" <<<EOT /* :::::::::::::::::::::: Minimal Scrollbars ::::::::::::::::::::::::::: *\/
+	Yes---mnml "Yes - mnml*" <<<EOT /* :::::::::::::::::::::: Minimal Scrollbars ::::::::::::::::::::::::::: *\/
 
 scrollbar, scrollbar thumb{   -moz-appearance: none !important; }
 
@@ -260,7 +260,7 @@ scrollbar thumb:active{    opacity: 1;
                            background: RGB(/*[[lc]]*\/ ) !important;
                            box-shadow: inset 0 0 2px 1px RGB(/*[[dc]]*\/ ), RGB(/*[[lc]]*\/ ) 0 0 3px;     }
 } EOT;
-Yes - bigger "Yes - bigger" <<<EOT /* :::::::::::::::::::::: Minimal Scrollbars ::::::::::::::::::::::::::: *\/
+Yes---bigger "Yes - bigger" <<<EOT /* :::::::::::::::::::::: Minimal Scrollbars ::::::::::::::::::::::::::: *\/
 
 scrollbar, scrollbar thumb{   -moz-appearance: none !important; }
 
@@ -401,9 +401,9 @@ Yes "Yes" <<<EOT /* ::::::::::::::::::::::::::::::::::::::::::::::: AUTO HIDE Bo
 }
 @advanced dropdown bg "Tab Backgrounds:" {
 Static "Static*" <<<EOT chrome://global/skin/media/imagedoc-darknoise.png EOT;
-5cm per second "5cm per second" <<<EOT http://i.imgur.com/BSPS3bt.jpg EOT;
-Dark Cosmos "Dark Cosmos" <<<EOT http://i.imgur.com/xvMxZFB.jpg EOT;
-Dark Wood "Dark Wood" <<<EOT http://i.imgur.com/2KGe32L.jpg EOT;
+5cm-per-second "5cm per second" <<<EOT http://i.imgur.com/BSPS3bt.jpg EOT;
+Dark-Cosmos "Dark Cosmos" <<<EOT http://i.imgur.com/xvMxZFB.jpg EOT;
+Dark-Wood "Dark Wood" <<<EOT http://i.imgur.com/2KGe32L.jpg EOT;
 
 	bg-custom-dropdown "Custom" <<<EOT /*[[bg-custom]]*\/ EOT;
 }

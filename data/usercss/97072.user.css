@@ -8,7 +8,7 @@
 @preprocessor   uso
 @advanced dropdown yversion "Firefox Version" {
 	24-26 "24-26*" <<<EOT #main-window[sizemode="normal"]:not([inFullscreen]) #navigator-toolbox[tabsontop="true"] #toolbar-menubar[autohide="true"] ~ #TabsToolbar EOT;
-29 (Australis) "29 (Australis)" <<<EOT #main-window #navigator-toolbox #TabsToolbar EOT;
+29--Australis- "29 (Australis)" <<<EOT #main-window #navigator-toolbox #TabsToolbar EOT;
 
 }
 @advanced dropdown ytop "Top" {

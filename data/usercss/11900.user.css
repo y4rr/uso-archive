@@ -7,14 +7,14 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown hidead "Скрыть рекламу?" {
-	Да "Да*" <<<EOT /* ADs Blocking *\/
+	-- "Да*" <<<EOT /* ADs Blocking *\/
 #topline, /* Head AD stripe *\/
 .sidebar_right [class^=banner], /* Sidebar Banner *\/
 #header [class^=banner] /* Menubar Banner *\/ {
     display:none !important;
 }
  EOT;
-Нет "Нет" <<<EOT   EOT;
+--- "Нет" <<<EOT   EOT;
 
 }
 

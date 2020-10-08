@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown responsive "响应式宽度" {
-	不启用 "不启用*" <<<EOT  EOT;
-启用大屏适配 "启用大屏适配" <<<EOT @media screen and (min-width: 1280px) {
+	--- "不启用*" <<<EOT  EOT;
+------ "启用大屏适配" <<<EOT @media screen and (min-width: 1280px) {
     .zg-wrap {
 		width:1000px;
 	}
@@ -25,8 +25,8 @@ body, input, textarea, select, button {
 
 }
 @advanced dropdown reduce-img-brightnes "降低图片亮度" {
-	不启用 "不启用*" <<<EOT  EOT;
-启用透明模式 "启用(透明模式,性能好)" <<<EOT img {
+	--- "不启用*" <<<EOT  EOT;
+------ "启用(透明模式,性能好)" <<<EOT img {
 transition:0.5s;
 opacity: .75 !important;
 }
@@ -39,7 +39,7 @@ background-color: #888 !important;
 svg {
 background: none #666 !important;
 } EOT;
-启用滤镜模式 "启用(滤镜模式,效果好)" <<<EOT img {
+------ "启用(滤镜模式,效果好)" <<<EOT img {
 transition:0.5s;
 filter: brightness(0.75) saturate(0.75);
 }

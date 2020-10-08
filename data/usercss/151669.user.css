@@ -51,10 +51,10 @@ Yes "Yes" <<<EOT [data-amount] {
 @advanced color administratorColor "Global Mod Badge" #A61111
 @advanced dropdown chatlineAltColor "Alternate Chat Line Background" {
 	No "No*" <<<EOT  EOT;
-Light Mode "Light Mode" <<<EOT .chat-line__message:nth-child(2n) {
+Light-Mode "Light Mode" <<<EOT .chat-line__message:nth-child(2n) {
 	background-color: rgba(0, 0, 0, 0.05);
 } EOT;
-Dark Mode "Dark Mode" <<<EOT .chat-line__message:nth-child(2n) {
+Dark-Mode "Dark Mode" <<<EOT .chat-line__message:nth-child(2n) {
 	background-color: rgba(255, 255, 255, 0.05);
 } EOT;
 
@@ -80,16 +80,16 @@ Viewers "Viewers" <<<EOT [data-a-target="channel-viewers-count"]
 {						
 	display: none!important;	
 } EOT;
-Total Views "Total Views" <<<EOT [data-a-target="total-views-count"]
+Total-Views "Total Views" <<<EOT [data-a-target="total-views-count"]
 {						
 	display: none!important;	
 } EOT;
-Followers / Followin "Followers / Following" <<<EOT [data-a-target="followers-channel-header-item"] .channel-header__item-count,
+Followers---Followin "Followers / Following" <<<EOT [data-a-target="followers-channel-header-item"] .channel-header__item-count,
 [data-a-target="following-channel-header-item"] .channel-header__item-count
 {						
 	display: none!important;	
 } EOT;
-Viewers / Total View "Viewers / Total Views" <<<EOT [data-a-target="channel-viewers-count"],
+Viewers---Total-View "Viewers / Total Views" <<<EOT [data-a-target="channel-viewers-count"],
 [data-a-target="total-views-count"]
 {						
 	display: none!important;	

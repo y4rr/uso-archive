@@ -30,7 +30,7 @@ on "表示" <<<EOT  EOT;
 
 }
 @advanced dropdown user-status "4. CLIP閲覧者数" {
-	なし "非表示*" <<<EOT .user_stats,/* 記事ページ_閲覧者数+お気に入り数+コメント数 *\/
+	-- "非表示*" <<<EOT .user_stats,/* 記事ページ_閲覧者数+お気に入り数+コメント数 *\/
 .num_clipees_1,/* ユーザーページ_閲覧者数 *\/ EOT;
 off "表示" <<<EOT  EOT;
 

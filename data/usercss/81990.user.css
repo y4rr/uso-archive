@@ -7,21 +7,21 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown theimage "Choose The BG Image" {
-Chris Colfer 1 "Chris Colfer 1*" <<<EOT http://img818.imageshack.us/img818/3189/kurtbg11.png EOT;
-Chris Colfer 2 "Chris Colfer 2" <<<EOT http://img5.imageshack.us/img5/1285/kurtbg22.png EOT;
-Chris Colfer 3 "Chris Colfer 3" <<<EOT http://img571.imageshack.us/img571/9590/kurtbg33.png EOT;
+Chris-Colfer-1 "Chris Colfer 1*" <<<EOT http://img818.imageshack.us/img818/3189/kurtbg11.png EOT;
+Chris-Colfer-2 "Chris Colfer 2" <<<EOT http://img5.imageshack.us/img5/1285/kurtbg22.png EOT;
+Chris-Colfer-3 "Chris Colfer 3" <<<EOT http://img571.imageshack.us/img571/9590/kurtbg33.png EOT;
 
 	theimage-custom-dropdown "Custom" <<<EOT /*[[theimage-custom]]*\/ EOT;
 }
 @advanced text theimage-custom "Choose The BG Image (Custom)" "https://example.com/image.png"
 @advanced dropdown postopacity "Post Opacity" {
-	White BG Posts "White BG Posts*" <<<EOT 1 EOT;
-Transparent BG Posts "Transparent BG Posts" <<<EOT .25 EOT;
+	White-BG-Posts "White BG Posts*" <<<EOT 1 EOT;
+Transparent-BG-Posts "Transparent BG Posts" <<<EOT .25 EOT;
 
 }
 @advanced dropdown baropacity "Dashboard Bar Opacity" {
-	White Dashboard Bar "White Dashboard Bar*" <<<EOT 1 EOT;
-Transparent Dashboar "Transparent Dashboard Bar" <<<EOT .25 EOT;
+	White-Dashboard-Bar "White Dashboard Bar*" <<<EOT 1 EOT;
+Transparent-Dashboar "Transparent Dashboard Bar" <<<EOT .25 EOT;
 
 }
 @advanced color thecolor "Font Color" #FFFFFF

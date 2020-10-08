@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown thread_list "帖子列表鼠标跟随变色" {
-	启用 "启用*" <<<EOT /*thread_list_hover*\/
+	-- "启用*" <<<EOT /*thread_list_hover*\/
 li.j_thread_list:hover{
   background-image: -moz-linear-gradient(#D8EDFC, #fff, #C2DEF5)!important;
   background-image: -webkit-linear-gradient(#D8EDFC, #fff, #C2DEF5)!important;
@@ -18,25 +18,25 @@ li.j_thread_list.threadlist_li_gray:hover{
   background-image: -webkit-linear-gradient(#D8EDFC, #fff, #CCE2F5)!important;
   background-image: -o-linear-gradient(#D8EDFC, #fff, #CCE2F5)!important;
 } EOT;
-不启用 "不启用" <<<EOT  EOT;
+--- "不启用" <<<EOT  EOT;
 
 }
 @advanced dropdown mytextdisplay "文本内容预览" {
-	不显示 "不显示*" <<<EOT div.threadlist_abs.threadlist_abs_onlyline{display: none !important;}
+	--- "不显示*" <<<EOT div.threadlist_abs.threadlist_abs_onlyline{display: none !important;}
  EOT;
-显示 "显示" <<<EOT div.threadlist_abs.threadlist_abs_onlyline{display: block !important;}
+-- "显示" <<<EOT div.threadlist_abs.threadlist_abs_onlyline{display: block !important;}
  EOT;
 
 }
 @advanced dropdown myotherdisplay "非文本内容预览" {
-	不显示 "不显示*" <<<EOT ul.threadlist_media.j_threadlist_media{display: none !important;}
+	--- "不显示*" <<<EOT ul.threadlist_media.j_threadlist_media{display: none !important;}
  EOT;
-显示 "显示" <<<EOT ul.threadlist_media.j_threadlist_media{display: block !important;}
+-- "显示" <<<EOT ul.threadlist_media.j_threadlist_media{display: block !important;}
  EOT;
 
 }
 @advanced dropdown myhead "头像样式" {
-	启用 "启用*" <<<EOT /*头像*\/
+	-- "启用*" <<<EOT /*头像*\/
 .head_img,img#userlike_info_head_img{border:none !important; }
 /*新贴吧徽章*\/
 div.icon_relative div{
@@ -123,11 +123,11 @@ div.up_panel{ border:none !important;}
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     } EOT;
-禁用 "禁用" <<<EOT  EOT;
+-- "禁用" <<<EOT  EOT;
 
 }
 @advanced dropdown mylv "等级样式" {
-	启用 "启用*" <<<EOT /*等级*\/
+	-- "启用*" <<<EOT /*等级*\/
 div.d_badge,div.userlike_badge{
 background-image: none !important;
   -webkit-border-radius: 5px;
@@ -150,12 +150,12 @@ font-size: 120% !important;
 font-weight: 500 !important;
   }
  EOT;
-禁用 "禁用" <<<EOT  EOT;
+-- "禁用" <<<EOT  EOT;
 
 }
 @advanced dropdown mypPad "主题帖间距" {
-	默认 "默认*" <<<EOT  EOT;
-变小 "变小" <<<EOT div#content_leftList.content_leftList.clearfix li{
+	-- "默认*" <<<EOT  EOT;
+-- "变小" <<<EOT div#content_leftList.content_leftList.clearfix li{
 padding: 2px 0 0 !important;
 }
 div#content_leftList.content_leftList.clearfix li div{
@@ -165,11 +165,11 @@ padding-top: 2px !important;
 
 }
 @advanced dropdown mypSpLi "主题贴分隔线" {
-	显示 "显示*" <<<EOT div.frs_content.clearfix div#contet_wrap.contet_wrap{
+	-- "显示*" <<<EOT div.frs_content.clearfix div#contet_wrap.contet_wrap{
 border-color: #eee !important;
 border-top-style: dashed !important;
 } EOT;
-隐藏 "隐藏" <<<EOT div.frs_content.clearfix div#contet_wrap.contet_wrap{
+-- "隐藏" <<<EOT div.frs_content.clearfix div#contet_wrap.contet_wrap{
 border-top: none !important;
 }
 div#content_leftList.content_leftList.clearfix li{
@@ -179,18 +179,18 @@ background-image: none !important;
 
 }
 @advanced dropdown mycSpLi "回帖分隔线" {
-	隐藏 "隐藏*" <<<EOT div.l_post{
+	-- "隐藏*" <<<EOT div.l_post{
 width: 100% !important;
 border: none !important;
 }
  EOT;
-显示 "显示" <<<EOT div.l_post{
+-- "显示" <<<EOT div.l_post{
 width: 100% !important;
 } EOT;
 
 }
 @advanced dropdown mycPa "内容页页链接" {
-	推荐 "推荐*" <<<EOT li.pager a,li.l_pager a{
+	-- "推荐*" <<<EOT li.pager a,li.l_pager a{
 color: #396FDB !important;
 display: inline !important;
 border: none !important; 
@@ -206,11 +206,11 @@ text-shadow: 1px 1px 9px !important;
 border-color: rgba(12,32,41,0.3) !important;
 }
  EOT;
-新贴吧默认 "新贴吧默认" <<<EOT li.pager a,li.l_pager a{
+----- "新贴吧默认" <<<EOT li.pager a,li.l_pager a{
 padding: 0px 4px 0px   !important;
 }
  EOT;
-旧贴吧样式 "旧贴吧样式" <<<EOT li.pager a,li.l_pager a{
+----- "旧贴吧样式" <<<EOT li.pager a,li.l_pager a{
 display: inline !important;
 text-align: center !important;
 background: none !important;
@@ -229,7 +229,7 @@ padding: 0 2px 0  !important;
 
 }
 @advanced dropdown mypPa "首页页链接" {
-	推荐 "推荐*" <<<EOT div.pager.clearfix a{width: 46px !important;}
+	-- "推荐*" <<<EOT div.pager.clearfix a{width: 46px !important;}
 
 div.pager.clearfix a,div.pager.pager-center a{
 border-color: rgba(12,32,241,0.3) !important;
@@ -252,8 +252,8 @@ border-color: rgba(12,32,41,0.3) !important;
 }
 
  EOT;
-新贴吧默认 "新贴吧默认" <<<EOT  EOT;
-旧贴吧样式 "旧贴吧样式" <<<EOT div.pager.clearfix a,div.pager.pager-center a{
+----- "新贴吧默认" <<<EOT  EOT;
+----- "旧贴吧样式" <<<EOT div.pager.clearfix a,div.pager.pager-center a{
 border: none !important;
   }
 div.pager.clearfix a:hover,div.pager.pager-center a:hover{
@@ -269,7 +269,7 @@ padding: 0 2px 0  !important;
 
 }
 @advanced dropdown myhISe "搜索框样式" {
-	推荐 "推荐*" <<<EOT input#search_submit.s_btn{
+	-- "推荐*" <<<EOT input#search_submit.s_btn{
 	text-align:center;
 	background: none !important;
 	color: #bbb !important;
@@ -305,11 +305,11 @@ text-decoration:none !important;
 }
 img#tieba_logo{opacity: 0.5 !important;}
  EOT;
-贴吧默认 "贴吧默认" <<<EOT  EOT;
+---- "贴吧默认" <<<EOT  EOT;
 
 }
 @advanced dropdown mynav "导航栏样式" {
-	推荐 "推荐*" <<<EOT div#frs_nav_wrap,div#frs_nav ul,div#frs_nav,a.j_nav_wap,a#old_version,a#new_version.nav_icon.toggle,li.divide{
+	-- "推荐*" <<<EOT div#frs_nav_wrap,div#frs_nav ul,div#frs_nav,a.j_nav_wap,a#old_version,a#new_version.nav_icon.toggle,li.divide{
   background-image: none !important;
   background: #09afff !important;
   color: #eee !important;
@@ -342,18 +342,18 @@ li a#refresh[href="&tp=0&pn=0"]:after{content: 'F5' !important;}
 a#frs_old_version.nav_icon.toggle:after{content: 'O/N' !important;}
 a#pb_new_version.nav_icon.pb_toggle:after{content: 'old' !important;}
  EOT;
-贴吧默认 "贴吧默认" <<<EOT  EOT;
+---- "贴吧默认" <<<EOT  EOT;
 
 }
 @advanced dropdown myaHov "链接悬浮阴影" {
-	启用 "启用*" <<<EOT a:hover,div.p_favthr_main p:hover{text-shadow: 1px 2px 6px rgba(0,0,0,0.3) !important;}
+	-- "启用*" <<<EOT a:hover,div.p_favthr_main p:hover{text-shadow: 1px 2px 6px rgba(0,0,0,0.3) !important;}
 
  EOT;
-禁用 "禁用" <<<EOT  EOT;
+-- "禁用" <<<EOT  EOT;
 
 }
 @advanced dropdown mypage "贴吧仅变宽" {
-	禁用 "禁用*" <<<EOT /*background-page*\/
+	-- "禁用*" <<<EOT /*background-page*\/
 .wrap2 {
 background: none !important;
 background-color: #fff !important;
@@ -484,7 +484,7 @@ background-image: none !important;
 div.forum_grade_bar{
 border: none !important;
 } EOT;
-启用 "启用" <<<EOT /*background-page*\/
+-- "启用" <<<EOT /*background-page*\/
 .wrap2 {
 background: none !important;
 background-color: #fff !important;
@@ -611,16 +611,16 @@ span.threadlist_reply_date.j_reply_data{padding-left: 0px !important;} EOT;
 
 }
 @advanced dropdown mySignature "签名档" {
-	显示 "显示*" <<<EOT div.d_sign_split,div.d_sign_split+img{
+	-- "显示*" <<<EOT div.d_sign_split,div.d_sign_split+img{
 display: block !important;
 } EOT;
-不显示 "不显示" <<<EOT div.d_sign_split,div.d_sign_split+img{
+--- "不显示" <<<EOT div.d_sign_split,div.d_sign_split+img{
 display: none !important;
 } EOT;
 
 }
 @advanced dropdown myinline "作者、回复人、时间" {
-	在同一行 "在同一行*" <<<EOT /*贴子作者、最后回复者、回复时间*\/
+	---- "在同一行*" <<<EOT /*贴子作者、最后回复者、回复时间*\/
 span.tb_icon_author,span.tb_icon_author_rely.j_replyer,span.threadlist_reply_date.j_reply_data{
 position: absolute !important;
 margin: 0 !important;
@@ -653,7 +653,7 @@ margin-left: 7.7% !important;
 position: relative !important;
 width: 90% !important;
 } EOT;
-不在同一行 "不在同一行" <<<EOT /*贴子作者、最后回复者*\/
+----- "不在同一行" <<<EOT /*贴子作者、最后回复者*\/
 span.tb_icon_author,span.tb_icon_author_rely.j_replyer{
 padding-left: 0px !important;
 width: 56% !important;

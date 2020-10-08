@@ -7,34 +7,34 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown header "Header position" {
-	Top of the screen (a "Top of the screen (always in view and available)*" <<<EOT fixed EOT;
-Top of the page (scr "Top of the page (scrolls out of view with the page)" <<<EOT absolute EOT;
+	Top-of-the-screen--a "Top of the screen (always in view and available)*" <<<EOT fixed EOT;
+Top-of-the-page--scr "Top of the page (scrolls out of view with the page)" <<<EOT absolute EOT;
 
 }
 @advanced dropdown footer "Footer position" {
-	Bottom of the screen "Bottom of the screen (always in view and available)*" <<<EOT fixed EOT;
-Bottom of the page ( "Bottom of the page (scrolls out of view with the page)" <<<EOT absolute EOT;
-Remove it entirely "Remove it entirely" <<<EOT none EOT;
+	Bottom-of-the-screen "Bottom of the screen (always in view and available)*" <<<EOT fixed EOT;
+Bottom-of-the-page-- "Bottom of the page (scrolls out of view with the page)" <<<EOT absolute EOT;
+Remove-it-entirely "Remove it entirely" <<<EOT none EOT;
 
 }
 @advanced dropdown no-ads "Show the ads?" {
-	No, thank you. "No, thank you.*" <<<EOT   [id*="outbrain"], [id^="odb"],
+	No--thank-you- "No, thank you.*" <<<EOT   [id*="outbrain"], [id^="odb"],
   .PDS_Poll,
   #content .greeting {display: none !important}
  EOT;
-Yes, please. "Yes, please." <<<EOT  EOT;
+Yes--please- "Yes, please." <<<EOT  EOT;
 
 }
 @advanced dropdown no-comment "Show comments?" {
-	No, thank you. "No, thank you.*" <<<EOT   A[name="comments"],
+	No--thank-you- "No, thank you.*" <<<EOT   A[name="comments"],
   A[href*="#comment"], A[href*="#respond"],
   [id^="idc-"] {display: none !important}
  EOT;
-Yes, please. "Yes, please." <<<EOT  EOT;
+Yes--please- "Yes, please." <<<EOT  EOT;
 
 }
 @advanced dropdown no-social "Show social media links?" {
-	No, thank you. "No, thank you.*" <<<EOT   .post .meta-sep, /*TODO leave separator in if comment or social is enabled*\/
+	No--thank-you- "No, thank you.*" <<<EOT   .post .meta-sep, /*TODO leave separator in if comment or social is enabled*\/
   IFRAME[src*="facebook"],
   IFRAME[src*="twitter"],
   .social,
@@ -43,7 +43,7 @@ Yes, please. "Yes, please." <<<EOT  EOT;
   [id*="facebook"],
   .share-rail {display: none}
  EOT;
-Yes, please. "Yes, please." <<<EOT  EOT;
+Yes--please- "Yes, please." <<<EOT  EOT;
 
 }
 

@@ -7,47 +7,47 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown skin "背景(background)" {
-	拉伸图片背景(Drawing pictu "拉伸图片背景(Drawing pictures)*" <<<EOT /*背景（拉伸 - Drawing pictures）*\/
+	-------Drawing-pictu "拉伸图片背景(Drawing pictures)*" <<<EOT /*背景（拉伸 - Drawing pictures）*\/
   body{background:url("/*[[background]]*\/") no-repeat fixed 0% 0% transparent!important;
   background-size:100% auto!important;} EOT;
-平铺纹理背景(Tile picture) "平铺纹理背景(Tile picture)" <<<EOT /*背景（平铺 - Tile picture）*\/
+-------Tile-picture- "平铺纹理背景(Tile picture)" <<<EOT /*背景（平铺 - Tile picture）*\/
   body{background:url("/*[[background]]*\/") repeat fixed 0% 0% transparent!important;} EOT;
-纯色背景(pure colour) "纯色背景(pure colour)" <<<EOT /*背景（纯色 - pure colour）*\/
+-----pure-colour- "纯色背景(pure colour)" <<<EOT /*背景（纯色 - pure colour）*\/
   body{background:/*[[color]]*\/!important;} EOT;
 
 }
 @advanced dropdown background "背景图片(picture of background)" {
-拉伸图片(Drawing picture "拉伸图片(Drawing pictures)*" <<<EOT http://i3.tietuku.com/7544f3f6cff95cf3.jpg EOT;
-平铺纹理(Tile picture) "平铺纹理(Tile picture)" <<<EOT http://tiles.trulia.com/tiles/home_prices_listings/13/1614/3053.png?opacity=0.65&v=20140116 EOT;
+-----Drawing-picture "拉伸图片(Drawing pictures)*" <<<EOT http://i3.tietuku.com/7544f3f6cff95cf3.jpg EOT;
+-----Tile-picture- "平铺纹理(Tile picture)" <<<EOT http://tiles.trulia.com/tiles/home_prices_listings/13/1614/3053.png?opacity=0.65&v=20140116 EOT;
 
 	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
 }
 @advanced text background-custom "背景图片(picture of background) (Custom)" "https://example.com/image.png"
 @advanced color color "背景颜色(color of background)" #EEEEEE
 @advanced dropdown opacity "搜索项背景半透明(Search results with the translucent background)" {
-	结果项独立半透明 - the trans "结果项独立半透明 - the translucent background*" <<<EOT   /*搜索项背景半透明*\/
+	-----------the-trans "结果项独立半透明 - the translucent background*" <<<EOT   /*搜索项背景半透明*\/
   #b_results > .b_ans,#b_results > .b_algo,#b_context .b_ans, #b_context #wpc_ag{background:rgba(255,255,255,0.5)!important;padding:8px 14px!important;box-shadow:0 0 2px gray;} EOT;
-无 - none（默认） "无 - none（默认）" <<<EOT  EOT;
+----none---- "无 - none（默认）" <<<EOT  EOT;
 
 }
 @advanced dropdown radius "搜索项边框(border of search results)" {
-	圆角 - filleted corner "圆角 - filleted corner*" <<<EOT border-radius:6px; EOT;
-直角 - right-angle "直角 - right-angle" <<<EOT  EOT;
+	-----filleted-corner "圆角 - filleted corner*" <<<EOT border-radius:6px; EOT;
+-----right-angle "直角 - right-angle" <<<EOT  EOT;
 
 }
 @advanced dropdown double "搜索项显示(Search results display)" {
-	单列显示 - single-row(默认 "单列显示 - single-row(默认)*" <<<EOT  EOT;
-单列显示 - single-row(19 "单列显示 - single-row(1920x1080)" <<<EOT   /*单列显示(1920x1080)*\/
+	-------single-row--- "单列显示 - single-row(默认)*" <<<EOT  EOT;
+-------single-row-19 "单列显示 - single-row(1920x1080)" <<<EOT   /*单列显示(1920x1080)*\/
   #b_results{width:900px!important;} EOT;
-宽单列显示 - single-row(低 "宽单列显示 - single-row(低于1920x1080)" <<<EOT   /*单列显示(低于1920x1080)*\/
+--------single-row-- "宽单列显示 - single-row(低于1920x1080)" <<<EOT   /*单列显示(低于1920x1080)*\/
   #b_results{width:900px!important;}
   #b_context{display:none;} EOT;
-双列显示 - two column(19 "双列显示 - two column(1920x1080))" <<<EOT   /*双列显示(1920x1080)*\/
+-------two-column-19 "双列显示 - two column(1920x1080))" <<<EOT   /*双列显示(1920x1080)*\/
   #b_results{width:100%!important;max-width:1250px;}
   #b_results > .b_ans,#b_results > .b_algo{display:inline-block !important;width:46% !important;vertical-align:top !important;margin-right:/*[[margin-r]]*\/!important;}
   #b_content{padding-left:4%!important;}
   #b_context{margin-left:4%!important;} EOT;
-小双列显示 - two column(低 "小双列显示 - two column(低于1920x1080)" <<<EOT   /*小双列显示(低于1920x1080)*\/
+--------two-column-- "小双列显示 - two column(低于1920x1080)" <<<EOT   /*小双列显示(低于1920x1080)*\/
   #b_results{width:100%!important;max-width:1250px;}
   #b_results > .b_ans,#b_results > .b_algo{display:inline-block !important;width:46% !important;vertical-align:top !important;margin-right:/*[[margin-r]]*\/!important;}
   #b_content{padding-left:4%!important;}

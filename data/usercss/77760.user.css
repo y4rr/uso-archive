@@ -13,7 +13,7 @@
 @advanced text myback-custom "Choose background (Custom)" "https://example.com/image.png"
 @advanced dropdown mylogo "Choose logo" {
 Default "Default*" <<<EOT http://www.google.com/images/srpr/logo3w.png EOT;
-Classic Plus "Classic Plus" <<<EOT https://www.google.com/logos/classicplus.png EOT;
+Classic-Plus "Classic Plus" <<<EOT https://www.google.com/logos/classicplus.png EOT;
 
 	mylogo-custom-dropdown "Custom" <<<EOT /*[[mylogo-custom]]*\/ EOT;
 }

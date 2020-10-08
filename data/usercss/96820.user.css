@@ -123,7 +123,7 @@ A[data-type="favts"] .unread_num /*我的收藏-计数器*\/ ,
 }
 @advanced dropdown display-1 "右上用户导航是否显示透明背景" {
 	2 "不显示*" <<<EOT  EOT;
-#com_userbar "显示" <<<EOT #com_userbar {background:rgba(/*[[rgba-0]]*\/,0.6) !important;height:30px !important;border-radius:3px !important;border:solid 1px #ddd !important;top:-1px !important;}/*右上用户导航条-背景*\/ EOT;
+-com_userbar "显示" <<<EOT #com_userbar {background:rgba(/*[[rgba-0]]*\/,0.6) !important;height:30px !important;border-radius:3px !important;border:solid 1px #ddd !important;top:-1px !important;}/*右上用户导航条-背景*\/ EOT;
 
 }
 @advanced dropdown style-7 "看帖时增加视觉效果？" {

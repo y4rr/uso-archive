@@ -19,13 +19,13 @@ Disable "Disable" <<<EOT  EOT;
 
 }
 @advanced dropdown trends "Remove Trends" {
-	Enable(Remove Only J "Enable(Remove Only Japanese Hashtags)*" <<<EOT .dashboard>div[data-component-term="trends"] ul.trend-items.js-trends>li.promoted-trend,
+	Enable-Remove-Only-J "Enable(Remove Only Japanese Hashtags)*" <<<EOT .dashboard>div[data-component-term="trends"] ul.trend-items.js-trends>li.promoted-trend,
 .dashboard>div[data-component-term="trends"] ul.trend-items.js-trends>li[data-trend-name^="#"]>a[href^="/#!/search/%23%"],
 .dashboard>div[data-component-term="trends"] ul.trend-items.js-trends>li[data-trend-name^="#"]>a[href^="/search?q=%23%"]{display:none;}
 .dashboard>div.module.trends ul.trend-items.js-trends>li.promoted-trend,
 .dashboard>div.module.trends ul.trend-items.js-trends>li[data-trend-name^="#"]>a[href^="/#!/search/%23%"],
 .dashboard>div.module.trends ul.trend-items.js-trends>li[data-trend-name^="#"]>a[href^="/search?q=%23%"]{display:none;} EOT;
-Enable(Remove whole  "Enable(Remove whole Trends Block)" <<<EOT .dashboard>div[data-component-term="trends"],
+Enable-Remove-whole- "Enable(Remove whole Trends Block)" <<<EOT .dashboard>div[data-component-term="trends"],
 .dashboard>div.module.trends{display:none !important;} EOT;
 Disable "Disable" <<<EOT  EOT;
 

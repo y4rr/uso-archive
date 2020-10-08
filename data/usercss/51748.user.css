@@ -8,13 +8,13 @@
 @preprocessor   uso
 @advanced dropdown runon "What subs should this run on?" {
 	MLP "MLP*" <<<EOT url-prefix("http://www.reddit.com/r/mylittlepony") EOT;
-MLP + MLPLounge "MLP + MLPLounge" <<<EOT url-prefix("http://www.reddit.com/r/mylittlepony"), url-prefix("http://www.reddit.com/r/MLPLounge") EOT;
+MLP---MLPLounge "MLP + MLPLounge" <<<EOT url-prefix("http://www.reddit.com/r/mylittlepony"), url-prefix("http://www.reddit.com/r/MLPLounge") EOT;
 MLPLounge "MLPLounge" <<<EOT url-prefix("http://www.reddit.com/r/MLPLounge") EOT;
-All of Reddit "All of Reddit" <<<EOT domain("www.reddit.com") EOT;
+All-of-Reddit "All of Reddit" <<<EOT domain("www.reddit.com") EOT;
 
 }
 @advanced dropdown arrows "What arrow style do you want?" {
-	Sun/Moon "Sun/Moon*" <<<EOT http://i.imgur.com/N5aXv.png EOT;
+	Sun-Moon "Sun/Moon*" <<<EOT http://i.imgur.com/N5aXv.png EOT;
 Horns "Horns" <<<EOT http://i.imgur.com/0eiFx.png EOT;
 Horseshoes "Horseshoes" <<<EOT http://i.imgur.com/20pDf.png EOT;
 

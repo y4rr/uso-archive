@@ -7,7 +7,7 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown bakgrund "Bakgrundsfärgen" {
-	ljusgrå "ljusgrå*" <<<EOT body {
+	ljusgr- "ljusgrå*" <<<EOT body {
 	background: #f2f2f2 ;}
 
 .head, .page {
@@ -16,7 +16,7 @@ vit "vit" <<<EOT  EOT;
 
 }
 @advanced dropdown navlist "Navigationslisten" {
-	visas smal "visas alltid överst (smal list)*" <<<EOT .head {
+	visas-smal "visas alltid överst (smal list)*" <<<EOT .head {
 	position: fixed; 
 	width:100%;}
 

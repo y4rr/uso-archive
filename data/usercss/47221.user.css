@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown V "Firefox" {
-	25+ "25+*" <<<EOT /*[[V]]*\/
+	25- "25+*" <<<EOT /*[[V]]*\/
 #main-window:not([sizemode="fullscreen"]) statuspanel
 {position:fixed!important;bottom:1px!important;left:27px!important;pointer-events:none!important; }
 #main-window:not([sizemode="fullscreen"]) .statuspanel-label
 {padding:0!important;margin:0!important;border:0!important;color:inherit!important;background:transparent!important;box-shadow:none!important;text-shadow: hsla(0,0%, 100%, .8) 0 0 1px, hsla(0,0%, 100%, .35) 0 1px 0 !important;}  EOT;
-<25 "<25" <<<EOT /*[[V]]*\/
+-25 "<25" <<<EOT /*[[V]]*\/
 
 #main-window:not([sizemode="fullscreen"]) #statusbar-display {pointer-events:none!important; position:fixed!important; bottom: -10em !important; max-height: 9em !important; z-index: -999 !important;}
 

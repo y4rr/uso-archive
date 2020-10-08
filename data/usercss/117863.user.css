@@ -6,8 +6,8 @@
 @version        2017511.8.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown /*[[菜单按钮自动隐藏]]*\/ "默认:菜单按钮自动隐藏" {
-	菜单按钮自动隐藏 "菜单按钮自动隐藏*" <<<EOT .addon:not([selected]) :-moz-any(
+@advanced dropdown ---------------- "默认:菜单按钮自动隐藏" {
+	-------- "菜单按钮自动隐藏*" <<<EOT .addon:not([selected]) :-moz-any(
 .control-container){
 visibility: collapse !important;
 } EOT;
@@ -244,7 +244,7 @@ counter-increment: disabled !important;
 .addon:not([selected]) .status-container > hbox{
 visibility: collapse !important;}
 
-/*[[菜单按钮自动隐藏]]*/
+/*[[--------]]*/
 .addon:not([selected]) :-moz-any(
 .control-container){
 visibility: collapse !important;

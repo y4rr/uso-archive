@@ -191,29 +191,29 @@ height: 0px!important
 
 }
 @advanced dropdown Image "Custom Banner" {
-Spring 2014 "Spring 2014*" <<<EOT http://i.imgur.com/xxAc2er.png EOT;
-Classic Green "Classic Green" <<<EOT http://i.imgur.com/MXqBcfN.jpg EOT;
-Classic Red "Classic Red" <<<EOT http://i.imgur.com/VAFP1UK.jpg EOT;
-Spring 2010 "Spring 2010" <<<EOT http://i.imgur.com/S04HYuJ.png EOT;
-Summer 2010 "Summer 2010" <<<EOT http://i.imgur.com/hSOhbmX.jpg EOT;
-Fall 2010 "Fall 2010" <<<EOT http://i.imgur.com/1wAOk8h.png EOT;
-Winter 2010 - 11 "Winter 2010 - 11" <<<EOT http://i.imgur.com/P93bSD7.png EOT;
-Spring 2011 "Spring 2011" <<<EOT http://i.imgur.com/wa1xJha.png EOT;
-Summer 2011 "Summer 2011" <<<EOT http://i.imgur.com/vBE1Iiu.png EOT;
-Winter 2011 "Winter 2011" <<<EOT http://i.imgur.com/LWDwKB0.jpg EOT;
-Spring 2012 "Spring 2012" <<<EOT http://i.imgur.com/5RKCwfO.png EOT;
-Summer 2012 "Summer 2012" <<<EOT http://i.imgur.com/YuVSooJ.png EOT;
-Fall 2012 "Fall 2012" <<<EOT http://i.imgur.com/3lUL8f6.png EOT;
-Winter 2012 "Winter 2012" <<<EOT http://i.imgur.com/fZImUIS.png EOT;
-Spring - Summer 2013 "Spring - Summer 2013" <<<EOT http://i.imgur.com/N7y9s3L.png EOT;
-Winter 2013 "Winter 2013" <<<EOT http://i.imgur.com/Xc9JUVG.png EOT;
+Spring-2014 "Spring 2014*" <<<EOT http://i.imgur.com/xxAc2er.png EOT;
+Classic-Green "Classic Green" <<<EOT http://i.imgur.com/MXqBcfN.jpg EOT;
+Classic-Red "Classic Red" <<<EOT http://i.imgur.com/VAFP1UK.jpg EOT;
+Spring-2010 "Spring 2010" <<<EOT http://i.imgur.com/S04HYuJ.png EOT;
+Summer-2010 "Summer 2010" <<<EOT http://i.imgur.com/hSOhbmX.jpg EOT;
+Fall-2010 "Fall 2010" <<<EOT http://i.imgur.com/1wAOk8h.png EOT;
+Winter-2010---11 "Winter 2010 - 11" <<<EOT http://i.imgur.com/P93bSD7.png EOT;
+Spring-2011 "Spring 2011" <<<EOT http://i.imgur.com/wa1xJha.png EOT;
+Summer-2011 "Summer 2011" <<<EOT http://i.imgur.com/vBE1Iiu.png EOT;
+Winter-2011 "Winter 2011" <<<EOT http://i.imgur.com/LWDwKB0.jpg EOT;
+Spring-2012 "Spring 2012" <<<EOT http://i.imgur.com/5RKCwfO.png EOT;
+Summer-2012 "Summer 2012" <<<EOT http://i.imgur.com/YuVSooJ.png EOT;
+Fall-2012 "Fall 2012" <<<EOT http://i.imgur.com/3lUL8f6.png EOT;
+Winter-2012 "Winter 2012" <<<EOT http://i.imgur.com/fZImUIS.png EOT;
+Spring---Summer-2013 "Spring - Summer 2013" <<<EOT http://i.imgur.com/N7y9s3L.png EOT;
+Winter-2013 "Winter 2013" <<<EOT http://i.imgur.com/Xc9JUVG.png EOT;
 
 	Image-custom-dropdown "Custom" <<<EOT /*[[Image-custom]]*\/ EOT;
 }
 @advanced text Image-custom "Custom Banner (Custom)" "https://example.com/image.png"
 @advanced dropdown Wallpaper "Custom Wallpaper" {
 	1112353-Off "Off*" <<<EOT /*Wallpaper*\/ EOT;
-1112354-On (With cus "On (With custom theme) " <<<EOT #primary_nav, #branding, body#ipboard_body {
+1112354-On--With-cus "On (With custom theme) " <<<EOT #primary_nav, #branding, body#ipboard_body {
 background: url("/*[[Image2]]*\/") fixed repeat top !important;
 }
 
@@ -253,7 +253,7 @@ border-color:
 }
 
  EOT;
-1112355-On (With cus "On (With custom theme off) " <<<EOT #primary_nav, #branding, body#ipboard_body {
+1112355-On--With-cus "On (With custom theme off) " <<<EOT #primary_nav, #branding, body#ipboard_body {
 background: url("/*[[Image2]]*\/") fixed repeat top !important;
 }
 
@@ -267,7 +267,7 @@ border-color: transparent !important;
 
 }
 @advanced dropdown Image2 "Wallpaper Image" {
-Night Sky "Night Sky*" <<<EOT http://i.imgur.com/K4tSkyF.png EOT;
+Night-Sky "Night Sky*" <<<EOT http://i.imgur.com/K4tSkyF.png EOT;
 
 	Image2-custom-dropdown "Custom" <<<EOT /*[[Image2-custom]]*\/ EOT;
 }

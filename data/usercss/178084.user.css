@@ -6,12 +6,12 @@
 @version        2019128.11.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown . "BackGround" {
+@advanced dropdown - "BackGround" {
 1 "Gradient*" <<<EOT https://www.zenlayer.com/wp-content/uploads/2018/10/color-bg-dark.jpg EOT;
 
-	.-custom-dropdown "Custom" <<<EOT /*[[.-custom]]*\/ EOT;
+	--custom-dropdown "Custom" <<<EOT /*[[--custom]]*\/ EOT;
 }
-@advanced text .-custom "BackGround (Custom)" "https://example.com/image.png"
+@advanced text --custom "BackGround (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document domain("youtube")
@@ -22,7 +22,7 @@
 {
   html:not(#⁠),body>div,body>table,[role="navigation"],[role="dialog"],#body-container>div,[aria-expanded="true"]:not(.ytp-button),[class*="tooltip"]:not(.ytp-tooltip-duration):not(.ytp-tooltip-bg):not(.ytp-tooltip-text-wrapper):not([class*="arrow"]):not(button),[role="menu"],.ytp-popup,.videoAdUiPreSkipButton,.videoAdUiAdInfoPopup
   {
-    background: url(/*[[.]]*/)fixed #000!important;
+    background: url(/*[[-]]*/)fixed #000!important;
     background-size: cover!important;
   }
 

@@ -6,7 +6,7 @@
 @version        2014427.1.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown ICON SET "Select an icon set" {
+@advanced dropdown ICON-SET "Select an icon set" {
 	Original "Original Icons*" <<<EOT http://i.imgur.com/OuyCw2z.png EOT;
 2014 "2014 Icons" <<<EOT http://i.imgur.com/m8j6LDN.png EOT;
 ridicon "Riddler's Icons" <<<EOT http://i.imgur.com/xfX2M6x.png EOT;
@@ -115,7 +115,7 @@ ridintero "Riddler's Interrogator" <<<EOT background: url("http://i.imgur.com/3z
 @-moz-document domain('epicmafia.com'), url-prefix('http://www.epicmafia.com') {
 
 /*SPRITESHEET GOES HERE*/
-.roleimg { background: url("/*[[ICON SET]]*/") !important; }
+.roleimg { background: url("/*[[ICON-SET]]*/") !important; }
 
 .role-villager { background-position: 0px 0px !important; 
 /*[[blueicon]]*/}

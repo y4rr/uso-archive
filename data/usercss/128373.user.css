@@ -21,7 +21,7 @@ p2 "需要" <<<EOT .header .header-banner
    /* top: 0px;*\/} EOT;
 
 }
-@advanced dropdown logo替换 "logo替换" {
+@advanced dropdown logo-- "logo替换" {
 	p1 "需要*" <<<EOT .header .logo a img
 {    display: block;
     padding-top: 27px;
@@ -36,7 +36,7 @@ p2 "不需要" <<<EOT /*.header .logo a img*\/
  EOT;
 
 }
-@advanced dropdown 猴子推荐 "猴子推荐" {
+@advanced dropdown ---- "猴子推荐" {
 	p1 "不需要*" <<<EOT .wp.area.area-monkey
  {
     display: none !important;
@@ -45,7 +45,7 @@ p2 "需要" <<<EOT /*.wp.area.area-monkey*\/
  EOT;
 
 }
-@advanced dropdown 番剧区 "番剧区" {
+@advanced dropdown --- "番剧区" {
 	p1 "不需要*" <<<EOT .clearfix.column-box.area.area-drama.area5
  {
     display: none !important;
@@ -55,7 +55,7 @@ p2 "需要" <<<EOT /*.clearfix.column-box.area.area-drama.area5*\/
  EOT;
 
 }
-@advanced dropdown 替换推荐位 "替换推荐位" {
+@advanced dropdown ----- "替换推荐位" {
 	p1 "需要*" <<<EOT .area-banana-rank .banana-ad img {
     padding-top: 100px;
     padding-left: 100%;
@@ -68,7 +68,7 @@ p2 "需要" <<<EOT /*.clearfix.column-box.area.area-drama.area5*\/
 p2 "不需要" <<<EOT /*.area-banana-rank .banana-ad img*\/ EOT;
 
 }
-@advanced dropdown 魔改播放页 "魔改播放页" {
+@advanced dropdown ----- "魔改播放页" {
 	p1 "需要*" <<<EOT /*测试*\/
 
 
@@ -194,9 +194,9 @@ a:hover { color: #FFA700 }
 #sub-guide-inner .unit .divider-x { display: none !important; }
 #guide.simple #a-app-guide.tool { display: none !important; }
 /*[[banner]]*/
-/*[[logo替换]]*/
-/*[[猴子推荐]]*/
-/*[[番剧区]]*/
-/*[[替换推荐位]]*/
-/*[[魔改播放页]]*/
+/*[[logo--]]*/
+/*[[----]]*/
+/*[[---]]*/
+/*[[-----]]*/
+/*[[-----]]*/
 }

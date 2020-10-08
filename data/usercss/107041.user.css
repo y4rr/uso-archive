@@ -6,7 +6,7 @@
 @version        2016116.21.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown Avatar Size Blocks "Size of userpics" {
+@advanced dropdown Avatar-Size-Blocks "Size of userpics" {
 	small "small*" <<<EOT     .msg-container img.photo {
         max-height: 60px !important;
         max-width: 60px !important;
@@ -38,17 +38,17 @@ default "default" <<<EOT     .msg-container img.photo {
  EOT;
 
 }
-@advanced dropdown Line Height Block "Line height" {
-	1.5 "1.5*" <<<EOT 1.5 em EOT;
+@advanced dropdown Line-Height-Block "Line height" {
+	1-5 "1.5*" <<<EOT 1.5 em EOT;
 inherit "inherit" <<<EOT inherit EOT;
 
 }
 
 ==/UserStyle== */
 @-moz-document domain("linux.org.ru") {
-    /*[[Avatar Size Blocks]]*/
+    /*[[Avatar-Size-Blocks]]*/
     .msg_body p {
-        line-height: /*[[Line Height Block]]*/ !important;
+        line-height: /*[[Line-Height-Block]]*/ !important;
     }
     html, body {
         background-color: #DCDAD5 !important;

@@ -7,7 +7,7 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown UI "界面" {
-	新版界面 "新版界面*" <<<EOT body{
+	---- "新版界面*" <<<EOT body{
     padding-top:0px!important;}
 #u{
     color:transparent!important;}
@@ -306,7 +306,7 @@
     width:495px!important}
 .nums{
     top:75px} EOT;
-传统界面 "传统界面" <<<EOT #u,#s_tab{
+---- "传统界面" <<<EOT #u,#s_tab{
     height:30px;
     z-index:1000}
 #u{
@@ -521,14 +521,14 @@
 
 }
 @advanced dropdown firefox "传统界面浏览器样式处理" {
-	新版界面或者Chrome,Opera "新版界面或者Chrome,Opera*" <<<EOT  EOT;
-火狐 "火狐" <<<EOT #user+[href$="/gaoji/preferences.html"],#imsg+[href$="/gaoji/preferences.html"]{
+	------Chrome-Opera "新版界面或者Chrome,Opera*" <<<EOT  EOT;
+-- "火狐" <<<EOT #user+[href$="/gaoji/preferences.html"],#imsg+[href$="/gaoji/preferences.html"]{
     margin-top:-29px!important} EOT;
 
 }
 @advanced dropdown transparency "透明样式" {
-	无 "无*" <<<EOT  EOT;
-新版界面 "新版界面" <<<EOT [href$="/gaoji/preferences.html"]{
+	- "无*" <<<EOT  EOT;
+---- "新版界面" <<<EOT [href$="/gaoji/preferences.html"]{
     background-color:rgba(245, 245, 245,.3);
     background-image:-webkit-linear-gradient(top , rgba(245, 245, 245,.4), rgba(241, 241, 241,.4));
     background-image:-moz-linear-gradient(center top , rgba(245, 245, 245,.4), rgba(241, 241, 241,.4));}
@@ -626,7 +626,7 @@ strong~.n{
 #foot{
     background-color:rgba(242,242,242,.7)!important;
     border-top:1px solid rgba(228, 228, 228,.7)!important;} EOT;
-传统界面 "传统界面" <<<EOT #u>a:hover,#u>a:focus,#s_tab>*:hover,#s_tab>*:focus{
+---- "传统界面" <<<EOT #u>a:hover,#u>a:focus,#s_tab>*:hover,#s_tab>*:focus{
     background-color:rgba(252,252,252,0.3)!important}
 #u>span:hover{
     background-color:rgba(255,255,255,0.7)}
@@ -717,7 +717,7 @@ strong~.n{
 
 }
 @advanced dropdown bkImg "背景图片" {
-默认图片 "默认图片*" <<<EOT http://1.su.bdimg.com/skin/56.jpg EOT;
+---- "默认图片*" <<<EOT http://1.su.bdimg.com/skin/56.jpg EOT;
 
 	bkImg-custom-dropdown "Custom" <<<EOT /*[[bkImg-custom]]*\/ EOT;
 }

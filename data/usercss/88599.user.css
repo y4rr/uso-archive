@@ -81,7 +81,7 @@ Yes "Yes" <<<EOT .expando-button.video {
 
 }
 @advanced dropdown ads "Disable ads (or the white spaces left by adblock)?" {
-	No (don't touch my a "No (don't touch my ads).*" <<<EOT .link.promotedlink, .organic-listing .link, .organic-listing .link.promotedlink,.organic-listing .promoted,.organic-listing {
+	No--don-t-touch-my-a "No (don't touch my ads).*" <<<EOT .link.promotedlink, .organic-listing .link, .organic-listing .link.promotedlink,.organic-listing .promoted,.organic-listing {
     padding: 12px 0px !important;
     margin-bottom: -10px !important;
     border-right: none !important;
@@ -99,13 +99,13 @@ Yes "Yes" <<<EOT .expando-button.video {
 .sr-interest-bar{
     margin:0 20px 0 30px !important;
 } EOT;
-Yes. "Yes." <<<EOT .link.promotedlink, .organic-listing, #ad_main {
+Yes- "Yes." <<<EOT .link.promotedlink, .organic-listing, #ad_main {
     display: none !important;
 } EOT;
 
 }
 @advanced dropdown font "What font size do you want ?" {
-	Standart (10px) "Standart (10px)*" <<<EOT 10px EOT;
+	Standart--10px- "Standart (10px)*" <<<EOT 10px EOT;
 11px "11px" <<<EOT 11px EOT;
 12px "12px" <<<EOT 12px EOT;
 13px "13px" <<<EOT 13px EOT;
@@ -114,20 +114,20 @@ Yes. "Yes." <<<EOT .link.promotedlink, .organic-listing, #ad_main {
 }
 @advanced dropdown bigscreen "Limit the size of the content?" {
 	No "No*" <<<EOT /*big screen options*\/ EOT;
-800px FTW! "800px FTW!" <<<EOT max-width : 800px !important;
+800px-FTW- "800px FTW!" <<<EOT max-width : 800px !important;
 margin:65px auto 0 auto !important EOT;
-Yes, 1000px would be "Yes, 1000px would be perfect!" <<<EOT max-width : 1000px !important;
+Yes--1000px-would-be "Yes, 1000px would be perfect!" <<<EOT max-width : 1000px !important;
 margin:65px auto 0 auto !important EOT;
-1200px is great. "1200px is great." <<<EOT max-width : 1200px !important;
+1200px-is-great- "1200px is great." <<<EOT max-width : 1200px !important;
 margin:65px auto 0 auto !important EOT;
 
 }
 @advanced dropdown police "What font do you want?" {
-	Open Sans (sans-seri "Open Sans (sans-serif)*" <<<EOT "Open Sans" EOT;
+	Open-Sans--sans-seri "Open Sans (sans-serif)*" <<<EOT "Open Sans" EOT;
 Verdana "Verdana" <<<EOT verdana EOT;
-Arial (sans-serif) "Arial (sans-serif)" <<<EOT sans serif EOT;
-Georgia (serif) "Georgia (serif)" <<<EOT Georgia EOT;
-Times new Roman (ser "Times new Roman (serif)" <<<EOT "Times new roman" EOT;
+Arial--sans-serif- "Arial (sans-serif)" <<<EOT sans serif EOT;
+Georgia--serif- "Georgia (serif)" <<<EOT Georgia EOT;
+Times-new-Roman--ser "Times new Roman (serif)" <<<EOT "Times new roman" EOT;
 
 }
 

@@ -168,7 +168,7 @@
 #main-window #identity-box[class="verifiedIdentity"] {
     box-shadow: 0 1px 0 rgba(150, 150, 150, .1) inset !important;
     } EOT;
-Blue glow "Blue glow" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
+Blue-glow "Blue glow" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
 #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1 > :-moz-any(.toolbarbutton-menubutton-button, .toolbarbutton-menubutton-dropmarker),
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
@@ -329,7 +329,7 @@ Blue glow "Blue glow" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id
 #main-window #identity-box[class="verifiedIdentity"] {
     box-shadow: 0 1px 0 rgba(100, 100, 100, .1) inset !important;
     } EOT;
-Blue glow, no shadow "Blue glow, no shadows" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
+Blue-glow--no-shadow "Blue glow, no shadows" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
 #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1 > :-moz-any(.toolbarbutton-menubutton-button, .toolbarbutton-menubutton-dropmarker),
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
@@ -471,7 +471,7 @@ Blue glow, no shadow "Blue glow, no shadows" <<<EOT #main-window :-moz-any(#osbT
 .toolbarbutton-menubutton-dropmarker:before {
     display: none !important;
     } EOT;
-Highlight, no shadow "Highlight, no shadows" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
+Highlight--no-shadow "Highlight, no shadows" <<<EOT #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1,
 #main-window :-moz-any(#osbToolbar, [id*="aios"][id*="toolbar"], #vertical-toolbox) .toolbarbutton-1 > :-moz-any(.toolbarbutton-menubutton-button, .toolbarbutton-menubutton-dropmarker),
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #main-window #navigator-toolbox[iconsize=large][mode=icons] #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,

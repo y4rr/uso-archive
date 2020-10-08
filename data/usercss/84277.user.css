@@ -12,8 +12,8 @@
 }
 @advanced text bgimg-custom "請輸入背景圖片網址 (Custom)" "https://example.com/image.png"
 @advanced dropdown zoom "自動調整背景大小" {
-	不調整 "不調整*" <<<EOT auto EOT;
-自動縮放 "自動縮放" <<<EOT cover EOT;
+	--- "不調整*" <<<EOT auto EOT;
+---- "自動縮放" <<<EOT cover EOT;
 
 }
 

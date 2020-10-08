@@ -6,7 +6,7 @@
 @version        2016331.1.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown Which icons? "Which icons are we replacing" {
+@advanced dropdown Which-icons- "Which icons are we replacing" {
 	all "All of the tab icons*" <<<EOT   /*#popover_blogs .tab_notice:after {display:none}*\/
 
   .tab_bar .tab.iconic {padding: 0 6.5px}
@@ -74,11 +74,11 @@ no "No" <<<EOT  EOT;
 @advanced dropdown xkit_which "Which XKit icons?" {
 	xkit "Just the XKit icon*" <<<EOT :not(.xkit-help-forwarder) EOT;
 help "Just the Help (alt- ) icon" <<<EOT .xkit-help-forwarder EOT;
-xkit+help "Both the XKit and Help icons" <<<EOT  EOT;
+xkit-help "Both the XKit and Help icons" <<<EOT  EOT;
 
 }
 
 ==/UserStyle== */
 @-moz-document domain(tumblr.com) {
-/*[[Which icons?]]*/
+/*[[Which-icons-]]*/
 }

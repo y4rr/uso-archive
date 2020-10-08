@@ -15,7 +15,7 @@
   visibility: collapse !important;
 }
 /**\/ EOT;
-Only on tabs overflo "Only on tabs overflow" <<<EOT /* THIS REVEALS List all tabs BUTTON *\/
+Only-on-tabs-overflo "Only on tabs overflow" <<<EOT /* THIS REVEALS List all tabs BUTTON *\/
 #main-window > #tab-view-deck > #browser-panel > #navigator-toolbox > #TabsToolbar > #alltabs-button {
   visibility: visible !important;
 }
@@ -34,16 +34,16 @@ No "Browser default" <<<EOT /* THIS REVEALS List all tabs BUTTON *
 
 }
 @advanced dropdown counter "Tabs counter in 'List all tabs' button?" {
-	Yes (where available "Yes (where available)*" <<<EOT / EOT;
-Counter alone (where "Counter alone (where available)" <<<EOT *\/ EOT;
+	Yes--where-available "Yes (where available)*" <<<EOT / EOT;
+Counter-alone--where "Counter alone (where available)" <<<EOT *\/ EOT;
 No "No" <<<EOT * EOT;
 
 }
 @advanced dropdown docount "'List all tabs' button counter counts" {
-	All tabs "All tabs*" <<<EOT .tabbrowser-tab EOT;
-Not pinned tabs "Not pinned tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([pinned])) EOT;
-Not hidden tabs "Not hidden tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([style="display: none;"])) EOT;
-Not pinned nor hidde "Not pinned nor hidden tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([pinned],[style="display: none;"]))
+	All-tabs "All tabs*" <<<EOT .tabbrowser-tab EOT;
+Not-pinned-tabs "Not pinned tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([pinned])) EOT;
+Not-hidden-tabs "Not hidden tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([style="display: none;"])) EOT;
+Not-pinned-nor-hidde "Not pinned nor hidden tabs" <<<EOT .tabbrowser-tab:not(:-moz-any([pinned],[style="display: none;"]))
  EOT;
 
 }
@@ -69,22 +69,22 @@ No "No" <<<EOT * EOT;
 
 }
 @advanced dropdown maxwidth "Set 'List all tabs' menu max width" {
-	Browser default (mai "Browser default (main screenshot)*" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *
+	Browser-default--mai "Browser default (main screenshot)*" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *
 #main-window > #tab-view-deck > #browser-panel #alltabs-button > #alltabs-popup .menuitem-iconic.alltabs-item.menuitem-with-favicon {
   max-width: 750px !important;
 }
 /**\/ EOT;
-750 px "750 px" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
+750-px "750 px" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
 #main-window > #tab-view-deck > #browser-panel #alltabs-button > #alltabs-popup .menuitem-iconic.alltabs-item.menuitem-with-favicon {
   max-width: 750px !important;
 }
 /**\/ EOT;
-1200 px "1200 px" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
+1200-px "1200 px" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
 #main-window > #tab-view-deck > #browser-panel #alltabs-button > #alltabs-popup .menuitem-iconic.alltabs-item.menuitem-with-favicon {
   max-width: 1200px !important;
 }
 /**\/ EOT;
-No limit "No limit" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
+No-limit "No limit" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
 #main-window > #tab-view-deck > #browser-panel #alltabs-button > #alltabs-popup .menuitem-iconic.alltabs-item.menuitem-with-favicon {
   max-width: 100% !important;
 }
@@ -92,7 +92,7 @@ No limit "No limit" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
 
 }
 @advanced dropdown newtab "Show 'New Tab' button?" {
-	Browser default "Browser default*" <<<EOT /* THIS LET YOU AVOID OCCASIONAL New Tab BUTTON AS A TAB, ALWAYS ALIGNING IT WITH THE REGULAR TAB BAR BUTTONS, OR HIDE IT *
+	Browser-default "Browser default*" <<<EOT /* THIS LET YOU AVOID OCCASIONAL New Tab BUTTON AS A TAB, ALWAYS ALIGNING IT WITH THE REGULAR TAB BAR BUTTONS, OR HIDE IT *
 #main-window > #tab-view-deck > #browser-panel > #navigator-toolbox > #TabsToolbar > #tabbrowser-tabs .tabs-newtab-button[command='cmd_newNavigatorTab'] {
   visibility: collapse !important;
 }
@@ -100,7 +100,7 @@ No limit "No limit" <<<EOT /* THIS SETS List all tabs MENU MAXIMUM WIDTH *\/
   visibility: visible !important;
 }
 /**\/ EOT;
-Always aligned as re "Always aligned as regular tab bar button" <<<EOT /* THIS LET YOU AVOID OCCASIONAL New Tab BUTTON AS A TAB, ALWAYS ALIGNING IT WITH THE REGULAR TAB BAR BUTTONS, OR HIDE IT *\/
+Always-aligned-as-re "Always aligned as regular tab bar button" <<<EOT /* THIS LET YOU AVOID OCCASIONAL New Tab BUTTON AS A TAB, ALWAYS ALIGNING IT WITH THE REGULAR TAB BAR BUTTONS, OR HIDE IT *\/
 #main-window > #tab-view-deck > #browser-panel > #navigator-toolbox > #TabsToolbar > #tabbrowser-tabs .tabs-newtab-button[command='cmd_newNavigatorTab'] {
   visibility: collapse !important;
 }

@@ -382,7 +382,7 @@ light "light" <<<EOT /* no: dark-option *\/ EOT;
 
 }
 @advanced dropdown dark-override-option "dark-mode blanket overrides for:" {
-	non-english & specia "non-english & special pages*" <<<EOT @-moz-document
+	non-english---specia "non-english & special pages*" <<<EOT @-moz-document
 /* Non-english *\/
   regexp('https?:\/\/(?!en\.|www\.|simple\.)[^\?]+(wikipedia|wikimedia|mediawiki|wikibooks|wikidata|wikinews|wikiquote|wikisource|wikiversity|wikivoyage|wiktionary)\.(org|net|com)\/.+'),
     /* pattern: project domains, but not from en, www, simple, or [none].wikipedia, and not the front page (attempt to include all non-english localizations, but will also cover e.g. commons.wikimedia) *\/

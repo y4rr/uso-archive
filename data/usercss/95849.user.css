@@ -7,26 +7,26 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown mail_logo "邮箱logo/头像" {
-随机logo "随机logo*" <<<EOT https://res.kon-mio.com:39999/head/?t=o EOT;
+--logo "随机logo*" <<<EOT https://res.kon-mio.com:39999/head/?t=o EOT;
 
 	mail_logo-custom-dropdown "Custom" <<<EOT /*[[mail_logo-custom]]*\/ EOT;
 }
 @advanced text mail_logo-custom "邮箱logo/头像 (Custom)" "https://example.com/image.png"
 @advanced dropdown mail_bg "背景图" {
-默认·蓝泽光1 "默认·蓝泽光1*" <<<EOT https://res.kon-mio.com:39999/bg/lzg_dy.jpg EOT;
-默认·蓝泽光2 "默认·蓝泽光2" <<<EOT https://res.kon-mio.com:39999/bg/lzg_aj.jpg EOT;
-默认·蓝泽光3 "默认·蓝泽光3" <<<EOT https://res.kon-mio.com:39999/bg/lzg_c.jpg EOT;
-万圣·蓝泽光4 "万圣·蓝泽光4" <<<EOT https://res.kon-mio.com:39999/bg/lzg_ws.jpg EOT;
-圣诞·蓝泽光5 "圣诞·蓝泽光5" <<<EOT https://res.kon-mio.com:39999/bg/lzg_sd.jpg EOT;
-新春·蓝泽光6 "新春·蓝泽光6" <<<EOT https://res.kon-mio.com:39999/bg/lzg_xc.jpg EOT;
-樱花·蓝泽光7 "樱花·蓝泽光7" <<<EOT https://res.kon-mio.com:39999/bg/lzg_chun.jpg EOT;
+------1 "默认·蓝泽光1*" <<<EOT https://res.kon-mio.com:39999/bg/lzg_dy.jpg EOT;
+------2 "默认·蓝泽光2" <<<EOT https://res.kon-mio.com:39999/bg/lzg_aj.jpg EOT;
+------3 "默认·蓝泽光3" <<<EOT https://res.kon-mio.com:39999/bg/lzg_c.jpg EOT;
+------4 "万圣·蓝泽光4" <<<EOT https://res.kon-mio.com:39999/bg/lzg_ws.jpg EOT;
+------5 "圣诞·蓝泽光5" <<<EOT https://res.kon-mio.com:39999/bg/lzg_sd.jpg EOT;
+------6 "新春·蓝泽光6" <<<EOT https://res.kon-mio.com:39999/bg/lzg_xc.jpg EOT;
+------7 "樱花·蓝泽光7" <<<EOT https://res.kon-mio.com:39999/bg/lzg_chun.jpg EOT;
 
 	mail_bg-custom-dropdown "Custom" <<<EOT /*[[mail_bg-custom]]*\/ EOT;
 }
 @advanced text mail_bg-custom "背景图 (Custom)" "https://example.com/image.png"
 @advanced dropdown font_type "默认字体" {
-	宋体（更清晰） "宋体（更清晰）*" <<<EOT Simsun EOT;
-微软雅黑 "微软雅黑" <<<EOT Microsoft YaHei EOT;
+	------- "宋体（更清晰）*" <<<EOT Simsun EOT;
+---- "微软雅黑" <<<EOT Microsoft YaHei EOT;
 
 }
 

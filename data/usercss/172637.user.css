@@ -6,7 +6,7 @@
 @version        2019610.21.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
-@advanced dropdown max.width "Width" {
+@advanced dropdown max-width "Width" {
 	100p "Full width*" <<<EOT 100% EOT;
 90p "90%" <<<EOT 90% EOT;
 80p "80%" <<<EOT 80% EOT;
@@ -19,7 +19,7 @@
 ==/UserStyle== */
 @-moz-document domain("stackoverflow.com") {
 .container {
-    max-width: /*[[max.width]]*/ !important;
+    max-width: /*[[max-width]]*/ !important;
 }
 #content {
     margin: unset;

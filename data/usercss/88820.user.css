@@ -8,7 +8,7 @@
 @preprocessor   uso
 @advanced dropdown toc-option "glue table of contents to bottom-left?" {
 	no "no*" <<<EOT /* no: toc-option *\/ EOT;
-yes [dark mode] "yes [dark mode]" <<<EOT   /* toc-option dark
+yes--dark-mode- "yes [dark mode]" <<<EOT   /* toc-option dark
   ***********************\/
   body {
     position: relative!important;
@@ -39,7 +39,7 @@ yes [dark mode] "yes [dark mode]" <<<EOT   /* toc-option dark
     z-index: 30!important;
   }
  EOT;
-yes [light mode] "yes [light mode]" <<<EOT   /* toc-option light
+yes--light-mode- "yes [light mode]" <<<EOT   /* toc-option light
   ***********************\/
   body {
     position: relative!important;
@@ -74,7 +74,7 @@ yes [light mode] "yes [light mode]" <<<EOT   /* toc-option light
 }
 @advanced dropdown bg-option "custom background:" {
 	disabled "disabled*" <<<EOT /* no: bg-option *\/ EOT;
-enabled [dark mode] "enabled [dark mode]" <<<EOT   /* Custom Background
+enabled--dark-mode- "enabled [dark mode]" <<<EOT   /* Custom Background
   ***********************\/
     body[class] {
       background-image: url('/*[[bg-url-option]]*\/')!important;
@@ -141,7 +141,7 @@ enabled [dark mode] "enabled [dark mode]" <<<EOT   /* Custom Background
           border-radius: 7px 7px 0px 0px!important;
         }
  EOT;
-enabled [light mode] "enabled [light mode]" <<<EOT   /* Custom Background
+enabled--light-mode- "enabled [light mode]" <<<EOT   /* Custom Background
   ***********************\/
     body[class] {
       background-image: url('/*[[bg-url-option]]*\/')!important;
@@ -217,13 +217,13 @@ enabled [light mode] "enabled [light mode]" <<<EOT   /* Custom Background
 
 }
 @advanced dropdown bg-url-option "custom background URL (if enabled):" {
-[dark] orbit fantasy "[dark] orbit fantasy*" <<<EOT http://i.imgur.com/Wbv11P4.jpg EOT;
-[dark] planet fantas "[dark] planet fantasy" <<<EOT http://i.imgur.com/X36wDsg.jpg EOT;
-[dark] cityscape fan "[dark] cityscape fantasy" <<<EOT http://i.imgur.com/aeGl2mZ.jpg EOT;
-[dark] in the matrix "[dark] in the matrix" <<<EOT http://i.imgur.com/KaYiCdo.jpg EOT;
-[light] snow bokeh "[light] snow bokeh" <<<EOT http://i.imgur.com/kmdVnUT.jpg EOT;
-[light] underwater "[light] underwater" <<<EOT http://i.imgur.com/rRC01jL.gif EOT;
-[light] moss "[light] moss" <<<EOT http://i.imgur.com/xMeDYnN.jpg EOT;
+-dark--orbit-fantasy "[dark] orbit fantasy*" <<<EOT http://i.imgur.com/Wbv11P4.jpg EOT;
+-dark--planet-fantas "[dark] planet fantasy" <<<EOT http://i.imgur.com/X36wDsg.jpg EOT;
+-dark--cityscape-fan "[dark] cityscape fantasy" <<<EOT http://i.imgur.com/aeGl2mZ.jpg EOT;
+-dark--in-the-matrix "[dark] in the matrix" <<<EOT http://i.imgur.com/KaYiCdo.jpg EOT;
+-light--snow-bokeh "[light] snow bokeh" <<<EOT http://i.imgur.com/kmdVnUT.jpg EOT;
+-light--underwater "[light] underwater" <<<EOT http://i.imgur.com/rRC01jL.gif EOT;
+-light--moss "[light] moss" <<<EOT http://i.imgur.com/xMeDYnN.jpg EOT;
 
 	bg-url-option-custom-dropdown "Custom" <<<EOT /*[[bg-url-option-custom]]*\/ EOT;
 }
@@ -299,12 +299,12 @@ pt "pt" <<<EOT pt EOT;
 ru "ru" <<<EOT ru EOT;
 simple "simple" <<<EOT simple EOT;
 zh "zh" <<<EOT zh EOT;
-Other: select this,  "Other: select this, install, then search and replace \"otherlanguagehere\" in the code" <<<EOT otherlanguagehere EOT;
+Other--select-this-- "Other: select this, install, then search and replace \"otherlanguagehere\" in the code" <<<EOT otherlanguagehere EOT;
 
 }
 @advanced dropdown lol-option " add 'lol' at the end of editors' notes? " {
 	no "no*" <<<EOT /* no: lol *\/ EOT;
-yes lol "yes lol" <<<EOT   /* lol
+yes-lol "yes lol" <<<EOT   /* lol
   ***********************\/
     sup.Template-Fact i a span:after,
     sup.Inline-Template span:after {
@@ -314,8 +314,8 @@ yes lol "yes lol" <<<EOT   /* lol
 
 }
 @advanced dropdown jimmy-eyes-option " add Jimmy Wales' eyes burning into your soul on every page? " {
-	wtf no "wtf no*" <<<EOT /* no: jimmy's entrancing eyes *\/ EOT;
-.... I need this bac ".... I need this back in my life" <<<EOT   /* Jimmy's eyes
+	wtf-no "wtf no*" <<<EOT /* no: jimmy's entrancing eyes *\/ EOT;
+-----I-need-this-bac ".... I need this back in my life" <<<EOT   /* Jimmy's eyes
   ***********************\/
     body > #mw-head-base /* specificity override *\/ {
       background-image: url('http://i.imgur.com/b25R55D.png')!important;

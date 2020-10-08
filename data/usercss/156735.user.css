@@ -12,9 +12,9 @@
 @advanced color Border "Border" #3C414C
 @advanced color Link "Link" #4B97F8
 @advanced color Highlight "Highlight" #6A25AA
-@advanced color Primary Text "Primary Text" #EBEBEB
-@advanced color Secondary Text "Secondary Text" #BEBEBE
-@advanced color Tertiary Text "Tertiary Text" #888888
+@advanced color Primary-Text "Primary Text" #EBEBEB
+@advanced color Secondary-Text "Secondary Text" #BEBEBE
+@advanced color Tertiary-Text "Tertiary Text" #888888
 
 ==/UserStyle== */
 /*
@@ -34,45 +34,45 @@ Tertiary Text: #888888
 @-moz-document domain("visualstudio.com")
 {
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
         opacity: 1 !important; /* Firefox */
     }
 
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     ::-ms-input-placeholder { /* Microsoft Edge */
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     body, html {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     label, legend {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     h1,h2,h3,h4,h5,h6 {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     button {
         background: /*[[Tertiary]]*/ !important;
         border-color: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     button[disabled] {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     code, pre {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border: 1px solid /*[[Border]]*/ !important;
     }
 
@@ -83,7 +83,7 @@ Tertiary Text: #888888
     input, textarea, select, option {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     a {
@@ -101,7 +101,7 @@ Tertiary Text: #888888
     button.ui-state-default, button.ui-button {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .content-section {
@@ -110,7 +110,7 @@ Tertiary Text: #888888
 
     .ms-Fabric,
     .ms-Fabric {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-List-cell {
@@ -120,19 +120,19 @@ Tertiary Text: #888888
     .ms-DetailsRow {
         border-color: /*[[Border]]*/ !important;
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-List-surface,
     .ms-List-page {
         border-color: /*[[Border]]*/ !important;
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-DetailsList {
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Primary]]*/ !important;
     }
 
@@ -141,16 +141,16 @@ Tertiary Text: #888888
     }
 
     .no-additional-teams {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .menu-item {
-         color: /*[[Primary Text]]*/ !important; 
+         color: /*[[Primary-Text]]*/ !important; 
     }
 
     .sub-menu {
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Primary]]*/ !important;
         box-shadow: none !important;
         border-left: 1px solid /*[[Border]]*/ !important;
@@ -163,18 +163,18 @@ Tertiary Text: #888888
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
         box-shadow: none !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vsts-header .l1-menubar.menu-bar>.menu-item, .vsts-header .l1-menubar.menu-bar>.menu-item-container>.menu-item {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .text-separator,
     .vsts-header .sub-menu .menu-item-separator.with-text>.text-separator, 
     .vsts-header .sub-menu.second-level-menu .menu-item-separator>.text-separator
     {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     body.my-experience-page .vsts-header .hub-selector .hubs-menubar.menu-bar>.menu-item.focus, body.my-experience-page .vsts-header .hub-selector .hubs-menubar.menu-bar>.menu-item.hover, body.my-experience-page .vsts-header .hub-selector .hubs-menubar.menu-bar>.menu-item-container>.menu-item.focus, body.my-experience-page .vsts-header .hub-selector .hubs-menubar.menu-bar>.menu-item-container>.menu-item.hover, body.my-experience-page .vsts-header .right-menu-bar.menu-bar>.menu-item.focus, body.my-experience-page .vsts-header .right-menu-bar.menu-bar>.menu-item.hover, body.my-experience-page .vsts-header .right-menu-bar.menu-bar>.menu-item-container>.menu-item.focus, body.my-experience-page .vsts-header .right-menu-bar.menu-bar>.menu-item-container>.menu-item.hover {
@@ -182,22 +182,22 @@ Tertiary Text: #888888
     }
 
     .title {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .hub-group, .hub-group-header, .title {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .hub-pivot-content {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-list-collapsible-tab .vc-pullRequest-collapsible-list-section .collapsible-details-list .ms-List-cell .vc-pullrequests-list-head .header-button .ms-Icon, 
     .vc-pullrequest-list-collapsible-tab .vc-pullRequest-collapsible-list-section .collapsible-details-list .ms-List-cell .vc-pullrequests-list-head .header-button .ms-Button-label {
-         color: /*[[Primary Text]]*/ !important;
+         color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-list-collapsible-tab .vc-pullRequest-collapsible-list-section .collapsible-details-list .ms-List-cell .ms-List-cell:hover a,
@@ -218,7 +218,7 @@ Tertiary Text: #888888
     {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-list-collapsible-tab .vc-pullRequest-collapsible-list-section .collapsible-details-list .ms-List-cell .ms-List-cell {
@@ -247,11 +247,11 @@ Tertiary Text: #888888
     }
 
     .rootIsSelected_614e9765:hover .cell_614e9765 {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-DetailsList.ms-DetailsList .ms-List-cell .ms-DetailsRow .ms-DetailsRow-cell {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .tree .tree-row,
@@ -260,37 +260,37 @@ Tertiary Text: #888888
     }
 
     .vc-tree-cell .file-name {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-DetailsHeader,
     .ms-DetailsHeader-cell,
     ms-DetailsHeader-cell:hover {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .ms-DetailsHeader .ms-Icon,
     .ms-DetailsHeader-cell .ms-Icon
     {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-Callout-container,
     .ms-Callout-main,
     .ms-Callout {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .author {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .stat-badge, .stat-text {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     a.stat-badge .bowtie-icon, a:link.stat-badge .bowtie-icon, a:visited.stat-badge .bowtie-icon {
@@ -298,7 +298,7 @@ Tertiary Text: #888888
     }
 
     .tags-name {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .tags-icon {
@@ -309,7 +309,7 @@ Tertiary Text: #888888
     .ms-DatePicker,
     .identity-picker-filter-container .identity-picker-control-container {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
@@ -319,18 +319,18 @@ Tertiary Text: #888888
 
     .path-editing-div {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .path-explorer .folder, .overflow-flyout-content .folder,
     .path-explorer .last-part {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-branches-container {
         background: transparent !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
@@ -367,14 +367,14 @@ Tertiary Text: #888888
 
     .ms-Dropdown-title {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Primary]]*/ !important;
     }
 
     .vss-Icon,
     .ms-Button-icon,
     .ms-Dropdown-caretDown {
-         color: /*[[Primary Text]]*/ !important;
+         color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-Tooltip,
@@ -382,7 +382,7 @@ Tertiary Text: #888888
     .beak_94b2203b,
     div.rich-content-tooltip.v2 .popup-content-container {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
@@ -393,11 +393,11 @@ Tertiary Text: #888888
 
     .ms-Tooltip-content {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .menu-item-icon {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .handleBar,
@@ -416,7 +416,7 @@ Tertiary Text: #888888
     .ms-DatePicker-monthOption,
     .ms-DatePicker-day,
     .ms-DatePicker-weekday {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     ms-DatePicker-day--today {
@@ -441,7 +441,7 @@ Tertiary Text: #888888
     }
 
     .empty-result .empty-detailed-message {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .splitter.toggle-button-enabled.collapsed>.handleBar {
@@ -459,7 +459,7 @@ Tertiary Text: #888888
     .two-line-view,
     .second-line,
     .header-secondary-text {
-         color: /*[[Secondary Text]]*/ !important;
+         color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vsts-header .hub-list .l2-menubar>.menu-item.currently-selected, .vsts-header .hub-list .l2-menubar>.menu-item-container>.menu-item.currently-selected {
@@ -469,42 +469,42 @@ Tertiary Text: #888888
     .vc-newbranches-view .hub-pivot {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-grey-branch-badge {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Tertiary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .vc-message-bar {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Tertiary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .bowtie-search,
     .bowtie-edit-remove {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .filtered-list-popup .filtered-list-control.vc-git-selector,
     .filtered-list-popup {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .filtered-list-item.new-selection {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border: none !important;
     }
 
 
     .filtered-list-control.bowtie-filtered-list .filtered-list>li>.bowtie-favorite-outline {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .tag-cell-content .tag-icon {
@@ -516,7 +516,7 @@ Tertiary Text: #888888
     }
 
     .secondary-text {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-pullRequest-list-section .ms-List-cell:hover a, .vc-pullRequest-list-section .ms-List-cell:hover a:link, .vc-pullRequest-list-section .ms-List-cell:hover a:visited,
@@ -542,17 +542,17 @@ Tertiary Text: #888888
     }
 
     .path-explorer .input-info-text {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
         background: /*[[Primary]]*/ !important;
     }
 
     .filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list-tab-content .filtered-list>li.current-item {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .filtered-list-control.bowtie-filtered-list .filtered-list-tab>a {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .changelist-title,
@@ -561,19 +561,19 @@ Tertiary Text: #888888
     .authored-date,
     .ms-Label, 
     .show-more-text {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-change-summary .changed-files-summary-header {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-change-summary-files .files-container {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-change-summary-files .file-container {
@@ -582,16 +582,16 @@ Tertiary Text: #888888
     }
 
     .vc-change-summary-files .file-cell .file-path {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-diff-viewer .code-line {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-change-summary-files .file-row .file-icon.bowtie-icon,
     .vc-diff-viewer .ln-o, .vc-diff-viewer .ln-m {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-diff-viewer .diff-message {
@@ -609,11 +609,11 @@ Tertiary Text: #888888
     }
 
     .monaco-editor, .monaco-editor .inputarea.ime-input {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .code-editor-host .monaco-editor.vs .line-numbers {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .monaco-editor .margin {
@@ -621,11 +621,11 @@ Tertiary Text: #888888
     }
 
     .mtk1 {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .mtk5 {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .mtk6 {
@@ -640,7 +640,7 @@ Tertiary Text: #888888
     }
 
     .mtk12 {
-        color: /*[[Secondary Text]]*/;
+        color: /*[[Secondary-Text]]*/;
     }
 
     .mtk17 {
@@ -659,7 +659,7 @@ Tertiary Text: #888888
     .centerPane-static {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-activity-body,
@@ -669,41 +669,41 @@ Tertiary Text: #888888
     .vc-pullrequest-activity-box {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .tabContent-two-pane > .with-background, 
     .vc-pullrequest-review-view .tabContent-two-pane-no-full-page-scroll > .with-background {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .discussion-renderedcontent {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-MessageBar-innerText {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-discussion-comment-author {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .file-full-path,
     .vc-discussion-comment-date {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .timeline-icon-badge {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         outline: none !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-feed-last-visit {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
@@ -717,7 +717,7 @@ Tertiary Text: #888888
 
     .discussion-renderedcontent,
     .bowtie p {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-feed .vc-pullrequest-activity-box .timeline-icon-line {
@@ -725,29 +725,29 @@ Tertiary Text: #888888
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-feed .vc-pullrequest-activity-box .timeline-icon-dot {
-        border: 2px solid /*[[Primary Text]]*/ !important;
+        border: 2px solid /*[[Primary-Text]]*/ !important;
         outline: 4px solid /*[[Secondary]]*/ !important;
-        background: /*[[Primary Text]]*/ !important;
+        background: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-feed .vc-pullrequest-activity-box .timeline-icon-badge {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Secondary]]*/ !important;
         outline: 6px solid /*[[Secondary]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-feed .vc-pullrequest-activity-box .timeline-icon {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .activity-card-timestamp {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box .vc-discussion-thread-comment .vc-discussion-thread-status-area, .vc-pullrequest-review-view .vc-pullrequest-activity-box.file-comment .vc-discussion-thread-box .vc-discussion-thread-comment .vc-discussion-thread-status-area {
         background: transparent !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-discussion-comment-likes .likes-button:hover .ms-Button-icon {
@@ -772,7 +772,7 @@ Tertiary Text: #888888
     }
 
     .link-button {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: transparent !important;
         border: none !important;
     }
@@ -783,7 +783,7 @@ Tertiary Text: #888888
 
     .inline-edit-button .bowtie-icon:not(.is-disabled),
     .vc-pullrequest-review-view .vc-pullrequest-leftpane-section-title .title-content.title-action-container .bowtie-icon:not(.is-disabled) {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .inline-edit-button:hover .bowtie-icon:not(.is-disabled),
@@ -807,11 +807,11 @@ Tertiary Text: #888888
     .bowtie-fabric .bowtie-icon.disabled, 
     .bowtie-fabric .bowtie-icon:disabled {
         opacity: 1 !important;
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .vc-pullrequest-via-button {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: transparent !important;
         border: none !important;
     }
@@ -822,15 +822,15 @@ Tertiary Text: #888888
     .ms-Dialog-inner {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-Checkbox-text {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .ms-Checkbox-checkbox {
-        border-color: /*[[Secondary Text]]*/ !important;
+        border-color: /*[[Secondary-Text]]*/ !important;
     }
 
     .callout {
@@ -841,7 +841,7 @@ Tertiary Text: #888888
     .markdown-statusbar {
         background: /*[[Tertiary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .identity-picker-resolved-bg, 
@@ -850,7 +850,7 @@ Tertiary Text: #888888
     }
 
     .identity-picker-resolved .identity-picker-resolved-close-icon {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .identity-picker-resolved .identity-picker-resolved-close:hover .identity-picker-resolved-close-icon {
@@ -862,7 +862,7 @@ Tertiary Text: #888888
     }
 
     .identity-picker-resolved-name  {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-change-summary > * {
@@ -882,7 +882,7 @@ Tertiary Text: #888888
     .ms-Button--primary {
         background: /*[[Tertiary]]*/ !important;
         border: 1px solid /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .files-main-viewer-container {
@@ -898,7 +898,7 @@ Tertiary Text: #888888
     .rendered-markdown,
     .upsell-section {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
@@ -909,7 +909,7 @@ Tertiary Text: #888888
     .name,
     .upsell-description,
     .metric-title {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .tree-more-actions-button {
@@ -925,7 +925,7 @@ Tertiary Text: #888888
     }
 
     .vc-pullrequest-activity-date {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-discussion-thread-status-menu-button {
@@ -933,7 +933,7 @@ Tertiary Text: #888888
     }
 
     .is-disabled {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .pullrequest-updates-content {
@@ -941,7 +941,7 @@ Tertiary Text: #888888
     }
 
     .ms-CommandBarItem-chevronDown {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-CommandBarItem-link {
@@ -949,7 +949,7 @@ Tertiary Text: #888888
     }
 
     .bowtie-view-full-screen {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .filtered-list-control.bowtie-filtered-list .filtered-list-tab>a:focus::after, .filtered-list-control .filtered-list>li.new-selection::after {
@@ -961,11 +961,11 @@ Tertiary Text: #888888
     }
 
     .vc-pullrequest-leftpane-section-subhead {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .pullrequest-id-text {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-discussion-thread-status-area {
@@ -1010,7 +1010,7 @@ Tertiary Text: #888888
     }
 
     .ms-Dialog-subText {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .ms-TextField-fieldGroup {
@@ -1025,7 +1025,7 @@ Tertiary Text: #888888
     .ms-TextField-field {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .filtered-list-dropdown-menu,
@@ -1035,7 +1035,7 @@ Tertiary Text: #888888
     .filter-comboBox-container {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vss-PickListDropdown--title:hover {
@@ -1044,12 +1044,12 @@ Tertiary Text: #888888
 
     .vss-PickList .vss-PickList--element.is-selected {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-PickList .vss-PickList--element:hover {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .search-PickList--button.is-disabled,
@@ -1057,34 +1057,34 @@ Tertiary Text: #888888
     .filter-comboBox-container .is-disabled {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .file-name  {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .code-search-cell .hits {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .code-search-cell .cell-content,
     .code-search-cell .cell-header .project-repo-info {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .search-box-v2 {
         border-color: /*[[Border]]*/ !important;
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .search-Context-label {
         border-color: /*[[Border]]*/ !important;
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .file-contents-menu,
@@ -1101,7 +1101,7 @@ Tertiary Text: #888888
     .search-NoResultsPage--container .no-results {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .grid-row-hover,
@@ -1111,13 +1111,13 @@ Tertiary Text: #888888
     }
 
     .grid-cell {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .grid-header-column {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .combo,
@@ -1125,14 +1125,14 @@ Tertiary Text: #888888
     .combo-drop-popup {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .grid-context-menu-container,
     .grid-context-menu {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-CommandBarItem-link:hover {
@@ -1141,13 +1141,13 @@ Tertiary Text: #888888
 
     .tag-box, .tag-box-selectable {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .conflict-footer {
         background: transparent !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .commandbar[aria-label="Secondary"],
@@ -1162,7 +1162,7 @@ Tertiary Text: #888888
 
     .commandbar[aria-label="Primary"],
     .commandbar[aria-label="Primary"] .commandbar-item a {
-     color: /*[[Primary Text]]*/ !important;
+     color: /*[[Primary-Text]]*/ !important;
     }
 
     .command-action {
@@ -1172,18 +1172,18 @@ Tertiary Text: #888888
     .popup-content-container {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .clone-to-computer-section .protip-section .protip-text,
     #getting-started-clone-popup .subtitle-text {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .quickstart {
         background: /*[[Secondary]]*/ !important;
         border-color: /*[[Border]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands {
@@ -1192,32 +1192,32 @@ Tertiary Text: #888888
 
     .vertical-layout .region-navigation {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item:hover:not(.unselectable):not(.alt-hover-effect).secondary
     .vertical-layout .navigation-commands .commandbar-item:hover:not(.unselectable):not(.alt-hover-effect)
     .vertical-layout .navigation-commands .commandbar-item.selected:not(.child-actions):not(.alt-hover-effect), .vertical-layout .navigation-commands .commandbar-item.selected.child-actions:focus:not(.alt-hover-effect) {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item.primary .commandbar-item-link .commandbar-item-text {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-FocusZone {
         background: transparent !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .ms-ContextualMenu-icon {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-Breadcrumb .vss-Breadcrumb--item .vss-Breadcrumb--itemContainer:hover,
@@ -1227,21 +1227,21 @@ Tertiary Text: #888888
 
     .vertical-layout .region-header {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-Breadcrumb .vss-Breadcrumb--light,
     .vss-Breadcrumb .vss-Breadcrumb--divider.vss-Breadcrumb--divider-light {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item.project-item .commandbar-item-text,
     .vertical-layout .region-header .suite-logo .brand {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-folder-content .change-cell .change-author {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item.secondary::before, .vertical-layout .navigation-commands .commandbar-item.primary.displayed::before {
@@ -1260,21 +1260,21 @@ Tertiary Text: #888888
     }
 
     .vc-page-title {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .push-info-bottom-line {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .vertical-layout .region-header .commandbar-item {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .region-header .search,
     .vertical-layout .region-header .search.focus {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vertical-layout .region-header .commandbar-item:not(.suite-logo):hover, .vertical-layout .region-header .commandbar-item:not(.suite-logo).selected {
@@ -1282,7 +1282,7 @@ Tertiary Text: #888888
     }
 
     .search-filter-caption {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .search-filter-expander,
@@ -1291,7 +1291,7 @@ Tertiary Text: #888888
     }
 
     .search-help {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .search-filter-item:hover, .search-filter-item:focus {
@@ -1301,17 +1301,17 @@ Tertiary Text: #888888
     .identity-picker-dropdown,
     .identity-picker-dropdown > ul.items > li:hover, .identity-picker-dropdown .search {
         background: /*[[Secondary]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .identity-picker-dropdown > ul.items > li:hover, .identity-picker-dropdown .search:hover {
         background: /*[[Tertiary]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .identity-picker-dropdown .search-result-status,
     .identity-picker-dropdown > ul.items > li div.subtitle {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vertical-layout .navigation-commands .commandbar-item.secondary.displayed, .vertical-layout .navigation-commands .commandbar-item.primary.displayed.no-child,
@@ -1325,56 +1325,56 @@ Tertiary Text: #888888
     }
 
     .navigation-commands-menu .ms-ContextualMenu-item i:not(.ms-ContextualMenu-submenuIcon) {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .vc-diff-viewer .text-diff-container .diff-lines .discussion-filler {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .search-InProgress--overlay,
     .search-ZeroData--container .zero-data {
         background: /*[[Primary]]*/ !important; 
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .filter-ComboBox--container.is-disabled, .filter-ComboBox--container .is-disabled,
     .search-PathSelector--container.is-disabled, .search-PathSelector--container .is-disabled {
         background: /*[[Secondary]]*/ !important; 
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .search-inputBoxLarge .search-context--label {
         background: /*[[Tertiary]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .search-inputBoxLarge .input--container .searchBox,
     .code-search-cell.is-active, .code-search-cell:hover, .code-search-cell:focus {
         background: /*[[Secondary]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;
     }
 
     .resultsInfo--container .info-message,
     .resultsInfo--container {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         border-color: /*[[Border]]*/ !important;  
     }
 
     .search-pivot-item-linkContent .badge,
     .vss-FilterBar .vss-FilterBar--list .vss-FilterBar--right-items .vss-FilterBar--action .vss-FilterBar--filter-count {
         background: /*[[Tertiary]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .search-inputBoxLarge .input--container .search-icon {
         background: /*[[Link]]*/ !important; 
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .search-Page .search-commandbar--container .commandbar--seperator {
@@ -1387,11 +1387,11 @@ Tertiary Text: #888888
     }
 
     .search-help .search-filter-group-caption {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .searchBox .remove-icon {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Tertiary]]*/ !important; 
     }
 
@@ -1408,12 +1408,12 @@ Tertiary Text: #888888
     .search-Callout .search-Callout-inner,
     .search-Callout .search-Callout-inner .search-Callout-subText,
     .search-Callout .search-Callout-header .search-Callout-title {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .search-PickListMenu,
     .search-PickListMenu .footer-message {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
         background: /*[[Primary]]*/ !important; 
     }
     
@@ -1423,7 +1423,7 @@ Tertiary Text: #888888
     
     .item_7f8507f5:hover {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .code-editor-host .search-hit-highlighted-line{
@@ -1436,24 +1436,24 @@ Tertiary Text: #888888
     
     .menuIcon-81,
     .ms-Button-textContainer .ms-Button-menuIcon {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .suite-me-page-view .suite-project-list .project-card {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .suite-me-page-view .suite-project-list .project-card .project-description {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .suite-me-page-view .project-list .project-info .project-details {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .suite-me-page-view .project-list .project-link .project-details .project-description {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .suite-me-page-view .project-list .project-info {
@@ -1466,15 +1466,15 @@ Tertiary Text: #888888
 
     .vertical-layout .region-navigation .organization-navigation {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .markdowntoolbar-container .markdowntoolbar button i {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .markdowntoolbar-container .markdowntoolbar button i {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-pullrequest-activity-header .file-icon,
@@ -1484,11 +1484,11 @@ Tertiary Text: #888888
     .vc-pullrequest-review-view .vc-pullrequest-file-bar > .file-icon.bowtie-icon,
     .file-icon,
     .collapse-icon {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .vc-change-summary-files .item-details .item-details-header {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .monaco-diff-editor.side-by-side .editor.modified {
@@ -1496,23 +1496,23 @@ Tertiary Text: #888888
     }
     
     .metrics-section .header {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .metrics-section .individual-metric {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .navigation-commands-menu .navigation-menu-header .ms-ContextualMenu-header {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .metrics-section .value {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
     
     .icon-black {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
     
     .global-message-banner {
@@ -1536,7 +1536,7 @@ Tertiary Text: #888888
         box-shadow: none;
     }
     .code-metric-tile .count-and-text .text {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .code-metric-tile .code-icon {
@@ -1545,16 +1545,16 @@ Tertiary Text: #888888
 
     .project-members-title .sub-title {
         background: /*[[Link]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .project-languages .tag-list-control li.tag-item div.tag-item-box.readonly {
         background: /*[[Link]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .visibility-tag-container .visibility-tag {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     button.dashboard-name-title,
@@ -1565,20 +1565,20 @@ Tertiary Text: #888888
     .vss-PickList .vss-PickList--actions .vss-PickList--action, 
     .vss-PickList .vss-PickList--actions .vss-PickList--action {
         background: /*[[Primary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-PickList .vss-PickList--actions .vss-PickList--action:focus, 
     .vss-PickList .vss-PickList--actions .vss-PickList--action:hover {
         background: /*[[Tertiary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     button.is-disabled,
     button.is-disabled .vss-Icon, 
     button.is-disabled .ms-Button-icon, 
     button.is-disabled .ms-Dropdown-caretDown {
-        color: /*[[Tertiary Text]]*/ !important;
+        color: /*[[Tertiary-Text]]*/ !important;
     }
 
     .dashboards-directory-mine .my-dashboards-list-header:hover {
@@ -1590,11 +1590,11 @@ Tertiary Text: #888888
     }
 
     .code-search-cell .cell-content .text-content-container {
-        color: /*[[Secondary Text]]*/ !important;
+        color: /*[[Secondary-Text]]*/ !important;
     }
 
     .search-PickList .search-PickList--button .search-PickList--label {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .vss-SearchFilterBar .vss-FilterBar--list .vss-FilterBar--right-items .vss-FilterBar--action .vss-FilterBar--filter-count {
@@ -1604,16 +1604,16 @@ Tertiary Text: #888888
     .path-Menu--container {
         background: /*[[Primary]]*/ !important;
         border-color: /*[[Border]]*/!important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .path-Menu--container .path-List .path-Element.highlighted {
         background: /*[[Secondary]]*/ !important;
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .tree-dropdown .message {
-        color: /*[[Primary Text]]*/ !important;
+        color: /*[[Primary-Text]]*/ !important;
     }
 
     .code-search-cell {
@@ -1627,30 +1627,30 @@ Tertiary Text: #888888
 body, html {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 label, legend {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button {
     background: /*[[Tertiary]]*/ !important;
     border-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button[disabled] {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
 }
 
 code, pre {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
 }
 
@@ -1661,7 +1661,7 @@ img {
 input, textarea, select, option {
     background: transparent !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 a {
@@ -1675,7 +1675,7 @@ a:hover {
 td, tr, th {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 }
 
@@ -1685,30 +1685,30 @@ td, tr, th {
 body, html {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 label, legend {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button {
     background: /*[[Tertiary]]*/ !important;
     border-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button[disabled] {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
 }
 
 code, pre {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
 }
 
@@ -1719,7 +1719,7 @@ img {
 input, textarea, select, option {
     background: transparent !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 a {
@@ -1733,11 +1733,11 @@ a:hover {
 td, tr, th {
     background: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .message-background {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 }

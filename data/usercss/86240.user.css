@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown ct "1. Custom Text:" {
-	Default: no "Default: no*" <<<EOT  EOT;
- Yes (must use below " Yes (must use below for effects)" <<<EOT a.bbp-breadcrumb-home {
+	Default--no "Default: no*" <<<EOT  EOT;
+-Yes--must-use-below " Yes (must use below for effects)" <<<EOT a.bbp-breadcrumb-home {
     color: /*[[txtmain]]*\/ !important;
 }
 
@@ -384,8 +384,8 @@ span.user-nicename {
 @advanced color txtmain2 "     b. Color of secondary" #B924C4
 @advanced color textmain3 "     c. Third color for more flexibility" #800080
 @advanced dropdown linkc "2. Link color" {
-	Default or none if u "Default or none if using custom text*" <<<EOT  EOT;
-Yes: use Link Color  "Yes: use Link Color below" <<<EOT a:link {
+	Default-or-none-if-u "Default or none if using custom text*" <<<EOT  EOT;
+Yes--use-Link-Color- "Yes: use Link Color below" <<<EOT a:link {
    color: /*[[lc]]*\/ !important;
 }
 div.category h3 {
@@ -396,24 +396,24 @@ div.category h3 {
 }
 @advanced color lc "     a. Link Color" #8722A1
 @advanced dropdown hoverc "3. Link Hover animation" {
-	Default: none if usi "Default: none if using custom text color*" <<<EOT  EOT;
-Yes: use Hover Color "Yes: use Hover Color below to pick" <<<EOT  a:hover {
+	Default--none-if-usi "Default: none if using custom text color*" <<<EOT  EOT;
+Yes--use-Hover-Color "Yes: use Hover Color below to pick" <<<EOT  a:hover {
     color: /*[[hv]]*\/ !important;
 } EOT;
 
 }
 @advanced color hv "     a. Hover Color" #C2C2C2
 @advanced dropdown visitc "4. Visited Link Color" {
-	Default or none if u "Default or none if using custom color*" <<<EOT  EOT;
-Yes: use Visited Lin "Yes: use Visited Link Color below" <<<EOT a:visited {
+	Default-or-none-if-u "Default or none if using custom color*" <<<EOT  EOT;
+Yes--use-Visited-Lin "Yes: use Visited Link Color below" <<<EOT a:visited {
     color: /*[[vc]]*\/ !important;
 } EOT;
 
 }
 @advanced color vc "     a. Visited Link Color" #949494
 @advanced dropdown gradcolor "5. Custom Gradient color to replace default Login and Top Ten Anime gradient color" {
-	Default: no "Default: no*" <<<EOT  EOT;
-Yes    (Choose color "Yes    (Choose colors with the three options below)" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/") {
+	Default--no "Default: no*" <<<EOT  EOT;
+Yes-----Choose-color "Yes    (Choose colors with the three options below)" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/") {
 
 .rightcontainer h1 { background: -webkit-gradient(linear, left top, right top, color-stop(0%,/*[[startgrad]]*\/), color-stop(100%, /*[[endgrad]]*\/)) !important;
 margin-left: -10px !important;
@@ -430,7 +430,7 @@ color: /*[[gradtxt]]*\/ !important;
 }
 
 } EOT;
-Yes + notification s "Yes + notification square color" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/") {
+Yes---notification-s "Yes + notification square color" <<<EOT @-moz-document url-prefix("http://dubtopian-review.eu/") {
 
 .rightcontainer h1 { background: -webkit-gradient(linear, left top, right top, color-stop(0%,/*[[startgrad]]*\/), color-stop(100%,/*[[endgrad]]*\/)) !important;
 margin-left: -10px !important;

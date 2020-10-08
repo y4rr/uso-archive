@@ -7,7 +7,7 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown changewidth "Expand Content" {
-	No Change "No Change*" <<<EOT /* content-width: no change *\/ EOT;
+	No-Change "No Change*" <<<EOT /* content-width: no change *\/ EOT;
 800px "800px" <<<EOT /* removes box on the right side and expand content *\/
 div.layout>div.content>aside{
 	display:none !important;
@@ -68,7 +68,7 @@ div.layout>div.content>div.main,div.layout>nav ul.subnav{
 	-moz-border-radius:5px !important;
 	-webkit-border-radius:5px !important;
 } EOT;
-Circular (no change) "Circular (no change)" <<<EOT /* avatars: no change *\/ EOT;
+Circular--no-change- "Circular (no change)" <<<EOT /* avatars: no change *\/ EOT;
 
 }
 @advanced dropdown changefeed "Questions and Comments" {
@@ -125,7 +125,7 @@ div[ng-repeat="match in feed"] .question>.inner>footer{
 .comment .inner>section>.inner p{
 	font-size:14px !important;
 } EOT;
-No Change "No Change" <<<EOT /* feed: no change *\/ EOT;
+No-Change "No Change" <<<EOT /* feed: no change *\/ EOT;
 
 }
 @advanced dropdown changebackground "Background" {
@@ -136,7 +136,7 @@ No Change "No Change" <<<EOT /* feed: no change *\/ EOT;
 .fs-customheader{
 	background: rgba(44, 62, 80, 0.0) !important;
 } EOT;
-No Change "No Change" <<<EOT /* background: no change *\/ EOT;
+No-Change "No Change" <<<EOT /* background: no change *\/ EOT;
 
 }
 @advanced dropdown removefeedads "Feed-Ads" {
@@ -155,8 +155,8 @@ Verdana "Verdana" <<<EOT Verdana EOT;
 Courier "Courier" <<<EOT Courier EOT;
 Georgia "Georgia" <<<EOT Georgia EOT;
 Tahoma "Tahoma" <<<EOT Tahoma EOT;
-Times New Roman "Times New Roman" <<<EOT Times New Roman EOT;
-Comic Sans MS "Comic Sans MS" <<<EOT Comic Sans MS EOT;
+Times-New-Roman "Times New Roman" <<<EOT Times New Roman EOT;
+Comic-Sans-MS "Comic Sans MS" <<<EOT Comic Sans MS EOT;
 
 }
 

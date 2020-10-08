@@ -6,55 +6,55 @@
 @version        20111230.18.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown subreddit.icons " Replace metasubreddit 'all', 'random', 'mod' and 'friends' links with icons?" {
-	Disregard descriptio "Disregard description, acquire icons.*" <<<EOT  EOT;
-Icons are for sissie "Icons are for sissies, real redditors use text." <<<EOT .disabled EOT;
+@advanced dropdown subreddit-icons " Replace metasubreddit 'all', 'random', 'mod' and 'friends' links with icons?" {
+	Disregard-descriptio "Disregard description, acquire icons.*" <<<EOT  EOT;
+Icons-are-for-sissie "Icons are for sissies, real redditors use text." <<<EOT .disabled EOT;
 
 }
-@advanced dropdown subreddit.side "Move subreddits list to the side?" {
-	Move them to the sid "Move them to the side, I have a widescreen and I'm not afraid to use it!*" <<<EOT  EOT;
-Keep them on top. I  "Keep them on top. I like my subreddits small and unobtrusive." <<<EOT .disabled EOT;
+@advanced dropdown subreddit-side "Move subreddits list to the side?" {
+	Move-them-to-the-sid "Move them to the side, I have a widescreen and I'm not afraid to use it!*" <<<EOT  EOT;
+Keep-them-on-top--I- "Keep them on top. I like my subreddits small and unobtrusive." <<<EOT .disabled EOT;
 
 }
-@advanced dropdown sidebar.lower "Lower sidebar?" {
-	Keep that sidebar st "Keep that sidebar sticking up like a tab.*" <<<EOT .disabled EOT;
-Lower the sidebar, t "Lower the sidebar, this give the top bar more horizontal space (for you RES nuts! :) )" <<<EOT  EOT;
+@advanced dropdown sidebar-lower "Lower sidebar?" {
+	Keep-that-sidebar-st "Keep that sidebar sticking up like a tab.*" <<<EOT .disabled EOT;
+Lower-the-sidebar--t "Lower the sidebar, this give the top bar more horizontal space (for you RES nuts! :) )" <<<EOT  EOT;
 
 }
 @advanced dropdown logo "Nice floating logo?" {
-	No, keep that logo s "No, keep that logo sticking to the side.*" <<<EOT .disabled EOT;
-The logo must be fre "The logo must be free" <<<EOT  EOT;
+	No--keep-that-logo-s "No, keep that logo sticking to the side.*" <<<EOT .disabled EOT;
+The-logo-must-be-fre "The logo must be free" <<<EOT  EOT;
 
 }
 @advanced dropdown shadow "Apply tab shadows?" {
-	That's great, I love "That's great, I love both shadows and tabs!*" <<<EOT  EOT;
-I'm holding out for  "I'm holding out for an actual 3D solution." <<<EOT .disabled EOT;
+	That-s-great--I-love "That's great, I love both shadows and tabs!*" <<<EOT  EOT;
+I-m-holding-out-for- "I'm holding out for an actual 3D solution." <<<EOT .disabled EOT;
 
 }
-@advanced dropdown subreddit.blend "Do you want to modify the subreddits on top?" {
-	Way ahead of you! I  "Way ahead of you! I already moved them to the side. Next question.*" <<<EOT .disabled EOT;
-Alright, blend them  "Alright, blend them into background." <<<EOT  EOT;
-Keep them as is, gra "Keep them as is, gray and foreboding. " <<<EOT .disabled EOT;
+@advanced dropdown subreddit-blend "Do you want to modify the subreddits on top?" {
+	Way-ahead-of-you--I- "Way ahead of you! I already moved them to the side. Next question.*" <<<EOT .disabled EOT;
+Alright--blend-them- "Alright, blend them into background." <<<EOT  EOT;
+Keep-them-as-is--gra "Keep them as is, gray and foreboding. " <<<EOT .disabled EOT;
 
 }
 @advanced dropdown links "Change Link Color?" {
-	Color my links. Subt "Color my links. Subtle.*" <<<EOT  EOT;
-I like the original  "I like the original blue. I also like 1995." <<<EOT .disabled EOT;
+	Color-my-links--Subt "Color my links. Subtle.*" <<<EOT  EOT;
+I-like-the-original- "I like the original blue. I also like 1995." <<<EOT .disabled EOT;
 
 }
 @advanced dropdown post "Increase post whitespace?" {
-	Give those posts som "Give those posts some breathing space!*" <<<EOT  EOT;
-I believe the strong "I believe the stronger posts will survive and evolve to cope." <<<EOT .disabled EOT;
+	Give-those-posts-som "Give those posts some breathing space!*" <<<EOT  EOT;
+I-believe-the-strong "I believe the stronger posts will survive and evolve to cope." <<<EOT .disabled EOT;
 
 }
 @advanced dropdown gradient "Add a gradient to the header?" {
-	No, I like plain sai "No, I like plain sailing.*" <<<EOT .disabled EOT;
-It's not shiny if it "It's not shiny if it doesn't have a gradient." <<<EOT  EOT;
+	No--I-like-plain-sai "No, I like plain sailing.*" <<<EOT .disabled EOT;
+It-s-not-shiny-if-it "It's not shiny if it doesn't have a gradient." <<<EOT  EOT;
 
 }
 @advanced dropdown page "Add page borders?" {
-	 I need the space fo " I need the space for actual content, more kitten pictures*" <<<EOT .disabled EOT;
-Yes, it's like I'm r "Yes, it's like I'm reading an actual paper!" <<<EOT  EOT;
+	-I-need-the-space-fo " I need the space for actual content, more kitten pictures*" <<<EOT .disabled EOT;
+Yes--it-s-like-I-m-r "Yes, it's like I'm reading an actual paper!" <<<EOT  EOT;
 
 }
 
@@ -905,7 +905,7 @@ a#header-img-a {
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .25);
 }
 }
-@-moz-document domain("www.reddit.com/*[[subreddit.blend]]*/") , domain("ssl.reddit.com/*[[subreddit.blend]]*/")  {
+@-moz-document domain("www.reddit.com/*[[subreddit-blend]]*/") , domain("ssl.reddit.com/*[[subreddit-blend]]*/")  {
 
 /* Source: subreddit.blend.css */
 
@@ -937,7 +937,7 @@ a#header-img-a {
 	color: orangered !important;
 }
 }
-@-moz-document domain("www.reddit.com/*[[subreddit.side]]*/") , domain("ssl.reddit.com/*[[subreddit.side]]*/")  {
+@-moz-document domain("www.reddit.com/*[[subreddit-side]]*/") , domain("ssl.reddit.com/*[[subreddit-side]]*/")  {
 
 /* Source: subreddit.side.css */
 
@@ -1026,7 +1026,7 @@ body > .content {
 }
 
 }
-@-moz-document domain("www.reddit.com/*[[subreddit.icons]]*/") , domain("ssl.reddit.com/*[[subreddit.icons]]*/")  {
+@-moz-document domain("www.reddit.com/*[[subreddit-icons]]*/") , domain("ssl.reddit.com/*[[subreddit-icons]]*/")  {
 
 /* Source: subreddit.icons.css */
 
@@ -1114,14 +1114,14 @@ opacity: 0.3 !important;
 
 /* Source: subreddit.icons.url.css */
 
-@-moz-document url-prefix("http://www.reddit.com/reddits/") /*[[subreddit.icons]]*/{
+@-moz-document url-prefix("http://www.reddit.com/reddits/") /*[[subreddit-icons]]*/{
 	#sr-more-link {
 		color: orangered !important;
 		background-color: #EFF7FF !important;
 		border-color: #C4DBF1 !important;
 		opacity: 1 !important;
 	}
-}@-moz-document domain("www.reddit.com/*[[subreddit.icons]]*/,url/*[[subreddit.side]]*/") , domain("ssl.reddit.com/*[[subreddit.icons]]*/,url/*[[subreddit.side]]*/")  {
+}@-moz-document domain("www.reddit.com/*[[subreddit-icons]]*/,url/*[[subreddit-side]]*/") , domain("ssl.reddit.com/*[[subreddit-icons]]*/,url/*[[subreddit-side]]*/")  {
 
 /* Source: subreddit.icons.top.css */
 
@@ -1174,7 +1174,7 @@ opacity: 0.3 !important;
 	display: none !important;
 }
 }
-@-moz-document domain("www.reddit.com/*[[subreddit.icons]]*//*[[subreddit.side]]*/") , domain("ssl.reddit.com/*[[subreddit.icons]]*//*[[subreddit.side]]*/")  {
+@-moz-document domain("www.reddit.com/*[[subreddit-icons]]*//*[[subreddit-side]]*/") , domain("ssl.reddit.com/*[[subreddit-icons]]*//*[[subreddit-side]]*/")  {
 
 /* Source: subreddit.icons.side.css */
 
@@ -1192,7 +1192,7 @@ opacity: 0.3 !important;
 	width: 125px !important;
 }
 }
-@-moz-document domain("www.reddit.com/*[[sidebar.lower]]*/") , domain("ssl.reddit.com/*[[sidebar.lower]]*/")  {
+@-moz-document domain("www.reddit.com/*[[sidebar-lower]]*/") , domain("ssl.reddit.com/*[[sidebar-lower]]*/")  {
 
 /* Source: sidebar.lower.css */
 

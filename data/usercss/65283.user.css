@@ -20,12 +20,12 @@ Yes "Yes" <<<EOT  background-image: url("/*[[BackgroundURL]]*\/") !important; ba
 }
 @advanced dropdown Repeat "Background repeat? (Ignore if no background added)" {
 	Repeat "Repeat*" <<<EOT repeat !important; EOT;
-Cover the background "Cover the background (cuts some picture off)" <<<EOT no-repeat !important; background-size: cover !important; overflow:hidden !important; EOT;
-Fit in window (borde "Fit in window (borders on sides or top/bottom)" <<<EOT no-repeat !important; background-size: contain !important; overflow:hidden !important; EOT;
+Cover-the-background "Cover the background (cuts some picture off)" <<<EOT no-repeat !important; background-size: cover !important; overflow:hidden !important; EOT;
+Fit-in-window--borde "Fit in window (borders on sides or top/bottom)" <<<EOT no-repeat !important; background-size: contain !important; overflow:hidden !important; EOT;
 
 }
 @advanced dropdown BackgroundURL "URL or dataURI for background:(e.g. https://twimg0-a.akamaihd.net/images/themes/theme/bg.gif)" {
-This option if no ba "This option if no background added*" <<<EOT data:image/gif;base64,R0lGODlhEAAJALMAAB0eIBobHRgZGxESFBAREw8QEgsMDQsLDAgICQUFBgAAAAAAAAAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAQAAkAAAQzsKCUULmHUkPI1EgnZIkhdJrWEQEABEOcUmu9kpttj9vZfZZLofWKDT6UkG41SyyZs04EADs= EOT;
+This-option-if-no-ba "This option if no background added*" <<<EOT data:image/gif;base64,R0lGODlhEAAJALMAAB0eIBobHRgZGxESFBAREw8QEgsMDQsLDAgICQUFBgAAAAAAAAAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAQAAkAAAQzsKCUULmHUkPI1EgnZIkhdJrWEQEABEOcUmu9kpttj9vZfZZLofWKDT6UkG41SyyZs04EADs= EOT;
 
 	BackgroundURL-custom-dropdown "Custom" <<<EOT /*[[BackgroundURL-custom]]*\/ EOT;
 }

@@ -17,18 +17,18 @@ Hide "Hide" <<<EOT   .likfhlskdhslikdf { display: none !important; } EOT;
 
 }
 @advanced dropdown ytVids "YouTube Embeds" {
-	Show Titlebar Only ( "Show Titlebar Only (Link)*" <<<EOT   /* Collapse YouTube Embed to Titlebar (Clickable Link) *\/
+	Show-Titlebar-Only-- "Show Titlebar Only (Link)*" <<<EOT   /* Collapse YouTube Embed to Titlebar (Clickable Link) *\/
   .youtube_container {
     height: 40px;
     overflow: hidden;
   } EOT;
 Show "Show" <<<EOT  EOT;
-Replace with Link "Replace with Link" <<<EOT   /* Replace YouTube Vids with Button-styled Link *\/
+Replace-with-Link "Replace with Link" <<<EOT   /* Replace YouTube Vids with Button-styled Link *\/
   .youtube_container iframe { display: none !important; }
   .youtube_container span.link { 
     display: block !important;
   } EOT;
-Hover-Expand (BUGGY! "Hover-Expand (BUGGY!)" <<<EOT   /* Collapse YouTube Embed Unless Hovered (buggy) *\/
+Hover-Expand--BUGGY- "Hover-Expand (BUGGY!)" <<<EOT   /* Collapse YouTube Embed Unless Hovered (buggy) *\/
   .youtube_container {
     min-height: 40px;
     height: 2.5em !important;

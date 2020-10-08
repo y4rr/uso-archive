@@ -7,21 +7,21 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown hidead "hide ad panel on the right?" {
-	1.Yes "1.Yes*" <<<EOT /* 1.hide, lyric panel 250px *\/
+	1-Yes "1.Yes*" <<<EOT /* 1.hide, lyric panel 250px *\/
     .column3{
         width:250px !important;
         right: 0 !important;
     }
     .column2{right: 251px !important;}
     .column4{display:none} EOT;
-0.No "0.No" <<<EOT /* 0.don't hide *\/
+0-No "0.No" <<<EOT /* 0.don't hide *\/
     /* nothing here... *\/ EOT;
 
 }
 @advanced dropdown topbar "auto hide top bar" {
-	2.No "2.No*" <<<EOT /* 2.don't hide *\/
+	2-No "2.No*" <<<EOT /* 2.don't hide *\/
     /* nothing here... *\/ EOT;
-3.Yes "3.Yes" <<<EOT /*3.top bar auto hide*\/
+3-Yes "3.Yes" <<<EOT /*3.top bar auto hide*\/
     #mainContent{top:10px!important;}
     .mb-layout-hd{top:-34px!important;}
     .mb-layout-hd:hover{top:0!important;} EOT;

@@ -706,19 +706,19 @@ white-green "white on green" <<<EOT /*__________________________________________
 .CodeMirror-code    { line-height: 12px !important; } EOT;
 f_L13 "Lucida 13px/13px" <<<EOT .devtools-monospace { font: normal 13px "lucida console","dejavu sans mono" !important; }
 .CodeMirror-code    { line-height: 13px !important; } EOT;
-f_L13+ "Lucida 13px/14px" <<<EOT .devtools-monospace { font: normal 13px "lucida console","dejavu sans mono" !important; }
+f_L13- "Lucida 13px/14px" <<<EOT .devtools-monospace { font: normal 13px "lucida console","dejavu sans mono" !important; }
 .CodeMirror-code    { line-height: 14px !important; } EOT;
 f_D13- "Dejavu 13px/12px" <<<EOT .devtools-monospace { font: normal 13px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 12px !important; } EOT;
 f_D13 "Dejavu 13px/13px" <<<EOT .devtools-monospace { font: normal 13px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 13px !important; } EOT;
-f_D13+ "Dejavu 13px/14px" <<<EOT .devtools-monospace { font: normal 13px "dejavu sans mono", "lucida console" !important; }
+f_D13- "Dejavu 13px/14px" <<<EOT .devtools-monospace { font: normal 13px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 14px !important; } EOT;
 f_D14- "Dejavu 14px/13px" <<<EOT .devtools-monospace { font: normal 14px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 13px !important; } EOT;
 f_D14 "Dejavu 14px/14px" <<<EOT .devtools-monospace { font: normal 14px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 14px !important; } EOT;
-f_D14+ "Dejavu 14px/15px" <<<EOT .devtools-monospace { font: normal 14px "dejavu sans mono", "lucida console" !important; }
+f_D14- "Dejavu 14px/15px" <<<EOT .devtools-monospace { font: normal 14px "dejavu sans mono", "lucida console" !important; }
 .CodeMirror-code    { line-height: 15px !important; } EOT;
 f_none "browser default" <<<EOT /*.devtools-monospace { font: normal 13px "lucida console","dejavu sans mono" !important; }
 .CodeMirror-code    { line-height: 12px !important; }*\/ EOT;
@@ -852,15 +852,15 @@ label[value="Find:"] {
 }
 @advanced color pm_font "Palemoon font color" #B4B496
 @advanced dropdown pm_font_family "Pm font size/height" {
-	p_D13s+ "Dejavu 13px/13px*" <<<EOT font: normal 13px/13px "dejavu sans mono", "lucida console" !important; EOT;
+	p_D13s- "Dejavu 13px/13px*" <<<EOT font: normal 13px/13px "dejavu sans mono", "lucida console" !important; EOT;
 p_L13 "Lucida 13px/12px" <<<EOT font: normal 13px/12px "lucida console","dejavu sans mono" !important; EOT;
-p_L13+ "Lucida 13px/13px" <<<EOT font: normal 13px/13px "lucida console","dejavu sans mono" !important; EOT;
-p_L13++ "Lucida 13px/14px" <<<EOT font: normal 13px/14px "lucida console","dejavu sans mono" !important; EOT;
+p_L13- "Lucida 13px/13px" <<<EOT font: normal 13px/13px "lucida console","dejavu sans mono" !important; EOT;
+p_L13-- "Lucida 13px/14px" <<<EOT font: normal 13px/14px "lucida console","dejavu sans mono" !important; EOT;
 p_D13 "Dejavu 13px/12px" <<<EOT font: normal 13px/12px "dejavu sans mono", "lucida console" !important; EOT;
-p_D13++ "Dejavu 13px/14px" <<<EOT font: normal 13px/14px "dejavu sans mono", "lucida console" !important; EOT;
+p_D13-- "Dejavu 13px/14px" <<<EOT font: normal 13px/14px "dejavu sans mono", "lucida console" !important; EOT;
 p_D14 "Dejavu 14px/13px" <<<EOT font: normal 14px/13px "dejavu sans mono", "lucida console" !important; EOT;
-p_D14+ "Dejavu 14px/14px" <<<EOT font: normal 14px/14px "dejavu sans mono", "lucida console" !important; EOT;
-p_D14++ "Dejavu 14px/15px" <<<EOT font: normal 14px/15px "dejavu sans mono", "lucida console" !important; EOT;
+p_D14- "Dejavu 14px/14px" <<<EOT font: normal 14px/14px "dejavu sans mono", "lucida console" !important; EOT;
+p_D14-- "Dejavu 14px/15px" <<<EOT font: normal 14px/15px "dejavu sans mono", "lucida console" !important; EOT;
 p_none "browser default" <<<EOT /*font: normal 13px/13px "lucida console","dejavu sans mono" !important;*\/ EOT;
 
 }

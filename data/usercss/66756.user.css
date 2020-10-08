@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown comments "Show the comments?" {
-	No, they just angry- "No, they just angry-up the blood*" <<<EOT  EOT;
-Yes, other peoples'  "Yes, other peoples' comments make me feel smart" <<<EOT _ EOT;
+	No--they-just-angry- "No, they just angry-up the blood*" <<<EOT  EOT;
+Yes--other-peoples-- "Yes, other peoples' comments make me feel smart" <<<EOT _ EOT;
 
 }
 @advanced dropdown hideFooter "Auto-hide the footer?" {
-	Yes, but leave it at "Yes, but leave it at the bottom of the page*" <<<EOT  /* - - - - - auto-hide footer - - - - - *\/
+	Yes--but-leave-it-at "Yes, but leave it at the bottom of the page*" <<<EOT  /* - - - - - auto-hide footer - - - - - *\/
  #page {position: relative; padding-bottom: 3mm !important}
  #page ~ IFRAME {display: none}
   /* added after page layout is complete - pushes footer above bottom *\/
@@ -28,7 +28,7 @@ Yes, other peoples'  "Yes, other peoples' comments make me feel smart" <<<EOT _ 
  }
  #footer {padding-bottom: 0px !important}
  EOT;
-Yes, but make it flo "Yes, but make it float at the bottom of the screen" <<<EOT  /* - - - - - auto-hide footer - - - - - *\/
+Yes--but-make-it-flo "Yes, but make it float at the bottom of the screen" <<<EOT  /* - - - - - auto-hide footer - - - - - *\/
  #page {position: relative; padding-bottom: 3mm !important}
  #page ~ IFRAME {display: none}
   /* added after page layout is complete - pushes footer above bottom *\/
@@ -44,7 +44,7 @@ Yes, but make it flo "Yes, but make it float at the bottom of the screen" <<<EOT
  }
  #footer {padding-bottom: 0px !important}
  EOT;
-No, just leave it th "No, just leave it the way it is" <<<EOT  EOT;
+No--just-leave-it-th "No, just leave it the way it is" <<<EOT  EOT;
 
 }
 

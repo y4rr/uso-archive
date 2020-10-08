@@ -112,18 +112,18 @@ communityn "No" <<<EOT   EOT;
 usern "No" <<<EOT   EOT;
 
 }
-@advanced dropdown op% "Opacità ep+/-, mi piace, condividi, guarda dopo" {
-	70% "70%*" <<<EOT .7 EOT;
-100% "100% (opaco)" <<<EOT 1 EOT;
-90% "90%" <<<EOT .9 EOT;
-80% "80%" <<<EOT .8 EOT;
-60% "60%" <<<EOT .6 EOT;
-50% "50%" <<<EOT .5 EOT;
-40% "40%" <<<EOT .4 EOT;
-30% "30%" <<<EOT .3 EOT;
-20% "20%" <<<EOT .2 EOT;
-10% "10%" <<<EOT .1 EOT;
-0% "0% (trasparente)" <<<EOT 0 EOT;
+@advanced dropdown op- "Opacità ep+/-, mi piace, condividi, guarda dopo" {
+	70- "70%*" <<<EOT .7 EOT;
+100- "100% (opaco)" <<<EOT 1 EOT;
+90- "90%" <<<EOT .9 EOT;
+80- "80%" <<<EOT .8 EOT;
+60- "60%" <<<EOT .6 EOT;
+50- "50%" <<<EOT .5 EOT;
+40- "40%" <<<EOT .4 EOT;
+30- "30%" <<<EOT .3 EOT;
+20- "20%" <<<EOT .2 EOT;
+10- "10%" <<<EOT .1 EOT;
+0- "0% (trasparente)" <<<EOT 0 EOT;
 
 }
 
@@ -231,9 +231,9 @@ usern "No" <<<EOT   EOT;
    width: 100vw !important;}
 
 .player-action-previous-image, .player-action-next-image, .player-action-rate-image, .player-action-share-image, .player-action-addwtl-image{
-   opacity: /*[[op%]]*/ !important;}
+   opacity: /*[[op-]]*/ !important;}
 .player-action-previous-image:hover, .player-action-next-image:hover, .player-action-rate-image:hover, .player-action-share-image:hover, .player-action-addwtl-image{
-   opacity: calc(/*[[op%]]*/ + .3) !important;}
+   opacity: calc(/*[[op-]]*/ + .3) !important;}
 
 /*[[ep]]*/
  

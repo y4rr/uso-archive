@@ -7,7 +7,7 @@
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown menuoption "Menu type" {
-	Icons only "Icons only*" <<<EOT /* Menu icons only *\/
+	Icons-only "Icons only*" <<<EOT /* Menu icons only *\/
 .bOa { display: none !important; }
 .wH3YRe { 
   width: 44px !important; /* Width of the menu *\/
@@ -31,7 +31,7 @@
 .oBgpme.AYoUUe { left: 44px !important; }
 /* Fixes the menu from covering community info-box *\/
 .dBOzgd.BCOqfc { margin-left: 25px !important; } EOT;
-Full menu "Full menu" <<<EOT /* Fixes community and other pages to work with always visible menu *\/
+Full-menu "Full menu" <<<EOT /* Fixes community and other pages to work with always visible menu *\/
 .F6ZNpd { width: 165px !important; }
 .lOYuOc { width: 245px !important; }
 .vcINuc { width: auto !important; }
@@ -43,13 +43,13 @@ Full menu "Full menu" <<<EOT /* Fixes community and other pages to work with alw
 
 }
 @advanced dropdown visibility "Menu visibility" {
-	Always visible "Always visible*" <<<EOT /* Left-menu always visible *\/
+	Always-visible "Always visible*" <<<EOT /* Left-menu always visible *\/
 .wH3YRe {
   margin-left: -20px !important;
   margin-top: 44px !important;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4) !important;
 } EOT;
-Not visible "Not visible" <<<EOT /* Google+ default menu visibility *\/ EOT;
+Not-visible "Not visible" <<<EOT /* Google+ default menu visibility *\/ EOT;
 
 }
 @advanced dropdown align "Column alignment" {

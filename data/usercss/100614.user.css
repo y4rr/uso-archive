@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown dark "Dark theme?" {
-	Light is great :) "Light is great :)*" <<<EOT /*Dark theme goes here*\/ EOT;
-DAAARK! "DAAARK!" <<<EOT /*Dark Theme*\/
+	Light-is-great--- "Light is great :)*" <<<EOT /*Dark theme goes here*\/ EOT;
+DAAARK- "DAAARK!" <<<EOT /*Dark Theme*\/
     .debuginfo,
     .footer-parent,
     .content {
@@ -124,8 +124,8 @@ DAAARK! "DAAARK!" <<<EOT /*Dark Theme*\/
 
 }
 @advanced dropdown width "By default the content box width is set to maximum 900px." {
-	Yes! Perfect ;) "It's perfect ;)*" <<<EOT max-width:900px !important; EOT;
-I want a larger cont "I want a larger content box!" <<<EOT max-width:calc(100% - 400px) !important;
+	Yes--Perfect--- "It's perfect ;)*" <<<EOT max-width:900px !important; EOT;
+I-want-a-larger-cont "I want a larger content box!" <<<EOT max-width:calc(100% - 400px) !important;
  EOT;
 
 }
@@ -140,8 +140,8 @@ No "No" <<<EOT  EOT;
 
 }
 @advanced dropdown ads "Ads?" {
-	I love them! "I love them!*" <<<EOT  EOT;
-NOOOO!!! "NOOOO!!!" <<<EOT .organic-listing, /*weird thing*\/
+	I-love-them- "I love them!*" <<<EOT  EOT;
+NOOOO--- "NOOOO!!!" <<<EOT .organic-listing, /*weird thing*\/
 .promotedlink, /*promoted link*\/
 .sponsorshipbox,
 #ad_main, EOT;
@@ -230,10 +230,10 @@ No "No" <<<EOT .listing-chooser{
 
 }
 @advanced dropdown trend "Do you need the trending subreddit feature?" {
-	No thanks, I don't w "No thanks, I don't want it*" <<<EOT .trending-subreddits{
+	No-thanks--I-don-t-w "No thanks, I don't want it*" <<<EOT .trending-subreddits{
     display:none !important
 } EOT;
-Yes, I like it. "Yes, I like it." <<<EOT .trending-subreddits{
+Yes--I-like-it- "Yes, I like it." <<<EOT .trending-subreddits{
     max-height:40px;
     padding:15px 0 1px 0;
 }
@@ -243,27 +243,27 @@ Yes, I like it. "Yes, I like it." <<<EOT .trending-subreddits{
 
 }
 @advanced dropdown font "(Advanced Option) What font are you interested in?" {
-	Open Sans (works bes "Open Sans (works best)*" <<<EOT body{
+	Open-Sans--works-bes "Open Sans (works best)*" <<<EOT body{
     font-family: 'Open Sans', sans-serif !important;
 } EOT;
-Arial (works best) "Arial (works best)" <<<EOT body{
+Arial--works-best- "Arial (works best)" <<<EOT body{
     font-family: 'Arial', sans-serif !important;
 } EOT;
-System font "System font" <<<EOT  EOT;
-Helvetica Neue "Helvetica Neue" <<<EOT body{
+System-font "System font" <<<EOT  EOT;
+Helvetica-Neue "Helvetica Neue" <<<EOT body{
     font-family: 'Helvetica Neue', sans-serif !important;
 } EOT;
 Georgia "Georgia" <<<EOT body{
     font-family: 'Georgia', serif !important;
 } EOT;
-Times new roman "Times new roman" <<<EOT body{
+Times-new-roman "Times new roman" <<<EOT body{
     font-family: 'Times new roman', serif !important;
 } EOT;
 
 }
 @advanced dropdown linkdisp "(Advanced Option) Do you want a lighter link display?" {
-	No. "No.*" <<<EOT  EOT;
-I want a lighter and "I want a lighter and easier on the eyes link display!" <<<EOT .nsfw-stamp,
+	No- "No.*" <<<EOT  EOT;
+I-want-a-lighter-and "I want a lighter and easier on the eyes link display!" <<<EOT .nsfw-stamp,
 .front-page .link .userattrs,
 .front-page .link .author,
 .listing-page .link .flat-list li:not(.first){
@@ -282,8 +282,8 @@ I want a lighter and "I want a lighter and easier on the eyes link display!" <<<
 
 }
 @advanced dropdown rside "(Advanced Option) Sidebar ..." {
-	... on the left! "... on the left!*" <<<EOT  EOT;
-... on the right! "... on the right!" <<<EOT /*Right sidebar*\/
+	----on-the-left- "... on the left!*" <<<EOT  EOT;
+----on-the-right- "... on the right!" <<<EOT /*Right sidebar*\/
 .debuginfo,
 .footer-parent,
 .content {
@@ -346,11 +346,11 @@ I want a lighter and "I want a lighter and easier on the eyes link display!" <<<
 
 }
 @advanced dropdown subr "(Advanced Option) Do you want an easier acess to  your subreddit, without clicking on the + menu?" {
-	No, I like it simple "No, I like it simple :)*" <<<EOT #RESShortcutsEditContainer,
+	No--I-like-it-simple "No, I like it simple :)*" <<<EOT #RESShortcutsEditContainer,
 body .sr-list{
     display:none !important;
 } EOT;
-Yes! (And I use the  "Yes! (And I use the Multireddit feature)" <<<EOT #RESShortcutsViewport,
+Yes---And-I-use-the- "Yes! (And I use the Multireddit feature)" <<<EOT #RESShortcutsViewport,
 .sr-list .separator + .flat-list{
     max-width:250px !important;
     min-width:250px !important;
@@ -413,7 +413,7 @@ body:not(.front-page) ul.flat-list:nth-child(1),
 #sr-bar{
     display:none !important;
 } EOT;
-Yes! (And I don't us "Yes! (And I don't use the Multireddit feature)" <<<EOT #RESShortcutsViewport,
+Yes---And-I-don-t-us "Yes! (And I don't use the Multireddit feature)" <<<EOT #RESShortcutsViewport,
 .sr-list .separator + .flat-list{
     max-width:250px !important;
     min-width:250px !important;
@@ -475,8 +475,8 @@ body:not(.front-page) ul.flat-list:nth-child(1),
 
 }
 @advanced dropdown score "(Advanced Option) I want my reddit karma in the blue bar!" {
-	No! "No!*" <<<EOT  EOT;
-Yes! left "Yes! (I have the sidebar on the left)" <<<EOT /*Score*\/
+	No- "No!*" <<<EOT  EOT;
+Yes--left "Yes! (I have the sidebar on the left)" <<<EOT /*Score*\/
 .user .userkarma {
     border-bottom: 0px transparent !important;
     position: fixed;
@@ -504,7 +504,7 @@ Yes! left "Yes! (I have the sidebar on the left)" <<<EOT /*Score*\/
 .res .user span{
     color:transparent !important;
 } EOT;
-Yes! right "Yes! (I have the sidebar on the right)" <<<EOT /*Score*\/
+Yes--right "Yes! (I have the sidebar on the right)" <<<EOT /*Score*\/
 .user .userkarma {
     border-bottom: 0px transparent !important;
     position: fixed;

@@ -10,9 +10,9 @@
 @advanced color textcolor "Цвет текста" #3CB43C
 @advanced color code-bgcolor "Цвет фона блоков с кодом" #464451
 @advanced dropdown fixed "Сделать верхнюю панель фиксированной (при прокрутке она остаётся видна)?" {
-	Нет, спасибо "Нет, спасибо*" <<<EOT .header, #header {
+	------------ "Нет, спасибо*" <<<EOT .header, #header {
     position: absolute !important; } EOT;
-Да, пожалуйста "Да, пожалуйста" <<<EOT .header, #header {
+-------------- "Да, пожалуйста" <<<EOT .header, #header {
     position: fixed !important; }
 #wrapper, .sidebar_right, .content_left, .content_right {
     padding-top: 130px !important; } EOT;

@@ -7,16 +7,16 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown mycolor "顏色" {
-	藍色 "藍色*" <<<EOT 100,100,255 EOT;
-紅色 "紅色" <<<EOT 255,100,100 EOT;
-水藍色 "水藍色" <<<EOT 100,255,255 EOT;
-紫色 "紫色" <<<EOT 255,100,255 EOT;
-黑色 "黑色" <<<EOT 0,0,0 EOT;
+	-- "藍色*" <<<EOT 100,100,255 EOT;
+-- "紅色" <<<EOT 255,100,100 EOT;
+--- "水藍色" <<<EOT 100,255,255 EOT;
+-- "紫色" <<<EOT 255,100,255 EOT;
+-- "黑色" <<<EOT 0,0,0 EOT;
 
 }
 @advanced dropdown hide "頂列自動隱藏功能" {
-	關閉 "關閉*" <<<EOT  EOT;
-開啟 "開啟" <<<EOT     -moz-transition: top .5s ease !important;
+	-- "關閉*" <<<EOT  EOT;
+-- "開啟" <<<EOT     -moz-transition: top .5s ease !important;
     -webkit-transition: top .5s ease !important;
     top: -35px !important;
 }

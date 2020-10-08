@@ -6,8 +6,8 @@
 @version        201689.17.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown /*[[waifus switch]]* "Show waifus?" {
-	wife on "Yes*" <<<EOT body::after {
+@advanced dropdown ----waifus-switch--- "Show waifus?" {
+	wife-on "Yes*" <<<EOT body::after {
     position: fixed !important;
     content: url("/*[[1st image]]*\/");
     bottom: -3px !important; 
@@ -24,29 +24,29 @@ body::before {
     opacity: 0.8;
     z-index: 0;
 } EOT;
-wife off "No" <<<EOT  EOT;
+wife-off "No" <<<EOT  EOT;
 
 }
 @advanced dropdown arrows "Hide arrows?" {
-	arrows_hide=yes "Yes*" <<<EOT div.sideArrows {
+	arrows_hide-yes "Yes*" <<<EOT div.sideArrows {
     display: none !important;
 } EOT;
-arrows_hide=no "No" <<<EOT div.sideArrows {
+arrows_hide-no "No" <<<EOT div.sideArrows {
     display: block !important;
 } EOT;
 
 }
 @advanced dropdown banner "Hide banner?" {
-	banner_hidden=yes "Yes*" <<<EOT #bannerCnt {
+	banner_hidden-yes "Yes*" <<<EOT #bannerCnt {
     display: none !important;
 } EOT;
-banner_hidden=no "No" <<<EOT #bannerCnt {
+banner_hidden-no "No" <<<EOT #bannerCnt {
     display: inline-block !important;
 } EOT;
 
 }
-@advanced text 1st image "1st image" "http://cdn.syn-ch.com/src/143/44/42/1434442201-7e1f2.png"
-@advanced text 2st image "2st image" "http://cdn.syn-ch.com/src/143/44/42/1434442166-28b70.png"
+@advanced text 1st-image "1st image" "http://cdn.syn-ch.com/src/143/44/42/1434442201-7e1f2.png"
+@advanced text 2st-image "2st image" "http://cdn.syn-ch.com/src/143/44/42/1434442166-28b70.png"
 
 ==/UserStyle== */
 @-moz-document domain("boards.4chan.org") {

@@ -68,7 +68,7 @@ Black "Black" <<<EOT 40,40,40, EOT;
 }
 @advanced dropdown border "Border" {
 	None "None*" <<<EOT     border-style: none !important; EOT;
-Solid Color "Solid Color" <<<EOT     border: /*[[bsize]]*\/ !important;
+Solid-Color "Solid Color" <<<EOT     border: /*[[bsize]]*\/ !important;
     border-style: solid !important;
     border-color: rgba(/*[[bcolor]]*\/ /*[[balpha]]*\/) !important; EOT;
 Outset "Outset" <<<EOT     border: /*[[bsize]]*\/ !important;
@@ -96,10 +96,10 @@ Black "Black" <<<EOT 40,40,40 EOT;
 }
 @advanced dropdown bsize "Border Size" {
 	Small "Small*" <<<EOT 2px EOT;
-Very Small "Very Small" <<<EOT 1px EOT;
+Very-Small "Very Small" <<<EOT 1px EOT;
 Medium "Medium" <<<EOT 3px EOT;
 Large "Large" <<<EOT 4px EOT;
-Extra Large "Extra Large" <<<EOT 5px EOT;
+Extra-Large "Extra Large" <<<EOT 5px EOT;
 
 }
 @advanced dropdown balpha "Border Transparency" {
@@ -139,14 +139,14 @@ Off "Off" <<<EOT .6 EOT;
 
 }
 @advanced dropdown padding "Padding" {
-	Yes (may cause issue "Yes (may cause issues on zooming out)*" <<<EOT 3 EOT;
+	Yes--may-cause-issue "Yes (may cause issues on zooming out)*" <<<EOT 3 EOT;
 No "No" <<<EOT 0 EOT;
 
 }
 @advanced dropdown margin "Size" {
 	Larger "Normal*" <<<EOT 13 EOT;
 Normal "Small" <<<EOT 10 EOT;
-Extra Large "Large" <<<EOT 15 EOT;
+Extra-Large "Large" <<<EOT 15 EOT;
 
 }
 @advanced dropdown fade "Fade In/Out (Main scrollbar isn't effected)" {

@@ -7,23 +7,23 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown LineOrNot "完全移除底線" {
-	否(預設) "否(預設)*" <<<EOT /*[[lineSize]]*\/ EOT;
-是 "是" <<<EOT 0px EOT;
+	----- "否(預設)*" <<<EOT /*[[lineSize]]*\/ EOT;
+- "是" <<<EOT 0px EOT;
 
 }
 @advanced dropdown lineSize "底線粗幼" {
-	正常(預設) "正常(預設)*" <<<EOT 1px EOT;
-加粗 "加粗" <<<EOT 2px EOT;
+	------ "正常(預設)*" <<<EOT 1px EOT;
+-- "加粗" <<<EOT 2px EOT;
 
 }
 @advanced dropdown HoverOrEver "底線顯示方式" {
-	永久(預設) "永久(預設)*" <<<EOT  EOT;
-鼠標指向連結時 "鼠標指向連結時" <<<EOT :hover EOT;
+	------ "永久(預設)*" <<<EOT  EOT;
+------- "鼠標指向連結時" <<<EOT :hover EOT;
 
 }
 @advanced dropdown mySelf "你是否三男二女" {
-	否(預設) "否(預設)*" <<<EOT  EOT;
-是[係真唔係:o)] "是[係真唔係:o)]" <<<EOT * {
+	----- "否(預設)*" <<<EOT  EOT;
+-------o-- "是[係真唔係:o)]" <<<EOT * {
 font-family: "Helvetica","Adobe 繁黑體 Std B","微軟正黑體 Bold" !important;
 } EOT;
 

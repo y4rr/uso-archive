@@ -9,19 +9,19 @@
 @advanced dropdown myfont "Choose a font" {
 	Sans-serif "Sans-serif*" <<<EOT Arial, sans-serif EOT;
 Hiragino "Hiragino" <<<EOT Hiragino, Hiragino Sans GB W3 EOT;
-微软雅黑 "微软雅黑" <<<EOT 微软雅黑 EOT;
+---- "微软雅黑" <<<EOT 微软雅黑 EOT;
 
 }
 @advanced dropdown mybackground "choose a background image" {
-	企鹅罐（黑） "企鹅罐（黑）*" <<<EOT url("https://lh3.googleusercontent.com/-_Mswn89RRhQ/TnEYXMkVn_I/AAAAAAAAGVc/PgAokiRQrNM/s0/2_mg_black2.gif") repeat fixed #000000 EOT;
-企鹅罐（灰） "企鹅罐（灰）" <<<EOT url("https://lh4.googleusercontent.com/-OkOiQ2qGuxM/TnEYW7c__bI/AAAAAAAAGVY/fDkElB_PBLU/s0/2_mg_black.gif") repeat fixed #000000 EOT;
+	------ "企鹅罐（黑）*" <<<EOT url("https://lh3.googleusercontent.com/-_Mswn89RRhQ/TnEYXMkVn_I/AAAAAAAAGVc/PgAokiRQrNM/s0/2_mg_black2.gif") repeat fixed #000000 EOT;
+------ "企鹅罐（灰）" <<<EOT url("https://lh4.googleusercontent.com/-OkOiQ2qGuxM/TnEYW7c__bI/AAAAAAAAGVY/fDkElB_PBLU/s0/2_mg_black.gif") repeat fixed #000000 EOT;
 
 }
 @advanced dropdown myopacity "choose a opacity" {
-	不透明 "不透明*" <<<EOT 1 EOT;
-88% "88%" <<<EOT 0.88 EOT;
-80% "80%" <<<EOT 0.8 EOT;
-70% "70%" <<<EOT 0.7 EOT;
+	--- "不透明*" <<<EOT 1 EOT;
+88- "88%" <<<EOT 0.88 EOT;
+80- "80%" <<<EOT 0.8 EOT;
+70- "70%" <<<EOT 0.7 EOT;
 
 }
 

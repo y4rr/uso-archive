@@ -7,7 +7,7 @@
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown memberlist "Colour member list?" {
-	memberlist.no "no*" <<<EOT     /* Nick colours *\/
+	memberlist-no "no*" <<<EOT     /* Nick colours *\/
     
     .nick-colors div.log div.row span a.c0,
     .nick-colors div.log div.row span a.c0:hover,
@@ -122,7 +122,7 @@
         color: #ffa500  !important;
     }
  EOT;
-memberlist.yes "yes" <<<EOT     /* Nick colours *\/
+memberlist-yes "yes" <<<EOT     /* Nick colours *\/
 
     .nick-colors .c0 {
         color: #0074D9 !important;

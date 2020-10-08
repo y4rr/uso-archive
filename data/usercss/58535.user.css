@@ -8,7 +8,7 @@
 @preprocessor   uso
 @advanced dropdown bgcolor "Background color" {
 	White "White*" <<<EOT #FFF EOT;
-Very Light Grey "Very Light Grey" <<<EOT #F9F9F9 EOT;
+Very-Light-Grey "Very Light Grey" <<<EOT #F9F9F9 EOT;
 
 }
 @advanced dropdown subjectline "Make subject line appear at the top of comment header? (see details)" {
@@ -39,7 +39,7 @@ No "No" <<<EOT /* *\/ EOT;
 
 }
 @advanced dropdown userpicselection "How would you like to pick a userpic when commenting?" {
-	Through keywords onl "Through keywords only*" <<<EOT /* ------------ userpic selection through keywords only --------------- *\/
+	Through-keywords-onl "Through keywords only*" <<<EOT /* ------------ userpic selection through keywords only --------------- *\/
 .b-userpicselector { 
      box-shadow: 0 1px 6px rgba(53,99,161,0.8) !important;  
      -moz-box-shadow: 0 1px 6px rgba(53,99,161,0.8) !important; 
@@ -91,16 +91,16 @@ a.b-userpicselector-showall:hover {
      font-size: 10px !important;}
 
  EOT;
-Show me my icons "Show me my icons" <<<EOT /* *\/ EOT;
+Show-me-my-icons "Show me my icons" <<<EOT /* *\/ EOT;
 
 }
 @advanced dropdown headercolor "Comment header color" {
-	Light Blue (#BDF) "Light Blue (#BDF)*" <<<EOT #BDF EOT;
-Blue (#ACE) "Blue (#ACE)" <<<EOT #ACE EOT;
+	Light-Blue---BDF- "Light Blue (#BDF)*" <<<EOT #BDF EOT;
+Blue---ACE- "Blue (#ACE)" <<<EOT #ACE EOT;
 
 }
 @advanced dropdown hovercollapsecolor "Background color upon hovering over collapsed comment" {
-	Light Grey "Light Grey*" <<<EOT /* ---------hovering over a collapsed comment turns its background light grey--------- *\/
+	Light-Grey "Light Grey*" <<<EOT /* ---------hovering over a collapsed comment turns its background light grey--------- *\/
 
 * .b-leaf.b-leaf-collapsed:hover {
      background-color: #EAEAEA !important;

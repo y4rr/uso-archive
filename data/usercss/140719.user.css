@@ -6,14 +6,14 @@
 @version        2017421.16.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color txtbox bgc "Textbox background color" #FFFFF0
-@advanced color txtbox fontc "Textbox font color" #737373
+@advanced color txtbox-bgc "Textbox background color" #FFFFF0
+@advanced color txtbox-fontc "Textbox font color" #737373
 @advanced dropdown fontsize "Font Size" {
-	125% "125%*" <<<EOT 125% EOT;
-100% "100%" <<<EOT 100% EOT;
-150% "150%" <<<EOT 150% EOT;
-200% "200%" <<<EOT 200% EOT;
-300% "300%" <<<EOT 300% EOT;
+	125- "125%*" <<<EOT 125% EOT;
+100- "100%" <<<EOT 100% EOT;
+150- "150%" <<<EOT 150% EOT;
+200- "200%" <<<EOT 200% EOT;
+300- "300%" <<<EOT 300% EOT;
 
 }
 @advanced dropdown fontfamily "Font Family" {
@@ -30,16 +30,16 @@ timesnewroman "Times New Roman (serif)" <<<EOT "Times New Roman", serif EOT;
 @-moz-document domain("www.medhelp.org") {
 
 	textarea {
-		background: /*[[txtbox bgc]]*/ !important;
-		color: /*[[txtbox fontc]]*/ !important;
+		background: /*[[txtbox-bgc]]*/ !important;
+		color: /*[[txtbox-fontc]]*/ !important;
 		font-size: /*[[fontsize]]*/ !important;
 		font-family: /*[[fontfamily]]*/ !important;
 		resize: both !important;
 	}
 	
 	#side_forum_contextual_search_field {	
-		background-color: /*[[txtbox bgc]]*/ !important;
-      	        color: /*[[txtbox fontc]]*/ !important;
+		background-color: /*[[txtbox-bgc]]*/ !important;
+      	        color: /*[[txtbox-fontc]]*/ !important;
                 font-size: /*[[fontsize]]*/ !important;
 		font-family: /*[[fontfamily]]*/ !important;
 	} 

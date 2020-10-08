@@ -10,15 +10,15 @@
 	Vulture "Vulture*" <<<EOT html:hover:before {
   overflow: hidden;
 } EOT;
-*CLICK* "*CLICK*" <<<EOT html:hover:before {
+-CLICK- "*CLICK*" <<<EOT html:hover:before {
   cursor: pointer !important;
 } EOT;
 
 }
 @advanced dropdown tri-trans "Opacity:        " {
-	50 percent "50 percent*" <<<EOT .5 EOT;
-25 percent "25 percent" <<<EOT .25 EOT;
-75 percent "75 percent" <<<EOT .75 EOT;
+	50-percent "50 percent*" <<<EOT .5 EOT;
+25-percent "25 percent" <<<EOT .25 EOT;
+75-percent "75 percent" <<<EOT .75 EOT;
 Solid "Solid" <<<EOT 1 EOT;
 
 }

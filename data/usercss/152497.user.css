@@ -6,12 +6,12 @@
 @version        2017126.14.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown /*[[Background]]*\/ "Background" {
+@advanced dropdown ----Background---- "Background" {
 def "Default*" <<<EOT https://i.imgur.com/uTVZzkC.jpg EOT;
 
-	/*[[Background]]*\/-custom-dropdown "Custom" <<<EOT /*[[/*[[Background]]*\/-custom]]*\/ EOT;
+	----Background-----custom-dropdown "Custom" <<<EOT /*[[----Background-----custom]]*\/ EOT;
 }
-@advanced text /*[[Background]]*\/-custom "Background (Custom)" "https://example.com/image.png"
+@advanced text ----Background-----custom "Background (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://discordapp.com/channels/") {

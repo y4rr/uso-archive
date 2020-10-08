@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown StartOn "Separate color by date" {
-	1.1 "Start on Monday*" <<<EOT     /*Separate color by date, Start on Monday*\/
+	1-1 "Start on Monday*" <<<EOT     /*Separate color by date, Start on Monday*\/
     .month-row>.st-bg-table>tbody>tr>td:nth-of-type(1),
 	.month-row>.st-bg-table>tbody>tr>td:nth-of-type(2),
 	.month-row>.st-bg-table>tbody>tr>td:nth-of-type(3),
@@ -20,7 +20,7 @@
 	.st-bg-today{
 		background-color: #F9F95C !important;
 	} EOT;
-1.2 "Start on Sunday" <<<EOT     /*Separate color by date, Start on Sunday*\/
+1-2 "Start on Sunday" <<<EOT     /*Separate color by date, Start on Sunday*\/
     .month-row>.st-bg-table>tbody>tr>td:nth-of-type(1){background-color:#F6E4E4;}
     .month-row>.st-bg-table>tbody>tr>td:nth-of-type(2),
 	.month-row>.st-bg-table>tbody>tr>td:nth-of-type(3),
@@ -33,7 +33,7 @@
 	.st-bg-today{
 		background-color: #F9F95C !important;
 	} EOT;
-1.3 "Don't separate color." <<<EOT  EOT;
+1-3 "Don't separate color." <<<EOT  EOT;
 
 }
 

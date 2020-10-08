@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown borders "キーワード検索、タグ検索において" {
-	原宿バージョンのデザインに "原宿バージョンのデザインに*" <<<EOT /*!
+	------------- "原宿バージョンのデザインに*" <<<EOT /*!
 	ニコニコ動画(9) 検索結果に枠
 	ニコニコ動画の検索結果などを、枠があった頃のデザインに変更します。
 	Adds borders to each video in the search result page as a throwback design.
@@ -284,7 +284,7 @@
 		height: 232px !important;
 	}
 } EOT;
-枠の表示のみとサムネイルの修正のみ "枠の表示のみとサムネイルの修正のみ" <<<EOT @-moz-document
+----------------- "枠の表示のみとサムネイルの修正のみ" <<<EOT @-moz-document
 		url-prefix("https://www.nicovideo.jp/search/"),
 		url-prefix("https://www.nicovideo.jp/tag/") {
 	/*====================================
@@ -409,7 +409,7 @@
 		background: #F5F5F5 !important;
 	}
 } EOT;
-サムネイルの修正のみ "サムネイルの修正のみ" <<<EOT @-moz-document
+---------- "サムネイルの修正のみ" <<<EOT @-moz-document
 		url-prefix("https://www.nicovideo.jp/search/"),
 		url-prefix("https://www.nicovideo.jp/tag/") {
 	/*====================================

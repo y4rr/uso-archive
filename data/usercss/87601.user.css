@@ -7,20 +7,20 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown font "Какой шрифт использовать?" {
-	Старый (Arial) "Старый (Arial)*" <<<EOT body, .l4a, .u1, .editable { font: 13px Arial, sans, sans-serif !important; } EOT;
-Новый (Roboto) "Новый (Roboto)" <<<EOT /*body, .l4a, .u1, .editable { font: 13px Arial, sans, sans-serif !important; }*\/ EOT;
+	--------Arial- "Старый (Arial)*" <<<EOT body, .l4a, .u1, .editable { font: 13px Arial, sans, sans-serif !important; } EOT;
+-------Roboto- "Новый (Roboto)" <<<EOT /*body, .l4a, .u1, .editable { font: 13px Arial, sans, sans-serif !important; }*\/ EOT;
 
 }
 @advanced dropdown images "Ограничивать ли максимальную высоту картинок?" {
-	Да "Да*" <<<EOT .q9 { max-height: 400px !important; }
+	-- "Да*" <<<EOT .q9 { max-height: 400px !important; }
     img.ar { max-height: 400px !important; margin: 0 auto !important; } EOT;
-Нет "Нет" <<<EOT /*.q9 { max-height: 400px !important; }
+--- "Нет" <<<EOT /*.q9 { max-height: 400px !important; }
      img.ar { max-height: 400px !important; margin: 0 auto !important; }*\/ EOT;
 
 }
 @advanced dropdown button "Убрать кнопку с предложениями добавить людей?" {
-	Да "Да*" <<<EOT .A4bLHc.z6vYse { display: none !important; } EOT;
-Нет "Нет" <<<EOT /*.A4bLHc.z6vYse { display: none !important; }*\/ EOT;
+	-- "Да*" <<<EOT .A4bLHc.z6vYse { display: none !important; } EOT;
+--- "Нет" <<<EOT /*.A4bLHc.z6vYse { display: none !important; }*\/ EOT;
 
 }
 

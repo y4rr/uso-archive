@@ -7,15 +7,15 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown background "Background" {
-bg=harry-potter "Harry Potter*" <<<EOT http://data.sainet.co.uk/medigel/post_icons/background/post_icons_background_harry_potter-1.jpg EOT;
-bg=hoggy "Hoggy" <<<EOT http://data.sainet.co.uk/medigel/post_icons/background/post_icons_background_harry_potter-2.jpg EOT;
+bg-harry-potter "Harry Potter*" <<<EOT http://data.sainet.co.uk/medigel/post_icons/background/post_icons_background_harry_potter-1.jpg EOT;
+bg-hoggy "Hoggy" <<<EOT http://data.sainet.co.uk/medigel/post_icons/background/post_icons_background_harry_potter-2.jpg EOT;
 
 	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
 }
 @advanced text background-custom "Background (Custom)" "https://example.com/image.png"
 @advanced dropdown icons "Icons" {
-icons=themed "Themed*" <<<EOT http://data.sainet.co.uk/medigel/post_icons/design/post_icons_potter.png EOT;
-icons=default "Default" <<<EOT http://data.sainet.co.uk/medigel/post_icons/default/post_icons_potter_default.png EOT;
+icons-themed "Themed*" <<<EOT http://data.sainet.co.uk/medigel/post_icons/design/post_icons_potter.png EOT;
+icons-default "Default" <<<EOT http://data.sainet.co.uk/medigel/post_icons/default/post_icons_potter_default.png EOT;
 
 	icons-custom-dropdown "Custom" <<<EOT /*[[icons-custom]]*\/ EOT;
 }

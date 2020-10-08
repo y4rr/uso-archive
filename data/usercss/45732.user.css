@@ -20,7 +20,7 @@ none "none" <<<EOT 1 EOT;
 20 "20" <<<EOT .60 EOT;
 30 "30" <<<EOT .4 EOT;
 40 "40" <<<EOT .2 EOT;
-50 (complete) "50 (complete)" <<<EOT 0 EOT;
+50--complete- "50 (complete)" <<<EOT 0 EOT;
 
 }
 @advanced dropdown red "red level" {
@@ -66,22 +66,22 @@ none "none" <<<EOT 1 EOT;
 
 }
 @advanced dropdown attach "background/texture scrolls or fixed?" {
-	scrolls/tiled for te "scrolls/tiled for texture or tiled bg*" <<<EOT scroll left top !important;    EOT;
-fixed/tiled for non- "fixed/tiled for non-scrolling texture or tile image bg" <<<EOT fixed left top !important;   EOT;
-fixed/center/stretch "fixed/center/stretch for large image stretch-to-fit-window" <<<EOT fixed center !important;  
+	scrolls-tiled-for-te "scrolls/tiled for texture or tiled bg*" <<<EOT scroll left top !important;    EOT;
+fixed-tiled-for-non- "fixed/tiled for non-scrolling texture or tile image bg" <<<EOT fixed left top !important;   EOT;
+fixed-center-stretch "fixed/center/stretch for large image stretch-to-fit-window" <<<EOT fixed center !important;  
 background-size: 100% 100% !important; EOT;
-fixed/center-top/cov "fixed/center-top/cover for large image expand-to-cover-window" <<<EOT fixed center top !important;  
+fixed-center-top-cov "fixed/center-top/cover for large image expand-to-cover-window" <<<EOT fixed center top !important;  
 background-size: cover !important; EOT;
-fixed/center/cover f "fixed/center/cover for large image expand-to-cover-window" <<<EOT fixed center !important;  
+fixed-center-cover-f "fixed/center/cover for large image expand-to-cover-window" <<<EOT fixed center !important;  
 background-size: cover !important; EOT;
 
 }
 @advanced dropdown image "background image" {
-default texture: scr "default texture: scrolls/tiled recommended*" <<<EOT http://i.imgur.com/onoRw9v.jpg EOT;
-fire 1440x900: fixed "fire 1600x900: fixed/stretch recommended" <<<EOT http://i.imgur.com/RQ2rZgg.jpg EOT;
-fire 1920x1080: fixe "fire 1920x1080: fixed/stretch recommended" <<<EOT http://i.imgur.com/vd0nNDU.jpg EOT;
-frame1 1024x768: fix "frame1 1024x768: fixed/stretch recommended" <<<EOT http://4.bp.blogspot.com/-lZm9KS03PdQ/UD2jprOL5CI/AAAAAAAAEyU/gR7VlIeshnk/s1600/Digital_Photo_Frame.jpg EOT;
-serape 2000x1355: fi "serape 2000x1355: fixed recommended" <<<EOT http://www.casabonitadenver.com/img/bg.jpg EOT;
+default-texture--scr "default texture: scrolls/tiled recommended*" <<<EOT http://i.imgur.com/onoRw9v.jpg EOT;
+fire-1440x900--fixed "fire 1600x900: fixed/stretch recommended" <<<EOT http://i.imgur.com/RQ2rZgg.jpg EOT;
+fire-1920x1080--fixe "fire 1920x1080: fixed/stretch recommended" <<<EOT http://i.imgur.com/vd0nNDU.jpg EOT;
+frame1-1024x768--fix "frame1 1024x768: fixed/stretch recommended" <<<EOT http://4.bp.blogspot.com/-lZm9KS03PdQ/UD2jprOL5CI/AAAAAAAAEyU/gR7VlIeshnk/s1600/Digital_Photo_Frame.jpg EOT;
+serape-2000x1355--fi "serape 2000x1355: fixed recommended" <<<EOT http://www.casabonitadenver.com/img/bg.jpg EOT;
 
 	image-custom-dropdown "Custom" <<<EOT /*[[image-custom]]*\/ EOT;
 }
@@ -264,15 +264,15 @@ no "no" <<<EOT  EOT;
 }
 @advanced color sectioncolor "main sections color" #000000
 @advanced dropdown sectionopacity "main sections opacity" {
-	100% (opaque) "100% (opaque)*" <<<EOT 1 EOT;
-90% "90%" <<<EOT .9 EOT;
-80% "80%" <<<EOT .8 EOT;
-70% "70%" <<<EOT .7 EOT;
-60% "60%" <<<EOT .6 EOT;
-50% "50%" <<<EOT .5 EOT;
-40% "40%" <<<EOT .4 EOT;
-20% "20%" <<<EOT .2 EOT;
-0% (invisible) "0% (invisible)" <<<EOT 0 EOT;
+	100---opaque- "100% (opaque)*" <<<EOT 1 EOT;
+90- "90%" <<<EOT .9 EOT;
+80- "80%" <<<EOT .8 EOT;
+70- "70%" <<<EOT .7 EOT;
+60- "60%" <<<EOT .6 EOT;
+50- "50%" <<<EOT .5 EOT;
+40- "40%" <<<EOT .4 EOT;
+20- "20%" <<<EOT .2 EOT;
+0---invisible- "0% (invisible)" <<<EOT 0 EOT;
 
 }
 @advanced dropdown channel "show channel backgrounds?" {

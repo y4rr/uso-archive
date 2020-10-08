@@ -26,12 +26,12 @@ hide "hide" <<<EOT none EOT;
 default "Yes" <<<EOT var(--browser-bg) EOT;
 
 }
-@advanced color tab bg "Tab Bg" #14151F
-@advanced color url bg "Selected Tab Bg and Url Bg" #1D1E2A
-@advanced color browser bg "Window Bg" #1A1B26
-@advanced color tab fg "Tab Text" #777777
-@advanced color focus fg "Selected Text" #556B82
-@advanced color hover fg "Hover Text" #74857C
+@advanced color tab-bg "Tab Bg" #14151F
+@advanced color url-bg "Selected Tab Bg and Url Bg" #1D1E2A
+@advanced color browser-bg "Window Bg" #1A1B26
+@advanced color tab-fg "Tab Text" #777777
+@advanced color focus-fg "Selected Text" #556B82
+@advanced color hover-fg "Hover Text" #74857C
 
 ==/UserStyle== */
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
@@ -39,12 +39,12 @@ default "Yes" <<<EOT var(--browser-bg) EOT;
 
 /* custom colors */             /*var(--tab-bg)*/
 :root {
---tab-bg: /*[[tab bg]]*/ !important;                /* tab bg */
---url-bg: /*[[url bg]]*/ !important;     /* nav bar and selected tab */
---browser-bg: /*[[browser bg]]*/ !important;     /* url bg & hover bg */    
---main-text: /*[[tab fg]]*/ !important;      /* tab fg */
---secondary-text: /*[[focus fg]]*/ !important;        /* selected tab fg*/
---third-text: /*[[hover fg]]*/ !important;       /* hover tab fg & url bar fg*/
+--tab-bg: /*[[tab-bg]]*/ !important;                /* tab bg */
+--url-bg: /*[[url-bg]]*/ !important;     /* nav bar and selected tab */
+--browser-bg: /*[[browser-bg]]*/ !important;     /* url bg & hover bg */    
+--main-text: /*[[tab-fg]]*/ !important;      /* tab fg */
+--secondary-text: /*[[focus-fg]]*/ !important;        /* selected tab fg*/
+--third-text: /*[[hover-fg]]*/ !important;       /* hover tab fg & url bar fg*/
 }  
 
           /* hide favicons on unpinned tabs (none or inherit) */

@@ -7,23 +7,23 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RGB "Color" {
-	Gray (WinClassic) "Gray (WinClassic)*" <<<EOT 212, 208, 200 EOT;
-White (Luna) "White (Luna)" <<<EOT 236, 233, 216 EOT;
-Gray (Silver) "Gray (Silver)" <<<EOT 224, 223, 227 EOT;
-Silver (WinXP) "Silver (WinXP)" <<<EOT 192, 192, 192 EOT;
-Dark Gray "Dark Gray" <<<EOT 70, 80, 91 EOT;
+	Gray--WinClassic- "Gray (WinClassic)*" <<<EOT 212, 208, 200 EOT;
+White--Luna- "White (Luna)" <<<EOT 236, 233, 216 EOT;
+Gray--Silver- "Gray (Silver)" <<<EOT 224, 223, 227 EOT;
+Silver--WinXP- "Silver (WinXP)" <<<EOT 192, 192, 192 EOT;
+Dark-Gray "Dark Gray" <<<EOT 70, 80, 91 EOT;
 Black "Black" <<<EOT 0, 0, 0 EOT;
 Red "Red" <<<EOT 240, 45, 0 EOT;
 Brown "Brown" <<<EOT 139, 69, 19 EOT;
 Orange "Orange" <<<EOT 251, 140, 0 EOT;
 Yellow "Yellow" <<<EOT 250, 233, 0 EOT;
-Olive (WinXP) "Olive (WinXP)" <<<EOT 198, 210 ,162 EOT;
+Olive--WinXP- "Olive (WinXP)" <<<EOT 198, 210 ,162 EOT;
 Green "Green" <<<EOT 0, 153, 0 EOT;
-Light Blue (Aero) "Light Blue (Aero)" <<<EOT 207, 219, 236 EOT;
-Light Blue (Australi "Light Blue (Australis)" <<<EOT 219, 234, 249 EOT;
-Blue (WinXP) "Blue (WinXP)" <<<EOT 0, 84, 227
+Light-Blue--Aero- "Light Blue (Aero)" <<<EOT 207, 219, 236 EOT;
+Light-Blue--Australi "Light Blue (Australis)" <<<EOT 219, 234, 249 EOT;
+Blue--WinXP- "Blue (WinXP)" <<<EOT 0, 84, 227
  EOT;
-Dark Blue (Nightly) "Dark Blue (Nightly)" <<<EOT 0, 15, 50 EOT;
+Dark-Blue--Nightly- "Dark Blue (Nightly)" <<<EOT 0, 15, 50 EOT;
 Purple "Purple" <<<EOT 128, 0, 128 EOT;
 Pink "Pink" <<<EOT 255, 182, 193 EOT;
 Tan "Tan" <<<EOT 230, 200, 160 EOT;
@@ -31,8 +31,8 @@ Tan "Tan" <<<EOT 230, 200, 160 EOT;
 }
 @advanced dropdown alpha "Transparency" {
 	Opaque "Opaque*" <<<EOT 1 EOT;
-Semi-transparent (re "Semi-transparent (requires Aero Glass)" <<<EOT 0.49 EOT;
-Fully Transparent (r "Fully Transparent (requires Aero Glass)" <<<EOT 0 EOT;
+Semi-transparent--re "Semi-transparent (requires Aero Glass)" <<<EOT 0.49 EOT;
+Fully-Transparent--r "Fully Transparent (requires Aero Glass)" <<<EOT 0 EOT;
 
 }
 @advanced dropdown text "Text" {
@@ -138,7 +138,7 @@ Yes "Yes" <<<EOT  EOT;
 }
 @advanced dropdown titlebar "Paint tab bar and titlebar?" {
 	No "No*" <<<EOT /**\/}/* EOT;
-Paint  TabBar but no "Paint  TabBar but not Titlebar" <<<EOT #main-window:not([stylish-application-version^="29"]):not([stylish-application-version^="30"]):not([stylish-application-version^="31"]):not([stylish-application-version^="32"])[sizemode="maximized"][tabsintitlebar="true"] #TabsToolbar:not(:-moz-lwtheme) {
+Paint--TabBar-but-no "Paint  TabBar but not Titlebar" <<<EOT #main-window:not([stylish-application-version^="29"]):not([stylish-application-version^="30"]):not([stylish-application-version^="31"]):not([stylish-application-version^="32"])[sizemode="maximized"][tabsintitlebar="true"] #TabsToolbar:not(:-moz-lwtheme) {
     background-image: -moz-linear-gradient(center bottom , rgba(26, 26, 26, 0.4) 1px, transparent 1px), -moz-linear-gradient(rgba(128, 128, 128, 0), activecaption 85%) !important;
     background-color: transparent !important;
     }
@@ -179,7 +179,7 @@ Yes "Yes" <<<EOT /**\/}
 }
 @advanced dropdown textbox "Adressbar/Searchbar Transparency" {
 	Default "Default*" <<<EOT  EOT;
-Low Transparency "Low Transparency" <<<EOT #navigator-toolbox textbox:not(:-moz-lwtheme) {
+Low-Transparency "Low Transparency" <<<EOT #navigator-toolbox textbox:not(:-moz-lwtheme) {
     background-color: rgba(255, 255, 255, .84) !important;
     }
 
@@ -192,7 +192,7 @@ Low Transparency "Low Transparency" <<<EOT #navigator-toolbox textbox:not(:-moz-
     }
 
  EOT;
-High Transparency "High Transparency" <<<EOT #navigator-toolbox textbox:not(:-moz-lwtheme) {
+High-Transparency "High Transparency" <<<EOT #navigator-toolbox textbox:not(:-moz-lwtheme) {
     background-color: rgba(255, 255, 255, .54) !important;
     }
 
@@ -208,9 +208,9 @@ High Transparency "High Transparency" <<<EOT #navigator-toolbox textbox:not(:-mo
 
 }
 @advanced dropdown tabbar "Australis & Aero Glass only - \"Foggy\" TabBar background" {
-	Leave it alone "Leave it alone*" <<<EOT box-shadow: 0 0 30px 30px rgba(174, 189, 204, 0.85) !important; EOT;
-Remove it "Remove it" <<<EOT display: none !important; EOT;
-Paint with chosen co "Paint with chosen color" <<<EOT opacity: .5 !important; EOT;
+	Leave-it-alone "Leave it alone*" <<<EOT box-shadow: 0 0 30px 30px rgba(174, 189, 204, 0.85) !important; EOT;
+Remove-it "Remove it" <<<EOT display: none !important; EOT;
+Paint-with-chosen-co "Paint with chosen color" <<<EOT opacity: .5 !important; EOT;
 
 }
 

@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown ycode "All or Main Window Only" {
-	All Windows "All Windows*" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+	All-Windows "All Windows*" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 scrollbar
 {
@@ -69,7 +69,7 @@ scrollbar scrollbarbutton
 {
   visibility: collapse !important;
 } EOT;
-Main Window Only "Main Window Only" <<<EOT @-moz-document url-prefix(http),url-prefix(ftp),url-prefix(file),url-prefix(about)
+Main-Window-Only "Main Window Only" <<<EOT @-moz-document url-prefix(http),url-prefix(ftp),url-prefix(file),url-prefix(about)
 {
 :-moz-any(html,div)>scrollbar
 {
@@ -136,7 +136,7 @@ Main Window Only "Main Window Only" <<<EOT @-moz-document url-prefix(http),url-p
 }
 @advanced dropdown ycolour "Colour" {
 	Custom "Custom*" <<<EOT /*[[ycustom]]*\/ EOT;
-Grey  "Grey " <<<EOT grey EOT;
+Grey- "Grey " <<<EOT grey EOT;
 ActiveBorder "ActiveBorder" <<<EOT ActiveBorder EOT;
 WindowFrame "WindowFrame" <<<EOT WindowFrame EOT;
 Background "Background" <<<EOT Background EOT;
@@ -146,16 +146,16 @@ Scrollbar "Scrollbar" <<<EOT Scrollbar EOT;
 }
 @advanced color ycustom "Custom Colour" #4C7A8C
 @advanced dropdown yopacity "Transparency" {
-	80% "80%*" <<<EOT 0.8 EOT;
-100% (Solid) "100% (Solid)" <<<EOT 1 EOT;
-90% "90%" <<<EOT 0.9 EOT;
-70% "70%" <<<EOT 0.7 EOT;
-60% "60%" <<<EOT 0.6 EOT;
-50% "50%" <<<EOT 0.5 EOT;
-40% "40%" <<<EOT 0.4 EOT;
-30% "30%" <<<EOT 0.3 EOT;
-20% "20%" <<<EOT 0.2 EOT;
-10% "10%" <<<EOT 0.1 EOT;
+	80- "80%*" <<<EOT 0.8 EOT;
+100---Solid- "100% (Solid)" <<<EOT 1 EOT;
+90- "90%" <<<EOT 0.9 EOT;
+70- "70%" <<<EOT 0.7 EOT;
+60- "60%" <<<EOT 0.6 EOT;
+50- "50%" <<<EOT 0.5 EOT;
+40- "40%" <<<EOT 0.4 EOT;
+30- "30%" <<<EOT 0.3 EOT;
+20- "20%" <<<EOT 0.2 EOT;
+10- "10%" <<<EOT 0.1 EOT;
 
 }
 @advanced dropdown ywidth "Hover Bar Thickness" {

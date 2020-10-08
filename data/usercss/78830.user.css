@@ -549,7 +549,7 @@ code{
 /*  black divided end   *\/
 /*----------------------*\/
      EOT;
-Gray (Divided / High "Gray" <<<EOT /*------------------------*\/
+Gray--Divided---High "Gray" <<<EOT /*------------------------*\/
 /*  gray divided hc start *\/
 /*------------------------*\/
     
@@ -986,7 +986,7 @@ code{
 /*  gray divided hc end    *\/
 /*-------------------------*\/
      EOT;
-True Black "True Black" <<<EOT /*----------------------*\/
+True-Black "True Black" <<<EOT /*----------------------*\/
 /*  trublk        start *\/
 /*----------------------*\/
     
@@ -1539,8 +1539,8 @@ divideyes2 "Yes (High Contrast)" <<<EOT div.chat-messages .chat-line:nth-child(2
 
 }
 @advanced dropdown springgreen "Colour Fixes" {
-	Do Nothing "Do Nothing*" <<<EOT /* No Colour Fixes *\/ EOT;
-Block Spring Green "Block Spring Green" <<<EOT /* Block SpringGreen *\/
+	Do-Nothing "Do Nothing*" <<<EOT /* No Colour Fixes *\/ EOT;
+Block-Spring-Green "Block Spring Green" <<<EOT /* Block SpringGreen *\/
     #chat_line_list > .line > p > [style*=springgreen] {color:#00A800!important;}
     #chat_line_list > .line > p > [style*="color:#00FF7F"] {color:#00A800!important;}
     p[style*=springgreen]{color:#00A800!important;}
@@ -1551,7 +1551,7 @@ Block Spring Green "Block Spring Green" <<<EOT /* Block SpringGreen *\/
     span.message[style*="color:#00FF7F"]{color:#00A800!important;}
 
  EOT;
-Lighten Dark Blue [  "Lighten Dark Blue [ *** ]" <<<EOT /* Lighten Dark Blues *\/
+Lighten-Dark-Blue--- "Lighten Dark Blue [ *** ]" <<<EOT /* Lighten Dark Blues *\/
     #chat_line_list > .line > p > [style*=darkblue] {color:#c4c4ff!important;}
     #chat_line_list > .line > p > [style*="color:#00008B"] {color:#c4c4ff!important;}
     #chat_line_list > .line > p > [style*="color:#0000FF"] {color:#c4c4ff!important;}
@@ -1564,7 +1564,7 @@ Lighten Dark Blue [  "Lighten Dark Blue [ *** ]" <<<EOT /* Lighten Dark Blues *\
     span.message[style*="color:#00008B"] {color:#c4c4ff!important;}
     span.message[style*="color:#0000FF"] {color:#c4c4ff!important;}
  EOT;
-Lighten All Blues [  "Lighten All Blues [ *** ]" <<<EOT /* Lighten All Blues *\/
+Lighten-All-Blues--- "Lighten All Blues [ *** ]" <<<EOT /* Lighten All Blues *\/
     #chat_line_list > .line > p > [style*=blue] {color:#c4c4ff!important;}
     #chat_line_list > .line > p > [style*="color:#0000FF"] {color:#c4c4ff!important;}
     
@@ -1592,7 +1592,7 @@ Lighten All Blues [  "Lighten All Blues [ *** ]" <<<EOT /* Lighten All Blues *\/
 
     span.message[style*=darkblue] {color:#c4c4ff!important;}
     span.message[style*="color:#00008B"] {color:#c4c4ff!important;} EOT;
-Block springgreen an "Block springgreen and Lighten Blues [ *** ]" <<<EOT /* Block springgreen and lighten all blues *\/
+Block-springgreen-an "Block springgreen and Lighten Blues [ *** ]" <<<EOT /* Block springgreen and lighten all blues *\/
     #chat_line_list > .line > p > [style*=blue] {color:#c4c4ff!important;}
     #chat_line_list > .line > p > [style*="color:#0000FF"] {color:#c4c4ff!important;}
     
@@ -1651,10 +1651,10 @@ color:/*[[colordefinedcolor]]*\/!important;
 }
 @advanced color colordefinedcolor "Force Color (If Chosen Above)" #CCCCCC
 @advanced dropdown emoticons "Twitch Faces" {
-	No Changes "No Changes*" <<<EOT /* No Face Changes *\/ EOT;
-All Blocked "All Blocked" <<<EOT /* All Faces Blocked *\/
+	No-Changes "No Changes*" <<<EOT /* No Face Changes *\/ EOT;
+All-Blocked "All Blocked" <<<EOT /* All Faces Blocked *\/
 [class*="emo-"] {display:none !important;} EOT;
-All faces are Franke "All faces are FrankerZ" <<<EOT /* All faces are FrankerZ *\/
+All-faces-are-Franke "All faces are FrankerZ" <<<EOT /* All faces are FrankerZ *\/
 [class*="emo-"] {
 background-image: url("http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3b96527b46b1c941-40x30.png")!important;
     height: 30px!important;
@@ -1665,7 +1665,7 @@ background-image: url("http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-glo
 }
 @advanced dropdown broadcastmeta "Broadcast Title" {
 	Show "Show*" <<<EOT /*Description Visible*\/ EOT;
-Hide [ ** ] "Hide [ ** ]" <<<EOT #broadcast-meta,#broadcast_meta{
+Hide------- "Hide [ ** ]" <<<EOT #broadcast-meta,#broadcast_meta{
     margin:30px 0px -70px!important;
     padding:0px 0px 1px!important;
     background:rgba(0,0,0,0.7)!important;
@@ -1692,44 +1692,44 @@ Hide [ ** ] "Hide [ ** ]" <<<EOT #broadcast-meta,#broadcast_meta{
 
 }
 @advanced dropdown chatfont1 "Chat Font Family" {
-	Helvetica (Twitch De "Helvetica (Twitch Default)*" <<<EOT     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; EOT;
-Lucida Grande "Lucida Grande" <<<EOT     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important; EOT;
-Segoe UI "Segoe UI" <<<EOT     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important; EOT;
-Gill Sans "Gill Sans" <<<EOT     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !important; EOT;
+	Helvetica--Twitch-De "Helvetica (Twitch Default)*" <<<EOT     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; EOT;
+Lucida-Grande "Lucida Grande" <<<EOT     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important; EOT;
+Segoe-UI "Segoe UI" <<<EOT     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important; EOT;
+Gill-Sans "Gill Sans" <<<EOT     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !important; EOT;
 Tahoma "Tahoma" <<<EOT     font-family: Tahoma, Verdana, Segoe, sans-serif !important; EOT;
 Calibri "Calibri" <<<EOT     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important; EOT;
-Franklin Gothic Medi "Franklin Gothic Medium" <<<EOT     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !important; EOT;
+Franklin-Gothic-Medi "Franklin Gothic Medium" <<<EOT     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !important; EOT;
 Impact "Impact" <<<EOT     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif !important; EOT;
-Trebuchet MS "Trebuchet MS" <<<EOT     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !important; EOT;
+Trebuchet-MS "Trebuchet MS" <<<EOT     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !important; EOT;
 Verdana "Verdana" <<<EOT     font-family: Verdana, Geneva, sans-serif !important; EOT;
 Georgia "Georgia" <<<EOT     font-family: Georgia, Times, "Times New Roman", serif !important; EOT;
-Lucida Bright "Lucida Bright" <<<EOT     font-family: "Lucida Bright", Georgia, serif !important; EOT;
+Lucida-Bright "Lucida Bright" <<<EOT     font-family: "Lucida Bright", Georgia, serif !important; EOT;
 
 }
 @advanced dropdown chatfont2 "Chat Font Size" {
-	1.00 "1.00*" <<<EOT     font-size:1.0em !important; EOT;
-1.10 "1.10" <<<EOT     font-size:1.1em !important; EOT;
-1.15 "1.15" <<<EOT     font-size:1.15em !important; EOT;
-1.20 "1.20" <<<EOT     font-size:1.2em !important; EOT;
-1.25 "1.25" <<<EOT     font-size:1.25em !important; EOT;
-1.30 "1.30" <<<EOT     font-size:1.3em !important; EOT;
-1.40 "1.40" <<<EOT     font-size:1.4em !important; EOT;
-1.50 "1.50" <<<EOT     font-size:1.5em !important; EOT;
-1.60 "1.60" <<<EOT     font-size:1.6em !important; EOT;
-1.70 "1.70" <<<EOT     font-size:1.7em !important; EOT;
-1.80 "1.80" <<<EOT     font-size:1.8em !important; EOT;
-1.90 "1.90" <<<EOT     font-size:1.9em !important; EOT;
-2.00 "2.00" <<<EOT     font-size:2.0em !important; EOT;
+	1-00 "1.00*" <<<EOT     font-size:1.0em !important; EOT;
+1-10 "1.10" <<<EOT     font-size:1.1em !important; EOT;
+1-15 "1.15" <<<EOT     font-size:1.15em !important; EOT;
+1-20 "1.20" <<<EOT     font-size:1.2em !important; EOT;
+1-25 "1.25" <<<EOT     font-size:1.25em !important; EOT;
+1-30 "1.30" <<<EOT     font-size:1.3em !important; EOT;
+1-40 "1.40" <<<EOT     font-size:1.4em !important; EOT;
+1-50 "1.50" <<<EOT     font-size:1.5em !important; EOT;
+1-60 "1.60" <<<EOT     font-size:1.6em !important; EOT;
+1-70 "1.70" <<<EOT     font-size:1.7em !important; EOT;
+1-80 "1.80" <<<EOT     font-size:1.8em !important; EOT;
+1-90 "1.90" <<<EOT     font-size:1.9em !important; EOT;
+2-00 "2.00" <<<EOT     font-size:2.0em !important; EOT;
 
 }
 @advanced dropdown chatfont3 "Chat Line Height" {
-	1.50 (Twitch Default "20px (Twitch Default)*" <<<EOT     line-height:20px !important; EOT;
-2.00 "25px" <<<EOT     line-height:25px !important; EOT;
+	1-50--Twitch-Default "20px (Twitch Default)*" <<<EOT     line-height:20px !important; EOT;
+2-00 "25px" <<<EOT     line-height:25px !important; EOT;
 
 }
 @advanced dropdown chatsize "Chat Size" {
-	100% Width (320px) "100% Width (320px)*" <<<EOT /* Default Chat *\/ EOT;
-110% Width (352px) "110% Width (352px)" <<<EOT /* Widen Chat *\/
+	100--Width--320px- "100% Width (320px)*" <<<EOT /* Default Chat *\/ EOT;
+110--Width--352px- "110% Width (352px)" <<<EOT /* Widen Chat *\/
 /* No Width *\/
 #main_col:not([class*="expandRight"]):not([style*="margin-right: 320px;"]){
     margin-right:350px!important;
@@ -1760,7 +1760,7 @@ width:164px!important;
     max-width: 216px!important;
 }
  EOT;
-115% Width (368px) "115% Width (368px)" <<<EOT /* Widen Chat *\/
+115--Width--368px- "115% Width (368px)" <<<EOT /* Widen Chat *\/
 /* No Width *\/
 #main_col:not([class*="expandRight"]):not([style*="margin-right: 320px;"]){
     margin-right:366px!important;
@@ -1792,7 +1792,7 @@ width:172px!important;
 }
 
  EOT;
-120% Width (384px) "120% Width (384px)" <<<EOT /* Widen Chat *\/
+120--Width--384px- "120% Width (384px)" <<<EOT /* Widen Chat *\/
 /* No Width *\/
 #main_col:not([class*="expandRight"]):not([style*="margin-right: 320px;"]){
     margin-right:382px!important;
@@ -1822,7 +1822,7 @@ width:180px!important;
     width: 248px!important;
     max-width: 248px!important;
 } EOT;
-125% Width (400px) "125% Width (400px)" <<<EOT /* Widen Chat *\/
+125--Width--400px- "125% Width (400px)" <<<EOT /* Widen Chat *\/
 /* No Width *\/
 #main_col:not([class*="expandRight"]):not([style*="margin-right: 320px;"]){
     margin-right:398px!important;
@@ -1855,18 +1855,18 @@ width:188px!important;
 
 }
 @advanced dropdown buttonoptions "Button Options" {
-	Hide Subscribe "Hide Subscribe*" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
+	Hide-Subscribe "Hide Subscribe*" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
 display:none!important} EOT;
-All Visible "All Visible" <<<EOT /*No button hiding*\/ EOT;
-Hide Share "Hide Share" <<<EOT /* Probably the share button take 4 *\/
+All-Visible "All Visible" <<<EOT /*No button hiding*\/ EOT;
+Hide-Share "Hide Share" <<<EOT /* Probably the share button take 4 *\/
 div.channel-actions >  span:nth-of-type(3){
     display:none!important;
 } EOT;
-Hide Bookmark "Hide Bookmark" <<<EOT /* Probably the bookmark button take 4 *\/
+Hide-Bookmark "Hide Bookmark" <<<EOT /* Probably the bookmark button take 4 *\/
 div.channel-actions >  span:nth-of-type(4){
     display:none!important;
 } EOT;
-Hide Subscribe, Shar "Hide Subscribe, Share and Bookmark" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
+Hide-Subscribe--Shar "Hide Subscribe, Share and Bookmark" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
 display:none!important}
 
 /* Probably the share button take 4 *\/
@@ -1880,14 +1880,14 @@ div.channel-actions >  span:nth-of-type(4){
 }
 
  EOT;
-Hide Subscribe and S "Hide Subscribe and Share" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
+Hide-Subscribe-and-S "Hide Subscribe and Share" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
 display:none!important}
 
 /* Probably the share button take 4 *\/
 div.channel-actions >  span:nth-of-type(3){
     display:none!important;
 } EOT;
-Hide Subscribe and B "Hide Subscribe and Bookmark" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
+Hide-Subscribe-and-B "Hide Subscribe and Bookmark" <<<EOT span#is-subscribed,span#sub-details,a#subscribe_action{
 display:none!important}
 
 /* Probably the bookmark button take 4 *\/
@@ -1895,7 +1895,7 @@ div.channel-actions >  span:nth-of-type(4){
     display:none!important;
 }
  EOT;
-Hide Bookmark and Sh "Hide Bookmark and Share" <<<EOT /* Probably the share button take 4 *\/
+Hide-Bookmark-and-Sh "Hide Bookmark and Share" <<<EOT /* Probably the share button take 4 *\/
 div.channel-actions >  span:nth-of-type(3){
     display:none!important;
 }
@@ -1913,8 +1913,8 @@ No "No" <<<EOT /* Using new moderator icon *\/ EOT;
 
 }
 @advanced dropdown hideicons "Icon Sets" {
-	No changes "No changes*" <<<EOT /* Nothing Hidden vanilla icons *\/ EOT;
-Hide Sub and Turbo I "Hide Sub and Turbo Icons" <<<EOT /* Hide sub and turbo icons *\/
+	No-changes "No changes*" <<<EOT /* Nothing Hidden vanilla icons *\/ EOT;
+Hide-Sub-and-Turbo-I "Hide Sub and Turbo Icons" <<<EOT /* Hide sub and turbo icons *\/
 .line .turbo a,div.badge.turbo{
     display:none!important;
 }
@@ -1926,7 +1926,7 @@ Hide Sub and Turbo I "Hide Sub and Turbo Icons" <<<EOT /* Hide sub and turbo ico
     display:none!important;
 }
  EOT;
-Hide Sub Icons "Hide Sub Icons" <<<EOT /* Hide sub icons *\/
+Hide-Sub-Icons "Hide Sub Icons" <<<EOT /* Hide sub icons *\/
 .line .subscriber a, .line .subscriber,div.badge.subscriber{
     display:none!important;
 }
@@ -1935,7 +1935,7 @@ Hide Sub Icons "Hide Sub Icons" <<<EOT /* Hide sub icons *\/
     display:none!important;
 }
  EOT;
-Hide Turbo Icons "Hide Turbo Icons" <<<EOT /* Hide turbo icons *\/
+Hide-Turbo-Icons "Hide Turbo Icons" <<<EOT /* Hide turbo icons *\/
 .line .turbo a,div.badge.turbo{
     display:none!important;
 }
@@ -1947,7 +1947,7 @@ Hide Turbo Icons "Hide Turbo Icons" <<<EOT /* Hide turbo icons *\/
 }
 @advanced dropdown turbooff "Disable Turbo Colours" {
 	1129561-No "No*" <<<EOT /* Turbo Colours On *\/ EOT;
-1129562-Yes [Turbo c "Yes [Turbo colours to White]" <<<EOT #chat_line_list li a.nick:not([style="color:#2E8B57"]):not([style="color:#FF31FF"]):not([style="color:#FFFFFF"]):not([style="color:#F61A8C"]):not([style="color:#B22222"]):not([style="color:#1E90FF"]):not([style="color:#00FF7F"]):not([style="color:#0000FF"]):not([style="color:#8A2BE2"]):not([style="color:#FF4500"]):not([style="color:#008000"]):not([style="color:#5F9EA0"]):not([style="color:#9ACD32"]):not([style="color:#FF0000"]):not([style="color:#FF69B4"]):not([style="color:#D2691E"]):not([style="color:#FF7F50"]):not([style="color:#DAA520"]):not([style="color:inherit"])
+1129562-Yes--Turbo-c "Yes [Turbo colours to White]" <<<EOT #chat_line_list li a.nick:not([style="color:#2E8B57"]):not([style="color:#FF31FF"]):not([style="color:#FFFFFF"]):not([style="color:#F61A8C"]):not([style="color:#B22222"]):not([style="color:#1E90FF"]):not([style="color:#00FF7F"]):not([style="color:#0000FF"]):not([style="color:#8A2BE2"]):not([style="color:#FF4500"]):not([style="color:#008000"]):not([style="color:#5F9EA0"]):not([style="color:#9ACD32"]):not([style="color:#FF0000"]):not([style="color:#FF69B4"]):not([style="color:#D2691E"]):not([style="color:#FF7F50"]):not([style="color:#DAA520"]):not([style="color:inherit"])
 {
 	color:#CCCCCC!important;
 }
@@ -1967,7 +1967,7 @@ span.message:not([style="color:#2E8B57"]):not([style="color:#FF31FF"]):not([styl
 {
 	color:#CCCCCC!important;
 } EOT;
-1129563-Yes [Turbo c "Yes [Turbo colours to Black]" <<<EOT #chat_line_list li a.nick:not([style="color:#2E8B57"]):not([style="color:#FF31FF"]):not([style="color:#000000"]):not([style="color:#F61A8C"]):not([style="color:#B22222"]):not([style="color:#1E90FF"]):not([style="color:#00FF7F"]):not([style="color:#0000FF"]):not([style="color:#8A2BE2"]):not([style="color:#FF4500"]):not([style="color:#008000"]):not([style="color:#5F9EA0"]):not([style="color:#9ACD32"]):not([style="color:#FF0000"]):not([style="color:#FF69B4"]):not([style="color:#D2691E"]):not([style="color:#FF7F50"]):not([style="color:#DAA520"]):not([style="color:inherit"])
+1129563-Yes--Turbo-c "Yes [Turbo colours to Black]" <<<EOT #chat_line_list li a.nick:not([style="color:#2E8B57"]):not([style="color:#FF31FF"]):not([style="color:#000000"]):not([style="color:#F61A8C"]):not([style="color:#B22222"]):not([style="color:#1E90FF"]):not([style="color:#00FF7F"]):not([style="color:#0000FF"]):not([style="color:#8A2BE2"]):not([style="color:#FF4500"]):not([style="color:#008000"]):not([style="color:#5F9EA0"]):not([style="color:#9ACD32"]):not([style="color:#FF0000"]):not([style="color:#FF69B4"]):not([style="color:#D2691E"]):not([style="color:#FF7F50"]):not([style="color:#DAA520"]):not([style="color:inherit"])
 {
 	color:#000000!important;
 }

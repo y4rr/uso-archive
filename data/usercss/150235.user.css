@@ -6,23 +6,23 @@
 @version        20171112.18.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown ヘッダー "ヘッダーをスクロールで流す" {
-	デフォルト(流さない) "デフォルト(流さない)*" <<<EOT  EOT;
-流す "流す" <<<EOT .LyHead {
+@advanced dropdown ---- "ヘッダーをスクロールで流す" {
+	----------- "デフォルト(流さない)*" <<<EOT  EOT;
+-- "流す" <<<EOT .LyHead {
     position: absolute;
     width: 100vw;
 } EOT;
 
 }
-@advanced dropdown スクロールバー "横スクロールバーを表示しない" {
-	デフォルト(表示) "デフォルト(表示)*" <<<EOT  EOT;
-表示しない "表示しない" <<<EOT html {
+@advanced dropdown ------- "横スクロールバーを表示しない" {
+	--------- "デフォルト(表示)*" <<<EOT  EOT;
+----- "表示しない" <<<EOT html {
     overflow-x: hidden; 
 } EOT;
 
 }
-@advanced dropdown 動画サイズ "縦動画のサイズ" {
-	270×480 "270×480*" <<<EOT .MdMN14Info,
+@advanced dropdown ----- "縦動画のサイズ" {
+	270-480 "270×480*" <<<EOT .MdMN14Info,
 .lyTopInner {
     width: 676px !important; 
 }
@@ -36,7 +36,7 @@
 .MdMN15Comment {
     height: 592px !important;
 } EOT;
-216×384 "216×384" <<<EOT .MdMN14Info,
+216-384 "216×384" <<<EOT .MdMN14Info,
 .lyTopInner {
     width: 676px !important;
 }
@@ -50,7 +50,7 @@
 .MdMN15Comment {
     height: 496px !important;
 } EOT;
-360×640 "360×640" <<<EOT .MdMN14Info,
+360-640 "360×640" <<<EOT .MdMN14Info,
 .lyTopInner {
     width: 706px !important; 
 }
@@ -64,7 +64,7 @@
 .MdMN15Comment {
     height: 752px !important;
 } EOT;
-482×855 "482×855" <<<EOT .MdMN14Info,
+482-855 "482×855" <<<EOT .MdMN14Info,
 .lyTopInner {
     width: 828px !important; 
 }
@@ -88,9 +88,9 @@ body {
     min-width: 1030px;
 }
 
-/*[[ヘッダー]]*/
+/*[[----]]*/
 
-/*[[スクロールバー]]*/
+/*[[-------]]*/
 
 @media screen and (max-width: 1026px) {
 
@@ -98,7 +98,7 @@ body {
     min-width: unset;
 }
 
-/*[[動画サイズ]]*/
+/*[[-----]]*/
 
 .MdMN15Comment {
     margin-left: 20px;

@@ -8,21 +8,21 @@
 @preprocessor   uso
 @advanced dropdown imgwidth "Maximum image width" {
 	off "off" <<<EOT /*image shrinking is off*\/ EOT;
-auto-width (requires "auto-width (requires Greasemonkey script)" <<<EOT /*use HBO Forum Enhancer to auto-shrink large images*\/
+auto-width--requires "auto-width (requires Greasemonkey script)" <<<EOT /*use HBO Forum Enhancer to auto-shrink large images*\/
  EOT;
-post width "post width" <<<EOT #glob_wrapbbs img {
+post-width "post width" <<<EOT #glob_wrapbbs img {
 	max-width:			100% 	!important;
 } EOT;
-1000 px "1000 px" <<<EOT #glob_wrapbbs img {
+1000-px "1000 px" <<<EOT #glob_wrapbbs img {
 	max-width:			1000px 	!important;
 } EOT;
 
 }
 @advanced dropdown pagewidth "Post width" {
-	510px (default) "510px (default)" <<<EOT 510px EOT;
-750px (recommended) "750px (recommended)" <<<EOT 750px EOT;
+	510px--default- "510px (default)" <<<EOT 510px EOT;
+750px--recommended- "750px (recommended)" <<<EOT 750px EOT;
 1000px "1000px" <<<EOT 1000px EOT;
-full screen width "full screen width" <<<EOT none EOT;
+full-screen-width "full screen width" <<<EOT none EOT;
 
 }
 @advanced dropdown hidechallengebox "Hide challenge box" {

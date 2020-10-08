@@ -7,12 +7,12 @@
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown hyphens "переносы слов" {
-	вкл. "вкл.*" <<<EOT *\/ EOT;
-выкл "выкл" <<<EOT   EOT;
+	---- "вкл.*" <<<EOT *\/ EOT;
+---- "выкл" <<<EOT   EOT;
 
 }
 @advanced dropdown chrome "browser" {
-	Chrome/Opera/Fx33+ "Chrome/Opera/Fx33+*" <<<EOT scroll /* EOT;
+	Chrome-Opera-Fx33- "Chrome/Opera/Fx33+*" <<<EOT scroll /* EOT;
 any "any" <<<EOT   EOT;
 
 }

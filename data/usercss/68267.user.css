@@ -7,15 +7,15 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown logo "Logo text" {
-mumblr. "mumblr.*" <<<EOT mumblr. EOT;
-stumblr. "stumblr." <<<EOT stumblr. EOT;
-tumblah. "tumblah." <<<EOT tumblah. EOT;
+mumblr- "mumblr.*" <<<EOT mumblr. EOT;
+stumblr- "stumblr." <<<EOT stumblr. EOT;
+tumblah- "tumblah." <<<EOT tumblah. EOT;
 
 	logo-custom-dropdown "Custom" <<<EOT /*[[logo-custom]]*\/ EOT;
 }
 @advanced text logo-custom "Logo text (Custom)" "https://example.com/image.png"
 @advanced dropdown slogan "Slogan" {
-Worst fools' word re "Worst fools' word recall.*" <<<EOT Worst fools' word recall. EOT;
+Worst-fools--word-re "Worst fools' word recall.*" <<<EOT Worst fools' word recall. EOT;
 
 	slogan-custom-dropdown "Custom" <<<EOT /*[[slogan-custom]]*\/ EOT;
 }

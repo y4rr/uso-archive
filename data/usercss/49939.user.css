@@ -7,13 +7,13 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown keeporremove "(UN)FOLLOW LINK" {
-	Keep the link "Keep the link" <<<EOT body[class*='channel'] #actions {position:relative!important; top:-21px!important; border:0!important;}
+	Keep-the-link "Keep the link" <<<EOT body[class*='channel'] #actions {position:relative!important; top:-21px!important; border:0!important;}
 body[class*='channel'] #actions ul#action_links {border:0!important;}
 body[class*='channel'] #stats, body[class*='channel'] #stats h3 {width:630px!important; text-align:right!important;}
 body[class*='channel'] #stats h3 span#channel_viewer_count_container, body[class*='channel'] #stats h3 strong {width:200px!important; margin:auto auto!important;}
 body[class*='channel'] #stats h3 span {padding-right:10px!important;}
 body[class*='channel'] #stats h3 strong + strong {padding-left:9px!important;} EOT;
-Remove the link "Remove the link" <<<EOT body[class*='channel'] #actions {display:none!important;}
+Remove-the-link "Remove the link" <<<EOT body[class*='channel'] #actions {display:none!important;}
 body[class*='channel'] #stats, body[class*='channel'] #stats h3 {width:630px!important; text-align:center!important;}
 body[class*='channel'] #stats h3 span#channel_viewer_count_container, body[class*='channel'] #stats h3 strong {width:200px!important; margin:auto auto!important;}
 body[class*='channel'] #stats h3 span {padding-right:10px!important;}
@@ -21,9 +21,9 @@ body[class*='channel'] #stats h3 strong + strong {padding-left:10px!important;} 
 
 }
 @advanced dropdown socialbuttons "FACEBOOK & TWITTER BUTTONS" {
-	I'm sharing this! "I'm sharing this!" <<<EOT /* BYE BYE JTV CHAT & ACTION LINKS *\/
+	I-m-sharing-this- "I'm sharing this!" <<<EOT /* BYE BYE JTV CHAT & ACTION LINKS *\/
 body[class*='channel'] #chat_container, #stats > h3 > strong:last-child, #action_contents {display:none!important;} EOT;
-I'm keeping quiet! "I'm keeping quiet!" <<<EOT /* BYE BYE JTV CHAT & ACTION LINKS *\/
+I-m-keeping-quiet- "I'm keeping quiet!" <<<EOT /* BYE BYE JTV CHAT & ACTION LINKS *\/
 body[class*='channel'] #chat_container, #stats > h3 > strong:last-child, #action_contents, body[class*='channel'] #share_api_buttons_dtabs {display:none!important;} EOT;
 
 }

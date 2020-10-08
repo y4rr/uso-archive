@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown Auto-hide "Auto Hide [Resolution]" {
-	[Auto-hide uni] "Auto Hide off [New method]*" <<<EOT   .ytp-big-mode video { height: calc(100% - 33px)!important;}
+	-Auto-hide-uni- "Auto Hide off [New method]*" <<<EOT   .ytp-big-mode video { height: calc(100% - 33px)!important;}
   .ytp-fullscreen .html5-video-container { height: 100%!important; }
   
    /*The Player Fixes*\/
@@ -25,12 +25,12 @@
    /*Auto Hide off*\/
   .ytp-chrome-bottom { opacity: 1 !important; }
  EOT;
-[Auto-hideon] "Auto Hide on [All]" <<<EOT /*Auto-hide*\/ EOT;
+-Auto-hideon- "Auto Hide on [All]" <<<EOT /*Auto-hide*\/ EOT;
 
 }
 @advanced dropdown YTC-Fixes "YTC Fixes" {
-	[NO-YTC] "No I don't use Youtube Center*" <<<EOT /*YTC-Fixes*\/ EOT;
-[YES-YTC] "Yes  I use Youtube Center" <<<EOT    /*YTC fixes*\/
+	-NO-YTC- "No I don't use Youtube Center*" <<<EOT /*YTC-Fixes*\/ EOT;
+-YES-YTC- "Yes  I use Youtube Center" <<<EOT    /*YTC fixes*\/
     /*-2/3% With YTC* fixed/
  .html5-video-content { top: 0% !important; }
   /*-2% with YTCenter dev >V 531 on*\/

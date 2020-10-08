@@ -11,9 +11,9 @@
 @advanced color Tertiary "Tertiary Background" #434953
 @advanced color Border "Border" #3C414C
 @advanced color Link "Link" #4B97F8
-@advanced color Primary Text "Primary Text" #EBEBEB
-@advanced color Secondary Text "Secondary Text" #BEBEBE
-@advanced color Tertiary Text "Tertiary Text" #888888
+@advanced color Primary-Text "Primary Text" #EBEBEB
+@advanced color Secondary-Text "Secondary Text" #BEBEBE
+@advanced color Tertiary-Text "Tertiary Text" #888888
 @advanced color Highlight "Highlight" #6A25AA
 
 ==/UserStyle== */
@@ -40,7 +40,7 @@
   html,
   body {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   html,
@@ -55,16 +55,16 @@
 
   input {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   em {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   /* Track */
   ::-webkit-scrollbar-track {
-    background: /*[[Secondary Text]]*/ !important;
+    background: /*[[Secondary-Text]]*/ !important;
   }
 
   /* Handle */
@@ -87,19 +87,19 @@
 
   ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
     opacity: 1;
     /* Firefox */
   }
 
   :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-sidebar[aria-expanded="false"] .aui-sidebar-group:focus,
@@ -112,7 +112,7 @@
   }
 
   .action-description {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .issue-drop-zone__button {
@@ -120,11 +120,11 @@
   }
 
   form.aui div.description {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .jira-dialog .dialog-menu-group .dialog-menu-item.selected {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
   }
 
   .jira-dialog .dialog-menu-group .dialog-menu-item {
@@ -135,7 +135,7 @@
   .aui-select2-container.select2-container a.select2-choice,
   .aui-select2-container.select2-container .select2-choice:visited {
     background: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     text-shadow: none !important;
     border-color: /*[[Border]]*/ !important;
   }
@@ -156,15 +156,15 @@
   }
 
   .ghx-column-headers .ghx-release.ghx-disabled {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
   }
 
   .ghx-controls-filters dd a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-controls-filters dd a.ghx-active {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background: /*[[Secondary]]*/ !important;
   }
 
@@ -193,20 +193,20 @@
   }
 
   .activity-item-description .user-content {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .activity-item-description blockquote {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .activity-item-summary {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .activity-item-info {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   #activity-stream-show-more:hover {
@@ -240,17 +240,17 @@
 
   .aui-badge {
     background-color: /*[[Link]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-button.aui-button-primary {
     background-color: /*[[Link]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-button.ghx-dropdown-trigger::after,
   .aui-buttons .aui-button.aui-button-primary.ghx-dropdown-trigger::after {
-    border-top-color: /*[[Primary Text]]*/ !important;
+    border-top-color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-dropdown2.aui-style-default {
@@ -265,13 +265,13 @@
 
   .aui-header .aui-dropdown2-trigger {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-dropdown2.aui-style-default > strong,
   .aui-dropdown2.aui-style-default .aui-dropdown2-section > strong,
   .aui-dropdown2-heading {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-sidebar[aria-expanded="false"]
@@ -287,23 +287,23 @@
   .aui-sidebar-submenu[aria-expanded="false"]
     .aui-sidebar-group.aui-sidebar-group-actions.active::after {
     background-color: /*[[Primary]]*/ !important;
-    border-color: /*[[Primary Text]]*/ !important;
+    border-color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-header,
   .aui-sidebar,
   .aui-sidebar-wrapper {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-icon-small::before,
   .aui-icon-large::before {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-label {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-dropdown2.aui-style-default [role="menuitem"],
@@ -312,7 +312,7 @@
   .aui-dropdown2.aui-style-default [role="radio"],
   .aui-dropdown2.aui-style-default [role="checkbox"],
   .aui-dropdown2.aui-style-default a {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-dropdown2.aui-style-default:hover
@@ -321,7 +321,7 @@
     .aui-dropdown2-radio:not(.aui-dropdown2-disabled):hover,
   .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover {
     text-decoration: underline !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-lozenge-current.aui-lozenge-subtle {
@@ -355,7 +355,7 @@
   .aui-message-error {
     background: /*[[Secondary]]*/ !important;
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-message.hint,
@@ -363,14 +363,14 @@
   .aui-message.info,
   .aui-message-info {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-message.warning,
   .aui-message-warning {
     background: /*[[Secondary]]*/ !important;
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-sidebar-submenu .aui-navgroup-horizontal .aui-nav > li a:focus,
@@ -397,7 +397,7 @@
 
   .aui-sidebar .aui-nav > li > .aui-nav-item > .aui-icon,
   .aui-sidebar-submenu .aui-nav > li > .aui-nav-item > .aui-icon {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-sidebar[aria-expanded="false"]
@@ -424,7 +424,7 @@
   }
 
   .aui-theme-default .aui-button.aui-button-subtle {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .aui-theme-default .gf-button-cell a.gf-button,
@@ -484,7 +484,7 @@
   }
 
   .ghx-backlog-header .ghx-name {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ghx-column-headers .ghx-column {
@@ -510,7 +510,7 @@
   }
 
   .ghx-detail-issue {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-detail-nav-item b {
@@ -535,7 +535,7 @@
   }
 
   .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .ghx-fa {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ghx-drag-in-progress
@@ -567,16 +567,16 @@
   }
 
   .ghx-extra-field {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ghx-iconfont.aui-icon-small::before,
   .ghx-iconfont.aui-icon-large::before {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-inner {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-issue {
@@ -585,12 +585,12 @@
 
   .ghx-issue-compact {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ghx-issue-compact .ghx-end {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ghx-marker {
@@ -653,7 +653,7 @@
   }
 
   .iic-widget__summary {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .issue-body-content .module > .mod-header .ops {
@@ -710,7 +710,7 @@
   }
 
   .jira-multi-select > .icon.drop-menu::after {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .links-list dd {
@@ -728,7 +728,7 @@
   .no-results {
     background: /*[[Secondary]]*/ !important;
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .ops li a.drop-menu.active,
@@ -771,7 +771,7 @@
 
   .property-list .item .name,
   .item-details dl > dt {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .saved-search-selector {
@@ -779,7 +779,7 @@
   }
 
   .gf-testing-label {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
   }
 
   .split-view #stalker,
@@ -797,7 +797,7 @@
   }
 
   .trigger-label {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .tabwrap > ul.tabs > li a,
@@ -812,12 +812,12 @@
 
   .aui-nav-heading,
   .aui-navgroup-vertical .aui-nav-heading {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   a.aui-button {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
@@ -826,13 +826,13 @@
   aui-inline-dialog .contents,
   .aui-inline-dialog .contents {
     background: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
   button.aui-button {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   form.aui .text,
@@ -843,7 +843,7 @@
   form.aui .multi-select,
   form.aui .aui-select2-container {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-dialog .dialog-page-body {
@@ -860,7 +860,7 @@
 
   form.aui legend,
   form.aui label {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   h1,
@@ -868,7 +868,7 @@
   h3,
   h4,
   h5 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-pool-column,
@@ -885,12 +885,12 @@
   table.aui > tbody > tr,
   table.aui > tfoot > tr {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   table.aui > tbody > tr > th {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-list a.active,
@@ -902,7 +902,7 @@
   .aui-navgroup-vertical .aui-nav > li > a,
   .aui-nav-vertical > li > a,
   .aui-list a:link {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-navgroup-vertical .aui-nav > li > a:hover,
@@ -914,7 +914,7 @@
   .aui-button.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless)::after,
   .aui-buttons
     .aui-button.aui-button-primary.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless)::after {
-    border-top-color: /*[[Primary Text]]*/ !important;
+    border-top-color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-parent-stub {
@@ -923,7 +923,7 @@
 
   .ghx-parent-stub .ghx-summary,
   .ghx-parent-stub .ghx-key {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   span.pc.highlightChanges {
@@ -947,7 +947,7 @@
   .wiki-button-bar,
   .sd-rte-bar {
     background: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
@@ -955,13 +955,13 @@
   .menu-item a,
   .menu-item {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
   .active-tab a,
   .active-tab {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
   }
 
   .panel,
@@ -972,19 +972,19 @@
   .code,
   body#tinymce pre {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
   th.confluenceTh {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
   body#tinymce table td,
   body#tinymce table th {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
     background: /*[[Primary]]*/ !important;
   }
@@ -992,16 +992,16 @@
   #ghx-update-message,
   .ghx-tv-message {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
   }
 
   .upload-progress-bar .upload-progress-bar__file-name {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .upload-progress-bar .upload-progress-bar__file-size {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     box-shadow: none !important;
   }
 
@@ -1012,7 +1012,7 @@
   pre,
   code {
     background: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .ghx-classification-item:hover {
@@ -1060,11 +1060,11 @@
   }
 
   #activity-stream-show-more span {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   #footer .footer-body {
-    color: /*[[Tertiary Text]]*/ !important;
+    color: /*[[Tertiary-Text]]*/ !important;
   }
 
   #dashboard > .vertical.tabs,
@@ -1080,15 +1080,15 @@
   }
 
   .issue-list > li .splitview-issue-link .issue-link-summary {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .iic-trigger button {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
   }
 
   .iic-trigger button:hover {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .aui-sidebar .jira-navigation .aui-nav>li>.aui-nav-item>.aui-icon::before {
@@ -1101,7 +1101,7 @@
 
   ul.labels li .lozenge {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   .navigator-container {
@@ -1121,7 +1121,7 @@
   body,
   body * {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
   }
 
   a {

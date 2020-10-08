@@ -414,7 +414,7 @@ New "New" <<<EOT /*No changes to the search bar*\/ EOT;
 
 }
 @advanced dropdown myforeground "Foreground Changes" {
-	Normal Version "Normal Version*" <<<EOT a:not(.nodark){
+	Normal-Version "Normal Version*" <<<EOT a:not(.nodark){
     color: #5787B5 ! important;
 }
 
@@ -608,7 +608,7 @@ a:not(.nodark):hover{
 .topics .extraInfo a:not(.nodark):hover{
     color: #D1D1D1 ! important;
 } EOT;
-Dark Version "Dark Version" <<<EOT .feed [data-topicid]:not(.nodark),
+Dark-Version "Dark Version" <<<EOT .feed [data-topicid]:not(.nodark),
 .feed [data-membershipid]:not(.nodark),
 .feed [data-tag]:not(.nodark),
 .feed [data-groupId]:not(.nodark){
@@ -1748,7 +1748,7 @@ div.gated:not(.nodark){
 
 }
 @advanced dropdown mysections "Active Sections" {
-	Gradient Dark "Gradient Dark*" <<<EOT .container_body:not(.nodark){
+	Gradient-Dark "Gradient Dark*" <<<EOT .container_body:not(.nodark){
     background: #0c0c0c ! important;
 }
 
@@ -1804,7 +1804,7 @@ nav.left a:not(.nodark),
     background: -webkit-linear-gradient(left,  #121212 19%, #2d2d2d 100%) ! important;
     background: linear-gradient(left,  #121212 19%, #2d2d2d 100%) ! important;
 } EOT;
-Gradient Light "Gradient Light" <<<EOT .container_body:not(.nodark){
+Gradient-Light "Gradient Light" <<<EOT .container_body:not(.nodark){
     background: #0c0c0c ! important;
 }
 
@@ -1860,7 +1860,7 @@ nav.left a:not(.nodark),
     background: -webkit-linear-gradient(left,  #121212 19%, #2d2d2d 100%) ! important;
     background: linear-gradient(left,  #121212 19%, #2d2d2d 100%) ! important;
 } EOT;
-Bar Dark "Bar Dark" <<<EOT .container_body:not(.nodark){
+Bar-Dark "Bar Dark" <<<EOT .container_body:not(.nodark){
     background: #0c0c0c ! important;
 }
 
@@ -1910,7 +1910,7 @@ nav.left a:not(.nodark),
 .forumPost .header_post:not(.nodark){
     background: #121212 ! important;
 } EOT;
-Bar Light "Bar Light" <<<EOT .container_body:not(.nodark){
+Bar-Light "Bar Light" <<<EOT .container_body:not(.nodark){
     background: #0c0c0c ! important;
 }
 
@@ -2309,7 +2309,7 @@ Removed "Removed" <<<EOT .editedTime:not(.nodark){
 
 }
 @advanced dropdown myfont "Font Settings" {
-	Old Font "Old Font*" <<<EOT .forumPost article .post_body:not(.nodark),
+	Old-Font "Old Font*" <<<EOT .forumPost article .post_body:not(.nodark),
 .forumPost article .post_urlLinkOrImage:not(.nodark){
     font-size: 13px ! important;
     font-family: 'OpenSansRegular',Arial,sans-serif ! important;
@@ -2334,11 +2334,11 @@ Removed "Removed" <<<EOT .editedTime:not(.nodark){
     font-family: 'OpenSansSemibold',arial,sans-serif ! important;
     font-size: 13px ! important;
 } EOT;
-New Font "New Font" <<<EOT /*No changes to the font function*\/ EOT;
+New-Font "New Font" <<<EOT /*No changes to the font function*\/ EOT;
 
 }
 @advanced dropdown mybackground "Background" {
-	The Darkness "The Darkness*" <<<EOT .Nav_Top:not(.nodark){
+	The-Darkness "The Darkness*" <<<EOT .Nav_Top:not(.nodark){
     background: url("http://i.imgur.com/6f7jXSn.png") repeat fixed ! important;
 }
 
@@ -2352,23 +2352,23 @@ Gradient "Gradient" <<<EOT .Nav_Top:not(.nodark){
 body:not(.nodark){
     background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAASwAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAwICAgICAwICAwUDAwMFBQQDAwQFBgUFBQUFBggGBwcHBwYICAkKCgoJCAwMDAwMDA4ODg4OEBAQEBAQEBAQEAEDBAQGBgYMCAgMEg4MDhIUEBAQEBQREBAQEBARERAQEBAQEBEQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/8AAEQgEsABaAwERAAIRAQMRAf/EAHMAAQEBAQEAAAAAAAAAAAAAAAABAgMJAQEBAQEAAAAAAAAAAAAAAAAAAQIDEAACAgEDAwMCBwADAQEBAAAAAREhMUFRAmFxEoGRofAiscHR4fEyUkJighNyAxEBAQEBAQEBAAAAAAAAAAAAABEBIUExEv/aAAwDAQACEQMRAD8A8qgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgIQAgBACAEAIAQAgBACAEAUgAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAACoAAAAAAAAAAAAAgBDAQAgBACAEAWAJDAQwEAIYGggAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAABYCEAIAQAgBACAEAIAQAgBAFAAAAAAAAAAAAAAAAAAAAAAAAAAABSqAAAAAAAAAAAABYCEAIAQAgBACAEAIAQAgBAFKgAAAAAAAAAAAAFCAAAAAAAAAAAAAWChACAEAIAQAgBACAEAIAQAKAAAAAAAAAAAAACgAAAAAAAAAAAAGoRUIQCEAhAIQCEAhAIQCEAhECEAhFFgrJACCBBQgBBFIAQEIAQUIAQQagqEAIYCGUIZAhlCGQIAQwEMBBQgg1BUQAQIKEEFgCQUIAQyABSiEGioAAAAAAgAUCAAoBH6gWDSEAIYCHqAsBACGFIYQhgIAQwpYRosQAAQC4KAAgAIEAAAEGihACAASFBSALGwRAoAAQEI6BWokRAAAUsAAAWAAANAAFkC9CsgB3YAAIAgdAKIAEeRAWwCwrRWSBAEAsCxAsQIECBAsQCQLECBBqzaISAILD2ECIyWCEFgoJaMCRsQIKEAWwLDnoVFtVAE+mAiALDkIjTCloA08gFIC/YCtbICX+QG0mVkh6BSGEPFsKeGuAEBCGrQCHAUXBv9Ah4hTx5MIvgywrXjFSCp49RCr4gpHWAETTwAjYBADx92Ci4tOAlSKkKrWuoF8X9IJVhYKh4r9wUoBF0ASKEKCB4pApEMBEWgJ4hasQghC+PpgbahmmUhe4UicIIJTQBpPAVaigiRXcKRNMgdihCAKM+5BYexUaaoqD3gBF4AjWBBYAeKV0IU7AGkBElMpBVhTQRIQFrbUDUYo1GQCpfIgjTkQEmmIC43aEKRsSAlHqWBFdBAjp6kgaYwUWv89AKuOxYhAFXHoIUh3qAS6ARJ4aAsPYINMKQ8NARcWqgC+L2EC9tANw0VEhxkCvixCkPICIVgIQCHIKkXGwFiAVIEKRbiwLBRfFqsFSkQkwJHX0Cj4tR8Aq+M65CUipQBpSrj0AQlcgRpyFWIp0EpGoCeoo143GDUSouK1ruCrWYgIcVGgXTxbt1uCiSaTmADxLYBp4jOgBceK9BCr4q30yIlSFUsRasdNZ0wEaSUXk0iViAK+K1WBCqlCSd9SozCwiKrSWPQBDmJAiWiEKrX12AQlSjrYBLjl1j1As8fyyVDxeYyIU/D8ALGq1KiQlOu5FWkpLEEqnKAQsAR3Cgir4rYsSpEvYi1XER7FRJ/69SK6eKlQ7LGKQ9NMoQIm9GA4x75GGkJy1e4DXOAEub7AWu+yAQph+ggkRnQQOXFO9YEM0n/r8AdGtF7liJE1dUFF1IHjUJPcsKrnQREadVkQPGq9BFo1DUokFfF49PQsSpDTlIRSHmK3EEvrt6EHRpydIykbasQE3ENEFjoWBcYECHqhAtZ7CB3QgNMQS3oQVS1gsC9/kQVFxBSmIHjuIUAQ6n1EDehAvTIgVNgGpahgIvAgQ/wBBAh/56CFaiq7GkSLx2JBVPqpAkN4QF5NRDKYOYnGwESdcX8EFh0oKCXLKZID301KhGmuhFSwOkKlFmmV8NFFZEESlOV0Aj4NtrGsZIrXiqLEYjkskaa5LbO+5UwXFRDqPzEQXCeIhSIdIiqocyryyoxHH8yRp1pU7NMJx5JLHYi7hKSjfIRXOZ0wUJcdQCUyn6kgQsv5KEx+YCE7XsIUi4kBShoBPHYHWr109QhTkp1GtFVkVfGa9dyxBTlAOVKdQZg29SELzlFDxiRAh7ZywDvlOd0BfT+QNNRmI7FiYPjLUL9ywqaS/qyKdNBBYUWsZEBpQ9VH0wDWq9xDF8Zp4LErLevsRVcU4zqBHxucTVCFXx6/AhWnxm3WyKzSvJpXr2ArSdR7lRniuPhL/AHojW71eXFxK10KmazxTpLaWRdXDc41YFhP+txuETwS77MRarSi1evYIq4KFHqWJTwW3XXO4hV48bnXDgJur4tzgsKNPDIDUNKc5QBqL0xEARpJVnbAF5ccS46AzUSlS1igC4S9oC1Yhdgg+LfFJUUqf/Pl9P5EWteNTHcrNVPyU4KkOXFP2HDNZjlhvJGmsp7LVBEaeukX/AABUnyhsolt2uxAbaaasAlNzf6gH0XcCxx2WNy8QdWn1AJpyljQKsppwsaBETUvpqAxOi9wEQr0uQtF1WmQip392pQlTACEtM5AkcoXsTovq8boqL4J9Cwp4wnKraQUhZddMyBdXXqVEXFcU1qT4tqeDnGLYWjXisthPrSuOM7ATwUQIUuZANN6Z1Af/ADX5CH6aaqYvb+CoU3GmAJSXlneepBaTpd29iiOsa3IFzaUgEuKf4fSCI2k1CFVp20lWslqI1alSQI8Z5a7kVL/31wijp92c7uAgk04aoCNL+uupFXKtRJUZahLfVkaWmvGAixik0uhUElr6fiBWnGcdgjPJv0YazBJNRy19GQPB/Px7lhVuYSl6FReXF5eSwzUUwni7INOZ336lRFw8omlFCLUS5Y0RFRcXy5VCi6BY3E/2qSsopUwp7BReMZlfSHAfF1YhUjovdZ3IrUOJ4w2islN98TgB4t3KjGdBCq08Y2YDlKauqGmM44042gCx4rdvXoAS5U1D6gK8nz2+QL/ZuKYROSTTi9J+QuHkv8/hj9QRpqJcU0giqIb0qvQqHjOKfLKyIVlJtRndEVp8XT5KSpWXwy5lqKZIta8Yt2VKkuFwaudAHjyztXckW4mU3ENYeQC4OFx3dpCLV8VuVK0oiP8AO5WSHKcSnnYDP9mpUPVdSKvFvjK/zYNXj5Z5Y0vcqanLyTnmtsMir5eOr9SokLWE50Iqpq9r2KiJ8lXjWj2kKsQ5eW8wETz6fzuKRtrL7daLEYbabapbsjRPkr0aiMfIPizMrL0rQqH2tpNXmtADUZziEIYJy+i1AKUqpZAnG148fWRF1XxpT7IRKjSb8VMvGpFTx476xgQrd8cyy1kUZsBxSThfXQLqxDty/rYIjcO1cRIonLgqfH3Iua0+MrrmNCpU8VxU61XqCooltqXkirEYrSJ6lDx0W2mwSrC2e3oAjyzha/oA0q1IF5NpTUdMoozflbxhEDLlb6/sBeT6qolLcGHHSc3gYaueTqnFyEZ5RKUfTC4vG/uhOe/cGj4vlC5VyxPYsKVt8f8AIgJ8niPTuUKac4WsAOfJxCxFrcaZg1yab/ACOYXlJFV/d0jKiSoOHnPXQAmkobjZgH5VP3WoANJL7c4t+4BRPWMxQD7t3+3uQIblK+1FGoauZWfgIiUt3OsbSA5zAMTiuWG46hdXwblJwtAlGlySa3sCtcZlOXuBEnT5aO3p3AzyScXM23sRcbfjidMlZY8eH+uudSN3WuNNzT32KzqREN+gVfF3yVJKnqEpE0vnUCqWocLowK9mq3TCI2uLq50CluXyWMMCJTWVn6kCXjl7BV4q2tOWFgJrXj018v2KlZ4q4Xr6omLpDc6RXRgNU5XsBeO7GJpKa8uNPegJ5S1qlv3CxJluXE36EVqko8cblZGly4qHm4yF9PHj5y53aCXiqG+0wih59dY0wKRIjlSl6sRU4zLqlpsDVXGvF43wIUqYemmQicVrMrP5iLutcYSUNb9wmjU1MRhrYQRPlx+5y/wCpPFxy1twgLPJcZwEJaXkku8gJ47rPUERRPjbeoUh/jLyASfJQ8aasA4ws7gVcm06h9tS1IjfGZTh6+5Fa5YfuVMT7qTanayKj4wkkpeXsIVU22m/YqH2w0l0fqAjqsz6AVQ7V6SwJLXKLjBFgsqsLICeXla6MIkuZWKr+ArULj+KfcqJyvrGYIuHF+Nt5dA0+3krXSgh4pcqdvQFRt+UKpudQvjcvb+SswUtxlQiYJzu9NVgaYqhdnkDKttPXQjStruk30CK/u43XcqIpbnj6TginHk+VrOuwNxaa+7OIwVDjySV10GG4iczy9m9iKsP/T2wVKy005r0IqtJWne24QhuIVBTlT266AxYlZxsVBJclONwI2pT9kiKnHHa/YYaLydp11A0sQyocm1E4dP1BjPl/wDz65kcWa0+S0VX7oqRM41+CKZlp9PYCcuKalIQzVwoS9P1AvFtOHje9QmkrisNQAzWGBI8VXX3wIErlbnogq+KwsP2ksSnjz3WBNLiRx8dl1AKEk1h64ArtJR9IDMtKXy9CKswrpMoKEpwn09Ai1TbVYW4BKbnWwJ9zhNLoRVviqUt/UlRl466r+ArXhw/IsxLqUkm28fVkUcXPStQK99PkInLjf4CLmpc1nLhAWYcZXQC1/adgicp5OvbsFwacp679QiS3Ld9N7Iqyk21llRfF7IQqcUkpT7oKcp5RQMHEvbqEJqdPnIBw7aYF4rinC9wamlqJIp5avLwUg1Uu/kBEJaRt1AquG7e6CJ9+/TTI6cWUrzkCcvuW0DTCm6a9bCrOnyERcnNuthVitO3uogqI8Kbe5FHxThcanIhTRtKd5wAWj1rLAJ2uLWZA3HH4+djTLLTfR67GVGnGcb4AlNVrgKinyrtZDxpppVn4Kgs1TAnKWk5wNXBJf2frTAusL3KiJKWn3Iquv65eoRn7fifUi9WWpfeCoWv73IFWyz2wA5UlPb6gpg5dddSA0n6ZAmU68UBeitICSlPJW9gLK5aggm3pK+oBE8ufz0Iswbh3UYbKYtt+KpBBqGo9gLPXuUS4qJ0sgzTXeJRFaaqHce5YlSFxh4mLYUbul9MA+TaUZ1FSK5aiLAkPZZ3AOFCVRqArhLXSAv0iZqFuEH49t5yBU03WcgMu1jQBleT9NLAP5wAblK7VSBXUSs+pURW4bf8kVYX56e4BNPj5LHYoz5cVTx0JSHjChvMBSN1jXAKuqcVGQhDSfHOxRG7t9yKeHHlhx+4hVaWcxuEE5V+5Rlp/wDHQyq3tp8+xQiMuNwLlQnMZbCJC5OlMfWpFVtxi+hURUrWcqb+Qqp6T7BEctNLSF6AVSuOJaYEh3rH5BRNt/LXcC0/3yVGo6aT+wRhTL5cskVppw2q2KExE+oGbdpSQG21n0YFbnjKWcdwIrbTv9gqpvjWrwiofaqx27EC7WJwBG01XcKsLZe2hWU+5v8ADqRpbamdIe8hElTHuwK1NNe2gEm5WgBcm24u/gUhy+1zH7BcE13esgIf9nnGwFaeGrV0IhS4yoAk8vpfVkWY1SSNMs3MS9SNEtLbcA3y8nppIRUnnN2wJO2AQc35aAOKxchV4sINb9AJ91pJRgCS9tOpFacvlG347lRFLCq+W+ugRFrOuoDjFp/oF0bbU1+QQaryTTCtVyU+pUR8k049SUiOcY2Cr5Pkno+gqL58d3t6lqRnk7qHNk1cacRtJUZVuPgiq218lDjDTm+sENITissCR/xVtZ9QKvFUtKZREkuU6JkUhSkrezsIqc49Sh48fz1wQqJQ01hhTlXF56AwvxUK9AL5SlOuQkRtxtGgFnlOkpT2Af8AZMAnjlESBfFNS8wWFYhKEne5lVTScr30KjV7adP1AyvuUzbAvG6djDUrjxu1tAUfk/6poIaREvUA4XGX2cBVaa4uFehURXHFqIwRRPp3QBvjva/KwDbUOYA193+euSspyWEnGpFw48qx2eRTcS1/betwq8piPUJiRDdW8bCBlVeXYVJheGJxqQVNuah63ZTSEu2+oCoreUtQhTTTp7BS+vtr7BFWb0yAlL7d8AZ/6zjcitRau9CokaZioCjTaXFezyEKUS5nEaBSLc+iQRfGo0QKkJvWdKCjan7rQRqX+f1RUZuuK9aIquW4dbMB4pudQVOL5TEd90RdOTraNCguOr7egSktKVf8BVfGVm9QlOPk0DSVG0APGF1EKv8A56Z0KjLh8k1aWhFPuUxYBp4xHyFGnyjSX67BD7ZzXcCzct1mMSAbWMa0gJKlpzHXcC8WsavqMNH9yrXICVxSudiizx6/69AM8dljroRdWEphwEIhz7gRzUvIUhQk8NhF5Qml6dQYiiWu3UKS58cvXAQhTOKAcfrsF0al5uALC/yvfQImvlmM/TAOE7qNAEynC9AK4aik9wENdVr6UAd1upQEmG9q0yFJbUz31CKluukZAKFHUoi5S417bkWNePHYrNTlnbYmrhMp1iOhRE3ceiIo5eMPGAYNffiswPTxW03CzoERtTDchVahJQEMv7calE+5tTnMaEXhyenx8hMWWBOXGEnPrGoXNGtk5CHFOhhrVTV3ZRjW4X6GValpxroVGW3P3IK1KlccBGacp5yuxFVceOH22KVP7a4INX0wa6iJS/J4emSC3yb9nsBHah3sgpa+3O/VgSuTnO3sQXxw38aFKVy5J7BFf3XjZgTxaUushaN3DUxiAE8pl42AnkvghGuOlNfWpUHTlTe6AimWr26YAQ25nHVsCu+PJalEXGFVkhVf2279NgIk8tvsFXqleqCEy6dATf8Ay9WFI6fX6kFSUQ3nBULVaAV+OclRMKUFWlPIDEulKIq8nEJORphUYx6KQDbmXhYCL5JYsUg6XTQDPjx3WIItaSqPpmkWYU5Azm2r+CKsw4TnqEImk8u+wEaSc8tcBSYpW9/QBCmlOsBFrxj8ewE1x/CANp8XLUaJMKv/AK/gISpmWgFwmAbfGsTr1AJPirYEubUb2FVTNZCFtqV32AJtfbF7sCp/c1sURU7v0IJEcXts9Aep/wDV9SVfyqVTj9Civx/tNlQ5OWlo1gmmEPfeq0ANNtOwJNy32jpuFGmmmgiu36UBLlSv2As71GoCXyW8qyiT/wDncitRGZZUSVP6EDxac29xCnZeqANSvHADlDttzol0GmH9UpvYAr5bAG6pTuBGtv6sKuPt8sR0CJPXWcP9QCmZz8AHx14uJ0EM0c09dgpM2sr1CJ445LsFq8odP0W4MSHNaakFeFyancqEqYTiemAHJPip0w0NXFccV5BE8nv+ApCpnE6yFVO4SwERcbnHYLR0kle2MBDlacvGgXFlU1foVBzMEEay06f6kVYpLj/6Kh9sQ3vqAhRLUAc4e38kadH4tupa0Kyi5JVDlK0KsP8AlPZIC+EuZESjU6w0BFcVhaAVXej0AeSlbaAiR/y03AOomwo348k3j9ALL3f16ZKiZbisOSKsOtQiOEm8tOwqpKZ7wEJppwn8AROVal76QBfJ3jpIIih7dgukJOXVaALS8YtAE88nK+uoCV/n+QNQ3eu5WU5Lr1GricVUT2XcmGkeKutgrUT+eklRPKaxMr3FCVpp0IQm50QB+MN57gHE0AaecQihC+mvcgSuVpSUPtiVX4kC8YnUCSnHHlYGm4TeupRlNJ+N3+ZFV+KiclRF/nfKIK1F5WIAkJcoC+Ey/wDSwBrwWxWazfJdFmCNKuLWVjHoEp5Tyj0RaIojqtCKka6KCC+M1KezLEpMNp/c9go5ctdsQwHkou2qFSNOF1+oKjMQ73ointmMaAXlM/ba9BpiRDj4Cq28+wRlLKifz9Qq/dLScyBePi/bIRnilmfUi6vJvyVUipgszx7QwqLk4Sfu9gQcZmX9bgSO3uRWmsIrJKhx9egUt8pegFrSIwVBp6LNehBnV+K7PYiryS8W9sF0xbekTuEOVLxXpoDGYhJ64sKcvGaIuNw9ysM+Pk5+BFqPontfUiqkknxfLNlRZzFR7AF4zny3XUCNQ3y00SAuYc4gBP8AxXsUZlttPUitrqs23oVGeTSlNXt3IYvq/wBiiu9H0AzE06f5EBV2e6GAkkuui2ARDT616gW4rAE0l+oUhJTPxID+qqPyCfSXMzWwU66ddZ0A1L+vwLWWU2lGY2yRTKUYVyAVSmqymAT4pzvsRVUOXT4lQm42qiiVFX0IC4w1h/oCjh/b6gH1veALEONgH3fngA1NuP1AnLjL2WvUGacpdvrEDTDDt4AspunEAZryc6ahVcUko2YQ5J9Og0xV92WmBn+t6+xFa5J204LqYz58/wA8CrMXxtxU47CJVjxVZXyUIS6V8EEePtwlaCqpiVroEI09kAjlSanXsAmVifwAjdKVnRaBVyqdahDyez7gifd/peyCq27d+kBETUS31aAs8lmIARUU2UPufHZsgccQwaPlVLu8OARIaxlBWmqX1JWWW1osa9SKXhKVrAF9PgCcpW7bGriq+Klz+QROXK0ngVcxZtxD7hBcm02vTuWkSHfQirXjONkE9RNwnnqwK48oVbgVxbXtuVGWly4wn2ZFK/0BKmErQVqOTVxG5UNrsgqTl8prYDMq1M9wp5TKWAkVzpj6oCLy8owFE9Jme7CKm0rhJASV5Rn9wqRw/wA67kOteKznZlSlw0Ai4zMgJjkkqSWwESUTsA/PHsBppJZnuVGPJPKMtRXTv09OxQbnktsgJWMdQjMcfn5I03xX2ttZLjOijMuooCPExcwFHcufcC0lt0YQpzDzYGeSlyiLixMJZwvQosqY0WWwgvG4xtgDLS5YmSLVlf5edtdyiqGl+IROV1oFwylFahFwoj8EUMvBAhTSKD8diGIlEJWn7BV5NN9QiJJY/dhTxl33UhKscevv8AOMwtV0AjWZh7LUCPHj8kVqFFrRT9MqC4wmn2XqCpXjMRG4U5Q0ppBMHyivdMLB7xCYRHxryX72Fq8uT4w0NTMPLh8Tp7DhNVX6egDlDuRphVXD9yjLctr9zKt16FZYlt4hSStKlM6lBKLSV5YQaTiXiAo2lQRcqJjvYE8ePXbQRaRGdQh+KASAAO1YCyKQVF0clEWSAA0wAhgHqAAUwDl5Ggqx6AVgTUKBFidQIAjWCKvqaRDKmslQ7gJUwRTKKgFLCK3I0SdAL6ARdwLCEESXqAnMepFInHoVBAKT+0C976ARfiAe6AsKPyAmLATNoCz9SBMRIABgBnDAvoBJIo59ioagXqgEygE4Akv4AMAAyAAAAKBAAAAAsAAAACAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q%3D%3D") repeat-x fixed left top #083354 ! important;
 } EOT;
-Bungie Day "Bungie Day" <<<EOT .Nav_Top:not(.nodark){
+Bungie-Day "Bungie Day" <<<EOT .Nav_Top:not(.nodark){
     background: url("http://i.imgur.com/B5txZ4d.png") repeat fixed ! important;
 }
 
 body:not(.nodark){
     background: url("http://halo.bungie.net/images/bungieday/bg.jpg") repeat-x fixed center top #000000 ! important;
 } EOT;
-Beta 1 "Beta 1" <<<EOT body:not(.nodark){
+Beta-1 "Beta 1" <<<EOT body:not(.nodark){
     background: url("http://www.bungie.net/images/theme/bungienet/bgs/bg_header_forum.jpg") no-repeat fixed top center ! important;
 } EOT;
-Beta 2 "Beta 2" <<<EOT body:not(.nodark){
+Beta-2 "Beta 2" <<<EOT body:not(.nodark){
     background: url("http://www.bungie.net/images/theme/bungienet/bgs/bg_header_profile.jpg") no-repeat fixed top center ! important;
 } EOT;
-Beta 3 "Beta 3" <<<EOT body:not(.nodark){
+Beta-3 "Beta 3" <<<EOT body:not(.nodark){
     background: url("http://www.bungie.net/images/theme/bungienet/bgs/bg_header_groups.jpg") no-repeat fixed top center ! important;
 } EOT;
-Cold Storage "Cold Storage" <<<EOT body:not(.nodark){
+Cold-Storage "Cold Storage" <<<EOT body:not(.nodark){
     background: url("http://halo.bungie.net/images/base_struct_images/themes/coldstorage/background2.jpg") repeat-x fixed left top #000000 ! important;
 } EOT;
 ODST "ODST" <<<EOT body:not(.nodark){
@@ -2384,7 +2384,7 @@ None "None" <<<EOT /*No changes to the background*\/ EOT;
 
 }
 @advanced dropdown myninja "Ninja and Employee Titles" {
-	New Titles "New Titles*" <<<EOT #forum_post.employee > article > .post h1:not(.nodark):after,
+	New-Titles "New Titles*" <<<EOT #forum_post.employee > article > .post h1:not(.nodark):after,
 .replies .employee > article > .post h1:not(.nodark):after{
     background: none repeat scroll 0 0 #000000 ! important;
     border: 1px inset #FFD224 ! important;
@@ -2429,7 +2429,7 @@ None "None" <<<EOT /*No changes to the background*\/ EOT;
 .replies .ninja > article > .post h1 a:not(.nodark){
   color: #FF9966 ! important;
 } EOT;
-Old Titles "Old Titles" <<<EOT /*No changes to the employee and ninja titles*\/ EOT;
+Old-Titles "Old Titles" <<<EOT /*No changes to the employee and ninja titles*\/ EOT;
 
 }
 @advanced dropdown mycolumn "Column Positioning" {

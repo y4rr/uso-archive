@@ -10,11 +10,11 @@
 	hide "hide*" <<<EOT .category-icon{
 display:none !Important;
 } EOT;
-show up "show up" <<<EOT  EOT;
+show-up "show up" <<<EOT  EOT;
 
 }
 @advanced dropdown settingplaceholder2 "counter language" {
-	English(enabled,disa "English(enabled,disabled)*" <<<EOT #addon-list:after {
+	English-enabled-disa "English(enabled,disabled)*" <<<EOT #addon-list:after {
     content: "("counter(addoncount)" enabled, "counter(disabled)" disabled)" !important;
     position: fixed !important;
     top: 35px !important;
@@ -24,7 +24,7 @@ show up "show up" <<<EOT  EOT;
     cursor: default;
     white-space: nowrap !important;
 } EOT;
-中文(启用 禁用) "中文(启用 禁用)" <<<EOT #addon-list:after {
+--------- "中文(启用 禁用)" <<<EOT #addon-list:after {
     content: "("counter(addoncount)" 启用, "counter(disabled)" 禁用)" !important;
     position: fixed !important;
     top: 35px !important;
@@ -38,8 +38,8 @@ show up "show up" <<<EOT  EOT;
 
 }
 @advanced dropdown settingplaceholder3 "autohide the control buttons(enable disable remove)" {
-	always show up "always show up*" <<<EOT  EOT;
-autohide until hover "autohide until hovered over or select the row" <<<EOT .addon.addon-view .status-control-wrapper{
+	always-show-up "always show up*" <<<EOT  EOT;
+autohide-until-hover "autohide until hovered over or select the row" <<<EOT .addon.addon-view .status-control-wrapper{
 visibility:hidden !important;
 }
 .addon.addon-view[current="true"] .control-container,

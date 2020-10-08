@@ -14,95 +14,95 @@ Tyrell "Tyrell" <<<EOT http://imageshack.us/a/img585/5421/tyrell.png EOT;
 Tully "Tully" <<<EOT http://imageshack.us/a/img594/1307/tully.png EOT;
 Greyjoy "Greyjoy" <<<EOT http://imageshack.us/a/img802/16/greyjoy.png EOT;
 Stark "Stark" <<<EOT http://imageshack.us/a/img203/2251/starkd.png EOT;
-Baelish of the Finge "Baelish of the Fingers" <<<EOT http://imageshack.us/a/img854/7864/baelishofthefingers.png EOT;
-Baelish of Harrenhal "Baelish of Harrenhal" <<<EOT http://imageshack.us/a/img826/3391/baelishofharrenhal.png EOT;
+Baelish-of-the-Finge "Baelish of the Fingers" <<<EOT http://imageshack.us/a/img854/7864/baelishofthefingers.png EOT;
+Baelish-of-Harrenhal "Baelish of Harrenhal" <<<EOT http://imageshack.us/a/img826/3391/baelishofharrenhal.png EOT;
 
 	theimage-custom-dropdown "Custom" <<<EOT /*[[theimage-custom]]*\/ EOT;
 }
 @advanced text theimage-custom "Choose The BG Image (Custom)" "https://example.com/image.png"
 @advanced dropdown postsopacity "Posts Opacity" {
-	.15 Transparent ".15 Transparent*" <<<EOT .15 EOT;
-.25 Transparent ".25 Transparent" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-15-Transparent ".15 Transparent*" <<<EOT .15 EOT;
+-25-Transparent ".25 Transparent" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown postscolor "Posts Color" {
 	White "White*" <<<EOT 225,225,225, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown baropacity "Dashboard Bar Opacity" {
-	.25 Transparent ".25 Transparent*" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-25-Transparent ".25 Transparent*" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown fullbodyopacity "Full Body Opacity" {
-	.40 Transparent ".40 Transparent*" <<<EOT .40 EOT;
-.15 Transparent ".15 Transparent" <<<EOT .15 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-40-Transparent ".40 Transparent*" <<<EOT .40 EOT;
+-15-Transparent ".15 Transparent" <<<EOT .15 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown fullbodycolor "Full Body Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown notificationopacity "Notification Opacity" {
-	.8 Transparent ".8 Transparent*" <<<EOT .8 EOT;
-.25 Transparent ".25 Transparent" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-8-Transparent ".8 Transparent*" <<<EOT .8 EOT;
+-25-Transparent ".25 Transparent" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown notificationcolor "Notification Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown rightcolumnbgopacity "Right Column BG Opacity" {
-	.25 Transparent ".25 Transparent*" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.8 Transparent ".8 Transparent" <<<EOT .8 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-25-Transparent ".25 Transparent*" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-8-Transparent ".8 Transparent" <<<EOT .8 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown rightcolumnbgcolor "Right Column BG Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown inboxmessageopacity "Inbox Message Opacity" {
-	.45 Transparent ".45 Transparent*" <<<EOT .45 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .72 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-45-Transparent ".45 Transparent*" <<<EOT .45 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .72 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown inboxmessagecolor "Inbox Message Color" {
 	White "White*" <<<EOT 225,225,225, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown htmlboxopacity "Html Box Opacity" {
-	.5 Transparent ".5 Transparent*" <<<EOT .5 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-5-Transparent ".5 Transparent*" <<<EOT .5 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown htmlboxcolor "Html Box Color" {
 	Gray "Gray*" <<<EOT 230, 230, 230, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced color firstcolor "First Color (Light if BG is Dark)" #FFFFFF

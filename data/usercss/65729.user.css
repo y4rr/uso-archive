@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown SizingAndSidebar "Version:" {
-	Adaptive Width "Adaptive Width*" <<<EOT /*Sizing*\/
+	Adaptive-Width "Adaptive Width*" <<<EOT /*Sizing*\/
   #page-container, .container, .wrapper{position:relative !important;  width:95% !important; background:none !important;}
   .twitter-anywhere-tweet-box-editor{width:94% !important;}
   @media(max-width: 899px){
@@ -79,7 +79,7 @@ Original "Original" <<<EOT /*Sizing*\/
   .search.basic-search{position:absolute !important; width:95% !important; left:50% !important; margin-left:-49% !important; top:45% !important; margin-top:-122px !important;}
 
 /*[[Sidebar]]*\/ EOT;
-Left-focused Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
+Left-focused-Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
   #page-container, .container, .wrapper{position:relative !important;  width:95% !important; background:none !important;}
   .twitter-anywhere-tweet-box-editor{width:94% !important;}
   @media(max-width: 899px){
@@ -183,14 +183,14 @@ No "No" <<<EOT /* Highlighting not Installed *\/ EOT;
 
 }
 @advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes)" {
-This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
+This-option-if-you-d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforLinks-custom-dropdown "Custom" <<<EOT /*[[UsernameforLinks-custom]]*\/ EOT;
 }
 @advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforLinks "Colour for links highlighting to account specified:" #FFFF75
 @advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes)" {
-This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
+This-option-if-you-d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforTweets-custom-dropdown "Custom" <<<EOT /*[[UsernameforTweets-custom]]*\/ EOT;
 }
@@ -213,12 +213,12 @@ No "No" <<<EOT /* Sidebar Footer not Removed *\/ EOT;
 }
 @advanced dropdown Topbar "Switch sides of topbar elements?" {
 	No "No*" <<<EOT /* Topbar Elements' Positioning is as Standard *\/ EOT;
-Yes FOR ADAPTIVE WID "Yes FOR ADAPTIVE WIDTH ONLY" <<<EOT /*Flip top bar orientaion horizontally - next 4 lines*\/
+Yes-FOR-ADAPTIVE-WID "Yes FOR ADAPTIVE WIDTH ONLY" <<<EOT /*Flip top bar orientaion horizontally - next 4 lines*\/
   .topbar-tweet-btn, .caret{display:none !important;}
   .nav{float:right !important; margin-right:15px !important;}
   .pull-right{margin-right: 10px !important;float: left !important;}
   .nav li#user-dropdown{position:fixed!important; right:5px!important;} EOT;
-Yes FOR ORIGINAL VER "Yes FOR ORIGINAL VERSION ONLY" <<<EOT /*Flip top bar orientaion horizontally - next 4 lines*\/
+Yes-FOR-ORIGINAL-VER "Yes FOR ORIGINAL VERSION ONLY" <<<EOT /*Flip top bar orientaion horizontally - next 4 lines*\/
   .topbar-tweet-btn, .caret{display:none !important;}
   .nav{float:right !important; margin-right:15px !important;}
   .pull-right{margin-right: 10px !important;float: left !important;}
@@ -282,7 +282,7 @@ Yes "Yes" <<<EOT   .content-main .username{text-decoration: none !important; fon
 @advanced dropdown Translucent "Make content translucent? (improves background visibility)" {
 	No "No*" <<<EOT /* Main Content and Sidebar are Opaque *\/ EOT;
 Yes "Yes" <<<EOT   .dashboard, .content-main, .profile-card{opacity: 0.87 !important;} EOT;
-Adaptive (adapt on h "Adaptive (adapt on hover)" <<<EOT   .content-main{opacity:0.74 !important; -moz-transition-duration: 3000ms !important; -webkit-transition-duration: 3000ms !important;}
+Adaptive--adapt-on-h "Adaptive (adapt on hover)" <<<EOT   .content-main{opacity:0.74 !important; -moz-transition-duration: 3000ms !important; -webkit-transition-duration: 3000ms !important;}
   .content-main:hover{opacity:0.87 !important; -moz-transition-duration: 2000ms !important; -webkit-transition-duration: 2000ms !important;}
   .dashboard{opacity:0.64 !important; -moz-transition-duration: 3000ms !important; -webkit-transition-duration: 3000ms !important;}
   .dashboard:hover{opacity:0.87 !important; -moz-transition-duration: 1500ms !important; -webkit-transition-duration: 1500ms !important;}
@@ -296,12 +296,12 @@ Yes "Yes" <<<EOT   body {background-image: url("/*[[BackgroundURL]]*\/") !import
 }
 @advanced dropdown Repeat "Single background: repeat, cover background, or fit in window? (Ignore if not using background)" {
 	Repeat "Repeat*" <<<EOT repeat !important; EOT;
-Cover background (cu "Cover background (cuts some picture off)" <<<EOT no-repeat !important; background-size: cover !important; overflow:hidden !important; EOT;
-Fit in window (borde "Fit in window (borders on sides or top/bottom)" <<<EOT no-repeat !important; background-size: contain !important; background-color: silver !important; overflow:hidden !important; EOT;
+Cover-background--cu "Cover background (cuts some picture off)" <<<EOT no-repeat !important; background-size: cover !important; overflow:hidden !important; EOT;
+Fit-in-window--borde "Fit in window (borders on sides or top/bottom)" <<<EOT no-repeat !important; background-size: contain !important; background-color: silver !important; overflow:hidden !important; EOT;
 
 }
 @advanced dropdown BackgroundURL "URL or dataURI for single background:(e.g. https://twimg0-a.akamaihd.net/images/themes/theme/bg.gif)" {
-The black Twitter-su "The black Twitter-supplied background (Ignore if not using background)*" <<<EOT data:image/gif;base64,R0lGODlhEAAJALMAAB0eIBobHRgZGxESFBAREw8QEgsMDQsLDAgICQUFBgAAAAAAAAAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAQAAkAAAQzsKCUULmHUkPI1EgnZIkhdJrWEQEABEOcUmu9kpttj9vZfZZLofWKDT6UkG41SyyZs04EADs= EOT;
+The-black-Twitter-su "The black Twitter-supplied background (Ignore if not using background)*" <<<EOT data:image/gif;base64,R0lGODlhEAAJALMAAB0eIBobHRgZGxESFBAREw8QEgsMDQsLDAgICQUFBgAAAAAAAAAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAQAAkAAAQzsKCUULmHUkPI1EgnZIkhdJrWEQEABEOcUmu9kpttj9vZfZZLofWKDT6UkG41SyyZs04EADs= EOT;
 
 	BackgroundURL-custom-dropdown "Custom" <<<EOT /*[[BackgroundURL-custom]]*\/ EOT;
 }

@@ -7,19 +7,19 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown mytransparency "Choose transparency" {
-	0.8 "0.8*" <<<EOT 0.8 EOT;
-0.3 "0.3" <<<EOT 0.3 EOT;
-0.4 "0.4" <<<EOT 0.4 EOT;
-0.5 "0.5" <<<EOT 0.5 EOT;
-0.6 "0.6" <<<EOT 0.6 EOT;
-0.7 "0.7" <<<EOT 0.7 EOT;
-0.9 "0.9" <<<EOT 0.9 EOT;
+	0-8 "0.8*" <<<EOT 0.8 EOT;
+0-3 "0.3" <<<EOT 0.3 EOT;
+0-4 "0.4" <<<EOT 0.4 EOT;
+0-5 "0.5" <<<EOT 0.5 EOT;
+0-6 "0.6" <<<EOT 0.6 EOT;
+0-7 "0.7" <<<EOT 0.7 EOT;
+0-9 "0.9" <<<EOT 0.9 EOT;
 1 "1" <<<EOT 1 EOT;
 
 }
 @advanced dropdown myhover "Choose Swing" {
-	Only MouseOver "Only MouseOver*" <<<EOT :hover EOT;
-All the time "All the time" <<<EOT  EOT;
+	Only-MouseOver "Only MouseOver*" <<<EOT :hover EOT;
+All-the-time "All the time" <<<EOT  EOT;
 
 }
 

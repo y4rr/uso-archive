@@ -32,7 +32,7 @@ window    {background:#222!important}
  EOT;
 
 }
-@advanced dropdown , "Wallpaper style" {
+@advanced dropdown - "Wallpaper style" {
 	0 "a. Image*" <<<EOT @-moz-document url("chrome://browser/content/browser.xul"){
 browser    {background:#000!important}}
 
@@ -118,7 +118,7 @@ browser    {background:#171b1f!important}}
 	I-custom-dropdown "Custom" <<<EOT /*[[I-custom]]*\/ EOT;
 }
 @advanced text I-custom "Wallpaper image (Custom)" "https://example.com/image.png"
-@advanced dropdown . "Highlight color" {
+@advanced dropdown - "Highlight color" {
 	1 "a. Blue*" <<<EOT /*  Highlight color  *\/--♚:#0095DD;
 /*  HueRotate Set 1  *\/--♛:hue-rotate(180deg)invert(1);
 /*  HueRotate Set 2  *\/--♜:hue-rotate(180deg)invert(1); EOT;
@@ -146,7 +146,7 @@ browser    {background:#171b1f!important}}
 ==/UserStyle== */
 /*Theme color Setting*/@-moz-document url("chrome://browser/content/browser.xul"),regexp("about:.*"){:root{
 
-/*[[.]]*/
+/*[[-]]*/
 
 --in-content-border-highlight:var(--♚);--in-content-link-color:var(--♚);--in-content-link-color-hover:var(--♚)}}
 
@@ -176,7 +176,7 @@ window    {background:black!important}
 richlistbox    {border:none!important}
 :root,image    {filter:invert(1)hue-rotate(180deg)}}
 
-/*[[,]]*//*about:default applications*/
+/*[[-]]*//*about:default applications*/
 @-moz-document regexp("about:(looppanel|pocket).*"){
 :root{background:#FFF!important;filter:invert(1)hue-rotate(180deg)!important}}
 

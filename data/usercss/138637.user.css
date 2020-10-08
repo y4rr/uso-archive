@@ -14,8 +14,8 @@ Fantasy "Fantasy" <<<EOT https://s1.1zoom.ru/b5050/280/355582-sepik_2048x1152.jp
 }
 @advanced text backgroundUserChoice-custom "Фоновое изображение (Custom)" "https://example.com/image.png"
 @advanced dropdown themeUserChoice "Тема" {
-	Стандартная "Стандартная*" <<<EOT  EOT;
-Темная "Темная" <<<EOT /*========== DARK THEME START ==========*\/
+	----------- "Стандартная*" <<<EOT  EOT;
+------ "Темная" <<<EOT /*========== DARK THEME START ==========*\/
 :root {
     --buttonColor: #0065B6;
     --buttonTextColor: white;
@@ -135,17 +135,17 @@ input[type="password"] {
 
 }
 @advanced dropdown pageScaleUserChoice "Масштаб страницы" {
-	80% (Default) "80% (Default)*" <<<EOT 80% EOT;
-50% "50%" <<<EOT 50% EOT;
-60% "60%" <<<EOT 60% EOT;
-70% "70%" <<<EOT 70% EOT;
-90% "90%" <<<EOT 90% EOT;
-100% "100%" <<<EOT 100% EOT;
+	80---Default- "80% (Default)*" <<<EOT 80% EOT;
+50- "50%" <<<EOT 50% EOT;
+60- "60%" <<<EOT 60% EOT;
+70- "70%" <<<EOT 70% EOT;
+90- "90%" <<<EOT 90% EOT;
+100- "100%" <<<EOT 100% EOT;
 
 }
 @advanced dropdown centerImgUserChoice "Центрировать изображения" {
-	Выкл. "Выкл.*" <<<EOT  EOT;
-Вкл. "Вкл." <<<EOT /*========== CENTER IMAGES ==========*\/
+	----- "Выкл.*" <<<EOT  EOT;
+---- "Вкл." <<<EOT /*========== CENTER IMAGES ==========*\/
 .comment .image,
 .post_content .image {
     text-align: center;   
@@ -154,8 +154,8 @@ input[type="password"] {
 
 }
 @advanced dropdown removeSdbrUserChoice "Удалить боковую панель" {
-	Выкл. "Выкл.*" <<<EOT  EOT;
-Вкл. "Вкл." <<<EOT /* REMOVE SIDEBAR *\/
+	----- "Выкл.*" <<<EOT  EOT;
+---- "Вкл." <<<EOT /* REMOVE SIDEBAR *\/
 div#content {
     width: auto;
 }

@@ -7,11 +7,11 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown launcherdisplay "Choose how launcher display" {
-	0.no launcher "0.no launcher*" <<<EOT /* 0.no launcher *\/
+	0-no-launcher "0.no launcher*" <<<EOT /* 0.no launcher *\/
     #launcher{display:none!important;} EOT;
-1.full launcher "1.full launcher" <<<EOT /* 1.full launcher *\/
+1-full-launcher "1.full launcher" <<<EOT /* 1.full launcher *\/
     /* nothing here in fact... *\/ EOT;
-2.launcher with text "2.launcher with text only" <<<EOT /* 2.launcher with text only *\/
+2-launcher-with-text "2.launcher with text only" <<<EOT /* 2.launcher with text only *\/
     .launchButton:before{display:none!important;}
     .launchButton{
         padding:8px 6px!important;
@@ -25,7 +25,7 @@
         background-color:transparent!important;
         opacity:1;
     } EOT;
-3.launcher with rest "3.launcher with restore prev session only" <<<EOT /* 3.launcher with `restore previous session` only*\/
+3-launcher-with-rest "3.launcher with restore prev session only" <<<EOT /* 3.launcher with `restore previous session` only*\/
     #launcher{
         background-color:transparent!important;
         border-top:none!important;

@@ -7,10 +7,10 @@
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced text Username "Profile username" "Eldarya"
-@advanced dropdown co pet "Common Pet" {
+@advanced dropdown co-pet "Common Pet" {
 	none "None*" <<<EOT @-moz-document url("http://www.eldarya.fr/player/profile//*[[Username]]*\/") {
 } EOT;
-bb sabali "Bébé Sabali" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-sabali "Bébé Sabali" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/3447fc0cea63ea1f04c6f8a37cc696fe.png") center no-repeat !important ;
@@ -140,7 +140,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb becola "Bébé Becola" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-becola "Bébé Becola" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/ba097d1504472aad533f962f54cd0e7f.png") center no-repeat !important ;
@@ -270,7 +270,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb corko "Bébé Corko" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-corko "Bébé Corko" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/c7baa4b165f221d019458502f0fff1ad.png") center no-repeat !important ;
@@ -400,7 +400,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb jipinku "Bébé Jipinku" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-jipinku "Bébé Jipinku" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/e6e9ff92605d643f39dea92134c8e76f.png") center no-repeat !important ;
@@ -530,7 +530,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb crowmero "Bébé Crowmero" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-crowmero "Bébé Crowmero" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/3451152f7dca95f47f0c3a36e689bf1c.png") center no-repeat !important ;
@@ -707,10 +707,10 @@ font-size : 0 !important ;
 } EOT;
 
 }
-@advanced dropdown r pet "Rare Pet" {
+@advanced dropdown r-pet "Rare Pet" {
 	none "None*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-bb plumobec "Bébé Plumobec" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-plumobec "Bébé Plumobec" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/7c2cf6c1745b3e3414f24ee1bcef947c.png") center no-repeat !important ;
@@ -840,7 +840,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb libleunette "Bébé Libleunette" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-libleunette "Bébé Libleunette" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/dc9caeaf5e45d08fb6b1f410ba9713a9.png") center no-repeat !important ;
@@ -907,10 +907,10 @@ font-size : 0 !important ;
 } EOT;
 
 }
-@advanced dropdown e pet "Epic Pet" {
+@advanced dropdown e-pet "Epic Pet" {
 	none "None*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-bb poulp profondeurs "Bébé Poulpatata des profondeurs" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-poulp-profondeurs "Bébé Poulpatata des profondeurs" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/e03954b36d297f5c23d24075554a299f.png") center no-repeat !important ;
@@ -975,7 +975,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-poulp des profondeur "Poulpatata des profondeurs" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+poulp-des-profondeur "Poulpatata des profondeurs" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/2d60700b8472b7d341e78805358b76ba.png") center no-repeat !important ;
@@ -1040,7 +1040,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb minaloo "Bébé Minaloo" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-minaloo "Bébé Minaloo" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/0f8ea8844f89d0c747cbcdd2b25b9464.png") center no-repeat !important ;
@@ -1170,7 +1170,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb bunraku "Bébé Bunraku" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-bunraku "Bébé Bunraku" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/d70736706a85cd17f37cf980730ee3f2.png") center no-repeat !important ;
@@ -1300,7 +1300,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb alcopafel "Bébé Alcopafel" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-alcopafel "Bébé Alcopafel" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/ce8c23b84329ec7c0f66e35fa20dbb68.png") center no-repeat !important ;
@@ -1432,10 +1432,10 @@ font-size : 0 !important ;
 } EOT;
 
 }
-@advanced dropdown l pet "Legendary Pet" {
+@advanced dropdown l-pet "Legendary Pet" {
 	none "None*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-bb draflayel "Bébé Draflayel" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-draflayel "Bébé Draflayel" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/4931727274289d9f826f42524692777e.png") center no-repeat !important ;
@@ -1565,7 +1565,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb panalulu "Bébé Panalulu" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-panalulu "Bébé Panalulu" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://www.eldarya.fr/static/img/pet/mood/profile/76571c5b1ca11459afe83f7103d5babb.png") center no-repeat !important ;
@@ -1697,10 +1697,10 @@ font-size : 0 !important ;
 } EOT;
 
 }
-@advanced dropdown cu pet "Customized Pet" {
+@advanced dropdown cu-pet "Customized Pet" {
 	none "None*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-bb lamulin (-) "Bébé Lamulin (-) chocolat" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-lamulin---- "Bébé Lamulin (-) chocolat" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img15.hostingpics.net/pics/38274506068e24061bbf49267b6dad570b14b01428582300.png") center no-repeat !important ;
@@ -1765,7 +1765,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-bb lamulin mario "Bébé Lamulin Mario" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+bb-lamulin-mario "Bébé Lamulin Mario" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img15.hostingpics.net/pics/522265tiramisuh.png") center no-repeat !important ;
@@ -1830,7 +1830,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-rawist fantome "Rawist Fantôme" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+rawist-fantome "Rawist Fantôme" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img4.hostingpics.net/pics/547888ponyta.png") center no-repeat !important ;
@@ -1895,7 +1895,7 @@ font-size : 20px !important ;
 font-size : 0 !important ;
 }
 } EOT;
-lamulin sang "Lamulin Ensanglanté" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+lamulin-sang "Lamulin Ensanglanté" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img15.hostingpics.net/pics/559949lamuhallo.png") center no-repeat !important ;
@@ -1964,8 +1964,8 @@ font-size : 0 !important ;
 }
 
 ==/UserStyle== */
-/*[[co pet]]*/
-/*[[r pet]]*/
-/*[[e pet]]*/
-/*[[l pet]]*/
-/*[[cu pet]]*/
+/*[[co-pet]]*/
+/*[[r-pet]]*/
+/*[[e-pet]]*/
+/*[[l-pet]]*/
+/*[[cu-pet]]*/

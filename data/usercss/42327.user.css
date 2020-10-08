@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RemoveAdd "Hide advertisement on home page?" {
-	No (Default) "No (Default)*" <<<EOT   EOT;
+	No--Default- "No (Default)*" <<<EOT   EOT;
 Yes "Yes" <<<EOT     #snippetContainer {
         display: none !important;
     } EOT;

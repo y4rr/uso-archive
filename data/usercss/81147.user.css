@@ -7,13 +7,13 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown cover-bg "Fit the background image to the display" {
-	No - I'd rather just "No - I'd rather just see clouds*" <<<EOT  EOT;
-Yes - I want to see  "Yes - I want to see the pony on the right" <<<EOT     background-position: center !important;
+	No---I-d-rather-just "No - I'd rather just see clouds*" <<<EOT  EOT;
+Yes---I-want-to-see- "Yes - I want to see the pony on the right" <<<EOT     background-position: center !important;
     background-size: cover !important; EOT;
 
 }
 @advanced dropdown animate "Make the clouds float" {
-	Yes, make them float "Yes, make them float up and down*" <<<EOT   @-webkit-keyframes vfloat {
+	Yes--make-them-float "Yes, make them float up and down*" <<<EOT   @-webkit-keyframes vfloat {
     0% {top: 0}
     100%{top: -5mm}
   }
@@ -43,12 +43,12 @@ Yes - I want to see  "Yes - I want to see the pony on the right" <<<EOT     back
   }
 
  EOT;
-No, make them stand  "No, make them stand still" <<<EOT  EOT;
+No--make-them-stand- "No, make them stand still" <<<EOT  EOT;
 
 }
 @advanced dropdown no-country "Remove the country name" {
-	No - I'm very patrio "No - I'm very patriotic*" <<<EOT  EOT;
-Yes - I'll remember  "Yes - I'll remember where I am" <<<EOT   DIV#hplogo > DIV {display: none} EOT;
+	No---I-m-very-patrio "No - I'm very patriotic*" <<<EOT  EOT;
+Yes---I-ll-remember- "Yes - I'll remember where I am" <<<EOT   DIV#hplogo > DIV {display: none} EOT;
 
 }
 @advanced dropdown no-ad "Remove the \"Install Chrome\" advertisement" {

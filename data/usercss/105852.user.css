@@ -7,25 +7,25 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown myback "Choose your Background" {
-Background 1 "Background 1*" <<<EOT http://s20.postimg.org/6h2kg884t/21231.jpg EOT;
-Background 2 "Background 2" <<<EOT http://par30game.ir/wp-content/uploads/2014/08/Assassins_Creed_Unity_1141572659.jpg EOT;
-Background 3 "Background 3" <<<EOT http://storge.pic2.me/upload/452/53d2bf0a46024.jpg EOT;
-Background 4 "Background 4" <<<EOT http://s20.postimg.org/410r2dq25/assassins_creed_unity_31454_1920x1200.jpg EOT;
-Background 5 "Background 5" <<<EOT http://coffretcollector.fr/wp-content/uploads/2014/09/assassins-creed-unity-edition-speciale-amazon-montre-a-gousset-fond.jpg EOT;
+Background-1 "Background 1*" <<<EOT http://s20.postimg.org/6h2kg884t/21231.jpg EOT;
+Background-2 "Background 2" <<<EOT http://par30game.ir/wp-content/uploads/2014/08/Assassins_Creed_Unity_1141572659.jpg EOT;
+Background-3 "Background 3" <<<EOT http://storge.pic2.me/upload/452/53d2bf0a46024.jpg EOT;
+Background-4 "Background 4" <<<EOT http://s20.postimg.org/410r2dq25/assassins_creed_unity_31454_1920x1200.jpg EOT;
+Background-5 "Background 5" <<<EOT http://coffretcollector.fr/wp-content/uploads/2014/09/assassins-creed-unity-edition-speciale-amazon-montre-a-gousset-fond.jpg EOT;
 
 	myback-custom-dropdown "Custom" <<<EOT /*[[myback-custom]]*\/ EOT;
 }
 @advanced text myback-custom "Choose your Background (Custom)" "https://example.com/image.png"
 @advanced dropdown myfocus "Focus of the Background" {
-	Center Center "Center Center*" <<<EOT center center EOT;
-Center Top "Center Top" <<<EOT center top EOT;
-Center Bottom "Center Bottom" <<<EOT center bottom EOT;
-Right Top "Right Top" <<<EOT right top EOT;
-Right Center "Right Center" <<<EOT right center EOT;
-Right Bottom "Right Bottom" <<<EOT right bottom EOT;
-Left Top "Left Top" <<<EOT right top EOT;
-Left Center "Left Center" <<<EOT left center EOT;
-Left Bottom "Left Bottom" <<<EOT left bottom EOT;
+	Center-Center "Center Center*" <<<EOT center center EOT;
+Center-Top "Center Top" <<<EOT center top EOT;
+Center-Bottom "Center Bottom" <<<EOT center bottom EOT;
+Right-Top "Right Top" <<<EOT right top EOT;
+Right-Center "Right Center" <<<EOT right center EOT;
+Right-Bottom "Right Bottom" <<<EOT right bottom EOT;
+Left-Top "Left Top" <<<EOT right top EOT;
+Left-Center "Left Center" <<<EOT left center EOT;
+Left-Bottom "Left Bottom" <<<EOT left bottom EOT;
 
 }
 @advanced dropdown cur "Do you Want Custom Cursor" {

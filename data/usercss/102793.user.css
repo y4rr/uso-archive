@@ -26,15 +26,15 @@
 	1-custom-dropdown "Custom" <<<EOT /*[[1-custom]]*\/ EOT;
 }
 @advanced text 1-custom "MP3预览背景 (Custom)" "https://example.com/image.png"
-@advanced dropdown 3.2.4 "弹出窗口背景图" {
+@advanced dropdown 3-2-4 "弹出窗口背景图" {
 1 "青草*" <<<EOT http://f.hiphotos.baidu.com/image/w%3D1600%3Bcrop%3D0%2C0%2C1600%2C900/sign=4211fa68272dd42a5f0905ad330b60d6/908fa0ec08fa513db3acc3df3f6d55fbb2fbd9a9.jpg EOT;
 2 "无背景" <<<EOT  EOT;
 
-	3.2.4-custom-dropdown "Custom" <<<EOT /*[[3.2.4-custom]]*\/ EOT;
+	3-2-4-custom-dropdown "Custom" <<<EOT /*[[3-2-4-custom]]*\/ EOT;
 }
-@advanced text 3.2.4-custom "弹出窗口背景图 (Custom)" "https://example.com/image.png"
-@advanced text 3.2.2 "弹出窗口上部颜色透明度" "255,255,255,.3"
-@advanced text 3.2.3 "弹出窗口下部颜色透明度" "255,255,255,.6"
+@advanced text 3-2-4-custom "弹出窗口背景图 (Custom)" "https://example.com/image.png"
+@advanced text 3-2-2 "弹出窗口上部颜色透明度" "255,255,255,.3"
+@advanced text 3-2-3 "弹出窗口下部颜色透明度" "255,255,255,.6"
 @advanced text 4 "分享页透明度" "0.6"
 
 ==/UserStyle== */

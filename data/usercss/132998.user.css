@@ -7,16 +7,16 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown scanlines "Scanlines" {
-	Simple Scanlines "Simple*" <<<EOT #game_container::after {
+	Simple-Scanlines "Simple*" <<<EOT #game_container::after {
     background-image: url('https://32bit.gitlab.io/asenheim/scanlines.png');
 } EOT;
 None "None" <<<EOT #game_container::after {
     background-image: none;
 } EOT;
-Noisy Scanlines "Noisy" <<<EOT #game_container::after {
+Noisy-Scanlines "Noisy" <<<EOT #game_container::after {
     background-image: url('https://32bit.gitlab.io/asenheim/scanlines.gif');
 } EOT;
-White Scanlines "White" <<<EOT #game_container::after {
+White-Scanlines "White" <<<EOT #game_container::after {
     background-image: url('https://32bit.neocities.org/asenheim/white scanlines.png');
 } EOT;
 Vertical "Vertical" <<<EOT #game_container::after {
@@ -97,7 +97,7 @@ fuck "Just fuck my shit up" <<<EOT #game_container::after {
 
 }
 @advanced dropdown scaling "Scaling Mode" {
-	Nearest Neighbor (Pi "Nearest Neighbor (Pixelated)*" <<<EOT body.static {
+	Nearest-Neighbor--Pi "Nearest Neighbor (Pixelated)*" <<<EOT body.static {
     image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
@@ -105,7 +105,7 @@ fuck "Just fuck my shit up" <<<EOT #game_container::after {
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
 } EOT;
-Bilinear (Smooth) "Bilinear (Smoothing)" <<<EOT body.static {
+Bilinear--Smooth- "Bilinear (Smoothing)" <<<EOT body.static {
     image-rendering: auto;
     image-rendering: auto;
     image-rendering: auto;
@@ -116,8 +116,8 @@ Bilinear (Smooth) "Bilinear (Smoothing)" <<<EOT body.static {
 
 }
 @advanced dropdown zoom "Force Zoom" {
-	Currently Bugged "Currently Bugged*" <<<EOT  EOT;
-Use Browser Zoom ins "Use Browser Zoom instead" <<<EOT  EOT;
+	Currently-Bugged "Currently Bugged*" <<<EOT  EOT;
+Use-Browser-Zoom-ins "Use Browser Zoom instead" <<<EOT  EOT;
 
 }
 @advanced dropdown contrast "Color Contrast" {

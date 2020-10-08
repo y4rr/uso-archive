@@ -6,7 +6,7 @@
 @version        2015519.4.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown bbs_ line-through "機能してない掲示板に" {
+@advanced dropdown bbs_-line-through "機能してない掲示板に" {
 	hide "取り消し線を引く*" <<<EOT /* 機能してない掲示板に取り消し線を引く *\/
 a[href="http://www.adventureisland.org/cgi-bin/bbs11.cgi"],
 a[href="http://www.adventureisland.org/c-board/c-board.cgi"]{text-decoration: line-through !important;} EOT;
@@ -34,7 +34,7 @@ a[href="http://www.adventureisland.org/c-board/c-board.cgi"]{text-decoration: li
   a:visited{color: #551a8b !important;}
   a:hover{color:#e48e00 !important;}
 
-/*[[bbs_ line-through]]*/
+/*[[bbs_-line-through]]*/
 
 /* アクセス拒否な雑談掲示板を隠す */
 a[href="http://www.adventureisland.org/yybbs/yybbs20.cgi"]{display:none !important;}

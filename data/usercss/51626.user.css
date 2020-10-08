@@ -42,7 +42,7 @@
 }
 @advanced text video-image-name-custom "Video Image Name (Custom)" "https://example.com/image.png"
 @advanced dropdown universal-prefix "Universal Image Prefix" {
-	Use image "Use image*" <<<EOT url("file:///C:/Users/Ohne/Downloads/deleket icons/Mattahan/Small Icons 64x64/ EOT;
+	Use-image "Use image*" <<<EOT url("file:///C:/Users/Ohne/Downloads/deleket icons/Mattahan/Small Icons 64x64/ EOT;
 None "None" <<<EOT /* EOT;
 
 }
@@ -60,7 +60,7 @@ None "None" <<<EOT  This does nothing*\/ url("");}
 
 }
 @advanced dropdown preview-mode "Preview Mode?" {
-	Yes please "Yes please*" <<<EOT /*PREVIEW STYLING*\/
+	Yes-please "Yes please*" <<<EOT /*PREVIEW STYLING*\/
 html {
   overflow: hidden !important;
 }
@@ -171,7 +171,7 @@ html {
 /*Video*\/  left: 1000px !important;
 }
  EOT;
-No thanks "No thanks" <<<EOT  EOT;
+No-thanks "No thanks" <<<EOT  EOT;
 
 }
 

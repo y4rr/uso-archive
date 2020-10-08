@@ -12,7 +12,7 @@ shadow "shadowed" <<<EOT http://i.imgur.com/Gii63Qm.png EOT;
 
 }
 @advanced dropdown button "button to replace" {
-	drop down "drop down*" <<<EOT div.l-header i.icon_user_settings:before, div.l-header i.icon_arrow_carrot_down:before {content:none}
+	drop-down "drop down*" <<<EOT div.l-header i.icon_user_settings:before, div.l-header i.icon_arrow_carrot_down:before {content:none}
 
 /*div#account_button a*\/
 
@@ -27,7 +27,7 @@ inbox "inbox" <<<EOT .tab.iconic:nth-child(3) /*formerly nth-child 2*\/ > .tab_a
 }
 
 div#inbox_button a EOT;
-log out "log out" <<<EOT .tab.iconic:nth-child(6) > .tab_anchor::before {
+log-out "log out" <<<EOT .tab.iconic:nth-child(6) > .tab_anchor::before {
 	content: none !important;
 }
 

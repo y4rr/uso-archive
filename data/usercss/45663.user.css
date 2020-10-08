@@ -25,7 +25,7 @@ opacity: .2 !important}
 
 }
  EOT;
-Mozilla specific w/S "Mozilla specific w/Stylish installed." <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+Mozilla-specific-w-S "Mozilla specific w/Stylish installed." <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 @-moz-document url-prefix(about:),url-prefix(chrome:),url-prefix(http:),url-prefix(https:),url-prefix(ftp:),url-prefix(file:){
 
 #main-window[stylish-url^="about:"] #browser,
@@ -47,7 +47,7 @@ Mozilla specific w/S "Mozilla specific w/Stylish installed." <<<EOT @namespace u
 {opacity: .85 !important;}
 
 } EOT;
-Filter (WebKit) "Filter (WebKit)" <<<EOT html {-webkit-filter: brightness(90%); min-height: 100% !important;}
+Filter--WebKit- "Filter (WebKit)" <<<EOT html {-webkit-filter: brightness(90%); min-height: 100% !important;}
 iframe {-webkit-filter: brightness(110%) } EOT;
 
 }

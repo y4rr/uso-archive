@@ -6,7 +6,7 @@
 @version        2011625.12.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown ads? "Advertisements" {
+@advanced dropdown ads- "Advertisements" {
 	Yes "Yes*" <<<EOT inline EOT;
 No "No" <<<EOT none EOT;
 
@@ -47,7 +47,7 @@ body,#mmf_content_container{
 }
 /* Ads */
 iframe{
-  display: /*[[ads?]]*/
+  display: /*[[ads-]]*/
 }
 #site_header .container {
   position: absolute;

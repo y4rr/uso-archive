@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown header "ヘッダ" {
-	変更する "変更する*" <<<EOT @-moz-document url-prefix(http://www.nicovideo.jp/){
+	---- "変更する*" <<<EOT @-moz-document url-prefix(http://www.nicovideo.jp/){
 
 /*= ヘッダを統合する =*\/
 /*全体*\/
@@ -610,12 +610,12 @@ url-prefix("http://www.nicovideo.jp/mylist_search"){
 	margin-left: 20px !important;
 }
 #search_frm_a  EOT;
-変更しない "変更しない" <<<EOT /*このオプションではヘッダはデフォルトのままです*\/ EOT;
+----- "変更しない" <<<EOT /*このオプションではヘッダはデフォルトのままです*\/ EOT;
 
 }
 @advanced dropdown video "動画ページ" {
-	変更しない "変更しない*" <<<EOT /*このオプションでは動画ページはデフォルトのままです*\/ EOT;
-変更する "変更する" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/watch/"),
+	----- "変更しない*" <<<EOT /*このオプションでは動画ページはデフォルトのままです*\/ EOT;
+---- "変更する" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/watch/"),
 url-prefix(http://www.nicovideo.jp/playlist/mylist/){
 
 /*背景色*\/
@@ -1263,7 +1263,7 @@ body{
 
 }
 @advanced dropdown search "検索ページ" {
-	変更する "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/search"),
+	---- "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/search"),
 url-prefix("http://www.nicovideo.jp/mylist_search"),
 url-prefix("http://www.nicovideo.jp/tag/"),
 url-prefix("http://www.nicovideo.jp/related_tag"){
@@ -1655,11 +1655,11 @@ img.img_std48{
 	margin: 2px 0 !important;
 }
 } EOT;
-変更しない "変更しない" <<<EOT /*このオプションでは検索ページはデフォルトのままです*\/ EOT;
+----- "変更しない" <<<EOT /*このオプションでは検索ページはデフォルトのままです*\/ EOT;
 
 }
 @advanced dropdown ranking "ランキング" {
-	変更する "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/ranking"){
+	---- "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/ranking"){
 
 /*= カテゴリ合算ランキング3列表示 =*\/
 #ranking_main{
@@ -2102,11 +2102,11 @@ div.thumb_frm_rank_2{
 }
 }
  EOT;
-変更しない "変更しない" <<<EOT /*このオプションではランキングページはデフォルトのままです*\/ EOT;
+----- "変更しない" <<<EOT /*このオプションではランキングページはデフォルトのままです*\/ EOT;
 
 }
 @advanced dropdown mypage "マイページ" {
-	変更する "変更する*" <<<EOT @-moz-document url("http://www.nicovideo.jp/my"),
+	---- "変更する*" <<<EOT @-moz-document url("http://www.nicovideo.jp/my"),
 url-prefix("http://www.nicovideo.jp/my/"),
 url-prefix("http://www.nicovideo.jp/user/"){
 
@@ -2536,11 +2536,11 @@ body{
 }
 /*= ここまで=*\/
 } EOT;
-変更しない "変更しない" <<<EOT /*このオプションではマイページはデフォルトのままです*\/ EOT;
+----- "変更しない" <<<EOT /*このオプションではマイページはデフォルトのままです*\/ EOT;
 
 }
 @advanced dropdown other_mylist "他ユーザーのマイリスト" {
-	変更する "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/mylist/"){
+	---- "変更する*" <<<EOT @-moz-document url-prefix("http://www.nicovideo.jp/mylist/"){
 
 /*マイリスト説明文*\/
 .group_description{
@@ -2604,49 +2604,49 @@ font-size: 0 !important;
 	display: none !important;
 }
 } EOT;
-変更しない "変更しない" <<<EOT /*このオプションでは他ユーザーのマイリストはデフォルトのままです*\/ EOT;
+----- "変更しない" <<<EOT /*このオプションでは他ユーザーのマイリストはデフォルトのままです*\/ EOT;
 
 }
 @advanced dropdown header_usericon "[表示/非表示] ヘッダのユーザーアイコン" {
-	非表示 "非表示*" <<<EOT  #siteHeaderUserIconContainer, EOT;
-表示 "表示" <<<EOT  /*#siteHeaderUserIconContainer,*\/ EOT;
+	--- "非表示*" <<<EOT  #siteHeaderUserIconContainer, EOT;
+-- "表示" <<<EOT  /*#siteHeaderUserIconContainer,*\/ EOT;
 
 }
 @advanced dropdown watch_review "[表示/非表示] 動画レビュー" {
-	非表示 "非表示*" <<<EOT  #videoReview,
+	--- "非表示*" <<<EOT  #videoReview,
  #sidebar, EOT;
-表示 "表示" <<<EOT  /*#videoReview,
+-- "表示" <<<EOT  /*#videoReview,
  #sidebar,*\/ EOT;
 
 }
 @advanced dropdown watch_ichiba "[表示/非表示] ニコニコ市場" {
-	非表示 "非表示*" <<<EOT  #nicoIchiba, EOT;
-表示 "表示" <<<EOT  /*#nicoIchiba,*\/ EOT;
+	--- "非表示*" <<<EOT  #nicoIchiba, EOT;
+-- "表示" <<<EOT  /*#nicoIchiba,*\/ EOT;
 
 }
 @advanced dropdown watch_app "[表示/非表示] ニコニコアプリ" {
-	非表示 "非表示*" <<<EOT  #appliPanel, EOT;
-表示 "表示" <<<EOT  /*#appliPanel,*\/ EOT;
+	--- "非表示*" <<<EOT  #appliPanel, EOT;
+-- "表示" <<<EOT  /*#appliPanel,*\/ EOT;
 
 }
 @advanced dropdown watch_news "[表示/非表示] 動画下ニュース" {
-	非表示 "非表示*" <<<EOT  #textMarquee, EOT;
-表示 "表示" <<<EOT  /*#textMarquee,*\/ EOT;
+	--- "非表示*" <<<EOT  #textMarquee, EOT;
+-- "表示" <<<EOT  /*#textMarquee,*\/ EOT;
 
 }
 @advanced dropdown watch_playlist "[表示/非表示] 動画下プレイリスト" {
-	非表示 "非表示*" <<<EOT  #playlistContainer,
+	--- "非表示*" <<<EOT  #playlistContainer,
  #playbackOption,
  .generationMessage,
  .browserFullPlaylistOption, EOT;
-表示 "表示" <<<EOT  /*#playlistContainer,
+-- "表示" <<<EOT  /*#playlistContainer,
  #playbackOption,
  .generationMessage,
  .browserFullPlaylistOption,*\/ EOT;
 
 }
 @advanced dropdown watch_bottom_info "[表示/非表示] 動画下の情報" {
-	非表示 "非表示*" <<<EOT  /*動画下 - 共有リンク*\/
+	--- "非表示*" <<<EOT  /*動画下 - 共有リンク*\/
  #videoShareLinks,
 
  /*動画下 - コミュニティ、カテゴリ順位*\/
@@ -2654,7 +2654,7 @@ font-size: 0 !important;
 
  /*動画下 - コンテンツツリー*\/
  .parentVideoInfo, EOT;
-表示 "表示" <<<EOT  /*動画下 - 共有リンク*\/
+-- "表示" <<<EOT  /*動画下 - 共有リンク*\/
  /*#videoShareLinks,*\/
 
  /*動画下 - コミュニティ、カテゴリ順位*\/

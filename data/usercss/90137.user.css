@@ -30,22 +30,22 @@ Show "Show" <<<EOT  EOT;
 
 }
 @advanced dropdown tab-buttons "Whether new tab and close tab buttons should be visible" {
-	Show both "Show both*" <<<EOT  EOT;
-Show only close tab  "Show only close tab button" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
+	Show-both "Show both*" <<<EOT  EOT;
+Show-only-close-tab- "Show only close tab button" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
     toolbarbutton.tabs-newbutton {
         display: none !important;
     }
 }
 
  EOT;
-Show only new tab bu "Show only new tab button" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
+Show-only-new-tab-bu "Show only new tab button" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
     toolbarbutton.close-button {
         display: none !important;
     }
 }
 
  EOT;
-Hide both "Hide both" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
+Hide-both "Hide both" <<<EOT @-moz-document url("chrome://navigator/content/navigator.xul") {
     toolbarbutton.tabs-newbutton {
         display: none !important;
     }

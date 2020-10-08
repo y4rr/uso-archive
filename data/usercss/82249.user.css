@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown nbColumns "How many Columns ?" {
-	two Columns "two Columns*" <<<EOT div#links div.results_links_deep {
+	two-Columns "two Columns*" <<<EOT div#links div.results_links_deep {
   width : 48%;
 }
 
@@ -18,7 +18,7 @@ div#links div.results_links_deep:nth-child(odd) {
 div#links div.results_links_deep:nth-child(even) {
   float : right;
 } EOT;
-three Columns "three Columns" <<<EOT div#content {
+three-Columns "three Columns" <<<EOT div#content {
   min-width : 60% !important;
   padding-left : 20% !important;
   padding-right : 20% !important;
@@ -57,7 +57,7 @@ div#side_wrapper {
   width: 100% !important;
 }
  EOT;
-four Columns "four Columns" <<<EOT div#content {
+four-Columns "four Columns" <<<EOT div#content {
   min-width : 80% !important;
   padding-left : 10% !important;
   padding-right : 10% !important;

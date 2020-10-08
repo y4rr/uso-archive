@@ -6,41 +6,41 @@
 @version        2016219.2.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown clear.text "Clearer Text" {
-	clear.default "Default (don't use)*" <<<EOT /*nothing to be found here you puny CSS copycat *barf* *\/ EOT;
-clear.use "Use Clearer Text" <<<EOT .span6 table tbody tr td, #active-topics table tbody tr td, #created-topics table tbody tr td {
+@advanced dropdown clear-text "Clearer Text" {
+	clear-default "Default (don't use)*" <<<EOT /*nothing to be found here you puny CSS copycat *barf* *\/ EOT;
+clear-use "Use Clearer Text" <<<EOT .span6 table tbody tr td, #active-topics table tbody tr td, #created-topics table tbody tr td {
   color: #FFF !important;
   text-shadow: 1px 1px 0px #FFF !important;
 } EOT;
 
 }
-@advanced dropdown stroke.order "Stroke Order \"Addon\"" {
-	stroke.default "Keep Default Coloring*" <<<EOT /*oh come on, it's just CSS for a userscript *pout* *\/ EOT;
-stroke.use "Apply Dark Style Coloring" <<<EOT #stroke_order img {
+@advanced dropdown stroke-order "Stroke Order \"Addon\"" {
+	stroke-default "Keep Default Coloring*" <<<EOT /*oh come on, it's just CSS for a userscript *pout* *\/ EOT;
+stroke-use "Apply Dark Style Coloring" <<<EOT #stroke_order img {
   filter: invert(100%) !important;
   -webkit-filter: invert(100%) !important;
 } EOT;
 
 }
-@advanced dropdown timeline.invert "Timeline Color Invert \"Addon\"" {
-	timeline.default "Keep Default (Invert 0%)*" <<<EOT /*meh, I won't do anything here.. feeling low*\/ EOT;
-timeline.use "Apply Color Invert" <<<EOT #c-timeline {
+@advanced dropdown timeline-invert "Timeline Color Invert \"Addon\"" {
+	timeline-default "Keep Default (Invert 0%)*" <<<EOT /*meh, I won't do anything here.. feeling low*\/ EOT;
+timeline-use "Apply Color Invert" <<<EOT #c-timeline {
   filter: invert(/*[[timeline.value]]*\/%) !important;
 } EOT;
 
 }
-@advanced text timeline.value "Timeline Color Invert Value" "5"
+@advanced text timeline-value "Timeline Color Invert Value" "5"
 @advanced dropdown timeline-ultimate "Timeline Ultimate \"Addon\"" {
-	timeline-ultimate.no "Keep Default*" <<<EOT /*Whoopsie, amiright?*\/ EOT;
-timeline-ultimate.ye "If it's for free I'll use it" <<<EOT section#timeln, #timeln a {
+	timeline-ultimate-no "Keep Default*" <<<EOT /*Whoopsie, amiright?*\/ EOT;
+timeline-ultimate-ye "If it's for free I'll use it" <<<EOT section#timeln, #timeln a {
   color: #353535 !important;
   fill: currentColor !important;
 } EOT;
 
 }
 @advanced dropdown active-topics "WK Active Topics Panel \"Addon\"" {
-	active-topics.meh "Meh no need*" <<<EOT /*Said ya ain't need no this*\/ EOT;
-active-topics.yup "Gimme!" <<<EOT div.DATP-table-wrapper table tr, div.DATP-table-wrapper {
+	active-topics-meh "Meh no need*" <<<EOT /*Said ya ain't need no this*\/ EOT;
+active-topics-yup "Gimme!" <<<EOT div.DATP-table-wrapper table tr, div.DATP-table-wrapper {
   background-color: #181818 !important;
 } EOT;
 
@@ -226,7 +226,7 @@ a[href*="/kanji/"] div, a[href*="/radicals/"] div, a[href*="/vocabulary/"] div, 
 
 /*--------------------------------------------------------CLEARER TEXT----------------------------------------------------------*/
 
-/*[[clear.text]]*/
+/*[[clear-text]]*/
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------USERSCRIPTS-----------------------------------------------------------*/
@@ -234,11 +234,11 @@ a[href*="/kanji/"] div, a[href*="/radicals/"] div, a[href*="/vocabulary/"] div, 
 
 /*--------------------------------------------------------Stroke Order----------------------------------------------------------*/
 
-/*[[stroke.order]]*/
+/*[[stroke-order]]*/
 
 /*----------------------------------------------------------Timeline------------------------------------------------------------*/
 
-/*[[timeline.invert]]*/
+/*[[timeline-invert]]*/
 
 /*------------------------------------------------------Timeline Ultimate-------------------------------------------------------*/
 

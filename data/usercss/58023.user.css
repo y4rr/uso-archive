@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown R "right or left 右边:左边" {
-	R右边 "R右边*" <<<EOT #tabbrowser-tabs>arrowscrollbox>scrollbox>box{right:15px;} EOT;
-L左边 "L左边" <<<EOT  EOT;
+	R-- "R右边*" <<<EOT #tabbrowser-tabs>arrowscrollbox>scrollbox>box{right:15px;} EOT;
+L-- "L左边" <<<EOT  EOT;
 
 }
 @advanced dropdown N "width of tab 标签宽度" {

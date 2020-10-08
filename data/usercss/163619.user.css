@@ -9,7 +9,7 @@
 @advanced color text-color "Text color" #78FF81
 @advanced color bg-text-color "Background color" #FFFFFF
 @advanced text text-font-size "Font size" "16px"
-@advanced dropdown IF_userstyles.org "this selection is here for compatibility purpose and has no effect" {
+@advanced dropdown IF_userstyles-org "this selection is here for compatibility purpose and has no effect" {
 	key1 "1*" <<<EOT /* translation of variables from "uso" format to generic CSS *\/
 :root {
 	--text-color:		/*[[text-color]]*\/;
@@ -54,7 +54,7 @@ key2 "2" <<<EOT /* translation of variables from "uso" format to generic CSS *\/
 @var text  text-font-size	"Font size"        16px
 ==/UserStyle== */
 
-/*[[IF_userstyles.org]]*/
+/*[[IF_userstyles-org]]*/
 
 p {
 	color: var(--text-color);

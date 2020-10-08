@@ -41,11 +41,11 @@ hr, pre, textarea, select,
 .singlepost-left .avatar img {
   border-color: #f90 !important;
 } EOT;
-Gri  "Gri " <<<EOT  EOT;
+Gri- "Gri " <<<EOT  EOT;
 
 }
 @advanced dropdown text-shadow "Gölgeler" {
-	Gölgeler var "Gölgeler var*" <<<EOT /* Kullanıcı adı ve bölüm içi konu linki gölgesi *\/
+	G-lgeler-var "Gölgeler var*" <<<EOT /* Kullanıcı adı ve bölüm içi konu linki gölgesi *\/
 a[href*="/showProfile.asp"], .oldpost a, .newpost a, div[style="font-size:13px !important; font-weight:bold !important; line-height:20px !important;"] {
   text-shadow: #aaa 1px 1px 2px;
 }
@@ -58,14 +58,14 @@ span[class="info"] {
 span[class="messagetitle"], span[class="forumtitle"] {
   text-shadow: #999 1px 1px 4px;
 } EOT;
-Gölgeler yok "Gölgeler yok" <<<EOT  EOT;
+G-lgeler-yok "Gölgeler yok" <<<EOT  EOT;
 
 }
 @advanced dropdown alinti-video "Alıntı içindeki videolar" {
-	Videolar yok "Videolar yok*" <<<EOT .quote object {
+	Videolar-yok "Videolar yok*" <<<EOT .quote object {
   display:none !important; visibility:hidden !important;
 } EOT;
-Videolar var "Videolar var" <<<EOT  EOT;
+Videolar-var "Videolar var" <<<EOT  EOT;
 
 }
 @advanced dropdown secili-yazi "Seçili yazı rengi" {
@@ -88,8 +88,8 @@ Var "Var" <<<EOT  EOT;
 
 }
 @advanced dropdown menu "Menü bar (Logonun altındaki)" {
-	Olduğu gibi bırak "Olduğu gibi bırak*" <<<EOT  EOT;
-Yukarıya sabitle "Yukarıya sabitle" <<<EOT .topmenu-new[style="position:fixed; top:0; left:0; z-index:9999; box-shadow:0 0 10px #999; border-bottom:1px solid #ccc;"] ~ .menu-new {
+	Oldu-u-gibi-b-rak "Olduğu gibi bırak*" <<<EOT  EOT;
+Yukar-ya-sabitle "Yukarıya sabitle" <<<EOT .topmenu-new[style="position:fixed; top:0; left:0; z-index:9999; box-shadow:0 0 10px #999; border-bottom:1px solid #ccc;"] ~ .menu-new {
 position: fixed;
 top: 27px;
 left: 0;
@@ -112,17 +112,17 @@ box-shadow: none !important;
 
 }
 @advanced dropdown YouRockgif "Mesaj yazma panelinde smiley'ler" {
-	Aşağıya sabitle "Aşağıya sabitle*" <<<EOT form#postform .c2 table[width="70"] {
+	A-a--ya-sabitle "Aşağıya sabitle*" <<<EOT form#postform .c2 table[width="70"] {
   vertical-align: bottom !important;
 } EOT;
-Yukarıya sabitle "Yukarıya sabitle" <<<EOT  EOT;
-Ortaya sabitle "Ortaya sabitle" <<<EOT form#postform .c2 table[width="70"] {
+Yukar-ya-sabitle "Yukarıya sabitle" <<<EOT  EOT;
+Ortaya-sabitle "Ortaya sabitle" <<<EOT form#postform .c2 table[width="70"] {
   vertical-align: middle !important;
 } EOT;
 
 }
 @advanced dropdown solprofil "Konu içi sol profil" {
-	Büyük "Büyük*" <<<EOT td[bgcolor="F1F1F1"][width="69"], td[bgcolor="dcdcdc"][width="69"] {
+	B-y-k "Büyük*" <<<EOT td[bgcolor="F1F1F1"][width="69"], td[bgcolor="dcdcdc"][width="69"] {
 	padding: 0 !important;
 }
 
@@ -249,17 +249,17 @@ th[width="69"] {
 
 }
 @advanced dropdown solprofil-yazi "Konu içi sol profil yazıları" {
-	Yazılar solda "Yazılar solda*" <<<EOT  EOT;
-Yazılar ortada "Yazılar ortada" <<<EOT .singlepost-left {
+	Yaz-lar-solda "Yazılar solda*" <<<EOT  EOT;
+Yaz-lar-ortada "Yazılar ortada" <<<EOT .singlepost-left {
 text-align: center;
 } EOT;
-Yazılar sağda "Yazılar sağda" <<<EOT .singlepost-left {
+Yaz-lar-sa-da "Yazılar sağda" <<<EOT .singlepost-left {
 text-align: right;
 } EOT;
 
 }
 @advanced dropdown konuiciarama "Konu içi arama" {
-	Yeni tasarım "Yeni tasarım*" <<<EOT #konuiciAra {
+	Yeni-tasar-m "Yeni tasarım*" <<<EOT #konuiciAra {
   border: 0 !important;
   background: none !important;
   margin-top: 5px !important;
@@ -398,7 +398,7 @@ Yok "Yok" <<<EOT  EOT;
 
 }
 @advanced dropdown staff-members "Adminlerin Rengi" {
-	Kırmızı "Kırmızı*" <<<EOT a[href$="ile.asp?memid=38"],
+	K-rm-z- "Kırmızı*" <<<EOT a[href$="ile.asp?memid=38"],
 a[href$="ile.asp?memid=4855"],
 a[href$="ile.asp?memid=47248"],
 a[href$="ile.asp?memid=100000"],

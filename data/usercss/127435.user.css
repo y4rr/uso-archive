@@ -6,12 +6,12 @@
 @version        201665.8.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown ooh, pretty! "Background" {
+@advanced dropdown ooh--pretty- "Background" {
 Background "Abstract *" <<<EOT http://i.imgur.com/NQRBmAB.png EOT;
 
-	ooh, pretty!-custom-dropdown "Custom" <<<EOT /*[[ooh, pretty!-custom]]*\/ EOT;
+	ooh--pretty--custom-dropdown "Custom" <<<EOT /*[[ooh--pretty--custom]]*\/ EOT;
 }
-@advanced text ooh, pretty!-custom "Background (Custom)" "https://example.com/image.png"
+@advanced text ooh--pretty--custom "Background (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document domain("se7ensins.com") {
@@ -21,7 +21,7 @@ Background "Abstract *" <<<EOT http://i.imgur.com/NQRBmAB.png EOT;
     border: 1px solid black;
 }
 html {
-    background: url(/*[[ooh, pretty!]]*/) no-repeat center center fixed;
+    background: url(/*[[ooh--pretty-]]*/) no-repeat center center fixed;
     overflow-y: scroll !important;
 }
 .primaryContent {

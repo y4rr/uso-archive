@@ -6,13 +6,13 @@
 @version        2016128.18.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown Шапки "Шапки  на страницах DJ-ев" {
+@advanced dropdown ----- "Шапки  на страницах DJ-ев" {
 	No "нет*" <<<EOT /* Шапки на страницах DJ-ев *\/    ,.dj_head
 		 EOT;
 Yes "есть" <<<EOT  EOT;
 
 }
-@advanced dropdown Фьючред "Продвигаемые DJ-и" {
+@advanced dropdown ------- "Продвигаемые DJ-и" {
 	No "нет*" <<<EOT /* Продвигаемые DJ-и *\/    ,#feat_dj_content_block
 		 EOT;
 Yes "есть" <<<EOT  EOT;
@@ -66,7 +66,7 @@ Yes "есть" <<<EOT  EOT;
 	/* Выключатель :) */
 		/* Реклама */    #atlas_240x400 ,#atlas_240x400_2 ,#branding_click, embed[width="990"], embed[width="980"], #overlaybranding, #flashbranding ,.js-core_branding ,#js-branding_logo ,#js-vbrand-video-wrapper ,#js-vbrand-video-wrapper + div[style="position: absolute; left: 50%; top: 0px;"] ,.google_chrome_popup ,div[style="position: fixed; z-index: 150; left: 0; bottom: 0; width: 100%; padding: 6px 4px; background-color: #3F72D9; color: #FFFFFF; text-align: center;"] ,.featured_img
 		/* Лишний пункт майнменю */    ,table.mainmenu > tbody > tr > th
-		/*[[Шапки]]*//*[[Фьючред]]*//* Уголки наверху основного содержания страницы диджея */    ,#dhl ,#dhr
+		/*[[-----]]*//*[[-------]]*//* Уголки наверху основного содержания страницы диджея */    ,#dhl ,#dhr
 	{display:none!important}
 
 	/* Чтобы в RSS картинка не уходила за границы */    .feedEntryContent > p > img {max-width: 100%}

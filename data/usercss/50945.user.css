@@ -6,7 +6,7 @@
 @version        2019910.7.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown banner url "Green Mudkip or Bulbasaur?" {
+@advanced dropdown banner-url "Green Mudkip or Bulbasaur?" {
 	Mudkip "Mudkip*" <<<EOT https://i.imgur.com/r67CGBL.png EOT;
 Bulbasaur "Bulbasaur" <<<EOT https://i.imgur.com/TPrmMrl.png EOT;
 
@@ -44,7 +44,7 @@ img[src="bb_images/kife/version2/misc/banner1.jpg"] {
     width:0px !important;
     height:120px !important;
     padding-right:791px !important;
-    background-image:url('/*[[banner url]]*/') !important
+    background-image:url('/*[[banner-url]]*/') !important
 }
 
 table[style="background-image:url(/bb_images/kife/version2/misc/banner2.jpg)"] {

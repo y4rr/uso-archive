@@ -10,40 +10,40 @@
 	bg_4gamer_dark "bg_4gamer_dark*" <<<EOT body {background: url("http://www.4gamer.net/image/bg_4gamer.gif") repeat-y scroll center center #979797 !important;}
         body {background-color: #888888 !important;
               background-image: url("http://www.4gamer.net/image/bg_4gamer_dark.gif") !important;} EOT;
-変更なし "変更なし" <<<EOT  EOT;
+---- "変更なし" <<<EOT  EOT;
 
 }
 @advanced dropdown navi "上部ナビゲーションバー" {
-	なし "なし*" <<<EOT .V2_global_navi {display: none !important;} EOT;
-あり "あり" <<<EOT  EOT;
+	-- "なし*" <<<EOT .V2_global_navi {display: none !important;} EOT;
+-- "あり" <<<EOT  EOT;
 
 }
 @advanced dropdown L_column "左カラム 特集記事一覧・注目の～" {
-	あり "あり*" <<<EOT  EOT;
-なし "なし" <<<EOT .leftmenu_article {display: none !important;} EOT;
+	-- "あり*" <<<EOT  EOT;
+-- "なし" <<<EOT .leftmenu_article {display: none !important;} EOT;
 
 }
 @advanced dropdown tweet_ranking "TOPページ tweet Ranking" {
-	あり "あり*" <<<EOT  EOT;
-なし "なし" <<<EOT .tweet_ranking {display: none !important;} EOT;
+	-- "あり*" <<<EOT  EOT;
+-- "なし" <<<EOT .tweet_ranking {display: none !important;} EOT;
 
 }
 @advanced dropdown DWM_ranking_link "TOPページ 日週月ランキングリンク" {
-	あり "あり*" <<<EOT  EOT;
-なし "なし" <<<EOT .article_interface {display: none !important;} EOT;
+	-- "あり*" <<<EOT  EOT;
+-- "なし" <<<EOT .article_interface {display: none !important;} EOT;
 
 }
 @advanced dropdown maintxt "記事フォントサイズ" {
-	85% "85%*" <<<EOT .maintxt {font-size: 85% !important;} EOT;
-100% "100%" <<<EOT .maintxt {font-size: 100％;} EOT;
-90% "90%" <<<EOT .maintxt {font-size: 90% !important;} EOT;
+	85- "85%*" <<<EOT .maintxt {font-size: 85% !important;} EOT;
+100- "100%" <<<EOT .maintxt {font-size: 100％;} EOT;
+90- "90%" <<<EOT .maintxt {font-size: 90% !important;} EOT;
 
 }
 @advanced dropdown SNSbar "SNSアイコン" {
-	表示なし "表示なし*" <<<EOT #SOCIALBOOKMARK_BAR,        /* 上部ソーシャルブックマークバー *\/
+	---- "表示なし*" <<<EOT #SOCIALBOOKMARK_BAR,        /* 上部ソーシャルブックマークバー *\/
         #SOCIALBOOKMARK_BOTTOM_BAR  /* 下部ソーシャルブックマークバー *\/
         {display: none !important;} EOT;
-表示あり "表示あり" <<<EOT  EOT;
+---- "表示あり" <<<EOT  EOT;
 
 }
 

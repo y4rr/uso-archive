@@ -7,13 +7,13 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown col "Poista turhat värit" {
-	Kyllä, kaikki "Kyllä, kaikki*" <<<EOT .red, .green, .blue, .pink, .brown, .black, .white, .yellow, .orange, .purple, .gray {color:  inherit !important;} EOT;
-Vain punainen "Vain punainen" <<<EOT .red {color:  inherit !important;} EOT;
+	Kyll---kaikki "Kyllä, kaikki*" <<<EOT .red, .green, .blue, .pink, .brown, .black, .white, .yellow, .orange, .purple, .gray {color:  inherit !important;} EOT;
+Vain-punainen "Vain punainen" <<<EOT .red {color:  inherit !important;} EOT;
 Ei "Ei" <<<EOT  EOT;
 
 }
 @advanced dropdown vihermato "Korjaa viherteksti?" {
-	Kyllä "Kyllä*" <<<EOT .quote {
+	Kyll- "Kyllä*" <<<EOT .quote {
 border: 0 solid #000000 !important;
 padding: 0px 0px !important;
 margin: 0 0px 0px 0px !important;
@@ -27,35 +27,35 @@ Ei "Ei" <<<EOT  EOT;
 }
 @advanced dropdown naamapalmu "Piilota naamapalmu" {
 	Ei "Ei*" <<<EOT  EOT;
-Kyllä "Kyllä" <<<EOT .c {
+Kyll- "Kyllä" <<<EOT .c {
 		display: none !important;
 } EOT;
 
 }
 @advanced dropdown muutos "Muuta fonttia?" {
 	Ei "Ei*" <<<EOT  EOT;
-Kyllä "Kyllä" <<<EOT * {
+Kyll- "Kyllä" <<<EOT * {
     font: /*[[myfontsize]]*\/pt "/*[[myfont]]*\/";
 } EOT;
 
 }
 @advanced dropdown myfont "￫Fontti" {
-	Comic Sans MS "Comic Sans MS*" <<<EOT Comic Sans MS EOT;
+	Comic-Sans-MS "Comic Sans MS*" <<<EOT Comic Sans MS EOT;
 Arial "Arial" <<<EOT arial EOT;
 Helvetica "Helvetica" <<<EOT helvetica EOT;
 Sans-serif "Sans-serif" <<<EOT sans-serif EOT;
 Verdana "Verdana" <<<EOT Verdana EOT;
-Times New Roman "Times New Roman" <<<EOT Times New Roman EOT;
-Courier New "Courier New" <<<EOT Courier New EOT;
+Times-New-Roman "Times New Roman" <<<EOT Times New Roman EOT;
+Courier-New "Courier New" <<<EOT Courier New EOT;
 Palatino "Palatino" <<<EOT Palatino EOT;
 Garamond "Garamond" <<<EOT Garamond EOT;
 Bookman "Bookman" <<<EOT Bookman EOT;
-Avant Garde "Avant Garde" <<<EOT Avant Garde EOT;
+Avant-Garde "Avant Garde" <<<EOT Avant Garde EOT;
 Papyrus "Papyrus" <<<EOT Papyrus EOT;
 Impact "Impact" <<<EOT Impact EOT;
-Curlz MT "Curlz MT" <<<EOT Curlz MT EOT;
+Curlz-MT "Curlz MT" <<<EOT Curlz MT EOT;
 Georgia "Georgia" <<<EOT Georgia EOT;
-Trebuchet MS "Trebuchet MS" <<<EOT Trebuchet MS EOT;
+Trebuchet-MS "Trebuchet MS" <<<EOT Trebuchet MS EOT;
 
 }
 @advanced dropdown myfontsize "￫Fontti koko" {

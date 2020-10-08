@@ -28,7 +28,7 @@ background:url(/*[[aaa]]*\/) no-repeat  fixed center / cover !important;
 	aaa-custom-dropdown "Custom" <<<EOT /*[[aaa-custom]]*\/ EOT;
 }
 @advanced text aaa-custom "背景图片 (Custom)" "https://example.com/image.png"
-@advanced dropdown !!! "谷歌，必应，极简模式" {
+@advanced dropdown --- "谷歌，必应，极简模式" {
 	1 "默认*" <<<EOT  EOT;
 2 "仿谷歌" <<<EOT /*仿谷歌*\/
 #lg{background-size:270px!important;margin:18% auto 0!important;}
@@ -181,7 +181,7 @@ background-size:cover !important;
 
 }
 @advanced color eee "字体颜色" #111111
-@advanced dropdown 外发光 "字体外发光" {
+@advanced dropdown --- "字体外发光" {
 	1 "使用*" <<<EOT #s_ctner_contents>*:not(#s_content_2) *,.hot li em,.hot-title *,.title-sns,.s-user-set-menu a,.city-wather em,#u_sp a,#allsign,#s_mod_weather *,#u_spnav *,.water-container *,.title-content,.s-rank-title *,.tips-content *{
 text-shadow:0 0 6px /*[[ss]]*\/!important;
 } EOT;
@@ -200,7 +200,7 @@ text-shadow:0 0 6px /*[[ss]]*\/!important;
 	111-custom-dropdown "Custom" <<<EOT /*[[111-custom]]*\/ EOT;
 }
 @advanced text 111-custom "搜索建议装饰图片 (Custom)" "https://example.com/image.png"
-@advanced dropdown !1! "是否修改登录界面" {
+@advanced dropdown -1- "是否修改登录界面" {
 	1 "修改*" <<<EOT /*登录界面*\/
 [id*="foreground"]{background:url(/*[[323]]*\/) no-repeat  center /   cover;}
 [id*="__title"],[id*="__body"]{background:transparent!important;}
@@ -219,7 +219,7 @@ text-shadow:0 0 6px /*[[ss]]*\/!important;
 	323-custom-dropdown "Custom" <<<EOT /*[[323-custom]]*\/ EOT;
 }
 @advanced text 323-custom "登录界面背景 (Custom)" "https://example.com/image.png"
-@advanced dropdown 结果页 "是否修改结果页" {
+@advanced dropdown --- "是否修改结果页" {
 	1 "修改*" <<<EOT /*结果页顶部*\/
 #head{background:rgba(/*[[顶部颜色]]*\/)!important;width:100%!important;height:80px!important;padding:0!important;margin-bottom:10px !important;box-shadow:0 0!important;border:0!important;position:fixed !important;}
 #s_tab{background:transparent!important;position:fixed !important;top:0!important;left:140px!important;z-index:310;padding:0!important;}
@@ -330,7 +330,7 @@ body{min-width: 100% !important;}
 .bdsug.bdsugbg ul{background-image:url("https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/sugbg_6a9201c2.png")!important;} EOT;
 
 }
-@advanced dropdown 顶部 "结果页顶部定位方式" {
+@advanced dropdown -- "结果页顶部定位方式" {
 	1 "顶部悬浮*" <<<EOT  EOT;
 2 "顶部固定" <<<EOT /*随页面滚动*\/
 #head,#s_tab,#sej-container,#kw,.OP_LOG{position:absolute !important;}
@@ -338,7 +338,7 @@ body{min-width: 100% !important;}
 .bdsug{margin:10px !important;}*\/ EOT;
 
 }
-@advanced text 顶部颜色 "结果页顶部颜色" "245,245,245,.8"
+@advanced text ---- "结果页顶部颜色" "245,245,245,.8"
 @advanced dropdown jgyy "结果页背景" {
 	1 "另外设定*" <<<EOT body{
 background:url(/*[[jgy]]*\/) no-repeat  fixed center / cover !important;
@@ -354,7 +354,7 @@ background:url(/*[[jgy]]*\/) no-repeat  fixed center / cover !important;
 }
 @advanced text jgy-custom "结果页背景 (Custom)" "https://example.com/image.png"
 @advanced text ys "结果页内容背景颜色" "255,255,255,.5"
-@advanced dropdown 双排 "结果使用双列" {
+@advanced dropdown -- "结果使用双列" {
 	1 "双列方案1（固定尺寸经过显示滚动条）*" <<<EOT #content_left {
   width: 80% !important;
   min-width: 1000px !important;
@@ -489,7 +489,7 @@ padding:20px 20px 0!important;margin-top:105px!important;margin-left:30px!import
 #rs tr { float: left !important;} EOT;
 
 }
-@advanced dropdown 侧栏 "侧栏弹出方式" {
+@advanced dropdown -- "侧栏弹出方式" {
 	1 "鼠标点击弹出（只支持火狐）*" <<<EOT /*侧栏鼠标点击弹出*\/
 #content_right{position: absolute;margin-top:120px;right:0;padding:10px 0 0 20px;width:100px!important;background:rgba(240,240,240,0.7);box-shadow: 0 0 15px #0ad;z-index:1}
 #content_right [cellspacing="0"]{
@@ -551,7 +551,7 @@ margin-top:-3px!important;
 /*屏蔽项目*/
 #s_nav_ctner>a,#bottom_container,.bottom-border,.top-border,.tools,.mnav[href*="hao123"],.mnav[href*="nuomi"],.show-vertical,.s-treasure,#ftCon,.edting-dir-name,.s-tips-topMenu,#s_lm_wrap{display:none!important;}
 
-/*[[!1!]]*/
+/*[[-1-]]*/
 /*搜索设置；高级搜索*/
 .bdlayer{background:rgba(250,250,250,.8) !important;}  
 .advanced-setting{background:none!important;}
@@ -604,7 +604,7 @@ url("https://www.baidu.com/home?isNewVersion=1"){
 
 /*字体颜色*/
 #s_ctner_contents>*:not(#s_content_2) *:not(.current),.hot li em,.hot-title *,.title-sns,.s-user-set-menu a:not(:hover),.weather-setting-content *:not(:hover),.show-weather>span>*,#u_sp *,#u1 a,.bdpfmenu a:not(:hover),#u_sp *,#s_upfunc_menus *,#u_spnav *,#s_mod_weather *,.water-container *,.title-content,.s-rank-title *,.tips-content *{color:/*[[eee]]*/!important;}
-/*[[外发光]]*/
+/*[[---]]*/
 /*新闻弹出项背景*/
 .detail-content{background-color:rgba(240,240,240,.8)!important;}
 /*顶部调整*/
@@ -643,13 +643,13 @@ url("https://www.baidu.com/home?isNewVersion=1"){
 .s-nav-wrapper .nav-item .nav-block{opacity: 0.7 !important;}   
 
 .s-more-up{opacity:0!important;} 
-/*[[!!!]]*/
+/*[[---]]*/
 }
 @-moz-document regexp("^https?:\/\/www\.baidu\.com\/s.(?!rtt).*"),
 regexp("^https?:\/\/www\.baidu\.com\/(baidu\?|#).*"){
 /*广告无用项屏蔽*/
 .res_top_banner,[id*="rs_top"],[data-tpl=hint_toprq1],#con-ar>[style],#about_is,.tools,.c-gray,.ec-figcaption,.leftBlock,#content_left>table,[align=left]>div:not([id]),.opui-advert2-smalllogo,.EC_newppim,#foot,#content_left>div:not([id]),body>.result-op.xpath-log,#clone,#baidu_bear{display:none!important;}
-/*[[结果页]]*/
+/*[[---]]*/
 }
 
 /*更多页面*/

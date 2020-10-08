@@ -16,7 +16,7 @@ forest "forest*" <<<EOT http://i.imgur.com/7kvrYAL.jpg EOT;
 nebula "nebula" <<<EOT http://i.imgur.com/3NlD7OI.jpg EOT;
 fire "fire" <<<EOT http://atmsupload.cwsurf.de/Bilder/fb/1440x900.jpg EOT;
 pond "pond" <<<EOT http://i.imgur.com/V26Rm2D.jpg EOT;
-dark side "dark side" <<<EOT http://i.imgur.com/ASk3Be0.jpg EOT;
+dark-side "dark side" <<<EOT http://i.imgur.com/ASk3Be0.jpg EOT;
 zoom "zoom blur" <<<EOT http://i.imgur.com/bHWKbaM.jpg EOT;
 f2 "forest 2" <<<EOT http://i.imgur.com/5beVhl3.jpg EOT;
 none "none" <<<EOT  EOT;
@@ -40,17 +40,17 @@ bottom "bottom" <<<EOT bottom EOT;
 @advanced dropdown repeat "repeat background image?" {
 	No "No*" <<<EOT no-repeat EOT;
 Yes "Yes" <<<EOT repeat EOT;
-repeat horizontally "repeat horizontally" <<<EOT repeat-x EOT;
-repeat vertically "repeat vertically" <<<EOT repeat-y EOT;
+repeat-horizontally "repeat horizontally" <<<EOT repeat-x EOT;
+repeat-vertically "repeat vertically" <<<EOT repeat-y EOT;
 
 }
 @advanced dropdown size "Background size" {
-	cover screen, mainta "cover screen, maintain aspect ratio*" <<<EOT cover EOT;
-Stretch to fit scree "Stretch to fit screen" <<<EOT 100% 100% EOT;
-match height "match height" <<<EOT auto 100% EOT;
-match width "match width" <<<EOT 100% EOT;
-contain within scree "contain within screen, maintain aspect ratio" <<<EOT contain EOT;
-don't adjust size "don't adjust size" <<<EOT auto EOT;
+	cover-screen--mainta "cover screen, maintain aspect ratio*" <<<EOT cover EOT;
+Stretch-to-fit-scree "Stretch to fit screen" <<<EOT 100% 100% EOT;
+match-height "match height" <<<EOT auto 100% EOT;
+match-width "match width" <<<EOT 100% EOT;
+contain-within-scree "contain within screen, maintain aspect ratio" <<<EOT contain EOT;
+don-t-adjust-size "don't adjust size" <<<EOT auto EOT;
 
 }
 

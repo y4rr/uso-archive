@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown ICUI "Enable In-Content UI?" {
-	No (If you only want "No (If you only want the icon)" <<<EOT  EOT;
+	No--If-you-only-want "No (If you only want the icon)" <<<EOT  EOT;
 Yes "Yes" <<<EOT #main-window[stylish-url^="http://www.feedly.com/home"] #navigator-toolbox>*:not([id="TabsToolbar"]):not([id="toolbar-menubar"]){visibility:collapse!important;} EOT;
 
 }

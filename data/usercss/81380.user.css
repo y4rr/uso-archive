@@ -6,9 +6,9 @@
 @version        2016115.9.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown 広告 "広告" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 広告非表示 *\/
+@advanced dropdown -- "広告" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 広告非表示 *\/
 #videoStartAds{
     display:none !important;
 }
@@ -62,9 +62,9 @@
 } EOT;
 
 }
-@advanced dropdown 動画説明の幅 "動画説明の幅" {
-	ニコ動標準(可変) "ニコ動標準(可変)*" <<<EOT  EOT;
-中画面サイズ "中画面サイズ" <<<EOT /* 動画説明の幅を中画面サイズ固定 *\/
+@advanced dropdown ------ "動画説明の幅" {
+	--------- "ニコ動標準(可変)*" <<<EOT  EOT;
+------ "中画面サイズ" <<<EOT /* 動画説明の幅を中画面サイズ固定 *\/
 #videoHeader{
     width:1008px !important;
 }
@@ -80,7 +80,7 @@
 body{
     overflow-x:hidden !important;
 } EOT;
-大画面サイズ "大画面サイズ" <<<EOT /* 動画説明の幅を大画面サイズ固定 *\/
+------ "大画面サイズ" <<<EOT /* 動画説明の幅を大画面サイズ固定 *\/
 #videoHeader{
     width:1234px !important;
 }
@@ -95,9 +95,9 @@ body{
 } EOT;
 
 }
-@advanced dropdown タグ "タグ" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* タグ非表示 *\/
+@advanced dropdown -- "タグ" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* タグ非表示 *\/
 #videoTagContainer{
     display:none !important;
 }
@@ -109,9 +109,9 @@ body{
 } EOT;
 
 }
-@advanced dropdown マイリストボタン等 "マイリストボタン等" {
-	ニコ動標準 "ニコ動標準*" <<<EOT  EOT;
-常時表示 "常時表示" <<<EOT /* マイリストボタン等 常時表示 *\/
+@advanced dropdown --------- "マイリストボタン等" {
+	----- "ニコ動標準*" <<<EOT  EOT;
+---- "常時表示" <<<EOT /* マイリストボタン等 常時表示 *\/
 .videoMenuToggle{
     display:none !important;
 }
@@ -129,9 +129,9 @@ body{
 } EOT;
 
 }
-@advanced dropdown ニュース "ニュース" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* ニュース非表示 *\/
+@advanced dropdown ---- "ニュース" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* ニュース非表示 *\/
 #textMarquee{
     display:none !important;
 }
@@ -161,9 +161,9 @@ body.full_with_browser #playerContainerWrapper #playerAlignmentArea{
 } EOT;
 
 }
-@advanced dropdown コメントパネル "コメントパネル" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* コメントパネル非表示 *\/
+@advanced dropdown ------- "コメントパネル" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* コメントパネル非表示 *\/
 #playerTabWrapper{
     display:none !important;
 }
@@ -179,9 +179,9 @@ body.full_with_browser #playerAlignmentArea{
 } EOT;
 
 }
-@advanced dropdown ソーシャルボタン "コメントパネル下のソーシャルボタン" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* コメントパネル下のソーシャルボタン非表示 *\/
+@advanced dropdown -------- "コメントパネル下のソーシャルボタン" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* コメントパネル下のソーシャルボタン非表示 *\/
 .socialButtons{
       display:none !important; 
 }
@@ -190,9 +190,9 @@ body.full_with_browser #playerAlignmentArea{
 } EOT;
 
 }
-@advanced dropdown 動画より下 "動画より下" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 動画より下を全て非表示 *\/
+@advanced dropdown ----- "動画より下" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 動画より下を全て非表示 *\/
 #playlist{
     display:none !important;
 }
@@ -207,25 +207,25 @@ body.full_with_browser #playerAlignmentArea{
 } EOT;
 
 }
-@advanced dropdown プレイリスト "動画下のプレイリスト" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 動画下のプレイリスト非表示 *\/
+@advanced dropdown ------ "動画下のプレイリスト" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 動画下のプレイリスト非表示 *\/
 #playlist{
     display:none !important;
 } EOT;
 
 }
-@advanced dropdown 動画をもっと見る "動画をもっと見る" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 動画をもっと見る 非表示 *\/
+@advanced dropdown -------- "動画をもっと見る" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 動画をもっと見る 非表示 *\/
 #videoExplorerExpand{
     display:none !important;
 } EOT;
 
 }
-@advanced dropdown 動画レビュー "動画レビュー" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 動画レビュー非表示 *\/
+@advanced dropdown ------ "動画レビュー" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 動画レビュー非表示 *\/
 .sidebar{
     display:none !important;
 }
@@ -234,9 +234,9 @@ body.full_with_browser #playerAlignmentArea{
 }  EOT;
 
 }
-@advanced dropdown 市場 "市場" {
-	表示 "表示*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT /* 市場非表示 *\/
+@advanced dropdown -- "市場" {
+	-- "表示*" <<<EOT  EOT;
+--- "非表示" <<<EOT /* 市場非表示 *\/
 #ichibaMain{
     display:none !important;
 }
@@ -248,28 +248,28 @@ body.full_with_browser #playerAlignmentArea{
 
 ==/UserStyle== */
 @-moz-document url-prefix("http://www.nicovideo.jp/watch/"){
-/*[[動画説明の幅]]*/
+/*[[------]]*/
 
-/*[[タグ]]*/
+/*[[--]]*/
 
-/*[[マイリストボタン等]]*/
+/*[[---------]]*/
 
-/*[[ニュース]]*/
+/*[[----]]*/
 
-/*[[コメントパネル]]*/
+/*[[-------]]*/
 
-/*[[ソーシャルボタン]]*/
+/*[[--------]]*/
 
-/*[[動画より下]]*/
+/*[[-----]]*/
 
-/*[[プレイリスト]]*/
+/*[[------]]*/
 
-/*[[動画をもっと見る]]*/
+/*[[--------]]*/
 
-/*[[動画レビュー]]*/
+/*[[------]]*/
 
-/*[[市場]]*/
+/*[[--]]*/
 
-/*[[広告]]*/
+/*[[--]]*/
 
 }

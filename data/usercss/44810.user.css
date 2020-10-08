@@ -7,9 +7,9 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown minwidth "Choose minimum tab width" {
-	Normal (54px) "Normal (54px)*" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 54px !important;} EOT;
-Wide (72px) "Wide (72px)" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 72px !important;} EOT;
-Compact (36px) "Compact (36px)" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 36px !important;} EOT;
+	Normal--54px- "Normal (54px)*" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 54px !important;} EOT;
+Wide--72px- "Wide (72px)" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 72px !important;} EOT;
+Compact--36px- "Compact (36px)" <<<EOT .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {min-width: 36px !important;} EOT;
 
 }
 @advanced dropdown hideclose "Always hide close button" {

@@ -7,15 +7,15 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown blink "Pulse Speed" {
-	0.5 "0.5s - default*" <<<EOT 0.5 EOT;
+	0-5 "0.5s - default*" <<<EOT 0.5 EOT;
 1 "1.0s - slower" <<<EOT 1 EOT;
-0.1 "0.3 - faster" <<<EOT 0.3 EOT;
+0-1 "0.3 - faster" <<<EOT 0.3 EOT;
 0 "No flash" <<<EOT 0 EOT;
 
 }
 @advanced dropdown favicon "Also pulse favicon" {
 	No "No*" <<<EOT .tab-background EOT;
- Yes "Yes" <<<EOT   EOT;
+-Yes "Yes" <<<EOT   EOT;
 
 }
 

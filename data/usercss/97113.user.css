@@ -20,7 +20,7 @@ Transparent "Transparent" <<<EOT transparent EOT;
 
 }
 @advanced dropdown bgtc "Body background style" {
-	Full size "Full size*" <<<EOT -webkit-background-size:cover!important;
+	Full-size "Full size*" <<<EOT -webkit-background-size:cover!important;
 -moz-background-size:cover!important;
 -o-background-size:cover!important;
 background-size:cover!important; EOT;
@@ -61,34 +61,34 @@ Black "Black" <<<EOT rgba(255,255,255,0.4) EOT;
 @advanced color rdbg "Flat buttons background" #BA95A5
 @advanced color rdtx "Flat buttons text" #FFD1D1
 @advanced dropdown lgfnt "Logo fonts" {
-	Consolas lowercase "Consolas lowercase*" <<<EOT FONT-FAMILY:CONSOLAS!IMPORTANT;
+	Consolas-lowercase "Consolas lowercase*" <<<EOT FONT-FAMILY:CONSOLAS!IMPORTANT;
 TEXT-TRANSFORM:LOWERCASE!IMPORTANT; EOT;
 Transparent "Transparent" <<<EOT  EOT;
-Arial oblique "Arial oblique" <<<EOT font-style: oblique!important;
+Arial-oblique "Arial oblique" <<<EOT font-style: oblique!important;
 FONT-FAMILY:ARIAL!iMPORTANT; EOT;
-Dotumche lowercase "Dotumche lowercase" <<<EOT FONT-FAMILY:DOTUMCHE!IMPORTANT;
+Dotumche-lowercase "Dotumche lowercase" <<<EOT FONT-FAMILY:DOTUMCHE!IMPORTANT;
 TEXT-TRANSFORM:LOWERCASE!IMPORTANT; EOT;
-Courier lowercase "Courier lowercase" <<<EOT FONT-FAMILY:COURIER NEW!IMPORTANT;
+Courier-lowercase "Courier lowercase" <<<EOT FONT-FAMILY:COURIER NEW!IMPORTANT;
 TEXT-TRANSFORM:LOWERCASE!IMPORTANT; EOT;
-Courier uppercase "Courier uppercase" <<<EOT FONT-FAMILY:DOTUMCHE!IMPORTANT; EOT;
-Consolas uppercase "Consolas uppercase" <<<EOT FONT-FAMILY:CONSOLAS!IMPORTANT; EOT;
+Courier-uppercase "Courier uppercase" <<<EOT FONT-FAMILY:DOTUMCHE!IMPORTANT; EOT;
+Consolas-uppercase "Consolas uppercase" <<<EOT FONT-FAMILY:CONSOLAS!IMPORTANT; EOT;
 
 }
 @advanced dropdown pstbr "Post border style" {
-	2px outset "2px outset*" <<<EOT 2px outset EOT;
+	2px-outset "2px outset*" <<<EOT 2px outset EOT;
 None "None" <<<EOT 0px solid EOT;
-2px inset "2px inset" <<<EOT 2px outset EOT;
-3px double "3px double" <<<EOT 3px double EOT;
-2px solid "2px solid" <<<EOT 2px solid EOT;
+2px-inset "2px inset" <<<EOT 2px outset EOT;
+3px-double "3px double" <<<EOT 3px double EOT;
+2px-solid "2px solid" <<<EOT 2px solid EOT;
 
 }
 @advanced dropdown tgbr "Tags borders" {
-	2px outset "2px outset*" <<<EOT 2px outset EOT;
+	2px-outset "2px outset*" <<<EOT 2px outset EOT;
 Transparent "Transparent" <<<EOT Transparent EOT;
 None "None" <<<EOT 0px solid EOT;
-2px inset "2px inset" <<<EOT 2px inset EOT;
-3px double "3px double" <<<EOT 3px double EOT;
-2px solid "2px solid" <<<EOT 2px solid EOT;
+2px-inset "2px inset" <<<EOT 2px inset EOT;
+3px-double "3px double" <<<EOT 3px double EOT;
+2px-solid "2px solid" <<<EOT 2px solid EOT;
 
 }
 @advanced dropdown rcat "Right column attachment" {

@@ -38,7 +38,7 @@ show_stopnotif "No" <<<EOT display:initial EOT;
 }
 @advanced dropdown counter "Hide Hit Counters" {
 	hide_counter "Yes*" <<<EOT display:none EOT;
-show counter "No" <<<EOT display:initial EOT;
+show-counter "No" <<<EOT display:initial EOT;
 
 }
 @advanced dropdown follow "Hide \"Follow\" Button" {

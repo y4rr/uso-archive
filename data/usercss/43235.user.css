@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown opacity "Do you want the bar to be transparent?" {
-	Yes, please. "Yes, please." <<<EOT #browser-bottombox {
+	Yes--please- "Yes, please." <<<EOT #browser-bottombox {
   opacity: 0.4;
 }
 
@@ -15,7 +15,7 @@
   opacity: 1 !important;
 }
  EOT;
-No, thank you. "No, thank you." <<<EOT /**\/ EOT;
+No--thank-you- "No, thank you." <<<EOT /**\/ EOT;
 
 }
 @advanced dropdown side "On which side should the bar be placed?" {
@@ -85,8 +85,8 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) {
 
 }
 @advanced dropdown slide "Do you want  the bar to slide out of view?" {
-	28523-No, I want to  "No, I want to see it all the time." <<<EOT /**\/ EOT;
-28524-Yes, I want it "Yes, I want it to slide into the bottom." <<<EOT #browser-bottombox {
+	28523-No--I-want-to- "No, I want to see it all the time." <<<EOT /**\/ EOT;
+28524-Yes--I-want-it "Yes, I want it to slide into the bottom." <<<EOT #browser-bottombox {
   bottom: -17px;
   -moz-transition-delay: .5s;
 }
@@ -111,7 +111,7 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) {
 #browser-bottombox:hover > #addon-bar {
   visibility: visible !important;
 } EOT;
-28525-Yes, I want it "Yes, I want it to slide into the side." <<<EOT #browser-bottombox {
+28525-Yes--I-want-it "Yes, I want it to slide into the side." <<<EOT #browser-bottombox {
   width:5px;
   padding-right: 0px;
   padding-left: 0px;
@@ -133,7 +133,7 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) {
 
 }
 @advanced dropdown border "Should the bar have got a border, a shadow or both?" {
-	Only the border. "Only the border." <<<EOT /* Borders *\/
+	Only-the-border- "Only the border." <<<EOT /* Borders *\/
 #browser-bottombox, #FindToolbar {
   border-color: -moz-ButtonDefault;
 }
@@ -145,11 +145,11 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) {
 }
 
 } EOT;
-Only the shadow. "Only the shadow." <<<EOT /* Shadoweffect *\/
+Only-the-shadow- "Only the shadow." <<<EOT /* Shadoweffect *\/
 #browser-bottombox, #FindToolbar {
   -moz-box-shadow: 0 0 5px #000000;
 } EOT;
-Both. "Both." <<<EOT /* Shadoweffect *\/
+Both- "Both." <<<EOT /* Shadoweffect *\/
 #browser-bottombox, #FindToolbar {
   -moz-box-shadow: 0 0 5px #000000;
 }

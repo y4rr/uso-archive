@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown logo "Logo" {
-	No Logo "No Logo*" <<<EOT  EOT;
+	No-Logo "No Logo*" <<<EOT  EOT;
 Logo "Logo" <<<EOT #main-window[chromemargin="0,-1,-1,-1"][stylish-url="about:blank"]:not([title^="View"]) #content
 	{background: url("chrome://branding/content/about-logo.png") transparent center no-repeat !important; }
 
@@ -16,8 +16,8 @@ Logo "Logo" <<<EOT #main-window[chromemargin="0,-1,-1,-1"][stylish-url="about:bl
 
 }
 @advanced dropdown treestyletab "Tree Style Tab Addon" {
-	I don't use this add "I don't use this addon*" <<<EOT  EOT;
-I use this addon "I use this addon" <<<EOT ,
+	I-don-t-use-this-add "I don't use this addon*" <<<EOT  EOT;
+I-use-this-addon "I use this addon" <<<EOT ,
 #appcontent > #content > tabbox > tabpanels > notificationbox EOT;
 
 }

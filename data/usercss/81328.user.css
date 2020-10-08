@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown forumfontsize "Forum font size" {
-	13px (Default) "13px (Default)*" <<<EOT 13px EOT;
+	13px--Default- "13px (Default)*" <<<EOT 13px EOT;
 11px "11px" <<<EOT 11px EOT;
 
 }
 @advanced dropdown menucolour "Drop-down menus colour" {
-	Blue (default) "Blue (default)*" <<<EOT /* menu item backgrounds (hover)  F9F9F9 *\/
+	Blue--default- "Blue (default)*" <<<EOT /* menu item backgrounds (hover)  F9F9F9 *\/
 .Nav_Top .menu li:hover {
   background: none repeat scroll 0 0 #FFFFFF !important;
 }
@@ -73,8 +73,8 @@
 .Nav_Top .menu li {
   /*margin-top: 0px !important;*\/
 } EOT;
-White (broken*) "White (broken*)" <<<EOT /* nothing! *\/ EOT;
-Pure Black "Pure Black" <<<EOT /* menu item backgrounds (hover)  F9F9F9 *\/
+White--broken-- "White (broken*)" <<<EOT /* nothing! *\/ EOT;
+Pure-Black "Pure Black" <<<EOT /* menu item backgrounds (hover)  F9F9F9 *\/
 .Nav_Top .menu li:hover {
   background: none repeat scroll 0 0 #C2C2C2 !important;
 }
@@ -137,7 +137,7 @@ repeat scroll 0 center / cover  transparent !important;
 
 }
 @advanced dropdown postcolours "Employee/Ninja text colours" {
-	Enabled (default) "Enabled (default)*" <<<EOT #forum_post.employee > article > .post h1 + div+div, .replies .employee > article > .post h1 + div+div,
+	Enabled--default- "Enabled (default)*" <<<EOT #forum_post.employee > article > .post h1 + div+div, .replies .employee > article > .post h1 + div+div,
 #forum_post.ninja > article > .post h1 + div+div, .replies .ninja > article > .post h1 + div+div,
 #forum_post.employee > article > .post h1 + div+div+div, .replies .employee > article > .post h1 + div+div+div,
 #forum_post.ninja > article > .post h1 + div+div+div, .replies .ninja > article > .post h1 + div+div+div {

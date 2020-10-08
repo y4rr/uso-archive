@@ -7,17 +7,17 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown back "Фоновое изображение" {
-Черный фон "Черный фон*" <<<EOT https://img-fotki.yandex.ru/get/4123/161026817.0/0_acd93_38f25aaa_orig EOT;
-Синий фон "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
-Круги "Круги" <<<EOT https://img-fotki.yandex.ru/get/4129/161026817.0/0_acd92_815be373_orig EOT;
+---------- "Черный фон*" <<<EOT https://img-fotki.yandex.ru/get/4123/161026817.0/0_acd93_38f25aaa_orig EOT;
+--------- "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
+----- "Круги" <<<EOT https://img-fotki.yandex.ru/get/4129/161026817.0/0_acd92_815be373_orig EOT;
 
 	back-custom-dropdown "Custom" <<<EOT /*[[back-custom]]*\/ EOT;
 }
 @advanced text back-custom "Фоновое изображение (Custom)" "https://example.com/image.png"
 @advanced dropdown repeating "Положение фоновой картинки" {
-	Под размер окна "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
+	--------------- "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
 background-size: cover !important; EOT;
-Замостить "Замостить" <<<EOT background-repeat: repeat !important;
+--------- "Замостить" <<<EOT background-repeat: repeat !important;
 background-size: auto !important; EOT;
 
 }

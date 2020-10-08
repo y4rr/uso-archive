@@ -7,7 +7,7 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown x-style-x "Style" {
-	Convex Gray "Convex Gray*" <<<EOT scrollbar[orient="vertical"] thumb {
+	Convex-Gray "Convex Gray*" <<<EOT scrollbar[orient="vertical"] thumb {
     -moz-appearance: none !important;
     border-radius: 2px !important;
     border: none !important;
@@ -31,7 +31,7 @@ scrollbar[orient="horizontal"]:hover thumb {
 scrollbar[orient="horizontal"]:active thumb {
     background-image: linear-gradient(to bottom, rgba(50,55,57,1)0%, rgba(200,205,207,1)1%  ,rgba(220,225,227,1)15% , #2A4747 100%)!important;
     box-shadow: 0 0 0 8px rgba(100,127,193,.05) inset !important;} EOT;
-Concave Blue "Concave Blue" <<<EOT scrollbar [orient="vertical"] thumb{
+Concave-Blue "Concave Blue" <<<EOT scrollbar [orient="vertical"] thumb{
     -moz-appearance: none !important;
     border-radius: 2px !important;
     background: linear-gradient(to right, #78aae4 0%, #95c4eb 50%, #88bdec 51%, #beddf4 100%) !important;
@@ -55,7 +55,7 @@ scrollbar:active thumb{
     box-shadow: 0 0 0 8px rgba(0,27,93,.3) inset !important;
     opacity: .8 !important; 
     transition: all .5s !important; } EOT;
-Frame Silver "Frame Silver" <<<EOT scrollbar [orient="vertical"] thumb{ 
+Frame-Silver "Frame Silver" <<<EOT scrollbar [orient="vertical"] thumb{ 
     -moz-appearance: none !important; 
     border-radius: 4px !important;
     background: radial-gradient(to right, hsla(120,9%,78%,.50), #e5e5e5) !important;
@@ -89,7 +89,7 @@ scrollbar[orient="horizontal"]:active thumb {
     -moz-appearance: none !important;
     background: radial-gradient(to bottom, hsla(120,9%,58%,.5), #c5c5c5)  !important;
     box-shadow: inset 1px 1px 2px #555, inset -1px 1px 1px 0px #e9e9e9!important;} EOT;
-Chunky Lightgray "Chunky Lightgray" <<<EOT scrollbar [orient="vertical"] thumb{
+Chunky-Lightgray "Chunky Lightgray" <<<EOT scrollbar [orient="vertical"] thumb{
     -moz-appearance: none !important;
     border-radius: 10px !important;
     border: 1px solid !important;
@@ -154,7 +154,7 @@ scrollbar[orient="horizontal"]:active thumb {
 
 }
 @advanced dropdown x-tumme-x "The thumb will" {
-	always stay visible "always stay visible (d)*" <<<EOT /* ----Always visible---- *\/
+	always-stay-visible "always stay visible (d)*" <<<EOT /* ----Always visible---- *\/
 /*
 scrollbar [orient="vertical"] thumb, scrollbar [orient="horizontal"] thumb{
     -moz-appearance: none !important;
@@ -163,7 +163,7 @@ scrollbar [orient="vertical"] thumb, scrollbar [orient="horizontal"] thumb{
     box-shadow: none !important;}
 *\/
 /* -------------------------- *\/ EOT;
-hidden until hover "be hidden until hover" <<<EOT /* ----Hidden until hover---- *\/
+hidden-until-hover "be hidden until hover" <<<EOT /* ----Hidden until hover---- *\/
 
 scrollbar [orient="vertical"] thumb, scrollbar [orient="horizontal"] thumb{
     -moz-appearance: none !important;

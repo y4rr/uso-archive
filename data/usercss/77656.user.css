@@ -447,8 +447,8 @@ a[href^='/'][href*='-135'][href*='-f'][href*='-znips'],a:hover[href^='/'][href*=
 
 }
 @advanced dropdown dist "Browser" {
-	Chrome/Safari "Chrome/Safari*" <<<EOT -webkit- EOT;
-Firefox/Gecko "Firefox/Gecko" <<<EOT -moz- EOT;
+	Chrome-Safari "Chrome/Safari*" <<<EOT -webkit- EOT;
+Firefox-Gecko "Firefox/Gecko" <<<EOT -moz- EOT;
 Opera "Opera" <<<EOT -o- EOT;
 None "None" <<<EOT /*[[dist]]*\/ EOT;
 

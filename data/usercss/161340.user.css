@@ -6,7 +6,7 @@
 @version        2018614.0.41
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown Choose font family "Choose font family" {
+@advanced dropdown Choose-font-family "Choose font family" {
 	Roboto "Roboto*" <<<EOT body, textarea, input, .richtext_editor {
 	font-family: Roboto !important;
 	font-weight: 500;
@@ -561,7 +561,7 @@ Lato "Lato" <<<EOT body, textarea, input, .richtext_editor {
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 } EOT;
-Source Sans Pro "Source Sans Pro" <<<EOT body, textarea, input, .richtext_editor {
+Source-Sans-Pro "Source Sans Pro" <<<EOT body, textarea, input, .richtext_editor {
 	font-family: Source Sans Pro !important;
 }
 
@@ -1126,7 +1126,7 @@ Source Sans Pro "Source Sans Pro" <<<EOT body, textarea, input, .richtext_editor
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
  EOT;
-Fira Sans "Fira Sans" <<<EOT body, textarea, input, .richtext_editor {
+Fira-Sans "Fira Sans" <<<EOT body, textarea, input, .richtext_editor {
 	font-family: Fira Sans !important;
 }
 
@@ -2746,7 +2746,7 @@ Overpass "Overpass" <<<EOT body, textarea, input, .richtext_editor {
   src: local('Overpass ExtraBold'), local('Overpass-ExtraBold'), url(https://fonts.gstatic.com/s/overpass/v2/qFdA35WCmI96Ajtm81kCdc7N4ho.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 } EOT;
-Alegreya Sans "Alegreya Sans" <<<EOT body, textarea, input, .richtext_editor {
+Alegreya-Sans "Alegreya Sans" <<<EOT body, textarea, input, .richtext_editor {
 	font-family: Alegreya Sans !important;
 	font-weight: 500;
 }
@@ -3837,7 +3837,7 @@ Barlow "Barlow" <<<EOT body, textarea, input, .richtext_editor {
  EOT;
 
 }
-@advanced dropdown Text size "Text size" {
+@advanced dropdown Text-size "Text size" {
 	Standard "Standard*" <<<EOT .task_item td.checker, .task_item .task_content_item {
 	font-size: initial;
 }
@@ -3847,8 +3847,8 @@ Larger "Larger" <<<EOT .task_item td.checker, .task_item .task_content_item {
 } EOT;
 
 }
-@advanced dropdown Lefthand pane "Lefthand panel" {
-	Default panel text "Default panel text*" <<<EOT .generic_left_list .name, #top_filters li .item_content .item_name, #todoist_app .panel_summary h5  {
+@advanced dropdown Lefthand-pane "Lefthand panel" {
+	Default-panel-text "Default panel text*" <<<EOT .generic_left_list .name, #top_filters li .item_content .item_name, #todoist_app .panel_summary h5  {
 	text-transform: ;
 	font-size: ;
 	font-weight: ;
@@ -3857,7 +3857,7 @@ Larger "Larger" <<<EOT .task_item td.checker, .task_item .task_content_item {
 #todoist_app .panel_summary h5 {
 	font-weight: ;
 } EOT;
-Uppercase panel text "Uppercase panel text" <<<EOT .generic_left_list .name, #top_filters li .item_content .item_name, #todoist_app .panel_summary h5  {
+Uppercase-panel-text "Uppercase panel text" <<<EOT .generic_left_list .name, #top_filters li .item_content .item_name, #todoist_app .panel_summary h5  {
 	text-transform: uppercase !important;
 	font-size: smaller !important;
 	font-weight: bold !important;
@@ -3868,12 +3868,12 @@ Uppercase panel text "Uppercase panel text" <<<EOT .generic_left_list .name, #to
 } EOT;
 
 }
-@advanced dropdown Project header "Project header" {
-	Default proj header "Default proj header*" <<<EOT .section_header a, .project_link {
+@advanced dropdown Project-header "Project header" {
+	Default-proj-header "Default proj header*" <<<EOT .section_header a, .project_link {
 	font-weight:  ;
 	font-size:  ;
 } EOT;
-Larger proj header "Larger proj header" <<<EOT .section_header a, .project_link {
+Larger-proj-header "Larger proj header" <<<EOT .section_header a, .project_link {
 	font-weight: 300 !important;
 	font-size: 26px!important;
 } EOT;
@@ -3883,12 +3883,12 @@ Larger proj header "Larger proj header" <<<EOT .section_header a, .project_link 
 ==/UserStyle== */
 @-moz-document url-prefix("https://todoist.com/"), domain("www.todoist.com") {
 
-/*[[Fira Sans]]*/
+/*[[Fira-Sans]]*/
 /*[[Poppins]]*/
 /*[[Roboto]]*/
 /*[[Lato]]*/
-/*[[Source Sans Pro]]*/
-/*[[Alegreya Sans]]*/
+/*[[Source-Sans-Pro]]*/
+/*[[Alegreya-Sans]]*/
 /*[[Overpass]]*/
 /*[[Muli]]*/
 /*[[Rubik]]*/
@@ -3897,11 +3897,11 @@ Larger proj header "Larger proj header" <<<EOT .section_header a, .project_link 
 /*[[Larger]]*/
 /*[[Standard]]*/
 
-/*[[Default panel text]]*/
-/*[[Uppercase panel text]]*/
+/*[[Default-panel-text]]*/
+/*[[Uppercase-panel-text]]*/
 
-/*[[Default proj header]]*/
-/*[[Larger proj header]]*/
+/*[[Default-proj-header]]*/
+/*[[Larger-proj-header]]*/
 
 
 body, textarea, input, .richtext_editor {

@@ -7,54 +7,54 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown grid "Map Overlay Grid" {
-	Hide Grid "Hide Grid*" <<<EOT 	img[src*="grid"]
+	Hide-Grid "Hide Grid*" <<<EOT 	img[src*="grid"]
 	{
 		display:none!important;
 	} EOT;
-Show Grid "Show Grid" <<<EOT   EOT;
+Show-Grid "Show Grid" <<<EOT   EOT;
 
 }
 @advanced dropdown captcha "Login Captcha" {
-	double sized captcha "double sized captcha*" <<<EOT 	img[src*="code.php"]
+	double-sized-captcha "double sized captcha*" <<<EOT 	img[src*="code.php"]
 	{
 		width:100px!important;
 		height:20px!important;
 	} EOT;
-no change "no change" <<<EOT   EOT;
+no-change "no change" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_main "Cursor: Main" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAABkUlEQVRYR+2WS0oDURBFs0eHgiDo2P83ajR+4j9BRAVR5+5A1+A4u3ANeo/cgkcmhqTfa5EELvWaJF2nblV10mhMXn/NgS+/auNy/ltiLRAGeFWsB8IAb4ovUre4EwYgeV+6k86KQhjgQfFTepKupONiEMkQvuv8IfWkjnRYBMIAN64eAIbxXDqS9rJDGOBa8VF6lu4lrk+lfamZFcIAF04MBA4AEC7s6LyVDcIADB2JqZ52MIhAsRFtaVPayAJhAJKQmDVkCC8NgAvRihWd1yqHMMCuYtcuEKme5AgX2ApasSitVgphACwmaWr/IABbAQROoGp+OwxAVVTJ8EXvsR6dSMwIz4WWxFasS0uVQBiAm1Fh9DxNyioingm0aluKoVwYGyIB4OZUCsiBK6Xn2I1DDCCbQPWciVxPjwWRAFB1VBsDN+P3fw0j/5dIAOhtSyI5Ff8kH/nGw37RAMuKtIA+Y+tskeRAGoA+x4DNFUueAGA50102+YAD80UrjxlxC6ZqSZ44kH/ah92Kyef+vQPfzRQqgpLNuGQAAAAASUVORK5CYII=') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAABkUlEQVRYR+2WS0oDURBFs0eHgiDo2P83ajR+4j9BRAVR5+5A1+A4u3ANeo/cgkcmhqTfa5EELvWaJF2nblV10mhMXn/NgS+/auNy/ltiLRAGeFWsB8IAb4ovUre4EwYgeV+6k86KQhjgQfFTepKupONiEMkQvuv8IfWkjnRYBMIAN64eAIbxXDqS9rJDGOBa8VF6lu4lrk+lfamZFcIAF04MBA4AEC7s6LyVDcIADB2JqZ52MIhAsRFtaVPayAJhAJKQmDVkCC8NgAvRihWd1yqHMMCuYtcuEKme5AgX2ApasSitVgphACwmaWr/IABbAQROoGp+OwxAVVTJ8EXvsR6dSMwIz4WWxFasS0uVQBiAm1Fh9DxNyioingm0aluKoVwYGyIB4OZUCsiBK6Xn2I1DDCCbQPWciVxPjwWRAFB1VBsDN+P3fw0j/5dIAOhtSyI5Ff8kH/nGw37RAMuKtIA+Y+tskeRAGoA+x4DNFUueAGA50102+YAD80UrjxlxC6ZqSZ44kH/ah92Kyef+vQPfzRQqgpLNuGQAAAAASUVORK5CYII=') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_libu "Cursor: Links & Buttons" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACxklEQVRYR+2Wy0tUURzHm1HnUWrq+EjLmpAeYKEGQS2KWvQ3VItISogkJak0pZc66ejkdebOOTcfaaOoldHLHqRESESLaB8JLdpGq9bRp9+h3EvqTIQHLmcx934/n/mecy531aqV8a81wJ+RMi/Dn6JCmTklEgY8xxH9gp06JRIG+oUm/ZmDeoyy5DdhBD5ySH3noX5LpbYpiSe1CQN7zx71kx/OJ/bpu2xWYfLtpEkY0Cy77K9c1N/oc56yRfdTZF8jL5YUCQOZpio2x34R6Hem2aETrFeKgthV1lrLLvH7GJZHP7BXz3FAv6LSGWWTHqAoHifQc4WsyLJKmPAHbLPesVuJhPOccmdcBBIU60EKo1Fyuy+R2b1sEib4HmWRN1Sqt1Q5j9jmjLBRBErkWqcGybd6ye68xJrwskiY0HGC4deUq1kqnEnKnNus18PSwAjr5N1QqIbIsyz8oRZ8nUsuYQJH2dAxw3Z7RuqfIOgMCdwIjIrAHQr1PQIqQWaPjTt0Ge/SShiBBIXtzwnaL9nqjFGqbwn8tsCNwAQFIpCn75Otx0mPxXCFm/F0LFkTJqiPnLZnFNtTBKX2YnkPFDgD5OshAiKTI41kO8P4nQRpcjrcsQiuyAU8oSWRMCE3Wd36mID9hCIBBrQiV661Ok6m6sUfj+KVOU1ZpNk3cEfbcVtNuHrOkNG6aAkT0CsCk3hikwJVUnWY1aoNr3WRtNA52Xzn8XU0ygaUuasBX7gOb7iWjO4a0iMnSK9dlIR5OCICDyiKJfDoLjyqRda6HlfoLBtPmt8XMv76W8KEd+BvG8JlW7h1E267Dld3PaU1i/pnCzUykGv423txqWYROCVrW0vJ6aTAjaQByfqGGkXgJK5oDYH6pMHnBWplk1UL/BhZDUmFzwscx3v9MP5zSYfPCxzFV50S+LxAyuALPSkr9/1XDfwCw5Rd4r0m7HYAAAAASUVORK5CYII=') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACxklEQVRYR+2Wy0tUURzHm1HnUWrq+EjLmpAeYKEGQS2KWvQ3VItISogkJak0pZc66ejkdebOOTcfaaOoldHLHqRESESLaB8JLdpGq9bRp9+h3EvqTIQHLmcx934/n/mecy531aqV8a81wJ+RMi/Dn6JCmTklEgY8xxH9gp06JRIG+oUm/ZmDeoyy5DdhBD5ySH3noX5LpbYpiSe1CQN7zx71kx/OJ/bpu2xWYfLtpEkY0Cy77K9c1N/oc56yRfdTZF8jL5YUCQOZpio2x34R6Hem2aETrFeKgthV1lrLLvH7GJZHP7BXz3FAv6LSGWWTHqAoHifQc4WsyLJKmPAHbLPesVuJhPOccmdcBBIU60EKo1Fyuy+R2b1sEib4HmWRN1Sqt1Q5j9jmjLBRBErkWqcGybd6ye68xJrwskiY0HGC4deUq1kqnEnKnNus18PSwAjr5N1QqIbIsyz8oRZ8nUsuYQJH2dAxw3Z7RuqfIOgMCdwIjIrAHQr1PQIqQWaPjTt0Ge/SShiBBIXtzwnaL9nqjFGqbwn8tsCNwAQFIpCn75Otx0mPxXCFm/F0LFkTJqiPnLZnFNtTBKX2YnkPFDgD5OshAiKTI41kO8P4nQRpcjrcsQiuyAU8oSWRMCE3Wd36mID9hCIBBrQiV661Ok6m6sUfj+KVOU1ZpNk3cEfbcVtNuHrOkNG6aAkT0CsCk3hikwJVUnWY1aoNr3WRtNA52Xzn8XU0ygaUuasBX7gOb7iWjO4a0iMnSK9dlIR5OCICDyiKJfDoLjyqRda6HlfoLBtPmt8XMv76W8KEd+BvG8JlW7h1E267Dld3PaU1i/pnCzUykGv423txqWYROCVrW0vJ6aTAjaQByfqGGkXgJK5oDYH6pMHnBWplk1UL/BhZDUmFzwscx3v9MP5zSYfPCxzFV50S+LxAyuALPSkr9/1XDfwCw5Rd4r0m7HYAAAAASUVORK5CYII=') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_edits "Cursor: Text Fields" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACpElEQVRYR+3WS08TURgGYKaFXhDKpdACCtYQxQQNYGIiC40u/A8mLjSp3JWhpaEXbqUU6IUOM9NzjmAMIXHjQgm49qdpXr85NV0T205dcJJJFzPp+5z3fNO0peV6/W8N4O9qmkvmb04w66MpCAlIv+JIPORNQUjAxzjHzAuOnVH7m5AA9SXDz3OO5UmO3FDZ1iYqgCcMv38JzDzlSN1hKPWZtiEkYPWRCT3B8e1YIHqXYztowuw1bEFIQHLKwMwzju8nArEHHJs3GTL9Bo66tIYjKoBxHeo0x9xzjtikwNZtjq1gGWl/CVpnsaEICVgf06A+ZlieFlgbF1gnQGqQYyOgI9NTgN5RaBhCAlKjRaiTBJgSSIxRAyMEGOJIDjAk+zSkfQfQb+QagpCAjVAOH8YZViYEkqOCZoB2Tw0kBjiiAYZYr4aUN4uS56DuiEoDt/ah3jcRseoPEcCqn644AdQAx5KfYbGjhBVHFnl3fRESEA/s4n3IhHpPIDVMA0jhSQq3ACv9HAu9HGEfx5tWAxElh0PXft2akIBEdwazgwQIUe0UvtlPTfQRwE9vRbdAxCew5BUIOznmHQbWlCKOXNm6ICRgtX0HYb+JuSABKHSjh2O9i1roYHT2ZcTdNAdO6zKx5tCx7dCQV0o4btupGVF5DQnw2kU/RlYoVZ1pZ9hzazh0ZiFo+MqefRg0gMyTh/DkcOLO4XNbAWetRXxpXawJIQFpAiwEDcy6qH4XQ4HO2lSyuBwJy/tXWP/8X0J+d8abQVgxEXNwFB0mmFLA5fC7mnZ2VZEE5L27iCoMeQJ8orO9GFqwJdxCSoDpyaJIgFNFx4V/2bbwKuCUhuyMwi87I7aGVwFf3Xv44V21PbwKOPe8bUp4FUDpVx3a6+euG6i1gT8CWUzX1+13SgAAAABJRU5ErkJggg==') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACpElEQVRYR+3WS08TURgGYKaFXhDKpdACCtYQxQQNYGIiC40u/A8mLjSp3JWhpaEXbqUU6IUOM9NzjmAMIXHjQgm49qdpXr85NV0T205dcJJJFzPp+5z3fNO0peV6/W8N4O9qmkvmb04w66MpCAlIv+JIPORNQUjAxzjHzAuOnVH7m5AA9SXDz3OO5UmO3FDZ1iYqgCcMv38JzDzlSN1hKPWZtiEkYPWRCT3B8e1YIHqXYztowuw1bEFIQHLKwMwzju8nArEHHJs3GTL9Bo66tIYjKoBxHeo0x9xzjtikwNZtjq1gGWl/CVpnsaEICVgf06A+ZlieFlgbF1gnQGqQYyOgI9NTgN5RaBhCAlKjRaiTBJgSSIxRAyMEGOJIDjAk+zSkfQfQb+QagpCAjVAOH8YZViYEkqOCZoB2Tw0kBjiiAYZYr4aUN4uS56DuiEoDt/ah3jcRseoPEcCqn644AdQAx5KfYbGjhBVHFnl3fRESEA/s4n3IhHpPIDVMA0jhSQq3ACv9HAu9HGEfx5tWAxElh0PXft2akIBEdwazgwQIUe0UvtlPTfQRwE9vRbdAxCew5BUIOznmHQbWlCKOXNm6ICRgtX0HYb+JuSABKHSjh2O9i1roYHT2ZcTdNAdO6zKx5tCx7dCQV0o4btupGVF5DQnw2kU/RlYoVZ1pZ9hzazh0ZiFo+MqefRg0gMyTh/DkcOLO4XNbAWetRXxpXawJIQFpAiwEDcy6qH4XQ4HO2lSyuBwJy/tXWP/8X0J+d8abQVgxEXNwFB0mmFLA5fC7mnZ2VZEE5L27iCoMeQJ8orO9GFqwJdxCSoDpyaJIgFNFx4V/2bbwKuCUhuyMwi87I7aGVwFf3Xv44V21PbwKOPe8bUp4FUDpVx3a6+euG6i1gT8CWUzX1+13SgAAAABJRU5ErkJggg==') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_fade "Cursor: Disabled Textfields" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACy0lEQVRYR+2W3UsUURiHnXXdD/N7dXUtbUPKYAs1CPKiqIv+giCKKIzESjH8KpUyWl131x1n3Zmdc3S1rdTSkFJL7AOSkC6i7qOgi26DrrqPfr1nUa8ld2cjPHCYixne5zm/857DZGRsj38tAayNtHkJfs0CdPFMi4QAn/kCdnAJLC0SAtr9DezEV7CqyTQkIQROfoI+/xOsdhWsfARRQ5MQsCPvof/6DX70M9ieR9CLB6EZJiFAh1ag9XwHG/sBvncRrJRDK+qDaoiEgNQtQz1GjRgjgQMvwHbehV6iQs2/hXDKJQTAs4hI/Qew4yRR+xp8931KYRRRxwiU3JuQUyohilfPIXz4HfT6j+CeJRKYAnPFwZxjiBQqCOX0IpQyCVG4agZy7Vvodavg1U/AK+/RaSCBsjg15BjCeTICO3oQTImEKOqeQtDzBnrNCnjVLDj1AHNNkACJOOluKIohbJfhs3UjkHQJUXDXA/j3v4TmeQXungZ3ja8JUC84H4I5ZqDnxKGYRuCz9iZZQgg44xhwP4e2bxm8YpLgMVo9pVBGAiXTYEUzYHmPwcyTUCUFQcsN+JOWhChUwNDvegbNvUBwir2EgxeP0sopiYIYeN44uH0CPJP6wjRKEkHIlg74kiIhimRH4XU8hVY6T1BafaEKlk8zJwLdPoyoVYGeKSemZhpCxHQHYakLStYVeLcskRAYhtcySxfPLEVN4OxB6NbbCGd2wWdvo+Zrg9/WgYCtHUO2VgStzQhmNSFkboBsvoDmLUkkBALwls5BtVDEFoKbuynmFvgqW3FJvN/M+Ot/CVHc3o9+aZziDdEed0GTmhGqaEHjlla2WaOEQB8GJNpj03UwqRFKeROuGgIXkgJE++uTOqFLDYg4LuKaYfANgcvwS+cRyT2LdkPh6wLWcxi0n0Kn4fCNBE6jIS3wdYG0wTd7Ura/+68S+ANCfVvuuV2ZIgAAAABJRU5ErkJggg==') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACy0lEQVRYR+2W3UsUURiHnXXdD/N7dXUtbUPKYAs1CPKiqIv+giCKKIzESjH8KpUyWl131x1n3Zmdc3S1rdTSkFJL7AOSkC6i7qOgi26DrrqPfr1nUa8ld2cjPHCYixne5zm/857DZGRsj38tAayNtHkJfs0CdPFMi4QAn/kCdnAJLC0SAtr9DezEV7CqyTQkIQROfoI+/xOsdhWsfARRQ5MQsCPvof/6DX70M9ieR9CLB6EZJiFAh1ag9XwHG/sBvncRrJRDK+qDaoiEgNQtQz1GjRgjgQMvwHbehV6iQs2/hXDKJQTAs4hI/Qew4yRR+xp8931KYRRRxwiU3JuQUyohilfPIXz4HfT6j+CeJRKYAnPFwZxjiBQqCOX0IpQyCVG4agZy7Vvodavg1U/AK+/RaSCBsjg15BjCeTICO3oQTImEKOqeQtDzBnrNCnjVLDj1AHNNkACJOOluKIohbJfhs3UjkHQJUXDXA/j3v4TmeQXungZ3ja8JUC84H4I5ZqDnxKGYRuCz9iZZQgg44xhwP4e2bxm8YpLgMVo9pVBGAiXTYEUzYHmPwcyTUCUFQcsN+JOWhChUwNDvegbNvUBwir2EgxeP0sopiYIYeN44uH0CPJP6wjRKEkHIlg74kiIhimRH4XU8hVY6T1BafaEKlk8zJwLdPoyoVYGeKSemZhpCxHQHYakLStYVeLcskRAYhtcySxfPLEVN4OxB6NbbCGd2wWdvo+Zrg9/WgYCtHUO2VgStzQhmNSFkboBsvoDmLUkkBALwls5BtVDEFoKbuynmFvgqW3FJvN/M+Ot/CVHc3o9+aZziDdEed0GTmhGqaEHjlla2WaOEQB8GJNpj03UwqRFKeROuGgIXkgJE++uTOqFLDYg4LuKaYfANgcvwS+cRyT2LdkPh6wLWcxi0n0Kn4fCNBE6jIS3wdYG0wTd7Ura/+68S+ANCfVvuuV2ZIgAAAABJRU5ErkJggg==') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_disabled "Cursor: Disabled Buttons" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACpElEQVRYR+3WTU8TQRwGcLaUbhf7RrcvbF/oYmkLLkKLAYWACoFEjNHEEDXxouJFDyYEE7wWVqhtaLrLzKpXP4A3/Qh+Ks3jv6Ppmdh264FJJm3STZ/fPPM/7NDQxfrfGsDfNTCXyJ/fZO2PgSAE4Mkhx9U7fCAIATj4yLF+wJEvu9+EAGztM3z9wVF+xJFOnbnahADceM7w85eDtT2OyQWGTMx2DSEACzs23n3h+PTNQWGdIzlhIxe1XEEIQOWehZv7HJ+/O5jdpmsoMcQ1C5lws+8IATA2Wlh+wXH7Lc3BAwc5g1rQz6DGT5EKNvqKEIDSShOLTxmWdx0YWwSY49CKHAm9hTG1jnSg3jeEAOQXGyjvMFQeOyitOZiY4UiVOMYLDLFcE6HICVKXan1BCIA+V4Nxn2H+oYP8koM0nV6bIkC7hRmGKCGUoImE/6TnCAHIGMeY3rZh3HWglx1oeQIUCEAtJGY51FmGgH4KT8iEKvcWIQCJwhH0WzaKdP9ZCtQut+unPc0Rv8IRpaEM0fbqFiS6irjvuGdNCEBEO4S2YkNfpXA6dTzrIJalk+scEfoeoq2kHQynODwxQow0MO4ze4IQgNFEFWrFRnKJQnMcYwmOcJwjoDK6+zPIIYbh0fa24ZFb8HmaiEinyI1Uu0b8AYSq8BUthNtVxziCFBaWm4gNm9AVE1n/MdI0gBn/B+j+GiblGqZG6pj2NmB4X3eFEIDAaBXJaxZ8GQ7ZR1PvtaBJJjYndsXv51j//C4h/jukHEJKUr1+qt9jIyXVsZl92dXJzisSAFU5gqQwCufQ6W43Uq9cCW8jBSDtNxGVGPJSC2vqG9fCO4AiDVmJwleDe66GdwAV+T1WlX3XwzuA6/5nAwnvACj9vEN78dxFA9028BsSSBkJRZBQuAAAAABJRU5ErkJggg==') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACpElEQVRYR+3WTU8TQRwGcLaUbhf7RrcvbF/oYmkLLkKLAYWACoFEjNHEEDXxouJFDyYEE7wWVqhtaLrLzKpXP4A3/Qh+Ks3jv6Ppmdh264FJJm3STZ/fPPM/7NDQxfrfGsDfNTCXyJ/fZO2PgSAE4Mkhx9U7fCAIATj4yLF+wJEvu9+EAGztM3z9wVF+xJFOnbnahADceM7w85eDtT2OyQWGTMx2DSEACzs23n3h+PTNQWGdIzlhIxe1XEEIQOWehZv7HJ+/O5jdpmsoMcQ1C5lws+8IATA2Wlh+wXH7Lc3BAwc5g1rQz6DGT5EKNvqKEIDSShOLTxmWdx0YWwSY49CKHAm9hTG1jnSg3jeEAOQXGyjvMFQeOyitOZiY4UiVOMYLDLFcE6HICVKXan1BCIA+V4Nxn2H+oYP8koM0nV6bIkC7hRmGKCGUoImE/6TnCAHIGMeY3rZh3HWglx1oeQIUCEAtJGY51FmGgH4KT8iEKvcWIQCJwhH0WzaKdP9ZCtQut+unPc0Rv8IRpaEM0fbqFiS6irjvuGdNCEBEO4S2YkNfpXA6dTzrIJalk+scEfoeoq2kHQynODwxQow0MO4ze4IQgNFEFWrFRnKJQnMcYwmOcJwjoDK6+zPIIYbh0fa24ZFb8HmaiEinyI1Uu0b8AYSq8BUthNtVxziCFBaWm4gNm9AVE1n/MdI0gBn/B+j+GiblGqZG6pj2NmB4X3eFEIDAaBXJaxZ8GQ7ZR1PvtaBJJjYndsXv51j//C4h/jukHEJKUr1+qt9jIyXVsZl92dXJzisSAFU5gqQwCufQ6W43Uq9cCW8jBSDtNxGVGPJSC2vqG9fCO4AiDVmJwleDe66GdwAV+T1WlX3XwzuA6/5nAwnvACj9vEN78dxFA9028BsSSBkJRZBQuAAAAABJRU5ErkJggg==') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown cursor_map "Cursor: Map" {
-	New Nice Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACwklEQVRYR+2WS08TURiGPwSrhEsa7hiKFKJG/4d/xcSlG924EEWB1g4z0znzB0x0Y0y8pAgGAi5QMSoSjBITg4CUtgjT1t7odF6/4yUxLgyBdnDBSb7MZs55n3m/yxyig/W/OYBfa9+4pL6NM2H53BcIKezg7GAJJ7V9gZCiJZwfdtBzJYUew3WInyk4fc3BnWAJ3YHPaHE3HRKgCP+gA9t04OvPosv4gHrdNSekUB7HAw7ODQAjgRJ82jq8+hxq3akJCZCBP+Sgux/Qgg76VAvtxjLqtFmQUnEnpEAaPsXBiSEHvQxxSv2GbpFAU/gjqkMzBRqpKIQ8fAudig3/MBiCQ88yQBrtIoo6dX6bQtMZUisGIQ9eQ2OwiK4A4A8yAIv7ODpECq3GF3iUV0lSJq0KQUiATzgyVEQni/eGbPSZKRxj8Q6RYRfyaDbWUK28jJI2maDyd4cEeG/TYAHtDOAfyaPHTLJ4ksWzHDZaORr0RJHUhRUS0+WGkAALSQoW4A0BXSrPAWExQBptDNAmimgRDhrCJRzWclkyFtdJTKxT+YaVBHgdJyUHD7dgp5ZhcQut5haaGaKJ0+A1c2g0C6g1bRwSVoHE4iaJ0dUyQfwAWCUtj6qbDhrVFIsm4OVoEHHUGquoCcdQbcQcMqI2GUtZEu/SJF5YJO4u0d7/HRLg2Qpp2TTpJXi0DdSLJXiM+QLpYytkPODii8RIH98g/YlFemST9EdfObYofN8i43pkjxAS4CkD5HBUKaJGLPPXvtkm4+EyiYujxK25s7Xru4Q8fopTkOHcxlEl5rZJjCdIXHpM3BUuXFKkyMQaaTGbcwsSY0kSl6dcEpe2SYBIlPS3DDDGBXZ1xoUf0J/5kgD34lxcLD7wvELj9l8FIgFusQM3ZiswZndSmRLgwu0yDZWdCP79zu8m283egz0HDuzGge+BvoDhNmU0YQAAAABJRU5ErkJggg==') 4 3, EOT;
-Your System Standard "Your System Standard" <<<EOT   EOT;
+	New-Nice-Cursor "New Nice Cursor*" <<<EOT url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41Ljg3O4BdAAACwklEQVRYR+2WS08TURiGPwSrhEsa7hiKFKJG/4d/xcSlG924EEWB1g4z0znzB0x0Y0y8pAgGAi5QMSoSjBITg4CUtgjT1t7odF6/4yUxLgyBdnDBSb7MZs55n3m/yxyig/W/OYBfa9+4pL6NM2H53BcIKezg7GAJJ7V9gZCiJZwfdtBzJYUew3WInyk4fc3BnWAJ3YHPaHE3HRKgCP+gA9t04OvPosv4gHrdNSekUB7HAw7ODQAjgRJ82jq8+hxq3akJCZCBP+Sgux/Qgg76VAvtxjLqtFmQUnEnpEAaPsXBiSEHvQxxSv2GbpFAU/gjqkMzBRqpKIQ8fAudig3/MBiCQ88yQBrtIoo6dX6bQtMZUisGIQ9eQ2OwiK4A4A8yAIv7ODpECq3GF3iUV0lSJq0KQUiATzgyVEQni/eGbPSZKRxj8Q6RYRfyaDbWUK28jJI2maDyd4cEeG/TYAHtDOAfyaPHTLJ4ksWzHDZaORr0RJHUhRUS0+WGkAALSQoW4A0BXSrPAWExQBptDNAmimgRDhrCJRzWclkyFtdJTKxT+YaVBHgdJyUHD7dgp5ZhcQut5haaGaKJ0+A1c2g0C6g1bRwSVoHE4iaJ0dUyQfwAWCUtj6qbDhrVFIsm4OVoEHHUGquoCcdQbcQcMqI2GUtZEu/SJF5YJO4u0d7/HRLg2Qpp2TTpJXi0DdSLJXiM+QLpYytkPODii8RIH98g/YlFemST9EdfObYofN8i43pkjxAS4CkD5HBUKaJGLPPXvtkm4+EyiYujxK25s7Xru4Q8fopTkOHcxlEl5rZJjCdIXHpM3BUuXFKkyMQaaTGbcwsSY0kSl6dcEpe2SYBIlPS3DDDGBXZ1xoUf0J/5kgD34lxcLD7wvELj9l8FIgFusQM3ZiswZndSmRLgwu0yDZWdCP79zu8m283egz0HDuzGge+BvoDhNmU0YQAAAABJRU5ErkJggg==') 4 3, EOT;
+Your-System-Standard "Your System Standard" <<<EOT   EOT;
 
 }
 @advanced dropdown topbar "Top Button Bar" {
-	fixed top left (slid "fixed top left (slider)*" <<<EOT 	html > body > table[cellspacing="10"][cellpadding="10"] > tbody > tr:first-child > td[width="627"][colspan="2"]{
+	fixed-top-left--slid "fixed top left (slider)*" <<<EOT 	html > body > table[cellspacing="10"][cellpadding="10"] > tbody > tr:first-child > td[width="627"][colspan="2"]{
 		float:left;
 		padding:1px!important;
 		left:-90px;
@@ -78,11 +78,11 @@ Your System Standard "Your System Standard" <<<EOT   EOT;
 		position:relative;
 		float:left;
 	} EOT;
-Leave alone "Leave alone" <<<EOT   EOT;
+Leave-alone "Leave alone" <<<EOT   EOT;
 
 }
 @advanced dropdown bottombar "Bottom Button Bar" {
-	fixed top right (sli "fixed top right (slider)*" <<<EOT 	html > body > table[cellspacing="10"][cellpadding="10"] > tbody > tr:last-child > td[width="627"][colspan="2"]{
+	fixed-top-right--sli "fixed top right (slider)*" <<<EOT 	html > body > table[cellspacing="10"][cellpadding="10"] > tbody > tr:last-child > td[width="627"][colspan="2"]{
 		float:right;
 		padding:1px!important;
 		right:-90px;
@@ -106,11 +106,11 @@ Leave alone "Leave alone" <<<EOT   EOT;
 		position:relative;
 		float:right;
 	} EOT;
-Leave alone "Leave alone" <<<EOT   EOT;
+Leave-alone "Leave alone" <<<EOT   EOT;
 
 }
 @advanced dropdown roundcorners "Rounded Corners" {
-	Yes, please. "Yes, please.*" <<<EOT 	a,
+	Yes--please- "Yes, please.*" <<<EOT 	a,
 	*.forms,
 	*.forms_txt,
 	*.forms_txt_fade,
@@ -124,7 +124,7 @@ Leave alone "Leave alone" <<<EOT   EOT;
 		-moz-border-radius:3px;
 		-webkit-border-radius:3px;
 	} EOT;
-No, thank you. "No, thank you." <<<EOT   EOT;
+No--thank-you- "No, thank you." <<<EOT   EOT;
 
 }
 

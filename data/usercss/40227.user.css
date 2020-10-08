@@ -7,25 +7,25 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown imohide-opacity "Window Opacity Options" {
-	20% / 50% Hover (def "20% / 50% Hover (default)" <<<EOT  body {
+	20----50--Hover--def "20% / 50% Hover (default)" <<<EOT  body {
  opacity:.2 !important;
 }
 body:hover {
  opacity:.5 !important;
 } EOT;
-20% / 100% Hover "20% / 100% Hover" <<<EOT  body {
+20----100--Hover "20% / 100% Hover" <<<EOT  body {
  opacity:.2 !important;
 }
 body:hover {
  opacity:1 !important;
 } EOT;
-20% "20%" <<<EOT  body {
+20- "20%" <<<EOT  body {
  opacity:.2 !important;
 } EOT;
-50% "50%" <<<EOT  body {
+50- "50%" <<<EOT  body {
  opacity:.5 !important;
 } EOT;
-100% "100%" <<<EOT  body {
+100- "100%" <<<EOT  body {
  opacity:1 !important;
 } EOT;
 

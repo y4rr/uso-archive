@@ -7,8 +7,8 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced color Color "Purple area (see picture)" #4B0082
-@advanced color Admin name "Admin names (such as Xander's name)" #EE7600
-@advanced color Moderator name "Moderator names (such as Whimee and Ellie)" #08E8DE
+@advanced color Admin-name "Admin names (such as Xander's name)" #EE7600
+@advanced color Moderator-name "Moderator names (such as Whimee and Ellie)" #08E8DE
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -79,12 +79,12 @@ a {
     
     
 .admin {
-    color: /*[[Admin name]]*/!important;
+    color: /*[[Admin-name]]*/!important;
 }
     
     
 .moderator {
-    color: /*[[Moderator name]]*/;
+    color: /*[[Moderator-name]]*/;
 }
  
 

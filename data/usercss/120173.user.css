@@ -38,7 +38,7 @@ header[data-component="header"] > [data-wrapper]
 
 [data-component="input"] input, [data-component="button"][data-importance="input"]{background: #fff!important;border-color:#fff!important;} 
  EOT;
-dark style "Dark Style" <<<EOT /***dark***\/
+dark-style "Dark Style" <<<EOT /***dark***\/
 html, body, html:not(.adWithOutsideComponent) .wrapper-themed.games, .wrapper-themed.games .wrapper-center, html:not(.adWithOutsideComponent) .wrapper-themed.vorteilswelt, .wrapper-themed.vorteilswelt .wrapper-center, .wrapper-center.first:before, .wrapper-themed.special .wrapper-center, .wrapper-themed.special {background:#444!important}
 html #loginsearch, .logout-notification .hint{background:#212121 url(https://file1.hpage.com/010270/19/bilder/commentsback1.jpg)!important;border:0px solid #4c4c4c!important;border-radius: 15px!important; box-shadow:none!important;color:#bbb!important;opacity:0.8;}
 #loginsearch a, .logout-notification .hint h2, .logout-notification .link-list li > a{color: #bbb!important;}
@@ -96,7 +96,7 @@ header[data-component="header"] > [data-wrapper]
 }
 @advanced dropdown darke "Dark Style (Email Seite)" {
 	original "Original*" <<<EOT  EOT;
-dark style "Dark Style" <<<EOT /***dark***\/
+dark-style "Dark Style" <<<EOT /***dark***\/
 .atl-app-contents-wrapper, .notouch, html .app, html.circles, html.darkblue, html.darkpurple, html.darkgrey, html.beach, html.cristal, html.wall, html.print, html.beige, html.turquoise, html.lila, html.fmclassic, html.blue  {background: #333!important;}
 /*navtop*\/
 .atl-navbar{background:#212121 url(https://file1.hpage.com/010270/19/bilder/commentsback1.jpg)!important;border-bottom:1px solid #4c4c4c!important; height: 52px!important;border-top:none!important;}

@@ -7,19 +7,19 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown theimage "Choose The BG Image" {
-Daryl Season 3 "Daryl Season 3*" <<<EOT http://img41.imageshack.us/img41/5074/darylbgdark.png EOT;
+Daryl-Season-3 "Daryl Season 3*" <<<EOT http://img41.imageshack.us/img41/5074/darylbgdark.png EOT;
 
 	theimage-custom-dropdown "Custom" <<<EOT /*[[theimage-custom]]*\/ EOT;
 }
 @advanced text theimage-custom "Choose The BG Image (Custom)" "https://example.com/image.png"
 @advanced dropdown postopacity "Post Opacity" {
-	Transparent BG Posts "Transparent BG Posts*" <<<EOT .25 EOT;
-White BG Posts "White BG Posts" <<<EOT 1 EOT;
+	Transparent-BG-Posts "Transparent BG Posts*" <<<EOT .25 EOT;
+White-BG-Posts "White BG Posts" <<<EOT 1 EOT;
 
 }
 @advanced dropdown baropacity "Dashboard Bar Opacity" {
-	Transparent Dashboar "Transparent Dashboard Bar*" <<<EOT .25 EOT;
-White Dashboard Bar "White Dashboard Bar" <<<EOT 1 EOT;
+	Transparent-Dashboar "Transparent Dashboard Bar*" <<<EOT .25 EOT;
+White-Dashboard-Bar "White Dashboard Bar" <<<EOT 1 EOT;
 
 }
 @advanced color thecolor "Font Color" #000000

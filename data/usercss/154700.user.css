@@ -12,9 +12,9 @@
 @advanced color Border "Border" #3C414C
 @advanced color Link "Link" #4B97F8
 @advanced color Search "Search" #F8AC4B
-@advanced color Primary Text "Primary Text" #EBEBEB
-@advanced color Secondary Text "Secondary Text" #626262
-@advanced color Tertiary Text "Tertiary Text" #555555
+@advanced color Primary-Text "Primary Text" #EBEBEB
+@advanced color Secondary-Text "Secondary Text" #626262
+@advanced color Tertiary-Text "Tertiary Text" #555555
 
 ==/UserStyle== */
 /*
@@ -47,23 +47,23 @@ div[style*="background-color"]:not(.navShowUser):not(.navShowSearch) {
 }
 
 a.list-group-item, button.list-group-item {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .btn-default {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     background-color: /*[[Secondary]]*/ !important;
     text-decoration: underline !important;
 }
 
 .note {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 a {
@@ -88,14 +88,14 @@ blue {
 
 .bigNavBar, .footer, .navbar-default, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .box-header {
     background-color: /*[[Primary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
     border-bottom: none !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .breadcrumb {
@@ -105,18 +105,18 @@ blue {
 .containerNav, .modal-content {
     background-color: /*[[Secondary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .textarea-wrapper,
 .textarea {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .feedDescription {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .genreLastest {
@@ -126,7 +126,7 @@ blue {
 .alert {
     box-shadow: none !important;
     background-color: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .comment-container {
@@ -136,7 +136,7 @@ blue {
 .leftColumn .latestSeries .row, .perFeed .row {
     background-color: /*[[Primary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .list-group-item, .leftColumn .latestGroup, .hotUpdate .box-body, .MostPopular {
@@ -147,13 +147,13 @@ blue {
 .mainWell {
     background-color: /*[[Secondary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .modal-header {
     background-color: /*[[Primary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .navShowSearch {
@@ -168,13 +168,13 @@ blue {
     background-color: /*[[Secondary]]*/ !important;
     border-bottom: 1px solid /*[[Border]]*/ !important;
     border-top: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .panel-collapse, .list-group, .panel-body, .panel-default, .panel-group, .panel-heading {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .userParent {
@@ -184,12 +184,12 @@ blue {
 .well {
     background-color: /*[[Secondary]]*/ !important;
     border: 1px solid /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .quickSearchResults, .resultItem {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
@@ -199,7 +199,7 @@ blue {
 
 .well.perSub {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
@@ -209,7 +209,7 @@ hr {
 
 .input-group-addon {
      background-color: /*[[Secondary]]*/ !important;
-     color: /*[[Primary Text]]*/ !important;
+     color: /*[[Primary-Text]]*/ !important;
      border-color: /*[[Border]]*/ !important;
 }
 
@@ -223,17 +223,17 @@ a:hover {
 
 body, html {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button {
     background-color: /*[[Border]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button.close {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 img {
@@ -244,7 +244,7 @@ img {
 input, textarea, select, option {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .chapter-list .list-group-item,
@@ -256,6 +256,6 @@ input, textarea, select, option {
 }
 
 .SeriesTime {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 }

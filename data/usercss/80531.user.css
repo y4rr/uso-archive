@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown catenary "Arrange the lights" {
-	in a couple of long  "in a couple of long loops*" <<<EOT   NAV LI:nth-of-type(odd):before {top: 2px}
+	in-a-couple-of-long- "in a couple of long loops*" <<<EOT   NAV LI:nth-of-type(odd):before {top: 2px}
   NAV LI:nth-of-type(odd):after {top: 9px}
   NAV LI:nth-of-type(odd)>/*A*\/:first-child::before {top: 13px}
   NAV LI:nth-of-type(odd)>/*A*\/:first-child::after {top: 14.5px}
@@ -17,8 +17,8 @@
   NAV LI:nth-of-type(even)>A:before {top: 10.5px}
   NAV LI:nth-of-type(even)>A:after {top: 4.5px}
  EOT;
-in a straight line "in a straight line" <<<EOT  EOT;
-in several short loo "in several short loops" <<<EOT   NAV LI:before {top: 7px}
+in-a-straight-line "in a straight line" <<<EOT  EOT;
+in-several-short-loo "in several short loops" <<<EOT   NAV LI:before {top: 7px}
   NAV LI:after {top: 10px}
   NAV LI>/*A*\/:first-child::before {top: 7px}
   NAV LI>/*A*\/:first-child::after {top: 2px}
@@ -26,25 +26,25 @@ in several short loo "in several short loops" <<<EOT   NAV LI:before {top: 7px}
 
 }
 @advanced dropdown animate "Blink the lights?" {
-	On and off "On and off*" <<<EOT     -webkit-animation: blink 2.5s steps(1,end) infinite;
+	On-and-off "On and off*" <<<EOT     -webkit-animation: blink 2.5s steps(1,end) infinite;
     animation: blink 2.5s steps(1,end) infinite;
  EOT;
 No "No" <<<EOT  EOT;
-Chase (on off on off "Chase (on off on off ...)" <<<EOT     animation: chase 1s steps(1,end) infinite;
+Chase--on-off-on-off "Chase (on off on off ...)" <<<EOT     animation: chase 1s steps(1,end) infinite;
     -webkit-animation: chase 1s steps(1,end) infinite;
   }
   NAV LI:after {-webkit-animation-delay: 0.5s; animation-delay: 0.5s;}
   NAV LI > /*A*\/:first-child::before {-webkit-animation-delay: 1s; animation-delay: 1s;}
   NAV LI > /*A*\/:first-child::after {-webkit-animation-delay: 1.5s; animation-delay: 1.5s
  EOT;
-Chase (on on off off "Chase (on on off off ...)" <<<EOT     -webkit-animation: chase 2s steps(1,end) infinite;
+Chase--on-on-off-off "Chase (on on off off ...)" <<<EOT     -webkit-animation: chase 2s steps(1,end) infinite;
     animation: chase 2s steps(1,end) infinite;
   }
   NAV LI:after {-webkit-animation-delay: 0.5s; animation-delay: 0.5s;}
   NAV LI > /*A*\/:first-child::before {-webkit-animation-delay: 1s; animation-delay: 1s;}
   NAV LI > /*A*\/:first-child::after {-webkit-animation-delay: 1.5s; animation-delay: 1.5s
  EOT;
-Chase all on, chase  "Chase all on, chase all off" <<<EOT     -webkit-animation: chase 4s steps(1,end) infinite;
+Chase-all-on--chase- "Chase all on, chase all off" <<<EOT     -webkit-animation: chase 4s steps(1,end) infinite;
     animation: chase 4s steps(1,end) infinite;
   }
   NAV LI:after {-webkit-animation-delay: 0.5s; animation-delay: 0.5s;}

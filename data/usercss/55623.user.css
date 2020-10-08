@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown settingplaceholder "Choose your add-on bar style:" {
-	#1 Default (Recommen "#1 Default (Recommended)*" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+	-1-Default--Recommen "#1 Default (Recommended)*" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #FindToolbar {
 background:-moz-linear-gradient(rgba(255,255,255,0), rgba(200,200,200,0))!important;
@@ -104,7 +104,7 @@ bottom:0px!important;
 #main-window[sizemode="fullscreen"] #FindToolbar {
 left:0px;
 } EOT;
-#2 Slide-in and out "#2 Slide-in and out" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+-2-Slide-in-and-out "#2 Slide-in and out" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #FindToolbar {
 background:-moz-linear-gradient(rgba(255,255,255,0), rgba(200,200,200,0))!important;
@@ -184,7 +184,7 @@ opacity:1;
 #FindToolbar:hover, #addon-bar:hover {
 z-index:1;
 } EOT;
-#3 Always 100% opaqu "#3 Always 100% opaque" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+-3-Always-100--opaqu "#3 Always 100% opaque" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #FindToolbar {
 background:-moz-linear-gradient(rgba(255,255,255,0), rgba(200,200,200,0))!important;
@@ -253,7 +253,7 @@ opacity:1;
 #FindToolbar:hover, #addon-bar:hover {
 z-index:1;
 } EOT;
-#4 Essentially #5 +  "#4 Essentially #5 + Slide-in and out at fullscreen" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+-4-Essentially--5--- "#4 Essentially #5 + Slide-in and out at fullscreen" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #FindToolbar {
 background:-moz-linear-gradient(rgba(255,255,255,0), rgba(200,200,200,0))!important;
@@ -345,7 +345,7 @@ bottom:0px!important;
 #main-window[sizemode="fullscreen"] #FindToolbar {
 left:0px;
 } EOT;
-#5 100% Opaque on ho "#5 100% Opaque on hover, weak opacity on mouseout" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+-5-100--Opaque-on-ho "#5 100% Opaque on hover, weak opacity on mouseout" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #FindToolbar {
 background:-moz-linear-gradient(rgba(255,255,255,0), rgba(200,200,200,0))!important;
@@ -418,7 +418,7 @@ opacity:1;
 #FindToolbar:hover, #addon-bar:hover {
 z-index:1;
 } EOT;
-#6 Essentially #2 +  "#6 Essentially #2 + Dark Theme" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+-6-Essentially--2--- "#6 Essentially #2 + Dark Theme" <<<EOT @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #addon-bar, #status-bar, #addon-bar, #browser-bottombox {
 outline:none!important;

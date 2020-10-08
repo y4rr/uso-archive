@@ -17,7 +17,7 @@ On "On" <<<EOT #add_comment_box .dark_toolbar {padding: 2px !important;}
 }
 @advanced dropdown pabst "Preview Above Buttons" {
 	Off "Off*" <<<EOT  EOT;
-On [Normal Mode] "On [Normal Mode]" <<<EOT /*Preview Above Buttons [Normal Mode]*\/
+On--Normal-Mode- "On [Normal Mode]" <<<EOT /*Preview Above Buttons [Normal Mode]*\/
   #add_comment_box .add_comment_toolbar {
     position:fixed !important;
     bottom:0 !important;
@@ -29,7 +29,7 @@ On [Normal Mode] "On [Normal Mode]" <<<EOT /*Preview Above Buttons [Normal Mode]
   #add_comment_box {
     padding-bottom:65px !important;
   } EOT;
-On [Compact Mode] "On [Compact Mode]" <<<EOT /*Preview Above Buttons [Compact Mode]*\/
+On--Compact-Mode- "On [Compact Mode]" <<<EOT /*Preview Above Buttons [Compact Mode]*\/
   #add_comment_box .add_comment_toolbar {
     position:fixed !important;
     bottom:0 !important;

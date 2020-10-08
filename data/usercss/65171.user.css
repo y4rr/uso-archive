@@ -7,8 +7,8 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown NowOnAirOnly "WaitList&履歴欄" {
-	WaitList,NowOnAir,Pa "WaitList,NowOnAir,PalyListLogを表示*" <<<EOT  EOT;
-NowOnAirのみを表示 "NowOnAirのみを表示" <<<EOT /*WaitList&履歴欄：NowOnAir以外を非表示*\/
+	WaitList-NowOnAir-Pa "WaitList,NowOnAir,PalyListLogを表示*" <<<EOT  EOT;
+NowOnAir----- "NowOnAirのみを表示" <<<EOT /*WaitList&履歴欄：NowOnAir以外を非表示*\/
 #wrapSlide div#cntBox div#playlist.leftCnt{
         display:none !important;
     }

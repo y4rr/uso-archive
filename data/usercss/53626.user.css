@@ -8,17 +8,17 @@
 @preprocessor   uso
 @advanced dropdown myfont "Choose a font" {
 	Hiragino "Hiragino" <<<EOT Hiragino, Hiragino Sans GB W3 EOT;
-微软雅黑 "微软雅黑" <<<EOT 微软雅黑 EOT;
+---- "微软雅黑" <<<EOT 微软雅黑 EOT;
 Sans-serif "Sans-serif" <<<EOT Arial, sans-serif EOT;
 
 }
 @advanced dropdown mybackground "choose a background image" {
-	企鹅罐（白） "企鹅罐（白）" <<<EOT url("https://lh5.googleusercontent.com/-uUD3Z0UJHe8/TnEYXDR7jLI/AAAAAAAAGVU/iiikTKbsES4/s0/mg_white.gif") repeat fixed #fff EOT;
-企鹅罐（粉） "企鹅罐（粉）" <<<EOT url("https://lh6.googleusercontent.com/-7sBpPnYy3G4/TnEYXk7mIWI/AAAAAAAAGVg/u743K7n6dU8/s0/2_mg_pink.gif") repeat fixed #fff EOT;
+	------ "企鹅罐（白）" <<<EOT url("https://lh5.googleusercontent.com/-uUD3Z0UJHe8/TnEYXDR7jLI/AAAAAAAAGVU/iiikTKbsES4/s0/mg_white.gif") repeat fixed #fff EOT;
+------ "企鹅罐（粉）" <<<EOT url("https://lh6.googleusercontent.com/-7sBpPnYy3G4/TnEYXk7mIWI/AAAAAAAAGVg/u743K7n6dU8/s0/2_mg_pink.gif") repeat fixed #fff EOT;
 
 }
 @advanced dropdown mycomment "评论装饰" {
-	喵老师 "喵老师" <<<EOT url("https://lh6.googleusercontent.com/-795LcLs9xpQ/TnPSTvxsAGI/AAAAAAAAGdo/fHlyvkmwN7g/s0/21606166.png") no-repeat right 80% #fff EOT;
+	--- "喵老师" <<<EOT url("https://lh6.googleusercontent.com/-795LcLs9xpQ/TnPSTvxsAGI/AAAAAAAAGdo/fHlyvkmwN7g/s0/21606166.png") no-repeat right 80% #fff EOT;
 none "none" <<<EOT none EOT;
 
 }

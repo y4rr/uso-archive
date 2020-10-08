@@ -12,9 +12,9 @@ No "No" <<<EOT /* EOT;
 
 }
 @advanced dropdown qpcss "QP: Hover styling" {
-	CSS defaults (padded "CSS defaults (padded, light outline)*" <<<EOT body > #qp { background-color: inherit !important; border: 1px solid rgb(128, 128, 128) !important; padding: 4px !important; } EOT;
-4chan X (vanilla) "4chan X (vanilla)" <<<EOT  EOT;
-/b/ackwash reloaded "/b/ackwash reloaded" <<<EOT body > #qp { background-color: inherit !important; border: 1px solid #aaa !important; padding: 6px !important; } EOT;
+	CSS-defaults--padded "CSS defaults (padded, light outline)*" <<<EOT body > #qp { background-color: inherit !important; border: 1px solid rgb(128, 128, 128) !important; padding: 4px !important; } EOT;
+4chan-X--vanilla- "4chan X (vanilla)" <<<EOT  EOT;
+-b-ackwash-reloaded "/b/ackwash reloaded" <<<EOT body > #qp { background-color: inherit !important; border: 1px solid #aaa !important; padding: 6px !important; } EOT;
 
 }
 @advanced dropdown email "Show e-mail" {
@@ -44,14 +44,14 @@ No "No" <<<EOT /* EOT;
 }
 @advanced dropdown navscroll "Sticky navigation" {
 	Neither "Neither*" <<<EOT /* no navscroll EOT;
-Top & Bottom "Top & Bottom" <<<EOT #navbotr, #navbot { bottom: 0 !important; } #navtopr, #navtop, #navbotr, #navbot EOT;
-Top only "Top only" <<<EOT #navtopr, #navtop EOT;
-Bottom only "Bottom only" <<<EOT #navbotr, #navbot { bottom: 0 !important; } #navbotr, #navbot  EOT;
+Top---Bottom "Top & Bottom" <<<EOT #navbotr, #navbot { bottom: 0 !important; } #navtopr, #navtop, #navbotr, #navbot EOT;
+Top-only "Top only" <<<EOT #navtopr, #navtop EOT;
+Bottom-only "Bottom only" <<<EOT #navbotr, #navbot { bottom: 0 !important; } #navbotr, #navbot  EOT;
 
 }
 @advanced dropdown spoilers "Always reveal spoiler text" {
 	No "No*" <<<EOT  EOT;
-Yes (with red text) "Yes (with red text)" <<<EOT .spoiler { color: red !important; background: none !important; } EOT;
+Yes--with-red-text- "Yes (with red text)" <<<EOT .spoiler { color: red !important; background: none !important; } EOT;
 Yes "Yes" <<<EOT .spoiler { color: inherit !important; background: none !important; } EOT;
 
 }
@@ -82,7 +82,7 @@ Fade "Fade" <<<EOT /* better outline approach by Mayhem - https://github.com/aeo
 		-o-transition: outline .3s ease-in-out;
 		transition: outline .3s ease-in-out;
 	} EOT;
-Flash (canv.as) "Flash (canv.as)" <<<EOT .qphl { 
+Flash--canv-as- "Flash (canv.as)" <<<EOT .qphl { 
 		-moz-animation: qphlout 0.8s; -moz-animation-fill-mode: forwards;
 		-webkit-animation: qphlout 0.8s; -webkit-animation-fill-mode: forwards;
  		-o-animation: qphlout 0.8s; -o-animation-fill-mode: forwards; /* maybe one day, oprah *\/

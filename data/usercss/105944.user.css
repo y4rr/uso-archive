@@ -6,33 +6,33 @@
 @version        2015106.10.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown 浏览器 "浏览器" {
+@advanced dropdown --- "浏览器" {
 	1 "火狐*" <<<EOT -moz- EOT;
 2 "谷歌 360 百度 欧朋 遨游等" <<<EOT -webkit- EOT;
 3 "旧版欧朋" <<<EOT -o- EOT;
 4 "IE" <<<EOT -ms- EOT;
 
 }
-@advanced dropdown 背景图片 "背景图片" {
+@advanced dropdown ---- "背景图片" {
 1 "绿植*" <<<EOT http://g.hiphotos.baidu.com/image/w%3D2048/sign=d72af197b151f819f125044aee8c4bed/908fa0ec08fa513dc8af1b623c6d55fbb2fbd901.jpg EOT;
 
-	背景图片-custom-dropdown "Custom" <<<EOT /*[[背景图片-custom]]*\/ EOT;
+	-----custom-dropdown "Custom" <<<EOT /*[[-----custom]]*\/ EOT;
 }
-@advanced text 背景图片-custom "背景图片 (Custom)" "https://example.com/image.png"
-@advanced dropdown 遮盖 "背景图片半透明覆盖" {
+@advanced text -----custom "背景图片 (Custom)" "https://example.com/image.png"
+@advanced dropdown -- "背景图片半透明覆盖" {
 	1 "有*" <<<EOT /*[[浏览器]]*\/linear-gradient(top,rgba(248,248,248,0.6),rgba(248,248,248,0.2)), EOT;
 2 "无" <<<EOT  EOT;
 
 }
-@advanced text 颜色 "内容区颜色(rgb)" "235,235,235"
-@advanced dropdown 透明度 "内容区透明度" {
+@advanced text -- "内容区颜色(rgb)" "235,235,235"
+@advanced dropdown --- "内容区透明度" {
 	2 "0.3*" <<<EOT .3 EOT;
 3 "0.5" <<<EOT .5 EOT;
 1 "0.7" <<<EOT .7 EOT;
 4 "0.9" <<<EOT .9 EOT;
 
 }
-@advanced text 宽度 "搜索页宽度" "1400"
+@advanced text -- "搜索页宽度" "1400"
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -43,7 +43,7 @@
      }     
      /*背景透明*/
      html:not(.view),body:not([contenteditable]){
-     background:/*[[遮盖]]*/url(/*[[背景图片]]*/) no-repeat fixed center / cover!important;
+     background:/*[[--]]*/url(/*[[----]]*/) no-repeat fixed center / cover!important;
      }     
      /*右上角信息*/ 
 		 nobr *,.main-list *{
@@ -96,7 +96,7 @@
      }     
      /*背景透明*/
      [id="body"]{
-     background: rgba(/*[[颜色]]*/,/*[[透明度]]*/)!important;
+     background: rgba(/*[[--]]*/,/*[[---]]*/)!important;
      min-width:1000px!important;
      box-shadow:0 0 20px #888 !important;
      padding-top:20px!important;
@@ -159,10 +159,10 @@
 		 box-shadow: 0 0 15px #ccc !important; 
 		 margin:15px!important; 
 		 padding: 10px!important; 
-		 min-width: /*[[宽度]]*/ !important;
+		 min-width: /*[[--]]*/ !important;
      } 
 		 #wgt-list{
-     width:/*[[宽度]]*/ !important;
+     width:/*[[--]]*/ !important;
      }
      #wgt-list dl{
      height:160px!important;
@@ -195,7 +195,7 @@
      padding:0!important;
      }     
      .qb-content,#qb-content{
-     width:/*[[浏览器]]*/calc(100% - 300px)!important; 
+     width:/*[[---]]*/calc(100% - 300px)!important; 
      }     
      .wgt-ask{
      padding:20px 5px 0 20px!important;

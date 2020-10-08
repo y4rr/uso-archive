@@ -7,12 +7,12 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown theimage "Choose The BG Image" {
-Angels Falling 1 "S8 Finale - Angels Falling 1*" <<<EOT http://www.mediafire.com/convkey/71a9/pwipyhj7k1xngmsfg.jpg EOT;
-Angels Falling 2 "S8 Finale - Angels Falling 2" <<<EOT http://www.mediafire.com/convkey/d402/pbfebul65fgiw5tfg.jpg EOT;
-Angels Falling 3 "S8 Finale - Angels Falling 3" <<<EOT http://www.mediafire.com/convkey/5b4b/xha2j295wrrqdonfg.jpg EOT;
-Angels Falling 4 "S8 Finale - Angels Falling 4" <<<EOT http://www.mediafire.com/convkey/ede2/jqjwctf8t3w8ggbfg.jpg EOT;
-Angels Falling 5 "S8 Finale - Angels Falling 5" <<<EOT http://www.mediafire.com/convkey/7431/l98mib87jh3o4hhfg.jpg EOT;
-Angels Falling 6 "S8 Finale - Angels Falling 6" <<<EOT http://www.mediafire.com/convkey/f8b3/xq5886by2d6q9fpfg.jpg EOT;
+Angels-Falling-1 "S8 Finale - Angels Falling 1*" <<<EOT http://www.mediafire.com/convkey/71a9/pwipyhj7k1xngmsfg.jpg EOT;
+Angels-Falling-2 "S8 Finale - Angels Falling 2" <<<EOT http://www.mediafire.com/convkey/d402/pbfebul65fgiw5tfg.jpg EOT;
+Angels-Falling-3 "S8 Finale - Angels Falling 3" <<<EOT http://www.mediafire.com/convkey/5b4b/xha2j295wrrqdonfg.jpg EOT;
+Angels-Falling-4 "S8 Finale - Angels Falling 4" <<<EOT http://www.mediafire.com/convkey/ede2/jqjwctf8t3w8ggbfg.jpg EOT;
+Angels-Falling-5 "S8 Finale - Angels Falling 5" <<<EOT http://www.mediafire.com/convkey/7431/l98mib87jh3o4hhfg.jpg EOT;
+Angels-Falling-6 "S8 Finale - Angels Falling 6" <<<EOT http://www.mediafire.com/convkey/f8b3/xq5886by2d6q9fpfg.jpg EOT;
 Dean1 "Dean Winchester 1" <<<EOT http://img.photobucket.com/albums/v420/KaKaVegeGurl/WincestLogo3.png EOT;
 Sam1 "Sam Winchester Tumblr Blue" <<<EOT http://imageshack.us/a/img38/8454/samwinchestertumblrbgre.png EOT;
 Sam2 "Sam Winchester Black" <<<EOT http://imageshack.us/a/img855/8797/samwinchestertumblrbgbl.png EOT;
@@ -36,88 +36,88 @@ Wincest9 "Wincest - BG 2 - Black" <<<EOT http://img35.imageshack.us/img35/788/wi
 }
 @advanced text theimage-custom "Choose The BG Image (Custom)" "https://example.com/image.png"
 @advanced dropdown postsopacity "Posts Opacity" {
-	.15 Transparent ".15 Transparent*" <<<EOT .15 EOT;
-.25 Transparent ".25 Transparent" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 8 EOT;
+	-15-Transparent ".15 Transparent*" <<<EOT .15 EOT;
+-25-Transparent ".25 Transparent" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 8 EOT;
 
 }
 @advanced dropdown postscolor "Posts Color" {
 	White "White*" <<<EOT 225,225,225, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown baropacity "Dashboard Bar Opacity" {
-	.25 Transparent ".25 Transparent*" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-25-Transparent ".25 Transparent*" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown fullbodyopacity "Full Body Opacity" {
-	.40 Transparent ".40 Transparent*" <<<EOT .40 EOT;
-.15 Transparent ".15 Transparent" <<<EOT .15 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-40-Transparent ".40 Transparent*" <<<EOT .40 EOT;
+-15-Transparent ".15 Transparent" <<<EOT .15 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown fullbodycolor "Full Body Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown notificationopacity "Notification Opacity" {
-	.8 Transparent ".8 Transparent*" <<<EOT .8 EOT;
-.25 Transparent ".25 Transparent" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-8-Transparent ".8 Transparent*" <<<EOT .8 EOT;
+-25-Transparent ".25 Transparent" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown notificationcolor "Notification Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown rightcolumnbgopacity "Right Column BG Opacity" {
-	.25 Transparent ".25 Transparent*" <<<EOT .25 EOT;
-.50 Transparent ".50 Transparent" <<<EOT .50 EOT;
-.8 Transparent ".8 Transparent" <<<EOT .8 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-25-Transparent ".25 Transparent*" <<<EOT .25 EOT;
+-50-Transparent ".50 Transparent" <<<EOT .50 EOT;
+-8-Transparent ".8 Transparent" <<<EOT .8 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown rightcolumnbgcolor "Right Column BG Color" {
 	Black "Black*" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown inboxmessageopacity "Inbox Message Opacity" {
-	.45 Transparent ".45 Transparent*" <<<EOT .45 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-45-Transparent ".45 Transparent*" <<<EOT .45 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown inboxmessagecolor "Inbox Message Color" {
 	White "White*" <<<EOT 225,225,225, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced dropdown htmlboxopacity "Html Box Opacity" {
-	.5 Transparent ".5 Transparent*" <<<EOT .5 EOT;
-.75 Transparent ".75 Transparent" <<<EOT .75 EOT;
-Not Transparent "Not Transparent" <<<EOT 1 EOT;
+	-5-Transparent ".5 Transparent*" <<<EOT .5 EOT;
+-75-Transparent ".75 Transparent" <<<EOT .75 EOT;
+Not-Transparent "Not Transparent" <<<EOT 1 EOT;
 
 }
 @advanced dropdown htmlboxcolor "Html Box Color" {
 	Gray "Gray*" <<<EOT 230, 230, 230, EOT;
 Black "Black" <<<EOT 0,0,0, EOT;
 White "White" <<<EOT 225,225,225, EOT;
-Dark Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
+Dark-Purple "Dark Purple" <<<EOT 24, 13, 25, EOT;
 
 }
 @advanced color firstcolor "First Color (Light if BG is Dark)" #FFFFFF

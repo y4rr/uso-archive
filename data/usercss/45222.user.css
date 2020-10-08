@@ -7,15 +7,15 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown hidemore "Remove Calendar and Login Forms?" {
-	Don't remove either. "Don't remove either.*" <<<EOT  EOT;
-Yes, hide both. "Yes, hide both." <<<EOT /* Remove login box *\/
+	Don-t-remove-either- "Don't remove either.*" <<<EOT  EOT;
+Yes--hide-both- "Yes, hide both." <<<EOT /* Remove login box *\/
 .auth-form.bordered.clearfix {display: none !important;}
 
 /* Remove Calendar area *\/
 .col-md-4.hidden-lg {display: none !important;} EOT;
-Only remove Calendar "Only remove Calendar." <<<EOT /* Remove Calendar area *\/
+Only-remove-Calendar "Only remove Calendar." <<<EOT /* Remove Calendar area *\/
 .col-md-4.hidden-lg {display: none !important;} EOT;
-Only remove Forms. "Only remove Forms." <<<EOT /* Remove login box *\/
+Only-remove-Forms- "Only remove Forms." <<<EOT /* Remove login box *\/
 .auth-form.bordered.clearfix {display: none !important;} EOT;
 
 }

@@ -7,21 +7,21 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown style1 "news on home page（导航） " {
-	remove（去除） "remove（去除）*" <<<EOT /*news on home page 导航栏*\/
+	remove---- "remove（去除）*" <<<EOT /*news on home page 导航栏*\/
 #hp_tbar,#hp_tbar,#sc_closer,#sc_imagecreditslink {display:none !important;} EOT;
-need（需要） "need（需要）" <<<EOT  EOT;
+need---- "need（需要）" <<<EOT  EOT;
 
 }
 @advanced dropdown background "background of transparent search page(透明搜索页背景)" {
-	black(黑底) "white(白底)*" <<<EOT background:rgb(255,255,255)!important; EOT;
-user-defined image(自 "user-defined image(自定义图片)" <<<EOT background:url(/*[[background1]]*\/) no-repeat center center fixed !important; EOT;
+	black---- "white(白底)*" <<<EOT background:rgb(255,255,255)!important; EOT;
+user-defined-image-- "user-defined image(自定义图片)" <<<EOT background:url(/*[[background1]]*\/) no-repeat center center fixed !important; EOT;
 grey "grey" <<<EOT background:rgb(100,100,100)!important; EOT;
 
 }
 @advanced dropdown background1 "background-image of transparent search page(透明搜索页背景图片)" {
-green(渐变绿) "green(渐变绿)*" <<<EOT http://image.tianjimedia.com/uploadImages/2013/016/3VX94SXSRX48_1920x1080.jpg EOT;
-beauty(女神) "beauty(女神)" <<<EOT http://i2.img.969g.com/news/imgx2013/05/14/191_165204_c3586.jpg EOT;
-black style "black style" <<<EOT http://coolblackppt.com/wp-content/uploads/2013/06/Black-waves-backgrounds-black-waves-powerpoint-free-backgrounds.jpg EOT;
+green----- "green(渐变绿)*" <<<EOT http://image.tianjimedia.com/uploadImages/2013/016/3VX94SXSRX48_1920x1080.jpg EOT;
+beauty---- "beauty(女神)" <<<EOT http://i2.img.969g.com/news/imgx2013/05/14/191_165204_c3586.jpg EOT;
+black-style "black style" <<<EOT http://coolblackppt.com/wp-content/uploads/2013/06/Black-waves-backgrounds-black-waves-powerpoint-free-backgrounds.jpg EOT;
 
 	background1-custom-dropdown "Custom" <<<EOT /*[[background1-custom]]*\/ EOT;
 }

@@ -9,23 +9,23 @@
 @advanced dropdown cleopool "Cleopool" {
 	Cleopool "Cleopool*" <<<EOT /* CleoPool (http://apps.facebook.com/cleopool/) *\/
 #app21260586120_AdParlorAd {display: none !important;} EOT;
-No Cleopool "No Cleopool" <<<EOT /* Cleopool style not installed *\/ EOT;
+No-Cleopool "No Cleopool" <<<EOT /* Cleopool style not installed *\/ EOT;
 
 }
 @advanced dropdown zynga "Zynga Poker" {
-	Zynga Poker "Zynga Poker*" <<<EOT /* Zynga Poker (http://apps.facebook.com/texas_holdem/) *\/
+	Zynga-Poker "Zynga Poker*" <<<EOT /* Zynga Poker (http://apps.facebook.com/texas_holdem/) *\/
 @-moz-document domain("zynga.com") {
 #app2389801228_zbar, #app2389801228_overlay, #app2389801228_giftshop_banner_div, #app2389801228_iphone_banner_div, #app2389801228_zvert
 {display: none !important}
 } EOT;
-No Zynga Poker "No Zynga Poker" <<<EOT /* Zynga Poker style not installed *\/ EOT;
+No-Zynga-Poker "No Zynga Poker" <<<EOT /* Zynga Poker style not installed *\/ EOT;
 
 }
 @advanced dropdown chesscube "Chesscube" {
 	Chesscube "Chesscube*" <<<EOT @-moz-document domain("chesscube.com") {
 #headerArea, #footerArea {display: none !important;}
 } EOT;
-No Chesscube "No Chesscube" <<<EOT /* chesscube style not installed *\/ EOT;
+No-Chesscube "No Chesscube" <<<EOT /* chesscube style not installed *\/ EOT;
 
 }
 

@@ -7,20 +7,20 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown banners "рекламу" {
-	оставить "оставить*" <<<EOT  EOT;
-скрыть "скрыть" <<<EOT #banners_top,HTML > BODY > TABLE > TBODY > TR:first-child > TD {display:none!important;}
+	-------- "оставить*" <<<EOT  EOT;
+------ "скрыть" <<<EOT #banners_top,HTML > BODY > TABLE > TBODY > TR:first-child > TD {display:none!important;}
 body {margin-top:10px !important;} EOT;
 
 }
 @advanced dropdown infoufanet "инфо от Уфанет" {
-	оставить "оставить*" <<<EOT #second_right,
+	-------- "оставить*" <<<EOT #second_right,
 #second_right_min,
 #second_right_min2 {
 border-radius: 7px !important;
 background-image: -moz-linear-gradient(top , rgba(105, 105, 105,.8), rgba(192, 192, 192,.8)) !important;
 background-image: -webkit-linear-gradient(top , rgba(105, 105, 105,.8), rgba(192, 192, 192,.8)) !important;
 } EOT;
-скрыть "скрыть" <<<EOT #second_right,
+------ "скрыть" <<<EOT #second_right,
 #second_right_min,
 #second_right_min2 {
 display:none!important;
@@ -28,8 +28,8 @@ display:none!important;
 
 }
 @advanced dropdown background "фон" {
-	серый "серый*" <<<EOT body {background: #EBEBEB !important;} EOT;
-джинсы "джинсы" <<<EOT html {background-image: url('http://linkme.ufanet.ru/images/7f0cb5e2319a97cdc284c6b2c28b485b.png') !important;}
+	----- "серый*" <<<EOT body {background: #EBEBEB !important;} EOT;
+------ "джинсы" <<<EOT html {background-image: url('http://linkme.ufanet.ru/images/7f0cb5e2319a97cdc284c6b2c28b485b.png') !important;}
 body {background:transparent !important;} EOT;
 
 }

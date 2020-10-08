@@ -1425,7 +1425,7 @@ table.edged, .b-singlepost .b-leaf-actions .active A:link, .b-singlepost .b-leaf
 
 }
 @advanced dropdown layout "Layout Width" {
-	Flexible 90% "Flexible 90%*" <<<EOT /* [______ Flexible Layout ______] *\/
+	Flexible-90- "Flexible 90%*" <<<EOT /* [______ Flexible Layout ______] *\/
 /* ~ FL - Flexible Content and Footer *\/
 .logged-in #content, .logged-out #content, #footer-links, .b-navbar, #welcome, #Userpic {
 	width: 90%!important; /* width <= 90%. higher percentages make horizontal scrollbar visible *\/
@@ -1479,7 +1479,7 @@ table.edged, .b-singlepost .b-leaf-actions .active A:link, .b-singlepost .b-leaf
 /* ~ FL - Search results *\/
 div.search-result-in, div.search-forms { margin-right: 0!important; } /* removes right margin - does it have function? *\/
 /* [______ END Flexible Layout ______] *\/ EOT;
-Flexible 80% "Flexible 80%" <<<EOT /* [______ Flexible Layout ______] *\/
+Flexible-80- "Flexible 80%" <<<EOT /* [______ Flexible Layout ______] *\/
 /* ~ FL - Flexible Content and Footer *\/
 .logged-in #content, .logged-out #content, #footer-links, .b-navbar, #welcome, #Userpic {
 	width: 80%!important; /* width <= 90%. higher percentages make horizontal scrollbar visible *\/
@@ -1540,7 +1540,7 @@ Fixed "Fixed" <<<EOT /* X______ Fixed Layout ______X *\/
 	min-width: 971px;
 }
 /* X______ END Fixed Layout ______X *\/ EOT;
-Fixed (1024x768) "Fixed (1024x768)" <<<EOT /* X______ Fixed Layout (for 1024x768) ______X *\/
+Fixed--1024x768- "Fixed (1024x768)" <<<EOT /* X______ Fixed Layout (for 1024x768) ______X *\/
 /* ~ FX - Fixed Content and Footer *\/
 .logged-in #content, .logged-out #content, #footer-links, .b-navbar, #welcome, #Userpic {
 	width: 971px!important;
@@ -1569,18 +1569,18 @@ none "none*" <<<EOT  EOT;
 @advanced text banner-custom "Banner (Custom)" "https://example.com/image.png"
 @advanced dropdown background "Background" {
 Wheatfield "Wheatfield*" <<<EOT http://bit.ly/sw_WallBlue-JPG EOT;
-Winter Pines "Winter Pines" <<<EOT http://bit.ly/sw_WallGreen-JPG EOT;
-Autumn Leaves "Autumn Leaves" <<<EOT http://bit.ly/sw_WallRed-JPG EOT;
+Winter-Pines "Winter Pines" <<<EOT http://bit.ly/sw_WallGreen-JPG EOT;
+Autumn-Leaves "Autumn Leaves" <<<EOT http://bit.ly/sw_WallRed-JPG EOT;
 Chocolate "Chocolate" <<<EOT http://bit.ly/sw_WallOrange-JPG EOT;
-Ocean Sand "Ocean Sand" <<<EOT http://bit.ly/sw_WallPurple-JPG EOT;
+Ocean-Sand "Ocean Sand" <<<EOT http://bit.ly/sw_WallPurple-JPG EOT;
 
 	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
 }
 @advanced text background-custom "Background (Custom)" "https://example.com/image.png"
 @advanced dropdown wrapperbg "Content Wrapper Background" {
-Mesh Pattern "Mesh Pattern*" <<<EOT http://bit.ly/sw_PatMesh-PNG EOT;
-Mesh Pattern Dark "Mesh Pattern Dark" <<<EOT http://bit.ly/sw_PatMeshDkr-PNG EOT;
-Striped Pattern "Striped Pattern" <<<EOT http://bit.ly/sw_PatStripe-PNG EOT;
+Mesh-Pattern "Mesh Pattern*" <<<EOT http://bit.ly/sw_PatMesh-PNG EOT;
+Mesh-Pattern-Dark "Mesh Pattern Dark" <<<EOT http://bit.ly/sw_PatMeshDkr-PNG EOT;
+Striped-Pattern "Striped Pattern" <<<EOT http://bit.ly/sw_PatStripe-PNG EOT;
 none "none" <<<EOT  EOT;
 
 	wrapperbg-custom-dropdown "Custom" <<<EOT /*[[wrapperbg-custom]]*\/ EOT;

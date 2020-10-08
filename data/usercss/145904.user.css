@@ -7,23 +7,23 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown s1 "Иконка Frigate" {
-	1.1 "Не скрывать*" <<<EOT  EOT;
-1.0 "Скрыть" <<<EOT .frigate_h {
+	1-1 "Не скрывать*" <<<EOT  EOT;
+1-0 "Скрыть" <<<EOT .frigate_h {
 display:none!important} EOT;
 
 }
 @advanced dropdown s2 "Плавные переходы" {
-	2.1 "Включить*" <<<EOT .nim-dialog.nim-dialog_classic:not(:hover), .mv_playlist .mv_playlist_item, .im-page .im-page--mess-search, .im-page .im-page--mess-search .im-i--messages-search, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, .nim-dialog:not(.nim-dialog_deleted), .article_ed_layer .article_ed_layer__header .article_ed_layer__list, .article_ed_layer .article_ed_layer__header .article_ed_layer__publish, .article_layer .article_layer__footer, .EditableLabel__text
+	2-1 "Включить*" <<<EOT .nim-dialog.nim-dialog_classic:not(:hover), .mv_playlist .mv_playlist_item, .im-page .im-page--mess-search, .im-page .im-page--mess-search .im-i--messages-search, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, .nim-dialog:not(.nim-dialog_deleted), .article_ed_layer .article_ed_layer__header .article_ed_layer__list, .article_ed_layer .article_ed_layer__header .article_ed_layer__publish, .article_layer .article_layer__footer, .EditableLabel__text
 {transition: 0.5s}
 .article a
 {transition: 0.5s!important}
 .article_layer .article_layer__footer .article_layer__footer_button_share:before, .article_layer__footer_button.article_layer__footer_button_share, .article_layer .article_layer__footer .article_layer__footer_button_bookmark:before, .article_layer__footer_button.article_layer__footer_button_bookmark, .article_layer__footer_button.article_layer__footer_button_report, .article_layer .article_layer__footer .article_layer__footer_button_report:after, .article_layer .article_layer__footer .article_layer__footer_info, .article_layer .article_layer__footer .article_layer__footer_info a, .Button--mobile, .ChatSettingsMembersWidget__add:before, .ChatSettingsInfo, .List, .ListItem, .audio_row:not(:hover) .audio_row_content, .eltt .eltt_fancy_action, .eltt .eltt_fancy_action.radiobtn.on::before
 {transition: 0.3s!important} EOT;
-2.0 "Выключить" <<<EOT  EOT;
+2-0 "Выключить" <<<EOT  EOT;
 
 }
 @advanced dropdown g1 "Вид аватарок" {
-	3.1 "Квадратные*" <<<EOT @-moz-document domain("vk.com") { /*
+	3-1 "Квадратные*" <<<EOT @-moz-document domain("vk.com") { /*
 Автор - KiLleR https://vk.com/killer_nsk
 Отредактировано - Титан
 *\/
@@ -36,12 +36,12 @@ display:none!important} EOT;
 }
 /* i really want this to be global *\/
 .wcm_user_ava, .wcm_group_info_ava, .wcommunity_header_avatar img, .wcommunity_rows .wcommunity_avatar img EOT;
-3.0 "Круглые" <<<EOT  EOT;
+3-0 "Круглые" <<<EOT  EOT;
 
 }
 @advanced dropdown s3 "Змейка вместо звездочек (в разработке)" {
-	4.0 "Отключить*" <<<EOT  EOT;
-4.1 "Включить" <<<EOT .microdata_rate
+	4-0 "Отключить*" <<<EOT  EOT;
+4-1 "Включить" <<<EOT .microdata_rate
 {background:url(https://image.ibb.co/jjpAXx/image.png);
     width: 71px;
     height: 18px;
@@ -55,26 +55,26 @@ display:none!important} EOT;
 
 }
 @advanced dropdown s4 "Истории в ленте новостей" {
-	5.0 "Скрыть*" <<<EOT div[class="stories_feed_cont"]
+	5-0 "Скрыть*" <<<EOT div[class="stories_feed_cont"]
 {display:none}      EOT;
-5.1 "Не скрывать" <<<EOT  EOT;
+5-1 "Не скрывать" <<<EOT  EOT;
 
 }
 @advanced dropdown s5 "Размер файлов" {
-	6.0 "Скрыть*" <<<EOT .vk_audio_size_info
+	6-0 "Скрыть*" <<<EOT .vk_audio_size_info
 {display:none} EOT;
-6.1 "Не скрывать" <<<EOT  EOT;
+6-1 "Не скрывать" <<<EOT  EOT;
 
 }
 @advanced dropdown g2 "Опросы на сайтах" {
-	7.2 "Агрессивно*" <<<EOT .wpoll_head
+	7-2 "Агрессивно*" <<<EOT .wpoll_head
 {background-color:#a0ff007d}
 #page_wrap
 {background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");
 background-attachment: fixed ;
     background-size: cover ;
     color: rgb(255, 255, 255);} EOT;
-7.1 "Неагресивно" <<<EOT .wpoll_head
+7-1 "Неагресивно" <<<EOT .wpoll_head
 {background-color:#82ba00!important}
 _wpoll_wrap wpoll_wrap
 {background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");

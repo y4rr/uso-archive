@@ -7,19 +7,19 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown headerPosition "Header position: top of the screen, or top of the page?" {
-	Top of the screen -  "Top of the screen - don't make me scroll to find it!*" <<<EOT fixed EOT;
-Top of the page - it "Top of the page - it's not a header if it's not at the top" <<<EOT absolute EOT;
+	Top-of-the-screen--- "Top of the screen - don't make me scroll to find it!*" <<<EOT fixed EOT;
+Top-of-the-page---it "Top of the page - it's not a header if it's not at the top" <<<EOT absolute EOT;
 
 }
 @advanced dropdown footerPosition "Footer position: bottom of the screen, or bottom of the page?" {
-	Bottom of the page - "Bottom of the page - it's not a footer if it's not at the foot*" <<<EOT absolute EOT;
-Bottom of the screen "Bottom of the screen - don't make me scroll to find it!" <<<EOT fixed EOT;
+	Bottom-of-the-page-- "Bottom of the page - it's not a footer if it's not at the foot*" <<<EOT absolute EOT;
+Bottom-of-the-screen "Bottom of the screen - don't make me scroll to find it!" <<<EOT fixed EOT;
 
 }
 @advanced dropdown opacity "Transparency - when collapsed, the placeholders should be..." {
-	Translucent - I want "Translucent - I want to see them, and see through them too*" <<<EOT 0.2 EOT;
-Opaque - I want to s "Opaque - I want to see the placeholders, not see through them" <<<EOT 1 EOT;
-Invisible - I don't  "Invisible - I don't need to see them to know that they're there" <<<EOT 0 EOT;
+	Translucent---I-want "Translucent - I want to see them, and see through them too*" <<<EOT 0.2 EOT;
+Opaque---I-want-to-s "Opaque - I want to see the placeholders, not see through them" <<<EOT 1 EOT;
+Invisible---I-don-t- "Invisible - I don't need to see them to know that they're there" <<<EOT 0 EOT;
 
 }
 

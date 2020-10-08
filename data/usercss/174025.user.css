@@ -18,11 +18,11 @@ filterGIF "Invert and reduce saturation of GIF" <<<EOT img[src$=".gif"]:not([src
 nofilter "Don't alter images" <<<EOT  EOT;
 
 }
-@advanced color background color "Background color" #333333
-@advanced color text color "Text color" #D3D3D3
+@advanced color background-color "Background color" #333333
+@advanced color text-color "Text color" #D3D3D3
 @advanced dropdown banner "Show banner?" {
-	no banner "Don't show*" <<<EOT  EOT;
-yes banner "Show" <<<EOT #Page_Top_Real_Inner, #Page_Top_Real_Inner * {
+	no-banner "Don't show*" <<<EOT  EOT;
+yes-banner "Show" <<<EOT #Page_Top_Real_Inner, #Page_Top_Real_Inner * {
     background-color: transparent !important;
 } EOT;
 

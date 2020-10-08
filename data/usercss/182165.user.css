@@ -318,7 +318,7 @@ div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > butt
 
 }
 @advanced dropdown RCPostHeight "Post Spacing" {
-	RCPostH+0 "Standard*" <<<EOT /* Option chosen: [+0px] *\/
+	RCPostH-0 "Standard*" <<<EOT /* Option chosen: [+0px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -353,7 +353,7 @@ div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > butt
 {
     padding-top: 0px;
 } EOT;
-RCPostH+1 "+1px" <<<EOT /* Option chosen: [+1px] *\/
+RCPostH-1 "+1px" <<<EOT /* Option chosen: [+1px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -388,7 +388,7 @@ RCPostH+1 "+1px" <<<EOT /* Option chosen: [+1px] *\/
 {
     padding-top: 1px;
 } EOT;
-RCPostH+2 "+2px" <<<EOT /* Option chosen: [+2px] *\/
+RCPostH-2 "+2px" <<<EOT /* Option chosen: [+2px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -423,7 +423,7 @@ RCPostH+2 "+2px" <<<EOT /* Option chosen: [+2px] *\/
 {
     padding-top: 2px;
 } EOT;
-RCPostH+3 "+3px (Recommended)" <<<EOT /* Option chosen: [+3px] *\/
+RCPostH-3 "+3px (Recommended)" <<<EOT /* Option chosen: [+3px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -458,7 +458,7 @@ RCPostH+3 "+3px (Recommended)" <<<EOT /* Option chosen: [+3px] *\/
 {
     padding-top: 3px;
 } EOT;
-RCPostH+4 "+4px" <<<EOT /* Option chosen: [+4px] *\/
+RCPostH-4 "+4px" <<<EOT /* Option chosen: [+4px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -493,7 +493,7 @@ RCPostH+4 "+4px" <<<EOT /* Option chosen: [+4px] *\/
 {
     padding-top: 4px;
 } EOT;
-RCPostH+5 "+5px" <<<EOT /* Option chosen: [+5px] *\/
+RCPostH-5 "+5px" <<<EOT /* Option chosen: [+5px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -528,7 +528,7 @@ RCPostH+5 "+5px" <<<EOT /* Option chosen: [+5px] *\/
 {
     padding-top: 5px;
 } EOT;
-RCPostH+6 "+6px" <<<EOT /* Option chosen: [+6px] *\/
+RCPostH-6 "+6px" <<<EOT /* Option chosen: [+6px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -563,7 +563,7 @@ RCPostH+6 "+6px" <<<EOT /* Option chosen: [+6px] *\/
 {
     padding-top: 6px;
 } EOT;
-RCPostH+7 "+7px" <<<EOT /* Option chosen: [+7px] *\/
+RCPostH-7 "+7px" <<<EOT /* Option chosen: [+7px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -598,7 +598,7 @@ RCPostH+7 "+7px" <<<EOT /* Option chosen: [+7px] *\/
 {
     padding-top: 7px;
 } EOT;
-RCPostH+8 "+8px" <<<EOT /* Option chosen: [+8px] *\/
+RCPostH-8 "+8px" <<<EOT /* Option chosen: [+8px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -633,7 +633,7 @@ RCPostH+8 "+8px" <<<EOT /* Option chosen: [+8px] *\/
 {
     padding-top: 8px;
 } EOT;
-RCPostH+9 "+9px" <<<EOT /* Option chosen: [+9px] *\/
+RCPostH-9 "+9px" <<<EOT /* Option chosen: [+9px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -668,7 +668,7 @@ RCPostH+9 "+9px" <<<EOT /* Option chosen: [+9px] *\/
 {
     padding-top: 9px;
 } EOT;
-RCPostH+10 "+10px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-10 "+10px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -703,7 +703,7 @@ RCPostH+10 "+10px" <<<EOT /* Option chosen: [+10px] *\/
 {
     padding-top: 10px;
 } EOT;
-RCPostH+11 "+11px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-11 "+11px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -738,7 +738,7 @@ RCPostH+11 "+11px" <<<EOT /* Option chosen: [+10px] *\/
 {
     padding-top: 11px;
 } EOT;
-RCPostH+12 "+12px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-12 "+12px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -773,7 +773,7 @@ RCPostH+12 "+12px" <<<EOT /* Option chosen: [+10px] *\/
 {
     padding-top: 12px;
 } EOT;
-RCPostH+13 "+13px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-13 "+13px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -808,7 +808,7 @@ RCPostH+13 "+13px" <<<EOT /* Option chosen: [+10px] *\/
 {
     padding-top: 13px;
 } EOT;
-RCPostH+14 "+14px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-14 "+14px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -843,7 +843,7 @@ RCPostH+14 "+14px" <<<EOT /* Option chosen: [+10px] *\/
 {
     padding-top: 14px;
 } EOT;
-RCPostH+15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
+RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -1577,37 +1577,37 @@ Default Wallpaper:
 
 /*[[RCPostHeight]]*/
 
-/*[[RCPostH+0]]*/
+/*[[RCPostH-0]]*/
 
-/*[[RCPostH+1]]*/
+/*[[RCPostH-1]]*/
 
-/*[[RCPostH+2]]*/
+/*[[RCPostH-2]]*/
 
-/*[[RCPostH+3]]*/
+/*[[RCPostH-3]]*/
 
-/*[[RCPostH+4]]*/
+/*[[RCPostH-4]]*/
 
-/*[[RCPostH+5]]*/
+/*[[RCPostH-5]]*/
 
-/*[[RCPostH+6]]*/
+/*[[RCPostH-6]]*/
 
-/*[[RCPostH+7]]*/
+/*[[RCPostH-7]]*/
 
-/*[[RCPostH+8]]*/
+/*[[RCPostH-8]]*/
 
-/*[[RCPostH+9]]*/
+/*[[RCPostH-9]]*/
 
-/*[[RCPostH+10]]*/
+/*[[RCPostH-10]]*/
 
-/*[[RCPostH+11]]*/
+/*[[RCPostH-11]]*/
 
-/*[[RCPostH+12]]*/
+/*[[RCPostH-12]]*/
 
-/*[[RCPostH+13]]*/
+/*[[RCPostH-13]]*/
 
-/*[[RCPostH+14]]*/
+/*[[RCPostH-14]]*/
 
-/*[[RCPostH+15]]*/
+/*[[RCPostH-15]]*/
 
 
 /* ----------------- E-Mail Request Popup ----------------- */

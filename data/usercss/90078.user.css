@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown styles3 "！！总体设置" {
-	皆透明 "皆透明*" <<<EOT /*百度网页搜索页*\/
+	--- "皆透明*" <<<EOT /*百度网页搜索页*\/
 @-moz-document url-prefix("https://www.baidu.com/s?"),url-prefix("https://www.baidu.com/#wd="),
 url-prefix("https://www.baidu.com/baidu?"),url-prefix("http://www.baidu.com/s?"),url-prefix("http://www.baidu.com/#wd="),
 url-prefix("http://www.baidu.com/baidu?") {
@@ -81,20 +81,20 @@ background:url(http://a.hiphotos.bdimg.com/album/s%3D1100%3Bq%3D90/sign=edd166e0
 /*去广告*\/
 table[id="4001"] *,table[id="4003"] *,table[id="4002"] *{display:none;}
 } EOT;
-仅首页设置有效 "首页透明" <<<EOT  EOT;
-仅改动搜索页文字显示 "首页透明+整体文字修改" <<<EOT @-moz-document url-prefix("https://www.baidu.com/s?"),url-prefix("https://www.baidu.com/#wd="),
+------- "首页透明" <<<EOT  EOT;
+---------- "首页透明+整体文字修改" <<<EOT @-moz-document url-prefix("https://www.baidu.com/s?"),url-prefix("https://www.baidu.com/#wd="),
 url-prefix("http://www.baidu.com/baidu?") {
 #container a:hover{text-shadow:1px 1px 2px grey!important;}
 } EOT;
 
 }
 @advanced dropdown font "字体" {
-	微软雅黑 "微软雅黑*" <<<EOT 微软雅黑, EOT;
-默认 "默认" <<<EOT  EOT;
+	---- "微软雅黑*" <<<EOT 微软雅黑, EOT;
+-- "默认" <<<EOT  EOT;
 
 }
 @advanced dropdown styles "首页样式" {
-	baidu黑版(自定义皮肤) "baidu黑版(自定义皮肤)*" <<<EOT /*搜索栏下拉菜单*\/
+	baidu--------- "baidu黑版(自定义皮肤)*" <<<EOT /*搜索栏下拉菜单*\/
 .bdsug{background:rgba(250,250,250,.9)!important;}
 li.bdsug-s {background:rgba(220,220,220,.7)!important;box-shadow:0 0 3px grey;}
 
@@ -213,7 +213,7 @@ span.btn_wr{background:transparent!important;border:none!important;}
 #su1:hover,input.s_btn:hover{color:rgba(0,0,0,.8)!important;text-shadow:2px 2px 3px grey;letter-spacing: 1px;opacity:0.7;transition: all 0.3s;box-shadow:0px 0px 3px #888!important;}
 .s_btn_wr{background:transparent!important;}
 .s_ipt{background:transparent!important;} EOT;
-baidu白版(自定义皮肤) "baidu白版(自定义皮肤)" <<<EOT /*搜索栏下拉菜单*\/
+baidu--------- "baidu白版(自定义皮肤)" <<<EOT /*搜索栏下拉菜单*\/
 .bdsug{background:rgba(250,250,250,.9)!important;}
 li.bdsug-s {background:rgba(220,220,220,.7)!important;box-shadow:0 0 3px grey;}
 
@@ -258,7 +258,7 @@ span.btn_wr{background:transparent!important;border:none!important;}
 #su1:hover,input.s_btn:hover{color:rgba(0,0,0,.8)!important;text-shadow:2px 2px 3px grey;letter-spacing: 1px;opacity:0.7;transition: all 0.3s;box-shadow:0px 0px 3px #888!important;}
 .s_btn_wr{background:transparent!important;}
 .s_ipt{background:transparent!important;} EOT;
-bing图 "bing图（黑版）" <<<EOT /*顶栏*\/
+bing- "bing图（黑版）" <<<EOT /*顶栏*\/
 #s_mod_weather{top:18px!important;left:614px!important;}
 #nv {width:600px!important;top:8px!important;left:-40px!important;}
 #u_sp {width:400px!important;top:10px!important;right:10px!important;}
@@ -374,7 +374,7 @@ li.bdsug-s {background:rgba(250,250,250,.5)!important;}
 .subscribe{background:rgba(20,20,20,0.9)!important;}
 .mod-title{background:rgba(250,250,250,0.7)!important;}
 #s_hide_allmods:hover{text-shadow:0px 0px 2px #0079F5!important;} EOT;
-bing图(文科做的，我找到的最新的) "bing图" <<<EOT /*顶栏*\/
+bing--------------- "bing图" <<<EOT /*顶栏*\/
 #s_mod_weather{top:18px!important;left:614px!important;}
 #nv {width:600px!important;top:8px!important;left:-40px!important;}
 #u_sp {width:400px!important;top:10px!important;right:10px!important;}
@@ -411,34 +411,34 @@ li.bdsug-s {background:rgba(250,250,250,.5)!important;}
 /*顶栏*\/ 
 #s_user_name_menu,.s-mod-setweather{opacity:.8!important;}
 .s-skin-layer {background: rgba(255,255,255,.8)!important;} EOT;
-默认（无改动） "默认（无改动）" <<<EOT  EOT;
+------- "默认（无改动）" <<<EOT  EOT;
 
 }
 @advanced dropdown topbar "bing图顶栏黑底" {
-	加黑底 "加黑底*" <<<EOT #head{background:rgba(20, 20, 20, 0.3) !important;height:52px!important;} EOT;
-无 "无" <<<EOT  EOT;
+	--- "加黑底*" <<<EOT #head{background:rgba(20, 20, 20, 0.3) !important;height:52px!important;} EOT;
+- "无" <<<EOT  EOT;
 
 }
 @advanced dropdown transparency "首页透明度" {
-	70% "70%*" <<<EOT 0.7 EOT;
-40% "40%" <<<EOT 0.4 EOT;
-50% "50%" <<<EOT 0.5 EOT;
-60% "60%" <<<EOT 0.6 EOT;
-80% "80%" <<<EOT 0.8 EOT;
-20% "20%" <<<EOT 0.2 EOT;
+	70- "70%*" <<<EOT 0.7 EOT;
+40- "40%" <<<EOT 0.4 EOT;
+50- "50%" <<<EOT 0.5 EOT;
+60- "60%" <<<EOT 0.6 EOT;
+80- "80%" <<<EOT 0.8 EOT;
+20- "20%" <<<EOT 0.2 EOT;
 0 "0" <<<EOT 0 EOT;
 
 }
 @advanced dropdown position "导航、新闻等选项栏" {
-	紧贴 "紧贴(左侧停靠)*" <<<EOT /*选项栏位置*\/
+	-- "紧贴(左侧停靠)*" <<<EOT /*选项栏位置*\/
 .s-skin-hasbg .s-ctner .s-ctner-menus {position:relative;left:18px;} EOT;
-保持分离（无改动） "保持分离（无改动）" <<<EOT  EOT;
-紧贴(右侧停靠) "紧贴(右侧停靠)" <<<EOT /*选项栏位置*\/
+--------- "保持分离（无改动）" <<<EOT  EOT;
+-------- "紧贴(右侧停靠)" <<<EOT /*选项栏位置*\/
 .s-ctner .s-ctner-contents {left:-80px;}
 .s-skin-hasbg .s-ctner .s-ctner-menus {left:829px;}
 .s-skin-hasbg .s-ctner-menus .s-menu.current,.s-skin-hasbg .s-ctner-menus .s-menu.current:hover {background:rgba(56,156,255,0.7)!important;}
 .s-skin-hasbg .s-ctner-menus .s-menu:hover{background:rgba(45, 145, 226,0.7)!important;} EOT;
-上方横向 "上方横向" <<<EOT /*选项栏位置*\/
+---- "上方横向" <<<EOT /*选项栏位置*\/
 .s-ctner .s-ctner-menus .menus-ctner {width:752px!important;position:relative;left:58px;}
 .s-ctner .s-ctner-menus .s-menu-fill {height:0px!important;}
 .s-ctner .s-ctner-contents {top:35px;left:-40px;}
@@ -456,30 +456,30 @@ li.bdsug-s {background:rgba(250,250,250,.5)!important;}
 
 }
 @advanced dropdown border "导航分类项边框" {
-	无变化 "无变化*" <<<EOT  EOT;
-去除 "去除" <<<EOT .s-nplus .s-ncf-name{border: none!important;} EOT;
-非主流 "非主流" <<<EOT .s-nplus .s-ncf-name{border: 2px solid #E9E9E9;border-top:none!important;padding-left:4px;} EOT;
+	--- "无变化*" <<<EOT  EOT;
+-- "去除" <<<EOT .s-nplus .s-ncf-name{border: none!important;} EOT;
+--- "非主流" <<<EOT .s-nplus .s-ncf-name{border: 2px solid #E9E9E9;border-top:none!important;padding-left:4px;} EOT;
 
 }
 @advanced dropdown background2 "搜索页背景(以下透明页面背景同此)" {
-妹纸(1366x768) "妹纸(1600x922)*" <<<EOT http://i2.img.969g.com/news/imgx2013/05/14/191_165204_c3586.jpg EOT;
-saber 2 "saber lion(1920x1080)" <<<EOT http://dl.bizhi.sogou.com/images/2012/02/25/255187.png EOT;
-金发 "渐变绿(1920x1080)" <<<EOT http://image.tianjimedia.com/uploadImages/2013/016/3VX94SXSRX48_1920x1080.jpg EOT;
-山水景 "蜻蜓(1920x1200)" <<<EOT http://www.79n.cn/uploads/allimg/121210/1-121210204R6.jpg EOT;
-无图片(白底/无透明效果) "无图片(白底/透明效果)" <<<EOT  EOT;
+---1366x768- "妹纸(1600x922)*" <<<EOT http://i2.img.969g.com/news/imgx2013/05/14/191_165204_c3586.jpg EOT;
+saber-2 "saber lion(1920x1080)" <<<EOT http://dl.bizhi.sogou.com/images/2012/02/25/255187.png EOT;
+-- "渐变绿(1920x1080)" <<<EOT http://image.tianjimedia.com/uploadImages/2013/016/3VX94SXSRX48_1920x1080.jpg EOT;
+--- "蜻蜓(1920x1200)" <<<EOT http://www.79n.cn/uploads/allimg/121210/1-121210204R6.jpg EOT;
+------------- "无图片(白底/透明效果)" <<<EOT  EOT;
 
 	background2-custom-dropdown "Custom" <<<EOT /*[[background2-custom]]*\/ EOT;
 }
 @advanced text background2-custom "搜索页背景(以下透明页面背景同此) (Custom)" "https://example.com/image.png"
 @advanced dropdown backgroundset2 "搜索页背景图大小调整搜索页背景" {
-	宽度适应 "宽度适应(背景左右两侧留有空白)*" <<<EOT background-size:100% auto !important; EOT;
-正合适 "正合适" <<<EOT background-size:auto!important; EOT;
-高度适应 "高度适应(背景上下两端留有空白)" <<<EOT background-size:auto 100%!important; EOT;
+	---- "宽度适应(背景左右两侧留有空白)*" <<<EOT background-size:100% auto !important; EOT;
+--- "正合适" <<<EOT background-size:auto!important; EOT;
+---- "高度适应(背景上下两端留有空白)" <<<EOT background-size:auto 100%!important; EOT;
 
 }
 @advanced dropdown sight "网页搜索结果显示（暂firefox可达双列预期效果）" {
-	单列 "单列*" <<<EOT  EOT;
-双列(需选择去除搜索页右栏) "去右栏的结果双列" <<<EOT /*搜索结果双列显示*\/
+	-- "单列*" <<<EOT  EOT;
+-------------- "去右栏的结果双列" <<<EOT /*搜索结果双列显示*\/
 #content_right{display:none!important;}
 #content_left {-moz-column-count: 2; 
                -webkit-column-count:2; 
@@ -489,7 +489,7 @@ saber 2 "saber lion(1920x1080)" <<<EOT http://dl.bizhi.sogou.com/images/2012/02/
                }
 #container {min-width: 1200px !important;}
 body{min-width: 1300px !important;} EOT;
-保留右栏的结果双列（大屏用） "保留右栏的结果双列（大屏用）" <<<EOT /*搜索结果双列显示*\/
+-------------- "保留右栏的结果双列（大屏用）" <<<EOT /*搜索结果双列显示*\/
 #content_left {-moz-column-count: 2; 
                -webkit-column-count:2; 
                column-count:2; 
@@ -501,8 +501,8 @@ body{min-width: 1860px !important;} EOT;
 
 }
 @advanced dropdown page "页码悬浮搜索页背景（停用）" {
-	无 "无*" <<<EOT  EOT;
-悬浮（左侧触发，避免与搜索栏同侧触发） "悬浮（左侧触发，避免与搜索栏同侧触发）" <<<EOT /*页码悬浮*\/
+	- "无*" <<<EOT  EOT;
+------------------- "悬浮（左侧触发，避免与搜索栏同侧触发）" <<<EOT /*页码悬浮*\/
 #page{width:720px!important;}
 #page{position:fixed !important;
         right:99%!important;
@@ -520,7 +520,7 @@ body{min-width: 1860px !important;} EOT;
 .nums{display:none!important;}
 #container {padding-left: 0px!important;}
 #content_left{margin-left:55px!important;} EOT;
-底悬浮/动态滑出 "底悬浮/动态滑出" <<<EOT /*页码悬浮*\/
+-------- "底悬浮/动态滑出" <<<EOT /*页码悬浮*\/
 #page{width:100%!important;}
 #page{position:fixed !important;
         top:99%!important;
@@ -543,8 +543,8 @@ body{min-width: 1860px !important;} EOT;
 
 }
 @advanced dropdown zhidao "百度知道搜索页" {
-	无变化 "无变化*" <<<EOT  EOT;
-透明化 "透明化" <<<EOT /*百度知道搜索页面*\/
+	--- "无变化*" <<<EOT  EOT;
+--- "透明化" <<<EOT /*百度知道搜索页面*\/
 @-moz-document url-prefix("http://zhidao.baidu.com/search?") {
 /*页面背景*\/
 body{
@@ -612,8 +612,8 @@ body{
 
 }
 @advanced dropdown news "百度新闻搜索页" {
-	无变化 "无变化*" <<<EOT  EOT;
-透明简化 "透明化" <<<EOT /*百度新闻搜索页面*\/
+	--- "无变化*" <<<EOT  EOT;
+---- "透明化" <<<EOT /*百度新闻搜索页面*\/
 @-moz-document url-prefix("http://news.baidu.com/ns?") {
 /*搜索结果页面背景*\/
 body{
@@ -692,8 +692,8 @@ a:hover{text-shadow:1px 1px 1px grey!important;}
 
 }
 @advanced dropdown baike "百度百科释义页" {
-	无变化 "无变化*" <<<EOT  EOT;
-透明简化 "透明化" <<<EOT @-moz-document url-prefix("http://baike.baidu.com/view"),url-prefix("http://baike.baidu.com/subview"),url-prefix("http://baike.baidu.com/link"){
+	--- "无变化*" <<<EOT  EOT;
+---- "透明化" <<<EOT @-moz-document url-prefix("http://baike.baidu.com/view"),url-prefix("http://baike.baidu.com/subview"),url-prefix("http://baike.baidu.com/link"){
 /*百科页面背景*\/
 body{
         background:url(/*[[background2]]*\/) no-repeat center center fixed !important;
@@ -779,8 +779,8 @@ a:hover{text-shadow:1px 1px 1px grey!important;}
 
 }
 @advanced dropdown music "百度音乐搜索页" {
-	无变化 "无变化*" <<<EOT  EOT;
-透明化 "透明化" <<<EOT /*百度音乐搜索页面*\/
+	--- "无变化*" <<<EOT  EOT;
+--- "透明化" <<<EOT /*百度音乐搜索页面*\/
 @-moz-document url-prefix("http://music.baidu.com/search") {
 /*页面背景*\/
 html{

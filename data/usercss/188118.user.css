@@ -6,9 +6,9 @@
 @version        2020829.13.26
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown Option(Playmark) "再生マーク" {
-	非表示 "非表示*" <<<EOT /**\/ EOT;
-表示 "表示" <<<EOT 	[class="NicorepoItem-contentThumbnail"]::before
+@advanced dropdown Option-Playmark- "再生マーク" {
+	--- "非表示*" <<<EOT /**\/ EOT;
+-- "表示" <<<EOT 	[class="NicorepoItem-contentThumbnail"]::before
 	{
 		content: "";
 		position: absolute;
@@ -53,9 +53,9 @@
 	} EOT;
 
 }
-@advanced dropdown Option(ChangeBC) "ソート対象背景色変更" {
-	(着色)しない "(着色)しない*" <<<EOT /**\/ EOT;
-(着色)する "(着色)する" <<<EOT 	[class="SubMenuLink NicorepoPageSubMenu-subMenuItem"]:hover
+@advanced dropdown Option-ChangeBC- "ソート対象背景色変更" {
+	------- "(着色)しない*" <<<EOT /**\/ EOT;
+------ "(着色)する" <<<EOT 	[class="SubMenuLink NicorepoPageSubMenu-subMenuItem"]:hover
 	{
 		background: #F2F2F2;
 	}
@@ -299,7 +299,7 @@ url-prefix("https://www.nicovideo.jp/user")
 		background: #000;
 	}
 
-	/*[[Option(Playmark)]]*/
+	/*[[Option-Playmark-]]*/
 
-	/*[[Option(ChangeBC)]]*/
+	/*[[Option-ChangeBC-]]*/
 }

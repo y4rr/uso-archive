@@ -7,7 +7,7 @@
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown bottomsetting "选择触发位置" {
-	底部触发 "底部触发*" <<<EOT         /*底部触发 updata at 2013.08.10*\/
+	---- "底部触发*" <<<EOT         /*底部触发 updata at 2013.08.10*\/
         #anchor,#quickpost, #f_post, #f_pst, #fast_post_c {
             position:fixed !important;
             border:1px solid #51AFF7 !important;
@@ -26,7 +26,7 @@
             top: auto !important; 
             opacity: 1 !important;
         } EOT;
-侧面圆点触发 "侧面圆点触发" <<<EOT     /*侧面圆点触发*\/
+------ "侧面圆点触发" <<<EOT     /*侧面圆点触发*\/
     #anchor, #quickpost, #f_post, #f_pst, #fast_post_c {
         position: fixed !important;
         left: 4% !important;/*触发区到左边的距离，此值自己按需设置*\/
@@ -51,7 +51,7 @@
         background:#fcfcfc !important;
         opacity: 1 !important;
     }  EOT;
-左侧细条触发 "左侧细条触发" <<<EOT         /*左侧细条触发*\/
+------ "左侧细条触发" <<<EOT         /*左侧细条触发*\/
        #anchor,#quickpost, #f_post, #f_pst, #fast_post_c {
             position:fixed !important;
             border:1px solid #51AFF7 !important;
@@ -76,9 +76,9 @@
 
 }
 @advanced dropdown myopacity "底部触发区透明度" {
-	不透明 "不透明*" <<<EOT 1 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
-透明 "透明" <<<EOT 0 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
-半透明 "半透明" <<<EOT 0.5 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
+	--- "不透明*" <<<EOT 1 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
+-- "透明" <<<EOT 0 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
+--- "半透明" <<<EOT 0.5 !important;/*触发区透明度，1为不透明，0为透明，可设值：0~1之间*\/ EOT;
 
 }
 

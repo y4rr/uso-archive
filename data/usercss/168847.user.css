@@ -31,9 +31,9 @@ review1 "表示" <<<EOT /* .reviews-list, *\/ EOT;
 ad1 "表示" <<<EOT /* .ad,.ad-yads,.ad-banner,.to-app-banner, *\/ EOT;
 
 }
-@advanced dropdown r15+ "年齢確認" {
-	r15+1 "表示*" <<<EOT /* #r15, *\/ EOT;
-r15+2 "非表示" <<<EOT #r15, EOT;
+@advanced dropdown r15- "年齢確認" {
+	r15-1 "表示*" <<<EOT /* #r15, *\/ EOT;
+r15-2 "非表示" <<<EOT #r15, EOT;
 
 }
 @advanced dropdown button "切り替えボタン" {
@@ -212,7 +212,7 @@ html + html + html,
 /* おすすめ *//*[[osusume]]*/
 /* レビュー *//*[[review]]*/
 /* 広告 *//*[[ad]]*/
-/* 年齢制限 *//*[[r15+]]*/
+/* 年齢制限 *//*[[r15-]]*/
 html + html + html {
     display: none !important;
 }

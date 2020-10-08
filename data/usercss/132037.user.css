@@ -6,7 +6,7 @@
 @version        202037.13.28
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown .fans-rank "粉丝殷勤榜" {
+@advanced dropdown -fans-rank "粉丝殷勤榜" {
 	true "屏蔽*" <<<EOT /*去酬勤榜*\/
 .fans-rank {
     display: none!important;
@@ -231,7 +231,7 @@ true "FireFox" <<<EOT  EOT;
 }
 /*---------聊天弹幕区---------*/
 /*排行榜*/
-/*[[.fans-rank]]*/
+/*[[-fans-rank]]*/
 .layout-Player-rank,
 .layout-Player-rankAll {
 	display: none !important;

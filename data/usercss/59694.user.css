@@ -7,7 +7,7 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown bodycolor "Body Color" {
-	Blue (default) "Blue (default)*" <<<EOT /* changes background color of iframes and popups to dark blue *\/
+	Blue--default- "Blue (default)*" <<<EOT /* changes background color of iframes and popups to dark blue *\/
 
 body.ev_popup,
 body.ev_iframe {
@@ -60,7 +60,7 @@ TH {
 
 }
 @advanced dropdown trimstyle "Trim Style" {
-	Olive and Red (defau "Olive and Red (default)*" <<<EOT /* fixes "Online Now:" background; restores its color to olive *\/
+	Olive-and-Red--defau "Olive and Red (default)*" <<<EOT /* fixes "Online Now:" background; restores its color to olive *\/
 
 table.ev_container th {
 	background-color: #767d1f !important;
@@ -264,7 +264,7 @@ TABLE.ev_ms_content TH,
 TABLE.ev_ms_content TD {
 	border-color: #000000 !important;
 } EOT;
-Chrome and Glass "Chrome and Glass" <<<EOT /* turns grab-bar text white for easier reading *\/
+Chrome-and-Glass "Chrome and Glass" <<<EOT /* turns grab-bar text white for easier reading *\/
 
 TD.ev_grab_bar * {
 	color: #efefef !important;
@@ -492,11 +492,11 @@ TABLE.ev_ms_content TD {
 
 }
 @advanced dropdown background "Background" {
-	Jet in Carina (defau "Jet in Carina (default)*" <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2009-25-l-xlarge_web.jpg") top EOT;
-Spitzer and Hubble C "Spitzer and Hubble Create Colorful Masterpiece " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2006-01-q-xlarge_web.jpg") top EOT;
-Wide View of 'Mystic "Wide View of 'Mystic Mountain' " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2010-13-e-xlarge_web.jpg") bottom EOT;
-Hubble's Sharpest Vi "Hubble's Sharpest View of the Orion Nebula " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2006-01-a-xlarge_web.jpg") center EOT;
-Jet in Carina - Post "Jet in Carina - Post-Friendly version" <<<EOT url("http://fc00.deviantart.net/fs70/f/2012/040/a/6/forums_friendly_nebula_reskin_background_by_thegkoc-d4p5tw8.jpg") top EOT;
+	Jet-in-Carina--defau "Jet in Carina (default)*" <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2009-25-l-xlarge_web.jpg") top EOT;
+Spitzer-and-Hubble-C "Spitzer and Hubble Create Colorful Masterpiece " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2006-01-q-xlarge_web.jpg") top EOT;
+Wide-View-of--Mystic "Wide View of 'Mystic Mountain' " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2010-13-e-xlarge_web.jpg") bottom EOT;
+Hubble-s-Sharpest-Vi "Hubble's Sharpest View of the Orion Nebula " <<<EOT url("http://imgsrc.hubblesite.org/hu/db/images/hs-2006-01-a-xlarge_web.jpg") center EOT;
+Jet-in-Carina---Post "Jet in Carina - Post-Friendly version" <<<EOT url("http://fc00.deviantart.net/fs70/f/2012/040/a/6/forums_friendly_nebula_reskin_background_by_thegkoc-d4p5tw8.jpg") top EOT;
 
 }
 

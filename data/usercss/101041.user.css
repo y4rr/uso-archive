@@ -13,7 +13,7 @@ n "AUTHOR_SHEET" <<<EOT /* AUTHOR_SHEET *\/ EOT;
 }
 @advanced dropdown coverage "02.覆盖范围" {
 	ALLcoverage "整个浏览器*" <<<EOT @-moz-document regexp(".*") EOT;
-browser.xul "浏览器主界面(browser.xul)" <<<EOT @-moz-document url("chrome://browser/content/browser.xul") EOT;
+browser-xul "浏览器主界面(browser.xul)" <<<EOT @-moz-document url("chrome://browser/content/browser.xul") EOT;
 url "http://&https://&ftp://" <<<EOT @-moz-document url-prefix(http://),url-prefix(https://),url-prefix(ftp://) EOT;
 
 }

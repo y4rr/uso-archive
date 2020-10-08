@@ -7,28 +7,28 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown sidebars "Sidebars" {
-	Hide sidebars "Hide sidebars*" <<<EOT 	/* REMOVE SIDEBARS *\/
+	Hide-sidebars "Hide sidebars*" <<<EOT 	/* REMOVE SIDEBARS *\/
 	.col_1, #slashboxes { display: none !important; }
 	#firehose { margin: 0 !important; }						/* Remove space reserved for sidebars on the frontpage *\/
 	section#comments { margin-left: 0 !important; padding: 0 20px !important; }	/* Remove space reserver for left sidebar on comments page *\/
 	.main-wrap.has-rail-right > .main-content { margin-right: 0 !important; }
  EOT;
-Hide left sidebar "Hide left sidebar" <<<EOT 	/* REMOVE SIDEBARS *\/
+Hide-left-sidebar "Hide left sidebar" <<<EOT 	/* REMOVE SIDEBARS *\/
 	.col_1 { display: none !important; }
 	#firehose { margin-left: 0 !important; }						/* Remove space reserved for sidebars on the frontpage *\/
 	section#comments { margin-left: 0 !important; padding: 0 20px !important; }	/* Remove space reserver for left sidebar on comments page *\/
  EOT;
-Hide right sidebar "Hide right sidebar" <<<EOT 	/* REMOVE SIDEBARS *\/
+Hide-right-sidebar "Hide right sidebar" <<<EOT 	/* REMOVE SIDEBARS *\/
 	#slashboxes { display: none !important; }
 	#firehose { margin-right: 0 !important; }						/* Remove space reserved for sidebars on the frontpage *\/
 	.main-wrap.has-rail-right > .main-content { margin-right: 0 !important; }
  EOT;
-Show both sidebars "Show both sidebars" <<<EOT  EOT;
+Show-both-sidebars "Show both sidebars" <<<EOT  EOT;
 
 }
 @advanced dropdown tags "Tags below articles" {
-	Hide tags "Hide tags*" <<<EOT .tags,				/* Tags below articles *\/ EOT;
-Show tags "Show tags" <<<EOT  EOT;
+	Hide-tags "Hide tags*" <<<EOT .tags,				/* Tags below articles *\/ EOT;
+Show-tags "Show tags" <<<EOT  EOT;
 
 }
 

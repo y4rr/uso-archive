@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown showid "Show add-on ID*" {
-	Yes (default) "Yes (default)*" <<<EOT /* show id of each addon *\/
+	Yes--default- "Yes (default)*" <<<EOT /* show id of each addon *\/
 .addon[selected="true"]::after {
     content: " ID: " attr(value) !important;
     position: absolute !important;

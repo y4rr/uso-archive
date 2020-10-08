@@ -9,19 +9,19 @@
 @advanced dropdown theimage "Choose The BG Image" {
 Dapper "Dapper*" <<<EOT http://imageshack.us/a/img440/7750/tristanf.jpg EOT;
 Plaid "Plaid" <<<EOT http://img407.imageshack.us/img407/1442/plaidbg3.png EOT;
-Plaid+Flowers "Plaid+Flowers" <<<EOT http://img441.imageshack.us/img441/83/plaidbg4.png EOT;
+Plaid-Flowers "Plaid+Flowers" <<<EOT http://img441.imageshack.us/img441/83/plaidbg4.png EOT;
 
 	theimage-custom-dropdown "Custom" <<<EOT /*[[theimage-custom]]*\/ EOT;
 }
 @advanced text theimage-custom "Choose The BG Image (Custom)" "https://example.com/image.png"
 @advanced dropdown postopacity "Post Opacity" {
-	Transparent BG Posts "Transparent BG Posts*" <<<EOT .25 EOT;
-White BG Posts "White BG Posts" <<<EOT 1 EOT;
+	Transparent-BG-Posts "Transparent BG Posts*" <<<EOT .25 EOT;
+White-BG-Posts "White BG Posts" <<<EOT 1 EOT;
 
 }
 @advanced dropdown baropacity "Dashboard Bar Opacity" {
-	Transparent Dashboar "Transparent Dashboard Bar*" <<<EOT .25 EOT;
-White Dashboard Bar "White Dashboard Bar" <<<EOT 1 EOT;
+	Transparent-Dashboar "Transparent Dashboard Bar*" <<<EOT .25 EOT;
+White-Dashboard-Bar "White Dashboard Bar" <<<EOT 1 EOT;
 
 }
 @advanced color thecolor "Font Color" #FFFFFF

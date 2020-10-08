@@ -6,10 +6,10 @@
 @version        201589.22.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown .fbIndex::background "Background image" {
-	.fbIndex::bg-img-a "Waterfall by Jeff Sheldon*" <<<EOT https://ununsplash.imgix.net/photo-1415226194219-638f50c5d25f?q=75&fm=jpg&s=f6023ef5a263558b47f4bacc775bfc88 EOT;
-.fbIndex::bg-img-b "Rocks by Jeff Sheldon" <<<EOT https://ununsplash.imgix.net/photo-1415226161018-3ec581fa733d?q=75&fm=jpg&s=e3b2f96ffa81ec79445ba2f90ef1c672 EOT;
-.fbIndex::bg-img-c "Golden by Ramiro Checchi" <<<EOT https://ununsplash.imgix.net/reserve/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg?q=75&fm=jpg&s=2fce49d5652813cba428a0f1cc28c5e8 EOT;
+@advanced dropdown -fbIndex--background "Background image" {
+	-fbIndex--bg-img-a "Waterfall by Jeff Sheldon*" <<<EOT https://ununsplash.imgix.net/photo-1415226194219-638f50c5d25f?q=75&fm=jpg&s=f6023ef5a263558b47f4bacc775bfc88 EOT;
+-fbIndex--bg-img-b "Rocks by Jeff Sheldon" <<<EOT https://ununsplash.imgix.net/photo-1415226161018-3ec581fa733d?q=75&fm=jpg&s=e3b2f96ffa81ec79445ba2f90ef1c672 EOT;
+-fbIndex--bg-img-c "Golden by Ramiro Checchi" <<<EOT https://ununsplash.imgix.net/reserve/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg?q=75&fm=jpg&s=2fce49d5652813cba428a0f1cc28c5e8 EOT;
 
 }
 
@@ -49,7 +49,7 @@ body.fbIndex {
   
   overflow-y: auto;
   overflow-x: hidden;
-  background-image: url("/*[[.fbIndex::background]]*/");
+  background-image: url("/*[[-fbIndex--background]]*/");
 }
 .sp_yPZ_YJfmZ5e, ._5t_y ._1dsw ._1dsr, ._5t_y ._4-jj ._1dsr, ._5t_y ._1dsv ._1dsr, ._5t_y ._1dss ._1dsr, ._5t_y ._1dst { background-image: url("http://i.imgur.com/jEyn0cS.png"); }
 /* == declutter == */

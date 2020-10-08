@@ -7,9 +7,9 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown back "Фоновое изображение" {
-Черный фон "Черный фон*" <<<EOT https://img-fotki.yandex.ru/get/4123/161026817.0/0_acd93_38f25aaa_orig EOT;
-Синий фон "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
-Круги "Круги" <<<EOT https://img-fotki.yandex.ru/get/4129/161026817.0/0_acd92_815be373_orig EOT;
+---------- "Черный фон*" <<<EOT https://img-fotki.yandex.ru/get/4123/161026817.0/0_acd93_38f25aaa_orig EOT;
+--------- "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
+----- "Круги" <<<EOT https://img-fotki.yandex.ru/get/4129/161026817.0/0_acd92_815be373_orig EOT;
 Nexus "Nexus" <<<EOT http://allsizewallpapers.files.wordpress.com/2012/07/android-jelly-bean-abstract-2560x1600.jpg EOT;
 Netgear "Netgear" <<<EOT http://raw.github.com/Pmmlabs/GooglePlayNightFlight/master/images/netgear_wallpaper.png EOT;
 
@@ -17,9 +17,9 @@ Netgear "Netgear" <<<EOT http://raw.github.com/Pmmlabs/GooglePlayNightFlight/mas
 }
 @advanced text back-custom "Фоновое изображение (Custom)" "https://example.com/image.png"
 @advanced dropdown repeating "Положение фоновой картинки" {
-	Под размер окна "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
+	--------------- "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
 background-size: cover !important; EOT;
-Замостить "Замостить" <<<EOT background-repeat: repeat !important;
+--------- "Замостить" <<<EOT background-repeat: repeat !important;
 background-size: auto !important; EOT;
 
 }

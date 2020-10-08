@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown BGIMG "Background Source" {
-	unsplash.com "Unsplash.com*" <<<EOT https://source.unsplash.com//*[[featured]]*\//*[[width]]*\/x/*[[height]]*\///*[[refresh]]*\/?/*[[keywords]]*\/ EOT;
+	unsplash-com "Unsplash.com*" <<<EOT https://source.unsplash.com//*[[featured]]*\//*[[width]]*\/x/*[[height]]*\///*[[refresh]]*\/?/*[[keywords]]*\/ EOT;
 bing "Bing" <<<EOT http://api.dujin.org/bing/1920.php EOT;
 unsplash "Unsplash.it" <<<EOT https://unsplash.it//*[[width]]*\///*[[height]]*\//?random EOT;
 yandex "Yandex" <<<EOT https://yandex.com/images/today?size=/*[[width]]*\/x/*[[height]]*\/ EOT;
@@ -40,7 +40,7 @@ pre, code, kbd, samp, var {
 } EOT;
 
 }
-@advanced dropdown top bar "Top Bar" {
+@advanced dropdown top-bar "Top Bar" {
 	pinned "Pinned*" <<<EOT .srp #searchform {
     position: fixed;
 } EOT;
@@ -212,7 +212,7 @@ a.gscp_a {
 }
 
 /*search form*/
-/*[[top bar]]*/
+/*[[top-bar]]*/
 
 .sfbgg, body:not(.hp) :not(#prm)>.gb_re, body:not(.hp) #maia-header, .jfk-scrollbar .gb_se, .jfk-scrollbar #gb .gb_ue {
     background: linear-gradient(to top, rgba(250, 250, 250, 1), rgba(250, 250, 250, 0.2)), url(/*[[BGIMG]]*/), white!important;

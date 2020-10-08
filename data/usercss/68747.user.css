@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown menubaryesno "Your Firefox Layout" {
-	Without Menu Bar "Without Menu Bar*" <<<EOT #navigator-toolbox > #PersonalToolbar {
+	Without-Menu-Bar "Without Menu Bar*" <<<EOT #navigator-toolbox > #PersonalToolbar {
   z-index:10000;
   position: fixed;
   visibility: hidden;
@@ -31,7 +31,7 @@
   margin-top: 59px;
   -moz-transition-delay: 0s;
 } EOT;
-With Menu Bar "With Menu Bar" <<<EOT #navigator-toolbox > #PersonalToolbar {
+With-Menu-Bar "With Menu Bar" <<<EOT #navigator-toolbox > #PersonalToolbar {
   z-index:10000;
   position: fixed;
   visibility: hidden;

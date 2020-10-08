@@ -7,8 +7,8 @@
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown newsMarquee "ニュースマーキー" {
-	表示(niconico標準) "表示(niconico標準)*" <<<EOT  EOT;
-非表示 "非表示" <<<EOT #textMarquee{
+	---niconico--- "表示(niconico標準)*" <<<EOT  EOT;
+--- "非表示" <<<EOT #textMarquee{
     display:none !important;
 }
 body.full_with_browser #nicoplayerContainer{

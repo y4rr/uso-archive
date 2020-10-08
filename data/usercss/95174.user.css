@@ -26,10 +26,10 @@ html.room #chat_frame #chat_messages_frame #chat_messages .message {padding-righ
 YES "YES" <<<EOT /*Hide Hours*\/
 html.room #file_list .file .right_part {margin-right: -3.5em!important}
 html.room #file_list .file.uploading .fstatus{margin-right: 3.7em!important} EOT;
-YES+remove padding "YES+remove padding" <<<EOT /*Hide Hours*\/
+YES-remove-padding "YES+remove padding" <<<EOT /*Hide Hours*\/
 html.room #file_list .file .right_part {margin-right: -3em!important}
 html.room #file_list .file.uploading .fstatus{margin-right: 3.2em!important} EOT;
-Remove time complete "Remove time completely " <<<EOT /*Hide Time*\/
+Remove-time-complete "Remove time completely " <<<EOT /*Hide Time*\/
 html.room #file_list .file .fstatus {display:none!important}
 html.room #file_list .file {margin-right: -0.5em!important}
 html.room #file_list .file.uploading .fstatus{margin-right: 0.5em!important} EOT;

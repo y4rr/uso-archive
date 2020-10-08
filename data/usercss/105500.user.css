@@ -10,15 +10,15 @@
 @advanced color color "Цвет текста по умолчанию" #D4D2D2
 @advanced text LH "Можешь изменить межстрочный интвервал, но и так сойдёт" "136%"
 @advanced dropdown FF "Семейство шрифта по умолчанию" {
-	 1 "Да пофиг*" <<<EOT  EOT;
+	-1 "Да пофиг*" <<<EOT  EOT;
 Tahoma "Tahoma" <<<EOT  EOT;
-Segoe UI "Segoe UI" <<<EOT  EOT;
-Times New Roman "Times New Roman" <<<EOT  EOT;
+Segoe-UI "Segoe UI" <<<EOT  EOT;
+Times-New-Roman "Times New Roman" <<<EOT  EOT;
 
 }
 @advanced dropdown IM "Перезаписать значения шрифтов?" {
-	 1 "Не надо*" <<<EOT  EOT;
-!important "Да, давай" <<<EOT  EOT;
+	-1 "Не надо*" <<<EOT  EOT;
+-important "Да, давай" <<<EOT  EOT;
 
 }
 

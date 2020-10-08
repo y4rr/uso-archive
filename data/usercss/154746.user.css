@@ -11,9 +11,9 @@
 @advanced color Tertiary "Tertiary Background" #434953
 @advanced color Border "Border" #3C414C
 @advanced color Link "Link" #4B97F8
-@advanced color Primary Text "Primary Text" #EBEBEB
-@advanced color Secondary Text "Secondary Text" #BEBEBE
-@advanced color Tertiary Text "Tertiary Text" #888888
+@advanced color Primary-Text "Primary Text" #EBEBEB
+@advanced color Secondary-Text "Secondary Text" #BEBEBE
+@advanced color Tertiary-Text "Tertiary Text" #888888
 @advanced color Highlight "Highlight" #6A25AA
 
 ==/UserStyle== */
@@ -35,7 +35,7 @@ Tertiary Text: #888888
 {
 body {
     background: /*[[Primary]]*/;
-    color: /*[[Primary Text]]*/;
+    color: /*[[Primary-Text]]*/;
 }
 
 ::selection {
@@ -47,19 +47,19 @@ body {
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
     opacity: 1;
     /* Firefox */
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 a {
@@ -86,7 +86,7 @@ div.menuList .createOption {
 }
 
 .projectHeaderTable .projectDescription {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 table.overviewTypeTable {
@@ -99,11 +99,11 @@ table.overviewTypeTable {
 }
 
 .BuildNumber__build-number--3i {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .global__font--1w {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 
@@ -130,11 +130,11 @@ table.overviewTypeTable {
 .admin-ui:not(.admin-ui_old) #buildTypeTabsContainer .tabs li.selected a,
 .admin-ui:not(.admin-ui_old) #projectTabsContainer .tabs li.selected .tabCounter,
 .admin-ui:not(.admin-ui_old) #buildTypeTabsContainer .tabs li.selected .tabCounter {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .admin-ui:not(.admin-ui_old) .admin-sidebar .category {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .admin-ui:not(.admin-ui_old) #topWrapper.with-border,
@@ -162,7 +162,7 @@ table.borderBottom td,
 .grayNote,
 .smallNote,
 .smallNoteAttention {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 #footer {
@@ -186,7 +186,7 @@ option,
 search-input {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 button,
@@ -195,7 +195,7 @@ button,
     background-image: none !important;
     border-color: /*[[Border]]*/ !important;
     box-shadow: none !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     text-shadow: none !important;
 }
 
@@ -206,17 +206,17 @@ button,
 }
 
 #footer .columnContent .version {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 span.greyNote {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 .tabCounter {
     background-color: /*[[Tertiary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .mug {
@@ -226,7 +226,7 @@ span.greyNote {
 .attentionComment,
 .attentionRed {
     background: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .popupDiv.popupDiv_has-triangle.firstBuildTooltip,
@@ -246,7 +246,7 @@ span.greyNote {
 #projectSummary {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #projectTabsContainer .tabs li.selected {
@@ -254,7 +254,7 @@ span.greyNote {
 }
 
 #projectTabsContainer .tabs li.selected a {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 #projectTabsContainer .tabs li:hover {
@@ -267,7 +267,7 @@ span.greyNote {
 .build-status-icon.build-status-icon_my-running-failing,
 .build-status-icon.build-status-icon_personal-running,
 .build-status-icon.build-status-icon_personal-running-failing {
-    background-color: /*[[Primary Text]]*/ !important;
+    background-color: /*[[Primary-Text]]*/ !important;
     background-position: center !important;
     border-radius: 50% !important;
 }
@@ -283,7 +283,7 @@ span.greyNote {
 .buildTypeSettings {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .captionRow {
@@ -302,13 +302,13 @@ span.greyNote {
 
 .closeWindowLink,
 .closeWindowLink:hover {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .menuList {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .menuList .menuItemSelected,
@@ -330,13 +330,13 @@ span.greyNote {
 .modalDialog {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .modalDialog .dialogHeader {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .healthItemIndicator,
@@ -344,7 +344,7 @@ span.greyNote {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
     box-shadow: none !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     text-shadow: none !important;
 }
 
@@ -381,7 +381,7 @@ span.greyNote {
 .l24,
 .l25,
 .lDeep {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .layeredGraph .depNode {
@@ -394,7 +394,7 @@ span.greyNote {
 }
 
 .log .internal_msg {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 .log .status_err {
@@ -426,7 +426,7 @@ span.greyNote {
 }
 
 .none {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 .pager .pages a.page {
@@ -438,23 +438,23 @@ span.greyNote {
 .pager .pages span.page {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .parameterGroup {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .popupDiv {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .popupDiv.flatView .action-bar {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .popupMode .viewAllResults {
@@ -462,7 +462,7 @@ span.greyNote {
 }
 
 .addMessage:not(:empty) {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .BuildBranch__build-branch--2h {
@@ -488,7 +488,7 @@ span.greyNote {
 .popup_0ad {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .hover_04a:not(.error_af5) {
@@ -497,18 +497,18 @@ span.greyNote {
 
 .separator_5f9 {
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .action_b84 {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search-panel-0 .dropdown-content.search-panel,
 .search-results-0 iron-list.search-results {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .search-panel-0.special .itr.search-panel {
@@ -518,7 +518,7 @@ span.greyNote {
 .search-results-1 iron-list.search-results {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .tree-node-0 {
@@ -528,7 +528,7 @@ span.greyNote {
 
 .tree-node-0 #anode.tree-node,
 .tree-node-0 #snode.tree-node {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .tree-node-0 .node.server.tree-node,
@@ -555,7 +555,7 @@ span.greyNote {
 #loadingWarning {
     background-color: /*[[Tertiary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .statusBlock {
@@ -565,7 +565,7 @@ span.greyNote {
 .blockHeader {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .bt-separator,
@@ -575,20 +575,20 @@ span.greyNote {
 
 .simpleTabs .tabs li.selected a:link,
 .simpleTabs .tabs li.selected a:hover {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 table.modificationBuilds tr td.build_type_name span.pc a,
 table.modificationBuilds tr td.buildTypeName span.pc a {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 span.commentText {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 table.modificationBuilds tr td.duration {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 table.separatedWithLine td,
@@ -608,21 +608,21 @@ table.separatedWithLine,
 #changesPopup .changePopupHeader,
 #changesPopup .changesPopupFooter {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 #changesPopup .changePopupHeader {
     border-color: /*[[Border]]*/ !important;
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .container h1,
 .overview th {
     background-color: /*[[Tertiary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .container .stripped tr:nth-child(2n+1) {
@@ -632,14 +632,14 @@ table.separatedWithLine,
 .container {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/!important;
+    color: /*[[Primary-Text]]*/!important;
     box-shadow: none;
 }
 
 .overview {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .overview thead th {
@@ -664,7 +664,7 @@ table.plain th {
 }
 
 .label {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 table.plain,
@@ -717,19 +717,19 @@ table.plain th {
 
 .ufd.default input.disabled {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 #changesPopup .userChangesHeader {
     background-color: /*[[Primary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .simpleTabs .tabs li.selected a:link,
 .simpleTabs .tabs li.selected a:hover,
 .simpleTabs .tabs li.selected a:link,
 .simpleTabs .tabs li.selected a:hover {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .tc-icon_tfs {
@@ -745,31 +745,31 @@ table.plain th {
 #pager .pages span.page {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .actionBar {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.buildQueueTable tbody tr td {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.buildQueueTable thead tr th {
     background-color: /*[[Tertiary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.dark th,
 table.dark thead {
     background-color: /*[[Tertiary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.overviewTypeTable {
@@ -779,7 +779,7 @@ table.overviewTypeTable {
 table.parametersTable td {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.parametersTable,
@@ -787,13 +787,13 @@ table.parametersTable th,
 table.parametersTable th {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.runnerFormTable td {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 table.runnerFormTable,
@@ -801,41 +801,41 @@ table.runnerFormTable th,
 table.runnerFormTable th {
     background-color: /*[[Primary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .simpleTabs .tabs li.selected a {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .projectHeaderTable a,
 .projectHeaderTable a:hover,
 .projectHeaderTable a:visited {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .tableCaption a.buildTypeName {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #ufd-container .default div.list-scroll {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #ufd-container .default li {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #ufd-container li.nothing {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 #ufd-container li[data-disabled=true] {
-    color: /*[[Tertiary Text]]*/  !important;
+    color: /*[[Tertiary-Text]]*/  !important;
 }
 
 .ufd.default button,
@@ -845,7 +845,7 @@ table.runnerFormTable th {
 
 .tableCaption .close-bt,
 .tableCaption .close-bt:hover {
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 .filesPopupHeader {
@@ -864,7 +864,7 @@ table.runnerFormTable th {
 }
 
 .inheritedParam {
-    color: /*[[Secondary Text]]*/ !important;
+    color: /*[[Secondary-Text]]*/ !important;
 }
 
 .ListItem__row--33 {
@@ -933,19 +933,19 @@ tr.project-row:hover > td.remove-cell {
 
 h3.title {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
     border-color: /*[[Border]]*/ !important;
 }
 
 .headerNote {
     background-color: /*[[Secondary]]*/ !important;
     border-color: /*[[Border]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #templateTabsContainer .tabs li.selected, #buildTypeTabsContainer .tabs li.selected {
     background-color: /*[[Secondary]]*/ !important;
-    color: /*[[Primary Text]]*/ !important;
+    color: /*[[Primary-Text]]*/ !important;
 }
 
 #templateTabsContainer .tabs li:hover, #buildTypeTabsContainer .tabs li:hover {

@@ -6,13 +6,13 @@
 @version        201696.3.28
 @license        CC-BY-NC-4.0
 @preprocessor   uso
-@advanced color BG color "Bg Color" #FFFFFF
-@advanced dropdown Bg Image "Bg Image" {
-Bg Image "Galaxy*" <<<EOT http://www.hdbloggers.net/wp-content/uploads/2016/07/HD-Galaxy-Wallpaper.jpg EOT;
+@advanced color BG-color "Bg Color" #FFFFFF
+@advanced dropdown Bg-Image "Bg Image" {
+Bg-Image "Galaxy*" <<<EOT http://www.hdbloggers.net/wp-content/uploads/2016/07/HD-Galaxy-Wallpaper.jpg EOT;
 
-	Bg Image-custom-dropdown "Custom" <<<EOT /*[[Bg Image-custom]]*\/ EOT;
+	Bg-Image-custom-dropdown "Custom" <<<EOT /*[[Bg-Image-custom]]*\/ EOT;
 }
-@advanced text Bg Image-custom "Bg Image (Custom)" "https://example.com/image.png"
+@advanced text Bg-Image-custom "Bg Image (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -38,8 +38,8 @@ Bg Image "Galaxy*" <<<EOT http://www.hdbloggers.net/wp-content/uploads/2016/07/H
 }
 
 #full_height_td {
- background-image: url(/*[[BG image]]*/);
- background-color:/*[[BG color]]*/;
+ background-image: url(/*[[Bg-Image]]*/);
+ background-color:/*[[BG-color]]*/;
  color: #000;
  min-width: 510px;
  min-height: 830px;

@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown logoani "首页LOGO动画" {
-	启用 "启用*" <<<EOT     -webkit-animation-name: logoR;
+	-- "启用*" <<<EOT     -webkit-animation-name: logoR;
 	-webkit-animation-duration: 4s;
 	-webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count:infinite;
@@ -15,22 +15,22 @@
 	animation-duration: 4s;
 	animation-timing-function: ease-in-out;
     animation-iteration-count:infinite; EOT;
-停用 "停用" <<<EOT  EOT;
+-- "停用" <<<EOT  EOT;
 
 }
 @advanced dropdown glotra "全局过度动画" {
-	启用 "启用*" <<<EOT 	transition: background ease-out 0.25s ; EOT;
-停用 "停用" <<<EOT  EOT;
+	-- "启用*" <<<EOT 	transition: background ease-out 0.25s ; EOT;
+-- "停用" <<<EOT  EOT;
 
 }
 @advanced dropdown hovermove "搜索结果悬停上浮效果" {
-	启用 "启用*" <<<EOT 	-moz-transform: translate(0px, -3px);
+	-- "启用*" <<<EOT 	-moz-transform: translate(0px, -3px);
 	-webkit-transform: translate(0px, -3px); EOT;
-停用 "停用" <<<EOT  EOT;
+-- "停用" <<<EOT  EOT;
 
 }
 @advanced dropdown imagef "图片搜索过滤器样式" {
-	启用 "启用*" <<<EOT @-moz-document domain("image.baidu.com") {
+	-- "启用*" <<<EOT @-moz-document domain("image.baidu.com") {
 * {
 	font-family: 微软雅黑 !important;
 
@@ -150,13 +150,13 @@ margin: 0 50px 0 40px;
 min-width: 980px;
 }
 } EOT;
-停用 "停用" <<<EOT  EOT;
+-- "停用" <<<EOT  EOT;
 
 }
 @advanced color maincolor "主色调（建议不要过亮）" #3388FF
 @advanced dropdown 2column "双列模式（可能会影响排列工整性）" {
-	停用 "停用*" <<<EOT  EOT;
-启用（低分辨率屏幕） "启用（低分辨率屏幕）" <<<EOT body{
+	-- "停用*" <<<EOT  EOT;
+---------- "启用（低分辨率屏幕）" <<<EOT body{
 min-width:1190px!important;
 }
 #container {
@@ -176,7 +176,7 @@ padding-left: 35px!important;
 float: left!important;
 margin-right: 20px!important;
 } EOT;
-启用（高分辨率屏幕） "启用（高分辨率屏幕）" <<<EOT #container {
+---------- "启用（高分辨率屏幕）" <<<EOT #container {
 width: 100%!important;
 }
 #content_right {
@@ -196,19 +196,19 @@ margin-right: 20px!important;
 
 }
 @advanced dropdown rsborder "搜索结果边框（建议双列模式启用）" {
-	停用 "停用*" <<<EOT  EOT;
-启用（直角） "启用（直角）" <<<EOT #content_left>table, #content_left>div {
+	-- "停用*" <<<EOT  EOT;
+------ "启用（直角）" <<<EOT #content_left>table, #content_left>div {
 box-shadow: 0 0px 0px 5px rgba(255,255,255,1),0 0 12px 0px rgba(0,0,0,.7);
 } EOT;
-启用（圆角） "启用（圆角）" <<<EOT #content_left>table, #content_left>div {
+------ "启用（圆角）" <<<EOT #content_left>table, #content_left>div {
 border-radius: 2px;
 box-shadow: 0 0px 0px 5px rgba(255,255,255,1),0 0 12px 0px rgba(0,0,0,.7);
 } EOT;
 
 }
 @advanced dropdown adblock "去除广告" {
-	停用 "停用*" <<<EOT  EOT;
-启用 "启用" <<<EOT .shouji,.EC_mr15,.ec_bdtg,#ec_im_container,td[align="left"]>div:nth-child(1){
+	-- "停用*" <<<EOT  EOT;
+-- "启用" <<<EOT .shouji,.EC_mr15,.ec_bdtg,#ec_im_container,td[align="left"]>div:nth-child(1){
   display:none!important;
   } EOT;
 

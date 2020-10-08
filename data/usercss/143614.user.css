@@ -6,21 +6,21 @@
 @version        201767.17.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color background color "背景颜色" #000000
-@advanced color font color "文字颜色" #ABABAB
+@advanced color background-color "背景颜色" #000000
+@advanced color font-color "文字颜色" #ABABAB
 
 ==/UserStyle== */
 @-moz-document regexp("https://tieba.baidu.com/p/(.*)see_lz=1(.*)") {
   /*设置背景*/
    body{
-     background-color: /*[[background color]]*/!important;
+     background-color: /*[[background-color]]*/!important;
      background-attachment:fixed;
   }
   #pblist,.main,.forum_item,.post_list_item[fn="1"] {
     background-color: transparent!important;
   }
   #i_head  {
-    background-color: /*[[background color]]*/!important;
+    background-color: /*[[background-color]]*/!important;
   }
   
   
@@ -39,10 +39,10 @@
   }
   .content{
     padding-left: 0px!important;
-    color: /*[[font color]]*/!important;
+    color: /*[[font-color]]*/!important;
   }
   .floor_content{
-    color: /*[[font color]]*/;
+    color: /*[[font-color]]*/;
   }
   
   /*去掉精彩推荐和回复和客户端下载器等按钮，因为在阅读模式下没必要有这些按钮。*/

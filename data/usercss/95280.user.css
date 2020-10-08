@@ -46,7 +46,7 @@
 .video-extras-sparkbar-likes/*[[extras2]]*\/ {
    background-color: /*[[colour]]*\/ !important;
 } EOT;
-Glow/gradient "Glow/gradient" <<<EOT .html5-play-progress, .ytp-play-progress {
+Glow-gradient "Glow/gradient" <<<EOT .html5-play-progress, .ytp-play-progress {
    background: /*[[colour]]*\/ !important; /* Old browsers *\/
    background: -moz-linear-gradient(left, #1b1b1b 0%, /*[[colour]]*\/ 100%) !important;
    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1b1b1b), color-stop(100%,/*[[colour]]*\/)) !important;
@@ -142,8 +142,8 @@ Yes "Yes" <<<EOT  EOT;
 
 }
 @advanced dropdown scrubbercolour "Scrubber button colour" {
-	Same as bar "Same as bar (default)*" <<<EOT /*[[colour]]*\/ EOT;
-Dark grey "Dark grey" <<<EOT #3A3A3A EOT;
+	Same-as-bar "Same as bar (default)*" <<<EOT /*[[colour]]*\/ EOT;
+Dark-grey "Dark grey" <<<EOT #3A3A3A EOT;
 White "White" <<<EOT #FFFFFF EOT;
 
 }

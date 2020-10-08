@@ -48,7 +48,7 @@ hotspot "keep the popup, but shrink the hot-spot" <<<EOT   .post_info_link {
  EOT;
 
 }
-@advanced dropdown 'Here's a blog' "'Here's a blog' (sponsored content)" {
+@advanced dropdown -Here-s-a-blog- "'Here's a blog' (sponsored content)" {
 	remove "gone*" <<<EOT /* 'Here's a blog' sponsored content *\/
   .post.not_mine.is_recommended { display: none }
  EOT;
@@ -130,7 +130,7 @@ default "leave it alone" <<<EOT  EOT;
 /*[[radar]]*/
 /*[[following]]*/
 /*[[favorites]]*/
-/*[['Here's a blog']]*/
+/*[[-Here-s-a-blog-]]*/
 /*[[Instagram]]*/
 /*[[explore]]*/
 }

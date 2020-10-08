@@ -6,9 +6,9 @@
 @version        2018312.8.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown ニコニコプレーヤー設定 "ニコニコプレーヤー" {
-	基本設定（標準） "基本設定（標準）*" <<<EOT  EOT;
-動画部分切り抜き表示 "動画部分切り抜き表示" <<<EOT   #playerAlignmentArea.size_normal 
+@advanced dropdown ----------- "ニコニコプレーヤー" {
+	-------- "基本設定（標準）*" <<<EOT  EOT;
+---------- "動画部分切り抜き表示" <<<EOT   #playerAlignmentArea.size_normal 
   #playerContainer.text_marquee 
   #playerNicoplayer/*大画面プレーヤー動画部分切り抜き表示*\/ {
     min-height: 598px !important;/*画面サイズ切り替え時の挙動調整*\/
@@ -121,7 +121,7 @@
     clip: auto !important;
     transition: none !important;
   } EOT;
-中央配置 "中央配置" <<<EOT   #playerTabWrapper/*コメントパネル非表示*\/ {
+---- "中央配置" <<<EOT   #playerTabWrapper/*コメントパネル非表示*\/ {
     display: none !important;
   }
 
@@ -136,7 +136,7 @@
     width: 714px !important;
     margin: 0 auto 0 auto !important;
   } EOT;
-中央配置＋動画部分切り抜き表示 "中央配置＋動画部分切り抜き表示" <<<EOT   #playerTabWrapper/*コメントパネル非表示*\/ {
+--------------- "中央配置＋動画部分切り抜き表示" <<<EOT   #playerTabWrapper/*コメントパネル非表示*\/ {
     display: none !important;
   }
 
@@ -269,9 +269,9 @@
   } EOT;
 
 }
-@advanced dropdown 設定パネル設定 "設定パネル" {
-	基本設定（標準） "基本設定（標準）*" <<<EOT  EOT;
-小画面プレーヤー拡大＋切り抜き表示 "小画面プレーヤー拡大＋切り抜き表示" <<<EOT   body.setting_panel 
+@advanced dropdown ------- "設定パネル" {
+	-------- "基本設定（標準）*" <<<EOT  EOT;
+----------------- "小画面プレーヤー拡大＋切り抜き表示" <<<EOT   body.setting_panel 
   #playerAlignmentArea {
     width: 1050px !important;
     height: 502px !important;
@@ -318,7 +318,7 @@
   li.active {
     height: 297px !important;
   } EOT;
-小画面プレーヤー拡大＋装飾 "小画面プレーヤー拡大＋装飾" <<<EOT   body.setting_panel 
+------------- "小画面プレーヤー拡大＋装飾" <<<EOT   body.setting_panel 
   #playerAlignmentArea.size_small 
   #textMarquee {
     width: 714px !important;
@@ -389,9 +389,9 @@
   } EOT;
 
 }
-@advanced dropdown 再生リスト設定 "再生リスト" {
-	サムネイル 16:9（標準） "サムネイル 16:9（標準）*" <<<EOT  EOT;
-サムネイル 16:9（画像全体縮小表示） "サムネイル 16:9（画像全体縮小表示）" <<<EOT   #playlistContainer 
+@advanced dropdown ------- "再生リスト" {
+	------16-9---- "サムネイル 16:9（標準）*" <<<EOT  EOT;
+------16-9---------- "サムネイル 16:9（画像全体縮小表示）" <<<EOT   #playlistContainer 
   .itemThumbnail {
     width: 100% !important;
     height: 100% !important;
@@ -399,7 +399,7 @@
     background: #010101 !important;
     object-fit: contain !important;
   } EOT;
-サムネイル 4:3 "サムネイル 4:3" <<<EOT   #playlistContainer 
+------4-3 "サムネイル 4:3" <<<EOT   #playlistContainer 
   .playlistItem 
   a {
     height: 130px !important;
@@ -429,9 +429,9 @@
   } EOT;
 
 }
-@advanced dropdown 広告表示設定 "広告" {
-	表示する（標準） "表示する（標準）*" <<<EOT  EOT;
-非表示にする "非表示にする" <<<EOT   #playerTabContainer 
+@advanced dropdown ------ "広告" {
+	-------- "表示する（標準）*" <<<EOT  EOT;
+------ "非表示にする" <<<EOT   #playerTabContainer 
   .playerTabAds,
   #playerTabContainer 
   .nicoSpotAds,
@@ -524,13 +524,13 @@ https://blogs.yahoo.co.jp/uhyahhou
     bottom: 0 !important;
   }
 
-/*[[ニコニコプレーヤー設定]]*/
+/*[[-----------]]*/
 
-/*[[設定パネル設定]]*/
+/*[[-------]]*/
 
-/*[[再生リスト設定]]*/
+/*[[-------]]*/
 
-/*[[広告表示設定]]*/
+/*[[------]]*/
 
 }
 

@@ -7,14 +7,14 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown avatar "Choose your avatar (to be shown beside your posts)" {
-Standard placeholder "Standard placeholder avatar*" <<<EOT https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/c14.0.47.47/s32x32/252231_1002029915278_1941483569_t.jpg EOT;
+Standard-placeholder "Standard placeholder avatar*" <<<EOT https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/c14.0.47.47/s32x32/252231_1002029915278_1941483569_t.jpg EOT;
 
 	avatar-custom-dropdown "Custom" <<<EOT /*[[avatar-custom]]*\/ EOT;
 }
 @advanced text avatar-custom "Choose your avatar (to be shown beside your posts) (Custom)" "https://example.com/image.png"
 @advanced dropdown postingtime "Show posting time in (see description in \"notes\" section):" {
 	1095824-Tooltip "Tooltip*" <<<EOT  EOT;
-1095825-Post's top-r "Post's top-right corner (photo hover)" <<<EOT #facebook body>.uiContextualLayerPositioner .uiContextualLayer
+1095825-Post-s-top-r "Post's top-right corner (photo hover)" <<<EOT #facebook body>.uiContextualLayerPositioner .uiContextualLayer
 {
   top: -24px;
   margin-right: -238px;
@@ -44,7 +44,7 @@ Standard placeholder "Standard placeholder avatar*" <<<EOT https://fbcdn-profile
   font-size: 11px;
   line-height: 11px !important;
 } EOT;
-1095826-Post's top-r "Post's top-right corner (post hover)" <<<EOT #facebook .conversationContainer a.profileLink
+1095826-Post-s-top-r "Post's top-right corner (post hover)" <<<EOT #facebook .conversationContainer a.profileLink
 {
   width: 238px;
   background: none;

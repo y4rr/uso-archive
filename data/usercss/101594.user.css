@@ -20,7 +20,7 @@ r2px "2 pixels" <<<EOT 2px EOT;
 r3px "3 pixels" <<<EOT 3px EOT;
 r5px "5 pixels" <<<EOT 5px EOT;
 r15px "15 pixels" <<<EOT 15px EOT;
- r20px "20 pixels (round on most cases)" <<<EOT 20px EOT;
+-r20px "20 pixels (round on most cases)" <<<EOT 20px EOT;
 r200px "200px (always round while inactive)" <<<EOT 200px EOT;
 
 }
@@ -35,13 +35,13 @@ s25px "25 pixels" <<<EOT 25px EOT;
 
 }
 @advanced dropdown duration "Transition Duration:" {
-	d0.5s "Default (0.5s)*" <<<EOT 0.5s EOT;
+	d0-5s "Default (0.5s)*" <<<EOT 0.5s EOT;
 d0s "Instant (0s) - no animation" <<<EOT 0s EOT;
-d0.1s "Very Fast (0.1s)" <<<EOT 0.1s EOT;
-d0.25s "Fast (0.25s)" <<<EOT 0.25s EOT;
-d0.75s "Normal (0.75s)" <<<EOT 0.75s EOT;
+d0-1s "Very Fast (0.1s)" <<<EOT 0.1s EOT;
+d0-25s "Fast (0.25s)" <<<EOT 0.25s EOT;
+d0-75s "Normal (0.75s)" <<<EOT 0.75s EOT;
 d1s "Slow (1s)" <<<EOT 1s EOT;
-d1.5s "Very Slow (1.5s)" <<<EOT 1.5s EOT;
+d1-5s "Very Slow (1.5s)" <<<EOT 1.5s EOT;
 
 }
 

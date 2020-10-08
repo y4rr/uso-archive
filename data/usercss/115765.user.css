@@ -161,8 +161,8 @@ playstats0 "Original" <<<EOT /*Disabled by user*\/ EOT;
 footer0 "No" <<<EOT /*Disabled by user*\/ EOT;
 
 }
-@advanced color header color "Color for headers (title)" #CCEE33
-@advanced color pp color "Color for pp display" #CCEE33
+@advanced color header-color "Color for headers (title)" #CCEE33
+@advanced color pp-color "Color for pp display" #CCEE33
 
 ==/UserStyle== */
 @-moz-document domain("osu.ppy.sh") {
@@ -187,14 +187,14 @@ footer0 "No" <<<EOT /*Disabled by user*\/ EOT;
 
 /*Header color*/
 h1, h2, h3, h4, h5 {
-    color: /*[[header color]]*/ !important;
-    text-shadow: /*[[header color]]*/ 0px 0px 10px !important;
+    color: /*[[header-color]]*/ !important;
+    text-shadow: /*[[header-color]]*/ 0px 0px 10px !important;
 }
 
 /*PP color*/
 .pp-display b{
-    color: /*[[pp color]]*/ !important;
-    text-shadow: /*[[pp color]]*/ 0px 0px 10px !important;
+    color: /*[[pp-color]]*/ !important;
+    text-shadow: /*[[pp-color]]*/ 0px 0px 10px !important;
 }
 
 /*fix for white box on homepage*/

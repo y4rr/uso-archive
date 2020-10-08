@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown coresefont "Colorthemes prédefinidos" {
-	Gray-Blue (default) "Gray-Blue (default)*" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage {
+	Gray-Blue--default- "Gray-Blue (default)*" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage {
     -moz-appearance: none;
     background-color: rgb(40,40,40) !important;
     border: 1px solid rgb(45,45,45) !important;
@@ -239,7 +239,7 @@ form div table, form table {
     margin-bottom: -3px !important;
     margin-left: -13px !important;
 } EOT;
-Pessoal (Faça as dev "Pessoal (Faça as devidas edições nas cores abaixo)" <<<EOT /*[[postselec]]*\/
+Pessoal--Fa-a-as-dev "Pessoal (Faça as devidas edições nas cores abaixo)" <<<EOT /*[[postselec]]*\/
 
 html {
     background: url('/*[[mascote]]*\/')
@@ -1146,7 +1146,7 @@ div.navbar a.recentP {
 
 }
 @advanced dropdown scroll "Custom Scrollbars" {
-	Glow style "Glow style*" <<<EOT html scrollbarbutton[sbattr="scrollbar-up-top"],
+	Glow-style "Glow style*" <<<EOT html scrollbarbutton[sbattr="scrollbar-up-top"],
 html scrollbarbutton[sbattr="scrollbar-down-top"],
 html scrollbarbutton[sbattr="scrollbar-up-bottom"],
 html scrollbarbutton[sbattr="scrollbar-down-bottom"] {
@@ -1195,8 +1195,8 @@ html > scrollbar[orient="horizontal"] thumb {
 html > scrollbar[orient="horizontal"] {
     margin-top: -11px !important;
 } EOT;
-Não, deixe a default "Não, deixe a default do meu browser" <<<EOT /*noscrollbars*\/ EOT;
-Appchan style "Appchan style" <<<EOT scrollbarbutton { display: none !important; }
+N-o--deixe-a-default "Não, deixe a default do meu browser" <<<EOT /*noscrollbars*\/ EOT;
+Appchan-style "Appchan style" <<<EOT scrollbarbutton { display: none !important; }
 	scrollbar, scrollcorner { -moz-appearance: none !important; width: 10px !important; height: 10px !important; }
 	scrollbar[orient='vertical'] { border-left: 0; }
 	scrollbar[orient='horizontal'] { border-top: 0; }
@@ -1212,7 +1212,7 @@ Appchan style "Appchan style" <<<EOT scrollbarbutton { display: none !important;
 
 }
 @advanced dropdown fontamanho "Tamanho da font" {
-	12 (Default*) "12 (Default*)*" <<<EOT 12 EOT;
+	12--Default-- "12 (Default*)*" <<<EOT 12 EOT;
 13 "13" <<<EOT 13 EOT;
 14 "14" <<<EOT 14 EOT;
 15 "15" <<<EOT 15 EOT;
@@ -1224,7 +1224,7 @@ Appchan style "Appchan style" <<<EOT scrollbarbutton { display: none !important;
 
 }
 @advanced dropdown postautohide "Autohide do postbox" {
-	Sim (Efeito Fade) "Sim (Efeito Fade)*" <<<EOT table.postform {
+	Sim--Efeito-Fade- "Sim (Efeito Fade)*" <<<EOT table.postform {
     position: fixed;
     width: 1000px !important;
     right: -743px; top: 110px;
@@ -1247,7 +1247,7 @@ input[accesskey="p"] {
 width: 60px !important;
 margin-left: 185px !important;
 } EOT;
-Sim (Efeito Slide) "Sim (Efeito Slide)" <<<EOT table.postform {
+Sim--Efeito-Slide- "Sim (Efeito Slide)" <<<EOT table.postform {
     position: fixed;
     width: 1000px !important;
     right: -949px; top: 110px;
@@ -1271,7 +1271,7 @@ input[accesskey="p"] {
 width: 60px !important;
 margin-left: 185px !important;
 } EOT;
-Sim (Efeito Slide+Fa "Sim (Efeito Slide+Fade)" <<<EOT table.postform {
+Sim--Efeito-Slide-Fa "Sim (Efeito Slide+Fade)" <<<EOT table.postform {
     position: fixed;
     width: 1000px !important;
     right: -949px; top: 110px;
@@ -1295,7 +1295,7 @@ input[accesskey="p"] {
 width: 60px !important;
 margin-left: 185px !important;
 } EOT;
-Não "Não" <<<EOT table.postform {
+N-o "Não" <<<EOT table.postform {
     position: fixed;
     width: 1000px !important;
     right: -743px; top: 110px;
@@ -1326,7 +1326,7 @@ table.postform textarea:focus {
     z-index: 99;
     -moz-transition: all 0.5s ease;
 } EOT;
-Não "Não" <<<EOT table.postform textarea {
+N-o "Não" <<<EOT table.postform textarea {
     width: 250px;
     height: 100px;
     -webkit-appearance: none;
@@ -1355,12 +1355,12 @@ Não "Não" <<<EOT table.postform textarea {
 @advanced color sagecor "Cor do sage" #FF5959
 @advanced color ban "Cor da mensagem de b&" #FF5959
 @advanced dropdown postselec "Caixa de seleção de post" {
-	Teutão (tema escuro) "Teutão (tema escuro)*" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage  {
+	Teut-o--tema-escuro- "Teutão (tema escuro)*" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage  {
     -moz-appearance: none;
     background-color: rgb(40,40,40) !important;
     border: 1px solid rgb(45,45,45) !important;
 } EOT;
-Branco (tema claro) "Branco (tema claro)" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage  {
+Branco--tema-claro- "Branco (tema claro)" <<<EOT td.reply label input, form#delform div label input, INPUT#hidesage  {
     -moz-appearance: none;
     background-color: #ffffff !important;
     border: 1px solid #a9a9a9 !important;
@@ -1413,45 +1413,45 @@ img.unhidethread {
 
 }
 @advanced dropdown mascote "Mascote" {
-55tan  "55tan *" <<<EOT http://s9.postimage.org/5fkt5gg6n/image.png EOT;
-Akiyama Mio "Akiyama Mio" <<<EOT https://a248.e.akamai.net/camo.github.com/4afcc603831f3e7680f93a7bf8b4726c4e27b4ea/687474703a2f2f692e696d6775722e636f6d2f4d6445394b2e706e67 EOT;
-Akiyama Mio 2 "Akiyama Mio 2" <<<EOT https://a248.e.akamai.net/camo.github.com/9c2d6b061e5c5be90b07a8cf703173f3f67a633c/687474703a2f2f692e696d6775722e636f6d2f70427547322e706e67 EOT;
-Asuka Langley Soryu "Asuka Langley Soryu" <<<EOT https://a248.e.akamai.net/camo.github.com/caadc9fcbd42938d567026a2f75764eeb3f5c6fd/687474703a2f2f692e696d6775722e636f6d2f79556d334e2e706e67 EOT;
-Ayase Yue "Ayase Yue" <<<EOT https://a248.e.akamai.net/camo.github.com/34759f3ca56b2582e7285f0d2761f38d3f821e05/687474703a2f2f692e696d6775722e636f6d2f69324d54382e706e67 EOT;
-BLACK ROCK SHOOTER "BLACK ROCK SHOOTER" <<<EOT https://a248.e.akamai.net/camo.github.com/45f24c7b759fdd75ee5a35561bb5e631498397f5/687474703a2f2f692e696d6775722e636f6d2f5669644b6f2e706e67 EOT;
-Chie Satonaka "Chie Satonaka" <<<EOT https://a248.e.akamai.net/camo.github.com/85bbcfa88e29ef68d430b3b7dad3e13fa1461118/687474703a2f2f692e696d6775722e636f6d2f33516d5a582e706e67 EOT;
-Evangeline A.K. McDo "Evangeline A.K. McDowell" <<<EOT https://a248.e.akamai.net/camo.github.com/876d076eeee12acc2e87d7f86ec0f00c963a1f2b/687474703a2f2f692e696d6775722e636f6d2f6352686a672e706e67 EOT;
-George Costanza "George Costanza" <<<EOT https://a248.e.akamai.net/camo.github.com/a574f127aa61785566582352d55d8bee86905e42/687474703a2f2f692e696d6775722e636f6d2f4e6e7372662e706e67 EOT;
+55tan- "55tan *" <<<EOT http://s9.postimage.org/5fkt5gg6n/image.png EOT;
+Akiyama-Mio "Akiyama Mio" <<<EOT https://a248.e.akamai.net/camo.github.com/4afcc603831f3e7680f93a7bf8b4726c4e27b4ea/687474703a2f2f692e696d6775722e636f6d2f4d6445394b2e706e67 EOT;
+Akiyama-Mio-2 "Akiyama Mio 2" <<<EOT https://a248.e.akamai.net/camo.github.com/9c2d6b061e5c5be90b07a8cf703173f3f67a633c/687474703a2f2f692e696d6775722e636f6d2f70427547322e706e67 EOT;
+Asuka-Langley-Soryu "Asuka Langley Soryu" <<<EOT https://a248.e.akamai.net/camo.github.com/caadc9fcbd42938d567026a2f75764eeb3f5c6fd/687474703a2f2f692e696d6775722e636f6d2f79556d334e2e706e67 EOT;
+Ayase-Yue "Ayase Yue" <<<EOT https://a248.e.akamai.net/camo.github.com/34759f3ca56b2582e7285f0d2761f38d3f821e05/687474703a2f2f692e696d6775722e636f6d2f69324d54382e706e67 EOT;
+BLACK-ROCK-SHOOTER "BLACK ROCK SHOOTER" <<<EOT https://a248.e.akamai.net/camo.github.com/45f24c7b759fdd75ee5a35561bb5e631498397f5/687474703a2f2f692e696d6775722e636f6d2f5669644b6f2e706e67 EOT;
+Chie-Satonaka "Chie Satonaka" <<<EOT https://a248.e.akamai.net/camo.github.com/85bbcfa88e29ef68d430b3b7dad3e13fa1461118/687474703a2f2f692e696d6775722e636f6d2f33516d5a582e706e67 EOT;
+Evangeline-A-K--McDo "Evangeline A.K. McDowell" <<<EOT https://a248.e.akamai.net/camo.github.com/876d076eeee12acc2e87d7f86ec0f00c963a1f2b/687474703a2f2f692e696d6775722e636f6d2f6352686a672e706e67 EOT;
+George-Costanza "George Costanza" <<<EOT https://a248.e.akamai.net/camo.github.com/a574f127aa61785566582352d55d8bee86905e42/687474703a2f2f692e696d6775722e636f6d2f4e6e7372662e706e67 EOT;
 Hakase "Hakase" <<<EOT https://a248.e.akamai.net/camo.github.com/67824014fac10907fcc092356832fdc236c96c34/687474703a2f2f692e696d6775722e636f6d2f54424849362e706e67 EOT;
-Hatsune Miku "Hatsune Miku" <<<EOT https://a248.e.akamai.net/camo.github.com/ef94f4923af8c884b26f5ac89f6dfef9dab9db51/687474703a2f2f692e696d6775722e636f6d2f554c6b737a2e706e67 EOT;
-Hatsune Miku (big) "Hatsune Miku (big)" <<<EOT https://a248.e.akamai.net/camo.github.com/18205a25f0d942360e0cf7e3dfc7c4e48185d3c6/687474703a2f2f692e696d6775722e636f6d2f483170675a2e706e67 EOT;
-Hatsune Miku (small) "Hatsune Miku (small)" <<<EOT https://a248.e.akamai.net/camo.github.com/69368113854df15919e05f0979830774a7370b18/687474703a2f2f692e696d6775722e636f6d2f764533464a2e706e67 EOT;
-Hirasawa Yui "Hirasawa Yui" <<<EOT https://a248.e.akamai.net/camo.github.com/cab3a998edc28cea920bdd013dfee33d4a575935/687474703a2f2f692e696d6775722e636f6d2f734c31556f2e706e67 EOT;
-Ika Musume "Ika Musume" <<<EOT https://a248.e.akamai.net/camo.github.com/1b8ad6e86154909f5852cb80d27ca2fdcb551164/687474703a2f2f692e696d6775722e636f6d2f75556847472e706e67 EOT;
-Ika Musume 2 "Ika Musume 2" <<<EOT https://a248.e.akamai.net/camo.github.com/3e73ee0c65fbbae962c8e2977dd59c3d36e20039/687474703a2f2f692e696d6775722e636f6d2f724b54374c2e706e67 EOT;
-Iwakura Lain "Iwakura Lain" <<<EOT https://a248.e.akamai.net/camo.github.com/64b21c7dbd3d95e634212b4aff8739ce1ccd3789/687474703a2f2f692e696d6775722e636f6d2f41666a47392e706e67 EOT;
-Iwakura Lain 2 "Iwakura Lain 2" <<<EOT https://a248.e.akamai.net/camo.github.com/85f4c8a772f21291706d7be96831480ccc3598fe/687474703a2f2f692e696d6775722e636f6d2f6849424c612e706e67 EOT;
-K-On! Girls (Tsumugi "K-On! Girls (Tsumugi/Yui/Mio/Ritsu) 	" <<<EOT https://a248.e.akamai.net/camo.github.com/f15efdb26afae135c8a01e5cfd26f4070cf1bf72/687474703a2f2f692e696d6775722e636f6d2f53633150612e706e67 EOT;
-Kagamine Rin "Kagamine Rin" <<<EOT https://a248.e.akamai.net/camo.github.com/3517c7cacb3dec30b45729a7dae30f136778fc80/687474703a2f2f692e696d6775722e636f6d2f66585864322e706e67 EOT;
-Kaname Madoka "Kaname Madoka" <<<EOT https://a248.e.akamai.net/camo.github.com/0c9bb092c7147f5f751cb6a28ba0ea4605640f35/687474703a2f2f692e696d6775722e636f6d2f345048736c2e706e67 EOT;
-Kinomoto Sakura "Kinomoto Sakura" <<<EOT https://a248.e.akamai.net/camo.github.com/84ea19ed9482094a859571ad9edf31fa574fe0fd/687474703a2f2f692e696d6775722e636f6d2f566530686c2e706e67 EOT;
-Kirino Kosaka & Ruri "Kirino Kosaka & Ruri Goko" <<<EOT https://a248.e.akamai.net/camo.github.com/dedbc3ac0a47ef8a71ae0a25d9e7edec318ccfd4/687474703a2f2f692e696d6775722e636f6d2f4d47614c722e706e67 EOT;
-Koiwai Yotsuba "Koiwai Yotsuba" <<<EOT https://a248.e.akamai.net/camo.github.com/5de34b5a1a4c2b46183c0207cc69260b4b6dafbb/687474703a2f2f692e696d6775722e636f6d2f314d79444d2e706e67 EOT;
-Kotobuki Tsumugi "Kotobuki Tsumugi" <<<EOT https://a248.e.akamai.net/camo.github.com/177777f9f24ae001adb3468e0897747cd8367d77/687474703a2f2f692e696d6775722e636f6d2f667a6862482e706e67 EOT;
-Kyouko Sakura "Kyouko Sakura" <<<EOT https://a248.e.akamai.net/camo.github.com/374612ab709c28b53055ccabee3be1c6f9f310ba/687474703a2f2f692e696d6775722e636f6d2f37384853392e706e67 EOT;
-Li Syaoran "Li Syaoran" <<<EOT https://a248.e.akamai.net/camo.github.com/25a87fe2099f9f80f15e3780281b117039ccc7a4/687474703a2f2f692e696d6775722e636f6d2f47795375792e706e67 EOT;
+Hatsune-Miku "Hatsune Miku" <<<EOT https://a248.e.akamai.net/camo.github.com/ef94f4923af8c884b26f5ac89f6dfef9dab9db51/687474703a2f2f692e696d6775722e636f6d2f554c6b737a2e706e67 EOT;
+Hatsune-Miku--big- "Hatsune Miku (big)" <<<EOT https://a248.e.akamai.net/camo.github.com/18205a25f0d942360e0cf7e3dfc7c4e48185d3c6/687474703a2f2f692e696d6775722e636f6d2f483170675a2e706e67 EOT;
+Hatsune-Miku--small- "Hatsune Miku (small)" <<<EOT https://a248.e.akamai.net/camo.github.com/69368113854df15919e05f0979830774a7370b18/687474703a2f2f692e696d6775722e636f6d2f764533464a2e706e67 EOT;
+Hirasawa-Yui "Hirasawa Yui" <<<EOT https://a248.e.akamai.net/camo.github.com/cab3a998edc28cea920bdd013dfee33d4a575935/687474703a2f2f692e696d6775722e636f6d2f734c31556f2e706e67 EOT;
+Ika-Musume "Ika Musume" <<<EOT https://a248.e.akamai.net/camo.github.com/1b8ad6e86154909f5852cb80d27ca2fdcb551164/687474703a2f2f692e696d6775722e636f6d2f75556847472e706e67 EOT;
+Ika-Musume-2 "Ika Musume 2" <<<EOT https://a248.e.akamai.net/camo.github.com/3e73ee0c65fbbae962c8e2977dd59c3d36e20039/687474703a2f2f692e696d6775722e636f6d2f724b54374c2e706e67 EOT;
+Iwakura-Lain "Iwakura Lain" <<<EOT https://a248.e.akamai.net/camo.github.com/64b21c7dbd3d95e634212b4aff8739ce1ccd3789/687474703a2f2f692e696d6775722e636f6d2f41666a47392e706e67 EOT;
+Iwakura-Lain-2 "Iwakura Lain 2" <<<EOT https://a248.e.akamai.net/camo.github.com/85f4c8a772f21291706d7be96831480ccc3598fe/687474703a2f2f692e696d6775722e636f6d2f6849424c612e706e67 EOT;
+K-On--Girls--Tsumugi "K-On! Girls (Tsumugi/Yui/Mio/Ritsu) 	" <<<EOT https://a248.e.akamai.net/camo.github.com/f15efdb26afae135c8a01e5cfd26f4070cf1bf72/687474703a2f2f692e696d6775722e636f6d2f53633150612e706e67 EOT;
+Kagamine-Rin "Kagamine Rin" <<<EOT https://a248.e.akamai.net/camo.github.com/3517c7cacb3dec30b45729a7dae30f136778fc80/687474703a2f2f692e696d6775722e636f6d2f66585864322e706e67 EOT;
+Kaname-Madoka "Kaname Madoka" <<<EOT https://a248.e.akamai.net/camo.github.com/0c9bb092c7147f5f751cb6a28ba0ea4605640f35/687474703a2f2f692e696d6775722e636f6d2f345048736c2e706e67 EOT;
+Kinomoto-Sakura "Kinomoto Sakura" <<<EOT https://a248.e.akamai.net/camo.github.com/84ea19ed9482094a859571ad9edf31fa574fe0fd/687474703a2f2f692e696d6775722e636f6d2f566530686c2e706e67 EOT;
+Kirino-Kosaka---Ruri "Kirino Kosaka & Ruri Goko" <<<EOT https://a248.e.akamai.net/camo.github.com/dedbc3ac0a47ef8a71ae0a25d9e7edec318ccfd4/687474703a2f2f692e696d6775722e636f6d2f4d47614c722e706e67 EOT;
+Koiwai-Yotsuba "Koiwai Yotsuba" <<<EOT https://a248.e.akamai.net/camo.github.com/5de34b5a1a4c2b46183c0207cc69260b4b6dafbb/687474703a2f2f692e696d6775722e636f6d2f314d79444d2e706e67 EOT;
+Kotobuki-Tsumugi "Kotobuki Tsumugi" <<<EOT https://a248.e.akamai.net/camo.github.com/177777f9f24ae001adb3468e0897747cd8367d77/687474703a2f2f692e696d6775722e636f6d2f667a6862482e706e67 EOT;
+Kyouko-Sakura "Kyouko Sakura" <<<EOT https://a248.e.akamai.net/camo.github.com/374612ab709c28b53055ccabee3be1c6f9f310ba/687474703a2f2f692e696d6775722e636f6d2f37384853392e706e67 EOT;
+Li-Syaoran "Li Syaoran" <<<EOT https://a248.e.akamai.net/camo.github.com/25a87fe2099f9f80f15e3780281b117039ccc7a4/687474703a2f2f692e696d6775722e636f6d2f47795375792e706e67 EOT;
 Link "Link" <<<EOT https://a248.e.akamai.net/camo.github.com/a4719a19d29fe52074165a1a5a8afc4370b8ee6a/687474703a2f2f692e696d6775722e636f6d2f4f795457552e706e67 EOT;
-Nagato Yuki "Nagato Yuki" <<<EOT https://a248.e.akamai.net/camo.github.com/8893e60f309e64727855a049c85324d9961bcf44/687474703a2f2f692e696d6775722e636f6d2f5641576e572e706e67 EOT;
-Nakano Azusa "Nakano Azusa" <<<EOT https://a248.e.akamai.net/camo.github.com/706bf741b574f83a4ac5ac57df206efec90de399/687474703a2f2f692e696d6775722e636f6d2f5a387737322e706e67 EOT;
-Nodoka Miyazaki "Nodoka Miyazaki" <<<EOT https://a248.e.akamai.net/camo.github.com/758a8876a525316d0ec83e71515871ae045dedff/687474703a2f2f692e696d6775722e636f6d2f595a687a752e706e67 EOT;
-Patachu Knowledge "Patachu Knowledge" <<<EOT https://a248.e.akamai.net/camo.github.com/5e40bec3e6af1305f47b88dc25cf580831dce1f5/687474703a2f2f692e696d6775722e636f6d2f5a32465a532e706e67 EOT;
-Samus Aran "Samus Aran" <<<EOT https://a248.e.akamai.net/camo.github.com/e7fd0fcbb3fd991e1ec6a0183a512b0cabb6f86a/687474703a2f2f692e696d6775722e636f6d2f333476694a2e706e67 EOT;
+Nagato-Yuki "Nagato Yuki" <<<EOT https://a248.e.akamai.net/camo.github.com/8893e60f309e64727855a049c85324d9961bcf44/687474703a2f2f692e696d6775722e636f6d2f5641576e572e706e67 EOT;
+Nakano-Azusa "Nakano Azusa" <<<EOT https://a248.e.akamai.net/camo.github.com/706bf741b574f83a4ac5ac57df206efec90de399/687474703a2f2f692e696d6775722e636f6d2f5a387737322e706e67 EOT;
+Nodoka-Miyazaki "Nodoka Miyazaki" <<<EOT https://a248.e.akamai.net/camo.github.com/758a8876a525316d0ec83e71515871ae045dedff/687474703a2f2f692e696d6775722e636f6d2f595a687a752e706e67 EOT;
+Patachu-Knowledge "Patachu Knowledge" <<<EOT https://a248.e.akamai.net/camo.github.com/5e40bec3e6af1305f47b88dc25cf580831dce1f5/687474703a2f2f692e696d6775722e636f6d2f5a32465a532e706e67 EOT;
+Samus-Aran "Samus Aran" <<<EOT https://a248.e.akamai.net/camo.github.com/e7fd0fcbb3fd991e1ec6a0183a512b0cabb6f86a/687474703a2f2f692e696d6775722e636f6d2f333476694a2e706e67 EOT;
 Seraphim "Seraphim" <<<EOT https://a248.e.akamai.net/camo.github.com/ddc6e8553c03194f8cc990c92f42b7387246f258/687474703a2f2f692e696d6775722e636f6d2f43424e50312e706e67 EOT;
 Shana "Shana" <<<EOT https://a248.e.akamai.net/camo.github.com/6f1c77963cd7d2d2e02721604170e5fd73303ec2/687474703a2f2f692e696d6775722e636f6d2f317a4430552e706e67 EOT;
-Suzumiya Haruhi "Suzumiya Haruhi" <<<EOT https://a248.e.akamai.net/camo.github.com/0e34e29a100a706bd6cecf7423d08003b6df41b8/687474703a2f2f692e696d6775722e636f6d2f69566c35642e706e67 EOT;
-Suzumiya Haruhi 2 "Suzumiya Haruhi 2" <<<EOT https://a248.e.akamai.net/camo.github.com/8956885629e7cb35dc849658927d875539304d68/687474703a2f2f692e696d6775722e636f6d2f72573951362e706e67 EOT;
-Yoko Littner "Yoko Littner" <<<EOT https://a248.e.akamai.net/camo.github.com/9074d4ffa3fba065cf5ff53d288faeb9aa87d591/687474703a2f2f692e696d6775722e636f6d2f33676f516d2e706e67 EOT;
-Sem mascote "Sem mascote" <<<EOT https://a248.e.akamai.net/camo.github.com/18205a25f0d942360e0cf7e3dfc7c4e48185d3c6/687474703a2f2f692e696d6775722e636f6d2f483170675a2e706e6 EOT;
+Suzumiya-Haruhi "Suzumiya Haruhi" <<<EOT https://a248.e.akamai.net/camo.github.com/0e34e29a100a706bd6cecf7423d08003b6df41b8/687474703a2f2f692e696d6775722e636f6d2f69566c35642e706e67 EOT;
+Suzumiya-Haruhi-2 "Suzumiya Haruhi 2" <<<EOT https://a248.e.akamai.net/camo.github.com/8956885629e7cb35dc849658927d875539304d68/687474703a2f2f692e696d6775722e636f6d2f72573951362e706e67 EOT;
+Yoko-Littner "Yoko Littner" <<<EOT https://a248.e.akamai.net/camo.github.com/9074d4ffa3fba065cf5ff53d288faeb9aa87d591/687474703a2f2f692e696d6775722e636f6d2f33676f516d2e706e67 EOT;
+Sem-mascote "Sem mascote" <<<EOT https://a248.e.akamai.net/camo.github.com/18205a25f0d942360e0cf7e3dfc7c4e48185d3c6/687474703a2f2f692e696d6775722e636f6d2f483170675a2e706e6 EOT;
 
 	mascote-custom-dropdown "Custom" <<<EOT /*[[mascote-custom]]*\/ EOT;
 }

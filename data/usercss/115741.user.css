@@ -6,31 +6,31 @@
 @version        2015629.16.24
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
-@advanced dropdown Hide Logo "Hide the logo?" {
-	No Hide Logo "No*" <<<EOT  EOT;
-Yes Hide Logo "Yes" <<<EOT 	.logo {
+@advanced dropdown Hide-Logo "Hide the logo?" {
+	No-Hide-Logo "No*" <<<EOT  EOT;
+Yes-Hide-Logo "Yes" <<<EOT 	.logo {
 		visibility: hidden;
 		margin-bottom: -6.8em;
 	} EOT;
 
 }
-@advanced dropdown Custom Logo "Custom logo? 586x70 (requires No to hide logo) " {
-Dark Logo "Dark*" <<<EOT https://i.imgur.com/yogSkp1.gif EOT;
-Purple Logo "Purple" <<<EOT http://hackforums.net/images/modern_pl/logo_pl.gif EOT;
-Blue Logo "Blue" <<<EOT http://hackforums.net/images/modern_bl/logo_bl.gif EOT;
-Old Logo "Old" <<<EOT http://imgur.com/KVXkF.jpg EOT;
+@advanced dropdown Custom-Logo "Custom logo? 586x70 (requires No to hide logo) " {
+Dark-Logo "Dark*" <<<EOT https://i.imgur.com/yogSkp1.gif EOT;
+Purple-Logo "Purple" <<<EOT http://hackforums.net/images/modern_pl/logo_pl.gif EOT;
+Blue-Logo "Blue" <<<EOT http://hackforums.net/images/modern_bl/logo_bl.gif EOT;
+Old-Logo "Old" <<<EOT http://imgur.com/KVXkF.jpg EOT;
 
-	Custom Logo-custom-dropdown "Custom" <<<EOT /*[[Custom Logo-custom]]*\/ EOT;
+	Custom-Logo-custom-dropdown "Custom" <<<EOT /*[[Custom-Logo-custom]]*\/ EOT;
 }
-@advanced text Custom Logo-custom "Custom logo? 586x70 (requires No to hide logo)  (Custom)" "https://example.com/image.png"
-@advanced dropdown BG Image "Background image" {
-BG Image Grey "Grey gradient*" <<<EOT https://i.imgur.com/neXNtn6.jpg EOT;
-BG Image Stars "Starry night" <<<EOT https://i.imgur.com/DV8LqNN.jpg EOT;
-BG Image Pink Space "Pink space" <<<EOT https://i.imgur.com/TjTLDkX.jpg EOT;
+@advanced text Custom-Logo-custom "Custom logo? 586x70 (requires No to hide logo)  (Custom)" "https://example.com/image.png"
+@advanced dropdown BG-Image "Background image" {
+BG-Image-Grey "Grey gradient*" <<<EOT https://i.imgur.com/neXNtn6.jpg EOT;
+BG-Image-Stars "Starry night" <<<EOT https://i.imgur.com/DV8LqNN.jpg EOT;
+BG-Image-Pink-Space "Pink space" <<<EOT https://i.imgur.com/TjTLDkX.jpg EOT;
 
-	BG Image-custom-dropdown "Custom" <<<EOT /*[[BG Image-custom]]*\/ EOT;
+	BG-Image-custom-dropdown "Custom" <<<EOT /*[[BG-Image-custom]]*\/ EOT;
 }
-@advanced text BG Image-custom "Background image (Custom)" "https://example.com/image.png"
+@advanced text BG-Image-custom "Background image (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -42,7 +42,7 @@ BG Image Pink Space "Pink space" <<<EOT https://i.imgur.com/TjTLDkX.jpg EOT;
 	*/
 
 	body {
-		background: url(/*[[BG Image]]*/) no-repeat center center fixed; 
+		background: url(/*[[BG-Image]]*/) no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -103,7 +103,7 @@ BG Image Pink Space "Pink space" <<<EOT https://i.imgur.com/TjTLDkX.jpg EOT;
 		background: #171717;
 	}
 
-	/*[[Hide Logo]]*/
+	/*[[Hide-Logo]]*/
 
 	/*
 	 * Credit to Cruzifer for this
@@ -113,6 +113,6 @@ BG Image Pink Space "Pink space" <<<EOT https://i.imgur.com/TjTLDkX.jpg EOT;
 		width: 0;
 		height: 0;
 		padding: 35px 293px;
-		background: url(/*[[Custom Logo]]*/) !important;
+		background: url(/*[[Custom-Logo]]*/) !important;
 	}
 }

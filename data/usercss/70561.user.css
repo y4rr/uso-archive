@@ -8,18 +8,18 @@
 @preprocessor   uso
 @advanced color x-wallcolor-x "Choose background color" #454545
 @advanced dropdown x-wallpaper-x "Choose wallpaper (or keep choosed color above)" {
-Pier to nowhere (def "Pier to nowhere (default)*" <<<EOT http://i.imgur.com/yEjqwN0.jpg EOT;
+Pier-to-nowhere--def "Pier to nowhere (default)*" <<<EOT http://i.imgur.com/yEjqwN0.jpg EOT;
 Paint "No wallpaper - keep background color above" <<<EOT http://This.Is.No.URL.com/NoPic/Nonsense.jpg EOT;
-Pier to nowhere (gre "Pier to nowhere (grey scale)" <<<EOT http://wallpaperus.org/wallpapers/05/206/fog-pier-2560x1440-wallpaper-897967.jpg EOT;
-Binary fog "Binary fog" <<<EOT https://image.ibb.co/jDFfPv/Binary_Fog.jpg EOT;
-Dark gray by Phauxin "Dark gray by Phauxington" <<<EOT http://fc04.deviantart.net/fs70/f/2012/147/d/1/dark_gray_by_phauxington-d518yih.jpg EOT;
-Blue blur "Blue blur" <<<EOT http://i.imgur.com/QzhNzGn.jpg EOT;
-Oklahoma field "Oklahoma field" <<<EOT http://i.imgur.com/urbAbSa.jpg EOT;
-Cloudy nature "Cloudy nature" <<<EOT http://i.imgur.com/d0BKXc8.jpg EOT;
+Pier-to-nowhere--gre "Pier to nowhere (grey scale)" <<<EOT http://wallpaperus.org/wallpapers/05/206/fog-pier-2560x1440-wallpaper-897967.jpg EOT;
+Binary-fog "Binary fog" <<<EOT https://image.ibb.co/jDFfPv/Binary_Fog.jpg EOT;
+Dark-gray-by-Phauxin "Dark gray by Phauxington" <<<EOT http://fc04.deviantart.net/fs70/f/2012/147/d/1/dark_gray_by_phauxington-d518yih.jpg EOT;
+Blue-blur "Blue blur" <<<EOT http://i.imgur.com/QzhNzGn.jpg EOT;
+Oklahoma-field "Oklahoma field" <<<EOT http://i.imgur.com/urbAbSa.jpg EOT;
+Cloudy-nature "Cloudy nature" <<<EOT http://i.imgur.com/d0BKXc8.jpg EOT;
 Poppy "Poppy" <<<EOT http://i.imgur.com/sBmYU1B.jpg EOT;
-Beach b/w "Beach b/w" <<<EOT http://i.imgur.com/V5Rb3ap.jpg EOT;
-Discovering space2 b "Discovering space2 by Matkraken" <<<EOT http://fc02.deviantart.net/fs70/f/2010/154/6/6/Discovering_space2_by_Matkraken.jpg EOT;
-Ocean waves at night "Ocean waves at night (grey scale)" <<<EOT http://i.imgur.com/Ed9M2if.jpg EOT;
+Beach-b-w "Beach b/w" <<<EOT http://i.imgur.com/V5Rb3ap.jpg EOT;
+Discovering-space2-b "Discovering space2 by Matkraken" <<<EOT http://fc02.deviantart.net/fs70/f/2010/154/6/6/Discovering_space2_by_Matkraken.jpg EOT;
+Ocean-waves-at-night "Ocean waves at night (grey scale)" <<<EOT http://i.imgur.com/Ed9M2if.jpg EOT;
 Notchtop "Notchtop" <<<EOT http://imgur.com/HKxEAtx.jpg EOT;
 
 	x-wallpaper-x-custom-dropdown "Custom" <<<EOT /*[[x-wallpaper-x-custom]]*\/ EOT;
@@ -31,7 +31,7 @@ Notchtop "Notchtop" <<<EOT http://imgur.com/HKxEAtx.jpg EOT;
 @advanced text x-columns-x "Set number of colums, default is 5 columns" "5"
 @advanced text x-height-x "Adjust thumbnail's size (height), default value is 153px" "153"
 @advanced dropdown x-firefoxlogo-x "Add a Firefox logo on empty thumbnails" {
-	yes (d) "yes (d)*" <<<EOT .newtab-cell:empty {
+	yes--d- "yes (d)*" <<<EOT .newtab-cell:empty {
     outline: none !important; 
     background: linear-gradient(to bottom,rgba(0,0,0,.05) , rgba(0,0,0,0.0) 90%), url(data:image/png;base64,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) center center no-repeat !important;} EOT;
 no "no" <<<EOT .newtab-cell:empty {
@@ -39,7 +39,7 @@ no "no" <<<EOT .newtab-cell:empty {
 
 }
 @advanced dropdown x-chooseframe-x "Redesign (or hide) \"search box\"" {
-	convex frame (d) "convex frame (d)*" <<<EOT /* CONVEX frame *\/
+	convex-frame--d- "convex frame (d)*" <<<EOT /* CONVEX frame *\/
 #newtab-search-container {
     display: inherit !important;}
 
@@ -55,7 +55,7 @@ no "no" <<<EOT .newtab-cell:empty {
     border-radius: 0px !important;
     box-shadow: 1px 1px 5px rgba(50,50,50,.6) !important;
     background: linear-gradient(to bottom, rgba(50,50,50,0.35) 0%, rgba(255,255,255,0.36) 40%, rgba(50,50,50,0.4) 100%) !important;}  EOT;
-flat frame "flat frame" <<<EOT /* FLAT frame *\/
+flat-frame "flat frame" <<<EOT /* FLAT frame *\/
 #newtab-search-container {
     display: inherit !important;}
 
@@ -71,7 +71,7 @@ flat frame "flat frame" <<<EOT /* FLAT frame *\/
     border: 1px solid rgba(220,220,220,.13) !important; 
     border-top: 1px solid rgba(255,255,255,.21) !important;
     box-shadow: 1px 1px 5px rgba(40,40,40,.6) !important;} EOT;
-no outer frame "no outer frame" <<<EOT /* NO frame *\/
+no-outer-frame "no outer frame" <<<EOT /* NO frame *\/
 #newtab-search-container {
     display: inherit !important;}
 
@@ -85,7 +85,7 @@ no outer frame "no outer frame" <<<EOT /* NO frame *\/
     background:none!important;
     border: none!important;
     box-shadow: none !important;} EOT;
-hide searchbox "hide searchbox" <<<EOT /*Hide search bar *\/
+hide-searchbox "hide searchbox" <<<EOT /*Hide search bar *\/
 #newtab-search-container {
     display: none !important;}
 

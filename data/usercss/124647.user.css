@@ -6,7 +6,7 @@
 @version        201737.6.0
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
-@advanced dropdown . "검색페이지 실시간 검색순위" {
+@advanced dropdown - "검색페이지 실시간 검색순위" {
 	1 "숨기기*" <<<EOT @-moz-document domain("naver.com"){
 .sub_pack{display:none!important}
 body:not(.tabsch_image) #main_pack{width:1115px!important}} EOT;
@@ -51,4 +51,4 @@ div.my_area {position:absolute!important;left:0px!important}
 @-moz-document domain("my.naver.com"){
 .profile .user_area{border-bottom:none!important}}
 
-/*[[.]]*/
+/*[[-]]*/

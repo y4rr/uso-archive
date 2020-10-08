@@ -6,7 +6,7 @@
 @version        2016129.7.30
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown Color Scheme "What color scheme would you like?" {
+@advanced dropdown Color-Scheme "What color scheme would you like?" {
 	Black "Black*" <<<EOT body {
     background: #080808 !Important;
     font-family: Helvetica, Arial, Verdana, sans-serif!important;
@@ -2669,22 +2669,22 @@ border:0  !important;
 } EOT;
 
 }
-@advanced dropdown Header Background "What header background would you like?" {
-	Dark Wood Tile "Dark Wood Tile*" <<<EOT #header {background:#333 url(http://i.imgur.com/GoNhEMM.jpg) !important;} EOT;
-Gray Oak "Gray Oak" <<<EOT #header {background:#333 url(http://i.imgur.com/aSNfjNc.jpg) !important;} EOT;
-Light Wood "Light Wood" <<<EOT #header {background:#333 url(http://i.imgur.com/DlXmrRQ.png) !important;} EOT;
-Varnished Oak Wood "Varnished Oak Wood" <<<EOT #header {background:#333 url(http://i.imgur.com/iLjnjUb.jpg) !important;} EOT;
-Space Battles by ful "Space Battles by fullyillustrated.com" <<<EOT #header {
+@advanced dropdown Header-Background "What header background would you like?" {
+	Dark-Wood-Tile "Dark Wood Tile*" <<<EOT #header {background:#333 url(http://i.imgur.com/GoNhEMM.jpg) !important;} EOT;
+Gray-Oak "Gray Oak" <<<EOT #header {background:#333 url(http://i.imgur.com/aSNfjNc.jpg) !important;} EOT;
+Light-Wood "Light Wood" <<<EOT #header {background:#333 url(http://i.imgur.com/DlXmrRQ.png) !important;} EOT;
+Varnished-Oak-Wood "Varnished Oak Wood" <<<EOT #header {background:#333 url(http://i.imgur.com/iLjnjUb.jpg) !important;} EOT;
+Space-Battles-by-ful "Space Battles by fullyillustrated.com" <<<EOT #header {
     background-image: url(http://i.imgur.com/0U7n4wl.jpg);
 }
 
 #header-img {
 background:url(http://i.imgur.com/jhmxSMc.png) no-repeat !important;
 } EOT;
-Gray Linen "Gray Linen" <<<EOT #header {background:#333 url(http://i.imgur.com/PUWKWER.png) !important;}
+Gray-Linen "Gray Linen" <<<EOT #header {background:#333 url(http://i.imgur.com/PUWKWER.png) !important;}
 
  EOT;
-Dark Denim "Dark Denim" <<<EOT #header {
+Dark-Denim "Dark Denim" <<<EOT #header {
 background:#333 url(http://i.imgur.com/ri6akWT.png) !important;
 }
  EOT;
@@ -2693,7 +2693,7 @@ Black "Black" <<<EOT #header {background: #000 !important;}
 #header-img {
 background:url(http://i.imgur.com/jhmxSMc.png) no-repeat !important;
 } EOT;
-Merry Christmas! "Merry Christmas!" <<<EOT #header {
+Merry-Christmas- "Merry Christmas!" <<<EOT #header {
 background-image: url(https://i.imgur.com/5hqmtQ4.jpg);
 }
 
@@ -2701,7 +2701,7 @@ background-image: url(https://i.imgur.com/5hqmtQ4.jpg);
 background:url(http://i.imgur.com/eLDJaww.png) no-repeat !important;
 background-size:110px 42px !important;
 } EOT;
-Happy Halloween! "Happy Halloween!" <<<EOT #header {
+Happy-Halloween- "Happy Halloween!" <<<EOT #header {
 background:#333 url(http://i.imgur.com/jnxlhMk.jpg) !important;
 }
 
@@ -2713,35 +2713,35 @@ background-size:112px 45px !important;
 
 }
 @advanced dropdown Sidebar "Do you want the multireddit sidebar shown?" {
-	Yes to sidebar "Yes*" <<<EOT .listing-chooser {
+	Yes-to-sidebar "Yes*" <<<EOT .listing-chooser {
 z-index:9 !Important;
 }
 
 .listing-chooser .grippy {
 border-left:none !important;
 } EOT;
-No to sidebar "No" <<<EOT .listing-chooser {
+No-to-sidebar "No" <<<EOT .listing-chooser {
 display:none !important;
 } EOT;
 
 }
-@advanced dropdown comment lines "Do you want comment guide lines?" {
-	Yes to comment lines "Yes (slightly easier to follow comments)*" <<<EOT  EOT;
-No to comment lines "No (slightly cleaner look. Also choose if using RES comment boxes)" <<<EOT .commentarea .sitetable .thing .child {
+@advanced dropdown comment-lines "Do you want comment guide lines?" {
+	Yes-to-comment-lines "Yes (slightly easier to follow comments)*" <<<EOT  EOT;
+No-to-comment-lines "No (slightly cleaner look. Also choose if using RES comment boxes)" <<<EOT .commentarea .sitetable .thing .child {
 border:none !important;
 } EOT;
 
 }
 @advanced dropdown Visited "Do you want visited links to change color?" {
-	Yes to visited links "Yes*" <<<EOT .title a:visited {
+	Yes-to-visited-links "Yes*" <<<EOT .title a:visited {
 color:#4c4c4c !important;
 }	 EOT;
-No to visited links "No (a bit of privacy against shoulder snoopers at work)" <<<EOT  EOT;
+No-to-visited-links "No (a bit of privacy against shoulder snoopers at work)" <<<EOT  EOT;
 
 }
 @advanced dropdown mail "Mail icon scrollable with page?" {
-	No mail icon scroll "No (Choose also if using RES because RES already has this feature))*" <<<EOT  EOT;
-Yes to mail icon scr "Yes (sometimes convenient" <<<EOT #mail {
+	No-mail-icon-scroll "No (Choose also if using RES because RES already has this feature))*" <<<EOT  EOT;
+Yes-to-mail-icon-scr "Yes (sometimes convenient" <<<EOT #mail {
 position:fixed !important;
 top:3em !important;
 right:0 !important;
@@ -2750,15 +2750,15 @@ padding:2em  !important;
 
 }
 @advanced dropdown Domain "Do you want the domain name displayed next to title links?" {
-	No domain display "No (slightly cleaner look)*" <<<EOT .domain {
+	No-domain-display "No (slightly cleaner look)*" <<<EOT .domain {
 display:none !important;
 } EOT;
-domain display "Yes (reddit default)" <<<EOT  EOT;
+domain-display "Yes (reddit default)" <<<EOT  EOT;
 
 }
 @advanced dropdown trending "Display trending subreddits?" {
 	trending "Yes*" <<<EOT  EOT;
-no trending "No" <<<EOT .trending-subreddits {
+no-trending "No" <<<EOT .trending-subreddits {
 display:none !important;
 } EOT;
 
@@ -2775,11 +2775,11 @@ display:none !important;
 
 /*[[Domain]]*/
 
-/*[[Color Scheme]]*/
+/*[[Color-Scheme]]*/
 
-/*[[Header Background]]*/
+/*[[Header-Background]]*/
 
-/*[[comment lines]]*/
+/*[[comment-lines]]*/
 
 /*[[mail]]*/
 

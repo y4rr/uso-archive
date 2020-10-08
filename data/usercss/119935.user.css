@@ -7,12 +7,12 @@
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown Description "動画詳細" {
-	表示しない "表示しない*" <<<EOT /* 動画詳細 非表示時 *\/
+	----- "表示しない*" <<<EOT /* 動画詳細 非表示時 *\/
 
 section.matrix .item.focus .iconPayment, section.matrix .item.focus .itemDescription {
 	display: none!important;
 } EOT;
-常に表示する "常に表示する" <<<EOT /* 動画詳細表示時 *\/
+------ "常に表示する" <<<EOT /* 動画詳細表示時 *\/
 section.matrix li.item_row .item_cell {
 	height:276px!important;
 }
@@ -53,8 +53,8 @@ section.matrix .item.nrn-movie-info-toggle-container {
 
 }
 @advanced dropdown Comment "マウスオーバー時のコメント" {
-	表示する "表示する(niconicoで設定する)*" <<<EOT  EOT;
-表示しない "表示しない" <<<EOT /* コメント強制非表示 *\/
+	---- "表示する(niconicoで設定する)*" <<<EOT  EOT;
+----- "表示しない" <<<EOT /* コメント強制非表示 *\/
 
 section.matrix .item:hover .last_res_body {
 	display: none!important;

@@ -9,12 +9,12 @@
 @advanced color Online "Online" #3AA611
 @advanced color Offline "Offline" #C52C2C
 @advanced color Nav "Navigation Bar" #2C2C2C
-@advanced color Page Background "Page Background" #666666
+@advanced color Page-Background "Page Background" #666666
 @advanced color Blocks "Blocks(Dark Grey Elements)" #333333
-@advanced color Text Color "Text Color" #F6F6F6
-@advanced color Copy Button Hover "Copy Button Hover" #262626
-@advanced color PageNav Button "Page Navigation Buttons" #444444
-@advanced color PageNav Button Hover "PageNav Button Hover" #242424
+@advanced color Text-Color "Text Color" #F6F6F6
+@advanced color Copy-Button-Hover "Copy Button Hover" #262626
+@advanced color PageNav-Button "Page Navigation Buttons" #444444
+@advanced color PageNav-Button-Hover "PageNav Button Hover" #242424
 
 ==/UserStyle== */
 @-moz-document domain("minecraftservers.org") {
@@ -41,7 +41,7 @@
 
 /*Body Background*/
 #main, #header, .brand-banner, .second-banner, .page-server, body {
-	background: /*[[Page Background]]*/ !important;
+	background: /*[[Page-Background]]*/ !important;
 }
 
 /*Blocks*/
@@ -52,22 +52,22 @@
 
 /*Text Color*/
 h1, h2, h3, h4, h5, h6, p, a, .count {
-	color: /*[[Text Color]]*/ !important;
+	color: /*[[Text-Color]]*/ !important;
 }
 
 /*Copy Button*/
 .copy-action:hover, .zeroclipboard-is-hover {
-	background: /*[[Copy Button Hover]]*/ !important;
+	background: /*[[Copy-Button-Hover]]*/ !important;
 }
 
 /*Bottom Page Navigation*/
 .current-page, .pagination li:not(.current-page):hover {
-	background: /*[[PageNav Button Hover]]*/ !important;
+	background: /*[[PageNav-Button-Hover]]*/ !important;
 }
 
 /*Bottom Page Navigation*/
 .pagination li:not(.current-page) {
-	background: /*[[PageNav Button]]*/ !important;
+	background: /*[[PageNav-Button]]*/ !important;
 }
 
 .vote:hover {

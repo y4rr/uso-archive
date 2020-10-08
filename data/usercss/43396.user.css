@@ -13,7 +13,7 @@ Yes "Yes" <<<EOT tab:not([pinned="true"]):not([hidden="true"]) EOT;
 }
 @advanced dropdown tmp-pt "Would you like a close button to be shown even on Tab Mix Plus protected tabs?" {
 	No "No*" <<<EOT  EOT;
-Yes, on the right "Yes, on the right" <<<EOT /* Display close button on protected tabs (Tab Mix Plus) *\/
+Yes--on-the-right "Yes, on the right" <<<EOT /* Display close button on protected tabs (Tab Mix Plus) *\/
 tab:not([pinned="true"])[protected="true"] .tab-close-button.always-right {
    display: inline !important;
 }
@@ -21,7 +21,7 @@ tab:not([pinned="true"])[protected="true"] .tab-close-button.always-right {
    margin-right: 1px !important;
    margin-left: 1px !important;
 } EOT;
-Yes, on the left "Yes, on the left" <<<EOT /* Display close button on protected tabs (Tab Mix Plus) *\/
+Yes--on-the-left "Yes, on the left" <<<EOT /* Display close button on protected tabs (Tab Mix Plus) *\/
 tab:not([pinned="true"])[protected="true"] .tab-close-button.always-left {
    display: inline !important;
 } EOT;

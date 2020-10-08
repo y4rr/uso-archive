@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown spoiler_1 "Автораскрытие спойлеров" {
-	Включено "Включено*" <<<EOT span.spoiler {
+	-------- "Включено*" <<<EOT span.spoiler {
 	background: #454545 !important;
 	color: #AEAEAE  !important;
 	opacity: 1 !important;
@@ -15,7 +15,7 @@
 .spoiler a {
 	color: #FCE326  !important;
 } EOT;
-Выключено "Выключено" <<<EOT span.spoiler {
+--------- "Выключено" <<<EOT span.spoiler {
 	background: #454545 !important;
 	color: #454545 !important;
 	opacity: .5 !important;

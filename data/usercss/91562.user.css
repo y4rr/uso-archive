@@ -8,19 +8,19 @@
 @preprocessor   uso
 @advanced color yourcolor "触发点颜色" #FEB252
 @advanced dropdown yourborder "触发点边框" {
-	实心圆点 "实心圆点*" <<<EOT 8px EOT;
-空心圆点 2px "空心圆点 2px" <<<EOT 2px EOT;
-空心圆点 3px "空心圆点 3px" <<<EOT 3px EOT;
-空心圆点 4px "空心圆点 4px" <<<EOT 4px EOT;
-空心圆点 5px "空心圆点 5px" <<<EOT 5px EOT;
+	---- "实心圆点*" <<<EOT 8px EOT;
+-----2px "空心圆点 2px" <<<EOT 2px EOT;
+-----3px "空心圆点 3px" <<<EOT 3px EOT;
+-----4px "空心圆点 4px" <<<EOT 4px EOT;
+-----5px "空心圆点 5px" <<<EOT 5px EOT;
 
 }
 @advanced dropdown youropacity "不透明度" {
-	不透明 "不透明*" <<<EOT 1 !important; EOT;
-几乎不透明 "几乎不透明" <<<EOT 0.8 !important; EOT;
-半透明 "半透明" <<<EOT 0.5 !important; EOT;
-隐约可见 "隐约可见" <<<EOT 0.2 !important; EOT;
-透明 "透明" <<<EOT 0 !important; EOT;
+	--- "不透明*" <<<EOT 1 !important; EOT;
+----- "几乎不透明" <<<EOT 0.8 !important; EOT;
+--- "半透明" <<<EOT 0.5 !important; EOT;
+---- "隐约可见" <<<EOT 0.2 !important; EOT;
+-- "透明" <<<EOT 0 !important; EOT;
 
 }
 

@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown SizingAndSidebar "Choose version:" {
-	Adaptive Width "Adaptive Width*" <<<EOT /*Sizing*\/
+	Adaptive-Width "Adaptive Width*" <<<EOT /*Sizing*\/
   #page-container, .container, .wrapper{position:relative !important;  width:95% !important; background:none !important;}
   .twitter-anywhere-tweet-box-editor{width:94% !important;}
   @media(max-width: 899px){
@@ -89,7 +89,7 @@ Original "Original" <<<EOT /*Sizing*\/
   div[data-component-term="trends"] .flex-module:hover {border-radius: 6px !important; height:220px !important; overflow: hidden !important; -moz-transition-duration: 200ms !important; -webkit-transition: 200ms !important;}
   div[data-component-term="user_recommendations"] .flex-module:hover { height: 190px !important; -moz-transition-duration: 200ms !important; -webkit-transition: 200ms !important;}
   div[data-component-term="similar_user_recommendations"] .module.profile-nav:hover {height: 175px !important; -moz-transition-duration: 200ms !important; -webkit-transition: 200ms !important;} EOT;
-Left-focused Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
+Left-focused-Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
   #page-container, .container, .wrapper{position:relative !important;  width:95% !important; background:none !important;}
   .twitter-anywhere-tweet-box-editor{width:94% !important;}
   @media(max-width: 899px){
@@ -158,14 +158,14 @@ Left-focused Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
 
 }
 @advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes)" {
-This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
+This-option-if-you-d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforLinks-custom-dropdown "Custom" <<<EOT /*[[UsernameforLinks-custom]]*\/ EOT;
 }
 @advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforLinks "Colour for links highlighting to account that you specify" #FFFF75
 @advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes)" {
-This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
+This-option-if-you-d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforTweets-custom-dropdown "Custom" <<<EOT /*[[UsernameforTweets-custom]]*\/ EOT;
 }

@@ -6,7 +6,7 @@
 @version        2017129.18.25
 @license        CC0-1.0
 @preprocessor   uso
-@advanced color #6EAAE8 "Color" #6EAAE8
+@advanced color -6EAAE8 "Color" #6EAAE8
 
 ==/UserStyle== */
 @-moz-document domain("git.epicsparrow.com") {
@@ -18,7 +18,7 @@
 	--dark-background:  #303030;
 	--dark-color:       #a0a0a0;
 
-	--enlight-color:    /*[[#6EAAE8]]*/;
+	--enlight-color:    /*[[-6EAAE8]]*/;
 
 	--clear-color:      white;
 	--clear-background: #454545;
@@ -633,7 +633,7 @@ textarea:focus,
 .search-active .navbar-form,
 .dropdown-menu-toggle input:focus{
 	border: 1px solid var(--enlight-color)!important;
-	box-shadow: 0 0 8px /*[[#6EAAE8]]*/, 0px 0px 4px 1px black inset!important;
+	box-shadow: 0 0 8px /*[[-6EAAE8]]*/, 0px 0px 4px 1px black inset!important;
 /*	text-shadow: 0px 2px 0px black,0px 0px 1px black, 0px 0px 8px rgba(58,171,240,1)!important;*/
 }
 

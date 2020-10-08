@@ -7,47 +7,47 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown left_block_2 "左侧-第二块（朋友微博认证空间啥的）" {
-	隐藏 "隐藏*" <<<EOT  .col_menu .collet_box:nth-child(3){display:none!important;} EOT;
-保留 "保留" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT  .col_menu .collet_box:nth-child(3){display:none!important;} EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown right_bottom_fix "右下角-固定区域" {
-	隐藏 "隐藏*" <<<EOT #fixLayout
+	-- "隐藏*" <<<EOT #fixLayout
 {display:none!important;} EOT;
-保留 "保留" <<<EOT  EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown gb_toolbar_vip "工具条-续费" {
-	隐藏 "隐藏*" <<<EOT .gb_toolbar .vip
+	-- "隐藏*" <<<EOT .gb_toolbar .vip
 {display:none!important;} EOT;
-保留 "保留" <<<EOT  EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown gb_toolbar_sig "工具条-测速" {
-	隐藏 "隐藏*" <<<EOT .gb_toolbar .extend
+	-- "隐藏*" <<<EOT .gb_toolbar .extend
 {display:none!important;} EOT;
-保留 "保留" <<<EOT  EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown fn_namecard "名片" {
-	隐藏 "隐藏*" <<<EOT #qzNameCardDiv
+	-- "隐藏*" <<<EOT #qzNameCardDiv
 {display:none!important;} EOT;
-保留 "保留" <<<EOT  EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown fn_checkin "右侧-签到" {
-	保留 "保留*" <<<EOT  EOT;
-隐藏 "隐藏" <<<EOT .fn_checkin{display:none!important;} EOT;
+	-- "保留*" <<<EOT  EOT;
+-- "隐藏" <<<EOT .fn_checkin{display:none!important;} EOT;
 
 }
 @advanced dropdown groupzone "左侧-群组" {
-	隐藏 "隐藏*" <<<EOT .col_menu .collet_box:nth-child(2) .box_list li:nth-child(4){display:none;} EOT;
-保留 "保留" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT .col_menu .collet_box:nth-child(2) .box_list li:nth-child(4){display:none;} EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 @advanced dropdown fn_hotbar "feed上面hotbar" {
-	隐藏 "隐藏*" <<<EOT .fn_hotbar{display:none!important} EOT;
-保留 "保留" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT .fn_hotbar{display:none!important} EOT;
+-- "保留" <<<EOT  EOT;
 
 }
 

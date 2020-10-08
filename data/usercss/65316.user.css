@@ -12,14 +12,14 @@
 }
 @advanced text loginimage-custom "[登入畫面]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown login-X "[登入畫面]背景圖片位置設定-X方向" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown login-Y "[登入畫面]背景圖片位置設定-Y方向" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown mybackgroundimage "[主頁]設定您的背景圖片" {
@@ -28,19 +28,19 @@
 }
 @advanced text mybackgroundimage-custom "[主頁]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown my-X "[主頁]背景圖片位置設定-X" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown my-Y "[主頁]背景圖片位置設定-Y" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown my-fix "[主頁]圖片是否隨卷軸移動" {
-	圖片不會隨卷軸移動 "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
-圖片會隨卷軸移動 "圖片會隨卷軸移動" <<<EOT   EOT;
+	--------- "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
+-------- "圖片會隨卷軸移動" <<<EOT   EOT;
 
 }
 @advanced dropdown otherbackgroundimage "[分頁]設定您的背景圖片" {
@@ -49,19 +49,19 @@
 }
 @advanced text otherbackgroundimage-custom "[分頁]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown other-X "[分頁]設定您的背景圖片-X方向" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown other-Y "[分頁]設定您的背景圖片-Y方向" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown other-fix "[分頁]圖片是否隨卷軸移動" {
-	圖片不會隨卷軸移動 "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
-圖片會隨卷軸移動 "圖片會隨卷軸移動" <<<EOT   EOT;
+	--------- "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
+-------- "圖片會隨卷軸移動" <<<EOT   EOT;
 
 }
 @advanced dropdown calendarlist "[活動-清單]設定您的背景圖片" {
@@ -70,19 +70,19 @@
 }
 @advanced text calendarlist-custom "[活動-清單]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown calendarlist-X "[活動-清單]設定您的背景圖片-X" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown calendarlist-Y "[活動-清單]設定您的背景圖片-Y" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown calendarlist-fix "[活動-清單]圖片是否隨卷軸移動" {
-	圖片不會隨卷軸移動 "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
-圖片會隨卷軸移動 "圖片會隨卷軸移動" <<<EOT   EOT;
+	--------- "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
+-------- "圖片會隨卷軸移動" <<<EOT   EOT;
 
 }
 @advanced dropdown message "[收件匣]設定您的背景圖片" {
@@ -91,13 +91,13 @@
 }
 @advanced text message-custom "[收件匣]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown message-X "[收件匣]設定您的背景圖片-X" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
 
 }
 @advanced dropdown message-Y "[收件匣]設定您的背景圖片-Y" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown timelineimage "[TimeLine]設定您的背景圖片" {
@@ -106,25 +106,25 @@
 }
 @advanced text timelineimage-custom "[TimeLine]設定您的背景圖片 (Custom)" "https://example.com/image.png"
 @advanced dropdown time-X "[TimeLine]設定您的背景圖片-X" {
-	置中 "置中*" <<<EOT center EOT;
-置左 "置左" <<<EOT left EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置中*" <<<EOT center EOT;
+-- "置左" <<<EOT left EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown time-Y "[TimeLine]設定您的背景圖片-Y" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
 
 }
 @advanced dropdown time-fix "[TimeLine]圖片是否隨卷軸移動" {
-	圖片不會隨卷軸移動 "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
-置右 "置右" <<<EOT right EOT;
-圖片會隨卷軸移動 "圖片會隨卷軸移動" <<<EOT   EOT;
+	--------- "圖片不會隨卷軸移動*" <<<EOT fixed EOT;
+-- "置右" <<<EOT right EOT;
+-------- "圖片會隨卷軸移動" <<<EOT   EOT;
 
 }
 @advanced dropdown shadow "陰影設定" {
-	要陰影效果 "要陰影效果*" <<<EOT 0.8 EOT;
-不要陰影效果 "不要陰影效果" <<<EOT 0 EOT;
+	----- "要陰影效果*" <<<EOT 0.8 EOT;
+------ "不要陰影效果" <<<EOT 0 EOT;
 
 }
 

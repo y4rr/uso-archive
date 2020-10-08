@@ -20,26 +20,26 @@
 }
 @advanced dropdown vListInitOpacity "Initial video list opacity" {
 	invisible "invisible*" <<<EOT 0.0 EOT;
-25% visible "25% visible" <<<EOT 0.2 EOT;
-50% visible "50% visible" <<<EOT 0.5 EOT;
+25--visible "25% visible" <<<EOT 0.2 EOT;
+50--visible "50% visible" <<<EOT 0.5 EOT;
 visible "visible" <<<EOT 1.0 EOT;
 
 }
 @advanced dropdown vListHoverOpacity "Video list hovering opacity" {
 	visible "visible*" <<<EOT 1.0 EOT;
-25% visible "25% visible" <<<EOT 0.25 EOT;
-50% visible "50% visible" <<<EOT 0.5 EOT;
-75% visible "75% visible" <<<EOT 0.75 EOT;
+25--visible "25% visible" <<<EOT 0.25 EOT;
+50--visible "50% visible" <<<EOT 0.5 EOT;
+75--visible "75% visible" <<<EOT 0.75 EOT;
 
 }
 @advanced dropdown videoListDelay "Video list show/hide delay (prevents accidental displaying)" {
-	0.5 sec "0.5 sec*" <<<EOT 0.5 EOT;
-No delay "No delay" <<<EOT 0.0 EOT;
-0.1 sec "0.1 sec" <<<EOT 0.1 EOT;
-0.25 sec "0.25 sec" <<<EOT 0.25 EOT;
-0.75 sec "0.75 sec" <<<EOT 0.75 EOT;
-1 sec "1 sec" <<<EOT 1.0 EOT;
-2 sec "2 sec" <<<EOT 2.0 EOT;
+	0-5-sec "0.5 sec*" <<<EOT 0.5 EOT;
+No-delay "No delay" <<<EOT 0.0 EOT;
+0-1-sec "0.1 sec" <<<EOT 0.1 EOT;
+0-25-sec "0.25 sec" <<<EOT 0.25 EOT;
+0-75-sec "0.75 sec" <<<EOT 0.75 EOT;
+1-sec "1 sec" <<<EOT 1.0 EOT;
+2-sec "2 sec" <<<EOT 2.0 EOT;
 
 }
 

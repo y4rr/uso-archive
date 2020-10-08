@@ -6,17 +6,17 @@
 @version        2015630.10.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color シリーズの帯の背景色 "シリーズの帯の背景色" #FFA500
-@advanced color シリーズの帯の影の色 "シリーズの帯の影の色" #CD8603
+@advanced color ---------- "シリーズの帯の背景色" #FFA500
+@advanced color ---------- "シリーズの帯の影の色" #CD8603
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document url-prefix("http://www.pixiv.net/novel/") {
   .novel-contents .imgbox .banner span {
-    background-color:/*[[シリーズの帯の背景色]]*/ !important;}
+    background-color:/*[[----------]]*/ !important;}
   .novel-contents .imgbox .banner:before {
-    border-bottom-color:/*[[シリーズの帯の影の色]]*/ !important;}
+    border-bottom-color:/*[[----------]]*/ !important;}
   .novel-contents .imgbox .banner:after {
-    border-top-color:/*[[シリーズの帯の影の色]]*/ !important;}
+    border-top-color:/*[[----------]]*/ !important;}
 }

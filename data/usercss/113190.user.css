@@ -199,7 +199,7 @@ div.block.byellow {
 
 }
 @advanced dropdown comments "Последние комментарии" {
-	+ "Добавить*" <<<EOT div.block.byellow {
+	- "Добавить*" <<<EOT div.block.byellow {
     display: none !important;
 }    
     
@@ -212,7 +212,7 @@ div.block.byellow {
 
 }
 @advanced dropdown filter "Фильтры новостей" {
-	+ "Добавить*" <<<EOT #newstabs {
+	- "Добавить*" <<<EOT #newstabs {
     margin-bottom: 30px !important;
 } EOT;
 - "Убрать" <<<EOT #newstabs {
@@ -226,7 +226,7 @@ div.block.byellow {
 
 }
 @advanced dropdown social "Социальные сети" {
-	+ "Добавить*" <<<EOT div.sub-alphabet {
+	- "Добавить*" <<<EOT div.sub-alphabet {
     display: block !important;
 }
   

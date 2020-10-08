@@ -13,14 +13,14 @@
 @advanced color usernamecolor "Username Color" #FF9900
 @advanced text yourusername "Your Username" ""
 @advanced dropdown font "Font" {
-	Arial (default) "Arial (default)*" <<<EOT Arial EOT;
-Verdana (Old GAF def "Verdana (Old GAF default)" <<<EOT Verdana EOT;
-Helvetica Neue "Helvetica Neue" <<<EOT Helvetica Neue EOT;
+	Arial--default- "Arial (default)*" <<<EOT Arial EOT;
+Verdana--Old-GAF-def "Verdana (Old GAF default)" <<<EOT Verdana EOT;
+Helvetica-Neue "Helvetica Neue" <<<EOT Helvetica Neue EOT;
 Roboto "Roboto" <<<EOT Roboto EOT;
 
 }
 @advanced dropdown textsize "Text Size" {
-	10pt (default) "10pt (default)*" <<<EOT 10 EOT;
+	10pt--default- "10pt (default)*" <<<EOT 10 EOT;
 11pt "11pt" <<<EOT 11 EOT;
 12pt "12pt" <<<EOT 12 EOT;
 13pt "13pt" <<<EOT 13 EOT;
@@ -31,7 +31,7 @@ Roboto "Roboto" <<<EOT Roboto EOT;
 
 }
 @advanced dropdown width "Max Width" {
-	Disabled (default) "Disabled (default)*" <<<EOT 100% EOT;
+	Disabled--default- "Disabled (default)*" <<<EOT 100% EOT;
 1920px "1920px" <<<EOT 1920px EOT;
 1280px "1280px" <<<EOT 1280px EOT;
 960px "960px" <<<EOT 960px EOT;

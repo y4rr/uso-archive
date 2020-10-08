@@ -7,28 +7,28 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown link "背景圖片鏈結" {
-Luka(1920x1353) "Luka(1920x1353)*" <<<EOT http://i.minus.com/iMcrvqYjvNykT.png EOT;
-Miku(1920x997) "Miku(1920x997)" <<<EOT http://i.minus.com/ibwStuZio0q6vO.png EOT;
-rin(1800x1402) "rin(1800x1402)" <<<EOT http://i.minus.com/iVOoIX7byVkba.png EOT;
+Luka-1920x1353- "Luka(1920x1353)*" <<<EOT http://i.minus.com/iMcrvqYjvNykT.png EOT;
+Miku-1920x997- "Miku(1920x997)" <<<EOT http://i.minus.com/ibwStuZio0q6vO.png EOT;
+rin-1800x1402- "rin(1800x1402)" <<<EOT http://i.minus.com/iVOoIX7byVkba.png EOT;
 
 	link-custom-dropdown "Custom" <<<EOT /*[[link-custom]]*\/ EOT;
 }
 @advanced text link-custom "背景圖片鏈結 (Custom)" "https://example.com/image.png"
 @advanced dropdown x "背景圖片位置——X方向" {
-	置左 "置左*" <<<EOT left EOT;
-置中 "置中" <<<EOT center EOT;
-置右 "置右" <<<EOT right EOT;
+	-- "置左*" <<<EOT left EOT;
+-- "置中" <<<EOT center EOT;
+-- "置右" <<<EOT right EOT;
 
 }
 @advanced dropdown y "背景圖片位置——Y方向" {
-	置頂 "置頂*" <<<EOT top EOT;
-置中 "置中" <<<EOT center EOT;
-置底 "置底" <<<EOT bottom EOT;
+	-- "置頂*" <<<EOT top EOT;
+-- "置中" <<<EOT center EOT;
+-- "置底" <<<EOT bottom EOT;
 
 }
 @advanced dropdown ads "廣告設定（測試功能，慎用）" {
-	顯示廣告 "顯示廣告*" <<<EOT /* 感謝支持動漫花園營運 *\/ EOT;
-不顯示廣告 "不顯示廣告" <<<EOT @-moz-document url("http://share.dmhy.org/"), url("http://share.dmhy.me/"), url-prefix("http://share.dmhy.org/topics/view/"), url-prefix("http://share.dmhy.me/topics/view/") {
+	---- "顯示廣告*" <<<EOT /* 感謝支持動漫花園營運 *\/ EOT;
+----- "不顯示廣告" <<<EOT @-moz-document url("http://share.dmhy.org/"), url("http://share.dmhy.me/"), url-prefix("http://share.dmhy.org/topics/view/"), url-prefix("http://share.dmhy.me/topics/view/") {
 iframe  {
     display: none !important;
 }

@@ -8,18 +8,18 @@
 @preprocessor   uso
 @advanced dropdown RADIUS "Round or squared usericons?" {
 	round "round*" <<<EOT 50% EOT;
-rounded squares "rounded squares" <<<EOT 5px EOT;
+rounded-squares "rounded squares" <<<EOT 5px EOT;
 squared "squared" <<<EOT 1px EOT;
 
 }
 @advanced dropdown BACKGROUND "Background-pattern?" {
-	Yes please! "Yes please!*" <<<EOT url("http://i.imgur.com/NQpDEDt.jpg") EOT;
-No, I don't want it! "No, I don't want it!" <<<EOT none EOT;
+	Yes-please- "Yes please!*" <<<EOT url("http://i.imgur.com/NQpDEDt.jpg") EOT;
+No--I-don-t-want-it- "No, I don't want it!" <<<EOT none EOT;
 
 }
 @advanced dropdown TOPBAR "Fixed Topbar?" {
-	Hell yea! "Hell yea!*" <<<EOT  EOT;
-No, I don't want it! "No, I don't want it!" <<<EOT #masthead-positioner{
+	Hell-yea- "Hell yea!*" <<<EOT  EOT;
+No--I-don-t-want-it- "No, I don't want it!" <<<EOT #masthead-positioner{
 position: absolute!important;
 } EOT;
 

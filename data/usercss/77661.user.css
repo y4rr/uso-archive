@@ -15,7 +15,7 @@
 
 }
 @advanced dropdown version "Choose Firefox version" {
-	>16 ">16*" <<<EOT @-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") EOT;
+	-16 ">16*" <<<EOT @-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") EOT;
 16 "16" <<<EOT @-moz-document url("chrome://browser/content/inspector.html") EOT;
 
 }

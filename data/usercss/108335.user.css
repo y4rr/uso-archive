@@ -14,7 +14,7 @@ no "No" <<<EOT  EOT;
 @advanced dropdown xkit_which "Which XKit icons?" {
 	xkit "Just the XKit icon*" <<<EOT :not(.xkit-help-forwarder) EOT;
 help "Just the Help (alt- ) icon" <<<EOT .xkit-help-forwarder EOT;
-xkit+help "Both the XKit and Help icons" <<<EOT  EOT;
+xkit-help "Both the XKit and Help icons" <<<EOT  EOT;
 
 }
 

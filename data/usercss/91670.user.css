@@ -7,8 +7,8 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown mode "选择模式" {
-	模式一 "模式一*" <<<EOT  EOT;
-模式二 "模式二" <<<EOT .t_f img{opacity:0}
+	--- "模式一*" <<<EOT  EOT;
+--- "模式二" <<<EOT .t_f img{opacity:0}
 .t_f img:hover{opacity:1}/*贴内图片默认隐藏，鼠标悬停自动显示*\/
 .savephotop img{opacity:0}
 .savephotop img:hover{opacity:1}/*附件图片默认隐藏，鼠标悬停自动显示*\/ EOT;

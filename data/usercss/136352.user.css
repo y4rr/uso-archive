@@ -10,7 +10,7 @@
 @advanced dropdown rawist "Rawist" {
 	aucun "Aucun*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-rawist guirlande "enguirlandé" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+rawist-guirlande "enguirlandé" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img11.hostingpics.net/pics/848054387571Sanstitre2.png") center no-repeat !important ;
@@ -80,7 +80,7 @@ font-size : 0 !important ;
 @advanced dropdown lamulin "Lamulin" {
 	aucun "Aucun*" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 } EOT;
-lamulin sang "ensanglanté" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
+lamulin-sang "ensanglanté" <<<EOT @-moz-document regexp("http://(fa1|fa2|www)\\.eldarya\\.(com|fr|pl|de|es|hu|it|ru|fi|com.br)\\/player/profile//*[[Username]]*\/") {
 
 #player-display-pet {
 background : url("http://img15.hostingpics.net/pics/559949lamuhallo.png") center no-repeat !important ;

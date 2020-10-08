@@ -22,48 +22,48 @@
 }
 @advanced text draftcount_user-custom "Your \"Drafts\" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
 @advanced dropdown post_no_edit "Posts      " {
-	No change "No change*" <<<EOT #posts_control .posts:before {
+	No-change "No change*" <<<EOT #posts_control .posts:before {
   content: "" !important;
 }
 #posts_control .count {
   visibility: visible !important;
 } EOT;
-Use Your custom coun "Use Your custom count" <<<EOT  EOT;
+Use-Your-custom-coun "Use Your custom count" <<<EOT  EOT;
 
 }
 @advanced dropdown follower_no_edit "Followers " {
-	No change "No change*" <<<EOT #dashboard_controls_open_blog > li .followers:before {
+	No-change "No change*" <<<EOT #dashboard_controls_open_blog > li .followers:before {
   content: "" !important;
 }
 #dashboard_controls_open_blog > li .followers .count {
   visibility: visible !important;
 } EOT;
-Use Your custom coun "Use Your custom count" <<<EOT  EOT;
+Use-Your-custom-coun "Use Your custom count" <<<EOT  EOT;
 
 }
 @advanced dropdown draft_no_edit "Drafts     " {
-	No change "No change*" <<<EOT #dashboard_controls_open_blog > li .drafts:before {
+	No-change "No change*" <<<EOT #dashboard_controls_open_blog > li .drafts:before {
   content: "" !important;
 }
 #dashboard_controls_open_blog > li .drafts .count {
   visibility: visible !important;
 } EOT;
-Use Your custom coun "Use Your custom count" <<<EOT  EOT;
+Use-Your-custom-coun "Use Your custom count" <<<EOT  EOT;
 
 }
 @advanced dropdown post_color "Post Count color      " {
-	No change "No change*" <<<EOT .5 EOT;
-Match Post text colo "Match Post text color" <<<EOT 1 EOT;
+	No-change "No change*" <<<EOT .5 EOT;
+Match-Post-text-colo "Match Post text color" <<<EOT 1 EOT;
 
 }
 @advanced dropdown follower_color "Followers Count color" {
-	No change "No change*" <<<EOT .5 EOT;
-Match Post text colo "Match Post text color" <<<EOT 1 EOT;
+	No-change "No change*" <<<EOT .5 EOT;
+Match-Post-text-colo "Match Post text color" <<<EOT 1 EOT;
 
 }
 @advanced dropdown draft_color "Drafts Count Color    " {
-	No change "No change*" <<<EOT .5 EOT;
-Match Post text colo "Match Post text color" <<<EOT 1 EOT;
+	No-change "No change*" <<<EOT .5 EOT;
+Match-Post-text-colo "Match Post text color" <<<EOT 1 EOT;
 
 }
 

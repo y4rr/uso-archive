@@ -90,7 +90,7 @@
 }
 @advanced dropdown 9-a-b-c-d "Color Scheme 2 (Preview Sample below)" {
 	c "[Off]  Color Scheme 2*" <<<EOT /*[[9-a-b-c-d]]*\/ EOT;
-9  "Pale Pink (Girl)" <<<EOT :root {
+9- "Pale Pink (Girl)" <<<EOT :root {
 --main-color-1: #FFBABA;
 --main-color-2: #FCD1BF;
 --main-color-3: #FFD8D8;
@@ -150,8 +150,8 @@ she0 "[OFF Hover effect" <<<EOT  EOT;
 
 }
 @advanced dropdown Instruction "You need to TURN OFF rest of COLOR SCHEME when you use once" {
-	Instruction 1 "OFF rest of Color Scheme*" <<<EOT  EOT;
-Instruction 2 "Use only one Scheme" <<<EOT  EOT;
+	Instruction-1 "OFF rest of Color Scheme*" <<<EOT  EOT;
+Instruction-2 "Use only one Scheme" <<<EOT  EOT;
 
 }
 

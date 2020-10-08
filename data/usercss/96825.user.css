@@ -8,7 +8,7 @@
 @preprocessor   uso
 @advanced text text-0 "滚动条靠右，方便鼠标直接拖拽（默认 -2）" "-2"
 @advanced color color-3 "其他颜色：淡紫-如气泡通知等（默认 #8A9EDB）" #8A9EDB
-@advanced dropdown !important "音乐播放器背景" {
+@advanced dropdown -important "音乐播放器背景" {
 	1 "使用背景*" <<<EOT !important EOT;
 2 "不要背景（以纯黑半透明形式存在）" <<<EOT  EOT;
 
@@ -152,7 +152,7 @@ UL[class="list"] LI:hover,.list-item.active .b-no-ln,.item-active,.list-view-ite
 
 /*[[background-0]]*/
 
-) no-repeat /*[[!important]]*/;background-size:/*[[text-1]]*/ !important;
+) no-repeat /*[[-important]]*/;background-size:/*[[text-1]]*/ !important;
 /*[[text-2]]*/;}
 
 .wrap,.wrap>*,.con,.songlist{background:none !important;}

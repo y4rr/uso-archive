@@ -14,14 +14,14 @@ Dislike "Dislike" <<<EOT #watch-like-dislike-buttons #watch-dislike:after{conten
 Haten "Haten" <<<EOT #watch-like-dislike-buttons #watch-dislike:after{content: " Haten" !important;}
 #watch7-views-info:after{content: " Hater" !important;}
  EOT;
-Mag ich nicht "Mag ich nicht" <<<EOT #watch-like-dislike-buttons #watch-dislike:after{content: " Mag ich nicht" !important;}
+Mag-ich-nicht "Mag ich nicht" <<<EOT #watch-like-dislike-buttons #watch-dislike:after{content: " Mag ich nicht" !important;}
  EOT;
 None "None" <<<EOT  EOT;
 
 }
 @advanced dropdown Viewer "Display viewers:" {
 	None "None*" <<<EOT  EOT;
-I 1.531 I "I 1.531 I" <<<EOT #watch7-views-info .watch-view-count:after
+I-1-531-I "I 1.531 I" <<<EOT #watch7-views-info .watch-view-count:after
     {
         content: "I" !important;
     }
@@ -29,7 +29,7 @@ I 1.531 I "I 1.531 I" <<<EOT #watch7-views-info .watch-view-count:after
     {
         content: "I" !important;
     } EOT;
-> 1.531 < "> 1.531 <" <<<EOT #watch7-views-info .watch-view-count:after
+--1-531-- "> 1.531 <" <<<EOT #watch7-views-info .watch-view-count:after
     {
         content: "<" !important;
     }

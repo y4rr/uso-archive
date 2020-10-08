@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown ttb_home "是否需要拉伸贴吧首页？" {
-	需要 "需要*" <<<EOT /* Tieba Index *\/
+	-- "需要*" <<<EOT /* Tieba Index *\/
 #head:not(.search_theme_3), #container:not([class]), #editor, .content {
 	width: 98%!important
 }
@@ -108,11 +108,11 @@ html:not([has_TBBG_extension]) body:not([has_TBBG_extension]) .forum_content {
 .container_bright {
 	width: 100%!important
 } EOT;
-不需要 "不需要" <<<EOT  EOT;
+--- "不需要" <<<EOT  EOT;
 
 }
 @advanced dropdown ttb_thread "是否需要拉伸贴子页？" {
-	需要 "需要*" <<<EOT /* Tieba Thread *\/
+	-- "需要*" <<<EOT /* Tieba Thread *\/
 .d_post_content_main {
 	width: auto !important;
 	min-width: 575px !important;
@@ -342,7 +342,7 @@ html body .wrap_bright .content .left_section {
 .d_post_content.j_d_post_content.clearfix:after {
     display: none !important;
 } EOT;
-不需要 "不需要" <<<EOT  EOT;
+--- "不需要" <<<EOT  EOT;
 
 }
 

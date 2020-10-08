@@ -6,47 +6,47 @@
 @version        2016413.15.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown foto izquierda "Imagen izquierda" {
-foto izquierda "Yoko*" <<<EOT http://i.imgur.com/ecjP1ml.png EOT;
-foto izquierda1 "Asuna" <<<EOT http://i.imgur.com/KTTdPU1.png EOT;
-foto izquierda2 "Yuno (Future Diary)" <<<EOT http://i.imgur.com/5V6WM6h.png EOT;
-foto izquierda3 "Grimmjow (Bleach)" <<<EOT http://i.imgur.com/MUxc32q.png EOT;
-foto izquierda4 "Sena (Haganai) " <<<EOT http://i.imgur.com/gZi6HlA.png EOT;
-foto izquierda5 "Hestia (DanMachi)" <<<EOT http://i.imgur.com/xZp3Msl.png EOT;
-foto izquierda6 "Kurumi (Date a live)" <<<EOT http://i.imgur.com/91QHf91.png EOT;
-foto izquierda7 "Jibril (NGNL)" <<<EOT http://i.imgur.com/DMxDNsb.png EOT;
-foto izquierda8 "Sasuke (Naruto)" <<<EOT http://i.imgur.com/H92YcjZ.png EOT;
-foto izquierda9 "Natsumi (Date a live) " <<<EOT http://i.imgur.com/IdiA3Yi.png EOT;
-foto izquierda10 "Yuri (Angel Beats!)" <<<EOT http://i.imgur.com/LEV4Okf.png EOT;
-foto izquierda11 "Ryuko (Kill la Kill)" <<<EOT http://i.imgur.com/HMu74Mp.png EOT;
-foto izquierda12 "Jibril (NGNL) " <<<EOT http://i.imgur.com/MDGM6U4.png EOT;
-foto izquierda13 "Vacio" <<<EOT http://i.imgur.com/dQslwZR.png EOT;
+@advanced dropdown foto-izquierda "Imagen izquierda" {
+foto-izquierda "Yoko*" <<<EOT http://i.imgur.com/ecjP1ml.png EOT;
+foto-izquierda1 "Asuna" <<<EOT http://i.imgur.com/KTTdPU1.png EOT;
+foto-izquierda2 "Yuno (Future Diary)" <<<EOT http://i.imgur.com/5V6WM6h.png EOT;
+foto-izquierda3 "Grimmjow (Bleach)" <<<EOT http://i.imgur.com/MUxc32q.png EOT;
+foto-izquierda4 "Sena (Haganai) " <<<EOT http://i.imgur.com/gZi6HlA.png EOT;
+foto-izquierda5 "Hestia (DanMachi)" <<<EOT http://i.imgur.com/xZp3Msl.png EOT;
+foto-izquierda6 "Kurumi (Date a live)" <<<EOT http://i.imgur.com/91QHf91.png EOT;
+foto-izquierda7 "Jibril (NGNL)" <<<EOT http://i.imgur.com/DMxDNsb.png EOT;
+foto-izquierda8 "Sasuke (Naruto)" <<<EOT http://i.imgur.com/H92YcjZ.png EOT;
+foto-izquierda9 "Natsumi (Date a live) " <<<EOT http://i.imgur.com/IdiA3Yi.png EOT;
+foto-izquierda10 "Yuri (Angel Beats!)" <<<EOT http://i.imgur.com/LEV4Okf.png EOT;
+foto-izquierda11 "Ryuko (Kill la Kill)" <<<EOT http://i.imgur.com/HMu74Mp.png EOT;
+foto-izquierda12 "Jibril (NGNL) " <<<EOT http://i.imgur.com/MDGM6U4.png EOT;
+foto-izquierda13 "Vacio" <<<EOT http://i.imgur.com/dQslwZR.png EOT;
 
-	foto izquierda-custom-dropdown "Custom" <<<EOT /*[[foto izquierda-custom]]*\/ EOT;
+	foto-izquierda-custom-dropdown "Custom" <<<EOT /*[[foto-izquierda-custom]]*\/ EOT;
 }
-@advanced text foto izquierda-custom "Imagen izquierda (Custom)" "https://example.com/image.png"
+@advanced text foto-izquierda-custom "Imagen izquierda (Custom)" "https://example.com/image.png"
 @advanced text Mi1 "Mover hacia la izquierda renderizar horizontalmente (por defecto = 0)" "0"
 @advanced text Mi2 "Mover hacia la izquierda renderizar verticalmente (por defecto = 0)" "0"
 @advanced text Mi3 "Altura de la izquierda renderizar (por defecto = 100)" "100"
-@advanced dropdown foto derecha "Imagen derecha" {
-foto derecha "Yoko*" <<<EOT http://i.imgur.com/ecjP1ml.png EOT;
-foto derecha1 "Asuna" <<<EOT http://i.imgur.com/KTTdPU1.png EOT;
-foto derecha2 "Yuno (Future Diary)" <<<EOT http://i.imgur.com/5V6WM6h.png EOT;
-foto derecha3 "Grimmjow (Bleach)" <<<EOT http://i.imgur.com/MUxc32q.png EOT;
-foto derecha4 "Sena (Haganai) " <<<EOT http://i.imgur.com/gZi6HlA.png EOT;
-foto derecha5 "Hestia (DanMachi)" <<<EOT http://i.imgur.com/xZp3Msl.png EOT;
-foto derecha6 "Kurumi (Date a live)" <<<EOT http://i.imgur.com/91QHf91.png EOT;
-foto derecha7 "Jibril (NGNL)" <<<EOT http://i.imgur.com/DMxDNsb.png EOT;
-foto derecha8 "Sasuke (Naruto)" <<<EOT http://i.imgur.com/H92YcjZ.png EOT;
-foto derecha9 "Natsumi (Date a live) " <<<EOT http://i.imgur.com/IdiA3Yi.png EOT;
-foto derecha10 "Yuri (Angel Beats!)" <<<EOT http://i.imgur.com/LEV4Okf.png EOT;
-foto derecha11 "Ryuko (Kill la Kill)" <<<EOT http://i.imgur.com/HMu74Mp.png EOT;
-foto derecha12 "Jibril (NGNL) " <<<EOT http://i.imgur.com/MDGM6U4.png EOT;
-foto derecha13 "Vacio" <<<EOT http://i.imgur.com/dQslwZR.png EOT;
+@advanced dropdown foto-derecha "Imagen derecha" {
+foto-derecha "Yoko*" <<<EOT http://i.imgur.com/ecjP1ml.png EOT;
+foto-derecha1 "Asuna" <<<EOT http://i.imgur.com/KTTdPU1.png EOT;
+foto-derecha2 "Yuno (Future Diary)" <<<EOT http://i.imgur.com/5V6WM6h.png EOT;
+foto-derecha3 "Grimmjow (Bleach)" <<<EOT http://i.imgur.com/MUxc32q.png EOT;
+foto-derecha4 "Sena (Haganai) " <<<EOT http://i.imgur.com/gZi6HlA.png EOT;
+foto-derecha5 "Hestia (DanMachi)" <<<EOT http://i.imgur.com/xZp3Msl.png EOT;
+foto-derecha6 "Kurumi (Date a live)" <<<EOT http://i.imgur.com/91QHf91.png EOT;
+foto-derecha7 "Jibril (NGNL)" <<<EOT http://i.imgur.com/DMxDNsb.png EOT;
+foto-derecha8 "Sasuke (Naruto)" <<<EOT http://i.imgur.com/H92YcjZ.png EOT;
+foto-derecha9 "Natsumi (Date a live) " <<<EOT http://i.imgur.com/IdiA3Yi.png EOT;
+foto-derecha10 "Yuri (Angel Beats!)" <<<EOT http://i.imgur.com/LEV4Okf.png EOT;
+foto-derecha11 "Ryuko (Kill la Kill)" <<<EOT http://i.imgur.com/HMu74Mp.png EOT;
+foto-derecha12 "Jibril (NGNL) " <<<EOT http://i.imgur.com/MDGM6U4.png EOT;
+foto-derecha13 "Vacio" <<<EOT http://i.imgur.com/dQslwZR.png EOT;
 
-	foto derecha-custom-dropdown "Custom" <<<EOT /*[[foto derecha-custom]]*\/ EOT;
+	foto-derecha-custom-dropdown "Custom" <<<EOT /*[[foto-derecha-custom]]*\/ EOT;
 }
-@advanced text foto derecha-custom "Imagen derecha (Custom)" "https://example.com/image.png"
+@advanced text foto-derecha-custom "Imagen derecha (Custom)" "https://example.com/image.png"
 @advanced text Md1 "Mover a la derecha renderizar horizontalmente (por defecto = 0)" "0"
 @advanced text Md2 "Mover a la derecha renderizar verticalmente (por defecto = 0)" "0"
 @advanced text Md3 "Altura de la derecha renderizar (por defecto = 100)" "100"
@@ -63,7 +63,7 @@ foto derecha13 "Vacio" <<<EOT http://i.imgur.com/dQslwZR.png EOT;
     z-index: 3;
 }
 #page:before {
-background-image: url(/*[[foto izquierda]]*/) !important;
+background-image: url(/*[[foto-izquierda]]*/) !important;
 left: /*[[Mi1]]*/% !important;
 top: /*[[Mi2]]*/% !important;
 height: /*[[Mi3]]*/% !important;
@@ -71,7 +71,7 @@ height: /*[[Mi3]]*/% !important;
       
  
 #page:after {
-background-image: url(/*[[foto derecha]]*/) !important;
+background-image: url(/*[[foto-derecha]]*/) !important;
 right: /*[[Md1]]*/% !important;
 top: /*[[Md2]]*/% !important;
 height: /*[[Md3]]*/% !important;
@@ -223,7 +223,7 @@ margin-right: -52%;
    z-index: 3!important;
 }
 .group:before {
-background-image: url(/*[[foto izquierda]]*/) !important;
+background-image: url(/*[[foto-izquierda]]*/) !important;
 left: /*[[Mi1]]*/% !important;
 top: /*[[Mi2]]*/% !important;
 height: /*[[Mi3]]*/% !important;
@@ -232,7 +232,7 @@ z-index: -1!important;
       
  
 .group:after {
-background-image: url(/*[[foto derecha]]*/) !important;
+background-image: url(/*[[foto-derecha]]*/) !important;
 right: /*[[Md1]]*/% !important;
 top: /*[[Md2]]*/% !important;
 height: /*[[Md3]]*/% !important;

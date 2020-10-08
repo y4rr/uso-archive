@@ -7,17 +7,17 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown back "Фоновое изображение" {
-Черный фон "Черный фон*" <<<EOT http://raw.github.com/Pmmlabs/4PDAForum-NightGlass/master/images/wallpaper_black.jpg EOT;
-Круги "Круги" <<<EOT http://raw.github.com/Pmmlabs/4PDAForum-NightGlass/master/images/wallpaper_circles.jpg EOT;
-Синий фон "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
+---------- "Черный фон*" <<<EOT http://raw.github.com/Pmmlabs/4PDAForum-NightGlass/master/images/wallpaper_black.jpg EOT;
+----- "Круги" <<<EOT http://raw.github.com/Pmmlabs/4PDAForum-NightGlass/master/images/wallpaper_circles.jpg EOT;
+--------- "Синий фон" <<<EOT https://pp.vk.me/c307311/v307311287/1e3d/NRuAUM8xzVA.jpg EOT;
 
 	back-custom-dropdown "Custom" <<<EOT /*[[back-custom]]*\/ EOT;
 }
 @advanced text back-custom "Фоновое изображение (Custom)" "https://example.com/image.png"
 @advanced dropdown repeating "Положение фоновой картинки" {
-	Под размер окна "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
+	--------------- "Под размер окна*" <<<EOT background-repeat: no-repeat !important;
 background-size: cover !important; EOT;
-Замостить "Замостить" <<<EOT background-repeat: repeat !important;
+--------- "Замостить" <<<EOT background-repeat: repeat !important;
 background-size: auto !important;
  EOT;
 

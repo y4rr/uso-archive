@@ -8,9 +8,9 @@
 @preprocessor   uso
 @advanced dropdown boxeswidth "Boxes width" {
 	Default "Default*" <<<EOT 0 EOT;
-450 px "450 px" <<<EOT 450 EOT;
-700 px "700 px" <<<EOT 700 EOT;
-1000 px "1000 px" <<<EOT 1000 EOT;
+450-px "450 px" <<<EOT 450 EOT;
+700-px "700 px" <<<EOT 700 EOT;
+1000-px "1000 px" <<<EOT 1000 EOT;
 
 }
 @advanced dropdown panicon "Panel icon" {
@@ -27,7 +27,7 @@ list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYA
 Star4 "Star4" <<<EOT #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:first-child > #editBookmarkPanelStarIcon
 {visibility: visible !important;
 list-style-image: url(data:image/png;base64,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) !important;} EOT;
-Force Show "Force Show" <<<EOT #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:first-child > #editBookmarkPanelStarIcon
+Force-Show "Force Show" <<<EOT #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:first-child > #editBookmarkPanelStarIcon
 {visibility: visible !important;} EOT;
 
 }
@@ -38,7 +38,7 @@ Force Show "Force Show" <<<EOT #main-window > #mainPopupSet > #editBookmarkPanel
 Hide "Hide" <<<EOT #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:last-child > #editBookmarkPanelTitle,
 #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:last-child > #editBookmarkPanelDescription
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT /* #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:last-child > #editBookmarkPanelTitle,
+Force-Show "Force Show" <<<EOT /* #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:last-child > #editBookmarkPanelTitle,
 #main-window > #mainPopupSet > #editBookmarkPanel #editBookmarkPanelHeader > vbox:last-child > #editBookmarkPanelDescription
 {visibility: visible !important;} EOT;
 
@@ -48,7 +48,7 @@ Force Show "Force Show" <<<EOT /* #main-window > #mainPopupSet > #editBookmarkPa
 {visibility: visible !important;} *\/ EOT;
 Show "Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_locationRow
 {visibility: visible !important;} EOT;
-Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_locationRow
+Force-Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_locationRow
 {display: none !important;} EOT;
 
 }
@@ -57,7 +57,7 @@ Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
+Force-Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
 {visibility: visible !important;} EOT;
 
 }
@@ -66,7 +66,7 @@ Force Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
+Force-Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
 {visibility: visible !important;} EOT;
 
 }
@@ -75,7 +75,7 @@ Force Show "Force Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {visibility: visible !important;} *\/ EOT;
 Show "Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
 {visibility: visible !important;} EOT;
-Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
+Force-Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
 {display: none !important;} EOT;
 
 }
@@ -84,7 +84,7 @@ Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {visibility: visible !important;} *\/ EOT;
 Show "Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
 {visibility: visible !important;} EOT;
-Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
+Force-Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
 {display: none !important;} EOT;
 
 }
@@ -93,7 +93,7 @@ Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {visibility: visible !important;} *\/ EOT;
 Show "Show" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
 {visibility: visible !important;} EOT;
-Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
+Force-Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
 {display: none !important;} EOT;
 
 }
@@ -102,7 +102,7 @@ Force Hide "Force Hide" <<<EOT #main-window > #mainPopupSet #editBookmarkPanelCo
 {visibility: visible !important;} *\/ EOT;
 Show "Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
 {visibility: visible !important;} EOT;
-Force Hide "Force Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
+Force-Hide "Force Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_folderRow
 {display: none !important;} EOT;
 
 }
@@ -111,7 +111,7 @@ Force Hide "Force Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent >
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
+Force-Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_tagsRow
 {visibility: visible !important;} EOT;
 
 }
@@ -120,7 +120,7 @@ Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent >
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
+Force-Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_keywordRow
 {visibility: visible !important;} EOT;
 
 }
@@ -129,7 +129,7 @@ Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent >
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
+Force-Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBookmarkPanelGrid > #editBMPanel_rows > #editBMPanel_descriptionRow
 {visibility: visible !important;} EOT;
 
 }
@@ -138,7 +138,7 @@ Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent >
 {display: none !important;} *\/ EOT;
 Hide "Hide" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
 {display: none !important;} EOT;
-Force Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
+Force-Show "Force Show" <<<EOT #bookmarkproperties > #editBookmarkPanelContent > #editBMPanel_loadInSidebarCheckbox
 {visibility: visible !important;} EOT;
 
 }

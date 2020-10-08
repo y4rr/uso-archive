@@ -7,14 +7,14 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bodyBackgroundImage "1、背景图片" {
-默认（公路） "默认（公路）*" <<<EOT http://1.su.bdimg.com/all_skin/19.jpg EOT;
+------ "默认（公路）*" <<<EOT http://1.su.bdimg.com/all_skin/19.jpg EOT;
 
 	bodyBackgroundImage-custom-dropdown "Custom" <<<EOT /*[[bodyBackgroundImage-custom]]*\/ EOT;
 }
 @advanced text bodyBackgroundImage-custom "1、背景图片 (Custom)" "https://example.com/image.png"
 @advanced dropdown changFontSize "2、改为大字体？" {
-	保持默认就好 "保持默认就好*" <<<EOT  EOT;
-加大字体 "加大字体" <<<EOT .threadlist_title a {font-size: 17px !important;}
+	------ "保持默认就好*" <<<EOT  EOT;
+---- "加大字体" <<<EOT .threadlist_title a {font-size: 17px !important;}
     .threadlist_author,.threadlist_author a,.threadlist_author span{font-size: 14px !important;}
     .tb_icon_author_rely{width:95px!important;}
     .threadlist_reply_date{width:40px!important;}
@@ -37,75 +37,75 @@
 
 }
 @advanced dropdown globalFontFamily "3、全局微软雅黑吗？" {
-	我不需要 "我不需要*" <<<EOT  EOT;
-好吧 "好吧" <<<EOT *{font-family:"微软雅黑" !important;} EOT;
+	---- "我不需要*" <<<EOT  EOT;
+-- "好吧" <<<EOT *{font-family:"微软雅黑" !important;} EOT;
 
 }
 @advanced dropdown showDetails "4、隐藏帖子预览？" {
-	只显示文字 "只显示文字*" <<<EOT .threadlist_media{
+	----- "只显示文字*" <<<EOT .threadlist_media{
     display:none!important;
 } EOT;
-全部隐藏 "全部隐藏" <<<EOT .threadlist_abs_onlyline,.threadlist_media{
+---- "全部隐藏" <<<EOT .threadlist_abs_onlyline,.threadlist_media{
     display:none!important;
 } EOT;
-全部显示 "全部显示" <<<EOT  EOT;
+---- "全部显示" <<<EOT  EOT;
 
 }
 @advanced dropdown aTextDecoration "5、去除所有连接下划线" {
-	去除 "去除*" <<<EOT a, a:visited, a:hover{text-decoration: none !important;} EOT;
-不去除 "不去除" <<<EOT  EOT;
+	-- "去除*" <<<EOT a, a:visited, a:hover{text-decoration: none !important;} EOT;
+--- "不去除" <<<EOT  EOT;
 
 }
 @advanced dropdown minOpacity "6、透明选择" {
-	全透明 "全透明*" <<<EOT none EOT;
-0.1 "0.1" <<<EOT rgba(255,255,255,.1) EOT;
-0.2 "0.2" <<<EOT rgba(255,255,255,.2) EOT;
-0.3 "0.3" <<<EOT rgba(255,255,255,.3) EOT;
-0.4 "0.4" <<<EOT rgba(255,255,255,.4) EOT;
-0.5 "0.5" <<<EOT rgba(255,255,255,.5) EOT;
-0.6 "0.6" <<<EOT rgba(255,255,255,.6) EOT;
+	--- "全透明*" <<<EOT none EOT;
+0-1 "0.1" <<<EOT rgba(255,255,255,.1) EOT;
+0-2 "0.2" <<<EOT rgba(255,255,255,.2) EOT;
+0-3 "0.3" <<<EOT rgba(255,255,255,.3) EOT;
+0-4 "0.4" <<<EOT rgba(255,255,255,.4) EOT;
+0-5 "0.5" <<<EOT rgba(255,255,255,.5) EOT;
+0-6 "0.6" <<<EOT rgba(255,255,255,.6) EOT;
 
 }
 @advanced dropdown picToolbar "7、图片右侧工具条" {
-	完全隐藏 "完全隐藏*" <<<EOT .fav-wrapper .fav-toolbar{display: none !important;} EOT;
-去除下载按钮 "去除下载按钮" <<<EOT .fav-toolbar .download{display: none !important;} EOT;
-只显示收藏按钮 "只显示收藏按钮" <<<EOT .fav-toolbar .download,.fav-toolbar .share{display: none !important;} EOT;
-不做任何隐藏 "不做任何隐藏" <<<EOT  EOT;
+	---- "完全隐藏*" <<<EOT .fav-wrapper .fav-toolbar{display: none !important;} EOT;
+------ "去除下载按钮" <<<EOT .fav-toolbar .download{display: none !important;} EOT;
+------- "只显示收藏按钮" <<<EOT .fav-toolbar .download,.fav-toolbar .share{display: none !important;} EOT;
+------ "不做任何隐藏" <<<EOT  EOT;
 
 }
 @advanced dropdown shareBtn "8、帖子一楼的分享按钮" {
-	隐藏 "隐藏*" <<<EOT .share_btn_wrapper{display: none !important;} EOT;
-显示 "显示" <<<EOT .share_thread .bds_more {background: url("http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_528226d7.png") repeat scroll -77.5px -179.5px rgba(0, 0, 0, 0) !important;}
+	-- "隐藏*" <<<EOT .share_btn_wrapper{display: none !important;} EOT;
+-- "显示" <<<EOT .share_thread .bds_more {background: url("http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_528226d7.png") repeat scroll -77.5px -179.5px rgba(0, 0, 0, 0) !important;}
     .share_thread .dis_share_num {background: url("http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_528226d7.png") repeat scroll -77.5px -146.5px rgba(0, 0, 0, 0) !important;} EOT;
 
 }
 @advanced dropdown userIcon_1 "9、隐藏用户徽章(列表)" {
-	隐藏 "隐藏*" <<<EOT .t_con .icon_wrap{display: none !important;} EOT;
-显示 "显示" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT .t_con .icon_wrap{display: none !important;} EOT;
+-- "显示" <<<EOT  EOT;
 
 }
 @advanced dropdown userIcon_2 "10、隐藏用户徽章(头像旁)" {
-	隐藏 "隐藏*" <<<EOT .p_author .d_icons{display: none !important;} EOT;
-显示 "显示" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT .p_author .d_icons{display: none !important;} EOT;
+-- "显示" <<<EOT  EOT;
 
 }
 @advanced color list_reply_date "11、最后回复时间颜色" #F00078
 @advanced color list_reply_user "12、最后回复人颜色" #3C3C3C
 @advanced color l_date "13、楼层回复时间颜色" #FF7F3E
 @advanced dropdown orangeName "14、列表去橙名" {
-	保留 "保留*" <<<EOT .tb_icon_author  a[class="sign_highlight"]{color:#FF7F3E !important;} EOT;
-去除 "去除" <<<EOT  EOT;
+	-- "保留*" <<<EOT .tb_icon_author  a[class="sign_highlight"]{color:#FF7F3E !important;} EOT;
+-- "去除" <<<EOT  EOT;
 
 }
 @advanced dropdown editebackground "15、回复框透明化" {
-	透明 "透明*" <<<EOT .tb_rich_poster .poster_body .editor_textfield{-moz-appearance: none !important;background: none transparent !important;border:1px solid rgba(0, 0, 0, 0.2)!important;}
+	-- "透明*" <<<EOT .tb_rich_poster .poster_body .editor_textfield{-moz-appearance: none !important;background: none transparent !important;border:1px solid rgba(0, 0, 0, 0.2)!important;}
 .old_style_wrapper,.edui-container .edui-toolbar,.edui-editor-body .edui-body-container{background: none!important;} EOT;
-默认 "默认" <<<EOT  EOT;
+-- "默认" <<<EOT  EOT;
 
 }
 @advanced dropdown say "16、去除大伙正在聊？" {
-	保持默认 "保持默认*" <<<EOT  EOT;
-去除 "去除" <<<EOT /*隐藏大家都在看*\/
+	---- "保持默认*" <<<EOT  EOT;
+-- "去除" <<<EOT /*隐藏大家都在看*\/
     .tbsug_expand .tbsug_break:first-child,
     .tbsug_expand .tbsug_break:first-child+li,
     .tbsug_expand .tbsug_break:first-child+li+li,
@@ -114,17 +114,17 @@
 
 }
 @advanced dropdown qunzhu "17、列表的群组" {
-	透明 "透明*" <<<EOT .frs_qunzu_wrpa{background:none!important;} EOT;
-隐藏 "隐藏" <<<EOT .frs_qunzu_wrpa{display: none !important;} EOT;
+	-- "透明*" <<<EOT .frs_qunzu_wrpa{background:none!important;} EOT;
+-- "隐藏" <<<EOT .frs_qunzu_wrpa{display: none !important;} EOT;
 
 }
 @advanced dropdown paper "18、贴吧贴条" {
-	隐藏 "隐藏*" <<<EOT .contet_wrap .tb_paper_wrap{display: none;} EOT;
-保持 "保持" <<<EOT  EOT;
+	-- "隐藏*" <<<EOT .contet_wrap .tb_paper_wrap{display: none;} EOT;
+-- "保持" <<<EOT  EOT;
 
 }
 @advanced dropdown Tdou "19、去除T豆系列？" {
-	去除 "去除*" <<<EOT #j_ten_years,.d_nameplate,
+	-- "去除*" <<<EOT #j_ten_years,.d_nameplate,
 .ui_bubble_left[style^='width: 123px;'],
 .ui_bubble_wrap[style^='width: 130px;'],
 .d_name .pre_icon_wrap_theme1 a, .pre_icon_wrap_theme1 span,
@@ -133,7 +133,7 @@ li.tbui_fbar_props,
 .p_author .residual_wrap{
     display: none !important;
 } EOT;
-保持 "保持" <<<EOT  EOT;
+-- "保持" <<<EOT  EOT;
 
 }
 

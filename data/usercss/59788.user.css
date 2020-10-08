@@ -7,11 +7,11 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown time "transition time" {
-	0.2s "0.2s*" <<<EOT 0.2s EOT;
-0.5s "0.5s" <<<EOT 0.5s EOT;
-1.0s "1.0s" <<<EOT 1.0s EOT;
-1.5s "1.5s" <<<EOT 1.5s EOT;
-2.0s "2.0s" <<<EOT 2.0s EOT;
+	0-2s "0.2s*" <<<EOT 0.2s EOT;
+0-5s "0.5s" <<<EOT 0.5s EOT;
+1-0s "1.0s" <<<EOT 1.0s EOT;
+1-5s "1.5s" <<<EOT 1.5s EOT;
+2-0s "2.0s" <<<EOT 2.0s EOT;
 
 }
 @advanced dropdown max-width "max-width" {
@@ -24,7 +24,7 @@
 
 }
 @advanced dropdown document "document" {
-	diasp0ra.ca "diasp0ra.ca*" <<<EOT @-moz-document domain(diasp0ra.ca){ EOT;
+	diasp0ra-ca "diasp0ra.ca*" <<<EOT @-moz-document domain(diasp0ra.ca){ EOT;
 none "none" <<<EOT  EOT;
 
 }
