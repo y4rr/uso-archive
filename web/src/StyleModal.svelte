@@ -187,7 +187,11 @@
 				<!--<li><a target="_blank" href={`${dataPrefix}markdown/${style.id}.md`}>Markdown</a></li>-->
 			</ul>
 		</div>
-		<div class="modal-footer"><a class="btn btn-primary" target="_blank" href={`https://userstyles.org/styles/${style.id}`}>UserStyles.org</a> <a class="btn btn-primary" target="_blank" href={`${dataPrefix}usercss/${style.id}.user.css`}>Install</a> <button class="btn btn-secondary" on:click={close}>Close</button></div>
+		<div class="modal-footer">
+			<a class="btn btn-primary" target="_blank" href={`https://userstyles.org/styles/${style.id}`}>UserStyles.org</a>
+			{#if style.info.format === 'uso'}<a class="btn btn-primary" target="_blank" href={`${dataPrefix}usercss/${style.id}.user.css`}>Install</a>{/if}
+			<button class="btn btn-secondary" on:click={close}>Close</button>
+		</div>
 	{:catch e}
 		<div class="modal-header">
 			<h3>Error while downloading data...</h3>

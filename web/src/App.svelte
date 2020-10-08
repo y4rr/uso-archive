@@ -31,7 +31,8 @@
 	let modalStyleId = "";
 	let modalIsOpen = false;
 
-	let sorting = "most-popular";
+	const defaultSorting = "weekly-installs";
+	let sorting = defaultSorting;
 	let sortDropdownOpen = false;
 	function setSorting(val) {
 		sorting = val;
@@ -56,14 +57,20 @@
 
 	function sortStyles(styles, sorting) {
 		switch (sorting) {
-			case "most-popular":
+			case "weekly-installs":
 				styles.sort((a, b) => b.w - a.w);
 				break;
-			case "recently-updated":
+			case "total-installs":
+				styles.sort((a, b) => b.t - a.t);
+				break;
+			case "rating":
+				styles.sort((a, b) => (b.r || 1) - (a.r || 1));
+				break;
+			case "updated":
 				styles.sort((a, b) => b.u - a.u);
 				break;
 			case "newest":
-				// sorted = styles.sort((a, b) => new Date(b.info.updatedAt) - new Date(a.info.updatedAt));
+				styles.sort((a, b) => b.i - a.i);
 				break;
 		}
 		return styles;
@@ -133,7 +140,7 @@
 	}
 
 	function loadStateFromQuery(query) {
-		sorting = query.get("sort") || "most-popular";
+		sorting = query.get("sort") || defaultSorting;
 		inputs.search = query.get("search") || "";
 		inputs.category = query.get("category") || "";
 		inputs.author = query.get("author") || "";
@@ -212,9 +219,9 @@
 				query.delete("page");
 			}
 		}
-		if (query.get("sort") || "most-popular" !== sorting) {
+		if (query.get("sort") || defaultSorting !== sorting) {
 			updated = true;
-			if (sorting !== "most-popular") {
+			if (sorting !== defaultSorting) {
 				query.set("sort", sorting);
 			} else {
 				query.delete("sort");
@@ -273,11 +280,7 @@
 					<div class="kkcol col">
 						<div class="dropdown w-100" class:show={sortDropdownOpen}>
 							<button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" on:click={() => (sortDropdownOpen = !sortDropdownOpen)}> Sort by </button>
-							<div class="dropdown-menu" class:show={sortDropdownOpen} aria-labelledby="dropdownMenuButton" on:click={() => (sortDropdownOpen = false)}>
-								<button class="dropdown-item" on:click={() => setSorting('most-popular')}>Most Popular</button>
-								<button class="dropdown-item" on:click={() => setSorting('recently-updated')}>Recently Updated</button>
-								<!--<button class="dropdown-item" on:click={() => sorting="newest"}>Newest</button>-->
-							</div>
+							<div class="dropdown-menu" class:show={sortDropdownOpen} aria-labelledby="dropdownMenuButton" on:click={() => (sortDropdownOpen = false)}><button class="dropdown-item" on:click={() => setSorting('weekly-installs')}>Weekly Installs</button> <button class="dropdown-item" on:click={() => setSorting('total-installs')}>Total Installs</button> <button class="dropdown-item" on:click={() => setSorting('rating')}>Rating</button> <button class="dropdown-item" on:click={() => setSorting('updated')}>Updated</button> <button class="dropdown-item" on:click={() => setSorting('newest')}>Newest</button></div>
 						</div>
 					</div>
 					<div class="kkcol col">
