@@ -22,7 +22,7 @@ async function main() {
 			started++;
 			const json = JSON.parse(await fs.readFile(path.resolve(__dirname, "data", "styles", stylePath)));
 		
-			if (uso.shouldBeFullyArchived(json) && json.screenshots && json.screenshots.main && json.screenshots.main.archived === false && json.screenshots.main.name.includes("-")) {
+			if (uso.shouldBeFullyArchived(json)) {
 				try {
 					await uso.saveStyle(await uso.getStyle(json.id, true, true));
 				}
