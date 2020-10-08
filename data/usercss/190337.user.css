@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `Title. Erai-Raws looks pree bad by today's standardsThis... lessens that somewhat.`
-@version        2020105.13.21
+@version        2020108.18.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -48,11 +48,12 @@ nav, .bg-dark, .navbar-expand-md, .navbar
 
 .ddmega:hover,
 
-.page-numbers:hover
+.page-numbers:hover,
+
+.button, button
 {
     background: #12121354 !important;
 }
-
 
 .label_primary_finale
 {
@@ -79,9 +80,11 @@ span[style*="#f00"], span[style*="#ff0000"]
     color: #ff8d8d!important;
 }
 
-*
+*,
+
+#main > div:nth-child(3)
 {
-  border: none !important;
+  border-color: #0000 !important;
   box-shadow: none !important;
 }
 

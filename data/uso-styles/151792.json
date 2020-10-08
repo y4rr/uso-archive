@@ -1,1 +1,155 @@
-{"id":151792,"name":"Imgur Style Enhancements","description":"Makes the new Imgur home page layout to be linear instead of the new non-linear layout.\r\n<br><br>\r\nOption: Trending Tags - Can display or hide the Trending Tag banner on the Home page\r\n<br>\r\nOption: Favorites Page - Can apply the linear style of the Home page to the Favorites page\r\n<br>\r\nOption: Comment Enhancements - A healthy mix of the new and old style comments","user":{"id":498911,"name":"TheMercDeadpool","email":"redacted","paypal_email":null,"homepage":null,"about":null,"license":null},"updated":"2019-08-21T06:01:57.000Z","weekly_install_count":4,"total_install_count":457,"rating":null,"after_screenshot_name":"https://userstyles.org/style_screenshots/151792_after.jpeg?r=1600243533","obsoleting_style_id":null,"obsoleting_style_name":null,"obsolete":0,"admin_delete_reason_id":null,"obsoletion_message":null,"screenshots":["https://userstyles.org/style_screenshots/151792_additional_28750.jpeg?r=1600243533","https://userstyles.org/style_screenshots/151792_additional_28751.jpeg?r=1600243533","https://userstyles.org/style_screenshots/151792_additional_29006.jpeg?r=1600243533"],"license":null,"created":"2017-11-22T23:50:35.000Z","category":"site","raw_subcategory":"imgur","subcategory":"imgur","additional_info":null,"style_tags":[],"css":"@-moz-document url(\"https://imgur.com/\") {\r\n\r\n  /* Gallery */\r\n  .Grid-column > div {\r\n       height: 300px !important;\r\n       margin-bottom: 20px !important;\r\n   }\r\n\r\n  .Post-item-media {\r\n       height: 90% !important;\r\n  }\r\n\r\n  .Post-item-media img, .Post-item-media video {\r\n      height: 300px !important;\r\n      width: 100% !important;\r\n      object-fit: cover !important;\r\n      max-height: none !important;\r\n      max-width: none !important;\r\n  }\r\n\r\n  .Post-item-title {\r\n      width: 100% !important;\r\n      white-space: nowrap !important;\r\n      overflow: hidden !important;\r\n      text-overflow: ellipsis !important;\r\n  }\r\n\r\n  .Post-item-title > span {\r\n      display: block !important;\r\n  }\r\n  \r\n  \t/* Tag Banner */\r\n  \t/*[[TrendingTag]]*/\r\n}\r\n\r\n/*[[FavoritesPage]]*/\r\n\r\n/*[[PostsPage]]*/\r\n\r\n/*[[Comments]]*/","discussions":[],"discussionsCount":0,"commentsCount":0,"userjs_url":"/styles/userjs/151792/imgur-style-enhancements.user.js","style_settings":[{"id":460753,"style_id":151792,"install_key":"TrendingTag","label":"Display Trending Tags?","ordinal":0,"setting_type":"dropdown","style_setting_options":[{"id":1649572,"style_setting_id":460753,"label":"Yes","value":"","default":true,"ordinal":0,"install_key":"Yes"},{"id":1649573,"style_setting_id":460753,"label":"No","value":".TrendingTags {\r\n    display: none !important;\r\n}\r\n\r\n.App-cover {\r\n    min-height: 0 !important;\r\n}","default":false,"ordinal":1,"install_key":"No"}]},{"id":460771,"style_id":151792,"install_key":"FavoritesPage","label":"Make Favorites Page Linear?","ordinal":1,"setting_type":"dropdown","style_setting_options":[{"id":1649625,"style_setting_id":460771,"label":"Yes","value":"@-moz-document regexp(\"^https:\\\\/\\\\/imgur\\\\.com\\\\/user\\\\/.*\\\\/favorites$\") {\r\n/* Favorites Gallery */\r\n.Grid-column > div {\r\n     height: 300px !important;\r\n     margin-bottom: 20px !important;\r\n }\r\n\r\n.Post-item-media {\r\n     height: 90% !important;\r\n}\r\n\r\n.Post-item-media img, .Post-item-media video {\r\n    height: 300px !important;\r\n    width: 100% !important;\r\n    object-fit: cover !important;\r\n    max-height: none !important;\r\n    max-width: none !important;\r\n}\r\n\r\n.Post-item-title {\r\n    width: 100% !important;\r\n    white-space: nowrap !important;\r\n    overflow: hidden !important;\r\n    text-overflow: ellipsis !important;\r\n}\r\n\r\n.Post-item-title > span {\r\n    display: block !important;\r\n}\r\n}","default":true,"ordinal":0,"install_key":"Yes"},{"id":1649626,"style_setting_id":460771,"label":"No","value":"","default":false,"ordinal":1,"install_key":"No"}]},{"id":462303,"style_id":151792,"install_key":"PostsPage","label":"Make Posts Page Linear?","ordinal":2,"setting_type":"dropdown","style_setting_options":[{"id":1652931,"style_setting_id":462303,"label":"Yes","value":"@-moz-document regexp(\"^https:\\\\/\\\\/imgur\\\\.com\\\\/user\\\\/.*\\\\/posts$\") {\r\n.Grid-column > div {\r\n     height: 300px !important;\r\n     margin-bottom: 20px !important;\r\n }\r\n\r\n.Post-item-media {\r\n     height: 90% !important;\r\n}\r\n\r\n.Post-item-media img, .Post-item-media video {\r\n    height: 300px !important;\r\n    width: 100% !important;\r\n    object-fit: cover !important;\r\n    max-height: none !important;\r\n    max-width: none !important;\r\n}\r\n\r\n.Post-item-title {\r\n    width: 100% !important;\r\n    white-space: nowrap !important;\r\n    overflow: hidden !important;\r\n    text-overflow: ellipsis !important;\r\n}\r\n\r\n.Post-item-title > span {\r\n    display: block !important;\r\n}\r\n}","default":true,"ordinal":0,"install_key":"Yes"},{"id":1652932,"style_setting_id":462303,"label":"No","value":"","default":false,"ordinal":1,"install_key":"No"}]},{"id":461029,"style_id":151792,"install_key":"Comments","label":"Comments Enhancements?","ordinal":3,"setting_type":"dropdown","style_setting_options":[{"id":1650151,"style_setting_id":461029,"label":"Yes","value":"@-moz-document domain(\"imgur.com\") {\r\n.caption-gradient-wrapper,\r\n.caption-gradient {\r\n    all: unset !important;\r\n}\r\n.comment-reply-count-text,\r\n.usertext:before,\r\n.caption-create:before {\r\n    display: none!important;\r\n}\r\n#comments-container .usertext,\r\n#comments-container .caption-create,\r\n.comments-loaded .usertext {\r\n    background: #2c2f34 !important;\r\n    border-radius: 6px !important;\r\n}\r\n.comment-reply-count {\r\n    position: absolute !important;\r\n    float: left !important;\r\n    top: 45% !important;\r\n    bottom: 50% !important;\r\n    margin-top: 0px !important;\r\n    margin-bottom: 0px !important;\r\n    margin-left: -20px !important;\r\n    text-align: right !important;\r\n}\r\n.comment-votes {\r\n    left: -70px !important;\r\n    padding-right: 30px !important;\r\n}\r\n}","default":true,"ordinal":0,"install_key":"Yes"},{"id":1650152,"style_setting_id":461029,"label":"No","value":"","default":false,"ordinal":1,"install_key":"No"}]}]}
+{
+  "id": 151792,
+  "name": "Imgur Style Enhancements",
+  "description": "Makes the new Imgur home page layout to be linear instead of the new non-linear layout.\r\n<br><br>\r\nOption: Trending Tags - Can display or hide the Trending Tag banner on the Home page\r\n<br>\r\nOption: Favorites Page - Can apply the linear style of the Home page to the Favorites page\r\n<br>\r\nOption: Comment Enhancements - A healthy mix of the new and old style comments",
+  "user": {
+    "id": 498911,
+    "name": "TheMercDeadpool",
+    "email": "redacted",
+    "paypal_email": null,
+    "homepage": null,
+    "about": null,
+    "license": null
+  },
+  "updated": "2019-08-21T06:01:57.000Z",
+  "weekly_install_count": 5,
+  "total_install_count": 470,
+  "rating": null,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/151792_after.jpeg?r=1602057913",
+  "obsoleting_style_id": null,
+  "obsoleting_style_name": null,
+  "obsolete": 0,
+  "admin_delete_reason_id": null,
+  "obsoletion_message": null,
+  "screenshots": [
+    "https://userstyles.org/style_screenshots/151792_additional_28750.jpeg?r=1602057913",
+    "https://userstyles.org/style_screenshots/151792_additional_28751.jpeg?r=1602057913",
+    "https://userstyles.org/style_screenshots/151792_additional_29006.jpeg?r=1602057913"
+  ],
+  "license": null,
+  "created": "2017-11-22T23:50:35.000Z",
+  "category": "site",
+  "raw_subcategory": "imgur",
+  "subcategory": "imgur",
+  "additional_info": null,
+  "style_tags": [],
+  "css": "@-moz-document url(\"https://imgur.com/\") {\r\n\r\n  /* Gallery */\r\n  .Grid-column > div {\r\n       height: 300px !important;\r\n       margin-bottom: 20px !important;\r\n   }\r\n\r\n  .Post-item-media {\r\n       height: 90% !important;\r\n  }\r\n\r\n  .Post-item-media img, .Post-item-media video {\r\n      height: 300px !important;\r\n      width: 100% !important;\r\n      object-fit: cover !important;\r\n      max-height: none !important;\r\n      max-width: none !important;\r\n  }\r\n\r\n  .Post-item-title {\r\n      width: 100% !important;\r\n      white-space: nowrap !important;\r\n      overflow: hidden !important;\r\n      text-overflow: ellipsis !important;\r\n  }\r\n\r\n  .Post-item-title > span {\r\n      display: block !important;\r\n  }\r\n  \r\n  \t/* Tag Banner */\r\n  \t/*[[TrendingTag]]*/\r\n}\r\n\r\n/*[[FavoritesPage]]*/\r\n\r\n/*[[PostsPage]]*/\r\n\r\n/*[[Comments]]*/",
+  "discussions": [],
+  "discussionsCount": 0,
+  "commentsCount": 0,
+  "userjs_url": "/styles/userjs/151792/imgur-style-enhancements.user.js",
+  "style_settings": [
+    {
+      "id": 460753,
+      "style_id": 151792,
+      "install_key": "TrendingTag",
+      "label": "Display Trending Tags?",
+      "ordinal": 0,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1649572,
+          "style_setting_id": 460753,
+          "label": "Yes",
+          "value": "",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1649573,
+          "style_setting_id": 460753,
+          "label": "No",
+          "value": ".TrendingTags {\r\n    display: none !important;\r\n}\r\n\r\n.App-cover {\r\n    min-height: 0 !important;\r\n}",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    },
+    {
+      "id": 460771,
+      "style_id": 151792,
+      "install_key": "FavoritesPage",
+      "label": "Make Favorites Page Linear?",
+      "ordinal": 1,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1649625,
+          "style_setting_id": 460771,
+          "label": "Yes",
+          "value": "@-moz-document regexp(\"^https:\\\\/\\\\/imgur\\\\.com\\\\/user\\\\/.*\\\\/favorites$\") {\r\n/* Favorites Gallery */\r\n.Grid-column > div {\r\n     height: 300px !important;\r\n     margin-bottom: 20px !important;\r\n }\r\n\r\n.Post-item-media {\r\n     height: 90% !important;\r\n}\r\n\r\n.Post-item-media img, .Post-item-media video {\r\n    height: 300px !important;\r\n    width: 100% !important;\r\n    object-fit: cover !important;\r\n    max-height: none !important;\r\n    max-width: none !important;\r\n}\r\n\r\n.Post-item-title {\r\n    width: 100% !important;\r\n    white-space: nowrap !important;\r\n    overflow: hidden !important;\r\n    text-overflow: ellipsis !important;\r\n}\r\n\r\n.Post-item-title > span {\r\n    display: block !important;\r\n}\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1649626,
+          "style_setting_id": 460771,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    },
+    {
+      "id": 462303,
+      "style_id": 151792,
+      "install_key": "PostsPage",
+      "label": "Make Posts Page Linear?",
+      "ordinal": 2,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1652931,
+          "style_setting_id": 462303,
+          "label": "Yes",
+          "value": "@-moz-document regexp(\"^https:\\\\/\\\\/imgur\\\\.com\\\\/user\\\\/.*\\\\/posts$\") {\r\n.Grid-column > div {\r\n     height: 300px !important;\r\n     margin-bottom: 20px !important;\r\n }\r\n\r\n.Post-item-media {\r\n     height: 90% !important;\r\n}\r\n\r\n.Post-item-media img, .Post-item-media video {\r\n    height: 300px !important;\r\n    width: 100% !important;\r\n    object-fit: cover !important;\r\n    max-height: none !important;\r\n    max-width: none !important;\r\n}\r\n\r\n.Post-item-title {\r\n    width: 100% !important;\r\n    white-space: nowrap !important;\r\n    overflow: hidden !important;\r\n    text-overflow: ellipsis !important;\r\n}\r\n\r\n.Post-item-title > span {\r\n    display: block !important;\r\n}\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1652932,
+          "style_setting_id": 462303,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    },
+    {
+      "id": 461029,
+      "style_id": 151792,
+      "install_key": "Comments",
+      "label": "Comments Enhancements?",
+      "ordinal": 3,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1650151,
+          "style_setting_id": 461029,
+          "label": "Yes",
+          "value": "@-moz-document domain(\"imgur.com\") {\r\n.caption-gradient-wrapper,\r\n.caption-gradient {\r\n    all: unset !important;\r\n}\r\n.comment-reply-count-text,\r\n.usertext:before,\r\n.caption-create:before {\r\n    display: none!important;\r\n}\r\n#comments-container .usertext,\r\n#comments-container .caption-create,\r\n.comments-loaded .usertext {\r\n    background: #2c2f34 !important;\r\n    border-radius: 6px !important;\r\n}\r\n.comment-reply-count {\r\n    position: absolute !important;\r\n    float: left !important;\r\n    top: 45% !important;\r\n    bottom: 50% !important;\r\n    margin-top: 0px !important;\r\n    margin-bottom: 0px !important;\r\n    margin-left: -20px !important;\r\n    text-align: right !important;\r\n}\r\n.comment-votes {\r\n    left: -70px !important;\r\n    padding-right: 30px !important;\r\n}\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1650152,
+          "style_setting_id": 461029,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    }
+  ]
+}
