@@ -280,7 +280,7 @@
 					<div class="kkcol col">
 						<div class="dropdown w-100" class:show={sortDropdownOpen}>
 							<button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" on:click={() => (sortDropdownOpen = !sortDropdownOpen)}> Sort by </button>
-							<div class="dropdown-menu" class:show={sortDropdownOpen} aria-labelledby="dropdownMenuButton" on:click={() => (sortDropdownOpen = false)}><button class="dropdown-item" on:click={() => setSorting('weekly-installs')}>Weekly Installs</button> <button class="dropdown-item" on:click={() => setSorting('total-installs')}>Total Installs</button> <button class="dropdown-item" on:click={() => setSorting('rating')}>Rating</button> <button class="dropdown-item" on:click={() => setSorting('updated')}>Updated</button> <button class="dropdown-item" on:click={() => setSorting('newest')}>Newest</button></div>
+							<div class="dropdown-menu" class:show={sortDropdownOpen} aria-labelledby="dropdownMenuButton" on:click={() => (sortDropdownOpen = false)}><button class="dropdown-item" class:active={sorting === 'weekly-installs'} on:click={() => setSorting('weekly-installs')}>Weekly Installs</button> <button class="dropdown-item" class:active={sorting === 'total-installs'} on:click={() => setSorting('total-installs')}>Total Installs</button> <button class="dropdown-item" class:active={sorting === 'rating'} on:click={() => setSorting('rating')}>Rating</button> <button class="dropdown-item" class:active={sorting === 'updated'} on:click={() => setSorting('updated')}>Updated</button> <button class="dropdown-item" class:active={sorting === 'newest'} on:click={() => setSorting('newest')}>Newest</button></div>
 						</div>
 					</div>
 					<div class="kkcol col">
@@ -289,18 +289,21 @@
 							<div class="dropdown-menu" class:show={formatDropdownOpen} aria-labelledby="dropdownMenuButton" on:click={() => (formatDropdownOpen = false)}>
 								<button
 									class="dropdown-item"
+									class:active={filters.format === ''}
 									on:click={() => {
 										filters.format = '';
 										inputs.format = '';
 									}}>Any</button>
 								<button
 									class="dropdown-item"
+									class:active={filters.format === 'uso'}
 									on:click={() => {
 										filters.format = 'uso';
 										inputs.format = 'uso';
 									}}>UserStyles.org</button>
 								<button
 									class="dropdown-item"
+									class:active={filters.format === 'usercss'}
 									on:click={() => {
 										filters.format = 'usercss';
 										inputs.format = 'usercss';
