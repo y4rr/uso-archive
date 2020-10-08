@@ -300,12 +300,12 @@ background: rgba(0, 0, 0, 0.45);
 } EOT;
 
 }
-@advanced dropdown ci "Make sure "Custom Image?" Dropdown setting is set to "Yes"" {
+@advanced dropdown ci "Make sure \"Custom Image?\" Dropdown setting is set to \"Yes\"" {
 st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.png EOT;
 
 	ci-custom-dropdown "Custom" <<<EOT /*[[ci-custom]]*\/ EOT;
 }
-@advanced text ci-custom "Make sure "Custom Image?" Dropdown setting is set to "Yes" (Custom)" "https://example.com/image.png"
+@advanced text ci-custom "Make sure \"Custom Image?\" Dropdown setting is set to \"Yes\" (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
 @-moz-document domain("kickassanime.rs"), domain("animo-pace-stream.io"), domain("haloani.ru"), domain("kickassanime.io") {

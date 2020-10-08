@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Foil Fields
 @description    `A dish native to the Mediterranean culture consisting of poached eggs in a sauce of tomatoes, olive oil, peppers, onion and garlic, and commonly spiced with cumin, paprika, cayenne pepper and nutmeg.`
-@version        2020106.13.58
+@version        2020107.17.30
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown Image "Background" {
@@ -169,7 +169,12 @@ a,
     font-size: var(--fontSize);
 }
 
-.menu__subsection-header-link:hover, .menu__subsection-header-link:focus {
+.menu__link:hover {
+    color: #ffffffa6;
+    text-decoration: none;
+}
+
+.menu__subsection-header-link:hover, .menu__subsection-header-link:focus, .menu__link:focus {
     color: white;
 }
 

@@ -14,14 +14,14 @@ dv "На танцополе с Алисой" <<<EOT http://images.akamai.steamus
 mi "Неуклюжий Семён и Мику" <<<EOT http://i.playground.ru/i/93/64/87/10/pix/image.jpg EOT;
 mz "Вечерняя прогулка с Женей" <<<EOT https://i.yapx.ru/YOgi.png EOT;
 us "Ульянка на траве" <<<EOT http://vsevgallery.com/img/bPIC/201507/hvdtYojX1ZvW.jpg EOT;
-mt "Моя "строгая" вожатая" <<<EOT http://i1.ytimg.com/vi/H4fZ0BoClg0/maxresdefault.jpg EOT;
+mt "Моя \"строгая\" вожатая" <<<EOT http://i1.ytimg.com/vi/H4fZ0BoClg0/maxresdefault.jpg EOT;
 cs "У Виолы в медпункте" <<<EOT https://2ch.hk/ruvn/src/37675/15047805990720.jpg EOT;
 
 	fon-custom-dropdown "Custom" <<<EOT /*[[fon-custom]]*\/ EOT;
 }
 @advanced text fon-custom "Свой фон: (Custom)" "https://example.com/image.png"
 @advanced dropdown colors "Выберите цветовую палитру:" {
-	cold ""Холодная" палитра цветов*" <<<EOT .b-user-profile > table td:nth-child(2) > div > a, .b-user-menu__header a, .info, .tag_count, .story__rating-count, .b-banlist .banlist-table>tbody>tr>td a, .b-comment__user a, .b-comments-profile__title a, .b-comment__header {
+	cold "\"Холодная\" палитра цветов*" <<<EOT .b-user-profile > table td:nth-child(2) > div > a, .b-user-menu__header a, .info, .tag_count, .story__rating-count, .b-banlist .banlist-table>tbody>tr>td a, .b-comment__user a, .b-comments-profile__title a, .b-comment__header {
     color: #4FA1EC;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -139,7 +139,7 @@ blockquote {
     color: #aebbff;
     background: #4fa1ec99;
 } EOT;
-hot ""Тёплая" палитра цветов" <<<EOT .b-user-menu-list__count, .b-user-menu-list__count:hover {
+hot "\"Тёплая\" палитра цветов" <<<EOT .b-user-menu-list__count, .b-user-menu-list__count:hover {
     color: yellow;
     background-color: rgba(0, 0, 0, 0);
     background-image: url("http://savepic.ru/14599236.png");

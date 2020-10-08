@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kandy
 @description    `Если кнопка установки не работает, пробуем сначала нажать на кнопку Show CSS, а потом уже Install. Если не помогло, вместо расширения Stylish, устанавливаем Stylus.Краткий мануал по опциям: https://goo.gl/RY5XCGGithub: https://github.com/kapraru/vanilla-dark-vkПоддержать разработку:Яндекс.Кошелек - 410011732809550Paypal - a@kapra.ru`
-@version        202098.11.5
+@version        2020107.12.10
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown style-color "Стиль" {
@@ -1126,7 +1126,7 @@ input[readonly*='true']{
 }
 
 #page_header_cont .back, .top_nav_link {
-	background-color:#9B9674!important;
+	background-color:var(--color2)!important;
 }
 [dir=ltr] #top_nav input.text.ts_input, [dir=ltr] #top_nav  .top_nav_link.active {
 	background-color:#848066!important;	
@@ -1253,6 +1253,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%23B9B384' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] #page_header_cont {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+[dir] .TopSearch__input {
+  background-color: var(--color2);
+  filter: brightness(.7);
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 14 14' width='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.95856088 8.72112401 3.66015752 3.66015759c.3417088.3417087.3417088.8957281 0 1.2374368-.3417087.3417088-.8957281.3417088-1.2374368 0l-3.66015759-3.66015752c-.90534437.65521472-2.01813042 1.04143912-3.22112401 1.04143912-3.03756612 0-5.5-2.46243388-5.5-5.5s2.46243388-5.5 5.5-5.5 5.5 2.46243388 5.5 5.5c0 1.20299359-.3862244 2.31577964-1.04143912 3.22112401zm-4.45856088.52887599c2.07106781 0 3.75-1.67893219 3.75-3.75s-1.67893219-3.75-3.75-3.75-3.75 1.67893219-3.75 3.75 1.67893219 3.75 3.75 3.75z' fill='%23666'/%3E%3C/svg%3E");
+}
+.TopSearch .input_back_content {
+  color: var(--color3);
+}
+[dir] .TopSearch__input:focus {
+  background-color: var(--color2);
+  filter: brightness(.9);
+  color: #fff;
 } EOT;
 aqua-color "Aqua (с цветной шапкой)" <<<EOT /* Aqua (с цветной шапкой) *\/
 
@@ -1398,7 +1416,7 @@ input.text.ts_input:focus, .top_nav_link.active {
 }
 
 #page_header_cont .back, .top_nav_link {
-	background-color:#6BABAD!important;
+	background-color:var(--color2)!important;
 }
 input.text.ts_input {
 	background-color:#5C9193;	
@@ -1741,6 +1759,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%2377BABC' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] #page_header_cont {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+[dir] .TopSearch__input {
+  background-color: var(--color2);
+  filter: brightness(.7);
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 14 14' width='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.95856088 8.72112401 3.66015752 3.66015759c.3417088.3417087.3417088.8957281 0 1.2374368-.3417087.3417088-.8957281.3417088-1.2374368 0l-3.66015759-3.66015752c-.90534437.65521472-2.01813042 1.04143912-3.22112401 1.04143912-3.03756612 0-5.5-2.46243388-5.5-5.5s2.46243388-5.5 5.5-5.5 5.5 2.46243388 5.5 5.5c0 1.20299359-.3862244 2.31577964-1.04143912 3.22112401zm-4.45856088.52887599c2.07106781 0 3.75-1.67893219 3.75-3.75s-1.67893219-3.75-3.75-3.75-3.75 1.67893219-3.75 3.75 1.67893219 3.75 3.75 3.75z' fill='%23666'/%3E%3C/svg%3E");
+}
+.TopSearch .input_back_content {
+  color: var(--color3);
+}
+[dir] .TopSearch__input:focus {
+  background-color: var(--color2);
+  filter: brightness(.9);
+  color: #fff;
 } EOT;
 red-color "Rose (с цветной шапкой)" <<<EOT /* Rose (с цветной шапкой) *\/
 
@@ -2230,6 +2266,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%23ff7b5d' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] #page_header_cont {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+[dir] .TopSearch__input {
+  background-color: var(--color2);
+  filter: brightness(.7);
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 14 14' width='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.95856088 8.72112401 3.66015752 3.66015759c.3417088.3417087.3417088.8957281 0 1.2374368-.3417087.3417088-.8957281.3417088-1.2374368 0l-3.66015759-3.66015752c-.90534437.65521472-2.01813042 1.04143912-3.22112401 1.04143912-3.03756612 0-5.5-2.46243388-5.5-5.5s2.46243388-5.5 5.5-5.5 5.5 2.46243388 5.5 5.5c0 1.20299359-.3862244 2.31577964-1.04143912 3.22112401zm-4.45856088.52887599c2.07106781 0 3.75-1.67893219 3.75-3.75s-1.67893219-3.75-3.75-3.75-3.75 1.67893219-3.75 3.75 1.67893219 3.75 3.75 3.75z' fill='%23666'/%3E%3C/svg%3E");
+}
+.TopSearch .input_back_content {
+  color: var(--color3);
+}
+[dir] .TopSearch__input:focus {
+  background-color: var(--color2);
+  filter: brightness(.9);
+  color: #fff;
 } EOT;
 mint-color "Mint (с цветной шапкой)" <<<EOT /* Mint (с цветной шапкой) *\/
 
@@ -2500,6 +2554,24 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%2363b97f' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] #page_header_cont {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+[dir] .TopSearch__input {
+  background-color: var(--color2);
+  filter: brightness(.7);
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 14 14' width='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.95856088 8.72112401 3.66015752 3.66015759c.3417088.3417087.3417088.8957281 0 1.2374368-.3417087.3417088-.8957281.3417088-1.2374368 0l-3.66015759-3.66015752c-.90534437.65521472-2.01813042 1.04143912-3.22112401 1.04143912-3.03756612 0-5.5-2.46243388-5.5-5.5s2.46243388-5.5 5.5-5.5 5.5 2.46243388 5.5 5.5c0 1.20299359-.3862244 2.31577964-1.04143912 3.22112401zm-4.45856088.52887599c2.07106781 0 3.75-1.67893219 3.75-3.75s-1.67893219-3.75-3.75-3.75-3.75 1.67893219-3.75 3.75 1.67893219 3.75 3.75 3.75z' fill='%23666'/%3E%3C/svg%3E");
+}
+.TopSearch .input_back_content {
+  color: var(--color3);
+}
+[dir] .TopSearch__input:focus {
+  background-color: var(--color2);
+  filter: brightness(.9);
+  color: #fff;
 } EOT;
 colorless "Черно-белый" <<<EOT /* Черно-белый *\/
 
@@ -3363,6 +3435,16 @@ input.text.ts_input {
     border-color: var(--color4)!important;
     background-color: var(--color4)!important;
     padding-left: 16px!important;
+}
+#side_bar .left_label {
+  display: none;
+}
+#page_header, .head_nav, #page_header_cont .back, #page_header_cont {
+  height: initial!important;
+}
+#page_layout {
+  left: -40px;
+  top: 40px;
 } EOT;
 
 }
@@ -3961,13 +4043,13 @@ page_opacity_yes "Да" <<<EOT /* Полупрозрачность страни�
  EOT;
 
 }
-@advanced dropdown user_bg "Свой фон (в пункте выше должно быть выбрано "Своя")" {
+@advanced dropdown user_bg "Свой фон (в пункте выше должно быть выбрано \"Своя\")" {
 user_bg_galaxy "Forest*" <<<EOT https://i.imgur.com/DmJduiG.png EOT;
 
 	user_bg-custom-dropdown "Custom" <<<EOT /*[[user_bg-custom]]*\/ EOT;
 }
-@advanced text user_bg-custom "Свой фон (в пункте выше должно быть выбрано "Своя") (Custom)" "https://example.com/image.png"
-@advanced dropdown alt_online "Альтернативная индикация "онлайн"" {
+@advanced text user_bg-custom "Свой фон (в пункте выше должно быть выбрано \"Своя\") (Custom)" "https://example.com/image.png"
+@advanced dropdown alt_online "Альтернативная индикация \"онлайн\"" {
 	alt_online_off "Нет*" <<<EOT  EOT;
 alt_online_on "Да" <<<EOT /* Альтернативная индикация "онлайн" *\/
 
@@ -4633,6 +4715,7 @@ img[src="/images/camera_100.png"], img[src="/images/camera_100.png?ava=1"], img[
 	-webkit-filter: brightness(0.7)saturate(1.5) !important;
 	filter: brightness(0.7)saturate(1.5) !important;
 }
+
    /*[[style-color]]*/
 
 .checkbox_pic.facebook_pic.on, .im-page--back-btn:hover,.page_cover_image .ui_actions_menu_icons {
@@ -4999,5 +5082,20 @@ input.ui_search_field#groups_list_search {
 
 [dir] .pv_cont .pv_no_commments_placeholder, [dir] .pv_cont .pv_closed_commments_placeholder {
 filter: invert(0)!important;
+}
+[dir] #page_header_cont {
+  background-color: var(--color4);
+  border-color: var(--color4);
+}
+[dir] .TopSearch__input {
+  background-color: var(--color3);
+  background-image: url("data:image/svg+xml,%3Csvg height='14' viewBox='0 0 14 14' width='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.95856088 8.72112401 3.66015752 3.66015759c.3417088.3417087.3417088.8957281 0 1.2374368-.3417087.3417088-.8957281.3417088-1.2374368 0l-3.66015759-3.66015752c-.90534437.65521472-2.01813042 1.04143912-3.22112401 1.04143912-3.03756612 0-5.5-2.46243388-5.5-5.5s2.46243388-5.5 5.5-5.5 5.5 2.46243388 5.5 5.5c0 1.20299359-.3862244 2.31577964-1.04143912 3.22112401zm-4.45856088.52887599c2.07106781 0 3.75-1.67893219 3.75-3.75s-1.67893219-3.75-3.75-3.75-3.75 1.67893219-3.75 3.75 1.67893219 3.75 3.75 3.75z' fill='%23333'/%3E%3C/svg%3E");
+}
+.TopSearch .input_back_content {
+  color: var(--color7);
+}
+[dir] .TopSearch__input:focus {
+  background-color: var(--color3);
+  color: var(--color6);
 }
 }

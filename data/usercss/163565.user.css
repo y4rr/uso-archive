@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Moe-Miya
 @description    `基于LePtC的<a href="https://userstyles.org/styles/138553/dark-zhihu-leptc-mod">Dark-Zhihu-leptc-mod</a>修改。在此向原作者表示衷心感谢~这个主题比ST ASC君的 Dark-Zhihu 更为激进，回归纯粹的知识分享如果有不足的地方，请在评论区留言或<a href="https://github.com/iMisty/Deep-Dark-Zhihu">GitHub 发送 issue</a>注：更新后延时在5分钟~8小时内可能出现更新检测提示`
-@version        2020106.15.49
+@version        2020107.20.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown HideADs "是否隐藏右侧广告" {
@@ -601,53 +601,67 @@ url-prefix("https://zhuanlan.zhihu.com")
   .GlobalBalance {
     background: #2e2e2e;
   }
-  .GlobalWrite-topTitle{
+  .GlobalWrite-topTitle {
     color: #999;
   }
 
   /* 屏蔽右侧广告 */
-  .GlobalSideBar-carouselAD{
-    display: none!important;
+  .GlobalSideBar-carouselAD {
+    display: none !important;
   }
 
   /* 热榜 */
-  .HotListNavEditPad,.HotList,.RoomChannel{
+  .HotListNavEditPad,
+  .HotList,
+  .RoomChannel {
     background: #222;
     border-color: #444;
   }
-  .HotListNavEditPad-title{
+  .HotListNavEditPad-title {
     color: #999;
   }
-  .HotListNav-item,.RoomChannel-item{
+  .HotListNav-item,
+  .RoomChannel-item {
     color: #999;
     background: #2e2e2e;
   }
-  .HotListNav-sortableItem[data-hotlist-identifier=total].is-active{
+  .HotListNav-sortableItem[data-hotlist-identifier='total'].is-active {
     background: #444;
   }
 
   /* 发现页 */
   /* 专题/收藏夹 */
-  .ExploreSpecialCard,.ExploreRoundtableCard,.ExploreCollectionCard,.ExploreColumnCard{
+  .ExploreSpecialCard,
+  .ExploreRoundtableCard,
+  .ExploreCollectionCard,
+  .ExploreColumnCard {
     background: #2e2e2e;
   }
   /* 专题胶囊 */
-  .ExploreSpecialCard-contentTag{
+  .ExploreSpecialCard-contentTag {
     background: #444;
   }
   /* 正文内文部分 */
-  .ExploreCollectionCard-contentExcerpt,.ExploreColumnCard-intro{
+  .ExploreCollectionCard-contentExcerpt,
+  .ExploreColumnCard-intro {
     color: #999;
   }
   /* 收藏夹作者 */
-  .ExploreCollectionCard-creatorName{
+  .ExploreCollectionCard-creatorName {
     color: #d3d3d3;
   }
   /* 按钮 */
-  .ExploreHomePage-ContentSection-moreButton a{
+  .ExploreHomePage-ContentSection-moreButton a {
     color: #2e2e2e;
   }
 
+  /* 视频页 */
+  .ZVideo-title,
+  .ZVideo-description,
+  .ZVideoRecommendations-title,
+  .ZVideoRecommendationItem-title {
+    color: #999;
+  }
 
   /* Miya Edit End */
 

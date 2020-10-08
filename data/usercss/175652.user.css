@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MikeZ
 @description    `A darker theme for derstandard.at`
-@version        2020113.11.6
+@version        2020107.10.1
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
 @preprocessor   default
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.derstandard.at/") {
-	[data-theme="default"],
+[data-theme="default"],
 	.theme-default,
 	[data-theme="user"],
 	.theme-user {
@@ -146,6 +146,26 @@
         --theme-secondarytint: #dddddd !important;
     }
     .theme-zukunft {
+        --theme-background: #333333 !important;
+        --theme-primarytint:#eeeeee !important;
+        --theme-secondarytint: #dddddd !important;
+    }
+    .theme-immobilien,
+    .theme-kommentare,
+    .theme-kolumnen,
+    .theme-debatten,
+    .theme-automobil,
+    .theme-bildung,
+    .theme-reisen,
+    .theme-familie,
+    .theme-videosection,
+    .theme-oenrw,
+    .theme-wissenundgesellschaft,
+    .theme-deutschland,
+    .theme-meinung,
+    .theme-formulare,
+    .theme-jobsuche, 
+    .theme-immobiliensuche {
         --theme-background: #333333 !important;
         --theme-primarytint:#eeeeee !important;
         --theme-secondarytint: #dddddd !important;

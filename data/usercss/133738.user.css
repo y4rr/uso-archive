@@ -256,7 +256,7 @@ search_mod 2 "Выключено" <<<EOT #ts_wrap
 {} EOT;
 
 }
-@advanced dropdown hide_show_on_map "Ссылка "Показать на карте"" {
+@advanced dropdown hide_show_on_map "Ссылка \"Показать на карте\"" {
 	hide_show_on_map 1 "Не скрыто*" <<<EOT /**\/ EOT;
 hide_show_on_map 0 "Скрыто" <<<EOT #profile_photos_module > .header_right_link {
  display: none !important;

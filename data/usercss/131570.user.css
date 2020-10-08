@@ -57,7 +57,7 @@ reply_avatar_on "Да (По умолчанию) / On (Default)" <<<EOT  EOT;
 round_avatars_def "Везде (По умолчанию) / Everywhere (Default)" <<<EOT  EOT;
 
 }
-@advanced dropdown play_btn "Позиция кнопки "Play" в плеере / Play button position in the player" {
+@advanced dropdown play_btn "Позиция кнопки \"Play\" в плеере / Play button position in the player" {
 	play_btn_center "Между кнопками перемотки (По умолчанию) / Between last/next buttons (Default)*" <<<EOT  EOT;
 play_btn_left "Слева / On the left" <<<EOT /* Classic buttons order for top player *\/
   .eltt.eltt_bottom.eltt_arrow_size_normal .eltt_arrow_back:not([style*="margin-left: 307px;"]) { left: 14.5px !important; }
@@ -75,7 +75,7 @@ play_btn_right "Справа от кнопок перемотки (рекоме�
 	body:not(.body_im) #page_header_wrap::after { content: " "; position: fixed; right: 0; top: 0; height: 42px; width: calc(50% - 480px + 7.5px - 40.5px); }
 	body:not(.body_im) #page_header_cont { transition: opacity 0.2s; }
   body:not(.body_im) #stl_side[style*="display: block;"]:not([style*="top: 5"]):not([style*="height: 0px;"]) ~ #page_wrap #page_header_cont:not(:hover) { opacity: 0 !important; transition: opacity 0.4s, top 0s linear 0.6s; top: -42000px !important; } EOT;
-top_bar_hide ""Отцепить" полностью / "Unlock" completely" <<<EOT /* Static top bar *\/
+top_bar_hide "\"Отцепить\" полностью / \"Unlock\" completely" <<<EOT /* Static top bar *\/
   body:not(.body_im) #page_header_cont { position: absolute !important; }
   body:not(.body_im) #side_bar_inner { padding-bottom: 42px !important; }
   body:not(.body_im) #side_bar_inner > ol { margin-top: -42px !important; } EOT;

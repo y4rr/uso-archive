@@ -34,7 +34,7 @@ menu2 "Свободная" <<<EOT  EOT;
 hat "Стандартная" <<<EOT .jXDCJf {top: 14px !important;} EOT;
 
 }
-@advanced dropdown int "Скрывать блок "Сообщества" в профиле" {
+@advanced dropdown int "Скрывать блок \"Сообщества\" в профиле" {
 	int2 "Нет*" <<<EOT  EOT;
 int "Да" <<<EOT   /*Скрываем блок "Сообщества" в профиле*\/ 
   .xqrdOe > div[aria-label~="Сообщества"] {display: none;} 

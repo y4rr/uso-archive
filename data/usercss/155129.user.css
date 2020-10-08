@@ -20,14 +20,14 @@ no "No" <<<EOT  EOT;
 no "No" <<<EOT  EOT;
 
 }
-@advanced dropdown askanswers "Hide "answered your ask"" {
+@advanced dropdown askanswers "Hide \"answered your ask\"" {
 	yes "Yes*" <<<EOT .notification_ask_answer {
     display: none
 } EOT;
 no "No" <<<EOT  EOT;
 
 }
-@advanced dropdown asks "Hide "asked a question"" {
+@advanced dropdown asks "Hide \"asked a question\"" {
 	yes "Yes*" <<<EOT .notification_ask {
     display: none
 } EOT;

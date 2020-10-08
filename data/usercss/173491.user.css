@@ -8,64 +8,64 @@
 @preprocessor   uso
 @advanced color font_color "Цвет чата" #3E50B4
 @advanced color System_font_color "Цвет чата омоновца" #32CD32
-@advanced color To_color "Цвет "желтого" чата" #C71585
+@advanced color To_color "Цвет \"желтого\" чата" #C71585
 @advanced color Bg_color "Цвет фона" #131313
 @advanced color Sec_Bg_color "Вторичный цвет фона" #1A1A1B
-@advanced color radio_col "Цвет "белой" точки" #5A009D
-@advanced dropdown Env_butt "Кнопка "отправить сообщение"" {
+@advanced color radio_col "Цвет \"белой\" точки" #5A009D
+@advanced dropdown Env_butt "Кнопка \"отправить сообщение\"" {
 Env_butt "Оранжевый конверт*" <<<EOT https://i.ibb.co/ySgV48L/icons8-envelope-26.png EOT;
 
 	Env_butt-custom-dropdown "Custom" <<<EOT /*[[Env_butt-custom]]*\/ EOT;
 }
-@advanced text Env_butt-custom "Кнопка "отправить сообщение" (Custom)" "https://example.com/image.png"
-@advanced dropdown tel_butt "Кнопка "телефонный список"" {
+@advanced text Env_butt-custom "Кнопка \"отправить сообщение\" (Custom)" "https://example.com/image.png"
+@advanced dropdown tel_butt "Кнопка \"телефонный список\"" {
 tel_butt "Оранжевый*" <<<EOT https://i.ibb.co/m44pH64/icons8-iphone-26.png EOT;
 
 	tel_butt-custom-dropdown "Custom" <<<EOT /*[[tel_butt-custom]]*\/ EOT;
 }
-@advanced text tel_butt-custom "Кнопка "телефонный список" (Custom)" "https://example.com/image.png"
-@advanced dropdown op_sm_butt "Кнопка "открыть смайлы"" {
+@advanced text tel_butt-custom "Кнопка \"телефонный список\" (Custom)" "https://example.com/image.png"
+@advanced dropdown op_sm_butt "Кнопка \"открыть смайлы\"" {
 op_sm_butt "Оранжевый*" <<<EOT https://i.ibb.co/XjDDdBy/icons8-theatre-mask-26.png EOT;
 
 	op_sm_butt-custom-dropdown "Custom" <<<EOT /*[[op_sm_butt-custom]]*\/ EOT;
 }
-@advanced text op_sm_butt-custom "Кнопка "открыть смайлы" (Custom)" "https://example.com/image.png"
-@advanced dropdown cl_sm_butt "Кнопка "закрыть смайлы"" {
+@advanced text op_sm_butt-custom "Кнопка \"открыть смайлы\" (Custom)" "https://example.com/image.png"
+@advanced dropdown cl_sm_butt "Кнопка \"закрыть смайлы\"" {
 cl_sm_butt "Оранжевый*" <<<EOT https://i.ibb.co/XjDDdBy/icons8-theatre-mask-26.png EOT;
 
 	cl_sm_butt-custom-dropdown "Custom" <<<EOT /*[[cl_sm_butt-custom]]*\/ EOT;
 }
-@advanced text cl_sm_butt-custom "Кнопка "закрыть смайлы" (Custom)" "https://example.com/image.png"
-@advanced dropdown clean_butt "Кнопка "удалить чат"" {
+@advanced text cl_sm_butt-custom "Кнопка \"закрыть смайлы\" (Custom)" "https://example.com/image.png"
+@advanced dropdown clean_butt "Кнопка \"удалить чат\"" {
 clean_butt "Оранжевый*" <<<EOT https://i.ibb.co/Wn0wFWZ/icons8-erase-26.png EOT;
 
 	clean_butt-custom-dropdown "Custom" <<<EOT /*[[clean_butt-custom]]*\/ EOT;
 }
-@advanced text clean_butt-custom "Кнопка "удалить чат" (Custom)" "https://example.com/image.png"
-@advanced dropdown lock_butt "Кнопка "закрепить чат"" {
+@advanced text clean_butt-custom "Кнопка \"удалить чат\" (Custom)" "https://example.com/image.png"
+@advanced dropdown lock_butt "Кнопка \"закрепить чат\"" {
 lock_butt "Оранжевый*" <<<EOT https://i.ibb.co/SwsnvLy/icons8-lock-26.png EOT;
 
 	lock_butt-custom-dropdown "Custom" <<<EOT /*[[lock_butt-custom]]*\/ EOT;
 }
-@advanced text lock_butt-custom "Кнопка "закрепить чат" (Custom)" "https://example.com/image.png"
-@advanced dropdown unlock_butt "Кнопка "открепить чат"" {
+@advanced text lock_butt-custom "Кнопка \"закрепить чат\" (Custom)" "https://example.com/image.png"
+@advanced dropdown unlock_butt "Кнопка \"открепить чат\"" {
 unlock_butt "Оранжевый*" <<<EOT https://i.ibb.co/GWG85wJ/icons8-padlock-26.png EOT;
 
 	unlock_butt-custom-dropdown "Custom" <<<EOT /*[[unlock_butt-custom]]*\/ EOT;
 }
-@advanced text unlock_butt-custom "Кнопка "открепить чат" (Custom)" "https://example.com/image.png"
-@advanced dropdown loc_info_butt "Кнопка "Инфо по локациям"" {
+@advanced text unlock_butt-custom "Кнопка \"открепить чат\" (Custom)" "https://example.com/image.png"
+@advanced dropdown loc_info_butt "Кнопка \"Инфо по локациям\"" {
 loc_info_butt "Оранжевый*" <<<EOT https://i.ibb.co/Z8cN7Dz/icons8-letter-i-26.png EOT;
 
 	loc_info_butt-custom-dropdown "Custom" <<<EOT /*[[loc_info_butt-custom]]*\/ EOT;
 }
-@advanced text loc_info_butt-custom "Кнопка "Инфо по локациям" (Custom)" "https://example.com/image.png"
-@advanced dropdown upd_frame_butt "Кнопка "Обновить фрейм"" {
+@advanced text loc_info_butt-custom "Кнопка \"Инфо по локациям\" (Custom)" "https://example.com/image.png"
+@advanced dropdown upd_frame_butt "Кнопка \"Обновить фрейм\"" {
 upd_frame_butt "Оранжевый*" <<<EOT https://i.ibb.co/mBbtmNq/icons8-bulleted-list-26.png EOT;
 
 	upd_frame_butt-custom-dropdown "Custom" <<<EOT /*[[upd_frame_butt-custom]]*\/ EOT;
 }
-@advanced text upd_frame_butt-custom "Кнопка "Обновить фрейм" (Custom)" "https://example.com/image.png"
+@advanced text upd_frame_butt-custom "Кнопка \"Обновить фрейм\" (Custom)" "https://example.com/image.png"
 @advanced text phone_symb "Символ телефона" ""
 @advanced text phone_size "Размер телефона" "1.5"
 @advanced text radio_size "Размер кружка" "15"

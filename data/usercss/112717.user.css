@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kojoley
 @description    `Dark colored theme for news site <a href="http://meduza.io">Meduza.io</a>.Тёмная цветовая схема для новостного интернет-издания <a href="http://meduza.io">Медуза</a>.Приятного просмотра!`
-@version        2020105.19.13
+@version        2020108.0.49
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -980,6 +980,10 @@ div.EmbedMaterial-background[style='background-image: url("/image/attachments/im
 
 blockquote[class*="SimpleBlock-module_blockquote"] {
     background-color: #2d1901;
+}
+blockquote[class*="SimpleBlock-module_blockquote"] a {
+    color: #ddd;
+    box-shadow: inset 0 -1px #ddd;
 }
 
 div[class*="QuoteBlock-module_root"]:before {

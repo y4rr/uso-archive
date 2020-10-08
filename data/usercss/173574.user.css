@@ -6,7 +6,7 @@
 @version        2019916.22.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown hideHotTweets "Hide "Hot Picks" & "Twitter feed" (Also makes the middle section of the page full width)" {
+@advanced dropdown hideHotTweets "Hide \"Hot Picks\" & \"Twitter feed\" (Also makes the middle section of the page full width)" {
 	hideHotTweetsYes "yes*" <<<EOT #main > .row .col-lg-2 {
     display: none;
 }
@@ -16,7 +16,7 @@
 hideHotTweetsNo "no" <<<EOT /*not in use*\/ EOT;
 
 }
-@advanced dropdown hideNews "Hide "News Items"" {
+@advanced dropdown hideNews "Hide \"News Items\"" {
 	hideNewsNo "no*" <<<EOT /*Not in use*\/ EOT;
 hideNewsYes "yes" <<<EOT #main > .row .col-lg-10 > #panelmain:not(:nth-last-of-type(1)):not(:nth-last-of-type(2)) /*Not last or second last (those should hopefully be Staff picks and shout)*\/
 {
@@ -24,7 +24,7 @@ hideNewsYes "yes" <<<EOT #main > .row .col-lg-10 > #panelmain:not(:nth-last-of-t
 } EOT;
 
 }
-@advanced dropdown hideStaffPicks "Hide "Staff Picks"" {
+@advanced dropdown hideStaffPicks "Hide \"Staff Picks\"" {
 	hideStaffPicksNo "no*" <<<EOT /*Not in use*\/ EOT;
 hideStaffPicksYes "yes" <<<EOT #main > .row .col-lg-10 > #panelmain:last-of-type
 {

@@ -80,7 +80,7 @@ li.cForumRow .ipsDataItem_subList.withBorder, div.cForumList .ipsDataItem_subLis
 } EOT;
 
 }
-@advanced dropdown ukryjReklamyOgl "Ukrycie reklam typu "Ogłoszenie"" {
+@advanced dropdown ukryjReklamyOgl "Ukrycie reklam typu \"Ogłoszenie\"" {
 	ukryjReklamyOglNie "Nie*" <<<EOT /* Ukrycie reklam typu "Ogłoszenie" nie zostało wybrane *\/ EOT;
 ukryjReklamyOglTak "Tak" <<<EOT /* Ukrycie reklam typu "Ogłoszenie" *\/
 .cTopic article:not([id]) {
@@ -183,7 +183,7 @@ ukryjImgAltTak "Tak" <<<EOT /* Ukrycie tekstu pojawiającego się zamiast avatar
 } EOT;
 
 }
-@advanced dropdown usunSpolecz "Usunięcie przycisków "Udostępnij na..."" {
+@advanced dropdown usunSpolecz "Usunięcie przycisków \"Udostępnij na...\"" {
 	usunSpoleczNie "Nie*" <<<EOT /* Usunięcie przycisków "Udostępnij na..." nie zostało wybrane *\/ EOT;
 usunSpoleczTak "Tak" <<<EOT /* Usunięcie przycisków "Udostępnij na..." *\/
 ul[data-controller='core.front.core.sharelink'] {

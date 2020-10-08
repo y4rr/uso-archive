@@ -13,14 +13,14 @@ usera "Etkin" <<<EOT .sayfafull .kullanicidetay,.konudakikullanici {
 } EOT;
 
 }
-@advanced dropdown cevaplanan ""Cevaplanan" gizlensin" {
+@advanced dropdown cevaplanan "\"Cevaplanan\" gizlensin" {
 	cevaplanand "Pasif*" <<<EOT  EOT;
 cevaplanana "Etkin" <<<EOT header .ust .sag .ana-menu a:nth-of-type(1):not([href="#"]):not([href="/pm"]) {
     display: none !important;
 } EOT;
 
 }
-@advanced dropdown forumagit ""Foruma git" gizlensin" {
+@advanced dropdown forumagit "\"Foruma git\" gizlensin" {
 	forumagitd "Pasif*" <<<EOT  EOT;
 forumagita "Etkin" <<<EOT header .ust .foruma-git {
     display: none !important;
@@ -34,21 +34,21 @@ aramakutua "Etkin" <<<EOT .dhsearchbar {
 } EOT;
 
 }
-@advanced dropdown ozelmesaj ""Özel Mesaj" gizlensin" {
+@advanced dropdown ozelmesaj "\"Özel Mesaj\" gizlensin" {
 	ozelmesajd "Pasif*" <<<EOT  EOT;
 ozelmesaja "Etkin" <<<EOT header .ust .sag .ana-menu a:nth-of-type(2):not([href="#"]) {
     display: none !important;
 } EOT;
 
 }
-@advanced dropdown gecmis ""Geçmiş" gizlensin" {
+@advanced dropdown gecmis "\"Geçmiş\" gizlensin" {
 	gecmisd "Pasif*" <<<EOT  EOT;
 gecmisa "Etkin" <<<EOT header .ust .sag .ana-menu a:nth-of-type(4):not([href="#"]):not([href="/pm"]) {
     display: none !important;
 } EOT;
 
 }
-@advanced dropdown forumlarim ""Forumlarım" gizlensin" {
+@advanced dropdown forumlarim "\"Forumlarım\" gizlensin" {
 	forumlarimd "Pasif*" <<<EOT  EOT;
 forumlarima "Etkin" <<<EOT header .ust .sag .ana-menu span.acilir a[href="#"] {
     display: none !important;
@@ -56,21 +56,21 @@ forumlarima "Etkin" <<<EOT header .ust .sag .ana-menu span.acilir a[href="#"] {
  EOT;
 
 }
-@advanced dropdown banaozel ""Bana Özel" gizlensin"" {
+@advanced dropdown banaozel "\"Bana Özel\" gizlensin\"" {
 	banaozeld "Pasif*" <<<EOT  EOT;
 banaozela "Etkin" <<<EOT header .ust .sag .ana-menu span.acilir a[href="/pm"] {
     display: none !important;
 } EOT;
 
 }
-@advanced dropdown favoriler ""Favoriler" gizlensin" {
+@advanced dropdown favoriler "\"Favoriler\" gizlensin" {
 	favorilerd "Pasif*" <<<EOT  EOT;
 favorilera "Etkin" <<<EOT header .ust .sag .ana-menu a:nth-of-type(3):not([href="#"]):not([href="/pm"]) {
     display: none !important;
 } EOT;
 
 }
-@advanced dropdown takip ""Takip" listesi gizlensin" {
+@advanced dropdown takip "\"Takip\" listesi gizlensin" {
 	takipd "Pasif*" <<<EOT  EOT;
 takipa "Etkin" <<<EOT header nav.alt .takip {
     display: none !important;

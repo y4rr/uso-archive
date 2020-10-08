@@ -106,12 +106,12 @@ bg_yes "Своя (выбрать ниже)" <<<EOT body {
 mouth_no "Не увеличивать" <<<EOT  EOT;
 
 }
-@advanced dropdown user_bg "Свой фон (если выше выбрано "Своя")" {
+@advanced dropdown user_bg "Свой фон (если выше выбрано \"Своя\")" {
 forest "Forest*" <<<EOT http://d.zaix.ru/hh8r.jpg EOT;
 
 	user_bg-custom-dropdown "Custom" <<<EOT /*[[user_bg-custom]]*\/ EOT;
 }
-@advanced text user_bg-custom "Свой фон (если выше выбрано "Своя") (Custom)" "https://example.com/image.png"
+@advanced text user_bg-custom "Свой фон (если выше выбрано \"Своя\") (Custom)" "https://example.com/image.png"
 @advanced dropdown tr_style "Прозрачность блоков" {
 	tr_no "Нет*" <<<EOT 1 EOT;
 tr_yes "Да" <<<EOT 0.8 EOT;

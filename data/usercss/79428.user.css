@@ -6,21 +6,21 @@
 @version        2012123.19.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown postcount_user "Your "Posts" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced dropdown postcount_user "Your \"Posts\" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	postcount_user-custom-dropdown "Custom" <<<EOT /*[[postcount_user-custom]]*\/ EOT;
 }
-@advanced text postcount_user-custom "Your "Posts" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
-@advanced dropdown followercount_user "Your "Followers" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced text postcount_user-custom "Your \"Posts\" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced dropdown followercount_user "Your \"Followers\" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	followercount_user-custom-dropdown "Custom" <<<EOT /*[[followercount_user-custom]]*\/ EOT;
 }
-@advanced text followercount_user-custom "Your "Followers" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
-@advanced dropdown draftcount_user "Your "Drafts" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced text followercount_user-custom "Your \"Followers\" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced dropdown draftcount_user "Your \"Drafts\" count (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	draftcount_user-custom-dropdown "Custom" <<<EOT /*[[draftcount_user-custom]]*\/ EOT;
 }
-@advanced text draftcount_user-custom "Your "Drafts" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced text draftcount_user-custom "Your \"Drafts\" count (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
 @advanced dropdown post_no_edit "Posts      " {
 	No change "No change*" <<<EOT #posts_control .posts:before {
   content: "" !important;

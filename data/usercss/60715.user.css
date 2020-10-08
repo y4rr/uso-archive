@@ -6,7 +6,7 @@
 @version        201341.12.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown FollowOption ""Who to Follow" module" {
+@advanced dropdown FollowOption "\"Who to Follow\" module" {
 	Show  "Show *" <<<EOT  EOT;
 Minimize "Minimize" <<<EOT /*minimize "Who to Follow" module*\/
 .js-recommended-followers.dashboard-user-recommendations.flex-module-inner {
@@ -14,7 +14,7 @@ Minimize "Minimize" <<<EOT /*minimize "Who to Follow" module*\/
 } EOT;
 
 }
-@advanced dropdown MediaOption ""User's previously posted images & videos" module" {
+@advanced dropdown MediaOption "\"User's previously posted images & videos\" module" {
 	Show "Show*" <<<EOT  EOT;
 Minimize "Minimize" <<<EOT /*minimize "photos & videos" module*\/
 .media-box {
@@ -22,7 +22,7 @@ Minimize "Minimize" <<<EOT /*minimize "photos & videos" module*\/
    } EOT;
 
 }
-@advanced dropdown TrendsOption ""Trends" module" {
+@advanced dropdown TrendsOption "\"Trends\" module" {
 	Show "Show*" <<<EOT  EOT;
 Hide "Hide" <<<EOT /*hide "trends" module*\/
 .module.trends {

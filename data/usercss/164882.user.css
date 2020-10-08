@@ -108,7 +108,7 @@ off "On" <<<EOT .ytp-clip-start,
 off "Off" <<<EOT  EOT;
 
 }
-@advanced dropdown watch-overlay ""WATCHED" Overlay" {
+@advanced dropdown watch-overlay "\"WATCHED\" Overlay" {
 	on "On*" <<<EOT /* "WATCHED" overlay *\/
 yt-img-shadow.ytd-thumbnail[loaded] + #overlays.ytd-thumbnail {
 	position: relative;

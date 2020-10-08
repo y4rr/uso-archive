@@ -6,13 +6,13 @@
 @version        201868.22.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown wall_image "Fondo personalizado (si se cambia, conviene configurar la opción "Acomodar fondo")" {
+@advanced dropdown wall_image "Fondo personalizado (si se cambia, conviene configurar la opción \"Acomodar fondo\")" {
 wall_default "Fondo original en negro*" <<<EOT http://cdn.naruho.do/feed_uploads/6y5jto.png EOT;
 wall_hexagon_pattern "Patrón hexagonal" <<<EOT https://cdn.naruho.do/feed_uploads/N7IkrH.gif EOT;
 
 	wall_image-custom-dropdown "Custom" <<<EOT /*[[wall_image-custom]]*\/ EOT;
 }
-@advanced text wall_image-custom "Fondo personalizado (si se cambia, conviene configurar la opción "Acomodar fondo") (Custom)" "https://example.com/image.png"
+@advanced text wall_image-custom "Fondo personalizado (si se cambia, conviene configurar la opción \"Acomodar fondo\") (Custom)" "https://example.com/image.png"
 @advanced dropdown wall_attach "Desplazar fondo con contenido" {
 	wall_attach-fixed "No*" <<<EOT fixed EOT;
 wall_attach-scroll "Sí" <<<EOT scroll EOT;

@@ -6,7 +6,7 @@
 @version        2017427.14.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown showHideMoveIcons "Show "move top/down" arrows" {
+@advanced dropdown showHideMoveIcons "Show \"move top/down\" arrows" {
 	hideMoveIcons "No*" <<<EOT .glyphicon-open { display: none !important; }
 .glyphicon-save { display: none !important; }  EOT;
 showMoveIcons "Yes" <<<EOT  EOT;
@@ -23,7 +23,7 @@ showFilters "Yes" <<<EOT  EOT;
 showTags "Yes" <<<EOT  EOT;
 
 }
-@advanced dropdown showHideAddMultiple "Show "add multiple" button" {
+@advanced dropdown showHideAddMultiple "Show \"add multiple\" button" {
 	hideAddMultiple "No*" <<<EOT .help-block.btn-link span { display: none !important; }
 .col-md-3 .task-add { margin-bottom: 5em !important;} EOT;
 showAddMultiple "Yes" <<<EOT  EOT;
@@ -39,7 +39,7 @@ showOptionBoxes "Yes" <<<EOT  EOT;
 showFooter "Yes" <<<EOT  EOT;
 
 }
-@advanced dropdown showHideNotesIcon "Show "notes" icon" {
+@advanced dropdown showHideNotesIcon "Show \"notes\" icon" {
 	hideNotesIcon "No*" <<<EOT .task-notes { display: none !important; } EOT;
 showNotesIcon "Yes" <<<EOT  EOT;
 

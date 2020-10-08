@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         johnnymadrid
 @description    `Install stylus extension: Chromium based: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=enFirefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/Classic gray theme for bbs.io-tech.fi Xenforo 2.1 update. Select classic dark as a selected theme on the site first (though it should work pretty similarly with both dark themes now).`
-@version        2020103.22.52
+@version        2020108.7.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -397,6 +397,10 @@ article.message {
     color: var(--txt-color-1) !important;
 }
 
+.p-navSticky {
+    position: static !important;
+}
+
 .p-navEl {
     text-transform: uppercase !important;
 }
@@ -413,6 +417,10 @@ article.message {
 .p-navEl.is-selected a {
     background-color: var(--border-color-3) !important;
     color: var(--txt-color-1) !important;
+}
+
+.p-nav-list .p-navEl.is-selected {
+    background-color: var(--border-color-3) !important;
 }
 
 .p-navgroup.p-account.p-navgroup--member {
@@ -719,6 +727,11 @@ article.message {
     /* clear */
     border: 1px solid var(--txt-gray-color-2) !important;
     background: var(--transparent) !important;
+}
+
+.pageNav-page, .pageNav-jump {
+    background: var(--bg-color-2) !important;
+    border-color: var(--border-color-3) !important;
 }
 
 .bbWrapper .username,

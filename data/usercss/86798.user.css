@@ -20,7 +20,7 @@ Binary Fog "Binary Fog" <<<EOT https://i.imgur.com/1dAk670.jpg EOT;
 	yyy-custom-dropdown "Custom" <<<EOT /*[[yyy-custom]]*\/ EOT;
 }
 @advanced text yyy-custom "Choose wallpaper (Custom)" "https://example.com/image.png"
-@advanced dropdown lucky "The "I'm feeling lucky" button" {
+@advanced dropdown lucky "The \"I'm feeling lucky\" button" {
 	del "is useless - delete  *" <<<EOT [name=lucky] {display:none !important;} EOT;
 kee "keep as usual " <<<EOT [name=lucky] {display: inline !important;} EOT;
 

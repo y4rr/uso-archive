@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         bricklander
 @description    `makes brick-hill.com look like rule34.credits to t-j for the banner thing.`
-@version        2020102.11.43
+@version        2020108.11.39
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -48,7 +48,7 @@ nav div.secondary {
 }
 
 .alert.error {
-    background-color: #b9ffb3;
+    background-color: #6c9f67;
 }
 
 .card .footer {
@@ -302,14 +302,12 @@ button.tab-button.transparent {
 }
 
 .read-more-desc {
-    background-color: #AAE5A5;
+    background-color: #a2f2a0;
 }
 
 .toggle-user-desc:not(.open)::after {
 
-    background-color: #AAE5A5;
-
-    color: grey;
+    background-color: #a2f2a0;
 }
 
 .hover-card:hover {
@@ -359,6 +357,17 @@ footer {
 .line, hr {
     border-top: 0.5px solid #fff;
     border-bottom: 0.5px solid #fff;
+}
+
+.shop-categories .category.active, .shop-categories .category a:hover {
+    font-weight: 600;
+    color: #6665ca;
+    cursor: pointer;
+}
+
+.splash {
+    background-image: url(https://i.imgur.com/r0Lqaga.png);
+
 }
 
 footer, footer a {

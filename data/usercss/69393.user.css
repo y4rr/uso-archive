@@ -20,21 +20,21 @@ No "No" <<<EOT  EOT;
 No "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hide_wtf "hide "who to follow" but the link of the detail page is remained (「おすすめユーザー」を詳細ページへのリンクを残して消す)" {
+@advanced dropdown hide_wtf "hide \"who to follow\" but the link of the detail page is remained (「おすすめユーザー」を詳細ページへのリンクを残して消す)" {
 	Yes "Yes*" <<<EOT   .js-wtf-module .js-recommended-followers, .discover-nav .avatar-row, .WhoToFollow-users {
     display: none !important;
   } EOT;
 No "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hide_wtf_completely "hide "who to follow" completely (「おすすめユーザー」を詳細ページへのリンクを残さず完全に消す)" {
+@advanced dropdown hide_wtf_completely "hide \"who to follow\" completely (「おすすめユーザー」を詳細ページへのリンクを残さず完全に消す)" {
 	No "No*" <<<EOT  EOT;
 Yes "Yes" <<<EOT   .js-wtf-module, .list-link[href*="/who_to_follow/suggestions"] {
     display: none !important;
   }  EOT;
 
 }
-@advanced dropdown hide_sty "hide "slimilar to you" but the link of the detail page is remained (「似ているユーザー」を詳細ページへのリンクを残して消す)" {
+@advanced dropdown hide_sty "hide \"slimilar to you\" but the link of the detail page is remained (「似ているユーザー」を詳細ページへのリンクを残して消す)" {
 	Yes "Yes*" <<<EOT   .js-similar-to-module .flex-module {
     display: none !important;
   }
@@ -49,7 +49,7 @@ Yes "Yes" <<<EOT   .js-wtf-module, .list-link[href*="/who_to_follow/suggestions"
 No "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hide_sty_completely "hide "slimilar to you" completely (「似ているユーザー」を詳細ページへのリンクを残さず消す)" {
+@advanced dropdown hide_sty_completely "hide \"slimilar to you\" completely (「似ているユーザー」を詳細ページへのリンクを残さず消す)" {
 	No "No*" <<<EOT  EOT;
 Yes "Yes" <<<EOT   .js-similar-to-module {
     display: none !important;
@@ -77,7 +77,7 @@ No "No" <<<EOT  EOT;
 No "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hide_fpyk "hide "Find people you know" (「知り合いを見つけましょう」を隠す)" {
+@advanced dropdown hide_fpyk "hide \"Find people you know\" (「知り合いを見つけましょう」を隠す)" {
 	Yes "Yes*" <<<EOT   .js-wtf-module .flex-module {
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;

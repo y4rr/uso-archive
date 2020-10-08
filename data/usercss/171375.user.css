@@ -6,7 +6,7 @@
 @version        2020420.2.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown SuggestedGroups "Hide section "Suggested Groups" from group pages?" {
+@advanced dropdown SuggestedGroups "Hide section \"Suggested Groups\" from group pages?" {
 	yes "Yes*" <<<EOT #pagelet_ego_contextual_group
 {
     display: none !important;
@@ -14,7 +14,7 @@
 no "No" <<<EOT /* You turned this off *\/ EOT;
 
 }
-@advanced dropdown SuggestedEvents "Hide section "Suggested Events" from event pages?" {
+@advanced dropdown SuggestedEvents "Hide section \"Suggested Events\" from event pages?" {
 	yes "Yes*" <<<EOT #event_related_events
 {
     display: none !important;

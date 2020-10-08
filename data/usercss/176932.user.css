@@ -3,11 +3,33 @@
 @namespace      USO Archive
 @author         AloneInTheRoom
 @description    `обновленный, темный стиль для "любимого" ежужа, дабы ваши глазки не сгорали во время ночных посиделок за праком.Ну и так как я ленивая жопа, чтобы тестить на разных браузерах, я не гарантирую полную работоспособность где либо, кроме opera 66 и выше`
-@version        202035.22.41
+@version        2020108.13.44
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("earth.ispras.ru") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
+dsddsds.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty,
+.nTopNavList li:nth-of-type( 0) .nProbEmpty {
+    background-color: #1f8177c2 !important;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document domain("earth.ispras.ru"), domain("cmc.ejudge.ru") {
 /* scroll bar and selection */
 ::-webkit-scrollbar {
     width: 6px;
@@ -28,9 +50,8 @@
 }
 }
 
-@-moz-document url("https://earth.ispras.ru/") {
+@-moz-document url("https://earth.ispras.ru/"), url("https://cmc.ejudge.ru/") {
 /* main page */
-
 /* new background */
 html {
 	background: linear-gradient(0deg,#000000bd,#000000bd), url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
@@ -168,10 +189,13 @@ p {
 	margin-right: 0;
 	border-left: 3px solid #ff5900;
 	border-radius: 2px;
-}
+    padding-left: 10px;
 }
 
-@-moz-document regexp("https:\\/\\/earth\\.ispras\\.ru\\/cgi-bin\\/new-client\\?contest_id=\\d*&locale_id=\\d*") {
+
+}
+
+@-moz-document regexp("https:\\/\\/earth\\.ispras\\.ru\\/cgi-bin\\/new-client\\?contest_id=\\d*&locale_id=\\d*"), regexp("https:\\/\\/cmc\\.ejudge\\.ru\\/ej\\/client\\?contest_id=\\d*") {
 /* login page */
 
 /* disable and hide unnecessary things */
@@ -269,7 +293,6 @@ input[type="submit"] {
 }
 
 .user_actions input[type="submit"]:active {
-	box-shadow: inset 2px 2px 2px 2px #85a4d1;
 	background-color: #9FC3F6;
     border-radius: 2px;
 }
@@ -279,7 +302,7 @@ input[type="submit"] {
 
 }
 
-@-moz-document domain("earth.ispras.ru") {
+@-moz-document domain("earth.ispras.ru"), domain("cmc.ejudge.ru") {
 :root {
 	/*--main-text-color: #BAAB8F;*/
 	/*--main-text-color-darken:	#A09792;*/
@@ -296,7 +319,7 @@ input[type="submit"] {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* main content */
 
 /* disabel text shadow */
@@ -357,7 +380,7 @@ div.server_status_alarm { background-color: var(--server-alarm-color);   }
 /* remove unnecessary top padding and new border color*/
 td#probNavTaskArea { 
     padding-top: 0; 
-    border-color: #414141;
+    border: none;
 }
 
 /* code and examples pre block recolor */
@@ -371,9 +394,38 @@ pre {
 	color: #AAA;
 	background-color: #262626;
 }
+
+/* make footer flatter */
+#l13 {
+    padding-bottom: 0;
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+#l13 .probNav {
+    margin-bottom: 0;
+}
+
+#footer a, #footer a:visited {
+    color: #65acd0;
+    text-decoration: none;
+}
+
+div#probNavTaskArea {
+    width: auto;
+}
+
+#footer {
+    box-sizing: border-box;
+    border-top: 1px solid black;
+}
+
+.message-table .mes-top td {
+    background: none;
+    box-shadow: none;
+    background-color: #4c4c4c;
+}
+}
+
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* old tasks list style */
 /*
 .nBottomNavList {display:none;}
@@ -427,7 +479,7 @@ div.nProbBad:hover {
 */
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* info tab */
 .info-table-line {
 	box-shadow: none;
@@ -455,7 +507,7 @@ h2 {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* tests result style */
 
 /* reset box shadow */
@@ -466,9 +518,9 @@ h2 {
 /* new color for head table cells  */
 .table th, .table .th, table.standings th {
 	background: none;
-	background-color: #306677;
+	background-color: #48488b;
 	color: #ddd;
-	border-color: #4c4c4c;
+	border-color: #333362;
 	border-bottom: none;
     text-align: left;
     vertical-align: top;
@@ -482,6 +534,10 @@ h2 {
 	border-color: #4c4c4c;
 }
 
+.red-tr td {
+    background-color: #9f3e3e;
+}
+
 /* correct answer recolor */
 .table tr[bgcolor="#ddffdd"] td {
 	background-color: #337533;
@@ -489,7 +545,7 @@ h2 {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* code hightlight */
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
 	background-color: #242424;
@@ -517,7 +573,7 @@ code[class*="language-"] {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* race status */
 
 /* reset default style */
@@ -582,7 +638,7 @@ td.cell_attr_pr:hover::after{
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* results tab */
 a.tab {
 	color: #eee;
@@ -593,7 +649,7 @@ a.tab {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* task list - vertical */
 html,body {    
   height:100%;
@@ -605,6 +661,13 @@ html,body {
 }
 
 /*========================*/
+#probNavRightList {
+    padding-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    box-shadow: none;
+}
+
 /* disable bottom list */
 .nBottomNavList {display:none;}
 .nBottomNavList li a, .nTopNavList li a, a.tab:visited {
@@ -621,6 +684,35 @@ html,body {
 	transition: .2s;
 	margin: 0;
 	border-radius: 0 5px 5px 0;
+}
+
+#probNavRightList > div {
+    border: none;
+    background: none;
+    box-shadow: none;
+    width: 80px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+    transition: .2s;
+    left: 0;
+}
+
+#probNavRightList > div:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#probNavRightList .tab {
+    padding: 1px 0px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    transition: background .2s;
 }
 
 /* reset current font size */
@@ -650,29 +742,39 @@ html,body {
 }
 
 /* set new background colors for tabs */
+#probNavRightList .probCurrent .tab,
 #nTopNavSelected div.nProbCurrent {
 	background-color: var(--tab-current-color);
 }
+
+#probNavRightList .probEmpty .tab,
 div.nProbEmpty {
 	background-color: var(--tab-empty-color);
 }
+
+#probNavRightList .probBad .tab,
 div.nProbBad { 
 	background-color: var(--tab-bad-color);
 }
+
+#probNavRightList .probOk .tab,
 div.nProbOk {
 	background-color: var(--tab-ok-color);
 }
 
 /* new hover colors for tabs */
+#probNavRightList .probEmpty .tab:hover,
 .nTopNavList div.nProbEmpty:hover {
 	border: none;
 	background-color: #5A5A5A;
 }
 
+#probNavRightList .probOk .tab:hover,
 div.nProbOk:hover {
 	background-color: #61A661;
 }
 
+#probNavRightList .probBad .tab:hover,
 div.nProbBad:hover {
 	background-color: #B66E6C;
 }
@@ -689,20 +791,36 @@ div.nProbBad:hover {
 /*==============================*/
 
 /* make tab list a side block list */
+#probNavRightList,
 ul.nTopNavList {
 	position: fixed;
 	display: flex;
 	
-	top: 50px;
+	top: 44px;
     left: 0px;
-    bottom: 100px;
+    bottom: 4vh;
     overflow-y: auto;
     overflow-x: hidden;
 	direction: rtl;
+    align-items: flex-end;
 	
 	margin-top: 0;
 	
 	flex-direction: column;
+    height: fit-content;
+    max-height: 650px;
+}
+
+/* disable list style. set max width */
+.nTopNavList ul {
+	list-style-type: none;
+	max-width: 110px;
+    width: 100%;
+}
+
+.nTopNavList li {
+	width: 80%;
+	transition: .2s;
 }
 
 /* fix tabs display */
@@ -711,25 +829,24 @@ ul.nTopNavList {
 	float: left;
 	width: 100%;
 	text-align: center;
-	transition: 1s;
+	transition: .2s;
+    padding: 0 !important;
 }
 
 /* disable selection. transition */
 .nTopNavList li div a {
+    display: block;
 	user-select: none;
 	left: 0;
-	transition: .2s !important;
+    transition: .2s;
+    padding: 5px 0 !important;
+    bottom: 0 !important;
 }
 
 /* hover "animation" */
-.nTopNavList li div a:hover {
-	left: 10px;
-}
-
-/* disable list style. set max width */
-.nTopNavList ul {
-	list-style-type: none;
-	max-width: 110px;
+#probNavRightList > div:not(.probCurrent):hover,
+.nTopNavList li:hover {
+	left: -5px;
 }
 
 /* make scrollbar thinner */
@@ -738,7 +855,7 @@ ul.nTopNavList::-webkit-scrollbar {
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /*Top menu*/
 
 /* remove icon and title */
@@ -831,6 +948,7 @@ ul.nTopNavList::-webkit-scrollbar {
     border-left: 0;
     border-radius: 0 0 0 10px;
 }
+
 #main-menu ul li:last-child {
     margin-right: 0;
     border-right: 0;
@@ -860,12 +978,21 @@ ul.nTopNavList::-webkit-scrollbar {
     display: flex;
     align-items: center;
 }
+
+/* fix single child */
+#main-menu ul li:first-child:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    background-color: inherit !important;
+    text-transform: uppercase;
+}
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* half screen view */
-@media only screen and (max-width: 1000px) {
-	::root {
+@media only screen and (max-width: 1100px) {
+	:root {
 		--tw: 100%;
 	}
     
@@ -878,8 +1005,8 @@ ul.nTopNavList::-webkit-scrollbar {
     
     /* set new width for content */
     #container {
-        width: 80vw;
-        margin-right: 0;
+        width: auto;
+        margin-right: 40px;
     }
 
     /* reset width */
@@ -937,17 +1064,24 @@ ul.nTopNavList::-webkit-scrollbar {
         z-index: 2;
 	}
 	
-	#main-menu li:last-child:not(:first-child) div::before {
+	/*#main-menu li:last-child:not(:first-child) div::before {
 		padding: 5px 5px;
 		content: url(https://image.flaticon.com/icons/svg/1004/1004140.svg);
         width: 20px;
 		display: block;
 		position: absolute;
+	}*/
+    
+    #main-menu li:last-child:not(:first-child) div a::before {
+		padding: 0px 5px;
+		content: url(https://image.flaticon.com/icons/svg/1004/1004140.svg);
+        width: 20px;
+		display: block;
 	}
 }
 }
 
-@-moz-document regexp(".*earth\\.ispras\\.ru/.+") {
+@-moz-document regexp(".*earth\\.ispras\\.ru/.+"), regexp(".*cmc\\.ejudge\\.ru/.+") {
 /* text area, buttons and other */
 input, textarea {
     background-color: #4c4c4c;
@@ -1054,4 +1188,190 @@ select:active {
     margin-left: auto;
     margin-right: auto;
 }
+}
+
+@-moz-document regexp("https://earth.ispras.ru/[0-9]*/.*"), regexp("https://cmc\\.ejudge\\.ru/[0-9]*/.*") {
+/* not ejuj pages on earth.ispras. */
+.navbar-default {
+    background: none;
+    background-image: none;
+    border-color: #474747;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    box-shadow: none;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:hover {
+    color: #D5D2D2;
+}
+
+.navbar-header, .navbar-collapse {
+    background-color: #282828;
+}
+
+.nav-tabs { border: none; }
+
+.navbar-default .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar > .container .navbar-brand, 
+.navbar > .container-fluid .navbar-brand, 
+.nav-tabs > li > a {
+    margin: 0;
+}
+
+.navbar-default .navbar-collapse ul.nav-tabs {
+   
+    height: 100%;
+}
+
+.navbar-default .navbar-collapse ul.nav-tabs a {
+    border-left: 2px solid #2E2E2EC2;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-default .container { padding: 0 15px; }
+    .navbar-default { border: none; }
+    
+    .navbar-default .navbar-toggle {
+        border: none;
+        background-color: #202020;
+        display: flex;
+        flex-direction: column;
+        height: 35px;
+        justify-content: space-around;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #383838;
+    }
+
+    .navbar-default .navbar-toggle .sr-only {
+        display: none;
+    }
+
+    .navbar-toggle .icon-bar+.icon-bar {
+        margin-top: 0;
+    }
+
+    .navbar-default .navbar-brand {
+        color: #B8B8B8;
+    }
+
+    .navbar-default .navbar-toggle:active  {
+        transition: .2s;
+        justify-content: space-evenly;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #484848;
+    }
+
+    .navbar-default .navbar-collapse {
+        float: right;
+        border-top: none;
+        padding: 0;
+        box-shadow: -2px 2px 4px 1px #0000006e;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .navbar-default .navbar-collapse ul.nav-tabs {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        padding: 0;
+        border: none;
+        box-shadow: 0 0 10px 2px black;
+    }
+    .nav-tabs > li > a,
+    .nav-tabs > li.active > a, 
+    .nav-tabs > li.active > a:focus, 
+    .nav-tabs > li.active > a:hover {
+        border: none !important;
+    }
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    color: #D1D1D1;
+    text-align: center;
+    padding: 7px 15px;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover {
+    background-color: #42436E;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background-color: #3B3B3B;
+}
+
+.nav-tabs > li {
+    margin: 0;
+}
+/*==============NAV BAR==============*/
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+    color: #DDD;
+}
+
+body {
+    background-color: #353535;
+    color: #A9A9A9;
+}
+
+.bg-info, .bg-danger {
+    border-radius: 4px;
+    color: #E0E0E0;
+}
+
+.bg-info {
+    background-color: #354D64CF;
+}
+
+.bg-danger {
+    background-color: #CF4F4F73;
+}
+
+/* footer */
+body > div.container > div:last-child {
+    background-color: #26262663 !important;
+    border: none !important;
+    /*border-top: 2px solid #232323 !important;*/
+    border-radius: 4px;
+    padding: 5px 10px !important;
+    text-align: center;
+    color: transparent;
+}
+
+body > div.container > div:last-child a {
+    color: #7A7A7A;
+}
+
+body > div.container > div:last-child a:first-child {
+    float: left;
+}
+
+body > div.container > div:last-child a:last-child {
+    float: right;
+}
+
+.table-responsive, .table > thead > tr > th, .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-color: #4D4D4D;
+}
+
 }

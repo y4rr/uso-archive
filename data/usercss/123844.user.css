@@ -98,7 +98,7 @@ opt16v2 "Оставить значки и текст" <<<EOT .add-favorite-butto
 opt16n "Не изменять" <<<EOT  EOT;
 
 }
-@advanced dropdown opt18 "Кнопка "Телефон" на объявлениях" {
+@advanced dropdown opt18 "Кнопка \"Телефон\" на объявлениях" {
 	opt18y "Показывать всегда*" <<<EOT .snippet-experiment-content .item_table-extended-contacts_transparent, .item_gallery-extended-contacts_transparent {opacity: 1}
 .item_gallery-extended-contacts {position: relative; top: 2px}
 .item_gallery-extended-contacts .item-extended-contacts::before, .item_gallery-extended-contacts.is-loading::before {display: none} EOT;
@@ -172,7 +172,7 @@ opt22d "По умолчанию" <<<EOT  EOT;
 opt2y "Показать" <<<EOT  EOT;
 
 }
-@advanced dropdown opt7 "Блок "Увеличить просмотры" в ЛК" {
+@advanced dropdown opt7 "Блок \"Увеличить просмотры\" в ЛК" {
 	opt7y "Показать*" <<<EOT .app-list-3AJeK, .app-list-item-5gEGf {border: none !important}
 .app-list-item-5gEGf {background:var(--colr_back2);border-radius:var(--pix15); margin-bottom: 5px}
 .app-list-item-5gEGf:hover {box-shadow:var(--box_shad5) var(--colr_oran);}
@@ -192,7 +192,7 @@ opt23s "Показать" <<<EOT  EOT;
 opt24h "Скрыть" <<<EOT [data-is-xl] {display: none;} EOT;
 
 }
-@advanced dropdown opt11 "Блок "Популярное" на странице поиска" {
+@advanced dropdown opt11 "Блок \"Популярное\" на странице поиска" {
 	opt11n "Скрыть*" <<<EOT .cvr-container {display: none} EOT;
 opt11y "Показать" <<<EOT  EOT;
 

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        2020930.3.37
+@version        2020108.12.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.09.30 ********************** */
+/* Ameblo Management ver.2020.10.08 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -1991,7 +1991,7 @@ label[for="checkboxAll"] {
     height: 23px;
     line-height: 27px;
     text-shadow: 0.5px 0 0 #888;
-    background: linear-gradient(to bottom, #ffe082 20%, #ffc107 100%); }
+    background: linear-gradient(to bottom, #fff59e 20%, #ffe082 100%); }
 
 #comments .right .deleteCol {
     margin-top: 30px; }
@@ -2000,19 +2000,23 @@ label[for="checkboxAll"] {
     width: 15px;
     height: 15px; }
 
-#comments .right .txt:nth-child(2) {
-    margin-top: 7px; }
-
 #comments .right .txt:nth-child(2) a {
     display: inline-block;
-    padding: 1px 4px 0;
-    height: 21px;
-    color: #1976d2; }
+    margin: 2px 0 1px;
+    padding: 0 4px;
+    height: 23px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #888;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #fff 20%, #ececec 100%); }
 
 #comments .right .txt:nth-child(2) a:hover {
     text-decoration: none;
     color: #000;
-    background: #fff; }
+    background: #fff;
+    box-shadow: 0 0 0 2px #2196f3; }
 
 #comments .right .txt {
     width: 80px;
@@ -6011,7 +6015,11 @@ body {
 .HomeChecklist_Article_Image {
     width: 64px;
     height: 64px;
+    direction: rtl;
     z-index: 1; }
+
+.HomeChecklist_Article_Image:hover {
+    z-index: 2; }
 
 .HomeChecklist_Article_Image img {
     width: 100% !important;
@@ -6023,12 +6031,10 @@ body {
     border: 1px solid #ccc; }
 
 .HomeChecklist_Article_Image:hover img {
-    top: 75px;
-    right: 200px;
-    margin-right: -100px;
     width: 180px !important;
     outline: 6px solid #fff;
-    box-shadow: 0 20px 60px 0 #00000060; }
+    box-shadow: 0 20px 60px 0 #00000060;
+    transition: width 0.2s; }
 
 /* もっと見る 右列 縦方向 =共通= */
 .Collection_ReadMore.-LARGE .Collection_ReadMore_Button {

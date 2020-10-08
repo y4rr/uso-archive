@@ -26,7 +26,7 @@ tw-small "Small (80px)" <<<EOT     .tabbrowser-tab:not([pinned]) {
     } EOT;
 
 }
-@advanced dropdown tab-width-value "Minimum tab width (for "regular" mode only)" {
+@advanced dropdown tab-width-value "Minimum tab width (for \"regular\" mode only)" {
 	twv-default "Regular - 100px (Firefox default)*" <<<EOT 100px EOT;
 twv-medium "Medium - 140px (recommended)" <<<EOT 140px EOT;
 twv-large "Large - 180px" <<<EOT 180px EOT;
@@ -37,7 +37,7 @@ twv-fit9 "Fit ∼9 on screen (experimental, 10vw)" <<<EOT 10vw EOT;
 twv-fit5 "Fit ∼5 on screen (experimental, 17.5vw)" <<<EOT 17.5vw EOT;
 
 }
-@advanced dropdown label-spacing "Tab "label" spacing" {
+@advanced dropdown label-spacing "Tab \"label\" spacing" {
 	ls-medium "Medium (recommended)*" <<<EOT 6px EOT;
 ls-condensed "Condensed" <<<EOT 3px EOT;
 ls-default "Large (Firefox default)" <<<EOT 9px EOT;

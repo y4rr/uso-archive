@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tongyuantongyu
 @description    `Make the new LK (www.lightnovel.us) fells more comfortable, mainly by animations and automatic dark mode.`
-@version        2020923.8.34
+@version        2020108.13.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown scheme "主题设置" {
@@ -160,12 +160,9 @@ textarea:focus {
     box-shadow: none;
 }
 
-body {
-    background: var(--scheme-background-1);
-}
-
 html,
 body {
+    background: var(--scheme-background-1);
     font-family: var(--page-font) !important;
 }
 }

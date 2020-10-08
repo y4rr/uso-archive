@@ -6,32 +6,32 @@
 @version        20171123.11.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown message "Hide "Message" Button" {
+@advanced dropdown message "Hide \"Message\" Button" {
 	hide_message "Yes*" <<<EOT display:none EOT;
 show_reblog "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown dashboard "Hide "Dashboard" Button" {
+@advanced dropdown dashboard "Hide \"Dashboard\" Button" {
 	hide_dashboard "Yes*" <<<EOT display:none EOT;
 show_dashboard "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown embed "Hide "Embed" Button" {
+@advanced dropdown embed "Hide \"Embed\" Button" {
 	hide_embed "Yes*" <<<EOT display:none EOT;
 show_embed "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown install "Hide "Install Theme" Button" {
+@advanced dropdown install "Hide \"Install Theme\" Button" {
 	hide_install "Yes*" <<<EOT display:none !important; top:-999px !important EOT;
 show_install "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown getnotifications "Hide "Get Notifications" Button" {
+@advanced dropdown getnotifications "Hide \"Get Notifications\" Button" {
 	hide_getnotif "Yes*" <<<EOT display:none EOT;
 show_gtnotif "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown stopnotifications "Hide "Stop Notifications" Button" {
+@advanced dropdown stopnotifications "Hide \"Stop Notifications\" Button" {
 	hide_stopnotif "Yes*" <<<EOT display:none EOT;
 show_stopnotif "No" <<<EOT display:initial EOT;
 
@@ -41,22 +41,22 @@ show_stopnotif "No" <<<EOT display:initial EOT;
 show counter "No" <<<EOT display:initial EOT;
 
 }
-@advanced dropdown follow "Hide "Follow" Button" {
+@advanced dropdown follow "Hide \"Follow\" Button" {
 	show_follow "No*" <<<EOT float:right EOT;
 hide_follow "Yes" <<<EOT display:none EOT;
 
 }
-@advanced dropdown unfollow "Hide "Unfollow" Button" {
+@advanced dropdown unfollow "Hide \"Unfollow\" Button" {
 	show_unfollow "No*" <<<EOT float:right EOT;
 hide_unfollow "Yes" <<<EOT display:none EOT;
 
 }
-@advanced dropdown like "Hide "Like" Button" {
+@advanced dropdown like "Hide \"Like\" Button" {
 	show_like "No*" <<<EOT margin-top:0px; EOT;
 hide_like "Yes" <<<EOT display:none EOT;
 
 }
-@advanced dropdown reblog "Hide "Reblog" Button" {
+@advanced dropdown reblog "Hide \"Reblog\" Button" {
 	show_reblog "No*" <<<EOT display:initial EOT;
 hide_reblog "Yes" <<<EOT display:none EOT;
 

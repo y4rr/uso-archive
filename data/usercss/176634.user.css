@@ -11,19 +11,19 @@
 hide "Hide" <<<EOT display: none; EOT;
 
 }
-@advanced dropdown SweepHide "Hide "Sweep" Button" {
+@advanced dropdown SweepHide "Hide \"Sweep\" Button" {
 	show "Show*" <<<EOT  EOT;
 hide "Hide" <<<EOT display: none; EOT;
 
 }
-@advanced dropdown HideGroups "Hide "Groups" Folder" {
+@advanced dropdown HideGroups "Hide \"Groups\" Folder" {
 	Show "Show*" <<<EOT  EOT;
 hide "Hide" <<<EOT div[role=treeitem][title=Groups] { /* Groups Folder in Navigation Pane *\/
    display: none; 
 } EOT;
 
 }
-@advanced dropdown HideAddFavorite "Hide "Add Favorite" in Navigation Pane" {
+@advanced dropdown HideAddFavorite "Hide \"Add Favorite\" in Navigation Pane" {
 	Hide "Hide*" <<<EOT div[role=treeitem][title="Add favorite"] { /* Add Favorite in Navigation Pane *\/
    display: none; 
 } EOT;

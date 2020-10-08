@@ -626,12 +626,12 @@ transition: width 1s
 } EOT;
 
 }
-@advanced dropdown ci "Custom background image ("Custom" theme is REQUIRED for custom image and colors to work properly!)" {
+@advanced dropdown ci "Custom background image (\"Custom\" theme is REQUIRED for custom image and colors to work properly!)" {
 st "Standard*" <<<EOT http://up.8desk.com/15/pic_source/06/92/d9/0692d99df9692e1aec9a79de0008da31.jpg EOT;
 
 	ci-custom-dropdown "Custom" <<<EOT /*[[ci-custom]]*\/ EOT;
 }
-@advanced text ci-custom "Custom background image ("Custom" theme is REQUIRED for custom image and colors to work properly!) (Custom)" "https://example.com/image.png"
+@advanced text ci-custom "Custom background image (\"Custom\" theme is REQUIRED for custom image and colors to work properly!) (Custom)" "https://example.com/image.png"
 @advanced color txt "Text color" #FFFFFF
 @advanced color act "Accent color" #FF0000
 @advanced color bcg "Background color" #14111A

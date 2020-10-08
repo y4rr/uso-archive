@@ -2,12 +2,12 @@
 @name           NewVK Dark Theme - Telegram Style
 @namespace      USO Archive
 @author         Maksim Alyabyshev
-@description    `Сообщения о багах и т.п. https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        2020105.19.11
+@description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
+@version        2020108.14.7
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
+@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
 [dir] .pv_cont .pv_closed_commments_placeholder { background-image: url( https://static.wixstatic.com/shapes/a7407d_971b1317f1fb423eacb57c2f6851a330.svg ); }
 [dir] .ui_search_new.ui_search_field_empty .ui_search_button_search { background-color: #242F3D; }
 [dir] .ui_search_new.ui_search_field_empty .ui_search_button_search,[dir] input.ui_search_field { background-image: url( https://static.wixstatic.com/shapes/a7407d_4f9e32d09aec4bad831b6f4e70fb9bad.svg ); }
@@ -153,7 +153,7 @@
 [dir] a.group_app_button_multi { color: #FFF; border-bottom-color: #242F3D; }
 [dir] a.groups_create_box_input { color: #BBC8D2; }
 [dir] a.ts_contact.active,[dir] a.ts_search_link.active { background: #242F3D; }
-[dir] a:hover .left_count_wrap { background: #F05C44; }
+
 [dir] .audio_row .audio_row__performer { color: #8EC5FF; }
 [dir] .audio_row.lyrics .audio_title_inner { color: #C0DBF7; }
 [dir] .audio_row.audio_row_current .audio_row_inner,[dir] .audio_row.audio_row_current .audio_row_inner:hover,[dir] .audio_row.audio_row_playing .audio_row_inner,[dir] .audio_row.audio_row_playing .audio_row_inner:hover,[dir] .audio_row:hover:not(.audio_row__current) .audio_row_content,[dir] .audio_row:not(.audio_row_current):hover .audio_row_inner { background-color: #242F3D; }
@@ -2215,7 +2215,7 @@
 
 }
 
-@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
+@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
 [dir] .deep_active .wall_module .replies .reply_fakebox, [dir] .deep_active .wall_module .wl_replies_block_wrap .reply_fakebox, [dir] .deep_active .wl_replies_block_wrap .reply_fakebox, [dir] .deep_active .replies .reply_fakebox, [dir] .deep_active .replies .reply_box div.submit_post_field, [dir] .deep_active .replies .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active.wall_module .wl_replies_block_wrap .reply_box div.submit_post_field, [dir] .deep_active.wall_module .wl_replies_block_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active.wall_module .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field, [dir] .deep_active.wall_module .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active .wl_replies_block_wrap .reply_box div.submit_post_field, [dir] .deep_active .wl_replies_block_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field, [dir] .deep_active .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active .replies .replies_wrap_deep .reply_box_inner_wrap .reply_fakebox, [dir] .deep_active:not(.closed_comments) .replies .reply_box div.submit_post_field, [dir] .deep_active:not(.closed_comments) .replies .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active .wall_module:not(.closed_comments) .wl_replies_block_wrap .reply_box div.submit_post_field, [dir] .deep_active .wall_module:not(.closed_comments) .wl_replies_block_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active .wall_module:not(.closed_comments) .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field, [dir] .deep_active .wall_module:not(.closed_comments) .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active:not(.closed_comments) .replies .replies_wrap_deep .reply_box_inner_wrap .reply_fakebox, [dir] .deep_active:not(.closed_comments) .replies .reply_fakebox, [dir] .deep_active.wall_module:not(.closed_comments) .wl_replies_block_wrap .reply_box div.submit_post_field, [dir] .deep_active.wall_module:not(.closed_comments) .wl_replies_block_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active.wall_module:not(.closed_comments) .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field, [dir] .deep_active.wall_module:not(.closed_comments) .wl_replies_block_wrap .wl_reply_form_wrap .reply_box div.submit_post_field[contenteditable=true], [dir] .deep_active.wall_module:not(.closed_comments) .wl_replies_block_wrap .replies_wrap_deep .reply_box_inner_wrap .reply_fakebox, [dir] .deep_active:not(.closed_comments) .wl_replies_block_wrap .replies_wrap_deep .reply_box_inner_wrap .reply_fakebox {
 	background-color: transparent;
 	border-color: transparent;
@@ -2289,7 +2289,7 @@
 
 }
 
-@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
+@-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
 [dir] .article_layer .article_layer__dark {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' viewBox='0 0 48 48' width='48'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h48v48h-48z'/%3E%3Cpath d='m19.4673411 11.2326905c-4.4129352 2.0784574-7.4673411 6.5661861-7.4673411 11.7673095 0 7.1797017 5.8202983 13 13 13 5.20282 0 9.6917798-3.0563989 11.7693427-7.4716601-4.5466308 1.9925303-10.2748059.9391439-14.2570083-3.0430585-3.9809128-3.9809129-5.0349062-9.7066677-3.0449933-14.2525909z' stroke='%23ae81ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -2405,4 +2405,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /* [dir] div#content ._audio_page_player_wrap.audio_page_player_wrap.page_block { box-shadow: none; -webkit-animation: music_page_border 18s linear infinite; animation: music_page_border 18s linear infinite; } */
 [dir] div#content ._audio_page_content_block_wrap.audio_page_content_block_wrap { background-color: #0E1621; -webkit-animation: music_page_border 18s linear infinite; animation: music_page_border 18s linear infinite; }
+
+
+[dir] #side_bar_inner a.left_row:hover .left_count_wrap {
+	--left-menu-counter-background: #F05C44;
+	background-color: #F05C44; 
+}
+[dir] #side_bar_inner .left_row:hover .left_count_wrap {
+    background-color: #F05C44;
+}
+
 }

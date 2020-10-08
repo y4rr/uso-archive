@@ -172,7 +172,7 @@ No "No" <<<EOT /* Logout Screen not Installed *\/ EOT;
 No "No" <<<EOT /* Advert/Promotion Blocker not Installed *\/ EOT;
 
 }
-@advanced dropdown Highlighting "Highlight tweets/links from/to accounts? (IF NO: go to "Expand/collapse...")" {
+@advanced dropdown Highlighting "Highlight tweets/links from/to accounts? (IF NO: go to \"Expand/collapse...\")" {
 	Yes "Yes*" <<<EOT /*Highlighting tweets/links from/to specified account(s)*\/
   [href="/#!//*[[UsernameforLinks]]*\/"]{background-color:/*[[ColourforLinks]]*\/ !important;}
   [data-element-term="tweet_stats"], .list-link, .pretty-link.js-screen-name{background-color:#FFFFFF !important;}
@@ -182,19 +182,19 @@ No "No" <<<EOT /* Advert/Promotion Blocker not Installed *\/ EOT;
 No "No" <<<EOT /* Highlighting not Installed *\/ EOT;
 
 }
-@advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. "BBCNews", without quotes)" {
+@advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes)" {
 This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforLinks-custom-dropdown "Custom" <<<EOT /*[[UsernameforLinks-custom]]*\/ EOT;
 }
-@advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. "BBCNews", without quotes) (Custom)" "https://example.com/image.png"
+@advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforLinks "Colour for links highlighting to account specified:" #FFFF75
-@advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. "BBCNews", without quotes)" {
+@advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes)" {
 This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforTweets-custom-dropdown "Custom" <<<EOT /*[[UsernameforTweets-custom]]*\/ EOT;
 }
-@advanced text UsernameforTweets-custom "Account to highlight tweets from, without the '@': (e.g. "BBCNews", without quotes) (Custom)" "https://example.com/image.png"
+@advanced text UsernameforTweets-custom "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforTweets "Colour for tweets from account specified:" #AFFFFF
 @advanced dropdown Sidebar "Expand/Collapse extra sidebar elements?" {
 	Yes "Yes*" <<<EOT /*Sidebar*\/

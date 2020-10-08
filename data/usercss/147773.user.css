@@ -77,7 +77,7 @@ yes "Yes" <<<EOT     .usertitle {
 no "No" <<<EOT  EOT;
 
 }
-@advanced dropdown lasteditedtotop "Move "Last Edited" to the top" {
+@advanced dropdown lasteditedtotop "Move \"Last Edited\" to the top" {
 	yes "Yes*" <<<EOT .b-post__edit {
         position: absolute;
         font-size: 11px;
@@ -215,7 +215,7 @@ yes "Yes" <<<EOT     .topic-list-container .topic-wrapper a b,
     }   EOT;
 
 }
-@advanced dropdown statustoicon "Replace "pinned" and "closed" labels to icons" {
+@advanced dropdown statustoicon "Replace \"pinned\" and \"closed\" labels to icons" {
 	yes "Yes*" <<<EOT     #privateMessageContainer .sticky .topic-wrapper .prefix {
         display: none;
     }
@@ -256,7 +256,7 @@ no "No" <<<EOT  EOT;
 no "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hidetopicicons "Replace topic status icons to "notch"" {
+@advanced dropdown hidetopicicons "Replace topic status icons to \"notch\"" {
 	yes "Yes*" <<<EOT    #privateMessageContainer .topic-wrapper > img,
     .topic-list-container .topic-item .cell-topic .vb-icon-topic-status {
         position: absolute;

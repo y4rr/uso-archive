@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have a YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Optional Video Dim (-25% brightness);https://userstyles.org/styles/175380/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        2020102.22.54
+@version        2020107.15.0
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,15 +31,15 @@
 /*                                                              */
 /*         1      Text                                          */
 /*       188      Backgrounds                                   */
-/*       374      Channel (Tabs are here)                       */
-/*       488      Popups                                        */
-/*       543      Menus (Gradients here)                        */
-/*       750      Search                                        */
-/*       907      Buttons                                       */
-/*      1269      Video Player                                  */
-/*      1520      Chat                                          */
-/*      1685      Misc                                          */
-/*      2038      Ads                                           */
+/*       375      Channel (Tabs are here)                       */
+/*       489      Popups                                        */
+/*       544      Menus (Gradients here)                        */
+/*       751      Search                                        */
+/*       908      Buttons                                       */
+/*      1270      Video Player                                  */
+/*      1521      Chat                                          */
+/*      1686      Misc                                          */
+/*      2056      Ads                                           */
 /*                                                              */
 /*                                                              */
 /*      Code #3 - Custom Cursors                                */
@@ -406,6 +406,7 @@ ytd-watch-card-rich-header-renderer,
 .yt-alert-default.yt-alert-info,
 .ytd-carousel-header-renderer,
 .yt-masthead-creation-clickcard .yt-uix-clickcard-card-content,
+.ytd-info-panel-container-renderer,
 .ytd-movie-offer-module-renderer
 {
     background-color: #111 !important;
@@ -550,7 +551,7 @@ paper-icon-button.paper-tabs:active,
 #tabs.style-scope.ytd-c4-tabbed-header-renderer paper-icon-button.style-scope.paper-tabs:active,
 #tabs-inner-container.style-scope.ytd-interactive-tabbed-header-renderer paper-tabs.style-scope.ytd-interactive-tabbed-header-renderer paper-icon-button.style-scope.paper-tabs:active,
 ytd-playlist-video-renderer:active,
-ytd-thumbnail-overlay-side-panel-renderer[bottom-panel]:hover
+ytd-thumbnail-overlay-side-panel-renderer[bottom-panel]:active
 {
     filter: brightness(.6) !important;
     transition: 0s !important;
@@ -2499,8 +2500,6 @@ ytp-bottom:hover,
 .yt-simple-endpoint,
 .yt-simple-endpoint:hover,
 .ytd-menu-service-item-renderer:hover,
-.ytp-cued-thumbnail-overlay-image,
-.ytp-menuitem,
 .ytd-subscribe-button-renderer:hover,
 .ytp-ad-image-overlay,
 .ytp-ad-overlay-image,
@@ -2509,7 +2508,10 @@ ytp-bottom:hover,
 .ytp-ad-toggle-button-label,
 .ytp-button,
 .ytp-cards-teaser-shown .ytp-cards-teaser,
+.ytp-ce-element,
+.ytp-cued-thumbnail-overlay-image,
 .ytp-flyout-cta,
+.ytp-menuitem,
 .ytp-progress-bar-container:not([aria-disabled=true])
 {
   cursor: url("data:image/png;base64,AAACAAEAGhoAAAUAAABoBwAAFgAAACgAAAAaAAAANAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAQEAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAEBAQABAAABAAABAAABAAABAAAAAAAAAAAAAAAAAAAAAQAAAQAAAQAAAQABAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAEAAAEBAAAAAAAAAAAAAAAAAAAAAAABAAABAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAD////A////wP///8D////A+AH/wPgB/8D4Af/A8AD/wPAA/8DgAP/A4AB/wMAAf8DAAH/AgAB/wAAAf8AAAH/AEAB/wPAA/8DwAf/A8Af/wPA//8Dw///A8P//wPD//8Dw///A+f//wA=="), default !important;
@@ -2640,13 +2642,14 @@ ytp-bottom:active,
 .yt-simple-endpoint:active,
 .ytd-menu-service-item-renderer:active,
 .ytd-subscribe-button-renderer:active,
-.ytp-cued-thumbnail-overlay-image:active,
 .ytp-ad-image-overlay:active,
 .ytp-ad-overlay-close-container:active,
 .ytp-ad-overlay-image:active,
 .ytp-ad-overlay-title:active,
 .ytp-button:active,
 .ytp-cards-teaser-shown .ytp-cards-teaser:active,
+.ytp-ce-element:active,
+.ytp-cued-thumbnail-overlay-image:active,
 .ytp-flyout-cta:active,
 .ytp-menuitem:active
 {

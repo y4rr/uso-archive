@@ -78,7 +78,7 @@ csvis2 "Hide" <<<EOT none EOT;
 albubig2 "Disable" <<<EOT /* Alert button bigger -> disabled *\/ EOT;
 
 }
-@advanced dropdown gappci "Add a circle around the "Google apps" button for better visibility" {
+@advanced dropdown gappci "Add a circle around the \"Google apps\" button for better visibility" {
 	gappci1 "Enable*" <<<EOT #gbwa > div.gb_Dc > a {
     border-radius: 50%;
     background-color: /*[[gappcicol]]*\/;
@@ -86,7 +86,7 @@ albubig2 "Disable" <<<EOT /* Alert button bigger -> disabled *\/ EOT;
 gappci2 "Disable" <<<EOT /* Google apps circle -> Disabled *\/ EOT;
 
 }
-@advanced color gappcicol "Color for circle around "Google apps" button (if enabled)" #FFFFFF
+@advanced color gappcicol "Color for circle around \"Google apps\" button (if enabled)" #FFFFFF
 @advanced text albua "Alert button background transparency (0 = invisible, 1 = 100% visible)" "0.5"
 @advanced text albuah "Alert button background transparency when howering (0 = invisible, 1 = 100% visible)" "0.3"
 @advanced dropdown avhover "Add transparent overlay effect to the avatar of the logged in user when hovering it" {

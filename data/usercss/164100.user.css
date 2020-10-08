@@ -51,7 +51,7 @@ sTM_onoff-none "Выключить" <<<EOT   EOT;
 }
 @advanced color textColor "Цвет текста (рекомендуемый: #A69174)" #A69174
 @advanced color bgColor "Цвет Фона (рекомендуемый: #0D0D0D)" #0D0D0D
-@advanced color bgBQColor "Цвет Фона "blockquote"" #2A3240
+@advanced color bgBQColor "Цвет Фона \"blockquote\"" #2A3240
 @advanced dropdown bgCimage "Фоновое изображение" {
 	bgCimage-1 "Изображение № 1*" <<<EOT background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAQAAAD8IX00AAAAE0lEQVR4AWNgYNgsvRlCgCgwBAA6YQXPi9F1OAAAAABJRU5ErkJggg==) !important; EOT;
 bgCimage-none "Без изменений" <<<EOT   EOT;
@@ -152,13 +152,13 @@ TextSize-14px "14 пикселей" <<<EOT --tfs: 14px; font-size: var(--tfs)!im
 }
 @advanced text numMB-RRC "Отступ снизу контейнера с текстом (установить 0 = без отступа) [Пример: 400px]" "0"
 @advanced dropdown numMB "Отступ под каждым параграфом/абзацем" {
-	numMB-LH "Отступ равен "Высоте строки текста"*" <<<EOT margin-bottom: var(--tlh, 0px)!important; EOT;
+	numMB-LH "Отступ равен \"Высоте строки текста\"*" <<<EOT margin-bottom: var(--tlh, 0px)!important; EOT;
 numMB-none "Без изменений" <<<EOT   EOT;
 numMB-zero "Отступ равен 0 (ноль)" <<<EOT margin-bottom: 0px!important; EOT;
 
 }
-@advanced dropdown tb_P_BQ "Отступ сверху и снизу у блока "blockquote"" {
-	tb_P_BQ-LH "Отступ равен "Высоте строки текста"*" <<<EOT margin-top: var(--tlh, 0px)!important;margin-bottom: var(--tlh, 0px)!important; EOT;
+@advanced dropdown tb_P_BQ "Отступ сверху и снизу у блока \"blockquote\"" {
+	tb_P_BQ-LH "Отступ равен \"Высоте строки текста\"*" <<<EOT margin-top: var(--tlh, 0px)!important;margin-bottom: var(--tlh, 0px)!important; EOT;
 tb_P_BQ-none "Без изменений" <<<EOT   EOT;
 tb_P_BQ-zero "Отступ равен 0 (ноль)" <<<EOT margin-top: 0px!important;margin-bottom: 0px!important; EOT;
 

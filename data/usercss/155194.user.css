@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Денисов Ярослав
 @description    `За основу взят https://userstyles.org/styles/127431/newvk-dark-themeИзменены цвета, исправлены ошибки и верхняя панель.Наслаждайтесь~О багах пишите сюда:vk.com/whitebrim`
-@version        2020811.3.8
+@version        2020107.14.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -6668,7 +6668,7 @@
 
 [dir=ltr] .Button--mobile {
 	background: #4B4E51;
-	box-shadow: 0 1px 0 #5B5E51, 0 -1px 0 #5B5E51;
+	box-shadow: 0 1px 0 #373B3E, 0 -1px 0 #373B3E;
 }
 
 [dir=ltr] .Button--mobile:hover {
@@ -8554,9 +8554,9 @@
 	box-shadow: 0 1px 0 1px #484B4E;
 }
 
-[dir=ltr] .audio_row.audio_row__current .audio_row_content {
+/*[dir=ltr] .audio_row.audio_row__current .audio_row_content {
 	border-radius: 20px;
-}
+}*/
 
 [dir=ltr] .BaseModal__content {
 	background-color: #484b4e;
@@ -8670,6 +8670,23 @@
 
 [dir=ltr] .im-replied--author-link{
     color: #C4D1DE;
+}
+
+[dir=ltr] #page_header_cont{
+    background-color: #181B1F;
+    border-bottom: 1px solid #181B1F;
+}
+
+[dir=ltr] .TopSearch__input:focus{
+    background-color: #373b3e;
+}
+
+[dir=ltr] a.ts_contact.active, [dir] a.ts_search_link.active{
+    background: #494D50;
+}
+
+[dir=ltr] #side_bar_inner .left_row:hover .left_count_wrap{
+    background: #DB6364;
 }
 }
 

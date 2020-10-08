@@ -55,7 +55,7 @@ twocol "Two columns" <<<EOT   /* Two columns - standard spacing *\/
   } EOT;
 
 }
-@advanced dropdown searchfor "(2) Hide the "Search for..."/"This time, search with" line above the non-default search engines?" {
+@advanced dropdown searchfor "(2) Hide the \"Search for...\"/\"This time, search with\" line above the non-default search engines?" {
 	hidesearchfor "Yes, hide it*" <<<EOT   /* Hiding "Search for ..."/"This time, search with" *\/
   #PopupSearchAutoComplete .search-panel-header.search-panel-current-input,
   #PopupSearchAutoComplete .search-panel-header.search-panel-one-offs-header {
@@ -64,7 +64,7 @@ twocol "Two columns" <<<EOT   /* Two columns - standard spacing *\/
 showsearchfor "No, show it" <<<EOT   /* Not hiding "Search for ..." *\/ EOT;
 
 }
-@advanced dropdown addengine "(3) Hide the "Add ..." line for a site's own search engine (and the green + on the icon)?" {
+@advanced dropdown addengine "(3) Hide the \"Add ...\" line for a site's own search engine (and the green + on the icon)?" {
 	showengine "No, show it*" <<<EOT   /* Not hiding "Add ..." engine *\/ EOT;
 hideenginew "Yes, hide it for Windows" <<<EOT   /* Hiding "Add ..." engine (Windows) *\/
   #PopupSearchAutoComplete .addengine-item {
@@ -138,7 +138,7 @@ hideenginel "Yes, hide it for Linux" <<<EOT   /* Hiding "Add ..." engine (Linux)
   } EOT;
 
 }
-@advanced dropdown chgsettings "(4) Hide the "Change Search Settings" line at the bottom?" {
+@advanced dropdown chgsettings "(4) Hide the \"Change Search Settings\" line at the bottom?" {
 	showchg "No, show it*" <<<EOT   /* Not hiding "Change Search Settings" *\/ EOT;
 hidechg "Yes, hide it" <<<EOT   /* Hiding "Change Search Settings" *\/
   #PopupSearchAutoComplete .search-setting-button.search-panel-header {
@@ -146,7 +146,7 @@ hidechg "Yes, hide it" <<<EOT   /* Hiding "Change Search Settings" *\/
   } EOT;
 
 }
-@advanced dropdown tooltiptext "(5) Show "Search using ..." tooltip text in or above the search box?" {
+@advanced dropdown tooltiptext "(5) Show \"Search using ...\" tooltip text in or above the search box?" {
 	tttno "No thanks*" <<<EOT   /* Search bar tooltip text only visible on mouseover *\/ EOT;
 tttinbar "Yes, in the bar" <<<EOT   /* Overlay search bar tooltip text in the search bar *\/
   #searchbar {
@@ -231,7 +231,7 @@ colorschemedark "Light text for dark theme" <<<EOT   /* For dark theme *\/
 }
 @advanced dropdown theming "(7) Hover theming for search engines" {
 	themenone "No specific hover theming*" <<<EOT   /* No color scheme for hover *\/ EOT;
-themehighlight "Default "highlight" theming" <<<EOT   /* Default hover/selection theming *\/
+themehighlight "Default \"highlight\" theming" <<<EOT   /* Default hover/selection theming *\/
   #PopupSearchAutoComplete .searchbar-engine-one-off-item[tooltiptext]:hover,
   #PopupSearchAutoComplete .searchbar-engine-one-off-item[tooltiptext][selected] {
     color: HighlightText !important;

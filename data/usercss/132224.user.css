@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        2020107.8.39
+@version        2020108.5.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown blackaudioplay "Чёрные кнопки плеера + загрузчики:" {
@@ -237,7 +237,8 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 @advanced dropdown hollowhead "Прозрачная шапка:" {
 	hollowheadon "вкл*" <<<EOT /* прозрачная шапка *\/
 [dir] #page_header_cont{background-color:rgba(0,0,0,0.75)!important;border:none!important}
-[dir] .TopSearch__input{background-color:transparent!important;color:#fff;filter:var(--filt2)saturate(.7)brightness(.7)}
+[dir] .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
 #ts_wrap .input_back .input_back_content{color:#999!important}
 .top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)!important}
 .top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(2.5)opacity(1)!important}

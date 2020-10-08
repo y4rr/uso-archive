@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         FLX
 @description    `Based on "VK Material Design 2.0" by <a href="https://userstyles.org/users/309571">Vitalii Koreiev</a>.Still work in process.Contact me: <a href="https://vk.com/flx_emt">VK</a>`
-@version        2020912.21.50
+@version        2020108.13.16
 @license        CC-BY-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* 
    Fixes by FLX
    VK: https://vk.com/flx_emt
-   v1.15 | build date: 2020-09-12
+   v1.2 | build date: 2020-10-08
 */
 
 @-moz-document url-prefix("https://vk.com") {
@@ -2510,7 +2510,6 @@
   }
   [dir] .top_nav_btn .top_nav_btn_icon {
     margin: 0;
-    margin-top: 19px;
   }
 
   #top_audio
@@ -5359,6 +5358,43 @@
   }
   [dir=ltr] .top_home_link .top_home_logo {
     margin-top: 19px;
+  }
+  .SaveToDocsButton:not(.flat_btn_lock):before {
+    vertical-align: middle;
+  }
+  .TopSearch__input {
+    height: 40px;
+    width: 100%;
+    border-radius: 25px !important;
+    padding-left: 31px !important;
+    border-left: 15px solid transparent !important;
+    background-position: left 12px !important;
+    transition: background 0.3s;
+  }
+  .HeaderNav__btns {
+    order: 2 !important;
+    margin-right: 30px;
+  }
+  .HeaderNav__item--players {
+    order: 1 !important;
+  }
+  .HeaderNav__item:first-child {
+    order: 0 !important;
+  }
+  .HeaderNav__item:last-child {
+    order: 3 !important;
+  }
+  .TopSearch .input_back {
+    margin: 3px 0px 7px 15px !important;
+  }
+  [dir] .input_back_content {
+    padding: 0 7px;
+  }
+  [dir] .top_audio_player .top_audio_player_play {
+    margin: 8px 0;
+  }
+  [dir] .top_audio_player .top_audio_player_btn {
+    padding: 16px 0;
   }
 }
 

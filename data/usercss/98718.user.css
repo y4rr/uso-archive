@@ -80,7 +80,7 @@ map_commands "Нет" <<<EOT  EOT;
 power_icon "Нет" <<<EOT  EOT;
 
 }
-@advanced dropdown hide_shop "Скрыть "магазин" в навигационный баре" {
+@advanced dropdown hide_shop "Скрыть \"магазин\" в навигационный баре" {
 	shop "Нет*" <<<EOT  EOT;
 hide_shop "Да" <<<EOT body > div.navbar.navbar-fixed-top > div > div > ul:nth-child(2) > li:nth-child(6) > a {
 	display: none !important;

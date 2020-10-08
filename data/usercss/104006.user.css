@@ -7,14 +7,14 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced text font-family "Fuente: Tipografía" "Roboto, Arial, Tahoma"
-@advanced dropdown wall_image "Fondo: Imagen (configurar "Fondo: Acomodación" si se utiliza uno distinto)" {
+@advanced dropdown wall_image "Fondo: Imagen (configurar \"Fondo: Acomodación\" si se utiliza uno distinto)" {
 wall_default "Original*" <<<EOT http://cdn.naruho.do/images/background_texture.png EOT;
 wall_black "Original, negro" <<<EOT http://cdn.naruho.do/feed_uploads/6y5jto.png EOT;
 wall_hexagon_pattern "Patrón hexagonal" <<<EOT https://cdn.naruho.do/feed_uploads/N7IkrH.gif EOT;
 
 	wall_image-custom-dropdown "Custom" <<<EOT /*[[wall_image-custom]]*\/ EOT;
 }
-@advanced text wall_image-custom "Fondo: Imagen (configurar "Fondo: Acomodación" si se utiliza uno distinto) (Custom)" "https://example.com/image.png"
+@advanced text wall_image-custom "Fondo: Imagen (configurar \"Fondo: Acomodación\" si se utiliza uno distinto) (Custom)" "https://example.com/image.png"
 @advanced dropdown wall_stretch "Fondo: Acomodación" {
 	wall_stretch-none "No acomodar*" <<<EOT auto auto EOT;
 wall_stretch-x "A lo ancho" <<<EOT 100% auto EOT;

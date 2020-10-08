@@ -44,12 +44,12 @@ fond-y "Ajuster à la hauteur" <<<EOT background-size : auto 100% !important ; E
 fond-x "Ajuster à la largeur" <<<EOT background-size : 100% auto !important ; EOT;
 
 }
-@advanced dropdown banniere "Bannière internationale "Amour Sucré" (427 × 142 px)" {
+@advanced dropdown banniere "Bannière internationale \"Amour Sucré\" (427 × 142 px)" {
 banniere-default "Exemple*" <<<EOT http://nsm08.casimages.com/img/2017/01/29//17012904082310339314811598.png EOT;
 
 	banniere-custom-dropdown "Custom" <<<EOT /*[[banniere-custom]]*\/ EOT;
 }
-@advanced text banniere-custom "Bannière internationale "Amour Sucré" (427 × 142 px) (Custom)" "https://example.com/image.png"
+@advanced text banniere-custom "Bannière internationale \"Amour Sucré\" (427 × 142 px) (Custom)" "https://example.com/image.png"
 @advanced dropdown halo "Halo derrière la bannière ? (783 × 401 px)" {
 halo-blanc "Blanche par défaut*" <<<EOT http://www.amoursucre.com/image/halo.png EOT;
 
@@ -65,7 +65,7 @@ sans-trombone "Non" <<<EOT background-image : none !important ; EOT;
 @advanced color fond-joueur "Couleur du fond du nom de Joueur" #FF0000
 @advanced color texte-joueur "Couleur de nom du Joueur" #FFFFFF
 @advanced color fond-episode "Fond du numéro d'épisode" #F3CBCB
-@advanced color texte-episode "Couleur du texte "Episode"" #B99096
+@advanced color texte-episode "Couleur du texte \"Episode\"" #B99096
 @advanced color numero-episode "Couleur du numéro d'épisode" #FFFFFF
 @advanced color fond-values "Couleur de fond des $ et PA" #F3C6C3
 @advanced color texte-values "Couleur de texte des $ et PA" #FFFFFF

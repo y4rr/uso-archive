@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           U2-2
+@namespace      USO Archive
+@author         天下王
+@description    `U2網頁樣式修改良善`
+@version        2020108.5.44
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+/*#####--- 含以下前綴的網址 ---#####*/
+@-moz-document url-prefix("https://www.youtube.com/") {
+/* U2-2 */
+
+/*#####--- 網頁文字 ---#####*/
+* {font-family: "微軟正黑體" !important;}
+
+/*#####--- 影片下方的訊息(蒼色) ---#####*/
+.content {color: #A6FFCC !important;}
+
+/*#####--- 網友留言內容的文字顏色(淡雅黃) ---#####*/
+#content-text {color: #fffacd !important;}
+/* 第一方格  在註解 "Text Color Light Grey" 之下   在註解  "Text Color Red" 之上 */
+
+
+}

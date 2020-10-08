@@ -7,21 +7,21 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color bgcol "Background color (if you'll set an image, leave this on default, the image will cover it)" #36465D
-@advanced dropdown bgimg "Background image (if you only want a color as background, write "transparent" in the url box)" {
+@advanced dropdown bgimg "Background image (if you only want a color as background, write \"transparent\" in the url box)" {
 
 	bgimg-custom-dropdown "Custom" <<<EOT /*[[bgimg-custom]]*\/ EOT;
 }
-@advanced text bgimg-custom "Background image (if you only want a color as background, write "transparent" in the url box) (Custom)" "https://example.com/image.png"
+@advanced text bgimg-custom "Background image (if you only want a color as background, write \"transparent\" in the url box) (Custom)" "https://example.com/image.png"
 @advanced dropdown bgrpt "Background repeat (set repeat ONLY if you're using a small sized bg, read description for info)" {
 	norpt "no repeat*" <<<EOT no-repeat EOT;
 yesrpt "repeat" <<<EOT repeat EOT;
 
 }
-@advanced dropdown pngimg "PNG (transparent character) image (if you don't want one just write "transparent")" {
+@advanced dropdown pngimg "PNG (transparent character) image (if you don't want one just write \"transparent\")" {
 
 	pngimg-custom-dropdown "Custom" <<<EOT /*[[pngimg-custom]]*\/ EOT;
 }
-@advanced text pngimg-custom "PNG (transparent character) image (if you don't want one just write "transparent") (Custom)" "https://example.com/image.png"
+@advanced text pngimg-custom "PNG (transparent character) image (if you don't want one just write \"transparent\") (Custom)" "https://example.com/image.png"
 @advanced dropdown pngrol "PNG image position on the dash: right or left?" {
 	rb "right*" <<<EOT background-position: right bottom !important; EOT;
 lb "left" <<<EOT background-position: left bottom !important; EOT;
@@ -52,7 +52,7 @@ rdn "No" <<<EOT none EOT;
 rbn "No" <<<EOT none EOT;
 
 }
-@advanced dropdown rcmbsp ""Recommended for you" bar on search page: scroll or not?" {
+@advanced dropdown rcmbsp "\"Recommended for you\" bar on search page: scroll or not?" {
 	rbn "Don't scroll with me*" <<<EOT absolute EOT;
 rby "Scroll with me" <<<EOT fixed EOT;
 

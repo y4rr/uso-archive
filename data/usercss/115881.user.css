@@ -6,7 +6,7 @@
 @version        20151123.22.3
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
-@advanced dropdown dxd-render "Choose your "BEST GIRL"" {
+@advanced dropdown dxd-render "Choose your \"BEST GIRL\"" {
 render-group "Group*" <<<EOT https://i.imgur.com/gqw8V3W.png EOT;
 render-group-harem "Group (Haremking Style)" <<<EOT https://i.imgur.com/gonGYGL.png EOT;
 render-akeno "Akeno" <<<EOT http://i.imgur.com/IUQzpYa.png EOT;
@@ -25,7 +25,7 @@ render-xenovia-v2 "Xenovia V2" <<<EOT https://i.imgur.com/uSRICb3.png EOT;
 
 	dxd-render-custom-dropdown "Custom" <<<EOT /*[[dxd-render-custom]]*\/ EOT;
 }
-@advanced text dxd-render-custom "Choose your "BEST GIRL" (Custom)" "https://example.com/image.png"
+@advanced text dxd-render-custom "Choose your \"BEST GIRL\" (Custom)" "https://example.com/image.png"
 @advanced dropdown google-logo "Select a logo" {
 new-google-default "Default Google logo*" <<<EOT https://i.imgur.com/OmkHGcl.png EOT;
 new-google-oo "Google logo without OO" <<<EOT https://i.imgur.com/DdJ5JuV.png EOT;
@@ -37,7 +37,7 @@ logo-none "None" <<<EOT  EOT;
 }
 @advanced text google-logo-custom "Select a logo (Custom)" "https://example.com/image.png"
 @advanced text render-size "Render size. Default :20% (percentage 1-100)" "20%"
-@advanced text render-position-h "Render position (horizontal). Default :center (percentage or "center")." "center"
+@advanced text render-position-h "Render position (horizontal). Default :center (percentage or \"center\")." "center"
 @advanced text render-position-v "Render position (vertical). Default :30% (percentage)" "30%"
 @advanced text logo-size "Google logo size. Default :20%  (percentage 1-100)" "20%"
 @advanced text logo-position "Logo position. Default :39% (percentage)" "39%"

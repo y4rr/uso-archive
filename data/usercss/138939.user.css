@@ -7,7 +7,7 @@
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown colors "Выберите цветовую палитру::" {
-	fire_color ""Горячая" палитра*" <<<EOT .profile_msg_split .profile_btn_cut_right, .profile_msg_split .profile_btn_cut_left, .post_publish {
+	fire_color "\"Горячая\" палитра*" <<<EOT .profile_msg_split .profile_btn_cut_right, .profile_msg_split .profile_btn_cut_left, .post_publish {
     border-color: yellow!important;;
 }
 .audio_row.audio_row__current .audio_row_content {
@@ -31,7 +31,7 @@ background-color: rgba(243,160,35,0.4)!important;
     --color3: rgba(252,104,4,0.75) !important;
     text-shadow: 1px 1px 1px #000;
 } EOT;
-cold_color ""Холодная" палитра" <<<EOT .profile_msg_split .profile_btn_cut_right, .profile_msg_split .profile_btn_cut_left, .post_publish {
+cold_color "\"Холодная\" палитра" <<<EOT .profile_msg_split .profile_btn_cut_right, .profile_msg_split .profile_btn_cut_left, .post_publish {
     border-color: var(--color1)!important;
 }
 .audio_row.audio_row__current .audio_row_content {

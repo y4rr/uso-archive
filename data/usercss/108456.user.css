@@ -54,7 +54,7 @@
 }
 @advanced dropdown left_settings "Настройку пунктов меню" {
 	1 "скрыть*" <<<EOT .left_settings{display:none!important} EOT;
-2 "показать только в пункте "Моя страница"" <<<EOT .left_settings{display:none!important}#l_pr .left_settings{display:block!important} EOT;
+2 "показать только в пункте \"Моя страница\"" <<<EOT .left_settings{display:none!important}#l_pr .left_settings{display:block!important} EOT;
 3 "показать" <<<EOT  EOT;
 
 }
@@ -116,7 +116,7 @@ a.fc_msgs_img,
 } EOT;
 
 }
-@advanced dropdown my_like "Кнопка "Мне нравится и репост"" {
+@advanced dropdown my_like "Кнопка \"Мне нравится и репост\"" {
 	1 "стандартная*" <<<EOT  EOT;
 2 "с противоположной стороны" <<<EOT .post_full_like_wrap .reply_link_wrap{margin-left:-7px;float:left}.post_full_like_wrap .post_like:first-child,.post_full_like_wrap .post_share:first-child{margin-right:-7px}.post_full_like_wrap .post_like,.post_full_like_wrap .post_share{float:right}.post_like,.post_share{margin-left:6px}.is_rtl1 .post_full_like_wrap .reply_link_wrap{margin-right:-7px;float:right}.is_rtl1 .post_full_like_wrap .post_like:first-child,.is_rtl1 .post_full_like_wrap .post_share:first-child{margin-left:-7px}.is_rtl1 .post_full_like_wrap .post_like,.is_rtl1 .post_full_like_wrap .post_share{float:left}.is_rtl1 .post_like,.is_rtl1 .post_share{margin-right:6px} EOT;
 
@@ -132,20 +132,20 @@ a.fc_msgs_img,
 2 "нет" <<<EOT  EOT;
 
 }
-@advanced text pr "Переименовать "Моя страница" в" "Cтраница"
-@advanced text nwsf "Переименовать "Новости" в" "Новости"
-@advanced text msg "Переименовать "Сообщения" в" "Сообщения"
-@advanced text fr "Переименовать "Друзья" в" "Друзья"
-@advanced text gr "Переименовать "Группы" в" "Группы"
-@advanced text ph "Переименовать "Фотографии" в" "Фотографии"
-@advanced text aud "Переименовать "Музыка" в" "Музыка"
-@advanced text vid "Переименовать "Видео" в" "Видео"
-@advanced text ap "Переименовать "Игры" в" "Игры"
-@advanced text mk "Переименовать "Товары" в" "Товары"
-@advanced text fav "Переименовать "Закладки" в" "Закладки"
-@advanced text doc "Переименовать "Документы" в" "Документы"
-@advanced text ads "Переименовать "Реклама" в" "Реклама"
-@advanced text spr "Переименовать "Поддержка" в" "Поддержка"
+@advanced text pr "Переименовать \"Моя страница\" в" "Cтраница"
+@advanced text nwsf "Переименовать \"Новости\" в" "Новости"
+@advanced text msg "Переименовать \"Сообщения\" в" "Сообщения"
+@advanced text fr "Переименовать \"Друзья\" в" "Друзья"
+@advanced text gr "Переименовать \"Группы\" в" "Группы"
+@advanced text ph "Переименовать \"Фотографии\" в" "Фотографии"
+@advanced text aud "Переименовать \"Музыка\" в" "Музыка"
+@advanced text vid "Переименовать \"Видео\" в" "Видео"
+@advanced text ap "Переименовать \"Игры\" в" "Игры"
+@advanced text mk "Переименовать \"Товары\" в" "Товары"
+@advanced text fav "Переименовать \"Закладки\" в" "Закладки"
+@advanced text doc "Переименовать \"Документы\" в" "Документы"
+@advanced text ads "Переименовать \"Реклама\" в" "Реклама"
+@advanced text spr "Переименовать \"Поддержка\" в" "Поддержка"
 
 ==/UserStyle== */
 @-moz-document domain("vk.com"){/*[[add_color_msg]]*//*[[vk_dlg]]*//*[[animal]]*//*[[add_shadow_logo]]*//*[[add_shadow_block]]*//*[[logo_vk]]*//*[[name_menu]]*//*[[reklama]]*//*[[menu_futer]]*//*[[more_div]]*//*[[left_settings]]*//*[[upd_vk]]*//*[[photo_on]]*//*[[menu_fixed]]*//*[[my_like]]*//*[[menu_icon]]*/}

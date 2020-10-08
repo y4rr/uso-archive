@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rikka0612
 @description    `Make header dark again!+some fix for original themeAlternative install link: https://raw.githubusercontent.com/rikka0612/rikka-custom-css/master/styles/New%20VK%20Dark%20Theme%20Dark%20Header%20%5BAdd-on%5D.user.cssRequired: userstyles.org/styles/127431/newvk-dark-theme`
-@version        2020107.8.17
+@version        2020108.7.10
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -62,7 +62,8 @@ input.text.ts_input:focus,[dir] .TopSearch__input:focus {
     background-image:url(http://u963529r.bget.ru/ic_head_audio.svg) !important;                                    
 }
 .ts_wrap .input_back_content, .top_audio_player .top_audio_player_title, .top_audio_play__button:after, .TopSearch .input_back_content{
-  color: #e0e0e0;             
+  color: #e0e0e0;
+  margin-top: -6px;           
 }
 #top_notify_btn.has_notify .top_notify_count {
   border-color: #373b3e;

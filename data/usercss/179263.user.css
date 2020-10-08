@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Elodie's AMQ Script V8.2
+@name           Elodie's AMQ Script V8.3
 @namespace      USO Archive
 @author         Elodie Dow
 @description    `A script to change the background and a darker UI for AnimeMusicQuiz.`
-@version        2020107.2.11
+@version        2020107.15.0
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -480,6 +480,21 @@ div#startPageLogoContainer {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.qpAvatarImage[src$="Thinking.png"] {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.qpAvatarImage[src$="Waiting.png"] {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.qpAvatarImage[src$="Basic.png"] {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 /*Change Colour of List Showing Up*/
 
 .qpAvatarStatusBar.completed {
@@ -616,8 +631,60 @@ div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
 }
 
 
+.qpAvatarStatusOuterContainer{
+  border-radius: 0px 10px 10px 0px
+}
+
+.qpAvatarImage.Miyu {
+    width: 125%;
+    left: 50%;
+    top: 8%;
+}
+.qpAvatarImage.Shiina {
+    margin-left: 0; /*makes glow box correspond with background*/
+}
+.qpAvatarImage.Hibiki {
+    bottom: -2%;
+}
+.qpAvatarImage.Noel {
+    bottom: -4%;
+}
+.qpAvatarImage.Kyouko.Standard {
+    bottom: -4%;
+}
+.qpAvatarImage.Kyouko.Knight {
+    bottom: -3.3%;
+}
+.qpAvatarImageContainer {
+    background-color: rgba(0, 0, 0, 0);
+}
+.qpAvatarImage.Hikari {
+    bottom: -4.5%;
+}
+.qpAvatarImage.Kuriko {
+    width: 119%;
+    top: 47%;
+    left: 50%;
+    clip-path: ellipse(120% 120% at 50% 123%);
+}
+.qpAvatarImage.Ritsu {
+    bottom: -3.4%;
+}
+.qpAvatarImage.Mizuki {
+    bottom: -5%;
+}
+.qpAvatarImage.Komugi.Tribal-Sorcerer {
+    top: 52%;
+}
+.qpAvatarImage.Komugi.Standard {
+    bottom: -3.5%;
+}
 
 /*Circling things - remove all below if you want it back to normal - Increase "border radius" if you want it more round*/
+
+#qpVoteStateContainer{
+  border-radius: 20px;
+}
 
 #qpVideoOverflowContainer {
     position: relative;

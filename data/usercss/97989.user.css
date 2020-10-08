@@ -6,7 +6,7 @@
 @version        201427.13.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown plus1ed-behaviour "Behaviour for "1'ed content"" {
+@advanced dropdown plus1ed-behaviour "Behaviour for \"1'ed content\"" {
 	plus1ed-hide "Hide completely*" <<<EOT .hf.DX, .hf.DX + * {display: none;} /* Hide "+1'd this post" header and its related post (because we don't need no stinkin' content from people we haven't circled ourselves!) *\/ EOT;
 plus1ed-rollup "Only show header" <<<EOT .hf.DX + * {display: none;} /* Hide post related to "+1'd this post" header *\/
   .hf.DX:hover + *, .hf.DX + *:hover {display: inherit;} /* Only show post when hovering over the "+1'd this post" header (and its post) *\/ EOT;

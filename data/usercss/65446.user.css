@@ -157,19 +157,19 @@ Left-focused Adaptiv "Left-focused Adaptive Width" <<<EOT /*Sizing*\/
   .module .chev-right {left:12px !important; -moz-transform:scaleX(-1) !important; -webkit-transform:scaleX(-1) !important; -o-transform:scaleX(-1) !important;} EOT;
 
 }
-@advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. "BBCNews", without quotes)" {
+@advanced dropdown UsernameforLinks "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes)" {
 This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforLinks-custom-dropdown "Custom" <<<EOT /*[[UsernameforLinks-custom]]*\/ EOT;
 }
-@advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. "BBCNews", without quotes) (Custom)" "https://example.com/image.png"
+@advanced text UsernameforLinks-custom "Account to highlight links to, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforLinks "Colour for links highlighting to account that you specify" #FFFF75
-@advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. "BBCNews", without quotes)" {
+@advanced dropdown UsernameforTweets "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes)" {
 This option if you d "This option if you don't want to highlight*" <<<EOT BetterTwitter-highlighting-is-unwanted: EOT;
 
 	UsernameforTweets-custom-dropdown "Custom" <<<EOT /*[[UsernameforTweets-custom]]*\/ EOT;
 }
-@advanced text UsernameforTweets-custom "Account to highlight tweets from, without the '@': (e.g. "BBCNews", without quotes) (Custom)" "https://example.com/image.png"
+@advanced text UsernameforTweets-custom "Account to highlight tweets from, without the '@': (e.g. \"BBCNews\", without quotes) (Custom)" "https://example.com/image.png"
 @advanced color ColourforTweets "Colour for tweets from account that you specify" #AFFFFF
 
 ==/UserStyle== */

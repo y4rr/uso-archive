@@ -26,7 +26,7 @@ opt5oa "Paint only active" <<<EOT .ytd-toggle-button-renderer {outline: none}#to
 	opt6bs "Box-Shadow*" <<<EOT ytd-toggle-button-renderer.style-default-active:first-child #button.ytd-toggle-button-renderer {box-shadow: inset 0px 0px 5px var(--clr_like); border-radius: 100%;}ytd-toggle-button-renderer.style-default-active #button.ytd-toggle-button-renderer {box-shadow: inset 0px 0px 5px var(--clr_dislike); border-radius: 100%;}.ytd-comment-action-buttons-renderer:first-child #like-button.style-default-active yt-icon-button.ytd-toggle-button-renderer {box-shadow: inset 0px 0px 5px var(--clr_like); border-radius: 100%;} EOT;
 opt6bsc "Box-Shadow (Custom color from item 1.6)" <<<EOT ytd-toggle-button-renderer.style-default-active #button.ytd-toggle-button-renderer {box-shadow: inset 0px 0px 5px /*[[cl7]]*\/; border-radius: 100%;} EOT;
 opt6is "Button-Shadow" <<<EOT yt-icon-button.style-default-active {filter: drop-shadow(0 0px 2px /*[[cl7]]*\/);} EOT;
-opt6ic "Button-Color (Only if item 1.1 is "No")" <<<EOT .style-default-active g.yt-icon path[d*="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"], .style-default-active  g.yt-icon path[d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"]{fill: /*[[cl7]]*\/ !important}
+opt6ic "Button-Color (Only if item 1.1 is \"No\")" <<<EOT .style-default-active g.yt-icon path[d*="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"], .style-default-active  g.yt-icon path[d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"]{fill: /*[[cl7]]*\/ !important}
  EOT;
 opt6n "No" <<<EOT .indi_opt#upd {z-index: 1}
 /* Activity indication *\/ EOT;
@@ -35,15 +35,15 @@ opt6n "No" <<<EOT .indi_opt#upd {z-index: 1}
 @advanced color cl3 "1.4) Like color                                       " #53D52F
 @advanced color cl4 "1.5) Dislike color" #CC3434
 @advanced color cl7 "1.6) Active like/dislike color" #B0B0B0
-@advanced dropdown opt3 "2) Badge "New" etc" {
+@advanced dropdown opt3 "2) Badge \"New\" etc" {
 	opt3c "Custom*" <<<EOT /*:root {--ytd-badge-background: /*[[cl6]]*\/ !important;--ytd-simple-badge-color: /*[[cl5]]*\/ !important}ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-text {color: var(--yt-button-text-color)}*\/
 .badge-style-type-red.ytd-badge-supported-renderer,.badge-style-type-simple.ytd-badge-supported-renderer {background: /*[[cl6]]*\/;color: /*[[cl5]]*\/;} EOT;
 opt3d "Default" <<<EOT /* User colors for badge not set *\/ EOT;
 
 }
-@advanced color cl5 "2.1) Badge font color (Only if item 2 is "Custom")" #FFFFFF
-@advanced color cl6 "2.2) Badge background color (Only if item 2 is "Custom")" #8F63B9
-@advanced dropdown opt1 "3) Label "Watched"" {
+@advanced color cl5 "2.1) Badge font color (Only if item 2 is \"Custom\")" #FFFFFF
+@advanced color cl6 "2.2) Badge background color (Only if item 2 is \"Custom\")" #8F63B9
+@advanced dropdown opt1 "3) Label \"Watched\"" {
 	opt1wi "Whole items*" <<<EOT :root {--frame_border_width: 5px;--BfSz_playlist: 63px;--BfSz_channel: 113px;--BfSz_main: 113px;--BfSz_history: 133px;--BfSz_rightbar: 89px;--BfSz_trending: 133px;--watched: "/*[[watched]]*\/";}
 ytd-thumbnail-overlay-resume-playback-renderer {height: var(--frame_border_width);}
 ytd-thumbnail-overlay-playback-status-renderer {width: 100%; height: 100%;} 
@@ -107,7 +107,7 @@ opt1d "Default" <<<EOT /* Watched Default *\/ EOT;
 opt2c "Custom" <<<EOT :root{--yt-button-color: /*[[cl1]]*\/}.guide-icon.ytd-guide-entry-renderer {color: /*[[cl1]]*\/}#guide-icon.ytd-masthead  {fill: /*[[cl1]]*\/}yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer {color: /*[[cl1]]*\/}.style-scope.ytd-thumbnail-overlay-toggle-button-renderer svg g path {color: /*[[cl1]]*\/} EOT;
 
 }
-@advanced color cl1 "4.1) Icons color (Only if item 4 is "Custom")" #FFFFFF
+@advanced color cl1 "4.1) Icons color (Only if item 4 is \"Custom\")" #FFFFFF
 
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com"){/*[[CSS]]*/}

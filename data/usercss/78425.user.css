@@ -8,25 +8,25 @@
 @preprocessor   uso
 @advanced dropdown do_nothing "Remove checkboxes" {
 	nothing "None*" <<<EOT  EOT;
-All "Checkbox "All"" <<<EOT label[title="All"] {
+All "Checkbox \"All\"" <<<EOT label[title="All"] {
 display: none ! important;
 } EOT;
-Audio "Checkbox "Audio"" <<<EOT label[title="Audio"] {
+Audio "Checkbox \"Audio\"" <<<EOT label[title="Audio"] {
 display: none ! important;
 } EOT;
-Video "Checkbox "Video"" <<<EOT label[title="Video"] {
+Video "Checkbox \"Video\"" <<<EOT label[title="Video"] {
 display: none ! important;
 } EOT;
-Applications "Checkbox "Applications"" <<<EOT label[title="Applications"] {
+Applications "Checkbox \"Applications\"" <<<EOT label[title="Applications"] {
 display: none ! important;
 } EOT;
-Games "Checkbox "Games"" <<<EOT label[title="Games"] {
+Games "Checkbox \"Games\"" <<<EOT label[title="Games"] {
 display: none ! important;
 } EOT;
-Porn "Checkbox "Porn"" <<<EOT label[title="Porn"] {
+Porn "Checkbox \"Porn\"" <<<EOT label[title="Porn"] {
 display: none ! important;
 } EOT;
-Other "Checkbox "Other"" <<<EOT label[title="Other"] {
+Other "Checkbox \"Other\"" <<<EOT label[title="Other"] {
 display: none ! important;
 } EOT;
 rac "Remove all checkboxes" <<<EOT p[id="chb"] {

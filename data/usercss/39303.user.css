@@ -8,7 +8,7 @@
 @preprocessor   uso
 @advanced dropdown button "Buttons to alter" {
 	All buttons "All buttons" <<<EOT .toolbarbutton-1 EOT;
-All except "All Tabs "All except "All Tabs"" <<<EOT .toolbarbutton-1:not(#alltabs-button):not(#tabview-button) EOT;
+All except "All Tabs "All except \"All Tabs\"" <<<EOT .toolbarbutton-1:not(#alltabs-button):not(#tabview-button) EOT;
 Home Button "Home Button" <<<EOT #home-button EOT;
 New Tab Button "New Tab Button" <<<EOT #new-tab-button EOT;
 New Window Button "New Window Button" <<<EOT #new-window-button EOT;

@@ -47,35 +47,35 @@ tr.inbetweenContent{
 } EOT;
 
 }
-@advanced dropdown WorthSeeingBlock ""Bekijken Waard" verbergen" {
+@advanced dropdown WorthSeeingBlock "\"Bekijken Waard\" verbergen" {
 	showWorthSeeing "Nee*" <<<EOT  EOT;
 hideWorthSeeing "Ja" <<<EOT .highlightedProductsWrapper {
     display: none;
 } EOT;
 
 }
-@advanced dropdown JobsBlock ""IT Banen" verbergen" {
+@advanced dropdown JobsBlock "\"IT Banen\" verbergen" {
 	showJobs "Nee*" <<<EOT  EOT;
 hideJobs "Ja" <<<EOT #jobs {
    display: none;   
 } EOT;
 
 }
-@advanced dropdown CommunityBlock ""Community" verbergen" {
+@advanced dropdown CommunityBlock "\"Community\" verbergen" {
 	showCommunity "Nee*" <<<EOT  EOT;
 hideCommunity "Ja" <<<EOT #community {
     display: none;
 } EOT;
 
 }
-@advanced dropdown TestedBlock ""Recent Getest" verbergen" {
+@advanced dropdown TestedBlock "\"Recent Getest\" verbergen" {
 	showTested "Nee*" <<<EOT  EOT;
 hideTested "Ja" <<<EOT #recentlyTested {
     display:none;
 } EOT;
 
 }
-@advanced dropdown ActionsBlock ""Acties" verbergen" {
+@advanced dropdown ActionsBlock "\"Acties\" verbergen" {
 	showActions "Nee*" <<<EOT  EOT;
 hideActions "Ja" <<<EOT #sponsored {
     display: none;

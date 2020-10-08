@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Dark mode für Kivinet.de`
-@version        2020927.13.42
+@version        2020107.10.53
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -120,7 +120,8 @@ div.ilc_text_block_Zwischenueberschrift,
 body.ilc_text_block_Zwischenueberschrift,
 div.ilc_text_block_Standard,
 body.ilc_text_block_Standard,
-div.ilc_page_cont_PageContainer {
+div.ilc_page_cont_PageContainer,
+.Lj9fsd.DU1Mzb {
     color: lightgray;
 }
 
@@ -138,13 +139,15 @@ h3.ilProfileName {
     color: white;
 }
 a,
-.btn-link {
+.btn-link,
+a:hover,
+.btn-link:hover,
+.il_ContainerItemTitle:active,
+.il_ContainerItemTitle:visited,
+.il_ContainerItemTitle {
     color: #5dadea;
 }
-a:hover,
-.btn-link:hover {
-    color: #73b6e8;
-}
+
 a.ilTreeView,
 a.ilTreeView > img {
     background-color: #232323;
@@ -216,7 +219,7 @@ a.il_HighlightedNode,
 #nav2,
 #nav3,
 #reihe1,
-#reihe0, .tblrow2 {
+#reihe0 {
     background-color: #484545;
 }
 
@@ -244,25 +247,25 @@ table.calmini {
 
 /* Scrollbar Chrome*/
 *::-webkit-scrollbar {
-	width: 10px !important;
-	height: 10px !important;
-	background: #1e1e1e !important;
-	border: 1px solid #252525 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background: #1e1e1e !important;
+    border: 1px solid #252525 !important;
 }
 *::-webkit-scrollbar-button {
-	display: none !important;
+    display: none !important;
 }
 *::-webkit-scrollbar-thumb,
 *::-webkit-scrollbar-track {
-	border: 0 !important;
-	box-shadow: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
 }
 *::-webkit-scrollbar-thumb {
-	min-height: 28px !important;
-	background: #333 !important;
+    min-height: 28px !important;
+    background: #333 !important;
 }
 *::-webkit-scrollbar-corner,
 *::-webkit-scrollbar-track {
-	background: #1e1e1e !important;
+    background: #1e1e1e !important;
 }
 }

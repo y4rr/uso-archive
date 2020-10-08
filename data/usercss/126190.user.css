@@ -13,10 +13,10 @@ popping-out "Popping out (see screenshots #3 & #4)" <<<EOT 0 0 20px 2px rgba(0,0
 }
 @advanced dropdown shadow-react "Card shadow react on hover (3D effect: will switch shadow type on mouse hover)" {
 	shadow-react-dis "No (Default)*" <<<EOT  EOT;
-shadow-react-rec2pop "Yes (If you chose "Recessed")" <<<EOT .yt-card:hover {
+shadow-react-rec2pop "Yes (If you chose \"Recessed\")" <<<EOT .yt-card:hover {
    box-shadow: inset 0 0 0px 0px rgba(0,0,0,0.40), 0 0 20px 2px rgba(0,0,0,0.40);
 } EOT;
-shadow-react-pop2rec "Yes (If you chose "Popping out")" <<<EOT .yt-card:hover {
+shadow-react-pop2rec "Yes (If you chose \"Popping out\")" <<<EOT .yt-card:hover {
    box-shadow: 0 0 0px 0px rgba(0,0,0,0.40), inset 0 0 20px 2px rgba(0,0,0,0.40);
 } EOT;
 

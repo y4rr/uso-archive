@@ -9,36 +9,36 @@
 @advanced color str "Scrollbar Track Color Idle" #FCFCFC
 @advanced color strh "Scrollbar Track Color Hover" #F0F0F0
 @advanced color stra "Scrollbar Track Color Active" #E0E0E0
-@advanced text aox "Amazon's Horizontal Scrolling; can be set to (without quotes) "auto", " hidden", "scroll"" "auto"
+@advanced text aox "Amazon's Horizontal Scrolling; can be set to (without quotes) \"auto\", \" hidden\", \"scroll\"" "auto"
 @advanced color st "Scrollbar Thumb Color Idle" #707070
 @advanced color sth "Scrollbar Thumb Color Hover" #4D4D4D
 @advanced color sta "Scrollbar Thumb Color Active" #000000
-@advanced dropdown YRV "Show/Hide "Your Recently Viewed Items and Featured Recommendations"" {
+@advanced dropdown YRV "Show/Hide \"Your Recently Viewed Items and Featured Recommendations\"" {
 	Hide "Hide*" <<<EOT none EOT;
 Show "Show" <<<EOT block EOT;
 
 }
-@advanced dropdown WOIDCBAVTI "Show/Hide "What Other Items Do Customers Buy After Viewing This Item?"" {
+@advanced dropdown WOIDCBAVTI "Show/Hide \"What Other Items Do Customers Buy After Viewing This Item?\"" {
 	Show "Show*" <<<EOT block EOT;
 Hide "Hide" <<<EOT none EOT;
 
 }
-@advanced dropdown SAG "Show/Hide "Set up an Amazon Giveaway"" {
+@advanced dropdown SAG "Show/Hide \"Set up an Amazon Giveaway\"" {
 	Hide "Hide*" <<<EOT none EOT;
 Show "Show" <<<EOT block EOT;
 
 }
-@advanced dropdown FBT "Show/Hide "Frequently Bought Together"" {
+@advanced dropdown FBT "Show/Hide \"Frequently Bought Together\"" {
 	Show "Show*" <<<EOT block EOT;
 Hide "Hide" <<<EOT none EOT;
 
 }
-@advanced dropdown CWBTIAB "Show/Hide "Customers Who Bought This Item Also Bought"" {
+@advanced dropdown CWBTIAB "Show/Hide \"Customers Who Bought This Item Also Bought\"" {
 	Show "Show*" <<<EOT block EOT;
 Hide "Hide" <<<EOT none EOT;
 
 }
-@advanced dropdown SPRTTI "Show/Hide "Sponsored Products Related To This Item"" {
+@advanced dropdown SPRTTI "Show/Hide \"Sponsored Products Related To This Item\"" {
 	Show "Show*" <<<EOT block EOT;
 Hide "Hide" <<<EOT none EOT;
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         lastuser
 @description    `Alternative dark style for the forum CryptoTalk.P.S.: For the forum skin: "Main (Default)".`
-@version        20191028.16.20
+@version        2020108.9.31
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -32,6 +32,10 @@ body {
 a {
 	color: var(--text-color);
 	background: var(--transparent) !important;
+}
+
+a.cke_button_on {
+    background: #484848 !important;
 }
 
 strong {

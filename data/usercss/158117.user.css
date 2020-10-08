@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        2020106.9.3
+@version        2020108.16.30
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -53,6 +53,11 @@ BarrageNoble_OFF "关" <<<EOT /*BarrageNoble*\/ EOT;
 Scrollbar_OFF "关" <<<EOT /*Scrollbar*\/ EOT;
 
 }
+@advanced dropdown PlayerRank "弹幕侧上方排名屏蔽" {
+	PlayerRank_ON "开*" <<<EOT .layout-Player-rank, EOT;
+PlayerRank_OFF "关" <<<EOT /*PlayerRank*\/ EOT;
+
+}
 @advanced color UserNameColor "用户昵称颜色" #2B94FF
 @advanced color UserContentColor "用户发言颜色" #868686
 @advanced color AnchorNameColor "主播昵称颜色" #FF6600
@@ -63,7 +68,7 @@ Scrollbar_OFF "关" <<<EOT /*Scrollbar*\/ EOT;
 url-prefix("http://www.douyu.com/") {
     /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201006
+    最后更新：20201007
     ===*/
     /*=== 屏蔽元素 ===*/
     .giftbatter-box,
@@ -347,8 +352,6 @@ url-prefix("http://www.douyu.com/") {
     .Title-videoSiteLink,
     .Title-roomOtherBottom,
     .Title-columnTag,
-    .ChatRank,
-    .layout-Player-rank,
     .Bottom-ad,
     .layout-Player-asideAdvert,
     #js-bottom-left>div>div>div.LazyLoad.is-visible,
@@ -401,6 +404,7 @@ url-prefix("http://www.douyu.com/") {
         display: none!important;
     }
     /* 弹幕侧 */
+    /*[[PlayerRank]]*/
     /*[[UserLevel]]*/
     /*[[ChatFansBarrage]]*/
     /*[[ChatLetter]]*/
@@ -606,7 +610,7 @@ url-prefix("http://www.douyu.com/") {
     .wm-h5-view * {
         background: #212121!important;
     }
-    [data-diy="1"] #mainbody {
+    [ data-diy="1"] #mainbody {
         margin-top: 70px!important;
     }
     #header.annualfestival-header .head-nav>li.current>a {
@@ -3476,7 +3480,13 @@ url-prefix("http://www.douyu.com/") {
     .edit,
     .PrivateLetter,
     .AssembleExpressHeader-head,
-    .Title-anchorPicBack {
+    .Title-anchorPicBack,
+    .ChatTabContainer-titleWraper--tabLi,
+    .ChatTabContainer-conWraper,
+    .ChatRank-rankWraper,
+    .NobleRank,
+    .FansRankAllList,
+    .RankAllMain-content {
         background: #2c2c2c!important;
     }
     .AnchorRank-more,
@@ -3501,7 +3511,8 @@ url-prefix("http://www.douyu.com/") {
     .CustomGroupEditor-btn--save.is-disabled,
     .GameRecommend-info>a:last-child.is-going,
     .Divider,
-    .game-item.game3-item span.name:before {
+    .game-item.game3-item span.name:before,
+    .ChatTabContainer-titleWraper--tabTitle {
         background: #424242!important;
     }
     .Aside-shrink-item:hover,
@@ -3549,6 +3560,16 @@ url-prefix("http://www.douyu.com/") {
     }
     .TagItem-editing:hover {
         background-color: #ffe9d5!important;
+    }
+    .ChatTabContainer-titleWraper--tabLi.is-active,
+    .ChatRankWeek-headerContent,
+    .ChatRankWeek-listItem--index,
+    .NobleRankTips-icon,
+    .NobleRankTips,
+    .FansRankInfo,
+    .FansRankList-itemRank,
+    .FansRankAllList-itemRank {
+        background-color: #373737!important;
     }
     .Header-wrap .EntryNav-desc,
     .Header-wrap .Header-menu-link>a,
@@ -3760,7 +3781,24 @@ url-prefix("http://www.douyu.com/") {
     .ChatFansBarragePop-txt,
     .game-item.game3-item span.name,
     .AssembleExpressHeader-head,
-    .GameRecommend-info {
+    .GameRecommend-info,
+    .ChatRank-rankWraper .ChatTabContainer-titleWraper--tabLi,
+    .ChatRankWeek-listItem--top .ChatRankWeek-listItem--nickname,
+    .ChatRankWeek-headerContent,
+    .ChatRankWeek-listItem--nickname,
+    .ChatRankWeek-listItem--index,
+    .NobleRankTips-icon,
+    .NobleRankTips,
+    .OnlineVipList-nickName,
+    .OnlineVipList-lineTitle,
+    .FansRankInfo-txt,
+    .NobleRankList-nickName,
+    .FansRankList-nickName,
+    .FansRankList-intimacy,
+    .FansRankList-itemRank,
+    .FansRankAllList-itemRank,
+    .FansRankAllList-nickName,
+    .FansRankBottom-total {
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -4023,7 +4061,12 @@ url-prefix("http://www.douyu.com/") {
     .ChatFansBarragePop,
     .ChatFansBarragePop-describe,
     .AssembleExpressHeader,
-    .Search-historyList>li {
+    .Search-historyList>li,
+    .ChatRank-rankWraper,
+    .NobleRankTips-icon,
+    .ChatTabContainer-titleWraper--tabLi,
+    .FansRankBottom,
+    .RankAllMain .ChatRankWeek-listItem:nth-child(4) {
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
@@ -4290,6 +4333,27 @@ url-prefix("http://www.douyu.com/") {
         background-repeat: no-repeat!important;
         filter: invert(50%) sepia(51%) saturate(4942%) hue-rotate(0deg) brightness(102%) contrast(105%);
     }
+    .shark-webp .OnlineVipList-lineTitle {
+        /* #fff -> #868686 */
+        filter: invert(46%) sepia(7%) saturate(4%) hue-rotate(122deg) brightness(97%) contrast(85%);
+        /* #fff -> #2c2c2c*/
+        /*filter: invert(83%) sepia(0%) saturate(1901%) hue-rotate(152deg) brightness(103%) contrast(101%);*/
+    }
+  .shark-webp .ChatRankWeek-listItem--noresult,.shark-webp .NobleRankList-noresult,.shark-webp .FansRankList-noresulet{
+  		background-color:#2c2c2c!important;
+  }
+  .shark-webp .ChatRankWeek-listItem--noresult{
+    background: url(http://asifadeaway.com/NightMode/douyu/ChatRankWeekNoresult.png) no-repeat!important;
+ background-position: center!important;
+  }
+.shark-webp .NobleRankList-noresult{
+    background: url(http://asifadeaway.com/NightMode/douyu/NobleRankListNoresult.png) no-repeat!important;
+background-position: center!important;  
+}
+  .shark-webp .FansRankList-noresulet{
+    background: url(http://asifadeaway.com/NightMode/douyu/FansRankListNoresult.png) no-repeat!important;
+ background-position: center!important;
+  }
     #header .head-oth .o-history .h-list>li .h-cont .h-t-icon {
         background: url(http://asifadeaway.com/NightMode/douyu/panel_history_play.png) no-repeat!important;
     }
@@ -4398,16 +4462,16 @@ url-prefix("http://www.douyu.com/") {
         background: #1c1c1c!important;
         color: #fc861f!important;
     }
-    [class*="controlbar-"] [class*="VolumeBar-"] [class*="tips-"] {
+    [ class*="controlbar-"] [class*="VolumeBar-"] [class*="tips-"] {
         background: #1c1c1c!important;
         color: #fc861f!important;
         padding: 0 5px!important;
         border-radius: 4px!important;
     }
-    [class*="controlbar-"] div[class*="rate-"] {
+    [ class*="controlbar-"] div[class*="rate-"] {
         margin-right: 25px;
     }
-    [class*="controlbar-"] div[class*="rate-"] div[class*="text-"] {
+    [ class*="controlbar-"] div[class*="rate-"] div[class*="text-"] {
         padding: 0 7px!important;
     }
     /* - 超管提醒 - */
@@ -4518,16 +4582,16 @@ url-prefix("http://www.douyu.com/") {
         font-size: 12px!important;
         line-height: 19px!important;
     }
-.ChatBarrageCollectPop-dialog {
-    bottom: 73px!important;
-}
-     .AssembleExpressHeader{
-left: inherit!important;
-    right: -12px!important;
-}
-     #js-player-asideMain > div > div.layout-Player-chat > div > div.ChatSpeak > div.ChatSend > div.ChatBarrageCollect > div.AssembleExpressHeader.ChatBarrageCollectPop-dialog > div > div.ChatBarrageCollectPop-content > div > div:nth-child(1){
-    overflow-x: hidden!important;
-}
+    .ChatBarrageCollectPop-dialog {
+        bottom: 73px!important;
+    }
+    /* .AssembleExpressHeader {
+        left: inherit!important;
+        right: -12px!important;
+    } */
+    [style*='scroll'] {
+        overflow-x: hidden!important;
+    }
     .ChatBarrageCollectPop {
         width: 334px!important;
         left: -322px!important;
@@ -4807,13 +4871,12 @@ url-prefix("http://www.douyu.com/") {
     .play-list li .follow-list-all p span.dy-num {
         background: url(http://asifadeaway.com/NightMode/douyu/closing-recommend-icon.png) 0px center no-repeat!important;
     }
-    .Search-historyList>li>i{
-        background-image:url(http://asifadeaway.com/NightMode/douyu/Search-historyList-icons.png)!important;
+    .Search-historyList>li>i {
+        background-image: url(http://asifadeaway.com/NightMode/douyu/Search-historyList-icons.png)!important;
     }
-    .Title-dataLoadding{
+    .Title-dataLoadding {
         margin: 7px 0!important;
     }
-
     /* 未登录 */
     .PlayerCaseSub-Main {
         background: #2c2c2c!important;

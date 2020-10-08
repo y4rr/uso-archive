@@ -6,7 +6,7 @@
 @version        201623.22.43
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown favebutton "Bring back "Favorite" button? " {
+@advanced dropdown favebutton "Bring back \"Favorite\" button? " {
 	faveback "Yes*" <<<EOT .withHeartIcon .ProfileTweet-actionCount:hover {
     color: #ff9c0b !important;
 }
@@ -56,24 +56,24 @@ yesrepeat "Yes" <<<EOT background-repeat: repeat; EOT;
 
 }
 @advanced color color "Background Color" #111015
-@advanced dropdown moments "Hide "Moments" Tab?" {
+@advanced dropdown moments "Hide \"Moments\" Tab?" {
 	hidemoments "Yes*" <<<EOT .moments {display:none !important;} EOT;
 showmoments "No" <<<EOT  EOT;
 
 }
-@advanced dropdown show "Hide "Who to follow" forever?" {
+@advanced dropdown show "Hide \"Who to follow\" forever?" {
 	show "Yes*" <<<EOT .wtf-module.has-content {display:none;} EOT;
 hide "No" <<<EOT  EOT;
 
 }
-@advanced dropdown recap "Disable "While you were away"?" {
+@advanced dropdown recap "Disable \"While you were away\"?" {
 	hiderecap "Yes*" <<<EOT .recap-module {display:none !important;}
 .recap-header {display:none !important;}
 .has-recap {display:none !important;} EOT;
 showrecap "No" <<<EOT  EOT;
 
 }
-@advanced dropdown hover "Disable "Profile Card" on hover?" {
+@advanced dropdown hover "Disable \"Profile Card\" on hover?" {
 	hidecard "Yes*" <<<EOT .profile-card {display:none !important;} EOT;
 showcard "No" <<<EOT  EOT;
 

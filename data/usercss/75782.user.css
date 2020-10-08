@@ -6,13 +6,13 @@
 @version        2013112.13.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown bgbar "A background image for the "Tweets" bar:" {
+@advanced dropdown bgbar "A background image for the \"Tweets\" bar:" {
 None "None*" <<<EOT http://muge.hacked.jp/cards/transpng.png EOT;
 
 	bgbar-custom-dropdown "Custom" <<<EOT /*[[bgbar-custom]]*\/ EOT;
 }
-@advanced text bgbar-custom "A background image for the "Tweets" bar: (Custom)" "https://example.com/image.png"
-@advanced color ntwitbg ""New tweets" bar background" #FFAA00
+@advanced text bgbar-custom "A background image for the \"Tweets\" bar: (Custom)" "https://example.com/image.png"
+@advanced color ntwitbg "\"New tweets\" bar background" #FFAA00
 @advanced color tshadow "Text-shadow color" #FFFFFF
 @advanced dropdown hovers "CSS Transitions" {
 	Animated fade-in "Animated fade-in*" <<<EOT     -webkit-transition: opacity 0.3s ease-in-out;

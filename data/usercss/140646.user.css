@@ -18,7 +18,7 @@ pinned2 "No" <<<EOT  EOT;
 }
 @advanced dropdown transparent-removed "Pinned tabs' icons transparent, normal tabs' icons removed" {
 	transparent-removed1 "No*" <<<EOT  EOT;
-transparent-removed2 "Yes (choose "transparent" and "no" above)" <<<EOT .tabbrowser-tab:not([pinned]) .tab-icon-image {display: none} EOT;
+transparent-removed2 "Yes (choose \"transparent\" and \"no\" above)" <<<EOT .tabbrowser-tab:not([pinned]) .tab-icon-image {display: none} EOT;
 
 }
 

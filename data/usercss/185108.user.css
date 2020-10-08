@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        2020106.17.52
+@version        2020107.15.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -410,9 +410,6 @@ html #bodyContent.new-message {
 .WikiaArticleComments .MiniEditorWrapper .editarea textarea {
 	background: #252525;
 }
-a#ca-ve-edit > span, a#ca-ve-edit > svg, .wds-dropdown > .wds-button.wds-dropdown__toggle > svg {
-	color: #000;
-}
 .article-image__caption {
     background-color: #111111;
     color: #00badd;
@@ -521,6 +518,132 @@ body.video {
 }
 g.fandom-video-play-icon__circle > use:nth-of-type(2) {
 	fill: #000;
+}
+.wds-global-navigation__link-group .wds-dropdown__content, .wds-global-navigation__notifications-dropdown .wds-dropdown__content, .wds-global-navigation__user-menu .wds-dropdown__content {
+	border-color: #333;
+}
+body.skin-oasis {
+	background-color: #222;
+}
+audio#ogg_player_1_obj {
+	filter: invert(100);
+}
+.ogg-player-options {
+	border-color: #333;
+}
+.WikiaPage .WikiaPageContentWrapper {
+	background: #1a1a1a;
+}
+.ooui-theme-fandom .wds-community-header .wds-community-header__sitename a, .ooui-theme-fandom .wds-community-header .wds-tabs .wds-tabs__tab-label {
+	color: #eaeaea;
+}
+.ooui-theme-fandom .wds-community-header .wds-tabs .wds-tabs__tab:hover .wds-tabs__tab-label {
+    color: rgba(234, 234, 234, .8);
+}
+.WikiaPage {
+	color: #cacaca;
+}
+.ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after, .ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::before {
+	background: #111;
+}
+.mainpage-wrap {
+	color: #fff;
+}
+.CategorySelect.articlePage {
+	background: #2e2e2e;
+	border-color: #444;
+}
+.mcf-card-wiki-articles__header {
+	background: #1a1a1a;
+	color: #eaeaea;
+}
+.mcf-card-wiki-articles__header::before {
+    background: linear-gradient(to right,rgba(26, 26, 26, .502),rgba(26, 26, 26, .502)),linear-gradient(to left,rgba(234,234,234,0) 50px,#1a1a1a 220px);
+}
+.mcf-card-wiki-articles, .mcf-card-discussions, .mcf-card-discussions__list:after, .mcf-card-discussions__list:before, .mcf-card-related-wikis {
+	background: #111;
+}
+.mcf-card {
+	border-color: #444;
+}
+.mcf-card-wiki-articles__item-link, .mcf-card-discussions__content, .mcf-card-related-wikis__item-link, .mcf-card-related-wikis__title, .ooui-theme-fandom .wds-community-header .wds-community-header__counter {
+	color: #eaeaea;
+}
+.mcf-card-wiki-articles__item, .mcf-card-discussions__item, .mcf-card-related-wikis__item {
+	border-color: #333;
+}
+.mcf-card-wiki-articles__circle {
+	background: #666;
+	color: #111;
+}
+.mcf-card-discussions__header, .mcf-card-related-wikis__header {
+	border-color: #333;
+	color: #eaeaea;
+}
+.mcf-card-discussions__user-info .wds-avatar img.wds-avatar__image {
+	border-color: #333;
+}
+.mcf-card-discussions__user-info .wds-avatar .wds-avatar__image {
+	background-color: #111;
+	fill: #333;
+}
+.mcf-card-discussions__counters {
+	color: #666;
+}
+.mcf-card-discussions__counters svg {
+	color: #333;
+}
+#wds-player-icon-play > g > g > use:nth-of-type(2) {
+	fill: #000;
+}
+.ooui-theme-fandom .wds-community-header .wds-button.wds-is-secondary {
+	color: #eaeaea;
+}
+.ooui-theme-fandom .wds-community-header .wds-button.wds-is-secondary svg {
+	fill: #eaeaea;
+}
+.ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-button.wds-is-secondary:focus:not(:disabled), .ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-button.wds-is-secondary:hover:not(:disabled), .ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-button.wds-is-secondary:active, .ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-button.wds-is-secondary.wds-is-active {
+	color: #9d9d9d;
+}
+.ooui-theme-fandom .wds-community-header .wds-button.wds-is-secondary:hover svg {
+    fill: rgba(234, 234, 234, .8);
+}
+.pi-europa.portable-infobox {
+	color: #cacaca;
+}
+.pi-europa .pi-horizontal-group-item:nth-child(even) {
+    background-color: #1e1919;
+}
+.article-with-rail .WikiaRail .rail-module h2 {
+	border-color: #444;
+}
+.accent {
+	border-color: #444;
+	color: #cacaca;
+}
+.ooui-theme-fandom .wds-global-navigation-wrapper ~ * .wds-button.wds-is-secondary {
+	border-color: #cacaca;
+	color: #cacaca;
+}
+.wikiaPhotoGallery-slider-body {
+	background: #131313;
+	border-color: #4f4f4f;
+}
+[src='https://vignette.wikia.nocookie.net/central/images/d/d3/MovieCrimeFooterImage.png/revision/latest/scale-to-width-down/200?cb=20160219201402'] {
+	filter: invert(100);
+}
+}
+
+@-moz-document domain("fandomquiz.typeform.com") {
+.icUvIG {
+	background: #111;
+	color: #909090;
+}
+.icUvIG:active {
+    background-color: #262626;
+}
+.icUvIG:hover {
+	background: #111;
 }
 }
 

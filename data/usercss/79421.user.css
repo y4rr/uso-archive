@@ -6,21 +6,21 @@
 @version        2012123.11.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown posts_user "Your "Posts" text  (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced dropdown posts_user "Your \"Posts\" text  (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	posts_user-custom-dropdown "Custom" <<<EOT /*[[posts_user-custom]]*\/ EOT;
 }
-@advanced text posts_user-custom "Your "Posts" text  (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
-@advanced dropdown followers_user "Your "Followers" text (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced text posts_user-custom "Your \"Posts\" text  (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced dropdown followers_user "Your \"Followers\" text (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	followers_user-custom-dropdown "Custom" <<<EOT /*[[followers_user-custom]]*\/ EOT;
 }
-@advanced text followers_user-custom "Your "Followers" text (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
-@advanced dropdown drafts_user "Your "Drafts" text (NOTE: Even if not in use, at least 1 character must be entered below)" {
+@advanced text followers_user-custom "Your \"Followers\" text (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced dropdown drafts_user "Your \"Drafts\" text (NOTE: Even if not in use, at least 1 character must be entered below)" {
 
 	drafts_user-custom-dropdown "Custom" <<<EOT /*[[drafts_user-custom]]*\/ EOT;
 }
-@advanced text drafts_user-custom "Your "Drafts" text (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
+@advanced text drafts_user-custom "Your \"Drafts\" text (NOTE: Even if not in use, at least 1 character must be entered below) (Custom)" "https://example.com/image.png"
 @advanced dropdown posts_no_edit "Posts      " {
 	No change "No change*" <<<EOT content: "Posts" !important; EOT;
 Use Your custom text "Use Your custom text" <<<EOT  EOT;
