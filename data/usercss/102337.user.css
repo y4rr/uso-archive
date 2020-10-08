@@ -604,7 +604,7 @@ url("https://www.baidu.com/home?isNewVersion=1"){
 
 /*字体颜色*/
 #s_ctner_contents>*:not(#s_content_2) *:not(.current),.hot li em,.hot-title *,.title-sns,.s-user-set-menu a:not(:hover),.weather-setting-content *:not(:hover),.show-weather>span>*,#u_sp *,#u1 a,.bdpfmenu a:not(:hover),#u_sp *,#s_upfunc_menus *,#u_spnav *,#s_mod_weather *,.water-container *,.title-content,.s-rank-title *,.tips-content *{color:/*[[eee]]*/!important;}
-/*[[---]]*/
+/*[[----1]]*/
 /*新闻弹出项背景*/
 .detail-content{background-color:rgba(240,240,240,.8)!important;}
 /*顶部调整*/
@@ -649,7 +649,7 @@ url("https://www.baidu.com/home?isNewVersion=1"){
 regexp("^https?:\/\/www\.baidu\.com\/(baidu\?|#).*"){
 /*广告无用项屏蔽*/
 .res_top_banner,[id*="rs_top"],[data-tpl=hint_toprq1],#con-ar>[style],#about_is,.tools,.c-gray,.ec-figcaption,.leftBlock,#content_left>table,[align=left]>div:not([id]),.opui-advert2-smalllogo,.EC_newppim,#foot,#content_left>div:not([id]),body>.result-op.xpath-log,#clone,#baidu_bear{display:none!important;}
-/*[[---]]*/
+/*[[----2]]*/
 }
 
 /*更多页面*/

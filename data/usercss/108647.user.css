@@ -39,14 +39,14 @@
 @-moz-document domain("play.baidu.com") {
 *:not(.myhome-li){border-color:#555!important;color:/*[[----]]*/!important;font-family:"Microsoft Yahei"!important;text-shadow: #aaa 0px 0px 0.2px !important;}
 #mainContent{background:#333!important;}
-/*[[--]]*/
+/*[[---3]]*/
 
 /*左侧*/
-.leftbar-outer{height:/*[[--]]*/calc(100% - 90px)!important;}    
+.leftbar-outer{height:/*[[---2]]*/calc(100% - 90px)!important;}    
 .m-client-product,.yyr-tip{display:none !important;} 
 .playlist-length-cloud {bottom:10px!important;}     
 /*顶栏*/
-.mb-layout-hd{background:/*[[--]]*/linear-gradient(#444,#222)!important;box-shadow:0 0 12px hsl(/*[[--]]*/,100%,49%)!important;border-bottom:3px solid hsl(/*[[--]]*/,100%,43%)!important;}
+.mb-layout-hd{background:/*[[---2]]*/linear-gradient(#444,#222)!important;box-shadow:0 0 12px hsl(/*[[---1]]*/,100%,49%)!important;border-bottom:3px solid hsl(/*[[---1]]*/,100%,43%)!important;}
 .top-banner{background:none!important;}
 .logo{background:url(http://mu9.bdstatic.com/player/t/i/MGWE4KMY.png) -74px -2px !important;}
 .brm-title,#bd_ec_clb_asp,.down-mobile,.gold-vip-tip{display:none !important;}
@@ -59,7 +59,7 @@
    
 /*导航*/
 #leftCol{
-background: /*[[--]]*/linear-gradient(right,#111,#333)!important;
+background: /*[[---2]]*/linear-gradient(right,#111,#333)!important;
 }
 .list-hover,.list-favor,#leftCol .playing,#leftCol .selected{
     background:#444!important;
@@ -67,12 +67,12 @@ background: /*[[--]]*/linear-gradient(right,#111,#333)!important;
 .leftbar-bottom-bg ,.upload-btn{background:none!important;}
 /*歌词*/
 #lrcCol{
-background: /*[[--]]*/linear-gradient(right,#333,#111 300px)!important;
+background: /*[[---2]]*/linear-gradient(right,#333,#111 300px)!important;
 }
 #lrcCol>*{
 background:none!important;
 }
-#lrcResize{background: /*[[--]]*/linear-gradient(left, #aaa,#111)!important;}
+#lrcResize{background: /*[[---2]]*/linear-gradient(left, #aaa,#111)!important;}
 .lrc-wrapper .ui-lrc-current {
     color: /*[[--]]*/!important;
 }
@@ -87,7 +87,7 @@ background:none!important;
 	height: 190px;
 	z-index: 999;
 	background:url(http://imgsrc.baidu.com/forum/pic/item/86f5e2f81a4c510fd9ab96ad6359252dd52aa54e.jpg)  20px 190px / 140% !important;
-  /*[[--]]*/animation: rotate 180s linear infinite!important;
+  /*[[---2]]*/animation: rotate 180s linear infinite!important;
 }
 @keyframes rotate {
 		0% {
@@ -111,12 +111,12 @@ background:none!important;
 	width:123px!important;
 	height:123px!important;
 	margin:3px 9px!important;
- /*[[--]]*/animation: rotate 180s linear infinite!important;
+ /*[[---2]]*/animation: rotate 180s linear infinite!important;
 }
 .album-wrapper .album-name{margin-top:20px!important;}
 /*列表*/
 .tab-button a:hover,.ui-dialog-ok {
-background:/*[[--]]*/linear-gradient(#777,#444)!important;border-radius:4px!important;box-shadow:0 0 2px #999 inset!important;
+background:/*[[---2]]*/linear-gradient(#777,#444)!important;border-radius:4px!important;box-shadow:0 0 2px #999 inset!important;
 }
 .column2{
 background:#111!important;
@@ -128,7 +128,7 @@ border-radius:0!important;
 background:#111!important;
 }
 .odd{
-background:hsl(/*[[--]]*/,100%,7%)!important;
+background:hsl(/*[[---1]]*/,100%,7%)!important;
 }
 .ui-reelList-checkbox span,.select-all-checkbox{ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'>\<feColorMatrix in='SourceGraphic' type='matrix' values=\ '0.2 0 0 0 0 \ 0 0.3 0 0 0 \ 0 0 0.5 0 0 \ 0 0 0 0 0.9'/></filter></svg>#invert") !important;
   }
@@ -136,22 +136,22 @@ background:hsl(/*[[--]]*/,100%,7%)!important;
   }  
 
 .ui-reelList-row-hover{
-background:hsl(/*[[--]]*/,17%,25%)!important;
+background:hsl(/*[[---1]]*/,17%,25%)!important;
 }
 .ui-reelList-checked,.ui-reelList-active,.similar-wrapper{
-background:/*[[--]]*/linear-gradient(#333 3%,hsl(/*[[--]]*/,100%,11%),#333 97%,#bbb)!important;
+background:/*[[---2]]*/linear-gradient(#333 3%,hsl(/*[[---1]]*/,100%,11%),#333 97%,#bbb)!important;
 }
-.ui-reelList-similar{background:hsl(/*[[--]]*/,78%,20%)!important;color:hsl(/*[[--]]*/,100%,83%)!important;}
+.ui-reelList-similar{background:hsl(/*[[---1]]*/,78%,20%)!important;color:hsl(/*[[---1]]*/,100%,83%)!important;}
 .ui-reelList-header,#myFooter{
-background:/*[[--]]*/linear-gradient(#555,#333)!important;
+background:/*[[---2]]*/linear-gradient(#555,#333)!important;
 }
 .c1,.c2{
 background:none!important;
 }
 /*右键菜单弹出窗口*/
-.reelList-contextMenu,.pop-opt,.vip-pop,.content,[role="dialog"],#switch,#share-btn-list{background: /*[[--]]*/radial-gradient(hsl(/*[[--]]*/,56%,20%),#222)!important;border-radius:5px!important;box-shadow:0 0 4px #777 inset!important;
+.reelList-contextMenu,.pop-opt,.vip-pop,.content,[role="dialog"],#switch,#share-btn-list{background: /*[[---2]]*/radial-gradient(hsl(/*[[---1]]*/,56%,20%),#222)!important;border-radius:5px!important;box-shadow:0 0 4px #777 inset!important;
 }
-.reelList-contextMenu li:hover,.pop-opt a:hover,.vip-pop a:hover{background: /*[[--]]*/linear-gradient(#444,#222)!important;
+.reelList-contextMenu li:hover,.pop-opt a:hover,.vip-pop a:hover{background: /*[[---2]]*/linear-gradient(#444,#222)!important;
 }
 .round-shape .inner{border-color:transparent transparent #222!important;
 }
@@ -189,7 +189,7 @@ a.delete:hover{
 }
 /*播放条*/
 .mb-layout-ft{ 	
-background: /*[[--]]*/linear-gradient(#333,#111);border-top:2px solid #666!important;
+background: /*[[---2]]*/linear-gradient(#333,#111);border-top:2px solid #666!important;
 }
 .add-button,.delete-button,.store-button{height: 30px!important;
     width: 70px!important;}
@@ -219,15 +219,15 @@ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAZCAYAAAACLBH
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAZCAYAAAACLBHaAAAC2UlEQVRoge2aPYrbQBSArS6NbxDIFmpURqDSGCQkWWIK43vkED6AGtduNwcIWUiVJSA2RQp3AyncbJHG3sAa7GYJL4XznNF4RvMjJRs5Gvjw/D49z6cBY2Yw+FV83wfXdXs6hu/7MGBLEASQZRkQQno6Rp7nEATBUajneZDnOURRBKPRqKdjhGEIeZ6D53kwcF0XCCHPnlSPPYQQcF33t8zxeNzTUXqZF4RUZhiGWp8ydNer4rRB3bOa5qO7vpw7Smy/A3ImMwxDbeI4hs1mC2z5/vBgFAOhlCrr/HwVNnnU5cW2TeKXcwd+PL5TUs6dRrk2kkkIAVH5WzJ12zri+RdANqaTm0zk/utLJU2EnsmMokgbmUyTGAil1LquO64zppprspYV+eb1ixO8QOx/us9OQm32sJHM6XTaikz27dcRaHLSbGQ2jc+LRGmLyRAWk6FQJopkT2hjmXEcK1mv10KJfFmtVlrx4jgGSmmlzsKP27RFY3VzZOOqNQjKfPzyqgIKxTaK5OeVc0d775AzmUkSK5nNZkAprRX5+e5OO16SHDdJVmfbfH8dps9SxWbn18VPkqNMVhorTyVzMRlCOXe09w6xkokLbz/eCkXe3LyHNE2NEhFtWN2m8f2qtulcmTRdmazQzaerCng6USQ/ZiNSKDNNUyOur99WRC6XS+MYKJJti+qiNXXUPU/VJ4vHf6oQCcXTuZgMKzJRpOn+IY1lpmkKRVHA4bCHoiisEzGVqSOoiUybuSqh3z5cnUCRbLuJSCuZhBDY7XZaP4C2220jmaoT2+bJrJsry8MkDi/06T47yWxDpFBmlmW1TKdTbZmHw14ZD6GUVurY5vt11ps8SzbOIlorGlMhO6Hl3DGKI8NY5p+A3xjRBvKCdWlTvEysjVCkLZH/jMz/DfbP9Tbj9jIviF7mBXGSiXeA8jx/9qR6zEF3nudBfzuv41Ru5/X3ZrsNe2/2J3NlVDqsWbeyAAAAAElFTkSuQmCC) no-repeat!important;}
 .download-button:hover{
     background-position:2px 2px!important;}      
-.hq-switch,#switchFm  {background: /*[[--]]*/linear-gradient(#444,#222)!important;border-radius:4px!important;
+.hq-switch,#switchFm  {background: /*[[---2]]*/linear-gradient(#444,#222)!important;border-radius:4px!important;
         height: 40px;width: 110px;margin:2px auto!important;box-shadow:0 0 2px #777 inset,1px 1px 3px #000!important;}
 .hq-switch:hover,#switchFm:hover{background:#222!important;box-shadow:1px 1px 4px #111 inset!important;}        
 .hq-switch *{padding-right:8px} 
 #switchFm i{padding-left:2px} 
 #switchFm span{padding-right:22px}
 
-#progressSlider .ui-slider-range,#volSlider .ui-slider-range{background: /*[[--]]*/linear-gradient(hsl(/*[[---]]*/,100%,70%),hsl(/*[[---]]*/,100%,37%) 20%,hsl(/*[[---]]*/,100%,37%) 80%,hsl(/*[[---]]*/,100%,17%))!important;border-radius:40px!important;top:1px!important;}
-a.ui-corner-all{background: /*[[--]]*/radial-gradient(hsl(/*[[---]]*/,100%,47%) 25%,#fff 25%)!important;border-radius:50%!important;}
+#progressSlider .ui-slider-range,#volSlider .ui-slider-range{background: /*[[---2]]*/linear-gradient(hsl(/*[[---]]*/,100%,70%),hsl(/*[[---]]*/,100%,37%) 20%,hsl(/*[[---]]*/,100%,37%) 80%,hsl(/*[[---]]*/,100%,17%))!important;border-radius:40px!important;top:1px!important;}
+a.ui-corner-all{background: /*[[---2]]*/radial-gradient(hsl(/*[[---]]*/,100%,47%) 25%,#fff 25%)!important;border-radius:50%!important;}
 #progressSlider .ui-corner-all{width:18px!important;height:18px!important;}
 #progressSlider>*:not(a){background:none !important;}
 /*歌手*/
