@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ceremosia
 @description    `针对 2560*1440 进行样式修改适当放大主页，约为1.25倍。改变播放界面，默认状态下使用更大的窗口`
-@version        202064.11.26
+@version        2020109.6.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -118,6 +118,11 @@
         width: 90% !important;
         max-width: 2400px !important;
         margin-top: 10px !important;
+    }
+
+    #bilibili-player{
+        width:1915.390px !important;
+        height:1150px !important;
     }
 
     .v-wrap .l-con {

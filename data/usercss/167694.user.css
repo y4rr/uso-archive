@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         吴文俊
 @description    `Make zhihu.com more comfortable (including 「知乎专栏」).`
-@version        2020921.15.41
+@version        2020109.3.10
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,16 +25,7 @@ body {
 .GlobalLeftSideBar {
     display: none !important;
 }
-/* 头部导航修复 */
-.AppHeader {
-    max-width: 1000px !important;
-    margin:0 auto !important;
-}
-.AppHeader.is-fixed {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-}
-.AppHeader-widescreenResponsive .AppHeader-inner {
+.AppHeader-inner {
     width: 1000px !important;
     padding: 0 !important;
     box-sizing: content-box !important;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        2020108.16.30
+@version        2020109.11.58
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -58,6 +58,11 @@ Scrollbar_OFF "关" <<<EOT /*Scrollbar*\/ EOT;
 PlayerRank_OFF "关" <<<EOT /*PlayerRank*\/ EOT;
 
 }
+@advanced dropdown BarrageContent "粉丝弹幕颜色显示" {
+	BarrageContent_OFF "关*" <<<EOT .Barrage-content, EOT;
+BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--color"]),  EOT;
+
+}
 @advanced color UserNameColor "用户昵称颜色" #2B94FF
 @advanced color UserContentColor "用户发言颜色" #868686
 @advanced color AnchorNameColor "主播昵称颜色" #FF6600
@@ -68,7 +73,7 @@ PlayerRank_OFF "关" <<<EOT /*PlayerRank*\/ EOT;
 url-prefix("http://www.douyu.com/") {
     /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201007
+    最后更新：20201009
     ===*/
     /*=== 屏蔽元素 ===*/
     .giftbatter-box,
@@ -2756,7 +2761,7 @@ url-prefix("http://www.douyu.com/") {
     .layout-Player-barrage {
         background: #2c2c2c!important;
     }
-    .Barrage-content,
+    /*[[BarrageContent]]*/
     .Title-anchorNameH1,
     .Title-followCancleText,
     .Barrage-toolbarClear,
@@ -3555,7 +3560,8 @@ url-prefix("http://www.douyu.com/") {
     .CustomGroupCommon .dy-Modal-header,
     .CustomGroupCommon .dy-Modal-close,
     .ChatFansBarragePop,
-    .AssembleExpressHeader {
+    .AssembleExpressHeader,
+    .GiftInfoPanel-imgBox {
         background-color: #212121!important;
     }
     .TagItem-editing:hover {
@@ -4697,8 +4703,9 @@ background-position: center!important;
         color: /*[[UserNameColor]]*/!important;
     }
     /* 用户发言颜色 */
-    .UserLevel+.Barrage-nickName+.Barrage-content,
-    .UserLevel+span+.Barrage-nickName+.Barrage-content {
+    .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
+    .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
+    .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
         color: /*[[UserContentColor]]*/!important;
     }
     /* 主播昵称颜色 */

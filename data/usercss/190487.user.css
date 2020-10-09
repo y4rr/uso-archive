@@ -1,0 +1,222 @@
+/* ==UserStyle==
+@name           eVirtual - UTM Modo Oscuro
+@namespace      USO Archive
+@author         Señor C.
+@description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de manabí, porque a mi novia le encanta el modo oscuro :3`
+@version        2020109.7.11
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url("https://evirtual.utm.edu.ec/my/") {
+#page-my-index {
+
+    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+
+}
+}
+
+@-moz-document url("https://evirtual.utm.edu.ec/my/index.php") {
+#page-my-index {
+
+    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+
+}
+}
+
+@-moz-document url("https://evirtual.utm.edu.ec/?redirect=0") {
+body{
+
+    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+	color: #f8f8f8;
+}
+}
+
+@-moz-document domain("evirtual.utm.edu.ec") {
+
+
+
+.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well{
+
+        background-color: #121212;
+	border: 1px solid #d1d8e0;
+}
+
+body{
+
+    color: #d1d8e0;
+        background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+}
+
+#region-main{
+background-color: #121212;
+    border: 1px solid #d1d8e0;
+}
+
+a{
+    color: #b2eb83;
+}
+
+a:hover{
+color: #fcffff;
+}
+
+[data-region="drawer"] {
+background-color: #252525;
+}
+
+.bg-white{
+background-color: #2e2e2e !important;
+}
+
+.bg-gray{
+background-color: #252525 !important;
+}
+
+.btn, #page-grade-grading-manage .actions .action{
+color: #eef3f9;
+}
+
+
+.btn-light{
+border-color: #252525;
+}
+
+
+a.bg-gray:hover, button.bg-gray:hover, a.bg-gray:focus, button.bg-gray:focus {
+    background-color: gray !important;
+}
+
+
+
+.btn-light:hover {
+    color: #d1d8e0;
+
+    border-color: gray;
+}
+
+.navbar-light .navbar-brand {
+    color: #ececec;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #8d8d8d;
+}
+
+.usermenu .login a {
+    color: #a9e899;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: white;
+}
+
+
+.dropdown-menu {
+	color: white;
+    background-color: #2e2e2e;
+    border: 1px solid gray;
+    
+
+}
+
+.dropdown-item {
+	
+    color: white;
+
+}
+
+
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: #ececec;
+}
+
+
+.usermenu .login a:hover, .usermenu .login a:focus {
+    color: white;
+}
+
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #121212;
+    border: 1px solid #d1d8e0;
+}
+
+
+.list-group-item-action {
+
+    color: #d1d8e0;;
+
+}
+
+
+.list-group-item-action:hover, .list-group-item-action:focus {
+    color: black;
+    background-color: grey;
+}
+
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #d1d8e0;
+    background-color: #121212;
+    border-color: #dee2e6 #dee2e6 #121212 #dee2e6;
+}
+
+
+.btn-secondary, .btn-default {
+
+    background-color: black;
+
+}
+
+
+.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+.cell{
+color: #d1d8e0;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@-moz-document url-prefix("https://evirtual.utm.edu.ec/course") {
+body{
+
+    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+
+}
+
+p {
+ 
+    color: #d1d8e0;
+}
+
+
+
+
+strong{
+ color: #d1d8e0;
+}
+}

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Milan Bartky
 @description    `Google Solarized Theme`
-@version        2020102.19.55
+@version        2020109.12.42
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("google.com"), domain("google.de") {
+@-moz-document url-prefix("https://google"), url-prefix("https://www.google"), url-prefix("https://images.google"), url-prefix("https://myaccount.google") {
 /*
  * Google Solarized Theme
  * By milan44
@@ -43,15 +43,21 @@ a {
 .GHDvEf.selected:hover,
 .sbibtd,
 .y8Jpof:hover,
+.XLK0Od,
 body {
     background: var(--bg-dark);
 }
 
 .uDMnUc,
 .cwUqwd,
+.UVgjof,
+.goog-slider li,
+.x7WrMb,
+.GiKO7c,
 body {
     color: var(--gray);
 }
+.fnfC4c,
 .U8shWc.Vy8nid:disabled,
 .U8shWc.Vy8nid[disabled]:not([disabled="false"]) {
     color: var(--gray) !important;
@@ -66,6 +72,7 @@ body {
 .R1smN,
 .OouJcb,
 .rzG2be,
+#fsett,
 #fbar {
     background: var(--bg-light);
 }

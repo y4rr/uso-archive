@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kojoley
 @description    `Dark colored theme for news site <a href="http://meduza.io">Meduza.io</a>.Тёмная цветовая схема для новостного интернет-издания <a href="http://meduza.io">Медуза</a>.Приятного просмотра!`
-@version        2020108.0.49
+@version        2020109.12.22
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -260,7 +260,7 @@ body,
 .SourceQuote-link {
     background-color: #181818 !important;
 }
-.SourceQuote-footer, .SourceBlock-root footer {
+.SourceQuote-footer, .SourceBlock-root footer, blockquote[class*="SourceBlock-module_root"] footer {
     color: #b38d59;
 }
 .SourceQuote-link:hover,
@@ -269,20 +269,20 @@ body,
 }
 .StaticPopup-priceList,
 .StaticPopup-mediaKit,
-.NewSourceQuote .NewSourceQuote-text, .SourceBlock-root {
+.NewSourceQuote .NewSourceQuote-text, .SourceBlock-root, blockquote[class*="SourceBlock-module_root"] {
     color: #aaa !important;
 }
-.NewSourceQuote-link, .SourceBlock-root {
+.NewSourceQuote-link, .SourceBlock-root, blockquote[class*="SourceBlock-module_root"] {
     background-color: rgba(128, 128, 128, 0.1);
 }
-.SourceBlock-root footer {
+.SourceBlock-root footer, blockquote[class*="SourceBlock-module_root"] footer {
     border-color: rgba(255, 255, 255, .25);
 }
-.NewSourceQuote-link:hover, .SourceBlock-root:hover,
-.NewSourceQuote-link:visited, SourceBlock-root:visited {
+.NewSourceQuote-link:hover, .SourceBlock-root:hover, blockquote[class*="SourceBlock-module_root"]:hover,
+.NewSourceQuote-link:visited, SourceBlock-root:visited, blockquote[class*="SourceBlock-module_root"]:visited {
     background-color: rgba(128, 128, 128, 0.2);
 }
-.NewSourceQuote-footer, .SourceBlock-origin {
+.NewSourceQuote-footer, .SourceBlock-origin, cite[class*="SourceBlock-module_origin"] {
     color: #888 !important;
 }
 .PopupTopBar {

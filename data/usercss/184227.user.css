@@ -1,14 +1,13 @@
 /* ==UserStyle==
-@name           PlayCanvas Docs dark theme
+@name           PlayCanvas Docs dark theme (09-10-2020)
 @namespace      USO Archive
 @author         Иван Малицкий
 @description    `PlayCanvas Docs dark theme`
-@version        2020525.16.3
+@version        2020109.9.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("developer.playcanvas.com") {
-
 .hljs, .hljs-tag, .css .hljs-rules, .css .hljs-value, .css .hljs-function .hljs-preprocessor, .hljs-pragma {
     color: #f8f8f2;
     font-family: Fira Code, monospace;
@@ -87,6 +86,39 @@ body>.container>main h1, body>.container>main h2, body>.container>main h3, body>
 .container nav.usermanual ul li > a {
     color: #999;
 }/**/
+body>.container {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+body>.container>main table td {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+}
+body>.container>main a {
+    color: #0099ec;
+    font-size: 14px;
+}
+body>.container>nav.sidebar>ul>li.active>a {
+    color: #fff;
+    font-weight: bold;
+}
+body>.container>main table td {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    color: #f1c40f;
+}
+body>.container>main .readonly {
+    font-family: "Proxima Nova Bold","Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 5px;
+    color: #f99;
+}
 .container nav.usermanual ul li:hover > a {
     color: #fff;
     font-weight: bold;
