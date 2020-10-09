@@ -11,11 +11,11 @@
     "about": null,
     "license": "arr"
   },
-  "updated": "2020-02-25T21:53:29.000Z",
+  "updated": "2020-10-08T22:41:25.000Z",
   "weekly_install_count": 6,
   "total_install_count": 70,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/180529_after.jpeg?r=1601885000",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/180529_after.jpeg?r=1602196885",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,7 +29,7 @@
   "subcategory": "startpage",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document domain(\"startpage.com\") {\r\n.layout-web, .cover {\r\n    background-image: linear-gradient(rgba(0,0,0,/*[[bg-darken]]*/),rgba(0,0,0,/*[[bg-darken]]*/)), url(/*[[bg]]*/) !important;\r\n    background-attachment: fixed !important;\r\n\tbackground-position: center bottom !important;\r\n\tbackground-size: cover !important;\r\n\tbackground-repeat: repeat-x !important;\r\n}\r\n\r\n.w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {\r\n    background: transparent !important;\r\n}\r\n}",
+  "css": "@-moz-document domain(\"startpage.com\") {\r\n.layout-web, .cover {\r\n    background-image: linear-gradient(rgba(0,0,0,/*[[bg-darken]]*/),rgba(0,0,0,/*[[bg-darken]]*/)), url(/*[[bg]]*/) !important;\r\n    background-attachment: fixed !important;\r\n\tbackground-position: center bottom !important;\r\n\tbackground-size: cover !important;\r\n\tbackground-repeat: repeat-x !important;\r\n}\r\n\r\n.header__container, .footer__container, .w-gl, .w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {\r\n    background: transparent !important;\r\n}\r\n\r\n/*[[hide-ads]]*/\r\n}",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
@@ -70,6 +70,34 @@
           "default": true,
           "ordinal": 0,
           "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469100,
+      "style_id": 180529,
+      "install_key": "hide-ads",
+      "label": "Hide Ads",
+      "ordinal": 2,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1664875,
+          "style_setting_id": 469100,
+          "label": "Yes",
+          "value": ".mainline-results section:not(.w-gl) {\r\n    display: none !important;\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "hide-ads-yes"
+        },
+        {
+          "id": 1664876,
+          "style_setting_id": 469100,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "hide-ads-no"
         }
       ]
     }

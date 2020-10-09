@@ -3,11 +3,11 @@
   "info": {
     "name": "sr.ht dark",
     "description": "tried to match original style as close as possible",
-    "additionalInfo": null,
+    "additionalInfo": "supports all subdomains + sourcehut.org",
     "format": "uso",
     "category": "sr",
     "createdAt": "2020-10-05T21:54:10.000Z",
-    "updatedAt": "2020-10-05T21:54:10.000Z",
+    "updatedAt": "2020-10-08T21:07:44.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 931491,
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"sr.ht\") {\r\nbody,\r\npre,\r\n.event,\r\na.btn,\r\na.ref,\r\n.message-header details[open] > div,\r\n.navbar-brand,\r\n.navbar .navbar-text,\r\n.nav-tabs .nav-link.active,\r\n.nav-tabs .nav-link.active:hover,\r\n.navbar-light .navbar-brand a,\r\ncode,\r\ninput[type=\"email\"],\r\ninput[type=\"password\"],\r\ninput[type=\"tel\"],\r\ninput[type=\"text\"],\r\ntextarea.form-control,\r\n.ticket-list .title > a {\r\n    color: rgb(238, 238, 238) !important;\r\n}\r\n.nav-tabs .nav-link {\r\n    color: rgb(128, 128, 128) !important;\r\n}\r\na,\r\na.btn-link,\r\n.highlight .gh {\r\n    color: rgb(117, 167, 242) !important;\r\n}\r\n.alert a {\r\n    color: #0242f2 !important;\r\n}\r\n.label a {\r\n    color: inherit !important;\r\n}\r\na.btn-white {\r\n    color: #212529 !important;\r\n}\r\na.btn-default {\r\n    color: rgb(16, 16, 16) !important;\r\n    background: rgb(180, 180, 180) !important;\r\n}\r\nbody {\r\n    background-color: rgb(16, 16, 16);\r\n}\r\npre,\r\n.event,\r\n.nav-link.active,\r\n.message-header details[open] > div,\r\ninput[type=\"email\"],\r\ninput[type=\"password\"],\r\ninput[type=\"tel\"],\r\ninput[type=\"text\"],\r\ntextarea.form-control {\r\n    background-color: rgb(20, 20, 20) !important;\r\n}\r\n.nav-link.active,\r\n.header-tabbed .nav .nav-item:hover,\r\n.header-extension {\r\n    background-color: rgb(48, 48, 48) !important;\r\n}\r\n.label,\r\n.header-tabbed,\r\n.feedback,\r\n.markdown-nav .nav-tabs {\r\n    border-color: rgb(48, 48, 48);\r\n}\r\n.blob-nav .nav-tabs .nav-link.active {\r\n    border-bottom: unset;\r\n}\r\n}"
+    "css": "@-moz-document domain(\"sr.ht\"), domain(\"sourcehut.org\") {\r\n\r\nbody, h1, h2, h4, pre, .bold, .event, a.ref, .message-header details[open] > div, .navbar-brand, nav .brand a, header h1 a,\r\n.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover, .navbar-light .navbar-brand a, code,\r\ninput[type=\"email\"], input[type=\"password\"], input[type=\"tel\"], input[type=\"text\"],\r\ntextarea.form-control, .ticket-list .title > a, footer strong, footer h4, .infobox strong, .infobox h4 {\r\n    color: rgb(238, 238, 238) !important;\r\n}\r\n.nav-tabs .nav-link {\r\n    color: rgb(128, 128, 128) !important;\r\n}\r\na, a.btn-link {\r\n    color: rgb(117, 167, 242) !important;\r\n}\r\n.label a {\r\n    color: inherit !important;\r\n}\r\na.btn-default, .tag, a.btn  {\r\n    color: rgb(16, 16, 16) !important;\r\n}\r\nbody, header h1, html {\r\n    background-color: rgb(16, 16, 16);\r\n}\r\npre, .event, .nav-link.active, .message-header details[open] > div,\r\n.footer, code, footer .box, .infobox .box, blockquote,\r\ninput[type=\"email\"], input[type=\"password\"], input[type=\"tel\"], input[type=\"text\"], textarea.form-control {\r\n    background-color: rgb(32, 32, 32) !important;\r\n}\r\n.nav-link.active, .header-tabbed .nav .nav-item:hover, .header-extension {\r\n    background-color: rgb(48, 48, 48) !important;\r\n}\r\n.label, .header-tabbed, .feedback {\r\n    border-color: rgb(48, 48, 48);\r\n}\r\n\r\n}"
   }
 }

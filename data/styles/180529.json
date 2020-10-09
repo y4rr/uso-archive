@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "startpage",
     "createdAt": "2020-02-25T21:42:25.000Z",
-    "updatedAt": "2020-02-25T21:53:29.000Z",
+    "updatedAt": "2020-10-08T22:41:25.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 699518,
@@ -35,7 +35,7 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"startpage.com\") {\r\n.layout-web, .cover {\r\n    background-image: linear-gradient(rgba(0,0,0,/*[[bg-darken]]*/),rgba(0,0,0,/*[[bg-darken]]*/)), url(/*[[bg]]*/) !important;\r\n    background-attachment: fixed !important;\r\n\tbackground-position: center bottom !important;\r\n\tbackground-size: cover !important;\r\n\tbackground-repeat: repeat-x !important;\r\n}\r\n\r\n.w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {\r\n    background: transparent !important;\r\n}\r\n}",
+    "css": "@-moz-document domain(\"startpage.com\") {\r\n.layout-web, .cover {\r\n    background-image: linear-gradient(rgba(0,0,0,/*[[bg-darken]]*/),rgba(0,0,0,/*[[bg-darken]]*/)), url(/*[[bg]]*/) !important;\r\n    background-attachment: fixed !important;\r\n\tbackground-position: center bottom !important;\r\n\tbackground-size: cover !important;\r\n\tbackground-repeat: repeat-x !important;\r\n}\r\n\r\n.header__container, .footer__container, .w-gl, .w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {\r\n    background: transparent !important;\r\n}\r\n\r\n/*[[hide-ads]]*/\r\n}",
     "settings": [
       {
         "key": "bg",
@@ -60,6 +60,25 @@
             "label": "placeholder",
             "value": "0.6",
             "default": true
+          }
+        ]
+      },
+      {
+        "key": "hide-ads",
+        "label": "Hide Ads",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "hide-ads-yes",
+            "label": "Yes",
+            "value": ".mainline-results section:not(.w-gl) {\r\n    display: none !important;\r\n}",
+            "default": true
+          },
+          {
+            "key": "hide-ads-no",
+            "label": "No",
+            "value": "",
+            "default": false
           }
         ]
       }

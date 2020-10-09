@@ -2,18 +2,17 @@
 @name           SV
 @namespace      USO Archive
 @author         Стас Бармин
-@description    `SV - Simple View of VK 0.6.0Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
-@version        2020716.13.56
+@description    `SV - Simple View of VK 0.6.2Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
+@version        2020108.22.27
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("http://vk.com/"), url-prefix("https://vk.com/") {
 /*ШАПКА*/
-[dir] #page_header_cont .back {
+[dir=ltr] #page_header_cont {
     background: #e27f95f0;
-    background-image: url(https://i.imgur.com/8pX7hwS.png);
-    opacity: 0.95;
-    transform: rotate(180deg);
+    background-image: url(https://i.imgur.com/xRHa2vG.jpg);
+    opacity: 0.99;
     background-size: cover !important;
     border-bottom: hidden;
 }
@@ -75,8 +74,7 @@
     border-radius: 1px;
 }
 /*кнопки в шапке*/
-
-#ts_input.text.ts_input {
+[dir=ltr] .TopSearch__input {
     border: 0;
     box-sizing: border-box;
     padding: 6px 6px 6px 19px;
@@ -95,27 +93,39 @@
 }
 
 /*ШАПКА*/
-
+/* Блок уведомлений */
+#top_notify_btn.active #top_notify_wrap {
+    top: calc(var(--header-height));
+}
+/* Блок уведомлений */
 /* Анимация музыки в шапке */
 div#top_audio_player.top_audio_player_enabled.top_audio_player_playing:after {
     content: "";
     background-image: url(http://ipic.su/img/img7/fs/animated-sound-bars_40x401.1535232496.gif);
-    background-size: 20px;
+    background-size: 14px;
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 999;
-    width: 46px;
+    width: 14px;
     height: 42px;
     position: absolute;
     top: 0px;
-    left: 90%;
+    left: 435px;
     opacity: 1;
 }
-.top_audio_player .top_audio_player_title {
-    max-width: 90%;
+[dir] .top_profile_name,
+[dir] .top_audio_player .top_audio_player_title {
+    max-width: 325px;
+}
+.top_audio_player.top_audio_player_enabled {
+    overflow: visible;
 }
 /* Анимация музыки в шапке */
-
+/* Всплывающий блок аудио */
+div#top_audio_layer_place {
+    top: 0px;
+}
+/* Всплывающий блок аудио */
 /*фон*/
 body[onresize] {
     background: #56687cc7 url(http://cdn.osxdaily.com/wp-content/uploads/2016/03/android-n-default-wallpaper.png) left fixed !important;
@@ -123,7 +133,6 @@ body[onresize] {
     background-repeat: no-repeat !important;
 }
 /*фон*/
-
 /* Хуйня слева */
 #stl_bg.stl_active.over #stl_bg,
 .stl_active:hover #stl_bg {
@@ -135,7 +144,6 @@ body[onresize] {
 }
 
 /* Хуйня слева */
-
 /*сайдбар*/
 [dir] #side_bar ol {
     list-style: none;
@@ -148,12 +156,12 @@ body[onresize] {
 
 /*блок ссылок*/
 .left_menu_nav_wrap a {
-  display: none;
-  overflow: hidden;
+    display: none;
+    overflow: hidden;
 }
 
 .left_menu_nav_wrap {
-  margin-left: 200px;
+    margin-left: 200px;
 }
 
 /*Убрать текст сообщения в диалогах*/
@@ -197,7 +205,6 @@ body[onresize] {
 }
 
 /*Убрать текст сообщения в диалогах*/
-
 /*слайдер*/
 ::-webkit-scrollbar {
     width: 12px;
@@ -268,7 +275,6 @@ body[onresize] {
 }
 
 /*Закладки*/
-
 /*оповещение*/
 .tt_w.top_notify_tt.tt_up {
     top: 589px!important;
@@ -285,16 +291,15 @@ body[onresize] {
 }
 
 /*оповещение*/
-
 /*иконка настроек*/
-.top_profile_arrow {
+[dir] .top_profile_arrow {
     background: url(https://img-fotki.yandex.ru/get/169995/140708045.0/0_18a228_1e04d9ad_orig) no-repeat;
-    background-size: 25px;
+    background-size: 24px;
     background-position: center;
-    width: 24px;
+    width: 26px;
     height: 42px;
     opacity: 1;
-    margin: 0px;
+    margin: -1px;
 }
 .top_nav_link.top_profile_link {
     padding: 0px 10px 0px 10px!important;
@@ -303,10 +308,11 @@ body[onresize] {
 .top_profile_img {
     display: none!important;
 }
-
-
+[dir=ltr] #top_profile_menu:before,
+[dir=ltr] #top_profile_menu:after {
+    right: 27px;
+}
 /*иконка настроек*/
-
 /*убираем иконки*/
 .pv_like_fs_wrap {
     display: none!important;
@@ -337,7 +343,6 @@ body[onresize] {
 }
 
 /**/
-
 /*МИНИ ЧАТ*/
 [dir] .chat_onl {
     color: #577ca1
@@ -394,7 +399,6 @@ body[onresize] {
 }
 
 /*МИНИ ЧАТ*/
-
 /*Реклама*/
 #ads_left,
 .ads_ad_box.redesign .ads_ad_box2.ver.repeat_ver.size_site,
@@ -408,7 +412,6 @@ div[data-ad-view] {
 }
 
 /*тень у всего*/
-
 /*Плашка с номерами в обсуждениях*/
 .pg_flnk_rd {
     border-bottom: 1px solid #ccc;
@@ -439,7 +442,6 @@ div[data-ad-view] {
 }
 
 /*Плашка с номерами в обсуждениях*/
-
 /**/
 .top_audio_player {
     max-width: 100%;
@@ -472,13 +474,13 @@ div#footer_wrap:after {
 .fave_link_item_inner {
     width: 100%;
     height: 100%;
-    border-top: 0px solid #e7e8ec; 
+    border-top: 0px solid #e7e8ec;
 }
 .fave_link_image {
     float: inherit;
     position: relative;
     /* left: -6px; */
-    margin: 0px ;
+    margin: 0px;
     padding: 0px 0px 0px 0px;
     width: 100%;
     height: 50px;
@@ -503,7 +505,6 @@ div#footer_wrap:after {
 }
 
 /*Закладки*/
-
 /*штука*/
 .top_result_baloon {
     background: #333;
@@ -553,7 +554,6 @@ div.top_result_baloon a {
 }
 
 /*Дебил код вставляй выше*/
-
 /*Не трогать
 *[data-peer="122734122"]{display:none;}
 .chat_fix_height {

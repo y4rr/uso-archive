@@ -3,16 +3,19 @@
 @namespace      USO Archive
 @author         Kyle Pulver
 @description    `Simplifies Archives of Nethys by removing excessive images and styles. Forces dark mode and uses muted tones. Focused on Pathfinder Second Edition and it might not work on the Starfinder or Pathfinder First Edition sections.`
-@version        2020730.11.18
+@version        2020108.22.40
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("2e.aonprd.com") {
 body,
 html {
-    font-size: 16px;
+    font-size: 14px;
     background:#333!important;
+    line-height: 1;
+
 }
+
 body,
 h1,
 h2,
@@ -20,11 +23,14 @@ h3,
 h4,
 h5,
 h6,
+input,
+button,
+textarea,
 .menutitle h1,
 .menutitle h2,
 .menutitle h3 {
-        font-family: "Bookman Old Style", "Trebuchet MS", "Times New Roman", serif;
-    color: #aab;
+    font-family: "Trebuchet MS", "Times New Roman", serif;
+    color: #bba;
 }
 h1,
 h2,
@@ -32,7 +38,9 @@ h3,
 .menutitle h1,
 .menutitle h2 {
     font-size: 1.25rem;
-    padding: 0;
+    padding: 0.25em!important;
+    margin: 0!important;
+
 }
 .menutitle {
     display:none;
@@ -41,11 +49,11 @@ h3,
     display:none;
 }
 body.dark,body.light,#page {
-    color: #aab;
+    color: #bba;
     border: 0!important;
 }
 #main-wrapper{
-        background: #333!important;
+    background: #333!important;
 }
 body.dark .external-link,
 body.light .external-link{
@@ -54,21 +62,26 @@ body.light .external-link{
 #main-menu,
 #main-menu a {
     background: 0;
-    font-family: "Bookman Old Style", "Trebuchet MS", "Times New Roman", serif;
-    color: #aab;
-    line-height: 1.5;
+    font-family: "Trebuchet MS", "Times New Roman", serif;
+    color: #bba;
     padding: 0;
+    line-height:1;
 }
 body.dark #page,body.light #page {
     border: 0;
     background: #333;
+    max-width:1080px;
+    width:100%;
+    display:block;
+    margin:0 auto;
 }
 img[alt="flourish"], #main-menu img.flourish {
     display: none
 }
-img[title="PFS Legal"] {
-    opacity: 0.5;
-    margin: 0 !important;
+img {
+    margin:0!important;
+    padding:0!important;
+    vertical-align:middle;
 }
 body.dark #main-wrapper,
 #main-wrapper {
@@ -93,16 +106,17 @@ body.dark #main-wrapper,
     margin: 0;
     width: 200px;
 }
+.brand {
+    display:none!important;
+}
 #main-menu.old {
     padding: 0;
     background: none;
     width: 200px;
-    line-height: 1.1;
 }
 #main-menu a {
     text-align: left;
-    font-size: 80%;
-    line-height: 1.1;
+    font-size: 14px;
     margin: 0;
 }
 #main-menu.old .nav-parent {
@@ -122,16 +136,11 @@ body {
 }
 hr {
     border: 0;
+    display:none;
 }
 h1.title {
-    background: #889;
+    background: #998;
     color: #333;
-    line-height: 2;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    padding-left: 1rem;
-    margin-top: 1rem;
 }
 h1.title a {
     color: #333 !important;
@@ -140,31 +149,25 @@ body.dark h2.title,
 body.dark h3.title,
 body.light h2.title,
 body.light h3.title{
-    background: #667;
-    color: #aab;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    background: #444;
+    color: #bba;
 }
 b,
 a {
-    color: #dde !important;
+    color: #eed !important;
 }
 #main {
-    line-height: 1.75;
+    line-height: 1.5;
 }
 h1 span,
 h2 span,
 h3 span {
-    padding-right: 1rem;
+    padding-right: 0.25rem;
 }
 .trait {
-    background: #667;
-    border: 2px solid #aab;
+    background: #7669;
+    border: 0!important;    
+    color: #ccb;
     margin-right: 0.25rem;
 }
 tr {
@@ -173,7 +176,7 @@ tr {
 }
 table,
 td {
-    color: #aab;
+    color: #bba;
     border: 0 !important;
 }
 td {
@@ -199,16 +202,21 @@ body.light .actiondark {
     box-sizing: border-box !important;
     height: 30px;
     padding: 3px !important;
+    background:transparent;
     font-size:16px;
     border: 0 !important;
     border-radius: 0 0 0 0 !important;
+}
+.search-input {
+    width:100%!important;
+    left:0;
 }
 #footer{
     display:none!important;
 }
 input,select{
     background:#333;
-    color:#fff;
+    color:#ddd;
     border:1px solid #fff2;
     font-size: 18px;
     padding: 10px;
@@ -220,5 +228,47 @@ body.light .sidebar-nofloat,
 body.dark .sidebar-nofloat {
     border: none;
     background-color: #444;
+}
+a {
+    color: inherit !important;
+}
+img[alt="Reaction"],
+img[alt="Single Action"],
+img[alt="Free Action"],
+img[alt="Two Actions"],
+img[alt="Three Actions"]
+{
+    filter: invert(1);
+    margin-top:-5px!important;
+}
+ul {
+    margin:0;
+}
+input {
+    padding:0.25rem;
+    background:#fff2;
+}
+.search-input {
+    margin:0!important;
+    padding:0!important;
+    font-size:14px;
+    outline:0;
+}
+.search-input input {
+    width:100%;
+}
+button {
+    border:0!important;
+    cursor:pointer;
+    filter: invert(1);
+    background:#ccc;
+    margin:0!important;
+    padding:0!important;
+    position:relative!important;
+    float:right;
+}
+#ctl00_MainContent_DetailedOutput {
+    display:block;
+    margin:0 auto;
 }
 }

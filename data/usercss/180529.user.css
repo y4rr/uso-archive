@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         33kk
 @description    `Startpage Background Changer`
-@version        2020225.23.53
+@version        2020108.22.41
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown bg "Background (only upload file)" {
@@ -13,6 +13,13 @@ bg-1 "Startpage Night*" <<<EOT https://www.startpage.com/assets/images/night.jpg
 }
 @advanced text bg-custom "Background (only upload file) (Custom)" "https://example.com/image.png"
 @advanced text bg-darken "Background Darkening" "0.6"
+@advanced dropdown hide-ads "Hide Ads" {
+	hide-ads-yes "Yes*" <<<EOT .mainline-results section:not(.w-gl) {
+    display: none !important;
+} EOT;
+hide-ads-no "No" <<<EOT  EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("startpage.com") {
@@ -24,7 +31,9 @@ bg-1 "Startpage Night*" <<<EOT https://www.startpage.com/assets/images/night.jpg
 	background-repeat: repeat-x !important;
 }
 
-.w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {
+.header__container, .footer__container, .w-gl, .w-gl--blak, .w-gl--nite, #adBlock, #adBlock > * {
     background: transparent !important;
 }
+
+/*[[hide-ads]]*/
 }
