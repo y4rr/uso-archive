@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        2020105.19.23
+@version        20201010.2.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -80,7 +80,8 @@ html,
 .side-bar.jsx-2936289316 .user-list.jsx-2936289316,
 .card .download-sms.jsx-4275929359 h2.jsx-4275929359::after,
 .recommend-card.jsx-1370307881,
-.action-container.jsx-1182361573::before {
+.action-container.jsx-1182361573::before,
+.feedback-history {
 	border-color: rgb(245, 137, 158) !important;
 }
 
@@ -90,6 +91,13 @@ html,
 	border-bottom: 1px solid rgb(245, 137, 158) !important;
 }
 
+.feedback.jsx-2927380017 {
+	border-top: 1px solid #FE2C55 !important;
+	border-bottom: 1px solid #FE2C55 !important;
+	border-left: 1px solid #FE2C55 !important;
+	border-right: 1px solid #FE2C55 !important;
+}
+
 .container--1zodu,
 .container--Y2-po.empty--2DktI {
 	border-color: #0A7661 !important;
@@ -97,7 +105,7 @@ html,
 
 svg {
 	fill: aliceblue !important;
-	stroke:  rgb(245, 137, 158); 
+	stroke: rgb(245, 137, 158);
 }
 
 .side-bar.jsx-2287835375 .nav-item.active.jsx-2287835375 span.jsx-2287835375,
@@ -113,7 +121,8 @@ svg {
 	fill: rgb(245, 137, 158) !important;
 }
 
-.video-feed-item.jsx-831076485, .video-feed-container.jsx-1253605775 .video-feed-item{
+.video-feed-item.jsx-831076485,
+.video-feed-container.jsx-1253605775 .video-feed-item {
 	border-bottom: 1px solid rgb(245, 137, 158)!important;
 }
 
@@ -189,7 +198,8 @@ a.duet-with.jsx-709044605::before,
 .detail-board.jsx-3905797973 .option-container.jsx-3905797973 .icon-expand.jsx-3905797973,
 .detail-board.jsx-3905797973 .content-container.jsx-3905797973 .still-container.jsx-3905797973 .arrow.jsx-3905797973,
 .arrow-right.jsx-2218770407::after,
-.arrow-right.jsx-2218770407::before {
+.arrow-right.jsx-2218770407::before,
+.feedback-main-container .side-container .option-container .icon-expand {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }

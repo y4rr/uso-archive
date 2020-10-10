@@ -1,0 +1,270 @@
+{
+  "id": 190507,
+  "name": "Design of video icons on the main youtube page",
+  "description": "Return the previous video icon design to the youtube home page",
+  "user": {
+    "id": 964000,
+    "name": "Скажем Нет Редизайну",
+    "email": "redacted",
+    "paypal_email": null,
+    "homepage": null,
+    "about": null,
+    "license": null
+  },
+  "updated": "2020-10-10T10:50:51.000Z",
+  "weekly_install_count": 1,
+  "total_install_count": 1,
+  "rating": null,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/190507_after.jpeg?r=1602327052",
+  "obsoleting_style_id": null,
+  "obsoleting_style_name": null,
+  "obsolete": 0,
+  "admin_delete_reason_id": null,
+  "obsoletion_message": null,
+  "screenshots": [
+    "https://userstyles.org/style_screenshots/190507_additional_37196.jpeg?r=1602327052"
+  ],
+  "license": null,
+  "created": "2020-10-09T14:13:29.000Z",
+  "category": "site",
+  "raw_subcategory": "youtube",
+  "subcategory": "youtube",
+  "additional_info": null,
+  "style_tags": [],
+  "css": "@-moz-document url-prefix(\"https://www.youtube.com/\") {\r\n    #avatar-link.ytd-rich-grid-video-renderer{display: none}#title.ytd-rich-grid-renderer{font-size: 1.6rem!important;line-height: 2rem!important}#video-title.ytd-rich-grid-video-renderer{line-height: 1.6rem !important;font-size: 1.4rem !important;max-height: 3.2rem !important}#metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}#title.ytd-rich-shelf-renderer{color: var(--yt-spec-text-primary);font-size: 1.6rem}ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block,ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}ytd-rich-shelf-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer)}#show-more-button.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#grid-header.ytd-rich-grid-renderer{margin: 24px 0 24px 4px}#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{margin-bottom: 24px}ytd-rich-item-renderer{margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;width: calc(100% / var(--ytd-rich-grid-items-per-row) - 4px - 0.01px)}ytd-rich-section-renderer{width: 100%;margin-left: calc(4px / 2);margin-right: calc(4px / 2)}#rich-shelf-header.ytd-rich-shelf-renderer{margin: 14px 0 14px 0px !important}h3.ytd-rich-grid-video-renderer{margin: 8px 0 8px!important}ytd-primetime-promo-renderer.ytd-rich-section-renderer,ytd-inline-survey-renderer.ytd-rich-section-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer);border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#dismissable #avatar-link{display: none !important}#dismissable #details #video-title.ytd-rich-grid-media{font-size: 1.4rem !important;line-height: 1.6rem !important}html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[size]]*/;--ytd-rich-grid-item-margin: 4px}\r\n\r\n    /* Изменить размер*/\r\n    @media screen and (min-width: 1000px) {\r\n        #contents.ytd-rich-grid-renderer,\r\n        #grid-header.ytd-rich-grid-renderer {\r\n            width: calc(100% - var(--ytd-rich-grid-item-margin) * 2);\r\n            max-width: calc( var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin)));\r\n        }\r\n        /* строки для 1000px и не больше 1170px*/\r\n        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n            --ytd-rich-grid-items-per-row: 4 !important;\r\n            --ytd-rich-grid-posts-per-row: 2 !important;\r\n            --ytd-rich-grid-movies-per-row: 5 !important;\r\n        }\r\n    }\r\n\r\n    /* строки для 1171px - 1600px*/\r\n    @media screen and (min-width: 1171px) {\r\n        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n            --ytd-rich-grid-items-per-row: 5 !important;\r\n            --ytd-rich-grid-posts-per-row: 3 !important;\r\n            --ytd-rich-grid-movies-per-row: 6 !important;\r\n        }\r\n    }\r\n\r\n    /* строки 1600px и больше*/\r\n    @media screen and (min-width: 1600px) {\r\n        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n            --ytd-rich-grid-items-per-row: 6 !important;\r\n            --ytd-rich-grid-posts-per-row: 3 !important;\r\n            --ytd-rich-grid-movies-per-row: 9 !important;\r\n        }\r\n    }\r\nytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n            --ytd-rich-grid-items-per-row: /*[[quantity]]*/;\r\n}\r\nytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n            --ytd-rich-grid-items-per-row: /*[[quan]]*/;\r\n}\r\nhtml:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[sizes]]*/;}\r\n}",
+  "discussions": [],
+  "discussionsCount": 0,
+  "commentsCount": 0,
+  "userjs_url": "/styles/userjs/190507/design-of-video-icons-on-the-main-youtube-page.user.js",
+  "style_settings": [
+    {
+      "id": 469114,
+      "style_id": 190507,
+      "install_key": "size",
+      "label": "Изменить размер / Resize",
+      "ordinal": 0,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1664894,
+          "style_setting_id": 469114,
+          "label": "standard 210",
+          "value": "210px !important",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "1"
+        },
+        {
+          "id": 1664895,
+          "style_setting_id": 469114,
+          "label": "212",
+          "value": "212px !important",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "2"
+        },
+        {
+          "id": 1664896,
+          "style_setting_id": 469114,
+          "label": "214",
+          "value": "214px !important",
+          "default": false,
+          "ordinal": 2,
+          "install_key": "3"
+        },
+        {
+          "id": 1664906,
+          "style_setting_id": 469114,
+          "label": "216",
+          "value": "216px !important",
+          "default": false,
+          "ordinal": 3,
+          "install_key": "4"
+        },
+        {
+          "id": 1664907,
+          "style_setting_id": 469114,
+          "label": "218",
+          "value": "218px !important",
+          "default": false,
+          "ordinal": 4,
+          "install_key": "5"
+        },
+        {
+          "id": 1664908,
+          "style_setting_id": 469114,
+          "label": "220",
+          "value": "220px !important",
+          "default": false,
+          "ordinal": 5,
+          "install_key": "6"
+        },
+        {
+          "id": 1664909,
+          "style_setting_id": 469114,
+          "label": "224",
+          "value": "224px !important",
+          "default": false,
+          "ordinal": 6,
+          "install_key": "7"
+        },
+        {
+          "id": 1664910,
+          "style_setting_id": 469114,
+          "label": "228",
+          "value": "228px !important",
+          "default": false,
+          "ordinal": 7,
+          "install_key": "8"
+        },
+        {
+          "id": 1664911,
+          "style_setting_id": 469114,
+          "label": "230",
+          "value": "230px !important",
+          "default": false,
+          "ordinal": 8,
+          "install_key": "9"
+        },
+        {
+          "id": 1664914,
+          "style_setting_id": 469114,
+          "label": "236",
+          "value": "236px !important",
+          "default": false,
+          "ordinal": 9,
+          "install_key": "10"
+        }
+      ]
+    },
+    {
+      "id": 469115,
+      "style_id": 190507,
+      "install_key": "quantity",
+      "label": "Кол-во в строке / The number in the string",
+      "ordinal": 1,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1664897,
+          "style_setting_id": 469115,
+          "label": "standard",
+          "value": "auto",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "4"
+        },
+        {
+          "id": 1664898,
+          "style_setting_id": 469115,
+          "label": "4",
+          "value": "4 !important",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "5"
+        },
+        {
+          "id": 1664899,
+          "style_setting_id": 469115,
+          "label": "5",
+          "value": "5 !important",
+          "default": false,
+          "ordinal": 2,
+          "install_key": "6"
+        },
+        {
+          "id": 1664900,
+          "style_setting_id": 469115,
+          "label": "6",
+          "value": "6 !important",
+          "default": false,
+          "ordinal": 3,
+          "install_key": "7"
+        },
+        {
+          "id": 1664901,
+          "style_setting_id": 469115,
+          "label": "7",
+          "value": "7 !important",
+          "default": false,
+          "ordinal": 4,
+          "install_key": "8"
+        },
+        {
+          "id": 1664902,
+          "style_setting_id": 469115,
+          "label": "8",
+          "value": "8 !important",
+          "default": false,
+          "ordinal": 5,
+          "install_key": "9"
+        },
+        {
+          "id": 1664903,
+          "style_setting_id": 469115,
+          "label": "9",
+          "value": "9 !important",
+          "default": false,
+          "ordinal": 6,
+          "install_key": "10"
+        },
+        {
+          "id": 1664904,
+          "style_setting_id": 469115,
+          "label": "10",
+          "value": "10 !important",
+          "default": false,
+          "ordinal": 7,
+          "install_key": "11"
+        },
+        {
+          "id": 1664905,
+          "style_setting_id": 469115,
+          "label": "11",
+          "value": "11 !important",
+          "default": false,
+          "ordinal": 8,
+          "install_key": "12"
+        }
+      ]
+    },
+    {
+      "id": 469116,
+      "style_id": 190507,
+      "install_key": "sizes",
+      "label": "Свой размер / Your size",
+      "ordinal": 2,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1664912,
+          "style_setting_id": 469116,
+          "label": "placeholder",
+          "value": "auto",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469117,
+      "style_id": 190507,
+      "install_key": "quan",
+      "label": "Свое кол-во / Your quantity",
+      "ordinal": 3,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1664913,
+          "style_setting_id": 469117,
+          "label": "placeholder",
+          "value": "auto",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    }
+  ]
+}

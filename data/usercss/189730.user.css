@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         四月一日 雷
 @description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態です。同様の結果を求める方はublock等の広告ブロックアドオンの導入を推奨します。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
-@version        2020105.8.16
+@version        20201010.7.31
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -421,6 +421,10 @@ bottom:0!important
 .ControllerBoxCommentAreaContainer {
     border-right: none;
 }
+.LikeContainer{
+    margin-top: 3px;
+}
+
 /* コメント送信ボタンの調整 */
 .CommentPostButton.ActionButton {
     height: 38px;
@@ -429,86 +433,110 @@ bottom:0!important
     background-color: #717171 !important
 }
 /* NG登録欄まわり */
-.NGSettingPanelContainer-content{
+.NGSettingPanelContainer-content {
     background-color: #1e1e1e
 }
-.ViewerNGList .ViewerNGListDataGrid-HeaderCell{
+.ViewerNGList .ViewerNGListDataGrid-HeaderCell {
     background-color: #1e1e1e
 }
-.ViewerNGList .ViewerNGListDataGrid-Body{
+.ViewerNGList .ViewerNGListDataGrid-Body {
     background-color: #3e3e3e
 }
-.NGSettingPanelContainer-header{
+.NGSettingPanelContainer-header {
     background-color: #1a1a1a
 }
 
 /* 共有ボタンまわり*/
-.SharePanelContainer-header{
+.SharePanelContainer-header {
     background-color: #1a1a1a
 }
-.SharePanelContainer{
+.SharePanelContainer {
     background-color: #3e3e3e
 }
-.SharePanelContainer::before{
+.SharePanelContainer::before {
     border-bottom: 10px solid #f4f4f4
 }
 
 /* Twitter共有時の調整 */
-.TwitterClientContainer{
+.TwitterClientContainer {
     background-color: #3e3e3e
 }
-.TwitterClient-Capture-Disabled-Message{
+.TwitterClient-Capture-Disabled-Message {
     color: #444 !important;
 }
-.TwitterClient-Capture-Disabled{
-    background-color: hsla(0,0%,90%,.90)
+.TwitterClient-Capture-Disabled {
+    background-color: hsla(0, 0%, 90%, .90)
 }
 
-/* ヘッダーホバー時のタブメニューまわり */ 
-
+/* ヘッダーホバー時のタブメニューまわり */
 /* ユーザー */
-.common-header-5onxr7, .common-header-1cuw74j, .common-header-1kfkrjf, .common-header-zz80x3, .common-header-1gq7o6w, .common-header-icn1vf, .common-header-cvcm83, .common-header-15gxh1a{
+.common-header-5onxr7,
+.common-header-1cuw74j,
+.common-header-1kfkrjf,
+.common-header-zz80x3,
+.common-header-1gq7o6w,
+.common-header-icn1vf,
+.common-header-cvcm83,
+.common-header-15gxh1a {
     background-color: #666 !important
 }
-.common-header-5onxr7:hover, .common-header-1kfkrjf:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover, .common-header-icn1vf:hover, .common-header-xp52wl:hover{
+.common-header-5onxr7:hover,
+.common-header-1kfkrjf:hover,
+.common-header-zz80x3:hover,
+.common-header-1gq7o6w:hover,
+.common-header-icn1vf:hover,
+.common-header-xp52wl:hover {
     background-color: #2b2b2b !important
 }
-.common-header-g80xl3{
+.common-header-g80xl3 {
     background-color: rgb(89, 89, 89) !important
 }
-.common-header-1sypczf{
-   color: rgb(225, 225, 225) !important
+.common-header-1sypczf {
+    color: rgb(225, 225, 225) !important
 }
 
-.nico-CommonHeaderRoot .common-header-r1rgum{
+.nico-CommonHeaderRoot .common-header-r1rgum {
     display: none;
 }
 
 /* お知らせ */
-.common-header-1111win{
+.common-header-1111win {
     border-bottom: 1px solid rgb(160 160 160) !important
 }
-.common-header-105n2rz, .common-header-kolmxm{
+.common-header-105n2rz,
+.common-header-kolmxm {
     background-color: #666 !important
 }
-.common-header-abyv5k{
+.common-header-abyv5k {
     color: #fff !important
 }
-.common-header-2cl2ey{
+.common-header-2cl2ey {
     background-color: rgb(74 74 74) !important
 }
-.common-header-vv8zyj, .common-header-ey0i79{
+.common-header-vv8zyj,
+.common-header-ey0i79 {
     color: rgb(230 230 230) !important
 }
-.common-header-1eex7vk{
+.common-header-1eex7vk {
     color: rgb(204 230 255) !important
 }
 
 /* その他メニュー */
-.common-header-juy1p4, .common-header-11j62e9{
+.common-header-juy1p4,
+.common-header-11j62e9 {
     background-color: #666 !important
 }
-.common-header-juy1p4:hover, .common-header-11j62e9:hover{
+.common-header-juy1p4:hover,
+.common-header-11j62e9:hover {
     background-color: #2b2b2b !important
+}
+
+/* 試験的 シリーズのハイライト */
+.VideoDescription-series{
+    border: solid 5px #282828 !important;
+    background: #393939;
+}
+.RouterLink.VideoDescriptionSeriesContainer-itemTitle{
+    color:#d2691e !important
 }
 }

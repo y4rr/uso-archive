@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have a YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Optional Video Dim (-25% brightness);https://userstyles.org/styles/175380/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        2020107.15.0
+@version        20201010.3.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,15 +31,15 @@
 /*                                                              */
 /*         1      Text                                          */
 /*       188      Backgrounds                                   */
-/*       375      Channel (Tabs are here)                       */
-/*       489      Popups                                        */
-/*       544      Menus (Gradients here)                        */
-/*       751      Search                                        */
-/*       908      Buttons                                       */
-/*      1270      Video Player                                  */
-/*      1521      Chat                                          */
-/*      1686      Misc                                          */
-/*      2056      Ads                                           */
+/*       383      Channel (Tabs are here)                       */
+/*       497      Popups                                        */
+/*       552      Menus (Gradients here)                        */
+/*       759      Search                                        */
+/*       916      Buttons                                       */
+/*      1278      Video Player                                  */
+/*      1529      Chat                                          */
+/*      1694      Misc                                          */
+/*      2067      Ads                                           */
 /*                                                              */
 /*                                                              */
 /*      Code #3 - Custom Cursors                                */
@@ -105,6 +105,9 @@ a,
 #main.style-scope.ytd-mealbar-promo-renderer,
 #main.ytd-mealbar-promo-renderer,
 #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer,
+#show-less.ytd-donation-shelf-renderer, #show-more.ytd-donation-shelf-renderer,
+#show-less > yt-formatted-string, #show-more > yt-formatted-string,
+#simplebox-placeholder.ytd-comment-simplebox-renderer,
 #text.yt-chip-cloud-chip-renderer,
 #text.ytd-channel-name,
 #title.ytd-channel-list-sub-menu-avatar-renderer,
@@ -112,7 +115,6 @@ a,
 #title.ytd-shelf-renderer,
 #video-title,
 #video-title.ytd-video-renderer,
-#simplebox-placeholder.ytd-comment-simplebox-renderer,
 a.yt-simple-endpoint.yt-formatted-string,
 h3.ytd-compact-station-renderer,
 paper-listbox.yt-dropdown-menu paper-item.yt-dropdown-menu,
@@ -163,6 +165,7 @@ ytd-single-option-survey-renderer,
 #label-text.yt-dropdown-menu:hover,
 #link-list-container.style-scope.ytd-channel-about-metadata-renderer a.yt-simple-endpoint.style-scope.ytd-channel-about-metadata-renderer yt-formatted-string.info-text.style-scope.ytd-channel-about-metadata-renderer:hover,
 #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover,
+#show-less > yt-formatted-string:hover, #show-more > yt-formatted-string:hover,
 #simplebox-placeholder.ytd-comment-simplebox-renderer:hover,
 #text.yt-chip-cloud-chip-renderer:hover,
 #title.style-scope.ytd-shelf-renderer:hover,
@@ -220,6 +223,7 @@ yt-formatted-string.style-scope.ytd-search-filter-renderer:hover,
 #label-text.yt-dropdown-menu:active,
 #link-list-container.style-scope.ytd-channel-about-metadata-renderer a.yt-simple-endpoint.style-scope.ytd-channel-about-metadata-renderer yt-formatted-string.info-text.style-scope.ytd-channel-about-metadata-renderer:active,
 #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:active,
+#show-less.ytd-donation-shelf-renderer:active, #show-more.ytd-donation-shelf-renderer:active,
 #simplebox-placeholder.ytd-comment-simplebox-renderer:active,
 #text.yt-chip-cloud-chip-renderer:active,
 #text.ytd-channel-name:active,
@@ -382,7 +386,11 @@ ytd-simple-menu-header-renderer,
 
     /*Selected Lighter Backgrounds*/
 #bar,
+#collapse-controls-section.ytd-donation-shelf-renderer,
 #container.ytd-playlist-panel-renderer,.header.ytd-playlist-panel-renderer,
+#creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer,
+#donate-section.ytd-donation-shelf-renderer,
+#header-section.ytd-donation-shelf-renderer,
 #header.ytd-engagement-panel-title-header-renderer,
 #header.ytd-movie-offer-module-renderer,
 #header.ytd-post-renderer,
@@ -1833,6 +1841,7 @@ ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer
 yt-img-shadow[object-fit="FILL"] img.yt-img-shadow,
 yt-img-shadow[class*="-ad-renderer"],
 yt-img-shadow#banner,
+yt-img-shadow#campaign-logo.ytd-donation-shelf-renderer,
 yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer,
 #author-thumbnail yt-img-shadow,
 #avatar,
@@ -1854,6 +1863,7 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer,
 yt-img-shadow[object-fit="FILL"] img.yt-img-shadow:hover,
 yt-img-shadow[class*="-ad-renderer"]:hover,
 yt-img-shadow#banner:hover,
+yt-img-shadow#campaign-logo.ytd-donation-shelf-renderer:hover,
 yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer:hover,
 #author-thumbnail yt-img-shadow:hover,
 #avatar:hover,
@@ -1873,7 +1883,8 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer:hover,
 }
 
     /*Image changes*/
-/*"Sign in to YouTube - Keyhole w/ white BG"*/.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/dmod_si_horizontal_ver1_240x400.png"]
+/*"Sign in to YouTube - Keyhole w/ white BG"*/.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/dmod_si_horizontal_ver1_240x400.png"],
+/*Top-Right Image on Donation Notification*/#header-background.ytd-donation-shelf-renderer
 {
     filter: invert(1);
 }
@@ -2447,6 +2458,7 @@ use:hover,
 #guide-links-secondary > a,
 #icon-label:hover,
 #filters label:hover,
+#show-less.ytd-donation-shelf-renderer, #show-more.ytd-donation-shelf-renderer,
 #tabsContent:hover,
 #toggleButton:hover,
 button.yt-icon-button,
@@ -2593,6 +2605,7 @@ use:active,
 #guide-links-secondary > a:active,
 #icon-label:active,
 #options-heading:active,
+#show-less.ytd-donation-shelf-renderer:active, #show-more.ytd-donation-shelf-renderer:active,
 #tabsContent:active,
 #toggleButton:active,
 button.yt-icon-button:active,
