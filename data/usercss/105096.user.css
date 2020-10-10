@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mark Phillips
 @description    `<strong>TODOIST ADVANCED </strong>is the original and best-supported dark/custom skin generator for Todoist. It's been tested on the Todoist platform up to <strong>version 978</strong>. Latest mod: customizable motivational tagline, tag font color and logo color options!Todoist Advanced offers a fully integrated and optimised dark theme with many additional configuration options should you wish to add your own styling. To change the main colours, switch skins to OFF and choose your colours from the MAIN COLORS etc. The default install of Midnight has priority left-border enabled, 4 priority colors (RYBG), default label (circle - transparent), wide screen, edge shadows, custom scrollbars (new), and the Carto texture.If you need any new settings, let me know.  Hit 'Customize Settings' above to access your style goodies.`
-@version        2020527.16.42
+@version        2020109.14.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown Tag "MOTIVATIONAL TAGLINE" {
@@ -1498,9 +1498,12 @@ width: 580px!important
 .task_item:hover .content, .task_item:hover .assign_user, .task_item:hover .menu, .task_item:hover .project, .on_menu_show {
 opacity: 0.7!important}
 
-#editor {
+#editor #editor[data-full-editor=true]{
 background: transparent !important;
-} EOT;
+}
+
+
+ EOT;
 ETnone "OFF" <<<EOT  EOT;
 ETHatch "Hatch (dark)" <<<EOT #content {
     background-color:/*[[MainBack]]*\/ !important; 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ItsShuno
 @description    `with this skin your momio becomes a dark and relaxed place! thanks for using!`
-@version        2020105.21.36
+@version        2020109.16.9
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -562,6 +562,7 @@ html.fimahyeji.idc0_322 {
     border-radius: 1000px;
     background-position: center;
     padding: 5px;
+    box-shadow: 0px 2px 4px 0px #00000033;
 }
 
 .friendlist-bubbleIcon.text {
@@ -648,6 +649,12 @@ html.fimahyeji.idc0_322 {
     background-size: 65px;
 }
 
+.friendlist-bubbleIcon.img {
+    background-position: center;
+    background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png) no-repeat white;
+    background-size: 63px;
+}
+
 .friendbar_bubble_txt {
     display: none;
 }
@@ -725,7 +732,20 @@ html.fimahyeji.idc0_322 {
 .smileyKeyboardIcon,
 .createField-mediaBtn,
 .profile-report-button,
-.loadingscreen-loadingbar {
+.loadingscreen-loadingbar,
+.profile-textarea-emoji-btn,
+.profile-large-image.empty,
+.profile-video-frame.empty,
+.hashtag-search-btn,
+.room-item-category,
+.buttons-purpleClose,
+.buttons-greenClose,
+.login-back-btn,
+.pet-overlay-item-name-edit-button,
+.pet-overlay-item-delete-button,
+.pet-overlay-item-follow-button,
+.room-pet-category,
+.room-item-overlay-rotate-button {
     filter: grayscale(100%);
 }
 
@@ -789,4 +809,138 @@ html.fimahyeji.idc0_322 {
     font-size: 0;
     height: 0;
     margin: -3300px;
+}
+
+.friendbar-onlineNotification.online {
+    background-image: none;
+    background-size: 166px 287px;
+    height: 287px;
+    background: #272727;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.friendbar-onlineNotification-headerText {
+    background-color: #828282;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 7px;
+    -webkit-transform: none;
+}
+
+.walls-post-room-btn {
+    filter: grayscale(100%);
+}
+
+.momoView-buttonArea-timebar {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-color: #d2d2d2;
+    background-position: 8px 18px, 0 0;
+    background-size: 18px auto, 33px 33px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    right: -5px;
+    top: -2px;
+    z-index: 1;
+    text-align: center;
+    line-height: 21px;
+}
+
+.giftlist-slist-background {
+    background: #828282;
+    background-size: 31px 20px;
+    height: 307px;
+    left: 27px;
+    position: absolute;
+    top: 206px;
+    width: 527px;
+}
+
+.adBirmo-videoOnDemandSkyBtn.open {
+    background-color: #8e8e8e;
+}
+
+.walls-post-other-name-wrapper-shared {
+    background-color: #828282;
+}
+
+.imageFlow-selectRoom .room-icon {
+    background-image: none;
+}
+
+.imageFlow-btn {
+    cursor: pointer;
+    margin: 6px auto;
+    width: 220px;
+    height: 50px;
+    line-height: 52px;
+    padding-left: 30px;
+}
+
+.profile-top-menu-btn-rules {
+    display: none;
+    background-position: 19px center;
+    padding: 0;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.rules-overlay-header, .the-picture-rules-question {
+    background-color: #828282;
+    padding: 0 13px;
+    position: relative;
+    text-align: center;
+}
+
+.report-header {
+    background-color: #828282;
+    display: inline;
+    padding: 0 12px;
+}
+
+.report-header-wrapper {
+    -webkit-transform: none;
+}
+
+.profile-textarea-commercial-btn-wrapper .skyButton {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #353535;
+    margin: 10px;
+}
+
+.buttons-greenClose {
+    background-image: url(https://momio.me/videos/img/purple_close_btn.png);
+    background-size: cover;
+    cursor: pointer;
+    background-position: 0;
+}
+
+.currencyBar.sale {
+    background-image: url(https://momio.me/framework/img/statusbar/status_bar_bg_v2.png);
+    background-size: 566px auto;
+    background-position: -137px 0;
+    background-repeat: no-repeat;
+    width: 286px;
+    height: 63px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    pointer-events: auto;
+    cursor: pointer;
+    left: 327px;
+}
+
+.sale > .currencyBar-sale-text {
+    display: none;
+}
+
+.loadingscreen-loadingbar span.show {
+    display: none;
 }

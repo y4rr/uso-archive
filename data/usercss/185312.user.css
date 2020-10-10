@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Evanita Montalvo
 @description    `Style returns Ravelry back to some of the visual softness that was in the prior version. Less contrast buttons as well as outlines and the return of the soft green.This theme can be used with the following Extensions: Stylish and Stylus(recommended) for Chrome, Firefox, and Kiwi Browser(Android) and Cascadea for Safari on Mac only. Install your extension first and then come to this page to use the Install Style button. You can come back here to also update your style when I push an update.If you have any suggestions please reach out to EWM on Ravelry via the following project page. https://www.ravelry.com/projects/EWM/ravelry-stylish-updatecheck-project-page-for-updatesIf you would like to donate to show support I have a Ko-fi page here https://ko-fi.com/evanitawmontalvo`
-@version        2020101.21.59
+@version        2020109.19.13
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,27 +40,30 @@ body.with_touch.with_extra_squinty_device .navigation_v2__logo__secondary, body.
     margin-top: 9px;
 }
 /*fix their font color shit*/
-:root {
-  --color-black-01: #000;
-  --color-color-lightgreen: #e7f7e1;
-  --color-color-darkgreen: #c1ebb0;
-} 
-
+ :root {
+    --color-black-01: #000;
+    --color-color-lightgreen: #e7f7e1;
+    --color-color-darkgreen: #c1ebb0;
+}
 /*GENERAL STUFF*/
  #footer {
     color: #000;
 }
 body, ol, ul, td, th, input, select, table {
     font-family: Verdana, "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: 12px;
     /*font-size: 1em;*/
 }
 
-body.swatch_inter {
---line-height-base: 1.25;
---line-height-base-rem: 1.25rem;
---line-height-base-em: 1.25rem;
+body.with_typeface_inter_hinted {
+    font-family: Verdana, "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
 }
 
+body.swatch_inter {
+    --line-height-base: 1.25;
+    --line-height-base-rem: 1.25rem;
+    --line-height-base-em: 1.25rem;
+}
 body.normal, #page_header {
     background-color: #fbfbfb;
 }
@@ -146,6 +149,11 @@ body.supports_subnavigation.with_subnavigation .tabs--subnavigation {
     background-color: #fbfbfb;
     border-bottom: 1px solid #000
 }
+body.supports_subnavigation.with_subnavigation .tabs--subnavigation li > span {
+    border-bottom: 0px;
+    padding-top: 0px;
+}
+
 body.with_navigation_v2 #page_header {
     border-bottom: 0px solid #000;
 }
@@ -158,11 +166,12 @@ body.supports_subnavigation.with_subnavigation--all .navigation_v2__tab--active,
     text-decoration: none;
     cursor: pointer
 }
-.c-navigation_dropdown__content a:hover, .c-navigation_dropdown__content .c-navigation_dropdown__unlinked:hover {background-color: var(--color-color-lightgreen)}
-
-
+.c-navigation_dropdown__content a:hover, .c-navigation_dropdown__content .c-navigation_dropdown__unlinked:hover {
+    background-color: var(--color-color-lightgreen)
+}
 .c-navigation_indicator__snake {
-    border-bottom: 5px solid #c2ebb1;
+    border-bottom: 0px solid #c2ebb1;
+    /*removing by changing 5px to 0px*/
 }
 .tabs--subnavigation li .c-navigation_indicator__snake {
     border-bottom-width: 4px;
@@ -229,17 +238,19 @@ body.supports_subnavigation.with_subnavigation .tabs--dark {
     background-color: #e7f7e1 !important;
     border-bottom-color: #e7f7e1 !important;
 }
-
 .navigation_v2__notification .count {
     background-color: var(--color-greyscale-01);
 }
-
-
 .c-navigation_dropdown__content li {
     display: block;
     font-size: 1em;
 }
-
+.c-navigation_dropdown__content a, .c-navigation_dropdown__content .c-navigation_dropdown__unlinked {
+    padding: 8px;
+}
+.c-navigation_dropdown__name {
+    line-height: 16px;
+}
 /*STOP NAVIGATION ANIMATION*/
  .tabs--subnavigation li#current span .c-navigation_indicator__snake, .tabs--subnavigation li:hover span .c-navigation_indicator__snake {
     width: calc(100% - 30px);
@@ -264,20 +275,26 @@ body.supports_subnavigation.with_subnavigation .tabs--dark {
     background-color: #e7f7e1;
 }
 /*FORUM AND TABLES*/
-
-.reaction_button {
-    background: none;/*this removes forum reaction icons*/
+ .reaction_button {
+    background: none;
+    /*this removes forum reaction icons*/
 }
-
 .forum_post_body {
     line-height: 1.4em !important;
 }
-
 /*.forum_post_body p {
     margin-bottom: 1.4em !important;
 }*/
 
-.forum_post_listing .forum_post_header {
+.forum_post_body {
+    min-height: 60px !important;
+}
+
+.forum_post_listing .forum_post_row .forum_post_user {
+    padding-top: 5px;
+}
+
+ .forum_post_listing .forum_post_header {
     /*border: 1px dotted #aaa;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -322,12 +339,9 @@ table#forum_posts thead td, table.grid th, table.grid tr.header td {
     background-color: var(--color-color-lightgreen) !important;
     cursor: pointer
 }
-
 .forum_glance table tr.hover td {
-  background-color: var(--color-color-lightgreen) !important;
+    background-color: var(--color-color-lightgreen) !important;
 }
-
-
 .forum_post_drafts__post {
     box-shadow: 0px 0px 0 0 #000;
 }
@@ -421,24 +435,20 @@ body.topics_index .page_links .pagination a, .page_links .pagination a, .page_bu
 .view_core_item .core_item_inner .field {
     border-bottom: 1px solid var(--color-greyscale-02);
 }
-
 .helpful_button--selected {
-background-color: var(--color-color-darkgreen);
+    background-color: var(--color-color-darkgreen);
 }
 .highlight-highlighted {
     background-color: var(--color-color-darkgreen);
 }
-
-
 /*PATTERN PAGE*/
  .download_plate {
     box-shadow: 0px 0px 0 0 #000;
 }
 /*PROFILE PAGE*/
-.profile__about_me--show .field {
+ .profile__about_me--show .field {
     border-bottom: 1px solid var(--color-greyscale-02);
 }
-
 /*DESIGNER PROFILE*/
  .captioned_media_square li.title {
     margin-bottom: 0px;
@@ -488,7 +498,7 @@ table#forum_posts thead td, table.grid th, table.grid tr.header td {
 /* body.search #facet_boxes {
     font-size: 80%;
 }*/
-body.search .advanced_search__filter_jump h2 {
+ body.search .advanced_search__filter_jump h2 {
     font-size: 1.3em;
 }
 #search_results_container {
@@ -591,10 +601,9 @@ body.with_frontend_v1_2 .d-button:hover {
     background-color: #c2ebb1;
 }
 /*Pattern Page cyan*/
-body.supports_subnavigation.with_subnavigation #group_breadcrumb_menu a:hover, body.supports_subnavigation.with_subnavigation .breadcrumbs__menu a:hover {
+ body.supports_subnavigation.with_subnavigation #group_breadcrumb_menu a:hover, body.supports_subnavigation.with_subnavigation .breadcrumbs__menu a:hover {
     background-color: var(--color-color-lightgreen) !important;
 }
-
 /*Navigation cyan*/
  .attribute_options_presenter a:hover, #pattern_category_options a:hover, #pattern_attribute_options a:hover, #filter_menu_options a:hover, .filter_menu_options a:hover {
     background-color: #e7f7e1;
@@ -732,6 +741,8 @@ body.user_threads_index table.grid {
 /*.forum_post__reply_tools {
     min-height: 20px;
 }*/
+
+
  body.supports_subnavigation.with_subnavigation.notebook .tabs--subnavigation, body.supports_subnavigation.with_subnavigation.with_secondary_navigation .tabs--subnavigation {
     margin-bottom: 30px !important;
 }

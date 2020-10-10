@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Biller
 @description    `A clean dark orange theme for youtube.<b>[MAKE SURE TO <u>ENABLE DARK THEME</u> FROM YOUTUBE]</b>Feel free to leave a feedback and any donation will be appreciated.Thank you very much for your support!`
-@version        202099.15.30
+@version        2020109.14.44
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -356,7 +356,7 @@ paper-item.ytd-backstage-poll-renderer[selected]
 }
 
 #author-name.yt-live-chat-author-chip{
-    color: #ff8100;
+    color: #ff8100 !important;
 }
 
 input.paper-input{
@@ -364,11 +364,11 @@ input.paper-input{
 }
 
 input.paper-input::placeholder{
-    color: #ff8100;
+    color: #ff8100 !important;
 }
 
 #focused.yt-live-chat-text-input-field-renderer{
-    background-color: #ff8100;
+    background-color: #ff8100 !important;
 }
 
 .yt-live-chat-product-picker-renderer{
@@ -670,6 +670,7 @@ ytd-rich-shelf-renderer{
     border-radius: 100%;
 }
 
+
 ytd-author-comment-badge-renderer{
     background-color: #323232 !important;
     border: 2px solid #ff8100 !important;
@@ -921,24 +922,24 @@ optgroup{
 }
 
 #title.ytd-inline-survey-renderer, #subtitle.ytd-inline-survey-renderer{
-    color: #ff8100;
+    color: #ff8100 !important;
 }
 
 #star-survey.ytd-inline-survey-renderer{
-    background-color: rgba(255, 129, 0, 0.2);
+    background-color: rgba(255, 129, 0, 0.2) !important;
 }
 
 ytd-inline-survey-renderer.ytd-rich-section-renderer{
-    border-top: 4px solid #ff8100;
-    border-bottom: 4px solid #ff8100;
+    border-top: 4px solid #ff8100 !important;
+    border-bottom: 4px solid #ff8100 !important;
 }
 
 ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer{
-    background-color: rgba(255, 129, 0, 0.2);
+    background-color: rgba(255, 129, 0, 0.2) !important;
 }
 
 #follow-up-title.ytd-inline-survey-renderer{
-    color: #ff8100;
+    color: #ff8100 !important;
 }
 
 ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer{
@@ -954,7 +955,7 @@ ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer:hover{
 }
 
 #dismiss-button.ytd-inline-survey-renderer{
-    background-color: rgba(255, 129, 0, 0.2);
+    background-color: rgba(255, 129, 0, 0.2) !important;
 }
 
 #selected-response-text.ytd-rating-survey-renderer, #dismiss-button.ytd-inline-survey-renderer yt-icon-button.ytd-inline-survey-renderer{
@@ -962,11 +963,11 @@ ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer:hover{
 }
 
 #dismissed.ytd-inline-survey-renderer ytd-message-renderer.ytd-inline-survey-renderer{
-    --yt-message-renderer-text-color: #ff8100;  
+    --yt-message-renderer-text-color: #ff8100 !important;  
 }
 
 #dismissed.ytd-inline-survey-renderer{
-    background-color: rgba(255, 129, 0, 0.2);
+    background-color: rgba(255, 129, 0, 0.2) !important;
 }
 
 .subscribecard-endscreen .ytp-author-name{
@@ -1015,7 +1016,7 @@ ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer:hover{
 }
 
 ytd-thumbnail-overlay-endorsement-renderer{
-    color: #ff8100;
+    color: #ff8100 !important;
 }
 
 ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{
@@ -1034,14 +1035,19 @@ ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-rendere
     border: 1px solid #ff8100 !important;
 }
 
+.iv-branding .branding-context-container-inner{
+    background-color: rgba(50, 50, 50, 0.7) !important;
+    border-radius: 15px !important;
+}
+
 .badge-style-type-live-now.ytd-badge-supported-renderer{
-    border: 2px solid var(--yt-spec-brand-link-text);
-    border-radius: 50px;
+    border: 2px solid var(--yt-spec-brand-link-text) !important;
+    border-radius: 50px !important;
 }
 
 yt-icon-button.yt-live-chat-item-list-renderer{
-    background-color: #323232;
-    border: 1px solid #ff8100;
+    background-color: #323232 !important;
+    border: 1px solid #ff8100 !important;
 }
 
 .style-scope.ytd-toggle-button-renderer.style-compact-gray[aria-pressed="true"]{
@@ -1055,7 +1061,7 @@ ytd-toggle-button-renderer.style-compact-gray[is-paper-button]{
 }
 
 paper-toast{
-    border: 2px solid #ff8100;
+    border: 2px solid #ff8100 !important;
 }
 
 yt-button-renderer.yt-notification-action-renderer{
@@ -1065,10 +1071,30 @@ yt-button-renderer.yt-notification-action-renderer{
 yt-button-renderer.yt-notification-action-renderer:hover{
     --yt-button-color: white !important;
 }
+
+ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype="history"]):not([page-subtype="memberships-and-purchases"]):not([page-subtype="ypc-offers"]) #contents.ytd-section-list-renderer > .ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer{
+    border-bottom: 1px solid #ff8100 !important;
+}
+
+.ytp-ce-expanding-overlay-background{
+    background-color: rgba(50, 50, 50, 0.7) !important;
+}
+
+.ytp-ce-channel-this .ytp-ce-channel-metadata{
+    border-top: 1px solid #ff8100 !important;
+}
+
+.ytp-ce-channel-metadata.yt-ui-ellipsis.yt-ui-ellipsis-3{
+    background-color: transparent !important;
+    color: #ff8100 !important;
+}
+
+.ytp-ce-website-title, .ytp-ce-website-metadata{
+    color: #ff8100 !important;
+}
 }
 
 @-moz-document domain("studio.youtube.com") {
-
 main{
     background-color: #191919 !important;
     color: #ff8100;
@@ -1136,6 +1162,56 @@ ytd-simple-menu-header-renderer{
 
 ytcd-carousel-card, ytcd-basic-card, ytcp-ve, ytcd-list-card-collapsible{
     background-color: #323232 !important;
+}
+
+ytcd-list-card{
+    background-color: #323232 !important;
+}
+
+.video-metrics{
+    color: #ff8100 !important;
+}
+
+.row-highlighted{
+    background-color: #1c1c1c !important;
+}
+
+.subtitle, .ytcd-comments-snapshot-item{
+    color: #ff8100 !important;
+}
+
+.ytcp-spotlight-section-item{
+    color: #ff8100 !important;
+}
+
+.container.ytcp-spotlight-section-item{
+    border: 1px solid #ff8100 !important;
+}
+
+.ytcp-shelf-list-item{
+    background-color: #323232 !important;
+}
+
+.ytcp-channel-editing-channel-info{
+    background-color: #323232 !important;
+    color: #ff8100 !important;
+}
+
+ytcp-button#publish-button.style-scope.ytcp-channel-editing-section{
+    background-color: #1c1c1c !important;
+}
+
+ytcp-button#publish-button.style-scope.ytcp-channel-editing-section:hover{
+    background-color: #1c1c1c !important;
+    border: 1px solid white !important;
+}
+
+.description.ytcp-banner-upload, .guide.ytcp-banner-upload{
+    color: #ff8100 !important;
+}
+
+.section-description.ytcp-channel-links, .section-description.ytcp-channel-editing-details-tab{
+    color: #ff8100 !important;
 }
 
 .yta-video-snapshot{
@@ -2001,6 +2077,63 @@ ytcp-table-footer{
 
 .container.ytpp-signup-eligibility{
 	border: 1px solid #ff8100;
+}
+
+.container.ytcp-banner{
+    background-color: #323232 !important;
+}
+
+#message.ytcp-banner{
+    color: #ff8100 !important;
+}
+
+.ytmus-library-table{
+    background-color: #323232 !important;
+}
+
+.ytmus-library-row{
+    color: #ff8100 !important;
+}
+
+#row-container.ytmus-library-row{
+    border-bottom: 1px solid #ff8100 !important;
+}
+
+.ytcp-hover-anchor:hover{
+    color: white !important;
+}
+
+a.ytcp-hover-anchor:hover .text.ytcp-hover-anchor{
+    color: white !important;
+}
+
+#row-container.ytmus-library-row::after{
+    background-color: #ff8100 !important;
+}
+
+ytmus-library-row[is-current] #row-container.ytmus-library-row{
+    background-color: #191919 !important;
+}
+
+.slider-knob-inner.paper-slider{
+    background-color: #ff8100 !important;
+    border: 2px solid #ff8100 !important;
+}
+
+ytmus-player.ytmus-page{
+    border-top: 1px solid #ff8100 !important;
+}
+
+ytmus-player{
+    background-color: #191919 !important;
+}
+
+.anchor-text.ytmus-library-table{
+    color: #ff8100 !important;
+}
+
+.anchor-text.ytmus-library-table:hover{
+    color: white !important;
 }
 
 .nav-drawer.ytcp-navigation{

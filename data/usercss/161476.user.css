@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ponko
 @description    `pixivのイラストページを旧レイアウトっぽくするよ作品リストと関連作品は非表示副作用でアンケート等も上に来ちゃうのは堪忍な新プロフィールもいじってみた横1050px以上の場合は２列表示カバー画像を設定する時は無効化してねタグの作者マーカー、作品タグの表示復活スクリプトはこちらhttps://greasyfork.org/ja/scripts/369658`
-@version        2020107.22.11
+@version        2020109.19.8
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -226,7 +226,7 @@ url-prefix(https://www.pixiv.net/artworks/)
 				justify-content: center;
 			}
 				/* 名前 */
-				#root > #gtm-var-theme-kind + div > div + div > div:first-child > div:first-child h1 {
+				#root > #gtm-var-theme-kind + div > div + div > div:first-child > div:first-child > :not(main) h1 {
 					margin: 4px 0 0;
 					font-size: 16px;
 					width: 100%;

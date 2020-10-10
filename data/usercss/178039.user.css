@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Faisal Sarosh
 @description    `This has been created to make the data displayed in CARES to fit normal display dimensions and accommodate better Readability in web design.`
-@version        2020918.18.43
+@version        2020109.19.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,6 +19,12 @@
 body {
     background-image: linear-gradient(150deg,rgba(39,178,188,.8),rgba(120,177,66,.7),rgba(254,189,23,.9)), url(https://www.360training.com/themes/custom/three_sixty_base/dist/df06adbc585fed2e831cb63f6b0671de.jpg) !important;
 background-size: auto auto,cover;
+}
+}
+
+@-moz-document url("https://cares.360training.com/ResetQuizAttempts.aspx"), url("https://cares.360training.com/ResetPostAssessmentAttempts.aspx") {
+div.justify-content-start{
+ display:inline !important; 
 }
 }
 
