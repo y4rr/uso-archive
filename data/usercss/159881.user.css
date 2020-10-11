@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        2020108.14.7
+@version        20201010.13.10
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2414,5 +2414,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 [dir] #side_bar_inner .left_row:hover .left_count_wrap {
     background-color: #F05C44;
 }
-
+[dir] .feed_groups_recomm__all {
+    border-top-color: #242f3d;
+}
 }

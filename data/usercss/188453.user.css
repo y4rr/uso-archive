@@ -1,26 +1,26 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.3
+@name           Youtube WideScreen (New Design Polymer) v.4
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.`
-@version        2020109.17.18
+@version        20201010.12.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.3 === */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.4 === */
 
 /* (new3) GM in USE:
 GM "Youtube UI Fix (2020)":
 https://greasyfork.org/fr/scripts/11485-youtube-ui-fix
-GM "Youtube - cacher "connectez-vous":
+GM "Youtube - dismiss sign-in":
 https://greasyfork.org/fr/scripts/412178-youtube-dismiss-sign-in
 GM "Youtube - Search While Watching Video" *
 https://greasyfork.org/fr/scripts/29451-youtube-search-while-watching-video
 GM "Video Speed Buttons":
-
+https://greasyfork.org/fr/scripts/30506-video-speed-buttons
 ==== */
 /* (new2) SUPP ADDS */
 
@@ -34,10 +34,10 @@ GM "Video Speed Buttons":
     display: none !important;
 }
 
-/* (new3) GM "Youtube UI Fix (2020)" - INDICATOR :
+/* (new4) GM "Youtube UI Fix (2020)" - INDICATOR :
 go to https://www.youtube.com/ui_fix_options
 === */
-body.yt-ui-fix:before {
+/* body.yt-ui-fix:before {
 content: "Youtube UI Fix" ;
 position: fixed ;
 display: inline-block ;
@@ -46,7 +46,7 @@ left: 25px ;
 padding: 0 5px ;
 z-index: 5000000 !important;
 background: red ;
-}
+} */
 body.yt-ui-fix #logo-icon-container.ytd-topbar-logo-renderer:before {
 content: "Youtube UI Fix" ;
 position: fixed ;
@@ -85,7 +85,7 @@ html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-fullscr
 /* FULL :
 .ytp-fullscreen.ytp-big-mode
 .html5-video-player.ytp-transparent.ytp-exp-bottom-control-flexbox.ytp-large-width-mode.initialized-listeners.addedupdateevents.paused-mode.ytp-fullscreen.ytp-big-mode.ytp-iv-drawer-enabled
-===b*/
+===*/
 ytd-app[scrolling_] {
     right: 0 !important;
 }
@@ -143,7 +143,25 @@ ytd-app[is-watch-page=""] app-drawer  {
     height: 1049px !important;
     overflow: hidden !important;
 }
-/* LEFT COLUMN - === */
+/* (new4) LEFT COLUMN - === */
+ytd-watch-next-secondary-results-renderer ,
+#related.ytd-watch-flexy {
+    position: fixed;
+    display: inline-block;
+    width: 39.5% ;
+    height: 69vh ;
+    top: 85px ;
+    left: 60% !important;
+    padding-top: 195px;
+    overflow: hidden;
+    overflow-y: auto;
+border-bottom: 1px solid blue;
+border-right: 5px solid red;
+border-left: 5px solid red;
+/* background-color: yellow  !important; */
+}
+
+
 #items.ytd-watch-next-secondary-results-renderer {
     position: fixed;
     display: inline-block;
@@ -248,8 +266,6 @@ background-color: white !important;
 border: 1px solid yellow;
 }
 
-
-
 #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 
 .style-scope.ytd-watch-next-secondary-results-renderer.suggestion-tag {
 /*     display: inline-block !important; */
@@ -332,7 +348,7 @@ ytd-comments  ytd-item-section-renderer ytd-comments-header-renderer {
 ytd-comments  #contents {
     display: inline-block;
     height: 745px;
-    width: 100% ;
+    width: 98% ;
     top: -35px ;
     padding: 5px 10px ;
     overflow: hidden;
@@ -396,6 +412,36 @@ background-color: #222 ;
 /* NO DARK */
 html:not([dark]):not(.style-scope) ytd-comments  #contents ytd-comment-thread-renderer {
 background-color: white !important;
+}
+
+/* (new4) COMMENTS COUNTER - start at 01 */
+ytd-comments #contents {
+    content: counter(myIndex, decimal);
+    counter-increment: myIndex  0 !important;
+}
+ytd-comments #contents ytd-comment-thread-renderer:before {
+    counter-increment: myIndex ! important;
+    content: counter(myIndex, decimal)"\A Comments";
+    position: fixed;
+    width: auto;
+    line-height: 15px;
+    min-width: 17px;
+    right: 0px !important;
+    top: 65px !important;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    z-index: 100;
+color: tomato;
+box-shadow: 0 0 2px rgba(162, 160, 160, 0.6) inset;
+background: rgba(62, 59, 59, 0.6) none repeat scroll 0 0;
+background: black !important;
+opacity: 1 !important;
+/* opacity: 1 !important; */
+    visibility: visible !important;
+}
+ytd-comments ytd-comment-thread-renderer:hover::before {
+opacity: 1 !important;
 }
 
 

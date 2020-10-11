@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Design of video icons on the main youtube page
+@name           Video size on the youtube home page
 @namespace      USO Archive
 @author         Скажем Нет Редизайну
-@description    `Return the previous video icon design to the youtube home page`
-@version        20201010.10.50
+@description    `Go back to the previous video icon design on the youtube home page.Or adjust your size and quantityФормат свой размер / Format your size - 250px!importantФормат кол-во / Qty format - 10!importantИзменить вручную / To change manuallyhttps://i.imgur.com/RImoBWS.jpeg`
+@version        20201010.15.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown size "Изменить размер / Resize" {
@@ -36,45 +36,15 @@
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.youtube.com/") {
-    #avatar-link.ytd-rich-grid-video-renderer{display: none}#title.ytd-rich-grid-renderer{font-size: 1.6rem!important;line-height: 2rem!important}#video-title.ytd-rich-grid-video-renderer{line-height: 1.6rem !important;font-size: 1.4rem !important;max-height: 3.2rem !important}#metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}#title.ytd-rich-shelf-renderer{color: var(--yt-spec-text-primary);font-size: 1.6rem}ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block,ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}ytd-rich-shelf-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer)}#show-more-button.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#grid-header.ytd-rich-grid-renderer{margin: 24px 0 24px 4px}#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{margin-bottom: 24px}ytd-rich-item-renderer{margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;width: calc(100% / var(--ytd-rich-grid-items-per-row) - 4px - 0.01px)}ytd-rich-section-renderer{width: 100%;margin-left: calc(4px / 2);margin-right: calc(4px / 2)}#rich-shelf-header.ytd-rich-shelf-renderer{margin: 14px 0 14px 0px !important}h3.ytd-rich-grid-video-renderer{margin: 8px 0 8px!important}ytd-primetime-promo-renderer.ytd-rich-section-renderer,ytd-inline-survey-renderer.ytd-rich-section-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer);border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#dismissable #avatar-link{display: none !important}#dismissable #details #video-title.ytd-rich-grid-media{font-size: 1.4rem !important;line-height: 1.6rem !important}html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[size]]*/;--ytd-rich-grid-item-margin: 4px}
+#avatar-link.ytd-rich-grid-video-renderer{display: none}#title.ytd-rich-grid-renderer{font-size: 1.6rem!important;line-height: 2rem!important}#video-title.ytd-rich-grid-video-renderer{line-height: 1.6rem !important;font-size: 1.4rem !important;max-height: 3.2rem !important}#metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}#title.ytd-rich-shelf-renderer{color: var(--yt-spec-text-primary);font-size: 1.6rem}ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block,ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}ytd-rich-shelf-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer)}#show-more-button.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#grid-header.ytd-rich-grid-renderer{margin: 24px 0 24px 4px}#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{margin-bottom: 24px}ytd-rich-item-renderer{margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;width: calc(100% / var(--ytd-rich-grid-items-per-row) - 4px - 0.01px)}ytd-rich-section-renderer{width: 100%;margin-left: calc(4px / 2);margin-right: calc(4px / 2)}#rich-shelf-header.ytd-rich-shelf-renderer{margin: 14px 0 14px 0px !important}h3.ytd-rich-grid-video-renderer{margin: 8px 0 8px!important}ytd-primetime-promo-renderer.ytd-rich-section-renderer,ytd-inline-survey-renderer.ytd-rich-section-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer);border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#dismissable #avatar-link{display: none !important}#dismissable #details #video-title.ytd-rich-grid-media{font-size: 1.4rem !important;line-height: 1.6rem !important}html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[size]]*/;--ytd-rich-grid-item-margin: 4px}@media screen and (min-width: 1000px){#contents.ytd-rich-grid-renderer,#grid-header.ytd-rich-grid-renderer{width: calc(100% - var(--ytd-rich-grid-item-margin) * 2);max-width: calc( var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin)))}ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 4 !important;--ytd-rich-grid-posts-per-row: 2 !important;--ytd-rich-grid-movies-per-row: 5 !important}}@media screen and (min-width: 1171px){ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 5 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 6 !important}}@media screen and (min-width: 1600px){ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 6 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 9 !important}}ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {--ytd-rich-grid-items-per-row: /*[[quantity]]*/;}
 
-    /* Изменить размер*/
-    @media screen and (min-width: 1000px) {
-        #contents.ytd-rich-grid-renderer,
-        #grid-header.ytd-rich-grid-renderer {
-            width: calc(100% - var(--ytd-rich-grid-item-margin) * 2);
-            max-width: calc( var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin)));
-        }
-        /* строки для 1000px и не больше 1170px*/
-        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
-            --ytd-rich-grid-items-per-row: 4 !important;
-            --ytd-rich-grid-posts-per-row: 2 !important;
-            --ytd-rich-grid-movies-per-row: 5 !important;
-        }
-    }
-
-    /* строки для 1171px - 1600px*/
-    @media screen and (min-width: 1171px) {
-        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
-            --ytd-rich-grid-items-per-row: 5 !important;
-            --ytd-rich-grid-posts-per-row: 3 !important;
-            --ytd-rich-grid-movies-per-row: 6 !important;
-        }
-    }
-
-    /* строки 1600px и больше*/
-    @media screen and (min-width: 1600px) {
-        ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
-            --ytd-rich-grid-items-per-row: 6 !important;
-            --ytd-rich-grid-posts-per-row: 3 !important;
-            --ytd-rich-grid-movies-per-row: 9 !important;
-        }
-    }
-ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
-            --ytd-rich-grid-items-per-row: /*[[quantity]]*/;
+/*Размер - Size*/
+html:not(.style-scope){
+  --ytd-rich-grid-item-max-width: /*[[sizes]]*/;  /*250px !important*/
 }
+
+/*Строки - Lines*/
 ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
-            --ytd-rich-grid-items-per-row: /*[[quan]]*/;
+  --ytd-rich-grid-items-per-row: /*[[quan]]*/;  /*8 !important*/
 }
-html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[sizes]]*/;}
 }

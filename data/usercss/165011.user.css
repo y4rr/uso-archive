@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/pUhyTLbB`
-@version        2020104.20.45
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/j1wWmvs8`
+@version        20201010.18.37
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1421,7 +1421,7 @@ img[src="/makaba/templates/js/lcanvas/img/dashed-line.png"], img[src="/makaba/te
 
 .autorefresh {vertical-align: 1px;}
 
-/* Кнопки хуёпки и прочее говно которое не сделали по-человечески блять, Абу на вас нет */
+/* Кнопки х*ёпки и прочее г*вно которое не сделали по-человечески бл***, Абу на вас нет */
 div[style="background-color:#ffc599"] {background-color: var(--theme_default_shadowhighlight) !important;}
 
 font[color="#607D8B"] {color: var(--theme_default_link);}
@@ -1808,6 +1808,13 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 .nm__bullet[style="left: 18px;"] {left: 24px !important;}
 .nm__icon {height: 18px; width: 18px;}
 
+.boardname {background: var(--theme_default_glassbg2); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); font-size: 1.6em; position: fixed; height: 55px; top: 0; margin-top: 0; left: 0; right: 0; text-align: left; z-index: 100;}
+.boardname a {top: 0; left: 0; right: 15%; height: 55px; padding: 0 15px; position: fixed; overflow: hidden; line-height: 55px; word-break: break-all; text-overflow: ellipsis; white-space: nowrap}
+.replypage .boardname a {left: 15%; padding: 0;}
+.replypage .boardname a::before {color: var(--theme_default_alttext); content: "\f060"; font: 20px/55px FontAwesome; position: fixed; top: 0; left: 0; width: 15%; text-align: center;}
+
+.tti {padding: 0 8px;}
+
 /* Setting */
 .settings__header {margin: 0; padding: 6px 0; letter-spacing: .5px; text-transform: uppercase;}
 .settings__row {padding: 2px 0;}
@@ -1879,27 +1886,28 @@ input[type="checkbox"]::after {bottom: 20px; font: 15px/20px FontAwesome; height
 .na_type_down {display: block !important; bottom: 0; left: 30%;}
 .na_type_down .na__icon {padding: 10px 0 4px; height: 25px; width: 30px;}
 
-.alert {left: 4px; right: unset;}
+.alert {top: 60px; left: 5px; right: unset;}
 
-.cntnt {margin-top: 5px;}
+.cntnt {margin-top: 50px;}
 .cntnt__left {display: none !important;}
 .cntnt__right {padding: 0 0 100px 0; flex: 1 100%; -webkit-flex: 1 100%;}
 
 .button-mob {border: none; box-shadow: 0 0 0 1px var(--theme_default_border); color: var(--theme_default_text) !important; transition: .1s;}
 .button-mob:hover {background-color: var(--theme_default_btnbghover);}
+.button-mob[href="#"]:first-child {display: none !important;}
 
 .thread-nav {display: block !important; font-size: 0;}
-.search {background: var(--theme_default_postbg); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); display: block !important; margin-right: 0; padding: 5px; position: absolute; top: -40px; left: 0; width: 100%; transition: .1s; z-index: 100;}
+.search {background: var(--theme_default_postbg); display: block !important; margin-right: 0; padding: 9px; position: fixed; top: -60px; left: 0; width: 100%; transition: .1s; z-index: 100;}
 .search:hover, .search:focus, .search:focus-within {top: 0;}
-.search::after {color: var(--theme_default_alttext); content: "\f002"; font: 20px/36px FontAwesome; position: absolute; top: 40px; right: 0; width: 36px; text-align: center; transition: .1s;}
+.search::after {color: var(--theme_default_alttext); content: "\f002"; font: 20px/55px FontAwesome; position: absolute; top: 60px; right: 0; width: 15%; text-align: center; transition: .1s;}
 .search:hover::after, .search:focus::after, .search:focus-within::after {top: 0;}
-input[name="find"] {font-size: 14px;}
+input[name="find"] {font-size: 16px; padding: 8px 12px;}
 .thread-nav__inner a {display: none;}
 
-.thread-nav__stats {font-size: 15px; position: absolute; top: -40px; left: 0; padding-left: 40px;}
-.thread-nav__stats:hover {top: 8px;}
-.thread-nav__stats::before {color: var(--theme_default_alttext); content: "\f05a"; font: 20px/36px FontAwesome; position: absolute; top: 40px; width: 36px; text-align: center; left: 0;}
-.thread-nav__stats:hover::before {top: -8px;}
+.thread-nav__stats {background: var(--theme_default_postbg); border-radius: 15px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); font-size: 15px; position: absolute; top: -40px; left: 0; padding: 4px 8px; margin-left: 50px;}
+.thread-nav__stats:hover {top: 65px;}
+.thread-nav__stats::before {color: var(--theme_default_alttext2); content: "\f05a"; font: 20px/36px FontAwesome; position: absolute; top: 100px; left: -50px; width: 50px; text-align: center;}
+.thread-nav__stats:hover::before {top: -5px;}
 a[id="bottom"] + .thread-nav, .button-mob[href="#bottom"], .button-mob[href="#top"], .thread-nav-mob:nth-of-type(4) > a.button-mob:nth-of-type(4), a[id="bottom"] + * + * > a[onclick*="updateThread(); return false;"] {display: none !important;}
 
 a[onclick*="updateThread(); return false;"] {background: none; border-radius: 0; box-shadow: none; color: var(--theme_default_text); font-size: 0; padding: 0 5% !important; position: fixed; left: 60%; bottom: 0; z-index: 977; margin: 0; height: 55px; width: 20%; text-align: left !important;}
@@ -1907,7 +1915,7 @@ a[onclick*="updateThread(); return false;"]::before {display: none;}
 a[onclick*="updateThread(); return false;"]::after {background: none !important; color: var(--theme_default_text) !important; content: "\f021"; font: 18px/54px FontAwesome; position: unset; padding: 0;}
 a[onclick*="updateThread(); return false;"]:hover {background-color: var(--theme_default_btnborder);}
 .autorefresh-checkbox {position: fixed; left: 72%; bottom: 19px; z-index: 978;}
-.autorefresh-checkbox[checked="checked"] + .autorefresh-countdown {background: var(--theme_default_glassbg2); border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px 0 var(--theme_shadow); font-size: 13px; padding: 4px 8px; pointer-events: none; position: fixed; top: 4px; left: 4px; z-index: 978;}
+.autorefresh-checkbox[checked="checked"] + .autorefresh-countdown {background: var(--theme_default_glassbg2); border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px 0 var(--theme_shadow); font-size: 13px; padding: 4px 8px; pointer-events: none; position: fixed; top: 60px; left: 5px; z-index: 978;}
 
 /* Thread */
 .thread {margin-bottom: 16px;}
