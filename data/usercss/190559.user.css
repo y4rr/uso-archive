@@ -1,0 +1,141 @@
+/* ==UserStyle==
+@name           UTM - evirtual FCI
+@namespace      USO Archive
+@author         Jostin Andres Rodriguez Zambrano
+@description    `No es mucho pero es trabajo honesto.jpg`
+@version        20201011.4.54
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url("http://fci.utm.edu.ec:88/evirtual/"), url-prefix("http://fci.utm.edu.ec:88/evirtual/") {
+:root {
+    --color0: white;
+   /*  
+    Así estaba al comienzo :v
+    1 bajo
+    2 intermedio
+    3 fuerte
+    --color1: #312d2d;
+    --color2: #1f1d1d;
+    --color3: #050505;
+    */
+    
+    /*VARIABLES GRÁFICAS*/
+    --color1:  #1f1d1d;
+    --color2:  #312d2d;
+    --color3:  #1f1d1d;
+    
+	/*COLORES TAREAS*/ 
+    --neutro: rgb(202, 126, 11);
+    --positivo: rgb(48, 122, 77);
+    --negativo: rgb(131, 43, 43);
+}
+
+.container-fluid, .frontpage-guest-header{
+    background-color:var(--color1) !important;	
+}
+
+body {
+    background-color:var(--color1) !important;
+}
+nav, .fixed-top {
+    background-color: var(--color2)!important;
+}
+.navbar .nav-item a {
+    color: var(--color0)!important;
+}
+#nav-drawer {
+    background:var(--color2)!important;
+    border-top: solid 2px var(--color1);
+}
+#nav-drawer-footer {
+    background:var(--color3) !important;
+}
+.drawer-toggle {
+    background:var(--color3) !important;
+}
+.card-body, .card-footer {
+    background:var(--color2);
+    color:var(--color0);
+}
+a {
+    text-decoration:none !important;
+}
+span, a, p, i, td, th, h1, h2, h3, h4, h5 {
+    color:var(--color0) !important;
+}
+.collapse, .collapsing {
+    background:var(--color2) !important;
+}
+.list-group-item:hover {
+    background:var(--color3) !important;
+}
+.dropdown-menu, .dropdown, .show, .text-username {
+    background-color: var(--color2) !important;
+}
+.dropdown-menu a:hover {
+    background:var(--color3) !important;
+}
+/*, .carousel-inner*/
+ .carusel, .slide {
+    display: block;
+    height:25em;
+    width: 100%;
+    background: rgba(1, 8, 1, 0.5) !important;
+}
+img {
+    opacity:100;
+    filter:alpha(opacity=-600);
+    /* For IE8 and earlier */
+}
+/*------------------------------   SECCIÓN CURSOS  ------------------------------------*/
+ .tab_initial {
+    color: var(--color0);
+}
+.breadcrumb a, .breadcrumb span, ul .active{
+    background-color: var(--color3) !important;
+}
+
+.active span, .active .tab_initial {
+    color:var(--color03) !important;
+}
+
+.mod-indent-outer li{
+	    color: var(--color0);
+}
+
+.availabilityinfo {
+	color: var(--color0);
+}
+
+.isrestricted {
+	color: var(--color0);	
+}
+
+.isrestricted span{
+	background: var(--negativo);
+    font-weight:200px;
+}
+
+/*------------------------------   SECCIÓN TAREAS  ------------------------------------*/
+ .c1 {
+    background-color: var(--color03)!important;
+    color:var(--color0) !important;
+}
+/*.submissionstatussubmitted{
+    border-bottom: solid 1px black;
+}
+*/
+ .earlysubmission, .submissionstatussubmitted {
+    background-color: var(--positivo) !important;
+}
+.latesubmission, .submissionstatusnotsubmitted {
+    background-color: var(--negativo) !important;
+}
+.submissionnotgraded {
+    background-color: var(--neutro) !important;
+}
+.submissiongraded {
+    background-color: var(--positivo) !important;
+}
+}

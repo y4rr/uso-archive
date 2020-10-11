@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `YouTube styled in Dark Grays, clean and easy on the eyes. Matching the other skins in the "Darker" series. EnjoY!`
-@version        2020106.12.8
+@version        20201011.9.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -59,7 +59,7 @@ paper-radio-button[checked] #offRadio.paper-radio-button, #offRadio.paper-radio-
     background-color: #aaa !important;
 }
 
-paper-item:hover, .sbsb_c.gsfs:hover {
+paper-item:hover, .sbsb_c.gsfs:hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] {
     background: #444444 !important;
 }
 
@@ -385,9 +385,7 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
     filter: grayscale(100%) invert(1);
 }
 
-#scroll-container.ytd-feed-filter-chip-bar-renderer:after {
-    filter: invert(0.91);
-}
+
 
     /* Hamburger Icon */
     

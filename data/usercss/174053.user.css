@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kyle Pulver
 @description    `Simplifies Archives of Nethys by removing excessive images and styles. Forces dark mode and uses muted tones. Focused on Pathfinder Second Edition and it might not work on the Starfinder or Pathfinder First Edition sections.`
-@version        2020108.22.40
+@version        20201011.3.24
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -136,7 +136,9 @@ body {
 }
 hr {
     border: 0;
-    display:none;
+    margin:0;
+    padding:0;
+    height:0;
 }
 h1.title {
     background: #998;

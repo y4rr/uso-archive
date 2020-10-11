@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201010.13.10
+@version        20201011.5.35
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2415,6 +2415,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-color: #F05C44;
 }
 [dir] .feed_groups_recomm__all {
+    border-top-color: hsl(214, 26%, 19%);
+}
+[dir] .ui_search_input_block {
+    background-color: #16202C;
+}
+[dir] .choose_search_cont input {
+    background-color: #16202C;
+}
+body {
+	--steel_gray_80: hsl(228, 12%, 92%);
+	--steel_gray_80: hsl(214, 26%, 23%);
+	--steel_gray_120: hsl(207, 14%, 85%);
+	--steel_gray_120: hsl(214, 26%, 19%);
+/* 	--blue_600:  #2a5885;*/
+	--blue_600:  #8EC5FF;
+}
+[dir] .apps_options_bar.apps_options_bar_bottom {
     border-top-color: #242f3d;
+/*     box-shadow: 0 1px 0 0 var(--steel_gray_120), 0 0 0 1px var(--steel_gray_80); */
+}
+#qr_code_btn, #app_widget_header_btn {
+/*     color: var(--blue_600); */
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/j1wWmvs8`
-@version        20201010.18.37
+@version        20201011.12.13
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1407,8 +1407,8 @@ img[src="/makaba/templates/js/lcanvas/img/dashed-line.png"], img[src="/makaba/te
 .thread-nav__inner a:first-child {font-size: 0;}
 .thread-nav__inner a:first-child::before {content: "\f060"; font: 22px/1 FontAwesome; padding: 5px; margin: -5px; vertical-align: -1px;}
 .thread-nav__inner a[href="#top"], .thread-nav__inner a[href="#bottom"] {display: none;}
-.thread-nav.desktop a[href="#bottom"] + a {font-size: 0;}
-.thread-nav.desktop a[href="#bottom"] + a::before {content: "\f00a"; font: 18px/1 FontAwesome; padding: 5px; margin: -5px; vertical-align: -1px;}
+.thread-nav.desktop a[href$="/catalog.html"] {font-size: 0;}
+.thread-nav.desktop a[href$="/catalog.html"]::before {content: "\f00a"; font: 18px/1 FontAwesome; padding: 5px; margin: -5px; vertical-align: -1px;}
 #postbtn-favorite-bottom {font-size: 0;}
 #postbtn-favorite-bottom::before {content: "\f005"; font: 16px/1 FontAwesome; padding: 4px; margin: -4px;}
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `firefox`
-@version        202092.8.40
+@version        20201011.7.18
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -731,9 +731,6 @@
     /*table - hot board*/#hotboard tr:hover{background:#000!important;}
     /*table - new games new ACG*/#acg_list>p:nth-of-type(2n+1){background:#030!important;}
     /*table - new games new ACG*/#acg_list>p:nth-of-type(2n+0){background:#040!important;}
-    /*table - hot topics*/#hothala>table>tbody>tr:nth-of-type(2n+1){background:#030!important;}
-    /*table - hot topics*/#hothala>table>tbody>tr:nth-of-type(2n+0){background:#040!important;}
-    /*hot thread*/#hothala tr:hover *{background:#000!important;}
     /*hot creative|cosplay|blog*/.BA-cbox10 div a:first-of-type{background-color:transparent!important;}
     
     /*collapse - news*/.BA-cbox3 p{padding:2px!important;}
@@ -754,18 +751,24 @@
     
     
     /*hot thread*/    /*hot thread*/    /*hot thread*/
-    #hothala{padding:0px!important;}
-    #hothala tr{font:0/0 arial!important;white-space:nowrap!important;}
-    #hothala tr:nth-child(1){display:none!important;}
-    #hothala tr>td{padding:0!important;display:inline-block!important;overflow:visible!important;}
-    #hothala tr>td>a{padding:3px 2px 2px 0px!important;width:100%!important;display:block!important;overflow:visible!important;}
+    #hothala{background:#020!important;padding:0px!important;}
+    #hothala tr              {font:0/0 arial!important;white-space:nowrap!important;}
+    #hothala tr:nth-child(1) {display:none!important;}
+    #hothala tr:nth-child(2n+0)>td:nth-child(2){background:linear-gradient(to left, rgba(0,80,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr:nth-child(2n+0)>td:nth-child(3){background:linear-gradient(to right,rgba(0,80,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr:nth-child(2n+1)>td:nth-child(2){background:linear-gradient(to left, rgba(0,55,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr:nth-child(2n+1)>td:nth-child(3){background:linear-gradient(to right,rgba(0,55,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr:hover>td:nth-child(2)          {background:linear-gradient(to left, rgba(0, 0,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr:hover>td:nth-child(3)          {background:linear-gradient(to right,rgba(0, 0,0,1), rgba(0,0,0,0))!important;}
+    #hothala tr>td        {padding:0!important;left:-50px!important;position:relative!important;display:inline-block!important;overflow:visible!important;}
+    #hothala tr>td>a      {padding:3px 2px 2px 0px!important;width:100%!important;display:block!important;overflow:visible!important;}
     #hothala tr>td>a:hover{background:#000!important;}
     #hothala tr>td:nth-child(1){display:none!important;}
-    #hothala tr>td:nth-child(2){width:120px!important;text-align:right!important;direction:rtl!important;}
-    #hothala tr>td:nth-child(3){width:630px!important;}
+    #hothala tr>td:nth-child(2){width:200px!important;text-align:right!important;direction:rtl!important;}
+    #hothala tr>td:nth-child(3){width:700px!important;}
     #hothala tr>td:nth-child(2)>a:hover{color:#0af!important;}
-    #hothala tr>td:nth-child(2)>a{font:20px/22px arial,"PMingLiU"!important;color:#aaa!important;}
-    #hothala tr>td:nth-child(3)>a{font:22px/22px arial,"PMingLiU"!important;}
+    #hothala tr>td:nth-child(2)>a      {font:20px/22px arial,"PMingLiU"!important;color:#aaa!important;}
+    #hothala tr>td:nth-child(3)>a      {font:22px/22px arial,"PMingLiU"!important;}
     #hothala tr>td:nth-child(4){display:none!important;}
     
     

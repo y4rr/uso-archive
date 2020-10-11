@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Павел Зегельман
 @description    `Complete re-design of new.vk.com styleПолный редизайн нового стиля вконтача - new.vk.com.Проработаны динамические размеры по ширине. Почищены лишние пробелы. Убраны круглые рамки у фотографий аватарок.`
-@version        2020524.17.29
+@version        20201011.4.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document url-prefix("http://new.vk.com"), url-prefix("https://new.vk.com"), url-prefix("http://vk.com"), url-prefix("https://vk.com"){
-/* made by Corak the Avatar in 2017.08
+/* made by Corak the Avatar in 2020.08
 _For Donate_:
 WebMoney: Z344516755040 | R272985793557
 QIWI: +79788618355 | 4890494157849175
@@ -257,6 +257,8 @@ input.text.ts_input
 #profile .module_body .people_cell,
 #group .module_body .people_cell#group_followers
 	{float:none}
+[dir] .module_body .people_cell
+	{padding:2px 6px 2px}
 .module_body .people_cell
 	{padding:0 5px;
 	width:50px;
@@ -688,11 +690,34 @@ input.ui_search_field, input.ui_search_field~.placeholder .ph_input
 	{height:15px!important;
 	width:15px!important;
 	background-size:100%!important}
+
+[dir] input.text.ts_input
+	{margin:0!important}	
+
+[dir=ltr] .box_controls .flat_button {
+    position: absolute!important;
+    right: 80px;
+}
+
+/*
+.audio_pl_edit_box~.box_body>.box_controls_wrap .box_controls .flat_button
+	{position:fixed!important;
+	right:0px;
+	top:0px}
+*/	
+/* [dir=ltr] .box_controls .flat_button
+	{position:fixed!important;
+	right:0px;
+	top:0px}
+/* fix
+.audio_pl_edit_box .ape_item_list
+	{padding:0!important}
+*/
 .audio_pl_edit_box .ape_audio_item_wrap,
-.audio_pl_edit_box .ape_item_list,
 .audio_pl_edit_box .ape_header,
 .audio_pl_edit_box .ape_audio_item_wrap .ape_check
 	{padding:0!important}
+
 .audio_page_player2.audio_page_player_fixed_shown
 	{transform:translateY(30px)!important}
 .audio_pl_item2 .audio_pl__info
@@ -800,7 +825,9 @@ div.media_preview
 	{margin-bottom:0;
 	padding:0}
 
-
+.AudioPlaylistSnippet__right
+{max-width:100%!important}
+	
 /* vkopt */
 .vk_compact_audio .audio_row .audio_acts
 	{margin-top:1px}
@@ -1840,10 +1867,11 @@ div[id*='_important'] .im-mess .im-mess--text
 	padding:5px}
 .wall_module .post_media,
 .im-page .im-page--dialogs-filter,
-.nim-dialog .nim-dialog--cw,
 .nim-dialog,
 .nim-dialog .nim-dialog--photo
 	{padding:0!important}
+.nim-dialog .nim-dialog--cw
+	{padding:1px!important}
 .im-chat-input
 	{padding:5px 0 1px 3px!important}
 .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text,

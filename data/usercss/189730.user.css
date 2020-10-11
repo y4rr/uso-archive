@@ -2,10 +2,45 @@
 @name           ニコニコ動画 動画再生ページ ダークテーマ（HTML5版）
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態です。同様の結果を求める方はublock等の広告ブロックアドオンの導入を推奨します。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
-@version        20201010.7.31
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
+@version        20201011.9.34
 @license        CC0-1.0
 @preprocessor   uso
+@advanced dropdown --- "ニコる" {
+	------- "表示*" <<<EOT  EOT;
+-------- "非表示" <<<EOT /*ニコるを非表示*\/
+.CommentPanelContainer [data-row-nicoru-rank="1"],.CommentPanelContainer [data-row-nicoru-rank="2"],.CommentPanelContainer [data-row-nicoru-rank="3"],.CommentPanelContainer [data-row-nicoru-rank="4"],.CommentPanelContainer [data-row-nicoru-rank="0"]{
+background:#333 !important;
+}
+.CommentPanelDataGrid-HeaderCell[data-name*=nicoru]{
+    display:none !important;
+}
+.DataGrid-TableCell.CommentPanelDataGrid-TableCell[data-name*=nicoru]{
+    display:none !important;
+} EOT;
+
+}
+@advanced dropdown ---- "シリーズ" {
+	-------- "表示*" <<<EOT  EOT;
+--------- "非表示" <<<EOT /*シリーズ非表示*\/
+.VideoDescription-series{
+display:none;
+} EOT;
+
+}
+@advanced dropdown -------- "共有タブのボタン" {
+	-------- "そのまま*" <<<EOT  EOT;
+-------Firefox "なおす(Firefox)" <<<EOT /*ボタンズレ修正*\/
+.SharePanelContainer-radioItem input + label::before{
+    left: 0.5%
+} EOT;
+-------Chrome "なおす(Chrome)" <<<EOT /*ボタンズレ修正*\/
+.SharePanelContainer-radioItem input + label::before{
+    left: 0.7%
+} EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
 /* 消去する要素 */
@@ -539,4 +574,13 @@ bottom:0!important
 .RouterLink.VideoDescriptionSeriesContainer-itemTitle{
     color:#d2691e !important
 }
+
+/*カスタマイズ用*/
+
+/*[[---]]*/
+
+/*[[----]]*/
+
+/*[[---------2]]*/
+
 }
