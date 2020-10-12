@@ -2,8 +2,8 @@
 @name           YouTube player control bar on the outside
 @namespace      USO Archive
 @author         犬々
-@description    `<strong>スタイルの簡単な説明</strong>　<small>動画や生放送の映像を縮小し、映像外に操作バーを常時表示していますその為映像は通常より小さくなっており、黒枠が周りに表示されます。</small>　<small>シークバーや動画時間はアクティブ時に動作し、シークバー位置にカーソルを置いたりすると常時アクティブ化する為オプションで操作バーホバー時に表示される物の表示／非表示オプションを設置しています。</small><strong>追記</strong>　<small>シークバーや経過時間はアクティブ時に動きますが、常時アクティブ化はしていません。</small>　<small>動画終了間際の投稿主の設定している他動画へのサムネリンク等、一部表示の位置調整は出来ないのがあり諦めております。</small>　<small>個人の偏見と独断で表示に非表示、大きさや位置の調整を随時しています。</small>　<small>解像度など個人差で生じる物は保証出来ません(1920*1280／Chromeで作成しています)。</small>　<small>※現状個人の価値観以外での上方修正は見込めません。</small><strong>裏話にならない程度の裏話</strong>　<small>コードの理解が進み、当初作成したプレイヤー側のサイズ拡大での作成が出来る様にはなりましたが放送開始前のサムネ状態に画面モード等対応出来ない部分が出てくる為、現在の映像の縮小仕様で固定します。</small>`
-@version        2020929.8.43
+@description    `<strong>スタイルの簡単な説明</strong>　<small>動画や生放送の映像を縮小し、映像外に操作バーを常時表示していますその為映像は通常より小さくなっており、黒枠が周りに表示されます。</small>　<small>シークバーや操作バーの経過時間はアクティブ時に動作し、シークバー位置にカーソルを置いたりすると常時アクティブ化する為オプションで操作バーホバー時に表示される物の表示／非表示オプションを設置しています。</small><strong>追記</strong>　<small>シークバーや操作バーの経過時間はアクティブ時に動きますが、常時アクティブ化はしていません。</small>　<small>動画終了間際の投稿主の設定している他動画へのサムネリンク等、一部表示の位置調整は出来ないのがあり諦めております。</small>　<small>個人の偏見と独断で表示に非表示、大きさや位置の調整を随時しています。</small>　<small>解像度など個人差で生じる物は保証出来ません(1920*1280／Chromeで作成しています)。</small>　<small>※現状個人の価値観以外での上方修正は見込めません。</small><strong>裏話にならない程度の裏話</strong>　<small>コードの理解が進み、当初作成したプレイヤー側のサイズ拡大での作成が出来る様にはなりましたが放送開始前のサムネ状態に画面モード等対応出来ない部分が出てくる為、現在の映像の縮小仕様で固定します。</small>`
+@version        20201012.2.3
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown Option-preview- "操作バーホバー時に表示される物" {
@@ -312,14 +312,18 @@ ytd-watch-flexy[theater] [id="movie_player"][class*="ad-interrupting"] [class*="
 	}
 
 	/* ----- "プロモーションを含みます" ----- */
-	[class="ytp-paid-content-overlay"]
+	[id="movie_player"] [class="ytp-paid-content-overlay"]
 	{
 		bottom: calc(var(--ytd-toolbar-height)/1.35) !important;
 	}
 
-	/* ----- 操作バーホバー時に表示される物 ----- */
-	/*[[Option-preview-]]*/
+	ytd-watch-flexy[theater] [id="movie_player"] [class="ytp-paid-content-overlay"]
+	{
+		bottom: calc(var(--ytd-toolbar-height)/1.35) !important;
+	}
 
-	/* ----- 生放送経過時間 ----- */
-	/*[[Option-livetime-]]*/
+	ytd-watch-flexy[fullscreen] [id="movie_player"] [class="ytp-paid-content-overlay"]
+	{
+		bottom: calc(var(--ytd-toolbar-height)/0.9) !important;
+	}
 }

@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         Xall1996
 @description    `Quick Darkmode thrown together by me.This is hot garbage, someone else please make something better.`
-@version        20201012.0.1
-@license        NO-REDISTRIBUTION
+@version        20201012.6.46
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("subsplease.org") {
@@ -78,6 +78,7 @@ a:hover{
 }
 .site-header {
     background-color: var(--secondary-background-color);   
+    box-shadow: 0px 2px var(--box-shadow-color);
 }
 
 .site-description, .site-title a, .site-title a:visited{
@@ -86,6 +87,10 @@ a:hover{
 
 .sf-menu a {
     color: var(--primary-text-color) !important;
+}
+
+.sf-menu a:hover{
+    opacity: 0.7;
 }
 
 .badge {
@@ -97,4 +102,11 @@ a:hover{
     background-color: var(--quinary-background-color);
     color: var(--secondary-link-color);
 }
+}
+
+@-moz-document url-prefix("https://subsplease.org/rss") {
+body::before {
+    background-image: url(https://i.imgur.com/koyJPGs.png) !important;
+    background-position: right bottom !important;
+  }
 }

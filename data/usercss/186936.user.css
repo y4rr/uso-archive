@@ -1,14 +1,16 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.1.2 (β)
+@name           Compact Tube (White) v1.1.3 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        2020106.16.7
+@version        20201012.12.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.1.2 (β) */
+/* CompactTube (White) v1.1.3 (β) */
+
+                /* Style Page: https://userstyles.org/styles/186936/ */
 
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
@@ -219,6 +221,42 @@ ytd-vertical-list-renderer {
 
 /* кнопка [ПОДПИСАТЬСЯ] и [ВЫ ПОДПИСАНЫ] - в рездеое ПОИСК: и разделе УПРАВЛЕНИЕ ПОДПИСКАМИ: (позицианирование) */
 #subscribe-button.ytd-channel-renderer {padding-bottom: 16px; margin-right: 5px;}
+
+                /* NEW */
+/* Квадратные Аватары каналов в поиске */
+yt-img-shadow.ytd-video-renderer { border-radius: 0%; background-color: transparent;overflow: hidden; margin-left: 1px; -o-display: none;}
+
+/* Отступы от названия Каналов в Вверх и Вниз в Поиске */
+ytd-video-renderer[use-prominent-thumbs] #channel-info.ytd-video-renderer {padding: 2px 0px 3px 0px;}
+
+/* Расстояние от Аватара Канала до Названия Канала в Поиске */
+#channel-name.ytd-video-renderer { padding-left: 6px; /*8px*/
+--yt-endpoint-color: var(--yt-spec-text-secondary); --yt-endpoint-visited-color: var(--yt-spec-text-secondary);
+align-self: center; max-height: var(--yt-thumbnail-attribution-line-height, 1.8rem);
+overflow: hidden; font-size: var(--ytd-thumbnail-attribution_-_font-size);
+font-weight: var(--ytd-thumbnail-attribution_-_font-weight); line-height: var(--ytd-thumbnail-attribution_-_line-height);
+letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing); text-transform: var(--ytd-thumbnail-attribution_-_text-transform);
+display: flex; flex-direction: row;}
+
+
+/* Размер Превью Видео в Поиске */
+ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer {
+    margin-right: 12px;
+    max-width: 246px; /*360px*/
+    min-width: 138px; /*240*/
+    flex: 1;
+    flex-basis: 1e-9px;
+    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+
+/* Размер Превью Плейлистов в Поиске */
+ytd-playlist-renderer[use-prominent-thumbs] ytd-playlist-thumbnail.ytd-playlist-renderer {
+    margin-right: 12px;
+    margin-left: 6px;
+    max-width: 246px; /*360px*/
+    min-width: 138px; /*240*/
+    flex: 1;
+    flex-basis: 1e-9px;
+    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 

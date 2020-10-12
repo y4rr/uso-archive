@@ -2,13 +2,13 @@
 @name           ニコニコ動画 動画再生ページ ダークテーマ（HTML5版）
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
-@version        20201011.9.34
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
+@version        20201012.10.19
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown --- "ニコる" {
-	------- "表示*" <<<EOT  EOT;
--------- "非表示" <<<EOT /*ニコるを非表示*\/
+	------- "いる*" <<<EOT  EOT;
+-------- "いらない" <<<EOT /*ニコるを非表示*\/
 .CommentPanelContainer [data-row-nicoru-rank="1"],.CommentPanelContainer [data-row-nicoru-rank="2"],.CommentPanelContainer [data-row-nicoru-rank="3"],.CommentPanelContainer [data-row-nicoru-rank="4"],.CommentPanelContainer [data-row-nicoru-rank="0"]{
 background:#333 !important;
 }
@@ -21,8 +21,8 @@ background:#333 !important;
 
 }
 @advanced dropdown ---- "シリーズ" {
-	-------- "表示*" <<<EOT  EOT;
---------- "非表示" <<<EOT /*シリーズ非表示*\/
+	-------- "いる*" <<<EOT  EOT;
+--------- "いらない" <<<EOT /*シリーズ非表示*\/
 .VideoDescription-series{
 display:none;
 } EOT;
@@ -37,6 +37,13 @@ display:none;
 -------Chrome "なおす(Chrome)" <<<EOT /*ボタンズレ修正*\/
 .SharePanelContainer-radioItem input + label::before{
     left: 0.7%
+} EOT;
+
+}
+@advanced dropdown ------- "マーキーエリア" {
+	--------- "いる*" <<<EOT  EOT;
+----------- "いらない" <<<EOT .MarqueeContainer{
+    display: none;
 } EOT;
 
 }
@@ -582,5 +589,7 @@ bottom:0!important
 /*[[----]]*/
 
 /*[[---------2]]*/
+
+/*[[--------1]]*/
 
 }

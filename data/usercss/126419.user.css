@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kandy
 @description    `Если кнопка установки не работает, пробуем сначала нажать на кнопку Show CSS, а потом уже Install. Если не помогло, вместо расширения Stylish, устанавливаем Stylus.Краткий мануал по опциям: https://goo.gl/RY5XCGGithub: https://github.com/kapraru/vanilla-dark-vkПоддержать разработку:Яндекс.Кошелек - 410011732809550Paypal - a@kapra.ru`
-@version        2020107.12.10
+@version        20201012.10.29
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown style-color "Стиль" {
@@ -2931,14 +2931,14 @@ body {
 }
 
 .body_im .ts_cont_wrap {
-  left: 940px;
+  left: 930px;
 }
 
 #page_header,
 .head_nav,
 #page_header_cont .back,
 #page_header_cont {
-  height: 1px !Important;
+  height: 1px !important;
 }
 
 #top_nav>div:nth-child(1) {
@@ -2992,7 +2992,7 @@ input.text.ts_input {
 
 #side_bar ol {
   position: relative !important;
-  left: 121px;
+  left: 128px;
   width: 30px;
 }
 
@@ -3439,12 +3439,70 @@ input.text.ts_input {
 #side_bar .left_label {
   display: none;
 }
-#page_header, .head_nav, #page_header_cont .back, #page_header_cont {
-  height: initial!important;
+
+#side_bar_inner .left_row .left_count_wrap, [dir=ltr] #side_bar ol li .left_row:hover .left_count_wrap {
+  height: 20px!important;
+  min-width: 15px!important;
+  padding: 0 2px!important;
+  margin-left: 4px!important;
 }
-#page_layout {
-  left: -40px;
-  top: 40px;
+[dir=ltr] #side_bar ol li .left_row:hover .left_count_wrap {
+  margin-left: 4px!important;
+}
+
+[dir=ltr] #side_bar ol li {
+  position: relative;
+}
+.left_count_wrap, .left_count_wrap:hover {
+  left: 20px!important;
+}
+#top_nav {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: column;
+  left: 880px;
+  position: absolute;
+}
+.body_im #top_nav {
+  left: 940px;
+}
+#top_nav > li {
+  position: relative;
+}
+#top_nav > li:first-child{
+  display: none;
+}
+#top_nav > li:nth-child(2){
+  margin-left: 8px;
+}
+[dir] .TopSearch__input {
+  width: 16px;
+  padding-left: 15px;
+}
+[dir] .TopSearch__input:focus {
+  width: 230px;
+  padding-left: 15px;
+}
+#top_nav > li:last-child{
+  position: relative;
+}
+[dir] .top_nav_link {
+  padding: 0 10px!important;
+}
+[dir=ltr] .ts_cont_wrap {
+  right: 0;
+}
+.input_back_content {
+  display: none;
+}
+.HeaderNav__item--player {
+  height: 40px!important;
+  overflow: visible;
+  left: -23px;
+  width: 300px;
+}
+[dir] #top_profile_menu:before, [dir] #top_profile_menu:after {
+  display: none;
 } EOT;
 
 }
@@ -3689,7 +3747,7 @@ only_icons_on "Да" <<<EOT /* Убрать текст из левого мен�
   z-index: 2;
   border-radius: 12px;
   min-width: 12px;
-  height: 12px !important;
+  height: 20px !important;
   padding: 3px !important;
   text-align: center;
   position: absolute !important;
@@ -3823,6 +3881,12 @@ only_icons_on "Да" <<<EOT /* Убрать текст из левого мен�
 
 .vk_menu_block ul li a:hover {
   background-color: var(--color3) !important;
+}
+#side_bar .left_label {
+  display: none;
+}
+#side_bar_inner .left_row .left_count_wrap {
+  margin-left: 4px!important;
 } EOT;
 
 }
@@ -4183,7 +4247,7 @@ body {
 	color:#ddd;
 }
 
-.nim-dialog.nim-dialog_selected .nim-dialog--name-w  span, .page_media_poll .page_poll_row_count, .help_tile__title_a, .top_audio_player .top_audio_player_title, a.groups_messages_block:hover, .tickets_side_tt.text .hint_wrap, .ads_edit_value_header, .wk_header, .article > h1, .audio_pl_snippet2 .audio_pl_snippet__info_title, #ads_edit_audience_title, #ads_edit_recommended_cost_title, .groups_create_box .groups_create_box_title, .groups_create_type .groups_create_tile_title, .podcast_episode_layer__title, .audio_page_player2 .slider_hint.audio_player_hint, .cal_table .today, .im-mess.im-mess_gift .im-mess--text {
+.nim-dialog.nim-dialog_selected .nim-dialog--name-w  span, .page_media_poll .page_poll_row_count, .help_tile__title_a, .top_audio_player .top_audio_player_title, a.groups_messages_block:hover, .tickets_side_tt.text .hint_wrap, .ads_edit_value_header, .wk_header, .article > h1, .audio_pl_snippet2 .audio_pl_snippet__info_title, #ads_edit_audience_title, #ads_edit_recommended_cost_title, .groups_create_box .groups_create_box_title, .groups_create_type .groups_create_tile_title, .podcast_episode_layer__title, .audio_page_player2 .slider_hint.audio_player_hint, .cal_table .today, .im-mess.im-mess_gift .im-mess--text, [dir=ltr] .audio_friend_name, [dir=ltr] .audio_friend_name_now {
 	color:#eee;
 }
 
@@ -5097,5 +5161,26 @@ filter: invert(0)!important;
 [dir] .TopSearch__input:focus {
   background-color: var(--color3);
   color: var(--color6);
+}
+[dir=ltr] #side_bar ol li .left_row:hover .left_count_wrap {
+  padding: 0 3px!important;
+  min-width: 16px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: initial;
+}
+[dir=ltr] #side_bar ol li .inl_bl.left_count {
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+#side_bar_inner .left_row .left_count_wrap {
+  height: 22px;
+  min-width: 15px!important;
+  padding: 0 3px!important;
+}
+[dir=ltr] .idd_wrap .idd_arrow {
+  filter: saturate(0);
 }
 }
