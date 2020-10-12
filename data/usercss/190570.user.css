@@ -1,0 +1,140 @@
+/* ==UserStyle==
+@name           ニコ生 ダークテーマ(Nicovideo Live Dark Theme)
+@namespace      USO Archive
+@author         四月一日 雷
+@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>にお願いします。`
+@version        20201011.15.9
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
+/*背景*/
+.___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{
+    background-color: #2b2b2b !important
+}
+.___page-top-anchor___9sr8C{
+    background-color: #2b2b2b;
+    border: solid 5px #000
+}
+.___program-information-area___3Y_YG, .___program-information-header-area___1iPxh, .___program-summary___2BVKN{
+    background-color: #252525
+}
+.___item-image___2Py-3{
+    background-color: #ccc
+}
+.___follow-status___24r9l, .___follow-anchor___1PaWU, .___contents-tree-anchor___CPjDe, .___tag___1B5lq, .___follow-status___24r9l{
+    background-color: #5a5a5a !important
+}
+.___edit-mode-toggle-button___2IVDx{
+    background-color: #5a5a5a;
+    border: solid 2px #676767;
+}
+.___player-status___BQ7B7{
+    background-color: #252525;
+}
+.___tab-area___3ACye, .___tab___1OVyJ{
+    background-color: #171717;
+    color: #ccc
+}
+.___ng-setting-controller___2aA2S{
+    margin-right: -1px;
+}
+.___ng-setting-popup-button___yBxaP>svg{
+    fill: #CCC
+}
+.___command-text-box___ohSTo, .___comment-text-box___3aBCq{
+    background-color: #333;
+    border: solid 2px #5a5a5a;
+}
+input::placeholder{
+    color: #ccc !important
+}
+.___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{
+    background-color: #696969;
+}
+li a:hover{
+    background-color: #464646 !important;
+}
+.___program-card___HpqGQ.___program-card___x3vdg:hover, .___table-cell___3E0rV.___cell___3bYIQ:hover{
+    background-color: #393939 !important;
+}
+
+
+/*ソーシャルボタンまわり*/
+
+/*共有ボタン*/
+.___popup-toggle-button___1UajY{
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M51.054 18.714a10.641 10.641 0 113.911 6.962L26.948 41.329a10.552 10.552 0 01.08 1.33v.328L54.2 54.978a10.643 10.643 0 11-3.228 7.636v-.328L23.8 50.3a10.642 10.642 0 11-.754-15.964z" /></svg>');
+}
+/*その他の操作ボタン*/
+.___popup-toggle-button___31Okx{
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M46.348 40A6.348 6.348 0 1140 33.652 6.348 6.348 0 0146.348 40zm16.323-6.348A6.348 6.348 0 1069.019 40a6.348 6.348 0 00-6.348-6.348zm-45.342 0A6.348 6.348 0 1023.677 40a6.348 6.348 0 00-6.348-6.348z" /></svg>');
+}
+
+/* 文字設定 */
+html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
+  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
+    font-weight:800;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    text-decoration: none;
+    color: #ccc !important; 
+    border: inset 0px #222742 !important;
+}
+
+/*ヘッダーまわり*/
+.common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{
+    background-color: #666 !important
+} 
+.common-header-xp52wl:hover,.common-header-1cuw74j:hover, .common-header-5onxr7:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover{
+    background-color: #2b2b2b !important
+}
+
+.common-header-r1rgum, .common-header-vhrjlg{
+    display: none
+}
+
+
+/*削除する要素*/
+.___premium-merit-appeal-banner___1KEdB, .___premium-merit-appeal-banner___1hc_y, .___app-download-banner___3tmZG, .___app-download-banner___SDCFP, .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad{
+    display: none;
+}
+
+.___item-placeholder___3JoMT{
+    border: solid 2px #ccc !important
+}
+
+.___program-summary___2BVKN{
+    box-shadow: 2px 10px 10px 0 #282828
+}
+}
+
+@-moz-document url-prefix("https://nicoad.nicovideo.jp/") {
+/* 文字設定 */
+html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
+  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
+    font-weight:800;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    text-decoration: none;
+    color: #ccc !important; 
+    border: inset 0px #222742 !important;
+}
+
+/*広告ゾーン*/
+.header-bar[data-v-0d10b35d]{
+    background-color: #3c3c3c !important
+}
+.tab-bar[data-v-0b4aebf6]{
+    background-color: #555;
+    margin-top: -1px;
+}
+.parent-container[data-v-4a7dbe18]{
+    background-color: #555
+}
+.item-button[data-v-1c138322]{
+    background-color: #555;
+    border: 2px solid #252525;
+}
+html{
+    background: #555
+}
+}

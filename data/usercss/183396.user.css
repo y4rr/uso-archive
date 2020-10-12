@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `Custom Nautica / ksm.devFeatures:Cleaner and better designEasily customizableCheck out my other styles:https://userstyles.org/users/812884I have a Discord channel for easier feedback and discussions about the styles: https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        2020625.1.18
+@version        20201011.18.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -58,7 +58,9 @@ llt "Light Lavender (Light Mode)" <<<EOT :root {
 @advanced color txn "Text color " #FFFFFF
 @advanced dropdown rgb "RGB mode" {
 	no1 "Off*" <<<EOT /*rgboff*\/ EOT;
-ye1 "On" <<<EOT @keyframes borderrgb{
+ye1 "On" <<<EOT --acnr: #FF0000!important
+}
+@keyframes borderrgb{
 0% {border-color: rgb(255,0,0);}
 6% {border-color: rgb(255,85,0);}
 12% {border-color: rgb(255,170,0);}
@@ -118,20 +120,20 @@ ye1 "On" <<<EOT @keyframes borderrgb{
 85% {color: rgb(255,0,255);}
 89% {color: rgb(255,0,170);}
 94% {color: rgb(255,0,85);}
-} EOT;
+ EOT;
 
 }
 
 ==/UserStyle== */
 @-moz-document domain("ksm.dev") {
-/*V1.1_200625*/
+/*V1.1.1_201011*/
 /*[[th]]*/
-/*[[rgb]]*/
 :root {
     --minr: /*[[min]]*/;
     --scnr: /*[[scn]]*/;
     --acnr: /*[[acn]]*/;
     --txnr: /*[[txn]]*/;
+/*[[rgb]]*/
 }
 /*min*/
 header[data-v-26bc33e4], body, .card {

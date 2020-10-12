@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         darkfx
 @description    `Minimalistic purple spotify theme with rounded buttons.Screenshot(old): <a href="https://i.imgur.com/l6pVqI8.jpg">CLICK HERE!</a>Screenshot(new) <a href="https://i.imgur.com/oLaCxLU.jpg">CLICK HERE!</a>Please send feedback, if you like the theme.`
-@version        2020109.21.0
+@version        20201011.22.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 *** MINIMALISTIC PURPLE SPOTIFY
 *** MADE BY: DAVDI1337/DARKFX
 *** CREATED: 2020. 07. 30
-*** LAST UPDATED: 2020. 09. 02
+*** LAST UPDATED: 2020. 10. 12
 */
 
 @-moz-document domain("open.spotify.com")
@@ -691,26 +691,31 @@ div._7c993111016a33a158645119f8a6fb12-scss > div > img {
     border-radius: 7px;
 }
 
-#main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(8) {
+#main > div > nav.react-contextmenu.react-contextmenu--visible > div:last-child {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
 
-#main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(1) {
+#main > div > nav.react-contextmenu.react-contextmenu--visible > div:first-child {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
 
+/*
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(7),
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(6), 
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(5), 
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(4),
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(3),
 #main > div > nav.react-contextmenu.react-contextmenu--visible > div:nth-child(2) {
+    border-radius: 0px;
+}
+*/
+#main > div > nav.react-contextmenu.react-contextmenu--visible > div {
     border-radius: 0px;
 }
 

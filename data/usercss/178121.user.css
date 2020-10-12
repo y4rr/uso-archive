@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        202093.0.23
+@version        20201011.13.45
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,7 +18,7 @@
 /*main#content a  { color: #aaa; }*/
 html {
   overflow-y: scroll;
-  scrollbar-color: #aaa #444;
+  scrollbar-color: #555 #333;
 }
 .homepage,
 /* Voor pagina's als de collecties kunnen we geen body.class gebruiken. */
@@ -37,28 +37,34 @@ html {
      { background-color: #222; color: #aaa; }
 
 /* Regionaal nieuws mobiele versie */
-div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0
- { background-color: #222 !important; color: #aaa; }
-div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0 button.closeButton_1EAPQViT svg path
- { fill: #aaa; }
-div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0 span.title_2hCeWLy3
- { color: #aaa; }
+    div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0
+     { background-color: #222 !important; color: #aaa; }
+    div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0 button.closeButton_1EAPQViT svg path
+     { fill: #aaa; }
+    div.notification_BjpPtLgh.hideOnMobile_1c1QC6O0 span.title_2hCeWLy3
+     { color: #aaa; }
 
-div.modal_33Wn8Sv3 section.content_2uAiB_W9
- { background-color: #444; color: #aaa; border: solid 1px #222; }
-div.modal_33Wn8Sv3 section.content_2uAiB_W9 h1.title_3h3vc-jr
- { color: #aaa; }
-div.modal_33Wn8Sv3 section.content_2uAiB_W9 li#groningen .icon_3kcPsxUZ
-,div.modal_33Wn8Sv3 section.content_2uAiB_W9 li#utrecht .icon_3kcPsxUZ
-,div.modal_33Wn8Sv3 section.content_2uAiB_W9 li .icon_3kcPsxUZ
- { filter: invert(100%); }
+    div.modal_33Wn8Sv3 section.content_2uAiB_W9
+     { background-color: #444; color: #aaa; border: solid 1px #222; }
+    div.modal_33Wn8Sv3 section.content_2uAiB_W9 h1.title_3h3vc-jr
+     { color: #aaa; }
 
-div.notification_2zIGsEF_ button.notificationButton_1_cNHHve
- { background-color: #444; color: #aaa; }
-div.notification_2zIGsEF_ .title_2iIgyrfe
- { color: #aaa; }
-div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
- { fill: #aaa; }
+/*  div.modal_33Wn8Sv3 section.content_2uAiB_W9 li#groningen .icon_3kcPsxUZ
+,   div.modal_33Wn8Sv3 section.content_2uAiB_W9 li#utrecht .icon_3kcPsxUZ
+,   div.modal_33Wn8Sv3 section.content_2uAiB_W9 li .icon_3kcPsxUZ
+     { filter: invert(100%); }*/
+/*    .broadcasterList_3ZiovT09 img.icon_3kcPsxUZ
+,*/    #friesland img.icon_3kcPsxUZ
+,    #groningen img.icon_3kcPsxUZ
+,   #utrecht img.icon_3kcPsxUZ
+     { filter: invert(100%); }
+
+    div.notification_2zIGsEF_ button.notificationButton_1_cNHHve
+     { background-color: #444; color: #aaa; }
+    div.notification_2zIGsEF_ .title_2iIgyrfe
+     { color: #aaa; }
+    div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
+     { fill: #aaa; }
 
 /***********/
 /* HEADER  */
@@ -566,7 +572,7 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
      { color: #E61E14 !important; }
     /* Meer berichten wolk */
     .page-liveblog .liveblog__update-count
-     { color: #000; }
+     {  }
 
 /* Live blog */
     /*bullet points / rode bolletjes aan de linkerkant*/
@@ -607,6 +613,25 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
     .page-liveblog .media_caption.media_caption-slider .caption_content .space-right
      { color: #aaa; }
 
+/* Tabel met wisselende achtergrond kleur */
+    ul.liveblog__list li.liveblog__update div.block_table {
+    border: solid 1px #555;
+}
+    ul.liveblog__list li.liveblog__update table {
+        border: 1px solid #111;
+    }
+    ul.liveblog__list li.liveblog__update table
+,   ul.liveblog__list li.liveblog__update table thead td
+,   ul.liveblog__list li.liveblog__update table thead th {
+        background-color: #000;
+    }
+    ul.liveblog__list li.liveblog__update table tbody tr td {
+        background: #111;
+    }
+    ul.liveblog__list li.liveblog__update table tbody tr:nth-child(2n-1) td {
+        background: #222;
+    }
+
 /* Embedded tweet */
     /* rand om de tweet heen */
     .page-liveblog .liveblog a.ext-twitter
@@ -629,15 +654,29 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
      { background-color: #222; }
     .page-liveblog .liveblog__last__content
      { border-color: #333; }
+    /* Devider line */
+    li.liveblog__last
+     { border-top: solid 1px #555; }
     /*meer berichten tonen*/
-    .page-liveblog .liveblog__last__content span.link-hover
+    li.liveblog__last button.liveblog__last__content.js-liveblog-loadmore
+,   .page-liveblog .liveblog__last__content span.link-hover
      { color: #aaa; }
 
+/*******************/
+/* NIEUWS en SPORT */
+/* Shared elements */
+/*******************/
 
+    .category-index section#latest_in_category li.list-items__item img.list-items__image
+,   .sport-index section#latest_sport li.list-items__item img.list-items__image
+     { filter: brightness(85%); }
+    .category-index section#latest_in_category li.list-items__item:Hover img.list-items__image
+,   .sport-index section#latest_sport li.list-items__item:Hover img.list-items__image
+     { filter: brightness(100%); }
 
-/**********/
-/* NIEUWS */
-/**********/
+/**************/
+/* NOS NIEUWS */
+/**************/
 
 /*E61E14*/
 /* Linker colom / Categorien */
@@ -664,6 +703,7 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
 /* Top stories */
     /*nos nieuws*/
     .category-index div.supply-channel h2
+,   .category-index h2.title__R_lKLLE
      { color: #aaa; }
     .category-index section#topstories a.link_321JSWWq
      { border: solid 1px #111; }
@@ -691,6 +731,18 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
 
 /*    .category-index div#page_bottom section#editors_picks div
      { border: solid 1px #0f0 !important; }*/
+
+/*****************/
+/* NOS Regionaal */
+/*****************/
+
+    .category--regio aside#aside span.regio-list__list-item-title
+     { color: #aaa; }
+    .category--regio aside#aside a[href="https://www.rtvutrecht.nl"] img.regio-list__list-item-icon
+     { filter: invert(100%); }
+
+    .category--regio aside#aside section#regio_list div[data-ssr-name="components/nos/news/RegionOnboarding/RegionOnboarding"] div.onboardingContainer_3y-VdXv9 button.button_3_F6lpeK.light_1VlqTpFg.ctaButton_18bROGZj
+     { color: #aaa; background-color: #333; border: solid 1px #111; }
 
 
 /**********/
@@ -863,6 +915,14 @@ div.notification_2zIGsEF_ .arrowIconContainer_2FDya4ye svg
 /* Uitslagen */
     .sport div.col_main.section-results div.results
      { background-color: #fff !important; }
+
+/* Right column */
+    /*.category--voetbal*/.category-index aside#aside ul.announcements.padded-small li.announcements__item--live
+     { border-left-color: #aaa; }
+    /*.category--voetbal*/.category-index aside#aside ul.announcements.padded-small li.announcements__item--live .announcements__title.announcements__title--live
+     { color: #aaa; }
+    /*.category--voetbal*/.category-index aside#aside li.announcements__item div.announcements__wrapper
+     { color: #aaa; background-color: #333; border: solid 1px #111; }
 
 /*    .sport.voetbal-uitslagen
      { background-color: #ddd !important; color: #f00; }*/

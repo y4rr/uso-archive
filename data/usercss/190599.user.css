@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           SubsPleaseDark
+@namespace      USO Archive
+@author         Jordy3D
+@description    `SubsPlease, Dark.`
+@version        20201011.23.52
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("subsplease.org") {
+/*Dark Scrollbar*/
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #fff0; }
+::-webkit-scrollbar-thumb { background: #222; }
+::-webkit-scrollbar-thumb:hover { background: #252525; }
+
+body, html
+{
+  background: #3d3d3f;
+}
+
+.post-wrapper-single .post-wrapper-hentry,
+
+.sidebar
+{
+    background: #363639;
+}
+
+.site-header
+{
+    background: #2e2e2f !important;
+}
+
+.badge
+{
+    background: #12121354 !important;
+}
+
+.time-new-badge
+{
+    background-color: #0a7642;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+
+.site-title a, .site-title a:visited,
+.site-description,
+.sf-menu > li > a, .sf-menu > li > a:visited,
+
+.release-item a,
+.badge,
+
+.schedule-widget-show a, .schedule-widget-show a:visited,
+
+.all-schedule-show a,
+.all-shows-link a,
+
+.toggle-menu-wrapper a, .toggle-menu-wrapper a:visited
+{
+  color: #ccc !important;
+}
+
+
+
+*
+{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+clearImage 
+{
+    filter: invert(1) hue-rotate(180deg) saturate(2) brightness(.8);
+    mix-blend-mode: color-dodge;
+}
+}

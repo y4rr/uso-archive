@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MarkF
 @description    `A dark theme for the <a  href="http://www.eevblog.com/forum/">EEVBlog Forum</a>.  White text on a dark background,`
-@version        2020510.20.16
+@version        20201011.19.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,16 +26,17 @@ xx-small {font-size: 0.7em !important}
 
 html, body, p, table, th, tr, td, div, a, form, frame, input, script, ul, ol, dl {
    font-family: Tahoma !important; 
-   font-size: 11pt !important;
+   font-size: 12pt !important;
 }
 pre, tt, code {
    font-family: Consolas !important; 
-   font-size: 11pt !important;
+   font-size: 12pt !important;
 }
 blockquote, q {
    font-style: italic !important; 
    font-size: 1.0em !important;
 }
+
 
 /* EEVblog Forum */
 body, .frame, .roundframe, .plainbox, .dropmenu a, .hslice td, .titlebg td,
@@ -88,9 +89,9 @@ div.additional_row {
    text-decoration: none !important;
 }
 .greeting {
-   font-family: Copperplate Gothic Light !important;
+   font-family:Segoe Print !important;
    font-size: 22pt !important;
-   font-weight: bold !important;
+   font-weight: normal !important;
    line-height: 1.1em !important;
 }
 .username h4 {
@@ -178,6 +179,7 @@ abbr, .content h3, .floatleft h5, .floatright a, .inner, .innerframe a, .keyinfo
 span[style*="text-shadow"], .post strong, .bbc_color, .bbc_color strong {
    font-weight: normal !important;
    color: #fe7 !important;
+   text-shadow: 0px 0px #000 !important;
 }
 .bbc_standard_quote {
    background: #4e4e4e !important;
@@ -304,35 +306,35 @@ div#profile_success {
    height: 180px !important;
 }
 .bbc_standard_quote img, .bbc_alternate_quote img, .list_posts img {
-   background: #f7f7f7 !important;
+   background: #ddd !important;
    max-width: 320px !important;
    max-height: 180px !important;
    object-fit: scale-down !important;
 }
 .bbc_img, .resized, [id*="thumb_"] {
-   background: #f7f7f7 !important;
-   min-width: 12.5% !important;
-   max-width: 1152px !important;
-   min-height: 12.5% !important;
+   background: #ddd !important;
+   -min-width: 12.5% !important;
+   max-width: 1024px !important;
+   -min-height: 12.5% !important;
    max-height: 648px !important;
 }
 .attachments img {
-   background: #f7f7f7 !important;
-   max-width: 1152px !important;
+   background: #ddd !important;
+   max-width: 1024px !important;
    max-height: 648px !important;
 }
 #smileyBox_message img, .smiley {
-   background: #ccc !important;
+   background: #ddd !important;
    vertical-align: middle !important;
 }
 .avatar {
-   background: #ccc !important;
+   background: #ddd !important;
    height: 64px !important;
    width: 64px !important;
 }
 [target$="_blank"] img {
    -max-height: 32px !important;
-   max-width: 32px !important;
+   max-width: 128px !important;
 }
 
 }

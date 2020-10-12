@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         waryphorptia
 @description    `Dark blue theme for the OpenGL wiki.Quickly slapped together, probably has bugs.`
-@version        20201011.5.33
+@version        20201011.20.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,6 +26,14 @@ table.infobox
 {
     background-color: #243c5d !important;
 }
+table.wikitable {
+    color: #a7bace;
+    background-color: #1c2f4a !important;
+}
+table.wikitable th {
+    color: #1a2739;
+    background-color: #71a5d8 !important;
+}
 table {
     background-color: #1f3450 !important;
 }
@@ -38,7 +46,7 @@ a {
 a:visited {
     color: #9283cc !important;
 }
-pre {
+pre, code {
     color: #96dd8e;
     background-color: #162937;
 }

@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Jostin Andres Rodriguez Zambrano
 @description    `No es mucho pero es trabajo honesto.jpg`
-@version        20201011.4.54
+@version        20201011.17.57
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("http://fci.utm.edu.ec:88/evirtual/"), url-prefix("http://fci.utm.edu.ec:88/evirtual/") {
 :root {
     --color0: white;
-   /*  
+    /*  
     Así estaba al comienzo :v
     1 bajo
     2 intermedio
@@ -19,22 +19,18 @@
     --color2: #1f1d1d;
     --color3: #050505;
     */
-    
     /*VARIABLES GRÁFICAS*/
-    --color1:  #1f1d1d;
-    --color2:  #312d2d;
-    --color3:  #1f1d1d;
-    
-	/*COLORES TAREAS*/ 
+    --color1: #1f1d1d;
+    --color2: #312d2d;
+    --color3: #1f1d1d;
+    /*COLORES TAREAS*/
     --neutro: rgb(202, 126, 11);
     --positivo: rgb(48, 122, 77);
     --negativo: rgb(131, 43, 43);
 }
-
-.container-fluid, .frontpage-guest-header{
-    background-color:var(--color1) !important;	
+.container-fluid, .frontpage-guest-header {
+    background-color:var(--color1) !important;
 }
-
 body {
     background-color:var(--color1) !important;
 }
@@ -61,7 +57,7 @@ nav, .fixed-top {
 a {
     text-decoration:none !important;
 }
-span, a, p, i, td, th, h1, h2, h3, h4, h5 {
+span, b, .section li, a, p, i, td, th, h1, h2, h3, h4, h5 {
     color:var(--color0) !important;
 }
 .collapse, .collapsing {
@@ -92,31 +88,25 @@ img {
  .tab_initial {
     color: var(--color0);
 }
-.breadcrumb a, .breadcrumb span, ul .active{
+.breadcrumb a, .breadcrumb span, ul .active {
     background-color: var(--color3) !important;
 }
-
 .active span, .active .tab_initial {
     color:var(--color03) !important;
 }
-
-.mod-indent-outer li{
-	    color: var(--color0);
+.mod-indent-outer li {
+    color: var(--color0);
 }
-
 .availabilityinfo {
-	color: var(--color0);
+    color: var(--color0);
 }
-
 .isrestricted {
-	color: var(--color0);	
+    color: var(--color0);
 }
-
-.isrestricted span{
-	background: var(--negativo);
-    font-weight:200px;
+.isrestricted span {
+    background: var(--negativo);
+    font-weight: 200;
 }
-
 /*------------------------------   SECCIÓN TAREAS  ------------------------------------*/
  .c1 {
     background-color: var(--color03)!important;

@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Yahoo New Mail - Simply Dark and Gray - 2020 v.57
+@name           Yahoo New Mail - Simply Dark and Gray - 2020 v.58
 @namespace      USO Archive
 @author         decembre
 @description    `A DARK COLOR Style ....Simply....But many tweaks for a better COMPACT interface, for Widescreen  and small screen too !I use it all the time, so it is more updated.;-)NEW : Style Updated for all these Perpetual NEW DESIGNS:last one:  JUL 2019 (no possibility to revert to the old design)  - in progress....<b>For Firefox Only!(??)</b>▶  More usable (for color principally) with these Mail parameters - but since v.54,  you shouldn't need it:See the screenshot of them:<a href="https://forum.userstyles.org/discussion/53510/useable#latest">You need to choose some particular account parameters for your yahoo mail...</a>`
-@version        202088.9.41
+@version        20201011.22.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,9 +11,17 @@
 
 @-moz-document domain("mail.yahoo.com"), domain("calendar.yahoo.com") {
 
-/* ==== 0- Yahoo New Mail - Simply Dark and Gray - 2020 v.56 (new57) - Merged (NEW 2019.07) + (OLD 2017) - WATnew06 ==== */
+/* ==== 0- Yahoo New Mail - Simply Dark and Gray - 2020 v.58 (new58) - Merged (NEW 2019.07) + (OLD 2017) - WATnew06 ==== */
 
 /* NEW name of Yahoo New Mail - Simply Dark and Gray v.36 */
+
+/* INFO (11 oct 2020) about how keeping tne NEW Yahoo mail (not their "Classic version") after they force us to use a "Modern Browser".
+If like me you use Waterfox Classic, you can't continue to use their new mail, only the "Basic Mail" (which it's not supported by this userstyles).
+So, the solution is to use an "User-Agent Switcher" addon, like this one:
+https://mybrowseraddon.com/useragent-switcher.html
+Choose Google and add https://mail.yahoo.com in the bottom field.
+And that's ok!important;
+==== *
 
 /* (new56) - POP NEW AGENDA - === */
 div[data-test-id="popover-content"][style="visibility: visible; top: 78.4853px; left: -379px;"]{
