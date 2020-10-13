@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Xall1996
 @description    `Quick Darkmode thrown together by me.This is hot garbage, someone else please make something better.`
-@version        20201012.6.46
+@version        20201013.11.22
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -29,6 +29,7 @@
         --highlight-link-color: #586297;
         --header-color: 	#747eb7;
         --box-shadow-color: #181818;
+        --badge-hover-color: #08d6d6
     }
 
 body, .post-wrapper-hentry {
@@ -81,7 +82,25 @@ a:hover{
     box-shadow: 0px 2px var(--box-shadow-color);
 }
 
-.site-description, .site-title a, .site-title a:visited{
+
+
+.site-title, site-title:hover  {
+    content: "SubsPlease";
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22)) !important;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 30px !important;
+}
+
+.site-title a:hover {
+    opacity: 1 !important;
+}
+
+
+.site-description {
     color: var(--primary-text-color); 
 }
 
@@ -96,6 +115,10 @@ a:hover{
 .badge {
     color: var(--secondary-link-color);
     background-color: var(--quaternary-background-color);
+}
+
+.badge:hover {
+    color : var(--badge-hover-color);
 }
 
 .time-new-badge {

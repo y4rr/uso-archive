@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Rei Krom
 @description    `Requirements:Silver Theme`
-@version        2020826.14.10
+@version        20201013.8.15
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
-.ThemeSetter--silvered {
+.ThemeSetter-themeBackground, ThemeSetter--classic {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(https://i.redd.it/4j12nz9jxj731.png);
@@ -17,7 +17,7 @@
 .BoardCard:hover {
     opacity: 1;
 }
-.BoardCard {
+.BoardCardLayout {
     background: black;
     color: white;
     opacity: 0.8;
@@ -80,4 +80,3 @@
 .SortableList-sortableItemContainer:first-of-type {
     margin-right: 100px;
 }
-

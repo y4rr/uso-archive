@@ -3,27 +3,13 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログ専用のADブロック<br>◎汎用ADブロックと違い、デザイン崩れを生じ難い理想的な処理が特徴。　　ADシステムの遷移・変容に対して、可能な限り対応する方針です。　　アフェリエイトユーザー自らが設置したADは、ブロックされない場合があります。　　マイページの項目（エンタメ告知欄等）はブロック・非ブロックを指定してください。　　ユーザーの便宜を考慮して、案内表示などを非表示としない場合があります。◎以下のページにADブロックの適応範囲を特化しています。　「ブログページ」「記事一覧」「画像一覧」「Ameba検索」　「ブログ管理」「アメンバー等 各種管理ページ」　「ホーム」「プロフィール」「ピグ」　「Amebaグルっぽ」「ハッシュタグ一覧」◎「Ameblo Management」の方が、このスタイルより対応が早く精密なので、お勧めです。`
-@version        2020420.5.50
+@version        20201013.1.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp") {
-/* Ameblo AD Blocker ver.2020.04.20  ************************** */
+/* Ameblo AD Blocker ver.2020.10.12  ************************** */
 /* ブログページ ADブロック *********************************** */
-/* ヘッダー部 ドロップダウン記事リスト 動作の修正 ********* */
-._2VAk1gaA {
-    display: none; }
-
-._2VAk1gaA:hover {
-    display: block; }
-
-._226P45V8:hover + ._2VAk1gaA {
-    display: block; }
-
-/* ヘッダー部 ドロップダウンAD */
-._1E2vzS02 {
-    display: none; }
-
 /* 本文下部 AD（新スキン）*************************** */
 .skin-entryAd {
     display: none; }
@@ -66,16 +52,12 @@ div[id^="div-gpt-ad"] {
     display: none; }
 
 /* フッター部  ************************************ */
-/* ページ下部 ジャンルランキング・Amebaトピックス を非表示 */
-#js-bigfooter {
+/* ページ下部 ジャンルランキング・Amebaトピックス を非表示 2020.10.12 */
+._20TD20u0 {
     display: none; }
 
-/* 2019.07 下部 旧#js-bigfooter を非表示 */
-#app ._Q47mEGqf {
-    display: none; }
-
-/* 2018.07 ブログを始める を非表示 */
-#app aside._iI3GpNIa {
+/* ブログを始める を非表示 2020.10.12 */
+#app aside._HQiG1eoZ {
     display: none; }
 
 /* アメブロフッター  ******************************** */
@@ -89,7 +71,7 @@ div[id^="div-gpt-ad"] {
 body {
     padding-top: 0 !important; }
 
-._1NHfCU0F {
+#ambHeader {
     position: absolute; }
 
 /* ************************************************
@@ -98,7 +80,7 @@ body {
 
 このコードを有効にするには、以下の操作を行ってください
 　　● コードの適用先を「ドメイン上のURL」に変更
-　　● このスタイル「Ameblo AD Blocker」を保存
+　　● 編集メニューの「保存」を押す
 ************************************************ */
 }
 
@@ -119,11 +101,13 @@ ins.adsbygoogle {
 @-moz-document domain("ameblo.jp") {
 /* 画像一覧 ADブロック  ************************************** */
 /* 画像一覧ページ */
-#officialBox {
+#officialBox,
+._3oU2V5li {
     display: none; }
 
 /* 画像一覧 個別画像ページ */
-#adBox {
+#adBox,
+._3oU2V5li {
     display: none; }
 }
 

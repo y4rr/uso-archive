@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `SubsPlease, Dark.`
-@version        20201011.23.52
+@version        20201013.6.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,14 +14,18 @@
 ::-webkit-scrollbar-thumb { background: #222; }
 ::-webkit-scrollbar-thumb:hover { background: #252525; }
 
-body, html
+body, html,
+
+#searchdiv
 {
   background: #3d3d3f;
 }
 
 .post-wrapper-single .post-wrapper-hentry,
 
-.sidebar
+.sidebar,
+
+.anime1
 {
     background: #363639;
 }
@@ -31,9 +35,19 @@ body, html
     background: #2e2e2f !important;
 }
 
-.badge
+.badge,
+
+.anime0:hover, .anime1:hover
 {
     background: #12121354 !important;
+}
+
+.anime0,
+div.footer,
+
+div.header
+{
+  background: #0000;
 }
 
 .time-new-badge
@@ -55,17 +69,47 @@ body, h1, h2, h3, h4, h5, h6,
 .all-schedule-show a,
 .all-shows-link a,
 
-.toggle-menu-wrapper a, .toggle-menu-wrapper a:visited
+.toggle-menu-wrapper a, .toggle-menu-wrapper a:visited,
+
+.search
 {
   color: #ccc !important;
 }
 
-
+.default
+{
+  color: #999;
+}
 
 *
 {
   border: none !important;
   box-shadow: none !important;
+}
+
+tr.animeColumn th,
+
+#searchdiv,
+div.header
+{
+  border-bottom: 1px solid #ccc !important;
+}
+div.footer
+{
+  border-top: 1px solid #ccc !important;
+}
+#searchdiv
+{
+  border-left: 1px solid #ccc !important;
+}
+#searchdiv
+{
+  border-top: 1px solid #3d3d3f !important;
+}
+
+input#search.search
+{
+  border: 1px solid #ccc !important;
 }
 
 clearImage 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Aime23Off
 @description    `Make it darker and foxier`
-@version        2020106.15.18
+@version        20201013.8.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,6 +12,7 @@ html, body {
     background-color:#2c2f33;
     background:#2c2f33;
     color:#99aab5;
+    overflow-x:hidden;
 }
 #region-main, #navwrap, .nav .dropdown-menu li a:hover, .dropdown-menu.usermen li a:hover, #page-footer, #page-footer p {
     background-color:#2c2f33;
@@ -61,6 +62,7 @@ li img:not(.userpicture):not(.defaultuserpic):not(.icon):not(.iconlarge):not(.ac
     background: url(https://aime23.fr/stylish/image1.jpg);
     background-size: 100% auto;
     padding-left: 100%;
+    background-position-y:70%;
     /* Equal to width of new image */
 }
 li a img:not(.userpicture):not(.defaultuserpic):not(.icon):not(.iconlarge):not(.activityicon) {
@@ -78,18 +80,9 @@ li a img:not(.userpicture):not(.defaultuserpic):not(.icon):not(.iconlarge):not(.
 .flex-caption {
     display: none;
 }
-.navbar .nav .dropdown-menu {
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    max-height: 70vh;
-    width: auto;
-    background-color: transparent;
-    border: none;
-    margin-top: 12px!important;
-    height: 70vh;
-    width:0;
-    box-shadow:none;
+
+.cellbg, .simple-ss {
+    background:none;
 }
 
 #above-header .headermenu .dropdown-menu {
@@ -99,5 +92,18 @@ li a img:not(.userpicture):not(.defaultuserpic):not(.icon):not(.iconlarge):not(.
 }
 ul.dropdown-menu li {
     background-color: #23272a;
+}
+
+.section li.modtype_assign div.activity-wrapper {
+    border:none;
+    background-color:#23272a;
+}
+
+#marketblocks .internalmarket, .navbar .nav>li {
+    border:none;
+}
+
+.path-course-view li.activity span.autocompletion img, .path-course-view li.activity form.togglecompletion .btn {
+    background-color:transparent!important;
 }
 }

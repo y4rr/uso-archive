@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.1.4 (β)
+@name           Compact Tube (White) v1.1.5 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        20201012.20.6
+@version        20201013.10.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.1.4 (β) */
+/* CompactTube (White) v1.1.5 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -238,25 +238,38 @@ font-weight: var(--ytd-thumbnail-attribution_-_font-weight); line-height: var(--
 letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing); text-transform: var(--ytd-thumbnail-attribution_-_text-transform);
 display: flex; flex-direction: row;}
 
+/* Размер поля Поиска и позицианирование */
+ytd-search[center-results] ytd-two-column-search-results-renderer.ytd-search {
+flex: 1; flex-basis: 1e-9px;
+max-width: 855px;  padding-left: 18.05%;  margin-left: -100px;  margin-right: auto;}
 
 /* Размер Превью Видео в Поиске - и Позицианирование */
 ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer {
     margin-right: 12px;
     max-width: 246px; /*360px*/
-    min-width: 138px; /*240*/
+    min-width: 246px; /*240*/
+    max-height: 138px; /*138*/
     flex: 1;
     flex-basis: 1e-9px;
     box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+/* Отступ Текста справа в блоке Превью Видео в Поиске */
+ytd-video-renderer[use-prominent-thumbs] .text-wrapper.ytd-video-renderer {
+max-width: none; margin-right: 4px;}
+
 
 /* Размер Превью Плейлистов в Поиске - и Позицианирование */
 ytd-playlist-renderer[use-prominent-thumbs] ytd-playlist-thumbnail.ytd-playlist-renderer {
     margin-right: 12px;
     margin-left: 6px;
     max-width: 246px; /*360px*/
-    min-width: 138px; /*240*/
+    min-width: 246px; /*240*/
+    max-height: 138px; /*138*/
     flex: 1;
     flex-basis: 1e-9px;
     box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+/* Отступ Текста справа в блоке Превью Плейлиста в Поиске */
+#content.ytd-playlist-renderer {overflow: hidden; max-width: 600px; flex: 1;
+flex-basis: 1e-9px; margin-right: 4px;}
 
 /* Нижний (самый последний) Блок видео в Поиске - отступ снизу */
 ytd-video-renderer.ytd-item-section-renderer:last-child {margin-bottom: var(--ytd-item-section-item-margin, 9px);}

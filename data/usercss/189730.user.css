@@ -2,12 +2,12 @@
 @name           ニコニコ動画 動画再生ページ ダークテーマ（HTML5版）
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
-@version        20201012.10.19
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
+@version        20201013.6.53
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown --- "ニコる" {
-	------- "いる*" <<<EOT  EOT;
+	------- "いる*" <<<EOT /* ニコるはそのまま *\/ EOT;
 -------- "いらない" <<<EOT /*ニコるを非表示*\/
 .CommentPanelContainer [data-row-nicoru-rank="1"],.CommentPanelContainer [data-row-nicoru-rank="2"],.CommentPanelContainer [data-row-nicoru-rank="3"],.CommentPanelContainer [data-row-nicoru-rank="4"],.CommentPanelContainer [data-row-nicoru-rank="0"]{
 background:#333 !important;
@@ -21,7 +21,7 @@ background:#333 !important;
 
 }
 @advanced dropdown ---- "シリーズ" {
-	-------- "いる*" <<<EOT  EOT;
+	-------- "いる*" <<<EOT /* シリーズ欄を表示しておく *\/ EOT;
 --------- "いらない" <<<EOT /*シリーズ非表示*\/
 .VideoDescription-series{
 display:none;
@@ -29,7 +29,7 @@ display:none;
 
 }
 @advanced dropdown -------- "共有タブのボタン" {
-	-------- "そのまま*" <<<EOT  EOT;
+	-------- "そのまま*" <<<EOT /* ボタンズレはそのまま *\/ EOT;
 -------Firefox "なおす(Firefox)" <<<EOT /*ボタンズレ修正*\/
 .SharePanelContainer-radioItem input + label::before{
     left: 0.5%
@@ -41,9 +41,22 @@ display:none;
 
 }
 @advanced dropdown ------- "マーキーエリア" {
-	--------- "いる*" <<<EOT  EOT;
------------ "いらない" <<<EOT .MarqueeContainer{
+	--------- "いる*" <<<EOT /* マーキーエリアを削除しない *\/ EOT;
+----------- "いらない" <<<EOT /* マーキーエリアを削除 *\/
+.MarqueeContainer{
     display: none;
+} EOT;
+
+}
+@advanced dropdown ----------- "シリーズ欄をハイライト（試験的）" {
+	-------------- "しない*" <<<EOT /* シリーズ欄をハイライトしない *\/ EOT;
+------------- "する" <<<EOT /* 試験的 シリーズのハイライト *\/
+.VideoDescription-series{
+    border: solid 5px #282828 !important;
+    background: #393939;
+}
+.RouterLink.VideoDescriptionSeriesContainer-itemTitle{
+    color:#d2691e !important
 } EOT;
 
 }
@@ -475,10 +488,7 @@ bottom:0!important
     background-color: #717171 !important
 }
 /* NG登録欄まわり */
-.NGSettingPanelContainer-content {
-    background-color: #1e1e1e
-}
-.ViewerNGList .ViewerNGListDataGrid-HeaderCell {
+.NGSettingPanelContainer-content, .ViewerNGList .ViewerNGListDataGrid-HeaderCell {
     background-color: #1e1e1e
 }
 .ViewerNGList .ViewerNGListDataGrid-Body {
@@ -500,14 +510,23 @@ bottom:0!important
 }
 
 /* Twitter共有時の調整 */
-.TwitterClientContainer {
-    background-color: #3e3e3e
+.TwitterAccountPanel, .TwitterPanelContainer{
+    background-color: #252525;
 }
-.TwitterClient-Capture-Disabled-Message {
-    color: #444 !important;
+.TwitterPanelContainer-header{
+    color: #fff !important
 }
-.TwitterClient-Capture-Disabled {
-    background-color: hsla(0, 0%, 90%, .90)
+button.ActionButton.TwitterScreenshot-deleteButton, button.ActionButton.TwitterVideoClip-deleteButton{
+    background: none !important;
+    border: none !important;
+    color: #98bbff;
+}
+button.ActionButton.TwitterAccountPanel-button{
+    border: none !important;
+    background: none !important;
+}
+.TwitterScreenshot-inner, .TwitterVideoClip-inner{
+    background-color: #535353;
 }
 
 /* ヘッダーホバー時のタブメニューまわり */
@@ -562,6 +581,11 @@ bottom:0!important
 .common-header-1eex7vk {
     color: rgb(204 230 255) !important
 }
+  
+/*マイリスト登録パネル*/
+.AddingMylistPanel{
+    background-color: #252525;
+}
 
 /* その他メニュー */
 .common-header-juy1p4,
@@ -573,15 +597,6 @@ bottom:0!important
     background-color: #2b2b2b !important
 }
 
-/* 試験的 シリーズのハイライト */
-.VideoDescription-series{
-    border: solid 5px #282828 !important;
-    background: #393939;
-}
-.RouterLink.VideoDescriptionSeriesContainer-itemTitle{
-    color:#d2691e !important
-}
-
 /*カスタマイズ用*/
 
 /*[[---]]*/
@@ -591,5 +606,7 @@ bottom:0!important
 /*[[---------2]]*/
 
 /*[[--------1]]*/
+
+/*[[------------1]]*/
 
 }

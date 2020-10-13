@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201012.21.41
+@version        20201013.4.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -613,7 +613,8 @@ body {
 }
 
 .status-board .course-status .phase-marker .phase-icon.success,
-._2KQGO::before {
+._2KQGO::before,
+._2S3SA {
 	border-color: var(--100)
 }
 
