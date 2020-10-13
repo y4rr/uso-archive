@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        2020917.2.3
+@version        20201012.20.29
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -145,7 +145,7 @@ body.featured-news h3.header3.header3-underline,
 #contentWrapper > div .h1.edit-info {padding-right: 20px !important; /* Mod */}
 
 /* Rec boxes */
-td[valign="top"] + td[valign="top"] > div + .borderClass.bgColor1:hover {margin-left: 387px !important;} /* Mod */
+td[valign="top"] + td[valign="top"] > div + .borderClass.bgColor1:hover {margin-left: 361px !important;} /* Mod */
 .spaceit a.js-similar-recommendations-button {right: 28px !important;} /* Mod */
 .detail-user-recs-text {max-width: 1000px !important;} /* Expanded recs */
 
@@ -284,10 +284,7 @@ h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {
 .anime-slide-block .users {width: 81px !important;}
 
 /* Replace '?' Images (Coloured circle) */
-div.picSurround img[src*="mark_23.gif"] {
-    padding: 7px 7px 8px 8px !important;
-    margin: 12px 0 13px 8px !important;
-    background: linear-gradient(to bottom right, #f46592 35%, #8c7dd0) !important; }
+div.picSurround img[src*="mark_23.gif"] {background: linear-gradient(to bottom right, #f46592 35%, #8c7dd0) !important;}
 
 /* Video width */
 .contents-video-embed {width: 877px !important;}

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Steve Kocourek
 @description    `Generic dark styling for the Miva 10 admin.  It's a work in progress.`
-@version        2020109.13.37
+@version        20201012.13.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,12 +24,12 @@ body, .mm9_texteditor_controls_textarea, .mm9_texteditor_content_container, .mm9
 	background-position: left top;}
 
 input, select, .userexception_box, .userexception_mminput_container, .mm_main_box, .mm_main_content_jumpbackin_link, .mm10_screen_top_controls_user, .mm_main_content_status_container,.mm10_screen_top_controls_user_menu,.mm10_screen_top_controls_wrapper, .mm10_screen_top_controls_user .mm10_screen_top_controls_user_shadow_fix, .mm_main_content_footer_help_resources_container, .mm10_universalsearch_content, .mm10_universalsearch_search,.mm10_universalsearch_results_title_container,.mm10_universalsearchlist, .mm10_screen_top_controls_history_menu, .mm10_screen_top_controls_bookmarks_menu, .mm10_screen_top_controls_history_menu .mm10_screen_top_controls_history_menu_title_group, .mm10_screen_top_controls_bookmarks_menu .mm10_screen_top_controls_bookmarks_menu_title_group, .mm10_screen_top_controls_user_menu_shadow_hider_item, .mm10_screen_side_controls_menu, .mm10_screen_side_controls_action_settings .mm10_screen_side_controls_action_settings_button, .mm_list_data_row_loading_container, .mm_list_data_row_background, .mm_list_data_col_selection, .mm_list_data_row_addmode .mm_list_data_col_selection, .mm9_texteditor .mm9_texteditor_textarea, .mm9_texteditor_controls_textarea_submenu_container, .mm10_content_wrapper textarea, .mm10_screen_content_grouptab_entry_content textarea, .mm9_dialog_content_container, .mm10_button_style_primary_muted,  .mm_module_manager_content_box, .mm_colorpicker, .mm9_imagepicker_actionbar{
-	background: #252526;
+	background: #151515;
 	color: #D4D4D4 !important;
 	
 }
 .mm_main_content_recentorders_order:nth-child(even), .mm10_screen_side_controls_store .mm10_screen_side_controls_store_button, .mm10_screen_side_controls_store_container .mm10_screen_side_controls_store_button_content, .mm10_screen_side_controls_expanded .mm10_screen_side_controls_store.active .mm10_screen_side_controls_store_button_content, .mm10_screen_side_controls_store_menu, .mm_list_feature_controls_search_input, .mm_list_action_button, .mm_list_feature_columnvisibility_button_menu, .mm10_screen_side_controls_submenu, .mm10_screen_side_controls_menu_submenu_toggle, .mm_texteditor_menu, .mm10_screen_side_controls_action_settings_menu, .mm9_button_light, .mm_list_action_menubutton_menu, .mm_module_manager_content_box_action_installed.disabled, .mm_module_manager_content_box_action_installed.disabled:hover, .mm_module_manager_content_box_action_installed.disabled.focus, .mm_module_manager_content_box_action_installed.disabled.active, .mm10_button_style_secondary, .mm10_button_style_secondary_borderless,.mm10_menubutton_container_style_common_menu, .mm_legacy_select, .mm10_content_wrapper select, .mm10_screen_content_grouptab_entry_content select{
-	background: #383B3D;	
+	background: #1d1d1d;	
 	box-shadow:none;
 	border:none;
 }
@@ -41,7 +41,7 @@ input, select, .userexception_box, .userexception_mminput_container, .mm_main_bo
 	background:rgba(0,0,0,0.5);
 }
 img[src*=ReportData_Graph_Line] {
-	filter: invert(88%);
+	filter: invert(92%);
 }
 .mm_main_content_jumpbackin_content a::before{
 	filter: brightness(1.75);
@@ -59,5 +59,10 @@ img[src*=ReportData_Graph_Line] {
 }
 .mm9_orderdetail_customer_fields, .mm9_orderdetail_payment_table, #mm9_orderdetail_items, .mm9_orderdetail_button .mm9_button_text, .mm10_button_style_primary.disabled .mm9_button_text{
 	color:#252526
+}
+.mm_main_content_recentorders_order_status_pending::before {
+    color: #D4D4D4 ;
+    background-color: #525252 ;
+    content: 'Pending' ;
 }
 }

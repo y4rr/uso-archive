@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        2020108.12.48
+@version        20201012.20.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.08 ********************** */
+/* Ameblo Management ver.2020.10.12 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -2540,60 +2540,6 @@ input.btnDelete:hover {
 @-moz-document url-prefix("https://ameblo.jp/") {
 /* ブログページ  ***************************************** */
 /* Amebloヘッダー  ****************************** */
-._1NHfCU0F {
-    font-family: Meiryo, sans-serif; }
-
-._2VJ-yRba,
-._2VJ-yRba:focus,
-._2VJ-yRba:hover,
-._2VJ-yRba:link,
-._2VJ-yRba:visited {
-    height: 37.5px;
-    margin-top: 2.5px; }
-
-._226P45V8,
-._226P45V8:focus,
-._226P45V8:hover,
-._226P45V8:link,
-._226P45V8:visited {
-    height: 37.5px;
-    margin-top: 2.5px; }
-
-._2sVZUQ_M,
-._2sVZUQ_M:focus,
-._2sVZUQ_M:hover,
-._2sVZUQ_M:link,
-._2sVZUQ_M:visited {
-    height: 37.5px;
-    margin-top: 2.5px; }
-
-._2ZOYA4pw {
-    font-size: 14px; }
-
-/* ユーザードロップダウンメニュー1 */
-._1a0_hTML:focus {
-    outline: 1px solid #2196f3; }
-
-._p0AX-Mkr {
-    padding: 2px 6px 0; }
-
-._vDn3dJco {
-    line-height: 24px;
-    padding: 2px 6px 0; }
-
-/* ユーザードロップダウンメニュー2 */
-._32TL3I9j {
-    font-family: Meiryo, sans-serif;
-    margin: 0px 20px 0 auto;
-    padding: 6px 16px;
-    width: 200px; }
-
-._24448wdT {
-    margin-bottom: 6px; }
-
-._3ulyPSpN {
-    font-size: 14px; }
-
 /* 検索枠・いいねボタン アウトライン ***************** */
 [data-uranus-component="search"] > input:focus,
 [data-uranus-component="entryButton"] > button:focus,
@@ -2694,16 +2640,12 @@ div[id^="div-gpt-ad"] {
     display: none; }
 
 /* フッター部 *********************************** */
-/* ページ下部AD を含む フッター部全体 */
-#js-bigfooter {
+/* Ameba人気のブログ部全体 2020.10.12 */
+#app ._20TD20u0 {
     display: none; }
 
-/* 2019.07 フッター部全体 */
-#app ._Q47mEGqf {
-    display: none; }
-
-/* 2018.07 ブログを始める */
-#app aside._iI3GpNIa {
+/* ブログを始める 2020.10.12 */
+#app aside._HQiG1eoZ {
     display: none; }
 
 /* ブログページ ADブロック（旧スキン対応）************ */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         anonimas-afn
 @description    `DMM GAMES にあるゲームの背景色を変更します。背景色は「Customize Settings」からお好きな色に変更できます。ゲームは FLOWER KNIGHT GIRL、神姫PROJECT、ReBless あたりで動作確認しています。`
-@version        2019630.3.49
+@version        20201012.12.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color backgroundColor "背景色を選択" #232728
@@ -19,6 +19,12 @@
     	background: inherit!important;
     }
 
+    /* ゲーム設定・対応環境・お問い合わせ */
+    #toggle_content > .note-data {
+        background-color: #fff;
+    }
+
+    /* 提供、Copyright */
     #foot {
     	color: /*[[textColor]]*/!important;
     }

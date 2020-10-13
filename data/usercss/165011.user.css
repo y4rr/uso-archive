@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/djAdUAuE`
-@version        20201011.13.9
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/QGzFGsC9`
+@version        20201012.17.2
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1808,7 +1808,7 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 .nm__bullet[style="left: 18px;"] {left: 24px !important;}
 .nm__icon {height: 18px; width: 18px;}
 
-.boardname {background: var(--theme_default_glassbg2); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); font-size: 1.4em; position: fixed; height: 55px; top: 0; margin-top: 0; left: 0; right: 0; text-align: left; z-index: 100;}
+.boardname {background: var(--theme_default_glassbg2); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); font-size: 1.4em; position: fixed; height: 55px; top: 0; margin-top: 0; left: 0; right: 0; text-align: left; z-index: 900;}
 .boardname a {top: 0; left: 0; right: 30%; height: 55px; padding: 0 15px; position: fixed; overflow: hidden; line-height: 55px; word-break: break-all; text-overflow: ellipsis; white-space: nowrap}
 .replypage .boardname a {left: 15%; padding: 0;}
 .replypage .boardname a::before {color: var(--theme_default_alttext); content: "\f060"; font: 20px/55px FontAwesome; position: fixed; top: 0; left: 0; width: 15%; text-align: center;}
@@ -1822,14 +1822,22 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 #setting-editor-textarea-textarea {min-height: 250px;}
 
 /* Catalog */
-.centered span[style="float:left"] a::before {content: "\f060"; font: 22px/38px FontAwesome;}
+.catalog {padding-top: 65px;}
+.catalog header + hr {display: none;}
 
-#filter_form {font-size: 0;}
-#filter_form::before {content: "\f161"; font: 18px/38px FontAwesome; width: 40px; display: inline-block;}
+.catalog .centered {background: var(--theme_default_glassbg2); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); height: 55px; position: fixed; z-index: 980; top: 0; left: 0; right: 0;}
+.centered span[style="float:left"] {float: none !important; }
+.centered span[style="float:left"] a::before {content: "\f060"; font: 22px/55px FontAwesome; width: 15%; position: fixed; top: 0; left: 0;}
+
+#filter_form {font-size: 0; position: fixed; bottom: 0; left: 15%; right: 0; text-align: left;}
+#filter_form::before {content: "\f161"; font: 18px/55px FontAwesome; width: 40px; display: inline-block; text-align: center;}
 #filter_form select {font-size: 15px;}
 
+#csearch {font-size: 15px; padding: 6px 10px; position: fixed; left: 15%; width: 70%; top: 12px;}
+
+label[for="toggle-tags"] {position: fixed; right: 0; width: 15%;}
 span[title="tags"] {font-size: 0;}
-span[title="tags"]::before {content: "#"; font-weight: bold; font-size: 24px; padding: 0 4px; vertical-align: -4px;}
+span[title="tags"]::before {content: "#"; font-weight: bold; font-size: 24px; line-height: 55px; padding: 0 4px; vertical-align: -4px;}
 
 .thread_wrap {flex: 0 0 95%; height: 150px; text-align: left;}
 .thread-info {color: var(--theme_default_alttext2);}
@@ -1900,10 +1908,10 @@ input[type="checkbox"]::after {bottom: 20px; font: 15px/20px FontAwesome; height
 
 .thread-nav-mob {height: 0;}
 .button-mob[href$="/catalog.html"] {background: none; box-shadow: none; font-size: 0; padding: 0 !important;}
-.button-mob[href$="/catalog.html"]::before {color: var(--theme_default_alttext); content: "\f00a"; font: 20px/55px FontAwesome; position: fixed; top: 0; right: 0; width: 15%; z-index: 100;}
+.button-mob[href$="/catalog.html"]::before {color: var(--theme_default_alttext); content: "\f00a"; font: 20px/55px FontAwesome; position: fixed; top: 0; right: 0; width: 15%; z-index: 900;}
 
 .thread-nav {display: block !important; font-size: 0;}
-.search {background: var(--theme_default_postbg); display: block !important; margin-right: 0; padding: 11px; position: fixed; top: -60px; left: 0; height: 55px; width: 100%; transition: .1s; z-index: 100;}
+.search {background: var(--theme_default_postbg); display: block !important; margin-right: 0; padding: 11px; position: fixed; top: -60px; left: 0; height: 55px; width: 100%; transition: .1s; z-index: 900;}
 .search:hover, .search:focus, .search:focus-within {top: 0;}
 .search::after {color: var(--theme_default_alttext); content: "\f002"; font: 20px/55px FontAwesome; position: absolute; top: 60px; right: 15%; width: 15%; text-align: center; transition: .1s;}
 .search:hover::after, .search:focus::after, .search:focus-within::after {top: 0;}

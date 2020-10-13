@@ -3,47 +3,62 @@
 @namespace      USO Archive
 @author         Laurensius Adi
 @description    `Shouldn't google make its search result centered official? I'm tired of turning my head left on large monitor.`
-@version        201916.7.20
-@license        NO-REDISTRIBUTION
+@version        20201012.13.20
+@license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.google") {
-#tsf {
-    margin: auto!important;
-    padding-right: 223px;
+.big .mw {
+  max-width: 100%;
 }
 
-#gb {
-    width: 1170px!important;
-    margin: auto!important;
-    right: 20px!important;
+.big #tsf {
+  width: 100%;
 }
 
-.mw {
-    margin: auto!important;
-    width: 1010px!important;
-    margin-top: -3px!important;
+.A8SBwf, .big .O6kumc {
+  margin: 0 auto !important;
 }
 
-#appbar, #hdtbSum, .hdtb-mn-cont {
-    width: 670px!important;
-    margin: auto!important;
+.O6kumc {
+  padding-right: 42px;
 }
 
-#resultStats {
-	margin-left: 30px;
+#cnt #center_col, .mw #center_col {
+  margin: 0 auto;
+}
+
+#rcnt > .col {
+  width: 100% !important;
+}
+
+#slim_appbar {
+  margin: 0 auto;
+  width: 652px;
+}
+
+#hdtb-s .pdswFd {
+  float: none;
+  right: 0;
+  display: inline;
+}
+
+#XJDHvf {
+  width: 0;
+}
+
+#hdtb-msb-vis {
+  margin-left: 0;
 }
 
 #hdtb-msb {
-	min-width: 530px;
+  max-width: 800px;
+  min-width: auto;
 }
 
-#hdtb-msb .hdtb-mitem:first-child.hdtb-msel, #hdtb-msb .hdtb-mitem:first-child.hdtb-msel-pre {
-    margin-left: -20px;
-}
- 
-.ab_ctl {
-    color: #777;
-    margin-left: 0;
+#top_nav {
+  min-width: auto;
+  max-width: 652px;
+  margin: 0 auto;
 }
 }

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.1.3 (β)
+@name           Compact Tube (White) v1.1.4 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        20201012.12.0
+@version        20201012.20.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.1.3 (β) */
+/* CompactTube (White) v1.1.4 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -239,7 +239,7 @@ letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing); text-transfor
 display: flex; flex-direction: row;}
 
 
-/* Размер Превью Видео в Поиске */
+/* Размер Превью Видео в Поиске - и Позицианирование */
 ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer {
     margin-right: 12px;
     max-width: 246px; /*360px*/
@@ -248,7 +248,7 @@ ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer {
     flex-basis: 1e-9px;
     box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 
-/* Размер Превью Плейлистов в Поиске */
+/* Размер Превью Плейлистов в Поиске - и Позицианирование */
 ytd-playlist-renderer[use-prominent-thumbs] ytd-playlist-thumbnail.ytd-playlist-renderer {
     margin-right: 12px;
     margin-left: 6px;
@@ -257,6 +257,30 @@ ytd-playlist-renderer[use-prominent-thumbs] ytd-playlist-thumbnail.ytd-playlist-
     flex: 1;
     flex-basis: 1e-9px;
     box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+
+/* Нижний (самый последний) Блок видео в Поиске - отступ снизу */
+ytd-video-renderer.ytd-item-section-renderer:last-child {margin-bottom: var(--ytd-item-section-item-margin, 9px);}
+
+/* высота Секции Каналов в Поиске (и высота секций Каналов в управлении Подписками " youtube.com/feed/channels " ) */
+#content-section.ytd-channel-renderer {display: flex; flex-direction: row; height: 90px; padding-bottom: 8px;}
+
+/* Метадата Описания Каналов и Высота Строки в Поиске (и в управлении Подписками " youtube.com/feed/channels " ) */
+#metadata.ytd-channel-renderer {margin-bottom: 0px; margin-top: -6px; /*-8px*/ line-height: 1.8rem;}
+
+/* Высота Строки и Позицианирование Описания Каналов в Поиске (и в управлении Подписками " youtube.com/feed/channels " ) */
+#description.ytd-channel-renderer {color: var(--yt-spec-text-secondary); word-break: break-word;
+display: block; max-height: 3.6rem; /*calc(2 * var(--yt-thumbnail-attribution-line-height, 1.8rem))*/
+overflow: hidden; font-size: var(--ytd-thumbnail-attribution_-_font-size);
+font-weight: var(--ytd-thumbnail-attribution_-_font-weight);
+letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing);
+text-transform: var(--ytd-thumbnail-attribution_-_text-transform);
+position: relative; top: 4px; line-height: 1.8rem;} /*var(--ytd-thumbnail-attribution_-_line-height);*/
+
+/* Высота строки Названия Каналов в Поиске, Под Видео (и в управлении Подписками " youtube.com/feed/channels " ) */
+#text.ytd-channel-name {display: var(--ytd-channel-name-text-display);
+font-size: var(--ytd-channel-name-text_-_font-size); font-weight: var(--ytd-channel-name-text_-_font-weight);
+line-height: 1.8rem;}
+
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 

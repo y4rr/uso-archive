@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201012.1.52
+@version        20201012.21.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -394,9 +394,6 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 /** Basics **/
 
 
-/** Basics **/
-
-
 /* Background */
 ._2cmOB,
 .brXUB {
@@ -573,8 +570,7 @@ body {
 }
 
 
-[style="background: rgb(28, 176, 246) none repeat scroll 0% 0%; color: rgb(247, 247, 247);"],
-[style="background: rgb(28, 176, 246); color: rgb(247, 247, 247);"] {
+[style*="background: rgb(28, 176, 246)"] {
 	background-color: var(--custom-color) !important
 }
 
@@ -584,7 +580,7 @@ body {
 	background-color: var(--custom-color-translucent-light)
 }
 
-[style="background: rgb(221, 244, 255) none repeat scroll 0% 0%; border-color: rgb(28, 176, 246); color: rgb(28, 176, 246);"]:hover {
+[style*="background: rgb(221, 244, 255)"]:hover {
 	background-color: var(--custom-color-translucent-light) !important
 }
 
@@ -632,6 +628,7 @@ body {
 ._3ANq3 > :not(:last-child),
 ._28WsZ:not(:first-child),
 ._1O5Vj:not(:first-child),
+._2Inq2:not(:last-child),
 ._3h6Yu td:first-child,
 ._1foEs:first-of-type,
 ._2povu blockquote,
@@ -821,10 +818,7 @@ h1 {
 	color: var(--primary)
 }
 
-[style="border-bottom: none; color: rgb(75, 75, 75); font-size: 25px; font-weight: bold; line-height: 31px; text-align: left; white-space: pre-wrap;"],
-[style="border-bottom: none; color: rgb(75, 75, 75); font-size: 19px; font-weight: bold; line-height: 26px; text-align: left; white-space: pre-wrap;"],
-[style="border-bottom: none; color: rgb(75, 75, 75); font-size: 19px; font-weight: normal; line-height: 26px; text-align: left; white-space: pre-wrap;"],
-[style="border-bottom: none; color: rgb(75, 75, 75); font-size: 19px; font-weight: normal; line-height: 26px; text-align: center; white-space: pre-wrap;"],
+[style*="color: rgb(75, 75, 75)"],
 .Mr3if {
 	color: var(--primary) !important
 }
@@ -906,9 +900,7 @@ h1 {
 	color: var(--secondary)
 }
 
-[style="border-bottom: none; color: rgb(175, 175, 175); font-size: 19px; font-weight: normal; line-height: 29px; text-align: left; white-space: pre-wrap;"],
-[style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; color: rgb(175, 175, 175);"],
-[style="background: rgba(0, 0, 0, 0); color: rgb(175, 175, 175);"] {
+[style*="color: rgb(175, 175, 175);"] {
 	color: var(--secondary) !important
 }
 
@@ -994,13 +986,8 @@ a {
 	color: var(--custom-color)
 }
 
-[style="border-bottom: none; color: rgb(28, 176, 246); font-size: 19px; font-weight: bold; line-height: 29px; text-align: center; white-space: pre-wrap;"],
-[style="border-bottom: none; color: rgb(28, 176, 246); font-size: 19px; font-weight: bold; line-height: 29px; text-align: left; white-space: pre-wrap;"],
-[style="border-bottom: none; color: rgb(28, 176, 246); font-size: 19px; font-weight: bold; line-height: 26px; text-align: left; white-space: pre-wrap;"],
-[style="background: rgb(255, 255, 253) none repeat scroll 0% 0%; border-color: rgb(221, 244, 255); color: rgb(28, 176, 246);"],
-[style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border-color: rgba(0, 0, 0, 0); color: rgb(28, 176, 246);"],
-[style="background: rgb(255, 255, 253); border-color: rgb(221, 244, 255); color: rgb(28, 176, 246);"],
-[style="background: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); color: rgb(28, 176, 246);"],
+
+[style*="color: rgb(28, 176, 246);"],
 [style="color:#1caff6"],
 .pmjld {
 	color: var(--custom-color) !important
