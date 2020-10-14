@@ -1,29 +1,48 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.4
+@name           Youtube WideScreen (New Design Polymer) v.5
 @namespace      USO Archive
 @author         decembre
-@description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.`
-@version        20201010.12.28
+@description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
+@version        20201014.11.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.4 === */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.5 ==== */
 
-/* (new3) GM in USE:
-GM "Youtube UI Fix (2020)":
-https://greasyfork.org/fr/scripts/11485-youtube-ui-fix
-GM "Youtube - dismiss sign-in":
-https://greasyfork.org/fr/scripts/412178-youtube-dismiss-sign-in
-GM "Youtube - Search While Watching Video" *
-https://greasyfork.org/fr/scripts/29451-youtube-search-while-watching-video
+/* (new5) GM in USE:
+
 GM "Video Speed Buttons":
 https://greasyfork.org/fr/scripts/30506-video-speed-buttons
-==== */
-/* (new2) SUPP ADDS */
 
+GM "Youtube UI Fix (2020)":
+https://greasyfork.org/fr/scripts/11485-youtube-ui-fix
+
+GM "Youtube - dismiss sign-in":
+https://greasyfork.org/fr/scripts/412178-youtube-dismiss-sign-in
+
+GM "Youtube - Search While Watching Video" *
+https://greasyfork.org/fr/scripts/29451-youtube-search-while-watching-video
+
+GM "YouTube Progressbar Updater":
+https://greasyfork.org/fr/scripts/11486-youtube-progressbar-updater
+
+GM "Youtube Play Next Queue":
+https://greasyfork.org/fr/scripts/28678-youtube-play-next-queue
+
+Note:
+For use with Waterfox Classic and  User Agent Switcher, choose:
+Force for the domain (the first one)
+Robot: Google Bot
+
+==== */
+
+
+/* (new5) SUPP ADDS */
+iron-overlay-backdrop.opened ,
+ytd-consent-bump-lightbox#consent-bump ,
 .annotation-type-custom > div ,
 /* ytd-popup-container , */
 /* yt-upsell-dialog-renderer[dialog][dialog][dialog] , */
@@ -34,26 +53,47 @@ https://greasyfork.org/fr/scripts/30506-video-speed-buttons
     display: none !important;
 }
 
-/* (new4) GM "Youtube UI Fix (2020)" - INDICATOR :
+/* (new5) CHANNEL - SUBSRIBE CARD */
+.ytd-two-column-browse-results-renderer .ytd-channel-video-player-renderer .html5-endscreen.ytp-player-content.subscribecard-endscreen {
+    cursor: default;
+    overflow: hidden;
+    z-index: 34;
+    transform: scale(0.6);
+  border: 1px solid blue;
+    outline: 1px solid red !important;
+}
+/* (new5) CHANNEL - SUPP PLAYER SUBSCIBE OVERLAY  */
+ytd-channel-video-player-renderer .ytd-channel-video-player-renderer .video-stream.html5-main-video {
+    display: none;
+}
+
+
+/* (new5) YouTube - Hide End Cards (unless hovering):
+https://greasyfork.org/fr/scripts/408725-youtube-hide-end-cards-unless-hovering
+=== */
+div[class*="video-player"]:not(:hover) div[class^="ytp-ce"],
+div[class*="ytp-autohide"] div[class^="ytp-ce"] {
+      display: none !important;
+}
+/* (new5) :YouTube - Watch Later and Share Buttons Return
+https://greasyfork.org/fr/scripts/408875-youtube-watch-later-and-share-buttons-return
+=== */
+.ytp-hide-info-bar:not(.ended-mode) .ytp-chrome-top:not(.ytp-chrome-top-show-buttons) .ytp-watch-later-button, 
+.ytp-hide-info-bar:not(.ended-mode) .ytp-chrome-top:not(.ytp-chrome-top-show-buttons) .ytp-share-button  {
+    display: inline-block !important;
+}
+
+/* (new5) GM "Youtube UI Fix (2020)" - INDICATOR :
 go to https://www.youtube.com/ui_fix_options
 === */
-/* body.yt-ui-fix:before {
-content: "Youtube UI Fix" ;
-position: fixed ;
-display: inline-block ;
-top: 0px ;
-left: 25px ;
-padding: 0 5px ;
-z-index: 5000000 !important;
-background: red ;
-} */
 body.yt-ui-fix #logo-icon-container.ytd-topbar-logo-renderer:before {
 content: "Youtube UI Fix" ;
 position: fixed ;
 display: inline-block ;
-top: 40px ;
-left: 85px ;
+top: 0px ;
+left: 100px ;
 padding: 0 5px ;
+font-size: 7px ;
 opacity: 0.5 ;
 z-index: 5000000 !important;
 background: red ;
@@ -62,12 +102,10 @@ body.yt-ui-fix #logo-icon-container.ytd-topbar-logo-renderer:hover:before {
 content: "Youtube UI Fix Options: go to https://www.youtube.com/ui_fix_options (need to be loged)" ;
 position: fixed ;
 display: inline-block ;
-top: 40px ;
-left: 85px ;
 opacity: 1 ;
 background: green ;
 }
-/* (new3) GM "Youtube UI Fix (2020)" - CENTER VIDEO VERTICALY:
+/* (new5) GM "Youtube UI Fix (2020)" - CENTER VIDEO VERTICALY:
 https://greasyfork.org/fr/scripts/11485-youtube-ui-fix/discussions/64241
 https://www.youtube.com/watch?v=yUif6C_uJgk
  */
@@ -81,10 +119,13 @@ html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-fullscr
     height: calc(100% - 35px) !important;
     max-height: calc(100% - 35px) !important;
     min-height: calc(100% - 35px) !important;
+    top: 0 !important;
 }
 /* FULL :
 .ytp-fullscreen.ytp-big-mode
 .html5-video-player.ytp-transparent.ytp-exp-bottom-control-flexbox.ytp-large-width-mode.initialized-listeners.addedupdateevents.paused-mode.ytp-fullscreen.ytp-big-mode.ytp-iv-drawer-enabled
+NOT FULL:
+ytd-app:not([scrolling_])
 ===*/
 ytd-app[scrolling_] {
     right: 0 !important;
@@ -93,15 +134,85 @@ ytd-app[scrolling_] {
     width: 40% !important;
 }
 
-/* For  GM "Youtube UI Fix (2020)"  + GM "Video Speed Buttons" */
+/* (new5) For  GM "Youtube UI Fix (2020)"  + GM "Video Speed Buttons" */
+.vsb-container {
+    margin-bottom: 0;
+    margin-top: -17px;
+    padding: 0;
+/*     background: red !important; */
+}
+
 body:not(.yt-ui-fix) .vsb-container {
     margin-top: 18px !important;
 /*     background: red !important; */
 }
 
 
+/* (new5) TOP HEADER */
+#masthead-container ,
+#masthead ,
+#masthead-container #interstitial +#container  {
+    height: 35px;
+}
+#buttons.ytd-masthead > .ytd-masthead {
+    height: 30px;
+    margin-top: -5px !important;
+    color: gray;
+    border: none;
+}
+#buttons.ytd-masthead > .ytd-masthead.style-suggestive {
+    margin-top: -2px !important;
+}
+#buttons.ytd-masthead > .ytd-masthead.style-suggestive  #button{
+    border: none;
+}
+/* (new5) VIDEO TITLE */
+ytd-app:not([scrolling_]) .title.style-scope.ytd-video-primary-info-renderer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 32px;
+    padding-left: 30px ;
+    z-index: 0;
+/* background: red ; */
+}
+/* (new5) VIDEO INFOS */
+ytd-app:not([scrolling_]) #info.ytd-video-primary-info-renderer{
+    position: absolute;
+    bottom: 0;
+}
 
-
+/* (new5) SOURCE INFO */
+#clarify-box:not(:empty) {
+    position: absolute;
+    top: -19px !important;
+    right: 0;
+visibility: hidden ;
+}
+#clarify-box:not(:empty):hover {
+    position: absolute;
+    top: -19px;
+    right: 0;
+visibility: visible ;
+}
+#clarify-box:not(:empty):before {
+    content: "©" ;
+position: absolute ;
+width: 20px ;
+height: 20px ;
+line-height: 18px ;
+right: 0 ;
+padding: 0 ;
+font-size: 20px ;
+text-align: center ;
+border-radius: 50% ;
+color: red ;
+background: #333 ;
+visibility: visible ;
+}
+#clarify-box:not(:empty):hover:before {
+background: green ;
+}
 /* DISMISS CONNECTION */
 /* yt-upsell-dialog-renderer[dialog][dialog][dialog] , */
 /* #content + ytd-popup-container.style-scope.ytd-app */
@@ -143,7 +254,80 @@ ytd-app[is-watch-page=""] app-drawer  {
     height: 1049px !important;
     overflow: hidden !important;
 }
-/* (new4) LEFT COLUMN - === */
+/* (new5) PLAYLIST - === */
+#columns ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer  {
+    height: 25px;
+    padding: 5px;
+border-bottom: 1px solid red !important;
+}
+#columns #header-top-row.ytd-playlist-panel-renderer {
+    width: 73%;
+}
+ytd-playlist-panel-renderer[collapsible] #header-description h3 {
+    width: 65%;
+    float: right;
+    font-size: 15px;
+outline: 1px solid yellow ;
+}
+ytd-playlist-panel-renderer[collapsible]  #publisher-container  {
+    float: left;
+    margin-top: 0px !important;
+    font-size: 15px;
+outline: 1px solid violet ;
+}
+
+.ytd-playlist-panel-renderer h3 yt-formatted-string a.yt-simple-endpoint.yt-formatted-string  {
+    float: left;
+    font-size: 10px;
+/* outline: 1px solid violet !important; */
+}
+#columns .ytd-playlist-panel-renderer #publisher-container > yt-formatted-string  {
+   font-size: 15px;
+/* border: 1px solid violet !important; */
+}
+.ytd-playlist-panel-renderer #header-description #publisher-container > yt-formatted-string.publisher {
+    float: left;
+    font-size: 15px;
+/* border: 1px solid violet !important; */
+}
+#columns #playlist-actions {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    width: 20%;
+    margin-top: -22px !important;
+}
+
+#columns #secondary.ytd-watch-flexy #playlist[js-panel-height_=""]{
+    position: fixed;
+    display: inline-block;
+    width: 39.5% !important;
+    height: 20vh ;
+    top: 83px ;
+    left: 60% !important;
+    padding-top: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+z-index: 500 !important;
+/* border-bottom: 5px solid blue; */
+border-right: 5px solid green;
+border-left: 5px solid green;
+/* background-color: yellow  !important; */
+}
+
+/* PLAYLIST - TOGGLE ARROW - Change to BAKGROUND color CHANGE */
+#columns ytd-playlist-panel-renderer[collapsible][collapsed] .playlist-items.ytd-playlist-panel-renderer {
+    display: inline-block !important;
+background-color: black  !important;
+}
+#columns ytd-playlist-panel-renderer[collapsible][collapsed] #playlist-actions.ytd-playlist-panel-renderer {
+    display: inline-block !important;
+    margin-top: -30px !important;
+/* border: 1px solid blue; */
+}
+
+
+/* (new4) LEFT COLUMN - RELATED - === */
 ytd-watch-next-secondary-results-renderer ,
 #related.ytd-watch-flexy {
     position: fixed;
@@ -155,9 +339,9 @@ ytd-watch-next-secondary-results-renderer ,
     padding-top: 195px;
     overflow: hidden;
     overflow-y: auto;
-border-bottom: 1px solid blue;
-border-right: 5px solid red;
-border-left: 5px solid red;
+border-bottom: 1px solid red;
+border-right: 5px solid #222;
+border-left: 5px solid #222;
 /* background-color: yellow  !important; */
 }
 
@@ -172,9 +356,9 @@ border-left: 5px solid red;
     padding-top: 195px;
     overflow: hidden;
     overflow-y: auto;
-border-bottom: 1px solid blue;
-border-right: 5px solid red;
-border-left: 5px solid red;
+border-bottom: 1px solid red;
+border-right: 5px solid #222;
+border-left: 5px solid #222;
 background-color: #333 ;
 }
 /* NO DARK */
@@ -182,42 +366,72 @@ html:not([dark]):not(.style-scope) #items.ytd-watch-next-secondary-results-rende
 background-color: white !important;
 }
 
-/* TO RIGHT PANEL */
+/* (new5) TOP RIGHT PANEL */
 #related #items ytd-compact-autoplay-renderer ,
-ytd-compact-autoplay-renderer.style-scope {
+#related #items ytd-compact-autoplay-renderer.style-scope {
     position: fixed;
     clear: none ;
     width: 39%;
-    height: 175px;
+    height: 175px !important;
     top: 85px !important;
     margin-bottom: 0 ;
     padding: 5px !important;
-    overflow: hidden !important;
-    overflow-y: auto !important;
-    z-index: 5000000 ;
+overflow: hidden !important;
+/*     overflow-y: auto !important; */
+z-index: 5000000 !important;
 background-color: #333;
-border-bottom: 5px solid gray ;
+border-bottom: 5px solid tan ;
 }
+
+#related #items ytd-compact-autoplay-renderer.style-scope #contents {
+    height: 175px !important;
+/* z-index: 5000000 !important; */
+/* background-color: blue !important; */
+}
+
+
 /* NO DARK */
 html:not([dark]):not(.style-scope) #related #items ytd-compact-autoplay-renderer ,
 html:not([dark]):not(.style-scope) ytd-compact-autoplay-renderer.style-scope {
 background-color: white;
 border-bottom: 5px solid gray ;
 }
-
-
-ytd-compact-autoplay-renderer.style-scope:hover {
+#related #items ytd-compact-autoplay-renderer.style-scope #contents {
     position: fixed;
     clear: none ;
-    width: 39%;
-    height: auto !important;
-    max-height: 700px !important;
+    height: 120px !important;
+    width: 39.6%;
+    margin-left: -5px;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+/* z-index: 5000000 !important; */
 border-bottom: 5px solid red ;
+transition: ease all 0.7s !important;
+background-color: rgba(0, 0, 0, 0.72) !important;
+/* background-color: red ; */
+}
+
+#related #items ytd-compact-autoplay-renderer.style-scope:hover #contents {
+    height: auto !important;
+    height: 767px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+/* z-index: 5000000 !important; */
+border-bottom: 5px solid red ;
+transition: ease all 0.7s !important;
 background-color: black ;
 }
-/* POSITION LIST UNDER */
+
+/* NO DARK */
+html:not([dark]):not(.style-scope) #related #items ytd-compact-autoplay-renderer.style-scope #contents {
+background-color: rgba(0, 0, 0, 0.72) !important;
+border-bottom: 5px solid gray ;
+}
+
+/* (new5) POSITION LIST UNDER */
+/* #items.ytd-watch-next-secondary-results-renderer  ytd-compact-video-renderer.suggestion-tag , */
 #head + #contents ytd-compact-video-renderer {
-display: inline-block !important;
+/* display: inline-block !important; */
     float: left;
     clear: none ;
     width: 100% !important;
@@ -234,6 +448,7 @@ background-color: black !important;
     width: 99%;
     top: 22px ;
     left: 5px !important;
+border: 1px solid tomato !important;
 }
 /* (new2) NO QUEUE */
 #related #suggestions-search.playlist-or-live  {
@@ -256,14 +471,21 @@ border: 1px solid #333 !important;
     max-width: 358px !important;
     min-width: 358px !important;
     height: 108px !important;
-    margin-right: 5px ;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 background-color: black !important;
-border: 1px solid yellow;
+border: 1px solid gray;
+}
+#head + #contents ytd-compact-video-renderer:after {
+    content: "Queue" ;
+color: white ;
+background-color: black !important;
+border: 1px solid gray;
 }
 /* NO DARK */
 html:not([dark]):not(.style-scope) #head + #contents ytd-compact-video-renderer {
 background-color: white !important;
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 }
 
 #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 
@@ -361,7 +583,7 @@ background-color: white !important;
 }
 
 ytd-comments:before {
-    content: "Comments" ;
+    content: "Comments ▼" ;
     position: fixed;
     display: inline-block;
     width: 100px ;
@@ -388,7 +610,7 @@ background-color: white !important;
 
 
 ytd-comments:hover:before {
-    font-size: 20px !important;
+    font-size: 15px !important;
     text-align: center !important;
 color: gold !important;
 border-bottom: 1px solid green;
@@ -426,10 +648,11 @@ ytd-comments #contents ytd-comment-thread-renderer:before {
     width: auto;
     line-height: 15px;
     min-width: 17px;
-    right: 0px !important;
+    right: 5px !important;
     top: 65px !important;
+    padding: 1px 5px ;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 3px;
     font-size: 15px;
     z-index: 100;
 color: tomato;
@@ -443,7 +666,10 @@ opacity: 1 !important;
 ytd-comments ytd-comment-thread-renderer:hover::before {
 opacity: 1 !important;
 }
-
+/* NO DARK */
+ytd-comments #contents ytd-comment-thread-renderer:before {
+background-color: white !important;
+}
 
 /* PLAYER - CONTAINER */
 #columns.style-scope.ytd-watch-flexy {
@@ -504,7 +730,7 @@ border: 1px solid yellow;
     transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1) 0s, top 0.1s cubic-bezier(0.4, 0, 1, 1) 0s;
     background: red !important;
 } */
-.html5-endscreen {
+.html5-endscreen:not(.subscribecard-endscreen) {
     height: 75vh !important;
     top: 25px !important;
 padding-top: 20px !important;
@@ -512,7 +738,7 @@ padding-top: 20px !important;
     z-index: 34;
     background: #333 !important;
 }
-.html5-endscreen:hover {
+.html5-endscreen:not(.subscribecard-endscreen):hover {
     z-index: 50 !important;
 }
 .ytp-endscreen-content {
@@ -623,14 +849,39 @@ display: none !important;
     opacity: 1 !important;
 }
 
-/* (new2) PLAYER TRANSLATION */
+/* (new5) PLAYER TRANSLATION */
 .caption-window.ytp-caption-window-bottom {
-    width: 95%!important;
+    width: 100%!important;
     left: 0 !important;
     margin-bottom: -6px;
 /*     padding-left: 20%; */
 background: rgba(0, 0, 0, 0.44);
 }
+.caption-window.ytp-caption-window-bottom.ytp-caption-window-rollup {
+    left: 1px !important;
+    margin-left: 0 !important;
+    overflow: hidden;
+    text-align: left;
+    width: 99% !important;
+/* border: 1px solid red !important; */
+}
+
+
+#player-container:hover .caption-window.ytp-caption-window-bottom {
+/*     width: 100%!important; */
+    left: 0 !important;
+    margin-bottom: 50px !important;
+/*     padding-left: 20%; */
+/* background: blue !important; */
+}
+#player-container:hover .caption-window.ytp-caption-window-bottom:hover {
+/*     width: 100%!important; */
+/*     left: 0 !important; */
+    margin-bottom: 50px !important;
+/*     padding-left: 20%; */
+/* background: blue !important; */
+}
+
 .caption-window.ytp-caption-window-bottom  .captions-text{
     width: 100%!important;
     left: 0 !important;
@@ -651,7 +902,7 @@ background: transparent !important;
     min-height: 190px;
     top: 85px ;
     left: 60% !important;
-    padding: 0 10px ;
+    padding: 0 5px ;
     overflow: hidden;
     border-radius: 0 0 5px 5px !important;
     z-index: 5000000 !important;
@@ -676,8 +927,12 @@ background-color: white !important;
     margin-bottom: 5px;
     padding-top: 5px;
 }
+/* (new5) */
+ytd-video-secondary-info-renderer {
+    border: none;
+}
 #meta-contents  #container.ytd-video-secondary-info-renderer:before {
-    content: "Infos" ;
+    content: "Infos ▼" ;
     position: fixed;
     display: inline-block;
     width: 100px ;
@@ -702,10 +957,8 @@ html:not([dark]):not(.style-scope) #meta-contents  #container.ytd-video-secondar
 background-color: white !important;
 }
 
-
-
 #meta-contents #container.ytd-video-secondary-info-renderer:hover:before {
-    font-size: 20px !important;
+    font-size: 15px !important;
     text-align: center !important;
 color: gold !important;
 border-bottom: 1px solid green;
@@ -718,8 +971,6 @@ background-color: black ;
 html:not([dark]):not(.style-scope) #meta-contents #container.ytd-video-secondary-info-renderer:hover:before {
 background-color: white ;
 }
-
-
 .style-scope.ytd-video-secondary-info-renderer[style="--ytd-expander-collapsed-height:60px;"] {
     display: inline-block;
     width: 100% ;
@@ -742,6 +993,157 @@ background-color: white ;
 
 #vidprogress {
     display: none !important;
+}
+
+
+/* (new5) CHANNEL PAGES */
+
+
+/* (new5) CHANNEL PAGES - HOME/ ACCUEIL */
+.ytd-browse.grid.grid-6-columns {
+    min-width: 100%;
+    padding-left: 20px;
+}
+.ytd-browse.grid.grid-6-columns .ytd-two-column-browse-results-renderer  > .ytd-section-list-renderer#contents ytd-item-section-renderer  {
+    width: 86%;
+}
+.ytd-browse.grid.grid-6-columns .ytd-two-column-browse-results-renderer #scroll-container.yt-horizontal-list-renderer {
+width: 97.5% !important;
+overflow: hidden !important;
+border: 1px solid red !important;
+}
+
+.ytd-browse.grid.grid-6-columns .ytd-two-column-browse-results-renderer #items:not(.ytd-vertical-channel-section-renderer) {
+    transform: translateX(-1289px) !important;
+}
+.ytd-browse.grid.grid-6-columns .ytd-two-column-browse-results-renderer #items:not(.ytd-vertical-channel-section-renderer)[style="transform: translateX(0px);"] {
+    transform: translateX(100px) !important;
+}
+.ytd-browse.grid.grid-6-columns .ytd-two-column-browse-results-renderer #items:not(.ytd-vertical-channel-section-renderer) ytd-grid-video-renderer {
+margin-left: 15px !important;
+/* padding-right: 20px !important; */
+border: 1px solid #222 ;
+}
+/* ARROWS */
+yt-horizontal-list-renderer[at-start] #left-arrow.yt-horizontal-list-renderer .arrow.yt-horizontal-list-renderer {
+    display: none !important;
+    opacity: 0 !important;
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #right-arrow ,
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #left-arrow {
+    height: 30px !important;
+/* border: 1px dotted red !important; */
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #right-arrow {
+width: 20px !important;
+right: -6px !important;
+    top: 42px !important;
+/* border: 1px dotted red !important; */
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #left-arrow {
+    width: 20px !important;
+    right: -6px !important;
+/* border: 1px dotted red !important; */
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #right-arrow.yt-horizontal-list-renderer .arrow.yt-horizontal-list-renderer {
+/* display: none; */
+/* opacity: 0; */
+    border: 1px solid aqua;
+}
+
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer #left-arrow ytd-button-renderer {
+    border-radius: 50%;
+    border: 1px solid yellow;
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer[at-start=""] #left-arrow ytd-button-renderer  {
+    border: 1px solid blue !important;
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer[at-end=""] #left-arrow ytd-button-renderer  {
+    border: 1px solid green !important;
+}
+
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer:not([at-start=""]) .yt-horizontal-list-renderer .arrow.yt-horizontal-list-renderer {
+/* display: none; */
+/* opacity: 0; */
+    border: 1px dotted tan  !important;
+}
+.ytd-browse.grid.grid-6-columns yt-horizontal-list-renderer:not([at-end=""]) .arrow.yt-horizontal-list-renderer {
+/* display: none; */
+/* opacity: 0; */
+    border: 1px solid tan !important;
+}
+/* .ytd-browse.grid.grid-6-columns ytd-button-renderer .arrow.yt-horizontal-list-renderer[has-no-text=""] , */
+.ytd-browse.grid.grid-6-columns .arrow.yt-horizontal-list-renderer .yt-simple-endpoint .paper-ripple[style="opacity: 0;"] + #waves.paper-ripple ,
+.ytd-browse.grid.grid-6-columns .arrow.yt-horizontal-list-renderer .yt-simple-endpoint .paper-ripple[style="opacity: 0;"] {
+display: none !important;
+    opacity: 0 !important;
+visibility: hidden !important;
+}
+
+/* (new5) CHANNEL - VIDEOS TAB */
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer  #header-container.ytd-section-list-renderer {
+    width: 89%;
+    padding-left: 6%;
+    padding-right: 3%;
+}
+
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer  #header-container + #contents {
+    width: 99%;
+    min-height: 100% !important;
+/* border: 1px solid red !important; */
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer  #header-container + #contents  ytd-item-section-renderer {
+    width: 100%;
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer  #header-container + #contents  ytd-item-section-renderer #items {
+    min-width: 100% !important;
+    margin-left: -97px;
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer #items.ytd-grid-renderer:not(.ytd-vertical-channel-section-renderer) {
+width: 96% !important;
+overflow: hidden !important;
+    transform: translateX(100px) !important;
+/* border: 1px solid red !important; */
+}
+/* (new5) CHANNEL - COMMUNITY TAB */
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer ytd-backstage-items {
+    display: inline-block !important;
+    max-width: 100%;
+height: auto !important;
+/* border: 1px solid yellow !important; */
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer ytd-backstage-items .ytd-backstage-items > .ytd-item-section-renderer:not(#header):not(#continuations):not(#spinner-container) ytd-backstage-post-thread-renderer {
+display: inline-block !important;
+/*     float: left !important; */
+/*     clear: right !important; */
+    width: 45.5% !important;
+    min-height: 500px !important;
+    max-height: 500px !important;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 20px !important;
+    border-radius: 3px ;
+border: 1px solid gray !important;
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer ytd-backstage-items .ytd-backstage-items > .ytd-item-section-renderer:not(#header):not(#continuations):not(#spinner-container) ytd-backstage-post-thread-renderer  #content-attachment.ytd-backstage-post-renderer {
+    margin-top: 4px;
+    text-align: center;
+}
+.ytd-browse.grid.grid-6-columns[page-subtype="channels"] #primary.ytd-two-column-browse-results-renderer ytd-backstage-items .ytd-backstage-items > .ytd-item-section-renderer:not(#header):not(#continuations):not(#spinner-container) ytd-backstage-post-thread-renderer  #img.yt-img-shadow{
+    max-height: 400px;
+    width: auto;
+}
+/* DIRECT pages */
+ytd-two-column-browse-results-renderer.ytd-browse.grid.grid-6-columns[page-subtype="channels" ] #primary.ytd-two-column-browse-results-renderer ytd-section-list-renderer.ytd-two-column-browse-results-renderer[page-subtype="channels"]  #contents.ytd-section-list-renderer ytd-item-section-renderer.ytd-section-list-renderer #contents.ytd-item-section-renderer {
+width: 99.5% !important;
+overflow: hidden !important;
+/* border: 1px solid yellow !important; */
+}
+ytd-two-column-browse-results-renderer.ytd-browse.grid.grid-6-columns[page-subtype="channels" ] #primary.ytd-two-column-browse-results-renderer ytd-section-list-renderer.ytd-two-column-browse-results-renderer[page-subtype="channels"]  #contents.ytd-section-list-renderer ytd-item-section-renderer.ytd-section-list-renderer #contents.ytd-item-section-renderer  ytd-shelf-renderer #contents.ytd-shelf-renderer yt-horizontal-list-renderer #scroll-container.yt-horizontal-list-renderer {
+    width: 98.1% !important;
+}
+ytd-two-column-browse-results-renderer.ytd-browse.grid.grid-6-columns[page-subtype="channels" ] #primary.ytd-two-column-browse-results-renderer ytd-section-list-renderer.ytd-two-column-browse-results-renderer[page-subtype="channels"]  #contents.ytd-section-list-renderer ytd-item-section-renderer.ytd-section-list-renderer #contents.ytd-item-section-renderer  ytd-shelf-renderer #contents.ytd-shelf-renderer yt-horizontal-list-renderer #scroll-container.yt-horizontal-list-renderer #items.yt-horizontal-list-renderer[style="transform: translateX(0px);"] {
+    transform: translateX(87px) !important;
 }
 
 /* COLOR */

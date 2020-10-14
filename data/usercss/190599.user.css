@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `SubsPlease, Dark.`
-@version        20201013.6.4
+@version        20201014.9.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,14 +30,18 @@ body, html,
     background: #363639;
 }
 
-.site-header
+.site-header,
+
+.releases-header form input
 {
     background: #2e2e2f !important;
 }
 
 .badge,
 
-.anime0:hover, .anime1:hover
+.anime0:hover, .anime1:hover,
+
+.col-6
 {
     background: #12121354 !important;
 }
@@ -71,7 +75,9 @@ body, h1, h2, h3, h4, h5, h6,
 
 .toggle-menu-wrapper a, .toggle-menu-wrapper a:visited,
 
-.search
+.search,
+
+.releases-header form input
 {
   color: #ccc !important;
 }

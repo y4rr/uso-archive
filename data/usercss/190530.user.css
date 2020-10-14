@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ameer Kort
 @description    `you must be in youtube's dark mode to make this style work`
-@version        20201010.13.37
+@version        20201014.8.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -47,7 +47,7 @@ ytd-masthead #container:hover {
 	border-radius: 5px;
 }
 ytd-thumbnail {
-	background:#242424;
+	background:none;
 }
 #thumbnail {
 	background:#181818;
@@ -102,8 +102,13 @@ ytd-thumbnail.ytd-rich-grid-media {
 	background:#595959;
 	border-radius:10px;
 }
-#queue-button.ytd-compact-video-renderer ytd-button-renderer.ytd-compact-video-renderer, ytd-menu-renderer.ytd-compact-video-renderer {
-	margin-top:10px
+.details.ytd-compact-radio-renderer {
+	padding:10px 0 10px 10px;
+	background:#595959;
+	border-radius:10px;
+}
+.ytd-menu-renderer[button-renderer].ytd-menu-renderer yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer yt-icon.ytd-menu-renderer {
+	margin-top: 10px
 }
 .title.ytd-mini-guide-entry-renderer {
 	font-size: 10px;
@@ -128,8 +133,8 @@ ytd-mini-guide-renderer div ytd-mini-guide-entry-renderer {
 	z-index: 99999999 !important;
 	box-shadow: 0 0 4px rgba(255, 255, 255, .3)
 }
-ytd-thumbnail-overlay-now-playing-renderer.ytd-thumbnail span {
-	background : white;
+ytd-thumbnail-overlay-now-playing-renderer.ytd-thumbnail span{
+		background : white;
 	color: black;
 	padding: 5px 10px;
 	border-radius: 200px
@@ -200,4 +205,59 @@ paper-dialog {
 .buttons.yt-confirm-dialog-renderer {
 	padding:8px 12px;
 }
+ytd-playlist-panel-video-renderer[watch-color-update_] #index.ytd-playlist-panel-video-renderer {
+	background: #fff;
+	color: #181818;
+	margin: 0 4px;
+	width: calc(100% - 8px);
+	height: 100%;
+	border-radius: 5px
+}
+#thumbnail-container.ytd-playlist-panel-video-renderer > ytd-thumbnail.ytd-playlist-panel-video-renderer {
+	background: none;
+}
+img.yt-img-shadow {
+	border-radius: 5px !important;
+}
+#thumbnail-container ytd-thumbnail #thumbnail {
+	border-radius: 5px !important
+}
+#container ytd-playlist-panel-video-renderer {
+	width: calc(100% - 20px);
+	border-radius: 10px;
+	margin: 2px 5px;
+	transition: all 200ms ease-in;
+}
+ytd-playlist-panel-renderer[js-panel-height_] #container.ytd-playlist-panel-renderer {
+	border-radius: 10px;
+	overflow: hidden;
+}
+ytd-watch-flexy[flexy_][js-panel-height_] #chat.ytd-watch-flexy:not([collapsed]).ytd-watch-flexy, ytd-watch-flexy[flexy_][js-panel-height_] #chat-container.ytd-watch-flexy:not([chat-collapsed]).ytd-watch-flexy {
+	border-radius: 10px;
+	overflow: hidden;
+}
+ytd-live-chat-frame {
+	border-radius: 10px;
+	overflow: hidden;
+}
+#meta.ytd-playlist-panel-video-renderer {
+	padding: 2px 5px;
+	background: #303030;
+	margin: 0 5px;
+	border-radius: 10px;
+}
+ytd-compact-video-renderer:not([watch-feed-big-thumbs]) ytd-thumbnail.ytd-compact-video-renderer {
+	background:none
+}
+ytd-thumbnail #thumbnail.ytd-thumbnail {
+	border-radius: 10px !important
+}
+
+ytd-thumbnail-overlay-now-playing-renderer.ytd-thumbnail span{
+	background : white;
+	color: black;
+	padding: 5px 10px;
+	border-radius: 200px
+}
+
 }

@@ -1,0 +1,822 @@
+/* ==UserStyle==
+@name           Profile Layouts
+@namespace      USO Archive
+@author         FlameCaro
+@description    `As a bonus or example for the themes I've done :)`
+@version        20201014.7.57
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url("https://www.horsereality.com/user/24506/FlameCaro") {
+.bluebar_container, .footer {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
+    background-size: cover !important;
+    border-bottom: 2px solid !important;
+    border-top: 2px solid !important;
+    border-color: #D08484 !important;
+}
+.footer.user .botleft img, .logo.user img, .container_12 .grid_4 img {
+	filter: drop-shadow(0 0 5px #a62121) !important;
+}
+body.background {
+    background: #D08484 url("https://i.imgur.com/Zvee24m.png") no-repeat fixed  !important;
+    background-size: cover !important;
+    background-position-y: 5% !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #D08484 !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #873a60) !important;
+}
+.leftnav {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg");
+    background-size: cover !important;
+    border-radius: 0 0 85px 85px !important;
+    border-bottom-width: 2px !important;
+    border-right-width: 2px !important;
+    border-left-width: 2px !important;
+    border-color: #D08484 !important;
+    border-style: ridge !important;
+    box-shadow: none !important;
+    margin-left: -4px !important;
+	width: 150px !important;
+    margin-top: -1px !important;
+    position: fixed !important;
+  }
+.container {
+ 	background-color: #eaf0f200 !important;
+}
+.center {
+    background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
+	background-size: cover !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu, .profile_account {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
+    border: 2px solid !important;
+    border-color: #D08484 !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu li:hover, #bbmenu.user ul.slidedown li:hover, .profile_menu ul li:hover {
+ 	background: #0000001f !important;
+    border-radius: 3px !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava, .avatar {
+    border: none !important;
+}
+.profile_menu, table thead tr.sub {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg");
+	border-top: 1px solid #D08484;
+	border-bottom: 1px solid #D08484;
+    color: #9F6464;
+}
+.statusbar {
+ 	background-color: #0000001f !important;
+    border: 2px solid #8E254D80 !important;
+}
+.xpvalue {
+ 	background: -webkit-linear-gradient(top,#e9ddd2 0%,#a89789 100%) !important;   
+}
+table, table thead tr.top {
+    background: #fff0 !important;
+	border: none !important;
+}
+table tr.odd {
+    background-color: #a89789 !important;
+    border-bottom: 1px solid #D08484 !important;
+    border-top: 1px solid #D08484 !important;
+}
+table tr.even {
+    background-color: #e9ddd2 !important;
+}
+p a:active, p a:link, p a:visited{
+    color: #131415 !important;
+}
+.profile_menu ul li, .profile_account h2, p a:hover {
+    color: #9F6464 !important;
+}
+ul li a, ul li a:active, ul li a:link, ul li a:visited, .footer h6, .footer ul li a:active, .footer ul li a:visited, .footer ul li a:link, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p {
+    color: #D08484 !important;
+}
+.subtitle {
+    color: #873A60 !important;
+}
+ul li a:hover, .footer h6:hover,.footer ul li a:hover, .gamestats a:hover, .gamestats:hover, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p:hover, .leftnav > ul > li > ul > li a:hover {
+	color: #d5b65f !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/24748/Jacky_BR") {
+.bluebar_container, .footer, .profile_menu, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+    background: #191919 !important;
+    border: 2px solid #bfbfbf !important;
+}
+#bbmenu.user ul.slidedown li:hover, .profile_menu ul li:hover {
+    background-color:#ffffff2e !important;
+}
+.center {
+    background-color: #6c6c6c !important;
+}
+body.background {
+    background: #4a7a9b url("https://i.imgur.com/Uiu2UEm.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #bfbfbf !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.leftnav {
+    background: url("https://i.imgur.com/gxm9MW1.png") !important;
+	background-size: cover !important;
+	background-position: center !important;
+	border-radius: 0 0 85px 85px !important;
+	border: 2px solid #bfbfbf !important;
+	border-top: none !important;
+	margin-left: -4px !important;
+    position: fixed !important;
+}
+.profile_account, tbody {
+    background-color: #4f4f4f !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+    color: #787878 !important;
+}
+.profile_account h2, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, .footer h6, .profile_menu ul li, .profile_username h1, .profile_username h2, h1,ul li a:active, ul li a:link, ul li a:visited, p, .milestone_text h2 {
+    color: #bfbfbf !important;
+}
+.leftnav > ul > li > ul > li a:hover, .gamestats a:hover, ul li a:hover, p a:active, p a:link, p a:visited {
+    color: #dbdbdb !important;
+}
+p a:hover {
+    color: #bfbfbf !important;
+}
+.statusbar {
+    background-color: #4f4f4f7d !important;
+	border: 2px solid #191919 !important;
+}
+.xpvalue {
+    background: -webkit-linear-gradient(top,#6C4545 0%,#431B1B 100%) !important;
+}
+table thead tr.top, .top, table, table thead tr.sub {
+    background-color: #191919 !important;
+}
+table tr.even {
+    background-color: #4f4f4f !important;
+}
+table tr.odd {
+    background-color: #393939 !important;
+}
+
+/*Invisable*/
+.container {
+    background-color: #fff0 !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none !important;
+}
+.bluebar_container, .profile_menu {
+    border-right: none !important;
+    border-left: none !important;
+}
+
+/*Fonts*/
+@font-face {
+  	font-family: 'Aladin';
+  	font-style: normal;
+  	font-weight: 400;
+ 	 font-display: swap;
+  	src: local('Aladin Regular'), local('Aladin-Regular'), url(https://fonts.gstatic.com/s/aladin/v9/ZgNSjPJFPrvJV5fF7i35.woff2) format('woff2');
+  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.subtitle {
+  	font-family: 'Aladin';
+    color: #bfbfbf !important;
+}
+.profile_menu ul li {
+    font-size: 18px !important;
+    font-family: 'Aladin';
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/19104/Yellow08") {
+.bluebar_container, .footer {
+	background: url("https://i.imgur.com/8QLb3hB.png") !important;
+	background-position: center !important;
+	background-size: cover !important;	
+    border-bottom: 2px solid #aea296 !important;
+    border-top: 2px solid #aea296 !important;
+}
+.profile_menu {
+    background: url("https://i.imgur.com/3mcwIrP.png") !important;
+    border-color: #333021 !important;
+}
+.profile_menu ul li:hover {
+    background: url("https://i.imgur.com/3mcwIrP.png") !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu {
+    background-color: #aea298 !important;
+}
+#bbmenu.user ul.slidedown li:hover {
+    background-color: #0000004a !important;
+}
+.center {
+    background-color: #d3cbc2 !important;
+}
+body.background {
+    background: #4a7a9b url("https://i.imgur.com/8QLb3hB.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+    background-position: top !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #382e25 !important;
+    padding: 35px !important;
+}
+.leftnav {
+	background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
+    background-position: right !important;
+    background-size: cover !important;
+    border-radius: 0 0 85px 85px !important;
+    margin-left: -4px !important;
+	border: 2px solid #333021 !important;
+	border-top: none !important;
+    position: fixed !important;
+}
+.profile_account, tbody {
+    background-color: #aea298 !important;
+}
+.subtitle, .profile_account h2 {
+    color: #382e25 !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, table tr td a:active, table tr td a:link, table tr td a:visited {
+    color: #695e47 !important;
+}
+.gamestats a:hover, table tr td a:hover {
+    color: #e2dcd5 !important;
+}
+p {
+    color: #000 !important;
+}
+.profile_menu ul li {
+    color: #fff !important;
+}
+.milestone_text h2 {
+    color: #183448 !important;
+}
+table thead tr.top, .top, table, table thead tr.sub {
+    background-color: #7b695b !important;
+}
+table tr.even {
+    background-color: #aea298 !important;
+}
+table tr.odd {
+    background-color: #9a897b !important;
+}
+table {
+    border-color: #7b695b !important;
+}
+.avatar {   
+    border: none;
+    margin-left: 24px;
+}
+
+/*INVISABLE*/
+.container, .advertising {
+    background-color: #fff0;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none;
+}
+
+/*Font changes*/
+@font-face { /*latin*/
+  	font-family: 'Indie Flower';
+  	font-style: normal;
+  	font-weight: 400;
+  	font-display: swap;
+  	src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.profile_menu ul li, .subtitle, .profile_account h2 {
+    font-family: Indie Flower !important;
+    font-size: 18px !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/36491/Joy_sPferdewelt") {
+body.background {
+    background: #4a7a9b url("https://i.imgur.com/bF1tuLJ.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+}
+.bluebar_container, .footer, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+    background: url("https://i.imgur.com/zUem4DM.jpg") !important;
+    background-size: cover !important;
+    border: 2px ridge #e9de82 !important;
+}
+.center {
+    background-color: #ebe3e3 !important;
+    border: 2px ridge #e9de82 !important;
+    margin-right: -1px !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #ebe3e3 !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.leftnav {
+    background: url("https://i.imgur.com/ugDHUvE.png") !important;
+	background-size: cover !important;
+	background-position: left !important;
+	border-radius: 0 0 85px 85px !important;
+    border: 3px ridge #e9de82 !important;
+	border-top: none !important;
+	margin-left: -6px !important;
+    position: fixed !important;
+}
+ul li a:active, ul li a:link, ul li a:visited, .profile_menu ul li, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, .profile_username h1, .profile_username h2, .footer h6 {
+    color: #fff !important;
+}
+.subtitle, p a:active, p a:link, p a:visited, ul li a:hover, .profile_account h2 {
+    color: #300000 !important;
+}
+p, .leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+    color: #000 !important;
+}
+p a:hover, .leftnav > ul > li > ul > li a:hover {
+	color: #c7aeae !important;
+}
+.milestone_text h2 {
+    color: #183448 !important;
+}
+.statusbar {
+    border-color: #693550 !important;
+    background-color: #69355085 !important;
+}
+.xpvalue {
+	 background: -webkit-linear-gradient(top,#a26283 0%,#693550 100%) !important;
+}
+table, table thead tr.top, table thead tr.sub {
+    background-color: #693550 !important;
+}
+table {
+    border-color: #693550 !important;
+}
+table tr.even {
+    background-color: #dac8c8 !important;
+}
+table tr.odd {
+    background-color: #b48f8f !important;
+}
+.profile_account, tbody {
+    background-color: #dac8c8 !important;
+}
+.profile_menu {
+    background: url("https://i.imgur.com/zUem4DM.jpg") !important;
+    background-size: cover !important;
+    border-color: #e9de82 !important;
+}
+.profile_menu ul li:hover, #bbmenu.user ul.slidedown li ul.slidedownmenu li:hover, #bbmenu.user ul.slidedown li:hover {
+    background-color: #955a7785 !important;
+}
+.avatar {
+    border: 4px ridge #e9de82 !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none !important;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, button, input {
+	font-style: italic !important;
+}
+.container {
+    background-color: #fff0 !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/482/Lubaya") {
+body.background {
+    background: #4a7a9b url("https://i.imgur.com/SkK5hQZ.png") no-repeat fixed 0 0/100% auto!important;
+    background-size: cover !important;
+}
+.bluebar_container, .footer, .profile_menu {
+    background: #000 url("https://i.imgur.com/3mcwIrP.png") !important;
+	background-blend-mode: hard-light !important;
+    background-position: top !important;
+    border: 2px ridge #879d78 !important;
+}
+.center {
+    background-color: #cbd2b7 !important;
+    border: 2px ridge #879d78 !important;
+    margin-right: -1px !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #fff !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.leftnav {
+    background: #000 url("https://i.imgur.com/UJ5wpiF.jpg") !important;
+	background-blend-mode: hard-light !important;
+    background-position: right !important;
+    border: 2px ridge #879d78 !important;
+    border-top: none !important;
+    border-radius: 0 0 85px 85px !important;
+    margin-left: -6px !important;
+    position: fixed !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu {
+    background:  url("https://i.imgur.com/3mcwIrP.png") !important;
+    background-position: left !important;
+    border: 2px ridge #879d78 !important;
+}
+.subtitle {
+    color: #c2e1f8 !important;
+}
+.profile_account h2, table tr td a:active, table tr td a:link, table tr td a:visited {
+    color: #3a6355 !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, p a:active, p a:link, p a:visited {
+    color: #f2fafe !important;
+}
+.leftnav > ul > li > ul > li a:hover, table tr td a:hover, p a:hover {
+	color: #5d8a7b !important;
+}
+
+table, table thead tr.top, table thead tr.sub {
+	background-color: #a3ae86 !important;
+}
+table {
+    border-color: #a3ae86 !important;
+}
+table tr.even, .profile_account, tbody {
+    background-color: #f4f5e3 !important;
+}
+table tr.odd {
+    background-color: #dfe1c6 !important;
+}
+
+.statusbar {
+    border: 2px solid #a3ae86 !important;
+    background-color: #f6f6f685 !important;
+}
+.xpvalue {
+    background: -webkit-linear-gradient(top,#f2fafe 0%,#c2e1f8 100%) !important;
+}
+.profile_account {
+    border-radius: 25px !important;
+    background-color: #f4f5e3 !important;
+}
+.avatar {
+    border: 4px ridge #879d78 !important;
+}
+.container {
+    background-color: #fff0 !important;
+}
+.bluebar_container, .profile_menu {
+	border-right: none !important;
+    border-left: none !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none !important;
+}
+.profile_menu ul li:hover, #bbmenu.user ul.slidedown li:hover {
+    background-color: #0009 !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/63539/Lemonade") {
+.bluebar_container, .footer {
+    background-color: #bf5f6b !important;
+}
+.background {
+    background: #4a7a9b url("https://i.imgur.com/ih4qjvB.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+}
+.container, .center {
+    background-color: #f7d6e3 !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #fff !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.leftnav {
+    background: #bf5f6b !important;
+    margin-left: 0px !important;
+    width: 150px !important;
+    margin-top: -1px !important;
+    border-radius: 0 0 85px 85px !important;
+    box-shadow: none !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
+    background-color: #a94551 !important;
+}
+.subtitle {
+    color: #ffefef !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, p a:active, p a:link, p a:visited, ul li a:hover {
+    color: #fa8b99 !important;
+}
+.leftnav > ul > li > ul > li a:hover, p a:hover {
+    color: #8f3f49 !important;
+}
+table, table thead tr.top, table thead tr.sub {
+    background-color: #ff8e9c !important;
+}
+table {
+    border-color: #ff8e9c !important;
+}
+table tr.even {
+    background-color: #fff2f7 !important;
+}
+table tr.odd {
+    background-color: #f7d6e3 !important;
+}
+.statusbar {
+    background-color: #f6f6f687 !important;
+    border: 2px solid #f7d6e3 !important;
+}
+.xpvalue {
+    background: -webkit-linear-gradient(top,#ff8e9c 0%,#bf5f6b 100%) !important;
+}
+.profile_account, tbody {
+    background-color: #fff2f7 !important;
+}
+.profile_menu ul li:hover {
+    background-color: #a0254b !important;
+}
+.profile_menu {
+    background-color: #ff8e9c !important;
+    border-top: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border-color: #bf5f6b !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/32580/Blumen") {
+.footer, .profile_menu, .bluebar_container {
+    background-color: #bf8484 !important;
+    border-top: 2px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+}
+body.background {
+    background: #f4d1ca url("https://cdn.discordapp.com/attachments/715953066704371835/723877415100874802/Bildschirmfoto_2020-06-20_um_14.19.08.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #000 !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #858383) !important;
+}
+.leftnav{
+    background: url("https://i.imgur.com/A0X0ACT.png") !important;
+    border-radius: 0 0 85px 85px !important;
+    background-size: cover !important;
+    margin-left: -4px !important;
+    border: 2px ridge #000 !important;
+    border-top: none !important;
+}
+.center {
+    background-color: #ffffff70 !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
+    background-color: #a76868 !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, table tr td a:active, table tr td a:link, table tr td a:visited {
+    color: #b26e6e !important;
+}
+.leftnav > ul > li > ul > li a:hover, ul li a:hover, table tr td a:hover { 
+    color: #6f3b4c !important;
+}
+.statusbar {
+    background-color: #ffffff70 !important;
+    border: 2px solid #000 !important;
+}
+.xpvalue {
+    background: -webkit-linear-gradient(top,#d29797 0%,#945f70 100%) !important;
+}
+table, table thead tr.top, table thead tr.sub {
+    background-color: #bf8484 !important;
+}
+table {
+    border-color: #bf8484 !important;
+}
+table tr.even {
+    background-color: #fceae7 !important;
+}
+table tr.odd {
+    background-color: #fed9d2 !important;
+}
+.profile_account, tbody {
+    background: url("https://i.imgur.com/A0X0ACT.png") !important;
+}
+.profile_menu ul li:hover {
+    background-color: #a76868 !important;
+}
+.container {
+    background-color: #fff0 !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none !important;
+}
+.avatar{
+    margin-left: 24px !important;
+}
+@font-face { /*latin*/
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.subtitle, .profile_username h1, .horse_left h1 {
+    font-family: Indie Flower !important;
+}
+.horse_left h1 {
+    font-size: 30px !important;
+}
+.profile_username h1 {
+	filter: drop-shadow(0 0 5px #000) !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/12501/Valentine") {
+.bluebar_container, .header-menu, .footer {
+    background-color: #081b28 !important;
+}
+.background {
+    background: #4a7a9b url("https://i.imgur.com/0hcSG5y.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #fff !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.leftnav {
+    background-color: #a0254b !important;
+    border-radius: 0 0 85px 85px !important;
+    box-shadow: none !important;
+}
+.center {
+    background-color: #FFE0EE !important;
+}
+table, table thead tr.sub, table thead tr.top {
+    background-color: #42011c !important;
+}
+table {
+    border-color: #42011c !important;
+}
+table tr.even {
+    background-color: #FECAE2 !important;
+}
+table tr.odd {
+    background-color: #FFE0EE !important;
+}
+.subtitle {
+    color: #fff !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+    color: #fad5d5 !important;
+}
+.leftnav > ul > li > ul > li a:hover {
+    color: #d4b5b5 !important;
+}
+p a:active, p a:link, p a:visited {
+    color: #ff7070 !important;
+}
+p a:hover {
+    color: #570C0C !important;
+}
+.profile_account, tbody {
+    background-color: #FECAE2 !important;
+}
+.profile_menu {
+    background-color: #7f0639 !important;
+    border-top: 2px solid #a0254b !important;
+    border-bottom: 2px solid #a0254b !important;
+}
+.profile_menu ul li:hover {
+    background-color: #a0254b !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+    border: none !important;
+}
+.container {
+    background-color: #fff0 !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/40794/Blood_Moon") {
+.bluebar_container, .footer {
+    background-color: #000000 !important;
+}
+body.background {
+    background: #4a7a9b url(https://i.imgur.com/SfHHToS.png) no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+#bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
+    background-color: #171717 !important;
+}
+.container, .leftnav {
+    background: #656565 !important;  
+    border: none !important;
+}
+.center {
+    background-color: #7b7b7b !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #000 !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #000) !important;
+}
+table, table thead tr {
+    background-color: #232323 !important;
+}
+table {
+    border-color: #232323 !important;
+}
+table tr.even {
+    background-color: #939393 !important;
+}
+table tr.odd {
+    background-color: #666666 !important;
+}
+.statusbar {
+    background-color: #00000040 !important;
+    border: 2px solid #000000 !important;
+    color: #fff !important; 
+}
+.xpvalue {
+    background: -webkit-linear-gradient(top,#902121 0%,#3d0000 100%) !important;
+}
+.subtitle, .profile_account h2 {
+    color: #000 !important;   
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+    color: #232323 !important;
+}
+p a:active, p a:link, p a:visited {
+    color: #fff !important;
+}
+.leftnav > ul > li > ul > li a:hover, .profile_menu ul li, ul li a:hover {
+    color: #7b7b7b !important;
+}
+p a:hover {
+    color: #4b4a4a !important;
+}
+.profile_account, tbody, .tabdetails {
+    background-color: #939393 !important;
+}
+.profile_account, .tabdetails {
+    border: 1px solid #232323 !important;
+}
+.profile_menu {
+    background-color: #3b3b3b !important;
+    border-top: 2px solid #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+.profile_menu ul li:hover {
+    background-color: #222222 !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava, .mavatar, .savatar {
+    border: none !important;   
+}
+html body#user.background.europe div.container div.container_12.center div.profile_left div.profile_account h2 i.fa.fa-user {
+    margin-left: 77px !important;
+}
+.fa-home::before {
+    margin-left: 86.5px !important;
+}
+.fa-graduation-cap::before {
+    margin-left: 88.25px !important;
+}
+@font-face { /*latin*/
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Creepster'), local('Creepster-Regular'), url(https://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4Rcn35.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.subtitle {
+    font-family: 'Creepster' !important;
+}
+.profile_username h1{
+    font-family: 'Creepster' !important;
+    font-weight: 400 !important;
+}
+}

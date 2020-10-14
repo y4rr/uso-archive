@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           虎牙直播 huya 黑色模式 夜晚模式 Dark Theme 2020.10.14
+@namespace      USO Archive
+@author         liceries
+@description    `虎牙直播 huya 黑色模式 夜晚模式 Dark Theme`
+@version        20201014.5.14
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("huya.com") {
+body > div.mod-sidebar,div[class="mod-news-section clearfix"] { display: none !important }
+.sidebar-min .main-wrap { padding-left: 0px; }
+/*.room-core { left: 50%; transform: translateX(-50%); width: 95%; height: 95%; }*/
+div[class="main-room"] { min-width: 50px !important; }
+.diy-toutu { background-size: contain; min-width: 800px; }
+.diy-toutu{background-color: #0000000f;}
+
+.room-union .union-title,.room-moments .moments-nav .moments-nav-item,.room-youlike .youlike-title,.hy-header-style-normal .hy-nav-title,.hy-header-style-normal .nav-user-title,.hy-header-style-normal .hy-nav-link,.room-hd .host-info .host-detail,.room-hd .host-video,.room-hd a.host-spl,.diy-activity-icon .diy-activity-icon-box span,.player-chest .box-icon-word,.more-activity-icon .more-activity-icon-box .icon-span,.chat-room__bd,.moment-item .moment-comment *,.moment-item .moment-interacts *,#player-gift-tip .txt h3,#player-gift-tip .txt .eff,.room-profileNotice div span,.nav-expand-follow .subscribe-hd .subscribe-tit,.nav-expand-list-more,.duya-header,.tt-user-card .u-assets,.tt-user-card .u-task .task-mod .mod-tit,.room-union .union-name,.mod-game-type .game-classify h3 .classify-title,.mod-game-type .game-classify .game-classify-fastLink .link-item,.live-box .box-hd .more-list li a,.nav-expand-game dd a,.mod-list .box-hd .filter dd a,.hy-header-match-list li .match-item,.hy-header-match-preview-name,.hy-header-video-panel .video-item,.search-suggest .search-title,.search-suggest,.fans-rank-box .fansScore,.room-hd .host-control .share-entrance,.illegal-report,.cate-nav--3mpGt9Jpr_LIsYfxzXv0uV,.laypage_main a,.room-moments .moments-more[data-state=goToBlog] .icon-goToBlog, .room-moments .moments-more[data-state=noMore] .icon-noMore,.main-room .box-crumb,.main-room .box-crumb a{color:#ddd }
+.room-hd .host-name,.week-rank__hd,.week-rank__bd .week-rank-name,.vipSeat .vipSeat-list .seat-item .peo-name,.youlike-item .nick, .youlike-item .title,.moment-item .moment-cnt,#player-gift-tip .bottom,#player-gift-tip .btns li,.fansBadge-hig,.week-rank__bd .gift-num, .week-rank__bd .gold-num, .week-rank__bd .vb-num,.nav-expand-follow .subscribe-bd .video-link,.nav-expand-history .history-bd li a,.g-gameCard-fullName,.game-live-item .title,.mod-actlist .mod-actlist__main .mod-actlist__hd .title,.live-box_funny .box-hd .title span,.live-box .box-hd .title a,.nav-expand-game dt,.hy-header-match-sec-hd,.mod-list .box-hd .title,.host-item .nick,.star-box .star-list .star-name,.tv-icon .tv-icon-word{color:#eee}
+.room-hd .host-info .host-title,.tt-user-card .u-info .nick,.chat-room__list .msg-timed span,.hy-header-video-panel .video-title,.mod-list .box-hd .title a{color:#fff }
+
+.room-profileNotice,.youlike-item .amount,.game-live-item .txt .num,.game-live-item .txt .game-type,.illegal-report,.room-hd .host-control .share-entrance,.room-wrap{background-color: #0000;}
+.main-room,.mod-index-wrap,.huya-footer,body,.room-player-wrap .room-player-main .room-player-gift-placeholder,.chat-room__bd .chat-room__scroll .scroll_move,.match_body_wrap{background-color: #000 !important}
+.room-sidebar,.week-rank__bd li:hover,.vipSeat .vipSeat-list .seat-item:hover,#player-gift-tip .btns li,body.mode-page-theater .room-core,.nav-expand-follow .subscribe-bd .video-link:hover,.nav-expand-history .history-bd li:hover,.search-suggest .search-item.current, .search-suggest .search-item:hover,.star-box .star-list .star-item:hover,.hy-header-video-panel .video-item:hover,.hy-header-match-list li .match-item:hover{background-color: #111;}
+.hy-header-style-normal .duya-header-wrap,.more-attivity-panel,.box-noble-level-1,.box-noble-level-2,.box-noble-level-3,.box-noble-level-4,.box-noble-level-5,.box-noble-level-6,.box-noble-level-6.legendary,.box-noble-level-7,.box-noble-level-8,.week-rank__btn.active,.week-rank__bd .week-rank__unit,.player-face .player-face-arrow,.room-moments .moments-cnt,.room-moments .moments-content,.room-union.isDiamond .union-box,#player-gift-tip,#player-gift-tip .bottom,.fansBadge-box,.room-panel,.fansBadgeAnchor-box,.nav-expand-list,.room-union .union-box,.game-live-item,.search-suggest,.chat-room__bd .chat-room__scroll .clearBtn, .chat-room__bd .chat-room__scroll .lockBtn,.msg-noble.noble-recharge-level-1,.msg-noble.noble-recharge-level-2,.msg-noble.noble-recharge-level-3,.msg-noble.noble-recharge-level-4,.msg-noble.noble-recharge-level-5,.msg-noble.noble-recharge-level-6,.msg-noble.noble-recharge-level-7,.host-item,.star-box .star-content{background: #222;}
+.room-hd,.player-gift-wrap,.chat-room__ft,.room-profileNotice div,.week-rank__btn,.moment-item .moment-comment,.room-youlike .youlike-box,.nav-expand-list-more,.g-gameCard-item,.live-box .box-hd .more-list li,.mod-list .box-hd .filter dd .tag-layer,.msg-of-king.lv-5,.msg-of-king.lv-4,.msg-of-king.lv-3,.msg-of-king.lv-2,.msg-of-king.lv-1,.msg-of-king.lv-6,.msg-of-king.lv-7,.msg-of-king.lv-8,.chat-room__list .msg-timed span,.laypageskin_default a{background-color: #333;}
+
+div[class|="helper-nav--1yz7uIycIDu_3rI5oz1pJr"],div[id="J_liveListNav"] div dl dd span{background: #222 !important;}
+.hy-nav-item-on .hy-nav-link, .hy-nav-link:hover{background: #AA580C !important;}
+.chat-room__bd .load-more-msg {	background-color: rgba(78, 57, 14, 0.7);}
+.hy-header-style-normal .duya-header-search:hover input, .hy-header-style-normal .duya-header-search input:focus,.chat-room__input .msg-input textarea:hover input,.chat-room__input .msg-input textarea:focus,.mod-search-con .search-bar-wrap input:focus, .mod-search-con .search-bar-wrap input:hover{background-color: #00000080; color:#eee}
+.hy-header-style-normal .duya-header-search input,.chat-room__input .msg-input textarea,.mod-search-con .search-bar-wrap input,.laypage_main button, .laypage_main input{background-color: #11111180; color:#eee}
+
+.room-sidebar,.room-profileNotice,#tipsOrchat,.chat-room{    border: 1px solid #000;}
+
+.player-face{opacity: 0 !important;}
+.player-face:hover{opacity: 1 !important;}
+
+.moment-item .author-nick{    color: #6791d4;}
+span[style="color: #7c5d52;"],.msg-noble.noble-recharge-level-1 .nick, .msg-noble.noble-recharge-level-1 .noble-desc{color:#d2896f !important}
+span[style="color: #4a7153;"]{color:#62ce7b !important}
+span[style="color: #8000bb;"]{color:#b250df !important}
+
+p[class="msg-nobleSpeak-decorationPrefix"] span,p[class="msg-normal-decorationPrefix"] span{opacity:0.94 !important}
+.room-backToTop{opacity:0.5 !important}
+}

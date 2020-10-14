@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Coordinates
 @description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.`
-@version        20201013.7.46
+@version        20201014.1.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,7 +14,7 @@
 	--primary-bg-color: #111311;
 	--secondary-bg-color: #222522;
 	--tertiary-bg-color: #333633;
-	--quaternary-bg-color: #444744;
+	--quaternary-bg-color: #444B44;
 	--primary-text-color: #EEFFEE;
 	--secondary-text-color: #DDEFDD;
 	--tertiary-text-color: #BBCCBB;
@@ -47,6 +47,12 @@ a:hover, a:focus, a:active {
 }
 table th, table td {
 	border-bottom-color: var(--quaternary-bg-color);
+}
+button:focus {
+	background-color: var(--accent-color);
+}
+button:active {
+	bottom: auto;
 }
 
 /* HEADER */
@@ -89,11 +95,43 @@ table th, table td {
 }
 .post-content-wrapper-single .entry-header-wrapper {
 	border-bottom-color: var(--quaternary-bg-color);
-	border-radius: var(--border-radius);
 }
 
 /* BODY: Anime entry listings */
-
+.releases-header {
+	padding: 0px 10px;
+	margin-bottom: 1rem;
+}
+.releases-header h2 {
+	padding: 0px;
+}
+.search-box {
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+input.search-box-input,
+input.search-box-input:focus {
+	background-color: var(--quaternary-bg-color);
+	color: var(--secondary-text-color);
+	border-radius: var(--border-radius) 0px 0px var(--border-radius);
+	border: none;
+	font-size: 14px;
+	padding: 0.25rem 0.625rem;
+}
+input.search-box-input:focus {
+	filter: brightness(1.2);
+}
+.search-button {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+	font-size: 14px;
+	color: var(--primary-text-color);
+}
+.search-button:hover {
+	background-color: var(--accent-color);
+	filter: brightness(1.2);
+}
 .badge {
 	background: var(--tertiary-bg-color);
 }
@@ -105,7 +143,8 @@ table th, table td {
 }
 .time-new-badge {
 	background-color: var(--accent-color);
-	color: var(--secondary-bg-color);
+	border-radius: var(--border-radius);
+	color: var(--primary-text-color);
 }
 
 /* BODY: Sidebar */ 

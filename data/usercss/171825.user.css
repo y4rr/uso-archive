@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MouShu
 @description    `哔哩哔哩美化脚本⏩<b>因为B站主页更新，请大家将自定义选项里的分区屏蔽中的block改成flex（如果仍未block的话），否则页面会很奇怪！想要屏蔽的话依旧可以写none</b>⏩背景图片三个覆盖模式：cover：图片完全覆盖背景，图片和背景长宽比不能差太大；contain：尽量拉伸图片使得图片能完全看见，不会完全覆盖背景；XX%：百分比缩放图片。========主要功能：✅改变了网页版B站的风格。✅本样式可以高度地自定义，打造属于你自己的风格。✅屏蔽了大部分可见广告，小部分的广告换成了插画。✅屏蔽了直播间的大部分无关信息，清爽的观看体验。✅全屏观看优化，不再因为碰一下鼠标就显示控制栏影响观感。✅大部分内容半透明<strike>（方便看老婆）</strike>。✅去掉了页面底端、APP下载等无关内容，可以自定义。✅主页分区屏蔽，在样式自定义里面设置。========食用须知：🅿本插件随缘更新，如果你遇到了问题，可以留言告诉我。🅿<b>直播间去污代码在代码2，直播间去污代码在代码2。</b>🅿仍然有部分页面没做完，或因网站更新而失效。（本人学生，此前没学过CSS）========🌐灵感及部分代码来源：<a href="https://userstyles.org/styles/169531/g36" target="_blank">百度美化G36</a>🌐我的另一个作品，<a href="https://userstyles.org/styles/172368/theme" target="_blank">百度去广告</a>（兼容性其他样式）🌐<a href="https://afdian.net/@capital" target="_blank">爱发电</a>（我还没有陷入财务危机，请不必担心）🌐邮件地址961857877@qq.com，欢迎指出问题和尬聊`
-@version        2020911.13.43
+@version        20201014.8.9
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown uurl "背景图片" {
@@ -61,7 +61,7 @@ uurl "默认的G36|背景色#D9D6E1*" <<<EOT http://wx2.sinaimg.cn/large/005Dxcw
 @advanced text popup "屏蔽不知道哪里蹦出来的关注按钮" "none"
 
 ==/UserStyle== */
-@-moz-document regexp("(https?:)?//(www|space|live|game|search|t|h|message|account).bilibili.com.*") {
+@-moz-document regexp("(https?:)?//(www|space|live|game|search|t|h|message|account|manga).bilibili.com.*") {
 /**************************************************************************
 作者：某只正在看书的
 这个是公益作品，原型是站内: “百度美化-少女前线G36”，站内叫@王比利
@@ -90,12 +90,15 @@ uurl "默认的G36|背景色#D9D6E1*" <<<EOT http://wx2.sinaimg.cn/large/005Dxcw
 }
 .bili-footer,
 .international-footer,
+.manga-footer,
 .link-footer,.link-footer-ctnr{
+    /*页面底端*/
     display:var(--footdisplay,none) !important;
-}/*页面底端*/
+}
 ul li.shouji,
 .mobile-link-l,
 .nav-menu .nav-con .nav-item.mobile,
+.download-app,
 a[href="//app.bilibili.com"]{
     /*去掉下载APP按钮*/
     display:var(--appdisplay,none) !important;
@@ -382,7 +385,7 @@ form.searchform:hover:after{
 }
 }
 
-@-moz-document regexp("(https?:)?//www.bilibili.com/(bangumi|blackroom|read|audio|cheese)/(play/|ban/|[ac][vum]|activity)\\S*"), regexp("(https?:)?//www.bilibili.com/(video|blackboard)/.+"), regexp("(https?:)?//(space|t|h|live).bilibili.com.+") {
+@-moz-document regexp("(https?:)?//www.bilibili.com/(bangumi|blackroom|read|audio|cheese)/(play/|ban/|[ac][vum]|activity)\\S*"), regexp("(https?:)?//www.bilibili.com/(video|blackboard)/.+"), regexp("(https?:)?//(space|t|h|live|manga).bilibili.com.+") {
 /*
 评论区通用
 */
@@ -2007,7 +2010,7 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 }
 }
 
-@-moz-document regexp("(https?:)?//www.bilibili.com/(ranking|watchlater).+"), regexp("(https?:)?//www.bilibili.com/read/ranking.+") {
+@-moz-document regexp("(https?:)?//www.bilibili.com/(ranking|watchlater|v/popular).+"), regexp("(https?:)?//www.bilibili.com/read/ranking.+") {
 /********************
  * 排行榜和稍后再看 *
  ********************/
@@ -2034,11 +2037,29 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 }/*分区导航部分居中*/
 /*排行榜*/
 /*上面部分*/
+.nav-tabs > div{
+    width: 25%;
+    text-align: center;
+}
+.nav-tabs > div > img{
+    margin-left: auto;
+}
+.nav-tabs > div > span{
+    margin-right: auto;
+}
+/* 选择分区 */
+.rank-tab-wrap .rank-tab{
+    text-align: center;
+}
 .rank-menu li,.rank-tab-wrap .rank-tab li,
 #App .rank-module .article-list .article-item{
-    transition: all 0.4s;
+    transition: all 0.35s ease;
     background:none;
     box-shadow:none;
+    display: inline-block;
+}
+.rank-tab-wrap li.rank-tab--active{
+    background: #00a1d6;
 }
 .rank-menu li{
     padding-top:5px;
@@ -2052,8 +2073,11 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 .rank-tab-wrap .rank-tab li:hover{
     background:var(--boxbacks,rgba(255, 255, 255, 0.85));
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
-    padding: 0px 15px;
+    padding: 3px 12px;
     margin:0px 5px 0px -5px;
+}
+.rank-tab-wrap .rank-tab li.rank-tab--active:hover{
+    background: #00a1d6;
 }
 .rank-list-head .rank_tips,.rank-tab-wrap,/*一般排行榜*/
 #App .rank-module .tips/*专栏排行榜*/
@@ -2087,7 +2111,7 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 .av-item .av-about,
 .av-item >a,
 .article-list .article-item .item-holder .article-content{
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 .rank-item:hover .content
 {
@@ -2102,6 +2126,20 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 .av-item:hover >a,
 .article-list .article-item:hover .item-holder .article-content{
     padding-left:20px;
+}
+/* 视频卡 */
+.popular-video-container .card-list .video-card,
+.popular-video-container .video-list .video-card{
+    width: calc(50% - 10px);
+    height: auto;
+    padding: 10px 15px;
+    margin: 0;
+    transition: 0.3s;
+}
+.card-list .video-card:hover,
+.video-list .video-card:hover{
+    background:var(--boxbacks,rgba(255, 255, 255, 0.85));
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2);
 }
 /*一些按钮*/
 .go-top-m,
@@ -2432,6 +2470,11 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
     padding-left:9px;
     margin-left:-5px;
 }
+.gridview-sidebar {
+    /*乐手信息卡出去了*/
+    float: right;
+    margin-right: -5px;
+}
 /*评论区*/
 .common{
     background:none;
@@ -2745,10 +2788,12 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 .player-section.p-relative.border-box.none-select.z-player-section:hover{
     z-index: 999;
 }
-.bilibili-live-player[data-player-state="normal"]{
+.bilibili-live-player[data-player-state="normal"],
+.bilibili-live-player:not([data-player-state]){
     transition: transform 0.3s var(--v1);
 }
-.player-section.p-relative.border-box.none-select.z-player-section:hover .bilibili-live-player[data-player-state="normal"]{
+.player-section.p-relative.border-box.none-select.z-player-section:hover .bilibili-live-player[data-player-state="normal"],
+.player-section.p-relative.border-box.none-select.z-player-section:hover .bilibili-live-player:not([data-player-state]){
     transform: scale(1.175);
 }
 .player-section.p-relative.border-box.none-select.z-player-section .bilibili-live-player-video-controller:hover {
@@ -2904,6 +2949,110 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 .works-ctnr .works-ctnr/*防白底*/{
     background:none;
 }
+}
+
+@-moz-document regexp("(https?:)?//manga.bilibili.com.+") {
+/* 漫画 */
+/* 排行榜 */
+.rank-item-wrapper{
+    position: relative;
+    background-image: none !important;
+}
+.rank-item-wrapper:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIzNzYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGc+CiAgICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgICA8cmVjdCBzdHJva2U9IiMwMDAiIGlkPSJzdmdfMiIgaGVpZ2h0PSIxNjgiIHdpZHRoPSIxIiB5PSIxODgiIHg9IjAiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iI0ZBRkFGQSIvPgogIDwvZz4KPC9zdmc+Cg==);
+}
+/* .rank-item-wrapper .rank-item{
+    margin: 0 11px 27px 0;
+    padding: 20px 5px 5px 46px;
+    height: 161px;
+} */
+.rank-item-wrapper .rank-item .rank-item-content{
+    transition:all 0.4s;
+    padding: 5px;
+}
+.rank-item-wrapper .rank-item .rank-item-content:hover{
+    background-color:var(--boxbacks,rgba(255, 255, 255, 0.9)) !important;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .15);
+}
+/* 排行榜左侧栏 */
+.sidebar-item .dp-i-block:not([class*="bg-no-repeat"]){
+    transition:all 0.3s;
+}
+.sidebar-item .dp-i-block:not([class*="bg-no-repeat"]):hover{
+    margin-left: -10%;
+    padding: 0 10%;
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+}
+/* 详情页 */
+.header-info.t-no-wrap, /*漫画简介框*/
+.manga-detail .section > .right-side > div, /*右侧推荐与排行*/
+.manga-detail .section > .section-list /*详细信息（章节列表之类）*/{
+    transition:all 0.4s;
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+    box-shadow: 3px 3px 6px 4px rgba(0, 0, 0, .1);
+    border-radius:4px !important;
+}
+.manga-detail .section > .right-side > div:hover,
+.manga-detail .section > .section-list:hover{
+    background-color:var(--boxbacks,rgba(255, 255, 255, 0.9)) !important;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .15);
+}
+/* 右侧推荐 */
+.recommendation .comic-info-panel{
+    transition:all 0.4s;
+    padding: 5px;
+    margin-top: 6px;
+}
+.recommendation .comic-info-panel:hover{
+    background-color:var(--boxbacks,rgba(255, 255, 255, 0.9)) !important;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .15);
+}
+/* 更新推荐 */
+.date-selector .date-item{
+    /*顶部时间线*/
+    transition:all 0.4s;
+}
+.date-selector .date-item:hover{
+    margin-top: -5px;margin-bottom: -5px;
+    padding-top: 5px;padding-bottom: 5px;
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+}
+.schedule-list .data-list .data-item{
+/*     margin-top: -5px;margin-bottom: -5px; */
+/*     padding-top: 5px;padding-bottom: 5px; */
+    transition:all 0.4s;
+/*     background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important; */
+}
+.schedule-list .data-list .data-item:hover{
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+}
+/* 分类 */
+.data-list .manga-card-vertical{
+    padding: 5px;
+    box-sizing: border-box;
+    transition:all 0.4s;
+}
+.data-list .manga-card-vertical:hover{
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .15);
+}
+.style-section .tag-block .tag-containers .style-tag{
+    transition:all 0.3s;
+}
+.style-section .tag-block .tag-containers .style-tag:hover{
+    margin-top: -5px;margin-bottom: -5px;
+    padding-top: 5px;padding-bottom: 5px;
+    background-color:var(--boxback,rgba(255, 255, 255, 0.4)) !important;
+}
+
+
 }
 
 @-moz-document domain("game.bilibili.com") {

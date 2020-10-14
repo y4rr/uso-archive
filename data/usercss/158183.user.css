@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201012.20.39
+@version        20201014.2.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.12 ********************** */
+/* Ameblo Management ver.2020.10.14 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -2548,50 +2548,56 @@ input.btnDelete:hover {
 
 /* いいね！ダイアログ ***************************** */
 /* 全体幅 */
-._10hxR5fB {
+[aria-label="PcEntryIineList"] {
     width: 600px;
     font-size: 14px;
     font-family: Meiryo, sans-serif;
     color: #333; }
 
 /* リストのタイトル */
-._220hQzlf {
+.iineListHeaderText {
     padding: 10px 12px 8px; }
 
-._GCr8y7hE {
+.s.s-nice {
     font-size: 24px;
     vertical-align: -6px; }
 
 /* いいね！の数 */
-._hgerfEuW.tx_orageA {
+.tx_orageA {
     font-weight: bold; }
 
-/* いいね！リストアイテム */
-._10qgcmCI {
-    padding: 8px 0 6px 12px; }
+/* いいね！リスト スクロール部全体 */
+#iineEntryContents {
+    margin-bottom: 6px;
+    max-height: 620px; }
 
-._10qgcmCI:hover {
+/* いいね！リストアイテム */
+.iineListItem {
+    padding: 4px 0 4px 12px; }
+
+.iineListItem:hover {
     background: var(--hov); }
 
 /* ユーザーアイコン */
-._2A14r3XA {
-    width: 38px;
-    height: 38px;
+.iineProfImg img {
+    width: 45px;
+    height: 45px;
+    max-height: 45px;
     object-fit: cover; }
 
-._pTkhBW3x {
+.iineListMain {
     width: 510px; }
 
-._Epl_n2OT {
+.iineListCntL {
     width: 400px; }
 
 /* ユーザーID */
-._3OKZ22qb {
+.iineListNickname {
     font-size: 14px;
-    margin: 0; }
+    margin: 2px 0 0; }
 
 /* ブログ名 */
-._3vUlx6tg {
+.iineEntryListBlogTitle {
     width: 400px;
     font-size: 14px;
     color: #06c;
@@ -2600,12 +2606,7 @@ input.btnDelete:hover {
 /* 時刻 */
 time.tx_grayA {
     color: #000;
-    font-size: 14px;
-    vertical-align: -10px; }
-
-/* 閉じるボタン */
-._27Kd-AK1 {
-    line-height: 29px; }
+    font-size: 14px; }
 
 /* ブログページ ADブロック ************************ */
 /* ヘッダー部 ドロップダウンAD ********************* */
