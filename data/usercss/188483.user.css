@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `The official Discord server for the development of this style is live! Feel free to join here - https://discord.gg/dzTHgHbThis theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2020108.6.58
+@version        20201013.12.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v4.1*/
+/* Dark Creator Studio v4.2*/
 /* Created by Leon Flame, edited by Lexan*/
 /* Dark Scrollbar*/
 
@@ -1173,10 +1173,6 @@ ytd-multi-page-menu-renderer #header *{
     background-color: var(--theme-add-color);
     opacity: 1 !important;
     border-radius: 5px;
-}
-
-#backdrop, ytcp-ve, .ytcp-omnisearch{
-    border: none !important;
 }
 
 #results, #search-layer{
@@ -2608,6 +2604,10 @@ main {
     padding-bottom: 0px;
 }
 
+#backdrop, ytcp-ve, .ytcp-omnisearch{
+    border: 1xp solid var(--border-color) !important;
+}
+
 /*Universal - Listboxes*/
 paper-listbox{
     background-color: var(--bg2-color) !important;
@@ -2758,6 +2758,22 @@ ytcp-entity-card:hover{
 
 .divider.ytcd-list-card-collapsible{
     border-bottom: 1px solid var(--border-color);
+}
+
+#title.ytcp-video-links-tooltip-body{
+    color: var(--text-color);
+}
+
+#content.ytcp-video-links-tooltip-body{
+    color: var(--text-darken2-color);
+}
+
+.remove-default-style.style-scope.ytcp-video-links-tooltip-body{
+    color: var(--text-darken-color);
+}
+
+.video-value.ytcp-video-links-tooltip-body{
+    color: var(--text-darken-color);
 }
 
 /*Analytics*/
@@ -3127,6 +3143,22 @@ ytcp-video-visibility-edit-popup paper-dialog{
      color: var(--text-darken2-color);
 }
 
+ytcp-form-live-chat[old-styling] .section-label.ytcp-form-live-chat{
+    color: var(--text-color);
+}
+
+#community-settings-link.ytcp-form-live-chat{
+    color: var(--text-darken2-color);
+}
+
+.subtext.ytcp-video-metadata-advanced-old{
+    color: var(--text-darken2-color);
+}
+
+.style-scope.iron-icon[d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"]{
+    fill: var(--text-color);
+}
+
 /*Subtitles*/
 
 #row-container.ytgn-video-row.row-highlighted, #row-container.ytgn-video-row.row-highlighted .floating-column.ytgn-video-row{
@@ -3472,6 +3504,34 @@ paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button{
 }
 
 #confirm-button.style-scope.ytcp-confirmation-dialog{
+    color: var(--accent-color);
+}
+
+#slot-wrapper.style-scope.ytcp-paper-tooltip{
+    color: var(--text-darken-color);
+}
+
+#tooltip-completed-label.ytsp-checklist{
+    color: var(--text-color);
+}
+
+.expansion-button.style-scope.ytsp-checklist{
+    color: var(--accent-color);
+}
+
+#tooltip-completed-label.ytsp-checklist{
+    color: var(--accent-color);
+}
+
+#public-promo-post.style-scope.ytsp-checklist{
+    color: var(--accent-color);
+}
+
+#join-link.style-scope.ytsp-checklist{
+    color: var(--accent-color);
+}
+
+#member-only-post.style-scope.ytsp-checklist{
     color: var(--accent-color);
 }
     

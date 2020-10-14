@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Google Search Dark Theme [V1.4.18]
+@name           Google Search Dark Theme [V1.4.19]
 @namespace      USO Archive
 @author         Lekrkoekj
 @description    `A Dark Theme for Google Search/Images for when you want to work in the dark.Check out my other Google Dark Themes: <a href="https://userstyles.org/styles/171305/dark-theme-for-google-docs-v1-6-14">Dark Theme for Google Docs</a><a href="https://userstyles.org/styles/179376/dark-theme-for-google-translate-v1-0-1">Dark Theme for Google Translate</a><a href="https://userstyles.org/styles/179514/google-classroom-dark-theme-v1-0">Google Classroom Dark Theme</a><a href="https://userstyles.org/styles/184095/google-drive-dark-theme-v1-0-1">Google Drive Dark Theme</a>Feel free to leave some feedback down below!`
-@version        2020819.13.5
+@version        20201013.21.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -173,37 +173,37 @@ h1.GLOBAL__gm2-headline-5.section-hero-header-title-title, .section-hero-header-
 @-moz-document url("https://www.google.com"), url-prefix("https://ogs.google"), regexp("https?://(www|encrypted).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!recaptcha).*") {
 /* Profile chooser */
 /* Backgrounds */
-.gb_l.gb_8a.gb_9a, .gb_l.gb_9a.gb_ab, .gb_l.gb_9a {
+.gb_l.gb_8a.gb_9a, .gb_l.gb_9a.gb_ab, .gb_l.gb_9a, .gb_l.gb_5a.gb_7a {
     background: #131719;
 }
-.gb_zb.gb_zb, .gb_Ub>.gb_Tb, .gb_Ab.gb_Ab, .gb_Cb:hover, .gb_l .gb_rb, .gb_Rb, .gb_Eb.gb_Eb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_ja {
+.gb_zb.gb_zb, .gb_Ub>.gb_Tb, .gb_Ab.gb_Ab, .gb_Cb:hover, .gb_Rb, .gb_Eb.gb_Eb, .gb_db.gb_eb, .gb_ja, .gb_wb.gb_wb, .gb_Ib.gb_Ib, .gb_yb:hover {
     background: #1b2022;
 }
-.gb_Ub>.gb_Tb:hover, .gb_Ab.gb_Ab:hover, .gb_Vb>.gb_Ub:hover, .gb_Eb.gb_Eb:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover {
+.gb_Ub>.gb_Tb:hover, .gb_Ab.gb_Ab:hover, .gb_Vb>.gb_Ub:hover, .gb_Eb.gb_Eb:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover, .gb_wb.gb_wb:hover, .gb_Ib.gb_Ib:hover, .gb_Rb>.gb_Qb:hover, .gb_Qb:hover {
     background: #323639;
 }
 
 /* Colors */
-.gb_l .gb_tb, .gb_8b, .gb_sa svg, .gb_Ic svg, .gb_9c .gb_ne, .gb_Tc .gb_ne, .gb_Cb:hover,.gb_l .gb_ub, .gb_Ab.gb_Ab, .gb_9b, .gb_sb>svg.gb_tb, .gb_Fb>svg.gb_Hb, .gb_Ib>svg.gb_Jb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_Eb.gb_Eb {
+.gb_l .gb_tb, .gb_8b, .gb_sa svg, .gb_Ic svg, .gb_9c .gb_ne, .gb_Tc .gb_ne, .gb_Cb:hover,.gb_l .gb_ub, .gb_Ab.gb_Ab, .gb_9b, .gb_sb>svg.gb_tb, .gb_Fb>svg.gb_Hb, .gb_Ib>svg.gb_Jb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_Eb.gb_Eb, .gb_l .gb_qb, .gb_5b, .gb_Ib.gb_Ib {
     color: white;
 }
-.gb_zb.gb_zb, .gb_Db.gb_Db, .gb_Lb.gb_Lb {
+.gb_zb.gb_zb, .gb_Db.gb_Db, .gb_Lb.gb_Lb, .gb_wb.gb_wb, .gb_Ib.gb_Ib {
     color: white !important;
 }
-.gb_cc, .gb_ac, .gb_Cb.gb_Cb, .gb_l .gb_wb, .gb_dc, .gb_bc {
+.gb_cc, .gb_ac, .gb_Cb.gb_Cb, .gb_l .gb_wb, .gb_dc, .gb_bc, .gb_l .gb_sb, .gb_7b {
     color: #ffffff87;
 }
 
 /* Border colors */
-.gb_zb.gb_zb, .gb_Qb, .gb_Kb, .gb_Lb.gb_Lb, .gb_Ab.gb_Ab, .gb_Rb, .gb_Mb.gb_Mb, .gb_ja {
+.gb_zb.gb_zb, .gb_Qb, .gb_Kb, .gb_Lb.gb_Lb, .gb_Ab.gb_Ab, .gb_Rb, .gb_ja, .gb_wb.gb_wb, .gb_Ib.gb_Ib {
     border-color: #1b2022;
 }
-.gb_Ab.gb_Ab:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover {
+.gb_Ab.gb_Ab:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover, .gb_wb.gb_wb:hover, .gb_Ib.gb_Ib:hover {
     border-color: #323639;
 }
 
 /* Other */
-.gb_Bb::after {
+.gb_xb::after {
     white-space: pre-line;
     content: '\AUserstyle created by Lekrkoekj: https://styles.lekr.ml';
     color: white;

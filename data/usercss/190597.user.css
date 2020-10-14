@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Xall1996
 @description    `Quick Darkmode thrown together by me.This is hot garbage, someone else please make something better.`
-@version        20201013.11.22
+@version        20201013.13.58
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("subsplease.org") {
+@-moz-document url("https://subsplease.org/"), url("https://subsplease.org/schedule/"), url-prefix("https://subsplease.org/shows/"), url-prefix("https://subsplease.org/rss-feeds/") {
 :root {
         /*
          *
@@ -69,9 +69,11 @@ a, a:visited{
 a:hover{
     color: var(--highlight-link-color);
 }
-.sidebar {
+
+#secondary {
     background-color:  var(--secondary-background-color);   
     box-shadow: 3px 3px var(--box-shadow-color);
+    margin-bottom: 30px;
 }
 
 .secondary {
@@ -125,11 +127,4 @@ a:hover{
     background-color: var(--quinary-background-color);
     color: var(--secondary-link-color);
 }
-}
-
-@-moz-document url-prefix("https://subsplease.org/rss") {
-body::before {
-    background-image: url(https://i.imgur.com/koyJPGs.png) !important;
-    background-position: right bottom !important;
-  }
 }

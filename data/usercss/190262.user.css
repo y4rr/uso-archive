@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ItsShuno
 @description    `with this skin your momio becomes a dark and relaxed place! thanks for using!`
-@version        2020109.16.9
+@version        20201013.22.44
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -653,6 +653,12 @@ html.fimahyeji.idc0_322 {
     background-position: center;
     background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png) no-repeat white;
     background-size: 63px;
+    cursor: pointer;
+    background-size: 43px;
+    border-radius: 1000px;
+    background-position: center;
+    padding: 5px;
+    box-shadow: 0px 2px 4px 0px #00000033;
 }
 
 .friendbar_bubble_txt {
@@ -745,7 +751,14 @@ html.fimahyeji.idc0_322 {
 .pet-overlay-item-delete-button,
 .pet-overlay-item-follow-button,
 .room-pet-category,
-.room-item-overlay-rotate-button {
+.room-item-overlay-rotate-button,
+.room-chat-send-btn,
+.room-chat-settings-btn,
+.room-chat-emoji-btn,
+.mainmenu-roomChatBtn,
+.buttons-darkGreenClose,
+.one2one-buttons-blueClose,
+.giftlist-closebtn {
     filter: grayscale(100%);
 }
 
@@ -943,4 +956,126 @@ html.fimahyeji.idc0_322 {
 
 .loadingscreen-loadingbar span.show {
     display: none;
+}
+
+.room-chat-bar input {
+    position: absolute;
+    top: 16px;
+    left: 173px;
+    width: 311px;
+    line-height: 18px;
+    padding: 0;
+    border: 10px solid #fff;
+    border-radius: 1000px;
+}
+
+.room-chat-log-wrapper.show {
+    border-radius: 0 0 13px 13px;
+    border: none;
+    display: block;
+    margin-top: 8px;
+}
+
+.room-chat-bar {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    width: 585px;
+    height: 74px;
+    background: #828282;
+    background-size: 592px;
+    display: none;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.friendlist-bubble.friendAccept.large, .friendlist-bubble.friendRequest.large {
+    display: none;
+}
+
+.selectWallText {
+    background-color: #828282;
+    line-height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.createField-contextSticker.selectWallContext {
+    -webkit-transform: none;
+}
+
+.buttons-darkGreenClose,
+.one2one-buttons-blueClose,
+.giftlist-closebtn {
+    background: url(https://momio.me/videos/img/purple_close_btn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.simpleText-overlay-header,
+.dailygiftOverlay-header {
+    background-color: #828282;
+    padding: 0 13px;
+    position: relative;
+    text-align: center;
+}
+
+.simpleText-overlay-header-container,
+.dailygiftOverlay-header-container {
+    -webkit-transform: none;
+}
+
+.room-chat-create-options .skyButton {
+    padding: 0;
+    background-image: none;
+}
+
+.friendbar_bubble_tinyimg {
+    display: none;
+}
+
+.currencyBar.sale.ending {
+    background-position: -137px 0;
+    color: #D51E3F;
+}
+
+.profile-avatar-frame {
+    background: url(https://i.ibb.co/tZHx0CV/profile-large-avatar-frame-2.png) 0 0 no-repeat;
+    background-size: 295px auto;
+    height: 341px;
+    width: 295px;
+    margin-left: -7px;
+}
+
+.profile-large-image {
+    background: url(https://i.ibb.co/2WRMNDD/profile-large-image-frame.png) 0 0 no-repeat;
+    background-size: 295px auto;
+    display: inline-block;
+    height: 341px;
+    left: 286px;
+    position: absolute;
+    top: 0;
+    width: 289px;
+    cursor: pointer;
+}
+
+.friendlist-bubbleIcon.text {
+    background-position: center;
+    background: url(https://www.iconsdb.com/icons/preview/black/message-2-xxl.png) no-repeat white;
+    cursor: pointer;
+    background-size: 35px;
+    border-radius: 1000px;
+    padding: 5px;
+    box-shadow: 0px 2px 4px 0px #00000033;
+    background-position: center;
+}
+
+.login-header {
+    background-color: #828282;
+    line-height: 47px;
+    padding: 0 10px;
+}
+
+.login-header-container {
+    transform: none;
 }

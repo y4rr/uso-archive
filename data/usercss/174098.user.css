@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `Google but everything is dark and cleaned up a bit.`
-@version        20201013.10.51
+@version        20201013.13.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1789,11 +1789,6 @@ span.Kj-JD-K7-K0,
   color: #999 !important;
 }
 
-.hx .ii *[style*="color:#444"]
-{
-  color: #ccc !important;
-}
-
 .ii a[href],
 .r7 .e, .sA
 {
@@ -1802,6 +1797,12 @@ span.Kj-JD-K7-K0,
 .ii a[href]:visited, a:visited
 {
     color: #ba55ed;
+}
+
+.hx .ii *[style*="color:#444"],
+.ii a[href][style*="#fff"]
+{
+  color: #ccc !important;
 }
 
 *,

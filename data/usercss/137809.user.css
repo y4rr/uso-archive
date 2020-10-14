@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for wccftech.com`
-@version        2020927.2.54
+@version        20201013.17.24
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -36,7 +36,7 @@ a:hover,
 .featured-2 h2,
 .text h2,
 .sticky li a {
-    transition: color 0.3s;
+    transition: all 0.25s ease;
 }
 .headroom--pinned {
 	box-shadow: 0px 0px 0px rgba(0,0,0,0);
@@ -379,10 +379,37 @@ p.wccf_related_post a.wccf_related_post::before {
     background: #3c3c3c;
 }
 .wccf-products h4 span {
-	background: #888;
-    color: #333;
+	background: #333;
+    color: #bbb;
 }
 .mpp-toc {
     background: #222;
+}
+.wccf-products a {
+    color: #999;
+    box-shadow: 2px 3px 0 #444;
+}
+.accordian input:checked + label {
+    color: #aaa;
+    border: 1px solid #ccc;
+    border-top: 2px solid #EB0254;
+    border-bottom: none;
+}
+.accordian label {
+    color: #ccc;
+}
+.accordian section {
+    border-top: 1px solid #ccc;
+}
+.aside-event .more, .aside-deals .more, .navigation a {
+    border: 2px solid #333;
+}
+.aside-event .more:hover, .aside-deals .more:hover, .navigation a:hover {
+    border: 2px solid #333;
+    background-color: #c40246;
+    transition: all 0.25s ease;
+}
+footer a {
+    color: #EB0254;
 }
 }

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.1.5 (β)
+@name           Compact Tube (White) v1.1.7 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        20201013.10.31
+@version        20201013.21.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.1.5 (β) */
+/* CompactTube (White) v1.1.7 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -238,6 +238,9 @@ font-weight: var(--ytd-thumbnail-attribution_-_font-weight); line-height: var(--
 letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing); text-transform: var(--ytd-thumbnail-attribution_-_text-transform);
 display: flex; flex-direction: row;}
 
+/* Интервалы межды Видео в Поиске на вкладке " Ещё " */
+#items.ytd-vertical-list-renderer > *.ytd-vertical-list-renderer {padding-top: 10px;}
+
 /* Размер поля Поиска и позицианирование */
 ytd-search[center-results] ytd-two-column-search-results-renderer.ytd-search {
 flex: 1; flex-basis: 1e-9px;
@@ -251,7 +254,8 @@ ytd-video-renderer[use-prominent-thumbs] ytd-thumbnail.ytd-video-renderer {
     max-height: 138px; /*138*/
     flex: 1;
     flex-basis: 1e-9px;
-    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);
+    -o-overflow: auto;}
 /* Отступ Текста справа в блоке Превью Видео в Поиске */
 ytd-video-renderer[use-prominent-thumbs] .text-wrapper.ytd-video-renderer {
 max-width: none; margin-right: 4px;}
@@ -261,15 +265,17 @@ max-width: none; margin-right: 4px;}
 ytd-playlist-renderer[use-prominent-thumbs] ytd-playlist-thumbnail.ytd-playlist-renderer {
     margin-right: 12px;
     margin-left: 6px;
+    margin-top: -5px;       /*test*/
+    margin-bottom:5px;      /*test*/
     max-width: 246px; /*360px*/
     min-width: 246px; /*240*/
     max-height: 138px; /*138*/
     flex: 1;
     flex-basis: 1e-9px;
     box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
-/* Отступ Текста справа в блоке Превью Плейлиста в Поиске */
+/* Отступ Текста справа  и Снизу в блоке Превью Плейлиста в Поиске */
 #content.ytd-playlist-renderer {overflow: hidden; max-width: 600px; flex: 1;
-flex-basis: 1e-9px; margin-right: 4px;}
+flex-basis: 1e-9px; margin-right: 4px; margin-top: -5px;    /*test*/}
 
 /* Нижний (самый последний) Блок видео в Поиске - отступ снизу */
 ytd-video-renderer.ytd-item-section-renderer:last-child {margin-bottom: var(--ytd-item-section-item-margin, 9px);}
@@ -293,6 +299,39 @@ position: relative; top: 4px; line-height: 1.8rem;} /*var(--ytd-thumbnail-attrib
 #text.ytd-channel-name {display: var(--ytd-channel-name-text-display);
 font-size: var(--ytd-channel-name-text_-_font-size); font-weight: var(--ytd-channel-name-text_-_font-weight);
 line-height: 1.8rem;}
+
+
+        /* ПРАВЫЙ РЕКЛАМНЫЙ БЛОК Поиска */
+
+/* Размер поля Карточки предлагаемой Темы */
+ytd-watch-card-rich-header-renderer {
+    display: block; width: 286px;
+    background-color: var(--yt-spec-general-background-b); 
+    padding-bottom: 16px;}
+
+/* Настройка Правого Рекламного блока в Поиске */
+ytd-two-column-search-results-renderer[center-results] #secondary.ytd-two-column-search-results-renderer {
+    flex: none; width: 385px;  flex-direction: column; 
+    margin-left: auto; margin-right: -35.4%; 
+    padding-left: 2%; max-width: 286px; -o-overflow: auto;}
+
+/* Размер Превью в Левой половине "collage-hero" */
+#section-left.ytd-collage-hero-image-renderer {
+    width: 159px; /*214px;*/ height: 159px; /*214px;*/
+    background-position: center center; background-repeat: no-repeat;
+    background-size: cover; overflow: hidden; margin-right: 4px;}
+
+/* Расположение Кнопки [ МИКС YOUTUBE ] */
+#overlay-button.ytd-call-to-action-button-renderer {
+    color: var(--yt-spec-static-overlay-text-primary);
+    margin: 0; display: flex; flex-direction: row;
+    align-items: center; margin-left: -12.5px; margin-bottom: -10px;}
+
+/* Размер Превью в Правой половине "collage-hero" */
+yt-img-shadow.ytd-collage-hero-image-renderer.no-transition {height: 77.5px; width: 123px;}
+
+/* Ширина блока для Альбомов */
+ytd-horizontal-card-list-renderer.ytd-watch-card-section-sequence-renderer {width: 286px; -o-overflow: auto;}
 
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
@@ -2223,7 +2262,7 @@ border-radius: 0%;background-color: transparent;overflow: hidden;}
 #video-title.ytd-video-renderer {font-size: 1.4rem; margin-top: 0px;}
 
 /*текст Описания "Превью канала" и описания видео в Вертикальном столбце канала*/
-#description-text.ytd-video-renderer {padding-top: 2px; -o-margin-bottom: 8px; max-height: 3.1rem; font-size: 1.2rem; font-weight: 500; padding-right: 3px;}
+#description-text.ytd-video-renderer {padding-top: 2px; -o-margin-bottom: 8px; max-height: 3.3rem; font-size: 1.2rem; font-weight: 500; padding-right: 3px;}
 /*отступ текста от правого края превью*/
 ytd-video-renderer:not([use-prominent-thumbs]) ytd-thumbnail.ytd-video-renderer {margin-right: 11px;}
 

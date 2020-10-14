@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Dark Theme for Google Docs [V1.9.2]
+@name           Dark Theme for Google Docs [V1.9.3]
 @namespace      USO Archive
 @author         Lekrkoekj
 @description    `A dark theme for the Google Docs Suite, so you can get things done in the dark!This style currently supports: Google Docs, Sheets, Slides, Forms, Drawings, Sites, Classroom, Calendar and Drive.Check out my other Google dark themes:<a href="https://userstyles.org/styles/176825/google-search-dark-theme-v1-4-8">Google Search Dark Theme</a><a href="https://userstyles.org/styles/179376/dark-theme-for-google-translate-v1-0-1">Google Translate Dark Theme</a><a href="https://userstyles.org/styles/179514/google-classroom-dark-theme-v1-0-1">Google Classroom Dark Theme (separate version)</a><a href="https://userstyles.org/styles/180173/google-calendar-dark-theme-v1-0">Google Calendar Dark Theme (separate version)</a><a href="https://userstyles.org/styles/184095/google-drive-dark-theme-v1-0-1">Google Drive Dark Theme (separate version)</a>`
-@version        2020819.12.36
+@version        20201013.21.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -226,39 +226,42 @@ div[style="width: 50px; margin-bottom: 4px; display: inline-block; border-top: 2
 }
 
 @-moz-document url-prefix("https://docs.google.com/document/"), url-prefix("https://docs.google.com/spreadsheets/"), url-prefix("https://docs.google.com/presentation/"), url-prefix("https://docs.google.com/forms"), url-prefix("https://docs.google.com/drawings"), url-prefix("https://classroom.google.com/"), url-prefix("https://sites.google.com/u/"), url-prefix("https://sites.google.com/s/"), url-prefix("https://calendar.google.com"), url-prefix("https://ogs.google.com"), url-prefix("https://drive.google.com") {
-/* Profile chooser */
+/* Profile chooser & Headers */
 /* Backgrounds */
-.gb_l.gb_8a.gb_9a, .gb_l.gb_9a.gb_ab {
+.gb_l.gb_8a.gb_9a, .gb_l.gb_9a.gb_ab, .gb_Ud, .gb_l.gb_5a {
     background: #131719;
 }
-.gb_zb.gb_zb, .gb_Ub>.gb_Tb, .gb_Ab.gb_Ab, .gb_Cb:hover, .gb_l .gb_rb, .gb_Rb, .gb_Eb.gb_Eb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_ja {
+.gb_zb.gb_zb, .gb_Ub>.gb_Tb, .gb_Ab.gb_Ab, .gb_Cb:hover, .gb_Rb, .gb_Eb.gb_Eb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_ja, .gb_Ec.gb_oa, .gb_Mc, .gb_Qc, .gb_5e, .gb_wb.gb_wb, .gb_Ib.gb_Ib, .gb_Jb.gb_Jb, .gb_l .gb_nb {
     background: #1b2022;
 }
-.gb_Ub>.gb_Tb:hover, .gb_Ab.gb_Ab:hover, .gb_Vb>.gb_Ub:hover, .gb_Eb.gb_Eb:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover {
+.gb_Ub>.gb_Tb:hover, .gb_Ab.gb_Ab:hover, .gb_Vb>.gb_Ub:hover, .gb_Eb.gb_Eb:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover, .gb_5e.gb_6e, .gb_wb.gb_wb:hover, .gb_Ib.gb_Ib:hover, .gb_Jb.gb_Jb:hover, .gb_Rb>.gb_Qb:hover, .gb_Qb:hover {
     background: #323639;
 }
 
 /* Colors */
-.gb_l .gb_tb, .gb_8b, .gb_sa svg, .gb_Ic svg, .gb_9c .gb_ne, .gb_Tc .gb_ne, .gb_Cb:hover,.gb_l .gb_ub, .gb_Ab.gb_Ab, .gb_9b, .gb_sb>svg.gb_tb, .gb_Fb>svg.gb_Hb, .gb_Ib>svg.gb_Jb, .gb_Mb.gb_Mb, .gb_db.gb_eb {
+.gb_l .gb_tb, .gb_8b, .gb_sa svg, .gb_Ic svg, .gb_9c .gb_ne, .gb_Tc .gb_ne, .gb_Cb:hover,.gb_l .gb_ub, .gb_Ab.gb_Ab, .gb_9b, .gb_sb>svg.gb_tb, .gb_Fb>svg.gb_Hb, .gb_Ib>svg.gb_Jb, .gb_Mb.gb_Mb, .gb_db.gb_eb, .gb_ta svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .gb_l .gb_qb, .gb_5b, .gb_wb.gb_wb, .gb_Ib.gb_Ib, .gb_ob>svg.gb_pb, .gb_Bb>svg.gb_Cb, .gb_Db>svg.gb_Eb {
     color: white;
 }
-.gb_zb.gb_zb, .gb_Db.gb_Db, .gb_Lb.gb_Lb {
+.gb_zb.gb_zb, .gb_Db.gb_Db, .gb_Lb.gb_Lb, .gb_5e, .gb_5e.gb_6e .gb_pf, .gb_pf {
     color: white !important;
 }
-.gb_cc, .gb_ac, .gb_Cb.gb_Cb, .gb_l .gb_wb, .gb_dc, .gb_bc {
+.gb_cc, .gb_ac, .gb_Cb.gb_Cb, .gb_dc, .gb_bc, .gb_pf.gb_pf, .gb_l .gb_sb, .gb_7b {
     color: #ffffff87;
+}
+.gb_pf::placeholder {
+    color: #ffffff87 !important;
 }
 
 /* Border colors */
-.gb_zb.gb_zb, .gb_Qb, .gb_Kb, .gb_Lb.gb_Lb, .gb_Ab.gb_Ab, .gb_Rb, .gb_Mb.gb_Mb, .gb_ja {
+.gb_zb.gb_zb, .gb_Qb, .gb_Kb, .gb_Lb.gb_Lb, .gb_Ab.gb_Ab, .gb_Rb, .gb_Mb.gb_Mb, .gb_ja, .gb_wb.gb_wb, .gb_Hb, .gb_Ib.gb_Ib, .gb_Jb.gb_Jb {
     border-color: #1b2022;
 }
-.gb_Ab.gb_Ab:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover {
+.gb_Ab.gb_Ab:hover, .gb_Mb.gb_Mb:hover, .gb_ja:hover, .gb_wb.gb_wb:hover, .gb_Ib.gb_Ib:hover, .gb_Jb.gb_Jb:hover {
     border-color: #323639;
 }
 
 /* Other */
-.gb_Bb::after {
+.gb_xb::after {
     white-space: pre-line;
     content: '\AUserstyle created by Lekrkoekj: https://styles.lekr.ml';
     color: white;
@@ -1080,7 +1083,7 @@ input.docs-number-input {
 .freebirdFormviewerViewFormCard, .iph-dialog, .m2 .freebirdFormeditorViewFatCard, .m2 .freebirdFormviewerViewItemsItemItem, .appsMaterialWizButtonPaperbuttonContent, .m2 .freebirdFormviewerViewHeaderHeader, .freebirdCommonViewSecurequizSecureQuizBannerContainer, .appsMaterialWizButtonPaperbuttonEl, .m2 .freebirdFormeditorViewResponsesSummaryInsightsInsightsContainer, .m2 .freebirdFormeditorViewResponsesSummaryInsightsFrequentlyMissedContainer, .m2 .freebirdFormeditorViewResponsesHeader, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRoot .SummaryContainer, .m2 .freebirdAnalyticsViewAnalyticsContainer, .m2 .freebirdAnalyticsViewNoResponses, .m2 .freebirdAnalyticsViewSectionHeader {
 	background: #1b2022;
 }
-.m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerUnrespondedRow, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow:hover, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow:focus, .m2 .freebirdCommonAnalyticsResponseSummaryChip:hover, .m2 .freebirdCommonAnalyticsResponseSummaryChip:focus {
+.m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerUnrespondedRow, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow:hover, .m2 .freebirdFormeditorViewResponsesSummaryResponsetrackerRespondedRow:focus, .m2 .freebirdCommonAnalyticsResponseSummaryChip:hover, .m2 .freebirdCommonAnalyticsResponseSummaryChip:focus, .freebirdFormviewerViewItemsItemGradingGradingBox.freebirdFormviewerViewItemsItemGradingFeedbackBox {
 	background: #323639;
 }
 div#tJHJj, div#Tj9Y4e, html.freebird.gr__docs_google_com, .quantumWizMenuPaperselectEl.hasIcons .quantumWizMenuPaperselectOption, .quantumWizTabsPapertabsTabList.exportTabList, .quantumWizDialogPaperdialogBottomButtons.exportButtons, content.quantumWizDialogPaperdialogContent.exportContent.quantumWizCommonPositioningScrollableHost, .quantumWizDialogPaperdialogEl.freebirdFormeditorDialogSettingsDialog.freebirdThemedDialog.quantumWizDialogPaperdialogTransitionZoom.quantumWizDialogEl.isOpen, .freebirdMaterialHeaderbannerPagebreakText, .freebirdFormviewerViewCenteredContent, .freebirdFormviewerViewNavigationNoSubmitButton {
@@ -1179,8 +1182,11 @@ rect[height="18"] {
 .freebirdFormeditorDialogLinkformLinkFormSection a, .quantumWizDialogPaperdialogContent a {
     color: #0089ff;
 }
-.freebirdFormviewerComponentsQuestionBaseRoot.hasError {
+.freebirdFormviewerComponentsQuestionBaseRoot.hasError, .m2 .freebirdFormviewerViewItemsRadioChoice.freebirdFormviewerViewItemsRadioIncorrect {
     background-color: #331b1b;
+}
+.m2 .freebirdFormviewerViewItemsRadioChoice.freebirdFormviewerViewItemsRadioCorrect {
+    background-color: #28332b;
 }
 }
 

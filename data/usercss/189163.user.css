@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mt.quinn
 @description    `A reskin of Blaseball to be in NY Millennials/Trans team colors.`
-@version        2020109.19.27
+@version        20201013.12.33
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -89,7 +89,10 @@ body,
     .Navigation-CurrencyButton,
     .Navigation-Button,
     .Header-Logo-Tag,
-    .PlayoffSetup-Navigation-Button {
+    .PlayoffSetup-Navigation-Button,
+    .Decrees-Submit-Button,
+    .Decrees-Option-Button,
+    .Blessings-Option-Button {
         background: #55cdfc;
         color: #000;
         border-style: solid;
@@ -220,7 +223,6 @@ body,
         background-color: #55cdfc;
         color: #000;
         filter: drop-shadow(-2px 2px 2px #000);
-        font-weight: bold;
     }
     
     /*The rest of the matches*/
@@ -229,8 +231,9 @@ body,
         color: #000;
         filter: drop-shadow(-2px 2px 2px #000);
     }
-    .PlayoffSetup-Navigation-Button{
-    
+    .Blessings-Option-SubheaderHyperlink{
+    color: #b77d80;
+    text-shadow: 1px 1px 0px #a7eff0 ;
     }
 
     /*Playoff Bracket Team Icons*/
@@ -623,8 +626,9 @@ body,
         fill: #f7a8b8;
         filter: drop-shadow(3px 3px 4px #000);
     }
-    .GameWidget-Bases.second #base2 {
-        fill: #55cdfc;
+    .GameWidget-Bases.second #base2,
+    .GameWidget-Bases.second #base4{
+        fill: #55cdfc !important;
         filter: drop-shadow(3px 3px 4px #000);
     }
     .GameWidget-ScoreBet {
