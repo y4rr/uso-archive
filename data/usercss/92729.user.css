@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Darkened`
-@version        202074.6.15
+@version        20201015.1.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -79,6 +79,7 @@ selector
 	text-transform: capitalize!important;
 }
 
+.sub-photo-contexts-view .sub-photo-context .context-list li,
 .b-current-color,
 .group-home-page-view .group-blast-view .empty-state,
 .group-home-page-view .group-blast-view .error-state,
@@ -119,6 +120,7 @@ input
 .comment-list-view .comment-list-container .comment-list li .comment-item .content-container .comment-content,
 .comment-list-view .comment-list-container .comment-list li .comment-item .content-container header .author-info a.author-name,
 .html-feed-page-view .activity-card-attribution .attribution-content .display-name a.username,
+.sub-photo-title-desc-view>.title-desc-block>.meta-field.photo-title,
 .tc_intro p,
 .tc_more li,
 input,
@@ -129,13 +131,20 @@ textarea
 	font-size: 21px!important;
 }
 
+.sub-photo-comments-view .comments .comment .comment-content
+{
+	font-size: 21px!important;
+}
+
 .comment-list-view .comment-list-container .comment-list li .comment-item .content-container header .author-info .comment-date,
-.feed-page-view .activity-card div.activity-card-content .activity-card-title p
+.feed-page-view .activity-card div.activity-card-content .activity-card-title p,
+.sub-photo-contexts-view .sub-photo-context .context-list li .title
 {
 	font-size: 15px!important;
 }
 
 .comment-list-view .comment-list-container .comment-list li .comment-item .content-container .comment-content,
+.sub-photo-title-desc-view>.title-desc-block>.meta-field.photo-title,
 .tc_more li
 {
 	line-height: 24px!important;
@@ -143,9 +152,12 @@ textarea
 
 /*___ Remove Items _________________________________________________________________*/
 
+.ad-card,
 .context-slider-scrappy-view .context-slider > .wrapper .slider .context-thumb.adThumb,
+.feed-new-page-view .feed-b,
 .feed-page-view .feed .moola-card,
 .feed-page-view .feed-b,
+.view.ad-rail-card-view,
 .view.sub-photo-submoola-view
 {
 	left: -9999px!important;
@@ -179,6 +191,7 @@ textarea
 /*___ Margins ______________________________________________________________________*/
 
 .archive-item.hentry,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column,
 .sidebar
 {
 	margin: 12px!important;
@@ -195,6 +208,7 @@ li:not(.gn-search-box)
 .archive-item.hentry,
 .entry-content,
 .entry-summary,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column,
 .read-more-posts
 {
 	padding: 12px!important;
@@ -203,6 +217,13 @@ li:not(.gn-search-box)
 selector
 {
 	padding: 3px 6px!important;
+}
+
+.sub-photo-contexts-view .sub-photo-context-groups .context-list li .thumbnail:after,
+.sub-photo-contexts-view .sub-photo-context-groups .context-list li .thumbnail:before {
+    top: -5px;
+    left: -5px;
+    padding: 5px;
 }
 
 /*___ Heights ______________________________________________________________________*/
@@ -222,23 +243,29 @@ selector
 }
 
 /*___ Widths _______________________________________________________________________*/
-.sidebar-footer,
+
+.sub-photo-contexts-view .sub-photo-context .context-list li .title,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container,
 .gallery-page-view .gallery-page-container .comments-section,
-.html-feed-page-view .activity-card-attribution .attribution-content,
+.group-blast-view > .blast-block > .blast-message .blast-message-display,
 .html-feed-page-view .activity-card-attribution .attribution-content .display-name a.username,
-.group-blast-view > .blast-block > .blast-message .blast-message-display
+.html-feed-page-view .activity-card-attribution .attribution-content,
+.sidebar-footer,
+html.scrolling-layout .fluid-centered
 {
 	max-width: none!important;
 }
 
+.sub-photo-title-desc-view>.title-desc-block>.meta-field.photo-title,
 .tc_head
 {
 	width: auto!important;
 }
 
+.sub-photo-contexts-view .sub-photo-context .context-list li,
+.wide#Main,
 .wrap,
-html.scrolling-layout .centered-content,
-.wide#Main
+html.scrolling-layout .centered-content
 {
 	width: 98%!important;
 }
@@ -272,6 +299,7 @@ html.scrolling-layout .centered-content,
 @-moz-document domain("flickr.com"), domain("flickr.net") {
 /*________________________________________________________________________*/
 
+.tour-tooltip-start,
 a[href],
 td span
 {
@@ -287,6 +315,7 @@ td span
 
 /*________________________________________________________________________*/
 
+
 #personmenu_button_bar .candy_menu a.block:active,
 #personmenu_button_bar .candy_menu a.block:hover,
 .fluid .fluid-subnav .link.selected span,
@@ -295,8 +324,10 @@ td span
 .fluid table tr td,
 .html-feed-page-view .feed-card-actions .activity-card-counts a.comment-count:hover,
 .pagination-view span.is-current,
+.people-card-view .people-card .view-more-footer:hover .view-more-button,
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .engagement span.engagement-item:hover,
 .this-page,
+.tour-tooltip-start:hover,
 a[href]:hover span,
 a[href]:hover,
 h1,
@@ -313,6 +344,7 @@ input[type="radio"]:checked + label
 #personmenu_button_bar .candy_menu a.block,
 #personmenu_button_bar .candy_menu a.block:link,
 .bg-hover-grey,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-new-tools-container .filter-menu-button,
 .fluid .fluid-subnav .more-link,
 .fluid .fluid-subnav a,
 .fluid table tr td.align-right,
@@ -324,6 +356,8 @@ input[type="radio"]:checked + label
 .html-feed-page-view .feed-card-actions .activity-card-counts a.comment-count,
 .html-feed-page-view .feed-card-actions .activity-card-counts p,
 .html-feed-page-view .feed-card-actions .activity-card-counts span,
+.person-info-card-view .person-info-card .foot .left-container .attribution .username,
+.people-card-view .people-card .view-more-footer .view-more-button,
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .engagement span.engagement-item,
 .photo-list-gallery-view .photo-list-gallery-container .sub-photo-info-bar .info-container .details .stats,
 .profile-bio-page-view .bio-description .bio-infos .bio-infos-container ul li span,
@@ -336,8 +370,8 @@ input[type="radio"]:checked + label
 .search-subnav .search-subnav-sizing .search-subnav-content .links > .tool a:visited .title,
 .sub-photo-contexts-view .sub-photo-context .context-list li .counts,
 .sub-photo-keyboard-shortcuts-view > .sub-photo-keyboard-shortcuts > .key-container > .key-label,
-.sub-photo-view,
 .sub-photo-view > .sub-photo-container,
+.sub-photo-view,
 article.light,
 body,
 body.light,
@@ -469,13 +503,6 @@ pre ::-moz-selection
 @-moz-document domain("flickr.com"), domain("flickr.net") {
 /*________________________________________________________________________*/
 
-body,
-html
-{
-	background: url(https://image.ibb.co/hVmiOe/wallpaper_with_black_background_45_free_wallpaper.jpg)!important;
-	background-attachment: fixed!important;
-}
-
 .tc_head
 {
 	background-image: url('https://combo.staticflickr.com/pw/images/commons_dolores.jpg')!important;
@@ -484,7 +511,9 @@ html
 	position: relative;
 }
 
-.preview-overlay-view .feed-preview
+.preview-overlay-view .feed-preview,
+body,
+html
 {
 	background-color: black;
 }
@@ -559,6 +588,10 @@ footer
 
 /*___ Background-color 0000 _______________________________________________*/
 
+.feed-rail-view .feed-rail .feed-rail-content-container .feed-rail-footer-view,
+.photo-card-view .photo-card .photo-card-content .photo-card-photo .photo,
+.photo-card-view .photo-card,
+.people-card-view .people-card,
 .bg-hover-blue:focus,
 .bg-hover-blue:hover,
 .bg-hover-grey:focus,
@@ -581,9 +614,18 @@ footer
 .sub-photo-tags-tag-view .machine-tags-list > .tag,
 .sub-photo-tags-tag-view > .tags-list > .autotag,
 .sub-photo-tags-tag-view > .tags-list > .tag,
-.sub-photo-view,
 .sub-photo-view > .sub-photo-container,
-a:hover
+.sub-photo-view,
+a:hover,
+article.light,
+body,
+body.light,
+div.light,
+footer.light,
+header.light,
+main.light,
+p.light,
+section.light
 {
 	background-color: #0000!important;
 }
@@ -623,6 +665,8 @@ pre
 
 /*__ Blue __________________________________________________________________*/
 
+.photo-card-view .photo-card .link-footer,
+.people-card-view .people-card .view-more-footer,
 #main .follow-butt,
 #Main .follow-butt,
 .back-to-top .button,
@@ -648,6 +692,8 @@ button
 	color: #fff!important;
 }
 
+.photo-card-view .photo-card .link-footer:hover,
+.people-card-view .people-card .view-more-footer:hover,
 #main .follow-butt:hover,
 #Main .follow-butt:hover,
 .back-to-top .button:hover,
@@ -670,6 +716,8 @@ button:hover
 	color: #ff0!important;
 }
 
+.photo-card-view .photo-card .link-footer:active,
+.people-card-view .people-card .view-more-footer:active,
 #main .follow-butt:active,
 #Main .follow-butt:active,
 .back-to-top .button:active,
@@ -818,7 +866,9 @@ selector:active
 .bg-white,
 .box,
 .featured-groups .recommended-groups .recommended-group,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column,
 .feed-page-view .activity-card,
+.feed-rail-view .feed-rail .feed-rail-content-container .rail-items-container .rail-item,
 .fluid .droparound,
 .fluid .modal,
 .gallery-hunk,
@@ -830,11 +880,10 @@ selector:active
 .profile-bio-page-view .section,
 .result-card,
 .search-autosuggest-items-list-view,
-.sub-photo-comments-view .comments .comment,
 .sub-photo-right-view > .photo-charm-exif-scrappy-view,
 .tc_intro
 {
-	background-color: #111!important;
+	background-color: #161515!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -848,7 +897,9 @@ selector:active
 .bg-white:hover,
 .box:hover,
 .featured-groups .recommended-groups .recommended-group:hover,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column:hover,
 .feed-page-view .activity-card:hover,
+.feed-rail-view .feed-rail .feed-rail-content-container .rail-items-container .rail-item:hover,
 .fluid .droparound:hover,
 .fluid .modal:hover,
 .gallery-hunk:hover,
@@ -860,7 +911,6 @@ selector:active
 .profile-bio-page-view .section:hover,
 .result-card:hover,
 .search-autosuggest-items-list-view:hover,
-.sub-photo-comments-view .comments .comment:hover,
 .sub-photo-right-view > .photo-charm-exif-scrappy-view:hover,
 .tc_intro:hover
 {
@@ -949,6 +999,8 @@ selector
 
 /*___ Highlight Background _________________________________________________________*/
 
+.sub-photo-comments-view .comments .comment:hover,
+.sub-photo-contexts-view .sub-photo-context .context-list li:hover,
 .fluid table tr:not(:first-child):hover,
 .standard-comment-list-view .comment-list-container li .comment-item.active,
 .standard-comment-list-view .comment-list-container li .comment-item:hover
@@ -961,6 +1013,7 @@ selector
 @-moz-document domain("flickr.com"), domain("flickr.net") {
 /*________________________________________________________________________*/
 
+.group-recs-rail-card-view .group-recs-rail-card .list-container .group-recs-rail-item-view,
 #f_div_tray_obj img,
 .archive-item.hentry,
 .bg-hover-blue,
@@ -971,6 +1024,7 @@ selector
 .fluid table tr:not(:first-child),
 .gallery-hunk,
 .gallery-item,
+.person-info-card-view,
 .photo-list-description-view,
 .photo-list-gallery-photo-view,
 .photo-list-gallery-view,
@@ -990,6 +1044,7 @@ li:not(.gn-search-box)
 
 /*________________________________________________________________________*/
 
+.group-recs-rail-card-view .group-recs-rail-card .list-container .group-recs-rail-item-view:hover,
 #f_div_tray_obj img:hover,
 .archive-item.hentry:hover,
 .bg-hover-blue:focus,
@@ -1003,6 +1058,7 @@ li:not(.gn-search-box)
 .fluid table tr:not(:first-child):hover,
 .gallery-hunk:hover,
 .gallery-item:hover,
+.person-info-card-view:hover,
 .photo-list-description-view:hover,
 .photo-list-gallery-photo-view:hover,
 .photo-list-gallery-view:hover,
@@ -1042,7 +1098,7 @@ selector:last-child
 	border-bottom-right-radius: 22px!important;
 }
 
-/*________________________________________________________________________*/
+/*________________________________________________________________________
 
 li:not(.gn-search-box),
 p
@@ -1061,8 +1117,15 @@ p:hover
 	filter: brightness(100%)!important;
 	transition: color .125s ease-out, color .5s ease-out, filter .5s ease-out, filter .8s ease-out, box-shadow .125s ease-out, box-shadow .5s ease-out!important;
 }
-
+*/
 /*________________________________________________________________________*/
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("flickr.com") {
@@ -1243,43 +1306,17 @@ p:hover
 }
 
 @-moz-document domain("flickr.com") {
-/*
-.preview-overlay-view .close-preview-container .close-preview
-{
-	background: url(https://i.ibb.co/3sWjLH1/icons-cc4be245.png) -102px -512px no-repeat!important;
-}
 
-.global-nav-view .gn-tools .upload-icon
-{
-	background: url(https://i.ibb.co/3sWjLH1/icons-cc4be245.png) -381px -448px no-repeat!important;
-}
 
-.notifications-menu-view .gn-title.c-notifications-menu .c-notification-icon
-{
-	background: url(https://i.ibb.co/3sWjLH1/icons-cc4be245.png) -496px -397px no-repeat!important;
-}
-*/
 
-/* Comment _______________________________________________________________
+/* Upload to Cloud _______________________________________________________________*/
 
-.gallery-page-view .action-bar .actions .comment svg,
-.html-feed-page-view .feed-card-actions a.activity-card-action.activity-card-commentt svg
-{
-	background: url(https://image.ibb.co/n0iGJG/comment-48x48.png) no-repeat!important;
-	box-sizing: border-box;
+.notifications-menu-view .gn-title.c-notifications-menu .c-notification-icon {
+    background: url(https://i.ibb.co/jf2sQv5/icons-cc4be245.png) -496px -397px no-repeat!important;
 }
-
-.gallery-page-view .action-bar .actions .comment svg,
-.html-feed-page-view .feed-card-actions a.activity-card-action.activity-card-comment svg
-{
-	background-size: 15px!important;
-	height: 26px!important;
-	padding-left: 22px!important;
-	width: 10px!important;
-}
-*/
 
 /* Flag _______________________________________________________________*/
+
 .sub-photo-additional-info-view i.ui-icon-tiny-flag-photo
 {
 	background: url(https://image.ibb.co/n0iGJG/comment-48x48.png) no-repeat!important;
@@ -1295,6 +1332,7 @@ p:hover
 }
 
 /* Edit (Pincel) _______________________________________________________________*/
+
 .profile-bio-page-view .bio-description .icon.icon-edit
 {
 	background: url(https://i.ibb.co/hD543B5/pencil-icon-28x28.png) no-repeat!important;
@@ -1310,6 +1348,7 @@ p:hover
 }
 
 /* Horn _______________________________________________________________*/
+
 .opt-out-widget .feedback
 {
 	background: url(https://i.ibb.co/Fnsdy5L/Megaphone.png) no-repeat!important;
@@ -1325,7 +1364,9 @@ p:hover
 }
 
 /* Lock _______________________________________________________________*/
-/* Open ____________________*/
+
+/* Open ____________________
+
 .sub-photo-additional-info-view i.ui-icon-tiny-privacypublic
 {
 	background: url(https://i.ibb.co/VBcDjnC/star-empty-glow.png) no-repeat!important;
@@ -1338,31 +1379,24 @@ p:hover
 	height: 26px!important;
 	padding-left: 22px!important;
 	width: 10px!important;
-}
+}*/
 
 /* Logo _______________________________________________________________*/
-.notifications-menu-view .gn-title.c-notifications-menu .c-notification-icon
-{
-	background: url(https://i.ibb.co/jf2sQv5/icons-cc4be245.png) -496px -397px no-repeat;
-	box-sizing: border-box;
-}
+
 
 /* Notification (Bell) _______________________________________________________________*/
-.notifications-menu-view .gn-title.c-notifications-menu .c-notification-icon
-{
-	background: url(https://i.ibb.co/jf2sQv5/icons-cc4be245.png) -496px -397px no-repeat;
-	box-sizing: border-box;
+
+.notifications-menu-view .gn-title.c-notifications-menu .c-notification-icon {
+    background: url(https://i.ibb.co/jf2sQv5/icons-cc4be245.png) -496px -397px no-repeat!important;
 }
 
 /* Share _______________________________________________________________*/
-.fluid .fluid-share-button .fluid-share-icon
-{
-	background: url(https://combo.staticflickr.com/ap/build/images/sprites/icons-cc4be245.png) -496px -464px no-repeat;
-	box-sizing: border-box;
-}
+
 
 /* Star _______________________________________________________________*/
+
 /* Off ____________________*/
+
 svg.icon-fave_hollow
 {
 	background: url(https://i.ibb.co/VBcDjnC/star-empty-glow.png) no-repeat!important;
@@ -1378,6 +1412,7 @@ svg.icon-fave_hollow
 }
 
 /* On ____________________*/
+
 .sub-photo-left-view > .sub-photo-fave-view .ui-icon-fave-star,
 [title="Unfave this photo"] svg
 {
@@ -1394,10 +1429,8 @@ svg.icon-fave_hollow
 	width: 10px!important;
 }
 
-/* Up-load to Cloud _______________________________________________________________*/
-.global-nav-view .gn-tools .upload-icon
-{
-	background: url(https://i.ibb.co/jf2sQv5/icons-cc4be245.png) -381px -448px no-repeat!important;
-	box-sizing: border-box;
-}
+
+
+
+
 }

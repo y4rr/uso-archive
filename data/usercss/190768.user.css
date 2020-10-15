@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Seyjin
 @description    `A darkmode theme for the Sims forum.`
-@version        20201014.16.59
+@version        20201015.7.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,8 +26,20 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 
 .nav-bar li a {
     text-shadow: 0 2px 0 #3b4460;
-
 }
+
+.search-bar .Button, .search-bar .Button:hover, .search-bar .Button:focus {
+    background-color: #406f08 !important;
+}
+
+
+
+.Button, .Button:focus, body:not(.dataDriven) .Button.Active, body:not(.dataDriven) .ButtonGroup.Open .Button.Handle, body:not(.dataDriven) .Button:focus, body:not(.dataDriven) .Button:active {
+    background: linear-gradient(#2096c8,#275d8c);
+    border: 1px solid #1e486c;
+    color: #fff;
+}
+
 
 #Body {
     background-color: #222029;
@@ -48,7 +60,7 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
     background: linear-gradient(to right,  #ff0 4px, #fff0 3px,#0001);
 }
 
-.OptionsTitle, .Sprite16, .ReactSprite {
+.OptionsTitle, .Sprite16, .ReactSprite, button .Sprite, .QuickSearch .Sprite {
     filter: invert(80%);
 }
 
@@ -76,6 +88,13 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
     background-color: #0b5777;
 
 }
+.Pager .Highlight {
+
+    background-color: #1c1b22;
+    border-radius: 10px;
+    color: #ccc;
+
+}
 
 .FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor {
 
@@ -87,7 +106,13 @@ div.PostEdited {
     color: #ff3a3a;
 }
 
-.InputBox, input:focus, textarea:focus {
+.Alert {
+    background-color: #e10000;
+    border: 1px solid #ff3a3a;
+    color: #f5f5f5;
+}
+
+.InputBox, input:focus, textarea:focus, .Activities a.CommentLink, .Activities a.CommentLink:hover {
 
     background: #222029 !important;
     border-color: #18171e;

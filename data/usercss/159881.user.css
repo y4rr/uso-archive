@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201011.5.35
+@version        20201015.7.46
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1771,8 +1771,8 @@
 [dir] ::-webkit-scrollbar { width: 10px; border: 0; }
 [dir] ::-webkit-scrollbar-track { background: #16202C; border: 1px solid #242F3D; }
 [dir] ::-webkit-scrollbar-thumb { background: #7C7F82; border: 1px solid #242F3D; border-radius: 10px; }
-[dir] body::-webkit-scrollbar { background: #4974A6; }
-[dir] body::-webkit-scrollbar-track { margin-top: 42px; }
+/* [dir] body::-webkit-scrollbar { background: #4974A6; } */
+/* [dir] body::-webkit-scrollbar-track { margin-top: 42px; } */
 [dir] .mail_link { border-left-color: #242F3D; }
 [dir] .mail_link__title { color: #B4C8E0; }
 [dir] .thumbed_link__thumb { background-color: #16202C; box-shadow: inset 0 0 0 1px #242F3D; }
@@ -2211,8 +2211,6 @@
 [dir] .ProfileEditorVkconnect__notice { background: #242F3D; }
 [dir] #profile_editor input.dark[disabled] { background: #242F3D; border-color: #314154; }
 [dir] .group_page_block_footer { background-color: rgba( 36, 47, 66, .38 ); border-top-color: #242F3D; }
-
-
 }
 
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
@@ -2286,7 +2284,6 @@
 [dir] #wke_cont>div.wk_sub_header {
     color: #fff;
 }
-
 }
 
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
@@ -2423,19 +2420,91 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 [dir] .choose_search_cont input {
     background-color: #16202C;
 }
-body {
-	--steel_gray_80: hsl(228, 12%, 92%);
-	--steel_gray_80: hsl(214, 26%, 23%);
-	--steel_gray_120: hsl(207, 14%, 85%);
-	--steel_gray_120: hsl(214, 26%, 19%);
-/* 	--blue_600:  #2a5885;*/
-	--blue_600:  #8EC5FF;
-}
+
 [dir] .apps_options_bar.apps_options_bar_bottom {
     border-top-color: #242f3d;
 /*     box-shadow: 0 1px 0 0 var(--steel_gray_120), 0 0 0 1px var(--steel_gray_80); */
 }
 #qr_code_btn, #app_widget_header_btn {
 /*     color: var(--blue_600); */
+}
+
+[dir] #submit_post_box:not(.shown):not(.test_posting_experiment_b):not(.test_posting_experiment_c):not(.own_field) .poster__open-btn-wrapper {
+    border: none;
+}
+[dir] #submit_post_box:not(.shown):not(.own_field) .poster__open-btn-wrapper::before {
+/*     background-color: var(--steel_gray_100); */
+	--steel_gray_100: hsl(214, 26%, 26%);
+}
+
+body {
+	--steel_gray_80: hsl(228, 12%, 92%);
+	--steel_gray_80: hsl(214, 26%, 23%);
+	--steel_gray_120: hsl(207, 14%, 85%);
+	--steel_gray_120: hsl(214, 26%, 19%);
+	--gray_900: #222222;
+	--gray_900: #eeeeee;
+	--blue_600:  #2a5885;
+	--blue_600:  #8EC5FF;
+/*=======*/
+	--steel_gray_100: #dce1e6;
+	--steel_gray_100: hsl(214, 26%, 26%);
+	--black: #fff;
+/* 	--white: #0E1621; */
+/* 	--white: #16202C; */
+	--steel_gray_60: #0E1621;
+	--steel_gray_20: hsla(218, 29%, 18%, .5);
+}
+
+.article_snippet .article_snippet__title {
+	color: inherit;
+}
+
+[dir] .TopSearch__input:focus {
+    background-color: var(--white);
+}
+/* [dir] .ts_contact.active em.ts_clist_hl,  */
+[dir] em.ts_clist_hl {
+/*     background: var(--steel_gray_140); */
+	background:#B233CC;
+}
+
+
+/* new---------------theme */
+[dir] body.new_header_design #page_header_cont {
+/*     background-color: var(--white); */
+/*     border-bottom: 1px solid var(--steel_gray_100); */
+	background-color: #0e1621;
+/* 	border-bottom-color: hsla(218, 29%, 18%, .5); */
+	border-bottom-color: #0e1621;
+}
+
+[dir] body.new_header_design .TopSearch__input {
+	
+    background-color: var(--steel_gray_60);
+}
+
+[dir] body.new_header_design .top_audio_player:hover,
+[dir] body.new_header_design .top_nav_btn:hover,
+[dir] body.new_header_design .top_nav_link:hover,
+[dir] body.new_header_design .top_nav_link.active,
+[dir] body.new_header_design .top_nav_btn.active {
+	
+    background-color: var(--steel_gray_20);
+}
+
+[dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
+/* background-image: none; */
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='136' height='24' fill='none'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M0 11.5c0-5.421 0-8.132 1.684-9.816C3.368 0 6.08 0 11.5 0h1c5.421 0 8.132 0 9.816 1.684C24 3.368 24 6.08 24 11.5v1c0 5.421 0 8.132-1.684 9.816C20.632 24 17.92 24 12.5 24h-1c-5.421 0-8.132 0-9.816-1.684C0 20.632 0 17.92 0 12.5v-1z' fill='%232787F5'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.5 7.5H4.75c-.5 0-.6.235-.6.495 0 .463.593 2.762 2.762 5.803C8.36 15.874 10.396 17 12.25 17c1.112 0 1.25-.25 1.25-.68v-1.57c0-.5.105-.6.458-.6.26 0 .704.13 1.742 1.131C16.887 16.468 17.083 17 17.75 17h1.75c.5 0 .75-.25.606-.743-.158-.492-.725-1.206-1.476-2.051-.408-.482-1.02-1.001-1.205-1.26-.26-.335-.186-.483 0-.78 0 0 2.132-3.003 2.354-4.023.111-.37 0-.643-.529-.643H17.5c-.445 0-.65.235-.761.495 0 0-.89 2.17-2.151 3.578-.408.408-.593.538-.816.538-.111 0-.272-.13-.272-.5V8.142c0-.445-.13-.643-.5-.643h-2.75c-.278 0-.445.207-.445.402 0 .422.63.52.695 1.706v2.577c0 .565-.102.667-.325.667-.593 0-2.036-2.178-2.892-4.672-.167-.484-.336-.68-.783-.68z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M67 12.501C67 15.843 64.567 18 61.12 18s-5.88-2.157-5.88-5.499C55.24 9.159 57.672 7 61.12 7 64.567 7 67 9.16 67 12.501zm-9.222 0c0 2.073 1.354 3.499 3.342 3.499s3.342-1.426 3.342-3.499c0-2.073-1.354-3.451-3.342-3.451s-3.342 1.378-3.342 3.451zm-17.032-.211c.952-.445 1.565-1.185 1.565-2.327 0-1.734-1.586-2.961-3.87-2.961h-5.266V18h5.499c2.368 0 4.018-1.29 4.018-3.046a2.76 2.76 0 00-1.946-2.665zm-5.14-3.279h2.835c.846 0 1.438.508 1.438 1.206s-.592 1.184-1.438 1.184h-2.834v-2.39zm3.068 6.98h-3.067v-2.686h3.067c.951 0 1.586.55 1.586 1.353 0 .804-.635 1.333-1.586 1.333zM51.836 18h3.194l-5.055-5.71 4.632-5.288h-2.898l-3.68 4.272h-.592V7.002h-2.432V18h2.432v-4.378h.592L51.836 18zm24.63-10.998v4.336h-4.928V7.002h-2.433V18h2.432v-4.441h4.928V18h2.433V7.002h-2.433zM86.905 18h-2.432V9.223h-3.807V7.002h10.046v2.22h-3.807V18zM96.61 7c-2.137 0-4.019.89-4.569 2.794l2.242.38c.338-.676 1.1-1.254 2.2-1.254 1.332 0 2.115.895 2.22 2.333h-2.368c-3.236 0-4.844 1.417-4.844 3.448 0 2.051 1.587 3.299 3.828 3.299 1.798 0 3.004-.825 3.532-1.734L99.358 18h1.798v-6.176c0-3.193-1.735-4.824-4.547-4.824zm-.72 9.16c-1.184 0-1.945-.613-1.945-1.565 0-.846.613-1.438 2.474-1.438h2.305c0 1.797-1.142 3.003-2.834 3.003zM113.73 18h-3.194l-3.807-4.378h-.592V18h-2.432V7.002h2.432v4.272h.592l3.68-4.272h2.898l-4.632 5.288L113.73 18zm4.274 0h2.432V9.223h3.807V7.002h-10.046v2.22h3.807V18zm12.287-11c3.341 0 5.71 2.202 5.71 5.374 0 .296-.021.55-.042.783h-8.841c.233 1.692 1.459 2.834 3.321 2.834 1.29 0 2.305-.55 2.834-1.333l2.284.381c-.825 2.094-2.982 2.961-5.266 2.961-3.342 0-5.711-2.178-5.711-5.499 0-3.32 2.369-5.501 5.711-5.501zm3.066 4.253C132.955 9.878 131.813 9 130.291 9c-1.481 0-2.623.836-3.025 2.253h6.091z' fill='%23eeeeee'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h136v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+[dir] body.new_header_design .left_count_wrap {
+/*     background-color: var(--steel_gray_200); */
+	 background-color: hsl(214, 26%, 23%);
+}
+
+[dir] .AppLeftMenuWithNotify:before {
+    border-color: var(--steel_gray_60);
+/*     background-color: var(--red); */
 }
 }

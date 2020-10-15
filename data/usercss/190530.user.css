@@ -2,8 +2,8 @@
 @name           youtube dark mode ui
 @namespace      USO Archive
 @author         Ameer Kort
-@description    `you must be in youtube's dark mode to make this style work`
-@version        20201014.8.43
+@description    `<p style="background:yellow">you must be in youtube's dark mode to make this style work</p>`
+@version        20201015.5.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -259,5 +259,36 @@ ytd-thumbnail-overlay-now-playing-renderer.ytd-thumbnail span{
 	padding: 5px 10px;
 	border-radius: 200px
 }
+#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{
+padding:0;
+margin-left: 10px;}
 
+#star-survey.ytd-inline-survey-renderer , #inline-survey-compact-video-renderer.ytd-inline-survey-renderer{
+	border-radius: 20px
+
+}
+ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer{
+	    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+#dismiss-button.ytd-inline-survey-renderer{
+ border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+ytd-checkbox-survey-option-renderer.ytd-inline-survey-renderer{
+	border-radius: 12px;
+	padding: 3px 10px
+}
+
+#checkboxContainer.paper-checkbox{
+border-radius:50%
+}
+
+ytd-button-renderer #button.ytd-button-renderer{
+	border-radius:10px !important
+}
 }

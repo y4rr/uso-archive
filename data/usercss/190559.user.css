@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jostin Andres Rodriguez Zambrano
 @description    `No es mucho pero es trabajo honesto.jpg`
-@version        20201015.0.16
+@version        20201015.1.20
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,9 +31,7 @@
     --negativo: rgb(131, 43, 43);
 }
 
-div {
-	background: var(--color3) !important;
-}
+
 
 .container-fluid, .frontpage-guest-header{
     background-color:var(--color1) !important;	
@@ -114,6 +112,22 @@ div[role="dialog"] {
 /**/
 .confirmation-message{
 	color: var(--color0);
+}
+
+.modal-content{
+	background: var(--color2);
+}
+
+#page{
+    background: var(--color3) !important;
+}
+
+.form{
+    background: var(--color2) !important;
+}
+
+.row{
+	background: var(--color3);
 }
 
 /*---------------------------- BOTONES -------------------------*/

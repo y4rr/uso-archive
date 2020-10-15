@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cckats
 @description    `A dark theme for unboxholics.com`
-@version        20201014.14.42
+@version        20201015.10.54
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -38,10 +38,65 @@ body {
 .logo{
 background-image: url(https://unboxholics.com/theme/site/img/uh_logo_white.png);
     background-size: contain;
+background-repeat:no-repeat;
+background-position-y:center
+}
+.nav-icon-toggle__inner,.nav-icon-toggle__inner:before,.nav-icon-toggle__inner:after {
+background-color:#fff
+}
+.sidenav {
+background-color:#1f1f1f
+}
+.sidenav__menu-url:focus {
+    color: #ffffff;
+}
+.sidenav__menu-url {
+color:#fff
+}
+
+.sidenav__menu-toggle {
+color:#fff
+}
+
+.sidenav__menu-dropdown {
+background-color:#111
+}
+
+.sidenav__menu-dropdown a,.sidenav__menu-dropdown:hover,.sidenav__menu-dropdown .sidenav__menu-toggle {
+color:#fff
+}
+
+.sidenav__menu--is-open>a {
+background-color:#ef172f;
+color:#fff
+}
+
+.sidenav__menu-dropdown {
+background-color:#121212
+}
+
+.sidenav__menu li {
+border-bottom:1px solid #ef172f
+}
+
+.sidenav__menu-dropdown li:first-child {
+border-top:1px solid #ef172f
+}
+
+.sidenav__close-button {
+color:#fff
 }
 .sponsored-label {
     background-color: #ff172b;
     padding: 55px;
+}
+li.merch:hover {
+    background-color: #1f1f1f;
+    transition: all .3s ease-in-out;
+}
+li.merch {
+    background-color: #ef172f;
+    transition: all .3s ease-in-out;
 }
 #main > header > div > div > div > a > img {
 opacity: 0;
@@ -99,13 +154,50 @@ p {
 .tab-post__tabs .tabs__item a {
     color: #d2cfcf;
 }
-.tab-post__tabs .tabs__item--active a {
+.entry__img-holder:hover + div.entry__body > div > h2 > a,
+.entry__img-holder:hover + div.entry__body.card__body > h2 > a,
+.entry__img-holder:hover + div.entry__body.post-list__body.card__body > h2 > a,
+.entry__img-holder:hover + div.entry__body.card__body > div.entry__header > h2 > a,
+.entry__title:hover a {
     color: #ef172f;
+}
+.moon {
+    color: #ff172d;
+}
+.nav__search-box {
+    background-color: #1f1f1f;
+}
+.nav__search-input {
+    color: #fff;
 }
 .btn-button:hover, .btn-button:focus {
     color: #ef172f;
-    background-color: #ffffff;
+    background-color: #121212!important;
 }
+#nav__search-box > form > button{
+    
+border-top-color: rgb(239, 23, 47) !important;
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
+    border-right-color: rgb(239, 23, 47) !important;
+    border-right-style: solid !important;
+    border-right-width: 1px !important;
+    border-bottom-color: rgb(239, 23, 47) !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+}
+.tab-post__tabs .tabs__item--active a {
+    color: #ef172f;
+}
+input, select, textarea {
+    border: 1px solid #ef172f;
+}
+
 .breadcrumbs {
     background-color: #1f1f1f;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .25);

@@ -2,129 +2,66 @@
 @name           Protonmail Beta clean
 @namespace      USO Archive
 @author         ZJRmXXQq3s
-@description    `Removed unnecessary crap, dimmed distractions. The goal was to focus on messages.Also having Open Sans font installed on your machine will make it look nicer.`
-@version        2020522.21.46
+@description    `Resized some things, moved other thing a little, painted some icons for ease of use.Also having Open Sans font installed on your machine will make it look nicer.`
+@version        20201015.5.7
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://beta.protonmail.com/") {
-body, .bodyDecrypted table, .bodyDecrypted, pre, p, font {
-	font-family: 'Open Sans', "Lucida Grande", Verdana, Arial, sans-serif !important;
-    font-weight: 300 !important;
-	font-size: 100%;
-}
-
+/* 
+- Set faont-family to Open Sans if it is installed on machine, if not - use ugly Lucida Grande
+- make text slimmer
+- set font size to human-readable
+*/
 body {
-	font-size: 130%;
+	font-family: 'Open Sans', "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 120%;
 }
 
-.conversationHeader-header .ng-binding {
-	font-size: 80% !important;
-    padding-left: 5px !important;
+/* reset bolds from 900 to 600 */
+.bold, .strong, b, strong {
+	font-weight: 600;
 }
 
-.displayContentBtn-notice-text {
+/* shrink sidebar */
+.sidebar {
+	max-width: 20rem !important;
 }
 
-.message-infobox {
-	opacity: 0.5 !important;
-	font-size: 80% !important;
+/* shrink emails list */
+.items-column-list {
+	width: calc((65% + var(--width-sidebar, 19rem))*0.35);
 }
 
-[data-name='trash'], [data-name='delete'] {
+/* New Emails counter tooltip */
+.navigation__counterItem {
+	background: #657ee499; 
+}
+
+
+/* paint Trash and Delete Permanently icons red */
+[data-test-id='toolbar:movetotrash'] svg, [data-test-id='toolbar:deletepermanently'] svg, [title='Trash'] svg.navigation__icon {
 	fill: #d94949ab !important;
 }
 
-[data-name='inbox'] {
+/* Inbox icon blue */
+[data-test-id='toolbar:movetoinbox'] svg, [title='Inbox'] svg.navigation__icon {
 	fill: #369bf4ab !important;
 }
 
-[data-name='archive'] {
+/* Starred icon yellow */
+[title='Starred'] svg.navigation__icon {
+	fill: rgb(234, 200, 25) !important;
+}
+
+/* Archive icon green */
+[data-test-id='toolbar:movetoarchive'] svg, [title='Archive'] svg.navigation__icon {
 	fill: #85e685ab !important;
 }
 
-[data-name='spam'] {
+/* Spam icon orange */
+[data-test-id='toolbar:movetospam'] svg, [title='Spam'] svg.navigation__icon {
 	fill: #ff7800 !important;
-}
-
-[data-name='search'], .btnAdvancedSearch-icon-desktop {
-	opacity: 0.2;
-}
-
-[id="sidebarLabels"] {
-	margin-right: 14px;
-}
-
-.folderSelectorDropdown-icon use {
-	fill: var(--fillcolor-icons,#e7d292) !important;
-}
-
-.conversation:not(.read):not(.active) .senders,
-.conversation:not(.read):not(.active) .subject-num-message,
-.conversation:not(.read):not(.active) .subject-text,
-.conversation:not(.read):not(.active) .time {
- font-weight:600 !important;
-}
-
-.bold, .strong, b, strong {
- font-weight:600 !important;
-}
-
-[aria-current=page].navigation__link {
- font-weight:600 !important;
-}
-
-
-.headerSecuredDesktop-logo,
-.topnav-list .mr1, #pm_sidebar .pm-button-blue, #aside-bar {
-	opacity: 0.3 !important;
-    z-index: 100 !important;
-}
-
-.sidebar {
-	max-width: 16rem !important;
-}
-
-.items-column-list {
-	width: calc((85% + var(--width-sidebar, 19rem))*0.35);
-}
-
-.time {
-	font-size: 90% !important;
-    opacity: 0.7 !important;
-}
-
-.labels .navigation__link {
-	padding: 0.5rem 0.4rem 0.5rem 2rem !important;
-}
-
-#labelSettings {
-    display: none !important;
-}
-
-.encryptionStatus .icon-16p {
-	opacity: 0.5 !important;
-    width: 12px !important;
-    height: 12px !important;
-    position: relative !important;
-    top: 4px !important;
-    left: 2px !important;
-}
-
-.labelsElement-name {
-	text-transform: none;
-    font-size: 90%;
-}
-
-.messagePlaceholder, #pm_placeholder {
-	opacity: 0.3 !important;
-}
-
-#conversation-list-columns .conversation.active .item-titlesender{
-    color: #fff;
-}
-
-[ng-if="showWelcome"] {
-	opacity: 0.2;
 }
 }

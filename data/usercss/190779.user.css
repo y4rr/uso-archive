@@ -3,25 +3,29 @@
 @namespace      USO Archive
 @author         Игорь Худяков
 @description    `Только начал менять тему, в ближайшее время изменю большую часть.`
-@version        20201014.20.20
+@version        20201015.10.24
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://vk.com/") {
-[dir] body, .page_actions_wide .clear_fix .edit a, [dir] .profile_more_info_link:hover, [dir] .no_current_info:hover, [dir] .page_status_editor .editor {background: #222 !important;}
-.page_block, .page_header_cont, #post_field, [dir] .submit_post, [dir] div[contenteditable=true] {background: #2a2a2a !important; box-shadow: none !important;}
-.left_count_wrap .fl_r .left_count_wrap_hovered, [dir] body.new_header_design .left_count_wrap {background: #333 !important;}
+[dir] body, .page_actions_wide .clear_fix .edit a, [dir] .profile_more_info_link:hover, [dir] .no_current_info:hover, [dir] .page_status_editor .editor, [dir] .im-mess.im-mess_unread:not(.im-mess_light), [dir] .ui_scroll_default_theme.ui_scroll_scrolled>.ui_scroll_bar_container>.ui_scroll_bar_outer>.ui_scroll_bar_inner, [dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover {background: #222 !important;}
+.page_block, .page_header_cont, #post_field, [dir] .submit_post, [dir] div[contenteditable=true], [dir] .im-page--toolsw, [dir] .ui_search, [dir] .im-chat-input, [dir] .im-page .im-page--dialogs-footer, [dir] .im-page--chat-header-in, [dir] .im-page .im-page--history-new-bar {background: #2a2a2a !important; box-shadow: none !important;}
+.left_count_wrap .fl_r .left_count_wrap_hovered, [dir] body.new_header_design .left_count_wrap, [dir] .im-mess.im-mess_unread:last-child::before, [dir] .im-mess.im-mess_selected:last-child::before, [dir] .im-page .im-page--history-new-bar>span {background: #333 !important;}
 a, .group_name a {color: #2860A1 !important;}
 .left_icon {filter: brightness(5) !important;}
-/*a {color: #2787F5 !important;}*/
-.header_top span:first-child, .page_name, .ui_tab .ui_tab_sel, .wall_post_text, body.new_header_design #side_bar .left_label {color: white !important;} /*.flat_button.secondary*/
+.header_top span:first-child, .page_name, .ui_tab .ui_tab_sel, .wall_post_text, body.new_header_design #side_bar .left_label, .im-mess .im-mess--text {color: white !important;}
+[dir] .nim-dialog.nim-dialog_unread-out:not(.nim-dialog_failed) .nim-dialog--unread {background: #aaa !important;}
 .left_row:hover {background: #2a2a2a !important;}
-[dir] .wide_column .page_top, [dir] .counts_module, .more_div, [dir] .like_cont, [dir] .post_actions_btns, [dir] .submit_post, [dir] .ui_tabs {border-color: #666 !important;}
+[dir] .wide_column .page_top, [dir] .counts_module, .more_div, [dir] .like_cont, [dir] .post_actions_btns, [dir] .submit_post, [dir] .ui_tabs, [dir] .nim-dialog .nim-dialog--content {border-color: #666 !important;}
+[dir] .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover, [dir] .nim-dialog:not(.nim-dialog_deleted):hover+.nim-dialog, [dir] .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--photo {border-color: #222;}
 .inl_bl .left_count, #post_field, [dir] body.new_header_design .left_count_wrap {color: white !important;}
-.page_header_cont, [dir] .page_status_editor .editor, [dir] div[contenteditable=true] {border: none !important; box-shadow: 0 0 10px #222 !important;}
+.page_header_cont, [dir] .page_status_editor .editor, [dir] div[contenteditable=true], [dir] .im-page--toolsw, [dir] .ui_search, [dir] .im-chat-input, [dir] .im-page .im-page--dialogs-footer {border: none !important; box-shadow: 0 0 10px #222 !important;}
 
-.rel_date, .page_list_module .group_desc, .page_list_module .people_desc, .page_list_module .people_extra {color: #aaa !important;}
-.post_date .post_link:hover, [dir] .page_status_audio {color: #aaa !important;}
+[dir] .im-page--chat-header-in, [dir] .im-page--chat-header-in {border: none !important;}
+
+[dir] .ui_scroll_default_theme.ui_scroll_dragging>.ui_scroll_bar_outer>.ui_scroll_bar_inner, [dir] .ui_scroll_default_theme .ui_scroll_bar_container:hover>.ui_scroll_bar_outer>.ui_scroll_bar_inner {background: #222 !important;}
+
+.rel_date, .page_list_module .group_desc, .page_list_module .people_desc, .page_list_module .people_extra, .post_date .post_link:hover, [dir] .page_status_audio, ._im_dialog_link {color: #aaa !important;}
 .like_btns {filter: brightness(2) grayscale(1) !important;}
 
 [dir] body.new_header_design .TopSearch__input, [dir] .flat_button, [dir] body.new_header_design .top_nav_btn:hover {background-color: #222 !important;}
