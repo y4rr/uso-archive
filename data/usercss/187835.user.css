@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         danny rh
 @description    `animeflv in dark mode , player cine mode and hide ads`
-@version        2020925.22.29
+@version        20201014.23.13
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -131,6 +131,11 @@ aside[class="SidebarA BFixed"]{
 }
 div[style="width:100%;height:768px;position:fixed;left:0;top:95px;overflow:hidden;visibility:hidden;z-index:1000000000000000000"], .adtrue-div, #arc-widget-container{
     display:none;
+}
+div[style="position: absolute; top: 95px; left: 0px; z-index: 2147483647; width: 100%; height: 768px; overflow: hidden; visibility: hidden;"], div[style="position: absolute; top: 95px; right: 0px; z-index: 2147483647; width: 100%; height: 768px; overflow: hidden; visibility: hidden;"], div[style="padding:20px 0"], .u1a85eo4{
+    display: none !important ;
+    border-radius: 100px;
+    clip-path: circle(0);
 }
 }
 

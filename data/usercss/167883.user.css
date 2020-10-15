@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Yog
 @description    `This is almost a complete remake 2.0 of css for the game Pardus with more of everything with a cherry on top.* Make sure you use "Stylus" or you can try it as userscript . Both ways will protect your privacy ** make sure you install http://gramajda.hekko24.pl/p/pardus/teutonnormalce.ttf font *Some of the features:- colors with --var_iables so you can fiddle with them to your liking (initial introduction)- nav grid and highlight of mouse-hovered fields- Some of links positioned fixed for convenient access- Makes Bulletin boards look compact in a way (to disable, you have to delete everything from bulletin boards comment to tables comment)- better space usage in some placesThis probably works faster as userstyle used via Stylus rather than a userScript`
-@version        202046.1.29
+@version        20201014.19.53
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name         An almost complete remake 2.0 of css for the game Pardus with more of everything.
 @namespace    https://userstyles.org/styles/167883/pardus-style-remake-2-0
-@version      2.0.2
+@version      2.0.3
 @license      CC BY-SA - Creative Commons Attribution-ShareAlike
 ==/UserStyle== */
 
@@ -103,29 +103,37 @@ html {
 }
 body {
     background:url(http://gramajda.hekko24.pl/p/background.png) #111 !important;
+    background-position: 2% 67.2% !important;
     color: var(--text-color) !important;
-    margin-top:0px !important;
-    margin-bottom:0px !important;
+    margin:0px !important;
 }
 table {
     color: var(--text-color) !important;
 }
+/* page scrollbar flicker fix */
+body[style] > table {
+    width: calc(100vw - 20px) !important;
+    padding-left: 20px;
+}
 
 /* huge screen spacing */
-td[height="58"][width="30"] img {
-    width: calc(50vw - 850px) !important
+td[height="58"][width="30"] > img {
+    width: calc(50vw - 840px) !important;
+    min-width: 9px;
 }
 body > table > tbody > tr > td[width="25%"]:first-child {
-    padding-left: calc(50vw - 840px) !important
+    padding-left: calc(50vw - 850px) !important;
+    border-left: 20px solid transparent;
 }
 body > table > tbody > tr > td[width="25%"]:last-child {
-    padding-right: calc(50vw - 840px) !important
+    padding-right: calc(50vw - 850px) !important;
+    border-right: 20px solid transparent;
 }
 #tdTabsLeft {
-    padding-left: calc(50vw - 850px) !important
+    padding-left: calc(50vw - 850px) !important;
 }
 #tdTabsRight {
-    padding-right: calc(50vw - 850px) !important
+    padding-right: calc(50vw - 850px) !important;
 }
 
 /* panels */
@@ -197,6 +205,40 @@ margin:-11px 6px -15px 8px;
     display: inline-block;
     margin-left: -10px;
 }
+#commands_content a {
+    line-height: 20px;
+}
+#commands_content #aCmdPlanet:after,
+#commands_content #aCmdStarbase:after,
+#commands_content #aCmdBuilding:after,
+#commands_content a[id*="Trade"]:after,
+#commands_content a#aCmdOwnBuilding:after,
+#commands_content #aCmdShipEquipment:after {
+    content: '';
+    position: absolute;
+    left: 194px;
+    margin-top: -40px;
+    padding: 12px;
+    border: 1px solid var(--teal-color);
+    box-shadow: 0 0 0px 3px #000, 0 0 0px 4px #002A64;
+    border-radius: 50%;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 620 512"><path d="M624 448H16c-9 0-16 7-16 16v32c0 9 7 16 16 16h608c9 0 16-7 16-16v-32c0-9-7-16-16-16zM45 206l89 80a63 63 0 0025 14l288 78c26 7 54 9 81 1 29-8 43-21 47-35 4-15-2-33-23-55-20-20-45-33-71-40l-98-27L283 30c-2-6-6-10-12-12L206 1c-11-3-21 5-21 16l48 164-102-28-28-67c-1-5-6-9-11-10L53 65c-11-3-21 5-21 16v101c0 9 6 18 13 24z" fill="%23DFF" /></svg>');
+}
+#commands_content a#aCmdOwnBuilding:after,
+#commands_content a[id*="Trade"]:after {
+    margin-top: -10px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 462 512"><path d="M202 335c0 16 13 29 29 29h72c13 0 19-4 29-10 6-5 14-4 19 2l35 38c7 6 6 18-2 24-25 19-49 30-80 30v31c0 19-8 18-16 20l-44 9c-9 1-16 5-16-12v-48c-47-1-106-29-106-101V184c0-71 53-120 105-120V33c0-9 7-18 16-20l44-9c10-2 16 3 16 12v48c32 0 56 11 81 30 8 6 9 18 1 25l-34 38c-6 5-14 6-20 2-10-7-22-11-34-11h-66c-17 0-30 13-30 30" fill="%23DFF" /></svg>');
+}
+#commands_content #aCmdShipEquipment:after {
+    margin-top: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 6 500 500"><path d="M255 8c-18 0-36 2-54 6-5 1-9 6-9 12v49c-22 8-43 20-61 35L89 85c-5-2-11-1-15 3-25 27-44 59-55 94-2 6 1 12 6 14l42 25c-4 23-4 47 0 70l-42 25c-5 3-7 8-6 14 11 35 30 68 55 94 4 5 10 6 15 3l42-25c18 16 39 27 61 35v49c0 6 4 11 9 12 37 8 75 8 110 0 5-1 9-6 9-12v-18l-65-114c-41 3-73-8-95-46-20-35-17-67 1-100 3-7 13-7 16 0l40 68c9 16 84-29 75-44l-39-68c-4-6 1-14 8-14 38 1 67 14 88 50 21 38 15 71-8 105l64 111 18 11c5 2 11 2 15-3 25-26 44-59 55-94 1-6-1-12-6-14l-42-25c4-23 4-47 0-70l42-25c5-3 7-8 6-14-11-35-30-68-55-94-4-4-10-5-15-3l-42 25c-18-15-39-27-61-35V26c0-6-4-11-9-12-19-4-37-6-56-6z" fill="%23DFF" /></svg>');
+}
+#commands_content a[id]:hover:after {
+    filter: brightness(1.3) !important;
+}
 #aCmdCollect2,
 #aCmdCollect5 {
     position: relative;
@@ -231,6 +273,78 @@ margin:-11px 6px -15px 8px;
 #aCmdCollect2:hover:before,
 #aCmdCollect5:hover:before {
     opacity: 1;
+}
+#tableCargoRes {
+    width: 150px;
+    margin:auto;
+    white-space: nowrap;
+}
+#cargo_content .hlLink:before,
+#cargo_content .hlLink:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    padding: 19px;
+    border-radius: 50%;
+    border: 1px solid var(--action-color);
+    border-top-color: transparent;
+    transform: rotate(0deg);
+}
+#cargo_content .hlLink:after {
+    transform: scale(1.14) rotate(45deg);
+    border-left-color: transparent;
+}
+#cargo_content .hlLink {
+    position: relative;
+    display: inline-block;
+    margin: 6px 30px -50px;
+    width: 40px;
+    height: 32px;
+    padding: 4px 5px 0;
+    background: transparent;
+    line-height: 90%;
+    font-weight: normal;
+    text-align: center;
+    text-transform: lowercase;
+}
+#cargo_content div[style][align] {
+    margin: 0 !important;
+}
+#cargo_content div[style][align] > b {
+    display: block;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+#cargo a > font[size="1"] {
+    position: relative;
+    bottom: -25px;
+    padding: 6px 10px 11px;
+    clip-path: polygon(0 8px, 8px 0, calc(100% - 8px) 0, 100% 8px, calc(100% - 5px) 8px, calc(100% - 5px) 80%, 5px 80%, 5px 8px );
+    box-shadow: inset 0 -1px 3.5px 1px var(--action-color);
+    border-radius: 11px 11px 0 0;
+    color: var(--action-color);
+    text-shadow: 0 2px 1px black, 0 2px 1px black;
+    background: black;
+    background-image: 
+    repeating-linear-gradient(180deg,
+        black 0 1px,
+        rgba(0, 0, 0, .6) 18px 23.1px,
+        rgba(0, 0, 0, .1) 23px 80px),
+    repeating-linear-gradient(60deg, 
+        transparent -5px 0px, 
+        var(--action-color) 0px 6px);
+}
+#cargo {
+    margin-bottom: 0px;
+}
+#otherships_content > table[id^='tableScannerShip'] {
+    margin: -8px 0 -0px;
+}
+#otherships_content > table[id] td:first-child {
+    padding-top:14px;
+    box-sizing: border-box;
 }
 #otherships[style="display: block;"] {
     display: table !important;
@@ -268,6 +382,11 @@ margin:-11px 6px -15px 8px;
 #yourposition #miniMapper {
     width: auto !important;
     margin-bottom: -2px;
+    margin-top: -2px;
+}
+#yourposition #miniMapperMap {
+    /*left: 50% !important;
+    transform: translate(-50%, 0);*/
 }
 #mini_map_coords:not(:empty) {
     top: auto !important;
@@ -287,7 +406,7 @@ margin:-11px 6px -15px 8px;
     top: 0;
     right: 0;
     left: 0;
-    height: calc(100% + 40px);
+    bottom: 0;
     min-height: 100vh;
     z-index: -1;
     background: url(http://gramajda.hekko24.pl/p/pardus/spacebg.jpg) top center;
@@ -300,7 +419,7 @@ margin:-11px 6px -15px 8px;
     padding: 0px 14px 5px 0;
     margin-top: -4px;
 }
-#tdSpaceChart td[style="background-color:#00001C;"] > div[style] {
+#tdSpaceChart > table > tbody > tr > td[style] > div[style] {
     overflow: visible !important;
 }
 #tdSpaceChart table[style] tr:nth-child(2n) td[class]:first-child {
@@ -445,7 +564,7 @@ table[style="height:58px;"] td {
     background-image:none !important;
 }
 table[style="height:58px;"] td td:not(.menubutton) {
-    width: 6px;
+    width: 6px !important;
     max-width: 6px;
     min-width: 6px;
 }
@@ -495,16 +614,17 @@ td.menubutton > a {
     box-shadow: inset 0 -25px 40px -20px rgb(7, 22, 43);
     filter: contrast(1.1) saturate(1.1);
 }
-td[height="58"] img {
+.menubutton img,
+td[height="58"] > img {
     height:0px !important;
-    filter: contrast(1.2) saturate(.8);
 }
 .menubutton .img1 {
 display: inline-block !important;
 padding:25px 57px;
-margin: 0px -10px;
+margin: 0px -10px !important;
 background-position: center -7px;
 background-repeat: no-repeat;
+    filter: contrast(1.2) saturate(.8);
 }
 .menubutton .img2 {
 display: none !important;
@@ -555,6 +675,31 @@ background-image:url(http://gramajda.hekko24.pl/p/chat.png)!important;
 }
 .menubutton .menu-sublinks a:first-letter {
     font-size: inherit;
+}
+td[width="30"][height="58"] > span {
+    border: 0 !important;
+}
+td[width="30"][height="58"]:last-child > span {
+    position: relative !important;
+    top: auto !important;
+    right: -20px !important;
+    float: left;
+    opacity: .7;
+    font-size:10px !important;
+    padding: 13px 0 8px !important;
+    width: 31px !important;
+    margin: 0 -3.7px;
+    font-weight: normal !important;
+    transform: rotate(0deg) !important;
+    background-color: transparent !important;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 14 13"><path d="M6.64 2c-.71 0-1.37.38-1.72 1L2.27 7.6a1.99 1.99 0 000 1.98L3.67 12c.35.62 1 1 1.71 1h5.24c.7 0 1.37-.38 1.72-1l1.4-2.42c.35-.61.35-1.37 0-1.99L11.08 3c-.35-.62-1-1-1.72-1z" fill="black" stroke="cyan" stroke-width="0.4" /></svg>');
+}
+td[width="30"][height="58"]:last-child > span[style][title] {
+    transform: rotate(180deg) !important;
+    top: -13px !important;
+    
 }
 
 
@@ -700,12 +845,12 @@ h1 {
     z-index: 1;
 	top:0px;
     padding: 14px 0 0 0;
-    margin: 5px 0 18px;
+    margin: 8px 0 22px;
     text-transform:capitalize;
     font-variant:small-caps;
     font-size:28px;
     color:#70D1E2;
-    display: inline-block;;
+    display: inline-block;
     letter-spacing:1.5px; 
     border-bottom:3px #A2D3EA solid;
     line-height:100%;
@@ -713,20 +858,36 @@ h1 {
 h1:after {
     content: '';
     position: absolute;
-    left: -23px;
-    top: 0px;
-    padding: 25px;
-    transform: rotate(16deg);
+    left: -21px;
+    top: 2px;
+    padding: 24px;
+    transform: rotate(13deg);
     border: 4px var(--main-blue-color) solid;
     border-color: var(--main-blue-color) transparent;
     border-radius: 50%;
     box-sizing: content-box;
+    z-index: -1;
+}
+h1 a span {
+    position: absolute;
+    margin:2px 10px;
+    padding:0 8px;
+    border: 1px var(--main-blue-color) solid;
+    border-radius: 2em;
+    font-size: 15px !important;
+    letter-spacing: initial; 
+    font-variant: initial;
+    font-weight: normal;
+    white-space: nowrap;
 }
 .messagestyle h1[style] {
     display: table-cell;
     border-bottom: 0px;
     padding-top: 0px;
 	font-variant: normal;
+}
+h1 + * {
+    display: table;
 }
 .messagestyle h1[style]:after {
     content: none;
@@ -847,40 +1008,36 @@ span.cached {
     background: radial-gradient(rgba(40, 113, 194,.35) 50%, rgba(40, 113, 194,.7)) !important;
 }
 /* combat log */
+#report > .messagestyle {
+    width: 720px;
+    border-spacing: 1px;
+}
 th[width="5"] {
-    position: relative;
-    z-index: 1;
     border: 0;
     border-radius: 0 !important;
-    min-width: 60px;
+    min-width: 20px;
+    width: 20px;
+    padding-right: 15px !important;
     color: black !important;
     background: rgba(166, 209, 246, .8) !important;
-    box-shadow: inset 0 -12px 10px -10px rgba(0,0,0,.1);
-}
-th[width="5"]:before,
-th[width="5"]:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    left: -1px;
-    top: 50%;
-    margin-top: -10px;
-    border: 10px solid transparent;
-    border-left: 4px solid #091543;
-}
-th[width="5"]:after {
-    right: -1px;
-    left: auto;
-    border-right: 4px solid #091543;
-    border-left: 0;
+    box-shadow: -15px 0 0px rgba(166, 209, 246, .8);
 }
 th[width="5"]:first-child {
-    display: none;
+    visibility: hidden;
+    width: 0;
+    min-width: 0;
+    padding: 0 !important;
+    font-size: 0;
 }
 th[width="5"]+td {
     background: rgba(39,118,195, .12) !important;
     border-top: 0px solid black;
-    padding:0px 5px;
+    padding:0px 2px;
+    width: auto;
+}
+th[width="5"]:first-child+td {
+    padding-right: 15px;
+    min-width: 320px;
 }
 th[width="5"]+td b {
     color: rgba(255, 0, 0, .8);
@@ -994,10 +1151,14 @@ div.event-text:after {
 }
 div.event-text {
     background:url(http://gramajda.hekko24.pl/p/background.png) center / 50% !important;
-    margin-top:3px !important;
     padding: 4px 28px;
-    border-top:2px var(--main-blue-color) dotted !important;
     line-height: 120%;
+    overflow: hidden;
+    max-height:600px;
+    opacity: 1;
+}
+div.event-text:not(#territory_changes) {
+    max-height:200px;
 }
 div.event-text:first-letter {
     font-size: 37px !important;
@@ -1007,6 +1168,28 @@ div.event-text:first-letter {
     font-weight: bold;
     padding: 4px 4px 0px 0px;
 }
+div.event-text[style="display: block;"] {
+    animation: toggle-height .5s linear;
+}
+div.event-text[style="display: none;"] {
+    display: block !important;
+    max-height:0 !important;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height .5s, opacity 1s, padding .5s;
+}
+@keyframes toggle-height {
+  0% {
+    max-height: 0;
+    opacity: .1;
+  }
+  100% {
+    max-height:400px;
+    opacity: 1;
+  }
+}
+
 
 /* advanced skills */
 table+center > table.messagestyle[style] th {
@@ -1357,9 +1540,6 @@ border-color:#777;
 background:#2D312F !important;
 }
 
-#div_missions {
-	margin-right: -10px;	
-}
 #div_missions:after {
     content: '';
     clear: both;
@@ -1595,6 +1775,10 @@ table[width="800"][cellpadding="5"][border="1"] table table[border="1"] td{
 border-width:0px !important;
 height:10px !important;
 }
+table[width="800"] td[title][width="32"] img {
+    margin: 1px 1px;
+    padding:15px;
+}
 table[width="400"] td[width="1"] {
     background-color:red !important;
     padding-right: 1px;
@@ -1673,8 +1857,8 @@ table#minimap {
     bottom: 0;
     top:0px !important;
     left:auto !important;
-    right: 0 !important;
-    padding-right: 6px;
+    right: 6px !important;
+    padding-right: 2px;
     border: 0;
     border-spacing: 1px !important;
     background: transparent;
@@ -1699,6 +1883,7 @@ table#minimap tbody {
 table#minimap td {
     background-color:#202020;
     transition: all .2s;
+    padding:2px;
     position: relative;
 }
 table#minimap td[style*="51, 51, 51"],
@@ -1726,20 +1911,26 @@ table#minimap ~ table[style] {
 /* cluster map */
 .tabstyle .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] {
     background:url(https://static.pardus.at/img/kora/bgoutspace1.gif) !important;
-    padding: 0px;
+    padding: 80px 200px 130px;
+    margin-top: -76px;
+    border-radius: 0 0 45em 45em;
     border: 0 !important;
-    border-spacing: 1.68px;
-    margin-top: 10px;
-    margin-bottom: -120px;
-    transform: scale(.59);
-    transform-origin: top center;
-    box-shadow: 0px 100px 300px 200px #00001c;
+    border-spacing: 2px;
+    margin-bottom: -70px;
+}
+.messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] > tbody > tr,
+.messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] > tbody > tr > td {
+    height: auto !important;
+    padding: 0;
 }
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] > tbody > tr > th {
-    font-size: 24px !important;
-    font-weight: normal;
+    min-width:26px;
+    line-height: 26px;
     border: 0;
-    line-height: 31px;
+    padding: 0px;
+    border-radius: 0 !important;
+    font-size: 14px !important;
+    font-weight: normal;
     background: rgba(40, 113, 194, .0) !important;
     text-shadow: 0 0 transparent;
     position: relative;
@@ -1750,11 +1941,11 @@ table#minimap ~ table[style] {
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] > tbody > tr +tr > th:before {
     content: '';
     position: absolute;
-    top: -26px;
+    top: -14px;
     left: 50%;
-    margin-left: -60px;
-    width: 120px;
-    height: 120px;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
     background: rgba(40, 113, 194, .7);
     transform: rotate(45deg);
     z-index: -1;
@@ -1762,17 +1953,18 @@ table#minimap ~ table[style] {
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] > tbody > tr +tr > th:before {
     top: 50%;
     left: 0;
-    margin-top: -60px;
-    margin-left: -26px;
-    width: 120px;
-    height: 120px;
+    margin-top: -35px;
+    margin-left: -14px;
 }
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] table[style] {
     background: rgba(6,26,78,0.2) !important;
     min-width: 100%;
+    width:70px !important;
+    height:70px !important;
     border-spacing: 0;
     padding: 0;
-    border-radius: 5px;
+    font-size: 7px !important;
+    border-radius: 3px;
 }
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] table[style][title][onmouseover] {
     background: rgba(40, 113, 194,.4) !important;
@@ -1782,34 +1974,36 @@ table#minimap ~ table[style] {
     background: rgba(40, 113, 194,.8) !important;
     border: 0 !important;
     cursor: pointer;
-    padding: 0;
     transition: background .3s;
 }
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] table[style][title] th {
     color: white !important;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: normal;
     font-variant: normal;
     white-space: normal;
     background: transparent;
     border: 0;
+    padding: 0;
 }
 .messagestyle[style="background:url(//static.pardus.at/img/kora/bgoutspace1.gif)"] table[style][title] td > b {
+    position: relative;
     display: inline-block;
     margin: 0 -10px;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: normal !important;
+    text-shadow: 1px 0 1px rgba(0,0,0,1), -1px 0 1px rgba(0,0,0,1);
 }
 .messagestyle[style] font[size="+1"][color] {
     font-size: 0;
-    margin: -1px -3px;
-    padding: 4px;
-    border: 4px solid rgba(40, 113, 194, .9);
-    background: rgba(0, 0, 0, .1);
-    box-shadow: 0 0 3px #000;
+    margin: -1px -2px;
+    padding: 2px;
+    border: 3px solid rgba(40, 113, 194, .9);
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,.7);
     border-radius: 50%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: super;
 }
 .messagestyle[style] font[size="+1"][color="#FCA503"] {
     border-color: #FCA503;
@@ -1911,7 +2105,7 @@ td.tabcontent {
     min-width:85px;
     max-width:85px;
     height: 36px;
-    padding: 12px 2px 4px;
+    padding: 12px 2px 4px !important;
     line-height: 90%;
     vertical-align: middle;
     font-variant: small-caps;
@@ -1922,6 +2116,14 @@ td.tabcontent {
 	border: 1px solid var(--main-blue-color);
 	border-width: 1px 2px 0px;
 	outline: 2px solid transparent;
+    color: #88D1FF;
+    background: url(http://gramajda.hekko24.pl/p/background.png) 69% 52% / 200% !important;
+	text-shadow: 0 0 2px rgba(0,0,0,.9), 0 0 1px rgba(0,0,0,.9) !important;
+	box-shadow: inset 0px -20px 15px -10px rgba(0, 0, 0,.5),
+				inset 25px 15px 45px -10px rgba(40, 113, 194,1),
+				inset -25px 5px 45px -10px rgba(40, 113, 194,1),
+				0px -1px 1px 1px rgba(0,0,0,.9);
+    transition: all .2s;
 }
 td.tabcontent[onmousedown],
 td.tabcontent[onmouseover] {
@@ -1938,7 +2140,6 @@ td.tabcontent[onmouseover] {
 td.tabcontent[style*="tabactive.png"] {
 	top: 0px;
 	background: linear-gradient(rgba(40, 113, 194,.8), rgba(40, 113, 194,1) 80%) !important;
-	text-shadow: 0 0 2px rgba(255,255,255,.5);
 	box-shadow: 0px 0px 1px 1px rgba(0,0,0,.9);
     z-index: 2;
 }
@@ -2030,47 +2231,51 @@ background-repeat:no-repeat !important;
 padding:125px 600px 0px 0px !important;
 }
 */
+img[src$="emp_64x64.png"][width="32"],
 img[src$="emp_11x11.png"],
 img[src$="emp_16x16.png"],
 img[src$="flags/2.png"] {
     width: 0 !important;
     height: 0 !important;
     padding: 7px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 3c-3 0-7 2-8 5l-35 80c-3 7 3 14 10 13 23-5 45-5 66 0 7 1 13-6 10-13L264 8c-2-3-5-5-8-5zm200 96l-2 1h-3l-81 22c-7 2-9 11-4 16 18 15 32 33 42 51 3 7 12 7 16 1l40-78c2-3 1-7-1-9s-4-4-7-4zM56 99l-1 1c-2 0-5 1-6 3-2 3-3 6-1 9v1l41 76c3 7 12 7 15 0 11-20 26-38 42-51 5-5 3-14-4-16l-84-22-2-1zm200 5a164 164 0 100 328 164 164 0 000-328zm0 40a124 124 0 110 248 124 124 0 010-248zm0 2l1 2 6 8c17 28 16 47 11 61-3 7-7 12-10 16l-9 9-2 2 1 2c5 25 13 49 14 67v3l2 1c14 5 23 18 24 33 0 7-2 15-4 20l-5 8 9-3c17-5 32-20 43-37s19-35 19-50c0-11 2-37-7-65-10-27-32-55-79-72l-14-5zm10 47l-12 5c-28 15-45 32-55 51-9 19-11 39-11 59 0 8 2 18 7 27 4 8 10 17 18 19l5 2v-5c1-21 17-37 38-37h4v-4c-2-28-10-43-13-56s-2-25 12-50l7-11zM77 264h-1l-5 2-70 52c-3 3-4 6-3 10 1 3 3 5 7 6l85 16c7 2 13-6 10-12-9-21-14-43-15-65 0-5-4-8-8-9zm358 1c-4 0-8 3-8 8-1 23-7 45-15 65-3 6 3 14 10 12l85-16h1c3-1 5-4 6-7s0-7-3-9l-70-52a8 8 0 00-6-1zm-179 51a36 36 0 100 72 36 36 0 000-72zm-108 87c-4 0-9 3-9 8l-3 88c0 4 3 6 6 8 2 1 6 1 9-1l66-57c5-5 3-14-4-16-22-6-42-16-59-28a8 8 0 00-6-2zm216 0h-1l-5 2c-18 13-39 23-59 28-7 2-9 11-4 16l66 57c3 2 7 2 10 1 3-2 5-5 5-9l-3-87c0-4-5-8-9-8z" stroke="%23222" stroke-width="30" /><path d="M51 111l41 77c2 3 7 3 9 0 11-21 26-39 42-53 3-3 2-8-2-9l-84-23c-4 0-7 4-6 8zM6 330l85 16c4 1 7-3 6-7-10-21-15-44-16-66 0-4-4-6-8-4L4 321c-4 3-2 8 2 9zm142 173l66-57c3-3 2-8-2-9-22-6-43-16-61-29-3-3-8 0-8 4l-3 87c1 4 5 6 8 4zm224-4l-3-87c0-4-5-7-8-4-19 14-40 24-61 29-4 1-5 6-2 9l66 57c3 2 8 0 8-4zm136-178l-69-52c-4-2-8 0-8 4-1 24-7 46-16 66-1 4 2 8 6 7l85-16c5-1 6-6 2-9zm-53-218l-84 23c-4 1-5 6-2 9 18 15 32 33 42 53 2 3 7 3 9 0l41-77c1-5-2-8-6-8zM251 10l-34 80c-2 3 1 7 5 7 23-5 46-5 68 0 4 0 7-4 6-7l-35-80c-3-4-8-4-10 0zm37 344a32 32 0 11-64 0 32 32 0 0164 0zm-32-214a128 128 0 110 256 128 128 0 010-256zm0-32a160 160 0 100 320 160 160 0 000-320zm0 96c-56 28-64 67-64 106 0 14 9 38 22 42 1-22 19-40 42-40-3-54-30-57 0-108zm0-58c52 62 8 94 2 101 5 25 13 49 14 68a42 42 0 0121 58c30-9 58-57 59-83 0-57 0-112-96-144z" fill="%23A00" /></svg>');
+    opacity: 1 !important;
+    filter: drop-shadow(0px 0px 0.8px #000) drop-shadow(0px 0px 0.8px #000);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M51 111l41 77c2 3 7 3 9 0 11-21 26-39 42-53 3-3 2-8-2-9l-84-23c-4 0-7 4-6 8zM6 330l85 16c4 1 7-3 6-7-10-21-15-44-16-66 0-4-4-6-8-4L4 321c-4 3-2 8 2 9zm142 173l66-57c3-3 2-8-2-9-22-6-43-16-61-29-3-3-8 0-8 4l-3 87c1 4 5 6 8 4zm224-4l-3-87c0-4-5-7-8-4-19 14-40 24-61 29-4 1-5 6-2 9l66 57c3 2 8 0 8-4zm136-178l-69-52c-4-2-8 0-8 4-1 24-7 46-16 66-1 4 2 8 6 7l85-16c5-1 6-6 2-9zm-53-218l-84 23c-4 1-5 6-2 9 18 15 32 33 42 53 2 3 7 3 9 0l41-77c1-5-2-8-6-8zM251 10l-34 80c-2 3 1 7 5 7 23-5 46-5 68 0 4 0 7-4 6-7l-35-80c-3-4-8-4-10 0zm37 344a32 32 0 11-64 0 32 32 0 0164 0zm-32-214a128 128 0 110 256 128 128 0 010-256zm0-32a160 160 0 100 320 160 160 0 000-320zm0 96c-56 28-64 67-64 106 0 14 9 38 22 42 1-22 19-40 42-40-3-54-30-57 0-108zm0-58c52 62 8 94 2 101 5 25 13 49 14 68a42 42 0 0121 58c30-9 58-57 59-83 0-57 0-112-96-144z" fill="%23A00" /></svg>');
 }
+img[src$="uni_64x64.png"][width="32"],
 img[src$="uni_11x11.png"],
 img[src$="uni_16x16.png"],
 img[src$="flags/3.png"] {
     width: 0 !important;
     height: 0 !important;
     padding: 7px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M248 15L10 188c-6 4-8 11-6 17l91 280c2 6 8 10 14 10h294c7 0 13-4 15-10l90-280c2-6 0-13-5-17L265 15c-5-3-12-3-17 0zm8 31l221 160-85 259H120L36 206zm-24 67c-7 0-13 6-13 13v75c0 3 2 5 5 5h25l7 1c3 1 6-1 6-4v-77c0-7-6-13-13-13zm-50 17c-7 0-13 6-13 13v61c0 3 3 6 6 5l15-3h17c3 0 5-2 5-5v-58c0-7-6-13-13-13zm100 0c-7 0-13 6-13 13v83c0 7 6 13 13 13h17c7 0 13-6 13-13v-83c0-7-6-13-13-13zm50 17c-7 0-13 5-13 12v67c0 7 6 13 13 13h17c7 0 13-6 13-13v-67c0-7-6-12-13-12zm-142 67c-20 0-37 17-37 37v47a55 55 0 0016 39l18 17-13 14c-4 4-2 61-2 61 0 3 2 5 5 5h176c3 0 5-2 5-5 0 0 2-56-2-61l-14-18v-7c13-13 20-34 20-52v-41c0-3-3-5-6-4l-7 1h-17c-5 0-10-2-14-5-1-2-4-2-6 0-3 3-8 5-13 5h-17l-9-2c-2-2-5-1-6 2-4 7-10 13-18 15-3 1-4 6-1 8 11 12 18 22 27 34l-7 5c-8-12-17-26-26-34-9-7-18-10-30-11v-8h20c17 0 30-14 30-29v-1c0-7-6-12-13-12z" fill="%23FA0" stroke="black" stroke-width="2" /></svg>');
+    opacity: 1 !important;
+    filter: drop-shadow(0px 0px 0.8px #000) drop-shadow(0px 0px 0.8px #000);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M248 15L10 188c-6 4-8 11-6 17l91 280c2 6 8 10 14 10h294c7 0 13-4 15-10l90-280c2-6 0-13-5-17L265 15c-5-3-12-3-17 0zm8 31l221 160-85 259H120L36 206zm-24 67c-7 0-13 6-13 13v75c0 3 2 5 5 5h25l7 1c3 1 6-1 6-4v-77c0-7-6-13-13-13zm-50 17c-7 0-13 6-13 13v61c0 3 3 6 6 5l15-3h17c3 0 5-2 5-5v-58c0-7-6-13-13-13zm100 0c-7 0-13 6-13 13v83c0 7 6 13 13 13h17c7 0 13-6 13-13v-83c0-7-6-13-13-13zm50 17c-7 0-13 5-13 12v67c0 7 6 13 13 13h17c7 0 13-6 13-13v-67c0-7-6-12-13-12zm-142 67c-20 0-37 17-37 37v47a55 55 0 0016 39l18 17-13 14c-4 4-2 61-2 61 0 3 2 5 5 5h176c3 0 5-2 5-5 0 0 2-56-2-61l-14-18v-7c13-13 20-34 20-52v-41c0-3-3-5-6-4l-7 1h-17c-5 0-10-2-14-5-1-2-4-2-6 0-3 3-8 5-13 5h-17l-9-2c-2-2-5-1-6 2-4 7-10 13-18 15-3 1-4 6-1 8 11 12 18 22 27 34l-7 5c-8-12-17-26-26-34-9-7-18-10-30-11v-8h20c17 0 30-14 30-29v-1c0-7-6-12-13-12z" fill="%23FA0" /></svg>');
 }
+img[src$="fed_64x64.png"][width="32"],
 img[src$="fed_11x11.png"],
 img[src$="fed_16x16.png"],
 img[src$="flags/1.png"] {
     width: 0 !important;
     height: 0 !important;
     padding: 7px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M257 9h-16l-3 1A246 246 0 009 274h33a214 214 0 01197 228v1h32l3-1a246 246 0 00228-264h-32A214 214 0 01273 10V9h-16zm-16 33c9 124 108 221 229 229a213 213 0 01-199 199A247 247 0 0042 241 214 214 0 01240 42zm15 137c-9 0-19 1-28 5l92 57-26 23 30 28a77 77 0 00-68-113zm-68 41a77 77 0 0096 108l-92-57 26-23z" fill="%2309e" /><path d="M109 128l127 121-24 21 191 114-127-121 24-21z" fill="%23FD9" /></svg>');
+    opacity: 1 !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M257 9h-16l-3 1A246 246 0 009 274h33a214 214 0 01197 228v1h32l3-1a246 246 0 00228-264h-32A214 214 0 01273 10V9h-16zm-16 33c9 124 108 221 229 229a213 213 0 01-199 199A247 247 0 0042 241 214 214 0 01240 42zm15 137c-9 0-19 1-28 5l92 57-26 23 30 28a77 77 0 00-68-113zm-68 41a77 77 0 0096 108l-92-57 26-23z" fill="%2309e" /><path d="M109 128l127 121-24 21 191 114-127-121 24-21z" fill="%23FD9" stroke="black" stroke-width="3" /></svg>');
 }
+img[src$="emp_64x64.png"][width="32"],
 th img[src$="emp_11x11.png"] {
-    padding: 15px;
-    margin: -3px;
-    bbackground-color: rgba(0, 0, 0, .66);
-    background-size: 24px;
-        background-repeat: no-repeat;
-    background-position: center;
+    padding: 12px;
+    filter: drop-shadow(0px 0px 0.6px #000);
 }
+img[src$="uni_64x64.png"][width="32"],
+img[src$="fed_64x64.png"][width="32"],
 th img[src$="uni_11x11.png"],
 th img[src$="fed_11x11.png"] {
     padding: 12px;
-    filter: contrast(2.5);
+    filter: drop-shadow(0px 0px 0.7px #000);
 }
-th img[src$="fed_11x11.png"] {
-    padding: 12px;
-    filter: contrast(2.5) brightness(.7) hue-rotate(30deg);
-}
+
 img[src*="/races/"],
 img[src*="/crew/"],
 #race {
@@ -2110,8 +2315,9 @@ img[title~="dock."] {
 }
 img[alt="Your ship is in dock."] ~ table .messagestyle {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     height: 110px;
+    border-spacing: 4px;
 }
 form[target="_top"][method="get"][action="game.php"] input {
     padding: 8px 12px !important;
@@ -2139,7 +2345,8 @@ input.savebutton,
 button {
     margin-left: 1px;
     padding: 2px 5px;
-    border:1px rgba(40, 113, 194, 1) outset;
+    border:1px var(--main-blue-color) outset;
+    border-color: var(--main-blue-color) !important;
     border-radius: 3px;
     box-shadow: 0 0 3px 1px #000;
     background: url(http://gramajda.hekko24.pl/p/button2.png);
@@ -2198,7 +2405,10 @@ transition: background-color .2s;
 input[type="text"]:focus,
 input[type="password"]:focus,
 td input#pw:focus {
-background-color:#003168 !important;
+    background-color:#003168 !important;
+    box-shadow: 0 0 3px 1px black;
+    border-style: solid !important;
+    outline: 0;
 }
 input[value="learn_asp"]~input:not([disabled]),
 input[value="learn_atp"]~input:not([disabled]) {
@@ -2327,11 +2537,13 @@ select[size="1"] {
     box-sizing: border-box;
     -moz-appearance: none;
     -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2px;
     padding:1px .9em 1px 1px;
     border:1px rgba(40, 113, 194, .7) solid;
     border-radius: 4px;
-    margin-top: 2px;
-    color: var(--link-color) !important;
+    color: transparent !important;
+    text-shadow: 0 0 0 var(--link-color) !important;
     background-color: #061a4e;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E') ;
     background-repeat: no-repeat, repeat;
@@ -2340,6 +2552,7 @@ select[size="1"] {
     box-shadow: inset 0 0 4px rgba(40, 113, 194, 0);
     transition: box-shadow .3s;
     cursor: pointer;
+    outline: 0;
 }
 select:not([size]):hover,
 select:not([size]):focus,
@@ -2364,7 +2577,8 @@ max-height:100px;
 option {
 font-weight:bold;
 padding:0px 3px;
-    font-size: 16px;
+font-size: 16px;
+    outline: 0 !important;
 }
 option:hover {
 background: rgba(40, 113, 194, .7);
@@ -2526,7 +2740,7 @@ text-shadow:white 0px 1px 5px;
     color: #ffd17b !important;
 }
 .Union a {
-    color: #ef1 !important;
+    color: #caca34 !important;
 }
 .Fed a {
     color: #4f97ce !important;
@@ -2674,14 +2888,15 @@ p > .hlLink.hlLinkActive {
     cursor: default;
 }
 h3 a,
-p > .hlLink {
+p > .hlLink,
+.tabstyle td[align="center"] > a[href] b {
     padding: 0px 4px 0px 4px;
     letter-spacing: 0px;
     position: relative;
 	display: inline-block;
     margin: 0 22px 20px -7px;
     font-size: 20px;
-    color: #81D3F5;
+    color: var(--link-color) !important;
     font-weight: normal;
     text-shadow: 0 0 2px rgba(0,0,0,.6), 0 0 1px rgba(0,0,0,.8);
     bottom: 0;
@@ -2692,7 +2907,8 @@ h3 > a:nth-child(2n) {
     bottom: -6px;
 }
 h3 a:hover,
-p > .hlLink:hover {
+p > .hlLink:hover,
+.tabstyle td[align="center"] > a[href] b:hover {
     color:#DBFFFF;
     text-shadow: 0 0 3px rgba(0,0,0,1), 0 0 1px rgba(0,0,0,1);
     bottom: 3px;
@@ -2707,7 +2923,9 @@ h3 a:after,
 h3 font[color="#66ccff"]:before,
 h3 font[color="#66ccff"]:after,
 p > .hlLink:before,
-p > .hlLink:after{
+p > .hlLink:after,
+.tabstyle td[align="center"] > a[href] b:before,
+.tabstyle td[align="center"] > a[href] b:after {
     content: '';
     position: absolute;
     top: -6px;
@@ -2720,13 +2938,15 @@ p > .hlLink:after{
 }
 h3 a:before,
 h3 font[color="#66ccff"]:before,
-p > .hlLink:before {
+p > .hlLink:before,
+.tabstyle td[align="center"] > a[href] b:before {
     transform: skew(15deg);
     right: 4px;
 }
 h3 a:after,
 h3 font[color="#66ccff"]:after,
-p > .hlLink:after {
+p > .hlLink:after,
+.tabstyle td[align="center"] > a[href] b:after {
     transform: skew(-15deg);
     left: 4px;
 }
@@ -2869,14 +3089,14 @@ border:1px #A7D9FF solid !important;
 
 /* chat */
 #ChatFrame {
-height: calc(100vh - 85px);
-margin:0px 0px 4px 0px !important;
+height: calc(100vh - 86px);
+margin:0px 0px -22px 0px !important;
 background-color:#072337 !important;
 border-bottom:2px #074065 dashed !important;
 }
 #ChatWnd {
 background-color:#080F13 !important;
-margin:0px -8px -8px -8px !important;
+margin:0px 0px -8px 0px !important;
 padding:2px 0px 3px 0px !important;
 }
 #ChatWnd a{
@@ -2895,11 +3115,12 @@ padding:2px 0px 3px 0px !important;
 margin:-6px 0px -3px 0px;
 vertical-align:middle;
 }
-#ChatFrame + br {
-	display: none;
-}
 input[name="chatmsg_text"] {
 width:60% !important;
+}
+body[onload*="resizeChatWnd"] > table > tbody > tr:last-child td {
+    height: 6px !important;
+    line-height: 6px !important;
 }
 body[onload*="resizeChatWnd"] .tabstyle {
     padding-left: 15px !important;
@@ -2940,7 +3161,6 @@ body[onload*="resizeChatWnd"] h1+div[style][align="center"] * {
 }
 body[onload*="resizeChatWnd"] h1+div[style][align="center"]:hover {
     background-color: rgba(255, 0, 0, .9);
-    
 }
 body[onload*="resizeChatWnd"] h1+div[style][align="center"]:hover * {
     opacity: 1;
@@ -3013,30 +3233,28 @@ table#status div[style*="margin-left: 12px"][style*="margin-top: 5px;"] a:hover 
 border-color:#18406E #18406E #052549 #18406E !important;
 background-color:#052549 !important;
 }
-#otherships a[href^='javascript:sendmsg'],
+#otherships a[target="main"] + br {
+    display: none;
+}
 #otherships a[href^='ship2ship_transfer'],
 #otherships a[href^='ship2ship_combat'] {
+display:inline-block;
+vertical-align: top;
+width:80px;
+padding-bottom:20px;
+margin:0px 2px;
+border-radius:3px;
 background-repeat:no-repeat;
 background-position:center bottom;
-display:inline-block;
-padding-bottom:20px;
-margin:0px -2px;
 text-align:center;
-border-radius:3px;
-}
-#otherships a[href^='javascript:sendmsg'] {
-background-color:rgba(24,185,252,0.12);
-width:18px;
 }
 #otherships a[href^='ship2ship_transfer'] {
 background-image:url(http://static.pardus.at/images/credits_16x16.png);
 background-color:rgba(231,215,40,0.12);
-width:20px;
 }
 #otherships a[href^='ship2ship_combat'] {
 background-image:url(http://static.pardus.at/images/piracy_16x16.png);
 background-color:rgba(234,17,0,0.12);
-width:60px;
 }
 
 /* Coords addon */
@@ -3046,10 +3264,11 @@ width:60px;
     line-height: 0;
 }
 #tdSpaceChart.has-grid > table[align] {
-    padding-right: 5px !important;
+    padding-right: 3px !important;
 }
 #tdSpaceChart > table[align] td {
     vertical-align: top;
+    padding: 0 !important;
 }
 #tdSpaceChart tr:first-child > td[style*="rgb(0, 0, 28);"], 
 #tdSpaceChart tr:first-child > td[style*="#00001C"] {
@@ -3060,14 +3279,20 @@ width:60px;
 .coordsh2:last-child {
     margin-right: 1px;
 }
+.verticalLeft,
+.verticalRight {
+    position: static;
+}
 .coord {
+    position: relative;
+    left: 0;
+
     font-size:14px;
     color:#199AB1;
     font-weight:bold;
     text-shadow: 0 0px 2px rgba(0,0,0,.9);
     transition: all 1s;
     overflow: hidden;
-    position: relative;
     animation: emerge .1s linear;
 }
 .coord:before {
@@ -3081,7 +3306,7 @@ width:60px;
     transform: rotate(45deg);
     z-index: -1;
 }
-.coord:nth-child(2n+1):before {
+.coord:nth-last-child(2n+1):before {
     background: rgba(85, 139, 227, .24);
 }
 .coordsh1:before {
@@ -3101,27 +3326,32 @@ width:60px;
     right: -13px;
 }
 .coordsh1 {
-display: inline-block;
-width:64px !important;
-margin-left: 1px;
-line-height:0px !important;
-padding:14px 0px 14px 0px !important;
-text-align:center;
+    top: 0;
+    display: inline-block;
+    width:64px !important;
+    height:0 !important;
+    line-height: 0 !important;
+    margin: 0 0 0 1px;
+    padding:14px 0px 14px 0px !important;
+    text-align:center;
+    background:transparent;
 }
-.coordsh1:nth-child(2n+1) {
+.coordsh1:nth-last-child(2n+1) {
 padding-bottom:11px !important;
 margin-top:3px !important;
 }
 .coordsh2 {
 display: inline-block;
 width:64px !important;
+bottom: 0;
+margin-top: 0;
 margin-left: 1px;
-line-height:0px !important;
 padding:15px 0px 13px 0px !important;
+line-height:0px !important;
 vertical-align: top;
 text-align:center;
 }
-.coordsh2:nth-child(2n+1) {
+.coordsh2:nth-last-child(2n+1) {
 padding-top:12px !important;
 }
 .coordsv1 {
@@ -3369,13 +3599,14 @@ border-bottom:1px solid #07366B !important;
     left:50% ;
     width: 400px;
     margin-left: -200px;
-    bottom: 1px;
+    bottom: 0px;
     line-height: 11px;
     color: inherit !important;
     z-index: 1;
 }
 #pardusNavClock td { 
-    background: none !important;
+    background: rgba(0,0,0,.5) !important;
+    border-radius: 1em;
 }
 #pardusNavClock thead td { 
     font-size: 9px;
@@ -3384,7 +3615,7 @@ border-bottom:1px solid #07366B !important;
 }
 #pardusNavClock tbody span { 
     font-size: 13px !important;
-    opacity: .3;
+    opacity: .4;
     transition: opacity .3s;
 }
 #pardusNavClock thead td[style*="yellow"],
@@ -3411,16 +3642,17 @@ border-bottom:1px solid #07366B !important;
   }
 }
 #advanced_combat_buttons_wrapper {
-    margin-top: 32px;
 	animation: emerge .1s linear;
     z-index: 1;
+    filter: drop-shadow(0px 0px 2px #000) drop-shadow(0px 0px 0px #000);
 }
 #advanced_combat_buttons_wrapper button {
     position: relative;
-    margin: -1px 0;
+    margin: 0px -3px 2px;
+    outline: 0 !important;
     border-radius: 50%;
-    background: transparent !important;
     border: 0px solid transparent;
+    background: rgba(255, 0, 0, .038) !important;
     color: #000 !important;
     font-weight: bold !important;
     font-size: 14px !important;
@@ -3432,13 +3664,17 @@ border-bottom:1px solid #07366B !important;
     cursor: default;
     pointer-events: none;
 }
+#advanced_combat_buttons_wrapper #btn_adv_combat_AB:before {
+    transform: scale(0.88);
+    filter: saturate(0) brightness(1.6);
+}
 #advanced_combat_buttons_wrapper #btn_adv_combat_BA {
-    left: -22px;
+    top: -22px;
 }
 #advanced_combat_buttons_wrapper #btn_adv_combat_BA:before {
-    transform: rotate(90deg);
-    left: -3px;
-    right: -6px;
+    transform: rotate(180deg);
+    margin-bottom: -2px;
+    margin-top: 2px;
 }
 #advanced_combat_buttons_wrapper button:not(.enabled):hover:before {
     filter: contrast(1.5) brightness(1.3);   
@@ -3448,12 +3684,12 @@ border-bottom:1px solid #07366B !important;
     transition: all .2s;
     content: '';
     position: absolute;
-    top: -6px;
-    bottom: -6px;
-    left: -6px;
-    right: -3px;
     z-index: -1;
-    transform: rotate(-90deg);
+    top: -5px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    transform: rotate(0deg);
     background-size: cover;
     background-position: center center;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 14 13"><path d="M6.64 2c-.71 0-1.37.38-1.72 1L2.27 7.6a1.99 1.99 0 000 1.98L3.67 12c.35.62 1 1 1.71 1h5.24c.7 0 1.37-.38 1.72-1l1.4-2.42c.35-.61.35-1.37 0-1.99L11.08 3c-.35-.62-1-1-1.72-1z" fill="rgb(39, 118, 195)" /></svg>');
@@ -3530,7 +3766,6 @@ border-bottom:1px solid #07366B !important;
     background: rgba(0, 0, 0,.7);
     border-radius: 50%;
 }
-
 
 
 

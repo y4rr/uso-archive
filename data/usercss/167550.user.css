@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         un4given
 @description    `Стиль, позволяющий давать алиасы тем участникам чата, которые любят регулярно переименовываться. Теперь вы больше не запутаетесь кто есть кто. Распространяйте среди знакомых и добавляйте свои алиасы.`
-@version        20191030.15.57
+@version        20201014.17.19
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,6 +25,15 @@
 #chat-content span[data-user='562030']:after, #chat-content ins.user562030 .name:after {
     content: ' (zeda)';
 }
+
+#chat-content span[data-user='611100']:after, #chat-content ins.user562030 .name:after {
+    content: ' (zeda)';
+}
+
+#chat-content span[data-user='614876']:after, #chat-content ins.user562030 .name:after {
+    content: ' (zeda)';
+}
+
 
 #chat-content span[data-user='275156']:after, #chat-content ins.user275156 .name:after {
     content: ' (v2o18)';

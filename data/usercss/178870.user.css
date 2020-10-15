@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for AliExpress.com--- AliExpress`
-@version        2020106.10.49
+@version        20201014.22.44
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1058,12 +1058,9 @@ li[class^="vertical center flex-auto"] {
 #TabOfFalls div span[class^="rax-text  rax-text--overflow-hidden"] {
     color: #fff !important;
 }
-.rax-view > div > div > div > div > div {
-    background-color: #444 !important;
-    color: #fff !important;
-}
 .rax-view div div div div span{
     background-color: #444 !important;
+    opacity: 1 !important;
 }
 .rax-view div div div div div span{
     color: #fff !important;
@@ -1158,10 +1155,6 @@ td[class="anchor-wrap anchor1-wrap"] {
 }
 a[href^='//campaign'] i {
     filter: invert(90%);
-}
-
-.festival-main-venue {
-    background: #111 !important;
 }
 
 .coupon-new, .coupon-store, .coupon-mark, #login .fm-button, .flyout-user-signIn a.join-btn, .flyout-user-signIn a.sign-btn, .next-btn.next-btn-primary, .next-btn.next-btn-primary.visited, .next-btn.next-btn-primary:link, .next-btn.next-btn-primary:visited, .next-btn.next-btn-primary.active, .next-btn.next-btn-primary.hover, .next-btn.next-btn-primary:active, .next-btn.next-btn-primary:focus, .next-btn.next-btn-primary:hover, .searchbar-form .search-in-aliexpress, .deals-discount-status .status-item.active, .container-radius .product-item .discount, .crowd-entrance .crowd-note .crowd-price, .container-radius .product-list .eval-total-num, .container-radius .product-list .pro-note-wrapper i, .store-info-content .store-info-btn .visit-store-btn a, .header-tag-detail .follow-container .text-btn.follow, .next-checkbox-wrapper .next-checkbox-inner > .next-icon, ._new-home-firstscreen .advertise-main .brand-banner-open .img .price, .next-checkbox-wrapper.checked.focused .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate.focused .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.checked:not(.disabled):hover .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.checked:not(.disabled).hovered .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate:not(.disabled):hover .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate:not(.disabled).hovered .next-checkbox-inner > .next-icon {
@@ -1302,9 +1295,6 @@ a[clk_trigger=''] span {
 .multi-sidebar-tab .s-nav-title a i {
 	filter: invert(50%);
 }
-.box {
-    background: transparent !important;
-}
 .his .platformrow .box {
 	background: #111;
 }
@@ -1324,12 +1314,11 @@ a[clk_trigger=''] span {
 	background: #222;
 }
 .rax-scrollview-content-container-horizontal, .rax-scrollview-content-container-horizontal div,
-#gcp-elevator div div div,
 #recyclerview > div {
-    background: #444 !important;
+    background: #333 !important;
 }
-.area .rax-view .rax-view .rax-view {
-    background: transparent !important;
+#gcp-elevator div {
+    background: #444 !important;
 }
 .message-card {
     background: #111;
@@ -1344,11 +1333,28 @@ a[clk_trigger=''] span {
 .order-head {
     background: #222 !important;
 }
+.tab-container, .tab-container .container {
+    background: #333 !important;
+}
+.product-container .floor-name,
+.product-container .product-cell .goods-name,
+.product-container .product-cell .product-list {
+    color: #ddd;
+}
+.main .item {
+    background: #444 !important;
+}
+.store-banner, .store-info, .instore-info-container {
+    background: #222;
+}
+.ranking-wrapper .title-top, .ranking-title {
+    background: #333;
+}
 
     .discount-des-hd dt,
     .cleanallmultiplediv a,
     .discount-des-hd dd.info-products,
-    .product-attribute-main .msg-error {color:#ffa90099;}
+    .product-attribute-main .msg-error,
     .cl-item .cate-name span,
     .wish-list .product .image {border-color:#000; background-color:#000;}
     .next-input, hr,

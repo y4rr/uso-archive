@@ -1,0 +1,119 @@
+/* ==UserStyle==
+@name           Sims Forum Darkmode
+@namespace      USO Archive
+@author         Seyjin
+@description    `A darkmode theme for the Sims forum.`
+@version        20201014.16.59
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain('forums.thesims.com') {
+
+/* Darkmode for Sims forum by Seyjin */
+
+body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .CommentDate:hover, .Section-Discussion .CommentMeta a, .Section-Discussion .DiscussionMeta a, .Section-Discussion .Item.rank-blue .Meta, .Section-Discussion .Item.rank-blue .Meta a, .Section-Discussion .Item.rank-blue .Meta a:focus, .Section-Discussion .Item.rank-blue .Meta a:hover, .Section-Discussion .CommentMeta, .Section-Discussion .DiscussionMeta, .Section-Discussion .PageTitle h1, input.DateBox, input.InputBox, input.SmallInput, textarea, .editor-fullpage .TextBoxWrapper .BodyBox, .editor-fullpage .TextBoxWrapper .wysihtml5-sandbox, .nav-me .Username, .info-bar .breadcrumbs, .info-bar .breadcrumbs a, .info-bar .SignInLinks, .info-bar .SignInLinks a {
+    color: #ccc;
+}
+
+.info-bar, .footer {
+    background: #1c1b22;
+}
+
+.nav-bar {
+    background: linear-gradient(rgba(0,0,0,0) 25%,rgba(0,0,0,.1));
+    background-color: #222029;
+}
+
+.nav-bar li a {
+    text-shadow: 0 2px 0 #3b4460;
+
+}
+
+#Body {
+    background-color: #222029;
+}
+
+.DataTable td, .ChildCategories, .Section-Discussion .Item-BodyWrap, .Section-Discussion .DataList .Item, .Section-Discussion .ItemDiscussion .Discussion, .Section-Discussion .DataList.Comments, .MenuItems hr, .footer-logos {
+
+    border-color: #18171e;
+}
+
+.Item.Read {
+
+    background: linear-gradient(to right,  #1979a2 4px, #fff0 3px,#0001);
+}
+
+.Item.New, .Item.Unread {
+
+    background: linear-gradient(to right,  #ff0 4px, #fff0 3px,#0001);
+}
+
+.OptionsTitle, .Sprite16, .ReactSprite {
+    filter: invert(80%);
+}
+
+.HomeCrumb a {
+    filter: invert(20%);
+}
+
+.Tag {
+    background-color: #18171e;
+}
+
+.Section-Discussion .Message::before {
+
+    background-color: #1c1b22;
+}
+
+.Section-Discussion .Rank-Admin .Message::before {
+
+    background-color: #406f08;
+
+}
+
+.Section-Discussion .Item.rank-blue .Message::before {
+
+    background-color: #0b5777;
+
+}
+
+.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor {
+
+    background-color: #1c1b22;
+
+}
+
+div.PostEdited {
+    color: #ff3a3a;
+}
+
+.InputBox, input:focus, textarea:focus {
+
+    background: #222029 !important;
+    border-color: #18171e;
+}
+
+:focus {
+    outline-style: none;
+}
+
+.MenuItems, .FlyoutMenu {
+    border-color: #000;
+    background: #222029;
+    color: #ccc;
+}
+.Flyout::before, .Flyout::after {
+    border-bottom: 7px solid #000;
+    top: -7px;
+}
+
+.MenuItems a, .MenuItems a:link, .MenuItems a:visited, .MenuItems a:active {
+    color: #ccc !important;
+}
+
+.Dropdown.MenuItems a:hover, .Flyout.MenuItems a:hover, .editor-dd-emoji + .editor-insert-dialog .emoji-wrap:hover {
+    background-color: #18171e88 !important;
+    color: #ccc !important;
+}
+
+}

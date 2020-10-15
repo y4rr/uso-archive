@@ -3,13 +3,17 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの全てのブログページで、ページ主要部のフォントを「メイリオ」にします。 　◎ブログタイトル部分はページのデザインを尊重してフォントを変更しません。　◎本文部分やサイドメニュー部分の範囲をメイリオ優先で表示し、可読性を向上させます。　◎スタイルの適用時、amebloヘッダーに修飾をしている事を表示します。　◎修飾表示のデザインは、オプションで10種の組み合わせから選ぶ事が出来ます。　◎HTMLの新/旧タイプに適応します。このスタイルは、Chrome/Firefox版の「Stylus」で使用可能です。`
-@version        20201013.0.12
+@version        20201014.22.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("news.ameba.jp"), domain("secret.ameba.jp") {
-/* Ameblo Force Meiryo  ver.2020.10.12 */
+/* Ameblo Force Meiryo  ver.2020.10.15 */
 /* ブログ主要部のフォント指定 **********/
+button,
+input,
+select,
+textarea,
 #ambHeader,
 ._20TD20u0,
 ._HQiG1eoZ,

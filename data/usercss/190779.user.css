@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           VK Dark Theme (Alpha)
+@namespace      USO Archive
+@author         Игорь Худяков
+@description    `Только начал менять тему, в ближайшее время изменю большую часть.`
+@version        20201014.20.20
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://vk.com/") {
+[dir] body, .page_actions_wide .clear_fix .edit a, [dir] .profile_more_info_link:hover, [dir] .no_current_info:hover, [dir] .page_status_editor .editor {background: #222 !important;}
+.page_block, .page_header_cont, #post_field, [dir] .submit_post, [dir] div[contenteditable=true] {background: #2a2a2a !important; box-shadow: none !important;}
+.left_count_wrap .fl_r .left_count_wrap_hovered, [dir] body.new_header_design .left_count_wrap {background: #333 !important;}
+a, .group_name a {color: #2860A1 !important;}
+.left_icon {filter: brightness(5) !important;}
+/*a {color: #2787F5 !important;}*/
+.header_top span:first-child, .page_name, .ui_tab .ui_tab_sel, .wall_post_text, body.new_header_design #side_bar .left_label {color: white !important;} /*.flat_button.secondary*/
+.left_row:hover {background: #2a2a2a !important;}
+[dir] .wide_column .page_top, [dir] .counts_module, .more_div, [dir] .like_cont, [dir] .post_actions_btns, [dir] .submit_post, [dir] .ui_tabs {border-color: #666 !important;}
+.inl_bl .left_count, #post_field, [dir] body.new_header_design .left_count_wrap {color: white !important;}
+.page_header_cont, [dir] .page_status_editor .editor, [dir] div[contenteditable=true] {border: none !important; box-shadow: 0 0 10px #222 !important;}
+
+.rel_date, .page_list_module .group_desc, .page_list_module .people_desc, .page_list_module .people_extra {color: #aaa !important;}
+.post_date .post_link:hover, [dir] .page_status_audio {color: #aaa !important;}
+.like_btns {filter: brightness(2) grayscale(1) !important;}
+
+[dir] body.new_header_design .TopSearch__input, [dir] .flat_button, [dir] body.new_header_design .top_nav_btn:hover {background-color: #222 !important;}
+[dir] .page_actions_cont.narrow .page_extra_actions_btn {filter: grayscale(1) !important;}
+
+.top_home_logo {filter: invert(1) hue-rotate(180deg) !important;}
+
+/*Отключение рекламы*/
+.ads_ads_box, #ads_left {display:none !important;}
+.left_menu_nav_wrap {padding-top: 0 !important;}
+}

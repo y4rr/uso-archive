@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Coordinates
 @description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.`
-@version        20201014.1.55
+@version        20201014.21.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -105,6 +105,9 @@ button:active {
 .releases-header h2 {
 	padding: 0px;
 }
+.releases-header form {
+	margin-left: 0px;
+}
 .search-box {
 	border-radius: var(--border-radius);
 	overflow: hidden;
@@ -149,7 +152,7 @@ input.search-box-input:focus {
 
 /* BODY: Sidebar */ 
 
-#secondary {
+.sidebar {
 	background: var(--secondary-bg-color);
 	border-radius: var(--border-radius);
 	margin-bottom: 30px;
