@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ニコニコ動画 動画再生ページ ダークテーマ（HTML5版）
+@name           ニコニコ動画 動画ページダークテーマ for HTML5
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の勝手な更新版です。コード1に上記のCSSから不要な記述を削除したものを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。ニコられたコメントはニコられた数に応じてコメント背景色が変わります。その背景色もカスタムできるようになっています。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を終了させていただきます。`
-@version        20201015.19.16
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていない記述を削除し新要素に対応しています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。ニコられたコメントはニコられた数に応じてコメント背景色が変わります。その背景色もカスタムできるようになっています。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を終了させていただきます。`
+@version        20201016.10.12
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown --- "ニコる" {
@@ -76,7 +76,7 @@ display:none;
     color: #ccc !important; 
     border: inset 0px #222742 !important;
   }
-  html, body, .ReactGridCellContent:hover, .ActionButton{
+  html, body, .ReactGridCellContent:hover{
     background: #1b1b1b !important;
   }
 /* 動画説明欄などを下に移動(HTML5版) */
@@ -151,12 +151,6 @@ order:5!important
     box-shadow: 0px 0px 0px #fff inset;
   }
 
-  .searchSubmitButton, .VideoMenuContainer::before{
-    border: inset 0px #222742 !important;
-  }
-  .searchType.keyword,.searchType.tag,.columnOptionItem.column1, .columnOptionItem.column4, .relatedTagLink, .item, .next, .playlistReplaceButton, .columnOption{
-    background:#333 !important;
-  }
   /* 灰色枠線 */
   #videoTagContainer .tagInner #videoHeaderTagList .toggleTagEdit,#videoHeaderTagList .videoHeaderTag,.videoExplorerBody .searchBox,
   .videoExplorerBody .relatedTagList .relatedTagItem .relatedTagLink, .TagList .TagItem, .SearchBox-input, button, .VideoUploadDateMeta,
@@ -166,135 +160,10 @@ order:5!important
     box-shadow: 0 0 0 0 #e0e0e0;
   }
 
-
-  /* タグ画面 */
-
-
   
-  #videoHeaderTagList .videoHeaderTag:hover {
-    background: #D2691E !important;
-  }
-  #videoTagContainer .tagInner #videoHeaderTagList li .tagControlContainer, #videoTagContainer .tagInner #videoHeaderTagList li .tagControlEditContainer {
-    position: absolute;
-    top: 15%;
-    left: 7px;
-    z-index: 1;
-    white-space: nowrap;
-}
-  #videoTagContainer .tagInner #videoHeaderTagList li .tagControlContainer .dic span,
-  #videoTagContainer.isEdit .tagInner #videoHeaderTagList .videoHeaderTag.isNoOwnerLock2.isNoVideoOwner.isLock.isCategory .videoHeaderTagCategory,
-  #videoTagContainer.isEdit .tagInner #videoHeaderTagList .videoHeaderTag.isNoOwnerLock2.isNoVideoOwner.isLock .videoHeaderTagLock,
-  #videoTagContainer.isEdit .tagInner #videoHeaderTagList .videoHeaderTag.isNoOwnerLock2.isNoVideoOwner .videoHeaderTagDelete {
-    width: 20px !important;
-    height: 20px !important;
-    vertical-align: middle !important;
-  }
 
-  .channel .ch_prof {
-    background: #333 !important;
-    width: 330px !important;
-  }
-  .channel .ch_prof h6, .channel .ch_prof p.bread,.channel .ch_prof h6 a  {
-    font-size: 100% !important;
-    font-weight: bold !important;
-  }
-    
-  /* コメントプレイヤー */
-  .player-tab-content, .player-panel-tab, .player-panel-tab, .playerTabWrapper, .options, .option.placeholder, #playerTabContainer,
-  .panel-grid.slickgrid_886298.ui-widget,.slick-viewport,.grid-canvas, .comment-panel .panel-header {
-    color: #ddd !important;
-    background: #272727 !important;
-    
-  }
-   .player-tab-item.comment, .player-tab-item.ng,.button.ng-register-button,.select-box.comment-type,.text, .options,.comment,.context-menu,.copy-message,
-  .menu,.favVideoOwner, .player-tab-item.comment.active, .player-tab-item.ng.active,.player-tab-item.comment:hover, .player-tab-item.ng:hover,
-  .player-tab-item.comment.active:hover, .player-tab-item.ng.active:hover,.button.ng-register-button:hover,.select-box.comment-type:hover,.text:hover,
-  .favVideoOwner:hover, .comment-panel .select-box .options.li:hover{
-    color: #fff !important;
-    background:#333 !important;
-    border: 0px solid #ccc !important;
-  }
-  
-  .player-tab-item.comment.active, .player-tab-item.ng.active,.player-tab-item.comment:hover, .player-tab-item.ng:hover,.player-tab-item.comment.active:hover, 
-  .player-tab-item.ng.active:hover,.button.ng-register-button:hover,.select-box.comment-type:hover,.text:hover,.favVideoOwner:hover,
-  .nicolib-SuggestSearch-suggestion-suggest-items.suggestItem li:hover, .comment-panel .context-menu .menu li:hover{
-    background: #373737 !important;
-  }
-.player-panel-tabs .player-tab-header .player-tab-item:first-child, .player-panel-tabs .player-tab-header .player-tab-item.active:first-child, .player-panel-tabs .player-tab-header .player-tab-item,
-  #playerAlignmentArea.size_medium #playerContainer.controll_panel #playerTabWrapper{
-    border-top: solid 1px #444 !important;
-    border-left: solid 1px #444 !important;
-    border-right: solid 1px #444 !important;
-    border-bottom: solid 1px #444 !important;
-}
-  #playerAlignmentArea.size_normal { width: 898px; }  
-  #playerAlignmentArea.size_normal #playerContainer.appli_panel #playerTabContainer { bottom: 0px !important; }
-  #playerAlignmentArea.size_medium #playerContainer.controll_panel #playerTabWrapper { height: 461px !important; }
-  #playerAlignmentArea.size_medium #playerContainer.controll_panel #playerTabWrapper>#playerTabContainer>.playerTabContent { height: 411px !important; }
-  #playerAlignmentArea.size_medium #playerContainer.appli_panel #playerTabContainer { bottom: 0px !important; }
-  .player-panel-tabs .player-tab-content { top: 43px !important; }
-  .panel-body { top: 30px !important; }
-  div.panel-grid div.slick-viewport { height: 357px !important; }
-  div.ng-grid div.slick-viewport { height: 347px !important; }   
-  
-  .player-tab-content {
-    bottom: 5px !important;
-    padding: 0 5px !important;
-  }
-    
-  #playerContainer, #playerContainerSlideArea{
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-      
-  .outer { margin: 0 auto 0px !important; }
-  .userProfile { margin-top: -30px !important; }
-  .videoThumb{ height:30px; }
-  
-  #videoInfo .videoMainInfoContainer {
-    padding-bottom: 0px !important;
-    margin-bottom: 0px !important;
-    border-bottom: #bbb solid 0px !important;
-    
-  } 
+/* ここから更新箇所 */
 
-  div.videoDescription > a,.mylistLinkButton {
-    color: #D2691E !important;
-  }
-
-  .videoTitle, .originalVideoTitle, .videoHeaderTitle, .log-target-info a{
-    text-shadow:#D2691E 1px 1px 2px;
-    font-size:17px !important;
-  }
-  
-  #videoInfo{
-    width:900px;
-    padding: 15px;
-    font-weight:700;
-    text-decoration: none;
-    z-index: 1 !important;
-  } 
-
- 
-}
-
-@-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
-/* ニコるのカラー変更 */
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="0"] {
-    background: #333
-}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="1"] {
-  background: /*[[------1]]*/
-}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="2"] {
-  background: /*[[------2]]*/
-}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="3"] {
-   background: /*[[------3]]*/
-}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="4"] {
-   background: /*[[------4]]*/
-}
 /* コメントエリアまわりの調整 */
 .PlayerPanelContainer,
 .DataGrid-Header,
@@ -308,11 +177,15 @@ order:5!important
     height: 45px
 }
 
-/* コメント欄のスクロールバーを細く(Firefoxのみ) */
+/* スクロールバーを細く(Firefoxのみ) */
 .DataGrid-Body.CommentPanelDataGrid-Body {
     scrollbar-color: #1b1b1b #7a7a7a;
     scrollbar-width: thin;
     background: #333;
+}
+.WatchRecommendation-inner{
+    scrollbar-color: #1b1b1b #7a7a7a;
+    scrollbar-width:thin;
 }
 
 /*動画再生前のコメント入力欄のオーバーレイ削除*/
@@ -466,7 +339,7 @@ button.ActionButton.TwitterAccountPanel-button{
     background-color: #2b2b2b !important
 }
 
-/* 試験的 消去する要素改変 */
+/* 試験的 消去する要素簡略化 */
 .BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon{
     display: none !important;
 }
@@ -484,6 +357,26 @@ button.ActionButton.TwitterAccountPanel-button{
 /* コメントの履歴選ぶとこ */
 .CommentPanelMenuContainer-pastCommentMenu{
     background: #333
+}
+
+/* 動作機能付きボタン */
+.CommentCommandPaletteContainer{
+    background-color: hsla(0, 0%, 20%, 0.9) !important;
+}
+.CommentCommandPaletteNode svg{
+    fill: #d7d7d7;
+}
+.TagContainer-editButton, .ActionButton.CommentCommandPaletteNode[data-type="size"], .CommentCommandPaletteNode[data-type="layout"]{
+    background-color: #252525 !important;
+}
+.LikeButton{
+    background-color: #666;
+}
+.SharePanelVisibleButton{
+    background-color: #000;
+}
+.ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ClickInterceptor.LoginRequirer,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton{
+    background-color: #252525
 }
 
 /* タグ編集欄 */
@@ -508,28 +401,37 @@ button.ActionButton.TwitterAccountPanel-button{
     background-color: #282828 !important;
 }
 
-/* コメント欄上部の広告バルーン的なものを消す */
-
-
-/*カスタマイズ用*/
-
-/* ニコるはそのまま */
-
-/* シリーズ欄を表示しておく */
-
-/*ボタンズレ修正*/
-.SharePanelContainer-radioItem input + label::before{
-    left: 0.5%
+/* 検索時のお気に入りタグ表示部分 */
+.TagSuggestionInput.is-focus .TagSuggestionList, .SearchBox-optionMenu, .ActionButton.SearchBox-optionButton{
+    background-color: #353535;
 }
 
-/* マーキーエリアを削除しない */
+/*カスタマイズ欄*/
 
-/* 試験的 シリーズのハイライト */
-.VideoDescription-series{
-    border: solid 5px #282828 !important;
-    background: #393939;
+/*[[---]]*/
+
+/*[[----]]*/
+
+/*[[---------2]]*/
+
+/*[[--------1]]*/
+
+/*[[------------1]]*/
+
+/* ニコるのカラー変更 */
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="0"] {
+    background: #333
 }
-.RouterLink.VideoDescriptionSeriesContainer-itemTitle{
-    color:#d2691e !important
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="1"] {
+  background:  /*[[------1]]*/
+}
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="2"] {
+  background:  /*[[------2]]*/
+}
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="3"] {
+   background:  /*[[------3]]*/
+}
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="4"] {
+   background:  /*[[------4]]*/
 }
 }

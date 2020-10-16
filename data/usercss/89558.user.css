@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Darkened and other effects`
-@version        2020102.4.20
+@version        20201016.6.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -81,6 +81,9 @@ div.me_sidenav a:visited
 	text-transform: capitalize!important;
 }
 
+#b_context .b_entityTP,
+#b_context .b_subModule, #b_results .b_subModule,
+#mmcar .b_slideexp .b_slidebar .slide,
 #lMapContainer,
 .MicrosoftMap .bm_searchBoxNavLeft .searchbox,.MicrosoftMap .taskBar .searchbox,
 .MicrosoftMap .popOutTop,
@@ -124,6 +127,8 @@ h2 .b_secondaryText
 	font-size: 19px!important;
 }
 
+#detailPage .pimc #detailMeta .cpyrtc,
+#detailPage .pimc>#copyright .cpyrtc,
 #tta_alttbl td,
 .b_algoArticleTextCarousel .b_slidebar .slide .b_title,
 .b_cnvsug a,
@@ -133,6 +138,7 @@ h2 .b_secondaryText
 	font-size: 17px!important;
 }
 
+#b_context .mv_ctrvText .b_snippet,
 .b_algoArticleTextCarousel .b_slidebar .slide .b_text {
     font-size: 16px;
 }
@@ -164,19 +170,20 @@ h2 .b_secondaryText
 .mc_vtvc_meta_row span,
 .nwsq_ci_st,
 .t-code,
+.view-cam-info-goal h2.view-cam-info-topic,
 body
 {
 	line-height: 29px!important;
 }
 
 #b_content .b_slyGridItem .eg_meta li,
-.b_algoArticleTextCarousel .b_slidebar .slide .b_text
+.b_algoArticleTextCarousel .b_slidebar .slide .b_text,
 .epv_data .epv_desc,
 .na_cnt .na_t,
 .nwsq_ci_meta,.nwsq_ci_q,
 .tta_videoinfo .tta_title
 {
-	line-height: 23px;
+	line-height: 23px!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
@@ -197,7 +204,7 @@ body
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
 #b_results {
-	margin-left: -4%;
+	margin-left: -8%;
 }
 
 #ent-car-exp .carousel-title,
@@ -263,7 +270,7 @@ body
 /*___ Margins ______________________________________________________________________*/
 
 #b_context {
-	margin: 12px 0 0 60px;
+    margin: 12px 0 0 23px;
 }
 
 #b_results>li,
@@ -322,6 +329,10 @@ body
 
 .vrp_mreg.vvnb_clps {
 	margin: 0 36px;
+}
+
+.rcimgcol .b_imgSet .b_hList>li {
+	margin: 0 15px;
 }
 
 [aria-label="See more images"] {
@@ -384,6 +395,10 @@ div.me_sidenav a:visited {
 	height: auto!important;
 }
 
+#bop_coll .item .card {
+    height: 178px;
+}
+
 #miniheader_data
 {
 	height: 74px;
@@ -428,6 +443,7 @@ div.me_sidenav a:visited {
 
 #cvnMt,
 .MicrosoftMap .cardWrapper,
+.avc.avc_va,
 .me_section,
 .newsitem,
 .taskCard
@@ -437,16 +453,11 @@ div.me_sidenav a:visited {
 
 #tt_translatorHome
 {
-	width: 97%;
+	width: 97%!important;
 }
 
 #news.news .content {
-    width: 95%;
-}
-
-.col-lg-8,
-.notHP .hpqs_label {
-    width: 78%;
+    width: 95%!important;
 }
 
 #resultsContainer {
@@ -457,16 +468,17 @@ div.me_sidenav a:visited {
     width: 72%!important;
 }
 
+.col-lg-8,
+.notHP .hpqs_label {
+    width: 68%!important;
+}
+
 [aria-label="See more images"]
 {
 	width: 53%!important;
 }
 
-[id*="slideexp"] .slide:not([data-appns="commerce"]) {
-    width: 33%!important;
-}
-
-.b_slidebar .slide:not([data-appns="commerce"]) {
+#b_results .b_slidebar .slide:not([data-appns="commerce"]) {
     width: 33%!important;
 }
 
@@ -476,13 +488,26 @@ pp.overlay-container,
 	width: 32%!important;
 }
 
+#b_context {
+    width: 31%;
+}
+
 [id*="slideexp4"] .slide {
     width: 19%!important;
 }
 
-#actionbar .icon
+.b_imgSet .b_hList li.square_m,
+.b_imgSet .b_hList li.tall_m
 {
-	width: 26px;
+    width: 18%!important;
+}
+
+[id*="slideexp"] .slide:not([data-appns="commerce"]) {
+    width: 15%!important;
+}
+
+#minPrce, #maxPrce {
+    width: 70px;
 }
 
 .idp_ham
@@ -490,10 +515,11 @@ pp.overlay-container,
 	width: 43px;
 }
 
-
-#minPrce, #maxPrce {
-    width: 70px;
+#actionbar .icon
+{
+	width: 26px;
 }
+
 }
 
 @-moz-document domain("bing.com") {
@@ -538,6 +564,10 @@ input[type="radio"]:checked + label
 
 /*__________________________________________________________________________________*/
 
+#detailPage #imagemeta,
+#detailPage #imagemeta a,
+#detailPage .pimc #detailMeta .cpyrtc,
+#detailPage .pimc>#copyright .cpyrtc,
 #action_visible > a .hint,#action_visible > a .text,#action_visible > a:active .hint,#action_visible > a:active .text,
 #b_content .b_lowFocusLink a,#b_context .b_ad .b_adlabel,#b_context .b_attribution,#b_context .b_factrow,#b_context .b_footnote,#b_context .b_secondaryText,
 #b_context .b_entityTP.fincr .b_mText,
@@ -554,6 +584,7 @@ input[type="radio"]:checked + label
 .b_attribution,
 .b_cnvsug a strong,
 .b_demoteText,
+.b_icRatings .cbl,
 .b_divsec.b_primtxt:nth-child(2),
 .b_expando .b_attribution,.b_expando .b_factrow,.b_expando .b_footnote,.b_expando .b_secondaryText,.b_expando .b_subModule,.b_expando .b_suppModule,
 .b_factrow,
@@ -622,6 +653,7 @@ span#fltIdtLnk
 .finnews_t,
 .inline_tile .carousel .item .card .tit,
 .mmvdp_meta_title_link span,
+.mv_rvprovider,
 .nwsq_ci_sn,
 .qna-aggr .b_expansion_wrapper:not(.b_hide) .b_expansion_text,
 .qna_elc .elc_cname,
@@ -647,6 +679,7 @@ h2
 .finind_ticker,
 .finlite_ticker,
 .mc_vtvc_meta_row,
+.mv_rvreviewer,
 .nwsq_ci_st,
 .relocCtx_card,
 .sp_pssl,
@@ -662,12 +695,14 @@ h4
 /*___ Sandy Brown __________________________________________________________________*/
 
 #b_context .b_footnote,
+#detailPage.mob .relProd .captionContainer .offer_list a,
 .b_footnote,
 .dc_st,
 .epv_subTitle,
 .fs_attr,
 .ftrSSL,
 .mc_vtvc_meta_block_area a,.mc_vtvc_meta_block_area,
+.relProd .captionContainer .attr,
 cite .brdcrm_nm,
 cite a .brdcrm_nm,
 h5,
@@ -685,12 +720,13 @@ label
 #otdCanvas .otd_yearHeading,
 .ans_nws .na_cnt .b_secondaryText,
 .b_demoteText,
+.b_listnav .b_ans_stamp,
 .b_topborder .expreftext,
 .epv_Summary, 
 .finnews_f,
-.newsitem .caption .source,
 .mc_vtvc_meta_pubdate,.mc_vtvc_meta_row:first-child > span,
 .mmvdp_meta_text:nth-child(2),
+.newsitem .caption .source,
 .relocCtx_condiHighLow div:nth-child(2),
 .tta_metainfo_mmftb .b_factrow,
 .vrhmd,
@@ -711,6 +747,9 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
+#vsp_preview .relProd .captionContainer .price,
+#p_results .captionContainer .price,
+#detailPage.mob .richImage.relProd .price>span,
 .br-focusPrice,
 .finlite_val,
 .finind_val
@@ -895,32 +934,27 @@ html
 #b_header,
 #b_pole .b_wpTabsWrapper,
 #buttons.float_button_bar,
-#detailPage,
-#detailPage:not(.mob) #detailCanvas,
-#detailheader,
+#detailPage,#detailPage:not(.mob) #detailCanvas,#detailheader,
 #ftr_pane,
-#miniheader table,
-#miniheader.detail .relatedGroup,
+#miniheader table,#miniheader.detail .relatedGroup,
 #stickyheader,
-.MicrosoftMap .bm_scrollbarMask,
-.MicrosoftMap .taskBar,
-.b_footer,
-.b_ilHeader,
-.b_poleContent > .utilAns .ent-dtab,
+.MicrosoftMap .bm_scrollbarMask,.MicrosoftMap .taskBar,
+.b_footer,.b_ilHeader,.b_poleContent > .utilAns .ent-dtab,
 .carousel .lightcar .item .card,
 .footer,
 .inline_tile,
 .insights.rr,
+.insttab .tab-head,
 .iuscp.gencell.inline_blk,
 .t_header
 {
 	background-color: #060505!important;
 }
 
+#b_pole,
 #b_tween,
 #bopblock .carousel,
-#ent-car-exp-img.carousel,
-#ent-car-exp.carousel,
+#ent-car-exp-img.carousel,#ent-car-exp.carousel,
 #lMapContainer .banLi,
 #pole .carousel,
 #rfPane,
@@ -965,21 +999,20 @@ html
 #actionbar,
 #b_context #wpc_ag,#b_context .b_ans,
 #b_results > .b_pag .sb_pagS_bp:hover,#b_results > .b_pag a:hover,
-#detailPage .menuBtn .hiddenContainer li:hover a,
+#detailPage .menuBtn .hiddenContainer li:hover a,#detailPage:not(.mob) .vs_preview.vsp .relProd .captionContainer,
 #ftrB,
 #lMapContainer,
 #mm_vdmb,
 #mmvdp,
 #tabcontrol_11_A691D4_menu > li,
-#tta_phrasebook .tfil-fc-g .tfil-filter,
-#tta_srcsl,
-#vvnb a:hover,
-#vvnb_clps_btn,
+#tta_phrasebook .tfil-fc-g .tfil-filter,#tta_srcsl,
+#vvnb a:hover,#vvnb_clps_btn,
 .MicrosoftMap #transientLens .transientLensActions a:hover,
 .MicrosoftMap .bm_searchBoxNavLeft .searchbox,.MicrosoftMap .bm_searchBoxNavLeft > div > ul li div.searchButton,.MicrosoftMap .bm_searchBoxNavLeft > ul li div.searchButton,.MicrosoftMap .taskBar .searchbox,.MicrosoftMap .taskBar > ul li div.searchButton,
 .MicrosoftMap .popOutTop,
 .b_ans.b_topborder .btm_sml a,
 .b_caption .captionMediaCard .b_imagePair.wide_wideAlgo,
+.b_chvrn .b_overlay .cr,
 .b_searchboxForm,
 .b_tophb .bgtopgr,.b_tophb .bgtopwh,
 .below_sbox .mvs_cont .undo,
@@ -991,23 +1024,17 @@ html
 .finnews_c:hover,
 .infopt,
 .inline_tile .carousel .item .card,
+.insights .ins_exp .ins_exp_title:hover,.insights .ins_exp .insbt,.insights .ins_exp .insbt:hover,.insights.rr .insttab .tab-content.atb>ul,
+.insttab .tab-content,.insttab .tab-head ul>li,
 .iuscp .ent,
 .l2 .insights .ins_exp .menuBtn .hiddenContainer li:hover,
 .lm_filters,
-.mc_vplvc,
-.mc_vplvc_th,
-.mc_vtvc,
-.mc_vtvc_th,
-.me_content,
-.me_sectioncontent,
+.mc_vplvc,.mc_vplvc_th,.mc_vtvc,.mc_vtvc_th,
+.me_content,.me_sectioncontent,
 .menuBtn .hiddenContainer li:hover,
 .na_cl .na_citem,
-.nws_itm,
-.nwsq_ci,
-.overlay-listings .announceContainer,
-.overlay-listings.cardified-list .entity-listing-container,
-.overlay-listings.cardified-list .listings-item,
-.overlay-taskpane ul.mapActionsModule li a,.overlay-taskpane ul.mapActionsModule,.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li:hover,
+.nws_itm,.nwsq_ci,
+.overlay-listings .announceContainer,.overlay-listings.cardified-list .entity-listing-container,.overlay-listings.cardified-list .listings-item,.overlay-taskpane ul.mapActionsModule li a,.overlay-taskpane ul.mapActionsModule,.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li:hover,
 .qna_elc .slide,
 .rc_vlHorizontalImage .rc_vlCard,
 .relocCtx_card:hover,
@@ -1020,10 +1047,11 @@ html
 .tta_incell,
 .video_metadata,
 .vs_cont .moduleCont .module .vsmodule.vert_iotd .vs_iotd .vs_rowitem.vs_iotd_bs,.vs_cont .moduleCont,
+.vs_preview .richImage.relProd .imgContainer,
 .vsmodule .otd .item,
 .wtr_core:not(.noLayers) .wtr_forecastDay:not(.wtr_tab_sel) .vpc,
-div.me_sidenav a, div.me_sidenav a:visited,
-[id*="tabcontrol_"] > li
+[id*="tabcontrol_"] > li,
+div.me_sidenav a, div.me_sidenav a:visited
 {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
@@ -1187,8 +1215,7 @@ a.cbtn:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-#b_content #resultsContainer,
-#b_context,
+#b_content #resultsContainer,#b_context,
 #b_results > li,
 #carousel #crs_pane .itile,#carousel #crs_pane .pntile,
 #filterContainer,
@@ -1199,8 +1226,7 @@ a.cbtn:active
 .bnp_fly_hp,
 .bop_tile,
 .mc_caro .hp_trivia_outer .hp_trivia_inner,
-.me_section,
-.me_sidenav,
+.me_section,.me_sidenav,
 .mm_vdcv,
 .news-side-nav,
 .vs_cont .moduleCont .module
@@ -1211,8 +1237,7 @@ a.cbtn:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#b_content #resultsContainer:hover,
-#b_context:hover,
+#b_content #resultsContainer:hover,#b_context:hover,
 #b_results > li:hover,
 #carousel #crs_pane .itile:hover,#carousel #crs_pane .pntile:hover,
 #filterContainer:hover,
@@ -1223,8 +1248,7 @@ a.cbtn:active
 .bnp_fly_hp:hover,
 .bop_tile:hover,
 .mc_caro .hp_trivia_outer .hp_trivia_inner:hover,
-.me_section:hover,
-.me_sidenav:hover,
+.me_section:hover,.me_sidenav:hover,
 .mm_vdcv:hover,
 .news-side-nav:hover,
 .vs_cont .moduleCont .module:hover
@@ -1234,23 +1258,22 @@ a.cbtn:active
 
 /*___ Plain ________________________________________________________________________*/
 
-.MicrosoftMap .popOutInner,
-.bm_saveRoot .popOutInner,
-.MicrosoftMap .Light #transientLens .transientLensActions,
-.MicrosoftMap .MapsInfoboxContainer,
 #b_opalpers .b_op_flyout,
+#detailPage:not(.mob) #vs_images .irsc,
 #eqna_tooltip,
 #id_hbfo,
+#irhcid.irhins,
 #vm_c .iuscp,
+.MicrosoftMap .Light #transientLens .transientLensActions,.MicrosoftMap .MapsInfoboxContainer,.MicrosoftMap .popOutInner,
 .b_scard,
+.bm_saveRoot .popOutInner,
 .entityPreview,
 .ftrD_MmVert,
 .insights .ins_exp,
 .menuBtn .hiddenContainer,
 .sa_as .sa_drw,
 .vrhc,
-.vs_container .richImage,
-.vs_preview .richImage
+.vs_container .richImage,.vs_preview .richImage
 {
 	background-color: #111!important;
 	border-radius: 22px!important;
@@ -1258,28 +1281,29 @@ a.cbtn:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.MicrosoftMap .popOutInner, .bm_saveRoot .popOutInner:hover,
-.MicrosoftMap .Light #transientLens .transientLensActions:hover,
 #b_opalpers .b_op_flyout:hover,
+#detailPage:not(.mob) #vs_images .irsc:hover,
 #eqna_tooltip:hover,
 #id_hbfo:hover,
+#irhcid.irhins:hover,
 #vm_c .iuscp:hover,
+.MicrosoftMap .Light #transientLens .transientLensActions:hover,.MicrosoftMap .popOutInner, .bm_saveRoot .popOutInner:hover,
 .b_scard:hover,
 .entityPreview:hover,
 .ftrD_MmVert:hover,
 .insights .ins_exp:hover,
 .menuBtn .hiddenContainer:hover,
 .sa_as .sa_drw:hover,
-.vs_container .richImage,
-.vs_preview .richImage:hover
+.vs_container .richImage,.vs_preview .richImage:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
 
-.serp-overlay-listings .announceContainer .banLi, .overlay-listings .announceContainer .banLi,
-.bm_feedbackBetaButton
+.bm_feedbackBetaButton,
+.overlay-listings .announceContainer .banLi,
+.serp-overlay-listings .announceContainer .banLi
 {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -1302,6 +1326,7 @@ a.cbtn:active
 /*__ Green Gradient ________________________________________________________________*/
 
 #tta_phrasebook .tfil-filter:hover,
+.insttab .tab-head ul>li.tab-active,.insttab .tab-head ul>li:hover,
 .t_suggest_msg
 {
 	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
@@ -1346,24 +1371,15 @@ a.cbtn:active
 
 /*___ Highlight Background _________________________________________________________*/
 
-.MicrosoftMap a.dropdownEntry:hover, .bm_saveRoot a.dropdownEntry:hover,
-
-.MicrosoftMap .Light #transientLens .transientLensActions a.directionsAddToRoute.selected,
-.MicrosoftMap .Light #transientLens .transientLensActions a.saveas.selected,
-.MicrosoftMap .Light #transientLens .transientLensActions a.savefavorite.selected,
-.MicrosoftMap .Light #transientLens .transientLensActions a.nearby.selected,
-
-
-
 #sw_as .sa_hv,
 #tta_alttbl tbody tr:not(:first-child):hover,
+.MicrosoftMap .Light #transientLens .transientLensActions a.directionsAddToRoute.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.nearby.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.saveas.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.savefavorite.selected,.MicrosoftMap a.dropdownEntry:hover,
 .b_vList .tabcap table tbody tr:hover,
+.bm_saveRoot a.dropdownEntry:hover,
 .finind_item:hover,
 .finlite_item:hover,
-.hb_section:active,
-.hb_section:hover,
-.nsn-category-item a.ntext:hover,
-.nsn-category-subitem>a:hover:hover,
+.hb_section:active,.hb_section:hover,
+.nsn-category-item a.ntext:hover,.nsn-category-subitem>a:hover,
 .overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li:hover,
 .qnaItem:hover,
 .tt_phRows:hover [class*="tta_"],
@@ -1377,20 +1393,19 @@ a.cbtn:active
 @-moz-document domain("bing.com") {
 /*__________________________________________________________________________________*/
 
-.overlay-listings.cardified-list .listings-item,
-.br-item,
+.b_vPanel>div, .b_vList>li,
+.rcimgcol .b_imgSet .b_hList>li,
 #actionbar .hiddenActions li,
 #b_context .b_module_expansion .b_expansion_wrapper,
 #b_results > li:not(.b_ans),
-#carousel #crs_pane .itile,
-#carousel #crs_pane .pntile,
+#carousel #crs_pane .itile,#carousel #crs_pane .pntile,
 #detailPage a,
 #df_listaa .b_module_expansion .b_expansion_text,
 #rcCalB input,
 .b_overlay .btn.rounded .cr>div,
 .b_scard,
-.b_vList .tabcap table tbody tr,
-.b_vlist2col.b_deep li,
+.b_vList .tabcap table tbody tr,.b_vlist2col.b_deep li,
+.br-item,
 .dcont .b_dList > li,
 .df_topAlAs.df_sideColor.df_alsoAsk.df_close,
 .dg_b .dg_u,
@@ -1401,7 +1416,7 @@ a.cbtn:active
 .lisn_content .lisn_imgblock .b_imagePair,
 .mc_fgvc_u,
 .newsitem,
-.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li,
+.overlay-listings.cardified-list .listings-item,.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li,
 .rc_vlHorizontalImage .rc_vlCard,
 .relocCtx_card,
 .slide,
@@ -1417,20 +1432,20 @@ li.tall_m
 
 /*__________________________________________________________________________________*/
 
-.overlay-listings.cardified-list .listings-item:hover,
-.br-item:hover,
+.b_vPanel>div:hover,
+.b_vList>li:hover,
+.rcimgcol .b_imgSet .b_hList>li:hover,
 #actionbar .hiddenActions li:hover,
 #b_context .b_module_expansion .b_expansion_wrapper:hover,
 #b_results > li:hover,
-#carousel #crs_pane .itile:hover,
-#carousel #crs_pane .pntile:hover,
+#carousel #crs_pane .itile:hover,#carousel #crs_pane .pntile:hover,
 #detailPage a:hover,
 #df_listaa .b_module_expansion .b_expansion_text:hover,
 #rcCalB input:hover,
 .b_overlay .btn.rounded .cr>div:hover,
 .b_scard:hover,
-.b_vList .tabcap table tbody tr:hover,
-.b_vlist2col.b_deep li:hover,
+.b_vList .tabcap table tbody tr:hover,.b_vlist2col.b_deep li:hover,
+.br-item:hover,
 .dcont .b_dList > li:hover,
 .df_topAlAs.df_sideColor.df_alsoAsk.df_close:hover,
 .dg_b .dg_u:hover,
@@ -1441,14 +1456,13 @@ li.tall_m
 .lisn_content .lisn_imgblock .b_imagePair:hover,
 .mc_fgvc_u:hover,
 .newsitem:hover,
-.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li:hover,
+.overlay-listings.cardified-list .listings-item:hover,.overlay-taskpane ul.searchNearbyModuleIcon.searchNearbyWithLabels li:hover,
 .rc_vlHorizontalImage .rc_vlCard:hover,
 .relocCtx_card:hover,
 .slide:hover,
 .spl_ent-trgr > div:hover,
 .tta_videoresult:hover,
-.wtr_forecastDay.wtr_tab_sel,
-.wtr_forecastDay:hover,
+.wtr_forecastDay.wtr_tab_sel,.wtr_forecastDay:hover,
 li.item:hover,
 li.square_m:hover,
 li.tall_m:hover

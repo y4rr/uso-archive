@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201014.2.25
+@version        20201016.10.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.14 ********************** */
+/* Ameblo Management ver.2020.10.16 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -3000,143 +3000,130 @@ body {
 
 /* 月別画像リスト ********************************* */
 /* 右サイドバー非表示 */
-._2WMmxMQc {
+._lpwr1aal {
     display: none; }
 
 /* ブログ名 */
-._1E9zjINm {
+._mkVbFhcb {
     border-bottom: 1px solid #607d8b; }
 
-._1E9zjINm:hover {
-    position: relative;
-    z-index: 1;
-    background: #000; }
+._iuuRMMqR {
+    color: #fff; }
 
-._3bCKqzga {
-    display: inline-block;
-    width: 320px; }
-
-._3bCKqzga:hover {
-    width: 100%; }
-
-._2O2bhMz2 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px 0 6px;
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden; }
+._25GB2HQo {
+    margin: 15px 0 12px;
+    font-size: 20px }
 
 /* 選択月 セレクター */
-._2tZTJfyT {
+._12_FWPEl {
     border-bottom: 1px solid #607d8b; }
 
-._BHh8uOkY {
+._2odk1WhV {
     border-top: 1px solid #607d8b; }
 
-._2jhhhR7H {
+._39xTokni {
     margin: 0 auto 12px;
     font-weight: bold; }
 
-._3mnJ9xiv,
-._2Bd_Uw8j {
+._36uTnzx2,
+._We2ZQ2YK {
     color: #fff; }
 
 /* 月表示列 */
-._2xU9sCvw {
+._30klcZkX {
     color: #fff; }
 
 /* 選択月 */
-._3IygW9XE {
+._1hYXJMbL {
     color: #fff;
     border-bottom: 4px solid #00bcd4; }
 
 /* 画像サムネイル選択 ****************************** */
-._hZVpO_ZV a:hover {
+._pIcK3Nuc a:hover {
     opacity: 1;
     outline: 3px solid #2196f3; }
 
 /* サムネイルの記事帯 */
-._1uox4N9B:hover ._1kMtDLBd {
+._3rcaDH8O:hover ._2zLHwW5j {
     opacity: 1;
     border-top: 1px solid #000; }
 
-._wkGyZr1z {
+._2bEM_fCh {
     background: #fff;
     height: 28px;
     padding: 6px 8px; }
 
-._wkGyZr1z:hover {
+._2bEM_fCh:hover {
     background: #b3e5fc;
     text-decoration: none; }
 
 /* 画像サムネイル 5列 ***************************** */
-._1uox4N9B {
+._3rcaDH8O {
     display: inline-block;
     position: relative;
     width: calc((100% - 32px)/5); }
 
-._1uox4N9B:nth-child(3n+1) {
+._3rcaDH8O:nth-child(3n+1) {
     margin-left: 8px; }
 
-._1uox4N9B:nth-child(5n+1) {
+._3rcaDH8O:nth-child(5n+1) {
     margin-left: 0; }
 
 @media (min-width: 1168px) {
-._1uox4N9B:nth-child(4n+1) {
+._3rcaDH8O:nth-child(4n+1) {
     margin-left: 8px; }
 
-._1uox4N9B:nth-child(5n+1) {
+._3rcaDH8O:nth-child(5n+1) {
     margin-left: 0; }
 
-._1uox4N9B {
+._3rcaDH8O {
     width: calc((100% - 32px)/5); } }
 
 /* 個別画像ページ **************************************** */
 /* 右サイドバー非表示 */
-._BW_DI-Zk {
+._3_UIE5Iw {
     display: none; }
 
 /* 画像ビュアー部全体 */
-._DxraGcwe {
+._20OLgkUv {
     margin-top: 15px; }
 
 /* 記事タイトル */
-._FZgw4ZIw {
+._1XvL3nIW {
     position: absolute;
-    top: 26px;
-    left: 424px;
-    padding-bottom: 6px; }
+    top: 50px;
+    left: 400px;
+    margin: 0;
+    padding: 10px 0 10px 100px;
+    color: #eee;
+    background: #000; }
 
 @media (min-width: 1168px) {
-._FZgw4ZIw {
+._1XvL3nIW {
     left: calc(50% - 160px); } }
 
-._L1g7OMTc {
+/* 記事日付 */
+._3iKJyUGr {
+    position: absolute;
+    top: 48px;
+    left: 400px;
+    margin: 0;
+    padding: 15px 10px;
     color: #eee; }
 
-/* 記事日付 */
-._26Nur9C3 {
-    color: #eee;
-    position: absolute;
-    top: 40px;
-    left: 339px;
-    padding: 20px 10px; }
-
 @media (min-width: 1168px) {
-._26Nur9C3 {
-    left: calc(50% - 245px); } }
+._3iKJyUGr {
+    left: calc(50% - 160px); } }
 
 /* 画像表示枠 */
-._1N0YSCX5 {
+._3-g1Ourp {
     margin-bottom: 15px; }
 
-._1s69dRWr {
+._TGLE5NCj {
     border: 1px solid #607d8b; }
 
 /* 画像移動タブ */
-._6wiDEels {
+._1GM5liDK {
     left: -50px;
     border-width: 2px;
     border-color: transparent;
@@ -3144,46 +3131,46 @@ body {
     background: #607d8b; }
 
 /* 矢印 */
-._3PQtCycU {
+._1TOoy92d {
     color: #fff; }
 
-._3wwGUW6q {
+._Ch6E4DPA {
     right: -50px;
     border-width: 2px;
     border-color: transparent;
     border-radius: 0 4px 4px 0;
     background: #607d8b; }
 
-._3wwGUW6q:focus,
-._6wiDEels:focus {
+._1GM5liDK:focus,
+._Ch6E4DPA:focus {
     border: 2px solid #2196f3; }
 
 /* 画像横スクロールリスト */
-._1-o3KHR- {
+._2C7ajTnn {
     margin-bottom: 15px; }
 
-._1d_5ovVw {
+._mreg6Dwc {
     border: 1px solid #607d8b; }
 
 /* 画像一覧へ */
-._HCOukf8U {
+._zQeM0Pj3 {
     position: absolute;
-    top: 105px;
+    top: 107px;
     left: calc(50% - 480px);
     margin: 0; }
 
-._2S3YtSUs {
+._necK5k4E {
     padding: 12px 10px;
     color: #ccc;
     border: 1px solid #607d8b; }
 
-._2S3YtSUs:hover {
+._necK5k4E:hover {
     opacity: 1;
     color: #fff;
     border-color: #fff; }
 
 /* 画像をドラッグアウト許可 ***** ( 画像取得をしない場合は削除)*** */
-._2tacrDvE {
+._2o3NAkPB {
     pointer-events: auto; }
 }
 

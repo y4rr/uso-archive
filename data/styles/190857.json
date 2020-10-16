@@ -1,0 +1,39 @@
+{
+  "id": 190857,
+  "info": {
+    "name": "Vivaldi - Candy stripes border for selected tabs",
+    "description": "- Related link\r\n<a href=\"https://forum.vivaldi.net/topic/10549/modding-vivaldi\" title=\"Modding Vivaldi | Vivaldi Forum\">Modding Vivaldi | Vivaldi Forum</a>",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "global",
+    "createdAt": "2020-10-16T09:35:29.000Z",
+    "updatedAt": "2020-10-16T09:35:29.000Z",
+    "license": "CC-BY-4.0",
+    "author": {
+      "id": 512793,
+      "name": "mrm64"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "190857_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "/* i really want this to be global */\r\n/* Vivaldi - Candy stripes border for selected tabs */\r\n.tab-position .tab .tab-selection line,\r\n.tab-position .tab .tab-selection rect\r\n{\r\n  stroke-width: 6 !important;\r\n}\r\n.tab-position .tab .tab-selection line.inner,\r\n.tab-position .tab .tab-selection rect.inner\r\n{\r\n  stroke: GhostWhite !important;\r\n}\r\n.tab-position .tab .tab-selection line.outer,\r\n.tab-position .tab .tab-selection rect.outer\r\n{\r\n  stroke-dasharray: 4, 16 !important;\r\n  stroke-dashoffset: 0 !important;\r\n  stroke: DeepPink !important;\r\n}"
+  }
+}

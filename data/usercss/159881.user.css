@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами. https://vk.com/newvk.darktheme.telegramstyle (подпишитесь, что бы группа выпадала в поиске)Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201015.15.31
+@version        20201016.2.2
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2498,7 +2498,6 @@ body.new_header_design #side_bar .left_label {
 /*     background-color: var(--white); */
 /*     border-bottom: 1px solid var(--steel_gray_100); */
 	background-color: #0e1621;
-/* 	border-bottom-color: hsla(218, 29%, 18%, .5); */
 	border-bottom-color: #0e1621;
 }
 
@@ -2542,4 +2541,29 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 [dir] .poster__open-btn-wrapper::before {
     background-color: hsl(214, 26%, 23%);
 }
+
+[dir] body.new_header_design .top_nav_btn .top_notify_count {
+	border-color: hsl(0, 60%, 50%);
+	border-color: hsl(13, 100%, 65%);
+}
+[dir] body.new_header_design .top_nav_btn:hover .top_notify_count::after {
+/*     border-color: var(--steel_gray_20); */
+	border-color: hsl(13, 100%, 65%);
+}
+
+/* Увеличенное пространство для названия трека */
+[dir] #top_nav > li:nth-child(5) {
+	margin-right: -140px;
+}
+[dir] #top_profile_menu {
+	margin-right: inherit;
+}
+body.new_header_design .top_audio_player {
+    max-width: 700px;
+	padding-right: 8px;
+}
+body.new_header_design .top_audio_player_title {
+    font-size: 12.8px;
+}
+/* -------------------- */
 }

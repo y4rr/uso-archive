@@ -2,8 +2,8 @@
 @name           Modern Steam UI for STS
 @namespace      USO Archive
 @author         RealPyro
-@description    `<b>Modern Steam UI Style for Steam Translation Server</b><i>Compatible with <a href="https://greasyfork.org/en/scripts/2250-sts-helper" target="_blank">STS Helper</a> script</i><a href="https://imgur.com/a/Xgiar" target="_blank">Click Here for More Screenshots</a>Also, check out my <b>Flat Design for STS</b> style: <a href="https://userstyles.org/styles/153976" target="_blank">Here</a>Contact me on: <a href="http://steamcommunity.com/id/RealPyro" target="_blank">Steam</a>`
-@version        2019510.20.47
+@description    `<b>Modern Steam UI Style for Steam Translation Server</b><i>Compatible with <a href="https://greasyfork.org/en/scripts/2250-sts-helper" target="_blank">STS Helper</a> userscript</i><a href="https://imgur.com/a/Xgiar" target="_blank">Click Here for More Screenshots</a>Also, check out my <b>Flat Design for STS</b> style: <a href="https://userstyles.org/styles/153976" target="_blank">Here</a>Contact me on: <a href="http://steamcommunity.com/id/RealPyro" target="_blank">Steam</a>`
+@version        20201016.9.53
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown fonts "Fonts" {
@@ -2148,7 +2148,7 @@ img[src*="logo_steamtranslation"] {
     content: "";
     height: 52px;
     width: 139px;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
     box-sizing: border-box;
     vertical-align: top;
@@ -2156,195 +2156,195 @@ img[src*="logo_steamtranslation"] {
     display: inline-block;
 }
 #TenNew a[href*="branch_ID=1"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/400/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/400/capsule_231x87.jpg");
     /*portal*/
 }
 #TenNew a[href*="branch_ID=2"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/70/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/70/capsule_231x87.jpg");
     /*hl 1*/
 }
 #TenNew a[href*="branch_ID=3"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/440/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/440/capsule_231x87.jpg");
     /*tf 2*/
 }
 #TenNew a[href*="branch_ID=4"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/10/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/10/capsule_231x87.jpg");
     /*cs 16*/
 }
 #TenNew a[href*="branch_ID=5"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/30/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/30/capsule_231x87.jpg");
     /*day of defeat*/
 }
 #TenNew a[href*="branch_ID=6"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*platform (not sure what game is this)*/
 }
 #TenNew a[href*="branch_ID=7"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/380/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/380/capsule_231x87.jpg");
     /*hl 2 ep1*/
 }
 #TenNew a[href*="branch_ID=8"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/220/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/220/capsule_231x87.jpg");
     /*hl 2*/
 }
 #TenNew a[href*="branch_ID=9"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/420/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/420/capsule_231x87.jpg");
     /*hl 2 ep2*/
 }
 #TenNew a[href*="branch_ID=10"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/340/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/340/capsule_231x87.jpg");
     /*hl 2 lost coast*/
 }
 #TenNew a[href*="branch_ID=11"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/320/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/320/capsule_231x87.jpg");
     /*hl 2 deathmatch*/
 }
 #TenNew a[href*="branch_ID=12"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/500/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/500/capsule_231x87.jpg");
     /*l4d*/
 }
 #TenNew a[href*="branch_ID=13"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/550/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/550/capsule_231x87.jpg");
     /*l4d 2*/
 }
 #TenNew a[href*="branch_ID=14"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/753/ebc73b4e326945ea7eb986d93e2b1aabb291fe7d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/753/capsule_231x87.jpg");
     /*steam client*/
 }
 #TenNew a[href*="branch_ID=15"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/753/ebc73b4e326945ea7eb986d93e2b1aabb291fe7d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/753/capsule_231x87.jpg");
     /*steam store*/
 }
 #TenNew a[href*="branch_ID=16"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/630/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/630/capsule_231x87.jpg");
     /*rest of the ui*/
 }
 #TenNew a[href*="branch_ID=17"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=18"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/550/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/322070/capsule_231x87.jpg");
     /*l4d 2 dlc*/
 }
 #TenNew a[href*="branch_ID=19"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/550/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/322070/capsule_231x87.jpg");
     /*l4d 2 dlc*/
 }
 #TenNew a[href*="branch_ID=20"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=21"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/17570/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/17570/capsule_231x87.jpg");
     /*Pirates, Vikings, and Knights II*/
 }
 #TenNew a[href*="branch_ID=22"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/620/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/620/capsule_231x87.jpg");
     /*portal 2*/
 }
 #TenNew a[href*="branch_ID=23"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=24"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=25"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=26"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/570/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_231x87.jpg");
     /*dota 2*/
 }
 #TenNew a[href*="branch_ID=27"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=28"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=29"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/1800/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/1800/capsule_231x87.jpg");
     /*cs:go*/
 }
 #TenNew a[href*="branch_ID=30"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/753/ebc73b4e326945ea7eb986d93e2b1aabb291fe7d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/753/capsule_231x87.jpg");
     /*steam mobile*/
 }
 #TenNew a[href*="branch_ID=31"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/620/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/620/capsule_231x87.jpg");
     /*portal 2 dlc*/
 }
 #TenNew a[href*="branch_ID=32"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=33"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/63200/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/63200/capsule_231x87.jpg");
     /*monday night combat (uber enterianment 3rd party)*/
 }
 #TenNew a[href*="branch_ID=34"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=35"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/206500/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/206500/capsule_231x87.jpg");
     /*airmech (carbon games 3rd party)*/
 }
 #TenNew a[href*="branch_ID=36"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*steam delta not available*/
 }
 #TenNew a[href*="branch_ID=37"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=38"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=39"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*steam delta not available*/
 }
 #TenNew a[href*="branch_ID=40"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/113020/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/113020/capsule_231x87.jpg");
     /*monaco (pocketwatch 3rd party)*/
 }
 #TenNew a[href*="branch_ID=41"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #TenNew a[href*="branch_ID=42"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/245550/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/245550/capsule_231x87.jpg");
     /*free to play the movie*/
 }
 #TenNew a[href*="branch_ID=43"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/261820/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/261820/capsule_231x87.jpg");
     /*Estranged act I*/
 }
 #TenNew a[href*="branch_ID=44"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/280740/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/280740/capsule_231x87.jpg");
     /*aperture tag*/
 }
 #TenNew a[href*="branch_ID=45"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/570/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_231x87.jpg");
     /*dota 2 compendium*/
 }
 #TenNew a[href*="branch_ID=46"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/317790/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/317790/capsule_231x87.jpg");
     /*Rexaura*/
 }
 #TenNew a[href*="branch_ID=47"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/753/ebc73b4e326945ea7eb986d93e2b1aabb291fe7d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/753/capsule_231x87.jpg");
     /*steam email*/
 }
 #TenNew a[href*="branch_ID=48"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/753/ebc73b4e326945ea7eb986d93e2b1aabb291fe7d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/753/capsule_231x87.jpg");
     /*steam support*/
 }
 #TenNew a[href*="branch_ID=49"]::before {
@@ -2352,27 +2352,27 @@ img[src*="logo_steamtranslation"] {
     /*glossary*/
 }
 #TenNew a[href*="branch_ID=50"]::before {
-    background: url("https://i.imgur.com/RO9tQIC.png");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_231x87.jpg");
     /*dota 2 addon/custom game*/
 }
 #TenNew a[href*="branch_ID=51"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/232090/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/232090/capsule_231x87.jpg");
     /*kf2 (not available)*/
 }
 #TenNew a[href*="branch_ID=52"]::before {
-    background: url("http://cdn.akamai.steamstatic.com/steam/apps/250820/capsule_184x69.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steam/apps/250820/capsule_231x87.jpg");
     /*steam vr*/
 }
 #TenNew a[href*="branch_ID=53"]::before {
-    background: url("https://steamcdn-a.opskins.media/steamcommunity/public/images/apps/223300/767da35bf9238422bd67501cb8fa90af69850a9d.jpg");
+    background: url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/223300/767da35bf9238422bd67501cb8fa90af69850a9d.jpg");
     /*steam hardware*/
 }
 #TenNew a[href*="branch_ID=54"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*steam project not available*/
 }
 #TenNew a[href*="branch_ID=55"]::before {
-    background: url("https://steamdb.info/static/img/applogo.gif");
+    background: url("https://steamdb.info/static/img/applogo.svg");
     /*not available*/
 }
 #sticker-sticky-wrapper.is-sticky #sticker {
@@ -2403,7 +2403,7 @@ img[src*="logo_steamtranslation"] {
     color: #8F98A0 !important;
 }
 #footer_text:after {
-    content: "\A Modern Steam UI for Steam Translation Server by ρyro, also modified from Manfre's source code. \A Design inspired by Steam Store.";
+    content: "\A Modern Steam UI for Steam Translation Server by ρyro, modified from Manfre's source code. \A Style materials from Steam™ Store";
     white-space: pre;
 }
 #footer_logo {
@@ -2652,12 +2652,20 @@ span[onclick*="($('moderator_announcement')"]:hover font.readon {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.075) !important;
     border-bottom: none !important;
+    padding-top: 12px;
 }
-#leftAreaContainer #alldiscussions ~ .rule + table tr > td:first-of-type {
+#leftAreaContainer #alldiscussions ~ .rule + table tr > td:nth-child(1) {
     padding-left: 28px !important;
 }
+#leftAreaContainer #alldiscussions ~ .rule + table tr > td:nth-child(2) br {
+    font-size: 0;
+}
 #leftAreaContainer #alldiscussions ~ .rule + table tr > td:last-of-type {
-    padding: 0 76px 0 16px !important;
+    font-size: 0;
+    padding: 0 40px 0 144px !important;
+}
+#leftAreaContainer #alldiscussions ~ .rule + table tr > td:last-of-type label {
+    font-size: 11px !important;
 }
 #leftAreaContainer > b:first-of-type > a:last-of-type:before {
     content: "" !important;

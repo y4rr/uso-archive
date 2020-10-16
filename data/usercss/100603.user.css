@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        202082.7.44
+@version        20201016.5.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -128,8 +128,8 @@ selector
 	font-size: 15px!important;
 }
 
-.rec_details .rec-title,
-.native-ad-promoted-provider .message
+.native-ad-promoted-provider .message,
+.rec_details .rec-title
  {
 	line-height: 29px!important;
 }
@@ -138,6 +138,7 @@ selector
 
 #top_center_wrapper,
 #top_rhs_wrapper,
+.OGEzNjE0ZGItYT *,
 .ab_widget,
 .after_ad,
 .before_ad,
@@ -145,6 +146,7 @@ selector
 .interstitial-adWrapper,
 .mediaviewer__head-banner,
 .navbarSprite,
+.promoted-provider,
 .rec_details .rec-jaw-lower>.rec-jaw-teeth,
 [class*="first_party_ad_wrapper"]
 
@@ -156,9 +158,8 @@ selector
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-selector
- {
-    top: 10px!important;
+div#content-2-wide {
+    margin-top: 12px;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -290,6 +291,7 @@ input[type="radio"]:checked+label {
 .poll.active .answer .vote .button,
 .ratings_wrapper .imdbRating .grey,
 .rec_details .rec-cert-genre,
+.text-muted,
 .text-primary,
 a.btn, button.btn, input.btn,
 body,
@@ -339,9 +341,9 @@ label {
 
 /*___ Blue _________________________________________________________________________*/
 
+#knownfor .knownfor-title .knownfor-year span,
 .comingSoonTitlePage div:first-child,
 .hJHHUo,
-#knownfor .knownfor-title .knownfor-year span,
 .news_item small span:first-child,
 .redesign .mellow,
 .year_column,
@@ -355,7 +357,7 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
-selector {
+.sort-num_votes-visible span:nth-child(5) {
 	color: #07ff24!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
@@ -407,6 +409,8 @@ html {
 	background-attachment: fixed!important;
 }
 
+.lister .header,
+.ipl-itemcount-header,
 #filmography .head:hover,
 #filmography .head {
 	background-image: none;
@@ -458,6 +462,11 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+.lister-item.mode-advanced:nth-child(even),
+.lister-item.mode-advanced:nth-child(odd),
+.faceter>.faceter-header,
+.article.listo div.header,
+.promoted-provider,
 #filmography .head,
 #filmography .head:hover,
 #pagecontent,
@@ -473,6 +482,7 @@ div#content-2-wide
 
 /*__ Blue __________________________________________________________________________*/
 
+.btn-raised--primary,
 .heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone,
 .buybox .buybox__button,
 .rec_actions .rec_next_btn .btn2
@@ -484,6 +494,7 @@ div#content-2-wide
 	color: #fff!important;
 }
 
+.btn-raised--primary:hover,
 .heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:hover,
 .buybox .buybox__button:hover,
 .rec_actions .rec_next_btn .btn2:hover
@@ -492,6 +503,8 @@ div#content-2-wide
 	color: #ff0!important;
 }
 
+
+.btn-raised--primary:active,
 .heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:active,
 .buybox .buybox__button:active,
 .rec_actions .rec_next_btn .btn2:active
@@ -605,7 +618,9 @@ div#content-2-wide
 .aux-content-widget-4,
 .heroic-overview #quicklinksBar .quicklinkSection,
 .ipc-menu--on-baseAlt,
-.ipc-poster-card.ipc-poster-card--dynamic-width
+.ipc-poster-card.ipc-poster-card--dynamic-width,
+.lister-item.mode-detail:nth-child(even),
+.lister-item.mode-detail:nth-child(odd)
  {
 	background-color: #111!important;
 	border-radius: 22px!important;
@@ -618,7 +633,9 @@ div#content-2-wide
 .aux-content-widget-4:hover,
 .heroic-overview #quicklinksBar .quicklinkSection:hover,
 .ipc-menu--on-baseAlt:hover,
-.ipc-poster-card.ipc-poster-card--dynamic-width:hover
+.ipc-poster-card.ipc-poster-card--dynamic-width:hover,
+.lister-item.mode-detail:nth-child(even):hover,
+.lister-item.mode-detail:nth-child(odd):hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -634,10 +651,12 @@ selector
 
 /*___ Highlight Background _________________________________________________________*/
 
+.lister-item.mode-advanced:nth-child(even):hover,
+.lister-item.mode-advanced:nth-child(odd):hover,
 ul.quicklinks li.subnav_selected,
 .ipl-zebra-list .ipl-zebra-list__item:hover
  {
-	background: linear-gradient(to right, #03529c, #0000)!important;
+	background: linear-gradient(to right, #18191a, #0000)!important;
 	border-left-color: #434343!important;
 }
 
@@ -664,6 +683,10 @@ ul.quicklinks li.subnav_selected,
 .iIQGKv,
 .ipc-poster-card.ipc-poster-card--dynamic-width,
 .ipl-zebra-list .ipl-zebra-list__item,
+.lister-item.mode-advanced:nth-child(even),
+.lister-item.mode-advanced:nth-child(odd),
+.lister-item.mode-detail:nth-child(even),
+.lister-item.mode-detail:nth-child(odd),
 .media_index_thumb_list .add-image-container,
 .media_index_thumb_list img,
 .news_item,
@@ -694,6 +717,10 @@ div.sub_nav
 .iIQGKv:hover,
 .ipc-poster-card.ipc-poster-card--dynamic-width:hover,
 .ipl-zebra-list .ipl-zebra-list__item:hover,
+.lister-item.mode-advanced:nth-child(even):hover,
+.lister-item.mode-advanced:nth-child(odd):hover,
+.lister-item.mode-detail:nth-child(even):hover,
+.lister-item.mode-detail:nth-child(odd):hover,
 .media_index_thumb_list .add-image-container:hover,
 .media_index_thumb_list img:hover,
 .news_item:hover,
@@ -744,7 +771,6 @@ selector {
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
 
-
 /* Advanced Search _______________________________________________________________*/
 
 [href="https://www.imdb.com/search/"] svg.ipc-icon--find-in-page {
@@ -756,7 +782,6 @@ selector {
     background-size: 27px!important;
     padding-left: 28px!important;
 }
-
 
 /* Celebs _______________________________________________________________*/
 
@@ -794,8 +819,6 @@ selector {
     padding-left: 28px!important;
 }
 
-
-
 /* Search _______________________________________________________________*/
 
 [aria-label="All"] svg,
@@ -811,9 +834,6 @@ selector {
     padding-left: 22px!important;
     width: 10px!important;
 }
-
-
-
 
 /* Social Media _________________________________________________________*/
 
@@ -921,7 +941,6 @@ selector {
     padding-left: 33px;
 }
 
-
 /* Titles _______________________________________________________________*/
 
 [aria-label="Titles"] svg {
@@ -945,18 +964,5 @@ selector {
     background-size: 27px!important;
     padding-left: 28px!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

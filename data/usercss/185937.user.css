@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         huaao zang
 @description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（由于在学校，只能用笔记本进行编写，所以像素超过1366×768的大显示器无法进行检验，可能有一些显示问题）。`
-@version        2020101.9.40
+@version        20201016.10.21
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -518,6 +518,11 @@ body
     background-color:rgba(255, 255, 255,0.95);
     height:45px!important;
 }
+.s_tab b
+,.s_tab a
+{
+    margin-right:15px;
+}
 #bdpcImgTopTab
 {
     position:relative;
@@ -614,6 +619,11 @@ body
     border-right-width: 0;
     display: inline-block;
 }
+#search-box>ul
+{
+    height:36px;
+    padding-top:10px;
+}
 #search-btn
 {
     width: 112px;
@@ -642,7 +652,7 @@ body
 .picker-header/**/
 {
     position:absolute;
-    top:-57px;
+    top:-47px;
     width:360px;
     right:0;
 }
@@ -872,7 +882,7 @@ body
 /*广告屏蔽结束*/
 }
 
-@-moz-document regexp("https?://wenku.baidu.com/search(\\?)(.*)") {
+@-moz-document regexp("https?://wenku.baidu.com/search(.*)") {
 /*代码8，百度文库搜索界面,待改进*/
 /*预设开始*/
 body
@@ -965,15 +975,15 @@ body
     border-radius:0 15px 15px 0;
 }
 .new-filter-box/*筛选*/
-
-,.search-result dl/*搜索结果*/
+,.search-topic-block/*推荐结果*/
+,.search-result>dl/*搜索结果*/
 ,div[id^=bdfs]/*广告*/
 ,.vip-card
 ,#top-recommend-dsp-ad/*精选*/
 ,.footer-box-recommend
 ,.search-result>.clearfix
-,.mt10
 ,.specialDisplay-inner
+,.search-result>p
 {
     min-width:590px;
     background-color:rgba(255,255,255,.85);
@@ -981,6 +991,10 @@ body
     border-radius:15px;
     padding:15px 10px 15px 20px!important;
     font-size:1.2em;
+}
+.search-topic-block/*推荐结果*/
+{
+    margin-bottom:15px;
 }
 .specialDisplay-container
 {
@@ -1019,6 +1033,7 @@ div[id^=bdfs]
 ,.search-result>.clearfix:hover
 ,.mt10:hover
 ,.specialDisplay-inner:hover
+,.search-topic-block:hover
 {
     background:white;
     transition:background 1s;

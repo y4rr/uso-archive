@@ -1,7 +1,7 @@
 {
   "id": 151792,
   "name": "Imgur Style Enhancements",
-  "description": "Makes the new Imgur home page layout to be linear instead of the new non-linear layout.\r\n<br><br>\r\nOption: Trending Tags - Can display or hide the Trending Tag banner on the Home page\r\n<br>\r\nOption: Favorites Page - Can apply the linear style of the Home page to the Favorites page\r\n<br>\r\nOption: Comment Enhancements - A healthy mix of the new and old style comments",
+  "description": "Option: Trending Tags - Display or hide the Trending Tag banner on the Home page\r\n<br>\r\nOption: Home Page - Apply the linear style to the Home page\r\n<br>\r\nOption: Favorites Page - Apply the linear style to the Favorites page\r\n<br>\r\nOption: User Posts Page - Apply the linear style to the User Posts page\r\n<br>\r\nOption: Comment Enhancements - A healthy mix of the new and old style comments\r\n<br>\r\nOption: Explore Posts - Display or hide the new Explore Posts section under Public Gallery Posts",
   "user": {
     "id": 498911,
     "name": "TheMercDeadpool",
@@ -11,20 +11,20 @@
     "about": null,
     "license": null
   },
-  "updated": "2019-08-21T06:01:57.000Z",
-  "weekly_install_count": 5,
-  "total_install_count": 470,
+  "updated": "2020-10-16T05:01:26.000Z",
+  "weekly_install_count": 3,
+  "total_install_count": 474,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/151792_after.jpeg?r=1602057913",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/151792_after.jpeg?r=1602835478",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/151792_additional_28750.jpeg?r=1602057913",
-    "https://userstyles.org/style_screenshots/151792_additional_28751.jpeg?r=1602057913",
-    "https://userstyles.org/style_screenshots/151792_additional_29006.jpeg?r=1602057913"
+    "https://userstyles.org/style_screenshots/151792_additional_28750.jpeg?r=1602835478",
+    "https://userstyles.org/style_screenshots/151792_additional_28751.jpeg?r=1602835478",
+    "https://userstyles.org/style_screenshots/151792_additional_29006.jpeg?r=1602835478"
   ],
   "license": null,
   "created": "2017-11-22T23:50:35.000Z",
@@ -33,7 +33,7 @@
   "subcategory": "imgur",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document url(\"https://imgur.com/\") {\r\n\r\n  /* Gallery */\r\n  .Grid-column > div {\r\n       height: 300px !important;\r\n       margin-bottom: 20px !important;\r\n   }\r\n\r\n  .Post-item-media {\r\n       height: 90% !important;\r\n  }\r\n\r\n  .Post-item-media img, .Post-item-media video {\r\n      height: 300px !important;\r\n      width: 100% !important;\r\n      object-fit: cover !important;\r\n      max-height: none !important;\r\n      max-width: none !important;\r\n  }\r\n\r\n  .Post-item-title {\r\n      width: 100% !important;\r\n      white-space: nowrap !important;\r\n      overflow: hidden !important;\r\n      text-overflow: ellipsis !important;\r\n  }\r\n\r\n  .Post-item-title > span {\r\n      display: block !important;\r\n  }\r\n  \r\n  \t/* Tag Banner */\r\n  \t/*[[TrendingTag]]*/\r\n}\r\n\r\n/*[[FavoritesPage]]*/\r\n\r\n/*[[PostsPage]]*/\r\n\r\n/*[[Comments]]*/",
+  "css": "@-moz-document url(\"https://imgur.com/\") {\r\n\r\n  /* Gallery */\r\n  /*[[HomePage]]*/\r\n  \r\n  /* Trending Tag Banner */\r\n  \t/*[[TrendingTag]]*/\r\n}\r\n\r\n/*[[PGalleryExplorePosts]]*/\r\n\r\n/*[[FavoritesPage]]*/\r\n\r\n/*[[PostsPage]]*/\r\n\r\n/*[[Comments]]*/",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
@@ -68,11 +68,39 @@
       ]
     },
     {
+      "id": 469147,
+      "style_id": 151792,
+      "install_key": "HomePage",
+      "label": "Make Home Page Linear",
+      "ordinal": 1,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1664959,
+          "style_setting_id": 469147,
+          "label": "Yes",
+          "value": ".Grid-column > div {\r\n    height: 300px !important;\r\n    margin-bottom: 20px !important;\r\n}\r\n\r\n.Post-item-media {\r\n     height: 90% !important;\r\n}\r\n\r\n.Post-item-media img, .Post-item-media video {\r\n    height: 300px !important;\r\n    width: 100% !important;\r\n    object-fit: cover !important;\r\n    max-height: none !important;\r\n    max-width: none !important;\r\n}\r\n\r\n.Post-item-title {\r\n    width: 100% !important;\r\n    white-space: nowrap !important;\r\n    overflow: hidden !important;\r\n    text-overflow: ellipsis !important;\r\n}\r\n\r\n.Post-item-title > span {\r\n    display: block !important;\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1664960,
+          "style_setting_id": 469147,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    },
+    {
       "id": 460771,
       "style_id": 151792,
       "install_key": "FavoritesPage",
       "label": "Make Favorites Page Linear?",
-      "ordinal": 1,
+      "ordinal": 2,
       "setting_type": "dropdown",
       "style_setting_options": [
         {
@@ -100,7 +128,7 @@
       "style_id": 151792,
       "install_key": "PostsPage",
       "label": "Make Posts Page Linear?",
-      "ordinal": 2,
+      "ordinal": 3,
       "setting_type": "dropdown",
       "style_setting_options": [
         {
@@ -128,7 +156,7 @@
       "style_id": 151792,
       "install_key": "Comments",
       "label": "Comments Enhancements?",
-      "ordinal": 3,
+      "ordinal": 4,
       "setting_type": "dropdown",
       "style_setting_options": [
         {
@@ -143,6 +171,34 @@
         {
           "id": 1650152,
           "style_setting_id": 461029,
+          "label": "No",
+          "value": "",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "No"
+        }
+      ]
+    },
+    {
+      "id": 469148,
+      "style_id": 151792,
+      "install_key": "PGalleryExplorePosts",
+      "label": "Hide Explore Posts Under Public Gallery Posts?",
+      "ordinal": 5,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1664961,
+          "style_setting_id": 469148,
+          "label": "Yes",
+          "value": "@-moz-document url-prefix(\"https://imgur.com/gallery/\") {\r\n.BottomRecirc {\r\n    display: none;\r\n}\r\n}",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "Yes"
+        },
+        {
+          "id": 1664962,
+          "style_setting_id": 469148,
           "label": "No",
           "value": "",
           "default": false,
