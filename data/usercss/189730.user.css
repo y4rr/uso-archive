@@ -2,8 +2,8 @@
 @name           ニコニコ動画 動画再生ページ ダークテーマ（HTML5版）
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。コード1に上記のCSSを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。（更新が再開されたようであればこちらは削除する予定です）`
-@version        20201013.6.53
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の勝手な更新版です。コード1に上記のCSSから不要な記述を削除したものを、コード2に追加要素が含まれています。現状かんたんコメントエリアの利用は想定していないので未対応です。気が向いたら直します。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。ニコられたコメントはニコられた数に応じてコメント背景色が変わります。その背景色もカスタムできるようになっています。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去はオリジナルですでに行われているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。問題はないと思いますが何かあれば<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を終了させていただきます。`
+@version        20201015.19.16
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown --- "ニコる" {
@@ -60,26 +60,15 @@ display:none;
 } EOT;
 
 }
+@advanced color ------1 "ニコるランク1の色（1~3？)" #7F68CA
+@advanced color ------2 "ニコるランク2の色(4~5？）" #6B2CA0
+@advanced color ------3 "ニコるランク3の色(6~8？)" #561B92
+@advanced color ------4 "ニコるランク4の色(9+？）" #9B0EB0
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
-/* 消去する要素 */
-  #videoDetailInformation, #playlist, #textMarquee, #searchResultExplorer, #playerCommentPanelOuter, #ichibaPanel,
-  #leftPanel, #appliPanel, #searchResultExplorerContentWrapper, #searchResultExplorerExpand, #videoExplorerExpand, #pageFooter, #wallImageContainer,
-  #alertWindow, #chipWallList, #feedbackLink, #outline.wrapper div.outer div.sidebar, #tagRelatedBanner, #nicommendContainer, #nicoIchiba, 
-  #hiddenUserProfile, #videoShareLinks, #bottomVideoDetailInformation, #videoHeader .toggleDetailExpand, #foot_logo.foot_logo_image,  
-  #superBanner,#videoExplorerSuperBanner, .parentVideoInfo,.shortVideoInfo, .noNicoru .nicoru-button,.nicoru-button .nicorub-icon, 
-  .nicoru-button .nicorub-balloon, .socialButtons, .appliPanel, .playerTabAds,.tagRelatedNicopedia exists,.nicopediaExistsContainer,.header,
-  .relatedTagHeader, .relatedTagHeader, .uadTagRelated, .itemList,.tagRelatedBanner,#videoThumbnailImage,  #slickgrid_886298message, #slickgrid_886298vpos,
-  .slick-header.ui-state-default,.favVideoOwnerStar,#videoTitle,.dicIcon,h4,#footer,.tooltip,.nicoSpotAds.active,
-  #playerAlignmentArea.size_normal #playerContainer.controll_panel #playerTabWrapper,.messageContainer,.lastResBody, .performanceAlert, .horror2016, 
-  .WatchAppContainer-switchToFlash, .UadButtonBalloon, .IchibaContainer, .GridCell BottomContainer-side, .FeedbackLinkContainer,
-  .BottomContainer-card, .NicoSpotAdContainer, .OwnerNicoliveBannerContainer, .html5_message, .nicoliveNotification.onair, .BottomContainer,
-  #ncenq-notification.ncenq-notification-bar-narrow .wp .ctt, .MiniBannerAdContainer, #ncenq-notification.ncenq-notification-bar-narrow{
-    display: none !important;
-  }
-  /* 文字設定 */
-  html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
+/* 文字設定 */
+  html,body,div,h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
   ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu{
     font-weight:800;
     font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
@@ -109,17 +98,6 @@ order:1!important;
 margin-top:16px!important
 }
 
- .MainContainer-commentPanel{background:#222}
-.CommentPanelMenuContainer{border:0}
- .CommentPanelContainer{width:auto;bottom:0}
- .CommentPanelContainer .react-grid-HeaderCell,.CommentPanelDataGrid .CommentPanelDataGrid-headerCell{background:#111216;border-color:#272727}
- .CommentPanelContainer .react-grid-Cell,.CommentPanelDataGrid [class*="___table-cell___"]{border-color:#272727}
- .CommentPanelContainer .CommentPanel,.CommentPanelContainer .CommentPanelDataGrid{color:#789}
- .CommentPanelContainer .react-grid-Row:hover,div[role="row"]:hover{background:#272727!important}
- .VideoMenuContainer-area .VideoMenuButton svg{fill:#657586}
- .DropDownMenu{background:#657586;border:0}
-  
-  
 .HeaderContainer {
 display:flex!important;
 flex-direction:column
@@ -132,28 +110,8 @@ order:-1!important
 .VideoDescriptionContainer {
 order:5!important
 }
-
-.CommentPanelContainer {
-bottom:0!important
-}
-  .VideoDescription-html a{
-    color:#D2691E !important;    
-    text-decoration: underline;
-  }
-  .VideoDescription-html a:hover{
-    color:#dd2200 !important;    
-    text-decoration: underline;
-  }
   /* ヘッダー */
-  #siteHeader, #siteHeaderInner,li.videoPlayback.active a,li.comment a,li.performance a,li.imageQuality a,li.videoPlayback a, .react-grid-HeaderCell, .SearchBox-optionMenu{
-      background:#2f2f2f !important;
-      border: inset 0px #222742 !important;
-  }
 
-  #siteHeader #siteHeaderInner ul li:hover,li.videoPlayback.active a:hover,li.comment a:hover,li.performance a:hover,li.imageQuality a:hover,li.videoPlayback a:hover,
-  .CommentPanelContextMenuContainer-menuHeading:hover, .CommentPanelContextMenuContainer-menuItem:hover {
-    background:#D2691E !important;
-  }
   #siteHeader #siteHeaderInner ul li a span {
     padding: 0px 6px;
     cursor: pointer;
@@ -164,38 +122,15 @@ bottom:0!important
   .TagList .TagItem, .MainContainer-commentPanel, .react-grid-Header, .react-grid-HeaderRow, .VideoMetaOverflowMenuContainer-menu, .DropDownMenu{
       background:#2f2f2f !important;
   }
-  #siteHeaderRightMenuContainer a:hover, #siteHeaderLeftMenuContainer a:hover, .TagList .TagItem:hover{
-    background:#D2691E !important;
-  }
+
    #siteHeader{
       border-bottom: solid 1px #444 !important;
    }
-  .VideoMenuContainer-area .VideoMenuButton{
-     background:#fff !important;   
-  }
-  #PAGEURGENT,#PAGEURGENT a{
-     color:#eee !important;
-     background:#ff1100 !important;   
-  }
+
   .VideoMenuContainer-button{
       fill:#D2691E !important;
   }
-  .videoInformation,#videoInfo,.videoHeaderOuter,#outline{
-    background:#1b1b1b !important;
-  }  
- #playerContainerWrapper, #outline{
-    background: #1b1b1b !important;
-  }
-  .searchOption{
-    background: #000 !important;
-  }
-  .videoExplorerContentWrapper, .videoExplorerMenu, .videoExplore, #videoExplorer .videoExplorerBody,#playerSettingPanel,#playerSettingPanelContent,
-  .searchBox, .searchForm, .earchContent.contents.hasVideo,.column4,.relatedTagList, .relatedTagHeader, .relatedTagItemList, .relatedTagItemList,
-  .searchContent.contents.hasVideo,.comment.active.openAdvancedSettings, .advancedSettings,.comment.active,#playerSettingPanelTab, 
-  .CommentPanelContextMenuContainer{
-    background:#171717 !important;
-    border: inset 0px #222742 !important;
-  }
+
 
   .title, .VideoTitle{
     color: #ddd !important;
@@ -222,18 +157,6 @@ bottom:0!important
   .searchType.keyword,.searchType.tag,.columnOptionItem.column1, .columnOptionItem.column4, .relatedTagLink, .item, .next, .playlistReplaceButton, .columnOption{
     background:#333 !important;
   }
-  .videoMenuToggle {
-    background: url(http://i.imgur.com/dWHj6pf.jpg) no-repeat !important;
-  }
-  #videoMenuTopList {
-    margin-left: -70px !important;
-  }
-  .relatedTagLink:hover, .item:hover, .item.current, .next:hover, .playlistReplaceButton:hover, .columnOption:hover,
-  .searchType.keyword.active,.searchType.tag.active,.columnOptionItem.column1.active, .columnOptionItem.column4.active,.searchOption a:hover{
-    color: #eee !important;
-    background:#D2691E !important; 
-    border: inset 0px #222742 !important;
-  }
   /* 灰色枠線 */
   #videoTagContainer .tagInner #videoHeaderTagList .toggleTagEdit,#videoHeaderTagList .videoHeaderTag,.videoExplorerBody .searchBox,
   .videoExplorerBody .relatedTagList .relatedTagItem .relatedTagLink, .TagList .TagItem, .SearchBox-input, button, .VideoUploadDateMeta,
@@ -242,44 +165,11 @@ bottom:0!important
     border: solid 1px #444 !important;
     box-shadow: 0 0 0 0 #e0e0e0;
   }
-  .item.video.thumbnailLoadSuccess{ background:#1b1b1b !important; }
-  .relatedTagItem{ margin: 30px !important;}
-  #topVideoInfo .ch_prof, #topVideoInfo .userProfile { width: 280px !important; }
-    
-  #videoHeaderDetail h2, body.size_normal, #videoHeader,  #videoHeaderDetail, #videoTagContainer.default,  #videoMenuWrapper, #videoMenuTopList {
-    width: 978px !important;
-    min-width: 898px !important;
-  }
-  #videoHeaderDetail{
-     height: 50px !important;   
-  }
-  .videoHeaderTitle{
-    font-size:18px !important;
-  }
+
+
   /* タグ画面 */
-  #videoTagContainer {
-    padding-right: 0px !important;
-  }
-    
-  #videoTagContainer.active .tagInner {
-    height: auto !important;
-    overflow: visible !important;
-  }
 
-  #videoTagContainer .tagInner #videoHeaderTagList .toggleTagEdit{
-    background:#333;   
-  }
 
-  #videoHeaderTagList .videoHeaderTag {
-    height: 14px !important;
-    font-size: 0.75rem !important;
-    background:#333 !important;
-    border-radius: 9px !important;
-    margin: 0 10px 10px 0 !important;
-    padding: 5px 9px 9px 29px !important;
-    font-weight:900;
-    font-family: "Hiragino Kaku Gothic ProN";
-  }
   
   #videoHeaderTagList .videoHeaderTag:hover {
     background: #D2691E !important;
@@ -291,12 +181,6 @@ bottom:0!important
     z-index: 1;
     white-space: nowrap;
 }
-  #videoTagContainer .tagInner #videoHeaderTagList li .tagControlContainer .dic span.enable {
-    background: url(http://i.imgur.com/LFgR6jz.jpg) no-repeat !important;
-  }
-  #videoTagContainer .tagInner #videoHeaderTagList li .tagControlContainer .dic span.disable {
-    background: url(http://i.imgur.com/Lg9RhmO.jpg) no-repeat !important;
-  }
   #videoTagContainer .tagInner #videoHeaderTagList li .tagControlContainer .dic span,
   #videoTagContainer.isEdit .tagInner #videoHeaderTagList .videoHeaderTag.isNoOwnerLock2.isNoVideoOwner.isLock.isCategory .videoHeaderTagCategory,
   #videoTagContainer.isEdit .tagInner #videoHeaderTagList .videoHeaderTag.isNoOwnerLock2.isNoVideoOwner.isLock .videoHeaderTagLock,
@@ -391,22 +275,7 @@ bottom:0!important
     z-index: 1 !important;
   } 
 
-  #videoInfoHead{
-    color: #ddd !important;
-  }
-  #playerContainerWrapper{
-    padding: 0px !important;
-    margin-bottom: 0px !important;
-    margin-top: 15px !important;
-  }
-  #content{
-    padding: 0px !important;
-    margin-bottom: 0px !important;
-    margin-top: 15px !important;
-  }
-  #playerContainerWrapper{
-    height: auto !important;
-  }
+ 
 }
 
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
@@ -415,16 +284,16 @@ bottom:0!important
     background: #333
 }
 .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="1"] {
-    background: #7f68ca
+  background: /*[[------1]]*/
 }
 .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="2"] {
-    background: #6b2ca0
+  background: /*[[------2]]*/
 }
 .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="3"] {
-    background: #561b92
+   background: /*[[------3]]*/
 }
 .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="4"] {
-    background: #9b0eb0
+   background: /*[[------4]]*/
 }
 /* コメントエリアまわりの調整 */
 .PlayerPanelContainer,
@@ -597,16 +466,70 @@ button.ActionButton.TwitterAccountPanel-button{
     background-color: #2b2b2b !important
 }
 
+/* 試験的 消去する要素改変 */
+.BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon{
+    display: none !important;
+}
+
+/* 動画説明欄のリンク色変更 */
+.VideoDescription-html a{
+    color:#D2691E !important;    
+    text-decoration: underline;
+}
+.VideoDescription-html a:hover{
+    color:#dd2200 !important;    
+    text-decoration: underline;
+}
+
+/* コメントの履歴選ぶとこ */
+.CommentPanelMenuContainer-pastCommentMenu{
+    background: #333
+}
+
+/* タグ編集欄 */
+.TagContainer.is-editing{
+    background-color: #484848;
+}
+.TagSuggestionInput-input, .TagItem.is-editing, .TagList{
+    box-shadow: none !important;
+}
+
+/* 動画説明欄を開くときのボタン */
+.VideoDescriptionExpander-switch.VideoDescriptionExpander-switchExpand{
+    margin-right: -25px;
+    background: linear-gradient(90deg,hsla(0,0%,95.7%,0),#484848 16%);
+}
+.VideoDescriptionExpander .VideoDescriptionExpander-switchExpand::before{
+    border-color: #c4d2d9 transparent transparent !important;
+}
+
+/* コメント欄ホバー時 */
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow:hover{
+    background-color: #282828 !important;
+}
+
+/* コメント欄上部の広告バルーン的なものを消す */
+
+
 /*カスタマイズ用*/
 
-/*[[---]]*/
+/* ニコるはそのまま */
 
-/*[[----]]*/
+/* シリーズ欄を表示しておく */
 
-/*[[---------2]]*/
+/*ボタンズレ修正*/
+.SharePanelContainer-radioItem input + label::before{
+    left: 0.5%
+}
 
-/*[[--------1]]*/
+/* マーキーエリアを削除しない */
 
-/*[[------------1]]*/
-
+/* 試験的 シリーズのハイライト */
+.VideoDescription-series{
+    border: solid 5px #282828 !important;
+    background: #393939;
+}
+.RouterLink.VideoDescriptionSeriesContainer-itemTitle{
+    color:#d2691e !important
+}
 }

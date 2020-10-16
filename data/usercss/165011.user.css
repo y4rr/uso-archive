@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/DthEKyL6`
-@version        20201013.18.38
+@version        20201015.14.36
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1038,13 +1038,22 @@ boards-panel0 "Стандарт" <<<EOT .cntnt__left {margin-top: 15px; padding:
 
 }
 @advanced dropdown file-link "Ссылка на файл" {
-	file-link1 "Наведение мышкой*" <<<EOT .post__file-attr a {opacity: 0; height: 15px; transition: .1s;}
-.post__filezise {display: block; margin-top: -16px; transition: .1s;}
+	file-link1 "Наведение мышкой*" <<<EOT @media only screen and (min-width: 480px) {
+.post__file-attr {background: var(--theme_default_glassbg2); border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); font-size: .8em; padding: 2px 6px; color: transparent; position: absolute; margin-top: 5px; z-index: 10; opacity: 0; width: max-content; transition: .1s; visibility: hidden;}
+.post__image-link {margin-top: 5px;}
+.post__file-attr svg {width: 16px; height: 16px; vertical-align: -4px;}
+.post__file-attr svg:hover {fill: var(--theme_default_alttext)}
+.post__file-attr a {height: 15px; transition: .1s;}
+.post__filezise {display: block;}
 
 figure {position: relative;}
-figure:hover > .post__file-attr a {opacity: 1;}
-figure:hover > .post__file-attr .post__filezise {color: transparent; visibility: hidden; } EOT;
-file-link0 "Стандарт" <<<EOT /* File Name Standart *\/ EOT;
+figure:hover > .post__file-attr {color: var(--theme_default_alttext);  padding: 2px 6px;  opacity: 1; visibility: visible;}
+} EOT;
+file-link0 "Стандарт" <<<EOT .post__file-attr {margin-top: 0;}
+.post__file-attr {font-size: .8em; padding: 2px 0; color: var(--theme_default_alttext);}
+.post__filezise {height: 15px;}
+.post__file-attr svg {width: 16px; height: 16px; vertical-align: -4px;}
+.post__file-attr svg:hover {fill: var(--theme_default_alttext)} EOT;
 
 }
 @advanced dropdown image-filter "Фильтр картинок" {
@@ -1532,11 +1541,6 @@ path[fill="#ececec"] {fill: inherit !important;}
 .post__file-preview {border-radius: 3px;}
 .post__file-webm {border: none; border-bottom: 2px dashed var(--theme_default_alttext2);}
 
-.post__file-attr {margin-top: 0;}
-.post__file-attr {font-size: .8em; padding: 2px 0; color: var(--theme_default_alttext);}
-.post__filezise {height: 15px;}
-.post__file-attr svg {width: 16px; height: 16px; vertical-align: -4px;}
-.post__file-attr svg:hover {fill: var(--theme_default_alttext)}
 /*[[file-link]]*/
 
 .unkfunc {color: var(--theme_default_postnum);}

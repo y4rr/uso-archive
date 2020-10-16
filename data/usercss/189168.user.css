@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Aaron Acosta
 @description    `This is the Dark Mode (Beta) for the PSD E-Desk <a href="https://psdqatar.com" target="blank" style="text-decoration: none; color: yellow;">Click Me</a> < click this link only if you are a user of this site.`
-@version        2020926.13.47
+@version        20201015.14.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,6 +11,10 @@
   /*Created By: Aaron*/
 html{
 	scroll-behavior: smooth;
+}
+  
+* {
+	background: white;
 }
 ::selection {
   background: #a8fcff; /* WebKit/Blink Browsers */
@@ -267,5 +271,13 @@ input[type=submit]:hover {
 
   #qtype{
 	color: white;
+}
+
+#periodicallink {
+	display: hidden;
+}
+
+.post {
+	display: hidden;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Will Pittenger
 @description    `The main objective was to change the font.  However, I was also having troubles using a touch screen as some elements were hidden until the mouse hovered overhead and some items were too small.  Both the main site and the YouTube Studio are effected.`
-@version        20201014.17.58
+@version        20201015.22.27
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced text chosen-font "Font to use" "Times New Roman"
@@ -235,7 +235,8 @@
 	}
 	
 	ytd-rich-grid-media:not(:hover) ytd-menu-renderer.ytd-rich-grid-media.ytd-rich-grid-media:not([menu-active]):not(:focus-within),
-	ytd-grid-video-renderer:not(:hover) ytd-menu-renderer.ytd-grid-video-renderer.ytd-grid-video-renderer:not([menu-active]):not(:focus-within)
+	ytd-grid-video-renderer:not(:hover) ytd-menu-renderer.ytd-grid-video-renderer.ytd-grid-video-renderer:not([menu-active]):not(:focus-within),
+	ytd-video-renderer:not(:hover) ytd-menu-renderer.ytd-video-renderer.ytd-video-renderer:not([menu-active]):not(:focus-within)
 	{
 	  opacity: 1!important;
 	}

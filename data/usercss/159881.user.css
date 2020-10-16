@@ -2,9 +2,9 @@
 @name           NewVK Dark Theme - Telegram Style
 @namespace      USO Archive
 @author         Maksim Alyabyshev
-@description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением https://vk.com/newvk.darktheme.telegramstyleТёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201015.7.46
-@license        CC-BY-NC-ND-4.0
+@description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами. https://vk.com/newvk.darktheme.telegramstyle (подпишитесь, что бы группа выпадала в поиске)Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
+@version        20201015.15.31
+@license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("https?://vk.com/(?!(ads\\\\?|adsmarket\\\\?|adscreate\\b|support|faq(\\n*|\\\\?)|messenger\\b|biz(\\b|/)|business-pages\\b|business-ads\\b|market\\b|services\\b|about|jobs|products|blog|store_vkpay\\b|away.php\\\\?to\\b)).*") {
@@ -2439,29 +2439,33 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 body {
 	--steel_gray_80: hsl(228, 12%, 92%);
-	--steel_gray_80: hsl(214, 26%, 23%);
+/* 	--steel_gray_80: hsl(214, 26%, 23%); */
 	--steel_gray_120: hsl(207, 14%, 85%);
-	--steel_gray_120: hsl(214, 26%, 19%);
-	--gray_900: #222222;
-	--gray_900: #eeeeee;
+/* 	--steel_gray_120: hsl(214, 26%, 19%); */
+/* 	--gray_900: #222222; */
+/* 	--gray_900: #eeeeee; */
+	--text-white-color: #dddddd;
 	--blue_600:  #2a5885;
 	--blue_600:  #8EC5FF;
 /*=======*/
 	--steel_gray_100: #dce1e6;
-	--steel_gray_100: hsl(214, 26%, 26%);
-	--black: #fff;
-/* 	--white: #0E1621; */
+/* 	--steel_gray_100: hsl(214, 26%, 26%); */
+/* 	--black: #fff; */
+	--white: var(--text-white-color);
 /* 	--white: #16202C; */
-	--steel_gray_60: #0E1621;
-	--steel_gray_20: hsla(218, 29%, 18%, .5);
+/* 	--steel_gray_60: #0E1621; */
+/* 	--steel_gray_20: hsla(218, 29%, 18%, .5); */
 }
+
 
 .article_snippet .article_snippet__title {
-	color: inherit;
+/* 	color: inherit; */
+	color: var(--text-white-color);
 }
 
+
 [dir] .TopSearch__input:focus {
-    background-color: var(--white);
+    background-color: #16202C;
 }
 /* [dir] .ts_contact.active em.ts_clist_hl,  */
 [dir] em.ts_clist_hl {
@@ -2471,6 +2475,25 @@ body {
 
 
 /* new---------------theme */
+body.new_header_design .top_nav_link {
+    color: var(--text-white-color);
+}
+
+[dir] body.new_header_design .ts_cont_wrap {
+/*     border-color: var(--steel_gray_120); */
+	border-color:hsl(214, 26%, 19%);
+}
+
+body.new_header_design #side_bar .left_label {
+    color: var(--text-white-color);
+}
+
+.VideoRecomsItem__title {
+	color: var(--text-white-color);
+}
+.media_selector .ms_items_more .ms_item {
+    color: var(--text-white-color);
+}
 [dir] body.new_header_design #page_header_cont {
 /*     background-color: var(--white); */
 /*     border-bottom: 1px solid var(--steel_gray_100); */
@@ -2481,7 +2504,7 @@ body {
 
 [dir] body.new_header_design .TopSearch__input {
 	
-    background-color: var(--steel_gray_60);
+    background-color: #0e1621;
 }
 
 [dir] body.new_header_design .top_audio_player:hover,
@@ -2490,7 +2513,7 @@ body {
 [dir] body.new_header_design .top_nav_link.active,
 [dir] body.new_header_design .top_nav_btn.active {
 	
-    background-color: var(--steel_gray_20);
+    background-color: hsla(218, 29%, 18%, .5);
 }
 
 [dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
@@ -2504,7 +2527,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 [dir] .AppLeftMenuWithNotify:before {
-    border-color: var(--steel_gray_60);
+/*     border-color: var(--steel_gray_60); */
+	border-color: #0E1621;
 /*     background-color: var(--red); */
+}
+
+[dir] #pv_tag_faded {
+    background-color: #000;
+}
+
+[dir] .poster__open-btn-wrapper {
+    border-right: none;
+}
+[dir] .poster__open-btn-wrapper::before {
+    background-color: hsl(214, 26%, 23%);
 }
 }

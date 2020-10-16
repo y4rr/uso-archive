@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rahv7
 @description    `Removes the "Discard"-button for certain cards (both in browser- and mobile-mode), so you cannot discard them by accident.Removes the "Go"-button for certain options, so you cannot play them by accident.This is the updated script for the Fallen London Redesign, based on the old styles by fallingkitten and gazzien.`
-@version        2020823.0.3
+@version        20201015.15.38
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,7 +49,6 @@ button.deck--empty
 
 /* MISC CARDS */
 /*.hand__card-container[data-event-id='11208'] button,  /* A Moment's Peace */
-/*.hand__card-container[data-event-id='11529'] button,  /* Call In Favours in the Flit */
 /*.hand__card-container[data-event-id='13353'] button,  /* A dream about a window at night */
 .hand__card-container[data-event-id='13368'] button,  /* A Little Omen (mood) */
 .hand__card-container[data-event-id='13373'] button,  /* A Dusty Bookshop (mood) */
@@ -62,6 +61,7 @@ button.deck--empty
 /*.hand__card-container[data-event-id='18167'] button,  /* The Battle Hymn of the Drownies */
 .hand__card-container[data-event-id='18168'] button,  /* The Skin of the Bazaar */
 /*.hand__card-container[data-event-id='19045'] button,  /* A presumtuous little opportunity */
+/*.hand__card-container[data-event-id='19561'] button,  /* A Polite Invitation */
 /*.hand__card-container[data-event-id='20230'] button,  /* An implausible penance */
 /*.hand__card-container[data-event-id='21260'] button,  /* Taciturn Mynah (gives Docks-favours) */
 .hand__card-container[data-event-id='21762'] button,  /* A Visit */
@@ -108,7 +108,6 @@ button.deck--empty
 
 /* MISC CARDS */
 /*.branch[data-event-id='11208'] .buttonlet-delete,  /* A Moment's Peace */
-/*.branch[data-event-id='11529'] .buttonlet-delete,  /* Call In Favours in the Flit */
 /*.branch[data-event-id='13353'] .buttonlet-delete,  /* A dream about a window at night */
 .branch[data-event-id='13368'] .buttonlet-delete,  /* A Little Omen (mood) */
 .branch[data-event-id='13373'] .buttonlet-delete,  /* A Dusty Bookshop (mood) */
@@ -121,6 +120,7 @@ button.deck--empty
 /*.branch[data-event-id='18167'] .buttonlet-delete,  /* The Battle Hymn of the Drownies */
 .branch[data-event-id='18168'] .buttonlet-delete,  /* The Skin of the Bazaar */
 /*.branch[data-event-id='19045'] .buttonlet-delete,  /* A presumtuous little opportunity */
+/*.branch[data-event-id='19561'] .buttonlet-delete,  /* A Polite Invitation */
 /*.branch[data-event-id='20230'] .buttonlet-delete,  /* An implausible penance */
 /*.branch[data-event-id='21260'] .buttonlet-delete,  /* Taciturn Mynah (gives Docks-favours) */
 .branch[data-event-id='21762'] .buttonlet-delete,  /* A Visit */
@@ -231,9 +231,9 @@ button.deck--empty
 .branch[data-branch-id='5059'] button,   /* Start SEEKING in the Forgotten Quarter */
 .branch[data-branch-id='8788'] button,   /* Leave parties early */
 .branch[data-branch-id='11115'] button,  /* Reset the Affair of the Box ("Memory is a strange old thing")*/
+.branch[data-branch-id='120548'] button, /* Convert Tears of the Bazaar into Master's Blood */
 .branch[data-branch-id='120738'] button, /* Throw the Amanuensis out on his oily little ear */
 .branch[data-branch-id='121107'] button, /* Don't sell your soul at Sackmas */
-.branch[data-branch-id='181536'] button, /* Murder a Rubbery on "Slime & Amber" */
 .branch[data-branch-id="205784"] button /* A Reputation of Some Importance: Another Way */
   {
     display: none;

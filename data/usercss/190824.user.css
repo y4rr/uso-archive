@@ -1,0 +1,115 @@
+/* ==UserStyle==
+@name           UTCJ SISE Oscuro (BETA)
+@namespace      USO Archive
+@author         Cristian.271
+@description    `El Sistema Integral de Servicios Estudiantiles de la Universidad Tecnológica de Ciudad Juárez en modo oscuro, para las personas que tengan dificultades con el modo claro. El tema aún se encuentra en desarrollo, por lo que el diseño de algunos elementos podría no ser adecuado.Compatible parcialmente con el SISE de la UTPN.`
+@version        20201015.20.42
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://alumnos.utcj.edu.mx/"), url-prefix("http://alumnos.utpn.edu.mx/") {
+body
+{
+    color: #000000;
+    background-color:#292a2a;
+    border: 1px solid TRANSPARENT;
+}
+
+#CphCuerpo_HyperLink3
+{
+    background-color:#181818;
+}
+
+.loginForm td, table, tr, td
+{
+    border: 1px solid #181818;
+    color: #eeeeee;
+}
+
+.post, .pnlAvisos, #divPlataformas, #main, hr, div#footer_static
+{
+    border: 1px solid transparent;
+    background-color: #181818;
+}
+
+.BotonBlanco, #CphCuerpo_tblInfoContacto tr
+{
+    color: #636363;
+    background: #2d2d2d;
+}
+
+.BotonBlancoSeleccionado
+{
+    color: #deffff;
+    background: #2d2d2d;
+}
+
+.CeldaNotificaciones, .CeldaDerecha
+{
+	color: #ffffff;
+    background-color: #2d2d2d;
+    border: 1px solid #808080;
+}
+
+.CeldaIzquierda
+{
+	color: #82F260;
+    background-color: #2d2d2d;
+    border: 1px solid #808080;
+}
+
+th
+{
+    border-left: 1px solid #181818;
+    border-bottom: solid 2px #181818;
+}
+
+b, h1, h2, h3, h4, strong, .SeccionCV, p, span
+{
+    color: #eeeeee;
+}
+
+.LabelAlerta, .nota, .LabelMarron
+{
+    color: #ff0f0f;
+}
+
+.LabelTitulo, .LabelAlertaBlack, .p3, #CphCuerpo_lblDatosAlumno
+{
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+.LabelListaAspirantes
+{
+    color: #333;
+}
+
+.RenglonTituloGris, #CphCuerpo_tabContainerAlumno_body
+{
+    background-color: #2C2C2C;
+    color: #FF9B1B;
+    border: 1px solid #4F4F4F;
+}
+
+.CeldaTituloCalifLeft, .CeldaTituloCalif, .CeldaTituloCalifRight, .RenglonTituloHorario, .CeldaTituloHorario1, .CeldaTituloHorario2
+{
+	
+	color: #FFF;
+	background-color: #58a316;
+}
+
+.CeldaCalificacionLeft, .CeldaCalificacion, .CeldaHorarioVacia
+{
+    background-color: #979797;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.CeldaHorarioVacia
+{
+    background-color: #bababa;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+}
+}

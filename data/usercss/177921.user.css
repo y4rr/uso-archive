@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ZJRmXXQq3s
 @description    `Resized some things, moved other thing a little, painted some icons for ease of use.Also having Open Sans font installed on your machine will make it look nicer.`
-@version        20201015.5.7
+@version        20201015.23.29
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,42 +26,53 @@ body {
 
 /* shrink sidebar */
 .sidebar {
-	max-width: 20rem !important;
+	width: var(--width-sidebar, 10%);
 }
 
-/* shrink emails list */
+/* shrink conversations list */
 .items-column-list {
-	width: calc((65% + var(--width-sidebar, 19rem))*0.35);
+	width: var(--width-conversation-column, 30%);
 }
 
-/* New Emails counter tooltip */
+/* make New Emails counter tooltip background dimmer, no need in screaming bright color, indicator is enough */
 .navigation__counterItem {
 	background: #657ee499; 
 }
 
 
 /* paint Trash and Delete Permanently icons red */
-[data-test-id='toolbar:movetotrash'] svg, [data-test-id='toolbar:deletepermanently'] svg, [title='Trash'] svg.navigation__icon {
-	fill: #d94949ab !important;
+#shape-trash, #shape-delete {
+	fill: #d94949ab;
 }
 
+/* Empty Folder icon to Bright Red */
+#shape-empty-folder {
+	fill: red;
+}
+
+/* ...and make a little red glow around Empty Folder icon */
+[data-test-id="toolbar:emptyfolder"] svg {
+	filter: drop-shadow( 0px 0px 2px rgba(255, 0, 0, 0.8));
+}
+
+
 /* Inbox icon blue */
-[data-test-id='toolbar:movetoinbox'] svg, [title='Inbox'] svg.navigation__icon {
-	fill: #369bf4ab !important;
+#shape-inbox {
+	fill: #369bf4ab;
 }
 
 /* Starred icon yellow */
-[title='Starred'] svg.navigation__icon {
+#shape-star {
 	fill: rgb(234, 200, 25) !important;
 }
 
 /* Archive icon green */
-[data-test-id='toolbar:movetoarchive'] svg, [title='Archive'] svg.navigation__icon {
+#shape-archive {
 	fill: #85e685ab !important;
 }
 
 /* Spam icon orange */
-[data-test-id='toolbar:movetospam'] svg, [title='Spam'] svg.navigation__icon {
+#shape-spam {
 	fill: #ff7800 !important;
 }
 }

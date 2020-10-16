@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         krisu
 @description    `<i>It's same new Twitter, except much cleaner and little bit better.</i> 🐦Changes white background color to light blue (only enabled in white theme), removes annoying elements such as trends, promoted tweets, "who to follow" boxes (and more with recommended uBlock filterlist!) and other really minor tweaks. <b>Read the notes at the bottom.</b>`
-@version        2020925.0.32
+@version        20201015.23.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,6 +45,8 @@ div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space
 div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
+
+div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-1u4rsef.r-9cbz99,           /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
@@ -98,9 +100,9 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border 
     border-bottom-width: 0;
 }
 
-.css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TWEETS] */
-    margin-top: 2px;
-    margin-bottom: 2px;
+div[data-testid="card.wrapper"] { /* <--- Link with thumbnail left or top [TWEETS] */
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with name, username, time and "more" menu [TWEETS] */
@@ -155,7 +157,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
