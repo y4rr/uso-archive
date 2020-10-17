@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201016.20.3
+@version        20201017.1.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -1913,6 +1913,8 @@ Default Wallpaper:
 
 /*[[RCUpdating09]]*/
 
+/*[[RCUpdating10]]*/
+
 
 /* ==================== END OF CODE #1 ==================== */
 }
@@ -1942,7 +1944,7 @@ Default Wallpaper:
     --RCDarkText: /*[[LinksUnderPosts]]*/;
     --RCTextHeader: /*[[Headers]]*/;
     --RCText: /*[[Text]]*/;
-    --RCNews: /*[[News]]*/;       /* Manual Alpha Setting: #00190088 */
+    --RCNews: /*[[News]]*/;    /* Manual Alpha Setting: #00190088 */
     --RCDeleted: /*[[Deleted]]*/; /* Manual Alpha Setting: #22000066 */
 
     /*Manual Colour Options*/
@@ -1981,8 +1983,8 @@ Default Wallpaper:
     --RCDarkText: #717171;
     --RCTextHeader: #BBBBBB;
     --RCText: #989898;
-    --RCNews: #00190088;       / Manual Alpha Setting: #00190088 /
-    --RCDeleted: #22000066;    / Manual Alpha Setting: #22000066 /
+    --RCNews: #00190088;    / Manual Alpha Setting: #00190088 /
+    --RCDeleted: #22000066; / Manual Alpha Setting: #22000066 /
         
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
@@ -4138,12 +4140,20 @@ select
     color:var(--RCText)!important;
 }
 
+.new-comment .usertext-body
+{
+    background-color:var(--RCReply)!important;
+    background:var(--RCReply)!important;
+    color:var(--RCText)!important;
+    font-weight:normal!important;
+    transition:.4s;
+}
+
 div[contenteditable="true"],
 textarea,
 .res-nightmode textarea,
 #infobar,
 .linkinfo .shortlink input,
-.new-comment .usertext-body,
 .wikiaction-current
 /*.HOFZo2X7Fr6JVBztpsByj [contenteditable]*/
 {

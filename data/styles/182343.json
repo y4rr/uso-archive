@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "twitch",
     "createdAt": "2020-04-13T13:33:28.000Z",
-    "updatedAt": "2020-04-13T14:25:03.000Z",
+    "updatedAt": "2020-10-17T05:04:01.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 681231,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 11,
-      "weekly": 0
+      "total": 12,
+      "weekly": 1
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document regexp('https://www.twitch.tv/popout/.*/chat.*') {\r\n  .chat-list{\r\n    zoom: 2;\r\n    font-size: large;\r\n  }\r\n  .tw-c-text-alt-2{\r\n    font-size: large;\r\n  }\r\n  .channel-leaderboard, .stream-chat-header{\r\n    display: none !important;\r\n  }\r\n}"
+    "css": "@-moz-document regexp('https://www.twitch.tv/popout/.*/chat.*') {\r\n  .chat-scrollable-area__message-container{\r\n    zoom: 3;\r\n    font-size: large !important;\r\n    padding: 0 !important;\r\n  }\r\n  .chat-line__message-container{\r\n    line-height: initial !important;\r\n  }\r\n  .channel-leaderboard, .stream-chat-header{\r\n    display: none !important;\r\n  }\r\n}"
   }
 }

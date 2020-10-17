@@ -3,17 +3,18 @@
 @namespace      USO Archive
 @author         Heiner Angarita
 @description    `Making text of popup twitch chat big`
-@version        2020413.17.25
+@version        20201017.5.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp('https://www.twitch.tv/popout/.*/chat.*') {
-  .chat-list{
-    zoom: 2;
-    font-size: large;
+  .chat-scrollable-area__message-container{
+    zoom: 3;
+    font-size: large !important;
+    padding: 0 !important;
   }
-  .tw-c-text-alt-2{
-    font-size: large;
+  .chat-line__message-container{
+    line-height: initial !important;
   }
   .channel-leaderboard, .stream-chat-header{
     display: none !important;

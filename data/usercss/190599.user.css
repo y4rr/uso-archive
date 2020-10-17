@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `SubsPlease, Dark.`
-@version        20201014.9.3
+@version        20201017.3.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -52,6 +52,7 @@ div.footer,
 div.header
 {
   background: #0000;
+  transition: all .1s;
 }
 
 .time-new-badge
@@ -60,6 +61,8 @@ div.header
 }
 
 body, h1, h2, h3, h4, h5, h6,
+
+a, a:visited,
 
 .site-title a, .site-title a:visited,
 .site-description,
@@ -117,10 +120,13 @@ input#search.search
 {
   border: 1px solid #ccc !important;
 }
+table th, table td
+{
+  border-bottom: 1px solid #ccc2 !important;
+}
 
-clearImage 
+.schedule-widget-time img 
 {
     filter: invert(1) hue-rotate(180deg) saturate(2) brightness(.8);
-    mix-blend-mode: color-dodge;
 }
 }

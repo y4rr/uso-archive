@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         huaao zang
 @description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（由于在学校，只能用笔记本进行编写，所以像素超过1366×768的大显示器无法进行检验，可能有一些显示问题）。`
-@version        20201016.10.21
+@version        20201017.9.22
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -178,7 +178,6 @@ body {
     padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px 1px;
-    transition: background-color 1s;
 }
 .c-container .new-pmd
 {
@@ -212,6 +211,7 @@ body {
 ,#content_left .new-pmd:hover
 {
     background-color: rgba(255,255,255,0.95);
+    transition: background-color 1s;
 }
 /*左侧面板设置结束*/
 
@@ -279,11 +279,6 @@ body {
 }
 #page a:hover{
     border-color: rgb(51, 136, 255);
-}
-#foot
-{
-/*     display:none; */
-    
 }
 /*底部页码设置结束*/
 }
@@ -357,6 +352,7 @@ body{
 ,#noresult:hover
 {
     background:rgba(255,255,255);
+    transition: background-color 1s;
 }
 #gotoPage
 {
@@ -674,6 +670,7 @@ body
 ,.c-container/*相关搜索*/
 ,.aside-inner/*右边栏*/
 ,#ec_zwd_ctner/*广告*/
+,.wgt-iknow-special-business/*官方*/
 {
     background-color:rgba(244, 244, 244, .9);
     border:1px solid white;
@@ -699,6 +696,15 @@ body
 .list-footer:hover
 {
     opacity:1;
+}
+.list>.dl:hover
+,.c-container:hover/*相关搜索*/
+,.aside-inner:hover/*右边栏*/
+,#ec_zwd_ctner:hover/*广告*/
+,.wgt-iknow-special-business:hover/*官方*/
+{
+    background-color:rgba(255,255,255,1);
+    transition: background-color 1s;
 }
 /*左侧列表结束*/
 
@@ -803,6 +809,7 @@ body
 ,#wgt-related:hover
 {
     background-color:rgba(244, 244, 244, 1);
+    transition: background-color 1s;
 }
 .wgt-best-operator
 ,.wgt-answers-operator
@@ -982,7 +989,6 @@ body
 ,#top-recommend-dsp-ad/*精选*/
 ,.footer-box-recommend
 ,.search-result>.clearfix
-,.specialDisplay-inner
 ,.search-result>p
 {
     min-width:590px;
@@ -1021,21 +1027,20 @@ div[id^=bdfs]
     margin:15px 0 15px 0px;
     font-size:1.2em;
 }
-.new-filter-box:hover
-,.header-box-recommend span:hover
+.new-filter-box:hover/*筛选*/
+,.new-sort-box>span:hover/*排序*/
 ,.header-box-recommend ul:hover
-,.new-sort-box .mr10:hover
-,.mr15:hover
-,.new-sort-box .mr15:last-child:hover
-,.search-result dl:hover
+,.header-box-recommend span:hover
+,.search-topic-block:hover/*推荐结果*/
+,.search-result>dl:hover/*搜索结果*/
+,div[id^=bdfs]:hover/*广告*/
 ,.vip-card:hover
+,#top-recommend-dsp-ad:hover/*精选*/
 ,.footer-box-recommend:hover
 ,.search-result>.clearfix:hover
-,.mt10:hover
-,.specialDisplay-inner:hover
-,.search-topic-block:hover
+,.search-result>p:hover
 {
-    background:white;
+    background:white!important;
     transition:background 1s;
 }
 .search-result>.clearfix
