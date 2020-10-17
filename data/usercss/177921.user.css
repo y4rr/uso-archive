@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         ZJRmXXQq3s
 @description    `Resized some things, moved other thing a little, painted some icons for ease of use.Also having Open Sans font installed on your machine will make it look way nicer.`
-@version        20201016.3.47
+@version        20201016.17.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://beta.protonmail.com/") {
 /* 
-- Set font-family to Open Sans if it is installed on machine, if not - use ugly Lucida Grande
+- Set faont-family to Open Sans if it is installed on machine, if not - use ugly Lucida Grande
 - make text slimmer
 - set font size to human-readable
 */
@@ -19,7 +19,7 @@ body {
     font-size: 120%;
 }
 
-/* reset bolds to 600 */
+/* reset bolds from 900 to 600 */
 .bold, .strong, b, strong {
 	font-weight: 600;
 }
@@ -34,9 +34,9 @@ body {
 	width: var(--width-conversation-column, 30%);
 }
 
-/* make New Emails counter tooltip's background dimmer, no need in screaming bright color, simple clean indicator is enough */
+/* make New Emails counter tooltip background dimmer, simple indicator is enough */
 .navigation__counterItem {
-	background: #657ee499; 
+	background: #657ee466; 
 }
 
 
@@ -45,12 +45,12 @@ body {
 	fill: #d94949ab;
 }
 
-/* Empty Folder icon(brush) to Bright Red */
+/* Empty Folder icon to Bright Red */
 #shape-empty-folder {
 	fill: red;
 }
 
-/* ...and make a little red glow around it */
+/* ...and make a little red glow around Empty Folder icon */
 [data-test-id="toolbar:emptyfolder"] svg {
 	filter: drop-shadow( 0px 0px 3px rgba(255, 0, 0, 0.8));
 }
@@ -76,13 +76,13 @@ body {
 	fill: #ff7800;
 }
 
-/* All Mail icon white */
+/* Spam icon orange */
 #shape-all-emails {
 	fill: #fff;
 }
 
 
-/* calm down screaming Compose button a little */
+/* dim Compose button a little */
 [data-test-id="sidebar:compose"] {
 	color: #ffffffcc !important;
 	background-color: #657ee433 !important;

@@ -2,14 +2,14 @@
 @name           Чёрный стиль сайта Osu
 @namespace      USO Archive
 @author         ExeWire
-@description    `Данный стиль был взят с моего расширения "Чёрный Интернет", где располагаются 350 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/blackext/`
-@version        2020106.6.36
+@description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
+@version        20201016.13.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://osu.ppy.sh/") {
 body:after {
-    content: 'Урезанный стиль osu из расширения "Чёрный Интернет"'!important;
+    content: 'Урезанный стиль osu из расширения "ExNight"'!important;
     position: fixed!important;
     border: 1px solid #fff!important;
     color: #FFF!important;
@@ -22,8 +22,8 @@ body:after {
 *, ::placeholder, .header-v4__title-action:before, .chat-conversation__unread-marker:after {
 	color: #fff!important;
 }
-a[href*="https:"]:not([class="footer__link"]):not([class*="simple-menu__item"]):not([class="news-post-preview__post-title"]):not([class*="user-home__news-posts-group--more"]) {
-	color: #e85eff!important;
+.beatmapsets-search-filter__item:hover, .osu-md__link, .wiki-toc-list__link:hover {
+	color: #0366d6!important;
 }
 ::selection, .supporter-perk-list-group__icon-bg, .supporter-perk-list-image__icon-bg {
 	color: #000!important;

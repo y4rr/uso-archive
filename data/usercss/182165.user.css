@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201016.7.55
+@version        20201016.20.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -1283,6 +1283,7 @@ div.side div.spacer div.linkinfo div.date span:after
 }
 @advanced dropdown RCUpdating "Updating:" {
 	RCUpdating00 "Due to properties of Custom CSS, one needs uninstall in order to update.*" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1293,6 +1294,20 @@ div.side div.spacer div.linkinfo div.date span:after
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1301,6 +1316,7 @@ div.side div.spacer div.linkinfo div.date span:after
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
 RCUpdating01 "1) Simply keep this page open (to keep settings)" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1311,6 +1327,20 @@ RCUpdating01 "1) Simply keep this page open (to keep settings)" <<<EOT /*-------
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1319,6 +1349,7 @@ RCUpdating01 "1) Simply keep this page open (to keep settings)" <<<EOT /*-------
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
 RCUpdating02 "2) Delete it in Stylish/Stylus" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1329,6 +1360,20 @@ RCUpdating02 "2) Delete it in Stylish/Stylus" <<<EOT /*-------------------------
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1337,6 +1382,7 @@ RCUpdating02 "2) Delete it in Stylish/Stylus" <<<EOT /*-------------------------
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
 RCUpdating03 "3) Click Update above as usual" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1347,6 +1393,20 @@ RCUpdating03 "3) Click Update above as usual" <<<EOT /*-------------------------
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1354,7 +1414,8 @@ RCUpdating03 "3) Click Update above as usual" <<<EOT /*-------------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating04 "This is simply an announcement due to character limitations in description." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating04 "Secondly" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1365,6 +1426,20 @@ RCUpdating04 "This is simply an announcement due to character limitations in des
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1372,7 +1447,8 @@ RCUpdating04 "This is simply an announcement due to character limitations in des
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating05 "Pick any option to have a copy added at the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
 /*                                                          *\/
@@ -1383,6 +1459,185 @@ RCUpdating05 "Pick any option to have a copy added at the bottom of Code #1." <<
 /*                                                          *\/
 /*             delete theme from Stylish/Stylus,            *\/
 /*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
+/*                                                          *\/
+/*                            PS:                           *\/
+/*       All wallpapers are available for download at:      *\/
+/*                                                          *\/
+/*               https://old.reddit.com/r/KMV/              *\/
+/*                                                          *\/
+/*----------------------------------------------------------*\/ EOT;
+RCUpdating06 "\"News & Pinned Posts\" & \"Deleted Posts\"" <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
+/*    Due to properties of Custom CSS, one needs uninstall  *\/
+/*                   in order to update.                    *\/
+/*                                                          *\/
+/*                       Simply go to                       *\/
+/*                                                          *\/
+/*            https://userstyles.org/styles/182165/         *\/
+/*                    (to keep settings),                   *\/
+/*                                                          *\/
+/*             delete theme from Stylish/Stylus,            *\/
+/*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
+/*                                                          *\/
+/*                            PS:                           *\/
+/*       All wallpapers are available for download at:      *\/
+/*                                                          *\/
+/*               https://old.reddit.com/r/KMV/              *\/
+/*                                                          *\/
+/*----------------------------------------------------------*\/ EOT;
+RCUpdating07 "are supposed to be semi-transparent," <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
+/*    Due to properties of Custom CSS, one needs uninstall  *\/
+/*                   in order to update.                    *\/
+/*                                                          *\/
+/*                       Simply go to                       *\/
+/*                                                          *\/
+/*            https://userstyles.org/styles/182165/         *\/
+/*                    (to keep settings),                   *\/
+/*                                                          *\/
+/*             delete theme from Stylish/Stylus,            *\/
+/*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
+/*                                                          *\/
+/*                            PS:                           *\/
+/*       All wallpapers are available for download at:      *\/
+/*                                                          *\/
+/*               https://old.reddit.com/r/KMV/              *\/
+/*                                                          *\/
+/*----------------------------------------------------------*\/ EOT;
+RCUpdating08 "These can be changed manually in Code #2." <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
+/*    Due to properties of Custom CSS, one needs uninstall  *\/
+/*                   in order to update.                    *\/
+/*                                                          *\/
+/*                       Simply go to                       *\/
+/*                                                          *\/
+/*            https://userstyles.org/styles/182165/         *\/
+/*                    (to keep settings),                   *\/
+/*                                                          *\/
+/*             delete theme from Stylish/Stylus,            *\/
+/*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
+/*                                                          *\/
+/*                            PS:                           *\/
+/*       All wallpapers are available for download at:      *\/
+/*                                                          *\/
+/*               https://old.reddit.com/r/KMV/              *\/
+/*                                                          *\/
+/*----------------------------------------------------------*\/ EOT;
+RCUpdating09 "This is merely an announcement due to character-limitations below." <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
+/*    Due to properties of Custom CSS, one needs uninstall  *\/
+/*                   in order to update.                    *\/
+/*                                                          *\/
+/*                       Simply go to                       *\/
+/*                                                          *\/
+/*            https://userstyles.org/styles/182165/         *\/
+/*                    (to keep settings),                   *\/
+/*                                                          *\/
+/*             delete theme from Stylish/Stylus,            *\/
+/*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
+/*                                                          *\/
+/*                            PS:                           *\/
+/*       All wallpapers are available for download at:      *\/
+/*                                                          *\/
+/*               https://old.reddit.com/r/KMV/              *\/
+/*                                                          *\/
+/*----------------------------------------------------------*\/ EOT;
+RCUpdating10 "Pick any option to have this list added to the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
+/*                                                          *\/
+/*    Due to properties of Custom CSS, one needs uninstall  *\/
+/*                   in order to update.                    *\/
+/*                                                          *\/
+/*                       Simply go to                       *\/
+/*                                                          *\/
+/*            https://userstyles.org/styles/182165/         *\/
+/*                    (to keep settings),                   *\/
+/*                                                          *\/
+/*             delete theme from Stylish/Stylus,            *\/
+/*           then click Update on page as ususal.           *\/
+/*                                                          *\/
+/*                                                          *\/
+/*              Alpha-settings (transparency)               *\/
+/*       can be added in/to the template colors below.      *\/
+/*                                                          *\/
+/*                #xxxxxx00 is transparent.                 *\/
+/*                #xxxxxx77 is semi-transparent             *\/
+/*                #xxxxxxff is solid.                       *\/
+/*                                                          *\/
+/*                        Hex Ranking:                      *\/
+/*                                                          *\/
+/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
+/*              |                             |             *\/
+/*         Transparent                      Solid           *\/
 /*                                                          *\/
 /*                            PS:                           *\/
 /*       All wallpapers are available for download at:      *\/
@@ -1402,7 +1657,7 @@ RCUpdating05 "Pick any option to have a copy added at the bottom of Code #1." <<
 /* RES:
 /* https://redditenhancementsuite.com/
 /*
-/* Designed for STYLUS:
+/* Designed for Stylus:
 /* https://add0n.com/stylus.html
 /*
 /* Other Themes by KMV:
@@ -1650,6 +1905,14 @@ Default Wallpaper:
 
 /*[[RCUpdating05]]*/
 
+/*[[RCUpdating06]]*/
+
+/*[[RCUpdating07]]*/
+
+/*[[RCUpdating08]]*/
+
+/*[[RCUpdating09]]*/
+
 
 /* ==================== END OF CODE #1 ==================== */
 }
@@ -1679,8 +1942,8 @@ Default Wallpaper:
     --RCDarkText: /*[[LinksUnderPosts]]*/;
     --RCTextHeader: /*[[Headers]]*/;
     --RCText: /*[[Text]]*/;
-    --RCNews: /*[[News]]*/;
-    --RCDeleted: /*[[Deleted]]*/;
+    --RCNews: /*[[News]]*/;       /* Manual Alpha Setting: #00190088 */
+    --RCDeleted: /*[[Deleted]]*/; /* Manual Alpha Setting: #22000066 */
 
     /*Manual Colour Options*/
     --RCspoiler: #a65e0d !important;
@@ -1718,8 +1981,8 @@ Default Wallpaper:
     --RCDarkText: #717171;
     --RCTextHeader: #BBBBBB;
     --RCText: #989898;
-    --RCNews: #00190088;
-    --RCDeleted: #22000066;
+    --RCNews: #00190088;       / Manual Alpha Setting: #00190088 /
+    --RCDeleted: #22000066;    / Manual Alpha Setting: #22000066 /
         
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
@@ -2571,6 +2834,8 @@ html body header,
 .link .title,
 .linklisting,
 .listing-page .hot-page,
+.modal-body label.control-label,
+.modal-header,
 .panel-default > .panel-heading,
 .res-nightmode .link.odd,
 .res-nightmode .linklisting,
@@ -3032,6 +3297,7 @@ table#srList[style="display: block;"],
 .hover-bubble.anchor-right,
 .hover-bubble.anchor-left.save-selector,
 .jcf-select-drop,
+.modal-dialog,
 .nav-center .navbar-nav > li,
 .navbar .navbar-nav > li,
 .publisher-link li a,

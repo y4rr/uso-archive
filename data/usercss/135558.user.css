@@ -3,14 +3,13 @@
 @namespace      USO Archive
 @author         dsk
 @description    `タイムフリーが追加された新レイアウトを、コンパクトに表示できるよう改良しました。作業しながら聞くような時も邪魔になりません。ウインドウ幅を1000pxより小さくするとコンパクト表示に切り替わります。幅340px程度での表示に最適化しています。<!-- br>Firefoxなら機能拡張の「<a href="https://addons.mozilla.org/ja/firefox/addon/hide-tab-bar-with-one-tab/" target="_blank">Hide Tab Bar With One Tab</a>」と「<a href="https://addons.mozilla.org/ja/firefox/addon/the-fox-only-better/" target="_blank">Beyond Australis</a>」をあわせてインストールすると、タブやツールバー・ロケーションバーを非表示にでき、さらにコンバクトに表示できます。 --><br><img src="https://userstyles.org/style_screenshots/135558_additional_23360.png">`
-@version        20171116.13.36
-@license        NO-REDISTRIBUTION
+@version        20201016.12.36
+@license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document domain("radiko.jp") {
-  @media (max-width: 999px){
+@media (max-width: 999px){
     body {min-width: 0;}
     .header__logo,.header__banner,.header__menu .item--login,.header__menu .item--premium,
     #header-nav .header__nav li:nth-child(n+4),
@@ -125,7 +124,7 @@
     .timeout{height: 40px;background-size:100% auto;}
     .timeshift-detail__share, .live-detail__share,
     .timeshift-detail__noti, .live-detail__noti{margin-top: 5px;}
-    .timeshift-detail__main, .live-detail__main{border-right:none;padding-right: 0;}
+    .timeshift-detail__main, .live-detail__main{border-right:none;padding-right: 0;min-height: 0;}
     .live-detail__failed{padding: 5px 0;}
     .timeshift-detail__description,
     .live-detail__description{padding-top: 10px;}

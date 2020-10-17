@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pooya
 @description    `Spotify Minimal White (Light) theme`
-@version        202092.10.31
+@version        20201016.19.36
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -51,15 +51,6 @@ body {background: white;}
     backdrop-filter: blur(10px);
 }
 
-
-.contentSpacing > div:first-child > div:first-child {
-    background: #cbcbcb75;
-    box-shadow: 0 1px 3 0 #00000021;
-    backdrop-filter: blur(10px);
-}
-
-.contentSpacing > div:first-child > div:first-child {       color: black;
-}
 
 /* topbar menu link & button */
 .Root__top-bar button {background-color: #00000012; color:black;}
@@ -155,11 +146,47 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 /* search rectangle large cards */
 [aria-label=Songs] .react-contextmenu-wrapper > div:hover {background-color: #0000000f;}
 
+
+/* ======================================= */
+/* ============= General PDP ============= */
+/* ======================================= */
+
+
+/* Table Header */
+.contentSpacing > div:first-child > div:first-child {
+    background: #fff0;
+    box-shadow: 0 1px 3 0 #00000021;
+    backdrop-filter: blur(10px);
+}
+
+.contentSpacing > div:first-child > div:first-child {color: black;}
+
+/* List Item */
+.react-contextmenu-wrapper div[data-testid="tracklist-row"] div[aria-colindex="4"],
+.react-contextmenu-wrapper div[data-testid="tracklist-row"] div[aria-colindex="5"]{color:#000 !important;}
+.react-contextmenu-wrapper div[data-testid="tracklist-row"]:hover {background-color: #0000000f; color:#000 !important;}
+
+.react-contextmenu-wrapper div[data-testid="tracklist-row"] .spoticon-heart-16,
+.react-contextmenu-wrapper div[data-testid="tracklist-row"] button {color:#1db954 !important;}
+
+/* Suggestion Titles */
+.main-view-container__scroll-node-child section[data-testid="playlist-page"] > .contentSpacing > div:last-of-type > div:first-of-type {color:#000 !important;}
+
+[aria-label="Explicit"] {background:#0000000f;}
+
+/* ============= Playlist ============= */
+
+/* song count & duration */
+._0462465b64c9df5f31f2601f892b57d3-scss, .f6a6c11d18da1af699a0464367e2189a-scss {color: hsla(0, 0%, 0%, .71);}
+
+/* description */
+.main-view-container__scroll-node-child p span {color:#00000094;}
+
+
+
 /* =========== artist page =============== */
 
 [data-testid=topbar-content] a[aria-current=page], .contentSpacing a[aria-current=page] {background-color: #0000001c !important;}
-
-.main-view-container__scroll-node-child p span {color:#6262623d;}
 
 /* action-bar buttons */
 [data-testid="action-background-container"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]),
@@ -176,7 +203,7 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 
 .verifiedBadge + span + span {color:#000;}
 
-/* =========== album page =============== */
+/* =========== album, podcast & playlist page =============== */
 
 /* top bar */
 [data-testid=topbar-content-wrapper] span {color:hsl(0deg 0% 43% / 70%);}
@@ -194,11 +221,16 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 .main-view-container__scroll-node-child section > div {overflow: visible;}
 
 ._8891c8f9b257b02a0bc56b136f5a5fbc-scss span {color: hsla(0, 0%, 34%, .29);}
+.standalone-ellipsis-one-line {color: #0000005e;}
 
 
 /* podcast-list header */
 ._571922307568e54e63ba83058433369d-scss._2e77de28f0b30f1b6e8d479009f45e0e-scss,
 [data-testid=action-background-container] h2 {color: #000 !important;}
+
+
+/* playlist description */
+.main-view-container__scroll-node-child section[data-testid="playlist-page"] 
 
 
 /* album list */
@@ -219,14 +251,12 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 
 /* Bottomlist Button */
 .PlaylistRecommendedTracks__refresh button, .tracklist-col.tracklist-col-recommended-add button {color: black;}
-
+[aria-label="Add to Playlist"] {color: black;}
 
 
 /* 404 */
 .spoticon-album-64 , .spoticon-album-64 + p , .spoticon-album-64 + p + p ,
 .spoticon-artist-64 , .spoticon-artist-64  + p , .spoticon-artist-64  + p + p {color: black;}
-
-
 
 
 

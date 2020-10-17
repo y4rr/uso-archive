@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         MariaLovesQueen
 @description    `<b>Дорогие пользователи, прошу пишите мне на этом сайте в feedback или куда-нибудь в лс, если видите в этом стиле ошибки, недокрашенные области и пр.</b> Мне самой сложно следить за всем, помогайте. Дата последних изменений в стиле находится выше в графе <b>Last Updated</b>, иными словами, если вы видите что дата там изменилась значит стиль был немного доработан.<br><br>Изменения: плеер выше :D`
-@version        2020524.13.46
+@version        20201017.0.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain(hdrezka.me), domain(hdrezka.cm), domain(hdrezka.ag), domain(rezka.ag)
+@-moz-document domain(99kinopoisk.com), domain(topkinopoisk.com), domain(hdrezka.me), domain(hdrezka.cm), domain(hdrezka.ag), domain(rezka.ag)
 {
 /*rebuild*/
 .b-post, .b-wrapper, #main, #wrapper, body {
@@ -64,21 +64,21 @@
 
 
 /*recolor background*/
-.b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .tooltipster-default, .b-tophead-dropdown ul, .b-topnav__sub_inner, body {
+.b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .b-tophead-dropdown ul, .b-topnav__sub_inner, body.b-theme__template__night.has-brand #wrapper, body.b-theme__template__night, .no-touch {
     background: #000 !important;
-	color: #aaa !important;
+	color: #999 !important;
 }
 
 .b-person__popup_photo, .b-post__qa_list_link, .b-post__schedule_block_title, .comments-form, .b-search__live_all, .b-sidecover, .b-post__social_holder, .b-person__popup_holder_photo .overlay, .b-person__popup_content .stats a, .b-tophead-dropdown.hovered, .b-tophead_wrapper, .b-translators__block, .b-videosaves__list_item .new-episode.own, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_list_item, .b-seriesupdate__block_date, .b-newest_slider, .b-newest_slider__list, .b-collections__newest, .b-newest_slider_wrapper, .b-content__inline_item-cover, .b-wrapper, #top-nav, body.has-brand #wrapper, #wrapper {
     background-color: rgba(0,0,0,0) !important;
 }
 
-.b-post__schedule_table tr:hover td, .b-post__partcontent_item:hover .td, .b-post__partcontent_item.current:hover .td, .b-search__section_list li.hovered, .b-tophead-dropdown a:hover, .b-videosaves__list_item:hover .td, .b-topnav__sub_inner a:hover, .b-seriesupdate__block_list_item:hover {
+.text_spoiler, .b-post__schedule_table tr:hover td, .b-post__partcontent_item:hover .td, .b-post__partcontent_item.current:hover .td, .b-search__section_list li.hovered, .b-tophead-dropdown a:hover, .b-videosaves__list_item:hover .td, .b-topnav__sub_inner a:hover, .b-seriesupdate__block_list_item:hover {
     background-color: rgba(255,255,255,0.2) !important;
-	color: #aaa !important;
+	color: #999 !important;
 }
 
-.btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
+.tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
 	background-color: #111 !important;
 }
 
@@ -87,12 +87,12 @@
 }
 
 /*recolor text*/
-.b-post__info_rates, .b-comment, .b-post__qa_list_item .title, .b-post__schedule_table, .b-search__field, .bold, .b-videosaves__list_item .td, .b-seriesupdate__block_list_item_inner .cell-2, .b-newest_slider__title {
-	color: #aaa !important;
+.b-person__popup_content .t, .b-post__info, .b-post__info_rates, .b-comment, .b-post__qa_list_item .title, .b-post__schedule_table, .b-search__field, .bold, .b-videosaves__list_item .td, .b-seriesupdate__block_list_item_inner .cell-2, .b-newest_slider__title {
+	color: #999 !important;
 }
 
-.btn-helper, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .title:hover, .b-comment .name, .b-search__live_all, .b-post__info .l, .b-person__popup_content .stats a, .b-tophead-dropdown, .persons-list-holder .person-name-item a, .b-videosaves__list_item:hover .td, .user-things a .count, .b-newest_slider__title span, .b-topnav__item-link, a {
-	color: #bbb !important;
+body.b-theme__template__night .persons-list-holder .person-name-item a, .btn-helper, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .title:hover, .b-comment .name, .b-search__live_all, .b-post__info .l, .b-person__popup_content .stats a, .b-tophead-dropdown, .persons-list-holder .person-name-item a, .b-videosaves__list_item:hover .td, .user-things a .count, .b-newest_slider__title span, .b-topnav__item-link, a {
+	color: #ccc !important;
 }
 
 .b-user__settings .sep-title, .btn-helper:hover, .b-comment__like_it i:hover, .b-comment__quoteuser:hover, .b-post__rating .num, .b-post__partcontent_item.current .title, .b-search__section_list .enty, .b-search__live_all:hover, .b-person__popup_content .stats a:hover, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a:hover, .b-videosaves__list_item:hover .td a, .user-things a:hover .count, .b-seriesupdate__block_date.collapsible.expandable:hover .act, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_date.collapsible, .b-seriesupdate__block_date:hover .act, .b-newest_slider__title span:hover, .b-topnav__item-link:hover, .b-topnav__item-link.active, .b-topnav__item-link.active_section, a:hover, a:active {

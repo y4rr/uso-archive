@@ -2,14 +2,14 @@
 @name           Чёрный стиль сайта Яндекс.Музыки
 @namespace      USO Archive
 @author         ExeWire
-@description    `Данный стиль был взят с моего расширения "Чёрный Интернет", где располагаются 150 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "blackext.github.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://blackext.github.io`
-@version        2020816.15.11
+@description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
+@version        20201016.12.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("music.yandex.ru") {
 body:after {
-    content: 'Урезанный стиль Яндекс.Музыка из расширения "Чёрный Интернет"'!important;
+    content: 'Урезанный стиль Яндекс.Музыка из расширения "ExNight"'!important;
     position: fixed!important;
     border: 1px solid #fff!important;
     color: #FFF!important;
@@ -46,7 +46,7 @@ body>div {
 a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-menu__item.not-handled.d-link_no-hover-color.deco-link_no-hover-color, span.d-link.deco-link.multi-auth__item.typo-main.multi-auth__diag.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color.d-link_no-hover, a.d-link.deco-link.multi-auth__item.typo-main.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__my-music.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__gift.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-track__title.deco-link.deco-link_stronger, .deco-link:hover, .deco-link:hover, .deco-link:hover, a.deco-link, a.d-link.deco-link.d-suggest__all-results.typo.deco-popup-suggest-menu__border_top.d-suggest__item.d-suggest__item_low.d-link_arrow.deco-link_arrow.d-link_no-hover-color.deco-link_no-hover-color.deco-pane_show-hover-pressed, .deco-playlist-notification__point, body .local-theme-black.deco-playlist-notification__point, body .local-theme-black .deco-playlist-notification__point, .deco-link:hover, a.d-link.deco-link.playlist__title-cover {
 	-webkit-text-fill-color: #fff!important;
 }
-.deco-bubble, body .local-theme-white.deco-bubble, body .local-theme-white .deco-bubble, .d-track__chart-position .d-chart-position, .deco-pane, body .local-theme-black.deco-pane, body .local-theme-black .deco-pane, .deco-pane-back, body .local-theme-black.deco-pane-back, body .local-theme-black .deco-pane-back, .deco-pane-secondary, body .local-theme-black.deco-pane-secondary, body .local-theme-black .deco-pane-secondary, .deco-player-controls, body .local-theme-black.deco-player-controls, body .local-theme-black .deco-player-controls, .deco-popup-suggest-menu, body .local-theme-black.deco-popup-suggest-menu, body .local-theme-black .deco-popup-suggest-menu, .deco-popup-menu__item-group, .volume_bottom.volume_open .volume__control, .d-select__list, .button2, .button_action.button, .deco-popup-menu, .deco-input, .deco-button-simple, .deco_gradient-linear:after, .d-tooltip.deco-tooltip.popup.deco-pane-popup {
+.deco-bubble, body .local-theme-white.deco-bubble, body .local-theme-white .deco-bubble, .d-track__chart-position .d-chart-position, .deco-pane, body .local-theme-black.deco-pane, body .local-theme-black .deco-pane, .deco-pane-back, body .local-theme-black.deco-pane-back, body .local-theme-black .deco-pane-back, .deco-pane-secondary, body .local-theme-black.deco-pane-secondary, body .local-theme-black .deco-pane-secondary, .deco-player-controls, body .local-theme-black.deco-player-controls, body .local-theme-black .deco-player-controls, .deco-popup-suggest-menu, body .local-theme-black.deco-popup-suggest-menu, body .local-theme-black .deco-popup-suggest-menu, .deco-popup-menu__item-group, .volume_bottom.volume_open .volume__control, .d-select__list, .button2, .button_action.button, .deco-popup-menu, .deco-input, .deco-button-simple, .deco_gradient-linear:after, .d-tooltip.deco-tooltip.popup.deco-pane-popup, .crackdown-popup__content, .crackdown-popup, .theme-white .deco-progress .progress__bg, body .local-theme-white.deco-progress .progress__bg, body .local-theme-white .deco-progress .progress__bg, .theme-black .deco-progress .progress__bg, body .local-theme-black.deco-progress .progress__bg, body .local-theme-black .deco-progress .progress__bg {
 	background: #000!important;
 }
 .deco-toggler-bg {
@@ -55,16 +55,19 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 .deco-button-transparent .deco-button-stylable:hover, .d-slider-vert__filled, .button2:hover, .button2:focus, .deco-popup-menu__item:hover {
 	background-color: #333!important;
 }
-.theme-white .deco-button .deco-button-stylable:hover, .deco-link-pill:hover, body .local-theme-white.deco-link-pill:hover, body .local-theme-white .deco-link-pill:hover, .deco-pane_show-hover-pressed, body .deco-pane_show-hover-pressed, body .deco-pane_show-hover-pressed, .deco-button .deco-button-stylable:hover, .d-track_selectable:hover, .d-track_selectable.d-track_hover, .d-generic-page-head__main-actions .d-button:not(.d-tooltip__btn-agree):hover, .playlist_selectable.playlist:hover, .playlist_selectable.playlist_hover, .playlist_selectable.playlist_selected, .album_selectable.album:hover, .album_selectable.album_hover, .album_selectable.album_selected, .theme-black .deco-button:hover .deco-button-stylable, .theme-white .deco-button:hover .deco-button-stylable {
+.theme-white .deco-button .deco-button-stylable:hover, .deco-link-pill:hover, body .local-theme-white.deco-link-pill:hover, body .local-theme-white .deco-link-pill:hover, .deco-pane_show-hover-pressed, body .deco-pane_show-hover-pressed, body .deco-pane_show-hover-pressed, .deco-button .deco-button-stylable:hover, .d-track_selectable:hover, .d-track_selectable.d-track_hover, .d-generic-page-head__main-actions .d-button:not(.d-tooltip__btn-agree):hover, .playlist_selectable.playlist:hover, .playlist_selectable.playlist_hover, .playlist_selectable.playlist_selected, .album_selectable.album:hover, .album_selectable.album_hover, .album_selectable.album_selected, .theme-black .deco-button:hover .deco-button-stylable, .theme-white .deco-button:hover .deco-button-stylable, .progress__progress_muted .progress__line {
 	background: #333!important;
+}
+.progress__progress .progress__line {
+	background: #fff!important;
 }
 .d-track__bubble, .deco-toggler-btn {
 	background-color: #fff!important;
 }
-.deco-pane-popup, .deco-button-flat .deco-button-stylable, .deco-shade, .theme_dark .sf-download, .button_action.button, .deco-button .deco-button-stylable, .deco-popup-menu__item-icon-bg, .d-tooltip__content.deco-tooltip {
+.deco-pane-popup, .deco-button-flat .deco-button-stylable, .deco-shade, .theme_dark .sf-download, .button_action.button, .deco-button .deco-button-stylable, .deco-popup-menu__item-icon-bg, .d-tooltip__content.deco-tooltip, .deco-button .deco-button-stylable, .d-button-group .d-button, .theme-black .deco-progress .progress__progress, .theme-white .deco-progress .progress__progress {
 	background: #0000!important;
 }
-.deco-input_suggest, body .local-theme-black.deco-input_suggest, body .local-theme-black .deco-input_suggest, .deco-devider, body .local-theme-black.deco-devider, body .local-theme-black .deco-devider, .d-track_selectable.d-track_selected:after, .deco-button-transparent .deco-button-stylable, .deco-pane-popup, .deco-button-simple, .deco-button .deco-button-stylable, .deco-toggler-border, .head .nav__tab:first-child, .typo-nav.current, .deco-border, .deco-input {
+.deco-input_suggest, body .local-theme-black.deco-input_suggest, body .local-theme-black .deco-input_suggest, .deco-devider, body .local-theme-black.deco-devider, body .local-theme-black .deco-devider, .d-track_selectable.d-track_selected:after, .deco-button-transparent .deco-button-stylable, .deco-pane-popup, .deco-button-simple, .deco-button .deco-button-stylable, .deco-toggler-border, .head .nav__tab:first-child, .typo-nav.current, .deco-border, .deco-input, .d-suggest__popup.deco-popup-suggest-menu.popup.deco-pane-popup {
 	border-color: #fff!important;
 }
 .deco-toggler-btn {
@@ -73,7 +76,7 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 .d-track_selectable.d-track_hover:after, .playlist_selectable.playlist:hover:before, .playlist_selectable.playlist_hover:before, .playlist_selectable.playlist_selected:before, .d-tooltip__content.deco-tooltip, .album_selectable.album:hover:before, .album_selectable.album_hover:before, .album_selectable.album_selected:before {
 	border: none!important;
 }
-.d-track__chart-position .d-chart-position, .deco-popup-menu__item-group, .volume_bottom.volume_open .volume__control, .button2, .multi-auth__menu, .popup, .d-tooltip.deco-tooltip.popup.deco-pane-popup {
+.d-track__chart-position .d-chart-position, .deco-popup-menu__item-group, .volume_bottom.volume_open .volume__control, .button2, .multi-auth__menu, .popup, .d-tooltip.deco-tooltip.popup.deco-pane-popup, .deco-button-group .d-button > span {
 	border: 1px solid #fff!important;
 }
 .deco-inline-banner, body .local-theme-white.deco-inline-banner, body .local-theme-white .deco-inline-banner, .progress .bumble-bee__garage_right, .theme-white .deco-tooltip_notify, body .local-theme-white.deco-tooltip_notify, body .local-theme-white .deco-tooltip_notify, .notify_shown, #prqeeeloaj, .fxQJ5zgVFb2ykqw, .multi-auth__plus, .d-track__cover, .sidebar-white__banner, .page-main__line__white-button, .d-overhead, .notify__message.notify_shown, .bar-below__auth, .bar-below, .teaser, .sidebar__under, .footer, .page-album__top, .page-playlist__recommends, .track-cover__wrapper, .track_type_player .track__cover, .tableau_device_desktop, .d-track_selectable:hover::after, .progress_rocket .rocket.moving-slider, .progress_porsche .porsche.moving-slider, .progress_porsche .porsche.paused-slider, .bar__branding, .gXqzUvF4zreSuvw {
@@ -90,15 +93,6 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 }
 .player-controls__btn:hover, .player-controls__btn, .player-controls__btn_disabled, .player-controls__btn_disabled:hover, .d-icon, .theme-white .deco-icon, body .local-theme-white.deco-icon, body .local-theme-white .deco-icon, .theme-white .deco-icon, body .local-theme-white.deco-icon, body .local-theme-white .deco-icon, .d-track__actions .d-like {
 	opacity: 1!important;
-}
-.progress__progress .progress__line {
-	background: #000!important;
-}
-.progress__progress .progress__line {
-	background: #101010!important;
-}
-.progress__progress_muted .progress__line {
-	background: #0c0c0c!important;
 }
 /* ФИКСЫ */
 .multi-auth__menu {
@@ -118,20 +112,8 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 .progress__right {
 	margin-top: 1px!important;
 }
-.deco-progress .progress__progress .progress__line {
-	background: #fff!important;
-}
-.progress__progress .progress__line {
-	background: #333!important;
-}
-.progress__progress_muted .progress__line {
-	background: #333!important;
-}
-.theme-black .deco-progress .progress__progress, .theme-white .deco-progress .progress__progress {
-	background: #0000!important;
-}
-.theme-white .deco-progress .progress__bg, body .local-theme-white.deco-progress .progress__bg, body .local-theme-white .deco-progress .progress__bg, .theme-black .deco-progress .progress__bg, body .local-theme-black.deco-progress .progress__bg, body .local-theme-black .deco-progress .progress__bg {
-	background: #000!important;
+.d-button-group .d-button{
+	margin-left: 10px!important;
 }
 /* КАПТЧА */
 .central, .input-wrapper__content, .submit {

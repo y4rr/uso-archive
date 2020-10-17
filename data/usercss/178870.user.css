@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for AliExpress.com--- AliExpress`
-@version        20201014.22.44
+@version        20201016.21.13
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -108,6 +108,7 @@
     .detail,
     .me-left-nav-bar dl a:hover,
     .container-radius .activ-container .product-item {background-color:transparent;}
+
     
     .me-header,
     .mobile-app,
@@ -511,8 +512,7 @@
     #pop-search {margin-left:232px;}
     
     .top-sell,
-    .ask-buyers, 
-    .ui-slidebox,
+    .ask-buyers,
     .add-store-list,
     .product-main,
     .image-viewer,
@@ -520,7 +520,6 @@
     .list-pagination,
     .categories-main,
     .store-categories,
-    .container-radius,
     .wslogin-loading,
     .cl-item .sub-cate,
     .mall-header-wrap,
@@ -585,7 +584,6 @@
     .shipping-address .sa-address-list .sa-address-item,
     .next-btn.next-btn-normal,
     .new-categories-main .cl-item-unfold .cate-name > div,
-    .featured-category .industry-product-list .other-industry,
     .ask-buyers .ask-item .answer-box .answers-item .view-all,
     .next-radio-wrapper.checked .next-radio-inner::after,
     .next-checkbox-wrapper.focused .next-checkbox-inner,
@@ -594,6 +592,17 @@
     .next-radio-wrapper.checked.focused .next-radio-inner::after,
     .next-checkbox-wrapper:not(.disabled):hover .next-checkbox-inner,
     .next-radio-wrapper.checked:not(.disabled):hover .next-radio-inner::after {background-color:#111;}
+
+.container-radius,
+.ui-slidebox,
+.featured-category .industry-product-list .other-industry,
+.flashdeals-entry .product-list .pro-price {
+    background: #191919;
+}
+
+.rank-entry .rank-item-title h3 {
+    color: #ddd;
+}
     
     .sa-me,
     .middle-promotion-wrap .venue-title,
@@ -1349,6 +1358,13 @@ a[clk_trigger=''] span {
 }
 .ranking-wrapper .title-top, .ranking-title {
     background: #333;
+}
+/* do not remove */
+.festival-main-venue {
+    background: transparent !important;
+}
+.flashdeals-entry .discount {
+    background: #ff4747;
 }
 
     .discount-des-hd dt,

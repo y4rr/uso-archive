@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           htmlgoodies.com By BamaBraves
+@name           htmlgoodies Dark By BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2018116.16.1
+@version        20201016.13.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("htmlgoodies.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("htmlgoodies.com") {
@@ -72,6 +77,7 @@ selector {
 	text-transform: capitalize!important;
 }
 
+#article .toolbox,
 #categoryleft,
 #categoryright,
 #navigation li,
@@ -84,22 +90,14 @@ selector {
 
 /*___ Fonts ________________________________________________________________________*/
 
-#html5-shortdesc,
-.devcentertext,
-.html5_related_articles,
-.html5smalltext,
-.html5text,
-body,
-div.html5_articles_resources,
-li.parent h1 {
-	font-family: cursive, Roboto, Arial, sans-serif!important;
-}
-
-li.parent h1 {
+li.parent h1,
+ul.new_in_the_html5_development_center li a
+{
 	font-size: 21px!important;
 }
 
-#body h2 {
+#body h2,
+body {
     font-size: 20px!important;
 }
 
@@ -109,10 +107,12 @@ li.parent h1 {
     font-size: 18px!important;
 }
 
+#article,
 #html5-shortdesc,
+.intro-text,
 .lightblue a, 
-.lightblue a:hover,
-body {
+.lightblue a:hover
+{
 	font-size: 17px!important;
 }
 
@@ -130,11 +130,24 @@ selector {
     line-height: 25px!important;
 }
 
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea {
+    line-height: 1.3em !important;
+}
+
 /*___ Remove Items _________________________________________________________________*/
 
-#searchWidget #top_bar,
+#_cm-css-reset._cm-floating-view,
+#footer .sda,
+#header .sda,
 #manual-webinar-asset,
-#right-col {
+#right-col,
+#searchWidget #top_bar,
+._cm-video._cm-ad-active,
+.articleMiddlePosition_test_B.qs-listings,
+.ntvClickOut.noskim,
+.qs-listings,
+[class*="taboola-widget-"]
+{
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
@@ -142,14 +155,15 @@ selector {
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-selector {
-    top: 10px!important;
+.tbl-read-more-box {
+    bottom: -37px;
 }
 
 /*___ Margins ______________________________________________________________________*/
 
-.row-fluid,
-.article-list li {
+.article-list li,
+.row-fluid
+{
 	margin: 12px!important;
 }
 
@@ -158,22 +172,25 @@ selector {
 	margin: 1rem!important;
 }
 
-
 /*___ Paddings _____________________________________________________________________*/
 
-.article-list li,
 #content,
-#navigation {
+#navigation,
+.article-list li,
+.syntaxhighlighter
+{
 	padding: 12px!important;
 }
 
+#footer,
+.syntaxhighlighter a, .syntaxhighlighter div, .syntaxhighlighter code, .syntaxhighlighter table, .syntaxhighlighter table td, .syntaxhighlighter table tr, .syntaxhighlighter table tbody, .syntaxhighlighter table thead, .syntaxhighlighter table caption, .syntaxhighlighter textarea,
 code {
 	padding: 3px 6px!important;
 }
 
 /*___ Heights ______________________________________________________________________*/
 
-selector {
+.tbl-forkorts-article.tbl-forkorts-article-active {
 	max-height: none!important;
 }
 
@@ -193,13 +210,16 @@ body {
 	max-width: none!important;
 }
 
-.container,
+#container,
 #content,
-#container {
+.container
+{
 	width: 98%!important;
 }
 
-#main-col {
+#main-col,
+[style="float: left; width: 330px; padding-left: 4px;"]
+{
     width: 80%!important;
 }
 
@@ -213,9 +233,8 @@ body {
 }
 
 #navigation {
-    width: 13%!important;
+    width: 18%!important;
 }
-
 }
 
 @-moz-document domain("htmlgoodies.com") {
@@ -272,16 +291,15 @@ li.parent h1,
 h1,
 h2 {
 	color: #F0E890!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
 
 h3,
-h4 {
+h4,
+strong {
 	color: #e0b880!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -291,7 +309,6 @@ h5,
 h6,
 label {
 	color: #F0A060!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -300,7 +317,6 @@ label {
 #latest-forum-threads td:last-child,
 time {
 	color: #07beff!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -308,7 +324,6 @@ time {
 
 selector {
 	color: #07ff24!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -316,12 +331,12 @@ selector {
 
 .comment.no-comments {
 	color: #ff0707!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
 
+.post_input_box,
 input,
 input[type=email],
 input[type=number],
@@ -348,23 +363,17 @@ pre ::selection {
 	color: #fff!important;
 }
 
-.syntaxhighlighter .keyword {
-	color: #00aaff!important;
-}
 
-.syntaxhighlighter .string,
-.syntaxhighlighter .string a {
-	color: #6cfff9!important;
-}
+.devcentertext {	color: #2291ff!important;}
+.syntaxhighlighter .color1,.syntaxhighlighter .color1 a {	color: #ffacac!important;}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {    color: #c3c3c3 !important;}
+.syntaxhighlighter .keyword {	color: #00aaff!important;}
+.syntaxhighlighter .string,.syntaxhighlighter .string a {	color: #6cfff9!important;}
 
-.syntaxhighlighter .color1,
-.syntaxhighlighter .color1 a {
-	color: #ffacac!important;
-}
 
-.devcentertext {
-	color: #2291ff!important;
-}
+
+
+
 }
 
 @-moz-document domain("htmlgoodies.com") {
@@ -378,6 +387,7 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
+#footer,
 #header,
 #header-bar,
 .header {
@@ -388,6 +398,8 @@ html {
 
 .article-list .parent,
 .container,
+.post_login,
+.tbl-read-more-box,
 [style*="background: transparent url('/img/layout/relatedarticles-bg.png') "] {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -404,6 +416,7 @@ html {
 .nav>li>a:hover,
 .syntaxhighlighter .line.alt1,
 .syntaxhighlighter .line.alt2,
+.syntaxhighlighter,
 td {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
@@ -417,6 +430,7 @@ selector:hover {
 
 /*__________________________________________________________________________________*/
 
+.tbl-read-more-btn,
 .syntaxhighlighter table,
 code,
 pre {
@@ -434,7 +448,7 @@ selector:hover {
 
 /*__ Blue __________________________________________________________________________*/
 
-.btn-html5.disabled,
+#article .tbl-read-more-btn,
 .btn-html5[disabled],
 .btn-newsletter:not(.disabled) {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
@@ -443,6 +457,7 @@ selector:hover {
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
+#article .tbl-read-more-btn:hover,
 .btn-html5:hover,
 .btn-html5[disabled]:hover,
 .btn-newsletter:not(.disabled):hover {
@@ -450,6 +465,7 @@ selector:hover {
 	color: #ff0!important;
 }
 
+#article .tbl-read-more-btn:active,
 .btn-html5.active,
 .btn-html5:active,
 .btn-html5[disabled]:active,
@@ -517,7 +533,7 @@ selector:active {
 .article-list li:not(.parent),
 .html5_resources_wrapper,
 .html5_resources_wrapper_first {
-	background-color: #111!important;
+	background-color: #222222c2!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -529,18 +545,6 @@ selector:active {
 .html5_resources_wrapper:hover,
 .html5_resources_wrapper_first:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
-
-/*___ Noise ________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-	background-repeat: repeat-x, repeat!important;
-	background-size: 100px 15px, 140px 140px!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
@@ -586,6 +590,14 @@ selector {
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
+/*___ Highlight Background _________________________________________________________*/
+
+selector
+{
+	background: linear-gradient(to right, #121212, #0000)!important;
+	border-left-color: #434343!important;
+}
+
 }
 
 @-moz-document domain("htmlgoodies.com") {
@@ -594,26 +606,34 @@ selector {
 #categoryleft,
 #categoryright,
 #latest-forum-threads tr,
+#searchWidget .topics,
+.WordSection1,
 .article-list li,
 .html5_resources_wrapper,
-.html5_resources_wrapper_first {
+.html5_resources_wrapper_first
+{
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
+
 #categoryleft:hover,
 #categoryright:hover,
 #latest-forum-threads tr:hover,
+#searchWidget .topics:hover,
+.WordSection1 p,
+.WordSection1:hover,
 .article-list li:hover,
 .html5_resources_wrapper:hover,
-.html5_resources_wrapper_first:hover {
+.html5_resources_wrapper_first:hover
+{
 	filter: brightness(100%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-img {
+img:not([alt="New to HTMLGoodies"]) {
 	border-radius: 22px!important;
 }
 
@@ -648,5 +668,4 @@ selector {
 selector:hover {
 	opacity: 1!important;
 }
-
 }

@@ -3,11 +3,15 @@
 @namespace      USO Archive
 @author         Berny23
 @description    `Changes the big new thumbnails back to the old ones.`
-@version        20191027.2.29
+@version        20201016.22.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
+/*
+* Berny23's YouTube Enhancements v2.0
+*/
+
 ytd-rich-item-renderer {
     margin-right: 4px;
     display: inline-block;
@@ -38,5 +42,20 @@ ytd-rich-item-renderer {
 #contents {
     width: auto !important;
     max-width: 1332px !important;
+}
+
+.ytd-two-column-search-results-renderer ytd-thumbnail {
+	width: auto !important;
+	max-width: 246px !important;
+	height: 138px !important;
+}
+
+.ytd-two-column-search-results-renderer {
+	width: auto !important;
+	max-width: 862px !important;
+}
+
+ytd-page-manager.ytd-app {
+	margin-left: 0px !important;
 }
 }

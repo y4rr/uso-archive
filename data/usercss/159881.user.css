@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           NewVK Dark Theme - Telegram Style
+@name           Redesign VK Dark Theme - Telegram Style
 @namespace      USO Archive
 @author         Maksim Alyabyshev
-@description    `Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами. https://vk.com/newvk.darktheme.telegramstyle (подпишитесь, что бы группа выпадала в поиске)Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201016.2.2
+@description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
+@version        20201016.22.32
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2552,10 +2552,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /* Увеличенное пространство для названия трека */
-[dir] #top_nav > li:nth-child(5) {
+[dir] body.new_header_design #top_nav > li:nth-child(5) {
 	margin-right: -140px;
 }
-[dir] #top_profile_menu {
+[dir] body.new_header_design #top_profile_menu {
 	margin-right: inherit;
 }
 body.new_header_design .top_audio_player {
@@ -2566,4 +2566,9 @@ body.new_header_design .top_audio_player_title {
     font-size: 12.8px;
 }
 /* -------------------- */
+
+/* [dir] .audio_block .video_item .video_item_info .video_item_title { color: #D194D1; } */
+[dir] .audio_block_small_item--artist .title_link, .audio_block_small_item--curator .title_link {
+    color: var(--text-white-color);
+}
 }

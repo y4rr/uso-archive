@@ -2,14 +2,14 @@
 @name           Чёрный стиль сайта YouTube
 @namespace      USO Archive
 @author         ExeWire
-@description    `Данный стиль был взят с моего расширения "Чёрный Интернет", где располагаются 350 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/blackext/`
-@version        2020106.9.9
+@description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
+@version        20201016.12.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 body:after {
-    content: 'Урезанный стиль YouTube из расширения "Чёрный Интернет"'!important;
+    content: 'Урезанный стиль YouTube из расширения "ExNight"'!important;
     position: fixed!important;
     border: 1px solid #fff!important;
     color: #FFF!important;
@@ -25,6 +25,9 @@ body:after {
 ::selection {
 	background: #fff!important;
 	color: #000!important;
+}
+[href*="&t="] {
+	-webkit-text-fill-color: #54aaff!important;
 }
 html:not(.style-scope), body:not(.style-scope), html:not(.style-scope)[dark], body:not(.style-scope)[dark], ytcp-video-section-content, ytcp-table-header {
 	--yt-spec-badge-chip-background: #333!important;
@@ -98,6 +101,9 @@ yt-live-chat-paid-message-renderer {
 	--yt-live-chat-paid-message-primary-color: #000!important;
 	--yt-live-chat-paid-message-secondary-color: #000!important;
 }
+yt-live-chat-membership-item-renderer {
+	--yt-live-chat-sponsor-color: #000!important;
+}
 path:not(path[fill="none"]) {
 	fill: #fff!important;
 }
@@ -106,6 +112,9 @@ path[fill="#FF0000"], path[fill="#737373"], path[fill="#f80000"], path[fill="#6f
 }
 polygon[fill="#FFFFFF"], polygon[id*="tier"], polygon.style-scope.ytd-topbar-logo-renderer {
 	fill: #000!important;
+}
+[fill="none"]:not(.ytp-menuitem-icon), [fill="none"]>path:not(.ytp-menuitem-icon) {
+	fill: none!important;
 }
 html, body, .nav-drawer.ytcp-navigation, ytd-browse[page-subtype=channels], ytd-masthead.shell, #header.ytd-movie-offer-module-renderer, ytd-rich-metadata-renderer, yt-icon-button.yt-live-chat-item-list-renderer, ytd-dropdown-renderer[has-background] paper-dropdown-menu-light.ytd-dropdown-renderer, .card.ytcd-card, #header.ytcp-video-section-content, ytcp-filter-bar, #footer-container.ytcp-video-section-content, paper-listbox, ytd-button-renderer #button.ytd-button-renderer, #select-files-button.ytcp-uploads-file-picker, ytcp-omnisearch.focused input.ytcp-omnisearch, #main-container.ytcp-entity-page #main.ytcp-entity-page[studio-theme="DASHBOARD"], .with-side-bar.yta-screen, #right-side-bar.yta-screen, paper-card, #yta-hovercard-container.yta-hovercard, #tooltip, paper-dialog, .yta-explore.sticky-column.yta-explore-table-header, #row-container.yta-explore-table-row, .yta-explore.sticky-column.yta-explore-table-row, .layout.center.yta-explore-table-row, .layout.center-center.yta-explore-table-row, .sbdd_b, .sbsb_a, ytd-author-comment-badge-renderer, #header-title-overlay.ytd-sponsorships-offer-with-video-renderer, paper-toast, .container.ytcp-video-metadata-info, #footer-container.ytgn-channel-translations-list, #sticky-header.ytgn-channel-translations-section, #row-container.ytgn-set-language-row, ytd-masthead, #container.ytd-searchbox, #search-icon-legacy.ytd-searchbox, ytd-settings-sidebar-renderer, ytm-mobile-topbar-renderer, ytm-pivot-bar-renderer, .mobile-topbar-header[data-mode="watch"], yt-tooltip-renderer, .mobile-topbar-header[data-mode="searching"], #container.yt-live-chat-ticker-paid-message-item-renderer, ytd-subscribe-button-renderer paper-button.ytd-subscribe-button-renderer, ytd-browse[page-subtype=playlist] ytd-two-column-browse-results-renderer.ytd-browse, #card.yt-live-chat-upsell-dialog-renderer, #action-button.yt-live-chat-upsell-dialog-renderer>yt-button-renderer.yt-live-chat-upsell-dialog-renderer, yt-live-chat-membership-item-renderer[show-only-header] #header.yt-live-chat-membership-item-renderer, #container.yt-live-chat-ticker-sponsor-item-renderer, #video-snapshot.yta-video-snapshot, #embed-panel.yt-sharing-embed-renderer, .header.ytcp-content-section, yt-confirm-dialog-renderer[dialog][dialog][dialog], #dropdown.yt-live-chat-text-input-field-renderer, #main-container.ytcp-entity-page, yt-live-chat-banner-manager[has-visible-banner], yt-live-chat-banner-renderer.yt-live-chat-banner-manager, yt-live-chat-paid-sticker-renderer:not([dashboard-money-feed]) #card.yt-live-chat-paid-sticker-renderer, .html5-video-info-panel, .buttons.ytcp-video-metadata-editor-old ytcp-button.ytcp-video-metadata-editor-old, #yta-hovercard-container.yta-comparison-hovercard, #message-container, #content-container, #background-image-layer.ytd-sponsorships-offer-renderer, yt-icon.yt-live-chat-ticker-renderer {
 	background: #000!important;
@@ -125,6 +134,9 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-notifications
 img.ytcp-home-button {
 	filter: brightness(10) grayscale(1) contrast(20) invert(1)!important;
 }
+#checkbox.checked.paper-checkbox {
+	filter: invert(1) grayscale(1) brightness(2)!important;
+}
 .gsok_a img {
 	filter: invert(1) brightness(10)!important;
 	visibility: visible!important;
@@ -135,7 +147,7 @@ img.ytcp-home-button {
 ytd-movie-offer-module-renderer, ytd-rich-metadata-renderer, yt-icon-button.yt-live-chat-item-list-renderer, ytd-live-chat-frame, paper-dialog, #dialog.ytcp-dialog, #create-icon.ytcp-header, #select-files-button.ytcp-uploads-file-picker, ytcp-paper-tooltip-placeholder[type="custom-content"] #tooltip.ytcp-paper-tooltip-placeholder, ytcp-omnisearch.focused input.ytcp-omnisearch, paper-card, yta-card-container:not(borderless) #see-more-button.yta-card-container, ytcp-paper-tooltip-placeholder[type="explanatory"] #tooltip.ytcp-paper-tooltip-placeholder, #yta-hovercard-container.yta-hovercard, #tooltip, [id="upload-button"], .sbdd_b, ytd-searchbox[has-focus] #container.ytd-searchbox, ytd-author-comment-badge-renderer, paper-toast, #star-survey.ytd-inline-survey-renderer, ytd-post-renderer[uses-compact-lockup_], ytd-backstage-post-thread-renderer, .container.ytcp-video-metadata-info, #container.ytd-searchbox, #search-icon-legacy.ytd-searchbox, #container.yt-live-chat-ticker-paid-message-item-renderer, #card.yt-live-chat-upsell-dialog-renderer, #action-button.yt-live-chat-upsell-dialog-renderer>yt-button-renderer.yt-live-chat-upsell-dialog-renderer, yt-live-chat-membership-item-renderer[show-only-header] #header.yt-live-chat-membership-item-renderer, #container.yt-live-chat-ticker-sponsor-item-renderer, #container.ytd-playlist-panel-renderer, yt-confirm-dialog-renderer[dialog][dialog][dialog], #dropdown.yt-live-chat-text-input-field-renderer, #search-panel.yt-emoji-picker-renderer, .badge-style-type-simple.ytd-badge-supported-renderer, .badge-style-type-premium.ytd-badge-supported-renderer, yt-live-chat-banner-renderer.yt-live-chat-banner-manager, yt-live-chat-paid-sticker-renderer:not([dashboard-money-feed]) #card.yt-live-chat-paid-sticker-renderer, .html5-video-info-panel, paper-listbox, ytd-multi-page-menu-renderer, #yta-hovercard-container.yta-comparison-hovercard, #message-container, #content-container, #container.yt-live-chat-ticker-paid-sticker-item-renderer {
 	border: 1px solid #fff!important;
 }
-.header-content.ytcp-dialog, yt-live-chat-header-renderer, #container.ytd-masthead, header.ytcp-header, #placeholder-area.ytd-comment-simplebox-renderer, .mobile-topbar-header[data-mode="searching"], .offer-overview-item.ytd-sponsorships-offer-renderer:not(:last-of-type) {
+.header-content.ytcp-dialog, yt-live-chat-header-renderer, #container.ytd-masthead, header.ytcp-header, #placeholder-area.ytd-comment-simplebox-renderer, .mobile-topbar-header[data-mode="searching"], .offer-overview-item.ytd-sponsorships-offer-renderer:not(:last-of-type), #playlists.ytd-add-to-playlist-renderer, #header.ytd-add-to-playlist-renderer {
 	border-bottom: 1px solid #fff!important;
 }
 .footer.ytcp-dialog {
@@ -144,7 +156,7 @@ ytd-movie-offer-module-renderer, ytd-rich-metadata-renderer, yt-icon-button.yt-l
 #guide-content.ytd-app, ytd-settings-sidebar-renderer {
 	border-right: 1px solid #fff!important;
 }
-ytd-guide-signin-promo-renderer, #show-more-button.ytd-rich-shelf-renderer, yt-multi-page-menu-section-renderer, ytd-active-account-header-renderer, ytd-guide-collapsible-section-entry-renderer, ytd-guide-section-renderer, #guide-links-primary.ytd-guide-renderer, ytd-simple-menu-header-renderer, #label.yt-dropdown-menu, #selectionBar.paper-tabs, paper-button.ytd-expander, [id="more-replies"]>a>paper-button.ytd-button-renderer, [id="less-replies"]>a>paper-button, ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, ytd-compact-autoplay-renderer, #header.ytd-app, yt-start-at-renderer.yt-third-party-network-section-renderer, ytd-inline-survey-renderer, ytd-rich-shelf-renderer, ytd-backstage-items, #content.ytd-playlist-video-renderer, ytcp-banner[color-theme]:not([hide-border]) .container.ytcp-banner, #paper-list.ytcp-text-menu {
+ytd-guide-signin-promo-renderer, #show-more-button.ytd-rich-shelf-renderer, yt-multi-page-menu-section-renderer, ytd-active-account-header-renderer, ytd-guide-collapsible-section-entry-renderer, ytd-guide-section-renderer, #guide-links-primary.ytd-guide-renderer, ytd-simple-menu-header-renderer, #label.yt-dropdown-menu, #selectionBar.paper-tabs, paper-button.ytd-expander, [id="more-replies"]>a>paper-button.ytd-button-renderer, [id="less-replies"]>a>paper-button, ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, ytd-compact-autoplay-renderer, #header.ytd-app, yt-start-at-renderer.yt-third-party-network-section-renderer, ytd-inline-survey-renderer, ytd-rich-shelf-renderer, ytd-backstage-items, #content.ytd-playlist-video-renderer, ytcp-banner[color-theme]:not([hide-border]) .container.ytcp-banner, #paper-list.ytcp-text-menu, ytd-shelf-renderer, ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype=history]):not([page-subtype=memberships-and-purchases]):not([page-subtype=ypc-offers]) #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer {
 	border: none!important;
 }
 ytm-pivot-bar-renderer, ytm-slim-video-metadata-renderer ytm-slim-owner-renderer, ytm-item-section-renderer, .comment-simplebox-placeholder, .section, .slim-video-metadata-info, nav.ytcp-navigation-drawer, ytcp-primary-action-bar, ytcp-checkbox-lit[indeterminate] #checkbox.ytcp-checkbox-lit, ytcp-checkbox-lit[checked] #checkbox.ytcp-checkbox-lit, #checkbox.checked.ytcp-paper-checkbox {

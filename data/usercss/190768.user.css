@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Seyjin
 @description    `A darkmode theme for the Sims forum.`
-@version        20201015.17.53
+@version        20201016.15.25
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,10 +11,18 @@
 /* Darkmode for the Sims forums by Seyjin */
 
 /* Couleur principale du texte */
-body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .CommentDate:hover, .Section-Discussion .CommentMeta a, .Section-Discussion .DiscussionMeta a, .Section-Discussion .Item.rank-blue .Meta, .Section-Discussion .Item.rank-blue .Meta a, .Section-Discussion .Item.rank-blue .Meta a:focus, .Section-Discussion .Item.rank-blue .Meta a:hover, .Section-Discussion .CommentMeta, .Section-Discussion .DiscussionMeta, .Section-Discussion .PageTitle h1, input.DateBox, input.InputBox, input.SmallInput, textarea, .editor-fullpage .TextBoxWrapper .BodyBox, .editor-fullpage .TextBoxWrapper .wysihtml5-sandbox, .nav-me .Username, .info-bar .breadcrumbs, .info-bar .breadcrumbs a, .info-bar .SignInLinks, .info-bar .SignInLinks a, a.Close {
+body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .CommentDate:hover, .Section-Discussion .CommentMeta a, .Section-Discussion .DiscussionMeta a, .Section-Discussion .Item.rank-blue .Meta, .Section-Discussion .Item.rank-blue .Meta a, .Section-Discussion .Item.rank-blue .Meta a:focus, .Section-Discussion .Item.rank-blue .Meta a:hover, .Section-Discussion .CommentMeta, .Section-Discussion .DiscussionMeta, .Section-Discussion .PageTitle h1, input.DateBox, input.InputBox, input.SmallInput, textarea, .editor-fullpage .TextBoxWrapper .BodyBox, .editor-fullpage .TextBoxWrapper .wysihtml5-sandbox, .nav-me .Username, .info-bar .breadcrumbs, .info-bar .breadcrumbs a, .info-bar .SignInLinks, .info-bar .SignInLinks a, a.Close, .Preview, .hljs, .hljs-keyword, .hljs-selector-tag, .hljs-subst, .Section-Discussion .MessageList .AuthorInfo span,.Section-Profile .User > .H, #Panel .About.P dt, #Panel .About.P, #Panel li.Active a, .Info, ul.token-input-list {
     color: #ccc;
 }
 
+/* Couleur des liens */
+#Panel li a, .Section-Profile .TextColor {
+    color: #25a8e0;
+}
+
+#Panel li a:hover, .Section-Profile .TextColor:hover {
+    color: #68c3ea;
+}
 /* Aspect de la barre d’info */
 .info-bar, .footer {
     background: #1c1b22;
@@ -57,18 +65,17 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 }
 
 /* Couleur principale du fond de la page */
-#Body, div.Popup .Body {
+#Body, div.Popup .Body, .Preview, .hljs, #Panel .About.P {
     background-color: #222029;
 }
 
 /* Couleur alternative du fond de la page */
-.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before {
-
+.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info {
     background-color: #1c1b22;
 }
 
 /* Couleur des trais du tableau */
-.DataTable td, .ChildCategories, .Section-Discussion .Item-BodyWrap, .Section-Discussion .DataList .Item, .Section-Discussion .ItemDiscussion .Discussion, .Section-Discussion .DataList.Comments, .MenuItems hr, .footer-logos, .Section-Discussion .UserQuote {
+.DataTable td, .ChildCategories, .Section-Discussion .Item-BodyWrap, .Section-Discussion .DataList .Item, .Section-Discussion .ItemDiscussion .Discussion, .Section-Discussion .DataList.Comments, .MenuItems hr, .footer-logos, .Section-Discussion .UserQuote, .hljs, #ContentPanel .panel-content, .Section-Profile #ContentPanel {
     border-color: #18171e;
 }
 
@@ -108,7 +115,7 @@ div.PostEdited {
 }
 
 /* Spoiler spoiler spoiler */
-div.Spoiler div.SpoilerTitle input {
+div.Spoiler div.SpoilerTitle input, .NavButton, body:not(.dataDriven) .ButtonGroup.Open .NavButton.Handle {
     background-color: #222029;
     border-color: #18171e;
     color: #25a8e0;
@@ -120,13 +127,21 @@ div.Spoiler div.SpoilerTitle input {
 }
 
 /* Aspect des boites d’édition de textes */
-.InputBox, input:focus, textarea:focus, .Activities a.CommentLink, .Activities a.CommentLink:hover {
+.InputBox, input:focus, textarea:focus, .Activities a.CommentLink, .Activities a.CommentLink:hover, ul.token-input-list {
     background: #222029 !important;
     border-color: #18171e;
 }
 
 :focus {
     outline-style: none;
+}
+
+.Section-Discussion  .Preview .Message::before {
+    display: none;
+}
+/* Upload une image */
+.editor-upload-progress {
+    filter: brightness(0.3) contrast(120%);
 }
 
 /* Aspect des menus */
