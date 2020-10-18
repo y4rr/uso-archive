@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `Dark Instagram that also supports mobile view (the only worthwhile way of using Instagram on a PC)`
-@version        2020917.13.54
+@version        20201017.13.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -61,7 +61,16 @@ darker,
 
 ._1XyCr,
 
-._6xe7A
+._6xe7A,
+
+._8A5w5, a._8A5w5, a._8A5w5:visited,
+
+div .XfvCs,
+
+.fuQUr:hover,
+.-HRM-,
+
+.gr27e
 {
     background: #292e3b;
 }
@@ -71,7 +80,7 @@ darkest,
 .JyscU, .ltEKP .QBXjJ,
 .JyscU ._97aPb.wKWK0,
 
-.L-sTb, ._41KYi,
+._41KYi, .X3a-9,
 
 .pbNvD,
 
@@ -81,14 +90,35 @@ darkest,
 
 .g6RW6, .N9abW, .S-mcP, .oNO81, .-qQT3,
 
-.JLJ-B, .p7vTm, .F0B8Y
+.JLJ-B, .p7vTm, .F0B8Y,
+
+.ZyFrc, ._6FEQj,
+
+.TOh1s, .uo5MA, ._01UL2, .W4P49,
+
+.jdnLC,
+
+.M-jxE *,
+
+.wW1cu,
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip
 {
     background: #1e2229;
 }
 
 empty,
 
-._09ncq
+._09ncq,
+
+.HVWg4, ._8UZ6e, .XTCZH,
+
+.XfCBB,
+
+.g6RW6,
+.-qQT3, .-qQT3:focus,
+
+.ZyFrc
 {
   background: #0000;
 }
@@ -122,7 +152,11 @@ button, span,a,
 
 .x3qfX,
 
-.FPmhX *
+.FPmhX *,
+
+.PLphk,
+
+.sxIVS
 {
   color: #ccc !important;
 }
@@ -137,16 +171,38 @@ button, span,a,
     border: 5px solid #0095f6 !important;
 }
 
+.T-jvg {
+    border-top: 1px solid #ccc !important;
+}
+
 .drKGC::after
 {
   border-color: transparent transparent #292e3b transparent;
+}
+
+.M-jxE
+{
+  border-radius: 10px;
+}
+
+.h-aRd
+{
+  width: unset;
 }
 
 dark-to-light,
 
 .s4Iyt, ._8-yf5,
 
-.glyphsSpriteFriend_Follow
+.glyphsSpriteFriend_Follow,
+
+.felixSpriteProfileChannelNullState, .coreSpriteSaveNull, .coreSpriteTaggedNull, .coreSpriteUnreadComments,
+.glyphsSpriteError__outline__24__grey_9,
+.glyphsSpriteLocation__outline__24__grey_9, .glyphsSpriteLock__outline__24__grey_9m,
+
+.tlZCJ:checked~.mwD2G::before,
+
+.coreSpriteLoggedOutWordmark, .coreSpriteMobileNavDirect
 /*
 .felixSpriteFacebookCircle, .felixSpriteFacebookCircle-3x, .felixSpriteFbSelectedItem, .felixSpriteFbSelectedItem-3x, .felixSpriteOnboardingBuiltForVertical, .felixSpriteOnboardingBuiltForVertical-3x, .felixSpriteOnboardingCreateYourChannel, .felixSpriteOnboardingCreateYourChannel-3x, .felixSpriteOnboardingShareLongerVideos, .felixSpriteOnboardingShareLongerVideos-3x, .felixSpriteProfileChannelNullState, .felixSpriteProfileChannelNullState-3x, .felixSpriteUploadError, .felixSpriteUploadError-3x, .felixSpriteWebUploadNullAdd, .felixSpriteWebUploadNullAdd-3x,
 .coreSpriteActivityHeart, .coreSpriteAddText, .coreSpriteAppIcon, .coreSpriteAppStoreButton, .coreSpriteBoomerang, .coreSpriteCall, .coreSpriteCheck, .coreSpriteChevronDark, .coreSpriteChevronDownGrey, .coreSpriteChevronRight, .coreSpriteChevronRightBlue, .coreSpriteChevronRightBlue-3x, .coreSpriteChevronRightBlue-4x, .coreSpriteCi, .coreSpriteClose, .coreSpriteCloseLight, .coreSpriteDesktopNavDirect, .coreSpriteDesktopPhotoGrid, .coreSpriteDesktopPhotoGridActive, .coreSpriteDesktopProfileIGTV, .coreSpriteDesktopProfileIGTVActive, .coreSpriteDesktopProfileSave, .coreSpriteDesktopProfileSaveActive, .coreSpriteDesktopProfileTagged, .coreSpriteDesktopProfileTaggedActive, .coreSpriteDirectHeart, .coreSpriteDismissLarge, .coreSpriteDismissSmall, .coreSpriteDownload, .coreSpriteDropdownArrowBlue5, .coreSpriteDropdownArrowBlue6, .coreSpriteDropdownArrowGrey9, .coreSpriteDropdownArrowWhite, .coreSpriteFacebookIcon, .coreSpriteFacebookIconInverted, .coreSpriteGallery, .coreSpriteGlyphGradient, .coreSpriteGlyphWhite, .coreSpriteGooglePlayButton, .coreSpriteHashtag, .coreSpriteHeartSmall, .coreSpriteHyperlapse, .coreSpriteIgLiteHalfsheetInstagramLogo, .coreSpriteInfo, .coreSpriteInputAccepted, .coreSpriteInputError, .coreSpriteInputRefresh, .coreSpriteKeyhole, .coreSpriteLeftChevron, .coreSpriteLeftPaginationArrow, .coreSpriteLikeAnimationHeart, .coreSpriteLocation, .coreSpriteLocationActive, .coreSpriteLock, .coreSpriteLockSmall, .coreSpriteLoggedOutGenericUpsell, .coreSpriteLoggedOutWordmark, .coreSpriteMobileNavDirect, .coreSpriteMobileNavTypeLogo, .coreSpriteNavBack, .coreSpriteNotificationLeftChevron, .coreSpriteNotificationRightChevron, .coreSpriteOptionsEllipsis, .coreSpriteOptionsEllipsisLight, .coreSpritePagingChevron, .coreSpritePlayIconSmall, .coreSpritePrivateLock, .coreSpriteProfileCamera, .coreSpriteReload, .coreSpriteRightChevron, .coreSpriteRightPaginationArrow, .coreSpriteSaveNull, .coreSpriteSaveStory, .coreSpriteSearchClear, .coreSpriteSearchIcon, .coreSpriteSensitivityIcon, .coreSpriteSensitivityIconSmall, .coreSpriteSpeechBubbleSmall, .coreSpriteSpinsta, .coreSpriteSpinstaNux, .coreSpriteSpinstaStory, .coreSpriteStar, .coreSpriteStoryCreation, .coreSpriteStoryCreationAlt, .coreSpriteStoryRing, .coreSpriteStoryViewCount, .coreSpriteTaggedNull, .coreSpriteUnreadComments, .coreSpriteUnreadLikes, .coreSpriteUnreadRelationships, .coreSpriteUnreadUsertags, .coreSpriteVerifiedBadge, .coreSpriteVerifiedBadgeSmall, .coreSpriteVideoNux, .coreSpriteViewCount, .coreSpriteWindowsStoreButton,

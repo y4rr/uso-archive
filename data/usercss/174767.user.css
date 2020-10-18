@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have a YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Optional Video Dim (-25% brightness);https://userstyles.org/styles/175380/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        20201010.3.12
+@version        20201017.20.10
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1364,7 +1364,7 @@ ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:active
 .ytp-cued-thumbnail-overlay .ytp-large-play-button-bg,
 .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg
 {
-    filter: brightness(1);
+    /*filter: brightness(1);*/
     transition: .4s;
 }
 .ytp-cued-thumbnail-overlay-image:active,

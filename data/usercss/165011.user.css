@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/zATWeNsy`
-@version        20201016.18.3
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/BqeUEeCi`
+@version        20201017.15.15
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1288,14 +1288,14 @@ select:focus {background: var(--theme_default_altbtnbghover); border-color: var(
 
 /* Setting */
 .settings__prefs {margin-left: 15px;}
+.settings__header {margin: 3px 0;}
 .settings__header span {font-size: 0;}
-.settings__header span:first-child::before {content: "\f078"; font: 12px/1 FontAwesome; margin-right: 4px;}
-.settings__header span:last-child::before {content: "\f077"; font: 12px/1 FontAwesome; margin-right: 4px;}
+.settings__header span:first-child::before {content: "keyboard_arrow_down"; font: 24px/19px 'Material Icons'; vertical-align: -7px;}
+.settings__header span:last-child::before {content: "keyboard_arrow_up"; font: 24px/19px 'Material Icons'; vertical-align: -7px;}
 .settings__row {padding: 1px 0;}
 .settings__label select {margin-left: 4px;}
-.settings__edit {background: none; color: var(--theme_default_text);}
-.settings__edit:hover {color: var(--theme_default_link);}
-.settings__edit::before {content: "\f044"; font: 14px/1 FontAwesome;}
+.settings__edit {background: none; height: unset; width: unset; vertical-align: unset;}
+.settings__edit::before {content: "Изменить";}
 #setting-editor-body {max-height: unset;}
 #setting-editor-textarea-textarea {font-family: Consolas, monospace;}
 
@@ -1369,23 +1369,23 @@ input[type="checkbox"]:checked::after {color: var(--theme_default_altbtntext);}
 .literally .color-picker-popup {background-color: var(--theme_default_postbg);}
 
 img[src="/makaba/templates/js/lcanvas/img/dashed-line.png"], img[src="/makaba/templates/js/lcanvas/img/line-with-arrow.png"] {display: none;}
-.lc-options.horz-toolbar .square-toolbar-button[style="float:left;margin:1px;"]:first-child::before {content: "\f142"; display: block; font: 22px/28px FontAwesome; width: 27px; text-align: center;}
-.lc-options.horz-toolbar .square-toolbar-button[style="float:left;margin:1px;"]:nth-child(2)::before {content: "\f176"; display: block; font: 22px/26px FontAwesome; width: 27px; text-align: center;}
+.lc-options.horz-toolbar .square-toolbar-button[style="float:left;margin:1px;"]:first-child::before {content: "more_horiz"; font: 24px/1 'Material Icons'; display: block; width: 27px; text-align: center;}
+.lc-options.horz-toolbar .square-toolbar-button[style="float:left;margin:1px;"]:nth-child(2)::before {content: "arrow_right_alt"; font: 24px/1 'Material Icons'; display: block; width: 27px; text-align: center;}
 
 .lc-pick-tool, .lc-undo, .lc-redo, .lc-zoom-out, .lc-zoom-in {background: none !important;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/pencil.png);"]::before {content: "\f040"; font: 22px/22px FontAwesome;}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/pencil.png);"]::before {content: "create"; font: 24px/1 'Material Icons';}
 .lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/eraser.png);"]::before {content: "\f12d"; font: 22px/22px FontAwesome;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/line.png);"]::before {border: 2px solid; content: ""; display: block; height: 18px; width: 0; margin-left: 9px; transform: rotate(45deg);}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/rectangle.png);"]::before {border: 3px solid; content: ""; display: block; height: 16px; width: 16px;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/ellipse.png);"]::before {border: 3px solid; border-radius: 50%; content: ""; display: block; height: 16px; width: 16px;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/text.png);"]::before {content: "\f031"; font: 22px/22px FontAwesome;}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/line.png);"]::before {border-left: 3px solid; content: ""; display: block; height: 22px; width: 0; margin-left: 10px; transform: rotate(45deg);}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/rectangle.png);"]::before {content: "crop_din"; font: 24px/1 'Material Icons';}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/ellipse.png);"]::before {content: "panorama_fish_eye"; font: 24px/1 'Material Icons';}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/text.png);"]::before {content: "font_download"; font: 24px/1 'Material Icons';}
 .lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/polygon.png);"]::before {content: "\f275"; font: 22px/22px FontAwesome;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/pan.png);"]::before {content: "\f047"; font: 22px/22px FontAwesome;}
-.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/eyedropper.png);"]::before {content: "\f1fb"; font: 22px/22px FontAwesome;}
-.lc-undo::before {content: "\f112"; font: 22px/22px FontAwesome;}
-.lc-redo::before {content: "\f064"; font: 22px/22px FontAwesome;}
-.lc-zoom-out::before {content: "\f010"; font: 22px/22px FontAwesome;}
-.lc-zoom-in::before {content: "\f00e"; font: 22px/22px FontAwesome;}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/pan.png);"]::before {content: "open_with"; font: 24px/1 'Material Icons';}
+.lc-pick-tool[style="background-image:url(/makaba/templates/js/lcanvas/img/eyedropper.png);"]::before {content: "colorize"; font: 24px/1 'Material Icons';}
+.lc-undo::before {content: "undo"; font: 24px/1 'Material Icons';}
+.lc-redo::before {content: "redo"; font: 24px/1 'Material Icons';}
+.lc-zoom-out::before {content: "zoom_out"; font: 24px/1 'Material Icons';}
+.lc-zoom-in::before {content: "zoom_in"; font: 24px/1 'Material Icons';}
 
 .qr-oekaki-footer, .qr__footer_oekaki {border-top: 1px solid var(--theme_default_border); padding-top: 4px;}
 
@@ -1824,7 +1824,7 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 .tti_info {display: block !important;}
 
 /* Setting */
-.settings__header {margin: 0; padding: 6px 0; letter-spacing: .5px; text-transform: uppercase;}
+.settings__header {font-size: 1.1em; margin: 0; padding: 3px 0;}
 .settings__row {padding: 2px 0;}
 #setting-editor-textarea-textarea {min-height: calc(50vh);}
 
@@ -1834,17 +1834,17 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 
 .catalog .centered {background: var(--theme_default_glassbg2); box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px 0 var(--theme_shadow); height: 55px; position: fixed; z-index: 980; top: 0; left: 0; right: 0;}
 .centered span[style="float:left"] {float: none !important; }
-.centered span[style="float:left"] a::before {content: "arrow_back"; font: 24px/55px 'Material Icons'; width: 15%; padding: 0; position: fixed; margin: 0; top: 0; left: 0;}
+.centered span[style="float:left"] a::before {color: var(--theme_default_alttext); content: "arrow_back"; font: 24px/55px 'Material Icons'; width: 15%; padding: 0; position: fixed; margin: 0; top: 0; left: 0;}
 
 #filter_form {font-size: 0; position: fixed; bottom: 0; left: 20%; right: 0; text-align: left;}
-#filter_form::before {content: "\f161"; font: 18px/55px FontAwesome; width: 40px; display: inline-block; text-align: center;}
-#filter_form select {font-size: 15px;}
+#filter_form::before {color: var(--theme_default_alttext); content: "filter_alt"; font: 24px/55px 'Material Icons'; width: 50px; display: inline-block; text-align: center;}
+#filter_form select {font-size: 15px; vertical-align: 6px;}
 
 #csearch {font-size: 15px; padding: 6px 10px; position: fixed; left: 15%; width: 70%; top: 12px;}
 
 label[for="toggle-tags"] {position: fixed; right: 0; width: 15%;}
 span[title="tags"] {font-size: 0;}
-span[title="tags"]::before {content: "#"; font-weight: bold; font-size: 24px; line-height: 55px; padding: 0 4px; vertical-align: -4px;}
+span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; font-weight: bold; font-size: 24px; line-height: 55px; padding: 0 4px; vertical-align: -4px;}
 
 .thread_wrap {flex: 0 0 95%; height: 150px; text-align: left;}
 .thread-info {color: var(--theme_default_alttext2);}
@@ -1927,13 +1927,13 @@ input[name="find"] {font-size: 15px; padding: 6px 10px;}
 
 .thread-nav__stats {background: var(--theme_default_postbg); border-radius: 15px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); font-size: 15px; position: absolute; top: -40px; right: 5px; padding: 4px 8px; margin-right: 50px;}
 .thread-nav__stats:hover {top: 62px;}
-.thread-nav__stats::before {color: var(--theme_default_alttext2); content: "\f05a"; font: 20px/36px FontAwesome; position: absolute; top: 100px; right: -50px; width: 50px; text-align: center;}
+.thread-nav__stats::before {color: var(--theme_default_alttext2);content: "info"; font: 24px/36px 'Material Icons'; position: absolute; top: 100px; right: -50px; width: 50px; text-align: center;}
 .thread-nav__stats:hover::before {top: -2px;}
 a[id="bottom"] + .thread-nav, .button-mob[href="#bottom"], .button-mob[href="#top"], .thread-nav-mob:nth-of-type(4) > a.button-mob:nth-of-type(4), a[id="bottom"] + * + * > a[onclick*="updateThread(); return false;"] {display: none !important;}
 
 a[onclick*="updateThread(); return false;"] {background: none; border-radius: 0; box-shadow: none; color: var(--theme_default_text); font-size: 0; padding: 0 !important; position: fixed; left: 60%; bottom: 0; z-index: 977; margin: 0; height: 55px; width: 20%; text-align: center !important;}
 a[onclick*="updateThread(); return false;"]::before {display: none;}
-a[onclick*="updateThread(); return false;"]::after {background: none !important; color: var(--theme_default_alttext) !important; content: "refresh"; font: 24px/55px 'Material Icons'; position: unset; padding: 0;}
+a[onclick*="updateThread(); return false;"]::after {background: none !important; color: var(--theme_default_alttext) !important; content: "refresh"; font: 26px/55px 'Material Icons'; position: unset; padding: 0;}
 a[onclick*="updateThread(); return false;"]:hover {background-color: var(--theme_default_btnbghover);}
 
 .autorefresh {font-size: 14px; display: block !important; position: absolute; top: 67px; left: 10px;}

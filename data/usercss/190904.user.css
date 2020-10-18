@@ -1,0 +1,141 @@
+/* ==UserStyle==
+@name           Roblox Old Dark Theme (Work In Progress)
+@namespace      USO Archive
+@author         Loc.
+@description    `This is a remake of the roblox dark theme, From February 2nd 2019, to September 28th, 2019Rest in peac.... Wait! the theme is back! (It's global bc idk how to make it just roblox)`
+@version        20201018.0.1
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain(roblox.com) {
+.dark-theme .input-group .input-field {
+	background-color: #000;
+	color: #fff;
+	border-radius: 4px
+}
+  a#nav-giftcards
+.dark-theme .rbx-header {
+	background-color: #1b1b1b
+}
+.dark-theme .icon-default-navigation, .dark-theme .icon-nav-blog, .dark-theme .icon-nav-charactercustomizer, .dark-theme .icon-nav-friends, .dark-theme .icon-nav-group, .dark-theme .icon-nav-home, .dark-theme .icon-nav-inventory, .dark-theme .icon-nav-menu, .dark-theme .icon-nav-message, .dark-theme .icon-nav-my-feed, .dark-theme .icon-nav-notification-stream, .dark-theme .icon-nav-profile, .dark-theme .icon-nav-robux, .dark-theme .icon-nav-shop, .dark-theme .icon-nav-trade {
+	background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+	filter: brightness(770%);
+}
+.dark-theme .left-col-list li a > span {
+	color: #ccc;
+}
+
+.dark-theme .left-col-list li a:hover > span {
+	color: #fff;
+}
+
+.dark-theme .left-col-list li > div > span {
+	color: #ccc;
+}
+
+.dark-theme .left-col-list li > div:hover > span {
+	color: #fff;
+}
+
+.dark-theme .left-col-list li a:hover div span[class^="icon"] {
+	filter: saturate(0) brightness(1000%);
+}
+.dark-theme .left-col-list li a:hover div span[class^="icon"] {
+	filter: saturate(0) brightness(1000%);
+}
+
+.dark-theme .left-col-list li div:hover div span[class^="icon"] {
+	filter: saturate(0) brightness(1000%);
+}
+.dark-theme .upgrade-now-button {
+color: #fff;
+Background-color: #02b757
+}
+#upgrade-now-button:after{
+content: "Upgrade Now";
+font-size: 16px;
+color: #fff;
+}
+
+
+
+#navigation-container.light-theme #upgrade-now-button,#navigation-container.dark-theme #upgrade-now-button { 
+	height: 8px;
+	font-size: 0;
+	padding-top: 17px;
+	border-radius: 8px;
+	background-color: #02b757;
+	border-color: #02b757;
+	color: #fff
+}
+
+#wrap.logged-in #upgrade-now-button {
+	font-size: 0;
+	height: 36.5px;
+	padding-top: 17px;
+	border-radius: 8px
+}
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1) {
+    font-size: 0;
+    visibility: hidden;
+    padding: 0;
+    margin-top: 6px;
+}
+
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::after {
+    content:"Catalog";
+    font-size: 16px;
+    visibility: visible;
+    padding: 8px 9px;
+    border-radius: 5px;
+}
+  game-card-container thumbnail-2d .game-card-thumb,
+.game-card-thumb-container .game-card-thumb {
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	display: inline-block;
+	margin: auto;
+	border-radius: 0px;
+}
+.dark-theme .game-card-container {
+	background-color: #303030!important;
+	border-radius: 3px;
+}
+.dark-theme .game-card-container .game-card-name,
+.dark-theme .game-card-container .game-card-name {
+	padding: 0 6px;
+	margin: 6px 0;
+}
+.game-card-info,
+.dark-theme .game-card-info {
+	position: absolute;
+	bottom: 6px;
+	width: 100%;
+	margin: 0 6px;
+}
+
+.game-card-thumb-container:before {
+	border-radius: 0px;
+	display: none;
+}
+.game-card-container thumbnail-2d .game-card-thumb,
+.game-card-thumb-container .game-card-thumb {
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	display: inline-block;
+	margin: auto;
+	border-radius: 0px;
+}
+  div.home-header-content a:before,
+h1.user-name-container a:before {
+	content: "Hello, "
+}
+
+div.home-header-content a:after,
+h1.user-name-container a:after {
+	content: "!"
+}
+
+}

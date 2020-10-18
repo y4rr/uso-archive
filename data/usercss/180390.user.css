@@ -2,8 +2,8 @@
 @name           BLACK STYLE hdrezka.ag
 @namespace      USO Archive
 @author         MariaLovesQueen
-@description    `<b>Дорогие пользователи, прошу пишите мне на этом сайте в feedback или куда-нибудь в лс, если видите в этом стиле ошибки, недокрашенные области и пр.</b> Мне самой сложно следить за всем, помогайте. Дата последних изменений в стиле находится выше в графе <b>Last Updated</b>, иными словами, если вы видите что дата там изменилась значит стиль был немного доработан.<br><br>Изменения: плеер выше :D`
-@version        20201017.0.43
+@description    `<b>Дорогие пользователи, прошу пишите мне на этом сайте в feedback или куда-нибудь в лс, если видите в этом стиле ошибки, недокрашенные области и пр.</b> Мне самой сложно следить за всем, помогайте. Дата последних изменений в стиле находится выше в графе <b>Last Updated</b>, иными словами, если вы видите что дата там изменилась значит стиль был немного доработан.<br><br>Изменения: плеер выше :D Исправлена ошибка перекрытия фоном плеера, заменен фон на чёрный в родной темной теме сайта.`
+@version        20201017.18.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -58,13 +58,13 @@
     padding: 60px 0 0 0 !important;
 }
 
-.b-post__support_holder_report .append, div.b-post__mixedtext + div,  .b-post__mixedtext, .b-search__submit, .b-content__htitle, .b-tophead__subscribe-dropdown-inner:before, .b-post__support_holder, .b-tg__wrapper, .b-tracker__main__announce, .b-post__status_wrapper, .b-post__mixedtext, .b-post__lastepisodeout, .b-content__main > style + div, .b-post__status_wrapper, div.b-content__main + div {
+.b-newest_slider__inner:before, #ownplayer-link-show, .b-post__support_holder_report .append, div.b-post__mixedtext + div,  .b-post__mixedtext, .b-search__submit, .b-content__htitle, .b-tophead__subscribe-dropdown-inner:before, .b-post__support_holder, .b-tg__wrapper, .b-tracker__main__announce, .b-post__status_wrapper, .b-post__mixedtext, .b-post__lastepisodeout, .b-content__main > style + div, .b-post__status_wrapper, div.b-content__main + div {
 	display :none !important;
 }
 
 
 /*recolor background*/
-.b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .b-tophead-dropdown ul, .b-topnav__sub_inner, body.b-theme__template__night.has-brand #wrapper, body.b-theme__template__night, .no-touch {
+.b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .b-tophead-dropdown ul, .b-topnav__sub_inner, body.b-theme__template__night.has-brand #wrapper, body.b-theme__template__night, body.b-theme__template__night .b-footer, body.b-theme__template__night .b-tophead_wrapper, .no-touch {
     background: #000 !important;
 	color: #999 !important;
 }
@@ -78,7 +78,7 @@
 	color: #999 !important;
 }
 
-.tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
+body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .sod_select, .tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
 	background-color: #111 !important;
 }
 
@@ -109,7 +109,7 @@ body.b-theme__template__night .persons-list-holder .person-name-item a, .btn-hel
 	text-decoration: none !important;
 }
 
-.b-person__popup_photo, .btn-helper, .btn-action, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .inner, .b-post__schedule_table td, .fixed-header .b-topnav_wrapper.shi, .fixed-header .b-topnav_wrapper.shm, .b-search__section_list a, .b-sidecover, .b-person__popup_holder_photo .overlay, .tooltipster-default, .b-tophead-dropdown, .b-tophead-dropdown ul, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a, .td, .th, .b-topnav__sub_inner a, .b-topnav__sub_inner, .b-seriesupdate__block_list_item, .b-navigation, .b-newest_slider__title span, .b-content__inline_item-cover, #top-nav {
+body.b-theme__template__night .sod_list_wrapper, .sod_select, body.b-theme__template__night .sod_select:hover, body.b-theme__template__night .sod_select.open, body.b-theme__template__night .sod_select.focus, .b-person__popup_photo, .btn-helper, .btn-action, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .inner, .b-post__schedule_table td, .fixed-header .b-topnav_wrapper.shi, .fixed-header .b-topnav_wrapper.shm, .b-search__section_list a, .b-sidecover, .b-person__popup_holder_photo .overlay, .tooltipster-default, .b-tophead-dropdown, .b-tophead-dropdown ul, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a, .td, .th, .b-topnav__sub_inner a, .b-topnav__sub_inner, .b-seriesupdate__block_list_item, .b-navigation, .b-newest_slider__title span, .b-content__inline_item-cover, #top-nav {
 	border: none !important;
 	box-shadow: none !important;
 	border-radius: 0 !important;

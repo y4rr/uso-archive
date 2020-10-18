@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201016.22.32
+@version        20201017.18.34
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2512,7 +2512,7 @@ body.new_header_design #side_bar .left_label {
 [dir] body.new_header_design .top_nav_link.active,
 [dir] body.new_header_design .top_nav_btn.active {
 	
-    background-color: hsla(218, 29%, 18%, .5);
+    background-color: hsla(218, 29%, 18%, .4);
 }
 
 [dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
@@ -2569,6 +2569,14 @@ body.new_header_design .top_audio_player_title {
 
 /* [dir] .audio_block .video_item .video_item_info .video_item_title { color: #D194D1; } */
 [dir] .audio_block_small_item--artist .title_link, .audio_block_small_item--curator .title_link {
+    color: var(--text-white-color);
+}
+
+[dir] .VideosFeedTitle {
+    background-color: #1c2634;
+    box-shadow: 0 1px 0 0 #242F3D,0 0 0 1px #242F3D;
+}
+.VideosFeedTitle {
     color: var(--text-white-color);
 }
 }

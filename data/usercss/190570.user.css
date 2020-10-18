@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         四月一日 雷
 @description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>にお願いします。`
-@version        20201011.15.9
+@version        20201017.13.25
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,7 +92,13 @@ html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,
 .common-header-r1rgum, .common-header-vhrjlg{
     display: none
 }
-
+/*放送者コメント色*/
+.___body___2BWU6{
+    color: #f4f4f4 !important
+}
+.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{
+    color: #e33e84 !important;
+}
 
 /*削除する要素*/
 .___premium-merit-appeal-banner___1KEdB, .___premium-merit-appeal-banner___1hc_y, .___app-download-banner___3tmZG, .___app-download-banner___SDCFP, .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad{

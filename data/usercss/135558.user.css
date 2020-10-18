@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dsk
 @description    `タイムフリーが追加された新レイアウトを、コンパクトに表示できるよう改良しました。作業しながら聞くような時も邪魔になりません。ウインドウ幅を1000pxより小さくするとコンパクト表示に切り替わります。幅340px程度での表示に最適化しています。<!-- br>Firefoxなら機能拡張の「<a href="https://addons.mozilla.org/ja/firefox/addon/hide-tab-bar-with-one-tab/" target="_blank">Hide Tab Bar With One Tab</a>」と「<a href="https://addons.mozilla.org/ja/firefox/addon/the-fox-only-better/" target="_blank">Beyond Australis</a>」をあわせてインストールすると、タブやツールバー・ロケーションバーを非表示にでき、さらにコンバクトに表示できます。 --><br><img src="https://userstyles.org/style_screenshots/135558_additional_23360.png">`
-@version        20201016.12.36
+@version        20201017.17.26
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -141,9 +141,9 @@
     .tune-list .tune-list__item:hover .tune-list__link .item{height: 15px;}
     .timeshift-detail__timeline .stream-item-wrapper .time,
     .live-detail__timeline .stream-item-wrapper .time{position:static;}
-    .btn--recochoku,.btn--itunes,.btn--amazon{height: 15px;background-size: 253.5px 248.5px;}
+    .btn--recochoku,.btn--itunes,.btn--amazon{height: 15px;background-size: 247.5px 239px;}
     .btn--recochoku{width: 46px;background-position: -70px -88px;}
-    .btn--itunes{width: 40.5px;background-position: 0px -185.5px;}
+    .btn--itunes{width: 40.5px;background-position: -52px -162.5px;;}
     .btn--amazon{width: 43px;background-position: -70px -103px;}
     .timeshift-page-nav{margin: 0 0 1em;}
     .timeshift-page-nav__btn,

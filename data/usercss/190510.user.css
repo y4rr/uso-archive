@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FlameCaro
 @description    `As a bonus or example for the themes I've done :)`
-@version        20201014.7.57
+@version        20201017.14.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -818,5 +818,77 @@ html body#user.background.europe div.container div.container_12.center div.profi
 .profile_username h1{
     font-family: 'Creepster' !important;
     font-weight: 400 !important;
+}
+}
+
+@-moz-document url("https://www.horsereality.com/user/87537/Skyee") {
+.bluebar_container, .footer {
+    background: url("https://i.imgur.com/L1TQk1b.png") !important;
+    background-position: bottom !important;
+    background-size: cover !important;
+    border: 2px solid #5b3818 !important;
+}
+body.background {
+	background: url("https://i.imgur.com/L1TQk1b.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+}
+.leftnav::before {
+    Content: "© FlameCaro" !important;
+    color: #51443e !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #51443e) !important;
+}
+.leftnav {
+    background: #000 url("https://i.imgur.com/myRgOWs.png") center !important;
+    border-radius: 0 0 85px 85px !important;
+    border: 2px solid #5b3818 !important;
+    margin-left: -4px !important;
+    position: fixed !important;
+}
+.center {
+    background-color: #51443e !important;
+}
+table thead tr, table {
+    background-color: #412d23 !important;
+}
+table {
+    border-color: #412d23 !important;
+}
+table tr.even {
+    background-color: #aea29c !important;
+}
+table tr.odd {
+    background-color: #635853 !important;
+}
+.subtitle {
+    color: #51443e !important;
+}
+.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+    color: #7a391c !important;
+}
+.profile_account h2, .profile_menu ul li, .profile_username h1, .profile_username h2 {
+	color: #5b3818 !important;
+}
+.leftnav > ul > li > ul > li a:hover, p a:active, p a:link, p a:visited, .milestone_text h2, ul li a:hover {
+	color: #bf5e32 !important;
+}
+p a:hover {
+    color: #472719 !important;
+}
+.profile_account, tbody {
+    background-color: #80716a !important;
+}
+.profile_menu, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+    background: #000 url("https://i.imgur.com/myRgOWs.png") center !important;
+	border-color: #5b3818 !important;
+}
+.profile_menu ul li:hover,#bbmenu.user ul.slidedown li:hover {
+	background-color: #00000040 !important;
+}
+.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+	border-color: #5b3818 !important;
+}
+.container {
+    background: #fff0 !important;
 }
 }

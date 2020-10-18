@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pooya
 @description    `Spotify Minimal White (Light) theme`
-@version        20201016.19.36
+@version        20201017.19.10
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -138,6 +138,8 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
     background-color: #2bdf8b;
     border-color: #33333317;}
 
+/* Library > Nav Items */
+div[data-testid="topbar-content"] a[aria-current="page"], .contentSpacing a[aria-current="page"] {background-color: #00000017 !important;}
 
 
 /* sidebar items */
@@ -155,13 +157,17 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 /* Table Header */
 .contentSpacing > div:first-child > div:first-child {
     background: #fff0;
-    box-shadow: 0 1px 3 0 #00000021;
+    box-shadow: none;
+    border-bottom: none;
     backdrop-filter: blur(10px);
 }
+
+[aria-label="duration"], [role="columnheader"] {color:black;}
 
 .contentSpacing > div:first-child > div:first-child {color: black;}
 
 /* List Item */
+.react-contextmenu-wrapper div[data-testid="tracklist-row"] div[aria-colindex="3"],
 .react-contextmenu-wrapper div[data-testid="tracklist-row"] div[aria-colindex="4"],
 .react-contextmenu-wrapper div[data-testid="tracklist-row"] div[aria-colindex="5"]{color:#000 !important;}
 .react-contextmenu-wrapper div[data-testid="tracklist-row"]:hover {background-color: #0000000f; color:#000 !important;}
@@ -174,34 +180,64 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 
 [aria-label="Explicit"] {background:#0000000f;}
 
-/* ============= Playlist ============= */
+/* ============= PLAYLIST PAGE ============= */
 
-/* song count & duration */
+/* Title */
+[data-testid="playlist-page"] h1[as="h1"] {
+    text-align:left;
+}
+
+/* Cover */
+[data-testid="playlist-page"] > div:first-of-type div:nth-child(2) {
+    background: linear-gradient(transparent,rgba(255, 255, 255, .5));
+}
+
+/* text colors */
+[data-testid="playlist-page"] > div:first-of-type span {
+color:#ffffff !important;}
+
+/* song count & duration 
 ._0462465b64c9df5f31f2601f892b57d3-scss, .f6a6c11d18da1af699a0464367e2189a-scss {color: hsla(0, 0%, 0%, .71);}
+*/
 
-/* description */
+[data-testid="playlist-page"] > div:first-of-type a[draggable="false"]{
+    color:white !important;
+}
+
+/* description 
 .main-view-container__scroll-node-child p span {color:#00000094;}
+*/
 
 
+/* =========== ARTIST PAGE =============== */
 
-/* =========== artist page =============== */
+.verifiedText {padding: 4px;position:relative;top:-6px;}
 
-[data-testid=topbar-content] a[aria-current=page], .contentSpacing a[aria-current=page] {background-color: #0000001c !important;}
+/* header */
+.verifiedBadge + span > h1 {color:white !important;}
 
 /* action-bar buttons */
-[data-testid="action-background-container"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]),
-.b49b68b14a1771a4cb36313f2b350e84-scss._2b37b3630aee3cbfc97689b5af341d60-scss,
-.content [data-testid="action-bar-row"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]) {
+div[data-testid="action-background-container"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]):not([title="Remove from Your Library"]),
+div[data-testid="action-bar-row"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]):not([title="Remove from Your Library"]) {
     font-size: 13px;
     color: #000;
     background-color: #ffffff00;
     border: 1px solid black;
 }
 
-.b49b68b14a1771a4cb36313f2b350e84-scss._2b37b3630aee3cbfc97689b5af341d60-scss:hover,
-.content [data-testid="action-bar-row"] button:not([aria-label=Play]):not([title="Save to Your Library"]):hover {background-color: #00000017; cursor:pointer ;}
 
-.verifiedBadge + span + span {color:#000;}
+/* action bar hover */
+div[data-testid="action-bar-row"] button:not([aria-label=Play]):not([title="Save to Your Library"]):hover {border-radius:4px ; background-color: #00000017; cursor:pointer ;}
+
+/*
+.verifiedBadge + span + span {color:#fff;}
+*/
+
+/* Offer Items */
+section[aria-label="Artist Playlists"] + div a:hover {background-color: #0000000a !important;}
+
+section[aria-label="Artist Playlists"] + div h3 {color: #373737 !important;}
+
 
 /* =========== album, podcast & playlist page =============== */
 
@@ -209,8 +245,10 @@ a.RootlistItem__link { color: #3e3e3e !important ;}
 [data-testid=topbar-content-wrapper] span {color:hsl(0deg 0% 43% / 70%);}
 
 /* hero */
+/*
 .main-view-container__scroll-node-child > section > div > div:nth-child(2)
 {background: linear-gradient(#ffffff00,rgba(255, 255, 255, .5));}
+*/
 
 .main-view-container__scroll-node-child section.content [data-testid="container"] {background: linear-gradient(#ffffff00,rgba(255, 255, 255, .5));}
 
@@ -324,7 +362,7 @@ nav.navBar {
 .tracklist-name {
     color: #000 !important;
 }
-section h1, .mo-info-name, .navBar-group-header {
+/*section h1,*/ .mo-info-name, .navBar-group-header {
     color: #333 !important;
 }
 .navBar-item .type, .inputBox-label {
