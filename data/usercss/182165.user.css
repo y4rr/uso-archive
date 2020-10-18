@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201018.0.53
+@version        20201018.2.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -2004,10 +2004,6 @@ Default Wallpaper:
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
     --RCRESReload: #5cc540 !important;
-
-
-    /*Default override - ignore*/
-    --newCommunityTheme-titleText: var(--RCPostTitle);
 }
 
 /* ----------------- BAK of Default Settings -----------------
@@ -2047,10 +2043,6 @@ Default Wallpaper:
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
     --RCRESReload: #5cc540 !important;
-
-
-    /*Default override - ignore*
-    --newCommunityTheme-titleText: var(--RCPostTitle);
 }
 ------------------------------------------------------------*/
 
@@ -2115,6 +2107,7 @@ body .content .thing .title.loggedin, body .content .thing .title,
 .kU8ebCMnbXfjCWfqn0WPb:hover,._6_44iTtZoeY6_XChKt5b0:hover
 {
     color:var(--RCPostTitle)!important;
+    --newCommunityTheme-titleText:var(--RCPostTitle)!important;
     transition:.4s;
 }
 
@@ -2189,6 +2182,7 @@ h2.whoaversename,
 .author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qovwsz86z55nz72zz87zijutz86zxiz66zaz86zuz89z1nrqy5dz86zz65zsz85z
 {
     color:var(--RCTextHeader)!important;
+    --newCommunityTheme-bodyText: var(--RCTextHeader)!important;
     fill:var(--RCTextHeader);
 }
 
@@ -2206,6 +2200,17 @@ h2.whoaversename,
 {
     color:var(--RCTextHeader)!important;
     background:#0000!important;
+}
+
+
+/*Sidebar Rules Expander*/
+._2FZY7HXlkf-PdemHbQoAEt ._36D5hmBSZbFxkFMkiWg6cY,._2FZY7HXlkf-PdemHbQoAEt .tbIApBd2DM_drfZQJjIum
+{
+    transition:.4s;
+}
+._2FZY7HXlkf-PdemHbQoAEt:hover ._36D5hmBSZbFxkFMkiWg6cY,._2FZY7HXlkf-PdemHbQoAEt:hover .tbIApBd2DM_drfZQJjIum
+{
+    text-decoration:underline!important;
 }
 
 
@@ -2277,7 +2282,6 @@ tbody td,
     background-color:transparent!important;
     border:none!important;
     color:var(--RCText)!important;
-    --newCommunityTheme-bodyText: var(--RCText)!important;
     transition:.4s!important;
 }
 
@@ -2654,6 +2658,7 @@ a.title.may-blank:active,
 .link:hover > .entry .flat-list a:active,
 .link .tagline a:active,
 .search-link.may-blank:active,
+._2FZY7HXlkf-PdemHbQoAEt:active ._36D5hmBSZbFxkFMkiWg6cY,._2FZY7HXlkf-PdemHbQoAEt:active .tbIApBd2DM_drfZQJjIum,
 ._eYtD2XCVieq6emjKBH3m:active
 {
     filter:brightness(0.6);
@@ -3386,6 +3391,7 @@ table#srList[style="display: block;"],
 ._197SqY-gDtObhzjz9SlSEp,
 ._1HSQGYlfPWzs40LP4_oFi5,
 ._1i-ndNsTQtNr82sMJ0renj,
+._1LEks0EGX8JP8wFUs2r1Gd,
 ._1MHCyMQAMeqRqf5DPWWeq3,
 ._1T423RClx-mTPxfuiCw4UN,
 ._2Bejocqb-InO8686E2ehf,
@@ -3819,6 +3825,7 @@ body.res .RES-keyNav-activeElement,
 .SidebarNav__item.m-selected .SidebarNav__title,
 ._10errIUo7wzwfnjkiqXfXP:hover,
 ._1eQr_TkUOm6M6XqM8GTZqp,._1eQr_TkUOm6M6XqM8GTZqp::before,._3p0xqZowgYYjYMOdinU151:hover,
+._1LEks0EGX8JP8wFUs2r1Gd:hover,
 ._1p4TpHzWWRAkGYYw9_jU-B:hover,
 ._1YWXCINvcuU7nk0ED-bta8:hover,
 ._1YWXCINvcuU7nk0ED-bta8:focus,
@@ -3858,11 +3865,13 @@ body.res .RES-keyNav-activeElement,
     transition:0s!important;
 }
 /*New Reddit Menu - Left - Icons*/
+._2MgAHlPDdKvXiG-Qbz5cbC>img,
 ._2MgAHlPDdKvXiG-Qbz5cbC>svg
 {
     filter:brightness(.75)!important;
     transition:.4s!important;
 }
+._2MgAHlPDdKvXiG-Qbz5cbC:hover>img,
 ._2MgAHlPDdKvXiG-Qbz5cbC:hover>svg
 {
     filter:brightness(1)!important;
@@ -3961,6 +3970,7 @@ li.sr-name-row.sr-selected:active,
 .Header__tooltipItem:active,
 ._10errIUo7wzwfnjkiqXfXP:active,
 ._1eQr_TkUOm6M6XqM8GTZqp,._1eQr_TkUOm6M6XqM8GTZqp::before,._3p0xqZowgYYjYMOdinU151:active,
+._1LEks0EGX8JP8wFUs2r1Gd:active,
 ._1p4TpHzWWRAkGYYw9_jU-B:active,
 ._1YWXCINvcuU7nk0ED-bta8:active,
 ._27e9yld2jAIIWQNc4A70if:active,
@@ -5631,36 +5641,72 @@ label._3tm-97fb8noV8kwxNOON_9:active
 * svg
 {
     filter:saturate(.8)brightness(.75)contrast(.8)!important;
+    /*transition: .4s !important;*/
 }
 
 * svg:hover,
 .quarantine #header-img.default-header:hover
 {
-    filter:saturate(1)brightness(1)contrast(1)!important;
+    filter:saturate(1)brightness(1.25)contrast(1)!important;
     transition: .2s !important;
 }
 * svg:after,
 * svg:focus
 {
     filter:saturate(1)brightness(1.25)contrast(1)!important;
-    transition: .4s !important;
+    transition:.4s!important;
 }
 
 /*New Reddit Top Bar Button Icons*/
-._1vXXD2qKLnHetdKvisFzBD ._3dZnYgFFpifT-M_Vs2FAq6 > svg,
-.FOioVk_DUTmZIKKa82Mm1 > svg,
-._1x6pySZ2CoUnAfsFhGe7J1 > svg
+._1vXXD2qKLnHetdKvisFzBD ._3dZnYgFFpifT-M_Vs2FAq6>svg,
+.FOioVk_DUTmZIKKa82Mm1>svg,
+._1x6pySZ2CoUnAfsFhGe7J1>svg
 {
-    filter: brightness(2) !important;
-    transition: .2s !important;
+    filter:brightness(2)!important;
+    transition:.2s!important;
 }
-._1vXXD2qKLnHetdKvisFzBD ._3dZnYgFFpifT-M_Vs2FAq6:hover > svg,
-.FOioVk_DUTmZIKKa82Mm1:hover > svg,
-._1x6pySZ2CoUnAfsFhGe7J1:hover > svg
+._1vXXD2qKLnHetdKvisFzBD ._3dZnYgFFpifT-M_Vs2FAq6:hover>svg,
+.FOioVk_DUTmZIKKa82Mm1:hover>svg,
+._1x6pySZ2CoUnAfsFhGe7J1:hover>svg
 {
-    filter: brightness(4) !important;
-    transition: .2s !important;
+    filter:brightness(4)!important;
+    transition:.2s!important;
 }
+
+/*General svg & img tweaks for menus & the like*/
+._3-m5rOa3loUClNwpCv1uWU,
+._3GFjQrq7t7DpW__ZFpU7xf,
+.n08B7PrU01wzgZYIh-s7N,
+.h-jI8r2f9ozTNqu_2TBeY,
+._2ARwkAW45Urhf_fMfAMi5_ img
+{
+    transition:.4s!important;
+}
+._3-m5rOa3loUClNwpCv1uWU:hover,
+._3GFjQrq7t7DpW__ZFpU7xf:hover,
+.h-jI8r2f9ozTNqu_2TBeY:hover
+{
+    transition:.2s!important;
+}
+.h-jI8r2f9ozTNqu_2TBeY > svg
+{
+    filter:brightness(.75)!important;
+    transition:.4s!important;
+}
+.n08B7PrU01wzgZYIh-s7N:hover,
+.h-jI8r2f9ozTNqu_2TBeY:hover>svg,
+._2ARwkAW45Urhf_fMfAMi5_:hover img
+{
+    filter:brightness(1.25)!important;
+    transition:.2s!important;
+}
+.n08B7PrU01wzgZYIh-s7N:active,
+.h-jI8r2f9ozTNqu_2TBeY:active
+{
+    filter:brightness(.6)!important;
+    transition:0s!important;
+}
+
 
 .logo,
 .site-logo
@@ -5708,7 +5754,7 @@ div.post div.file .fileThumb .fileDeletedRes:hover
 }
 
 /*On-click*/
-svg:active,
+* svg:active,
 .logo:active,
 .quarantine #header-img.default-header:active,
 .site-logo:active,

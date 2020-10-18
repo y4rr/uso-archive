@@ -2,60 +2,63 @@
 @name           Berny23's YouTube Enhancements
 @namespace      USO Archive
 @author         Berny23
-@description    `Changes the big new thumbnails back to the old ones.`
-@version        20201016.22.58
+@description    `Changes the big new thumbnails back to the old ones. Also reverts some other annoying changes.`
+@version        20201018.9.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 /*
-* Berny23's YouTube Enhancements v2.0
+* Berny23's YouTube Enhancements v2.1
 */
-
 ytd-rich-item-renderer {
-    margin-right: 4px;
-    display: inline-block;
-    width: 210px;
-    margin-bottom: 24px;
+	margin-right: 4px;
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 24px;
 }
 
 #avatar-link {
-    display: none;
+	display: none;
 }
 
 #video-title {
-    font-size: 1.4rem !important;
+	font-size: 1.4rem !important;
 }
 
 #channel-name.ytd-video-meta-block {
-    font-size: 1.3rem !important;
+	font-size: 1.3rem !important;
 }
 
 #metadata-line {
-    font-size: 1.3rem !important;
+	font-size: 1.3rem !important;
 }
 
-.ytd-mini-guide-renderer {
-    display: none;
+ytd-mini-guide-renderer {
+	display: none;
 }
 
 #contents {
-    width: auto !important;
-    max-width: 1332px !important;
-}
-
-.ytd-two-column-search-results-renderer ytd-thumbnail {
 	width: auto !important;
-	max-width: 246px !important;
-	height: 138px !important;
+	max-width: 1332px !important;
 }
 
-.ytd-two-column-search-results-renderer {
+ytd-two-column-search-results-renderer ytd-thumbnail:not(.ytd-movie-renderer), ytd-playlist-thumbnail {
+	max-width: 246px !important;
+	max-height: 138px !important;
+}
+
+.thumbnail-container {
+	min-width: 246px !important;
+	max-width: 0px !important;
+}
+
+ytd-two-column-search-results-renderer {
 	width: auto !important;
 	max-width: 862px !important;
 }
 
-ytd-page-manager.ytd-app {
+ytd-app[mini-guide-visible_] ytd-page-manager.ytd-app {
 	margin-left: 0px !important;
 }
 }

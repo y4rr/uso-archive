@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの全てのブログページで、ページ主要部のフォントを「メイリオ」にします。 　◎ブログタイトル部分はページのデザインを尊重してフォントを変更しません。　◎本文部分やサイドメニュー部分の範囲をメイリオ優先で表示し、可読性を向上させます。　◎スタイルの適用時、amebloヘッダーに修飾をしている事を表示します。　◎修飾表示のデザインは、オプションで10種の組み合わせから選ぶ事が出来ます。　◎HTMLの新/旧タイプに適応します。このスタイルは、Chrome/Firefox版の「Stylus」で使用可能です。`
-@version        20201014.22.43
+@version        20201018.2.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("ameblo.jp"), domain("news.ameba.jp"), domain("secret.ameba.jp") {
-/* Ameblo Force Meiryo  ver.2020.10.15 */
+@-moz-document domain("ameblo.jp") {
+/* Ameblo Force Meiryo  ver.2020.10.18 */
 /* ブログ主要部のフォント指定 **********/
 button,
 input,
@@ -40,9 +40,13 @@ img[src*=char3] {
 /* twemoji位置補正 */
 img[src*="twemoji"] {
     vertical-align: -2px !important; }
+
+/* いいね！ボタンの崩れ防止 */
+[data-uranus-icon="iine large hasLabel"] {
+    margin-right: 0; }
 }
 
-@-moz-document domain("ameblo.jp"), domain("news.ameba.jp"), domain("secret.ameba.jp") {
+@-moz-document domain("ameblo.jp") {
 /* 修飾表示 文字白・背景赤 ************/
 ._3kPhu1PI {
     padding: 0 60px 0 0; }
@@ -72,7 +76,7 @@ img[src*="twemoji"] {
     background: red; }
 }
 
-@-moz-document regexp("ameblo.jp"), regexp("news.ameba.jp"), regexp("secret.ameba.jp") {
+@-moz-document regexp("ameblo.jp") {
 /* 修飾表示 文字赤・背景白 ************/
 ._3kPhu1PI {
     padding: 0 60px 0 0; }
@@ -102,7 +106,7 @@ img[src*="twemoji"] {
     background: #fff; }
 }
 
-@-moz-document regexp("ameblo.jp"), regexp("news.ameba.jp"), regexp("secret.ameba.jp") {
+@-moz-document regexp("ameblo.jp") {
 /* 修飾表示 文字グレー・背景白 *********/
 ._3kPhu1PI {
     padding: 0 60px 0 0; }
@@ -132,7 +136,7 @@ img[src*="twemoji"] {
     background: #fff; }
 }
 
-@-moz-document regexp("ameblo.jp"), regexp("news.ameba.jp"), regexp("secret.ameba.jp") {
+@-moz-document regexp("ameblo.jp") {
 /* 修飾表示 文字白・背景黒 ************/
 ._3kPhu1PI {
     padding: 0 60px 0 0; }

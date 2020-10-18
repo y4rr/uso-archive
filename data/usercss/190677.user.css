@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Coordinates
 @description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.`
-@version        20201017.20.28
+@version        20201018.9.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,6 +21,9 @@
 	--accent-color: #11BB66;
 	--border-radius: 5px;
 }
+
+/* SELECTORS */
+
 ::placeholder {
 	color: var(--tertiary-text-color);
 	opacity: 0.7;
@@ -139,6 +142,12 @@ button:active {
 .releases-header h2 {
 	padding: 0px;
 }
+.releases-header h2::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	margin-right: 10px;
+	content: "\f254";
+}
 .releases-header form {
 	margin-left: 0px;
 }
@@ -187,6 +196,11 @@ input.search-box-input:focus {
 	background-color: var(--primary-text-color);
 	color: var(--accent-color);
 }
+#preview-image-plugin-overlay {
+	background-color: var(--secondary-bg-color) !important;
+	border-color: var(--tertiary-bg-color) !important;
+	transition: none;
+}
 
 /* BODY: Sidebar */ 
 
@@ -194,6 +208,21 @@ input.search-box-input:focus {
 	background: var(--secondary-bg-color);
 	border-radius: var(--border-radius);
 	margin-bottom: 30px;
+}
+.sidebar > h2::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	margin-right: 10px;
+	content: "\f017";
+}
+#current-time + h2::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	margin-right: 10px;
+	content: "\f073";
+}
+.wc_time {
+	margin-left: 5px;
 }
 img.emoji {
 	filter: invert(100%);

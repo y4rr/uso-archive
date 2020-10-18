@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         四月一日 雷
 @description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。ニコられたコメントのコメント背景色をカスタムできるようになっています。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去は本CSSでしているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合はこのサイト上でフィートバックを残していただくか<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        20201016.17.37
+@version        20201018.9.18
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -76,10 +76,10 @@ display:none;
 } EOT;
 
 }
-@advanced color ------1 "ニコるランク1の色（1~3？)" #7F68CA
-@advanced color ------2 "ニコるランク2の色(4~5？）" #6B2CA0
-@advanced color ------3 "ニコるランク3の色(6~8？)" #561B92
-@advanced color ------4 "ニコるランク4の色(9+？）" #9B0EB0
+@advanced color ------1 "ニコるランク1の色（1~2)" #7F68CA
+@advanced color ------2 "ニコるランク2の色(3~5）" #6B2CA0
+@advanced color ------3 "ニコるランク3の色(6~7？)" #561B92
+@advanced color ------4 "ニコるランク4の色(8以上？）" #9B0EB0
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {

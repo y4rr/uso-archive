@@ -3,17 +3,18 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログのブログページで、記事掲載の画像とYouTube動画を簡単に拡大表示出来ます。画像は、クリックで暗転背景で拡大表示され、アメブロヘッダーをクリックして記事に戻ります。 拡大率が高くしかも画像一覧を開くより素早く元に戻る事ができます。YouTube動画はマウスフォバーでウインドウ内で拡大表示します。 これはオプションで無効にできます。 詳しくは、以下のページを参照ください。https://ameblo.jp/personwritep/entry-12427433383.htmlhttps://ameblo.jp/personwritep/entry-12427964097.htmlhttps://ameblo.jp/personwritep/entry-12428123493.html`
-@version        20201012.22.58
+@version        20201018.4.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp") {
-/* Ameblo Lightbox ver.2020.10.12  **************************/
+/* Ameblo Lightbox ver.2020.10.18  **************************/
 /* サイドバーの要素などが暗転時に表示されるのを抑止 */
+/*
 #primary {
     position: relative;
     z-index: 1; }
-
+*/
 #main {
     position: relative;
     z-index: 10; }
