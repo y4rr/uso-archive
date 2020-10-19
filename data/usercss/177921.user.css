@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ZJRmXXQq3s
 @description    `Resized some things, moved other thing a little, painted some icons for ease of use.Also having Open Sans font installed on your machine will make it look way nicer.`
-@version        20201016.17.56
+@version        20201018.23.2
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,11 +27,13 @@ body {
 /* shrink sidebar */
 .sidebar {
 	width: var(--width-sidebar, 10%);
+    min-width: 150px;
 }
 
 /* shrink conversations list */
 .items-column-list {
 	width: var(--width-conversation-column, 30%);
+    min-width: 400px;
 }
 
 /* make New Emails counter tooltip background dimmer, simple indicator is enough */

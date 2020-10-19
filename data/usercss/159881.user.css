@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201017.18.34
+@version        20201018.18.9
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2543,12 +2543,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 [dir] body.new_header_design .top_nav_btn .top_notify_count {
-	border-color: hsl(0, 60%, 50%);
-	border-color: hsl(13, 100%, 65%);
+/* 	border-color: hsl(13, 100%, 65%); */
+	border-color: #1c2634;
 }
 [dir] body.new_header_design .top_nav_btn:hover .top_notify_count::after {
 /*     border-color: var(--steel_gray_20); */
-	border-color: hsl(13, 100%, 65%);
+/* 	border-color: hsl(13, 100%, 65%); */
 }
 
 /* Увеличенное пространство для названия трека */

@@ -3,42 +3,27 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201018.2.7
+@version        20201019.0.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
 @advanced dropdown Wallpaper "Wallpaper - One order of magnitude above native resolution recommended (for zoom purposes)" {
-	WPBlackWoodQHD "Black Wood - 1440*" <<<EOT html[class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
-._1npCwF50X2J7Wt82SZi6J0,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-        
-        url("https://i.redd.it/sph92752zc351.jpg")
-        
-	    var(--RCBackground) fixed !important;
-    
-    --pseudo-before-background:
-        
-        url("https://i.redd.it/sph92752zc351.jpg")
-        
-	    var(--RCBackground) fixed !important;
-}
+	WPColour "None*" <<<EOT /*[None] (Colour only)*\/
 
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="loggedin"][class*="res-v"]
+/* Options available *\/
+
+/*
+:root
 {
-    background:
-        
-        url("https://i.redd.it/sph92752zc351.jpg")
-        
-        #0000 fixed !important;
-} EOT;
-WPColour "None" <<<EOT html[class*="res-v"],
+    --RCWPURL: url("INSERT_URL_HERE");
+
+    or
+
+    --RCWPBASE64: url("data:image/png;base64,INSERT_BASE64-CODE_HERE");
+}
+*\/
+
+html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 html,
@@ -46,38 +31,54 @@ html,
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
+
+        /*Choose one:*\/
         
-        /*url("data:image/jpeg;base64,BASE64-CODE_HERE")
+        /*var(--RCWPURL)
 
         or
 
-        url("INSERT_URL_HERE")*\/
+        /*var(--RCWPBASE64)*\/
         
-	    var(--RCBackground) /*fixed*\/ !important;
+	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
 
    --pseudo-before-background:
-        
-        /*url("INSERT_SAME_URL_HERE")*\/
-        
-	    var(--RCBackground) /*fixed*\/ !important;
-}
 
-
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="loggedin"][class*="res-v"]
-{
-    background:
-        
-        /*url("data:image/jpeg;base64,SAME_BASE64-CODE_HERE")
+        /*Choose one:*\/
+       
+        /*var(--RCWPURL)
 
         or
 
-        url("INSERT_SAME_URL_HERE")*\/
+        /*var(--RCWPBASE64)*\/
         
-        #0000 /*fixed*\/ !important;
+	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
+}
+
+body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="loggedin"][class*="res-v"]
+{
+    background:
+
+        /*Choose one:*\/
+        
+        /*var(--RCWPURL)
+
+        or
+
+        /*var(--RCWPBASE64)*\/
+        
+        #0000 /*if WP is on, enable--->*\/ /*fixed*\/ !important;
 } EOT;
-WPBlackWood1K "Black Wood - 1080" <<<EOT html[class*="res-v"],
+WPBlackWood1K "Black Wood - 1K (1920 x 1080)" <<<EOT /*[Black Wood - 1K (1920 x 1080)]*\/
+
+:root
+{
+    --RCWPURL: url("https://i.redd.it/5hvfny0bxh151.jpg");
+}
+
+html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 html,
@@ -85,14 +86,14 @@ html,
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
-        
-        url("https://i.redd.it/5hvfny0bxh151.jpg")
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
-    
-    --pseudo-before-background:
-        
-        url("https://i.redd.it/sph92752zc351.jpg")
+
+   --pseudo-before-background:
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
 }
@@ -102,12 +103,19 @@ body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"]
 {
     background:
-        
-        url("https://i.redd.it/5hvfny0bxh151.jpg")
-        
+
+        var(--RCWPURL)
+
         #0000 fixed !important;
 } EOT;
-WPBlackWood2K "Black Wood - 2160" <<<EOT html[class*="res-v"],
+WPBlackWoodQHD "Black Wood - QHD (2560 x 1440)" <<<EOT /*[Black Wood - QHD (2560 x 1440)]*\/
+
+:root
+{
+    --RCWPURL: url("https://i.redd.it/sph92752zc351.jpg");
+}
+
+html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 html,
@@ -115,14 +123,14 @@ html,
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
-        
-        url("https://i.redd.it/p7grzmgozc351.jpg")
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
-    
-    --pseudo-before-background:
-        
-        url("https://i.redd.it/p7grzmgozc351.jpg")
+
+   --pseudo-before-background:
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
 }
@@ -132,12 +140,19 @@ body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"]
 {
     background:
-        
-        url("https://i.redd.it/p7grzmgozc351.jpg")
-        
+
+        var(--RCWPURL)
+
         #0000 fixed !important;
 } EOT;
-WPBlackWood4K "Black Wood - 4320" <<<EOT html[class*="res-v"],
+WPBlackWood4K "Black Wood - 4K (3840 x 2160)" <<<EOT /*[Black Wood - 4K (3840 x 2160)]*\/
+
+:root
+{
+    --RCWPURL: url("https://i.redd.it/p7grzmgozc351.jpg");
+}
+
+html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 html,
@@ -145,14 +160,14 @@ html,
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
-        
-        url("https://i.redd.it/0lq1kpp10d351.jpg")
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
-    
-    --pseudo-before-background:
-        
-        url("https://i.redd.it/0lq1kpp10d351.jpg")
+
+   --pseudo-before-background:
+
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
 }
@@ -162,9 +177,136 @@ body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"]
 {
     background:
+
+        var(--RCWPURL)
+
+        #0000 fixed !important;
+} EOT;
+WPBlackWood8K "Black Wood - 8K (7680 x 4320)" <<<EOT /*[Black Wood - 8K (7680 x 4320)]*\/
+
+:root
+{
+    --RCWPURL: url("https://i.redd.it/0lq1kpp10d351.jpg");
+}
+
+html[class*="res-v"],
+html[class*="accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+html,
+._1npCwF50X2J7Wt82SZi6J0,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+{
+    background:
+
+        var(--RCWPURL)
         
-        url("https://i.redd.it/0lq1kpp10d351.jpg")
+	    var(--RCBackground) fixed !important;
+
+   --pseudo-before-background:
+
+        var(--RCWPURL)
         
+	    var(--RCBackground) fixed !important;
+}
+
+body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="loggedin"][class*="res-v"]
+{
+    background:
+
+        var(--RCWPURL)
+
+        #0000 fixed !important;
+} EOT;
+WPBlackWood16K "Black Wood - 16K (15360 x 7860)" <<<EOT /*[Black Wood - 16K (15360 x 7860)]*\/
+
+:root
+{
+    --RCWPURL: url("https://i.redd.it/1t1w6y51qxt51.jpg");
+}
+
+html[class*="res-v"],
+html[class*="accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+html,
+._1npCwF50X2J7Wt82SZi6J0,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+{
+    background:
+
+        var(--RCWPURL)
+        
+	    var(--RCBackground) fixed !important;
+
+   --pseudo-before-background:
+
+        var(--RCWPURL)
+        
+	    var(--RCBackground) fixed !important;
+}
+
+body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="loggedin"][class*="res-v"]
+{
+    background:
+
+        var(--RCWPURL)
+
+        #0000 fixed !important;
+} EOT;
+WPBASE64 "BASE64 - (Inject in Code #1)" <<<EOT /*[Manual BASE64 Setup]*\/
+
+/*
+Download any image, and convert to BASE64 via
+
+    1) https://base64.guru/
+    2) https://www.base64encode.net/base64-image-encoder
+
+Remember to check what file-type is used.
+
+Inject both values in the url below
+*\/
+
+:root
+{
+    --RCWPBASE64: url("data:image/jpeg;base64,BASE64-CODE_HERE");
+}
+
+/*And that's it*\/
+
+
+/* =================== Wallpaper Defaults =================== *\/
+
+html[class*="res-v"],
+html[class*="accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+html,
+._1npCwF50X2J7Wt82SZi6J0,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+{
+    background:
+
+        var(--RCWPBASE64)
+
+        var(--RCBackground) fixed !important;
+
+    --pseudo-before-background:
+        
+        var(--RCWPBASE64)
+        
+	    var(--RCBackground) fixed !important;
+}
+
+body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="loggedin"][class*="res-v"]
+{
+    background:
+
+        var(--RCWPBASE64)
+
         #0000 fixed !important;
 } EOT;
 
@@ -1643,7 +1785,7 @@ RCUpdating09 "This is merely an announcement due to character-limitations below.
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating10 "Pick any option to have this list added to the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating10 "Pick any option to have this list added at the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -1709,10 +1851,16 @@ Manual installation of custom Wallpaper:
 
 
 Wallpaper Formats:
-===============================================================
+--------------------------------------------------------------
 
 Recommended: BASE64 setup
 (Non-url images leave no digital footprints):
+
+
+:root
+{
+    --RCWPBASE64: url("data:image/png;base64,INSERT_BASE64-CODE_HERE");
+}
 
 html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
@@ -1723,13 +1871,13 @@ html,
 {
     background:
 
-        url("data:image/png;base64,BASE64-CODE_HERE")
+        var(--RCWPBASE64)
 
         var(--RCBackground) fixed !important;
 
     --pseudo-before-background:
         
-        url("data:image/png;base64,SAME_BASE64-CODE_HERE")
+        var(--RCWPBASE64)
         
 	    var(--RCBackground) fixed !important;
 }
@@ -1740,29 +1888,43 @@ body[class*="loggedin"][class*="res-v"]
 {
     background:
 
-        url("data:image/png;base64,SAME_BASE64-CODE_HERE")
+        var(--RCWPBASE64)
 
         #0000 fixed !important;
 }
 
----------------------------------------------------------------
+===============================================================
 
-Online Tool for image to BASE64 conversion:
+Online Tools for image to BASE64 conversion:
 
-    https://www.base64encode.net/base64-image-encoder
+    1) https://base64.guru/
+    2) https://www.base64encode.net/base64-image-encoder
 
 
 Formats:
 
-Base64 encoding (non-url):
+Base64 encodings (non-url):
 
     url("data:image/jpeg;base64,BASE64-CODE_HERE") !important;
     url("data:image/bmp;base64,BASE64-CODE_HERE") !important;
     url("data:image/png;base64,BASE64-CODE_HERE") !important;
 
+other formats works also (though less used as wallpaper), such as 
+
+    GIF
+    ICO (x-icon)
+    SVG
+    WebP
+
 ===============================================================
 
-url as wallpaper:
+regular url as wallpaper:
+
+
+:root
+{
+    --RCWPURL: url("INSERT_URL_HERE");
+}
 
 html[class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
@@ -1773,13 +1935,13 @@ html,
 {
     background:
 
-        url("INSERT_URL_HERE")
+        var(--RCWPURL)
 
         var(--RCBackground) fixed !important;
 
     --pseudo-before-background:
         
-        url("INSERT_SAME_URL_HERE")
+        var(--RCWPURL)
         
 	    var(--RCBackground) fixed !important;
 }
@@ -1790,14 +1952,14 @@ body[class*="loggedin"][class*="res-v"]
 {
     background:
 
-        url("INSERT_SAME_URL_HERE")
+        var(--RCWPURL)
 
         #0000 fixed !important;
 }
 
 ===============================================================
 
-Wallpaper fixed in place:
+Wallpaper fixed in place (standard for this theme):
 
     background: url("INSERT_URL_HERE") fixed !important;
 
@@ -1806,31 +1968,54 @@ Wallpaper scrolls with content:
 
     background: url("INSERT_URL_HERE") !important;
 
+
+Wallpaper consisting of repeating tiles:
+
+    background: url("INSERT_URL_HERE") repeat !important;
+
+More on this particular setup (tiles):
+https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
+
 ===============================================================
 
-Default Wallpaper:
+Default Wallpapers:
 
-    1080:
+    1K - (1920x1080):
     https://i.redd.it/5hvfny0bxh151.jpg
     https://i.imgur.com/VufPGLE.jpg
     https://abload.de/img/blackwood-darkenedflizfk36.jpg
     
-    1440:
+    QHD - (2560x1440):
     https://i.redd.it/sph92752zc351.jpg
 
-    2160:
+    4K - (3840x2160):
     https://i.redd.it/p7grzmgozc351.jpg
 
-    4320:
+    8K - (7680x4320):
     https://i.redd.it/0lq1kpp10d351.jpg
 
+    16K - (15360x7860):
+    https://i.redd.it/1t1w6y51qxt51.jpg
 
-=============================================================*/
+
+All are available for download (needed if converting to BASE64):
+
+    1) https://old.reddit.com/r/KMV
+    2) https:archive.org/details/KMV-Resources
+
+
+/* ========================================================= */
+/* |                       Wallpaper                       | */
+/* ========================================================= */
+
+/*Default HTML Background Colour*/
 
 :root
 {
     --RCBackground: /*[[Background]]*/;
 }
+
+/* ===================== Option chosen ===================== */
 
 /*[[Wallpaper]]*/
 
@@ -1840,15 +2025,25 @@ Default Wallpaper:
 
 /*[[WPBlackWoodQHD]]*/
 
-/*[[WPBlackWood2K]]*/
-
 /*[[WPBlackWood4K]]*/
 
+/*[[WPBlackWood8K]]*/
+
+/*[[WPBlackWood16K]]*/
+
+/*[[WPBASE64]]*/
 
 
-/* ======================== OPTIONS ======================== */
+/* =============== End of Wallpaper Settings =============== */
 
-/* ----------------------- Media dim ----------------------- */
+
+/*___________________________________________________________*/
+
+
+                          /*OPTIONS*/
+
+
+/* ======================= Media dim ======================= */
 
 /*[[RCNightmode]]*/
 
@@ -1857,7 +2052,7 @@ Default Wallpaper:
 /*[[RCMediaDim]]*/
 
 
-/* --------------------- Award Removal --------------------- */
+/* ===================== Award Removal ===================== */
 
 /*[[RCAwards]]*/
 
@@ -1866,7 +2061,7 @@ Default Wallpaper:
 /*[[RCNoGold]]*/
 
 
-/* --------------------- Post Spacing --------------------- */
+/* ===================== Post Spacing ===================== */
 
 /*[[RCPostHeight]]*/
 
@@ -1903,7 +2098,7 @@ Default Wallpaper:
 /*[[RCPostH-15]]*/
 
 
-/* ----------------- E-Mail Request Popup ----------------- */
+/* ================= E-Mail Request Popup ================= */
 
 /*[[EmailRemoval]]*/
 
@@ -1912,7 +2107,7 @@ Default Wallpaper:
 /*[[EmailNo]]*/
 
 
-/* ---------------------- Ad Removal ---------------------- */
+/* ====================== Ad Removal ====================== */
 
 /*[[RCAds]]*/
 
@@ -1925,7 +2120,7 @@ Default Wallpaper:
 /*[[RCPromosOnly]]*/
 
 
-/* ------------------ Reddit Score Hider ------------------ */
+/* ================== Reddit Score Hider ================== */
 
 /*[[RCScores]]*/
 
@@ -1934,7 +2129,7 @@ Default Wallpaper:
 /*[[RCScoresDisabled]]*/
 
 
-/* ----------------------- Updating ----------------------- */
+/* ======================= Updating ======================= */
 
 /*[[RCUpdating]]*/
 
@@ -2175,6 +2370,7 @@ h2.whoaversename,
 ._3IMnOO5YHH-N0YB3yfV2Ha,
 ._3mrrZsVUDI2b3p1rpkjbph._2pZswNTz_uW46hN02djL7j:hover,
 ._3O03kg0NTHcVFAyOQNoptz,
+._4cdfLigUWzeeVcPzzbe78,
 ._7JH6kQpO-bx66b9ajIZrz,
 ._FryWXes2c2GhZzBHd7Rz,
 .Nt8TnDvJ2BsL8KWcFQKy5,
@@ -3302,6 +3498,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 ._1oYEKCssGFjqxQ9jJMNj5G,
 ._2-aCCpAklEV0DkVWrpodjE._2-cUhM9bP2B5FPfQsDLJGR,
 ._2dqCXnStO_Dc8Srt_lJqVj._35hmSCjPO8OEezK36eUXpk,
+._2lgyQv1Xe7SzrqkbUeaEFL,
 .cx1ohrUAq6ARaXTX2u8YN,
 ._m7PpFuKATP9fZF4xKf9R
 {
@@ -4597,14 +4794,17 @@ span.res-fancy-toggle-button.RESshortcutside,
 }
 
 
-/*Solid Buttons*/
+/*Solid - Buttons Only*/
 
-._1ekaLCxKd98FlrNC_Oo2rT,
 .combined-search-page .search-page
+._1ekaLCxKd98FlrNC_Oo2rT,
+._32kofHIEwuARK_15MrzAuT
 {
     background-color:var(--RCButton)!important;
 }
 
+
+/*Standard Buttons*/
 
 html body center div#HEADER table tbody tr td a,
 html body center div#SOLID div#CONTENT div.html1 div.html div.body div div div div a:hover,
@@ -4653,6 +4853,7 @@ label._3tm-97fb8noV8kwxNOON_9
     transition:.4s!important;
 }
 
+
 /*Flag-Button on Awards:hover Popup*/
 ._1l-7KCSHWOZOMW8AwEn6sF
 {
@@ -4690,17 +4891,6 @@ label._3tm-97fb8noV8kwxNOON_9
 .guiders_button
 {
     background:var(--RCButtonHover)!important;
-}
-
-
-/*Button Hover with Border*/
-xxx:hover
-{
-    background-color:var(--RCButton)!important;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow);
-    border-radius:4px!important;
-    transition-delay:.2s!important;
-    transition:.4s;
 }
 
 
@@ -4782,6 +4972,16 @@ label._3tm-97fb8noV8kwxNOON_9:hover
     background:var(--RCButtonHover)!important;
     background-color:var(--RCButtonHover)!important;
     color:var(--RCButtonHoverText)!important;
+    transition:.2s!important;
+}
+
+
+/*Button Hover with Border*/
+._32kofHIEwuARK_15MrzAuT:hover
+{
+    background-color:var(--RCButton)!important;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow);
+    filter:brightness(2);
     transition:.2s!important;
 }
 
@@ -5607,7 +5807,7 @@ span.res-fancy-toggle-button.RESshortcutside:active,
 .wLV79_wV-ziNiWmf3Y7OV.j5ti73p7EAjBJvJlSjppe:active,
 label._3tm-97fb8noV8kwxNOON_9:active
 {
-    filter:brightness(0.6);
+    filter:brightness(0.6)!important;
     transition:0s!important;
 }
 
@@ -5638,10 +5838,11 @@ label._3tm-97fb8noV8kwxNOON_9:active
     transition: .4s !important;
 }
 
-* svg
+* svg,
+.fzTkuBRFT8iIn1XnJX_Yn:hover
 {
     filter:saturate(.8)brightness(.75)contrast(.8)!important;
-    /*transition: .4s !important;*/
+    transition: .4s !important;
 }
 
 * svg:hover,
@@ -7197,33 +7398,6 @@ body
 }
 
 
-/*Main Cursor - Forced*/
-
-input,
-p,
-ul,
-[class*="volume"],
-[class*="Volume"],
-#siteTable.sitetable.linklisting,
-#srList thead td,
-.choice:hover,
-ul.flat-list.buttons,
-.entry.unvoted div.expando,
-.jwplayer.jw-stretch-uniform video,
-.listing-page .link,
-.res-nightmode .link,
-.SidebarNav__item:hover,
-.SidebarCommunity__selectedIcon:hover,.SidebarCommunity__blankIcon:hover,.SidebarCommunity__name.m-selected:hover,
-.SidebarNav__icon:hover,.SidebarNav__title:hover,
-._1vyLCp-v-tE5QvZovwrASa,
-._3QOPLw8PZipW3i8kDxod81,
-._3UEq__yL-82zX4EyuluREz,
-._3IYkqm44eWg992tFnELzuW._3nTkqMMtsoqxVmhplDRef3
-{
-  cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/eX9/f3w/f39yz///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397glJSXM9/f3w/f39yz///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAoKCswlJSXM9/f3w/f39ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4BwcHzAoKCswlJSXM9/f3w/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gEBATMBwcHzAoKCswlJSXM9/f3w/f395f39/eX9/f3l/f395f39/eX9/f3l////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwZGRnMHR0dzDU1Ncz39/eX////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwvLy/M9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAICAswEBATMBwcHzAoKCswODg7MKCgozPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzAICAswEBATMBwcHzCIiIsz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwAAADMAAAAzAICAswcHBzM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAAAAMwAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwZGRnM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e49/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397j39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////////////////////////////////////////////////////////////////////////////////P////x////8P////B////wAP//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8="), default !important;
-}
-
-
 /* Hover */
 
 [class*="Click"]:hover:after,
@@ -7714,6 +7888,35 @@ circle:active,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYL
 {
   cursor: url("data:image/png;base64,AAACAAEAGhoAAAUAAABoBwAAFgAAACgAAAAaAAAANAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGRkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAQEAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAEBAQABAAABAAABAAABAAABAAAAAAAAAAAAAAAAAAAAAQAAAQAAAQAAAQABAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAEAAAEBAAAAAAAAAAAAAAAAAAAAAAABAAABAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////A////wP///8D////A+AH/wPgB/8D4Af/A8AD/wPAA/8DgAP/A4AB/wMAAf8DAAH/AgAB/wAAAf8AAAH/AEAB/wPAA/8DwAf/A8Af/wPA//8D5///A////wP///8D////A////wA=="), default !important;
 }
+
+
+/*Main Cursor - Forced*/
+
+input,
+p,
+ul,
+[class*="volume"],
+[class*="Volume"],
+#siteTable.sitetable.linklisting,
+#srList thead td,
+.choice:hover,
+ul.flat-list.buttons,
+.entry.unvoted div.expando,
+.jwplayer.jw-stretch-uniform video,
+.listing-page .link,
+.res-nightmode .link,
+.SidebarNav__item:hover,
+.SidebarCommunity__selectedIcon:hover,.SidebarCommunity__blankIcon:hover,.SidebarCommunity__name.m-selected:hover,
+.SidebarNav__icon:hover,.SidebarNav__title:hover,
+._1vyLCp-v-tE5QvZovwrASa,
+._3QOPLw8PZipW3i8kDxod81,
+._3UEq__yL-82zX4EyuluREz,
+._3IYkqm44eWg992tFnELzuW._3nTkqMMtsoqxVmhplDRef3,
+.fzTkuBRFT8iIn1XnJX_Yn path,.fzTkuBRFT8iIn1XnJX_Yn svg
+{
+  cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/eX9/f3w/f39yz///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397glJSXM9/f3w/f39yz///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAoKCswlJSXM9/f3w/f39ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4BwcHzAoKCswlJSXM9/f3w/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gEBATMBwcHzAoKCswlJSXM9/f3w/f395f39/eX9/f3l/f395f39/eX9/f3l////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwZGRnMHR0dzDU1Ncz39/eX////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwvLy/M9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAICAswEBATMBwcHzAoKCswODg7MKCgozPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzAICAswEBATMBwcHzCIiIsz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwAAADMAAAAzAICAswcHBzM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAAAAMwAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwZGRnM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e49/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397j39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////////////////////////////////////////////////////////////////////////////////P////x////8P////B////wAP//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8="), default !important;
+}
+
 
 .res-wheel-browse
 {

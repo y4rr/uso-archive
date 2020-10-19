@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Berny23
 @description    `Changes the big new thumbnails back to the old ones. Also reverts some other annoying changes.`
-@version        20201018.9.38
+@version        20201018.15.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 /*
-* Berny23's YouTube Enhancements v2.1
+* Berny23's YouTube Enhancements v2.2
 */
 ytd-rich-item-renderer {
 	margin-right: 4px;
@@ -48,7 +48,7 @@ ytd-two-column-search-results-renderer ytd-thumbnail:not(.ytd-movie-renderer), y
 	max-height: 138px !important;
 }
 
-.thumbnail-container {
+.thumbnail-container.ytd-movie-renderer {
 	min-width: 246px !important;
 	max-width: 0px !important;
 }

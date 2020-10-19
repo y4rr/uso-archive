@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `Custom lookmovie.agFeatures:Cleaner and better designEasily customizableCustom imageCheck out my other styles:https://userstyles.org/users/812884I have a Discord channel for easier feedback and discussions about the styles: https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        2020628.15.39
+@version        20201018.16.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -64,13 +64,21 @@ mwt "Moody Winter (Light Mode)" <<<EOT :root {
 @advanced color txn "Text color" #FFFFFF
 @advanced dropdown vvh "Vibrant Video" {
 	off "Off*" <<<EOT /*vvhoff*\/ EOT;
-low "Low" <<<EOT /*vvlV1.1_191215*\/
-.player__wrapper, .watch-heading{
+low "Low" <<<EOT /*lmvvl*\/
+.player__wrapper, .watch-heading, div#player_wrapper, .movie-item-style-1 img, .owl-carousel .owl-item img.owl-lazy{
     filter: contrast(1.03) saturate(1.04) ;
 } EOT;
-med "Medium" <<<EOT /*vvmV1.1_191215*\/
-.player__wrapper, .watch-heading {
+med "Medium" <<<EOT /*lmvvm*\/
+.player__wrapper, .watch-heading, div#player_wrapper, .movie-item-style-1 img, .owl-carousel .owl-item img.owl-lazy {
     filter: contrast(1.06) saturate(1.08) ;
+} EOT;
+
+}
+@advanced dropdown hah "Hide ads?" {
+	no2 "Off*" <<<EOT /*hahoff*\/ EOT;
+ye2 "On" <<<EOT /*hah*\/
+.mgbox {
+    opacity: 0;
 } EOT;
 
 }
@@ -83,7 +91,7 @@ st1 "Standard*" <<<EOT https://cdn.4archive.org/img/TlhJKNl.jpg EOT;
 
 ==/UserStyle== */
 @-moz-document domain("lookmovie.ag") {
-/*V1.3.1_200628*/
+/*V1.4_201018*/
 /*[[th]]*/
 /*[[vvh]]*/
 :root {
@@ -93,7 +101,7 @@ st1 "Standard*" <<<EOT https://cdn.4archive.org/img/TlhJKNl.jpg EOT;
     --txnr: /*[[txn]]*/;
 }
 /*min*/
-header, .top-search__inner-wrapper, .slider, .page-single,  footer, footer .ft-copyright, .latestnew, .movie-items, .player-external-controls, .overlay .login-content, .overlay .movie-issue-content, textarea, .movie-img .movie-btn, .mv-ceb .movie-btn, .top-search__item.total:hover, .ios-quality-switcher li.active, .ios-switcher li.active, .mobile-sub-switcher li.active, .top-search__item:not(.total):hover, ul.episodes li.active, ul.episodes li:hover, ul.seasons li.active, ul.seasons li:hover, .controls input, .continue-wrapper, .jw-nextup {
+header, .top-search__inner-wrapper, .slider, .page-single,  footer, footer .ft-copyright, .latestnew, .movie-items, .player-external-controls, .overlay .login-content, .overlay .movie-issue-content, textarea, .movie-img .movie-btn, .mv-ceb .movie-btn, .top-search__item.total:hover, .ios-quality-switcher li.active, .ios-switcher li.active, .mobile-sub-switcher li.active, .top-search__item:not(.total):hover, ul.episodes li.active, ul.episodes li:hover, ul.seasons li.active, ul.seasons li:hover, .controls input, .continue-wrapper, .jw-nextup, .ads-wrapper, .form-style-1 {
     background: var(--minr);
 }
 /*minimp*/
@@ -101,7 +109,7 @@ body {
 background: var(--minr)!important;
 }
 /*acntxn*/
-.navbar-default.top-level-nav .navbar-nav li a:hover, .navbar.top-level-nav li.active>a, header .navbar .dropdown-menu > li > a:hover, .ion-ios-search:before, .ion-ios-close-empty:before, .menu-area .navbar-nav li a:hover, .slide-item__title a, .slide-item__title, .ion-star:before, .ion-android-star:before, .pagination li.active a, .pagination li a:hover, .ion-ios-arrow-up:before, a#back-to-top, .bd-hd span, .overlay .close:hover, .thumbnail-play__btn-big--emulate-vjs svg, .movie-item-style-1:hover h6 a, .trans-btn:active, .trans-btn:focus, .trans-btn:hover, .description-wrapper .less, .description-wrapper .more, .title-hd-sm a, .movie-single .cast-ct p, .movie-item-style-2.episode-item .mv-item-infor h6, .report:hover, .movie-issue-content button:hover, .overlay .login-content button:hover, .redBtnSquare:active, .redBtnSquare:focus, .redBtnSquare:hover, footer .flex-parent-ft .flex-child-ft ul li a:hover, .error-help, .movie-items .movie-item:hover h6 a, .player-external-controls .group-item__button:hover  {
+.navbar-default.top-level-nav .navbar-nav li a:hover, .navbar.top-level-nav li.active>a, header .navbar .dropdown-menu > li > a:hover, .ion-ios-search:before, .ion-ios-close-empty:before, .menu-area .navbar-nav li a:hover, .slide-item__title a, .slide-item__title, .ion-star:before, .ion-android-star:before, .pagination li.active a, .pagination li a:hover, .ion-ios-arrow-up:before, a#back-to-top, .bd-hd span, .overlay .close:hover, .thumbnail-play__btn-big--emulate-vjs svg, .movie-item-style-1:hover h6 a, .trans-btn:active, .trans-btn:focus, .trans-btn:hover, .description-wrapper .less, .description-wrapper .more, .title-hd-sm a, .movie-single .cast-ct p, .movie-item-style-2.episode-item .mv-item-infor h6, .report:hover, .movie-issue-content button:hover, .overlay .login-content button:hover, .redBtnSquare:active, .redBtnSquare:focus, .redBtnSquare:hover, footer .flex-parent-ft .flex-child-ft ul li a:hover, .error-help, .movie-items .movie-item:hover h6 a, .player-external-controls .group-item__button:hover, a  {
     color: var(--acnr);
     fill: var(--acnr)
 }
@@ -118,7 +126,7 @@ header .nav > li > a.loginLink, header .nav > li > a.loginLink:hover, .owl-theme
     background: var(--acnr)!important;
 }
 /*txn*/
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, header .dropdown-menu > li > a, .top-search input, .navbar-nav li a, .slider-item__description, .slider-item__meta, .round-btn, .hero-ct h1, .topbar-filter .prettydropdown > ul, .topbar-filter .prettydropdown.multiple > ul, .wizard > .actions a[href="#finish"], .controls button.submit, .wizard > .actions a[href="#finish"]:hover, .controls button.submit:hover, .quality-tag, .movie-item-style-2 .rate span, p, .pagination li a, body, footer .flex-parent-ft .flex-child-ft ul li a, .episodes-switcher a, .episodes-switcher span, .ios-quality-switcher li, .ios-quality-switcher span, .mobile-sub-switcher li, .mobile-sub-switcher span, .seasons-switcher a, .seasons-switcher span, #donate-section .switcher-input, footer .flex-child-ft.item3 h3, .movie-rate .rate p span, .bd-hd, .plr-help-stripe a, .overlay .close, .movie-description__duration, .movie-description__header, .title-hd h3, .title-hd-sm h4, .movie-single .movie-single-ct .mv-user-review-item .no-star i.last, .sb-it h6, .hotkeys-help, .report, .movie-issue-content h4, .movie-issue-content h5, .dataTables_wrapper .dataTables_filter input, button, input, select, textarea, .movie-issue-content button, .overlay .login-content button, .redBtnSquare, .title-hd a.viewall, .movie-list-detailed__actors, .movie-list-detailed__description, .movie-list-detailed__genres, .movie-list-detailed__imdb, .movie-list-detailed__year, .result-meta__rating, .result-meta__title, .top-search__item.total>a, .top-search__item.total, .controls input, h2, .continue-wrapper .continue__time-display--wrapper, .continue__controls-wrapper .continue__button, .continue__controls-wrapper span, .button-bordered-red, .continue-wrapper .continue__button--from_begin, .slide-item__title a:hover, .top-search__nothing-found, .movie-item-style-2 .mv-item-infor h6 a, .movie-items .movie-item .hvr-inner, .movie-items .movie-item .hvr-inner a, ::selection, .player-external-controls .group-item__button, .player-external-controls .group-item__button, .jw-nextup {
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, header .dropdown-menu > li > a, .top-search input, .navbar-nav li a, .slider-item__description, .slider-item__meta, .round-btn, .hero-ct h1, .topbar-filter .prettydropdown > ul, .topbar-filter .prettydropdown.multiple > ul, .wizard > .actions a[href="#finish"], .controls button.submit, .wizard > .actions a[href="#finish"]:hover, .controls button.submit:hover, .quality-tag, .movie-item-style-2 .rate span, p, .pagination li a, body, footer .flex-parent-ft .flex-child-ft ul li a, .episodes-switcher a, .episodes-switcher span, .ios-quality-switcher li, .ios-quality-switcher span, .mobile-sub-switcher li, .mobile-sub-switcher span, .seasons-switcher a, .seasons-switcher span, #donate-section .switcher-input, footer .flex-child-ft.item3 h3, .movie-rate .rate p span, .bd-hd, .plr-help-stripe a, .overlay .close, .movie-description__duration, .movie-description__header, .title-hd h3, .title-hd-sm h4, .movie-single .movie-single-ct .mv-user-review-item .no-star i.last, .sb-it h6, .hotkeys-help, .report, .movie-issue-content h4, .movie-issue-content h5, .dataTables_wrapper .dataTables_filter input, button, input, select, textarea, .movie-issue-content button, .overlay .login-content button, .redBtnSquare, .title-hd a.viewall, .movie-list-detailed__actors, .movie-list-detailed__description, .movie-list-detailed__genres, .movie-list-detailed__imdb, .movie-list-detailed__year, .result-meta__rating, .result-meta__title, .top-search__item.total>a, .top-search__item.total, .controls input, h2, .continue-wrapper .continue__time-display--wrapper, .continue__controls-wrapper .continue__button, .continue__controls-wrapper span, .button-bordered-red, .continue-wrapper .continue__button--from_begin, .slide-item__title a:hover, .top-search__nothing-found, .movie-item-style-2 .mv-item-infor h6 a, .movie-items .movie-item .hvr-inner, .movie-items .movie-item .hvr-inner a, ::selection, .player-external-controls .group-item__button, .player-external-controls .group-item__button, .jw-nextup, .login-form-wrapper h1, .form-style-1 label, .form-style-1 input, .form-style-1 select, a:focus, a:hover {
     color: var(--txnr)
 }
 /*txnimp*/
@@ -126,11 +134,11 @@ header .nav > li > a.loginLink, header .nav > li > a.loginLink:hover, .owl-theme
     color: var(--txnr);
 }
 /*scn*/
-.dropdown-menu, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .slide-item__legend, .topbar-filter .prettydropdown > ul, .topbar-filter .prettydropdown.multiple > ul, .wizard > .actions a[href="#finish"]:hover, .controls button.submit:hover, .movie-item-style-1, .episodes-switcher, .ios-quality-switcher, .mobile-sub-switcher, .mobile-sub-switcher ul, .seasons-switcher, ul.episodes, ul.ios-switcher, ul.seasons, #donate-section .switcher-input, .movie-item-style-2.movie-item-style-list>a, .control-container:hover input~.checkmark, .movie-list-detailed, .top-search__list, .progress, .button-bordered-red, .continue-wrapper .continue__button--from_begin {
+.dropdown-menu, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .slide-item__legend, .topbar-filter .prettydropdown > ul, .topbar-filter .prettydropdown.multiple > ul, .wizard > .actions a[href="#finish"]:hover, .controls button.submit:hover, .movie-item-style-1, .episodes-switcher, .ios-quality-switcher, .mobile-sub-switcher, .mobile-sub-switcher ul, .seasons-switcher, ul.episodes, ul.ios-switcher, ul.seasons, #donate-section .switcher-input, .movie-item-style-2.movie-item-style-list>a, .control-container:hover input~.checkmark, .movie-list-detailed, .top-search__list, .progress, .button-bordered-red, .continue-wrapper .continue__button--from_begin, .form-style-1 input, .form-style-1 select {
     background: var(--scnr)
 }
 /*rbrd*/
-.top-search__inner-wrapper, .topbar-filter .prettydropdown.arrow > ul > li.selected:after, .pagination li.active a, .pagination li a:hover, .episodes-switcher, .ios-quality-switcher, .mobile-sub-switcher, .mobile-sub-switcher ul, .seasons-switcher, ul.episodes, ul.ios-switcher, ul.seasons, #donate-section .switcher-input, footer .ft-copyright, .title-hd-sm, .overlay .login-content, .overlay .movie-issue-content, .movie-img .movie-btn, .mv-ceb .movie-btn, .top-search__list {
+.top-search__inner-wrapper, .topbar-filter .prettydropdown.arrow > ul > li.selected:after, .pagination li.active a, .pagination li a:hover, .episodes-switcher, .ios-quality-switcher, .mobile-sub-switcher, .mobile-sub-switcher ul, .seasons-switcher, ul.episodes, ul.ios-switcher, ul.seasons, #donate-section .switcher-input, footer .ft-copyright, .title-hd-sm, .overlay .login-content, .overlay .movie-issue-content, .movie-img .movie-btn, .mv-ceb .movie-btn, .top-search__list, .form-style-1 {
     border: transparent!important;
 }
 /*br*/
@@ -217,5 +225,9 @@ img.logo {
 }
 .video-js .vjs-progress-control .vjs-slider:before {
     background:rgba(0,0,0,0.2);
+}
+/*ani*/
+a {
+transition: .3s ease
 }
 }
