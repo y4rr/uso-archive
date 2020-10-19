@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         petiole
 @description    `Switches the website, carnap.io, to a high contrast, dark mode.Essentially white text and items on a black background`
-@version        2020107.21.29
+@version        20201019.6.2
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,8 +31,12 @@
   .fitchDisplay .subproof > div:first-child, .fitchDisplay > .final-premise {
       border-bottom:1px solid white !important;
   }
+
+  div.input{
+      color: black !important;
+  }
   
   .success .output{
-    color: black !important;
+      color: black !important;
   }
 }

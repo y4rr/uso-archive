@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/s6eVQBme`
-@version        20201018.20.35
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/4ASZuQkf`
+@version        20201019.8.32
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1332,12 +1332,11 @@ button[disabled], html input[disabled] {background: var(--theme_default_btnbg) !
 .postform__mu_type_q:hover {color: var(--theme_default_postnum2);}
 
 /*[[report-checkbox]]*/
-input[type="checkbox"] {cursor: pointer; height: 17px; width: 17px; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; margin-top: -1px; vertical-align: middle;}
-input[type="checkbox"]::before {background: var(--theme_default_altbtnbg); border: 1px solid var(--theme_default_altborder); border-radius: 3px; box-sizing: border-box; content: ""; display: block; height: 17px; width: 17px; transition: .1s;}
-input[type="checkbox"]:focus::before {background: var(--theme_default_altbtnbghover);}
-input[type="checkbox"]::after {color: transparent; content: "\f00c"; display: block; font: 14px/17px FontAwesome; height: 17px; width: 17px; position: relative; bottom: 17px; text-align: center; transition: .1s;}
-input[type="checkbox"]:checked:before {background: var(--theme_default_link); border-color: var(--theme_default_link);}
-input[type="checkbox"]:checked::after {color: var(--theme_default_altbtntext);}
+input[type="checkbox"] {cursor: pointer; height: 24px; width: 24px; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; margin-top: -2px; vertical-align: middle;}
+input[type="checkbox"]::before {color: var(--theme_default_alttext2); box-sizing: border-box; content: "check_box_outline_blank"; font: 24px/24px 'Material Icons'; display: block; height: 24px; width: 24px; transition: .1s;}
+input[type="checkbox"]:focus::before {color: var(--theme_default_alttext);}
+input[type="checkbox"]:checked::before {color: var(--theme_default_link); content: "check_box"; font: 24px/24px 'Material Icons'; display: block; height: 24px; width: 24px; transition: .1s;}
+input[type="checkbox"]:checked:focus::before {color: var(--theme_default_hover);}
 
 .filer__limits {color: var(--theme_default_alttext2); font-size: 12px; margin: 2px 0;}
 .filer__drag-area {background-color: var(--theme_default_drag); border-color: transparent; border-radius: 3px; color: var(--theme_default_alttext2); transition: color .1s;}
@@ -1390,14 +1389,14 @@ img[src="/makaba/templates/js/lcanvas/img/dashed-line.png"], img[src="/makaba/te
 .qr-oekaki-footer, .qr__footer_oekaki {border-top: 1px solid var(--theme_default_border); padding-top: 4px;}
 
 /* Quick Reply */
-.qr {animation: open .1s ease-out; border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 6px 16px var(--theme_shadow3); padding: 6px;}
-.qr__header {background: none; border: none; font-weight: bold; padding: 3px 0 6px;}
+.qr {animation: open .1s ease-out; border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 6px 16px var(--theme_shadow3); font-size: 1em; padding: 6px;}
+.qr__header {background: none; border: none; font-size: 1.2em; padding: 1px 0 3px;}
 .qr__close {font-size: 0; margin-top: -2px; padding: 0px; transition: .1s;}
 .qr__close:hover::before {color: var(--theme_default_text);}
 .qr__close::before {color: var(--theme_default_alttext2); content: "close"; font: 24px/1 'Material Icons';}
 
 .qr_reply .qr__footer {display: none;}
-.qr__footer {font-size: 12px;}
+.qr__footer {font-size: 13px;}
 
 .qr__footer hr {border-color: var(--theme_default_border); margin: 8px 0px 4px;}
 
@@ -1634,7 +1633,7 @@ path[fill="#ececec"] {fill: inherit !important;}
 #de-spell-txt {font-family: Consolas, monospace;}
 
 .de-cfg-inptxt, .de-cfg-label, .de-cfg-select {font-family: inherit !important; font-size: 14px !important;}
-.de-cfg-chkbox {margin: 3px 1px !important; vertical-align: middle !important;}
+.de-cfg-chkbox {margin: 0 !important; vertical-align: middle !important;}
 input[type="text"].de-cfg-inptxt {font-family: inherit !important; font-size: 14px !important; padding: 3px 6px !important;}
 .de-cfg-select {padding: 3px 22px 3px 6px !important;}
 .de-cfg-button {font-family: inherit !important; font-size: 14px !important; padding: 3px 6px !important; height: unset;}
@@ -1863,7 +1862,7 @@ span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; f
 
 #postform {animation: open .1s ease-out; height: calc(100vh); padding: 5px 10px 125px; overflow: auto;}
 #postform > hr, footer .newpost, .boardname + hr {display: none;}
-#postform::before {content: "Новый тред"; display: block; font-weight: bold; font-size: 16px; padding: 10px; text-align: center;}
+#postform::before {content: "Новый тред"; display: block; font-size: 1.4em; padding: 10px; text-align: center;}
 .replypage #postform::before {content: "Новый пост";}
 .postform {font-size: 1em;}
 
@@ -1875,16 +1874,12 @@ span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; f
 .postform__mu {height: 28px; width: 28px;}
 .postform__raw.options {display: block !important; margin-top: 6px;}
 
-input[type="checkbox"] {height: 20px; width: 20px;}
-input[type="checkbox"]::before {height: 20px; width: 20px;}
-input[type="checkbox"]::after {bottom: 20px; font: 15px/20px FontAwesome; height: 20px; width: 20px;}
-
 .filer__drag-area {font-size: 18px; height: 45px;}
 
 /* Quick Reply */
-.qr {border-radius: 0; font-size: 1em; left: 0 !important; top: 0 !important; padding: 5px 10px; width: 100%; height: calc(100vh); overflow: auto; z-index: 983;}
-.qr__header {font-size: 16px; padding: 10px 0;}
-.qr__close {padding: 10px 10px; margin: -15px -10px -10px;}
+.qr {border-radius: 0; left: 0 !important; top: 0 !important; padding: 5px 10px; width: 100%; height: calc(100vh); overflow: auto; z-index: 983;}
+.qr__header {font-size: 1.4em; padding: 10px 0;}
+.qr__close {padding: 14px; margin: -15px -10px -10px;}
 .qr__close::before {font: 26px/1 'Material Icons';}
 
 .qr__footer {font-size: 15px;}

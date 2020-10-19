@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         KABA
 @description    `for 作業実施報告書 style @ Workship`
-@version        2020930.4.42
+@version        20201019.5.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("https://goworkship.com/agreements/\\d+/work_schedule\\?date=.+") {
+@-moz-document regexp("https://goworkship.com/agreements/\\d+/work_schedule.*") {
 .c-work-schedule-table
 .c-work-schedule-table__head
 .c-work-schedule-table__head-ttl,
@@ -55,16 +55,36 @@
 }
 
 .c-work-schedule-table input:not(.total-value),
-.c-work-schedule-table textarea {
+.c-work-schedule-table textarea
+{
     border-color: rgba(0 0 0 / 20%) !important;
     background: #fff; /* Only input */
 }
 
 /* Fixed Bottom Buttons */
-.c-work-schedule-btn-container {
+.c-work-schedule-btn-container
+{
     /* Clear width and Make under layer elements clickable */
     display: table;
     margin: auto;
     width: auto;
 }
+.c-work-schedule-btn-container
+.c-work-schedule-btn-wrap
+{
+    border-radius: 8px;
+    background: rgba(255 255 255 / .9)
+}
+.c-work-schedule-btn-container
+.c-work-schedule-btn-wrap
+.c-work-schedule-btn
+{ transition: .2s }
+.c-work-schedule-btn-container
+.c-work-schedule-btn-wrap
+.c-work-schedule-btn.submit:not(:hover):not(:focus)
+{ background: 0 }
+.c-work-schedule-btn-container
+.c-work-schedule-btn-wrap
+.c-work-schedule-btn:not(:hover):not(:focus)
+{ opacity: .4 }
 }

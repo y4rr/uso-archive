@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         airflame
 @description    `Reklamy na dole strony na górze po bokach, sponsorowane i inne śmieci są zablokowane. Np jesteś w kategorii komputery a tam wyskakują kable do wibratorów... (Sponsorowane) my ass...Przeglądanie wyników aukcji jest łatwiejsze wyświetla się więcej bo zmieniona została szerokość wyświetlania :)Przeglądaj allegro normalnie :)`
-@version        20201014.5.30
+@version        20201019.9.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -312,6 +312,10 @@ a.carousel-item {
 }
 
 .dda8fb1._01389e7, ._9c44d_1_X0Q {
+    display: none !important;
+}
+
+[data-analytics-category="allegro.sticky.link"]{
     display: none !important;
 }
 

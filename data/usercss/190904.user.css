@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Loc.
 @description    `This is a remake of the roblox dark theme, From February 2nd 2019, to September 28th, 2019Rest in peac.... Wait! the theme is back! (It's global bc idk how to make it just roblox)`
-@version        20201018.0.1
+@version        20201019.4.47
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -138,4 +138,25 @@ h1.user-name-container a:after {
 	content: "!"
 }
 
+.cursor-pointer .dynamic-ellipsis-item {
+font-size: 0px
+}
+.cursor-pointer .dynamic-ellipsis-item:after {
+font-size: 16px;
+height: 1px;
+content: "Shop"
+
+}
+.cursor-pointer .dynamic-ellipsis-item:hover{
+   font-size: 0px
+ }
+.cursor-pointer .dynamic-ellipsis-item:hover{
+font-size: 0px
+}
+a#upgrade-now-button {
+position:relative; top: -7px
+}
+.small {
+position: relative; top: -7px
+}
 }
