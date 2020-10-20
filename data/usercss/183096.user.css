@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Some Leo
 @description    `主要说明：1. 针对常用百度页面进行简化和修改，已完成页面可见下方“已完成的工作”；2. 元素风格以圆角矩形为主、阴影为辅，方党退避；3. 网页查询的结果为单栏居中，其它因页面结构原因放弃居中；4. 若页面中屏蔽了你需要的元素，请告知；5. 特殊样式难以及时适配，你可以加QQ群：912825034 进行反馈。已完成的工作：1. 百度首页｜百度知道首页 | 产品大全页2. 百度网页结果页｜知道结果页｜文库结果页｜资讯结果页｜百度汉语结果页3. 知道具体页｜文库具体页 ｜ 百科具体页4. 部分页面的字体略放大半完成的页面：1. 图片结果页2. 百度翻译页面接下去会做的工作：1. 百度网页结果更多特殊情况适配2. 百度百科更多情况适配3. 优化样式4. 百度经验“自用”样式，可能有不兼容，但你通过以下途径找到我提出bug或建议：酷安：一位群众 ｜ GitHub：somelou ｜ Jellow：大学杨超越QQ群：912825034曾参考以下内容：1. CWorld：https://userstyles.org/styles/173673/pure（已告知）2. 百度部分新版页面`
-@version        2020917.12.21
+@version        20201020.3.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -181,7 +181,7 @@ body {
 }
 #head_wrapper .s_form,
 .soutu-env-new .soutu-layer {
-	width: 640px !important;
+	width: 636px !important;
 }
 #head_wrapper.head_wrapper {
 	width: auto;
@@ -198,7 +198,7 @@ body {
 	border: none;
 }
 #head_wrapper .s_ipt_wr {
-	width: 540px !important;
+	width: 536px !important;
 }
 .soutu-env-newindex #kw {
 	height: 32px !important;
@@ -272,7 +272,7 @@ body {
 	background-color: #fff;
 	box-shadow: 0 0 8px #ccc;
 	border-radius: 8px;
-	width: 640px;
+	width: 636px;
 	border: 1px solid #fff;
 	transition: all 450ms;
 }
@@ -308,7 +308,7 @@ body {
 }
 .bdsug li,
 #head_wrapper #form .bdsug-new ul li {
-	padding: 2px 12px !important;
+	padding: 2px 10px !important;
 	font: 15px arial;
 	line-height: 28px;
 	width: auto !important;
@@ -348,7 +348,7 @@ body {
 #head_wrapper.s-down .soutu-env-newindex .soutu-layer,
 .soutu-env-newindex .soutu-no-skin {
 	border-radius: 8px;
-	width: 640px;
+	width: 636px;
 }
 .soutu-env-new .soutu-layer .soutu-drop,
 .soutu-layer .soutu-url {
@@ -357,7 +357,7 @@ body {
 .soutu-layer .soutu-url-wrap {
 	border-radius: 8px 0 0 8px;
 	height: 40px !important;
-	width: 540px !important;
+	width: 536px !important;
 	border-bottom: none !important;
 }
 .soutu-layer .soutu-url-btn,
@@ -543,14 +543,14 @@ page {
 }
 .wrapper_new .fm,
 .wrapper_new #head.fix-head .fm {
-	margin-left: 8px;
+	margin-left: 12px;
 }
 .s_ipt_wr,
 .wrapper_new .s_ipt_wr,
 .wrapper_new #head.fix-head .s_ipt_wr {
 	height: 40px;
 	border: none;
-	width: 540px !important;
+	width: 536px !important;
 }
 #head,
 .s_btn_wr {
@@ -564,7 +564,7 @@ page {
 }
 .wrapper_new .s_ipt {
 	padding: 0;
-	margin: auto 16px;
+	margin: auto 12px;
 }
 .s_form_wrapper {
 	justify-content: center;
@@ -582,7 +582,7 @@ page {
 /* image form */
 .soutu-env-result .soutu-layer,
 .soutu-env-imgresult .soutu-layer {
-	width: 640px !important;
+	width: 636px !important;
 }
 .soutu-layer {
 	border: none;
@@ -668,6 +668,7 @@ page {
 	border-radius: 4px;
 	box-shadow: none !important;
 }
+.new-pmd .c-tip-menu .c-gap-right-small,
 .c-gap-bottom-small {
 	margin-bottom: 0;
 }
@@ -790,9 +791,6 @@ page {
 .c-tip-con .c-tip-timerfilter-ft li span {
 	text-indent: 15px;
 }
-#container.sam_newgrid .se_st_footer .c-tools .c-icon {
-	top: -3px;
-}
 /* background-color: #e0ecf4; */
 .nvl-bookstore-wrap .nvl-bookstore-header:hover,
 .c-touchable-feedback-no-default:hover,
@@ -821,6 +819,13 @@ page {
 }
 .c-abstract {
 	padding-top: 2px;
+}
+#container.sam_newgrid .result .c-tools,
+#container.sam_newgrid .result-op .c-tools {
+	line-height: 1.4;
+}
+a[data="{'rsv_snapshot':'1'}"].m:visited {
+	color: #9195A3!important;
 }
 
 /* 链接水波与颜色变化 */
@@ -856,8 +861,13 @@ em {
 .c-span6 a:hover,
 .c-tip-icon:hover,
 .c-container .c-showurl:hover,
-.c-icons-inner a:hover {
+.c-icons-inner a:hover,
+.wa-se-st-image_single_video:hover {
 	box-shadow: none !important;
+}
+a.c-showurl-hover,
+a.c-showurl-hover em.c-showem {
+	text-decoration: none !important;
 }
 /* 水波 */
 #content_left .c-container h3 a,
@@ -1045,9 +1055,6 @@ em {
 	color: #fff;
 	background-color: #03a9f478 !important;
 }
-#page .n {
-	width: 50px !important;
-}
 /* 新版 page */
 .wrapper_new .container_new ~ #page .page-inner {
 	padding: 0;
@@ -1056,7 +1063,9 @@ em {
 	padding: 0 18px;
 }
 .wrapper_new .container_new ~ #page strong,
-.wrapper_new .container_new ~ #page a {
+.wrapper_new .container_new ~ #page a,
+.wrapper_new .sam_newgrid ~ #page strong,
+.wrapper_new .sam_newgrid ~ #page a {
 	color: #3f88f7;
 	background-color: unset;
 }
@@ -1064,6 +1073,17 @@ em {
 .wrapper_new .container_new ~ #page a:hover .pc,
 .wrapper_new .container_new ~ #page .n:hover {
 	background-color: #03a9f478 !important;
+}
+.wrapper_new .sam_newgrid ~ #page a:hover,
+.wrapper_new .sam_newgrid ~ #page a:hover .pc,
+.wrapper_new .sam_newgrid ~ #page .n:hover {
+	background-color: #03a9f478 !important;
+}
+.wrapper_new .sam_newgrid ~ #page {
+	margin: 30px auto !important;
+}
+.wrapper_new .sam_newgrid ~ #page .page-inner {
+	padding: 0 0 0 14px;
 }
 
 /* footer */
@@ -2072,6 +2092,9 @@ article.aladdin__2AELi {
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.2px;
+}
+.op_sp_realtime_bigpic5_wrapper_new {
+	padding-left: 0;
 }
 /* 快递查询 */
 .c-border .c-input {
@@ -5014,10 +5037,82 @@ li#add-new {
 .hx-warp {
 	display: none !important;
 }
+.relative-doc-wrapper .relative-doc-ad-wrapper {
+	display: none !important;
+}
 /* 无用元素 */
 .operation-wrapper,
 .relative-course-wrapper {
 	display: none !important;
+}
+.search-input-wrap .search-input .hot-option-word-wrapper {
+	display: none !important;
+}
+.relative-doc-dspad-wrapper {
+	display: none !important;
+}
+
+/* 登录dialog */
+#passport-login-pop .pass-form-item-submit a.pass-fgtpwd,
+#passport-login-pop .pass-register a {
+	text-decoration: none;
+}
+.tang-pass-footerBarPhoenixSplit {
+	display: none !important;
+}
+
+/* form */
+.search-input-wrap .search-input {
+	border-radius: 8px 0 0 8px;
+	border-right: none;
+	transition: all .45s;
+}
+.search-input-wrap .search-submit-btn {
+	border-radius: 0 8px 8px 0;
+}
+.search-input-wrap .search-submit-btn:hover {
+	box-shadow: none;
+}
+.search-input-wrap .search-input:hover {
+	border-color: #4791ff;
+}
+/* float form */
+.search-box-wrapper.small .search-box-inner-wrapper .search-input-wrap .search-input {
+	width: 536px;
+}
+.search-box-wrapper.small.small-flow-1 .search-box-inner-wrapper .search-input-wrap .search-input,
+.search-box-wrapper.small.small-flow-1 .search-box-inner-wrapper .search-input-wrap .search-input input {
+	width: 536px;
+	height: 38px;
+	line-height: 38px;
+	transition: all .45s;
+}
+.search-box-wrapper.small.small-flow-1 .search-box-inner-wrapper .core-btn-wrapper div,
+.search-box-wrapper.small.small-flow-1 .search-box-inner-wrapper .search-input-wrap .search-submit-btn {
+	height: 40px;
+	line-height: 40px;
+}
+.search-box-wrapper.small .search-box-inner-wrapper .search-input-wrap .search-submit-btn {
+	border: none;
+}
+/* suggestion list */
+.search-input-wrap .sug-wrap {
+	border-radius: 8px;
+	background-color: #fff;
+	border: none !important;
+	border-color: #fff transparent;
+	box-shadow: 0 0 33px #ccc;
+	cursor: pointer;
+	padding: 4px;
+	width: 536px;
+}
+.search-input-wrap .sug-wrap .sug-item {
+	padding: 0 6px;
+	border-radius: 6px;
+}
+.search-input-wrap .sug-wrap .sug-item .sug-text {
+	font-size: 15px;
+	line-height: 32px;
 }
 
 
