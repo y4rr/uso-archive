@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mt.quinn
 @description    `A reskin of Blaseball to be in NY Millennials/Trans team colors.`
-@version        20201013.12.33
+@version        20201019.14.46
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,7 +92,8 @@ body,
     .PlayoffSetup-Navigation-Button,
     .Decrees-Submit-Button,
     .Decrees-Option-Button,
-    .Blessings-Option-Button {
+    .Blessings-Option-Button,
+    .Blessings-Submit-Button{
         background: #55cdfc;
         color: #000;
         border-style: solid;
@@ -320,13 +321,13 @@ body,
     .Standings-Team:nth-child(2n+1) {
         background: #ffcbcb;
         color: #000;
-        filter: drop-shadow(0px 0px 3px #000);
+        filter: drop-shadow(0px 0px 3px #000) !important;
         margin: 3px
     }
     .Standings-Team:nth-child(2n+2) {
         background: #a9f9f0;
         color: #000;
-        filter: drop-shadow(0px 0px 3px #000);
+        filter: drop-shadow(0px 0px 3px #000) !important;
         margin: 3px
     }
     .Standings-Team:hover {
@@ -335,6 +336,9 @@ body,
     .Standings-League,
     .Standings-Division-Header {
         color: #000;
+    }
+    .Standings-Team-Name {
+        filter: drop-shadow(1px 0px 1.2px #000) saturate(50%) !important;
     }
     .Standings-Team-Standings {
         filter: brightness(40%) saturate(300%);

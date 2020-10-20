@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Tak jak powyżej.`
-@version        202075.23.23
+@version        20201019.20.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,16 +15,16 @@
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
              border-radius: 2px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #f60;
         }
 
-body, body.patronite--new, .patronite--new .author__stats, .patronite--new .nav, .patronite--new .tabs__content__item, .patronite--new .author__bio, .patronite--new .author__featured__card, .patronite--new .nav #searchWrapper input, .patronite--new .author__card--content, .patronite--new .alert, .patronite--new .tooltip-errors .form-control .form-error, .patronite--new .home__box--author span, .patronite--new .menu__modal, .page_profil .side-menu, body.side-menu-fixed .profile-page-wrap .side-menu, .tooltipster-default, .tooltipster-default .tooltipster-content, .notification, .patronite--new .modal__content, .page-tabs, .banner, .help-center {
+body, body.patronite--new, .patronite--new .author__stats, .patronite--new .nav, .patronite--new .tabs__content__item, .patronite--new .author__bio, .patronite--new .author__featured__card, .patronite--new .nav #searchWrapper input, .patronite--new .author__card--content, .patronite--new .alert, .patronite--new .tooltip-errors .form-control .form-error, .patronite--new .home__box--author span, .patronite--new .menu__modal, .page_profil .side-menu, body.side-menu-fixed .profile-page-wrap .side-menu, .tooltipster-default, .tooltipster-default .tooltipster-content, .notification, .patronite--new .modal__content, .page-tabs, .banner, .help-center, .patronite--new .box {
     background: #0e0e0e;
 }
 .grey, .patronite--new .footer {
@@ -42,7 +42,7 @@ body, body.patronite--new, .patronite--new .author__stats, .patronite--new .nav,
 .patronite--new .form-control .ss-single-selected, .patronite--new .form-control input:not([type=radio]):not([type=checkbox]):not([type=submit]), .patronite--new .form-control textarea {
     border-color: #111111cc !important;
 }
-.patronite--new .tabs__header, .patronite--new .author__column__box--title, .patronite--new .author__featured__card--stats, .patronite--new .author__target--title, .patronite--new .author__threshold.inactive .author__threshold--content, .patronite--new .author__threshold.inactive .author__threshold--header, .patronite--new .author__card--image, .patronite--new .author__card--content, .patronite--new .menu__modal--user, .page_profil .side-menu, .tooltipster-default {
+.patronite--new .tabs__header, .patronite--new .author__column__box--title, .patronite--new .author__featured__card--stats, .patronite--new .author__target--title, .patronite--new .author__threshold.inactive .author__threshold--content, .patronite--new .author__threshold.inactive .author__threshold--header, .patronite--new .author__card--image, .patronite--new .author__card--content, .patronite--new .menu__modal--user, .page_profil .side-menu, .tooltipster-default, .patronite--new .author__bio .simplebar-content>div {
     border-color: #161616;
 }
 .patronite--new .author__threshold.inactive {
@@ -69,14 +69,14 @@ body, body.patronite--new, .patronite--new .author__stats, .patronite--new .nav,
 .patronite--new .author__featured, .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"], .form-group textarea {
     background: #111;
 }
-[src="https://patronite.pl/assets-patronite/images/avatar-anonim.jpg"], .hiw__picker, [src="https://patronite.pl/assets-patronite/images/avatar-anonim-profile.jpg"] {
+[src="https://patronite.pl/assets-patronite/images/avatar-anonim.jpg"], .hiw__picker, [src="https://patronite.pl/assets-patronite/images/avatar-anonim-profile.jpg"], [src='https://patronite.pl/assets-patronite/framework/images/avatar-anonim.jpg'] {
     filter: invert(100);
 }
 [src="https://patronite.pl/assets-patronite/images/patronite-logo.svg"] {
     content: url('https://i.imgur.com/GXa1ezl.png');
     visibility: visible;
 }
-.portal-img > i {
+.portal-img > i, [src='https://patronite.pl/assets-patronite/framework/images/patronite-logo.svg'] {
 	content: url('https://i.imgur.com/GXa1ezl.png');
 	max-height: 50px;
 	background: no-repeat;
@@ -187,6 +187,10 @@ select {
 .patronite--new .blog__post--periphery {
 	color: #777;
 }
+.grey2 {
+	background: #2d2d2d;
+	color: #cdcdcd;
+}
 }
 
 @-moz-document domain("patronite.freshdesk.com") {
@@ -260,5 +264,19 @@ hr {
 	background: #232a33;
 	border-color: #232a33;
 	color: #0068ff;
+}
+}
+
+@-moz-document url-prefix("https://patronite.pl/regulamin") {
+.patronite--new .formal_page_background {
+	filter: invert(100);
+}
+.patronite--new .formal_page_background .formal_page_box {
+	filter: invert(100);
+	background: #0e0e0e;
+	    box-shadow: 0 2px 2px 0 rgba(142, 142, 142, .5), 0 2px 2px 0 rgba(255, 255, 255, .03);
+}
+.patronite--new .formal_page_background .formal_page_box p {
+	color: #b0b0b0;
 }
 }

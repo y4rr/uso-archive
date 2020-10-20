@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        20201017.11.39
+@version        20201020.0.23
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2522,11 +2522,7 @@ a.gb_D.gb_oc {
     background: var(--card-bg-col);
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.25);
 }
-.kp-blk,
-.cv2VAd/* round borders */
-{
-    border-color: var(--border-main-col) !important;
-}
+
 #swml-loc,
 .amFhOb {
     color: #9e9e9e;
@@ -3278,9 +3274,12 @@ span.act-tim-btn-right {
 .u2sJ0e {
     border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
+
+/* not so dark ;) */
 .yQOdGb,
 .P2c8Dd,
-.B678Hb {
+.B678Hb,
+.KZmu8e {
     background-color: var(--card-bg-col);
 }
 g-tabs,
@@ -3353,6 +3352,8 @@ a.ab_button.UOpzSb/* cancel button */
     border-color: var(--border-main-col) !important;
     color: #b9b9b9 !important;
 }
+
+/* black background */
 .sfbg,
 .gb_ka,
 .gb_ha,
@@ -3386,7 +3387,11 @@ g-card,
 .cbjjnc,
 .MXl0lf,
 .MGqjK,
-.Nxb87 {
+.Nxb87,
+.I6TXqe,
+html,
+body,
+.ep3ODe .lgJJud {
 
     background: #101010;
 }
@@ -3395,6 +3400,7 @@ g-card,
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* color light gray */
 .U8shWc.Vy8nid,
 .hb8SAc,
 .cmlJmd,
@@ -3411,10 +3417,15 @@ g-card,
 .s75CSd,
 .QKLM0d,
 .f3LoEf,
-.GmE3X {
+.GmE3X,
+.mDj5wd,
+html,
+body,
+.VEbNnc {
     color: #D3D3D3 !important;
 }
 
+/* no border */
 .AUiS2,
 .exp-outline,
 .cUezCb {
@@ -3439,6 +3450,12 @@ g-card,
 .gb_Ib.gb_Ib,
 .gb_Jb.gb_Jb {
     background-color: #1A1A1A !important;
+}
+
+/* white border */
+.kp-blk,
+.cv2VAd {
+    border: 1px solid white;
 }
 }
 
