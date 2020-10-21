@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         scotchme
 @description    `Brings back grid mode to Pepper`
-@version        20201019.19.30
+@version        20201020.15.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -189,23 +189,22 @@ https://www.pepper.it/
     z-index: 1;
 }
 .boxSec-div.comments-list {
-    width: 100vw;
+    width: 320px;
     position:absolute;
-    /*    height: calc(100% - 160px);*/
-    /*    position: fixed;*/
-    left: 100px;
-    top: 100px;
+    height: 600px;
+    overflow: auto;
+    top: 140px;
     background-color: #fff;
     z-index: 1000;
+    border: 2px solid #bfbfbf;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 0px #bfbfbf;
+}
+.boxSec-div.comments-list img.avatar, .boxSec-div.comments-list .comment-footer {
+    display: none;
 }
 .footerMeta-actionSlot .cept-comment-link.btn--mode-primary {
-    position: fixed;
-    left: 100px;
-    top: 60px;
-    z-index: 1001;
-    width: calc(100% - 200px);
-    height: 40px;
-    min-height: unset;
+    /* hide comments button */
 }
 .threadGrid-headerMeta .cept-thread-group-name {
     -webkit-line-clamp: 2;
@@ -219,10 +218,13 @@ https://www.pepper.it/
 .listLayout article.thread--discussion {
 }
 .listLayout article.thread--discussion .threadGrid .cept-description-container {
-    height: 180px !important;
-    max-height: 180px !important;
+    height: 120px !important;
+    max-height: 120px !important;
 }
 .listLayout article.thread--discussion .threadGrid .cept-vote-box {
+    display: none;
+}
+.thread-listDiscountCell {
     display: none;
 }
 }

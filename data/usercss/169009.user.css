@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sam Nordberg
 @description    `Global dark theme. Makes everything black and dark.It "flips" the colors, so sites already in dark mode will become white. Add the to the exclusion list (see below).Most media (images and videos) *should* be unaffected. However images that are embedded in the background CSS may be color-flipped too (as far as I know, I can't exclude those. Sorry)`
-@version        2020713.12.9
+@version        20201020.23.14
 @license        CC0-1.0
 @preprocessor   uso
 @advanced text ex1 "Exception" "reddit.com"
@@ -68,8 +68,9 @@ player,
 .iframe-player-container video {background: white; background-color:white;}
 
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen, .html5-video-player {background-color: white;}
-
 iframe.media-element {background-color:white;}
+.video-js .vjs-tech {background-color: black;}
+
 }
 
 */

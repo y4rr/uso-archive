@@ -3,21 +3,16 @@
 @namespace      USO Archive
 @author         quodroc
 @description    `Dark theme for Google Calendar using inverted filter.`
-@version        20171210.22.2
+@version        20201020.20.5
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com") {
-html {
-	-webkit-filter: invert(90%) hue-rotate(180deg);
-	filter: invert(90%) hue-rotate(180deg);
-	background: rgb(25, 25, 25);
-}
-#onegoogbar a[href^="https://accounts.google.com"],
-#onegoogbar a[href="javascript:_SR_backToCalendar();"],
-#gb a[href^="https://accounts.google.com"],
-div[data-hovercard-id] {
-	-webkit-filter: invert(100%) hue-rotate(180deg);
-	filter: invert(100%) hue-rotate(180deg);
-}
+  html {
+    filter: invert(90%) hue-rotate(180deg);
+    background: rgb(25, 25, 25);
+  }
+  img {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 }

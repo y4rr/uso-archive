@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201018.18.9
+@version        20201020.21.25
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -87,35 +87,66 @@
  to { border-color: #4F8DE3; }
 }
 
-@-webkit-keyframes music_page_border {
- 0% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
- 10% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 180px #001CFF; }
- 20% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 140px 0 #1DE840, 20px 0 170px 0 #E8B71D; }
- 30% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 40% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- 50% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
- 55% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- 60% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 180px #001CFF; }
- 65% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 70% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 140px 0 #1DE840, 20px 0 170px 0 #E8B71D; }
- 80% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 90% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- to { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
-}
+/* @-webkit-keyframes music_page_border {
+ 0% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 85px #F0F, 20px 10px 85px #0FF; }
+ 10% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 90px #001CFF; }
+ 20% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 70px 0 #1DE840, 20px 0 85px 0 #E8B71D; }
+ 30% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 70px #0079FF, 30px 0 85px #00FF84; }
+ 40% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 90px #0FF, 5px 0 160px #F0F; }
+ 50% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 85px #F0F, 20px 10px 85px #0FF; }
+ 55% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 90px #0FF, 5px 0 160px #F0F; }
+ 60% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 90px #001CFF; }
+ 65% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 70px #0079FF, 30px 0 85px #00FF84; }
+ 70% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 70px 0 #1DE840, 20px 0 85px 0 #E8B71D; }
+ 80% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 70px #0079FF, 30px 0 85px #00FF84; }
+ 90% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 90px #0FF, 5px 0 160px #F0F; }
+ to { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 85px #F0F, 20px 10px 85px #0FF; }
+} */
 @keyframes music_page_border {
- 0% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
- 10% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 180px #001CFF; }
- 20% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 140px 0 #1DE840, 20px 0 170px 0 #E8B71D; }
- 30% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 40% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- 50% { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
- 55% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- 60% { box-shadow: 0 0 80px hsla( 0, 0%, 100%, .86667 ), 10px 0 130px #FF000F, 30px 0 180px #001CFF; }
- 65% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 70% { box-shadow: 0 0 50px 0 hsla( 0, 0%, 100%, .73333 ), 50px 0 140px 0 #1DE840, 20px 0 170px 0 #E8B71D; }
- 80% { box-shadow: 0 0 60px hsla( 0, 0%, 100%, .86667 ), 10px 0 140px #0079FF, 30px 0 170px #00FF84; }
- 90% { box-shadow: 0 0 50px hsla( 0, 0%, 100%, .73333 ), 30px 0 180px #0FF, 5px 0 160px #F0F; }
- to { box-shadow: 0 5px 30px hsla( 0, 0%, 100%, .73333 ), 5px 10px 170px #F0F, 20px 10px 170px #0FF; }
+ 0%   { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #ff00ff,
+	    			5px 0   45px #00ffff; }
+ 10%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   45px #ff0073,
+	    			5px 0   65px #2aadff; }
+ 20%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #eafb2c,
+	    			5px 0   55px #00FF84; }
+ 30%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   25px #ff00ae,
+	    			5px 0   55px #ff7a0f; }
+ 40%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   25px #00FF84,
+	    			5px 0   55px #00FfFf; }
+ 50%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #fF00fF,
+	    			5px 0   65px #00FfFf; }
+ 60%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #fF00Ffe6,
+	    			5px 0   55px #ff4e4ee6; }		
+ 70%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #ff7a0f,
+	    			5px 0   65px #00FF84; }	
+ 80%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   35px #ecff1b,
+	    			5px 0   65px #30ff82; }		
+ 90%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   25px #ff00ae,
+	    			5px 0   55px #0da9ff; }
+ 100%  { box-shadow: 
+	 0px 0   10px hsla(0, 0%, 100%, .8),
+	    			5px 0   25px #fF00fF,
+	    			5px 0   55px #00FffF; }	
 }
 [dir] ::-moz-selection { background-color: #B233CC; }
 [dir] ::selection { background-color: #B233CC; }
@@ -2401,7 +2432,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /* [dir] div#content ._audio_page_player_wrap.audio_page_player_wrap.page_block { box-shadow: none; -webkit-animation: music_page_border 18s linear infinite; animation: music_page_border 18s linear infinite; } */
-[dir] div#content ._audio_page_content_block_wrap.audio_page_content_block_wrap { background-color: #0E1621; -webkit-animation: music_page_border 18s linear infinite; animation: music_page_border 18s linear infinite; }
+[dir] div#content ._audio_page_content_block_wrap.audio_page_content_block_wrap { background-color: #0E1621; -webkit-animation: music_page_border 30s linear infinite; animation: music_page_border 30s linear infinite; }
 
 
 [dir] #side_bar_inner a.left_row:hover .left_count_wrap {
@@ -2544,16 +2575,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 [dir] body.new_header_design .top_nav_btn .top_notify_count {
 /* 	border-color: hsl(13, 100%, 65%); */
-	border-color: #1c2634;
+	border-color: #0E1621;
 }
 [dir] body.new_header_design .top_nav_btn:hover .top_notify_count::after {
 /*     border-color: var(--steel_gray_20); */
 /* 	border-color: hsl(13, 100%, 65%); */
+	border-color: #0E1621;
 }
 
 /* Увеличенное пространство для названия трека */
 [dir] body.new_header_design #top_nav > li:nth-child(5) {
-	margin-right: -140px;
+	margin-right: -70px;
 }
 [dir] body.new_header_design #top_profile_menu {
 	margin-right: inherit;

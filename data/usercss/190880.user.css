@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dellza
 @description    `this will clean up the site and make the video biggernote to show the search box move your mouse to the top of the page`
-@version        20201019.9.29
+@version        20201020.16.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -143,7 +143,7 @@ html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#wrapper div#ma
     width: auto;
     max-width: calc(90vw);}
 
-#player {    max-height: calc(100vh - 50px);}
+#player {    max-height: calc(100vh - 50px) !important; height: 100% !important}
 
 #page-detail > div > .tab-content > .tab-pane > .row > div {
     width: 100%;

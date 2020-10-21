@@ -3,16 +3,16 @@
 @namespace      USO Archive
 @author         Godot le gros chien
 @description    `A wikipedia black theme about Girl und Panzer where the wikipedia logo is replace by the oarai one.`
-@version        2020918.2.7
+@version        20201020.23.18
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(wikipedia.org){
 
-body
+  body
   {
-     background-color: #333 !important;
+    background-color: #333 !important;
     background-image: url("https://i.postimg.cc/wTbZrh9n/takebe-manual-without-hearphone.png")!important;
     background-attachment: fixed!important;
     background-size: 25% !important;
@@ -26,14 +26,28 @@ body
     background-color: transparent !important;
   }
 
+  .mw-page-container-inner
+  {
+   width: 2500px !important;
+  }
+
   .skin-vector-max-width #mw-panel 
   {
     background-color: transparent !important;
+    left: -550px !important;
   }
 
   .skin-vector-max-width .mw-page-container
   {
+    max-width: 1900px !important;
+    border-left: none !important;
+    border-right: none !important;
     background-color: transparent !important;
+  }
+
+  .skin-vector-max-width .mw-content-container
+  {
+    margin-left: -500px !important;
   }
 
   a,
@@ -606,7 +620,7 @@ span
   {
     color: #ddd !important;
     opacity: 1.0;
-    box-shadow: 0px 1px 2px #2b2b2b;
+    box-shadow: none !important;
     -webkit-transition-property: opacity !important;
     -moz-transition-property: opacity !important;
     -o-transition-property: opacity !important;
@@ -720,25 +734,25 @@ span
   .suggestions-results,
     .suggestions-special
   {
-    background-color: transparent !important;
+    background-color: #333 !important;
   }
 
   .suggestions-results:hover,
     .suggestions-special:hover
   {
-    background-color: transparent !important;
+    background-color: #333 !important;
   }
 
   .suggestions-results span,
     .special-query
   {
-    color: transparent !important;
+    color: #ddd !important;
   }
 
   .suggestions-result,
     special-label
   {
-    color: transparent!important;
+    color: #ddd !important;
   }
 
   .highlight
@@ -901,7 +915,14 @@ span
     font-size: 16px !important;
   }
 
-  .infobox,
+    .infobox
+  {
+    position: relative !important;
+    left: 700px !important;
+  }
+
+
+    .infobox,
     .tright,
     .toccolours
   {
@@ -923,8 +944,18 @@ span
     font-weight: 400 !important;
   }
 
+ .infobox_v2
+  {
+    position: relative !important;
+    left: 650px !important;
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
   .infobox_v3
   {
+    position: relative !important;
+    left: 650px !important;
     background: transparent !important;
     border-color: transparent !important;
   }
@@ -951,6 +982,11 @@ span
     .plainlinksneverexpand
   {
     display: none !important;
+  }
+
+  .mw-body-content
+  {
+    width: 900px !important;
   }
 
   .mw-body

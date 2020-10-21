@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Игорь Яковенко
 @description    `Упрощенная версия.`
-@version        2020511.13.36
+@version        20201020.13.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,6 +49,7 @@ html.supportsGridLayout #profileContent .profileContentRight,
 .feedItemSection[data-table="stream_playlists"],
 .feedItemSection[data-table="stream_posts_playlists"],
 .feedItemSection[data-table="stream_comments_playlists"],
+.feedItemSection[data-table="stream_videos_uploaded"],
 .feedItemSection .feedCaption,
 .feedItemSection .actionsWrap,
 .feedItemSection .feedComments,
@@ -69,7 +70,8 @@ ul.videos > *,
 .section_bar_sidebar,
 nav.nf-categories-sidebar,
 #topBannerSlider, 
-.sectionCarousel
+.sectionCarousel,
+#loadMoreRelatedVideosCenter
 { display: none !important; }
 
 
@@ -184,7 +186,7 @@ ul.videos.user-playlist.playlist-listing li .wrap .linkWrapper
 { height: 570px; }
 
 #main-container .video-wrapper #lockedPlayer, #main-container .video-wrapper #player.wide
-{ display: block; width: 480px !important; height: 360px !important; margin: 0 auto; padding: 0 !important; max-width: 100% !important; min-width: auto !important; max-height: 100% !important; min-height: auto !important; }
+{ display: block !important; width: 480px !important; height: 360px !important; margin: 0 auto; padding: 0 !important; max-width: 100% !important; min-width: auto !important; max-height: 100% !important; min-height: auto !important; }
 
 .feedContent .feedItems .feedItemSection, .feedContent .feedItems>section
 { margin-bottom: 0; }
@@ -420,7 +422,9 @@ html.supportsGridLayout .sectionChannelsWrapper ul.videos.chanelPornstars
     
 } 
     
-  
+    
+    
+    
 /* PREMIUM UPDS */
 .sectionWrapperPremium .js-Carousel .full-row-thumbs > li 
 { display: inline-block !important; width: 991px !important; min-width: inherit !important; max-width: inherit !important; }
@@ -428,5 +432,4 @@ html.supportsGridLayout .sectionChannelsWrapper ul.videos.chanelPornstars
 .sectionWrapperPremium .js-Carousel .full-row-thumbs.videos .videoBox
 { height: auto !important; }
     
-
 }

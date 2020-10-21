@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Seyjin
 @description    `A darkmode theme for the Sims forum.`
-@version        20201019.13.5
+@version        20201020.13.19
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 /* Darkmode for the Sims forums by Seyjin */
 
 /* Couleur principale du texte */
-body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .CommentDate:hover, .Section-Discussion .CommentMeta a, .Section-Discussion .DiscussionMeta a, .Section-Discussion .Item.rank-blue .Meta, .Section-Discussion .Item.rank-blue .Meta a, .Section-Discussion .Item.rank-blue .Meta a:focus, .Section-Discussion .Item.rank-blue .Meta a:hover, .Section-Discussion .CommentMeta, .Section-Discussion .DiscussionMeta, .Section-Discussion .PageTitle h1, input.DateBox, input.InputBox, input.SmallInput, textarea, .editor-fullpage .TextBoxWrapper .BodyBox, .editor-fullpage .TextBoxWrapper .wysihtml5-sandbox, .nav-me .Username, .info-bar .breadcrumbs, .info-bar .breadcrumbs a, .info-bar .SignInLinks, .info-bar .SignInLinks a, a.Close, .Preview, .hljs, .hljs-keyword, .hljs-selector-tag, .hljs-subst, .Section-Discussion .MessageList .AuthorInfo span,.Section-Profile .User > .H, #Panel .About.P dt, #Panel .About.P, #Panel li.Active a, .Info, ul.token-input-list, .AdvancedSearch select, select, input {
+body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .CommentDate:hover, .Section-Discussion .CommentMeta a, .Section-Discussion .DiscussionMeta a, .Section-Discussion .Item.rank-blue .Meta, .Section-Discussion .Item.rank-blue .Meta a, .Section-Discussion .Item.rank-blue .Meta a:focus, .Section-Discussion .Item.rank-blue .Meta a:hover, .Section-Discussion .CommentMeta, .Section-Discussion .DiscussionMeta, .Section-Discussion .PageTitle h1, input.DateBox, input.InputBox, input.SmallInput, textarea, .editor-fullpage .TextBoxWrapper .BodyBox, .editor-fullpage .TextBoxWrapper .wysihtml5-sandbox, .nav-me .Username, .info-bar .breadcrumbs, .info-bar .breadcrumbs a, .info-bar .SignInLinks, .info-bar .SignInLinks a, a.Close, .Preview, .hljs, .hljs-keyword, .hljs-selector-tag, .hljs-subst, .Section-Discussion .MessageList .AuthorInfo span,.Section-Profile .User > .H, #Panel .About.P dt, #Panel .About.P, #Panel li.Active a, .Info, ul.token-input-list, .AdvancedSearch select, select, input, .Count {
     color: #ccc;
 }
 
@@ -68,18 +68,43 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
     color: #f5f5f5;
 }
 
+/* Aspect des messages d’information */
+.AlertMessage {
+    background: #25291b;
+    border-color: #020202;
+}
+
+.CasualMessage {
+    background: #1b2920;
+    border-color: #020202;
+}
+
+.WarningMessage {
+    background: #291b1e;
+    border-color: #020202;
+}
+
+.InfoMessage {
+    background: #1b2920;
+    border-color: #020202;
+}
+
+.DismissMessage{
+    color: #fff;
+}
+
 /* Couleur principale du fond de la page */
-#Body, div.Popup .Body, .Preview, .hljs, #Panel .About.P, select, input {
+#Body, div.Popup .Body, .Preview, .hljs, #Panel .About.P, select, input, .token-input-dropdown {
     background-color: #222029;
 }
 
 /* Couleur alternative du fond de la page */
-.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token {
+.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token, .Count {
     background-color: #1c1b22;
 }
 
 /* Couleur des trais du tableau */
-.DataTable td, .ChildCategories, .Section-Discussion .Item-BodyWrap, .Section-Discussion .DataList .Item, .Section-Discussion .ItemDiscussion .Discussion, .Section-Discussion .DataList.Comments, .MenuItems hr, .footer-logos, .Section-Discussion .UserQuote, .hljs, #ContentPanel .panel-content, .Section-Profile #ContentPanel, select, li.token-input-token {
+.DataTable td, .ChildCategories, .Section-Discussion .Item-BodyWrap, .Section-Discussion .DataList .Item, .Section-Discussion .ItemDiscussion .Discussion, .Section-Discussion .DataList.Comments, .MenuItems hr, .footer-logos, .Section-Discussion .UserQuote, .hljs, #ContentPanel .panel-content, .Section-Profile #ContentPanel, select, li.token-input-token, .Tile, .DismissMessage ~ .DataTableWrap, .DismissMessage ~ .Discussion .PageTitle {
     border-color: #18171e;
 }
 
@@ -167,5 +192,15 @@ div.Spoiler div.SpoilerTitle input, .NavButton, body:not(.dataDriven) .ButtonGro
 .Dropdown.MenuItems a:hover, .Flyout.MenuItems a:hover, .editor-dd-emoji + .editor-insert-dialog .emoji-wrap:hover {
     background-color: #18171e88 !important;
     color: #ccc !important;
+}
+
+/* Aspet de la liste des destinataires pour un nouveau message privé */
+.token-input-dropdown-item, .token-input-dropdown-item2, .token-input-dropdown {
+    background-color: #222029 !important;
+    border-color: #18171e !important;
+}
+
+.token-input-selected-dropdown-item {
+    background-color: #1c1b22 !important;
 }
 }
