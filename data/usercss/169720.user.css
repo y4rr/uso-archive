@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         theredhood
 @description    `Dark theme of my.bible.com.`
-@version        2020729.4.20
+@version        20201021.4.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,7 +26,8 @@ div.devo-audio-disclaimer,
 .card,
 .bible-reader .note.show .body,
 .element-to-translate,
-.header {
+.header,
+.yv-lang-toggle {
     background: #333 !important;
     color: #fff !important;
     border: 0 !important;
@@ -57,12 +58,15 @@ input,
 .subscription-actions span,
 .plan-day-slider .day,
 .subscription-show p,
-.verse-action-footer, .verse-selection, .yv-button-bar-button,
+.verse-action-footer,
+.verse-selection,
+.yv-button-bar-button,
 .gray-background,
 .yv-profile-menu.false,
 .card,
 .yv-profile-name,
-.trigger-button.open{
+.trigger-button.open,
+.header.medium-8.small-11.centered.vertical-center {
     color: #fff !important;
     background: #212121 !important;
     border: 0;
@@ -94,14 +98,21 @@ div.progress-bar,
 
 button.slick-arrow,
 .moment-actions-like.ng-scope,
-.circle-buttons,
 .checkmark-container {
     filter: invert(1);
     color: #AF4895;
 }
 
-.yv-icon-button:hover span {
-    color: #fff !important;
+.circle-buttons {
+    filter: invert(0);
+}
+
+.yv-icon-button span {
+    filter: invert(1) brightness(2);
+}
+
+.yv-icon-button .yv-icon-button-svg svg {
+    filter: invert(1) brightness(2);
 }
 
 .plan-day-slider .day.active {
@@ -134,6 +145,10 @@ blockquote p {
 }
 
 .plan-day-slider .day h4 div {
-    border:0 !important;
+    border: 0 !important;
+}
+
+.plan-day-slider .day {
+    background: #333 !important;
 }
 }

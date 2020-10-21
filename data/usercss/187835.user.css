@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         danny rh
 @description    `animeflv in dark mode , player cine mode and hide ads`
-@version        20201014.23.13
+@version        20201021.1.7
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -226,4 +226,16 @@ div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0p
     display: none !important ;
 }
 
+}
+
+@-moz-document url-prefix("https://streamtape.com") {
+
+iframe[style="width: 100% !important; height: 135.4px !important; opacity: 1 !important; max-width: 420px !important; border: medium none !important; position: fixed !important; display: block !important; z-index: 2147483647 !important; inset: 15px 0px auto auto !important; background: transparent none repeat scroll 0% 0% !important;"],
+.hktptdhph, 
+div[style="position: fixed; display: none; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"],
+.doubleclick{
+    display: none !important ;
+    border-radius: 100px;
+    clip-path: circle(0);
+}
 }

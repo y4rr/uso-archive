@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         darkfx
 @description    `Minimalistic purple spotify theme with rounded buttons.Screenshot(old): <a href="https://i.imgur.com/l6pVqI8.jpg">CLICK HERE!</a>Screenshot(new) <a href="https://i.imgur.com/oLaCxLU.jpg">CLICK HERE!</a>Please send feedback, if you like the theme.`
-@version        20201011.22.2
+@version        20201021.9.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -787,5 +787,14 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
     left: -8px;
     position: relative;
     width: 232px;
+}
+
+.RootlistItem--is-drop-target-active .GlueDropTarget {
+    color: var(--buttonhover2);
+}
+
+.RootlistItem--is-drop-target-active .GlueDropTarget:after {
+    color: var(--buttonhover2);
+    border-color: var(--buttonhover2);
 }
 }
