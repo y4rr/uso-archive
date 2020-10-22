@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rickard Elimää (This is Pulp)
 @description    `Latest version (2020) of Facebook is severely bloated. A few minor changes removes the biggest issues. You want to read the feed, and that's the first thing you should notice.Tested on Firefox and Chrome on Mac.`
-@version        2020926.15.54
+@version        20201022.3.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,9 +35,10 @@ div[role="feed"] > span {
     display: none;
 }
 
-div[role="main"] > div > div > div:last-child > div { /* feed area */
+/* feed area */
+/*div[role="main"] > div > div > div:last-child > div { 
     max-width: 50vw;
-}
+}*/
 
 div[role="main"] > div > div > div:last-child > div[data-name="media-viewer-nav-container"] { /* when clicking up an image */
     max-width: initial;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         HebaruSan
 @description    `Replaces most colors in the KSP forum with very dark shades of blue.Also makes profile pics square again.`
-@version        20201021.23.16
+@version        20201022.4.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -107,6 +107,7 @@ html[dir] .ipsStream_withTimeline .ipsStreamItem.ipsStreamItem_actionBlock:after
     color: hsla(240, 60%, 60%, 0.8);
 }
 
+#elSearchExpanded,
 .cUserHovercard,
 .ipsDataList_readStatus *,
 .ipsMenu_title,
@@ -171,6 +172,7 @@ li.ipsMenu_item > a:not(.ipsMenu_itemInline) {
     background-color: hsla(240, 25%, 20%, 0.8);
 }
 
+.cRatingColumn_on,
 .ipsApp .ipsButton_veryLight,
 .ipsApp .ipsButton_light,
 .ipsButtonBar .ipsButtonRow li > a,
@@ -188,10 +190,12 @@ li.ipsMenu_item > a:not(.ipsMenu_itemInline) {
     color: hsla(240, 0%, 100%, 0.8);
 }
 
+.cAnswerRate:not(.ipsType_positive):not(.ipsType_negative),
 .ipsPager {
     color: hsla(240, 20%, 60%, 0.8);
 }
 
+#ipsLayout_sidebar,
 footer#ipsLayout_footer {
     display: none;
 }

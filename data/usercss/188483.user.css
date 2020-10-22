@@ -2,14 +2,15 @@
 @name           YouTube Studio Dark Theme
 @namespace      USO Archive
 @author         Lexan
-@description    `The official Discord server for the development of this style is live! Feel free to join here - https://discord.gg/dzTHgHbThis theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201013.12.50
+@description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
+@version        20201022.2.22
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v4.2*/
+/* Dark Creator Studio v4.3*/
 /* Created by Leon Flame, edited by Lexan*/
+
 /* Dark Scrollbar*/
 
 ::-webkit-scrollbar,
@@ -87,93 +88,7 @@
     --ytcp-call-to-action-ripple: #eee !important;
 }
 
-/* Cards */
-
-.default-card.ytcd-card{
-    background: var(--bg-color);
-}
-
-.page-title-container.ytcp-app{
-    background-color: var(--bg2-color);
-}
-
-.ytcd-item > div > .item-title {
-    color: var(--text-color);
-}
-
-.ytcd-item > div > div > div {
-    color: var(--text-color) !important;
-}
-
-#metrics-table > div > div {
-    color: var(--text-color) !important;
-}
-
-.ytcd-item > div > .section-title > span {
-    color: var(--text-color) !important;
-}
-
-.ytcd-item > div > .top-videos > table > tbody > tr > td {
-    color: var(--text-color) !important;
-}
-
-.default-card.ytcd-card > .card-title {
-    color: var(--text-color);
-}
-
-.default-card.ytcd-card > ytcd-item > ytcd-ki-item > div > ul > li > a > span {
-    color: var(--text-color);
-}
-
-.card-title {
-    color: var(--text-color) !important;
-}
-
-.ytcd-item > .header > #title {
-    color: var(--text-color) !important; 
-}
-
-.ytcd-item > .content > span {
-    color: var(--text-color) !important; 
-}
-
-ytcd-subscriber-highlights-item > .title {
-    color: var(--text-color) !important; 
-}
-
-ytcd-subscriber-highlights-item > .subtitle {
-    color: var(--text-color) !important; 
-}
-
-ytcd-subscriber-highlights-item > ul > li > ytcp-ve > a > div > span {
-    color: var(--text-color) !important; 
-}
-
-ytcd-video-snapshot-item > div > .title{
-    color: var(--text-color) !important; 
-}
-
-#video-snapshot.yta-video-snapshot {
-    background: none;
-}
-
-#video-snapshot.yta-video-snapshot > ytcp-ve > div {
-    color: var(--text-color) !important; 
-    
-}
-
-#video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > span {
-    color: var(--text-color) !important; 
-    
-}
-
-#video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > iron-icon {
-    fill: var(--text-color) !important; 
-    
-}
-
-/* End Cards */
-
+/*---------------------------------------------------------OLD CODE----------------------------------------------------------------*/
 #menu-header.ytcp-missing-features-menu {
    color: var(--text-color) !important;  
 }
@@ -233,11 +148,6 @@ paper-icon-item.ytcp-missing-features-menu:hover {
 #bottom-section > ul > li > ytcp-ve > paper-icon-item:hover > iron-icon {
     color: var(--accent-color) !important;
 }
-
-
-/* ytcp-button {
-    color: var(--accent-color) !important;
-} */
 
 ytcp-button[raised] {
     min-width: 88px;
@@ -815,10 +725,6 @@ ytcp-navigation[keyboard-focus] .menu-item[selected].ytcp-navigation:focus, .men
     color:var(--text-color) !important;
 }
 
-.note.ytcp-channel-settings {
-    color:var(--text-color) !important;
-}
-
 a.ytcp-channel-settings, a.ytcp-channel-settings > iron-icon[icon$="open-in-new"].ytcp-channel-settings {
     color: var(--accent-color) !important;
 }
@@ -828,10 +734,6 @@ a.ytcp-channel-settings, a.ytcp-channel-settings > iron-icon[icon$="open-in-new"
 }
 
 .section-title.ytcp-account-linking .section-label.ytcp-account-linking {
-    color:var(--text-color) !important;
-}
-
-.note.ytcp-account-linking {
     color:var(--text-color) !important;
 }
 
@@ -868,10 +770,6 @@ iron-icon[compact].ytcp-channel-branding-settings {
 
 .section-label.ytcp-upload-defaults-settings {
     color:var(--text-color) !important;
-}
-
-#blocked-links-hint.ytcp-community-settings {
-    color:var(--text-color) !important;   
 }
 
 iron-icon[compact].ytcp-form-input-container {
@@ -1015,11 +913,6 @@ ytcp-video-thumbnail-with-info {
     color: var(--text-color); 
 }
 
-#create-icon{
-    background-color: var(--accent-add-color);
-    border-color: transparent !important;
-}
-
 .ytcp-home-button img{
     content: url("https://lngnews.ru/files/yt_studio_logo.svg");
         Filter:drop-shadow(0px 0px 4px #0005);
@@ -1056,10 +949,6 @@ ytcp-icon-button.ytcp-quick-actions{
 
 .style-scope.iron-icon[d="M4 13h6V7h4L7 0 0 7h4z"], .iron-icon[d="M23,12a11,11,0,0,1-3.22,7.78l-1.41-1.41a9,9,0,0,0,0-12.73l1.41-1.41A11,11,0,0,1,23,12ZM5.64,5.64,4.22,4.22a11,11,0,0,0,0,15.56l1.41-1.41a9,9,0,0,1,0-12.73ZM16.95,7.05,15.54,8.46a5,5,0,0,1,0,7.07l1.41,1.41a7,7,0,0,0,0-9.9Zm-9.9,0a7,7,0,0,0,0,9.9l1.41-1.41a5,5,0,0,1,0-7.07Z"], .iron-icon[d="M18,10v8H6V6h8l2-2H6A2.15,2.15,0,0,0,4,6V18a2.15,2.15,0,0,0,2,2H18a2.15,2.15,0,0,0,2-2V8Z"]{
 	fill: #bbb;
-}
-
-#create-icon iron-icon svg g path{
-	fill: var(--text-color);
 }
 
 .divider.ytcd-video-snapshot-item{
@@ -2513,6 +2402,15 @@ iron-collapse{
     background: var(--header-color);
 }
 
+#create-icon{
+    background-color: #444;
+    border-color: var(--item-color) !important;
+}
+
+#create-icon iron-icon svg g path{
+	fill: var(--accent-color);
+}
+
 .st0.style-scope.ytcp-home-button, iron-icon[icon="icons:search"]{
     fill: var(--text-color);
 }
@@ -2544,7 +2442,7 @@ iron-collapse{
 }
 
 ytcp-navigation-drawer, #left-nav{
-    background: var(--bg2-color);
+    background: #1a1a1a;
     color: var(--text-color);
 }
 
@@ -2577,7 +2475,7 @@ paper-icon-item.iron-selected.ytcp-navigation-drawer > .nav-item-text {
 }
 
 ytcp-navigation-drawer[keyboard-focus] .menu-item-link.ytcp-navigation-drawer:focus paper-icon-item.ytcp-navigation-drawer, ytcp-navigation-drawer[keyboard-focus] paper-icon-item.ytcp-navigation-drawer:focus, paper-icon-item.ytcp-navigation-drawer:hover, paper-icon-item[submenu-open].ytcp-navigation-drawer, paper-icon-item.iron-selected.ytcp-navigation-drawer {
-    background: var(--bg2-color);
+    background: var(--item-color);
 }
 
 ytcp-navigation-drawer[enable-matterhorn-entity-label] .entity-type.ytcp-navigation-drawer {
@@ -2647,6 +2545,81 @@ paper-radio-button[checked] #offRadio.paper-radio-button{
 }
 
 /*Dashboard*/
+.ytcd-item > div > .item-title {
+    color: var(--text-color);
+}
+
+.ytcd-item > div > div > div {
+    color: var(--text-color) !important;
+}
+
+#metrics-table > div > div {
+    color: var(--text-color) !important;
+}
+
+.ytcd-item > div > .section-title > span {
+    color: var(--text-color) !important;
+}
+
+.ytcd-item > div > .top-videos > table > tbody > tr > td {
+    color: var(--text-color) !important;
+}
+
+.default-card.ytcd-card > .card-title {
+    color: var(--text-color);
+}
+
+.default-card.ytcd-card > ytcd-item > ytcd-ki-item > div > ul > li > a > span {
+    color: var(--text-color);
+}
+
+.card-title {
+    color: var(--text-color) !important;
+}
+
+.ytcd-item > .header > #title {
+    color: var(--text-color) !important; 
+}
+
+.ytcd-item > .content > span {
+    color: var(--text-color) !important; 
+}
+
+ytcd-subscriber-highlights-item > .title {
+    color: var(--text-color) !important; 
+}
+
+ytcd-subscriber-highlights-item > .subtitle {
+    color: var(--text-color) !important; 
+}
+
+ytcd-subscriber-highlights-item > ul > li > ytcp-ve > a > div > span {
+    color: var(--text-color) !important; 
+}
+
+ytcd-video-snapshot-item > div > .title{
+    color: var(--text-color) !important; 
+}
+
+#video-snapshot.yta-video-snapshot {
+    background: none;
+}
+
+#video-snapshot.yta-video-snapshot > ytcp-ve > div {
+    color: var(--text-color) !important; 
+    
+}
+
+#video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > span {
+    color: var(--text-color) !important; 
+    
+}
+
+#video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > iron-icon {
+    fill: var(--text-color) !important; 
+    
+}
+
 #page-title-container.page-title-container.style-scope.ytcp-app{
     background-color: var(--bg-color);
     padding-bottom: 10px;
@@ -3159,6 +3132,16 @@ ytcp-form-live-chat[old-styling] .section-label.ytcp-form-live-chat{
     fill: var(--text-color);
 }
 
+.last-floating-column.ytcp-table-header[stuck].ytcp-table-header:after{
+    border-right: 1px solid #333;
+    border-image: none;
+}
+
+ytcp-video-row[horizontal-scroll] .last-floating-column.ytcp-video-row:after{
+    border-right: 1px solid var(--border-color);
+    border-image: none;
+}
+
 /*Subtitles*/
 
 #row-container.ytgn-video-row.row-highlighted, #row-container.ytgn-video-row.row-highlighted .floating-column.ytgn-video-row{
@@ -3229,40 +3212,6 @@ ytcp-form-live-chat[old-styling] .section-label.ytcp-form-live-chat{
     color: var(--accent-color);
 }
 
-/*End Screens*/
-#dialog-title.ytve-modal-host{
-    font-family: var(--header-font);
-}
-
-ytve-endscreen-marker.selected{
-    fill: var(--accent-color) !important;
-}
-
-/*Settings*/
-#country-description.ytcp-channel-settings{
-    color: var(--text-darken2-color);
-}
-
-#watermark-preview-container.ytcp-channel-branding-settings{
-    background-image: url(https://cdn.discordapp.com/attachments/707859462576275559/755704839211712512/branding_settings_video_watermark_player_black.svg)
-}
-
-.section-label.ytcp-channel-redirect-settings{
-    color: var(--text-color);
-}
-
-.style-scope.ytcp-channel-redirect-settings{
-    color: var(--text-color) !important;
-}
-
-.feature-level.yt-trust-tiers-features-level{
-    background-color: var(--bg3-color);
-}
-
-.yt-trust-tiers-features-level div{
-    background-color: var(--bg3-color);
-}
-
 /*Comments*/
 ytcp-comment-thread{
     border-bottom: 1px solid var(--border-color);
@@ -3331,7 +3280,56 @@ ytcp-comment-toggle-button.style-text[is-icon-button] yt-icon.ytcp-comment-toggl
 
 /*Video Editor*/
 .endscreen-center.selected{
-    background-color: var(--bg3--color) !important;
+    background-color: var(--text-color);
+    opacity: 0.6 !important;
+}
+
+ytve-endscreen-marker.selected{
+    color: var(--text-color);
+}
+
+ytve-timeline-horizontal-scrollbar.track{
+    background-color: var(--bg2-color);
+}
+
+#scrollbar-handle.ytve-timeline-horizontal-scrollbar{
+    height: 10px !important;
+}
+
+.title.ytve-shortcuts-dialog{
+    color: var(--text-color);
+}
+
+.section.ytve-shortcuts-dialog{
+    color: var(--text-color);
+}
+
+.name.ytve-shortcuts-dialog{
+    color: var(--text-darken2-color) !important;
+}
+
+.shortcuts.ytve-shortcuts-dialog{
+    background-color: var(--bg2-color);
+}
+
+.key.ytve-shortcuts-dialog{
+    color: var(--text-darken-color);
+}
+
+.key-row.ytve-shortcuts-dialog{
+    border-top: 1px solid var(--border-color);
+}
+
+.style-scope.ytve-shortcuts-dialog{
+    color: var(--text-darken-color);
+}
+
+.header.ytve-shortcuts-dialog{
+    border-bottom: var(--border-color);
+}
+
+#dialog-title.ytve-modal-host{
+    font-family: var(--header-font);
 }
 
 /*Social Blade Live Sub Count*/
@@ -3691,6 +3689,89 @@ ytcp-banner[color-theme].warning .container.ytcp-banner{
 
 ytcp-banner[color-theme] .container.ytcp-banner{
     background-color: #003970 !important;
+}
+
+/*Settings*/
+.description.ytcp-channel-settings{
+    color: var(--text-darken2-color) !important;
+}
+
+.note.ytcp-channel-settings{
+    color: var(--text-darken2-color);
+}
+
+.note.ytcp-account-linking{
+    color: var(--text-darken2-color);
+}
+
+#country-description.ytcp-channel-settings{
+    color: var(--text-darken2-color);
+}
+
+#watermark-preview-container.ytcp-channel-branding-settings{
+    background-image: url(https://cdn.discordapp.com/attachments/707859462576275559/755704839211712512/branding_settings_video_watermark_player_black.svg)
+}
+
+.section-label.ytcp-channel-redirect-settings{
+    color: var(--text-color);
+}
+
+.style-scope.ytcp-channel-redirect-settings{
+    color: var(--text-color) !important;
+}
+
+.feature-level.yt-trust-tiers-features-level{
+    background-color: var(--bg3-color);
+}
+
+.yt-trust-tiers-features-level div{
+    background-color: var(--bg3-color);
+}
+
+.style-scope.yt-trust-tiers-features-level.iron-collapse-opened{
+    background: none !important;
+}
+
+.vl.yt-trust-tiers-features-level{
+    border-left-color: var(--divider-color);
+}
+
+.tooltip-icon.yt-trust-tiers-features-level, .help-tooltip.yt-trust-tiers-features-level{
+    fill: var(--text-darken-color);
+}
+
+.ytcp-settings-dialog[slot="secondary-footer"] ytcp-button.ytcp-settings-dialog ~ ytcp-button.ytcp-settings-dialog{
+    color: var(--accent-color);
+    transition: 0.1s;
+}
+
+#cancel-button.style-scope.ytcp-settings-dialog{
+    color: var(--text-darken-color);
+}
+
+.add-account-link-button.style-scope.ytcp-account-linking{
+    color: var(--accent-color);
+}
+
+#tooltip-placeholder-fake-slot.style-scope.ytcp-paper-tooltip{
+    color: var(--text-color);
+}
+
+#add-user-button.style-scope.ytcp-permissions-settings{
+    color: var(--accent-color);
+}
+
+#blocked-links-hint.ytcp-community-settings {
+    color:var(--text-darken2-color) !important;   
+}
+
+iron-icon.check-icon.yt-trust-tiers-features-level{
+    color: var(--green-color);
+}
+
+.feature-level-unlocked.yt-trust-tiers-features-level{
+    background-color: rgba(0, 130, 7, 0.3);
+    color: var(--green-color);
 }
 
 /*Well congrats, you made it to the end, have a cookie*/

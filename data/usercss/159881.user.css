@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201022.0.38
+@version        20201022.6.24
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2544,7 +2544,7 @@ body.new_header_design .top_nav_link {
 
 [dir] body.new_header_design .ts_cont_wrap {
 /*     border-color: var(--steel_gray_120); */
-	border-color:hsl(214, 26%, 19%);
+	border-color:#242f3d;
 }
 
 body.new_header_design #side_bar .left_label {
@@ -2585,7 +2585,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 [dir] body.new_header_design .left_count_wrap {
 /*     background-color: var(--steel_gray_200); */
-	 background-color: hsl(214, 26%, 23%);
+	 background-color: #2b394a;
 }
 
 [dir] .AppLeftMenuWithNotify:before {
@@ -2602,7 +2602,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-right: none;
 }
 [dir] .poster__open-btn-wrapper::before {
-    background-color: hsl(214, 26%, 23%);
+    background-color: #2b394a;
 }
 
 [dir] body.new_header_design .top_nav_btn .top_notify_count {
@@ -2656,7 +2656,65 @@ body.new_header_design .top_audio_player_title {
 }
 
 [dir] .Textarea {
-    background: #0E1621;
+    background: #16202c;
     border-color: #242F3D;
+}
+[dir] textarea {
+    color: var(--text-white-color);
+    background: #16202c;
+    border-color: #242F3D;
+}
+
+[dir] .prefix_input_prefix, .settings_text_grey {
+    color: var(--text-white-color);
+}
+[dir] a.media_link__title {
+    color: var(--text-white-color);
+}
+[dir] a.media_link__subtitle {
+    color: #818c99;
+}
+[dir] .thumbed_link__subtitle {
+    color: #818c99 !important;
+}
+
+.post_date, .post_date .post_link, .post_date .wall_text_name_explain_promoted_post {
+    color: #818c99;
+}
+
+[dir] .msg, [dir] .ok_msg {
+    background-color: #1c2634;
+}
+
+.settings_activity_history .settings_history_main_info {
+    color: var(--text-white-color);
+}
+
+[dir] .idd_popup .idd_item.idd_hl {
+	background-color: #242f3d;
+/*     background-color: rgb(49, 65, 84); */
+}
+[dir] .page_block_header {
+	background-color: #1c2634;
+/*     color: #FFF; */
+/*     background-color: rgba( 36, 47, 66, .38 ); */
+/*     border-bottom-color: #242F3D; */
+}
+[dir] .stats_cont_browse_tile {
+    background-color: #1c2634;
+/*     box-shadow: 0 4px 20px 0 var(--black_alpha8); */
+}
+[dir] .stats_cont_browse_tile .stats_cont_browse_tile_desc {
+    background-color: #1c2634;
+}
+.browse_stat_chart>svg>g>path:nth-child(1) {
+	fill: #1c2634;
+}
+.stats_cont_browse_tile .stats_cont_browse_tile_caption .stats_cont_browse_tile_caption_title,
+.stats_cont_browse_tile {
+    color: var(--text-white-color);
+}
+[dir] #visitors_graph {
+    color: #8EC5FF !important;
 }
 }

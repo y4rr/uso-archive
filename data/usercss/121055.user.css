@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         manolito
 @description    `- Hides MAIL.COM ads sidebar- Dark Mode (Customizable main colors)`
-@version        202084.12.8
+@version        20201022.9.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown AdsCols "Choose Ads / Custom Colors" {
-	NoAds "Hide Ads only*" <<<EOT /*---------------------------------------*\/ EOT;
-NoAdsCols "Hide Ads + Custom Colors" <<<EOT /*---------------------------------------*\/
+	NoAds "Hide Ads only*" <<<EOT /*--------NO-ADS------------------------------*\/ EOT;
+NoAdsCols "Hide Ads + Custom Colors" <<<EOT /*--------COLORS-----------------------------*\/
 
 html,
 [id^="editor-"],
@@ -18,9 +18,17 @@ html,
 cloud-tree-node *,
 :not(:empty):not(i):not(img):not(input):not(svg):not(audio):not(video):not(button):not(pos-brand-logo):not(pos-icon-item):not(pos-spinner):not([class*="atl-app-contents-wrapper"]):not([class*="customhtml"]):not([class*="icon"]):not([class*="lightbox"]):not([class*="m-button"]):not([class*="ng-binding ng-scope"]):not([class*="ng-isolate-scope active"]):not([class*="player"]):not([class*="prite"]):not([class*="stars"]):not([class*="video"]):not([class^="atl-actions-menu"]):not([class^="atl-navbar"]):not([class^="form-submit"]):not([class^="id"]):not([id="id123"]):not([class^="pos-"]):not([class="compose-header_control"]):not([class="control controlSec"]):not([class="rating"]):not([id*="lbImage"]):not([id*="player"]):not([id*="prite"]):not([id*="stars"]):not([id*="video"]):not([id="rating"]):not([data-component="ButtonGroup"]):not([data-id="selectOne"]):not([onclick*="open"]):not([class="themewrapper"]):not([class="header-bar"])>*:not([class="btn btn-block login-submit"]):not([class^="atl-"]):not([class="btn btn-3d-green button-search"]):not([class="button cta  mailcom "]):not([class*="icon"]):not([class*="checkbox"]) {
   color: /*[[TextColor]]*\/ !important;
-  background: none /*[[BgColor]]*\/ !important;
+  background-color: /*[[BgColor]]*\/;
 }
 
+div[class^="nav-item"]:hover *,
+div.panel.panel-search *
+{
+
+    background-color: /*[[ScrThumb]]*\/ !important; 
+    border-style: none !important;
+
+}
 
 
 input:not([class="form-submit"]),
@@ -133,6 +141,7 @@ pos-third-party-app,
 }
 
 /*[[AdsCols]]*/
+
 
 /*[[NoAdsCols]]*/
 

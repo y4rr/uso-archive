@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           ViralNova  by BamaBraves
+@name           ViralNova Dark  by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        201938.6.24
+@version        20201022.3.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("viralnova.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("viralnova.com") {
@@ -72,7 +77,7 @@ ul::-webkit-scrollbar-thumb:hover,
 	text-transform: capitalize!important;
 }
 
-selector,
+article h1[itemprop=headline] a:hover,
 :focus {
 	border: none!important;
 	outline: none!important;
@@ -81,17 +86,12 @@ selector,
 
 /*___ Fonts ________________________________________________________________________*/
 
-.post-box-detail p,
-.sprc1YjLM .sprc1GjYe .sprc2wE2_,
-h1, h2, h3, h4, h5, h6,
-body {
-	font-family: cursive, Roboto, Arial, sans-serif!important;
-}
-
-selector {
+section div[itemprop=name] {
 	font-size: 21px!important;
 }
-.post-box-detail p
+
+.post-box-detail p,
+article section span
  {
 	font-size: 19px!important;
 }
@@ -139,7 +139,8 @@ selector {
 /*___ Paddings _____________________________________________________________________*/
 
 .col-sm-4,
-.sprc1YjLM .sprc5DECK
+.sprc1YjLM .sprc5DECK,
+article
 {
 	padding: 12px!important;
 }
@@ -164,7 +165,9 @@ selector {
 
 /*___ Widths _______________________________________________________________________*/
 
-.container {
+.container,
+main
+{
 	max-width: none!important;
 }
 
@@ -172,11 +175,15 @@ selector {
 	width: auto!important;
 }
 
-.col-sm-8 {
+.col-sm-8,
+main
+{
     width: 95%!important;
 }
 
-.container {
+.container,
+article
+{
 	width: 98%!important;
 }
 
@@ -189,7 +196,9 @@ selector {
     width: 31.33333%!important;
 }
 
-
+article section {
+    flex: 0 1 33%;
+}
 
 
 
@@ -225,6 +234,7 @@ input[type="radio"]:checked+label {
 /*__________________________________________________________________________________*/
 
 .sprc1YjLM .sprc16C2K,
+article section span,
 li,
 p {
 	color: #fff!important;
@@ -340,30 +350,6 @@ pre ::selection {
 .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
     color: #ff6cbe!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("viralnova.com") {
@@ -377,8 +363,10 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
-
-.navbar.navbar-default {
+.navbar.navbar-default,
+footer,
+header
+{
 	background-color: #060505!important;
 }
 
@@ -448,7 +436,7 @@ selector:hover {
 
 /*__ Red __________________________________________________________________________*/
 
-selector {
+article .pagination a {
 	background-image: linear-gradient(to bottom right, #f00, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
@@ -456,12 +444,12 @@ selector {
 	color: #fff!important;
 }
 
-selector:hover {
+article .pagination a:hover {
 	background-image: linear-gradient(to bottom right, #f11, #000)!important;
 	color: #ff0!important;
 }
 
-selector:active {
+article .pagination a:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
@@ -562,14 +550,20 @@ selector:active {
 
 /*___ Plain Black __________________________________________________________________*/
 
-.col-sm-8 {
+.col-sm-8,
+article,
+article nav
+{
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.col-sm-8:hover {
+.col-sm-8:hover,
+article:hover,
+article nav:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -578,7 +572,8 @@ selector:active {
 .col-sm-4,
 .inner-content .sign-up-box,
 .navbar.navbar-default .navbar-nav li ul.more-links-box,
-.sprc1YjLM .sprc5DECK
+.sprc1YjLM .sprc5DECK,
+article section
 {
 	background-color: #111!important;
 	border-radius: 22px!important;
@@ -589,7 +584,8 @@ selector:active {
 .col-sm-4:hover,
 .inner-content .sign-up-box:hover,
 .navbar.navbar-default .navbar-nav li ul.more-links-box:hover,
-.sprc1YjLM .sprc5DECK:hover
+.sprc1YjLM .sprc5DECK:hover,
+article section:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -636,21 +632,14 @@ selector {
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("viralnova.com") {
 /*__________________________________________________________________________________*/
 
 .col-sm-4,
-.sprc1YjLM .sprc5DECK
+.sprc1YjLM .sprc5DECK,
+article section
 {
 	filter: brightness(75%)!important;
 }
@@ -658,7 +647,8 @@ selector {
 /*__________________________________________________________________________________*/
 
 .col-sm-4:hover,
-.sprc1YjLM .sprc5DECK:hover
+.sprc1YjLM .sprc5DECK:hover,
+article section:hover
 {
 	filter: brightness(100%)!important;
 }
@@ -676,7 +666,6 @@ img {
 }
 
 /*__________________________________________________________________________________*/
-
 
 li,
 p,
@@ -703,6 +692,61 @@ selector {
 .sprc1YjLM .sprc5DECK:hover,
 img:hover {
 	opacity: 1!important;
+}
+}
+
+@-moz-document domain("viralnova.com") {
+
+
+/* Logo _______________________________________________________________*/
+
+.logo-VNO {
+	background: url(https://i.ibb.co/LzXnBsj/vno-logo.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.logo-VNO {
+    background-size: 213px!important;
+    height: 72px!important;
+    padding-left: 222px!important;
+    width: 10px!important;
+}
+
+/* Social Media _________________________________________________________*/
+
+.social a.pinterest,
+.social div.share.facebook {
+    border: none;
+}
+
+/* Facebook _____________*/
+
+.social div.share.facebook {
+	background: url(https://i.ibb.co/bvgwKNN/facebook-48x48.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.social div.share.facebook {
+    background-size: 41px!important;
+    height: 46px!important;
+    padding-left: 0x;
+}
+
+/* Pinterest _____________*/
+
+.fa-pinterest:before {
+    content: "";
+}
+
+.social a.pinterest {
+	background: url(https://i.ibb.co/bbYn4KN/pinterest-48x48.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.social a.pinterest {
+    background-size: 41px!important;
+    height: 46px!important;
+    padding-left: 0;
 }
 
 }

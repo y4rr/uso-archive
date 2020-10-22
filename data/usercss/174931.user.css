@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           learn101.org by BamaBraves
+@name           learn101 Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        201992.17.12
+@version        20201022.2.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("http://learn101.org") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document url-prefix("http://learn101.org") {
@@ -68,15 +73,11 @@ ul::-webkit-scrollbar-thumb:hover,
 	text-decoration: none!important;
 }
 
-selector {
-	text-transform: capitalize!important;
-}
-
 .panel,
 :focus {
 	border: none!important;
-	outline: none!important;
 	box-shadow: none!important;
+	outline: none!important;
 }
 
 
@@ -90,18 +91,16 @@ table {
     border-collapse: separate;
 }
 
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th
+{
+    border: 1px solid #ddd;
+}
+
 /*___ Fonts ________________________________________________________________________*/
 
 body {
 	font-family: cursive, Roboto, Arial, sans-serif!important;
-}
-
-selector {
-	font-size: 21px!important;
-}
-
-selector {
-	font-size: 19px!important;
 }
 
 p, ul, il, ol,
@@ -109,15 +108,6 @@ body {
 	font-size: 17px!important;
 }
 
-selector {
-	font-size: 15px!important;
-	line-height: 27px!important;
-}
-
-selector {
-	font-size: 14px!important;
-	line-height: 19px!important;
-}
 
 /*___ Remove Items _________________________________________________________________*/
 
@@ -129,21 +119,20 @@ selector {
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-
 #sidebar-wrapper {
     left: 0;
 }
 
-
 /*___ Margins ______________________________________________________________________*/
-
 
 #sidebar-wrapper
 {
 	margin: 12px!important;
 }
 
-#page-content-wrapper {
+#page-content-wrapper,
+img.ax
+{
 	margin: 1rem 3rem!important;
 }
 
@@ -199,6 +188,7 @@ selector {
 
 @-moz-document url-prefix("http://learn101.org") {
 /*__________________________________________________________________________________*/
+
 a[href],
 td span {
 	color: #0ff!important;
@@ -211,7 +201,6 @@ a[href]:visited {
 }
 
 /*__________________________________________________________________________________*/
-
 
 a[href]:hover span,
 a[href]:hover,
@@ -237,55 +226,30 @@ th,
 h1,
 h2 {
 	color: #F0E890!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
 
-
 h3,
 h4 {
 	color: #e0b880!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-
 h5,
 h6,
 label {
 	color: #F0A060!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Blue _________________________________________________________________________*/
 
-
 time {
 	color: #07beff!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
-}
-
-/*___ Green ________________________________________________________________________*/
-
-
-selector {
-	color: #07ff24!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
-}
-
-/*___ Red __________________________________________________________________________*/
-
-
-selector {
-	color: #ff0707!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -364,17 +328,11 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
-
 .navbar-inverse {
 	background-color: #060505!important;
 }
 
-selector {
-    background-color: #0a0909!important;
-}
-
 /*___ Background 0000 ______________________________________________________________*/
-
 
 .sidebar-nav li a:hover
 {
@@ -383,118 +341,11 @@ selector {
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-.table-hover>tbody>tr:hover,
 .panel,
-.panel-default>.panel-heading
+.panel-default>.panel-heading,
+.table-hover>tbody>tr:hover
 {
 	background-color: rgba(0, 0, 0, 0)!important;
-}
-
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	border-left-color: #434343!important;
-	background: linear-gradient(to right, #383838, #0000)!important;
-}
-
-/*__________________________________________________________________________________*/
-
-code,
-pre {
-	background: #111!important;
-	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
-	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
-}
-
-code {
-    background: #FDFCE4!important;
-    border: 1px solid #eec!important;
-    font-size: 110%!important;
-    padding: 3px 8px!important;
-    white-space: pre-wrap!important;
-}
-
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	background: linear-gradient(to right, #383838, #0000)!important;
-	border-left-color: #434343!important;
-}
-
-/*__ Blue __________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
-	border-radius: 10px!important;
-	border: none!important;
-	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-	color: #fff!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
-	color: #ff0!important;
-}
-
-selector:active {
-	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-}
-
-/*__ Red __________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom right, #f00, #000)!important;
-	border-radius: 10px!important;
-	border: none!important;
-	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-	color: #fff!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom right, #f11, #000)!important;
-	color: #ff0!important;
-}
-
-selector:active {
-	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-}
-
-/*__ Orange ________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
-	border-radius: 10px!important;
-	border: none!important;
-	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-	color: #fff!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
-	color: #ff0!important;
-}
-
-selector:active {
-	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-}
-
-/*___ Green ________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
-	border-radius: 10px!important;
-	border: none!important;
-	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-	color: #fff!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
-	color: #ff0!important;
-}
-
-selector:active {
-	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 /*___ Plain Black __________________________________________________________________*/
@@ -514,60 +365,13 @@ selector:active {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*___ Plain ________________________________________________________________________*/
-
-selector {
-	background-color: #111!important;
-	border-radius: 22px!important;
-	border: 1px solid rgba(0, 0, 0, .25)!important;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
-
-selector:hover {
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
-
 /*___ Red Gradient _________________________________________________________________*/
 
-[summary="Latin Alphabet"] tr:hover,
-.table-hover>tbody>tr td:hover {
+.table-hover>tbody>tr td:hover,
+[summary="Latin Alphabet"] tr:hover
+{
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border: 1px solid #fff!important;
-}
-
-/*__ Blue Gradient _________________________________________________________________*/
-
-selector {
-	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-}
-
-/*__ Green Gradient ________________________________________________________________*/
-
-selector {
-	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
-}
-
-/*__ Yellow Gradient _______________________________________________________________*/
-
-selector {
-	background: linear-gradient(to bottom, #9d9d5d 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
-}
-
-/*__ Orange Gradient _______________________________________________________________*/
-
-selector {
-	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
 }
 
 
@@ -582,27 +386,19 @@ selector {
 @-moz-document url-prefix("http://learn101.org") {
 /*__________________________________________________________________________________*/
 
-
-[summary="Latin Alphabet"] tr,
-.table-hover>tbody>tr td
+.table-hover>tbody>tr td,
+[summary="Latin Alphabet"] tr
 {
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-
-[summary="Latin Alphabet"] tr:hover,
-.table-hover>tbody>tr td:hover
+.table-hover>tbody>tr td:hover,
+[summary="Latin Alphabet"] tr:hover
 {
 	filter: brightness(100%)!important;
 }
-
-/*__________________________________________________________________________________
-img {
-	border-radius: 22px!important;
-}
-*/
 
 /*__________________________________________________________________________________*/
 
@@ -612,14 +408,12 @@ img {
 
 /*__________________________________________________________________________________*/
 
-
 li,
 p,
 tr {
 	filter: brightness(68%)!important;
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
-
 
 li:hover,
 p:hover,
@@ -629,36 +423,23 @@ tr:hover {
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
 
-/*__________________________________________________________________________________*/
-
-selector {
-	opacity: .8!important;
-}
-
-selector:hover {
-	opacity: 1!important;
-}
-
 }
 
 @-moz-document url-prefix("http://learn101.org") {
 
+/* Arrow Right _______________________________________________________________*/
 
-
-
-/* Menu ____________________________________________________________*/
-
-[src="images/toggle3.png"] {
-	background: url(https://i.ibb.co/1QGfKdb/Hamburger-icon.png) no-repeat!important;
+[src="images/arrow_tr.png"]
+{
+	background: url(https://i.ibb.co/LQDKzQT/right-arrow-30x30.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="images/toggle3.png"] {
-    width: 34px!important;
+[src="images/arrow_tr.png"] {
+    background-size: 34px!important;
+    height: 31px!important;
     padding-left: 36px!important;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    background-size: 30px!important;
+    width: 1px!important;
 }
 
 /* Audio ____________________________________________________________*/
@@ -669,6 +450,21 @@ selector:hover {
 }
 
 [src="images/audio.png"] {
+    width: 34px!important;
+    padding-left: 36px!important;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-size: 30px!important;
+}
+
+/* Menu ____________________________________________________________*/
+
+[src="images/toggle3.png"] {
+	background: url(https://i.ibb.co/1QGfKdb/Hamburger-icon.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src="images/toggle3.png"] {
     width: 34px!important;
     padding-left: 36px!important;
     margin-left: 1rem;
