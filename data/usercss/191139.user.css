@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         HebaruSan
 @description    `Replaces most colors in the KSP forum with very dark shades of blue.Also makes profile pics square again.`
-@version        20201021.4.10
+@version        20201021.23.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,7 +27,7 @@ a {
 }
 
 #elSearch {
-    background-color: hsla(240, 10%, 30%, 0.8);
+    background-color: hsla(240, 20%, 10%, 0.8);
     color: hsla(240, 0%, 100%, 0.8);
 }
 
@@ -117,14 +117,16 @@ html[dir] .ipsStream_withTimeline .ipsStreamItem.ipsStreamItem_actionBlock:after
     color: hsla(240, 0%, 100%, 0.8);
 }
 
+.ipsHovercard_stemTop .ipsHovercard_stem:before,
+.ipsHovercard_stemTop .ipsHovercard_stem:after {
+    border-top-color: hsla(240, 15%, 25%, 1.0);
+}
 .ipsHovercard_stemBottom .ipsHovercard_stem:before,
 .ipsHovercard_stemBottom .ipsHovercard_stem:after,
-.ipsMenu.ipsMenu_bottomCenter:after,
-.ipsMenu.ipsMenu_bottomCenter:before {
+.ipsMenu.ipsMenu_bottomCenter:after {
     border-bottom-color: hsla(240, 15%, 25%, 1.0);
 }
 
-.ipsMenu.ipsMenu_topCenter:before,
 .ipsMenu.ipsMenu_topCenter:after {
     border-top-color: hsla(240, 15%, 25%, 1.0);
 }
@@ -143,24 +145,30 @@ li.ipsMenu_item > a:not(.ipsMenu_itemInline) {
 
 .ipsApp input[type="text"],
 [data-ipseditor],
-.cke_reset_all *,
 .cke_reset_all a,
 .cke_button,
+.cke_reset_all *,
 .ipsApp .ipsField_autocomplete,
 .ipsComposeArea_dummy,
 .ipsApp .cke_wysiwyg_frame,
 .ipsApp .cke_wysiwyg_div {
-    background-color: hsla(240, 20%, 50%, 1.0);
+    background-color: hsla(240, 20%, 10%, 1.0);
     color: hsla(240, 0%, 100%, 0.8);
 }
 
-.ipsComposeArea_withPhoto [data-ipseditor]::after,
-.ipsComposeArea_withPhoto [data-ipseditor]::before {
-    border-right-color: hsla(240, 20%, 50%, 1.0) !important;
+.cke_button_icon {
+    filter: brightness(300%);
+}
+.cke_button__ipsspoiler_icon {
+    filter: invert(100%);
+}
+
+.ipsComposeArea_withPhoto [data-ipseditor]::after {
+    border-right-color: hsla(240, 20%, 10%, 1.0) !important;
 }
 
 .ipsAreaBackground_light {
-    background-color: hsla(240, 25%, 45%, 0.8);
+    background-color: hsla(240, 25%, 20%, 0.8);
 }
 
 .ipsApp .ipsButton_veryLight,

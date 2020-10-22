@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         jiraph
 @description    `Dark mode/Night mode for the basic theme on snahp.it forums.For this theme to work properly, you first need to change your theme on your snahp.it profile. To do this, go to 'User Control Panel' > 'Board Preferences' > 'Edit Global Settings' and set 'My board style' to 'Basic'.`
-@version        2020111.1.53
+@version        20201021.23.28
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,8 +13,8 @@
 
 	Author : jiraph
 	CC     : CC BY-NC-SA
-	Version: 1.0.2
-	Date   : 2020-01-10
+	Version: 1.0.3
+	Date   : 2020-10-21
 */
 
 
@@ -25,7 +25,8 @@ body {
 }
 html,
 body {
-    color: #ffffff !important
+    color: #ffffff !important;
+    background-color: #26272b;
 }
 
 
@@ -177,11 +178,15 @@ h3 a,
 
 /*ACTION BAR*/
 .button,
-.buttons > .button.locked-icon {
+.buttons > .button.locked-icon,
+.pagination li a {
     background-color: #4f535b;
     background-image: none;
     color: #25a0f8;
     border-color: #4f535b
+}
+.pagination li.ellipsis span {
+    color: #fff
 }
 
 /*LEFT PROFILE SIDEBAR*/
@@ -233,6 +238,9 @@ input.button2 {
     border-color: #4f535b;
     background-image: none
 }
+#message-box textarea {
+    color:#fff
+}
 
 /*FULL REPLY*/
 .bg3.panel {
@@ -272,14 +280,27 @@ fieldset.polls dl {
 
 /*CODEBOX*/
 .codebox,
-.codebox p,
-blockquote,
-blockquote cite {
-    background-color: #26272b;
-    border-color: #676a76;
+.codebox p {
+    background-color: #26272b ;
+    border-color: #676a76 ;
 }
 .codebox code {
     color: lime;
+}
+
+/*QUOTES*/
+blockquote blockquote,
+blockquote .codebox,
+blockquote .attachbox {
+    background-color: #34373c!important; 
+}
+blockquote,
+blockquote cite, 
+blockquote blockquote blockquote,
+blockquote blockquote .codebox,
+blockquote blockquote .attachbox {
+    background-color: #26272b !important;
+    border-color: #676a76 ;
 }
 
 /*HIDEBOX*/
@@ -294,7 +315,8 @@ dl.hi > dd {
 
 /*IMDB CARD*/
 .imdb-template11,
-.imdb-template180 .caption {
+.imdb-template180 .caption,
+.imdb-template186 .caption {
     background-color: #26272b
 }
 .MuiRating-iconEmpty {
@@ -305,7 +327,8 @@ dl.hi > dd {
 
 /*USER CONTROL PANEL*/
 .panel-container .panel {
-    background: #3e4147
+    background: #3e4147;
+    border-radius: 2px;
 }
 .panel,
 .panel-container > form > .submit-buttons,
@@ -336,6 +359,18 @@ dl.details dt {
     border-color: #34373c
 }
 
+/*PM'S*/
+.cp-mini {
+    background-color: #3e4147;
+    margin: 10px 0px 0px 0px;
+}
+#cp-main .pm {
+    background-color: #3e4147;
+    border: none;
+    border-radius: 2px;
+}
+
+
 
 
 /*FAQ*/
@@ -360,7 +395,5 @@ h2 {
 .twbs .table {
     color: #fff;
 }
-
-
 
 }

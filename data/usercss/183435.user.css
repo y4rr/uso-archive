@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Godot le gros chien
 @description    `A wikipedia black theme about Girl und Panzer where the wikipedia logo is replace by the oarai one.`
-@version        20201020.23.18
+@version        20201021.16.55
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,7 @@
     background-attachment: fixed!important;
     background-size: 25% !important;
     background-repeat: no-repeat!important;
-    background-position: 80% 100%!important;
+    background-position: 74% 100%!important;
   }
 
   .need_ref,
@@ -917,8 +917,8 @@ span
 
     .infobox
   {
-    position: relative !important;
-    left: 700px !important;
+    position: absolute !important;
+    left: 1300px !important;
   }
 
 
@@ -944,18 +944,11 @@ span
     font-weight: 400 !important;
   }
 
- .infobox_v2
+ .infobox_v2,
+ .infobox_v3
   {
-    position: relative !important;
-    left: 650px !important;
-    background: transparent !important;
-    border-color: transparent !important;
-  }
-
-  .infobox_v3
-  {
-    position: relative !important;
-    left: 650px !important;
+    position: absolute !important;
+    left: 1250px !important;
     background: transparent !important;
     border-color: transparent !important;
   }
@@ -986,7 +979,7 @@ span
 
   .mw-body-content
   {
-    width: 900px !important;
+    width: 750px !important;
   }
 
   .mw-body

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.1 (β)
+@name           Compact Tube (White) v1.2.2 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        20201019.14.40
+@version        20201021.14.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.1 (β) */
+/* CompactTube (White) v1.2.2 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -399,7 +399,7 @@ yt-img-shadow.ytd-collage-hero-image-renderer.no-transition {height: 77.5px; wid
 ytd-horizontal-card-list-renderer.ytd-watch-card-section-sequence-renderer {width: 286px; -o-overflow: auto;}
 
 /* Позицианирование Кнопки [НАПОМНИТЬ] в разделе "Поиск" */
-#buttons.ytd-video-renderer {margin-left: -6px;} /* div#buttons.ytd-video-renderer */
+#buttons.ytd-video-renderer {margin-left: -6.5px;} /* div#buttons.ytd-video-renderer */
 
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
@@ -537,6 +537,31 @@ ytd-grid-movie-renderer {
 
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " Yutube Music " - youtube.com/music  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+/* центровка горизонтального списка "Радиостанций"  */
+.flex-container.ytd-compact-station-renderer {
+    background-color: var(--yt-playlist-background-item);
+    margin-left: 5px;
+    width: 312px; /*def 317px; , 312px моё*/
+    display: flex; flex-direction: row; 
+    -o-border: 1px solid #eaeaea;
+    -o-box-shadow: inset 0px 0px 0px 1px #eaeaea;}
+
+/* Центровка Плейлистов "Yutube Music" - на Странице с Видео */
+ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {margin-top: 7px;margin-left: 10px; margin-bottom: 8px;}
+/* Контур - Плейлистов "Yutube Music" - на Странице с Видео */
+ytd-compact-playlist-renderer:not([watch-feed-big-thumbs]) ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
+margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+/* подгонка Обложек Плейлистов "Yutube Music" - на Странице с Видео  (при сильном увеличении значения влияет на прочие изображения)*/
+yt-img-shadow.ytd-playlist-custom-thumbnail-renderer.no-transition:after {margin-left: 98.5px; content: " ";}
+
+
+/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
 
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " YouTube(premium) "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
@@ -1080,6 +1105,10 @@ border-radius: 0%; background-color: transparent; overflow: hidden; border: 1px 
 /* Квадратные Аватары в ЛайвЧате */
 #author-photo.yt-live-chat-text-message-renderer {display: block; margin-right: 16px; overflow: hidden; border-radius: 0%;}
 
+/* информация */
+#copyright:before {background-color: #fff; display: block; position: relative; top: 19px; 
+font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
+
 
 /* БОРДЮР между блоками: - убрать все Нижние Бордюры */
 /*  -o-ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype=history]):not([page-subtype=memberships-and-purchases]):not([page-subtype=ypc-offers]) #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer {border-bottom:0px solid var(--yt-spec-10-percent-layer);} */
@@ -1180,7 +1209,7 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 
 /* временный Фикс кнопки Плей (►) для некоторых Браузеров, которую испортил  YouTube */
 /* Temporary Fix for Play button (►) for some Browsers, which broked by YouTube */
-.ytp-chrome-controls .ytp-play-button svg {display: flex; flex-direction: column; width: 100%; height: 2.961em; 
+-o-.ytp-chrome-controls .ytp-play-button svg {display: flex; flex-direction: column; width: 100%; height: 2.961em; 
     -o-margin-top: -38px; /* for testing */ -o-background-color: #f73384; /* for testing */} /*другой вариант: width: 3.8em; height: 3em; */
 
 /* пространство ниже столбца Видео Справа (отступ для панели задач Виндоус) */
@@ -1189,8 +1218,8 @@ ytd-watch-next-secondary-results-renderer:after {
     height: 48px;
     content: " ";
     background: #F1F1F1;
-     box-shadow: 0px 3px 0px 3px #F1F1F1; /* test #fb0f0f */
-    border-top: 1px solid var(--yt-spec-10-percent-layer)}
+    box-shadow: 0px 3px 0px 3px #F1F1F1; /* test #fb0f0f */
+    border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> */
 ytd-item-section-renderer:last-child:after {

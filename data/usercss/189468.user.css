@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Igor Vodka
 @description    `Velvica Jira 3.0.1`
-@version        2020917.11.57
+@version        20201021.17.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown showEstimate "Отображать Estimate" {
@@ -137,5 +137,12 @@ no "Нет" <<<EOT .ghx-statistic-badge {
     color: white;
     background: #F20000;
 }
-/*[[showEstimate]]*/ 
+.ghx-statistic-badge {
+} 
+.ghx-extra-field[data-tooltip*="Component"] {	
+    margin-bottom: 4px;	
+}
+#ghx-backlog-column .ghx-row {	
+    max-width: calc(100% - 70px);	
+}
 /* i really want this to be global */

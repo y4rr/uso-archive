@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlienDrew
 @description    `Makes the entire sticky notes website dark.**(no longer, now it only themes the part not already themed)If you want the full dark theme, just get the Tampermonkey script that enables it => https://github.com/TheAlienDrew/Tampermonkey-Scripts/raw/master/Microsoft/Sticky-Notes-Dark-Mode.user.js`
-@version        2020103.15.49
+@version        20201021.23.44
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,11 +18,6 @@
 
 /* My only edits */
 
-/* Temporary fix to Microsoft's mistake with bullet points on note previews */
-.n-notePreviewContainer li, .n-textBox .public-DraftStyleDefault-ul li {
-    margin: 0 0 0 -20px;
-    list-style-type: initial;
-}
 /* Loading screen */
 html {
     background: #202020;

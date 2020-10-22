@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Darkened`
-@version        2020221.8.49
+@version        20201021.17.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,6 +49,21 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("css-tricks.com"), domain("") {
@@ -65,8 +80,8 @@
 selector,
 :focus {
 	border: none!important;
-	outline: none!important;
 	box-shadow: none!important;
+	outline: none!important;
 }
 
 .article-and-sidebar,
@@ -76,16 +91,17 @@ selector,
 
 /*___ Fonts ________________________________________________________________________*/
 
+pre code {
+    font-size: 22px!important;
+}
+
 selector {
 	font-size: 21px!important;
 }
 
-selector {
+body:not(.page-template-page-search-results) table:not(.woocommerce-checkout-review-order-table)
+{
 	font-size: 19px!important;
-}
-
-pre code {
-	font-size: 17px!important;
 }
 
 .tags a {
@@ -96,13 +112,24 @@ selector {
 	line-height: 19px!important;
 }
 
+.header-breadcrumbs .breadcrumb_last,
+h1, h2, h3, h4, h5, h6
+{
+    line-height: 1.2;
+    font-weight: 400!important;
+}
+
 /*___ Remove Items _________________________________________________________________*/
 
+[alt*="MailChimp"],
+.all-ads,
 .article-card.module-sponsored,
 .bsap-doubles,
 .end-of-article-ads,
 .entry-unrelated.sidebar,
-.hero-article-ad {
+.header-sponsor,
+.hero-article-ad
+{
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
@@ -120,11 +147,21 @@ selector {
 .article-and-sidebar,
 .article-card,
 .hero-article,
-.list-of-snippets>li {
+.list-of-snippets>li,
+body.post-type-archive-guides .page-wrap-max-width
+{
 	margin: 12px!important;
 }
 
-selector {
+body.page-id-177225 .flex-column-children>.wp-block-group,
+body.page-id-177225 .flex-column-parent>.wp-block-group,
+body.page-id-177225 .grid-column-children>.wp-block-group,
+body.page-id-177225 .grid-column-parent>.wp-block-group,
+body.page-id-21059 .flex-column-children>.wp-block-group,
+body.page-id-21059 .flex-column-parent>.wp-block-group,
+body.page-id-21059 .grid-column-children>.wp-block-group,
+body.page-id-21059 .grid-column-parent>.wp-block-group
+{
 	margin: 3px 6px!important;
 }
 
@@ -133,9 +170,12 @@ selector {
 .almanac-letter-row,
 .article-and-sidebar,
 .article-card,
+.guide-card,
+.guide-wrap-special,
 .hero-article,
 .list-of-snippets>li,
-.video-module {
+.video-module
+{
 	padding: 25px!important;
 }
 
@@ -173,6 +213,7 @@ selector {
 .header-guides-inside,
 .mega-header-inside,
 .page-header,
+.page-intro-p,
 .page-wrap-home,
 .page-wrap-max-width,
 .related-ads-comments,
@@ -193,9 +234,21 @@ selector {
 	width: 98%!important;
 }
 
-.video-grid {
-	width: 18%!important;
+.page-wrap-max-width .video-grid {
+	width: 98%!important;
 }
+
+
+.video-module {
+    width: 112%!important;
+}
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("css-tricks.com") {
@@ -214,6 +267,8 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+.mini-card h2 a:hover,
+.video-number,
 h2 a:hover,
 a[href]:hover span,
 a[href]:hover,
@@ -222,16 +277,31 @@ input[type="checkbox"]:checked+label,
 input[type="radio"]:checked+label {
 	color: #ff0!important;
 	text-shadow: 1px 1px #000!important;
-	webkit-text-fill-color: #ff0;
+}
+
+.video-info h2 a:focus span,
+.video-info h2 a:hover span,
+a:not(.button):not(.comment-reply-link):not(.swiper-button-white):not(.jetpack-instant-search__jetpack-colophon-link):focus, a:not(.button):not(.comment-reply-link):not(.swiper-button-white):not(.jetpack-instant-search__jetpack-colophon-link):hover
+{
+    -webkit-text-fill-color: yellow;
 }
 
 /*__________________________________________________________________________________*/
 
+.on-light, .on-light .article-content,
 li,
 p {
 	color: #fff!important;
 	text-shadow: 1px 1px #000!important;
 }
+
+.gradient-link-button,
+.link-read-more, .read-more,
+.watch-video-button strong
+{
+    -webkit-text-fill-color: #ededed;
+}
+
 
 /*___ Khaki ________________________________________________________________________*/
 
@@ -255,6 +325,7 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+.article-series ol li:before,
 .author-name-prefix,
 .comments-prefix,
 .date-prefix,
@@ -327,37 +398,50 @@ pre ::selection {
 .token.cdata,
 .token.comment,
 .token.doctype,
-.token.prolog {
+.token.prolog
+{
 	color: #bbbbbb;
 }
 
-.token.punctuation {
+.token.punctuation
+{
 	color: #fff!important;
 }
 
-.token.selector,
 .token.attr-name,
-.token.string,
-.token.char,
 .token.builtin,
-.token.inserted {
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string
+{
 	color: #af0!important;
 }
 
 .token.atrule,
 .token.attr-value,
-.token.keyword {
+.token.keyword
+{
 	color: #00b3ff!important;
 }
 
-.token.property,
-.token.tag,
 .token.boolean,
-.token.number,
 .token.constant,
+.token.deleted,
+.token.number,
+.token.property,
 .token.symbol,
-.token.deleted {
+.token.tag
+{
 	color: #ff6cbe!important;
+}
+
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable
+{
+    color: #d6b5ff;
 }
 }
 
@@ -374,13 +458,15 @@ html {
 	background-image: none;
 }
 
-a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):focus, a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):hover {
+a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):focus,
+a:not(.button):not(.commentPreviewButton):not(.comment-reply-link):hover
+{
 	background: none;
 }
 
 /*___ Background Gray ______________________________________________________________*/
 
-selector {
+.single-newsletter {
 	background-color: #060505!important;
 }
 
@@ -390,6 +476,19 @@ selector {
 
 /*___ Background 0000 ______________________________________________________________*/
 
+
+.video-info h2 a:focus span,
+.video-info h2 a:hover span,
+a:not(.button):not(.comment-reply-link):not(.swiper-button-white):not(.jetpack-instant-search__jetpack-colophon-link):focus, a:not(.button):not(.comment-reply-link):not(.swiper-button-white):not(.jetpack-instant-search__jetpack-colophon-link):hover,
+body:not(.page-template-page-search-results) table:not(.woocommerce-checkout-review-order-table) tr:nth-child(odd),
+body.page-id-21059 .flex-column-children>.wp-block-group,
+body.page-id-21059 .grid-column-children>.wp-block-group,
+body.page-id-177225 .flex-column-children>.wp-block-group,
+body.page-id-177225 .grid-column-children>.wp-block-group,
+body.page-id-21059 .flex-column-parent>.wp-block-group,
+body.page-id-21059 .grid-column-parent>.wp-block-group,
+body.page-id-177225 .flex-column-parent>.wp-block-group,
+body.page-id-177225 .grid-column-parent>.wp-block-group,
 .on-light {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -488,7 +587,10 @@ selector:active {
 .almanac-letter-row,
 .article-and-sidebar,
 .article-card,
-.hero-article {
+.guide-wrap-special,
+.hero-article,
+body.post-type-archive-guides .page-wrap-max-width
+{
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
@@ -498,24 +600,51 @@ selector:active {
 .almanac-letter-row:hover,
 .article-and-sidebar:hover,
 .article-card:hover,
-.hero-article:hover {
+.guide-wrap-special:hover,
+.hero-article:hover ,
+body.post-type-archive-guides .page-wrap-max-width:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
+.article-series,
 .caniuse,
+.guide-card,
 .list-of-snippets>li,
-.video-module {
-	background-color: #111!important;
+.video-module,
+[class*="ticss-"],
+body.page-id-177225 .flex-column-children>.wp-block-group,
+body.page-id-177225 .flex-column-parent>.wp-block-group,
+body.page-id-177225 .grid-column-children>.wp-block-group,
+body.page-id-177225 .grid-column-parent>.wp-block-group,
+body.page-id-21059 .flex-column-children>.wp-block-group,
+body.page-id-21059 .flex-column-parent>.wp-block-group,
+body.page-id-21059 .grid-column-children>.wp-block-group,
+body.page-id-21059 .grid-column-parent>.wp-block-group
+{
+	background-color: #1f1f1f!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.article-series:hover,
 .caniuse:hover,
+.guide-card:hover,
 .list-of-snippets>li:hover,
-.video-module:hover {
+.video-module:hover,
+[class*="ticss-"]:hover,
+body.page-id-177225 .flex-column-children>.wp-block-group:hover,
+body.page-id-177225 .flex-column-parent>.wp-block-group:hover,
+body.page-id-177225 .grid-column-children>.wp-block-group:hover,
+body.page-id-177225 .grid-column-parent>.wp-block-group:hover,
+body.page-id-21059 .flex-column-children>.wp-block-group:hover,
+body.page-id-21059 .flex-column-parent>.wp-block-group:hover,
+body.page-id-21059 .grid-column-children>.wp-block-group:hover,
+body.page-id-21059 .grid-column-parent>.wp-block-group:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -585,9 +714,20 @@ selector:hover {
 .article-card,
 .footer-partner,
 .footer-subsite,
+.guide-card,
 .list-of-snippets>li,
 .video-module,
-p {
+.wp-block-columns .wp-block-column,
+body.page-id-177225 .flex-column-children>.wp-block-group,
+body.page-id-177225 .flex-column-parent>.wp-block-group,
+body.page-id-177225 .grid-column-children>.wp-block-group,
+body.page-id-177225 .grid-column-parent>.wp-block-group,
+body.page-id-21059 .flex-column-children>.wp-block-group,
+body.page-id-21059 .flex-column-parent>.wp-block-group,
+body.page-id-21059 .grid-column-children>.wp-block-group,
+body.page-id-21059 .grid-column-parent>.wp-block-group,
+p
+{
 	filter: brightness(75%)!important;
 }
 
@@ -596,9 +736,20 @@ p {
 .article-card:hover,
 .footer-partner:hover,
 .footer-subsite:hover,
+.guide-card:hover,
 .list-of-snippets>li:hover,
 .video-module:hover,
-p:hover {
+.wp-block-columns .wp-block-column:hover,
+body.page-id-177225 .flex-column-children>.wp-block-group:hover,
+body.page-id-177225 .flex-column-parent>.wp-block-group:hover,
+body.page-id-177225 .grid-column-children>.wp-block-group:hover,
+body.page-id-177225 .grid-column-parent>.wp-block-group:hover,
+body.page-id-21059 .flex-column-children>.wp-block-group:hover,
+body.page-id-21059 .flex-column-parent>.wp-block-group:hover,
+body.page-id-21059 .grid-column-children>.wp-block-group:hover,
+body.page-id-21059 .grid-column-parent>.wp-block-group:hover,
+p:hover
+{
 	filter: brightness(100%)!important;
 }
 
