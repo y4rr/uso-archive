@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yad
 @description    `This theme is only applicable for the new Facebook Layout.Turn off dark mode and select compact for better display.`
-@version        20201022.4.46
+@version        20201023.3.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
     background-image: url(https://i.postimg.cc/zG4s41Jr/yadhkstop.png);
     background-size: 84px;
     background-repeat: no-repeat;
-    background-position-x: 1140px;
+    background-position-x: 1060px;
     background-position-y: 0px;
     margin: 1px;
 }
@@ -24,7 +24,7 @@
     background-image: url(https://i.postimg.cc/SK0PD7rQ/yadhkgo.gif);
     background-size: 84px;
     background-repeat: no-repeat;
-    background-position-x: 1140px;
+    background-position-x: 1060px;
     background-position-y: 0px;
 }
 .em6zcovv {
@@ -56,7 +56,7 @@
 }
 #facebook ._-kb div {
     font-family: inherit;
-    color: #d2187f;
+    color: #972765;
 }
 .rirtxc74 {
     max-width: 360px;
@@ -90,7 +90,7 @@
     fill: #ece4e2;
 }
 .oo1teu6h {
-    background-color: #5cdcb0;
+    background-color: #79bbbe;
 }
 .m9osqain {
     color: #75b8b5;
@@ -115,8 +115,14 @@
 }
 .oygrvhab {
     margin-bottom: 0;
-    --hover-overlay: #2fff0036;
 }
+.oygrvhab:hover {
+	margin-bottom: 0;
+}
+.ms7hmo2b {
+    background-color: #f4f4f4f0;
+}
+
 .s1tcr66n {
     border-bottom: 1px solid #e74b8a;
 }
@@ -201,9 +207,6 @@
 .is6700om {
     background-color: lightseagreen;
 }
-.nred35xi {
-    background-color: #f5f6f7;
-}
 .owxd89k7 {
     border-bottom-left-radius: 50px;
     background-color: #ebedf0;
@@ -219,9 +222,23 @@
     width: 238px;
     filter: opacity(0.5);
 }
+/*hover tricks*/
 .cwj9ozl2 {
-    background-color: var(--fds-comment-background);
+    background-color: #f2f3f500;
 }
+.i4q6vifz {
+    box-shadow: 0px 0px 0px 0px #e91e6300;
+	background-color: #f2f3f5;
+	
+}
+.cwj9ozl2:hover {
+    background-color: #f2f3f5;
+}
+.i4q6vifz:hover {
+    box-shadow: 0px 4px 5px 0px #00000045;
+}
+
+
 .hybvsw6c {
     background-color: var(--fds-comment-background);
 }
@@ -229,7 +246,7 @@
     filter: invert(1);
 }
 .ovq5dppa {
-    background-color: var(--fds-spectrum-teal);
+    background-color: #79bbbe;
 }
 .m6k467ps {
     filter: opacity(0.5);
@@ -259,6 +276,20 @@
 ._95k9 {
     background: linear-gradient(45deg, #e74b8a00, rgb(255, 53, 201));
 }
+._8esk {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 980px;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: 138px;
+    background-position-x: 443px;
+    background-position-y: 181px;
+}
+._8esk:hover {
+	background-image: url(https://i.postimg.cc/T1cY81qw/yadloginhk.png);
+}
 ._6luv {
     align-items: center;
     background-color: #721d5d;
@@ -287,6 +318,22 @@
     color: #f218c3;
     font-size: 14px;
     font-weight: 500;
+
+}
+._8esf ._58mi {
+    background: none;
+    background-color: #f94f93;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-shadow: none;
 }
 
 /* smiley box */
@@ -400,5 +447,98 @@
 
 .s1i5eluu {
     background-color: var(--fds-spectrum-teal-dark-2);
+}
+
+/*updates*/
+
+.sp_knrS9We1I6b_1_5x.sx_453c5a {
+    width: 12px;
+    height: 12px;
+    background-position: -18px -1400px;
+    background-color: #9f87ad;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 24px;
+}
+.hn33210v {
+    background-color:#f2dee6;
+}
+
+/*scrollbar*/
+.oj68ptkr {
+    background-color: #fff;
+}
+/*chat bubble*/
+.rvdht4aw {
+    background: #fff;
+}
+.hcy7w5mv {
+    border-top-right-radius: 0%;
+}
+.b5fwa0m2 {
+    right: 10px;
+}
+.gl3lb2sf {
+    height: 17px;
+}
+.hhz5lgdu {
+    width: 16px;
+}
+.nred35xi {
+    background-color: #fff;
+}
+/*pill option*/
+.qp9yad78 {
+    margin-right: -9999px;
+    background-color: #f2f3f5;
+    border-radius: 20px;
+}
+
+/*buttons*/
+.s1i5eluu {
+    background-color: #79bbbe;
+}
+._4jy1 {
+    background-color: var(--fds-data-sea-dark);
+    border-color: var(--fds-data-pine);
+}
+
+/*video quality settings*/
+.a1rjevna {
+    background-color: #51132e52;
+    border-radius: 16px;
+}
+
+/*search box recent*/
+.apxoh5wl::before {
+    transition-duration: var(--fds-duration-extra-extra-short-in);
+    background-color: #f5f5f5;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+
+/*friend liked post margin*/
+.ja2t1vim {
+    margin-left: -100px;
+	background: #f2f3f5;
+}
+
+/*smiley names*/
+._4sm1 {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    max-width: 100%;
+    opacity: 0;
+    padding: 0 8px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: opacity 50ms ease;
+    -webkit-user-select: none;
 }
 }

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Izheil
 @description    `Booky.io now offers a dark theme, but it uses light gray instead of actual dark colors.This theme replaces those colors with a darker palette.`
-@version        20201021.10.46
+@version        20201023.10.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("booky.io") {
-body, #loading, #main {
+body, #loading, #main, .section--light .testimonials__testimonial {
     background-color: #222;
 }
 

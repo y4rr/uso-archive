@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201016.5.36
+@version        20201023.3.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
  	/* Width */
  	width: 1.2em!important;
  }
@@ -63,7 +63,6 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
-
 }
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
@@ -79,6 +78,8 @@
 	text-transform: capitalize!important;
 }
 
+.even,
+.odd,
 .aux-content-widget-3,
 .rec_item.rec_selected,
 .zergnet-widget-81924 .zergheadline a:hover,
@@ -243,12 +244,6 @@ selector
 .zergnet-widget-81924 .zergentity {
     width: 34%;
 }
-
-
-
-
-
-
 }
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
@@ -286,6 +281,7 @@ input[type="radio"]:checked+label {
 .eDdnBe,
 .heroic-overview .titleReviewBar .subText,
 .list_meta,
+.listo div.jumpto,
 .native-ad-promoted-provider .message,
 .news_item small,
 .poll.active .answer .vote .button,
@@ -331,6 +327,7 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+#root table.labelValueTable td.label,
 h5,
 h6,
 label {
@@ -409,20 +406,20 @@ html {
 	background-attachment: fixed!important;
 }
 
-.lister .header,
-.ipl-itemcount-header,
+#filmography .head,
 #filmography .head:hover,
-#filmography .head {
+.ipl-itemcount-header,
+.lister .header
+{
 	background-image: none;
 }
 
-
 /*___ Background Gray ______________________________________________________________*/
-
 
 ._18p5u4ia1_7ZElMhXYLfre,
 .listo .header .nav,
-.recently-viewed
+.recently-viewed,
+h4.li_group
  {
 	background: #060505!important;
 	background-color: #060505!important;
@@ -438,6 +435,7 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 /*___ Background 0000 ______________________________________________________________*/
 
 #nav-search-form,
+#wrapper,
 ._19kygDgP4Og4wL_TIXtDmm,
 .article.on-tv,
 .aux-content-widget-2,
@@ -462,18 +460,20 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-.lister-item.mode-advanced:nth-child(even),
-.lister-item.mode-advanced:nth-child(odd),
-.faceter>.faceter-header,
-.article.listo div.header,
-.promoted-provider,
 #filmography .head,
 #filmography .head:hover,
 #pagecontent,
 #prometer #meterRank,
 #root,
+.article.listo div.header,
 .button_panel a:hover,
+.even,
+.faceter>.faceter-header,
 .heroic-overview .vital,
+.lister-item.mode-advanced:nth-child(even),
+.lister-item.mode-advanced:nth-child(odd),
+.odd,
+.promoted-provider,
 .recently-viewed .item,
 div#content-2-wide
  {
@@ -483,8 +483,8 @@ div#content-2-wide
 /*__ Blue __________________________________________________________________________*/
 
 .btn-raised--primary,
-.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone,
 .buybox .buybox__button,
+.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone,
 .rec_actions .rec_next_btn .btn2
  {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
@@ -495,18 +495,17 @@ div#content-2-wide
 }
 
 .btn-raised--primary:hover,
-.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:hover,
 .buybox .buybox__button:hover,
+.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:hover,
 .rec_actions .rec_next_btn .btn2:hover
  {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
-
 .btn-raised--primary:active,
-.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:active,
 .buybox .buybox__button:active,
+.heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone:active,
 .rec_actions .rec_next_btn .btn2:active
  {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
@@ -536,7 +535,8 @@ div#content-2-wide
 
 /*__ Yellow ________________________________________________________________________*/
 
-.btn.primary
+.btn.primary,
+.ipc-button.ipc-button--core-accent1:not(:disabled)
  {
 	background-image: linear-gradient(to bottom right, #f3ce00, #000)!important;
 	border-radius: 10px!important;
@@ -545,13 +545,15 @@ div#content-2-wide
 	color: #fff!important;
 }
 
-.btn.primary:hover
+.btn.primary:hover,
+.ipc-button.ipc-button--core-accent1:not(:disabled):hover
  {
 	background-image: linear-gradient(to bottom right, #f4df11, #000)!important;
 	color: #ff0!important;
 }
 
-.btn.primary:active
+.btn.primary:active,
+.ipc-button.ipc-button--core-accent1:not(:disabled):active
  {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -589,9 +591,7 @@ div#content-2-wide
 #content-2-wide #sidebar,
 #prometer,
 .article,
-.even,
 .heroic-overview,
-.odd,
 .zergnet-widget-81924 .zergentity
  {
 	background-color: #000!important;
@@ -603,9 +603,7 @@ div#content-2-wide
 #content-2-wide #sidebar:hover,
 #prometer:hover,
 .article:hover,
-.even:hover,
 .heroic-overview:hover,
-.odd:hover,
 .zergnet-widget-81924 .zergentity:hover
  {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -640,32 +638,16 @@ div#content-2-wide
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*___ Red Gradient _________________________________________________________________*/
-
-selector
- {
-	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-}
-
 /*___ Highlight Background _________________________________________________________*/
 
+.ipl-zebra-list .ipl-zebra-list__item:hover,
 .lister-item.mode-advanced:nth-child(even):hover,
 .lister-item.mode-advanced:nth-child(odd):hover,
-ul.quicklinks li.subnav_selected,
-.ipl-zebra-list .ipl-zebra-list__item:hover
+table.dataTable tr:hover,
+ul.quicklinks li.subnav_selected
  {
 	background: linear-gradient(to right, #18191a, #0000)!important;
-	border-left-color: #434343!important;
 }
-
-
-
-
-
-
-
 
 }
 
@@ -698,7 +680,8 @@ ul.quicklinks li.subnav_selected,
 .rhs-row,
 .zergentity,
 [class*="lister-item.mode-"],
-div.sub_nav
+div.sub_nav,
+table.dataTable tr
 {
 	filter: brightness(75%)!important;
 }
@@ -733,7 +716,8 @@ div.sub_nav
 .rhs-row:hover,
 .zergentity:hover,
 [class*="lister-item.mode-"]:hover,
-div.sub_nav:hover
+div.sub_nav:hover,
+table.dataTable tr:hover
 {
 	filter: brightness(100%)!important;
 }
@@ -747,7 +731,6 @@ img {
 .ipc-watchlist-ribbon__bg {
 	border-top-left-radius: 22px!important;
 }
-
 
 /*__________________________________________________________________________________*/
 
@@ -770,7 +753,6 @@ selector {
 }
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
-
 /* Advanced Search _______________________________________________________________*/
 
 [href="https://www.imdb.com/search/"] svg.ipc-icon--find-in-page {
@@ -781,6 +763,20 @@ selector {
 [href="https://www.imdb.com/search/"] svg.ipc-icon--find-in-page {
     background-size: 27px!important;
     padding-left: 28px!important;
+}
+
+/* Arrow Down _______________________________________________________________*/
+
+.crQfrC .navbar__flyout__button-pointer {
+	background: url(https://i.ibb.co/z7MRv74/down-arrow-30x30.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.crQfrC .navbar__flyout__button-pointer {
+    background-size: 15px!important;
+    height: 13px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
 }
 
 /* Celebs _______________________________________________________________*/
@@ -821,13 +817,11 @@ selector {
 
 /* Search _______________________________________________________________*/
 
-[aria-label="All"] svg,
 .nav-search__search-submit svg {
 	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[aria-label="All"] svg,
 .nav-search__search-submit svg {
     background-size: 15px!important;
     height: 26px!important;
@@ -964,5 +958,4 @@ selector {
     background-size: 27px!important;
     padding-left: 28px!important;
 }
-
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cybernetic
 @description    `Темная тема с гибкой настройкой для сайта Monopoly OneИнформация - vk.com/mnpldrk`
-@version        202088.12.47
+@version        20201023.11.43
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown color "Цветовая схема" {
@@ -283,6 +283,10 @@ div.block.games-market {
     grid-column: span 4;
     grid-column-start: 9;
     grid-column-end: 14; }
+div.col-4.footer-left {
+    grid-column: span 4;
+    grid-column-start: 1;
+    grid-column-end: 5; }
 div.Gchat.block.block-notrimcontent, div.VueGamesRooms {
     width: 645px; }
  EOT;
@@ -481,12 +485,8 @@ body[theme=dark] .thing .thing-image {
     color: var(--color4); }
 
 /* wide */
-.inventory .inventory-items {
-    width: 1200px;
-    display: flow-root; }
 .form .form-row div.selecter, .grid.grid-of-1 .grid-1, .grid.grid-of-1 .grid-medium-1 {
     width: 116.5%;
-    left: -78px;
     position: relative; }
 
 /* buttons */
