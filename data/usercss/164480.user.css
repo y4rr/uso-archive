@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Alexey TRANZit
 @description    `Кое-какие плюшки для Пикабу.* Фон "котики и лисички"* Заголовки постов под стиль верхней панели* обводка и фон для тегов`
-@version        2018926.10.49
+@version        20201022.12.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,5 +35,15 @@ body {
 }
 .story__title-link {
     color:#fff;
+}
+.collapse-button:hover{  background-color: #8ac858;}
+.collapse-button{
+    color: #ffffff;
+    background-color: #8ac858;
+    border:1px solid grey;
+}
+.collapse-button div{
+    top: 14px;
+    left: 18px;
 }
 }

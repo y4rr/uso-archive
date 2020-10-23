@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Денисов Ярослав
 @description    `За основу взят https://userstyles.org/styles/127431/newvk-dark-themeИзменены цвета, исправлены ошибки и верхняя панель.Наслаждайтесь~О багах пишите сюда:vk.com/whitebrim`
-@version        20201016.15.46
+@version        20201022.17.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -8691,6 +8691,14 @@
 
 [dir=ltr] .media_selector .ms_items_more .ms_item{
     color: #E0E0E0;
+}
+
+[dir=ltr] .BlockSearchInput.BlockSearchInput{
+    border-bottom: solid 1px #484B4E;
+}
+
+[dir=ltr] .gifts_box_header{
+    background-color: #373B3E;
 }
 }
 

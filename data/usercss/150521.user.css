@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        2020915.21.28
+@version        20201022.20.6
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1566,6 +1566,11 @@ table#userlist tbody tr {
 .raffle-window-loading {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
 }
+.common-checkbox[data-selected="1"] {
+    border-color: #0082d2;
+    background-color: #0082d2;
+    color: #fff;
+}
 /*Account Settings Vista*/
 .vista-option {
     background: #14252f !important;
@@ -1820,9 +1825,213 @@ div.cluetip-inner.ui-cluetip-content div span {
 .dragontip.ui-dialog-content.ui-widget-content div div span {
     color: #6bf4dd !important;
 }
+/* New Hoard and Vault */
+.common-bulletin-text {
+    background: #071224;
+}
+.common-bulletin-dot[data-active="true"] {
+    background: #007bce;
+}
+#hoard-results[data-loading="1"] {
+    background: url(https://i.imgur.com/N24sLgg.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-top: 270px !important;
+    min-height: 16px;
+}
+.hoard-result-item-box {
+    border: 2px solid #0b151c;
+    background: linear-gradient(to bottom, #b9c9d9 0%, #3a4450 100%);
+}
+.hoard-result-item[data-selected="1"] .hoard-result-item-box {
+    border: 2px solid #65ea9f;
+    background: linear-gradient(to bottom, #65ea9f 0%, #0067f7 100%);
+}
+#hoard-result-footer-background {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(34, 40, 43, 1) 20%, rgb(34, 40, 43, 1) 100%);
+}
+.hoard-stored-currency-current {
+    border: 2px solid #060c10;
+    background: #0f1a27;
+}
+.hoard-stored-currency-count {
+    color: #b4f0ff;
+}
+.settings-hub-category {
+    border: 2px solid #527488;
+    background: #18314a;
+}
+.settings-hub-category-header, .hoard-stack-functions-name {
+    color: #70d2ff !important;
+    text-shadow: 0 1px 1px #000 !important;
+}
+.hoard-stack-functions-quantity, .dragon-picker-preview-number {
+    color: #8aa6bb;
+}
+.common-ui-vertical-button-group {
+    background: linear-gradient(to bottom, #eef3f9 0%, #bacbdf 100%);
+}
+.hoard-stack-functions {
+    background: #172333 !important;
+    border: 3px solid #040711 !important;
+    box-shadow: 0px 0px 10px 0px rgb(4, 7, 17);
+}
+.user-hoard-dialog-items, .user-hoard-food-points, .dragon-picker-preview-name {
+    color: #00c8ff !important;
+}
+.common-message-error {
+    color: #afddda;
+    border-color: #afddda;
+    background-color: #14355e !important;
+    background-image: url(https://i.imgur.com/WclCG5z.png);
+}
+.user-hoard-dialog-item-frame-error {
+    background: linear-gradient(to bottom, rgb(255, 0, 45) 0%, rgb(255, 114, 199) 100%);
+    height: 85px !important;
+    width: 100px !important;
+}
+.settings-hub-checkbox-description span {
+    color: #8da0ac !important;
+}
+.dragon-picker-preview {
+    background: rgba(20, 29, 38, .97);
+}
+.hoard-result-item-box[data-favorite="1"]:after {
+    background: url(https://i.imgur.com/3ULJWj2.png);
+}
+.hoard-result-item-box[data-favorite="1"] {
+    background: linear-gradient(to bottom, #73fbeb 0%,#d15de3 100%);
+    border-color: #fff;
+}
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-chest-open.png"] {
+    content: url(https://i.imgur.com/YyCH8GM.png) !important;
+}
+img[src="/static/layout/hoard/tooltip-lock.png"] {
+    content: url(https://i.imgur.com/dhGQ3Yt.png) !important;
+}
+img[src="/static/layout/hoard/tooltip-like.png"] {
+    content: url(https://i.imgur.com/Aco0VJi.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-chest-open-multiple.png"] {
+    content: url(https://i.imgur.com/25sGoPk.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-apply-to-dragon.png"] {
+    content: url(https://i.imgur.com/YWRSpK0.png) !important;
+}
+img[src="/static/layout/game-database/button-auction-house.png"] {
+    content: url(https://i.imgur.com/Xz7TXVF.png) !important;
+}
+img[src="/static/layout/game-database/button-suggest.png"] {
+    content: url(https://i.imgur.com/xoK5KAK.png) !important;
+}
+img[src="/static/layout/game-database/button-share.png"] {
+    content: url(https://i.imgur.com/pbF8x7D.png) !important;
+}
+img[src="/static/layout/icon_lock_disabled.png"] {
+    content: url(https://i.imgur.com/xOacY4V.png) !important;
+}
+img[src="/static/layout/icon_star_disabled.png"] {
+    content: url(https://i.imgur.com/9XO56l9.png) !important;
+}
+img[src="/static/layout/icon_lock_enabled.png"] {
+    content: url(https://i.imgur.com/ciw9Nsp.png) !important;
+}
+img[src="/static/layout/icon_star.png"] {
+    content: url(https://i.imgur.com/WZChw75.png) !important;
+}
+img[src="/static/layout/hoard/buttons/mode-vault.png"] {
+    content: url(https://i.imgur.com/WQgZSel.png) !important;
+}
+img[src="/static/layout/hoard/buttons/mode-hoard.png"] {
+    content: url(https://i.imgur.com/4WzLE70.png) !important;
+}
+img[src="/static/layout/hoard/buttons/multi-function-hoard.png"] {
+    content: url(https://i.imgur.com/KKT3xzg.png) !important;
+}
+img[src="/static/layout/hoard/buttons/button-select-all.png"] {
+    content: url(https://i.imgur.com/iZNZpjr.png) !important;
+}
+img[src="/static/layout/hoard/buttons/button-deselect-all.png"] {
+    content: url(https://i.imgur.com/0ReSLJz.png) !important;
+}
+img[src="/static/layout/hoard/stored-gems.png"] {
+    content: url(https://i.imgur.com/7waAMLn.png) !important;
+}
+img[src="/static/layout/hoard/stored-treasure.png"] {
+    content: url(https://i.imgur.com/D3CpjJh.png) !important;
+}
+img[src="/static/layout/hoard/buttons/multi-function-vault.png"] {
+    content: url(https://i.imgur.com/maRkLMN.png) !important;
+}
+img[src="/static/layout/hoard/buttons/multi-function-sell.png"] {
+    content: url(https://i.imgur.com/zERFrU4.png) !important;
+}
+img[src="/static/layout/hoard/buttons/multi-function-convert-food.png"] {
+    content: url(https://i.imgur.com/g6B56dm.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-convert-food.png"] {
+    content: url(https://i.imgur.com/CKM44ry.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-transmute.png"] {
+    content: url(https://i.imgur.com/4Zmiv2o.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-sell.png"] {
+    content: url(https://i.imgur.com/f05mXmA.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-sell-duplicates.png"] {
+    content: url(https://i.imgur.com/S4dxxAt.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-ah.png"] {
+    content: url(https://i.imgur.com/WPtKLJr.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-vault.png"] {
+    content: url(https://i.imgur.com/IZYNTnf.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-convert-food-disabled.png"] {
+    content: url(https://i.imgur.com/e5zwr87.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-sell-disabled.png"] {
+    content: url(https://i.imgur.com/NhKTOEX.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-sell-duplicates-disabled.png"] {
+    content: url(https://i.imgur.com/fN5KcJN.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-hoard.png"] {
+    content: url(https://i.imgur.com/yKdh0Fy.png) !important;
+}
+img[src="/static/layout/common/common-toggle-on.png"] {
+    content: url(https://i.imgur.com/x2L3soa.png) !important;
+}
+img[src="/static/layout/common/common-toggle-off.png"] {
+    content: url(https://i.imgur.com/sNc4Iof.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-unlocked.png"] {
+    content: url(https://i.imgur.com/bFcjC4E.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-locked.png"] {
+    content: url(https://i.imgur.com/MG1JLfc.png) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-preview-item.png"] {
+    content: url(https://i.imgur.com/AQCkMjE.png) !important;
+}
+img[src="/static/layout/hoard/buttons/button-add-funds.png"] {
+    content: url(https://i.imgur.com/6U3FYFb.png) !important;
+}
+img[src="/static/layout/hoard/buttons/button-remove-funds.png"] {
+    content: url(https://i.imgur.com/sV1538D.png) !important;
+}
+img[src="/static/icons/tidy-up.png"] {
+    content: url(https://i.imgur.com/qxiVWsf.png) !important;
+}
+img[src="/static/layout/game-database/button-favorite-off.png"] {
+    content: url(https://i.imgur.com/MAzhvId.png) !important;
+}
+img[src="/static/layout/game-database/button-favorite-on.png"] {
+    content: url(https://i.imgur.com/3ULJWj2.png) !important;
 }
 img[src="/static/layout/revamp/left_clan_small.png"], img[src="/images/layout/revamp/left_clan_small.png"] {
     content: url(https://i.imgur.com/zTPMxjG.png) !important;
@@ -2388,6 +2597,9 @@ img[src="/static/layout/common/button-add-35-disabled.png"] {
 img[src="/static/layout/profile/button-buy.png"] {
     content: url(https://i.imgur.com/QJuZEFm.png) !important;
 }
+img[src="/static/layout/pagination/pagination-check.png"] {
+    content: url(https://i.imgur.com/59VH3GZ.png) !important;
+}
 /* Image Remover */
 img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/internal_bg.jpg"], [src*="/images/layout/exalted.jpg"], [src*="/images/layout/coliseum/internal_bg.jpg"], [src*="/images/layout/tradepost/internal_bg.jpg"], [src*="/images/layout/market/internal_bg.jpg"], [src*="/images/layout/404/internal_bg.jpg"], [src*="/images/layout/hoard/internal_bg.jpg"], [src*="/images/layout/scrying/internal_bg.jpg"], [src*="/images/layout/wiki/internal_bg.jpg"], [src*="/images/layout/faire/internal_bg.jpg"], [src*="/images/layout/search/internal_bg.jpg"], [src*="/images/layout/ice/internal_bg.jpg"], [src*="/images/layout/arcane/internal_bg.jpg"], [src*="/images/layout/earth/internal_bg.jpg"], [src*="/images/layout/nature/internal_bg.jpg"], [src*="/images/layout/shadow/internal_bg.jpg"], [src*="/images/layout/light/internal_bg.jpg"], [src*="/images/layout/plague/internal_bg.jpg"], [src*="/images/layout/wind/internal_bg.jpg"], [src*="/images/layout/water/internal_bg.jpg"], [src*="/images/layout/fire/internal_bg.jpg"], [src*="/images/layout/lightning/internal_bg.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/settings/internal_bg.jpg"], [src*="/images/layout/success_fish.png"], [src*="/images/layout/success_hunt.png"], [src*="/images/layout/success_catch.png"], [src*="/images/layout/success_forage.png"], [src*="/images/layout/success_dig.png"], [src*="/images/layout/success_scavenge.png"], [src*="/images/layout/battle/internal_bg.jpg"], [src*="/images/layout/dominance/internal_bg.jpg"] {
     background-image: none !important;
@@ -2398,7 +2610,7 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile") {
+@-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
 #pinkerton-text.common-npc-dialog:before {
     border-color: #060d11 transparent transparent transparent !important;
 }

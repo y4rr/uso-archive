@@ -3,33 +3,93 @@
 @namespace      USO Archive
 @author         manolito
 @description    `- Hides MAIL.COM ads sidebar- Dark Mode (Customizable main colors)`
-@version        20201022.9.54
+@version        20201022.18.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown AdsCols "Choose Ads / Custom Colors" {
-	NoAds "Hide Ads only*" <<<EOT /*--------NO-ADS------------------------------*\/ EOT;
+	NoAds "Hide Ads only*" <<<EOT  EOT;
 NoAdsCols "Hide Ads + Custom Colors" <<<EOT /*--------COLORS-----------------------------*\/
 
-html,
 [id^="editor-"],
-[name="search"],
-[class="cloud-action-bar__list-item"] *,
-[class="atl-actions-menu__hidden atl-actions-menu__hidden--open"] *,
-cloud-tree-node *,
-:not(:empty):not(i):not(img):not(input):not(svg):not(audio):not(video):not(button):not(pos-brand-logo):not(pos-icon-item):not(pos-spinner):not([class*="atl-app-contents-wrapper"]):not([class*="customhtml"]):not([class*="icon"]):not([class*="lightbox"]):not([class*="m-button"]):not([class*="ng-binding ng-scope"]):not([class*="ng-isolate-scope active"]):not([class*="player"]):not([class*="prite"]):not([class*="stars"]):not([class*="video"]):not([class^="atl-actions-menu"]):not([class^="atl-navbar"]):not([class^="form-submit"]):not([class^="id"]):not([id="id123"]):not([class^="pos-"]):not([class="compose-header_control"]):not([class="control controlSec"]):not([class="rating"]):not([id*="lbImage"]):not([id*="player"]):not([id*="prite"]):not([id*="stars"]):not([id*="video"]):not([id="rating"]):not([data-component="ButtonGroup"]):not([data-id="selectOne"]):not([onclick*="open"]):not([class="themewrapper"]):not([class="header-bar"])>*:not([class="btn btn-block login-submit"]):not([class^="atl-"]):not([class="btn btn-3d-green button-search"]):not([class="button cta  mailcom "]):not([class*="icon"]):not([class*="checkbox"]) {
-  color: /*[[TextColor]]*\/ !important;
+[class="cloud-action-bar__list-item"] :not([class*="organizer"]),
+[class="atl-actions-menu__hidden atl-actions-menu__hidden--open"] :not([class*="organizer"]),
+cloud-tree-node :not([class*="organizer"]),
+:not(:empty):not(i):not(img):not(input):not(svg):not(audio):not(video):not(button):not(pos-brand-logo):not(pos-icon-item):not(pos-spinner):not([class*="organizer"]):not([class="gui-toggle-control"]):not([class*="button-container"]):not([class*="atl-app-contents-wrapper"]):not([class*="customhtml"]):not([class*="icon"]):not([class*="lightbox"]):not([class*="m-button"]):not([class*="ng-binding ng-scope"]):not([class*="ng-isolate-scope active"]):not([class*="player"]):not([class*="prite"]):not([class*="stars"]):not([class*="video"]):not([class^="atl-actions-menu"]):not([class^="atl-navbar"]):not([class^="form-submit"]):not([class^="id"]):not([id="id123"]):not([class^="pos-"]):not([class="compose-header_control"]):not([class="control controlSec"]):not([class="rating"]):not([id*="lbImage"]):not([id*="player"]):not([id*="prite"]):not([id*="stars"]):not([id*="video"]):not([id="rating"]):not([data-component="ButtonGroup"]):not([data-id="selectOne"]):not([onclick*="open"]):not([class="themewrapper"]):not([class="header-bar"])>*:not([class="btn btn-block login-submit"]):not([class^="atl-"]):not([class*="search"]):not([class="button cta  mailcom "]):not([class*="icon"]):not([class*="checkbox"]):not([class*="organizer"]) {
+  color: #EEEEEE !important;
   background-color: /*[[BgColor]]*\/;
 }
 
-div[class^="nav-item"]:hover *,
-div.panel.panel-search *
-{
 
+[id="toolbar"],
+[class*="fc-toolbar fc-header-toolbar"]:not([class*="organizer"]),
+[class="actionarea action-head"] :not([class="hero"]):not([class*="organizer"])
+{
+    background: none /*[[BgColor]]*\/ ! important;
+}
+
+
+
+html,
+body *,
+table,
+tbody *,
+html,#mail-instant-reply,#toolbar :not([class*="organizer"]),aside,
+.splitpanel-settings-content_wrapper :not([class*="icon"]):not([class*="search"]):not([class*="organizer"]),
+cloud-tree-node :not([class*="search"]):not([class*="organizer"]),
+.container.js-container :not(svg):not([class*="icon"]):not([class*="search"]):not([class*="organizer"]),
+[class="actionarea action-head"] :not([class*="search"]):not([class*="organizer"]),
+.cke_top.cke_reset_all,
+.cke_toolbox
+{
+    background-color: /*[[BgColor]]*\/ !important;
+}
+
+
+.cke_button:hover *,
+[class*="m-button"],
+.pos-button:not(:hover),
+div[class^="nav-item"]:hover *,
+[class="atl-actions-menu__hidden atl-actions-menu__hidden--open"],
+div.panel.panel-search *,
+.cke_toolbar *
+{
+    color: #EEEEEE !important;
     background-color: /*[[ScrThumb]]*\/ !important; 
-    border-style: none !important;
+    border-color: /*[[ScrThumb]]*\/ !important; 
+}
+
+
+/*[class*="button"] *\/
+button,
+[type="button"]
+{
+    color: #EEEEEE !important;
+    background: none /*[[ScrThumb]]*\/ ! important;
+    background-color: transparent !important; 
+    border-color: /*[[ScrThumb]]*\/ !important; 
 
 }
 
+
+.dropdown,
+.welcome-box *,
+.slide *,
+.indicator,
+[class^="hero-nav"],
+[class="mod mod-mig mig"] *
+{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+
+[class*="inactive"] *,
+.inactive
+{
+    color: gray !important;
+    background: none transparent! important;
+    border-color: /*[[BgColor]]*\/ !important; 
+}
 
 input:not([class="form-submit"]),
 [class="link-menu"] *:not(:hover):not(button):not(svg):not([class*="icon"]),
@@ -89,6 +149,9 @@ input:not([class="form-submit"]),
 
 ==/UserStyle== */
 @-moz-document domain("mail.com"), domain("navigator-lxa.mail.com") {
+
+/*--------NO-ADS------------------------------*/
+
 #content-sky,
 #superbanner,
 .adi--4-1,

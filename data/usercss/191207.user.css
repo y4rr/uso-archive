@@ -3,13 +3,12 @@
 @namespace      USO Archive
 @author         mashehu
 @description    `A dark theme for the nextflow tower interface`
-@version        20201022.10.42
+@version        20201022.13.31
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://tower.nf/") {
-body,
-footer {
+body {
     color: rgba(255, 255, 255, 0.87);
     background-color: #212121;
 }
@@ -45,10 +44,11 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 #main-tabs {
-    border-bottom-color: rgba(255, 255, 255, 0.87);
+    border-bottom-color: #2f2e2e
 }
 #main-tabs .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #2f2e2e;
     color: #212121;
 }
 table.dataTable.display tbody tr.odd,
@@ -69,10 +69,33 @@ table.dataTable.cell-border tbody td {
     background-color: rgba(0, 0, 0, 0.05);
     border-color: rgba(255, 255, 255, 0.15);
 }
+.card svg {
+    background-color: rgba(0, 0, 0, 0);
+}
+#metrics-body .plot-container svg {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+#metrics-body .nav-link.active {
+    background-color: #dadada;
+    border-color: #dadada;
+}
+#metrics-body .nav-tabs {
+    border-bottom-color: #dadada;
+}
+#metrics-body .nav-link:hover {
+    border-color: rgba(0, 0, 0, 0);
+}
 svg {
     background-color: rgba(255, 255, 255, 0.05);
 }
-a {
+a,
+a:hover {
     color: #3498db;
+}
+footer {
+    background-color: #212121;
+}
+footer .border-top.border-gray-light.text-muted {
+    border-top-color: rgba(255, 255, 255, 0.25) !important;
 }
 }

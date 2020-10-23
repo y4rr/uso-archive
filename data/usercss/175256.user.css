@@ -3,15 +3,18 @@
 @namespace      USO Archive
 @author         RiKEZ
 @description    `Theme for ScoreSaber`
-@version        2020531.19.35
+@version        20201022.14.4
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://scoresaber.com") {
+@-moz-document url-prefix("https://scoresaber.com"), url-prefix("https://new.scoresaber.com") {
 :root {
 --color-highlight: rgba(140, 0, 0, .8);
 --color-ahead: rgb(143, 72, 219);
 --color-behind: rgb(254, 0, 6);
+--background: rgb(0, 0, 0);
+--alternate:#fffaae;
+--textColor: #fffaae;
 }
 
 .box a {
@@ -20,6 +23,23 @@ color: black;
 
 .navbar {
 background: black;
+}
+
+body.dark-mode .navbar {
+background-color: black !important;
+border-bottom: 2px solid #ff0c0b !important;
+}
+
+body.dark-mode .navbar.has-border {
+border-bottom: 2px solid #ff0c0b !important;
+}
+
+body.dark-mode .navbar-menu, body.dark-mode .navbar.has-border {
+background-color: black !important;
+}
+
+body.dark-mode a.navbar-item:hover {
+background-color: #ff0c0b !important;
 }
 
 .navbar-link {
@@ -42,7 +62,7 @@ background-color: #ff0c0b;
 
 a.navbar-item:hover {
 color: #fffaae !important;
-background-color: #ff0c0b;
+background-color: #ff0c0b !important;
 }
 
 #settings_dialogue {
@@ -66,7 +86,8 @@ border-color: #cb0b0b;
 }
 
 .navbar.has-shadow {
-box-shadow: 0 3px 3px 0px red;
+background-color: var(--background) !important;
+border-bottom: 2px solid #ff0c0b;
 }
 
 tr {
@@ -86,6 +107,11 @@ background-size:cover;
 
 .box.has-shadow {
 background-color: rgba(0, 0, 0, .2) !important;
+color: black !important;
+}
+
+body.dark-mode h3 {
+color: black !important;
 }
 
 a {

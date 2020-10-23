@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ramguts
 @description    `Don't want to hurt your eyes at 2 am playing Wolvden? This theme got you covered, and turns the whole website dark! *some custom css profiles may be slightly altered by this theme**still a work in progress - not everything is finished`
-@version        2020929.1.20
+@version        20201022.23.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -34,6 +34,14 @@ If you have suggestions (for this theme or a new one entirely) or want to improv
 .card-body {
     background-color: #1f1f1f;
     border-radius: 5px;
+}
+
+.progress{ /* background color for the progress bars */
+    background-color: #000 !important;
+}
+
+.navbar.navbar-status.navbar-expand{
+    background-color: #593737 !important;
 }
 
 .breadcrumb-nav {
@@ -235,6 +243,20 @@ span.badge {
 /* chat */
 #chatMessageContainer {
     border: 1px solid black;
+}
+
+.s-chat-message.s-chat-message_mention{ /* chat mentions/pings */
+    background-color: #2b2b2b !important;
+}
+
+.s-chat-message.s-chat-message_mention span{ /* chat mention text color */
+    color: #fff;
+    font-weight: bold !important;
+}
+
+.s-chat-message.s-chat-message_mention a{
+    color: #ff4a4a !important;
+    font-weight: bold;
 }
 
 div#chatMessagePinned.s-chat-message__pinned {

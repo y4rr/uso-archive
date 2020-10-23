@@ -3,17 +3,18 @@
 @namespace      USO Archive
 @author         Daniel O'Connor
 @description    `Gmail as it was in 2018 before the material UI (old logo, loading screen, and all)`
-@version        2019521.21.41
+@version        20201022.16.35
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-/* Gmail OLD 1.1*/
+@-moz-document domain("mail.google.com") {
+/* Gmail OLD 1.2*/
 
 /*By: Daniel O'Connor*/
 
-/* i really want this to be global */
 
-/*Edited by DL Laboratories in 2019*/
+
+/*Edited by DL Laboratories in 2020*/
 
  /* Compose button */
   body[jscontroller] [gh=cm]
@@ -288,14 +289,14 @@ a.gb_ke.gb_fc.gb_ze {
     width: 100px !important;
     height: 60px !important;
 }
-img[class="gb_la"] {
+img[class="gb_va"] {
     background: url(https://oldgoogle.neocities.org/oldgmail-logo.png) !important;
     background-repeat: no-repeat !important;
     width: 0px !important;
     padding-left: 100px !important;
 }
 
-gb_la {
+gb_va {
     background: url(https://oldgoogle.neocities.org/oldgmail-logo.png) !important;
     background-repeat: no-repeat !important;
     width: 0px !important;
@@ -307,10 +308,21 @@ gb_la {
     margin: 0px;
 }
 /*SEARCH BAR*/
- .gb_le.gb_be {
-    border-radius: 0px;
-    box-shadow: -1px -1px 1px lightgray;
+ .gb_Se {
+    background-color: white;
+    border-radius: 0px !important;
+    box-shadow: 1px 1px 1px darkgrey !important;
 }
+.gb_6e, .gb_Df, .gb_7e {
+    background-color: white;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0px darkgrey !important;
+}
+
+.TK .TO, .n6 .ah9, .CL{
+border-radius: 0px !important;
+}
+
 
 /*LOADING SCREEN*/
   div#nlpt
@@ -356,7 +368,16 @@ gb_la {
     display: none !important;
   }
 
-  div[style="animation:a-h .5s 1.25s 1 linear forwards,a-nt .6s 1.25s 1 cubic-bezier(0,0,.2,1);background:#eee;border-radius:50%;height:800px;left:50%;margin:-448px -400px 0;position:absolute;top:50%;transform:scale(0);width:800px;"]
+  #loading div[style="animation:a-h .5s 1.25s 1 linear forwards,a-nt .6s 1.25s 1 cubic-bezier(0,0,.2,1);background:#eee;border-radius:50%;height:800px;left:50%;margin:-448px -400px 0;position:absolute;top:50%;transform:scale(0);width:800px;"]
   {
     display: none !important;
   }
+.la-r{
+display: none !important;
+}
+
+.la-c{
+display: none !important;
+}
+
+}
