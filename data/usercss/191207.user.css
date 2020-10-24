@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mashehu
 @description    `A dark theme for the nextflow tower interface`
-@version        20201023.8.15
+@version        20201024.5.58
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,6 +24,7 @@ body {
 .card .card {
     background-color: rgba(255, 255, 255, 0.05);
 }
+
 .card-header{
     border-bottom-color: #585858;
     background-color: #434343;
@@ -37,6 +38,10 @@ body {
 
 #sidebar .card .card-body:hover {
     background-color: #3e3e3e !important;
+}
+.navbar-brand img,
+footer img{
+    filter: invert(0.5);
 }
 .navbar {
     background-color: #303030 !important;
@@ -86,9 +91,11 @@ table.dataTable.cell-border tbody td {
 }
 .card svg {
     background-color: rgba(0, 0, 0, 0);
+        filter: invert(0.775);
 }
 #metrics-body .plot-container svg {
-    background-color: rgba(0, 0, 0, 0.075);
+
+    filter: invert(0.775);
 }
 #metrics-body .nav-link.active {
     background-color: #dadada;

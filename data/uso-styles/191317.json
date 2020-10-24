@@ -1,0 +1,42 @@
+{
+  "id": 191317,
+  "name": "Workona Dark Theme",
+  "description": "Dark theme for workona.com",
+  "user": {
+    "id": 106140,
+    "name": "tukusejssirs",
+    "email": "redacted",
+    "paypal_email": null,
+    "homepage": null,
+    "about": null,
+    "license": "ccbysa"
+  },
+  "updated": "2020-10-24T11:37:09.000Z",
+  "weekly_install_count": 0,
+  "total_install_count": 0,
+  "rating": null,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/191317_after.png?r=1603539452",
+  "obsoleting_style_id": null,
+  "obsoleting_style_name": null,
+  "obsolete": 0,
+  "admin_delete_reason_id": null,
+  "obsoletion_message": null,
+  "screenshots": [
+    "https://userstyles.org/style_screenshots/191317_additional_37301.png?r=1603539452",
+    "https://userstyles.org/style_screenshots/191317_additional_37302.png?r=1603539452",
+    "https://userstyles.org/style_screenshots/191317_additional_37303.png?r=1603539452"
+  ],
+  "license": "ccbysa",
+  "created": "2020-10-24T11:37:09.000Z",
+  "category": "site",
+  "raw_subcategory": "workona",
+  "subcategory": "workona",
+  "additional_info": "This is the first time I create and publish s user style. It definitely isn’t perfect, but it suits my needs (darken the theme to avoid blinding my eyes).\r\n\r\nTested on Firefox only. If someone whats to contribute, I could create a Git repo for it.",
+  "style_tags": [],
+  "css": "/*\r\n * TODO\r\n * - change colour of hovor checkboxes from black to #ccc;\r\n */\r\n\r\n\r\n@-moz-document url-prefix(https://workona.com) {\r\n\t/* Main space background */\r\n\t.app, ._2jeXtzABUskiV3epT_mV16 {\r\n\t\tbackground: #000000 !important;\r\n\t}\r\n\r\n\t/* Context menus and tabs list */\r\n\t._3sltFBVBoMEsYM854YBJBf, ._14zN2To0Vr4ObISm0xpjUl, ._3xx-hM_fYDCpigf65kf6CG, ._3irQB9Tv18T_XmnsCBQ3rF,\r\n\t.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._2UgL7qBuTYlPeBMIv3Z44a {\r\n\t\tbackground: #1e1e1e !important;\r\n\t}\r\n\r\n\t.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN {\r\n\t\tcolor: #cccccc !important;\r\n\t}\r\n\r\n\t/* Main foreground colour */\r\n\tbody, ._1gJ_NYaKZe2lAgqgtY3yDn {\r\n\t\tcolor: #cccccc;\r\n\t}\r\n\r\n\t/* Sidebar background */\r\n\t._1MqP5l6V_u1Kza6KH4OeI7, .De30U_-srldDdjYCLcN8_ {\r\n\t\tbackground: #181818;\r\n\t}\r\n\r\n\t/* Find overlay background */\r\n\t._2NmaFledpPHzSsOzFAZTlZ {\r\n\t\tbackground: rgba(0,0,0,.50);\r\n\t}\r\n\r\n\t/* Preferences sidebar background */\r\n\t._1S2kJtgA8OLNPTN4cbi21R {\r\n\t\tbackground: #181818;\r\n\t}\r\n\r\n\t/* Preferences main space background */\r\n\t._3z-5ASxElLkMufBKh557vK {\r\n\t\tbackground: #1e1e1e;\r\n\t}\r\n\r\n\t/* Preferences email address text box foreground colour */\r\n\t/* (greyed out / disabled) */\r\n\t.MuiInputBase-root {\r\n\t\tcolor: grey !important;\r\n\t}\r\n\r\n\t/* Preferences text box foreground colour */\r\n\t/* (enabled) */\r\n\t._2ihVv2nYKWlUMtU61rb2OI:not(.Mui-disabled), .vL3c5V77Fjk7XlAOOhpwW {\r\n\t\tcolor: #cccccc;\r\n\t}\r\n\r\n\t/* Preferences text box label foreground colour */\r\n\t.MuiFormLabel-root, .MuiFormLabel-root.Mui-disabled {\r\n\t\tcolor: #aaaaaa;\r\n\t}\r\n\r\n\t/* Find search (in sidebar) and + button background colour */\r\n\t._1wUbfJlwgeEwnEO65dUZFo, ._22o5f_EuPgID_SD9A00E {\r\n\t\tbackground: #252525;\r\n\t}\r\n\r\n\t/* Selected workspace background in sidebar */\r\n\t._11UI4TMMMq_B3mdw5saK6y {\r\n\t\tbackground: #323232 !important;\r\n\t}\r\n\r\n\t/* Hovering tab list background (hover on a workspace name in sidebar) */\r\n\t._2ViXpP4VnNTHEbxAje4dhn {\r\n\t\tbackground: #1e1e1e;\r\n\t}\r\n\r\n\t/* Hovering tab list hovered item background */\r\n\t._76hFX1t9pYcX9b8358iHo {\r\n\t\tbackground: #101010;\r\n\t}\r\n\r\n\t/* Hovering tab list header background */\r\n\t._3-EMxNRyLc1LFA2z5epBAk {\r\n\t\tbackground: #101010;\r\n\t}\r\n\r\n\t/* In sidebar: Background colour of workspace name when the user hovers over it */\r\n\t._3YD0drq3mR1yIDofo1eKHC:hover {\r\n\t\tbackground: #252525;\r\n\t}\r\n}",
+  "discussions": [],
+  "discussionsCount": 0,
+  "commentsCount": 0,
+  "userjs_url": "/styles/userjs/191317/workona-dark-theme.user.js",
+  "style_settings": []
+}

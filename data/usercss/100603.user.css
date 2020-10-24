@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201023.3.10
+@version        20201024.7.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,22 +72,21 @@
 	text-decoration: none!important;
 }
 
-
 .comingSoonTitlePage div:first-child
  {
 	text-transform: capitalize!important;
 }
 
+.aux-content-widget-3,
 .even,
 .odd,
-.aux-content-widget-3,
 .rec_item.rec_selected,
 .zergnet-widget-81924 .zergheadline a:hover,
 :focus
  {
 	border: none!important;
-	outline: none!important;
 	box-shadow: none!important;
+	outline: none!important;
 }
 
 #filmography .head:hover,
@@ -100,11 +99,11 @@
 }
 
 table {
-    display: table;
     border-collapse: separate;
-    box-sizing: border-box;
-    border-spacing: 0;
     border-color: grey;
+    border-spacing: 0;
+    box-sizing: border-box;
+    display: table;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -212,6 +211,10 @@ selector
 	height: auto!important;
 }
 
+.kOoZVO {
+    height: calc(100vh - 0rem);
+}
+
 /*___ Widths _______________________________________________________________________*/
 
 #content-2-wide #main, #content-2-wide .main,
@@ -291,6 +294,8 @@ input[type="radio"]:checked+label {
 .text-primary,
 a.btn, button.btn, input.btn,
 body,
+div.article.on-tv .even,
+div.article.on-tv .odd,
 li,
 p
 {
@@ -307,12 +312,10 @@ a b,
 h1,
 h2 {
 	color: #F0E890!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
-
 
 .listo .header .nav .desc,
 .rec_details .rec-title,
@@ -321,18 +324,18 @@ b,
 h3,
 h4 {
 	color: #e0b880!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
 
 #root table.labelValueTable td.label,
+
+.rightcornerlink span.filmo-show-hide-all,
 h5,
 h6,
 label {
 	color: #F0A060!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -348,7 +351,6 @@ h3 .nobr,
 time
 {
 	color: #07beff!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -356,7 +358,6 @@ time
 
 .sort-num_votes-visible span:nth-child(5) {
 	color: #07ff24!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -364,7 +365,6 @@ time
 
 selector {
 	color: #ff0707!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -740,11 +740,6 @@ img {
 
 /*__________________________________________________________________________________*/
 
-
-selector {
-	opacity: .8!important;
-}
-
 .ipc-icon-link--baseAlt:hover:before,
 .ipc-icon-button--baseAlt:hover:before
 {
@@ -753,6 +748,10 @@ selector {
 }
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {
+.ipc-icon-border-button {
+	border: none;
+}
+
 /* Advanced Search _______________________________________________________________*/
 
 [href="https://www.imdb.com/search/"] svg.ipc-icon--find-in-page {
@@ -802,6 +801,49 @@ selector {
     background-size: 27px!important;
     padding-left: 28px!important;
 }
+
+/* Edit _______________________________________________________________*/
+
+.ipc-icon.ipc-icon--edit {
+	background: url(https://i.ibb.co/hD543B5/pencil-icon-28x28.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.ipc-icon.ipc-icon--edit {
+    background-size: 21px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
+/* Flag _______________________________________________________________*/
+
+.ipc-icon.ipc-icon--flag {
+	background: url(https://i.ibb.co/VJLpNFN/flag-icon-24x36.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.ipc-icon.ipc-icon--flag {
+    background-size: 21px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
+/* Info _______________________________________________________________*/
+
+.ipc-icon.ipc-icon--info {
+	background: url(https://i.ibb.co/Lhfjqf4/information-sign-1024x1024.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.ipc-icon.ipc-icon--info {
+    background-size: 21px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
 
 /* Keywords _______________________________________________________________*/
 

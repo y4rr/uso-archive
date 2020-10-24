@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cybernetic
 @description    `Темная тема с гибкой настройкой для сайта Monopoly OneИнформация - vk.com/mnpldrk`
-@version        20201023.11.43
+@version        20201024.9.54
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown color "Цветовая схема" {
@@ -188,11 +188,14 @@ bigpic "Да" <<<EOT .profile-top-cover {
 
 }
 @advanced dropdown scroll "Цвет скроллбара" {
-	1 "Схема темы*" <<<EOT ::-webkit-scrollbar-thumb {
+	2 "Темный*" <<<EOT ::-webkit-scrollbar-thumb {
+    background-color: var(--color5);
+    border-radius: 10px; } EOT;
+1 "Схема темы" <<<EOT ::-webkit-scrollbar-thumb {
     background-color: var(--color2);
     border-radius: 10px; } EOT;
-2 "Темный" <<<EOT ::-webkit-scrollbar-thumb {
-    background-color: var(--color5);
+3 "Светлый" <<<EOT ::-webkit-scrollbar-thumb {
+    background-color: var(--color12);
     border-radius: 10px; } EOT;
 
 }
@@ -326,8 +329,11 @@ div.Gchat.block.block-notrimcontent, div.VueGamesRooms {
 ==/UserStyle== */
 @-moz-document domain("monopoly-one.com") {
 /*[[color]]*/
+body[theme=dark] label[for="settings_beta_darktheme"]:after {
+    content: '  / Installed mnpldrk dark v.2310-20';
+    color: var(--color1); }
 label[for="settings_beta_darktheme"]:after {
-    content: '  (Установлен стиль: mnpldrk от 060820)';
+    content: '  / Installed mnpldrk light v.2410-20';
     color: var(--color1); }
 
 /* font-alternative */
@@ -348,7 +354,11 @@ body[theme=dark] a {
     color: var(--color1); }
 
 body[theme=dark], body[theme=dark] .dropdown-list, body[theme=dark] .im-body-main, body[theme=dark] .emotes-button-window, body[theme=dark] .selecter-value, body[theme=dark] .selecter-options, .auth .auth-separator:before, body[theme=dark] .GamesNewroom-modes {
-    background-color: var(--color4); }
+    background-color: var(--color4) !important; }
+body[theme=dark] div.wrapper {
+    background-color: var(--color3) !important; }
+body {
+    background: #f3f3f3!important; }
 
 body[theme=dark] .block, body[theme=dark] .vueDesignDialog:not(._content_only), body[theme=dark] div.switcher:before, body[theme=dark] .im-body-side, body[theme=dark] .HeaderUser-menu, body[theme=dark] .selecter-options-value._selected, body[theme=dark] .selecter-options-value:not(._selected):hover, body[theme=dark] .menu, body[theme=dark] .VueHeaderSearch-block, body[theme=dark] .GamesNewroom-block {
     background-color: var(--color3); }
@@ -405,9 +415,12 @@ div.header.block {
 body[theme=dark] .HeaderUser-avatar {
     background-color: #fff0; }
 /*[[fix]]*/
-.header .header-menu .header-menu-one {
+body[theme=dark] .header .header-menu .header-menu-one {
     background-color: var(--color3);
     border: solid 1px var(--color4); }
+.header .header-menu .header-menu-one {
+    background-color: #fff;
+    border: solid 1px #fff; }
 .header[mnpl-style=transparent-light], .header[mnpl-style=transparent-white] {
     position: absolute !important; }
 a.header-menu-one {
@@ -567,8 +580,11 @@ div.selecter {
     color: var(--color13); }
  .games-market:not(._dark) .games-market-arrow:hover {
     color: var(--color2); }
-div.games-market-list-one {
+body[theme=dark] div.games-market-list-one {
     background: var(--color3) !important; }
+div.games-market-list-one {
+    background: #fff !important; }
+
 .games-market-list-one:not(._horizontal) .games-market-list-one-more-image img {
     height: 60; }
 .games-market-list-one-more-button button {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201020.4.3
+@version        20201024.7.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -108,6 +108,8 @@
 #dragonflyTransport .rightControls .volume,
 #dragonflyView .playlistDetailsHeader .playlistHeaderArt .albumArtWrapper,
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container #percivalWidget .widget-container,
+
 #globalRactiveContainer .nowPlayingView .nowPlayingPlaybackControls .button,
 #globalRactiveContainer .nowPlayingView .nowPlayingPlaybackControls .button:hover,
 
@@ -143,6 +145,11 @@
 
 .GB-SUPPLE .tallCellView,
 
+._1uVcNB ._3nQ0yZ:hover,
+._1uVcNB:focus-within ._3nQ0yZ.Kqyj9k,
+._1uVcNB:focus ._3nQ0yZ.Kqyj9k,
+._1uVcNB:hover ._3nQ0yZ.Kqyj9k,
+
 ._3MessP._3nQ0yZ.tst-hover-container.Kqyj9k.gzPKfg:hover,
 
 .a-alert-success .a-alert-container,
@@ -162,6 +169,7 @@
 
 .cl-carousel .cl-carousel-next,
 .cl-carousel .cl-carousel-prev,
+.cr-lighthouse-term,
 .csg-box,
 
 .ewc-style .ewc-button-primary.ewc-button,
@@ -207,6 +215,47 @@ img.acs-shwcs-image
 .vse-related-product-container .vse-product-item .vse-product-image
 {
 	mix-blend-mode: normal!important;
+}
+
+._1uVcNB ._3nQ0yZ ._2BTtIo {
+    position: relative;
+    display: block;
+    padding: 24px 12px;
+    margin-top: -48px;
+    visibility: hidden;
+    background: linear-gradient(rgba(27,37,48,0),#1b2530 48px);
+}
+
+
+._1uVcNB:hover ._3nQ0yZ ._2BTtIo
+{
+	opacity: 1!important;
+	margin-top: 30px;
+	display: block!important;
+	visibility: visible!important;
+	z-index:1!important;
+}
+
+._1uVcNB ._3nQ0yZ ._2BTtIo {
+    border-radius: 22px;
+    margin-top: 6px!important;
+    background: #000!important;
+}
+
+._1uVcNB:focus ._3nQ0yZ,
+._1uVcNB:hover ._3nQ0yZ
+{
+    z-index: 1;
+    top: 0!important;
+    left: 10px!important;
+    width: calc(100% + 2px);
+    height: auto!important;
+    opacity: 1!important;
+    position: absolute;
+    margin-left: -12px;
+    box-shadow: 0 0 9px rgba(0,0,0,.7);
+    margin-top: -1px;
+    transition: none;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -303,8 +352,8 @@ body
 	font-size: 15px!important;
 }
 
-#HLCXComparisonTable .a-size-base
-
+#HLCXComparisonTable .a-size-base,
+#see-more-text
 
 {
 	font-size: 14px!important;
@@ -413,6 +462,14 @@ body
 	margin-top: 58px;
 }
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container #percivalWidget .widget-container {
+    margin-top: -3px;
+}
+
+#navbar.nav-bluebeacon #nav-xshop #nav-your-amazon #nav-your-amazon-text .nav-shortened-name {
+    margin-top: -4px;
+}
+
 #navbar[data-template=layoutSwapToolBar].layout2.bold-focus-hover #nav-tools #nav-link-prime
 {
 	margin: -7px 1px 0 1px;
@@ -421,6 +478,11 @@ body
 #main-content-wrapper
 {
 	left: 15rem!important;
+}
+
+.jxBPRE li,
+.jxBPRE._1_eeMM._3McWyQ {
+	top: 22px!important;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -450,6 +512,8 @@ body
 .border-gradient2 .center,
 
 .copilot-secure-display,
+
+.dp-customer-reviews,
 
 .gIAKM,
 
@@ -496,6 +560,11 @@ h2.a-spacing-small
 	margin: 14px 0px 14px 61px!important;
 }
 
+#navbar.nav-flex #nav-belt .nav-right #nav-tools>.nav-a .nav-line-2 .nav-icon.nav-arrow,
+#navbar.nav-flex #nav-belt .nav-right #nav-tools #icp-nav-flyout .icp-nav-link-inner .nav-icon.nav-arrow {
+    margin: -6px 0 0 2px;
+}
+
 /*___ Paddings _____________________________________________________________________*/
 
 #a-page div.left_nav.browseBox,
@@ -530,6 +599,7 @@ h2.a-spacing-small
 .a-box.a-box-normal.a-text-center.ped_cg_content_box,
 .a-carousel-card,
 .acswidget.acswidget-carousel.celwidget.a-spacing-base.acswidget-carousel--shoveler.acswidget-carousel--default,
+.av-detail-section._1eXZeC,
 
 .best-of-prime-card,
 .bxc-grid__container,
@@ -599,6 +669,7 @@ ul.a-nostyle li
 
 /*___ Heights ______________________________________________________________________*/
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container #percivalWidget .widget-container .percivalTitle .textInTwoLine,
 .a-truncate[data-a-word-break=normal],
 
 .p13n-sc-line-clamp-3
@@ -645,6 +716,10 @@ p#navbar[data-template=layoutSwapToolBar].layout2.nav-pldn.nav-a11y-t1 #nav-xsho
 .octopus-pc-item-v3
 {
 	height: 383px;
+}
+
+._1qvWTl {
+    height: 35rem;
 }
 
 /*___ Widths _______________________________________________________________________*/
@@ -698,6 +773,8 @@ selector
 #prime-up-hero-header,
 
 #yourOrders,
+
+.dp-customer-reviews,
 
 .huc-v2-page-container,
 
@@ -802,6 +879,7 @@ a[href]:visited
 .style__navBar__2NVns > .style__navList__Igck2 > .style__navItem__3rEc7 > a .style__linkText__OI_YN:hover,
 .style__navigation__FMWJE .style__navItem__3rEc7 button:hover,
 
+[data-automation-id="imdb-rating-badge"],
 [role="menuItem"]:hover,
 div.left_nav p a:hover,
 h1,
@@ -818,9 +896,9 @@ input[type="radio"]:checked + label
 #ad-feedback-text-desktop-arbies,
 #askDPSearchPromptLabel,
 
-.ewc-style .ewc-button-text,
-
 #dragonflyView .playlistDetailsHeader .viewSubDescription,
+
+#epcomppopoverBody .popover-box .popover-body .popover-container .video-product-info .synopsis-info,
 
 #prime-up-cta .prime-up-cta-signup-button .prime-up-cta-signup-button-inner .prime-up-cta-signup-button-text,
 #prodDetails .prodDetTable tr td,
@@ -832,6 +910,11 @@ input[type="radio"]:checked + label
 
 #zg #zg_banner_subtext,
 #zg #zg_tabs li div a,
+
+._1ONDJH dd,
+._14ydqK._14ydqK._14ydqK,
+._14ydqK._14ydqK._14ydqK:link,
+._14ydqK._14ydqK._14ydqK:visited,
 
 .a-alert-inline-info .a-alert-container,
 .a-button .a-button-text,
@@ -853,6 +936,8 @@ input[type="radio"]:checked + label
 .displayAddressDiv .displayAddressUL li,
 .dv-grid-beard-info span,
 
+.ewc-style .ewc-button-text,
+
 .followArtistText,
 
 .grid-rails .genericTile .detailsWrapper .secondaryTitle,
@@ -873,6 +958,7 @@ input[type="radio"]:checked + label
 
 .songList .titleCell,
 .style__navigation__FMWJE .style__navItem__3rEc7 button,
+
 .titleCell,
 
 .vxd-music-bs-row .acs-widget-ranking__rank,
@@ -880,6 +966,8 @@ input[type="radio"]:checked + label
 
 .w-success-msg span,
 .w-uwl span,
+
+.XqYSS8,
 
 [data-creative-type=MultiCardCreativeDesktop] .sb_25yic0YU,
 div.gbhcopy,
@@ -902,6 +990,8 @@ ul.a-list-link a
 
 #detailpage-click2call-header,
 #dragonflyLeftNav .mainLinks .mainLinksTitle,
+
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .product-info .first-line .product-title a,
 
 #gw-card-layout h2,
 
@@ -1037,7 +1127,11 @@ h4
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+#epcomppopoverBody .popover-box .popover-body .popover-container .video-product-info .meta-info-key,
+
 #notification-provider .sc-ifAKCX.fndjWj,
+
+._2vWb4y ._1ONDJH ._36qUej,
 
 .a-column.a-span-last .a-color-secondary,
 .a-spacing-top-mini .unitLineHeight,
@@ -1075,6 +1169,9 @@ table.a-lineitem th:first-child
 
 #deliveryMessageMirId b,
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .product-info .second-line .release-year,
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .product-info .second-line .runtime,
+
 #promiseBasedBadgeInsideBuyBox_feature_div #delivery-message b,
 
 #tracking-events-container .tracking-event-date,
@@ -1103,6 +1200,8 @@ table.a-lineitem th:first-child
 .songlist .durationCell,
 .style__percentageOff__3GVNZ,
 
+[data-automation-id="release-year-badge"],
+[data-automation-id="runtime-badge"],
 [id*="itemAddedDate_"],
 [value="Compare with similar items"],
 time
@@ -1259,6 +1358,7 @@ div#ns_FA6MTAA3CA3G7CDPYGHR_2855_wrap div.button
 
 #browsePanel,
 
+#epcompstripeBody #epcomp-stripe .stripe-content,
 #ewc .ewc-item-cover .ewc-item-cover-back,
 
 .nav-ewc-persistent-click #ewc #ewc-active-cart .ewc-scroll-area,
@@ -1344,6 +1444,8 @@ div#ns_FA6MTAA3CA3G7CDPYGHR_2855_wrap
 #navbar.nav-bluebeacon #nav-belt,
 #navbar.nav-bluebeacon #nav-main,
 #navbar.nav-bluebeacon,
+
+._1_GTrJ._1_GTrJ._1_GTrJ._1_GTrJ,
 
 .ac-header-wrapper,
 
@@ -1435,6 +1537,8 @@ ul.a-pagination li a
 
 #pageContainer .widgetLink-group a:hover,
 
+._1Opa2_,
+
 .GB-M-COMMON,
 .GB-SUPPLE .filters,
 
@@ -1444,6 +1548,9 @@ ul.a-pagination li a
 ._1Opa2_,
 ._1y15Fl ._1N2P-J,
 ._1y15Fl,
+
+._2UvETW,
+._2Ke7Sf,
 
 .a-accordion .a-accordion-active .a-accordion-inner,
 .a-accordion .a-accordion-active .a-accordion-row,
@@ -1483,6 +1590,8 @@ ul.a-pagination li a
 .cl-carousel .cl-carousel-prev,
 .cr-lighthouse-term,
 .ctTZXu,
+
+.dp-customer-reviews-wrapper,
 
 .feed-carousel .feed-carousel-control,
 
@@ -1550,6 +1659,8 @@ ul.a-pagination li
 
 .dragonfly .stickyNav .status .notificationStyle.normalColorScheme,
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .watch-now,
+
 .playqueue-view .controls span.selectBarButton,
 
 [data-action="add-wishlist-declarative"],
@@ -1563,6 +1674,8 @@ a.iss-banner-ad span
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
+
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .watch-now:hover,
 
 ._2vHmSA._2vHmSA._2vHmSA:hover,
 
@@ -1581,6 +1694,7 @@ a.iss-banner-ad span:hover
 	color: #ff0!important;
 }
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .watch-now:active,
 ._2vHmSA._2vHmSA._2vHmSA:active,
 
 .a-fixed-left-grid .a-button:active,
@@ -1599,6 +1713,7 @@ a.iss-banner-ad span:active
 
 /*__ Blue/Gray __________________________________________________________________________*/
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .tvod-offer .offer-button,
 ._20uSE4._20uSE4._20uSE4,
 ._3ra7oO
 {
@@ -1609,12 +1724,15 @@ a.iss-banner-ad span:active
 	color: #fff!important;
 }
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .tvod-offer .offer-button:hover,
 ._20uSE4._20uSE4._20uSE4:hover,
 ._3ra7oO:hover
 {
 	background-image: linear-gradient(to bottom right, #536376, #000)!important;
 	color: #ff0!important;
 }
+
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container .product-container .offer-info .tvod-offer .offer-button:active,
 
 ._20uSE4._20uSE4._20uSE4:active,
 ._3ra7oO:active
@@ -1819,6 +1937,7 @@ a.iss-banner-ad span:active
 .a-box.a-box-normal.a-text-center.ped_cg_content_box,
 .a-color-alternate-background,
 .advertismentContainer,
+.av-detail-section._1eXZeC,
 
 .best-of-prime-card,
 .border-gradient2 .center,
@@ -1826,6 +1945,8 @@ a.iss-banner-ad span:active
 
 .copilot-secure-display,
 .csg-box,
+
+.dp-customer-reviews,
 
 .gIAKM,
 .gw-card-layout .a-cardui,
@@ -1907,6 +2028,7 @@ div.slotContainer
 .a-box.a-box-normal.a-text-center.ped_cg_content_box:hover,
 .a-color-alternate-background:hover,
 .advertismentContainer:hover,
+.av-detail-section._1eXZeC:hover,
 
 .best-of-prime-card:hover,
 .border-gradient2 .center:hover,
@@ -1914,6 +2036,8 @@ div.slotContainer
 
 .copilot-secure-display:hover,
 .csg-box:hover,
+
+.dp-customer-reviews:hover,
 
 .gIAKM:hover,
 .gw-card-layout .a-cardui:hover,
@@ -1958,6 +2082,8 @@ div.slotContainer:hover
 #buybox,
 
 #g-items > .g-item-sortable,
+
+#epcomppopoverBody .popover-box,
 
 #optionPanel ul,
 
@@ -2006,6 +2132,8 @@ div.slotContainer:hover
 #buybox:hover,
 
 #g-items > .g-item-sortable:hover,
+
+#epcomppopoverBody .popover-box:hover,
 
 #optionPanel ul:hover,
 
@@ -2075,8 +2203,20 @@ div.slotContainer:hover
 	border-bottom: 1px solid #000!important;
 }
 
+/*__ Green Gradient _________________________________________________________________*/
+
+._14ydqK._14ydqK._14ydqK,
+._14ydqK._14ydqK._14ydqK:link,
+._14ydqK._14ydqK._14ydqK:visited
+{
+	background: linear-gradient(to bottom, #10c402, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
 /*__ Blue Gradient _________________________________________________________________*/
 
+#epcompstripeBody #epcomp-stripe .stripe-content .stripe-container #percivalWidget .widget-container,
 #navFooter.navLeftFooter .navFooterBackToTop,
 
 #twister .swatches li,
@@ -2180,7 +2320,6 @@ div.slotContainer:hover
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
-
 
 /*__________________________________________________________________________________*/
 
@@ -2906,6 +3045,11 @@ div#site div#site-main div.b-pagination-a > ul.b-pagination-list > .b-pagination
 #navbar .nav-tools .nav-single-row-link:hover .nav-line-1
 {
 	margin-top: -2px;
+}
+
+#nav-recently-viewed .nav-icon {
+    margin-top: -11px!important;
+    top: -16px!important;
 }
 
 /* No Avatar _______________________________________________________________*/

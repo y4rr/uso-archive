@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pooya
 @description    `Spotify Minimal White (Light) theme`
-@version        20201017.19.10
+@version        20201024.7.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -217,6 +217,7 @@ color:#ffffff !important;}
 .verifiedBadge + span > h1 {color:white !important;}
 
 /* action-bar buttons */
+div[data-testid="action-bar-container"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]):not([title="Remove from Your Library"]),
 div[data-testid="action-background-container"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]):not([title="Remove from Your Library"]),
 div[data-testid="action-bar-row"] button:not([title=More]):not([aria-label=Play]):not([title="Save to Your Library"]):not([title="Remove from Your Library"]) {
     font-size: 13px;
@@ -227,7 +228,8 @@ div[data-testid="action-bar-row"] button:not([title=More]):not([aria-label=Play]
 
 
 /* action bar hover */
-div[data-testid="action-bar-row"] button:not([aria-label=Play]):not([title="Save to Your Library"]):hover {border-radius:4px ; background-color: #00000017; cursor:pointer ;}
+div[data-testid="action-bar-container"] button:not([aria-label=Play]):not([title="Save to Your Library"]):hover,
+div[data-testid="action-bar-row"] button:not([aria-label=Play]):not([title="Save to Your Library"]):hover {border-radius:4px ; background-color: #00000017 !important; cursor:pointer ;}
 
 /*
 .verifiedBadge + span + span {color:#fff;}
@@ -266,6 +268,12 @@ section[aria-label="Artist Playlists"] + div h3 {color: #373737 !important;}
 ._571922307568e54e63ba83058433369d-scss._2e77de28f0b30f1b6e8d479009f45e0e-scss,
 [data-testid=action-background-container] h2 {color: #000 !important;}
 
+/* podcast mini titles */
+div[data-testid="action-bar-container"] + div h3 {color: #000 !important;}
+div[data-testid="action-bar-container"] + div h4 {color: #333;}
+
+/* podcast description */
+div[data-testid="action-bar-container"] + div > div:first-of-type p span {color: #333;}
 
 /* playlist description */
 .main-view-container__scroll-node-child section[data-testid="playlist-page"] 
