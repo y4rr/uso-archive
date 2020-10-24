@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        20201022.20.6
+@version        20201023.19.42
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1876,7 +1876,7 @@ div.cluetip-inner.ui-cluetip-content div span {
     border: 3px solid #040711 !important;
     box-shadow: 0px 0px 10px 0px rgb(4, 7, 17);
 }
-.user-hoard-dialog-items, .user-hoard-food-points, .dragon-picker-preview-name {
+.user-hoard-dialog-items, .user-hoard-food-points, .dragon-picker-preview-name, .hoard-sale-buyback-item-name, .hoard-sale-buyback-item-price {
     color: #00c8ff !important;
 }
 .common-message-error {
@@ -1900,8 +1900,14 @@ div.cluetip-inner.ui-cluetip-content div span {
     background: url(https://i.imgur.com/3ULJWj2.png);
 }
 .hoard-result-item-box[data-favorite="1"] {
-    background: linear-gradient(to bottom, #73fbeb 0%,#d15de3 100%);
+    background: linear-gradient(to bottom, #73fbeb 0%, #d15de3 100%);
     border-color: #fff;
+}
+.common-table tbody tr:nth-child(odd) {
+    background-color: #171c21;
+}
+.common-table tr {
+    border-bottom: none;
 }
 /* Image Replacer */
 #cluetip-waitimage {

@@ -2,13 +2,16 @@
 @name           FWKZT Main Site Theme BETA
 @namespace      USO Archive
 @author         TheWhyOfPi
-@description    `This theme has various site fixes including a custom login screen.The theme was written by me and only me.The theme is an edit of wordpress' shitty base.`
-@version        20201021.22.51
+@description    `This theme has various site fixes including a custom login screen.The theme was written by me and only me.The theme is an edit of wordpress' shitty base.This theme was a personal project so do not flame me for it being shitty or broken.`
+@version        20201023.22.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://fwkzt.com/forum/"), url-prefix("https://fwkzt.com") {
 
+#af-wrapper .forum, #af-wrapper .topic, #af-wrapper .member, #af-wrapper .unread-topic, #af-wrapper .unapproved-topic {
+border-bottom: #00000000
+}
 
 #af-wrapper .content-container, #af-wrapper .report-element, #af-wrapper #statistics, #af-wrapper .post-wrapper, #af-wrapper #profile-header .background-contrast, #af-wrapper #poll-results .poll-result-bar, #af-wrapper #memberslist-filter {
 
@@ -199,7 +202,7 @@ body {
 #af-wrapper input, #af-wrapper .forum-poster, #af-wrapper .topic-poster, #af-wrapper .member-last-seen, #af-wrapper .editor-element, #af-wrapper .content-container, #af-wrapper .forum-post-header, #af-wrapper #statistics-body, #af-wrapper .statistics-element, #af-wrapper #statistics-online-users, #af-wrapper .editor-row, #af-wrapper .editor-row-subject, #af-wrapper .signature, #af-wrapper .post-element, #af-wrapper .post-wrapper, #af-wrapper .forum-subforums, #af-wrapper .uploaded-file img, #af-wrapper .action-panel-option, #af-wrapper .topic-sticky .topic-poster, #af-wrapper #profile-layer, #af-wrapper #profile-layer .pages-and-menu:first-of-type, #af-wrapper #profile-content, #af-wrapper #profile-content .profile-row, #af-wrapper .history-element, #af-wrapper #memberslist-filter, #af-wrapper .content-element, #af-wrapper .ad-forum, #af-wrapper .ad-topic, #af-wrapper .spoiler, #af-wrapper .spoiler .spoiler-body, #af-wrapper .report-element, #af-wrapper .report-source, #af-wrapper .report-content, #af-wrapper .report-actions, #af-wrapper #profile-content .profile-section-header, #af-wrapper #poll-options, #af-wrapper #poll-panel, #af-wrapper #poll-panel #poll-headline, #af-wrapper #poll-results .poll-result-bar, #af-wrapper #usergroups-filter {
 
 
-    animation:pulsesmall2 5s infinite alternate;
+    background: #00000000!important
 
 
 }
@@ -407,6 +410,125 @@ footer {
 
 
     margin-top: 2rem;
+
+
+}
+.navbar a:hover {
+    background: #0b0500;
+
+}
+.navbar a:active {
+    background: #0b0500;
+
+}
+.dropdown .menu{
+    background: #0b0500;
+
+}
+.navbar a:hover, .navbar .dropdown:hover, .dropdown:active {
+    background: #0b0500;
+
+}
+#panel{
+ background: url(https://i.imgur.com/reqE1hE.jpg)!important;
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+  background-position: absolute!important;
+
+}
+
+#af-wrapper .unread, #af-wrapper .fas {
+    color: #980000;
+}
+.server-block h3:first-child {
+    width: 100%;
+    background: #a40200;
+    padding: 1rem;
+}
+.server-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #222;
+    border: 1px solid #a40200;
+    position: relative;
+    width: 50%;
+}
+.server-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2222228c;
+    border: 1px solid #a40200;
+    position: relative;
+    width: 50%;
+}
+#discord-title{
+	background: #a40200
+}
+.dropdown .menu {
+    background: #0b0500c7!important;
+}
+#table{
+background:#2222228c;
+}
+.box {
+    background: #2222228c;
+    padding: 1rem;
+}
+.tribe-events .tribe-events-header {
+    align-items: center;
+    background-color: #000000ab;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -19.5px;
+    padding: 0 19.5px 16px;
+    position: relative;
+}
+}
+
+@-moz-document url-prefix("https://fwkzt.com/login/") {
+body {
+ background: url(https://i.imgur.com/4vEZhPG.jpg)!important;
+}
+.login form {
+    background: #333333a6!important;
+    border: none!important;
+    box-shadow: 7px 7px 30px 7px #000!important;
+}
+.theChampSteamBackground{
+ background: #171717!important    
+}
+.theChampSteamBackground:hover {
+	animation: pulse 1s infinite alternate;
+}
+
+/*===========animations============*/
+@keyframes pulsesmall2 {
+
+
+    from {
+
+
+        box-shadow:0px 0px 0.5px 1px #6d0000;
+
+
+    }
+
+
+    to {
+
+
+        box-shadow:0px 0px 180px 10px #6d0000;
+
+
+    }
 
 
 }

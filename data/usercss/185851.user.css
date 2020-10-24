@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        2020718.2.40
+@version        20201023.16.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -48,22 +48,25 @@ body {
 ._2kUrE--theme-twitch ._36MQ7--item-container .VRZvy--item {
 	color: #eee;
 }
+.tw-animated-glitch-logo__body {
+    fill: #130b1f;
+}
 }
 
 @-moz-document domain("id.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -94,17 +97,17 @@ body#kraken_auth, .authorize .wrap {
 @-moz-document domain("twitch.amazon.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 0px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -134,17 +137,17 @@ body {
 @-moz-document domain("primevideo.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -184,17 +187,17 @@ body {
 @-moz-document domain("amazon.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -244,17 +247,17 @@ hr {
 @-moz-document domain("dev.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
-             background-color: #0e0e0e;
+             border-radius: 2px;
+             background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
-             background-color: #0e0e0e;
+             width: 8px;
+             background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -305,17 +308,17 @@ code .kr, code .kd, code .k, code .kc {
 @-moz-document domain("blog.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -330,17 +333,17 @@ body, .t\:w.padded-section, .t\:w .padded-section, [class*='t:'] .t\:w .padded-s
 @-moz-document domain("help.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -470,17 +473,17 @@ a:hover.comm-topic__link, .selfServiceArticleListItem:first-child {
 @-moz-document domain("twitchadvertising.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -523,17 +526,17 @@ a:hover.comm-topic__link, .selfServiceArticleListItem:first-child {
 @-moz-document domain("meetups.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -636,17 +639,17 @@ body {
 @-moz-document domain("twitchcon.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -674,17 +677,17 @@ body {
 @-moz-document url-prefix("https://www.twitch.tv/p") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -726,19 +729,20 @@ td {
 @-moz-document domain("brand.twitch.tv") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
+
 .b-madness .b-panel__bg {
     background-color: #0e0e0e;
 }
@@ -750,17 +754,17 @@ td {
 @-moz-document url-prefix("https://www.twitch.tv/jobs") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -809,17 +813,17 @@ body {
 @-moz-document url-prefix("https://boards.greenhouse.io/twitch") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -900,17 +904,17 @@ input {
 @-moz-document domain("igdb.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
+             width: 8px;
              background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -1118,18 +1122,17 @@ svg.filter-great.gauge > circle {
 @-moz-document domain("secure.xsolla.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
-             background-color: #0e0e0e;
-			 border-color: #0000;
+             border-radius: 2px;
+             background-color: #212121;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
-             width: 5px;
-             background-color: #0e0e0e;
+             width: 8px;
+             background-color: #212121;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #9147ff;
         }
 
@@ -1196,5 +1199,104 @@ x-form-checkout:not(.compact) .form-checkout {
 }
 x-status-check .status-check-block, x-status-check .status-check-field-dot, x-status-check .status-check-field-group:last-of-type {
 	border-color: #bbb;
+}
+}
+
+@-moz-document domain("supervisor.ext-twitch.tv"), domain("do3e1cmcmos4a17ynwdkvnf7gbqj6d.ext-twitch.tv"), regexp("/(http|https)://*.ext-twitch.tv.*/") {
+::-webkit-scrollbar-track {
+             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+             border-radius: 2px;
+             background-color: #212121;
+        }
+        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+        ::-webkit-scrollbar {
+             width: 8px;
+             background-color: #212121;
+        }
+        ::-webkit-scrollbar-thumb {
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+             background-color: #9147ff;
+        }
+/* [src='https://do3e1cmcmos4a17ynwdkvnf7gbqj6d.ext-twitch.tv/do3e1cmcmos4a17ynwdkvnf7gbqj6d/0.2.2/2fc4a0d94d3fd843987c59b5dd2d1fa8/viewer.html?anchor=panel&language=en&locale=en-US&mode=viewer&state=released&platform=web'] */
+}
+
+@-moz-document domain("twitch.uservoice.com") {
+::-webkit-scrollbar-track {
+             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+             border-radius: 2px;
+             background-color: #212121;
+        }
+        html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
+        ::-webkit-scrollbar {
+             width: 8px;
+             background-color: #212121;
+        }
+        ::-webkit-scrollbar-thumb {
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+             background-color: #9147ff;
+        }
+html, body, .site3 .uvForumCreateIdea, .site3 .uvIdea.uvIdea-show, .site3 .uvTabs, .site3 .uvList-ideas .uvIdea, u-styled .bg-white, .site3 .uvUserProfile .uvFiltersExplanation, .site3 .uvModuleSection-settings .uvField, .site3 .uvSidebarSearch {
+	background: #0e0e0e;
+}
+u-styled *, u-styled :after, u-styled :before {
+	border-color: #0e0e0e;
+}
+.uvCustomLink-color, a, .uvHelp, .uvTabSelect, .uvTab-dropdown .uvFieldPlaceholder, .uvModule-session .vcard .uvRememberMe a, .uvModule-session .uvModuleSection-signin a, .uvBreadcrumbs, .uvStyle-linkArrow, .uvNavList .uvListItem-forum, .uvModule-session .uvUserNav a, .uvUserProfile .uvIdea-list .uvIdeaMeta, .uvIdeaVoteBadge .uvIdeaVoteCount, .uvPageContainer mark, .uvPagination a, .uvCustomPrimary-color {
+    color: #b19aec;
+}
+.color-link {
+    color: #b19aec !important;
+}
+.site3 .uvPageTitle, u-styled, .site3 .uvTab, .site3 .uvList-ideas .uvIdeaDescription, .site3 .uvUserActionBody, .site3 .auth-only, .css-1j3oo42:not([icon-only]) button, .site3 .uvIdeaDescription, .site3 .uvFieldPassword, .site3 .uvFieldPlaceholder, .site3 .uvFieldSelect, .site3 .uvFieldText, .site3 .uvFieldTextarea, .site3 .uvModule-session .vcard {
+    color: #689ac4;
+}
+.site3 .uvForumMessage, .site3 .uvStyle-count, .site3 .uvModule-message .uvModule-welcome-text {
+    color: #7794a8;
+}
+.color-link-border {
+    border-color: #6838e1 !important;
+}
+.site3 .uvModuleHeader, .site3 .uvStyle-meta {
+    color: #95a2bb;
+}
+.site3 .uvModule-feedback .uvStyle-count, .site3 .uvModule-mainSidebar .uvStyle-count, .site3 .uvIdeaMeta {
+    color: rgba(104, 154, 196, .7);
+}
+.site3 .uvIdeaVoteBadge .uvIdeaVoteCount, .site3 .uvPagination .disabled, .site3 .uvPagination a, .site3 .uvPagination em, .site3 .uvPagination span {;
+    border-color: #3f4146;
+}
+.site3 .utility-links a {
+	color: #888688;
+}
+.site3 .uvIdeaComments, .site3 .uvList-comments .uvListItem {
+	border-color: #141516;
+}
+.site3 .uvList-categories .uvStyle-count, .site3 .forum-target:hover .forum-heading {
+    color: #fff;
+}
+.site3 .uvField.uvField-focus {
+	background: #0e0e0e;
+}
+[src='https://secure.gravatar.com/avatar/6d9fde1b47894383aaf6f642f65706ac?size=40&default=https%3A%2F%2Fassets.uvcdn.com%2Fpkg%2Fadmin%2Ficons%2Fuser_70-6bcf9e08938533adb9bac95c3e487cb2a6d4a32f890ca6fdc82e3072e0ea0368.png'] {
+	filter: invert(100);
+}
+.site3 .uvFiltersExplanation {
+    background-color: #0f1113;
+}
+.site3 .uvFiltersExplanation, .site3 .uvOut-of-Votes-error {
+    color: #9f9488;
+}
+option, .site3 .uvFieldSelect option {
+	background: #0e0e0e;
+	color: #fff;
+}
+.site3 .forum {
+    background-color: #0e0e0e;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .05), 0 4px 12px 2px rgba(255, 255, 255, .05);
+}
+.site3 .forum-target:hover .forum-arrow svg {
+    stroke: #fff !important;
 }
 }
