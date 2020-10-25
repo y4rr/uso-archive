@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `firefox`
-@version        20201011.7.18
+@version        20201025.8.59
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,7 @@
     
     
     /*BG & font*/html{background:#020!important;color:#ccc!important;}
-    /*BG & font*/body{background:#020!important;color:#ccc!important;overflow-x:hidden!important;}
+    /*BG & font*/body{background:transparent!important;color:#ccc!important;overflow-x:hidden!important;}
     /*link*/a:visited{color:#660!important;}
     /*link*/a:link{color:#a60!important;}
     /*link*/a:link:hover{color:#f60!important;}
@@ -649,11 +649,12 @@
     /*right - new board list*/.BH-list1 li:nth-child(2n){background:#040!important;}
 }
 @-moz-document regexp("http(s)?://www\.gamer\.com\.tw.*"){
-    /*index*/
+    /*indexindex index index index*/
     body{overflow-x:hidden!important;}
     body::before,
     body::after{display:none!important;}
     body>.BA-topbg{width:900px!important;min-width:unset!important;margin:auto!important;}
+    body>.BA-topbg::after{display:none!important;}
     body>.BA-topbg>.BA-top{width:100%!important;}
     body>#BH-background{background:#020!important;}
     body>#BH-background>.BA-wrapper{width:750px!important;overflow:visible!important;}

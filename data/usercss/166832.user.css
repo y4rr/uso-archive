@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        202089.10.9
+@version        20201025.12.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -102,7 +102,25 @@ textarea
 	border: 1px #171616 solid;
 }
 
+.standar_nav .nav-entry-title {
+    overflow: visible;
+}
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    white-space: pre-line;
+}
+
 /*___ Fonts ________________________________________________________________________*/
+
+.fa-3x {
+    font-size: 82px!important;
+}
+
+.markdown-section pre>code,
+.standar_nav .nav-entry,
+h2 {
+    font-size: 21px;
+}
 
 .file-row span,
 .file-row p
@@ -110,13 +128,11 @@ textarea
 	font-size: 19px!important;
 }
 
+.select_converter_title .select_converter_description,
+.standar_nav .nav-subentry,
 body
 {
 	font-size: 17px!important;
-}
-
-.fa-3x {
-    font-size: 7em!important;
 }
 
 p
@@ -151,6 +167,11 @@ ul
 	line-height: 32px!important;
 }
 
+.select_converter_title div {
+	line-height: 23px!important;
+}
+
+
 /*___ Remove Items _________________________________________________________________*/
 
 .adsbygoogle,
@@ -164,8 +185,14 @@ ul
 	top: -9999px!important;
 }
 
+.book.with-summary .book-body {
+    left: 17%;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
+.book-body,
+.book-summary,
 .col-lg-10,
 .content-breaker,
 .content-wrapper>.container,
@@ -189,6 +216,8 @@ form.forms fieldset li
 
 /*___ Paddings _____________________________________________________________________*/
 
+.book-body,
+.book-summary,
 .col-lg-10,
 .px-0,
 .side-menu.pr
@@ -206,16 +235,17 @@ textarea
 .img-fluid {
 	max-height: none!important;
 }
-.select_converter
-{
-	height: 13rem!important;
+
+.select_converter {
+    height: 15rem!important;
 }
 
 /*___ Widths _______________________________________________________________________*/
 
 .col-lg-10,
 .container,
-.img-fluid
+.img-fluid,
+.tile-container
 {
 	max-width: none!important;
 }
@@ -225,7 +255,6 @@ textarea
 	width: 100%!important;
 }
 
-.col-lg-10,
 .container,
 .content-area,
 .content-breaker,
@@ -234,9 +263,21 @@ textarea
 	width: 98%!important;
 }
 
-.px-0{
-	width: 53%!important;
+.px-0.col-lg-7
+{
+	width: 90%!important;
 }
+
+.col-lg-10
+{
+	width: 80%!important;
+}
+
+.side-menu
+{
+	width: 15%!important;
+}
+
 
 form.forms ul li .size1-2
 {
@@ -275,7 +316,9 @@ input[type="radio"]:checked + label
 
 /*__________________________________________________________________________________*/
 
+.markdown-section pre>code,
 .files-list .file-row span,
+.header-text,
 .hx76pnmng7qt,
 .pfcjxy8mp1sn,
 .select_converter.conversion-pair .select_converter_title,
@@ -289,6 +332,8 @@ p
 
 /*___ Khaki ________________________________________________________________________*/
 
+.book-summary ul.summary li span,
+.block .title,
 .file-row .file-name span,
 .panel .panel-heading,
 .show_legend,
@@ -301,6 +346,7 @@ h2
 
 /*___ Burlywood ____________________________________________________________________*/
 
+.linklist-heading,
 h3,
 h4
 {
@@ -364,6 +410,10 @@ pre ::selection
 	color: #f48f8f;
 	opacity: 1;
 }
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, .book .book-body .page-wrapper .page-inner section.normal code .hljs-string, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, .book .book-body .page-wrapper .page-inner section.normal code .hljs-value, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, .book .book-body .page-wrapper .page-inner section.normal code .hljs-header, .book .book-body .page-wrapper .page-inner section.normal pre .hljs-addition, .book .book-body .page-wrapper .page-inner section.normal code .hljs-addition, .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol, .book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, .book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
+    color: #caf80b;
+}
 }
 
 @-moz-document domain("online-convert.com") {
@@ -378,6 +428,7 @@ html
 /*___ Background Gray ______________________________________________________________*/
 
 #footer,
+#footer_api,
 .container,
 .footer,
 .header
@@ -393,12 +444,17 @@ html
 
 /*___ Background 0000 ______________________________________________________________*/
 
+#book-search-input,
 #last_used_converter_top,
+#menu .cd-accordion-menu .menu-item>a,
+
 .content-wrapper,
 .files-list .file-row:nth-of-type(2n+1),
+.footer .cd-accordion-menu .menu-item>a,
 .main-container > .container,
 .main-container,
-.panel,.panel .panel-heading
+.panel,.panel .panel-heading,
+.post-header .cd-accordion-menu .menu-item>a
 {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -415,10 +471,12 @@ html
 #mobile_android_app_top,
 .banner_468x15_pre_conversion,
 .bg-white,
+.block .green_bg,
 .common_ordered_list,
 .common_ordered_list_top,
 .download-file-header,
 .download-file-row,
+.markdown-section code,
 .panel,.standar_nav,
 .standar_nav .nav-subentry
 {
@@ -427,6 +485,7 @@ html
 
 /*__ Blue __________________________________________________________________________*/
 
+.block .subscribe_button,
 .cloudstorage-button,
 .loginButton
 {
@@ -437,6 +496,7 @@ html
 	color: #fff!important;
 }
 
+.block .subscribe_button:hover,
 .cloudstorage-button:hover,
 .loginButton:hover
 {
@@ -444,6 +504,7 @@ html
 	color: #ff0!important;
 }
 
+.block .subscribe_button:active,
 .cloudstorage-button:active,
 .loginButton:active
 {
@@ -533,7 +594,9 @@ html
 
 /*___ Plain Black __________________________________________________________________*/
 
+.book-body,
 .bg-white,
+.book-summary,
 .col-lg-10,
 .content-area,
 .content-breaker,
@@ -546,7 +609,9 @@ html
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.book-body:hover,
 .bg-white:hover,
+.book-summary:hover,
 .col-lg-10:hover,
 .content-area:hover,
 .content-breaker:hover,
@@ -558,16 +623,20 @@ html
 
 /*___ Plain ________________________________________________________________________*/
 
+.cd-accordion-menu>li>ul,
+.dropdown-menu,
 #bookmark,
 #categories_nav .standar_nav ul li ul,
 .select_converter
 {
-	background-color: #111!important;
+	background-color: #1f1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.cd-accordion-menu>li>ul:hover,
+.dropdown-menu:hover,
 #bookmark:hover,
 #categories_nav .standar_nav ul li ul:hover,
 .select_converter:hover
@@ -595,40 +664,71 @@ html
 	text-shadow: 1px 1px #555!important;
 }
 
+.annual_subscription .content,
+.monthly_subscription .content
+{
+	background: linear-gradient(to bottom, #00bb39 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
+}
+
+.block .content
+{
+	background: linear-gradient(to bottom, #00bb39 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
+}
+
+/*__________________________________________________________________________________*/
+
+.api-method .api-method-code
+{
+	background: #111!important;
+	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png)!important;
+}
+
+.markdown-section pre
+{
+	background: #111!important;
+	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg)!important;
+}
+
 /*___ Highlight Background _________________________________________________________*/
 
 #categories_nav .standar_nav ul li:hover,
+.block .features li:hover,
+.book-summary ul.summary li a:hover,
+.language-dropdown li a:hover,
+.language-dropup li a:hover:hover,
 .standar_nav .nav-entry-title:hover
 {
-	background: linear-gradient(to right, #38383838, #0000)!important;
-	border-left-color: #434343!important;
-	border-radius: 22px;
+	background: linear-gradient(to right, #383838b5, #0000)!important;
 }
 }
 
 @-moz-document domain("online-convert.com") {
 /*__________________________________________________________________________________*/
 
-#categories_nav .standar_nav ul li,
-#last_used_converter li,
-.common_ordered_list li,
-.select_converter,
-form.forms fieldset li,
-li,
-p
+.block .features li,
+.book-summary ul.summary li a,
+.home_description li,
+.language-dropdown li a,
+.language-dropup li a,
+.select_converter
 {
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-#categories_nav .standar_nav ul li:hover,
-#last_used_converter li:hover,
-.common_ordered_list li:hover,
-.select_converter:hover,
-form.forms fieldset li:hover,
-li:hover,
-p:hover
+.block .features li:hover,
+.book-summary ul.summary li a:hover,
+.home_description li:hover,
+.language-dropdown li a:hover,
+.language-dropup li a:hover,
+.select_converter:hover
 {
 	filter: brightness(100%)!important;
 }
@@ -679,9 +779,52 @@ img
 	content: ""!important;
 }
 
-.fa-3x
+#menu .cd-accordion-menu .menu-item.has-icon>a,
+.footer .cd-accordion-menu .menu-item.has-icon>a,
+.post-header .cd-accordion-menu .menu-item.has-icon>a
 {
-	font-size: 5em;
+    padding-left: 4.95em;
+}
+
+#menu .cd-accordion-menu .menu-item>a,
+.footer .cd-accordion-menu .menu-item>a,
+.post-header .cd-accordion-menu .menu-item>a
+{
+    padding: 21px 30px 10px 10px;
+}
+
+/* Advertise _______________________________________________________________*/
+
+.fa.fa-usd-circle::before, .fas.fa-usd-circle::before {
+    content: "";
+}
+
+.fa.fa-usd-circle::before, .fas.fa-usd-circle::before {
+	background: url(https://i.ibb.co/bLMZvfD/newspaper-ads-general.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.fa.fa-usd-circle::before, .fas.fa-usd-circle::before {
+    background-size: 50px!important;
+    height: 26px!important;
+    padding-left: 55px!important;
+}
+
+/* API Documentation _______________________________________________________________*/
+
+.fa.fa-code::before, .fas.fa-code::before {
+    content: "";
+}
+
+.fa.fa-code::before, .fas.fa-code::before {
+	background: url(https://i.ibb.co/j8dvXFS/source-code1600.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.fa.fa-code::before, .fas.fa-code::before {
+    background-size: 50px!important;
+    height: 26px!important;
+    padding-left: 55px!important;
 }
 
 /* Archive _______________________________________________________________*/
@@ -726,6 +869,23 @@ img
 	padding-left: 73px!important;
 }
 
+/* Donate _______________________________________________________________*/
+
+.fa.fa-donate::before, .fas.fa-donate::before {
+    content: "";
+}
+
+.fa.fa-donate::before, .fas.fa-donate::before {
+	background: url(https://i.ibb.co/MZSd7ds/forbidden.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.fa.fa-donate::before, .fas.fa-donate::before {
+    background-size: 50px!important;
+    height: 26px!important;
+    padding-left: 55px!important;
+}
+
 /* Ebook _______________________________________________________________*/
 
 .fa-books:before
@@ -742,6 +902,10 @@ img
 
 /* Globe _______________________________________________________________*/
 
+li.tool a i {
+    font-size: 50px;
+}
+
 .float-right .fa-globe:before,
 .post-header .navbar .cd-accordion-menu .fa-globe:before
 {
@@ -754,6 +918,12 @@ img
 {
 	background-size: 19px!important;
 	padding-left: 21px!important;
+}
+
+li.tool a .fa-globe:before {
+    background-size: 49px!important;
+    padding-left: 83px!important;
+    height: 34px;
 }
 
 /* Hash _______________________________________________________________*/
@@ -786,11 +956,19 @@ img
 
 /* Logo _______________________________________________________________*/
 
+[src="https://oc.ocstatic.com/images/logo-top.png"],
 #brand-logo-small,
 #brand-logo
 {
 	background: url(https://i.ibb.co/71Zx7TH/logo-no-gradient-45.png) no-repeat!important;
 	box-sizing: border-box;
+}
+
+[src="https://oc.ocstatic.com/images/logo-top.png"] {
+    background-size: 55rem!important;
+    height: 87px!important;
+    padding-left: 59rem!important;
+    width: 10px!important;
 }
 
 #brand-logo-small, #brand-logo {
@@ -842,6 +1020,24 @@ img
 	padding-left: 83px!important;
 }
 
+/* FAQ _______________________________________________________________*/
+
+.fa.fa-question::before, .fas.fa-question::before {
+    content: "";
+}
+
+.fa.fa-question::before, .fas.fa-question::before {
+	background: url(https://i.ibb.co/H7KjkKR/help-147419-640.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.fa.fa-question::before, .fas.fa-question::before {
+    background-size: 50px!important;
+    height: 26px!important;
+    padding-left: 55px!important;
+}
+
+
 /* Search _______________________________________________________________*/
 
 .fa.fa-search::before,
@@ -866,10 +1062,6 @@ img
     width: 10px!important;
 }
 
-.fas {
-    font-size: 22px!important;
-}
-
 /* Software _______________________________________________________________*/
 
 .fa.fa-computer-classic::before,
@@ -884,6 +1076,36 @@ img
 {
 	background-size: 80px!important;
 	padding-left: 83px!important;
+}
+
+/* Thumbs _______________________________________________________________*/
+
+.fa.fa-thumbs-up::before, .fas.fa-thumbs-up::before {
+    content: "";
+}
+
+.fas.fa-thumbs-up {
+    font-size: 36px!important;
+}
+
+/* Up __________________*/
+
+.fa.fa-thumbs-up::before, .fas.fa-thumbs-up::before {
+	background: url(https://i.ibb.co/MpqLxDN/Thumbs-Up-Skin-Color.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+/* Down __________________*/
+
+ppp {
+	background: url(https://i.ibb.co/6XfG8VP/thumbs-dowm.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.fa.fa-thumbs-up::before, .fas.fa-thumbs-up::before {
+    background-size: 22px!important;
+    width: 10px!important;
+    padding-left: 34px!important;
 }
 
 /* Upload _______________________________________________________________*/

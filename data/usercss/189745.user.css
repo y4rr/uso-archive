@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tongyuantongyu
 @description    `Make the new LK (www.lightnovel.us) fells more comfortable, mainly by animations and automatic dark mode.`
-@version        2020108.13.43
+@version        20201025.4.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown scheme "主题设置" {
@@ -187,6 +187,7 @@ html {
     transform: translateX(0%);
     transition: top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
     transition-delay: 1s;
+    contain: size layout style;
 }
 
 .nav.flex.jc-between::after {
@@ -334,18 +335,23 @@ html {
     justify-content: center;
     align-items: center;
     margin-right: 20px !important;
+    width: 70px;
 }
 
 .index-menu li a {
     color: var(--scheme-typography) !important;
     text-align: center;
-    padding: 0 20px;
     display: block;
+    width: 100%;
     transition: color 0.3s;
     word-break: keep-all;
+    outline: none;
 }
 
-.index-menu li a:hover {
+.index-menu li:hover > a,
+.index-menu li:focus-within > a,
+.index-menu li .btn > a:hover,
+.index-menu li .btn > a:focus {
     color: var(--style-light) !important;
 }
 
@@ -366,9 +372,121 @@ html {
     width: 100% !important;
 }
 
-.index-menu li a:hover::after {
+.index-menu li:hover > a::after,
+.index-menu li:focus-within > a::after,
+.index-menu li .btn > a:hover::after,
+.index-menu li .btn > a:focus::after {
     left: 0 !important;
     width: 100% !important;
+}
+
+.index-menu .container > .index-flow {
+    display: none;
+}
+
+.index-menu .container ul li .index-flow {
+    top: 50px;
+    height: 49.9px !important;
+    overflow: hidden;
+    background-color: var(--scheme-background-0) !important;
+}
+
+.index-menu .container ul li:nth-of-type(2) .index-flow .item-box {
+    position: relative;
+    left: 90px;
+}
+
+.index-menu .container ul li:nth-of-type(3) .index-flow .item-box {
+    left: 180px !important;
+}
+
+.index-menu .container ul li:nth-of-type(4) .index-flow .item-box {
+    left: 270px !important;
+}
+
+.index-menu .container ul li:nth-of-type(5) .index-flow .item-box {
+    left: 360px !important;
+}
+
+.index-menu .container ul li:nth-of-type(6) .index-flow .item-box {
+    left: 450px !important;
+}
+
+.index-menu .container ul li:nth-of-type(7) .index-flow .item-box {
+    left: 540px !important;
+}
+
+.index-menu .container ul li:nth-of-type(8) .index-flow .item-box {
+    left: 630px !important;
+}
+
+.index-menu .container ul li:nth-of-type(9) .index-flow .item-box {
+    left: 720px !important;
+}
+
+.index-menu .container ul li:nth-of-type(10) .index-flow .item-box {
+    left: 810px !important;
+}
+
+.index-menu .container ul li .index-flow .item-box .btn {
+    width: 70px;
+    margin-right: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-menu .container ul li .index-flow {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible;
+    transition: opacity 0.2s 0s, visibility 0.2s 0s;
+}
+
+.index-menu .container ul li a.active + .index-flow {
+    display: none !important;
+}
+
+.index-menu .container ul li .index-flow[style*="display: none"],
+.index-menu .container ul li .index-flow[style*="display:none"] {
+    opacity: 0 !important;
+    visibility: hidden;
+    transition: opacity 0.2s 0.15s, visibility 0.2s 0.15s;
+}
+
+.index-menu .container ul li .index-flow .item-box {
+    transition: transform 0.15s ease-in, opacity 0.15s ease-in;
+}
+
+.index-menu .container ul li .index-flow[style*="display: none"] .item-box,
+.index-menu .container ul li .index-flow[style*="display:none"] .item-box {
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: 0.3s ease-out second-level-out;
+}
+
+.index-menu .container ul li .index-flow:not([style*="display: none"]):not([style*="display:none"]) .item-box {
+    transform: none;
+    opacity: 1;
+}
+
+@keyframes second-level-out {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+.rank-item {
+    outline: none;
 }
 
 .rank-item .rank-title,
@@ -383,7 +501,12 @@ html {
 }
 
 .rank-item:first-of-type .rank-num {
+    z-index: 1;
     background-color: var(--style) !important;
+}
+
+.rank-item:not(:first-of-type) .rank-num {
+    margin-top: 1.5px
 }
 
 .module-right .qr-code {
@@ -394,11 +517,13 @@ html {
     color: var(--scheme-typography) !important;
 }
 
-.rank-item:hover .rank-title {
+.rank-item:hover .rank-title,
+.rank-item:focus-within .rank-title {
     color: var(--style-dark) !important;
 }
 
-.rank-item:hover .rank-num {
+.rank-item:hover .rank-num,
+.rank-item:focus-within .rank-num {
     background-color: var(--style-light) !important;
 }
 
@@ -407,7 +532,8 @@ html {
     transition: color 0.3s, height 0.3s ease-in-out 0.5s;
 }
 
-.rank-item:hover .rank-title:not(.other) {
+.rank-item:hover .rank-title:not(.other),
+.rank-item:focus-within .rank-title:not(.other) {
     height: 90px;
     -webkit-line-clamp: 5 !important;
     transition: color 0.3s, height 0.3s ease-in-out 0s;
@@ -420,6 +546,69 @@ html {
 .rank .rank-list a.rank-item .rank-detail .card-info svg {
     fill: var(--scheme-typography-shallow) !important;
 }
+
+.rank .rank-list a.rank-item.other  {
+    height: 18px !important;
+    overflow: visible;
+}
+
+.rank .rank-list a.rank-item.other .rank-title.other {
+    position: relative;
+    display: block;
+    color: var(--scheme-typography) !important;
+    overflow: visible;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.rank .rank-list a.rank-item.other .rank-title.other::before {
+    display: block;
+    content: attr(title);
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.rank .rank-list a.rank-item.other:hover .rank-title.other,
+.rank .rank-list a.rank-item.other:focus-within .rank-title.other {
+    color: var(--style-dark) !important;
+}
+
+.rank .rank-list a.rank-item.other .rank-title.other::after {
+    z-index: 1;
+    color: var(--scheme-background-1) ;
+    background-color: var(--scheme-typography-bright);
+    --ani-span: 150ms;
+    content: attr(title);
+    position: absolute;
+    word-break: break-all;
+    white-space: normal;
+    display: block;
+    border-radius: 5px;
+    padding: 6px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    transition: opacity var(--ani-span) ease-in, bottom var(--ani-span) ease-in-out, clip-path var(--ani-span) ease-in-out var(--ani-span);
+    opacity: 0;
+    clip-path: circle(0 at 50% 100%);
+    max-width: calc(100% - 2em);
+    bottom: 100%;
+}
+
+.rank .rank-list a.rank-item.other:hover .rank-title.other::after,
+.rank .rank-list a.rank-item.other:focus-within .rank-title.other::after {
+    --ani-span: 250ms;
+    transition-delay: 0ms;
+    opacity: 1;
+    clip-path: circle(200% at 50% 150%);
+    bottom: calc(100% + 7px);
+}
+
 
 .el-pager .number,
 .my-pagination .el-pager .btn-quicknext,
@@ -709,11 +898,72 @@ html {
 }
 
 .article-item-container .article-item-title {
+    position: relative;
+    display: block;
     color: var(--scheme-typography) !important;
+    overflow: visible;
+    font-size: 0;
+    padding-bottom: 45px;
+    pointer-events: none;
+}
+
+.article-item-container .article-item-title::before {
+    display: -webkit-box;
+    content: attr(title);
+    font-size: 15px;
+    height: 3em;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
 }
 
 .article-item-container:hover .article-item-title {
     color: var(--style-dark) !important;
+}
+
+.article-item-container .article-item-title::after {
+    color: var(--scheme-background-1) ;
+    background-color: var(--scheme-typography-bright);
+    --ani-span: 150ms;
+    content: attr(title);
+    position: absolute;
+    word-break: break-all;
+    white-space: normal;
+    display: block;
+    border-radius: 5px;
+    padding: 6px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    transition: opacity var(--ani-span) ease-in, bottom var(--ani-span) ease-in-out, clip-path var(--ani-span) ease-in-out var(--ani-span);
+    opacity: 0;
+    clip-path: circle(0 at 50% 100%);
+    max-width: 160px;
+}
+
+.article-item-container:hover .article-item-title::after {
+    --ani-span: 250ms;
+    transition-delay: 0ms;
+    opacity: 1;
+    clip-path: circle(200% at 50% 150%);
+}
+
+.article-item-container .article-item-img-container.vertical + .article-item-title::after {
+    bottom: calc(100% + 110px);
+}
+
+.article-item-container .article-item-img-container.horizontal + .article-item-title::after {
+    bottom: calc(100% + 235px);
+}
+
+.article-item-container:hover .article-item-img-container.vertical + .article-item-title::after {
+    bottom: calc(100% + 120px);
+}
+
+.article-item-container:hover .article-item-img-container.horizontal + .article-item-title::after {
+    bottom: calc(100% + 250px);
 }
 
 .article-item-container .article-item-img-container {
@@ -865,9 +1115,11 @@ article.article a:hover {
     transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), width 0.3s cubic-bezier(0.35, 0, 0.25, 1), opacity 0.3s cubic-bezier(0.35, 0, 0.25, 1), padding 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1), height 0.3s cubic-bezier(0.35, 0, 0.25, 1) !important;
     transition-delay: 1s, 1s, 1s, 1s, 0s, 0s !important;
     overflow-y: auto;
+    overscroll-behavior: contain;
     scrollbar-width: none;
     padding-bottom: 25px;
     will-change: right, width, opacity, padding, top, height, scroll-position;
+    contain: strict;
 }
 
 .right-recommend.scroll {

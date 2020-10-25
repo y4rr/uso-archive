@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         El-Prime
 @description    `Внимание: Рекомендую использовать расширение "Stylus" под все виды браузеров.По всем вопросам, мой "<a href="https://vk.com/el_prime">VK</a>".Прочие стили: "<a href="https://userstyles.org/styles/152958/warframe">Warframe</a>"."<a href="https://userstyles.org/styles/159571/userstyles-black">Userstyles</a>"."<a href="https://userstyles.org/styles/152919/clubtone">Clubtone</a>"."<a href="https://userstyles.org/styles/153376/rutracker-torrents">Rutracker</a>".`
-@version        2020727.14.18
+@version        20201025.6.20
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -62,7 +62,7 @@
   {
     background-color: rgb(0,0,0,.8) !important;
   }
-  .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, .nim-dialog:not(.nim-dialog_deleted):hover, .audio_row.audio_row__current .audio_row_content, .audio_row .audio_row_content:hover, .audio_page_layout .audio_friend:hover, .mv_playlist .mv_playlist_item.mv_playlist_item_active, .mv_playlist .mv_playlist_item:hover, .fc_msgs, .ui_rmenu_sliding .ui_rmenu_item_sel, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover, .box_title_wrap, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, .emoji_cat_title, .im-mess.im-mess_unread:first-child, .flat_button, .pe_editor .pe_sticker_preview:hover, .Button--primary, .Button + .Button, .away_head, .vk_app_modal_btn:last-child, .vk_app_modal_btn--deny, .Button--sz-m
+  .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, .nim-dialog:not(.nim-dialog_deleted):hover, .audio_row.audio_row__current .audio_row_content, .audio_row .audio_row_content:hover, .audio_page_layout .audio_friend:hover, .mv_playlist .mv_playlist_item.mv_playlist_item_active, .mv_playlist .mv_playlist_item:hover, .fc_msgs, .ui_rmenu_sliding .ui_rmenu_item_sel, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover, .box_title_wrap, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, .emoji_cat_title, .im-mess.im-mess_unread:first-child, .flat_button, .pe_editor .pe_sticker_preview:hover, .Button--primary, .Button + .Button, .away_head, .vk_app_modal_btn:last-child, .vk_app_modal_btn--deny, .Button--sz-m, [dir] .round_button.round_button_large_white
   {
     background-image: linear-gradient(rgb(20,20,20,.6), rgb(0,0,0,.9)) !important;
   }
@@ -87,7 +87,7 @@
     background: rgb(0,0,0,.5) !important;
   }
 /*---------------- Бордюры ---------------*/
-  .chat_onl_inner, #top_profile_menu, .eltt.eltt_bottom, .ui_actions_menu, .tt_w, .editor, .ms_items_more, .eltt.eltt_top, .fc_tab_wrap, .im-chat-input .im-chat-input--txt-wrap, .im-page .im-page--top-date-bar, .audio_layer_container .audio_page_layout .audio_search, .ui_search_sugg_list, [class="token"], .ui_search.ui_search_new, .idd_popup, .box_layout, .slider_hint, .top_notify_wrap, .ts_cont_wrap, .video_upload_separator_text, .im-dropbox, #mail_box_editable, .page_actions_wrap, .videoplayer_context_menu, .videoplayer_tooltip, .videoplayer_quality_select_list, .article_editor .article_editor_object_picker_btns_wrap, .article_editor_object_picker, .wk_history_content .wk_wiki_content, .cal_table, .emoji_block_cont, .im-create, .media_voting_option, .media_voting_photo::after, .audio_pl_snippet, .audio_pl_snippet_play, .audio_pl_snippet_shuffle, .notifier_baloon, #sf-popupMenu, [class="dark ape_pl_input"], .audio_pl_edit_box .ape_cover, .result_list, .selector_table, .preq_friend, .privacy_dropdown, .mv_finish_share, .mv_finish_like , .mv_finish_add , .videoplayer_settings_menu_list, .videoplayer_settings_menu_sublist, .like_mail_dd, div.wdd, .wdd_lwrap, .ui_search_fltr, .help_table_question_act, .tickets_input_title.text, .tickets_input_text, .eltt_likes_feed, .bookmarks_intro .bookmarks_intro_slide, .mv_finish_next, .videoplayer_end_next_block, .mv_finish_subscribe_btn, .videoplayer_share_actions ._add, .videoplayer_share_actions ._bookmark, .videoplayer_share_actions ._donate, .videoplayer_share_actions ._like, .videoplayer_share_actions ._share, .ap_layer__content, .photos_edit_actions, textarea.dark, .UnblockTooltip--r .UnblockTooltip__in, .ui_thumb_pe_button, .ui_thumb_x_button, .away_wrap, .pv_fs_wrap .pv_fs_btn, .feed_has_new .feed_new_posts, .vk_app_modal_container--flex, .Input, .CustomSelect__container, .CustomSelect__options
+  .chat_onl_inner, #top_profile_menu, .eltt.eltt_bottom, .ui_actions_menu, .tt_w, .editor, .ms_items_more, .eltt.eltt_top, .fc_tab_wrap, .im-chat-input .im-chat-input--txt-wrap, .im-page .im-page--top-date-bar, .audio_layer_container .audio_page_layout .audio_search, .ui_search_sugg_list, [class="token"], .ui_search.ui_search_new, .idd_popup, .box_layout, .slider_hint, .top_notify_wrap, .ts_cont_wrap, .video_upload_separator_text, .im-dropbox, #mail_box_editable, .page_actions_wrap, .videoplayer_context_menu, .videoplayer_tooltip, .videoplayer_quality_select_list, .article_editor .article_editor_object_picker_btns_wrap, .article_editor_object_picker, .wk_history_content .wk_wiki_content, .cal_table, .emoji_block_cont, .im-create, .media_voting_option, .media_voting_photo::after, .audio_pl_snippet, .audio_pl_snippet_play, .audio_pl_snippet_shuffle, .notifier_baloon, #sf-popupMenu, [class="dark ape_pl_input"], .audio_pl_edit_box .ape_cover, .result_list, .selector_table, .preq_friend, .privacy_dropdown, .mv_finish_share, .mv_finish_like , .mv_finish_add , .videoplayer_settings_menu_list, .videoplayer_settings_menu_sublist, .like_mail_dd, div.wdd, .wdd_lwrap, .ui_search_fltr, .help_table_question_act, .tickets_input_title.text, .tickets_input_text, .eltt_likes_feed, .bookmarks_intro .bookmarks_intro_slide, .mv_finish_next, .videoplayer_end_next_block, .mv_finish_subscribe_btn, .videoplayer_share_actions ._add, .videoplayer_share_actions ._bookmark, .videoplayer_share_actions ._donate, .videoplayer_share_actions ._like, .videoplayer_share_actions ._share, .ap_layer__content, .photos_edit_actions, textarea.dark, .UnblockTooltip--r .UnblockTooltip__in, .ui_thumb_pe_button, .ui_thumb_x_button, .away_wrap, .pv_fs_wrap .pv_fs_btn, .feed_has_new .feed_new_posts, .vk_app_modal_container--flex, .Input, .CustomSelect__container, .CustomSelect__options, [dir="ltr"] #wl_post
   {
     border: solid 1px rgb(135,206,235,0.1) !important;
     border-radius: 4px;
@@ -117,10 +117,10 @@
     border-left: 3px solid rgb(135,206,235,0.1) !important;
 	  z-index: 1000 !important;
   }
-  .left_count_wrap
+  [dir] .left_count_wrap
   {
     border: solid 1px rgb(135,206,235,0.1) !important;
-	  padding: 2px 5px;
+    padding: 2px 8px;
   }
   [role*="textbox"]
   {
@@ -159,6 +159,10 @@
   .im-to-end__button
   {
     border-radius: 50% !important;
+  }
+  [dir] .round_button.round_button_large_white
+  {
+    border-radius: 10px !important;
   }
 /*------------------ Коннект Шапка ------------------*/
   .FixedLayout__in
@@ -533,6 +537,30 @@
   .CatalogBlock--divided::before, .CatalogSection::before
   {
     box-shadow: 0 0 0 0 !important;
+  }
+  [dir] .im-invitation--join, [dir="ltr"] .im-invitation--join
+  {
+    padding-top: 15px !important;
+  }
+  #side_bar .left_label
+  {
+    overflow: inherit;
+  }
+  #side_bar ol li .left_row
+  {
+    display: inherit !important;
+  }  
+  .inl_bl {
+	  /* display: -moz-inline-stack; */
+	  /* display: inline-block; */
+	  _overflow: hidden;
+	  vertical-align: top;
+	  zoom: 1;
+  }
+  #side_bar ol li .left_row:hover .left_count_wrap 
+  {
+	  margin-top: 0px !important;
+	  padding: 0px 8px !important;
   }
 /*----------------------- Цвета ----------------------*/
   [style="background-color: #E64646"]

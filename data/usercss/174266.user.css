@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        2020910.20.33
+@version        20201025.7.44
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fixed weird halo when attacking with certain armors */
+/*Last update: Fixed adding items to bazaar */
 
 
 html:not([stylus-iframe]):after {
@@ -464,7 +464,7 @@ div.nonFullScreen {
 }
 }
 
-@-moz-document url-prefix("https://www.torn.com/loader.php?sid=russianRoulette") {
+@-moz-document url-prefix("https://www.torn.com/page.php?sid=russianRoulette") {
 div.rr-wrap {
     filter: invert(1)hue-rotate(180deg)
 }
@@ -484,6 +484,19 @@ input#rr-password {
 div.cont-gray.bottom-round img {
     filter: invert(1)hue-rotate(180deg)
 }
+
+div.appContainer___1j7FF {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.appWrapper___rK8Aq {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+h4.title___2q0Ev {
+    filter: invert(1)hue-rotate(180deg)
+}
+
 }
 
 @-moz-document url("https://www.torn.com/loader.php?sid=slots") {
@@ -1036,6 +1049,10 @@ div.category-wrap img {
     filter: invert(1)hue-rotate(180deg)
 }
 
+div.image-wrap {
+    filter: invert(1)hue-rotate(180deg)
+}
+
 div.category-wrap input {
     filter: invert(0)hue-rotate(0deg)
 }
@@ -1047,6 +1064,11 @@ ul.clearfix.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-c
 div.panelHeader___25hFj.black___2ue_b {
     filter: invert(1)hue-rotate(180deg)
 }
+
+div.imgContainer___3k34h {
+    filter: invert(1)hue-rotate(180deg)
+}
+
 }
 
 @-moz-document url-prefix("https://www.torn.com/imarket.php") {
@@ -1399,6 +1421,10 @@ div.armour___FDPk0 {
 }
 
 div.model___1iZfG {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.modelModulesWrap___1wmbK {
     filter: invert(1)hue-rotate(180deg)
 }
 }
