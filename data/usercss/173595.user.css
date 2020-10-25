@@ -2,8 +2,8 @@
 @name           Better Twitter redesign
 @namespace      USO Archive
 @author         duncannah
-@description    `Makes Twitter’s redesign (July 2019) less painful.<strong>Github for code & issue tracking: <a href="https://github.com/duncannah/better-twitter-redesign">https://github.com/duncannah/better-twitter-redesign</a></strong>`
-@version        2020627.16.45
+@description    `Makes Twitter’s redesign (July 2019) less painful.<strong>I highly recommend using the UserCSS version instead, available here: <a href="https://github.com/duncannah/better-twitter-redesign">https://github.com/duncannah/better-twitter-redesign</a></strong>`
+@version        20201024.14.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,9 +92,13 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 /*** HOME ***/
 /* make tweets bigger */
 [data-testid='primaryColumn'] > div:first-child > div:last-child {
-  width: 70%;
-  max-width: 750px;
+  width: 100%;
   margin: auto; }
+
+[data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
+  width: 100%;
+  max-width: 900px;
+  align-self: center; }
 
 /*** MESSAGES ***/
 [role='main'] > div:first-child > div:first-child > div:first-child {

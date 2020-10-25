@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.152
+@name           Flickr WideScreen - Dark & Grey v.155
 @namespace      USO Archive
 @author         decembre
 @description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        2020919.2.47
+@version        20201024.15.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.152 (new152)  - (STANDALONE) === */
+/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.155 (new155)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -347,9 +347,24 @@ a.simple_butt:visited {
     background-color: #aaaaaa !important;
     border-color: #222 !important;
 }
-
-/* (new28) BUDY ICON WITH MENU - === */
-.candy_menu {
+/* (new155) ORGANIZE MENU  */
+.tabl .top_form_div .candy_menu {
+    color: gray !important;
+    border: 1px solid black !important;
+    background-color: #2C2C2C !important;
+}
+.top_form_div .candy_button_bar .candy_menu a, 
+.top_form_div .candy_button_bar .candy_menu a:link {
+    font-size: 15px !important;
+    color: gray !important;
+}
+.top_form_div .candy_button_bar .candy_menu a:hover, 
+.top_form_div .candy_button_bar .candy_menu a:link:hover {
+    color: gold !important;
+}
+/* (new155) BUDY ICON WITH MENU - === */
+#personmenu_button_bar .candy_menu {
+    color: gray !important;
     border-left: 1px solid #777777 !important;
     background-color: #2C2C2C !important;
 }
@@ -455,8 +470,6 @@ a.simple_butt:visited {
     background-color: red !important;
     border: 2px solid #262525 !important;
 }
-
-
 .tt-options {
     background-color: #575757 !important;
 }

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Juan Gamarra
 @description    `Shopify Dark Material Theme for the code editor.Zero distractions.If you like my work, support me with a donation in paypal :)`
-@version        2020722.7.20
+@version        20201024.18.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("https?://.*.myshopify.com/admin/themes/.*") {
+@-moz-document regexp("https://.*myshopify.com/admin/themes.*") {
 :root {
   	--primary-color: #009688;
 	--p-border: #009688;
@@ -16,12 +16,20 @@
 	--background-color: #292D3E;
     --background-color-darken: #282C3D;
 	--tab-bar-color: #31364A;
+	--title-color: #ffffff;
+	--btn-disabled-color: #b3b3b3;
+	--semi-grey-color: #c4cdd5;
 }
 
 html, body {
 	background-color: var(--background-color);
 	overflow: hidden;
 }
+
+.template-editor-layout__main {
+	background-color: var(--background-color);
+}
+
 .fresh-ui #wrapper {
 	background-color: var(--background-color-darken);
 }
@@ -168,11 +176,26 @@ html, body {
 	color: #f4f6f8;
 	background: none;
 	background-color: #454f5b;
-	border-color: #454f5b
+	border-color: #454f5b;
+	font-weight: 400;
 }
+
+.page-themes-show .theme-asset-actions .ui-button--primary {
+	color: #f4f6f8;
+	background-color: var(--primary-color-darken) !important;
+	border-color: var(--primary-color-darken) !important;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+.page-themes-show .theme-asset-actions .ui-button--primary:disabled {
+	color: #b3b5cb;
+	background-color: var(--primary-color-darken) !important;
+	border-color: var(--primary-color-darken) !important;
+}
+
 .page-themes-show .theme-asset-actions .ui-button:focus, .page-themes-show .theme-asset-actions .ui-button:hover {
-	background-color: var(--primary-color);
-	border-color: var(--primary-color-darken);
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
 	-webkit-box-shadow: 0 1px 0 0 rgba(22,29,37,0.05), 0 0 0 1px var(--primary-color-darken);
     box-shadow: 0 1px 0 0 rgba(22,29,37,0.05), 0 0 0 1px var(--primary-color-darken);
 }
@@ -182,18 +205,7 @@ html, body {
 	-webkit-box-shadow: none;
 	box-shadow: none
 }
-.page-themes-show .theme-asset-actions .ui-button--primary {
-	color: #f4f6f8;
-	background-color: var(--primary-color);
-	border-color: var(--primary-color-darken);
-	-webkit-box-shadow: none;
-	box-shadow: none
-}
-.page-themes-show .theme-asset-actions .ui-button--primary:disabled {
-	color: #b3b5cb;
-	background-color: var(--primary-color);
-	border-color: var(--primary-color-darken);
-}
+
 .page-themes-show .next-input--stylized {
 	background-color: var(--background-color-darken);
 	border-color: #454f5b
@@ -216,12 +228,21 @@ html, body {
 	color: var(--primary-color);
 }
 .page-themes-show .asset-listing-theme-file {
-	color: #c4cdd5;
+	color: var(--semi-grey-color) !important;
 	font-size: 14px;
 }
 .page-themes-show .asset-listing-theme-file:hover {
 	background-color: none
 }
+
+.page-themes-show .ui-empty-state__title {
+    color: var(--primary-color);
+}
+
+.page-themes-show .ui-empty-state__subtitle {
+	color: var(--semi-grey-color);
+}
+
 .page-themes-show .box.warning {
 	color: white;
 	background-color: var(--primary-color);
@@ -246,6 +267,11 @@ html, body {
 	background-color: var(--background-color-darken);
 	border-color: #454f5b
 }
+
+.newDesignLanguage .ui-breadcrumbs .ui-breadcrumb {
+    border: 1px solid var(--primary-color);
+}
+
 .page-themes-show .template-editor-titlebar .ui-breadcrumb__item {
 	color: var(--primary-color);
 }
@@ -256,11 +282,15 @@ html, body {
 	color: #c4cdd5;
 }
 .page-themes-show .template-editor-titlebar__actions .ui-button {
-	color: var(--primary-color);
+	color: var(--title-color);
+    background: var(--primary-color-darken);
+    border-color: var(--primary-color-darken);
+	font-weight: 400;
 }
 
 .page-themes-show .template-editor-titlebar__actions .ui-button:hover {
-	color: var(--primary-color-darken);
+	background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .page-themes-show .template-editor-toolbar .ui-button {
@@ -302,12 +332,12 @@ html, body {
 	background-color: var(--background-color)
 }
 .page-themes-show .template-editor-tab.active .template-editor-tab-filename {
-	color: #c4cdd5
+	color: var(--primary-color);
 }
 .page-themes-show .template-editor-tab:hover {
 	background-color:  var(--background-color-darken);
 }
-.page-themes-show .template-editor-tab+.template-editor-tab .active {
+.page-themes-show .template-editor-tab.template-editor-tab .active {
 	color: #dfe3e8
 }
 .page-themes-show .template-editor-tab-filename {
@@ -325,6 +355,15 @@ html, body {
 }
 .page-themes-show .template-editor-tab-bar__action-icon-button {
 	background-color: var(--background-color-darken)
+}
+
+.page-themes-show .next-icon--color-ink-lighter {
+	fill: var(--primary-color);
+}
+
+.page-themes-show .template-editor-tab.active::before{
+	opacity: 1;
+	visibility: visible; 
 }
 .page-themes-show .template-editor-titlebar {
 	position: inherit;
@@ -395,6 +434,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 .Polaris-Navigation__Item_yiyol{
 	color: #dcdcdc;
+	border: none !important;
 }
 
 .Polaris-Navigation__Item_yiyol:hover{
@@ -513,8 +553,14 @@ div.CodeMirror span.CodeMirror-matchingbracket {
     color: white !important;
 }
 
+.btn[disabled],
+button[disabled] {
+    border-color: var(--btn-disabled-color) !important;
+}
+
 .page-themes-show .modal header {
     border-bottom: 1px solid var(--primary-color);
+	color: var(--title-color);
 }
 
 .page-themes-show .modal .buttons {
@@ -539,6 +585,12 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 .page-themes-show .ui-banner a:not(.ui-button--outline):focus {
     color: var(--primary-color-darken);
 }
+
+.modal * {
+	color: var(--title-color);
+}
+
+
 
 ._3nmpD {
     background-color: var(--background-color) !important;
@@ -631,7 +683,8 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 .Polaris-Navigation__Item_yiyol:hover,
 .Polaris-Navigation__SectionHeading_1h851 .Polaris-Navigation__Action_r96cs:hover,
-.Polaris-Navigation__SecondaryAction_1dl4i:hover {
+.Polaris-Navigation__SecondaryAction_1dl4i:hover,
+.Polaris-Navigation__Item--selected_13f25 {
 	color: var(--primary-color) !important;
 	background: rgba(92,106,196,.12);
 }
@@ -688,7 +741,7 @@ button[data-bind-event-click="toggleFullscreenMode()"] {
 }
 }
 
-@-moz-document regexp("https?://.*.myshopify.com/admin/themes/.*") {
+@-moz-document regexp("https://.*myshopify.com/admin/themes.*") {
 /* Scrollbar Chrome*/
  *::-webkit-scrollbar {
 	width: 10px ! important;
@@ -713,6 +766,6 @@ button[data-bind-event-click="toggleFullscreenMode()"] {
 }
 }
 
-@-moz-document url-prefix("https://monchelo.myshopify.com") {
+@-moz-document regexp("https://.*myshopify.com/admin.*") {
 
 }

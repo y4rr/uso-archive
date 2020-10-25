@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.153
+@name           Flickr Widescreen - ALLinONE (Part 2) v.156
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        2020922.4.35
+@version        20201024.20.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.153 (new153)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.156 (new156)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -3927,15 +3927,17 @@ img + .view.fluid-droparound-view.flickr-view-root-view {
     margin-top: 105px !important;
 }
 
-/* (new133) MODAL Change Langue - [style="left: 914px; top: 556.5px;"]  */
+/* (new155) MODAL Change Langue - [style="left: 914px; top: 556.5px;"]  */
 .fluid.html-photo-page-scrappy-view.scrolling-layout body .view.fluid-droparound-view.flickr-view-root-view .droparound.menu:not(.over-modal){
     position: fixed !important;
     display: inline-block !important;
     height: auto !important;
     min-height: 250px ;
-    width: auto !important;
+    width: 200px !important;
     left: 1500px !important;
     top: 70% !important;
+overflow: hidden !important;
+overflow-y: auto !important;
     z-index: 5000000 !important;
 }
 /* (new118) */
@@ -4082,6 +4084,20 @@ border: 1px solid red !important;
     max-height: 133px;
     min-height: 133px;
     top: 0px !important;
+/* border: 1px solid violet !important; */
+}
+/* (new155) PHOTO - MORE INFOS */
+.droparound.subview-droparound .head.hide-head + .body .content.subview .view.person-card-view.flickr-view-root-view > div:first-of-type {
+    width: 100%;
+    max-height: 133px;
+    min-height: 133px;
+/* border: 3px solid red !important; */
+}
+.droparound.subview-droparound .head.hide-head + .body .content.subview .view.person-card-view.flickr-view-root-view > div:last-of-type {
+    width: 100%;
+    max-height: 15px !important;
+    min-height: 15px !important;
+/* border: 1px solid red !important; */
 }
 
 .fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .view.person-card-view.flickr-view-root-view {
@@ -4186,7 +4202,6 @@ color: gray !important;
     visibility: visible;
     z-index: 2000 !important;
 }
-/* (new112) */
 .fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound), 
 .fluid.html-photo-page-scrappy-view.scrolling-layout body script + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {
     position: fixed !important;
@@ -4207,24 +4222,36 @@ border: 1px solid red !important;
     margin-top: 0px !important;
 }
 
-/* PHOTO PAGE - MENU EDITOR - === */
-.view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip {
+/* (new156) PHOTO PAGE - MENU EDITOR - === */
+.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type:not(:hover) .droparound.html.auto-size.dialog-tooltip ,
+.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type:hover .droparound.html.auto-size.dialog-tooltip ,
+.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip {
     position: fixed !important;
     max-width: 352px !important;
-    top: 16% !important;
+    height: 135px !important;
+    top: -15px !important;
+    left: 1318px !important;
     z-index: 500000 !important;
     visibility: visible !important;
 background-color: #333 !important;
+border: 1px solid red !important;
+border-bottom: 3px solid red !important;
 }
+.view.fluid-droparound-view.flickr-view-root-view .droparound.html.auto-size.dialog-tooltip li:hover {
+    background: black !important;
+}
+/* .view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip .droparrow.down {
+    display: none;
+} */
 .view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip .body {
     max-width: 202px !important;
 } 
 
-/* POOL COUNTER TOTAL - === */
+/* (new155) POOL COUNTER TOTAL - === */
 .sub-photo-contexts-view .sub-photo-context.sub-photo-context-groups .context-list li:last-of-type:before {
     position: fixed !important;
     top: 252px ;
-    right: 100px ;
+    right: 150px ;
     padding: 2px 5px ;
     opacity: 0.4 ;
 color: peru ;
@@ -5940,7 +5967,7 @@ color: gray !important;
     top: -2px !important;
 }
 
-/* GM - "Com ON" - SMALL - POOL - === */
+/* (new155) GM - "Com ON" - SMALL - POOL - === */
 #pool-photos.sm [id^="FCO-photo-"] {
     position: relative !important;
     display: block !important;
@@ -5948,7 +5975,7 @@ color: gray !important;
     border-radius: 3px !important;
     width: 14px !important;
     height: 12px !important;
-    top: 12px !important;
+    top: 8px !important;
     margin-top: -14px !important;
     z-index: 510 !important;
     opacity: 0.5 !important;

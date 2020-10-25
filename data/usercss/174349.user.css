@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         DP_OSK
 @description    `Развивающийся стиль для ВКонтакте, а-ля Material Desing 2~~~Группа ВКонтакте - <a href="https://vk.com/materialredisign">VK Material Redising</a>Тёмная тема by <a href="https://userstyles.org/styles/126419/vanilla-dark-2-vk">Vanilla Dark 2 VK</a>~~~Если кнопка установки не работает, пробуем сначала нажать на кнопку Show CSS, а потом уже Install. Если не помогло, вместо расширения Stylish, устанавливаем Stylus.`
-@version        2020721.0.47
+@version        20201024.12.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown theme "Тема" {
@@ -1482,7 +1482,8 @@ tw "White" <<<EOT :root {
 /*BLUR & Head EX*\/
 /* WHITE BAR *\/
 /* Only Colors *\/
-[dir] .fc_tab_head {
+[dir] .fc_tab_head,
+[dir] #page_header_cont {
 	background-color: #fff;
 	color: #5f6368;
 	border-color: #c5d0db;
@@ -1501,7 +1502,9 @@ tw "White" <<<EOT :root {
 	color: #5f6368;
 }
 [dir] input.text.ts_input,
-[dir] input.text.ts_input:focus {
+[dir] input.text.ts_input:focus,
+[dir] .TopSearch__input,
+[dir] .TopSearch__input:focus {
 	background-color: #f1f3f4;
 }
 [dir] .top_audio_player:hover,
@@ -1806,7 +1809,8 @@ body {
 }
 @advanced dropdown inputhead "Сворачивать поле поиска в шапке" {
 	ihn "Нет*" <<<EOT  EOT;
-ihy "Да" <<<EOT [dir] input.text.ts_input {
+ihy "Да" <<<EOT [dir] input.text.ts_input,
+[dir] .TopSearch__input {
     border-left: 4px solid transparent;
 }
 [dir] .ts_wrap .input_back_content {
@@ -1815,17 +1819,20 @@ ihy "Да" <<<EOT [dir] input.text.ts_input {
 [dir] .ts_wrap .input_back_content {
     font-size: 0px;
 }
-[dir] input.text.ts_input {
+[dir] input.text.ts_input,
+[dir] .TopSearch__input {
     width: 26px!important;
     padding-left: 19px!important;
     background-position: 4px 8px;
     transition: .3s ease-out;
     cursor: pointer
 }
-[dir] input.text.ts_input:hover {
+[dir] input.text.ts_input:hover,
+[dir] .TopSearch__input:hover {
     cursor: pointer
 }
-[dir] input.text.ts_input:focus {
+[dir] input.text.ts_input:focus,
+[dir] .TopSearch__input:focus {
     width: 230px!important;
     transition: all .3s ease-in-out;
     cursor: text
@@ -1836,7 +1843,8 @@ ihy "Да" <<<EOT [dir] input.text.ts_input {
 [dir] #ts_wrap.ts_wrap {
     overflow: hidden
 }
-[dir] input.text.ts_input:hover #ts_wrap.ts_wrap {
+[dir] input.text.ts_input:hover #ts_wrap.ts_wrap,
+[dir] .TopSearch__input #ts_wrap.ts_wrap {
     overflow: auto
 } EOT;
 

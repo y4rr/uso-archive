@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rikka Takarada
 @description    `Simple dark theme for trakt`
-@version        2020810.1.5
+@version        20201024.23.41
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -304,8 +304,9 @@ header#top-nav #xs-sign-in ,
 .frame-wrapper .sidenav .feeds,
 .frame-wrapper .sidenav nav a.notifications,
 #user-menu ul li.separator + li + li,
-#user-menu ul:first-child li.separator,
+#user-menu ul li:nth-child(10),
 #user-menu ul li.dark-knight,
+#user-menu ul li a[href^="/widgets"] ,
 #user-menu ul li a.yir-loader,
 .show-advanced-filters-link {
     display: none;
@@ -330,6 +331,11 @@ body.apps #api-wrapper {
 }
 body.apps #apps-icon-wrapper .apps-icons #iphone .app .icon {
     box-shadow: none;
+}
+
+body.settings table.table,
+body.settings .panel .control-label {
+    color: var(--color-secondary-black);
 }
 
 .comment-wrapper.featured {

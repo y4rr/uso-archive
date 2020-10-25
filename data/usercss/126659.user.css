@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen (Viewer) - FlickRiver v.8
+@name           Flickr WideScreen (Viewer) - FlickRiver v.9
 @namespace      USO Archive
 @author         decembre
 @description    `▶ WIDE style For <a href="https://www.flickr.com/services/apps/72157602046337717/"><b>Flickriver</b></a> ▶ It's for a WIDESCREEN(1920x1080)!Less Scrolling:Thumbnail fit your large screen...You can use it with: ▶<a href="https://addons.mozilla.org/fr/firefox/addon/thumbnail-zoom-plus/"><b>Thumbnail Zoom Plus</b></a> ▶Flickr PM :<a href="http://forum.userstyles.org/discussion/30090/x#Item_1"><b>my TWEAK Script : Icons/new links for &quot;flickr PM&quot;</b></a>`
-@version        20201016.22.9
+@version        20201024.12.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 @-moz-document domain("flickriver.com") {
 
-/* ==== Flickr WideScreen (Viewer) - FlickRiver v.8  - TEST view large
+/* ==== Flickr WideScreen (Viewer) - FlickRiver v.9  - TEST view large
 http://www.flickriver.com/photos/pryingopen/popular-interesting/
 ==== */
 img.photo-protector {
@@ -141,52 +141,53 @@ display: inline-block;
   transform: scale(0.3);
   transition: all 0.7s ease 0s;
   min-width: 100% !important;
-background: red !important;
-outline: 1px solid yellow !important;
+/* background: red !important; */
+outline: 1px solid #222 !important;
 }
-/* #photos div.photos-page[id=""]:nth-child(2n):last-of-type:before, 
-.photos-page:last-of-type:before {
-content: "xxxxxxxxx " !important;
-display: inline-block;
-  float: left;
-  height: 490px !important;
-    margin-top: -200px !important;
-  opacity: 1 !important;
-  transform: scale(1) !important;
-  transition: all 0.7s ease 0s;
-  min-width: 100% !important;
-background: red !important;
-outline: 1px solid yellow !important;
-} */
 
-/* #big-progress {
+/* (new9) BIG PROGRESS BAR */
+#big-progress {
+    display: inline-block !important;
 float: left !important;
 width: 100% !important;
-    height: 255px !important;
-    margin-bottom: 0;
-    margin-top: 0px !important;
-    padding-bottom: 0;
+    height: 20px !important;
+    margin-bottom: 0px;
+    top: 0px !important;
+    padding-bottom: 0px !important;
 text-align: center !important;
-background: blue !important;
-} */
+/* background: blue !important; */
+}
 
 
 
-/* FIRST LOAD */
+/* (new9) FIRST LOAD */
 .river>center {
     min-height: 984px !important;
 }
-.tools-panel[style="display:none;"] + br + center .top-toolbar + #user-tags + #photos .photos-page:only-of-type {
-/*   display: inline-block; */
-  float: left;
-  height: 490px !important;
-  margin-top: 800px !important;
-  opacity: 0;
-  transform: scale(0.3);
-  transition: all 0.7s ease 0s;
-  min-width: 3000px !important;
-background: red !important;
-outline: 1px solid yellow !important;
+/*.river:not(.fitscreen):not(.viewlarge) .tools-panel[style="display:none;"] + br + center .top-toolbar + #user-tags + #photos .photos-page:not([id=""]):not(:first-of-type) */
+
+.river:not(.fitscreen):not(.viewlarge) .tools-panel[style="display:none;"] + br + center .top-toolbar + #user-tags + #photos .photos-page:not([id=""]):only-of-type  {
+/* display: inline-block !important; */
+    clear: none;
+    float: left;
+    height: auto !important;
+    max-width: 1700px !important;
+    margin-bottom: 5px;
+    margin-left: 0em !important;
+    overflow: hidden;
+    opacity: 1 !important;
+    transform: scale(0.9) !important;
+/* border: 1px solid red !important; */
+}
+
+.river:not(.fitscreen):not(.viewlarge) .tools-panel[style="display:none;"] + br + center .top-toolbar + #user-tags + #photos .photos-page:not([id=""]):only-of-type  .photo-panel {
+    clear: right;
+    float: left;
+    width: 24%;
+    margin: 0 -0.8em -6em 1em;
+    padding: 2px 0 0;
+    transform: scale(0.7);
+    transform-origin: left top 0;
 }
 
 

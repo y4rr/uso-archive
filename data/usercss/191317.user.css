@@ -3,10 +3,12 @@
 @namespace      USO Archive
 @author         tukusejssirs
 @description    `Dark theme for workona.com`
-@version        20201024.11.37
+@version        20201024.12.54
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
+/* Workona Dark Theme v0.2 */
+
 /*
  * TODO
  * - change colour of hovor checkboxes from black to #ccc;
@@ -14,90 +16,108 @@
 
 
 @-moz-document url-prefix(https://workona.com) {
-	/* Main space background */
-	.app, ._2jeXtzABUskiV3epT_mV16 {
-		background: #000000 !important;
-	}
+/* Main space background */
+.app, ._2jeXtzABUskiV3epT_mV16 {
+	background: #000000 !important;
+}
 
-	/* Context menus and tabs list */
-	._3sltFBVBoMEsYM854YBJBf, ._14zN2To0Vr4ObISm0xpjUl, ._3xx-hM_fYDCpigf65kf6CG, ._3irQB9Tv18T_XmnsCBQ3rF,
-	.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._2UgL7qBuTYlPeBMIv3Z44a {
-		background: #1e1e1e !important;
-	}
+/* Context menus and tabs list */
+._3sltFBVBoMEsYM854YBJBf, ._14zN2To0Vr4ObISm0xpjUl, ._3xx-hM_fYDCpigf65kf6CG, ._3irQB9Tv18T_XmnsCBQ3rF,
+.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._2UgL7qBuTYlPeBMIv3Z44a {
+	background: #1e1e1e !important;
+}
 
-	.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN {
-		color: #cccccc !important;
-	}
+/* Foreground colour */
+.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._3iUg1tZYNsBSwhqmAXm8Zu {
+	color: #cccccc !important;
+}
 
-	/* Main foreground colour */
-	body, ._1gJ_NYaKZe2lAgqgtY3yDn {
-		color: #cccccc;
-	}
+/* Main foreground colour */
+body, ._1gJ_NYaKZe2lAgqgtY3yDn {
+	color: #cccccc;
+}
 
-	/* Sidebar background */
-	._1MqP5l6V_u1Kza6KH4OeI7, .De30U_-srldDdjYCLcN8_ {
-		background: #181818;
-	}
+/* Sidebar background */
+._1MqP5l6V_u1Kza6KH4OeI7, .De30U_-srldDdjYCLcN8_ {
+	background: #181818;
+}
 
-	/* Find overlay background */
-	._2NmaFledpPHzSsOzFAZTlZ {
-		background: rgba(0,0,0,.50);
-	}
+/* Find overlay background */
+._2NmaFledpPHzSsOzFAZTlZ {
+	background: rgba(0,0,0,.50);
+}
 
-	/* Preferences sidebar background */
-	._1S2kJtgA8OLNPTN4cbi21R {
-		background: #181818;
-	}
+/* Preferences sidebar background */
+._1S2kJtgA8OLNPTN4cbi21R {
+	background: #181818;
+}
 
-	/* Preferences main space background */
-	._3z-5ASxElLkMufBKh557vK {
-		background: #1e1e1e;
-	}
+/* Preferences main space background */
+._3z-5ASxElLkMufBKh557vK {
+	background: #1e1e1e;
+}
 
-	/* Preferences email address text box foreground colour */
-	/* (greyed out / disabled) */
-	.MuiInputBase-root {
-		color: grey !important;
-	}
+/* Preferences email address text box foreground colour */
+/* (greyed out / disabled) */
+.MuiInputBase-root {
+	color: grey !important;
+}
 
-	/* Preferences text box foreground colour */
-	/* (enabled) */
-	._2ihVv2nYKWlUMtU61rb2OI:not(.Mui-disabled), .vL3c5V77Fjk7XlAOOhpwW {
-		color: #cccccc;
-	}
+/* Preferences text box foreground colour */
+/* (enabled) */
+._2ihVv2nYKWlUMtU61rb2OI:not(.Mui-disabled), .vL3c5V77Fjk7XlAOOhpwW {
+	color: #cccccc;
+}
 
-	/* Preferences text box label foreground colour */
-	.MuiFormLabel-root, .MuiFormLabel-root.Mui-disabled {
-		color: #aaaaaa;
-	}
+/* Preferences text box label foreground colour */
+.MuiFormLabel-root, .MuiFormLabel-root.Mui-disabled {
+	color: #aaaaaa;
+}
 
-	/* Find search (in sidebar) and + button background colour */
-	._1wUbfJlwgeEwnEO65dUZFo, ._22o5f_EuPgID_SD9A00E {
-		background: #252525;
-	}
+/* Find search (in sidebar) and + button background colour */
+._1wUbfJlwgeEwnEO65dUZFo, ._22o5f_EuPgID_SD9A00E {
+	background: #252525;
+}
 
-	/* Selected workspace background in sidebar */
-	._11UI4TMMMq_B3mdw5saK6y {
-		background: #323232 !important;
-	}
+/* Find search (in sidebar) and + button background colour on hover */
+._1wUbfJlwgeEwnEO65dUZFo:hover, ._22o5f_EuPgID_SD9A00E:hover {
+	background: #323232;
+/* 	color: #ccc; */
+}
 
-	/* Hovering tab list background (hover on a workspace name in sidebar) */
-	._2ViXpP4VnNTHEbxAje4dhn {
-		background: #1e1e1e;
-	}
+/* Selected workspace background in sidebar */
+._11UI4TMMMq_B3mdw5saK6y {
+	background: #323232 !important;
+}
 
-	/* Hovering tab list hovered item background */
-	._76hFX1t9pYcX9b8358iHo {
-		background: #101010;
-	}
+/* Hovering tab list background (hover on a workspace name in sidebar) */
+._2ViXpP4VnNTHEbxAje4dhn {
+	background: #1e1e1e;
+}
 
-	/* Hovering tab list header background */
-	._3-EMxNRyLc1LFA2z5epBAk {
-		background: #101010;
-	}
+/* Hovering tab list hovered item background */
+._76hFX1t9pYcX9b8358iHo {
+	background: #101010;
+}
 
-	/* In sidebar: Background colour of workspace name when the user hovers over it */
-	._3YD0drq3mR1yIDofo1eKHC:hover {
-		background: #252525;
-	}
+/* Hovering tab list header background */
+._3-EMxNRyLc1LFA2z5epBAk {
+	background: #101010;
+}
+
+/* Hovering tab list header background */
+._3YD0drq3mR1yIDofo1eKHC:hover {
+	background: #101010;
+}
+
+/* In sidebar: Background colour of workspace name when the user hovers over it */
+._3YD0drq3mR1yIDofo1eKHC:hover, ._2t5Vn-jCkilRvSaokPF9yY {
+	background: #252525;
+}
+
+/* + buttons: Hovering on items: background and foreground */
+._2y44mkYNI7jB1qleu0CSp3:hover {
+	color: #ccc;
+	background: #181818;
+}
 }

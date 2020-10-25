@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 1)  v.154
+@name           Flickr Widescreen - ALLinONE (Part 1)  v.156
 @namespace      USO Archive
 @author         decembre
 @description    `<b><i>It's ONLY for a WIDESCREEN(1920x1080)!</i></b><b>► The Goal: use at its maximum my WideScreen:</b>- for the shots (Maximize the number of shots visible in the window)- for the Info (scroll list and hover)- for an admin happy life (adaptation for selected Greasemonkey scripts)- Less scrolling with a compact and useful styled interface.- Less "IN THE FACE" style (Smaller version of the shots in Photo Page and Justified Views).<mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        2020923.21.37
+@version        20201024.20.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com"), domain("na.ads.yahoo.com") {
 
-/* ====   FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 1) v.154 (new154) ===== */
+/* ====   FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 1) v.156 (new156) ===== */
 
 /* (new152)SUPP PUBS / / GEO YAHOO / SPONSORED ETC... - === */
 .sub-photo-left-view > .sub-photo-fave-view.faves-present svg.icon ,
@@ -112,7 +112,11 @@ img[width="1"] ,
 #sponsored-groups  {
     display: none !important;
 }
-
+/* (new155) ORGANIZE MENU  */
+.top_form_div .candy_button_bar .candy_menu a, 
+.top_form_div .candy_button_bar .candy_menu a:link {
+    font-size: 15px !important;
+}
 /* (new141) TEST VIEWPORT for POOL PAGE LAZY LOAD - TEST ANTI JUMP - ===  */
 body {
 /* min-height: 300vh !important; */
@@ -841,14 +845,14 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/uy/build/images/sprites/ico
 
 /* START=== FLICKR - PHOTO - MINI PHOTO SLIDER ===== */
 
-/* BACK TO */
+/* (new155) BACK TO */
 .photo-well-scrappy-view .height-controller .entry-type  {
     position: fixed;
     top: 887px;
     height: 15px;
     line-height: 15px;
-    width: 157px ;
-    left: 565px !important;
+    width: 257px ;
+    left: 505px !important;
     padding: 2px 5px ;
     border-radius: 3px ;
     opacity: 0.5 ;
@@ -1913,7 +1917,7 @@ background-position: 0.5px -22px !important;
     background-image: none !important;
 }
 
-/* CAMERA ROLL - === */
+/* (new155) CAMERA ROLL - === */
 .cameraroll-tools-view.restyle .toolbar {
     border-top: 1px solid gray !important;
     border-bottom: 1px solid gray !important;
@@ -1922,6 +1926,10 @@ background-position: 0.5px -22px !important;
     top: 50px !important;
     border-top: 1px solid gray !important;
     border-bottom: 1px solid gray !important;
+}
+.cameraroll-edit-dialog-people-view ,
+.fluid .cameraroll-edit-dialog .cameraroll-edit-photos-meta-container > .tags-container {
+    width: 100% !important;
 }
 /* ORGANIZE - === */
 .gray_menu_buttons li span.button {
@@ -2750,22 +2758,30 @@ border-bottom: 1px solid red ;
 /* FORUM HELP - HINT TOP TOPIC LEFT PANEL - USER PRO BADGE - === */
 
 
-/* (new134) POOL - MESS EMTY POOL - "NOTHING" - === */
+/* (new156) POOL - MESS EMTY POOL - "NOTHING" - === */
 #pool-photos #empty-state ,
-#pool-photos.ju.photo-display-container .row #empty-state {
+/* SM */
+#pool-photos.sm.photo-display-container #empty-state {
     position: fixed ;
-    display: inline-block ;
+    display: inline-block !important;
     width: 1480px ;
     line-height: 30px ;
     top: 120px ;
-    left: 1250px  ;
+    left: 250px  ;
     padding: 5px ;
     white-space: normal ;
     font-size: 20px ;
     z-index: 500000 ;
-    transform: scale(1.9) ;
+    transform: scale(1) ;
 border: 1px solid peru ;
 }
+/*JU */
+#pool-photos.ju.photo-display-container #empty-state  {
+    left: 950px  ;
+    transform: scale(2) ;
+border: 1px solid peru ;
+}
+
 #pool-photos #empty-state p a ,
 #pool-photos #empty-state p  ,
 #pool-photos #empty-state h2 {
@@ -7008,7 +7024,9 @@ background: transparent;
     box-shadow: none !important;
 }
 
-/* PHOTO EDITOR - POPUP - === */
+
+
+/* (new156) PHOTO EDITOR - POPUP - === */
 .view.dialog-modal.ui-dialog.ui-dialog-modal.scrappy-dialog:not(.ui-util-removed).editor-dialog {
     border-radius: 3px;
     box-shadow: -10px -10px 3px 1px rgba(0, 0, 0, 0.3), 10px -10px 3px 1px rgba(0, 0, 0, 0.3);
@@ -7021,7 +7039,7 @@ background: transparent;
     max-width: 1900px !important;
     min-width: 1900px !important;
     padding: 5px 5px 12px;
-    z-index: 50000;
+    z-index: 500000000 !important;
 }
 .view.dialog-modal.ui-dialog.ui-dialog-modal.scrappy-dialog:not(.ui-util-removed).editor-dialog .ui-dialog-wrapper {
     border-radius: 3px;
@@ -7036,6 +7054,7 @@ background: transparent;
     top: 4px;
 }
 .view.dialog-modal.ui-dialog.ui-dialog-modal.scrappy-dialog:not(.ui-util-removed).editor-dialog .ui-dialog-wrapper .ui-dialog-body  {
+    z-index: 50000000 !important;
     outline: 1px solid red !important;
 }
 
@@ -7231,7 +7250,7 @@ border: 1px solid gray ;
     content: counter(myIndex, decimal-leading-zero) ;
     position: absolute ;
     min-width: 17px ;
-    margin-left: -20px ;
+    margin-left: -20px !important;
     border-radius: 10px ;
     box-shadow: 0 0 2px rgba(162, 160, 160, 0.6) inset ;
     font-size: 10px ;
@@ -8886,7 +8905,7 @@ border: 1px solid gray ;
     display: inline-block ;
     width: auto ;
     min-width: 116px ;
-    max-width: 117px ;
+    max-width: 187px ;
     vertical-align: bottom ;
     height: 100% ;
     min-height: 27px ;
@@ -9038,12 +9057,12 @@ border: 3px solid orange !important;
 background: rgba(0, 0, 0, 0) url("https://combo.staticflickr.com/ap/build/images/sprites/scrappy-0df0b38d.png") no-repeat scroll -198px -34px ;
 border: 2px solid red !important;
 }
-/* FLAG */
+/* (new155) FLAG */
 .sub-photo-additional-info-view i.ui-icon-tiny-flag-photo {
     height: 15px ;
     width: 15px ;
     margin-top: 2px ;
-    margin-right: 15px ;
+    margin-right: 0px ;
     padding: 2px 2px 2.5px 2px ;
     opacity: 0.35 ;
 background: rgba(0, 0, 0, 0) url("https://combo.staticflickr.com/ap/build/images/sprites/scrappy-0df0b38d.png") no-repeat scroll -169px -118px ;
@@ -11009,7 +11028,8 @@ background: #9A2222 url("https://combo.staticflickr.com/ap/build/images/sprites/
     left: -202px !important; 
 }
 
-/* (new143) TOP NAV - NOTIF BELL - POPUP - ALL - === */
+/* (new155) TOP NAV - NOTIF BELL - POPUP - ALL - === */
+.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow  ,
 .fluid.html-group-admin-pending-page-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow ,
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound ,
 .fluid.html-photo-page-scrappy-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size:not(.gallery-photo-comments) ,
@@ -11029,12 +11049,13 @@ background: #9A2222 url("https://combo.staticflickr.com/ap/build/images/sprites/
 overflow: hidden !important;
 z-index: 5000000 !important;
 }
-
+.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow ,
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound ,
 .fluid.html-photo-page-scrappy-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound {
     left: 1900px ;
     transition: left ease 0.7s ;
 }
+.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow:hover  , 
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound:hover  ,
 .fluid.html-photo-page-scrappy-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound:hover  ,
 .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound:hover  {
