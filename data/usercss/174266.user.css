@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201025.7.44
+@version        20201026.5.53
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fixed adding items to bazaar */
+/*Last update: New fix for attacking */
 
 
 html:not([stylus-iframe]):after {
@@ -494,6 +494,10 @@ div.appWrapper___rK8Aq {
 }
 
 h4.title___2q0Ev {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.userInfoBox___2EUgf.rowSection___3iB3p.flexCenter___W3MtG {
     filter: invert(1)hue-rotate(180deg)
 }
 
@@ -1412,21 +1416,17 @@ div.stealthBarWrap___1fXus {
     filter: brightness(0)
 }
 
-div.allLayers___ARxO7 img {
-    filter: invert(0)hue-rotate(0deg)
+div.armoursWrap___HemjH img {
+    filter: invert(0)hue-rotate(180deg)
 }
 
-div.armour___FDPk0 {
+
+div.armour___3G2s9 img {
     filter: invert(1)hue-rotate(180deg)
 }
 
-div.model___1iZfG {
-    filter: invert(1)hue-rotate(180deg)
-}
 
-div.modelModulesWrap___1wmbK {
-    filter: invert(1)hue-rotate(180deg)
-}
+
 }
 
 @-moz-document url-prefix("https://www.torn.com/archives.php") {

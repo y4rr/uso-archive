@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        20201017.3.40
+@version        20201026.4.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -321,7 +321,7 @@
 }
 @-moz-document regexp('http(s)?://www\.google\.((\\S{2,3})(\.(\\S{2,3}))?)/search.*'){
   /*search result search search search*/
-  /*search result*/
+  /*search result result result*/
   /*search result*/
   /*search result*/
   /*search result*/
@@ -345,6 +345,18 @@
   /**/.o2ji6GoAIDp__menu{background:#333!important;}
 
   /*top search option bar - tools*/  /*top search option bar - tools*/  /*top search option bar - tools*/
+  /**/#hdtb{}
+  /**/#hdtb>#hdtbSum{}
+  /**/#hdtb>#hdtbSum>#hdtb-s{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div>#hdtb-msb-vis{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div>g-header-menu{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div>#hdtb-tls{}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div>#hdtb-tls.hdtb-tl-sel{background:#434!important;}
+  /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb>div>#hdtb-tls:hover{background:#434!important;}
+  /**/#hdtb-msb{}
+  /**/#hdtb-msb{}
   /**/#hdtb-msb .hdtb-tl{padding:12px!important;}
   /**/#hdtb-msb>div:nth-child(2)>a{background:#333!important;}
   /**/#hdtb-msb .hdtb-tl:hover{background:#050!important;}
@@ -412,6 +424,7 @@
   /*result*/#res .g:not(.mod):hover{background:#000!important;}
   /**/      #res .g~.normal-header{background:#000!important;padding:0!important;}
   /**/      #res .g~.normal-header>div{color:#a11!important;text-align:center!important;}
+  /*other people also*/#res .g.kno-kp.mnr-c.g-blk{display:none!important;}
   /*result*/#res .g .rc{}
   /**/      #res .g .rc>div:nth-child(1){line-height:100%!important;overflow:visible!important;}
   /**/      #res .g .rc>div:nth-child(1)>a    {font-size:initial!important;line-height:initial!important;}

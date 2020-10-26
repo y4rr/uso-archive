@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mashehu
 @description    `A dark theme for the nextflow tower interface`
-@version        20201024.5.58
+@version        20201026.9.2
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -52,10 +52,13 @@ footer img{
 #main-tabs .nav-link {
     color: rgba(255, 255, 255, 0.6);
 }
-#main-tabs {
+#main-tabs,
+#metrics-body .nav.nav-tabs {
     border-bottom-color: #585858;
 }
-#main-tabs .nav-link.active {
+#main-tabs .nav-link.active,
+#metrics-body .nav-tabs .nav-link.active {
+    color:rgba(255, 255, 255, 0.87);
     background-color: #393939;
     border-color: #585858;
     border-bottom-color: rgba(0,0,0,0);

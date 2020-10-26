@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Eldarya [MAJ: EP 29] - Map Normale+Event
+@name           Eldarya [MAJ HALLOWEEN] - Map Normale+Event
 @namespace      USO Archive
 @author         Loplo
 @description    `FR: Ce style regroupe les styles qui vous indiquent quels items sont lootables en fonction des endroit:  Map Cité d'Eel / Map Côte de Jade / Map Feng-huang / Map Halloween / Map NoëlEt sera mis à jour en même temps que les markables o/EN: This style gather all Eldarya's map styles!  City of El Map / Jade Coast Map / Feng-huang Temple Map / Halloween Map / Christmas MapAnd will be updated in the same time as the markables o/<a href="https://markableseldarya.wordpress.com/">Pour avoir accès aux markables, c'est ici!</a>`
-@version        2020327.15.49
+@version        20201026.12.20
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1382,9 +1382,9 @@
 
 		/*Manoir du laborantin*/ 
 				#mapLocation36 > div { 
-				/*background-image:
-				url("")
-				!important;*/
+				background-image:
+				url("https://www.eldarya.fr/assets/img/item/player/icon/b8949f8c7b4d9b2b0cb88ce8ea834ad2.png")
+				!important;
 				background-repeat: no-repeat;
 				background-position:
 				5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
@@ -1392,13 +1392,16 @@
 				5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
 				5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
 				height: 200px !important;
-				width: 190px !important; }
+				width: 190px !important;
+				background-size : 40px 40px !important ;}
 
 		/*Cimetière abandonné*/
 				#mapLocation37 > div {
-				/*background-image:
-				url("")
-				!important;*/
+				background-image:
+				url("https://www.eldarya.fr/assets/img/item/player/icon/31cfc91885a4fa660cddd69f9e621e66~1602235386.png"),
+				url("https://www.eldarya.fr/assets/img/item/consumable/ea7e2e715c05f8c6eb7cd7c0d15d6a4b~1601990632.png"),
+				url("https://www.eldarya.fr/assets/img/item/player/icon/f98b2d685d4e94fb9990daacedf72778~1602235139.png")
+				!important;
 				background-repeat: no-repeat;
 				background-position:
 				5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
@@ -1406,13 +1409,15 @@
 				5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
 				5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
 				height: 200px !important;
-				width: 190px !important; }
+				width: 190px !important;
+				background-size : 40px 40px !important ;}
+				#mapLocation37 > div:after { content: "This bait is for the Pirnomnom";}
 
 		/*Forêt de ronces */
 				#mapLocation38 > div {
-				/*background-image:
-				url("")
-				!important;*/
+				background-image:
+				url("https://www.eldarya.fr/assets/img/player/eyes/icon/c40b92d2377885c722f076476e4ce100.png")
+				!important;
 				background-repeat: no-repeat;
 				background-position:
 				5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
@@ -1420,13 +1425,14 @@
 				5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
 				5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
 				height: 200px !important;
-				width: 190px !important; }
+				width: 190px !important;
+				background-size : 40px 40px !important ;}
 
 		/*Allée des citrouilles */
 				#mapLocation40 > div {
-				/*background-image:
-				url("")
-				!important;*/
+				background-image:
+				url("https://www.eldarya.fr/assets/img/player/hair/icon/0a27092858f8d1a9b2ff6d8426a3ba99~1602234753.png")
+				!important;
 				background-repeat: no-repeat;
 				background-position:
 				5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
@@ -1434,7 +1440,8 @@
 				5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
 				5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
 				height: 200px !important;
-				width: 190px !important; }
+				width: 190px !important;
+				background-size : 40px 40px !important ;}
 
 		/*Village des damnés */
 				#mapLocation39 div {
