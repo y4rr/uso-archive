@@ -2,15 +2,15 @@
 @name           3ddd.ru - Dark Theme
 @namespace      USO Archive
 @author         Lev M
-@description    `3ddd.ru - Dark ThemeStyle Version 0.5.4`
-@version        2020103.23.35
+@description    `3ddd.ru - Dark ThemeStyle Version 0.5.5`
+@version        20201025.16.1
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("3ddd.ru") {
 /*
 
-Версия стиля 0.5.4
+Версия стиля 0.5.5
 
 1. Что бы обновить стиль, в расширении stylus нажмите кнопку "менеджер" и рядом с названием сайта нажмите кнопку проверить обновления. 
 Если вы вносили какие то изменения в основной код, то предварительно скопируйте свои правки и после обновления вставьте их обратно.
@@ -2470,17 +2470,34 @@ table.result td.price
     filter: grayscale(100%) invert(92%) brightness(200%)
 }
 
-.ui-menu .ui-menu-item a
+.ui-menu
 {
     background-color: #333!important;
-    box-shadow: 0 5px 15px #151515;
-    cursor: pointer
+    box-shadow: 0 5px 15px #151515
 }
 
-.ui-menu .ui-menu-item a:hover
+.ui-menu a:hover
 {
     border: 1px solid #444;
     background-color: #444!important
+}
+
+.typeahead {
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+    box-shadow: 0 5px 15px #151515
+}
+
+.typeahead .item.active
+{
+    background-color: #444!important;
+    color: #fafafa;
+}
+
+.item .active a
+{
+    background-color: #444!important;
+    border: 1px solid #444;
 }
 
 .ui-corner-all,

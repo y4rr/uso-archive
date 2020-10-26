@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         abouzarnouri
 @description    `I have merged some userstyles for better RTL Trello.You need to install 'IRANSans' or 'Droid Arabic Naskh' font on your system.`
-@version        2020226.13.49
+@version        20201025.18.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,6 +22,9 @@ body, textarea {
 .new-comment-input, textarea.field, .js-text, .list-card-composer-textarea, .checklist-new-item-text {
     direction: rtl;
     font-family: 'IRANSans', 'Droid Arabic Naskh', tahoma !important;
+}
+.checklist-item-checkbox-nachos {
+	right: 7px !important;
 }
 /**/
 .phenom-reactions {

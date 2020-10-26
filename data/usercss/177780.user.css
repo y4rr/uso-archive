@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cybernetic
 @description    `Темная тема с гибкой настройкой для сайта Monopoly OneИнформация - vk.com/mnpldrk`
-@version        20201024.9.54
+@version        20201025.15.52
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown color "Цветовая схема" {
@@ -333,7 +333,7 @@ body[theme=dark] label[for="settings_beta_darktheme"]:after {
     content: '  / Installed mnpldrk dark v.2310-20';
     color: var(--color1); }
 label[for="settings_beta_darktheme"]:after {
-    content: '  / Installed mnpldrk light v.2410-20';
+    content: '  / Installed mnpldrk light v.2510-20 (beta)';
     color: var(--color1); }
 
 /* font-alternative */
@@ -443,7 +443,7 @@ body[theme=dark] .header .header-right>div:before {
     color: #FFF; }
 body[theme=dark] .header .header-right>div:hover:before {
     color: var(--color1); }
-.header .header-right {
+body[theme=dark] .header .header-right {
     height: 55px;
     margin-top: 10px;
     border-right: 70px solid var(--color3);
@@ -454,6 +454,19 @@ body[theme=dark] .header .header-right>div:hover:before {
     border-radius: 5px;
     margin: 0 20px;
     background-color: var(--color3);
+    top: 10px; }
+
+.header .header-right {
+    height: 55px;
+    margin-top: 10px;
+    border-right: 70px solid #FFF;
+    border-left: 10px solid #FFF;
+    margin-left: -20;
+    margin-right: 0;
+    left: 180px;
+    border-radius: 5px;
+    margin: 0 20px;
+    background-color: #FFF;
     top: 10px; }
 .header[mnpl-style=transparent-white] .header-right {
     background-color: var(--color3) !important; }

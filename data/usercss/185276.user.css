@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        20201015.14.36
+@version        20201025.14.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,6 +20,8 @@
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
+
+
 .header-container.jsx-4096498568 .header-content.jsx-4096498568,
 .main-body > div:last-child,
 .main-body,
@@ -42,12 +44,18 @@ html,
 .video-card-big.jsx-3702252752 .content-container.border.jsx-3702252752,
 .video-card-big.jsx-3702252752 .content-container.jsx-3702252752,
 .action-container.jsx-1891492674,
-.profile.jsx-2505920267 .profile-actions.jsx-2505920267 {
+.profile.jsx-2505920267 .profile-actions.jsx-2505920267,
+.video-infos-container.jsx-1498400520,
+.user-info-container.jsx-1498400520,
+.privacy-settings-container.jsx-2187837845 .main-container.jsx-2187837845,
+.privacy-settings-container.jsx-2187837845 .bottom-button.jsx-2187837845 .action-button.jsx-2187837845 {
 	background-color: #1D1E1F !important;
 }
 
 .popup.jsx-919645622::before,
-.more-actions.jsx-4035564160 .action-container.jsx-4035564160 {
+.more-actions.jsx-4035564160 .action-container.jsx-4035564160,
+.profile.jsx-2902964253 .profile-actions.jsx-2902964253,
+.more-actions.jsx-3371939883 .action-container.jsx-3371939883 {
 	background-color: #000 !important;
 }
 
@@ -89,12 +97,16 @@ html,
 ._user_carousel_list-item.jsx-3196282229,
 .side-bar.jsx-542501122 .user-list-skeleton.jsx-542501122,
 .side-bar.jsx-542501122 .user-list.jsx-542501122,
-._user_carousel_list-item.jsx-785156302 {
+._user_carousel_list-item.jsx-785156302,
+.privacy-settings-container.jsx-2187837845 .bottom-button.jsx-2187837845 .action-button.jsx-2187837845 {
 	border-color: rgb(245, 137, 158) !important;
 }
 
 .video-feed-item.jsx-1032714056,
-.side-bar.jsx-1733799211 .user-list.jsx-1733799211 {
+.side-bar.jsx-1733799211 .user-list.jsx-1733799211,
+.side-bar.jsx-1023132131 .user-list-skeleton.jsx-1023132131,
+.side-bar.jsx-1023132131 .user-list.jsx-1023132131,
+.copy-link-container.jsx-550377512 .link-container.jsx-550377512 {
 	border-top: 1px solid rgb(245, 137, 158) !important;
 	border-bottom: 1px solid rgb(245, 137, 158) !important;
 }
@@ -131,7 +143,9 @@ svg {
 }
 
 .video-feed-item.jsx-831076485,
-.video-feed-container.jsx-1253605775 .video-feed-item {
+.video-feed-container.jsx-1253605775 .video-feed-item,
+.pc-action-bar.horizontal.jsx-1045706868 .bar-item-wrapper.jsx-1045706868 .bar-item-img.jsx-1045706868,
+.pc-action-bar.horizontal.jsx-1045706868 .bar-item-wrapper.jsx-1045706868 .bar-item-text.jsx-1045706868 {
 	border-bottom: 1px solid rgb(245, 137, 158)!important;
 }
 
@@ -211,7 +225,9 @@ a.duet-with.jsx-709044605::before,
 .arrow-right.jsx-2218770407::after,
 .arrow-right.jsx-2218770407::before,
 .feedback-main-container .side-container .option-container .icon-expand,
-.hamburger-menu.jsx-319605352 .hamburger-menu-wrapper.jsx-319605352 {
+.hamburger-menu.jsx-319605352 .hamburger-menu-wrapper.jsx-319605352,
+.action-left.jsx-1182361573 .action-wrapper-v2.jsx-1182361573 .icons.like.jsx-1182361573,
+.action-left.jsx-1182361573 .action-wrapper-v2.jsx-1182361573 .icons.jsx-1182361573 {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -343,7 +359,14 @@ div.jsx-3640141109 video-music-content pause music-title-decoration,
 .feedback-header .breadcrumb-container .crumb,
 ._user_carousel_followers-text.jsx-3196282229,
 .nav-item.jsx-542501122 span.jsx-542501122,
-.side-bar.jsx-542501122 .user-list-header.jsx-542501122 {
+.side-bar.jsx-542501122 .user-list-header.jsx-542501122,
+.nav-item.jsx-1023132131 span.jsx-1023132131,
+.side-bar.jsx-1023132131 .user-list-header.jsx-1023132131,
+.side-bar.jsx-1023132131 .login-wrapper.jsx-1023132131 span.jsx-1023132131,
+.copy-link-container.jsx-550377512 .link-container.jsx-550377512,
+.privacy-settings-container.jsx-2187837845 .bottom-button.jsx-2187837845 .action-button.jsx-2187837845,
+.privacy-settings-container.jsx-2187837845 .allow-container.jsx-2187837845 .allow-item.jsx-2187837845 .allow-content.jsx-2187837845,
+.privacy-settings-container.jsx-2187837845 .hint.jsx-2187837845 {
 	color: aliceblue !important
 }
 }

@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.156
+@name           Flickr Widescreen - ALLinONE (Part 2) v.157
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201024.20.18
+@version        20201026.0.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.156 (new156)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.157 (new157)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -784,14 +784,68 @@ html.scrolling-layout #content .galleries-list-container.fluid-centered {
 .album-header-view > .album-header-content > .edit-cover-photo {
     top: 35px;
 }
-/* GALLERY - HEADER - === */
+/* (new157) GALLERY - HEADER - === */
 .gallery-page-view .gallery-page-container .details-section {
+    position: sticky !important;
+    top: 35px !important;
     margin-top: -95px !important;
     width: 100% !important;
+z-index: 50000 !important;
+}
+.gallery-page-view .gallery-page-container .details-section .description.short ,
+.gallery-page-view .gallery-page-container .details-section .description {
+    position: sticky !important;
+    width: 100%;
+height: auto !important;
+    max-height: 48px;
+    top: -85px !important;
+    margin-top: 0px !important;
+border-bottom: 1px solid gray ;
+background: #222  !important;
 }
 .gallery-page-view .gallery-page-container .details-section .description {
-    width: 75%;
-    margin-top: 10px !important;
+    max-height: 100% !important;
+border-bottom: 1px solid gray ;
+background: #222  !important;
+}
+.gallery-page-view .gallery-page-container .details-section .description p ,
+.gallery-page-view .gallery-page-container .details-section .description.short p {
+    height: auto;
+    max-height: 48px;
+    overflow: hidden;
+border-bottom: 1px solid gray ;
+}
+.gallery-page-view .gallery-page-container .details-section .description p {
+    height: auto;
+    max-height: 100% ;
+    overflow: hidden;
+border-bottom: 1px solid gray ;
+}
+.gallery-page-view .gallery-page-container .details-section .description p {
+    margin: 0 0 5px;
+    width: 100%;
+background: #222  !important;
+}
+.gallery-page-view .gallery-page-container .details-section header h1 {
+    float: left ;
+    width: 50%;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    line-height: 25px;
+    margin: 0;
+    text-align: right ;
+background: #333 !important;
+}
+.gallery-page-view .gallery-page-container .details-section header p {
+    float: right ;
+    width: 49%;
+    color: #212124;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 5px 0 0;
+    text-align: left !important;
+color: gray ;
 }
 .gallery-page-view .gallery-page-container .stats {
     position: fixed !important;
@@ -804,8 +858,12 @@ html.scrolling-layout #content .galleries-list-container.fluid-centered {
     z-index: 50000 !important;
 }
 .gallery-page-view .gallery-page-container .details-section header {
+    display: block !important;
+    height: 25px !important;
     margin-top: 184px !important;
     padding: 5px !important;
+    z-index: 50000 !important;
+background: #333 !important;
 }
 /* GAL - LIST - === */
 html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-list-gallery-view {
