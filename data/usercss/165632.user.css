@@ -3,22 +3,21 @@
 @namespace      USO Archive
 @author         Ricnac Malek
 @description    `Estilo transparente de whatsappSolo modifique la opacidad del color negroAutor del tema por nufrankz https://userstyles.org/users/384361https://userstyles.org/styles/137361/dark-transparent-whatsapp-now-faster`
-@version        2020813.23.44
+@version        20201027.3.56
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("web.whatsapp.com") {
 :root {
-    --accent: #002aff !important;
+    --accent: #007ff0 !important;
     --background-color: #2A2B36 !important;
     --background-blur: 0px !important;
-    --transparency-color: rgba(0,0,0,0.25) !important;
-    --menu-background: #000000 !important;
-    --rgb: 255, 255, 255 !important;
-    --text: #FFE2E2 !important;
-    --link: #66D4FF !important;
-    --secondary-opacity: 0.65 !important;
-    --doodles-opacity: 0.4 !important;
+    --transparency-color: rgba(12,13,14,0.4) !important;
+    --rgb: 255,+255,+255 !important;
+    --text: #F6F6FF !important;
+    --link: #0059d2 !important;
+    --secondary-opacity: 0.4 !important;
+    --doodles-opacity: 0 !important;
     --beige: var(--accent) !important;
     --beige-rgb: var(--rgb) !important;
     --black: transparent !important;
@@ -161,6 +160,10 @@
     --butterbar-icon-rgb: var(--rgb) !important;
     --butterbar-notification-icon: var(--text) !important;
     --butterbar-notification-icon-rgb: var(--rgb) !important;
+    --butterbar-notice-background: transparent !important;
+    --butterbar-notice-background-rgb: transparent !important;
+    --butterbar-notice-smb-background: transparent !important;
+    --butterbar-notice-smb-background-rgb: transparent !important;
     --butterbar-primary: var(--accent) !important;
     --butterbar-primary-rgb: transparent !important;
     --butterbar-secondary: var(--text) !important;
@@ -209,10 +212,10 @@
     --checkbox-background-rgb: transparent !important;
     --checkbox-mark: transparent !important;
     --checkbox-mark-rgb: transparent !important;
-    --compose-input-background-focused: var(--background-color) !important;
-    --compose-input-background-focused-rgb: transparent !important;
     --compose-input-background: transparent !important;
     --compose-input-background-rgb: transparent !important;
+    --compose-input-background-focused: var(--background-color) !important;
+    --compose-input-background-focused-rgb: transparent !important;
     --compose-input-border: transparent !important;
     --compose-input-border-rgb: transparent !important;
     --compose-input-border-focused: transparent !important;
@@ -229,11 +232,11 @@
     --conversation-panel-border-rgb: transparent !important;
     --danger: var(--accent) !important;
     --danger-rgb: transparent !important;
-    --drawer-background: var(--menu-background) !important;
+    --drawer-background: var(--background-color) !important;
     --drawer-background-rgb: var(--rgb) !important;
     --drawer-background-deep: transparent !important;
     --drawer-background-deep-rgb: transparent !important;
-    --drawer-gallery-background: var(--menu-background) !important;
+    --drawer-gallery-background: var(--background-color) !important;
     --drawer-gallery-background-rgb: transparent !important;
     --drawer-gallery-background-active: var(--outgoing-background) !important;
     --drawer-gallery-background-active-rgb: transparent !important;
@@ -243,7 +246,7 @@
     --drawer-header-title-rgb: transparent !important;
     --drawer-section-background: transparent !important;
     --drawer-section-background-rgb: transparent !important;
-    --dropdown-background: var(--background-color) !important;
+    --dropdown-background: var(--transparency-color) !important;
     --dropdown-background-rgb: transparent !important;
     --dropdown-background-hover: var(--outgoing-background) !important;
     --dropdown-background-hover-rgb: transparent !important;
@@ -251,6 +254,10 @@
     --empty-state-background-rgb: transparent !important;
     --empty-state-icon: transparent !important;
     --empty-state-icon-rgb: transparent !important;
+    --ephemeral-nux-bubble: transparent !important;
+    --ephemeral-nux-bubble-rgb: transparent !important;
+    --ephemeral-nux-timer: transparent !important;
+    --ephemeral-nux-timer-rgb: transparent !important;
     --focus: transparent !important;
     --focus-rgb: transparent !important;
     --focus-animation: transparent !important;
@@ -314,6 +321,10 @@
     --media-viewer-button-background-rgb: transparent !important;
     --media-viewer-button-icon: var(--background-color) !important;
     --media-viewer-button-icon-rgb: transparent !important;
+    --menu-context-sticker-icon: transparent !important;
+    --menu-context-sticker-icon-rgb: transparent !important;
+    --menu-context-sticker-icon-inverse: transparent !important;
+    --menu-context-sticker-icon-inverse-rgb: transparent !important;
     --menu-tabs-list-active: var(--accent) !important;
     --menu-tabs-list-active-rgb: var(--rgb) !important;
     --message-background-deep: transparent !important;
@@ -342,7 +353,7 @@
     --notification-e2e-text-rgb: transparent !important;
     --notification-text: var(--text) !important;
     --notification-text-rgb: transparent !important;
-    --outgoing-background: rgba(255, 255, 255, 0.04) !important;
+    --outgoing-background: rgba(255,+255,+255,+0.075) !important;
     --outgoing-background-rgb: transparent !important;
     --outgoing-background-deeper: var(--incoming-background) !important;
     --outgoing-background-deeper-rgb: transparent !important;
@@ -350,7 +361,7 @@
     --outgoing-background-highlight-rgb: transparent !important;
     --overlay: transparent !important;
     --overlay-rgb: transparent !important;
-    --panel-background: var(--menu-background) !important;
+    --panel-background: var(--background-color) !important;
     --panel-background-rgb: transparent !important;
     --panel-background-active: transparent !important;
     --panel-background-active-rgb: transparent !important;
@@ -358,9 +369,9 @@
     --panel-background-colored-rgb: transparent !important;
     --panel-background-colored-deeper: var(--panel-background) !important;
     --panel-background-colored-deeper-rgb: transparent !important;
-    --panel-background-deep: var(--menu-background) !important;
+    --panel-background-deep: var(--background-color) !important;
     --panel-background-deep-rgb: transparent !important;
-    --panel-background-deeper: var(--menu-background) !important;
+    --panel-background-deeper: var(--background-color) !important;
     --panel-background-deeper-rgb: transparent !important;
     --panel-background-hover: var(--outgoing-background) !important;
     --panel-background-hover-rgb: transparent !important;
@@ -386,6 +397,8 @@
     --payment-status-waiting-rgb: transparent !important;
     --photopicker-overlay-background: var(--transparency-color) !important;
     --photopicker-overlay-background-rgb: transparent !important;
+    --picker-background: transparent !important;
+    --picker-background-rgb: transparent !important;
     --popup-panel-background: transparent !important;
     --popup-panel-background-rgb: transparent !important;
     --primary: var(--text) !important;
@@ -398,6 +411,8 @@
     --primary-strongest-rgb: var(--rgb) !important;
     --primary-title: var(--text) !important;
     --primary-title-rgb: var(--rgb) !important;
+    --product-image-button-background: transparent !important;
+    --product-image-button-background-rgb: transparent !important;
     --product-thumb-background: transparent !important;
     --product-thumb-background-rgb: transparent !important;
     --product-thumb-background-deeper: transparent !important;
@@ -424,10 +439,10 @@
     --quick-action-button-background-rgb: transparent !important;
     --rich-text-panel-background: transparent !important;
     --rich-text-panel-background-rgb: transparent !important;
-    --search-input-background: transparent !important;
-    --search-input-background-rgb: transparent !important;
     --search-container-background: transparent !important;
     --search-container-background-rgb: transparent !important;
+    --search-input-background: transparent !important;
+    --search-input-background-rgb: transparent !important;
     --secondary: var(--text) !important;
     --secondary-rgb: var(-rgb) !important;
     --secondary-light: var(--text) !important;
@@ -450,6 +465,8 @@
     --spinner-outgoing-rgb: transparent !important;
     --startup-background: transparent !important;
     --startup-background-rgb: transparent !important;
+    --startup-icon: transparent !important;
+    --startup-icon-rgb: transparent !important;
     --status-background: var(--background-color) !important;
     --status-background-rgb: transparent !important;
     --status-background-hover: var(--outgoing-background) !important;
@@ -474,11 +491,13 @@
     --teal-pale-rgb: transparent !important;
     --thumb-border-active: transparent !important;
     --thumb-border-active-rgb: transparent !important;
+    --thumb-border-active-new-media-editor: transparent !important;
+    --thumb-border-active-new-media-editor-rgb: transparent !important;
     --thumb-border-viewer-active: transparent !important;
     --thumb-border-viewer-active-rgb: transparent !important;
-    --toast-background: var(--menu-background) !important;
+    --toast-background: var(--background-color) !important;
     --toast-background-rgb: transparent !important;
-    --tooltip-background: var(--background-color) !important;
+    --tooltip-background: var(--transparency-color) !important;
     --tooltip-background-rgb: transparent !important;
     --typing: var(--accent) !important;
     --typing-rgb: transparent !important;
@@ -490,6 +509,10 @@
     --unread-marker-background-rgb: transparent !important;
     --unread-marker-text: var(--background-color) !important;
     --unread-marker-text-rgb: transparent !important;
+    --vcard-placeholder-background: transparent !important;
+    --vcard-placeholder-background-rgb: transparent !important;
+    --vcard-placeholder-background-deeper: transparent !important;
+    --vcard-placeholder-background-deeper-rgb: transparent !important;
     --video-player-background: transparent !important;
     --video-player-background-rgb: transparent !important;
     --video-primary: var(--accent) !important;
@@ -504,6 +527,8 @@
     --voip-primary-rgb: transparent !important;
     --voip-reject-background: transparent !important;
     --voip-reject-background-rgb: transparent !important;
+    --wallpaper-background: transparent !important;
+    --wallpaper-background-rgb: transparent !important;
     --win32-title-primary: transparent !important;
     --win32-title-primary-rgb: transparent !important;
   }
@@ -552,7 +577,7 @@
     height: 100% !important;
     background-image: url(http://www.mediafire.com/convkey/e162/rnihmvhm9x6a6dizg.jpg) !important;
     background-size: cover !important;
-    background-position: center center ;
+    background-position: left top ;
     filter: blur(var(--background-blur)) !important;
   }
 
@@ -690,7 +715,8 @@
   [data-icon="status-v3-unread"] svg path:nth-child(2),
   [data-icon="checkbox-round-checked"] svg path:first-child,
   [data-icon$="-green"] svg path:nth-child(2),
-  [data-icon="alert-phone"] svg path:nth-child(2) {
+  [data-icon="alert-phone"] svg path:nth-child(2),
+  [data-icon="audio-file"] svg path:first-child {
     fill: var(--accent) !important;
   }
   #startup > ._3LfU-.xrsMK > svg > circle {
@@ -726,7 +752,8 @@
     background-color: var(--transparency-color) !important;
   }
 
-  body, html[dir] ._3F6QL._16pR,
+  body,
+  html[dir] ._3F6QL._16pR,
   html[dir] ._3wPo6,
   html[dir] ._3F6QL._16pR3,
   html[dir] ._3r6Zi,
@@ -749,7 +776,7 @@
   html[dir] ._2zpSw,
   html[dir] .yxGx0,
   html[dir] ._2fYJt {
-    background-color: var(--menu-background) !important;
+    background-color: var(--background-color) !important;
   }
 
   html[dir] ._2dwaZ {
@@ -803,8 +830,15 @@
   ._3F6QL._16pR3 ._39LWd,
   .VGBA3,
   ._2FVVk ._2FbwG,
-  html[dir="ltr"] ._3tBW6,
-  ._3-cMa {
+  ._3-cMa,
+  html[dir] ._3tBW6 :not(.zFnX) span,
+  html[dir="ltr"] ._1EYDN,
+  [data-icon="muted"] svg,
+  html[dir] ._3dtfX .m61XR,
+  html[dir=ltr] .J3VFH,
+  html[dir=ltr] ._3uRXa,
+  html[dir=ltr] .J3VFH,
+  html[dir=ltr] ._3uRXa {
     opacity: var(--secondary-opacity) !important;
   }
   html[dir="ltr"] ._3tBW6 ._616fG {
@@ -928,7 +962,9 @@
     padding: 0.5em !important;
     background-color: #fff !important;
   }
-
+  ._1fiOp {
+    height: auto !important;
+  }
   ._1gzBr {
     filter: grayscale(100%) !important;
   }

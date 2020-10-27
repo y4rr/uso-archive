@@ -3,15 +3,9 @@
 @namespace      USO Archive
 @author         Tитан
 @description    `После установки, пожалуйста, зайдите на https://vk.com/dev и потом сообщите мне, работает ли там стильПрозрачная тема с сочетанием черного, зеленого, оранжевого, желтого и голубого цветов с оранжевым драконом на заднем плане. </br> Поддерживает самые популятрные расширения, как VK Opt и Last.fm VK scrobber, а ещё тут есть настройкиTransparent theme with mix of black and bright colors: lime, green, orange and yellow and bit of blue with orange dragon on background </br> </br>Автор рисунка: Allagar </br>Автор темы: Титан (https://vk.com/tan_1)</br></br>Post Scriptum. Я заметил, что количество скачиваний этой темы сократилось, а так же, что у моего стиля нет ни одной оценки, в связи с чем, тратить время на заливание новейшей версии я счел бесполезным занятием. Если он кому-нибудь ещё нужен, пишите мне в ВК, я его обновлю.`
-@version        2020719.11.58
+@version        20201027.9.20
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
-@advanced dropdown s1 "Иконка Frigate" {
-	1-1 "Не скрывать*" <<<EOT  EOT;
-1-0 "Скрыть" <<<EOT .frigate_h {
-display:none!important} EOT;
-
-}
 @advanced dropdown s2 "Плавные переходы" {
 	2-1 "Включить*" <<<EOT .nim-dialog.nim-dialog_classic:not(:hover), .mv_playlist .mv_playlist_item, .im-page .im-page--mess-search, .im-page .im-page--mess-search .im-i--messages-search, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, .nim-dialog:not(.nim-dialog_deleted), .article_ed_layer .article_ed_layer__header .article_ed_layer__list, .article_ed_layer .article_ed_layer__header .article_ed_layer__publish, .article_layer .article_layer__footer, .EditableLabel__text
 {transition: 0.5s}
@@ -35,7 +29,9 @@ display:none!important} EOT;
   {border-radius: 1px !important}
 }
 /* i really want this to be global *\/
-.wcm_user_ava, .wcm_group_info_ava, .wcommunity_header_avatar img, .wcommunity_rows .wcommunity_avatar img EOT;
+/*------КВАДРАТНЫЕ АВАТАРЫ------*\/
+[dir] .wcm_user_ava, [dir] .wcm_group_info_ava, [dir] .wcommunity_header_avatar img, [dir] .wcommunity_rows .wcommunity_avatar img
+{border-radius: 1px !important;} EOT;
 3-0 "Круглые" <<<EOT  EOT;
 
 }
@@ -67,20 +63,26 @@ display:none!important} EOT;
 
 }
 @advanced dropdown g2 "Опросы на сайтах" {
-	7-2 "Агрессивно*" <<<EOT .wpoll_head
+	7-2 "Агрессивно*" <<<EOT /*2*\/ /*--------опросы на сайтах-------------*\/
+/*агрессивные (красивее, но может задевать код сайта)*\/
+[dir] .wpoll_head
 {background-color:#a0ff007d}
-#page_wrap
+[dir] #page_wrap
 {background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");
 background-attachment: fixed ;
     background-size: cover ;
-    color: rgb(255, 255, 255);} EOT;
-7-1 "Неагресивно" <<<EOT .wpoll_head
+    color: rgb(255, 255, 255);}
+/* i really want this to be global *\/ EOT;
+7-1 "Неагресивно" <<<EOT /*2*\/ /*--------опросы на сайтах-------------*\/
+/*неагрессивные *\/
+.wpoll_head
 {background-color:#82ba00!important}
 _wpoll_wrap wpoll_wrap
 {background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");
 background-attachment: fixed ;
     background-size: cover ;
-    color: rgb(255, 255, 255);} EOT;
+    color: rgb(255, 255, 255);}
+/* i really want this to be global *\/ EOT;
 
 }
 
@@ -110,7 +112,30 @@ input[type="text"]:focus::-moz-placeholder
 {color:orange}
 [dir] .im-mess-stack .im-mess-stack--content .im-mess-stack--tools a
 {color:yellow}
-/*бета-версия*/
+
+/*-----------------------------НАСТРОЙКИ------------------------------                     
+-----------------  __  _ ___ ___ ___       __  __ --------------------
+----------------- (_  |_  |   |   |  |\ | /__ (_  --------------------
+----------------- __) |_  |   |  _|_ | \| \_| __) --------------------
+----------------------------------------------------------------------
+-----------------           _ ___ _   _    _         -----------------
+----------------- |_|  /\  /   | |_) / \ | /| |/ | /|-----------------
+----------------- | | /--\ \_  | |   \_/ |/ | |\ |/ |-----------------
+----------------------------------------------------------------------*/
+
+    /*Плавные переходы*/
+    /*[[s2]]*/
+    
+    /*Змейка вместо звездочек (в разработке)*/
+    /*[[s3]]*/
+    
+    /*Скрыть истории в ленте новостей*/
+    /*[[s4]]*/
+    
+    /*Скрыть размер файлов*/
+    /*[[s5]]*/
+    
+/*бета-версия		<--- Я уже забыл, что это такое, но оставлю на всякий
 /*
 span[style*="font"]
 {color:white!important}
@@ -351,13 +376,15 @@ div[style*="background-color: rgb(251"] {background-color:rgba(0,255,0,.05)!impo
 div[style*="background-color: rgb(252"] {background-color:rgba(0,255,0,.04)!important}
 div[style*="background-color: rgb(253"] {background-color:rgba(0,255,0,.03)!important}
 div[style*="background-color: rgb(254"] {background-color:rgba(0,255,0,.02)!important}
-div[style*="background-color: rgb(255"] {background-color:rgba(0,255,0,.01)!important}
+div[style*="background-color: rgb(255"] div[class="reply reply_dived clear  reply_replieable _post"] {background-color:rgba(0,255,0,.01)!important}
 
 /*начало*/
-/*#page_wrap
-{background:#16222E} отключено до оптимизации кода*/
-[dir] .widget_body, [dir] .wcomments_wrap, [dir] .wcommunity_wrap:before, [dir] .wcommunity_wrap, body.dev, body
-{background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg")!important;
+
+#page_wrap
+/*{background:#16222E} отключено до оптимизации кода*/
+{background:rgb(51, 51, 51)}
+[dir] .widget_body, [dir] .wcomments_wrap, [dir] .wcommunity_wrap:before, [dir] .wcommunity_wrap, body.dev, [dir] body
+{background-image:url("https://i.ibb.co/C6sgtDP/memnon-by-allagar-dbeg2sx.jpg")!important;
 background-color: transparent!important;
 background-attachment: fixed;
     background-size: cover !important;
@@ -367,8 +394,13 @@ border-top:none!important;
 border:none!important;
 border-left:none!important;
     border-right:none!important;}
-                                                                                                     /*Я цвета не чувствую! У тебя его нет*/
-[dir] .fakeinput, div[contenteditable=true],[dir] input.text, [dir] input.search, [dir] input.big_text, [dir] input.dark, [dir] .fakeinput, [dir] div[contenteditable=true], [dir] textarea, [dir] .wall_module .page_media_thumbed_link, [dir] .wall_module .reply_fakebox, [dir] .fc_msgs, [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, [dir] .ui_search, [dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner, [dir] .im-page .im-page--history-new-bar, [dir] .im-page .im-page--history-new-bar>span, [dir] .emoji_cat_title, [dir] .emoji_tabs_l_s, [dir] .emoji_tabs_r_s, [dir] .im-page--toolsw, [dir] .photos_choose_upload_area_enter .photos_choose_upload_area, [dir] .photo_upload_separator, [dir] .top_notify_cont .feedback_row:not(.dld).hover, [dir] .top_notify_cont .feedback_row:not(.dld):hover, [dir] .pv_narrow_column_wrap, [dir] .audio_row .audio_row__info:hover, [dir] .eltt, [dir] .audio_pl_snippet, [dir] .search_filters_minimized_text, [dir] .profile_info_header, [dir] .mv_playlist .mv_playlist_item, [dir] .apps_main, [dir] .im-dropbox--rect.dropbox_over
+
+    [dir] .clear {
+        clear: none!important;
+    }
+
+                                                                                               /*Я цвета не чувствую! У тебя его нет*/
+[dir] .fakeinput, div[contenteditable=true],[dir] input.text, [dir] input.search, [dir] input.big_text, [dir] input.dark, [dir] .fakeinput, [dir] div[contenteditable=true], [dir] textarea, [dir] .wall_module .page_media_thumbed_link, [dir] .wall_module .reply_fakebox, [dir] .fc_msgs, [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, [dir] .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, [dir] .ui_search, [dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner, [dir] .im-page .im-page--history-new-bar, [dir] .im-page .im-page--history-new-bar>span, [dir] .emoji_cat_title, [dir] .emoji_tabs_l_s, [dir] .emoji_tabs_r_s, [dir] .im-page--toolsw, [dir] .photos_choose_upload_area_enter .photos_choose_upload_area, [dir] .photo_upload_separator, [dir] .top_notify_cont .feedback_row:not(.dld).hover, [dir] .top_notify_cont .feedback_row:not(.dld):hover, [dir] .pv_narrow_column_wrap, [dir] .audio_row .audio_row__info:hover, [dir] .eltt, [dir] .audio_pl_snippet, [dir] .search_filters_minimized_text, [dir] .profile_info_header, [dir] .mv_playlist .mv_playlist_item, [dir] .apps_main, [dir] .im-dropbox--rect.dropbox_over, [dir] .thumbed_link__label, [dir=ltr] #page_header_wrap
 {background:rgba(0,0,0,0)}
 [dir] #marketplace .market_content .market_row .market_place_common_friend_badge
 {background-color:rgba(0,0,0,0)}
@@ -399,7 +431,7 @@ height:24px;
 width:132px}
 [dir] .top_home_link .top_home_logo
 {background:url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23ff0%22%20fill-rule%3D%22evenodd%22%20d%3D%22M31.559%201.287C31.781.545%2031.559%200%2030.5%200L27%200C26.11%200%2025.7.471%2025.477.99%2025.477.99%2023.698%205.328%2021.176%208.146%2020.36%208.962%2019.99%209.222%2019.545%209.222%2019.322%209.222%2018.988%208.962%2018.988%208.22L18.988%201.287C18.988.397%2018.742%200%2018%200L12.5%200C11.944%200%2011.61.413%2011.61.804%2011.61%201.648%2012.87%201.843%2013%204.216L13%209.37C13%2010.5%2012.796%2010.705%2012.351%2010.705%2011.165%2010.705%208.278%206.347%206.567%201.361%206.231.391%205.895%200%205%200L1.5%200C.5%200%20.3.471%20.3.99%20.3%201.917%201.487%206.515%205.825%2012.596%208.717%2016.749%2012.792%2019%2016.5%2019%2018.725%2019%2019%2018.5%2019%2017.639L19%2014.5C19%2013.5%2019.211%2013.3%2019.915%2013.3%2020.434%2013.3%2021.324%2013.56%2023.401%2015.562%2025.774%2017.935%2026.165%2019%2027.5%2019L31%2019C32%2019%2032.5%2018.5%2032.212%2017.513%2031.896%2016.53%2030.763%2015.103%2029.26%2013.412%2028.444%2012.448%2027.22%2011.409%2026.849%2010.89%2026.33%2010.223%2026.479%209.926%2026.849%209.333%2026.849%209.333%2031.114%203.326%2031.559%201.287%22%20transform%3D%22translate%282%201%29%22%2F%3E%3C%2Fsvg%3E)}
-[dir] #page_header_cont .back
+[dir] #page_header_cont .back, [dir] #page_header_cont
 {background-color:rgba(0,100,0,.5)}
 [dir] .top_nav_link:hover, [dir] .top_audio_player:hover
 {background:rgba(0,0,0,.5); color:orange}
@@ -2024,8 +2056,8 @@ color:orange}
 {background-image: url(https://image.ibb.co/kKwSnQ/photo_like_big_2x.png)}
 [dir] .bp_post.bp_selected
 {background-color:rgba(0,255,0,.30)!important}
-[dir] .bp_action
-{background:url('https://image.ibb.co/f7dwx5/post_icon.png') no-repeat}
+[dir=ltr] .bp_action
+{background:url('https://image.ibb.co/f7dwx5/post_icon.png') no-repeat 1px -52px;}
 a[class="bp_delete_button bp_action fl_r"]
 {background-position:1px -52px}
 [dir] .pg_flnk_sel, [dir] .pg_flnk:hover, [dir] .pg_flnk_nb:hover, [dir] .pg_flnk_rd:hover
@@ -2750,8 +2782,17 @@ opacity: .7} /*скрепка, прикрепить*/
 
 ._audio_page_content_block_wrap audio_page_content_block_wrap
 {background:none!important}
-/**/
-/**/
+
+
+[dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child  /*Блоки-ссылки в постах*/
+{
+	background:#0088ff38;
+}
+.thumbed_link__title {
+	color:#00f1ff;
+}
+.page_name, h1.page_name /*Название группы на странице группы*/
+{color:orange}
 /**/
 /**/
 /**/
@@ -2830,36 +2871,12 @@ body
 ----------------- | | /--\ \_  | |   \_/ |/ | |\ |/ |-----------------
 ----------------------------------------------------------------------*/
 
-/*поставьте эти символы вокруг кода, что бы отключить*/
-/*1*/
-/*-------------КВАДРАТНЫЕ АВАТАРКИ (на других сайтах)--------*/
-[dir] .wcm_user_ava, [dir] .wcm_group_info_ava, [dir] .wcommunity_header_avatar img, [dir] .wcommunity_rows .wcommunity_avatar img
-  {border-radius: 1px !important;}
-/*2*/ /*--------опросы на сайтах-------------*/
-/*неагрессивные 
-.wpoll_head
-{background-color:#82ba00!important}
-_wpoll_wrap wpoll_wrap
-{background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");
-background-attachment: fixed ;
-    background-size: cover ;
-    color: rgb(255, 255, 255);}*/
-/*агрессивные (красивее, но может задевать код сайта)*/
-[dir] .wpoll_head
-{background-color:#a0ff007d}
-[dir] #page_wrap
-{background-image:url("https://orig12.deviantart.net/72db/f/2017/180/3/4/memnon_by_allagar-dbeg2sx.jpg");
-background-attachment: fixed ;
-    background-size: cover ;
-    color: rgb(255, 255, 255);}
+/*Квадратные аватарки*/
+/*[[g1]]*/
 
-/*------КВАДРАТНЫЕ АВАТАРЫ------*/
-[dir] .wcm_user_ava, [dir] .wcm_group_info_ava, [dir] .wcommunity_header_avatar img, [dir] .wcommunity_rows .wcommunity_avatar img
-{border-radius: 1px !important;}
+/*Опросы на сайтах*/
+/*[[g2]]*/
 
-/*-------------------------Н А С Т Р О Й К И   З А К О Н Ч И Л И С Ь------------------------*/
-
-/**/
 [dir] .social-plugins-widget .nav > .vk-tab > a:hover, [dir] .social-plugins-widget .nav > .vk-tab.active > a {
     background-color: #a6612a;}
 [dir] #vk-top-panel
@@ -2867,6 +2884,10 @@ background-attachment: fixed ;
 border:none}
 [dir] .wsubscribe_button .wsubscribe_do
 {background-color:rgba(0,255,0,.5)}
+[dir] .wcm_msg_wrap_unread
+{background-color: transparent}
+.wcm_msg_wrap_unread .wcm_msg
+{background-color:rgba(200,255,0,.5)}
 [dir] .wsubscribe_name
 {color:lime}
 [dir] #vk-comment-panel
@@ -2895,9 +2916,9 @@ border:none}
      █  █▄█       █  █  █▀   ▀      █    █     ▀▄ 
 █     █ █▀▄       █   █ ██▄▄   █     █ ▄  ▀▀▀▀▄   
  █    █ █  █      █  █  █▄   ▄▀ █    █  ▀▄▄▄▄▀    
-  █  █    █       ███▀  ▀███▀    █  █             
-   █▐    ▀                                 █▐              
-   ▐                                          ▐               
+  █  █    █       ███▀  ▀███▀    █ ▐█             
+   █▐    ▀                        █              
+   ▐                                             
 */
 [dir] #page_header_wrap, [dir] #page_header_cont .back /*v1.82.7*/
 {display:none}
@@ -2933,5 +2954,4 @@ body.dev a.dev_search_match_row, [dir] .dev_methods_list_desc
 {color:#beff00}
 [dir] .dev_match
 {background:#f9ff0061}
-/*v1.85.0*/
 }

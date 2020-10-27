@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        20201011.12.5
+@version        20201027.4.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,7 +25,7 @@ margin: 0px !important;
     #fsett, #_L8b, .gb_sb, .gb_Zc, .gb_xb, .gb_la, ._qgo, form#tsf .aajZCb, 
 .ls-wrap, .source-wrap, .results-container, .result, .gt-edit, .contribute-target, .swap-wrap, 
 .gb_z, .gb_E.gb_8f, .gb_F, .gb_Bb.gb_Bb, .gb_yb.gb_yb, .ft-icon-oval, .swap.jfk-button, 
-.WGYX8, .F9PbJd, .gt-cc-t, .gt-lc.gt-lc-mobile.show-as-one-card, .gt-lc.gt-lc-mobile .gt-cd, .gt-baf-word-selected, .gb_Nc, .notification-container, .kp-blk {
+.WGYX8, .F9PbJd, .gt-cc-t, .gt-lc.gt-lc-mobile.show-as-one-card, .gt-lc.gt-lc-mobile .gt-cd, .gt-baf-word-selected, .gb_Nc, .notification-container, .kp-blk, .gt-lc.gt-lc-mobile .gt-cd-cl {
  background-color: #282828 !important; 
 }
 
@@ -58,7 +58,7 @@ form#tsf .aajZCb {
 }
 
 a.gb_s.evenMoreLink, .gb_h:hover .gb_m, .gb_h:hover a, .gb_h:hover .gb_n, .R9zNe, .uWmgv, .gb_Jb.gb_Jb, .gb_Kb.gb_Kb, 
-.gb_Rb:hover, .gb_zb:hover, .ft-icon-oval:hover, .swap.jfk-button:hover {
+.gb_Rb:hover, .gb_zb:hover, .ft-icon-oval:hover, .swap.jfk-button:hover, .gt-lc.gt-lc-mobile .gt-cd-cl, .gt-lc.gt-lc-mobile .gt-cd-ncl {
  background-color: #333333 !important; 
 }
 
@@ -289,7 +289,7 @@ margin-bottom: -2px !important;}
 
 /* Fixes for the new layout */
 
-.gbmc, .iKjWAf {
+.gbmc, .iKjWAf, .gt-lc.gt-lc-mobile .gt-cc-r-i {
  background: #181818 !important; 
 }
 
@@ -1021,7 +1021,7 @@ box-shadow: 4px 4px 10px rgba(0,0,0,0.8) !important;
 }
 
 /* Main text color */
-div, td, font[color="#000000"], .qbtbha .qbtbtxt.qbclr, .gt-rw-span, .gt-syn-span, .gt-card-ttl-txt, #contribute-target, #source, ._IId, span.gb_3a, .gt-ct-text, #gb#gb span.gb_P, .ellip span, .gt-baf-word-clickable, #swml-loc, .result-dict-wrapper, .vk_bk,  .translation, .JolIg, #Wprf1b, .kno-ecr-pt { 
+div, td, font[color="#000000"], .qbtbha .qbtbtxt.qbclr, .gt-rw-span, .gt-syn-span, .gt-card-ttl-txt, #contribute-target, #source, ._IId, span.gb_3a, .gt-ct-text, #gb#gb span.gb_P, .ellip span, .gt-baf-word-clickable, #swml-loc, .result-dict-wrapper, .vk_bk,  .translation, .JolIg, #Wprf1b, .kno-ecr-pt, .gt-lc.gt-lc-mobile .gt-def-synonym-title, .gt-lc.gt-lc-mobile .gt-cd-cl, .gt-lc.gt-lc-mobile .cd-expand-label { 
     color: #999999 !important; 
 }
 
@@ -1216,7 +1216,7 @@ background: linear-gradient(#000000, #181818) !important;
     
 /* Inverted Images */   
         
-.gb_2b .gb_ga, .gb_1b .gb_ga, #qbi, .gb_fc, .gb_8 .gb_b, .gb_9 .gb_b, .jfk-button-img, .ita-kd-icon-span  {
+.gb_2b .gb_ga, .gb_1b .gb_ga, #qbi, .gb_fc, .gb_8 .gb_b, .gb_9 .gb_b, .jfk-button-img, .ita-kd-icon-span, .gt-lc.gt-lc-mobile .gt-ex-quote {
     filter: invert(1);
 }
     

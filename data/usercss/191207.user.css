@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mashehu
 @description    `A dark theme for the nextflow tower interface`
-@version        20201026.9.2
+@version        20201027.11.7
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,7 +25,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.card-header{
+.card-header {
     border-bottom-color: #585858;
     background-color: #434343;
 }
@@ -40,7 +40,7 @@ body {
     background-color: #3e3e3e !important;
 }
 .navbar-brand img,
-footer img{
+footer img {
     filter: invert(0.5);
 }
 .navbar {
@@ -56,22 +56,27 @@ footer img{
 #metrics-body .nav.nav-tabs {
     border-bottom-color: #585858;
 }
+#metrics-body .tab-content {
+    border: 1px solid #585858;
+    border-top: none;
+    margin-bottom: 1.25rem;
+}
 #main-tabs .nav-link.active,
 #metrics-body .nav-tabs .nav-link.active {
-    color:rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.87);
     background-color: #393939;
     border-color: #585858;
-    border-bottom-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0, 0, 0, 0);
 }
 .dataTables_wrapper .dataTables_filter,
-.dataTables_wrapper .dataTables_paginate .paginate_button{
-    color:rgba(255, 255, 255, 0.87) !important;
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: rgba(255, 255, 255, 0.87) !important;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
-    background: linear-gradient(180deg,#585858 0,#434343);
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: linear-gradient(180deg, #585858 0, #434343);
     border-color: #434343;
 }
-.dataTables_wrapper.no-footer .dataTables_scrollBody{
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
     border-bottom-color: #2e2e2ec9;
 }
 table.dataTable.display tbody tr.odd,
@@ -94,7 +99,7 @@ table.dataTable.cell-border tbody td {
 }
 .card svg {
     background-color: rgba(0, 0, 0, 0);
-        filter: invert(0.775);
+    filter: invert(0.775);
 }
 #metrics-body .plot-container svg {
 
@@ -110,19 +115,19 @@ table.dataTable.cell-border tbody td {
 #metrics-body .nav-link:hover {
     border-color: rgba(0, 0, 0, 0);
 }
-section.border-bottom{
-        border-bottom-color: #343434 !important;
+section.border-bottom {
+    border-bottom-color: #343434 !important;
 }
 section.bg-gray-200,
-footer.bg-gray-200{
-       background-color: #343434 !important;
+footer.bg-gray-200 {
+    background-color: #343434 !important;
 }
-.svg-shim.text-gray-200{
-           background-color: #212121 !important;
+.svg-shim.text-gray-200 {
+    background-color: #212121 !important;
     color: #343434 !important;
 }
-section.bg-gradient-light{
-    background-image: linear-gradient(180deg,#242424 0,#212121);
+section.bg-gradient-light {
+    background-image: linear-gradient(180deg, #242424 0, #212121);
 }
 a,
 a:hover {

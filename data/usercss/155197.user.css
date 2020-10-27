@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Plex Web App 3.31.1 and more!
+@name           Plex Web App 3.31.1 and more! Updated 10/26/2020
 @namespace      USO Archive
 @author         MrQuinn
-@description    `An all in one style for your web apps.If you use a complete download solution for movies, tv, & music... This theme works for all of the support apps used to download and manage .nzb & torrents. All themed for a integrated look and feel.I use ProxMox for 2 Linux servers (VM's) to run all of these apps to support my movie, tv & music libraries.`
-@version        201825.0.55
+@description    `An all in one style for your web apps.If you use a complete download solution for movies, tv, & music... This theme works for all of the support apps used to download and manage .nzb & torrents. All themed for a integrated look and feel.I use ProxMox for 2 Linux servers (VM's) to run all of these apps to support my movie, tv & music libraries.**** cleaned up code to validate clean ****`
+@version        20201027.1.5
 @license        CC0-1.0
 @preprocessor   uso
 @advanced text plexpy_ip "PlexPy Svr" "0.0.0.0"
@@ -11,11 +11,8 @@
 @advanced text apps_ip "Apps Svr" "0.0.0.0"
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://forums.plex.tv/"), url-prefix("https://app.plex.tv/"), domain("/*[[plexpy_ip]]*/"), domain("/*[[plex_ip]]*/"), domain("/*[[apps_ip]]*/")
-/* ========================  end server settings  ========================= 
-             # v.4.0 LightWood Plex Web App 3.31.1 and more
-========================== Global Settings ============================ */
-{
+@-moz-document domain("forums.plex.tv"), domain("app.plex.tv"), 
+  domain("0.0.0.0"), domain("0.0.0.0") {
 html,
 body,
 body.thumbnail,
@@ -24,9 +21,9 @@ div[id='content'],
 div[class^='plex-preloader-container'],
 div[class^='background-container'],
 div[class^='react-page-container AbstractReactPageView-wrapper-3OW78']{
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat !important;
-	color: #FFE081 !important;
-	border-color: #A48553 #C7B188 #C7B188 #A48553 !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat ;
+	color: #FFE081 ;
+	border-color: #A48553 #C7B188 #C7B188 #A48553 ;
 }
 
 .container,
@@ -45,7 +42,7 @@ div[class^='container-fluid header blog'],
 div[class^='Scroller-scroller-116Av Scroller-none-3S1mG'],
 div[class^='DashboardLibrariesMenu-librariesMenuScroller-3bHxF Scroller-vertical-2IRDv Scroller-scroller-116Av Scroller-vertical-2IRDv Scroller-auto-3EJeK'] {
 	padding: 10px;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png');
 	background-repeat: repeat-y;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -53,7 +50,7 @@ div[class^='DashboardLibrariesMenu-librariesMenuScroller-3bHxF Scroller-vertical
 }
 div[class^='Menu-menuPortal-20t-X tether-element tether-enabled tether-element-attached-top tether-element-attached-left tether-target-attached-bottom tether-target-attached-left'],div[id="sidebar-wrapper"] {
 	padding: 3px;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png');
 	background-repeat: repeat-y;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -80,8 +77,8 @@ div[class^='container-fluid sub-footer'],
 div[class="x-layout-split x-layout-split-west x-splitbar-h"],
 div[class="x-layout-split x-layout-split-south x-splitbar-v"],
 div[class^='ServerMenu-serverMenu-WnJ5u MenuContainer-menu-3Y-MI resetFont-resetFont-ekCtc MenuContainer-medium-2kxBA'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png')!important;
-	background-repeat: repeat !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png');
+	background-repeat: repeat ;
 }
 ul[id="cloud"], div[class="albuminfo"],div[id="albumheader"],div[id="track_wrapper"],div[class="table_wrapper"],
 div[class="links"],div[class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"],
@@ -117,7 +114,7 @@ div[class="_3Gtlwf _2XOYJe"] {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #fff;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') ;
 	background-repeat: repeat-y;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -133,7 +130,7 @@ div[class^='Signature UserSignature '],
 div[class^='Buttons'],
 div[class^='editor-help-text'],
 div[class^='editor editor-format-markdown editor-uploads editor-desktop'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg');
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -156,15 +153,15 @@ div[class^='container-fluid admin'],div[class="x-panel-body"],form[class="x-pane
 div[class="headerpanel"],div[class="x-panel-body x-panel-body-noborder"],div[class="x-panel-body x-panel-body-noheader"],
 div[class="leftpanel ps-container ps-theme-default"],div[class="x-panel-body x-panel-body-noheader x-panel-body-noborder"],
 div[class="logopanel"] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat !important;
-	color: #FFE081!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat ;
+	color: #FFE081;
 }
 span[class^='Breadcrumbs'] {
-	background: transparent !important;
+	background: transparent ;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
-	color: #FFE081 !important;
+	color: #FFE081 ;
 	font-size: 110%;
 }
 legend,
@@ -182,16 +179,16 @@ a:visited,
 span[class^='Ellipsis'],
 span[class^='Next'],
 span[class^='Previous'] {
-	color: #FFE081 !important;
-	background-color: transparent !important;
+	color: #FFE081 ;
+	background-color: transparent ;
 }
 a:hover {
-	color: #ffffff !important;
+	color: #ffffff ;
 	/* text-decoration: underline; */
 }
 var,
 code {
-	color: #006622 !important;
+	color: #006622 ;
 }
 h2 {
 	font-variant: small-caps;
@@ -212,14 +209,14 @@ h4 {
 }
 .item-title,
 .item-year {
-	background-color: #17212C !important;
-	box-shadow: 0 0 0 3px rgba(0, 0, 0, .2) !important;
+	background-color: #17212C ;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .2) ;
 	font-weight: bold;
-	padding-left: 7px !important;
-	padding-right: 7px !important;
+	padding-left: 7px ;
+	padding-right: 7px ;
 }
 .item-unwatched-label {
-	background-color: #17212C !important;
+	background-color: #17212C ;
 	font-variant: small-caps;
 }
 .text-success {
@@ -244,13 +241,13 @@ div[class="panel-heading ui-sortable-handle"],
 ul[class="nav nav-pills nav-stacked nav-quirk"],div[class="x-list-header"],
 h4[class="panel-title"],
 h4[class="panel-title text-success"] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') ;
 	background-color: #ffe081;
 	padding: 0 7 0 0px;
 }
 .help-block,
 small {
-	color: #fff !important;
+	color: #fff ;
 }
 .days {
 	color: #4d0000;
@@ -278,44 +275,44 @@ div[class^='ItemContent Category'],
 div[class^='CategoryDescription'],
 div[class^='Meta'],
 div[class^='Meta Meta-Discussion'] {
-	color: #fff !important;
+	color: #fff ;
 }
 div[class^='MetadataPosterCard-cardContainer-'] {
 	box-shadow: 0px 4px 15px -2px #000;
 	transition: transform 0.26s ease-out;
 }
 div[class^='PrePlayArtwork-imageContainer-'] + div {
-	top: 180px !important;
+	top: 180px ;
 }
 div[class^='MetadataPosterCard-cardContainer-']:hover {
 	transform: scale(1.05);
 }
 div[class^='PrePlayArtwork-imageContainer-'] {
 	background-color: rgba(0, 0, 0, 0.0);
-	z-index: -1 !important;
-	height: 0px !important;
+	z-index: -1 ;
+	height: 0px ;
 }
 div[class^='PrePlayArtwork-imageContainer-'] > div {
-	height: 100% !important;
-	position: fixed !important;
+	height: 100% ;
+	position: fixed ;
 	opacity: 0.3;
 	filter: blur(3px);
 }
 div[class^='PageContent-innerPageContent-'] {
-	background: rgba(0, 0, 0, 0.3) !important;
+	background: rgba(0, 0, 0, 0.3) ;
 }
 div[data-notify="container"] {
-	display: none !important;
+	display: none ;
 }
 /* ==================== Navigation Bar and Nav Bar Elements =============== */
 
 /* ========= hide sonarr logo ========== */
-.navbar-brand {display: none !important}
+.navbar-brand {display: none }
 /* ------------------------------------- */
 .nav-bar,
 .nav-header,
 .navbar-nav {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') ;
 	line-height: 40px;
 	background-repeat: repeat-x;
 }
@@ -323,8 +320,8 @@ a[id='plexpy-logs-btn'],
 a[id='plex-logs-btn'],
 a[id='plex-scanner-logs-btn'],
 a[id='notification-logs-btn'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg')!important;
-	color: #fff !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg');
+	color: #fff ;
 }
 a[aria-controls='tabs-0'],
 a[aria-controls='tabs-1'],
@@ -338,19 +335,19 @@ a[aria-controls='tabs-8'],
 a[aria-controls='tabs-9'],
 a[aria-controls='tabs-10'],
 div[class^='container-fluid'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg')!important;
-	color: #fff !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg');
+	color: #fff ;
 }
 .navbar-nav,
 .nav-bar-nav>li>a {
-	color: #350003 !important;
+	color: #350003 ;
 }
 .dropdown-menu{
 	min-width: 160px;
 	padding: 5px 0;
 	margin: 2px 0 0;
 	font-size: 14px;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') ;
 	border: 1px solid #350003;
 	border-radius: 3px;
 	box-shadow: 0 6px 12px #ccc;
@@ -366,7 +363,7 @@ div[class^='container-fluid'] {
 }
 .dropdown-menu>li>a:hover, .tablesorter-header, .tablesorter-headerAsc, .day {
 	color: #fff;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg');
 }
 .dropdown-poster-toggle .media-poster.placeholder-friend {
 	background-color: #350003;
@@ -395,21 +392,21 @@ ul[role="tablist"],.ui-tabs-anchor, div[id="manageheader"],
 .modal-header,div[class="configmessage"],
 div[class^='ModalContent-modalContent-2HIks'],
 div[class="ModalContent-modalContent-2HRs1"] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat!important;
-	color: #FFE081!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat;
+	color: #FFE081;
 	border-top: 1px solid;
 }
 .modal-content {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat!important;
-	color: #FFE081!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat;
+	color: #FFE081;
 }
 .modal-body,
 .submenu {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') ;
 }
 .modal-footer {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat!important;
-	color: #FFE081!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') fixed repeat;
+	color: #FFE081;
 	border-bottom: 1px solid #FFE081;
 }
 .modal-nav-list {
@@ -431,7 +428,7 @@ input[id='graph-days'] {
 	background-color: #350003;
 }
 select[id="rootDirSelect"] {
-	background-color: #350003 !important;
+	background-color: #350003 ;
 	color:#fff;
 }
 .selectize-group .form-control.selectize-control.single .selectize-input input {
@@ -446,7 +443,7 @@ div.input-group {
 }
 
 .input-group-addon, th, div[class="movie-tabs-card"]{
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg');
 }
 div.selectize-input.items.not-full {
 	background-color: #350003;
@@ -455,7 +452,7 @@ div.selectize-input.items.not-full {
 	height: 29px;
 	padding: 2px 28px 2px 32px;
 	background-color: #350003;
-	border-radius: 10px !important;
+	border-radius: 10px ;
 }
 .files ul li {
 	color: #EEE;
@@ -502,7 +499,7 @@ ul.media-info-file-list.well {
 /*================= Drop Down Menu Elements ========================*/
 
 select[id='refreshrate'] {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 }
 a.delete-btn.has-danger:hover {
 	color: yellow;
@@ -533,12 +530,12 @@ a.delete-btn.has-danger:hover:after {
 	padding-bottom: 4px;
 }
 ul.pagination {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 	color: #fff;
 }
 li.prev:disabled,
 li.next:disabled {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 	color: #fff;
 }
 /*====================== Buttons ==========================*/
@@ -548,15 +545,15 @@ span[class="ui-button-text"], div[id="log_table_paginate"]
 .btn-lg, .btn,input[class^='Button Primary CommentButton'], ul[class="TagCloud"],
 .btn-bright, .btn-larg, .btn-xs, .traktContainer, .btn-cal-subscribe, ul[class="nav nav-tabs"] {
 	border-color: #A48553 #C7B188 #C7B188 #A48553;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg') ;
 	border: 1px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 }
 .btn-lg:hover {
-	background-color: #ccc !important;
-	color: green !important;
+	background-color: #ccc ;
+	color: green ;
 	border: 1px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -672,13 +669,13 @@ button.remote-access-enable-btn.btn.btn-sm.btn-primary:hover {
 
 .dataTables_info,
 div.dataTables_length {
-	color: #350003 !important;
+	color: #350003 ;
 }
 .odd {
-	background-color: #835C3B !important;
+	background-color: #835C3B ;
 }
 .even{
-	background-color: #6F4E37 !important;
+	background-color: #6F4E37 ;
 }
 .card-handle {
 	display: inline-block;
@@ -689,11 +686,11 @@ div.dataTables_length {
 	text-align: center;
 }
 .table-card-header {
-	background: transparent !important;
+	background: transparent ;
 }
 .card-sortable,
 .table-card-back {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465670466/styles/parchment_bkg_2.jpg')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465670466/styles/parchment_bkg_2.jpg');
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -712,7 +709,7 @@ div.dataTables_length {
 .card, .sorting_asc, .sorting,.sorting_disabled, th[id="albumart"], th[class="middle"], th[id="artistname"],th[id="reldate"],th[id="type"], th[id="albumname"],th[id="status"]
 {
 	color: #350003;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652731/styles/gen_background.jpg') ;
 	border-top: 1px solid #ffe081;
 	border-bottom: 1px solid #0e0e0e;
 }
@@ -733,7 +730,7 @@ div.dataTables_length {
 	border-color: #ffe081;
 }
 .ul.list.contributer-list {
-	background-color: #F2F2F2 !important;
+	background-color: #F2F2F2 ;
 }
 .card-list {
 	background-color: #350003;
@@ -743,12 +740,12 @@ a.card:focus {
 	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465660031/styles/lt_wood_bkg.jpg');
 }
 .home-platforms-instance-list {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 }
 div.link {
 	color: #ffe081;
 	font-weight: bold;
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652691/styles/cellpic1.gif')!important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652691/styles/cellpic1.gif');
 	border-top: 1px solid #ffe081;
 	border-bottom: 1px solid #0e0e0e;
 }
@@ -760,12 +757,12 @@ div.link:hover {
 	border-bottom: 1px solid #0e0e0e;
 }
 div[class^='card card-announcement'] {
-	background: transparent !important;
+	background: transparent ;
 }
 input[class^='search-input'],
 input[type='search'],
 input[name='search'] {
-	background-color: #350003!important;
+	background-color: #350003;
 	border: 1px;
 	border-color: #A48553 #C7B188 #C7B188 #A48553;
 }
@@ -788,17 +785,17 @@ ul[class^='DataList CategoryList CategoryListWithHeadings'],
 li[class^='Item Item-Search'],
 ul[class^='article-list'],
 ul[class="nav nav-pills nav-stacked nav-quirk"] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') ;
 	padding: 5px;
 }
 div[class^='Item-Header DiscussionHeader'],
 div[class^='Item-Header CommentHeader'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465055874/cellpic2_sbkg9j.jpg') !important;
-	padding: 5px !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1465055874/cellpic2_sbkg9j.jpg') ;
+	padding: 5px ;
 }
 span[class^='AuthorInfo'],
 span[class^='MItem'] {
-	color: #ffe081 !important;
+	color: #ffe081 ;
 }
 /* ========================= Miscellanious ============================ */
 /* === Transmission 2.92 (14714) Web interface (if installed) === */
@@ -806,24 +803,24 @@ span[class^='MItem'] {
 div[id='toolbar'],
 div[id='statusbar'],
 div[class^='torrent_footer'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460677417/styles/main_nav_bg.gif') ;
 }
 div[id='statusbar'] {
-	color: #000 !important;
+	color: #000 ;
 }
 ul[id='torrent_context_menu'],
 ul[id='menu-item'],
 li[class^='ui-menu-item'] {
-	background-color: #000 !important;
+	background-color: #000 ;
 }
 div[class^='inspector-page ui-helper-hidden'],
 li[class^='torrent selected'],
 li[class^='torrent even selected'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') ;
 }
 li[class^='torrent'],
 li[class^='inspector_tracker_entry odd'] {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 }
 ul[class^='tier_list'] {
 	background-color: #ccc;
@@ -840,12 +837,12 @@ table[class^='tracker_stats'],
 div[class^='torrent_progress_details'],
 div[class^='torrent_peer_details'],
 div[class^='inspector_torrent_file_list_entry_progress'] {
-	color: #fff !important;
+	color: #fff ;
 }
 div[class^='tracker_host'],
 div[class^='torrent_name'],
 div[class^='inspector_torrent_file_list_entry_name'] {
-	color: #FFE081 !important;
+	color: #FFE081 ;
 }
 div[class^='inspector_group_label'] {
 	color: #fff;
@@ -855,18 +852,18 @@ div[id='inspector_trackers_list'],
 div[id='inspector-page-trackers'],
 div[id='inspector-page-peers'],
 div[id='inspector-page-files'] {
-	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') !important;
-	color: #fff !important;
+	background: url('http://res.cloudinary.com/mrquinn/image/upload/v1460652799/styles/trans_back.png') ;
+	color: #fff ;
 	padding: 5px;
 }
 /* === end Transmission 2.92 (14714) torrent upload page === */
 
 .graphs-instance {
-	background-color: #4d0000 !important;
+	background-color: #4d0000 ;
 }
 .close,
 .fa-remove {
-	color: #fff !important;
+	color: #fff ;
 }
 .remote-access-status-icon {
 	float: left;
@@ -920,10 +917,10 @@ div[id='inspector-page-files'] {
 }
 .label-default {
 	background-color: rgba(92, 109, 114, .62);
-	border-radius: 5px!important;
+	border-radius: 5px;
 }
 .label-default:hover {
-	background-color: #86B4BF!important;
+	background-color: #86B4BF;
 }
 /* =========== Wide-Screen Poster & Item Title Wrap Settings=============== */
 
@@ -945,14 +942,14 @@ div[class^='media-title media-heading'],
 div[class^='media-subtitle-1 media-heading secondary'] {
 	/* This controls whether the item titles are truncated by ellipses(...) Default for this is 'hidden' */
 	
-	text-overflow: inherit !important;
-	overflow: visible !important;
+	text-overflow: inherit ;
+	overflow: visible ;
 	/* This controls the text's alignment property this will Center the Title and Date under the item poster */
 	
-	Text-Align: Center !important;
+	Text-Align: Center ;
 	/* This controls the text-wrap on the title. Normal wraps as needed, Pre-wrap wraps as needed and on line break while preserving white space which is irrelevant in Plex. Default Value is 'nowrap' */
 	
-	white-space: normal !important;
+	white-space: normal ;
 }
 /* ============================     End of Style  =============================== */
 }

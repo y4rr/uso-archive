@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        20201012.12.43
+@version        20201027.2.20
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -4488,7 +4488,9 @@ background-position: center!important;
     .Barrage-main span[title*="鲨鱼"] {
         color: #f60!important;
     }
-    .Barrage-main span[title*="鲨鱼"]+span.Barrage-content {
+    .Barrage-main span[title*="鲨鱼"]+span.Barrage-content,
+    .Barrage-main .Barrage-icon--superAdmin+span[title*="鲨鱼"]+span.Barrage-content,
+    .Barrage-main .Barrage-icon--superAdmin+span+span[title*="鲨鱼"]+span.Barrage-content {
         color: red!important;
         font-weight: bold;
     }
