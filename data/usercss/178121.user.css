@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rob 'n Roll
 @description    `Dark theme for the Dutch NOS website. Makes it easier to read at night.Donker thema voor de NOS website. Maakt het makkelijker om 's avonds te lezen.`
-@version        20201012.21.8
+@version        20201026.17.35
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -154,6 +154,14 @@ html {
     .dialog_118bUelv.dialog_3d7nury1 button:Hover
      { background-color: #E61E14; }
 
+/* Cookie bar at the bottom */
+    #ccm_notification_wrapper
+     { background-color: #222 !important; }
+    #ccm_notification_wrapper #ccm_col_content_regular p:nth-child(2)
+     { color: #aaa !important; }
+    #ccm_notification_wrapper #ccm_col_content_regular a
+     { color: #E61E14; }
+
 /*************/
 /* FRONTPAGE */
 /*************/
@@ -210,6 +218,10 @@ html {
      { background-color: #333; border: solid 1px #555; color: #ddd; }
     .homepage aside#aside div.sidebarItem_3f-803Md button.button_8Hp44U6V
      { color: #ddd; }
+
+    /*Live kanalen / Je hoeft niets te missen*/
+    h3.title_1sQRVFgb
+     { border-bottom-color: #555; }
 
 /* MOST VIEWED VIDEO'S / MEEST BEKEKEN VIDEO'S */
 /* Achtergrond donker en de titel grijs maken */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheWhyOfPi
 @description    `This theme has various site fixes including a custom login screen.The theme was written by me and only me.The theme is an edit of wordpress' shitty base.This theme was a personal project so do not flame me for it being shitty or broken.`
-@version        20201023.22.12
+@version        20201026.20.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -319,7 +319,7 @@ body {
     from {
 
 
-        box-shadow:0px 0px 20px 7px #6d0000;
+        box-shadow:0px 0px 10px 2px #6d0000;
 
 
     }
@@ -491,6 +491,38 @@ background:#2222228c;
     padding: 0 19.5px 16px;
     position: relative;
 }
+#af-wrapper .user-online .avatar  {
+    box-shadow: 0px 0px 5px #82f338;
+    animation: pulsesmall3 1s infinite alternate;
+}
+#af-wrapper .post-author img.avatar {
+    animation: pulsesmall3 1s infinite alternate;
+    border: 0px;
+
+}
+@keyframes pulsesmall3 {
+    from {
+        box-shadow:0px 0px 0.5px 1px #82f338;
+    }
+    to {
+        box-shadow:0px 0px 11px 4px #82f338;
+    }
+}
+#af-wrapper .button-normal, #af-wrapper .title-element, #af-wrapper #forum-header, #af-wrapper #profile-header .background-avatar, #af-wrapper #profile-navigation, #af-wrapper input[type="radio"]:checked:before 
+{
+box-shadow: 5px 5px 2px 0px #4f0000;
+
+}
+#af-wrapper input[type="radio"]:focus, #af-wrapper input[type="checkbox"]:focus, #af-wrapper #profile-header {
+    border-color: #4f0000 !important;
+}
+table {
+    display: table!important;
+    background: #171717b8;
+    margin: 1rem;
+    animation: fadein 1s;
+}
+
 }
 
 @-moz-document url-prefix("https://fwkzt.com/login/") {

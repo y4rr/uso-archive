@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sae 190105
 @description    `Fully updated to work with Tumblr’s code update of July 2020, this is a simple yet elegant recolouring of the dashboard as to appease those who’d rather stray from the traditional blue. Heavily inspired by the Black Dashboard once offered by Tumblr back in 2010 to raise awareness for the BP Oil Spill, I also took the liberty of polishing it, working with more padding and spacing as to create a more relaxed viewing. This is accompanied by a unified font size and an altered line height.`
-@version        2020911.21.40
+@version        20201027.0.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1377,6 +1377,31 @@ b, strong {
     word-wrap: break-word!important;
     word-break: break-word!important;
 }
+
+
+.POCCe ._2PI5a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    background-color: var(--gray-25);
+    border-radius: 0 0 0 5px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid #151515;
+    border-top: 2px solid #151515;
+    opacity: 0;
+    transition: border-width .15s ease-in,opacity 0ms ease-in .15s;
+}
+
+
+
+.post-content-text, .post-content-text h4, .post-content-text h5, .post-content-text h6, .post .post_body, .post .post_body h4, .post .post_body h5, .post .post_body h6, .reblog-content, .reblog-content h4, .reblog-content h5, .reblog-content h6 {
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
 }
 
 @-moz-document url-prefix("https://www.tumblr.com/explore/") {
@@ -2326,6 +2351,96 @@ body {
 
 ._2_sZz ._1lMK6 {
     box-shadow: 0px 0px 0px 2px var(--accent) inset;
+}
+
+
+._2UBbb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 95%;
+}
+
+
+._1qvmC {
+    width: 105.5%;
+    margin-left:-18px;
+    height: 250px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+._2ZYXD {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right:20px;
+}
+
+
+._3MmnJ:first-of-type {
+    border-radius: 6px 6px 0 0;
+    padding-top:6px;
+}
+
+
+._3MmnJ {
+    background: var(--white);
+    padding-right:10px;
+    padding-left:10px;
+}
+
+
+._2Sr81 {
+    font-family: helvetica!important;
+    font-size: 12px!important;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--transparent-white-25);
+    color: var(--transparent-white-65);
+    transition: background-color .25s ease;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    margin-right:-25px;
+}
+
+
+._2UHoz {
+    margin-top: 20px;
+}
+
+
+.Iqf2- {
+    font-family: helvetica!important;
+    font-size: 14px!important;
+    font-weight: 400;
+    line-height: 1.333;
+    color: var(--white-on-dark);
+    margin: 0 10px;
+}
+
+
+._2irtZ {
+    width:560px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Qyeqn .SQoRW ._2bJLr {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: helvetica!important;
+    font-size: 14px!important;
+    font-weight: 700;
+    line-height: 1.333;
+    color: var(--black);
 }
 }
 
@@ -3763,6 +3878,104 @@ body {
     border-bottom: 0;
     line-height: 21px;
     height: 21px;
+}
+
+
+._2UBbb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 95%;
+}
+
+
+._1qvmC {
+    width: 105.5%;
+    margin-left:-18px;
+    height: 250px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.SVESZ {
+    margin-top: 20px;
+}
+
+
+._3MmnJ {
+    background: var(--white);
+    padding-left:12px;
+    padding-right:10px;
+}
+
+
+.SVESZ {
+    margin-top: 20px;
+}
+
+
+._3fXRP {
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right:21px;
+}
+
+
+._2VSuT {
+    display: flex;
+    margin: 10px 0;
+    width:562px;
+}
+
+
+._3MmnJ:first-of-type {
+    padding-top:10px;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.hxdeC {
+    font-family: helvetica!important;
+    font-size:12px!important;
+    font-weight: 400;
+    line-height: 1.5;
+    background: var(--transparent-white-25);
+    color: var(--transparent-white-65);
+    transition: background-color .25s ease;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.Hi_aW {
+    display: block;
+    font-family: helvetica !important;
+    font-size: 12px !important;
+    letter-spacing: 0px !important;
+    font-weight:lighter!important;
+}
+
+
+.NKGZ- {
+    font-family: helvetica !important;
+    font-size: 14px !important;
+    line-height: 1.333;
+    color: var(--white-on-dark);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+._1ZnMh, ._3bwqP ._1JZng ._3XB9y {
+    font-family: helvetica !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 1.5;
 }
 }
 

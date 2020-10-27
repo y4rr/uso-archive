@@ -1,16 +1,31 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.2 (β)
+@name           Compact Tube (White) v1.2.3 (β)
 @namespace      USO Archive
 @author         jakill02
-@description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.Предупреждение: это невозможно использовать на телефоне или планшете, это доступно только на компьютерах.ENG) - trying to imitate the old (classic) Youtube layout.Warning: This is not possible on a phone or tablet, this is only available on computers.`
-@version        20201021.14.56
+@description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
+@version        20201027.0.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.2 (β) */
+/* CompactTube (White) v1.2.3 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
+
+
+/*█▀▀▀▀▀▀▀▀▀▀▀▀▀   включение ТЁМНОЙ ТЕМЫ для шапки  /  enabling DARK THEME for the Header   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+  █                                                                                                                  █
+  █    ENG: To Enable elements, erase the " x " symbols in front of the parameters, to disable them, add " x " again.█ 
+  █    RU: для Включения элементов сотрите символы " x " перед параметрами, для отключения снова допишите " x ".     █
+  █                                                                                                                  █
+                                               /* switch ON dark Header / включить тёмную Шапку */
+ x  #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
+ x  #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
+        {background-color: #202020;          /* switch ON YouTube logo for dark Header / включить Логотип YouTube для тёмной шапки */
+        box-shadow: inset 0px -2px 0px 0px 
+        rgb(0, 0, 0); fill: #fff !important;}
+/* █         PS: after editing, do not forget to save changes / после редактирования не забудь сохранить изменения   █
+   █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ */
 
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
@@ -136,8 +151,8 @@ ytd-alert-with-button-renderer[is-displayed] {
 /* белый фон Основного блока и контур */
 ytd-section-list-renderer.ytd-two-column-search-results-renderer {
     min-width: 0;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 0px 1px rgb(226, 226, 226);}
+    background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 
 /* белый фон Дополнительного блока (Справа) и контур */
 -o-ytd-two-column-search-results-renderer.ytd-search {
@@ -210,7 +225,8 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);}
 
 
 /* Кнопки промотки Элемента: Запросы, похожие на...  в разделе: ПОИСК */
-.arrow.ytd-horizontal-card-list-renderer{width: 32px; height: 55px; border-radius: 24px; margin-top: 0px;}
+.arrow.ytd-horizontal-card-list-renderer{width: 32px; height: 55px; border-radius: 24px; margin-top: 0px;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(227, 227, 227, .1);}
 
 
 /* отступы снизу Заголовков и снизу Раскрывающего элемента: +Ещё 8 */
@@ -307,7 +323,7 @@ line-height: var(--yt-navbar-title-line-height, 2.4rem);}
 
 /* Позицианирование Фона Блока с Фильмом и стилизация блока - в Разделе " Поиск "*/
 ytd-movie-renderer.ytd-item-section-renderer {margin-top: var(--ytd-item-section-item-margin, 6px)/* 16px */;
-padding: 10px 0px 0px 0px; background-color: #f7f6f6; box-shadow: inset 0px 0px 2px 0px #e1e1e1;}
+padding: 10px 0px 0px 0px; background-color: var(--yt-playlist-background-item, #f7f6f6); box-shadow: inset 0px 0px 1px 0.1px var(--yt-spec-grey-2, #e1e1e1);}
 
 /* Кнопка [ КУПИТЬ ИЛИ ВЗЯТЬ НАПРОКАТ ] в Разделе " Поиск " - настройка */
 ytd-button-renderer.ytd-movie-renderer.style-primary.size-large {
@@ -418,7 +434,7 @@ ytd-horizontal-card-list-renderer.ytd-watch-card-section-sequence-renderer {widt
     color: var(--yt-spec-icon-inactive);
     margin: 9px 0px 0px 0px;
     padding: 11px 0px 0px 0px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);}
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(227, 227, 227, .1);}
 
 /* КОМПЕНСАТОР: сдвига элементов возникающий из за стилизации элемента: "Запросы, похожие на... [Дополнительный]" */
 ytd-grid-video-renderer.ytd-horizontal-card-list-renderer {
@@ -572,14 +588,14 @@ yt-img-shadow.ytd-playlist-custom-thumbnail-renderer.no-transition:after {margin
 
 /* компенсация Сдвига рекламных элементов: "YouTube Music Premium" */
 yt-music-pass-small-feature-info-renderer.ytd-grid-renderer  {
-    margin-top: 64px; /* Отступ от ВСЕХ элементов Сверху */
-    margin-bottom: 64px; /* Отступ от ВСЕХ элементов Снизу */
-    margin-left: 150px;} /* Сдвиг ПРАВОГО элемента */
+    margin-top: 63px; /* Отступ от ВСЕХ элементов Сверху 64*/
+    margin-bottom: 59px; /* Отступ от ВСЕХ элементов Снизу 64*/
+    margin-left: 0px;} /* Сдвиг ПРАВОГО элемента 150*/
 
 /* компенсация Сдвига рекламных элементов: "Нет рекламы/фоновый режим", "Офлайн-режим", "YouTube Music Premium" */
 yt-music-pass-small-feature-info-renderer.ytd-grid-renderer:not(:last-child) {
-    margin-right: -126px; /* Сдвиг СРЕДНЕГО элемента + сдвиг всей линии!*/
-    margin-left: 150px;} /* Сдвиг ЛЕВОГО элемента + сдвиг всей линии*/
+    margin-right: 24px; /* Сдвиг СРЕДНЕГО элемента + сдвиг всей линии! -126*/
+    margin-left: 0px;} /* Сдвиг ЛЕВОГО элемента + сдвиг всей линии 150*/
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
@@ -615,8 +631,8 @@ ytd-rich-item-renderer {
 /*========== + ===========*/
 /* Главная*/
 /* цвет блока, затенение(рамка), позиционирование */
-#contents.ytd-rich-grid-renderer {background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+#contents.ytd-rich-grid-renderer {background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: 10px;
     margin-left: 2px; /*2px*/
     padding: 32px 0px 0px 0px; /*32px 0px 0px 9px;*/
@@ -746,7 +762,7 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {width: 30px; /*def: 80*
 /* цвет блока, затенение(рамка), позиционирование */
 ytd-channel-list-sub-menu-renderer.ytd-section-list-renderer {
     display: block; padding: 6px 25%; /*умолчания: 16px 0;*/ border-bottom: 0px solid var(--yt-spec-10-percent-layer); 
-    position: relative; top: 1px; background: rgb(255, 255, 255); box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+    position: relative; top: 1px; background: var(--yt-spec-brand-background-primary); box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 margin-top: 7px;}
 
             /*интервал между Иконками (справа)*/
@@ -779,8 +795,8 @@ flex: 1; flex-basis: 1e-9px;}
 
 /*Библиотека(История) - Блок Статистики*/
 /* цвет блока, затенение(рамка), позиционирование  ($)*/
-ytd-profile-column-renderer {margin-left: 36px /*32px*/; background: rgb(255, 255, 255); position: relative; top: 8px; left: 0px; 
-box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+ytd-profile-column-renderer {margin-left: 36px /*32px*/; background: var(--yt-spec-brand-background-primary); position: relative; top: 8px; left: 0px; 
+box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 /*Библиотека(История) - Блок Статистики - Центровка Текста*/
 /* позиционирование */
 #items.ytd-profile-column-stats-renderer > *.ytd-profile-column-stats-renderer {padding-left: 6px; padding-right: 6px;}
@@ -819,8 +835,8 @@ ytd-text-header-renderer[header-style=text-header-renderer-style-bold] {
     font-weight: 500;
     -margin-left: 6px;
     padding: 10px 0px 10px 6px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 1px 1px 1px rgb(226, 226, 226);}
+    background-color: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 
 /* ХЗ, про запас */
 -o-#contents.ytd-browse-feed-actions-renderer {
@@ -835,8 +851,8 @@ ytd-two-column-browse-results-renderer[page-subtype=history] ytd-browse-feed-act
     margin-top: 23px; /*8px*/
     margin-right: 0px;
     -o-margin-bottom: 50px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: inset 0px 0px 1.5px 1px rgb(226, 226, 226);
+    background-color: var(--yt-spec-brand-background-primary);
+    box-shadow: inset 0px 0px 1.5px 1px var(--ytd-searchbox-legacy-button-border-color);
         border-radius: 8px;}
 
 /* История поиска - позиционирование текста */
@@ -876,8 +892,12 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  изменение ЦВЕТА  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
+/* Контур логотипа YouTube для ШАПКИ в Тёмной Теме */
+-o-.ytd-topbar-logo-renderer:nth-last-child(n+2) 
+{filter: drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4)) drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4));}
+
 /* цвет шапки */
-#container.ytd-masthead {background: #fff !important; -o-border-right: 1px solid var(--yt-spec-10-percent-layer);}
+#container.ytd-masthead {background-color: #fff ; -o-border-right: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* цвет иконки Меню ≡ */
 #guide-icon {color: #989898 !important;}
@@ -892,15 +912,23 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 #button.ytd-notification-topbar-button-renderer {color: #808080 !important;}
 
 /* цвет поля поиска */
-#container.ytd-searchbox {background-color: #fff !important; border-color: #CCCCCC !important;}
+#container.ytd-searchbox {background-color: rgba(255, 255, 255, .06) !important; border-color: rgba(111, 110, 110, .4) !important;
+-o-border: 1px solid #1c62b9;  box-shadow: inset 0px 0px 0px 0px var(--ytd-searchbox-legacy-border-shadow-color);}
+/* background-color: #fff !important; border-color: #CCCCCC !important; */
+
 /* цвет поля поиска - КНОПКА*/
-#search-icon-legacy.ytd-searchbox {border-color: #CCCCCC !important; background-color: #F8F8F8 !important;}
+#search-icon-legacy.ytd-searchbox {border-color: rgba(110, 110, 110, .3) !important; background-color: rgba(204, 204, 204, .15) !important;}
+/* border-color: #CCCCCC !important; background-color: #F8F8F8 !important; */
 
 /* цвет шрифта в поле поиска */
-input.ytd-searchbox {color: #000 !important;}
+input.ytd-searchbox {color: rgb(145, 145, 145)! important; -o-filter: invert(15%);} /*(V)*/
+-o-input {color: var(--google-grey-500) !important; -o-filter: invert(0%);}
+-o-#container.ytd-searchbox input.ytd-searchbox {color: rgb(128, 128, 128) !important; -o-filter: invert(0%);}
 
 /* цвет иконки Лупы в поле поиска */
 yt-icon.ytd-searchbox  {color: #919191 !important;} 
+
+
 
 /* ======= Старый цвет логотипа YouTube (Тёмный) ==================== */
 /* цвет логотипа Ютуба - заливка */
@@ -911,12 +939,22 @@ yt-icon.ytd-searchbox  {color: #919191 !important;}
 /* ======= Новый (обычный) цвет логотипа YouTube ==================== */
 /*YouTube logo - Красное*/
 #logo-icon-container > svg > g > g:nth-child(1) > path {fill: #f00 !important;}
-/*YouTube - текст в Логотипе   [оригинальные Чёрный: var(--yt-spec-static-brand-black) и Белый: var(--yt-spec-wordmark-text)] */
-#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {fill: #212121 !important;}
+
+/*YouTube - текст в Логотипе   [оригинальные Чёрный: var(--yt-spec-static-brand-black) и Белый: var(--yt-spec-wordmark-text)] #212121 */
+#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {fill: #212121 ; 
+    -o-stroke: #000000a6; stroke-width: 0.2rem; -o-stroke-linecap: square; -o-stroke-linejoin: miter;}
+
+
+
 /* Цвет Кода Страны (com, ru и тд) */
-#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px;}
+#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px; -o-filter: invert(30%)}
 /* Цвет Клавиатуры в поле поиска */
-ytd-masthead[dark] .gsst_e {filter: invert(80%);}
+ytd-masthead[dark] .gsst_e {filter: invert(65%);} /*80%*/
+/* Цвет Клавиатуры в поле поиска (сокращённый плеер) */
+.gsok_a {
+background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) 
+no-repeat center; display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(65%)}
+a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0px;}
 
 
 /*цвет ников в комментах*/
@@ -934,8 +972,8 @@ padding-right: 6px; padding-left: 6px; background-color: #008BEC;}
             padding: 2px 4px 2px 4px; font-size: 1.1rem; margin-left: 5px;}
 
 /* Оформление Бэйджей: [НОВИНКА], [СУБТИТРЫ], [ОГРАНИЧЕННЫЙ ДОСТУП] и тд. */
-.badge-style-type-simple.ytd-badge-supported-renderer {color: #676767 !important; background: #f7f6f6 /*#E8E8E8*/ !important; 
-    box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) ; text-transform: uppercase; padding: 2px 4px 2px 4px; font-size: 1.1rem;}
+.badge-style-type-simple.ytd-badge-supported-renderer {color: var(--yt-spec-text-secondary, #676767) !important; background: var(--yt-spec-badge-chip-background, #f7f6f6) /*#E8E8E8*/ !important; 
+    box-shadow: 0px 0px 0px 1px rgba(112, 112, 112, .55) /*rgb(204, 204, 204)*/ ; text-transform: uppercase; padding: 2px 4px 2px 4px; font-size: 1.1rem;}
 /* Позиционирование Бэйджей: [СУБТИТРЫ] под видео */
 #video-badges.ytd-grid-video-renderer {
     margin-top: 4px;
@@ -980,13 +1018,13 @@ ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
         padding: 0px 0px 0px 0px; 
         font-size: 1.2rem ;
         text-transform: uppercase;
-        box-shadow: inset 0px 0px 0px 1px rgb(204, 204, 204);}
+        box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, .4);} /*rgb(204, 204, 204)*/
 
         /* кнопка [НАПОМНИТЬ] сырой вариант - ОТКЛЮЧЕНО */
         -o-ytd-toggle-button-renderer {
             padding: 0px 0px 0px 0px; 
             font-size: 1.2rem ;
-            box-shadow: inset 0px 0px 0px 1px rgb(204, 204, 204); 
+            box-shadow: inset 0px 0px 0px 1px rgb(204, 204, 204); /*rgb(204, 204, 204)*/
             text-transform: uppercase;
             vertical-align: middle;}
 
@@ -1022,10 +1060,10 @@ ytd-thumbnail-overlay-endorsement-renderer {background-color: rgba(0, 0, 0, .39)
 
 /*цвет Бэкграунда на каналах*/
 ytd-browse[page-subtype=channels] {
-    background: #F1F1F1 !important;}
+    background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 /*цвет Бэкграунда в Тренадах, Подписках, Библиотеке(Истории), на Главной странице*/
-ytd-browse {background: #F1F1F1 !important;}
+ytd-browse {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 /*цвет Бэкграунда вообще ВЕЗДЕ - тестовый цвет!!!*/
 -o-ytd-page-manager > *.ytd-page-manager {background: #60bbc1 !important;}
@@ -1034,10 +1072,10 @@ ytd-browse {background: #F1F1F1 !important;}
 -o-ytd-watch-flexy[flexy_][is-two-columns_] #columns.ytd-watch-flexy {background: #998383 !important;}
 
 /*Цвет Бэкграунда на Страницас с Видео v2 - всё пространство*/
-ytd-page-manager > *.ytd-page-manager {background: #F1F1F1 !important;}
+ytd-page-manager > *.ytd-page-manager {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 /* Дополнительный Цвет Бэкграунда в разных меню (Снизу) */
-ytd-app {background: #F1F1F1 !important;}
+ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
@@ -1070,7 +1108,7 @@ span.yt-view-count-renderer {color: rgb(102, 102, 102); font-weight: bold !impor
 /* Квадратная иконка Количества видео по оповещениям на Колокольчике и Цвет иконки */
 #notification-count.ytd-notification-topbar-button-renderer {position: absolute; top: 3px; right: 0;
 color: rgb(255, 255, 255); background-color: rgb(255, 0, 0); width: 16px;/*18px*/ height: 16px;/*18px*/ 
-border-radius: 5%; line-height: 16px/*18px*/; font-size: 11px/*10px*/; text-align: center; box-shadow: 0px 0px 0px 1px ;}
+border-radius: 5%; line-height: 16px/*18px*/; font-size: 11px/*10px*/; text-align: center; box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .75);}
 
 /*квадратные аватары в комментах*/
 #author-thumbnail.ytd-comment-renderer yt-img-shadow.ytd-comment-renderer {border-radius: 0% !important;}
@@ -1106,9 +1144,8 @@ border-radius: 0%; background-color: transparent; overflow: hidden; border: 1px 
 #author-photo.yt-live-chat-text-message-renderer {display: block; margin-right: 16px; overflow: hidden; border-radius: 0%;}
 
 /* информация */
-#copyright:before {background-color: #fff; display: block; position: relative; top: 19px; 
-font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
-
+#copyright:before {background-color: var(--yt-spec-brand-background-primary); display: block; position: 
+relative; top: 19px; font-size: 1.2rem; content: "Compact Tube (White) by Jakill02 based on style by Funny.";}
 
 /* БОРДЮР между блоками: - убрать все Нижние Бордюры */
 /*  -o-ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype=history]):not([page-subtype=memberships-and-purchases]):not([page-subtype=ypc-offers]) #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer):not([item-dismissed]).ytd-section-list-renderer {border-bottom:0px solid var(--yt-spec-10-percent-layer);} */
@@ -1143,12 +1180,12 @@ paper-button.ytd-button-renderer {padding: 0.5em 1.2em 0.5em 1.2em;} /*var(--yt-
 
 /* Автовоспроизведение (Кнопка-переключатель) - цвет, позиция, форма - Кнопки*/
 .toggle-button.paper-toggle-button {position: absolute; top: 1px; left: 1px; right: auto; height: 12px; width: 12px;
-border-radius: 50%; box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.2); transition: -webkit-transform linear .08s, 
+border-radius: 50%; box-shadow: inset 0 0px 0px 0.0px var(--ytd-searchbox-legacy-button-hover-border-color); transition: -webkit-transform linear .08s, 
 background-color linear .08s; transition: transform linear .08s, background-color linear .08s; will-change: transform;
-background-color: #fff; margin-top: 4px; /*test*/} /* background-color: var(--paper-toggle-button-unchecked-button-color, var(--paper-grey-50)); */
+background-color: var(--yt-spec-general-background-a); margin-top: 4px; /*test*/} /* background-color: var(--paper-toggle-button-unchecked-button-color, var(--paper-grey-50)); */
 /* Автовоспроизведение (Кнопка-переключатель) - цвет Фона */
 .toggle-bar.paper-toggle-button {position: absolute; height: 100%; width: 85%; border-radius: 8px; 
-    pointer-events: none; opacity: 0.2; transition: background-color linear .08s; background-color: #000; margin-top: 4px; /*test*/}
+    pointer-events: none; opacity: 0.48; transition: background-color linear .08s; background-color: #595959; margin-top: 4px; /*test*/}
 
 /* цвет и размер шрифтов в Левом меню: "ПОДПИСКИ" и "ДРУГИЕ ВОЗМОЖНОСТИ" */
 #guide-section-title.ytd-guide-section-renderer {
@@ -1212,13 +1249,22 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 -o-.ytp-chrome-controls .ytp-play-button svg {display: flex; flex-direction: column; width: 100%; height: 2.961em; 
     -o-margin-top: -38px; /* for testing */ -o-background-color: #f73384; /* for testing */} /*другой вариант: width: 3.8em; height: 3em; */
 
+/* исправление бага с полем Поиска ДО наведения Мыши */
+#search-input.ytd-searchbox-spt input {
+    background-color: transparent; border: none; box-shadow: none; color: inherit;
+    font-family: 'Roboto','Noto',sans-serif; font-size: 16px; font-weight: 400;
+    line-height: 22px; /* 24px */ margin-left: 0px; /* 4px */ max-width: 100%;
+    outline: none; text-align: inherit; width: 100%; flex: 1; flex-basis: .000000001px;}
+/* исправление бага с полем Поиска ПОСЛЕ наведения Мыши */
+input#search.gsfi.ytd-searchbox {-o-background-color: #02ff35/*test*/; position: relative; top: 1px; left: 0px;}
+
 /* пространство ниже столбца Видео Справа (отступ для панели задач Виндоус) */
 ytd-watch-next-secondary-results-renderer:after {
     width: auto;
     height: 48px;
     content: " ";
-    background: #F1F1F1;
-    box-shadow: 0px 3px 0px 3px #F1F1F1; /* test #fb0f0f */
+    background: var(--yt-spec-general-background-b);
+    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> */
@@ -1227,8 +1273,8 @@ ytd-item-section-renderer:last-child:after {
     width: auto;
     height: 40px;
     content: " ";
-    background: #F1F1F1;
-    box-shadow: 0px 3px 0px 3px #F1F1F1; /* test #fb0f0f */
+    background: var(--yt-spec-general-background-b);
+    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* Исправление Размера Миниатюр при просмотре Комментариев в ТВОРЧЕСКОЙ СТУДИИ */
@@ -1246,7 +1292,7 @@ img#img {min-height: 100% ; min-width: 100%; max-height: 100%; max-width: 100%;}
 
 /*избранное канала - Значки*/
 yt-img-shadow.ytd-mini-channel-renderer {margin-right: 6px; height: 34px; width: 34px; 
-box-shadow: 0px 0px 0px 1px rgba(204, 204, 204, .6) ;} /*горизонтальный отступ и размер значков*/
+box-shadow: 0px 0px 0px 1px rgba(164, 164, 164, .3) /*rgba(204, 204, 204, .6)*/;}   /* - горизонтальный отступ и размер значков*/
 
 /*вертикальный отступ кнопки (Вы подписаны) */
 #channel-info.ytd-mini-channel-renderer {margin-bottom: 0px;} /*3px;*/ 
@@ -1256,7 +1302,7 @@ box-shadow: 0px 0px 0px 1px rgba(204, 204, 204, .6) ;} /*горизонталь�
 #items.ytd-vertical-channel-section-renderer > *.ytd-vertical-channel-section-renderer:not(:first-child) {padding-top: 0px;} /*6px;*/
 
 /*кнопка Подписки - Контур (Большие ?!!!)*/
-paper-button.ytd-subscribe-button-renderer {border-radius: 2px; box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) ;}
+paper-button.ytd-subscribe-button-renderer {border-radius: 2px; box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5) ;/* rgb(204, 204, 204) */}
 /*кнопка Подписки (ВСЕ ?!!!) - позиционирование - старый вариант, отключено*/
 -o-paper-button.ytd-subscribe-button-renderer {border-radius: 2px; position: relative; top: -16px; left: 40px; 
 box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) ;}
@@ -1268,7 +1314,7 @@ ytd-subscribe-button-renderer[button-style=COMPACT_GRAY] paper-button.ytd-subscr
     position: relative;
     top: -15px;
     left: 41px;
-    box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) ;
+    box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5); /* rgb(204, 204, 204) */
     padding: 2px 8px 2px 8px; font-size: 1.1rem;/*xx-small;*/ text-transform: none;}
 /* старый вариант(X) - кнопка Подписки (маленькие, в избранных каналах на главной странице канала) - позиционирование, (размер) и размер шрифта */
     -o-ytd-subscribe-button-renderer[button-style=COMPACT_GRAY] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_GRAY][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer {
@@ -1519,8 +1565,8 @@ position: relative; top: 0px; left: 5px;}
     position: relative;
     z-index: 1;
     min-width: 0;
-    background: rgb(255, 255, 255);
-    -o-box-shadow: 0px 0px 0px 1px rgb(226, 226, 226);
+    background: var(--yt-spec-brand-background-primary);
+    -o-box-shadow: 0px 0px 0px 1px rgba(178, 178, 178, .27);
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);
 }
@@ -1529,11 +1575,11 @@ position: relative; top: 0px; left: 5px;}
 /* цвет блока, затенение(рамка), Бордюр, позиционирование */
 #tabs-inner-container.ytd-c4-tabbed-header-renderer {
     /* background-color: var(--yt-lightsource-section1-color); */
-    background: rgb(255, 255, 255);
+    background: var(--yt-spec-brand-background-primary);
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);
     border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-    box-shadow: 0px 0px 1px 0px rgb(226, 226, 226);}
+    box-shadow: 0px 0px 1px 0px var(--ytd-searchbox-legacy-button-border-color);}
 
 
 /*центровка блока с Аватарками избранных каналов (на странице Каналов)*/
@@ -1544,9 +1590,9 @@ ytd-browse-secondary-contents-renderer {
     padding-right: 0px;
     margin-top: -2px;
     margin-right: -1px; /*больше чем -1 нельзя, видно край другого видео*/
-        background: rgb(255, 255, 255);
+        background: var(--yt-spec-brand-background-primary);  /*rgb(255, 255, 255)*/
         position: relative; top: 10px; left: 10px;
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);} /* var(--yt-spec-general-background-c); -o-color: rgba(0, 0, 0, .50);} */
 
 /*центровка блока с Аватарками избранных каналов v2 (на странице Каналов)*/
 /* позиционирование */
@@ -1579,17 +1625,17 @@ ytd-channel-featured-content-renderer {
     display: block;
     padding: 12px 0 24px; /*12px 0 24px*/
     -o-border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-    background: rgb(255, 255, 255);
+    background: var(--yt-spec-brand-background-primary);
     position: relative; top: 0px;/*10px, 6px*/ left: 0px;
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 
 /*Блок - Видео превью канала - как Гость (на странице Каналов)*/
 /* цвет блока, затенение(рамка), позиционирование ($) */
 ytd-channel-video-player-renderer {
     padding: 24px 0 24px 0;
-    background: rgb(255, 255, 255);
+    background: var(--yt-spec-brand-background-primary);
     position: relative; top: 0px;/*10px, 6px*/ left: 0px;
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+    -o-box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color); /* не нужно, заменяется от: НОВЫЙ ! Блок - всей колонки гор.строк видео и Верт.столбцов */
     overflow: auto;}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -1610,8 +1656,9 @@ ytd-channel-video-player-renderer {
 /* цвет блока, затенение(рамка), позиционирование */
 /* !!! - ТЕСТ - !!! Основное  (тут было .ytd-item-section-renderer - убрал точку и добавил #contents) */
     #contents ytd-item-section-renderer {
-    background: rgb(255, 255, 255); 
-        box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+    background: var(--yt-spec-brand-background-primary); 
+                                -o-background:  var(--ytd-searchbox-legacy-button-border-color); /* TEST */
+        box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
         position: relative; top: 0px;
         margin-top: 8px; 
         margin-bottom: -8px; 
@@ -1682,8 +1729,8 @@ ytd-search-sub-menu-renderer {
 
 /* ВИДЕО на КАНАЛЕ  ($) */
 ytd-grid-renderer {
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 1px 1px 1px rgb(226, 226, 226);
+    background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 1px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: -12px; /*-5px, -4px*/
     -o-position: relative; top: -5px; left: 0px; /* top: -5px; left: 0px; - отключаю, сдвигает сетку везде*/
     display: -ms-flexbox;
@@ -1712,8 +1759,8 @@ ytd-channel-sub-menu-renderer {
     -webkit-align-items: center;
     align-items: center;
     position: relative; top: 2px; left: 0px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+    background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 
 /* Меню: - Загрузки, ВОСПРОИЗВЕСТИ ВСЁ, Все плейлисты, Интересные Каналы - пизиционирование*/
 /* (в разделах на Канале: ВИДЕО, ПЛЕЙЛИСТЫ, КАНАЛЫ) */
@@ -1767,7 +1814,7 @@ ytd-backstage-post-thread-renderer[enable-borders-on-community] {
     padding: 16px;
     margin-top: -25px; /*-25px;*/
     -o-position: relative; top: -14px; left: 0px; /*top: -14px; left: 0px;*/
-    background: rgb(255, 255, 255);}
+    background: var(--yt-spec-brand-background-primary);}
 
 /* позицианирование Меню - Оставить Комментарий (в виде Иконки) */
 ytd-comment-action-buttons-renderer.ytd-backstage-post-renderer #reply-button-end.ytd-comment-action-buttons-renderer {
@@ -1808,11 +1855,11 @@ ytd-comments-header-renderer {
 
 /* цвет текста "Отставьте Комментарий" в Активном поле для ввода */
 #contenteditable-root.yt-formatted-string[aria-label].yt-formatted-string:empty:before {
-color: rgb(178, 178, 178);}
+color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
 
 /* Написание Комментария - и Отступы текста внутри поля для Комментариев (активный) */
 #contenteditable-root.yt-formatted-string {
-    border: 1px solid rgb(198, 198, 198);
+    border: 1px solid rgba(158, 158, 158, .5); /*rgb(198, 198, 198)*/
     border-radius: 2px;
     position: relative; top: 4px;
     max-height: var(--contenteditable-root-style_-_max-height);
@@ -1823,7 +1870,7 @@ color: rgb(178, 178, 178);}
 
 /* Отставьте Комментарий (не активный) + Отступы */
 #placeholder-area.ytd-comment-simplebox-renderer {
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid rgba(158, 158, 158, .3); /*rgb(224, 224, 224)*/
     position: relative; top: 4px;
     border-radius: 2px;
     padding: 4px 3px 6px 4px;}
@@ -1878,8 +1925,10 @@ color: rgb(178, 178, 178);}
     -ms-flex: 2;
     -webkit-flex: 2;
     flex: 2;
-        background: rgb(255, 255, 255);
-    box-shadow: inset 0px 0px 1px 1px rgb(226, 226, 226);
+        background: var(--yt-spec-brand-background-primary);
+        border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+        border-right: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+    -o-box-shadow: inset 0px 0px 0px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: -17px;}
 
 /* Правое поле Информации ($) */
@@ -1896,8 +1945,10 @@ color: rgb(178, 178, 178);}
     flex-basis: 1e-9px;
     padding-right: 8px;
     padding-left: 8px;
-        background: rgb(255, 255, 255);
-        box-shadow: inset 0px 0px 1px 1px rgb(226, 226, 226);
+        border-left: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+        border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color);
+        background: var(--yt-spec-brand-background-primary);
+        -o-box-shadow: inset 0px 0px 0px 1px var(--ytd-searchbox-legacy-button-border-color);
         margin-top: -17px;}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
@@ -1905,19 +1956,19 @@ color: rgb(178, 178, 178);}
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  СТРАНИЦА ВИДЕО  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 /* Блок комментариев на странице с Видео - ПЕРЕДЕЛАТЬ - НЕ ТО, портит Тренды*/
 ytd-comments {
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+    background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: -14px; /*31px,v2 -14px*/ margin-left: 80px; /*80px*/ margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Описанием Видео [не включать position: relative: появляются доп. Скроллбары] ($)*/
 .style-scope ytd-video-secondary-info-renderer {
-        background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+        background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 -o-position: relative; -o-top: 21px; -o-left: 0px;
     margin-top: 21px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Названием Видео*/
-ytd-video-primary-info-renderer {background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
+ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 
@@ -1931,7 +1982,7 @@ ytd-watch-flexy[theater] #secondary.ytd-watch-flexy, ytd-watch-flexy[fullscreen]
     margin-left: 15px;
     margin-right: 88px; /*100px ,v2: 88px*/
     position: relative; right: 14px; /* 14px -  TEST */
-        -o-background: rgb(255, 255, 255);
+        -o-background: var(--yt-spec-brand-background-primary);
         -o-box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
     -o-flex-direction: column;}
 /* дополнительный блок для Видео справа, когда оно выстраиывается в список снизу при уменьшении окна */
@@ -1945,8 +1996,8 @@ ytd-watch-next-secondary-results-renderer {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-       background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+       background: var(--yt-spec-brand-background-primary);
+    box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
 
 
 /* Позиционирование видео в Блоке на странице с Видео */
@@ -2090,10 +2141,10 @@ ytd-expander.ytd-video-secondary-info-renderer {
 
 /* Кнопка ОТМЕНА - Рамка */
 #cancel-button.ytd-commentbox {
-    box-shadow: inset 0px 0px 0px 1px rgb(204, 204, 204);}
+    box-shadow: inset 0px 0px 0px 1px rgba(140, 140, 140, .5);} /*rgb(183, 183, 183)*/
 /* Кнопка ОСТАВИТЬ КОММЕНТАРИЙ - Рамка */
 #submit-button.ytd-commentbox {
-    box-shadow: inset 0px 0px 0px 1px rgb(183, 183, 183);}
+    box-shadow: inset 0px 0px 0px 1px rgba(134, 134, 134, .5);} /*rgb(183, 183, 183)*/
 /* ОБЕ кнопки - ПОЗИЦИАНИРОВАНИЕ, размер шрифта*/
 #cancel-button.ytd-commentbox, #submit-button.ytd-commentbox {
     margin-left: 8px;
@@ -2153,7 +2204,7 @@ ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {curso
 /* Размер и позиционирование блока с инормацией о контенте под Видео (игры, фильмы и тд)*/
 #contents.ytd-rich-metadata-row-renderer *.ytd-rich-metadata-row-renderer {
 margin-top: 8px; margin-bottom: 8px; margin-left: 0px; margin-right: 10px;
-max-height: 80px; width: 90px; max-width: 400px; box-shadow: 0px 0px 1px 1px rgb(226, 226, 226); 
+max-height: 80px; width: 90px; max-width: 400px; box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color); 
 border-radius: 5px !important;}
 
 /* блок с инормацией о контенте под Видео (игры, фильмы и тд)*/
@@ -2198,14 +2249,14 @@ ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] y
     margin-right: -25px;
     margin-top: -1px;}
 /* Лайв Чат - под Видео: Цвет блока Названия и (Информация о ЛайвЧате) */
-ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: rgb(255, 255, 255);}
+ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: var(--yt-spec-brand-background-primary);}
 
 /* ================= чёрный ПЛЕЙЛИСТ под видео ================= */
 /* Цвет Бэкграунда и Рамки Плейлиста под Видео */
 .playlist-items.ytd-playlist-panel-renderer {
 background-color: #424242; /* var(--yt-spec-general-background-a); , моё: #222222 */
 height: 100%; overflow-y: auto; padding-top: 4px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px;
-box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);}
+box-shadow: 0px 0px 1px 1px rgba(178, 178, 178, .27);}
 
 /* Цвет Бэкграунда Роликов в Плейлисте под Видео */
 ytd-playlist-panel-video-renderer {background-color: #222222;} /*#131313*/
@@ -2384,7 +2435,10 @@ border-radius: 0%;background-color: transparent;overflow: hidden;}
 #grid-container.ytd-expanded-shelf-contents-renderer > *.ytd-expanded-shelf-contents-renderer:not(:last-child) {margin-bottom: 6px; /*13px, второй вариант 6px*/}
 
 /*Кнопки промотки горизонтальных списков видео*/
-.arrow.yt-horizontal-list-renderer {width: 32px; height: 55px; border-radius: 24px; margin-top: 10px;}
+.arrow.yt-horizontal-list-renderer {width: 32px; height: 55px; border-radius: 24px; margin-top: 10px;  
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(227, 227, 227, .1);}
+
+
 /*(Кнопки промотки горизонтальных списков видео) : - Исправление косяка youTube нерабочей половины левой кнопки*/
 #contentContainer.app-drawer[swipe-open].app-drawer::after {position: fixed; top: 0; bottom: 0; left: 100%; visibility: visible; width: 7px;}
 
@@ -2483,7 +2537,7 @@ yt-chip-cloud-chip-renderer {
 /*отступ текста в поле поиска - Вправо*/
 #container.ytd-searchbox {
 
-    padding: 0 4px; /*4px*/
+    padding: 0 4px; /*0 4px*/
 
 }
 

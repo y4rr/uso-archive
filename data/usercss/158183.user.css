@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201018.1.53
+@version        20201027.0.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.18 ********************** */
+/* Ameblo Management ver.2020.10.27 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -1724,493 +1724,234 @@ time.tx_grayA {
     display: flex;
     flex-direction: column; }
 
+#commnetList #ucsMain {
+    background: #fafafa; }
+
 #ucsMainLeft {
     width: 740px;
     margin: 15px auto 0; }
 
-/* 上部 **************************************** */
+#ucsMainLeft .commentList {
+    padding: 0 0 1rem; }
+
+/* メイン選択スイッチ =共通=*/
+.tabs {
+    overflow: hidden; }
+
+.tabs__item {
+    background: #fff; }
+
+.tabs__link {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 0 0; }
+
+.commentList .tabs__item.is-active {
+    background: #2196f3; }
+
+/* ページヘッダー ******************************** */
 #ucsMainLeft h1 {
     margin-bottom: 12px; }
 
-.commentSetting {
-    margin-bottom: 6px; }
-
-.commentSetting__item {
-    font-size: 14px; }
-
-.peakNotes {
-    font-size: 11px;
-    margin-bottom: 0;
-    width: 500px; }
-
-.peakNotes br {
-    display: none; }
-
-.cmtNotes {
-    font-size: 13px;
-    margin: -20px 0 15px; }
-
-/* 月選択行 */
-#entrySort {
-    padding: 7px 0 6px 20px;
-    background: #dce2e5; }
-
-#entryYear {
-    margin-right: 20px; }
-
-#year {
-    display: inline-block;
-    margin: 2px 0 -2px; }
-
-#yearText {
-    display: inline-block;
-    margin: 3px 2px -3px 2px !important; }
-
-#entryYear img.parrow {
-    vertical-align: -4px; }
-
-#entryMonth {
-    display: flex;
-    justify-content: space-between;
-    width: 570px;
-    font-size: 16px;
-    margin-top: 3px;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #fff; }
-
-#entryMonth li {
-    padding: 0;
+/* 年月選択・設定 ******************************** */
+.navigation {
+    position: absolute;
+    top: 24px;
+    left: 360px;
+    width: 360px;
     border: none; }
 
-#entryMonth li a {
-    display: inline-block;
-    height: 21px;
-    padding: 2px 4px 0px; }
-
-#entryMonth :not(.noEntry) {
-    color: #06c; }
-
-#entryMonth a:hover {
-    background: #fff;
-    text-decoration: none; }
-
-#entryMonth #nowMonthLi {
-    padding: 0; }
-
-#nowMonth {
-    display: inline-block;
-    padding: 2px 4px 0;
-    height: 21px;
-    border: none;
-    color: #000 !important;
-    background: #fff; }
-
-/* 公開済み・承認待ち */
-#listHeadArea {
-    padding: 5px 10px;
-    background-color: #f1f4f5;
-    width: 480px; }
-
-#tabPublicOff,
-#tabPublicOn {
-    margin: -4px 0;
-    height: 29px;
-    background: none; }
-
-#tabPublicOn li,
-#tabPublicOff li {
-    text-indent: 0;
-    text-align: center;
-    font: normal 16px/30px Meiryo;
-    text-shadow: 0.5px 0 0 white;
-    width: 105px;
-    height: 29px;
-    margin: 0 5px;
-    box-sizing: border-box;
+/* 年月設定ボタン */
+.navigation__filter {
     border: 1px solid #aaa;
-    border-radius: 5px;
-    color: #fff;
-    background: linear-gradient(to bottom, #83c0e8 20%, #5596b5 100%); }
-
-#tabPublicOff li:first-child,
-#tabPublicOn li:last-child {
-    background: linear-gradient(to bottom, #ecf1f7 20%, #cee1f4 100%); }
-
-#tabPublicOff li:first-child:hover,
-#tabPublicOn li:last-child:hover {
-    border: 2px solid #2196f3; }
-
-#tabPublicOn li a,
-#tabPublicOff li a {
-    width: auto;
-    color: #888; }
-
-#sorting ul {
-    padding-top: 4px; }
-
-#publishDate {
-    width: 90px !important;
-    padding: 1px 10px 0 0 !important; }
-
-/* チェックボックスの全選択 */
-.checkboxAllControl {
-    padding: 0 13px 15px;
-    margin: -23px 0 0; }
-
-label[for="checkboxAll"] {
-    width: 11em;
-    overflow: hidden;
-    display: inline-block;
-    text-indent: -14em;
-    text-align: left; }
-
-#checkboxAll {
-    width: 15px;
-    height: 15px; }
-
-/* コメント欄全体のフォント指定 */
-#comments {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #000;
-    border-top: 2px solid var(--backg); }
-
-#comments li {
-    padding: 10px 10px 0;
-    border-bottom: 2px solid var(--backg); }
-
-#comments li:hover {
-    background-color: var(--hov); }
-
-#comments li:hover .left {
-    background: var(--hov); }
-
-/* 日付指定カレンダー ***************************** */
-#calendar.paletteArea {
-    width: auto;
-    left: calc(50% - 80px) !important; }
-
-#calendar.paletteArea * {
-    font-size: 16px; }
-
-.paletteArea table.calendarTable tr th {
-    padding: 2px 0 0; }
-
-.paletteArea table.calendarTable tr td a {
-    width: 30px;
-    height: 24px;
-    display: contents;
-    display: inline-block;
-    line-height: 27px; }
-
-.paletteArea table.calendarTable tr td.exception a {
-    display: inherit; }
-
-.paletteArea .timeArea input {
-    width: 22px;
-    height: 16px;
-    padding: 2px 0 0 4px !important; }
-
-#todayBtn {
-    text-indent: 0;
-    width: auto;
-    padding: 1px 4px 0;
-    height: 18px;
-    border: thin solid #aaa;
-    background: #fff;
-    font-size: 14px !important;
-    line-height: 20px !important; }
-
-/* コメント タイトル ****************************** */
-#comments .left h3,
-#comments .left h4 {
-    font-size: 16px;
-    font-weight: bold; }
-
-#comments .left h3 {
-    padding: 0; }
-
-#comments .left h3 a {
-    display: inline-block;
-    height: 20px;
-    padding: 1px 6px 0;
-    width: 450px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #607d8b; }
-
-#comments .left h3 a:hover {
-    text-decoration: none;
-    background: #fff; }
-
-/* コメントユーザー名 */
-#comments .left h4 {
-    height: 20px;
-    padding: 1px 6px 0 20px; }
-
-#comments .left h4:hover {
-    text-decoration: none;
-    color: inherit;
-    background: #fff; }
-
-/* コメント開閉アイコン */
-#comments .left .cmtTxtBtn {
-    position: relative;
-    margin: 0 -8px 8px 15px;
+    padding: 5px;
     border-radius: 4px;
-    background: #e1f5fe; }
-
-#comments .left .cmtTxtBtn img {
-    padding: 2px 2px 2px 1px;
-    border: 1px solid #aaa;
-    border-radius: 4px; }
-
-#comments .left .cmtTxtBtn:hover {
-    background: #fff; }
-
-#comments .left .cmtTxtBtn:hover + h4 {
-    color: inherit;
-    background: #fff; }
-
-/* 日付・IP */
-#comments .right {
-    position: relative;
-    margin: -5px 0 0 -170px;
-    padding: 0;
-    overflow: visible; }
-
-#comments .right .publicconfirm {
-    position: absolute;
-    top: 29px;
-    left: -50px;
-    padding: 0; }
-
-#comments .right .publicconfirm a {
-    width: 40px;
-    height: 23px;
-    line-height: 27px;
-    text-shadow: 0.5px 0 0 #888;
-    background: linear-gradient(to bottom, #fff59e 20%, #ffe082 100%); }
-
-#comments .right .deleteCol {
-    margin-top: 30px; }
-
-#comments .right input[type="checkbox"] {
-    width: 15px;
-    height: 15px; }
-
-#comments .right .txt:nth-child(2) a {
-    display: inline-block;
-    margin: 2px 0 1px;
-    padding: 0 4px;
-    height: 23px;
-    font-size: 15px;
-    line-height: 26px;
-    color: #888;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    background: linear-gradient(to bottom, #fff 20%, #ececec 100%); }
-
-#comments .right .txt:nth-child(2) a:hover {
-    text-decoration: none;
-    color: #000;
     background: #fff;
-    box-shadow: 0 0 0 2px #2196f3; }
+    cursor: pointer; }
 
-#comments .right .txt {
-    width: 80px;
-    padding: 0; }
+/* 年月表示 */
+.navigation__description {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 2px; }
 
-#comments .right .date,
-#comments .right .ip,
-#comments .right .amebaId {
-    font-size: 14px; }
+/* 設定ボタン */
+.navigation__setting {
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #fff; }
+
+.navigation__settingText {
+    font-size: 16px;
+    padding: 3px 0 0; }
 
 /* コメント枠全体 ******************************** */
-#comments .cmtTxt {
-    max-height: unset;
-    padding: 0;
-    margin: 0 5px 8px;
-    box-shadow: 0 0 0 80px var(--hov); }
+.commentList__inner {
+    margin: 1.5rem 0 0; }
 
-/* コメントユーザーのURL */
-.cmtTxt p:first-child:not([id*="comment"]) {
-    position: relative;
-    padding: 0 0 0 40px;
-    height: 28px;
-    font-size: 13px;
-    background: var(--hov); }
+/* コメントアイテム コメント単位 */
+.userList__item {
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #d4d5d6 !important;
+    background: #d8e1e5; }
 
-.cmtTxt p:first-child:not([id*="comment"]) a {
-    display: inline-block;
-    padding: 0 6px;
-    height: 20px;
+/* 記事タイトル */
+#ucsMainLeft .userList__title {
+    font-size: 16px;
+    margin-bottom: 6px; }
+
+#ucsMainLeft .userList__titleCaption {
     font-size: 14px;
-    line-height: 21px;
-    color: #06c; }
+    font-weight: normal; }
 
-.cmtTxt p:first-child:not([id*="comment"]) a:hover {
+.userList__title + .userList__inner {
+    margin: 0; }
+
+/* ブロックメニューボタン */
+.userList__menu {
+    margin-right: 1rem;
+    padding: 1px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
     background: #fff; }
 
-/* コメント本文 */
-p[id^="commentContents"] {
-    margin: 1px 1px 1px 77px;
-    padding: 10px 6px 10px 10px;
-    box-shadow: 0 0 0 100vh #cce2ee;
-    height: 30vh;
-    resize: vertical;
+/* 受信コメント表示枠 */
+.userList__text {
+    font-size: 1rem;
+    margin: 0.5rem 1rem 0;
+    padding: .5em 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: #fefefe;
+    min-height: 2.7rem;
+    height: 2.7rem;
     overflow-y: scroll;
-    outline: 1px solid #ccc; }
+    resize: vertical; }
 
-p[id^="commentContents"]::-webkit-scrollbar {
-    width: 16px; }
-
-p[id^="commentContents"]::-webkit-scrollbar-corner {
-    background: #00aaffd6; }
-
-p[id^="commentContents"]::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border: 2px solid #eee; }
-
-p[id^="commentContents"]::-webkit-scrollbar-track {
-    background: #eee; }
-
-/* このコメントに返信する */
-#comments .reply {
-    position: relative;
-    font-size: 13px;
-    margin: 0;
-    padding: 8px 20px;
-    border: none;
-    background: var(--hov); }
-
-/* タイトル・コメントのラベル  */
-#comments .replyArea {
-    position: relative; }
-
-#comments .replyArea dd {
-    margin-top: -8px; }
-
-#comments .replyArea dt {
-    width: 60px;
-    padding: 0;
-    margin: 8px 4px 0 12px;
-    text-align: left; }
-
-#comments .replyArea dt label {
-    display: inline-block;
-    color: #06c;
-    font-size: 13px;
-    font-weight: bold; }
-
-/* 顔文字アイコン */
-#comments #kaoBtn0 {
-    display: inline-block;
-    margin-left: 20px; }
-
-/* 顔文字パレット */
-.paletteArea {
-    width: 480px;
-    margin-top: 30px;
-    left: calc(50% - 220px) !important;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2); }
-
-.paletteArea li.listTop {
-    padding-left: 0 !important; }
-
-.paletteArea li.listTop a {
-    font-size: 14px;
-    padding: 0 2px 0 0 !important; }
-
-.paletteArea li.listTop br {
-    display: none; }
-
-.paletteArea li.listTop .close {
-    top: 7px;
-    right: 6px;
-    width: 18px;
-    height: 18px; }
-
-#kaomoji li.listMain li a {
-    font-size: 14px;
-    color: #000; }
-
-.paletteArea .listBottom {
-    display: none; }
-
-/* 返信 入力枠 共通 */
-#comments .replyArea .inputText,
-#comments .replyArea .textarea1 {
+/* 時刻 */
+.userList__information {
     font-size: 16px;
-    padding: 10px 6px 10px 10px;
-    width: 616px !important;
-    min-height: 25px;
-    box-shadow: none;
+    margin: 1rem 1rem 0;
     color: #000; }
 
-/* タイトル入力枠 */
-#comments .replyArea .inputText {
-    padding: 2px 6px 0 10px; }
+/* 削除・返信 ボタン */
+.userList__buttons {
+    margin: -1.5rem 2rem 0; }
 
-#comments .replyArea .inputText:focus {
-    outline: 1px solid #2196f3; }
+.userList__buttonsItem {
+    max-width: 132px; }
 
-/* コメント入力枠 */
-#comments .replyArea .textarea1 {
+/* 削除ボタン */
+.userList__buttonsItem.is-neutral {
+    color: #757575;
+    border: 1px solid #888; }
+
+.c-buttonContained.userList__buttonsItem.js-comment-delete:hover {
+    background: #ff0000;
+    color: #fff;
+    opacity: 1; }
+
+/* 返信ボタン */
+.c-buttonContained {
+    font-size: 16px;
+    min-height: 30px;
+    padding: 8px 16px 6px;
+    border-radius: 4px;
+    background: linear-gradient(#2196f3 0%, #1976D2 70%); }
+
+.c-buttonContained:not([disabled]):hover {
+    background: linear-gradient(#1976D2 0%, #2196f3 100%); }
+
+[data-section-id="comment_approve"] {
+    background: linear-gradient(#b0bec5 0%, #607d8b 70%); }
+
+/* コメント入力枠 全体*/
+.commentReply {
+    display: none;
+    margin: 1rem 1rem 0; }
+
+/* 返信コメント 入力枠 */
+.commentList .formGroup__textarea {
+    resize: vertical;
+    background: #fefefe;
     overflow-y: scroll; }
 
-#comments .replyArea .textarea1:focus {
-    outline: 1px solid #2196f3; }
+.commentList .formGroup__textarea:focus {
+    box-shadow: none;
+    background: #fefefe; }
 
-#comments .replyArea .textarea1::-webkit-scrollbar {
-    width: 16px; }
+/* textarea  =共通=*/
+.c-formTextarea {
+    border-radius: 4px; }
 
-#comments .replyArea .textarea1::-webkit-scrollbar-corner {
-    background: #00aaffd6; }
+.c-formTextarea:focus {
+    outline: none; }
 
-#comments .replyArea .textarea1::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border: 2px solid #eee; }
+/* 送信ボタン *********************************** */
+.commentList .sendButton {
+    margin: -0.8rem auto 0; }
 
-#comments .replyArea .textarea1::-webkit-scrollbar-track {
-    background: #eee; }
+/* ページャー */
+.pagination {
+    margin: 2rem 0 0; }
 
-/* 投稿ボタン *********************************** */
-#comments .actionControl {
-    position: relative;
-    margin: -8px 0 0;
-    padding: 10px 0;
+.pagination__link {
+    background: #fff; }
+
+/* モーダルウインドウ **************************** */
+.commentModalOverlay {
+    background: none; }
+
+.commentModal,
+.commentFilterModalMiddle {
+    box-shadow: 0px 40px 100px 0px #00000050; }
+
+.commentModalHeader__description {
+    font-size: 16px;
+    color: #000; }
+
+/* 年月選択 モーダル */
+.filterList__button,
+.filterList__link {
+    font-size: 1rem;
+    padding: 1rem 1.5rem 1rem; }
+
+/* ブロックメニュー モーダル */
+.userList__tooltipItem {
+    padding: 10px 10px; }
+
+/* モーダル内リストの選択フォバー */
+.filterList__button:hover,
+.filterList__link:hover,
+.filterList__link:visited,
+.userList__tooltipItem:hover {
+    color: #000;
     background: var(--hov); }
 
-.btnDefault {
-    font-size: 16px; }
+/* コメント設定画面 ****************************** */
+#subContentsArea {
+    margin-bottom: 6rem; }
 
-.btnDefault:hover {
-    box-shadow: 0 0 0 2px #1976d2; }
+.commentSettingsList__link,
+.commentSettingsList__link:visited {
+    padding: 0 2rem;
+    color: #000;
+    text-shadow: 0 0 1px #00000050; }
 
-.btnDefault:focus {
-    outline-color: #03a9f4; }
+.commentSettingsList__link:hover {
+    background: var(--hov); }
 
-/* 削除ボタン *********************************** */
-.btnDelete {
-    font-size: 16px;
-    margin-top: 20px !important; }
-
-.btnDelete:hover {
-    box-shadow: 0 0 0 2px red; }
-
-.btnDelete:focus {
-    outline-color: red; }
-
-/* ヘルプ ************************************** */
+/* ヘルプ =共通= ******************************** */
 #ucsMainRight {
     display: block;
     height: auto;
     padding: 10px 20px 8px;
     background: #f4f4f4;
     width: 700px;
-    margin: 15px auto 0; }
+    margin: 15px auto 0;
+    border: 1px solid #ccc; }
 
 #ucsMainRight .listModule {
     margin: 0;
@@ -2237,22 +1978,18 @@ p[id^="commentContents"]::-webkit-scrollbar-track {
     margin: 2px 0 0 40px;
     line-height: 16px; }
 
-/* コメント削除確認画面 *************************** */
-#blgfavoriteDelete #comments .right .txt {
-    width: 200px; }
-
-/* コメントブロック設定 *************************** */
+/* コメントブロック設定 *********************************** */
 /* ページ全体 */
 .commentBan {
     padding-bottom: 2rem; }
 
-/*機能選択スイッチ */
+/* メイン選択スイッチ =共通=*/
 .tabs__link {
     font-size: 16px;
     font-weight: bold;
     padding: 3px 0 0; }
 
-.tabs__item.is-active {
+.commentBan .tabs__item.is-active {
     background: #e4004e; }
 
 /* ページタイトル */
@@ -2277,7 +2014,7 @@ p[id^="commentContents"]::-webkit-scrollbar-track {
 input.c-formInputField:focus {
     outline: none; }
 
-/* メモ入力枠 */
+/* メモ入力枠  textarea  =共通=*/
 .c-formTextarea {
     border-radius: 4px; }
 
@@ -2291,7 +2028,7 @@ input.c-formInputField:focus {
     min-height: 40px; }
 
 /* ブロック済のリスト */
-.userList__item {
+.commentBan .userList__item {
     background: #eee;
     margin-bottom: 4px; }
 
