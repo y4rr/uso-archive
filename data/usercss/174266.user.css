@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201027.18.29
+@version        20201028.4.55
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fix for newspaper */
+/*Last update: Fix for Halloween Basket */
 
 
 html:not([stylus-iframe]):after {
@@ -500,7 +500,6 @@ h4.title___2q0Ev {
 div.userInfoBox___2EUgf.rowSection___3iB3p.flexCenter___W3MtG {
     filter: invert(1)hue-rotate(180deg)
 }
-
 }
 
 @-moz-document url("https://www.torn.com/loader.php?sid=slots") {
@@ -569,6 +568,14 @@ div.tt-black-overlay.active {
     width:1000px;
     height:75px;
     filter: brightness(1)invert(1)
+}
+
+div.action-wrap.use-act.use-halloween-basket {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.available-treats {
+    filter: invert(1)hue-rotate(180deg)
 }
 }
 
@@ -1076,7 +1083,6 @@ div.panelHeader___25hFj.black___2ue_b {
 div.imgContainer___3k34h {
     filter: invert(1)hue-rotate(180deg)
 }
-
 }
 
 @-moz-document url-prefix("https://www.torn.com/imarket.php") {
@@ -1428,9 +1434,6 @@ div.armoursWrap___HemjH img {
 div.armour___3G2s9 img {
     filter: invert(1)hue-rotate(180deg)
 }
-
-
-
 }
 
 @-moz-document url-prefix("https://www.torn.com/archives.php") {

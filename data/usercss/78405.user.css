@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `DarkAdded a paragraph highlighter.`
-@version        2020812.8.38
+@version        20201028.2.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("wikipedia.org") {
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
  	/* Width */
  	width: 1.2em!important;
  }
@@ -227,6 +227,7 @@ table {
 	font-size: 15px!important;
 }
 
+.vector-menu-portal .body li, .vector-menu-portal .vector-menu-content li,
 .mw-body-content {
 	font-size: 1.25em!important;
 }
@@ -482,25 +483,6 @@ li.gallerybox
 #mw-panel {
     width: 11em!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("wikipedia.org"), domain("store.wikimedia.org"), domain("donate.wikimedia.org") {
@@ -970,6 +952,8 @@ table.wikitable:hover
 
 /*__ Red Gradient _____________________________________________________________________*/
 
+.cbnnr,
+.cbnnr-main,
 .box-header-title-container,
 .mw-parser-output .itn-special
 {
@@ -1014,29 +998,6 @@ li:hover
 	background: linear-gradient(to right, #38383842, #0000)!important;
 	border-left-color: #434343!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("wikipedia.org"), domain("store.wikimedia.org"), domain("donate.wikimedia.org") {
@@ -1111,10 +1072,6 @@ selector:last-child {
 	border-bottom-left-radius: 22px!important;
 	border-bottom-right-radius: 22px!important;
 }
-
-
-
-
 }
 
 @-moz-document domain("wikipedia.org"), domain("store.wikimedia.org"), domain("donate.wikimedia.org") {
@@ -1255,9 +1212,4 @@ selector:last-child {
     height: 26px!important;
     padding-left: 20px!important;
 }
-
-
-
-
-
 }

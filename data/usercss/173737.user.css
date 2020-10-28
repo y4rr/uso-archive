@@ -2,8 +2,8 @@
 @name           Jeuxvideo.com - JVide v2 - xRock
 @namespace      USO Archive
 @author         xRock
-@description    `Un style qui rend le site très sobre, de façon très simple./* Changelog */v1.2: Thème sombre- Ajout d'un thème sombre dans les paramètres du style (customize settings)(À faire : adapter taille mi-écran + continuer le thème sombre)`
-@version        2020930.19.21
+@description    `Un style qui rend le site très sobre, de façon très simple./* Changelog */v1.2.2 :- Correction d'un bug sur la liste des sujets (merci DictaNoob)(À faire : adapter taille mi-écran + continuer le thème sombre)`
+@version        20201028.9.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color settingC "Couleur des boutons (Défaut : Gris)" #6C7984
@@ -91,7 +91,7 @@ jvdarkoui "Oui" <<<EOT @-moz-document domain("jeuxvideo.com") {
     color: #C5C8C6 !important;
 }
 
-.btn, .bloc-liste-num-page .page-active, .panel-heading, .dropdown-menu, .pull-left, .topic-list .topic-head, .topic-list, .topic-list li:nth-of-type(2n), .jv-header-menu .jv-nav-dropdown-container, .list-msg .row-mp:nth-child(odd), .icon-arrow-right, .icon-arrow-left, #mp-menus, .account, .jv-header-menu .dropdown .jv-nav-dropdown-container-bottom .button, .form-control-tag, .fs-body, .forum-section, .fs-body h3:first-child, .fs-body h3 a {
+.btn, .bloc-liste-num-page .page-active, .panel-heading, .dropdown-menu, .pull-left, .topic-list .topic-head, .topic-list, .topic-list li:nth-of-type(2n), .topic-list li.dfp__atf~li:nth-of-type(odd), .jv-header-menu .jv-nav-dropdown-container, .list-msg .row-mp:nth-child(odd), .icon-arrow-right, .icon-arrow-left, #mp-menus, .account, .jv-header-menu .dropdown .jv-nav-dropdown-container-bottom .button, .form-control-tag, .fs-body, .forum-section, .fs-body h3:first-child, .fs-body h3 a {
     background-color: #313336 !important;
     border-color: #313336 !important;
     color: #C5C6C8 !important;
@@ -113,7 +113,7 @@ li.dossier:hover {
     border: none !important;
 }
 
-.area-editor, .text-editor, .bloc-rech-forum .txt-search, .bloc-rech-forum .select-search, .topic-list li:nth-of-type(odd), .list-msg {
+.area-editor, .text-editor, .bloc-rech-forum .txt-search, .bloc-rech-forum .select-search, .topic-list li:nth-of-type(odd), .topic-list li.dfp__atf~li:nth-of-type(2n), .list-msg {
     background-color: #232528 !important;
     border: none !important;
     color: #C8C8C8 !important;

@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           store.playstation.com Dark Theme
+@namespace      USO Archive
+@author         BioBuster
+@description    `Dark background for store page and minor prices color change`
+@version        20201028.7.15
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain(store.playstation.com) {
+
+body {
+    background-color: #111 !important;
+}
+
+.ems-sdk-blueprint-hero,
+.ems-sdk-blueprint-hero__text,
+.ems-sdk-blueprint-hero__text h1,
+.tertiary-tab a,
+.tertiary-tabs,
+.product-detail,
+.shared-nav__link-list-anchor,
+.shared-nav-icon-text,
+.shared-nav__secondary,
+.shared-nav__primary-item,
+.shared-nav__primary-button,
+#shared-nav,
+#__next {
+    background-color: #111 !important;
+    color: #ccc !important;
+}
+
+.tertiary-tab a {
+    border-color: #333 !important;
+}
+
+.tertiary-tab a.tertiary-tab__link--active {
+    border-color: #666 !important;
+}
+
+.shared-nav__primary-button[aria-expanded="true"] {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.price__container .price {
+    color: #fff !important;
+}
+
+.price__container .price--strikethrough {
+    color: #f99 !important;
+}
+
+}

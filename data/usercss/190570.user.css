@@ -2,8 +2,8 @@
 @name           ニコ生 ダークテーマ(Nicovideo Live Dark Theme)
 @namespace      USO Archive
 @author         四月一日 雷
-@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>にお願いします。`
-@version        20201017.13.25
+@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード2を削除していただくことで元に戻ります。--どうにもならなかった箇所について--・コメント欄上の広告、ギフトホバー時の背景色（いじっても効果がありませんでした…）`
+@version        20201028.9.48
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -46,12 +46,15 @@
     background-color: #333;
     border: solid 2px #5a5a5a;
 }
+/*コメント入力欄の説明してる文字色*/
 input::placeholder{
     color: #ccc !important
 }
+/*コメントまわりのボタン類*/
 .___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{
     background-color: #696969;
 }
+/*ヘッダーのメニューあたり*/
 li a:hover{
     background-color: #464646 !important;
 }
@@ -59,6 +62,10 @@ li a:hover{
     background-color: #393939 !important;
 }
 
+/*スクロールバー*/
+.___body___1zOW_,.common-header-15gxh1a{
+    scrollbar-width:thin;
+}
 
 /*ソーシャルボタンまわり*/
 
@@ -72,8 +79,7 @@ li a:hover{
 }
 
 /* 文字設定 */
-html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
-  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
+h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc{
     font-weight:800;
     font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     text-decoration: none;
@@ -92,29 +98,37 @@ html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,
 .common-header-r1rgum, .common-header-vhrjlg{
     display: none
 }
-/*放送者コメント色*/
-.___body___2BWU6{
-    color: #f4f4f4 !important
+
+.nico-CommonHeaderRoot .common-header-cvcm83 > *{
+    border-top: 1px solid rgb(85, 85, 85) !important
 }
-.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{
-    color: #e33e84 !important;
+.nico-CommonHeaderRoot .common-header-zz80x3{
+    border-bottom: 1px solid rgb(85, 85, 85) !important
 }
+.nico-CommonHeaderRoot .common-header-1kfkrjf{
+    margin: 0px 0px 0px
+}
+
 
 /*削除する要素*/
 .___premium-merit-appeal-banner___1KEdB, .___premium-merit-appeal-banner___1hc_y, .___app-download-banner___3tmZG, .___app-download-banner___SDCFP, .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad{
     display: none;
 }
 
+/*たぶんコメント入れるとこ*/
 .___item-placeholder___3JoMT{
     border: solid 2px #ccc !important
 }
-
+/*生放送タイトル*/
 .___program-summary___2BVKN{
     box-shadow: 2px 10px 10px 0 #282828
 }
+
 }
 
 @-moz-document url-prefix("https://nicoad.nicovideo.jp/") {
+/*ニコニ広告部分*/
+
 /* 文字設定 */
 html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
   ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
@@ -125,7 +139,6 @@ html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,
     border: inset 0px #222742 !important;
 }
 
-/*広告ゾーン*/
 .header-bar[data-v-0d10b35d]{
     background-color: #3c3c3c !important
 }

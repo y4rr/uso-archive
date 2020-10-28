@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Guile93
 @description    `A dark grey theme for Keymailer.co website`
-@version        20201027.6.42
+@version        20201028.4.53
 @license        CC-BY-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -361,4 +361,26 @@ table.money-results tbody tr:nth-child(odd) td.previous {
 
 #search_form .results-header .searched-phrase {
     color: white; }
+.game-key {
+    background: #282828;
+    display: block;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    margin: 16px 0 32px 0;
+    font-family: monospace;
+}
+.reveal-key p.hashtag b {
+    background: #282828;
+}
+.simple-block .simple-block-header {
+    background: #646363;
+    border-bottom: 2px solid #e67c35;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+}
+.title-pink {
+    color: #e67c35;
+}
 }

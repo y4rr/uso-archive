@@ -2,27 +2,30 @@
 @name           ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ
 @namespace      USO Archive
 @author         gonbuto
-@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも現状ニコレポ画面のみ対応、履歴やマイリス画面は対応予定ただ遅延ロードについてはグリモンとか使わないとCSSじゃどうしようもない左により過ぎてるのが嫌！て人はコメントアウトしてある「全画面に最適化する用」の方を利用するといいかもFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポ(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
-@version        20201027.12.14
+@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも現状ニコレポ/フォロー/マイリスト/あとで見る/履歴画面に対応遅延ロードがウザい件についてはCSSじゃどうしようもないので、グリモンとか使ってJSで対応してくださいTips:- 左に寄り過ぎてるのが嫌！て人はコメントアウトしてある「全画面に最適化する用」がいいかもFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポなどの白地のアイテム(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
+@version        20201028.9.33
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user/") {
   /********************************/
+ /* ページトップのニコニコヘッダ */
+/********************************/
+.HeaderContainer_Re-main { height: 48px; }
+
+  /********************************/
  /* ページトップのユーザ名ヘッダ */
 /********************************/
 .UserDetailsHeader { padding-bottom: 0px; }
-.NicorepoItem-item
-{
-    padding: 4px;
-    border: 1px solid #000;
-}
 
 
   /*******************************/
  /* カードの横幅712px制限を解除 */
 /*******************************/
 .NicorepoPage-content { width: auto; }
+.HistoryPage-content { width: auto; }
+/* これをコメントアウトすれば他ページ同様の全枠になるが、動画説明文の長さは変わらないので見た目が不自然 */
+/* .MylistPage-content { width: inherit; } */
 
 /* 干渉する右サイドメニューを背面へ回しつつ右横へ避ける */
 /* 素直に消したほうが早いとは思うが一応 */
@@ -36,57 +39,118 @@
 */
 
 
-  /********************************/
- /* 各ニコレポのタイトルヘッダ部 */
-/********************************/
-/* 投稿者欄の縦幅縮小 (original: 40px) */
-.NicorepoItem-sender { height: 30px; }
-.NicorepoItem-senderIcon.Thumbnail { width: 30px; height: 30px; }
-
-
-  /****************************/
- /* 各ニコレポのコンテンツ部 */
-/****************************/
-/* コンテンツ部のインデント縮小 (original: 40px) */
-.NicorepoItem-body { margin-left: 20px; }
-
-
-  /**************/
- /* サムネ関連 */
-/**************/
-/* サムネ本体の縮小  (original: 112 x 63) */
-.NicorepoItem-contentThumbnailImage.Thumbnail { width: 78px; height: 46px; }
-
-
-  /******************/
- /* サムネ位置関連 */
-/******************/
-.NicorepoItem-activity {
-    margin-top: 4px; margin-bottom: 4px; font-size: 14px;
-    margin-left: 84px   /* サムネ本体 + 6px分右に避ける */
+  /**************************************************************/
+ /* 白地枠なしカード(ニコレポ、マイリス、フォロー)に枠をつける */
+/**************************************************************/
+.NicorepoItem-item, .UserItem-content, .MylistMediaObject-linkArea {
+  padding: 4px;
+  border: 1px solid #000;
 }
-
-/* サムネ本体を1行分上に */
-.NicorepoItem-contentThumbnail { bottom: 1em; }
-/* もともとサムネのあった場所にまで次のコンテンツを詰める */
-.NicorepoItem-content { margin-bottom: -1em; }
-
-
-
-  /****************/
- /* タイトル周り */
-/****************/
-
-/* コンテンツ名のサイズ */
-.NicorepoItem-contentDetailTitle { font-size: 16px; }
-
-/* コンテンツ種別アイコンとコンテンツ名をインライン表示 */
-.NicorepoItem-contentDetail, .NicorepoItem-contentDetailLabel, .NicorepoItem-contentDetailTitle { display: inline;}
-.NicorepoItem-contentDetailTitle { margin-left: 4px; }
 
 
   /**************/
  /* サイドバー */
 /**************/
 .SideContainer { width: 124px; margin-right: 16px; }
+
+
+
+
+
+  /************/
+ /* ニコレポ */
+/************/
+
+ /* 各ニコレポのタイトルヘッダ部 */
+/* 投稿者欄の縦幅縮小 (original: 40px) */
+.NicorepoItem-sender { height: 30px; }
+.NicorepoItem-senderIcon.Thumbnail { width: 30px; height: 30px; }
+
+
+ /* 各ニコレポのコンテンツ部 */
+/* コンテンツ部のインデント縮小 (original: 40px) */
+.NicorepoItem-body { margin-left: 20px; }
+
+
+ /* サムネ関連 */
+/* サムネ本体の縮小  (original: 112 x 63) */
+.NicorepoItem-contentThumbnailImage.Thumbnail { width: 78px; height: 46px; }
+
+
+ /* サムネ位置関連 */
+/* サムネを左端に、文章をその右にするための整形 */
+.NicorepoItem-activity {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    margin-left: 84px   /* サムネ本体 + 6px分右に避ける */;
+}
+.NicorepoItem-contentThumbnail { bottom: 1em; }  /* サムネ本体を1行分上に */
+.NicorepoItem-content { margin-bottom: -1em; }  /* もともとサムネのあった場所にまで次のコンテンツを詰める */
+
+
+
+ /* タイトル周り */
+/* コンテンツ名のサイズ */
+.NicorepoItem-contentDetailTitle { font-size: 16px; }
+
+/* コンテンツ種別アイコンとコンテンツ名をインライン表示 */
+.NicorepoItem-contentDetail, .NicorepoItem-contentDetailLabel, .NicorepoItem-contentDetailTitle { display: inline; }
+.NicorepoItem-contentDetailTitle { margin-left: 4px; }
+
+
+
+
+
+  /*************************/
+ /* あとで見る/マイリスト */
+/*************************/
+/* ヘッダと各アイテム詰め詰め */
+.WatchLaterContainer-header { margin-bottom: 4px; }
+.WatchLaterList-item.WatchLaterListItem { padding-top: 4px; }
+
+/* サムネ(original: 192 x 108) */
+.VideoMediaObject-thumbnail { width: 96px; height: 54px; }
+/* サムネ縮小に伴うMetadata/Checkboxレイアウト崩壊の修正 */
+.VideoMediaObject-bodyDescription { margin-bottom: 2em; }
+.CheckboxVideoMediaObject-checkboxArea { margin-top: 16px; }  /* original: 42px */
+
+/* 投稿日と再生数カウンタのインライン化 */
+.VideoMetaData-video, .VideoMetaData-count {
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: top;
+}
+
+/* マイリス登録日を右寄せにして2行分上に詰める*/
+.MylistItemAddition, .WatchLaterListItem-addition {
+    position: relative;
+    margin-top: 6px;
+    bottom: 2em;
+    margin-bottom: -2em;
+}
+.MylistItemAddition-row { justify-content: flex-end; height: 24px; }
+
+
+
+
+  /********/
+ /* 履歴 */
+/********/
+/* ヘッダと各アイテム詰め詰め */
+.VideoWatchHistoryContainer-header { margin-bottom: 1em; }
+.VideoWatchHistoryContainer-editMenu { margin-bottom: 4px; }
+.VideoWatchHistoryContainer-item { padding: 4px; }
+
+/* 視聴日を右寄せにしていい感じに上に詰める */
+.VideoWatchHistoryItemAfter span { margin-left: 10px; font-size: 12px; }
+.VideoLabels { display: inline; }   /* [CH] のようなラベルがflexのままだと次行に落ちるのでインライン化 */
+
+.VideoWatchHistoryItemAfter {
+    position: relative;
+    margin-top: 0;
+    justify-content: flex-end;
+    bottom: 2em; /* XXX: bottomとmargin-bottomを揃えられないか？ */;
+}
+.VideoWatchHistoryContainer-item { margin-bottom: -1.3em; }
 }

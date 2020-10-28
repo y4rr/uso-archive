@@ -2,8 +2,8 @@
 @name           Lolnadarks
 @namespace      USO Archive
 @author         Tlacuache
-@description    `Lolnada tema oscuro-Aguacate rancio versión 1.1`
-@version        20201027.1.23
+@description    `Lolnada tema oscuro-V1.2 Aguacate intenso`
+@version        20201028.11.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,39 +11,42 @@
 body{background-color:#000000;}
     a,a:visited,#modal,h1,p,.subtitle,.body,#xf,.post_no,i,.imp,.det,.sel-arc,select,input,#text,#alert_message,h3,strong{color:#fff;}
 .boardlist a{border-top:3px solid #aed581;}
-hr,.clear,.mcd{background-color:#424242;border-color:#424242;}
-.exp,.exp::before,.reply,.img,.a,#alert_div,#modal{background-color:#424242;}
-.ca li>a .det, .la li>a{background:#424242;}
-.ca li,.det{background:#424242;}
+hr,.clear,.mcd{background-color:#1b1b1b;border-color:#1b1b1b;}
+.exp,.exp::before,.reply,.img,.a,#alert_div,#modal{background-color:#1b1b1b;}
+.ca li>a .det, .la li>a{background:#1b1b1b;}
+.ca li,.det{background:#1b1b1b;}
+.ca li>a{background:#1b1b1b;
+		box-shadow: 2px 2px #33691e}
+.la li{border:1px solid #33691e;}
 .titulo{color:#b61827;}
-.reply{border:#424242;border-radius:10px;}
+.reply{border:#1b1b1b;border-radius:10px;}
 .post-image{border-radius:10px;}
-.blotter,.enlinea,.threads .thread,.thread-image{background:#6b9b37;border-color:#6b9b37;color:#fff;border-radius:10px;}
+.blotter,.enlinea,.threads .thread,.thread-image{background:#33691e;border-color:#33691e;color:#fff;border-radius:10px;}
 .bottom,.col,.uns lb{background-color:#000000;}
 .post.reply.highlighted {
-    background:#524c00;
-    border-color:#524c00;}
+    background:#005005;
+}
 .quote{color:#8bc34a;}
-#rr{ background:#616161;}
+#rr{ background:#616161;border:solid 1px #003d00;}
 textarea{color:#fff;}
-#updater a, .image_id>a, .lfl, .nuevas_resp, .subtitle>p a, .volarr a, a#mqr, span.omitted a{background:#6b9b37;}
+#updater a, .image_id>a, .lfl, .nuevas_resp, .subtitle>p a, .volarr a, a#mqr, span.omitted a{background:#33691e;}
 .reply,.intro,.board_image{border-radius:10px;}
-.intro time,span.heading{color:#f05545;}
+.intro time,span.heading,span.titulo{color:#f05545;}
 .omitted,.unimportant,li,.av,label,#seg{color:#aeaeae}
 .hxs{background:transparent;}
-form table tr th {background:#6b9b37;border:1px solid #387002;color:#fff;}
-#hnd,.nombre,.cerrar{background:#6b9b37;color:#fff;}
+form table tr th {background:#33691e;border:1px solid #003d00;color:#fff;}
+#hnd,.nombre,.cerrar{background:#33691e;color:#fff;}
 .wbg { background:transparent;}
 nav{background: linear-gradient(135deg,rgba(66, 66, 66,1) 0,rgba(66, 66, 66,.9) 20%,rgba(66, 66, 66,1) 100%);
     background: -moz-linear-gradient(-45deg,rgba(66, 66, 66,1) 0,rgba(66, 66, 66,.9) 20%,rgba(66, 66, 66,1) 100%);
     background: -webkit-linear-gradient(-45deg,rgba(66, 66, 66,1) 0,rgba(66, 66, 66,.9) 20%,rgba(66, 66, 66,1) 100%);
     }
-.fa-quote-right{color:#6b9b37;}
-.post.reply{background-color:#424242;}
+.fa-quote-right{color:#33691e;}
+.post.reply{background-color:#1b1b1b;}
 .intro {background-color:transparent;}
-.sel-arc, select {background-color:#6b9b37;}
-
-
+.sel-arc, select {background-color:#33691e;}
+.dadoroll{background:#33691e;
+    color:#a5d6a7;}
 :after,:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -52,7 +55,7 @@ nav{background: linear-gradient(135deg,rgba(66, 66, 66,1) 0,rgba(66, 66, 66,.9) 
 
 @media(max-width: 767px) {
 .post.reply .intro {
-    background-color:#387002;
+    background-color:#484848;
 }
 .intro{border-radius:0;}
 .post-image{border-radius:10px;}

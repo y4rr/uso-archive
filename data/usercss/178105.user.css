@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ologist
 @description    `This theme is a combination of all of 2016, and how it would merge with the modern features of the roblox website. Keep in mine this is my first (wip) css code, and I added on to GalactiCosmo's "Roblox: Old Light Theme."Please let me know if there are any bugs because I would be happy to fix any.`
-@version        2020720.5.57
+@version        20201028.2.7
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com") {
-body
+body 
   
 {
     background-color: #e3e3e3;
@@ -22,7 +22,7 @@ body
 }
 .light-theme .content {
     background-color: #e3e3e3;
-    color: #000000;
+    color: #191919;
 }
 .light-theme .scroller {
     background-color: #ffffff;
@@ -34,6 +34,35 @@ body
 .light-theme .scroller.disabled {
     background-color: #ffffff;
 }
+
+
+*
+{
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
+}
+
+/* ~/CSS/Fonts/SourceSansPro-Google.css */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+}
+
+
+
 .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
     color: #ffffff;
 }
@@ -50,6 +79,127 @@ body
 }
 
 
+.section .container-header {
+    padding: 0 0;
+}
+
+.light-theme .rbx-header .navbar-search .navbar-search-option a {
+    color: #191919;
+}
+
+.light-theme .rbx-header .navbar-search .navbar-search-option.selected {
+    background-color: #F2F2F2;
+    box-shadow: 4px 0 0 0 #00A2FF inset;
+    color: #393b3d;
+}
+
+.rbx-header .navbar-search .navbar-search-option:hover {
+    box-shadow: 4px 0 0 0 #00A2FF inset;
+}
+
+
+
+ul.details-info:nth-child(1) > li:nth-child(1) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(1) > div:nth-child(1)::before {
+    content: "Friends";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+ul.details-info:nth-child(1) > li:nth-child(2) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(2) > div:nth-child(1)::before {
+    content: "Followers";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+ul.details-info:nth-child(1) > li:nth-child(3) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(3) > div:nth-child(1)::before {
+    content: "Following";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+
+ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before {
+    content:"Games";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before {
+    content:"Catalog";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before {
+content:"Develop";
+font-size: 16px;
+font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before {
+content:"ROBUX";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+
+
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    display: inline-block;
+    min-width: 42px;
+    margin: 0 0 0 6px;
+    font-weight: 600;
+}
+
+.profile-about .profile-about-content {
+    padding: 10px !important;
+    display: grid;
+}
+
+
+.game-card-info .playing-counts-label {
+    float: left;
+    display: block !important;
+}
+.game-tile .game-card-container .game-card-info .no-vote, .game-tile .game-card-container .game-card-info .playing-counts-label, .game-tile .game-card-container .game-card-info .vote-percentage-label {
+    padding: 0 12px 3px 0;
+    display: none;
+}
+
+
+.gotham-font .font-body, .gotham-font .text-description, .gotham-font .text-favorite, .gotham-font p {
+    font-size: 16px;
+    font-weight: 300;
+}
+    
 
 
 .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
@@ -61,10 +211,32 @@ body
     border: 1px solid #B8B8B8;
 }
 
+.game-card-info .vote-percentage-label {
+    vertical-align: middle;
+    background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
+    background-position: 24px -351px;
+    block-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 41px;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600;
+}
+
+.profile-header .header-caption .header-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    float: left;
+}
+
 
 h1, h2, h3, h4, h5 {
     padding: 8px 0 !important;
 }
+
 
 
 .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
@@ -77,14 +249,13 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
-.gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
+/*.gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
     font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 .gotham-font .text, .gotham-font body, .gotham-font button, .gotham-font html, .gotham-font input, .gotham-font pre, .gotham-font select, .gotham-font textarea {
     font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
-}
+}*/
 
 
 
@@ -97,45 +268,36 @@ padding: 0 20px;
 
 .profile-header .header-caption .header-details .details-info li .font-header-2
 {
-font-size: 20px;
+font-size: 24px;
 }
 
-
-
-
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-font-weight: 400;
-}
 
 
 
 .gotham-font .font-bold, .gotham-font .font-bold:active, .gotham-font .font-bold:hover, .gotham-font .font-bold:link, .gotham-font .font-bold:visited, .gotham-font .font-header-2, .gotham-font .font-header-2:active, .gotham-font .font-header-2:hover, .gotham-font .font-header-2:link, .gotham-font .font-header-2:visited, .gotham-font .h5, .gotham-font .h5:active, .gotham-font .h5:hover, .gotham-font .h5:link, .gotham-font .h5:visited, .gotham-font .h6, .gotham-font .h6:active, .gotham-font .h6:hover, .gotham-font .h6:link, .gotham-font .h6:visited, .gotham-font .text-footer-nav, .gotham-font .text-footer-nav:active, .gotham-font .text-footer-nav:hover, .gotham-font .text-footer-nav:link, .gotham-font .text-footer-nav:visited, .gotham-font .text-label, .gotham-font .text-label:active, .gotham-font .text-label:hover, .gotham-font .text-label:link, .gotham-font .text-label:visited, .gotham-font .text-lead, .gotham-font .text-lead:active, .gotham-font .text-lead:hover, .gotham-font .text-lead:link, .gotham-font .text-lead:visited, .gotham-font .text-name, .gotham-font .text-name:active, .gotham-font .text-name:hover, .gotham-font .text-name:link, .gotham-font .text-name:visited, .gotham-font .text-subject, .gotham-font .text-subject:active, .gotham-font .text-subject:hover, .gotham-font .text-subject:link, .gotham-font .text-subject:visited, .gotham-font .text-warning, .gotham-font .text-warning:active, .gotham-font .text-warning:hover, .gotham-font .text-warning:link, .gotham-font .text-warning:visited, .gotham-font h5, .gotham-font h5:active, .gotham-font h5:hover, .gotham-font h5:link, .gotham-font h5:visited, .gotham-font h6, .gotham-font h6:active, .gotham-font h6:hover, .gotham-font h6:link, .gotham-font h6:visited, .gotham-font strong, .gotham-font strong:active, .gotham-font strong:hover, .gotham-font strong:link, .gotham-font strong:visited {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-
-
-.filter-hidden {
-    height: auto;
-    visibility: visible;
+.light-theme .text, .light-theme .text-date-hint, .light-theme .text-default, .light-theme .text-description, .light-theme .text-footer, .light-theme .text-info, .light-theme .text-label, .light-theme .text-secondary, .light-theme p {
+    color: #000000;
 }
-
 
 
 .gotham-font .font-caption-body, .gotham-font .font-caption-body:active, .gotham-font .font-caption-body:focus, .gotham-font .font-caption-body:link, .gotham-font .font-caption-body:visited, .gotham-font .tooltip .tooltip-inner, .gotham-font .tooltip .tooltip-inner:active, .gotham-font .tooltip .tooltip-inner:focus, .gotham-font .tooltip .tooltip-inner:link, .gotham-font .tooltip .tooltip-inner:visited {
     font-size: 16px;
     font-weight: 300;
 }
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-    font-weight: 400;
-}
+
 .gotham-font div {
     line-height: 1.2em;
 }
 
+
+.filter-hidden {
+    height: auto;
+    visibility: visible;
+}
 
 
 .light-theme .rbx-tab:hover {
@@ -239,9 +401,6 @@ div.home-header-content a:after {
 div.game-card-info, span.playing-counts-label:before {
 content: title;
 }
-div.game-card-info, span.playing-counts-label:after {
-content: " Playing";
-}
 
 
 
@@ -298,6 +457,17 @@ box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
 }
 
 
+.light-theme .content {
+    color: #000000;
+}
+
+
+.light-theme .text-lead, .light-theme .text-lead:active, .light-theme .text-lead:hover, .light-theme .text-lead:link, .light-theme .text-lead:visited, .light-theme .text-title, .light-theme .text-title:active, .light-theme .text-title:hover, .light-theme .text-title:link, .light-theme .text-title:visited {
+    color: #191919;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
 
 .store-card .store-card-caption {
     padding: 0 6px 6px;
@@ -336,9 +506,21 @@ background-color: #3FC679;
 .item-card-container.recommended-item-link .item-card-link .item-card-name.recommended-name.ng-binding {
     background-color: transparent !important;
 }*/
-.item-card-container .item-card-name {
+
+
+/*.item-card-container .item-card-name {
     white-space: nowrap;
+}*/
+
+
+.dark-theme .game-card-info .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .icon-currently-playing-sm, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70 {
+    background-position: 0 -496px;
+    visibility: hidden;
 }
+
+
+
+
 /*.hlist .list-item a {
     background-color: transparent !important;
 }
@@ -421,14 +603,14 @@ thumbnail-2d .thumbnail-2d-container img {
 }
 
 .btr-profile-favorites .btr-creator-link-container {
-	line-height: 14px;
+line-height: 14px;
 }
 
 .btr-profile-favorites .card-item .btr-creator-link:any-link {
-	display: inline-block;
-	vertical-align: bottom;
-	max-width: calc(100% - 22px);
-	font-size: 12px;
+display: inline-block;
+vertical-align: bottom;
+max-width: calc(100% - 22px);
+font-size: 12px;
 }
 
 
@@ -466,8 +648,8 @@ thumbnail-2d .thumbnail-2d-container img {
     background-size: 56px;
 }
 #nav-robux-icon .icon-robux-28x28 {
-    background-position: 0 0;
-    background-image: url(https://svgur.com/i/GuZ.svg);
+    background-position: 0 -28px;
+    background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
 }
 
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
@@ -563,7 +745,7 @@ thumbnail-2d .thumbnail-2d-container img {
 
 
 /*.gotham-font .text-link, .gotham-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .gotham-font a {
-	float: right;
+float: right;
 }*/
 
 
@@ -745,7 +927,20 @@ thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
 }
 .dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
     box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    background-position: -16px -351px !important;
+    
 }
+
+div.game-card-container:nth-child(1):hover > a:nth-child(1) > div:nth-child(3) > span:nth-child(1) {
+    background-position: -16px -351px !important;
+}
+
+div.game-card-info, span.playing-counts-label:after {
+    content: " Playing";
+}
+
+
+
 
 .game-card-thumb-container:before {
     border-radius: 8px;
@@ -841,12 +1036,8 @@ height: 100%;
 .light-theme .game-card-info .info-label {
     padding-right: 0;
     margin-right: -2px;
-}
-
-
-
-.light-theme .text, .light-theme .text-date-hint, .light-theme .text-default, .light-theme .text-description, .light-theme .text-footer, .light-theme .text-info, .light-theme .text-label, .light-theme .text-secondary, .light-theme p {
-    color: rgb(25, 25, 25);
+    margin-top: -2px;
+    white-space: pre-wrap;
 }
 
 
@@ -984,7 +1175,7 @@ border-top: hidden;
 
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
-	white-space: pre;
+white-space: pre;
 }*/
 
 .light-theme .btn-secondary-xs {
@@ -1116,7 +1307,7 @@ box-shadow: none !important;
 
 
 .profile-container .asset-item .item-name:hover {
-	color: #00A2FF !important;
+color: #00A2FF !important;
     text-decoration: none !important;
 }
 
@@ -1181,11 +1372,9 @@ margin-top: -2px;
 }*/
 
 
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-    font-weight: 400;
+.game-card-container .game-card-name {
+    font-weight: 300;
 }
-
 
 
 .light-theme .text-label, .light-theme.text-label:hover, .light-theme .text-label:focus {
@@ -1193,6 +1382,14 @@ margin-top: -2px;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 4px;
+}
+
+.game-card-info .info-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #757575 !important;
 }
 
 
@@ -1233,9 +1430,11 @@ background-color: #44b4f8;
 
 .light-theme .game-card-info {
     position: absolute;
-    bottom: auto !important;
+    bottom: 6px;
     width: 100%;
-    margin: 0 6px;
+    margin: 2px 6px !important;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .game-cards .game-card {
@@ -1298,7 +1497,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     font-weight: 300;
 }
 .gotham-font .font-caption-header {
-    color: #333333 !important;
+    color: #000000 !important;
 }
 
 
@@ -1312,6 +1511,19 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .layer {
     padding: 0;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600 !important;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600 !important;
+}
+
+.profile-container .asset-item .item-name {
+    font-weight: 300 !important;
+    color: #000000 !important;
 }
 
 
@@ -1410,8 +1622,10 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .light-theme .game-card-container .game-card-name
 {
-    padding: 0 6px;
-    margin: 6px 0;
+    padding: 2px 6px 0 6px;
+    margin: 0 0;
+    white-space: nowrap;
+    color: #000000 !important;
 }
 
 .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb
@@ -1421,7 +1635,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .light-theme .game-card-info
 {
-    position: absolute;
+    position: sticky;
     bottom: 6px;
     width: 100%;
     margin: 0 6px;
@@ -1459,10 +1673,9 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
-    background-position: 0 -480px;
+    background-position: 0 -351px !important;
     background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg)
 }
-
 
 
 
@@ -1482,9 +1695,6 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     color: #fff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-}
-span.font-caption-header.chat-header-title.ng-binding:after {
-    content: " & Party";
 }
 
 .light-theme .icon-chat-add-friends, .light-theme .icon-chat-arrow-right, .light-theme .icon-chat-back, .light-theme .icon-chat-close-black, .light-theme .icon-chat-close-white, .light-theme .icon-chat-error, .light-theme .icon-chat-friends, .light-theme .icon-chat-group-create, .light-theme .icon-chat-group-label, .light-theme .icon-chat-group-name, .light-theme .icon-chat-info-black, .light-theme .icon-chat-info-white, .light-theme .icon-chat-more-dialogs, .light-theme .icon-chat-more-options, .light-theme .icon-chat-notification, .light-theme .icon-chat-notification-mute, .light-theme .icon-chat-party-label-black, .light-theme .icon-chat-party-label-white, .light-theme .icon-chat-pin, .light-theme .icon-chat-pinned, .light-theme .icon-chat-place-favorite, .light-theme .icon-chat-place-my, .light-theme .icon-chat-place-popular, .light-theme .icon-chat-place-recent, .light-theme .icon-chat-place-recommended, .light-theme .icon-chat-place-vip, .light-theme .icon-chat-play-together, .light-theme .icon-chat-resend, .light-theme .icon-chat-search, .light-theme .icon-chat-search-cancel, .light-theme .icon-chat-search-white, .light-theme .icon-chat-selected, .light-theme .icon-chat-set-place, .light-theme .icon-chat-unpin, .light-theme .icon-default-chat
@@ -1530,11 +1740,6 @@ background-color: #ffffff;
 .light-theme .dialog-container .dialog-input-container .dialog-input
 {
     background-color: #fff;
-}
-
-.gotham-font .font-caption-header
-{
-    color: #b8b8b8;
 }
 
 
@@ -1881,11 +2086,6 @@ border-radius: 1px;
     border-radius: 1px;
 }
 
-.gotham-font .font-caption-header
-{
-    color: #606162
-}
-
 .light-theme .rbx-header .rbx-navbar li .nav-menu-title:focus, .light-theme .rbx-header .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
@@ -1986,6 +2186,12 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .dark-theme .game-card-info .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .icon-currently-playing-sm, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70 {
     background-position: 0 -496px;
+    display: none;
+}
+
+.light-theme .game-card-info .info-label.icon-votes-gray {
+    background-position: 0 -480px;
+    display: block;
 }
 
 
@@ -2217,6 +2423,50 @@ div[style="col-sm-6 slide-item-container-left"]
     border: 0;
 }
 
+
+.game-stats-container .game-stat .text-label {
+    white-space: nowrap;
+    color: #B8B8B8 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.voting-panel span {
+    float: none;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-follow-button-container .follow-button {
+    width: 0;
+    text-align: center;
+    display: none;
+}
+
+*.gig-bar-container img {
+    display: none;
+}
+
+constructed stylesheet
+.gotham-font .game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container .favorite-button {
+    width: 68px;
+    padding-left: 40px !important;
+}
+
+constructed stylesheet
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container .icon-label {
+    display: none !important;
+}
+
+constructed stylesheet
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .voting-panel {
+    width: 110px;
+    bottom: -24px;
+    float: left;
+    margin-left: -40px !important;
+}
+
+
 /*.light-theme .icon-robux-28x28, .robux-upsell .unsubscribed .icon-robux-white
 {
     background-image: url(https://svgur.com/i/GNh.svg);
@@ -2237,7 +2487,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 #nav-robux-icon .icon-robux-28x28:hover
 {
-    background-image: url(https://svgur.com/i/GuZ.svg);
-    background-position: -28px;
+    background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+    background-position: -28px -28px;
 }
 }

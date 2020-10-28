@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         jonathansross
 @description    `Simple CSS-only overrides for moodle.abtech.edu. Specifically for students and instructors. Improves A-B Tech branding, accessibility, usability, and allows for full-screen grading in Moodle. Makes Moodle easier to use on a laptop as well. Created by Jonathan Ross, instructor.`
-@version        2020824.19.2
+@version        20201028.3.31
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -102,9 +102,7 @@ nav.navbar .btn-secondary {
     background-color: #6393a8 !important;
     color: white !important;
 }
-.popover-region-messages .content-item-body{
-    /*color:#000 !important;*/
-}
+
 .breadcrumb {
     padding: 0;
     margin: 0;
@@ -355,14 +353,22 @@ table.dme-schedule th {
 }
 .editing .section .activity .mod-indent-outer {
     padding-left: 1.3rem;
-    padding-right: 0rem;
+    padding-right: 6rem;
+}
+.editing div.action-menu-item {
+    width: 20px;
+}
+.editing .section .filler,
+.editing span.autocompletion {
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 .availabilityinfo.ishidden {
     margin: -10px 0 10px;
 }
 li.section.main>div.right.side {
-    background: #f3f0f0;
-    margin-top: 0px;
     margin-right:10px;
 }
 div#fitem_id_introeditor .col-md-3,
@@ -429,7 +435,7 @@ h3.sectionname span.inplaceeditable-text {
 .course-content ul.topics li.section .summary {
 	margin: 1rem 2rem 0;
 }
-.hide, .hidden {
+.hide {
 display:none !important;
 }
 b, strong {
@@ -466,6 +472,30 @@ pre em strong
     line-height: 1;
     font-weight: 600;
     letter-spacing: -.5px;
+}
+.activity-instance .action-menu-trigger,
+.section .activity .actions .dropdown {
+    background: #fff0f0;
+    padding: 0px 4px;
+    border:solid #ff8080 1px;
+}
+/* ADDED 102720 */
+.section .activity .availabilityinfo.isrestricted {
+    display: block;
+    font-size: 90%;
+}
+.tag-info, .badge-info {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    color: #f00;
+    font-style: italic;
+    font-size: 90%;
+    padding: 0;
+    margin-left: 0px
+}
+.tag-info, .badge-info strong {
+    font-size: 90%;
+    font-weight:400;
 }
 
 }

@@ -3,62 +3,67 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Minor changes; Tab highlights, Product highlights, etc....`
-@version        20181221.7.32
+@version        20201028.5.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("khanapakana.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("khanapakana.com") {
@@ -97,6 +102,12 @@ ul::-webkit-scrollbar-thumb:hover,
 
 .content .CELL h2 {
     top: 0px!important;
+}
+
+.CELL[style="float:left;"],
+.CELL[style="float:right;"] {
+	display: inline-block;
+	float: none!important;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -140,6 +151,8 @@ body {
 }
 
 #tabsI ul,
+.subcellCat-v ul li a,
+.subcellCat1 ul li a,
 body {
 	font-size: 17px!important;
 }
@@ -178,6 +191,12 @@ selector {
     margin-top: -10px!important;
 }
 
+.recipe_count_se,
+.recipes .rectitlediv .info
+{
+    margin-bottom: 12px;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
 #chef_cont ul li,
@@ -199,6 +218,10 @@ selector {
 	margin: 3rem 0 12px!important;
 }
 
+.content-12col-nobox:nth-child(2) .subcellCat1 {
+	margin: 3rem 0 0 18px!important;
+}
+
 .subcellCat-v {
     margin: 1rem -4rem!important;
 }
@@ -209,6 +232,10 @@ selector {
 
 .searchbox {
     margin: 3px!important;
+}
+
+.recipes .rectitlediv .info[style*="width:138px;"] span {
+    margin: 0 0 0 1.5rem!important;
 }
 
 .subcellCat {
@@ -231,8 +258,9 @@ selector {
 	padding: .5rem .5rem 2.5rem .5rem!important;
 }
 
-selector {
-	padding: 6px!important;
+.recipes .rectitlediv {
+    margin: 0 0 0 5px;
+    padding: 12px 0;
 }
 
 /*___ Heights ______________________________________________________________________*/
@@ -241,12 +269,17 @@ selector {
 	max-height: none!important;
 }
 
-selector {
+.recipe_count_se {
 	height: auto!important;
 }
 
 .text-wrapp1 {
     height: 32px!important;
+}
+
+.recipes .rectitlediv .info[style*="width:138px;"],
+.recipe_count_se {
+    height: 21rem!important;
 }
 
 .buzz-links {
@@ -259,8 +292,14 @@ body {
 	max-width: none!important;
 }
 
+.recipes .rectitlediv {
+	width: auto!important;
+}
+
+.info[style*="height:20px;"],
 #cloud,
 #footerT .inner_f2 .fltL:first-child,
+#paging,
 .CELL .subcell,
 .container,
 .footer,
@@ -268,10 +307,12 @@ body {
 .popularcusine,
 .recipes .recipe,
 .searchdiv,
+.subcellCat-v,
 .subcellCat1,
 .subcontent-box,
 .wrapper1,
-.wrapper2 {
+.wrapper2
+{
 	width: 100%!important;
 }
 
@@ -301,10 +342,6 @@ body {
     width: 92%!important;
 }
 
-.subcellCat-v {
-    width: 82%!important;
-}
-
 .NewsletterSubscription input[type="text"] {
     width: 65%!important;
 }
@@ -330,24 +367,9 @@ body {
     width: 29%!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.subcellCat-v li {
+    width: 10.92em;
+}
 }
 
 @-moz-document domain("khanapakana.com") {
@@ -394,6 +416,7 @@ p {
 #footerT .inner_f2 .s_lock,
 #footerT .inner_f2 .shop_conf,
 #form1 > h2.Header_H1 > a,
+.Green,
 h2,
 h1 {
 	color: #F0E890!important;
@@ -484,29 +507,6 @@ pre ::selection {
 .vm-hook-default .vm-hook {
     color: #40bfff!important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("khanapakana.com") {
@@ -520,13 +520,21 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
-.yafnet .menuContainer,
+
 #footerT .inner_f3,
 .header,
 .headerbottom,
-.yafnet tr.header2 {
+.yafnet .menuContainer,
+.yafnet tr.header2
+{
 	background-color: #060505!important;
 }
+
+#tabsI
+{
+	background-color: #0a0909!important;
+}
+
 
 /*___ Background 0000 ______________________________________________________________*/
 
@@ -549,37 +557,6 @@ html {
 .main,
 .topicRow_Alt td {
 	background-color: rgba(0, 0, 0, 0)!important;
-}
-
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	border-left-color: #434343!important;
-	background: linear-gradient(to right, #383838, #0000)!important;
-}
-
-/*__________________________________________________________________________________*/
-
-code,
-pre {
-	background: #111!important;
-	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
-	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
-}
-
-code {
-    background: #FDFCE4!important;
-    border: 1px solid #eec!important;
-    font-size: 110%!important;
-    padding: 3px 8px!important;
-    white-space: pre-wrap!important;
-}
-
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	background: linear-gradient(to right, #383838, #0000)!important;
-	border-left-color: #434343!important;
 }
 
 /*__ Blue __________________________________________________________________________*/
@@ -640,7 +617,6 @@ selector:active {
 
 #footerT .inner_f2,
 .content-1col-nobox,
-.recipes,
 .subcontent-box,
 .subcontent-video-box {
 	background-color: #000!important;
@@ -651,7 +627,6 @@ selector:active {
 
 #footerT .inner_f2:hover,
 .content-1col-nobox:hover,
-.recipes:hover,
 .subcontent-box:hover,
 .subcontent-video-box:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -659,39 +634,27 @@ selector:active {
 
 /*___ Plain ________________________________________________________________________*/
 
-
 #chef_cont ul li,
 #related-thumbs .cont,
 .CELL,
+.recipes,
 .subcellCat-v,
 .yafnet .post,
 .yafnet .post_alt {
-	background-color: #111!important;
+	background-color: #191919!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-
 #chef_cont ul li:hover,
 #related-thumbs .cont:hover,
 .CELL:hover,
+.recipes:hover,
 .subcellCat-v:hover,
 .yafnet .post:hover,
 .yafnet .post_alt:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
-
-/*___ Noise ________________________________________________________________________*/
-
-selector {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-	background-repeat: repeat-x, repeat!important;
-	background-size: 100px 15px, 140px 140px!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
@@ -747,6 +710,14 @@ selector {
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
+
+/*___ Highlight Background _________________________________________________________*/
+
+ppp
+{
+	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
 }
 
 @-moz-document domain("khanapakana.com") {
@@ -764,6 +735,7 @@ selector {
 
 #related-thumbs .cont:hover,
 .CELL:hover,
+.CELL:hover p,
 .recipes:hover,
 .yafnet .post:hover,
 .yafnet .post_alt:hover {
@@ -815,7 +787,6 @@ selector {
 selector:hover {
 	opacity: 1!important;
 }
-
 }
 
 @-moz-document domain("khanapakana.com") {

@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Velvica Jira 3.0.1
+@name           Velvica Jira 3.0.3
 @namespace      USO Archive
 @author         Igor Vodka
-@description    `Velvica Jira 3.0.1`
-@version        20201021.17.27
+@description    `Velvica Jira 3.0.3`
+@version        20201028.10.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown showEstimate "Отображать Estimate" {
@@ -138,11 +138,12 @@ no "Нет" <<<EOT .ghx-statistic-badge {
     background: #F20000;
 }
 .ghx-statistic-badge {
-} 
-.ghx-extra-field[data-tooltip*="Component"] {	
-    margin-bottom: 4px;	
 }
-#ghx-backlog-column .ghx-row {	
-    max-width: calc(100% - 70px);	
+.ghx-extra-field[data-tooltip*="Component"] {
+    margin-bottom: 4px;
 }
+#ghx-backlog-column .ghx-row {
+    max-width: calc(100% - 125px);
+}
+/*[[showEstimate]]*/
 /* i really want this to be global */

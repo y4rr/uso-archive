@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         idmresettrial
 @description    `Nothing to say.`
-@version        20201025.4.18
+@version        20201028.2.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -90,6 +90,16 @@
 
 @-moz-document url-prefix("https://voz.vn/a/") {
 @media (min-width: 1366px) {
+    #header {
+        display: none !important;
+    }
+    .p-nav-smallLogo {
+        display: inline-block !important;
+    }
+    .p-sectionLinks.p-sectionLinks--empty {
+        display: none !important;
+    }
+
     .porta-article-item {
         display: inline-block;
         width: 32%;
@@ -144,6 +154,14 @@
     .bbImageWrapper + br {
         display: none;
     }
+    .bbImage {
+        max-height: 69vh;
+    }
+}
+}
+
+@-moz-document url-prefix("https://voz.vn/t/") {
+@media (min-width: 721px) {
     .bbImage {
         max-height: 69vh;
     }
