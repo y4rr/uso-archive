@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201026.5.53
+@version        20201027.18.29
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: New fix for attacking */
+/*Last update: Fix for newspaper */
 
 
 html:not([stylus-iframe]):after {
@@ -890,7 +890,7 @@ div.point-wrap {
 }
 
 @-moz-document url-prefix("https://www.torn.com/newspaper.php#") {
-div.leadImageWrap___3M0e2 {
+div.leadImageWrap___31UwA {
     filter: invert(1)hue-rotate(180deg)
 }
 
@@ -902,7 +902,11 @@ h5 {
     filter: invert(0)hue-rotate(0deg)
 }
 
-div.article___2osqj img {
+div.text___3i9Nn img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.imageWrap___2-tPL {
     filter: invert(1)hue-rotate(180deg)
 }
 

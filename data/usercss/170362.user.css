@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlienDrew
 @description    `Makes the entire sticky notes website dark.**(no longer, now it only themes the part not already themed)If you want the full dark theme, just get the Tampermonkey script that enables it => https://github.com/TheAlienDrew/Tampermonkey-Scripts/raw/master/Microsoft/Sticky-Notes-Dark-Mode.user.js`
-@version        20201021.23.44
+@version        20201027.23.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -90,7 +90,7 @@ html {
 .ms-Dialog-content.innerContent-83 {
     color: white;
 }
-.ms-Dialog-main {
+.ms-Dialog-main:not(.main-62) {
     background: #494949;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         EotT
 @description    `Opvolger van https://userstyles.org/styles/162546/tweakers-dark-by-eott.Deze versie is helemaal herschreven, en zou beter moeten zijn dan de eerste versie.Ik heb deze style gemaakt, aangezien de huidige reeds bestaande stylen niet helemaal aan mijn wensen voldeden. Indien er problemen zouden zijn (bv elementen die niet goed gestyled zijn), laat het me hier weten (of per pm op Tweakers), en ik zal het zo snel mogelijk proberen op te lossen. (Pm's via Tweakers zullen sneller beantwoord worden, aangezien ik dagelijks op Tweakers kom.)In a nutshell:* Volledige donkere site, inclusief forum en mobiel (responsive).* Tweakblogs niet inbegrepen* Ondersteuning. Bij bugs of nieuwigheden op tweakers -> Meestal binnen de dag aangepast.`
-@version        2020108.21.32
+@version        20201027.21.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,8 @@
 .itemContainer .info,
 .searchAanbod #nearbyAdForm,
 #heroBlock,
-table.itemList{
+table.itemList,
+.vraagAanbodContent .vraagAanbodForm .relationeditor .relationWidget{
     background-color:inherit;
 }
 
@@ -198,6 +199,10 @@ input, select,
     background-color: rgb(40,40,40);
 }
 
+.form-row input[type=text].inputsearch, .relationeditor input[type=text].inputsearch{
+      background-color: rgb(40,40,40) !important;
+}  
+
 .dropdown ul li:hover, .dropdown ul li.active, #menu .dropdown ul li:hover,
 .fancyButton.darkGrey:hover,
 .fancyButton.grey:hover{
@@ -320,7 +325,8 @@ table.highlights td.publicationTime span.new,
 #calendarEvents .itemList li .info .date,
 input::placeholder,
 .deals-listing table.listing .itemname p.specline.ellipsis a,
-.tabbedContentWrapper.display-tags > ul.tabbedContent li{
+.tabbedContentWrapper.display-tags > ul.tabbedContent li,
+.vraagAanbodContent .vraagAanbodForm .form-row.sellerType .field .lowerlabel, .vraagAanbodContent .vraagAanbodForm .form-row.title .field .lowerlabel, .vraagAanbodContent .vraagAanbodForm .form-row.productAge .field .lowerlabel, .vraagAanbodContent .vraagAanbodForm .form-row.adStatus .field .lowerlabel{
     color: rgb(150,150,150); 
 }
 
@@ -406,7 +412,8 @@ body.fullFocusView .pageIndexWrapper .pageIndex,
 #menu>ul>li.more.dropdown>a.trigger.username,
 #categoryBrowser .no-category, #categoryBrowser #catid_0 > a,
 #categoryBrowser #catid_0 .images li a,
-#menu>ul>li.more.dropdown>a.trigger{
+#menu>ul>li.more.dropdown>a.trigger,
+.vraagAanbodContent .vraagAanbodForm .relationeditor .relationWidget .label label{
     color: rgb(200,200,200);
 }
 
@@ -823,7 +830,8 @@ table td[bgcolor="#f7f7f7"]{
 }
 
 .fpHighlightedProduct,
-.featured{
+.featured,
+.vraagAanbodContent .vraagAanbodForm .relationeditor .relationWidget{
     background-image: none;
 }
 

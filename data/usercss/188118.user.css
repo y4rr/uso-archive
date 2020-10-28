@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         犬々
 @description    `<strong>スタイルの簡単な説明</strong><small>　ニコレポを2列化＆YouTubeの様な表示形式にします。</small><strong>注意点</strong><small>　長いコミュニティ名やマイリスト名等は表示範囲を超えた所が非表示になります。　URL指定先がユーザーページ全体なので干渉している部分がありますが、パッと見異常は見られないので放置しています。</small><strong>追記</strong><small>　その他の位置や大きさの調整を独断と偏見で変更しています。　解像度等違いがある際に出るかもしれない不具合等は保証出来ません。</small>`
-@version        2020829.13.26
+@version        20201027.20.4
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown Option-Playmark- "再生マーク" {
@@ -209,6 +209,8 @@ url-prefix("https://www.nicovideo.jp/user")
 		margin: 1px auto auto 0;
 		max-width: 340px;
 		word-break: keep-all;
+		line-height: 17px;
+		z-index: 1;
 	}
 
 	[class="SlideOut NicorepoItem NicorepoTimeline-item NicorepoItem_video"] [class="NicorepoItem-activityDescription"] *:nth-child(1)
