@@ -2,13 +2,13 @@
 @name           Ameblo Management
 @namespace      USO Archive
 @author         Ataron
-@description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Firefox版「Stylus」などの拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201028.7.1
+@description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Edge/Firefox版「Stylus」の拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
+@version        20201029.11.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.27 ********************** */
+/* Ameblo Management ver.2020.10.29 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -1801,6 +1801,12 @@ html {
     border: 1px solid #d4d5d6 !important;
     background: #d8e1e5; }
 
+.userList__item + .userList__item {
+    padding: 8px 16px; }
+
+.userList__item.is-open {
+    padding: 12px 16px; }
+
 /* 記事タイトル */
 #ucsMainLeft .userList__title {
     font-size: 16px;
@@ -1824,7 +1830,7 @@ html {
 /* 受信コメント表示枠 */
 .userList__text {
     font-size: 1rem;
-    margin: 0.5rem 1rem 0;
+    margin: 0.3rem 1rem 0;
     padding: .5em 16px;
     border: 1px solid #aaa;
     border-radius: 4px;
@@ -1837,7 +1843,7 @@ html {
 /* 時刻 */
 .userList__information {
     font-size: 16px;
-    margin: 1rem 1rem 0;
+    margin: 0.7rem 1rem 0;
     color: #000; }
 
 /* 削除・返信 ボタン */
@@ -1861,22 +1867,23 @@ html {
 /* 削除モーダル */
 [data-section-id="comment_delete"] {
     color: red;
-    text-shadow: 0 0 red;
     background: #fff;
     border-color: red; }
 
 [data-section-id="comment_delete"]:hover {
     opacity: 1;
     color: #fff;
-    text-shadow: 0 0 #fff;
     background: red;
     border-color: #f44336; }
 
 /* 返信ボタン */
 .c-buttonContained {
     font-size: 16px;
-    min-height: 30px;
-    padding: 8px 16px 6px;
+    padding: 1px 16px 0;
+    min-width: unset;
+    width: auto;
+    min-height: unset;
+    height: 28px;
     border-radius: 4px;
     background: linear-gradient(#2196f3 0%, #1976D2 70%); }
 
@@ -1888,12 +1895,21 @@ html {
 
 /* コメント入力枠 全体*/
 .commentReply {
-    margin: 1rem 1rem 0; }
+    margin: -1.6rem 1rem 0; }
+
+.commentReply__header {
+    margin-bottom: -5px; }
+
+.commentReply__headerLabel {
+    margin-left: 180px;
+    color: #000;
+    text-shadow: 0 0 #000; }
 
 /* 閉じるボタン */
 .commentReply__headerCancel {
     height: 28px;
     width: 28px;
+    margin-bottom: 4px;
     border: 1px solid #aaa;
     border-radius: 4px;
     background: #fff; }
@@ -1926,7 +1942,8 @@ html {
 
 /* 送信ボタン *********************************** */
 .commentList .sendButton {
-    margin: -0.8rem auto 0; }
+    width: 160px;
+    margin: -1.1rem auto 0; }
 
 /* ページャー */
 .pagination {
@@ -2123,10 +2140,20 @@ input.c-formInputField:focus {
     border: 2px solid #2196f3;
     border-radius: 4px; }
 
-/* 解除ダイアログ */
+/* 解除ダイアログ =共通= */
+.commentModalFooter {
+    width: 240px;
+    margin: 24px auto 0; }
+
 .commentModalFooter button {
-    border-radius: 6px;
-    padding: 2px 0 0; }
+    padding: 2px 0 0;
+    font-weight: bold;
+    width: 110px;
+    height: 28px;
+    border-radius: 4px; }
+
+.commentModalFooter__btn:only-child {
+    width: 200px; }
 
 /* コメント枠 スクロールバー =共通= ***************** */
 .userList__text::-webkit-scrollbar,
@@ -3373,212 +3400,6 @@ p.iconRight {
     margin: -45px 0 30px 250px !important;
     white-space: nowrap;
     background: none !important; }
-}
-
-@-moz-document url-prefix("https://peta.ameba.jp/p/addPeta"), url-prefix("http://peta.ameba.jp/p/addPeta") {
-/* ペタ帳（ぺタ送信ページ） ******************************** */
-/* amebaBar */
-#amebaBar li.barMenu {
-    padding: 2px 25px 0 8px; }
-
-/* ヘッダー部 */
-#header {
-    width: 900px;
-    margin: 0 auto 15px;
-    padding: 20px 0 10px;
-    border-bottom: 5px solid #78909C; }
-
-#header #headerAd {
-    display: none; }
-
-/* ブログユーザー名 */
-#header #userName a {
-    display: inline-block;
-    width: 425px;
-    padding-top: 3px;
-    margin-bottom: -4px;
-    line-height: 1.2;
-    color: #333; }
-
-#header #userName a:hover {
-    text-decoration: none;
-    background: var(--hov); }
-
-#header ul {
-    padding-top: 12px; }
-
-/* ページ全体 */
-#contents {
-    display: inline-block;
-    width: 900px }
-
-/* 今すぐペタる */
-#flashContent {
-    margin: 0;
-    width: auto;
-    position: absolute;
-    left: calc(50% - 450px);
-    top: 140px; }
-
-#flashContent #petaButton {
-    margin-bottom: 0;
-    color: #666;
-    border: 6px solid #fff;
-    border-radius: 8px; }
-
-/* サイズ大のFlashペタボタン */
-#flashContent.baby,
-#flashContent.pag,
-#flashContent.pig,
-#flashContent.horse,
-#flashContent.sheep,
-#flashContent.mammoth,
-#flashContent.dinosaur,
-#flashContent.pegasus,
-#flashContent.yeti,
-#flashContent.piyo,
-#flashContent.penguin {
-    width: 260px;
-    overflow: hidden; }
-
-#flashContent.baby #peta_button,
-#flashContent.pag #peta_button,
-#flashContent.pig #peta_button,
-#flashContent.horse #peta_button,
-#flashContent.sheep #peta_button,
-#flashContent.sheep #petaButton,
-#flashContent.yeti #peta_button,
-#flashContent.yeti #petaButton,
-#flashContent.piyo #peta_button,
-#flashContent.penguin #peta_button {
-    margin-left: -145px; }
-
-#flashContent.pegasus #petaButton,
-#flashContent.mammoth #petaButton,
-#flashContent.dinosaur #petaButton {
-    margin-left: -435px;
-    border: none;
-    border-radius: 0; }
-
-#flashContent.pegasus #petaButton {
-    margin-left: -160px; }
-
-/* ブレーヤーインストールの説明 */
-#flashContent .playerInfo {
-    display: none; }
-
-/* 自分のペタに戻る */
-#myPeta {
-    position: absolute;
-    top: 70px;
-    left: calc(50% - 450px);
-    text-align: left;
-    width: 250px;
-    font-size: 13px; }
-
-#myPeta a {
-    display: block;
-    margin-top: 4px;
-    padding: 1px 6px 0;
-    float: right; }
-
-#myPeta a:hover {
-    text-decoration: none;
-    background: #fff; }
-
-/* ～さんについたペタ */
-#contents h1 {
-    float: left;
-    width: 255px;
-    margin: 0 auto 10px;
-    border-bottom: 5px solid #78909C }
-
-/* リスト */
-#contentsLi {
-    float: right;
-    width: 600px;
-    padding: 10px;
-    min-height: 340px;
-    background: var(--home_dim); }
-
-#mainContentsLi {
-    width: 585px; }
-
-#contentsLi li ul {
-    width: 490px; }
-
-#mainContentsLi li {
-    border-bottom: 1px dotted #666; }
-
-#mainContentsLi li li {
-    border-bottom: 1px dotted #666;
-    margin: 0 0 4px;
-    padding: 0 0 4px; }
-
-#mainContentsLi li li .prfImg {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    overflow: hidden; }
-
-#listLink li a {
-    color: #333 !important; }
-
-.time,
-.dateTxt {
-    color: #333 !important; }
-
-.rootName {
-    padding-top: 12px !important; }
-
-/* リストのページャー */
-.cmnPaging {
-    position: absolute;
-    top: -50px;
-    left: calc(50% + 132px);
-    margin: 0; }
-
-.cmnPaging a {
-    border: 1px solid #999; }
-
-.cmnPaging .now {
-    border: 1px solid #999; }
-
-.cmnPaging a.rwd {
-    background-position-y: 2px; }
-
-.cmnPaging a.fwd {
-    background-position-y: -198px; }
-
-/* フッター つながり検索 */
-#footer {
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-
-#footer #leftSide {
-    position: absolute;
-    left: calc(50% - 450px);
-    margin: -53px 0 0;
-    padding: 9px 0 7px;
-    white-space: nowrap;
-    width: 260px;
-    text-align: left;
-    overflow: hidden;
-    border: 1px solid #aaa;
-    background: #fff;
-    transition: .2s; }
-
-#footer #leftSide:hover,
-#footer #leftSide:focus-within {
-    width: 900px; }
-
-input#searchBox:focus,
-input#searchButton:focus {
-    outline-color: #2196f3; }
-
-#leftSide a {
-    color: #000;
-    margin: 0 100px 0 15px; }
 }
 
 @-moz-document domain("msg.ameba.jp") {
@@ -6138,7 +5959,7 @@ footer {
 /* 「ホーム 表示項目の設定方法」チュートリアル ***************** */
 @media screen and (min-width: 850px) {
 #basic-info-name > a[href*="158183"]::before {
-    content: "●ホーム画面の表示項目設定方法●\A Code31 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 31 を参照ください";
+    content: "●ホーム画面の表示項目設定方法●\A Code30 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 30 を参照ください";
     position: absolute;
     font-size: 16px;
     top: 44em;

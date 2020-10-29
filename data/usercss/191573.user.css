@@ -1,0 +1,244 @@
+/* ==UserStyle==
+@name           Youtube Retro Wave
+@namespace      USO Archive
+@author         Yad
+@description    `YOUTUBE Retro Wave Theme`
+@version        20201029.1.7
+@license        CC-BY-NC-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+
+/*2021 Youtube Retro Wave by YAD*/
+
+
+
+#account-name.ytd-active-account-header-renderer {/*name*/
+    text-shadow: 0 0 8px var(--paper-purple-a200);
+}
+
+#logo-icon-container.ytd-topbar-logo-renderer {/*logo*/
+    animation-name: logoyad;
+	filter: hue-rotate(290deg);
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+	fill-opacity: 1;
+		
+}
+	@keyframes logoyad {
+   0% {transform: scalex(0)}
+  25% {transform: scaleY(0.1)}
+  50% {transform: scalex(0.7)}
+  75% {transform: scaleY(0.15)}
+	
+}
+.ytd-topbar-logo-renderer:hover {
+	animation: presslogo;
+	animation-duration:8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+@keyframes presslogo {
+  0% {transform: rotate(13680deg)}
+	50% {filter: hue-rotate(80deg);}
+100% {filter: hue-rotate(360deg);}
+}
+.style-scope ytd-thumbnail:active {
+	animation: thumbturn;
+	animation-duration:	1.1s;
+	animation-iteration-count: 1;
+	transition: opacity 0.5s;
+}
+@keyframes thumbturn {
+  0% {transform: scalex(0)}
+  25% {transform: scaleY(0.1)}
+  50% {transform: scalex(0.7)}
+
+	
+}
+#thumbnail.ytd-moving-thumbnail-renderer {
+    transition: opacity 0.5s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    max-height: var(--yt-img-max-height, none);
+    max-width: var(--yt-img-max-width, 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+	.ytp-swatch-background-color {
+	animation-name: yadpogi;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
+}
+@keyframes yadpogi {
+0%  {background-color: #fff; box-shadow: 0 0 9px 3px #ff00d4;}
+10% {background-color: #fff; box-shadow: 0 0 7px 3px #9d00ff;}
+20% {background-color: #fff; box-shadow: 0 0 9px 3px #5100ff;}
+30% {background-color: #fff; box-shadow: 0 0 7px 3px #00d9ff;}
+40% {background-color: #fff; box-shadow: 0 0 9px 3px #00ffc3;}
+50% {background-color: #fff; box-shadow: 0 0 7px 3px #b3ff00;}
+60% {background-color: #fff; box-shadow: 0 0 9px 3px #ff8400;}
+70% {background-color: #fff; box-shadow: 0 0 7px 3px #ff6a00;}
+80% {background-color: #fff; box-shadow: 0 0 9px 3px #f00;}
+90% {background-color: #fff; box-shadow: 0 0 7px 3px #ee436b;}
+100%{background-color: #fff; box-shadow: 0 0 7px 3px #ff00d4;}
+}
+ytd-app {
+background-image: url(https://i.postimg.cc/J4gFh3TK/sunset.gif), url(https://i.postimg.cc/Q8jCDLRS/retrowave-purple.jpg);
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-color: #14031e;
+background-position: 50% 33%, center;
+background-size: 300px, 100%;
+}
+
+.html5-video-player {/*glow on player*/
+    box-shadow: 0 0 20px #f800ff;
+}
+
+#container.ytd-masthead {/*top bar*/
+    background-color: #4a157c05;
+    background-image: url(https://i.postimg.cc/DfDGtyv4/2eSd.gif);
+    background-repeat: repeat-x;
+	background-position: bottom;
+	background-size: 120px;
+	background-blend-mode: overlay;
+}
+html:not(.style-scope)[dark], :not(.style-scope)[dark] {/*side bar*/
+    --yt-spec-brand-background-solid: #f5151500;
+    --yt-spec-brand-background-primary: rgb(218 0 0 / 0%);
+    --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0);
+	--yt-spec-general-background-a: #1ed03300;
+    --yt-spec-general-background-b: #e31a1a00;
+    --yt-spec-general-background-c: #df1e1e00;
+}
+
+.style-scope ytd-rich-metadata-renderer {/*side coloumn*/
+background-color: #601090;
+border-radius: 3px
+}
+ytd-comments {/*comments box*/
+    display: block;
+    background-color: #00000042;
+	box-shadow: 0 0 10px 7px #00000047;
+}
+
+#container.ytd-searchbox {/*search bar*/
+    background-color: #20062ea3;
+    border-left: 1px solid #ffffff70;
+	border-top: 1px solid #ffffff70;
+	border-bottom: 1px solid #ffffff70;
+	border-right: 0px solid #ffffff70;
+    border-radius: 17px 0 0 17px;
+}
+#search-icon-legacy.ytd-searchbox {
+    cursor: pointer;
+    width: 65px;
+    border: 1px solid #ffffff6b;
+    background-color: #770c92;
+    border-radius: 0px 17px 17px 0px;
+}
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+	opacity: 1;
+}
+
+.ytp-scrubber-pull-indicator::before {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    border-style: dashed;
+    border-width: 0px;
+    border-color: #271a1a40;
+    background-image: url(https://i.postimg.cc/Sx80hzN3/original.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	
+}
+
+
+/*2021 Youtube Retro Wave by YAD*/
+
+
+.ytp-scrubber-pull-indicator {
+    position: absolute;
+    z-index: 42;
+    bottom: 27px;
+    left: -14px;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+paper-button.ytd-subscribe-button-renderer {/*sub button*/
+    background-color: #a320fb;
+    border-radius: 22px;
+}
+.ytp-sb-subscribe, a.ytp-sb-subscribe {
+    background-color: #a320fb;
+    color: #fff;
+}
+
+.guide-entry-badge.ytd-guide-entry-renderer {/*live icon*/
+    width: 16px;
+    height: 16px;
+    color: #00d0ff;
+    display: none;
+}
+
+ytd-multi-page-menu-renderer {/*right dropdown*/
+    display: inline-block;
+    background: #240927e3;
+	border-radius: 20px;
+}
+
+yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
+    color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));
+    filter: hue-rotate(272deg) saturate(105%) opacity(100%) brightness(100%) contrast(78%);
+}
+paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {/*toggle button*/
+    background-color: #fff;
+	box-shadow: 0 0 10px 5px #d208ff;
+}
+paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
+    opacity: 1;
+    background-color: #fff;
+	box-shadow: 0 0 10px 5px #d208ff;
+}
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {/*toggle button2*/
+    background: #ffffff;
+    box-shadow: 0 0 10px 5px #d208ff;
+}
+
+.ytp-volume-slider-handle {/*volume buttom*/
+    position: absolute;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    margin-top: -6px;
+    background: #ffffff;
+    box-shadow: 0 0 12px 5px #ff00e2;
+}
+
+
+}

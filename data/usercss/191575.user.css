@@ -1,0 +1,178 @@
+/* ==UserStyle==
+@name           ニコニコ 新マイページ ダークテーマもどき
+@namespace      USO Archive
+@author         Azuma
+@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。配置等はいじらず広告程度しか消していません。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあると思います（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--併用可能か確認済み--CCT_fumi様が公開している「<a href="https://userstyles.org/styles/187176/theme">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」--どうにもならなかったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字→おそらくCSSだけでは無理です…（知らないだけかも）--余談的なもの--<a href="https://www.nicovideo.jp/watch/sm37578183">拡張機能でニコニコ動画をダークテーマ化するものがあるようです</a>。`
+@version        20201029.4.8
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user"), url-prefix("https://site.nicovideo.jp/badge") {
+/* 広告 */
+.HeaderContainer_Re-ad,.RightSideContainer-adWrap,.FormationFrame.RightSideContainer-formationFrame,.Ads.UserPageFooterContainer-ad,.PremiumBanner{
+    display: none !important
+}
+
+/* ユーザーページヘッダー */
+.UserPage-header,.UserPageHeader,.UserDetailsHeader,.OtherMypageLinks,.ThreePointMenu,.ShareModal-modal,.MainMenuContainer-menu{
+    background-color: #555
+}
+.NiconicoPoint{
+    background-color: #757575
+}
+.MainMenuContainer{
+    padding: 2px 0px 0px !important;
+    background-color: #757575;
+    transform: translateY(-2px) !important
+}
+
+.MainMenuContainer-activeBorder{
+    background-color: #00b03b
+}
+.MainMenuContainer-garageLink{
+    background: linear-gradient(90deg,#298a26,#046f6f);
+}
+.MainMenuContainer-garageLink:hover{
+    background: linear-gradient(90deg,#1e681c,#025151);
+}
+
+/* ニコレポ */
+body{
+    background-color: #3e3e3e;
+    color: #eee;
+}
+.RadioItem > input:checked + label::after{
+    background: #5fb752;
+}
+.ModalActionButton,.FeedbackLink{
+    background-color: #555;
+}
+.NicorepoItem-item{
+    background-color: #757575;
+    border: 1px solid #666;
+}
+
+/* ミュート設定 */
+.ModalContent{
+    background-color: #555;
+}
+
+/* フォロー */
+.SubMenuLink-link_active,.UserItem-content{
+    background-color: #5e5e5e;
+}
+.SubMenuLink-link_internal:hover{
+    background-color: #cacaca;
+}
+.UserItem-Content{
+    border: 1px solid #888;
+}
+.Checkbox-input:checked + .Checkbox-check::before,.ContinuousPlayButton,.VideoListEditMenuButton,.Selectbox-button,.Selectbox{
+    background-color: #c4c4c4;
+    border: 2px solid #aaa;
+    color: #373737;
+}
+.Selectbox-label,.MylistSelectbox-item{
+    color: #373737;
+}
+
+/* マイリスト */
+.ModalContent_with-footer .ModalContent-body{
+    background-color: #555;
+    background: none;
+}
+.ModalContent-footer{
+    background-color: #333
+}
+.ModalContent-footerSubmitButton{
+    background-color: green;
+}
+.MylistMediaObject-linkArea{
+    background-color: #757575;
+    border: 1px solid #666;
+}
+
+/* 履歴 */
+.LikeItemAfter-thanksMessage{
+    background-color: #757575;
+    border: 1px solid #666;
+}
+.LikeItemAfter-thanksMessage::after{
+    border-bottom-color: #646464;
+}
+
+/* バッジ */
+.t-badge-wrapper--list{
+    background: #333
+}
+.m-badge-card{
+    background: #757575;
+    border: solid 1px #666;
+}
+/* スタンプ */
+.StampCard{
+    background: #757575;
+}
+
+/* 他ユーザーページ */
+.ExpandBoxButton-overlay{
+    background: linear-gradient(180deg,hsla(0,0%,10%,0) 0,#686868);
+}
+.UserItem-content{
+    border: 1px solid #666;
+}
+.FollowButton:hover{
+    background-color: green;
+}
+.FollowButton{
+    color: #4de04d;
+    border: 1px solid #53d853;
+}
+.FollowButton_following{
+    background-color: #285928;
+}
+
+/* 文字 */
+.UserDetailsHeader-levelLabel,.UserDetailsHeader-account,.UserDetailsStatusItem-linkLabel,.Dropdown-button,.NiconicoPoint,.OtherMypageLinks-link,.ThreePointMenu > *,.ShareModal-modal,.UserDetailsHeader-nickname,.MainMenuItem,.SubMenuLink-label,.ModalActionButton,.NicorepoItem-senderName,.NicorepoItem-item,.NicorepoItem-contentDetailTitle,.NicorepoItem-activityCreatedAt,.NicorepoItem-senderName:visited,.FeedbackLink,.NicorepoMuteItem-detail,.NicorepoMuteSettingContainer-infoHelp,.LiveLink,.FolloweeContainer-header,.SubMenuHeader-title,.UserItem-description,.UserItem-nickname,.WatchLaterHeader-name,.WatchLaterHeader-metaValue,.WatchLaterHeader-advice,.Checkbox-label,.MylistItemAddition-addedAt,.VideoMediaObject-bodyTitle,.VideoMediaObject-bodyDescription,.VideoMetaData-videoRegisteredAt,.VideoMetaData-count > *,.MylistPageSubMenuHeader-counterValue,.SortMylistsListItem-name,.ModalContent-footerSubmitButton,.MylistMediaObject-bodyFollowerCount,.MylistMediaObject-bodyDescription,.MylistMediaObject-bodyTitle,.VideoWatchHistoryContainer-headerTotalCountValue,.VideoWatchHistoryContainer-headerAnnounce,.LikeItemAfter-thanksMessage > h1,.BlankState-title,.a-list__title,.StampCard-title,.StampContainer-stampRanking a,.ExpandBoxButton{
+    color: #eee
+}
+.UserDetailsHeader-levelLabelValue,.UserDetailsStatusItem-link,.CopyForm-copy,.MainMenuItem-active,.SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label,.UserItem:hover .UserItem-nickname,.VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle,.ModalContent-footerCancelButton,.MylistMediaObject:hover .MylistMediaObject-bodyTitle,.BadgeContainer-infoLink:hover,.ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover,.UserDescription .ExpandBox_is-expanded a{
+    color: #00b03d
+}
+.VideoWatchHistoryItemAfter{
+    color: #acacac;
+}
+span > *{
+    color: #eee;
+}
+.NicorepoItem-activityCreatedAt_new{
+    color: #f88da0;
+}
+
+/* ホバー */
+.Dropdown-button:hover,.ShareButton:hover,.ThreePointMenu-button:hover{
+    background-color: #252525
+}
+a:hover{
+    color: #46aa3d
+}
+
+/* SVG */
+.Dropdown-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ccc' fill-rule='evenodd' d='M7.2 10h9.6a.5.5 0 01.3.9l-4.7 4.7a.5.5 0 01-.8 0L7 11a.5.5 0 01.3-.9z'/%3E%3C/svg%3E")
+}
+.ShareButton{
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 7.5A2.3 2.3 0 0116.3 5a2.2 2.2 0 11-1.4 4l-6 3.3a2.3 2.3 0 010 .3l5.8 2.6a2.2 2.2 0 013.8 1.6 2.2 2.2 0 11-4.5-.1l-5.7-2.5a2.2 2.2 0 01-3.8-1.6 2.2 2.2 0 013.6-1.8l6-3.3z' fill='%23ccc'/%3E%3C/svg%3E")
+}
+.ThreePointMenu-button{
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7 16.4c1 0 1.8.8 1.8 1.8s-.8 1.8-1.8 1.8-1.7-.8-1.7-1.8.8-1.8 1.7-1.8zm0-6.2c1 0 1.8.8 1.8 1.8s-.8 1.8-1.8 1.8S10 13 10 12s.8-1.8 1.7-1.8zm0-6.2c1 0 1.8.8 1.8 1.8s-.8 1.8-1.8 1.8S10 6.8 10 5.8 10.8 4 11.7 4z' fill='%23ccc'/%3E%3C/svg%3E")
+}
+.NiconicoLogo_re{
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 179 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M137.7 27a1.4 1.4 0 00.4-2 13.3 13.3 0 01.6-15.3 1.4 1.4 0 00-1.1-2.2c-.5 0-.9.2-1.1.5a16 16 0 00-.8 18.5 1.4 1.4 0 002 .4m38.7-.4a16 16 0 00-.7-18.5c-.3-.3-.7-.5-1.1-.5a1.4 1.4 0 00-1.4 1.2c0 .3 0 .7.3 1A13.2 13.2 0 01174 25a1.4 1.4 0 00.4 2l.8.2c.4 0 .9-.3 1.1-.7m-8.8-8c0 .3-.2.4-.4.4a79.4 79.4 0 01-4.7-.2c0-.6 1.1-1.8 2.7-1.8 2 0 2.4 1.2 2.4 1.6m2.5 6.4c.3-.3.4-.6.4-1 0-.7-.6-1.4-1.4-1.4-.3 0-.6.2-.9.5-.6.7-1.5 1.4-3 1.4-1.4 0-3-1-3-2.8 0-.3.1-.5.2-.5h5.7c1.6 0 2.4-1 2.4-2.2 0-1.8-1.9-4.3-5.3-4.3-3.2 0-5.8 2.5-5.8 6.2 0 3.6 2.5 6 5.8 6a6 6 0 005-2M153 13.4c0 1.2-1 2.5-2.7 2.6h-1.4c-1.5 0-1.9 0-1.9-.5V12c.1-.7.2-.8 1.9-.8h1.2c2 .2 2.9 1.2 2.9 2.2m5.3 12c0-.7-.4-1.4-1.4-1.5h-.2c-.3-.1-.6-.3-1-.9l-1.6-2.4a32 32 0 00-1.8-2.7l.4-.2c2-.4 3.2-2.4 3.2-4.3 0-2-1.4-4.4-5.5-4.7h-6.6c-1 0-1.4.7-1.4 1.4s.4 1.4 1.6 1.4a446.8 446.8 0 01.3 7c0 5.6 0 5.6-.4 5.6-1 0-1.6.7-1.6 1.4s.6 1.3 1.7 1.3h3.6c1 0 1.5-.7 1.5-1.4 0-.6-.4-1.2-1.5-1.3-.3 0-.6-.2-.6-.6v-4.6c0-.6.2-.6 1.6-.6.5 0 1.2.7 2.8 3.3.1 0 1.3 2 1.3 2.3 0 .2 0 .3-.2.4-.7.1-1 .7-1 1.3 0 .6.5 1.2 1.4 1.2h3.8c1 0 1.6-.8 1.6-1.5M127.6 22v-9.1c0-3-2.3-5.3-5.2-5.3h-11.2c-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2h10.1c1.2 0 2 .8 2 2v6.9c0 1.2-.7 2-2 2h-10.1c-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2h11.2c2.9 0 5.2-2.4 5.2-5.3M104 25c0-1.2-1-2.2-2.2-2.2H87.3c-1.2 0-2.2 1-2.2 2.3 0 1.2 1 2.2 2.2 2.2h14.5c1.2 0 2.2-1 2.2-2.2m-.2-15c0-1.3-1-2.3-2.2-2.3h-14c-1.3 0-2.3 1-2.3 2.3 0 1.2 1 2.2 2.2 2.2h14.1c1.2 0 2.2-1 2.2-2.2M79.7 21.9v-9.1c0-3-2.4-5.3-5.3-5.3H63.2c-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2h10.2a2 2 0 012 2v6.9c0 1.2-.8 2-2 2H63.2c-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2h11.2c3 0 5.3-2.4 5.3-5.3m-23.7 3c0-1.2-1-2.2-2.1-2.2H39.3c-1.2 0-2.1 1-2.1 2.3 0 1.2 1 2.2 2.1 2.2H54c1.2 0 2.1-1 2.1-2.2M56 10c0-1.3-1-2.3-2.2-2.3H39.6c-1.2 0-2.2 1-2.2 2.3 0 1.2 1 2.2 2.2 2.2h14c1.3 0 2.3-1 2.3-2.2M24.2 7.9h-7.7l3.2-3a1 1 0 000-1.5 1 1 0 00-1.5-.1l-4.9 4.6-4.9-4.6a1 1 0 00-1.5 0c-.4.5-.4 1.2 0 1.6l3.2 3H2.4C1 7.9 0 8.9 0 10.3v14.3C0 25.9 1 27 2.4 27h3l1.8 2c.3.4.8.4 1 0l1.9-2h6.4l1.8 2c.3.4.8.4 1.1 0l1.8-2h3c1.3 0 2.4-1.1 2.4-2.4V10.3c0-1.3-1-2.4-2.4-2.4' fill='%23eee' fill-rule='evenodd'/%3E%3C/svg%3E")
+}
+
+/* スクロールバー */
+.Snap.Dropdown.OtherMypageLinks,.ModalContent-body,.Selectbox{
+    scrollbar-width: thin
+}
+}

@@ -2,15 +2,16 @@
 @name           ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ
 @namespace      USO Archive
 @author         gonbuto
-@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも現状ニコレポ/フォロー/マイリスト/あとで見る/履歴画面に対応遅延ロードがウザい件についてはCSSじゃどうしようもないので、グリモンとか使ってJSで対応してくださいTips:- 左に寄り過ぎてるのが嫌！て人はコメントアウトしてある「全画面に最適化する用」がいいかもFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポなどの白地のアイテム(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
-@version        20201028.9.33
+@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも対応画面:- マイページ: ニコレポ/フォロー/マイリスト/あとで見る/履歴画面- 類似レイアウト: シリーズ画面Tips:- 左に寄り過ぎてるのが嫌！て人はコメントアウトしてある「全画面に最適化する用」がいいかも- 遅延ロードがウザい件などはCSSじゃ無理なので、グリモンとか使ってJSで対応してくださいFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポなどの白地のアイテム(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
+@version        20201029.8.4
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user/") {
+@-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user/"), url-prefix("https://www.nicovideo.jp/series/") {
   /********************************/
  /* ページトップのニコニコヘッダ */
 /********************************/
+.HeaderContainer { height: 80px; }
 .HeaderContainer_Re-main { height: 48px; }
 
   /********************************/
@@ -153,4 +154,29 @@
     bottom: 2em; /* XXX: bottomとmargin-bottomを揃えられないか？ */;
 }
 .VideoWatchHistoryContainer-item { margin-bottom: -1.3em; }
+
+  /************/
+ /* シリーズ */
+/************/
+/* シリーズ一覧ヘッダ */
+.SeriesAdditionalContainer { height: 32px; background-color: transparent; }
+/* 共有ボタンは個別シリーズヘッダに重ね、個別シリーズの共有なのを明確に */
+.SeriesAdditionalContainer-share :not(#fb-root) { height: 28px !important; width: 28px !important; }
+.BaseLayout-block.Series-2column { margin-top: 0px; }
+
+/* 左サイドバー */
+/* 一番下にスクロールしたときシリーズ一覧ヘッダと描画が被るの阻止 */
+.SeriesMenuContainer { z-index: 2 }
+
+
+/* 個別シリーズヘッダ */
+.SeriesDetailContainer-media { padding: 12px; margin: 0px; }
+.SeriesDetailContainer-description { padding: 4px; }
+/* 透明化したシリーズ一覧ヘッダの高さ分だけ上に移動 */
+.Series-columnMain { position: relative; top: -28px; }
+
+
+/* 各動画カード */
+.SeriesVideoListContainer-video { padding: 4px; }
+.MediaObject.VideoMediaObject .MediaObject-image { flex: none; }
 }

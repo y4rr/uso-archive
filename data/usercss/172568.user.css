@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         behnamazizi
 @description    `This style will change theme of divar.ir to dark mode.`
-@version        2020924.0.15
+@version        20201029.11.52
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -230,6 +230,8 @@ button.ui.active.icon.button i:before {
 .kt-post-card__image-wrapper {
  background: #1a1a1a;
 }
-  
+  .kt-post-card--outlined:after {
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.08), inset 0 0 0 1px #040404;
+}
   
 }

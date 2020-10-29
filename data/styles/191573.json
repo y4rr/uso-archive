@@ -1,0 +1,40 @@
+{
+  "id": 191573,
+  "info": {
+    "name": "Youtube Retro Wave",
+    "description": "YOUTUBE Retro Wave Theme",
+    "additionalInfo": "Use the dark theme in your Appearance settings",
+    "format": "uso",
+    "category": "youtube",
+    "createdAt": "2020-10-29T01:07:38.000Z",
+    "updatedAt": "2020-10-29T01:07:38.000Z",
+    "license": "CC-BY-NC-4.0",
+    "author": {
+      "id": 1047658,
+      "name": "Yad",
+      "paypalEmail": "earlyzeven@gmail.com"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 18,
+      "weekly": 17
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "191573_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"youtube.com\") {\r\n\r\n/*2021 Youtube Retro Wave by YAD*/\r\n\r\n\r\n\r\n#account-name.ytd-active-account-header-renderer {/*name*/\r\n    text-shadow: 0 0 8px var(--paper-purple-a200);\r\n}\r\n\r\n#logo-icon-container.ytd-topbar-logo-renderer {/*logo*/\r\n    animation-name: logoyad;\r\n\tfilter: hue-rotate(290deg);\r\n    animation-duration: 0.8s;\r\n    animation-iteration-count: 1;\r\n\tfill-opacity: 1;\r\n\t\t\r\n}\r\n\t@keyframes logoyad {\r\n   0% {transform: scalex(0)}\r\n  25% {transform: scaleY(0.1)}\r\n  50% {transform: scalex(0.7)}\r\n  75% {transform: scaleY(0.15)}\r\n\t\r\n}\r\n.ytd-topbar-logo-renderer:hover {\r\n\tanimation: presslogo;\r\n\tanimation-duration:8s;\r\n\tanimation-iteration-count: 1;\r\n\tanimation-fill-mode: both;\r\n\tanimation-delay: 1s;\r\n}\r\n@keyframes presslogo {\r\n  0% {transform: rotate(13680deg)}\r\n\t50% {filter: hue-rotate(80deg);}\r\n100% {filter: hue-rotate(360deg);}\r\n}\r\n.style-scope ytd-thumbnail:active {\r\n\tanimation: thumbturn;\r\n\tanimation-duration:\t1.1s;\r\n\tanimation-iteration-count: 1;\r\n\ttransition: opacity 0.5s;\r\n}\r\n@keyframes thumbturn {\r\n  0% {transform: scalex(0)}\r\n  25% {transform: scaleY(0.1)}\r\n  50% {transform: scalex(0.7)}\r\n\r\n\t\r\n}\r\n#thumbnail.ytd-moving-thumbnail-renderer {\r\n    transition: opacity 0.5s;\r\n    opacity: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    max-height: var(--yt-img-max-height, none);\r\n    max-width: var(--yt-img-max-width, 100%);\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n}\r\n\r\n\t.ytp-swatch-background-color {\r\n\tanimation-name: yadpogi;\r\n\tanimation-iteration-count: infinite;\r\n\tanimation-duration: 3.5s;\r\n\tanimation-fill-mode: forwards;\r\n\tanimation-timing-function: linear;\r\n\r\n}\r\n@keyframes yadpogi {\r\n0%  {background-color: #fff; box-shadow: 0 0 9px 3px #ff00d4;}\r\n10% {background-color: #fff; box-shadow: 0 0 7px 3px #9d00ff;}\r\n20% {background-color: #fff; box-shadow: 0 0 9px 3px #5100ff;}\r\n30% {background-color: #fff; box-shadow: 0 0 7px 3px #00d9ff;}\r\n40% {background-color: #fff; box-shadow: 0 0 9px 3px #00ffc3;}\r\n50% {background-color: #fff; box-shadow: 0 0 7px 3px #b3ff00;}\r\n60% {background-color: #fff; box-shadow: 0 0 9px 3px #ff8400;}\r\n70% {background-color: #fff; box-shadow: 0 0 7px 3px #ff6a00;}\r\n80% {background-color: #fff; box-shadow: 0 0 9px 3px #f00;}\r\n90% {background-color: #fff; box-shadow: 0 0 7px 3px #ee436b;}\r\n100%{background-color: #fff; box-shadow: 0 0 7px 3px #ff00d4;}\r\n}\r\nytd-app {\r\nbackground-image: url(https://i.postimg.cc/J4gFh3TK/sunset.gif), url(https://i.postimg.cc/Q8jCDLRS/retrowave-purple.jpg);\r\nbackground-repeat: no-repeat;\r\nbackground-attachment:fixed;\r\nbackground-color: #14031e;\r\nbackground-position: 50% 33%, center;\r\nbackground-size: 300px, 100%;\r\n}\r\n\r\n.html5-video-player {/*glow on player*/\r\n    box-shadow: 0 0 20px #f800ff;\r\n}\r\n\r\n#container.ytd-masthead {/*top bar*/\r\n    background-color: #4a157c05;\r\n    background-image: url(https://i.postimg.cc/DfDGtyv4/2eSd.gif);\r\n    background-repeat: repeat-x;\r\n\tbackground-position: bottom;\r\n\tbackground-size: 120px;\r\n\tbackground-blend-mode: overlay;\r\n}\r\nhtml:not(.style-scope)[dark], :not(.style-scope)[dark] {/*side bar*/\r\n    --yt-spec-brand-background-solid: #f5151500;\r\n    --yt-spec-brand-background-primary: rgb(218 0 0 / 0%);\r\n    --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0);\r\n\t--yt-spec-general-background-a: #1ed03300;\r\n    --yt-spec-general-background-b: #e31a1a00;\r\n    --yt-spec-general-background-c: #df1e1e00;\r\n}\r\n\r\n.style-scope ytd-rich-metadata-renderer {/*side coloumn*/\r\nbackground-color: #601090;\r\nborder-radius: 3px\r\n}\r\nytd-comments {/*comments box*/\r\n    display: block;\r\n    background-color: #00000042;\r\n\tbox-shadow: 0 0 10px 7px #00000047;\r\n}\r\n\r\n#container.ytd-searchbox {/*search bar*/\r\n    background-color: #20062ea3;\r\n    border-left: 1px solid #ffffff70;\r\n\tborder-top: 1px solid #ffffff70;\r\n\tborder-bottom: 1px solid #ffffff70;\r\n\tborder-right: 0px solid #ffffff70;\r\n    border-radius: 17px 0 0 17px;\r\n}\r\n#search-icon-legacy.ytd-searchbox {\r\n    cursor: pointer;\r\n    width: 65px;\r\n    border: 1px solid #ffffff6b;\r\n    background-color: #770c92;\r\n    border-radius: 0px 17px 17px 0px;\r\n}\r\n#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {\r\n    width: 30px;\r\n    height: 30px;\r\n    color: #fff;\r\n\topacity: 1;\r\n}\r\n\r\n.ytp-scrubber-pull-indicator::before {\r\n    display: block;\r\n    position: absolute;\r\n    content: '';\r\n    bottom: 0px;\r\n    left: 0px;\r\n    opacity: 1;\r\n    width: 40px;\r\n    height: 40px;\r\n    border-style: dashed;\r\n    border-width: 0px;\r\n    border-color: #271a1a40;\r\n    background-image: url(https://i.postimg.cc/Sx80hzN3/original.gif);\r\n    background-repeat: no-repeat;\r\n    background-position: center;\r\n    background-size: 100%;\r\n\t\r\n}\r\n\r\n\r\n/*2021 Youtube Retro Wave by YAD*/\r\n\r\n\r\n.ytp-scrubber-pull-indicator {\r\n    position: absolute;\r\n    z-index: 42;\r\n    bottom: 27px;\r\n    left: -14px;\r\n    -moz-transform: rotate(0deg);\r\n    -ms-transform: rotate(0deg);\r\n    -webkit-transform: rotate(0deg);\r\n    transform: rotate(0deg);\r\n}\r\n\r\npaper-button.ytd-subscribe-button-renderer {/*sub button*/\r\n    background-color: #a320fb;\r\n    border-radius: 22px;\r\n}\r\n.ytp-sb-subscribe, a.ytp-sb-subscribe {\r\n    background-color: #a320fb;\r\n    color: #fff;\r\n}\r\n\r\n.guide-entry-badge.ytd-guide-entry-renderer {/*live icon*/\r\n    width: 16px;\r\n    height: 16px;\r\n    color: #00d0ff;\r\n    display: none;\r\n}\r\n\r\nytd-multi-page-menu-renderer {/*right dropdown*/\r\n    display: inline-block;\r\n    background: #240927e3;\r\n\tborder-radius: 20px;\r\n}\r\n\r\nyt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/\r\n    color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));\r\n    filter: hue-rotate(272deg) saturate(105%) opacity(100%) brightness(100%) contrast(78%);\r\n}\r\npaper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {/*toggle button*/\r\n    background-color: #fff;\r\n\tbox-shadow: 0 0 10px 5px #d208ff;\r\n}\r\npaper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {\r\n    opacity: 1;\r\n    background-color: #fff;\r\n\tbox-shadow: 0 0 10px 5px #d208ff;\r\n}\r\n\r\n.ytp-menuitem[aria-checked=\"true\"] .ytp-menuitem-toggle-checkbox {/*toggle button2*/\r\n    background: #ffffff;\r\n    box-shadow: 0 0 10px 5px #d208ff;\r\n}\r\n\r\n.ytp-volume-slider-handle {/*volume buttom*/\r\n    position: absolute;\r\n    top: 50%;\r\n    width: 13px;\r\n    height: 13px;\r\n    border-radius: 7px;\r\n    margin-top: -6px;\r\n    background: #ffffff;\r\n    box-shadow: 0 0 12px 5px #ff00e2;\r\n}\r\n\r\n\r\n}"
+  }
+}

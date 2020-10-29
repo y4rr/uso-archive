@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.4 (β)
+@name           Compact Tube (White) v1.2.5 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201028.15.24
+@version        20201029.10.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.4 (β) */
+/* CompactTube (White) v1.2.5 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -516,7 +516,16 @@ ytd-game-card-renderer.ytd-horizontal-card-list-renderer {
     letter-spacing: var(--ytd-tab-system_-_letter-spacing);}
 
     /* Компановка Элементов МЕНЮ */
-    paper-tab.ytd-interactive-tabbed-header-renderer {padding: 0 11px;vertical-align: middle;}
+    paper-tab.ytd-interactive-tabbed-header-renderer {padding: 0 11px; vertical-align: middle;}
+    /* Скрытие элементов Прокрутки Верхнего МЕНЮ информации об игре */
+    .ytd-interactive-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibility: hidden; opacity: 0;}
+
+    /* бордюр под Красным меню в Играх на странице Игры */
+    #tabs-inner-container.ytd-interactive-tabbed-header-renderer {
+    -o-background-color: var(--yt-spec-general-background-a);
+    box-shadow: 0px 1px 3px -1.5px var(--ytd-searchbox-legacy-button-border-color);
+    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+}
 
     /* Позицианирование МЕНЮ (про запас) */
     #tabsContainer.paper-tabs {padding: 0px 0px 0px 0px; position: relative; height: 100%; white-space: nowrap; 
@@ -1002,7 +1011,7 @@ padding-right: 6px; padding-left: 6px; background-color: #008BEC;}
 /* Позиционирование Бэйджей: [ОГРАНИЧЕННЫЙ ДОСТУП], [НОВИНКА]*/
 ytd-badge-supported-renderer.ytd-grid-playlist-renderer {
     margin-top: 4px;
-    margin-left: 6.5px;}
+    margin-left: 5.5px;} /*6.5px*/
 
 /* Общие параметрый Бэйджа [Сейчас в прямом Эфире] */
 .badge.ytd-badge-supported-renderer {
@@ -1625,7 +1634,27 @@ position: relative; top: 0px; right: 11px;}
 
 
 /* Сокращённый Блок Прямых Трансляций */
-ytd-channel-featured-content-renderer {height: 153px; overflow-y: auto; overflow-x: hidden;}
+ytd-channel-featured-content-renderer {height: 157px;/*153*/ overflow-y: auto; overflow-x: hidden;}
+
+        /* Скроллбар для промотки множества Трансляций */
+/* Установка Самого Скроллбара */
+ytd-channel-featured-content-renderer::-webkit-scrollbar {
+    width: 14px;}
+/* Ползунок Скроллбара  */
+ytd-channel-featured-content-renderer::-webkit-scrollbar-thumb {
+    background: rgba(155, 155, 155, .34);
+    box-shadow: inset 0px 0px 0px 0.3px rgba(45, 45, 45, .11);}
+/* Путь Скроллбара*/
+ytd-channel-featured-content-renderer::-webkit-scrollbar-track {
+    background: rgba(138, 138, 138, .16);
+    box-shadow: inset 0px 0px 0px 0.3px rgba(164, 163, 163, .41);}
+/* стрелки промотки вверх и вниз Скроллбара */
+-o-ytd-channel-featured-content-renderer::-webkit-scrollbar-button {
+    height: 4px;
+    background: var(--yt-opalescence-grey-opacity-lighten-3);
+    border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
+
+
 
 
 /* Заголовок "Прямые трансляции" на Канале - позицианирование */
@@ -1643,6 +1672,7 @@ ytd-channel-featured-content-renderer {height: 153px; overflow-y: auto; overflow
 /*Блок - Видео превью канала - Как подписчик (на странице Каналов)*/
 /* цвет блока, затенение(рамка), позиционирование ($) */
 ytd-channel-featured-content-renderer {
+    overflow-x: hidden;
     display: block;
     padding: 12px 0 24px; /*12px 0 24px*/
     -o-border-bottom: 1px solid var(--yt-spec-10-percent-layer);
@@ -1653,11 +1683,12 @@ ytd-channel-featured-content-renderer {
 /*Блок - Видео превью канала - как Гость (на странице Каналов)*/
 /* цвет блока, затенение(рамка), позиционирование ($) */
 ytd-channel-video-player-renderer {
+    overflow: hidden; /*убирает полосы прокрутки*/
     padding: 24px 0 24px 0;
     background: var(--yt-spec-brand-background-primary);
     position: relative; top: 0px;/*10px, 6px*/ left: 0px;
     -o-box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color); /* не нужно, заменяется от: НОВЫЙ ! Блок - всей колонки гор.строк видео и Верт.столбцов */
-    overflow: auto;}
+    -o-overflow: auto;} /* было раньше, стало давать полосы прокрутки */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* Блок - всей колонки горизонтальных строк видео и Вертикакльных столбцов (на странице Каналов - и в прочих местах)*/
@@ -2445,6 +2476,9 @@ paper-tab.ytd-c4-tabbed-header-renderer {padding: 0 11px; vertical-align: middle
 paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00;; /* Цвет подчёркивания */
 --paper-tabs-selection-bar_-_border-bottom-width: 3px; /* высота подчёркивания пункта меню*/
 color: var(--yt-lightsource-secondary-title-color);  /* Цвет НЕ выделенных пунктов меню*/ height: 48px ;padding-bottom: 1px;}
+/*Скрытие элементов прокрутки МЕНЮ КАНАЛА*/
+paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibility: hidden; opacity: 0;}
+-o-.not-visible.paper-tabs {opacity: 0;cursor: default;}
 
 /*------------------------------------------------------*/
 
