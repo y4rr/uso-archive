@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kumirei
 @description    `This is the new version of the transparent theme for our beloved Wanikani forums. It makes the forums prettier and allows you to use your own background image (or color).<br>You can find the old one on its <a href="https://community.wanikani.com/t/userstyle-transparent-theme-for-forums/17973?u=kumirei">forum page</a>, or on its <a href="https://userstyles.org/styles/142733/wanikani-forums-transparent-theme">userstyles.org page</a>. <br>For bug reports or suggestions, please contact me either on the forums or through my email address. These are provided below. <br><b>Forums:</b> <a href="https://community.wanikani.com/t/userstyle-forum-transparency-20/32287">https://community.wanikani.com/t/userstyle-forum-transparency-20/32287</a><b>Email:</b> kumi@kumirei.com<br><br>You can find the changelog below.`
-@version        20201019.20.8
+@version        20201028.21.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown background "Background Image" {
@@ -62,9 +62,9 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
 
     Name:           Forum Transparency 2.0
     Author:         Kumirei
-    Version:        2.1.16
-    Total lines:    3318
-    Latest update:  2020-10-19
+    Version:        2.1.17
+    Total lines:    3348
+    Latest update:  2020-10-28
 
     Forum post:     https://community.wanikani.com/t/userstyle-forum-transparency-20/32287
     Theme link:     https://userstyles.org/styles/163317/wanikani-forum-transparency-2-0
@@ -228,7 +228,7 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
     * [3282] Version 2.1.14
     * [3293] Version 2.1.15
     * [3309] Version 2.1.16
-
+    * [3320] Version 2.1.17
 
 
 
@@ -3369,5 +3369,35 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
 
     .bookmarked .d-icon-discourse-bookmark-clock {
         color: rgba(var(--main-accent)) !important;
+    }
+
+
+    /* Version 2.1.17
+    /*_____________________
+
+    Fixed: post widths, thread top alignment, docked slider alignment
+    */
+
+    .gap,
+    .time-gap,
+    .topic-post,
+    .small-action,
+    .small-action
+    .small-action-desc,
+    .loading-container
+    .presence-users {
+        width: 100% !important;
+    }
+
+    .container.posts > .row {
+    	margin-top: -4px;
+    }
+
+    body.float_wkappnav #main-outlet {
+    	padding-top: 6px !important;
+    }
+
+    .timeline-container.timeline-docked-bottom .timeline-footer-controls {
+    	display: none;
     }
 }

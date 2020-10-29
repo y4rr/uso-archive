@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title`
-@version        2020917.16.26
+@version        20201028.18.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -122,7 +122,7 @@ time.post-date {
 	color: #e2e2e2;
 }
 .split-banner--theme-light {
-	background: #050505 !important;
+	background-color: #050505 !important;
 	color: #fff;
 }
 .split-banner--theme-light:focus, .split-banner--theme-light:hover {
@@ -363,7 +363,7 @@ input:-internal-autofill-selected {
 .share-links__title, .tags-label {
 	color: #858585;
 }
-.grid--last {
+.grid--last, img.mfp-img {
 	background: #000;
 }
 .product-tile-link {
@@ -405,5 +405,151 @@ select, option {
 }
 .choice-box__extra {
     background: hsla(0, 0%, 0%, .8);
+}
+.catalog-list-product__user-exclusive, .buy-section__user-exclusive {
+	background: #1b1b1b;
+}
+.catalog-list-product__related-items .glide__slide {
+	background: #050505;
+}
+.accordian-wrapper .accordion, .accordian-wrapper .accordion .accordion__content {
+	background: #000;
+}
+.accordian-wrapper .accordion .accordion__toggle {
+	background: #1b1b1b;
+	color: #e2e2e2;
+}
+.compatibility-section--light-embedded .compatibility-item svg, .applied-facet__constraint, .applied-facet__constraint:hover {
+	color: #e2e2e2;
+}
+.applied-facet__constraint span {
+	background: #000;
+}
+.applied-facet__constraint:hover span {
+	background: #e2e2e2;
+}
+.applied-facet__constraint:hover svg {
+	fill: #000;
+}
+.search-full input[type="search"], .modal--notifyme {
+	background: #000;
+}
+.search input[type="search"] {
+	border-color: #222;
+	color: #666;
+}
+.search:before {
+	background: #000;
+	color: #222;
+}
+.promoted-articles-item a, .recent-activity-item-parent, .recent-activity-item-link, .section-header, .article-list-item a {
+	color: #fff;
+}
+.community, .activity, .recent-activity-item, .article-list-item, .nav-line, .article-labels, .article-votes, .article-return-to-top, .article-relatives, .search-results-list > li:first-child, .search-results-list > li {
+	border-color: #222;
+}
+input {
+	background: #000;
+}
+.breadcrumbs li {
+	color: #ccc;
+}
+.article-title, .dropdown-item a, .search-header {
+	color: #e6e6e6;
+}
+.title-article-labels {
+	color: #e6e6e6;
+	border-color: #e6e6e6;
+}
+.article-labels a:hover {
+	background: #222;
+}
+.article-labels a {
+    background: rgba(34, 34, 34, .4);
+    color: #e6e6e6;
+}
+.article-vote {
+    border-color: rgba(252, 76, 2, 1);
+}
+.avatar .icon-agent::before {
+	border-color: #000;
+}
+.alertbox {
+	display: none;
+}
+.dropdown-item a:hover {
+	background-color: #161616;
+	color: #e6e6e6;
+}
+.section-tree-title a, .pagination li:hover:not(.pagination-current) span, .pagination li:hover:not(.pagination-current) a {
+	color: #fff;
+}
+.article-body img {
+	border-color: #222;
+	box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, .25);
+}
+.meta-data, .pagination a, .pagination span {
+	color: #ccc;
+}
+.pagination li:hover:not(.pagination-current) {
+	background: #030303;
+}
+.mfp-arrow-left .mfp-a, .mfp-arrow-left:after {
+	border-right-color: #000;
+}
+.mfp-arrow-right .mfp-a, .mfp-arrow-right:after {
+	border-left-color: #fff;
+}
+.mfp-arrow-right .mfp-a, .mfp-arrow-right:after {
+	border-left-color: #000;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #c8c8c8;
+}
+.buy-section__user-exclusive-message {
+	color: #a7a7a7;
+}
+.widget-item__user-exclusive, .cart-item__user-exclusive {
+	background: #1b1b1b;
+}
+.dev-links .developer-header__title, .dev-links__svg, .dev-links__title {
+	color: #e2e2e2;
+}
+.dev-links__link {
+    background: linear-gradient(#050505,#1b1b1b);
+    box-shadow: 0 1px 4px 0 rgba(255, 255, 255, .37);
+}
+.dev-links__link--border {
+	border-color: #fff;
+}
+.button.is-inactive {
+	background: #1b1b1b;
+	color: #858585;
+	border-color: #2b2b2b;
+}
+.row.row--gutters+.row.row--gutters:last-of-type {
+	filter: invert(100);
+}
+.grid.cmsplugin-grid--634204 {
+	background: #1a1a1a !important;
+}
+.button--solid {
+	border-color: #121212;
+}
+.preview-wrapper--support-options, .address {
+	border-color: #2b2b2b;
+}
+.message {
+    background: #1b1b1b;
+    border-color: #858585;
+    color: #e2e2e2;
+}
+.message--warning {
+    background: #f9ea956b;
+    border-color: #af8d046b;
+    color: #ffca00;
+}
+.form-field__help-text {
+	color: #858585;
 }
 }

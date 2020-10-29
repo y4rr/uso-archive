@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.3 (β)
+@name           Compact Tube (White) v1.2.4 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201027.8.46
+@version        20201028.15.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.3 (β) */
+/* CompactTube (White) v1.2.4 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -920,8 +920,29 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 #search-icon-legacy.ytd-searchbox {border-color: rgba(110, 110, 110, .3) !important; background-color: rgba(204, 204, 204, .15) !important;}
 /* border-color: #CCCCCC !important; background-color: #F8F8F8 !important; */
 
-/* цвет шрифта в поле поиска */
-input.ytd-searchbox {color: rgb(145, 145, 145)! important; -o-filter: invert(15%);} /*(V)*/
+/* Цвет вводимого текста в поле поиска (NEW) */
+#container.ytd-searchbox input.ytd-searchbox {color: rgb(100, 100, 100);}
+
+/* Цвет выделения текста и выделенного текста (NEW)*/
+-o-#container.ytd-searchbox input.ytd-searchbox::selection {
+    background: rgb(51, 144, 255);/* Цвет фона */
+    color: #fff;} /* Цвет текста */
+
+/* Цвет вводимого текста в АКТИВНОМ Поле Поиска (NEW)*/
+#container.ytd-searchbox input[type=text].ytd-searchbox:focus {display: block; content: "";
+  background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 10px 3px #ffffff1f;
+  color: #000;}
+
+/* Поле поиска с фокусом (NEW)*/
+ytd-searchbox[has-focus] #container.ytd-searchbox {
+   border: 1px solid #1c62b9 !important;
+    -o-background: #d06868ab !important;
+    padding: 0px 3px 0px 4px;
+    box-shadow: inset 534px 0px 0px 0px rgb(255, 255, 255);}
+
+/* Цвет вводимого текста в поле поиска - старые варианты */
+-o-input.ytd-searchbox {color: rgb(145, 145, 145)!important; -o-filter: invert(25%);} /* V */
 -o-input {color: var(--google-grey-500) !important; -o-filter: invert(0%);}
 -o-#container.ytd-searchbox input.ytd-searchbox {color: rgb(128, 128, 128) !important; -o-filter: invert(0%);}
 
@@ -1742,7 +1763,7 @@ ytd-grid-renderer {
     -ms-flex-wrap: wrap; 
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-top: 5px;
+    padding-top: 5px; /*5px*/
     padding-bottom: 5px;
 }
 /* Блок Меню - Загрузки, ВОСПРОИЗВЕСТИ ВСЁ (ВИДЕО на КАНАЛЕ) ($) */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         loopy750
 @description    `Press F11 and enjoy the fullscreen goodness of YouTube live streams with chat room. YouTube's chat room design leaves a lot to be desired, but this code allows for a more enjoyable experience.`
-@version        20201023.18.16
+@version        20201028.19.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown chat-room-font-size "Chat Room Font Size" {
@@ -107,7 +107,7 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
         overflow: hidden
     }
     ytd-app ytd-watch-flexy #secondary {
-        padding-right: 8px !important;
+        padding-right: 7px !important;
         overflow: hidden
     }
 
@@ -139,7 +139,7 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
 
     #primary.style-scope.ytd-watch-flexy {
         padding-top: 8px !important;
-        padding-left: 8px !important;
+        padding-left: 7px !important;
         padding-right: 5px !important;
         margin: auto !important
     }
@@ -147,6 +147,7 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
     #chat,
     #columns #secondary {
         width: auto !important;
+        max-width: 1046px !important;
         padding-top: 0px !important;
         margin-top: 4px !important
     }
@@ -158,8 +159,8 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
 
     /* Adjustable width */
     #secondary-inner.style-scope.ytd-watch-flexy:hover {
-        resize: horizontal;
-        overflow: auto;
+        resize: horizontal !important;
+        overflow: auto !important
     }
 
     ytd-video-primary-info-renderer {
@@ -201,7 +202,7 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
 
 /* Chat */
 #chat.style-scope.ytd-watch-flexy {
-    min-height: 83.33vh !important
+    min-height: 83.5vh !important
 }
 
 #info .style-scope.ytd-watch-flexy,

@@ -3,13 +3,12 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Most credit goes to @anqxyr. I've only managed to make it work on all domains, fix every single visible error and many more. -Why didn't you send those fixes to @qnxyr?Discussion doesn't work for me, infinity loading.`
-@version        2020719.18.36
+@version        20201028.14.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("scp-wiki.net"), domain("scpalex-fh.wikidot.com"), domain("scpsandboxbr.wikidot.com"), domain("fondationscp.wikidot.com"), domain("scp-wiki-cn.wikidot.com"), domain("scp-cs.wikidot.com"), domain("scp-wiki-de.wikidot.com"), domain("fondazionescp.wikidot.com"), domain("scp-jp.wikidot.com"), domain("ko.scp-wiki.net"), domain("scp-pt-br.wikidot.com"), domain("scpfoundation.net"), domain("lafundacionscp.wikidot.com"), domain("scp-th.wikidot.com"), domain("scp-ukrainian.wikidot.com") {
+@-moz-document domain("scp-wiki.net"), domain("scpwiki.com"), domain("scpalex-fh.wikidot.com"), domain("scpsandboxbr.wikidot.com"), domain("fondationscp.wikidot.com"), domain("scp-wiki-cn.wikidot.com"), domain("scp-cs.wikidot.com"), domain("scp-wiki-de.wikidot.com"), domain("fondazionescp.wikidot.com"), domain("scp-jp.wikidot.com"), domain("ko.scp-wiki.net"), domain("scp-pt-br.wikidot.com"), domain("scpfoundation.net"), domain("lafundacionscp.wikidot.com"), domain("scp-th.wikidot.com"), domain("scp-ukrainian.wikidot.com") {
 
-/* https://github.com/stylish-userstyles/stylish/issues/29 */
 
 @font-face {
     font-family: 'JunctionRegular';
@@ -338,7 +337,7 @@ src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd
 */
 }
 
-@-moz-document domain("scpalex-fh.wikidot.com"), domain("fondationscp.wikidot.com"), domain("scpsandboxbr.wikidot.com"), domain("scp-wiki-cn.wikidot.com"), domain("scp-cs.wikidot.com"), domain("scp-wiki-de.wikidot.com"), domain("fondazionescp.wikidot.com"), domain("scp-jp.wikidot.com"), domain("ko.scp-wiki.net"), domain("scp-pt-br.wikidot.com"), domain("scpfoundation.net"), domain("lafundacionscp.wikidot.com"), domain("scp-th.wikidot.com"), domain("scp-ukrainian.wikidot.com"), regexp("(https?://)?(www.)?(scp-wiki|scpsandbox2)(.net|.wikidot.com)(?!/(osanshouo|ADD_MORE_EXCEPTIONS_USING_THIS_FORMAT)).*") {
+@-moz-document domain("scpalex-fh.wikidot.com"), domain("fondationscp.wikidot.com"), domain("scpsandboxbr.wikidot.com"), domain("scp-wiki-cn.wikidot.com"), domain("scp-cs.wikidot.com"), domain("scp-wiki-de.wikidot.com"), domain("fondazionescp.wikidot.com"), domain("scp-jp.wikidot.com"), domain("ko.scp-wiki.net"), domain("scp-pt-br.wikidot.com"), domain("scpfoundation.net"), domain("lafundacionscp.wikidot.com"), domain("scp-th.wikidot.com"), domain("scp-ukrainian.wikidot.com"), domain("scpwiki.com"), regexp("(https?://)?(www.)?(scp-wiki|scpsandbox2)(.net|.wikidot.com)(?!/(osanshouo|ADD_MORE_EXCEPTIONS_USING_THIS_FORMAT)).*") {
 /* 
  * Fix for extended rating information userscript
  * on heritage rating modules
@@ -454,7 +453,7 @@ div#container-wrap {
   border: solid 1px #808080;
   border-right: 0;
   border-radius: 5px 0 0 5px;
-  color: #808080;
+  color: #808080 !important;
 }
 
 .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
@@ -499,11 +498,6 @@ div#container-wrap {
 /* ------------------------------------------------------------- */
 
 #side-bar .side-block {
-padding: 10px;
-border: 1px solid #808080;
-border-radius: 10px;
-margin-bottom: 15px;
-background-color: #191919 !important;
 color: #808080;
 }
 #side-bar .heading {
@@ -758,6 +752,24 @@ color: #191919;
 #account-options {
 	border-color: #555;
 }
+.item1 h1, .class1 h1 {
+	color: grey;
+}
+[src='http://scp-pl.wdfiles.com/local--files/scp-2316/warning1.png'], [src='http://scp-pl.wdfiles.com/local--files/scp-2316/cwarning.png'] {
+	filter: invert(100);
+}
+hr, .info-container .collapsible-block-unfolded, .international-entry:nth-child(even), .alternate:nth-child(even) {
+	border-color: #444;
+}
+hr {
+	background-color: #444;
+}
+#side-bar .side-block, .side-block {
+	background: #191919 !important;
+}
+iframe.scpnet-interwiki-frame {
+	filter: invert(0)
+}
 }
 
 @-moz-document url-prefix("http://ferryfm13.thirteen.axc.nl/scp/timers/getTimer.php") {
@@ -934,5 +946,12 @@ audio, video:-webkit-full-page-media {
 }
 #toc1 > span {
     color: #aaaa;
+}
+}
+
+@-moz-document domain("interwiki.scpdb.org") {
+.interwiki {
+    border: 1px solid #660000;
+    background: #191919;
 }
 }

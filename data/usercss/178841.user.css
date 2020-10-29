@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         XENORCHISM
 @description    `Dark theme for AdGuard Home user interface.`
-@version        2020725.16.8
+@version        20201028.21.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced text adgh "AdGuard Home Address" "192.168.0.0"
@@ -356,5 +356,22 @@ div.header__column.mobile-menu.mobile-menu--active .nav-tabs .nav-item .nav-link
     position: relative;
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+.card-header:first-child {
+    border-radius: calc(3px - 1px) calc(3px - 1px) 0 0;
+    border-color: #1F1F20;
+}
+.logs__table {
+    background-color: #111314;
+    border-color: currentcolor;
+}
+.logs__table .logs__row {
+    border-bottom-color: #363c3e3b;
+}
+.logs__table .logs__row {
+    border-bottom: 1px solid #3e3e3e;;
+}
+.logs__row--white {
+    background-color: #111314;
 }
 }
