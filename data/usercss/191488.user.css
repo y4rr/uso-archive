@@ -2,10 +2,42 @@
 @name           ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ
 @namespace      USO Archive
 @author         gonbuto
-@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも対応画面:- マイページ: ニコレポ/フォロー/マイリスト/あとで見る/履歴画面- 類似レイアウト: シリーズ画面Tips:- 左に寄り過ぎてるのが嫌！て人はコメントアウトしてある「全画面に最適化する用」がいいかも- 遅延ロードがウザい件などはCSSじゃ無理なので、グリモンとか使ってJSで対応してくださいFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポなどの白地のアイテム(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
-@version        20201029.8.4
+@description    `CSSぜんぜんわからん！勢なのでクオリティには期待しないで。予告なく大きな変更が入るかも&保守が放棄されるかも対応画面:- マイページ: ニコレポ/フォロー/マイリスト/あとで見る/履歴画面- 類似レイアウト: シリーズ画面Tips:- 動画説明文が表示されたカードは幅広化されていない。「マイリス等も幅広」で伸びる  - 「全画面に最適化」すると各カードがさらに右に伸びる- 遅延ロードがウザい件などはCSSじゃ無理なので、グリモンとか使ってJSで対応してくださいFeatures:- サムネを左に、アクティビティと動画タイトルをその右に- 各ニコレポなどの白地のアイテム(カード)を枠でくくって詰め詰めに- ほか、全体的に幅を詰める`
+@version        20201029.16.7
 @license        CC0-1.0
 @preprocessor   uso
+@advanced dropdown optimize-to-FS "全画面に最適化" {
+	dont-optimize-to-FS "しない*" <<<EOT /* 全画面に最適化しない用 *\/
+.RightSideContainer { z-index: -1; margin-top: 172px; width: 200px; } EOT;
+do-optimize-to-FS "する" <<<EOT /* 全画面に最適化する用 *\/
+.UserPage-main { padding: 0 0 0 0; }　
+.RightSideContainer { z-index: -1; margin-top: 172px; margin-left: 635px; width: 200px; }
+ EOT;
+
+}
+@advanced dropdown sidebar-follow "サイドバーを追従" {
+	sidebar-do-follow "させる*" <<<EOT /* マイページのサイドバーをstickyで動かす *\/
+.NicorepoPage, .FollowPage, .WatchLaterPage, .MylistPage, .HistoryPage, .BadgePage { align-items: baseline; }
+.SideContainer {
+    /* wip: 100の根拠。フロートするバー一本分＋？ *\/
+    position: sticky; top: 100px; 
+    
+    /* サイドバーをスクロール対応、特にマイリスページに有用 *\/
+    max-height: calc(100vh - 124px);  /* XXX: 124の根拠 *\/
+    overflow-x: hidden; overflow-y: auto;
+    scrollbar-width: thin;
+} EOT;
+sidebar-dont-follow "させない" <<<EOT  EOT;
+
+}
+@advanced dropdown widen-mylist "マイリス等も幅広に" {
+	dont-widen-mylist "しない*" <<<EOT  EOT;
+do-widen-mylist "する" <<<EOT /* これをコメントアウトすれば他ページ同様の全枠になるが、動画説明文の長さは変わらないので見た目が不自然 *\/
+.MylistPage-content { width: inherit; }
+.WatchLaterPage-content { width: inherit; } EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user/"), url-prefix("https://www.nicovideo.jp/series/") {
   /********************************/
@@ -19,34 +51,33 @@
 /********************************/
 .UserDetailsHeader { padding-bottom: 0px; }
 
+/* へッダへのマージン縮小 (original: 32px) */
+.UserPage-main { margin-top: 20px; } 
 
   /*******************************/
  /* カードの横幅712px制限を解除 */
 /*******************************/
-.NicorepoPage-content { width: auto; }
-.HistoryPage-content { width: auto; }
-/* これをコメントアウトすれば他ページ同様の全枠になるが、動画説明文の長さは変わらないので見た目が不自然 */
-/* .MylistPage-content { width: inherit; } */
+.NicorepoPage-content { width: inherit; }
+.HistoryPage-content { width: inherit; }
+.FollowPage-content { width: inherit; }
+/*[[widen-mylist]]*/
 
 /* 干渉する右サイドメニューを背面へ回しつつ右横へ避ける */
 /* 素直に消したほうが早いとは思うが一応 */
-.RightSideContainer { z-index: -1; margin-top: 172px; width: 200px; }
+/*[[optimize-to-FS]]*/
 .RightSideContainer * { height: auto; max-width: 200px; max-height: none; }
 .RightSideContainer a { display: block; }
-
-/* 全画面に最適化する用
-.UserPage-main { padding: 0 0 0 0; }　
-.RightSideContainer { z-index: -1; margin-top: 172px; margin-left: 635px; width: 200px; }
-*/
 
 
   /**************************************************************/
  /* 白地枠なしカード(ニコレポ、マイリス、フォロー)に枠をつける */
 /**************************************************************/
-.NicorepoItem-item, .UserItem-content, .MylistMediaObject-linkArea {
+.NicorepoItem-item, .UserItem-content, .MylistMediaObject-linkArea, 
+.NicoruHistoryPassiveItem, .NicoruHistoryActiveItem {
   padding: 4px;
   border: 1px solid #000;
 }
+
 
 
   /**************/
@@ -155,6 +186,63 @@
 }
 .VideoWatchHistoryContainer-item { margin-bottom: -1.3em; }
 
+
+  /**************/
+ /* いいね履歴 */
+/**************/
+/* いいねコメントを右揃えに  */
+.LikeItemAfter { margin-top: 0; display: flex; justify-content: flex-end; }
+/* アイコンとユーザ名の順序入れかえ */
+.LikeItemAfter header { display: inline-grid;  margin-right: 0; }
+.LikeItemAfter-ownerIcon { order: 2; margin-right: 12px; }
+.LikeItemAfter-ownerName { order: 1; margin-right: 6px; }
+.LikeItemAfter-thanksMessage { display: inline-block; padding: 8px; margin-top: 0px;}
+/* フキダシ疑似要素操作 */
+.LikeItemAfter-thanksMessage:before, .LikeItemAfter-thanksMessage:after {
+    left: -14px;
+    width: 12px; height: 8px;
+    border-bottom: 6px solid transparent; border-top: 6px solid transparent;
+    border-right: 8px solid #e5e5e5; border-right-color: rgb(229, 229, 229);
+}
+.LikeItemAfter-thanksMessage::before { top: 8px; border-right-color: #e5e5e5; }  /* 影は2pxずらす */
+.LikeItemAfter-thanksMessage::after { top: 6px; border-right-color: #fff; }
+
+  /****************/
+ /* ニコられ履歴 */
+/****************/
+/* カード詰め詰め */
+.NicoruHistoryPassiveItem { margin-top: 0px !important; margin-bottom: 8px; }
+/*投稿者ニコられ枠をコメント枠の下に移動しつつ日時枠と重ねる */
+.NicoruHistoryPassiveItem-subjectArea { display: grid; padding-top: 0; padding-left: 0; }
+.NicoruHistoryPassiveItem-videoOwnerArea { order: 2; margin: 0px; margin-bottom: -32px; }
+.NicoruHistoryPassiveItem-videoOwner { margin-left: 6px; padding: 0px; }
+.NicoruHistoryPassiveItem-subject { order: 1; }
+.NicoruHistoryPassiveItem-subject > * { margin: 10px !important; }
+/* 詰めつつ右寄せや太字で見やすく */
+.NicoruHistoryPassiveItem-video { margin: 0; padding: 0px 6px 0px 0px; }
+.NicoruHistoryPassiveItem-subjectComment { font-weight: bolder; }
+.NicoruHistoryPassiveItem-date { order: 3; display: flex; justify-content: flex-end; margin: 4px; }
+.NicoruHistoryPassiveItem-date * { margin-left: 1em; }
+.NicoruHistoryPassiveItem-videoTitleArea { font-size: 12px; }
+
+  /**************/
+ /* ニコり履歴 */
+/**************/
+/* カード詰め詰め */
+.NicoruHistoryActiveItem { margin-top: 0px !important; margin-bottom: 8px; }
+/* カード内詰め詰め */
+.NicoruHistoryActiveItem-subject > * { margin: 10px !important; }
+.NicoruHistoryActiveItem-subjectArea { padding-top: 0; }
+.NicoruHistoryActiveItem-video { margin: 0; padding: 0px 6px 0px 0px; }
+.NicoruHistoryActiveItem-count { margin: 0px; }
+.NicoruHistoryActiveItem-videoTitleArea { font-size: 12px; }
+/* 詰めつつ太字で見やすく */
+.NicoruHistoryActiveItem-subjectComment { font-weight: bolder; }
+/* ニコるくんと回数を拡大強調 */
+.NicoruHistoryActiveItem-count::before { width: 28px; height: 28px; }
+.NicoruHistoryActiveItem-countInner { font-size: 18px; }
+
+
   /************/
  /* シリーズ */
 /************/
@@ -179,4 +267,6 @@
 /* 各動画カード */
 .SeriesVideoListContainer-video { padding: 4px; }
 .MediaObject.VideoMediaObject .MediaObject-image { flex: none; }
+
+/*[[sidebar-follow]]*/
 }

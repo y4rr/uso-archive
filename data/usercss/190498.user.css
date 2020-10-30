@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SubMaRk
 @description    `Dark Theme for Offcloud.com | Customize by SubMaRk [NAY-NOI.COM]`
-@version        2020109.9.54
+@version        20201029.15.58
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -38,6 +38,9 @@
 .form-login .btn-submitlogin {
     color:#444;
 }
+.form-join .input-email, .showcase, .path, .feat-picto, .img-logos, .img-torrent img, .accepted-payments, #tableList tr, .form, .screenshot, img[src*="icon-"], .btnout, .illustration, img[src*="learn.offcloud.com/wp-content/uploads/"], canvas {
+    filter: invert(93.5%) hue-rotate(180deg);
+}
 .persistant-menu {
     color:#000;
 }
@@ -47,6 +50,7 @@
 .btn-play:hover, .section-title h2 a, .tutorials h4, strong, b, .wrapper .portfolio .item-holder .item .overlay .inner-overlay h3, .wrapper .portfolio .meta-tags-holder .selector .meta-tags-outside h3 {
     color:#ccc;
 }
+    
 .thumbnail, .testblock, .pricing.color1 {
     background-color: rgb(0 0 0 / 0.25);
 }
@@ -94,6 +98,9 @@ footer .footer-copyright p, footer .footer-copyright ul li a {
 .wrapper .project-single a:hover, .wrapper .project-single a:focus {
     color:#3b3b3b;
 }
+.wrapper header nav ul li {
+	padding: 10px 10px;
+}
 /* After Login */
  #header.navbar .navbar-toolbar, .sidebar .topmenu, .sidebar, .modal-header, .persistant-menu {
     background-color:#000;
@@ -104,11 +111,11 @@ footer .footer-copyright p, footer .footer-copyright ul li a {
 .jumbotron>.info {
     background-color: rgb(0 0 0 / 0.9);
 }
-.row, .timeline .header, body {
+.row, .timeline .header, body, .yellow, .testmonials {
     background-color: #111;
 }
-.timeline:after {
-    background-color: #019cff;
+.timeline:after, .submit {
+    background-color: #0093f1;
 }
 .panel {
     border-color: #222;
@@ -194,7 +201,7 @@ hr, .panel-group .panel-heading+.panel-collapse .panel-body {
     background-color: #0093f1;
     border-color:#333;
 }
-.btn-success:hover {
+.btn-success:hover, .submit:hover {
     background-color: #019cff;
     border-color: #0093f1;
 }
@@ -259,7 +266,7 @@ h4, .h4, h5 b, h3, .h3, h5, .flot-tick-label .tickLabel, h2, h2 a, h1 {
     border-color: transparent transparent transparent #111;
 }
 .timeline .events>.wrapper:nth-of-type(odd)>.panel:after, .timeline .events>.wrapper:nth-of-type(even)>.panel:before, .timeline .events>.wrapper:nth-of-type(even)>.panel:after {
-    border-color: transparent transparent transparent #2a2a2a;
+    border-color: transparent #2a2a2a;
 }
 .dropdown-menu {
     border-color: #222;

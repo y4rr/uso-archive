@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pgain2004
 @description    `相对熟悉CSS后新写的主题，窄屏自适应，适配度高。依赖一些CSS3特性和emoji库，较老系统(如Win7)显示效果可能打折扣。tag:S1 stage1st stage1 saraba1st 泥潭 婆罗门论坛`
-@version        2020922.13.14
+@version        20201029.14.22
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown chromium "Chromium系浏览器适配" {
@@ -2473,6 +2473,7 @@ img[alt="手机发帖"],
 
 /*1-3 主布局*/
 .mn{display:flex;flex-direction:column}
+a{text-decoration:none!important}
 	/*1-3-1 顶栏*/
 	#hd .wp{display:flex;position:fixed;top:0;width:100%;height:36px;background:var(--pri);padding:0;z-index:200}
 		/*1-3-1-1 快速导航*/
@@ -2607,6 +2608,8 @@ body>#wp{margin-top:80px;padding:0 12px}
 	.zhichibtn_7ree input{background:0;color:var(--sec)}
 	.rq,.tl tr .xi1{color:var(--sec)!important}
 	.tl tr:hover .xi1{color:var(--secp)!important}
+	#postlist .t_fsz a:not([style*="color:"]),.ptm > a:not([style*="color:"]),.ntc_body a:not([style*="color:"]){color:var(--sec)!important}/*内容链接字色高亮*/
+	#postlist .t_fsz a:hover:not([style*="color:"]),.ptm > a:hover:not([style*="color:"]),.ntc_body a:hover:not([style*="color:"]){color:var(--secp)!important}/*内容链接字色悬浮高亮*/
 	/*1-4-2 按钮*/
 		/*1-4-2-1 一般按钮*/
 		button.pn{background-color:var(--bnd);background-image: linear-gradient(to bottom,var(--bn),var(--bnd));background-position: 0;background-repeat: no-repeat;border-color:#00000019 #00000019 #0000003f;border-radius:2px;box-shadow:inset 0 1px 0 #ffffff33,0 1px 2px #0000000c;color:#ddd!important;height: 26px;text-shadow: 0 1px 1px #111;transition: all .15s linear}
@@ -2951,8 +2954,6 @@ a[onclick="refreshMsg();"]:before{display:inline-block;content:"⭯";color:var(-
 	#postlist .plc .pi a:hover,#postlist .plc .pob a:hover{color:var(--tl)!important}
 	#postlist .pi strong a{border:0}
 	#postlist .t_fsz{min-height:0!important}/*楼层内容最小高度*/
-	#postlist .t_fsz a:not([style*="color:"]){color:/*[[plc]]*/!important}/*内容链接字色高亮*/
-	#postlist .t_fsz a:hover:not([style*="color:"]){color:/*[[plch]]*/!important}/*内容链接字色悬浮高亮*/
 	#postlist img{max-width:100%;height:auto;max-height:/*[[mh]]*/}/*防止楼层内图片宽度越界和比例失衡*/
 	#postlist .plhin .bbda{border-bottom:0;margin-bottom:0!important}/*取消主楼底相关帖子虚隔线*/
 	.pl .pbn .xi1{color:var(--secp)}

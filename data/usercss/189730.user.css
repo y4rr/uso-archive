@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           ニコニコ動画 動画ページダークテーマ for HTML5
 @namespace      USO Archive
-@author         四月一日 雷
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。現在はニコる除去（コメントのカラー変更もなくなります）、シリーズ欄のハイライト（試験的）、マーキーエリア除去（動画上部のニュース等が流れる部分）、シリーズ欄除去、共有タブのボタンズレ（？）の修正が可能です。ボタンズレ修正はFirefoxとChromeで別扱いなので気をつけてください。ニコられたコメントのコメント背景色をカスタムできるようになっています。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去は本CSSでしているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合はこのサイト上でフィートバックを残していただくか<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>に連絡をいただけるとうれしいです。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        20201018.9.18
+@author         Azuma
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。スクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去は本CSSでしているため追加でアドオン等を導入する必要はありません。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合はこのサイト上でフィートバックを残していただくか<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>等で連絡をいただければ可能な限り対応したいと思います。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
+@version        20201029.13.53
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -356,7 +356,7 @@ button.ActionButton.TwitterAccountPanel-button{
 }
 
 /* 試験的 消去する要素簡略化 */
-.BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon{
+.BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon,.PreVideoStartPremiumLinkOnEconomyTimeContainer{
     display: none !important;
 }
 

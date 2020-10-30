@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.5 (β)
+@name           Compact Tube (White) v1.2.6 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201029.10.0
+@version        20201029.23.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.5 (β) */
+/* CompactTube (White) v1.2.6 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -1122,6 +1122,20 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
     height: 30px; /*def: 24*/
     flex: none;}
 
+/*       ╔══╗ 
+   ≡≡≡≡≡ ║▼▲║ Скроллбар для всего Ютуба (Тёмная и Светлая темы) ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+         ╚══╝                                  */
+/* Установка Самого Скроллбара */
+::-webkit-scrollbar {width: 1.3em;}
+/* Ползунок Скроллбара  */
+::-webkit-scrollbar-thumb {background: rgba(155, 155, 155, .34); box-shadow: inset 0px 0px 0px 0.3px rgba(45, 45, 45, .11);}
+/* Путь Скроллбара*/
+::-webkit-scrollbar-track {background: rgba(138, 138, 138, .16); box-shadow: inset 0px 0px 0px 0.3px rgba(164, 163, 163, .41);}
+/* стрелки промотки вверх и вниз Скроллбара */
+-o-::-webkit-scrollbar-button{height: 14px; background: var(--yt-opalescence-grey-opacity-lighten-3);
+border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
 /* толщина шрифта названия каналов */
 #container.ytd-channel-name {display: var(--ytd-channel-name-container-display, inline-block); overflow: hidden; font-weight: bold;}
 -o-#channel-name {-o-font-weight: bold !important;} /*старый вариант - не работает после изменений Ютуба*/
@@ -1495,7 +1509,8 @@ background-color: rgba(238, 238, 238, .6);} /*modern: #909090 , old rgba(238, 23
 
 /* центровка Видео превью канала - [как Гость] (на странице Каналов) */
 /*Видео - сдвиг Слева, смещение описания Справа (позиционирование)*/
-#player-container.ytd-channel-video-player-renderer {position: relative; left: 6px; margin: 0 15px 0 0;}
+#player-container.ytd-channel-video-player-renderer {-o-position: relative; -o-left: 6px; margin: 0 10px 0 0px;}
+/*position: relative; left: 6px; margin: 0 14px 0 0px;*/
 
 /* Центровка Видео - Микс (Mix) (Название Темы) YouTube - на странице с Видео */
 #dismissable.ytd-compact-radio-renderer, #dismissed.ytd-compact-radio-renderer {
@@ -1684,7 +1699,7 @@ ytd-channel-featured-content-renderer {
 /* цвет блока, затенение(рамка), позиционирование ($) */
 ytd-channel-video-player-renderer {
     overflow: hidden; /*убирает полосы прокрутки*/
-    padding: 24px 0 24px 0;
+    padding: 24px 0 24px 6px; /*24px 0 24px 0*/
     background: var(--yt-spec-brand-background-primary);
     position: relative; top: 0px;/*10px, 6px*/ left: 0px;
     -o-box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color); /* не нужно, заменяется от: НОВЫЙ ! Блок - всей колонки гор.строк видео и Верт.столбцов */

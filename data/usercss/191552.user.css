@@ -3,11 +3,33 @@
 @namespace      USO Archive
 @author         Greedy Wizard
 @description    `Dark theme for freelancehunt.comProfile Plus`
-@version        20201028.15.44
+@version        20201030.0.11
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://freelancehunt.com/"), url-prefix("https://freelancehunt.work/") {
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default.focus,
+.btn-default:focus,
+.btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default,
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control .alert-warning,
+ul.portfolio-snippets li,
+.select2-container--default .select2-selection--single,
+.job-list-item,
+.select2-dropdown,
+.table-striped > tbody > tr:nth-of-type(odd),
 .promo-page-header,
 .progress,
 .news,
@@ -65,6 +87,9 @@ body,
 }
 
 
+
+.thumbnail,
+.select2-container--default .select2-search--dropdown .select2-search__field,
 .popover,
 .img-thumbnail,
 .modal-content,
@@ -89,7 +114,12 @@ ul.nav.nav-tabs.fancy > li.active > a:hover,
 	background-color: #222;
 }
 
-
+ul.portfolio-snippets li,
+.thumbnail,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
+.job-list-item,
 .btn-success,
 .select2-container--default .select2-selection--multiple,
 .profile-completeness-widget,
@@ -110,12 +140,27 @@ ul.nav.nav-tabs.fancy > li.active > a:hover,
 .sidenav {
 	border: 1px solid #555;
 }
+
+.tree a:focus,
+.tree a:hover,
 #skill-group-selector .panel a:hover,
 #skill-group-selector .panel ul li.active,
 #skill-group-selector .panel ul li a:hover,
 .dropdown-menu a:hover {
 	text-decoration: underline !important;
 }
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.job-list-item .job-description,
+.job-list-item .job-name,
+.job-list-item .company .company-name,
+.job-list-item .company .company-name:hover,
+.redesigned-container .panel.panel-stealth .panel-heading,
+.tree a:focus,
+.tree a:hover,
+.tree a,
+.text-muted,
 #skill-group-selector .panel a:hover,
 #skill-group-selector .panel ul li.active,
 #skill-group-selector .panel ul li a:hover,
@@ -185,5 +230,8 @@ body:not(.frontpage) {
 .alert-success,
 .alert-info {
 	border-color: #00ae5a;
+}
+.alert-warning {
+	border-color: #e08a10;
 }
 }

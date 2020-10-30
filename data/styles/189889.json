@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "hurriyet",
     "createdAt": "2020-09-26T06:26:03.000Z",
-    "updatedAt": "2020-09-26T06:26:03.000Z",
+    "updatedAt": "2020-10-29T16:56:45.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 1035855,
@@ -35,6 +35,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"hurriyet.com.tr\") {\r\n.header-masthead, .premium-popup-container {\r\n    display:none !important;\r\n}\r\n#retouch-main-slider .swiper-pagination {\r\n    padding:10px;\r\n}\r\n\r\n#retouch-main-slider .swiper-pagination-bullet {\r\n    height:auto;\r\n    line-height:normal;\r\n    margin:0 2px 0 0 !important;\r\n    width:38.1px;\r\n    border-radius:5px;\r\n    padding:5px 0;\r\n}\r\n#retouch-flash-slider .swiper-pagination .swiper-pagination-bullet {\r\n    border-radius:5px;\r\n    height:auto;\r\n    padding:5px;\r\n    width:auto;\r\n}\r\n.h16-breaking-news-wrapper {\r\n    margin-bottom:0px;\r\n}\r\n\r\n.pageskin-fix-control {\r\n    margin-bottom:90px !important;\r\n}\r\n}"
+    "css": "/* ==UserStyle==\r\n@name           www.hurriyet.com.tr - 2020\r\n@namespace      github.com/openstyles/stylus\r\n@version        1.1.0\r\n@description    A new userstyle\r\n@author         Ender Topaloğlu\r\n==/UserStyle== */\r\n@-moz-document domain(\"hurriyet.com.tr\") {\r\n\t.header-masthead,\r\n\t.premium-popup-container,\r\n\t.topBandBanner,\r\n\t#mp-widget\r\n\t{\r\n\t\tdisplay: none !important;\r\n\t}\r\n\r\n\t#retouch-main-slider .swiper-pagination {\r\n\t\tpadding: 10px;\r\n\t}\r\n\r\n\t#retouch-main-slider .swiper-pagination-bullet {\r\n\t\theight: auto;\r\n\t\tline-height: normal;\r\n\t\tmargin: 0 2px 0 0 !important;\r\n\t\twidth: 38.1px;\r\n\t\tborder-radius: 5px;\r\n\t\tpadding: 5px 0;\r\n\t}\r\n\r\n\t#retouch-flash-slider .swiper-pagination .swiper-pagination-bullet {\r\n\t\tborder-radius: 5px;\r\n\t\theight: auto;\r\n\t\tpadding: 5px;\r\n\t\twidth: auto;\r\n\t}\r\n\r\n\t[data-track-id=\"flash-ust-manset\"] {\r\n\t\tmargin-bottom: 0 !important;\r\n\t\tmargin-top: 10px;\r\n\t}\r\n\r\n\t.pageskin-fix-control {\r\n\t\tmargin-bottom: 90px !important;\r\n\t}\r\n}"
   }
 }

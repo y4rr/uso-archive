@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         duncannah
 @description    `Makes Twitter’s redesign (July 2019) less painful.<strong>I highly recommend using the UserCSS version instead, available here: <a href="https://github.com/duncannah/better-twitter-redesign">https://github.com/duncannah/better-twitter-redesign</a></strong>`
-@version        20201024.14.8
+@version        20201029.20.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -85,7 +85,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
   width: 300px; }
 
 /* remove margin from title */
-[data-testid='primaryColumn'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
+[data-testid='primaryColumn'] > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child {
   max-width: 100%;
   margin: 0; }
 
@@ -93,7 +93,8 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 /* make tweets bigger */
 [data-testid='primaryColumn'] > div:first-child > div:last-child {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  max-width: unset; }
 
 [data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
   width: 100%;
@@ -118,7 +119,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 [aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child {
   max-width: 100%; }
 
-[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:nth-child(2) {
+[aria-labelledby='detail-header'] > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > div:last-child {
   max-width: 60%; }
 
 /* remove margin from conversation title */

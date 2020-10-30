@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         Yad
 @description    `YOUTUBE Retro Wave Theme`
-@version        20201029.1.7
+@version        20201029.12.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-
 /*2021 Youtube Retro Wave by YAD*/
 
 
@@ -154,39 +153,27 @@ ytd-comments {/*comments box*/
 	opacity: 1;
 }
 
-.ytp-scrubber-pull-indicator::before {
+.ytp-scrubber-pull-indicator::after {
     display: block;
-    position: absolute;
+    position: inherit;
     content: '';
-    bottom: 0px;
-    left: 0px;
+    top: -13px;
+    left: -13px;
     opacity: 1;
     width: 40px;
     height: 40px;
-    border-style: dashed;
+    border-style: solid;
     border-width: 0px;
-    border-color: #271a1a40;
+    border-color: #e70b0b00;
     background-image: url(https://i.postimg.cc/Sx80hzN3/original.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-	
 }
 
 
 /*2021 Youtube Retro Wave by YAD*/
 
-
-.ytp-scrubber-pull-indicator {
-    position: absolute;
-    z-index: 42;
-    bottom: 27px;
-    left: -14px;
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
 
 paper-button.ytd-subscribe-button-renderer {/*sub button*/
     background-color: #a320fb;
@@ -239,6 +226,4 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
     background: #ffffff;
     box-shadow: 0 0 12px 5px #ff00e2;
 }
-
-
 }
