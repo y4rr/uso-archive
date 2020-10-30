@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yad
 @description    `This theme is only applicable for the new Facebook Layout.Turn off dark mode and select compact for better display.`
-@version        20201023.3.12
+@version        20201030.5.14
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
     background-image: url(https://i.postimg.cc/zG4s41Jr/yadhkstop.png);
     background-size: 84px;
     background-repeat: no-repeat;
-    background-position-x: 1060px;
+    background-position-x: 350px;
     background-position-y: 0px;
     margin: 1px;
 }
@@ -24,7 +24,7 @@
     background-image: url(https://i.postimg.cc/SK0PD7rQ/yadhkgo.gif);
     background-size: 84px;
     background-repeat: no-repeat;
-    background-position-x: 1060px;
+    background-position-x: 350px;
     background-position-y: 0px;
 }
 .em6zcovv {
@@ -159,7 +159,7 @@
     width: 20px;
 }
 .gky8063y {
-    background-color: #f9cd65;
+    background-color: #881567;
 }
 .sqpo3gyd {
     fill: #ece4e2;
@@ -224,36 +224,49 @@
 }
 /*hover tricks*/
 .cwj9ozl2 {
-    background-color: #f2f3f500;
+    background-color: #f2f3f5;
 }
 .i4q6vifz {
-    box-shadow: 0px 0px 0px 0px #e91e6300;
+	max-width: 129px;
+	max-height: 129px;
 	background-color: #f2f3f5;
+	transition: max-width 0.2s;
 	
 }
 .cwj9ozl2:hover {
     background-color: #f2f3f5;
 }
 .i4q6vifz:hover {
+    max-width: 400px;
+    max-height: 400px;
     box-shadow: 0px 4px 5px 0px #00000045;
+    border-width: thick;
+    border-color: #fac;
 }
-
 
 .hybvsw6c {
     background-color: var(--fds-comment-background);
 }
 .lzf7d6o1 {
-    filter: invert(1);
+    filter: invert(21%) sepia(338%) hue-rotate(-91deg) saturate(319%) opacity(100%) brightness(166%) contrast(127%);
 }
 .ovq5dppa {
     background-color: #79bbbe;
 }
-.m6k467ps {
-    filter: opacity(0.5);
-}
 
 /*login na dito */
-
+.uiTooltipX .tooltipContent {/*remove account*/
+    background-color: #ffeafa;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 8px;
+    text-align: left;
+}
+.sp_EIcWTnZ0Zze_1_5x {/*add account*/
+    filter: invert(31%) sepia(338%) hue-rotate(-91deg) saturate(319%) opacity(86%) brightness(86%) contrast(127%);
+}
 ._21es {
     background: #ffafcf;
     border: 0;
@@ -274,21 +287,26 @@
     filter: hue-rotate(88deg);
 }
 ._95k9 {
-    background: linear-gradient(45deg, #e74b8a00, rgb(255, 53, 201));
+    background: linear-gradient(45deg, #bc0dc900, rgb(180, 26, 113));
 }
 ._8esk {
     margin: 0 auto;
     padding: 20px 0;
     position: relative;
     width: 980px;
-    background-image:none;
     background-repeat: no-repeat;
     background-size: 138px;
-    background-position-x: 443px;
-    background-position-y: 181px;
-}
-._8esk:hover {
+	transition: width 0.5s;
+	background-position-x: 443px;
+	background-position-y: 181px;
 	background-image: url(https://i.postimg.cc/T1cY81qw/yadloginhk.png);
+	animation-name: yadlogcat;
+	animation-duration: 1s;
+}
+@keyframes yadlogcat{
+	0% {background-position-x: 493px;background-position-y: 181px;}
+	100% {background-position-x: 443px;background-position-y: 181px;}
+	
 }
 ._6luv {
     align-items: center;
@@ -335,7 +353,13 @@
     padding-right: 32px;
     text-shadow: none;
 }
-
+._8icy._9ah- ._6lth:hover {/*login*/
+    background-color: #fac;
+}
+._4jy2:hover {
+    background-color: #fac;
+    border-color: #fac;
+}
 /* smiley box */
 
 .i42f9fw1 {
@@ -490,7 +514,7 @@
 /*pill option*/
 .qp9yad78 {
     margin-right: -9999px;
-    background-color: #f2f3f5;
+    background-color: #f2f3f500;
     border-radius: 20px;
 }
 
@@ -540,5 +564,97 @@
     text-overflow: ellipsis;
     transition: opacity 50ms ease;
     -webkit-user-select: none;
+}
+.jllm4f4h {/*online indicator*/
+    background-color: #0ed2d9;
+}
+.g5o1ygfq {
+    color: #0ed2d9;
+}
+/*video settings*/
+.a1rjevna {
+    background-color: #ffffffa6;
+    border-radius: 16px;
+}
+.otgj09dw {
+    box-shadow: 1px 1px 10px 0px #fac;
+}
+.mkbloq8g {
+    background-color: #f7498f;
+}
+.br3lixkv {
+    background-color: #c82f63;
+}
+.h4pr0btg {/*timer*/
+filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(300deg) brightness(200%) contrast(100%);
+}
+.lyi53s4r {
+    background-color: #e95992;
+}
+.d6rk862h {/*auto caption*/
+    background-color: #fff6;
+    border-radius: 19px;
+}
+.ljqsnud1 {/*title on end of video*/
+    color: #ffb6ea;
+}
+
+.m6k467ps {/*small icons*/
+    filter: invert(31%) sepia(338%) hue-rotate(-91deg) saturate(319%) opacity(86%) brightness(86%) contrast(127%);
+}
+.sp_xfw9xddGHAM_1_5x.sx_abe01d {/*compose*/
+    background-position: 0 -920px;
+    filter: invert(42%) sepia(218%) hue-rotate(-51deg) saturate(199%) opacity(100%) brightness(183%) contrast(127%);
+}
+.sp_ZI9RtfBUAQA_1_5x.sx_8bf53a {/*story*/
+    background-position: 0 -1872px;
+	filter: invert(42%) sepia(218%) hue-rotate(-51deg) saturate(199%) opacity(100%) brightness(183%) contrast(127%);
+}
+.sp_ZI9RtfBUAQA_1_5x.sx_04d098 {/*life event*/
+    background-position: 0 -1212px;
+	filter: invert(42%) sepia(218%) hue-rotate(-51deg) saturate(199%) opacity(100%) brightness(183%) contrast(127%);
+}
+.sp_xfw9xddGHAM_1_5x.sx_ed7158 {/*dropdown*/
+    background-position: 0 -1360px;
+    filter: invert(42%) sepia(218%) hue-rotate(-51deg) saturate(199%) opacity(100%) brightness(183%) contrast(127%);
+}
+.sp_xfw9xddGHAM_1_5x.sx_4c196f {/*check button*/
+    background-position: 0 -678px;
+    filter: invert(42%) sepia(338%) hue-rotate(-91deg) saturate(319%) opacity(100%) brightness(100%) contrast(127%);
+}
+.cwsop09l {/*profile icons*/
+    filter: invert(31%) sepia(338%) hue-rotate(-91deg) saturate(319%) opacity(86%) brightness(86%) contrast(127%);
+}
+.sp_nUTijdutLoC_1_5x {/*add user*/
+    width: 16px;
+    height: 16px;
+    background-position: 0 -446px;
+    filter: invert(41%) sepia(338%) hue-rotate(-75deg) saturate(298%) opacity(100%) brightness(86%) contrast(127%);
+}
+._71pn ._18vk::before {/*comment*/
+    filter: invert(40%) sepia(218%) hue-rotate(-87deg) saturate(199%) opacity(100%) brightness(72%) contrast(127%);
+}
+.tw2q2tq1 {/*like*/
+    filter: invert(40%) sepia(218%) hue-rotate(-87deg) saturate(199%) opacity(100%) brightness(72%) contrast(127%);
+}
+.bdca9zbp {/*like2*/
+	filter: invert(40%) sepia(218%) hue-rotate(-87deg) saturate(199%) opacity(100%) brightness(72%) contrast(127%);
+}
+.synb87wq {/*confirm button*/
+    background-color: #f93bb1;
+}
+
+/*button radius*/
+.aot14ch1 {
+    border-bottom-right-radius: 20px;
+}
+.beltcj47 {
+    border-top-left-radius: 20px;
+}
+.kzx2olss {
+    border-bottom-left-radius: 20px;
+}
+.p86d2i9g {
+    border-top-right-radius: 20px;
 }
 }

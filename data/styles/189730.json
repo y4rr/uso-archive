@@ -1,13 +1,13 @@
 {
   "id": 189730,
   "info": {
-    "name": "ニコニコ動画 動画ページダークテーマ for HTML5",
+    "name": "ニコニコ動画(Re) 動画ページダークテーマ for HTML5",
     "description": "<a href=\"https://userstyles.org/users/292720\">邪ンヌ（復讐者）</a>さんが公開されている<a href=\"https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash\">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。\r\n\r\n上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。\r\nまたインストールボタン横の \"Customize Settings\" でいくつかの要素改変オプションを追加することができます。\r\nかんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。\r\n\r\nスクリーンショット画像を撮影した環境では、本CSSおよびublockを導入した状態ですが、動画ページだけであれば広告除去は本CSSでしているため追加でアドオン等を導入する必要はありません。\r\n\r\n動作確認は一応ChromeとFirefoxで行っています。\r\n全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。\r\nその場合はこのサイト上でフィートバックを残していただくか<a href=\"https://twitter.com/WATANUKI_AZUMA/\">Twitter</a>もしくは<a href=\"https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion\">マシュマロ</a>等で連絡をいただければ可能な限り対応したいと思います。\r\n\r\nまた、この場を借りまして、オリジナルの製作者様に感謝申し上げます。\r\n更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。",
     "additionalInfo": "2020-10-29 非プレミアムで動画再生前に動画に重なる形で表示されるプレミアム登録案内を非表示化\r\n2020-10-16 ニコられコメントの背景色変更に対応 いくつかの不具合修正 コード1と統合し最適化\r\n2020-10-13 Twitter共有機能の仕様変更に対応 マイリスト登録タブの修正 シリーズ欄をハイライトする機能をカスタマイズ機能に移動\r\n2020-10-11 カスタマイズ機能をちょっとだけ追加\r\n2020-10-10 いいねボタンの調整 試験的にシリーズ欄をハイライト（不要なら削除してください）\r\n2020-10-05 Twitter共有タブ、共有タブ、NG登録タブのデザインの変更 ヘッダーメニューの変更\r\n2020-09-22 公開開始",
     "format": "uso",
     "category": "nicovideo",
     "createdAt": "2020-09-22T12:40:37.000Z",
-    "updatedAt": "2020-10-29T13:53:27.000Z",
+    "updatedAt": "2020-10-30T09:43:32.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 994797,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 20,
-      "weekly": 8
+      "total": 21,
+      "weekly": 9
     }
   },
   "screenshots": {
@@ -126,7 +126,7 @@
       },
       {
         "key": "マーキーエリア",
-        "label": "マーキーエリア",
+        "label": "マーキーエリア（動画上ニュース等が流れる部分）",
         "type": "dropdown",
         "options": [
           {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Joseph Thoennes
 @description    `A bit more of an inbox feel to the "new" gmail (end of 2018, that is).  Nothing radical.  Just a very slight tweaking of positions, colors, and sizing.Be gentle, it's my first style :)`
-@version        2019415.4.19
+@version        20201030.3.18
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,6 +18,15 @@
 	height: 56px;
 	padding: 0;
 }
+
+/* rainbow logo */
+img.gb_va {
+    display: none;
+}
+.gb_2c {
+    min-width: auto !important;
+}
+
 /*** header icons ***/
 .gb_sc > svg,
 svg.gb_ff,

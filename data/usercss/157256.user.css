@@ -3,16 +3,15 @@
 @namespace      USO Archive
 @author         Or Schiro
 @description    `Always show the From address when composing a message.`
-@version        2020711.15.42
+@version        20201030.12.5
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("mail.google.com") {
-.aXjCH {
-    display: block!important;
+.fX.aiL { /* editable address field */
+  display: block !important;
 }
-
-.bgW, .hl {
-    display: none!important;
+.aoD.hl { /* read-only address field */
+  display: none !important;
 }
 }

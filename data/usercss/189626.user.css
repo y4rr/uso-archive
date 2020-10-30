@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         chen_zhe_
 @description    `启程实验室优化 -by _•́へ•́╬_`
-@version        2020926.14.54
+@version        20201030.11.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url("http://icodelab.cn:8080/"), url("http://icodelab.cn:8080/contests"), url("http://icodelab.cn:8080/acm-rank"), url("http://icodelab.cn:8080/oi-rank"), url("http://icodelab.cn:8080/about"), url("http://icodelab.cn:8080/FAQ"), url-prefix("http://icodelab.cn:8080/contest/"), url-prefix("http://icodelab.cn:8080/status") {
+@-moz-document url("http://icodelab.cn:8080/"), url("http://icodelab.cn:8080/contests"), url("http://icodelab.cn:8080/acm-rank"), url("http://icodelab.cn:8080/oi-rank"), url("http://icodelab.cn:8080/about"), url("http://icodelab.cn:8080/FAQ"), url-prefix("http://icodelab.cn:8080/contest/"), url-prefix("http://icodelab.cn:8080/status"), url-prefix("http://icodelab.cn:8080/problem/") {
 .ivu-tag
 {
 	border-radius: 15px;
@@ -63,4 +63,12 @@
 	border-radius: 15px;
     box-shadow: 1px 1px;
 }
+pre
+{
+	border-radius: 15px;
+}
+}
+
+@-moz-document url("http://icodelab.cn:8080/problems") {
+
 }

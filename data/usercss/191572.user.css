@@ -2,9 +2,9 @@
 @name           Eaglemoss Darkest by Guile93
 @namespace      USO Archive
 @author         Guile93
-@description    `Very dark theme for Eaglemoss.com shop`
-@version        20201029.0.56
-@license        CC-BY-ND-4.0
+@description    `Grey dark theme for Eaglemoss.com shop`
+@version        20201030.4.23
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("eaglemoss.com") {
@@ -12,30 +12,37 @@
 Name: Eaglemoss Darkest by Guile93
 Author: Guile93
 License: No Redistribution 
-Version: 1.0 
+Version: 1.1
 */
+::-webkit-scrollbar {
+    width: 10px; }
+
+::-webkit-scrollbar-track {
+    background: #333232; }
+
+::-webkit-scrollbar-thumb {
+    background: #888; }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; }
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, optgroup, output, p, pre, progress, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0; padding: 0; border: 0; font-size: inherit; font-family: inherit; font-weight: inherit; vertical-align: baseline; color: #c6c6c6; text-transform: none; outline: none; border-radius: 0 }
 
 .b-a {
     border: 1px solid #262626 }
 
-
 .b-t {
     border-top: 1px solid #262626 }
-
 
 .b-r {
     border-right: 1px solid #262626 }
 
-
 .b-b {
     border-bottom: 1px solid #262626 }
 
-
 .b-l {
     border-left: 1px solid #262626 }
-
 
 .col-w, .col-w:after, .col-w:before {
     color: #202020!important }
@@ -91,20 +98,6 @@ body {
 .button {
     vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid; border-radius: 0; font-family: Roboto, sans-serif; font-size: 1em; line-height: 1; text-align: center; text-decoration: none; touch-action: manipulation; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; cursor: pointer; transition: background-color .25s ease-in-out, border-color .25s ease-in-out, color .25s ease-in-out; height: 3em; padding: 0 3em; background-color: #222; border-color: #222; color: #202020; text-transform: uppercase }
 
-					 
-																																																												
-
-										  
-																																														   
-
-
-																																																																																																																																																																																															 
-																	
-
-
-											   
-																																														   
-
 .button.busy:after, .button.busy:before, .button.is-busy:after, .button.is-busy:before {
     -webkit-animation: bounce 2s infinite ease-in-out; animation: bounce 2s infinite ease-in-out; content: ""; display: block; width: 1.2em; height: 1.2em; border-radius: 50%; background-color: #202020; margin-left: -.6em; margin-top: -.6em; opacity: .5; position: absolute; top: 50%; left: 50% }
 
@@ -113,27 +106,6 @@ body {
 
 .button.disabled, .button.disabled:active, .button.disabled:focus, .button.disabled:hover, .button.is-disabled, .button.is-disabled:active, .button.is-disabled:focus, .button.is-disabled:hover, .button:disabled, .button:disabled:active, .button:disabled:focus, .button:disabled:hover, .button[disabled], .button[disabled]:active, .button[disabled]:focus, .button[disabled]:hover {
     background-color: #404040; border-color: #404040 }
-
-																																																											  
-																																														   
-
-
-		   
-																																																																																																																																																																																																																																																																																																																																																																		
-
-					   
-																																																												
-
-											
-																																														   
-
-
-																																																																																																																																																																																																																																															
-																	
-
-
-												   
-																																														   
 
 .button-1.busy:after, .button-1.busy:before, .button-1.is-busy:after, .button-1.is-busy:before {
     -webkit-animation: bounce 2s infinite ease-in-out; animation: bounce 2s infinite ease-in-out; content: ""; display: block; width: 1.2em; height: 1.2em; border-radius: 50%; background-color: #202020; margin-left: -.6em; margin-top: -.6em; opacity: .5; position: absolute; top: 50%; left: 50% }
@@ -146,34 +118,6 @@ body {
 
 .button-1.disabled, .button-1.disabled:active, .button-1.disabled:focus, .button-1.disabled:hover, .button-1.is-disabled, .button-1.is-disabled:active, .button-1.is-disabled:focus, .button-1.is-disabled:hover, .button-1:disabled, .button-1:disabled:active, .button-1:disabled:focus, .button-1:disabled:hover, .button-1[disabled], .button-1[disabled]:active, .button-1[disabled]:focus, .button-1[disabled]:hover {
     background-color: #262626; border-color: #262626 }
-
-																																																													   
-																																														   
-
-																																														
-																	  
-
-		   
-																																																																																																																																																																																																																																																																																																																																															 
-
-					   
-																																																												
-
-
-											
-																																														   
-
-								   
-										
-
-																																																																																																																																																																																																																																															
-																	
-
-								   
-													  
-
-												   
-																																														   
 
 .button-2.busy:after, .button-2.busy:before, .button-2.is-busy:after, .button-2.is-busy:before {
     -webkit-animation: bounce 2s infinite ease-in-out; animation: bounce 2s infinite ease-in-out; content: ""; display: block; width: 1.2em; height: 1.2em; border-radius: 50%; background-color: #202020; margin-left: -.6em; margin-top: -.6em; opacity: .5; position: absolute; top: 50%; left: 50% }
@@ -302,7 +246,7 @@ body {
     background-color: #bbb; border-color: #262626; color: #999797 }
 
 .select {
-    -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; padding: 0 .5em; border: 1px solid; transition: background-color .25s ease-in-out, border-color .25s ease-in-out, color .25s ease-in-out; font-family: Roboto, sans-serif; font-size: 1em; vertical-align: middle; outline: none; height: 3em; background-color: #202020; border-color: #262626; color: #222; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .35em center; background-size: .6em .75em; padding-right: 1em}
+    -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; padding: 0 .5em; border: 1px solid; transition: background-color .25s ease-in-out, border-color .25s ease-in-out, color .25s ease-in-out; font-family: Roboto, sans-serif; font-size: 1em; vertical-align: middle; outline: none; height: 3em; background-color: #202020; border-color: #262626; color: #222; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23000' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .35em center; background-size: .6em .75em; padding-right: 1em }
 
 .select.is-hover, .select:hover {
     background-color: #202020; border-color: #262626; color: #222 }
@@ -491,7 +435,7 @@ zoom-container [image].loaded {
     background-color: #202020 }
 
 .hub-HC .trust-bar {
-    background-color: #999999;}
+    background-color: #999999; }
 
 .hub-CC .header .is-CC {
     background-color: #202020 }
@@ -506,11 +450,11 @@ zoom-container [image].loaded {
     background-color: #b8292f; color: #202020 }
 
 .button-4 {
-    background-color: #262626;
-    border-color: #A5A5A5;
-    color: #fff;
-}
-.button-4 span{
-    color:#9b9b9b;
-}
+    background-color: #262626; border-color: #A5A5A5; color: #fff; }
+
+.button-4 span {
+    color: #9b9b9b; }
+
+.link-1, .text a {
+    color: #a2a2a2; }
 }

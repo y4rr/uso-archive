@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201013.4.49
+@version        20201030.5.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -140,6 +140,7 @@ off "Off" <<<EOT /* Scrollbar *\/
 	--discuss: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/discuss.svg);
 	--shop: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/shop.svg);
 	--profile: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/profile.svg);
+	--bell: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/bell.svg);
 	--more: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/more.svg);
 	
 	--dictionary: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/dictionary.svg);
@@ -151,6 +152,7 @@ off "Off" <<<EOT /* Scrollbar *\/
 	--streak: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/streak.svg);
 	--streak-flame: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/slate/streak-flame-empty.svg);
 	--lingot: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/lingot.svg);
+	--lingot-singular: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/lingot.svg);
 	
 	--crack: url(https://raw.githubusercontent.com/justinikeako/darklingo/6a1ff7a0744955932e82fe467eadf9f946bf3b0a/assets/slate/crack.svg);
 	
@@ -176,7 +178,9 @@ off "Off" <<<EOT /* Scrollbar *\/
 	
 	--stories-speaker: url(https://raw.githubusercontent.com/justinikeako/darklingo/43fc25826cfa7bd4f908720ed04e4b5a0cc58d9e/assets/slate/stories-speaker.svg);
 	
-	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/28251bb60c73901d578b46be15f2e9e5be5fb3bd/assets/slate/icon-sprite.svg);
+	--podcast: url(https://raw.githubusercontent.com/justinikeako/darklingo/86eeb8a05f8b07ebb9b5dd90dc30aeb5fe95a157/assets/slate/podcast.svg);
+	
+	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/6e4cd281143fb53bc2bcda4cb4d0ec48fc354dfb/assets/slate/icon-sprite.svg);
 	
 	--edit: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/edit.svg);
 	
@@ -227,6 +231,7 @@ pitch-black "Pitch Black" <<<EOT 	--50: #000000;
 	--streak: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/pitch-black/streak.svg);
 	--streak-flame: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/pitch-black/streak-flame-empty.svg);
 	--lingot: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/pitch-black/lingot.svg);
+	--lingot-singular: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/pitch-black/lingot.svg);
 	
 	--crack: url(https://raw.githubusercontent.com/justinikeako/darklingo/6a1ff7a0744955932e82fe467eadf9f946bf3b0a/assets/pitch-black/crack.svg);
 	
@@ -252,9 +257,11 @@ pitch-black "Pitch Black" <<<EOT 	--50: #000000;
 	
 	--stories-speaker: url(https://raw.githubusercontent.com/justinikeako/darklingo/8e041c2520b76ed052ebadf6cbc24dbdfd10ed3c/assets/pitch-black/stories-speaker.svg);
 	
-	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/7dcffd27362cf0e3ba56c5c2c8e525d8d40521b1/assets/pitch-black/icon-sprite.svg);
+	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/6e4cd281143fb53bc2bcda4cb4d0ec48fc354dfb/assets/pitch-black/icon-sprite.svg);
 	
 	--edit: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/pitch-black/edit.svg);
+	
+	--podcast: url(https://raw.githubusercontent.com/justinikeako/darklingo/86eeb8a05f8b07ebb9b5dd90dc30aeb5fe95a157/assets/pitch-black/podcast.svg);
 	
 	--fat-x: url(https://raw.githubusercontent.com/justinikeako/darklingo/937cade9fe995d5bcdc9441ba057b60d68411ff3/assets/pitch-black/fat-x.svg);
 	
@@ -302,7 +309,8 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	--crown: url(https://raw.githubusercontent.com/justinikeako/darklingo/43fc25826cfa7bd4f908720ed04e4b5a0cc58d9e/assets/midnight/crown.svg);
 	--streak: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/midnight/streak.svg);
 	--streak-flame: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/midnight/streak-flame-empty.svg);
-	--lingot: url(https://raw.githubusercontent.com/justinikeako/darklingo/43fc25826cfa7bd4f908720ed04e4b5a0cc58d9e/assets/midnight/lingot.svg);
+	--lingot: url(https://raw.githubusercontent.com/justinikeako/darklingo/9b3e4b26b3b0cd078f939d018ab89d75ecbd3164/assets/midnight/lingot.svg);
+	--lingot-singular: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/midnight/lingot.svg);
 	
 	--crack: url(https://raw.githubusercontent.com/justinikeako/darklingo/6a1ff7a0744955932e82fe467eadf9f946bf3b0a/assets/midnight/crack.svg);
 	
@@ -326,11 +334,13 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	--search: url(https://raw.githubusercontent.com/justinikeako/darklingo/372e198e8e3740316b8c740a6e3dbdecaeb59cf7/assets/midnight/search.svg);
 	--close: url(https://raw.githubusercontent.com/justinikeako/darklingo/372e198e8e3740316b8c740a6e3dbdecaeb59cf7/assets/midnight/close.svg);
 	
-	--stories-speaker: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/midnight/stories-speaker.svg);;
+	--stories-speaker: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/midnight/stories-speaker.svg);
 	
-	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/7dcffd27362cf0e3ba56c5c2c8e525d8d40521b1/assets/midnight/icon-sprite.svg);
+	--icon-sprite: url(https://raw.githubusercontent.com/justinikeako/darklingo/6e4cd281143fb53bc2bcda4cb4d0ec48fc354dfb/assets/midnight/icon-sprite.svg);
 	
 	--edit: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/midnight/edit.svg);
+	
+	--podcast: url(https://raw.githubusercontent.com/justinikeako/darklingo/86eeb8a05f8b07ebb9b5dd90dc30aeb5fe95a157/assets/midnight/podcast.svg);
 	
 	--fat-x: url(https://raw.githubusercontent.com/justinikeako/darklingo/937cade9fe995d5bcdc9441ba057b60d68411ff3/assets/midnight/fat-x.svg);
 	
@@ -395,8 +405,7 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 
 
 /* Background */
-._2cmOB,
-.brXUB {
+._2cmOB {
 	background-color: var(--50)
 }
 
@@ -432,12 +441,15 @@ input[type=checkbox],
 ._3PnTi,
 ._1AUpU,
 ._1qYD7,
+._2j1Gc,
 ._11zAS,
 ._2PVaI,
 ._2QKoe,
 ._2Dx4v,
 ._3wZWk,
+._3f1oK,
 ._17s2H,
+._2Skl3,
 ._3rgc9,
 ._2nLk_,
 ._2Y3c_,
@@ -460,7 +472,8 @@ body {
 ._1eBPl:first-child ._1lcy6,
 ._2povu tr:nth-child(2n),
 ._2bk_b th,
-._2maxd {
+._2maxd,
+.fvNJ1 {
 	background-color: var(--150)
 }
 
@@ -479,6 +492,7 @@ body {
 ._1IbT7,
 ._2M5ms,
 ._3EXnD,
+._2_JcM,
 .s3gi1,
 .lO0R4,
 .hdpq_ {
@@ -492,7 +506,8 @@ body {
 	background-color: var(--400)
 }
 
-._2NET4 ._1MoE- {
+._2NET4 ._1MoE-,
+.brXUB {
 	background-color: var(--tertiary)
 }
 
@@ -507,10 +522,13 @@ body {
 .stacked-dropdown .dropdown-toggle:focus,
 ._37HGt:not(.G1JDk):hover,
 ._1t6SZ:not(.PVzmO):hover,
+._168wl ._3ro2R:hover,
+._168wl ._3hI6u:hover,
 ._21XHp ._1wpST:hover,
 ._21XHp .HkpQ_:hover,
-.K4oWn, .slg8x:hover,
+.ISEeS ._2nIuI:hover,
 ._1wJYQ:hover::after,
+.ISEeS .D3QAY:hover,
 ._22L18:active,
 .Ud2qM:active,
 ._21Icd:hover,
@@ -518,6 +536,8 @@ body {
 ._1CkMd:hover,
 ._1Jk5X:hover,
 ._22L18:hover,
+._2FdDp:hover,
+._21W8z:hover,
 .FrL-W:hover,
 .Ud2qM:hover,
 .YH-oX:hover,
@@ -526,8 +546,10 @@ body {
 .V74YZ:hover,
 .yXp5g:hover,
 .TKIPn:hover,
+.slg8x:hover,
 ._3uJzy,
-._1eSrF {
+._1eSrF,
+.K4oWn {
 	background-color: var(--hover)
 }
 
@@ -546,9 +568,11 @@ body {
 .related-posts h4 a::after,
 .view-all-posts a,
 .secondary-navbar,
+.FuDmc li:hover,
 ._3KjXR::before,
 ._1vUZG::after,
 ._3h6Yu th,
+.FuDmc li,
 ._4zwvA,
 ._14wBD,
 ._2bFNZ,
@@ -576,6 +600,8 @@ body {
 
 .fJSw6:active:not(._326cY):not(.IACXk)::after,
 ._21XHp ._1gmIY,
+._168wl ._2rwos,
+.ISEeS .G_xgk,
 ._3QwaZ {
 	background-color: var(--custom-color-translucent-light)
 }
@@ -601,6 +627,12 @@ body {
 	background-color: var(--red-on-bg)
 }
 
+.PppIj ._1gd-F {
+	background-color: var(--tertiary)
+}
+
+._2NmyP,
+._3z2Yo,
 ._14fD_ {
 	background-color: var(--0-overlay)
 }
@@ -632,14 +664,20 @@ body {
 ._2Inq2:not(:last-child),
 ._3h6Yu td:first-child,
 ._1foEs:first-of-type,
+._3b7Vp:first-of-type,
+._28B_R:first-of-type,
 ._2povu blockquote,
 ._1eBPl ._1lcy6,
 ._21XHp ._1wpST,
+._168wl ._3ro2R,
+._168wl ._3hI6u,
+.ISEeS ._2nIuI,
 ._3YYVw::after,
 ._2Smk1::after,
 ._2Ccni::after,
 ._21XHp .HkpQ_,
 .Ud2qM:active,
+.ISEeS .D3QAY,
 .phase-header,
 ._3h6Yu td,
 ._2bk_b th,
@@ -648,7 +686,10 @@ body {
 ._2povu th,
 ._2sVvh li,
 .g_Zzj td,
+._3b7Vp,
+._1Mo5S,
 ._374bD,
+._2j1Gc,
 ._2Gskp,
 ._15nlG,
 ._1foEs,
@@ -661,10 +702,12 @@ body {
 ._11apW,
 ._32Uu5,
 ._27avI,
+._1cSqW,
 ._8roiG,
 ._33x5b,
 ._2S0Zh,
 ._2MyXH,
+._2FdDp,
 ._1HxVp,
 ._2lmwK,
 ._2Y0pF,
@@ -675,8 +718,10 @@ body {
 ._1j2NG,
 ._2ggHJ,
 ._15J0U,
+._21W8z,
+._28B_R,
 ._1-j6_,
-._17nEt,
+._3Ixn-,
 .V74YZ,
 .SQR8J,
 .Isq59,
@@ -684,9 +729,14 @@ body {
 .PZMcl,
 .C8vLo,
 .FrL-W,
+.-qpyM,
 .-AHpg,
 hr {
 	border-color: var(--200)
+}
+
+._17nEt {
+	border-color: var(--250)
 }
 
 .stacked-dropdown .dropdown-toggle.gray-bordered,
@@ -696,10 +746,14 @@ hr {
 }
 
 ._2igzU._1xWrt._2P5W7,
-input[type=checkbox],
-._2Iqyl {
+input[type=checkbox] {
 	border-color: var(--secondary)
 }
+
+._2Iqyl {
+	border-color: var(--tertiary)
+}
+
 .fJSw6:active:not(._326cY):not(.IACXk)::after,
 .phase-header .phase-container .phase-icon,
 ._3pn9e:active:not(._1d8Vo) ._2f9B3,
@@ -712,11 +766,17 @@ input[type=checkbox]:checked,
 ._26wPn._1HjFK .Z7UoT,
 ._1c25o > ._196g_,
 ._2b454::before,
+._2GRGJ._3LJUV,
+._2GRGJ._3LJUV,
 ._17nEt:focus,
 ._35oPr,
 .ySIVK,
 .Xw55g {
 	border-color: var(--custom-color)
+}
+
+._2GRGJ._3LJUV {
+	border-color: var(--custom-color) !important
 }
 
 .twkSI::after {
@@ -751,13 +811,17 @@ footer ul.footer li:first-child,
 ._32iRr ._1rERA,
 ._21XHp ._1wpST,
 ._2ZzW9 ._1wpST,
+._168wl ._3ro2R,
+.ISEeS ._2nIuI,
 ._1sbh0 .ZNHik,
 ._2igzU._3LUrt,
 ._2ZzW9 .HkpQ_,
 ._21XHp .HkpQ_,
 .post-body,
 ._2VdVL h2,
+._1q9m2 h2,
 ._28yft h2,
+._37JAM h2,
 ._1fag1,
 ._1W0kX,
 ._31R5G,
@@ -765,10 +829,10 @@ footer ul.footer li:first-child,
 ._1LruX,
 ._2eirj,
 ._3PrAS,
-._27o_2,
 ._1CkMd,
 ._1CsoA,
 ._1L6XQ,
+._1jxVm,
 ._3nn1A,
 ._14oJt,
 ._31iJn,
@@ -778,7 +842,9 @@ footer ul.footer li:first-child,
 ._3AraQ,
 ._1eZU8,
 ._1OeGd,
+._3MNft,
 ._1Jk5X,
+._3xFOm,
 ._3QZBV,
 ._1m1BK,
 ._3EgXo,
@@ -792,18 +858,26 @@ footer ul.footer li:first-child,
 ._29lJ3,
 ._1qdLM,
 ._26wPn,
+._2cDAr,
 ._1O290,
+._1ZA9g,
 ._3h6Yu,
+._21hmH,
 ._15nlG,
 ._3QSh0,
+._27o_2,
+._7_au9,
 ._1oj-F,
+._37Hi-,
 ._2cZ9-,
 .MLyVF,
 .saQLX,
 .MdG1q,
 .W6uig,
+.GokmT,
 .C8vLo,
 .y88kh,
+.yGEX2,
 .qp1qo,
 .YBCQI,
 .rrLry,
@@ -841,7 +915,10 @@ h1 {
 ._32iRr .A2ICB,
 ._1eZU8._3N2Ph,
 .site-footer p,
+._2np70:hover,
 ._28yft p,
+._1q9m2 p,
+._37JAM p,
 ._2D8L4 a,
 .YRIzC p,
 ._1FtaH,
@@ -854,9 +931,12 @@ h1 {
 ._3iwbr,
 ._2jQLr,
 ._2LBIq,
+._2hYPk,
 ._1dAEt,
 ._315yA,
+._3bRSc,
 ._2dQwX,
+._29ZQh,
 ._2EWDi,
 ._3iVqs,
 ._3oNS9,
@@ -869,10 +949,15 @@ h1 {
 ._1KRXZ,
 ._1xIvJ,
 ._2igzU,
+._3IWeV,
 ._21PCv,
 ._3XEH9,
 ._2ztBJ,
+._1VWgO,
+._2NOG7,
+._2iCsL,
 ._3KnwL,
+._2rUOh,
 ._3blqO,
 ._3Rqyw,
 ._3cvJx,
@@ -910,17 +995,22 @@ h1 {
 .site-footer .navigation ul li a:hover,
 ._1V15X ._2GdjT, ._29Qrr,
 ._2yvtl::placeholder,
+._17nEt::placeholder,
 ._2ti2i::placeholder,
 ._10HmK::placeholder,
 ._2gBEa::placeholder,
 ._3ywlt::placeholder,
 ._2PAEX::placeholder,
+._3MNft::placeholder,
 ._2S0Zh,
 ._2Wjxc,
 ._2HEoZ,
 ._256ik,
 ._3mShf,
+._3yaFq,
 ._3CW8A,
+._2np70,
+._12yJ8,
 .eNrNh,
 .PVzmO,
 .kAVeU,
@@ -955,6 +1045,8 @@ footer ul.footer li a,
 .btn-banner:focus,
 ._14b16 ._2y11E,
 ._14b16 ._3YHqG,
+._-3fIQ ._2NOG7,
+._3eE_T ._2rUOh,
 ._26wPn._1HjFK,
 ._3NP7S .T6725,
 .rKOmf a:hover,
@@ -964,31 +1056,39 @@ footer ul.footer li a,
 .btn-banner,
 ._3AraQ a,
 ._3O3Y5 a,
+._1ZA9g a,
 ._1OHBK a,
 .rKOmf a,
+.yGEX2 a,
 ._1TzvX,
 ._1bYwN,
 ._1NnRQ,
 ._1yq6r,
+._1cSqW,
+._1vrtM,
 ._1hdGS,
 ._2Ccni,
 ._3MoiQ,
 ._13TEM,
+._2OOOF,
 ._3k6AZ,
 ._3Q1uX,
 ._2FJM1,
+._2NeDx,
 ._3jKxm,
 ._2__FI,
+._1EXT_,
 .kE5km,
 .aGcyX,
 .V74YZ,
 .Xw55g,
+.-qpyM,
 a {
 	color: var(--custom-color)
 }
 
 
-[style*="color: rgb(28, 176, 246);"],
+[style*="color: rgb(28, 176, 246);"]:not([style*="background-color: rgb(28, 176, 246)"]),
 [style="color:#1caff6"],
 .pmjld {
 	color: var(--custom-color) !important
@@ -1048,7 +1148,9 @@ a {
 /* Text on Gold */
 ._28jSG,
 ._2JyFG,
+._3PtId,
 ._2ZTRk,
+.yrLrI,
 .GkDDe {
 	color: #84540e
 }
@@ -1065,7 +1167,9 @@ a {
 ._2yvtl,
 ._2NVvB,
 ._2ti2i,
+._1O_I2,
 ._2PAEX,
+._2a3s4,
 ._2gBEa,
 ._10HmK {
 	background: var(--75);
@@ -1080,22 +1184,29 @@ a {
 ._3iVqs::after,
 ._26wPn::after,
 ._1wJYQ::after,
+._2OOOF::after,
+._3IWeV::after,
+._2V4l4,
 ._1K9ZC,
 ._3ZuGY,
 ._2j-Sn,
 ._399cc,
+._1Q4WV,
+._2iJ6U,
 ._31R5G,
 ._1t6SZ,
 ._2VdVL,
 ._21Icd,
-._27o_2,
+._2nhmY,
 ._11VOS,
 ._1e1GW,
 ._2i8Km,
 ._1b8Ja,
+._27o_2,
 ._1tvS_,
 ._3Gj5_,
 .YEVWG,
+.SaEU8,
 .HnjwC,
 .mrmpB,
 .TKIPn,
@@ -1333,12 +1444,17 @@ a {
 
 /* Brighten */
 ._3Ev3S[data-test="global-practice"]:hover:not(:disabled):not(.k6MEx):not(._3tP0w),
+.FuDmc li:hover,
 .rKOmf a:hover {
 	filter: brightness(1.1)
 }
 
 ._3Ev3S:hover:not(:disabled):not(.k6MEx):not(._3tP0w),
 .azI4K:hover:not(._3NP7S) ._1TuHK,
+.tCGvL:hover:not(._-3fIQ) ._1CrYJ,
+.tCGvL:hover:not(._-3fIQ) ._2NOG7,
+.qFtOl:hover:not(._3eE_T) ._2_MEs,
+.qFtOl:hover:not(._3eE_T) ._2rUOh,
 .azI4K:hover:not(._3NP7S) .T6725,
 .azI4K:hover:not(._3NP7S) .T6725,
 ._3pP2- ._2zY7s:disabled,
@@ -1378,6 +1494,10 @@ a {
 
 
 /** Misc **/
+
+.V3M4U {
+	outline-color: var(--200)
+}
 
 .view-all-posts a {
 	box-shadow: none;
@@ -1499,6 +1619,8 @@ a {
 }
 
 @media (min-width: 1050px) {
+	._1CrYJ,
+	._2_MEs,
 	._1TuHK {
 			padding-right: 0;
 			margin-right: 12px
@@ -1552,7 +1674,8 @@ html {
 
 
 /* Menu Hover */
-._3qbk_ ._1nIcg::before {
+._3qbk_ ._1nIcg::before,
+.goj2_ ._1I4lY::before {
 	content: '';
 	background: var(--100);
 	position: absolute;
@@ -1565,13 +1688,14 @@ html {
 	transition: opacity ease-in-out 200ms
 }
 
-._3qbk_ ._1nIcg:hover::before {
-	opacity: 0.2
+._3qbk_ ._1nIcg:hover::before,
+.goj2_ ._1I4lY:hover::before {
+	opacity: 0.3
 }
 
 
 /* Stories Tooltip */
-._31R5G:after {
+._31R5G::after {
 	position: absolute;
 	width: 20px;
 	height: 20px;
@@ -1587,6 +1711,7 @@ html {
 
 /* Dotted Word Underline */
 ._1hdGS,
+._3UZ75,
 ._1bkpY,
 ._3Lg1h {
 	background-position: 0 100%;
@@ -1595,17 +1720,19 @@ html {
 	padding-bottom: 5px
 }
 
+
+._2igzU._1Wk_o,
+._3UZ75,
+._3Lg1h {
+	background-image: linear-gradient(90deg, var(--secondary) 60%, transparent 0)
+}
+
 ._1hdGS {
 	background-image: linear-gradient(90deg, var(--custom-color) 60%, transparent 0)
 }
 
 ._1bkpY {
 	background-image: linear-gradient(90deg, #ff9d00 60%, transparent 0)
-}
-
-._2igzU._1Wk_o,
-._3Lg1h {
-	background-image: linear-gradient(90deg, var(--secondary) 60%, transparent 0)
 }
 
 
@@ -1629,11 +1756,11 @@ html {
 ._1Do3j {
 	background-color: var(--brand-red)
 }
+
 ._2FApd .twkSI,
 .Q2YDq {
 	background-color: var(--brand-orange)
 }
-
 
 ._3Gx6D {
 	background-color: var(--brand-gold-light)
@@ -1643,6 +1770,7 @@ html {
 .SSzTP.jXGxO {
 	background-color: var(--brand-gold-dark)
 }
+
 ._1JPPG {
 	    background-image: linear-gradient(135deg,var(--brand-gold-light),var(--brand-gold-light) 26%,var(--brand-gold-dark) 0,var(--brand-gold-dark) 39%,var(--brand-gold-light) 0,var(--brand-gold-light) 52%,var(--brand-gold-dark) 0,var(--brand-gold-dark) 57%,var(--brand-gold-light) 0,var(--brand-gold-light) 78%,var(--brand-gold-dark) 0,var(--brand-gold-dark) 90%,var(--brand-gold-light) 0,var(--brand-gold-light))
 }
@@ -1870,14 +1998,27 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72cd95b77171e6e00de85fc7389da67.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/77a8198c60820721c1c28243e13e0419.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/a418612a3d7bb7942b2b715cffc0445a.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/b3ede3d53c932ee30d981064671c8032.svg"],
 ._3JN0P[src="//d35aaqx5ub95lt.cloudfront.net/images/ba45a1b38107480e030a0a06fc13d6ac.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/d078166cbc81ac85c4dcce01946c8177.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/398e4298a3b39ce566050e5c041949ef.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"]
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-unlocked.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-logo-feather.svg"],
@@ -1906,11 +2047,13 @@ html {
 ._3pOSr,
 ._1Bb1e,
 ._3KjQU,
+._1CrYJ,
 ._18sNN,
 ._1TuHK,
 ._3ZYPU,
 ._3ft88,
 ._6c6Bw,
+._2_MEs,
 ._-7Sri,
 ._1avU- {
 	box-sizing: border-box;
@@ -1922,10 +2065,12 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/9d4f704de73abbe35b631a2279ae1fe7.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72cd95b77171e6e00de85fc7389da67.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
+._33Xi1[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
 ._3JN0P[src="//d35aaqx5ub95lt.cloudfront.net/images/ba45a1b38107480e030a0a06fc13d6ac.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-unlocked.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-logo-feather.svg"],
@@ -1933,8 +2078,8 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/images/special-char-down.svg"],
 [src="/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 [src="/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/images/dumbbell-blue.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duo-plus-shop.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/dumbbell-blue.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duo-plus-fly.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/arrow-down.svg"],
 [src="//duolingo-forum-web.duolingo.com/images/comments.svg"],
@@ -1945,7 +2090,9 @@ html {
 ._2yAAa,
 ._3pOSr,
 ._3ZYPU,
-._-7Sri {
+._-7Sri,
+._2_MEs,
+.Qc8SE {
 	background-size: contain
 }
 
@@ -1968,7 +2115,19 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/77a8198c60820721c1c28243e13e0419.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/d078166cbc81ac85c4dcce01946c8177.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/398e4298a3b39ce566050e5c041949ef.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/icon_info_dark.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/mic-disabled-light.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/icon_info.svg"],
@@ -1986,9 +2145,11 @@ html {
 .ySIVK::after,
 ._1TuHK,
 ._18sNN,
+._1CrYJ,
 ._3ft88,
 ._2ef-V,
 ._6c6Bw,
+._2_MEs,
 ._1avU- {
 	background-size: cover
 }
@@ -2000,11 +2161,7 @@ html {
 }
 
 ._10Q84 {
-	background-size: 44px;
-	-webkit-mask-size: 44px;
-	-webkit-mask-repeat: no-repeat;
-	mask-size: 44px;
-	mask-repeat: no-repeat
+	background-size: 200%
 }
 
 
@@ -2015,13 +2172,21 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/d5da7539ff6abe13a422c11f1178f1e9.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/6b9017b5b326c9949ffb007c8cbd7f4c.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/cfd882b7f367a1971c52d2da3b8c7f1e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/8220ba27de1710bb0d20837f2c16de36.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/99e564726836ff5a0b7269063bbf4b1e.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-badge.svg"],
 [src="/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/mic-blue.svg"],
-.aL9d4::after,
 [src="/images/incubator-logo-feather-font.svg"],
+.aL9d4::after,
 .ySIVK::after,
 ._10Q84,
 ._3xGhq,
@@ -2052,6 +2217,7 @@ html {
 
 
 /* 16 x 16 */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/x.svg"] {
 	padding: 16px 16px 0 0
 }
@@ -2087,6 +2253,14 @@ html {
 }
 
 
+/* 24 x 30 */
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/77a8198c60820721c1c28243e13e0419.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
+	padding: 30px 24px 0 0 !important
+}
+
+
 /* 26 x 30 */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/9d4f704de73abbe35b631a2279ae1fe7.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
@@ -2102,6 +2276,7 @@ html {
 
 
 /* 30 x 30 */
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="//duolingo-forum-web.duolingo.com/images/comments.svg"] {
 	padding: 30px 30px 0 0
 }
@@ -2110,6 +2285,8 @@ html {
 /* 32 x 26 */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/a418612a3d7bb7942b2b715cffc0445a.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/d078166cbc81ac85c4dcce01946c8177.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="/web-ui/images/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="/web-ui/images/a418612a3d7bb7942b2b715cffc0445a.svg"],
 ._3ft88 {
@@ -2118,6 +2295,8 @@ html {
 
 
 /* 32 x 32 */
+._1CrYJ,
+._2_MEs,
 ._1TuHK {
 	padding: 32px 32px 0 0
 }
@@ -2134,6 +2313,9 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/398e4298a3b39ce566050e5c041949ef.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="/web-ui/images/icons/4fa0baa7df59544c7cf33fa4ef9a260c.svg"] {
 	padding: 34px 34px 0 0 !important
@@ -2143,8 +2325,13 @@ html {
 /* 36 x 36 */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72cd95b77171e6e00de85fc7389da67.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"] {
 	padding: 36px 36px 0 0
@@ -2164,8 +2351,10 @@ html {
 
 
 /* 40 x 40 */
-.nvjgx[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
-	padding: 40px 40px 0 0
+.nvjgx[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+._33Xi1[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+.Qc8SE[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
+	padding: 40px 40px 0 0 !important
 }
 
 /* 46 x 46 */
@@ -2193,6 +2382,8 @@ html {
 
 
 /* 100 x 81 */
+._288LV,
+._2QHSw,
 ._6c6Bw {
 	padding: 81px 100px 0 0
 }
@@ -2251,7 +2442,7 @@ html {
 ._2yAAa,
 ._3pOSr,
 ._-7Sri {
-	padding:70% 70% 0 0
+	padding: 70% 70% 0 0
 }
 
 ._3KjQU {
@@ -2279,6 +2470,9 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/cfd882b7f367a1971c52d2da3b8c7f1e.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/b3e4bff7190c6506d58b5a5d86780b0e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/cfd882b7f367a1971c52d2da3b8c7f1e.svg"],
 [src="/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"] {
 	background-image: var(--learn)
 }
@@ -2289,6 +2483,8 @@ html {
 
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/b3e4bff7190c6506d58b5a5d86780b0e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/1489ea739ce8ce0fa9ed1789a71d2c03.svg"],
 [src="/web-ui/images/icons/1489ea739ce8ce0fa9ed1789a71d2c03.svg"] {
 	background-position: right center
 }
@@ -2298,16 +2494,22 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/034d6aefec344d9065aa2e3393e4fede.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/8220ba27de1710bb0d20837f2c16de36.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
 [src="/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"] {
 	background-image: var(--stories)
 }
 
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"] {
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/8220ba27de1710bb0d20837f2c16de36.svg"] {
 	background-position: left center
 }
 
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/034d6aefec344d9065aa2e3393e4fede.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/dacd918ee5c8169e442b7d10a6cbab5d.svg"],
 [src="/web-ui/images/icons/dacd918ee5c8169e442b7d10a6cbab5d.svg"] {
 	background-position: right center
 }
@@ -2316,41 +2518,52 @@ html {
 /* Discuss */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/15d397666ac937fc2ddc375634cbe14e.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72c8b2d799d5c2db221ffc84b292d98.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/6b9017b5b326c9949ffb007c8cbd7f4c.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a72c8b2d799d5c2db221ffc84b292d98.svg"],
 [src="/web-ui/images/icons/a72c8b2d799d5c2db221ffc84b292d98.svg"] {
 	background-image: var(--discuss)
 }
 
-[src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/15d397666ac937fc2ddc375634cbe14e.svg"] {
+[src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/15d397666ac937fc2ddc375634cbe14e.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/6b9017b5b326c9949ffb007c8cbd7f4c.svg"] {
 	background-position: left
 }
 
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72c8b2d799d5c2db221ffc84b292d98.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a72c8b2d799d5c2db221ffc84b292d98.svg"],
 [src="/web-ui/images/icons/a72c8b2d799d5c2db221ffc84b292d98.svg"] {
 	background-position: right
 }
 
 
 /* Shop */
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/bdbab8a777f33ed31f019b22098e784e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/99e564726836ff5a0b7269063bbf4b1e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/8c6de9d973001f7035812d5ae2805574.svg"],
 [src="/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"] {
 	background-image: var(--shop)
 }
 
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"] {
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/99e564726836ff5a0b7269063bbf4b1e.svg"] {
 	background-position: left
 }
 
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/bdbab8a777f33ed31f019b22098e784e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/8c6de9d973001f7035812d5ae2805574.svg"],
 [src="/web-ui/images/icons/8c6de9d973001f7035812d5ae2805574.svg"] {
 	background-position: right
 }
 
 /* Profile */
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/d5da7539ff6abe13a422c11f1178f1e9.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/34684767e8a869415794c37d3c62a0be.svg"] {
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/34684767e8a869415794c37d3c62a0be.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/269fd2d7daf6cfb28a5a2ac765f7e198.svg"] {
 	background-image: var(--profile)
 }
 
@@ -2363,9 +2576,17 @@ html {
 }
 
 
+/* Bell */
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72cd95b77171e6e00de85fc7389da67.svg"] {
+	background-image: var(--bell)
+}
+
+
 /* More */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/03814b777e26fc1b5d5746586cfd3545.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 [src="/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"] {
 	background-image: var(--more)
 }
@@ -2374,19 +2595,25 @@ html {
 /* Dictionary */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"] {
 	background-image: var(--dictionary)
 }
 
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"] {
 	background-position: left center
 }
 
 
-._32Uu5:hover [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 ._32Uu5:hover [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+._32Uu5:hover [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+._21W8z:hover [src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
+._2FdDp:hover [src="//d35aaqx5ub95lt.cloudfront.net/vendor/a6efac3e4a5121eec6cdb733194952c1.svg"],
 ._32Uu5:hover [src="/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"] {
   background-position: right center
 }
@@ -2395,6 +2622,8 @@ html {
 /* Words */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"] {
 	background-image: var(--words)
 }
@@ -2407,6 +2636,8 @@ html {
 
 ._32Uu5:hover [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 ._32Uu5:hover [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
+._21W8z:hover [src="//duolingo-forum-web.duolingo.com/assets/13da7e48f4cf358a2a39cd87b1b517cf.svg"],
+._2FdDp:hover [src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
 ._32Uu5:hover [src="/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"] {
 	background-position: right center
 }
@@ -2415,7 +2646,9 @@ html {
 /* Flag Sprite */
 ._3viv6:not(._2sDCo),
 ._3BevS,
-._2LODM {
+._3-gOT,
+._2LODM,
+.AulI4 {
 	background-image: var(--flag-sprite)
 }
 
@@ -2429,6 +2662,8 @@ html {
 /* Crown Count */
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/a418612a3d7bb7942b2b715cffc0445a.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/d078166cbc81ac85c4dcce01946c8177.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="/web-ui/images/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="/web-ui/images/a418612a3d7bb7942b2b715cffc0445a.svg"],
 ._3ft88,
@@ -2456,15 +2691,26 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/398e4298a3b39ce566050e5c041949ef.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
 [src="/web-ui/images/icons/4fa0baa7df59544c7cf33fa4ef9a260c.svg"],
 [src="//duolingo-forum-web.duolingo.com/images/juicy-streak.svg"] {
 	background-image: var(--streak)
 }
 
+[src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"] {
+	background-position: left
+}
+
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/2f97f817edae3b0832b4172840495d04.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"] {
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/ba95e6081679d9d7e8c132da5cfce1ec.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/ba95e6081679d9d7e8c132da5cfce1ec.svg"] {
 	background-position: right center
 }
 
@@ -2478,11 +2724,32 @@ html {
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/9d4f704de73abbe35b631a2279ae1fe7.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
-[src="/web-ui/images/icons/9d4f704de73abbe35b631a2279ae1fe7.svg"],
-._3aUCN,
-._2ySWm {
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/77a8198c60820721c1c28243e13e0419.svg"],
+[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+[src="/web-ui/images/icons/9d4f704de73abbe35b631a2279ae1fe7.svg"] {
 	background-image: var(--lingot)
 }
+
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
+	background-position: left
+}
+
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/77a8198c60820721c1c28243e13e0419.svg"] {
+	background-position: 50%
+}
+
+.nvjgx[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
+	background-position: 100%
+}
+
+._33Xi1[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+.Qc8SE[src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+._3aUCN,
+._2ySWm {
+	background-image: var(--lingot-singular)
+}
+
 
 
 /* Crown Level */
@@ -2689,7 +2956,6 @@ html {
 	background-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/13505adb745b9f5aa14e4899375f24f0a5426107/assets/duo/ad-blocker.svg)
 }
 
-
 /* Duo Plus Shop */
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duo-plus-shop.svg"] {
 	background-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/571030c99751050c5293ea60d5fbd8904b30e514/assets/duo/plus-shop.svg)
@@ -2730,7 +2996,6 @@ html {
 	background-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/d17357f1f424a81ad9005ac782eb9b9ddcb4986b/assets/duo/spaceship.svg)
 }
 
-
 /* Plus Logo Feather */
 [src="//d35aaqx5ub95lt.cloudfront.net/images/ba45a1b38107480e030a0a06fc13d6ac.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-logo-feather.svg"] {
@@ -2756,6 +3021,75 @@ html {
 
 
 /* Masks */
+
+/* Setup */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"] {
+	-webkit-mask-image: var(--mask-image);
+	mask-image: var(--mask-image)
+}
+
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"] {
+	-webkit-mask-position: center center;
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+}
+
+._10Q84 {
+	-webkit-mask-size: 200%;
+	-webkit-mask-repeat: no-repeat;
+	mask-size: 200%;
+	mask-repeat: no-repeat
+}
+
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"] { 
+	background-color: var(--custom-color)
+}
+
+.sJl8N._2mDNn::before {
+	background-color: var(--100)
+}
+
+._3dRoN::before,
+.sJl8N::before {
+	background-color: var(--200)
+}
+
+.sJl8N._2mDNn::before,
+._3dRoN::before,
+.sJl8N::before {
+	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+/* Sources */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"] {
+	--mask-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/12a4c835bfc9c1f9dd94561644a2ac91ad00215e/assets/lightbulb.svg);
+}
+
+._3dRoN::before,
+.sJl8N::before {
+	-webkit-mask-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/1989e577846e9af395dcdf13763ac0e94fd518d7/assets/jagged-tear.svg);
+	-webkit-mask-size: 200% 100%;
+}
+
+._3dRoN::before,
+.sJl8N::before {
+	-webkit-mask-position: left
+}
+
+.sJl8N._2mDNn::before {
+	-webkit-mask-position: 100%
+} 
+
 
 
 ._10Q84 {

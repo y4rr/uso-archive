@@ -2,8 +2,8 @@
 @name           Youtube Retro Wave
 @namespace      USO Archive
 @author         Yad
-@description    `YOUTUBE Retro Wave Theme`
-@version        20201029.12.40
+@description    `YOUTUBE Retro Wave ThemeUse the dark theme in your Appearance settings`
+@version        20201030.3.35
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -171,7 +171,6 @@ ytd-comments {/*comments box*/
     background-size: 100%;
 }
 
-
 /*2021 Youtube Retro Wave by YAD*/
 
 
@@ -191,12 +190,10 @@ paper-button.ytd-subscribe-button-renderer {/*sub button*/
     display: none;
 }
 
-ytd-multi-page-menu-renderer {/*right dropdown*/
-    display: inline-block;
-    background: #240927e3;
+ytd-multi-page-menu-renderer {/*right dropdown notif*/
+    background: #36083bed;
 	border-radius: 20px;
 }
-
 yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
     color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));
     filter: hue-rotate(272deg) saturate(105%) opacity(100%) brightness(100%) contrast(78%);
@@ -225,5 +222,84 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
     margin-top: -6px;
     background: #ffffff;
     box-shadow: 0 0 12px 5px #ff00e2;
+}
+
+.badge-style-type-live-now.ytd-badge-supported-renderer {/*live now*/
+    background: transparent;
+    color: #fff;
+    border: 1px solid #de00ff00;
+	border-radius: 6px;
+	animation-name: yadlive;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes yadlive {
+0%  {background-color: #fff0; box-shadow: 0 0 9px 3px #ff00d4;}
+10% {background-color: #fff0; box-shadow: 0 0 7px 3px #9d00ff;}
+20% {background-color: #fff0; box-shadow: 0 0 9px 3px #fff;}
+30% {background-color: #fff0; box-shadow: 0 0 7px 3px #00d9ff;}
+40% {background-color: #fff0; box-shadow: 0 0 9px 3px #00ffc3;}
+50% {background-color: #fff0; box-shadow: 0 0 7px 3px #fff;}
+60% {background-color: #fff0; box-shadow: 0 0 9px 3px #ff00e1;}
+70% {background-color: #fff0; box-shadow: 0 0 7px 3px #fff;}
+80% {background-color: #fff0; box-shadow: 0 0 9px 3px #00ffea;}
+90% {background-color: #fff0; box-shadow: 0 0 7px 3px #bdff00;}
+100%{background-color: #fff0; box-shadow: 0 0 7px 3px #ff00d4;}
+}
+ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
+    background-color: #c307d4e6;
+}
+
+/*watched video bar*/
+#progress.ytd-thumbnail-overlay-resume-playback-renderer {
+    background-color: #c600ff;
+    height: 100%;
+	animation-name: yadwatched;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes yadwatched {
+    0%  {background-color:#0ed9cc;top:20px}
+}
+/*notif color*/
+#notification-count.ytd-notification-topbar-button-renderer {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    color: var(--yt-swatch-important-text, var(--yt-white));
+    background-color: #ff00cd;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    line-height: 18px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/*scrollbar*/
+#contentWrapper.iron-dropdown > * {
+    overflow: hidden;  
+}
+#contentWrapper.iron-dropdown > *:hover {
+    overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9900ff3d; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7f03be;
 }
 }

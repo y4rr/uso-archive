@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Игорь Яковенко
 @description    `Упрощенная версия.`
-@version        20201020.13.38
+@version        20201030.10.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -216,6 +216,8 @@ ul.videos.pornstarIndex li div.wrap a img
 ul.row-5-thumbs.search-video-thumbs li 
 { float: none; }
 
+html.supportsGridLayout.fluidContainer div.nf-videos #videoSearchResult li.videoBox:not(.sniperModeEngaged), html.supportsGridLayout.fluidContainer div.nf-videos #videoCategory li.videoBox:not(.sniperModeEngaged) { max-width: 100%; }
+
 html.supportsGridLayout .nf-videos #incategoryVideos, html.supportsGridLayout .nf-videos #videoCategory, html.supportsGridLayout .nf-videos #videoSearchResult,
 html.supportsGridLayout .sectionWrapper .full-row-thumbs#hotVideosSection, html.supportsGridLayout .sectionWrapper .full-row-thumbs#mostRecentVideosSection, html.supportsGridLayout .sectionWrapper .full-row-thumbs#mostViewedPerCountry, html.supportsGridLayout .sectionWrapper .full-row-thumbs#recommended-category-videos, html.supportsGridLayout .sectionWrapper .full-row-thumbs#recommended-videos, html.supportsGridLayout .sectionWrapper .full-row-thumbs#videoFeedsSection,
 html.supportsGridLayout #main-container #vpContentContainer:not(.premiumLocked) #hd-leftColVideoPage .video-wrapper #relatedVideosCenter.underplayer-thumbs,
@@ -232,7 +234,7 @@ html.supportsGridLayout ul.videos#pornstarsVideoSection,
 ul.row-5-thumbs.search-video-thumbs,
 .full-row-thumbs,
 html.supportsGridLayout.fluidContainer .mainContainer.amateurModel ul.videos, html.supportsGridLayout.fluidContainer .mainContainer.claimed ul.videos, html.supportsGridLayout .display-grid.col-4
-{ display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); grid-row-gap: 15px; grid-column-gap: 10px !important; margin-left: 0 !important; margin-right: 0 !important; }
+{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-row-gap: 15px; grid-column-gap: 10px !important; margin-left: 0 !important; margin-right: 0 !important; }
 
 #moreData.feedItems
 { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-row-gap: 20px; grid-column-gap: 20px !important; margin-left: 0 !important; margin-right: 0 !important; }
@@ -315,10 +317,10 @@ html.supportsGridLayout ul.videos#pornstarsVideoSection,
 ul.row-5-thumbs.search-video-thumbs,
 .full-row-thumbs,
 html.supportsGridLayout.fluidContainer .mainContainer.amateurModel ul.videos, html.supportsGridLayout.fluidContainer .mainContainer.claimed ul.videos, html.supportsGridLayout .display-grid.col-4
-{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-row-gap: 15px; grid-column-gap: 10px !important; margin-left: 0 !important; margin-right: 0 !important; }
+{ display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-row-gap: 15px; grid-column-gap: 10px !important; margin-left: 0 !important; margin-right: 0 !important; }
     
 #moreData.feedItems
-{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-row-gap: 7px; grid-column-gap: 7px !important; margin-left: 0 !important; margin-right: 0 !important; }
+{ display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-row-gap: 7px; grid-column-gap: 7px !important; margin-left: 0 !important; margin-right: 0 !important; }
     
 html.supportsGridLayout.fluidContainer ul#popularPornstars, .sectionWrapper.sectionRelatedStars .videos,
 html.supportsGridLayout .sectionChannelsWrapper ul.videos.chanelPornstars
@@ -431,5 +433,13 @@ html.supportsGridLayout .sectionChannelsWrapper ul.videos.chanelPornstars
 
 .sectionWrapperPremium .js-Carousel .full-row-thumbs.videos .videoBox
 { height: auto !important; }
+
+
+
+
+
+
+/*.watchedVideoText { background: transparent !important; }*/
     
+
 }

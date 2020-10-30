@@ -3,18 +3,19 @@
 @namespace      USO Archive
 @author         AN drew
 @description    `淘宝、天猫、爱淘宝  首页仅保留导航栏、logo、搜索框。`
-@version        202094.20.16
+@version        20201030.2.53
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name        Pithy TaoBao/Tmall | 简洁 淘宝/天猫
 @description 首页仅保留导航栏、logo、搜索框。
-@version     1.0.3
+@version     1.0.6
 @namespace https://greasyfork.org/users/472487
 ==/UserStyle== */
+
 @-moz-document domain("taobao.com") {
-tbcc,.grid-right,.search-imgsearch-panel,#srp-footer,.icon-btn-feedback,.icon-btn-help,.icon-btn-history,.mui-mbarp-qrcode-tip,.m-navtabtags,#official-remind,.footer,#copyright,.user-medal,#tmall-desc,#tmall-copyright,#footer,#J_chaoshiService,.sn-mobile,.market-feature {
+tbcc,.grid-right,#srp-footer,.icon-btn-feedback,.icon-btn-help,.icon-btn-history,.mui-mbarp-qrcode-tip,.m-navtabtags,#official-remind,.footer,#copyright,.user-medal,#tmall-desc,#tmall-copyright,#footer,#J_chaoshiService,.sn-mobile,.market-feature {
 	display: none!important;
 }
 
@@ -165,7 +166,7 @@ html, body{
 .head-nav-new.pc-header-nav, .screen-main-cates.pc-main-cates, div[mx-view="pc-items"], div[bx-name="pc-banner"], #alimama-footer, #J_searchLink, .ad, .J_sdasdnbhkbdas{
     display:none!important;
 }
-#atomcarousel_10, #atomcarousel_12 div[style="position: fixed; right: 0px; bottom: 100px; width: 60px; height: 60px;"]{
+#atomcarousel_10, #atomcarousel_12 div[style="position: fixed; right: 0px; bottom: 100px; width: 60px; height: 60px;"],#mx_3 > a{
     display:none!important;
 }
 }
@@ -215,7 +216,7 @@ html, body{
 .as-shelter, #J_ASTotalContainer{
     display:none !important;
 }
-.side-bg{
+.side-bg,body > div.top-con.j_top{
     display:none !important;
 }
 }
@@ -232,5 +233,38 @@ html, body{
 }
 .grid-s5m0 .col-sub{
     margin-left:-92%;
+}
+}
+
+@-moz-document domain("world.taobao.com") {
+html,body{
+    background:#FF5000;
+}
+.mui-zebra-page{
+    display:none!important;
+}
+.s-hqHd-menuitem, .more.more-with-border{
+    display:none!important;
+}
+.user-info-unlogin, .qrcode.oversea-head, .cart.oversea-head{
+    display:none!important;
+}
+.j_logoArea{
+    position:fixed;
+    top:calc(30% - 40.5px);
+    left:calc(50% - 90px);
+}
+.oversea-head-text{
+    position:fixed;
+    top:calc(30% - 30px);
+    left:calc(50% + 80px);
+}
+#J_PopSearch{
+    position:fixed;
+    top:calc(50% - 20px);
+    left:calc(50% - 313px);
+}
+input::-webkit-input-placeholder{
+    color:transparent;
 }
 }

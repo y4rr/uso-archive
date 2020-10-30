@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         kennisoan
 @description    `Тёмная версия школьного портала московской области`
-@version        2020921.12.58
+@version        20201030.9.51
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("school.mosreg.ru") {
 
- .adfox-banner-background {
+.adfox-banner-background {
     display: none
 }
 .bannerBackground {
@@ -47,7 +47,7 @@ body {
     background-color: #191919;
     background-position: center top;
     background-repeat: no-repeat;
-    font: 70%"Arimo";
+    font: 70%"Arimo", sans-serif !important;
     line-height: 13pt;
 }
 .user-profile-box__avatar {
@@ -500,7 +500,7 @@ a:hover {
     color: #dadada !important;
 }
 ._1bwqg {
-    font-family:"Arimo" !important;
+    font-family:"Arimo", sans-serif !important;
 }
 ._391mj {
     padding: 18px 22px 12px !important;
@@ -581,7 +581,7 @@ body {
     background-color: #191919 !important;
     background-position: center top;
     background-repeat: no-repeat;
-    font: 70%"Arimo" !important;
+    font: 70%"Arimo", sans-serif !important;
     line-height: 13pt;
 }
 .user-profile-box__avatar {
@@ -1023,7 +1023,8 @@ table.vam td, table.vam th, #content td.vam {
     -webkit-box-shadow: 0 7px 11px rgba(0, 0, 0, 0.2);
 }
 .lpindicator_p, .lpindicator_np {
-    background: url(http://vivg.cz/mosreg/mosregdot_d.png) no-repeat scroll 0 0 transparent;
+    background: url(http://vivg.net/png/mosreg/label.png) no-repeat scroll 0 0 transparent;
+    background-size: contain;
 }
 .additional-homework-file {
     background: url(http://vivg.net/png/mosreg/paperclip.png) !important;

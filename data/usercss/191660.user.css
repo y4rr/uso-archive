@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           Gmail Shrink Vertical Split
+@namespace      USO Archive
+@author         Or Schiro
+@description    `Make the vertical split option use less space.`
+@version        20201030.12.10
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("mail.google.com") {
+.vy .tf {
+    min-width: 300px;
+}
+
+.bsU {
+    padding-right: 50px;
+}
+
+.aeN {
+    max-width: 200px!important;
+    min-width: 200px!important;
+    padding: 10px;
+}
+}
