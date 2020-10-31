@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           siriusxm.com by BamaBraves
+@name           SiriusXM Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        201948.16.58
+@version        20201031.11.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("siriusxm.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("siriusxm.com") {
@@ -68,12 +73,16 @@ ul::-webkit-scrollbar-thumb:hover,
 	text-decoration: none!important;
 }
 
-selector {
+.button,
+.login-button[_ngcontent-xwa-c33]
+{
 	text-transform: capitalize!important;
 }
 
+.sxm-full-nav-container .main-nav .main-nav-bar .top-nav-item.nav-drop-white .drop-nav .nav-drop-arrow-up,
 #hp-2016 .sxmrm-module-packages .container .package-col,
 .center-column:focus .info-container__title span,
+.package:before,
 .pdt-columns-container:focus,
 .pdt-columns-container:hover,
 .super-categories-header-container .super-categories-header__tabs .super-category-btn.selected,
@@ -91,66 +100,32 @@ selector {
 
 /*___ Fonts ________________________________________________________________________*/
 
-.channel-name,
-.center-column .info-container__episode-description,
-.center-column .info-container__title,
-.now-playing-channel-album-info .now-playing-info-cell .artist-name,
-.now-playing-channel-album-info .now-playing-info-cell .track-name,
-.pdt-columns-container .pdt-text-container .artist-name,
-.pdt-columns-container .pdt-text-container .artist-name,
-.pdt-columns-container .pdt-text-container .channel-number,
-.pdt-columns-container .pdt-text-container .show-title,
-.pdt-columns-container .pdt-text-container .track-name,
-.show-info-container .on-demand-show-text,
-.skinMenu,
-.skinPopupBtnNo,
-.sknActhdrDesktop,
-.sknConfirmInfoDesktop,
-.sknConfirmSubInfoDesktop,
-.sknFrmbackgroundWhite,
-.sknInfoDesktop,
-.sknLblProLightCon25,
-.sknPopYesNo,
-.sknSingleSubInfoDesktop,
-.sknlblsspr14,
-.sknrchPwdHelp,
-.super-categories-header-container .super-categories-header__tabs .super-category-btn,
-.sxm-navbar .favorite-item__text,
-.sxm-navbar .home-item__text,
-.sxm-navbar .recents-item__text,
-.sxm-navbar .search-item__text,
-.sxm-navbar .settings-item__text,
-.tile-wrapper .tile-background .tile-text__title,
-body,
-button,
-h1, h2, h3, h4, h5, h6
-{
-	font-family: cursive, Roboto, Arial, sans-serif!important;
-}
-
 .skinMenu {
 	font-size: 3rem!important;
 }
 
+.package--copy,
 .pdt-columns-container .pdt-text-container .artist-name {
 	font-size: 19px!important;
 }
 
-.tile-wrapper .tile-background .tile-text__title,
+.package--card .package--features,
 .pdt-columns-container .pdt-text-container .artist-name,
 .pdt-columns-container .pdt-text-container .channel-number,
 .pdt-columns-container .pdt-text-container .show-title,
-.pdt-columns-container .pdt-text-container .track-name {
+.pdt-columns-container .pdt-text-container .track-name,
+.sknRecoverSubInfoDesktop,
+.tile-wrapper .tile-background .tile-text__title,
+button
+{
 	font-size: 17px!important;
 }
 
 .show-info-container .on-demand-show-text .on-demand-show-description {
 	font-size: 15px!important;
-	line-height: 27px!important;
 }
 
 selector {
-	font-size: 14px!important;
 	line-height: 19px!important;
 }
 
@@ -170,6 +145,7 @@ selector {
 
 /*___ Margins ______________________________________________________________________*/
 
+.hero-carousel[_ngcontent-xwa-c13],
 #hp-2016 .bg-lightblue,
 #hp-2016 .bg-lightgray,
 #hp-2016 .bg-violet,
@@ -182,8 +158,10 @@ selector {
 .content-carousel,
 .content-container .tile-list__item,
 .favorites-container .favorite-list li,
+.packages-container.additional .package--detail,
 .sub-categories,
-.tile-wrapper.grid
+.tile-wrapper.grid,
+.with-decorator-top-black
 {
 	margin: 12px!important;
 }
@@ -194,6 +172,7 @@ selector {
 
 /*___ Paddings _____________________________________________________________________*/
 
+#frmEverestRecoverPassword_hbxMain,
 .content-carousel,
 .hero-carousel,
 .sub-categories
@@ -211,9 +190,10 @@ selector {
     padding: 1rem 1rem 2rem 1rem!important;
 }
 
-[style="background-color: rgb(43, 167, 255);"],
+[aria-selected="true"],
 [style="background-color: rgb(226, 54, 35);"],
-[aria-selected="true"] {
+[style="background-color: rgb(43, 167, 255);"]
+{
     padding: .2rem .5rem!important;
 }
 
@@ -236,6 +216,7 @@ selector {
 
 /*___ Widths _______________________________________________________________________*/
 
+.footer,
 .pdt-columns-container .pdt-text-container,
 .show-info-container .on-demand-show-text .on-demand-show-description
 {
@@ -269,13 +250,16 @@ selector {
     width: 25rem!important;
 }
 
-
+.skinBtnDisable {
+    width: 375px!important;
+}
 
 
 }
 
 @-moz-document domain("siriusxm.com") {
 /*__________________________________________________________________________________*/
+
 a[href],
 td span {
 	color: #0ff!important;
@@ -303,11 +287,13 @@ input[type="radio"]:checked+label {
 
 .info-container__number,
 .list-group .list-item,
+.package--cost-see-offer,
 .sknConfirmSubInfoDesktop,
 .sknFrmbackgroundWhite,
 .sknInfoDesktop,
 .sknSingleSubInfoDesktop,
 .sknlblsspr14,
+.sknRecoverSubInfoDesktop,
 .sknrchPwdHelp,
 .super-categories-header-container .super-categories-header__tabs .super-category-btn,
 button,
@@ -325,12 +311,12 @@ p {
 .on-demand-show-title,
 .pdt-columns-container .pdt-text-container .artist-name,
 .skinMenu,
+.sknRecoverInfoDesktop,
 .sknLblProLightCon25,
 .tile-wrapper .tile-background .tile-text__title,
 h1,
 h2 {
 	color: #F0E890!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -344,18 +330,15 @@ h2 {
 h3,
 h4 {
 	color: #e0b880!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-
 h5,
 h6,
 label {
 	color: #F0A060!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -367,25 +350,21 @@ label {
 .time-container .remaining-time,
 time {
 	color: #07beff!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Green ________________________________________________________________________*/
 
-
-selector {
+.package--cost.promotional .package--cost-new .price
+{
 	color: #07ff24!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Red __________________________________________________________________________*/
 
-
-selector {
+.error-message--container {
 	color: #ff0707!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -417,51 +396,10 @@ pre ::selection {
 	color: #fff!important;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
   color: #f48f8f;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
-
-/*___ Code _________________________________________________________________________*/
-
-.token.punctuation {
-    color: #fff!important;
-}
-
-.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
-    color: #af0!important;
-}
-
-.token.atrule, .token.attr-value, .token.keyword {
-    color: #00b3ff!important;
-}
-
-.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
-    color: #ff6cbe!important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -483,13 +421,15 @@ html {
 #footer-container,
 #hp-2016 .sxmrm-module-quick-links,
 #sxm-header,
+.footer,
+.sticky-bar,
 .sxm-navbar,
 .sxm-player-controls
 {
 	background-color: #060505!important;
 }
 
-
+.legal-copy-container,
 .super-categories-header-container {
 	background-color: #0e0b0b!important;
 }
@@ -497,13 +437,16 @@ html {
 /*___ Background 0000 ______________________________________________________________*/
 
 #sxm-header .primary-submenu-flyout,
+.back-1-hr-btn,
 .center-buttons-list__item .play-pause-btn,
 .center-buttons-list__item .skip-back-15-btn,
 .center-buttons-list__item .skip-back-btn,
 .center-buttons-list__item .skip-forward-15-btn,
 .center-buttons-list__item.skip-forward-btn,
+.go-live-btn,
 .img-wrapper,
-.restart-btn, .go-live-btn, .back-1-hr-btn
+.restart-btn,
+.sknLinkFindRadio
 {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -517,6 +460,8 @@ html {
 #sxm-header .primary-nav,
 #sxm-header .secondary-nav,
 #sxmcorporatefooter-r .row,
+.background-offwhite,
+.background-white,
 .center-buttons-list__item .skip-forward-btn,
 .pdt-columns-container .channel-image-container,
 .pdt-columns-container:focus,
@@ -526,43 +471,17 @@ html {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	border-left-color: #434343!important;
-	background: linear-gradient(to right, #383838, #0000)!important;
-}
-
-/*__________________________________________________________________________________*/
-
-code,
-pre {
-	background: #111!important;
-	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
-	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
-}
-
-code {
-    background: #FDFCE4!important;
-    border: 1px solid #eec!important;
-    font-size: 110%!important;
-    padding: 3px 8px!important;
-    white-space: pre-wrap!important;
-}
-
-/*___ Highlight Background _________________________________________________________*/
-
-selector:hover {
-	background: linear-gradient(to right, #383838, #0000)!important;
-	border-left-color: #434343!important;
-}
-
 /*__ Blue __________________________________________________________________________*/
 
 #hp-2016 .inner-content .btn.btn-lg.btn-block.btn-white,
 .all-channels-btn,
 .expand-btn,
+.login-button.enabled[_ngcontent-xwa-c33],
 .modal--body .modal-button--container .modal-button-1,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .sign-in-button[_ngcontent-xwa-c3],
+.package--cta.button.primary,
+.segment-buttons[_ngcontent-xwa-c12] .btn.normal[_ngcontent-xwa-c12], .segment-buttons[_ngcontent-xwa-c12] .btn.query[_ngcontent-xwa-c12],
+.sknRecoverBtnEnable,
 .sub-categories .category,
 .sxm-bootstrap .btn-primary-blue,
 .sxm-bootstrap .btn.btn-primary-blue
@@ -577,7 +496,12 @@ selector:hover {
 #hp-2016 .inner-content .btn.btn-lg.btn-block.btn-white:hover,
 .all-channels-btn:hover,
 .expand-btn:hover,
+.login-button.enabled[_ngcontent-xwa-c33]:hover,
 .modal--body .modal-button--container .modal-button-1:hover,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .sign-in-button[_ngcontent-xwa-c3]:hover,
+.package--cta.button.primary:hover,
+.segment-buttons[_ngcontent-xwa-c12] .btn.normal[_ngcontent-xwa-c12], .segment-buttons[_ngcontent-xwa-c12] .btn.query[_ngcontent-xwa-c12]:hover,
+.sknRecoverBtnEnable:hover,
 .sub-categories .category:hover,
 .sxm-bootstrap .btn-primary-blue:hover,
 .sxm-bootstrap .btn.btn-primary-blue:hover
@@ -589,7 +513,12 @@ selector:hover {
 #hp-2016 .inner-content .btn.btn-lg.btn-block.btn-white:active,
 .all-channels-btn:active,
 .expand-btn:active,
+.login-button.enabled[_ngcontent-xwa-c33]:active,
 .modal--body .modal-button--container .modal-button-1:active,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .sign-in-button[_ngcontent-xwa-c3]:active,
+.package--cta.button.primary:active,
+.segment-buttons[_ngcontent-xwa-c12] .btn.normal[_ngcontent-xwa-c12], .segment-buttons[_ngcontent-xwa-c12] .btn.query[_ngcontent-xwa-c12]:active,
+.sknRecoverBtnEnable:active,
 .sub-categories .category:active,
 .sxm-bootstrap .btn-primary-blue:active,
 .sxm-bootstrap .btn.btn-primary-blue:active
@@ -634,6 +563,7 @@ selector:hover {
 .back-1-hr-btn,
 .go-live-btn,
 .modal--body .modal-button--container .modal-button-2,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .setup-streaming-button[_ngcontent-xwa-c3],
 .restart-btn,
 .sxm-bootstrap .btn-primary-black
 {
@@ -648,6 +578,7 @@ selector:hover {
 .back-1-hr-btn:hover,
 .go-live-btn:hover,
 .modal--body .modal-button--container .modal-button-2:hover,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .setup-streaming-button[_ngcontent-xwa-c3]:hover,
 .restart-btn:hover,
 .sxm-bootstrap .btn-primary-black:hover
 {
@@ -659,6 +590,7 @@ selector:hover {
 .back-1-hr-btn:active,
 .go-live-btn:active,
 .modal--body .modal-button--container .modal-button-2:active,
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3] .buttons[_ngcontent-xwa-c3] .setup-streaming-button[_ngcontent-xwa-c3]:active,
 .restart-btn:active,
 .sxm-bootstrap .btn-primary-black:active
 {
@@ -669,6 +601,7 @@ selector:hover {
 
 .back-1-hr-btn,
 .go-live-btn,
+.package--cta.button.secondary,
 .restart-btn,
 [value="Ok"]
 {
@@ -681,6 +614,7 @@ selector:hover {
 
 .back-1-hr-btn:hover,
 .go-live-btn:hover,
+.package--cta.button.secondary:hover,
 .restart-btn:hover,
 [value="Ok"]:hover
 {
@@ -690,8 +624,31 @@ selector:hover {
 
 .back-1-hr-btn:active,
 .go-live-btn:active,
+.package--cta.button.secondary:active,
 .restart-btn:active,
 [value="Ok"]:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*___ Gray ________________________________________________________________________*/
+
+.skinBtnDisable
+{
+	background-image: linear-gradient(to bottom right, #292929, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+.skinBtnDisable:hover
+{
+	background-image: linear-gradient(to bottom right, #3a3a3a, #000)!important;
+	color: #ff0!important;
+}
+
+.skinBtnDisable:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -709,8 +666,11 @@ selector:hover {
 #hp-2016 .sxmrm-module-packages,
 .content-carousel,
 .hero-carousel,
+#frmEverestRecoverPassword_hbxMain,
+.packages-container .package,
 .skinPopupBackGroung,
-.sub-categories
+.sub-categories,
+.with-decorator-top-black
 {
 	background-color: #000!important;
 	border-radius: 22px!important;
@@ -718,19 +678,22 @@ selector:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+#frmEverestRecoverPassword_hbxMain:hover,
 #hp-2016 .bg-lightblue:hover,
 #hp-2016 .bg-lightgray:hover,
 #hp-2016 .bg-violet:hover,
 #hp-2016 .bg-white:hover,
-#hp-2016 .module-cyan-black:hove:hover
-#hp-2016 .module-lightergrey-black:hove:hover
-#hp-2016 .module-violet-white:hove:hover
+#hp-2016 .module-cyan-black:hover,
+#hp-2016 .module-lightergrey-black:hover,
+#hp-2016 .module-violet-white:hover,
 #hp-2016 .module-white-black:hover,
 #hp-2016 .sxmrm-module-packages:hover,
 .content-carousel:hover,
 .hero-carousel:hover,
+.packages-container .package:hover,
 .skinPopupBackGroung:hover,
-.sub-categories:hover
+.sub-categories:hover,
+.with-decorator-top-black:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -741,6 +704,7 @@ selector:hover {
 .content-container .tile-list__item,
 .modal--body,
 .search-dropdown,
+.sxm-full-nav-container .main-nav .main-nav-bar .top-nav-item.nav-drop-white .drop-nav,
 .white-tr-box
 {
 	background-color: #111!important;
@@ -753,6 +717,7 @@ selector:hover {
 .content-container .tile-list__item:hover,
 .modal--body:hover,
 .search-dropdown:hover,
+.sxm-full-nav-container .main-nav .main-nav-bar .top-nav-item.nav-drop-white .drop-nav:hover,
 .white-tr-box:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -760,6 +725,7 @@ selector:hover {
 
 /*___ Red Gradient _________________________________________________________________*/
 
+.open-access-banner[_ngcontent-xwa-c3] .open-access-banner-container[_ngcontent-xwa-c3],
 .pdt-columns-container .pdt-text-container,
 .pdt-columns-container:focus .pdt-text-container-scroll,
 .pdt-columns-container:hover .pdt-text-container-scroll,
@@ -793,25 +759,6 @@ selector:hover {
 	text-shadow: 1px 1px #555!important;
 }
 
-/*__ Yellow Gradient _______________________________________________________________*/
-
-selector {
-	background: linear-gradient(to bottom, #9d9d5d 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
-}
-
-/*__ Orange Gradient _______________________________________________________________*/
-
-[style="background-color: rgb(226, 54, 35);"] {
-	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
-}
-
-
 .favorites-container .favorite-list li,
 .recents-tile-list li,
 .slick-track li
@@ -832,6 +779,7 @@ selector {
 #hp-2016 .sxmrm-module-packages .container .package-col,
 .center-buttons-list__item,
 .favorites-container .favorite-list li,
+.packages-container.additional .package--detail,
 .recents-tile-list li,
 .slick-track li
 {
@@ -843,6 +791,7 @@ selector {
 #hp-2016 .sxmrm-module-packages .container .package-col:hover,
 .center-buttons-list__item:hover,
 .favorites-container .favorite-list li:hover,
+.packages-container.additional .package--detail:hover,
 .recents-tile-list li:hover,
 .slick-track li:hover
 {
@@ -864,49 +813,335 @@ img {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
-/*__________________________________________________________________________________*/
-
-selector {
-	opacity: .8!important;
-}
-
-selector:hover {
-	opacity: 1!important;
-}
-
 }
 
 @-moz-document domain("siriusxm.com") {
 
-/* Full Screen Icons _____________________________________________________________________________________________________*/
 
+/* Car _______________________________________________________________*/
+
+.car svg {
+	background: url(https://i.ibb.co/HdJ6Hcg/lambo-vect.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.car svg {
+    background-size: 47px!important;
+    height: 38px!important;
+    padding-left: 54px!important;
+    width: 10px!important;
+}
+
+/* Closed Caption Button ____________________________________________________________________*/
+
+selector {
+    background: url(https://i.ibb.co/HK7HqRd/CC.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Create a Video ____________________________________________________________________________*/
+
+[aria-label="Create a video or post"] svg {
+    background: url(https://i.ibb.co/3CZQQh4/create-a-video2-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+/* Full Screen Icons _____________________________________________________________________________________________________*/
 
 ytd-watch-flexy[fullscreen] .ytp-playlist-menu-button-icon svg {
 	background: url(https://i.ibb.co/pL013Fq/playlist-36x36.png) no-repeat!important;
     box-sizing: border-box!important;
-    width: 36px!important;
     height: 36px!important;
     padding-left: 36px!important;
+    width: 36px!important;
 }
 
 .ytp-watch-later-icon svg,
 ytd-watch-flexy[fullscreen] .ytp-watch-later-icon svg {
 	background: url(https://i.ibb.co/LRxDTT8/clock-36x36.png) no-repeat!important;
     box-sizing: border-box!important;
-    width: 36px!important;
     height: 36px!important;
     padding-left: 36px!important;
+    width: 36px!important;
 }
 
 .ytp-share-icon svg,
 ytd-watch-flexy[fullscreen] .ytp-button.ytp-share-button svg {
 	background: url(https://i.ibb.co/27rmYdq/share-36x36.png) no-repeat!important;
     box-sizing: border-box!important;
-    width: 36px!important;
     height: 36px!important;
     padding-left: 36px!important;
+    width: 36px!important;
 }
 
+/* Next Button ____________________________________________________________________*/
+
+.skip-forward-btn__img {
+    background: url(https://i.ibb.co/1dSKwps/next-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Previous Button ____________________________________________________________________*/
+
+.skip-back-btn__img {
+	background: url(https://i.ibb.co/BfMrRQ1/prev-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Play Button ____________________________________________________________________*/
+
+.play-pause-btn__img[alt="Play"] {
+	background: url(https://i.ibb.co/WGZ0Kbq/play-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Pause Button ____________________________________________________________________*/
+
+.play-pause-btn__img {
+	background: url(https://i.ibb.co/J7Ww8VH/pause-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Volumn Button ____________________________________________________________________*/
+
+selector {
+	background: url(https://i.ibb.co/JsxYcFH/sound-no-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+[alt="volume"] {
+	background: url(https://i.ibb.co/N7JJgSp/sound-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Video Settings Button ____________________________________________________________________*/
+
+.settings-btn.setting-off {
+    background: url(https://i.ibb.co/j3MYCs7/settings-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Chromecast Button ____________________________________________________________________*/
+
+.chromecast-icon {
+    background: url(https://i.ibb.co/P5N7ft7/Chromecast-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+selector {
+    background: url(https://i.ibb.co/P5N7ft7/Chromecast-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Messages ____________________________________________________________________________*/
+
+[aria-label="Messages"] svg {
+    background: url(https://i.ibb.co/nbRnG1W/messages-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+/* Notification ____________________________________________________________________________*/
+
+[aria-label="Notifications"] svg {
+    background: url(https://i.ibb.co/yPrCtMM/bell-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+/* Pandora _______________________________________________________________*/
+
+.pandora svg {
+	background: url(https://i.ibb.co/6BSTfpp/channel-manager-icon-40x26.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.pandora svg {
+    background-size: 75px!important;
+    height: 47px!important;
+    padding-left: 72px!important;
+    width: 10px!important;
+}
+
+/* Search _______________________________________________________________*/
+
+.sxm-full-nav-container .main-nav .main-nav-bar .top-nav-link.nav-search-link svg {
+	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.sxm-full-nav-container .main-nav .main-nav-bar .top-nav-link.nav-search-link svg {
+    background-size: 19px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
+/* Side Panel Icons __________________________________________________________________________*/
+
+[title*="Home"] img {
+    background: url(https://i.ibb.co/gPyzhvC/home-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[title="Trending"] svg {
+    background: url(https://i.ibb.co/hsnyLY2/Fire-24x28.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[title="Subscriptions"] svg {
+    background: url(https://i.ibb.co/H2VmTRw/subscibe-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[title="Library"] svg {
+    background: url(https://i.ibb.co/6Jqhp7d/folder-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[alt="Recents Icon"] {
+    background: url(https://i.ibb.co/k5dcC41/History-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[title="Watch later"] svg {
+    background: url(https://i.ibb.co/q7HLVv1/clock-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[aria-label="Watch later"] svg,
+[title="Watch later"] svg {
+    background: url(https://i.ibb.co/q7HLVv1/clock-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+
+[src="https://s3.amazonaws.com/everest-images/headphones-white%402x.png"] {
+	background: url(https://image.ibb.co/czavjb/headphones-42x42.png) no-repeat!important;
+	height: 42px!important;
+	padding-left: 42px!important;
+	width: 42px!important;
+}
+
+/* Streaming _______________________________________________________________*/
+
+.streaming svg {
+	background: url(https://i.ibb.co/NmXLBf7/bushel-apple-devices-64x32.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.streaming svg {
+    background-size: 75px!important;
+    height: 47px!important;
+    padding-left: 72px!important;
+    width: 10px!important;
+}
+
+/* Theator Mode Button ____________________________________________________________________*/
+
+selector {
+    background: url(https://i.ibb.co/Y0m46h2/fullscreen-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+selector {
+    background: url(https://i.ibb.co/9tzg0dk/Exit-fullscreen-36x36.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 36px!important;
+    padding-left: 42px!important;
+    width: 42px!important;
+}
+
+/* Thumbs Up/Down __________________________________________________________________________*/
+
+[title="Add to Favorites"] div,
+button div[_ngcontent-c18]:not(.is-favorite):not(.white) {
+	background: url(https://i.ibb.co/MCjnqK3/healthy-hear-darkt-16x15.png)!important;
+	box-sizing: border-box!important;
+	height: 15px!important;
+	padding-left: 16px!important;
+	width: 16px!important;
+}
+
+button div.is-favorite.white,
+[alt="Favorites Icon"],
+button div.is-favorite:not(.white) {
+    background: url(https://i.ibb.co/2gPcWZd/healthy-heart-20x19.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
+
+[aria-label*="Dislike"] svg,
+[aria-label*="dislike"] svg {
+    background: url(https://i.ibb.co/qW4z7xS/thumbs-down-24x24.png) no-repeat!important;
+    box-sizing: border-box!important;
+    height: 24px!important;
+    padding-left: 24px!important;
+    width: 24px!important;
+}
 
 /* Video Controls __________________________________________________________________________________*/
 
@@ -916,266 +1151,6 @@ ytd-watch-flexy[fullscreen] .ytp-button.ytp-share-button svg {
 
 .ytp-big-mode .ytp-chrome-controls .ytp-right-controls button:not(:first-child) {
     margin: 9px 15px 13px 17px!important;
-}
-
-/* Previous Button ____________________________________________________________________*/
-
-.skip-back-btn__img {
-	background: url(https://i.ibb.co/BfMrRQ1/prev-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-/* Play Button ____________________________________________________________________*/
-
-.play-pause-btn__img[alt="Play"] {
-	background: url(https://i.ibb.co/WGZ0Kbq/play-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-
-/* Pause Button ____________________________________________________________________*/
-
-.play-pause-btn__img {
-	background: url(https://i.ibb.co/J7Ww8VH/pause-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-/* Next Button ____________________________________________________________________*/
-
-.skip-forward-btn__img {
-    background: url(https://i.ibb.co/1dSKwps/next-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-
-/* Volumn Button ____________________________________________________________________*/
-
-selector {
-	background: url(https://i.ibb.co/JsxYcFH/sound-no-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-[alt="volume"] {
-	background: url(https://i.ibb.co/N7JJgSp/sound-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-
-/* Closed Caption Button ____________________________________________________________________*/
-
-selector {
-    background: url(https://i.ibb.co/HK7HqRd/CC.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-/* Video Settings Button ____________________________________________________________________*/
-
-.settings-btn.setting-off {
-    background: url(https://i.ibb.co/j3MYCs7/settings-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-
-/* Chromecast Button ____________________________________________________________________*/
-
-.chromecast-icon {
-    background: url(https://i.ibb.co/P5N7ft7/Chromecast-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-selector {
-    background: url(https://i.ibb.co/P5N7ft7/Chromecast-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-
-/* Theator Mode Button ____________________________________________________________________*/
-
-selector {
-    background: url(https://i.ibb.co/Y0m46h2/fullscreen-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-selector {
-    background: url(https://i.ibb.co/9tzg0dk/Exit-fullscreen-36x36.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 42px!important;
-    height: 36px!important;
-    padding-left: 42px!important;
-}
-
-/* Thumbs Up/Down __________________________________________________________________________*/
-
-[title="Add to Favorites"] div,
-button div[_ngcontent-c18]:not(.is-favorite):not(.white) {
-	background: url(https://i.ibb.co/MCjnqK3/healthy-hear-darkt-16x15.png)!important;
-	box-sizing: border-box!important;
-	width: 16px!important;
-	height: 15px!important;
-	padding-left: 16px!important;
-}
-
-button div.is-favorite.white,
-[alt="Favorites Icon"],
-button div.is-favorite:not(.white) {
-    background: url(https://i.ibb.co/2gPcWZd/healthy-heart-20x19.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[aria-label*="Dislike"] svg,
-[aria-label*="dislike"] svg {
-    background: url(https://i.ibb.co/qW4z7xS/thumbs-down-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-/* Notification ____________________________________________________________________________*/
-
-[aria-label="Notifications"] svg {
-    background: url(https://i.ibb.co/yPrCtMM/bell-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-/* Messages ____________________________________________________________________________*/
-
-[aria-label="Messages"] svg {
-    background: url(https://i.ibb.co/nbRnG1W/messages-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-/* Create a Video ____________________________________________________________________________*/
-
-[aria-label="Create a video or post"] svg {
-    background: url(https://i.ibb.co/3CZQQh4/create-a-video2-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-/* Search ____________________________________________________________________________*/
-
-.list-item__search-icon {
-    background: url(https://i.ibb.co/7VZryKj/search-20x20.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-.sxm-navbar .search-item .search-item-form .search-input-wrapper .search-icon {
-    background: no-repeat center url(https://i.ibb.co/Gxz13Q5/search-22x22.png)!important;
-}
-
-/* Side Panel Icons __________________________________________________________________________*/
-
-[title*="Home"] img {
-    background: url(https://i.ibb.co/gPyzhvC/home-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[title="Trending"] svg {
-    background: url(https://i.ibb.co/hsnyLY2/Fire-24x28.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[title="Subscriptions"] svg {
-    background: url(https://i.ibb.co/H2VmTRw/subscibe-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[title="Library"] svg {
-    background: url(https://i.ibb.co/6Jqhp7d/folder-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[alt="Recents Icon"] {
-    background: url(https://i.ibb.co/k5dcC41/History-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[title="Watch later"] svg {
-    background: url(https://i.ibb.co/q7HLVv1/clock-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-[aria-label="Watch later"] svg,
-[title="Watch later"] svg {
-    background: url(https://i.ibb.co/q7HLVv1/clock-24x24.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 24px!important;
-    height: 24px!important;
-    padding-left: 24px!important;
-}
-
-
-[src="https://s3.amazonaws.com/everest-images/headphones-white%402x.png"] {
-	background: url(https://image.ibb.co/czavjb/headphones-42x42.png) no-repeat!important;
-	width: 42px!important;
-	height: 42px!important;
-	padding-left: 42px!important;
 }
 
 

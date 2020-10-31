@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           disneyplus.com by BamaBraves
+@name           Disney+ Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20191219.18.46
+@version        20201031.2.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,6 +49,21 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("disneyplus.com") {
@@ -69,6 +84,9 @@
 .caQIul:focus::after,
 .caQIul:hover,
 .caQIul:hover::after,
+.dbOgUy:focus-within::after,
+.dbOgUy:focus::after,
+.dbOgUy:hover::after,
 .hyGSHI:focus-within::after,
 .hyGSHI:focus::after,
 .hyGSHI:hover::after,
@@ -127,6 +145,7 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+.dKoHrF,
 .ejafmC,
 .gyssBK:hover,
 .jZqXkM:hover p,
@@ -220,10 +239,8 @@ pre ::selection {
 }
 
 ::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: #f48f8f;
 	opacity: 1;
-	/* Firefox */
 }
 }
 
@@ -253,6 +270,7 @@ html {
 /*___ Background 0000 ______________________________________________________________*/
 
 .ggYhHw,
+.jWWWAA,
 body {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -270,6 +288,7 @@ body {
 /*__ Blue __________________________________________________________________________*/
 
 .btn-primary,
+.cyBfBZ,
 .jCsvWk {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
 	border-radius: 10px!important;
@@ -279,12 +298,14 @@ body {
 }
 
 .btn-primary:hover,
+.cyBfBZ:hover,
 .jCsvWk:hover {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
 .btn-primary:active,
+.cyBfBZ:active,
 .jCsvWk:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -326,6 +347,7 @@ body {
 /*__________________________________________________________________________________*/
 
 .caQIul,
+.czXven .slick-initialized .slick-slide,
 .grid .grid-item,
 .iOcNfP .slick-slide,
 .jZqXkM
@@ -336,6 +358,7 @@ body {
 /*__________________________________________________________________________________*/
 
 .caQIul:hover,
+.czXven .slick-initialized .slick-slide:hover,
 .grid .grid-item:hover,
 .iOcNfP .slick-slide:hover,
 .jZqXkM:hover

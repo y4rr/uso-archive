@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           ifttt.com by BamaBraves
+@name           ifttt Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2019724.8.53
+@version        20201031.4.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ifttt.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("ifttt.com") {
@@ -78,6 +83,10 @@ body.search-body main.container .search input[type="text"]
 	border: none!important;
 	outline: none!important;
 	box-shadow: none!important;
+}
+
+.prosumer-home .home--pro--bg {
+    z-index: 999;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -149,6 +158,10 @@ section {
 	height: 2.5em;
 }
 
+.service_list_item__service-list-item__1I5Y6 {
+    height: 18rem;
+}
+
 /*___ Widths _______________________________________________________________________*/
 
 .activities-body .feed .applet-header,
@@ -174,6 +187,21 @@ section {
 .web-applet-cards {
 	max-width: none!important;
 }
+
+.prosumer-home .home--business--content p {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -204,6 +232,12 @@ input[type="radio"]:checked+label {
 
 /*__________________________________________________________________________________*/
 
+.my_applets__filters__11K2E span.my_applets__active__fcL0F,
+.prosumer-home .p--md,
+.home-body.show-action.signed-out .bottom-story a.platform-cta-banner .cta-block .cta .platform-button,
+.home-body.show-action.signed-out .partner-banner a.platform-cta-banner .cta-block .cta .platform-button,
+footer .bottom-story a.platform-cta-banner .cta-block .cta .platform-button,
+footer .partner-banner a.platform-cta-banner .cta-block .cta .platform-button,
 body,
 li,
 p {
@@ -213,11 +247,16 @@ p {
 
 /*___ Khaki ________________________________________________________________________*/
 
+
 h1,
 h2 {
 	color: #F0E890!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
+}
+
+svg {
+    fill: #F0E890!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
@@ -270,6 +309,10 @@ textarea {
 	color: #fff!important;
 }
 
+body.ifttt-next {
+    color: #d4b2b2!important;
+}
+
 /*__________________________________________________________________________________*/
 
 ::selection {
@@ -283,7 +326,7 @@ pre ::selection {
 }
 
 ::placeholder {
-	color: #f48f8f;
+	color: #f48f8f!important;
 	opacity: 1;
 }
 }
@@ -299,6 +342,7 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
+.ifttt-next.site-header,
 .dashboard-body .site-header,
 .discover-body .site-header,
 .site-footer,
@@ -314,12 +358,16 @@ selector {
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.prosumer-home .bg--gradient,
 .platform-suggestion__platform-suggestion__2fjRa {
 	background: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+section.index__upgrade-to-pro-banner__2sOk_ div,
+.prosumer-home .bg--white,
+.home-body.show-action.signed-out .example-section .example-content-block,
 body.search-body main.container main.search.container,
 main.container.web {
 	background-color: rgba(0, 0, 0, 0)!important;
@@ -329,7 +377,7 @@ main.container.web {
 
 .btn.btn-on-color,
 .btn.btn-primary,
-.btn.btn-sm
+.sign-up.btn-sm.btn
 {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
 	border-radius: 10px!important;
@@ -340,7 +388,7 @@ main.container.web {
 
 .btn.btn-on-color:hover,
 .btn.btn-primary:hover,
-.btn.btn-sm:hover
+.sign-up.btn-sm.btn:hover
 {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
@@ -348,13 +396,83 @@ main.container.web {
 
 .btn.btn-on-color:active,
 .btn.btn-primary:active,
-.btn.btn-sm:active
+.sign-up.btn-sm.btn:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
+/*__ Red __________________________________________________________________________*/
+
+.ifttt-next .btn.btn-outlined,
+.new-connect-ui .main-content .btn.btn-outlined
+{
+	background-image: linear-gradient(to bottom right, #da0412, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+.ifttt-next .btn.btn-outlined:hover,
+.new-connect-ui .main-content .btn.btn-outlined:hover
+{
+	background-image: linear-gradient(to bottom right, #eb1523, #000)!important;
+	color: #ff0!important;
+}
+
+.ifttt-next .btn.btn-outlined:active,
+.new-connect-ui .main-content .btn.btn-outlined:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*__ Facebook __________________________________________________________________________*/
+
+[data-action="link-facebook-account"]
+{
+	background-image: linear-gradient(to bottom right, #3b5998, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+[data-action="link-facebook-account"]:hover
+{
+	background-image: linear-gradient(to bottom right, #4c6aa9, #000)!important;
+	color: #ff0!important;
+}
+
+[data-action="link-facebook-account"]:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*__ Google __________________________________________________________________________*/
+
+[data-action="link-google-account"]
+{
+	background-image: linear-gradient(to bottom right, #f4c20d, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+[data-action="link-google-account"]:hover
+{
+	background-image: linear-gradient(to bottom right, #f5d31e, #000)!important;
+	color: #ff0!important;
+}
+
+[data-action="link-google-account"]:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
 /*___ Plain Black __________________________________________________________________*/
 
+.cta_tooltip_card__tooltip-card__ydiyS,
+.prosumer-home .bg--gradient,
 .partners-maker-signup-body .account-form,
 .partners-profiles-body .account-form,
 .settings-body .account-form,
@@ -366,6 +484,8 @@ section {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.cta_tooltip_card__tooltip-card__ydiyS:hover,
+.prosumer-home .bg--gradient:hover,
 .partners-maker-signup-body .account-form:hover,
 .partners-profiles-body .account-form:hover,
 .settings-body .account-form:hover,
@@ -376,6 +496,8 @@ section:hover {
 
 /*___ Plain ________________________________________________________________________*/
 
+.styles__popup-container__1sHZX .styles__popup-card__34i-K,
+.home-body.show-action .sign-up-cta,
 .menu .submenu {
 	background-color: #111!important;
 	border-radius: 22px!important;
@@ -383,6 +505,8 @@ section:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.styles__popup-container__1sHZX .styles__popup-card__34i-K:hover,
+.home-body.show-action .sign-up-cta:hover,
 .menu .submenu:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -398,12 +522,62 @@ section:hover {
 
 /*__ Blue Gradient ________________________________________________________________*/
 
+.home-body.show-action.signed-out .bottom-story a.platform-cta-banner .cta-block,
+.home-body.show-action.signed-out .partner-banner a.platform-cta-banner .cta-block,
+footer .bottom-story a.platform-cta-banner .cta-block,
+footer .partner-banner a.platform-cta-banner .cta-block,
 .if-this-then-that .plus {
 	background: linear-gradient(to bottom, #09f 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
+
+/*__ Light Green Gradient ________________________________________________________________*/
+
+.prosumer-home .home--pro .container,
+.prosumer-home .home--slides,
+.prosumer-home .home--business--bg {
+	background: linear-gradient(to bottom, #BDE8C6 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+/*__ Fintech Gradient ________________________________________________________________*/
+
+.prosumer-home .btn--quad.btn--quad--fintech {
+	background: linear-gradient(to bottom, #63C1C5 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+/*__ Smart Home Gradient ________________________________________________________________*/
+
+.prosumer-home .btn--quad.btn--quad--homes {
+	background: linear-gradient(to bottom, #59AAE2 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+/*__ Subscription Services Gradient ________________________________________________________________*/
+
+.prosumer-home .btn--quad.btn--quad--subscription {
+	background: linear-gradient(to bottom, #415898 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+/*__ Energy Gradient ________________________________________________________________*/
+
+.prosumer-home .btn--quad.btn--quad--energy {
+	background: linear-gradient(to bottom, #8CC252 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+
+
+
 
 
 
@@ -498,6 +672,7 @@ tr {
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
 
+.home-body.show-action.signed-out .bottom-story a.platform-cta-banner .cta-block p,
 .description,
 .full-applet-card .applet-description,
 p:hover,
@@ -527,6 +702,10 @@ svg {
 	fill: #f00;
 }
 
+.service_list_item__works-with-list__114fC .service_list_item__works-with-list-item__3LJWd .service_list_item__works-with-img__3EofB {
+    height: 9.75em!important;
+}
+
 .site-header .logo svg {
 	background: url(https://i.ibb.co/1RVr6cR/ifttt-logo.png) no-repeat!important;
 	box-sizing: border-box!important;
@@ -541,22 +720,22 @@ svg {
 
 [title="Awair"] {
 	width: 52px!important;
-	height: 50px;
-	padding-left: 55px;
-	background-size: 50px;
+	height: 50px!important;
+	padding-left: 55px!important;
+	background-size: 50px!important;
 }
 
 .service-content [title="Awair"] {
     width: 71px!important;
-    height: 237px;
-    padding-left: 242px;
-    background-size: 242px;
+    height: 237px!important;
+    padding-left: 242px!important;
+    background-size: 242px!important;
 }
 
 .web-applet-card .meta .works-with [title="Awair"] {
 	width: 81px!important;
 	height: 54px!important;
-	padding-left: 82px;
+	padding-left: 82px!important;
 	background-size: 50px!important;
 }
 
@@ -574,14 +753,14 @@ svg {
 
 [title="Awair Glow"] {
 	width: 52px!important;
-	height: 50px;
-	padding-left: 55px;
-	background-size: 50px;
+	height: 50px!important;
+	padding-left: 55px!important;
+	background-size: 50px!important;
 }
 
 .service-content [title="Awair Glow"] {
     width: 71px!important;
-    height: 237px;
+    height: 237px!important;
     padding-left: 249px;
     background-size: 249px;
 }
@@ -609,14 +788,14 @@ svg {
 
 [title="Amazon Alexa"] {
 	width: 52px!important;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
 
 .service-content [title="Amazon Alexa"] {
 	width: 71px!important;
-	height: 237px;
+	height: 237px!important;
 	padding-left: 194px;
 	background-size: 188px;
 }
@@ -721,7 +900,7 @@ svg {
 
 [title="Blueair Aware"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -754,7 +933,7 @@ svg {
 
 [title="Blueair Classic 05"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -788,7 +967,7 @@ svg {
 
 [title="Blueair Classic i"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -822,7 +1001,7 @@ svg {
 
 [title="Blueair Sense+"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -859,7 +1038,7 @@ svg {
 
 [title="ppp"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -889,14 +1068,14 @@ svg {
 
 [title="Button widget"] {
 	width: 71px!important;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 75px;
 	background-size: 71px;
 }
 
 .service-content [title="Button widget"] {
 	width: 71px!important;
-	height: 237px;
+	height: 237px!important;
 	padding-left: 194px;
 	background-size: 188px;
 }
@@ -972,14 +1151,14 @@ svg {
 [src="https://assets.ifttt.com/images/channels/832369883/icons/monochrome_regular.png"],
 [title="pppppp"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
 
 .service-content [title="ppppp"] {
 	width: 71px!important;
-	height: 237px;
+	height: 237px!important;
 	padding-left: 194px;
 	background-size: 188px;
 }
@@ -1022,14 +1201,14 @@ svg {
 
 [title="Date & Time"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
 
 .service-content [title="Date & Time"] {
     width: 50px;
-    height: 209px;
+    height: 209px!important;
     padding-left: 217px;
     background-size: 217px;
 }
@@ -1049,14 +1228,14 @@ svg {
 
 [title="DocSend"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
 
 .service-content [title="DocSend"] {
     width: 50px;
-    height: 209px;
+    height: 209px!important;
     padding-left: 217px;
     background-size: 217px;
 }
@@ -1076,14 +1255,14 @@ svg {
 
 [title="Email"] {
 	width: 52px!important;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
 
 .service-content [title="Email"] {
 	width: 71px!important;
-	height: 237px;
+	height: 237px!important;
 	padding-left: 259px;
 	background-size: 258px;
 }
@@ -1110,7 +1289,7 @@ svg {
 
 [title="Envoy"] {
 	width: 50px;
-	height: 50px;
+	height: 50px!important;
 	padding-left: 55px;
 	background-size: 50px;
 }
@@ -2951,6 +3130,10 @@ body.search-body main.container main.search.container .web-applet-cards .verifie
 [style="background-color: rgb(17, 136, 200);"] {	background: linear-gradient(to bottom, #1188c8 0%, #000 100%)!important;}
 [style="background-color: rgb(17, 201, 157);"] {	background: linear-gradient(to bottom, #11c99d 0%, #000 100%)!important;}
 [style="background-color: rgb(170, 123, 201);"] {	background: linear-gradient(to bottom, #aa7bc9 0%, #000 100%)!important;}
+
+[style="background-color: #aaaaaa;"] {	background: linear-gradient(to bottom, #aaaaaa 0%, #000 100%)!important;}
+[style="background-color: rgb(170, 170, 170);"] {	background: linear-gradient(to bottom, #aaaaaa 0%, #000 100%)!important;}
+
 [style="background-color: rgb(170, 202, 115);"] {	background: linear-gradient(to bottom, #aaca73 0%, #000 100%)!important;}
 [style="background-color: rgb(171, 223, 234);"] {	background: linear-gradient(to bottom, #abdfea 0%, #000 100%)!important;}
 [style="background-color: rgb(177, 177, 177);"] {	background: linear-gradient(to bottom, #b1b1b1 0%, #000 100%)!important;}
