@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ItsShuno
 @description    `if you play momio with a large desktop screen (e.g. 4K), the start screen/landingpage looks totally pixelated. this replacement replaces the homescreen background with a very high resolution hd retexture and without compression artifacts.`
-@version        20201029.22.13
+@version        20201030.22.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,5 +22,10 @@ html, body {
 
 .landingpage.sleeping {
     background: url(https://i.ibb.co/Jdzjmbb/momio-sleep-hd.png) top center no-repeat #686ab7;
+    background-size: cover;
+}
+
+#waiper_content.waiper_bg_sky {
+    background: url(https://i.ibb.co/gj9n3k9/momio-bg-clouds.png) center top repeat-x #d8effd;
     background-size: cover;
 }

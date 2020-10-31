@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         loopy750
 @description    `Press F11 and enjoy the fullscreen goodness of YouTube live streams with chat room. YouTube's chat room design leaves a lot to be desired, but this code allows for a more enjoyable experience.`
-@version        20201028.19.34
+@version        20201030.19.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown chat-room-font-size "Chat Room Font Size" {
@@ -129,11 +129,14 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
     .style-scope.ytd-menu-renderer.style-default.size-default,
     .yt-live-chat-placeholder-item-renderer.style-scope.yt-live-chat-item-list-renderer,
     img.branding-img.iv-click-target,
-    ytd-item-section-renderer {
+    yt-next-continuation,
+    ytd-item-section-renderer,
+    ytd-watch-next-secondary-results-renderer	{
         display: none !important
     }
 
     #container.style-scope.ytd-video-secondary-info-renderer {
+        display: none !important;
         visibility: hidden !important
     }
 
@@ -202,7 +205,7 @@ method-2 "Method 2 (Chrome)" <<<EOT #chat-messages #timestamp {
 
 /* Chat */
 #chat.style-scope.ytd-watch-flexy {
-    min-height: 83.5vh !important
+    min-height: 82.5vh !important
 }
 
 #info .style-scope.ytd-watch-flexy,

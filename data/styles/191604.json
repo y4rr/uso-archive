@@ -3,11 +3,11 @@
   "info": {
     "name": "Momio HD Homescreen Replacement",
     "description": "if you play momio with a large desktop screen (e.g. 4K), the start screen/landingpage looks totally pixelated. this replacement replaces the homescreen background with a very high resolution hd retexture and without compression artifacts.",
-    "additionalInfo": "Version 2 - now also includes the night screen\r\n\r\nVersion 1\r\n\r\nfor https://www.momio.me",
+    "additionalInfo": "Version 3 - now also includes the normal cloud background\r\n\r\nVersion 2 - now also includes the night screen\r\n\r\nVersion 1\r\n\r\nfor https://www.momio.me",
     "format": "uso",
     "category": "global",
     "createdAt": "2020-10-29T17:25:40.000Z",
-    "updatedAt": "2020-10-29T22:13:03.000Z",
+    "updatedAt": "2020-10-30T22:30:51.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 988324,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 5,
+      "weekly": 5
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "/* i really want this to be global */\r\n\r\n.landingpage {\r\n    background: url(https://i.ibb.co/B4PmrXp/momio-4k-screen.png) center top no-repeat #e5f1fd;\r\n    background-size: cover;\r\n}\r\n\r\nhtml, body {\r\n    width: auto;\r\n    background: url(https://i.ibb.co/zGPKSLY/momio-login-4k-screen.png) top center no-repeat #badef6;\r\n    background-size: cover;\r\n}\r\n\r\n.landingpage.sleeping {\r\n    background: url(https://i.ibb.co/Jdzjmbb/momio-sleep-hd.png) top center no-repeat #686ab7;\r\n    background-size: cover;\r\n}"
+    "css": "/* i really want this to be global */\r\n\r\n.landingpage {\r\n    background: url(https://i.ibb.co/B4PmrXp/momio-4k-screen.png) center top no-repeat #e5f1fd;\r\n    background-size: cover;\r\n}\r\n\r\nhtml, body {\r\n    width: auto;\r\n    background: url(https://i.ibb.co/zGPKSLY/momio-login-4k-screen.png) top center no-repeat #badef6;\r\n    background-size: cover;\r\n}\r\n\r\n.landingpage.sleeping {\r\n    background: url(https://i.ibb.co/Jdzjmbb/momio-sleep-hd.png) top center no-repeat #686ab7;\r\n    background-size: cover;\r\n}\r\n\r\n#waiper_content.waiper_bg_sky {\r\n    background: url(https://i.ibb.co/gj9n3k9/momio-bg-clouds.png) center top repeat-x #d8effd;\r\n    background-size: cover;\r\n}"
   }
 }

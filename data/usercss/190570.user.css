@@ -1,13 +1,154 @@
 /* ==UserStyle==
-@name           ニコ生 ダークテーマ(Nicovideo Live Dark Theme)
+@name           ニコ生(Re) ダークテーマ(Niconico Live Dark Theme)
 @namespace      USO Archive
-@author         四月一日 雷
-@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード2を削除していただくことで元に戻ります。--どうにもならなかった箇所について--・コメント欄上の広告、ギフトホバー時の背景色（いじっても効果がありませんでした…）`
-@version        20201028.9.48
+@author         Azuma
+@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページはよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード5を削除していただくことで元に戻ります。--どうにもならなかった箇所について--・コメント欄上の広告、ギフトホバー時の背景色（いじっても効果がありませんでした…）`
+@version        20201030.14.55
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
+@-moz-document url-prefix("https://live2.nicovideo.jp/"), url-prefix("https://live.nicovideo.jp/recent"), url-prefix("https://live.nicovideo.jp/") {
+/* それ以外 */
+
+/* 広告 */
+.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{
+    display: none !important;
+}
+
+/* 背景 */
+.___toggle-button___37swU{
+    background-color: #ccc;
+}
+.___toggle-button___37swU:hover{
+    background-color: #bbb;
+}
+.___recent-program-status-axis-contents-area___jaVFN,.___program-status-axis-contents-area___2Zh77,.___focus-axis-contents-area___iobXj,.___online-viewing-banner___2fAaR{
+    background-color: #2f2f2f !important;
+}
+.___feature-program-section___2ZYME,.___pickup-contents-list-section___19tVl,.___page___T8fzh{
+    background-color: #404040 !important;
+}
+.___program-card___153V-{
+    background-color: #464646 !important;
+}
+.___page-top-anchor___1YKnh{
+    background-color: #252525;
+}
+.___contents-card___l30EK{
+    background-color: #737373;
+}
+.___page-selector___1tIWc{
+    background-color: #333;
+}
+.___page-selector___1tIWc[data-name="next"]::before {
+    border-color: transparent transparent transparent #cacaca;
+}
+.___page-selector___1tIWc[data-name="prev"]::before{
+    border-color: transparent #cacaca transparent transparent;
+}
+.___heading___1ZfRu{
+    background-color: #252525;
+}
+.___item-list___1miSk{
+    background-color: #313131;
+}
+.___item___2UlkV,.___subject___1xC_J{
+    background-color: #424242;
+}
+.___tag___3UslK,.___counter___g2o1l:not([aria-selected="true"]),.___expand-button___2TWkz{
+    background-color: #2b2b2b;
+}
+.___counter___g2o1l:not([aria-selected="true"]):hover,.___expand-button___2TWkz:hover{
+    background-color: #4f4f4f;
+}
+.___big-banner___1EkFF,.___tag-widget___3N4L8{
+    background-color: #252525;
+}
+  .___message___3QdNF, .___visit-anchor___3UmQE{
+    background-color: #424242;
+}
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button{
+    color: #ddd !important;
+}
+.___status___1nZI5{
+    color: #fff !important /* タイムシフト文字 */
+}
+}
+
+@-moz-document url-prefix("https://site.live.nicovideo.jp/recent") {
+/* 生ゲームプレイ中 */
+.namagame-PlayerWantedProgram,.namagame-Introduction{
+    background: #2f2f2f;
+}
+.namagame-GamePlayProgram{
+    background-color: #4f4f4f;
+}
+
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button{
+    color: #ddd !important;
+}
+}
+
+@-moz-document url-prefix("https://live.nicovideo.jp/timetable") {
+/* 広告 */
+.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad,#footer_ads{
+    display: none !important;
+}
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,li,.count{
+    color: #ddd !important;
+}
+
+
+body{
+    background-color: #404040;
+}
+#SideNavigation .timetablePage-SideNavigation_Link{
+    background-image: linear-gradient(to bottom,#515151,#646464)
+}
+.feedback_link a{
+    display: none;
+}
+
+/* 番組表 */
+.container table#timeline .item,.container table#timeline tr.ts_end td,.container table#timeline .item.ts_end td.item_image, .container table#timeline tr.ts_end td{
+    background: #4f4f4f;
+}
+.container table#timeline .item_text,.container table#timeline .item td.item_image,.container table#timeline .item_score{
+    background: #5c5c5c;
+}
+.timetablePage-TimeshiftButton{
+    background-color: #535353;
+}
+.container table#timeline .item_status .message.onair{
+    background-color: #bf4747
+}
+/* カレンダー */
+.ui-widget.ui-widget-content{
+    border: 1px solid #2f2f2f;
+}
+.ui-datepicker,.ui-state-default{
+    background-color: #414141 !important;
+}
+.ui-datepicker-week-end:nth-last-child(2) a.ui-state-default{
+    background-color: #d4f0ff !important;
+    color: #0282ff !important;
+}
+.ui-datepicker-week-end:last-child a.ui-state-default{
+    background-color: #ffecec !important;
+    color: #f33 !important;
+}
+#calendar .ui-widget-content .ui-state-active{
+    background-color: #00a649 !important;
+    color: #eee !important;
+}
+}
+
 @-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
+/* 視聴ページ */
+
 /*背景*/
 .___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{
     background-color: #2b2b2b !important
@@ -86,6 +227,12 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
     color: #ccc !important; 
     border: inset 0px #222742 !important;
 }
+.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{
+    color: #23ca6f !important;
+}
+.___body___2BWU6{
+    color: #eee !important;
+}
 
 /*ヘッダーまわり*/
 .common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{
@@ -123,7 +270,6 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 .___program-summary___2BVKN{
     box-shadow: 2px 10px 10px 0 #282828
 }
-
 }
 
 @-moz-document url-prefix("https://nicoad.nicovideo.jp/") {

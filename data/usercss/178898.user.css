@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kyle Dunovan
 @description    `New light theme, hacked together from jupyter-themes style code`
-@version        20201014.15.22
+@version        20201030.19.7
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -413,7 +413,7 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
     font-size: var(--jp-ui-font-size1);
     line-height: var(--jp-private-toolbar-height);
     height: 100%;
-	visibility: hidden;
+    visibility: visible;
 }
 
 /*######################################################*/
@@ -431,6 +431,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     background-position: center;
     background-size: 16px;
     visibility: visible !important;
+    padding-top: 4px;
 }
 
 .jp-Notebook {
@@ -524,7 +525,11 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     font-weight: bold;
     font-style: italic;
 }
-
+.jp-Cell-inputArea, .jp-Cell-outputArea {
+    flex: 1 1 auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
 
 
 /* ########################################################*/
@@ -548,6 +553,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     opacity: 1;
     cursor: move;
     font-weight: medium;
+	font-size: 9.5pt !important;
 }
 
 .jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt {
@@ -566,7 +572,7 @@ div.lm-Widget.p-Widget.jp-Toolbar.jp-scrollbar-tiny.jp-NotebookPanel-toolbar > d
     font-family: var(--jp-cell-prompt-font-family);
   	/*opacity: var(--jp-cell-prompt-opacity); */
   	/* font-size: 0pt; */
-	padding-top: 8px;
+	padding-top: 9px;
 	padding-right: 0;
     line-height: var(--jp-code-line-height);
     border: var(--jp-border-width) solid transparent;

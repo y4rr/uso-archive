@@ -2,11 +2,11 @@
 @name           Dueling Nexus game field theme
 @namespace      USO Archive
 @author         Sef Eiba
-@description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area. The card selection window will not interfere with the card description anymore. And various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page.You have two background options now:-The duel background.-The background for the rest of the website.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far, more sections will be designed in time.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201029.3.39
+@description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area. The card selection window will not interfere with the card description anymore. And various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page.You have two background options now:-The duel background.-The background for the deck editor.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far, more sections will be designed in time.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
+@version        20201030.22.16
 @license        CC0-1.0
 @preprocessor   uso
-@advanced dropdown background "Game Background Image" {
+@advanced dropdown background "Duel Background Image" {
 bg37 "Background P4 7*" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/9052d217cd0cba46f4542d41c8fd89d235f4e73e/NewBGs/laboratory_bg__legacy_of_the_duelist__by_maxiuchiha22_de1brv5.jpg EOT;
 bg30 "Nexus Background" <<<EOT https://cdn.discordapp.com/attachments/486534021992677378/683119685407211556/20201002_-_DN_-_TEMP_BG_-_v1-1.jpg EOT;
 bg1 "Background 1" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__5d_s___apocalyptic_future_bg_by_maxiuchiha22_dd6ellh.jpg EOT;
@@ -50,8 +50,8 @@ bg40 "Background P4 10" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/9
 
 	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
 }
-@advanced text background-custom "Game Background Image (Custom)" "https://example.com/image.png"
-@advanced dropdown sitebackground "Site Background Image" {
+@advanced text background-custom "Duel Background Image (Custom)" "https://example.com/image.png"
+@advanced dropdown sitebackground "Deck Editor Background Image" {
 sbg36 "Background P4 6*" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/9052d217cd0cba46f4542d41c8fd89d235f4e73e/NewBGs/high_council_bg__legacy_of_the_duelist__by_maxiuchiha22_de1brp7.jpg EOT;
 sbg30 "Nexus Background" <<<EOT https://cdn.discordapp.com/attachments/486534021992677378/683119685407211556/20201002_-_DN_-_TEMP_BG_-_v1-1.jpg EOT;
 sbg1 "Background 1" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__5d_s___apocalyptic_future_bg_by_maxiuchiha22_dd6ellh.jpg EOT;
@@ -95,7 +95,7 @@ sbg40 "Background P4 10" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/
 
 	sitebackground-custom-dropdown "Custom" <<<EOT /*[[sitebackground-custom]]*\/ EOT;
 }
-@advanced text sitebackground-custom "Site Background Image (Custom)" "https://example.com/image.png"
+@advanced text sitebackground-custom "Deck Editor Background Image (Custom)" "https://example.com/image.png"
 @advanced dropdown extrastuff "Extra Option" {
 	RRR "Recommended*" <<<EOT /*personal stuff that you can remove*\/
   

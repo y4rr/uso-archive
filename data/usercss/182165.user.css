@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201029.10.43
+@version        20201030.22.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -15,10 +15,21 @@
     --RCWPURL: url("https://i.redd.it/sph92752zc351.jpg");
 }
 
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -28,9 +39,21 @@ html,
 	    var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -60,10 +83,12 @@ WPColour "None" <<<EOT /*[None] (Colour only)*\/
 }
 *\/
 
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -79,9 +104,21 @@ html,
 	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -115,10 +152,21 @@ WPBlackWood1K "Black Wood - 1K (1920 x 1080)" <<<EOT /*[Black Wood - 1K (1920 x 
     --RCWPURL: url("https://i.redd.it/5hvfny0bxh151.jpg");
 }
 
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -128,9 +176,21 @@ html,
 	    var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -152,10 +212,21 @@ WPBlackWood4K "Black Wood - 4K (3840 x 2160)" <<<EOT /*[Black Wood - 4K (3840 x 
     --RCWPURL: url("https://i.redd.it/p7grzmgozc351.jpg");
 }
 
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -165,9 +236,21 @@ html,
 	    var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -189,10 +272,21 @@ WPBlackWood8K "Black Wood - 8K (7680 x 4320)" <<<EOT /*[Black Wood - 8K (7680 x 
     --RCWPURL: url("https://i.redd.it/0lq1kpp10d351.jpg");
 }
 
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -202,9 +296,21 @@ html,
 	    var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -226,10 +332,21 @@ WPBlackWood16K "Black Wood - 16K (15360 x 8640)" <<<EOT /*[Black Wood - 16K (153
     --RCWPURL: url("https://i.redd.it/1t1w6y51qxt51.jpg");
 }
 
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -239,9 +356,21 @@ html,
 	    var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -274,10 +403,21 @@ WPBASE64 "BASE64 - (Inject in Code #1)" <<<EOT /*[Manual BASE64 Setup]*\/
 
 /* =================== Wallpaper Defaults =================== *\/
 
+html
+{
+    background:
+
+        var(--RCWPBASE64)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
 ._1npCwF50X2J7Wt82SZi6J0
 {
     background:
@@ -287,9 +427,21 @@ html,
         var(--RCBackground) fixed !important;
 }
 
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -1986,37 +2138,58 @@ Insert these two values into url used below:
 Default settings (ignore):
 --------------------------
 
-html[class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
-._1npCwF50X2J7Wt82SZi6J0,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+html
 {
     background:
 
         var(--RCWPBASE64)
 
         var(--RCBackground) fixed !important;
-
-    --pseudo-before-background:
-        
-        var(--RCWPBASE64)
-        
-	    var(--RCBackground) fixed !important;
 }
 
+html[class*="res-"],
+html[class*="res-nightmode"] [class*="res-"],
+html[class*="res-b"],
+html[class*="res-v"],
+html[class*="accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+._1npCwF50X2J7Wt82SZi6J0
+{
+    background:
+
+        var(--RCWPBASE64)
+
+        var(--RCBackground) fixed !important;
+}
+
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="loggedin"][class*="res-v"]
+body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
 
         var(--RCWPBASE64)
 
         #0000 fixed !important;
+    
+    --pseudo-before-background:
+        
+        var(--RCWPBASE64)
+        
+	    #0000 fixed !important;
 }
-
 
 
 ===============================================================
@@ -2033,35 +2206,57 @@ Regular url as wallpaper:
 Default Settings (ignore):
 --------------------------
 
-html[class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-html,
-._1npCwF50X2J7Wt82SZi6J0,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+html
 {
     background:
 
         var(--RCWPURL)
 
         var(--RCBackground) fixed !important;
-
-    --pseudo-before-background:
-        
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
 }
 
+html[class*="res-"],
+html[class*="res-nightmode"] [class*="res-"],
+html[class*="res-b"],
+html[class*="res-v"],
+html[class*="accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+._1npCwF50X2J7Wt82SZi6J0
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
 body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="loggedin"][class*="res-v"]
+body[class*="loggedin"][class*="res-v"],
+#siteTable,
+body[class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
 
         var(--RCWPURL)
 
         #0000 fixed !important;
+    
+    --pseudo-before-background:
+        
+        var(--RCWPURL)
+        
+	    #0000 fixed !important;
 }
 
 
@@ -2555,6 +2750,7 @@ tbody a,
 #srList td a,
 #tobottom.btn-wrap span.button,#filters-ctrl.button,#qf-ctrl.button,
 .author.may-blank.id-t2_11ypoj,
+div .bylink,
 .close-button,
 .comment .md a,
 .contact-us-page .button,.res-nightmode .contact-us-page .button,
@@ -2676,7 +2872,8 @@ a ._12FoOEddL7j_RgMQN0SNeU:hover
     box-shadow:inset 0 -2px 0 0 var(--RCTextLinkHover);
 }
 
-
+/*Selected links with Underline*/
+/*voat.co*/#dashboard ul li a:hover,
 #nav > ul li.active a,
 .res-nightmode .tabmenu li.selected a,
 .tabmenu li.selected a
@@ -3142,6 +3339,7 @@ html.res-nightmode .side .titlebox .md,
 body,.res-nightmode body,
 body > div,.res-nightmode body > div,
 div[data-redditstyle],
+
 html body header,
 #coverage .slick-slider-center,
 #header .user,
@@ -3236,6 +3434,7 @@ html body header,
 .sidecontentbox .content a.author,
 .single .site-main article,
 .top-matter,
+.usertext-body.may-blank-within div.md,
 .TopicPost,
 .users-online,
 .subscribers,
@@ -3249,6 +3448,12 @@ html body header,
 
 
 /* ---------- Transparent Background - No Border ---------- */
+
+div.noncollapsed
+{
+    background:#0000!important;
+    border:none!important;
+}
 
 div,
 form,
@@ -6176,6 +6381,7 @@ svg._1bWuGs_1sq4Pqy099x_yy-:active,
 
 /*Blockquotes + Spoiler Indicator, Left*/
 blockquote,
+.commentarea .thing .md blockquote,
 .link .usertext .md blockquote,
 .md-spoiler-text,
 .md blockquote,
@@ -8075,7 +8281,8 @@ body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > h2:nth-child(1),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > h2:nth-child(1),
 h4#text,
-html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div p.cap_mess.cap_text.text-center
+html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div p.cap_mess.cap_text.text-center,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.header h2#modal-title
 {
     color:var(--RCTextHeader)!important;
 }
@@ -8083,17 +8290,20 @@ html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div p.cap_m
 
 /*Text*/
 
-#cf-spinner-please-wait,
 #cf-wrapper h2 + p,
 #cf-wrapper p + p,
 #checkbox-label.no-selection,
+#cf-spinner-please-wait,
 .cf-subheadline,
 .prompt-text,
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(4),
 html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.cap_head.clearfix div.cap_side.pull-right p.cap_note.cap_text.count_down,
-p.cap_mess:nth-child(5)
+p.cap_mess:nth-child(5),
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.information div.instructions p.copy,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.information div.feedback,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.accessibility p.copy
 {
     color:var(--RCText)!important;
 }
@@ -8106,21 +8316,41 @@ html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.dro
     color: var(--RCDarkText);
 }
 /*Language Dropdown Text - Active*/
-html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content > li.active
+html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content > li.active,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.accessibility div.status div.header div.text
 {
     color: var(--RCTextHeader);
+}
+
+/*hCaptcha Dropdown Menu and Button Text*/
+html body.no-selection div.challenge-interface div.menu div.option.button div.wrapper div.copy,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel div.send-text,
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text
+{
+    color: var(--RCText) !important;
+    transition:.4s;
+}
+/*Language Dropdown Text - Hover*/
+html body.no-selection div.challenge-interface div.menu div.option.button div.wrapper div.copy:hover,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel div.send-text:hover,
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text:hover
+{
+    color: var(--RCTextHeader) !important;
+    transition:.4s;
 }
 
 
 /*Links*/
 
 #cf-wrapper a,
+.challenge-modal [class*="link"],
 .challenge-modal a[class*="link"]
 {
     color: var(--RCTextLink);
     transition:.4s;
 }
 #cf-wrapper a:hover,
+.challenge-modal [class*="link"]:hover,
 .challenge-modal a[class*="link"]:hover
 {
     color: var(--RCTextLinkHover) !important;
@@ -8129,29 +8359,45 @@ html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.dro
 
 /*------------------------ Backgrounds ------------------------*/
 
-html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div,
-body > div:nth-child(1) > div:nth-child(1),
-body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
-body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),
+#cf-error-details.cf-error-details-wrapper div.cf-section.cf-wrapper div.cf-columns.two div.cf-column p,
+#cf-wrapper #cf-error-details .cf-error-overview h2,
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2),
-body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3),
-body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(4),
-body > div:nth-child(3),
-#cf-wrapper,
-#cf-wrapper #cf-error-details,
-#challenge-wrapper [class="prompt-block"],
-.cf-highlight,
-.challenge-modal [class*="container"],
-.no-selection
+body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(4)
 {
     background: #0000 !important;
-    background-color: #0000 !important;
 }
 
 .challenge-modal [class*="header-title"]
 {
     background: var(--RCBackgrounds) !important;
+}
+
+html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div,
+html.no-js body div#cf-wrapper div#cf-error-details.p-0 div.my-8.bg-gradient-gray,
+body > div:nth-child(1) > div:nth-child(1),
+body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),
+body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
+body > div:nth-child(3),
+#cf-wrapper,
+#cf-wrapper #cf-error-details,
+#challenge-wrapper [class="prompt-block"],
+.cf-highlight,
+.challenge-header .challenge-prompt .examples,
+.challenge-modal [class*="container"],
+html body.no-selection,
+html body.no-selection div.challenge-interface div.menu-background,
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option
+{
+    background: #0000 !important;
+    background-color: #0000 !important;
+}
+html body.no-selection div.challenge-interface div.menu div.option.button div.bg,
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option:hover
+{
+    background-color: var(--LinksHover) !important;
+    transition:.4s;
 }
 
 
@@ -8314,12 +8560,20 @@ div.task-image > .border
 
 /*Submit, Verify % Try Again Button*/
 
+/*Buttons*/
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button .close-image
+{
+    transition:.4s;
+}
+
 input#hcaptcha_submit,
 #recaptcha-demo-submit,
 #recaptcha_submit,
 input#recaptcha_submit,
 .rc-button-default,
-.rc-doscaptcha-header
+.rc-doscaptcha-header,
+html body.no-selection div.challenge-interface div.button-submit.button,
+.challenge-modal [class*="button-"]
 {
     background-color: var(--RCButton) !important;
     border: 1px solid var(--RCBox-Shadow) !important;
@@ -8330,7 +8584,10 @@ input#recaptcha_submit,
 #hcaptcha_submit:hover,
 .rc-button-default:hover,
 .rc-doscaptcha-header:hover,
-.submit-background:hover
+.submit-background:hover,
+html body.no-selection div.challenge-interface div.button-submit.button:hover,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button:hover,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel:hover
 {
     background-color: var(--RCButtonHover) !important;
     filter:brightness(1);
@@ -8340,7 +8597,10 @@ input#recaptcha_submit,
 #hcaptcha_submit:active,
 .rc-button-default:active,
 .rc-doscaptcha-header:active,
-.submit-background:active
+.submit-background:active,
+html body.no-selection div.challenge-interface div.button-submit.button:active,
+html body.no-selection div.challenge-interface div.menu div.option.button div.bg:active,
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button:active
 {
     filter:brightness(.6);
     transition: all 0s ease-in-out !important;
@@ -8353,6 +8613,41 @@ input#recaptcha_submit,
 {
     background-color: transparent !important;
     filter: invert(100%) !important;
+}
+
+/*hCaptcha Help- & Refresh (Oct. 2020)*/
+html body.no-selection div.challenge-interface div.help.button,
+html body.no-selection div.challenge-interface div.refresh.button
+{
+    background: #0000 !important;
+    transition:.4s;
+}
+
+html body.no-selection div.challenge-interface div.refresh.button div.image-on,
+html body.no-selection div.challenge-interface div.refresh.button div.image-off
+{
+    transition:.4s;
+}
+html body.no-selection div.challenge-interface div.help.button:active,
+html body.no-selection div.challenge-interface div.refresh.button:active
+{
+    filter:brightness(.6)!important;
+    transition:0s!important;
+}
+
+/*hCaptcha Logo*/
+div.hcaptcha-logo div.icon-color
+{
+    filter: grayscale(1) brightness(.5) !important;
+}
+div.hcaptcha-logo div.icon-color:hover
+{
+    filter: grayscale(0) brightness(1) !important;
+}
+div.hcaptcha-logo div.icon-color:active
+{
+    filter: grayscale(0) brightness(.6) !important;
+    transition:0s!important;
 }
 
 /*Language Dropdown - Button*/

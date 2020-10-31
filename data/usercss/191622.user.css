@@ -2,29 +2,33 @@
 @name           myLearning Dark Mode
 @namespace      USO Archive
 @author         Matthew Okashita
-@description    `A Stylus extension to give Canvas/myLearning a dark mode so your retinas don't have to burn out. Made for the WRHS Canvas/myLearning, but should work on other versions of this software.`
-@version        20201030.3.43
+@description    `A Stylus extension to give Canvas/myLearning a dark mode so your retinas don't have to burn out. Made for the WRHS Canvas/myLearning, but should work on other versions of this software. For the most up to date code and news, please visit the Github repository at: https://github.com/SoupyzInc/CanvasDarkMode`
+@version        20201030.23.40
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
-@name        Canvas Dark Mode
+@name        myLearning Dark Mode
 @namespace   soupyzinc
-@version     1.0.1
+@version     1.0.6
 @homepageURL https://github.com/SoupyzInc/CanvasDarkMode
 @supportURL  https://github.com/SoupyzInc/CanvasDarkMode/issues
 @updateURL   https://raw.githubusercontent.com/SoupyzInc/CanvasDarkMode/main/CanvasDarkMode.user.css
 @license     MIT
 @author      Matthew Okashita
 ==/UserStyle== */
-/*v1.0.1 | Last Updated: 29 October 2020 | 11:40 PM EST*/
+/**v1.0.6 | Last Updated: 30 October 2020 | 7:30 PM EST
+ * Fixed discussion information being hard to read.
+ */
 @-moz-document domain("instructure.com") {
     :root {
-        --dark-grey: #1d1e21 !important;
-        --grey: #23272A !important;
-        --light-grey: #2C2F33 !important;
-        --white-grey: #99AAB5 !important;
-        --text: #d7d7d7!important;
+        --dark-grey: #1d1e21 !important; /*Darker Background Color*/
+        --grey: #23272A !important; /*Normal Bakground Color*/
+        --light-grey: #2C2F33 !important; /*Light Color to show that you can interact*/
+        --white-grey: #99AAB5 !important; /*Lighter Color to show even more interactivity*/
+        --text: #d7d7d7!important; /*Text Color & Highlights*/
+       
+        --yyQPt-background: #2C2F33 !important; /*Discussion List View Check Box Background*/
     }
 
     /*DASHBOARD=====================================================*/
@@ -34,12 +38,57 @@
         color: var(--text) !important;
     }
     
+    /*Check Mark Background*/
     .eHiXd_bPzo.eHiXd_ycrn, a.eHiXd_bPzo.eHiXd_ycrn, button.eHiXd_bPzo.eHiXd_ycrn, button.eHiXd_bPzo[type="button"].eHiXd_ycrn, button.eHiXd_bPzo[type="reset"].eHiXd_ycrn, button.eHiXd_bPzo[type="submit"].eHiXd_ycrn {
         height: var(--eHiXd-mediumHeight);
         width: var(--eHiXd-mediumHeight);
         color: var(--text) !important;
     }
-
+    
+    /*List View | Class Name Background*/
+    .Grouping-styles__title {
+        padding: var(--eOFoE-titlePadding);
+        background-color: var(--grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Dashboard Side Panel Selected Item Color*/
+    .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-icon-svg {
+        fill: var(--dark-grey) !important;
+    }
+    
+    /*List View Background*/
+    .Day-styles__root {
+        color: var(--text) !important;
+        background: var(--grey) !important;
+    }
+    
+    /*List View Top Bar Icons (right)*/
+    .PlannerHeader-styles__root {
+        color: var(--text) !important;
+        background: var(--grey) !important;
+    }
+    
+    /*List View Ellipses*/
+    element.style {
+        background: var(--grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*List View | Today Button*/
+    .eHiXd_eYmo, a.eHiXd_eYmo, button.eHiXd_eYmo, button.eHiXd_eYmo[type="button"], button.eHiXd_eYmo[type="reset"], button.eHiXd_eYmo[type="submit"] {
+        background: var(--light-grey) !important;
+        border-color: var(--text) !important;
+        color: var(--text) !important;
+    }
+    
+    /*List View | Nothing Planned Yet Background*/
+    .EmptyDays-styles__root {
+        color: var(--text) !important;
+        background: var(--grey) !important;
+        margin-top: var(--text) !important;
+    }
+    
     /*=======DASHBOARD TEXT BACKGROUND=======*/
     .ic-Dashboard-header__layout {
         border-bottom: 1px solid var(--text) !important;
@@ -356,6 +405,18 @@
         color: var(--text) !important;
     }
 
+    /*Discussion Information (Due Date)*/
+    .alert-info {
+        background-color: var(--grey) !important;
+        color: var(--text) !important;
+        border: 1px solid var(--text) !important;
+    }
+    
+    /*Discussin Points*/
+    .discussion-points {
+        color: var(--text) !important;
+    }
+    
     /*Closed for Comments*/
     .closed-for-comments-discussions-v2__wrapper {
         border: 1px solid var(--text) !important;
