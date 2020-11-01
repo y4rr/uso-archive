@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yad
 @description    `YOUTUBE Retro Wave ThemeUse the dark theme in your Appearance settings`
-@version        20201030.3.35
+@version        2020111.5.18
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -52,10 +52,14 @@
 @keyframes thumbturn {
   0% {transform: scalex(0)}
   25% {transform: scaleY(0.1)}
-  50% {transform: scalex(0.7)}
-
-	
+  50% {transform: scalex(0.7)}	
 }
+
+/*my eyes hurt coding*/
+html:not(.style-scope) {
+       --yt-spec-static-brand-red: #ff00f7;
+}
+
 #thumbnail.ytd-moving-thumbnail-renderer {
     transition: opacity 0.5s;
     opacity: 0;
@@ -127,8 +131,7 @@ border-radius: 3px
 }
 ytd-comments {/*comments box*/
     display: block;
-    background-color: #00000042;
-	box-shadow: 0 0 10px 7px #00000047;
+    background-color: #18042b7d;
 }
 
 #container.ytd-searchbox {/*search bar*/
@@ -165,10 +168,12 @@ ytd-comments {/*comments box*/
     border-style: solid;
     border-width: 0px;
     border-color: #e70b0b00;
-    background-image: url(https://i.postimg.cc/Sx80hzN3/original.gif);
+    background-image: url(https://i.postimg.cc/wxtHHvWL/starfall.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+	transform: rotate(94deg);
+    border-radius: 81px;
 }
 
 /*2021 Youtube Retro Wave by YAD*/
@@ -192,11 +197,10 @@ paper-button.ytd-subscribe-button-renderer {/*sub button*/
 
 ytd-multi-page-menu-renderer {/*right dropdown notif*/
     background: #36083bed;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
     color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));
-    filter: hue-rotate(272deg) saturate(105%) opacity(100%) brightness(100%) contrast(78%);
 }
 paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {/*toggle button*/
     background-color: #fff;
@@ -301,5 +305,37 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #7f03be;
+}
+
+/*various icons*/
+yt-icon, .yt-icon-container.yt-icon {
+    fill: #59fffa;
+}
+
+/*bg vids and settings*/
+#primary.ytd-two-column-browse-results-renderer {
+    max-width: 100%;
+    min-width: 0;
+    background-color: #18042b7d;
+}
+
+ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer {
+    border: 1px solid #ff3efd;
+    padding: var(--yt-button-padding-minus-border);
+}
+
+/*join button*/
+ytd-button-renderer.style-suggestive[is-paper-button] {
+    --yt-formatted-string-deemphasize-color: var(--yt-blue-opacity-lighten-2);
+    background-color: transparent;
+    color: #9100ff;
+}
+
+/*video menu*/
+paper-listbox {
+    display: block;
+    padding: 8px 0;
+    background-color: #3a1244eb;
+    color: var(--paper-listbox-color, var(--primary-text-color));
 }
 }

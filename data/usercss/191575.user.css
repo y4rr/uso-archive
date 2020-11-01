@@ -2,10 +2,26 @@
 @name           ニコニコ 新マイページ ダークテーマもどき
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。配置等はいじらず広告程度しか消していません。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあると思います（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--10月29日時点で併用可能か確認済み--CCT_fumi様が公開している「<a href="https://userstyles.org/styles/187176/theme">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」↑カスタマイズで適用されるよう統合済みgonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」--<s>どうにもならなかった</s>どうにかなったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>→赤文字部分だけの色の変え方を教えてくれる奇特な方のおかげでなんとかなりました`
-@version        20201031.17.4
+@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。カスタマイズで広告消したりできるようになってます。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあります（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--たぶん併用できるよ他作者様CSS--CCT_fumi様が公開している「<a href="https://userstyles.org/styles/187176/theme">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」↑カスタマイズで適用できるように統合済み。gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。--<s>どうにもならなかった</s>どうにかなったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>→赤文字部分だけの色の変え方を教えてくれる奇特な方のおかげでなんとかなりました`
+@version        2020111.9.3
 @license        CC0-1.0
 @preprocessor   uso
+@advanced dropdown -------- "詰めるだけと併用" {
+	----------- "しない*" <<<EOT /* 詰めるやつと併用しない *\/
+.LikeItemAfter-thanksMessage::after{
+	border-bottom-color: #777;
+	top: -8px;
+} EOT;
+---------- "する" <<<EOT /* 詰めるやつと併用する *\/
+.LikeItemAfter-thanksMessage::after{
+	border-bottom-color: transparent;
+	left: -14px;
+	border-right-color: #777;
+	top: 8px;
+}
+.LikeItemAfter-thanksMessage::before{border-right-color:transparent;} EOT;
+
+}
 @advanced color ------------- "赤文字部分の色が変えられます" #53D253
 @advanced dropdown ----------- "スッキリしたやつを統合" {
 	-------------- "しない*" <<<EOT /* スッキリしたやつを統合しない *\/ EOT;
@@ -16,13 +32,17 @@
 .MainMenuContainer-menuList{padding-right:80px} EOT;
 
 }
+@advanced dropdown -- "広告" {
+	---- "いる*" <<<EOT /* 広告いる *\/ EOT;
+------ "いらない" <<<EOT /* 広告を消す *\/
+.HeaderContainer_Re-ad,.RightSideContainer-adWrap,.FormationFrame.RightSideContainer-formationFrame,.Ads.UserPageFooterContainer-ad,.PremiumBanner{
+    display: none !important
+} EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user"), url-prefix("https://site.nicovideo.jp/badge") {
-/* 広告 */
-.HeaderContainer_Re-ad,.RightSideContainer-adWrap,.FormationFrame.RightSideContainer-formationFrame,.Ads.UserPageFooterContainer-ad,.PremiumBanner{
-    display: none !important
-}
 
 /* ユーザーページヘッダー */
 .UserPage-header,.UserPageHeader,.UserDetailsHeader,.OtherMypageLinks,.ThreePointMenu,.ShareModal-modal,.MainMenuContainer-menu{
@@ -225,8 +245,12 @@ a:hover,.CommunityItem:hover .CommunityItem-name,.FollowingTagContainer-tagNameL
 
 /* カスタマイズ欄 */
 
-/*[[-----------]]*/
+/*[[--------]]*/
+
+/*[[------------1]]*/
   
 .NicorepoItem-activityDescription[style='color: rgb(208, 2, 27);']{ color: /*[[-------------]]*/ !important; }
+
+/*[[--]]*/
 
 }

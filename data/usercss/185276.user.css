@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        20201030.10.58
+@version        2020111.6.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.tiktok.com") {
-  /* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
@@ -54,7 +54,9 @@ html,
 .popup.jsx-919645622::before,
 .more-actions.jsx-4035564160 .action-container.jsx-4035564160,
 .profile.jsx-2902964253 .profile-actions.jsx-2902964253,
-.more-actions.jsx-3371939883 .action-container.jsx-3371939883 {
+.more-actions.jsx-3371939883 .action-container.jsx-3371939883,
+.desktop-container,
+.header-container.jsx-2041358087 {
 	background-color: #000 !important;
 }
 
@@ -140,9 +142,16 @@ svg {
 .profile.jsx-2505920267 .profile-actions.jsx-2505920267 li.jsx-2505920267 a:link:hover,
 .action-container.jsx-1891492674 .report.jsx-1891492674:hover,
 .follow-button.jsx-2790469629:hover,
-.identity.gray.jsx-2814792573 {
+.identity.gray.jsx-2814792573,
+a.jsx-2902964253:hover,
+.nav-item.active.jsx-1483047469 span.jsx-1483047469 {
 	color: rgb(245, 137, 158) !important;
 	fill: rgb(245, 137, 158) !important;
+}
+
+circle {
+	color: rgb(255, 255, 255) !important;
+	fill: #FE2C55 !important;
 }
 
 .video-feed-item.jsx-831076485,
@@ -237,10 +246,11 @@ a.duet-with.jsx-709044605::before,
 	-webkit-filter: invert(100%);
 }
 
-
 .feedback.jsx-4248547441 {
 	-webkit-filter: invert(30%);
 }
+
+
 
 a,
 p,

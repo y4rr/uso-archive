@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to a style size limit Darkest Fusion has been divided into 2 parts. That one contains dark theme for most common used Google sites: <strong>About, Account management, Alerts, Books, Calendar, Contacts, Drive, Finance, Groups, Hangouts, Maps, My Activity, One, Patents, Payments, Passwords, Photos, Scholar, Search, Sheets, Tasks, Translate, Travel and Trends</strong>.<strong><mark>Second style is available >>> <a href="https://userstyles.org/styles/180430/google-darkest-fusion-2-2">there</a> <<<</mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        20201031.14.21
+@version        2020111.11.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown google_logo "Google logo color" {
@@ -259,8 +259,8 @@ C5 "Lake" <<<EOT https://i.imgur.com/EMalQHU.jpg EOT;
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v6.01
-* Updated: 		31.10.2020
+* Version:		v6.1
+* Updated: 		1.11.2020
 */
 
 activating_style_indicator
@@ -334,6 +334,7 @@ body > .trouble-page, .tX9u1b:hover, .tX9u1b:hover .Rq5Gcb, .tX9u1b:active, .tX9
 {
     box-shadow: 0 0 0 1px #4C4C4C !important;
 }
+
 #t-formula-bar-label > div > .docs-icon-insert-formula, .dxnXjb, .vTKotc, .Re-Kl-b-Ph, .Re-Kl-Pl-Ql, .Re-Kl-db-kk, .rs-icon-edit, .link-management-drop-down-icon {
 	filter: invert(100%) !important;
 }
@@ -1927,59 +1928,155 @@ a, .ksBjEc:not(:disabled) {
 }
 
 @-moz-document regexp("https:\\/\\/(www\\.)?translate\\.google\\.(com|([a-z]{2}))(\\.[a-z]{2})?\\/.*") {
-::selection {
+::selection, .paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel, #maia-header, #maia-footer-global, .ita-kd-dropdown-menu, .gb_wc, .gb_Ac, .gb_zc, .phrasebook-top-header, .phrasebook-container .nav-bar, .gb_Bc, .gb_Ic, .gb_Jc {
 	background-color: #161616 !important;
 }
 
-.ccvoYb, .k5v5Nb, .NBY4Kb, .AzKM4, .GKdr2, .nbesI {
-	background-color: #131313 !important;
-}
-.LxQvde, .VfPpkd-LgbsSe:not(:disabled), .v2OCrb.Fc1vAd, .v2OCrb.Fc1vAd:hover, .vxsGZ, .kiSRoe {
-    background-color: #1C1C1C !important;
+.language-list-toolbar, #gt-appbar, header > div > div[style^="height"], .alt-menu, .submit.disabled, #speak-with-the-world, #your-choice, .goog-menu.round-trip-content, .language_list_section_header, .level-circle.community-badge, .goog-menuitem.goog-option-selected{
+	background-color: #1C1C1C !important;
 }
 
-.rm1UF, .KjuTac, .LxQvde:hover, .I87fLc, .ySES5, .SMqeCb, .a2Icud, .jCVEDd, .RstnCb, .bvzp8c, .KskmCc, .DNFg3e, .BAZ5oe, .VfPpkd-LgbsSe:disabled, .ita-kd-dropdown-menu, .DLAnyc, .RiQjue, .VfPpkd-xl07Ob-XxIAqe, .VfPpkd-LgbsSe:not(:disabled):hover, .VfPpkd-AznF2e-OWXEXe-auswjd, .j27i7, .WMHbxd {
+.language-list, .language_list_item_wrapper, .language_list_tl_list, .language-list-unfiltered-langs-sl_list, .language_list_sl_list, .ls-wrap, .swap-wrap, #gt-res-tools-l > div:hover, #gt-res-tools-l > div > div:hover, #gt-src-tools-l > div:hover, #gt-res-edit:hover, .ita-kd-menuitem-hover, tr[class$="-entry-clickable"]:hover, tr[class$="-entry-selected"]:hover, .gt-card-expanded > li > span > span, .gt-syn-span > span, .gt-is-mobile, .gt-lc.gt-lc-mobile .gt-cd, #gt-pb-tb tr:hover, .select-file-page, .ft-icon-oval, .language_list_section, .orig, .source-wrap, .gt-spell-correct-message, .show-as-one-card, .gt-cc-t, .gt-cd-cl, .share-panel, .source-input, .gt-related-suggest-message, #content.community-dialog, .gb_hc:hover, .ita-ppe-box, [ng-non-bindable] [role="menu"] > div > ul > li:hover, .summary.community-answer-summary:nth-child(2n), .tlid-phrasebook-entry, .goog-menu, .jfk-button-standard, .history-container, .displaying-history-page .history-page, .history-top-header, .history-container .info-bar, .LpQB8e, .ccvoYb, .ySES5, .UU714, .I87fLc, .SMqeCb, .a2Icud, .k5v5Nb, .GKdr2, .nbesI, .DLAnyc, .AzKM4, .NBY4Kb, .j27i7, .KjuTac {
 	background-color: #2C2C2C !important;
 }
 
-.eyKpYb, .Bcbxbe:hover, .P6w8m, .ySES5:hover, .ySES5:focus, .L780X, .L780X::after, .KKjvXb, .oJweqc:hover, .ordo2:hover, .ordo2:active, .VfPpkd-LgbsSe:disabled:hover, .ita-kd-menuitem-hover, .vvNkBd:hover, .VfPpkd-xl07Ob-XxIAqe:hover, .PsfnLc:hover, .tvua2:hover {
+.klnDQb, .X4DQ0::after  {
+    background: #2C2C2C !important;
+}
+
+.language_list_item_wrapper:hover, .language_list_item_wrapper:focus, .language-list-search-box, #tl_list-search-box, #sl_list-search-box, .gt-card-expanded > li > span > span:hover, .gt-syn-span > span:hover, .goog-menuitem-highlight, .gt-is-itm-hover, .ft-icon-oval:hover, .results-container, .result, .gt-edit, .contribute-target, .gt-baf-word-clickable:hover, .gt-cd-cl:hover, .ls-wrap .tl-more:focus, .ls-wrap .sl-more:focus, .cp-promo, .community-set-progress-1 .mobile-bg.community-set-progress, .submit, #continue.community-reward-dialog, .ita-ppe-hlt, .summary.community-answer-summary:nth-child(2n+1), .phrasebook-container .language-chip, .browse-entry:hover, .browse-entry:active, .browse-entry:focus, .Usd1Ac, .dePhmb, .ySES5:hover, .KskmCc, .RstnCb, .ordo2:hover, .ordo2:focus, .gt-baf-hl, .vvNkBd:hover, .VfPpkd-xl07Ob-XxIAqe, .L780X, .L780X::after, .kgnlhe.FwR7Pc, .MtFg0.FwR7Pc, .P6w8m, .Bcbxbe.FwR7Pc {
 	background-color: #3C3C3C !important;
 }
 
-.P6w8m.BDJ8fb:not(.Jj6Lae), .MtFg0.FwR7Pc, .kgnlhe.FwR7Pc, .JLqJ4b.C1N51c, .JLqJ4b:hover, .Xcmxjb.FwR7Pc, .VfPpkd-AznF2e-OWXEXe-auswjd:hover {
+.st-stp1-epu-text, .trans-edit, .trans-target-highlight, .P6w8m.BDJ8fb:not(.Jj6Lae).P6w8m.BDJ8fb:not(.Jj6Lae), .JLqJ4b.C1N51c, .JLqJ4b:hover, .Xcmxjb.FwR7Pc, .jCVEDd {
 	background-color: #4C4C4C !important;
 }
 
-.X4DQ0::after {
-    background: linear-gradient(to right,rgba(28,28,28,0),rgba(19,19,19,1)) !important;
+#main.community-user-panel {
+	background-color: #1b437e !important;
 }
 
-.aCQag, .Rj2Mlf:not(:disabled), .iq5YBc, .I87fLc, .RSggmb, .Bcbxbe, .jTj8gd.XzOhkf .Sp3AF, .zWtKC, .jTj8gd, .oJweqc, .RstnCb, .ordo2:hover, .ordo2:active, .myVd4c .ySES5, .DLAnyc, .AzKM4, .vvNkBd:not(:last-of-type), .PsfnLc, .I87fLc:not(.XzOhkf) .Dwvecf, .ZShpvc, .v2OCrb, .tvua2, .j27i7 {
-    border-color: #4C4C4C !important;
+.language_list_item_wrapper.item-selected, .ordo2.KKjvXb {
+	background-color: #4285F4 !important;
 }
 
-.uNr6ee, .nYkDR, .RSggmb, .TcXXXb, .kgnlhe, .aia4Ud, .jCVEDd, .LV4pme, .NqnNQd, .fcuAz, .ita-kd-menuitem, .XMNbjd, .v2OCrb, .EYBmYc, .i7SxSc:disabled:disabled, .AarNVd, .kgJkHd, .AP34ab, .VfPpkd-vQzf8d, .HswdMd {
-    color: #FAFAFA !important;
+.select-file-page .button:hover {
+	background-color: #3079ED !important
 }
 
-.er8xn, .KmsAmb .tL9Q4c, .J0lOec, .xUPQqb, .yUUmWd .VfPpkd-jY41G-V67aGc, .S6GkK, .j7bWb, .xex4Kc, .MtFg0.FwR7Pc, .L780X, .swFHJd, .Xcmxjb.FwR7Pc, .PxXj2d, .brilXb, .uqiNJb, .VfPpkd-rymPhb, .PsfnLc, .VK4HE:hover .dPxysd, .VK4HE:focus .dPxysd, .qTO0c:hover .dPxysd, .qTO0c:focus .dPxysd, .HYAIUe, .vxsGZ {
+span[class$="word-selected"], .swap.jfk-button, span[class$="word-selected"], .swap.jfk-button {
+	background: transparent !important;
+}
+
+.tlid-result-view > div[class$="mobile"] > div > div > div > div, .tlid-result-view > div[class$="mobile"] > div > div:nth-child(2) > div {
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+#speak-with-the-world, #your-choice, .jfk-button-standard {
+	background-image: none !important;
+}
+
+.jfk-button.jfk-button-standard.jfk-button-checked, .VfPpkd-AznF2e-OWXEXe-auswjd  {
+	background: linear-gradient(#4C4C4C, #2C2C2C) !important;
+	border: 1px solid #888 !important;
+}
+
+.ls-wrap .sl-sugg .goog-inline-block.jfk-button:focus, .ls-wrap .tl-sugg .goog-inline-block.jfk-button:focus, .ls-wrap .lang-btn:focus-within, .ls-wrap .swap:focus, .lang-btn {
+	background: linear-gradient(#5C5C5C, #3C3C3C) !important;
+}
+
+.goog-toolbar-button:hover, .gb_cc:not(:last-child), .ls-wrap, .swap-wrap, body:not(.with-lang-list) .results-container.empty, .language-list-toolbar, .gb_gc:not(:last-child), .gb_dc:not(:last-child), #gb.gb_ja, .gt-is-mobile, .gt-lc.gt-lc-mobile .gt-cd, .header-button, .ft-icon-oval, .gt-is-ld, .show-as-one-card, .gt-cc-r, .gt-cc-l, .gt-cc, .gt-cd-cl, .cd-expand-button, .gt-card-expanded:not(:last-child) .gt-syn-row, .language_list_item_wrapper:focus, .break.community-app, .gt-def-num, #maia-header, #maia-footer-global, .gb_ec:not(:last-child), .language_list_section, .gb_jb, .bg.community-badge, .gb_Ic:not(:last-child), body > #gb, .gb_Jc:not(:last-child), .gb_Lc:not(:last-child), .gb_Mc:not(:last-child), .ita-ppe-box, [ng-non-bindable] [role="menu"] > div > ul:first-child, .phrasebook-entry, .phrasebook-container .language-chip, .gb_L, .gb_ub.gb_ub, #gt-appbar, .history-top-header .history-top-bar, .history-entry, .history-top-header, .Usd1Ac, .kwsPce:not(:disabled), .aCQag, .Rj2Mlf:not(:disabled), .iq5YBc, .I87fLc, .RSggmb, .Bcbxbe, .jTj8gd.XzOhkf .Sp3AF, .zWtKC, .jTj8gd, .oJweqc, .RstnCb, .ordo2:hover, .ordo2:active, .myVd4c .ySES5, .DLAnyc, .AzKM4, .vvNkBd:not(:last-of-type), .PsfnLc, .I87fLc:not(.XzOhkf) .Dwvecf, .ZShpvc, .v2OCrb, .tvua2, .j27i7, .ySES5, .ordo2:hover {
+	border-color: #4C4C4C !important;
+}
+
+.ccvoYb {
+    border-top: 1px solid #4C4C4C !important;
+}
+
+.language_list_item_language_name, .language_list_item_wrapper.item-selected > div, .language-list-label, #tl_list-search-box::placeholder, #sl_list-search-box::placeholder, .jfk-button-standard, .language-list-search-box, #tl_list-search-box, #sl_list-search-box, .gt-card-expanded > li > span > span, .gt-syn-span > span, .cd-expand-label, #source::placeholder, span[class$="-term-text"], .ft-icon-txt, .gt-card-ttl-txt, .gt-is-sg, .gt-ct-text, .share-panel h3, .cp-promo-title, .ita-ppe-box, .phrasebook-top-bar > .title, .phrasebook-entry .tl-input, .goog-toolbar-menu-button-caption, .gb_Fb.gb_Fb, .history-top-header .title, .tl-input, .delete-all-button, .tlid-history-num-entries, .mTQVx, .EXtLjf, .uNr6ee, .nYkDR, .RSggmb, .TcXXXb, .kgnlhe, .aia4Ud, .jCVEDd, .LV4pme, .NqnNQd, .fcuAz, .ita-kd-menuitem, .XMNbjd, .v2OCrb, .EYBmYc, .i7SxSc:disabled:disabled, .AarNVd, .kgJkHd, .AP34ab, .VfPpkd-vQzf8d, .HswdMd {
+	color: #FAFAFA !important;
+}
+
+.gt-cd-tl, #gt-langs .jfk-button-standard, .jfk-button .jfk-button-actions, #gb .gb_Cb a.gb_Jb.gb_Jb, .jfk-tooltip-contentId, .jfk-button-standard, #source, .gt-def-example, .gt-lc.gt-lc-mobile .gt-ex-text, .gt-baf-translations, .goog-menuitem, .help-tooltip > p, .gt-is-tr, .gt-def-synonym-title, .select-file-section, .choose-document-prompt, .upload-filetypes-prompt, .language_list_item, .spelling-correction, .results-container:not(.empty) .placeholder, .result-dict-wrapper .translation, .contribute-target, #st-buttons .jfk-button, .gt-cd-pos-pop, .share-panel li a span, .gt-cd-cl, .gt-def-num, .transliteration-content, .cp-promo-subtext, #menu.community-app a.community-app:link, #menu.community-app a.community-app:visited, #menu.community-app a.community-app:hover, #menu.community-app a.community-app:active, .style-scope.paper-input, .goog-menu.round-trip-content, .ita-kd-menuitem, .ita-ppe-hlt, .placeholder-title, .er8xn, .KmsAmb .tL9Q4c, .J0lOec, .xUPQqb, .yUUmWd .VfPpkd-jY41G-V67aGc, .S6GkK, .j7bWb, .xex4Kc, .MtFg0.FwR7Pc, .L780X, .swFHJd, .Xcmxjb.FwR7Pc, .PxXj2d, .brilXb, .uqiNJb, .VfPpkd-rymPhb, .PsfnLc, .VK4HE:hover .dPxysd, .VK4HE:focus .dPxysd, .qTO0c:hover .dPxysd, .qTO0c:focus .dPxysd, .HYAIUe, .vxsGZ, .VhOj3e, .ZTPlmc, .KskmCc, .gt-baf-hl, .TEGJAb, .D4w5q, .MZgjEb, .tl-output, .j27i7 {
 	color: #CCC !important;
 }
 
-.kO6q6e, .VhOj3e, .MZgjEb, .KskmCc, .ZTPlmc, .a88hkc {
-    color: #999 !important;
+#gt-src-wrap .goog-textarea, #result_box > span, .gt-baf-word-clickable, .gt-def-row, .st-stp1-epu-text {
+	color: #DDD !important;
 }
 
-.eIKIse, .VfPpkd-AznF2e-OWXEXe-auswjd > .VfPpkd-N5Lhkf > .VfPpkd-jY41G-V67aGc {
+#source::selection, .tlid-translation.translation::selection, .phrasebook-entry .tl-output, .result-transliteration-container .transliteration-content, .result-transliteration-container .truncate-link, .gt-baf-previous-word-mobile {
+	color: #AAA !important;
+}
+
+#gb a.gb_I, #gb a.gb_I:visited, #gb a.gb_I:active, #gb a.gb_J, #gb a.gb_J:visited, .VfPpkd-vQzf8d[jsname] {
 	color: #4285F4 !important;
+}
+
+.select-file-page .select-file-section .button, .item-selected > .language_list_item.language_list_item_language_name, .style-scope.community-user-panel, .style-scope.community-activity-tile, .ordo2.KKjvXb > .PxXj2d{
+	color: #0A0A0A !important;
+}
+
+#gt-appbar #gt-appname {
+	color: #DD4B39 !important;
+}
+
+.gb_ja svg, .gb_4b svg, .gt-ex-info > .gt-ex-quote > svg, .INImOe, .CydQtc {
+	fill: #CCC !important;
+}
+
+.community-set-progress-1 .bar-item.community-set-progress {
+	outline: #4C4C4C 1px solid !important;
+}
+
+.sugg-fade {
+	display: none !important;
+}
+
+#gt-res-tools {
+	padding: 2px 4px 2px 4px !important;
+}
+.detect_language_row_icon {
+	opacity: 1 !important;
 }
 
 .L780X::after {
     box-shadow: none !important;
 }
 
-.GA2I6e > .VfPpkd-kBDsod,  .ita-kd-icon-span, .U2dVxe > .VfPpkd-kBDsod, .m0Qfkd > .VfPpkd-Bz112c-kBDsod, .zQ0atf > .NMm5M, .q7sDqe > span > .NMm5M, .q7sDqe > .VfPpkd-kBDsod, .ita-kd-menuitem-span.ita-kd-img, :not(.VfPpkd-Bz112c-LgbsSe-OWXEXe-IT5dJd) > .VfPpkd-Bz112c-kBDsod {
-    filter :invert(100%) !important;
+.jfk-button-img, .language_list_item_icon, .gt-is-ca, .trans-verified-button, .phrasebook-top-header .close-button, .phrasebook-entry .trashcan-button, .ita-kd-inputtool-icon.ita-kd-left > .ita-kd-img.ita-kd-icon, .ita-kd-right > .ita-kd-arrow, .ita-kd-menuitem-inputtool-icon.ita-kd-menuitem-span, .history-top-header .close-button, .GA2I6e > .VfPpkd-kBDsod,  .ita-kd-icon-span, .U2dVxe > .VfPpkd-kBDsod, .m0Qfkd > .VfPpkd-Bz112c-kBDsod, .zQ0atf > .NMm5M, .q7sDqe > span > .NMm5M, .q7sDqe > .VfPpkd-kBDsod, .ita-kd-menuitem-span.ita-kd-img, :not(.VfPpkd-Bz112c-LgbsSe-OWXEXe-IT5dJd) > .VfPpkd-Bz112c-kBDsod {
+	filter: invert(100%) !important;
+}
+
+.ita-kd-selected > .ita-kd-img {
+	filter: invert(100%) !important;
+	-webkit-filter: invert(100%) !important;
+}
+
+.src-tts {
+	filter: invert(0) !important;
+	-webkit-filter: invert(0) !important;
+}
+
+#gt-pb-tb tr, .goog-toolbar, div.gt-baf-sep {
+	border-bottom: 1px solid #4C4C4C !important;
+}
+
+#pb-tool, #pb-sp-del {
+	border-left: 1px solid #4C4C4C !important;
+}
+
+#pb-tool {
+	border-right: 1px solid #4C4C4C !important;
+}
+
+#pb-tb-c, #gt-pb-tb {
+	border: 1px solid #4C4C4C !important;
+}
+
+.frame::before {
+	border: none !important;
 }
 }
 
@@ -2087,7 +2184,7 @@ bar-chart.fe-bar-chart-directive > .bar-chart-content > div > div > div > svg > 
 
 @-moz-document regexp("https:\\/\\/(www\\.)?(images\\.)?google\\.(com|([a-z]{2}))(\\.[a-z]{2})?\\/(((\\?&bih|\\?gfe_|shopping|\\?hl=|preferences|finance|save|\\?pli|covid19|search|webhp|\\?safe|imghp|\\?tbm=pts|\\?authuser)|(\\?gws_rd=ssl)).*)?") {
 /*Google Search subpages*/
-.products-nav-outer-wrapper, .header, .hcfe-content > footer, #hdtb.hdtba > #hdtbMenus, .flt-calendar, .gws-travel-calendar__month, .hudp-container, .hudp-disabled, .hudp-disabled:hover, #flt-sponsored-tooltip, .MEdqYd, .feqqG, .qbtbp, .sl, .CngMb, .h-c-header__bar, .h-c-header__bar-underside, .h-c-footer, .imso-shw, .rg_anbg, .rg_ilmbg, .hVgDpd, #fbar, .glue-header .glue-header__bar, .glue-footer, .glue-footer__link {
+.products-nav-outer-wrapper, .header, .hcfe-content > footer, #hdtb.hdtba > #hdtbMenus, .flt-calendar, .gws-travel-calendar__month, .hudp-container, .hudp-disabled, .hudp-disabled:hover, #flt-sponsored-tooltip, .MEdqYd, .feqqG, .qbtbp, .sl, .CngMb, .h-c-header__bar, .h-c-header__bar-underside, .h-c-footer, .imso-shw, .rg_anbg, .rg_ilmbg, .hVgDpd, #fbar, .glue-header .glue-header__bar, .glue-footer, .glue-footer__linkm, .c93Gbe {
 	background-color: #161616 !important;
 }
 
@@ -2187,7 +2284,7 @@ bar-chart.fe-bar-chart-directive > .bar-chart-content > div > div > div > svg > 
 	border: none !important;
 }
 
-.Hr51pb.tb_h.TbbqEc > div > ol > li, .liveresults-sports-immersive__match-grid-right-border, .liveresults-sports-immersive__str-dc, .cyFc6e, .t4Mnue, .liveresults-sports-immersive__st-hc, .liveresults-sports-immersive__match-grid-bottom-border, .imspo_mff__mff-fs, .imspo_mff__mff, .xpdopen > div > div > div > div > div > div > table, #hdtb > #hdtbMenus, .rl_center, .h7eyVe, .i0PvJb, .cdr_dlg, .cphsSd, .tzhtse .hqe1lb, .aR1mEe, #hdtb, .kp-blk, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod, .cv2VAd, .b2hzT, .sbct:first-child .suggestions-inner-container, .scrt td, .rl_item_base, .CNf3nf, .H73aad, .zd2Jbb, .wfLIae, .PCpHt, .g-bbl-container, [class^="liveresults-sports-"], .sBROid, .LQ9u1c, .tw-menu-btn:not(.tw-menu-btn-disabled):hover .tw-menu-btn-image:first-child, .date-picker-button, .B4MzEf, .dndped, .El9GEe, .W0Rk3, .lDtMlf .flt-input, .flt-around-date, .GJp0Vb, .hudp-container, #rUnked, #flt-sponsored-tooltip, .abhAW, #fsett, .xtSCL, .MEdqYd, .feqqG, .AOvabd, .dxp44d, .TIGsTb, .gb_F, .lU8dJf, a.scCTtb, .hp3sk, .tN8Uqf, .DdgYNd, .mCKFRe, .pla-ikpdmo__header-row th, .NPKeZ, .eN2jG, .Y92sLc, .Ee92ae, .HIIRYc, .dedUFc, div[style^="background: rgb(45, 45, 45) none repeat scroll 0% 0%; border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 4px;"], .Qnaule, .ZbgEX, .Gxz0Fe, #epbar, .gYcdob, body > .appbar, .sfbgg, .UVgjof, #fbar, .qbtbp, .qbtbha.sl, input[type="submit"], .sbdd_a input, .gbqfba, .sxIvj > div, .ecRggb, .QOsNac, .tiM5gc, .exp-outline, .BwZUW, .gstl_50.sbdd_a, .gstl_50 .sbsb_b li .fisb_c, .vCOSGb, .tw-lp-search, .f196ee, .vpggTd.oDcTJb, .RLCnqc, .fbPs3b, .ZVWN5d, .POlcrc.yJnCgb, .POlcrc.pHJT2, .IB7V4, .R9RxHd, li.sbsb_c:first-child, .ab_dropdownrule, #hdtb-tls:hover, #hdtb-tls:focus, #hdtb-msb .hdtb-tl-sel, #hdtb-msb .hdtb-tl-sel:hover, .zzNQH > span > span > .ab_button, .nGHNmf, .dPaec, .YZ7eec, .pjURYC8hvXL__bubble-content, :not(.ab_ctl) > div:not(.ab_ctl) > .ab_button, :not(.ab_ctl) > div:not(.ab_ctl) > .ab_button:focus, .KD8gCf, .tb_l, .cu-container .mnr-c, .hPFJud, .vfmVQ, .gWUzU, .lr_dct_trns_sel, .nu4bVe, .F9PbJd, .ZXJQ7c:hover, .yC8XRb, .XD1Bsc, .XD1Bsc:hover, .fnKRDd, .TWG7zb.TNpQ1d, .fWfAye, input[name="image_url"], .jCaeMe, .jvvww, .gws-local-promotions__border, .yPHXsc > div, .J8cLR, .Hg3mWc, .QhOZ7e, .WlzHGd, .numbered-step-start, .xgFMkb, .ytJVH, .hxpXRb, .tdu-stop, .awALXc, .vnLNtd.mnr-c, .qj8SO, .BBHxge, .OXAInb, .iF8z4d td, .Hr51pb, .cbphWd, .vk_arc, .cdr_dlg .goog-date-picker table thead td, .vk_c, .vk_cxp, #rhs .fIcnad, .Teq10, .gstl_50 .sbdd_b, .dw-sb-cont .dw-sb-btn, .dw-sb-cont .dw-sbi, .zkIadb, .wYWDAd, .ccBEnf, #rllhd__fldhc, .klbar, .czHJJ, .sh-dtt__sort-by, .gb_P, .gb_O, ._-jD, .sh-ma-menu__dropdown, .XwTE4b, .sh-dvp__drop-down-container.goog-flat-menu-button, .sbdd_b, .gbqfqw, .XQvBOc.XQvBOc, .sg-m__media-item, .xpdclose .a84NUc:not(:empty), .xpdopen .CQKTwc:not(:empty), .h7xSye:hover, .JW2g8, .qmv19b, .EPLo7b, .TwNUtc, .LE373, #qbdp, #qbup, .webanswers-webanswers_table__webanswers-table tr, .s10nmd, .P4cfIb, .yZZ28b, .uCWscpVYoPI__pqa-pta, a.UOpzSb, a.UOpzSb:hover, a.UOpzSb:visited, .CNf3nf, .Mw2I7, .fE5Rge, .imso_gs__gs-cont-ed, .qJnhT, .RawNCe, .jktSrf td, .MSOQIb, .RO90o, .Rj2Mlf:not(:disabled), .flt-actionblock, .ekehXe, .nChh6e, .hb8SAc > [jscontroller="DGEKAc"], .I6TXqe, .USRMqe, .ooPrBf, .sFZIhb, .TieM1d, .x6smaf, .TVSh, .LNn04b, .vXQmIe, .act-btn-row, .act-tim-fs-cnt, .lr-imso-ls-lbb, .ksSzJd .TZahnb, .ksSzJd .NY3LVe, .NJfJb.mr5vfb, .VuHq7, .KjyTCd, .uDqk9d, .KRQ2Ab, .glue-button.glue-button--medium-emphasis, .glue-button--medium-emphasis.glue-social__title.glue-social__title--zippy.glue-expansion-panel-toggle, .glue-button--medium-emphasis.glue-social__copy-btn, .c19-kp, .c19-country-resources, #kp-tabcontent-1 > hr, #card.do-the-five, .card-with-thumbnail, .card-donation, .more-resources-card, .ksb:hover, #vjyzWd, .cv2VAd > hr, .jdlgze, .jhg04d, .FqnKTc, .xVtsMb, .gws-local-riddler__banner-shown, .qyEGdc td:not(:last-child), .Ff5uNc, .p8lMe, .WGYX8, .BR6jBc, .ru14E, .wob_ds, .cUezCb, .G3kJ5b, .MXl0lf, .AUiS2, .iOGqzf, .BfIAp, input.w7Nvcd, .StR8Re, .GjRtuc, .FRQ4Od, [jscontroller="lem5oe"] > hr, .bhun8d, .Jb0Zif .Si5xMe, [jscontroller="gQ74ib"] > hr, .Z0mB9b > div >  div > hr, .gLOl5e, .DFDLnc, .xb3tfc, .vsDH3d, .J3Tg1d, [style="border-bottom:1px solid #EBEBEB"], .snNlD, .ksbs, .OouJcb, .rzG2be, .J6UZg, .J6UZg .goog-date-picker table thead td, .dsLpHe, .review-dialog, .WDZaZd, .R0Gzyf, .DvzRrc, .NaCKVc, .dVcUje, .MGqjK, .LfKETd, .ep3ODe, .lgJJud {
+.Hr51pb.tb_h.TbbqEc > div > ol > li, .liveresults-sports-immersive__match-grid-right-border, .liveresults-sports-immersive__str-dc, .cyFc6e, .t4Mnue, .liveresults-sports-immersive__st-hc, .liveresults-sports-immersive__match-grid-bottom-border, .imspo_mff__mff-fs, .imspo_mff__mff, .xpdopen > div > div > div > div > div > div > table, #hdtb > #hdtbMenus, .rl_center, .h7eyVe, .i0PvJb, .cdr_dlg, .cphsSd, .tzhtse .hqe1lb, .aR1mEe, #hdtb, .kp-blk, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod, .cv2VAd, .b2hzT, .sbct:first-child .suggestions-inner-container, .scrt td, .rl_item_base, .CNf3nf, .H73aad, .zd2Jbb, .wfLIae, .PCpHt, .g-bbl-container, [class^="liveresults-sports-"], .sBROid, .LQ9u1c, .tw-menu-btn:not(.tw-menu-btn-disabled):hover .tw-menu-btn-image:first-child, .date-picker-button, .B4MzEf, .dndped, .El9GEe, .W0Rk3, .lDtMlf .flt-input, .flt-around-date, .GJp0Vb, .hudp-container, #rUnked, #flt-sponsored-tooltip, .abhAW, #fsett, .xtSCL, .MEdqYd, .feqqG, .AOvabd, .dxp44d, .TIGsTb, .gb_F, .lU8dJf, a.scCTtb, .hp3sk, .tN8Uqf, .DdgYNd, .mCKFRe, .pla-ikpdmo__header-row th, .NPKeZ, .eN2jG, .Y92sLc, .Ee92ae, .HIIRYc, .dedUFc, div[style^="background: rgb(45, 45, 45) none repeat scroll 0% 0%; border: 1px solid rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 4px;"], .Qnaule, .ZbgEX, .Gxz0Fe, #epbar, .gYcdob, body > .appbar, .sfbgg, .UVgjof, #fbar, .qbtbp, .qbtbha.sl, input[type="submit"], .sbdd_a input, .gbqfba, .sxIvj > div, .ecRggb, .QOsNac, .tiM5gc, .exp-outline, .BwZUW, .gstl_50.sbdd_a, .gstl_50 .sbsb_b li .fisb_c, .vCOSGb, .tw-lp-search, .f196ee, .vpggTd.oDcTJb, .RLCnqc, .fbPs3b, .ZVWN5d, .POlcrc.yJnCgb, .POlcrc.pHJT2, .IB7V4, .R9RxHd, li.sbsb_c:first-child, .ab_dropdownrule, #hdtb-tls:hover, #hdtb-tls:focus, #hdtb-msb .hdtb-tl-sel, #hdtb-msb .hdtb-tl-sel:hover, .zzNQH > span > span > .ab_button, .nGHNmf, .dPaec, .YZ7eec, .pjURYC8hvXL__bubble-content, :not(.ab_ctl) > div:not(.ab_ctl) > .ab_button, :not(.ab_ctl) > div:not(.ab_ctl) > .ab_button:focus, .KD8gCf, .tb_l, .cu-container .mnr-c, .hPFJud, .vfmVQ, .gWUzU, .lr_dct_trns_sel, .nu4bVe, .F9PbJd, .ZXJQ7c:hover, .yC8XRb, .XD1Bsc, .XD1Bsc:hover, .fnKRDd, .TWG7zb.TNpQ1d, .fWfAye, input[name="image_url"], .jCaeMe, .jvvww, .gws-local-promotions__border, .yPHXsc > div, .J8cLR, .Hg3mWc, .QhOZ7e, .WlzHGd, .numbered-step-start, .xgFMkb, .ytJVH, .hxpXRb, .tdu-stop, .awALXc, .vnLNtd.mnr-c, .qj8SO, .BBHxge, .OXAInb, .iF8z4d td, .Hr51pb, .cbphWd, .vk_arc, .cdr_dlg .goog-date-picker table thead td, .vk_c, .vk_cxp, #rhs .fIcnad, .Teq10, .gstl_50 .sbdd_b, .dw-sb-cont .dw-sb-btn, .dw-sb-cont .dw-sbi, .zkIadb, .wYWDAd, .ccBEnf, #rllhd__fldhc, .klbar, .czHJJ, .sh-dtt__sort-by, .gb_P, .gb_O, ._-jD, .sh-ma-menu__dropdown, .XwTE4b, .sh-dvp__drop-down-container.goog-flat-menu-button, .sbdd_b, .gbqfqw, .XQvBOc.XQvBOc, .sg-m__media-item, .xpdclose .a84NUc:not(:empty), .xpdopen .CQKTwc:not(:empty), .h7xSye:hover, .JW2g8, .qmv19b, .EPLo7b, .TwNUtc, .LE373, #qbdp, #qbup, .webanswers-webanswers_table__webanswers-table tr, .s10nmd, .P4cfIb, .yZZ28b, .uCWscpVYoPI__pqa-pta, a.UOpzSb, a.UOpzSb:hover, a.UOpzSb:visited, .CNf3nf, .Mw2I7, .fE5Rge, .imso_gs__gs-cont-ed, .qJnhT, .RawNCe, .jktSrf td, .MSOQIb, .RO90o, .Rj2Mlf:not(:disabled), .flt-actionblock, .ekehXe, .nChh6e, .hb8SAc > [jscontroller="DGEKAc"], .I6TXqe, .USRMqe, .ooPrBf, .sFZIhb, .TieM1d, .x6smaf, .TVSh, .LNn04b, .vXQmIe, .act-btn-row, .act-tim-fs-cnt, .lr-imso-ls-lbb, .ksSzJd .TZahnb, .ksSzJd .NY3LVe, .NJfJb.mr5vfb, .VuHq7, .KjyTCd, .uDqk9d, .KRQ2Ab, .glue-button.glue-button--medium-emphasis, .glue-button--medium-emphasis.glue-social__title.glue-social__title--zippy.glue-expansion-panel-toggle, .glue-button--medium-emphasis.glue-social__copy-btn, .c19-kp, .c19-country-resources, #kp-tabcontent-1 > hr, #card.do-the-five, .card-with-thumbnail, .card-donation, .more-resources-card, .ksb:hover, #vjyzWd, .cv2VAd > hr, .jdlgze, .jhg04d, .FqnKTc, .xVtsMb, .gws-local-riddler__banner-shown, .qyEGdc td:not(:last-child), .Ff5uNc, .p8lMe, .WGYX8, .BR6jBc, .ru14E, .wob_ds, .cUezCb, .G3kJ5b, .MXl0lf, .AUiS2, .iOGqzf, .BfIAp, input.w7Nvcd, .StR8Re, .GjRtuc, .FRQ4Od, [jscontroller="lem5oe"] > hr, .bhun8d, .Jb0Zif .Si5xMe, [jscontroller="gQ74ib"] > hr, .Z0mB9b > div >  div > hr, .gLOl5e, .DFDLnc, .xb3tfc, .vsDH3d, .J3Tg1d, [style="border-bottom:1px solid #EBEBEB"], .snNlD, .ksbs, .OouJcb, .rzG2be, .J6UZg, .J6UZg .goog-date-picker table thead td, .dsLpHe, .review-dialog, .WDZaZd, .R0Gzyf, .DvzRrc, .NaCKVc, .dVcUje, .MGqjK, .LfKETd, .ep3ODe, .lgJJud, .uU7dJb {
 	border-color: #4C4C4C !important;
 }
 
@@ -2508,7 +2605,7 @@ div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="f
 	/*keep old color for "Google Account" button*/;
 }
 
-div[class^="gb_"], span[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib {
+div[class^="gb_"], span[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib, .PNgVMb {
 	color: #FAFAFA !important;
 }
 

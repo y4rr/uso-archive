@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Patrik Grip-Jansson
 @description    `Dark style for the Swedish newspaper Expressen. This is a work in progress, but the majority of the style is finished.`
-@version        202063.19.12
+@version        2020111.11.22
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("expressen.se") {
-/* Expressen Dark Theme V0.6 */
+/* Expressen Dark Theme V0.7 */
 
 /* Global colors */
 :root {
@@ -52,17 +52,23 @@ i.icon--tip-text
     background-color: var( --bg-brighter-color ) !important;
 }
 
-.body-text h2,
-.standard-article,
-.body-text,
+.text-header
+{
+    Background-color: #333;    
+}
+
 main,
 header,
 html,
 body,
 aside.cc_cursor,
 blockqoute,
+
 #header,
 
+.body-text h2,
+.standard-article,
+.body-text,
 .text-header__wrapper,
 .body-text blockquote,
 .body-text>p,
@@ -123,6 +129,20 @@ header,
 .page-footer {
 	background-color: var( --bg-brighter-color) !important;
 	color: var( --fg-base-color) !important;
+}
+
+.rotator {
+	background-color: var( --bg-brighter-color) !important;
+	color: var( --fg-base-color) !important;
+}
+
+rect {
+    fill: var( --bg-brighter-color ) !important;
+}
+
+svg path
+{
+    fill: var( --fg-base-color) !important;
 }
 
 /* Fact Box */
@@ -400,6 +420,16 @@ li.bredcrumb-menu__menu-item a.breadcrumb-menu__menu-link,
 	color: var( --fg-base-color) !important;
 }
 
+.js-follow-tag
+{
+    background-color: #444;
+}
+
+.body-text .image__container:after
+{
+    background-color: #333;
+}
+
 /* AD Stuff */
 .quality-branding {
 	border-color: #999 !important;
@@ -441,10 +471,37 @@ div.page-list__item__content h2 em
 	background-color: var( --bg-brighter-color) !important;
 }
 
+.paywall iframe {
+    background-color: #555 !important;
+}
+
+#paywall-pay-button  {
+    background-color: #00a;
+    border-color: #008;
+	color: var( --fg-brighter-color) !important;	    
+}
+
+.paywall .paywall__change-method-link,
+.paywall header,
+.paywall header strong,
+.paywall,
+.paywall h2,
+.paywall p,
+.paywall a,
+.paywall__wrapper,
+.paywall__payment-methods,
+.paywall__payment-method,
+.paywall .paywall__payment-method-container
+{
+	color: var( --fg-brighter-color) !important;	
+	background-color: #555 !important;
+    
+
+}
 }
 
 @-moz-document domain("datawrapper.dwcdn.net") {
-/* Expressen Dark Theme V0.6 */
+/* Expressen Dark Theme V0.7 */
 /* External Chart/Statistics Site */
 
 /* Global colors */
@@ -484,6 +541,4 @@ span.inner,
 {
     color: var( --fg-base-color) !important;
 }
-
-
 }

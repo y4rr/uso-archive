@@ -2,8 +2,8 @@
 @name           MixCloud Accessibility Fixes
 @namespace      USO Archive
 @author         BoffinBrain
-@description    `- Adds a proper horizontal scrollbar to the playlist at the bottom of the page, so you can scan through long lists without wearing out your mousewheel or your hand. Phew!- Higher contrast play progress rings and bars means you can more easily see which mixes have been listened or partially listened.`
-@version        20201031.16.14
+@description    `- Adds a proper horizontal scrollbar to the playlist at the bottom of the page, so you can scan through long lists without wearing out your mousewheel or your hand. Phew!- Higher contrast play progress rings and bars means you can more easily see which mixes have been listened or partially listened.This project has a <a href="https://www.deviantart.com/boffinbrain/art/Mixcloud-Accessibility-Fixes-859858752">DeviantArt Page</a>.`
+@version        2020111.1.29
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,6 +33,12 @@
         stroke: rgba(0, 0, 0, 0.4) !important;
     }
 
+    /* Make the linear play progress bar thicker. */
+    .AudioCardProgress__ProgressContainer-sc-2j6zi3-1,
+    .boJNxJ {
+        height: 3px;
+    }
+    
     /* Make the linear play progress bar on items show up darker for proper contrast. */
     .AudioCardProgress__ProgressBar-sc-2j6zi3-0,
     .dZFpDi {
