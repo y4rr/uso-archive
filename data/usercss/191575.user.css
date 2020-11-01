@@ -2,10 +2,21 @@
 @name           ニコニコ 新マイページ ダークテーマもどき
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。配置等はいじらず広告程度しか消していません。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあると思います（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--併用可能か確認済み--CCT_fumi様が公開している「<a href="https://userstyles.org/styles/187176/theme">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」--どうにもならなかったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字→おそらくCSSだけでは無理です…（知らないだけかも）--余談的なもの--<a href="https://www.nicovideo.jp/watch/sm37578183">拡張機能でニコニコ動画をダークテーマ化するものがあるようです</a>。`
-@version        20201029.4.8
+@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。配置等はいじらず広告程度しか消していません。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあると思います（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--10月29日時点で併用可能か確認済み--CCT_fumi様が公開している「<a href="https://userstyles.org/styles/187176/theme">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」↑カスタマイズで適用されるよう統合済みgonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」--<s>どうにもならなかった</s>どうにかなったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>→赤文字部分だけの色の変え方を教えてくれる奇特な方のおかげでなんとかなりました`
+@version        20201031.17.4
 @license        CC0-1.0
 @preprocessor   uso
+@advanced color ------------- "赤文字部分の色が変えられます" #53D253
+@advanced dropdown ----------- "スッキリしたやつを統合" {
+	-------------- "しない*" <<<EOT /* スッキリしたやつを統合しない *\/ EOT;
+------------- "する" <<<EOT /* スッキリしたやつ(https://userstyles.org/styles/187176/) より統合 *\/
+.UserPage-main{padding-right:0;}
+.NicorepoPage-content,.UserDetailsHeader-body{flex-grow:2;margin-right:80px;}
+.UserDetailsStatus{width:auto;}
+.MainMenuContainer-menuList{padding-right:80px} EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user"), url-prefix("https://site.nicovideo.jp/badge") {
 /* 広告 */
@@ -76,6 +87,36 @@ body{
     color: #373737;
 }
 
+.CommunityItem-content{
+    background-color: #555;
+    border: 1px solid #aaa;
+}
+
+/*フォロー中タグ*/
+.FollowingTagContainer-content{
+    background: #555;
+    border: 1px solid #aaa;
+}
+.FollowingTagContainer-tagNameLink:visited{
+    color: #b3b3b3;
+}
+
+/* フォロー中チャンネル */
+.ChannelItem-content{
+    background: #555;
+    border: 1px solid #aaa;
+}
+
+/* タグレポ */
+.TagrepoItem{
+    background-color: #555;
+    border: 1px solid #aaa;
+}
+.TagrepoContainer-headerActionBackIcon{
+    fill: #bdbdbd;
+}
+
+
 /* マイリスト */
 .ModalContent_with-footer .ModalContent-body{
     background-color: #555;
@@ -133,10 +174,10 @@ body{
 }
 
 /* 文字 */
-.UserDetailsHeader-levelLabel,.UserDetailsHeader-account,.UserDetailsStatusItem-linkLabel,.Dropdown-button,.NiconicoPoint,.OtherMypageLinks-link,.ThreePointMenu > *,.ShareModal-modal,.UserDetailsHeader-nickname,.MainMenuItem,.SubMenuLink-label,.ModalActionButton,.NicorepoItem-senderName,.NicorepoItem-item,.NicorepoItem-contentDetailTitle,.NicorepoItem-activityCreatedAt,.NicorepoItem-senderName:visited,.FeedbackLink,.NicorepoMuteItem-detail,.NicorepoMuteSettingContainer-infoHelp,.LiveLink,.FolloweeContainer-header,.SubMenuHeader-title,.UserItem-description,.UserItem-nickname,.WatchLaterHeader-name,.WatchLaterHeader-metaValue,.WatchLaterHeader-advice,.Checkbox-label,.MylistItemAddition-addedAt,.VideoMediaObject-bodyTitle,.VideoMediaObject-bodyDescription,.VideoMetaData-videoRegisteredAt,.VideoMetaData-count > *,.MylistPageSubMenuHeader-counterValue,.SortMylistsListItem-name,.ModalContent-footerSubmitButton,.MylistMediaObject-bodyFollowerCount,.MylistMediaObject-bodyDescription,.MylistMediaObject-bodyTitle,.VideoWatchHistoryContainer-headerTotalCountValue,.VideoWatchHistoryContainer-headerAnnounce,.LikeItemAfter-thanksMessage > h1,.BlankState-title,.a-list__title,.StampCard-title,.StampContainer-stampRanking a,.ExpandBoxButton{
-    color: #eee
+.UserDetailsHeader-levelLabel,.UserDetailsHeader-account,.UserDetailsStatusItem-linkLabel,.Dropdown-button,.NiconicoPoint,.OtherMypageLinks-link,.ThreePointMenu > *,.ShareModal-modal,.UserDetailsHeader-nickname,.MainMenuItem,.SubMenuLink-label,.ModalActionButton,.NicorepoItem-senderName,.NicorepoItem-item,.NicorepoItem-contentDetailTitle,.NicorepoItem-activityCreatedAt,.NicorepoItem-senderName:visited,.FeedbackLink,.NicorepoMuteItem-detail,.NicorepoMuteSettingContainer-infoHelp,.LiveLink,.FolloweeContainer-header,.SubMenuHeader-title,.UserItem-description,.UserItem-nickname,.WatchLaterHeader-name,.WatchLaterHeader-metaValue,.WatchLaterHeader-advice,.Checkbox-label,.MylistItemAddition-addedAt,.VideoMediaObject-bodyTitle,.VideoMediaObject-bodyDescription,.VideoMetaData-videoRegisteredAt,.VideoMetaData-count > *,.MylistPageSubMenuHeader-counterValue,.SortMylistsListItem-name,.ModalContent-footerSubmitButton,.MylistMediaObject-bodyFollowerCount,.MylistMediaObject-bodyDescription,.MylistMediaObject-bodyTitle,.VideoWatchHistoryContainer-headerTotalCountValue,.VideoWatchHistoryContainer-headerAnnounce,.LikeItemAfter-thanksMessage > h1,.BlankState-title,.a-list__title,.StampCard-title,.StampContainer-stampRanking a,.ExpandBoxButton,h1,.MylistHeader-name,.MylistHeader-metaItemValue,.CommunityItem-name,.CommunityItem-description,.FollowingTagContainer-tagNameLink,.FollowingTagContainer-nicodicSummary,a,.ChannelItem-description,.ChannelItem-name,.TagrepoItem-contentTagsItem,.TagrepoContainer-headerTagName,.LikeItemAfter-ownerName,.BlankState-recommendTitle,.BlankState-body,.BlankState-linkInner{
+    color: #ddd;
 }
-.UserDetailsHeader-levelLabelValue,.UserDetailsStatusItem-link,.CopyForm-copy,.MainMenuItem-active,.SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label,.UserItem:hover .UserItem-nickname,.VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle,.ModalContent-footerCancelButton,.MylistMediaObject:hover .MylistMediaObject-bodyTitle,.BadgeContainer-infoLink:hover,.ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover,.UserDescription .ExpandBox_is-expanded a{
+.UserDetailsHeader-levelLabelValue,.UserDetailsStatusItem-link,.CopyForm-copy,.SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label,.UserItem:hover .UserItem-nickname,.VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle,.ModalContent-footerCancelButton,.MylistMediaObject:hover .MylistMediaObject-bodyTitle,.BadgeContainer-infoLink:hover,.ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover,.UserDescription .ExpandBox_is-expanded a{
     color: #00b03d
 }
 .VideoWatchHistoryItemAfter{
@@ -148,12 +189,18 @@ span > *{
 .NicorepoItem-activityCreatedAt_new{
     color: #f88da0;
 }
+.MylistHeader-metaItem,.TagrepoItem-footerMeta,.TagrepoContainer-headerActionBack{
+    color: #aaa;
+}
+.MainMenuItem-active{
+    color: #99ccab;
+}
 
 /* ホバー */
 .Dropdown-button:hover,.ShareButton:hover,.ThreePointMenu-button:hover{
     background-color: #252525
 }
-a:hover{
+a:hover,.CommunityItem:hover .CommunityItem-name,.FollowingTagContainer-tagNameLink:hover,.ChannelItem:hover .ChannelItem-name{
     color: #46aa3d
 }
 
@@ -175,4 +222,11 @@ a:hover{
 .Snap.Dropdown.OtherMypageLinks,.ModalContent-body,.Selectbox{
     scrollbar-width: thin
 }
+
+/* カスタマイズ欄 */
+
+/*[[-----------]]*/
+  
+.NicorepoItem-activityDescription[style='color: rgb(208, 2, 27);']{ color: /*[[-------------]]*/ !important; }
+
 }

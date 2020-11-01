@@ -1,0 +1,974 @@
+/* ==UserStyle==
+@name           Smartschool Dark Mode
+@namespace      USO Archive
+@author         Brecht Van Acker Voorspoels
+@description    `<strong>Smartschool Dark Mode</strong>By <i>Brecht Van Acker Voorspoels</i>`
+@version        20201031.21.40
+@license        CC-BY-NC-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url(https://www.smartschool.be/) {
+/*© Brecht Van Acker Voorspoels*/
+/*login pagina*/
+.login-app__top {
+	background-color: #2f3136;
+}
+.hero-image-- {
+	display: none !important;
+}
+.login-app__smartschool-app {
+	background-color: #2f3136;
+    padding-bottom: 32px;
+}
+.login-app__title--separator {
+	color: #202225;
+}
+span, a {
+	color: white;
+}
+.login-app__link--password {
+	color: black;
+}
+.login-app__right {
+    margin: auto;
+}
+.login-app .smscButton {
+	background-color: #7289da !important;
+    border: none;
+}
+.login-app .smscButton:hover {
+	background-color: #7289da !important;
+    border: none;
+}
+.required, span {
+	color: white;
+}
+a.smscButton > span:nth-child(2) {
+	color: white;
+}
+.login-app__title--or {
+	color: white;
+}
+.float-label__input {
+	background-color: #2f3136;
+}
+.login-app__link {
+	color: white;
+}
+.login-app__link:hover {
+	color: #7289da;
+}
+.login-app__smartschool-app:hover {
+	color: #7289da;
+}
+.modern-ui .float-label__input + label > span {
+	color: white;
+}
+.login-app__platform-indicator {
+	background-color: #2f3136;
+    margin-bottom: 16px;
+}
+.login-app__left {
+	display: none;
+}
+/*Start*/
+.course__block__title {
+	color: white;
+}
+.input-search {
+	background-color: #2f3136 !important;
+}
+.js-search-filter fieldset legend {
+	color: #67db4d !important;
+}
+#topnavSearchFilter {
+	background-color: #2f3136;
+}
+.news__feed__button__content--title {
+	color: white;
+    text-decoration: none;
+}
+.news__feed__button__content--title:hover {
+	color: #7289da;
+    text-decoration: none;
+}
+.datepicker__cell__content {
+	color: white;
+}
+body, button, input, select, textarea {
+	color: white;
+}
+.homepage__block {
+    background-color: #2f3136;
+}
+.smsc-container--main, homepage__center {
+	background-color: #2f3136;
+}
+.homepage__right {
+	background-color: #2f3136;
+}
+.ssLink {
+	color: white;
+}
+.ssLink:hover {
+	color: #7289da;
+    text-decoration: none;
+}
+.datepicker__cell__content:hover {
+	background-color: #202225 !important;
+}
+.modern-ui .smsc-topnav .topnav, .smsc-topnav .topnav {
+	background: #202225 !important;
+}
+.smsc-topnav .topnav__menu {
+	background-color: #2e3338;
+    border: 1px solid #2f3136;
+}
+body.modern-ui .homepage__block:not(:last-child) {
+	border-bottom: 1px solid #202225;
+}
+body.modern-ui .homepage__center {
+	border-left: 1px solid #202225;
+	border-right: 1px solid #202225;
+}
+.datepicker__navigation__label {
+	color: white;
+}
+.scoodle-kit__kit__label {
+	color: white;
+}
+span {
+	color: white;
+}
+span, a {
+	color: white;
+}
+span, a:hover {
+    text-decoration: none;
+	color: #7289da;
+}
+span.scoodle-kit__kit__label:hover {
+	color: #7289da;
+}
+.topnav__badge {
+	color: white;
+}
+.smsc-topnav .topnav__badge {
+	background-color: #7289da;
+}
+.datapicker--today .datepicker--bold:hover {
+	background-color: #202225 !important;
+}
+.smsc-title--1 {
+	color: #67db4d !important;
+    font-weight: bold !important;
+}
+.ui-widget-content {
+	background: #202225;
+    border: none;
+}
+.smscButton.newsbutton.newsbutton--feeds {
+	background-color: #7289da;
+    border-color: #7289da;
+    color: white;
+}
+.modern-ui .smscButton:hover:not([disabled]) {
+	background-color: #7289da;
+}
+.smsc-topnav .topnav__menu-arrow::after {
+	border-color: #2f3136 transparent;
+}
+.smsc-contextmenu.position-bottom .smsc-contextmenu-arrow::after {
+	border-color: #2f3136 transparent;
+}
+.smscMain {
+	background-color: #2f3136 !important;
+    height: 100% !important;
+}
+.smsc-inlineeditor__editor:hover {
+	color: #7289da;
+    text-decoration: none !important;
+}
+span {
+	color: white;
+    text-decoration: none !important;
+}
+.js-course-filters {
+	background-color: #2f3136;
+}
+#homepage__block--1489 div p a img {
+	display: none;
+}
+.smsc-contextmenu-bubble {
+	background-color: #2f3136 !important;
+    border-color: #2f3136 !important;
+}
+a.menu-type:hover {
+	color: #7289da !important;
+    background-color: #2f3136 !important;
+}
+.course-ico {
+	background-color: #7289da !important;
+}
+.course-btnbar {
+	border: #7289da solid !important;
+}
+.topnav__menu__title {
+	color: white !important;
+}
+.datepicker--pointer {
+	color: white !important;
+}
+a.course__block.course__image:hover {
+	background-color: #202225 !important;
+    border-color: #202225 !important;
+}
+.menu-type.menu-linkbutton.smsc-linkbutton.smsc-linkbutton--icon.smsc-linkbutton--svg.smsc-linkbutton--24:hover {
+	color: #7289da !important;
+    background-color: #2f3136 !important;
+}
+.msg_button {
+	color: white;
+}
+.msg_button:hover {
+	color: #7289da;
+}
+.send-button {
+	background-color: #7289da !important;
+}
+.toolbarright {
+	background-color: #2f3136;
+}
+.resize-handle {
+	background-image: url(https://i.ibb.co/Hg5Dtdn/image.png) !important;
+}
+.postbox_link {
+	color: white;
+}
+.postbox_link:hover {
+	color: #7289da !important;
+}
+.messages__tree__add-button {
+	color: white;
+}
+.messages__tree__add-button:hover {
+	color: #7289da !important;
+    text-decoration: none;
+}
+.messageframe {
+	background-color: #2f3136;
+}
+.postbox_line {
+    margin: 1.333rem 0;
+    border-bottom: solid 1.5px #202225;
+}
+.sortlist__button {
+	background-color: #7289da !important;
+    border-color: #7289da !important;
+}
+.modern-ui .modern-message--selected, .modern-ui .modern-message--selected:hover {
+	background-color: #202225;
+}
+.modern-message:hover {
+	background-color: #202225 !important;
+}
+.course-link.hlp-vert-box:hover {
+	background-color: #202225 !important;
+    border-color: #202225;
+}
+.smsc-dropzone--init {
+	background-color: #202225;
+}
+.smsc-dropzone--ellipsis:hover {
+	color: #7289da;
+}
+.smsc-container--grey {
+	background-color: #292c2e !important;
+}
+.smsc-tree__item__title {
+	color: white !important;
+}
+.smsc-tree__item__title:hover {
+	color: #7289da !important;
+}
+.smsc-table__header.js-table-hdr {
+	background-color: #2f3136;
+}
+.smsc-table__sortable {
+	color: white !important;
+}
+.menu-linkbutton:hover {
+	background-color: #202225 !important;
+}
+/*Berichten*/
+.msgContent {
+	background-color: #2f3136 !important;
+    background: #2f3136 !important;
+}
+.msgContent strong {
+	background-color: #2f3136 !important;
+    color: white !important;
+}
+.msgContent em {
+	background-color: #2f3136 !important;
+    color: white;
+}
+.msgContent h1 {
+    color: white !important;
+}
+.msgContent h2 {
+    color: white !important;
+}
+.msgContent h3 {
+    color: white !important;
+}
+.msgContent h4 {
+    color: white !important;
+}
+.msgContent h5 {
+    color: white !important;
+}
+.msgContent h6 {
+    color: white !important;
+}
+.msgContent p {
+    color: white !important;
+    background: #2f3136 !important;
+}
+.msgContent span {
+    color: white !important;
+}
+.msgHeaderVal {
+	color: white !important;
+}
+.msgContentVal div {
+	color: #7289da !important;
+}
+.msgContentVal span {
+	background: none !important;
+}
+.attachment:hover {
+	background-color: #202225;
+}
+.attachment__title__label {
+	color: white !important;
+}
+.notifs-toaster__toast modern-ui {
+	background-color: #2f3136 !important;
+}
+.topnav__menuitem.topnav__menuitem--icon {
+	color: white;
+}
+.notifs-toaster__toast.modern-ui {
+	background-color: #2f3136;
+    border-color: #2f3136;
+}
+.notification:hover {
+	background-color: #202225 !important;
+}
+.ui-dialog-content.ui-widget-content {
+	color: white;
+}
+.coursesbutton {
+	background-color: #7289da !important;
+    border-color: #7289da !important;
+}
+.js-notifs-settingsbtn {
+	background-color: #7289da !important;
+    border-color: #7289da !important;
+}
+.js-notifs-clearbtn {
+	background-color: #f04747 !important;
+    border-color: #f04747 !important;
+}
+#contextMenu {
+	background-color: #2f3136;
+    border-color: #2f3136;
+}
+a.topnav__menuitem:hover {
+	background-color: #202225 !important;
+    border-color: #202225 !important;
+    color: white !important;
+}
+.tooltip__content {
+	display: none !important;
+}
+.tooltip__arrow {
+	display: none !important;
+}
+.msgContentVal a {
+	color: #7289da;
+}
+.datepicker__cell__content.datepicker--bold:hover {
+	background-color: #2f3136 !important;
+}
+.smscButton.red {
+	background-color: #f04747 !important;
+    border-color: #f04747 !important;
+}
+.userNotRead {
+	color: #f04747;
+}
+.menu-type {
+	color: white !important;
+    text-decoration: none !important;
+}
+.menu-item:hover {
+	background-color: #202225 !important;
+    color: #7289da !important;
+}
+.trans-layer {
+	background-color: #2f3136;
+    opacity: .5;
+}
+.smsc-select-option.item:hover {
+	background-color: #202225 !important;
+}
+.messageSearchPopup .ui-draggable {
+	background-color: #2f3136 !important;
+}
+.smsc-select-bubble {
+	background-color: #2f3136 !important;
+    border-color: #2f3136 !important;
+}
+.smsc-select {
+	color: white;
+}
+.smsc-select::before {
+	background-color: #7289da !important;
+}
+.ui-dialog-titlebar {
+	background-color: #2f3136;
+    border-color: #2f3136;
+}
+#smscSelectPanel_search_on_select > div:nth-child(1)::after {
+	border-color: #2f3136 transparent;
+}
+.ui-dialog {
+	background-color: #2f3136;
+}
+.message-search__wrapper {
+	background-color: #2f3136;
+}
+.message-search__select .smsc-select {
+	background-color: #2f3136;
+}
+.smsc-select-button.smscButton.blue {
+	background-color: #7289da;
+}
+.message-search__button {
+	background-color: #7289da !important;
+}
+.message-search__input {
+	background-color: #2f3136;
+}
+.smsc-topnav [data-notifs] .notifs__hdr [role="switch"] .switch-values::after {
+	background-color: #67db4d;
+}
+.smsc-topnav [data-notifs] .notifs__hdr [role="switch"][aria-checked="false"] .switch-values::after {
+	background-color: #f04747;
+}
+.smsc-topnav [data-notifs] .notifs__list:empty::after {
+	color: white;
+}
+.msgHeaderVal--sender {
+	color: #5c87ff !important;
+}
+.modern-message__name {
+	color: #5c87ff;
+}
+.tox-menubar {
+	background-color: #2f3136 !important;
+}
+.tox-mbtn.tox-mbtn--select:hover {
+	background-color: #202225 !important;
+}
+.tox-mbtn__select-label {
+	color: white !important;
+}
+.tox-mbtn__select-label:hover {
+	cursor: pointer;
+}
+.tox-split-button:hover {
+	border-color: #202225 !important;
+    cursor: pointer;
+}
+.tox-tbtn:hover {
+	cursor: pointer !important;
+}
+.tox-tbtn--bespoke:hover {
+	background-color: #2f3136 !important;
+}
+.tox-mbtn--select:hover {
+	cursor: pointer !important;
+}
+.tox-split-button__chevron:hover {
+	border-color: #202225 !important;
+}
+#toInput {
+	background-color: #2f3136;
+}
+.searchInputField {
+	background-color: #2f3136;
+}
+.composeUsers.pointer.composeUsers--max-height-limited.ui-droppable {
+	background-color: #2f3136;
+}
+.compose_subject {
+	background-color: #2f3136;
+}
+.subjectInput {
+	background-color: #2f3136;
+}
+.searchDivContent {
+	background-color: #2f3136;
+}
+.searchDivResult:hover {
+	background-color: #7289da;
+}
+.searchDivResult.selected {
+	background-color: #7289da;
+}
+.mce-content-body {
+	background-color: #2f3136;
+}
+.tox-tbtn--bespoke:hover {
+	background-color: #202225 !important;
+}
+.smsc-contextmenu-arrow::after {
+	border-color: #2f3136 transparent !important;
+}
+.smsc-table__header {
+	background-color: #2f3136 !important;
+}
+.tox-tbtn.tox-tbtn--select {
+	color: white;
+}
+.tox-tbtn.tox-tbtn--select:hover {
+	color: white;
+}
+.tox-toolbar__group.tox-tbtn:hover {
+	background-color: #202225;
+}
+.tox-toolbar {
+	background-color: #2f3136 !important;
+}
+.tox-tbtn:hover {
+	background-color: #202225 !important;
+}
+.tox-icon.tox-tbtn__icon-wrapsvg span, svg {
+	fill: white !important;
+}
+.tox-statusbar {
+	background-color: #2f3136 !important;
+    border-top: none !important;
+}
+.tabmain {
+	background-color: #2f3136 !important;
+}
+.js-focus-visible.modern-ui {
+	background-color: #2f3136;
+}
+.submit-button .smscButton .blue {
+	background-color: #2f3136;
+}
+.add-btn {
+	color: white !important;
+}
+.add-btn:hover {
+	color: #7289da !important;
+}
+.smsc-treeitem__label {
+	color: white !important;
+}
+.smsc-tabslist__item {
+	background-color: #2f3136 !important;
+}
+.folders_parent_table {
+	background-color: #202225;
+}
+.folders {
+	background-color: #292c2e;
+}
+#folders_parent_table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > div:nth-child(1) {
+	background-color: #292c2e;
+}
+#folders_parent_td {
+	background-color: #292c2e;
+}
+.modern-message__actions {
+	background-color: #2f3136 !important;
+}
+.modern-message__action:hover {
+	background-color: #202225 !important;
+    border-color: #202225 !important;
+}
+.ui-helper-clearfix {
+	background-color: #2f3136;
+}
+.ui-dialog {
+	border-color: #2f3136 !important;
+}
+.menu-divider::before {
+	background-color: #202225 !important;
+}
+.smscFrameTitle {
+	color: #67db4d !important;
+    padding: 0 !important;
+    background: #2f3136 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 15px !important;
+}
+.cf {
+	border-radius: 0 !important;
+    border: 0 !important;
+}
+.margin-top--milli {
+	background-color: #2f3136 !important;
+    box-shadow: none !important;
+}
+.smscAdminNav_body_linkdivTitle:hover {
+    color: #7289da !important;
+    text-decoration: none !important;
+}
+.smscAdminNav_body_linkdivText {
+	color: white;
+}
+.smscAdminNav_body .smscAdminNav_body_link .smscAdminNav_body_linkdivText.disabled .smscAdminNav_body_linkdivTitle:hover {
+	color: #ddd !important;
+}
+.modern-ui {
+	background-color: #2f3136;
+}
+#msglist > p:nth-child(3) > img:nth-child(1) {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
+    width: 52px;
+    height: 52px;
+    padding-left: 52px;
+}
+#msgdetail > p:nth-child(3) > img:nth-child(1) {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
+    width: 52px;
+    height: 52px;
+    padding-left: 52px;
+}
+#loadingLayer > img:nth-child(1) {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
+    width: 52px;
+    height: 52px;
+    padding-left: 52px;
+}
+.news--loading {
+	
+}
+.ssLinkBlue {
+	text-decoration: none;
+    color: #7289da;
+}
+.ssLinkBlue:hover {
+	text-decoration: none;
+    color: #7289da;
+}
+button.ui-button {
+	background-color: #f04747;
+    border-color: #f04747;
+}
+button.ui-button:hover {
+	background-color: #f04747;
+    border-color: #f04747;
+}
+.modern-ui.smscButton.blue {
+	background-color: #7289da !important;
+}
+.newsDialog__center > p:nth-child(1) {
+	
+}
+.draftSaved {
+	background-image: none;
+}
+.tox .tox-menubar + .tox-toolbar, .tox .tox-menubar + .tox-toolbar-overlord .tox-toolbar__primary {
+	border-top: 1px solid white;
+	margin-top: -1px;
+}
+.forum-row {
+	background-color: #2f3136;
+    color: white;
+}
+.forum-row:hover {
+	background-color: #2f3136;
+}
+.margin-top--milli > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) {
+	background-color: #2f3136;
+}
+.forum-link {
+	color: white !important;
+}
+.forum-link:hover {
+	color: #7289da !important;
+}
+.category-hdr {
+	background: #7289da !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+.js-listview-actionbtn {
+	background-color: #202225 !important;
+}
+[listview] .listview__row:hover:not(.listview__row--selected) .listview__cell:not(.listview__cell--select-btn) {
+	background-color: #202225;
+    color: #7289da;
+}
+.listview__cell-button {
+	text-decoration: none !important;
+}
+smsc-listview .smsc-table__header tr:hover td:not(.cb-container), smsc-listview table tr:hover td:not(.cb-container) {
+	background-color: #202225;
+}
+.loading--x-large {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
+    width: 52px;
+    height: 52px;
+    padding-left: 52px;
+}
+.action-button {
+	background-color: #202225 !important;
+}
+.smsc-linkbutton {
+	color: white;
+}
+.smsc-linkbutton:hover {
+	color: #7289da;
+    text-decoration: none;
+}
+.smsc-contextmenu__content {
+	background-color: #2f3136 !important;
+}
+.contextmenu__item.smsc-svg:hover {
+	background-color: #202225 !important;
+    border-color: #202225 !important;
+}
+.smsc-contextmenu__arrow--position-right::after {
+	border-color: transparent #2f3136 !important;
+}
+/*Leerlingvolgsysteem*/
+.content_container {
+	background-color: #2f3136;
+}
+.highcharts-background {
+	fill: #2f3136;
+}
+#mod_nav_center {
+	background-color: #2f3136;
+}
+.last a {
+	color: white !important;
+}
+.contentLoader {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
+    width: 52px;
+    height: 52px;
+    padding-left: 52px;
+}
+.toolbarLoader {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
+    width: 28px;
+    height: 28px;
+    padding-left: 28px;
+}
+.ltr {
+	color: white !important;
+}
+a.clicked {
+	color: #7289da !important;
+}
+.toolbar {
+	background-color: #2f3136;
+}
+.lvs_item_top {
+	background: #5c80ff;
+    border-color: #5c80ff;
+}
+.personalSettings_content {
+	background-color: #2f3136;
+    border: none;
+}
+.tabs li.current {
+	background: #2f3136;
+}
+.tabs .current span {
+	background: none !important;
+}
+.tabs li {
+	background: #2f3136;
+}
+.tabs span {
+	background-color: #202225;
+    background: none;
+}
+.tabContent {
+	border: none;
+}
+.pupil_nav_pupilinfo:hover {
+	color: #7289da;
+}
+.lvs-pupilpresences-row:hover {
+	background: #2f3136 !important;
+}
+.search_notes_schoolyearrow  {
+	color: white !important;
+}
+.search_notes_itemrow:hover {
+	cursor: default !important;
+}
+.voormiddag {
+	color: grey;
+}
+/*Agenda*/
+.navTitle {
+	color: #67db4d !important;
+}
+.border.centerxy {
+	background-color: #2f3136 !important;
+}
+.agenda_grid_header_day {
+	color: white !important;
+}
+.navigationContainer {
+	background-color: #2f3136 !important;
+}
+.hasDatepicker {
+	background-color: #2f3136;
+}
+.hasDatepicker:hover {
+	color: #7289da;
+}
+.border.centery.topy {
+	background-color: #2f3136;
+    background-image: none;
+}
+.border {
+	background-image: none;
+}
+.border.centerxy {
+	background-image: none;
+    border: none;
+}
+.border.centery.bottomy {
+	background-color: #2f3136;
+    border: none;
+}
+body {
+	background-color: #2f3136;
+}
+/*Fotoalbum*/
+.category a {
+	color: white;
+}
+.category a:hover {
+	color: #7289da;
+    text-decoration: none;
+}
+.nav {
+	background: #5c80ff;
+    border: #5c80ff;
+}
+.album_title {
+	background: #5c80ff !important;
+    border: #5c80ff !important;
+}
+
+/*Mijn leerlingfiche*/
+.smscBlockContainer_top {
+	background-color: #2f3136;
+    box-shadow: none;
+}
+.smscBlockContainer_left {
+	background-color: #2f3136;
+    box-shadow: none;
+}
+.smscBlockContainer_right {
+	background-color: #2f3136;
+    box-shadow: none;
+}
+.titleLeft {
+	background-color: #2f3136 !important;
+    color: white !important;
+}
+.titleRight {
+	background-color: #2f3136 !important;
+    color: white !important;
+    border: none !important;
+}
+.titleRight:hover {
+    color: #7289da !important;
+}
+.message_sender:hover {
+	color: #7289da !important;
+}
+.lvsitem_title:hover {
+    color: #7289da !important;
+}
+/*Vakken*/
+.smscleftnavcontainer {
+	background-color: #2f3136 !important;
+    border-color: #2f3136 !important;
+}
+.smsc-column-nav__button {
+	color: white !important;
+}
+.smsc-column-nav__button:hover {
+	background-color: #202225;
+    border: none;
+}
+.smsc_cm_link {
+	color: white
+}
+.breadcrumb_url a {
+	color: white;
+}
+.breadcrumb_url a:hover {
+	color: #7289da !important;
+}
+.uploadzone.margin-top--milli tbody tr td {
+	background: none;
+}
+.treecollapse {
+	background-image: none;
+}
+.treecollapse a {
+	color: white;
+}
+.treecollapse a:hover {
+	color: #7289da;
+}
+.smscFrameTitleContainer {
+	background-color: #2f3136;
+}
+.icon-label--16 {
+	color: #7289da !important;
+}
+/*Handleiding*/
+#manual_searchbox {
+	background-color: #2f3136;
+}
+}

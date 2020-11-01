@@ -1,0 +1,549 @@
+/* ==UserStyle==
+@name           Instagram Dark Theme (+Widescreen DM Fix)
+@namespace      USO Archive
+@author         Lexan
+@description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct MessagesIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
+@version        20201031.16.54
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("instagram.com") {
+/* Instagram Dark Theme v0.1*/
+/* Created by Lexan*/
+
+/*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
+._6FEQj{
+	background: var(--dm-blue);
+}
+
+/* Dark Scrollbar*/
+::-webkit-scrollbar,
+ ::-webkit-scrollbar-corner,
+ ::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
+    background: #222 !important;
+  }
+::-webkit-scrollbar-button,
+ ::-webkit-scrollbar-button {
+    display: none !important;
+  }
+::-webkit-scrollbar-thumb,
+ ::-webkit-scrollbar-thumb {
+    background: #444 !important;
+  }
+::-webkit-scrollbar-thumb:not(:active):hover,
+ ::-webkit-scrollbar-thumb:not(:active):hover {
+    background: #383838 !important;
+  }
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover:active,
+ ::-webkit-scrollbar-thumb:active,
+ ::-webkit-scrollbar-thumb:hover:active {
+    background: #5c5c5c !important;
+  }
+
+/*Variables*/
+:root {
+    --bg-color: #0F0F0F;
+    --bg2-color: #141414;
+	--bg3-color: #222;
+    --text-color: #fff;
+    --text-darken-color: #ddd;
+    --text-darken2-color: #aaa;
+    --dm-blue: #0F92EA;
+    --border-color: #1d1d1d;
+}
+
+/*Toolbar*/
+._lz6s.Hz2lF{
+	background-color: var(--bg3-color) !important;
+    border-bottom: none;
+}
+
+.s4Iyt {
+	filter: invert(1);
+}
+
+._8-yf5 {
+	filter: invert(1);
+}    
+
+.Di7vw{
+    background-color: none;
+    border: none;
+    transition: .4s;
+}
+
+.pbgfb.Di7vw{
+    background-color: var(--bg2-color);
+    transition: .4s;
+}
+
+.LWmhU._0aCwM{
+    background-color: var(--bg2-color);
+    transition: .4s;
+}
+
+.XTCLo{
+    background-color: var(--bg2-color);
+    transition: .4s;
+    border: #555;
+    color: var(--text-darken2-color);
+}
+
+.XTCLo.x3qfX{
+    transition: .4s;
+}
+
+/*Footer*/
+._8Rna9{
+    background-color: var(--bg3-color);
+}
+
+/*Main app*/
+.SCxLW.o64aR{
+    background-color: var(--bg-color) !important;
+}
+
+.VideM{
+    background-color: var(--bg2-color);
+    border: none;
+}
+
+.eebAO{
+    color: var(--text-color);
+}
+
+.Ppjfr{
+    background-color: var(--bg2-color) !important;
+}
+
+.UE9AK{
+    border-bottom: none;
+}
+
+._3MPWk, ._8Rm4L, .zMhqu, .KQA-S, ._1MzIy{
+    border: none;
+}
+
+.yWX7d._8A5w5, a.yWX7d._8A5w5, a.yWX7d._8A5w5:visited{
+    color: var(--text-color);
+}
+
+.L_LMM.ePUX4 .eo2As{
+    background-color: var(--bg2-color);
+}
+
+.vcOH2{
+    color: var(--text-darken-color);
+}
+
+a.FPmhX.MBL3Z{
+    color: var(--text-darken-color);
+}
+
+._8Pl3R{
+    color: var(--text-darken2-color);
+}
+
+.Ypffh{
+    color: var(--text-color);
+}
+
+.sH9wk{
+    border-top: none;
+}
+
+.mt3GC{
+    background-color: var(--bg2-color);
+}
+
+.aOOlW:hover{
+    background-color: var(--bg3-color);
+    transition: .1s;
+}
+
+.aOOlW{
+    border-top: none;
+}
+
+.aOOlW.HoLwm{
+    color: var(--text-color);
+}
+
+._1XyCr{
+    background-color: var(--bg2-color);
+}
+
+._8UZ6e{
+    background-color: var(--bg3-color);
+}
+
+.gmFkV, .gmFkV:visited, .gmFkV:active, .gmFkV:focus, .gmFkV:hover{
+    color: var(--text-color);
+}
+
+/*Individual Post*/
+.ltEKP .QBXjJ{
+    border: none;
+}
+
+._8-yf5[d="M 34.6 3.1 c -4.5 0 -7.9 1.8 -10.6 5.6 c -2.7 -3.7 -6.1 -5.5 -10.6 -5.5 C 6 3.1 0 9.6 0 17.6 c 0 7.3 5.4 12 10.6 16.5 c 0.6 0.5 1.3 1.1 1.9 1.7 l 2.3 2 c 4.4 3.9 6.6 5.9 7.6 6.5 c 0.5 0.3 1.1 0.5 1.6 0.5 s 1.1 -0.2 1.6 -0.5 c 1 -0.6 2.8 -2.2 7.8 -6.8 l 2 -1.8 c 0.7 -0.6 1.3 -1.2 2 -1.7 C 42.7 29.6 48 25 48 17.6 c 0 -8 -6 -14.5 -13.4 -14.5 Z"]{
+	filter: invert(0) !important;
+}
+
+.JyscU.ePUX4 .UE9AK{
+    background-color: var(--bg3-color) !important;
+    border-left: none;
+    border-bottom: none;
+}
+
+.JyscU.ePUX4 .eo2As{
+    border-left: none;
+    border-top: none;
+}
+
+.C4VMK{
+    color: var(--text-darken2-color);
+}
+
+a, a:visited{
+    color: var(--dm-blue);
+}
+
+.JyscU .Slqrh{
+    border-top: none;
+}
+
+.XQXOT{
+    background-color: var(--bg-color);
+}
+
+.Nm9Fw{
+    color: var(--text-color);
+}
+
+.cqXBL, .cqXBL:visited{
+    color: var(--text-color);
+}
+
+/*Profile*/
+.-vDIg{
+    color: var(--text-darken-color);
+}
+
+.-nal3, .-nal3:active, .-nal3:visited, .-nal3:hover{
+    color: var(--text-darken-color);
+}
+
+.g47SY{
+    color: var(--text-color);
+}
+
+.eXle2{
+    color: var(--text-color);
+}
+
+.Kf8kP{
+	filter: invert(1);
+}    
+
+.Kf8kP, .LA45P{
+	filter: invert(1);
+}
+
+.fx7hk{
+    border-top: 1px solid #333;
+}
+
+.T-jvg{
+    border-top: 1px solid #fff;
+}
+
+a.T-jvg, a.T-jvg:visited{
+    color: var(--text-color);
+}
+
+.felixSpriteProfileChannelNullState{
+	filter: invert(1);
+}
+
+/*Instagram DMs*/
+.t30g8{
+    background-color: var(--bg-color);
+}
+
+.pV7Qt._6Rvw2.Igw0E.IwRSH.YBx95.ybXk5._4EzTm.i0EQd{
+    max-width: 100% !important;
+    border: 2px solid var(--bg3-color);
+}
+
+.S-mcP{
+    background-color: var(--bg3-color);
+    border: none;
+}
+
+._7UhW9.vy6Bb.qyrsm.KV-D4.fDxYl{
+    color: var(--text-color);
+    background: none;
+}
+
+.hjZTB{
+    color: var(--text-color) !important;
+}
+
+.uueGX{
+    background-color: var(--bg-color);
+}
+
+.X3a-9 textarea{
+    color: var(--text-color);
+}
+
+.X3a-9{
+    background-color: var(--bg3-color);
+    border: none;
+    box-shadow: rgba(15, 15, 15, 0.5) 0px 0px 0px 1px, rgba(15, 15, 15, 0.5) 0px 2px 4px;
+}
+
+.CMoMH{
+    border: 1px solid #666;
+}
+
+.emXTk{
+    background-color: var(--bg2-color);
+    border-bottom: none;
+}
+
+a.k8Vux, a.k8Vux:visited{
+    color: var(--text-color);
+}
+
+.N9abW{
+    background: var(--bg-color) !important;
+}
+
+.rOtsg{
+    background-color: var(--bg-color);
+}
+
+.snXeX{
+    border-bottom: 1px solid var(--text-color);
+}
+
+.-qQT3:hover{
+    background-color: var(--bg3-color) !important;
+    transition: .1s;
+}
+
+.KV-D4{
+    color: var(--text-color);
+}
+
+._0PwGv{
+    color: var(--text-darken2-color);
+}
+
+.nGS-Y{
+    background-color: var(--bg-color);
+}
+
+.glyphsSpriteDirect__outline__96, .glyphsSpriteDownload_2FAC{
+	filter: invert(1);
+}    
+
+.rSxHQ{
+    border-color: var(--bg-color);
+}
+
+.DPiy6{
+    background-color: var(--bg-color) !important;
+}
+
+.oNO81{
+    border-right: 1px solid #333;
+    background-color: var(--bg-color);
+}
+
+.emXTk::before{
+    border-bottom: none;
+}
+
+.L3NKy, a.L3NKy, a.L3NKy:visited{
+    background-color: var(--dm-blue);
+    color: var(--text-color);
+    border: none;
+}
+
+.TNiR1{
+    color: var(--text-color);
+}
+
+.iHqQ7{
+    background-color: var(--bg3-color);
+}
+
+/*Emoji Reactions*/
+._9BIwZ{
+    background-color: #444;
+    border: none;
+}
+
+._01UL2{
+    background-color: var(--bg2-color);
+}
+
+.TOh1s{
+    background: none;
+}
+
+.AvhYw{
+    background-color: var(--bg2-color);
+}
+
+.uo5MA{
+    background-color: var(--bg2-color);
+}
+
+/*DMs - Sending images*/
+.eiUFA{
+    background-color: var(--bg3-color);
+    border-bottom: none;
+}
+
+.m82CD{
+    color: var(--text-color);
+}
+
+.HVWg4{
+    background-color: var(--bg3-color);
+}
+
+/*Notifications*/
+.yrJyr, .yrJyr:visited, .YFq-A{
+    color: var(--text-color);
+}
+
+/*Settings*/
+.PVkFi{
+    background-color: var(--bg2-color);
+}
+
+.kHYQv{
+    color: var(--text-color);
+}
+
+.JLJ-B{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}
+
+.JLJ-B:focus, .p7vTm:focus, .yg1DH:focus {
+    border: 2px solid #333 !important;
+}
+
+.wW1cu{
+    background-color: var(--bg-color);
+    border-right: none;
+}
+
+.sxIVS{
+    color: var(--text-color);
+}
+
+.BvMHM{
+    border: 1px solid #333;
+}
+
+.h-aRd, .h-aRd:visited, .h-aRd:hover, .h-aRd:active{
+    color: var(--text-color);
+}
+
+.-HRM-{
+    border-left-color: var(--text-color);
+}
+
+.fuQUr:hover{
+    background-color: var(--bg3-color);
+    transition: .1s;
+}
+
+.p7vTm{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}
+
+.F0B8Y{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}
+
+.AC7dP{
+    color: var(--text-darken2-color);
+}
+
+.tlZCJ:checked~.mwD2G::before{
+    border-left: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+.RO68f{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-color);
+}
+
+.QXEMa, .kHYQv{
+    color: var(--text-color);
+}
+
+._9MPbZ{
+    color: var(--text-color) !important;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.PLphk{
+    color: var(--text-color);
+}
+
+.nsKSz{
+    color: var(--text-color);
+}
+
+.KVrxL{
+    color: var(--text-darken2-color);
+}
+
+.SZRPf{
+    color: var(--text-darken2-color);
+}
+
+.CcMMZ{
+    color: var(--text-darken2-color);
+}
+
+.ufStW{
+    color: var(--text-color);
+}
+
+.oxbtc{
+    color: var(--text-color);
+}
+
+.JKd3m{
+    color: var(--text-darken2-color);
+}
+
+.vlbOS{
+    color: var(--text-darken2-color);
+}
+
+.P5eiA{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}
+}

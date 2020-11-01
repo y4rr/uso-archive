@@ -3,24 +3,24 @@
 @namespace      USO Archive
 @author         tukusejssirs
 @description    `Dark theme for workona.com`
-@version        20201030.13.49
+@version        20201031.18.25
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix(https://workona.com) {
 /* Main space background */
-.app, ._2jeXtzABUskiV3epT_mV16 {
+.app, ._2jeXtzABUskiV3epT_mV16, ._1B07DczOsH0lLKXSUKKLSv {
 	background: #000000 !important;
 }
 
-/* Context menus, tabs list and popups	 background colour */
+/* Context menus, tabs list and popups background colour */
 ._3sltFBVBoMEsYM854YBJBf, ._14zN2To0Vr4ObISm0xpjUl, ._3xx-hM_fYDCpigf65kf6CG, ._3irQB9Tv18T_XmnsCBQ3rF,
 .dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._2UgL7qBuTYlPeBMIv3Z44a, ._19WklTkm6zF3OwDBD-TkyC, ._2y4UB7JoIIMx_mHGLneqZk, .UpWcfG5YipBjRVGTZ7mh3, ._72TFG8gHnPcEg0mSsHlNF, ._3RftQo69y1bWp4mlOm-PJi, ._3z-5ASxElLkMufBKh557vK {
 	background: #1e1e1e !important;
 }
 
-/* Foreground colour (main colour and placeholder colour) */
-.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._3iUg1tZYNsBSwhqmAXm8Zu, ._13Hjg8UL7yInNWmASkLjoj {
+/* Foreground colour (main text and placeholder) */
+.dNnn60S2BTE7NEfnPoVJZ:hover, ._1huIutIXFnXbWly3-8gzrN, ._3iUg1tZYNsBSwhqmAXm8Zu, ._13Hjg8UL7yInNWmASkLjoj, ._2kRbqWMhyJB1R51jTa19LL, ._2j42J7zEfGyX8f6i760A9Y {
 	color: #cccccc !important;
 }
 
@@ -126,5 +126,10 @@ body, ._1gJ_NYaKZe2lAgqgtY3yDn {
 /* Tab handle in tab list that is used to re-order the tabs */
 ._15h5M7nKRx9TIS-dHwx5QI {
 	filter: invert(100%);
+}
+
+/* Darken the tab images on unnamed workspaces and folder images on workspaces without open tabs */
+._2XKZpLLi4sxYN4SUe88Ntg, ._3-zAr9MbJSVOGq8zKmW0MM {
+	filter: invert(95%);
 }
 }

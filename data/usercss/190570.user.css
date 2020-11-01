@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページはよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード5を削除していただくことで元に戻ります。--どうにもならなかった箇所について--・コメント欄上の広告、ギフトホバー時の背景色（いじっても効果がありませんでした…）`
-@version        20201030.14.55
+@version        20201031.17.1
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -97,7 +97,7 @@
     display: none !important;
 }
 /* 文字 */
-.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,li,.count{
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,li,.count,.___description___3aLzk[aria-expanded="false"],.___description___3aLzk{
     color: #ddd !important;
 }
 
@@ -187,6 +187,38 @@ body{
     background-color: #333;
     border: solid 2px #5a5a5a;
 }
+
+
+/* フォローしてるチャンネルがどうたらこうたら */
+.___alert-dialog___ZUyHx{
+    background-color: #4d4d4d;
+}
+.___label___1BdfS{
+    color: #ddd;
+}
+.___close-button___JVdVr:enabled:hover{
+    background-color: #464646;
+}
+.___toggle-button___1Y6i2[aria-pressed="false"],___follow-status___2lNEX{
+    background-color: #404040;
+}
+.___toggle-button___1Y6i2[aria-pressed="true"]{
+    background-color: #757575;
+    border: 2px solid #717171;
+}
+
+/* 説明欄の謎ボタン */
+.___description___3aLzk[aria-expanded="false"] .___expand-button___S8O-B{
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#4f4f4f 16%);
+}
+.___channel-page-anchor___MM9Ik{
+    background-color: #333;
+    border: 1px solid #5a5a5a;
+}
+.___footer-area___294Um{
+    background-color: #252525 !important;
+}
+
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{
     color: #ccc !important

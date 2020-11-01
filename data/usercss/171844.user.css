@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         D.D.D.
 @description    `Aims to make Fandom.com wikis cleaner on desktop.`
-@version        2020829.4.13
+@version        20201031.12.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -68,6 +68,7 @@ div.WikiaPage div.WikiaPageContentWrapper {display:block;width:80%;float:right;}
   nav.wds-community-header__local-navigation div.wds-tabs__tab-label svg {display:none!important;visibility:hidden!important;height:0px!important;width:0px!important;opacity:0!important;fill:rgba(0,0,0,0)!important;}
   .wds-dropdown::after,.wds-dropdown::before {content:none!important;display:none!important;}
   nav.wds-community-header__local-navigation {height:auto!important;}
+  div[id*="AutocompleteContainter"] {background-color:white!important;}
   ul[id*="Autocomplete"] li {font-size:10pt;height:auto;line-height:0.8;}
   ul[id*="Autocomplete"] li a {font-size:10pt;height:auto;line-height:0.8;}
   ul[id*="Autocomplete"] li a strong {font-size:10pt;height:auto;line-height:0.8;}

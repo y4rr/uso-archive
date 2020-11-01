@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Aleph0
 @description    `A dark style for reading <a href="https://www.theregister.co.uk/">The Register</a> at night.`
-@version        2020102.2.49
+@version        2020111.0.26
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -288,17 +288,17 @@ body #page {
 .EmbeddedTweet-tweet , .EmbeddedTweet-ancestor {
 	   background: #222;
 }
-#article #body :not(.wptl):not(.CaptionedImage):not(.promo_article) a:link {
-	color: #0ac;
-}
 #article #body .wptl.top a, #article #body .wptl.btm a {
 	color: #25a;
+}
+/*#article #body :not(.wptl):not(.CaptionedImage):not(.promo_article) a:link {
+	color: #0ac;
 }
 #article #body :not(.wptl):not(.CaptionedImage):not(.promo_article) a:hover, #article #body :not(.wptl):not(.CaptionedImage):not(.promo_article) a:focus {
 	color: white;
 	background: #0066cc;
 	outline: 0.05em solid #0066cc;
-}
+}*/
 body.DYNX #crumb_trail a.dcl h4 , body[data-pagetype="Archive"] #main-col #archive h2 a:link {
 	color: #c00;
 }
@@ -461,6 +461,10 @@ a.row_title_link.has_lateral_ornaments, h4.dcl a.has_lateral_ornaments {
     filter: invert(1);
 }
 
+/* Articles - 2020 restyling */
+#article_body_btm{
+    border-bottom:1px solid #333;
+}
 
 /* "Most Read" section on stories and homepage */
 body[data-pagetype] #right-col #hot {
