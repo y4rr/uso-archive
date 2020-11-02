@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/QYdhDnpb`
-@version        2020111.14.12
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/WZjK9hvy`
+@version        2020112.10.56
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1867,7 +1867,7 @@ span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; f
 .mobile.newpost__label_top {background: var(--theme_default_link) !important; border-radius: 50%; box-shadow: 0 2px 8px -4px var(--theme_default_link); color: var(--theme_default_altbtntext) !important; font-size: 0 !important; padding: 9px 15px !important; position: fixed; right: 2%; bottom: 8px; height: 55px; width: 55px; transition: .1s; z-index: 980;}
 .mobile.newpost__label_top:hover {background: var(--theme_default_hover) !important; box-shadow: 0 2px 8px -4px var(--theme_default_hover);}
 .mobile.newpost__label_top::before {content: "create"; font: 28px/36px 'Material Icons';}
-.mobile.newpost__label_top::after {content: ""; display: block; height: 50px; width: 20%; position: fixed; right: 0; bottom: 0;}
+.mobile.newpost__label_top::after {border-radius: 0 28px 28px 0; content: ""; display: block; height: 55px; width: 16%; position: fixed; right: 2%; bottom: 8px;}
 
 #postform {animation: open .1s ease-out; height: calc(100vh); padding: 5px 10px 125px; overflow: auto;}
 #postform > hr, footer .newpost, .boardname + hr {display: none;}

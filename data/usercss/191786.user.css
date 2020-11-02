@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Nayr438
 @description    `A custom Stylus Theme for The Linus Tech Tips Forum. Will work with light or dark theme.`
-@version        2020112.0.28
+@version        2020112.0.39
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           linustechtips.com - 11/1/2020, 7:45:48 AM
 @namespace      https://github.com/Nayr438/ltt_stylus_theme
-@version        1.1.2
+@version        1.1.4
 @description    A new userstyle
 @author         Nayr438
 ==/UserStyle== */
@@ -87,6 +87,7 @@
     .ipsDataList_large .ipsDataItem_main,
     .ipsDataList_large .ipsDataItem_stats,
     .ipsDataList_large .ipsDataItem_lastPoster,
+    .ipsDataList_large .ipsDataItem_lastPoster\:flex,
     .ipsDataList_large .ipsDataItem_generic {
         padding: 10px;
     }
@@ -117,7 +118,7 @@
 
     /* Forum Home Section Last Post User Image */
     .ipsDataItem_lastPoster .ipsUserPhoto {
-        margin: 5px 10px 0px -50px;
+        margin: 0px 10px 0px -50px;
     }
 
     /* Forum home Section Last Post */
@@ -135,13 +136,7 @@
         padding: 10px;
     }
 
-    .ipsDataList_large .ipsDataItem_main,
-    .ipsDataList_large .ipsDataItem_stats,
-    .ipsDataList_large .ipsDataItem_lastPoster,
-    .ipsDataList_large .ipsDataItem_lastPoster\:flex,
-    .ipsDataList_large .ipsDataItem_generic {
-        padding: 10px;
-    }
+
 
     /* Subforum and sidebar Seperator */
     .ipsDataItem {
@@ -260,22 +255,13 @@
         padding: 6px !important;
     }
 
+
     /* Element below this line seem to no longer be needed */
     /* Left for future refrence */
     /* Member Stats */
     /*
     .ipsWidget_stats {
         padding: 10px;
-    }
-    */
-    /*
-    .ipsPhotoPanel > .ipsUserPhoto {
-        margin: 0px;
-    }
-    */
-    /*
-    .ipsPadding\:half {
-        padding: 5px !important;
     }
     */
     /*
@@ -293,7 +279,6 @@
     .ipsApp .ipsButton_large {
         line-height: 2.5;
     }
-    
     
     /*
     .ipsFieldRow:not(:last-child) {

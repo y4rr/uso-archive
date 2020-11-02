@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct MessagesIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2020111.14.28
+@version        2020112.10.57
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* Instagram Dark Theme v1.1*/
+/* Instagram Dark Theme v1.2*/
 /* Created by Lexan*/
 
 /*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
@@ -54,10 +54,15 @@
     --border-color: #1d1d1d;
 }
 
+body {
+    background: var(--bg-color);
+}
+
 /*Toolbar*/
 ._lz6s.Hz2lF{
 	background-color: var(--bg3-color) !important;
     border-bottom: none;
+    box-shadow: rgba(15, 15, 15, 0.5) 0px 0px 0px 1px, rgba(15, 15, 15, 0.5) 0px 4px 4px;
 }
 
 .s4Iyt {
@@ -97,6 +102,49 @@
 
 .jLuN9{
     background-color: var(--bg3-color);
+}
+
+.MWDvN{
+    max-width: 1200px;
+}
+
+.LWmhU{
+    max-width: 500px;
+    width: 500px;
+}
+
+.drKGC{
+    width: 400px;
+    box-shadow: rgba(15, 15, 15, 0.5) 0px 0px 0px 1px, rgba(15, 15, 15, 0.5) 0px 2px 4px;
+    left: 35%;
+    background-color: var(--bg2-color);
+    border: none;
+}
+
+.VR6_Q{
+    background-color: var(--bg2-color);
+    border: none;
+}
+
+.yCE8d{
+    border-bottom: none;
+}
+
+.Fy4o8{
+    color: var(--text-darken2-color);
+}
+
+.JvDyy{
+    background-color: #333;
+    transition: .1s;
+}
+
+.Ap253{
+    color: var(--text-color);
+}
+
+.drKGC::after{
+    display: none;
 }
 
 /*Footer*/
@@ -187,10 +235,6 @@ a.FPmhX.MBL3Z{
     color: var(--text-color);
 }
 
-.JSZAJ, .IjCL9{
-    background-color: var(--bg2-color) !important;
-}
-
 ._97aPb{
     background-color: var(--bg2-color) !important;
 }
@@ -199,13 +243,19 @@ a.O4GlU, a.O4GlU:visited{
     color: var(--text-darken2-color);
 }
 
+.ByB5K{
+    background-color: var(--bg3-color);
+    border-top: none;
+}
+
 /*Individual Post*/
 .ltEKP .QBXjJ{
     border: none;
 }
 
-._8-yf5[d="M 34.6 3.1 c -4.5 0 -7.9 1.8 -10.6 5.6 c -2.7 -3.7 -6.1 -5.5 -10.6 -5.5 C 6 3.1 0 9.6 0 17.6 c 0 7.3 5.4 12 10.6 16.5 c 0.6 0.5 1.3 1.1 1.9 1.7 l 2.3 2 c 4.4 3.9 6.6 5.9 7.6 6.5 c 0.5 0.3 1.1 0.5 1.6 0.5 s 1.1 -0.2 1.6 -0.5 c 1 -0.6 2.8 -2.2 7.8 -6.8 l 2 -1.8 c 0.7 -0.6 1.3 -1.2 2 -1.7 C 42.7 29.6 48 25 48 17.6 c 0 -8 -6 -14.5 -13.4 -14.5 Z"]{
+._8-yf5 [d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"]{
 	filter: invert(0) !important;
+    fill: #12B6A9 !important;
 }
 
 .JyscU.ePUX4 .UE9AK{
@@ -281,8 +331,12 @@ a, a:visited{
     overflow: hidden;
 }
 
-._8-yf5[d="M 41.8 9.8 L 27.5 24 l 14.2 14.2 c 0.6 0.6 0.6 1.5 0 2.1 l -1.4 1.4 c -0.6 0.6 -1.5 0.6 -2.1 0 L 24 27.5 L 9.8 41.8 c -0.6 0.6 -1.5 0.6 -2.1 0 l -1.4 -1.4 c -0.6 -0.6 -0.6 -1.5 0 -2.1 L 20.5 24 L 6.2 9.8 c -0.6 -0.6 -0.6 -1.5 0 -2.1 l 1.4 -1.4 c 0.6 -0.6 1.5 -0.6 2.1 0 L 24 20.5 L 38.3 6.2 c 0.6 -0.6 1.5 -0.6 2.1 0 l 1.4 1.4 c 0.6 0.6 0.6 1.6 0 2.2 Z"]{
-    display: none !important;
+._8-yf5 [d="M 41.8 9.8 L 27.5 24 l 14.2 14.2 c 0.6 0.6 0.6 1.5 0 2.1 l -1.4 1.4 c -0.6 0.6 -1.5 0.6 -2.1 0 L 24 27.5 L 9.8 41.8 c -0.6 0.6 -1.5 0.6 -2.1 0 l -1.4 -1.4 c -0.6 -0.6 -0.6 -1.5 0 -2.1 L 20.5 24 L 6.2 9.8 c -0.6 -0.6 -0.6 -1.5 0 -2.1 l 1.4 -1.4 c 0.6 -0.6 1.5 -0.6 2.1 0 L 24 20.5 L 38.3 6.2 c 0.6 -0.6 1.5 -0.6 2.1 0 l 1.4 1.4 c 0.6 0.6 0.6 1.6 0 2.2 Z"]{
+    fill: #000 !important;
+}
+
+._4l6NB{
+    background-image: none;
 }
 
 /*Profile*/
@@ -399,6 +453,83 @@ a.T-jvg, a.T-jvg:visited{
 
 .Rebts{
     color: var(--text-color);
+}
+
+.tHaIX{
+    background-color: var(--bg2-color);
+}
+
+.Dw_ki{
+    background-color: var(--bg3-color);
+    border-bottom: none;
+}
+
+.GdeD6{
+    border: none;
+}
+
+.glyphsSpriteCamera__outline__24__grey_9{
+	filter: invert(1);
+}
+
+.-wdIA{
+    border-color: var(--text-darken2-color);
+}
+
+/*Livestreams*/
+.inl0k{
+    background-color: var(--bg3-color);
+    border-bottom: none;
+}
+
+.HzUuk{
+    background-color: var(--bg-color);
+}
+
+._8-yf5 [d="M3.267 24.652C8.32 14.772 15.156 9.94 23.905 9.94c8.761 0 15.768 4.847 21.136 14.745a1.47 1.47 0 102.583-1.401C41.774 12.496 33.83 7 23.905 7 13.97 7 6.175 12.51.651 23.314a1.47 1.47 0 002.616 1.338z"]{
+    fill: #000 !important;
+	fill-opacity: 1;
+}
+
+._8-yf5 [d="M24.245 16.796c.782 0 1.546.078 2.285.227l-.022.02a6.367 6.367 0 109.02 8.977c.149.739.227 1.503.227 2.286 0 6.357-5.153 11.51-11.51 11.51s-11.51-5.153-11.51-11.51 5.153-11.51 11.51-11.51z"]{
+    fill: #000 !important;
+	fill-opacity: 1;
+}
+
+._8-yf5 [d="M41.1 9.1l-15 15L41 39c.6.6.6 1.5 0 2.1s-1.5.6-2.1 0L24 26.1l-14.9 15c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2.1l14.9-15-15-15c-.6-.6-.6-1.5 0-2.1s1.5-.6 2.1 0l15 15 15-15c.6-.6 1.5-.6 2.1 0 .6.6.6 1.6 0 2.2z"]{
+    fill: #000 !important;
+}
+
+._3vJS{
+    border-top: none;
+    background-color: var(--bg2-color);
+}
+
+.x5TBw{
+    border-top: none;
+    background-color: var(--bg2-color);
+}
+
+.eDd9Z{
+    background-color: var(--bg3-color);
+    border: none;
+}
+
+.eDd9Z textarea{
+    color: var(--text-color);
+}
+
+/*Explore Page*/
+._8-yf5.edmGD [d="M9.6 46.5c-1 0-2-.3-2.9-.8-1.8-1.1-2.9-2.9-2.9-5.1V7.3c0-2.1 1.1-4 2.9-5.1 1.9-1.1 4.1-1.1 5.9 0l30.1 17.6c1.5.9 2.3 2.4 2.3 4.1 0 1.7-.9 3.2-2.3 4.1L12.6 45.7c-.9.5-2 .8-3 .8z"]{
+
+}
+
+._8-yf5.edmGD [d="M 34.8 29.7 V 11 c 0 -2.9 -2.3 -5.2 -5.2 -5.2 H 11 c -2.9 0 -5.2 2.3 -5.2 5.2 v 18.7 c 0 2.9 2.3 5.2 5.2 5.2 h 18.7 c 2.8 -0.1 5.1 -2.4 5.1 -5.2 Z M 39.2 15 v 16.1 c 0 4.5 -3.7 8.2 -8.2 8.2 H 14.9 c -0.6 0 -0.9 0.7 -0.5 1.1 c 1 1.1 2.4 1.8 4.1 1.8 h 13.4 c 5.7 0 10.3 -4.6 10.3 -10.3 V 18.5 c 0 -1.6 -0.7 -3.1 -1.8 -4.1 c -0.5 -0.4 -1.2 0 -1.2 0.6 Z"]{
+    box-shadow: rgba(15, 15, 15, 0.5) 0px 0px 0px 1px, rgba(15, 15, 15, 0.5) 0px 2px 4px !important;
+}
+
+.BcNgP{
+    filter: invert(1);
 }
 
 /*Instagram DMs*/
@@ -703,6 +834,23 @@ a.k8Vux, a.k8Vux:visited{
 
 .olLwo{
     color: var(--text-color);
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background-color: var(--bg3-color);
+}
+
+.glyphsSpriteError__outline__24__grey_9{
+    filter: invert(1);
+}
+
+.glyphsSpriteLocation__outline__24__grey_9, .glyphsSpriteLock__outline__24__grey_9{
+    filter: invert(1);
+}
+
+/*Nametag*/
+.eShHj{
+    background-color: var(--dm-blue) !important;
 }
 
 /*Sign in*/

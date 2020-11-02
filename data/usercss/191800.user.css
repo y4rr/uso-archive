@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Kirill Troitskij
 @description    `Темная тема для электронного дневника МЭШ - Московской электронной школы`
-@version        2020111.21.4
+@version        2020112.12.1
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://dnevnik.mos.ru/diary/diary/") {
+@-moz-document url-prefix("https://dnevnik.mos.ru/diary/") {
 /*** Основные стили */
 div#root {
     background: #191919;
@@ -81,5 +81,10 @@ path {
 /** Блок дистанционного урока */
 .r-1af4jnb {
     color: rgb(165 67 202);
+}
+.css-1dbjc4n.r-1d09ksm.r-18u37iz.r-16y2uox.r-1wbh5a2.r-1w6e6rj.r-1wtj0ep.r-v55p34.r-17grq5a.r-1vt0xo1.r-1guathk.r-tvv088::after {
+    content: 'Темная тема МЭШ - Версия 1.0.0';
+    color: rgb(162 162 162);
+    font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 }

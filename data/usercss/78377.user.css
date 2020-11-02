@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201030.4.19
+@version        2020112.7.29
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -566,26 +566,28 @@ body[layout=docs] devsite-content
 	max-width: none!important;
 }
 
+#cnt #center_col,
+#cnt #foot,
 .isv-r,
-.side-container,
-.kno-vrt-t.MRfBrb
+.kno-vrt-t.MRfBrb,
+.side-container
 {
 	width: auto!important;
 }
 
-[style="width:652px"],
 #iur,
 #res a img,
 .mslg .vsc,
 .nrgt,
-.st
+.st,
+[style="width:652px"]
 {
 	width: 100%!important;
 }
 
-#rcnt #center_col,
 .LXrl4c,
 .YlSaYe,
+.col,
 .gws-flights__center-content,
 .sh-dlr__list-result
 {
@@ -664,6 +666,9 @@ body[layout=docs] devsite-content
 {
 	width: 24rem;
 }
+
+
+
 }
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {

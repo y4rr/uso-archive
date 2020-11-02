@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ウインドウ幅に応じてエディタの幅が変化します。 このため、ブログ本文幅を720px以上に拡張したスキンを余裕を持って編集出来ます。 また「新タグ編集エディタ」の3画面表示を使う場合などにも有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2020910.7.25
+@version        2020112.2.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete.do") {
-/* Ameblo Writer ver.39 基本CSS ************************/
+/* Ameblo Writer ver.40 基本CSS ************************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -643,13 +643,6 @@ html {
     width: 50px;
     line-height: 1; }
 
-#js-photos-month {
-    padding: 5px 0 0 2px;
-    border-color: var(--bdc1); }
-
-#js-photos-month-select {
-    height: 20px; }
-
 .c-richComboBox__icon {
     height: 20px; }
 
@@ -657,14 +650,20 @@ html {
     left: -1px;
     border-color: var(--bdc1); }
 
+/* 月選択ボックス */
+.p-images__header__photoDate__month::after {
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    background-position: -92px 0; }
+
 #js-photos-month-list {
+    height: 27px;
+    padding: 0 0 0 10px;
+    line-height: 28px;
     border-color: var(--bdc1); }
 
-#js-photos-month-list a {
-    font-size: 14px;
-    padding: 5px 0 5px 8px;
-    color: #000 !important; }
-
+/* サムネイルリスト */
 .p-images-imageList__listItem {
     border-color: var(--bdc1); }
 
@@ -1272,9 +1271,6 @@ a.p-communication__text {
 .l-hashtag button:focus {
     outline: none; }
 
-#js-photos-month:focus {
-    outline: 1px solid #4c90fe !important; }
-
 /* 黒背景バルーンのアレンジ */
 .p-tooltip {
     margin-top: -13px;
@@ -1878,7 +1874,6 @@ form > .error:after {
     filter: brightness(200%);
     opacity: 1; }
 
-#js-photos-month,
 #js-photos-month-list {
     color: #fff;
     background: #0f5171; }
@@ -1886,18 +1881,11 @@ form > .error:after {
 .p-images__header__photoDate__month:after {
     filter: brightness(10); }
 
-#js-photos-month span,
-#js-photos-month a {
-    color: #fff !important; }
-
 .c-richComboBox__list ul li > a.is-selected {
     background-color: #1976d2; }
 
 .c-richComboBox__list {
     box-shadow: none; }
-
-#js-photos-month .c-icon {
-    filter: brightness(200%); }
 
 .p-images-imageList__listItem__uploadButton {
     filter: brightness(100%); }

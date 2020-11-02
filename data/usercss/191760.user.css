@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         콤퓨타하는아조씨
 @description    `Dark theme for University of Ulsan UClass, Republic of KoreaFor my eyes, even for your eyes`
-@version        2020111.16.35
+@version        2020112.3.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboard/.*|mod/assign/.*)?") {
+regexp("https?://ulms\\.ulsan\\.ac\\.kr/(report/ubcompletion/user_progress.*|index.php\\?lang=.*|course/.*|mod/ubboard/.*|mod/assign/.*)?") {
     /*CSS for main*/
     body {
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -68,7 +68,7 @@ regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboa
         width: 54px;
         height: 54px;
         border-radius: 54px;
-        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Black/img/teacher.png);
+        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Dark/img/teacher.png);
     }
     
     .progress_courses .course_lists .my-course-lists .course-name .prof {
@@ -105,7 +105,7 @@ regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboa
     }
     
     .image img {
-        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Black/img/announce.png);
+        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Dark/img/announce.png);
         width: 42px;
         margin: 0;
         height: 42px;
@@ -155,7 +155,7 @@ regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboa
         width: 42px;
         margin: 0;
         height: 42px;
-        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Black/img/geography.png);
+        content: url(https://raw.githubusercontent.com/pithecuse527/Stylish-UOU/main/UOU-Elegant-Dark/img/geography.png);
         background-color: #34373c !important
     }
     
@@ -191,6 +191,7 @@ regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboa
     
     #coursemos-course-menu .block-coursehome .content ul.topmenu>li.expand {
         background-color: #3d3e42 !important;
+        /* : ; */
     }
     
     #coursemos-course-menu .block-coursehome .content ul.topmenu>li>a {
@@ -364,6 +365,18 @@ regexp("https?://ulms\\.ulsan\\.ac\\.kr/(index.php\\?lang=.*|course/.*|mod/ubboa
     .ubboard .ubboard_table th.header {
         vertical-align: middle;
         background-color: #34373c !important;
+    }
+    
+    /*CSS for report*/
+    .table-bordered tbody th {
+        background-color: #34373c !important;
+        color: #d9d9d9 !important;
+    }
+    
+    .table-bordered>thead>tr>th {
+        text-align: center;
+        background-color: #34373c !important;
+        border-color: #e9e9e9;
     }
     
 }

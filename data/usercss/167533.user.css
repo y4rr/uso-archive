@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>This style is same thing as <a href="https://userstyles.org/styles/164882/rainbowtube">RainbowTube++</a> but without the rainbow transition effect. Still comes with the same customizable settings and still works well with both <a href="https://userstyles.org/styles/148466/flattube">Flattube</a> and <a href="https://userstyles.org/styles/157126/cleantube-for-youtube-2018">CleanTube</a>.TL;DR Just a minor alteration on the original 😁Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        2020816.6.15
+@version        2020112.4.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color color "Color" #0088FF
@@ -69,7 +69,9 @@ on "On" <<<EOT .ytp-clip-start,
 
 }
 @advanced dropdown like-dislike "Like/Dislike Animation" {
-	on "On*" <<<EOT /* Like/Dislike Animation *\/
+	on "On*" <<<EOT 
+
+/* Like/Dislike Animation *\/
 @keyframes Like {
 	0% {
 		transform: rotate(5deg) scale(0.5);
@@ -116,7 +118,9 @@ off "Off" <<<EOT  EOT;
 
 }
 @advanced dropdown watched-overlay "\"WATCHED\" Overlay" {
-	on "On*" <<<EOT /* "WATCHED" overlay *\/
+	on "On*" <<<EOT 
+
+/* "WATCHED" overlay *\/
 yt-img-shadow.ytd-thumbnail[loaded] + #overlays.ytd-thumbnail {
 	position: relative;
 	width: 100%;
@@ -332,16 +336,11 @@ circle[fill=red] {
 
 /* Forcing a default color on the like bar container */
 #sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer {
+	background-color: #aaa !important
+}
+
+[dark] #sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer {
 	background-color: #666 !important
-}
-
-/* Like bar width transition */
-ytd-sentiment-bar-renderer:not([activated_]) #like-bar.ytd-sentiment-bar-renderer {
-	width: 0 !important
-}
-
-ytd-sentiment-bar-renderer #like-bar.ytd-sentiment-bar-renderer {
-	transition: width 250ms var(--standard-ease);
 }
 
 
@@ -490,6 +489,15 @@ paper-button.ytd-subscribe-button-renderer[subscribed]::before,
 /* Making the "VOTE NOW" and "VIEW RESULTS" button background translucent */
 ytd-button-renderer.style-suggestive[is-paper-button]::before {
 	opacity: 0.075
+}
+
+/* Like/dislike bar ratio */
+#sentiment.ytd-video-primary-info-renderer:not([activated_]) {
+	color: #777 !important
+}
+
+[dark] #sentiment.ytd-video-primary-info-renderer:not([activated_]) {
+	color: #aaa !important
 }
 
 /* Fixes */

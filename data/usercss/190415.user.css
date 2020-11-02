@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `U2網頁樣式修改良善`
-@version        2020108.5.44
+@version        2020112.2.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,8 +18,13 @@
 .content {color: #A6FFCC !important;}
 
 /*#####--- 網友留言內容的文字顏色(淡雅黃) ---#####*/
-#content-text {color: #fffacd !important;}
+#content-text {color: #fffacd !important; font-size: 15px !important;}
 /* 第一方格  在註解 "Text Color Light Grey" 之下   在註解  "Text Color Red" 之上 */
+
+/*#####--- 滑鼠選取區 ---#####*/
+::selection {
+    color: #FF00FF;
+    background: #000000;}
 
 
 }

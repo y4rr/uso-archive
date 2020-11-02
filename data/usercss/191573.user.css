@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yad
 @description    `YOUTUBE Retro Wave ThemeUse the dark theme in your Appearance settings`
-@version        2020111.5.18
+@version        2020112.5.54
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,14 +45,15 @@
 }
 .style-scope ytd-thumbnail:active {
 	animation: thumbturn;
-	animation-duration:	1.1s;
+	animation-duration:	0.3s;
 	animation-iteration-count: 1;
 	transition: opacity 0.5s;
 }
 @keyframes thumbturn {
-  0% {transform: scalex(0)}
-  25% {transform: scaleY(0.1)}
-  50% {transform: scalex(0.7)}	
+  0% {transform: scale(1.0);}
+  50% {transform: scale(10.5); opacity: 0;}
+  90% {transform: scale(10.5); opacity: 0;}
+  100% {transform: scale(20.5); opacity: 0;}
 }
 
 /*my eyes hurt coding*/
@@ -337,5 +338,35 @@ paper-listbox {
     padding: 8px 0;
     background-color: #3a1244eb;
     color: var(--paper-listbox-color, var(--primary-text-color));
+}
+
+/*drop menu BG*/
+paper-listbox.yt-dropdown-menu {
+    background-color: #330c4b;
+}
+
+
+.ytp-popup {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 2px;
+    background: rgba(67, 8, 81, .9);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    -moz-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+    -webkit-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+    transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+.html5-video-info-panel {
+    background: rgba(67, 8, 81, .9);
+    border-radius: 4px;
+    color: #fff;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 64;
+    min-width: 26em;
 }
 }

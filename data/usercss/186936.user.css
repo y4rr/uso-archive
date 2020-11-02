@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020111.23.5
+@version        2020112.9.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -953,16 +953,16 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 
 /* Цвет вводимого текста в АКТИВНОМ Поле Поиска (NEW)*/
 #container.ytd-searchbox input[type=text].ytd-searchbox:focus {display: block; content: "";
-  background-color: rgb(255, 255, 255);
-    box-shadow: inset 0px 0px 10px 3px #ffffff1f;
+  background-color: rgba(255, 255, 255, 0);
+    -o-box-shadow: inset 0px 0px 10px 3px rgba(255, 255, 255, .122);
   color: #000;}
 
 /* Поле поиска с фокусом (NEW)*/
 ytd-searchbox[has-focus] #container.ytd-searchbox {
    border: 1px solid #1c62b9 !important;
-    -o-background: #d06868ab !important;
+    -o-background: rgba(208, 104, 104, .671) !important;
     padding: 0px 3px 0px 4px;
-    box-shadow: inset 534px 0px 0px 0px rgb(255, 255, 255);}
+    box-shadow: inset 536px 0px 0px 0px rgba(255, 255, 255, .82);} /*534px*/
 
 /* Цвет вводимого текста в поле поиска - старые варианты */
 -o-input.ytd-searchbox {color: rgb(145, 145, 145)!important; -o-filter: invert(25%);} /* V */

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Edge/Firefox版「Stylus」の拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201030.18.36
+@version        2020112.11.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.10.30 ********************** */
+/* Ameblo Management ver.2020.11.02 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -55,8 +55,8 @@ body {
     z-index: 2; }
 
 @media screen and (min-width: 860px) {
-    #globalHeader {
-        margin-left: calc(50% - 180px); } }
+#globalHeader {
+    margin-left: calc(50% - 180px); } }
 
 #globalHeader .icon {
     display: none !important; }
@@ -218,8 +218,8 @@ body {
     padding-top: 32px; }
 
 @media screen and (min-width: 860px) {
-    .l-ucs-sidemenu-area {
-        margin-left: calc(50% - 422px); } }
+.l-ucs-sidemenu-area {
+    margin-left: calc(50% - 422px); } }
 
 .l-ucs-sidemenu-area:before {
     content: "管理メニュー";
@@ -1877,6 +1877,9 @@ html {
     background: red;
     border-color: #f44336; }
 
+[data-section-id="comment_delete"]:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px red; }
+
 /* 返信ボタン */
 .c-buttonContained {
     font: bold 16px Meiryo;
@@ -2969,14 +2972,14 @@ body {
     margin-left: 0; }
 
 @media (min-width: 1168px) {
-    ._3rcaDH8O:nth-child(4n+1) {
-        margin-left: 8px; }
+._3rcaDH8O:nth-child(4n+1) {
+    margin-left: 8px; }
 
-    ._3rcaDH8O:nth-child(5n+1) {
-        margin-left: 0; }
+._3rcaDH8O:nth-child(5n+1) {
+    margin-left: 0; }
 
-    ._3rcaDH8O {
-        width: calc((100% - 32px)/5); } }
+._3rcaDH8O {
+    width: calc((100% - 32px)/5); } }
 
 /* 個別画像ページ **************************************** */
 /* 右サイドバー非表示 */
@@ -2998,8 +3001,8 @@ body {
     background: #000; }
 
 @media (min-width: 1168px) {
-    ._1XvL3nIW {
-        left: calc(50% - 160px); } }
+._1XvL3nIW {
+    left: calc(50% - 160px); } }
 
 /* 記事日付 */
 ._3iKJyUGr {
@@ -3011,8 +3014,8 @@ body {
     color: #eee; }
 
 @media (min-width: 1168px) {
-    ._3iKJyUGr {
-        left: calc(50% - 160px); } }
+._3iKJyUGr {
+    left: calc(50% - 160px); } }
 
 /* 画像表示枠 */
 ._3-g1Ourp {
@@ -3125,8 +3128,8 @@ body {
     z-index: 2; }
 
 @media screen and (min-width: 860px) {
-    #globalHeader {
-        margin-left: calc(50% - 180px); } }
+#globalHeader {
+    margin-left: calc(50% - 180px); } }
 
 #globalHeader .icon {
     display: none !important; }
@@ -3297,8 +3300,8 @@ body {
     background: none; }
 
 @media screen and (max-width: 860px) {
-    #ucsMenu {
-        left: 0; } }
+#ucsMenu {
+    left: 0; } }
 
 #ucsMenu > ul {
     box-shadow: 0px 4px 8px #607d8b52; }
@@ -4093,8 +4096,8 @@ body {
     z-index: 2; }
 
 @media screen and (max-width: 840px) {
-    .PcBreadcrumbsList {
-        left: 450px; } }
+.PcBreadcrumbsList {
+    left: 450px; } }
 
 .PcBreadcrumbsList_List {
     white-space: nowrap; }
@@ -4206,8 +4209,8 @@ body {
     order: 1; }
 
 @media screen and (max-width: 857px) {
-    .PcEntryList_ListInfo {
-        left: 304px; } }
+.PcEntryList_ListInfo {
+    left: 304px; } }
 
 /* カウントレンジ */
 .PcHitCountRange {
@@ -4489,8 +4492,8 @@ a.PcTalentListModule_Link:hover {
     order: 1; }
 
 @media screen and (max-width: 1069px) {
-    .PcTalentList .PcHitCountRange {
-        left: 246px; } }
+.PcTalentList .PcHitCountRange {
+    left: 246px; } }
 
 .PcTalentList_List {
     margin-bottom: 10px;
@@ -4574,8 +4577,8 @@ a.PcTalentListModule_Link:hover {
     order: 1; }
 
 @media screen and (max-width: 1069px) {
-    .PcGeneralBloggerList .PcHitCountRange {
-        left: 306px; } }
+.PcGeneralBloggerList .PcHitCountRange {
+    left: 306px; } }
 
 .PcGeneralBloggerList_List {
     margin-bottom: 10px;
@@ -4610,8 +4613,8 @@ a.PcTalentListModule_Link:hover {
     order: 1; }
 
 @media screen and (max-width: 1069px) {
-    .PcAmebaNewsList .PcHitCountRange {
-        left: 246px; } }
+.PcAmebaNewsList .PcHitCountRange {
+    left: 246px; } }
 
 .PcAmebaNewsList_List {
     margin-bottom: 10px;
@@ -4984,8 +4987,8 @@ body {
     z-index: 2; }
 
 @media screen and (max-width: 1040px) {
-    .PcHeader {
-        left: 0; } }
+.PcHeader {
+    left: 0; } }
 
 .PcHeader_Inner {
     height: 60px;
@@ -5969,19 +5972,19 @@ footer {
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
 /* 「ホーム 表示項目の設定方法」チュートリアル ***************** */
 @media screen and (min-width: 850px) {
-    #basic-info-name > a[href*="158183"]::before {
-        content: "●ホーム画面の表示項目設定方法●\A Code30 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 30 を参照ください";
-        position: absolute;
-        font-size: 16px;
-        top: 44em;
-        left: 2px;
-        width: 257px;
-        padding: 1em 0.5em;
-        white-space: pre;
-        overflow: hidden;
-        color: var(--bgc4, #fff);
-        border: 1px solid var(--bgc8, red);
-        background: var(--bgc6, #0578a1);
-        pointer-events: none;
-        z-index: 1; } }
+#basic-info-name > a[href*="158183"]::before {
+    content: "●ホーム画面の表示項目設定方法●\A Code30 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 30 を参照ください";
+    position: absolute;
+    font-size: 16px;
+    top: 44em;
+    left: 2px;
+    width: 257px;
+    padding: 1em 0.5em;
+    white-space: pre;
+    overflow: hidden;
+    color: var(--bgc4, #fff);
+    border: 1px solid var(--bgc8, red);
+    background: var(--bgc6, #0578a1);
+    pointer-events: none;
+    z-index: 1; } }
 }

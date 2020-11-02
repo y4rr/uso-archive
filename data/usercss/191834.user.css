@@ -1,0 +1,113 @@
+/* ==UserStyle==
+@name           虎扑论坛美化 bbs.hupu.com
+@namespace      USO Archive
+@author         voidsea
+@description    `美化字体和主题展示`
+@version        2020112.7.50
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("bbs.hupu.com") {
+
+body{
+    background: #ddd;
+}
+
+body, button, input, select, textarea,li  {
+    font-family: "Microsoft YaHei", PingFangSC-Regular, STHeiti, "黑体";
+    font-size: 14px;
+}
+
+#hp-topbarNav{
+    background: none;
+    border: none;
+}
+
+/* post list */
+.bbsHotPit .show-list .for-list li{
+    font-size: 100%;
+}
+.bbsHotPit .show-list .for-list li .titlelink {
+    font-size: 100%;
+}
+
+.bbsHotPit .show-list .for-list li .titlelink a:visited{
+    color: #609 !important;
+}
+
+/* post view */
+.details #container #container_nopadd {
+    border: none;
+    background: #fff;
+}
+
+.floor{
+    margin: 10px 4px;
+    padding: 8px 0;
+    background: #fff;
+    border: none;
+}
+
+.floor .user{
+    padding: 0 8px;
+}
+.floor .user img{
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 100%;
+}
+
+.floor_box {
+   background: #fff;
+    line-height: 180%;
+}
+
+.floor_box .author .left a.u{
+    font-weight: bold;
+}
+
+#container .left {
+    white-space: nowrap;
+}
+.floor_box .author{
+    border-bottom: 1px solid #ccc;
+}
+.floor_box .author .left .post-owner {
+    color: #fff;
+    background: #f60;
+}
+
+.floor_box .case img{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#code, .quote, .floor_box blockquote{
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.w_reply{
+    background: #f9f6ee;
+    border: 1px solid #fc0;
+}
+.w_reply h5{
+    margin: 8px;
+    color: #000;
+    border: none;
+}
+.w_reply .floor_box, .l_w_reply .floor_box{
+    border: none;
+}
+.w_reply .floor .author, .l_w_reply .floor .author{
+    border-bottom: 1px solid #ccc;
+}
+.w_reply .floor, .l_w_reply .floor{
+    background: none;
+}
+#code, .quote, .floor_box blockquote{
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+}
