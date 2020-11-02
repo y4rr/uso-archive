@@ -1,0 +1,323 @@
+/* ==UserStyle==
+@name           LTT Forum Theme
+@namespace      USO Archive
+@author         Nayr438
+@description    `A custom Stylus Theme for The Linus Tech Tips Forum. Will work with light or dark theme.`
+@version        2020112.0.28
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           linustechtips.com - 11/1/2020, 7:45:48 AM
+@namespace      https://github.com/Nayr438/ltt_stylus_theme
+@version        1.1.2
+@description    A new userstyle
+@author         Nayr438
+==/UserStyle== */
+@-moz-document domain("linustechtips.com") {
+    body {
+        font-size: 12px;
+    }
+
+    /* Hide Default Logo */
+    #elLogo img {
+        visibility: hidden;
+    }
+
+    /* Embed Alt Logo */
+    #elLogo {
+        background: url("https://raw.githubusercontent.com/Nayr438/ltt_stylus_theme/master/images/AltLogoBanner_Unofficial_LTT.png") no-repeat left;
+        background-size: 350px 61.75px;
+        min-width: 350px;
+    }
+
+    /* Hovercard Padding */
+    .ipsTabs {
+        --ipsTabs--padding: 8px;
+    }
+
+    /* Hovercard Remove Shadow */
+    .ipsHovercard {
+        box-shadow: none !important;
+    }
+
+    /* Global Padding */
+    /*  Member Stats  */
+    /*  Page Header   */
+    .ipsPadding {
+        padding: 10px !important;
+    }
+
+    /* Global */
+    /* Sidebar Padding */
+    .ipsPad,
+    .ipsApp ul.ipsPad,
+    .ipsApp ol.ipsPad {
+        padding: 10px !important;
+    }
+
+    /* Global Page Title */
+    .ipsType_pageTitle {
+        font-size: 20px;
+    }
+
+    /* Page Header */
+    .ipsPageHeader {
+        position: relative;
+        margin-bottom: 20px !important;
+        padding: 7px;
+    }
+
+    /* Breadcrumb Navigation */
+    .ipsBreadcrumb_top {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .ipsBreadcrumb {
+        font-size: 13px;
+        padding: 10px 0 8px;
+    }
+
+    /* Navigation Bar */
+    #secondaryNav > ul > li > a {
+        font-size: 12px;
+    }
+
+    /* Forum Home Category Spacing */
+    .ipsDataList_large .ipsDataItem_main,
+    .ipsDataList_large .ipsDataItem_stats,
+    .ipsDataList_large .ipsDataItem_lastPoster,
+    .ipsDataList_large .ipsDataItem_generic {
+        padding: 10px;
+    }
+
+    /* Forum Home Titles */
+    .cForumList .ipsDataItem_title {
+        font-size: 14px !important;
+    }
+
+
+    /* Forum Section Spacing */
+    .ipsType_sectionTitle {
+        font-size: 16px;
+        padding: 5px 15px 5px 15px;
+        margin-top: 0px;
+    }
+
+    /* Forum Home Section Post Count */
+    .ipsDataItem_statsLarge .ipsDataItem_stats_number {
+        font-size: 16px;
+    }
+
+    /* Forum Home Section Seperator */
+    .cForumList .ipsDataItem {
+        border-bottom-width: 0;
+        border-top-width: 2px !important;
+    }
+
+    /* Forum Home Section Last Post User Image */
+    .ipsDataItem_lastPoster .ipsUserPhoto {
+        margin: 5px 10px 0px -50px;
+    }
+
+    /* Forum home Section Last Post */
+    .ipsDataItem_lastPoster__title {
+        font-size: 12px !important;
+    }
+
+    /* Subforum Padding */
+    .ipsDataItem_main,
+    .ipsDataItem_stats,
+    .ipsDataItem_lastPoster,
+    .ipsDataItem_generic,
+    .ipsDataItem_modCheck,
+    .ipsDataItem_icon {
+        padding: 10px;
+    }
+
+    .ipsDataList_large .ipsDataItem_main,
+    .ipsDataList_large .ipsDataItem_stats,
+    .ipsDataList_large .ipsDataItem_lastPoster,
+    .ipsDataList_large .ipsDataItem_lastPoster\:flex,
+    .ipsDataList_large .ipsDataItem_generic {
+        padding: 10px;
+    }
+
+    /* Subforum and sidebar Seperator */
+    .ipsDataItem {
+        border-width: 0 0 2px 0;
+    }
+
+    /* Post Badge Height */
+    .ipsBadge {
+        line-height: 1.5;
+    }
+
+    /*Bade Font Size in post badges */
+    /* Smaller font, I broke things */
+    .ipsBadge.ipsBadge_large {
+        font-size: 11px;
+    }
+
+    /* Quote Padding */
+    .ipsQuote_citation,
+    .ipsSpoiler_header {
+        padding: 5px;
+    }
+
+    /* Post Footer Padding */
+    .lmgComment_footer {
+        padding: 0px 0px 0px 2px;
+    }
+
+    /*Author Badge */
+    .ipsComment .ipsComment_authorBadge {
+        position: absolute;
+        left: 148px;
+        top: 13px;
+        background-color: grey;
+        color: darkorange;
+        content: "Original Poster" !important;
+    }
+
+    /* Set max width on post date to prevent Author Badge Overlap */
+    /* Wraps around, might do something diffrent later */
+    .ipsComment_meta .ipsType_reset {
+        max-width: 130px;
+    }
+
+    /* Post User Area */
+    .ipsType_sectionHead {
+        font-size: 16px;
+    }
+
+    /* Sidebar */
+    .ipsPad_half,
+    .ipsApp ul.ipsPad_half,
+    .ipsApp ol.ipsPad_half {
+        padding: 5px;
+    }
+
+    /*Sidebar user images */
+    .ipsWidget.ipsWidget_vertical .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_icon {
+        padding-left: 2px !important;
+    }
+
+    /* Sidebar Content */
+    html[dir="ltr"] .ipsDataList.ipsDataList_reducedSpacing .ipsDataItem_icon + .ipsDataItem_main {
+        padding-left: 2px;
+    }
+
+    /* Sidebar Titles */
+    .ipsWidget_title {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    /* Sidebar Content */
+    .ipsType_medium {
+        font-size: 12px;
+    }
+
+    /* Sidebar Youtube Video Images */
+    .lmg-card .card-img-a {
+        width: unset !important;
+        margin: unset;
+    }
+
+    /* Member Stats User Photo */
+    .ipsPhotoPanel > .ipsUserPhoto {
+        margin: 4px 0px !important;
+    }
+
+
+    /* Sidebar Youtube Video Content */
+    .lmg-card h2 {
+        font-size: 14px;
+    }
+
+    /* Sidebar Youtube Video Title */
+    .lmg-card h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    /* ips button - Primary - New Topic */
+    /* Watch me */
+    .ipsToolList_horizontal > .ipsToolList_primaryAction .ipsButton:not(.ipsButton_link) {
+        padding: 0 10px
+    }
+
+    /* SubForum Banner Spacing */
+    .ipsMargin_vertical\:half,
+    .ipsMargin_bottom\:half {
+        margin-bottom: 5px !important;
+    }
+
+    /* Topic Page Navigation */
+    .ipsPadding\:half {
+        padding: 6px !important;
+    }
+
+    /* Element below this line seem to no longer be needed */
+    /* Left for future refrence */
+    /* Member Stats */
+    /*
+    .ipsWidget_stats {
+        padding: 10px;
+    }
+    */
+    /*
+    .ipsPhotoPanel > .ipsUserPhoto {
+        margin: 0px;
+    }
+    */
+    /*
+    .ipsPadding\:half {
+        padding: 5px !important;
+    }
+    */
+    /*
+    .cForumList .ipsDataItem_title {
+        font-size: 16px;
+    }
+    */
+    /*
+    .ipsTabs_item {
+        line-height: 2.5;
+        font-size: 14px;
+    }
+    */
+    /*
+    .ipsApp .ipsButton_large {
+        line-height: 2.5;
+    }
+    
+    
+    /*
+    .ipsFieldRow:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    */
+    /*
+    .ipsApp .ipsFieldRow_primary .ipsField_autocomplete,
+    .ipsApp .ipsFieldRow_primary textarea,
+    .ipsApp .ipsFieldRow_primary input[type="text"],
+    .ipsApp .ipsFieldRow_primary input[type="password"],
+    .ipsApp .ipsFieldRow_primary input[type="datetime"],
+    .ipsApp .ipsFieldRow_primary input[type="datetime-local"],
+    .ipsApp .ipsFieldRow_primary input[type="date"],
+    .ipsApp .ipsFieldRow_primary input[type="month"],
+    .ipsApp .ipsFieldRow_primary input[type="time"],
+    .ipsApp .ipsFieldRow_primary input[type="week"],
+    .ipsApp .ipsFieldRow_primary input[type="number"],
+    .ipsApp .ipsFieldRow_primary input[type="email"],
+    .ipsApp .ipsFieldRow_primary input[type="url"],
+    .ipsApp .ipsFieldRow_primary input[type="search"],
+    .ipsApp .ipsFieldRow_primary input[type="tel"],
+    .ipsApp .ipsFieldRow_primary .ipsField_dummy {
+        padding: 0px;
+    }
+    */
+}

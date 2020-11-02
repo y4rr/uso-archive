@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct MessagesIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201031.16.54
+@version        2020111.14.28
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* Instagram Dark Theme v0.1*/
+/* Instagram Dark Theme v1.1*/
 /* Created by Lexan*/
 
 /*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
@@ -93,6 +93,10 @@
 
 .XTCLo.x3qfX{
     transition: .4s;
+}
+
+.jLuN9{
+    background-color: var(--bg3-color);
 }
 
 /*Footer*/
@@ -183,6 +187,18 @@ a.FPmhX.MBL3Z{
     color: var(--text-color);
 }
 
+.JSZAJ, .IjCL9{
+    background-color: var(--bg2-color) !important;
+}
+
+._97aPb{
+    background-color: var(--bg2-color) !important;
+}
+
+a.O4GlU, a.O4GlU:visited{
+    color: var(--text-darken2-color);
+}
+
 /*Individual Post*/
 .ltEKP .QBXjJ{
     border: none;
@@ -227,6 +243,48 @@ a, a:visited{
     color: var(--text-color);
 }
 
+._9AhH0 {
+    display: none;
+}
+
+.PyenC, .fXIG0 {
+    height: 135px;
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -67px;
+    top: 50%;
+    width: 135px;
+    z-index: 1;
+}
+
+.PdwC2 {
+    max-width: 90vw!important;
+}
+
+.JyscU ._97aPb {
+    max-height: 95vh;
+}
+
+.rQDP3 {
+    max-height: 90vh;
+}
+
+.pR7Pc {
+    max-height: 90vh;
+}
+
+.eLAPa {
+    max-height: 90vh;
+}
+
+.zZYga {
+    overflow: hidden;
+}
+
+._8-yf5[d="M 41.8 9.8 L 27.5 24 l 14.2 14.2 c 0.6 0.6 0.6 1.5 0 2.1 l -1.4 1.4 c -0.6 0.6 -1.5 0.6 -2.1 0 L 24 27.5 L 9.8 41.8 c -0.6 0.6 -1.5 0.6 -2.1 0 l -1.4 -1.4 c -0.6 -0.6 -0.6 -1.5 0 -2.1 L 20.5 24 L 6.2 9.8 c -0.6 -0.6 -0.6 -1.5 0 -2.1 l 1.4 -1.4 c 0.6 -0.6 1.5 -0.6 2.1 0 L 24 20.5 L 38.3 6.2 c 0.6 -0.6 1.5 -0.6 2.1 0 l 1.4 1.4 c 0.6 0.6 0.6 1.6 0 2.2 Z"]{
+    display: none !important;
+}
+
 /*Profile*/
 .-vDIg{
     color: var(--text-darken-color);
@@ -266,6 +324,81 @@ a.T-jvg, a.T-jvg:visited{
 
 .felixSpriteProfileChannelNullState{
 	filter: invert(1);
+}
+
+.v9tJq{
+    max-width: 95% !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.vtbgv {
+    margin-top:40px;
+}
+
+._6xe7A{
+    background-color: var(--bg2-color);
+}
+
+._0imsa, ._0imsa:visited{
+    color: var(--text-color);
+}
+
+.HYpXt.pbNvD{
+    max-height: 800px;
+}
+
+._8324F{
+    filter: invert(1);
+}
+
+.d-Vzv{
+    border: 1.5px solid var(--text-darken-color);
+}
+
+._32eiM, ._32eiM:visited{
+    color: var(--text-color);
+}
+
+.glyphsSpriteFriend_Follow{
+	filter: invert(1);
+}
+
+._5fEvj{
+	filter: invert(1);
+}
+
+.NP414{
+    background-color: var(--bg2-color);
+    border: none
+}
+
+._41KYi{
+    background-color: var(--bg3-color);
+    border-radius: 9px;
+    border: none !important;
+}
+
+.Qj3-a, .Qj3-a:visited{
+    color: var(--text-color);
+}
+
+._4Kbb_{
+    background-color: var(--bg-color);
+    border: none;
+    border-top: none;
+}
+
+.rkEop{
+    color: var(--text-color);
+}
+
+.VIsJD{
+    color: var(--text-darken2-color);
+}
+
+.Rebts{
+    color: var(--text-color);
 }
 
 /*Instagram DMs*/
@@ -380,6 +513,23 @@ a.k8Vux, a.k8Vux:visited{
 }
 
 .iHqQ7{
+    background-color: var(--bg3-color);
+}
+
+.hl4pY{
+    background-color: var(--bg-color);
+}
+
+._8_yLp{
+    max-width: 600px !important;
+    min-width: 0px !important;
+}
+
+.z82Jr {
+    height: none;
+}
+
+.qJPeX{
     background-color: var(--bg3-color);
 }
 
@@ -544,6 +694,44 @@ a.k8Vux, a.k8Vux:visited{
 .P5eiA{
     background-color: var(--bg3-color);
     border: none;
+    color: var(--text-darken2-color);
+}
+
+.coreSpriteKeyhole, .coreSpriteLeftChevron{
+    filter: invert(1);
+}
+
+.olLwo{
+    color: var(--text-color);
+}
+
+/*Sign in*/
+.gr27e{
+    background-color: var(--bg2-color);
+    border: none;
+}
+
+.coreSpriteLoggedOutWordmark, .coreSpriteMobileNavDirect{
+    filter: invert(1);
+}
+
+._9GP1n{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}
+
+/*._2hvTZ{
+    background-color: var(--bg3-color);
+    border: none;
+    color: var(--text-darken2-color);
+}*/
+
+.izU2O{
+    color: var(--text-darken2-color);
+}
+
+.b_nGN{
     color: var(--text-darken2-color);
 }
 }

@@ -2,8 +2,8 @@
 @name           ニコ生(Re) ダークテーマ(Niconico Live Dark Theme)
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページはよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード5を削除していただくことで元に戻ります。--どうにもならなかった箇所について--・コメント欄上の広告、ギフトホバー時の背景色（いじっても効果がありませんでした…）`
-@version        20201031.17.1
+@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード5を削除していただくことで元に戻ります。※ニコニ広告ページすべてをダークテーマすることで対応する予定です。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
+@version        2020111.14.38
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -240,6 +240,14 @@ li a:hover{
     scrollbar-width:thin;
 }
 
+/* コメント欄上広告・ギフトホバー時色 */
+.___count___1OjQV[type=button]:enabled:not([aria-busy=true]):before{background-color: #828282;}
+.___symbol-mark___27-28 rect, .___symbol-mark___27-28>path{fill: #ccc;}
+
+/* コメント欄上広告のプロモーション吹き出し */
+.___promotion-balloon___UsNYE,.___promotion-balloon___UsNYE:before{background-color: #585858;}
+
+
 /*ソーシャルボタンまわり*/
 
 /*共有ボタン*/
@@ -252,7 +260,7 @@ li a:hover{
 }
 
 /* 文字設定 */
-h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc{
+h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,.___description___3aLzk{
     font-weight:800;
     font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     text-decoration: none;

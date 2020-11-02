@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dsim
 @description    `A simple black style for portalnovosti.com`
-@version        2019525.17.43
+@version        2020111.22.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,6 +13,11 @@
     background-color: #0e0e0e;
     color: #888888;
   }
+
+*::selection {
+    background-color: #282726 !important;
+    color: #a37c27 !important;
+}
 
   h1 {
     color: #f0f0f0;

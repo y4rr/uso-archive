@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/FMwA38gv`
-@version        20201030.14.18
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/QYdhDnpb`
+@version        2020111.14.12
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1795,10 +1795,10 @@ body {font-size: .92em;}
 header, .catalog, .cntnt {padding: 0;}
 
 /* Header */
-.adminbar::before {background: var(--theme_default_postbg); border-radius: 28px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 -1px 6px 0 var(--theme_shadow2); content: ""; padding: 0 20px; position: fixed; bottom: 8px; left: 2%; right: 2%; height: 55px; text-align: right;}
+.adminbar::before {background: var(--theme_default_postbg); border-radius: 28px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 -1px 6px 0 var(--theme_shadow2); content: ""; padding: 0 20px; position: fixed; bottom: 8px; left: 2%; right: 2%; height: 55px; text-align: right; transition: .1s;}
 .adminbar::after {border-radius: 28px 0 0 28px; content: "menu"; font: 24px/55px 'Material Icons'; color: var(--theme_default_alttext); cursor: pointer; position: fixed; bottom: 8px; left: 2%; height: 55px; width: 16%; text-align: center; transition: .1s;}
 .adminbar:hover::after {background-color: var(--theme_default_btnbghover);}
-.adminbar {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); font-size: 15px; padding: 5px 5px 10px 5px; margin-bottom: 0; position: fixed; width: calc(100vw - 12px); left: calc(-100vw - 4%); top: unset; bottom: 72px; text-align: left; transform: none; transition: .2s; z-index: 970;}
+.adminbar {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); font-size: 15px; padding: 5px; margin-bottom: 0; position: fixed; width: calc(100vw - 4%); left: calc(-100vw - 4%); top: unset; bottom: 70px; text-align: left; transform: none; transition: .2s; z-index: 970;}
 .adminbar:hover, .adminbar:focus, .adminbar:focus-within {left: 2%;}
 .adminbar__menu {height: unset; white-space: unset; margin-bottom: 0 !important;}
 .adminbar__menu a {font-weight: bold;}
@@ -1834,27 +1834,27 @@ a.adminbar__slink {font-weight: bold; margin: 5px 2px;}
 #setting-editor-textarea-textarea {min-height: calc(50vh);}
 
 /* Catalog */
-.catalog {padding: 15px 0 65px;}
+.catalog {padding: 15px 0 90px;}
 .catalog header + hr {display: none;}
 
-.catalog .centered {background: var(--theme_default_glassbg2); position: fixed; z-index: 980;}
+.catalog .centered {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); padding: 9px; position: fixed; bottom: 70px; left: calc(-100vw - 4%); width: calc(100vw - 4%); z-index: 980; text-align: left; transition: .3s;}
+.catalog .centered::before {border-radius: 0 28px 28px 0; content: ""; display: block; position: fixed; bottom: 8px; left: 34%; height: 55px; width: 64%;}
+.catalog .centered:hover, .catalog .centered:focus, .catalog .centered:focus-within {left: 2%;}
 .centered span[style="float:left"] {float: none !important; }
-.centered span[style="float:left"] a::before {color: var(--theme_default_alttext); content: "arrow_back"; font: 24px/55px 'Material Icons'; width: 16%; padding: 0; position: fixed; margin: 0; bottom: 8px; left: 18%;}
+.centered span[style="float:left"] a::before {color: var(--theme_default_alttext); content: "arrow_back"; font: 24px/55px 'Material Icons'; width: 16%; padding: 0; position: fixed; margin: 0; bottom: 8px; left: 18%; text-align: center;}
 .centered span[style="float:left"] a:hover::before {background: var(--theme_default_btnbghover);}
 
-#filter_form {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); padding: 9px; position: fixed; bottom: 72px; left: calc(-100vw - 4%); right: 0; text-align: left; width: max-content; transition: .3s;}
-#filter_form::before {color: var(--theme_default_alttext); content: "filter_alt"; cursor: pointer; font: 24px/55px 'Material Icons'; width: 16%; display: inline-block; text-align: center; position: fixed; bottom: 8px; left: 34%;}
-#filter_form:hover {left: 2%;}
-#filter_form:hover::before {background: var(--theme_default_btnbghover);}
+#filter_form {font-size: 0;}
+#filter_form::before {color: var(--theme_default_alttext); content: "filter_alt"; font: 24px/20px 'Material Icons'; display: inline-block; text-align: center; padding-right: 8px; vertical-align: -6px;}
+
 #filter_form select {font-size: 15px;}
 
-#csearch {font-size: 15px; padding: 6px 10px; position: fixed; left: 50%; width: 28%; bottom: 19px;}
+#csearch {font-size: 15px; padding: 6px 10px; position: fixed; left: 36%; width: 58%; bottom: 19px;}
 
-label[for="toggle-tags"] {position: fixed; bottom: 8px; right: 2%; width: 20%;}
 span[title="tags"] {font-size: 0;}
-span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; font-weight: bold; font-size: 24px; line-height: 55px; padding: 0 4px; vertical-align: -4px;}
+span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; font-weight: bold; font-size: 24px; line-height: 20px;  padding: 0 6px; vertical-align: -3px;}
 
-.thread_wrap {flex: 0 0 95%; height: 150px; text-align: left;}
+.thread_wrap {flex: 0 0 95%; height: unset; max-height: 200px; text-align: left;}
 .thread-info {color: var(--theme_default_alttext2);}
 .thread-info b {color: var(--theme_default_title); font-size: .9em;}
 .img-block {margin-bottom: 0;}
@@ -1922,7 +1922,7 @@ span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; f
 .button-mob[href$="/catalog.html"]:hover::before {background: var(--theme_default_btnbghover);}
 
 .thread-nav {display: block !important; font-size: 0;}
-.search {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 -1px 6px 0 var(--theme_shadow2); display: block !important; margin-right: 0; padding: 9px; position: fixed; bottom: 72px; left: -100%; height: 50px; transition: .3s; z-index: 970;}
+.search {background: var(--theme_default_postbg); border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 -1px 6px 0 var(--theme_shadow2); display: block !important; margin-right: 0; padding: 9px; position: fixed; bottom: 70px; left: -100%; height: 50px; transition: .3s; z-index: 970;}
 .search:hover, .search:focus, .search:focus-within {left: 2%;}
 .search::after {color: var(--theme_default_alttext); content: "search"; cursor: pointer; font: 24px/55px 'Material Icons'; position: fixed; bottom: 8px; left: 18%; width: 16%; text-align: center; transition: .1s;}
 .search:hover::after, .search:focus::after, .search:focus-within::after {background: var(--theme_default_btnbghover);}
@@ -1975,7 +1975,7 @@ a[onclick*="updateThread(); return false;"]:hover {background-color: var(--theme
 .post__images_type_single + .post__message {margin: 0 1em 0.6em;}
 
 /* Footer */
-.bb {border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); display: block !important; font-size: 1.1em; top: unset; left: calc(-100vw); bottom: 72px; width: calc(100vw - 4%); transition: .2s; z-index: 979;}
+.bb {border-radius: 8px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2); display: block !important; font-size: 1.1em; top: unset; left: calc(-100vw); bottom: 70px; width: calc(100vw - 4%); transition: .2s; z-index: 979;}
 .bb:hover, .bb:focus, .bb:focus-within {left: 2%;}
 .bb__panels {display: block !important;}
 .bb__header, .bb-header-text {font-weight: bold; font-size: 18px;}

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Juan Gamarra
 @description    `Shopify Dark Material Theme for the code editor.Zero distractions.If you like my work, support me with a donation in paypal :)`
-@version        20201024.18.56
+@version        2020111.19.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("https://.*myshopify.com/admin/themes.*") {
+@-moz-document regexp("https://.*myshopify.com/admin/themes/.*") {
 :root {
   	--primary-color: #009688;
 	--p-border: #009688;
@@ -428,7 +428,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 .modal .tabs a{
 	background: transparent;
-    color: #fcfcfc;
+    color: #fcfcfc !important;
 	border-color: var(--primary-color);
 }
 
@@ -741,7 +741,7 @@ button[data-bind-event-click="toggleFullscreenMode()"] {
 }
 }
 
-@-moz-document regexp("https://.*myshopify.com/admin/themes.*") {
+@-moz-document regexp("https://.*myshopify.com/admin/themes/.*") {
 /* Scrollbar Chrome*/
  *::-webkit-scrollbar {
 	width: 10px ! important;

@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name           Дневник МЭШ - Темная тема
+@namespace      USO Archive
+@author         Kirill Troitskij
+@description    `Темная тема для электронного дневника МЭШ - Московской электронной школы`
+@version        2020111.21.4
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://dnevnik.mos.ru/diary/diary/") {
+/*** Основные стили */
+div#root {
+    background: #191919;
+}
+/* Удаление фона */
+.css-1dbjc4n.r-1p0dtai.r-1mlwlqe > div {
+    display: none;
+}
+
+.r-1wmtsxq {
+    background-color: #212121;
+}
+.r-14lw9ot {
+    background-color: #191919;
+}
+
+/*** Цвета текста */
+
+/* Время уроков */
+.r-84g7pn {
+    color: rgb(162 162 162);
+}
+/* Основной контент */
+.r-11t4n93 {
+    color: rgb(245 245 245);
+}
+
+/*** Навигация */
+.r-tkned8 {
+    background-color: rgba(38, 111, 237, 0.8);
+}
+.r-17tul57 {
+    color: rgb(54 127 255);
+}
+/*.r-6dt33c {
+    background-color: rgba(38, 111, 237, 0.3);
+    border-radius: 150px;
+}*/
+
+/** Логотип МЭШ */
+path {
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+/** Навигация по датам */
+.r-1l6cdul {
+    background-color: #191919;
+}
+.r-8fr7da {
+    box-shadow: inset rgba(37, 111, 237, 0.7) 0px 0px 0px 2px;
+}
+
+/** Меню профиля */
+.r-cqee49 {
+    color: rgb(255 255 255);
+}
+.r-wvorok {
+    background-color: rgba(255, 225, 119, 0.7);
+}
+
+
+/** Вкладка событий */
+.container-0-2-1 {
+    color: #e8e8e8;
+}
+.r-1s5z7zj {
+    display: none;
+}
+
+
+/** Блок дистанционного урока */
+.r-1af4jnb {
+    color: rgb(165 67 202);
+}
+}

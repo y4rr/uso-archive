@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sae 190105
 @description    `Fully updated to work with Tumblr’s code update of July 2020, this is a simple yet elegant recolouring of the dashboard as to appease those who’d rather stray from the traditional blue. Heavily inspired by the Black Dashboard once offered by Tumblr back in 2010 to raise awareness for the BP Oil Spill, I also took the liberty of polishing it, working with more padding and spacing as to create a more relaxed viewing. This is accompanied by a unified font size and an altered line height.`
-@version        20201027.0.19
+@version        2020112.0.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1402,6 +1402,18 @@ b, strong {
     font-size: 14px;
     line-height: 18px;
 }
+
+
+._3A-B7._33Tdv {
+    background: var(--white);
+    border: 1px solid var(--secondary-accent);
+}
+
+
+._3RqLO._3qh7_ {
+    background: var(--white);
+    border: 1px solid var(--secondary-accent);
+}
 }
 
 @-moz-document url-prefix("https://www.tumblr.com/explore/") {
@@ -2441,6 +2453,11 @@ body {
     font-weight: 700;
     line-height: 1.333;
     color: var(--black);
+}
+
+
+._8n5Bm.El6rG, ._8n5Bm.El6rG.OJeiB {
+    background-color: var(--white);
 }
 }
 

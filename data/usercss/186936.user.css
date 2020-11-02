@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.7 (β)
+@name           Compact Tube (White) v1.2.8 (β)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201030.9.33
+@version        2020111.23.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.7 (β) */
+/* CompactTube (White) v1.2.8 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -47,6 +47,20 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
 
 /* убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
 .ytp-fullerscreen-edu-button.ytp-button {display: none;}
+
+    /* Убрать секцию главного Меню "Ваши Фильмы": - "none" - убрать: "flow"- показать */
+    ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-child(3) {display: flow;}
+
+    /* блокировать Рекламу в выкладке на Главной Странице (блокирует но оставляет пустое место)
+    : - "none" - убрать: "flow"- показать.  */
+   .ytd-display-ad-renderer {display: none;}
+                /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
+                : - "none" - убрать: "flow"- показать.  */
+                ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
+
+
+/* отключить всплывающее предложение попробовать YouTube Premium */
+paper-dialog.ytd-popup-container {display: none}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -1132,8 +1146,9 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 /* Путь Скроллбара*/
 ::-webkit-scrollbar-track {background: rgba(138, 138, 138, .16); -o-box-shadow: inset 0px 0px 0px 0.3px rgba(164, 163, 163, .41);}
 /* стрелки промотки вверх и вниз Скроллбара */
--o-::-webkit-scrollbar-button{height: 14px; background: var(--yt-opalescence-grey-opacity-lighten-3);
+-o-::-webkit-scrollbar-button {height: 14px; background: var(--yt-opalescence-grey-opacity-lighten-3);
 border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
+
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 
@@ -1655,7 +1670,7 @@ ytd-channel-featured-content-renderer {height: 157px;/*153*/ overflow-y: auto; o
         /* Скроллбар для промотки множества Трансляций */
 /* Установка Самого Скроллбара */
 ytd-channel-featured-content-renderer::-webkit-scrollbar {
-    width: 14px;}
+    width: 1.3em;}
 /* Ползунок Скроллбара  */
 ytd-channel-featured-content-renderer::-webkit-scrollbar-thumb {
     background: rgba(155, 155, 155, .34);
@@ -2024,11 +2039,13 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  СТРАНИЦА ВИДЕО  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 /* Блок комментариев на странице с Видео - ПЕРЕДЕЛАТЬ - НЕ ТО, портит Тренды*/
 ytd-comments {
+                -o-overflow-x: hidden; /* test : уже не нужен и вредит доп блокам показывая контуры*/
     background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: -14px; /*31px,v2 -14px*/ margin-left: 80px; /*80px*/ margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Описанием Видео [не включать position: relative: появляются доп. Скроллбары] ($)*/
 .style-scope ytd-video-secondary-info-renderer {
+                    overflow-x: hidden; /* test : нужен, решает проблему заступов */
         background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 -o-position: relative; -o-top: 21px; -o-left: 0px;
@@ -2036,30 +2053,33 @@ ytd-comments {
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Названием Видео*/
 ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
+                    overflow: hidden; /* test : нужен, решает проблему заступов */
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 
 /* Блок с Видео справа */
 ytd-watch-flexy[theater] #secondary.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #secondary.ytd-watch-flexy {
+                    -o-overflow-x: hidden; /* test : не нужен */
     -o-margin-top: var(--ytd-margin-3x);
     -o-padding-right: 0px;
     -o-padding-left: 0px;
     height: 100%;
     margin-top: 11px;
     margin-left: 15px;
-    margin-right: 88px; /*100px ,v2: 88px*/
+    margin-right: 80px; /*100px ,v2: 88px , v3: 80px*/
     position: relative; right: 14px; /* 14px -  TEST */
         -o-background: var(--yt-spec-brand-background-primary);
         -o-box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
     -o-flex-direction: column;}
 /* дополнительный блок для Видео справа, когда оно выстраиывается в список снизу при уменьшении окна */
 ytd-watch-next-secondary-results-renderer {
+                    -o-overflow-x: hidden; /* test : решает проблемы заступов, но вредит доп блокам показывая контуры */
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     margin-left: auto;
-    margin-right: -38px; /*-24px, v2: -38px*/
+    margin-right: -28px; /*-24px, v2: -38px, v3: -28px*/
         position: relative; right: 14px; /* 14px -  TEST */
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
@@ -2314,7 +2334,7 @@ ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] y
     -o-padding-top: 1px;
     -o-padding-bottom: 1px;
     margin-left: -15px;
-    margin-right: -25px;
+    margin-right: -15px;
     margin-top: -1px;}
 /* Лайв Чат - под Видео: Цвет блока Названия и (Информация о ЛайвЧате) */
 ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: var(--yt-spec-brand-background-primary);}
