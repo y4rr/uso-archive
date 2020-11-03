@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           ifixit.com by BamaBraves
+@name           ifixit Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2019428.14.46
+@version        2020112.21.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ifixit.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("ifixit.com") {
@@ -68,6 +73,7 @@ ul::-webkit-scrollbar-thumb:hover,
 	text-decoration: none!important;
 }
 
+footer .footer-stats div p,
 .comments-title,
 .post-metadata-actions>span {
 	text-transform: capitalize!important;
@@ -109,6 +115,11 @@ h4.carouselPrice {
 
 .question-details-box {
 	overflow: visible!important;
+}
+
+.jszyiGr svg {
+    opacity: 1!important;
+    bottom: -12px;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -205,6 +216,19 @@ input.button .fa {
 
 .secondary-stores .store-right .store-title {
 	float: right!important;
+}
+
+.collection-guides .blurbListCell .title {
+    bottom: 12px;
+}
+
+#page-sidebar, #page-sidebar .sticky-fixed {
+    left: 0%;
+    margin-left: 0;
+}
+
+#page-sidebar+#main {
+    left: 7%;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -307,6 +331,9 @@ selector {
 	max-height: none!important;
 }
 
+.blurbListCell,
+.categoryListCell,
+.featured-category-item img,
 .news-links>li,
 .question-details-box {
 	height: auto!important;
@@ -326,11 +353,6 @@ selector {
 
 .activity .thumbnail {
 	height: 16rem!important;
-}
-
-.blurbListCell,
-.categoryListCell {
-	height: 11rem!important;
 }
 
 .page-type {
@@ -353,22 +375,28 @@ selector {
 
 .banner-summary,
 .cart-banner.location-store p,
-.content-container {
+.container,
+.content-container,
+.homepage-full-width
+{
 	max-width: none!important;
 }
 
-selector {
+ppp {
 	width: auto!important;
 }
 
 #content,
-.activity .user-info,
-.featured-category-item img {
+.activity .user-info {
 	width: 100%!important;
 }
 
 #main {
 	width: 98%!important;
+}
+
+#page-sidebar+#main {
+    width: 83%!important;
 }
 
 .product-details-wrapper {
@@ -479,6 +507,8 @@ p strong {
 #comments-watch .external-login span.external-login-header,
 #login .external-login span.external-login-header,
 #notificationHistory #markAllHistoryRead,
+.biqGeA,
+.eycEMn,
 .feature-products .product .product-title,
 .page-navigation-container .page-navigation-link .button,
 .page-navigation-container .page-navigation-link a,
@@ -488,6 +518,7 @@ p strong {
 .tool-info .tool-description,
 a.tab-link,
 body,
+footer .footer-stats div .footer-stat,
 li,
 p {
 	color: #fff!important;
@@ -505,6 +536,7 @@ p {
 .categoryListCell h5.title,
 .featured-category-title,
 .section-divider p,
+footer .footer-stats div p,
 h1,
 h2 {
 	color: #F0E890!important;
@@ -551,7 +583,9 @@ time {
 .feature-products .product .product-price,
 .part-feature .part-price,
 .price,
-.tool-price {
+.tool-price,
+.wp .ifixit-promo-wrap .ifixit-promo p.ifixit-promo-price:not(.on-sale)
+{
 	color: #07ff24!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
@@ -559,10 +593,11 @@ time {
 
 /*___ Red __________________________________________________________________________*/
 
-.unanswered .question-answers-number,
-.statusNotice,
 .statusNotice a,
-.statusNotice strong {
+.statusNotice strong,
+.statusNotice,
+.unanswered .question-answers-number
+{
 	color: #ff0707!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
@@ -598,10 +633,8 @@ pre ::selection {
 }
 
 ::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	color: #f48f8f;
 	opacity: 1;
-	/* Firefox */
 }
 
 
@@ -631,6 +664,7 @@ nav.header-nav {
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.fekuCv,
 #comments-watch .external-login>.link.facebook,
 #comments-watch .external-login>.link.google,
 #comments-watch .external-login>.link.yahoo,
@@ -645,7 +679,10 @@ nav.header-nav {
 .page-type-title-label,
 .post-helpful .post-badge,
 .post-locked .post-badge,
-.store:hover {
+.store:hover,
+.wp .entry-featured,
+.wp .featured-video .featured-image-overlay
+{
 	background: rgba(0, 0, 0, 0)!important;
 }
 
@@ -666,6 +703,7 @@ nav.header-nav {
 .device-more-answers,
 .filter-options .filter-option,
 .formBody,
+.gjcjeV,
 .guide-complete,
 .guide-details-container .details-item,
 .guide-main-image,
@@ -693,9 +731,13 @@ a.tab-link {
 .action-button,
 .button[role=button],
 .css-ics2s5,
+.eTMidu,
+.footer-bottom-button,
 .mission-box .mission-button,
 .news-article .read-more-button,
 .subtleButton,
+.wp .btn-white,
+.wp .ifixit-promo-wrap .ifixit-promo p.ifixit-shop-btn .btn.btn-alt,
 a.button,
 a.buttonLink,
 button.button,
@@ -712,9 +754,13 @@ input.buttonLink {
 .action-button:hover,
 .button[role=button]:hover,
 .css-ics2s5:hover,
+.eTMidu:hover,
+.footer-bottom-button:hover,
 .mission-box .mission-button:hover,
 .news-article .read-more-button:hover,
 .subtleButton:hover,
+.wp .btn-white:hover,
+.wp .ifixit-promo-wrap .ifixit-promo p.ifixit-shop-btn .btn.btn-alt:hover,
 a.button:hover,
 a.buttonLink:hover,
 button.button:hover,
@@ -728,9 +774,13 @@ input.buttonLink:hover {
 .action-button:active,
 .button[role=button]:active,
 .css-ics2s5:active,
+.eTMidu:active,
+.footer-bottom-button:active,
 .mission-box .mission-button:active,
 .news-article .read-more-button:active,
 .subtleButton:active,
+.wp .btn-white:active,
+.wp .ifixit-promo-wrap .ifixit-promo p.ifixit-shop-btn .btn.btn-alt:active,
 a.button:active,
 a.buttonLink:active,
 button.button:active,
@@ -808,6 +858,7 @@ input.buttonLink:active {
 
 /*___ Plain Black __________________________________________________________________*/
 
+#page-sidebar::before,
 #answersList,
 #articleComments,
 #main,
@@ -832,6 +883,7 @@ input.buttonLink:active {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+#page-sidebar::before:hover,
 #answersList:hover,
 #articleComments:hover,
 #main:hover,
@@ -855,6 +907,7 @@ input.buttonLink:active {
 
 /*___ Plain ________________________________________________________________________*/
 
+.fekuCv,
 #contentFloat,
 #sidebarFloat,
 .activity .thumbnail,
@@ -878,13 +931,16 @@ input.buttonLink:active {
 .question-device-container,
 .sub-category,
 .tool-feature,
-.ukYMj {
-	background-color: #11111187!important;
+.ukYMj,
+.wp .ifixit-promo-wrap:not(.no-bg)
+{
+	background-color: #181616!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.fekuCv:hover,
 #contentFloat:hover,
 #sidebarFloat:hover,
 .activity .thumbnail:hover,
@@ -909,7 +965,9 @@ input.buttonLink:active {
 .question-device-container:hover,
 .sub-category:hover,
 .tool-feature:hover,
-.ukYMj:hover {
+.ukYMj:hover,
+.wp .ifixit-promo-wrap:not(.no-bg):hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -935,6 +993,8 @@ table tr:not(:first-child):hover {
 
 /*__ Blue Gradient _________________________________________________________________*/
 
+.Mdkxo,
+.DhFhF,
 .announcements,
 .cart-banner.location-product,
 .cart-banner.location-store,
@@ -968,17 +1028,41 @@ table tr:not(:first-child):hover {
 
 /*__ Orange Gradient _______________________________________________________________*/
 
+.wp .repair-tip .tip,
 .translation-message {
 	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
 }
+
+/*___ Highlight Background _________________________________________________________*/
+
+.jszyiG:hover
+{
+	background: linear-gradient(to bottom, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+#sidebar-wiki-toc .toc a:hover,
+#sidebar-wiki-toc .toc a.scrolled
+{
+	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("ifixit.com") {
 /*__________________________________________________________________________________*/
 
+.jszyiG,
 #blurbsWidget .blurbNavThumbs a,
 .activity .thumbnail,
 .blurbListCell,
@@ -999,12 +1083,16 @@ table tr:not(:first-child):hover {
 .sidebarBlurb,
 .sub-category,
 .tool-feature,
-.twoColGuideBlurb {
+.twoColGuideBlurb,
+.wp .hentry,
+.wp .ifixit-promo-wrap .ifixit-promo a
+{
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
+.jszyiG:hover,
 #blurbsWidget .blurbNavThumbs a.active,
 #blurbsWidget .blurbNavThumbs a:hover,
 .activity .thumbnail:hover,
@@ -1026,7 +1114,12 @@ table tr:not(:first-child):hover {
 .sidebarBlurb:hover,
 .sub-category:hover,
 .tool-feature:hover,
-.twoColGuideBlurb:hover {
+.twoColGuideBlurb:hover,
+.wp .entry-featured:hover p,
+.wp .hentry:hover,
+.wp .ifixit-promo-wrap .ifixit-promo a:hover p,
+.wp .ifixit-promo-wrap .ifixit-promo a:hover
+{
 	filter: brightness(100%)!important;
 }
 
@@ -1046,7 +1139,7 @@ img {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
-/*__________________________________________________________________________________*/
+/*__________________________________________________________________________________
 
 
 li,
@@ -1065,7 +1158,7 @@ tr:hover {
 	filter: brightness(100%)!important;
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
-
+*/
 /*__________________________________________________________________________________*/
 
 .activity .feed-image,
@@ -1086,355 +1179,166 @@ selector:hover {
 
 @-moz-document domain("ifixit.com") {
 
-.fa-angle-down:before,
-.fa-bar-chart-o:before,
-.fa-bar-chart:before,
-.fa-caret-down:before,
-.fa-check:before,
-.fa-close:before,
-.fa-comment-o:before,
-.fa-comment:before,
-.fa-copy:before,
-.fa-exclamation-circle:before,
-.fa-facebook-f:before,
-.fa-fb:before,
-.fa-files-o:before,
-.fa-flag-checkered:before,
-.fa-github-alt:before,
-.fa-google:before,
-.fa-info-circle:before,
-.fa-instagram:before,
+
+/* Cart _______________________________________________________________*/
+
+[aria-label="my cart"] {
+	background: url(https://i.ibb.co/jv0hNb8/shopping-cart-empty-36x36.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[aria-label="my cart"] {
+    background-size: 26px!important;
+    height: 26px!important;
+    padding-left: 26px!important;
+}
+
+/* List _______________________________________________________________*/
+
 .fa-list-ol:before,
-.fa-plus:before,
-.fa-remove:before,
-.fa-search-plus:before,
-.fa-star:before,
-.fa-times:before,
-.fa-home:before,
-.fa-twit:before,
-.fa-yahoo:before,
-.fa-chevron-right:before,
-.fa-chevron-left:before,
-.fa-angle-right:before,
-.fa-youtube-play:before
-{
+.fa-list-ul:before {
     content: "";
 }
 
-.fa-bar-chart-o:before, .fa-bar-chart:before {
-    background: url(https://i.ibb.co/HhvxTbw/Bar-chart-icon-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+.fa-list-ol:before,
+.fa-list-ul:before {
+	background: url(https://i.ibb.co/pnNpGSt/lines.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-info-circle:before {
-    background: url(https://i.ibb.co/2kB1Kb9/Get-Info-icon-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+.fa-list-ol:before,
+.fa-list-ul:before {
+    background-size: 15px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
 }
 
-.fa-copy:before, .fa-files-o:before {
-    background: url(https://i.ibb.co/RPGTz7B/copy-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+
+/* Search _______________________________________________________________*/
+
+.feather.feather-search,
+.bmRnJ svg {
+	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-search-plus:before {
-    background: url(https://i.ibb.co/7VZryKj/search-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+.feather.feather-search,
+.bmRnJ svg {
+    background-size: 18px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
 }
 
-.fa-close:before, .fa-remove:before, .fa-times:before {
-    background: url(https://i.ibb.co/Xp1Xj6c/close-24x24.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 24px!important;
-	height: 24px!important;
-	padding-left: 24px!important;
+/* Toolbox _______________________________________________________________*/
+
+[aria-label="my workbench"] {
+	background: url(https://i.ibb.co/gmFnVtm/tool-box-36x36.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-flag-checkered:before {
-    background: url(https://i.ibb.co/QDNYCMn/Finish-Flag-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+[aria-label="my workbench"] {
+    background-size: 32px!important;
+    height: 26px!important;
+    padding-left: 30px!important;
 }
 
-.fa-plus:before {
-    background: url(https://image.ibb.co/mnCU7b/add-25x25.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 25px!important;
-    height: 25px!important;
-    padding-left: 25px!important;
 }
 
-.fa-check:before {
-    background: url(https://i.ibb.co/mqx6dSN/Check-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+@-moz-document domain("ifixit.com") {
+
+footer .footer-social-col .footer-social-icons i {
+	background: none;
+    padding: 0px;
+}
+/* Social Media _________________________________________________________*/
+
+/* Email _____________*/
+
+.page_word>section.main_section>.language-container>article.pronunciations>.more_actions>.share ul li .ofLink.email:before {
+	background: url(https://i.ibb.co/cN0T9xm/email.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-exclamation-circle:before {
-    background: url(https://i.ibb.co/0cTDs2C/exclamation-red-20x20.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
+.page_word>section.main_section>.language-container>article.pronunciations>.more_actions>.share ul li .ofLink.email:before {
+    background-size: 30px!important;
+    padding-left: 53px;
 }
 
-.fa-comment-o:before {
-    background: url(https://i.ibb.co/5cT0x39/comment.png) no-repeat!important;
-    box-sizing: border-box!important;
-    width: 35px!important;
-    height: 20px!important;
-    padding-left: 35px!important;
+.page_word>section.main_section>.language-container>article.pronunciations>.more_actions>.share ul li .ofLink.email:before {
+    content: "";
+    line-height: 46px;
+    font-size: 34px!important;
+    margin-left: 0px;
 }
 
-.fa-comment:before {
-    background: url(https://i.ibb.co/b3zGHZH/comment-light-30x24.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 24px!important;
-	padding-left: 30px!important;
-}
+/* Facebook _____________*/
 
-.fa-google:before {
-    background: url(https://i.ibb.co/YfVyzsc/google-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+.fa-facebook-f:before, .fa-fb:before {
+    content: "";
 }
 
 .fa-facebook-f:before, .fa-fb:before {
-    background: url(https://i.ibb.co/jgqmJ6W/social-facebook-button-blue-icon-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+	background: url(https://i.ibb.co/bvgwKNN/facebook-48x48.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-yahoo:before {
-    background: url(https://i.ibb.co/qjy3fyd/yahoo-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+.fa-facebook-f:before, .fa-fb:before {
+    background-size: 35px!important;
+    height: 46px!important;
+    padding-left: 38px;
 }
 
+/* Github _____________*/
 
-.fa-twit:before {
-    background: url(https://i.ibb.co/8jchscq/logo-Twitter-bird-30x21.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
-}
-
-.fa-youtube-play:before {
-    background: url(https://i.ibb.co/8cHpnPV/You-Tube-logo-play-icon-30x23.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+.fa-github-alt:before {
+    content: "";
 }
 
 .fa-github-alt:before {
-    background: url(https://i.ibb.co/pK89B3j/github-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+	background: url(https://i.ibb.co/pK89B3j/github-30x30.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-.fa-instagram:before {
-    background: url(https://i.ibb.co/stpTpx2/instagram-logo-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+.fa-github-alt:before {
+    background-size: 35px!important;
+    height: 46px!important;
+    padding-left: 38px;
 }
 
-.fa-star:before {
-    background: url(https://i.ibb.co/gTrXZTB/star-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 30px!important;
-	height: 30px!important;
-	padding-left: 30px!important;
+/* Twitter _____________*/
+
+.fa-twit:before {
+    content: "";
 }
 
-/* Steps ___________________________________*/
-
-.guide-details-container .details-item svg  {
-    background: url(https://i.ibb.co/sw9jXk2/steps-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
+.fa-twit:before {
+	background: url(https://i.ibb.co/SQGCm92/twitter-48x39.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-/* Time Required ___________________________*/
-
-#guide-time-required svg  {
-    background: url(https://i.ibb.co/LRxDTT8/clock-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
+.fa-twit:before {
+    background-size: 35px!important;
+    height: 46px!important;
+    padding-left: 38px;
 }
 
-/* Flags ____________________________________*/
+/* YouTube _____________*/
 
-#guide-flags svg  {
-    background: url(https://i.ibb.co/VJLpNFN/flag-icon-24x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
+.fa-youtube-play:before {
+    content: "";
 }
 
-/* Sections _________________________________*/
-
-.fa-list-ol:before,
-#guide-sections i:not(.expand) svg  {
-    background: url(https://i.ibb.co/C1Cw0Xd/list-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
+.fa-youtube-play:before {
+	background: url(https://i.ibb.co/8cHpnPV/You-Tube-logo-play-icon-30x23.png) no-repeat!important;
+	box-sizing: border-box;
 }
 
-/* Expanded _________________________________*/
-
-.expand i {
-    background: url(https://i.ibb.co/Gp78W7t/down-arrow-30x30.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
+.fa-youtube-play:before {
+    background-size: 35px!important;
+    height: 46px!important;
+    padding-left: 38px;
 }
-
-.fa-caret-down:before,
-.fa-angle-down:before {
-    background: url(https://i.ibb.co/QDsD3mt/down-arrow-22x22.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
-}
-
-
-/* Difficulty Guages _________________________*/
-
-.guide-details-container .difficulty.moderate-difficulty svg  {
-    background: url(https://i.ibb.co/n6fPwT6/medium-36x29.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 29px!important;
-	padding-left: 36px!important;
-}
-
-.header-icon.cart.cartProductTotalIconToggle.js-mini-cart-toggle.hidden-mobile svg  {
-    background: url(https://i.ibb.co/jv0hNb8/shopping-cart-empty-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
-}
-
-[title="Workbench"] svg  {
-    background: url(https://i.ibb.co/gmFnVtm/tool-box-36x36.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 36px!important;
-	height: 36px!important;
-	padding-left: 36px!important;
-}
-
-[title="Edit"] svg {
-    background: url(https://i.ibb.co/hD543B5/pencil-icon-28x28.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 28px!important;
-	height: 28px!important;
-	padding-left: 28px!important;
-}
-[title="Full Screen"] svg {
-    background: url(https://i.ibb.co/3frJRZy/full-screen-28x28.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 28px!important;
-	height: 28px!important;
-	padding-left: 28px!important;
-}
-
-[title="Notifications"] svg {
-    background: url(https://i.ibb.co/yPrCtMM/bell-24x24.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 28px!important;
-	height: 28px!important;
-	padding-left: 28px!important;
-}
-
-.page-title .title-icon {
-    background: url(https://i.ibb.co/QdqWk20/claim-Your-Business.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 45px!important;
-	height: 56px!important;
-	padding-left: 45px!important;
-}
-
-.fa-chevron-left:before {
-    background: url(https://image.ibb.co/cxwLvR/dark-arrow-left.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
-}
-
-
-.fa-chevron-right:before {
-    background: url(https://image.ibb.co/kLXcaR/dark-arrow-right.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
-}
-
-.fa-angle-right:before {
-    background: url(https://image.ibb.co/kLXcaR/dark-arrow-right.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 20px!important;
-	height: 20px!important;
-	padding-left: 20px!important;
-}
-
-.fa-home:before {
-    background: url(https://i.ibb.co/Fz62Sph/home-28x28.png) no-repeat!important;
-	box-sizing: border-box!important;
-	width: 28px!important;
-	height: 28px!important;
-	padding-left: 28px!important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.8 (β)
+@name           Compact Tube (White) v1.2.9+ (B)
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020112.9.55
+@version        2020112.13.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.8 (β) */
+/* CompactTube (White) v1.2.9 (β) */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -57,10 +57,6 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
                 /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
                 : - "none" - убрать: "flow"- показать.  */
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
-
-
-/* отключить всплывающее предложение попробовать YouTube Premium */
-paper-dialog.ytd-popup-container {display: none}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -2045,7 +2041,7 @@ ytd-comments {
     margin-top: -14px; /*31px,v2 -14px*/ margin-left: 80px; /*80px*/ margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Описанием Видео [не включать position: relative: появляются доп. Скроллбары] ($)*/
 .style-scope ytd-video-secondary-info-renderer {
-                    overflow-x: hidden; /* test : нужен, решает проблему заступов */
+                    -o-overflow-x: hidden; /* test : нужен (а может и нет), решает проблему заступов */
         background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 -o-position: relative; -o-top: 21px; -o-left: 0px;
@@ -2053,7 +2049,7 @@ ytd-comments {
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 /* Блок с Названием Видео*/
 ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
-                    overflow: hidden; /* test : нужен, решает проблему заступов */
+                    -o-overflow: hidden; /* test : НЕ нужен, вредит меню для скачивания видео */
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
 position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}

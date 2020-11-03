@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Slick Boy D
 @description    `This userstyle supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
-@version        2020823.13.13
+@version        2020112.15.21
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown colortheme "Color Theme" {
@@ -76,7 +76,6 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark #app > div.page-content > div > div.filter > div.filter-wrap.mobile-nav-hidden > div:nth-child(3) > div > div.group-header > input,
 .site-theme-dark #app > div.page-content > div > div.content.container > div.overview > div:nth-child(n) > div.grid-section-wrap > div:nth-child(n),
 .site-theme-dark .submission-form .el-input.is-disabled .el-.input__inner,
-.site-theme-dark .submission-form .el-input__inner,
 .site-theme-dark #app > div.page-content > div > div.filter > div.filter-wrap.mobile-nav-hidden > div:nth-child(n) > div:nth-child(n) > div.el-input.el-input--small.el-input--suffix,
 .site-theme-dark div.filters-wrap > div.filters.mobile-nav-hidden > div:nth-child(n) > div:nth-child(n) > div.el-input.el-input--small.el-input--suffix,
 .site-theme-dark #app > div.page-content > div > div.filter > div.filter-wrap.mobile-nav-hidden > div:nth-child(n) > div:nth-child(n) > div.el-select.el-select--small,
@@ -102,8 +101,9 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark .media-card.has-rank,
 .site-theme-dark #app > div.page-content > div > div.search > div > div.filters-wrap.primary-filters > div.extra-filters-wrap > div.dropdown.anime > div:nth-child(1) > div:nth-child(n) > div.select-wrap > div,
 .site-theme-dark .media-card.has-rank, #app > div.page-content > div > div > div.results.table > div:nth-child(n){
-	border: solid 1px rgba(var(--color-foreground-grey))!important;
-	border-radius: 3px;
+	border-top: solid 1px rgba(var(--color-foreground-grey))!important;
+	border-bottom: solid 1px rgba(var(--color-foreground-grey))!important;
+	border-radius: 0px;
 }
 .site-theme-dark .el-slider__runway{
 	background: rgba(var(--color-foreground-grey));

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        20201027.16.36
+@version        2020112.23.46
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -957,6 +957,12 @@ div.ah-gene-select-filters {
 .ah-gene-select-results .common-table tbody tr.ah-gene-select-result.ah-gene-selected td {
     color: #0a141c !important;
 }
+.ah-listing-sold-checkmark {
+    background-image: url(https://i.imgur.com/8ciBKYp.png);
+}
+#ah-sell-middle {
+    background: url(https://i.imgur.com/BhCwtzB.png) no-repeat;
+}
 /* Forums */
 .post-admin .post-text-content, .post-admin .post-text-content li, .post-admin .post-text-content li span {
     color: #ffa58f !important;
@@ -1313,6 +1319,10 @@ div.ff-joxar-item-name, div.ff-joxar-chest-name, span.ff-current-tab, span.ff-jo
 }
 .ff-joxar-item-category, .content-header-sub {
     color: #859197 !important;
+}
+div#ff-currency-tip {
+    border: 2px solid #00080d !important;
+    background: #0c0f11 !important;
 }
 /*Fairgrounds*/
 .faire-tooltip .header h1 {
@@ -1915,6 +1925,18 @@ div.cluetip-inner.ui-cluetip-content div span {
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+img[src="/static/layout/scryer/button_loadmorphology.png"] {
+    content: url(https://i.imgur.com/tHw20Ro.png) !important;
+}
+img[src="/static/layout/scryer/button_savemorphology.png"] {
+    content: url(https://i.imgur.com/F6aSMUy.png) !important;
+}
+img[src="/static/layout/scryer/button_sharemorphology.png"] {
+    content: url(https://i.imgur.com/C6AwbuC.png) !important;
+}
+img[src="/static/layout/game-database/icon-magnifying-glass.png"] {
+    content: url(https://i.imgur.com/zLWbBZo.png) !important;
 }
 img[src="/static/layout/hoard/buttons/stack-function-vista.png"] {
     content: url(https://i.imgur.com/ThWBBE7.png) !important;
@@ -2758,6 +2780,11 @@ div.den-slot-unlock-remaining-footer, div.content-header-sub, div.den-slot-unloc
     background-color: #0e131a !important;
     color: #dae0e7 !important;
     border: none !important;
+}
+#action-pick-tab-icon:after {
+    background: url(https://i.imgur.com/jZIm0kx.png);
+    background-repeat: no-repeat;
+    background-position: center 40px;
 }
 #lair-edit-page #lair-tab-description-length {
     border: 1.5px solid #546d86;

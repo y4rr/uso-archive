@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/WZjK9hvy`
-@version        2020112.10.56
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/NpDeshnq`
+@version        2020112.16.5
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -86,8 +86,9 @@ thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/2),95%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),30%);
 --theme_default_spectext: hsl(290,30%,45%);
---theme_default_postnum: hsl(var(--clr_num),40%);
---theme_default_postnum2: hsl(var(--clr_num),45%);
+--theme_default_quote: hsl(var(--clr_num),40%);
+--theme_default_quote2: hsl(var(--clr_num),45%);
+--theme_default_quote-bg: hsl(var(--clr_num),40%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),0%,.15);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),0%,.2);
 --theme_default_text: hsl(var(--clr),var(--clr2),20%);
@@ -141,8 +142,9 @@ thm-scheme0 "Белая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),100
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/2),95%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),30%);
 --theme_default_spectext: hsl(290,30%,45%);
---theme_default_postnum: hsl(var(--clr_num),40%);
---theme_default_postnum2: hsl(var(--clr_num),45%);
+--theme_default_quote: hsl(var(--clr_num),40%);
+--theme_default_quote2: hsl(var(--clr_num),45%);
+--theme_default_quote-bg: hsl(var(--clr_num),40%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),0%,.15);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),0%,.2);
 --theme_default_text: hsl(var(--clr),var(--clr2),20%);
@@ -196,8 +198,9 @@ thm-scheme2 "Серая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),83%
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/2),85%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),30%);
 --theme_default_spectext: hsl(290,30%,45%);
---theme_default_postnum: hsl(var(--clr_num),40%);
---theme_default_postnum2: hsl(var(--clr_num),45%);
+--theme_default_quote: hsl(var(--clr_num),40%);
+--theme_default_quote2: hsl(var(--clr_num),45%);
+--theme_default_quote-bg: hsl(var(--clr_num),40%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),0%,.15);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),0%,.2);
 --theme_default_text: hsl(var(--clr),var(--clr2),10%);
@@ -318,8 +321,9 @@ ng-thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/3),20%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),70%);
 --theme_default_spectext: hsl(290,30%,60%);
---theme_default_postnum: hsl(var(--clr_num),60%);
---theme_default_postnum2: hsl(var(--clr_num),65%);
+--theme_default_quote: hsl(var(--clr_num),60%);
+--theme_default_quote2: hsl(var(--clr_num),65%);
+--theme_default_quote-bg: hsl(var(--clr_num),60%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),100%,.1);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),100%,.15);
 --theme_default_text: hsl(var(--clr),var(--clr2),85%);
@@ -373,8 +377,9 @@ ng-thm-scheme0 "Темнота" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--cl
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/2),5%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),70%);
 --theme_default_spectext: hsl(290,30%,60%);
---theme_default_postnum: hsl(var(--clr_num),60%);
---theme_default_postnum2: hsl(var(--clr_num),65%);
+--theme_default_quote: hsl(var(--clr_num),60%);
+--theme_default_quote2: hsl(var(--clr_num),65%);
+--theme_default_quote-bg: hsl(var(--clr_num),60%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),100%,.1);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),100%,.15);
 --theme_default_text: hsl(var(--clr),var(--clr2),85%);
@@ -428,8 +433,9 @@ ng-thm-scheme2 "Сумрак" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2
 --theme_default_postbghighlight: hsl(var(--clr_link),calc(var(--clr_link2)/3),30%);
 --theme_default_mod: hsl(var(--clr_link),var(--clr_link2),70%);
 --theme_default_spectext: hsl(290,30%,60%);
---theme_default_postnum: hsl(var(--clr_num),60%);
---theme_default_postnum2: hsl(var(--clr_num),65%);
+--theme_default_quote: hsl(var(--clr_num),60%);
+--theme_default_quote2: hsl(var(--clr_num),65%);
+--theme_default_quote-bg: hsl(var(--clr_num),60%,.1);
 --theme_default_border: hsl(var(--clr),var(--clr2),100%,.15);
 --theme_default_altborder: hsl(var(--clr),var(--clr2),100%,.2);
 --theme_default_text: hsl(var(--clr),var(--clr2),95%);
@@ -1331,8 +1337,8 @@ button[disabled], html input[disabled] {background: var(--theme_default_btnbg) !
 
 .postform__mu-wrapper {margin-left: 28px;}
 .postform__mu {border-radius: 3px; height: 24px; width: 24px; padding: 3px 6px;}
-.postform__mu_type_q {color: var(--theme_default_postnum);}
-.postform__mu_type_q:hover {color: var(--theme_default_postnum2);}
+.postform__mu_type_q {color: var(--theme_default_quote);}
+.postform__mu_type_q:hover {color: var(--theme_default_quote2);}
 
 /*[[report-checkbox]]*/
 input[type="checkbox"] {cursor: pointer; height: 24px; width: 24px; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; margin-top: -2px; vertical-align: middle;}
@@ -1510,7 +1516,7 @@ span[style="background-color: rgb(255, 0, 0);"] {background-color: var(--theme_r
 .post__title {display: inline-block; font-size: 115%; margin-left: 4px;}
 .abupost {color: var(--theme_red);}
 .adm {color: var(--theme_default_spectext) !important;}
-span.postertrip, .post__trip {color: var(--theme_default_postnum);}
+span.postertrip, .post__trip {color: var(--theme_default_quote);}
 .post__mod {color: var(--theme_default_mod); font-size: 0;}
 .post__mod::before {content: "#MOD"; font-size: 13px;}
 span.mod {color: var(--theme_default_mod);}
@@ -1547,12 +1553,12 @@ path[fill="#ececec"] {fill: inherit !important;}
 
 /*[[file-link]]*/
 
-.unkfunc {color: var(--theme_default_postnum);}
+.unkfunc {background: var(--theme_default_quote-bg); border-radius: 3px; color: var(--theme_default_quote); padding: 1px 5px;}
 
 .media-expand-button, .media-hide-button {transition: .1s;}
 .media-expand-button:hover, .media-hide-button:hover {color: var(--theme_default_text);}
 
-.spoiler {background: var(--theme_default_spoiler) !important; color: transparent !important; transition: .1s;}
+.spoiler {background: var(--theme_default_spoiler) !important; border-radius: 3px; color: transparent !important; padding: 1px 5px; transition: .1s;}
 .spoiler a {background: transparent !important; color: transparent !important; transition: .1s;}
 .spoiler:hover {background: var(--theme_default_spoiler) !important; color: var(--theme_default_text) !important;}
 .spoiler:hover a {color: var(--theme_default_link) !important;}
@@ -1706,8 +1712,8 @@ input[type="text"].de-cfg-inptxt {font-family: inherit !important; font-size: 14
 #de-txt-panel div:hover  {fill: var(--theme_default_link);}
 #de-symbol-markup-under path[stroke="#444"], #de-symbol-markup-strike path[stroke="#444"] {stroke: var(--theme_default_text);}
 #de-symbol-markup-spoil path[stroke="#666"] {stroke: var(--theme_default_spoiler);}
-#de-btn-quote {fill: var(--theme_default_postnum);}
-#de-btn-quote:hover {fill: var(--theme_default_postnum2) !important;}
+#de-btn-quote {fill: var(--theme_default_quote);}
+#de-btn-quote:hover {fill: var(--theme_default_quote2) !important;}
 
 .de-file-txt-add {padding: 3px 8px !important; width: unset;}
 

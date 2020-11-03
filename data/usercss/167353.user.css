@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         dellza
 @description    `a quick code just to change text to white, remove some adds and resize the main image`
-@version        2020104.8.19
+@version        2020112.17.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://erai-raws.info/"), url-prefix("http://erai-raws.info/") {
+@-moz-document url-prefix("https://erai-raws.info/"), url-prefix("http://erai-raws.info/"), url-prefix("https://www.erai-raws.info/"), url-prefix("http://www.erai-raws.info/") {
 
 /* this part changes the table size */
 .col-lg-9 {
@@ -26,7 +26,7 @@ body {
 }
 /* reduce padding*/
 #wrapper {
-	margin: 10px auto;
+	margin: 2px auto;
 }
 
 /* removes bar*/
@@ -58,7 +58,7 @@ a {color: rgba(255, 255, 255, 0.5)}
 
 }
 
-@-moz-document url-prefix("https://erai-raws.info/anime-list/"), url-prefix("http://erai-raws.info/anime-list/") {
+@-moz-document url-prefix("https://erai-raws.info/anime-list/"), url-prefix("http://erai-raws.info/anime-list/"), url-prefix("https://www.erai-raws.info/anime-list/"), url-prefix("http://www.erai-raws.info/anime-list/") {
 /* changes some padding/margins */
 .emain {margin-top: -15px; }
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {

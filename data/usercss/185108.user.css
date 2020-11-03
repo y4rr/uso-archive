@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        2020107.15.42
+@version        2020112.14.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,7 +24,7 @@
              background-color: #007188;
         }
 
-.WikiaPage .WikiaPageBackground, .va-titleicons-hover, .WikiaPage .page-header .wds-dropdown__content, .feed-layout, .topic_explore-wikis, .card__info, .hot-block, .wds-dropdown__content, .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list:after, .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list:before, .region-switcher__dropdown, .hero-block .hero-anchor, .hub-feed, .create-new-wiki-wrapper, .create-new-wiki__footer, #create-new-wiki, .wds-input.is-empty>.wds-input__field, .fandom-select__wrapper .fandom-select__value-container, .css-9m0uro, .mainpage-box .staff li:hover, .mainpage-box .featured:hover, .mainpage-box .not-featured:hover, .mainpage-faq h4, .mainpage-faq .faq-list, .mainpage-social, .WikiaRail .module, .MiniEditorWrapper .loading-indicator .loading-background, .WikiaArticleComments .MiniEditorWrapper .editarea, .cke_inner, .cke_wysiwyg_frame, .cke_wysiwyg_div, #bodyContent, .MiniEditorWrapper .toolbar a.cke_button, .MiniEditorWrapper .toolbar a.cke_button:hover, .SpeechBubble .speech-bubble-message, .SpeechBubble.even .speech-bubble-message, .SpeechBubble.owner .speech-bubble-message, .WikiaArticle pre, .forumheader, .UserProfileMasthead .masthead-info, .tabs .selected a, body, .wds-banner-notification, .related-topics .related-topic, .related-topics .edit-topic, .desktop-view, .auth-content, .article-content .article-embed {
+.WikiaPage .WikiaPageBackground, .va-titleicons-hover, .WikiaPage .page-header .wds-dropdown__content, .feed-layout, .topic_explore-wikis, .card__info, .hot-block, .wds-dropdown__content, .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list:after, .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list:before, .region-switcher__dropdown, .hero-block .hero-anchor, .hub-feed, .create-new-wiki-wrapper, .create-new-wiki__footer, #create-new-wiki, .wds-input.is-empty>.wds-input__field, .fandom-select__wrapper .fandom-select__value-container, .css-9m0uro, .mainpage-box .staff li:hover, .mainpage-box .featured:hover, .mainpage-box .not-featured:hover, .mainpage-faq h4, .mainpage-faq .faq-list, .mainpage-social, .WikiaRail .module, .MiniEditorWrapper .loading-indicator .loading-background, .WikiaArticleComments .MiniEditorWrapper .editarea, .cke_inner, .cke_wysiwyg_frame, .cke_wysiwyg_div, #bodyContent, .MiniEditorWrapper .toolbar a.cke_button, .MiniEditorWrapper .toolbar a.cke_button:hover, .SpeechBubble .speech-bubble-message, .SpeechBubble.even .speech-bubble-message, .SpeechBubble.owner .speech-bubble-message, .WikiaArticle pre, .forumheader, .UserProfileMasthead .masthead-info, .tabs .selected a, body, .wds-banner-notification, .related-topics .related-topic, .related-topics .edit-topic, .desktop-view, .auth-content, .article-content .article-embed, .WikiaPage .WikiaPageContentWrapper {
     background: #111;
 }
 .quick-links__social-list-item {
@@ -531,9 +531,6 @@ audio#ogg_player_1_obj {
 .ogg-player-options {
 	border-color: #333;
 }
-.WikiaPage .WikiaPageContentWrapper {
-	background: #1a1a1a;
-}
 .ooui-theme-fandom .wds-community-header .wds-community-header__sitename a, .ooui-theme-fandom .wds-community-header .wds-tabs .wds-tabs__tab-label {
 	color: #eaeaea;
 }
@@ -631,6 +628,9 @@ audio#ogg_player_1_obj {
 }
 [src='https://vignette.wikia.nocookie.net/central/images/d/d3/MovieCrimeFooterImage.png/revision/latest/scale-to-width-down/200?cb=20160219201402'] {
 	filter: invert(100);
+}
+.video-thumbnail .thumbnail-play-icon-container > svg > g > g > g:nth-of-type(2) {
+	fill: #111 !important;
 }
 }
 

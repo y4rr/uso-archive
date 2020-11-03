@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Daniel Billing
 @description    `Dark / Mørkt tema for finn.no, fungerende for designet som brukes i Mai 2020.`
-@version        2020630.0.12
+@version        2020112.14.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -266,6 +266,8 @@ a.button--pill {
     background-color: #222;
 }
 
+
+
 /* FRONTPAGE */
 .u-bg-ice,
 .u-bg-milk {
@@ -353,4 +355,32 @@ a.button--pill {
 .broadcast .broadcast__content {
     color:#333;
 }
+
+.modal__container.u-bg-ice {
+    background-color:#222 !important;
+}
+.panel-loop--tips {
+    background-color:#111;
+}
+
+.panel-loop--tips .panel-loop__header {
+    background-color: #333;
+}
+
+.panel--is-clickable-hack:hover, .panel--is-clickable-hack:focus, .selectedPackageHover {
+    border: 2px solid #0063FB;
+}
+
+.selectedPackage .panel-loop__header, .selectedPackageHover .panel-loop__header {
+    background-color: #0063FB;
+}
+
+.vehicleListCard {
+    background: #111;
+}
+
+.tabs__control {
+    background: transparent;
+}
+
 }
