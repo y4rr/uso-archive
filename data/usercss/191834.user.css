@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           虎扑论坛美化 bbs.hupu.com
+@name           bbs.hupu.com 虎扑论坛美化
 @namespace      USO Archive
 @author         voidsea
 @description    `美化字体和主题展示`
-@version        2020112.7.50
+@version        2020113.6.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,12 +18,74 @@ body, button, input, select, textarea,li  {
     font-size: 14px;
 }
 
+/* top nav */
 #hp-topbarNav{
+    margin: 4px 0 0 0;
     background: none;
     border: none;
 }
 
+.hp-logo{
+    display: none;
+}
+.hp-mainNav-B{
+    margin: 0 !important;
+    opacity: .5;
+}
+.hp-mainNav-B:hover{
+    opacity: 1;
+}
+
+.hp-threeNav{
+    border: none;
+}
+.hp-threeNav .hp-threeNav-bd .hp-threeNav-item li a{
+    background: none;
+    border: none;
+    border-radius: 8px;
+}
+.hp-threeNav .hp-search .it-search:not(:focus){
+    width: 80px;
+}
+
+
 /* post list */
+body .bbs-content{
+    border: none;
+    background: none;
+}
+body .bbs-content #container{
+    background: none;
+}
+body .bbs-content #container .container_padd{
+    background: none;
+    border:none;
+}
+body .bbs-content #container .container_padd .bbsHotPit{
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.bbsHotPit .bbs_head .left{
+    background: none !important;
+}
+body .bbs-content #container .container_padd .bbsHotPit h1{
+    color: #a92229; 
+}
+
+.bbsHotPit .show-list .show-tit{
+    display: none;
+}
+
+.bbsHotPit .show-list .for-list li{
+    padding: 4px;
+    border-bottom: none;   
+}
+.showPlate .bbs_banner li a:not(:hover){
+    background: none;
+}
+
 .bbsHotPit .show-list .for-list li{
     font-size: 100%;
 }
@@ -36,29 +98,59 @@ body, button, input, select, textarea,li  {
 }
 
 /* post view */
+.details #container{
+    background: none;
+    border: none;
+}
 .details #container #container_nopadd {
     border: none;
+    background: none;
+}
+
+.details #container #container_nopadd #sub_line #t_main{
     background: #fff;
+    border-radius: 8px;
+}
+
+#sub_sidebar{
+    background: none;
+}
+.sidebar-ad-C .shihuo_photo_news{
+    border: none;
+    opacity: .5;
+}
+.sidebar-ad-C .shihuo_photo_news:hover{
+    opacity: 1;
+}
+
+.feedhome h3{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
 .floor{
-    margin: 10px 4px;
+    margin: 0;
     padding: 8px 0;
     background: #fff;
     border: none;
 }
 
 .floor .user{
-    padding: 0 8px;
+    padding: 0;
 }
 .floor .user img{
-    border: 1px solid rgba(0,0,0,.3);
+    border: none;
     border-radius: 100%;
 }
 
 .floor_box {
-   background: #fff;
+    margin-left: 56px;
+    background: #fff;
     line-height: 180%;
+}
+#tpc .floor_box{
+    margin-left: 56px;
 }
 
 .floor_box .author .left a.u{
@@ -79,6 +171,10 @@ body, button, input, select, textarea,li  {
 .floor_box .case img{
     border: 1px solid rgba(0,0,0,0.1);
 }
+.floor .user .headpic img{
+    padding: 0;    
+}
+
 
 #code, .quote, .floor_box blockquote{
     background: rgba(0,0,0,0.05);
@@ -89,6 +185,7 @@ body, button, input, select, textarea,li  {
 .w_reply{
     background: #f9f6ee;
     border: 1px solid #fc0;
+    border-radius: 8px;
 }
 .w_reply h5{
     margin: 8px;
@@ -108,6 +205,28 @@ body, button, input, select, textarea,li  {
     background: rgba(0,0,0,0.05);
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 8px;
+    opacity: 0.7;
 }
+
+/* reply box */
+#re #re_top, #re #re_bottom{
+    background: none;
+}
+
+#re #re_box{
+    background: rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 12px;
+}
+
+#re #re_box .left .headpic img{
+    border-radius: 100%;
+}
+
+#re #re_box .j_enter{
+    display: block;
+}
+
+
 
 }

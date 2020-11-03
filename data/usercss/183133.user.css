@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         Ticpo
 @description    `Adds the ui of jd2020 to jdn.If planning to use code from this style, please ask me beforehand on discord. (Ticpo#8562)Huge thanks to Winchester for adding almost all of the album coaches!`
-@version        2020815.23.10
+@version        2020113.5.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("justdancenow.com") {
+
 #afterdance .players.player-solo .color
 {
     width: 35% !important;
@@ -16,17 +17,17 @@
     font-size: 0%
 }
 
-#afterdance .players.player-solo .blue .player-content::after, #afterdance .players.player-solo .blue .color
+#afterdance .players.player-solo .blue .player-content::after, #afterdance .players.player-solo .blue .color, .blue .player-color
 {background-image:linear-gradient( 90deg, #3a71c9 0%, #2a17bb 100%) !important}
-#afterdance .players.player-solo .red .player-content::after, #afterdance .players.player-solo .red .color
+#afterdance .players.player-solo .red .player-content::after, #afterdance .players.player-solo .red .color, .red .player-color
 {background-image:linear-gradient( 90deg, #ff791a 0%, #e71916 100%) !important}
-#afterdance .players.player-solo .green .player-content::after, #afterdance .players.player-solo .green .color
+#afterdance .players.player-solo .green .player-content::after, #afterdance .players.player-solo .green .color, .green .player-color
 {background-image:linear-gradient( 90deg, #61dd19 0%, #5eb61b 100%) !important}
-#afterdance .players.player-solo .purple .player-content::after, #afterdance .players.player-solo .purple .color
+#afterdance .players.player-solo .purple .player-content::after, #afterdance .players.player-solo .purple .color, .purple .player-color
 {background-image:linear-gradient( 90deg, #8900b6 0%, #6b43c8 100%) !important}
-#afterdance .players.player-solo .aqua .player-content::after, #afterdance .players.player-solo .aqua .color
+#afterdance .players.player-solo .aqua .player-content::after, #afterdance .players.player-solo .aqua .color, .aqua .player-color
 {background-image:linear-gradient( 90deg, #42dd9c 0%, #3cb8bc 100%) !important}
-#afterdance .players.player-solo .pink .player-content::after, #afterdance .players.player-solo .pink .color
+#afterdance .players.player-solo .pink .player-content::after, #afterdance .players.player-solo .pink .color, .pink .player-color
 {background-image:linear-gradient( 90deg, #e50191 0%, #c114d1 100%) !important}
 
 #afterdance .players.player-solo .player-content::after
@@ -171,7 +172,7 @@
 
 .landing-button__play::before
 {
-    background: linear-gradient(20deg, #6d9eebff 0%, #b4a7d6ff 100%) !important;
+    background: linear-gradient(20deg, #de279b 0%, #ef5ab3 100%) !important;
     width: 350%;
     border-radius: 20px;
     content: "Just Dance";
@@ -180,7 +181,7 @@
     font-size: 450%;
     top: 50%;
     left: -120%;
-    box-shadow: 0px 0px 12px -0.8px #6d9eebff;;
+    box-shadow: 0px 0px 12px -0.8px #de279b;;
     height: 95%
     
 }
@@ -204,7 +205,7 @@
 
 .landing-button__play
 {
-    top: 70%;
+    top: 250%;
     position: absolute;
     transition: all 0.1s;
     opacity: 1;
@@ -219,7 +220,7 @@
 .video-display__poster, .article__image.polaroid__img, iframe
 {
     padding: 1%;
-    border: 4.5px solid #6d9eebff;
+    border: 4.5px solid #de279b;
     border-radius: 18px;
     box-shadow: none !important
 }
@@ -241,12 +242,13 @@
     height:100%;
     width:100vw;
     position:absolute;
-    top:-10vh;
-    left:0vw;
+    top:-5vh;
+    left:2vw;
     background-image:url(https://imgur.com/OyO2Ieq.png);
     background-repeat:no-repeat;
-    background-size:cover;
-    transform: scale(0.6);
+    background-size:contain;
+    background-position: center !important;
+    transform: scale(0.7);
     -webkit-mask-image: linear-gradient(180deg, rgb(0, 0, 0) 96%, #f000 100%) !important;
 }
 
@@ -254,31 +256,32 @@
 {
     content:'';
     height:100%;
-    width:100vw;
+    width:70vw;
     position:absolute;
-    top:-20vh;
-    left:-0vw;
+    top:-10vh;
+    left:15vw;
     background-image:url(https://imgur.com/OyO2Ieq.png);
     background-repeat:no-repeat;
-    background-size:cover;
-    transform: scale(0.6);
+    background-size:contain;
+    transform: scale(0.7);
     z-index: 99999999999999999999999 !important;
     animation: LandingBeat 2s infinite !important;
     -webkit-mask-image: linear-gradient(180deg, rgb(0, 0, 0) 96%, #f000 100%) !important;
+    background-position: center
 }
 
 .landing-text::after
 {
     content:'';
     height:100%;
-    width:100vw;
+    width:70vw;
     position:absolute;
-    top:-20vh;
-    left:-0vw;
+    top:-10vh;
+    left:15vw;
     background-image:url(https://imgur.com/KnxMlUp.png);
     background-repeat:no-repeat;
-    background-size:cover;
-    transform: scale(0.5);
+    background-size:contain;
+    transform: scale(0.6);
     -webkit-mask-image: linear-gradient(180deg, rgb(0, 0, 0) 96%, #f000 100%) !important;
 }
 
@@ -286,22 +289,22 @@
 {
     0%
     {
-        transform: scale(0.6)
+        transform: scale(0.7)
     }
     
     1%
     {
-        transform: scale(0.58)
+        transform: scale(0.68)
     }
     
     20%
     {
-        transform: scale(0.6)
+        transform: scale(0.7)
     }
     
     100%
     {
-        transform: scale(0.6)
+        transform: scale(0.7)
     }
 }
 
@@ -403,9 +406,15 @@
 
 
 
-.tabs--text, .state-songselection .song-cover, #players::before,  .controller-coins, .player-master, .state-songselection .player-color, .connect-phone-info.connect-phone-info--clickable.connect-phone-info--visible, .reward__wrapper, .danceroom__qr-code-wrapper, .danceroom__label, .room-info__patch, #players.finding-dancers, #players.removing-dancers, .sprite, .coach::before, .state-coachselection .song-grid, .state-coachselection .song-details, .state-coachselection .video-preview, .state-coachselection .song-action, .tutorial::before, .tutorial::after, .state-coachselection .highscore-display, .owner-name, .state-dance .avatar-wrapper, .state-dance .player-exp, .state-dance .player-flag, .platform, #afterdance .song-info, .modal__container.modal__container--active::after, .modal.modal--active::before, .caption.artist,  .song__decoration::after, .song-action__button::before, .song-action__button::after, .landing-circle, .landing__video, .landing-arrow.scroll_down, .landing-text__title, .landing-text__subtitle, .video-display::before, .logo, .songlist-container .song-grid--description, .song-grid--close, .song-grid--duration, .playlist--description, .playlist-action__button, .line::after, .article::before, .exit-btn.exit-btn--play-again.exit-btn--animate, .exit-btn.exit-btn--continue.exit-btn--animate::before, .account, .landing-patch, .dr-landing__icon-wrapper, .score.superstar::after, .score.megastar::after, .main-header
+.tabs--text, .state-songselection .song-cover, #players::before,  .controller-coins, .player-master, .state-songselection .player-color, .connect-phone-info.connect-phone-info--clickable.connect-phone-info--visible, .reward__wrapper, .danceroom__qr-code-wrapper, .danceroom__label, .room-info__patch, #players.finding-dancers, #players.removing-dancers, .sprite, .coach::before, .state-coachselection .song-grid, .state-coachselection .song-details, .state-coachselection .video-preview, .state-coachselection .song-action, .tutorial::before, .tutorial::after, .state-coachselection .highscore-display, .owner-name, .state-dance .avatar-wrapper, .state-dance .player-exp, .state-dance .player-flag, .platform, #afterdance .song-info,   .caption.artist,  .song__decoration::after, .song-action__button::before, .song-action__button::after, .landing-circle, .landing__video, .landing-arrow.scroll_down, .landing-text__title, .landing-text__subtitle, .video-display::before, .logo, .songlist-container .song-grid--description, .song-grid--close, .song-grid--duration, .playlist--description, .playlist-action__button, .line::after, .article::before, .exit-btn.exit-btn--play-again.exit-btn--animate, .exit-btn.exit-btn--continue.exit-btn--animate::before, .account, .landing-patch, .dr-landing__icon-wrapper, .score.superstar::after, .score.megastar::after, .main-header, .coach-selection__button::after, .coach-selection__button::before, .modal__link.openIframe, .song__difficulty, .state-songselection .feedback, .highscore-display
 {
     display: none !important;
+}
+
+.song__difficulty
+{
+    top: -5% !important;
+    z-index: 99999999999999999 !important
 }
 
 .exit-btn.exit-btn--continue.exit-btn--animate
@@ -413,21 +422,78 @@
     top:88%
 }
 
-.modal__container.modal__container--active::before
+.modal__container::after
 {
-    left: 13%;
-    width: 87%;
-    background: white
+    background-image:linear-gradient( 90deg, #ff791a 0%, #e71916 100%) !important;
+    height: 13%;
+    top: 5%;
+    left: 8%;
+    width: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
 }
 
-.modal__container.modal__container--active, .modal__close
+.modal__wrapper {
+    height: 100%;
+    -webkit-transform: translate(-0%, 0);
+    -ms-transform: translate(-0%, 0);
+    transform: translate(-0%, 0) scale(0.95);
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.modal--active .modal__wrapper {
+    transition: all 0.1s;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0) scale(1.0);
+    opacity: 1
+}
+
+.modal.modal--active::before
+{
+    background: white;
+    transform: scale(1.2)
+}
+
+.modal
+{
+    transform: scale(0.9)
+}
+
+.modal__container::before
+{
+    left: 8%;
+    width: 85%;
+    background: white;
+    box-shadow: 0rem 0rem 0.2em 0.005rem #2789de;
+    height: 90%;
+    top: 5%;
+    border-radius: 20px;
+}
+
+.concept__line.concept__line--shift-left.concept__title, .modal__close
+{
+    color: white;
+    z-index: 999999999999999 !important
+}
+
+.modal__close
+{
+    top: 8%
+}
+
+.modal__container.modal__container--active
 {
     color: #4b494b;
+    z-index: 999999999999999 !important
 }
 
 .concept__line.concept__line--shift-left.concept__title
 {
-    font-family: Just Dance
+    font-family: Just Dance;
+    left: -10%;
+    top: -0.1rem !important
 }
 
 .concept, .steps__connect
@@ -441,7 +507,7 @@
     opacity: 1;
     height: 20%;
     box-shadow: none;
-    box-shadow: 0px 0px 12px -0.8px #6d9eebff;
+    box-shadow: 0px 0px 12px -0.8px #de279b;
 }
 
 .state-coachselection #toast
@@ -517,6 +583,11 @@
     left: 70%;
 }
 
+.score__display
+{
+    font-family: helveticaneue-medium !important
+}
+
 .score__stars
 {
     top: 50%;
@@ -554,21 +625,22 @@
 #room-info
 {
     background: #def3f4;
-    left: 1%;
-    width: 11.4%;
+    left: 0.4%;
+    width: 11.55%;
     border-radius: 10px;
-    height: 3% !important;
-    min-height: 10% !important;
-    top: 2%;
+    height: 9% !important;
+    min-height: 0% !important;
+    top: 0.7%;
     opacity: 0;
-    transition: none !important
+    transition: none !important;
+    
 }
 
 .danceroom__number
 {
     text-shadow: none;
     color: #3ed8bc;
-    font-size: 40%;
+    font-size: 30%;
     text-align: center !important
 }
 
@@ -585,13 +657,18 @@
     src: url('https://dl.dropboxusercontent.com/s/63qqnyfy9s1cl60/HelveticaNeueLTW1G-BdCn.woff2?dl=0') format('woff2');
 }
 
+@font-face{
+    font-family:"helveticaneue-medium";
+     src: url('https://dl.dropboxusercontent.com/s/sfkrh4w30jsznzl/HelveticaNeueMedium.woff?dl=0') format('woff')
+}
+
 .state-songselection #players
 {
     background:#def3f4;
-    top: 48%;
-    left: 1.1%;
-    width: 11%;
-    height: 50%;
+    top: 40.4%;
+    left: 0.4%;
+    width: 11.5%;
+    height: 59%;
     border-radius: 10px
 }
 
@@ -602,14 +679,16 @@
 
 .state-songselection .dancercard
 {
-    top: 30%;
+    top: 38%;
     left: -7%
 }
 
 .state-songselection .dancercard .avatar-wrapper
 {
     transform: scale(1.3);
-    animation: none !important
+    animation: none !important;
+    background-image: url(https://imgur.com/Pv0uhDh.png);
+    background-size: contain
 }
 
 .state-songselection .player-exp
@@ -619,7 +698,7 @@
     border: solid #3ed8bc 2px;
     border-radius: 100px;
     font-family: Just Dance;
-    background: #6d9eebff !important;
+    background: linear-gradient(90deg, #ade612 0%, #20d12c 100%) !important;
 }
 
 .state-songselection .player-flag
@@ -632,16 +711,17 @@
 
 .tabs--connect
 {
-    width: 163%;
-    background-size: 10%;
-    left: 16%;
-    height: 10%;
-    top: 23.5%;
+    width: 169%;
+    background-size: 20% !important;
+    left: 5%;
+    height: 11%;
+    top: 14.3%;
     border-radius: 10px;
     background:#def3f4;
     background-image: url(https://imgur.com/3lNIhNl.png);
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center !important;
+    opacity: 1;
 }
 
 .tabs--connect:hover
@@ -651,15 +731,16 @@
 
 .tabs
 {
-    width: 150%;
+    width: 156%;
     box-shadow: none !important;
     border-radius: 10px;
-    transform: translatex(10%) translatey(-26%);
+    transform: translatex(3%) translatey(-45%);
+    opacity: 2
 }
 
 ul.tabs li[section-id="songlist"]
 {
-    transform: translatey(10%) 
+    transform: translatey(5%) 
 }
 
 ul.tabs li
@@ -667,6 +748,7 @@ ul.tabs li
     background:#def3f4;
     border-radius: 10px;
     width: 110% !important;
+    height: 0.54rem !important
 }
 
 ul.tabs li.selected
@@ -686,14 +768,14 @@ ul.tabs li:hover .tabs--icon
 {
     box-shadow: none !important;
     border-radius: 10px;
-    background: linear-gradient(315deg, #6d9eebff 0%, #b4a7d6ff 100%) !important;
+    background: linear-gradient(315deg, #de279b 0%, #ef5ab3 100%) !important;
 }
 
 ul.tabs li[section-id="playlist"].selected::before 
 {
     box-shadow: none !important;
     border-radius: 10px;
-    background: linear-gradient(90deg, #ff9900ff 0%, #ff0000ff 100%) !important;
+    background: linear-gradient(90deg, #ade612 0%, #20d12c 100%) !important;
 }
 
 ul.tabs li[section-id="playlist"].selected .tabs--icon
@@ -716,6 +798,49 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     background-image: url(https://imgur.com/Za7VoFP.png) !important;
 }
 
+html.ftue ul.tabs::after {
+    content: '';
+    width: 101%;
+    height: 0% !important;
+    background: #fff0;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+ul.tabs li[section-id="songlist"] .tabs--icon {
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+    height: 0.25rem;
+    width: 0.25rem;
+    margin-right: 42%;
+    transform: scale(0.8) !important;
+}
+
+ul.tabs li.selected .tabs--icon {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(0.8) !important;
+    margin-right: 35% !important
+}
+
+ul.tabs li[section-id="playlist"].selected .tabs--icon {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(0.7);
+    margin-right: 30% !important;
+    margin-top: -3% !important
+}
+
+ul.tabs li[section-id="playlist"] .tabs--icon {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(0.7) !important;
+    margin-right: 37% !important;
+    margin-top: -3% !important
+}
+
 #coverflow
 {
     background: none
@@ -734,10 +859,11 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .song-cover--low-res
 {
-    top: -92.5%;
-    transform: scale(0.25);
-    left: -265%;
-    border-radius: 40px
+    top: -93.85%;
+    transform: scale(0.26);
+    left: -266%;
+    border-radius: 40px;
+    position: fixed !important
 }
 
 .song-cover::before 
@@ -745,13 +871,13 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     content: "";
     position: fixed;
     display: block;
-    top: -12%;
+    top: -22%;
     height: 200%;
     left: 0%;
     width: 100%;
     background-position: center;
     background-size: cover;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .song-cover--hi-res
@@ -771,7 +897,7 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 .state-coachselection .song-cover::before
 {
     animation: CoverInKey 3s !important;
-    left:11110%;
+    left:1111110%;
 }
 
 @keyframes CoverInKey
@@ -826,20 +952,19 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .song-grid--description
 {
-    font-family: JD Regular !important;
-    letter-spacing: 0.2px !important
+    font-family: helveticaneue-medium !important;
 }
 
 .song-grid--title
 {
     font-family: Just Dance !important;
-    color: #6d9eebff !important;
+    color: #de279b !important;
 }
 
  #section-songlist .song-grid--title
 {
     font-family: JD Regular !important;
-    color: #6d9eebff !important;
+    color: #de279b !important;
     letter-spacing: 0.1px
 }
 
@@ -862,9 +987,10 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .playlist-container .song-grid--details
 {
-    background: linear-gradient(90deg, #ff9900ff 0%, #ff0000ff 100%) !important;
+    background: linear-gradient(90deg, #ade612 0%, #20d12c 100%) !important;
     border-radius: 10px;
-    height: 14%
+    height: 14%;
+    width: 36.7%
 }
 
 .playlist--title
@@ -898,14 +1024,19 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 .playlist-grid .item-container .item.item-selected .song__cover,
 .song__cover,
 .song--focused .song__cover{
-  height: 96%;
-  width: 100%;
-  padding: 2%;
+    height: 96%;
+    width: 100%;
+    padding: 2%;
     border-radius: 15px !important
 }
 .grid-container .item-container .item.item-selected .song__cover {
     border-radius: 15px;
-    border: solid #6d9eebff 4px
+    border: solid #de279b 4px;
+}
+
+.playlist-container .item-container .item.item-selected .song__cover {
+    border-radius: 15px;
+    border: solid #ade612 4px !important; 
 }
 
 .item
@@ -942,21 +1073,23 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .song-details.song-details--empty
 {
-    width: 80% !important;
-    height: 22%;
+    width: 83% !important;
+    height: 18%;
     z-index: 9999999999999999999999 !important;
     border-radius: 10px !important;
-    background: linear-gradient(20deg, #6d9eebff 0%, #b4a7d6ff 100%) !important;
-    top: 18% !important;
-    left: -39% !important;
-    box-shadow: 0px 0px 15px -0.3px #6d9eebff;
-    
+    background: linear-gradient(20deg, #de279b 0%, #ef5ab3 50%, #de279b 100%) !important;
+    top: 27% !important;
+    left: -44% !important;
+    box-shadow: 0px 0px 15px -0.3px #de279b;
+    border-top-left-radius: 10%;
+    color: white !important
 }
 
 .song-detail.song__infos
 {
     padding: 0% !important;
-    margin-right: 0% !important
+    margin-right: 0% !important;
+    transform: translatey(-8%)
 }
 
 .song-detail
@@ -966,9 +1099,16 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .video-preview
 {
-    width: 170%;
-    left: -20%;
-    box-shadow: 0px 0px 10px -0.3px #6d9eebff;
+    width: 177%;
+    left: -35%;
+    box-shadow: 0px 0px 10px -0.3px #de279b;
+    top: 5%;
+    transform: scale(0.9)
+}
+
+.song-preview--hidden
+{
+    opacity:1 !important;visibility:visible !important;transition:opacity 0.3s, visibility 0s 0.3s
 }
 
 .title-container
@@ -981,21 +1121,37 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 .song-detail__title
 {
     font-family: Just Dance !important;
-    font-size: 23% !important
+    font-size: 21% !important;
+    letter-spacing: 0.005em !important;
+    transform: translatey(21%);
+    color: white !important;
+    text-shadow: none !important
 }
 
 .song-detail__artist
 {
-    font-family: JD Regular !important
+    font-family: JD Regular !important;
+    letter-spacing: 0.015em !important;
+    font-size: 11% !important;
+    color: white !important;
+    text-shadow: none !important;
+    transform: translatey(0%);
+    opacity: 0.7
 }
 
 .song-action__button, .playlist-action__button
 {
-    left: 20%;
-    background: linear-gradient(315deg, #6d9eebff 0%, #b4a7d6ff 100%) !important;
+    left: -3%;
+    background: linear-gradient(315deg, #de279b 0%, #ef5ab3 100%) !important;
     top: -45%;
-    box-shadow: 0px 0px 15px -0.3px #6d9eebff;
-    font-family: JD Regular !important
+    box-shadow: 0px 0px 15px -0.3px #de279b;
+    font-family: JD Regular !important;
+    transform: scale(1);
+    text-transform: uppercase;
+    font-size: 15%;
+    width: 80%;
+    height: 70%;
+    
 }
 
 .state-coachselection .player__name
@@ -1013,7 +1169,7 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 {
     left: 90%;
     bottom: -10% !important;
-    transform: scale(1.2) translatey(30%);
+    transform: scale(1.1) translatey(30%);
     font-family: Just Dance;
     color: #4b494b !important;
     height: 150%
@@ -1024,7 +1180,7 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     background: white !important;
     opacity: 1;
     border-radius: 10px;
-    height: 18%
+    height: 16%
 }
 
 .coach__player-list::before
@@ -1033,8 +1189,8 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     font-family: JD Regular;
     color: #89888a !important;
     position: fixed !important;
-    font-size: 70%;
-    transform: translatex(0%) translatey(180%)
+    font-size: 60%;
+    transform: translatex(0%) translatey(190%)
 }
 
 .coach__img 
@@ -1043,6 +1199,8 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     left: 0%;
 }
 
+
+
 .coach-selection__title 
 {
     display: none;
@@ -1050,7 +1208,7 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .coach-selection__list 
 {
-    top: 20%;
+    top: 17%;
     right: 0%;
 }
 
@@ -1059,32 +1217,55 @@ ul.tabs li[section-id="songlist"] .tabs--icon
     background-color: #fff !important;
     background-image: none;;
     border-radius: 10px;
-    left: 5%;
-    width: 25%;
+    left: 4%;
+    width: 21% !important;
     height: 10%;
-    transform: scale(1.3)
+    transform: scale(1.3);
+    min-width: 0rem;;
+    top: 3.5%;
 }
+
+.coach-selection__list.coach-selection__list--2 [data-id="1"]
+{
+    left: -19%   
+}
+
+.coach-selection__list.coach-selection__list--2 [data-id="2"]
+{
+    left: 5%   
+}
+
 
 .coach-selection__details-song
 {
     color: #4b494b;
     font-family: Just Dance;
-    font-size: 18% !important;
-    transform: translatex(17%) translatey(20%);
+    font-size: 14% !important;
+    transform: translatex(22%) translatey(40%);
+    -webkit-mask-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, #f000  85%, #f000 100%) !important;
 }
 
 .coach-selection__details-artist
 {
     color: #89888a !important;
-    transform: translatex(17%) translatey(20%);
-    font-family: JD Regular !important
+    transform: translatex(22%) translatey(40%);
+    font-family: JD Regular !important;
+    -webkit-mask-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, #f000  85%, #f000 100%) !important;
+    font-size: 11% !important;
 }
 
 .coach-selection__back
 {
-    top: 105%;
-    left: 2%
+    top: 104%;
+    left: 7.1%;
+    transform: scale(0.78)
 }
+
+.coach-selection__back:hover
+{
+    transform: scale(0.78)
+}
+
 
 .coach-selection__back::before
 {
@@ -1113,9 +1294,10 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .coach-selection__bgImg
 {
-    height: 100%;
-    width: 100%;
-    top: 0%;
+    height: 98%;
+    width: 101.3%;
+    top: -1.4%;
+    left: -.7%;
     transform: scale(1.0);
     background-size: 0% !important;
     border-radius: 10px;
@@ -1131,11 +1313,14 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 
 .coach-selection__button
 {
-    transform: translatey(180%) translatex(-10%) !important;
+    transform: translatey(145%) translatex(-30%) !important;
     background: linear-gradient(270deg, rgba(40,210,187,1) 0%, rgba(46,216,162,1) 50%, rgba(40,210,187,1) 100%);
-    width: 18%
+    width: 20%;
+    border-radius: 100px;
+    font-family: JD Regular !important;
+    height: 8.5%;
+    text-transform: uppercase
 }
-
 .coach-selection__details,
 .coach-selection__back,
 .coach-selection__button,
@@ -1176,32 +1361,33 @@ ul.tabs li[section-id="songlist"] .tabs--icon
 #players .stars {
     top: 65% !important;
     transform: scale(0.75);
+    left: -23%
 }
 
 .dancercard .player-name
 {
     top: -1%;
-    left: 6% !important;
+    left: 5.5% !important;
     width: 85.5% !important;
     text-align: center !important;
     text-shadow: none !important;
     font-family: Just Dance;
-    transform: scale(1.5) !important
+    transform: scale(1.8) !important;
+    letter-spacing: .1px
 }
 
 .state-dance .dancercard .player-name em {
-  text-shadow: 0px 0px 0 #504f4f, 0px 0px 0 #504f4f, 0px 0px 0 #504f4f,
-    0px 0px 0 #504f4f, 0px 0px 0 #504f4f;
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.3)!important;
 }
 
 .dancercard .player-color
 {
     -webkit-border-radius: 5px;
-    width: 85%;
+    width: 80%;
     height: 20%;
     top: 40%;
-    min-width: 85% !important;
-    margin-left: 8%;
+    min-width: 5% !important;
+    margin-left: 10.5%;
 }
 
 .state-dance #players {
@@ -1255,8 +1441,8 @@ html:not(.ipad) .hud.beat > #players.animate .player-color
 #players .feedback-perfect {
     background: url(https://imgur.com/jd4knaw.png) no-repeat top/ 55% 70%;
     height: 160%;
-    width: 145%;
-    left: -22%
+    width: 185%;
+    left: -43%
 }
 
 .feedback-label.feedlabel-perfect,
@@ -1330,12 +1516,12 @@ html:not(.ipad) .hud.beat > #players.animate .player-color
 }
 
 #lyrics .line.current {
-    transform: translatey(-50%);
+    transform: translatey(-30%);
     transition: .2s all !important
 }
 
 #lyrics .line.previous {
-    transform: translatey(-50%) !important;
+    transform: translatey(-30%) !important;
     transition: .2s all !important
 }
 
@@ -1374,11 +1560,12 @@ html:not(.ipad) .hud.beat > #players.animate .player-color
 
 #lyrics {
     transform: scale(0.85);
-    left: 0.5%;
-    top: 90%;
+    left: 2%;
+    top: 89%;
     z-index: 99999999999999999999999999999 !important;
-    font-family: JD Regular;
-    
+    font-family: helveticaneue-medium !important;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3)!important;
+    letter-spacing: 0.03em
 }
 
 .fragment, .fragment.unfilled {
@@ -1397,13 +1584,16 @@ html:not(.ipad) .hud.beat > #players.animate .player-color
     height: 13% !important;
     bottom: -3.5% !important;
     left: -48%;
-    background-image: url(https://imgur.com/G2JQ4vZ.png);
+    background-image: url(https://imgur.com/Cl28TvJ.png);
     background-size: 100% 100% !important;
     background-position: center !important;
     border-bottom: none;
-    opacity: 1 !important
+    opacity: 1 !important;
 }
 
+.hud.beat > #players.animate .player-stars .star:not(.no-beat)::before {
+    animation: none !important
+}
 
 html:not(.ipad) .hud.beat>#pictos>#beat
 {
@@ -1421,8 +1611,8 @@ html:not(.ipad) .hud.beat>#pictos>#beat
 }
 
 #pictos.multi-coach #beat {
-    width: 38% !important;
-    left: -40%
+    width: 35% !important;
+    left: -40%;
 }
 .picto {
     left: -60% !important;
@@ -1440,7 +1630,7 @@ html:not(.ipad) .hud.beat>#pictos>#beat
     
     10% {
         opacity: 1;
-        transform: scale(1.1, 1.0);
+        transform: scale(1.08, 1.0);
     }
 
     00% {
@@ -1451,12 +1641,13 @@ html:not(.ipad) .hud.beat>#pictos>#beat
 
 #racetrack
 {
-    top: 23% !important;
+    top: 22.5% !important;
+    left: 1% !important
 }
 
 #racetrack .progress-bar {
-        right: -10%;
-        width: 45%;
+        right: 5%;
+        width: 35%;
     border: none !important
     }
 
@@ -1493,29 +1684,30 @@ html:not(.ipad) .hud.beat>#pictos>#beat
 
 #racetrack .star
 {
-    transform: scale(0.8) rotate(-15deg) !important
+    transform: scale(1) rotate(-135deg) !important;
+    left: 10%
 }
 
 @keyframes racetrack-star-beat
 {
     0%
     {
-        transform:scale(0.8) rotate(-15deg)
+        transform:scale(1) rotate(-135deg)
     }
     
     15%
     {
-        transform:scale(0.88) rotate(-15deg)
+        transform:scale(1.08) rotate(-135deg)
     }
     
     80%
     {
-        transform:scale(0.8) rotate(-15deg)
+        transform:scale(1) rotate(-135deg)
     }
     
     100%
     {
-        transform:scale(0.8) rotate(-15deg)
+        transform:scale(1) rotate(-135deg)
     }
 }
 
@@ -1934,7 +2126,7 @@ html:not(.ipad) .hud.beat>#pictos>#beat
 
 #just-dance-now
 {
-    background: #fff
+    background: #fff;
 }
 
 .Sushii::before
@@ -4982,4 +5174,16 @@ html:not(.ipad) .hud.beat>#pictos>#beat
 {background-image: url(https://vignette.wikia.nocookie.net/justdance/images/2/21/MasQueNada_Cover_AlbumCoach.png/revision/latest?cb=20200806110252)}
 .LaRespuesta:before
 {background-image: url(https://vignette.wikia.nocookie.net/justdance/images/c/c3/Larespuesta_cover_albumcoach.png/revision/latest?cb=20200802050819)}
+.Kuliki::before
+{background-image: url(https://imgur.com/ooQwWdy.png) !important}
+.WithoutMe:before
+{background-image: url(https://imgur.com/CCiCURD.png) !important}
+.Sorbet:before
+{background-image: url(https://static.wikia.nocookie.net/justdance/images/b/b7/Sorbet_Cover_AlbumCoach.png/revision/latest?cb=20201029181423)}
+.YoLoLlego:before
+{background-image: url(https://static.wikia.nocookie.net/justdance/images/b/ba/YoLeLlego_Cover_AlbumCoach.png/revision/latest?cb=20201022185445)}
+.DarkHorse:before
+{background-image: url(https://static.wikia.nocookie.net/justdance/images/0/0c/DarkHorse_JDU_Cover_AlbumCoach.png/revision/latest?cb=20180308190350)}
+.FeelLikeDancing:before
+{background-image: url(https://static.wikia.nocookie.net/justdance/images/b/b5/FeelLikeDancing_cover_albumcoach.png/revision/latest?cb=20201022160010)}
 }

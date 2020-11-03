@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         LWChris
 @description    `A dark theme for the de.wikipedia.org websites.`
-@version        2020523.0.25
+@version        2020113.2.58
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,10 +15,10 @@ body {
     background-color: #151515;
     background-image: linear-gradient(to bottom, #000 50%, #111 100%);
 }
-#mw-panel .portal .body li a:visited, a:visited {
+#mw-panel .vector-menu-portal li a:visited, a:visited {
     color: #4b47d7;
 }
-#mw-panel .portal .body li a, a {
+#mw-panel .vector-menu-portal li a, a {
     color: #1d5fc9;
 }
 a.new, #p-personal a.new {
@@ -27,16 +27,17 @@ a.new, #p-personal a.new {
 .portal h3 {
     background-image: linear-gradient(to right, transparent 0, #555 35%, #555 70%, transparent 100%);
 }
-.vectorTabs, .vectorTabs a, #mw-head .vectorMenu h3 {
+.vector-menu-tabs, .vector-menu-tabs a, #mw-head .vector-menu-dropdown h3 {
     background-image: linear-gradient(to bottom, rgba(85, 85, 85, 0) 0, #555 100%);
 }
-.vectorTabs li {
+.vector-menu-tabs li,
+.vector-menu-tabs li.selected {
     background-image: linear-gradient(to top, #555 0, #181818 1px, #000 100%);
 }
-.vectorTabs .selected a, .vectorTabs .selected a:visited {
+.vector-menu .selected a, .vector-menu .selected a:visited {
     color: #aaa;
 }
-.vectorMenu h3 {
+.vector-menu-tabs h3 {
     color: #555;
 }
 #searchInput {
@@ -59,7 +60,7 @@ a.new, #p-personal a.new {
 .suggestions-result-current {
     background-color: #2a4b8d;
 }
-.vectorMenu .menu {
+.vector-menu-dropdown .vector-menu-content-list {
     background-color: #151515;
     border-color: #555;
 }
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 .oo-ui-icon-expand, .mw-ui-icon-expand::before {
     background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 fill=%22grey%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3Eexpand%3C/title%3E%3Cpath d=%22M17.5 4.75l-7.5 7.5-7.5-7.5L1 6.25l9 9 9-9z%22/%3E%3C/svg%3E");
 }
-.vectorMenu h3::after {
+.vector-menu h3::after {
     background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22grey%22 viewBox=%220 0 12 12%22%3E%3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22/%3E%3C/svg%3E");
 }
 #mw-indicator-mw-helplink a {
@@ -228,11 +229,11 @@ ol.references li:target {
 .mw-searchresults-has-iw .iw-resultset {
     background-color: #222;
 }
-#hauptseite h2 {
+.mw-parser-output .hauptseite-box-title {
     background-color: #22252b;
     border-color: #555;
 }
-#hauptseite .inhalt {
+.mw-parser-output .hauptseite-box-content {
     background-color: #111;
     border-color: #555;
 }

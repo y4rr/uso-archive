@@ -1,0 +1,145 @@
+/* ==UserStyle==
+@name           Bigkis Dark Theme v2
+@namespace      USO Archive
+@author         Yad
+@description    `My own version of dark theme of bigkis.com`
+@version        2020113.10.8
+@license        CC-BY-SA-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("bigkis.com") {
+
+/*Theme Made by YAD for BIGKIS 2020*/
+
+body, .tag_create_blog {
+    background: #212121;
+    color: #dcdcdc;
+}
+
+.header-brand {
+    display: block;
+    position: fixed;
+    top: 32px;
+    left: -227px;
+    z-index: 1000;
+    background-image: url(https://i.postimg.cc/gk8VVfkJ/yad.png);
+    background-repeat: no-repeat;
+    background-size: 51px;
+    background-position: right;
+    padding-right: 122px;
+    margin-left: 15px;
+    transform: scale(2);
+}
+
+.tag_home_filters.home {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background: #515151;
+    border-radius: 1px 1px 9px 9px;
+    padding: 29px;
+    margin: -2% -8% 2% -8%;
+    box-shadow: 0 3px 6px #212121;
+}
+
+.chat-container {
+    max-height: 100%;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 90px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #191212;
+    padding: 0 20px 80px;
+    background: #323232;
+}
+
+.filterby {
+    margin: 0px 0% 0px 14%;
+}
+
+.btn-main-rev, .tag_page_nav li.active a, .ui-timepicker-div+.ui-datepicker-buttonpane>button:not(.ui-priority-primary) {
+    color: #90d6ff;
+    transition: all .2s ease;
+}
+
+.tag_page_nav li a, .tag_home_post_order .btn-mat {
+    background-color: #e9e9e9;
+    color: darkslategrey;
+}
+
+.tag_page_nav li a {
+    position: relative;
+    display: block;
+    border-radius: 9px;
+    line-height: 33px;
+}
+
+.wow_content, .post .panel, .user-ad-container .panel-white {
+    background-color: #333333;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0/0.5), 0 1px 2px 0 rgb(0 0 0/0.46);
+}
+
+.btn-main-rev, .tag_page_nav li.active a, .ui-timepicker-div+.ui-datepicker-buttonpane>button:not(.ui-priority-primary) {
+    color: #007eff;
+    transition: all .2s ease;
+}
+
+.chat-user-desc .head-text {
+    font-size: 14px;
+    color: #a3afc6;
+    margin-bottom: 5px;
+}
+
+.wow_htag {
+    padding: 4px 10px;
+    background-color: #6363632b;
+    margin: 5px 0 8px;
+    border-radius: 8px;
+}
+
+.tag_create_dropup>.btn {
+    left: 19px;
+}
+
+.sidebar-users-may-know-container {
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 0 4px 12px;
+    line-height: 1;
+}
+
+.sidebar-users-may-know-container:hover {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0 4px 12px;
+    line-height: 1;
+}
+
+fetch {
+    width: 340px;
+    min-height: 241px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: #000000 0 0 4px 0, rgba(0,0,0,.18) 0 4.8px 14.4px 0;
+    padding: 10px;
+}
+
+:root {
+    --body-bg: #cacfd4;
+    --header-background: #323232;
+    --header-color: #ffffff;
+    --header-hover-color: #333333;
+    --header-search-color: #adb1b5;
+    --main: #349df1;
+    --main-hover: #2f3a44;
+    --main-color: #ffffff;
+    --main-hover-color: #ffffff;
+    --chat-outgoing: #fff9f9;
+}
+}

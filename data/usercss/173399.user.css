@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `LinkedIn Dark ThemeOthers were broken or incomplete, I tried my best to make this not be.`
-@version        2020823.10.2
+@version        2020113.6.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,9 +14,7 @@
 ::-webkit-scrollbar-thumb { background: #1f2f38; }
 ::-webkit-scrollbar-thumb:hover { background: #1a2a33; }
 
-:root,
-body,
-html,
+:root, body, html,
 .toast,
 option,
 #extended-nav-search .search-typeahead-v2 input,
@@ -85,7 +83,11 @@ artdeco-dropdown-content,
 .msg-form, .msg-form__attachment-drag-and-drop,
 .msg-form__compose-error, .msg-form__footer,
 
-.comments-comment-item-content-body, .comments-highlighted-comment-item-content-body, .comments-reply-item-content-body, .comments-post-meta__profile-link
+.comments-comment-item-content-body, .comments-highlighted-comment-item-content-body, .comments-reply-item-content-body, .comments-post-meta__profile-link,
+
+.reader, .reader-author-info__container,
+
+.author-info
 {
     background: #162228 !important;
 }
@@ -206,7 +208,10 @@ artdeco-dropdown-item:not([disabled]):focus, artdeco-dropdown-item:not([disabled
 
 .comments-comments-list,
 
-.share-box-feed-entry__article-cta
+.share-box-feed-entry__article-cta,
+
+.reader-social-bar-v2, .reader-social-bar-v2__sticky-container.is-stuck>:first-child::before,
+.reader-social-bar-v2__sticky-container.is-stuck>:first-child::after, .reader-social-bar-v2__sticky-container.is-stuck>:first-child::before
 {
     background: #1a2a33 !important;
 }
@@ -229,7 +234,12 @@ artdeco-dropdown-item:not([disabled]):focus, artdeco-dropdown-item:not([disabled
 .global-nav__secondary-title,
 
 .learning-top-courses__course:focus, .learning-top-courses__course:hover,
-.feed-shared-news-module__storyline:hover
+.feed-shared-news-module__storyline:hover,
+
+.header,
+.top-card-layout,
+
+.profile-card--badge
 {
   background: #283e4a;
 }
@@ -489,9 +499,20 @@ footer p,
 
 .ql-editor.ql-blank::before,
 
+.global-nav__secondary-faux-link, a.global-nav__secondary-link, a.global-nav__secondary-link:visited,
 
+.top-card-link__description,
 
-.global-nav__secondary-faux-link, a.global-nav__secondary-link, a.global-nav__secondary-link:visited
+.reader-article-content ol, .reader-article-content p, .reader-article-content ul, .reader-article-content>div,
+
+.article-head__timestamp,
+.mini-profile__title-link, .mini-profile__title-link:hover, .mini-profile__title-link:visited,
+.article-body>div, .article-body p, .article-body ol, .article-body ul,
+.article-comment__text,
+.article-comment__like-button, .article-comment__reply-button,
+.article-comment__left-control-wrapper, .article-comment__right-control-wrapper,
+
+.article-card__meta-info-item
 {
     color: #ccc;
 }
@@ -512,7 +533,14 @@ artdeco-dropdown-item:not([disabled]):focus, artdeco-dropdown-item:not([disabled
 
 .artdeco-entity-lockup__content *,
 
-.jobs-search-box__inner ::placeholder
+.jobs-search-box__inner ::placeholder,
+
+footer a,
+li,
+.profile-card--badge *,
+.samename__others-named,
+.result-card__subtitle-link,
+.result-card__meta, .result-card__meta>*
 {
     color: #ccc !important;
 }
@@ -803,7 +831,14 @@ li-icon svg[data-supported-dps="24x24"]
   margin-top: 30px
 }
 
-li-icon[type=linkedin-logo] svg
+.reader-social-bar-v2__sticky-container.is-stuck>:first-child::after, .reader-social-bar-v2__sticky-container.is-stuck>:first-child::before
+{
+  display: none;
+}
+
+li-icon[type=linkedin-logo] svg,
+
+.social-ctas
 {
   filter: invert(1) hue-rotate(180deg);
 }

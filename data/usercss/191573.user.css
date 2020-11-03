@@ -3,11 +3,13 @@
 @namespace      USO Archive
 @author         Yad
 @description    `YOUTUBE Retro Wave ThemeUse the dark theme in your Appearance settings`
-@version        2020112.5.54
+@version        2020113.10.46
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
+
+
 /*2021 Youtube Retro Wave by YAD*/
 
 
@@ -32,30 +34,52 @@
 	
 }
 .ytd-topbar-logo-renderer:hover {
-	animation: presslogo;
-	animation-duration:8s;
+	animation: yadlogo;
+	animation-duration:5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: both;
 	animation-delay: 1s;
 }
-@keyframes presslogo {
-  0% {transform: rotate(13680deg)}
+@keyframes yadlogo {
+  0% {transform: rotate3d(1, 1, 1, 7200deg)}
 	50% {filter: hue-rotate(80deg);}
 100% {filter: hue-rotate(360deg);}
 }
+
 .style-scope ytd-thumbnail:active {
-	animation: thumbturn;
-	animation-duration:	0.3s;
+	animation: yadpoof;
+	animation-duration:	0.2s;
 	animation-iteration-count: 1;
 	transition: opacity 0.5s;
 }
-@keyframes thumbturn {
-  0% {transform: scale(1.0);}
-  50% {transform: scale(10.5); opacity: 0;}
-  90% {transform: scale(10.5); opacity: 0;}
-  100% {transform: scale(20.5); opacity: 0;}
+@keyframes yadpoof {
+  0% {transform: scale(1); filter: blur(0px);}
+  100% {transform: scale(3.5); opacity: 0; filter: blur(50px);}
+}
+button.yt-icon-button > yt-icon:active {
+	animation: yadpooficon;
+	animation-duration:	0.1s;
+	animation-iteration-count: 1;
+	transition: opacity 0.5s;	
+}
+@keyframes yadpooficon {
+  0% {transform: scale(1.5); filter: blur(1px);}
+  50% {transform: scale(5.5); opacity: 0.1; filter: blur(5px);}
+  90% {transform: scale(15.5); opacity: 0; filter: blur(20px);}
+  100% {transform: scale(20.5); opacity: 0; filter: blur(50px);}
 }
 
+.style-scope ytd-thumbnail {
+    animation: yadroad;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+@keyframes yadroad {
+	0% {left: 5000px}
+   90% {left:-90px}
+  100% {left: 0px}
+}
 /*my eyes hurt coding*/
 html:not(.style-scope) {
        --yt-spec-static-brand-red: #ff00f7;
@@ -97,33 +121,42 @@ html:not(.style-scope) {
 100%{background-color: #fff; box-shadow: 0 0 7px 3px #ff00d4;}
 }
 ytd-app {
-background-image: url(https://i.postimg.cc/J4gFh3TK/sunset.gif), url(https://i.postimg.cc/Q8jCDLRS/retrowave-purple.jpg);
+background-image: url(https://i.postimg.cc/J4gFh3TK/sunset.gif), url(https://i.postimg.cc/1mScS4XW/retrowave.png);
 background-repeat: no-repeat;
 background-attachment:fixed;
 background-color: #14031e;
 background-position: 50% 33%, center;
 background-size: 300px, 100%;
+background-blend-mode: screen;
 }
-
 .html5-video-player {/*glow on player*/
     box-shadow: 0 0 20px #f800ff;
 }
 
 #container.ytd-masthead {/*top bar*/
-    background-color: #4a157c05;
-    background-image: url(https://i.postimg.cc/DfDGtyv4/2eSd.gif);
-    background-repeat: repeat-x;
-	background-position: bottom;
-	background-size: 120px;
-	background-blend-mode: overlay;
+    background-color: #21043378;
+    background-image: none;
+    background-repeat: no-repeat;
+	background-position:bottom;
+	background-size: 100%;
+	opacity: 0.9;
 }
-html:not(.style-scope)[dark], :not(.style-scope)[dark] {/*side bar*/
+
+/*color controller*/
+html:not(.style-scope)[dark], :not(.style-scope)[dark] {
     --yt-spec-brand-background-solid: #f5151500;
     --yt-spec-brand-background-primary: rgb(218 0 0 / 0%);
     --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0);
 	--yt-spec-general-background-a: #1ed03300;
     --yt-spec-general-background-b: #e31a1a00;
     --yt-spec-general-background-c: #df1e1e00;
+	--yt-spec-call-to-action: #00fff7;
+}
+
+/*new*/
+.badge-style-type-simple.ytd-badge-supported-renderer {
+    background: #00ffdc75;
+    color: #fff;
 }
 
 .style-scope ytd-rich-metadata-renderer {/*side coloumn*/
@@ -182,7 +215,7 @@ ytd-comments {/*comments box*/
 
 paper-button.ytd-subscribe-button-renderer {/*sub button*/
     background-color: #a320fb;
-    border-radius: 22px;
+    border-radius: 5px;
 }
 .ytp-sb-subscribe, a.ytp-sb-subscribe {
     background-color: #a320fb;
@@ -197,7 +230,7 @@ paper-button.ytd-subscribe-button-renderer {/*sub button*/
 }
 
 ytd-multi-page-menu-renderer {/*right dropdown notif*/
-    background: #36083bed;
+    background: #30083bed;
 	border-radius: 10px;
 }
 yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
@@ -272,7 +305,7 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
     top: 4px;
     right: 0;
     color: var(--yt-swatch-important-text, var(--yt-white));
-    background-color: #ff00cd;
+    background-color: #c30aff;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -306,11 +339,7 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #7f03be;
-}
-
-/*various icons*/
-yt-icon, .yt-icon-container.yt-icon {
-    fill: #59fffa;
+  box-shadow: 0 0 9px 2px #00fff4;
 }
 
 /*bg vids and settings*/
@@ -368,5 +397,59 @@ paper-listbox.yt-dropdown-menu {
     top: 10px;
     z-index: 64;
     min-width: 26em;
+}
+
+/*cc color under*/
+.ytp-chrome-controls .ytp-button[aria-pressed]:after {
+    background-color: #fff;
+	box-shadow: 0 0 9px 3px #ff00d4;
+}
+
+/*hd text color*/
+.ytp-swatch-color {
+    color: #ffffff;
+    text-shadow: 0 0 9px #ff00d0;
+}
+
+/*subpop*/
+paper-toast {
+    background-color: var(--paper-toast-background-color, #240237f2);
+	background-image: url(https://i.postimg.cc/DfDGtyv4/2eSd.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	border-radius: 5px;
+}
+yt-confirm-dialog-renderer[dialog][dialog][dialog] {
+    background-color: var(--paper-toast-background-color, #240237f2);
+	background-image: url(https://i.postimg.cc/DfDGtyv4/2eSd.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/*live indicator home*/
+ytd-badge-supported-renderer.ytd-rich-grid-media {
+    margin: 6px 0px 6px 10px;
+}
+
+.ytp-spinner-circle {
+    border-style: solid;
+    border-color: #9e00fd00 #b700ff #00fff300 #00ffea;
+    border-radius: 50%;
+    border-width: 6px;
+}
+
+/*mini player*/
+.playlist-items.ytd-playlist-panel-renderer {
+    background-color: #230e32a3;
+}
+#info-bar.ytd-miniplayer {
+    background-color: #3b094f;
+}
+ytd-playlist-panel-renderer[hide-header-text] .header.ytd-playlist-panel-renderer {
+    background-color: #230e32c4;
 }
 }
