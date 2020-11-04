@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。広告非表示もカスタマイズ機能にあります。デフォルトは表示されるようになっています。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        2020111.18.49
+@version        2020114.12.1
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -23,12 +23,12 @@
 
 }
 @advanced dropdown ----------------- "動画コントロールボタンのフラット化" {
-	-------------------- "しない*" <<<EOT /* 動画コントロールボタンのフラット化をしない *\/ EOT;
------------------ "する" <<<EOT /* 動画コントロールボタンのフラット化 *\/
+	----------------- "する*" <<<EOT /* 動画コントロールボタンのフラット化 *\/
 .ControllerButton {
 	border: none !important;
 	background-color: #000;
 } EOT;
+-------------------- "しない" <<<EOT /* 動画コントロールボタンのフラット化をしない *\/ EOT;
 
 }
 @advanced dropdown --- "ニコる" {
@@ -74,8 +74,7 @@ display:none;
 
 }
 @advanced dropdown ----------- "シリーズ欄をハイライト（試験的）" {
-	-------------- "しない*" <<<EOT /* シリーズ欄をハイライトしない *\/ EOT;
-------------- "する" <<<EOT /* 試験的 シリーズのハイライト *\/
+	------------- "する*" <<<EOT /* 試験的 シリーズのハイライト *\/
 .VideoDescription-series{
     border: solid 5px #282828 !important;
     background: #393939;
@@ -83,6 +82,7 @@ display:none;
 .RouterLink.VideoDescriptionSeriesContainer-itemTitle{
     color:#d2691e !important
 } EOT;
+-------------- "しない" <<<EOT /* シリーズ欄をハイライトしない *\/ EOT;
 
 }
 @advanced dropdown -- "広告" {
@@ -98,6 +98,7 @@ display:none;
 @advanced color ------3 "ニコるランク3の色(6~7？)" #561B92
 @advanced color ------4 "ニコるランク4の色(8以上？）" #9B0EB0
 @advanced color ----------------- "動画コントロールボタンホバー時の色" #007CFF
+@advanced color ----------------- "動画ボリュームバーとシークバーの色" #007CFF
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
@@ -405,9 +406,12 @@ button.ActionButton.TwitterAccountPanel-button{
 .SharePanelVisibleButton{
     background-color: #000;
 }
-.ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ClickInterceptor.LoginRequirer,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton{
+.ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton{
     background-color: #252525
 }
+
+.ClickInterceptor.LoginRequirer{background-color:transparent;}
+  
 .ActionButton.VideoStartButton.VideoStartButtonContainer{
 	border:none !important;
 }
@@ -443,6 +447,11 @@ button.ActionButton.TwitterAccountPanel-button{
 /* 生放送 */
 .OwnerNicoliveBanner{
     background-color: #333;
+}  
+
+/* 試験的 コントローラーボタンの色変化の時間修正 */
+.ControllerButton:hover svg{
+	transition: all .3s ease .1s !important;
 }  
   
 /*カスタマイズ欄*/
@@ -480,5 +489,7 @@ button.ActionButton.TwitterAccountPanel-button{
    background:  /*[[------4]]*/
 }
 
+/* 動画コントロールボタンカラー */
 .ControllerButton:hover svg{fill: /*[[------------------2]]*/ }
+.SeekBar-played,.VolumeBar-progress{background-color: /*[[------------------3]]*/ }
 }

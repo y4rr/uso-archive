@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `U2網頁樣式修改良善`
-@version        2020112.2.28
+@version        2020114.9.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,6 +25,17 @@
 ::selection {
     color: #FF00FF;
     background: #000000;}
+
+/*#####--- 網頁背景圖片 ---#####*/
+html:not([style-scope]):not(.style-scope){background:#000000 url(https://cutewallpaper.org/21/dark-sky-background-hd/Black-Sky-Wallpaper-Windows-10-Night-Sky-Hd-Wallpapers-.jpg) no-repeat center center fixed!important;
+        -webkit-background-size: cover!important;
+        -moz-background-size: cover!important;
+        -o-background-size: cover!important;
+        background-size: cover!important;}
+/*
+https://cutewallpaper.org/21/dark-sky-background-hd/Black-Sky-Wallpaper-Windows-10-Night-Sky-Hd-Wallpapers-.jpg
+https://cutewallpaper.org/21/dark-sky-background-hd/view-page-21.html
+*/ 
 
 
 }

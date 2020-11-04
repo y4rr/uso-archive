@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ponko
 @description    `pixivのイラストページを旧レイアウトっぽくするよ作品リストと関連作品は非表示副作用でアンケート等も上に来ちゃうのは堪忍な新プロフィールもいじってみた横1050px以上の場合は２列表示カバー画像を設定する時は無効化してねタグの作者マーカー、作品タグの表示復活スクリプトはこちらhttps://greasyfork.org/ja/scripts/369658`
-@version        2020109.19.8
+@version        2020114.11.31
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,11 +18,11 @@
 		--z-tag				: rgb(46, 46, 46);
 		--z-tag-bg			: rgba(100, 100, 100, .1);
 	}
-	.fKkgNY {
+	.dipYyz {
 		--z-header-border	: rgb(68, 69, 73);
 		--z-search-border	: rgb(82, 82, 82);
 	}
-	.fKkgNY + div {
+	.dipYyz + div {
 		--z-card-border		: #424242;
 		--z-tag				: #E0E0E0;
 		--z-tag-bg			: #393939;
@@ -374,7 +374,7 @@ url-prefix(https://www.pixiv.net/artworks/)
 		--z-artwork-tag-bg	: #F3F4F5;
 		--z-artwork-date	: #555;
 	}
-	.fKkgNY + div {
+	.dipYyz + div {
 		--z-artwork-bg		: #333;
 		--z-artwork-tag		: #DDD;
 		--z-artwork-tag-bg	: #222;

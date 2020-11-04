@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yad
 @description    `My own version of dark theme of bigkis.com`
-@version        2020113.12.57
+@version        2020114.11.49
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,6 +13,29 @@
 body, .tag_create_blog {
     background: #212121;
     color: #dcdcdc;
+}
+.navbar-default .logo {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: -305px;
+    z-index: 1000;
+    background-image: url(https://i.postimg.cc/gk8VVfkJ/yad.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: right;
+    padding-right: 170px;
+    margin-left: -45px;
+    transform: scale(2);
+    filter: invert(0%) contrast(100%) saturate(100%) brightness(8.5)
+}
+
+.tag_welcome {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, #1e32d2 0%, #ad177f 100%);
 }
 
 .header-brand {
@@ -28,6 +51,37 @@ body, .tag_create_blog {
     padding-right: 122px;
     margin-left: 15px;
     transform: scale(2);
+}
+
+.greetalert.morning .small-texts {
+    color: #fbff0e;
+	animation: 20s ease-in-out 1s infinite reverse both running morningbes;
+}
+@keyframes morningbes {
+    0% { color: #ffcb0e; }
+    10%   { color: #ff7a0b; }
+	20%   { color: #f00; }
+	30%   { color: #ffea81; }
+}
+.greetalert.noon .small-texts {
+    color: #17fff5;
+    animation: 20s ease-in-out 1s infinite reverse both running gudnoonbes;
+}
+@keyframes gudnoonbes {
+    0% { color: #0ec7ff; }
+    10%   { color: #0b89ff; }
+	20%   { color: #00ffa2; }
+	30%   { color: #a6ff00; }
+}
+.greetalert.evening .small-texts {
+    color: #3f51b5;
+	animation: 20s ease-in-out 1s infinite reverse both running gudevebes;
+}
+@keyframes gudevebes {
+    0% { color: #0ec7ff; }
+    10%   { color: #de0bff; }
+	20%   { color: #ff00ea; }
+	30%   { color: #e3d5fb; }
 }
 
 .tag_home_filters.home {
@@ -129,6 +183,50 @@ fetch {
     background-color: #fff;
     box-shadow: #000000 0 0 4px 0, rgba(0,0,0,.18) 0 4.8px 14.4px 0;
     padding: 10px;
+}
+
+.tag_pub_box_bg_camlve.camera {
+    color: #5aa4ff;
+}
+
+.profile-completion-bar .completion-step svg {
+    margin: -2px 7px 0 0;
+    filter: hue-rotate(216deg);
+}
+
+.online-text {
+    color: #00ffdc;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #1598c6;
+    border-color: #2848a7;
+}
+
+.tag_post_status.online {
+    position: absolute;
+    top: 38px;
+    right: 1px;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #66f366;
+    box-shadow: 0 0 0 0px #fff;
+	border-color: #82ee60;
+	border-style: solid;
+	border-width: 6px;
+}
+
+.recipient-chat-user .user-info>svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff0;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
 }
 
 :root {

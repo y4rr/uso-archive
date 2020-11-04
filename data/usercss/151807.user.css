@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `test`
-@version        20201020.2.5
+@version        2020114.5.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -339,6 +339,10 @@
   #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-next-button{display:none!important;}
   #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-time-display>span{font-size:20px!important;}
   #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-time-display>span.ytp-time-duration{color:#a11!important;}
+  #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-chapter-container{padding:0 10px 0px 10px!important;}
+  #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-chapter-container:hover{background:#434!important;}
+  #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-left-controls>.ytp-chapter-container>button{}
+  #primary #player #movie_player>.ytp-chrome-bottom>.ytp-chrome-controls>.ytp-right-controls{}
   /*video settings*/#primary #player #movie_player .ytp-popup.ytp-settings-menu{background:rgba(0,0,0,0.5)!important;}
   /*video settings*/#primary #player #movie_player .ytp-popup.ytp-settings-menu>.ytp-panel{background:rgba(0,100,0,0.5)!important;}
   /*video settings*/.ytp-panel>.ytp-panel-header{padding:0px!important;background:rgba(0,0,0,0.5)!important;}
@@ -476,6 +480,28 @@
   /*related videos*/
   /*related videos*/
   /*related videos*/
+  /*live chat*/ytd-live-chat-frame{}
+  /*live chat*/ytd-live-chat-frame>#show-hide-button{display:none!important;}
+  /*live chat*/yt-live-chat-app{}
+  /*live chat*/yt-live-chat-app>#contents{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#promo{display:none!important;}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>yt-live-chat-header-renderer{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#ticker{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#separator{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list>yt-live-chat-item-list-renderer{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list>yt-live-chat-item-list-renderer>#contents{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list>yt-live-chat-item-list-renderer>#contents>#item-scroller{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list>yt-live-chat-item-list-renderer>#contents>#item-scroller>yt-live-chat-banner-manager{display:none!important;}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#chat>#item-list>yt-live-chat-item-list-renderer>#contents>#item-scroller>#item-offset{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#toast-container{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#contents>#panel-pages{display:none!important;}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#dialog{}
+  /*live chat*/yt-live-chat-app>#contents>yt-live-chat-renderer>#content-pages>#chat-messages>#continuations{}
   /*live*/    #chat-messages>yt-live-chat-header-renderer{background:#000!important;height:32px!important;padding:0px 8px!important;}
   /*live*/    #chat-messages #contents #ticker{}
   /*live*/    #chat-messages #contents #ticker #items{background:#000!important;padding:0px!important;}
@@ -501,6 +527,29 @@
   /*goTo*/    #chat #show-more{background:#063!important;margin-top:0px!important;margin-bottom:0px!important;}
   /*goTo*/    #chat #show-more>*{background:#000!important;}
   /*goTo*/    #chat #show-more div{background:#000!important;}
+  /*CH*/      #panels{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#banner{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header{background:#000!important;padding:0 0 0 10px!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header>#title-container{margin:0!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header>#title-container>h2{font:20px/40px arial!important;max-height:initial!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header>#menu{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header>#visibility-button{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#header>*>#header>#visibility-button:hover{background:#434!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*              {background:#040!important;padding:0!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*:nth-child(2n){background:#030!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*:hover        {background:#000!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*[active=""]   {background:#000!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a>#active-indicator{display:none!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a>#thumbnail{outline:initial!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a>#details{margin:0 0 0 5px!important;}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a>#details>h4{}
+  /*CH*/      #panels>ytd-engagement-panel-section-list-renderer>#content>ytd-macro-markers-list-renderer>#contents>*>a>#details>#time{}
   /*ad*/      #related>#player-ads{display:none!important;}
   /**/        #related{padding-left:0px!important;background:#040!important;}
   /*autoPlay*/#related ytd-compact-autoplay-renderer{background:#020!important;width:450px!important;left:-24px!important;position:relative!important;}

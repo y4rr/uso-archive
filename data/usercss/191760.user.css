@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         콤퓨타하는아조씨
 @description    `Dark theme for University of Ulsan UClass, Republic of KoreaFor my eyes, even for your eyes`
-@version        2020112.3.42
+@version        2020114.1.24
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document
-regexp("https?://ulms\\.ulsan\\.ac\\.kr/(report/ubcompletion/user_progress.*|index.php\\?lang=.*|course/.*|mod/ubboard/.*|mod/assign/.*)?") {
+regexp("https?://ulms\\.ulsan\\.ac\\.kr/(local/ubion/setting/syllabus.*|report/ubcompletion/user_progress.*|index.php\\?lang=.*|course/.*|mod/ubboard/.*|mod/assign/.*)?") {
     /*CSS for main*/
     body {
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;

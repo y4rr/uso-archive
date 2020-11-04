@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201030.22.23
+@version        2020114.11.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -29,6 +29,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -88,6 +89,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -166,6 +168,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -226,6 +229,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -286,6 +290,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -346,6 +351,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -417,6 +423,7 @@ htmlhtml[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 ._1npCwF50X2J7Wt82SZi6J0
 {
@@ -477,8 +484,6 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 @advanced color LinksUnderPosts "Post Info & Links" #717171
 @advanced color Headers "Headers" #BBBBBB
 @advanced color Text "General Text" #989898
-@advanced color News "News & Pinned Posts" #001900
-@advanced color Deleted "Deleted Posts" #220000
 @advanced dropdown RCNightmode "Media Dim (Nightmode)" {
 	RCNoMediaDim "No*" <<<EOT /*Nighmode disabled*\/
 /*
@@ -1800,7 +1805,7 @@ RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*-------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating06 "\"News & Pinned Posts\" & \"Deleted Posts\"" <<<EOT /*----------------------------------------------------------*\/
+RCUpdating06 "A few extra Manual Colour Options are found in Code #2." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -1833,7 +1838,7 @@ RCUpdating06 "\"News & Pinned Posts\" & \"Deleted Posts\"" <<<EOT /*------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating07 "are supposed to be semi-transparent," <<<EOT /*----------------------------------------------------------*\/
+RCUpdating07 "This is merely an announcement due to character-limitations below." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -1866,73 +1871,7 @@ RCUpdating07 "are supposed to be semi-transparent," <<<EOT /*-------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating08 "These can be changed manually in Code #2." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating09 "This is merely an announcement due to character-limitations below." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating10 "Pick any option to have this list added at the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating08 "Pick any option to have this list added at the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -2066,12 +2005,13 @@ such as
     WebP
 
 
-/*Default HTML Background Colour chosen*/
+/*Default HTML Background Colour chosen (ignore)*/
 
 :root
 {
     --RCBackground: /*[[Background]]*/;
 }
+
 
 /* ================ Wallpaper Option chosen ================ */
 
@@ -2119,9 +2059,9 @@ All decryption takes place on the computer, thus reducing
 overall digital footprints.
 
 
-------
-Setup:
-------
+--------------
+Example Setup:
+--------------
 Insert these two values into url used below:
 
     1) Change file-type accordingly (bmp/gif/jpeg/png etc.)
@@ -2396,10 +2336,6 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
 /*[[RCUpdating08]]*/
 
-/*[[RCUpdating09]]*/
-
-/*[[RCUpdating10]]*/
-
 
 /* ==================== END OF CODE #1 ==================== */
 }
@@ -2429,24 +2365,39 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCDarkText: /*[[LinksUnderPosts]]*/;
     --RCTextHeader: /*[[Headers]]*/;
     --RCText: /*[[Text]]*/;
-    --RCNews: /*[[News]]*/;    /* Manual Alpha Setting: #00190088 */
-    --RCDeleted: /*[[Deleted]]*/; /* Manual Alpha Setting: #22000066 */
 
 
-    /*Manual Colour Options*/
-    --RCRESDayToggle: #ff9999;
-    --RCRESNightToggle: #9999ff;
+    /*MANUAL COLOUR OPTIONS*/
 
-    --RCRESUserTaggerDay:#6a98af;
-    --RCRESUserTaggerNight:#369;
+    /*Post Backgrounds*/
+    --RCNews: #00190088;
+    --RCDeleted: #22000066;
+    --RCUserRemoved: #00002288;
     
+    /*Tags*/
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
+
+
+    /*RES ONLY*/
+    
+    /*Filtered Posts Background*/
+    --RCRESFiltered: #55221144;
+    
+    /*RES Dropdown Night/Day Toggle Icon*/
+    --RCRESDayToggle: #ff9999;
+    --RCRESNightToggle: #9999ff;
+
+    /*RES Tag Icon*/
+    --RCRESUserTaggerDay:#6a98af;
+    --RCRESUserTaggerNight:#369;
+
+    /*RES "Reload Page" Text*/
     --RCRESReload: #5cc540 !important;
 }
 
-/* ----------------- BAK of Default Settings -----------------
+/* ----------------- BAK of Default Settings -----------------/*
 :root
 {
     --RCBackground: #090909;
@@ -2468,20 +2419,36 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCVisited: #777777;
     --RCDarkText: #717171;
     --RCTextHeader: #BBBBBB;
-    --RCText: #989898;
-    --RCNews: #00190088;    / Manual Alpha Setting: #00190088 /
-    --RCDeleted: #22000066; / Manual Alpha Setting: #22000066 /
-        
-    /*Manual Colour Options*
-    --RCRESDayToggle: #ff9999;
-    --RCRESNightToggle: #9999ff;
+    --RCText: [[Text]];
 
-    --RCRESUserTaggerDay:#6a98af;
-    --RCRESUserTaggerNight:#369;
+
+    /*MANUAL COLOUR OPTIONS*/
+
+    /*Post Backgrounds/
+    --RCNews: #00190088;
+    --RCDeleted: #22000066;
+    --RCUserRemoved: #00002288;
     
+    /*Tags/
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
+
+
+    /*RES ONLY*/
+    
+    /*Filtered Posts Background/
+    --RCRESFiltered: #55221144;
+    
+    /*RES Dropdown Night/Day Toggle Icon/
+    --RCRESDayToggle: #ff9999;
+    --RCRESNightToggle: #9999ff;
+
+    /*RES Tag Icon/
+    --RCRESUserTaggerDay:#6a98af;
+    --RCRESUserTaggerNight:#369;
+
+    /*RES "Reload Page" Text/
     --RCRESReload: #5cc540 !important;
 }
 ------------------------------------------------------------*/
@@ -6997,6 +6964,24 @@ a.authorlink.csticky:hover
 
 
 
+/* ----------------------- ORANGE ----------------------- */
+
+/* RES Removed by filter */
+[onclick="click_thing(this)"][class*="thing"][class*="id"].even.link.res-thing-has-placeholder,
+[onclick="click_thing(this)"][class*="thing"][class*="id"].odd.link.res-thing-has-placeholder,
+[onclick="click_thing(this)"].linkflair.even.link.res-thing-filter-hide.res-selected,
+[onclick="click_thing(this)"].linkflair.odd.link.res-thing-filter-hide.res-selected,
+[onclick="click_thing(this)"].even.link.res-thing-filter-hide.res-selected,
+[onclick="click_thing(this)"].odd.link.res-thing-filter-hide.res-selected,
+[id*="thing"][onclick="click_thing(this)"].even.link.res-thing-filter-hide,
+[id*="thing"][onclick="click_thing(this)"].odd.link.res-thing-filter-hide
+
+{
+    background-color: var(--RCRESFiltered) !important;
+}
+
+
+
 /* ---------------------- Side Menu ---------------------- */
 
 .grippy
@@ -7661,7 +7646,7 @@ div._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(234, 0, 39);"]
 
 /* -------------------------------------------------------- */
 
-p.debuginfo:hover:after{color: var(--RCText)!important;content: "Reddit Custom (RES Compatible) - KMV";text-align: center;font-size: 10px !important;position: fixed;left:0;bottom:0;}._34dh2eyzMvJfjCBLeoWiDD:hover:after{content:"Reddit Custom (RES Compatible) - KMV";margin-left: -72.5%;margin-top: 10% !important;}
+p.debuginfo:hover:after{color:var(--RCText)!important;content:"Reddit Custom (RES Compatible) - KMV";text-align:center;font-size:10px!important;position:fixed;left:0;bottom:0;}._34dh2eyzMvJfjCBLeoWiDD:hover:after{content:"Reddit Custom (RES Compatible) - KMV";margin-left:-72.5%;margin-top:10%!important;}
 
 /* ==================== END OF CODE #2 ==================== */
 }

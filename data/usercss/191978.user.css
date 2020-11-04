@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name           Allegro zamówienia od kupujących
+@namespace      USO Archive
+@author         airflame
+@description    `Poprawiono widoczność zamówień od kupujących przez dodanie kolorów jak i zmianę pozycji końcowej ceny. Dodano tez podświetlenie gdy ktoś wpisze wiadomość do sprzedającego.`
+@version        2020114.6.58
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+
+@-moz-document domain("allegro.pl") {
+.buyer-note-content {
+    background-color:#ffbf00;
+}
+
+.buyer-note-content.cbf09 {
+    display:none;
+}
+
+._d7szm {
+    padding-bottom: 5px;
+}
+
+.item-offer-price {
+    background-color:#6dadb7;
+    padding: 5px;
+}
+
+.delivery-price {
+    background-color:#8cb76d; 
+    padding: 5px;
+}
+
+.payment-summary {
+    background-color:#b76d6d;
+    color:white;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1248px) {
+.payment-summary {
+    position: absolute;
+    bottom: 0;
+    margin-left: -76px;
+}
+}
+}
