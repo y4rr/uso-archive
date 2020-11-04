@@ -2,12 +2,12 @@
   "id": 191575,
   "info": {
     "name": "ニコニコ 新マイページ ダークテーマもどき",
-    "description": "ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。\r\nカスタマイズで広告消したりできるようになってます。\r\nimportantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。\r\n一部対応してないところがあります（ニコられ、ニコったコメントあたりは確認できていません）。\r\n何かあれば<a href=\"https://twitter.com/Watanuki_Azuma\">Twitter</a>もしくは<a href=\"https://marshmallow-qa.com/watanuki_azuma\">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。\r\n\r\n--たぶん併用できるよ他作者様CSS--\r\nCCT_fumi様が公開している\r\n「<a href=\"https://userstyles.org/styles/187176/theme\">ニコニコのマイページをちょっとだけスッキリしたやつ</a>」\r\n↑カスタマイズで適用できるように統合済み。\r\ngonbuto様が公開している\r\n「<a href=\"https://userstyles.org/styles/191488/re-2020-10\">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」\r\n↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。\r\n\r\n--<s>どうにもならなかった</s>どうにかなったところ--\r\n・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字\r\n<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>\r\n→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>\r\n→赤文字部分だけの色の変え方を教えてくれる奇特な方のおかげでなんとかなりました",
-    "additionalInfo": "2020-11-01 フォロー中系統にたぶん対応 他作者様のCSSをカスタマイズで利用可能なように統合\r\n                   広告非表示をカスタマイズに移動\r\n2020-10-31 カスタマイズが1つ増えました\r\n2020-10-29 公開開始",
+    "description": "ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。\r\nカスタマイズで広告消したりできるようになってます。\r\nimportantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。\r\n一部対応してないところがあります（ニコられ、ニコったコメントあたりは確認できていません）。\r\n何かあれば<a href=\"https://twitter.com/Watanuki_Azuma\">Twitter</a>もしくは<a href=\"https://marshmallow-qa.com/watanuki_azuma\">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。\r\n\r\n--たぶん併用できるよ他作者様CSS--\r\ngonbuto様が公開している\r\n「<a href=\"https://userstyles.org/styles/191488/re-2020-10\">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」\r\n↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。\r\n\r\n--既知の不具合--\r\n・マイリスト検索結果ページがおかしくなる\r\n→URLがね……そもそもあれ使ってる人いるんですかね？いるなら対応します……\r\n\r\n--<s>どうにもならなかった</s>どうにかなったところ--\r\n・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字\r\n<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>\r\n→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>\r\n→赤文字部分だけの色の変え方を教えてくれた詰めるやつを書いてる方のおかげでなんとかなりました、感謝です……",
+    "additionalInfo": "2020-11-04 なんかちょっとした修正\r\n2020-11-01 フォロー中系統にたぶん対応 他作者様のCSSをカスタマイズで利用可能なように統合\r\n                   広告非表示をカスタマイズに移動\r\n2020-10-31 カスタマイズが1つ増えました\r\n2020-10-29 公開開始",
     "format": "uso",
     "category": "nicovideo",
     "createdAt": "2020-10-29T04:02:03.000Z",
-    "updatedAt": "2020-11-01T09:03:27.000Z",
+    "updatedAt": "2020-11-03T16:01:38.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 994797,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 23,
-      "weekly": 23
+      "total": 28,
+      "weekly": 28
     }
   },
   "screenshots": {
@@ -50,7 +50,7 @@
           {
             "key": "詰めるだけと併用する",
             "label": "する",
-            "value": "/* 詰めるやつと併用する */\r\n.LikeItemAfter-thanksMessage::after{\r\n\tborder-bottom-color: transparent;\r\n\tleft: -14px;\r\n\tborder-right-color: #777;\r\n\ttop: 8px;\r\n}\r\n.LikeItemAfter-thanksMessage::before{border-right-color:transparent;}",
+            "value": "/* 詰めるやつと併用する */\r\n.LikeItemAfter-thanksMessage::after{\r\n\tborder-bottom-color: transparent;\r\n\tleft: -14px;\r\n\tborder-right-color: #777;\r\n\ttop: 8px;\r\n}\r\n.LikeItemAfter-thanksMessage::before{border-right-color:transparent;}\r\n.NicorepoPage-content{background-color:#3e3e3e;}\r\n",
             "default": false
           }
         ]
@@ -65,25 +65,6 @@
             "label": "placeholder",
             "value": "#53D253",
             "default": true
-          }
-        ]
-      },
-      {
-        "key": "スッキリしたやつを統合",
-        "label": "スッキリしたやつを統合",
-        "type": "dropdown",
-        "options": [
-          {
-            "key": "スッキリしたやつを統合しない",
-            "label": "しない",
-            "value": "/* スッキリしたやつを統合しない */",
-            "default": true
-          },
-          {
-            "key": "スッキリしたやつを統合する",
-            "label": "する",
-            "value": "/* スッキリしたやつ(https://userstyles.org/styles/187176/) より統合 */\r\n.UserPage-main{padding-right:0;}\r\n.NicorepoPage-content,.UserDetailsHeader-body{flex-grow:2;margin-right:80px;}\r\n.UserDetailsStatus{width:auto;}\r\n.MainMenuContainer-menuList{padding-right:80px}",
-            "default": false
           }
         ]
       },

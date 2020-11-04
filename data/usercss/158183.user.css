@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Edge/Firefox版「Stylus」の拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        2020112.11.24
+@version        2020113.23.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ameblo.jp"), domain("ameba.jp") {
-/* Ameblo Management ver.2020.11.02 ********************** */
+/* Ameblo Management ver.2020.11.04 ********************** */
 /* 統合背景色設定 */
 :root {
     --home: #fff;
@@ -1796,16 +1796,17 @@ html {
 
 /* コメントアイテム コメント単位 */
 .userList__item {
-    margin: 0;
     padding: 8px 16px;
     border: 1px solid #d4d5d6 !important;
     background: #d8e1e5; }
 
 .userList__item + .userList__item {
-    padding: 8px 16px; }
+    padding: 8px 16px;
+    margin-top: .5rem; }
 
 .userList__item.is-open {
-    padding: 12px 16px; }
+    padding: 12px 16px;
+    margin: 1.5rem 0; }
 
 /* 記事タイトル */
 #ucsMainLeft .userList__title {
@@ -1814,7 +1815,8 @@ html {
 
 #ucsMainLeft .userList__titleCaption {
     font-size: 14px;
-    font-weight: normal; }
+    font-weight: normal;
+    min-width: 7.2rem; }
 
 .userList__title + .userList__inner {
     margin: 0; }

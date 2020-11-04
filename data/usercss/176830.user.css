@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BillyCurtis
 @description    `This CSS requires the user to have enabled Dark Theme within the Twitch settings as it replaces the default Dark Theme to Lights out.`
-@version        20201015.18.15
+@version        2020113.22.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -126,6 +126,8 @@
     .tw-root--theme-dark .footer {background: var(--color-black) !important;}
 
 /***BetterTTV***/
+   /*Header*/
+   #bttvSettingsPanel #header {background-color: #000000;}
    /*Main*/
    #bttvSettingsPanel {color: #d3d3d3; border: 1px solid #000000; background-color: #000000; box-shadow: var(--shadow-elevation-3);}
    #bttvSettingsPanel .nav> li> a {color: var(--color-white);}

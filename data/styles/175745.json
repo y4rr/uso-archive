@@ -2,12 +2,12 @@
   "id": 175745,
   "info": {
     "name": "Twitch Dark Theme Enhancer",
-    "description": "Modifies the current Twitch.tv dark theme to resemble its older dark theme.\r\n\r\nGitHub: https://github.com/loopy750/Twitch-Dark-Theme-Enhancer",
-    "additionalInfo": "<br>\r\n<b>Style Settings</b>\r\n\r\n<b><i>Top Navigation Menu:</i></b> Choose between Purple or the Default grey colour.\r\n\r\n<b><i>Channel Info Background Colour:</i></b> Select the colour used for the channel information bar below the video.\r\n\r\n<b><i>Smooth Chat Scrolling:</i></b> Smooth scrolling effect with new chat room messages.\r\n\r\nEnable - Smooth Fix (Firefox): Select for Firefox. Smoother but mouse scrolling doesn't work.\r\n\r\n<b><i>Live Time Format (Experimental):</i></b> Remove the seconds displayed from live time view. Note: Due to limitations this may not function as expected on all systems.",
+    "description": "Modifies the current Twitch.tv dark theme to resemble its older dark theme.",
+    "additionalInfo": "<br>\r\n<b>Style Settings</b>\r\n\r\n<b><i>Top Navigation Menu:</i></b> Choose between Purple or the Default grey colour.\r\n\r\n<b><i>Smooth Chat Scrolling:</i></b> Smooth scrolling effect with new chat room messages.\r\n\r\n<b><i>Channel Info Background Colour:</i></b> Select the colour used for the channel information bar below the video.\r\n\r\n<b><i>Live Time Format (Experimental):</i></b> Remove the seconds displayed from live time view. Note: Due to limitations this may not function as expected on all systems.",
     "format": "uso",
     "category": "twitch",
     "createdAt": "2019-09-27T10:35:46.000Z",
-    "updatedAt": "2020-10-05T20:28:44.000Z",
+    "updatedAt": "2020-11-03T18:20:02.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 853088,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 869,
-      "weekly": 3
+      "total": 897,
+      "weekly": 9
     }
   },
   "screenshots": {
@@ -69,14 +69,8 @@
           {
             "key": "SmoothScroll Enabled",
             "label": "Enable",
-            "value": "    scroll-behavior: smooth !important\r\n}\r\n\r\n@supports (-moz-appearance: none) {\r\n    .chat-room__content div.scrollable-area div.simplebar-scroll-content,\r\n    .chat-room__content div.simplebar-scroll-content div.simplebar-content {\r\n      position: sticky !important\r\n    }\r\n}",
+            "value": "    scroll-behavior: smooth !important\r\n}\r\n\r\n@supports (-moz-appearance: none) {\r\n    .chat-room__content div.scrollable-area div.simplebar-scroll-content:not(:hover),\r\n    .chat-room__content div.simplebar-scroll-content div.simplebar-content:not(:hover) {\r\n      width: 100% !important;\r\n      overflow-y: hidden !important\r\n    }\r\n}",
             "default": true
-          },
-          {
-            "key": "SmoothScroll FF",
-            "label": "Enable - Smooth Fix (Firefox)",
-            "value": "    scroll-behavior: smooth !important\r\n}\r\n\r\n@supports (-moz-appearance: none) {\r\n    .chat-room__content div.scrollable-area div.simplebar-scroll-content,\r\n    .chat-room__content div.simplebar-scroll-content div.simplebar-content {\r\n      width: 100% !important;\r\n      overflow-y: hidden !important\r\n    }\r\n}",
-            "default": false
           }
         ]
       },

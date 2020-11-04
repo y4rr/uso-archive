@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Galver
 @description    `If you're an Apple fanboy you'll definitely like this style, because it gives YouTube a more refined  touch. This theme adds rounded corners, a better darkmode, blurry backgrounds, shadows and overall a just better looking UI.<strong><mark>!!!ONLY USE WITH YOUTUBE DARKMODE ACTIVATED!!!</mark></strong><strong><mark>WORKS BETTER WITH CHROME OR OPERA SINCE THERE IS NO OFFICIAL SUPPORT FOR BACKDROP FILTERS IN MOZILLA FIREFOX (Otherwise you won’t have blurry backgrounds, but transparent backgrounds. This doesn’t look very well)</mark></strong><strong>IF YOU USE CHROME PLEASE ENABLE THIS FLAG:</strong> chrome://flags/#enable-experimental-web-platform-features<strong>IF YOU USE OPERA PLEASE ENABLE THIS FLAG:</strong> opera://flags/#enable-experimental-web-platform-features<strong>Known Issues:</strong>- Rainbow Theme: Rainbow Elements are not synchronised`
-@version        202096.21.41
+@version        2020113.19.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown colortheme "Color Theme" {
@@ -206,6 +206,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #00ffcb;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #00ffcbe0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #00ffcb !important;
+    background-color: #00ffcb4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #00ffcb !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #00ffcb !important;
+    outline: none !important;
 } EOT;
 lightblue "Light Blue" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -406,6 +427,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #00f2ff;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #00f2ffe0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #00f2ff !important;
+    background-color: #00f2ff4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #00f2ff !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #00f2ff !important;
+    outline: none !important;
 } EOT;
 limegreen "Lime Green" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -606,6 +648,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #ccff00;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #ccff00e0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #ccff00 !important;
+    background-color: #ccff004a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #ccff00 !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #ccff00 !important;
+    outline: none !important;
 } EOT;
 lightgreen "Light Green" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -806,6 +869,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #8bff5e;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #8bff5ee0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #8bff5e !important;
+    background-color: #8bff5e4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #8bff5e !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #8bff5e !important;
+    outline: none !important;
 } EOT;
 red "Red" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -1006,6 +1090,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #f34444;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #f34444e0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #f34444 !important;
+    background-color: #f344444a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #f34444 !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #f34444 !important;
+    outline: none !important;
 } EOT;
 lightorange "Light Orange" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -1207,6 +1312,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #ffbb33;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #ffbb33e0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #ffbb33 !important;
+    background-color: #ffbb334a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #ffbb33 !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #ffbb33 !important;
+    outline: none !important;
 } EOT;
 purple "Purple" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -1407,6 +1533,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #993cfc;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #993cfce0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #993cfc !important;
+    background-color: #993cfc4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #993cfc !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #993cfc !important;
+    outline: none !important;
 } EOT;
 pink "Pink" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -1602,6 +1749,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: #ff32ee;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: #ff32eee0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: #ff32ee !important;
+    background-color: #ff32ee4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #ff32ee !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: #ff32ee !important;
+    outline: none !important;
 } EOT;
 customcolor "Custom Color" <<<EOT #heart-button button yt-icon,
 path[fill="#FF0000"] {
@@ -1803,6 +1971,27 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: /*[[themecolor]]*\/;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    background: /*[[themecolor]]*\/e0 !important;
+}
+/*chapter time color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    border-radius: 5px;
+    color: /*[[themecolor]]*\/ !important;
+    background-color: /*[[themecolor]]*\/4a !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: /*[[themecolor]]*\/ !important;
+}
+/*chapter selected border radius / color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    border-color: /*[[themecolor]]*\/ !important;
+    outline: none !important;
 } EOT;
 rainbow "Rainbow (beta)" <<<EOT /*rainbow colors theme verified badge color*\/
 @keyframes AppleTubeThemeCV { 
@@ -2255,6 +2444,33 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: currentColor;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    animation: AppleTubeThemeBCe0 var(--t) linear infinite !important;
+}
+/*chapter time color*\/
+div#time.style-scope.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeC var(--t) linear infinite !important;
+}
+/*chapter time bg-color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBC4a var(--t) linear infinite !important;
+    border-radius: 5px !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBG var(--t) linear infinite !important;
+}
+/*chapter selected border radius*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    outline: none !important;
+}
+/*chapter selected color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBoC var(--t) linear infinite !important;
 } EOT;
 cyanlightblue "Cyan / Light Blue" <<<EOT /*rainbow colors theme background color*\/
 @keyframes AppleTubeThemeBG { 
@@ -2549,6 +2765,33 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: currentColor;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    animation: AppleTubeThemeBCe0 var(--t) linear infinite !important;
+}
+/*chapter time color*\/
+div#time.style-scope.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeC var(--t) linear infinite !important;
+}
+/*chapter time bg-color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBC4a var(--t) linear infinite !important;
+    border-radius: 5px !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBG var(--t) linear infinite !important;
+}
+/*chapter selected border radius*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    outline: none !important;
+}
+/*chapter selected color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBoC var(--t) linear infinite !important;
 } EOT;
 limegreenlightgreen "Lime Green / Light Green" <<<EOT /*rainbow colors theme background color*\/
 @keyframes AppleTubeThemeBG { 
@@ -2843,6 +3086,33 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: currentColor;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    animation: AppleTubeThemeBCe0 var(--t) linear infinite !important;
+}
+/*chapter time color*\/
+div#time.style-scope.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeC var(--t) linear infinite !important;
+}
+/*chapter time bg-color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBC4a var(--t) linear infinite !important;
+    border-radius: 5px !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBG var(--t) linear infinite !important;
+}
+/*chapter selected border radius*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    outline: none !important;
+}
+/*chapter selected color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBoC var(--t) linear infinite !important;
 } EOT;
 redlightorange "Red / Light Orange" <<<EOT /*rainbow colors theme background color*\/
 @keyframes AppleTubeThemeBG { 
@@ -3137,6 +3407,33 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: currentColor;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    animation: AppleTubeThemeBCe0 var(--t) linear infinite !important;
+}
+/*chapter time color*\/
+div#time.style-scope.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeC var(--t) linear infinite !important;
+}
+/*chapter time bg-color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBC4a var(--t) linear infinite !important;
+    border-radius: 5px !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBG var(--t) linear infinite !important;
+}
+/*chapter selected border radius*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    outline: none !important;
+}
+/*chapter selected color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBoC var(--t) linear infinite !important;
 } EOT;
 purplepink "Purple / Pink" <<<EOT /*rainbow colors theme background color*\/
 @keyframes AppleTubeThemeBG { 
@@ -3431,6 +3728,33 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
     color: currentColor;
     border-radius: 10px !important;
+}
+/*`see current chapter`-button *\/
+#sync-button.ytd-macro-markers-list-renderer {
+    animation: AppleTubeThemeBCe0 var(--t) linear infinite !important;
+}
+/*chapter time color*\/
+div#time.style-scope.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeC var(--t) linear infinite !important;
+}
+/*chapter time bg-color*\/
+#time.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBC4a var(--t) linear infinite !important;
+    border-radius: 5px !important;
+}
+/*chapter active indicator point*\/
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBG var(--t) linear infinite !important;
+}
+/*chapter selected border radius*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    border: 2px solid !important;
+    border-radius: 12px !important;
+    outline: none !important;
+}
+/*chapter selected color*\/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    animation: AppleTubeThemeBoC var(--t) linear infinite !important;
 } EOT;
 
 }
@@ -3533,7 +3857,62 @@ standardbar "Standard Theme" <<<EOT /*progress bar scrubber button color*\/
 /*Thank you for understanding :)*/
 
     /*[[colortheme]]*/
-
+ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active] {
+    border-radius: 10px !important;
+}
+/*chapter background delete*/
+#content.ytd-engagement-panel-section-list-renderer {
+    background-color: transparent !important;
+}
+/*chapter border radius*/
+ytd-engagement-panel-section-list-renderer {
+    border-radius: 15px;
+}
+/*already watched backdrop filter / radius*/
+yt-formatted-string.ytd-thumbnail-overlay-playback-status-renderer {
+    background-color: rgb(0 0 0 / 50%) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 5px !important;
+}
+/*feed filter before / after - background remove*/
+ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-chip-bar-renderer:before, #right-arrow.ytd-feed-filter-chip-bar-renderer:before, ytd-feed-filter-chip-bar-renderer[is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer:after, #left-arrow.ytd-feed-filter-chip-bar-renderer:after {
+    background: transparent !important;
+}
+ytd-thumbnail.ytd-rich-grid-media:before {
+    background-color: transparent !important;
+}
+/*feed filter background remove*/
+#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer {
+    background-color: transparent !important;
+}
+/*feed filter background remove / border delete*/
+#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+    background-color: transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+/*feed filter blur transition when hover*/
+iron-selector#chips:hover {
+    backdrop-filter: blur(10px);
+    transition: all .25s linear;
+}
+/*feed filter space remove*/
+#scroll-container.ytd-feed-filter-chip-bar-renderer {
+    margin-top: -1px !important;
+}
+/*feed filter options color*/
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
+    background-color: rgba(49, 49, 49, 0.78);
+}
+/*feed filter options color when hover*/
+yt-chip-cloud-chip-renderer.style-scope.ytd-feed-filter-chip-bar-renderer:hover {
+    background-color: #545454c7;
+}
+/*feed filter border delete*/  
+ytd-feed-filter-chip-bar-renderer {
+    border-top: none !important;
+    border-bottom: none !important;
+}
 /*feed filter fade delete*/
 #scroll-container.ytd-feed-filter-chip-bar-renderer:after {
     background: none !important;
@@ -4009,8 +4388,9 @@ yt-formatted-string.style-scope.yt-next-continuation {
 ytd-thumbnail-overlay-side-panel-renderer {
     background: rgba(50, 50, 50, 0.30) !important;
     backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px)  !important;
-     margin-bottom: -2px !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    margin-bottom: -2px !important;
+    border-radius: 0px 12px 12px 0px;
 }
 /*notification counter redesign*/
 #notification-count.ytd-notification-topbar-button-renderer {

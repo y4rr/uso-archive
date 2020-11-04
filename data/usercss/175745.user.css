@@ -2,8 +2,8 @@
 @name           Twitch Dark Theme Enhancer
 @namespace      USO Archive
 @author         loopy750
-@description    `Modifies the current Twitch.tv dark theme to resemble its older dark theme.GitHub: https://github.com/loopy750/Twitch-Dark-Theme-Enhancer`
-@version        2020105.23.28
+@description    `Modifies the current Twitch.tv dark theme to resemble its older dark theme.`
+@version        2020113.18.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown top-nav-purple "Top Navigation Menu" {
@@ -16,22 +16,13 @@ TopNav-Default "Grey" <<<EOT #18181B EOT;
 }
 
 @supports (-moz-appearance: none) {
-    .chat-room__content div.scrollable-area div.simplebar-scroll-content,
-    .chat-room__content div.simplebar-scroll-content div.simplebar-content {
-      position: sticky !important
-    }
-} EOT;
-SmoothScroll-Disable "Disable" <<<EOT     scroll-behavior: auto !important
-} EOT;
-SmoothScroll-FF "Enable - Smooth Fix (Firefox)" <<<EOT     scroll-behavior: smooth !important
-}
-
-@supports (-moz-appearance: none) {
-    .chat-room__content div.scrollable-area div.simplebar-scroll-content,
-    .chat-room__content div.simplebar-scroll-content div.simplebar-content {
+    .chat-room__content div.scrollable-area div.simplebar-scroll-content:not(:hover),
+    .chat-room__content div.simplebar-scroll-content div.simplebar-content:not(:hover) {
       width: 100% !important;
       overflow-y: hidden !important
     }
+} EOT;
+SmoothScroll-Disable "Disable" <<<EOT     scroll-behavior: auto !important
 } EOT;
 
 }

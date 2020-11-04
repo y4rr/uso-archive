@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         Yad
 @description    `My own version of dark theme of bigkis.com`
-@version        2020113.10.8
+@version        2020113.12.57
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("bigkis.com") {
-
 /*Theme Made by YAD for BIGKIS 2020*/
 
 body, .tag_create_blog {
@@ -59,7 +58,9 @@ body, .tag_create_blog {
 }
 
 .filterby {
-    margin: 0px 0% 0px 14%;
+    margin: auto;
+    position: inherit;
+    padding-left: 81px;
 }
 
 .btn-main-rev, .tag_page_nav li.active a, .ui-timepicker-div+.ui-datepicker-buttonpane>button:not(.ui-priority-primary) {

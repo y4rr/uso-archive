@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `NOTE: KICKASSANIME'S DARK MODE HAS TO BE ENABLED IN ORDER FOR THIS THEME TO WORK.Detailed guide on how to use this style is available in this reddit post: https://www.reddit.com/r/KickAssAnime/comments/co5jqh/custom_kickassanime/Customizable KickAssAnime.rsFeatures: Cleaner and better designEasily customizableCustom background imageAlso applies to Dailymotion, Disqus, and other video playersCleaner video player, also matches themeVibrant Video for brighter video (Doesn't work on mobile)Ads are hiddenCheck out my other styles:https://userstyles.org/users/812884DISCORD:Join my Discord server to get notifications when a new update has been released, get direct support from me and others, and it is generally faster than userstyles to get in touch with me : https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        20201020.21.2
+@version        2020113.21.45
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -271,20 +271,6 @@ ult "Ultra" <<<EOT /*vvu_kaa*\/
 } EOT;
 
 }
-@advanced dropdown hah "Auto hide ads?" {
-	no5 "No*" <<<EOT /*no5*\/ EOT;
-ye5 "Yes " <<<EOT /*hah*\/
-.ka-ax-wr.mb-3, #glx-15377-container, .jw-dock-button.jw-background-color.jw-reset.kado-button, .jw-dock-button.jw-background-color.jw-reset.roms-get-button, table, .container>.item, p, img, html[theme="colored"] ._2hOOB, ._26sSq::before, ._3BQ1N::after {
-    opacity: 0;
-}
-div#ad_block_0 {
-display: none;
-}
-body {
-    color: transparent
-} EOT;
-
-}
 @advanced dropdown thh "Custom Image?" {
 	no "No*" <<<EOT /*imgno*\/ EOT;
 ye "Yes" <<<EOT /*thhV1*\/
@@ -309,10 +295,9 @@ st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.
 
 ==/UserStyle== */
 @-moz-document domain("kickassanime.rs"), domain("animo-pace-stream.io"), domain("haloani.ru"), domain("kickassanime.io") {
-/*V3.12.14_201020*/
+/*V3.12.15_201103*/
 /*[[th]]*/
 /*[[thh]]*/
-/*[[hah]]*/
 /*[[vvh]]*/
 :root {
 --minr:/*[[min]]*/;
@@ -326,7 +311,7 @@ st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.
     background-color: var(--minr)!important;
 }
 /*border color*/
- .btn.btn-default, #app.dark .navbar-nav .nav-item:hover, #app.dark #sidebar-anime-info a:hover, .btn-outline-danger, #app.dark table thead, .table thead th, .form-control, .input-group-text, .border, .modal-header,  .nav-tabs, #app.dark table tbody td, hr, .table-bordered, .table-bordered td, .table-bordered th, .btn-secondary, .modal-footer, .custom-control-input:checked~.custom-control-label:before, select, .jw-settings-submenu::-webkit-scrollbar-thumb, iframe, a.ka-url-wrapper.video-item-poster.rounded, #sidebar-anime-info .poster, .dropdown-menu, #app.dark .btn-outline-primary, #app.dark .btn-primary, .popover,.custom-switch .custom-control-label:after, .btn.btn-primary, .btn-danger, .btn-success, .img-thumbnail, .btn-outline-secondary {
+ .btn.btn-default, #app.dark .navbar-nav .nav-item:hover, #app.dark #sidebar-anime-info a:hover, .btn-outline-danger, #app.dark table thead, .table thead th, .form-control, .input-group-text, .border, .modal-header,  .nav-tabs, #app.dark table tbody td, hr, .table-bordered, .table-bordered td, .table-bordered th, .btn-secondary, .modal-footer, .custom-control-input:checked~.custom-control-label:before, select, .jw-settings-submenu::-webkit-scrollbar-thumb, iframe, a.ka-url-wrapper.video-item-poster.rounded, #sidebar-anime-info .poster, .dropdown-menu, #app.dark .btn-outline-primary, #app.dark .btn-primary, .popover,.custom-switch .custom-control-label:after, .btn.btn-primary, .btn-danger, .btn-success, .img-thumbnail, .btn-outline-secondary, .custom-switch .custom-control-label:before {
     border: transparent!important;
       border-radius: 1px!important;        
 }
@@ -344,7 +329,7 @@ st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.
               border-radius: 1px
 }
 /*acnbg*/
- .mark, mark, ::-webkit-scrollbar-thumb, #app.dark .nav-tabs .nav-link:not(.active):hover:after, .badge-primary, .btn.btn-outline-success:hover, .alert-danger, .custom-control-input:checked~.custom-control-label:before, .video-js .vjs-volume-level, .video-js .vjs-play-progress, .jw-progress, .jw-knob, .jw-settings-submenu::-webkit-scrollbar-thumb, #player .jw-option.jw-active-option, #player .jw-progress, #player .jw-cue, #player .jw-knob, #player .jw-active-option, #player .jw-nextup-header, ::selection, .btn-success, .img-thumbnail {
+ .mark, mark, ::-webkit-scrollbar-thumb, #app.dark .nav-tabs .nav-link:not(.active):hover:after, .badge-primary, .btn.btn-outline-success:hover, .alert-danger, .custom-control-input:checked~.custom-control-label:before, .video-js .vjs-volume-level, .video-js .vjs-play-progress, .jw-progress, .jw-knob, .jw-settings-submenu::-webkit-scrollbar-thumb, #player .jw-option.jw-active-option, #player .jw-progress, #player .jw-cue, #player .jw-knob, #player .jw-active-option, #player .jw-nextup-header, ::selection, .btn-success, .img-thumbnail, .dark .dropdown .dropdown-item.active, .dark .dropdown .dropdown-item:active {
     background-color: var(--acnr);
           }
 /*acnbb*/

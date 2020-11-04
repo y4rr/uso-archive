@@ -2,8 +2,8 @@
 @name           WIP ニコニコ動画(Re) 検索結果ダークテーマ
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコニコ動画の動画検索結果ページをダークテーマ風にするなにかです。やっつけなのでいろいろ雑です。あくまでニコニコ動画向けなので静画検索結果とかは何も対応してません。広告非表示とかは何もしていないので、他作者様の広告非表示CSSやublock等のアドオンを利用してください。スクリーンショットを撮影した環境では本CSSおよびAgentSmith様が公開している<a href="https://userstyles.org/styles/64999/niconico-noads-for-pc">ニコニコ動画(く) 広告消し / niconico NoAds for PC</a>を導入しています。検索結果に要素を追加するスクリプト、CSSとかとの併用の可否は一切確認していません。こうしたらいいと思うよ！とか併用するとおかしいところがあるよ！みたいなのがあれば<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げてもらえば気が向いたら対応するかもしれません。`
-@version        2020113.9.0
+@description    `ニコニコ動画の動画検索結果ページをダークテーマ風にするなにかです。やっつけなのでいろいろ雑です。あくまでニコニコ動画向けなので静画検索結果とかは何も対応してません。広告非表示とかは何もしていないので、他作者様の広告非表示CSSやublock等のアドオンを利用してください。スクリーンショットを撮影した環境では本CSSおよびAgentSmith様が公開している<a href="https://userstyles.org/styles/64999/niconico-noads-for-pc">ニコニコ動画(く) 広告消し / niconico NoAds for PC</a>を導入しています。検索結果に要素を追加するスクリプト、CSSとかとの併用の可否は一切確認していません。こうしたらいいと思うよ！とか併用するとおかしいところがあるよ！みたいなのがあれば<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げてもらえば気が向いたら対応するかもしれません。--絶対やってください！--「列数変えるやつをダークテーマ たぶん動く」って書いてある行の下（30行目）に下記を追記してください。.columnChange.open{background:url(../../images/modules/form/search-option/columnchange_open.png) right 2px no-repeat #575757;}（userstyle.orgの制約のせいか含めて公開できません……url消すと◀が消えるので……）--助けてポイント--・列数変えるやつの横にある◀みたいなのの色の変え方→mix-blend-modeを駆使すればいけるのかなー？全然わからない……（画像の差し替えは最終手段……）というか……CC0で公開してるから代わりに書いてくれても……いいんですよ？`
+@version        2020113.17.16
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,13 +28,29 @@ body,.leadBanner,.trendtag.trendtagFooter,[data-follow-container=""],.container.
 .searchOption{background:#393939;border:4px solid #575757;}
 .searchOption .optionList ul li.active .search-option-sort-item-label{background:#6a6a6a}
 .search-option-date-range-form input{background-color:#bbb}
+.switchingBtn:hover{background:#3c3c3c;}
+.switchingBtn{background:#515151;}
+.switchingBtn.active{background:#2f2f2f;}
+.search-option-date-range-form input[type="submit"]{background:#3c3c3c;}
+
+/* **************************************** */
+/* 列数変えるやつをダークテーマ たぶん動く  */
+/* **************************************** */
+
+.columnChange li{
+	background-color: #252525;
+	mix-blend-mode: color-burn;
+}
+.switchingBtn{border:1px solid #575757;}
 
 /* 文字 */
-.itemDescription,.itemComment,.videoList02 .itemContent .itemComment,itemTitle,.video .itemData .count .value,.video .itemTime,h1,p,.tagCaption .tagListBox .contentHeader .edit a,.tagCaption .tag,inputText,input,.videoSearchOption .tab a{color: #cbcaca !important;}
+.itemDescription,.itemComment,.videoList02 .itemContent .itemComment,itemTitle,.video .itemData .count .value,.video .itemTime,h1,p,.tagCaption .tagListBox .contentHeader .edit a,.tagCaption .tag,inputText,input,.videoSearchOption .tab a,.switchingBtn{color: #cbcaca !important;}
 .videoList02 .itemContent .itemTitle a:link,.videoRcolumn .itemTitle a:link,h3,.searchOption .optionList ul a,.search-option-date-range-form > div,.searchOption .search-option-links .search-option-reset a,.searchOption .search-option-links .notice a{color:#d2d2d2}
 .new,.tagCaption .tagListBox .contentHeader .edit a:hover{color:#4cc894}
 .searchOption .optionList ul li.active .search-option-sort-item-label{color:#eee}
 .search-option-date-range-form input{color:#000 !important;}
+.videoList02 .itemContent .itemTitle a:visited{color:#8c8c8c}
+div [value="設定"]{color:#ddd !important}
 
 /* 調整 */
 .contentsBox{
@@ -42,5 +58,6 @@ body,.leadBanner,.trendtag.trendtagFooter,[data-follow-container=""],.container.
 }
 
 /* SVG */
-h1 path{fill:#ccc}
+h1 path{fill:#ccc !important}
+h1 [data-darkreader-inline-fill]{fill:#ccc !important;}
 }
