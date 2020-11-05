@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/NpDeshnq`
-@version        2020112.16.5
+@version        2020114.13.4
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1553,12 +1553,12 @@ path[fill="#ececec"] {fill: inherit !important;}
 
 /*[[file-link]]*/
 
-.unkfunc {background: var(--theme_default_quote-bg); border-radius: 3px; color: var(--theme_default_quote); padding: 1px 5px;}
+.unkfunc {background: var(--theme_default_quote-bg); border-radius: 3px; color: var(--theme_default_quote); display: inline-block; padding: 0 4px;}
 
 .media-expand-button, .media-hide-button {transition: .1s;}
 .media-expand-button:hover, .media-hide-button:hover {color: var(--theme_default_text);}
 
-.spoiler {background: var(--theme_default_spoiler) !important; border-radius: 3px; color: transparent !important; padding: 1px 5px; transition: .1s;}
+.spoiler {background: var(--theme_default_spoiler) !important; border-radius: 3px; color: transparent !important; display: inline-block; padding: 0 4px; transition: .1s;}
 .spoiler a {background: transparent !important; color: transparent !important; transition: .1s;}
 .spoiler:hover {background: var(--theme_default_spoiler) !important; color: var(--theme_default_text) !important;}
 .spoiler:hover a {color: var(--theme_default_link) !important;}

@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "nicovideo",
     "createdAt": "2020-09-22T12:40:37.000Z",
-    "updatedAt": "2020-11-04T12:01:02.000Z",
+    "updatedAt": "2020-11-04T13:03:50.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 994797,
@@ -187,15 +187,15 @@
         "type": "dropdown",
         "options": [
           {
-            "key": "広告いる",
-            "label": "いる",
-            "value": "/* 広告いる */",
-            "default": true
-          },
-          {
             "key": "広告いらない",
             "label": "いらない",
             "value": "/* 消去する要素 */\r\n.BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon,.PreVideoStartPremiumLinkOnEconomyTimeContainer{\r\n    display: none !important;\r\n}",
+            "default": true
+          },
+          {
+            "key": "広告いる",
+            "label": "いる（不具合があります）",
+            "value": "/* 広告いる */",
             "default": false
           }
         ]

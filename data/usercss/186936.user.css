@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.2.9+ (B)
+@name           Compact Tube (White) v1.3.0
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020112.13.36
+@version        2020114.22.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.2.9 (β) */
+/* CompactTube (White) v1.3.0 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -56,7 +56,7 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
    .ytd-display-ad-renderer {display: none;}
                 /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
                 : - "none" - убрать: "flow"- показать.  */
-                ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
+                -o-ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -1636,7 +1636,8 @@ position: relative; top: 0px; left: 5px;}
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);
     border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-    box-shadow: 0px 0px 1px 0px var(--ytd-searchbox-legacy-button-border-color);}
+    box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);
+    -o-box-shadow: 0px 0px 1px 0px var(--ytd-searchbox-legacy-button-border-color) /*old ver.*/;}
 
 
 /*центровка блока с Аватарками избранных каналов (на странице Каналов)*/
@@ -1915,7 +1916,7 @@ ytd-backstage-items.ytd-section-list-renderer
 /* использует блок из Комментариев под видео и ничего с этим нельзя поделать */
         /* НАСТРОЙКА КОММЕНТАРИЕВ */
 
-/* Центровка блока с Комментами Автора канала и комментами в Сообществе */
+/* Центровка блока с Комментами Автора канала и комментами в Сообществе ($) */
 ytd-section-list-renderer[page-subtype=channels] ytd-comments.ytd-section-list-renderer {max-width: 852px; margin-top: -16px;}
 
 /* Смещение зоны комментариев от Правого Края - Влево */

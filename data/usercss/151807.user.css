@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `test`
-@version        2020114.5.1
+@version        2020114.13.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -507,13 +507,14 @@
   /*live*/    #chat-messages #contents #ticker #items{background:#000!important;padding:0px!important;}
   /*live*/    #chat{margin:0px!important;}
   /**/        #chat #contents #docked-messages{display:none!important;}
-  /**/        #chat #contents .yt-live-chat-item-list-renderer{background:#040!important;padding:4px 0px 4px 0px!important;}
+  /**/        #chat #contents .yt-live-chat-item-list-renderer              {background:#040!important;padding:0px 0px 0px 0px!important;}
   /**/        #chat #contents .yt-live-chat-item-list-renderer:nth-child(2n){background:#030!important;}
-  /**/        #chat #contents .yt-live-chat-item-list-renderer:hover{background:#000!important;}
+  /**/        #chat #contents .yt-live-chat-item-list-renderer:hover        {background:#000!important;}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#author-photo{margin:0px 5px 0px 0px!important;}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#content{}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#content>yt-live-chat-author-chip{display:none!important;}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#content>#message{font:18px/100% arial!important;color:#ccc!important;}
+  /**/        #chat #contents .yt-live-chat-item-list-renderer>#content>#message .emoji{display:none!important;}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#menu{display:none!important;}
   /*Donation*/#chat #contents .yt-live-chat-item-list-renderer>#card{}
   /**/        #chat #contents .yt-live-chat-item-list-renderer>#card>#header{background:transparent!important;padding:0px 0px!important;}

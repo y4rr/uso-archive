@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。広告非表示もカスタマイズ機能にあります。デフォルトは表示されるようになっています。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        2020114.12.1
+@version        2020114.13.3
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -86,11 +86,11 @@ display:none;
 
 }
 @advanced dropdown -- "広告" {
-	---- "いる*" <<<EOT /* 広告いる *\/ EOT;
------- "いらない" <<<EOT /* 消去する要素 *\/
+	------ "いらない*" <<<EOT /* 消去する要素 *\/
 .BottomContainer, .CommentPanelBannerAd, .WatchAppContainer-switchToFlash, .UadButtonBalloon,.PreVideoStartPremiumLinkOnEconomyTimeContainer{
     display: none !important;
 } EOT;
+---- "いる（不具合があります）" <<<EOT /* 広告いる *\/ EOT;
 
 }
 @advanced color ------1 "ニコるランク1の色（1~2)" #7F68CA

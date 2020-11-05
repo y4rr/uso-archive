@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Biller
 @description    `A clean dark orange theme for youtube.<b>[MAKE SURE TO <u>ENABLE DARK THEME</u> FROM YOUTUBE]</b>Feel free to leave a feedback and any donation will be appreciated.Thank you very much for your support!`
-@version        2020109.14.44
+@version        2020114.13.8
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -112,7 +112,7 @@ a.yt-simple-endpoint{
     background-color: transparent;
 }
 
-#like-bar, #toggleButton{
+#like-bar{
     background-color: #ff8100 !important;
 }
 
@@ -158,7 +158,7 @@ ul.sbsb_b{
 }
 
 .ytp-menuitem-toggle-checkbox{
-    background-color: #ff8100 !important;
+    background-color: #323232 !important;
 }
 
 yt-icon{
@@ -172,6 +172,14 @@ yt-icon:hover{
 [aria-pressed="true"]{
     border: 1px solid #ff8100 !important;
     border-radius: 30px;
+}
+
+paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button{
+    background-color: #ff8100 !important;
+}
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox::after{
+    background-color: #ff8100 !important;
 }
 
 .style-default-active{
@@ -647,9 +655,9 @@ ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail{
     background-color: #323232 !important;
 }
 
-yt-formatted-string::selection, .yt-formatted-string::selection, .yt-view-count-renderer::selection, .ytd-video-primary-info-renderer::selection, .ytd-compact-autoplay-renderer::selection{
-    color: #ff8100;
-    background-color: #323232;
+yt-formatted-string::selection, .yt-formatted-string::selection, .yt-view-count-renderer::selection, .ytd-video-primary-info-renderer::selection, .ytd-compact-autoplay-renderer::selection, .ytd-comment-renderer::selection, .ytd-comment-action-buttons-renderer::selection, .yt-img-shadow::selection, .ytp-time-current::selection, .ytp-time-separator::selection, .ytp-time-duration::selection, .ytd-compact-video-renderer::selection, .ytd-video-meta-block::selection, .ytd-thumbnail-overlay-time-status-renderer::selection, .ytd-topbar-logo-renderer::selection{
+    color: #ff8100 !important;
+    background-color: #323232 !important;
 }
 
 ytd-button-renderer.style-destructive[is-paper-button]
@@ -669,7 +677,6 @@ ytd-rich-shelf-renderer{
     border-bottom: 5px solid transparent;
     border-radius: 100%;
 }
-
 
 ytd-author-comment-badge-renderer{
     background-color: #323232 !important;
