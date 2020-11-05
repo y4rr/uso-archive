@@ -2,8 +2,8 @@
 @name           Baidu Lite 百度轻 - 轻萌化
 @namespace      USO Archive
 @author         神代夕綺
-@description    `你一定会喜欢的简约且好看的百度轻萌化！在pan_cao大大的“Baidu Lite 百度轻”上进行了一定的轻萌化，<s>百度轻魔改版</s>。作者博客：<a href="https://kira.cool" target="_blank"><b>kira.cool</b></a><b>实现功能：</b> 1. 修复原版搜索框不能正常使用的问题 2. 提供搜索页、视频页等页面的样式支持 3. 卡片半透明化 4. 高分屏适配 5. 支持图片背景 6. 持续性的更新<b>注意：</b>1. 在未登录百度账号时，百度会额外引用一个未登录的 css 文件，在 v1.0.6a 版本中简单修复了这个 css 文件额外带来的部分问题。但仍有一些问题未处理，强烈建议您登录百度账号以避免出现不必要的问题。2. 同样的，在使用百度主题后也有可能会出现不必要的问题，建议您在使用本主题时不要使用百度自带的皮肤功能。<b>反馈：</b>在 <a href = "https://userstyles.org/styles/175260">stylish</a> 反馈可能较晚才能收到回复，您如果在使用过程中遇到什么问题可以在 <a href = "https://kira.cool/code-project/80-Baidu-Lite-moe"   target="_blank"><b>这篇文章</b></a> 留言，<s>不一定能解决就是了</s>。<b>鸣谢：</b>pan_cao - Baidu Lite 百度轻silence lu - bilibili33 娘背景图：P站id 62101308`
-@version        20201013.6.21
+@description    `你一定会喜欢的简约且好看的百度轻萌化！<b>功能特性：</b> 1. 持续维护的百度样式 2. 提供搜索页、新闻页、视频页等多个页面的样式支持 3. 卡片半透明化 4. 高分屏适配 5. 支持自定义图片背景<b>即将推出的功能：</b> 1. 即将支持自定义单双栏 2. 即将支持自定义卡片分辨率<b>注意：</b>1. 百度会为未登录百度账号的设备提供不同的 css 样式文件，在 v1.0.6a 版本中简单修复了这个 css 文件额外带来的部分问题。但仍有一些问题未处理，您可能需要登录百度账号以避免出现不必要的问题。2. 在使用百度主题后也有可能会出现不必要的问题，您可能需要在使用本样式前先关闭百度自带的样式功能才能保证本样式的正常工作。<b>反馈：</b>在 <a href = "https://userstyles.org/styles/175260">stylish</a> 反馈可能较晚才能收到回复，您如果在使用过程中遇到什么问题可以在 <a href = "https://kira.cool/code-project/80-Baidu-Lite-moe"   target="_blank"><b>这篇文章</b></a> 留言，<s>不一定能解决就是了</s>。<b>鸣谢：</b>pan_cao - Baidu Lite 百度轻silence lu - bilibili33 娘背景图：P站id 62101308作者博客：<a href="https://kira.cool" target="_blank"><b>kira.cool</b></a>`
+@version        2020115.2.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "自定义背景" {
@@ -319,7 +319,7 @@ em {
 	/* Opera */
 	background-position: 100% !important;
 	z-index: 2;
-	width: 588px !important;
+	width: 585px !important;
 	height: 40px !important;
 	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 	padding-top: 4px;
@@ -1366,13 +1366,6 @@ a[soft_id] {
 	display: none !important;
 }
 
-@media screen and (min-width: 1921px) {
-	.head_wrapper {
-		left: 52px !important;
-		width: 100vw;
-	}
-}
-
 /*========= Light Mode ========= */
 a {
 	color: #4879BD;
@@ -1391,9 +1384,6 @@ h3 a:hover {
 }
 
 .c-gap-bottom-small a:hover {
-	border-bottom: #4879BD 1.2px solid;
-}
-.c-row a:hover {
 	border-bottom: #4879BD 1.2px solid;
 }
 #rs a:hover {
@@ -1457,10 +1447,7 @@ em {
 #page a {
 	background: #fff;
 	color: #424242;
-}
-
-#page a:hover {
-	background-color: #e0e0e0 !important;
+	margin-right: 15px !important
 }
 
 #page a .pc:hover {
@@ -1484,15 +1471,6 @@ em {
 	border-bottom: 0px;
 	color: #4879BD !important;
 }
-
-.bdpfmenu a:hover {
-	background-color: #4879BD !important;
-}
-
-.setpref:hover {
-	background-color: #4879BD !important;
-}
-
 #u .lb {
 	background-color: #4879BD;
 }
@@ -1638,7 +1616,7 @@ h3 a:visited {
 	border-bottom: solid 1px #666 !important;
 }
 .c-row a:hover {
-	border-bottom: #4879BD 1px solid;
+	color: #4879BD !important;
 }
 .c-span6 a:hover {
 	border-bottom: none;
@@ -1696,7 +1674,6 @@ h3 a {
 	margin-left: 0px !important;
 	color: #fff;
 	background-color: #4879BD;
-	padding: 3px 15px;
 	border-radius: 2px;
 	font-size: 14px;
 	transition: all 0.3s ease;
@@ -1750,8 +1727,6 @@ h3 a {
 	border: none !important;
 }
 .c-text {
-	background: #4879BD;
-	color: #fff;
 	border: #4879BD 1px solid;
 	padding-top: 3px;
 	border-radius: 2px;
@@ -1873,6 +1848,9 @@ h3 a {
 	padding: 0;
 	background: rgba(0,0,0,0) !important;
 	box-shadow: none !important;
+}
+#page {
+	background-color: rgba(0,0,0,0) !important;
 }
 
 /* 修复百度知道、百度经验和快递相关的搜索结果 */
@@ -2059,16 +2037,21 @@ h3 a {
 	font-family: auto;
 }
 
-/* 百度贴吧样式修复 */
+/* 样式修复 */
 .result-op > .result {
 	padding: 0 !important;
 	background-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
 }
-
 .op_sp_realtime_bigpic5_wrapper_new {
 	padding-left: 0px !important;
 }
+.c-container > .c-container {
+	padding: 0 !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
+}
+
 }
 
 @-moz-document regexp("http://www.baidu.com/s\\?.*(tn=news).*"), regexp("https://www.baidu.com/s\\?.*(tn=news).*") {
@@ -2137,22 +2120,6 @@ h3 a {
 #page {
 	background-color: rgba(0,0,0,0) !important;
 }
-/*新闻界面大屏优化*/
-@media screen and (min-width: 1921px) {
-	#header_top_bar {
-		position: fixed;
-		right:12%;
-	}
-	#rs {
-		width: 599px !important;
-		position: fixed;
-		top:175px;
-		right:12%;
-	}
-	#content_left {
-		padding-top: 0;
-	}
-}
 }
 
 @-moz-document url-prefix("http://www.baidu.com"), url-prefix("https://www.baidu.com") {
@@ -2161,7 +2128,7 @@ h3 a {
  */
 
 body {
-	background-image: url(/*[[bg]]*/) !important;
+	background-image: url(https://s2.ax1x.com/2019/09/14/nsgfSS.jpg) !important; /* 修改搜索页背景自行替换前面链接 */
 	background-repeat: no-repeat !important;
 	background-attachment: fixed !important;
 	background-position: center top !important;
@@ -2288,16 +2255,17 @@ body {
 #content > h3 {
 	width: auto;
 }
+
 #s_tab,
 #head {
-	top: 70px;
+	top: 10px;
 }
 #main {
 	margin-top: 160px;
 }
 #content {
-	background: rgba(255, 255, 255, 0.8);
-	padding: 15px;
+	background: rgba(255, 255, 255, 0.85);
+	padding: 20px;
 }
 .con {
 	width: 215px;
@@ -2447,35 +2415,5 @@ body {
 	background: rgba(255, 255, 255, 1) !important;
 	transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 	box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
-}
-}
-
-@-moz-document url-prefix("http://image.baidu.com/"), url-prefix("https://image.baidu.com/") {
-/* 
- * 百度图片
- */
-#kw {
-	height:22px !important;
-	margin: 6px 0 0 7px !important;
-}
-.s_nav,
-.s_logo {
-	margin-top:8px !important
-}
-#bdpcImgTopTab {
-	margin-top:5px;
-	top:15px;
-}
-#bdpcImgTopTab > a:hover {
-	transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-	color:white !important;
-	background-color: #4879BD !important;
-}
-#bdpcImgTopTab > b {
-	border-bottom: none;
-	color:#4879BD;
-}
-.s_tab {
-	height:45px;
 }
 }

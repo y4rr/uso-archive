@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2020113.2.42
+@version        2020115.4.26
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v4.6*/
+/* Dark Creator Studio v4.7*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -134,8 +134,15 @@ ytcp-navigation-drawer.ytcp-entity-page{
     color: var(--text-color);
 }
 
+#search-layer, #query-input{
+    border: none !important;
+    background-color: var(--theme-add-color);
+    opacity: 1 !important;
+    border-radius: 5px;
+}
+
 #query-input::placeholder {
-    color: var(--text-color);
+    color: var(--text-darken2-color);
     opacity: 1;
 }
 
@@ -312,7 +319,7 @@ paper-radio-button[checked] #offRadio.paper-radio-button{
 }
 
 .ytcd-item > div > .top-videos > table > tbody > tr > td {
-    color: var(--text-color) !important;
+    color: var(--text-darken-color) !important;
 }
 
 .default-card.ytcd-card > .card-title {
@@ -356,18 +363,16 @@ ytcd-video-snapshot-item > div > .title{
 }
 
 #video-snapshot.yta-video-snapshot > ytcp-ve > div {
-    color: var(--text-color) !important; 
+    color: var(--text-darken2-color) !important; 
     
 }
 
 #video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > span {
-    color: var(--text-color) !important; 
-    
+    color: var(--text-color) !important;   
 }
 
 #video-snapshot.yta-video-snapshot > ytcp-ve > #metrics-table > div > #table-ranking-container > div > iron-icon {
-    fill: var(--text-color) !important; 
-    
+    fill: var(--text-color) !important;    
 }
 
 .card, ytcp-entity-card{
@@ -492,6 +497,14 @@ ytcp-entity-card:hover{
 
 .video-value.ytcp-video-links-tooltip-body{
     color: var(--text-darken-color);
+}
+
+.style-scope.iron-icon[d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.99 6H7V7h10.01v2zm0 4H7v-2h10.01v2zm-3 4H7v-2h7.01v2z"]{
+    fill: var(--text-darken-color) !important;
+}
+
+.row.ytcd-channel-facts-item:hover .left-col.ytcd-channel-facts-item .table-cell.ytcd-channel-facts-item{
+    color: var(--text-color);
 }
 
 /*Analytics*/
@@ -676,6 +689,14 @@ ytcp-badge[state="blue"] .container.ytcp-badge, ytcp-badge[state="blue"] .contai
 
 ytcp-badge[state="blue"] .container.ytcp-badge{
     background-color: rgba(0, 112, 204, 0.3);
+}
+
+.impressions-title.yta-funnel, .metric-title.yta-funnel{
+    color: var(--text-color);
+}
+
+.card-subtitle.yta-latest-activity-card {
+    color: var(--text-darken-color) !important;
 }
 
 /*Analytics - Advanced Mode*/
@@ -1557,6 +1578,18 @@ ytmus-library-row[is-current] #row-container.ytmus-library-row{
     background-color: #220000;
 }
 
+#done-button.style-scope.ytmus-license-dialog, #download.style-scope.ytmus-library-row, .anchor-text.ytmus-starred-table{
+    color: var(--accent-color);
+}
+
+ytmus-starred-table{
+    background-color: var(--bg-color);
+}
+
+.content-message.ytmus-starred-table .text.ytmus-starred-table{
+    color: var(--text-color);
+}
+
 /*Warning Banner*/
 ytcp-banner[color-theme].warning .container.ytcp-banner{
     background-color: #400 !important;
@@ -2042,10 +2075,6 @@ paper-card {
 }
 
 #title.yta-title-subtitle-header, #metric-value.yta-title-subtitle-header {
-    color: var(--text-color) !important;
-}
-
-.card-subtitle.yta-latest-activity-card {
     color: var(--text-color) !important;
 }
 
@@ -2540,13 +2569,6 @@ ytd-multi-page-menu-renderer *{
 ytd-multi-page-menu-renderer #header *{
     background-color: var(--bg3-color) !important;
     color: var(--text-color) !important;
-}
-
-#search-layer, #query-input{
-    border: none !important;
-    background-color: var(--theme-add-color);
-    opacity: 1 !important;
-    border-radius: 5px;
 }
 
 #results, #search-layer{

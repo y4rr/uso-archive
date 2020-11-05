@@ -2,8 +2,8 @@
 @name           ニコ生(Re) ダークテーマ(Niconico Live Dark Theme)
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--既知の不具合--・ニコニ広告ページがおかしくなる→ニコ生内でのニコニ広告を無理やりダークテーマ化しているのでおかしくなります。　そのため、不便であればコード5を削除していただくことで元に戻ります。※ニコニ広告ページすべてをダークテーマすることで対応する予定です。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2020111.14.38
+@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--修正済み不具合--・ニコニ広告ページがおかしい→ニコニ広告ページのダークテーマ化で対処--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
+@version        2020115.8.59
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -316,16 +316,20 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 /*ニコニ広告部分*/
 
 /* 文字設定 */
-html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
-  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
+h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,img,em,
+  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.more > a[data-v-4690f66a],figcaption,.text[data-v-1ac11be7],.headline > h2[data-v-8ba5a13c],.text > h2[data-v-3f6c3ee1],.opener[data-v-1d3d7103]{
     font-weight:800;
     font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     text-decoration: none;
     color: #ccc !important; 
     border: inset 0px #222742 !important;
 }
+.user-rank[data-active][data-v-d3647078]{color:#fff !important;}
+.user-rank[data-v-d3647078]{color:#8f9ba5 !important}
+.item[data-v-c3f70850] > a{color:#ccc}
+.beginner-button{color:#5b65a5 !important}
 
-.header-bar[data-v-0d10b35d]{
+.header-bar[data-v-0d10b35d],.nicoad-conductor-carousel[data-v-7044b6a3]{
     background-color: #3c3c3c !important
 }
 .tab-bar[data-v-0b4aebf6]{
@@ -342,4 +346,64 @@ html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,
 html{
     background: #555
 }
+
+/* 画面上部 */
+.nicoad-main-visual[data-v-9e32e95c]{
+	background-image:radial-gradient(ellipse at center top,#9b9b9b,#287ad2);
+	border-bottom: 1px solid #3c3c3c;
+}
+/* ニコニ広告を始めようあたり */
+.nicoad-feature-list[data-v-6b5f38ed]{background-image:radial-gradient(#464646 50%,#505051 100%);}
+.tagline > img[data-v-6b5f38ed]{mix-blend-mode:color-burn}
+.nicoad-service-list[data-v-3c5d158b],.service-container[data-v-44171422],.service-header[data-v-a3dce6a4]:not([data-is-ie])::before{background-color:#4b4b4b;}
+
+/* ニコニ広告マイページ */
+.global-container[data-v-6f5ede5a]{background-color:#3e3e3e;}
+.bg[data-v-8ba5a13c],.content-block[data-v-48807610]{
+	background-color:#2f2f2f;
+	box-shadow: 0 0 8px #4a4b4d;
+}
+.my-simple-button[data-v-7bcf0951]{
+	border: 2px solid #646464;
+	color: #ccc;
+}
+.tag > li[data-v-3351af76]{background-color:#595959;}
+.open-result-button[data-fixed][data-v-3351af76]{
+    color: #ccc;
+    background: linear-gradient(#575757,#444 50%,#4d4e4f 51%,#2e2e2f) no-repeat 0 -4px/100% 200%;
+}
+.result-content[data-v-3351af76]{
+    background-color: linear-gradient(#4f4f4f,#5b5b5b 10%,#595959 80%,#4f4f4f);
+}
+.c3-axis text{fill: #fdfdfd;}
+[data-v-3351af76]{color: #b8bee8 !important;}
+.opener[data-v-1d3d7103]:hover, .option[data-v-1d3d7103]:hover{background-color: #6f6f6f;}
+
+/* チケットページ */
+.items > dt > span[data-v-f25416d8]{background-image: linear-gradient(#464646 50%,#464646 50.1%);}
+.items > dt > span[data-v-f25416d8]::after{background-image: linear-gradient(-135deg,#686868 50%,#656668 50.1%);}
+
+
+/* マイページタブボタン */
+.tab-item[aria-selected="true"] > .tab-button[data-v-3e4b24a2]{background-color:#1e1e1e;}
+.tab-item[aria-selected="true"] > .tab-button[data-v-3e4b24a2]::after{background-color:#0b0b0b;}
+.tab-button[data-v-3e4b24a2]{
+	color:#c4c4c4;
+	background: radial-gradient(farthest-corner at center bottom,hsla(0, 0%, 44.3%, 0.6),hsla(0, 0%, 23.5%, 0.51)) no-repeat 50% 100%/20% 0;
+}
+
+
+
+
+.help-button[data-color-scheme="portal"] circle[data-v-6b25ead6]{fill:#979797;}
+.help-button[data-color-scheme="portal"]:hover circle[data-v-6b25ead6]{fill:#757575;}
+
+
+/* SVG */
+.more > a > svg[data-v-4690f66a]{fill:#ccc}
+path[data-v-6b25ead6]{fill:#3e3e3e !important;}
+  /* グラフのダークテーマ化 うまくいかないのでコメントアウト
+.c3-shape .c3-shape-0 .c3-bar .c3-bar-0{
+	stroke: rgb(67,112,176) !important;
+	fill: rgb(67,112,176) !important;} */
 }

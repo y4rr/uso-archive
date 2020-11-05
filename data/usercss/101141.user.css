@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         lainverse
 @description    `Набор дополнительных стилей, которые невозможно применить средствами Adblock Plus, но которые необходимы для более корректного отображения отдельных сайтов, и блокировки на них рекламы.Рекомендуется использовать совместно с RU AdList JS Fixes: https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixesДля установки данного стиля рекомендую использовать специализированное расширение, а не Tampermonkey, необходимый для корректной работы JS Fixes. Не смотря на то, что в Tampermonkey есть поддержка установки стилей и её даже недавно обновляли, специализированное расширение справляется с работой и загрузкой обновлений лучше. В случае Mozilla Firefox и Google Chrome рекомендую использовать расширение Stylus.`
-@version        20201029.6.2
+@version        2020115.0.44
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20201029.801
+@version 0.20201105.242
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -99,6 +99,7 @@
   domain("gidonline.io"),
   domain("gordonua.com"),
   domain("gtorrent.org"),
+  domain("gtorrent.tv"),
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
@@ -1262,19 +1263,19 @@
     [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:last-child > div[class$="content"]:first-child + div, 
     [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:not(:last-child), 
     div[class$="content"] ~ div[data-role][data-target] + div, 
+    div[class*="--content article "] + div, 
+    div[class*="--content article "] + div + div:not(:last-child), 
+    div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
     div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
     div[itemtype="http://schema.org/BlogPosting"] ~ div:not(:last-child), 
     div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] ~ div:not(:last-child), 
-    form[action="/my/content/feed/editorial"] + div, 
-    form[action="/my/content/feed/editorial"] + div + div:not(:last-child), 
-    form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child + div[class] {
+    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] ~ div:not(:last-child) {
         display: none !important
     }
     [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:last-child > div[class$="content"]:first-child:not(:only-child), 
     [itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
-    form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child:not(:only-child) {
+    div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
 }
@@ -2252,12 +2253,6 @@
     }
 }
 
-@-moz-document domain("kino-v-online.tv") {
-    .header_l {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document
   domain("kino.video"),
   domain("tasix.me") {
@@ -2588,6 +2583,9 @@
 }
 
 @-moz-document domain("mail.ru") {
+    .article__item_source_viqeo {
+        background-color: #f3f3f3 !important
+    }
     .search__btn_orange_default {
         background-color: rgb(0, 95, 249) !important
     }
@@ -2634,9 +2632,6 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
-    .article__item_source_viqeo {
-        background-color: #f3f3f3 !important
-    }
     #video-footer, .ph-balloon, .pulse-lenta {
         display: none !important
     }
@@ -3095,15 +3090,8 @@
 
 @-moz-document domain("penzainform.ru") {
     body {
-        cursor: auto;
-        pointer-events: none;
+        cursor: auto !important;
         background: whitesmoke !important
-    }
-    #divWrapper > * {
-        pointer-events: auto
-    }
-    #divWrapper {
-        pointer-events: none
     }
 }
 
@@ -4013,12 +4001,6 @@
     }
 }
 
-@-moz-document domain("windowsobraz.com") {
-    .timer-block ~ .wrapper > #example {
-        display: block !important
-    }
-}
-
 @-moz-document domain("wotspeak.ru") {
     #popup-1 {
         display: none !important
@@ -4106,9 +4088,8 @@
         max-width: 100% !important
     }
     .app__content div[style="min-height:250px"], 
-    .underheader-superbanner-wrapper, 
-    div[class*="kinopoisk-media-container_pending"], 
-    div[class^="styles_rootPending__"] {
+    .underheader-superbanner-wrapper, [class^="styles_contentContainer"] > div, 
+    div[class*="kinopoisk-media-container_pending"] {
         min-height: 0 !important
     }
     .filmsListNew .info {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        20201027.2.20
+@version        2020115.10.42
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -73,7 +73,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 url-prefix("http://www.douyu.com/") {
     /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201012
+    最后更新：20201105
     ===*/
     /*=== 屏蔽元素 ===*/
     .giftbatter-box,
@@ -498,7 +498,8 @@ url-prefix("http://www.douyu.com/") {
     #js-aside,
     .PrivateLetter+div,
     body~div:last-child,
-    .PrivateLetter.is-show {
+    .PrivateLetter.is-show,
+    .DrawContainer ~ div:not([class]) {
         display: block!important;
     }
     #js-header+.wm-general {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020114.11.32
+@version        2020115.6.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -1772,7 +1772,7 @@ RCUpdating04 "Secondly" <<<EOT /*-----------------------------------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating05 "userstyles.org lacks Alpha Settings, and have been stored separately." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -1805,7 +1805,7 @@ RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*-------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating06 "A few extra Manual Colour Options are found in Code #2." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating06 "These Manual Colour Options can be edited in Code #2." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -4263,6 +4263,7 @@ body.res .RES-keyNav-activeElement,
 ._27e9yld2jAIIWQNc4A70if:focus,
 ._2KotRmn9DgdA58Ikji2mnV:hover,
 ._2MgAHlPDdKvXiG-Qbz5cbC:hover,
+._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:hover,
 ._3LwUIE7yX7CZQKmD2L87vf:hover,
 ._3LwUIE7yX7CZQKmD2L87vf:hover>._2-cXnP74241WI7fpcpfPmg,
 
@@ -4412,7 +4413,8 @@ li.sr-name-row.sr-selected:active,
 ._20OHBqoDD71_8fv7tuG6u6:active,
 ._20OHBqoDD71_8fv7tuG6u6.cuK0QQebBI_tpWwN_YN9M:active,
 ._2eawLPCtwzvTZhWKtaUgZQ._3LyKu57c-QkPvlFvAgWop5._3fGEO8uLSvUJEOP4lDX35p:active,
-._2Kg5EXAuLcqhsBbdEr4SGZ:active
+._2Kg5EXAuLcqhsBbdEr4SGZ:active,
+._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:active
 {
     filter:brightness(.6)!important;
     transition:0s!important;
@@ -5089,6 +5091,17 @@ label._3tm-97fb8noV8kwxNOON_9
 }
 
 
+/*Round Buttons*/
+/*Create Avatar*/._3F1tNW0P4Ff182mO_CefIg._3DnDqV66Np6rVEiI8QK7kl
+{
+    background:var(--RCButton)!important;
+    background-color:var(--RCButton)!important;
+    color:var(--RCButtonText)!important;
+    border-radius:40px;
+    transition:.4s!important;
+}
+
+
 /*Flag-Button on Awards:hover Popup*/
 ._1l-7KCSHWOZOMW8AwEn6sF
 {
@@ -5099,6 +5112,7 @@ label._3tm-97fb8noV8kwxNOON_9
 
 /*Manual Button Transition*/
 
+/*button [role*="button"] *,*/
 .AnimatedForm__selectboxOption,
 .togglecommenthead,
 .RESCloseButton,
@@ -5117,6 +5131,10 @@ label._3tm-97fb8noV8kwxNOON_9
 {
     transition:.4s!important;
 }
+/*button [role*="button"] *:hover,
+{
+    transition:.2s!important;
+}*/
 
 
 /*Button Hover Colour*/
@@ -5219,6 +5237,18 @@ label._3tm-97fb8noV8kwxNOON_9:hover
     filter:brightness(2);
     transition:.2s!important;
 }
+
+
+/*Round Buttons Hover*/
+._3F1tNW0P4Ff182mO_CefIg._3DnDqV66Np6rVEiI8QK7kl:hover
+{
+    background:var(--RCButtonHover)!important;
+    background-color:var(--RCButtonHover)!important;
+    color:var(--RCButtonHoverText)!important;
+    border-radius:40px;
+    transition:.2s!important;
+}
+
 
 
 /* -------------- Buttons Special Treatment -------------- */
@@ -6847,38 +6877,50 @@ span.postflair
 
 /*Archive.is*/body > table tbody tr,body > table tbody > tr:nth-child(2n),
 [id*="thing"].even.stickied.controversial.link,
+[id*="thing"].odd.stickied.controversial.link,
 .linkflair-general.even.locked.stickied.link,
 .linkflair-general.odd.locked.stickied.link,
+.listing-page .even.stickied,
+.listing-page .even.stickied.link.self,
 .listing-page .link.linkflair-News,
 .listing-page .linkflair-News,
 .listing-page .linkflair-News.even,
 .listing-page .linkflair-News.odd,
+.listing-page .odd.stickied,
+.listing-page .odd.stickied.link.self,
+.listing-page .stickied
+{
+    background:var(--RCNews)!important;
+    background-color:var(--RCNews)!important;
+    transition:.4s!important;
+    /*margin-right: 303px;*/
+}
 [id*="thing"].even.stickied.controversial.link:hover,
+[id*="thing"].odd.stickied.controversial.link:hover,
 .linkflair-general.even.locked.stickied.link:hover,
 .linkflair-general.odd.locked.stickied.link:hover,
+.listing-page .even.stickied:hover,
+.listing-page .even.stickied.link.self:hover,
 .listing-page .link.linkflair-News:hover,
 .listing-page .linkflair-News:hover,
 .listing-page .linkflair-News.even:hover,
-.listing-page .linkflair-News.odd:hover
-{
-    background: var(--RCNews) !important;
-    background-color: var(--RCNews) !important;
-    /*margin-right: 303px;*/
-}
-.listing-page .odd.stickied,
-.listing-page .odd.stickied.link.self,
-.listing-page .stickied,
-.listing-page .odd.stickied.link.self:hover,
+.listing-page .linkflair-News.odd:hover,
 .listing-page .odd.stickied:hover,
+.listing-page .odd.stickied.link.self:hover,
 .listing-page .stickied:hover
 {
-    background: var(--RCNews) !important;
-    background-color: var(--RCNews) !important;
+    background:var(--RCNews)!important;
+    background-color:var(--RCNews)!important;
+    transition:.2s!important;
+    /*margin-right: 303px;*/
 }
+
+
 /*Subreddit Themed Stickie-Background Removal*/
+.listing-page .even.stickied
 .listing-page .odd.stickied
 {
-    background-image: none !important;
+    background-image:none!important;
 }
 
 
@@ -6978,6 +7020,7 @@ a.authorlink.csticky:hover
 
 {
     background-color: var(--RCRESFiltered) !important;
+    transition:.4s!important;
 }
 
 
