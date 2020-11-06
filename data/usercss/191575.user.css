@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ニコニコ 新マイページ ダークテーマもどき
+@name           ニコニコ(Re) 新マイページ ダークテーマ
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコニコ動画の新マイページをダークテーマもどきにしてみました（いうほどダークじゃないので…）。カスタマイズで広告消したりできるようになってます。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあります（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--たぶん併用できるよ他作者様CSS--gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。スクリーンショットを撮影した環境では上記CSSを併せて適用しています。--既知の不具合--・マイリスト検索結果ページがおかしくなる→URLがね……そもそもあれ使ってる人いるんですかね？いるなら対応します……--<s>どうにもならなかった</s>どうにかなったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>→赤文字部分だけの色の変え方を教えてくれた詰めるやつを書いてる方のおかげでなんとかなりました、感謝です……`
-@version        2020115.11.52
+@description    `ニコニコ動画の新マイページをダークテーマ風にしてみました。よりダークな感じにしたい方はカスタマイズで変更できます（Darkの比較級はDarkerとかそういう話はしないで…）、他にカスタマイズで広告消したりできるようになっているのでご活用ください。importantはほとんど使用していないので他のCSSを導入しても（多分）大丈夫です。一部対応してないところがあります（ニコられ、ニコったコメントあたりは確認できていません）。何かあれば<a href="https://twitter.com/Watanuki_Azuma">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--たぶん併用できるよ他作者様CSS--gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。余計なお世話付きは自分用の独自改修を含んだものです。スクリーンショットを撮影した環境では上記CSSを併せて適用しています。--既知の不具合--・マイリスト検索結果ページがおかしくなる→URLがね……そもそもあれ使ってる人いるんですかね？いるなら対応します……--<s>どうにもならなかった</s>どうにかなったところ--・フォロー中ユーザーの「動画を投稿しました」「生放送を開始しました」等の赤文字<s>→おそらくCSSだけでは無理です…（知らないだけかも）</s>→カスタマイズで変更機能を追加しました<s>（赤文字だけ別の色とかはたぶん無理です）</s>→赤文字部分だけの色の変え方を教えてくれた詰めるやつを書いてる方のおかげでなんとかなりました、感謝です……`
+@version        2020115.14.6
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown -------- "詰めるだけと併用" {
@@ -38,9 +38,18 @@
 @advanced dropdown -- "広告" {
 	---- "いる*" <<<EOT /* 広告いる *\/ EOT;
 ------ "いらない" <<<EOT /* 広告を消す *\/
-.HeaderContainer_Re-ad,.RightSideContainer-adWrap,.FormationFrame.RightSideContainer-formationFrame,.Ads.UserPageFooterContainer-ad,.PremiumBanner{
+.HeaderContainer_Re-ad,.RightSideContainer-adWrap,.FormationFrame.RightSideContainer-formationFrame,.Ads.UserPageFooterContainer-ad,.PremiumBanner,.RightSideContainer{
     display: none !important
 } EOT;
+
+}
+@advanced dropdown MoreDarkTheme "More Dark Theme（より暗く）" {
+	MoreDarkOff "しない*" <<<EOT /* More Dark Off *\/ EOT;
+MoreDarkOn "する" <<<EOT /* More Dark On*\/
+.UserPageHeader,.UserPage-header, .UserPageHeader, .UserDetailsHeader, .OtherMypageLinks, .ThreePointMenu, .ShareModal-modal, .MainMenuContainer-menu{background-color:#171717 !important;}
+body,.NicorepoPage-content{background-color: #1e1e1e !important;}
+.NicorepoItem-item,.UserItem-content,.MylistMediaObject-linkArea{background-color:#282828 !important; border: 1px solid #333 !important;}
+ EOT;
 
 }
 
@@ -70,6 +79,24 @@
     background: linear-gradient(90deg,#1e681c,#025151);
 }
 
+/* 検索バー */
+.CrossSearch_Re-rowSelector{
+	background-color: #515151;
+	border: 1px solid #646464;
+}
+.CrossSearch_Re-rowService.active, .CrossSearch_Re-rowService:hover{
+	background-color: #313131;
+	color: #ddd;
+}
+.CrossSearch_Re-rowService{color:#d7d7d7;}
+.CrossSearch_Re-form{background:#515151; box-shadow:inset 0 0 0 1px #646464;}
+.CrossSearch_Re-input{color:#fff;}
+.CrossSearch_Re-button{background:url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.4'%3E%3Cpath d='M60.3 74.5a40 40 0 1114.1-14.1l23.3 23.1a8 8 0 010 11.3l-2.9 2.9a8 8 0 01-11.3 0L60.3 74.5zM40 14a26 26 0 110 52 26 26 0 010-52z' fill='%23eee'/%3E%3C/svg%3E") no-repeat;}  
+  
+/*サブメニュー共通*/
+.SubMenuLink-link_internal:hover{background-color:#2b3831;}
+.SubMenuLink-link_active{background-color:#2f2f2f;}
+  
 /* ニコレポ */
 body{
     background-color: #3e3e3e;
@@ -92,14 +119,9 @@ body{
 }
 
 /* フォロー */
-.SubMenuLink-link_active,.UserItem-content{
-    background-color: #5e5e5e;
-}
-.SubMenuLink-link_internal:hover{
-    background-color: #cacaca;
-}
 .UserItem-Content{
     border: 1px solid #888;
+	background-color: #5e5e5e;
 }
 .Checkbox-input:checked + .Checkbox-check::before,.ContinuousPlayButton,.VideoListEditMenuButton,.Selectbox-button,.Selectbox{
     background-color: #c4c4c4;
@@ -141,6 +163,15 @@ body{
 
 
 /* マイリスト */
+.Selectbox-button_disabled .Selectbox-label{color:#777;}
+.MylistThumbnails{
+	background:#595959;
+	border: 1px solid #464646;
+}
+.MylistThumbnails-thumbnail:nth-of-type(3)::before{
+	background: linear-gradient(90deg,hsla(0, 0%, 20.8%, 0),#595959);
+}
+.MylistThumbnails-itemCount{color:#ccc;}
 .ModalContent_with-footer .ModalContent-body{
     background-color: #555;
     background: none;
@@ -256,5 +287,7 @@ a:hover,.CommunityItem:hover .CommunityItem-name,.FollowingTagContainer-tagNameL
 .NicorepoItem-activityDescription[style='color: rgb(208, 2, 27);']{ color: /*[[-------------]]*/ !important; }
 
 /*[[--]]*/
+
+/*[[MoreDarkTheme]]*/
 
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         szyxiii
 @description    `Стиль Midnight Blue для форума Lolzlteam.`
-@version        2020114.20.22
+@version        2020115.18.43
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced text link1 "Именная ссылка на профиль" "szyxiii"
@@ -80,7 +80,10 @@ body {
 .tabs,
 #content,
 .xenOverlay > .sectionMain,
-.createThreadForm, .blockrow {
+.createThreadForm, .blockrow,
+.tippy-popper .conversationTemplatesBox,
+.simpleRedactor--smiliesBox .smilieContainer,
+.QuickSearch .searchButton {
     background: var(--accent-dark2);
 }
 
@@ -95,6 +98,10 @@ body {
 .xenOverlay .errorOverlay .heading {
     background: var(--accent-error);
     box-shadow: 1px 0px 7px var(--accent-error);
+}
+
+.xenOverlay .formOverlay {
+    padding: 0px 0px 10px;
 }
 
 .mainContentBlock .xenForm .ctrlUnit {
@@ -199,6 +206,10 @@ a.crumb:before {
     background: var(--accent);
 }
 
+.xenOverlay .formOverlay .heading {
+    color: white;
+}
+
 /* Icons */
 .svgIcon--rub.green::before,
 .universalSearchForm::before {
@@ -253,6 +264,17 @@ a.crumb:before {
     background-color: var(--accent-light);
 }
 
+.button:focus,
+.button.primary:focus,
+.profilePage .button:focus,
+.changeUsernameUnit .button:focus,
+.actionButton--sendMoney:focus,
+.dottesStyle.buttonStyle:focus,
+.button[href*="manage"]:focus,
+.button[href*="write"]:focus {
+    background-color: var(--accent-light);
+}
+
 .button[href*='disable'],
 #ctrl_disassociate_vk_Disabler .button {
     color: white;
@@ -292,6 +314,11 @@ a.cd-top.cd-is-visible
     background: var(--accent-dark);
 }
 
+/* Other */
+.redactor_dropdown {
+    background-color: var(--accent-dark2);
+}
+
 /******************** Navbar ********************/
 #header {
     background: var(--accent-dark2);
@@ -302,12 +329,21 @@ a.cd-top.cd-is-visible
     filter: hue-rotate(var(--accent-hue));
 }
 
+.blockLinksList a:hover,
+.QuickSearch .searchButton:hover {
+    background: var(--accent-dark);
+}
+
 /* Controls */
 div.primaryControls:before {
     color: var(--accent) !important;
 }
 
 /* Counters */
+.hasUnreadArticles {
+    background: var(--accent);
+}
+
 .navTabs .navTab.PopupClosed .navLink:hover .counter-container img,
 .navTabs .navTab.PopupOpen .navLink .counter-container img {
     filter: hue-rotate(var(--accent-hue));
@@ -379,9 +415,26 @@ div.primaryControls:before {
     border-top: none;
 }
 
+.messageSimple .bbCodeHide.bbCodeQuote.bbCodeHide {
+    border: 5px solid var(--accent-dark);
+}
+
+.bbCodeQuote .attribution,
+.bbCodeSource.bbCodeSourceBlock code {
+    background: var(--accent-dark);
+}
+
 .profileContent,
 .sectionMain {
     background: var(--accent-dark2);
+}
+
+.bbCodeBlock .type {
+    background: var(--accent);
+}
+
+.bbCodeQuote:not(.noQuote) {
+    border-left: 5px solid var(--accent);
 }
 
 /* Warnings */

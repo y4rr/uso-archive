@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Edhill Anka
 @description    `A dark theme specifically for the Warframe Fandom Wiki.`
-@version        2020114.22.52
+@version        2020116.0.1
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -665,9 +665,14 @@ body::before {
 table.foundrytable td {
     background-color: rgb(100, 100, 100) !important;
 }
-table.sortable td, .emodtable td, .bigmodtable td {
+table.sortable td,
+table.emodtable td,
+table.bigmodtable td,
+.ooui-theme-fandom .mw-datatable tr > td,
+.ooui-theme-fandom .mw-json tr > td,
+.ooui-theme-fandom .wikitable tr > td {
     background-color: rgb(87, 81, 81) !important;
-    color: #fff;
+    color: #eee;
 }
 table.listtable th {
     background-color: rgb(90, 110, 110) !important;
@@ -678,11 +683,13 @@ table.listtable tr:nth-child(even) td {
 table.listtable tr:nth-child(odd) td {
     background-color: rgb(90, 90, 100) !important;
 }
-.ooui-theme-fandom .article-table, .ooui-theme-fandom .WikiaTable {
+.ooui-theme-fandom .article-table,
+.ooui-theme-fandom .WikiaTable {
     background: #535050;
     background-color: rgba(83, 80, 80, 0.8);
 }
-.ooui-theme-fandom .article-table th, .ooui-theme-fandom .WikiaTable th {
+.ooui-theme-fandom .article-table th,
+.ooui-theme-fandom .WikiaTable th {
     background: rgba(117, 45, 45, 0.8);
 }
 
@@ -743,5 +750,13 @@ section a {
 /* Various buttons (Post, Reply, Upload, etc.) */
 .wds-button:not(.wds-is-text):not(.wds-is-secondary) {
     color: #d79b0a;
+}
+
+/* Mainpage stuff... */
+div.rcs-container > .mainpage-box-news,
+div.rcs-container > div[style^='float'], /* <-- "Reset Timers" are inline styled :( */
+div.lcs-container > div[style^='background:'] /* "MAINTENANCE" is inline style too :( */
+{
+    background-color: rgb(75,80,85) !important;
 }
 }

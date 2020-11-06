@@ -2,23 +2,23 @@
 @name           myLearning Dark Mode
 @namespace      USO Archive
 @author         Matthew Okashita
-@description    `A Stylus extension to give Canvas/myLearning a dark mode so your retinas don't have to burn out. Made for the WRHS Canvas/myLearning, but should work on other versions of this software. For the most up to date code and news, please visit the Github repository at: https://github.com/SoupyzInc/CanvasDarkMode`
-@version        20201030.23.40
+@description    `A Stylus extension to give Canvas/myLearning a dark mode so your retinas don't have to burn out. Made for the WRHS Canvas/myLearning, but should work on other versions of this software. *For the most up to date code and news, please visit the Github repository at: https://github.com/SoupyzInc/CanvasDarkMode`
+@version        2020115.22.46
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name        myLearning Dark Mode
 @namespace   soupyzinc
-@version     1.0.6
+@version     1.1.8
 @homepageURL https://github.com/SoupyzInc/CanvasDarkMode
 @supportURL  https://github.com/SoupyzInc/CanvasDarkMode/issues
 @updateURL   https://raw.githubusercontent.com/SoupyzInc/CanvasDarkMode/main/CanvasDarkMode.user.css
 @license     MIT
 @author      Matthew Okashita
 ==/UserStyle== */
-/**v1.0.6 | Last Updated: 30 October 2020 | 7:30 PM EST
- * Fixed discussion information being hard to read.
+/**v1.1.8 | Last Updated: 5 November 2020 | 5:45 PM EST
+ * -Fixed syntax error
  */
 @-moz-document domain("instructure.com") {
     :root {
@@ -27,7 +27,7 @@
         --light-grey: #2C2F33 !important; /*Light Color to show that you can interact*/
         --white-grey: #99AAB5 !important; /*Lighter Color to show even more interactivity*/
         --text: #d7d7d7!important; /*Text Color & Highlights*/
-       
+    
         --yyQPt-background: #2C2F33 !important; /*Discussion List View Check Box Background*/
     }
 
@@ -36,6 +36,125 @@
     body {
         background: var(--grey) !important;
         color: var(--text) !important;
+    }
+    
+    /*myLearning Logo*/
+    .ic-sidebar-logo__image {
+        max-height: 0px !important;
+    }
+    
+    /*Pasco County Logo (top left)*/
+    .ic-app-header__logomark {
+        height: 0px!important;
+    }
+    
+    /*myLearning Water Mark*/
+    .ic-Layout-watermark {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 0 !important;
+        height: 100%;
+        opacity: var(--ic-brand-watermark-opacity);
+        background-image: var(--ic-brand-watermark);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+    
+    /*Error Message*/
+    .cvphu_bgqc {
+        background: var(--dark-grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Announcement*/
+    .ic-notification__content {
+        background: var(--grey) !important;
+    }
+    
+    /*TTS Button*/
+    .rspopup {
+        background: var(--light-grey) !important;
+        box-shadow: 0 0 5px #000 !important;
+        color: var(--text) !important;
+    }
+    
+    .eoNrR_blJt {
+        background: var(--grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Dashboard View Selection Options*/
+    .sJGfW_blJt {
+        background: var(--light-grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Recent Feedback Gradient*/
+    #right-side .events_list .event-details:after, #right-side .events_list .todo-details:after, #right-side .to-do-list .event-details:after, #right-side .to-do-list .todo-details:after {
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%, var(--grey) 0%) !important;
+    }
+    
+    
+    #right-side .right-side-list li em, #right-side .right-side-list li p {
+        color: var(--text) !important;
+        background: var(--grey);
+    }
+    
+    
+    
+    /*Card 3 Dots Menu | Footer*/
+    [dir="ltr"] .fOyUs_EMjX {
+        background: var(--grey) !important;
+    }
+    
+    /*Card 3 Dots Menu | Unselected Tab Header Background*/
+    .XBLto_bXVH {
+        background: var(--grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Card 3 Dots Menu | Unselected Tab Header Text*/
+    [dir="ltr"] .bdYPe_eLeB {
+        margin-right: 0.2em;
+        color: var(--text) !important;
+    }
+    
+    /*Move Tab Header*/
+    .bdYPe_eLeB:not([aria-selected]):not([aria-disabled]):hover, .bdYPe_eLeB[aria-selected] {
+        background: var(--light-grey) !important;
+    }
+    
+    /*Move Tab Background (top and bottom sliver)*/
+    .cAqHo_eAjd {
+        background: var(--light-grey) !important;
+    }
+    
+    /*Move Tab | Move Button*/
+    .sJGfW_bGBk {
+        background: var(--light-grey) !important;
+    }
+    
+    /*Move Tab | Move Button Icon*/
+    .esvoZ_drOs {
+        color: var(---dark-grey) !important;
+    }
+    
+    /*Card 3 Dots Menu | Color Tab Header*/
+    [dir="ltr"] .bdYPe_eLeB:first-of-type {
+        background: var(--light-grey) !important;
+        color: var(--text) !important;
+    }
+     
+    /*Color Picker Sides*/
+    .DashboardCardMenu__ColorPicker {
+        background: var(--grey) !important;
+    }
+    
+    /*Color Picker Body*/
+    .ColorPicker__Container {
+        background: var(--grey) !important;
     }
     
     /*Check Mark Background*/
@@ -47,7 +166,6 @@
     
     /*List View | Class Name Background*/
     .Grouping-styles__title {
-        padding: var(--eOFoE-titlePadding);
         background-color: var(--grey) !important;
         color: var(--text) !important;
     }
@@ -87,6 +205,11 @@
         color: var(--text) !important;
         background: var(--grey) !important;
         margin-top: var(--text) !important;
+    }
+    
+    /*List View | Gradient*/
+    .Grouping-styles__title::after {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--grey) 0%) !important;
     }
     
     /*=======DASHBOARD TEXT BACKGROUND=======*/
@@ -143,6 +266,12 @@
     #right-side .right-side-list li em,
     #right-side .right-side-list li p {
         color: var(--text) !important;
+        background: var(--grey) !important;
+    }
+    
+    /*Recent Feeback Background Top*/
+    #right-side .right-side-list .recent_feedback_title {
+        background: var(--grey) !important;
     }
 
     /*COURSES=======================================================*/
@@ -231,6 +360,8 @@
         color: var(--text) !important;
         font-weight: bold;
     }
+    
+    
 
     /*=======ASSIGNMENTS=======*/
     /*Assignnments Page | Submission Box*/
@@ -287,6 +418,44 @@
         color: var(--text) !important;
     }
 
+    /*Assignments Tab | Peer Review Menu File View*/
+    .file-upload-submission {
+        display: flex;
+        align-items: center;
+        background: var(--grey) !important;
+        padding: 12px 6px;
+        border-bottom: 1px solid var(--text) !important;
+    }
+    
+    /*Assignments Tab | Peer Review Menu Submission/Comment Box*/
+    .submission-details-comments .comments {
+        height: 300px;
+        overflow: auto;
+        background-color: var(--grey) !important;
+    }
+    
+    /*Survery Background*/
+    #questions.assessing {
+        background: var(--grey) !important;
+    }
+    
+    /*Question Header*/
+    .question .header {
+        border-bottom: 1px solid var(--light-grey) !important;
+        background-color: var(--grey) !important;
+    }
+    
+    /*Question Body*/
+    .question .text {
+        background: var(--light-grey) !important;
+    }
+    
+    /*Quiz Viewing*/
+    .quiz-submission, .question_editing {
+        background: var(--grey) !important;
+        border: 1px solid var(--text) !important;
+    }
+    
     /*=======GRADES=======*/
     /*Grades Tab | Hover Sub Text*/
     #grades_summary th.title .context {
@@ -455,5 +624,199 @@
     .module-sequence-footer .module-sequence-footer-content {
         background: var(--grey) !important;
         border-top: 1px solid var(--text) !important;
+    }
+    
+    /*======CALEDNDAR======*/
+    /*Main Calendar Background*/
+    .fc-view-container *, .fc-view-container *:before, .fc-view-container *:after {
+        background: var(--grey) !important;
+    }
+    
+    /*Day fo the Week Text*/
+    #calendar-app .fc-month-view .fc-widget-header, #calendar-drag-and-drop-container .fc-month-view .fc-widget-header {
+        color: var(--text) !important;
+    }
+    
+    /*Mini Calendar Background*/
+    #minical {
+        background-color: var(--grey) !important;
+        border: 1px solid var(--text) !important;
+    }
+    
+    /*Mini Calendar Days that are not today*/
+    .fc-view-container *, .fc-view-container *:before, .fc-view-container *:after {
+        box-sizing: content-box;
+        color: var(--text) !important;
+    }
+    
+    /*Mini Calendar Selected Date | Does Not Work*/
+    state-highlight {
+        color: var(--dark-grey) !important;
+        font-weight: bold;
+    }
+    
+    /*Class Selection Background*/
+    #context-list-holder, #undated-events {
+        background-color: var(--grey) !important;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    /*Color Picker For Class Selection*/
+    .ColorPicker__Container.with-border {
+        box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+        border-radius: 3px;
+        border: 1px solid #384249;
+        background: var(--light-grey) !important;
+    }
+    
+    /*Preview Selected Event*/
+    .event-details {
+        position: absolute;
+        z-index: 1000;
+        border: 1px solid var(--text) !important;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+        background-color: var(--grey) !important;
+        color: var(--text) !important;
+        min-width: 320px;
+        max-width: 500px;
+    }
+    
+    /*Preview Selected Even Time and Datet*/
+    .event-details-timestring {
+        color: var(--text) !important;
+    }
+    
+    /*Calendar Feed Widget Header*/
+    .ui-dialog .ui-dialog-titlebar.ui-widget-header, .ui-dialog .ui-datepicker .ui-widget-header.ui-datepicker-header, .ui-datepicker .ui-dialog .ui-widget-header.ui-datepicker-header {
+        background: var(--grey) !important;
+        padding: 16px 12px;
+        border-bottom: 1px solid var(--text) !important;
+    }
+    
+    /*Calendar Feed Widget Body*/
+    .ui-widget-content {
+        border: 1px solid var(--text) !important;
+        background: var(--grey) !important;
+        color: var(--ic-brand-font-color-dark);
+    }
+    
+    /*Month Calendar*/
+    .ui-datepicker-header.ui-widget-header {
+        background: var(--grey) !important;
+        border-color: var(--text) !important;
+    }
+    
+    /*Undated events*/
+    #undated-events .event {
+        background-color: var(--light-grey) !important;
+    }
+    
+    /*Calendar Agenda*/
+    .agenda-wrapper {
+        background-color: var(--grey) !important;
+    }
+    
+    /*Calednar Agenda Today Header*/
+    .agenda-day.agenda-today {
+        background: var(--light-grey) !important;
+    }
+    
+    .agenda-day {
+        display: block;
+        border-bottom: 1px solid var(--text) !important;
+        margin-top: 24px;
+        padding: 6px;
+        background: var(--grey) !important;
+    }
+    
+    /*INBOX==================*/
+    /*Inbox Header*/
+    .conversations .panel {
+        box-sizing: border-box;
+        background: var(--grey) !important;
+        border-bottom: 1px solid var(--text) !important;
+        height: 60px !important;
+        padding: 12px;
+    }
+    
+    /*Buttons*/
+    .conversations .panel .panel__secondary>div {
+        margin-top: 0;
+        background: var(--light-grey) !important;
+    }
+    
+    /*Search Bar*/
+    .ac-input-box {
+        background: var(--light-grey) !important;
+        border: 1px solid var(--text) !important;
+        border-radius: 3px 0 0 3px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+        box-sizing: border-box;
+        cursor: text;
+        min-height: 30px;
+        overflow: hidden;
+        padding: 8px;
+        position: relative;
+        transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        width: 100%;
+    }
+    
+    /*Message Recepeients*/
+    .ac-token {
+        background: var(--grey) !important;
+        border: 1px solid var(--text) !important;
+        border-radius: 14px;
+        box-sizing: border-box;
+        cursor: default;
+        display: inline-block;
+        line-height: normal;
+        margin: 2px 4px 2px 0;
+        overflow: hidden;
+        padding: 0 18px 0 8px;
+        position: relative;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 85%;
+    }
+    
+    /*Contact List*/
+    .ac-result-container {
+        background: var(--light-grey) !important;
+        border: 1px solid var(--text) !important;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        font-size: 14px;
+        font-size: .875rem;
+        max-height: 250px;
+        min-height: 50px;
+        left: 0;
+        overflow: auto;
+        position: absolute;
+        top: 36px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    /*Messges*/
+    .message-list .messages>li {
+        background: var(--grey) !important;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 140px;
+        padding: 20px 10px;
+        border-bottom: 1px solid var(--text) !important;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    /*White Drope Down | Message Filter*/
+        select {
+        width: 220px;
+        border: 1px solid var(--text) !important;
+        background-color: var(--grey) !important;
+        color: var(--text) !important;
     }
 }

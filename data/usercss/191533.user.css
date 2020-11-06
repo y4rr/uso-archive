@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BioBuster
 @description    `Dark background for store page with emphasised promotions.Also check my TamperMonkey script for showing titles on lists: http://claw.brains.pl/monkey-d/psn-titles-on-list.user.js`
-@version        20201030.10.19
+@version        2020115.17.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -100,6 +100,7 @@ body {
     color: #aaa !important;
 }
 
+.cell .ems-sdk-product-tile span.body-2,
 .extraTitle {
     color: #aef;
 }

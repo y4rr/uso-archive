@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020115.6.27
+@version        2020115.18.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -1772,7 +1772,7 @@ RCUpdating04 "Secondly" <<<EOT /*-----------------------------------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating05 "userstyles.org lacks Alpha Settings, and have been stored separately." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -1805,7 +1805,7 @@ RCUpdating05 "userstyles.org lacks Alpha Settings, and have been stored separate
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating06 "These Manual Colour Options can be edited in Code #2." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating06 "These Manual Colour Options can be adjusted in Code #2." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -2843,12 +2843,37 @@ a ._12FoOEddL7j_RgMQN0SNeU:hover
 /*voat.co*/#dashboard ul li a:hover,
 #nav > ul li.active a,
 .res-nightmode .tabmenu li.selected a,
+
+/*RES FIlters*/
+div.res-filterline div.res-filterline-filters div.res-filterline-filter:hover,
+/*RES Filter Dropdown*/
+.res-filterline-dropdown details.res-filterline-external summary:hover,
+
+.res-filterline-dropdown details.res-filterline-new-basic summary:hover,
+.res-filterline-dropdown-action.res-filterline-filter-new:hover,
+
+.res-filterline-dropdown details.res-filterline-new-group summary:hover,
+.res-filterline-dropdown details.res-filterline-new-group-filter:hover,
+
+.res-filterline-dropdown details.res-filterline-set-default summary:hover,
+.res-filterline-dropdown .res-filterline-dropdown-action:hover,
+
+.res-filterline-dropdown div.res-filterline-dropdown-toggles:hover,
+.res-filterline-dropdown div.res-filterline-dropdown-toggles label:hover,
+
+.res-filterline-dropdown div.res-filterline-show-help:hover,
+
+/*RES Filter Help Dialog*/
+.guiders_content p.guiders_description div table tbody tr td a:hover,
+/*RES Filter Dropdown - End*/
+
 .tabmenu li.selected a
 {
     color:var(--RCTextLinkHover)!important;
     text-decoration:underline!important;
     filter:brightness(1);
 }
+
 
 ._2H51id1RX9dGNrtrAIOMGK:hover
 {
@@ -3034,7 +3059,7 @@ li strong a:active,
 /*p a:active,*/
 p strong a:active,
 ul li strong a:active,
-
+.guiders_content p.guiders_description div table tbody tr td a:active,
 .link > .entry .title .domain a:active,
 a.title.may-blank:active,
 .md p strong a:active,
@@ -3074,7 +3099,7 @@ a.title.may-blank:active,
 ._2FZY7HXlkf-PdemHbQoAEt:active ._36D5hmBSZbFxkFMkiWg6cY,._2FZY7HXlkf-PdemHbQoAEt:active .tbIApBd2DM_drfZQJjIum,
 ._eYtD2XCVieq6emjKBH3m:active
 {
-    filter:brightness(0.6);
+    filter:brightness(0.6)!important;
     transition:0s!important;
 }
 
@@ -3723,6 +3748,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 .popover-title,
 .post-area .des,.post-area > a,
 .read-next,.res-nightmode.read-next,
+.res-filterline-dropdown,
 .RESDialogSmall > h3,
 .RESDropdownList,
 .RESDropdownOptions,
@@ -3806,6 +3832,9 @@ table#srList[style="display: block;"],
 .res #srList,
 .res-commentNavToggle-choices,
 .res-filterline,
+
+.guider.res-featureTip,
+
 .res-nightmode #alert_message,
 .res-nightmode .RESDialogSmall,
 .RESDialogSmall,
@@ -4249,6 +4278,25 @@ body.res .RES-keyNav-activeElement,
 .SidebarCommunity__name.m-selected,
 .SidebarNav__item:hover,
 .Header__tooltipItem:hover,
+
+/*RES Filter Dropdown*/
+.res-filterline-dropdown details.res-filterline-external:hover,
+
+.res-filterline-dropdown details.res-filterline-new-basic:hover,
+.res-filterline-dropdown-action.res-filterline-filter-new:hover,
+
+.res-filterline-dropdown details.res-filterline-new-group:hover,
+.res-filterline-dropdown details.res-filterline-new-group-filter:hover,
+
+.res-filterline-dropdown details.res-filterline-set-default:hover,
+.res-filterline-dropdown .res-filterline-dropdown-action:hover,
+
+.res-filterline-dropdown div.res-filterline-dropdown-toggles:hover,
+.res-filterline-dropdown div.res-filterline-dropdown-toggles label:hover,
+
+.res-filterline-dropdown div.res-filterline-show-help:hover,
+/*RES Filter Dropdown - End*/
+
 .side .titlebox .md h3 + ul li:hover,
 .SidebarCommunity__selectedIcon,
 .SidebarNav__item:hover>.SidebarNav__title,
@@ -4394,13 +4442,26 @@ li.sr-name-row.sr-selected,
 li.sr-name-row.sr-selected:active,
 .context-menu-item:active,
 .FancySelect__option:active,
+.Header__tooltipItem:active,
 .jcf-list ul li:active,
-.ui-widget-content.ui-menu-item.ui-state-focus:active,
+
+/*RES Filter Dropdown*/
+.res-filterline-dropdown-action.res-filterline-filter-new:active,
+
+.res-filterline-dropdown details.res-filterline-new-group-filter:active,
+
+.res-filterline-dropdown .res-filterline-dropdown-action:active,
+
+.res-filterline-dropdown div.res-filterline-dropdown-toggles label:active,
+
+.res-filterline-dropdown div.res-filterline-show-help:active,
+/*RES Filter Dropdown - End*/
+
 .side .titlebox .md h3 + ul li:active,
 .SidebarCommunity__name:active,
 .SidebarCommunity__name.m-selected:active,
 .SidebarNav__item.m-selected:active,
-.Header__tooltipItem:active,
+.ui-widget-content.ui-menu-item.ui-state-focus:active,
 ._10errIUo7wzwfnjkiqXfXP:active,
 ._1eQr_TkUOm6M6XqM8GTZqp,._1eQr_TkUOm6M6XqM8GTZqp::before,._3p0xqZowgYYjYMOdinU151:active,
 ._1LEks0EGX8JP8wFUs2r1Gd:active,
@@ -6012,7 +6073,7 @@ span.res-fancy-toggle-button.RESshortcutside:active,
 .fancy-toggle-button a:active,
 .filter-holder:active,
 .FooterAppUpsell__Link:active,
-.guider:active,
+/*.guider:active,*/
 .guiders_button:active,
 .happening-now .button:active,
 .helplink.access-required:active,
@@ -6190,6 +6251,9 @@ label._3tm-97fb8noV8kwxNOON_9:active
     transition:0s!important;
 }
 
+.res-filterline div.res-filterline-preamble:hover,
+.res-filterline-external-filter .gearIcon:hover,
+input.res-filterline-toggle-powered:hover,
 ._2ARwkAW45Urhf_fMfAMi5_:hover img,
 .h-jI8r2f9ozTNqu_2TBeY:hover>svg,
 .M2Hk_S2yvXpsNPfZMBMur:hover>svg,
@@ -6198,6 +6262,8 @@ label._3tm-97fb8noV8kwxNOON_9:active
     filter:brightness(1.25)!important;
     transition:.2s!important;
 }
+.res-filterline-external-filter .gearIcon:active,
+input.res-filterline-toggle-powered:active,
 .h-jI8r2f9ozTNqu_2TBeY:active,
 .n08B7PrU01wzgZYIh-s7N:active
 {

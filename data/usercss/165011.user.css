@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/NpDeshnq`
-@version        2020114.13.4
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/N8V92qSM`
+@version        2020115.17.6
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1164,7 +1164,7 @@ a:link {text-decoration: none;}
 a[href*="youtube.com"] {border-bottom: none;}
 a[href$="sage"], a[href$="Sage"], a[href$="SAGE"] {color: var(--theme_sage);}
 a[savefrom_lm_is_link="1"] {background: none !important;}
-a[savefrom_lm_is_link="1"]::before {content: '\f019'; font: 16px/1 FontAwesome;}
+a[savefrom_lm_is_link="1"]::before {content: 'save_alt'; font: 16px/1 'Material Icons';}
 .hashlink {color: var(--theme_default_altlink);}
 .hashlink:hover {color: var(--theme_default_althover);}
 
@@ -1207,7 +1207,7 @@ hr {border-color: transparent;}
 
 /* FAQ */
 a.logo {background: none; color: var(--theme_default_link) !important; padding: 0;}
-a.logo::before {content: "\f0e7"; font: 60px/1 FontAwesome; padding-right: 10px;}
+a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Material Icons'; vertical-align: -25px; width: 70px;}
 
 .box {background: var(--theme_default_postbg); border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow);}
 .box hr {border-top-color: var(--theme_default_border);}
@@ -1339,6 +1339,7 @@ button[disabled], html input[disabled] {background: var(--theme_default_btnbg) !
 .postform__mu {border-radius: 3px; height: 24px; width: 24px; padding: 3px 6px;}
 .postform__mu_type_q {color: var(--theme_default_quote);}
 .postform__mu_type_q:hover {color: var(--theme_default_quote2);}
+button .spoiler {padding: 0;}
 
 /*[[report-checkbox]]*/
 input[type="checkbox"] {cursor: pointer; height: 24px; width: 24px; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; margin-top: -2px; vertical-align: middle;}
@@ -1878,6 +1879,7 @@ span[title="tags"]::before {color: var(--theme_default_alttext); content: "#"; f
 #postform {animation: open .1s ease-out; height: calc(100vh); padding: 5px 10px 125px; overflow: auto;}
 #postform > hr, footer .newpost, .boardname + hr {display: none;}
 #postform::before {content: "Новый тред"; display: block; font-size: 1.4em; padding: 10px; text-align: center;}
+#postform::after {background: var(--theme_default_link) !important; border-radius: 50%; box-sizing: border-box; color: var(--theme_default_altbtntext); content: "close"; display: block; font: 32px/36px 'Material Icons'; padding: 9px 12px; height: 55px; width: 55px; position: fixed; bottom: 8px; right: 2%; z-index: 981; pointer-events: none;}
 .replypage #postform::before {content: "Новый пост";}
 .postform {font-size: 1em;}
 
