@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `Sure, coffee can be taken blackBut cola's nicerAlso, because it fits, if you like this, why not consider buying me a cola?https://ko-fi.com/jordy3d`
-@version        2020913.10.7
+@version        2020116.1.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -128,6 +128,16 @@ input, textarea, select,
     background-color: #2e2e2f !important;
 }
 
+.ds-c-inner-tile-wrapper
+{
+    background-color: #12121354;
+}
+
+.ds-c-inner-tile-wrapper:hover
+{
+    background: #363639;
+}
+
 .swal2-icon.swal2-success [class^='swal2-success-circular-line'], .swal2-icon.swal2-success .swal2-success-fix,
 [type=radio]:checked ~ label,
 .setting-tab-link.active,
@@ -142,7 +152,9 @@ input, textarea, select,
 
 .person-list-footer, .person-list-ul,
 
-.no-cover-visitor > .kfds-c-srf-gradient-profile-bg
+.no-cover-visitor > .kfds-c-srf-gradient-profile-bg,
+
+.ds-support-panel-wrapper
 {
   background: none !important;
 }
@@ -207,7 +219,11 @@ h1, .h1, h2, .h2, h3, .h3, .heading, h1, h2, h3, h4, h5, h6,
 .fr-box.fr-basic .fr-element,
 .fr-popup,
 
-.ibox .row
+.ibox .row,
+
+.ds-c-announcement-tile-wrapper,
+
+.ds-c-action-tile
 {
   color: #ccc !important;
 }
@@ -291,6 +307,11 @@ footer {
 .social-feed-box
 {
   border-radius: 15px 5px 5px 5px;
+}
+
+text
+{
+  stroke: #ccc;
 }
 
 #chart_div > div > div > svg > g:nth-child(2) *

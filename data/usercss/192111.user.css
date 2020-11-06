@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kiara Grouwstra
 @description    `a dark theme for GroenLinks's amendementen site`
-@version        2020115.22.52
+@version        2020116.0.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,5 +14,7 @@ body, section.all-items .row .holder-wrapper .holder-results div.item {
 .holder-wrapper, .detail, .top-row h1 {
     color: white;
 }
-
+section.all-items .row .holder-wrapper .holder-results div.item text {
+    max-height: none;
+}
 }

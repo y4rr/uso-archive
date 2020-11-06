@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name           百度夜间简约，baidu夜间简约
+@name           baidu居中，baidu夜间简约，百度居中，百度夜间简约
 @namespace      USO Archive
 @author         Silite
 @description    `除搜索结果外所有无用东西隐藏，仿照jetBrains样式。lemnsilite@gmail.com`
-@version        2020115.9.16
-@license        CC0-1.0
+@version        2020116.8.24
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.baidu.com/s") {
@@ -16,13 +16,32 @@
   padding-left: 18px;
 }
 #form {
-  padding-left: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #head {
   border-bottom: 1px solid #4d4d4d !important;
 }
 #page {
   border-top: 1px solid #4d4d4d !important;
+}
+#container {
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-inner {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px !important;
+}
+.search_tool {
+  padding-left: 20px;
+}
+.search_tool_conter.new_search_tool_conter {
+  padding-left: 25px;
 }
 #wrapper_wrapper {
   margin-top: 20px;
@@ -33,7 +52,7 @@
   border-radius: 5px;
 }
 #content_left > div:hover {
-  transform: scale(1.003);
+/*   transform: scale(1.003); */
   transition: all .05s ease-out;
 }
 /* #content_left > div:hover .c-img-radius-large {
@@ -46,7 +65,7 @@
 }
 .bg.s_ipt_wr.quickdelete-wrap {
   border: 1px solid #b5b1b1 !important;
-  border-radius: 24px 0 0 24px;
+  border-radius: 24px;
   box-shadow: 0 1px 2px rgba(251, 251, 251, .15), -1px 0 2px rgba(251, 251, 251, .15);
 }
 .bg.s_ipt_wr.quickdelete-wrap:hover,
@@ -80,6 +99,9 @@ a {
 em {
   color: #EE7762 !important;
 }
+.c-abstract em {
+  color: #ca6250e3 !important;
+}
 a em {
   text-decoration: none;
   border-radius: 2px;
@@ -97,15 +119,19 @@ a:hover > em {
 a:visited {
   color: #7d7c7c;
 }
+.bg.s_btn_wr {
+  display: none;
+}
 #su {
-  font-size: 14px;
+  display: none;
+/*   font-size: 14px;
   height: 38px;
   line-height: 38px;
   border-radius: 0 24px 24px 0;
   background-color: #323232;
   border: 1px solid #c4bbbb;
   border-left: none;
-  box-shadow: 1px 1px 2px rgba(251, 251, 251, .15);
+  box-shadow: 1px 1px 2px rgba(251, 251, 251, .15); */
 }
 #su:hover {
   background: #8c8989;
@@ -133,6 +159,7 @@ body {
 }
 .c-abstract,
 span > a,
+h3 > a,
 p,
 div,
 span,
@@ -192,7 +219,10 @@ li b {
 .c-tip-icon.c-icon,
 .c-container.aladdin__2AELi.new-pmd.wa-zp-exact-new-inner-top,
 .c-container.result[tpl="zp_exact_new"],
-.c-gap-top-xsmall.c-recommend.recommend-none-border {
+.c-gap-top-xsmall.c-recommend.recommend-none-border,
+.tab-wrapper,
+#header_top_bar,
+a[mon="gotoPs=1&rsv_xinwen=1"]{
   display: none;
 }
 }

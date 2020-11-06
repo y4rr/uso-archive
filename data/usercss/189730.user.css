@@ -2,8 +2,8 @@
 @name           ニコニコ動画(Re) 動画ページダークテーマ for HTML5
 @namespace      USO Archive
 @author         Azuma
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。広告非表示もカスタマイズ機能にあります。デフォルトは表示されるようになっています。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        2020114.13.3
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
+@version        2020116.10.51
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -102,7 +102,14 @@ display:none;
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
-/* 文字設定 */
+/* 臨時設定 コメントクエスト */
+.WakutkoolNoticeContainer{
+	background: #3e3e3e;
+	border-bottom: 4px solid #797979;
+  /*消す場合 display:none */
+}
+  
+  /* 文字設定 */
   html,body,div,h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
   ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu{
     font-weight:800;

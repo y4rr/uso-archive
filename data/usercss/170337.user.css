@@ -3,11 +3,19 @@
 @namespace      USO Archive
 @author         AxelPAL
 @description    `Fork and the update of this theme: http://userstyles.org/styles/168675Also, added support of new Bitbucket pull request experience`
-@version        2020113.10.51
+@version        2020116.8.28
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://bitbucket.org/"), url-prefix("https://bitbucket-pipelines.atlassian.io/") {
+body {
+    --main-bg-color: rgb(34 34 34);
+    --main-bg-color-accent: rgb(49 49 49);
+    --main-bg-color-accent-2: rgb(70, 70, 70);
+    --main-color-white: white;
+    --main-color-white-soft: #ecebeb;
+    --main-color-white-softer: #cccaca;
+}
 tbody, tfoot, thead {
     border-bottom-color: #333;
   }
@@ -2735,6 +2743,124 @@ code {
 }
 .kIYfjH {
     background-color: rgb(24 24 25);
+}
+.bqXIJi {
+    color: #c5c2c2;
+}
+.css-e3ot2y {
+    background-color: #222222;
+}
+.cqNkWP:hover {
+    background-color: rgb(53 53 53);
+}
+
+input.gJbBDL {
+    background-color: #3e3e3e;
+    border: 1px solid rgb(101 101 101);
+    color: #fafafa;
+}
+input.gJbBDL::placeholder {
+    color: #a4a4a4;
+}
+
+.css-ienhqj.css-ienhqj {
+    background-color: rgb(66 65 65);
+}
+.css-1xaaz5m {
+    color: #d4d4d4;
+}
+.css-t3yiul.css-t3yiul {
+    background-color: rgb(34 44 60);
+    fill: rgb(47 47 47);
+}
+.css-1h2b0g4 {
+    color: rgb(255, 255, 255);
+}
+.css-queiy2 {
+    background-color: rgb(48, 63, 85) !important;
+    fill: rgb(89, 89, 89) !important;
+}
+.css-qe8534 {
+    background-color: rgb(97 108 123);
+}
+.css-qe8534.e1yof8uq5 .css-1isemmb.e1yof8uq7 {
+    color: #cdcdcd;
+}
+.css-qe8534:hover, .css-qe8534:focus, .css-1g5ewrg:hover, .css-1g5ewrg:focus {
+    background-color: rgb(50 52 56);
+}
+.css-1l4j2co .css-j8fq0c .css-t5emrf, .css-1h2061w .css-j8fq0c .css-t5emrf {
+    color: white !important;
+}
+
+.iLKsB {
+    background: var(--main-bg-color);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
+}
+.ibegpx.ibegpx {
+    background: var(--main-bg-color);
+    color: #fdfdfd;
+}
+.ibegpx.ibegpx:hover, .eJTYOk.eJTYOk {
+    background-color: rgb(54 54 56);
+    color: #e0dfdf;
+    fill: #e0dfdf;
+}
+.eJTYOk.eJTYOk:hover {
+    background-color: rgb(93 93 97);
+    color: #f7f7f7;
+    fill: #f7f7f7;
+}
+.css-1vdf0ac {
+    background: var(--main-bg-color);
+}
+.css-1vdf0ac .css-1j0fabh {
+    color: var(--main-color-white-soft);
+}
+.css-1vdf0ac .keVkwm, .css-1vdf0ac .css-1bwan8v {
+    color: var(--main-color-white-soft);
+}
+.css-1jz7lwq {
+    background: var(--main-bg-color-accent);
+    color: var(--main-color-white-soft);
+}
+.css-1s0fs6f {
+    background: var(--main-bg-color-accent);
+}
+.css-1pialsq, .css-1e2ir0d {
+    background: var(--main-bg-color-accent-2);
+    color: var(--main-color-white-soft);
+}
+.css-f9syma-singleValue {
+    color: var(--main-color-white-softer);
+}
+.css-1h4ydiw-control:hover, .css-kgsxjk-control:hover, .css-1b6sdjh-control:hover {
+    background-color: var(--main-bg-color-accent-2);
+    border-color: var(--main-bg-color-accent);
+}
+.css-15eg463-placeholder, .css-fxztp3-placeholder {
+    color: var(--main-color-white-soft);
+}
+.css-kgsxjk-control:hover .css-15eg463-placeholder,
+.css-1b6sdjh-control:hover .css-fxztp3-placeholder {
+    color: var(--main-color-white-softer);
+}
+.css-1a2eh3f-control, .css-1a2eh3f-control:hover {
+    background-color: var(--main-bg-color-accent-2);
+    border-color: var(--main-bg-color-accent);
+    color: var(--main-color-white-softer);
+}
+.css-1a2eh3f-control .css-15eg463-placeholder,
+.css-1a2eh3f-control .css-fxztp3-placeholder,
+.css-1a2eh3f-control .css-1g6gooi,
+.css-1a2eh3f-control:hover .css-15eg463-placeholder,
+.css-1a2eh3f-control:hover .css-fxztp3-placeholder,
+.css-1a2eh3f-control:hover .css-1g6gooi {
+    color: var(--main-color-white-soft);
+}
+
+.css-14mp92g-menu *{
+    border-color: var(--main-bg-color-accent);
 }
 }
 

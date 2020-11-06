@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         scotchme
 @description    `Brings back grid mode to Pepper`
-@version        20201020.15.26
+@version        2020116.10.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -188,19 +188,20 @@ https://www.pepper.it/
     box-shadow: -10px 0 10px -3px #fff;
     z-index: 1;
 }
-.boxSec-div.comments-list {
+.thread .commentList.boxSec-div {
     width: 320px;
     position:absolute;
     height: 600px;
     overflow: auto;
     top: 140px;
+    left: 230px;
     background-color: #fff;
     z-index: 1000;
     border: 2px solid #bfbfbf;
     border-radius: 10px;
     box-shadow: 0 0 9px 0px #bfbfbf;
 }
-.boxSec-div.comments-list img.avatar, .boxSec-div.comments-list .comment-footer {
+.thread .commentList.boxSec-div .comment-avatar, .thread .commentList.boxSec-div .comment-footer {
     display: none;
 }
 .footerMeta-actionSlot .cept-comment-link.btn--mode-primary {

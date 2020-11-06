@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         szyxiii
 @description    `Стиль Midnight Blue для форума Lolzlteam.`
-@version        2020115.18.43
+@version        2020116.12.20
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced text link1 "Именная ссылка на профиль" "szyxiii"
@@ -70,6 +70,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+#NavigationAccountUsername {
+    padding: 0px 8px;
+}
+
 /******************** General ********************/
 /* Content blocks */
 body {
@@ -83,7 +87,7 @@ body {
 .createThreadForm, .blockrow,
 .tippy-popper .conversationTemplatesBox,
 .simpleRedactor--smiliesBox .smilieContainer,
-.QuickSearch .searchButton {
+.QuickSearch .searchButton, .likeNodes {
     background: var(--accent-dark2);
 }
 
@@ -112,6 +116,10 @@ body {
     background: var(--accent-dark);
 }
 
+.xenOverlay .formOverlay {
+    background: var(--accent-dark2);
+}
+
 .primaryContent,
 .secondaryContent,
 .navigationSideBar > ul {
@@ -134,6 +142,10 @@ body {
 
 #uaThreadViewContainer .footnote {
     border-top: 1px solid var(--accent-dark);
+}
+
+.log_out .pageContent {
+    display: flex;
 }
 
 /* Inputs */
@@ -183,7 +195,7 @@ a.OverlayTrigger.item.control.report {
     color: var(--accent) !important;
 }
 
-.numberStyle {
+.numberStyle, .likeNodes .node .counter {
     color: var(--accent);
     text-shadow: 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0);
 }
@@ -212,11 +224,16 @@ a.crumb:before {
 
 /* Icons */
 .svgIcon--rub.green::before,
-.universalSearchForm::before {
+.universalSearchForm::before,
+#MarketBalanceSwitcher::before{
     filter: hue-rotate(var(--accent-hue));
 }
 
 .messageSimple a.like:hover .like2Icon {
+    filter: hue-rotate(var(--like-hue));
+}
+
+.messageSimple .item.unlike .like2Icon {
     filter: hue-rotate(var(--like-hue));
 }
 
@@ -240,6 +257,10 @@ a.crumb:before {
 }
 
 /* Buttons */
+.button:hover {
+    background: none !important;
+}
+
 .button,
 .button.primary,
 .profilePage .button,
@@ -261,7 +282,7 @@ a.crumb:before {
 .dottesStyle.buttonStyle:hover,
 .button[href*="manage"]:hover,
 .button[href*="write"]:hover {
-    background-color: var(--accent-light);
+    background-color: var(--accent-light) !important;
 }
 
 .button:focus,
@@ -276,6 +297,7 @@ a.crumb:before {
 }
 
 .button[href*='disable'],
+.button[href*='logout'],
 #ctrl_disassociate_vk_Disabler .button {
     color: white;
     background: var(--accent-error);
@@ -283,8 +305,9 @@ a.crumb:before {
 }
 
 .button[href*='disable']:hover,
-#ctrl_disassociate_vk_Disabler .button:not(.disabled):hover {
-    background: var(--accent-error-light);
+.button[href*='logout']:hover,
+#ctrl_disassociate_vk_Disabler .button:hover {
+    background-color: var(--accent-error-light) !important;
 }
 
 a.SelectExcludedForumsLink:hover,
@@ -299,6 +322,14 @@ a.cd-top.cd-is-visible
 
 .userContentLinks .button {
     padding: 0px 10px;
+}
+
+input.labelauty:not(:checked):not([disabled]) + label:hover {
+    background: var(--accent-error);
+}
+
+input.labelauty + label {
+    background: var(--accent-dark);
 }
 
 /* Tabs */
@@ -319,6 +350,10 @@ a.cd-top.cd-is-visible
     background-color: var(--accent-dark2);
 }
 
+#Captcha img {
+    filter: contrast(150%) invert(20%);
+}
+
 /******************** Navbar ********************/
 #header {
     background: var(--accent-dark2);
@@ -326,7 +361,7 @@ a.cd-top.cd-is-visible
 
 /* Logo */
 #lzt-logo {
-    filter: hue-rotate(var(--accent-hue));
+    background: url("https://i.imgur.com/H96TJZK.png");
 }
 
 .blockLinksList a:hover,
@@ -347,6 +382,10 @@ div.primaryControls:before {
 .navTabs .navTab.PopupClosed .navLink:hover .counter-container img,
 .navTabs .navTab.PopupOpen .navLink .counter-container img {
     filter: hue-rotate(var(--accent-hue));
+}
+
+.navTabs .navTab.PopupOpen .navLink {
+    background: var(--accent-dark);
 }
 
 .navigation-header {
@@ -454,6 +493,10 @@ div.primaryControls:before {
     margin-left: 10px;
 }
 
+.userIsBanned-notice {
+    background: var(--accent-dark);
+}
+
 /******************** Main page ********************/
 .text_Ads {
     visibility: hidden;
@@ -475,6 +518,10 @@ a.SelectExcludedForumsLink:hover {
 
 .nodeList .node.current > .nodeInfo > .nodeText > .nodeTitle > a:before {
     filter: hue-rotate(var(--accent-hue));
+}
+
+.node h3.nodeTitle > a:hover {
+    background: var(--accent-dark3);
 }
 
 .monthMaecenas .donationAmount {
@@ -521,6 +568,11 @@ a.SelectExcludedForumsLink:hover {
 
 .ChatboxInput {
     background-color: var(--accent-dark2) !important;
+}
+
+#completeChatbox .controls.reversedDirection {
+    background: var(--accent-dark2);
+    border-top: 1px solid var(--accent-dark);
 }
 
 /******************** Forums ********************/
@@ -612,6 +664,22 @@ a.SelectExcludedForumsLink:hover {
 .messageSimple .comment .commentContent .author {
     color: white;
     background: var(--accent);
+}
+
+.alertNotice {
+    background: var(--accent-dark2);
+}
+
+.CommentLoader {
+    color: var(--accent);
+}
+
+html .redactor_toolbar li a:hover {
+    background: var(--accent-dark);
+}
+
+.needInNewArticles {
+    filter: hue-rotate(var(--accent-hue));
 }
 
 /******************** Articles ********************/

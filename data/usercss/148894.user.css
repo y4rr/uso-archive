@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ウインドウ幅に応じてエディタの幅が変化します。 このため、ブログ本文幅を720px以上に拡張したスキンを余裕を持って編集出来ます。 また「新タグ編集エディタ」の3画面表示を使う場合などにも有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2020112.2.8
+@version        2020116.2.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete.do") {
-/* Ameblo Writer ver.40 基本CSS ************************/
+/* Ameblo Writer ver.40a 基本CSS ************************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -1021,6 +1021,7 @@ html {
 .CoverSelectContent__selectArea {
     border-color: var(--bdc1); }
 
+/* 月選択ドロップダウンリスト */
 .dropDown__selectWrapper {
     top: -2px; }
 
@@ -1030,21 +1031,35 @@ html {
     border-radius: 4px;
     border-color: #aaa; }
 
+.dropDown__selectWrapper:after {
+    top: 15px;
+    right: 6px; }
+
+/* サムネイル画像リスト */
 .CoverSelectContent__image {
-    padding: 8px;
-    border-color: #aaa; }
-
-.CoverSelectContent__entryListPreview {
+    padding: 8px 4px;
+    width: 476px;
     border-color: #aaa;
-    background: #f8f8f8; }
+    background: #fff; }
 
-.CoverSelectContent__snsPreview {
-    border-color: #aaa;
-    background: #f8f8f8; }
+.CoverSelectContent__imageItem {
+    margin: 4px;
+    border: 1px solid #ccc; }
 
 .CoverSelectContent__imageItem--selected:before {
     border: 4px solid red; }
 
+/* ブログプレビュー表示 */
+.CoverSelectContent__entryListPreview {
+    border-color: #aaa;
+    background: #f8f8f8; }
+
+/* SNSブレビュー表示 */
+.CoverSelectContent__snsPreview {
+    border-color: #aaa;
+    background: #f8f8f8; }
+
+/* キャンセル・カバーに設定する */
 .CoverSelectContent__actionButton {
     height: 40px;
     padding: 2px 16px 0;
