@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `Dark, simple, clean, without Android.These four elements lived together in harmony...`
-@version        20201023.6.19
+@version        2020116.13.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -167,6 +167,12 @@ tr > td.obsolete
   max-width: 100%;
 }
 
+textarea,
+#notes_textarea
+{
+  padding: 10px;
+}
+
 #footer .logo,
 
 .navigation .links-box .navigation-link .logo-navigation-link,
@@ -175,5 +181,47 @@ tr > td.obsolete
 {
     filter: invert(1) hue-rotate(195deg) saturate(4) brightness(1);
     mix-blend-mode: color-dodge;
+}
+}
+
+@-moz-document domain("forum.userstyles.org") {
+.Item.Read,
+
+.Button {
+  background: #363639;
+}
+
+#Head {
+  background: #2e2e2f !important;
+}
+
+input {
+  background-color: #12121354 !important;
+}
+
+.FormWrapper {
+  background: #0000;
+}
+
+.Button {
+  color: #ccc
+}
+
+#Body,
+#Head .Row {
+  width: 80%;
+}
+#Body {
+  margin: 0px auto !important;
+}
+
+.Row {
+  width: 100%;
+}
+
+.Sprite16,
+.ReactSprite,
+.OptionsTitle {
+  filter: invert();
 }
 }

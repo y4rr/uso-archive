@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Elodie's AMQ Script V8.3
+@name           Elodie's AMQ Script V8.4
 @namespace      USO Archive
 @author         Elodie Dow
 @description    `A script to change the background and a darker UI for AnimeMusicQuiz.`
-@version        2020107.15.0
+@version        2020116.15.28
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -168,11 +168,7 @@
 .rbRoom, .rbrRoomImageContainer {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.qpAvatarImgContainer {
-    box-shadow: none;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-}
+
 .qpAvatarLevelText {
     background-color: #1b1b1b;
     border-radius: 1px 1px 50px 50px
@@ -284,9 +280,7 @@
 .lobbyAvatarNameContainer {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.qpAvatarImgContainer {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 .avatarUserImgContainer {
     box-shadow: none;
 }
@@ -463,36 +457,37 @@ div#startPageLogoContainer {
     text-shadow: none
 }
 
-.qpAvatarImage[src$="Right.png"] {
+.qpAvatarImage[src*="Right."] {
     box-shadow: inset 0 0 10px #2b47ff,0 0 10px #2b47ff, 0 0 10px #2b47ff, 0 0 10px #2b47ff;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(43, 71, 255, 0.2);
 }
-.qpAvatarImage[src$="Wrong.png"] {
+.qpAvatarImage[src*="Wrong."] {
     box-shadow: inset 0 0 10px #ff0000,0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
-.qpAvatarImage[src$="Confused.png"] {
+.qpAvatarImage[src*="Confused."] {
     box-shadow: inset 0 0 10px #ff0000,0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000;
-    border-radius: 15px;
+    background-color: rgba(255, 0, 100, 0.2);
+}
+
+.qpAvatarImage[src*="Thinking."] {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.qpAvatarImage[src*="Waiting."] {
+    background-color: rgba(255, 221, 117, 0.2);
+}
+
+.qpAvatarImage[src*="Basic."] {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.qpAvatarImage[src$="Thinking.png"] {
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.qpAvatarImage[src$="Waiting.png"] {
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.qpAvatarImage[src$="Basic.png"] {
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+.qpAvatarAnswerText {
+    text-align: centre;
+	border-right: 17px solid transparent;
+	border-left: 10px solid transparent;
 }
 
 /*Change Colour of List Showing Up*/
@@ -597,7 +592,7 @@ div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
 .qpAvatarImageContainer {
     box-shadow: none;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 /*Change team opacity*/
@@ -635,49 +630,65 @@ div#popoutMessageContainer.floatingContainer.popoutMessage.noShadow {
   border-radius: 0px 10px 10px 0px
 }
 
-.qpAvatarImage.Miyu {
-    width: 125%;
-    left: 50%;
-    top: 8%;
-}
-.qpAvatarImage.Shiina {
-    margin-left: 0; /*makes glow box correspond with background*/
-}
-.qpAvatarImage.Hibiki {
+.qpAvatarImage[src*="Miyu"] {
+    width: 120%;
+    left: -10%;
     bottom: -2%;
 }
-.qpAvatarImage.Noel {
+.qpAvatarImage[src*="Shiina"] {
+    margin-left: 0;
+}
+.qpAvatarImage[src*="Noel"] {
     bottom: -4%;
 }
-.qpAvatarImage.Kyouko.Standard {
-    bottom: -4%;
+.qpAvatarImage[src*="Kyouko/Standard"]{
+    bottom: -0%;
+    width: 100%;    
+    left: 0%;
 }
-.qpAvatarImage.Kyouko.Knight {
+.qpAvatarImage[src*="Kyouko/Knight"]{
     bottom: -3.3%;
+    width: 110%;
+    left: 0%;
 }
-.qpAvatarImageContainer {
-    background-color: rgba(0, 0, 0, 0);
-}
-.qpAvatarImage.Hikari {
+
+.qpAvatarImage[src*="Hikari"] {
     bottom: -4.5%;
+    width: 108%;
+    left: 0%;
 }
-.qpAvatarImage.Kuriko {
+.qpAvatarImage[src*="Kuriko"] {
     width: 119%;
-    top: 47%;
-    left: 50%;
-    clip-path: ellipse(120% 120% at 50% 123%);
+    top: 0%;
+    left: -10%;
 }
-.qpAvatarImage.Ritsu {
+.qpAvatarImage[src*="Ritsu"]{
     bottom: -3.4%;
+    left: 0%;
 }
-.qpAvatarImage.Mizuki {
+.qpAvatarImage[src*="Mizuki"]{
     bottom: -5%;
+    width: 108%;
+    left: -3%;
 }
-.qpAvatarImage.Komugi.Tribal-Sorcerer {
-    top: 52%;
+.qpAvatarImage[src*="Komugi/Tribal"] {
+    left: 0%;
+    width: 110%;
+    left: -5%;
 }
-.qpAvatarImage.Komugi.Standard {
+.qpAvatarImage[src*="Komugi/Standard"]{
     bottom: -3.5%;
+    left: 0%;
+}
+.qpAvatarImage[src*="Honoka"] {
+    bottom: -3%;
+    width: 109%;
+    left: -3%;
+	    
+}
+.qpAvatarImage[src*="Hibiki"] {
+    bottom: -4%;
+    width: 115%;
 }
 
 /*Circling things - remove all below if you want it back to normal - Increase "border radius" if you want it more round*/

@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Mozilla Addon Widescreen NEW design v.120
+@name           Mozilla Addon Widescreen NEW design v.121
 @namespace      USO Archive
 @author         decembre
 @description    `<mark>▶ It's better for a WIDESCREEN(1920x1080)!</mark><mark>Seems, now at 2019.01, it's not possible to switch to the Old desktop view as before:<a href="https://github.com/mozilla/addons-frontend/issues/6334">Disable &quot;classic view&quot; of front-end #6334</a></mark><mark>ONLY for Waterfox and brother Firefox old school like Firefox ESR etc...: </mark>NEED and Work better with (for all the Dark color flavor):<a href="https://userstyles.org/styles/159780/">[UserStyles] Dark Mozilla Add-ons (AMO)  by maxigaz</a><a href="https://gitlab.com/maxigaz/amo-dark">[GitLab] Mozilla Add-ons Dark Theme  by maxigaz</a>ADD  domain("addons-dev.allizom.org") to it for :https://addons-dev.allizom.org/en-GB/firefox/`
-@version        2020627.14.28
+@version        2020116.20.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("addons.mozilla.org"), domain("addons-dev.allizom.org"), domain("addons.mozilla.org."), regexp("https://web.archive.org/web/.*/https://addons.mozilla.org/.*") {
 
 
-/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.120 (new120) - OK DEV HERE - WATnew06  ==== */
+/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.121 (new121) - OK DEV HERE - WATnew06  ==== */
 
 /* =================================================== 
 WORK WITH "Dark Mozilla Add-ons (AMO)":
@@ -19,7 +19,7 @@ https://gitlab.com/maxigaz/amo-dark
 ====================================================== */
 
 /* =================================================== 
-(new105) ADD SUPPORT FOR Web Archives (REGEX):
+ADD SUPPORT FOR Web Archives (REGEX):
 https://forum.userstyles.org/discussion/74842/which-namespace-write-for-firefox-classic-add-ons-archive#latest:
 ====================================================== */
 
@@ -39,7 +39,6 @@ just ENABLE + FORCE JOIN
 ====================================================== */
 
 /* =================================================== 
-v.88 :
 - PB with Stylus vs Stylish:
 https://forum.userstyles.org/discussion/78585/dark-mozilla-add-ons-amo-not-working-with-stylus-but-working-with-stylish-2-1-1/p1?new=1
 - Added:
@@ -54,11 +53,48 @@ https://web.archive.org/web/20181002072750/https://addons.mozilla.org/en-US/fire
 https://duckduckgo.com/?q=https%3A%2F%2Fweb.archive.org+addons.mozilla.org+namespace+userstyle&ia=web
 ====================================================== */
 
-/* (new11) TEST - ADD TO COL MENU - === */
+/* ADDON BADGE - === */
+.AddonBadges {
+    position: absolute ;
+    display: inline-block ;
+    right: 92% !important ;
+    top: 68px ;
+}
+.PromotedBadge-large .PromotedBadge-link {
+    background: gold;
+}
+.AddonsByAuthorsCard .SearchResult-name .PromotedBadge ,
+.SearchResult-name .PromotedBadge {
+    position: absolute !important;
+    display: inline-block;
+    width: 17px;
+    margin-left: -30px !important;
+    margin-top: 65px !important;
+    font-size: 0 ;
+    overflow: hidden ;
+    z-index: 5000 !important;
+}
+.AddonsByAuthorsCard .SearchResult-name .PromotedBadge  {
+    margin-left: -35px !important;
+}
+.SearchResult-name .PromotedBadge:hover {
+    width: auto;
+}
+.SearchResult-name .PromotedBadge:hover a {
+    font-size: 10px ;
+    background: gold;
+}
+
+/* LANGUAGE PICKER - === */
+.Footer-language-picker {
+    position: absolute ;
+    top: -8px ;
+    right: 0 ;
+}
+/* ADD TO COL MENU - === */
 .Select.AddAddonToCollection-select>optgroup {
     height: 260px !important;
 }
-
 /* (new1151) TEST - NEW NOTICE "Not Recommanded Addon" - === */
 .Notice-genericWarning {
     position: absolute !important;
@@ -71,7 +107,6 @@ https://duckduckgo.com/?q=https%3A%2F%2Fweb.archive.org+addons.mozilla.org+names
     overflow: hidden !important;
     z-index: 500;
 color: red !important;
-/* fill: currentcolor !important; */
 background-color: #E1C022 !important;
 }
 .Notice-genericWarning:hover {
@@ -86,23 +121,20 @@ background-repeat: repeat !important;
     width: 22px;
     margin: -1px 0 0 -1px !important;
 }
-
 .Notice-genericWarning p.Notice-text {
     float: left;
     width: 170px !important;
     white-space: normal;
 }
 
-
-/* (new120) TEST SUPER_LOADER - adapt QUANTUM */
-/* 
+/* TEST SUPER_LOADER - adapt QUANTUM */
+/* ===
 test links :
 https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/reviews/
 SEARCH PAGE - 
 https://addons.mozilla.org/fr/firefox/search/?page=3&platform=windows&q=scrollbar
 === */
 #sp-fw-container:not(:hover) {
-/*     position: fixed !important; */
     z-index: 5999999 !important;
     text-align: left !important;
     width: 12px !important;
@@ -115,47 +147,37 @@ background-color: red !important;
 }
 #sp-fw-container:hover {
     height: auto !important;
-width: auto !important;
+    width: auto !important;
     top: 20px !important;
-right: 20px !important;
+    right: 20px !important;
     padding: 10px !important;
     border: 1px solid gray !important;
  background: #222 !important; 
 }
 
 #sp-fw-container:not(:hover) #sp-fw-content {
-/* display: inline-block !important; */
     height: auto !important;
-width: auto !important;
-/*     visibility: hidden !important; */
+    width: auto !important;
 }
 #sp-fw-container:hover #sp-fw-content {
      display: inline-block !important;
     height: auto !important;
     visibility: visible !important;
 }
-
-
 #sp-fw-main {
     height: 500px !important;
-/* background: red !important; */
 }
 #sp-fw-savebutton {
-/*     position: absolute !important; */
     display: inline-block !important;
     height: 30px !important;
     line-height: 30px !important;
-/*     top: 460px !important; */
-/*     right: 280px !important; */
     width: 120px !important;
     text-align: center !important;
     z-index: 5999999 !important;
      background: red!important 
-
 }
 #sp-fw-savebutton:hover {
 border: 1px solid green !important;
-/* background-color: red !important */
 }
 #sp-fw-rect {
     border: 1px solid white;
@@ -188,8 +210,6 @@ border: 1px solid green !important;
     width: 5px;
     z-index: 9999;
 }
-
-
 div.Page-amo div.Page-content div.Page.Page-not-homepage div.Search > div.SearchResults .AddonsCard-list .sp-separator {
     display: inline-block !important;
     height: 30px !important; 
@@ -209,7 +229,7 @@ div.Page-amo div.Page-content div.Page.Page-not-homepage div.Search > div.Search
 .sp-separator a.sp-sp-nextlink > span {
     display: inline-block !important;
     width: 20px !important;
-border-radius: 5px !important;
+    border-radius: 5px !important;
     text-shadow: none;
     opacity: 1 !important;
 color: white !important;
@@ -228,20 +248,17 @@ https://addons-dev.allizom.org/en-GB/firefox/
     background: #283146 !important;
 }
 
-
-/* (new102) ALL ?? - === */
+/* ALL ?? - === */
 .AddonsCard--horizontal ul.AddonsCard-list {
     display: grid;
 /* grid-auto-flow: unset !important; */
 /* grid-template-columns: unset !important; */
 }
 
-
-/* (new104) HOME - === */
+/* HOME - === */
 .Home-content {
     max-width: 100% !important;
 }
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal footer {
     display: inline-block !important;
     width: 30% !important;
@@ -249,7 +266,6 @@ https://addons-dev.allizom.org/en-GB/firefox/
     margin-top: 0px !important;
     padding: 0px !important;
     border-radius: 5px !important;
-/* border: 1px dotted red !important; */
 }
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal footer  a {
     display: inline-block !important;
@@ -258,17 +274,13 @@ https://addons-dev.allizom.org/en-GB/firefox/
     padding: 0 10px !important;
     text-decoration: none;
 }
-
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents {
     height: 220px !important;
     margin-bottom: 6px !important;
 }
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents ul.AddonsCard-list {
     height: 205px !important;
-/* border: 1px dotted red !important; */
 }
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents ul.AddonsCard-list li.SearchResult {
     display: inline-block !important;
     height: 100%;
@@ -278,13 +290,10 @@ https://addons-dev.allizom.org/en-GB/firefox/
     padding: 0px !important;
     border-radius: 5px !important;
     border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px dotted aqua !important; */
 }
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents ul.AddonsCard-list li.SearchResult .SearchResult-wrapper {
     padding: 12px 5px !important;
 }
-
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents ul.AddonsCard-list li.SearchResult .SearchResult-icon-wrapper {
     height: 180px !important;
 }
@@ -314,8 +323,7 @@ https://addons-dev.allizom.org/en-GB/firefox/
     text-align: center !important;
 }
 
-
-/* (new102 / 73) HOME PAGE - THEME - === */
+/* HOME PAGE - THEME - === */
 .Home .SearchResult.SearchResult--theme {
     grid-column: auto / auto;
     margin: 0 6px 1px;
@@ -329,22 +337,15 @@ https://addons-dev.allizom.org/en-GB/firefox/
     margin: -7px 0px 0 0px !important;
     max-height: 75px !important;
     min-height: 75px !important;
-/* border: 1px dotted yellow !important; */
 }
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme .SearchResult-users.SearchResult--meta-section {
     position: relative !important;
     display: inline-block !important;
-/* background: blue !important; */
 }
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal.Card.CardList.LandingAddonsCard-Themes .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme {
     min-width: 32.6% !important;
     max-width: 32.6% !important;
-/* border: 1px solid rgba(12, 12, 13, 0.9) !important; */
-/* border: 1px dotted yellow !important; */
 }
-
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal.Card.CardList.LandingAddonsCard-Themes .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme .SearchResult-wrapper {
     margin-top: 0px !important;
     padding: 4px 24px !important;
@@ -353,13 +354,12 @@ https://addons-dev.allizom.org/en-GB/firefox/
     margin-top: 0px !important;
     padding: 4px 24px !important;
 }
-
 .Home .AddonsCard--horizontal ul.AddonsCard-list .SearchResult--theme .SearchResult-result .SearchResult-icon-wrapper {
 position: relative !important;
     display: inline-block !important;
     width: 100% !important;
-min-width: 100% !important;
-max-width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
     height: 100% !important;
     max-height: 95px !important;
     min-height: 95px !important;
@@ -379,24 +379,10 @@ max-width: 100% !important;
     margin-top: 5px;
     border-radius: 9px;
 }
-/* .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal.Card.CardList.LandingAddonsCard-Themes .Card-contents {
-    display: inline-block;
-    height: 100%;
-    margin: 0 2px 6px  -2px !important;
-    max-height: 220px !important;
-    min-height: 220px !important;
-    padding: 2px 5px;
-    width: 100%;
-} */
-
-
 .Home section.Card.CardList.AddonsCard.LandingAddonsCard.AddonsCard--horizontal.Card.CardList.LandingAddonsCard-Themes .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme .SearchResult-result {
     height: 181px !important;
     text-align: center !important;
-/* border: 1px dotted green !important; */
 }
-
-
 .Home li.SearchResult.SearchResult--theme .SearchResult-contents {
     width: 100% !important;
     height: 100%;
@@ -419,36 +405,18 @@ max-width: 100% !important;
     text-align: center !important;
 }
 
+/* HOME - THEME */
 
-
-
-
-/* (new102) HOME - THEME */
-
-
-
-
-
-
-
-
-
-
-
-/* (new102) HOME ??? - === */
+/* HOME ??? - === */
 .Home .Home-FeaturedCollection.AddonsCard--horizontal.Card--photon.Card--no-footer ul.AddonsCard-list ,
 .Home .Home-FeaturedCollection.AddonsCard--horizontal.Card--photon.Card--no-footer ul.AddonsCard-list {
     grid-auto-flow: column dense;
     grid-template-columns: 33% 33% 33% !important;
-/* border: 1px dotted yellow !important; */
 }
-
 .Home .Home-FeaturedCollection.AddonsCard--horizontal.Card--photon.Card--photon:not(.Card--no-footer) ul.AddonsCard-list {
     grid-auto-flow: column dense;
     grid-template-columns: 25% 25% 25% 25% !important;
-/* border: 1px dotted red !important; */
 }
-
 .Home .SearchResult.SearchResult--theme.SearchResult--persona {
     display: inline-block !important;
     height: 202px;
@@ -456,7 +424,6 @@ max-width: 100% !important;
     max-width: 100% !important;
     min-width: 100% !important;
     margin-right: 30px !important;
-/* border: 1px solid red !important; */
 }
 .Home .Home-FeaturedCollection.AddonsCard--horizontal ul.AddonsCard-list .SearchResult--theme .SearchResult-result .SearchResult-icon-wrapper {
     height: 100%;
@@ -467,13 +434,10 @@ max-width: 100% !important;
     margin-left: -7px;
     margin-top: 70px;
 }
-/* (new77) */
 .Home .Card.CardList.AddonsCard.LandingAddonsCard.Home-FeaturedExtensions.AddonsCard--horizontal .SearchResult-icon-wrapper ,
 .Home .Home-FeaturedCollection.AddonsCard--horizontal.Card--photon.Card--photon:not(.Card--no-footer) ul.AddonsCard-list .SearchResult-icon-wrapper  {
     height: 134px !important;
 }
-
-
 .Home .Home-FeaturedCollection.AddonsCard--horizontal.Card--photon.Card--photon:not(.Card--no-footer) ul.AddonsCard-list .SearchResult.SearchResult--theme.SearchResult--persona .SearchResult-icon-wrapper {
     height: 100%;
     min-height: 95px;
@@ -535,27 +499,19 @@ background: #1f2536 !important;
     min-width: 100% !important;
 }
 
-
-
 /* HOME COLOR */
 .Guides-section-explore-more ,
 h2 + p ,
 .Guides-page .Guides-header p ,
 .HomeHeroGuides-header-subtitle {
     margin: 0px 0 24px !important;
-/* background-color: #191f2d; */
-/* border-color: #191f2d; */
     color: #c1d0ff;
 }
-
 .Guides-section  .Card.Card--no-header.Card--no-footer .Card-contents .GuidesAddonCard .GuidesAddonCard-content .GuidesAddonCard-content-text p {
     color: #eee !important;
 }
 
-
-
-
-/*  (new72) 404 AMO - with ADDON " CASSIC ADD-ON ARCHIVE - 
+/* 404 AMO - with ADDON " CASSIC ADD-ON ARCHIVE - 
 https://addons.mozilla.org/en-US/firefox/addon/its-all-text/
 === */
 .Card.ErrorPage.NotFound  {
@@ -620,17 +576,13 @@ content: " " !important;
     width: 100%;
 }
 
-
 /* SEARCH / COLLECTION */
-
-
 .Search .SearchResults {
     margin-top: 0px !important;
     grid-area: 2 / 2 / 5 / auto;
     min-width: 0;
     width: 100%;
 }
-
 .Card-header {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
@@ -645,8 +597,6 @@ content: " " !important;
     padding: 5px 20px !important;
     text-align: left;
 }
-
-
 .Collection-wrapper ,
 .Search {
     display: grid;
@@ -674,10 +624,6 @@ content: " " !important;
     padding: 0;
     width: 100%;
 }
-
-
-
-/* (new78) */
 .Search .SearchResults li.SearchResult.SearchResult--theme  ,
 .Collection-items .AddonsCard-list li.SearchResult, 
 .Search .SearchResults li.SearchResult {
@@ -695,7 +641,6 @@ content: " " !important;
     padding: 0px 3px !important;
     border-radius: 9px !important;
     border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid  red !important; */
 }
 
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon .Card-contents ul.AddonsCard-list .SearchResult.SearchResult--theme ,
@@ -715,8 +660,6 @@ content: " " !important;
     border-radius: 5px !important;
     border-radius: 9px !important;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid  red !important; */
-/* border: 1px dashed  aqua !important; */
 }
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon   .Card-footer {
     margin-top: -10px !important;
@@ -724,7 +667,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     width: 100%;
 }
 
-/* (new94) COLL */
+/* COLL */
 .Collection .Collection-wrapper .Collection-detail-wrapper + .Collection-items .Card.CardList.AddonsCard.Card--photon.Card--no-header .Card-contents ul.AddonsCard-list .SearchResult-wrapper {
     height: 138px !important;
     margin-top: 5px !important;
@@ -735,8 +678,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
 .Collection .Collection-wrapper .Collection-detail-wrapper + .Collection-items .Card.CardList.AddonsCard.Card--photon.Card--no-header .Card-contents ul.AddonsCard-list .SearchResult-wrapper .SearchResult-result .SearchResult-icon-wrapper {
     margin-top: -3px !important;
 }
-
-
 .SearchResult-icon-wrapper {
     -moz-box-ordinal-group: 2;
     order: 1;
@@ -749,8 +690,6 @@ background: black !important;
     border-radius: 3px !important;
     margin-bottom: 0 !important;
 }
-
-/* (new94) */
 .SearchResult--theme .SearchResult-icon-wrapper {
     position: absolute !important;
     display: inline-block !important;
@@ -787,7 +726,7 @@ background: #0f1126 !important;
 opacity: 1 !important;
 }
 
-/* (new94) SEARCH ALL - in COLL / AUTHOR / INFO */
+/* SEARCH ALL - in COLL / AUTHOR / INFO */
 .SearchResult-contents {
     -moz-box-flex: 1;
     -moz-box-ordinal-group: 1 !important;
@@ -807,9 +746,7 @@ opacity: 1 !important;
     padding: 2px 5px !important;
     border-radius: 0 9px 9px 0 !important;
     background-color: #191f2d !important;
-/* border: 1px dashed tomato !important; */
 }
-/* (new94) */
 .SearchResult-summary {
     -moz-box-flex: 1;
     flex-grow: 1;
@@ -827,15 +764,13 @@ opacity: 1 !important;
     overflow-y: auto !important;
 border-top: 1px solid rgba(12, 12, 13, 0.9) !important;
 border-bottom: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid tan !important; */
 }
 
-/* (new94) SEARCH NORMAL */
+/* SEARCH NORMAL */
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon .AddonsCard-list .SearchResult .SearchResult-contents {
     min-height: 120px !important;
     max-height: 120px !important;
     margin: 0px 2px  0 5px !important;
-/* border: 1px dashed aqua !important; */
 }
 
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon .AddonsCard-list .SearchResult .SearchResult-contents .SearchResult-summary {
@@ -846,22 +781,20 @@ border-bottom: 1px solid rgba(12, 12, 13, 0.9) !important;
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon .AddonsCard-list .SearchResult .SearchResult-contents .SearchResult-summary {
     max-height: 62px !important;
     min-height: 62px !important;
-/* background: red !important; */
 } 
 
-/* (new94) SEARCH in AUTHOR */
+/* SEARCH in AUTHOR */
 .UserProfile-addons-and-reviews .SearchResult-contents {
     min-height: 110px !important;
     max-height: 110px !important;
     margin: -3px 2px  0 5px !important;
-/* border: 1px dashed yellow !important; */
 }
 .UserProfile-addons-and-reviews .SearchResult-contents .SearchResult-summary {
     max-height: 53px !important;
     min-height: 53px !important;
 }
 
-/* (new94) in INFO - OTHER ADDONS on HOVER */
+/* in INFO - OTHER ADDONS on HOVER */
 .AddonsByAuthorsCard .SearchResult-name  {
     display: flex !important;
     flex-direction: column !important;
@@ -883,7 +816,7 @@ border-bottom: 1px solid rgba(12, 12, 13, 0.9) !important;
     width: 100% !important;
 }
 
-/* (new105) SEARCH - ALL - THEME ITEMS*/
+/* SEARCH - ALL - THEME ITEMS*/
 li.SearchResult.SearchResult--theme .SearchResult-contents {
     -moz-box-direction: normal;
     -moz-box-flex: 1;
@@ -919,10 +852,9 @@ background: rgba(31, 37, 54, 0.7) !important;
     line-height: 1.1 !important;
     margin: 0;
 }
-/* (new109) */
 .SearchResult-link {
-display: inline-block !important;
-vertical-align: top !important;
+    display: inline-block !important;
+    vertical-align: top !important;
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
@@ -934,18 +866,16 @@ vertical-align: top !important;
     white-space: pre-wrap !important;
     word-break: normal !important;
 }
-/* (new105) */
 li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name {
     height: 36px !important;
     line-height: 0.9 !important;
     margin-top: 5px !important;
     border: none !important;
-/* background: tan !important; */
 }
 li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name a {
     text-align: center !important;
 }
-/* (new105)THEME - COLLECTION */
+/* THEME - COLLECTION */
 .Collection li.SearchResult.SearchResult--theme .SearchResult-contents {
     width: 73%;
     height: 100%;
@@ -953,16 +883,14 @@ li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name a 
     min-height: 70px !important;
     margin: 45px 0px 0 0px !important;
     padding: 5px 10px 5px !important;
-border-radius: 0 !important;
-/* background: TOMATO !important; */
+    border-radius: 0 !important;
 }
 .Collection li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name{
     height: 36px !important;
     line-height: 0.9 !important;
     margin-top: 5px !important;
     border: none !important;
-text-align: center !important;
-/* background: yellow !important; */
+    text-align: center !important;
 }
 .Collection li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name a {
     height: 50px !important;
@@ -994,7 +922,6 @@ li.SearchResult.SearchResult--theme .SearchResult-metadata {
     width: 100% !important;
     text-align: center !important;
 background: rgba(31, 37, 54, 0.7) !important;
-/* background: blue !important; */
 }
 .Card.ExpandableCard.SearchFilters + .SearchResults li.SearchResult.SearchResult--theme .SearchResult-rating {
     float: right !important;
@@ -1007,7 +934,6 @@ background: rgba(31, 37, 54, 0.7) !important;
     max-width: 100% !important;
     overflow: hidden;
     text-overflow: ellipsis;
-/* background: red !important; */
 }
 
 .SearchResult-metadata {
@@ -1027,7 +953,6 @@ background: rgba(31, 37, 54, 0.7) !important;
     line-height: 13px !important;
     margin-right: 5px  !important;
 }
-/* (new109) */
 .Rating.Rating--small {
     grid-column-gap: 6px !important;
     min-height: 13px;
@@ -1036,7 +961,7 @@ background: rgba(31, 37, 54, 0.7) !important;
     justify-content: flex-start;
     margin: 0;
 }
-/* (new109) FOR FIREFOX QUANTUM ??? (TOO NARROW) -
+/* FOR FIREFOX QUANTUM ??? (TOO NARROW) -
 https://addons.mozilla.org/fr/firefox/addon/auto-tab-discard/
 === */
 .AddonMeta-rating-content .Rating.Rating--small {
@@ -1061,7 +986,6 @@ https://addons.mozilla.org/fr/firefox/addon/auto-tab-discard/
     max-width: 100% !important;
     overflow: hidden;
     text-overflow: ellipsis;
-/* background: red !important; */
 }
 .Card.CardList.AddonsCard.AddonRecommendations .SearchResult-author.SearchResult--meta-section {
     height: 15px !important;
@@ -1129,7 +1053,7 @@ background: #1f2536 !important;
     box-shadow: 0 0 2px #cccccc inset;
 }
 
-/* (new73) BIG */
+/* BIG */
 .AddonSummaryCard-header-icon-image ,
 .Addon-icon-image  {
     border-radius: 5px;
@@ -1143,8 +1067,6 @@ background: #1f2536 !important;
     margin-top: 8px !important;
     padding: 3px !important;
 }
-
-/* (new102) */
 .Addon-header-wrapper {
     float: left !important;
     width: 20% !important;
@@ -1156,7 +1078,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
 }
 /* (new112) */
 .Addon.Addon-extension.Addon--has-more-than-0-addons.Addon--has-more-than-3-addons .Addon-header-wrapper {
-/*     margin-top: 12px !important; */
     margin-top: 0px !important;
 }
 
@@ -1179,7 +1100,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     max-height: 70px !important;
     width: 15% !important;
     min-width: 0px !important;
-/* outline: 1px solid violet !important; */
 }
 .Addon-icon-wrapper {
     height: 100% !important;
@@ -1195,16 +1115,15 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     margin: 2px 0  0px 5px !important;
     font-size: 18px;
     overflow-wrap: break-word;
-/*     z-index: 5000 !important; */
 }
-/* (new101) TITLE - THEME */
+/* TITLE - THEME */
 .Card.Addon-header-info-card.Card--photon.Card--no-header.Card--no-footer .Addon-header .ThemeImage.ThemeImage--rounded-corners + .AddonTitle {
     width: 100% !important;
     height: 70px !important;
     line-height: 1.1 !important;
 }
 
-/* (new101) MULTI AUTHORS:
+/* MULTI AUTHORS:
 https://addons.mozilla.org/fr/firefox/addon/test-feedback/?src=recommended
 === */
 .AddonTitle .AddonTitle-author {
@@ -1239,7 +1158,7 @@ https://addons.mozilla.org/fr/firefox/addon/test-feedback/?src=recommended
     min-width: 100%;
     overflow-x: hidden;
 }
-/* (new105) THEME - INSTALL */
+/* THEME - INSTALL */
 .Card.Addon-header-info-card.Card--photon.Card--no-header.Card--no-footer .Addon-header .ThemeImage.ThemeImage--rounded-corners + .AddonTitle ~.Addon-summary-and-install-button-wrapper {
     height: 237px !important;
 }
@@ -1250,7 +1169,7 @@ https://addons.mozilla.org/fr/firefox/addon/test-feedback/?src=recommended
     margin-top: 35px !important;
 }
 
-/* (new99) ADDON - UNIINSTAL BUTTON - N=== */
+/* ADDON - UNIINSTAL BUTTON - N=== */
 .Button.Button--neutral.AMInstallButton-button.AMInstallButton-button--uninstall.Button--puffy {
     background: #526289 !important;
 }
@@ -1258,7 +1177,7 @@ https://addons.mozilla.org/fr/firefox/addon/test-feedback/?src=recommended
     background: red !important;
 }
  
-/* (new97) ADDON - RATING */
+/* ADDON - RATING */
 .Addon-header-wrapper .Addon-header-meta-and-ratings {
     position: absolute !important;
     display: inline-block !important;
@@ -1290,7 +1209,7 @@ https://addons.mozilla.org/fr/firefox/addon/test-feedback/?src=recommended
 transition: all ease 0.7s !important;
 }
 
-/* (new79) ADDON - RATING MANAGER - TOP LEFT - === */
+/* ADDON - RATING MANAGER - TOP LEFT - === */
 /* NOT NEED */
 .Card.Addon-overall-rating .Card-footer.Card-footer-link ,
 .Card.Addon-overall-rating .Card-header {
@@ -1306,7 +1225,6 @@ transition: all ease 0.7s !important;
     top: 421px !important;
     padding: 2px 2px !important;
     border-radius: 5px !important;
-/* overflow: hidden; */
     z-index: 1 !important;
 border: 1px solid #283046 !important;
 background: tan !important;
@@ -1318,8 +1236,6 @@ background: tan !important;
     transition: all ease 0.7s !important;
 border: 1px solid red !important;
 background: black !important;
-/* background: #283046 !important; */
-
 }
 .Addon.Addon-extension .Addon-details .Card-contents .RatingManager>form>fieldset {
     display: inline-block !important;
@@ -1329,7 +1245,6 @@ background: black !important;
     max-height: 20px !important;
     line-height: 15px !important;
     text-align: left ;
-/*     overflow: hidden; */
 background: green !important;
 }
 .Addon.Addon-extension .Addon-details .RatingManager legend.RatingManager-legend {
@@ -1342,6 +1257,7 @@ background: green !important;
     font-size: 0;
 z-index: -1 !important;
 }
+/* (new121) */
 .Addon.Addon-extension .Addon-details .RatingManager legend b{
     position: relative !important;
     display: inline-block !important;
@@ -1350,7 +1266,7 @@ z-index: -1 !important;
     min-height: 21px !important;
     max-height: 21px !important;
     line-height: 10px !important;
-    padding: 1px 2px !important;
+    padding: 1px 10px 1px 1px !important;
     top: -1px !important;
     overflow-wrap: break-word;
     font-size: 10px !important;
@@ -1432,8 +1348,9 @@ border-bottom: 1px dotted red ;
     color: gold ;
 }
 
-/* (new79) ADDON - TOP LEFT - === */
-/* (new79) ADDON - RATING on HOVER - RATING SUCCES + ADD REVIEW button - TOP LEFT - === */
+/* ADDON - TOP LEFT - === */
+
+/* (ADDON - RATING on HOVER - RATING SUCCES + ADD REVIEW button - TOP LEFT - === */
 .RatingManager > form:hover .Notice.Notice-light.Notice-success:not(.RatingManagerNotice-savedRating-hidden) {
     -moz-box-pack: center;
     justify-content: center;
@@ -1490,30 +1407,20 @@ background: red !important;
 color: gold !important;
 text-decoration: none !important;
 }
-/* COR */
 .Button.Button--action.AddonReviewCard-writeReviewButton.Button--puffy {
     float: left !important;
     width: 100% !important;
     height: auto;
     min-height: 25px !important;
-max-height: 25px !important;
+    max-height: 25px !important;
     padding: 0 5px;
     border-radius: 4px;
     font-size: 15px;
 }
 
-/* (new100) WRITE A REVIEW TEXTAREA - IN ADDON INFO PAGE - === */
-/* .DismissibleTextForm-form {
-    position: absolute !important;
-    width: 50% !important;
-    top: 409px !important;
-    left: 1% !important;
-    padding: 20px !important;
-    z-index: 5000 !important;
-    background: aqua !important;
-} */
+/* WRITE A REVIEW TEXTAREA - IN ADDON INFO PAGE - === */
 .Addon.Addon-extension .Addon-details section.Card.Addon-overall-rating .DismissibleTextForm-form {
-position: absolute !important;
+    position: absolute !important;
     display: inline-block !important;
     width: 20% !important;
     left: 0.5% !important;
@@ -1528,9 +1435,7 @@ position: absolute !important;
     padding: 6px;
     resize: vertical !important;
 }
-
-
-/* (new105) THEME - ICON SCREEN SHOT - CENTER - === */
+/* THEME - ICON SCREEN SHOT - CENTER - === */
 .ThemeImage--rounded-corners {
     position: absolute;
     display: inline-block;
@@ -1554,8 +1459,6 @@ position: absolute !important;
     left: 0%;
     top: 150px;
     padding: 30px !important;
-/*     border: 1px solid red; */
-/*     background: red !important; */
 }
 .ThemeImage-image {
     object-fit: contain !important;
@@ -1570,7 +1473,7 @@ position: absolute !important;
     display: none !important;
     padding: 0 !important;
 }
-/* (new96) SUPPORT DEV */
+/* SUPPORT DEV */
 .Card.ContributeCard.Card--no-footer {
     position: absolute !important;
     display: inline-block !important;
@@ -1587,13 +1490,11 @@ position: absolute !important;
     overflow: hidden !important;
     z-index: 1 !important;
 border: 1px solid green !important;
-/* background: blue !important; */
 outline: none !important;
 }
 .Card.ContributeCard.Card--no-footer:hover {
     height: auto !important;
 }
-
 .Card.ContributeCard.Card--no-footer .Card-header {
     height: 15px !important;
     margin-bottom: 1px;
@@ -1606,8 +1507,7 @@ outline: none !important;
 border: none !important;
 }
 
-
-/* (new101) REPORT ABUSE */
+/* REPORT ABUSE */
 .Card.Addon-overall-rating .ReportAbuseButton {
     position: absolute;
     display: inline-block !important;
@@ -1623,12 +1523,9 @@ border: none !important;
     z-index: 1 !important;
 border: 1px solid #283046 !important;
 background: #A33434 !important;
-/* background: red !important; */
 }
 
-
-/* COR (new107) TEST - ADD OUR FAV STAR to ADDON PAGE - === */
-
+/* ADD OUR FAV STAR to ADDON PAGE - === */
 .RatingManager .RatingManager-ratingControl .Rating-star.Rating-rating-5.Rating-selected-star:after {
     position: fixed !important;
     display: inline-block !important;
@@ -1643,10 +1540,9 @@ background: #A33434 !important;
     border-radius: 9px !important;
     font-size: 30px !important;
     color: gold ;
-text-align: center !important;
+    text-align: center !important;
     opacity: 1 !important;
     visibility: visible !important;
-/*     z-index: 5000000 !important; */
 background-color: blue !important;
 }
 .Addon.Addon-extension .Addon-details .RatingManager > form:hover .RatingManager-ratingControl .Rating-star.Rating-rating-5.Rating-selected-star:after {
@@ -1677,10 +1573,7 @@ background: blue !important;
 color: red ;
 background: gold !important;
 }
-
-
-
-/* (new97) ADDON INFO - 
+/* ADDON INFO - 
 TAKE CARE:
 - NOTICE IMPCOMPATIBILITY FIR version:
 https://addons.mozilla.org/fr/firefox/addon/open-with/
@@ -1697,7 +1590,6 @@ https://addons.mozilla.org/fr/firefox/addon/open-with/
 .Card.Addon-header-info-card.Card--photon.Card--no-header.Card--no-footer .Notice.Notice-error.AddonCompatibilityError + .Addon-header {
     margin-top: 8px !important;
 }
-/* (new97) */
 .Addon-summary {
     min-width: 100% !important;
     max-width: 100% !important;
@@ -1708,7 +1600,6 @@ https://addons.mozilla.org/fr/firefox/addon/open-with/
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-/* (new102) */
 .Addon-details {
     grid-auto-flow: unset !important;
     grid-gap: unset !important;
@@ -1717,16 +1608,15 @@ https://addons.mozilla.org/fr/firefox/addon/open-with/
     width: 80% !important;
     margin-top: 0px !important;
 }
-/* (new112) ADDON INFOS GOOD */
+/* ADDON INFOS GOOD */
 .Addon.Addon-extension.Addon--has-more-than-0-addons.Addon--has-more-than-3-addons .Addon-details {
     margin-top: 0px !important;
 }
-/* (new105) ADDON INFOS - DICO / THEME - GOOD */
+/* ADDON INFOS - DICO / THEME - GOOD */
 .Page-amo .Header.Header-no-hero-promo + .Page-content .Page.Page-not-homepage .Addon.Addon-theme.Addon--has-more-than-0-addons ,
 .Page-amo .Header.Header-no-hero-promo + .Page-content .Page.Page-not-homepage .Addon.Addon-dictionary {
     margin-top: -21px !important;
 }
-
 .Addon-details .Addon-main-content {
     grid-area: unset !important;
     display: inline-block !important;
@@ -1766,7 +1656,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     max-width: 100% !important;
 }
 
-/* (new112) SCRENNSHOTS */
+/* SCRENNSHOTS */
 .Addon-details .Addon-main-content .Card.Addon-screenshots {
     margin-top: 0;
     width: 62.5% !important;
@@ -1787,7 +1677,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     overflow-x: hidden;
     overflow-y: auto !important;
 }
-
 .ScreenShots-viewport {
     height: auto;
 }
@@ -1800,41 +1689,35 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     overflow-x: hidden;
     overflow-y: auto !important;
 }    
-
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail  {
     float: left !important;
     border: 1px solid rgba(12, 12, 13, 0.9);
-/* border: 1px solid tan !important; */
 }
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail:not(:first-of-type) .ScreenShots-image {
     max-height: 110px !important;
     width: auto !important;
     max-width: 110px !important;
     margin: 0 !important;
-/* border: 1px solid blue !important; */
 }
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail:first-of-type .ScreenShots-image {
     max-height: 335px !important;
     width: auto !important;
     max-width: 320px !important;
     margin: 0  !important;
-/* border: 1px solid red !important; */
 }
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail:not(:only-of-type):first-of-type .ScreenShots-image {
     height: 330px !important;
     width: auto !important;
     max-width: 574px !important;
     text-align: center !important;
-/* border: 1px solid yellow !important; */
 }
 
-/* (new111) ONLY ONE */
+/* ONLY ONE */
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail:only-of-type {
     display: inline-block !important;
     float: none !important;
     width: 100% !important;
     text-align: center !important;
-/* border: 1px solid aqua !important; */
 }
 .ScreenShots-list > .pswp-thumbnails .pswp-thumbnail:only-of-type .ScreenShots-image {
     display: inline-block !important;
@@ -1842,10 +1725,9 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     width: auto !important;
     max-width: 504px !important;
     text-align: center !important;
-/* border: 1px solid green !important; */
 }
 
-/* (new120) A - ADDON INFOS with 7 ZONES (DEV COMMENTS) -
+/* A - ADDON INFOS with 7 ZONES (DEV COMMENTS) -
 SCREENSHOTS + DESC + DEV COMMENTS + RECOMM + PERMISS + NOTES VERSION
 https://addons.mozilla.org/fr/firefox/addon/reddit-on-youtube/?src=recommended
 === */
@@ -1863,14 +1745,13 @@ https://addons.mozilla.org/fr/firefox/addon/reddit-on-youtube/?src=recommended
 /* OK = https://addons.mozilla.org/en-US/firefox/addon/link-gopher/?src=search */
 /* FOR DEV COMMENTS + SCEESHPT = https://addons.mozilla.org/fr/firefox/addon/autofill-quantum/ */
 
-/* .Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer , */
-/* .Addon-main-content .Card.ShowMoreCard:nth-last-child(3)  + .Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer , */
-/* .Addon-details .Addon-main-content .Card.Addon-screenshots + .Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer , */
+/* (new121) */
 .Addon-main-content .Card.Addon-screenshots + .Card.ShowMoreCard.AddonDescription + .Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer {
     float: left !important;
     width: 37% !important;
     margin-right: 5px  !important;
     margin-top: 5px  !important;
+    margin-bottom: 0 !important;
 }
 .Addon-details .Addon-main-content .Card.Addon-screenshots + .Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer  {
     float: right !important;
@@ -1878,7 +1759,13 @@ https://addons.mozilla.org/fr/firefox/addon/reddit-on-youtube/?src=recommended
     margin-right: 5px  !important;
     margin-top: 5px  !important;
 }
-/* (new119) B - ADDON INFOS with 7 ZONES (DEV COMMENTS) - 
+
+.Card.ShowMoreCard.Addon-developer-comments.ShowMoreCard--expanded.Card--no-footer  .Card-contents .ShowMoreCard-contents .Addon-developer-comments-contents {
+    height: 108px ;
+    overflow: hidden ;
+    overflow-y: auto ;
+}
+/* B - ADDON INFOS with 7 ZONES (DEV COMMENTS) - 
 SCREENSHOTS + DESC + DEV COMMENTS + RECOMM + PERMISS
 https://addons.mozilla.org/en-US/firefox/addon/downthemall/
 === */
@@ -1908,7 +1795,6 @@ border: 1px solid rgba(12, 12, 13, 0.9);
     overflow-x: hidden;
     overflow-y: auto;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid red !important; */
 }
 
 /* TEST ADDON INFOS with LESS ZONES - ==== */
@@ -1932,7 +1818,7 @@ https://addons.mozilla.org/en-US/firefox/addon/firefox-color-prod/?src=recommend
 ===*/
 .Addon-main-content section:nth-child( -n+ 1):not(.AddonDescription) + section.Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer {
     min-width: 100% !important;
-border: 1px dashed blue !important;
+/* border: 1px dashed blue !important; */
 }
 
 /* 1 ZONE 
@@ -1960,7 +1846,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     min-width: 49% !important;
     padding: 5px;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px dashed yellow !important; */
 }
 
 
@@ -2000,19 +1885,15 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     margin: 0px 2px 2px 2px !important;
     padding: 5px 5px !important;
     border-radius: 9px !important;
-/* background: blue !important; */
 }
-/* (new102) */
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-result {
     display: grid;
     grid-column-gap: 8px !important;
     grid-template-columns: 27px auto !important;
 }
-
 .AddonRecommendations.AddonsCard--horizontal ul.AddonsCard-list .SearchResult:hover .SearchResult-users {
     display: inline-block !important;
 }
-/* (new102) */
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-contents {
     grid-area: unset !important;
     display: inline-block !important;
@@ -2026,10 +1907,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     padding: 2px 2px !important;
     border-radius: 0 9px 9px 0 !important;
 background-color: #191f2d !important;
-/* border: 1px solid tomato; */
-/* background: red !important; */
 }
-/* (new109) */
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-contents .SearchResult-name {
     display: flex !important;
     flex-direction: column !important;
@@ -2041,35 +1919,28 @@ background-color: #191f2d !important;
     min-width: 100% !important;
     max-width: 100% !important;
     margin: 0;
-/* border: 1px solid yellow; */
 }
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-contents .SearchResult-metadata{
     height: auto;
     min-height: 40px !important;
     line-height: 5px !important;
     margin-top: 0px !important;
-/* border: 1px dashed yellow; */
 }
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-contents .SearchResult-metadata .SearchResult-rating {
     width: 100% !important;
     height: 20px !important;
     line-height: 20px !important;
-/* border: 1px dashed tomato; */
 }
-/* (new110) */
 .Rating.Rating--small ,
 .Page.Page-not-homepage .Search .SearchResult-wrapper .SearchResult-result .SearchResult-contents .SearchResult-metadata .SearchResult-rating .Rating.Rating--small ,
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-contents .SearchResult-metadata .SearchResult-rating .Rating.Rating--small {
     grid-column-gap: 11px !important;
 }
-
-/* (new109) */ 
 .Card.CardList.AddonsCard.AddonRecommendations.AddonsCard--horizontal.Card--photon.Card--no-footer .SearchResult-users.SearchResult--meta-section {
     height: 10px !important;
     min-height: 10px !important;
     line-height: 10px !important;
     margin-top: -15px !important;
-/* border: 1px dashed aqua; */
 }
 
 /* ALL  */
@@ -2077,7 +1948,6 @@ background-color: #191f2d !important;
 .Card.AddonMoreInfo.Card--no-footer {
     float: left !important;
     height: 339px !important;
-/* outline: 1px solid yellow; */
 }
 
 /* (new99) RATIGN */
@@ -2089,29 +1959,23 @@ outline: 1px solid blue;
 }
 .Card.Addon-overall-rating .Card-contents {
     padding: 0px !important;
-/* overflow: visible !important; */
 }
-/* (new107) */
 .Addon.Addon-extension .Addon-details .RatingManager > form .RatingManager-ratingControl {
     position: relative;
     display: inline-block !important;
     width: 100%;
     height: 21px !important;
     top: -21px !important;
-/* overflow: hidden !important; */
-z-index: -1 !important;
-/* visibility: hidden !important; */
+    z-index: -1 !important;
 }
 .Addon.Addon-extension .Addon-details .RatingManager > form:hover .RatingManager-ratingControl {
     position: relative;
     display: inline-block !important;
     width: 100%;
     top: 5px !important;
-z-index: 10 !important;
-/* visibility: hidden !important; */
+    z-index: 10 !important;
 }
-
-/* (new116) LOG to RATE EXTENSION */
+/* LOG to RATE EXTENSION */
 .Addon.Addon-extension .Addon-details .RatingManager > form .RatingManager-ratingControl  .Button.Button--action.RatingManager-log-in-to-rate-button.Button--micro {
     width: 368px !important;
     left: 180px !important;
@@ -2119,43 +1983,33 @@ z-index: 10 !important;
 }
 .Addon.Addon-extension .Addon-details .RatingManager > form:hover .RatingManager-ratingControl  .Button.Button--action.RatingManager-log-in-to-rate-button.Button--micro {
     top: -44px !important;
-transition: background ease 1s !important;
+    transition: background ease 1s !important;
 background: gold !important;
 }
 .Addon.Addon-extension .Addon-details .RatingManager > form .RatingManager-ratingControl  .Button.Button--action.RatingManager-log-in-to-rate-button.Button--micro + .Rating.Rating--large {
     visibility: hidden !important;
 }
-
-
 .RatingManager .RatingManager-ratingControl .Rating.Rating--large.RatingManager-UserRating.Rating--editable {
     grid-column-gap: 3px !important;
     min-height: 17px !important;
-/* max-height: 0px !important; */
     width: 100%;
     margin: 0 !important;
-/* opacity: 0 !important; */
-/* overflow: hidden !important; */
-/* visibility: hidden !important; */
 }
-/* (new102) */
 .RatingManager .RatingManager-ratingControl .Rating.Rating--large.RatingManager-UserRating.Rating--editable button {
     position: relative !important;
     display: inline-block !important;
-/*     display: none !important; */
     width: 25px !important;
     height: 20px !important;
     line-height: 30px !important;
     margin-left: 8px !important;
     margin-right: -10px !important;
-/* visibility: hidden !important; */
-/* opacity: 0 !important; */
 }
 .RatingManager .RatingManager-ratingControl .Rating.Rating--large.RatingManager-UserRating.Rating--editable button .Icon.Icon-inline-content.IconStar svg.IconStar-svg {
     height: 20px;
     width: 20px;
 }
 
-/* (new96) ADD TO COLLECTION */
+/* ADD TO COLLECTION */
 .Card.AddAddonToCollection.Card--no-footer {
     width: 36.89% !important;
     min-height: 258px !important;
@@ -2181,7 +2035,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     font-size: 14px;
     text-align: left;
 }
-
 .Notice.Notice-success.AddAddonToCollection-added {
     display: inline-block  !important;
     min-width: 48% !important;
@@ -2223,7 +2076,6 @@ background-color: #305F26;
     height: 35px !important;
     top: 0 !important;
 }
-
 /* PERMISSIONS - === */
 .Card.PermissionsCard.Card--no-footer{
     float: left !important;
@@ -2244,7 +2096,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     margin-top: 6px !important;
 }
 
-/* (new97) RELEASE NOTES - === */
+/* RELEASE NOTES - === */
 .Card.ShowMoreCard.AddonDescription-version-notes{
     float: left !important;
     width: 31.6% !important;
@@ -2258,7 +2110,6 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     overflow-wrap: break-word;
     border-radius: 9px !important;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid violet !important; */
 }
 .Card.ShowMoreCard.AddonDescription-version-notes .Card-contents ,
 .Card.ShowMoreCard.AddonDescription-version-notes.ShowMoreCard--expanded.Card--no-footer{
@@ -2276,11 +2127,8 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
 }
 .Card.ShowMoreCard.AddonDescription-version-notes .Card-header {
-/*     max-width: 31.6% !important; */
-max-width: 100% !important;
-/* border: 1px solid yellow !important; */
+    max-width: 100% !important;
 }
-
 .Card.ShowMoreCard.AddonDescription-version-notes .Card-contents {
     min-width: 100% !important;
     min-height: 220px !important;
@@ -2289,7 +2137,6 @@ max-width: 100% !important;
     padding: 2px !important;
     border-radius: 0 0 9px 9px !important;
 border: 1px solid rgba(12, 12, 13, 0.9) !important;
-/* border: 1px solid yellow !important; */
 }
 .Card.ShowMoreCard.AddonDescription-version-notes .ShowMoreCard-contents {
     max-height: 210px !important;
@@ -2297,10 +2144,8 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     overflow: hidden !important;
     overflow-wrap: break-word;
     overflow-y: auto !important;
-/* border-top: 1px dotted red !important; */
 }
-
-/* (new97) for: https://addons.mozilla.org/en-US/firefox/addon/secure-password-generator/?src=recommended */
+/* for: https://addons.mozilla.org/en-US/firefox/addon/secure-password-generator/?src=recommended */
 .Card.ShowMoreCard.AddonDescription-version-notes.ShowMoreCard--expanded.Card--no-footer {
     float: left !important;
     width: 31.6% !important;
@@ -2319,13 +2164,11 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
 .Card.ShowMoreCard.AddonDescription-version-notes.ShowMoreCard--expanded .Card-contents {
     min-width: 100% !important;
     max-width: 100% !important;   
-/* border: 1px dotted aqua !important; */
 }
 .Card.ShowMoreCard.AddonDescription-version-notes.ShowMoreCard--expanded .Card-contents {
     max-height: 217px !important;
     min-height: 217px !important;
 }
-
 .ShowMoreCard-contents::after {
    display: none !important;
 }
@@ -2365,7 +2208,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     margin: 0 0 6px !important;
 }
 
-/* (new105) ADDON DATE UPDATE - === */
+/* ADDON DATE UPDATE - === */
 .Definition-dd.AddonMoreInfo-last-updated {
     position: absolute !important;
     display: inline-block !important;
@@ -2394,7 +2237,7 @@ content: "Update: " ;
 .DefinitionList.AddonMoreInfo-dl .Definition-dd.AddonMoreInfo-filesize+  .Definition-dt {
     display: none !important;
 }
-/* (new90) MORE ADONS by THIS AUTHOR */
+/* MORE ADONS by THIS AUTHOR */
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer {
     position: absolute !important;
     display: inline-block !important;
@@ -2454,14 +2297,13 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
     padding: 0px!important;
 border-radius: 5px !important;
 border: 1px solid red !important;
-    background-color: transparent !important;
+background-color: transparent !important;
 }
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult  .SearchResult-wrapper .SearchResult-result  .SearchResult-icon-wrapper {
     display: inline-block;
     height: 96px !important;
     width: 32px;
     text-align: center;
-/* background: blue !important; */
 }
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult  .SearchResult-wrapper .SearchResult-result  .SearchResult-contents {
 float: right !important;
@@ -2469,17 +2311,16 @@ float: right !important;
     min-height: 96px !important;
     width: 89%  !important;
     margin: 0px !important;
-padding: 5px 10px !important;
+    padding: 5px 10px !important;
 }
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult  .SearchResult-wrapper .SearchResult-result .SearchResult-metadata {
     margin-top: -24px !important;
 }
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult  .SearchResult-wrapper .SearchResult-result .SearchResult-users {
-float: right !important;
+    float: right !important;
     width: 86.5%  !important;
     margin-top: -24px !important;
 }
-
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme .SearchResult-link {
     max-height: 130px !important;
     min-height: 130px !important;
@@ -2494,10 +2335,7 @@ float: right !important;
     margin-top: 0px !important;
     word-wrap: break-word !important;
     white-space: nowrap !important;
-/* background: blue !important; */
 }
-
-
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult.SearchResult--theme {
     max-height: 130px !important;
     min-height: 130px !important;
@@ -2514,11 +2352,7 @@ float: right !important;
     max-height: 55px !important;
     min-height: 55px !important;
     margin-left: -3px !important;
-/* background-color: red !important; */
-/* outline: 1px solid violet !important; */
 }
-
-
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer .Card-contents ul.AddonsCard-list li.SearchResult .SearchResult-link  .SearchResult-result .SearchResult-contents h2.SearchResult-name {
     -moz-box-flex: unset !important;
     flex-grow: unset !important;
@@ -2541,7 +2375,6 @@ float: right !important;
     margin-left: 0;
     margin-top: 13px;
 }
-/* (new77) */
 .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-metadata, 
 .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-metadata .SearchResult-author, 
 .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-summary {
@@ -2552,7 +2385,6 @@ float: right !important;
     line-height: 12px !important;
     margin-top: 0px !important;
 }
-
 .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-icon-wrapper {
     grid-area: unset !important;
     -moz-box-ordinal-group: unset !important;
@@ -2564,7 +2396,7 @@ float: right !important;
 background: black !important;
 }
 
-/* COR (new108) MORE THEMES by THIS AUTHOR - === */
+/* MORE THEMES by THIS AUTHOR - === */
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer.AddonsByAuthorsCard--theme {
 border: 1px solid yellow ;
 }
@@ -2572,7 +2404,7 @@ border: 1px solid yellow ;
     height: 28px !important;
     line-height: 10px !important;
     margin-top: -6px !important;
-padding: 0px 5px !important;
+    padding: 0px 5px !important;
     font-size: 10px !important;
     overflow: hidden;
     overflow-wrap: break-word;
@@ -2614,7 +2446,6 @@ padding: 0px 5px !important;
     max-height: 30px !important;
     min-height: 30px !important;
 }
-
 /* NO SCREENSHOTS / DESCRIPTION ONLY "Others users... " _ === */
 .Addon-details .Addon-main-content .Card:only-of-type {
     display: inline-block;
@@ -2626,9 +2457,7 @@ padding: 0px 5px !important;
     margin-top: 0;
 border: 1px solid aqua !important;
 }
-
-
-/*(new105)  MESSAGES - ERROR / ICOMPATIBILITY - 
+/* MESSAGES - ERROR / ICOMPATIBILITY - 
 With experimental : https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/?src=recommended
 INCOMPATIBLITY + NO survey
 https://addons.mozilla.org/fr/firefox/addon/open-with/
@@ -2648,12 +2477,11 @@ https://addons.mozilla.org/fr/firefox/addon/open-with/
     height: 20px !important;
     line-height: 20px !important;
 }
-
-
 .Card.Addon-header-info-card.Card--photon.Card--no-header.Card--no-footer .Card-contents .AddonCompatibilityError +  .Addon-header .AddonTitle {
     margin-top: -10px !important;
 }
-/* (new100) NO MOZ SURVEY */
+/* (new121) Not MOZ SURVEY / Not Plateform */
+.WrongPlatformWarning.Addon-WrongPlatformWarning ,
 .Addon-header-info-card .Notice.Notice-warning.InstallWarning {
     position: absolute;
     width: 30px !important;
@@ -2662,14 +2490,26 @@ https://addons.mozilla.org/fr/firefox/addon/open-with/
     left: 0.65% !important;
     margin-bottom: 0 !important;
     padding-left: 0px !important;
-overflow: hidden !important;
+    overflow: hidden !important;
 }
+.WrongPlatformWarning.Addon-WrongPlatformWarning {
+    height: 20px !important;
+    line-height: 22px !important;
+}
+.Notice-warningInfo .Notice-icon {
+        margin-top: -1px ;
+}
+.WrongPlatformWarning.Addon-WrongPlatformWarning:not(:hover) .Notice-warningInfo {
+    height: 20px !important;
+    line-height: 22px !important;
+}
+.WrongPlatformWarning.Addon-WrongPlatformWarning:hover ,
 .Addon-header-info-card .Notice.Notice-warning.InstallWarning:hover {
     width: 19.5% !important;
     height: auto !important;
 }
 
-/* (new93) BADGE EXPERIMENTAL / RECOMMANDED -
+/* BADGE EXPERIMENTAL / RECOMMANDED -
 With VERSION incompatility : 
 https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/?src=recommended
 Whith QUANTUM icompatibility:
@@ -2689,14 +2529,12 @@ background: url("https://addons.cdn.mozilla.net/media/img/impala/warning-bg.png?
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 60%) repeat scroll 0 0%, -moz-repeating-linear-gradient(-45deg, #F0B500, #F0B500 7px, #FFD000 7px, #FFD000 14px) repeat scroll 0 0 transparent;
 transform: scale(0.6) !important;
 }
-
-
 .Addon-header-info-card .AddonCompatibilityError + .Addon-header  .AddonBadges .Badge.Badge-not-compatible {
     position: absolute;
     top: 30px !important;
     width: 138px !important;
     line-height: 15px !important;
-text-align: center !important;
+    text-align: center !important;
 }
 .Addon-header-info-card .AddonCompatibilityError + .Addon-header  .AddonBadges .Badge.Badge-not-compatible .Icon.Icon-not-compatible {
     vertical-align: top;
@@ -2704,7 +2542,7 @@ text-align: center !important;
     display: none !important;
 }
  
-/*  (new87) WORK AROUND FOR INSTALL INCOMPATIBLE ADDON :
+/* WORK AROUND FOR INSTALL INCOMPATIBLE ADDON :
  https://www.reddit.com/r/waterfox/comments/boazxg/mozilla_disabled_addon_fix_for_firefox_52_56/
 AND for DISABLED ADDO  read:
  https://www.ghacks.net/2019/05/14/mozilla-releases-add-on-to-fix-signing-issue-in-older-firefox-versions/
@@ -2716,25 +2554,25 @@ AND for DISABLED ADDO  read:
 
 /* .Notice.Notice-error.AddonCompatibilityError .Notice-text:after */
 .AMInstallButton .Button.Button--action.AMInstallButton-button.disabled.Button--disabled.Button--puffy:before {
-content: "To install it ..." !important;
-position: absolute !important;
-display: inline-block !important;
+    content: "To install it ..." !important;
+    position: absolute !important;
+    display: inline-block !important;
     grid-area: unset !important;
     margin-top: -30px !important;
     width: 138px !important;
     height: 20px !important;
     line-height: 15px !important;
     padding: 3px !important;
-text-align: center !important;
-white-space: pre-wrap !important;
+    text-align: center !important;
+    white-space: pre-wrap !important;
     word-wrap: normal !important;
     overflow-wrap: normal !important;
-overflow: hidden !important;
-background: gold !important;
-color: white !important;
+    overflow: hidden !important;
     cursor: move !important;
     opacity: 1 !important;
-transition: all ease 0.7s  !important;
+    transition: all ease 0.7s  !important;
+background: gold !important;
+color: white !important;
 }
 .AMInstallButton:hover .Button.Button--action.AMInstallButton-button.disabled.Button--disabled.Button--puffy:before {
 content: "To install it: \A Try to drag it \A into \A the address bar" !important;
@@ -2746,18 +2584,16 @@ display: inline-block !important;
     height: auto !important;
     line-height: 15px !important;
     padding: 3px !important;
-text-align: center !important;
-white-space: pre-wrap !important;
+    text-align: center !important;
+    white-space: pre-wrap !important;
     word-wrap: normal !important;
     overflow-wrap: normal !important;
-background: tomato !important;
-color: white !important;
     cursor: move !important;
     opacity: 1 !important;
+background: tomato !important;
+color: white !important;
 }
-
-
-/* (new80) ADDON PAGE / MY COLLECTIONS LIST - === */
+/* ADDON PAGE / MY COLLECTIONS LIST - === */
 .App-content {
     -moz-box-flex: 1;
     flex-grow: 1;
@@ -2766,13 +2602,13 @@ color: white !important;
     margin: 0 auto !important;
     max-width: 100% !important;
 }
-/* (new96)- with BADGE */
+/* with BADGE */
 .Addon {
     max-height: 838px!important;
     padding: 0 10px 10px !important;
     overflow: hidden !important;
 }
-/* (new117) - no BADGE - GOOD */
+/* no BADGE - GOOD */
 .Addon.Addon-extension {
     max-height: 838px!important;
 /* margin-top: 15px !important; */
@@ -2781,11 +2617,10 @@ margin-top: 0px !important;
     overflow: hidden !important;
 }
 
-/* (new105) ADDON INFOS PAGES - GOOD - ===*/
+/* ADDON INFOS PAGES - GOOD - ===*/
 .Header.Header-no-hero-promo + .Page-content .Page.Page-not-homepage .Addon.Addon-extension.Addon--has-more-than-0-addons.Addon--has-more-than-3-addons {
     margin-top: -22px !important;
 }
-
 .Collection .Collection-wrapper .Collection-items .Card-contents{
 background: #1f2536 !important;
 }
@@ -2793,16 +2628,10 @@ background: #1f2536 !important;
     height: 773px !important;
 padding-top: 30px !important;
 }
-/* (new80)  COLLECTIONS-EDIT */
+/* COLLECTIONS-EDIT */
 .Collection .Collection-wrapper .Collection-items .Card.CollectionAddAddon.Card--no-header.Card--no-footer + .Card.CardList.AddonsCard.Card--photon.Card--no-header .Card-contents {
     height: 590px !important;
-/* padding-top: 30px !important; */
-/* background: red !important; */
 }
-
-
-
-
 .Card.CollectionList-info.Card--no-footer ,
 .Collection-wrapper .Collection-detail-wrapper {
     grid-column: 1 / auto !important;
@@ -2827,7 +2656,6 @@ background: transparent !important;
     background: #1f2536 !important;
     font-size: 14px;
 }
-/* (new78) */
 .Collection .Collection-wrapper .Collection-detail-wrapper + .Collection-items .Card.CardList.AddonsCard.Card--photon.Card--no-header .Card-contents ul.AddonsCard-list  ,
 .CollectionList-listing {
     display: grid;
@@ -2837,7 +2665,7 @@ background: transparent !important;
     grid-column-gap: 0px !important;
 }
 
-/* (new78) for GM "Superloader Plus" */
+/* for GM "Superloader Plus" */
 .Search .SearchResults li.SearchResult.SearchResult--theme, 
 .Collection-items .AddonsCard-list li.SearchResult + .sp-separator ,
 .EditableCollectionAddon.EditableCollectionAddon--extension + .sp-separator ,
@@ -2850,8 +2678,6 @@ background: transparent !important;
     border-radius: 9px !important;
     padding: 0 5px !important;
     text-align: center !important;
-/* background: #1f2536 !important; */
-/* background-color: #4C5980 !important; */
 background-color: #1f2536 !important;
 border: 1px solid red !important;
 }
@@ -2872,7 +2698,6 @@ border: 1px solid red !important;
     margin-bottom: 2px !important;
     border-radius: 9px !important;
     box-shadow: none;
-/* background: red !important; */
 border: 1px solid red !important;
 }
 .Search .SearchResults li.SearchResult.SearchResult--theme, .Collection-items .AddonsCard-list li.SearchResult + .sp-separator {
@@ -2891,15 +2716,12 @@ border: 1px solid red !important;
     padding: 0 !important;
     text-shadow: none !important;
 }
-
-/* (new71) */
 /* PB FOR CHROME ?? -  background-color: red !important; */
 .CollectionList-wrapper .UserCollection-link {
     padding: 1px 5px !important;
     border-radius: 0 9px 9px 0 !important;
 }
-
-/* (new80) ADDON REVIEW - USER NOTE - 
+/* ADDON REVIEW - USER NOTE - 
 https://addons.mozilla.org/en-US/firefox/collections/2061785/XPI-57-Alternative/edit/
 https://addons.mozilla.org/en-US/firefox/collections/2061785/XPI-57-A-Tester-Divers/?page=1&collection_sort=-added
 https://addons.mozilla.org/en-US/firefox/collections/2061785/XPI-57-A-Tester-Divers/edit/?page=1&collection_sort=-added
@@ -2917,22 +2739,18 @@ https://addons.mozilla.org/en-US/firefox/collections/2061785/XPI-57-A-Tester-Div
     margin-top: 44px !important;
     width: 195px !important;
 }
-
 li.SearchResult .SearchResult-note {
     position: relative !important;
     max-width: 25px !important;
     height: 20px !important;
-/* top: -117px !important; */
-/* margin-left: -8px !important; */
     top: -147px !important;
     margin-left: -15px !important;
     margin-bottom: 0 !important;
     padding: 0px !important;
     overflow: hidden !important;
     z-index: 50000 !important;
-    background: black;
+background: black;
 }
-
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes ,
 li.SearchResult .SearchResult-note:hover {
     position: relative !important;
@@ -2949,9 +2767,6 @@ li.SearchResult .SearchResult-note:hover {
 color: gold !important;
 background: black;
 }
-
-
-
 li.SearchResult .SearchResult-note:hover  {
     height: 126px !important;
     top: -140px !important;
@@ -2975,7 +2790,6 @@ li.SearchResult .SearchResult-note:hover .SearchResult-note-header {
     margin-bottom: -18px !important;
     font-size: 0 !important;
 }
-
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes .EditableCollectionAddon-notes-content ,
 .SearchResult-note-content {
     display: inline-block;
@@ -2987,9 +2801,7 @@ li.SearchResult .SearchResult-note:hover .SearchResult-note-header {
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-
-
-/* TEST ADD ICON AT EDIT REVIEW IN COLL - === */
+/* ADD ICON AT EDIT REVIEW IN COLL - === */
 /* .EditableCollectionAddon-notes-content:before , */
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes:before {
     content: " " !important;
@@ -3020,7 +2832,6 @@ background: rgba(0, 0, 0, 0) url("data:image/svg+xml;charset=utf-8,%3Csvg width=
     color: gold !important;
     background: black !important;
 }
-
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes .EditableCollectionAddon-notes-content  {
     display: inline-block;
     max-width: 100% !important;
@@ -3040,7 +2851,6 @@ background: rgba(0, 0, 0, 0) url("data:image/svg+xml;charset=utf-8,%3Csvg width=
     padding: 3px 3px 0 15px !important;
 background: black !important;
 }
-/* (new92) */
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes:not(:hover) .DismissibleTextForm-form.EditableCollectionAddon-notes-form ,
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes:hover .DismissibleTextForm-form.EditableCollectionAddon-notes-form {
     position: absolute !important;
@@ -3050,7 +2860,6 @@ background: black !important;
     top: 0 !important;
     left: -3px !important;
     visibility: visible !important;
-/* outline: 1px solid violet !important; */
 }
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes:hover textarea.DismissibleTextForm-textarea ,
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes textarea.DismissibleTextForm-textarea {
@@ -3070,8 +2879,6 @@ background: black !important;
 .Collection-wrapper li.EditableCollectionAddon .EditableCollectionAddon-notes:hover textarea.DismissibleTextForm-textarea {
     margin-top: -2px !important;
 }
-
-
 .EditableCollectionAddon-notes-form .DismissibleTextForm-buttons {
     height: 17px !important;
     margin-top: 0px !important;
@@ -3082,9 +2889,7 @@ background: black !important;
     height: auto;
     min-height: 16px !important;
 }
-
-
-/* (new113) REVIEW - USER / PROFILE USER/MY/DEV - REVIEWS PAGE - === */
+/* REVIEW - USER / PROFILE USER/MY/DEV - REVIEWS PAGE - === */
 .UserReview-body>br {
     content: " " !important;
     float: none !important;
@@ -3093,7 +2898,6 @@ background: black !important;
     margin-top: 5px !important;
     margin-bottom: -3px !important;
 }
-
 .EditableCollectionAddon-notes-header {
     margin: 0 0 6px;
     text-align: left !important;
@@ -3132,7 +2936,6 @@ background: black !important;
 .UserProfile-header .UserProfile-avatar  {
     height: 190px !important;
 }
-
 .AddonSummaryCard-header-icon a {
     width: 100% !important;
     display: inline-block !important;
@@ -3146,11 +2949,29 @@ background: black !important;
     display: inline-block !important;
     min-width: 100% !important;
     clear: none;
+    text-align: center !important;
 }
 .UserProfile-name {
     font-size: 18px !important;
 }
-
+/* 'new121) */
+.UserProfile-tags .Icon {
+    float: left ;
+    height: 28px ;
+    width: 28px ;
+    margin-top: -5px ;
+    border-radius: 5px  ;
+    box-shadow: 0 0 2px #cccccc inset ;
+    background-size: 76% auto ;
+    background-color: rgba(191, 191, 190, 0.33) ;
+background-image: url(https://addons.cdn.mozilla.net/static/img/addon-icons/default-64.png) !important;
+}
+.UserProfile-avatar{
+    background-color: #1f2536 ;
+}
+.UserAvatar.UserProfile-avatar .Icon.Icon-anonymous-user {
+opacity: 0.7 ;
+}
 .UserProfile-addons-and-reviews ,
 .AddonReviewList-reviews {
     min-width: 88% !important;
@@ -3170,8 +2991,7 @@ background: black !important;
 background: #1f2536 !important;
 }
 
-
-/* (new78) PAGINATION */
+/* PAGINATION */
 .Card-contents + footer.Card-footer {
     width: 100% !important;
     margin-top: -85px !important;
@@ -3181,7 +3001,6 @@ background: #1f2536 !important;
 .UserProfile-addons-and-reviews .Card-contents + footer.Card-footer {
     margin-top: 0px !important;
 }
-
 .Search .SearchResults .Card.CardList.AddonsCard.Card--photon   .Card-footer {
     margin-top: -10px !important;
     padding: 0px !important;
@@ -3214,7 +3033,6 @@ background-color: #191f2d;
 .Paginate-page-number {
     margin: -8px 0 0 !important;
 }
-
 .UserProfile .UserProfile-wrapper .AddonsByAuthorsCard .Card-contents ul > li ,
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li , 
 .AddonReviewList-reviews .CardList ul > li {
@@ -3227,15 +3045,13 @@ background-color: #191f2d;
     border-radius: 5px !important;
 border: 1px solid red !important;
 }
-
-/* (new105) AUTHOR - THEME */
+/* AUTHOR - THEME */
 .UserProfile .UserProfile-addons-and-reviews section.Card.CardList.AddonsCard.AddonsByAuthorsCard.AddonsByAuthorsCard--theme .Card-contents ul.AddonsCard-list {
     display: unset !important;
     grid-auto-flow: unset !important;
     grid-gap: unset !important;
     grid-template-columns: unset !important;
 }
-
 .UserProfile .UserProfile-addons-and-reviews .CardList.AddonsByAuthorsCard .SearchResult.SearchResult--theme {
     display: inline-block !important;
     width: 24.2% !important;
@@ -3257,7 +3073,6 @@ border: 1px solid red !important;
     margin: 0;
     padding: 0;
 }
-
 .UserProfile .UserProfile-addons-and-reviews .CardList.AddonsByAuthorsCard .SearchResult.SearchResult--theme  .SearchResult-icon-wrapper {
     position: relative !important;
     display: inline-block !important;
@@ -3275,7 +3090,6 @@ background: black !important;
     width: 100%;
     margin-top: 5px;
 }
-/* (new105) */
 .UserProfile .UserProfile-addons-and-reviews .CardList.AddonsByAuthorsCard .SearchResult.SearchResult--theme .SearchResult-contents {
     display: inline-block !important;
     width: 100% !important;
@@ -3288,13 +3102,11 @@ background: black !important;
     text-align: center;
     z-index: 100;
 }
-
 .UserProfile .UserProfile-addons-and-reviews .CardList.AddonsByAuthorsCard .SearchResult.SearchResult--theme .SearchResult-metadata {
     display: inline-block;
     height: 20px !important;
     line-height: 0px !important;
     margin-top: -50px !important;
-/* background: aqua !important; */
 }
 
 /* NOT HOVER */
@@ -3333,7 +3145,6 @@ border-bottom: 1px solid red !important;
     line-height: 8px !important;
     font-size: 8px !important;
 }
-
 .Card-contents ul > li .AddonReviewCard-allControls button.AddonReviewCard-control.TooltipMenu-opener {
     height: 17px !important;
     line-height: 12px !important;
@@ -3346,7 +3157,7 @@ border-bottom: 1px solid red !important;
     margin-top: -4px !important;
     font-size: 10px !important;
 }
-/* (new101)MY REVIEW INDICATOR - 
+/* MY REVIEW INDICATOR - 
 https://addons.mozilla.org/fr/firefox/addon/insite-search/reviews/
 === */
 .AddonReviewList-reviews .CardList ul > li:not(:hover) .AddonReviewCard.AddonReviewCard-viewOnly  .Button.Button--neutral.AddonReviewCard-control.AddonReviewCard-delete {
@@ -3367,7 +3178,6 @@ background: rgba(255, 0, 0, 0.2) !important;
     margin-top:  0px !important;
     font-size: 8px !important;
 }
-
 /* NOT HOVER */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li:hover > .AddonReviewCard > .AddonReviewCard-container + .AddonReviewCard-reply:not(:hover) ,
 .AddonReviewList-reviews .CardList ul > li:hover > .AddonReviewCard > .AddonReviewCard-container + .AddonReviewCard-reply:not(:hover) {
@@ -3380,7 +3190,7 @@ background: rgba(255, 0, 0, 0.2) !important;
     border-radius: 9px !important;
     overflow: hidden !important;
 }
-/* (new114) DEV REPLY - HOVER -
+/* DEV REPLY - HOVER -
 https://addons.mozilla.org/en-US/firefox/addon/antibrowserspy-trackingblocker/reviews/
 ===  */
 .UserProfile-wrapper .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews  .Card-contents ul > li:hover > .AddonReviewCard  .AddonReviewCard-reply   , 
@@ -3394,27 +3204,29 @@ https://addons.mozilla.org/en-US/firefox/addon/antibrowserspy-trackingblocker/re
     border-radius: 5px !important;
     transform: translate(-302px, -16px)  scale(1)!important;
 }
-
-.AddonReviewCard:not(.AddonReviewCard-slim) .UserReview-body {
-    height: 78px !important;
-    line-height: 13px !important;
+.AddonReviewCard:not(.AddonReviewCard-slim) .UserReview-body ,
+.FeaturedAddonReview .AddonReviewCard.AddonReviewCard-viewOnly  .UserReview-body {
+    height: auto !important;
+    line-height: 12px !important;
     margin-bottom: 1px !important;
     font-size: 11px !important;
     overflow: hidden !important;
 border-top: 1px solid red !important;
 border-bottom: 1px solid red !important;
 }
+/* (new121) TOP REVIEW for LONG REVIEW (by DATE)*/
+.FeaturedAddonReview .AddonReviewCard.AddonReviewCard-viewOnly  .UserReview-body {
+    line-height: 18px !important;
+}
+.FeaturedAddonReview .AddonReviewCard.AddonReviewCard-viewOnly  .UserReview-body .ShowMoreCard-contents {
+    font-size: 15px !important;
+}
 .AddonReviewCard:not(.AddonReviewCard-slim) .UserReview-body .Card-contents {
-    height: 78px !important;
+    height: auto !important;
     padding: 3px 2px !important;
 }
 .AddonReviewCard:not(.AddonReviewCard-slim) .UserReview-body .Card-contents .ShowMoreCard-contents {
-    min-height: 72px !important;
-    max-height: 72px !important;
-    overflow: hidden !important;
-    overflow-y: auto !important;
 }
-
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li:hover > .AddonReviewCard > .AddonReviewCard-container + .AddonReviewCard-reply:hover .UserReview-body {
     height: 58px !important;
     line-height: 13px !important;
@@ -3424,7 +3236,6 @@ border-bottom: 1px solid red !important;
     overflow-y: auto !important;
 border-top: 1px solid red !important;
 border-bottom: 1px solid red !important;
-
 }
 .AddonReviewList-reviews .CardList ul > li:hover > .AddonReviewCard > .AddonReviewCard-container .UserReview-body {
     height: 70px !important;
@@ -3440,12 +3251,9 @@ border-bottom: 1px solid red !important;
     padding: 0px !important;
     overflow: hidden !important;
 }
-/* (new119) */
 .AddonReviewList-reviews .CardList ul > li:hover > .AddonReviewCard > .AddonReviewCard-container .UserReview-body .Card-contents .ShowMoreCard-contents>div{
 padding-bottom: 20px !important;
 }
-
-
 .AddonReviewList-filterByScore .Select.AddonReviewList-filterByScoreSelector {
     -moz-appearance: none !important;
     background-color: #191f2d !important;
@@ -3466,7 +3274,6 @@ background-color: #191f2d !important;
 border-color: #191f2d !important;
 color: #c1d0ff !important;
 }
-
 .AddonReviewCard .Rating.Rating--small {
     min-width: 10% !important;
     line-height: 19px !important;
@@ -3489,23 +3296,18 @@ background-color: #191f2d !important;
     border-radius: 5px !important;
     transform: scale(1.5) !important;
     z-index: 500 !important;
-/* background: #1f2536 !important; */
 background-color: #191f2d !important;
 border: 1px solid red !important;
 }
-
-
-
 .AddonReviewList-reviews .CardList ul > li:hover .ShowMoreCard-contents {
     overflow: hidden;
     overflow-wrap: break-word;
     position: relative;
     line-height: 10px !important;
-font-size: 10px !important;
+    font-size: 10px !important;
 background: red !important;
 }
 .ShowMoreCard-contents>div>br {
-/* content: "A" !important; */
     display: block !important;
     margin-bottom: 1px !important;
 }
@@ -3514,21 +3316,16 @@ background: red !important;
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li:nth-child(n+1):nth-child(-n+5):hover ,
 .AddonReviewList-reviews .CardList ul > li:nth-child(n+1):nth-child(-n+5):hover {
     transform: translate(-26px, 20px) scale(1.5) !important;
-/* border: 1px solid tomato !important; */
 }
 /* REVIEW - TOP ROW - RIGHT + LEFT */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews.Card--photon .Card-contents ul > li:nth-child(1):hover {
     transform: translate(65px, 20px) scale(1.5) !important;
-/* border: 1px dashed tan !important; */
 }
-
 /* REVIEW - BOTTOM ROW */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li:nth-child(n+21):nth-child(-n+25):hover ,
 .AddonReviewList-reviews .CardList ul > li:nth-child(n+21):nth-child(-n+25):hover {
     transform: translate(0px, -30px) scale(1.5) !important;
-/* border: 1px solid tan !important; */
 }
-
 /* REVIEW - BOTTOM ROW - RIGHT + LEFT */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews.Card--photon .Card-contents ul > li:nth-child(21):hover {
     transform: translate(65px, -30px) scale(1.5) !important;
@@ -3556,7 +3353,7 @@ background: red !important;
     transform: translate(65px, -30px) scale(1.5) !important;
 }
 
-/* (new120) REVIEW - LEFT (+ GM superloader)*/
+/* REVIEW - LEFT (+ GM superloader)*/
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li +li+ li + li + li +li +li+ li + li + li +li +li+ li + li + li+ li+li+ li + li + li+ li:hover,
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li +li+ li + li + li +li +li+li+ li + li + li+ li+li+ li + li + li:hover,
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li +li+ li + li + li +li +li+ li + li + li +li+ li + li + li:hover,
@@ -3583,7 +3380,7 @@ background: red !important;
 }
 
 
-/* (new120) REVIEW - RIGHT (+ GM "Superloader")   */
+/* REVIEW - RIGHT (+ GM "Superloader")   */
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li:hover ,
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li:hover ,
 .CardList.AddonReviewList-reviews-listing .sp-separator+ li + li + li +li +li+ li + li + li +li +li+ li + li + li +li +li:hover ,
@@ -3604,8 +3401,7 @@ background: red !important;
     transform: translate(-26px, -30px) scale(1.5) !important;
 }
 
-
-/* (new113) REVIEW - AUTHOR - === */
+/* REVIEW - AUTHOR - === */
 .AddonReviewCard-authorByLine {
     min-width: 54% !important;
     max-width: 54% !important;
@@ -3636,7 +3432,6 @@ background: red !important;
     line-height: 15px !important;
     text-align: right !important;
 }
-/* (new115) */
 .AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-authorByLine a:before ,
 .AddonReviewList-reviews .CardList ul > li:not(:hover) .AddonReviewCard-authorByLine a:before {
 content: "▲ 💬 ▲" !important;
@@ -3646,7 +3441,7 @@ content: "▲ 💬 ▲" !important;
     line-height: 15px !important;
     text-align: center !important;
 }
-/* (new114) REVIEW - DEV REPLY */
+/* REVIEW - DEV REPLY */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li .AddonReviewCard-reply:not(:hover),
 .AddonReviewCard-reply:not(:hover) {
     position: absolute !important;
@@ -3662,7 +3457,6 @@ content: "▲ 💬 ▲" !important;
 background: #A62626 !important;
 border: 1px solid red !important;
 }
-
 .AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-reply ,
 .AddonReviewList-reviews .CardList ul > li:not(:hover).AddonReviewCard-reply {
     position: absolute !important;
@@ -3756,7 +3550,6 @@ background: black !important;
     margin-bottom: -2px !important;
     margin-top: -2px !important;
 }
-
 .Card.CardList.AddonReviewList-reviews-listing ul > li:not(:hover) .AddonReviewCard .AddonReviewCard-container .AddonReviewManager  .DismissibleTextForm-textarea {
     display: inline-block !important;
     width: 100% !important;
@@ -3766,7 +3559,6 @@ background: black !important;
     resize: none;
     padding: 2px !important;
 }
-/* COR */
 .Card.CardList.AddonReviewList-reviews-listing ul > li:hover .AddonReviewCard .AddonReviewCard-container .AddonReviewManager  .DismissibleTextForm-textarea {
     display: inline-block !important;
     width: 100% !important;
@@ -3774,19 +3566,16 @@ background: black !important;
     min-height: 60px !important;
     margin-top: -10px !important;
     resize: none;
-padding: 2px !important;
+    padding: 2px !important;
     font-size: 9px !important;
 }
 .AddonReviewManager .DismissibleTextForm-formFooter {
     font-size: 8px !important;
     margin-bottom: -12px !important;
 }
-
-
 .Card.CardList.AddonReviewList-reviews-listing ul > li:hover .AddonReviewCard .AddonReviewCard-container .AddonReviewManager .AddonReviewManager .DismissibleTextForm-formFooter {
     font-size: 10px !important;
 }
-
 .AddonReviewCard .DismissibleTextForm-buttons {
     margin-top: 3px !important;
 }
@@ -3806,7 +3595,6 @@ padding: 2px !important;
     padding: 2px !important;
     font-size: 9px !important;
 }
-
 .Card.CardList.AddonReviewList-reviews-listing ul > li .AddonReviewCard .AddonReviewCard-container .AddonReviewManager .Button.Button--neutral.DismissibleTextForm-dismiss{
     height: 15px !important;
     line-height: 10px !important;
@@ -3826,15 +3614,14 @@ padding: 2px !important;
     padding: 0 8px;
     font-size: 8px !important;
 }
-
-/* (new102) STAR YELLOWS - ALL - === */
+/* STAR YELLOWS - ALL - === */
 .Rating-selected-star  {
     fill: gold !important;
     filter: invert(1%)!important;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=\'64\' height=\'64\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M154.994575,670.99995 C153.704598,671.000763 152.477615,670.442079 151.630967,669.468394 C150.784319,668.49471 150.401158,667.201652 150.580582,665.923653 L153.046749,648.259919 L141.193762,635.514481 C140.080773,634.318044 139.711733,632.608076 140.232152,631.058811 C140.752571,629.509546 142.078939,628.369589 143.688275,628.088421 L160.214424,625.130961 L168.013827,609.468577 C168.767364,607.955994 170.3113,607 172.000594,607 C173.689888,607 175.233824,607.955994 175.98736,609.468577 L183.790813,625.130961 L200.329111,628.08437 C201.934946,628.371492 203.25546,629.513805 203.771316,631.062053 C204.287172,632.610301 203.915846,634.316807 202.803377,635.51043 L190.954439,648.26397 L193.420606,665.923653 C193.652457,667.578241 192.93975,669.223573 191.574418,670.185702 C190.209085,671.147831 188.420524,671.265104 186.941351,670.489485 L172.002619,662.698806 L157.047688,670.50569 C156.413201,670.833752 155.708782,671.003331 154.994575,670.99995 Z\' transform=\'translate(-140 -607)\' fill=\'%23FFE900\' fill-rule=\'nonzero\'/%3E%3C/svg%3E");
 }
 
-/* (new85) ALL - STAR SELECTED GOLD - === */
+/* ALL - STAR SELECTED GOLD - === */
 .Icon.Icon-inline-content.IconStar .IconStar-svg g path {
     fill: gold !important;
 }
@@ -3884,11 +3671,10 @@ padding: 2px !important;
     min-height: 18px !important;
 }
 
-/*  (new94) HOMEPAGE - EXTENSIONS / THEMES - === */
+/*  HOMEPAGE - EXTENSIONS / THEMES - === */
 .LandingPage-header {
     margin-bottom: -13px !important;
     padding: 8px 24px !important;
-/* border: 1px solid tomato !important; */
 }
 /*ALL - CONTAINER */
 .LandingPage .Card {
@@ -3899,7 +3685,6 @@ padding: 2px !important;
     margin-bottom: -10px !important;
     margin-top: 0 !important;
     top: -41px !important;
-/* border: 1px solid tomato !important; */
 }
 /* CATEGORIES - CONTAINER */
 .LandingPage .Card.Categories.Card--no-footer {
@@ -3913,12 +3698,11 @@ padding: 2px !important;
     margin-top: 0px !important;
     top: 20px !important;
 }
-/* (ne105) 3 OTHERS - THEME */
+/* 3 OTHERS - THEME */
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme li.SearchResult.SearchResult--theme .SearchResult-result {
    border-radius: 5px !important;
 background: black !important;
 }
-
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme li.SearchResult.SearchResult--theme .SearchResult-contents {
     width: 100%;
     margin: 0;
@@ -3926,60 +3710,51 @@ background: black !important;
     min-height: 225px !important;
     padding: 0 5px 15px;
     border-radius: 5px !important;
-/* background: red !important; */
 }
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme .SearchResult-metadata {
     display: inline-block !important;
     width: 100% !important;
     height: 90px !important;
     margin-top: -45px !important;
-/* text-align: center !important; */
-/* background: green !important; */
 }
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme .SearchResult-metadata .SearchResult-rating {
     display: inline-block !important;
     width: 100% !important;
     height: 15px;
     line-height: 13px;
-text-align: center !important;
+    text-align: center !important;
 }
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme .SearchResult-metadata .SearchResult-rating .Rating.Rating--small {
     display: inline-block !important;
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
-text-align: center !important;
+    text-align: center !important;
 }
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme .SearchResult-metadata .SearchResult-rating .Rating.Rating--small  .Rating-star {
     display: inline-block !important;
     margin-right: 2px !important;
 }
-
 .Page.Page-not-homepage .LandingPage.LandingPage--persona.LandingPage--theme .SearchResult-metadata .SearchResult-author {
     width: 100% !important;
     height: 20px !important;
     line-height: 15px !important;
     font-size: 15px !important;
 }
-
 /* ALL - CONTENTS */
 .LandingPage .Card .Card-contents {
     height: 283px !important;
-/* border: 1px dashed tomato !important; */
 }
 /* LIST without CATEGORIES - CONTENTS */
 .Card.CardList.AddonsCard.LandingAddonsCard .Card-contents {
     height: 283px !important;
-/* border: 1px dashed yellow !important; */
 }
-
 /* ALL - LIST */
 .LandingPage .Card .Card-contents ul.AddonsCard-list {
     grid-auto-flow: unset !important;
     grid-template-rows: unset !important;
     display: inline-block !important;
     min-width: 100% !important;
-/* border: 1px solid aqua !important; */
 }
 /* LIST without CATEGORIES - LIST */
 .Card.CardList.AddonsCard.LandingAddonsCard .Card-contents ul.AddonsCard-list {
@@ -3988,20 +3763,14 @@ text-align: center !important;
     display: inline-block !important;
     min-width: 100% !important;
     height: 265px !important;
-/* border: 1px solid red !important; */
 }
-
-
 .LandingPage .Card .Card-contents  +.Card-footer.Card-footer-link {
     position: relative !important;
     display: inline-block !important;
     margin-top: -6px !important;
     padding: 0 20px !important;
     width: 100% !important;
-/* background: red !important; */
 }
-
-/* (new94) */
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult {
     grid-template-columns: unset !important;
     display: inline-block !important;
@@ -4010,7 +3779,6 @@ text-align: center !important;
     max-width: 48% !important;
     margin-bottom: -10px !important;
     padding-top: 0px !important;
-/* border: 1px solid red !important; */
 }
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult  .SearchResult-wrapper {
     padding: 5px !important;
@@ -4026,18 +3794,13 @@ border: 1px solid #333 !important;
     min-height: 125px !important;
     margin: 0px !important;
     padding: 0 5px 15px 5px !important;
-border-radius: 5px 5px 0 0 !important;
-/* border: 1px solid tomato !important; */
+    border-radius: 5px 5px 0 0 !important;
 }
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult  .SearchResult-wrapper .SearchResult-users.SearchResult--meta-section {
     height: 15px;
     margin-top: -16px;
 }
-
-
-
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-result {
-/* display: grid; */
     grid-column-gap: unset !important;
     grid-template-columns: unset !important;
     -moz-box-direction: unset !important;
@@ -4055,14 +3818,19 @@ border-radius: 5px 5px 0 0 !important;
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-icon-wrapper {
     height: 123px !important;
 }
+/* (new121) THEMES PAGES */
 .LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme .SearchResult-icon-wrapper {
-    width: calc(29% - 10px) !important;
+    width: calc(45% - 10px) !important;
     margin-left: 5px !important;
-    margin-top: 100px !important;
+    margin-top: 40px !important;
     padding: 0 4px !important;
     border-radius: 14px !important;
 }
-/* (new94) THEMES PREVIEW */
+.LandingPage .Card .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme  .SearchResult-metadata{
+    display: inline-block;
+    margin-top: 45px !important;
+}
+/* THEMES PREVIEW */
 .LandingPage.LandingPage--persona.LandingPage--theme  .Card .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme  {
     grid-template-columns: unset !important;
     display: inline-block !important;
@@ -4073,21 +3841,14 @@ border-radius: 5px 5px 0 0 !important;
     margin-left: 3px !important;
     margin-right: 5px !important;
     margin-bottom: 5px !important;
-/*     border-radius: 5px !important; */
     padding-top: 0px !important;
-overflow: hidden !important;
-/* border: 1px solid #333 !important; */
-/* border: 1px solid red !important; */
+    overflow: hidden !important;
 }
-
 .LandingPage.LandingPage--persona.LandingPage--theme  .Card .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme .SearchResult-wrapper:hover {
     position: relative !important;
     display: inline-block !important;
     height: 233px !important;
-/*     margin-top: -100px !important; */
     top: 0px !important;
-/*     margin-bottom: 50px !important; */
-/* border: 1px solid yellow !important; */
 }
 .LandingPage.LandingPage--persona.LandingPage--theme  .Card .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme .SearchResult-icon-wrapper {
     margin-top: 150px !important;
@@ -4097,10 +3858,7 @@ overflow: hidden !important;
     width: 93% !important;
     margin-top: 150px !important;
     top: 0px !important;
-/* outline: 1px solid violet !important; */
 }
-
-
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents {
     -moz-box-direction: unset !important;
     -moz-box-flex: unset !important;
@@ -4123,7 +3881,6 @@ overflow: hidden !important;
     margin-top: 0px !important;
     padding: 3px 5px 2px 5px !important;
 background: #283146 !important;
-/* background: tan !important; */
 }
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents {
     max-height: 122px !important;
@@ -4135,7 +3892,6 @@ background: #283146 !important;
     min-height: 185px !important;
     line-height: 10px !important;
 }
-
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents p.SearchResult-summary {
     -moz-box-flex: unset !important;
     flex-grow: unset !important;
@@ -4151,7 +3907,6 @@ background: #283146 !important;
     font-size: 12px;
     overflow: hidden !important;
     overflow-y: auto !important;
-/* background: green !important; */
 }
 
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents .SearchResult-metadata {
@@ -4162,15 +3917,12 @@ background: #283146 !important;
     max-width: 60% !important;
     margin-top: -2px !important;
     text-align: center !important;
-/* background: red !important; */
 }
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme .SearchResult-link .SearchResult-contents .SearchResult-metadata {
     width: 100% !important;
     min-width: 100% !important;
     margin-top: 20px !important;
 }
-
-
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents   +.SearchResult-users.SearchResult--meta-section {
     float: left !important;
     width: 100% !important;
@@ -4179,12 +3931,10 @@ background: #283146 !important;
     line-height: 10px !important;
     height: 17px !important;
     margin-left: 5px !important;
-/*     margin-top: -15px !important; */
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     text-align: center !important;
     z-index: 100 !important;
-/* background: blue !important; */
 }
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult.SearchResult--theme .SearchResult-link .SearchResult-contents   +.SearchResult-users.SearchResult--meta-section {
     width: 100% !important;
@@ -4192,9 +3942,7 @@ background: #283146 !important;
     margin-left: 0px !important;
     margin-top: 25px !important;
     z-index: 500 !important;
-/* background: blue !important; */
 }
-
 .LandingPage .Card.AddonsCard--horizontal .Card-contents ul.AddonsCard-list  li.SearchResult .SearchResult-link .SearchResult-contents .SearchResult-name {
     -moz-box-flex: unset !important;
     flex-grow: unset !important;
@@ -4211,9 +3959,7 @@ background: #283146 !important;
     text-decoration: none;
     overflow: unset;
     overflow-wrap: break-word;
-/* background: red !important; */
 }
-
 .LandingPage .Categories-item {
     display: inline-block;
     padding: 0;
@@ -4221,7 +3967,6 @@ background: #283146 !important;
     max-width: 30% !important;
     width: 100% !important;
 }
-
 .Categories--category-color-10 {
     background: #497011 !important;
 }
@@ -4234,7 +3979,6 @@ background: #283146 !important;
 .Categories--category-color-7 {
     background: #0b5863 !important;
 }
-
 .Categories--category-color-5 {
     background: #0c33cf !important;
 }
@@ -4250,9 +3994,7 @@ background: #283146 !important;
 .Categories--category-color-1 {
     background: #e00606 !important;
 }
-
-
-/* (new82) HOME - ADDONS CATEGORY FEATURED PAGE - === */
+/* HOME - ADDONS CATEGORY FEATURED PAGE - === */
 .Category section.Card.CategoryHeader {
     height: 86px !important;
     margin-top: -19px !important;
@@ -4261,7 +4003,6 @@ background: #283146 !important;
 .Category section.Card.CardList.AddonsCard.LandingAddonsCard {
     margin-bottom: -20px !important;
 }
-
 .Category section.Card.CategoryHeader .CategoryHeader-wrapper {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
@@ -4269,7 +4010,6 @@ background: #283146 !important;
 .Category section.Card.CardList.AddonsCard.LandingAddonsCard .SearchResult.SearchResult--theme {
     height: 180px !important;
 }
-
 .Category section.Card.CardList.AddonsCard.LandingAddonsCard .SearchResult {
     height: 202px !important;
 }
@@ -4291,8 +4031,6 @@ background: #283146 !important;
     max-height: 70px !important;
     min-height: 70px !important;
 }
-
-
 .Category.Category--theme section.Card.CardList.AddonsCard.LandingAddonsCard  .SearchResult-contents ,
 .Category section.Card.CardList.AddonsCard.LandingAddonsCard  .SearchResult-contents {
     display: inline-block !important;
@@ -4302,18 +4040,15 @@ background: #283146 !important;
     min-height: 170px !important;
     padding: 2px 5px;
     border-radius: 0 9px 9px 0;
-/*     background-color: red !important; */
 }
 .Category.Category--theme section.Card.CardList.AddonsCard.LandingAddonsCard  .SearchResult-contents {
     max-height: 130px !important;
     min-height: 130px !important;
-/*     background-color: aqua !important; */
 }
 .Category.Category--theme section.Card.CardList.AddonsCard.LandingAddonsCard  li.SearchResult.SearchResult--theme .SearchResult-contents .SearchResult-name {
     height: 20px !important;
     margin-bottom: -10px !important;
 }
-
 
 /* ALL - === */
 .Select {
@@ -4330,12 +4065,10 @@ border-color: #191f2d !important;
 color: #c1d0ff !important;
 background-color: #191f2d !important;
 }
-
-/* (new86) ADDON VERSIONS PAGES - === */
+/* ADDON VERSIONS PAGES - === */
 .AddonVersions-wrapper {
     min-height: 775px !important;
 }
-
 .AddonVersions-wrapper .AddonSummaryCard  {
     min-width: 300px;
     width: 15% !important;
@@ -4360,91 +4093,68 @@ display: inline-block !important;
 .AddonVersionCard>div:not(.InstallButtonWrapper) {
     min-height: 181px !important;
 }
-
-/* (new99) */
-/*:not(:last-of-type) */
 .AddonVersions .Card.CardList.AddonVersions-versions.Card--photon .Card-contents .InstallButtonWrapper {
     position: absolute !important;
     display: inline-block !important;
-/* float: left !important; */
-width: 25% !important;
-border-radius: 5px !important;
+    width: 25% !important;
+    border-radius: 5px !important;
     z-index: 500000 !important;
 background: #526289  !important;
 border: 1px solid rgba(12, 12, 13, 0.9);
 }
-
-
-
 .AddonVersionCard-license {
     display: inline-block !important;
     position: relative !important;
     margin-top: -15px !important;
 }
-/* (new86) VERSIONS PAGES - ERROR COMPATIBILITY */
+/* VERSIONS PAGES - ERROR COMPATIBILITY */
 .AddonVersions-wrapper .CardList ul li.AddonVersionCard  .Notice.Notice-error.AddonCompatibilityError  .Notice-icon {
     margin-left: 1px !important;
     margin-top: 5px !important;
 }
 .AddonVersions-wrapper .CardList ul li.AddonVersionCard  .Notice.Notice-error.AddonCompatibilityError {
     position: absolute !important;
-/* display: inline-block !important; */
-/*     width: 25% !important; */
     width: 25px !important;
-height: 25px !important;
-/*     margin-bottom: 27px !important; */
+    height: 25px !important;
     margin-top: -20px !important;
+    margin-left: 23.5% !important;
     padding-bottom: 0;
     padding-top: 0;
-margin-left: 23.5% !important;
-overflow: hidden !important;
-/* transition: all ease 0.4s !important; */
+    overflow: hidden !important;
 }
 .AddonVersions-wrapper .CardList ul li.AddonVersionCard  .Notice.Notice-error.AddonCompatibilityError:hover {
     position: absolute !important;
-/* display: inline-block !important; */
-width: 25% !important;
-/* width: 25px !important; */
-height: 35px !important;
+    width: 25% !important;
+    height: 35px !important;
     margin-top: -10px !important;
-margin-left: 0% !important;
-overflow: hidden !important;
-transition: all ease 0.7s !important;
+    margin-left: 0% !important;
+    overflow: hidden !important;
+    transition: all ease 0.7s !important;
 }
-/* (new86) VERSIONS PAGES - ERROR COMPATIBILITY - LAST VERSION */
+/* VERSIONS PAGES - ERROR COMPATIBILITY - LAST VERSION */
 .AddonVersions-wrapper .CardList ul li:not(.AddonVersionCard) + .AddonVersionCard > div:not(.InstallButtonWrapper) .Notice.Notice-error.AddonCompatibilityError {
     position: absolute !important;
-/* display: inline-block !important; */
-/*     width: 25% !important; */
     width: 25px !important;
-height: 25px !important;
-/*     margin-bottom: 27px !important; */
+    height: 25px !important;
     margin-top: -10px !important;
     padding-bottom: 0;
     padding-top: 0;
-margin-left: 89% !important;
-overflow: hidden !important;
-/* transition: all ease 0.4s !important; */
-z-index: 5000 !important;
+    margin-left: 89% !important;
+    overflow: hidden !important;
+    z-index: 5000 !important;
 }
 .AddonVersions-wrapper .CardList ul li:not(.AddonVersionCard) + .AddonVersionCard > div:not(.InstallButtonWrapper) .Notice.Notice-error.AddonCompatibilityError:hover {
     position: absolute !important;
-/* display: inline-block !important; */
-width: 97% !important;
-/* width: 25px !important; */
-height: 55px !important;
+    width: 97% !important;
+    height: 55px !important;
     margin-top: -10px !important;
-margin-left: 0% !important;
-overflow: hidden !important;
-transition: all ease 0.7s !important;
+    margin-left: 0% !important;
+    overflow: hidden !important;
+    transition: all ease 0.7s !important;
 }
-
-
-/* (new101) for ONLY one Version:
+/* for ONLY one Version:
 https://addons.mozilla.org/en-US/firefox/addon/open_iframe/versions/
 - === */
-
-/* :not(:last-of-type) */
 .AddonVersions-wrapper .CardList ul> li.AddonVersionCard:nth-child(2) ,
 .AddonVersions-wrapper .CardList ul> li:not(.AddonVersionCard) + .AddonVersionCard:not(:last-of-type) {
     position: absolute !important;
@@ -4457,8 +4167,6 @@ https://addons.mozilla.org/en-US/firefox/addon/open_iframe/versions/
     padding: 5px !important;
 border: 1px dotted yellow !important;
 }
-/* :not(:last-of-type) */
-/* .AddonVersionCard>div:not(:empty) */
 .AddonVersions-wrapper .CardList ul> li:not(.AddonVersionCard) + .AddonVersionCard:not(:last-of-type) > div:not(:empty):not(.InstallButtonWrapper) {
     display: inline-block !important;
     height: 185px !important;
@@ -4472,13 +4180,12 @@ border: 1px dotted yellow !important;
     width: 96% !important;
     top: 216px;
 }
-/* (new101) ONLY ONE  */
+/* ONLY ONE  */
 .AddonVersions .Card.CardList.AddonVersions-versions.Card--photon ul> li.AddonVersionCard:nth-child(2) .InstallButtonWrapper {
     display: inline-block !important;
     width: 97% !important;
 /* border: 1px solid violet !important; */
 }
-
 .AddonVersions-wrapper .CardList ul li.AddonVersionCard > div:not(.InstallButtonWrapper) {
     display: inline-block !important;
     height: 240px !important;
@@ -4500,7 +4207,6 @@ border-bottom: 1px solid violet !important;
     overflow-y: auto !important;
 background: #283146 !important;
 }
-/* :not(:last-of-type) */
 .AddonVersions-wrapper .CardList ul > li:not(.AddonVersionCard) + .AddonVersionCard:not(:last-of-type) .AddonVersionCard-releaseNotes {
     height: 140px !important;
     margin-top: 5px !important;
@@ -4516,7 +4222,6 @@ content: " " !important;
     margin-top: 5px !important;
     margin-bottom: -3px !important;
 }
-
 .AddonVersionCard-version {
     position: absolute !important;
     display: inline-block !important;
@@ -4525,8 +4230,7 @@ content: " " !important;
     transform: translate(0px, -38px) !important;
     color: #0060df;
 }
-
-/* (new73) FIRST / OTHER VERSION H1  -
+/* FIRST / OTHER VERSION H1  -
 PB only one version:
 https://addons.mozilla.org/fr/firefox/addon/insite-search/versions/
 === */
@@ -4539,7 +4243,7 @@ https://addons.mozilla.org/fr/firefox/addon/insite-search/versions/
     text-align: center !important;
 }
 
-/* (new101) FIRST VERSION - PANEL LEFT -
+/* FIRST VERSION - PANEL LEFT -
 PB only one version:
 https://addons.mozilla.org/fr/firefox/addon/insite-search/versions/
 === */
@@ -4556,7 +4260,6 @@ https://addons.mozilla.org/fr/firefox/addon/insite-search/versions/
 .AddonVersions-wrapper .CardList ul li:not(.AddonVersionCard) + .AddonVersionCard>div:not(.InstallButtonWrapper) {
     height: 295px !important;
 }
-
 .AddonVersions-wrapper .CardList ul li:not(.AddonVersionCard) + .AddonVersionCard>div:not(.InstallButtonWrapper) .AddonVersionCard-version {
     position: absolute !important;
     display: inline-block !important;
@@ -4566,9 +4269,7 @@ https://addons.mozilla.org/fr/firefox/addon/insite-search/versions/
     color: #0060df;
 background: transparent !important;
 }
-
-
-/* (new73) "BE CAREFUL" MESSAGE */
+/* "BE CAREFUL" MESSAGE */
 .AddonVersions-wrapper .CardList .Card-contents> ul > li:first-of-type:not(.AddonVersionCard) {
     position: absolute !important;
     display: inline-block !important;
@@ -4600,14 +4301,16 @@ background: transparent !important;
     padding: 5px !important;
 }
 
-/* (new73) DOUBLE FFOTER -  === */
+/* DOUBLE FOOTER -  === */
 #react-view + .Footer {
     display: none !important;
 }
-/* VISITED - === */
+
+/* (new121) ==== COLOR - ==== */
+
+
+/* LINKS PERU - VISITED TOMATO - === */
 .SearchResult-wrapper .SearchResult-title, 
-
-
 .AddonReviewCard-allControls .AddonReviewCard-control:not(.AddonReviewCard-deleting), 
 .AddonReviewCard-allControls .AddonReviewCard-control:active:not(.AddonReviewCard-deleting), 
 .AddonReviewCard-allControls .AddonReviewCard-control:hover:not(.AddonReviewCard-deleting), 
@@ -4625,7 +4328,6 @@ a {
 }
 
 .SearchResult-wrapper:visited .SearchResult-title ,
-
 a:visited.UserCollection-link .UserCollection-name, 
 .Addon-details .Card.AddonMoreInfo.Card--no-footer .Card-contents .DefinitionList.AddonMoreInfo-dl dd a:visited, 
 .AddonTitle .AddonTitle-author a:visited , 
@@ -4636,12 +4338,28 @@ a:visited {
 }
 
 
-/* (new89) COLOR - ==== */
 
-/* COLOR - SEARCH - NO RESULT - === */
+/* TEXT - GRAY LIGHT - #B1ADAD -  */
+.SecondaryHero-module ,
+.SecondaryHero-message {
+    color: #B1ADAD;
+}
+
+/* BACKGROUND - #1f2536 - === */
 .Search .SearchResults-message {
     background: #1f2536 !important;
 }
+
+/* BACKGROUND - BLUE DARK - #191f2d */
+.SecondaryHero-module {
+    background: #191f2d ;
+}
+
+
+/* COLOR - ICON */
+
+
+
 
 /* ==== END  ==== */
 }

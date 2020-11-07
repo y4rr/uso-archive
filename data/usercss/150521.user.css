@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        2020115.19.26
+@version        2020116.22.49
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -500,6 +500,12 @@ li[data-visible="true"] .dr-apparel-visibility {
 ul#clothinglist.clothinglist.ui-sortable li, #dr-outfit-page div div#skin-box span {
     color: #c3d6e9 !important;
 }
+.outfit-name {
+    color: #78c6f0;
+}
+.outfit-image-rear {
+    background-image: url(https://i.imgur.com/XgN5hOV.png);
+}
 div#invwindow, fieldset#familiar div, div#familiar {
     background-color: #3b4854 !important;
     border: none !important;
@@ -797,6 +803,12 @@ div.baldwin-cauldron-status.baldwin-cauldron-done*/
 }
 .ah-current-tab, .ah-pagenumbers a, .ah-item-name {
     color: #70deff;
+}
+.ah-listing-relist-button {
+    background-image: url(https://i.imgur.com/oDz3j6S.png);
+}
+.ah-listing-clear-button {
+    background-image: url(https://i.imgur.com/uinPe27.png);
 }
 .ah-listing-itemname, #ah-search-collapsed-blurb, .ah-search-submit-container-right, .ah-reset-to-defaults, .ah-dlg-itemname, .ah-dlg-cost, .dragon-search-filters-reset, .dragon-search-filters-keep-expanded, #dragon-search-filters-blurb {
     color: #dae0e7 !important;
@@ -1927,6 +1939,30 @@ div.cluetip-inner.ui-cluetip-content div span {
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
 }
+img[src="/static/layout/hoard/locked-disabled.png"] {
+    content: url(https://i.imgur.com/c1flTZT.png) !important;
+}
+img[src="/static/layout/dressingroom/button_viewoutfit.png"] {
+    content: url(https://i.imgur.com/nZJG9Mw.png) !important;
+}
+img[src="/static/layout/dressingroom/button_importapparel.png"] {
+    content: url(https://i.imgur.com/yYukZcc.png) !important;
+}
+img[src="/static/layout/dressingroom/button_clearall.png"] {
+    content: url(https://i.imgur.com/pH3Y91K.png) !important;
+}
+img[src="/static/layout/dressingroom/button_loadoutfit.png"] {
+    content: url(https://i.imgur.com/IrztNBj.png) !important;
+}
+img[src="/static/layout/dressingroom/button_saveoutfit.png"] {
+    content: url(https://i.imgur.com/DA2ynYo.png) !important;
+}
+img[src="/static/layout/dressingroom/button_shareoutfit.png"] {
+    content: url(https://i.imgur.com/2A3Slus.png) !important;
+}
+img[src="/static/layout/dressingroom/button_deleteoutfit.png"] {
+    content: url(https://i.imgur.com/z4pjM7m.png) !important;
+}
 img[src="/static/layout/scryer/button_loadmorphology.png"] {
     content: url(https://i.imgur.com/tHw20Ro.png) !important;
 }
@@ -1969,13 +2005,13 @@ img[src="/static/layout/game-database/button-suggest.png"] {
 img[src="/static/layout/game-database/button-share.png"] {
     content: url(https://i.imgur.com/pbF8x7D.png) !important;
 }
-img[src="/static/layout/icon_lock_disabled.png"] {
-    content: url(https://i.imgur.com/xOacY4V.png) !important;
+img[src="/static/layout/hoard/unlocked-enabled.png"] {
+    content: url(https://i.imgur.com/0tm0Xqg.png) !important;
 }
 img[src="/static/layout/icon_star_disabled.png"] {
     content: url(https://i.imgur.com/9XO56l9.png) !important;
 }
-img[src="/static/layout/icon_lock_enabled.png"] {
+img[src="/static/layout/hoard/locked-enabled.png"] {
     content: url(https://i.imgur.com/ciw9Nsp.png) !important;
 }
 img[src="/static/layout/icon_star.png"] {
@@ -4064,6 +4100,15 @@ h2.dragon-profile-details-header {
 }
 #dragon-profile-report {
     padding-top: 4px;
+}
+#dragon-profile-likes .dragon-profile-likes-count {
+    color: #094886;
+}
+#dragon-profile-likes[data-active="false"] .dragon-profile-likes-icon {
+    background: url(https://i.imgur.com/9XO56l9.png);
+}
+#dragon-profile-likes[data-active="true"] .dragon-profile-likes-icon {
+    background: url(https://i.imgur.com/WZChw75.png);
 }
 #dragon-profile-scene {
     background-image: none !important;

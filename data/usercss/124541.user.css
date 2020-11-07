@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kenjiro
 @description    `Allow to use Google search without annoying question when cookies are disabled intentionally.`
-@version        20191113.21.57
+@version        2020116.18.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,25 +17,27 @@
  * v1.4 - fixes for Google search
  * v1.5 - fix for Youtube
  * v1.6 - another fix for Youtube
+ * v1.7 - fix for Google search - not working advanced menus
  */
 
 @-moz-document regexp("https?://www\\.google\\..{2,3}/(?:search)?(?:\\?|#).*") {
-  html, body { overflow: initial !important; }
+html, body { overflow: initial !important; }
   div._V0h { display: none !important; }
   div#cnsw { display: none !important; }
-  div#lb { display: none !important; }
+  div.m114nf.aID8W { display: none !important; }
+  div.bErdLd.wwYr3 { display: none !important; }
 }
 
 @-moz-document regexp("https?://www\\.google\\..{2,3}/maps/.*") {
-  div#consent-bump { display: none !important; }
+div#consent-bump { display: none !important; }
 }
 
 @-moz-document regexp("https?://translate\\.google\\..{2,3}/.*") {
-  div#wtgbr { display: none !important; }
+div#wtgbr { display: none !important; }
 }
 
 @-moz-document regexp("https?://www\\.youtube\\..{2,3}/.*") {
-  body.yt-dialog-active { overflow: auto !important; }
+body.yt-dialog-active { overflow: auto !important; }
   div#yt-consent-dialog { display: none !important; }
   div#yt-dialog-bg { display: none !important; }
   iron-iconset-svg { display: none !important; }

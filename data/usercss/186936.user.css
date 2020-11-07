@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.0
+@name           Compact Tube (White) v1.3.1
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020114.22.26
+@version        2020116.22.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.0 */
+/* CompactTube (White) v1.3.1 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -56,7 +56,7 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
    .ytd-display-ad-renderer {display: none;}
                 /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
                 : - "none" - убрать: "flow"- показать.  */
-                -o-ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
+                ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -1127,7 +1127,7 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 /* Размер Логотипа YouTube */
 /* 100px 30px; - дефолт в Старом Дизайне YouTube */
--o-#logo-icon-container.ytd-topbar-logo-renderer {
+-щ-#logo-icon-container.ytd-topbar-logo-renderer {
     width: 100px; /*def: 80*/
     height: 30px; /*def: 24*/
     flex: none;}
@@ -1147,6 +1147,23 @@ border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
+/* отступ сверху Шапки каналов до блоков с Видео (только на каналах) */
+-o-ytd-browse[page-subtype=channels] {padding: 2px 0px 0px 0px;}
+
+/* Панель Верхнего плеера Карусели в разделах Видеоигры(Gaming) и тому подобных (компенсация сдвига в 2px) */
+-o-ytd-default-promo-panel-renderer {
+    --yt-endpoint-color: var(--yt-spec-static-brand-white);
+    --yt-endpoint-hover-color: var(--yt-spec-static-brand-white);
+    --yt-video-thumbnail-height: auto;
+    --yt-video-thumbnail-width: auto;
+    color: var(--yt-spec-static-brand-white);
+    display: block;
+    height: var(--ytd-default-promo-panel-renderer-height);
+    overflow: hidden;
+    position: relative;
+                top: -2px;} /* компенсация сдвига в 2px  от (ytd-browse[page-subtype=channels]) */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* толщина шрифта названия каналов */
 #container.ytd-channel-name {display: var(--ytd-channel-name-container-display, inline-block); overflow: hidden; font-weight: bold;}
@@ -2488,6 +2505,68 @@ z-index: 18; pointer-events: none;}
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
 
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  Главное ЛЕВОЕ Меню (Гид Меню)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* интервалы по высоте между строками - Левого Главного меню (Гид меню) */
+ytd-guide-section-renderer {
+    --paper-item-min-height: 28px;} /*Funny. 32px*/ /*old. 28px*/
+
+
+/* Размер Системных Иконов в Гид меню и отступ справа */
+.guide-icon.ytd-guide-entry-renderer {
+    --iron-icon-height: 24px; /*def. 24px*/   /*old. 18px ~ 21*/
+    --iron-icon-width: 24px;  /*def. 24px*/   /*old. 18px ~ 21*/
+    margin-right: 11px;       /*def. 24px*/   /*old. 10px ~ 14*/
+    margin-left: -1px;       /* добавил для ровности, по умолчанию не было */
+    -o-color: var(--yt-spec-brand-icon-inactive);}
+
+/* Размер Иконок Подписок в Гид меню и отступ справа */
+yt-img-shadow.ytd-guide-entry-renderer {
+    height: 21px;           /*def. 24px*/   /*old. 20px ~ 22*/
+    width: 21px;            /*def. 24px*/   /*old. 20px ~ 22*/
+    margin-right: 13px;     /*def. 24px*/   /*old. 8px ~ 13*/
+    background-color: transparent;
+    overflow: hidden;}
+
+/* Ширина Гид меню */
+ytd-guide-renderer.ytd-app {
+    width: 240px;}                 /*def. 240px*/ /*old. 228px*/
+
+/* расположение Скроллбара на Гид меню и ширина Гид меню */
+ytd-app {
+    --app-drawer-width: 240px;}    /*def. 240px*/ /*old. 228px*/
+
+/* бордюр-контур справа Гид меню */
+-o-app-drawer {box-shadow: 0.5px 0px 0px 0px rgba(178, 178, 178, .18);} /*old.*/
+
+/* отступы по бокам Секций Гид меню */
+paper-item.ytd-guide-entry-renderer {
+    padding: 0 20px 0 28px; /*def. 0 24px 0 24px;*/ /*old. 0 18px 0 32px;*/
+    min-width: 0;
+    height: var(--paper-item-min-height, 48px);} /*48px*/
+
+/* Размер Шрифтов в Пунктах Гид меню */
+.title.ytd-guide-entry-renderer {
+    color: var(--yt-spec-text-primary);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.3rem; /*var(--ytd-user-comment_-_font-size)*/ /*old. 1.3rem*/
+    font-weight: var(--ytd-user-comment_-_font-weight);
+    line-height: var(--ytd-user-comment_-_line-height);
+    letter-spacing: var(--ytd-user-comment_-_letter-spacing);
+    flex: 1;
+    flex-basis: 1e-9px;}
+
+/* Размер Шрифтов в Пунктах Гид меню (активный раздел) */
+ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
+    font-size: 1.3rem; /*def. 1.4rem*/ /*old. 1.3rem*/
+    font-weight: 500;
+    line-height: var(--yt-guide-highlight-line-height, 1.8rem);}
+
+/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
 /* █  уменьшить свободное прострранство между ГОРИЗОНТАЛЬНЫМИ блоками с Видео на странице Канала  █ */
 #items.yt-horizontal-list-renderer {margin-bottom: 14px;} /*Низ самого верхнего блока - Низ*/
@@ -2652,7 +2731,7 @@ ytd-compact-link-renderer {
 
 
 /* интервалы по высоте между строками - Левого Главного меню */
-ytd-guide-section-renderer {
+-o-ytd-guide-section-renderer {
 
     --paper-item-min-height: 32px; /*32px*/
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        2020115.17.3
+@version        2020116.16.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
 /* CREATED BY SIR.SAARIM */
 /* Give feedback to me on FB messenger*/
 /* Please report issues here: http://m.me/sir.saarim */
-    /* Yo */
+/* Yo */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
@@ -54,7 +54,15 @@ html,
 .half-item.jsx-158707282,
 .description.jsx-2442625435,
 .report.jsx-789985989 .button-wrap.jsx-789985989 button.jsx-789985989,
-.video-feed-item.jsx-179939359 .share-embed-mask.jsx-179939359 .share-embed-card {
+.video-feed-item.jsx-179939359 .share-embed-mask.jsx-179939359 .share-embed-card,
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-action-bar-v4 .action-share-modal,
+.reason-radios.jsx-395068207,
+.header-container .header-content,
+.drawer-content.drawer-enter-done,
+header .help-container .help-item,
+.campaign-card .main-article,
+.desktop-container,
+.header-container.middle.jsx-2041358087 {
 	background-color: #1D1E1F !important;
 }
 
@@ -62,7 +70,6 @@ html,
 .more-actions.jsx-4035564160 .action-container.jsx-4035564160,
 .profile.jsx-2902964253 .profile-actions.jsx-2902964253,
 .more-actions.jsx-3371939883 .action-container.jsx-3371939883,
-.desktop-container,
 .header-container.jsx-2041358087 {
 	background-color: #000 !important;
 }
@@ -129,7 +136,11 @@ html,
 
 .feedback.jsx-2927380017,
 ._user_carousel_list-item.jsx-785156302:hover,
-.description.jsx-2442625435 {
+.description.jsx-2442625435,
+.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747,
+header .help-container .help-item,
+.campaign-card .main-article,
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover {
 	border-top: 1px solid #FE2C55 !important;
 	border-bottom: 1px solid #FE2C55 !important;
 	border-left: 1px solid #FE2C55 !important;
@@ -146,8 +157,6 @@ svg {
 	stroke: rgb(255 0 50);
 }
 
-
-
 .side-bar.jsx-2287835375 .nav-item.active.jsx-2287835375 span.jsx-2287835375,
 .side-bar.jsx-3120183270 .nav-item.active.jsx-3120183270 span.jsx-3120183270,
 .side-bar.jsx-2936289316 .nav-item.active.jsx-2936289316 span.jsx-2936289316,
@@ -159,7 +168,10 @@ svg {
 .identity.gray.jsx-2814792573,
 a.jsx-2902964253:hover,
 .nav-item.active.jsx-1483047469 span.jsx-1483047469,
-.action-container.jsx-2878433 .report.jsx-2878433:hover {
+.action-container.jsx-2878433 .report.jsx-2878433:hover,
+.nav-item.active.jsx-3866147749 span.jsx-3866147749:hover,
+.nav-item.jsx-3866147749 span.jsx-3866147749:hover,
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover {
 	color: rgb(245, 137, 158) !important;
 	fill: rgb(245, 137, 158) !important;
 }
@@ -180,7 +192,8 @@ circle {
 .detail-board.jsx-3905797973 .content-container.jsx-3905797973 .is-helpful-container.jsx-3905797973,
 .upload-file-container .image-upload-ele,
 .video-feed-tab.jsx-1681171502 .bottom-line.jsx-1681171502,
-.comment-pc .view-more.padding.jsx-1174869635:not(.hidden)::before {
+.comment-pc .view-more.padding.jsx-1174869635:not(.hidden)::before,
+.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747:hover {
 	background-color: red!important;
 }
 
@@ -254,7 +267,13 @@ a.duet-with.jsx-709044605::before,
 .hamburger-menu.jsx-319605352 .hamburger-menu-wrapper.jsx-319605352,
 .action-left.jsx-1182361573 .action-wrapper-v2.jsx-1182361573 .icons.like.jsx-1182361573,
 .action-left.jsx-1182361573 .action-wrapper-v2.jsx-1182361573 .icons.jsx-1182361573,
-.hamburger-menu.jsx-1309409409 .hamburger-menu-wrapper.jsx-1309409409 {
+.hamburger-menu.jsx-1309409409 .hamburger-menu-wrapper.jsx-1309409409,
+.logo-container .logo-icon,
+.logo-container .logo-text,
+.logo-container-drawer .logo-text,
+.hamburger-menu .hamburger-menu-wrapper,
+.logo-container-drawer .logo-icon,
+header .help-container .help-item img {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -400,7 +419,11 @@ div.jsx-3640141109 video-music-content pause music-title-decoration,
 .nav-item.jsx-3866147749 span.jsx-3866147749,
 .side-bar.jsx-3866147749 .user-list-header.jsx-3866147749,
 .text.jsx-158707282,
-.report.jsx-789985989 .button-wrap.jsx-789985989 button.jsx-789985989 {
+.report.jsx-789985989 .button-wrap.jsx-789985989 button.jsx-789985989,
+.share-pc-card.jsx-3606761601 .share-item-wrapper.jsx-3606761601 .plat-text.jsx-3606761601,
+.side-bar.jsx-3866147749 .login-wrapper.jsx-3866147749 span.jsx-3866147749,
+.side-bar.jsx-3866147749 .bottom-wrapper.jsx-3866147749 .copyright.jsx-3866147749,
+.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747 {
 	color: aliceblue !important
 }
 }
