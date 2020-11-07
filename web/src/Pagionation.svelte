@@ -1,5 +1,7 @@
 <script>
 	import { PaginationItem } from "sveltestrap";
+	import { createEventDispatcher } from "svelte";
+	const dispatch = createEventDispatcher();
 
 	let paginationArray = [];
 
@@ -10,6 +12,10 @@
 		if (page > totalPages) page = totalPages;
 		if (page <= 0) page = 1;
 		currentPage = page;
+
+		dispatch("paginated", {
+			page,
+		});
 	}
 
 	$: update(currentPage, totalPages);

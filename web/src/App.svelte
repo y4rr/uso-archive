@@ -69,6 +69,15 @@
 		return styles.slice((page - 1) * perPage, page * perPage);
 	}
 
+	let scrollToTopEl = undefined;
+
+	function scrollToTop() {
+		console.log(scrollToTopEl);
+		if (scrollToTopEl && scrollToTopEl.scrollIntoView) {
+			scrollToTopEl.scrollIntoView(true);
+		}
+	}
+
 	function sortStyles(styles, sorting) {
 		switch (sorting) {
 			case "weekly-installs":
@@ -138,7 +147,7 @@
 	}
 
 	function onKeyPress(e) {
-		if (e.which === 13 || e.keyCode === 13 || event.key === "Enter") {
+		if (e.which === 13 || e.keyCode === 13 || e.key === "Enter") {
 			update();
 		}
 	}
@@ -324,6 +333,7 @@
 				</div>
 			</div>
 		</div>
+		<span bind:this={scrollToTopEl} />
 		<Row>
 			{#each paginatedStyles as style (style.i)}
 				<Col xl="3" md="4" sm="6" xs="12" class="mb-4">
@@ -333,11 +343,12 @@
 		</Row>
 		<Row>
 			<Col class="d-flex justify-content-center">
-				<Pagination bind:currentPage={pagination.page} totalPages={pagination.totalPages} />
+				<Pagination on:paginated={scrollToTop} bind:currentPage={pagination.page} totalPages={pagination.totalPages} />
 			</Col>
 		</Row>
 	{:catch e}
-		Error while downloading data {e}
+		Error while downloading data
+		{e}
 	{/await}
 
 	<StyleModal {dataPrefix} on:onPushState={onModalPushState} styleId={modalStyleId} bind:isOpen={modalIsOpen} />
