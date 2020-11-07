@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         aqmx
 @description    `Dark theme for the V LIVE website.I've also made a script that <a href="https://greasyfork.org/en/scripts/379342-v-live-video-rotation">lets you rotate the video</a>`
-@version        2020116.11.58
+@version        2020117.9.35
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -379,8 +379,8 @@ body:not(.store_ticket) #wrap #header,
 /* Menu */
 [class^="channel_area--"],
 [class^="thumbnail_wrapper--"] img,
-[class^="layout_main--"] [class^="snb--"],
-[class^="layout_main--"] [class^="snb--"] nav,
+[class^="layout_main--"] [class^="snb--"][class*="is_active"],
+[class^="layout_main--"] [class^="snb--"][class*="is_active"] nav,
 [class^="layout_right--"] [class^="info_wrap--"],
 [class^="layout_right--"] [class^="channel_share_button"],
 /* Store */
@@ -642,6 +642,7 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 [class^="schedule_list--"] [class^="content_time--"] {
 	color: var(--dark-theme-text-color-dimmed);
 }
+[class^="calendar_module--"] tbody .rdtDay.rdtToday::after,
 [class^="schedule_item--"] {
 	border-color: var(--dark-theme-border-color);
 }
@@ -654,7 +655,7 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 
 /* My page */
 [class^="my_profile_banner--"] {
-	background: var(--dark-theme-background-card);
+	background: var(--dark-theme-background-card) !important;
 }
 [class^="my_profile_banner--"] [class^="thumbnail_wrap--"] img {
 	background-color: transparent;
@@ -709,6 +710,9 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 [class^="layout_content--"] [class*="reply_write--"] [class*="write--"] {
 	background-color: var(--dark-theme-background-card);
 	border-color: var(--dark-theme-border-color);
+}
+[class*="video_wrap--"][class*="-live"] [class^="video_chat--"] {
+	border-color: transparent;
 }
 [class^="replay_chat--"] {
 	background-color: var(--dark-theme-background);

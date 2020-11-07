@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         JClouseau
 @description    `Dark theme for GoodReads using warm greys, blues, purple and inverted existing images.Please see also <a href="https://userstyles.org/styles/117300/goodreads-dark-sans-background-book-stack">GoodReads Dark Sans Background Book-Stack</a> add-on.`
-@version        2018323.20.18
+@version        2020117.0.44
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -51,6 +51,7 @@
     --col-yellow: #EBD388;
     --col-green: #88D388;
 }
+
 body,
 p,
 ol,
@@ -69,11 +70,13 @@ td,
 textarea {
     font-family: sans-serif !important;
 }
+
 body {
     color: var(--col-gray-9);
     font-family: sans-serif !important;
     background: var(--col-gray-md);
 }
+
 .userIcon,
 .review .imgcol,
 .answererUserIcon img,
@@ -82,30 +85,52 @@ body {
 .newsfeedUpdates td.firstcol a img {
     box-shadow: 5px 5px 5px #000000;
 }
+
+section.tooltip.js-tooltip>H2>a.readable {
+    color: var(--col-ocean-md);
+}
+
+section.tooltip.js-tooltip>a.authorName {
+    color: var(--col-denim-md);
+}
+
 a.user {
     color: var(--col-denim-ml);
 }
+
 .otherEditionsActions a {
     color: var(--col-ocean-md);
 }
+
 #description a {
     color: var(--col-gray-6);
 }
+
 a.csct {
     color: var(--col-denim-md);
 }
+
+.yearChallengeTabs .yearChallengeTabHeader,
+.yearChallengeModule .challengeBooksRead {
+    color: var(--col-ocean-md);
+}
+
 div.clearFloats a {
     color: var(--col-gray-lt);
 }
+
 div.elementList a {
     color: var(--col-gray-ml);
 }
-div.challengePic > a > img {
+
+div.challengePic>a>img {
     filter: invert(85%) hue-rotate(180deg);
 }
+
 .tabs {
     border-bottom: 1px solid #D8D8D8;
 }
+
 .tabs .tab,
 .tabs .selectedTab {
     border-image-outset: 0 0 0 0;
@@ -122,6 +147,7 @@ div.challengePic > a > img {
     border-width: 1px 1px 0;
     xcolor: #382110;
 }
+
 .mediumTabs .tab,
 .mediumTabs .selectedTab,
 .bigTabs .tab,
@@ -131,15 +157,18 @@ div.challengePic > a > img {
     border-bottom-color: #f3f3e7;
     color: #999;
 }
+
 .newNewsfeed .bigTabs .selectedTab {
     background-color: #8B78CA;
     background-image: none;
     border-bottom-color: #f3f3e7;
 }
+
 .newNewsfeed .bigTabs .tab {
     background-color: var(--col-gray-ml);
     color: #999;
 }
+
 .newNewsfeed .bigTabs .selectedTab:hover,
 .newNewsfeed .bigTabs .Tab:hover,
 .newNewsfeed .bigTabs .tab:hover {
@@ -150,20 +179,33 @@ div.challengePic > a > img {
     transition-property: background-color;
     transition-timing-function: ease;
 }
+
+div.siteHeader__topLine.gr-box.gr-box--withShadow {
+    background-color: var(--col-gray-9);
+    color: black;
+}
+
+a.siteHeader__topLevelLink,
+a.primaryNavMenu__trigger,
+a.primaryNavMenu__trigger.primaryNavMenu__trigger--siteHeaderBrowseMenu.primaryNavMenu__trigger--active {
+    color: black;
+}
+
+a.siteHeader__topLevelLink:hover,
+a.primaryNavMenu__trigger:hover,
+a.primaryNavMenu__trigger.primaryNavMenu__trigger--siteHeaderBrowseMenu.primaryNavMenu__trigger--active {
+    background-color: black;
+}
+
 .communityQAFooter .likeItContainer a.like_it,
 .communityQuestionPermalink a,
 .questionText a,
 .moreReaderQA a,
 a.gr-button,
 a#js-kcrPreviewButton {
-    background-color: var(--col-cold-md);
-    border-color: var(--col-cold-ml) var(--col-cold-dk) var(--col-cold-dk) var(--col-cold-ml);
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px 1px 0 var(--col-gray-md);
     color: var(--col-gray-9);
 }
+
 .communityQAFooter .likeItContainer a.like_it:hover,
 .communityQuestionPermalink a:hover,
 .questionText a:hover,
@@ -177,10 +219,12 @@ a.gr-button:hover,
     border-width: 1px;
     color: var(--col-gray-e);
 }
+
 th,
 #myReview td {
     color: var(--col-ocean-md);
 }
+
 h2.brownBackground {
     background-color: var(--col-gray-3);
     background-image: none;
@@ -193,37 +237,46 @@ h2.brownBackground {
     border-top-right-radius: 10px;
     padding-left: 10px;
 }
+
 h2.brownBackground a,
 .h2Container h2,
-div.h2Container.gradientHeaderContainer > h2 {
+div.h2Container.gradientHeaderContainer>h2 {
     color: var(--col-denim-ml);
     padding-left: 10px;
 }
-td > div.updateAction {
+
+td>div.updateAction {
     color: var(--col-gray-lt);
 }
+
 a.updateUser.csct,
-div.updateAction > a.csct {
+div.updateAction>a.csct {
     color: var(--col-laven-md);
 }
-strong > a.csct,
+
+strong>a.csct,
 a.authorName.csct,
 a.authorTitle.csct {
     color: var(--col-purp-ml);
 }
-div.title > a.csct,
+
+div.title>a.csct,
 a.bookTitle.csct,
 a.authorFollowTitle.csct,
 a.bookInspirationJustification.csct,
-td > a.csct {
+td>a.csct,
+div.dataTitle {
     color: var(--col-denim-md);
 }
+
 span.by.smallText {
     color: var(--col-gray-9);
 }
+
 div.textRight.stacked.actionLinkLite a {
     color: var(--col-denim-ml);
 }
+
 html.desktop .wtrButtonContainer .wtrLeft button.wtrToRead {
     color: white;
     background-color: var(--col-purp-md);
@@ -239,21 +292,26 @@ html.desktop .wtrButtonContainer .wtrLeft button.wtrToRead {
     height: 30px;
     xpadding: 5px 0 5px 5px;
 }
+
 .wtrButtonContainer .wtrShelfMenu {
     border-top-color: var(--col-plumb-lt);
     border-left-color: var(--col-plumb-lt);
     border-right-color: var(--col-plumb-md);
     border-bottom-color: var(--col-plumb-md);
 }
+
 .wtrButtonContainer .wtrShelfMenu {
     background-color: var(--col-cold-lt);
 }
-.wtrButtonContainer .wtrShelfMenu > .wtrShelfList {
+
+.wtrButtonContainer .wtrShelfMenu>.wtrShelfList {
     background-color: var(--col-cold-lt);
 }
-.wtrButtonContainer .wtrShelfMenu > .wtrShelfList > ul.wtrExclusiveShelves > li {
+
+.wtrButtonContainer .wtrShelfMenu>.wtrShelfList>ul.wtrExclusiveShelves>li {
     background-color: var(--col-cold-lt);
 }
+
 .wtrButtonContainer .wtrShelfMenu button.wtrExclusiveShelf,
 .wtrButtonContainer .wtrShelfMenu button.wtrAddShelf,
 .wtrButtonContainer .wtrShelfMenu label.wtrExclusiveShelf,
@@ -261,6 +319,7 @@ html.desktop .wtrButtonContainer .wtrLeft button.wtrToRead {
 .wtrButtonContainer .wtrShelfMenu .wtrShelfSearchAddShelf button[type="submit"] {
     background-color: var(--col-cold-lt);
 }
+
 .wtrButtonContainer .wtrShelfMenu button.wtrExclusiveShelf:hover,
 .wtrButtonContainer .wtrShelfMenu button.wtrAddShelf:hover,
 .wtrButtonContainer .wtrShelfMenu label.wtrExclusiveShelf:hover,
@@ -268,10 +327,12 @@ html.desktop .wtrButtonContainer .wtrLeft button.wtrToRead {
 .wtrButtonContainer .wtrShelfMenu .wtrShelfSearchAddShelf button[type="submit"]:hover {
     background-color: #fff;
 }
-.wtrButtonContainer .wtrShelfMenu > .wtrShelfList > ul.wtrExclusiveShelves > li a.wtrExclusiveShelf,
-.wtrButtonContainer .wtrShelfMenu > .wtrShelfList > ul.wtrExclusiveShelves > li button.wtrExclusiveShelf {
+
+.wtrButtonContainer .wtrShelfMenu>.wtrShelfList>ul.wtrExclusiveShelves>li a.wtrExclusiveShelf,
+.wtrButtonContainer .wtrShelfMenu>.wtrShelfList>ul.wtrExclusiveShelves>li button.wtrExclusiveShelf {
     color: #000;
 }
+
 .wtrButtonContainer .wtrShelfMenu button.wtrExclusiveShelf,
 .wtrButtonContainer .wtrShelfMenu button.wtrAddShelf,
 .wtrButtonContainer .wtrShelfMenu label.wtrExclusiveShelf,
@@ -279,6 +340,7 @@ html.desktop .wtrButtonContainer .wtrLeft button.wtrToRead {
 .wtrButtonContainer .wtrShelfMenu .wtrShelfSearchAddShelf button[type="submit"] {
     color: #000;
 }
+
 html.desktop .wtrButtonContainer .wtrRight.wtrUp,
 html.desktop .wtrButtonContainer .wtrRight.wtrDown,
 html.desktop .yearChallengeModule .viewChallenge {
@@ -294,6 +356,7 @@ html.desktop .yearChallengeModule .viewChallenge {
     border-style: solid;
     border-width: 1px 1px 1px 0;
 }
+
 html.tablet .wtrButtonContainer .wtrRight.wtrUp,
 html.tablet .wtrButtonContainer .wtrRight.wtrDown,
 html.mobile .wtrButtonContainer .wtrRight.wtrUp,
@@ -311,6 +374,7 @@ html.mobile .wtrButtonContainer .wtrRight.wtrDown {
     border-left-color: var(--col-purp-lt);
     border-width: 1px;
 }
+
 html.desktop .wtrButtonContainer .wtrRight.wtrUp:hover,
 html.desktop .wtrButtonContainer .wtrRight.wtrDown:hover,
 html.desktop .yearChallengeModule .viewChallenge:hover {
@@ -322,6 +386,7 @@ html.desktop .yearChallengeModule .viewChallenge:hover {
     background-image: linear-gradient(var(--col-purp-lt), var(--col-purp-ml));
     border-color: var(--col-purp-lt) #000 var(--col-purp-md) var(--col-purp-lt);
 }
+
 html.tablet .wtrButtonContainer .wtrRight.wtrUp:hover,
 html.tablet .wtrButtonContainer .wtrRight.wtrDown:hover,
 html.mobile .wtrButtonContainer .wtrRight.wtrUp:hover,
@@ -334,6 +399,7 @@ html.mobile .wtrButtonContainer .wtrRight.wtrDown:hover {
     background-image: linear-gradient(var(--col-purp-lt), var(--col-purp-ml));
     border-color: var(--col-purp-lt) #000 var(--col-purp-md) var(--col-purp-lt);
 }
+
 .quoteSearchForm input.text {
     background-color: var(--bg-input-search);
     color: var(--fg-input-search);
@@ -354,133 +420,163 @@ html.mobile .wtrButtonContainer .wtrRight.wtrDown:hover {
     border-right-color: #88ad9a;
     border-bottom-color: #88ad9a;
 }
+
 div#quoteoftheday {
     background-image: linear-gradient(#000, var(--col-gray-md) 66%);
     padding: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 div#quoteoftheday div.stacked.mediumText,
 h1.quoteText {
     color: var(--col-yellow);
 }
+
 .mediumText {
     color: var(--col-gray-6);
 }
+
 div#quoteoftheday div.textRight {
     color: var(--col-gray-lt);
 }
+
 .tooltipTriggerText .tooltip,
 .tooltipTrigger .tooltip {
     background: var(--col-gray-dk);
     border: 5px solid var(--col-gray-ml);
 }
+
 .tooltipTriggerText .tooltip a,
 .tooltipTrigger .tooltip a {
     color: var(--col-denim-dk);
 }
+
 .tooltip.book-tooltip .paddedRating {
     color: var(--col-gray-ml);
     xcolor: black;
 }
+
 .tooltip.book-tooltip .addBookTipDescription {
     color: var(--col-gray-ml);
     xcolor: black;
 }
+
 .tooltip.book-tooltip .ratingStars .myRating {
     color: var(--col-gray-ml);
     xcolor: black;
 }
+
 .tooltip.book-tooltip .addBookTipPreview .button {
     color: var(--col-gray-ml);
     xcolor: #222222;
 }
+
 .tooltipCaret--top-right {
     border-bottom: 10px solid var(--col-gray-ml);
 }
+
 .prototip_StemImage {
     filter: invert(80%);
 }
+
 .prototip .goodreads .toolbar .title {
     color: var(--col-purp-ml);
 }
+
 .prototip canvas {
     visibility: hidden;
 }
+
 .prototip_CornerWrapper,
 .prototip .borderCenter {
     background-color: var(--col-gray-ml);
 }
+
 .prototip .clearfix {
     background-image: none;
     background-color: transparent;
 }
+
 .prototip .addbook,
 .prototip .content,
 .prototip .goodreads .toolbar .title {
     background-color: var(--col-gray-dk);
 }
+
 .wtrButtonContainer .wtrPrompt {
     color: var(--col-gray-lt);
     background-color: var(--col-gray-md);
     border-color: var(--col-purp-ml);
     background-image: none;
 }
+
 .wtrButtonContainer .wtrPrompt a {
     color: var(--col-ocean-ml);
 }
+
 .wtrButtonContainer .wtrPrompt:before {
     border-color: var(--col-purp-ml) transparent;
 }
+
 .wtrButtonContainer .wtrPrompt:after {
     border-color: var(--col-purp-ml) transparent;
 }
+
 .addbook .myRating {
     color: #999999;
 }
+
 li.borderTop.borderRow .prototip_CornerWrapper {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 li.borderBottom.borderRow .prototip_CornerWrapper {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+
 table#rating_distribution,
 table#rating_distribution td,
 table#rating_distribution th {
     background-color: black;
     color: var(--col-ocean-lt);
 }
+
 .bookMeta.darkGreyText {
-    background-color: var(--col-gray-md);
     color: var(--col-ocean-dk);
 }
+
 .bookMeta,
 .bookMeta td,
 .bookMeta th {
-    background-color: black;
     color: var(--col-ocean-dk);
 }
+
 table#rating_distribution td div {
     background-color: var(--col-ocean-dk) !important;
 }
+
 .bookMeta .value,
 .keyValue .value {
     color: var(--col-ocean-ml);
 }
+
 .user_status_review_lightbox .bookMeta,
 #hp_status_editor .bookMeta {
     color: var(--col-ocean-md);
     ;
     background-color: var(--col-gray-md) !important;
 }
+
 .user_status_review_lightbox .bookMeta:hover,
 #hp_status_editor .bookMeta:hover {
     color: var(--col-ocean-lt);
     ;
     background-color: var(--col-gray-md) !important;
 }
+
 h1,
 h2,
 h3,
@@ -491,75 +587,94 @@ h6 {
     xcolor: #382110;
     background-color: transparent;
 }
+
 #details {
     border-bottom: 1px solid #ddd;
     color: var(--col-gray-c);
     xcolor: #333;
 }
+
 #bookAuthors .smallText,
 #bookAuthors .authorName {
     color: var(--col-denim-md);
     xcolor: #333;
 }
+
 #aboutAuthor h2 a {
     color: var(--col-denim-ml);
     xcolor: black;
 }
-.miniBookContent > .title {
+
+.miniBookContent>.title {
     background-color: var(--col-gray-md);
 }
+
 .fader {
     background: -webkit-gradient(linear, left center, right center, from(rgba(255, 255, 255, 0)), to(var(--col-gray-md)));
     background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), var(--col-gray-md));
 }
+
 .bookTitle {
     color: var(--col-denim-md);
     xcolor: #333333;
 }
+
 .by {
     color: #000;
 }
+
 .authorName {
     color: var(--col-gray-lt);
 }
+
 .actionLink {
     color: var(--col-ocean-md);
 }
+
 .actionLinkGreyedOut {
     color: var(--col-gray-9);
     xcolor: #999999;
 }
+
 .actionLinkLite {
     color: var(--col-denim-ml);
     xcolor: #00635d;
 }
+
 .actionLinkLites a {
     color: var(--col-denim-ml);
     xcolor: #00635d;
 }
+
 .actionLinkLites a.current {
     color: var(--col-denim-ml);
     xcolor: #999;
 }
+
 .tableList th a {
     color: var(--col-gray-ml);
 }
+
 .infoBoxRowTitle {
     color: var(--col-yellow);
     xcolor: #382110;
 }
+
 .updateActionLinks a {
     color: var(--col-denim-ml);
     xcolor: #00635d;
 }
+
 .updateActionLinks a.greyText {
     color: var(--col-gray-9);
     xcolor: #999;
 }
+
 .updateActionLinks a.button {
     color: var(--col-denim-ml);
     xcolor: #222;
 }
+
 .brown_comment {
     color: var(--col-gray-ml);
     background-color: var(--col-gray-dk);
@@ -567,6 +682,7 @@ h6 {
     border-bottom: 1px solid var(--col-gray-ml);
     xborder-bottom: 1px solid #e5e5d6;
 }
+
 .placeholder_text,
 .xhr_comment_form textarea {
     xcolor: #777777;
@@ -578,10 +694,12 @@ h6 {
     border-bottom-color: #333;
     border-left-color: #666;
 }
+
 .readerQAForm .textInput {
     border: 1px solid #777777;
     border-radius: 3px;
 }
+
 .readerQAForm .textInput {
     background: var(--bg-input-para);
     color: var(--fg-input-para);
@@ -591,6 +709,7 @@ h6 {
     border-bottom-color: #333;
     border-left-color: #666;
 }
+
 H1,
 H2,
 H3,
@@ -600,25 +719,35 @@ H6 {
     color: var(--col-denim-ml);
     xcolor: #aaa;
 }
+
 H1,
 .h2Container H2,
 .pageHeader h2 {
     color: var(--col-denim-ml);
     xcolor: #382110;
 }
+
+H1.listPageTitle {
+    color: var(--col-denim-ml);
+    xcolor: #382110;
+}
+
 #userStatuses a {
     color: var(--col-denim-md);
 }
+
 .buttonAsActionLinkSecondary {
     color: var(--col-denim-ml);
     xcolor: #aaaaaa;
     background: none;
     border: none;
 }
+
 .actionLinkLites a.button {
     color: var(--col-denim-ml);
     xcolor: #222;
 }
+
 .buttonBar {
     color: black;
     xbackground-color: var(--col-purp-lt);
@@ -635,49 +764,60 @@ H1,
     border-style: solid;
     border-width: 1px 1px 1px 0;
 }
+
 .prototip {
     color: var(--col-gray-ml);
     xcolor: #000;
 }
+
 .buttonAsActionLinkSecondary {
     color: var(--col-denim-ml);
     xcolor: #aaaaaa;
     background: none;
     border: none;
 }
+
 .actionLinkLites a.button {
     color: var(--col-denim-ml);
     xcolor: #222;
 }
+
 tr.update .bookTitle,
 tr.update .authorTitle {
     color: var(--col-denim-ml);
     xcolor: #333;
 }
+
 .yearChallengeBooks .challengeLink .actionLinkLite {
     color: var(--col-denim-ml);
     xcolor: #4F227A;
 }
+
 .communityQA .bookTitle {
     color: var(--col-denim-ml);
     xcolor: #181818;
 }
+
 .communityQA .authorName {
     color: var(--col-denim-ml);
     xcolor: #181818;
 }
+
 .communityQuestionSubTitle {
     color: var(--col-gray-9);
     xcolor: #181818;
 }
+
 .communityQuestionSubTitle a {
     color: var(--col-gray-lt);
     xcolor: #181818;
 }
+
 .communityAnswerText {
     color: var(--col-gray-9);
     xcolor: #181818;
 }
+
 .communityAnswerText .spoiler,
 .questionText .spoiler,
 .communityQuestionText .spoiler,
@@ -685,6 +825,7 @@ tr.update .authorTitle {
     color: var(--col-gray-6);
     xcolor: #aaaaaa;
 }
+
 .communityAnswerText .spoiler .spoilerAnswerText,
 .questionText .spoiler .spoilerAnswerText,
 .communityQuestionText .spoiler .spoilerAnswerText,
@@ -692,8 +833,29 @@ tr.update .authorTitle {
     color: var(--col-gray-9);
     xcolor: #181818;
 }
+
 .mainContent,
 .mainContentFloat {
     background-color: var(--col-gray-dk);
+}
+
+.gr-h1,
+.gr-h2,
+.gr-h3,
+.gr-h4,
+.gr-h5 {
+    color: var(--col-denim-ml) !important;
+}
+
+.readingYearContent,
+.readingYearContent .abstractionWidget,
+.readingYearContent .categoryHeading,
+.readingYearContent .standoutNumber,
+.readingYearContent .longestShortestBookWidget .bookBlurbs .details,
+.readingYearContent .mostLeastPopularBookWidget .details,
+.readingYearContent .averageRatingWidget .ratingText,
+.readingYearContent .crowdFavoriteWidget .bookBlurb .details,
+.readingYearContent .missingBooksWidget .titleText {
+    color: var(--col-denim-ml) !important;
 }
 }

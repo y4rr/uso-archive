@@ -3,17 +3,16 @@
 @namespace      USO Archive
 @author         rizameister
 @description    `index.hr dark theme (gray and red) based on "index.hr black" by "Stjepan Treger"`
-@version        2020117.0.28
+@version        2020117.2.27
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @document url("http://www.index.hr/"),
           url-prefix("http://index.hr"),
-          domain("index.hr"),
-          regexp("https:.*")
+          domain("index.hr")
 {
 body {
-    color: #e2e2e2;
+    color: #fff;
     background-color: #202020;
 }
 
@@ -38,7 +37,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    color: #e2e2e2;
+    color: #cd5c5c;
 }
 .breadcrumbs {
     background-color: #202020;
@@ -57,11 +56,11 @@ a:hover {
 }
 
 .timeline-content ul li .title-box a {
-    color: #fff;
+    color: #cd5c5c;
 }
 
 .secondary-content-bg {
-    background: #202020;
+    background: #cd5c5c;
 }
 
 .timeline-content ul li .side-content {
@@ -77,8 +76,8 @@ a:hover {
 }
 
 .main-menu-container .main-menu .menu-holder {
-    border-bottom: 1px solid #151515;
-    border-top: 1px solid #151515;
+    border-bottom: 1px solid #202020;
+    border-top: 1px solid #202020;
     background: #202020;
 }
 
@@ -155,7 +154,7 @@ a:hover {
 
 .cinema-container nav .day,
 a {
-    color: #e2e2e2;
+    color: #cd5c5c;
 }
 
 .cinema-container .select-arrow-style select {
