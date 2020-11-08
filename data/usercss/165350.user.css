@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         JemisaR
 @description    `Dark mode for Fandom's Fate/Grand Order Wikia. Also removes videos, top notification and other wikis' advertisements from the right side.`
-@version        2020116.23.30
+@version        2020117.18.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,6 +28,19 @@ Fandom Wikia
 
 .wds-dropdown__content .wds-list.wds-is-linked > li > a {
   color: #66798f !important;
+}
+
+/* Fan Feed */
+[class*=discussions],
+[class*=discussions]:after,
+[class*=discussions]:before,
+[class*="related-wikis"] {
+  color: #fcf9f9 !important;
+  background-color: #000000 !important;
+}
+
+[class*=discussions__in] {
+  color: #747474bf !important;
 }
 
 /* Fix share button icon*/
@@ -75,6 +88,7 @@ a.edit-info-user {
   color: #747474bf !important;
 }
 
+
 /*
 ================
 Fate GO  
@@ -97,14 +111,16 @@ div.timeline-Widget {
     background-color: #000000 !important;
 }
 
-/* News, Current events */
-span[style="color:#FFFFFF;"] big {
-    color: #ffffff !important;
+.timeline-Tweet:hover {
+    background-color: transparent !important; 
 }
 
+/* News, Current events */
+span[style="color:#FFFFFF;"] big,
 span[style="color:white;"] big {
     color: #ffffff !important;
 }
+
 
 span[style="color:#1f2557;"] big {
     color: #1f2557 !important;
@@ -190,11 +206,12 @@ table.ServantInfoNav tbody tr td {
 }
 /* End: Make glyph visible */
 
-/* Remove atlantis-bg 
-Noticed here: https://fategrandorder.fandom.com/wiki/Achilles
+/* Remove 
+atlantis-bg: https://fategrandorder.fandom.com/wiki/Achilles
+anastasia-bg: https://fategrandorder.fandom.com/wiki/Atalanta_(Alter)
 */
-
-.atlantis-bg {
+div[class="atlantis-bg"],
+div[class="anastasia-bg"] {
     background: none !important;
 }
 

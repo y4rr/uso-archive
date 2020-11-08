@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           DARK JVC update
+@name           DARK JVC update 07/11/2020
 @namespace      USO Archive
 @author         Talsadoum
-@description    `Pour JVC réglage de la bande blanche`
-@version        20171119.10.35
+@description    `JVC update 07/11/2020`
+@version        2020117.19.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -3026,5 +3026,13 @@ color : #DFDFDF!important;
 .theme-white ::-webkit-scrollbar-thumb {
     background: #4c4c4c;
     border: 2px solid #1c1c1c;
+}
+.topic-list li.dfp__atf~li:nth-of-type(2n) {
+    /* background: #fff; */
+    background: #2E2E2E;
+}
+.topic-list li.dfp__atf~li:nth-of-type(odd) {
+    /* background: #eef5fc; */
+    background: #2E2E2E;
 }
 }

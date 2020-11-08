@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Sims Forums Darkmode
+@name           Sims Forums Darkmode - Forums.thesims.com
 @namespace      USO Archive
 @author         Seyjin
 @description    `A darkmode theme for the Sims forum.`
-@version        20201030.8.14
+@version        2020117.13.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 }
 
 /* Couleur des liens */
-#Panel li a, .Section-Profile .TextColor {
+#Panel li a, .Section-Profile .TextColor, .DataList a.Delete {
     color: #25a8e0;
 }
 
@@ -99,7 +99,7 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 }
 
 /* Couleur alternative du fond de la page */
-.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token, .Count {
+.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token, .Count, .DataList a.Delete:hover {
     background-color: #1c1b22;
 }
 

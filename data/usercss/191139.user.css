@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         HebaruSan
 @description    `Replaces most colors in the KSP forum with very dark shades of blue.Also makes profile pics square again.`
-@version        2020112.18.20
+@version        2020117.23.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -87,6 +87,21 @@
 .cke_button__ipsspoiler_icon {
     filter: invert(100%);
 }
+.pln {
+    color: rgb(220, 220, 255);
+}
+.kwd {
+    color: rgb(163, 163, 245);
+}
+.typ {
+    color: rgb(245, 163, 163);
+}
+.com {
+    color: rgb(245, 80, 80);
+}
+.lit {
+    color: rgb(80, 163, 80);
+}
 
 /* Undo some suspicious hard coded junk that breaks the theming */
 
@@ -108,5 +123,4 @@
 footer#ipsLayout_footer {
     display: none;
 }
-
 }

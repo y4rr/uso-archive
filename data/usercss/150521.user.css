@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        2020117.2.40
+@version        2020117.23.1
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1683,7 +1683,7 @@ table#userlist tbody tr {
     background: linear-gradient(to bottom, #02192d 0%, #25435e 100%);
     height: auto;
 }
-.bestiary-familiar-name, .flattery-slot-name {
+.bestiary-familiar-name, .flattery-slot-name, .bestiary-familiar-nickname {
     color: #c6f7ff;
     font-size: 12px;
     text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -1935,9 +1935,26 @@ div.cluetip-inner.ui-cluetip-content div span {
 .user-hoard-dialog-item-frame-error {
     background: linear-gradient(to bottom, rgb(255, 0, 45) 0%, rgb(255, 114, 199) 100%);
 }
+/* User Bio */
+div.clan-information-bio {
+    margin-bottom: 0px !important;
+    min-height: 122px !important;
+    max-height: 430px !important;
+    height: auto !important;
+}
+textarea#bio {
+    height: 385px !important;
+    padding-bottom: 50px !important;
+}
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+img[src="/static/layout/bestiary/buttons/show-description.png"] {
+    content: url(https://i.imgur.com/WXa3B5g.png) !important;
+}
+img[src="/static/layout/bestiary/buttons/hide-description.png"] {
+    content: url(https://i.imgur.com/9YLhOE3.png) !important;
 }
 img[src="/static/layout/baldwin/arrow.png"] {
     content: url(https://i.imgur.com/fg5hW7J.png) !important;

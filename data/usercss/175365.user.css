@@ -1,15 +1,13 @@
 /* ==UserStyle==
-@name           index.hr dark
+@name           index.hr dark + comments
 @namespace      USO Archive
 @author         rizameister
-@description    `index.hr dark theme (gray and red) based on "index.hr black" by "Stjepan Treger"`
-@version        2020117.2.27
+@description    `"index.hr dark + comments" theme (gray and red) based on "index.hr black" by "Stjepan Treger"`
+@version        2020117.23.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@document url("http://www.index.hr/"),
-          url-prefix("http://index.hr"),
-          domain("index.hr")
+@document domain("index.hr")
 {
 body {
     color: #fff;
@@ -36,9 +34,11 @@ h6,
 .h3,
 .h4,
 .h5,
+/*
 .h6 {
-    color: #cd5c5c;
+--   color: #fff;
 }
+*/
 .breadcrumbs {
     background-color: #202020;
 }
@@ -56,7 +56,7 @@ a:hover {
 }
 
 .timeline-content ul li .title-box a {
-    color: #cd5c5c;
+    color: #fff;
 }
 
 .secondary-content-bg {
@@ -154,7 +154,7 @@ a:hover {
 
 .cinema-container nav .day,
 a {
-    color: #cd5c5c;
+    color: #fff;
 }
 
 .cinema-container .select-arrow-style select {
@@ -309,5 +309,8 @@ ul.side-nav .collapsible-header {
 }
 .coronavirus-container .locations-container .locations-tab li:hover a {
     color: #f2f2f2;
+}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    background-color: #cd5c5c;
 }
 }

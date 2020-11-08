@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        20201022.6.24
+@version        2020117.15.28
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -107,10 +107,10 @@
  40%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
 	    			0px 5px  25px #00bfff,
-	    			0px 10px 70px #00FfFf; } 
+	    			0px 10px 70px #07f; } 
  50%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
-	    			0px 5px  35px #00b7ff,
+	    			0px 5px  35px #0095ff,
 	    			0px 10px 70px #0fa; }
  60%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
@@ -126,12 +126,12 @@
 	    			0px 10px 70px #ff0095; }		
  90%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
-	    			0px 5px  35px #00e1ff,
-	    			0px 10px 70px #00ffd5; }
+	    			0px 5px  35px #00ffd5,
+	    			0px 10px 70px #30f78b; }
  100%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
 	    			0px 5px  25px #ff0095,
-	    			0px 10px 70px #d900ff; }		
+	    			0px 10px 70px #d900ff; }
 }
 @keyframes music_page_border {
  0%   { box-shadow: 
@@ -153,10 +153,10 @@
  40%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
 	    			0px 5px  25px #00bfff,
-	    			0px 10px 70px #00FfFf; } 
+	    			0px 10px 70px #07f; } 
  50%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
-	    			0px 5px  35px #00b7ff,
+	    			0px 5px  35px #0095ff,
 	    			0px 10px 70px #0fa; }
  60%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
@@ -172,8 +172,8 @@
 	    			0px 10px 70px #ff0095; }		
  90%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
-	    			0px 5px  35px #00e1ff,
-	    			0px 10px 70px #00ffd5; }
+	    			0px 5px  35px #00ffd5,
+	    			0px 10px 70px #30f78b; }
  100%  { box-shadow: 
 	 0px 2px   14px hsla(0, 0%, 100%, .6),
 	    			0px 5px  25px #ff0095,
@@ -2611,12 +2611,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 [dir] body.new_header_design .top_nav_btn:hover .top_notify_count::after {
 /*     border-color: var(--steel_gray_20); */
-/* 	border-color: hsl(13, 100%, 65%); */
 	border-color: #0E1621;
+	border-color: #151e2b;
 }
 [dir] body.new_header_design .top_nav_btn.active .top_notify_count::after, [dir] body.new_header_design .top_nav_btn.active:hover .top_notify_count::after {
 /* 	border-color: var(--steel_gray_60); */
-	border-color: #0E1621;
+/* 	border-color: #0E1621; */
+	border-color: #151e2b;
 }
 /* Увеличенное пространство для названия трека */
 [dir] body.new_header_design #top_nav > li:nth-child(5) {
@@ -2716,5 +2717,66 @@ body.new_header_design .top_audio_player_title {
 }
 [dir] #visitors_graph {
     color: #8EC5FF !important;
+}
+
+.eltt_content, .GroupBanner__title {
+	color: #fff;
+}
+
+.im-page-pinned--media {
+/*     color: var(--light_blue_700); */
+	color:#BBC8D2;
+}
+
+[dir] .PageBlock {
+    background: #16202c;
+    box-shadow: 0 1px 0 0 #242F3D,0 0 0 1px #242F3D;
+}
+.SitesExamplesGalleryCard__title {
+    color: var(--text-white-color);
+}
+
+[dir] .SitesExamplesGalleryCard {
+    border-color: #242f3d99;
+}
+.SitesExamplesGalleryCard__text {
+    color: #818c99;
+}
+.PageBlock__headerTitle {
+	color: #fff;
+}
+[dir] .PageBlock__header {
+    background: #1c2634;
+    border-bottom-color: #242F3D;
+}
+[dir] .UploadInput:hover {
+    background-color: #1c2634;
+}
+.GroupEditRow__label {
+    color: #fff;
+}
+[dir] .Select--secondary .Select__control {
+    border-color: #242F3D;
+}
+[dir] .Select--secondary.Select--opened .Select__control {
+    background-color: #1c2634;
+}
+[dir] .Select__option:hover {
+    background-color: #242F3D;
+}
+[dir] .Select__option:hover, [dir] .Select__option--selected {
+    background: #242f3d;
+}
+
+[dir] .CheckBox__indicator {
+    border-color: #314154;
+    background: #16202C;
+}
+[dir] .CheckBox:hover .CheckBox__input:not(:checked)+.CheckBox__indicator {
+    background: #242f3d66;
+}
+[dir] .Select--secondary.Select--disabled .Select__control {
+    background-color: #242F3D;
+	border-color: #314154;
 }
 }

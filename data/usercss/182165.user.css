@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020116.17.7
+@version        2020117.18.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -25,13 +25,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -40,21 +41,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -85,13 +98,14 @@ WPColour "None" <<<EOT /*[None] (Colour only)*\/
 *\/
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -106,21 +120,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -164,13 +190,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -179,21 +206,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -225,13 +264,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -240,21 +280,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -286,13 +338,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -301,21 +354,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -347,13 +412,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -362,21 +428,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 	    var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -419,13 +497,14 @@ html
 }
 
 html[class*="res-b"],
-htmlhtml[class*="res-nightmode"][class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
 html[class*="res-nightmode"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="accountSwitcher"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -434,21 +513,33 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
         var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-/*._1VP69d9lk-Wk9zokOaylL,*\/
 ._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
 {
     background:
@@ -2742,6 +2833,7 @@ div .bylink,
 .titlebox .md h2 a,
 .titlebox .md h3 a,
 .titlebox .md h4 a,
+._1UoeAeSRhOKSNdY_h3iS1O._1Hw7tY9pMr-T1F4P1C-xNU._2qww3J5KKzsD7e5DO0BvvU ._3z5CnRH3l7hQGI8TQYFyqX,
 ._2ARwkAW45Urhf_fMfAMi5_._3WPeZCt6k7JXmTo4Kcf1vQ ._3A9bf_kZ6VBA2VBRND5gvf:hover,
 ._2H51id1RX9dGNrtrAIOMGK,
 ._37VvvhtKn3kg8VG5ZIjfGE,
@@ -2823,6 +2915,7 @@ div#sr-header-area a:hover,
 .search-link.may-blank:hover,
 .side a:hover,
 /*New Reddit User Page Tabs Hover*/._1JNzvBgvzSnX27gUBKqqmJ:hover,
+._1UoeAeSRhOKSNdY_h3iS1O._1Hw7tY9pMr-T1F4P1C-xNU._2qww3J5KKzsD7e5DO0BvvU:hover ._3z5CnRH3l7hQGI8TQYFyqX,
 ._2NS1CWm-CUQYu57CmZ05ep:hover,
 ._37VvvhtKn3kg8VG5ZIjfGE:hover,
 .ULWj94BYSOqoJDetxgcnU:hover,
@@ -3178,8 +3271,7 @@ a *
 .hover-bubble.anchor-right,
 .RrvkJ7ntzKYyaCOxMJ1RM,
 ._1FUNcfOeszr8eruqLxCMcR,
-._m7PpFuKATP9fZF4xKf9R,
-.nSJCQrnLY07CzwT8tTsNO
+._m7PpFuKATP9fZF4xKf9R
 {
     border-radius:4px 4px 4px 4px!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow);
@@ -3613,7 +3705,6 @@ div[style^="left:"] div[role="button"],
 ._3RzIwmCawx9KWuyuEKa-3s,
 ._3WeRItzSNTP8PlJhYPlcOV,
 .ehsOqYO6dxn_Pf9Dzwu37,
-.nSJCQrnLY07CzwT8tTsNO,
 .RrvkJ7ntzKYyaCOxMJ1RM,
 .tVQ1dB4n0mAWdcQNxFq-K
 {
@@ -3758,6 +3849,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 ._2-aCCpAklEV0DkVWrpodjE._2-cUhM9bP2B5FPfQsDLJGR,
 ._2dqCXnStO_Dc8Srt_lJqVj._35hmSCjPO8OEezK36eUXpk,
 ._2lgyQv1Xe7SzrqkbUeaEFL,
+._8aA-2ZrheEy6k2e1iShKQ._2QagxVHOpd1MZxMCUI8-aC,
 .cx1ohrUAq6ARaXTX2u8YN,
 ._m7PpFuKATP9fZF4xKf9R
 {
@@ -3818,6 +3910,7 @@ table#srList[style="display: block;"],
 /*4chan*/.extPanel.reply,
 .FancySelect__tooltip,
 .flairselector.drop-choices.active,.res-nightmode .flairselector.drop-choices.active,
+.guider.res-featureTip,
 .Header__tooltip,
 .help-section,
 .hover-bubble,.res-nightmode .hover-bubble,
@@ -3832,9 +3925,6 @@ table#srList[style="display: block;"],
 .res #srList,
 .res-commentNavToggle-choices,
 .res-filterline,
-
-.guider.res-featureTip,
-
 .res-nightmode #alert_message,
 .res-nightmode .RESDialogSmall,
 .RESDialogSmall,
@@ -3864,6 +3954,7 @@ table#srList[style="display: block;"],
 .EjdBJNEwygtHMKiHd3Bnv,
 .HQ2VJViRjokXpRbJzPvvc/*Tool-tip hover*/,
 .K4Eem3pMbRbAYioOfqN5E,
+.nSJCQrnLY07CzwT8tTsNO,
 .TMMvbwyeh9yuHKmQWHrE3
 {
     background:var(--RCBackgrounds)!important;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         DavidSipeki
 @description    `Dark theme with red accent for Last.fm`
-@version        2020925.14.15
+@version        2020117.18.34
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -419,6 +419,15 @@ a:focus .chartlist-count-bar-slug, a:hover .chartlist-count-bar-slug {
 
 .shout-form textarea {
     background-color: #000;   
+}
+
+.chartlist-index {
+    color: white;
+}
+
+.chartlist tr:nth-child(1) td.chartlist-index {
+    font-weight: bold;
+    color: red;
 }
 
 
@@ -866,5 +875,4 @@ body:not([data-whatinput="touch"]) .inbox-notifications .inbox-notifications__it
 .full-bleed-ad-container, .sidebar-ad-container{
     background-color: #080808;
 }
-
 }
