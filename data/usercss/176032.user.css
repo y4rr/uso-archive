@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Yubelious!
 @description    `Grayscale skin affecting CSS Fixes Project for Dueling NexusYayness of grayness! Get that colour out of here.This is a skin that is designed to run on top of https://userstyles.org/styles/169750/css-fixes-project-for-dueling-nexus`
-@version        2020117.20.36
+@version        2020118.2.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,9 +17,7 @@
 
 @-moz-document url-prefix("https://duelingnexus.com") {
 html {
-    -moz-filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    filter: grayscale(100%)
 }
 html, body, #navbar {
     box-sizing: border-box

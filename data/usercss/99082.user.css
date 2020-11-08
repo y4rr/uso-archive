@@ -1,110 +1,178 @@
 /* ==UserStyle==
-@name           PCmag.com by BamaBraves
+@name           PC Mag Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
-@description    `Darkened and highlights`
-@version        201884.17.12
+@description    `Dark`
+@version        2020118.9.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("pcmag.com") {
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+}
+
+@-moz-document domain("pcmag.com") {
+/*__________________________________________________________________________________*/
 
 * {
-	border: none!important;
-	border: 0!important;
-	box-shadow: none!important;
-	outline: none!important;
 	text-decoration: none!important;
 }
 
-.pros-cons-bl ul li strong,
- ul.rev-tabs li a {
-    text-transform: capitalize!important;
+.uppercase,
+header#main-top-nav nav .main-nav a,
+body h2.title {
+	text-transform: capitalize!important;
 }
 
-/*___ Fonts __________________________________________________________________________________*/
-
-.reviewProducts .product-price .zdcse > strong, .reviewProducts .product-price .zdcse .zdcse-free, .reviewProducts .product-price .zdcse .zdcse-too-low, 
-.reviews-content-left .reviews-tabs ul.rev-tabs li a,
-.article-section .article-body p, .review-body p,.slide-caption,p,.heading h2 a,
-body,h1, h2, h3, h4, h5, h6,footer .copyright .footer-copy p,.affiliate-text,.pros-cons-bl ul li strong,
-html {
-	font-family: cursive, Roboto, Arial, sans-serif!important;
+.border-gray-light,
+.border-gray-lighter,
+.border-white,
+body .tile,
+:focus {
+	border: none!important;
+	box-shadow: none!important;
+	outline: none!important;
 }
 
-.tile.small h2 > a {
-    font-size: 20px;
-	line-height: 27px!important;
-}
+/*___ Fonts ________________________________________________________________________*/
 
-.pros-cons-bl ul li strong,
-p {
-    font-size: 1.2rem!important;
-}
-
-p {
-	line-height: 27px!important;
-}
-
-footer .copyright .footer-copy p {
-    font-size: 14px!important;
-    line-height: 26px!important;
-}
-
-/*___ Remove Items ___________________________________________________________________________*/
-
-[id*="outofslot-panel-container-mainPanel-"],
-.column.large-fixed-300-right.show-for-large-up,
-#bottomrightrail,
-[id*="zergnet-widget-"],.article-share,#share_container .share_menu.vertical,
-.in-content-lazy,#share_container,
-#_evh-link,
-.pcmwrap,.spotlight-module,
-[data-specless-format="Ziff Davis: Masthead"],
-[id*="container-main-canvas"],
-#pcmedia,
-.evidon-consent-button,
-.tile.strip::after {
-	position: absolute!important;
-	top: -9999px!important;
-	left: -9999px!important;
-}
-
-/*___ Left/Right/Top/Bottom ___________________________________________________________________*/
 
 selector {
-	left: 0!important;
+	font-size: 21px!important;
 }
 
-.tile.featured .text-wrapper {
-    top: calc(0rem)!important;
+p.text-gray-darker {
+	font-size: 19px!important;
 }
 
-[data-specless-masthead-state="has-not-scrolled-past"][data-specless-masthead-expanded-state="expanded"] {
-    margin-top: 0!important;
+selector {
+	font-size: 17px!important;
 }
 
-/*___ Margins _______________________________________________________________________________*/
+selector {
+	font-size: 15px!important;
+	line-height: 27px!important;
+}
 
-.bottom-line-circ,
-.article-section .post-body .article-body .slicker li,
-.tile,#widgetbox,
-.large-fluid-300-left.column,
-.large-fixed-300-right.column {
+selector {
+	font-size: 14px!important;
+	line-height: 19px!important;
+}
+
+.rich-text {
+    font-size: 1.25rem;
+}
+
+/*___ Remove Items _________________________________________________________________*/
+
+.flex-shrink-0,
+.panel-container,
+.panel-content-container,
+.panel-region,
+.railContainer,
+.zmgad-full-width,
+.zmgad-full-width,
+.zmgad-right-rail,
+[data-specless-format="Ziff Davis: Masthead"],
+ad-viewport,
+body .tile.strip:after
+{
+	left: -9999px!important;
+	position: absolute!important;
+	top: -9999px!important;
+}
+
+/*___ Left/Right/Top/Bottom ________________________________________________________*/
+
+div is {
+    margin-top: -320px!important;
+    top: -2px;
+}
+
+.lg\:col-gap-4 {
+	margin-left: -5px;
+    column-gap: 0rem;
+}
+
+.lg\:pl-12 {
+    padding-left: 0rem;
+}
+
+/*___ Margins ______________________________________________________________________*/
+
+.column,
+.columns,
+.my-2,
+body .tile
+{
 	margin: 12px!important;
 }
 
-Selector {
-	margin: 0 12px!important;
+selector {
+	margin: 3rem!important;
 }
 
-/*___ Paddings ______________________________________________________________________________*/
+/*___ Paddings _____________________________________________________________________*/
 
-.bottom-line-circ,
-.article-section .post-body .article-body .slicker li,
-.tile,#widgetbox,
-.large-fluid-300-left.column,
-.large-fixed-300-right.column {
+.column,
+.columns,
+body .tile
+{
 	padding: 12px!important;
 }
 
@@ -112,43 +180,59 @@ selector {
 	padding: 6px!important;
 }
 
-/*___ Heights _______________________________________________________________________________*/
+/*___ Heights ______________________________________________________________________*/
 
 selector {
-	Max-height: none!important;
+	max-height: none!important;
 }
 
-/*___ Widths ________________________________________________________________________________*/
+selector {
+	height: auto!important;
+}
 
-#widgetbox,.article-section .post-body .article-body,
+/*___ Widths _______________________________________________________________________*/
+
+.container,
+.container-sm,
+.lg\:max-w-8xl,
+.max-w-8xl,
+.rich-text>*,
 .row {
 	max-width: none!important;
 }
 
-.row {
-    width: 98%!important;
+selector {
+	width: auto!important;
 }
 
-
-#main-wrapper .wrapper .small-20.large-fluid-300-left.column {
-    width: 64%!important;
+.container,
+.container-sm,
+.rich-text>*
+{
+	width: 98%!important;
 }
 
-.medium-20.large-fluid-300-left.column {
-    width: 94%!important;
+.medium-20,
+.small-20
+{
+    width: 96%;
 }
 
-body #widgetbox #toprightrail, 
-.large-fixed-300-right.column {
-    width: 33% !important;
+.lineup-card {
+    width: 52%!important;
 }
 
-
-.flex .flex-2, .flex .lb-module {
-    width: calc(49% - 15px)!important;
+body .flex .flex-2, body .flex .lb-module {
+    width: calc(49% - 15px);
 }
 
+.lg\:w-1\/2 {
+    width: 29rem!important;
+}
 
+.py-2.w-full {
+    width: 13rem!important;
+}
 
 
 
@@ -157,6 +241,8 @@ body #widgetbox #toprightrail,
 }
 
 @-moz-document domain("pcmag.com") {
+/*__________________________________________________________________________________*/
+
 a[href],
 td span {
 	color: #0ff!important;
@@ -168,34 +254,31 @@ a[href]:visited {
 	text-shadow: 1px 1px #000!important;
 }
 
-/*________________________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-a[href]:hover span,
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
 input[type="radio"]:checked+label {
 	color: #ff0!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*________________________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-.article-header .deck, .review-head-title .deck, .content .article-header .deck,
-.affiliate-text,
-.slide-caption,
+.bxc.bx-brand-16657 .bx-row-submit-no> *:first-child,
+.bxc.bx-brand-16657 .bx-row-text-default> *:first-child,
+.group:hover .group-hover\:placeholder-gray-darkest::placeholder,
+.text-gray-darkest,
 li,
 p {
 	color: #fff!important;
-	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*__ Khaki _______________________________________________________________________________________________*/
+/*___ Khaki ________________________________________________________________________*/
 
-.author-info span,
-.privacy-banner .message a, .truste-messageColumn a,
+.bxc.bx-brand-16657 .bx-row-text-headline> *:first-child,
 h1,
 h2 {
 	color: #F0E890!important;
@@ -203,12 +286,9 @@ h2 {
 	text-shadow: 1px 1px #000!important;
 }
 
-/*__ Burlywood ___________________________________________________________________________________________*/
+/*___ Burlywood ____________________________________________________________________*/
 
-.rating-list,.reviewProducts .product-price .zdcse span,
-.pcmag-buyitnow-logo,.pros-cons-bl ul li strong,
-.heading h2 a,
-em,i,
+
 h3,
 h4 {
 	color: #e0b880!important;
@@ -216,46 +296,49 @@ h4 {
 	text-shadow: 1px 1px #000!important;
 }
 
-/*__ Sandy Brown _________________________________________________________________________________________*/
-.newsletter-widget strong,.article-section .post-body a.zdcse-buybtn, .review-body a.zdcse-buybtn,
+/*___ Sandy Brown __________________________________________________________________*/
+
+.bxc.bx-campaign-1244272 .bx-row .bx-component-1244272-MjWXvJz> *:first-child,
+.text-gray-darker .font-brand,
+.text-red-base,
 h5,
-h6 {
+h6,
+label {
 	color: #F0A060!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*___ Blue ________________________________________________________________________________________________*/
+/*___ Blue _________________________________________________________________________*/
 
-.slide-caption strong,
-.hide-for-small-only {
+.text-gray-darker .mr-3,
+time {
 	color: #07beff!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*___ Green _______________________________________________________________________________________________*/
+/*___ Green ________________________________________________________________________*/
 
-.bottom-line-circ .product-information .zdcse.zdcse-block.zdcse-buybtn.zdcse-no-paren .price,
-.reviewProducts .product-price .zdcse > strong, .reviewProducts .product-price .zdcse .zdcse-free, .reviewProducts .product-price .zdcse .zdcse-too-low,
-#msrp-value span,.pcmag-buyitnow-price,
-div.pcmag-buyitnow-lowest-price span.pcmag-buyitnow-lowest-price-value {
-	color: #0f0!important;
+
+body .featured-stories .deal-of-day .deal-info .deal-price {
+	color: #07ff24!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*___ Red _________________________________________________________________________________________________*/
+/*___ Red __________________________________________________________________________*/
+
 
 selector {
-	color: #f00!important;
+	color: #ff0707!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
 }
 
-/*________________________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-.a-input-text,
+.p-2,
 input,
 input[type=email],
 input[type=number],
@@ -265,12 +348,12 @@ input[type=tel],
 input[type=text],
 select,
 textarea {
-	background-color: #1d0909!important;
+	background-color: #581d1d!important;
 	border-radius: 22px!important;
 	color: #fff!important;
 }
 
-/*________________________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
 ::selection {
 	background: #ff9!important;
@@ -282,131 +365,172 @@ pre ::selection {
 	color: #fff!important;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f48f8f;
+  opacity: 1; /* Firefox */
+}
+
+/*___ Misc _________________________________________________________________________*/
+
+path {
+    fill: #ff0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 @-moz-document domain("pcmag.com") {
-/*___________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-html, body {
-	background: #000 url(http://image.ibb.co/hYKqvw/noise_background.png)!important;
+body,:root,
+html {
+	background: #000!important;
 	background-attachment: fixed!important;
-	width: 100%!important;
-	height: 100%!important;
 }
 
-/*___ Background Gray __________________________________________________________________________*/
+/*___ Background Gray ______________________________________________________________*/
 
-.commerce-scroll-header,
-header#main-top-nav .trending-nav {
+footer,
+header#main-top-nav
+{
 	background-color: #060505!important;
 }
 
-/*___ Background 0000 __________________________________________________________________________*/
+.bg-gray-darkest,
+header#main-top-nav .trending-nav  {
+    background-color: #0a0909!important;
+}
 
-.article-section .post-body a.zdcse-buybtn, .review-body a.zdcse-buybtn,
-.reviews-div:not(.optimizely) .review-blender .pcmag-buyitnow table.pcmag-buyitnow-table tr td,
-.article-section .post-body .article-body .slideshow-container .slide,
-.article-section .post-body .article-body .content .slide-list-view,
-.article-section .post-body .article-body .content,
-.tile.featured .text-wrapper,.card,#main-wrapper > .wrapper,
-header#main-top-nav nav .global-search-wrapper .fa.fa-search,
-header#main-top-nav nav .social,
-header#main-top-nav nav .main-nav {
+/*___ Background 0000 ______________________________________________________________*/
+
+.bg-white,
+.card,
+body .tile.featured .text-wrapper,
+header#main-top-nav nav .main-nav,
+header#main-top-nav nav .social
+{
 	background: rgba(0, 0, 0, 0)!important;
 }
 
-/*___ Background-color 0000 ______________________________________________________________________*/
+/*___ Background-color 0000 ________________________________________________________*/
 
-.reviewProducts ul li .product-wrapper, .reviewProducts .products li .product-wrapper,
-.author-container .author-stories ul li,
-.author-container {
+.bg-gray-lightest,
+.bg-white.left-0,
+.focus\:bg-white:focus,
+.group:hover .lg\:group-hover\:bg-white,
+.p-2:hover,
+.p-4:hover
+{
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
-/*___ Highlight Background ________________________________________________________________________*/
+/*___ Highlight Background _________________________________________________________*/
 
 selector:hover {
 	border-left-color: #434343!important;
 	background: linear-gradient(to right, #383838, #0000)!important;
 }
 
-/*___ Faded Background bottom (Usually expand paragraph) _____________________________________*/
+/*__________________________________________________________________________________*/
 
-selector {
-    background: linear-gradient(to bottom,rgba(255,255,255,0),rgba(120, 224, 240, 0.13))!important;
-}
-
-/*______________________________________________________________________________________________*/
-
-selector {
-	background-image: none!important;
-}
-
-/*______________________________________________________________________________________________*/
-
-pre,
-code {
+code,
+pre {
 	background: #111!important;
 	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
+	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
 }
 
-/*__ Blue ________________________________________________________________________________________*/
+code {
+    background: #FDFCE4!important;
+    border: 1px solid #eec!important;
+    font-size: 110%!important;
+    padding: 3px 8px!important;
+    white-space: pre-wrap!important;
+}
 
-.toprightrail #newsletter-signup, #toprightrail #newsletter-signup, #widgetbox #newsletter-signup,
-.author-container .author-stories .author-fullbio a,
-.link-button {
+/*___ Highlight Background _________________________________________________________*/
+
+selector:hover {
+	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+/*__ Blue __________________________________________________________________________*/
+
+.hollow-button,
+body .link-button {
+	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
-	background-image: linear-gradient(to bottom right, #05497F, #000)!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
-.toprightrail #newsletter-signup, #toprightrail #newsletter-signup, #widgetbox #newsletter-signup:hover,
-.author-container .author-stories .author-fullbio a:hover,
-.link-button:hover {
-	background-image: linear-gradient(to bottom right, #06508F, #000)!important;
+.hollow-button:hover,
+body .link-button:hover {
+	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
-.toprightrail #newsletter-signup, #toprightrail #newsletter-signup, #widgetbox #newsletter-signup:active,
-.author-container .author-stories .author-fullbio a:active,
-.link-button:active {
+.hollow-button:active,
+body .link-button:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-/*__ Red ________________________________________________________________________________________*/
+/*__ Red __________________________________________________________________________*/
 
-a.zdcse-buybtn::after, body tr td.pcmag-buyitnow-buybutton a::after {
+.bxc.bx-base .bx-row-submit .bx-button,
+.red-button {
+	background-image: linear-gradient(to bottom right, #f00, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
-	background-image: linear-gradient(to bottom right, #7f0505, #000)!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
-a.zdcse-buybtn::after:hover, body tr td.pcmag-buyitnow-buybutton a::after:hover {
-	background-image: linear-gradient(to bottom right, #8f1616, #000)!important;
+.bxc.bx-base .bx-row-submit .bx-button:hover,
+.red-button:hover {
+	background-image: linear-gradient(to bottom right, #f11, #000)!important;
 	color: #ff0!important;
 }
 
-a.zdcse-buybtn::after:active, body tr td.pcmag-buyitnow-buybutton a::after:active {
+.bxc.bx-base .bx-row-submit .bx-button:active,
+.red-button:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-/*__ Yellow ________________________________________________________________________________________*/
+/*__ Orange ________________________________________________________________________*/
 
-Selector {
-	color: #fff!important;
+selector {
+	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
-	background-image: linear-gradient(to bottom right, #956101, #000)!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
 }
 
 selector:hover {
-	background-image: linear-gradient(to bottom right, #a67212, #000)!important;
+	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
 	color: #ff0!important;
 }
 
@@ -414,215 +538,178 @@ selector:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-/*__ Light Blue _________________________________________________________________________________________*/
+/*___ Green ________________________________________________________________________*/
 
-selector {
-	color: #fff!important;
-	border-radius: 10px!important;
-	border: none!important;
-	background-image: linear-gradient(to bottom right, #4d87bc, #000)!important;
-	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-}
-
-selector:hover {
-	background-image: linear-gradient(to bottom right, #5e98cd, #000)!important;
-	color: #ff0!important;
-}
-
-selector:active {
-	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
-}
-
-/*__ Green _________________________________________________________________________________________*/
-
-selector {
-	color: #fff!important;
-	border-radius: 10px!important;
-	border: none!important;
+.buy-button {
 	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
 }
 
-selector:hover {
+.buy-button:hover {
 	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
 	color: #ff0!important;
 }
 
-selector:active {
+.buy-button:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-/*__ Plain Black ______________________________________________________________________________________*/
+/*___ Plain Black __________________________________________________________________*/
 
-
-.large-fluid-300-left.column,#widgetbox,
-.large-fixed-300-right.column {
+body .tile {
 	background-color: #000!important;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.large-fluid-300-left.column:hover,#widgetbox:hover,
-.large-fixed-300-right.column:hover {
+body .tile:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*__ Plain ___________________________________________________________________________________________*/
+/*___ Plain ________________________________________________________________________*/
 
-.bottom-line-circ,
-.reviewProducts,.slick-slide,
-.article-section .post-body .article-body .slicker li,
-.tile {
-	background-color: #111!important;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+
+.bxc.bx-campaign-1244272.bx-active-step-1 .bx-creative,
+.bg-white.leading-tight,
+.lg\:shadow,
+.column,
+.columns,
+.my-2
+{
+	background-color: #151212!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.bottom-line-circ:hover,
-.reviewProducts:hover,.slick-slide:hover,
-.article-section .post-body .article-body .slicker li:hover,
-.tile:hover {
+.bxc.bx-campaign-1244272.bx-active-step-1 .bx-creative:hover,
+.bg-white.leading-tight:hover,
+.column:hover,
+.columns:hover,
+.my-2:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*__ Noise ___________________________________________________________________________________________*/
+/*___ Red Gradient _________________________________________________________________*/
 
-footer,
-header#main-top-nav {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-	background-repeat: repeat-x, repeat!important;
-	background-size: 100px 15px, 140px 140px!important;
-}
-
-footer:hover,
-header#main-top-nav:hover {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-}
-
-/*__ Red Gradient ______________________________________________________________________________________*/
-
-.reviews-content-left .reviews-tabs ul.rev-tabs li a:hover, .reviews-content-left .reviews-tabs ul.rev-tabs li a.active,
-.review-ratings .editors-choice-text,#widgetbox .affiliate-text,
-.privacy-banner
- {
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
+selector {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
-}
-
-/*__ Blue Gradient ______________________________________________________________________________________*/
-
-selector {
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
+}
+
+/*__ Blue Gradient _________________________________________________________________*/
+
+selector {
 	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
-}
-
-/*__ Green Gradient _____________________________________________________________________________________*/
-
-selector {
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
+}
+
+/*__ Green Gradient ________________________________________________________________*/
+
+selector {
 	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
-	text-shadow: 1px 1px #555!important;
-}
-
-/*__ Yellow Gradient _____________________________________________________________________________________*/
-
-selector {
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
-	background: linear-gradient(to bottom, #ff9 0%, #000 100%)!important;
 	text-shadow: 1px 1px #555!important;
 }
 
-/*__ Shadow ____________________________________________________________________________________________*/
+/*__ Yellow Gradient _______________________________________________________________*/
 
-Selector {
-	box-shadow: 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+selector {
+	background: linear-gradient(to bottom, #9d9d5d 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
 }
 
-/*__ Red Animation __________________________________________________________________________________*/
+/*__ Orange Gradient _______________________________________________________________*/
 
-.commerce-scroll-header .progress-bar {
-  background: linear-gradient(90deg, #E20309, #000, #E20309)!important;
-background-size: 400% 400%!important;
-
--webkit-animation: AnimationName 30s ease infinite!important;
--moz-animation: AnimationName 30s ease infinite!important;
-animation: AnimationName 10s ease infinite!important;
+selector {
+	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+
+
+
+
+
+
 
 }
 
 @-moz-document domain("pcmag.com") {
-/*___________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-.flex .flex-3,
-.tile {
+.lineup-card,
+.my-2,
+.py-2,
+.w-full.py-4,
+body .featured-stories .tile.strip
+{
 	filter: brightness(75%)!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-.flex .flex-3:hover,
-.tile:hover {
+.lineup-card:hover,
+.my-2:hover,
+.py-2:hover,
+.w-full.py-4:hover,
+body .featured-stories .tile.strip:hover
+{
 	filter: brightness(100%)!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
 img {
 	border-radius: 22px!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*__________________________________________________________________________________*/
 
-selector,
-selector:first-child {
-	border-top-left-radius: 22px!important;
-	border-top-right-radius: 22px!important;
+img {
+	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
-selector,
-selector:last-child {
-	border-bottom-left-radius: 22px!important;
-	border-bottom-right-radius: 22px!important;
+/*__________________________________________________________________________________*/
+
+selector {
+	opacity: .8!important;
 }
 
-/*___________________________________________________________________________________________*/
-
-p,
-li,
-tr {
-	filter: brightness(68%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
+selector:hover {
+	opacity: 1!important;
 }
 
-.reviews-content-left .reviews-tabs ul.rev-tabs li a.active,
-p:hover,
-li:hover,
-tr:hover {
-	filter: brightness(100%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
+
+@-moz-document domain("pcmag.com") {
+
+
+/* Search _______________________________________________________________*/
+
+[data-icon="search"] {
+	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[data-icon="search"] {
+    background-size: 19px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
 
 }

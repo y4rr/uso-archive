@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           V LIVE Dark Theme
+@name           VLIVE Dark Theme
 @namespace      USO Archive
 @author         aqmx
 @description    `Dark theme for the V LIVE website.I've also made a script that <a href="https://greasyfork.org/en/scripts/379342-v-live-video-rotation">lets you rotate the video</a>`
-@version        2020117.9.35
+@version        2020118.11.17
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -697,10 +697,12 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 [class^="emotion_icon--"] [class^="count--"] {
 	color: var(--dark-theme-info-color);
 }
-[class^="emotion_icon--"] svg {
+[class^="emotion_icon--"] svg,
+[class^="bookmark_button--"] svg {
 	filter: brightness(340%);
 }
-[class^="reaction_item--"]:hover {
+[class^="reaction_item--"]:hover,
+[class^="bookmark_button--"]:hover {
 	background-color: var(--dark-theme-button-background-hover);
 }
 

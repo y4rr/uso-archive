@@ -1,17 +1,22 @@
 /* ==UserStyle==
-@name           PSD E-Desk (Dark Mode Theme)
+@name           PSD E-Desk (Customizable Theme)
 @namespace      USO Archive
 @author         Aaron Acosta
-@description    `This is the Dark Mode (Beta) for the PSD E-Desk <a href="https://psdqatar.com" target="blank" style="text-decoration: none; color: yellow;">Click Me</a> < click this link only if you are a user of this site.`
-@version        20201019.8.47
+@description    `This is the Customizable Theme (Beta) for the PSD E-Desk <a href="https://psdqatar.com" target="blank" style="text-decoration: none; color: yellow;">Click Me</a> < click this link only if you are a user of this site.`
+@version        2020118.7.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
+@advanced color bgcolor "Background Color" #3F3F3F
+@advanced color nav "Header & Navbar Color" #202020
+@advanced color side "Side Bar Color" #353938
+@advanced color txtcolor "Text Color" #FFFFFF
+
 ==/UserStyle== */
 @-moz-document domain(psdqatar.com) {
   /*Created By: Aaron*/
 html{
 	scroll-behavior: smooth;
-}
+} 
 ::selection {
   background: #a8fcff; /* WebKit/Blink Browsers */
 }
@@ -42,15 +47,15 @@ Within the selection s * {
 }
 
 body {
-	background: #3F3F3F;
+	background-color: /*[[bgcolor]]*/ !important;
 }
 
 .head {
-	background: rgb(32, 32, 32);
+	background-color: /*[[nav]]*/ !important;
 }
 
 .menu {
-	background: rgb(32, 32, 32);
+	background-color: /*[[nav]]*/ !important;
 }
 
 .info img {
@@ -58,11 +63,11 @@ body {
 }
 
 .myinfohead{
-	background:rgb(31 31 31);
+	background-color: /*[[nav]]*/ !important;
 }
 
 .myinfo{
-	background:#353938;	
+	background-color: /*[[side]]*/ !important;
 }
 
 #adv a:hover{
@@ -70,7 +75,7 @@ body {
 }
 
 #uname a {
-	color: rgb(255 255 255);
+	color: /*[[txtcolor]]*/ !important;
 }
   
 #uname a:hover{

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201024.7.52
+@version        2020118.9.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com") {
- ::-webkit-scrollbar {
+@-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain(".amazon.ca") {
+::-webkit-scrollbar {
  	/* Width */
  	width: 1.2em!important;
  }
@@ -63,7 +63,6 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
-
 }
 
 @-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com") {
@@ -216,16 +215,6 @@ img.acs-shwcs-image
 {
 	mix-blend-mode: normal!important;
 }
-
-._1uVcNB ._3nQ0yZ ._2BTtIo {
-    position: relative;
-    display: block;
-    padding: 24px 12px;
-    margin-top: -48px;
-    visibility: hidden;
-    background: linear-gradient(rgba(27,37,48,0),#1b2530 48px);
-}
-
 
 ._1uVcNB:hover ._3nQ0yZ ._2BTtIo
 {
@@ -957,6 +946,8 @@ input[type="radio"]:checked + label
 .playlistDetailsListItem .title,
 
 .songList .titleCell,
+.style__button__1MgdH.style__beacon__2ECwE.style__secondary__39EKa .style__text__2xIA2, .style__button__1MgdH.style__beacon__2ECwE.style__shoppingCart__2nJlh .style__text__2xIA2,
+.style__itemInfo__2OAi_ .style__featureBullets__1BoLb ul>li>span,
 .style__navigation__FMWJE .style__navItem__3rEc7 button,
 
 .titleCell,
@@ -1232,6 +1223,8 @@ time
 .olp-text-box > .a-color-base,
 .order-info .a-span2 .a-color-secondary.value,
 
+.style__itemInfo__2OAi_ .style__price__t2tde .style__buyPrice__huLLk,
+
 [data-test="price"],
 [value="Save for later"],
 
@@ -1494,6 +1487,8 @@ ul.a-tabs
 .selectContainer .selectDropdownOptions,
 .stores-container,
 .stores-page,
+.style__itemOuter__2dxew,
+.style__showcase__1__I9,
 .style__navBar__2NVns > .style__navList__Igck2 > .style__navItem__3rEc7,
 .style__navigation__FMWJE .style__navItem__3rEc7 button,
 .style__row__3wS8d,
@@ -1810,7 +1805,9 @@ a.iss-banner-ad span:active
 
 ._1ovr-S._15Ikr8.JjErWR._2X_Irl,
 
-.a-button-oneclick
+.a-button-oneclick,
+
+.style__button__1MgdH.style__beacon__2ECwE.style__secondary__39EKa, .style__button__1MgdH.style__beacon__2ECwE.style__shoppingCart__2nJlh
 {
 	background-image: linear-gradient(to bottom right, #ed9220, #000)!important;
 	border-radius: 10px!important;
@@ -1825,7 +1822,9 @@ a.iss-banner-ad span:active
 
 ._1ovr-S._15Ikr8.JjErWR._2X_Irl:hover,
 
-.a-button-oneclick:hover
+.a-button-oneclick:hover,
+
+.style__button__1MgdH.style__beacon__2ECwE.style__secondary__39EKa, .style__button__1MgdH.style__beacon__2ECwE.style__shoppingCart__2nJlh:hover
 {
 	background-image: linear-gradient(to bottom right, #fea331, #000)!important;
 	color: #ff0!important;
@@ -1837,7 +1836,9 @@ a.iss-banner-ad span:active
 
 ._1ovr-S._15Ikr8.JjErWR._2X_Irl:active,
 
-.a-button-oneclick:active
+.a-button-oneclick:active,
+
+.style__button__1MgdH.style__beacon__2ECwE.style__secondary__39EKa, .style__button__1MgdH.style__beacon__2ECwE.style__shoppingCart__2nJlh:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -3971,7 +3972,6 @@ body div .snwmxQ.snwmxQ.snwmxQ.bm0VoL.bm0VoL:before,
     padding-left: 22px!important;
     width: 10px!important;
 }
-
 }
 
 @-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com") {

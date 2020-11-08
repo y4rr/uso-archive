@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020117.18.41
+@version        2020118.1.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -2178,13 +2178,15 @@ html
         var(--RCBackground) fixed !important;
 }
 
-html[class*="res-"],
-html[class*="res-nightmode"] [class*="res-"],
 html[class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -2193,16 +2195,29 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
         var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
@@ -2246,13 +2261,15 @@ html
         var(--RCBackground) fixed !important;
 }
 
-html[class*="res-"],
-html[class*="res-nightmode"] [class*="res-"],
 html[class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
 html[class*="res-v"],
-html[class*="accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
 html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
 {
     background:
 
@@ -2261,16 +2278,29 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
         var(--RCBackground) fixed !important;
 }
 
-body[class*="res-d2x"],body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
 body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
 body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
 body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
 #siteTable,
+#siteTable.sitetable.linklisting,
 body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
 body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 body[class*="res-nightmode"][class*="res-v"][class*="res-"],
 body[class*="res-nightmode"][class*="res-v"] #siteTable,
 body[class*="res-nightmode"][class*="res-v"] .content,
@@ -2849,7 +2879,6 @@ a ._12FoOEddL7j_RgMQN0SNeU
 /*With Transparent Background*/
 
 /*ul li a,*/
-div#sr-header-area a,
 .interstitial .buttons .c-btn,
 .side .usertext .md h6 strong a
 {
@@ -7624,8 +7653,6 @@ body > table tbody img
 
 /*div[data-slot],*/
 /* Hide subreddits top bar */
-.sr-list > .separator,
-.sr-list > .separator + .sr-bar,
 /*#sr-more-link,*/
 /*/*[[sr-top-bar]]*/
 .search-expando.collapsed:before,

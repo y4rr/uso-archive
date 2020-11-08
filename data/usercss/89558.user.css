@@ -2,8 +2,8 @@
 @name           Bing Dark  by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
-@description    `Darkened and other effects`
-@version        20201016.6.0
+@description    `Dark`
+@version        2020118.10.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,9 +72,11 @@
 	text-decoration: none!important;
 }
 
+.ans_nws .news_fc_hint,
 .b_scopebar > ul li,
 .b_traits,
 .sb_count,
+.tw_label,
 div.me_sidenav a,
 div.me_sidenav a:visited
 {
@@ -251,7 +253,7 @@ body
 }
 
 .nwsq_ci_meta {
-	bottom: -27px;
+    bottom: -13px;
 }
 
 .nwsq_ci_q {
@@ -263,7 +265,7 @@ body
 	margin-top: 52px;
 }
 
-[aria-live="polite"] {
+[aria-live="polite"]:not(#sw_as) {
     top: 31rem!important;
 }
 
@@ -362,6 +364,7 @@ div.me_sidenav a:visited {
 }
 
 #b_tween,
+#b_context .b_rrsr>.b_vList>li,
 .b_underSearchbox,
 [style="background: rgb(0, 0, 255);"]
 {
@@ -412,6 +415,10 @@ div.me_sidenav a:visited {
 .mic_cont.partner .b_icon
 {
 	height: 53px;
+}
+
+.inline_tile.multi_ln_cap .tit {
+    height: 34px;
 }
 
 .idp_ham
@@ -519,7 +526,6 @@ pp.overlay-container,
 {
 	width: 26px;
 }
-
 }
 
 @-moz-document domain("bing.com") {
@@ -615,6 +621,7 @@ input[type="radio"]:checked + label
 .newsitem .snippet,
 .nf .menu ul li a,
 .nwsq_ci_q,
+.opinion_content .na_t,
 .overlay-taskpane .sb_meta,.overlay-taskpane,
 .qna-aggr .rwrl_sec,
 .qnaItem .b_module_expansion .b_expansion_text,
@@ -696,6 +703,7 @@ h4
 
 #b_context .b_footnote,
 #detailPage.mob .relProd .captionContainer .offer_list a,
+.ans_nws .news_fc_hint,
 .b_footnote,
 .dc_st,
 .epv_subTitle,
@@ -703,6 +711,7 @@ h4
 .ftrSSL,
 .mc_vtvc_meta_block_area a,.mc_vtvc_meta_block_area,
 .relProd .captionContainer .attr,
+.tw_label,
 cite .brdcrm_nm,
 cite a .brdcrm_nm,
 h5,
@@ -970,8 +979,9 @@ html
 
 /*___ Background 0000 ______________________________________________________________*/
 
-#rfPaneIn .touchQuery .carousel .nav_left>div,#rfPaneIn .touchQuery .carousel .nav_right>div,
 #b_pole .ent-dtab-content > div:first-child,#b_pole .ent-dtab-content,
+#mfa_root .mfa_btn,
+#rfPaneIn .touchQuery .carousel .nav_left>div,#rfPaneIn .touchQuery .carousel .nav_right>div,
 #tta_tgtsl,
 .MicrosoftMap .cardContent,.MicrosoftMap .cardFace,
 .carousel,
@@ -1223,6 +1233,7 @@ a.cbtn:active
 #tt_translatorHome,
 #vm_res,
 #vvnb,
+.b_rrsr,
 .bnp_fly_hp,
 .bop_tile,
 .mc_caro .hp_trivia_outer .hp_trivia_inner,
@@ -1245,6 +1256,7 @@ a.cbtn:active
 #tt_translatorHome:hover,
 #vm_res:hover,
 #vvnb:hover,
+.b_rrsr:hover,
 .bnp_fly_hp:hover,
 .bop_tile:hover,
 .mc_caro .hp_trivia_outer .hp_trivia_inner:hover,
@@ -1371,6 +1383,7 @@ a.cbtn:active
 
 /*___ Highlight Background _________________________________________________________*/
 
+#b_context .b_rrsr>.b_vList>li a:hover,
 #sw_as .sa_hv,
 #tta_alttbl tbody tr:not(:first-child):hover,
 .MicrosoftMap .Light #transientLens .transientLensActions a.directionsAddToRoute.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.nearby.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.saveas.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.savefavorite.selected,.MicrosoftMap a.dropdownEntry:hover,
@@ -2572,6 +2585,8 @@ input[type="checkbox"]:checked {
     content: "";
 }
 
+[src*="data:image/png;base64,iVBORw0KGgo"],
+#mfa_root .fba_sbicn,
 #detailPage #detailheader .sch .icon:before,
 #searchIconInner,
 .MicrosoftMap .bm_searchBoxNavLeft > div > ul li a.searchIcon,
@@ -2589,6 +2604,7 @@ input[type="checkbox"]:checked {
 	box-sizing: border-box;
 }
 
+#mfa_root .fba_sbicn,
 .b_scopebar .scp_web_active
 {
 	background-size: 29px!important;
@@ -2633,6 +2649,7 @@ input[type="checkbox"]:checked {
 	padding-left: 30px!important;
 }
 
+[src*="data:image/png;base64,iVBORw0KGgo"],
 [src="/rs/3R/ew/ic/e56afd72/f85cb30c.svg"]
 {
 	background-size: 17px!important;

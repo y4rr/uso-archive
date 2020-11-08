@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201026.1.24
+@version        2020118.9.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -132,6 +132,20 @@ selector
 .rec_details .rec-title
  {
 	line-height: 29px!important;
+}
+
+/*___ Remove Items _________________________________________________________________*/
+
+#top_center_wrapper,
+#top_rhs_wrapper,
+#top_ad_wrapper,
+.ab_zergnet .widget_header .oneline h4,
+.cornerstone_slot,
+.promoted-provider
+{
+	left: -9999px!important;
+	position: absolute!important;
+	top: -9999px!important;
 }
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
@@ -397,6 +411,7 @@ html {
 /*___ Background Gray ______________________________________________________________*/
 
 ._18p5u4ia1_7ZElMhXYLfre,
+.aux-content-widget-2,
 .listo .header .nav,
 .recently-viewed,
 h4.li_group
@@ -405,9 +420,9 @@ h4.li_group
 	background-color: #060505!important;
 }
 
-.navigation-widget .nav-buttons,
 #title-episode-widget h4,
 .ipl-zebra-list .ipl-zebra-list__item:nth-of-type(1n),
+.navigation-widget .nav-buttons,
 table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-title
  {
     background-color: #0a0909!important;
@@ -415,7 +430,6 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 
 /*___ Background 0000 ______________________________________________________________*/
 
-.pagecontent,
 #nav-search-form,
 #wrapper,
 ._19kygDgP4Og4wL_TIXtDmm,
@@ -423,17 +437,18 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 .aux-content-widget-2,
 .aux-content-widget-3,
 .aux-content-widget-4,
-.ipc-lockup-overlay .ipc-lockup-overlay__gradient--radial,
 .ipc-icon-border-button:after,
 .ipc-icon-border-button:before,
 .ipc-icon-button:after,
 .ipc-icon-button:before,
 .ipc-icon-link:after,
 .ipc-icon-link:before,
+.ipc-lockup-overlay .ipc-lockup-overlay__gradient--radial,
 .ipc-media--baseAlt,
 .ipc-page-wrapper--baseAlt,
 .ipc-tabs--on-baseAlt .ipc-tab:hover,
 .nav-search__search-submit,
+.pagecontent,
 .rec_details .rec-jaw-lower,
 .rec_details .rec-jaw-upper
  {
@@ -442,7 +457,6 @@ table#name-overview-widget-layout td#overview-middle div.pro-list .pro-list-titl
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-div.ab_hero,
 #filmography .head,
 #filmography .head:hover,
 #pagecontent,
@@ -458,7 +472,8 @@ div.ab_hero,
 .odd,
 .promoted-provider,
 .recently-viewed .item,
-div#content-2-wide
+div#content-2-wide,
+div.ab_hero
  {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
@@ -575,6 +590,7 @@ div#content-2-wide
 #content-2-wide #sidebar,
 #prometer,
 .article,
+.aux-content-widget-3,
 .heroic-overview,
 .zergnet-widget-81924 .zergentity
  {
@@ -588,6 +604,7 @@ div#content-2-wide
 #content-2-wide #sidebar:hover,
 #prometer:hover,
 .article:hover,
+.aux-content-widget-3:hover,
 .heroic-overview:hover,
 .zergnet-widget-81924 .zergentity:hover
  {
@@ -633,7 +650,6 @@ ul.quicklinks li.subnav_selected
  {
 	background: linear-gradient(to right, #18191a, #0000)!important;
 }
-
 }
 
 @-moz-document domain("imdb.com"), domain("m.media-amazon.com") {

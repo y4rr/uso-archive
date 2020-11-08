@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--修正済み不具合--・ニコニ広告ページがおかしい→ニコニ広告ページのダークテーマ化で対処--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2020115.8.59
+@version        2020118.4.43
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -188,6 +188,12 @@ body{
     border: solid 2px #5a5a5a;
 }
 
+/* コメント右クリック時メニュー */
+.___menu-item___XRf5G{
+    background: #424242 !important;
+}
+.___menu___2E9GD+.___menu___2E9GD:before{background-color:#000;}
+.___comment-context-menu___1nzl_{background-color:#202020 !important}
 
 /* フォローしてるチャンネルがどうたらこうたら */
 .___alert-dialog___ZUyHx{
