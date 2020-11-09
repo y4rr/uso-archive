@@ -2,8 +2,8 @@
 @name           Redesign VK Dark Theme - Telegram Style
 @namespace      USO Archive
 @author         Maksim Alyabyshev
-@description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.`
-@version        2020117.15.28
+@description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.Переключиться на новый дизайн ВК нужно через меню ПОЛЬЗОВАТЕЛЬ -> НАСТРОЙКИ -> ОБЩЕЕ, пункт "Обновлённый дизайн"`
+@version        2020119.7.11
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2778,5 +2778,22 @@ body.new_header_design .top_audio_player_title {
 [dir] .Select--secondary.Select--disabled .Select__control {
     background-color: #242F3D;
 	border-color: #314154;
+}
+[dir] .Select--fancy .Select__option--selected {
+    background-color: #16202C;
+}
+[dir] .Select--fancy .Select__option:hover {
+    background-color: #242F3D;
+}
+.page_group_desc {
+    color: #cccccc80;
+}
+[dir] .PageGroupMenu___marketBadgeNew.PageGroupMenu___marketBadgeNew--show {
+    background-color: #F05C44;
+	color: var(--text-white-color);
+}
+[dir] .Alert.error {
+/*     background-color: #ffd6cc; */
+	color: #F66;
 }
 }

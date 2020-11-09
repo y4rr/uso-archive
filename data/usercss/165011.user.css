@@ -2,8 +2,8 @@
 @name           2ch Reborn
 @namespace      USO Archive
 @author         Anonach
-@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/ggqxwAKb`
-@version        2020118.18.52
+@description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
+@version        2020119.9.34
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -126,7 +126,9 @@ thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.15);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 thm-scheme0 "Белая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),100%,.2);
 --theme_scroll: hsl(var(--clr),var(--clr2),70%);
 --theme_scrollhover: hsl(var(--clr),var(--clr2),65%);
@@ -182,7 +184,9 @@ thm-scheme0 "Белая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),100
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.15);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 thm-scheme2 "Серая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),83%,.2);
 --theme_scroll: hsl(var(--clr),var(--clr2),70%);
 --theme_scrollhover: hsl(var(--clr),var(--clr2),65%);
@@ -238,7 +242,9 @@ thm-scheme2 "Серая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),83%
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.15);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.25);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 
 }
 @advanced dropdown ng-link-color "Цвет ночной ссылки" {
@@ -361,7 +367,9 @@ ng-thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.25);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 ng-thm-scheme0 "Темнота" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),0%,.2);
 --theme_scroll: hsl(var(--clr),var(--clr2),45%);
 --theme_scrollhover: hsl(var(--clr),var(--clr2),50%);
@@ -417,7 +425,9 @@ ng-thm-scheme0 "Темнота" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--cl
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.25);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 ng-thm-scheme2 "Сумрак" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),25%,.2);
 --theme_scroll: hsl(var(--clr),var(--clr2),55%);
 --theme_scrollhover: hsl(var(--clr),var(--clr2),50%);
@@ -473,7 +483,9 @@ ng-thm-scheme2 "Сумрак" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
 --theme_shadow3: hsl(var(--clr),var(--clr2),2%,.25);
---theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35); EOT;
+--theme_shadow4: hsl(var(--clr),var(--clr2),2%,.35);
+--theme_blockbg: var(--theme_default_postbg);
+--theme_border: var(--theme_default_border); EOT;
 
 }
 @advanced dropdown font "Шрифт" {
@@ -1222,7 +1234,7 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 .reply {background: var(--theme_default_postbg); border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow);}
 
 /* Passcode kupi - Abu pomogi */
-/*.header {color: var(--theme_default_link);}*/
+.header {padding: 10px 0 5px 0; margin-bottom: 0;}
 
 #fixed {background-color: var(--theme_default_postbg); border-top: 1px solid var(--theme_default_border); border-bottom: 1px solid var(--theme_default_border); box-shadow: 0 1px 3px var(--theme_shadow);}
 .amenu {font-family: inherit !important;}
@@ -1238,7 +1250,18 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 .sticker {scrollbar-color: var(--theme_scroll) transparent; scrollbar-width: thin;}
 
 /* ===== Catalog ===== */
-.logo {font-family: unset;}
+.box-header {font-family: unset; font-size: 1em;}
+.pagetitle {color: var(--theme_default_text);}
+
+.linktoboard {display: inline-block; float: unset; padding-top: 0; margin-right: 8px; vertical-align: -2px;}
+.linktoboard a {color: var(--theme_default_alttext); font-size: 0;}
+.linktoboard a:hover {color: var(--theme_default_link);}
+.linktoboard a::before {content: "arrow_back"; font: 24px/1 'Material Icons'; padding: 2px; margin: -2px; vertical-align: -6px;}
+
+.ctlg__img img {border-radius: 3px; height: auto; width: auto;}
+.ctlg__meta {background-color: transparent; font-family: unset;}
+.orange {color: var(--theme_default_link);}
+/*.logo {font-family: unset;}
 
 .centered span[style="float:left"] a {color: var(--theme_default_alttext); font-size: 0;}
 .centered span[style="float:left"] a:hover {color: var(--theme_default_link);}
@@ -1246,7 +1269,7 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 
 .thread_wrap {border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin: 5px;}
 .thread_wrap.expandble:hover .cthread {border-radius: 3px; box-shadow:  0 0 0 1px var(--theme_default_border);}
-.thumb {border-radius: 3px; box-shadow: none; max-width: 228px; height: auto;}
+.thumb {border-radius: 3px; box-shadow: none; max-width: 228px; height: auto;}*/
 
 /* ===== Page ===== */
 .warningcover {background-color: var(--theme_default_glassbg2); backdrop-filter: blur(10px); opacity: 1;}
@@ -1320,8 +1343,8 @@ select:focus {background: var(--theme_default_altbtnbghover); border-color: var(
 
 .postform__raw {margin: 3px 0;}
 textarea {min-height: 50px; max-height: 1000px; scrollbar-color: var(--theme_scroll) transparent; scrollbar-width: thin;}
-input[type="text"], input[type="password"], textarea, .input {background: var(--theme_default_altbtnbg); border: 1px solid var(--theme_default_btnborder); border-radius: 3px; box-shadow: none; color: var(--theme_default_inputtext); padding: 4px 8px; transition: background .1s, border .1s; outline: none;}
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus, .input:focus {background: var(--theme_default_altbtnbghover); border-color: var(--theme_default_altborder);}
+input[type="text"], input[type="email"], input[type="password"], textarea, .input {background: var(--theme_default_altbtnbg); border: 1px solid var(--theme_default_btnborder); border-radius: 3px; box-shadow: none; color: var(--theme_default_inputtext); padding: 4px 8px; transition: background .1s, border .1s; outline: none;}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, .input:focus {background: var(--theme_default_altbtnbghover); border-color: var(--theme_default_altborder);}
 input[type="text"]::placeholder, input[type="password"]::placeholder, textarea::placeholder {color: var(--theme_default_alttext2);}
 .postform__len {pointer-events: none;}
 .postform__input_type_m {margin-right: 3px;}

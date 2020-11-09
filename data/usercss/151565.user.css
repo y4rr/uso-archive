@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         anon-anon
 @description    `Допиленный тёмный стиль «Tomorrow2ch (support Makaba)» для 2ch.hk.Для корректной работы в настройках должен стоять Makaba.Для настройки используйте кнопку <strong>Customize Settings</strong>.`
-@version        2019107.14.39
+@version        2020119.4.0
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown width "Расположение постов" {
@@ -342,7 +342,7 @@ select {
     -moz-appearance: none;
     -moz-box-sizing: content-box;
     text-indent: 0.01px !important;
-    text-overflow: "" !important;
+   
     background-color: #282A2E !important;
     border-radius: 0px !important;
     border: 1px solid #111111 !important;
@@ -509,7 +509,7 @@ a:hover{
     background: #f58500 !important;	
     top: 2px;}
 .btn-3:before {
-    position: absolute;	
+    position: relative;	
     height: 100%;	
     left: 1;	
     top: 0;	
@@ -683,6 +683,59 @@ div[class="post-wrapper new-posts-marker"] {
 .pop-stats {
     -size: 1em !important;
 }
+:root {
+    --theme_text: #333;
+    --theme_bg: #282a2e;
+    --theme_blockbg: #ddd0;
+    --theme_inputbg: #282a2e;
+    --theme_border: #282a2e;
+    --theme_inputtext: #333;
+    --theme_inputborder: #282a2e;
+    --theme_shadow: #282a2e;
+}
+.ctlg__thread {
+    
+    border: 1px solid #282a2e;
+    background-color: #282a2e;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.ctlg__thread_abs {
+    
+    border: 1px solid #282a2e;
+    background-color: #282a2e;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ctlg__meta {
+    background-color: #1d1f21;
+}
+.box-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.0em;
+    font-family: 'PT Sans', sans-serif;
+}
+.wrapper-gallery {
+    justify-content: center;
+}
+.btn-default {
+    color: #c5c8c6;
+    background-color: #282a2e;
+    border-color: #111111;  
+}
+.btn-default:hover, .btn-default:focus {
+    background-color: #777;
+    background-position: 0 -15px;
+    
+}
+.panel-default {
+    border-color: #282a2e;
+}
+.panel {
+    background-color: #282a2e;
+}
 .btn-success {
     text-decoration: none;
     background: #5cb85c !important;
@@ -711,22 +764,6 @@ div[class="post-wrapper new-posts-marker"] {
     background-image: linear-gradient(to bottom, #282a2e 0, #1d1f21 100%);
     background-repeat: inherit;
     border-color: #111111;
-}
-.btn-default {
-    color: #c5c8c6;
-    background-color: #282a2e;
-    background-image: linear-gradient(to bottom, #282a2e 0, #1d1f21 100%);
-    border-color: #111111;  
-}
-.note-editor.note-frame .note-editing-area .note-editable {
-    padding: 10px;
-    overflow: auto;
-    color: #c5c8c6;
-    word-wrap: break-word;
-    background-color: #282a2e;
-}
-.note-editor.note-frame {
-    border: 1px solid #111111;
 }
 .note-editor.note-frame .note-statusbar .note-resizebar {
      background-color: #1d1f21;

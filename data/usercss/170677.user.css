@@ -3,14 +3,20 @@
 @namespace      USO Archive
 @author         RyderMais
 @description    `A fresh look without losing the essence of the service?That's the goal, try the Nowadays skin for Just Dance Now!`
-@version        20201031.19.1
-@license        CC-BY-NC-SA-4.0
+@version        2020119.2.59
+@license        CC-BY-NC-4.0
 @preprocessor   uso
+@advanced dropdown artist-display "Display artist name (list only)" {
+	no "No*" <<<EOT none EOT;
+yes "Yes (visually not recommended)" <<<EOT table-cell EOT;
+
+}
+
 ==/UserStyle== */
-@-moz-document domain("justdancenow.com") {
+@-moz-document domain("justdancenow.com"), domain("justdanceskylight.tk") {
 :root {
-	--version: "Nowadays Skin by Bryceed: Update 2021.0 (Oct. 31)";
-	--welcome: "+ Nowadays Skin (v21.0, Oct. 31)";
+	--version: "Nowadays Skin by Bryceed: Update 2021.1 (Nov. 9)";
+	--welcome: "+ Nowadays Skin (Update 2021.1, Nov. 31)";
 }
 
 .landing-text__subtitle {
@@ -101,7 +107,7 @@ li {
 
 #coverflow,
 #afterdance {
-	background: #241f3d !important;
+	background: #3e0140 !important;
 }
 #afterdance:before {
 	content: "";
@@ -146,6 +152,11 @@ li {
 	padding-left: 0.1rem;
 	left: -0.1rem;
 	top: 0.14rem;
+	width: auto;
+}
+#room-info .danceroom__caption {
+	display: block;
+	width: auto;
 }
 #just-dance-now .danceroom__label {
 	font-size: 0.16rem;
@@ -153,9 +164,18 @@ li {
 	left: .025rem;
 	top: .025rem;
 }
+.section-grid-trainer .grid-img--songlist {
+    width: 2.15rem;
+    background-image: url(https://www.pngjoy.com/pngl/436/7938203_dancing-just-dance-2019-havana-png-download.png);
+	filter: brightness(0.94) saturate(1.4) hue-rotate(-15deg);
+    transform: rotateY(180deg);
+    left: -.1rem;
+    position: relative;
+}
 .danceroom__number {
 	position: relative;
-	top: 0.13rem;
+	top: 0.12rem !important;
+	font-size: .55rem
 }
 .room-info__patch {
 	display: none;
@@ -188,18 +208,79 @@ li {
 	padding: 3%;
 	background: #892194;
 }
+.coverflow--container {
+	padding-bottom: 0 !important
+}
 .song__difficulty {
 	background: #892194;
+}
+.song--details {
+	margin-top: 0;
+	padding-top: 0.115rem !important;
+	padding-bottom: 0.2rem;
+	height: 86% !important
+}
+.trainer-icon {
+	filter: hue-rotate(173deg);
+}
+.song-grid--details {
+	box-shadow: -.4rem 9px 3px -6px #0000001a;
+}
+.song-grid--details .song-grid--titleDetails .song-grid--title {
+    color: #8e3998;
+}
+.song-grid--details .song-grid--close {
+	background-color: #8e3998;
 }
 #preview .song-details {
 	width: 100%;
 	overflow: hidden;
 	padding: 0.06rem 0.1rem 0.4rem;
-	background-image: linear-gradient(to right, #892194, #4d7dfd);
+	/*background-image: linear-gradient(to right, #892194, #4d7dfd);*/
+	background-image: linear-gradient(to right, #6e18ac, #780baa);
 	border-radius: .05rem;
 	position: absolute;
 	top: .2rem;
 	left: -.18rem;
+}
+.playlist-action__button {
+	background-image: linear-gradient(to left, #c25ecc, #6d30e6) !important;
+}
+.song-action__button {
+	background-image: linear-gradient(to left, #892194, #6d30e6);
+	left: -1.6rem;
+	top: .5rem
+}
+.sprite--tape .color-dark {
+    stroke : #8b1af5;
+}
+.sprite--tape .color-mid {
+    stroke : #8c17a4;
+}
+.sprite--tape .color-light {
+    stroke : #994dec;
+}
+.sprite--stars svg path { 
+		stroke : #a23ddd;
+		/*fill: #cddd041c;*/
+}
+.sprite-description {
+    background: -webkit-linear-gradient(#5611d5, #cc27e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+		width: 3.5rem;
+		position: absolute;
+	  left: -2.24rem;
+		top: .8rem
+}
+.title-container .caption {
+	white-space: break-spaces;
+	height: .63rem
+}
+.title-container .caption.artist {
+	display: /*[[artist-display]]*/;
+	vertical-align: bottom;
+	height: .29rem;
 }
 ul.tabs li.selected {
 	filter: hue-rotate(-30deg) saturate(.7) grayscale(.14)
@@ -493,5 +574,30 @@ ul.tabs li.selected {
 
 .img--afterDance .song-info h3 {
 	color: #8e3898;
+}
+
+.modal__container::after {
+    background-color: #78007c;
+}
+.modal__container::before {
+    width: 90%;
+    background-image: linear-gradient(to bottom right, #f5f5f5, #ffffff);
+}
+.concept__line.concept__line--shift-left.concept__title, .concept_ftue, .steps__connect, .modal__close {
+	color: #78007c !important;
+	text-shadow: none
+}
+.concept__line.concept__line--shift-left.concept__title {
+	text-shadow: 2px 2px 1px #78007c17;
+	top: -.04rem;
+}
+.concept_ftue {
+	top: 1.7rem;
+}
+.steps__image.steps__image--3 {
+	filter: hue-rotate(-40deg) saturate(1.3) brightness(1.2)
+}
+.steps__image.steps__image--2 {
+	filter: hue-rotate(10deg) saturate(1.4) brightness(1.03)
 }
 }
