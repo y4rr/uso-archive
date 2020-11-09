@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         stormi
 @description    `Soundcloud in dark :)For the nice font in the screenshot download & install this font: <a href="http://www.dafont.com/champagne-limousines.font">Champagne & Limousines</a> - For even more black & white experience you can additionally install <a href="https://userstyles.org/styles/107072/soundcloud-grayscale">Soundcloud Grayscale</a> --- Check out my other "Dark" styles:  ₪ <a href="https://userstyles.org/styles/50113">Google</a>  ₪ <a href="https://userstyles.org/styles/44530">Discogs</a>  ₪ <a href="https://userstyles.org/styles/155744">TabletPCReview & NotebookReview Forum</a>  ₪ <a href="https://userstyles.org/styles/43733">Computerbase</a>  ₪ <a href="https://userstyles.org/styles/31267">Global dark style</a>  ₪ <a href="http://userstyles.org/users/43566">and more...</a>`
-@version        202084.1.31
+@version        2020118.23.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,7 +92,7 @@ a {text-shadow: 0 0 #000; transition: 0.2s color, text-shadow}
 :focus {outline: none !important}
 
 .sc-border-light-top, .sc-border-dark-top, .sc-border-light-bottom, .sc-border-dark-bottom, .sc-border-light-right, .sc-border-dark, .sidebarHeader, .commentsThread__item, .ownActivity__user, .userInfo, .userInfo__container,
-.archive-title, .page-title, .widget-title, .entry-content th, .comment-content th, .widget-area .widget, .sc-border-light, .newMessageForm.compact, .l-listen-wrapper .l-about-rows, .searchTitle, .selectionModule, .mixedSelectionModule {
+.archive-title, .page-title, .widget-title, .entry-content th, .comment-content th, .widget-area .widget, .sc-border-light, .newMessageForm.compact, .l-listen-wrapper .l-about-rows, .searchTitle, .selectionModule {
     border-color: #111 !important}
 .g-tabs, .g-tabs-item.active, .site-content article, .commentItem.large.isReply, .listenInfoTeaser__separator, .collection.m-overview .collection__section, .conversation__form, .chartsMain_listHeader, .sc-border-light-left {
     border-color: #333 !important}
@@ -235,14 +235,14 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {border-color: #F80 
 .dropdownList {
     background: #151515 !important;
     border-color: #333 !important}
-.dropdownMenu, #ui-datepicker-div {
+.dropdownMenu, #ui-datepicker-div, .repostOverlay__container {
     background: #1C1C1C !important;
     border: 1px solid #292929 !important;
     box-shadow: 0 1px 1px #000 !important;
     text-shadow: 0 1px #000 !important}
 .dropdownMenu button, .moreActions__button, .moreActions__link, .headerMenu__link {color: #999 !important}
-.dropdownMenu > li:hover, .dropdownMenu button:hover, .dropdownMenu li.selected, .moreActions__button:hover, .moreActions__link:hover, .headerMenu__link:hover, .notificationBadge__link:hover, .inboxItem.active, .inboxItem:hover {background-color: rgba(35,35,35,.6) !important; color: #F60 !important; text-shadow: 0 1px 0 #000 !important}
-.notificationBadge--unread, .inboxItem.active, .inboxItem.unread, .inboxItem:focus {background: linear-gradient(rgba(80,60,50,.4), rgba(15,15,15,.4)) !important}
+.dropdownMenu > li:hover, .dropdownMenu button:hover, .dropdownMenu li.selected, .moreActions__button:hover, .moreActions__link:hover, .headerMenu__link:hover, .notificationBadge__link:hover {background-color: rgba(35,35,35,.6) !important; color: #F60 !important; text-shadow: 0 1px 0 #000 !important}
+.notificationBadge--unread {background: linear-gradient(rgba(80,60,50,.4), rgba(5,40,40,.4)) !important}
 .headerMenu__link:active, .headerMenu__link:focus, .notificationBadge__link:active, .notificationBadge__link:focus {background-color: rgba(70,70,70,.6) !important}
 #suggestionsList li:hover * {color: #F60 !important}
 #suggestionsList li > * > * > * > * {color: #555 !important}
@@ -416,7 +416,7 @@ header.header {background: linear-gradient(#222, #2D2D2D) !important; box-shadow
 }
 .active .soundBadge__additional, .active .compactTrackListItem__additional, .active .trackItem__additional, .active .trackItemWithEdit__additional, .commentItem:hover .commentItem__controls {
     background: none !important}
-.soundBadge.active, .compactTrackListItem.active, .trackItem.active, .trackItemWithEdit.active, .carousel.active, .carousel.hover, .uploadMain__chooserContainer, .activeUpload__form, .chartTracks__item .chartTrack.m-playing, .playlistConsumerSubUpsell__messageBox, .quotaMeterWrapper:not(.quotaMeter__noSidePadding) {
+.soundBadge.active, .compactTrackListItem.active, .trackItem.active, .trackItemWithEdit.active, .carousel.active, .carousel.hover, .uploadMain__chooserContainer, .activeUpload__form, .chartTracks__item .chartTrack.m-playing, .playlistConsumerSubUpsell__messageBox, .quotaMeterWrapper:not(.quotaMeter__noSidePadding), .banner.m-warning {
     background: repeating-linear-gradient(-45deg, #151515, #151515 20px, #111 20px, #111 40px) !important;
     border-color: #151515 !important;
     box-shadow: inset 0 0 20px #000 !important}

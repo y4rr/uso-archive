@@ -1,0 +1,39 @@
+{
+  "id": 192298,
+  "info": {
+    "name": "vaughn.live full theather [dark] mode",
+    "description": "All credit to creator of the original theme - MangaReader.\r\n\r\nI just wanted a dark version.",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "vaughn",
+    "createdAt": "2020-11-08T08:47:55.000Z",
+    "updatedAt": "2020-11-08T17:48:24.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1064041,
+      "name": "elbisivni"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "192298_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"vaughn.live\")\r\n{\r\n  div.mvn\r\n  {\r\n    width: 100%;\r\n    height: 50px;\r\n    position: absolute;\r\n    z-index: 100;\r\n  }\r\n\r\n  div.mvn:hover ~ div.header\r\n  {\r\n    display: block;\r\n  }\r\n\r\n  div.header:hover\r\n  {\r\n    display: block;\r\n  }\r\n\r\n  div.header\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.header_spacer\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.height10px\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.wrapper\r\n  {\r\n    width: 100% !important;\r\n    max-width: 100%;\r\n  }\r\n\r\n  div.videoStatus\r\n  {\r\n    width: auto;\r\n    position: absolute;\r\n    z-index: 50;\r\n    top: 40px;\r\n    min-width: unset;\r\n    background-color: transparent;\r\n    border-radius: 0 8px 8px 0;\r\n    max-width: 30%;\r\n    height: auto;\r\n    max-height: unset;\r\n  }\r\n\r\n  div.videoStatus:hover\r\n  {\r\n    background-color: #0000006e;\r\n  }\r\n\r\n  div.chanStatusLeft\r\n  {\r\n    visibility: hidden;\r\n  }\r\n\r\n  div.videoStatus:hover div.chanStatusLeft\r\n  {\r\n    visibility: visible;\r\n  }\r\n\r\n  div.chanStatusRight\r\n  {\r\n    visibility: hidden;\r\n  }\r\n\r\n  div.videoStatus:hover div.chanStatusRight\r\n  {\r\n    visibility: visible;\r\n  }\r\n\r\n  div.vaughnLeft\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh;\r\n    max-width: unset !important;\r\n  }\r\n\r\n  div.videoPlayer\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n    max-width: unset;\r\n  }\r\n\r\n  div.abvsContainer\r\n  {\r\n    display: none !important;\r\n  }\r\n\r\n  div.vidPlayer\r\n  {\r\n    top: 0 !important;\r\n  }\r\n\r\n  div#MvnHlsPlayer_wrapper\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n  }\r\n\r\n  div.MvnHlsPlayerBox\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n  }\r\n\r\n  div#MvnHlsPlayer\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n  }\r\n\r\n  video#MvnHlsPlayerLive\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n  }\r\n\r\n  div.MvnAbvsLowerThirdWrapper\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.MvnHlsPlayerBar\r\n  {\r\n    width: calc(100% - 10px) !important;\r\n  }\r\n\r\n  div.MvnHlsPlayerOverlay\r\n  {\r\n    width: 100% !important;\r\n    height: 100vh !important;\r\n    margin-top: 0 !important;\r\n    top: 0;\r\n  }\r\n\r\n  .MvnHlsPlayerPlayButdivtonOverlay\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.CV3wrapper\r\n  {\r\n    width: 344px !important;\r\n    height: 100vh !important;\r\n    background-color: white;\r\n  }\r\n\r\n  div.CV3body\r\n  {\r\n    height: calc(100vh - 75px) !important;\r\n  }\r\n\r\n  div.theChatToggle\r\n  {\r\n    height: 100vh !important;\r\n  }\r\n\r\n  div.chatBox\r\n  {\r\n    height: 100vh !important;\r\n  }\r\n\r\n  div.chatBoxHeader\r\n  {\r\n    display: none;\r\n  }\r\n\r\n  div.abvsHeaderWrapper\r\n  {\r\n    display: none;\r\n  }\r\n  \r\n  div.CV3body, textarea.CV3input\r\n  {\r\n    background-color: #1a1a1a;\r\n    color: #ededed;\r\n  }\r\n\r\n  div.CV3input, div.CV3pic\r\n  {\r\n    border-top: solid 1px #222;\r\n  }\r\n  \r\n  div.noticeLine\r\n  {\r\n    background-color: #222;\r\n    border-bottom: solid 1px #1a1a1a;\r\n  }\r\n  \r\n  span.chatLine\r\n  {\r\n    color: #ccc !important;\r\n  }\r\n  span.chatUsername\r\n  {\r\n    background-color: #999;\r\n    margin-right: 10px;\r\n    padding: 1px 1px 1px 5px;\r\n    border-radius: 5px;\r\n  }\r\n\r\n  div.chatOptSmiley\r\n  {\r\n    background-color: #1a1a1a;\r\n    color: #fff;\r\n    border-color: #1a1a1a;\r\n  }\r\n}"
+  }
+}

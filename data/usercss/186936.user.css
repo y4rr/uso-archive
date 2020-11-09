@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.1
+@name           Compact Tube (White) v1.3.2
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020116.22.55
+@version        2020118.14.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.1 */
+/* CompactTube (White) v1.3.2 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -42,6 +42,11 @@ ytd-banner-promo-renderer {display: none;}
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
 /* убрать партнёрскую рекламу на вкладке с Видео */
 .ytd-companion-slot-renderer {display: none;}
+
+    /* Отключить? ОПЛАЧЕННЫЕ Видеоролики(на правах рекламы) от пользователей и каналов на вкладке с Видео */
+    /* none : - отключить  /  flow : - не отключать  */
+    ytd-compact-promoted-video-renderer {display: none}
+
 /* убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
 yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
 
@@ -53,10 +58,11 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
 
     /* блокировать Рекламу в выкладке на Главной Странице (блокирует но оставляет пустое место)
     : - "none" - убрать: "flow"- показать.  */
-   .ytd-display-ad-renderer {display: none;}
+    .ytd-display-ad-renderer {display: none;}
                 /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
                 : - "none" - убрать: "flow"- показать.  */
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
+
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -1127,7 +1133,7 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 /* Размер Логотипа YouTube */
 /* 100px 30px; - дефолт в Старом Дизайне YouTube */
--щ-#logo-icon-container.ytd-topbar-logo-renderer {
+-o-#logo-icon-container.ytd-topbar-logo-renderer {
     width: 100px; /*def: 80*/
     height: 30px; /*def: 24*/
     flex: none;}
@@ -1584,6 +1590,15 @@ margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(8
 /* Контур Видео справа на вкладке с Видео */
 ytd-compact-video-renderer:not([watch-feed-big-thumbs]) ytd-thumbnail.ytd-compact-video-renderer {
 margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+
+
+/* ════════════  Оплаченные и Рекламные Видеоролики(на правах рекламы) - Оформление  ═════════════ */
+
+/* Оплаченные Видео ролики (центровка) */
+ytd-compact-promoted-video-renderer {padding: 7px 0px 0px 10px; display: flow}
+/* Оплаченные Видео ролики (контур Превью) */
+ytd-thumbnail.ytd-compact-promoted-video-renderer {box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════ */
 
 
 /*===============================================================================*/

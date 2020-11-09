@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2020115.23.47
+@version        2020118.16.0
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v4.7.1*/
+/* Dark Creator Studio v4.8*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -189,6 +189,7 @@ paper-icon-item.iron-selected.ytcp-navigation-drawer > .nav-item-text {
 
 ytcp-navigation-drawer[keyboard-focus] .menu-item-link.ytcp-navigation-drawer:focus paper-icon-item.ytcp-navigation-drawer, ytcp-navigation-drawer[keyboard-focus] paper-icon-item.ytcp-navigation-drawer:focus, paper-icon-item.ytcp-navigation-drawer:hover, paper-icon-item[submenu-open].ytcp-navigation-drawer, paper-icon-item.iron-selected.ytcp-navigation-drawer {
     background: var(--item-color);
+    transition: .09s;
 }
 
 ytcp-navigation-drawer[enable-matterhorn-entity-label] .entity-type.ytcp-navigation-drawer {
@@ -244,6 +245,26 @@ main {
     box-shadow: none;
 }
 
+/*Footer*/
+.footer{
+    background-color: var(--bg2-color);
+    color: var(--text-darken2-color) !important;
+}
+
+.external-link.ytcd-external-link{
+    color: var(--text-darken2-color);
+}
+
+.external-link-icon.ytcd-external-link, .external-link.ytcd-external-link:hover{
+    color: var(--accent-color); 
+    transition: .1s;
+}
+
+/*Universal - Action Bar*/
+ytcp-primary-action-bar{
+    border-bottom: 1px solid var(--border-color);
+}
+
 /*Universal - Text*/
 yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited{
     color: #3278FF !important;
@@ -267,6 +288,26 @@ paper-listbox paper-item:hover{
 
 ytd-menu-popup-renderer{
     background-color: #0000;
+}
+
+ytcp-chip-bar > div > input::placeholder {
+    color: var(--text-color) !important;
+}
+
+ytcp-chip-bar > div > input {
+    color: var(--text-color) !important;
+}
+
+ytcp-chip > ytcp-icon-button > .ytcp-icon-button {
+    fill: var(--accent-color) !important;
+}
+
+ytcp-chip {
+    background: var(--bg3-color) !important;
+}
+
+ytcp-chip > .text {
+    color: var(--text-color) !important;
 }
 
 /*Universal - Radio Buttons*/
@@ -939,6 +980,14 @@ ytcp-video-row[horizontal-scroll] .last-floating-column.ytcp-video-row:after{
     border-image: none;
 }
 
+.section-label-with-description.ytcp-video-metadata-editor-basics, #audience.ytcp-video-metadata-editor-basics .section-label.ytcp-video-metadata-editor-basics, .section-label-with-description.ytcp-video-metadata-editor-advanced, .section-label.ytcp-form-live-chat{
+    color: var(--text-color);
+}
+
+.section-description.ytcp-video-metadata-editor-basics, .section-description.ytcp-video-metadata-editor-advanced{
+    color: var(--text-darken2-color);
+}
+
 /*Subtitles*/
 
 #row-container.ytgn-video-row.row-highlighted, #row-container.ytgn-video-row.row-highlighted .floating-column.ytgn-video-row{
@@ -1134,6 +1183,10 @@ ytcp-author-comment-badge.creator {
     --ytcp-author-comment-badge-hover-text-color: var(--accent-color) !important;
 }
 
+.divider.ytcp-comments-section, ytcp-tabbed-filtered-action-bar{
+    border-bottom-color: var(--border-color);
+}
+
 /*Comments - Smart Replies*/
 #label.style-scope.ytcp-smart-replies{
 	color: #777;
@@ -1194,6 +1247,10 @@ ytve-timeline-horizontal-scrollbar.track{
 
 #dialog-title.ytve-modal-host{
     font-family: var(--header-font);
+}
+
+#discard-button.ytve-modal-host{
+    color: var(--accent-color);
 }
 
 /*Social Blade Live Sub Count*/
@@ -1582,7 +1639,7 @@ ytmus-library-row[is-current] #row-container.ytmus-library-row{
     background-color: #220000;
 }
 
-#done-button.style-scope.ytmus-license-dialog, #download.style-scope.ytmus-library-row, .anchor-text.ytmus-starred-table{
+#done-button.style-scope.ytmus-license-dialog, #download.style-scope.ytmus-library-row, .anchor-text.ytmus-starred-table, .anchor-text.ytmus-sound-effects-table{
     color: var(--accent-color);
 }
 
@@ -1742,26 +1799,6 @@ iron-icon.ytcp-filter-bar {
     --iron-icon-width: 24px;
     --iron-icon-height: 24px;
     color: var(--text-color);
-}
-
-ytcp-chip-bar > div > input::placeholder {
-    color: var(--text-color) !important;
-}
-
-ytcp-chip-bar > div > input {
-    color: var(--text-color) !important;
-}
-
-ytcp-chip > ytcp-icon-button > .ytcp-icon-button {
-    fill: var(--accent-color) !important;
-}
-
-ytcp-chip {
-    background: var(--item-color) !important;
-}
-
-ytcp-chip > .text {
-    color: var(--text-color) !important;
 }
 
 #checkbox.checked.ytcp-paper-checkbox {
@@ -2586,11 +2623,6 @@ a.ytcp-omnisearch{
     color: var(--accent-color);
 }
 
-.footer{
-    background-color: var(--bg2-color);
-    color: var(--text-color) !important;
-}
-
 #right-side-bar{
     background-color: var(--bg-color) !important;
 }
@@ -3032,7 +3064,6 @@ input.ytve-formatted-input{
 
 #dialog-title.ytve-modal-host{
     color: var(--text-color);
-    font-family: Google Sans;
 }
 
 #preview-panel.ytve-editor, ytve-preview-panel{
@@ -3400,14 +3431,6 @@ ytve-endscreen-editor-preview-overlay-item.editing.focsused .edit-overlay.ytve-e
 
 .search.ytve-channel-pick-dialog input.ytve-channel-pick-dialog{
     background: #3330 !important
-}
-
-.external-link.ytcd-external-link{
-    color: var(--text-color);
-}
-
-.external-link-icon.ytcd-external-link, .external-link.ytcd-external-link:hover{
-    color: var(--accent-color); 
 }
 
 #create-playlist-form.ytcp-playlist-dialog, .action-buttons.ytcp-playlist-dialog{

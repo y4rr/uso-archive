@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         神代夕綺
 @description    `你一定会喜欢的简约且好看的百度轻萌化！<b>功能特性：</b> 1. 持续维护的百度样式 2. 提供搜索页、新闻页、视频页等多个页面的样式支持 3. 卡片半透明化 4. 高分屏适配 5. 支持自定义图片背景<b>即将推出的功能：</b> 1. 即将支持自定义单双栏 2. 即将支持自定义卡片分辨率<b>注意：</b>1. 百度会为未登录百度账号的设备提供不同的 css 样式文件，在 v1.0.6a 版本中简单修复了这个 css 文件额外带来的部分问题。但仍有一些问题未处理，您可能需要登录百度账号以避免出现不必要的问题。2. 在使用百度主题后也有可能会出现不必要的问题，您可能需要在使用本样式前先关闭百度自带的样式功能才能保证本样式的正常工作。<b>反馈：</b>在 <a href = "https://userstyles.org/styles/175260">stylish</a> 反馈可能较晚才能收到回复，您如果在使用过程中遇到什么问题可以在 <a href = "https://kira.cool/code-project/80-Baidu-Lite-moe"   target="_blank"><b>这篇文章</b></a> 留言，<s>不一定能解决就是了</s>。<b>鸣谢：</b>pan_cao - Baidu Lite 百度轻silence lu - bilibili33 娘背景图：P站id 62101308作者博客：<a href="https://kira.cool" target="_blank"><b>kira.cool</b></a>`
-@version        2020115.2.5
+@version        2020118.12.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "自定义背景" {
@@ -1915,6 +1915,7 @@ h3 a {
 #m3632e305 > div,
 #m2c57555a > div,
 #m249acef6 > div,
+.se_common_hint,
 .ec-pl-container,
 .c-container,
 .result,
@@ -2051,7 +2052,6 @@ h3 a {
 	background-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
 }
-
 }
 
 @-moz-document regexp("http://www.baidu.com/s\\?.*(tn=news).*"), regexp("https://www.baidu.com/s\\?.*(tn=news).*") {
@@ -2128,7 +2128,7 @@ h3 a {
  */
 
 body {
-	background-image: url(https://s2.ax1x.com/2019/09/14/nsgfSS.jpg) !important; /* 修改搜索页背景自行替换前面链接 */
+	background-image: url(/*[[bg]]*/) !important;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed !important;
 	background-position: center top !important;

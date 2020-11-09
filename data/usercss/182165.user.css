@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020118.1.43
+@version        2020118.15.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -7067,9 +7067,22 @@ span.postflair
 .listing-page .linkflair-News,
 .listing-page .linkflair-News.even,
 .listing-page .linkflair-News.odd,
+.listing-page .linklisting .even.thing.stickied,
+.listing-page .linklisting .odd.thing.stickied,
 .listing-page .odd.stickied,
 .listing-page .odd.stickied.link.self,
-.listing-page .stickied
+.listing-page .stickied,
+.res-nightmode .listing-page .even.stickied,
+.res-nightmode .listing-page .even.stickied.link.self,
+.res-nightmode .listing-page .link.linkflair-News,
+.res-nightmode .listing-page .linkflair-News,
+.res-nightmode .listing-page .linkflair-News.even,
+.res-nightmode .listing-page .linkflair-News.odd,
+.res-nightmode .listing-page .linklisting .even.thing.stickied,
+.res-nightmode .listing-page .linklisting .odd.thing.stickied,
+.res-nightmode .listing-page .odd.stickied,
+.res-nightmode .listing-page .odd.stickied.link.self,
+.res-nightmode .listing-page .stickied
 {
     background:var(--RCNews)!important;
     background-color:var(--RCNews)!important;
@@ -7086,9 +7099,22 @@ span.postflair
 .listing-page .linkflair-News:hover,
 .listing-page .linkflair-News.even:hover,
 .listing-page .linkflair-News.odd:hover,
+.res-nightmode .listing-page .linklisting .even.thing.stickied:hover,
+.res-nightmode .listing-page .linklisting .odd.thing.stickied:hover,
 .listing-page .odd.stickied:hover,
 .listing-page .odd.stickied.link.self:hover,
-.listing-page .stickied:hover
+.listing-page .stickied:hover,
+.res-nightmode .listing-page .even.stickied:hover,
+.res-nightmode .listing-page .even.stickied.link.self:hover,
+.res-nightmode .listing-page .link.linkflair-News:hover,
+.res-nightmode .listing-page .linkflair-News:hover,
+.res-nightmode .listing-page .linkflair-News.even:hover,
+.res-nightmode .listing-page .linkflair-News.odd:hover,
+.res-nightmode .listing-page .linklisting .even.thing.stickied:hover,
+.res-nightmode .listing-page .linklisting .odd.thing.stickied:hover,
+.res-nightmode .listing-page .odd.stickied:hover,
+.res-nightmode .listing-page .odd.stickied.link.self:hover,
+.res-nightmode .listing-page .stickied:hover
 {
     background:var(--RCNews)!important;
     background-color:var(--RCNews)!important;
@@ -7487,6 +7513,33 @@ html[res-warning]::before
 {
     filter:brightness(1.2);
     transition:.4s;
+}
+
+
+/*RES Filterline Toggle*/
+input.res-filterline-toggle-powered,
+input.res-filterline-toggle-powered::after
+{
+    color: #600 !important;
+    transition:.4s !important;
+}
+input.res-filterline-toggle-powered:hover
+{
+    color: #f00 !important;
+    transition:.2s !important;
+}
+
+input.res-filterline-toggle-powered:checked,
+input.res-filterline-toggle-powered:checked::after
+{
+    color: #050 !important;
+    transition:.4s !important;
+}
+input.res-filterline-toggle-powered:checked:hover,
+input.res-filterline-toggle-powered::after:hover
+{
+    color: #0f0 !important;
+    transition:.2s !important;
 }
 
 
