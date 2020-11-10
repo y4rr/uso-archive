@@ -3,18 +3,28 @@
 @namespace      USO Archive
 @author         愛気
 @description    `根据Ryan Galbraith的样式 (hao123 精简美化)和神代綺凜的样式(Bilibili 哔哩哔哩 Nekopara)所编辑隐藏了所有广告(18年12月之后若有新广告请自己隐藏,或者点击更新),同时保留了顶栏若有需要更改背景图片,请直接点击编辑,里面有注释告诉你听哪个是改背景图片的该样式支持hao123新版/旧版(已测试通用)---重要---若点击下载无效,请先点击下面的"show CSS Code"按钮,等加载完内容再点击下载即可若有疑问请联系QQ:949244916`
-@version        202044.6.18
+@version        20201110.4.26
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.hao123.com") {
-  .sk_skin-color-green
+.sk_skin-color-green
   {
-    width: 100%;
-/*url(网址)---网址为背景图地址,把图片上传到任意图床,然后把图片链接黏贴到这里即可，若不需要图片则直接不填内容*/
-    background: url(https://miao.su/images/2018/10/11/lun01b101d2d.png) !important;
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+   /*url(网址)---网址为背景图地址,把图片上传到任意图床,然后把图片链接黏贴到这里即可，若不需要图片则直接不填内容*/
+    background-image: url(https://miao.su/images/2018/10/11/lun01b101d2d.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
-
+                    
   #sites2_wrapper  >*
   {
 /*调整中间那个框的边框圆角弯度*/
@@ -162,14 +172,17 @@
   {
     display: none !important;
   }
+
   #coolsites_wrapper
   {
     display: none !important;
-  }  
+  }
+
   .coolsites-wrapper
   {
     display: none !important;
   }
+
   .siye-link
   {
     display: none !important;

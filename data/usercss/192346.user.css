@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         voidsea
 @description    `针对新版虎扑论坛进行美化需要通过 https://bbs.hupu.com/api/v1/go 切换到新版界面后应用`
-@version        2020119.10.27
+@version        20201110.1.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -302,7 +302,7 @@ body, .bbs-index-web{
 .post-user-comp-info-top-name,
 .post-reply-list .reply-list-content .post-reply-list-user-info-top-name{
     font-weight: bold;
-    color: #039;
+    color: #000;
 }
 
 .post-user-comp-info-top-tip,
@@ -329,7 +329,9 @@ body, .bbs-index-web{
 }
 
 .bbs-post-wrapper.light{
-    background: #fbf8ec;
+    margin: -8px;
+    padding: 0 12px;
+    background: #f9f8f2;
     border: 1px solid #efe7c2;
     border-radius: 8px;
 }
@@ -341,11 +343,27 @@ body, .bbs-index-web{
 .bbs-post-wrapper .reply-detail-list:after{
     display: none;
 }
+
+.post-reply-list{
+    padding: 16px 8px;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+
 .post-user-comp-info,
 .post-reply-list .reply-list-content .post-reply-list-user-info-top{
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    align-items: flex-start;
 }
+
+.user-base-info{
+    display: block;
+}
+.post-user-comp-info-top-time,
+.post-reply-list .reply-list-content .post-reply-list-user-info-top-time{
+    display: block;
+    margin: 4px 0;
+    font-size: 12px;
+}
+
 .post-user-comp{
     margin-bottom: -36px;
 }
@@ -370,5 +388,17 @@ body, .bbs-index-web{
 .bbs-thread-comp-container .toggle-thread{
     color: #666;
     text-decoration: underline;
+}
+
+.post-reply-list .reply-list-content .post-reply-list-operate{
+    margin: 0 0 0 -10px;
+}
+.post-reply-list .reply-list-content .post-reply-list-operate .todo-list .todo-list-text.bold{
+    font-weight: normal;
+}
+
+.bbs-post-web .pagination{
+    margin: 24px 0;
+    padding: 0;
 }
 }

@@ -3,9 +3,20 @@
 @namespace      USO Archive
 @author         Yad
 @description    `My own version of dark theme of bigkis.com`
-@version        2020114.11.49
+@version        20201110.11.49
 @license        CC-BY-SA-4.0
 @preprocessor   uso
+@advanced dropdown bwesitka "Change Logo" {
+1 "Default Logo*" <<<EOT https://bigkis.com/themes/wondertag/img/logo.png EOT;
+2 "Bigkis v2" <<<EOT https://i.postimg.cc/gk8VVfkJ/yad.png EOT;
+3 "Facebook" <<<EOT https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1200px-Facebook_Logo_%282019%29.svg.png EOT;
+5 "Userstyle Logo" <<<EOT https://userstyles.org/ui/images/stylish-logo-2.svg EOT;
+6 "Twitter" <<<EOT https://i2.wp.com/ideadeco.co/wp-content/uploads/2019/05/twitter.png EOT;
+
+	bwesitka-custom-dropdown "Custom" <<<EOT /*[[bwesitka-custom]]*\/ EOT;
+}
+@advanced text bwesitka-custom "Change Logo (Custom)" "https://example.com/image.png"
+
 ==/UserStyle== */
 @-moz-document domain("bigkis.com") {
 /*Theme Made by YAD for BIGKIS 2020*/
@@ -30,6 +41,7 @@ body, .tag_create_blog {
     filter: invert(0%) contrast(100%) saturate(100%) brightness(8.5)
 }
 
+
 .tag_welcome {
     width: 100%;
     height: 100%;
@@ -37,7 +49,12 @@ body, .tag_create_blog {
     flex-direction: column;
     background-image: linear-gradient(180deg, #1e32d2 0%, #ad177f 100%);
 }
-
+.navbar-default .logo {
+    background-image: url(/*[[bwesitka]]*/)!important;
+}
+.header-brand {
+    background-image: url(/*[[bwesitka]]*/)!important;
+}
 .header-brand {
     display: block;
     position: fixed;

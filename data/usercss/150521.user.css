@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        2020117.23.1
+@version        20201110.1.32
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1950,6 +1950,9 @@ textarea#bio {
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
 }
+img[src="/static/layout/hoard/buttons/stack-function-name-dragon.png"] {
+    content: url(https://i.imgur.com/0L9yoq6.png) !important;
+}
 img[src="/static/layout/bestiary/buttons/show-description.png"] {
     content: url(https://i.imgur.com/WXa3B5g.png) !important;
 }
@@ -2160,7 +2163,7 @@ img[src="/images/layout/button_drag_prev.png"] {
 img[src="/images/layout/button_drag_next.png"] {
     content: url(https://i.imgur.com/0tzg0fi.png) !important;
 }
-img[src="/static/layout/x.gif"], img[src="/images/layout/x.gif"] {
+img[src="/static/layout/x.gif"], img[src="/images/layout/x.gif"], img[src="/static/layout/auctionhouse/bigx.png"] {
     content: url(https://i.imgur.com/QTFJ3I8.gif) !important;
 }
 img[src="/static/layout/icon_itemnotattached.png"] {
