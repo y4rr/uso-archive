@@ -1,20 +1,40 @@
 /* ==UserStyle==
-@name           Eldarya [MAJ HALLOWEEN] - Map Normale+Event
+@name           Eldarya [MAJ NEW ERA] - Map Normale+Event
 @namespace      USO Archive
 @author         Loplo
 @description    `FR: Ce style regroupe les styles qui vous indiquent quels items sont lootables en fonction des endroit:  Map Cité d'Eel / Map Côte de Jade / Map Feng-huang / Map Halloween / Map NoëlEt sera mis à jour en même temps que les markables o/EN: This style gather all Eldarya's map styles!  City of El Map / Jade Coast Map / Feng-huang Temple Map / Halloween Map / Christmas MapAnd will be updated in the same time as the markables o/<a href="https://markableseldarya.wordpress.com/">Pour avoir accès aux markables, c'est ici!</a>`
-@version        20201027.9.21
+@version        2020119.19.51
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.eldarya.fr/pet"), url-prefix("https://www.eldarya.com/pet"), url-prefix("https://www.eldarya.com.br/pet"), url-prefix("https://www.eldarya.pl/pet"), url-prefix("https://www.eldarya.de/pet"), url-prefix("https://www.eldarya.dk/pet"), url-prefix("https://www.eldarya.es/pet"), url-prefix("https://www.eldarya.hu/pet"), url-prefix("https://www.eldarya.it/pet"), url-prefix("https://www.eldarya.nl/pet"), url-prefix("https://www.eldarya.ro/pet"), url-prefix("https://www.eldarya.ru/pet"), url-prefix("https://www.eldarya.se/pet"), url-prefix("https://www.eldarya.uk/pet"){
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/pet") {
+#map-container .map-location-tooltip .energy-required, #map-container .map-location-tooltip .time-to-explore{
+	left: -75px; top: 20px;
+}
 
-	div[class^="page-main-container pet-main-container"] {height:620px !important; }
+.pet-interface-container #right-container .lens {
+    border-radius: 20px;
+    background:rgba(255, 255, 255, .89);
+}
+#map-container .map-location-tooltip .map-location-name{
+	z-index: 25;
+	left: 10px;
+	top: 25px;
+	width: 200px;
+}
+
+#map-container .map-location-tooltip .map-location-infos{
+	box-shadow: none;
+	z-index: 20;
+	background:rgba(255, 255, 255, 0);
+}
+
+/*ORIGINS*/
 
 	/*MAP CITE D'EEL*/ 
 
 		/*Eaux peu profondes*/
-			#mapLocation9 > div { 
+            div.map-location-tooltip [data-id="9"] { 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/egg/21b46ff690963d7f9cb7aad22edab1a4.png"), 
 			url("https://www.eldarya.fr/static/img/item/egg/ddb49dfbffee113cf8b87f6a84530dad.png"), 
@@ -23,21 +43,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/c86f9adaf3a13e78eb653a9cc7f7c86c.png"),
 			url("https://www.eldarya.fr/static/img/item/player//icon/4a4fdbc99757f26334037951e598211b.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c4b7dbaa56680d52a350da2990de31e1.png"), 
-			url("https://www.eldarya.fr/static/img/item/player/icon/d97d32903bdfa7e144ab3d5b8fe6df43.png"),
-			url("https://www.eldarya.fr/static/img/item/consumable/c31baf189911e73d3ceaa40c8feb261d.jpg")
-
+			url("https://www.eldarya.fr/static/img/item/player/icon/d97d32903bdfa7e144ab3d5b8fe6df43.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
 
 		/*Clairière*/
-			#mapLocation11 > div { 
+			div.map-location-tooltip [data-id="11"]{ 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/egg/066c5eaa58f89032a6390cd7390aea3b.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/101bbcf85579bbd2947fbf1fc2cdf2d2.png"), 
@@ -52,19 +73,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/a6efc43527ca9dffc3a5686512c5d431.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/d049e6e56f6795343bb26ab1a3c2b485.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation11 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="11"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Grotte*/
-			#mapLocation13 > div { 
+			div.map-location-tooltip [data-id="13"]{ 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/consumable/a6f6c91701feb09fae71862bd60b99a4.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/f9a4111a94623ecd3da67c48bc98b06f.png"), 
@@ -77,22 +101,25 @@
 			url("https://www.eldarya.fr/static/img/item/consumable/aec1c077604cbafb1132446de4147ef3.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/cf8a6d0f1c7a99b44a0230df83553ba3.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/acca059f2fafff1faa794c33631e2532.png"), 
-			url("https://www.eldarya.fr/assets/img/item/consumable/7a9300337fa61544c0e9a2df6b036505.png"),
-			url("https://www.eldarya.fr/static/img/item/consumable/c31baf189911e73d3ceaa40c8feb261d.jpg")
+			url("https://www.eldarya.fr/assets/img/item/consumable/7a9300337fa61544c0e9a2df6b036505.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;	
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation13 > div:after { content: "-✦ ║ –❤";}
+			div.map-location-tooltip [data-id="13"]:after { content: "-✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Forêt côté droit*/
-			#mapLocation14 > div { 
-		   	    background-image :
+			div.map-location-tooltip [data-id="14"]{ 
+		   	background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/61983bc9e8a3ac9dddfa8c85296a029b.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/6ed7a1ffcc77b18104bb0847672adf79.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/f84eb34e9f3430f70ee4540be19d85d1.png"), 
@@ -108,18 +135,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/2eb5e9a20ee71914092d47b08d5feccf.jpg"),
 			url("https://www.eldarya.fr/static/img/item/consumable/b483e1701dfe8c0770adb92bc2f5c884.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation14 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="14"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Foret cote gauche*/
-			#mapLocation15 > div { 
+			div.map-location-tooltip [data-id="15"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/6ed7a1ffcc77b18104bb0847672adf79.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/a8c573a60fe54217519e0e7aaa014144.png"), 
@@ -135,18 +166,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/c7bf1f67c1317d98407040413e9abeed.jpg"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/995b33fdd2e9326bf785ee7e97c24f5a.jpg") 
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation15 > div:after { content: "±✦";}
+			div.map-location-tooltip [data-id="15"]:after { content: "± ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Plage*/
-			#mapLocation16 > div { 
+			div.map-location-tooltip [data-id="16"] { 
 		    background-image :
 		    url("https://www.eldarya.fr/static/img/item/consumable/1f8faeb54e362f7fbe6b71d7a791d7ea.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/21b46ff690963d7f9cb7aad22edab1a4.png"), 
@@ -163,18 +198,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/3398570425188282daffdb179017a8da.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/60ddc112ae1adc9cccbd94048842d1a1.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation16 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="16"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Descente rocheuse*/
-			#mapLocation17 > div { 
+			div.map-location-tooltip [data-id="17"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/2b73777ac6d11bb47b897a1e2aeaf017.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/4608d273cca8e928f4f599f6795acc0e.png"), 
@@ -189,18 +228,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/fb4c9694399d24d86b233531ad3984bc.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/7a326a39f5e1becc7e30a0dbe7fd1dce.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation17 > div:after { content: "–✦";}
+			div.map-location-tooltip [data-id="17"]:after { content: "- ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Plaine ouest*/
-			#mapLocation18 > div { 
+			div.map-location-tooltip [data-id="18"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/d4c33b165868e49a710e7c6649175c31.png"), 
 			url("https://www.eldarya.fr/static/img/item/egg/d33dbbcb7852960ff3ede41c702f70d7.png"), 
@@ -216,18 +259,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/6ff7df9fc706d14b40fec55dda71db5a.png"), 
 			url("https://www.eldarya.fr/static/img/player/skin/icon/2b482ea1f582b6fc2f56333b33418ade.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation18 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="18"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Rocher*/
-			#mapLocation19 > div { 
+			div.map-location-tooltip [data-id="19"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/dc4c471c29bdf1ae59feee8ec2640c56.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/4608d273cca8e928f4f599f6795acc0e.png"), 
@@ -241,18 +288,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/40a4079298636fb567332399c45cffd5.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/23f6b855de2d0c56baa0bc4d6763ab31.png") 
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
 
 		/*Terrier*/ 
-			#mapLocation20 > div { 
+			div.map-location-tooltip [data-id="20"] { 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/consumable/46961a0c065eff6f983598595c90cfe0.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/97762c2f49350c6df802f98fbb714dbb.png"),
@@ -267,19 +316,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/0dc95970b4d492d36cc64ded3feab11c.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/ffd533434c53f6c500dc50bdbe3a2dcf.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation20 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="20"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Plaine est*/
-			#mapLocation21 > div { 
+			div.map-location-tooltip [data-id="21"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/d4c33b165868e49a710e7c6649175c31.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/3437e996ddd253253f13aca7e41a3af4.png"), 
@@ -294,19 +346,22 @@
 			url("https://www.eldarya.fr/static/img/item/consumable/d0571cf77989a8643fb7ef0c9b12a377.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/db51de6f45aeb607cdd0e7fcc86fa2be.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation21 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="21"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Abords de la forêt*/
-			#mapLocation22 > div { 
+			div.map-location-tooltip [data-id="22"] { 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/consumable/fee3ac9d6bc75ed9db693fa1aa40307a.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/5b03292164f6ed9a4a0b2f8f2db8322d.png"),
@@ -323,19 +378,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/e3e85ffbe2c190b4da4778664747f984.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/e745c8d33fda5a41bd59efe05ab301c9.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 270px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation22 > div:after { content: "±✦  ║  -❤";}
+			div.map-location-tooltip [data-id="22"]:after { content: "±✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Jardin du QG*/
-			#mapLocation23 > div { 
+			div.map-location-tooltip [data-id="23"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/fe5ef55112b040732da083b84f1e4f44.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/dfcf572fc57bbbc8f783042eb30e703d.png"),
@@ -353,19 +411,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/4228e992d6e063c41608d43ddba932e3.jpg"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/7d5f58d9ab5ef9d1e269ea554be3f34d.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#apLocation23 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="23"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Quartier général*/
-			#mapLocation24 > div { 
+			div.map-location-tooltip [data-id="24"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/97b1ddd7738e8ab0e9091340b0b2537e.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/a6f6c91701feb09fae71862bd60b99a4.png"),
@@ -387,20 +448,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/bc5c62087b895bfd4feaa913d317d9e6.jpg"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/890542a4d6b2b5ea41bbcc19629aee98.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-			5px 265px;
-			height: 260px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 315px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation24 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="24"]:after { content: "+❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Cave immergée*/
-			#mapLocation25 > div { 
+			div.map-location-tooltip [data-id="25"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/78697e6c6b2c1fdc027a289112d3131e.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/5af8126a026832087214901380a18235.png"),
@@ -412,19 +475,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/45a800e54ed426c8543ff9b9ed6d46a3.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/78d165814c417719dd130b7baaeaafce.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation25 > div:after { content: "-✦/–❤";}
+			div.map-location-tooltip [data-id="25"]:after { content: "-✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Ilot*/
-			#mapLocation26 > div { 
+			div.map-location-tooltip [data-id="26"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/17aadd078472ba83b4aca30998aafa1b.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/e024fd2c6bf49260525439e99fab00a2.png"),
@@ -440,19 +506,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/94e35cb2e8c33f488abff147d7c5be5d.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/bbeb9d7af8d9d382774476f0ebd51f74.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation26 > div:after { content: "±✦";}
+			div.map-location-tooltip [data-id="26"]:after { content: "±✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Eaux profondes*/
-			#mapLocation27 > div { 
+			div.map-location-tooltip [data-id="27"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/709487cfb1c544d5988f186b38e720a1.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/660229e8aa32d1fe4da8b31a8f8951ca.png"),
@@ -467,18 +536,22 @@
 			url("https://www.eldarya.ru/static/img/item/player//icon/4b47107274826e2a5d44db39e8f5b675.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/11bbd28ba3158a3cfb21661a3a19e18e.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation27 > div:after { content: "-✦/–❤";}
+			div.map-location-tooltip [data-id="27"]:after { content: "-✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Cœur de la Forêt*/
-			#mapLocation28 > div { 
+			div.map-location-tooltip [data-id="28"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/fe5ef55112b040732da083b84f1e4f44.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/92a2ed4644855fe4ce18a93fd891da55.png"),
@@ -491,21 +564,48 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/586f5124a22ef346cc66ebb155612cc6.jpg"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/02a37319279272ca3f1fae8de83ff685.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px!important;
+            width: 180px!important;
 			background-size : 40px 40px !important ;}
-			#mapLocation28 > div:after { content: "±✦  -❤";}
+			div.map-location-tooltip [data-id="28"]:after { content: "±✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
+
+		/*Bosquet Ombreux*/
+			div.map-location-tooltip [data-id="107"] { 
+			background-image :
+			url("https://www.eldarya.fr/assets/img/item/player//icon/af9ddaadc2ba71ebdbd8943d28dfac51~1604527394.png"),
+			url("https://www.eldarya.fr/assets/img/item/player//icon/869b683ccf7be76e5d62794fa583717f~1604523986.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/42d84c7e3c76035642337b8fe2d83c3d.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/91e490ce1f5032a215a1872986b5d465~1544522899.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/604716563c0180cde987b270f4cf4d01.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/df146e748d08a4a1247ca595cf3a329f.png")
+			!important ;
+			background-repeat: no-repeat!important;
+			background-position:
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
+			background-size : 40px 40px !important ;}
+			div.map-location-tooltip [data-id="107"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 			 
 	/*MAP KAPPA*/
 
 		/*Plage des Kappa*/
-			#mapLocation32 > div { 
+			div.map-location-tooltip [data-id="32"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/27689b35279aaca258e3bfacd34a3905.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/f254cd24b4b66b385fa7ee7d50bdcf81.png"), 
@@ -518,19 +618,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/0870bd10fd96dcdf7bc50755ce48dc6b.jpg"), 
 			url("https://www.eldarya.fr/static/img/item/player//icon/def467c5770d4277099f3a0eb730de0e.jpg")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation32 > div:after { content: "-❤";}
+			div.map-location-tooltip [data-id="32"]:after { content: "– ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Chemin des grandes feuilles*/
-			#mapLocation33 > div { 
+			div.map-location-tooltip [data-id="33"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/4e8c184d67256848728693bdf77787d2.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/a05325ea0498d64a697973adc57803c2.png"), 
@@ -543,19 +646,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/a4c368834492dedc5512a1a94c01553e.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c7374aebbe9eac3d8c591b60218bd91b.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 180px !important ;
-			width: 220px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation33 > div:after { content: "-✦";}
+			div.map-location-tooltip [data-id="33"]:after { content: "- ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Village Kappa*/
-			#mapLocation34 > div { 
+			div.map-location-tooltip [data-id="34"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/8046f75f0780636b99924c16938a621d.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/13fad826a8a69852904260814f473024.png"), 
@@ -571,19 +677,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/79f0bfe80a25c4f7560d3f45409cdfb3.jpg"),
 			url("https://www.eldarya.fr/static/img/item/consumable/7551e8a999a3029f0de532a637cd4d6b.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation34 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="34"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Récifs de la grenouille*/
-			#mapLocation35 > div { 
+			div.map-location-tooltip [data-id="35"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/629c45852fd90dfa0a9e50e407885ecf.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/a7c536ebd41a97abecfbae9fd0de6ed3.png"),
@@ -599,19 +708,22 @@
 			url("https://www.eldarya.fr/static/img/item/consumable/ec0cc5877c6fb6110542eee8abd19b6a.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/8046f75f0780636b99924c16938a621d.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 275px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation35 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="22"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Lac têtard*/
-			#mapLocation57 > div { 
+			div.map-location-tooltip [data-id="57"] { 
 			background-image: 
 			url("https://www.eldarya.fr/static/img/item/egg/52aba34eff1ff66afe0a243c4634fc23.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/59369a72ac4b9c67023fbefd28233eea.png"), 
@@ -625,19 +737,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/06c8ced65db0c4bd199421ab525deb42.png"), 
 			url("https://www.eldarya.fr/static/img/player/skin/icon/4a9b3fd0f28b5353892924a8ccb534b7.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;} 
-			#mapLocation57 > div:after { content: "+❤/-✦";}
+			div.map-location-tooltip [data-id="57"]:after { content: "-✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Vestiges des moines*/
-			#mapLocation58 > div { 
+			div.map-location-tooltip [data-id="58"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/1d11307daf0f3eb70e8b5546d2d3d655.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/04e02d7650452e28e9e80d14ebbb5fff.png"), 
@@ -648,19 +763,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/59c8033aef31bc3c7e623d66d1c432b6.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/80180a62bf7c78cc6f459ca2bdfc2f7a.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation58 > div:after { content: "+✦ ║ –❤";}
+			div.map-location-tooltip [data-id="58"]:after { content: "+✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Torii du souvenir*/
-			#mapLocation59 > div { 
+			div.map-location-tooltip [data-id="59"]{ 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/a6f6c91701feb09fae71862bd60b99a4.png"),
 			url("https://www.eldarya.fr/static/img/item/egg/af20fd257de911b109d5ad13e6e79a56.png"), 
@@ -673,18 +791,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/17102e517d744eb5164d677438486fe7.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/e53ea1eb1f0fff1ac875d3fd1eaddbc1.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation59 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="59"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Mer de Phibéa*/
-			#mapLocation60 > div { 
+			div.map-location-tooltip [data-id="60"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/e67bb1348f9ed15293496ff00ac3bcdd.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/818b761091dc3d32314aad54506a9c4f.png"), 
@@ -696,18 +818,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/43085d0d131fc114d6a6dd2a5666f3c4.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/511075d7c2e6d51c7035b9e77dd7501e.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}      
-			#mapLocation60 > div:after { content: "+✦ ║ +❤";}    
+			div.map-location-tooltip [data-id="60"]:after { content: "+✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }  
 
 		/*Presqu'île de la grenouille*/
-			#mapLocation61 > div { 
+			div.map-location-tooltip [data-id="61"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/822928ac7679fbd79f4b48434503948d.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/038852903f0a4ad1efc642904e6d9e4a.png"), 
@@ -719,17 +845,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/c22d0ca1f248a65b6aee2c10d1357a29.png"), 
 			url("https://www.eldarya.fr/static/img/player/skin//icon/76dd1c44eb6c7688633cacd556334030.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 200px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}       
 
 		/*Boisés du lac*/
-			#mapLocation62 > div { 
+			div.map-location-tooltip [data-id="62"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/5853fde79e2fdfb50c39f4121628b357.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/8970a61e977290737a1431a262853331.png"), 
@@ -737,41 +866,48 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/a9847998fed6038312af5e859b45e0c3.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/bac5c91cac6fc656a9bab426de8b192e.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/13fad826a8a69852904260814f473024.png"), 
-			url("https://www.eldarya.fr/static/img/item/player//icon/8dda318a613b17c1a20aeff9d347f262.png")
+			url("https://www.eldarya.fr/static/img/item/player/icon/8dda318a613b17c1a20aeff9d347f262.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}  
 
 		/*Lac émeraude*/
-			#mapLocation63 > div { 
+			div.map-location-tooltip [data-id="63"]{ 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/bf84192de3510e3c93184b4d859bd964.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/84dabdc11a67d2c6e80c3409f14cbfc0.png"), 
-			url("https://eldarya.fr/static/img/item/consumable/4bc997526e3da97b2b170f50beb6e51a.png"), 
+			url("https://www.eldarya.fr/static/img/item/consumable/4bc997526e3da97b2b170f50beb6e51a.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/3774b08ed369fb22f26f54c43c70340f.png"), 
-			url("https://www.eldarya.fr/static/img/item/player//icon/038d6cf3e9bd6a31c50bc9930690b094.png"), 
+			url("https://www.eldarya.fr/static/img/item/player/icon/038d6cf3e9bd6a31c50bc9930690b094.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/3c8fcde49a6035e30cc5cd637e6e30c2.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/4044ed09a8a7a338826c497659ff4c82.png"), 
-			url("https://www.eldarya.fr/static/img/item/player//icon/c1e85811bf3f43e275be651346cda4bf.png")
+			url("https://www.eldarya.fr/static/img/item/player/icon/c1e85811bf3f43e275be651346cda4bf.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;} 
-			#mapLocation63 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="63"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Crique du crapaud*/
-			#mapLocation64 > div { 
+			div.map-location-tooltip [data-id="64"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/67d04679c5fa2b4aa7dbbfdc497e06d9.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/568dfa07b3fabc68b93a74a6e5ba9b3b.png"), 
@@ -785,18 +921,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/753496db6b322ab4553f6c7cc41c7812.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/511075d7c2e6d51c7035b9e77dd7501e.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}     
-			#mapLocation64 > div:after { content: "±✦ +❤";}    
+			div.map-location-tooltip [data-id="64"]:after { content: "±✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }  
 
 		/*Lac tortue*/
-			#mapLocation65 > div { 
+			div.map-location-tooltip [data-id="65"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/f254cd24b4b66b385fa7ee7d50bdcf81.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/822928ac7679fbd79f4b48434503948d.png"),
@@ -807,17 +947,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/c6790dccf71275203bfab8a8683c3138.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c45d356f10fdb729f6f1f5f8be4db608.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}  
 
 		/*Forêt de bambou*/
-			#mapLocation66 > div {   
+			div.map-location-tooltip [data-id="66"] {   
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/02c37b3cb63a76c4aac842b4e452ddd5.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/0e3580718391c54a23b46f9c23e2aa40.gif"), 
@@ -827,17 +970,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/5c3111d20a8f0dd5bc105cadf21b9f8f.png"), 
 			url("https://www.eldarya.fr/static/img/player/skin/icon/d21873cd57db9f5d0cc3d1dfd03603fb.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px; 
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;} 
 
 		/*Entrée des collines*/
-			#mapLocation67 > div { 
+			div.map-location-tooltip [data-id="67"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/2314badb79f96ad5123820eb9b0018aa.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/aca2a5e69e14bfecf2c1311010afb655.png"), 
@@ -851,18 +997,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/85fc106a70575a980e6e99f7ee61c8a5.png"), 
 			url("https://www.eldarya.fr/static/img/player/hair/icon/4a5cf04e55cd09f4b9966ac146cc2534.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px;
-			height: 220px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
 
 		/*Pointe des collines*/
-			#mapLocation68 > div { 
+			div.map-location-tooltip [data-id="68"] { 
 			background-image : 
 			url("https://www.eldarya.fr/static/img/item/consumable/c9137477033012d2a5eb78d4bcf0fcf9.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/c895b9a4cf7e55c906a37b55dfdce116.png"), 
@@ -874,18 +1022,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/bf4526c5ad3fd06d8efe5cf299da4648.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/acd687465597f546bea083bf159340fc.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation68 > div:after { content: "+✦ ║ –❤";}
+			div.map-location-tooltip [data-id="68"]:after { content: "+✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Vallons oubliés*/
-			#mapLocation69 > div { 
+			div.map-location-tooltip [data-id="69"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/2640e20f0ed05f15d6bbc69e5fcef596.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/84dabdc11a67d2c6e80c3409f14cbfc0.png"),
@@ -897,18 +1049,22 @@
 			url("https://www.eldarya.fr/static/img/player/hair/icon/76118804eefc168df8f3f212946ca162.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/e4c4b23c436cbb3b37606f7773adff3c.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation69 > div:after { content: "+❤ ║ -✦";}    
+			div.map-location-tooltip [data-id="69"]:after { content: "-✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Cascade des roches*/
-			#mapLocation70 > div { 
+			div.map-location-tooltip [data-id="70"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/f633b5e4af646d42e29d0d8db84be85e.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/b95ed726c9940d5a432417f1e810bf25.png"),
@@ -921,18 +1077,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/9b5ccc4ce2093da3ffaae11e825014b6.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/b3dbd49d77e3d384c73e9fd61124c721.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}   
-			#mapLocation70 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="70"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Lit de l’Amphéa*/
-			#mapLocation71 > div { 
+			div.map-location-tooltip [data-id="71"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/d185c968e3890f6eca4777d242b04110.gif"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/409315581f3d1c14cfde079c9fca8081.png"), 
@@ -942,42 +1102,49 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/45f3d3cb49cf625047e8451b5c87af8c.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c0c145d845671c1b4b88edd9e38daf04.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;} 
-			#mapLocation71 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="71"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Chute de l’Amphéa*/
-			#mapLocation72 > div { 
+			div.map-location-tooltip [data-id="72"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/42cffe79af6a995f2972187bbe04b0d8.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/9092fad4b9635bd780713296c3d53f15.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/ff40d3daee66ef41e73ad1c07529d90b.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/bc466afd5765125b68b0de5c49f4bc4e.png"), 
-			url("https://www.eldarya.fr/static/img/item/consumable/bf811ea509c421f27519c33d3a7b0434.jpg"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/fe1a7e57f1ec52cad8210d16dddbcbcd.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/0f23a2d8fe426b8e63df3047e8fffa8e.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/7cd0e6e277cc01a5963e93dd66bef988.png"), 
 			url("https://www.eldarya.fr/static/img/item/player//icon/163f6ef3fbc0e22c3083c363509c81e1.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/3354203774690502b587bfd6b644b5dc.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation72 > div:after { content: "+❤ ║ -✦";}
+			div.map-location-tooltip [data-id="72"]:after { content: "-✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Flanc sombre*/
-			#mapLocation73 > div { 
+			div.map-location-tooltip [data-id="73"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/1741a4ce3883483c849ccce546e997ed.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/42cffe79af6a995f2972187bbe04b0d8.png"), 
@@ -989,38 +1156,44 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/08a2eab4ec73ebd4b22472f741452e68.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/0a6d74da07ca46b4cd15b3a1ff1d0bdf.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation73 > div:after { content: "+✦ ║ -❤";}
+			div.map-location-tooltip [data-id="73"]:after { content: "+✦ ║ –❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Flanc de la montagne*/
-			#mapLocation74 > div { 
+			div.map-location-tooltip [data-id="74"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/d185c968e3890f6eca4777d242b04110.gif"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/a1f145564eb6b9c0fe1c8bef3b58509d.PNG"), 
-			url("https://www.eldarya.fr/static/img/item/consumable/bf811ea509c421f27519c33d3a7b0434.jpg"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/96af7d7c0c9146fe10c71f5d05c08a15.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/12829be7476adcac39545c5f8a4b8f51.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/26a9939df37e63b057929aff6d3c1f57.png"), 
 			url("https://www.eldarya.fr/static/img/player/hair/icon/7e2dcc2d6e4fd8cf84d8cd2331aee89c.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
 
 		/*Pic de la montagne*/
-			#mapLocation75 > div { 
+			div.map-location-tooltip [data-id="75"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/a3bae710d1a9b6e2bfb3ca5851a047db.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/58b1658470b83ba4873097d33867703f.png"), 
@@ -1032,18 +1205,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/94a6e03d699ccbc53c8b2ae5fa795cc9.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/4c60b575478205d3c32caf9d163aa429.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation75 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="75"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Chemin escarpé*/
-			#mapLocation108 > div { 
+			div.map-location-tooltip [data-id="108"] { 
 			background-image :
 			url("https://www.eldarya.fr/assets/img/item/consumable/28d1ad1d54c970086690beaa2e5b7466.png"),
 			url("https://www.eldarya.fr/assets/img/item/consumable/13fad826a8a69852904260814f473024.png"),
@@ -1053,20 +1230,24 @@
 			url("https://www.eldarya.it/assets/img/item/player/icon/e74629b4edb3fb3eb0efcdb0f05ff139.png"),
 			url("https://www.eldarya.fr/assets/img/item/player/icon/ce4103dd98c215027fea5f017fb9d00a.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation75 > div:after { content: "-❤";}
+			div.map-location-tooltip [data-id="108"]:after { content: "– ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 	/*MAP FENG HUANGS*/
 
 		/*Voie du pelerin*/
-			#mapLocation92 > div { 
+			div.map-location-tooltip [data-id="92"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/egg/599b2fd3e1a1a28d55d042cdf565e7bb.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/1cb3d0f4c640bfe7e642c36e3f699c18.png"), 
@@ -1079,18 +1260,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/18c7c4203e4145de2b668ca998132db5.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c8b05d204d6b78df69df2e353f522710.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation92 > div:after { content: "-❤ ║ -✦";}
+			div.map-location-tooltip [data-id="92"]:after { content: "-✦ ║ -❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 		/*Autel du feu*/
-			#mapLocation93 > div { 
+			div.map-location-tooltip [data-id="93"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/c0fdbef146dc222b04a7660de00434d2.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/34410d904d508fdcc0755c097f1538a3.png"),
@@ -1102,18 +1287,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/4d3f1607f4957258c7cf56a5d35085c4.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/4bc01bc23d15800355c00b64d2d30657.png") 
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation93 > div:after { content: "±❤ ║ -✦";} 
+			div.map-location-tooltip [data-id="93"]:after { content: "-✦ ║ ±❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Mont Sǐzhě*/
-			#mapLocation94 > div { 
+			div.map-location-tooltip [data-id="94"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/a6f6c91701feb09fae71862bd60b99a4.png"),		
 			url("https://www.eldarya.fr/static/img/item/consumable/f1e16bbe46829512ccae7009dcb98cd3.png"), 
@@ -1127,18 +1316,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/bb82b20be54b64a54b2d791c17c194cb.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/c08d57baf7c50601ee90f67a311fbdb7.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 230px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
-			#mapLocation94 > div:after { content: "+✦";}
+			div.map-location-tooltip [data-id="94"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Grande place*/
-			#mapLocation95 > div { 
+			div.map-location-tooltip [data-id="95"] { 
 			background-image :
 			url("https://www.eldarya.fr/static/img/item/consumable/038852903f0a4ad1efc642904e6d9e4a.png"), 
 			url("https://www.eldarya.fr/static/img/item/consumable/7f7706d2ecb8ec936cc40193b175f295.png"),
@@ -1147,17 +1340,20 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/49db74af8d9dd6a32f9749e858ad6e59.png"), 
 			url("https://www.eldarya.fr/static/img/item/player/icon/3c086ad9a4a5f203cecb5649e949f46e.png")
 			!important ;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important ;
-			width: 190px !important ;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important ;
+			width: 180px !important ;
 			background-size : 40px 40px !important ;}
 
 		/*Rizière du Yin*/
-			#mapLocation96 > div {
+			div.map-location-tooltip [data-id="96"] {
 			background-image: 
 			url("https://www.eldarya.fr/static/img/item/egg/4f03d4c9253c9c534e361f4e0362cad0.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/17e16aa48425f114c688dc2338b1f910.png"),
@@ -1167,18 +1363,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/da0d134613191471ebd4538a3c8121f9.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/ca484913a429b9015a3707fcd171312e.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation96 > div:after { content: "-✦";}
+			div.map-location-tooltip [data-id="96"]:after { content: "- ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Rizière du Yang*/
-			#mapLocation97 > div {
+			div.map-location-tooltip [data-id="97"] {
 			background-image: 
 			url("https://www.eldarya.fr/static/img/item/egg/694f0696ad591928d65dcad811edf45f.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/499e1fc3169b68e6c6bbef85302d3011.png"),
@@ -1187,18 +1387,22 @@
 			url("https://www.eldarya.fr/static/img/player/hair/icon/e91c6cf7f708c4f53fcb755c56e8ab30.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/a09c04b0017829e18d3b735ec0aabe7f.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation97 > div:after { content: "+❤ ║ +✦";}
+			div.map-location-tooltip [data-id="97"]:after { content: "+ ✦ ║ + ❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Forêt Ouest*/
-			#mapLocation98 > div {
+			div.map-location-tooltip [data-id="98"] {
 			background-image: 
 			url("https://www.eldarya.fr/static/img/item/consumable/91e490ce1f5032a215a1872986b5d465.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/1d11307daf0f3eb70e8b5546d2d3d655.png"),
@@ -1207,18 +1411,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/599805530b4d12e3d35031a37ccb1873.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/a458931b16beb13a12f3d2d62660c630.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation98 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="98"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Mausolée*/
-			#mapLocation99 > div {
+			div.map-location-tooltip [data-id="99"] {
 			background-image:
 			url("https://www.eldarya.fr/static/img/item/egg/5b03292164f6ed9a4a0b2f8f2db8322d.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/fe5ef55112b040732da083b84f1e4f44.png"),
@@ -1226,18 +1434,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/4d3f1607f4957258c7cf56a5d35085c4.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/a264b4a3ac2cbfb0692d5f776b5e5b4d.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation99 > div:after { content: "±✦";}
+			div.map-location-tooltip [data-id="97"]:after { content: "± ✦";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*foret des manchots*/
-			#mapLocation100 > div {
+			div.map-location-tooltip [data-id="100"] {
 			background-image:
 			url("https://vignette.wikia.nocookie.net/eldarya/images/c/c3/Oeuf_acopafel.png/revision/latest?cb=20171029164932&path-prefix=fr"),
 			url("https://www.eldarya.fr/static/img/item/consumable/d0571cf77989a8643fb7ef0c9b12a377.png"),
@@ -1248,36 +1460,40 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/a40c73e1c12b8166f12431e1ba4e6f16.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/b483e1701dfe8c0770adb92bc2f5c884.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation100 > div:after { content: " ";}
 
 		/*porte du renouveau*/
-			#mapLocation101 > div {
+			div.map-location-tooltip [data-id="101"] {
 			background-image:
 			url("https://www.eldarya.fr/static/img/item/consumable/21084e8ce947fd14fe5907c8f27a05ac.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/df146e748d08a4a1247ca595cf3a329f.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/84a38236b979610b4290d859fd54a90d.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/3a03eb268088654b16a3c6bbeb6a4673.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 140px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation101 > div:after { content: " ";}
 
 		/*Jardin du Soleil*/
-			#mapLocation104 > div {
+			div.map-location-tooltip [data-id="104"] {
 			background-image:
 			url("https://www.eldarya.fr/static/img/item/egg/65e603b0961c0f48150f450b52187690.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/4869ef1dd3b6e80eedf06c868b733915.png"),
@@ -1289,18 +1505,22 @@
 			url("https://www.eldarya.fr/static/img/item/player/icon/a09c04b0017829e18d3b735ec0aabe7f.png"),
 			url("https://www.eldarya.fr/static/img/item/player/icon/a1598c8cb55fa5bfdb84d111fc43edf1.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation104 > div:after { content: "-✦";}
+			div.map-location-tooltip [data-id="104"]:after { content: "- ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Foret du Phoenix*/
-			#mapLocation105 > div {
+			div.map-location-tooltip [data-id="105"] {
 			background-image:
 			url("https://www.eldarya.fr/static/img/item/player//icon/1839f90489ac7aeabde2187b52fc5b37.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/11bbd28ba3158a3cfb21661a3a19e18e.png"),
@@ -1308,18 +1528,22 @@
 			url("https://www.eldarya.fr/static/img/player/hair//icon/1372df70a2f9eae59098966d5fd0c4f8.png"),
 			url("https://www.eldarya.fr/static/img/item/consumable/04e02d7650452e28e9e80d14ebbb5fff.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation105 > div:after { content: "+❤";}
+			div.map-location-tooltip [data-id="105"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Jardin de la lune*/
-			#mapLocation102 > div {
+			div.map-location-tooltip [data-id="102"] {
 			background-image:
 			url("https://www.eldarya.fr/assets/img/player/hair/icon/be7c3efb0e59f5ee73e6958f3034eb0e.png"),
 			url("https://www.eldarya.fr/assets/img/item/consumable/9979565445521bed1cab9aa8eec1f30b.png"),
@@ -1328,18 +1552,22 @@
 			url("https://www.eldarya.fr/assets/img/item/player/icon/91d47fc87087ad476972f0765af94150.png"),
 			url("https://www.eldarya.fr/assets/img/item/player/icon/fa9157e5f91b3b3d14cbf6cdcb6b21fb.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation102 > div:after { content: " -✦ ";}
+			div.map-location-tooltip [data-id="102"]:after { content: "- ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Pont de Moh*/
-			#mapLocation103 > div {
+			div.map-location-tooltip [data-id="103"] {
 			background-image:
 			url("https://www.eldarya.fr/assets/img/item/consumable/065032d287b1bae71fc5fcc27fe6e52e.png"),
 			url("https://www.eldarya.fr/assets/img/item/player/icon/58824d8448624b3563ef08b9eb0148a9.png"),
@@ -1349,18 +1577,22 @@
 			url("https://www.eldarya.fr/assets/img/item/consumable/fb821420d444478fe7d1fd405d020a29.png"),
 			url("https://www.eldarya.fr/assets/img/item/player/icon/377a6a45f262708c93a12cea95cebcb2.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation103 > div:after { content: "+❤ || -✦";}
+			div.map-location-tooltip [data-id="103"]:after { content: "-✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
 		/*Rivière du Serpent*/
-			#mapLocation106 > div {
+			div.map-location-tooltip [data-id="106"] {
 			background-image:
 			url("https://www.eldarya.fr/assets/img/item/player/icon/0d050a1f22d30a615793ba76523f6a4a.png"),
 			url("https://www.eldarya.fr/assets/img/item/player/icon/1e4e977df1ebcf591cfcfe01d7653e42.png"),
@@ -1368,17 +1600,54 @@
 			url("https://www.eldarya.fr/assets/img/item/consumable/44b37f167eea159dabb010b965cbc3d2.png"),
 			url("https://www.eldarya.fr/assets/img/player/hair/icon/d17de84ac211f11d0cdfb5ab9a349938.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px;
-			height: 180px !important;
-			width: 190px !important;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px !important;
+			width: 180px !important;
 			background-size: 40px 40px !important ;}
-			#mapLocation106 > div:after { content: "+✦ ";}
+			div.map-location-tooltip [data-id="106"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; } 
 
-		/*MAP HALLOWEEN*/
+/*NEW ERA*/
+	
+	/*MAP CITE D'EEL*/
+
+		/*QG protégé*/
+            div.map-location-tooltip [data-id="109"] { 
+			background-image : 
+			url("https://www.eldarya.fr/assets/img/player/mouth//icon/6147fe8a0a10e6ffb5c8b290f74b2fad~1604543392.png"),
+			url("https://www.eldarya.fr/assets/img/item/player//icon/651a7109dd63472479ead46b4f8f4da0~1604521009.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/02b6cec1ea0d27d183bbb2d04140e859~1600333078.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/2c25185653bfc6e938588b4406f50362.png"),
+			url("https://www.eldarya.fr/assets/img/item/player//icon/cee54e175ceb7e7aece120b3497f46ef~1604530091.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/f0e272569ab3d928ee4f51d95e388cd3~1595509403.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/bc8e739b61f520653a4dc53ebc5050f8.png"),
+			url("https://www.eldarya.fr/assets/img/item/consumable/59570f85535033e2658f9151a8116719.png")
+			!important;
+			background-repeat: no-repeat!important;
+			background-position:
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
+			background-size : 40px 40px !important ;}
+			div.map-location-tooltip [data-id="109"]:after { content: "+ ✦";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
+
+
+/*EVENT*/
+
+	/*MAP HALLOWEEN*/
 
 		/*Manoir du laborantin COMPLET*/ 
 				#mapLocation36 > div { 
@@ -1432,7 +1701,7 @@
 				background-image:
 				url("https://www.eldarya.fr/assets/img/player/hair/icon/0a27092858f8d1a9b2ff6d8426a3ba99~1602234753.png"),
 				url("https://www.eldarya.fr/assets/img/item/consumable/2bace7e4437841475a6f33f3d6ce070a~1463557359.png"),
-url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0.png")
+				url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0.png")
 				!important;
 				background-repeat: no-repeat;
 				background-position:
@@ -1660,12 +1929,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 250px !important;
 			 }
@@ -1675,12 +1946,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1690,12 +1963,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1705,12 +1980,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1720,7 +1997,7 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
 			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
 			5px 145px;
@@ -1733,12 +2010,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1748,12 +2027,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1763,7 +2044,7 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
 			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px;
 			height: 140px !important;
@@ -1775,12 +2056,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1790,12 +2073,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1805,12 +2090,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1820,12 +2107,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1835,12 +2124,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 280px !important;
 			 }
@@ -1850,12 +2141,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1865,12 +2158,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1880,12 +2175,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			 }
@@ -1895,7 +2192,7 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
 			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px;
 			height: 140px !important;
@@ -1907,12 +2204,14 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 140px !important;
 			width: 190px !important;
 			 }
@@ -1922,7 +2221,7 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
 			5px 105px, 45px 105px, 85px 105px, 125px 105px;
 			height: 140px !important;
@@ -1934,13 +2233,15 @@ url("https://www.eldarya.fr/assets/img/item/egg/b25c50d0945ee2468f1b61acba45e7d0
 			background-image:
 			url("https://zupimages.net/up/19/52/sfwx.png")
 			!important;
-			background-repeat: no-repeat;
+			background-repeat: no-repeat!important;
 			background-position:
-			5px 105px, 45px 105px, 85px 105px, 125px 105px, 165px 105px,
-			5px 145px, 45px 145px, 85px 145px, 125px 145px, 165px 145px,
-			5px 185px, 45px 185px, 85px 185px, 125px 185px, 165px 185px,
-			5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px;
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
 			height: 180px !important;
 			width: 190px !important;
 			}
- }
+}

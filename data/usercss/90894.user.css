@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         stormi
 @description    `Soundcloud in dark :)For the nice font in the screenshot download & install this font: <a href="http://www.dafont.com/champagne-limousines.font">Champagne & Limousines</a> - For even more black & white experience you can additionally install <a href="https://userstyles.org/styles/107072/soundcloud-grayscale">Soundcloud Grayscale</a> --- Check out my other "Dark" styles:  ₪ <a href="https://userstyles.org/styles/50113">Google</a>  ₪ <a href="https://userstyles.org/styles/44530">Discogs</a>  ₪ <a href="https://userstyles.org/styles/155744">TabletPCReview & NotebookReview Forum</a>  ₪ <a href="https://userstyles.org/styles/43733">Computerbase</a>  ₪ <a href="https://userstyles.org/styles/31267">Global dark style</a>  ₪ <a href="http://userstyles.org/users/43566">and more...</a>`
-@version        2020118.23.40
+@version        2020119.20.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,7 +14,7 @@ html, .social-sign-in-separator span, .readMoreBadge__countWrapper {
     background: #000 !important}
 body, .site, .dashbox, .listenContent__inner, .sound__soundActions, .l-footer, .activity__sharingNote-container, .commentForm, .commentForm__inputWrapper, .commentForm__wrapper, .createPlaylist:hover, .createPlaylist.focused, .uploadStatus, .activeUpload__section, .activeUpload__quietTeaser, .activeUpload__blockTable.threeCell, .autoTagger__fields, .sc-background-light, .addToPlaylistTabs .tabs__tabs, .g-modal-section, .addToPlaylistItem__actions, .createPlaylistSuggestion__addContainer, .conversation__actions, .conversation__form, .inbox__item:before, .inboxItem.active, .inboxItem:hover, .g-form-section.highlight:hover, .advancedFields__quietTeaser, .sharePanel .tabs__tabs, .embedPanel__tabLink, .manageSounds__upsellWrapper, .uploadMain__foot, .searchTitle__content, .audibleEditForm__form, .tabs__tabs, .tabs__headingContainer, .commentItem.m-creatorComment, .trackManager__upsellWrapper, .linkMenu, .activeUpload__shareContainer, .profileUploadFooter, .quotaMeterWrapper, .sc-background-white, .statsOverview__separator {
     background: transparent !important}
-.commentForm, .commentForm__inputWrapper, .commentForm__wrapper, .sc-button-group, .sound__footer.sc-border-light-bottom, .header__soundInput, .listenEngagement, .searchTitle__content {
+.commentForm, .commentForm__inputWrapper, .commentForm__wrapper, .sc-button-group, .sound__footer.sc-border-light-bottom, .header__soundInput, .listenEngagement, .searchTitle__content, h1.searchTitle__text {
     border: none !important}
 .conversation__actions, .conversation__form, .listenEngagement {
     box-shadow: none !important}
@@ -60,8 +60,8 @@ body, .sc-text, .resultCounts, .g-nav-link, h3.conversationBadge__senderName, .s
 #app h1.stream__noticeTitle:after {background: linear-gradient(rgba(17,17,17,0) 40%, #111)}
 h1.widgetCustomizationContent__title:after, .g-modal-title-h1:after {background: linear-gradient(rgba(21,21,21,0) 25%, #151515)}
 */
-#app h1, #app h1 * {-webkit-mask-image: -webkit-linear-gradient(#000 55%, rgba(0,0,0,.2)) !important}
-.userDropbar__title, h2.selectionModule__titleText, .infoStats__value, .statsBadge__value, .chartTrack__position, .collectionSection__heading {
+#app h1[class$="Main__title"], #app h1 span, h1.sc-type-h1 {-webkit-mask-image: -webkit-linear-gradient(#000 55%, rgba(0,0,0,.2)) !important}
+.userDropbar__title, h2.selectionModule__titleText, .infoStats__value, .statsBadge__value, .chartTrack__position, .collectionSection__heading, .insightsSidebarModule__plays {
     /* background: linear-gradient(#1AF, #028) !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important; */
@@ -75,6 +75,8 @@ h1.widgetCustomizationContent__title:after, .g-modal-title-h1:after {background:
 #app h1 a:hover, .userDropbar__title:hover {
     color: #18F !important;
     text-shadow: 0 1px #4AF, 0 0 6px #18F !important}
+.insightsSidebarModule__plays {
+  text-shadow: 0 1px 0 #FFF !important}
 
 
 .fullHero__title .soundTitle__title, .listen-content .soundTitle__title span {

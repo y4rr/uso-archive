@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        2020115.10.42
+@version        2020119.13.20
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -29,6 +29,11 @@ FansMedal_OFF "关" <<<EOT /*FansMedal*\/ EOT;
 @advanced dropdown BarrageNoble "贵族徽章屏蔽" {
 	BarrageNoble_ON "开*" <<<EOT .Barrage-noble.Barrage-icon, EOT;
 BarrageNoble_OFF "关" <<<EOT /*BarrageNoble*\/ EOT;
+
+}
+@advanced dropdown RoomVipIcon "房间VIP图标屏蔽" {
+	RoomVipIcon_ON "开*" <<<EOT .Barrage-roomVipIcon, EOT;
+RoomVipIcon_OFF "关" <<<EOT /*RoomVipIcon*\/ EOT;
 
 }
 @advanced dropdown Scrollbar "浏览器滚动条样式更改" {
@@ -415,6 +420,7 @@ url-prefix("http://www.douyu.com/") {
     /*[[ChatLetter]]*/
     /*[[FansMedal]]*/
     /*[[BarrageNoble]]*/
+    /*[[RoomVipIcon]]*/
     .Barrage-noble,
     .Motor,
     .Barrage-userEnter,
@@ -3997,6 +4003,10 @@ url-prefix("http://www.douyu.com/") {
     }
     .SortTabs-seperator {
         color: #424242!important;
+    }
+    .Barrage-roomVipIcon{
+        top:50%!important;
+        transform: translateY(-50%)!important;
     }
     .RoomList-tags li,
     .layout-Module-label,

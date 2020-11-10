@@ -1,17 +1,20 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.2
+@name           Compact Tube (White) v1.3.3
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020118.14.10
+@version        2020119.15.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.2 */
+/* CompactTube (White) v1.3.3 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
+/*    ENG: here you can install a helper script to automatically hide the Left Menu(Guide Menu)
+      RU: тут вы можете установить вспомогательный скрипт автоматически скрывающий Левое Меню(Гид Меню)
+        https://greasyfork.org/scripts/415761-hide-ytb-guide-menu                                          */
 
 /*█▀▀▀▀▀▀▀▀▀▀▀▀▀   включение ТЁМНОЙ ТЕМЫ для шапки  /  enabling DARK THEME for the Header   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
   █                                                                                                                  █
@@ -1151,6 +1154,9 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 -o-::-webkit-scrollbar-button {height: 14px; background: var(--yt-opalescence-grey-opacity-lighten-3);
 border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
 
+/* Подсвечивание Ползука при наведении курсора Мыши */
+::-webkit-scrollbar-thumb:hover {background: rgba(155, 155, 155, .58);}
+
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 /* отступ сверху Шапки каналов до блоков с Видео (только на каналах) */
@@ -1273,10 +1279,12 @@ color: #f00; font-size: 1.1rem; /* var(--ytd-tab-system_-_font-size); */
     text-transform: var(--ytd-tab-system_-_text-transform); display: block; padding: 8px 24px;}
 
 /* добавление Верхнего Бордюха в список видео Уведомлений Колокольчика */
-ytd-simple-menu-header-renderer {border-top: 1px solid var(--yt-spec-10-percent-layer);}
+ytd-simple-menu-header-renderer {box-shadow: inset 0px 1px 0px 0px var(--yt-spec-10-percent-layer); 
+    -o-border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* добавление Верхнего Бордюха в Меню Пользователя */
-ytd-active-account-header-renderer {border-top: 1px solid var(--yt-spec-10-percent-layer);}
+ytd-active-account-header-renderer {box-shadow: inset 0px 1px 0px 0px var(--yt-spec-10-percent-layer); 
+    -o-border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* всплывающее меню: "Смотреть позже" "Добавить в очередь" на Миниатюрах на Главной странице и на Каналах - Размер Шрифта */
 ytd-thumbnail-overlay-toggle-button-renderer[use-expandable-tooltip] #label.ytd-thumbnail-overlay-toggle-button-renderer 
@@ -1694,7 +1702,8 @@ position: relative; top: 0px; right: 11px;}
 
 
 /* Сокращённый Блок Прямых Трансляций */
-ytd-channel-featured-content-renderer {height: 157px;/*153*/ overflow-y: auto; overflow-x: hidden;}
+ytd-channel-featured-content-renderer {-o-height: 157px;/*153*/ overflow-y: auto; overflow-x: hidden;
+min-height: 153px; max-height: 190px}
 
         /* Скроллбар для промотки множества Трансляций */
 /* Установка Самого Скроллбара */
@@ -1713,6 +1722,8 @@ ytd-channel-featured-content-renderer::-webkit-scrollbar-track {
     height: 4px;
     background: var(--yt-opalescence-grey-opacity-lighten-3);
     border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
+/* подсвечивание Активного Пути Скроллбара */
+ytd-channel-featured-content-renderer::-webkit-scrollbar-track:active {background: rgba(155, 155, 155, .29);}
 
 
 
@@ -1734,7 +1745,7 @@ ytd-channel-featured-content-renderer::-webkit-scrollbar-track {
 ytd-channel-featured-content-renderer {
     overflow-x: hidden;
     display: block;
-    padding: 12px 0 24px; /*12px 0 24px*/
+    padding: 12px 0 8px; /*12px 0 24px*/
     -o-border-bottom: 1px solid var(--yt-spec-10-percent-layer);
     background: var(--yt-spec-brand-background-primary);
     position: relative; top: 0px;/*10px, 6px*/ left: 0px;
@@ -2167,8 +2178,10 @@ border-bottom: 1px solid var(--yt-spec-10-percent-layer); margin-bottom: 8px;}
     top: -4px;
     margin-left: 8px;
     margin-right: -6px;
-    vertical-align: bottom;
-}
+    vertical-align: bottom;}
+
+/* Вспомогательный Бэйдж [доступ по ссылке] и тд. под видео (позицианирование) */
+ytd-badge-supported-renderer.ytd-video-primary-info-renderer {margin: 2px 0px 0px 12px;}
 
 /*Аплоадер (никнейм) видео и количество подписчиков - позиционирование*/
 #upload-info.ytd-video-owner-renderer {
@@ -2377,7 +2390,14 @@ box-shadow: 0px 0px 1px 1px rgba(178, 178, 178, .27);}
 
 /* Цвет Ползунка Плейлиста под Видео */
 .playlist-items.ytd-playlist-panel-renderer::-webkit-scrollbar-thumb {
-    background: #797979; box-shadow: inset 1px 0px 0px 0px #4D4D4D;}
+    background: #797979; box-shadow: inset 1px 0px 0px 0px #4D4D4D , inset -1px 0px 0px 0px #4D4D4D;}
+
+/* Цвет Подсвеченного Ползунка Плейлиста под Видео */
+.playlist-items.ytd-playlist-panel-renderer::-webkit-scrollbar-thumb:hover {background-color: #8c8c8c;}
+
+/* Цвет Активного поля Скроллбара в Плейлисте под Видео */
+.playlist-items.ytd-playlist-panel-renderer::-webkit-scrollbar-track:active {background-color: #4D4D4D;}
+
 
 
 /* Цвет Бэкграунда Роликов в Плейлисте под Видео */
@@ -2416,7 +2436,7 @@ ytd-playlist-panel-video-renderer[selected][watch-color-update_] {background-col
 
 /* Цвет подсвечиваемого мышкой Видео в плейлисте */
 ytd-playlist-panel-video-renderer[watch-color-update_]:hover:not(.dragging) {
-background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252} /* var(--yt-spec-badge-chip-background) */
+background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252} /*#262626, var(--yt-spec-badge-chip-background) */
 
 /* Отступ сверху миниатюр Видео (и между миниатюраии) на Вкладке с Видео */
 ytd-compact-video-renderer {padding-top: 7px;}
@@ -2518,6 +2538,41 @@ z-index: 18; pointer-events: none;}
 .ytp-big-mode .ytp-spinner-circle {border-width: 8px;}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+
+/* ███▓▒░ ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ оформления: при просмотре YouTube не заходя на Аккаунт ░▒▓███ */
+
+/* Мини Кнопки [Подписаться] под каналами - "не заходя на Аккаунт" (позицианирование) */
+ytd-button-renderer.ytd-grid-channel-renderer.style-compact-gray.size-default {
+    position: relative; top: -15px; left: 41px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; 
+    border-radius: 2px; box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5);}
+
+/* Мини Кнопки [Подписаться] под каналами - "не заходя на Аккаунт" (шрифт, размер, позицианирование) */
+yt-formatted-string#text.ytd-button-renderer.style-compact-gray.size-default {
+    font-size: 1.1rem; text-transform: none; margin: -3px 0px -2px 0px; padding: 1px 0px 0px 0px ;}
+
+/* Мини Кнопки [Подписаться] под ИЗБРАННЫМИ каналами на странице Канала - "не заходя на Аккаунт" (позицианирование)*/
+ytd-button-renderer.ytd-mini-channel-renderer.style-compact-gray.size-default {
+    position: relative; top: -15px; left: 41px;
+    box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5);}
+
+/* Размер Большой кнопки [Подписаться] по высоте, по ширине - "не заходя на Аккаунт" + (размер шрифта) */
+paper-button#button.ytd-button-renderer.style-destructive.size-default {
+    border-radius: 2px; box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5); padding: 4.0px 10px; font-size: 1.4rem;}
+
+/* Позицианирование Большой кнопки [Подписаться] на каналах - "не заходя на Аккаунт" */
+    ytd-button-renderer.ytd-c4-tabbed-header-renderer.style-destructive.size-default {margin-right: 4px;}
+
+/* Позицианирование Большой кнопки [Подписатьсяв] в Поиске - "не заходя на Аккаунт"  */
+    ytd-button-renderer.ytd-channel-renderer.style-destructive.size-default {margin-right: 4px;}
+
+/* Позицианирование Большой кнопки [Подписатьсяв] под Видео - "не заходя на Аккаунт"  */
+    ytd-button-renderer.ytd-video-secondary-info-renderer.style-destructive.size-default {margin-right: 4px;}
+
+/* Верхний бордюр для Правого меню (︙) рядом с кнопкой [ВОЙТИ] */
+ytd-multi-page-menu-renderer.ytd-popup-container {box-shadow: inset 0px 1px 0px 0px var(--yt-spec-10-percent-layer);}
+
+/* ███▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░ (конец параграфа) ░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓███ */
 
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  Главное ЛЕВОЕ Меню (Гид Меню)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */

@@ -1,0 +1,190 @@
+/* ==UserStyle==
+@name           Eldarya New Era - Corrections Website
+@namespace      USO Archive
+@author         Loplo
+@description    `Modifie la nouvelle apparence du site pour la rendre plus lisible.`
+@version        2020119.16.44
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("eldarya.fr") {
+/** -------------------------  COMMUN  ------------------------- **/
+body {
+    line-height: 1.3em;
+}
+
+#currencies{
+    position: fixed;
+    top: 0;
+    right: 360px;
+    z-index: 9000;
+}
+
+#menu-bar #menu li a {
+    font-size: 18px;
+    color: #321540;
+    text-shadow: 0 0 4px #d4f4f3, 0 0 1px #fff;
+    font-weight: bold;
+}
+
+#header-right #header-profile {
+    font-weight: bold;
+}
+
+.maana-icon,
+#currencies #currency-maana::after {
+    background-image: url("https://www.eldarya.fr/static/img/coin_blue.png");
+}
+
+.gold-icon,
+#currencies #currency-gold::after {
+    background-image: url("https://www.eldarya.fr/static/img/coin_gold.png");
+}
+
+#currencies #currency-maana::after,
+#currencies #currency-gold::after {
+    width: 17px;
+    height: 17px;
+    left: 30px;
+}
+
+/** -------------------------  FAMILIER  ------------------------- **/
+#levels-container {
+    width: 605px;
+    margin: auto;
+}
+
+#bonus-bar {
+    top: 550px;
+    width: 1200px;
+}
+
+#bonus-bar #treasure-hunt-bonus-explanation {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    width: 520px;
+}
+
+#infos-container {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 2;
+    width: 300px!important;
+    height: 300px!important;
+}
+
+#bonus-bar #levels-container .level .energy-required {
+    color: #FFF;
+    font-size: 18px;
+}
+
+#bonus-bar #levels-container .level.pending .energy-required,
+#bonus-bar #levels-container .level.can-open .energy-required {
+    width: calc(var(--bonus-bar-level-width) * 0.7);
+}
+
+/*#main-section{
+    width: 1600px;
+}*/
+/** -------------------------  MARCHE  ------------------------- **/
+li.marketplace-abstract:nth-child(1) > div:nth-child(3) > div:nth-child(2),
+li.marketplace-abstract:nth-child(2) > div:nth-child(3) > div:nth-child(2),
+li.marketplace-abstract:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+    border: none;
+    position: absolute;
+    bottom: -60px;
+    left:19px;
+}
+
+li.marketplace-abstract:nth-child(1) > div:nth-child(2) > div:nth-child(2),
+li.marketplace-abstract:nth-child(2) > div:nth-child(2) > div:nth-child(2),
+li.marketplace-abstract:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+    position: absolute;
+    top: 50px!important;
+    width: 171px;
+    height: 80px;
+    left:0;
+}
+
+#marketplace-abstract-sales .abstract-time, #marketplace-abstract-purchases .abstract-time{
+    position: absolute;
+    top: 5px;
+}
+
+#marketplace-menu .nl-button {
+    background: #0070ff0a;
+}
+
+.abstract-currentPrice {
+    font-size: 14px;
+}
+
+.marketplace-abstract .abstract-type {
+    display: none;
+}
+
+.marketplace-abstract .abstract-content {
+    height: 65px;
+    width: 155px;
+    background: linear-gradient(211deg, #FCA6FF 0%, #B769EE 100%);
+    box-shadow: inset 0 0 27px rgba(187, 9, 198, 0.55), 0 5px 4px 1px rgba(79, 16, 128, 0.36);
+    color: white;
+    top: 85px;
+    left: 9px;
+    position: absolute;
+}
+
+.marketplace-abstract .abstract-time {
+    bottom: 110px;
+    border: none;
+    position: absolute;
+}
+
+.price-item {
+    color: white;
+    font-size: 21px;
+}
+
+body.season-s2 .flavr-button,
+body.season-s2 .nl-button {
+    background: none;
+    color: rgb(52, 56, 111);
+    box-shadow: none;
+}
+
+.marketplace-abstract .abstract-name {
+    font-size: 20px;
+    margin: 10px 2px auto;
+}
+
+.marketplace-search-items li,
+.marketplace-itemsForSale-items li,
+.marketplace-auctions-item,
+.marketplace-sales-item {
+    width: 180px!important;
+    height: 270px;
+}
+
+#marketplace-main-content .marketplace-container,
+#marketplace-main-content {
+    width: 800px!important;
+}
+
+.marketplace-main-container .page {
+    font-size: 19px;
+    width: 30px;
+    border-radius: 80%;
+    height: 16px;
+}
+
+#marketplace-active-auctions {
+    width: 850px;
+}
+
+#marketplace-abstract-purchases,
+#marketplace-abstract-sales {
+    width: 380px;
+}
+}

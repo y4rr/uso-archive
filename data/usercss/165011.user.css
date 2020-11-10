@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
-@version        2020119.9.34
+@version        2020119.16.34
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1000,27 +1000,27 @@ font_verdana "Verdana" <<<EOT html, body {font-family: 'Verdana', sans-serif !im
 }
 @advanced dropdown width-thread "Ширина треда" {
 	width-thread1 "Авто (по-центру)*" <<<EOT .cntnt {max-width: 1024px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1024px; margin: 0 auto; padding: 0 10px;}
+.ctlg, .body-stickers {max-width: 1024px; margin: 0 auto; padding: 0 10px;}
 @media only screen and (min-width: 1280px) and (orientation:portrait),  only screen and (min-width: 1280px) and (orientation:landscape){
 .cntnt {max-width: 1024px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1024px; margin: 0 auto; padding: 0 10px;}
+.ctlg, .body-stickers {max-width: 1024px; margin: 0 auto; padding: 0 10px;}
 }
 @media only screen and (min-width: 1480px) and (orientation:portrait),  only screen and (min-width: 1480px) and (orientation:landscape){
 .cntnt {max-width: 1280px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1280px; margin: 0 auto; padding: 0 10px;}
+.ctlg, .body-stickers {max-width: 1280px; margin: 0 auto; padding: 0 10px;}
 }
 @media only screen and (min-width: 1920px) and (orientation:portrait),  only screen and (min-width: 1920px) and (orientation:landscape){
 .cntnt {max-width: 1480px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1480px; margin: 0 auto; padding: 0 10px;}
+.ctlg, .body-stickers {max-width: 1480px; margin: 0 auto; padding: 0 10px;}
 } EOT;
 width-thread0 "Стандарт (слева)" <<<EOT .cntnt {padding: 0 5px 0 42px;}
-.catalog, .body-stickers {padding: 0 10px;} EOT;
+.ctlg, .body-stickers {padding: 0 10px;} EOT;
 width-thread2 "1080px (по-центру)" <<<EOT .cntnt {max-width: 1080px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1080px; margin: 0 auto; padding: 0 10px;} EOT;
+.ctlg, .body-stickers {max-width: 1080px; margin: 0 auto; padding: 0 10px;} EOT;
 width-thread3 "1280px (по-центру)" <<<EOT .cntnt {max-width: 1280px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1280px; margin: 0 auto; padding: 0 10px;} EOT;
+.ctlg, .body-stickers {max-width: 1280px; margin: 0 auto; padding: 0 10px;} EOT;
 width-thread4 "1480px (по-центру)" <<<EOT .cntnt {max-width: 1480px; margin: 0 auto; padding: 0 5px 0 42px;}
-.catalog, .body-stickers {max-width: 1480px; margin: 0 auto; padding: 0 10px;} EOT;
+.ctlg, .body-stickers {max-width: 1480px; margin: 0 auto; padding: 0 10px;} EOT;
 
 }
 @advanced dropdown report-checkbox "Чекбокс для жалоб" {
@@ -1258,15 +1258,15 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 .linktoboard a:hover {color: var(--theme_default_link);}
 .linktoboard a::before {content: "arrow_back"; font: 24px/1 'Material Icons'; padding: 2px; margin: -2px; vertical-align: -6px;}
 
+.ctlg {padding: 10px;}
+.ctlg__thread {border: none; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin: 5px;}
+.ctlg__thread_abs {box-shadow: 0 0 0 1px var(--theme_default_border), 0 6px 16px var(--theme_shadow3); margin: 0; margin-top: -20px; margin-left: -70px;}
+.ctlg__img {padding: 10px 10px 0 10px;}
 .ctlg__img img {border-radius: 3px; height: auto; width: auto;}
-.ctlg__meta {background-color: transparent; font-family: unset;}
+.ctlg__meta {background-color: transparent; font-family: unset; color: var(--theme_default_alttext2);}
+.ctlg__title {font-family: unset; color: var(--theme_default_text);}
 .orange {color: var(--theme_default_link);}
-/*.logo {font-family: unset;}
-
-.centered span[style="float:left"] a {color: var(--theme_default_alttext); font-size: 0;}
-.centered span[style="float:left"] a:hover {color: var(--theme_default_link);}
-.centered span[style="float:left"] a::before {content: "arrow_back"; font: 24px/1 'Material Icons'; padding: 2px; margin: -2px; vertical-align: -6px;}
-
+/*
 .thread_wrap {border: none; border-radius: 3px; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin: 5px;}
 .thread_wrap.expandble:hover .cthread {border-radius: 3px; box-shadow:  0 0 0 1px var(--theme_default_border);}
 .thumb {border-radius: 3px; box-shadow: none; max-width: 228px; height: auto;}*/
@@ -1625,7 +1625,7 @@ path[fill="#ececec"] {fill: inherit !important;}
 .nb__switcher_active {color: var(--theme_default_text) !important;}
 .nb__data {width: unset; margin: 0 15px 10px;}
 .nb__item {color: transparent;}
-.nb__item::before {color: var(--theme_default_text); content: "\f1ea"; font: 14px/1 FontAwesome;}
+.nb__item::before {color: var(--theme_default_text); content: "sticky_note_2"; font: 14px/1 'Material Icons'; vertical-align: -2px;}
 .nb__item a {margin-left: -3px;}
 
 .nb + hr, .adminbar-bottom {display: none;}

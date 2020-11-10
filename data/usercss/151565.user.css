@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         anon-anon
 @description    `Допиленный тёмный стиль «Tomorrow2ch (support Makaba)» для 2ch.hk.Для корректной работы в настройках должен стоять Makaba.Для настройки используйте кнопку <strong>Customize Settings</strong>.`
-@version        2020119.4.0
+@version        2020119.17.26
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown width "Расположение постов" {
@@ -692,6 +692,20 @@ div[class="post-wrapper new-posts-marker"] {
     --theme_inputtext: #333;
     --theme_inputborder: #282a2e;
     --theme_shadow: #282a2e;
+}
+ .note-editor.note-frame .note-editing-area .note-editable {
+    padding: 10px;
+    overflow: auto;
+    color: #c5c8c6;
+    word-wrap: break-word;
+    background-color: #282a2e;
+}
+.input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    padding: 1px;
+}
+button, input, optgroup, select, textarea {
+    font: inherit;
+    margin: 0;
 }
 .ctlg__thread {
     

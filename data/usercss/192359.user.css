@@ -1,0 +1,190 @@
+/* ==UserStyle==
+@name           Eldarya Dark (New Era)
+@namespace      USO Archive
+@author         Ashalinda
+@description    `Changes styles for New Era`
+@version        2020119.19.49
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.dk"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.hu"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.nl"), url-prefix("https://www.eldarya.ro"), url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.se"), url-prefix("https://www.eldarya.uk") {
+#menu-bar {
+    background: rgb(100 66 109);
+}
+.home-interface-container #left-bg img {
+    filter: none;
+}
+.page-main-container {
+    background-image: url(https://s8.hostingkartinok.com/uploads/images/2020/08/2398fd7db04e333ce533dbf3a23b9eb5.jpg) !important;
+}
+.flavr-button, .nl-button {
+    background: linear-gradient(211deg, #000000 0%, #0e2d28 100%);
+}
+#right-bg::before {
+    display: none;
+}
+#currencies {
+    position: fixed;
+    right: 0px;  
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.fr/player/wardrobe/"), url-prefix("https://www.eldarya.com/player/wardrobe/"), url-prefix("https://www.eldarya.com.br/player/wardrobe/"), url-prefix("https://www.eldarya.pl/player/wardrobe/"), url-prefix("https://www.eldarya.de/player/wardrobe/"), url-prefix("https://www.eldarya.dk/player/wardrobe/"), url-prefix("https://www.eldarya.es/player/wardrobe/"), url-prefix("https://www.eldarya.hu/player/wardrobe/"), url-prefix("https://www.eldarya.it/player/wardrobe/"), url-prefix("https://www.eldarya.nl/player/wardrobe/"), url-prefix("https://www.eldarya.ro/player/wardrobe/"), url-prefix("https://www.eldarya.ru/player/wardrobe/"), url-prefix("https://www.eldarya.se/player/wardrobe/"), url-prefix("https://www.eldarya.uk/player/wardrobe/") {
+#main-section {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    width: 100%;
+}
+.attic-container #right-bg {
+    width: 100%;
+}
+.attic-container #attic-inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px);
+    padding-top: 25px;
+}
+.attic-container #attic-inner-container > * {
+    flex: 0 1 auto;
+}
+.attic-container #main-section {
+    height: 94vh;
+}
+.attic-container #attic-inner-container > #attic {
+    flex: 1 1 auto;
+}
+#attic-inactive-items,
+#attic-active-items {
+    width: 46%;
+    height: 100%;
+    max-height: calc(100vh - 430px);
+}
+#attic ul {
+    height: calc(100% - 40px);
+    max-height: none;
+}
+.appearance-category,
+.appearance-item,
+.appearance-item-group {
+    margin: 5px 4px;
+}
+a.nl-button.nl-button-back {
+    width: fit-content;
+}
+#currencies {
+    display: none;
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.fr/player/appearance"), url-prefix("https://www.eldarya.com/player/appearance"), url-prefix("https://www.eldarya.com.br/player/appearance"), url-prefix("https://www.eldarya.pl/player/appearance"), url-prefix("https://www.eldarya.de/player/appearance"), url-prefix("https://www.eldarya.dk/player/appearance"), url-prefix("https://www.eldarya.es/player/appearance"), url-prefix("https://www.eldarya.hu/player/appearance"), url-prefix("https://www.eldarya.it/player/appearance"), url-prefix("https://www.eldarya.nl/player/appearance"), url-prefix("https://www.eldarya.ro/player/appearance"), url-prefix("https://www.eldarya.ru/player/appearance"), url-prefix("https://www.eldarya.se/player/appearance"), url-prefix("https://www.eldarya.uk/player/appearance") {
+.appearance-interface-container #avatar-background img {
+    filter: none;
+    width: auto;
+}
+.appearance-interface-container #right-bg::before,
+#layout-2col-left:before {
+    display: none;
+}
+
+#appearance-section-title > span {
+    display: none;
+}
+
+.appearance-interface-container #right-bg {
+    opacity: 1;
+    background: #d6d5d5;
+}
+#currencies {
+    display: none;
+}
+#appearance-right {
+    padding-top: 20px;
+}
+#appearance-right #appearance-items {
+    height: calc(100% - 125px);
+    display: flex;
+    flex-direction: column;
+}
+#appearance-right #appearance-items > * {
+    flex: 0 1 auto;
+}
+#appearance-items #appearance-items-categories.active {
+    height: calc(100vh - 295px);
+    max-height: none;
+}
+#appearance-right #appearance-items .appearance-items-category.active {
+    flex: 1 1 auto;
+}
+.appearance-items-category.active .appearance-items-list {
+    height: calc(100vh - 470px);
+    max-height: none !important;
+}
+.page-main-container.appearance-interface-container {
+    background-image: none !important;
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.fr/mall"), url-prefix("https://www.eldarya.com/mall"), url-prefix("https://www.eldarya.com.br/mall"), url-prefix("https://www.eldarya.pl/mall"), url-prefix("https://www.eldarya.de/mall"), url-prefix("https://www.eldarya.dk/mall"), url-prefix("https://www.eldarya.es/mall"), url-prefix("https://www.eldarya.hu/mall"), url-prefix("https://www.eldarya.it/mall"), url-prefix("https://www.eldarya.nl/mall"), url-prefix("https://www.eldarya.ro/mall"), url-prefix("https://www.eldarya.ru/mall"), url-prefix("https://www.eldarya.se/mall"), url-prefix("https://www.eldarya.uk/mall") {
+.appearance-interface-container #avatar-background img {
+    filter: none;
+    width: auto;
+}
+.appearance-interface-container #right-bg::before,
+#layout-2col-left:before {
+    display: none;
+}
+
+#appearance-section-title > span {
+    display: none;
+}
+
+.appearance-interface-container #right-bg {
+    opacity: 1;
+    background: #d6d5d5;
+}
+#appearance-right {
+    padding-top: 20px;
+}
+#appearance-right #appearance-items {
+    height: calc(100% - 125px);
+    display: flex;
+    flex-direction: column;
+}
+#appearance-right #appearance-items > * {
+    flex: 0 1 auto;
+}
+#appearance-items #appearance-items-categories.active {
+    height: calc(100vh - 295px);
+    max-height: none;
+}
+#appearance-right #appearance-items .appearance-items-category.active {
+    flex: 1 1 auto;
+}
+.appearance-items-category.active .appearance-items-list {
+    height: calc(100vh - 500px);
+    max-height: none !important;
+}
+.page-main-container.appearance-interface-container {
+    background-image: none !important;
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.fr/marketplace"), url-prefix("https://www.eldarya.com/marketplace"), url-prefix("https://www.eldarya.com.br/marketplace"), url-prefix("https://www.eldarya.pl/marketplace"), url-prefix("https://www.eldarya.de/marketplace"), url-prefix("https://www.eldarya.dk/marketplace"), url-prefix("https://www.eldarya.es/marketplace"), url-prefix("https://www.eldarya.hu/marketplace"), url-prefix("https://www.eldarya.it/marketplace"), url-prefix("https://www.eldarya.nl/marketplace"), url-prefix("https://www.eldarya.ro/marketplace"), url-prefix("https://www.eldarya.ru/marketplace"), url-prefix("https://www.eldarya.se/marketplace"), url-prefix("https://www.eldarya.uk/marketplace") {
+#layout-2col-left:before {
+    display: none;
+}
+.marketplace-main-container h1.section-title {
+    display: none
+}
+#layout-2col-left {
+    background: #cbdbffbf;
+}
+.flavr-button.active, .nl-button.active {
+    background: #95b3b7;
+    border-color: #7e468b;
+    color: #0b1010;
+}
+
+}

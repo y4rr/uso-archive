@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Isi-Daddy
 @description    `Eclipse Redesign shall not only bring back the feeling of the old deviantart, but also help your orientation by making the general appearance smaller and add more colours as separators.`
-@version        2020113.2.11
+@version        2020119.20.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -686,7 +686,7 @@ display: block;
     height: 28px;
     width: 45px;
     position: absolute;
-    bottom: 60px;
+    bottom: 85px;
     left: -72px;      
     border-radius: 3px;
 }
@@ -743,7 +743,7 @@ display: unset
 
 ._24VFR.DTx7C._2BA58 ._18qYl{
 position: absolute;
-    bottom: 60px;
+    bottom: 85px;
 left: -72px}
 
 /*comment bottom padding, good border*/
@@ -862,10 +862,13 @@ a[data-hook="comment_like_button"]{
     padding: 0;
 }
 
+._3wC32.WdFsL ._1ngPc._15m8B._2y_KG{
+	margin-left: -60px;
+}
 
 /*Reply Zeile*/
 ._3wC32{
-   transform: translate(-55%, -10%);
+   transform: translate(-55%, -70%);
     
 }
 a._335cJ {
@@ -1028,6 +1031,19 @@ margin-top:-2px;}
 margin-top: -5px}
 ._2ua91.WFWyp:after{
 bottom: -1px;}
+
+.notranslate.public-DraftEditor-content{
+	min-height: 105px !important;
+}
+.HK-F2 ._30j3W .user-link._1d_AR.mw62Y.RXJMH,
+.HK-F2 ._30j3W .user-link._1d_AR.mw62Y.RXJMH ._1neqe{
+height: 40px;
+    width: 40px; 
+}
+.HK-F2 ._30j3W{
+margin-top: 5px !important;}
+
+
 }
 
 @-moz-document url-prefix("https://www.deviantart.com/") {

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         FocusOnTheSun
 @description    `<strong>Ecosia dark theme - verified and working 2020</strong>A dark theme for the Ecosia search engine & services. Uses lightweight CSS to ensure a seamless dark theme experience.<strong>Compatibility:</strong> • Tested on browsers: Firefox, Chrome, Edge, Opera • Works with Ecosia mobile-mode • Tested on 'Stylish' and 'Stylus' extensions<strong>Currently works with the following Ecosia sites:</strong> • www.ecosia.org • info.ecosia.org • blog.ecosia.org<strong>If you find any issues while using this theme, please report the issue and we will fix it as soon as possible.</strong><strong>Development Team:</strong> • FocusOnTheSun - Search engine dark theme • Freaky Lord - Information site, blogs & consultancy`
-@version        20201026.13.48
+@version        2020119.17.45
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.ecosia.org/search"), url-prefix("https://www.ecosia.org/images") {
+@-moz-document url-prefix("https://www.ecosia.org/search") {
 /* ------------------------------------------------------- */
 /* SEARCH ENGINE - The main Ecosia search engine & results */
 /* ------------------------------------------------------- */
@@ -399,6 +399,123 @@ body {
 /* Install add-on banner Chrome */
 .serp-cta-wrapper {
     background: var(--form);
+    color: var(--text);
+}
+}
+
+@-moz-document url-prefix("https://www.ecosia.org/images") {
+/* ------------------------------------------------ */
+/* IMAGES - The main Ecosia search engine & results */
+/* ------------------------------------------------ */
+
+/* LOGO & MAIN STYLES */
+
+/* Main */
+.main-header__content, .layout__content {
+    background: var(--dark-background) !important;
+}
+
+/* Logo */
+.logo__icon > g > path:nth-child(2) {
+    fill: white !important;
+}
+
+/* Search bar */
+.search-form, .input {
+    background: #292929 !important;
+    color: var(--text) !important;
+}
+
+/* Search suggestions */
+.suggestions {
+    background: var(--form) !important;
+}
+.suggestions a {
+    color: var(--text) !important;
+}
+.suggestion-item.selected {
+    background: var(--lighter-background) !important;
+}
+
+/* Navigation bar */
+.search-navigation__item a {
+    color: var(--text) !important;
+}
+.search-navigation__item > .tab > a:focus, .search-navigation__item > .tab > a:hover, .search-navigation__item:nth-child(2) > .tab > a {
+    color: #36acb8 !important;
+}
+
+/* Filters */
+.search-filters, .main-header {
+    background: var(--dark-background);
+}
+
+/* Query chips */
+.query-expansions__item {
+    background: var(--form) !important;
+}
+.chip__text {
+    color: var(--text) !important;
+}
+.chip__text > mark {
+    color: #888;
+}
+.query-expansions__button {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 12%, .8) 42%, var(--dark-background) 74%) !important;
+}
+
+/* Image results */
+.image-thumbnail__details-title {
+    color: var(--text);
+}
+
+/* Country dropdown */
+.dropdown {
+    background: var(--form) !important;
+    color: var(--text) !important;
+    border: 1px solid;
+}
+.dropdown li:hover {
+    background: var(--lighter-background);
+}
+
+/* Search filters */
+.search-filters button {
+    background: var(--dark-background) !important;
+    color: var(--text) !important;
+}
+.search-filters button:hover {
+    color: #949494 !important;
+}
+
+/* Pill buttons */
+.pill {
+    background: var(--dark-background) !important;
+}
+.personal-counter__text {
+    color: var(--text) !important;
+}
+.icon-button:hover, .icon-button:focus {
+    background: var(--lighter-background) !important;
+}
+.icon-button:hover path, .icon-button:focus path {
+    fill: var(--text) !important;
+}
+.notification-pill:hover path, .notification-pill:focus path {
+    fill: var(--text) !important;
+}
+
+/* Notifications dropdown */
+.notifications-dropdown a {
+    background: var(--form) !important;
+    color: var(--text) !important;
+}
+.notifications-dropdown a:hover {
+    background: var(--lighter-background) !important;
+}
+
+/* No results */
+.search-no-results {
     color: var(--text);
 }
 }
