@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Pretties up an already attractive site (っ˘ڡ˘ς)`
-@version        20201110.22.30
+@version        20201111.2.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -156,11 +156,13 @@ input::placeholder, textarea::placeholder {color: rgba(var(--placeholder)) !impo
 #nav .links {border-left: none !important; margin-left: 0 !important; padding-left: 0 !important; width: 100% !important;}
 .nav.transparent, #app #nav.nav.transparent {background: rgba(var(--color-black),.5) !important;}
 .nav.transparent:hover, #app #nav.nav, #app #nav.nav:hover {background: rgba(var(--color-black)) !important;}
-.nav, .solid {color: rgba(var(--color-text-lighter)) !important;}
-.nav .wrap .link:hover:not(.router-link-active) {color: rgba(var(--color-gray)) !important;}
+.nav .wrap .link:not(.router-link-active) {color: rgb(206,212,219) !important;}
+.nav .wrap .link:hover:not(.router-link-active) {color: rgba(var(--color-text-white)) !important;}
 #app #nav.nav {border-top: 3px solid rgba(var(--color-blue)) !important; z-index: 1002;}
 .nav .user .avatar {border-radius: 50% !important;}
-.nav .user .chevron {color: rgba(var(--color-text-lighter)) !important;}
+.nav .user .chevron, .nav .search svg {color: rgba(var(--color-text-lighter)) !important;}
+.nav .search svg {opacity: .5; transition: opacity .3s ease;}
+.nav .search:hover svg {opacity: 1;}
 .nav .router-link-active {color: rgba(var(--color-blue)) !important; font-weight: bold !important;}
 .user .notification-dot {background: rgba(var(--color-pink)) !important; color: rgba(var(--color-text-white)) !important;}
 
@@ -336,7 +338,7 @@ code {
 .results.cover .list-btns-wrap {bottom: 60px !important;} /* Move hover edit options up */
 
 /* Chart view */
-.results .description {text-align: justify; -webkit-line-clamp: 8 !important;} /* Extra line for description */
+.results .description {text-align: justify;}
 .results.chart .media-card .overlay {background: rgba(var(--color-overlay),.8) !important;}
 .results.chart .media-card .overlay:before {background: none !important;}
 
@@ -404,19 +406,21 @@ code {
 .hover-data .header .date.airing {width: 120%;}
 
 .hover-data .info {
-    background: #eaeaea !important;
+    background: rgba(var(--color-foreground-grey-dark)) !important;
     color: var(--color-text);
     font-size: 1rem !important;
     position: relative; top: 151px !important;
     padding: 6px 12px !important; height: 22px;
     text-align: center; letter-spacing: .05em; }
+.site-theme-dark .hover-data .info {background: rgba(35,35,35) !important;}
 
 .hover-data .genres {
-    background: #f5f5f5 !important;
+    background: rgba(var(--color-background)) !important;
     font-size: 1rem !important;
     position: relative; top: 129px !important;
     padding: 5px !important; height: 28px;
     border-radius: 0 0 6px 6px; }
+.site-theme-dark .hover-data .genres {background: rgba(var(--color-foreground)) !important;}
 .hover-data .genres .genre {
     background: none; color: var(--color-text);
     font-size: 1rem; font-weight: 600;
@@ -698,9 +702,8 @@ div[score="5"] .fa-star {animation: spin 2000ms infinite linear;}
     width: 4px !important;
     top: 10%  !important;
     border-radius: 2px !important; }
-.user .medialist .release-status.RELEASING {background: rgba(var(--color-blue)) !important;}
-.user .medialist .release-status.NOT_YET_RELEASED {background: rgb(65,65,65) !important;}
-.site-theme-dark .user .medialist .release-status.NOT_YET_RELEASED, .medialist.cards .release-status.NOT_YET_RELEASED {background: white !important;}
+.medialist .release-status.RELEASING {background: rgba(var(--color-blue)) !important;}
+.medialist .release-status.NOT_YET_RELEASED {background: rgba(var(--color-purple)) !important;}
 .medialist.cards .entry-card .release-status {
     bottom: 0; left: 0 !important; top: auto !important;
     border-radius: 0 0 2px 2px !important; z-index: 2;

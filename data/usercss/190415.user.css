@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `U2網頁樣式修改良善`
-@version        2020115.2.30
+@version        20201111.1.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,6 +33,9 @@ html:not([style-scope]):not(.style-scope){background:#000000 url(https://sites.g
         -o-background-size: cover!important;
         background-size: cover!important;}
 /* https://cutewallpaper.org/21/dark-sky-background-hd/Black-Sky-Wallpaper-Windows-10-Night-Sky-Hd-Wallpapers-.jpg */
+
+/*#####--- 左下留言區的背景顏色 ---#####*/
+DIV[id="contents"][class="style-scope ytd-item-section-renderer"] {background-color: #262A31 !important;}
 
 
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mob101
 @description    `Turns 4chan into a minimal dark theme with dark blue accents.`
-@version        2019731.5.39
+@version        20201111.8.44
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,12 +21,51 @@ body {
     padding: 0;
     margin: 0;
 }
+
+#threads div{
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#ctrl-top a,
+.btn-wrap a.button,
+.btn-wrap span.button{
+    color: #fff;
+    background: rgb(23, 23, 23);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#ctrl-top a:hover,
+.btn-wrap a.button:hover,
+.btn-wrap span.button:hover {
+    background: #22313F;
+}
+
+select {
+        border: 1px solid #999;
+        font-size: 16px;
+        color: #fff;
+        background-color: #212121;
+        border-radius: 5px;
+}
+
 body div.center,
 hr,
 #blotter,
 .thread-stats {
     visibility: hidden;
 }
+
+div#content {
+    margin: 0 1rem;
+}
+
+div#ctrl {
+    margin: 0 9rem;
+}
+
 #boardNavDesktop.desktop,
 #boardNavDesktopFoot.desktop,
 div#absbot {

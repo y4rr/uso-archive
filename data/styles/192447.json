@@ -1,0 +1,39 @@
+{
+  "id": 192447,
+  "info": {
+    "name": "VK RetroWave-NightCall and Cyberpunk v1",
+    "description": "Киберпанковский вк, версия 1.\r\nРазрабатывался для монитора 1920*1080 в Firefox.\r\nНасчет отображения рекламы не знаю, у меня адблок.",
+    "additionalInfo": "В css есть пояснения, можно отредактировать под себя.\r\nТакже попробуйте Wallpaper Engine для рабочего стола, я оттуда фон взял (RetroWave-NightCal)",
+    "format": "uso",
+    "category": "vk",
+    "createdAt": "2020-11-11T09:42:56.000Z",
+    "updatedAt": "2020-11-11T09:42:56.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1066057,
+      "name": "Lavshyak"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "192447_after.jpeg",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"vk.com\") {\r\n/*панель слева*/\r\n[dir] .side_bar_inner {\r\n    padding: 15px 0 10px;\r\n    background-color: rgba(125, 8, 255, .1);\r\n     /*background: linear-gradient(to top,  rgba(161, 0, 255, .09),rgba(7, 0, 255, .09));*/\r\n    margin-top: var(--header-height);\r\n    opacity: 0.5;\r\n}\r\n[dir] .side_bar_inner:hover {\r\n    padding: 15px 0 10px;\r\n    background-color: rgba(1, 0, 255, .05);\r\n    /*background: linear-gradient(to top,  rgba(161, 0, 255, .21),rgba(7, 0, 255, .17));*/\r\n    margin-top: var(--header-height);\r\n    opacity: 1;\r\n}\r\n\r\n\r\n\r\n/*цвет текста-ссылок слева*/\r\n#side_bar ol li .left_row {\r\n    color: #9198c1;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    white-space: nowrap;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n\r\n/*выделен прямоугольник*/\r\n[dir] #side_bar ol li .left_row:hover {\r\n    background: rgba(63, 0, 157, .5);\r\n    border-radius: 2px;\r\n}\r\n\r\n\r\n/*каунтер, выделен прямоугольник*/\r\n[dir] #side_bar_inner .left_row:hover .left_count_wrap {\r\n    background-color: rgba(63, 0, 157, .5);\r\n}\r\n/*не выделен*/\r\n[dir] .left_count_wrap {\r\n    padding: 0 6px;\r\n    background: rgba(102, 0, 255, .29);\r\n    border-radius: 2px;\r\n}\r\n/*цвет цыфры*/\r\n.left_count_wrap {\r\n    --left-menu-counter-height: 28px;\r\n    color: #c8c8c8;\r\n    font-weight: 700;\r\n    font-size: 11px;\r\n    line-height: 17px;\r\n}\r\n\r\n/*заночилась*/\r\n\r\n\r\n/*хидер*/\r\n[dir=\"ltr\"] #page_header_wrap {\r\n    direction: ltr;\r\n    /*background-color: rgb(99, 56, 153);*/\r\n    background-color: #46489b;\r\n}\r\n\r\n/*трек*/\r\n[dir] .page_block {\r\n    background-color: rgba(255, 255, 255, 1);\r\n    border-radius: 4px;\r\n    box-shadow: 0 1px 0 0 var(--steel_gray_120),0 0 0 1px var(--steel_gray_80);\r\n    margin: 15px 0 0;\r\n}\r\n/*название трека*/\r\n.audio_page_player2 .audio_page_player_title_song {\r\n    color: #000;;\r\n    font-weight: 500;\r\n}\r\n\r\n\r\n\r\n/*главный фон*/\r\n[dir] body {\r\n\r\n    background: url('https://steamuserimages-a.akamaihd.net/ugc/941715990358314892/653B38BBFA3A62BB6E0B075D821AB0BB2ABE45B4/') 0% 100% no-repeat,\r\n    url('https://steamuserimages-a.akamaihd.net/ugc/956347955212519811/9DDAA5B6646F8F9E608132C700F83FDBB6DC7FF1/?imw=512&amp;imh=230&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true') no-repeat;\r\n    background-attachment: fixed;\r\n\r\n    background-position: -300px 0px, -200px -200px;\r\n    background-color: #46489b;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n\r\n/*вернуться наверх (панель слева появляется)*/\r\n[dir] .stl_active.over_fast #stl_bg {\r\n    background-color: rgba(50, 0, 111, .44);\r\n    background: linear-gradient(to top,  rgba(161, 0, 255, .09),rgba(7, 0, 255, .09));\r\n}\r\n\r\n}"
+  }
+}

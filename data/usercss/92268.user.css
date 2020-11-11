@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Mozilla Addon Widescreen NEW design v.121
+@name           Mozilla Addon Widescreen NEW design v.122
 @namespace      USO Archive
 @author         decembre
-@description    `<mark>▶ It's better for a WIDESCREEN(1920x1080)!</mark><mark>Seems, now at 2019.01, it's not possible to switch to the Old desktop view as before:<a href="https://github.com/mozilla/addons-frontend/issues/6334">Disable &quot;classic view&quot; of front-end #6334</a></mark><mark>ONLY for Waterfox and brother Firefox old school like Firefox ESR etc...: </mark>NEED and Work better with (for all the Dark color flavor):<a href="https://userstyles.org/styles/159780/">[UserStyles] Dark Mozilla Add-ons (AMO)  by maxigaz</a><a href="https://gitlab.com/maxigaz/amo-dark">[GitLab] Mozilla Add-ons Dark Theme  by maxigaz</a>ADD  domain("addons-dev.allizom.org") to it for :https://addons-dev.allizom.org/en-GB/firefox/`
-@version        2020116.20.11
+@description    `<mark>▶ It's better for a WIDESCREEN(1920x1080)!</mark>NEED and Work better with (for all the Dark color flavor):<a href="https://userstyles.org/styles/159780/">[UserStyles] Dark Mozilla Add-ons (AMO)  by maxigaz</a><a href="https://gitlab.com/maxigaz/amo-dark">[GitLab] Mozilla Add-ons Dark Theme  by maxigaz</a>ADD  domain("addons-dev.allizom.org") to it for :https://addons-dev.allizom.org/en-GB/firefox/`
+@version        20201111.10.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("addons.mozilla.org"), domain("addons-dev.allizom.org"), domain("addons.mozilla.org."), regexp("https://web.archive.org/web/.*/https://addons.mozilla.org/.*") {
 
 
-/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.121 (new121) - OK DEV HERE - WATnew06  ==== */
+/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.122 (new122) - OK DEV HERE - WATnew06  ==== */
 
 /* =================================================== 
 WORK WITH "Dark Mozilla Add-ons (AMO)":
@@ -2255,11 +2255,12 @@ content: "Update: " ;
     overflow: hidden !important;
 border: 1px solid yellow ;
 }
+/* (new122) */
 .Card.CardList.AddonsCard.AddonsByAuthorsCard.Addon-MoreAddonsCard.AddonsCard--horizontal.Card--photon.Card--no-footer:hover {
     height: auto !important;
     width: auto !important;
     width: 98% !important;
-    z-index: 500 !important;
+    z-index: 50000 !important;
 background: black !important;
 }
 
@@ -3157,9 +3158,7 @@ border-bottom: 1px solid red !important;
     margin-top: -4px !important;
     font-size: 10px !important;
 }
-/* MY REVIEW INDICATOR - 
-https://addons.mozilla.org/fr/firefox/addon/insite-search/reviews/
-=== */
+/* MY REVIEW INDICATOR - === */
 .AddonReviewList-reviews .CardList ul > li:not(:hover) .AddonReviewCard.AddonReviewCard-viewOnly  .Button.Button--neutral.AddonReviewCard-control.AddonReviewCard-delete {
     position: absolute !important;
     display: inline-block !important;
@@ -3190,9 +3189,7 @@ background: rgba(255, 0, 0, 0.2) !important;
     border-radius: 9px !important;
     overflow: hidden !important;
 }
-/* DEV REPLY - HOVER -
-https://addons.mozilla.org/en-US/firefox/addon/antibrowserspy-trackingblocker/reviews/
-===  */
+/* (new122) DEV REPLY - HOVER - ===  */
 .UserProfile-wrapper .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews  .Card-contents ul > li:hover > .AddonReviewCard  .AddonReviewCard-reply   , 
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li:hover > .AddonReviewCard  .AddonReviewCard-reply   , 
 .AddonReviewList-reviews .CardList ul > li:hover > .AddonReviewCard > .AddonReviewCard-container + .AddonReviewCard-reply {
@@ -3214,13 +3211,73 @@ https://addons.mozilla.org/en-US/firefox/addon/antibrowserspy-trackingblocker/re
 border-top: 1px solid red !important;
 border-bottom: 1px solid red !important;
 }
-/* (new121) TOP REVIEW for LONG REVIEW (by DATE)*/
+/* (new122) TOP REVIEW for LONG REVIEW (by DATE)*/
 .FeaturedAddonReview .AddonReviewCard.AddonReviewCard-viewOnly  .UserReview-body {
     line-height: 18px !important;
 }
-.FeaturedAddonReview .AddonReviewCard.AddonReviewCard-viewOnly  .UserReview-body .ShowMoreCard-contents {
-    font-size: 15px !important;
+
+/* (new122) REVIEW USER - TOP BIG */
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-container{
+    float: left !important;
+    width: 50%;
 }
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-reply .AddonReviewCard.AddonReviewCard-isReply.AddonReviewCard-viewOnly .Card.ShowMoreCard.UserReview-body {
+    height: 170px !important;
+    line-height: 15px !important;
+    margin-bottom: -5px !important;
+    padding: 5px 10px 20px 10px !important;
+    font-size: 15px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+/* border: 1px dashed yellow !important; */
+}
+
+/* (new122) REVIEW REPLY TOP BIG */
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-reply:not(:hover){
+    float: right !important;
+    min-width: 40% !important;
+    max-width: 40% !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+    padding: 3px !important;
+    font-size: 15px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(40px, -5px) scale(1.01) !important;
+    background: #671515 !important;
+}
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-reply:hover{
+    float: right !important;
+    min-width: 48% !important;
+    max-width: 48% !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+    margin-top: 10px !important;
+    margin-bottom: -20px !important;
+    padding: 3px !important;
+    font-size: 15px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(0px, -15px) scale(1) !important;
+    border: 1px solid gray !important;
+/*     background-color: green !important; */
+    background-color: rgba(10, 132, 255, 0.05) !important;
+}
+
+/* (new122) BOTH - TEST INNER */
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-container  .UserReview-body .Card-contents .ShowMoreCard-contents ,
+.AddonReviewList-reviews > .FeaturedAddonReview .Card.FeaturedAddonReview-card.Card--no-footer header.Card-header + .Card-contents > .AddonReviewCard.AddonReviewCard-viewOnly > .AddonReviewCard-reply .ShowMoreCard-contents {
+    height: 150px !important;
+    line-height: 15px !important;
+    margin-bottom: 1px !important;
+    padding: 5px 10px 20px 10px !important;
+    font-size: 15px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+/* border: 1px solid yellow !important; */
+}
+
+/* ALL REVIEWS ITEMS - SMALL */
 .AddonReviewCard:not(.AddonReviewCard-slim) .UserReview-body .Card-contents {
     height: auto !important;
     padding: 3px 2px !important;
@@ -3432,15 +3489,45 @@ background: red !important;
     line-height: 15px !important;
     text-align: right !important;
 }
+/* (new122) */
 .AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-authorByLine a:before ,
 .AddonReviewList-reviews .CardList ul > li:not(:hover) .AddonReviewCard-authorByLine a:before {
-content: "▲ 💬 ▲" !important;
+content: "▲" !important;
     float: left !important;
     width: 15px !important;
     height: 15px!important;
     line-height: 15px !important;
     text-align: center !important;
 }
+.AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-authorByLine a:after,
+.AddonReviewList-reviews .CardList ul > li:not(:hover) .AddonReviewCard-authorByLine a:after {
+content: "💬" !important;
+    float: left !important;
+    width: 15px !important;
+    height: 15px!important;
+    line-height: 15px !important;
+    text-align: center !important;
+}
+.AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-authorByLine a:before  {
+content: "▲" !important;
+    float: left !important;
+    width: 15px !important;
+    height: 15px!important;
+    line-height: 15px !important;
+    text-align: center !important;
+    margin-top: -5px ;
+transition: all ease 0.9s ;
+}
+.AddonReviewList-reviews .CardList ul > li:hover .AddonReviewCard-authorByLine a:after {
+content: "💬" !important;
+    float: left !important;
+    width: 15px !important;
+    height: 20px!important;
+    line-height: 10px !important;
+    font-size: 20px !important;
+transition: all ease 0.5s ;
+}
+
 /* REVIEW - DEV REPLY */
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li .AddonReviewCard-reply:not(:hover),
 .AddonReviewCard-reply:not(:hover) {

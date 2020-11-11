@@ -1,20 +1,21 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.3
+@name           Compact Tube (White) v1.3.4
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020119.15.11
+@version        20201111.11.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.3 */
+/* CompactTube (White) v1.3.4 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
 /*    ENG: here you can install a helper script to automatically hide the Left Menu(Guide Menu)
       RU: тут вы можете установить вспомогательный скрипт автоматически скрывающий Левое Меню(Гид Меню)
         https://greasyfork.org/scripts/415761-hide-ytb-guide-menu                                          */
+
 
 /*█▀▀▀▀▀▀▀▀▀▀▀▀▀   включение ТЁМНОЙ ТЕМЫ для шапки  /  enabling DARK THEME for the Header   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
   █                                                                                                                  █
@@ -538,6 +539,8 @@ ytd-game-card-renderer.ytd-horizontal-card-list-renderer {
     paper-tab.ytd-interactive-tabbed-header-renderer {padding: 0 11px; vertical-align: middle;}
     /* Скрытие элементов Прокрутки Верхнего МЕНЮ информации об игре */
     .ytd-interactive-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibility: hidden; opacity: 0;}
+    /* Скрытие элементов Прокрутки Верхнего МЕНЮ информации об игре - отображать скрытые (если они есть) при наведении курсора */
+    .ytd-interactive-tabbed-header-renderer paper-icon-button.paper-tabs:hover {-o-visibility: hidden; opacity: 0.5;}
 
     /* бордюр под Красным меню в Играх на странице Игры */
     #tabs-inner-container.ytd-interactive-tabbed-header-renderer {
@@ -967,7 +970,7 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
    border: 1px solid #1c62b9 !important;
     -o-background: rgba(208, 104, 104, .671) !important;
     padding: 0px 3px 0px 4px;
-    box-shadow: inset 536px 0px 0px 0px rgba(255, 255, 255, .82);} /*534px*/
+    box-shadow: inset 569px 0px 0px 0px rgba(255, 255, 255, .82);} /*534px , 536px */
 
 /* Цвет вводимого текста в поле поиска - старые варианты */
 -o-input.ytd-searchbox {color: rgb(145, 145, 145)!important; -o-filter: invert(25%);} /* V */
@@ -976,6 +979,11 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
 
 /* цвет иконки Лупы в поле поиска */
 yt-icon.ytd-searchbox  {color: #919191 !important;} 
+/* цвет Иконки Лупы в Минимальном после поиска */
+yt-icon-button#search-button .ytd-masthead {fill: #989898 !important;}
+
+/* цвет Иконки НАЗАД (←) в Минимальном после поиска */
+yt-icon-button#back-button .ytd-masthead {fill: #989898 !important;}
 
 
 
@@ -998,11 +1006,11 @@ yt-icon.ytd-searchbox  {color: #919191 !important;}
 /* Цвет Кода Страны (com, ru и тд) */
 #country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px; -o-filter: invert(30%)}
 /* Цвет Клавиатуры в поле поиска */
-ytd-masthead[dark] .gsst_e {filter: invert(65%);} /*80%*/
+ytd-masthead[dark] .gsst_e {filter: invert(60%);} /*80%*/
 /* Цвет Клавиатуры в поле поиска (сокращённый плеер) */
 .gsok_a {
 background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) 
-no-repeat center; display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(65%)}
+no-repeat center; display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(60%)}
 a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0px;}
 
 
@@ -2665,6 +2673,8 @@ paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00
 color: var(--yt-lightsource-secondary-title-color);  /* Цвет НЕ выделенных пунктов меню*/ height: 48px ;padding-bottom: 1px;}
 /*Скрытие элементов прокрутки МЕНЮ КАНАЛА*/
 paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibility: hidden; opacity: 0;}
+/*Скрытие элементов прокрутки МЕНЮ КАНАЛА - отображать скрытые (если они есть) при наведении курсора */
+paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs:hover {-o-visibility: hidden; opacity: 0.5;}
 -o-.not-visible.paper-tabs {opacity: 0;cursor: default;}
 
 /*------------------------------------------------------*/
