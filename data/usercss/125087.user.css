@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Максим Сельвестер
 @description    `Тёмный контрастный стиль`
-@version        2020320.10.23
+@version        20201110.13.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -29,15 +29,18 @@ body
 , .green-block
 , .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name
 , .react-datepicker__current-month, .react-datepicker-time__header
+,.objects_name, .objects_param
 {
   color: #fff;
 }
 a
 	, #menu td a
 	, .ifns span, .taxName span
+,.src-components-Select-select-module__select .has-value.Select--single > .Select-control .Select-value .Select-value-label, .src-components-Select-select-module__select .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label
 	{ color:#00ffff !important;}
 	
-#top .site_title a {
+#top .site_title a 
+{
     color: #A9A7ED;
     text-decoration: none;
 }

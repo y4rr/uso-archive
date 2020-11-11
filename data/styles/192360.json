@@ -1,0 +1,53 @@
+{
+  "id": 192360,
+  "info": {
+    "name": "Eldarya - Corrections Website [all servers]",
+    "description": "If you don't know Russian, use a translator\r\n\r\nВсе изменения:\r\n\r\nТекст верхнего меню немного увеличен, а его фон затемнён, так что его теперь проще читать\r\nУбрана синяя мигающая полоска под надписью \"Новая эра\"\r\nНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее, чтобы сразу бросаться в глаза\r\nВ гардеробе и в магазине одежды сократилось пустое пространство, чтобы вещи было лучше видно\r\nИконки на чердаке теперь занимают не только правую сторону\r\nГлавная героиня больше не светится при наведении и не перенаправляет в гардероб\r\nВ банке (банк) немного увеличены стикеры акций и добавлено белое обрамление для надписей \"Мана\" и \"Золотые монеты\" \r\nНазвания нарядов в магазине написаны обычным текстом\r\nЦены в магазинах и названия вещей написаны более жирным шрифтом\r\nКогда открываешь мешок и забираешь вещь текст розовой кнопки \"Хорошо\" больше не синеет",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "eldarya",
+    "createdAt": "2020-11-09T22:52:48.000Z",
+    "updatedAt": "2020-11-10T15:45:46.000Z",
+    "license": "CC0-1.0",
+    "author": {
+      "id": 363431,
+      "name": "Вика Пименова"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 34,
+      "weekly": 33
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "192360_after.jpeg",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "192360_additional_37415.jpeg",
+        "archived": true
+      },
+      {
+        "name": "192360_additional_37416.jpeg",
+        "archived": true
+      },
+      {
+        "name": "192360_additional_37417.jpeg",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document url-prefix(\"https://www.eldarya.ru\"), url-prefix(\"https://www.eldarya.fr\"), url-prefix(\"https://www.eldarya.com\"), url-prefix(\"https://www.eldarya.pl\"), url-prefix(\"https://www.eldarya.es\"), url-prefix(\"https://www.eldarya.com.br\"), url-prefix(\"https://www.eldarya.it\"), url-prefix(\"https://www.eldarya.de\"), url-prefix(\"https://www.eldarya.hu\") {\r\n\r\n/*Основное*/\r\n\r\n  /*Голубая мигающая полоска*/\r\n#top-bar::before {\r\n    width: 0%;\r\n    animation: none; /*если хотите, чтобы она была, но не мигала, удалите строчку выше и строчку ниже*/\r\n    background: none;\r\n}\r\n\r\n  /*То, до чего не додумались бимув. Темный фон для меню*/\r\n\r\n#menu-bar {\r\n    background: rgba(50, 21, 64, 0.65);\r\n    height: 42px;\r\n}\r\n\r\n  /*Крупные буквы в меню*/\r\n\r\n#menu-bar #menu li a {\r\n    font-size: 20px;\r\n    text-shadow: 0 0 8px var(--main-season-color);\r\n    line-height: 38px;\r\n    font-weight: 600;\r\n}\r\n\r\n#top-bar h1 {\r\n    font-size: 30px;\r\n}\r\n\r\n/*Гг на главной странице не светится при наведении*/\r\n\r\n#home-left-container #home-avatar-player canvas{\r\n    pointer-events: none;\r\n}\r\n\r\n/*Список вещей в гардеробе и магазине повыше*/\r\n\r\n#currencies {\r\n    position: absolute;\r\n    right: 140px;\r\n}\r\n\r\n#appearance-right {\r\n    padding: 20px 30px 0 0;\r\n}\r\n\r\n#mall-container {\r\n    top: -55px;\r\n    padding: 0px 0px 0px 55px;\r\n}\r\n\r\n#avatar-picto-actions .action-picto, #search-wardrobe-form, #actions-container, #wardrobe-menu {\r\n    top: -15px;\r\n}\r\n\r\n#container .section-title {\r\n    font-size: 40px;\r\n    line-height: 40px;\r\n}\r\n\r\n#container .section-subtitle {\r\n    font-size: 20px;\r\n    line-height: 20px;\r\n}\r\n\r\n#layout-2col {\r\n    top: -50px;\r\n}\r\n\r\n#layout-2col-right {\r\n    top: 0px;\r\n}\r\n\r\n#layout-2col-left {\r\n    top: 0px;\r\n}\r\n\r\n#mall-categories, #mall-products, #mall-productDetail {\r\n    height: calc(120vh - 448px);\r\n}\r\n\r\n#mall-categories.index-mall-categories {\r\n    height: calc(135vh - 448px);\r\n}\r\n\r\n#appearance-items ul {\r\n    min-height: 550px;\r\n}\r\n\r\n#appearance-items {\r\n    top: 10px;\r\n}\r\n\r\n#mall-container .nl-button.nl-button-back {\r\n    left: 100px;\r\n}\r\n\r\n/*Чердак*/\r\n\r\n.attic-container #right-bg {\r\n    width: 120vw;\r\n}\r\n\r\n.attic-container #attic-inner-container {\r\n    float: none;\r\n    width: auto;\r\n    padding-top: 40px;\r\n}\r\n\r\n#attic-inactive-items, #attic-active-items {\r\n    width: 500px;\r\n    float: none;\r\n    min-height: 370px;\r\n}\r\n\r\n#attic ul {\r\n    min-height: 330px;\r\n}\r\n\r\n.attic-categories-list {\r\n    max-height: calc(400vh - 524px);\r\n}\r\n\r\n/*Банк*/\r\n\r\n#bank-page .product-panel h2 {\r\n    background-color: rgba(255, 255, 255, 0.65);\r\n    border-radius: 35px;\r\n    box-shadow: 0 0 8px 0 rgba(34, 33, 34, 0.56);\r\n}\r\n\r\n#bank-page .bank-level-card .bank-best-seller-chip {\r\n    background-size: 78px;\r\n    background-position: center;\r\n}\r\n\r\n#bank-page .bank-level-card .bank-level-amount .free-bonus-chip {\r\n    background-size: 100px;\r\n    background-position: center;\r\n}\r\n\r\n/*Названия нарядов в магазине не кричат на тебя*/\r\n\r\n#mall-productDetail-info .mall-productDetail-name {\r\n    text-transform: none;\r\n}\r\n\r\n/*Цифры в магазинах побольше*/\r\n\r\n.mall-product-maana-price, .mall-product-gold-price, .mall-product-purropass-price, .mall-variations-owned {\r\n    font-size: 18px;\r\n    font-weight: 500;\r\n}\r\n\r\n/*Названия вещей немного темнее*/\r\n\r\n.mall-category-title, .appearance-category-name, .appearance-item-info-name {\r\n    font-weight: 700;\r\n}\r\n\r\n/*Не знаю, кто решил, что розовая кнопка сочетается с голубым шрифтом, но не важно. Когда забираешь вещь из мешка, текст не будет синеть*/\r\n\r\n.flavr-button.pink:hover, .button.button.button-pink:hover {\r\n    color:  rgb(255, 255, 255);\r\n}\r\n\r\n/*Рынок*/\r\n\r\n#marketplace-main-content .abstract-currentPrice {\r\n    font-size: 12px;\r\n    text-transform: none;\r\n}\r\n\r\n#marketplace-main-content .price-item {\r\n    font-size: 18px;\r\n    font-weight: 900;\r\n    color: rgb(52 56 111);\r\n}\r\n\r\n#marketplace-main-content .maana-icon {\r\n    width: 0;\r\n}\r\n}"
+  }
+}

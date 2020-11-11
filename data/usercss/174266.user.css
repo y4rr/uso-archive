@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201028.4.55
+@version        20201110.16.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fix for Halloween Basket */
+/*Last update: Fix for search bar after news ticker change */
 
 
 html:not([stylus-iframe]):after {
@@ -244,6 +244,10 @@ div.select-wrapper.right {
 
 canvas.torn-item.item-converted {
     filter: invert(1)hue-rotate(180deg)
+}
+
+input.searchInput___2VbL4 {
+    filter: invert(0)hue-rotate(0deg)
 }
 }
 

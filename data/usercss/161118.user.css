@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Pretties up an already attractive site (っ˘ڡ˘ς)`
-@version        2020118.19.57
+@version        20201110.22.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -68,6 +68,7 @@ body {font-family: Segoe UI !important;}
     --color-bw: 255,255,255;
     --color-black: 18,18,18;
     --color-gray: 200,200,200;
+    --color-white: 255,255,255;
     --placeholder: 192,196,204;
     --box-shadow: 0 2px 20px rgba(50,55,65,.1); }
 
@@ -87,6 +88,58 @@ body {font-family: Segoe UI !important;}
     --placeholder: 101,101,101;
     --color-bw: 24,24,24; }
 
+/* Remove blue tint from blacks and grays */
+:root, .site-theme-contrast {
+    --color-background-100: 251,251,251;
+    --color-background-200: 241,241,241;
+    --color-background-300: 230,230,230;
+    --color-background-400: 215,215,215;
+    --color-background-500: 192,192,192;
+    --color-background-600: 160,160,160;
+    --color-background-700: 136,136,136;
+    --color-background-800: 115,115,115;
+    --color-background-900: 97,97,97;
+    --color-background-1000: 78,78,78;
+    --color-background-1100: 52,52,52;
+    --color-background-1200: 30,30,30;
+    --color-gray-100: 251,251,251;
+    --color-gray-200: 241,241,241;
+    --color-gray-300: 230,230,230;
+    --color-gray-400: 215,215,215;
+    --color-gray-500: 192,192,192;
+    --color-gray-600: 160,160,160;
+    --color-gray-700: 136,136,136;
+    --color-gray-800: 115,115,115;
+    --color-gray-900: 97,97,97;
+    --color-gray-1000: 78,78,78;
+    --color-gray-1100: 52,52,52;
+    --color-gray-1200: 30,30,30; }
+.site-theme-dark {
+    --color-background-1200: 251,251,251;
+    --color-background-1100: 243,243,243;
+    --color-background-1000: 230,230,230;
+    --color-background-900: 215,215,215;
+    --color-background-800: 192,192,192;
+    --color-background-700: 160,160,160;
+    --color-background-600: 136,136,136;
+    --color-background-500: 115,115,115;
+    --color-background-400: 97,97,97;
+    --color-background-300: 42,42,42;
+    --color-background-100: 31,31,31;
+    --color-background-200: 22,22,22;
+    --color-gray-1200: 251,251,251;
+    --color-gray-1100: 243,243,243;
+    --color-gray-1000: 230,230,230;
+    --color-gray-900: 215,215,215;
+    --color-gray-800: 192,192,192;
+    --color-gray-700: 160,160,160;
+    --color-gray-600: 136,136,136;
+    --color-gray-500: 115,115,115;
+    --color-gray-400: 97,97,97;
+    --color-gray-300: 42,42,42;
+    --color-gray-100: 31,31,31;
+    --color-gray-200: 22,22,22; }
+
 /* Profile colour selection */
 .color[style="background: rgb(61, 180, 242);"] {background: rgba(var(--color-blue)) !important;}
 .color[style="background: rgb(192, 99, 255);"] {background: rgba(var(--color-purple)) !important;}
@@ -103,6 +156,8 @@ input::placeholder, textarea::placeholder {color: rgba(var(--placeholder)) !impo
 #nav .links {border-left: none !important; margin-left: 0 !important; padding-left: 0 !important; width: 100% !important;}
 .nav.transparent, #app #nav.nav.transparent {background: rgba(var(--color-black),.5) !important;}
 .nav.transparent:hover, #app #nav.nav, #app #nav.nav:hover {background: rgba(var(--color-black)) !important;}
+.nav, .solid {color: rgba(var(--color-text-lighter)) !important;}
+.nav .wrap .link:hover:not(.router-link-active) {color: rgba(var(--color-gray)) !important;}
 #app #nav.nav {border-top: 3px solid rgba(var(--color-blue)) !important; z-index: 1002;}
 .nav .user .avatar {border-radius: 50% !important;}
 .nav .user .chevron {color: rgba(var(--color-text-lighter)) !important;}
@@ -277,46 +332,36 @@ code {
 /* Remove search background */
 .search, .studio {background: none !important;}
 
-/* Fixed content width */
-.container {max-width: 1270px !important;}
-.results.cover, .results.table, .search .primary-filters, .search .secondary-filters, .landing-section {
-    max-width: 1270px !important;
-    margin-left: auto;
-    margin-right: auto; }
-@media (max-width: 1540px) {.container {max-width: 1070px !important;}} /* Stop from expanding on page zoom */
-
 /* Cover view */
 .results.cover .list-btns-wrap {bottom: 60px !important;} /* Move hover edit options up */
 
 /* Chart view */
-.results.chart {
-    grid-gap: 28px 30px !important;
-    grid-template-columns: repeat(2,minmax(390px,760px)) !important; } /* 2 per line rather than 3 */
 .results .description {text-align: justify; -webkit-line-clamp: 8 !important;} /* Extra line for description */
+.results.chart .media-card .overlay {background: rgba(var(--color-overlay),.8) !important;}
+.results.chart .media-card .overlay:before {background: none !important;}
 
 /* Table view */
 .results.table .media-card .content {grid-template-columns: minmax(auto,calc(100% - 420px)) 130px 130px 130px !important;} /* More space for title */
 
 /* Default browse page */
-.landing-section .results .media-card:nth-child(6):not(.has-rank) {display: none !important;} /* Hide 6th entry */
 .search-landing {margin-top: -10px !important;}
 .landing .title.link {
-    background: rgba(var(--color-blue),.8) !important;
-    border-radius: 4px !important;
+    background: rgba(var(--color-green)) !important;
     box-shadow: var(--box-shadow) !important;
-    padding: 15px; }
+    border-radius: 4px !important;
+    padding: 10px 15px !important; }
+.site-theme-dark .landing .title.link {background: rgba(var(--color-foreground)) !important;}
 .landing .title.link h3 {font-family: Segoe UI !important; font-weight: normal !important; text-transform: none !important;}
 .landing .title.link h3, .landing .title.link .expand {color: rgba(var(--color-text-white)) !important;}
+.site-theme-dark .landing .title.link h3, .site-theme-dark .landing .title.link .expand {color: rgba(var(--color-text-lighter)) !important;}
 
 /* Media cards (List status) */
 .results.cover .media-card .title, .landing-section:not(.top) .media-card .title, .studio-page-unscoped .media-card .title {
     background: rgba(var(--color-overlay),.6) !important;
     border-radius: 3px 3px 0 0 !important;
     font-size: 1.3rem !important;
-    margin-top: 0 !important;
-    padding: 12px !important;
-    height: 40px !important;
-    width: 100% !important;
+    height: 40px !important; width: 100% !important;
+    margin-top: 0 !important; padding: 12px !important;
     position: absolute !important; top: 0 !important; z-index: 5;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .media-card .title, .media-card a.title:hover {color: rgba(var(--color-text-white)) !important;}
@@ -382,7 +427,7 @@ code {
 
 /* Genres */
 .results.chart .genres .genre, .results.table .genres .genre {
-    background: rgba(var(--color-blue)) !important;
+    background: rgba(var(--color-blue-swap)) !important;
     color: rgba(var(--color-text-white)) !important;
     font-family: Segoe UI !important;
     font-weight: 500 !important;
@@ -404,15 +449,16 @@ code {
     padding: 15px;
     border-radius: 0 0 6px 6px;
     box-shadow: var(--box-shadow) !important; }
+.site-theme-dark .search .secondary-filters {background: rgba(var(--color-background-100)) !important;}
 
 .active-filters .filter {
-    background: rgba(var(--color-blue)) !important;
+    background: rgba(var(--color-blue-swap)) !important;
     border-radius: 4px;
     letter-spacing: .02em;
     font-family: Segoe UI !important; }
 
 .filter-select .tag {
-    background: rgba(var(--color-text-white)) !important;
+    background: rgba(var(--color-white)) !important;
     color: rgba(var(--color-text)) !important;
     border-radius: 4px !important;
     font-family: Segoe UI !important;
@@ -428,7 +474,7 @@ code {
 
 /* Dropdowns */
 .dropdown .select .icon {color: rgba(var(--color-text-white)) !important;}
-.filters .search-wrap, .select {background: rgba(var(--color-blue)) !important; box-shadow: none !important;}
+.filters .search-wrap, .select {background: rgba(var(--color-blue-swap)) !important; box-shadow: none !important;}
 .filters .search-wrap .search, .select .filter, .placeholder, .value, .filters svg, .filters .search-wrap svg {color: rgba(var(--color-text-white)) !important;}
 .value {font-style: italic;}
 /* .search-wrap input.search {font-size: 0 !important;}
@@ -436,12 +482,13 @@ code {
 
 /* Top Anime/Manga */
 .results.cover .media-card .rank.circle {
-    background: rgba(var(--color-text-white)) !important;
+    background: rgba(var(--color-white)) !important;
     color: rgba(var(--color-text)) !important;
     box-shadow: var(--box-shadow) !important;
     left: -19px !important; top: -19px !important; }
-.media-card.has-rank .rank.circle {background: rgba(var(--color-blue)) !important; color: rgba(var(--color-text-white)) !important; }
+.media-card.has-rank .rank.circle {background: rgba(var(--color-blue)) !important; color: rgba(var(--color-text-white)) !important;}
 .media-card.has-rank .rank.circle .hash {color: rgba(var(--color-text-white)) !important;}
+.site-theme-dark .media-card.has-rank .rank.circle {background: rgba(var(--color-background)) !important; color: rgba(var(--color-text)) !important;}
 
 /* Studio search (https://anilist.co/search/studios) */
 .search.other-type .primary-filters {border-radius: 4px !important;}
@@ -453,7 +500,7 @@ code {
 
 @-moz-document url-prefix("https://anilist.co/search/anime") {
 /* Custom width for search filter boxes */
-.search .filters {grid-template-columns: repeat(6,142px) !important;}
+.search .filters {grid-template-columns: repeat(6,185px) !important;}
 .primary-filters .filters .filter-select:nth-child(1) {width: 120%;} /* Search */
 .primary-filters .filters .filter-select:nth-child(2) {width: 135%; margin-left: 20%;} /* Genre */
 .primary-filters .filters .filter-select:nth-child(3) {width: 65%; margin-left: 55%;} /* Year */
@@ -475,13 +522,16 @@ code {
 
 @-moz-document url-prefix("https://anilist.co/search/manga") {
 /* Custom width for search filter boxes */
-.search .filters {grid-template-columns: repeat(6,135px) !important;}
+.search .filters {grid-template-columns: repeat(6,176px) !important;}
 .primary-filters .filters .filter-select:nth-child(1) {width: 100%;} /* Search */
 .primary-filters .filters .filter-select:nth-child(2) {width: 130%;} /* Genre */
 .primary-filters .filters .filter-select:nth-child(3) {width: 110%; margin-left: 30%;} /* Format */
 .primary-filters .filters .filter-select:nth-child(4) {width: 125%; margin-left: 40%;} /* Status */
 .primary-filters .filters .filter-select:nth-child(5) {width: 100%; margin-left: 65%;} /* Country */
 .primary-filters .filters .filter-select:nth-child(6) {width: 65%; margin-left: 65%;} /* Year */
+
+/* Undo 'more space for title' */
+.results.table .media-card .content {grid-template-columns: minmax(auto,calc(100% - 440px)) 130px 130px 150px !important;}
 }
 
 @-moz-document url-prefix("https://anilist.co/user/") {
@@ -601,7 +651,7 @@ code {
 .medialist.table .entry:hover .progress, .medialist.table .entry:hover .format {color: rgba(var(--color-text-white)) !important;}
 
 /* List (Symmetrical panels) */
-#nav + .page-content .medialist .filters-wrap {position: relative !important; top: 58px !important;}
+#nav + .page-content .medialist .filters-wrap {position: relative !important; top: 58px !important; margin-bottom: 18px !important;}
 #nav + .page-content .medialist.table.compact .section-name {margin-bottom: 18px !important;}
 
 /* Comments & Rewatches */
@@ -690,7 +740,7 @@ div[score="5"] .fa-star {animation: spin 2000ms infinite linear;}
 .filter-group div > .el-select--small .el-select__tags,
 .filter-group div > .el-select--small .el-input__inner {max-height: 32px;}
 .filter-group div > .el-select.el-select--small .el-select__tags {top: 7% !important; transform: none !important;}
-.filter-group .el-select .el-tag {background: rgba(var(--color-bw)) !important; margin: 3px 0 0 6px !important;}
+.filter-group .el-select .el-tag {background: rgba(var(--color-white)) !important; margin: 3px 0 0 6px !important;}
 }
 
 @-moz-document url-prefix("https://anilist.co/anime/"), url-prefix("https://anilist.co/manga/") {

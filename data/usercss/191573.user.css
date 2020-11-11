@@ -1,14 +1,38 @@
 /* ==UserStyle==
-@name           Youtube Retro Wave
+@name           Youtube RetroWave
 @namespace      USO Archive
 @author         Yad
-@description    `YOUTUBE Retro Wave ThemeUse the dark theme in your Appearance settings`
-@version        2020115.11.41
+@description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
+@version        20201110.18.52
 @license        CC-BY-NC-4.0
 @preprocessor   uso
+@advanced dropdown yadbgchanger "Background Image" {
+1 "Default*" <<<EOT https://i.postimg.cc/1mScS4XW/retrowave.png EOT;
+2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
+
+	yadbgchanger-custom-dropdown "Custom" <<<EOT /*[[yadbgchanger-custom]]*\/ EOT;
+}
+@advanced text yadbgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
+@advanced dropdown araw "Sun" {
+1 "ON*" <<<EOT https://i.postimg.cc/J4gFh3TK/sunset.gif EOT;
+2 "OFF" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
+
+	araw-custom-dropdown "Custom" <<<EOT /*[[araw-custom]]*\/ EOT;
+}
+@advanced text araw-custom "Sun (Custom)" "https://example.com/image.png"
+@advanced color yadbgcolor "Background Color" #14031E
+@advanced dropdown yadspinner "Loading Spinner" {
+	1 "Dotted*" <<<EOT dotted EOT;
+2 "Dashed" <<<EOT dashed EOT;
+3 "Double" <<<EOT double EOT;
+4 "Groove" <<<EOT groove EOT;
+5 "Solid" <<<EOT solid EOT;
+6 "Ridge" <<<EOT ridge EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-
 /********************************/
 /*2021 Youtube Retro Wave by YAD*/
 /********************************/
@@ -123,12 +147,17 @@ ytd-app {
 background-image: url(https://i.postimg.cc/J4gFh3TK/sunset.gif), url(https://i.postimg.cc/1mScS4XW/retrowave.png);
 background-repeat: no-repeat;
 background-attachment:fixed;
-background-color: #14031e;
+background-color: /*[[yadbgcolor]]*/;
 background-position: 50% 33%, center;
 background-size: 300px, 100%;
-background-blend-mode: screen;
-	
+background-blend-mode: screen;	
 }
+
+/*BG CHANGER*/
+ytd-app {
+	background-image: url(/*[[araw]]*/), url(/*[[yadbgchanger]]*/);
+}
+
 .html5-video-player {/*glow on player*/
     box-shadow: 0 0 20px #f800ff;
 }
@@ -309,9 +338,11 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
 	animation-name: yadwatched;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
 }
 @keyframes yadwatched {
-    0%  {background-color:#0ed9cc;top:20px}
+    0%  {background-color:#0ed9cc;box-shadow: 0px 0px 7px 8px #0fedf1;}
 }
 /*notif color*/
 #notification-count.ytd-notification-topbar-button-renderer {
@@ -447,7 +478,7 @@ ytd-badge-supported-renderer.ytd-rich-grid-media {
 }
 
 .ytp-spinner-circle {
-    border-style: dotted;
+    border-style: /*[[yadspinner]]*/;
     border-color: #fff0 #ff00e6fa #fff0 #bd00ff;
     border-radius: 50%;
 }
@@ -468,6 +499,10 @@ ytd-playlist-panel-renderer[hide-header-text] .header.ytd-playlist-panel-rendere
     height: 12px;
     width: 16px;
     background-color: #a400ff;
+}
+/*info box on live*/
+#card.yt-live-chat-viewer-engagement-message-renderer {
+    background-color: #6e418987;
 }
 
 /********************************/

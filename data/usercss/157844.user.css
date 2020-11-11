@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SLTW
 @description    `A Theme for 9gag to make it dark and overall a very nice experience.Added a few little Details and improvements.Has the Horizontal MenuThis is still a work in progress - so if you find any issues or have troubles with the theme please let me know.`
-@version        2019125.13.33
+@version        20201110.13.40
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -289,4 +289,66 @@ textarea {background-color: black; color: white; border-color: #0f0;}
 
 
 .topBannerAd-container {display: none;}
+}
+
+@-moz-document domain("9gag.com") {
+/*part to adapt "Boards" */
+
+.board-system__wrapper[data-v-0938f772] {background: #1c1c1c; color: white;}
+.boards-headings[data-v-4aafb740], .boards-list__header_title[data-v-4aafb740] {color: white;}
+.board-system__list_item .list_item__board_info .title[data-v-8a80bd80] {color: white;}
+
+/*usernames*/
+.board-message-header_username a[data-v-0f2b91e8] {color:#16ff00}
+
+/*messages*/
+.board-message_wrapper.with-bg .bg-container[data-v-b58b5f4a] {background: black;}
+
+/*text box*/
+.boards-footer__reply-board__text-input[data-v-38782ee0]{background: black; color: #00ffe1}
+
+.board-message-header_pro-status[data-v-0f2b91e8], .board-message-header_pro-status[data-v-0f2b91e8]:after {content:" - Moron"; color:black}
+
+/*active background*/
+.board-system__list_item.display-list-item[data-v-8a80bd80]:hover, .board-system__list_item.display-list-item.active[data-v-8a80bd80] {background: #000;}
+
+
+/*backgrounds*/
+.boards-footer__join-board input[type=text][data-v-c9d77e5c],
+.boards-list__lists[data-v-4aafb740],.boards-headers-base[data-v-17117962],
+.board-view__top-bar[data-v-17117962],.boards-headers-base[data-v-4aafb740],
+.boards-list__header[data-v-4aafb740],
+.boards-footer[data-v-d9f9214e]{
+  background: #1c1c1c;
+}
+
+
+/*menu items*/
+.context-menu[data-v-5e1e3a34],.uni-modal_wrapper {background: black; border: 2px solid #ff9100;}
+.uni-modal__header {color: white;}
+
+
+
+
+/*scrollbar stuff*/
+
+*::-webkit-scrollbar {
+  width: 12px;              
+}
+*::-webkit-scrollbar-track {
+  background: #00000087;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #0f0;  border-radius: 20px;  border: 2px solid #000;
+}
+
+
+
+/*borders*/
+
+.boards-headers-base[data-v-4aafb740], .boards-list__header[data-v-4aafb740],.boards-headers-base[data-v-17117962], .board-view__top-bar[data-v-17117962] {border-bottom: 2px solid black;}
+.board-system__wrapper .board-system__left_part[data-v-0938f772] {border-right: 2px solid black;}
+.boards-footer[data-v-d9f9214e] {border-top: 2px solid black;}
+
+.board-system__wrapper.board-system__state_opened[data-v-0938f772],.board-system__wrapper.board-system__state_closed[data-v-0938f772] {box-shadow: 0px 0px 50px 2px black}
 }

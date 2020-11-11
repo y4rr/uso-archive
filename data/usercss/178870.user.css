@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for AliExpress.com--- AliExpress`
-@version        20201016.21.13
+@version        20201110.21.31
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -514,7 +514,6 @@
     .top-sell,
     .ask-buyers,
     .add-store-list,
-    .product-main,
     .image-viewer,
     .product-specs,
     .list-pagination,
@@ -553,7 +552,6 @@
     #tmall-pc-menu-from-common > ul > li.hover > a::after,
     ._new-home-firstscreen .advertise-main,
     .ui-window-shipping .s-company-table thead td,
-    .related-search-container,
     .next-input,
     .next-input:hover,
     .next-input.next-focus,
@@ -602,6 +600,10 @@
 
 .rank-entry .rank-item-title h3 {
     color: #ddd;
+}
+
+.product-main {
+    background: transparent;
 }
     
     .sa-me,
@@ -740,7 +742,6 @@
     .wish-list .me-left-nav-bar .menu-separator {border-color:#222;}
     
     .ui-slidebox-item-row .notranslate {color:#e62e04;}
-    img {filter:brightness(95%);}
     .recommend-products-p4p {margin-top:0;padding-top:0;border-top:0 solid;}
     
     .nav-global .ng-cart-icon, 
@@ -872,8 +873,11 @@
 .spell-correction-wrap .category-direct, .spell-correction-wrap .spell-correction {
 	background-color: #222;
 }
+.related-search-container {
+    background: #191919;
+}
 .related-search-outer {
-	background: #333;
+	background: #222;
 	padding-bottom: 4px;
 }
 .ng-switcher .label {
@@ -1023,15 +1027,24 @@
 #elevator-nav-container div {
     background-color: #444;
 }
-[target=_blank] span.text, #elevator-nav-container span.text {
+#elevator-nav-container span.text {
     color: #fff !important;
+    background-color: transparent !important;
+}
+a[href^="https"][target=_blank],
+a[href^="//"][target=_blank],
+a[href^="https"][target=_blank] [data-exp-s],
+a[href^="//"][target=_blank] [data-exp-s]{
+    background-color: #333 !important;
+}
+a[href^="https"][target=_blank] span,
+a[href^="//"][target=_blank] span{
+    color: #fff !important;
+}
+a[href^="https"][target=_blank] span[numberoflines='1'] + span,
+a[href^="//"][target=_blank] span[numberoflines='1'] + span {
     background-color: #444 !important;
-}
-[target=_blank] {
-    background-color: transparent !important;
-}
-a[href^="https"], a[href^="//"] {
-    background-color: transparent !important;
+    color: #ff4747 !important;
 }
 #elevator-nav-container div {
     background-color: #444 !important;
@@ -1065,13 +1078,6 @@ li[class^="vertical center flex-auto"] {
     overflow: visible !important;
 }
 #TabOfFalls div span[class^="rax-text  rax-text--overflow-hidden"] {
-    color: #fff !important;
-}
-.rax-view div div div div span{
-    background-color: #444 !important;
-    opacity: 1 !important;
-}
-.rax-view div div div div div span{
     color: #fff !important;
 }
 .session-view .session-item.active-true.ripple {
@@ -1156,6 +1162,9 @@ td[class="anchor-wrap anchor1-wrap"] {
 .check-out-root div {
 	background: #111;
 }
+.home-firstscreen {
+    background-color: transparent !important;
+}
 .home-firstscreen .festival-categories .product-item span {
 	color: #ddd !important;
 }
@@ -1164,6 +1173,9 @@ td[class="anchor-wrap anchor1-wrap"] {
 }
 a[href^='//campaign'] i {
     filter: invert(90%);
+}
+.channel-main {
+    background: #111;
 }
 
 .coupon-new, .coupon-store, .coupon-mark, #login .fm-button, .flyout-user-signIn a.join-btn, .flyout-user-signIn a.sign-btn, .next-btn.next-btn-primary, .next-btn.next-btn-primary.visited, .next-btn.next-btn-primary:link, .next-btn.next-btn-primary:visited, .next-btn.next-btn-primary.active, .next-btn.next-btn-primary.hover, .next-btn.next-btn-primary:active, .next-btn.next-btn-primary:focus, .next-btn.next-btn-primary:hover, .searchbar-form .search-in-aliexpress, .deals-discount-status .status-item.active, .container-radius .product-item .discount, .crowd-entrance .crowd-note .crowd-price, .container-radius .product-list .eval-total-num, .container-radius .product-list .pro-note-wrapper i, .store-info-content .store-info-btn .visit-store-btn a, .header-tag-detail .follow-container .text-btn.follow, .next-checkbox-wrapper .next-checkbox-inner > .next-icon, ._new-home-firstscreen .advertise-main .brand-banner-open .img .price, .next-checkbox-wrapper.checked.focused .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate.focused .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.checked:not(.disabled):hover .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.checked:not(.disabled).hovered .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate:not(.disabled):hover .next-checkbox-inner > .next-icon, .next-checkbox-wrapper.indeterminate:not(.disabled).hovered .next-checkbox-inner > .next-icon {
@@ -1324,7 +1336,10 @@ a[clk_trigger=''] span {
 }
 .rax-scrollview-content-container-horizontal, .rax-scrollview-content-container-horizontal div,
 #recyclerview > div {
-    background: #333 !important;
+    background-color: #222 !important;
+}
+.rax-scrollview-content-container-horizontal [numberoflines='2'] {
+    color: #fff !important;
 }
 #gcp-elevator div {
     background: #444 !important;
@@ -1353,6 +1368,9 @@ a[clk_trigger=''] span {
 .main .item {
     background: #444 !important;
 }
+.main .item span {
+    color: #eee !important;
+}
 .store-banner, .store-info, .instore-info-container {
     background: #222;
 }
@@ -1361,10 +1379,19 @@ a[clk_trigger=''] span {
 }
 /* do not remove */
 .festival-main-venue {
-    background: transparent !important;
+    background-color: transparent !important;
+    filter: brightness(90%);
 }
 .flashdeals-entry .discount {
     background: #ff4747;
+}
+.store-list.invalid .store-collection {
+    background: #222;
+    border-color: #666;
+    color: #ccc;
+}
+.count-down a.hot-zone {
+    background-color: transparent !important
 }
 
     .discount-des-hd dt,
@@ -1500,7 +1527,7 @@ a[clk_trigger=''] span {
 .product-pagination-wrap button {background-color: transparent !important;color:#FFF !important}
 .p4p {background: #000 !important;color:#FFF !important}
 .title {background: transparent !important;color:#FFF !important}
-.left-menu-container {background: #000 !important;color:#FFF !important}
+.left-menu-container {background: #191919 !important;color:#FFF !important}
 .content {background: transparent !important;color:#FFF !important}
 .me-ui-box {background: #111 !important;color:#FFF !important}
 .hover-help {background: transparent !important;color:#FFF !important}

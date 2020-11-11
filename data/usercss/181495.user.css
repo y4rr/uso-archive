@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kevin Guertin
 @description    `Make MeWe use automatic multi-columns for stream posts. No sidebars. Full-width header without header tab names.`
-@version        2020118.21.59
+@version        20201110.17.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -78,6 +78,10 @@
     .header_nav_link_name {
         display: none !important;
         visibility: hidden !important;
+    }
+    .header_nav_item {
+        padding-right: .5em;
+        padding-left: .5em;
     }
 }
 

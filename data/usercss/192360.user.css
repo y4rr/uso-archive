@@ -1,0 +1,194 @@
+/* ==UserStyle==
+@name           Eldarya - Corrections Website [all servers]
+@namespace      USO Archive
+@author         Вика Пименова
+@description    `If you don't know Russian, use a translatorВсе изменения:Текст верхнего меню немного увеличен, а его фон затемнён, так что его теперь проще читатьУбрана синяя мигающая полоска под надписью "Новая эра"На рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее, чтобы сразу бросаться в глазаВ гардеробе и в магазине одежды сократилось пустое пространство, чтобы вещи было лучше видноИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке (банк) немного увеличены стикеры акций и добавлено белое обрамление для надписей "Мана" и "Золотые монеты" Названия нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеет`
+@version        20201110.15.45
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
+
+/*Основное*/
+
+  /*Голубая мигающая полоска*/
+#top-bar::before {
+    width: 0%;
+    animation: none; /*если хотите, чтобы она была, но не мигала, удалите строчку выше и строчку ниже*/
+    background: none;
+}
+
+  /*То, до чего не додумались бимув. Темный фон для меню*/
+
+#menu-bar {
+    background: rgba(50, 21, 64, 0.65);
+    height: 42px;
+}
+
+  /*Крупные буквы в меню*/
+
+#menu-bar #menu li a {
+    font-size: 20px;
+    text-shadow: 0 0 8px var(--main-season-color);
+    line-height: 38px;
+    font-weight: 600;
+}
+
+#top-bar h1 {
+    font-size: 30px;
+}
+
+/*Гг на главной странице не светится при наведении*/
+
+#home-left-container #home-avatar-player canvas{
+    pointer-events: none;
+}
+
+/*Список вещей в гардеробе и магазине повыше*/
+
+#currencies {
+    position: absolute;
+    right: 140px;
+}
+
+#appearance-right {
+    padding: 20px 30px 0 0;
+}
+
+#mall-container {
+    top: -55px;
+    padding: 0px 0px 0px 55px;
+}
+
+#avatar-picto-actions .action-picto, #search-wardrobe-form, #actions-container, #wardrobe-menu {
+    top: -15px;
+}
+
+#container .section-title {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#container .section-subtitle {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#layout-2col {
+    top: -50px;
+}
+
+#layout-2col-right {
+    top: 0px;
+}
+
+#layout-2col-left {
+    top: 0px;
+}
+
+#mall-categories, #mall-products, #mall-productDetail {
+    height: calc(120vh - 448px);
+}
+
+#mall-categories.index-mall-categories {
+    height: calc(135vh - 448px);
+}
+
+#appearance-items ul {
+    min-height: 550px;
+}
+
+#appearance-items {
+    top: 10px;
+}
+
+#mall-container .nl-button.nl-button-back {
+    left: 100px;
+}
+
+/*Чердак*/
+
+.attic-container #right-bg {
+    width: 120vw;
+}
+
+.attic-container #attic-inner-container {
+    float: none;
+    width: auto;
+    padding-top: 40px;
+}
+
+#attic-inactive-items, #attic-active-items {
+    width: 500px;
+    float: none;
+    min-height: 370px;
+}
+
+#attic ul {
+    min-height: 330px;
+}
+
+.attic-categories-list {
+    max-height: calc(400vh - 524px);
+}
+
+/*Банк*/
+
+#bank-page .product-panel h2 {
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 35px;
+    box-shadow: 0 0 8px 0 rgba(34, 33, 34, 0.56);
+}
+
+#bank-page .bank-level-card .bank-best-seller-chip {
+    background-size: 78px;
+    background-position: center;
+}
+
+#bank-page .bank-level-card .bank-level-amount .free-bonus-chip {
+    background-size: 100px;
+    background-position: center;
+}
+
+/*Названия нарядов в магазине не кричат на тебя*/
+
+#mall-productDetail-info .mall-productDetail-name {
+    text-transform: none;
+}
+
+/*Цифры в магазинах побольше*/
+
+.mall-product-maana-price, .mall-product-gold-price, .mall-product-purropass-price, .mall-variations-owned {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Названия вещей немного темнее*/
+
+.mall-category-title, .appearance-category-name, .appearance-item-info-name {
+    font-weight: 700;
+}
+
+/*Не знаю, кто решил, что розовая кнопка сочетается с голубым шрифтом, но не важно. Когда забираешь вещь из мешка, текст не будет синеть*/
+
+.flavr-button.pink:hover, .button.button.button-pink:hover {
+    color:  rgb(255, 255, 255);
+}
+
+/*Рынок*/
+
+#marketplace-main-content .abstract-currentPrice {
+    font-size: 12px;
+    text-transform: none;
+}
+
+#marketplace-main-content .price-item {
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(52 56 111);
+}
+
+#marketplace-main-content .maana-icon {
+    width: 0;
+}
+}
