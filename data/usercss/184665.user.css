@@ -3,22 +3,27 @@
 @namespace      USO Archive
 @author         Arpeks Menetil
 @description    `Изменяет шрифт и фон на rulate (работает только с новой читалкой от сайта)`
-@version        2020718.22.28
+@version        20201112.0.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain(tl.rulate.ru) {
+@-moz-document regexp(".*tl.rulate.ru/book/.*") {
 #reader .text-wrapper {
-	max-width: 1100px !important;
+	max-width: 75% !important;
 }
+
 body:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {
 	background-color: #faf8f2 !important;
-	color: #444 !important;
+}
+
+body.brightness-1 #readpage .content-text * * {
+	background-color: inherit !important;
+}
+
+.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {
+	color: #ccc !important;
 	font-family: Arial, serif !important;
 	font-size: 20px !important;
 	line-height: 24px !important;
-}
-body.brightness-1 #readpage .content-text * * {
-	background-color: inherit !important;
 }
 }

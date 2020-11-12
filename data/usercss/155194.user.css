@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Денисов Ярослав
 @description    `За основу взят https://userstyles.org/styles/127431/newvk-dark-themeИзменены цвета, исправлены ошибки и верхняя панель.Наслаждайтесь~О багах пишите сюда:vk.com/whitebrim`
-@version        20201028.20.44
+@version        20201111.19.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -8776,6 +8776,22 @@
 [dir=ltr] body.new_header_design .TopSearch__input{
     background: #373b3e url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.92%22%3E%3Cpath%20opacity%3D%22.1%22%20d%3D%22M0%200H16V16H0z%22%2F%3E%3Cpath%20d%3D%22M6.5%201a5.5%205.5%200%200%201%204.383%208.823l3.896%203.9a.75.75%200%200%201-1.061%201.06l-3.895-3.9A5.5%205.5%200%201%201%206.5%201zm0%201.5a4%204%200%201%200%200%208%204%204%200%200%200%200-8z%22%20fill%3D%22%23818c99%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) no-repeat;
     background-position: 10px;
+}
+
+[dir=ltr] body.new_header_design .left_menu_nav_show_menu{
+    border-top: 0px solid #484B4E;
+}
+
+[dir=ltr] body.new_header_design .side_bar.sticky_bottom{
+    transform: translateY(0);
+}
+
+[dir=ltr] .page_block.apps_feedRightAppsBlock{
+    display: none;
+}
+
+[dir=ltr] .left_menu_nav_show_menu.left_menu_nav_show_menu_link_visible{
+    display: none;
 }
 }
 

@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "rulate",
     "createdAt": "2020-06-04T07:26:09.000Z",
-    "updatedAt": "2020-07-18T19:28:14.000Z",
+    "updatedAt": "2020-11-12T00:35:08.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 490912,
@@ -16,7 +16,7 @@
   },
   "stats": {
     "installs": {
-      "total": 3,
+      "total": 6,
       "weekly": 0
     }
   },
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(tl.rulate.ru) {\r\n#reader .text-wrapper {\r\n\tmax-width: 1100px !important;\r\n}\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: #faf8f2 !important;\r\n\tcolor: #444 !important;\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: 20px !important;\r\n\tline-height: 24px !important;\r\n}\r\nbody.brightness-1 #readpage .content-text * * {\r\n\tbackground-color: inherit !important;\r\n}\r\n}"
+    "css": "@-moz-document regexp(\".*tl.rulate.ru/book/.*\") {\r\n#reader .text-wrapper {\r\n\tmax-width: 75% !important;\r\n}\r\n\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: #faf8f2 !important;\r\n}\r\n\r\nbody.brightness-1 #readpage .content-text * * {\r\n\tbackground-color: inherit !important;\r\n}\r\n\r\n.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {\r\n\tcolor: #ccc !important;\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: 20px !important;\r\n\tline-height: 24px !important;\r\n}\r\n}"
   }
 }

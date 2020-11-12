@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Herotrap
 @description    `Some simple yet powerful features that makes your BitView experience even more nostalgic. From now, I've changed:- 2008 YouTube Broadcast Yourself Logo- 2008 YouTube Small Logo in channels- Changed teal colors on player to YouTube's red ones- Teal colored text is now black, like on YouTube`
-@version        20201110.21.52
-@license        NO-REDISTRIBUTION
+@version        20201111.14.5
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.bitview.net") {
 /* Header Logo */
 #masthead .logo {
-    content: url(https://i.imgur.com/Br7RQsj.png) ;
+    content: url(https://i.imgur.com/tb4q0Y4.png) ;
     float: left;
     display: block;
     margin: 1px 1px 6px 0;
@@ -36,7 +36,7 @@ element.style {
 }
 }
 
-@-moz-document url-prefix("https://www.bitview.net/watch.php?v=") {
+@-moz-document url-prefix("https://www.bitview.net/watch.php?v="), url-prefix("http://www.bitview.net/watch.php?v="), url-prefix("https://www.bitview.net/profile"), url-prefix("http://www.bitview.net/profile"), url-prefix("https://www.bitview.net/embed"), url-prefix("http://www.bitview.net/embed") {
 /* Red Player */
 .vlPlayer2009.tealBt .vlSeeker > i {
     background-position: -67px -30px;
@@ -70,5 +70,18 @@ element.style {
 }
 .vlPlayer2009.tealBt .vlEndScreenRight .vlEndScreenBtn i {
     background-position: -0px -400px;
+}
+}
+
+@-moz-document url-prefix("http://www.bitview.net/embed") {
+/* Embed Logo */
+img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://i.imgur.com/aKMpSBC.png) no-repeat;
+  width: 200px;
+  height: 82px;
+  padding-left: 200px;
 }
 }
