@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.Переключиться на новый дизайн ВК нужно через меню ПОЛЬЗОВАТЕЛЬ -> НАСТРОЙКИ -> ОБЩЕЕ, пункт "Обновлённый дизайн"`
-@version        2020119.7.11
+@version        20201112.10.23
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2795,5 +2795,42 @@ body.new_header_design .top_audio_player_title {
 [dir] .Alert.error {
 /*     background-color: #ffd6cc; */
 	color: #F66;
+}
+
+[dir] .StickerPackPreview__header {
+    background-color: #16202C;
+    border-bottom-color: #242F3D;
+}
+.StickerPackPreview__description {
+    color: var(--text-white-color);
+}
+[dir] .StickerPackPreview__items {
+    background-color: #0E1621;
+}
+[dir] .StickerPackPreview__copyrights {
+    background-color: #0E1621;
+}
+[dir] .StickerPackPreview__footer {
+    background-color: #16202C;
+    border-top-color: #242F3D;
+}
+[dir] .StickersProductPreview__stickers { filter: drop-shadow( 1px 0 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( -1px 0 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( 0 -1px 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( 0 1px 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( 1px 1px 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( -1px 1px 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( 1px -1px 0 rgba( 255, 255, 255, .7 ) ) drop-shadow( -1px -1px 0 rgba( 255, 255, 255, .7 ) ); }
+
+[dir] .StickerProductsGift__content {
+    background-color: #16202C;
+}
+.StickerProductsGift__price {
+    color: #fff;
+}
+[dir] .StickerProductsGift__footer {
+    background-color: #0E1621;
+    border-top-color: #242F3D;
+}
+.StickerProductsGift__recipientsLabel, .StickerProductsGift__messageLabel {
+    color: #E0E0E0;
+}
+#StickerProductsGiftRecipientsInput {
+	background-color: #16202C;
+	color: #fff;
 }
 }

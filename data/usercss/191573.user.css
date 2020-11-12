@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           Youtube RetroWave
 @namespace      USO Archive
-@author         Yad
+@author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201111.15.49
+@version        20201112.8.38
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -14,8 +14,8 @@
 }
 @advanced text yadbgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
 @advanced dropdown araw "Sun" {
-1 "ON*" <<<EOT https://i.postimg.cc/J4gFh3TK/sunset.gif EOT;
-2 "OFF" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
+1 "Default*" <<<EOT https://i.postimg.cc/J4gFh3TK/sunset.gif EOT;
+2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
 
 	araw-custom-dropdown "Custom" <<<EOT /*[[araw-custom]]*\/ EOT;
 }
@@ -36,6 +36,11 @@
 	logoniyad-custom-dropdown "Custom" <<<EOT /*[[logoniyad-custom]]*\/ EOT;
 }
 @advanced text logoniyad-custom "Change Logo (Custom)" "https://example.com/image.png"
+@advanced dropdown yadcolorize "Logo Changing Color" {
+	1 "ON*" <<<EOT yadlogo EOT;
+2 "OFF" <<<EOT none EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -50,7 +55,7 @@
 
 #logo-icon-container.ytd-topbar-logo-renderer {/*logo*/
     animation-name: logoyad;
-	filter: hue-rotate(290deg);
+	filter: none;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
 	fill-opacity: 0;
@@ -58,8 +63,11 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 85px;
-    height: 35px;		
+    width: 100%;
+    height: 50px;
+    max-width: 100px;
+    max-height: 100px;
+		
 }
 
 
@@ -78,7 +86,7 @@
 	animation-direction: alternate;
 
 }
-@keyframes yadlogo {
+@keyframes /*[[yadcolorize]]*/ {
 	0% {filter: hue-rotate(0deg);}
        100% {filter: hue-rotate(360deg) saturate(6.1);}
 }
@@ -522,6 +530,7 @@ paper-listbox.yt-dropdown-menu {
 .ytp-swatch-color {
     color: #ffffff;
     text-shadow: 0 0 9px #ff00d0;
+
 }
 
 /*subpop*/
@@ -565,6 +574,14 @@ ytd-playlist-panel-renderer[hide-header-text] .header.ytd-playlist-panel-rendere
     width: 16px;
     background-color: #a400ff;
 }
+
+/*4k 8k indicator*/
+.ytp-settings-button.ytp-4k-quality-badge:after, .ytp-settings-button.ytp-5k-quality-badge:after, .ytp-settings-button.ytp-8k-quality-badge:after {
+    background-color: #05d0da;
+    box-shadow: 0 0 7px 1px #04fff3;
+    transform: scale(1.3);
+}
+
 /*info box on live*/
 #card.yt-live-chat-viewer-engagement-message-renderer {
     background-color: #6e418987;

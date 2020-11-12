@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Faisal Sarosh
 @description    `This has been created to make the data displayed in CARES to fit normal display dimensions and accommodate better Readability in web design.`
-@version        2020109.19.35
+@version        20201112.9.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
    ▓▓ Suggestions and comments are always    ▓▓
    ▓▓ welcome!                               ▓▓
    ▓▓ ---------------------------------------▓▓
-   ▓▓ last modified: 09-17-2020              ▓▓
+   ▓▓ last modified: 11-12-2020              ▓▓
    ▓▓________________________________________▓▓ */
 
 body {
@@ -137,7 +137,16 @@ box-shadow:2px 2px 5px 0 rgba(0, 0, 0, .5);
 box-shadow:2px 2px 5px 0 rgba(0, 0, 0, .5);
 /*box-shadow:inset 0 0 0 1000px rgba(166, 105, 0, .2);*/
 
-background-image: linear-gradient(45deg,rgba(39,178,188,.05),rgba(120,177,66,.2),rgba(254,189,23,.08));
+background:#eeeeee;
+/*background-image: linear-gradient(45deg,rgba(39,178,188,.05),rgba(120,177,66,.2),rgba(254,189,23,.08));*/
+}
+
+div.card
+{
+	background:#f6f6f6;
+}
+#CphMain_divStudentCourses > div{
+	background:#eeeeee;
 }
 
 /*/////tweaks for Student Course Details section////*/

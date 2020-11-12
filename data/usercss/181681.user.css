@@ -3,13 +3,12 @@
 @namespace      USO Archive
 @author         Carlos Víllora Tercero
 @description    `Oscuro y azul para UCLM, papas y lo que quieras añadir`
-@version        2020328.18.11
+@version        20201112.11.2
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain(campusvirtual.uclm.es),domain(aulas1920.castillalamancha.es) {
-
-  body {
+@-moz-document domain("campusvirtual.uclm.es"), domain("aulas1920.castillalamancha.es") {
+body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -24,6 +23,15 @@
 h5 {
     color: #5fc7fb;
 }
+
+.block, #dockeditempanel .dockeditempanel_content {
+    background-color: rgb(32 32 32);
+}
+
+#page-my-index {
+    background-color: #202020;
+}
+
 /* left box */
  .media-body {
     background: #191919 !important;
@@ -59,7 +67,10 @@ h5 {
     background-color: #333333;
     color: white;
 }
+#region-main {
 
+    background-color: #202020;
+}
 .bg-white {
     background-color: #101010!important;
       border-color: #101010 !important;
@@ -133,8 +144,9 @@ h5 {
 }
 /* calendario*/
  th, td:hover {
-    background-color: rgb(31, 66, 93) !important;
+     background-color: rgb(12, 27, 37) !important;
 }
+
 .calendar_event_course {
     background-color: #2781f0;
 }
@@ -198,11 +210,34 @@ h5 {
    -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 140, 200, 1);
     box-shadow: 0 0 0 0.2rem rgb(66, 140, 200);
 }
+
+.que.ddwtos .group1{
+ background-color: #0d1f2f;   
+}
+.custom-select:disabled {
+    color: #fdfeff;
+    background-color: #0c1b25;
+}
+.alert-warning, #page-admin-index .adminwarning, .uninstalldeleteconfirmexternal, .que .outcome, .que .comment {
+    color: #ffffff;
+    background-color: #181818;
+    border-color: #181818;
+}
+
 /* warning */
+
 .alert-danger, #page-admin-index .adminerror {
     color: #fff;
     background-color: #4E3131;
     border-color: #4E3131;
+}
+
+.message-app {
+    background-color: #202020;
+}
+.message.received {
+    background-color: #161616;
+    color: #fff;
 }
 .messaging-area-container .messaging-area .contacts-area .searchtextarea {
 
@@ -371,11 +406,4 @@ strong {
 span[style]{
     color:#fff !important;
 }
-
-
-  
-  
 }
-
-
-

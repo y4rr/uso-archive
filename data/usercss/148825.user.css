@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         airflame
 @description    `Usunięcie reklam jak i zrobienie full width[OPCJE]Ukrycie komentarzy z wpisów userów na czarnej liścieUkryj wpisy mikroblogu na głównejUkrycie wpisów z głównej userów na czarnej liścieUkrycie + / -`
-@version        20201030.7.4
+@version        20201112.10.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown optionhide "Ukrycie + / -" {
@@ -35,16 +35,33 @@ hiddencomment2 "Ukryj" <<<EOT none !important; EOT;
     display: none !important;
 }
 
-.grid-right {
+#nav{
+    position: relative;
+}
+
+#nav + div {
+    padding-top: unset;
+}
+
+.r-block.link-list-popular  {
     display: none !important;
+}
+
+.grid-right.m-reset-float.m-reset-margin.m-reset-width.m-hide {
+    position: relative;
+    width: 100%;
+    display: block !important;
+    margin-left: unset;
 }
 
 .article.clearfix.preview {
     display: none;
 }
+
 .article.clearfix.preview.dC {
     display: block;
 }
+
 .grid-main {
     margin-right: 0px !important;;
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Loplo
 @description    `FR: Ce style regroupe les styles qui vous indiquent quels items sont lootables en fonction des endroit:  Map Cité d'Eel / Map Côte de Jade / Map Feng-huang / Map Halloween / Map NoëlEt sera mis à jour en même temps que les markables o/EN: This style gather all Eldarya's map styles!  City of El Map / Jade Coast Map / Feng-huang Temple Map / Halloween Map / Christmas MapAnd will be updated in the same time as the markables o/<a href="https://markableseldarya.wordpress.com/">Pour avoir accès aux markables, c'est ici!</a>`
-@version        2020119.19.51
+@version        20201112.10.2
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1643,6 +1643,80 @@
 			background-size : 40px 40px !important ;}
 			div.map-location-tooltip [data-id="109"]:after { content: "+ ✦";
             position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
+
+        /*Ilot pluvieux*/
+            div.map-location-tooltip [data-id="110"] { 
+			background-image : 
+			url("https://www.eldarya.fr/assets/img/player/hair/icon/ba4c1dd63d5c3f818f177234c2177fcb.png"),
+            url("https://www.eldarya.fr/assets/img/item/egg/d42eb8302b54e94d4b4be146dfd7bbc4.png"),
+            url("https://www.eldarya.fr/assets/img/item/player/icon/0db57b8536178fe0fc2e3d8028512b14.png"),
+            url("https://www.eldarya.fr/assets/img/item/player/icon/e83040687b6c2008c46bed3018cf21bc.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/6ae7a5ae4b405073ad24bb7404e60330.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/e97390640afaacee30651f17ab028e91.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/bd4dacfb99a84394e20beed47c825de7.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/82c73139a884bdf0f52ac2addde9754e.png")
+			!important;
+			background-repeat: no-repeat!important;
+			background-position:
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
+			background-size : 40px 40px !important ;}
+			div.map-location-tooltip [data-id="110"]:after { content: "+ ❤";
+            position: absolute;	top: 63px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
+
+        /*Plaine fleurie*/
+            div.map-location-tooltip [data-id="111"] { 
+			background-image : 
+			url("https://www.eldarya.fr/assets/img/item/consumable/bca788edbca443c1698d9b229499045b~1600415891.png"),
+            url("https://www.eldarya.fr/assets/img/player/hair//icon/6d3a542925ee00a6ccfb2586d930121d~1604538698.png"),
+            url("https://www.eldarya.fr/assets/img/item/player//icon/cbb8f8976731a963a56d8fa760229d38~1604529829.png"),
+            url("https://www.eldarya.fr/assets/img/player/skin/icon/caad65e7fc7c9ecf89285f0e0547b6c6.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/d89aca4fd3c4d217795e572e4231dd49.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/a75fcac4aadabe7f65edc9d4d9ffba76~1595509673.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/481ca5317c6e6d0c4bd91e02e2493cc1~1600415821.png")
+			!important;
+			background-repeat: no-repeat!important;
+			background-position:
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
+			background-size : 40px 40px !important ;}
+			div.map-location-tooltip [data-id="111"]:after { content: "-✦ ║ +❤";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
+
+        /*Rocher*/
+            div.map-location-tooltip [data-id="112"] { 
+			background-image : 
+			url("https://www.eldarya.fr/assets/img/player/mouth/icon/8fbd16ed017ff2e43613bb258153290a.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/1a3e2a624b748798ed9a406c948bcd91.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/3cbda526a5b03ec1ac644ddec6c2176c.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/294d7fbfb8e653a1d4130623ce16bef6.png"),
+            url("https://www.eldarya.fr/assets/img/item/consumable/d56aea3cc6001e550c52dd87344e65d6~1408536381.png")
+			!important;
+			background-repeat: no-repeat!important;
+			background-position:
+			5px 90px, 45px 90px, 85px 90px, 135px 90px,
+            5px 135px, 45px 135px, 85px 135px, 135px 135px,
+            5px 180px, 45px 180px, 85px 180px, 135px 180px,
+            5px 225px, 45px 225px, 85px 225px, 135px 225px,
+            5px 270px, 45px 270px, 85px 270px, 135px 270px
+            !important;
+			height: 185px!important;
+            width: 180px!important;
+			background-size : 40px 40px !important ;}
+			div.map-location-tooltip [data-id="112"]:after { content: "";
+            position: absolute;	top: 63px; left: 110px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 15px;  font-weight: bold; }
 
 
 /*EVENT*/

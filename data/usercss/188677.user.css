@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         小张
 @description    `OSC新首页暗黑主题样式 <a href="https://gitee.com/zkui/osc-dark-homepage">Gitee</a>`
-@version        2020927.5.42
+@version        20201112.3.0
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -820,5 +820,47 @@
 }
 .osc-new-layout.page-web-news .news-detail-container .detail-body-box .main-box .article-box .related-project-box .related-links-box__title {
     color: var(--lighter);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__title a 
+,.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__meta .item-list>.item .clickable.link--default
+,.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__meta .item-list>.item>a.link--default
+,.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .content-section-box .content-section .section-header .section-title
+{
+    color: var(--lighter) !important;
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__title a:hover,
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__meta .item-list>.item .clickable.link--default:hover
+,.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info__meta .item-list>.item>a.link--default:hover
+,.osc-new-layout .tabs-box__tabs .tabs-link:hover
+{
+    color: var(--green) !important;
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .links-box .links-item__button
+{
+    background: var(--darken);
+    border: 1px solid var(--default);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .header-info {
+    border-bottom: 1px solid var(--darken);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .properties-box {
+    background: var(--darken);
+    border: 1px solid var(--default);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .properties-box .info-list .info-item a,
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .properties-box .info-list .info-item{
+    color: var(--lighter);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .properties-box .info-list .info-column+.info-column {
+    border-left: 1px solid var(--default);
+}
+.osc-new-layout.page-web-project .project-detail-container .detail-body-box .main-box .content-box__inner .header-basic-box__inner .basic-info .properties-box .info-list .info-item+.info-item {
+    border-top: 1px solid var(--default);
+}
+.osc-new-layout.page-space-blog .detail-box .collapse-bar, .osc-new-layout.page-web-news .detail-box .collapse-bar, .osc-new-layout.page-web-project .detail-box .collapse-bar{
+    background-color: var(--darken);
+}
+.osc-new-layout.page-web-project .detail-box .collapse-bar:before{
+    background-image: linear-gradient(to top,var(--darken),transparent);
 }
 }
