@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tyler Cassidy
 @description    `Makes the main tweet pane slightly wider (very needed). Makes avatars nearly square.  Makes image boxes closer to rectangles, less aggressively rounded corners. Reduces padding, width, height all over the place to the tighter feel of the old UI. Makes the background the same grey as the right bar. Changes atrocious left pane heading text to be smaller and tighter. Brings all the content farther left, wasting less space.Makes the right pane slightly more narrow.`
-@version        2019118.18.43
+@version        20201113.1.57
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,6 +23,11 @@
     /*right pane with trends*/
     .r-1ovo9ad {
         width: 300px !important;
+    }
+
+    /* text box 1/2 the radius*/
+    .r-1867qdf {
+        border-radius: 8px !important;
     }
 
     /*show more replies*/

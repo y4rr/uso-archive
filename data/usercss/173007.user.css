@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `臉書樣式 - 測試 test test test ~`
-@version        2020112.2.27
+@version        20201113.7.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -41,6 +41,9 @@ a:visited {color: #90EE90 !important;}
 ::selection {
     color: #FF00FF;
     background: #000000;}
+
+/*#####--- 隱藏facebook彈跳出登入方框 ---#####*/
+DIV[id="headerArea"] {display: none !important;}
 
 
 }
