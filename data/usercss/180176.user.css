@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `HOW TO INSTALL FOR DESKTOP CLIENT: Simplified Tutorial (PC and Mac):https://imgur.com/a/i38IVzbAdvanced Tutorial (PC):https://imgur.com/a/bYBErUCCurrently only support for dark mode.NOTE: If wallpaper does not work, try to use a discord attachment link as the URL for your wallpaperFeatures:Cleaner and better designEasily customizableDesktop supportCheck out my other styles:https://userstyles.org/users/812884DISCORD:Join my Discord server to get notifications when a new update has been released, get direct support from me and others, and it is generally faster than userstyles to get in touch with me : https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        2020101.16.35
+@version        20201112.13.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bmh "Background Mode" {
@@ -200,7 +200,9 @@ border-radius: 25px EOT;
 }
 @advanced dropdown rgb "RGB Mode" {
 	no1 "Off*" <<<EOT /*rgboff*\/ EOT;
-ye1 "On (Accent Border only)" <<<EOT @keyframes borderrgb{
+ye1 "On (Accent Border only)" <<<EOT --acnr: #FF0000!important
+}
+@keyframes borderrgb{
 0% {border-color: rgb(255,0,0);}
 6% {border-color: rgb(255,85,0);}
 12% {border-color: rgb(255,170,0);}
@@ -243,8 +245,10 @@ ye1 "On (Accent Border only)" <<<EOT @keyframes borderrgb{
 .scrollableContainer-2NUZem.webkit-HjD9Er, .userPopout-3XzG_A {
 border: 1.5px solid var(--acnr);
 animation: borderrgb /*[[rgl]]*\/ infinite;
-} EOT;
-ye2 "On (Accent Border and Background)" <<<EOT @keyframes borderrgb{
+ EOT;
+ye2 "On (Accent Border and Background)" <<<EOT --acnr: #FF0000!important
+}
+@keyframes borderrgb{
 0% {border-color: rgb(255,0,0);}
 6% {border-color: rgb(255,85,0);}
 12% {border-color: rgb(255,170,0);}
@@ -333,7 +337,7 @@ animation: borderrgb /*[[rgl]]*\/ infinite;
 fill: var(--acnr);
 color: transparent!important;
 animation: pillrgb /*[[rgl]]*\/ infinite;
-} EOT;
+ EOT;
 
 }
 @advanced dropdown rgl "RGB Length" {
@@ -366,7 +370,7 @@ ye3 "Yes" <<<EOT :root {
 }
 @advanced dropdown tny "Transparency Mode (Desktop Only, see tutorial)" {
 	no4 "Off*" <<<EOT /*tnyoff*\/ EOT;
-ye4 "On" <<<EOT .appMount-3lHmkl, body, .app-2rEoOp  {
+ye4 "On" <<<EOT .appMount-3lHmkl, body, .app-2rEoOp, .container-3w7J-x  {
 background: transparent!important;
 } EOT;
 
@@ -380,7 +384,7 @@ background: transparent!important;
 ==/UserStyle== */
 @-moz-document domain("discordapp.com"), domain("discord.com") {
 /*[[th]]*/
-/*V1.10.2_201001*/
+/*V1.10.3_201112*/
 /*Theme by Zhou Yahui, to install to Discord client follow tutorial from here: https://imgur.com/a/bYBErUC */
 /*[[bmh]]*/
 /*[[tny]]*/
@@ -409,7 +413,8 @@ fill: /*[[ofn]]*/
 --scnr: /*[[scn]]*/;
 --acnr: /*[[acn]]*/;
 --txnr: /*[[txn]]*/;
---tmnr: /*[[tmn]]*/
+--tmnr: /*[[tmn]]*/;
+/*[[rgb]]*/
 }
 .theme-dark {
     --header-primary: var(--txnr);
@@ -455,7 +460,7 @@ fill: /*[[ofn]]*/
 --scrollbar-auto-track: transparent;
 }
 /*acnbcg*/
-.colorDefault-2K3EoJ.focused-3afm-j, .lookGhost-2Fn_0-.colorBrand-3pXr91, .theme-dark .categoryFadeBlurple-1j72_A, .theme-light .categoryFadeBlurple-1j72_A, .item-2hkk8m, .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9, .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .lookFilled-1Gx00P.colorGreen-29iAKY, .theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .lookFilled-1Gx00P.colorBrand-3pXr91, .tag-2gHSR7, .theme-dark .checked-3_4uQ9, .newMessagesBar-mujexs, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover, .headerPlaying-j0WQBV, .headerStreaming-2FjmGz, .unreadPill-2HyYtt, .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before, .checkboxEnabled-CtinEn, .themeDefault-24hCdX.valueChecked-m-4IJZ, .theme-dark .defaultIndicator-G3c16x, .theme-dark .premiumIndicator-1XvbfM, .css-12o7ek3-option, .barFill-23-gu-, .selected-mKYnfr.option-n0icdO, .theme-dark .nowPlaying-284llR, .theme-light .nowPlaying-284llR, .iconBadge-2wi9r4.participating-NBGDkr, .live-vBWnV6.liveSmall-1dy2uA.textBadge-1iylP6.base-PmTxvP, .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.selectableItem-1MP3MQ.selected-31soGA, .theme-dark .tierAccomplished-2eXPdI, .theme-dark .tierCurrent-Lw7-4E, .theme-dark .tierDefault-2qaRkD, .theme-light .tierAccomplished-2eXPdI, .theme-light .tierCurrent-Lw7-4E, .theme-light .tierDefault-2qaRkD, .mention-1f5kbO, .numberBadge-2s8kKX.base-PmTxvP, .botTagRegular-2HEhHi, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .selectorButtonSelected-336oUc, .theme-dark .selectorButton-wjWyGe:not(.selectorButtonSelected-336oUc):hover, .liveIcon-21HTUv.live-vBWnV6.liveLarge-3zs2Zq.textBadge-1iylP6.base-PmTxvP, .lookFilled-1Gx00P.colorBrand-3pXr91, .topSectionPlaying-1J5E4n, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover, .theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z, .theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .centerButton-3CaNcJ.active-1QRrIS, .centerButton-3CaNcJ:hover, .controlButton-2MhVEL.leaveButton-2YnTyt, .winButtonClose-1HsbF-:hover, .noticeDefault-362Ko2, .numberBadge-2s8kKX.base-PmTxvP, .localBot-GrCgVt:before, .status-1WEaea, .controlButton-2MhVEL.joinButton-1-UsTC, .badge-2qGa_k:after, .wrapper-232cHJ, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .selectorButtonSelected-t5V9On, .selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover, .colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.primary-3NQg8g.active-1QRrIS, .colorable-1bkp8v.primary-3NQg8g:hover, .appMount-3lHmkl, body, .newMessagesBar-265mhP, .auto-Ge5KZx::-webkit-scrollbar-thumb, .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN  {
+.colorDefault-2K3EoJ.focused-3afm-j, .lookGhost-2Fn_0-.colorBrand-3pXr91, .theme-dark .categoryFadeBlurple-1j72_A, .theme-light .categoryFadeBlurple-1j72_A, .item-2hkk8m, .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9, .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .lookFilled-1Gx00P.colorGreen-29iAKY, .theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .lookFilled-1Gx00P.colorBrand-3pXr91, .tag-2gHSR7, .theme-dark .checked-3_4uQ9, .newMessagesBar-mujexs, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover, .headerPlaying-j0WQBV, .headerStreaming-2FjmGz, .unreadPill-2HyYtt, .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before, .checkboxEnabled-CtinEn, .themeDefault-24hCdX.valueChecked-m-4IJZ, .theme-dark .defaultIndicator-G3c16x, .theme-dark .premiumIndicator-1XvbfM, .css-12o7ek3-option, .barFill-23-gu-, .selected-mKYnfr.option-n0icdO, .theme-dark .nowPlaying-284llR, .theme-light .nowPlaying-284llR, .iconBadge-2wi9r4.participating-NBGDkr, .live-vBWnV6.liveSmall-1dy2uA.textBadge-1iylP6.base-PmTxvP, .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.selectableItem-1MP3MQ.selected-31soGA, .theme-dark .tierAccomplished-2eXPdI, .theme-dark .tierCurrent-Lw7-4E, .theme-dark .tierDefault-2qaRkD, .theme-light .tierAccomplished-2eXPdI, .theme-light .tierCurrent-Lw7-4E, .theme-light .tierDefault-2qaRkD, .mention-1f5kbO, .numberBadge-2s8kKX.base-PmTxvP, .botTagRegular-2HEhHi, .lookFilled-1Gx00P.colorGrey-2DXtkV:hover, .selectorButtonSelected-336oUc, .theme-dark .selectorButton-wjWyGe:not(.selectorButtonSelected-336oUc):hover, .liveIcon-21HTUv.live-vBWnV6.liveLarge-3zs2Zq.textBadge-1iylP6.base-PmTxvP, .lookFilled-1Gx00P.colorBrand-3pXr91, .topSectionPlaying-1J5E4n, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover, .theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z, .theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .centerButton-3CaNcJ.active-1QRrIS, .centerButton-3CaNcJ:hover, .controlButton-2MhVEL.leaveButton-2YnTyt, .winButtonClose-1HsbF-:hover, .noticeDefault-362Ko2, .numberBadge-2s8kKX.base-PmTxvP, .localBot-GrCgVt:before, .status-1WEaea, .controlButton-2MhVEL.joinButton-1-UsTC, .badge-2qGa_k:after, .wrapper-232cHJ, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover, .selectorButtonSelected-t5V9On, .selectorButton-EEUWed:not(.selectorButtonPremiumRequired-mKMbIu):hover, .colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.primary-3NQg8g.active-1QRrIS, .colorable-1bkp8v.primary-3NQg8g:hover, .appMount-3lHmkl, body, .newMessagesBar-265mhP, .auto-Ge5KZx::-webkit-scrollbar-thumb, .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN, .container-3auIfb.da-container  {
 background: var(--acnr);
 animation: bcgrgb /*[[rgl]]*/ infinite;
 }
@@ -502,7 +507,7 @@ border-radius:0;
 color: var(--txnr);
 }
 /*scn*/
-.submenuPaddingContainer-fiOCHc, .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3, .lookGhost-2Fn_0-.colorGrey-2DXtkV, .css-n57xjs-menu, .botTagInvert-18-95s, .modeSelected-1zApJ_ .content-3at_AU, .modeSelected-1zApJ_:hover .content-3at_AU, .wrapper-1ucjTd:hover .content-3at_AU, .selected-aXhQR6 .layout-2DM8Md, .clickable-1JJAn8:hover .layout-2DM8Md, .theme-dark .separator-2c4hi3, .theme-dark .modal-yWgWj-, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-dark .container-3ayLPN, .theme-dark .option-96V44q:after, .theme-dark .headerNormal-T_seeN, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .separator-gCa7yv, .cardPrimaryEditable-3KtE4g, .themeDefault-24hCdX, .theme-dark .paymentPane-3bwJ6A, .theme-dark .payment-xT17Mq, .theme-dark .paginator-166-09, .css-1kj8ui-container, .css-181m2lf-menu, .theme-dark .bar-2Qqk5Z, item-26Dhrx marginBottom8-AtZOdT horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG cardPrimaryEditable-3KtE4g card-3Qj_Yx, .item-26Dhrx, .option-n0icdO, .theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s, .theme-dark .card-FDVird:before, .theme-dark .markDash-3hAolZ, .theme-dark .popoutList-T9CKZQ, .theme-dark .headerClickable-2IVFo9, .theme-dark .headerDefault-1wrJcN, .theme-dark .tierHeaderLocked-1a2opw, .theme-dark .tierBody-x9kBBp, .theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH, .theme-dark .container-VSDcQc .sectionTag-pXyto9, .theme-dark .autocomplete-1vrmpx, .input-cIJ7To , .theme-dark .wrapperAudio-1jDe0Q, .theme-dark .attachment-33OFj0, .theme-dark .attachment-33OFj0, .userPopout-3XzG_A, div#popout_123, .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw, .theme-dark .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw, .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC.dismiss-3tPbRc, .reaction-1hd86g.reactionMe-wv5HKu, .theme-dark .sidebar-1-SQro, .theme-dark .container-1If-HZ, .theme-dark .reactors-Blmlhw, .theme-dark .calendarPicker-2yf6Ci .react-datepicker, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .lookInverted-2D7oAl.colorBrand-3pXr91, .theme-dark .addGamePopout-2RY8Ju, .centerButton-3CaNcJ, .theme-dark .popout-38lTFE, .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6, .button-3WOKuZ, .theme-dark .scroller-1-nKid, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .lookFilled-1Gx00P.colorGrey-2DXtkV, .colorable-1bkp8v.primary-3NQg8g, .theme-dark .inset-3sAvek, .theme-dark .streamPreview-2-WUWT, .theme-dark .quickSelectPopout-X1hvgV, .guildSection-1EoFKd {
+.submenuPaddingContainer-fiOCHc, .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3, .lookGhost-2Fn_0-.colorGrey-2DXtkV, .css-n57xjs-menu, .botTagInvert-18-95s, .modeSelected-1zApJ_ .content-3at_AU, .modeSelected-1zApJ_:hover .content-3at_AU, .wrapper-1ucjTd:hover .content-3at_AU, .selected-aXhQR6 .layout-2DM8Md, .clickable-1JJAn8:hover .layout-2DM8Md, .theme-dark .separator-2c4hi3, .theme-dark .modal-yWgWj-, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-dark .container-3ayLPN, .theme-dark .option-96V44q:after, .theme-dark .headerNormal-T_seeN, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .separator-gCa7yv, .cardPrimaryEditable-3KtE4g, .themeDefault-24hCdX, .theme-dark .paymentPane-3bwJ6A, .theme-dark .payment-xT17Mq, .theme-dark .paginator-166-09, .css-1kj8ui-container, .css-181m2lf-menu, .theme-dark .bar-2Qqk5Z, item-26Dhrx marginBottom8-AtZOdT horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG cardPrimaryEditable-3KtE4g card-3Qj_Yx, .item-26Dhrx, .option-n0icdO, .theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s, .theme-dark .card-FDVird:before, .theme-dark .markDash-3hAolZ, .theme-dark .popoutList-T9CKZQ, .theme-dark .headerClickable-2IVFo9, .theme-dark .headerDefault-1wrJcN, .theme-dark .tierHeaderLocked-1a2opw, .theme-dark .tierBody-x9kBBp, .theme-dark .overflowRolesPopout-140n9i, .theme-dark .overflowRolesPopoutArrow-2O66oH, .theme-dark .container-VSDcQc .sectionTag-pXyto9, .theme-dark .autocomplete-1vrmpx, .input-cIJ7To , .theme-dark .wrapperAudio-1jDe0Q, .theme-dark .attachment-33OFj0, .theme-dark .attachment-33OFj0, .userPopout-3XzG_A, div#popout_123, .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw, .theme-dark .userSettingsVoice-iwdUCU .inputSensitivityToggle-2LKb8o.manual-36Evg9 .microphone-2rtdHw, .theme-light .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC.dismiss-3tPbRc, .reaction-1hd86g.reactionMe-wv5HKu, .theme-dark .sidebar-1-SQro, .theme-dark .container-1If-HZ, .theme-dark .reactors-Blmlhw, .theme-dark .calendarPicker-2yf6Ci .react-datepicker, .theme-dark .calendarPicker-2yf6Ci .react-datepicker__header, .lookInverted-2D7oAl.colorBrand-3pXr91, .theme-dark .addGamePopout-2RY8Ju, .centerButton-3CaNcJ, .theme-dark .popout-38lTFE, .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6, .button-3WOKuZ, .theme-dark .scroller-1-nKid, .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp, .lookFilled-1Gx00P.colorGrey-2DXtkV, .colorable-1bkp8v.primary-3NQg8g, .theme-dark .inset-3sAvek, .theme-dark .streamPreview-2-WUWT, .theme-dark .quickSelectPopout-X1hvgV, .guildSection-1EoFKd, .modeSelected-346R90 .content-1x5b-n, .modeSelected-346R90:hover .content-1x5b-n {
 background: var(--scnr)
 }
 /*scn2*/
@@ -534,7 +539,7 @@ background: var(--minr)!important;
 border: 0;
 }
 /*br*/
-.item-1tOPte, .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3, .css-n57xjs-menu, .theme-dark .invite-18yqGF, .categoryFade-2ybR1J, .categoryFadeBlurple-1j72_A, .platform-win .sidebar-2K8pFh, .card-3SDdMD, .wrapper-Qvfyci, .inset-GQDQYw, .outer-2IVh5n, .scrollableContainer-2NUZem, .popout-3G62UL, .newMessagesBar-mujexs, .bar-30k2ka, .userPopout-3XzG_A, .button-38aScr, .side-8zPYf6 .item-PXvHYJ, .item-26Dhrx, .sizeDefault-2YlOZr, .sizeDefault-2YlOZr:after, .sizeMini-1ii40f, .card-3Qj_Yx, .modal-yWgWj-, .footer-3rDWdC, .inner-2Y6JuD, .connection-1fbD7X, .integration-3kMeY4, .indicator-2Qs3-E, .paymentPane-3bwJ6A, .banner-3Kac2g, .root-22W39p, .detailsBlock-FoDTGA, .gridItem-2q7vED, .guild-Hq0WWA, .cardWrapper-2Min21, .css-181m2lf-menu, .bar-2Qqk5Z, .grabber-3mFHz2, .wrapper-3jrx9n, .selected-mKYnfr.option-n0icdO, .notDetected-33MY4s, .nowPlaying-284llR, .card-FDVird:before, .root-1gCeng, .menu-Sp6bN1, .live-vBWnV6, .itemBase-1Qj4z6, .colorPickerSwatch-5GX3Ve.custom-2SJn4n, .colorPickerSwatch-5GX3Ve.default-cS_caM, .colorPickerSwatch-5GX3Ve, .popoutList-T9CKZQ, .item-3T2z1R:last-child, .item-3T2z1R:first-child, .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb, .embedMedia-1guQoW, .imageWrapper-2p5ogY, .embed-IeVjo6, .wrapper-3WhCwL, .root-SR8cQa, .connectedAccount-36nQx7, .autocomplete-1vrmpx, .hasAutocomplete-2vGV2Z .scrollableContainer-2NUZem, .selector-2IcQBU, .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j, .assetsLargeImage-eYwpTX, .input-cIJ7To, .jumpToPresentBar-9P20AM, .hljs, .theme-dark .wrapperAudio-1jDe0Q, .embedImage-2W1cML img, .embedImage-2W1cML video, .embedThumbnail-2Y84-K img, .embedThumbnail-2Y84-K video, .embedVideo-3nf0O9 img, .embedVideo-3nf0O9 video, .searchBar-3dMhjb, .theme-dark .attachment-33OFj0, .wrapper-129saQ, .content-3at_AU, .layout-2DM8Md, .expandedFolderBackground-2sPsd-, .scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track,  .botTag-2WPJ74, .content-3xS9Lh, .streamPreview-2-WUWT, .reaction-1hd86g, .wrapper-3BjWyg, .pictureInPictureWindow-1B5qSe, .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z, .pill-1dHPfk, .contentWrapper-3WC1ID, .inviteSplash-40aHus, .css-15ejc46-control, .popout-2iWAc-, .addGamePopout-2RY8Ju, .border-3dQmSY, .tile-2gi3tr, .overlayTitle-8IcS01, .iconActiveLarge-2nzn9z, .channelTextArea-2VhZ6z, .topPill-30KHOu .item-PXvHYJ, .messageContainer-gbhlwo, .button-3WOKuZ, .messages-3G3erD, .inset-3sAvek, .outer-1AjyKL, .contentWrapper-SvZHNd, .gif-1TcNIB, .thin-1ybCId::-webkit-scrollbar-thumb, .sourceThumbnail-27dolk, .card-2Mz_4z, .emojiPicker-3PwZFl, .emojiItem-14v6tW, .icon-3Oovq9, .root-3JVdIJ, .quickSelectPopout-X1hvgV, .newMessagesBar-265mhP, .peopleListItem-2nzedh:hover, .jumpToPresentBar-G1R9s6, .auto-Ge5KZx::-webkit-scrollbar-thumb, .auto-Ge5KZx::-webkit-scrollbar-track, .base-1pYU8j, .container-ZRw2kD {
+.item-1tOPte, .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3, .css-n57xjs-menu, .theme-dark .invite-18yqGF, .categoryFade-2ybR1J, .categoryFadeBlurple-1j72_A, .platform-win .sidebar-2K8pFh, .card-3SDdMD, .wrapper-Qvfyci, .inset-GQDQYw, .outer-2IVh5n, .scrollableContainer-2NUZem, .popout-3G62UL, .newMessagesBar-mujexs, .bar-30k2ka, .userPopout-3XzG_A, .button-38aScr, .side-8zPYf6 .item-PXvHYJ, .item-26Dhrx, .sizeDefault-2YlOZr, .sizeDefault-2YlOZr:after, .sizeMini-1ii40f, .card-3Qj_Yx, .modal-yWgWj-, .footer-3rDWdC, .inner-2Y6JuD, .connection-1fbD7X, .integration-3kMeY4, .indicator-2Qs3-E, .paymentPane-3bwJ6A, .banner-3Kac2g, .root-22W39p, .detailsBlock-FoDTGA, .gridItem-2q7vED, .guild-Hq0WWA, .cardWrapper-2Min21, .css-181m2lf-menu, .bar-2Qqk5Z, .grabber-3mFHz2, .wrapper-3jrx9n, .selected-mKYnfr.option-n0icdO, .notDetected-33MY4s, .nowPlaying-284llR, .card-FDVird:before, .root-1gCeng, .menu-Sp6bN1, .live-vBWnV6, .itemBase-1Qj4z6, .colorPickerSwatch-5GX3Ve.custom-2SJn4n, .colorPickerSwatch-5GX3Ve.default-cS_caM, .colorPickerSwatch-5GX3Ve, .popoutList-T9CKZQ, .item-3T2z1R:last-child, .item-3T2z1R:first-child, .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb, .embedMedia-1guQoW, .imageWrapper-2p5ogY, .embed-IeVjo6, .wrapper-3WhCwL, .root-SR8cQa, .connectedAccount-36nQx7, .autocomplete-1vrmpx, .hasAutocomplete-2vGV2Z .scrollableContainer-2NUZem, .selector-2IcQBU, .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j, .assetsLargeImage-eYwpTX, .input-cIJ7To, .jumpToPresentBar-9P20AM, .hljs, .theme-dark .wrapperAudio-1jDe0Q, .embedImage-2W1cML img, .embedImage-2W1cML video, .embedThumbnail-2Y84-K img, .embedThumbnail-2Y84-K video, .embedVideo-3nf0O9 img, .embedVideo-3nf0O9 video, .searchBar-3dMhjb, .theme-dark .attachment-33OFj0, .wrapper-129saQ, .content-3at_AU, .layout-2DM8Md, .expandedFolderBackground-2sPsd-, .scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track,  .botTag-2WPJ74, .content-3xS9Lh, .streamPreview-2-WUWT, .reaction-1hd86g, .wrapper-3BjWyg, .pictureInPictureWindow-1B5qSe, .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z, .pill-1dHPfk, .contentWrapper-3WC1ID, .inviteSplash-40aHus, .css-15ejc46-control, .popout-2iWAc-, .addGamePopout-2RY8Ju, .border-3dQmSY, .tile-2gi3tr, .overlayTitle-8IcS01, .iconActiveLarge-2nzn9z, .channelTextArea-2VhZ6z, .topPill-30KHOu .item-PXvHYJ, .messageContainer-gbhlwo, .button-3WOKuZ, .messages-3G3erD, .inset-3sAvek, .outer-1AjyKL, .contentWrapper-SvZHNd, .gif-1TcNIB, .thin-1ybCId::-webkit-scrollbar-thumb, .sourceThumbnail-27dolk, .card-2Mz_4z, .emojiPicker-3PwZFl, .emojiItem-14v6tW, .icon-3Oovq9, .root-3JVdIJ, .quickSelectPopout-X1hvgV, .newMessagesBar-265mhP, .peopleListItem-2nzedh:hover, .jumpToPresentBar-G1R9s6, .auto-Ge5KZx::-webkit-scrollbar-thumb, .auto-Ge5KZx::-webkit-scrollbar-track, .base-1pYU8j, .container-ZRw2kD, .content-1x5b-n {
 border-radius: 0!important;
 /*[[ish]]*/
 }
@@ -616,7 +621,7 @@ animation: bxsrgb /*[[rgl]]*/ infinite;
 .thin-1ybCId::-webkit-scrollbar-thumb {
 border: 1.5px solid transparent
 }
-.layout-2DM8Md.da-layout, .content-3at_AU.da-content, .content-3xS9Lh.da-content, .wrapper-3WhCwL {
+.layout-2DM8Md.da-layout, .content-3at_AU.da-content, .content-3xS9Lh.da-content, .wrapper-3WhCwL, .content-1x5b-n {
     transition: .3s ease;
 }
 .layout-2DM8Md.da-layout:hover, .content-3at_AU.da-content:hover, .content-3xS9Lh.da-content:hover {
@@ -631,7 +636,6 @@ border: 5px solid transparent;
 .auto-Ge5KZx::-webkit-scrollbar {
 width: 6px;
 }
-/*[[rgb]]*/
 }
 @-moz-document domain("youtube.com"), domain("twitter.com"), domain("twitch.tv") {
 /*[[ovd]]*/

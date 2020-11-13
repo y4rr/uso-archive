@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         Greedy Wizard
 @description    `Dark theme for freelancehunt.comProfile Plus`
-@version        20201030.0.11
+@version        20201112.14.16
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://freelancehunt.com/"), url-prefix("https://freelancehunt.work/") {
+.qq-gallery.qq-uploader,
 .btn-default.active.focus,
 .btn-default.active:focus,
 .btn-default.active:hover,
@@ -87,7 +88,7 @@ body,
 }
 
 
-
+.qq-gallery .qq-upload-button,
 .thumbnail,
 .select2-container--default .select2-search--dropdown .select2-search__field,
 .popover,

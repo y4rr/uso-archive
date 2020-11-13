@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         huaao zang
 @description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（由于在学校，只能用笔记本进行编写，所以像素超过1366×768的大显示器无法进行检验，可能有一些显示问题）。`
-@version        20201017.9.22
+@version        20201112.14.50
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -104,7 +104,7 @@ body {
 #wrapper
 {
     min-width:1200px;
-    width:calc(100% + 8%)!important;
+    width: calc(100% + 0%)!important;/*加号两边有空格*/
 }
 /*预设结束*/
 
@@ -113,6 +113,7 @@ body {
 #s_tab {
     background-color:rgba(255,255,255,.95)!important;
     height: 45px!important;
+    width:100%;
 }
 .s_form {
     height: 40px;
@@ -162,8 +163,9 @@ body {
 }
 .hint_common_restop,
 #rs_top_new,/*相关搜索*/
-#content_left>.result,
-#content_left .result-op,
+#content_left>.result
+,#content_left>div:first-child
+,#content_left .result-op,
 #rs,
 #op_wiseapp_td,
 .ec-pl-container,
@@ -184,6 +186,7 @@ body {
     padding:0!important;
     background:rgba(255, 255, 255, 0)!important;
     box-shadow:none!important;
+    
 }
 .ec_tuiguang_pplink/*加大广告字样*/
 {
@@ -199,8 +202,9 @@ body {
 {
     padding:15px!important;
 }
-#content_left .result:hover,
-#content_left .result-op:hover,
+#content_left .result:hover
+,#content_left>div:first-child:hover
+,#content_left .result-op:hover,
 #rs:hover,
 #op_wiseapp_td:hover,
 .hit_top_new:hover,
@@ -224,30 +228,30 @@ body {
     top:-30px;
     left:95px;
 }
-.hint_right_top/* 百度安全提示 */
-,.hint_right_middle
-{
-    padding:15px 23px 0px 22px;
-    border-radius: 15px 15px 15px 15px;
-    background:white;
-    opacity:0.8;
-}
-.hint_right_top:hover
-,.hint_right_middle:hover
-{
-    opacity:1;
-}
 .cr-content
 ,.ad-widget-header
+,.hint_right_middle/*安全提示*/
+,#content_right .c-result-content
 {
     background-color: rgba(255, 255, 255, .8) !important;
-    padding: 25px 16px 0px 17px;
+    padding: 25px 16px 25px 17px;
     border-radius: 15px 15px 15px 15px;
+    width:0;
+    min-width:272px;
 }
-.cr-content:hover
-,.ad-widget-header:hover
+#content_right .c-result-content
+,.new-pmd
 {
-    background:white!important;
+    width:0!important;
+    min-width:368px;
+}
+#content_right .c-result-content:hover
+,.new-pmd:hover
+,.ad-widget-header:hover
+,.hint_right_middle:hover
+{
+    background-color:white!important;
+    transition:background 1s;
 }
 #content_right>div:first-child{/* 去广告 */
     display:none;
@@ -279,6 +283,9 @@ body {
 }
 #page a:hover{
     border-color: rgb(51, 136, 255);
+}
+#foot{
+    width:calc(100% + 140px)!important;
 }
 /*底部页码设置结束*/
 }
@@ -401,7 +408,7 @@ body
 {
     margin:0;
     padding:0;
-    background-image: url(https://hqtexture.com/uploads/posts/2012-10/1349523070-1619955-5.jpg);
+    background-image: url(https://i2.hdslb.com/bfs/archive/8ec792cd49d16c185ef280a7d67d0a2bc91ec965.jpg);
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;

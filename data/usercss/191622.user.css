@@ -3,22 +3,23 @@
 @namespace      USO Archive
 @author         Matthew Okashita
 @description    `A Stylus extension to give Canvas/myLearning a dark mode so your retinas don't have to burn out. Made for the WRHS Canvas/myLearning, but should work on other versions of this software. *For the most up to date code and news, please visit the Github repository at: https://github.com/SoupyzInc/CanvasDarkMode`
-@version        2020115.22.46
+@version        20201113.0.19
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name        myLearning Dark Mode
 @namespace   soupyzinc
-@version     1.1.8
+@version     1.2.4
 @homepageURL https://github.com/SoupyzInc/CanvasDarkMode
 @supportURL  https://github.com/SoupyzInc/CanvasDarkMode/issues
 @updateURL   https://raw.githubusercontent.com/SoupyzInc/CanvasDarkMode/main/CanvasDarkMode.user.css
 @license     MIT
-@author      Matthew Okashita
+@author      Matthew Okashita & Ryan Trinh
 ==/UserStyle== */
-/**v1.1.8 | Last Updated: 5 November 2020 | 5:45 PM EST
- * -Fixed syntax error
+/**v1.2.4 | Last Updated: 11 November 2020 | 9:54 PM EST
+ * -Fixed discussion reply file attatchment.
+ * -Fixed issue: https://github.com/SoupyzInc/CanvasDarkMode/issues/14
  */
 @-moz-document domain("instructure.com") {
     :root {
@@ -27,6 +28,7 @@
         --light-grey: #2C2F33 !important; /*Light Color to show that you can interact*/
         --white-grey: #99AAB5 !important; /*Lighter Color to show even more interactivity*/
         --text: #d7d7d7!important; /*Text Color & Highlights*/
+        --sub-text: #a7a7a7!important; /*Sub Text Color*/
     
         --yyQPt-background: #2C2F33 !important; /*Discussion List View Check Box Background*/
     }
@@ -36,6 +38,11 @@
     body {
         background: var(--grey) !important;
         color: var(--text) !important;
+    }
+    
+    /*All Courses Non Published Table*/
+    .course-list-unpublished-course-row {
+        background: var(--grey) !important;
     }
     
     /*myLearning Logo*/
@@ -417,6 +424,20 @@
         transition: border linear 0.2s, box-shadow linear 0.2s;
         color: var(--text) !important;
     }
+    
+    /*Rubric/Table Title Row*/
+    .rubric_container .rubric_title {
+        background-color: var(--grey) !important;
+        border-top: 1px solid var(--text) !important;
+        border-left: 1px solid var(--text) !important;
+        border-right: 1px solid var(--text) !important;
+        padding: 5px;
+        font-weight: bold;
+    }
+    /*Assignments Tab | Rubric/Table Header*/
+        .rubric_container thead th {
+        background-color: var(--grey) !important;
+    }
 
     /*Assignments Tab | Peer Review Menu File View*/
     .file-upload-submission {
@@ -454,6 +475,12 @@
     .quiz-submission, .question_editing {
         background: var(--grey) !important;
         border: 1px solid var(--text) !important;
+    }
+    
+    /*Quiz Submission Details*/
+    table.summary td, table.summary tbody th {
+        border-bottom: 1px solid var(--text) !important;
+        background-color: var(--grey) !important;
     }
     
     /*=======GRADES=======*/
@@ -669,8 +696,8 @@
         border: 1px solid #384249;
         background: var(--light-grey) !important;
     }
-    
-    /*Preview Selected Event*/
+   
+    /*Preview Selected Event | INTERFERES WITH RECENT FEEDBACK ON DASHBOARD*/
     .event-details {
         position: absolute;
         z-index: 1000;
@@ -813,10 +840,43 @@
     }
     
     /*White Drope Down | Message Filter*/
-        select {
+    select {
         width: 220px;
         border: 1px solid var(--text) !important;
         background-color: var(--grey) !important;
+        color: var(--text) !important;
+    }
+    
+    /*Hot Fixes================================================================*/
+    
+    /*Inbox Tab | Course Filter Caret*/
+    .caret {
+        border-top: 4px solid var(--text) !important;
+    }
+    
+    /*Inbox Tab | Course Filter Drop Down Item Wrapper*/
+    .dropdown-menu.open {
+        background: var(--grey) !important;
+    }
+    
+    /*Inbox Tab | Course Filter Drop Down Item*/
+    .dropdown-menu li>a {
+        background: var(--grey) !important;
+    }
+    
+    /*Inbox Tab | Course Filter Thing*/
+    .btn-group .div-contain {
+        background: var(--grey) !important;
+    }
+    
+    /*Inbox Tab | Course Fiter Line*/
+    .dropdown-menu .divider {
+        border-bottom: 1px solid var(--sub-text) !important;
+        background: #ffffff00 !important;
+    }
+    
+    /*Discussion Reply File Attatchment*/
+    .dXATK_cAug:hover, .dXATK_cAug[aria-disabled], .dXATK_cAug[aria-selected] {
         color: var(--text) !important;
     }
 }

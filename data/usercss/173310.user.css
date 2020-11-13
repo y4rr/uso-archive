@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `Anime Twist / twist.moe / AT available in 3 dark themes and a custom theme!Custom: You choose background, accent and logo color!True Black: OLED mode, black themeR3: Modern Dark themeGX: Gaming inspired Dark themePure Light: A soft light modeFeatures:A nice clean designCustom background imageCustom colors for just about everything4 preset themes to choose fromOverall a better anime watching experienceMobile supportImages:https://imgur.com/a/h3QijYANOTE: Custom image may break sometimes, simply uninstall and reinstall style.Check out my other styles:https://userstyles.org/users/812884DISCORD:Join my Discord server to get notifications when a new update has been released, get direct support from me and others, and it is generally faster than userstyles to get in touch with me : https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        202073.1.48
+@version        20201112.21.36
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -48,7 +48,7 @@ animation: borderrgb /*[[rgl]]*\/ infinite
 animation: bcgrgb /*[[rgl]]*\/ infinite
 }
 /*background color*\/
-[role=button], button, [role=button]:active, button:active, aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516],  select, textarea, .chat .unread[data-v-45eb9edc], .notification-msg[data-v-3c4ffad7], .chat>.overlay[data-v-45eb9edc], .floating-player.floating, .notification[data-v-4f9502a6], .floating-player.theater:not(.floating) .AT-player:not(:fullscreen) {
+[role=button], button, [role=button]:active, button:active, aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516],  select, textarea, .chat .unread[data-v-45eb9edc], .notification-msg[data-v-3c4ffad7], .chat>.overlay[data-v-45eb9edc], .floating-player.floating, .notification[data-v-4f9502a6], .floating-player.theater:not(.floating) .AT-player:not(:fullscreen), .chat>.overlay[data-v-4657b6c4] {
     background-color:/*[[bcg]]*\/;
 }
 /*background color 2*\/
@@ -62,7 +62,7 @@ aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516] {
         a:hover, p a:hover {
     animation: pulse 1.75s infinite;
 }
-input.search[data-v-7974871c] {
+input.search[data-v-7974871c], .chat .unread[data-v-4657b6c4] {
     background: rgba(0, 0, 0, 0.25);
 }
 .dialog[data-v-1325d41e], .changelog[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .changelog>nav>ul>li[data-v-4d738af8], .popup-body {
@@ -168,7 +168,7 @@ animation: borderrgb /*[[rgl]]*\/ infinite
 animation: bcgrgb /*[[rgl]]*\/ infinite
 }
 /*background color*\/
-[role=button], button, [role=button]:active, button:active, aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516],  select, textarea, .chat .unread[data-v-45eb9edc], .notification-msg[data-v-3c4ffad7], .chat>.overlay[data-v-45eb9edc], .floating-player.floating, .notification[data-v-4f9502a6], .floating-player.theater:not(.floating) .AT-player:not(:fullscreen) {
+[role=button], button, [role=button]:active, button:active, aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516],  select, textarea, .chat .unread[data-v-45eb9edc], .notification-msg[data-v-3c4ffad7], .chat>.overlay[data-v-45eb9edc], .floating-player.floating, .notification[data-v-4f9502a6], .floating-player.theater:not(.floating) .AT-player:not(:fullscreen), .chat>.overlay[data-v-4657b6c4] {
     background-color:/*[[bcg]]*\/;
 
 }
@@ -183,7 +183,7 @@ aside>section.chat[data-v-1e296516], aside>section.user[data-v-1e296516] {
         a:hover, p a:hover {
     animation: pulse 1.75s infinite;
 }
-input.search[data-v-7974871c] {
+input.search[data-v-7974871c], .chat .unread[data-v-4657b6c4], .chat .unread[data-v-4657b6c4] {
     background: rgba(255, 255, 255, 0.25);
 }
 .dialog[data-v-1325d41e], .changelog[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .changelog>nav>ul>li[data-v-4d738af8], .popup-body {
@@ -272,7 +272,7 @@ button:disabled, input[type="checkbox"]:disabled + label, .donations p span[data
     background: #4f4489 ;
 }
 /*scn*\/
-[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8] {
+[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .chat>.overlay[data-v-4657b6c4] {
     background: #1a172c ;
 }
 /*tab*\/
@@ -346,7 +346,7 @@ button:disabled, input[type="checkbox"]:disabled + label, .donations p span[data
     background: #ff0000 ;
 }
 /*scn*\/
-[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8] {
+[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .chat>.overlay[data-v-4657b6c4] {
     background: #1A1D22 ;
 }
 /*tab*\/
@@ -420,7 +420,7 @@ button:disabled, input[type="checkbox"]:disabled + label, .donations p span[data
     background: #ff0000 ;
 }
 /*scn*\/
-[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8] {
+[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .chat>.overlay[data-v-4657b6c4] {
     background: #000 ;
 }
 /*tab*\/
@@ -494,7 +494,7 @@ button:disabled, input[type="checkbox"]:disabled + label, .donations p span[data
     background: #ff0000 ;
 }
 /*scn*\/
-[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8] {
+[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .chat>.overlay[data-v-4657b6c4] {
     background: #e2e2ff ;
 }
 /*tab*\/
@@ -571,7 +571,7 @@ button:disabled, input[type="checkbox"]:disabled + label, .donations p span[data
     background: #0000ff ;
 }
 /*scn*\/
-[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8] {
+[role=button], button, [role=button]:active, button:active, input:not([type=checkbox]), select, textarea, .notification-msg[data-v-3c4ffad7], input.search[data-v-7974871c], .floating-player.floating, .changelog>nav>ul>li[data-v-4d738af8], .changelog>nav>ul>li>button.current[data-v-4d738af8], .chat>.overlay[data-v-4657b6c4] {
     background: #e6eef5 ;
 }
 /*tab*\/
@@ -649,98 +649,6 @@ hiv "High" <<<EOT /*vvmV1.1cat_191229*\/
 .AT-player video {
 filter: contrast(1.09) saturate(1.12)
 } EOT;
-
-}
-@advanced dropdown rgb "RGB mode (Custom only)" {
-	no1 "Off*" <<<EOT /*rgboff*\/ EOT;
-ye1 "On" <<<EOT @keyframes borderrgb{
-0% {border-color: rgb(255,0,0);}
-6% {border-color: rgb(255,85,0);}
-12% {border-color: rgb(255,170,0);}
-  18% {border-color: rgb(255,255,0);}
-24% {border-color: rgb(170,255,0);}
-30% {border-color: rgb(85,255,0);}
-36% {border-color: rgb(0,255,0);}
-42% {border-color: rgb(0,255,85);}
-48% {border-color: rgb(0,255,170);}
-54% {border-color: rgb(0,255,255);}
-60% {border-color: rgb(0,170,255);}
-65% {border-color: rgb(0,85,255);}
-70% {border-color: rgb(0,0,255);}
-75% {border-color: rgb(85,0,255);}
-80% {border-color: rgb(170,0,255);}
-85% {border-color: rgb(255,0,255);}
-89% {border-color: rgb(255,0,170);}
-94% {border-color: rgb(255,0,85);}
-}
-
-@keyframes bcgrgb{
-0% {background: rgb(255,0,0);}
-6% {background: rgb(255,85,0);}
-12% {background: rgb(255,170,0);}
-  18% {background: rgb(255,255,0);}
-24% {background: rgb(170,255,0);}
-30% {background: rgb(85,255,0);}
-36% {background: rgb(0,255,0);}
-42% {background: rgb(0,255,85);}
-48% {background: rgb(0,255,170);}
-54% {background: rgb(0,255,255);}
-60% {background: rgb(0,170,255);}
-65% {background: rgb(0,85,255);}
-70% {background: rgb(0,0,255);}
-75% {background: rgb(85,0,255);}
-80% {background: rgb(170,0,255);}
-85% {background: rgb(255,0,255);}
-89% {background: rgb(255,0,170);}
-94% {background: rgb(255,0,85);}
-}
-
-@keyframes txnrgb{
-0% {color: rgb(255,0,0);}
-6% {color: rgb(255,85,0);}
-12% {color: rgb(255,170,0);}
-  18% {color: rgb(255,255,0);}
-24% {color: rgb(170,255,0);}
-30% {color: rgb(85,255,0);}
-36% {color: rgb(0,255,0);}
-42% {color: rgb(0,255,85);}
-48% {color: rgb(0,255,170);}
-54% {color: rgb(0,255,255);}
-60% {color: rgb(0,170,255);}
-65% {color: rgb(0,85,255);}
-70% {color: rgb(0,0,255);}
-75% {color: rgb(85,0,255);}
-80% {color: rgb(170,0,255);}
-85% {color: rgb(255,0,255);}
-89% {color: rgb(255,0,170);}
-94% {color: rgb(255,0,85);}
-}
-@keyframes pillrgb{
-0% {fill: rgb(255,0,0);}
-6% {fill: rgb(255,85,0);}
-12% {fill: rgb(255,170,0);}
-  18% {fill: rgb(255,255,0);}
-24% {fill: rgb(170,255,0);}
-30% {fill: rgb(85,255,0);}
-36% {fill: rgb(0,255,0);}
-42% {fill: rgb(0,255,85);}
-48% {fill: rgb(0,255,170);}
-54% {fill: rgb(0,255,255);}
-60% {fill: rgb(0,170,255);}
-65% {fill: rgb(0,85,255);}
-70% {fill: rgb(0,0,255);}
-75% {fill: rgb(85,0,255);}
-80% {fill: rgb(170,0,255);}
-85% {fill: rgb(255,0,255);}
-89% {fill: rgb(255,0,170);}
-94% {fill: rgb(255,0,85);}
-} EOT;
-
-}
-@advanced dropdown rgl "RGB Length" {
-	shr "Shorter*" <<<EOT 15s EOT;
-lor "Long" <<<EOT 30s EOT;
-ulr "Ultra Long" <<<EOT 60s EOT;
 
 }
 

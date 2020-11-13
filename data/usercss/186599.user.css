@@ -3,26 +3,17 @@
 @namespace      USO Archive
 @author         chen_zhe_
 @description    `洛谷圆角化 by _•́へ•́╬_`
-@version        20201112.11.28
+@version        20201112.13.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.luogu.com.cn") {
-/* i really want this to be global */
-
-span[data-v-20b7d558]
-{
-    border-radius: 15px 15px 15px 15px;
-}
-
 body
 {
     background: linear-gradient(to right, #D6A4A4, #DAE2F8); 
 	background-attachment: fixed;
     background-size: 100%;
 }
-
-
 
 a[data-v-3e5191a6]:hover
 {
@@ -53,18 +44,8 @@ a[data-v-3e5191a6]:hover
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 1px 2px #5e5e5e;
 }
-img
-{
-    border-radius: 15px 15px 15px 15px;
-}
-button[data-v-86f36770],button[data-v-370e72e2]
-{
-    border-radius: 15px 15px 15px 15px;
-}
-.progress-frame
-{
-    border-radius: 15px 15px 15px 15px;
-}
+img,button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae],.text[data-v-6b0e15fa],.dropdown-wrap[data-v-6b0e15fa],.progress-frame[data-v-47712372],.center[data-v-7f3d8833],.am-viewport,.am-btn,.selected,span[data-v-20b7d558],.marked[data-v-5a58a989] pre,.items>li[data-v-8feadc5c]
+{border-radius: 25px;}
 .lg-article
 {
     background: #fff;
@@ -78,17 +59,6 @@ button[data-v-86f36770],button[data-v-370e72e2]
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 1px 2px #5e5e5e;
 }
-
-.am-viewport
-{
-    border-radius: 5px 5px 5px 5px;
-}
-
-.am-btn
-{
-    border-radius: 15px 15px 15px 15px;
-}
-
 .am-btn:hover
 {
     background-color: #ffffffd6;

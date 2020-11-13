@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         loopy750
 @description    `Modifies the current Twitch.tv dark theme to resemble its older dark theme.`
-@version        2020113.18.20
+@version        20201112.13.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown top-nav-purple "Top Navigation Menu" {
@@ -18,8 +18,8 @@ TopNav-Default "Grey" <<<EOT #18181B EOT;
 @supports (-moz-appearance: none) {
     .chat-room__content div.scrollable-area div.simplebar-scroll-content:not(:hover),
     .chat-room__content div.simplebar-scroll-content div.simplebar-content:not(:hover) {
-      width: 100% !important;
-      overflow-y: hidden !important
+        width: 100% !important;
+        overflow-y: hidden !important
     }
 } EOT;
 SmoothScroll-Disable "Disable" <<<EOT     scroll-behavior: auto !important
@@ -34,8 +34,77 @@ ChannelInfoBG-Pur-G "Purple (Gradient)" <<<EOT     background: linear-gradient(0
 ChannelInfoBG-Def "Default" <<<EOT     background-color: unset EOT;
 
 }
+@advanced dropdown couch-mode "Couch Mode" {
+	Couch-Mode-Disable "Disable*" <<<EOT  EOT;
+Couch-Mode-Enabled "Enable" <<<EOT 
+/* Couch Mode *\/
+@media all and (display-mode: fullscreen) {
+    #sideNav,
+    [aria-label="Collapse Chat"],
+    [data-a-target="report-button-more-button"],
+    [data-a-target="share-button"],
+    .chat-input.tw-block.tw-pd-b-1.tw-pd-x-1,
+    .metadata-layout__secondary-button-spacing,
+    .stream-chat-header.tw-align-items-center.tw-border-b.tw-c-background-base.tw-flex.tw-flex-shrink-0.tw-full-width.tw-justify-content-center.tw-pd-l-1.tw-pd-r-1,
+    .top-nav.tw-flex-shrink-0,
+    .tw-accent-region,
+    .tw-align-items-center.tw-c-text-link.tw-flex.tw-full-height.tw-mg-l-05 .ScFigure-sc-1j5mt50-0.laJGEQ.tw-svg.ScFigure-sc-1j5mt50-0.laJGEQ.tw-svg,
+    .tw-align-items-center.tw-flex-wrap.tw-inline-flex.tw-mg-t-05 .tw-full-width.tw-inline-block,
+    .tw-ellipsis.tw-font-size-5 .tw-interactive.tw-link,
+    .tw-flex-shrink-0.tw-inline-block.tw-mg-x-1,
+    .tw-flex.tw-overflow-hidden.tw-pd-r-1,
+    .tw-inline-block.tw-mg-r-05,
+    .tw-mg-t-1.tw-pd-l-1,
+    .tw-mg-t-2.tw-mg-x-2,
+    .ffz--links.tw-mg-l-1 {
+        display: none !important;
+    }
+
+    .channel-root,
+    .persistent-player.tw-elevation-0 {
+        margin-top: 6.6vh !important;
+    }
+
+    .tw-border-l,
+    .tw-border-t {
+        border-style: none !important;
+    }
+
+    .tw-root--hover.tw-root--theme-dark .channel-info-content,
+    .root {
+        background-color: #000000 !important;
+    }
+
+    .tw-flex.tw-justify-content-between.tw-relative {
+        opacity: .33 !important;
+        -moz-transition: opacity 3s ease-out !important;
+        -o-transition: opacity 3s ease-out !important;
+        -webkit-transition: opacity 3s ease-out !important;
+    }
+
+    .tw-flex.tw-justify-content-between.tw-relative:hover {
+        opacity: 1 !important;
+        -moz-transition: opacity 1s ease-in !important;
+        -o-transition: opacity 1s ease-in !important;
+        -webkit-transition: opacity 1s ease-in !important;
+    }
+
+    .tw-root--hover.tw-root--theme-dark .tw-border-t .tw-flex.tw-justify-content-between.tw-relative {
+        background-color: #000000 !important;
+        border: 0px !important
+    }
+
+    .channel-info-content .tw-align-items-center.tw-flex .tw-interactive,
+    .channel-info-content .tw-interactive.tw-link {
+        color: #639EEF !important;
+        pointer-events: none !important
+    }
+}
+ EOT;
+
+}
 @advanced dropdown live-time-format "Live Time Format (Experimental)" {
-	Live-Time-hmms "h:mm:ss (Default)*" <<<EOT   content: '' EOT;
+	Live-Time-hmms "h:mm:ss (Default)*" <<<EOT     content: '' EOT;
 Live-Time-hmm "h:mm" <<<EOT   max-width: 33px !important;
   white-space: nowrap !important;
   overflow: hidden !important;
@@ -251,4 +320,5 @@ div.tw-mg-l-05 .tw-c-text-alt.tw-font-size-6 {
 .tw-root--hover.tw-root--theme-dark .tw-border-radius-large.tw-c-background-base.tw-elevation-1.tw-flex.tw-flex-column.tw-mg-1.tw-pd-2 {
     background-color: #151518 !important
 }
+/*[[couch-mode]]*/
 }

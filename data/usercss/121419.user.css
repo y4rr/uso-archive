@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         CZokhobo HaluzPlej
 @description    `css filter to disable view of subscribe value, likes and views of each video and user on random pages used on youtube server. the purpuse of this is to have a better focus on more important values like perceiving a video content for gaining user feedback by adding a comment or contact the author himself (herself) rather than just clicking on a button. make things simple and inspire each other, numbers are just numbers. ;) help me improve this filter finding another values that still shows! thank you! --czokhobo`
-@version        202053.22.23
+@version        20201112.19.20
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,7 +18,6 @@
 *[id*="vote-count"], /* POČET LAJKŮ NA PŘÍSPĚVKU V KOMENTÁŘÍCH */
 #info #menu-container #sentiment, /* LINKA VYVÁŽENOSTI LAJKŮ/DISLAJKŮ U VIDEA */
 #contents #items #metadata-line > span:nth-of-type(1), /* ÚDAJ O POČTU ZHLÉDNUTÍ VEDLE A POD THUMBNAILEM U NABÍZENÝCH VIDEÍ */
-#contents #metadata-line > span:nth-of-type(1), /* ÚDAJ O POČTU ZHLÉDNUTÍ U HLAVNÍHO VIDEA NA KANÁLE AUTORA */
 #subscriber-count, /* ZOBRAZENÍ O POČTU ODBĚRATELŮ NA PROFILU POD NÁZVEM KANÁLU */
 #contents #right-column yt-formatted-string:nth-of-type(3), /* POČET CELKOVÝCH ZHLÉDNUTÍ V INFORMACÍCH NA PROFILU KANÁLU */
 #items #stats yt-formatted-string:nth-of-type(2), /* SÉRIE VIDEÍ - ÚDAJ O POČTU ZHLÉDNUTÍ POD THUMBNAILEM */
@@ -28,7 +27,8 @@
 #owner-sub-count, /* U VIDEA - POČET LAJKŮ U NÁZVU KANÁLU */
 #video-list .tablecell-views, /* SPRÁVCE VIDEÍ - ÚDAJ O ZHLÉDNUTÍ V KOLONCE */
 #video-list .tablecell-likes, /* SPRÁVCE VIDEÍ - ÚDAJ O LAJCÍCH V KOLONCE */
-#channel-info #thumbnail-attribution /* ODBĚRY KANÁLU - POČET ODBĚRATELŮ */
+#channel-info #thumbnail-attribution, /* ODBĚRY KANÁLU - POČET ODBĚRATELŮ */
+#dismissable #details #metadata-line > span:nth-of-type(1) /* POČET ZHLÉDNUTÍ NA HLAVNÍ STRÁNCE YOUTUBE U NABÍZENÝCH VIDEÍ */
 
 {display: none !important;}
 }
