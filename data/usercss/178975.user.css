@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ma Fi
 @description    `Die neue Präsenz von DER SPIEGEL in einer dunklen Variante.`
-@version        2020115.7.19
+@version        20201114.8.28
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color primary "Primärfarbe" #3399FF
@@ -68,15 +68,20 @@ a[data-link-flag=external]:after {
     margin-left: 5px !important;
 }
 
-a[data-link=plus]:after {
+a[data-link-flag=sponpaid]:after {
     /*remember to replace*/
 	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Cg%3E%3Crect width="20" height="20" rx="1.5" style="fill: rgb(/*[[primary-rgb]]*/);" /%3E%3Cpath d="M4 10.684V6.295C4 5.575 4.36 5 5.295 5h3.669c.648 0 1.08.432 1.08 1.151v1.943H8.172v-1.44H5.799v2.303h4.244v4.82c0 .791-.431 1.223-1.295 1.223H5.223C4.36 15 4 14.496 4 13.849v-2.302h1.87v1.798h2.375v-2.662H4z" fill="%23fff"/%3E%3Cpath d="M13.825 7.8h1.35v2.025H17.2v1.35h-2.025V13.2h-1.35v-2.025H11.8v-1.35h2.025V7.8z" fill="%23fff"/%3E%3C/g%3E%3C/svg%3E') !important;
+}
+
+a[data-link-flag=dein]:after {
+    /*remember to replace*/
+	background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='20' viewBox='0 0 32 20' fill='none' stroke='rgb(/*[[primary-rgb]]*/)' xmlns='http://www.w3.org/2000/svg' role='img'%3E%3Cpath d='M32 12.792v-6.04h-4.658V4.013h2.325v1.692H32V3.289C32 2.515 31.303 2 30.6 2h-4.35C25.546 2 25 2.564 25 3.289v5.476h4.655v3.302h-2.391V9.812H25v2.9c0 .724.547 1.288 1.25 1.288h4.42c.718 0 1.33-.483 1.33-1.208z' fill='none'/%3E%3Cpath d='M20.193 5.461l-.478.087.478-.088h0v-.002l-.002-.005-.002-.014a2.48 2.48 0 0 0-.05-.207 5.238 5.238 0 0 0-1.146-2.077c-1.005-1.106-2.744-2.01-5.632-1.517h0L5.665 2.95l.06.348a29.24 29.24 0 0 0-.06-.348h0-.002l-.005.001-.015.003a4.02 4.02 0 0 0-.239.05 8.93 8.93 0 0 0-.645.175 8.542 8.542 0 0 0-1.904.848c-.679.416-1.36.995-1.815 1.79-.461.805-.672 1.8-.453 3h0l.133.73.402-.073-.402.074h0v.002l.001.005.003.014a2.222 2.222 0 0 0 .05.207 5.238 5.238 0 0 0 1.146 2.077c1.004 1.106 2.744 2.01 5.632 1.517l10.22-1.744 3.005 1.5.894.447-.18-.984-1.298-7.129z' stroke='rgb(/*[[primary-rgb]]*/)'/%3E%3Cpath d='M4.973 7.216l.4 2.19.292-.05c.57-.097.85-.375.68-1.309-.137-.75-.447-.988-1.045-.886l-.327.055zm-1.672-.833c.433-.081 1.354-.259 1.878-.348 1.319-.225 2.356-.07 2.667 1.634.286 1.572-.297 2.486-2.112 2.795l-1.639.28-.794-4.361zm6.212 1.279l.754-.128c-.045-.325-.184-.437-.43-.395-.237.04-.348.161-.324.523zm.141.777c.109.327.27.367.617.308a5.847 5.847 0 0 0 1.33-.437l.42.885a6.032 6.032 0 0 1-1.722.592c-1.217.207-1.901-.049-2.147-1.397-.222-1.217.289-1.955 1.553-2.171 1.292-.22 1.89.22 2.097 1.853l-2.148.367zm2.7.896l-.611-3.355 1.42-.243.612 3.355-1.42.243zm-.652-3.579L11.52 4.75l1.42-.243.184 1.007-1.42.242zm3.093-.297l.105.307c.365-.347.758-.536 1.152-.603.694-.118 1.204.107 1.359.955l.416 2.283-1.421.242-.35-1.92c-.054-.297-.173-.371-.39-.334a.815.815 0 0 0-.399.197l.398 2.184-1.42.242-.612-3.355 1.162-.198z' fill='none'/%3E%3C/svg%3E") !important;
 }
 
 .RichText a, .border-primary-base {
     border-color: var(--color-primary) !important;
     transition:
-    /*border-color 0.5s ease-in-out 0s, */
+    border-color 0.5s ease-in-out 0s, 
     color 0.5s ease-in-out 0s;
 }
 /*.text-black .align-middle,*/
@@ -84,7 +89,7 @@ a[data-link=plus]:after {
     border-color: var(--color-secondary) !important;
     color: var(--color-secondary) !important;
     transition:
-    /*border-color 0.5s ease-in-out 0s,*/
+    border-color 0.5s ease-in-out 0s,
     color 0.5s ease-in-out 0s;
 }
 .hover\:opacity-moderate, .focus\:opacity-moderate {
@@ -116,6 +121,10 @@ a[data-link=plus]:after {
 }
 .jw-display-icon-container, .oneListFormButton, .rangeslider__fill, .bg-attention {
     background-color: var(--color-primary) !important;
+}
+
+.tik3-ticker .tickaroo-web-embed-url-title, .tik3-ticker .tickaroo-web-embed-url-description, .tik3-ticker .tickaroo-web-embed-url-link {
+    color: var(--color-primary) !important;
 }
 
 .one-newsletter, input[type=email] {

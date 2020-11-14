@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         High_village
 @description    `Beinhaltet:</br></br>1. bs.to / burningseries.co - Burning Series - Dark-Blue Design</br>2. cine.to - Dark Design</br>3. Dark Design für alle Hoster der beiden Seiten:</br>4. Highlight dich selber im Chat, suche im Code nach "EIGENER-USERNAME" und ersetz dieses mit deinem Usernamen!</br><ul><li>Vivo / Vidto / Streamango / Openload / Streamcherry / Vidoza / Streamplay / FlashX / Streamcloud / Gounlimited / Jetload / Onlystream / Mixdrop / VOE / Streamtape</li></ul></br>Abgeleitet von: https://userstyles.org/styles/138429/burningseries-redblack-akamegakill-theme-by-mekrip</br><b>Nützliche Scripte: https://greasyfork.org/de/users/105914-high-village</br>Support/Discord: https://cutt.ly/bsdiscord</b>`
-@version        2020831.5.47
+@version        20201114.7.25
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1230,6 +1230,10 @@ div.stream-share {
 
 .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
     background: #ed781e;
+}
+
+.preload {
+    background-color: #212121;
 }
 }
 

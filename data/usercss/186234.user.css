@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         云雨
 @description    `屏蔽了广告(所以为了让动漫之家可以继续运营,关闭广告屏蔽插件),各种千年不变的部分使页面简化许多.观看体验主要为竖屏观看优化(横屏也没什么差别).看漫画一定要先开启 翻页模式 的 上下滚动阅读 才行.为了使漫画本身更突出,看漫画界面其他东西几乎所有内容都隐藏了.`
-@version        202079.4.46
+@version        20201114.9.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -66,14 +66,14 @@ a,
 	right:13px;
 	left: unset !important;
 }
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 5px;
     height: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, rgb(97, 97, 97) 0%, rgb(119, 119, 119) 50%, rgba(255, 255, 255, 0) 50%);
-}
+}*/
 a.update_link:link, a.update_link:visited {
 	color: #ded6da;}
 }
@@ -233,8 +233,8 @@ body{min-height:1920px;}
 /**广告,常年无变化的东西**/
 .caricature_nav,div.search_b_box>form>span>label,div.search_b_box>form>.search_botton,.float_code>img,iframe.share_self,.header-box,.display_graybg funcdiv,.hotrmbox,
 .footer,.recom_one,.icorss_acg,.h2_title2, .h2_icon,.flink-box,div#bdshare,.today_recommended_bigpic2_b2 .gray12,.today_recommended_bigpic2_b1 .gray12,.today_recommended_bigpic2_b .icon20,.rss,div#type_comics+a,
-.h2_title > span:nth-of-type(2),#type_comics,.intro_top,.read_week:nth-of-type(1),.footer+div,div#note,iframe,.read_week:nth-of-type(2),.header-box+script+div,.toppic_content+script+div
-,#HMrichA,#HMRichBox,.btmBtnBox+div,.btmBtnBox+div+script+div
+.h2_title > span:nth-of-type(2),#type_comics,.intro_top,.read_week:nth-of-type(1),.footer+div,div#note,iframe,.read_week:nth-of-type(2),.header-box+script+div
+,#HMrichA,#HMRichBox,.btmBtnBox+div,.btmBtnBox+div+script+div,.tcaricature_new
 {
 	display:none !important;
 }
@@ -349,7 +349,7 @@ body{
 }
 .ucenter_warp_l,.ucentop,.foot,.sub_content .Tip{display:none;}
 .ucenter_wrap .autoHeight{
-	margin:100px 0 0 0px;
+	margin:100px 0 0 90px;
 	border-top-left-radius: 5px;
 }
 .ucenter_warp_r .autoHeight{
@@ -357,6 +357,10 @@ body{
 }
 .sub_center_h,.sub_potion,.ucenter_warp_r .autoHeight,.letter_option li,.sub_potion li,.dy_content_li .dy_img{
 	border:unset;
+		width: auto;
+}
+.sub_content .letter_option {
+	width: 958px;
 }
 .letter_option li {
     background: #ecf6ff;
@@ -370,7 +374,7 @@ body{
 }
 
 @-moz-document regexp("https://www.dmzj.com/view/\\w+/\\d+.html(.*)?"), regexp("https://www.manhua\\w+.com/.+") {
-.comic_last.autoHeight,.mainNav.independNav,.img_info{
+.comic_last.autoHeight,.img_info{
     display:none;
 }
 .wrap_last_head .head_wz,.wrap_last_mid,.wrap_last_head,.foot-detail .foot-detail-wrap,.mainNav_inner{
@@ -430,6 +434,21 @@ div#bd-hl-content{
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, rgb(97, 97, 97) 0%, rgb(119, 119, 119) 50%, rgba(255, 255, 255, 0) 50%);
 }
+
+
+/*屏蔽点击就滚动到顶的问题*/
+.independNav{
+    position: fixed;
+    top: 0px;
+    background-color: #fff0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+	backdrop-filter: unset;
+}
+#images{z-index: 1;}
+.head_wz, .btmBtnBox{position: relative;z-index: 3;}
+/*屏蔽点击就滚动到顶的问题*/
 }
 
 @-moz-document regexp("https://m.manhua.+.com/.+") {
@@ -439,7 +458,7 @@ div#bd-hl-content{
 	box-shadow: 0 0 14px #f1f1f1;
 	border-radius: 6px;
 }
-.imgBox,.autoHeight,.mode-pagination #panel-title{
+.imgBox,.autoHeight,.mode-pagination #panel-title,.loading+div+script+script+script+div{
 	display:none !important;
 }
 #images{
