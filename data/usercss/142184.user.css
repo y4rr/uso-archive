@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cubedj
 @description    `It's my <strong>dark</strong> reskin of the <strong>deezer.com</strong> website for users who like inverted colors that are easier on your eyes.<strong>You'll still have to select <i>"Dark Theme"</i> in settings on Deezer.com (click on your profile picture) to make this theme look as intended.</strong> This style since beginning uses experimetal css feature <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">"backdrop-filter"</a> to graphically visualise the seek (played/remaining time) bar position with special overlay on the picture thumbnail of currently playing title.This feature works for the time being properly only in Edge and Safari, in Chrome you have to set the "<strong>Enable Experimental Web Platform Features</strong>" flag in <strong><a href="chrome://flags">chrome://flags</a></strong>, in Opera set the "<strong>Enable Experimental Web Platform Features</strong>" preference, IE and Firefox are not supported yet..`
-@version        2020724.9.6
+@version        20201113.17.38
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown blockads "Ads Blocking" {
@@ -2669,8 +2669,11 @@ svg.svg-icon.svg-icon-bell {
     background-color: #000;
 }
 .containedSecondary-0-3-10:not(.isDisabled-0-3-24):hover {
-    border-color: /*[[colororange]]*/;
+    border-color: /*[[colororange]]*/ !important;
     background-color: #000;
+}
+.containedSecondary-0-3-10:not(.isDisabled-0-3-24):hover + .containedSecondary-0-3-10:not(.isDisabled-0-3-24).isActive-0-3-23 {
+    border-left-color: /*[[colororange]]*/ !important;
 }
 .equalizer-12.equalizer-dark {
     filter: invert(100%) !important;

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.4
+@name           Compact Tube (White) v1.3.5
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201111.11.9
+@version        20201113.23.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.4 */
+/* CompactTube (White) v1.3.5 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -23,8 +23,8 @@
   █    RU: для Включения элементов сотрите символы " x " перед параметрами, для отключения снова допишите " x ".     █
   █                                                                                                                  █ */
                                                /* switch ON dark Header / включить тёмную Шапку */
- x  #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
- x  #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
+ x   #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
+ x   #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
         {background-color: #202020;          /* switch ON YouTube logo for dark Header / включить Логотип YouTube для тёмной шапки */
         box-shadow: inset 0px -2px 0px 0px 
         rgb(0, 0, 0); fill: #fff !important;}
@@ -67,6 +67,9 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
                 : - "none" - убрать: "flow"- показать.  */
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
+
+/* Отключить Рекламный оверлэй в плеере на Паузе */
+.ytp-ad-overlay-container {display: none}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключено, "flow" - Включено */
@@ -947,9 +950,13 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 -o-border: 1px solid #1c62b9;  box-shadow: inset 0px 0px 0px 0px var(--ytd-searchbox-legacy-border-shadow-color);}
 /* background-color: #fff !important; border-color: #CCCCCC !important; */
 
-/* цвет поля поиска - КНОПКА*/
+/* цвет поля поиска - КНОПКА */
 #search-icon-legacy.ytd-searchbox {border-color: rgba(110, 110, 110, .3) !important; background-color: rgba(204, 204, 204, .15) !important;}
 /* border-color: #CCCCCC !important; background-color: #F8F8F8 !important; */
+
+    /* цвет поля поиска - КНОПКА (подсвеченная) 
+    [v1:   border-color: rgba(110, 110, 110, .51)    background-color: rgba(204, 204, 204, .26)] */
+    #search-icon-legacy.ytd-searchbox:hover {border-color: rgba(110, 110, 110, .43) !important; background-color: rgba(187, 187, 187, .19) !important;}
 
 /* Цвет вводимого текста в поле поиска (NEW) */
 #container.ytd-searchbox input.ytd-searchbox {color: rgb(100, 100, 100);}
@@ -1011,8 +1018,8 @@ ytd-masthead[dark] .gsst_e {filter: invert(60%);} /*80%*/
 .gsok_a {
 background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) 
 no-repeat center; display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(60%)}
-a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0px;}
-
+/* высота пространства Иконки калвиатуры под высоту Поле поиска */
+a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0px;} 
 
 /*цвет ников в комментах*/
 #author-text.yt-simple-endpoint.ytd-comment-renderer {color: #128EE9 !important;}
@@ -1371,6 +1378,19 @@ ytd-item-section-renderer:last-child:after {
     background: var(--yt-spec-general-background-b);
     box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
+
+/* Настройка Бэйджа Автора Канала в Комментариях */
+ytd-author-comment-badge-renderer {
+    --ytd-author-comment-badge-name-color: var(--yt-spec-text-primary);
+    height: 20px;
+    background-color: var(--ytd-author-comment-badge-background-color);
+    border-radius: 12px;
+    margin-bottom: 2px;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;}
 
 /* Исправление Размера Миниатюр при просмотре Комментариев в ТВОРЧЕСКОЙ СТУДИИ */
 #video-thumbnail.ytcp-comment-video-thumbnail {--yt-img-border-radius: var(--ytcp-thumbnails-border-radius);
@@ -2523,6 +2543,9 @@ border-radius: 26px; animation: ytp-bezel-fadeout .5s linear 1 normal forwards; 
 /* Иконка Кнопки - Плей(Пауза)*/
 .ytp-bezel-icon {
 width: 32px; height: 32px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
+
+/* Иконка Кнопки - Плей(Пауза) - Без Входна на Аккаунт */
+.ytp-exp-bigger-button .ytp-bezel-icon {width: 32px; height: 32px; margin: 0px;}
 
 /* Кнопка - Плей(Пауза) (полный экран) */
 .ytp-big-mode .ytp-bezel {

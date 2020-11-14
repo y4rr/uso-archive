@@ -2,12 +2,12 @@
 @name           Eldarya Dark (New Era)
 @namespace      USO Archive
 @author         Ashalinda
-@description    `Changes styles for New EraЗаменяет стили для новой эры Элдарии (инвентарь, чердак, рынок, магазины и т.д.)Также фоновая размытая картинка заменяется на фон с ночным пляжем.`
-@version        20201110.18.44
+@description    `Changes styles for New EraЗаменяет стили для новой эры Элдарии (инвентарь, чердак, рынок, магазины и т.д.)Также фоновая размытая картинка заменяется на фон с ночным пляжем.UPD: Добавлены мелкие исправления для главной страницы, алхимии, библиотеки, рынка и профиля.На странице фамильяра спрятана кнопка "Убрать в яйцо" (которая срабатывает без подтверждения) - функция доступна на странице "Мои яйца".`
+@version        20201113.20.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.dk"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.hu"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.nl"), url-prefix("https://www.eldarya.ro"), url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.se"), url-prefix("https://www.eldarya.uk") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk).*") {
 /*ОБЩИЙ РАЗДЕЛ*/
 #home-left-container #home-avatar-player canvas{
     pointer-events: none;
@@ -77,10 +77,26 @@
     opacity: 1;
     background: #e6cbe7;
 }
-
+#inner-grid #carousel #carousel-inner .carousel-news div h4,
+#inner-grid #carousel #carousel-inner .carousel-news div h5,
+#inner-grid #carousel #carousel-inner .carousel-news div p {
+    color: #3c0353;
+}
+/*СТРАНИЦА PROFILE*/
+body.season-s2 .flavr-button.active, body.season-s2 .nl-button.active{
+	color: white;
+}
+ul#player-stats > * {
+    font-weight: bolder;
 }
 
-@-moz-document url-prefix("https://www.eldarya.fr/player/wardrobe/"), url-prefix("https://www.eldarya.com/player/wardrobe/"), url-prefix("https://www.eldarya.com.br/player/wardrobe/"), url-prefix("https://www.eldarya.pl/player/wardrobe/"), url-prefix("https://www.eldarya.de/player/wardrobe/"), url-prefix("https://www.eldarya.dk/player/wardrobe/"), url-prefix("https://www.eldarya.es/player/wardrobe/"), url-prefix("https://www.eldarya.hu/player/wardrobe/"), url-prefix("https://www.eldarya.it/player/wardrobe/"), url-prefix("https://www.eldarya.nl/player/wardrobe/"), url-prefix("https://www.eldarya.ro/player/wardrobe/"), url-prefix("https://www.eldarya.ru/player/wardrobe/"), url-prefix("https://www.eldarya.se/player/wardrobe/"), url-prefix("https://www.eldarya.uk/player/wardrobe/") {
+
+.season-s2 .carousel-container .episode .episode-info .pictures.completed {
+    color: white;
+}
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/player/wardrobe.*") {
 /*ЧЕРДАК*/
 #main-section {
     padding-left: 15px;
@@ -130,10 +146,9 @@ a.nl-button.nl-button-back {
     /*ни к чему валюты на чердаке XD */
     display: none;
 }
-
 }
 
-@-moz-document url-prefix("https://www.eldarya.fr/player/appearance"), url-prefix("https://www.eldarya.com/player/appearance"), url-prefix("https://www.eldarya.com.br/player/appearance"), url-prefix("https://www.eldarya.pl/player/appearance"), url-prefix("https://www.eldarya.de/player/appearance"), url-prefix("https://www.eldarya.dk/player/appearance"), url-prefix("https://www.eldarya.es/player/appearance"), url-prefix("https://www.eldarya.hu/player/appearance"), url-prefix("https://www.eldarya.it/player/appearance"), url-prefix("https://www.eldarya.nl/player/appearance"), url-prefix("https://www.eldarya.ro/player/appearance"), url-prefix("https://www.eldarya.ru/player/appearance"), url-prefix("https://www.eldarya.se/player/appearance"), url-prefix("https://www.eldarya.uk/player/appearance") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/player/appearance.*") {
 /*ГАРДЕРОБ*/
 .appearance-interface-container #avatar-background img {
     filter: none;
@@ -185,7 +200,7 @@ a.nl-button.nl-button-back {
 #wardrobe-menu li {margin: 1px 2px;}
 }
 
-@-moz-document url-prefix("https://www.eldarya.fr/mall"), url-prefix("https://www.eldarya.com/mall"), url-prefix("https://www.eldarya.com.br/mall"), url-prefix("https://www.eldarya.pl/mall"), url-prefix("https://www.eldarya.de/mall"), url-prefix("https://www.eldarya.dk/mall"), url-prefix("https://www.eldarya.es/mall"), url-prefix("https://www.eldarya.hu/mall"), url-prefix("https://www.eldarya.it/mall"), url-prefix("https://www.eldarya.nl/mall"), url-prefix("https://www.eldarya.ro/mall"), url-prefix("https://www.eldarya.ru/mall"), url-prefix("https://www.eldarya.se/mall"), url-prefix("https://www.eldarya.uk/mall") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/mall.*") {
 /*МАГАЗИНЫ*/
 .appearance-interface-container #avatar-background img {
     filter: none;
@@ -244,10 +259,9 @@ a.nl-button.nl-button-back {
 #mall-container .section-subtitle{
     margin-top: 5px;
 }
-
 }
 
-@-moz-document url-prefix("https://www.eldarya.fr/marketplace"), url-prefix("https://www.eldarya.com/marketplace"), url-prefix("https://www.eldarya.com.br/marketplace"), url-prefix("https://www.eldarya.pl/marketplace"), url-prefix("https://www.eldarya.de/marketplace"), url-prefix("https://www.eldarya.dk/marketplace"), url-prefix("https://www.eldarya.es/marketplace"), url-prefix("https://www.eldarya.hu/marketplace"), url-prefix("https://www.eldarya.it/marketplace"), url-prefix("https://www.eldarya.nl/marketplace"), url-prefix("https://www.eldarya.ro/marketplace"), url-prefix("https://www.eldarya.ru/marketplace"), url-prefix("https://www.eldarya.se/marketplace"), url-prefix("https://www.eldarya.uk/marketplace") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace.*") {
 /*РЫНОК*/
 .marketplace-main-container h1.section-title {
     display: none
@@ -259,7 +273,7 @@ a.nl-button.nl-button-back {
     background: #cbdbffbf;
 }
 div#layout-2col-right {
-    padding-top: 46px;
+    padding-top: 54px;
 }
 .flavr-button.active, .nl-button.active {
     background: #fff !important;
@@ -291,6 +305,14 @@ div#marketplace-itemDetail > *:first-child{
     display: none;
 }
 
+/*укрупняет информацию о количестве торгов*/
+#marketplace-active-auctions .abstract-currentPrice > div {
+    font-size: 18px;
+}
+#marketplace-abstract-sales .abstract-time, #marketplace-abstract-purchases .abstract-time {
+    font-size: 15px !important;
+}
+
 #currencies {
     /*фиксирует положение плашек с маной и голдом - слева сверху - возможно, так удобнее*/
    /* position: fixed;
@@ -299,12 +321,63 @@ div#marketplace-itemDetail > *:first-child{
 }
 }
 
-@-moz-document url-prefix("https://www.eldarya.ru/pet"), url-prefix("https://www.eldarya.fr/pet"), url-prefix("https://www.eldarya.com/pet"), url-prefix("https://www.eldarya.com.br/pet"), url-prefix("https://www.eldarya.pl/pet"), url-prefix("https://www.eldarya.de/pet"), url-prefix("https://www.eldarya.dk/pet"), url-prefix("https://www.eldarya.es/pet"), url-prefix("https://www.eldarya.hu/pet"), url-prefix("https://www.eldarya.it/pet"), url-prefix("https://www.eldarya.nl/pet"), url-prefix("https://www.eldarya.ro/pet"), url-prefix("https://www.eldarya.se/pet"), url-prefix("https://www.eldarya.uk/pet") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/pet.*") {
 /*СТРАНИЦА ФАМИЛЬЯРА*/
+/*фон для таймера*/
 p.timer {
     background: antiquewhite;
     border: 2px solid white;
     padding: 0 10px;
     border-radius: 13px;
+}
+/*значение удачи*/
+#pet-infos #luck-text span { 
+    color: #1e630c; 
+    font-size: 18px;
+}
+/*скрывает кнопку Спрятать в яйцо - функция доступна на странице яиц*/
+button.pet-action-button.put-back-in-egg.nl-button {
+	display: none;
+}
+a#go-eggs {
+    opacity: 1;
+    top: 367px;
+}
+#pet-infos .retractor {
+	display: none
+}
+/*шрифты на сундучках*/
+#bonus-bar #levels-container .level .energy-required {
+    color: #3f00ff;
+    font-size: 14px;
+    padding: 2px 15px;
+}
+/*всплывающие подсказки на ресурсах*/
+#pet-resources .resource-label {
+    font-size: 14px;
+    color: #2d0540d1;
+}
+
+.flavr-container.buy-food-popup .flavr-outer .flavr-content .flavr-message p.food-count-text{
+    font-size: 18px;
+}
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/alchemy.*") {
+/*АЛХИМИЯ*/
+#left-interface #recipes-list .recipe.missing-ingredients p:nth-of-type(2), #left-interface #recipes-list .recipe.missing-scroll p:nth-of-type(2), #left-interface #recipes-list .recipe.missing-scroll-locked p:nth-of-type(2) {
+	color: #f4859e;
+}
+
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/library.*") {
+/*БИБЛИОТЕКА*/
+.diaries-library-container .header .diaries-info {
+    width: auto;
+    background: #fbfafb9e;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 16px;
 }
 }

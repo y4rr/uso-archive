@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020330.23.30
+@version        20201113.20.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,6 +49,21 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("zoom.us") {
@@ -58,7 +73,11 @@
 	text-decoration: none!important;
 }
 
-#header_outer .signin>.link {
+#black-topbar ul>li>a,
+#header_outer .signin>.link,
+.pricing-details .title,
+.products .sub-product
+{
 	text-transform: capitalize!important;
 }
 
@@ -71,24 +90,72 @@
 
 /*___ Fonts ________________________________________________________________________*/
 
-.fullName {
+.fullName,
+.pricing-details .title
+{
 	font-size: 31px!important;
 }
 
+#black-topbar ul>li>a,
+.zm-collapse-item__header
+{
+	font-size: 21px!important;
+}
+
+.zm-collapse-item__content div
+{
+	font-size: 23px!important;
+}
+
+#content_container,
+#header_outer,
+.pricing-details .items-wrapper
+{
+	font-size: 15px!important;
+}
+
+.pricing-wrapper .orange-tips {
+	font-size: 14px!important;
+}
+
+.question-list-container .zm-collapse-item__content
+{
+	line-height: 23px!important;
+}
+
+
 /*___ Margins ______________________________________________________________________*/
 
-[id*="_container"],
-#screen6a_container .zoom-news .news-item {
+#screen6a_container .zoom-news .news-item,
+.plan-wrapper-row .col-md-3,
+.plan-wrapper-row .col-md-4,
+.pricing-details .items-wrapper>li,
+.story-parts,
+[id*="_container"]
+{
 	margin: 12px!important;
+}
+
+.pricing-details .title,
+.question-list-container div
+{
+	margin: 3px 0 18px 0!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
-#content .mini-layout-body {
+#content .mini-layout-body,
+.add-on-parts,
+.question-parts
+{
 	padding: 12px!important;
 }
 
 /*___ Widths _______________________________________________________________________*/
+
+#view_gartner_report {
+    width: 98%;
+}
 
 #screen6a_container .zoom-news .news-item {
 	width: 31.33%;
@@ -111,6 +178,7 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+#screen6_container .viplist>.vip-item>.detail>.name,
 a[href]:hover span,
 a[href]:hover,
 h1,
@@ -122,7 +190,10 @@ input[type="radio"]:checked+label {
 
 /*__________________________________________________________________________________*/
 
+.zm-collapse-item__content div,
+#content_container,
 .notice-low,
+.zm-collapse-item__header,
 .zm-notification__content,
 body,
 li,
@@ -144,6 +215,7 @@ h2 {
 
 /*___ Burlywood ____________________________________________________________________*/
 
+.pricing-wrapper .orange-tips,
 .tool-items>div>.tool-info>div:first-child,
 h3,
 h4 {
@@ -167,6 +239,13 @@ label {
 .dateExample-label[style="padding-left: 2px; color: rgb(116, 116, 135);"],
 time {
 	color: #07beff!important;
+	text-shadow: 1px 1px #000!important;
+}
+
+/*___ Green _________________________________________________________________________*/
+
+.pricing-details {
+	color: #07ff24!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -250,7 +329,9 @@ html {
 /*___ Background Gray ______________________________________________________________*/
 
 #black-topbar,
-#footer-new {
+#footer-new,
+#footer_container
+{
 	background-color: #060505!important;
 }
 
@@ -266,7 +347,10 @@ html {
 #home,
 #mainbg_container .tab-ct,
 .currency,
-.login-btn {
+.heroSlide,
+.login-btn,
+.zm-collapse-item__header
+{
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
@@ -291,7 +375,11 @@ html {
 
 /*__ Orange ________________________________________________________________________*/
 
-.zm-button {
+.buy-plan-link.orange-link,
+.cta-bgyellow,
+.right-section .link-stories,
+.zm-button
+{
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
@@ -299,27 +387,45 @@ html {
 	color: #fff!important;
 }
 
-.zm-button:hover {
+.buy-plan-link.orange-link:hover,
+.cta-bgyellow:hover,
+.right-section .link-stories:hover,
+.zm-button:hover
+{
 	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
 	color: #ff0!important;
 }
 
-.zm-button:active {
+.buy-plan-link.orange-link:active,
+.cta-bgyellow:active,
+.right-section .link-stories:active,
+.zm-button:active
+{
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 /*___ Plain Black __________________________________________________________________*/
 
+.add-on-parts,
+.bill-section,
 .mini-layout-body>.row>.nav-menu,
-.screen {
+.question-parts,
+.screen,
+.story-parts
+{
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.add-on-parts:hover,
+.bill-section:hover,
 .mini-layout-body>.row>.nav-menu:hover,
-.screen:hover {
+.question-parts:hover,
+.screen:hover,
+.story-parts:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -327,11 +433,15 @@ html {
 
 #content .mini-layout-body,
 #screen6a_container .zoom-news .news-item,
+.add-on-section,
 .dropdown-menu,
 .local-recording-tab-tips,
+.plan-wrapper-row .col-md-3,
+.plan-wrapper-row .col-md-4,
 .zm-notification,
-.zm-sidenav-alert {
-	background-color: #111!important;
+.zm-sidenav-alert
+{
+	background-color: #141313!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -339,10 +449,14 @@ html {
 
 #content .mini-layout-body:hover,
 #screen6a_container .zoom-news .news-item:hover,
+.add-on-section:hover,
 .dropdown-menu:hover,
 .local-recording-tab-tips:hover,
+.plan-wrapper-row .col-md-3:hover,
+.plan-wrapper-row .col-md-4:hover,
 .zm-notification:hover,
-.zm-sidenav-alert:hover {
+.zm-sidenav-alert:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -368,7 +482,10 @@ html {
 .dropdown-menu>li>a:hover,
 .nav-list>.active>a,
 .nav-list>.active>a:focus,
-.nav-list>.active>a:hover {
+.nav-list>.active>a:hover,
+.question-list-container .zm-collapse-item__header:hover,
+.zm-collapse-item__wrap
+{
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
 }
@@ -378,18 +495,34 @@ html {
 /*__________________________________________________________________________________*/
 
 #screen2_container .solution-list .solution-box,
+#screen4a_container .whyzoom-solutions>.whyzoom-box,
+#screen6_container .viplist>.vip-item,
 #screen6a_container .zoom-news .news-item,
+.add-on-section .list-container>li,
+.add-on-section,
+.plan-wrapper-row .col-md-3,
+.plan-wrapper-row .col-md-4,
+.pricing-details .items-wrapper>li,
 .tool-items>div,
-.z-form-row {
+.z-form-row
+{
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
 #screen2_container .solution-list .solution-box:hover,
+#screen4a_container .whyzoom-solutions>.whyzoom-box:hover,
+#screen6_container .viplist>.vip-item:hover,
 #screen6a_container .zoom-news .news-item:hover,
+.add-on-section .list-container>li:hover,
+.add-on-section:hover,
+.plan-wrapper-row .col-md-3:hover,
+.plan-wrapper-row .col-md-4:hover,
+.pricing-details .items-wrapper>li:hover,
 .tool-items>div:hover,
-.z-form-row:hover {
+.z-form-row:hover
+{
 	filter: brightness(100%)!important;
 }
 
@@ -397,6 +530,10 @@ html {
 
 img:not(.logo) {
 	border-radius: 22px!important;
+}
+
+#screen4a_container .whyzoom-box img {
+	border-radius: 0!important;
 }
 
 .dropdown-menu>li>a:first-child:hover {
@@ -411,6 +548,11 @@ img:not(.logo) {
 
 img {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+}
+
+
+#screen6_container .viplist>.vip-item {
+	opacity: 1!important;
 }
 }
 

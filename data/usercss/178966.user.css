@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         lifeiscrazy
 @description    `We all love MyAnimeList, but there's two things it lacks. The first being dark mode, there's a ton of scripts already. But the second is a sticky header. And that's where this script comes in. Nothing fancy, but it does the job. Especially created for people with a small screen who have to take screenshots for Official AWC with both stats far down the page, and their username hidden up top.`
-@version        202045.14.48
+@version        20201113.13.0
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("myanimelist.net") {
 /* Sticky MAL logo / list/PM/notifications/username bar */
-#headerSmall {
+#headerSmall  {
     position: sticky !important;
     position: -webkit-sticky !important;
     top: 0;
@@ -32,5 +32,15 @@ div#contentWrapper > div:not(#content) {
     position: -webkit-sticky;
     top: 82px;
     z-index: 5;
+}
+}
+
+@-moz-document regexp("https://myanimelist.*pics") {
+/* Fix sticky MAL logo + menus for image sections */
+#header.header {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 0;
+    z-index: 15;
 }
 }

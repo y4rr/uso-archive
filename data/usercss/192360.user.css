@@ -2,21 +2,13 @@
 @name           Eldarya - Corrections Website [all servers]
 @namespace      USO Archive
 @author         Вика Пименова
-@description    `If you don't know Russian, use a translatorВсе изменения:Текст верхнего меню немного увеличен, а его фон затемнён, так что его теперь проще читатьУбрана синяя мигающая полоска под надписью "Новая эра"На рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее, чтобы сразу бросаться в глазаВ гардеробе и в магазине одежды сократилось пустое пространство, чтобы вещи было лучше видноИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке (банк) немного увеличены стикеры акций и добавлено белое обрамление для надписей "Мана" и "Золотые монеты" Названия нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеет`
-@version        20201110.15.45
+@description    `If you don't know Russian, use a translatorВсе изменения:Текст верхнего меню немного увеличен, а его фон затемнён, так что его теперь проще читатьНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее, чтобы сразу бросаться в глазаВ гардеробе и в магазине одежды сократилось пустое пространство, чтобы вещи было лучше видноИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке (банк) немного увеличены стикеры акций и добавлено белое обрамление для надписей "Мана" и "Золотые монеты" Названия нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеет`
+@version        20201113.19.20
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
-
 /*Основное*/
-
-  /*Голубая мигающая полоска*/
-#top-bar::before {
-    width: 0%;
-    animation: none; /*если хотите, чтобы она была, но не мигала, удалите строчку выше и строчку ниже*/
-    background: none;
-}
 
   /*То, до чего не додумались бимув. Темный фон для меню*/
 
@@ -32,6 +24,7 @@
     text-shadow: 0 0 8px var(--main-season-color);
     line-height: 38px;
     font-weight: 600;
+    color: #FFFFFF;
 }
 
 #top-bar h1 {
@@ -44,24 +37,70 @@
     pointer-events: none;
 }
 
+/*Скажем  "Нет!" раззмытию фона!*/
+
+.appearance-interface-container #avatar-background img, .home-interface-container #left-bg img, .attic-container #avatar-background img {
+    filter: none;
+    background-position: center;
+    position: fixed;
+}
+
 /*Список вещей в гардеробе и магазине повыше*/
+
+/*Код гардероба был частично взят из кода Ashalinda: */
 
 #currencies {
     position: absolute;
-    right: 140px;
+    right: 160px;
+}
+
+#appearance-items #wardrobe-menu {
+    overflow: unset;
+}
+
+.appearance-interface-container #appearance-section-title > span {
+    display: none;
 }
 
 #appearance-right {
     padding: 20px 30px 0 0;
 }
 
+#appearance-right #appearance-items {
+    height: calc(100% - 125px);
+    display: flex;
+    flex-direction: column;
+}
+
+#appearance-right #appearance-items > * {
+    flex: 0 1 auto;
+}
+
+#appearance-items #appearance-items-categories.active {
+    height: calc(100vh - 295px);
+    max-height: none;
+}
+
+#appearance-right #appearance-items .appearance-items-category.active {
+    flex: 1 1 auto;
+}
+
+.category-displayed-menu #appearance-items #appearance-items-categories.active {
+    height: calc(105vh - 295px);
+    max-height: none;
+}
+
+.appearance-category, .mCS_y_hidden .mall-category {
+    width: 105px;
+    padding: 0;
+    box-sizing: border-box;
+    height: 125px;
+    margin: 4px;
+}
+
 #mall-container {
     top: -55px;
     padding: 0px 0px 0px 55px;
-}
-
-#avatar-picto-actions .action-picto, #search-wardrobe-form, #actions-container, #wardrobe-menu {
-    top: -15px;
 }
 
 #container .section-title {
@@ -74,16 +113,8 @@
     line-height: 20px;
 }
 
-#layout-2col {
-    top: -50px;
-}
-
-#layout-2col-right {
-    top: 0px;
-}
-
-#layout-2col-left {
-    top: 0px;
+#mall-categories.index-mall-categories {
+    height: calc(135vh - 565px);
 }
 
 #mall-categories, #mall-products, #mall-productDetail {
@@ -92,14 +123,6 @@
 
 #mall-categories.index-mall-categories {
     height: calc(135vh - 448px);
-}
-
-#appearance-items ul {
-    min-height: 550px;
-}
-
-#appearance-items {
-    top: 10px;
 }
 
 #mall-container .nl-button.nl-button-back {
@@ -130,6 +153,27 @@
 
 .attic-categories-list {
     max-height: calc(400vh - 524px);
+}
+
+/*Инвентарь*/
+
+#container .inventory-main-container {
+    background-image: url(https://i.ibb.co/g47tg2K/1.png);
+}
+#inventory-menu li {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 9px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section-content {
+    background: none;
+    border-radius: 0px;
+    border: none;
+}
+
+.inventory-scroll-wrapper {
+    height: auto;
 }
 
 /*Банк*/
@@ -182,7 +226,7 @@
     text-transform: none;
 }
 
-#marketplace-main-content .price-item {
+#marketplace-main-content .price-item, #marketplace-itemDetail-info-bid .button-price-maana, #marketplace-itemDetail-info-buy .button-price-maana{
     font-size: 18px;
     font-weight: 900;
     color: rgb(52 56 111);
@@ -190,5 +234,97 @@
 
 #marketplace-main-content .maana-icon {
     width: 0;
+}
+
+/*Иконки на рынке поменьше*/
+
+.marketplace-search-items li, .marketplace-itemsForSale-items li, .marketplace-auctions-item, .marketplace-sales-item {
+    height: 245px;
+    margin: 10px 5px;
+}
+
+.marketplace-abstract .abstract-content {
+    margin: 5px 0;
+}
+
+.marketplace-abstract .abstract-container, .marketplace-abstract .abstract-icon {
+    top: -8px;
+}
+
+.marketplace-abstract .abstract-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.marketplace-abstract .abstract-icon > img {
+    width: 75px;
+}
+
+.page-main-container marketplace-main-container #marketplace-menu .nl-button{
+    margin-top: -180px;
+}
+
+#marketplace-main-content .section-title {
+    margin-top: -310px;
+}
+
+.marketplace-main-container #layout-2col-right {
+    padding: 80px 30px 30px;
+}
+
+.marketplace-main-container.marketplace-auction-container #marketplace-main-content {
+    width: 1400px;
+}
+
+#marketplace-filters select {
+    margin-top: 10px;
+}
+
+/*"Мои торги" немного приближены к изначальному виду*/
+
+.marketplace-main-container.marketplace-auction-container #layout-2col-right {
+        min-width: 1200px;
+}
+
+#marketplace-abstract-purchases, #marketplace-abstract-sales {
+    width: 500px;
+}
+
+.marketplace-auctions-item, .marketplace-sales-item {
+    height: 100px;
+    width: 100%;
+}
+
+.marketplace-auction-container .marketplace-abstract .abstract-icon, .marketplace-auction-container .marketplace-abstract .abstract-icon {
+    margin: 10px;
+    display: block;
+}
+
+.marketplace-auction-container .marketplace-abstract .abstract-container {
+    top: -80px;
+    left: 100px;
+    width: 40%;
+    text-align: left;
+}
+
+.marketplace-auction-container .marketplace-abstract .abstract-content {
+    height: 40px;
+    align-items: start;
+}
+
+#marketplace-abstract-sales .abstract-actions, #marketplace-abstract-purchases .abstract-actions {
+    top: -160px;
+    left: 280px;
+    width: 240px;
+}
+
+/*Мини-игры вверх*/
+
+#container .hatchlings-main-container #main-section, #container .peggle-main-container #main-section, #container .flappy-main-container #main-section {
+    top: -70px;
+}
+
+#minigames-list, #malls-list {
+    margin: 70px auto auto;
 }
 }

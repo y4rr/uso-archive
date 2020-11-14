@@ -2,8 +2,8 @@
 @name           洛谷圆角化
 @namespace      USO Archive
 @author         chen_zhe_
-@description    `洛谷圆角化 by _•́へ•́╬_`
-@version        20201112.13.22
+@description    `洛谷圆角化 by _•́へ•́╬_ uid=90693`
+@version        20201113.14.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -44,8 +44,15 @@ a[data-v-3e5191a6]:hover
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 1px 2px #5e5e5e;
 }
-img,button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae],.text[data-v-6b0e15fa],.dropdown-wrap[data-v-6b0e15fa],.progress-frame[data-v-47712372],.center[data-v-7f3d8833],.am-viewport,.am-btn,.selected,span[data-v-20b7d558],.marked[data-v-5a58a989] pre,.items>li[data-v-8feadc5c]
+button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae]
 {border-radius: 25px;}
+.text[data-v-6b0e15fa],.dropdown-wrap[data-v-6b0e15fa],.progress-frame[data-v-47712372],.center[data-v-7f3d8833],.am-viewport,.am-btn,.selected,span[data-v-20b7d558],.marked[data-v-5a58a989] pre,pre[data-v-52f2d52f],.items>li[data-v-8feadc5c]
+{border-radius: 15px;}
+.user-nav[data-v-52820d90]
+{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 .lg-article
 {
     background: #fff;
@@ -291,100 +298,10 @@ a:hover
 	border-color: #fff;
 
 }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-moz-document url-prefix("https://www.luogu.com.cn") {
 /*再加一份洛谷Material化*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*编辑器和代码显示的字体*/
  .ace_content, code {
 }

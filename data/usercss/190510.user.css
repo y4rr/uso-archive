@@ -3,565 +3,560 @@
 @namespace      USO Archive
 @author         FlameCaro
 @description    `As a bonus or example for the themes I've done :)`
-@version        20201017.14.40
+@version        20201113.14.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url("https://www.horsereality.com/user/24506/FlameCaro") {
-.bluebar_container, .footer {
-    background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
+@-moz-document url-prefix("https://v2.horsereality.com/user/24506") {
+/*FlameCaro*/
+.header-menu, .footer, .show-profile .navbar {
+	background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
     background-size: cover !important;
     border-bottom: 2px solid !important;
     border-top: 2px solid !important;
     border-color: #D08484 !important;
 }
-.footer.user .botleft img, .logo.user img, .container_12 .grid_4 img {
-	filter: drop-shadow(0 0 5px #a62121) !important;
+.footer .logo img, .header-menu .logo img {
+    filter: drop-shadow(0 0 5px #a62121) !important;
 }
 body.background {
-    background: #D08484 url("https://i.imgur.com/Zvee24m.png") no-repeat fixed  !important;
+    background: #D08484 url("https://i.imgur.com/Zvee24m.png") no-repeat fixed !important;
     background-size: cover !important;
     background-position-y: 5% !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.main-content {
+    margin-left: 170px !important;
+    background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
+    background-size: cover !important;
+}
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #D08484 !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #873a60) !important;
 }
-.leftnav {
+.side-nav {
     background: url("https://i.imgur.com/j3RnVQZ.jpg");
     background-size: cover !important;
-    border-radius: 0 0 85px 85px !important;
-    border-bottom-width: 2px !important;
-    border-right-width: 2px !important;
-    border-left-width: 2px !important;
-    border-color: #D08484 !important;
-    border-style: ridge !important;
+    border-bottom: 2px ridge #D08484 !important;
+	border-left: 2px ridge #D08484 !important;
+	border-right: 2px ridge #D08484 !important;
+	border-radius: 0 0 90px 90px !important;
     box-shadow: none !important;
-    margin-left: -4px !important;
-	width: 150px !important;
-    margin-top: -1px !important;
+    width: 170px !important;
     position: fixed !important;
-  }
-.container {
- 	background-color: #eaf0f200 !important;
 }
-.center {
-    background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
-	background-size: cover !important;
-}
-#bbmenu.user ul.slidedown li ul.slidedownmenu, .profile_account {
-    background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
-    border: 2px solid !important;
-    border-color: #D08484 !important;
-}
-#bbmenu.user ul.slidedown li ul.slidedownmenu li:hover, #bbmenu.user ul.slidedown li:hover, .profile_menu ul li:hover {
- 	background: #0000001f !important;
-    border-radius: 3px !important;
-}
-#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava, .avatar {
-    border: none !important;
-}
-.profile_menu, table thead tr.sub {
-    background: url("https://i.imgur.com/j3RnVQZ.jpg");
-	border-top: 1px solid #D08484;
-	border-bottom: 1px solid #D08484;
-    color: #9F6464;
-}
-.statusbar {
- 	background-color: #0000001f !important;
-    border: 2px solid #8E254D80 !important;
-}
-.xpvalue {
- 	background: -webkit-linear-gradient(top,#e9ddd2 0%,#a89789 100%) !important;   
-}
-table, table thead tr.top {
-    background: #fff0 !important;
-	border: none !important;
-}
-table tr.odd {
-    background-color: #a89789 !important;
-    border-bottom: 1px solid #D08484 !important;
-    border-top: 1px solid #D08484 !important;
-}
-table tr.even {
-    background-color: #e9ddd2 !important;
-}
-p a:active, p a:link, p a:visited{
-    color: #131415 !important;
-}
-.profile_menu ul li, .profile_account h2, p a:hover {
-    color: #9F6464 !important;
-}
-ul li a, ul li a:active, ul li a:link, ul li a:visited, .footer h6, .footer ul li a:active, .footer ul li a:visited, .footer ul li a:link, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p {
-    color: #D08484 !important;
+.col-md-2 {
+    flex: 0 0 0 !important;
 }
 .subtitle {
     color: #873A60 !important;
 }
-ul li a:hover, .footer h6:hover,.footer ul li a:hover, .gamestats a:hover, .gamestats:hover, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p:hover, .leftnav > ul > li > ul > li a:hover {
-	color: #d5b65f !important;
+.header-menu nav .main-menu .user-nav .dropdown-menu {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg") !important;
+    border: 2px solid !important;
+    border-color: #D08484 !important;
+}
+.header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover, .show-profile .navbar .nav-link:hover {
+    background: #0000001f !important;
+    border-radius: 3px !important;
+}
+.show-profile .navbar-avatar .navbar-avatar-container {
+    border: none !important;
+}
+.component.frame .wrapper, .show-profile .profile-account {
+    background: url("https://i.imgur.com/j3RnVQZ.jpg");
+	border: 2px solid #D08484;
+}
+.progress {
+    background-color: #0000001f !important;
+    border: 2px solid #8E254D80 !important;
+}
+.progress-bar {
+    background: -webkit-linear-gradient(top, #e9ddd2 0%, #a89789 100%) !important;
+}
+.component.table .table thead th {
+    background: #D08484 !important;
+}
+.table td, .table th{
+    border-color: #D08484 !important;
+}
+.component.table .table tbody tr:nth-of-type(2n+1) {
+    background-color: #a89789 !important;
+    border-bottom: 1px solid #D08484 !important;
+    border-top: 1px solid #D08484 !important;
+}
+.component.table .table tbody {
+    background-color: #e9ddd2 !important;
+}
+p a:active, p a:link, p a:visited, a {
+    color: #873a60 !important;
+}
+.profile_menu ul li, .profile_account h2, p a:hover, a:hover {
+    color: #9F6464 !important;
+}
+ul li a, ul li a:active, ul li a:link, ul li a:visited, .footer h6, .footer ul li a:active, .footer ul li a:visited, .footer ul li a:link, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p, h2, .header-menu nav .main-menu .user-nav > a, .show-profile .navbar .nav-link, .component.frame .wrapper .header .title {
+    color: #D08484 !important;
+}
+ul li a:hover, .footer h6:hover, .footer ul li a:hover, .gamestats a:hover, .gamestats:hover, #bbmenu.user ul.slidedown li ul.slidedownmenu li .level p:hover, .leftnav > ul > li > ul > li a:hover, .header-menu nav .main-menu .user-nav > a:hover {
+    color: #d5b65f !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/24748/Jacky_BR") {
-.bluebar_container, .footer, .profile_menu, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/24748") {
+/*Jacky_BR*/
+.header-menu, .footer, .show-profile .navbar, .header-menu nav .main-menu .user-nav .dropdown-menu {
     background: #191919 !important;
     border: 2px solid #bfbfbf !important;
 }
-#bbmenu.user ul.slidedown li:hover, .profile_menu ul li:hover {
+.header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover, .show-profile .navbar .nav-link:hover {
     background-color:#ffffff2e !important;
 }
-.center {
+.main-content {
     background-color: #6c6c6c !important;
+    margin-left: 170px !important;
 }
 body.background {
     background: #4a7a9b url("https://i.imgur.com/Uiu2UEm.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
     background-position: center !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #bfbfbf !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #fff) !important;
 }
-.leftnav {
+.side-nav {
     background: url("https://i.imgur.com/gxm9MW1.png") !important;
-	background-size: cover !important;
-	background-position: center !important;
-	border-radius: 0 0 85px 85px !important;
-	border: 2px solid #bfbfbf !important;
-	border-top: none !important;
-	margin-left: -4px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 0 0 90px 90px !important;
+    border: 2px solid #bfbfbf !important;
+    border-top: none !important;
+    width: 170px !important;
     position: fixed !important;
 }
-.profile_account, tbody {
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.show-profile .profile-account {
     background-color: #4f4f4f !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+.side-nav ul a, a, .header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-header, .progress span, .table {
     color: #787878 !important;
 }
-.profile_account h2, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, .footer h6, .profile_menu ul li, .profile_username h1, .profile_username h2, h1,ul li a:active, ul li a:link, ul li a:visited, p, .milestone_text h2 {
-    color: #bfbfbf !important;
-}
-.leftnav > ul > li > ul > li a:hover, .gamestats a:hover, ul li a:hover, p a:active, p a:link, p a:visited {
+.side-nav ul a:hover, a:hover {
     color: #dbdbdb !important;
 }
-p a:hover {
-    color: #bfbfbf !important;
-}
-.statusbar {
+.progress {
     background-color: #4f4f4f7d !important;
-	border: 2px solid #191919 !important;
+    border: 2px solid #191919 !important;
 }
-.xpvalue {
-    background: -webkit-linear-gradient(top,#6C4545 0%,#431B1B 100%) !important;
+.progress-bar {
+    background: -webkit-linear-gradient(top, #6C4545 0%, #431B1B 100%) !important;
 }
-table thead tr.top, .top, table, table thead tr.sub {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #191919 !important;
 }
-table tr.even {
+.table td, .table th {
+    border-color: #191919 !important;
+}
+.component.table .table tbody {
     background-color: #4f4f4f !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #393939 !important;
 }
-
 /*Invisable*/
-.container {
-    background-color: #fff0 !important;
-}
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: none !important;
 }
-.bluebar_container, .profile_menu {
+.header-menu, .show-profile .navbar {
     border-right: none !important;
     border-left: none !important;
 }
-
 /*Fonts*/
-@font-face {
-  	font-family: 'Aladin';
-  	font-style: normal;
-  	font-weight: 400;
- 	 font-display: swap;
-  	src: local('Aladin Regular'), local('Aladin-Regular'), url(https://fonts.gstatic.com/s/aladin/v9/ZgNSjPJFPrvJV5fF7i35.woff2) format('woff2');
-  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ @font-face {
+    font-family:'Aladin';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Aladin Regular'), local('Aladin-Regular'), url(https://fonts.gstatic.com/s/aladin/v9/ZgNSjPJFPrvJV5fF7i35.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 .subtitle {
-  	font-family: 'Aladin';
+    font-family:'Aladin';
     color: #bfbfbf !important;
 }
-.profile_menu ul li {
+.show-profile .profile-account h2 {
+    color: #bfbfbf !important;
+}
+.show-profile .navbar .nav-link {
     font-size: 18px !important;
-    font-family: 'Aladin';
+    font-family:'Aladin';
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/19104/Yellow08") {
-.bluebar_container, .footer {
-	background: url("https://i.imgur.com/8QLb3hB.png") !important;
-	background-position: center !important;
-	background-size: cover !important;	
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/19104") {
+/*Yellow08*/
+.header-menu, .footer {
+    background: url("https://i.imgur.com/8QLb3hB.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
     border-bottom: 2px solid #aea296 !important;
     border-top: 2px solid #aea296 !important;
 }
-.profile_menu {
+.show-profile .navbar {
     background: url("https://i.imgur.com/3mcwIrP.png") !important;
     border-color: #333021 !important;
 }
-.profile_menu ul li:hover {
+.show-profile .navbar .nav-link:hover {
     background: url("https://i.imgur.com/3mcwIrP.png") !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu {
+.header-menu nav .main-menu .user-nav .dropdown-menu {
     background-color: #aea298 !important;
 }
-#bbmenu.user ul.slidedown li:hover {
+.header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover {
     background-color: #0000004a !important;
 }
-.center {
+.main-content {
     background-color: #d3cbc2 !important;
+    margin-left: 170px !important;
 }
 body.background {
     background: #4a7a9b url("https://i.imgur.com/8QLb3hB.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
     background-position: top !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #382e25 !important;
     padding: 35px !important;
 }
-.leftnav {
-	background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
+.side-nav {
+    background: url("https://i.imgur.com/UJ5wpiF.jpg") !important;
     background-position: right !important;
     background-size: cover !important;
-    border-radius: 0 0 85px 85px !important;
-    margin-left: -4px !important;
-	border: 2px solid #333021 !important;
-	border-top: none !important;
+    border-radius: 0 0 90px 90px !important;
+    border: 2px solid #333021 !important;
+    border-top: none !important;
+    width: 170px !important;
     position: fixed !important;
 }
-.profile_account, tbody {
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.show-profile .profile-account {
     background-color: #aea298 !important;
 }
-.subtitle, .profile_account h2 {
+.subtitle, .show-profile .profile-account h2 {
     color: #382e25 !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, table tr td a:active, table tr td a:link, table tr td a:visited {
+.side-nav ul a, a, p a:active, p a:link, p a:visited {
     color: #695e47 !important;
 }
-.gamestats a:hover, table tr td a:hover {
+.side-nav ul a:hover, a:hover, p a:hover {
     color: #e2dcd5 !important;
 }
-p {
-    color: #000 !important;
-}
-.profile_menu ul li {
+.show-profile .navbar .nav-link, .header-menu nav .main-menu ul li a, .header-menu nav .main-menu .user-nav > a, .footer ul li a {
     color: #fff !important;
 }
-.milestone_text h2 {
-    color: #183448 !important;
-}
-table thead tr.top, .top, table, table thead tr.sub {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #7b695b !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #aea298 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #9a897b !important;
 }
-table {
+.table td, .table th {
     border-color: #7b695b !important;
 }
-.avatar {   
-    border: none;
-    margin-left: 24px;
-}
-
-/*INVISABLE*/
-.container, .advertising {
-    background-color: #fff0;
-}
-#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: none;
 }
-
 /*Font changes*/
-@font-face { /*latin*/
-  	font-family: 'Indie Flower';
-  	font-style: normal;
-  	font-weight: 400;
-  	font-display: swap;
-  	src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ @font-face {
+    /*latin*/
+    font-family:'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-.profile_menu ul li, .subtitle, .profile_account h2 {
+.show-profile .navbar .nav-link, .subtitle, .show-profile .profile-account h2 {
     font-family: Indie Flower !important;
     font-size: 18px !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/36491/Joy_sPferdewelt") {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/36491") {
+/*Joy_sPferdewelt*/
 body.background {
     background: #4a7a9b url("https://i.imgur.com/bF1tuLJ.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
 }
-.bluebar_container, .footer, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+.header-menu, .footer, .header-menu nav .main-menu .user-nav .dropdown-menu {
     background: url("https://i.imgur.com/zUem4DM.jpg") !important;
     background-size: cover !important;
     border: 2px ridge #e9de82 !important;
 }
-.center {
+.main-content {
     background-color: #ebe3e3 !important;
     border: 2px ridge #e9de82 !important;
-    margin-right: -1px !important;
+    margin-left: 170px !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #ebe3e3 !important;
-    padding: 35px !important;
+    padding: 30px !important;
     filter: drop-shadow(0 0 5px #fff) !important;
 }
-.leftnav {
+.side-nav {
     background: url("https://i.imgur.com/ugDHUvE.png") !important;
-	background-size: cover !important;
-	background-position: left !important;
-	border-radius: 0 0 85px 85px !important;
+    background-size: cover !important;
+    background-position: left !important;
+    border-radius: 0 0 90px 90px !important;
     border: 3px ridge #e9de82 !important;
-	border-top: none !important;
-	margin-left: -6px !important;
+    border-top: none !important;
+    width: 170px !important;
     position: fixed !important;
 }
-ul li a:active, ul li a:link, ul li a:visited, .profile_menu ul li, .gamestats a:link, .gamestats a:visited, .gamestats a:active, .gamestats, .profile_username h1, .profile_username h2, .footer h6 {
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.show-profile .navbar .nav-link, .header-menu nav .main-menu ul li a, .header-menu nav .stats a, .header-menu nav .main-menu .user-nav > a, .footer ul li a {
     color: #fff !important;
 }
-.subtitle, p a:active, p a:link, p a:visited, ul li a:hover, .profile_account h2 {
+.subtitle, p a:active, p a:link, p a:visited, ul li a:hover, .show-profile .profile-account h2, .header-menu nav .main-menu ul li a:hover, .header-menu nav .main-menu .user-nav > a:hover, .footer ul li a:hover {
     color: #300000 !important;
 }
-p, .leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+.side-nav ul a, a {
     color: #000 !important;
 }
-p a:hover, .leftnav > ul > li > ul > li a:hover {
-	color: #c7aeae !important;
+.side-nav ul a:hover, a:hover, p a:hover {
+    color: #c7aeae !important;
 }
-.milestone_text h2 {
-    color: #183448 !important;
-}
-.statusbar {
+.progress {
     border-color: #693550 !important;
     background-color: #69355085 !important;
 }
-.xpvalue {
-	 background: -webkit-linear-gradient(top,#a26283 0%,#693550 100%) !important;
+.progress-bar {
+    background: -webkit-linear-gradient(top, #a26283 0%, #693550 100%) !important;
 }
-table, table thead tr.top, table thead tr.sub {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #693550 !important;
 }
-table {
+.table td, .table th {
     border-color: #693550 !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #dac8c8 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #b48f8f !important;
 }
-.profile_account, tbody {
+.show-profile .profile-account {
     background-color: #dac8c8 !important;
 }
-.profile_menu {
+.show-profile .navbar {
     background: url("https://i.imgur.com/zUem4DM.jpg") !important;
     background-size: cover !important;
     border-color: #e9de82 !important;
 }
-.profile_menu ul li:hover, #bbmenu.user ul.slidedown li ul.slidedownmenu li:hover, #bbmenu.user ul.slidedown li:hover {
+.show-profile .navbar .nav-link:hover, .header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover {
     background-color: #955a7785 !important;
 }
-.avatar {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: 4px ridge #e9de82 !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
-    border: none !important;
-}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, button, input {
-	font-style: italic !important;
-}
-.container {
-    background-color: #fff0 !important;
+    font-style: italic !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/482/Lubaya") {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/482") {
+/*Lubaya*/
 body.background {
     background: #4a7a9b url("https://i.imgur.com/SkK5hQZ.png") no-repeat fixed 0 0/100% auto!important;
     background-size: cover !important;
 }
-.bluebar_container, .footer, .profile_menu {
+.header-menu, .footer, .show-profile .navbar {
     background: #000 url("https://i.imgur.com/3mcwIrP.png") !important;
-	background-blend-mode: hard-light !important;
+    background-blend-mode: hard-light !important;
     background-position: top !important;
     border: 2px ridge #879d78 !important;
 }
-.center {
+.main-content {
     background-color: #cbd2b7 !important;
     border: 2px ridge #879d78 !important;
-    margin-right: -1px !important;
+    margin-left: 170px !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #fff !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #fff) !important;
 }
-.leftnav {
+.side-nav {
     background: #000 url("https://i.imgur.com/UJ5wpiF.jpg") !important;
-	background-blend-mode: hard-light !important;
+    background-blend-mode: hard-light !important;
     background-position: right !important;
     border: 2px ridge #879d78 !important;
     border-top: none !important;
-    border-radius: 0 0 85px 85px !important;
-    margin-left: -6px !important;
+    border-radius: 0 0 90px 90px !important;
+    width: 170px !important;
     position: fixed !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu {
-    background:  url("https://i.imgur.com/3mcwIrP.png") !important;
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.header-menu nav .main-menu .user-nav .dropdown-menu {
+    background: url("https://i.imgur.com/3mcwIrP.png") !important;
     background-position: left !important;
     border: 2px ridge #879d78 !important;
+}
+.header-menu nav .main-menu .user-nav > a, .header-menu nav .main-menu ul li a, .header-menu nav .stats a, .navbar-dark .navbar-nav .nav-link, .footer ul li a {
+	color: #f2fafe !important;
 }
 .subtitle {
     color: #c2e1f8 !important;
 }
-.profile_account h2, table tr td a:active, table tr td a:link, table tr td a:visited {
+a, p a:active, p a:link, p a:visited, .show-profile .profile-account h2 {
     color: #3a6355 !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, p a:active, p a:link, p a:visited {
+.side-nav ul a {
     color: #f2fafe !important;
 }
-.leftnav > ul > li > ul > li a:hover, table tr td a:hover, p a:hover {
-	color: #5d8a7b !important;
+.side-nav ul a:hover, a:hover, p a:hover {
+    color: #5d8a7b !important;
 }
-
-table, table thead tr.top, table thead tr.sub {
-	background-color: #a3ae86 !important;
+.component.frame .wrapper, .component.table .table thead th {
+    background-color: #a3ae86 !important;
 }
-table {
+.table td, .table th {
     border-color: #a3ae86 !important;
 }
-table tr.even, .profile_account, tbody {
+.component.table .table tbody {
     background-color: #f4f5e3 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #dfe1c6 !important;
 }
-
-.statusbar {
+.progress {
     border: 2px solid #a3ae86 !important;
     background-color: #f6f6f685 !important;
 }
-.xpvalue {
-    background: -webkit-linear-gradient(top,#f2fafe 0%,#c2e1f8 100%) !important;
+.progress-bar {
+    background: -webkit-linear-gradient(top, #f2fafe 0%, #c2e1f8 100%) !important;
 }
-.profile_account {
+.show-profile .profile-account {
     border-radius: 25px !important;
     background-color: #f4f5e3 !important;
 }
-.avatar {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: 4px ridge #879d78 !important;
 }
-.container {
-    background-color: #fff0 !important;
-}
-.bluebar_container, .profile_menu {
-	border-right: none !important;
+.header-menu, .show-profile .navbar {
+    border-right: none !important;
     border-left: none !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
-    border: none !important;
-}
-.profile_menu ul li:hover, #bbmenu.user ul.slidedown li:hover {
+.show-profile .navbar .nav-link:hover, .header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover {
     background-color: #0009 !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/63539/Lemonade") {
-.bluebar_container, .footer {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/63539") {
+/*Lemonade*/
+.header-menu, .footer {
     background-color: #bf5f6b !important;
 }
 .background {
     background: #4a7a9b url("https://i.imgur.com/ih4qjvB.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
 }
-.container, .center {
+.main-content {
     background-color: #f7d6e3 !important;
+    margin-left: 170px !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #fff !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #fff) !important;
 }
-.leftnav {
+.side-nav {
     background: #bf5f6b !important;
     margin-left: 0px !important;
     width: 150px !important;
     margin-top: -1px !important;
-    border-radius: 0 0 85px 85px !important;
+    border-radius: 0 0 90px 90px !important;
     box-shadow: none !important;
+    width: 170px !important;
+    position: fixed !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.header-menu nav .main-menu .user-nav .dropdown-menu {
     background-color: #a94551 !important;
 }
-.subtitle {
+.subtitle, .navbar-dark .navbar-nav .nav-link, .header-menu nav .main-menu .user-nav > a, .header-menu nav .main-menu ul li a span, .header-menu nav .stats a, .footer ul li a {
     color: #ffefef !important;
-}
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, p a:active, p a:link, p a:visited, ul li a:hover {
+} 
+a, p a:active, p a:link, p a:visited {
     color: #fa8b99 !important;
 }
-.leftnav > ul > li > ul > li a:hover, p a:hover {
+a:hover, p a:hover {
     color: #8f3f49 !important;
 }
-table, table thead tr.top, table thead tr.sub {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #ff8e9c !important;
 }
-table {
+.table td, .table th {
     border-color: #ff8e9c !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #fff2f7 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #f7d6e3 !important;
 }
-.statusbar {
+.progress {
     background-color: #f6f6f687 !important;
     border: 2px solid #f7d6e3 !important;
 }
-.xpvalue {
-    background: -webkit-linear-gradient(top,#ff8e9c 0%,#bf5f6b 100%) !important;
+.progress-bar {
+    background: -webkit-linear-gradient(top, #ff8e9c 0%, #bf5f6b 100%) !important;
 }
-.profile_account, tbody {
+.show-profile .profile-account{
     background-color: #fff2f7 !important;
 }
-.profile_menu ul li:hover {
+.show-profile .navbar .nav-link:hover {
     background-color: #a0254b !important;
 }
-.profile_menu {
+.show-profile .navbar {
     background-color: #ff8e9c !important;
     border-top: 2px solid #fff !important;
     border-bottom: 2px solid #fff !important;
 }
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border-color: #bf5f6b !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/32580/Blumen") {
-.footer, .profile_menu, .bluebar_container {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/32580") {
+/*Blumen*/
+.footer, .show-profile .navbar, .header-menu {
     background-color: #bf8484 !important;
     border-top: 2px solid #000 !important;
     border-bottom: 2px solid #000 !important;
@@ -570,87 +565,89 @@ body.background {
     background: #f4d1ca url("https://cdn.discordapp.com/attachments/715953066704371835/723877415100874802/Bildschirmfoto_2020-06-20_um_14.19.08.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #000 !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #858383) !important;
 }
-.leftnav{
+.side-nav {
     background: url("https://i.imgur.com/A0X0ACT.png") !important;
-    border-radius: 0 0 85px 85px !important;
+    border-radius: 0 0 90px 90px !important;
     background-size: cover !important;
-    margin-left: -4px !important;
     border: 2px ridge #000 !important;
     border-top: none !important;
+    width: 170px !important;
+    position: fixed !important;
 }
-.center {
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.main-content {
     background-color: #ffffff70 !important;
+    margin-left: 170px !important;
 }
-#bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
+.header-menu nav .main-menu .user-nav .dropdown-menu {
     background-color: #a76868 !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited, table tr td a:active, table tr td a:link, table tr td a:visited {
+.show-profile .navbar .nav-link, .header-menu nav .main-menu .user-nav > a, .header-menu nav .main-menu ul li a span, .header-menu nav .stats a, .footer ul li a {
+    color: #fff !important;
+}
+a {
     color: #b26e6e !important;
 }
-.leftnav > ul > li > ul > li a:hover, ul li a:hover, table tr td a:hover { 
+a:hover, .show-profile .navbar .nav-link:hover, .header-menu nav .main-menu .user-nav > a:hover, .header-menu nav .main-menu ul li a span:hover, .header-menu nav .stats a:hover, .footer ul li a:hover {
     color: #6f3b4c !important;
 }
-.statusbar {
+.progress {
     background-color: #ffffff70 !important;
     border: 2px solid #000 !important;
 }
-.xpvalue {
-    background: -webkit-linear-gradient(top,#d29797 0%,#945f70 100%) !important;
+.progress-bar {
+    background: -webkit-linear-gradient(top, #d29797 0%, #945f70 100%) !important;
 }
-table, table thead tr.top, table thead tr.sub {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #bf8484 !important;
 }
-table {
+.table td, .table th {
     border-color: #bf8484 !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #fceae7 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #fed9d2 !important;
 }
-.profile_account, tbody {
+.show-profile .profile-account {
     background: url("https://i.imgur.com/A0X0ACT.png") !important;
 }
-.profile_menu ul li:hover {
+.show-profile .navbar .nav-link:hover {
     background-color: #a76868 !important;
 }
-.container {
-    background-color: #fff0 !important;
-}
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: none !important;
 }
-.avatar{
-    margin-left: 24px !important;
+@font-face {
+    /*latin*/
+    font-family:'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@font-face { /*latin*/
-  font-family: 'Indie Flower';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-.subtitle, .profile_username h1, .horse_left h1 {
+.subtitle, .show-profile .profile-name-and-estate .profile-username {
     font-family: Indie Flower !important;
 }
-.horse_left h1 {
-    font-size: 30px !important;
-}
-.profile_username h1 {
-	filter: drop-shadow(0 0 5px #000) !important;
+.show-profile .profile-name-and-estate .profile-username {
+    filter: drop-shadow(0 0 5px #000) !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/12501/Valentine") {
-.bluebar_container, .header-menu, .footer {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/12501") {
+/*Valentine*/
+.header-menu, .footer {
     background-color: #081b28 !important;
 }
 .background {
@@ -658,68 +655,67 @@ table tr.odd {
     background-size: cover !important;
     background-position: center center !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #fff !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #fff) !important;
 }
-.leftnav {
+.side-nav {
     background-color: #a0254b !important;
     border-radius: 0 0 85px 85px !important;
     box-shadow: none !important;
 }
-.center {
+.main-content {
     background-color: #FFE0EE !important;
 }
-table, table thead tr.sub, table thead tr.top {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #42011c !important;
 }
-table {
+.table td, .table th {
     border-color: #42011c !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #FECAE2 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #FFE0EE !important;
 }
-.subtitle {
+.subtitle, .header-menu nav .main-menu ul li a, .header-menu nav .main-menu .user-nav > a, .header-menu nav .stats a, .footer ul li a {
     color: #fff !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
-    color: #fad5d5 !important;
-}
-.leftnav > ul > li > ul > li a:hover {
-    color: #d4b5b5 !important;
-}
-p a:active, p a:link, p a:visited {
+a {
     color: #ff7070 !important;
 }
-p a:hover {
+a:hover {
     color: #570C0C !important;
 }
-.profile_account, tbody {
+.side-nav ul a, .show-profile .navbar .nav-link {
+    color: #fad5d5 !important;
+}
+.side-nav ul a:hover {
+    color: #d4b5b5 !important;
+}
+.show-profile .profile-account {
     background-color: #FECAE2 !important;
 }
-.profile_menu {
+.show-profile .navbar {
     background-color: #7f0639 !important;
     border-top: 2px solid #a0254b !important;
     border-bottom: 2px solid #a0254b !important;
 }
-.profile_menu ul li:hover {
+.show-profile .navbar .nav-link:hover {
     background-color: #a0254b !important;
 }
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
     border: none !important;
-}
-.container {
-    background-color: #fff0 !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/40794/Blood_Moon") {
-.bluebar_container, .footer {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/40794") {
+/*Blood_Moon*/
+.header-menu, .footer {
     background-color: #000000 !important;
 }
 body.background {
@@ -730,99 +726,91 @@ body.background {
 #bbmenu.user ul.slidedown li ul.slidedownmenu, #bbmenu.user ul.slidedown li:hover {
     background-color: #171717 !important;
 }
-.container, .leftnav {
-    background: #656565 !important;  
-    border: none !important;
-}
-.center {
+.main-content {
     background-color: #7b7b7b !important;
 }
-.leftnav::before {
-    Content: "© FlameCaro" !important;
+.side-nav::before {
+    Content:"© FlameCaro" !important;
     color: #000 !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #000) !important;
 }
-table, table thead tr {
+.side-nav {
+    background: #656565 !important;
+    border: none !important;
+}
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #232323 !important;
 }
-table {
+.table td, .table th {
     border-color: #232323 !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #939393 !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #666666 !important;
 }
-.statusbar {
+.progress {
     background-color: #00000040 !important;
     border: 2px solid #000000 !important;
-    color: #fff !important; 
-}
-.xpvalue {
-    background: -webkit-linear-gradient(top,#902121 0%,#3d0000 100%) !important;
-}
-.subtitle, .profile_account h2 {
-    color: #000 !important;   
-}
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
-    color: #232323 !important;
-}
-p a:active, p a:link, p a:visited {
     color: #fff !important;
 }
-.leftnav > ul > li > ul > li a:hover, .profile_menu ul li, ul li a:hover {
+.progress-bar {
+    background: -webkit-linear-gradient(top, #902121 0%, #3d0000 100%) !important;
+}
+.subtitle, .show-profile .profile-account h2 {
+    color: #000 !important;
+}
+a {
+    color: #232323 !important;
+}
+.header-menu nav .main-menu ul li a span, .header-menu nav .main-menu .user-nav > a, .header-menu nav .stats a, .footer ul li a {
+    color: #fff !important;
+}
+a:hover, .show-profile .navbar .nav-link, .header-menu nav .main-menu ul li a span:hover, .header-menu nav .main-menu .user-nav > a:hover, .header-menu nav .stats a:hover, .footer ul li a:hover {
     color: #7b7b7b !important;
 }
-p a:hover {
+.show-profile .navbar .nav-link:hover {
     color: #4b4a4a !important;
 }
-.profile_account, tbody, .tabdetails {
+.show-profile .profile-account {
     background-color: #939393 !important;
-}
-.profile_account, .tabdetails {
     border: 1px solid #232323 !important;
 }
-.profile_menu {
+.show-profile .navbar {
     background-color: #3b3b3b !important;
     border-top: 2px solid #000000 !important;
     border-bottom: 2px solid #000000 !important;
 }
-.profile_menu ul li:hover {
+.show-profile .navbar .nav-link:hover {
     background-color: #222222 !important;
 }
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava, .mavatar, .savatar {
-    border: none !important;   
+.show-profile .navbar-avatar .navbar-avatar-container {
+    border: none !important;
 }
-html body#user.background.europe div.container div.container_12.center div.profile_left div.profile_account h2 i.fa.fa-user {
-    margin-left: 77px !important;
-}
-.fa-home::before {
-    margin-left: 86.5px !important;
-}
-.fa-graduation-cap::before {
-    margin-left: 88.25px !important;
-}
-@font-face { /*latin*/
-  font-family: 'Creepster';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Creepster'), local('Creepster-Regular'), url(https://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4Rcn35.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+@font-face {
+    /*latin*/
+    font-family:'Creepster';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Creepster'), local('Creepster-Regular'), url(https://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4Rcn35.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .subtitle {
-    font-family: 'Creepster' !important;
+    font-family:'Creepster' !important;
 }
-.profile_username h1{
-    font-family: 'Creepster' !important;
+.show-profile .profile-name-and-estate .profile-username {
+    font-family:'Creepster' !important;
     font-weight: 400 !important;
 }
 }
 
-@-moz-document url("https://www.horsereality.com/user/87537/Skyee") {
-.bluebar_container, .footer {
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/87537") {
+/*Skyee*/
+.header-menu, .footer {
     background: url("https://i.imgur.com/L1TQk1b.png") !important;
     background-position: bottom !important;
     background-size: cover !important;
@@ -832,63 +820,147 @@ body.background {
 	background: url("https://i.imgur.com/L1TQk1b.png") no-repeat fixed 0 0/100% auto !important;
     background-size: cover !important;
 }
-.leftnav::before {
+.main-content{
+    background-color: #51443e !important;
+    margin-left: 170px !important;
+}
+.side-nav::before {
     Content: "© FlameCaro" !important;
     color: #51443e !important;
     padding: 35px !important;
     filter: drop-shadow(0 0 5px #51443e) !important;
 }
-.leftnav {
+.side-nav {
     background: #000 url("https://i.imgur.com/myRgOWs.png") center !important;
     border-radius: 0 0 85px 85px !important;
     border: 2px solid #5b3818 !important;
-    margin-left: -4px !important;
+    width: 170px !important;
     position: fixed !important;
 }
-.center {
-    background-color: #51443e !important;
+.col-md-2 {
+    flex: 0 0 0 !important;
 }
-table thead tr, table {
+.component.frame .wrapper, .component.table .table thead th {
     background-color: #412d23 !important;
 }
-table {
+.table td, .table th {
     border-color: #412d23 !important;
 }
-table tr.even {
+.component.table .table tbody {
     background-color: #aea29c !important;
 }
-table tr.odd {
+.component.table .table tbody tr:nth-of-type(2n+1) {
     background-color: #635853 !important;
 }
 .subtitle {
     color: #51443e !important;
 }
-.leftnav > ul > li > ul > li a:active, .leftnav > ul > li > ul > li a:link, .leftnav > ul > li > ul > li a:visited {
+.header-menu nav .main-menu .user-nav > a, .header-menu nav .main-menu ul li a, .header-menu nav .stats a, .footer ul li a {
+    color: #fff !important;
+}
+a {
     color: #7a391c !important;
 }
-.profile_account h2, .profile_menu ul li, .profile_username h1, .profile_username h2 {
+.show-profile .profile-account h2, .show-profile .navbar .nav-link, .show-profile .profile-name-and-estate .profile-username, .show-profile .profile-name-and-estate .profile-estate {
 	color: #5b3818 !important;
 }
-.leftnav > ul > li > ul > li a:hover, p a:active, p a:link, p a:visited, .milestone_text h2, ul li a:hover {
+a:hover {
 	color: #bf5e32 !important;
 }
 p a:hover {
     color: #472719 !important;
 }
-.profile_account, tbody {
+.show-profile .profile-account {
     background-color: #80716a !important;
 }
-.profile_menu, #bbmenu.user ul.slidedown li ul.slidedownmenu {
+.show-profile .navbar, .header-menu nav .main-menu .user-nav .dropdown-menu {
     background: #000 url("https://i.imgur.com/myRgOWs.png") center !important;
 	border-color: #5b3818 !important;
 }
-.profile_menu ul li:hover,#bbmenu.user ul.slidedown li:hover {
+.show-profile .navbar .nav-link:hover, .header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover {
 	background-color: #00000040 !important;
 }
-.avatar, #bbmenu.user ul.slidedown li ul.slidedownmenu li .ava {
+.show-profile .navbar-avatar .navbar-avatar-container {
 	border-color: #5b3818 !important;
 }
-.container {
-    background: #fff0 !important;
+}
+
+
+@-moz-document url-prefix("https://v2.horsereality.com/user/8917") {
+/*Marmite167*/
+.background {
+    background: #4a7a9b url("https://i.imgur.com/Lq5gLaT.png") no-repeat fixed 0 0/100% auto !important;
+    background-size: cover !important;
+}
+.header-menu, .footer, .show-profile .navbar {
+    background-color: #1d3457 !important;
+    border-bottom: 2px solid #0e203a !important;
+    border-top: 2px solid #0e203a !important;
+}
+.main-content {
+	background-color: #8aacb3 !important;
+    margin-left: 170px !important;
+}
+.side-nav::before {
+    Content: "© FlameCaro" !important;
+    color: #cacaca !important;
+    padding: 35px !important;
+    filter: drop-shadow(0 0 5px #fff) !important;
+}
+.side-nav {
+    background-color: #364663 !important;
+	border-radius: 0 0 90px 90px !important;
+    width: 170px !important;
+    position: fixed !important;
+}
+.col-md-2 {
+    flex: 0 0 0 !important;
+}
+.header-menu nav .main-menu .user-nav .dropdown-menu {
+    background: #364663 !important;
+    border: 2px solid #0e203a !important;
+}
+.header-menu nav .main-menu .user-nav > a, .header-menu nav .main-menu ul li a, .header-menu nav .stats a, .footer ul li a {
+    color: #fff !important;
+}
+.subtitle {
+    color: #8e8e8e !important;
+}
+.side-nav ul a, .show-profile .navbar .nav-link {
+    color: #cacaca !important;
+}
+p a:active, p a:link, p a:visited, a {
+    color: #537a82 !important;
+}
+.header-menu nav .main-menu .user-nav .dropdown-menu .dropdown-item:hover, a:hover, .side-nav ul a:hover {
+    color: #a7c2c8 !important;
+}
+.component.frame .wrapper, .component.table .table thead th {
+    background: #5b8189 !important;
+}
+.table td, .table th {
+    border-color: #5b8189 !important;
+}
+.component.table .table tbody {
+    background-color: #cde3e8 !important;
+}
+.component.table .table tbody tr:nth-of-type(2n+1) {
+    background-color: #8dabb1 !important;
+}
+.progress {
+    background-color: #ffffff7d !important;
+    border: 2px solid #3d5f66 !important;
+}
+.progress-bar {
+    background: -webkit-linear-gradient(top,#4581C9 0%,#164f90 100%) !important;
+}
+.show-profile .profile-account {
+    background-color: #abc7cd !important;
+}
+.show-profile .navbar .nav-link:hover {
+    background-color: #32486e !important;
+}
+.show-profile .navbar-avatar .navbar-avatar-container {
+    border-color: #0e203a !important;
 }
 }

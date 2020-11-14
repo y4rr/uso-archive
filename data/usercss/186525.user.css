@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Lemonager
 @description    `Стиль делает темную тему форума более тусклой и приятной для глаза. Все цвета подобраны очень хорошо и не отбивают желание пользоваться темой.`
-@version        2020912.12.45
+@version        20201113.16.29
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,6 +27,19 @@
     background: #22242b;
     color: #959fb4;
     transition: color .2s;
+}
+.CMTV_QT.button--solve {
+    background: #398239;
+}
+.block-minorTabHeader {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #7daccb;
+    background: #31333a;
+    border-bottom: 1px solid #505662;
+    font-size: 0;
 }
 .p-nav {
     color: #bdc6db;
@@ -234,10 +247,8 @@
     width: 100%;
     transition: all cubic-bezier(.4, 0, .2, 1) .15s;
     background: #22242b;
-    border-top: 1px solid #4d5460;
     padding: 5px;
     overflow: hidden;
-    border-radius: 0px;
 }
 .node--unread .node-icon i:before {
     opacity: 1;
@@ -612,7 +623,7 @@ a.button.button--link:focus {
     text-decoration: none;
     font-size: 1.6rem;
     color: #e0e6f0;
-    background: #22242b;
+    background: #1d1f25;
     border-bottom: 1px solid #3f424a;
 }
 .button.button--cta:hover,
@@ -1911,7 +1922,7 @@ ul[id^=select2-js-SVMultiPrefixUniqueId][id$=-results] li.select2-results__optio
     box-shadow: 0 0 10px #31333abd;
 }
 .menu-row.menu-row--clickable:hover {
-    background: #74777f;
+    background: #2d2f36;
     transition: all .2s ease;
 }
 .reaction--1 .reaction-text {
@@ -2188,7 +2199,7 @@ a.button:focus {
     border-left: 3px solid #414245;
 }
 .uix_logo {
-    content: url(https://i.imgur.com/hlBN2NA.png);
+    content: url("https://i.imgur.com/AQ7zAzV.png");
     max-height: calc(68px);
     transition: ease-in .1s max-height;
     max-width: 100%;
