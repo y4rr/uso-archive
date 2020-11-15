@@ -3,18 +3,18 @@
 @namespace      USO Archive
 @author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201112.8.38
+@version        20201115.9.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
-1 "Default*" <<<EOT https://i.postimg.cc/1mScS4XW/retrowave.png EOT;
+1 "Default*" <<<EOT https://i.ibb.co/d7j0KjB/retrowave.png EOT;
 2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
 
 	yadbgchanger-custom-dropdown "Custom" <<<EOT /*[[yadbgchanger-custom]]*\/ EOT;
 }
 @advanced text yadbgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
 @advanced dropdown araw "Sun" {
-1 "Default*" <<<EOT https://i.postimg.cc/J4gFh3TK/sunset.gif EOT;
+1 "Default*" <<<EOT https://i.ibb.co/rs1HkNp/wave.gif EOT;
 2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
 
 	araw-custom-dropdown "Custom" <<<EOT /*[[araw-custom]]*\/ EOT;
@@ -585,6 +585,12 @@ ytd-playlist-panel-renderer[hide-header-text] .header.ytd-playlist-panel-rendere
 /*info box on live*/
 #card.yt-live-chat-viewer-engagement-message-renderer {
     background-color: #6e418987;
+}
+
+ytd-clarification-renderer[background-style=info] {
+    padding: 12px 0 12px 0;
+    background: #8a0ec76b;
+    border: 1px solid #00fff730;
 }
 
 /********************************/

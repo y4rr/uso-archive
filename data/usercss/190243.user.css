@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         alex.mart
 @description    `Fork of https://userstyles.org/styles/150563/asana-darkness`
-@version        2020103.4.43
+@version        20201115.11.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -7253,4 +7253,14 @@ textarea {
 .FloatingCard.BaseCard {
     background: #2d2d2d;
 }
+
+.ProjectSpreadsheetAddTaskAndAggregationRow:hover .ProjectSpreadsheetAddTaskAndAggregationRow-stickyCell {
+    background-color: #303030;
+}
+
+.ProjectSpreadsheetAddTaskAndAggregationRow-stickyCell {
+    background-color: #212121;
+    border-top: 1px solid #303030;
+}
+
 }

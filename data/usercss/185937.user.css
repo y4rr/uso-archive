@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         huaao zang
 @description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（由于在学校，只能用笔记本进行编写，所以像素超过1366×768的大显示器无法进行检验，可能有一些显示问题）。`
-@version        20201112.14.50
+@version        20201115.6.16
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -167,10 +167,10 @@ body {
 ,#content_left>div:first-child
 ,#content_left .result-op,
 #rs,
-#op_wiseapp_td,
-.ec-pl-container,
-.hit_top_new,
-#content_left div:first-child[class$="_rs"]/*相关推荐*/
+#op_wiseapp_td
+,.ec-pl-container
+,.hit_top_new
+,#content_left>div:first-child[class$="_rs"]/*相关推荐*/
 ,.content_none
 ,.EC_ppim_new_gap_bottom/*广告*/
 ,#content_left .new-pmd/*广告*/
@@ -246,7 +246,7 @@ body {
     min-width:368px;
 }
 #content_right .c-result-content:hover
-,.new-pmd:hover
+,.cr-content:hover
 ,.ad-widget-header:hover
 ,.hint_right_middle:hover
 {

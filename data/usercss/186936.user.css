@@ -1,20 +1,20 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.5
+@name           Compact Tube (White) v1.3.6
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201113.23.34
+@version        20201115.10.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.5 */
+/* CompactTube (White) v1.3.6 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
 /*    ENG: here you can install a helper script to automatically hide the Left Menu(Guide Menu)
       RU: тут вы можете установить вспомогательный скрипт автоматически скрывающий Левое Меню(Гид Меню)
-        https://greasyfork.org/scripts/415761-hide-ytb-guide-menu                                          */
+        https://greasyfork.org/scripts/415761-hide-ytb-guide-menu   */
 
 
 /*█▀▀▀▀▀▀▀▀▀▀▀▀▀   включение ТЁМНОЙ ТЕМЫ для шапки  /  enabling DARK THEME for the Header   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
@@ -23,8 +23,8 @@
   █    RU: для Включения элементов сотрите символы " x " перед параметрами, для отключения снова допишите " x ".     █
   █                                                                                                                  █ */
                                                /* switch ON dark Header / включить тёмную Шапку */
- x   #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
- x   #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
+ x  #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
+ x  #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
         {background-color: #202020;          /* switch ON YouTube logo for dark Header / включить Логотип YouTube для тёмной шапки */
         box-shadow: inset 0px -2px 0px 0px 
         rgb(0, 0, 0); fill: #fff !important;}
@@ -34,6 +34,9 @@
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
+    /* Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
+    /* Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
+    ytd-feed-filter-chip-bar-renderer {display: flow;}
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
 ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID] #dismissable.ytd-compact-promoted-item-renderer {display: none;}
 /* убрать неотключаемые РАЗЪЯСНЕНИЯ YouTube о COVID-19 и тд. (под Видео): - "none" - убрать: "flow"- показать */
@@ -42,6 +45,8 @@ ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_G
 ytd-rich-section-renderer  {display: none;}
 /* убрать рекламный баннер YouTube - Премиум, Музыка и тд. : - "none" - убрать: "flow"- показать */ 
 ytd-banner-promo-renderer {display: none;}
+        /* убрать предложение "YouTube Premium" на вкладке с Видео (N) */
+        ytd-mealbar-promo-renderer {display: none}
 /* Убрать рекламный баннер предлагающий разные Товары "masthead-ad" : - "none" - убрать: "flow"- показать  */
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
 /* убрать партнёрскую рекламу на вкладке с Видео */
@@ -68,14 +73,14 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
 
-/* Отключить Рекламный оверлэй в плеере на Паузе */
+/* Отключить Рекламный оверлэй в плеере на Паузе (N) */
 .ytp-ad-overlay-container {display: none}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
-    "none" - Отключено, "flow" - Включено */
+    "none" - Отключить "flow" - Показать */
 .ytp-expand-pause-overlay .ytp-pause-overlay {display: none;}
 
-/* отключить окошко ЛайвЧат'а - под Видео:  "none" - Отключено, "flow" - Включено */
+/* отключить окошко ЛайвЧат'а - под Видео: - "none" - отключить: "flow"- показать */
 ytd-live-chat-frame {display: flow;}
 
 
@@ -1351,6 +1356,12 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 -o-.ytp-chrome-controls .ytp-play-button svg {display: flex; flex-direction: column; width: 100%; height: 2.961em; 
     -o-margin-top: -38px; /* for testing */ -o-background-color: #f73384; /* for testing */} /*другой вариант: width: 3.8em; height: 3em; */
 
+/* отступ Шестерёнкит в меню Колокольчика (исправление бага горизонтального скроллбара) /было замечено из за вмешательства Гугла/ */
+#buttons.ytd-simple-menu-header-renderer {margin-right: 8px;} /*24px,12px, 8px(def.) */
+    /* Размер Шестерёнки  в меню Колокольчика */
+    ytd-button-renderer.ytd-simple-menu-header-renderer.style-default.size-default {-o-pointer-events: auto; /*none*/
+    display: block; width: 100%;/*def.*/ /*v2. 40px*/    height: 100%;}/*def.*//*v2. 40px*/
+
 /* исправление бага с полем Поиска ДО наведения Мыши */
 #search-input.ytd-searchbox-spt input {
     background-color: transparent; border: none; box-shadow: none; color: inherit;
@@ -2567,6 +2578,50 @@ z-index: 18; pointer-events: none;}
 
 /* Толщина Спиннера (в Полном Экране) */
 .ytp-big-mode .ytp-spinner-circle {border-width: 8px;}
+
+/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  меню (Поделиться)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* Позицианирование Кнопок Промотки в меню (Поделиться) */
+#scroll-button-forward.yt-third-party-share-target-section-renderer  /* Правая */
+{right: -16px;} /*def. -14px*/
+#scroll-button-back.yt-third-party-share-target-section-renderer     /* Левая */
+{left: -16px;} /*def. -14px*/
+
+/* Кнопка (Поделиться - Активная) */
+.scroll-button.yt-third-party-share-target-section-renderer:hover {
+    margin-left: -14px;
+    margin-right: -14px;
+    width: 36px; /*40px;*/
+    height: 60px; /*40px;*/
+    top: 6px;
+    border-radius: 10%; /*50%;*/
+    background-color: var(--yt-dialog-background);
+    color: var(--yt-spec-icon-inactive);
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2),
+    inset 0px 0px 1px 1px rgba(227, 227, 227, .1);}
+
+/* Кнопка (Поделиться) */
+.scroll-button.yt-third-party-share-target-section-renderer {
+    margin-left: 2px;
+    margin-right: 2px;
+    position: absolute;
+    width: 20px; /*40px;*/
+    height: 60px; /*40px;*/
+    top: 6px; 
+    border-radius: 10%; 
+    background-color: var(--yt-dialog-background);
+    color: var(--yt-spec-icon-inactive);
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2), 
+    inset 0px 0px 1px 1px rgba(227, 227, 227, .1);}
+
+/* Стрелки Кнопки (Поделиться) - Позицианирование */
+.scroll-button-icon.yt-third-party-share-target-section-renderer {
+    width: 24px; height: 24px; margin: 0 0px 0 -2.0px;}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
