@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kostek00
 @description    `This is my version of dark theme for nyaa.si and it's subdomains. Before turning on theme change default theme to light because I turned off changing default themes as there are little differences (I think) generated dynamically which I can't point. Other than that 99% of light and dark default themes looks the same with this theme.`
-@version        201847.17.4
+@version        20201115.0.35
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     DeepDark Nyaa.si is on license "do whatever you want with this as long as you credit original author".
     Author: kostek00
     Mail: kostek000@o2.pl
-    Version: 1.0.6
+    Version: 1.0.7
 */
 
 @-moz-document domain("nyaa.si") {
@@ -348,6 +348,11 @@
     height: 1px;
     background: #000000;
   }
+
+  .comment-panel:target {
+      border-color: #7b80e5;
+      box-shadow: 0 0 5px rgba(123, 128, 228, 1.0) !important;
+  }
   
 /* Przyciski, pola tekstowe, pola rozwijane */
   
@@ -365,7 +370,8 @@
     border-radius: 0px !important;
   }
   
-  textarea#comment {
+  textarea#comment,
+  textarea[name="comment"] {
     background-color: #212121 !important;
   }
   
@@ -465,7 +471,9 @@
   }
   
   textarea#comment:hover,
-  textarea#comment:focus {
+  textarea#comment:focus,
+  textarea[name="comment"]:hover,
+  textarea[name="comment"]:focus {
     background-color: #262626 !important;
   }
   
@@ -614,5 +622,15 @@
   .btn-warning.active.focus {
     background-color: #279a2c !important;
     border: 1px solid #000000 !important;
+  }
+
+  .edit-comment {
+    background-color: #e6e6e6 !important;
+    color: #252525 !important;
+    border: 1px solid #000000 !important;
+  }
+  
+  .edit-comment:hover {
+    background-color: #ffffff !important;
   }
 }

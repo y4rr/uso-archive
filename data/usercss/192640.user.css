@@ -1,0 +1,139 @@
+/* ==UserStyle==
+@name           Binance Dark Theme for Dashboard & Wallets
+@namespace      USO Archive
+@author         Reza Rahemtola
+@description    `A simple Dark Theme for account dashboard and for Spot, Savings & Overview Wallets.`
+@version        20201114.22.43
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("binance.com") {
+/* Navigation left-bar & general background*/
+body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-view-responsive, .navigation .links-box .navigation-link:hover{ background-color: #202020 !important;}
+.css-3miali a div div{ color: #fff !important;}
+.css-3miali a{ background-color: #202020 !important; }
+
+
+/* Home page */
+.css-1tibs4k, .css-2dhtzt, .css-1nsyr0e, .css-suti8n, .css-26vijc{ background-color: #202020 !important;}
+.css-1sgz1lk, .css-g80xfv, .css-1i1yepl, .css-hd6rm5, .css-1lmrg27, .css-xtxu3e{ color: #fff !important;}
+.css-wmy69a{ background-color: #fff !important;}
+.css-waz29z{ color: #76808F !important;}
+
+
+/* Wallet Overview */
+.css-11ut0zx{ background-color: #111 !important;}
+.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h{ background-color: #202020 !important; }
+.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd{ color: #fff !important;}
+.css-k1w8nb{ border-radius: 0;}
+.css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
+
+
+/* Fiat and Spot Wallet */
+.css-1imiysb, .css-9cxewd, .css-1sqj6hg{ background-color: #202020 !important; }
+.css-1h9vsz4{ background-color: #111 !important; }
+.css-lultvz{ background-color: #fff !important;}
+.css-kfkjb4 {color: rgb(30, 32, 38) !important;}
+.css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp{ color: #fff !important;}
+.css-vurnku[data-type="table-td"], .css-vurnku[data-type="table-th"]{ background-color: #202020 !important;}
+.css-9cwl6c, .css-vurnku[data-type="table-td"]{ color: #76808F !important;}
+.css-16nd02l input, .css-gymlse{ color: #fff !important;}
+
+
+/* Futures Wallet */
+.css-j7k257, .css-uvpgix{ background-color: #202020 !important; }
+.css-1ysybs4{ background-color: #111 !important; }
+.css-uk3ga2, .css-1aw256g{ background-color: #fff !important;}
+.css-1fb5u29, .css-vt7aju, .css-3gv2y4, .css-1co500q, .css-qq32h9, .css-1vgh1xx, .css-1cjl26j{ color: #fff !important;}
+.css-d3ui9e:hover{ color: #76808F !important;}
+
+
+/* Savings Wallet */
+.css-1bwwatp, .css-1o5c6og, .css-1ow88ql, .css-h8vadw, .css-oda0l7, .css-jmlio4{ background-color: #202020 !important; }
+.css-h8vadw, .css-4sk89q{ border-color: #202020 !important;}
+.css-12kltb8, .css-1vmy8s8{ color: #fff !important;}
+.css-d3ui9e.active{ color: #fff !important;}
+.css-1yydi9k > div:hover{color: #fff;}
+.rc-table-content table thead tr th, .rc-table-content table tbody tr td{ background-color: #202020 !important;}
+.rc-table-cell{ color: #fff !important;}
+.css-jmlio4{
+    margin: 0 !important;
+    padding: 16px 0 0 !important;
+}
+
+
+/* Transaction History */
+.css-1higec{ background-color: #202020 !important; }
+.css-mjveij, .css-bjywr{ color: #fff !important;}
+.css-29mduf, .css-1r5j6bd{ color: #76808F !important;}
+
+
+/* Dashboard */
+.css-146q23, .css-1p01izn, .css-vt77s9, .css-1hgx5yb, .css-1x6vcjp{ background-color: #202020 !important; }
+.css-vk9wn5, .css-16y8rpw, .css-off8uh, .css-11bw57b, .css-1tvu0s4, .css-r03l5g, .css-r03l5g .css-vurnku, .css-1lehdpr .css-vurnku, .css-1uua3kq div, .css-1ylvtlm, .css-1m231ps, .css-2y5yw2, .css-12fp601, .css-1afj3g1{ color: #fff !important;}
+.css-1qbirax{ color: #76808F !important;}
+.css-jlbk6n{ background-color: #111 !important; }
+.css-1yla8hc, .css-6788qa{ background-color: #fff !important; }
+.css-1lehdpr{
+    background-color: #202020 !important;
+    color: #fff !important;
+}
+.css-htovjt, .css-mise1h:hover, .css-htovjt:hover, .css-1lpa3zn, .css-rg9rxe, .css-1p8ipjn, .css-vurnku{ color: #76808F; }
+
+
+/* Dashboard - Security */
+.css-1wi8tvl, .css-awrzy9, .css-1c69fbt, .css-vryha1, .css-1qwgc09, .css-1oeyuyq, .css-k65uhf { color: #fff !important;}
+.css-135q3b7, .css-1apclb2, .css-1jy37ns{ background-color: #202020 !important;}
+.css-1xnx1oh{ background-color: #111 !important;}
+
+
+/* Dashboard - Reward Center */
+.css-1sstzk2{ background-color: #111 !important;}
+.css-ekwbtp, .css-g6j1vn{ background-color: #202020 !important;}
+.css-15efkfa, .css-ky6tk2{ color: #fff !important;}
+.css-et53cw{ background-color: #fff !important;}
+
+
+/* Dashboard - Task Center */
+.css-1lai5m9{ background-color: #111 !important;}
+.css-1kdg3b5, .css-1g2yafe{ background-color: #202020 !important;}
+.css-s0kp61{ color: #fff !important;}
+
+
+/* Dashboard - Profile */
+.css-j0weei, .css-tmp4w8, .css-1x5vd11{ color: #fff !important;}
+.css-1drn95o, .css-1g06a7l{ background-color: #fff !important;}
+.css-1uoge8i, .css-1lohbqv, .css-1llevpm{ color: #76808F !important;}
+
+
+/* Dashboard - Preferences */
+.css-169i5k4, .css-12p1m2i, .css-51w3tl{ color: #fff !important;}
+.css-1f3bwjf{ background-color: #111 !important;}
+.css-1s2nkre, .css-htaj6q{ background-color: #202020 !important;}
+.css-8yjbqc{ background-color: #fff !important;}
+
+
+/* Binance Earn */
+.css-59n2p1{ background-color: #202020 !important;}
+
+
+/* Binance Earn - Lending */
+.css-q9a5yv{ color: rgb(240, 185, 11);}
+.css-snz0yf input{ color: #fff !important;}
+
+
+/* Binance Earn - Launchpool */
+.css-1ij3lmk, .css-bq761l{ background-color: #202020 !important;}
+.css-15l1x66.active, .css-15l1x66:hover{ color: #76808F !important;}
+.css-198m73a, .css-1xcp7zo, .css-1vhg0hi, .css-1qftruh, .css-1g3naee{ color: #fff !important;}
+.css-ptt0ou{
+    border: none;
+    box-shadow: none;
+}
+
+
+/* Finance - Crypto Loans */
+.css-gdhe4w .form-con, .css-gdhe4w .form-con .why{ background-color: #202020 !important;}
+.css-gdhe4w .form-con .why .items .item{ background-color: #fff !important;}
+.css-gdhe4w .lead-in span, .css-gdhe4w .form-con .why .title{ color: #fff !important;}
+}

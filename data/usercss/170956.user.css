@@ -1,18 +1,16 @@
 /* ==UserStyle==
-@name           Stream - Tolbek + Clones Widescreen v.14
+@name           Stream - Tolbek + Clones Widescreen v.16
 @namespace      USO Archive
 @author         decembre
 @description    `For Large screen:Use all the windows size for less scrolling....Now with a Dark flavour ...It's for TOBLEK-like variants site...Original site:Tolbek (CLOSED 06.2020): http://toblek.com/toblekk/`
-@version        2020924.20.11
+@version        20201114.14.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
+@-moz-document domain("toblek.com"), domain("galtro.com"), domain("wobno.com"), domain("yisera.com"), domain("limpod.com"), domain("tamdor.com"), domain("bofiaz.com"), domain("radego.com"), domain("trozam.com"), domain("abiov.com"), domain("crebya.com"), domain("ivmox.com"), domain("botidou.com"), domain("urmoon.com"), domain("datzio.com"), domain("rawdid.com"), domain("bonoov.com"), domain("zetmir.com"), domain("xoperi.com"), domain("yisera.com"), domain("jomvu.com"), domain("diagrim.com"), domain("nirbom.com"), domain("remenz.com"), domain("filriv.com"), domain("gopzay.com"), domain("fervap.com"), domain("eyobim.com"), domain("jexoom.com"), domain("rodroz.com"), domain("xepam.com"), domain("motezi.com"), domain("peralga.com"), domain("nimvon.com"), domain("treyim.com"), domain("wanveo.com"), domain("kanmav.com"), domain("sajbo.com"), domain("xitof.com"), domain("vavozi.com"), domain("mindooz.com"), domain("afzor.com"), domain("bipvo.com"), domain("sowdrip.com"), domain("yapeol.com"), domain("nidoron.com"), domain("apolma.com"), domain("irumax.com"), domain("dolbri.com"), domain("mirvoy.com"), domain("parmiv.com"), domain("kapmop.com"), domain("vitmox.com"), domain("binmir.com"), domain("dirmox.com"), domain("irdoz.com"), domain("avtod.com"), domain("zinbax.com"), domain("treyim.com"), domain("sajbo.com"), domain("komiav.com"), domain("lozicon.com"), domain("tiwzen.com"), domain("xevdaz.com"), domain("zadiro.com"), domain("uquaz.com"), domain("lakmoa.com"), domain("yeswani.com"), domain("moyeor.com"), domain("trobway.com"), domain("pifdi.com"), domain("barlox.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com") {
 
-@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document domain("toblek.com"), domain("galtro.com"), domain("wobno.com"), domain("yisera.com"), domain("limpod.com") ,domain("tamdor.com") , domain("bofiaz.com"), domain("radego.com"), domain("trozam.com"), domain("abiov.com"), domain("crebya.com"), domain("ivmox.com"), domain("botidou.com"), domain("urmoon.com"), domain("datzio.com"),domain("rawdid.com"),domain("bonoov.com"),domain("zetmir.com"), domain("xoperi.com"), domain("yisera.com"), domain("jomvu.com"), domain("diagrim.com"), domain("nirbom.com"), domain("remenz.com"), domain("filriv.com"), domain("gopzay.com"), domain("fervap.com"), domain("eyobim.com"), domain("jexoom.com"), domain("rodroz.com"), domain("xepam.com"), domain("motezi.com"), domain("peralga.com"), domain("nimvon.com"), domain("treyim.com"), domain("wanveo.com"), domain("kanmav.com"), domain("sajbo.com"), domain("xitof.com"), domain("vavozi.com"), domain("mindooz.com"), domain("afzor.com"), domain("bipvo.com"), domain("sowdrip.com"), domain("yapeol.com"), domain("nidoron.com"), domain("apolma.com"), domain("irumax.com"), domain("dolbri.com"), domain("mirvoy.com"), domain("parmiv.com"), domain("kapmop.com"), domain("vitmox.com"), domain("binmir.com"), domain("dirmox.com"), domain("irdoz.com"), domain("avtod.com"), domain("zinbax.com"), domain("treyim.com"), domain("sajbo.com"), domain("komiav.com"), domain("lozicon.com"), domain("tiwzen.com"), domain("xevdaz.com"), domain("zadiro.com"), domain("uquaz.com"), domain("lakmoa.com"), domain("yeswani.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com"), domain("yisera.com")     {
-
-/* 0- Stream - Tolbek + Clones Widescreen v.13  ==== */
+/* 0- Stream - Tolbek + Clones Widescreen v.14  ==== */
+/* AFZOR IFRAM - , domain("50.7.179.149"), url-prefix("http://50.7.179.147/") */
 /* MOVED TO/CLOSED : TOLBEk, Trozam, Abiov, Bonoov, Peralga, Getimov, Diagrim, Wobono
 
 === */
@@ -36,6 +34,10 @@ yisera: http://yisera.com/qs31mloi4u70v21cx8g7/
 
 
 /* (new12) SUPP */
+.vjs-text-track-display , 
+.vjs-user-inactive .vjs-big-play-button ,
+.afs_ads ,
+body>center link[href^="https://fonts.googleapis.com/"] + a ,
 #ja-footer ,
 .ja-box-ct.clearfix>div>center ,
 .ja-box-ct.clearfix>center ,
@@ -202,7 +204,6 @@ position: absolute !important;
 display: inline-block !important;
 float: none !important;
     height: 31px !important;
-    padding-top: 0;
     top: 0;
     width: 100px !important;
     padding: 0 !important;
@@ -385,7 +386,6 @@ position: absolute !important;
 display: inline-block !important;
 float: none !important;
     height: 31px !important;
-    padding-top: 0;
     top: 0;
     width: 200px !important;
     padding: 0 !important;
@@ -505,8 +505,14 @@ overflow: hidden !important;
     width: 95%!important;
 }
 
+/* (new14) LIST CONTAINER - AKK */
+.contentpane>tbody>tr:nth-child(2) td  #akk {
+    width: 100% !important;
+}
 
-/* (new6) */
+/* (new14)HANN /  DRFGDTHYTR/ FRE / PILOT / BOSSS / AKK */
+#akk span ,
+#bosss p span ,
 #pilot>p>span ,
 #fre>p>span ,
 #drftgdthytr>p>span ,
@@ -518,7 +524,9 @@ border: 1px solid gray !important;
 border-radius: 5px !important;
 margin: 5px 2px 2px 0px !important;
 }
-/* (new6) TOLBEK - FILMS LIST - ITEM*/
+/* (new14) TOLBEK and JEXOOM ...- FILMS LIST - ITEM*/
+#polo p span ,
+#akik p span ,
 .column1 #hann  {
     width: 32.8% !important;
     display: inline-block !important;
@@ -659,9 +667,9 @@ border: 1px solid red !important;
 .column1>p>iframe{
     position: absolute;
     display: inline-block;
-    width: 656px;
+    width: 661px;
     top: 214px;
-    left: 375px;
+    left: 380px;
     z-index: 5000;
     border: 1px solid violet;
 background-color: #333 !important;
@@ -681,6 +689,12 @@ padding: 0px !important;
 background-color: #333 !important;
 border: 1px solid yellow !important;
 }
+
+
+
+
+
+
 /* (new12) */
 #navWrapEND4 + br + br ,
 #navWrapEND4 + br ,
@@ -696,6 +710,7 @@ border: 1px solid yellow !important;
     height: 10px !important;
     margin-top: 5px !important;
 }
+/* (new14) */
 .column1 > center:first-of-type > b {
     display: inline-block;
     position: absolute;
@@ -709,7 +724,21 @@ border: 1px solid yellow !important;
     border-top: 1px solid #818181;
     background-color: #222 !important;
 }
-
+.column1>div[style*="background: linear-gradient"] {
+    position: absolute !important;
+    width: 106px !important;
+    top: 36px !important;
+    margin-top: 0 !important;
+    padding: 7px;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+background: rgba(0, 0, 0, 0) linear-gradient(to right, #38638b, #a6afa3) repeat scroll 0 0;
+border: 1px solid #20557c;
+}
+.column1>div[style*="background: linear-gradient"]:hover {
+/* width: 1016px; */
+    width: auto !important;
+}
 
 .article-content>p:first-of-type ~ p > span {
     display: inline-block !important;
@@ -1122,9 +1151,10 @@ div.ja-box-tl {
     padding: 3px;
     width: 25% !important;
 }
+/* (new14) */
 .column1>p>img {
   max-height: 455px !important;
-  width: auto !important;
+/* width: auto !important; */
 }
 
 
@@ -1340,19 +1370,102 @@ color: white !important;
 }
 
 
-/* (new12) GALTRO POST COMMENT - PB some videos BINIR*/
+/* (new14) GALTRO POST COMMENT - PB some videos BINIR*/
 .column1>iframe:last-of-type  {
-/* display: inline-block !important; */
-float: right!important;
-clear: none !important;
+display: inline-block !important;
+position: absolute !important;
+/* float: right!important; */
+/* clear: none !important; */
+min-height: 33px !important;
+max-height: 33px !important;
     width: 412px !important;
-    height: 183px !important;
-margin-right: 10px !important;
-    margin-top: -120px !important;
+/* margin-right: 10px !important; */
+/*     margin-top: 100px !important; */
+    right: 460px !important;
+    top: 503px !important;
 padding: 3px !important;
+overflow: hidden !important;
 opacity: 0.5 !important;
+z-index: 5000 !important;
 border: 1px solid red !important;
 }
+.column1 > p:first-of-type ~ p[style^="text-align: center"] + p[style^="text-align: left;"] + iframe ~ iframe:hover ,
+.column1>iframe:last-of-type:hover  {
+display: inline-block !important;
+position: absolute !important;
+/* float: right!important; */
+/* clear: none !important; */
+min-height: 33px !important;
+max-height: 33px !important;
+    width: 412px !important;
+    min-height: 193px !important;
+    max-height: 193px !important;
+/* margin-right: 10px !important; */
+/*     margin-top: 100px !important; */
+    right: 460px !important;
+    top: 503px !important;
+    top: 340px !important;
+padding: 3px !important;
+overflow: hidden !important;
+opacity: 0.5 !important;
+z-index: 5000 !important;
+border: 1px solid red !important;
+}
+
+.column1 > p:first-of-type ~ p[style^="text-align: center"] + p[style^="text-align: left;"] + iframe ~ iframe {
+display: inline-block !important;
+position: absolute !important;
+/* float: right!important; */
+/* clear: none !important; */
+min-height: 33px !important;
+max-height: 33px !important;
+    width: 412px !important;
+/* margin-right: 10px !important; */
+/*     margin-top: 100px !important; */
+    right: 460px !important;
+    top: 993px !important;
+padding: 3px !important;
+overflow: hidden !important;
+opacity: 0.5 !important;
+z-index: 5000 !important;
+border: 1px solid blue !important;
+}
+.column1 > p:first-of-type ~ p[style^="text-align: center"] + p[style^="text-align: left;"] + iframe ~ iframe:hover   {
+display: inline-block !important;
+position: absolute !important;
+/* float: right!important; */
+/* clear: none !important; */
+min-height: 33px !important;
+max-height: 33px !important;
+    width: 412px !important;
+    min-height: 193px !important;
+    max-height: 193px !important;
+/* margin-right: 10px !important; */
+/*     margin-top: 100px !important; */
+/*     right: 460px !important; */
+    top: 831px !important;
+/*     top: 340px !important; */
+padding: 3px !important;
+overflow: hidden !important;
+opacity: 1 !important;
+z-index: 5000 !important;
+background: black !important;
+border: 1px solid blue !important;
+}
+.column1 > p:first-of-type ~ p[style^="text-align: center"] + p[style^="text-align: left;"] + iframe ~ [id^="critique"] {
+    display: inline-block;
+    clear: none;
+    float: right !important;
+    height: 80px;
+    width: 202px;
+    margin: -110px 3px 35px 5px !important;
+    padding: 0;
+    opacity: 0.5;
+    overflow-x: hidden;
+    overflow-y: auto;
+border: 1px solid blue !important;
+}
+
 .column1>iframe ~ iframe[name="myiFrame"]  {
     margin-top: -487px !important;
 border: 1px solid yellow !important;
@@ -1629,8 +1742,8 @@ body#bd.fs3.FF #ja-container.wrap.ja-r1 .main.clearfix  {
 .contentpaneopen>tbody>tr>td>p:first-of-type>img {
     width: 249px;
 }
-
-body#bd.fs3.FF .ja-content-main.clearfix>div:not(#pilot) {
+/* (new14) PILOT / POLO / BISS */
+body#bd.fs3.FF .ja-content-main.clearfix>div:not(#pilot):not(#polo):not(#biss) {
     position: relative;
     width: 26% !important;
     float: right !important;
@@ -1646,10 +1759,27 @@ body#bd.fs3.FF .ja-content-main.clearfix>div:not(#pilot) {
     border-radius: 4px;
     border-style: solid;
     border-width: 2px;
-overflow: visible !important;
-
+    overflow: visible !important;
     background-color: #e2e2e2;
 }
+/* (new14) POLO / BISS */
+body#bd.fs3.FF .ja-content-main.clearfix>div#biss  ,
+body#bd.fs3.FF .ja-content-main.clearfix>div#polo {
+    padding: 0px !important;
+    width: 100% !important;
+}
+body#bd.fs3.FF .ja-content-main.clearfix>div#biss + div[style="position:relative; top:-30px"]  ,
+body#bd.fs3.FF .ja-content-main.clearfix>div#polo + div[style="position:relative; top:-30px"] {
+    display: inline-block !important;
+    float: none !important;
+    min-width: 80% !important;
+    max-height: 40px !important;
+    top: 0 !important;
+right: 0 !important;
+left: -200px !important;
+/* background: red !important; */
+}
+
 body#bd.fs3.FF #ja-main .inner {
     padding: 0;
     width: 100% !important;
@@ -1789,6 +1919,52 @@ body#bd.fs3.FF .ja-content-main.clearfix > div:not(#pilot)#page{
 body#bd.fs3.FF .ja-navhelper.wrap{
     display: none !important;
 }
+/* START - URL PREF - AFZOR (iframe ) ==== */
+.jwplayer.jw-flag-aspect-mode {
+    height: auto;
+    max-width: 548px !important;
+}
+#myElement.jwplayer.jw-reset{
+    width: 85% !important;
+border: 1px solid blue !important;
+}
 /* ==== END ==== */
+}
 
+@-moz-document url-prefix("http://50.7.179.147/") {
+/* START - URL PREF - AFZOR (iframe )url-prefix("http://50.7.179.147/") ==== */
+/* http://168.119.116.79/ */
+/* https://p2phlsplus.vanlong.stream/ */
+.jwplayer.jw-flag-aspect-mode {
+    height: auto;
+    max-width: 548px;
+}
+#myElement.jwplayer.jw-reset{
+    width: 85% !important;
+border: 1px solid red !important;
+}
+/* (new14) SUPP */
+.vjs-text-track-display ,
+.vjs-user-inactive .vjs-big-play-button {
+    display: none !important;
+    z-index: -2147483647 !important;
+visibility: hidden !important;
+opacity: 0 !important;
+}
+.videoe-dimensions {
+    height: 100% !important;
+    width: 100%;
+}
+/* END URL PREF - AFZOR (iframe )url-prefix("http://50.7.179.147/") === */
+}
+/* START URL PREF - AFZOR (iframe )domain("50.7.179.149") === */
+@-moz-document domain("50.7.179.149") {
+.vjs-text-track-display ,
+.vjs-user-inactive .vjs-big-play-button {
+    display: none !important;
+    z-index: -2147483647 !important;
+visibility: hidden !important;
+opacity: 0 !important;
+}
+/* END URL PREF - AFZOR (iframe )domain("50.7.179.149") === */
 }

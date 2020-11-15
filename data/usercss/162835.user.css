@@ -3,11 +3,13 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201110.2.39
+@version        20201114.13.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar,
 ::-webkit-scrollbar
  {
  	/* Width */
@@ -15,6 +17,8 @@
  }
 
  /* Color of handle ___________________________________________________________________________*/
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-thumb,
  ::-webkit-scrollbar-thumb
  {
  	background: #580303!important;
@@ -33,6 +37,8 @@
  }
 
  /* Color of Track ______________________________________________________________________________*/
+
+.html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-track,
  ::-webkit-scrollbar-track
  {
  	background: #170000!important;
@@ -41,6 +47,7 @@
  }
 
  /* Color of handles at top and bottom ___________________________________________________________*/
+
  ::-webkit-scrollbar-button
  {
  	background: #4c0707!important;
@@ -54,6 +61,7 @@
  }
 
  /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
  ::-webkit-scrollbar-corner
  {
  	background: #530205!important;
@@ -120,6 +128,7 @@ ytu-two-column-browse-results
 
 /*___ Fonts ________________________________________________________________________*/
 
+.ytp-videowall-still-info-title,
 #content-text.ytd-comment-renderer,
 #description-text.ytd-video-renderer,
 #description.ytd-playlist-sidebar-primary-info-renderer,
@@ -130,6 +139,7 @@ ytu-two-column-browse-results
 	font-size: 19px!important;
 }
 
+.ytp-videowall-still-info-author,
 .secondary-text.ytu-home-item,
 yt-tooltip-renderer
  {
@@ -153,6 +163,7 @@ yt-tooltip-renderer
 
 /*___ Remove Items _________________________________________________________________*/
 
+#masthead-ad.ytd-rich-grid-renderer,
 #scroll-container.ytd-feed-filter-chip-bar-renderer:after,
 yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
  {
@@ -226,6 +237,7 @@ ytd-playlist-panel-video-renderer {
 
 /*___ Heights ______________________________________________________________________*/
 
+.ytp-videowall-still-info-title,
 #description-text.ytd-video-renderer,
 ytd-expander[collapsed] > #content.ytd-expander
  {
@@ -502,6 +514,17 @@ pre ::selection {
     color: #fffcfc!important;
 	text-shadow: 1px 1px #000!important;
 }
+
+.sbpqs_a {
+    color: #dcc7f1;
+}
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("youtube.com") {
@@ -516,6 +539,10 @@ html {
 
 .fade-left-gradient.ytu-chip-list {
 	background-image: none;
+}
+
+.ytp-videowall-still-info-content {
+    background-image: linear-gradient(to bottom,rgb(12 12 12) 0,#0000005e 200px);
 }
 
 /*___ Background Gray ______________________________________________________________*/
@@ -772,6 +799,7 @@ ytd-playlist-video-renderer:hover
 @-moz-document domain("youtube.com") {
 /*__________________________________________________________________________________*/
 
+.ytp-show-tiles .ytp-videowall-still,
 .items.ytu-grid > *.ytu-grid,
 .items.ytu-vertical-list > *.ytu-vertical-list,
 .large-items.ytu-horizontal-list > *.ytu-horizontal-list,
@@ -798,6 +826,7 @@ ytu-chip
 
 /*__________________________________________________________________________________*/
 
+.ytp-show-tiles .ytp-videowall-still:hover,
 .items.ytu-grid > *.ytu-grid:hover,
 .items.ytu-vertical-list > *.ytu-vertical-list:hover,
 .large-items.ytu-horizontal-list > *.ytu-horizontal-list:hover,
@@ -837,7 +866,6 @@ img
  {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
-
 }
 
 @-moz-document domain("youtube.com") {

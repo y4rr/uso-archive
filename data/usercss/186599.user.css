@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         chen_zhe_
 @description    `洛谷圆角化 by _•́へ•́╬_ uid=90693`
-@version        20201114.4.25
+@version        20201114.14.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -44,14 +44,31 @@ a[data-v-3e5191a6]:hover
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 1px 2px #5e5e5e;
 }
+.popup[data-v-1d675dd8]
+{
+	border-radius: 15px;
+}
+div[data-v-04eab0ae]
+{
+	margin-bottom: 4px;
+}
 button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae]
-{border-radius: 25px;}
+{
+	border-radius: 25px;
+}
 .text[data-v-6b0e15fa],.text[data-v-f856cd74],.dropdown-wrap[data-v-6b0e15fa],.progress-frame[data-v-47712372],.center[data-v-7f3d8833],.am-viewport,.am-btn,.selected,span[data-v-20b7d558],.marked[data-v-5a58a989] pre,pre[data-v-52f2d52f],.items>li[data-v-8feadc5c]
-{border-radius: 15px;}
+{
+	border-radius: 15px;
+}
 .user-nav[data-v-52820d90]
 {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+.solution-article > .operations.float[data-v-677ffeda]
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .lg-article
 {
