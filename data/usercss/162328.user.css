@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryan Barnes
 @description    `Use this style to blur a tab when it loses mouse focus.Good for stopping people from reading over your shoulder`
-@version        202025.7.2
+@version        20201115.22.35
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced text blur "Blur Amount (Number)" "5"
@@ -22,11 +22,11 @@ anoff "Off" <<<EOT /*None*\/ EOT;
 @author         Ryan Barnes
 ==/UserStyle== */
 @-moz-document regexp(".+blur_tab=true.*") {
-    body > div#u_0_0 {
+    body > div {
         filter: blur(/*[[blur]]*/px) grayscale(100%) brightness(50%);
         /*[[anon-anoff]]*/
     }
-    body > div#u_0_0:hover {
+    body > div:hover {
         filter: none;
     }
 }
