@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         airflame
 @description    `Poprawiono widoczność zamówień od kupujących przez dodanie kolorów jak i zmianę pozycji końcowej ceny. Dodano tez podświetlenie gdy ktoś wpisze wiadomość do sprzedającego.`
-@version        20201113.12.22
+@version        20201116.10.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -54,6 +54,10 @@
 
 .sellerNote-icon .iohzf {
     filter: invert(14%) sepia(89%) saturate(6818%) hue-rotate(1deg) brightness(105%) contrast(102%);
+}
+
+[data-box-name="allegro.orders.listing"] ._9f0v0._1lv8p._9ajk9._1ruda._1q176:nth-child(odd) {
+    background:#eaeaea;
 }
 
 @media screen and (min-width: 1248px) {

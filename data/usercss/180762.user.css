@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         iwyvi
 @description    `Google column card search. Remove some ads and the right panel.谷歌多栏卡片搜索，移走了右侧信息框以及部分广告。带有响应式，不同宽度具有不同的栏数，建议三栏以上设置每页显示20条结果。`
-@version        2020820.9.43
+@version        20201116.8.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,20 +45,17 @@
 .vk_c {
   width: auto !important;
 }
-.srg {
-  column-gap: 2em;
-}
 .g,
 .ts {
   display: inline-block;
   width: 100%;
-  margin-top: 5px;
   padding: 15px 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
   box-sizing: border-box;
+  transform: translateZ(0);
 }
 .ts {
   padding: 20px;
@@ -93,9 +90,9 @@ div.AEprdc.vk_c {
   font-size: 4.5em;
   position: absolute;
   text-align: right;
-  width: 96%;
   line-height: 1em;
   top: 6px;
+  right: 6px;
 }
 .g .s {
   max-width: max-content;
@@ -107,6 +104,9 @@ div.AEprdc.vk_c {
 }
 .g table .s .st {
   width: auto !important;
+}
+.g table .mslg .sld {
+  width: auto;
 }
 .QV1uNc {
   margin: 0;
@@ -174,25 +174,33 @@ g-section-with-header h3 {
     position: static;
   }
 }
-.srg > div, #rso > div {
+.srg > div,
+#rso > div {
   break-inside: avoid;
 }
+.srg,
+#rso {
+  column-gap: 20px;
+}
 @media (min-width: 1201px) and (max-width: 1700px) {
-  .srg, #rso {
+  .srg,
+  #rso {
     column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
   }
 }
 @media (min-width: 1701px) and (max-width: 2200px) {
-  .srg, #rso {
+  .srg,
+  #rso {
     column-count: 3;
     -moz-column-count: 3;
     -webkit-column-count: 3;
   }
 }
 @media (min-width: 2201px) {
-  .srg, #rso {
+  .srg,
+  #rso {
     column-count: 4;
     -moz-column-count: 4;
     -webkit-column-count: 4;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201116.0.22
+@version        20201116.2.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -2831,7 +2831,7 @@ p a,
 strong a,
 span a,
 tbody a,
-/*4chan*/div#absbot a:not(:hover),#arc-list .quotelink,
+/*4chan*/div#absbot a:not(:hover),a#globalToggle.button.redButton.mobile.hidden,
 #header a.login-required.login-link,
 #header .user > .login-required,
 #side-mod-list.summarized a,
@@ -2913,7 +2913,7 @@ h5 a:hover,
 h6 a:hover,
 p a:hover,
 tbody a:hover,
-/*4chan*/#arc-list .quotelink:hover,
+/*4chan*/#arc-list .quotelink:hover,a#globalToggle.button.redButton.mobile.hidden:hover,
 #header a.login-required.login-link:hover,
 #header .user > .login-required:hover,
 #hiddensubs li a:hover,
@@ -2970,21 +2970,15 @@ a ._12FoOEddL7j_RgMQN0SNeU:hover
 div.res-filterline div.res-filterline-filters div.res-filterline-filter:hover,
 /*RES Filter Dropdown*/
 .res-filterline-dropdown details.res-filterline-external summary:hover,
-
 .res-filterline-dropdown details.res-filterline-new-basic summary:hover,
 .res-filterline-dropdown-action.res-filterline-filter-new:hover,
-
 .res-filterline-dropdown details.res-filterline-new-group summary:hover,
 .res-filterline-dropdown details.res-filterline-new-group-filter:hover,
-
 .res-filterline-dropdown details.res-filterline-set-default summary:hover,
 .res-filterline-dropdown .res-filterline-dropdown-action:hover,
-
 .res-filterline-dropdown div.res-filterline-dropdown-toggles:hover,
 .res-filterline-dropdown div.res-filterline-dropdown-toggles label:hover,
-
 .res-filterline-dropdown div.res-filterline-show-help:hover,
-
 /*RES Filter Help Dialog*/
 .guiders_content p.guiders_description div table tbody tr td a:hover,
 /*RES Filter Dropdown - End*/
@@ -3160,7 +3154,7 @@ body .content .thing .title.loggedin:visited,
 
 /* ------------ On-Click Brightness Reduction ------------ */
 
-/*4chan*/#arc-list .quotelink:active, .burichan_new .backlink a:active, .yotsuba_b_new .backlink a:active,
+/*4chan*/#arc-list .quotelink:active, .burichan_new .backlink a:active, .yotsuba_b_new .backlink a:active, a#globalToggle.button.redButton.mobile.hidden:active,
 div#header-bottom-right span.user a.login-required.login-link:active,
 #header .user > .login-required:active,
 #header-bottom-right ul.flat-list.hover li a.pref-lang.choice:active,
@@ -7543,6 +7537,7 @@ input.res-filterline-toggle-powered::after:hover
 }
 
 
+
 /*Pre-load Grids*/
 /*Thumbnail*/._1F-hYShaC9dYxEEe3_TCGR,
 /*Text*/._YedzkdLjjcYoXUE26Cyb,
@@ -8076,6 +8071,7 @@ ytp-bottom:hover,
 .choice:hover,
 .css_button:hover,
 .CwaK9:hover,
+.dd-menu li,
 .dismiss:hover,
 .dropdown.srdrop .selected,
 .entry .buttons li a,
@@ -8323,6 +8319,7 @@ ytp-bottom:active,
 .choice:active,
 .css_button:active,
 .CwaK9:active,
+.dd-menu li:active,
 .dismiss:active,
 .dropdown.srdrop .selected:active,
 .entry .buttons li a:active,

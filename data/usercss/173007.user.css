@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `臉書樣式 - 測試 test test test ~`
-@version        20201113.7.1
+@version        20201116.3.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,6 +30,8 @@ IMG[width="180"][style="float:right;margin:0px -20px 0px 20px;"][src="http://dev
 
 
 
+
+
 SPAN[class="userContent"], DIV[class="mbs _5pbx userContent"] {color: #FFFACD !important; font-family: "微軟正黑體" !important; font-size: 17px !important; letter-spacing: 0.15em !important; line-height: 1.25em !important;}
 
 /*#####--- 網址超連結顏色 ---#####*/
@@ -43,7 +45,7 @@ a:visited {color: #90EE90 !important;}
     background: #000000;}
 
 /*#####--- 隱藏facebook彈跳出登入方框 ---#####*/
-DIV[id="headerArea"] {display: none !important;}
+DIV[id="headerArea"],DIV[class="_3-8y"] {display: none !important;}
 
 
 }

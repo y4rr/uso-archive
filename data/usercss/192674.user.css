@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         xdcedar
 @description    `更好看更好用的Bilibili收藏夹`
-@version        20201115.10.1
+@version        20201116.7.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,18 +23,18 @@
 #page-fav .fav-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-}
-/* 用伪元素防止最后一行的元素排到两侧去 */
-#page-fav .fav-list::after {
-    content: '';
-    flex: auto;
+    justify-content: flex-start;
 }
 /* 收藏夹项目 内部同样是flex布局 */
 #page-fav .fav-item {
     width: 23%;
     display: flex;
     align-items: center;
+}
+/* 用伪元素防止最后一行的元素排到两侧去, 只适合flex-start之类的元素偏一侧的flexbox布局 */
+#page-fav .fav-list::after {
+    content: '';
+    flex: auto;
 }
 
 /* 收藏夹文字宽度. 只涉及视频收藏夹(.fav-container), 不涉及专项收藏夹(即话题收藏夹 专栏收藏夹etc)(.playlist-container) */
@@ -71,31 +71,33 @@
 /* ====== 视频收藏界面 ====== */
 /* 收藏弹窗宽度 (设置为与窗口宽度有关) */
 .collection-m {
-    width: 70vw;
+    width: 950px;
 }
-/* 收藏弹窗中收藏列表的高度 (暂时不用改) */
+/* 收藏弹窗中收藏列表的高度 (暂时不用改, 原效果是通过设置margin-bottom实现的) */
 /* .collection-m .content {
-    height: 70vh;
 } */
 
 /* 收藏列表. 采用flex布局 */
 .collection-m .content .group-list ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-}
-/* 用伪元素防止最后一行的元素排到两侧去 */
-.collection-m .content .group-list ul::after {
-    content: '';
-    flex: auto;
+    justify-content: space-between;
+    row-gap: 2px;
 }
 /* 收藏夹列表项 */
 .collection-m .content .group-list li {
-    width: 270px;
+    width: 30%;
     height: 25px;
-    padding: 3px 9px;
-    border-right: 1px dotted #cccccc80;
-    border-bottom: 1px dotted #cccccc40;
+    padding: 3px 10px;
+}
+/* 用伪元素防止最后一行的元素排到两侧去
+   这种做法只适合三列的space-between形式的flexbox布局,
+   缺点是如果元素个数恰好是3的倍数, 那最终下方会多出一个伪元素
+   (可是局限性这么大的话我为什么不用grid??) */
+.collection-m .content .group-list ul::after {
+    content: '';
+    width: 30%;
+    padding: 0 10px;
 }
 /* 收藏夹项目 内部同样是flex布局 */
 .collection-m .content .group-list li label {
@@ -107,7 +109,7 @@
     margin-right: 5px;
     min-width: 20px;
 }
-/* 收藏夹标题最大长度, 其实它的长度已经由其它元素决定了 */
+/* 收藏夹标题最大长度, 其实它的最大长度是由其它元素动态决定的 */
 /* .collection-m .content .group-list li .fav-title {
     max-width: 150px;
 } */

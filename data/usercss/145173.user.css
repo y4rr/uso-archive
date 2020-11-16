@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           webmailer 7.10.1 - dunkel - ox.hosteurope.de.
+@name           webmailer 7.10.4-Rev1 - dunkel - ox.hosteurope.de.
 @namespace      USO Archive
 @author         d3n1c1d3
-@description    `dunkle version für den host europe webmailer <a href="https://webmailer.hosteurope.de">OpenXchange 7</a>. Dieser Style Funktioniert am besten mit dem HostEurope Theme auswählen, dieses ist standardmäßig vorausgewählt. (Einstellungen &gt; Grundeinstellungen &gt; Design &gt; HostEurope Theme)`
-@version        2020524.22.37
+@description    `dunkle version für den <a href="https://webmailer.hosteurope.de">host europe webmailer</a> - <a href="https://www.open-xchange.com/">OpenXchange 7</a>. Dieser Style Funktioniert am besten mit dem HostEurope Theme auswählen, dieses ist standardmäßig vorausgewählt. (Einstellungen &gt; Grundeinstellungen &gt; Design &gt; HostEurope Theme)`
+@version        20201116.11.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -74,6 +74,10 @@ body .v7-10-1-just-for-visiblity {
 }
 .io-ox-sidepopup-arrow.left .triangle {
 	border-left-color : #333;
+}
+#io-ox-taskbar-container {
+	background-color : #111;
+	border-color     : #888;
 }
 .tooltip {
 	border : 1px solid #888;
@@ -435,4 +439,16 @@ body {
 .oxhelp-content a:focus, .oxhelp-content a:hover {
 	color: #5eb0ff;
 }
+}
+
+@-moz-document url-prefix("https://ox.hosteurope.de/appsuite/") {
+/* search correction */
+/*
+div.generic-toolbar.top.io-ox-find[role="search"] {
+	height: 120px !important;
+}
+div.folder-tree.visible-selection.dropzone.abs[role="complementary"] {
+	top : 110px !important;
+}
+*/
 }

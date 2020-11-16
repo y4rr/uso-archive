@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201115.9.3
+@version        20201116.11.9
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -295,6 +295,14 @@ ytd-comments {/*comments box*/
 ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 1px solid #fff;
     box-shadow: inset 0 0px 6px #9d00ff;
+	animation: yadsearch;
+	animation-iteration-count: 1;
+	animation-duration: 2s
+}
+
+@keyframes yadsearch { 
+	0% {box-shadow: inset 0 0px 9px 12px #f0f}
+    
 }
 
 .ytp-scrubber-pull-indicator::after {
