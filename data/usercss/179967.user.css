@@ -2,14 +2,14 @@
 @name           Fast Twitter 2020
 @namespace      USO Archive
 @author         nukumori.org
-@description    `make Twitter fast and compact to see timeline smoothly.optimize on narrow window.Try other our userstyles for Twitter:- <a href="https://userstyles.org/styles/185536/twitter-rt-button-outlined">Twitter RT Button Outlined</a>- <a href="https://userstyles.org/styles/185160/pastel-color-twitter">Pastel Color Twitter</a>----------Twitterを見やすくするために高速でコンパクトにします。デスクトップサイトで画面を狭くしてもいい感じにします。`
-@version        20201018.8.23
+@description    `make Twitter fast and compact to see timeline smoothly.optimize on narrow window.<b>Try other our userstyles for Twitter works with this completely* <a href="https://userstyles.org/styles/185536/twitter-rt-button-outlined">Twitter RT Button Outlined</a>* <a href="https://userstyles.org/styles/185160/pastel-color-twitter">Pastel Color Twitter</a></b>----------Twitterを見やすくするために高速でコンパクトにします。デスクトップサイトで画面を狭くしてもいい感じにします。`
+@version        20201116.23.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("twitter.com") {
 /* Fast Twitter 2020 */
-/* Ver.20201018 by nukumori.org is licensed under CC BY-NC-SA */
+/* Ver.20201117 by nukumori.org is licensed under CC BY-NC-SA */
 /* https://userstyles.org/styles/179967/ */
 /* Created: February 8, 2020 */
 /* Updated: October 18, 2020 */
@@ -158,6 +158,8 @@ header[role="banner"] nav[aria-label][role="navigation"] > a > div > div:last-ch
 }
 
 /* navigation reaction should be quick */
+/* animation */
+.r-o7ynqc,/* sidebar menu */
 .r-sdzlij:hover,/* css corner rounded items should be navigation */
 header[role="banner"] nav[aria-label][role="navigation"] > a > div:hover,
 header[role="banner"] nav[aria-label][role="navigation"] > div > div:hover {
@@ -180,6 +182,20 @@ iframe[src^="https://cards-frame.twitter.com/"] {
 [style*='background-image: url("https://pbs.twimg.com/media/EXZ'][style*='?format=png&name=medium'] {
   opacity: .3;
 }
+
+/* make list title area compact to overwrap list information over hero image*/
+.css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 0px 1px 0 #fff, 0px -1px 0 #fff, 1px 0px 0 #fff, -1px 0px 0 #fff, 0 0 3px #fff;
+}
+.css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 .css-1dbjc4n.r-hxarbt.r-1444osr {
+  text-shadow: none;
+  margin-bottom: 0;
+}
+
 /* when narrow */
 @media (max-width: 1004px) {
   /* menu */
@@ -216,8 +232,7 @@ iframe[src^="https://cards-frame.twitter.com/"] {
   .r-yucp9h {
     height: var(--custom-profile-icon-size-mini);
   }
-  article[role="article"] [style*="flex-basis: 43px;"],
-  article[role="article"] [style*="flex-basis: 49px;"] {
+  article[role="article"] > div > [style*="flex-basis: "] {
     flex-basis: var(--custom-profile-icon-size-mini) !important;
   }
 }

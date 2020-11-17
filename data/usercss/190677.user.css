@@ -2,8 +2,8 @@
 @name           SubsPlease DarkGreen
 @namespace      USO Archive
 @author         Coordinates
-@description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.`
-@version        20201019.7.53
+@description    `A green-accented dark mode for the SubsPlease website. Some variables such as colors and border radius are tweakable at the top of the stylesheet.For best results flip their dark mode switch to change the discord embed dark.`
+@version        20201116.19.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,7 +42,7 @@ body {
 	color: var(--secondary-text-color);
 }
 * {
-	transition: all 0.25s ease-out;
+	transition: all 0.15s ease-out;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: var(--primary-text-color);
@@ -136,17 +136,16 @@ button:active {
 
 /* BODY: Anime entry listings */
 .releases-header {
-	padding: 0px 10px;
+	padding: 0px 10px 0px 0px;
 	margin-bottom: 1rem;
 }
 .releases-header h2 {
 	padding: 0px;
 }
-.releases-header h2::before {
-	font-family: "Font Awesome 5 Free";
-	font-weight: 400;
-	margin-right: 10px;
-	content: "\f254";
+.releases-header h2 img.emoji {
+	float: left;
+	filter: saturate(0) contrast(0) brightness(1.8);
+	margin-right: 10px !important;
 }
 .releases-header form {
 	margin-left: 0px;
@@ -202,6 +201,15 @@ input.search-box-input:focus {
 	transition: none;
 	pointer-events: none;
 }
+#latest-load-more span {
+	border-radius: var(--border-radius);
+	background-color: var(--accent-color);
+	color: var(--primary-text-color);
+}
+#latest-load-more span:hover {
+	background-color: var(--accent-color);
+	filter: brightness(1.2);
+}
 
 /* BODY: Sidebar */ 
 
@@ -225,13 +233,13 @@ input.search-box-input:focus {
 .wc_time {
 	margin-left: 5px;
 }
-img.emoji {
+img.emoji[alt="✔"] {
 	filter: invert(100%);
-	filter: hue-rotate(250deg) brightness(2);
+	filter: hue-rotate(250deg) brightness(2.5);
 	margin-right: 6px !important;
 }
-html[data-theme="dark"] img.emoji {
-	filter: hue-rotate(250deg) brightness(2);
+html[data-theme="dark"] img.emoji[alt="✔"] {
+	filter: hue-rotate(250deg) brightness(2.5);
 }
 }
 

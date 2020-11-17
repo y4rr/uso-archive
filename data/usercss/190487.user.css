@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        20201112.21.59
+@version        20201116.19.40
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -562,11 +562,15 @@ label {
 h1, h2, h3, h4, h5, h6 {
     color: #999999;
 }
+
 .icon-no-margin .icon {
-   color:black;
+  /* color:black;*/
 }
 .dropdown-toggle::after {
-    color: black !important;
+   /* color: black !important;*/
+}
+.btn-outline-secondary {
+    border-color: white;
 }
 .duration_finish a{
 color: black !important; 
@@ -587,6 +591,32 @@ box-sizing:border-box;
         padding-left:47px; 
         background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
         background-size: contain;
+}
+
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x150/1605194745/logo_utm_evirtual.png"]{
+box-sizing: border-box;
+    width: 200px;
+    max-width: 100px;
+    height: 150px;
+    max-height: 75px !important;
+    padding-left: 100px;
+    background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
+    background-size: contain;
+}
+
+
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x200/1605194745/logo_utm_evirtual.png"]{
+box-sizing:border-box;
+       
+    	    width: 266px;
+        height:200px;
+        padding-left:266px; 
+        background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
+        background-size: contain;
+}
+
+.btn, #page-grade-grading-manage .actions .action {
+    background-color: #004600;
 }
 /**/
 

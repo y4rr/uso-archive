@@ -3,14 +3,32 @@
 @namespace      USO Archive
 @author         Amarth Gul
 @description    `based on ELMS/Canvas DarkWith subtle modifications to better fit OSU`
-@version        20201111.20.50
+@version        20201116.19.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp(".*osu\\.instructure\\.com.*") {
+
+/*Current repo: https://github.com/Amarthgul/studentCalculator/blob/master/utility/misc/osuCarmen.css */
 /* based on ELMS/Canvas Dark */
 /* https://userstyles.org/styles/178124/elms-canvas-dark */
+
+/* Developed on Windows with a 1920x1080 monitor */
+
 :root {
+    --darkGrey: #222 !important;
+    /*  */
+    --darkGreyLit: #2b2b2b !important;
+    /*  */
+    --defaultGrey: #333 !important;
+    /*  */
+    --lightGrey: #383838 !important;
+    /*  */
+    --whiteGrey: #666 !important;
+    /*  */
+    --darkWhite: #c3c3c3 !important;
+    /*  */
+    --pureWhite: white !important;
     --yyQPt-background: #111 !important;
     /*Discussion List View Check Box Background*/
 }
@@ -20,13 +38,13 @@ p {
 }
 body {
     min-height: 100vh;
-    background: #2b2b2b;
-    color: #c3c3c3;
+    background: var(--darkGreyLit);
+    color: var(--darkWhite);
     font-weight: 300;
 }
 
 .ic-Dashboard-header__layout {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
     border: none;
 }
 .ic-DashboardCard {
@@ -47,7 +65,7 @@ a {
     transition: 0.3s all;
 }
 .ToDoSidebarItem__Icon {
-    fill: #c3c3c3 !important;
+    fill: var(--darkWhite) !important;
 }
 .ic-DashboardCard__header-subtitle,
 .ic-DashboardCard__header-term {
@@ -57,7 +75,7 @@ a {
 .Button,
 .ui-button {
     background: #313131;
-    color: #fff !important;
+    color: white !important;
 }
 #right-side .button-sidebar-wide {
     border-color: #44c8f5;
@@ -86,10 +104,10 @@ a {
 }
 .header-bar {
     border-bottom: none;
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 .context_module {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 .item-group-container .item-group-condensed {
     border-bottom: 1px dashed #44c8f5;
@@ -98,22 +116,22 @@ a {
     border: none;
 }
 .ig-header .ig-header-title {
-    color: #fff;
+    color: white;
     text-shadow: none;
 }
 .ig-header .name {
-    color: #c3c3c3;
+    color: var(--darkWhite);
     text-shadow: none;
 }
 .item-group-container {
     border: none;
 }
 .item-group-container {
-    background: #333;
+    background: var(--defaultGrey);
     border: none;
 }
 .item-group-condensed .ig-header {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 .ic-app-course-menu #section-tabs-header-subtitle {
     color: #44c8f5;
@@ -134,7 +152,7 @@ a {
 }
 .ig-list .ig-row {
     border-color: #151414;
-    background: #333;
+    background: var(--defaultGrey);
 }
 .item-group-condensed .ig-row {
     background: #272727;
@@ -149,17 +167,17 @@ a {
     background-color: #1b1b1b;
 }
 #breadcrumbs > ul > li {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
 }
 .ic-Action-header__Heading {
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 .user_content,
 .mceContentBody {
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 .toolbarView .headerBar {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
     border: 1px solid #44c8f5;
 }
 .topic .entry-content {
@@ -167,7 +185,7 @@ a {
     border-right: 1px solid #44c8f5;
 }
 .discussion-header-content {
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 #syllabus tr.date.date_passed td,
 #syllabus tr.date.date_passed th {
@@ -180,10 +198,10 @@ a {
     background-color: #272727;
 }
 .context_module_item.context_module_item_hover {
-    background: #333;
+    background: var(--defaultGrey);
 }
 .module-sequence-footer .module-sequence-footer-content {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
     border-color: transparent;
 }
 #questions.assessing {
@@ -193,16 +211,16 @@ a {
     background-color: #1b1b1b;
 }
 .question .text {
-    background: #333;
+    background: var(--defaultGrey);
 }
 table.summary td,
 table.summary tbody th {
     border-bottom: 1px solid #C7CDD1;
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 .quiz-submission,
 .question_editing {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
     border: none;
 }
 #questions.assessment_results .question .header {
@@ -215,7 +233,7 @@ table.summary tbody th {
     border-bottom-color: #262626;
 }
 .question {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 #calendar-app .fc-month-view .fc-body,
 #calendar-drag-and-drop-container .fc-month-view .fc-body {
@@ -227,10 +245,10 @@ table.summary tbody th {
 }
 #calendar-app .fc-event,
 #calendar-drag-and-drop-container .fc-event {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 #context-list .context_list_context {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
 }
 #context-list .context_list_context:hover {
     background: #1d1d1d;
@@ -240,10 +258,10 @@ table.summary tbody th {
 }
 #context-list-holder,
 #undated-events {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 #undated-events .event {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 #minical {
     background-color: #1d1d1d;
@@ -253,14 +271,14 @@ table.summary tbody th {
     color: #d8d8d8;
 }
 #minical .fc-widget-content {
-    color: #fff;
+    color: white;
 }
 .btn-group > .btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn:active,
 .btn-group > .btn.active {
     background: #7d7d7d;
-    border-color: #fff;
+    border-color: white;
 }
 .fc-time-grid {
     background: #1d1d1d;
@@ -277,10 +295,10 @@ table.summary tbody th {
 }
 .agenda-wrapper,
 #announcement-details tr:hover {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 body.primary-nav-expanded .tray-with-space-for-global-nav {
-    background: #333;
+    background: var(--defaultGrey);
 }
 .ic-sidebar-logo__image {
     display: none;
@@ -291,7 +309,7 @@ body.primary-nav-expanded .tray-with-space-for-global-nav {
 #right-side .to-do-list .todo-details:after,
 .item-group-condensed,
 .item-group-container {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
 }
 .conversations .panel {
     background: #212121;
@@ -378,7 +396,7 @@ code {
 }
 .roster-tab,
 .rosterUser {
-    background: #2b2b2b !important;
+    background: var(--darkGreyLit) !important;
 }
 .roster {
     margin-top: -65px;
@@ -574,7 +592,7 @@ div[role="tablist"] div[role="tab"]:hover,
 }
 
 .student_assignment .title {
-    background: #2b2b2b !important;
+    background: var(--darkGreyLit) !important;
 }
 
 #mceu_35,
@@ -611,7 +629,7 @@ td[colspan="3"] {
 }
 
 /* Inverse empty disscussion board color */
-.fNHEA_cSXm, 
+.fNHEA_cSXm,
 .MlJlv_caGd,
 #uYGyDjfTmjj6,
 .ic-section-tooltip button,
@@ -629,7 +647,7 @@ textarea {
 }
 h3 a,
 h3 a:hover {
-    color: #fff !important;
+    color: white !important;
 }
 .ig-list .ig-row .ig-empty-msg {
     background: #272727;
@@ -649,29 +667,29 @@ h3 a:hover {
     background: #252525;
 }
 .o-canvas {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 .jumbotron {
-    color: #fff;
-    background-color: #333;
+    color: white;
+    background-color: var(--defaultGrey);
 }
 
 [dir="ltr"] .fLzZc_bxia {
-    background: #333;
+    background: var(--defaultGrey);
 }
 
 .feature-flag {
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 i[class*=icon-],
 i[class^=icon-] {
-    color: #fff;
+    color: white;
 }
 #footer .footer-logo {
     filter: grayscale(1);
 }
 .agenda-day.agenda-today {
-    background: #2b2b2b;
+    background: var(--darkGreyLit);
 }
 #event-details-trap-focus {
     background: #232323;
@@ -686,7 +704,7 @@ i[class^=icon-] {
 }
 .ui-widget-content {
     border: 1px solid #aaa;
-    background: #fff;
+    background: white;
     color: #bfbfbf;
 }
 .ui-tabs .ui-tabs-panel {
@@ -706,7 +724,7 @@ pre {
 }
 .header-bar {
     border-bottom: none;
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 .pages .header-bar-outer-container {
     display: none;
@@ -731,16 +749,16 @@ input[type="color"],
 }
 select {
     background-color: #464646;
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 [dir="ltr"] .bwOAM_cwos.bwOAM_EMjX,
 [dir="ltr"] input[type].bwOAM_cwos.bwOAM_EMjX {
     background: #464646;
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 [dir="ltr"] .bwOAM_cwos.bwOAM_EMjX,
 [dir="ltr"] input[type].bwOAM_cwos.bwOAM_EMjX::placeholder {
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 .esvoZ_drOs {
     color: #c7cdd1;
@@ -763,13 +781,13 @@ input[type="tel"].ic-Input,
 input[type="color"].ic-Input,
 .uneditable-input.ic-Input {
     background: #232323;
-    color: #c3c3c3;
+    color: var(--darkWhite);
 }
 webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
 }
 ::-webkit-scrollbar-thumb {
     background-color: #444;
@@ -784,7 +802,7 @@ webkit-scrollbar {
     display: none;
 }
 .student-groups.show-body .student-group-header {
-    background-color: #2b2b2b;
+    background-color: var(--darkGreyLit);
     border-bottom: 1px solid #272727;
     cursor: pointer;
     position: relative;
@@ -828,28 +846,61 @@ webkit-scrollbar {
 }
 
 
-/* Disscussion board inner background color */
+/* Score value text color highlight */
+.quiz_score .score_value {
+    color: white;
+}
+/* Module section items' small text color */
+.item-group-condensed .ig-header {
+    color: #eee;
+}
+/* Module pages title text color */
+.pages.show .page-title {
+    color: white;
+}
+/* Disscussion board overview inner background color */
 .ic-discussion-row {
-    background-color: #333 !important;
+    background-color: var(--defaultGrey) !important;
+}
+/* Disscussion board entries */
+.discussion_entry {
+    background: var(--defaultGrey);
 }
 /* Closed For Comments Disscussion board background color */
 .discussions-v2__container-image {
-    background-color: #333 !important;
-    border: 0.125rem dashed #fff !important;
+    background-color: var(--defaultGrey) !important;
+    border: 0.125rem dashed white !important;
 }
 /* Dicussion subscript color */
 .MlJlv_ebWM {
-    color: #aaa;
+    color: #bbb;
+}
+/* Graded disscussion alert text color */
+.alert-info {
+    background-color: var(--whiteGrey);
+}
+/* Graded disscussion point text color */
+.discussion-points {
+    color: #eee;
+}
+/* Graded disscussion dude date text color */
+.discussion-pubdate, .discussion-tododate {
+    color: #eee;
+}
+/* TODO: change input text color */
+.mce-content-body > p .default-theme > p {
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Change font for better readability */
 }
 /* Collab page font color */
-
 /* Mini calender view linked day background color */
-.day_wrapper[role="link"]{
+.day_wrapper[role="link"] {
     border-radius: 10%;
     background-color: #666;
 }
 .list-view a.active {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 /* Left pannel selection highlight color */
 .list-view a.active,
@@ -861,7 +912,7 @@ webkit-scrollbar {
     filter: invert(1) !important;
 }
 .collectionViewItems .ui-tabs-nav .ui-helper-reset .ui-helper-clearfix .ui-widget-header .ui-corner-all {
-    background-color: #333;
+    background-color: var(--defaultGrey);
 }
 /* Occonisionally appear in instructor entered text,
  * which stays black. This is used to change it to white */

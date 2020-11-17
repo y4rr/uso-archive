@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201116.2.21
+@version        20201116.22.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -8115,9 +8115,12 @@ ytp-bottom:hover,
 .reddit-video-player-root > div > * .reddit-video-seek-bar-root,
 .redditSingleClick::after,
 .res-gallery-next,.res-gallery-previous,.res-gallery-to-filmstrip,
+.res-filterline-dropdown-action,
+.res-filterline-show-help,
 .res-iframe-expando-drag-handle,
 .res-media-controls button:hover::after,
 .res-nightmode a,
+.res-step:hover,
 .res-thing-placeholder-message,
 .res-video-button,
 .res-video-button:hover,
@@ -8126,7 +8129,6 @@ ytp-bottom:hover,
 .RESSubscriptionButton,
 .RESCloseButton,
 .RESCloseButton::after,
-.res-step:hover,
 .RNmpXc:hover,
 .sbsb_c:hover,
 .search-button:hover,
@@ -8377,6 +8379,8 @@ ytp-bottom:active,
 */
 .RESSubscriptionButton:active,
 .RESCloseButton:active,
+.res-filterline-dropdown-action:active,
+.res-filterline-show-help:active,
 .res-iframe-expando-drag-handle:active,
 .res-thing-placeholder-message:active,
 .res-step:active,

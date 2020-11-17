@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard and Binance Earn.`
-@version        20201116.9.48
+@version        20201116.22.11
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,21 +23,28 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 /* Wallet Overview */
 .css-11ut0zx{ background-color: #111 !important;}
-.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h{ background-color: #202020 !important; }
+.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h{ background-color: #202020 !important;}
 .css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd{ color: #fff !important;}
 .css-k1w8nb{ border-radius: 0;}
 .css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
 
 
 /* Fiat and Spot Wallet */
-.css-1imiysb, .css-9cxewd, .css-1sqj6hg{ background-color: #202020 !important; }
+.css-1imiysb, .css-9cxewd, .css-1sqj6hg{ background-color: #202020 !important;}
 .css-1h9vsz4{ background-color: #111 !important; }
-.css-lultvz{ background-color: #fff !important;}
+.css-lultvz, .css-kfkjb4:hover{ background-color: #fff !important;}
 .css-kfkjb4 {color: rgb(30, 32, 38) !important;}
 .css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp{ color: #fff !important;}
 .css-vurnku[data-type="table-td"], .css-vurnku[data-type="table-th"]{ background-color: #202020 !important;}
 .css-9cwl6c, .css-vurnku[data-type="table-td"]{ color: #76808F !important;}
 .css-16nd02l input, .css-gymlse{ color: #fff !important;}
+
+
+/* Spot Accont PNL */
+.css-yeksi9{ background-color: #111 !important; }
+.css-qr9i14, .css-1ksrllk, .css-125eupg, .css-17sr503, .css-1s6fjii, .css-1xat5bo, .css-jdtm9f{ background-color: #202020 !important;}
+.css-1gv5v1i, .css-63s4xg, .css-f2yw9b, .css-1eh4ftw, .css-1rojeui, .css-poebbt{ color: #fff !important;}
+.css-11ik29j, .css-nvrxea{ color: #76808F !important;}
 
 
 /* Futures Wallet */
@@ -126,6 +133,7 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 
 /* Binance Earn - Lending */
+.css-1nj9vj{ background-color: #202020 !important;}
 .css-q9a5yv{ color: rgb(240, 185, 11);}
 .css-snz0yf input{ color: #fff !important;}
 
