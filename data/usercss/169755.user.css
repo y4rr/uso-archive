@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
-@version        20201016.12.51
+@version        20201117.11.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("userstyles.org") {
 body:after{
-    content: 'Урезанный стиль UserStyles из расширения "ExNight"'!important;
+    content: 'Тёмный стиль UserStyles из расширения "ExNight"'!important;
     position: fixed!important;
     border: 1px solid #333!important;
     color: #FFF!important;
@@ -84,6 +84,6 @@ input.input_text_search {
 	filter: grayscale(1) brightness(8)!important;
 }
 .style_category_card_wrapper, .header-search .type_search .type_search_select {
-    box-shadow: 0 0 0 1px #fff!important;
+	box-shadow: 0 0 0 1px #fff!important;
 }
 }

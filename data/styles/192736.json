@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "brick-hill",
     "createdAt": "2020-11-16T11:29:28.000Z",
-    "updatedAt": "2020-11-16T22:53:37.000Z",
+    "updatedAt": "2020-11-17T11:50:48.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 824284,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 13,
+      "weekly": 13
     }
   },
   "screenshots": {
@@ -53,7 +53,7 @@
         "options": [
           {
             "key": "1",
-            "label": "Daylight",
+            "label": "Daylight (Default)",
             "value": "background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgba(137,206,248,1) 100%) fixed",
             "default": true
           },
@@ -79,6 +79,37 @@
             "key": "5",
             "label": "Legacy",
             "value": "background: radial-gradient(circle, rgba(129,197,247,1) 35%, rgba(61,162,233,1) 100%) fixed",
+            "default": false
+          },
+          {
+            "key": "6",
+            "label": "Blizzard",
+            "value": "background: linear-gradient(0deg, #97A2B7 0%, #1B3048 100%) fixed",
+            "default": false
+          },
+          {
+            "key": "7",
+            "label": "Blizzard Inverted",
+            "value": "background: linear-gradient(0deg, #1B3048 0%, #97A2B7 100%) fixed",
+            "default": false
+          }
+        ]
+      },
+      {
+        "key": "bttnshadow",
+        "label": "Button Text Shadow",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "bttnOFF",
+            "label": "OFF (Default)",
+            "value": "/*text-shadow: 0 2px 0px #00000061*/",
+            "default": true
+          },
+          {
+            "key": "bttnON",
+            "label": "ON",
+            "value": "text-shadow: 0 2px 0px #00000061",
             "default": false
           }
         ]

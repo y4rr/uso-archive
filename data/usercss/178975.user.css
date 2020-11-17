@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ma Fi
 @description    `Die neue Präsenz von DER SPIEGEL in einer dunklen Variante.`
-@version        20201114.8.28
+@version        20201117.7.42
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color primary "Primärfarbe" #3399FF
@@ -57,7 +57,7 @@ header > div,
     fill: var(--color-primary) !important;
     stroke: var(--color-primary) !important;
 }
-circle.pulse-beacon {
+circle.pulse-beacon, button#btnCollapse svg path, button#btnClose svg path {
     stroke: var(--color-primary) !important;
 }
 

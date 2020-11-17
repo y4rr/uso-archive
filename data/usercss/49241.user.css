@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.157
+@name           Flickr WideScreen - Dark & Grey v.160
 @namespace      USO Archive
 @author         decembre
 @description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201026.0.14
+@version        20201117.12.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.157 (new157)  - (STANDALONE) === */
+/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.160 (new160)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -162,12 +162,9 @@ ul.pool-restrictions {
 .profile-bio-page-view .general-stats ul li.block:hover  a{
         color: gold !important;    
 }
-/* (new149) TOGGLE POOL BETA - SUPP TXT "GO BACK POOL NEW  EXPERIENCE" -  === */
+/* (new159) TOGGLE POOL BETA - SUPP TXT "GO BACK POOL NEW  EXPERIENCE" -  === */
 .opt-out-bug button {
     color: gray !important;
-}
-.view.opt-out-widget-view {
-   background: black !important;
 }
 .opt-out-bug button:before {
     color: white ;
@@ -1115,7 +1112,9 @@ h3#Tertiary ,
     background-color: black !important;
 }
 
-/* (new152) BACKGROUND - #222 - A VOIR == #222 */
+/* (new159) BACKGROUND - #222 - A VOIR == #222 */
+
+
 
 #ViewSet p.vsDescription:not(:empty) ,
 #ViewSet .vsNumbers ,
@@ -1232,11 +1231,13 @@ body > #content > .view .footer-full-view ,
     border: 1px solid #404040 ;
     box-shadow: 3px 3px 2px black ;
     color: gold ;
-    background: #222 ;
+    background: #222 !important;
 }
 
 /* (new143) BACKGROUND-COLOR - #222 - === */
 
+.fluid.html-group-home-page-view .fluid-group-coverphoto-view ,
+.fluid.html-group-discussions-list-page-view .fluid-group-coverphoto-view ,
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view ,
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view.awake  ,
 html.html-favorites-page-view.scrolling-layout    #content   .view.fluid-magic-subnav-view  .fluid-subnav  ,
@@ -1265,7 +1266,18 @@ html.html-favorites-page-view.scrolling-layout    #content   .view.fluid-magic-s
 
 
 
-/* (new152) BACKGROUND - #333 - === */
+/* (new159) BACKGROUND - #333 - === */
+
+.group-discussion-page-view .left-column  ,
+.fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic ,
+
+.fluid.html-group-discussion-page-view .view.fluid-group-coverphoto-view ,
+.fluid.html-group-discussions-list-page-view #content .group-discussions-list-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed, 
+.fluid.html-group-home-page-view #content .group-home-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
+.fluid.html-group-discussions-list-page-view .fluid-group-coverphoto-view  ,
+.fluid.html-group-discussions-list-page-view .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
+.fluid.html-group-discussion-page-view .view.fluid-group-coverphoto-view ,
+
 #ViewSet .vsThumbnail ,
 .dummy-loader-container .layout-container.compact .item ,
 #pool-photos.ju .row .pool-photo.photo-display-item ,
@@ -1650,7 +1662,7 @@ table.contact-list-table-default td.contact-list-sorted {
         background: rgba(0, 0, 0, 0.32)  !important;
 }
 
-#pool-photos.ju .photo-display-item .remove-from-group {
+#pool-photos.ju .photo-display-item .remove-from-group:hover {
         background: rgba(0, 0, 0, 0.6) ! important;
 }
 #GoodStuff table#InBox tbody tr:not(:first-of-type):before {
@@ -2071,8 +2083,8 @@ h3.jump-list-legend ,
 }
 
 
-/* (new120) LINKS COLOR - PERU - with HOVER or Not - === */
-
+/* (new159) LINKS COLOR - PERU - with HOVER or Not - === */
+.fluid .coverphoto-content .title-block-content .title h1 a  ,
 .Butt.post-new-topic ,
 .gallery-page-view .gallery-page-container .details-section .stats span.stat.comment-count ,
 
@@ -2155,7 +2167,10 @@ a.show-all-link ,
 }
 
 
-/* (new83) LINKS / TITLE - COLOR - GREEN #b9d56e - HOVER / HOVER:VISITED - === */
+/* (new159) LINKS / TITLE - COLOR - GREEN #b9d56e - HOVER / HOVER:VISITED - === */
+
+.coverphoto-content.fluid-centered .followers.truncate > a:hover ,  
+.fluid .coverphoto-content .title-block-content .title h1 a:hover , 
 .profile-bio-page-view .general-stats ul li span a:hover ,
 
 .group-blast-view > .blast-block > a:hover ,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201116.11.9
+@version        20201117.8.30
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -142,6 +142,11 @@ animation-duration: 1s;
   transform: scale3d(1, 1, 1);
   }
   }
+
+#country-code.ytd-topbar-logo-renderer {
+    color: var(--yt-spec-text-secondary);
+    margin: 10px 0 0px 0px;
+}
 
 .style-scope ytd-thumbnail:active {
 	animation: yadpoof;

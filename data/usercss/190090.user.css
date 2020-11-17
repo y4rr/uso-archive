@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `GitHub. Dark.Others I've seen were sorta broken. This one shouldn't be, for a while anyway`
-@version        2020113.6.49
+@version        20201117.12.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("github.com") {
+@-moz-document domain("github.com"), domain("gist.githubusercontent.com") {
 /*Dark Scrollbar*/
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #fff0; }
@@ -25,7 +25,9 @@ body, html,
   background: #36393F;
 }
 
-main .border-bottom
+main .border-bottom,
+
+.color-bg-canvas-inset
 {
   background: #36393F !important;
 }
@@ -63,6 +65,7 @@ main .border-bottom
 
 .py-0,
 
+.boxed-group-inner,
 
 .gitzip-collect-dash 
 {
@@ -136,6 +139,10 @@ article .border-bottom,
 
 .pinned-item-checkbox:checked+.pinned-item-name,
 
+.Popover-message.Box,
+
+.boxed-group .heading, .boxed-group>h3,
+
 
 .gitzip-header
 {
@@ -187,7 +194,12 @@ article .border-bottom,
 .d-flex.flex-wrap.bg-gray,
 
 .previewable-comment-form,
-.write-content
+.write-content,
+
+.color-bg-primary,
+.js-profile-timeline-year-list,
+
+.conversation-list-heading .inner
 {
   background: #0000 !important;
 }
@@ -209,7 +221,14 @@ article .border-bottom,
 
 .flash.flash-full.flash-notice,
 
-.drag-and-drop span, .drag-and-drop
+.drag-and-drop span, .drag-and-drop,
+
+kbd,
+
+.CopyBlock:active, .CopyBlock:focus, .CopyBlock:hover,
+
+table.capped-list th,
+table.capped-list tr:nth-child(2n)
 {
     background: #18181982 !important;
 }
@@ -337,6 +356,18 @@ body, input, textarea, select,
 .flash .octicon,
 
 .commit-desc pre,
+
+.protip strong,
+kbd,
+
+.color-text-primary,
+
+.boxed-group-inner,
+.conversation-list-heading .inner,
+.graph-filter .info,
+.blankslate p,
+.color-text-secondary,
+.protip,
 
 
 .gitzip-check-mark, .gitzip-header
@@ -477,6 +508,12 @@ h3 a
     border-bottom-color: #94b1ff !important;
 }
 
+.Popover-message:before,
+.Popover-message:after
+{
+    border-bottom-color: #202225 !important;
+}
+
 .markdown-body blockquote {
     border-left: .25em solid #18181982 !important;
 }
@@ -496,6 +533,11 @@ h3 a
 #js-pjax-container > .mt-4
 {
   margin: 0 !important;
+}
+
+.tabnav
+{
+  margin-bottom: 0;
 }
 
 .octicon.octicon-mark-github.CircleBadge-icon.text-white
@@ -525,9 +567,16 @@ h3 a
   filter: invert(1) brightness(1.2);
 }
 
-div#network.network > div > canvas {
+div#network.network > div > canvas
+{
     -webkit-filter: invert(90%) hue-rotate(180deg)!important;
     filter: invert(90%) hue-rotate(180deg)!important;
+}
+
+img[src*="profile-first-pr"] 
+{
+    filter: invert(1) hue-rotate(175deg) saturate(3) brightness(2);
+    mix-blend-mode: exclusion;
 }
 
 #network canvas {

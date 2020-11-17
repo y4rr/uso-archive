@@ -3,15 +3,22 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `A more colorful theme that mimics the new site design, with the current site layout.`
-@version        20201116.22.53
+@version        20201117.11.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bkgColorKey1 "Background Theme" {
-	1 "Daylight*" <<<EOT background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgba(137,206,248,1) 100%) fixed EOT;
+	1 "Daylight (Default)*" <<<EOT background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgba(137,206,248,1) 100%) fixed EOT;
 2 "Afternoon" <<<EOT background: linear-gradient(0deg, #72b7e3 0%, #05639d 100%) fixed EOT;
 3 "Evening" <<<EOT background: linear-gradient(0deg, #72e376 0%, #05639d 100%) fixed EOT;
 4 "Morning" <<<EOT background: linear-gradient(0deg, #e172e3 0%, #d59712 100%) fixed EOT;
 5 "Legacy" <<<EOT background: radial-gradient(circle, rgba(129,197,247,1) 35%, rgba(61,162,233,1) 100%) fixed EOT;
+6 "Blizzard" <<<EOT background: linear-gradient(0deg, #97A2B7 0%, #1B3048 100%) fixed EOT;
+7 "Blizzard Inverted" <<<EOT background: linear-gradient(0deg, #1B3048 0%, #97A2B7 100%) fixed EOT;
+
+}
+@advanced dropdown bttnshadow "Button Text Shadow" {
+	bttnOFF "OFF (Default)*" <<<EOT /*text-shadow: 0 2px 0px #00000061*\/ EOT;
+bttnON "ON" <<<EOT text-shadow: 0 2px 0px #00000061 EOT;
 
 }
 @advanced color holdercolor "White Background Custom Color (Use #fff0 for invisible))" #FFFFFF

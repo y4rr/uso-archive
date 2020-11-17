@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.7+
+@name           Compact Tube (White) v1.3.8
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201116.16.3
+@version        20201117.11.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.7 */
+/* CompactTube (White) v1.3.8 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -51,6 +51,11 @@ ytd-banner-promo-renderer {display: none;}
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
 /* убрать партнёрскую рекламу на вкладке с Видео */
 .ytd-companion-slot-renderer {display: none;}
+
+/* Оповещения Снизу экрана (paper-toast): - ● ОТКЛЮЧЕНИЕ НЕ ЖЕЛАТЕЛЬНО! ● так как пропадут 
+и оповещения о добавлении в плейлисты, НО, если YouTube будет сильно задалбывать, можно отключить. */
+    /*      : none - отключить ;     flow - не отключать    */
+    #toast {display: flow}
 
     /* Отключить? ОПЛАЧЕННЫЕ Видеоролики(на правах рекламы) от пользователей и каналов на вкладке с Видео */
     /* none : - отключить  /  flow : - не отключать  */
@@ -2367,11 +2372,12 @@ ytd-button-renderer.ytd-comment-action-buttons-renderer:not([is-icon-button]).yt
 font-weight: 500; letter-spacing: 0.007px; text-transform: none;}
 
 /* Размер Иконок : "Лайк" и "Дизлайк" */
-ytd-toggle-button-renderer #button.ytd-toggle-button-renderer {
-    color: var(--yt-button-color, inherit);
-    background-color: transparent;
-    text-transform: inherit;
-    padding: 4px 8px 4px 8px !important;}
+yt-icon-button#button.ytd-toggle-button-renderer {padding: 8px !important;} /*v3*/
+    -o-ytd-toggle-button-renderer #button.ytd-toggle-button-renderer { /*v1*/
+        color: var(--yt-button-color, inherit);
+        background-color: transparent;
+        text-transform: inherit;
+        padding: 4px 8px 4px 8px !important;}
         /* Размер Иконок : "Лайк" и "Дизлайк" (v2) */
         -o-yt-icon-button#button.ytd-toggle-button-renderer.style-default-active {padding: 8px !important;}
         -o-yt-icon-button#button.ytd-toggle-button-renderer {padding: 8px !important;} /*v3*/
@@ -2442,6 +2448,8 @@ ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] y
     margin-top: -1px;}
 /* Лайв Чат - под Видео: Цвет блока Названия и (Информация о ЛайвЧате) */
 ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: var(--yt-spec-brand-background-primary);}
+/* Шапка Лайв-Чат'а - Нижний Бордюр */
+yt-live-chat-header-renderer.yt-live-chat-renderer {box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer);}
 
 /* ================= чёрный ПЛЕЙЛИСТ под видео ================= */
 /* Цвет Бэкграунда и Рамки Плейлиста под Видео */
@@ -2504,6 +2512,102 @@ background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252} /*#262626
 ytd-compact-video-renderer {padding-top: 7px;}
 /* ============================================================== */
 
+
+/* ∞∞∞∞∞∞∞∞∞∞∞∞ Плеер Эпизодов Видео: (Чёрный - оформление) ∞∞∞∞∞∞∞∞∞∞∞∞ */
+    /* Тело Плеера Эпизодов */
+#contents.ytd-macro-markers-list-renderer {
+    overflow-y: auto; display: flex; flex-direction: column;
+    background-color: #222222; box-shadow: 0px 0px 0px 2px var(--yt-searchbox-background  );
+    -o-outline: 1px solid var(--yt-spec-themed-blue); 
+    margin: 2px 2px 2px 2px; padding: 4px 2px 4px 2px;}
+
+    /* Эпизоды (все кроме Активного) */
+ytd-macro-markers-list-item-renderer {
+    -o-display: block; padding: 8px 8px 8px 0; display: flex; flex-direction: row; flex: none; 
+    background-color: #222222; box-shadow: inset 0px -1px 0px 0px rgba(4, 4, 4, .36);}
+
+    /* Эпизод (Активный)*/
+ytd-macro-markers-list-item-renderer[active] {
+    background: rgba(255, 255, 255, .1);/* var(--yt-spec-badge-chip-background) */
+    box-shadow: inset -1px 0px 0 0px #6f6f6f,
+    inset 1px 0px 0 0 #6f6f6f, inset 0 0px 0 1.0px #6f6f6f;}
+
+    /* Обводка Миниатюры активного Эпизода*/
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer {
+    outline: 2px solid #3ea6ff;} /* outline: 2px solid var(--yt-spec-themed-blue)*/
+
+    /* Подложка под Миниатюру активного Эпизода */
+#thumbnail.ytd-macro-markers-list-item-renderer {height: 56px; width: 100px;background: #000;}
+
+    /* Подсвеченный Эпизод */
+ytd-macro-markers-list-item-renderer:hover {
+    background-color: transparent; 
+    box-shadow: inset 0 0 10px 0 #3ea6ff, inset 1.3px 0 0 0 #3ea6ff, 
+    inset -1.3px 0 0 0 #3ea6ff, inset -1px 0 0 0 #3ea6ff, inset 0 0 0 1px #3ea6ff;
+    -o-box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, .91);}
+
+    /* Нажатый Эпизод */
+ytd-macro-markers-list-item-renderer:active {background-color: #252a3a;}
+
+    /* Точка Выделитель проигрываемого Эпизода */
+#active-indicator.ytd-macro-markers-list-item-renderer {
+    background: #3ea6ff; /* var(--yt-spec-themed-blue)*/
+    height: 6px; width: 6px; border-radius: 6px; margin: 0 5px;}
+
+    /* Названия Эпизодов */
+h4.ytd-macro-markers-list-item-renderer {
+    margin-bottom: 8px;
+    color: #CACACA; /* var(--yt-spec-text-primary) */ /*Цвет Шрифта*/
+    display: -webkit-box;
+    max-height: 3.2rem; /*calc(2 * var(--yt-link-line-height, 1.6rem))*/
+    overflow: hidden; text-overflow: ellipsis; white-space: normal;
+    font-size: var(--yt-link-font-size, 1.3rem); /*def. 1.4rem*/
+    font-weight: 500;
+    line-height: var(--ytd-link-line-height, 1.6rem);
+    letter-spacing: var(--yt-link-letter-spacing, normal);}
+
+    /* ТаймКод Эпизода */
+#time.ytd-macro-markers-list-item-renderer {
+    padding: 2px 6px; border-radius: 2px;
+    color: #3ea6ff; /*Цвет времени*/    /* var(--yt-spec-themed-blue)*/
+    background-color: #252a3a; /*Цвет поля времени*//* var(--yt-spec-suggested-action)*/
+    font-size: 1.3rem; font-weight: 500; letter-spacing: 0.007px;
+    text-transform: uppercase; align-self: flex-start;}
+
+    /* Контейнер Синхронизации */
+#sync-container.ytd-macro-markers-list-renderer {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: 60px; -o-width: auto; -o-width: 417px;
+    margin-right: 15px;
+    transition: -webkit-transform 0.2s cubic-bezier(0.05, 0, 0, 1);
+    transition: transform 0.2s cubic-bezier(0.05, 0, 0, 1);
+    transition: transform 0.2s cubic-bezier(0.05, 0, 0, 1), -webkit-transform 0.2s cubic-bezier(0.05, 0, 0, 1);
+    display: flex; flex-direction: row; align-items: center;
+    justify-content: center; -o-background-color: var(--yt-spec-brand-background-primary);/*фон для теста*/}
+
+    /* Кнопка Синхронизации */
+#sync-button.ytd-macro-markers-list-renderer {
+    color: #030303; /*цвет Шрифта кнопки*/ /* var(--yt-spec-text-primary-inverse) */
+    background: #3ea6ff; /*цвет кнопки*/ /*var(--yt-spec-themed-blue)*/
+    padding: 8px 12px; border-radius: 28px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer; font-size: var(--yt-badge-font-size, 1.2rem);
+    font-weight: 500; line-height: var(--yt-badge-line-height-size, 1.2rem);
+    margin-bottom: 6px; /*test*/}
+
+/* Размер Шрифта Оглавления */
+#title.ytd-engagement-panel-title-header-renderer {font-size: 1.4rem;}
+
+/* Шапка Оглавления */
+#header.ytd-engagement-panel-title-header-renderer {
+    -o-display: block;
+    box-shadow: inset 0 -1px 0 0 var(--ytd-searchbox-legacy-button-border-color);
+    padding: 4px 2px 4px 16px;
+    color: var(--yt-spec-text-primary); /*этот цвет: #fff */
+    background-color: var(--yt-spec-brand-background-primary); /*этот цвет: rgba(33, 33, 33, .98) */
+    display: flex; align-items: flex-start;}
+
+/* ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ */
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
@@ -2702,9 +2806,11 @@ ytd-notification-renderer:hover {
     display: flex;
     flex-direction: row;  
     background-color: rgba(132, 126, 120, .2) !important;
-    box-shadow: inset 0px -1px 0px 0px var(--yt-spec-10-percent-layer), 
-    inset 0px 0.8px 0px 0px var(--yt-spec-10-percent-layer),
-    inset -0.3px 0px 0px 0px var(--yt-spec-10-percent-layer);}
+    box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer),
+    inset 0 -1px 0 0 var(--yt-spec-10-percent-layer),
+    0 -1px 0 0 var(--yt-spec-10-percent-layer),
+    inset -0.5px 0 0 0 var(--yt-spec-10-percent-layer),
+    inset 1px 0 0 0 var(--yt-spec-10-percent-layer);}
 
 /*Отступы внутри Секции одной Нотификации  v1 */
 a.yt-simple-endpoint.ytd-notification-renderer {

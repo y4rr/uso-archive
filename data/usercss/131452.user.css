@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.158
+@name           Flickr Widescreen - ALLinONE (Part 2) v.160
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201029.11.22
+@version        20201117.12.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.158 (new158)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.160 (new160)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -24,6 +24,245 @@
 .activity-card.ad-card.pro-upsell-card {
     display: none !important;
 }
+
+/* NEW FEEDS - WIDE */
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container ,
+html.scrolling-layout.html-feed-new-page-view  .fluid-centered {
+display: inline-block !important;
+    margin-right: auto ;
+    min-width: 100% ;
+    max-width: 100% ;
+   padding: 0 10px ;
+}
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column {
+display: inline-block !important;
+    width: 99.9% !important;
+}
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-new-tools-container {
+    position: fixed ;
+    width: 1748px ;
+    left: 0 ;
+    top: -20px ;
+    margin-top: 20px ;
+    padding: 16px 80px;
+    z-index: 5000 ;
+background: #333 ;
+border-bottom: 1px solid red ;
+}
+
+/* NEW FEEDS - RIGHT INF */
+.html-feed-new-page-view .feed-new-page-content-container .info-column {
+    position: fixed !important;
+    float: right ;
+    width: 300px ;
+    height: 800px ;
+    left: 1868px !important;
+    top: 70px ;
+    padding: 5px ;
+    border-radius: 5px 0 0 5px ;
+    z-index: 500 ;
+    transition: all ease 1s ;
+background: black ;
+border: 1px solid red ;
+}
+.html-feed-new-page-view  .feed-new-page-content-container .info-column:hover {
+    left: 1550px !important;
+    transition: all ease 2s !important;
+}
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container {
+    height: 800px ;
+    overflow: hidden ;
+    overflow-y: auto ;
+}
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container[style="top: -480px; bottom: initial;"] ,
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container[style="bottom: -549px; top: initial;"] {
+    height: 800px ;
+    bottom: 0 !important;
+    top: -10px !important;
+}
+.html-feed-new-page-view  .feed-new-page-content-container .info-column:before {
+    content: "🔺" ;
+    position: absolute ;
+    right: 310px ;
+    top: 0 ;
+    transform: rotate(-90deg) ;
+    z-index: 600 ;
+    transition: right ease 1s ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .info-column:hover:before {
+    right: 0px ;
+    transform: rotate(90deg) ;
+    transition: right ease 1s ;
+}
+
+/* NEW FEEDS - CONTAINER - ITEMS */
+
+/* NEW FEEDS - PUB ? */
+.feed-layout[style="margin-bottom: 40px;"] ,
+.feed-layout[style="margin-bottom: 32px;"] ,
+.html-feed-new-page-view .feed-new-page-content-container  .feed-item:only-of-type {
+    display: none !important;
+}
+
+/* NEW FEEDS - ERROR MESSS (PB Friends / Familly ?) */
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container {
+    width: 97% !important;
+border: 1px solid red !important;
+}
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container  .error-message {
+    color: red ;
+}
+
+/* NEW FEEDS - DEFERED */
+.html-feed-new-page-view .feed-new-page-content-container .photo-card-view .photo-card .photo-card-content .photo-card-photo .photo.contain[data-defer-src*="staticflickr.com"] {
+background-color: blue !important;
+    opacity: 1 !important;
+}
+/* NEW FEEDS - FEEDS CONTAINER */
+.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content {
+    top: 57px ;
+}
+
+/* ==== FEEDS ALL  ====== */
+.feed-layout{
+display: inline-block !important;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 5px !important;
+}
+
+/* NEW FEEDS - RADIUS */
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view ,
+.html-feed-new-page-view .photo-card-view .photo-card ,
+.html-feed-new-page-view .photo-card-view .photo-card .photo-card-content ,
+.html-feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-layout .feed-item  {
+    border-radius: 5px !important;
+}
+.html-feed-new-page-view .photo-card-view .photo-card .link-footer {
+    border-radius: 0 0 5px 5px !important;
+}
+/* NEW FEEDS - OVERLAY VIEW */
+.feed-new-page-view .batch-overlay {
+    top: 53px ;
+}
+/* NEW FEEDS - SMALL */
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) {
+    display: inline-block ;
+    width: 49% ;
+    min-height: 350px ;
+    margin-right: 3px ;
+    padding: 5px ;
+} 
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view  {
+    display: inline-block ;
+    height: auto ;
+    width: 100% !important;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card {
+    display: flex;
+    justify-content: center ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .view.photo-card-view >.photo-card.theme-flat.layout-compact {
+    text-align: center ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .header {
+    position: relative ;
+    height: 30px ;
+    line-height: 30px ;
+    margin-bottom: 0px ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view .photo-card .photo-card-content {
+    flex: 1 1 auto ;
+    flex-direction: row ;
+    width: 100% ;
+    height: 100%;
+    min-height: 0;
+    align-items: center ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view .photo-card .photo-card-content .card-batch-layout {
+    flex-direction:  row !important;
+    min-height: 400px ;
+    width: 100% !important;
+}
+ 
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .photo-card-photo {
+    flex: 1 1 300px ;
+    height: 100% ;
+    width: 100% ;
+}
+/* VISITED */
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link {
+border: 1px solid gray!important;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link:visited {
+border: 1px solid red!important;
+}
+
+/* NEW FEEDS - ONLY ONE PHOTO ITEM */
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type {
+    position: absolute ;
+    display: flex ;
+    flex-direction: row ;
+    min-width: 100% ;
+    height: 400px ;
+    left: 0 ;
+    top: 0 ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  {
+    height: 400px ;
+    min-width: 100% ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card {
+    height: 400px ;
+    min-width: 100% ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content {
+    height: auto ;
+    min-width: 100% ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content .photo-card-photo .photo {
+    height: 100% ;
+    max-height: 400px ;
+    width: auto ;
+    background-size: contain ;
+}
+/* ONLY ONE HOVER HEADER USER*/
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container {
+    display: inline-block ;
+    min-width: 40% ;
+    padding: 0 ;
+    text-align: center ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay {
+    display: inline-block ;
+    width: 100% ;
+    text-align: center ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container {
+    display: inline-block ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .avatar {
+    display: inline-block ;
+    float: left ;
+}
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .attribution {
+    display: inline-block ;
+    height: 24px;
+    line-height: 24px;
+}
+/* NEW FEEDS - OPTIONS */
+.fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view {
+    position: absolute ;
+    top: 0px ;
+}
+/* NEW FEEDS - MENU CONTEXT */
+.html-feed-new-page-view .droparound.menu.photo-card-header-context-menu {
+margin-top: 0px ;
+}
+
+/* ==== END - NEW FEEDS COMPACT ==== */
 
 /* SET - COM CONTAINER - REVERSE ORDER - === */
 #ViewSet .vsComments {
@@ -803,38 +1042,56 @@ z-index: 50000 !important;
 border-bottom: 1px solid gray ;
 background: #222  !important;
 }
-/* (new158) */
+/* (new159) */
 .gallery-page-view .gallery-page-container .details-section .description.short.no-read-more {
     max-height: 100% !important;
 border-bottom: 1px solid gray ;
 background: #222  !important;
 }
-.gallery-page-view .gallery-page-container .details-section .description p ,
+
 .gallery-page-view .gallery-page-container .details-section .description.short p {
-    height: auto;
-    max-height: 48px;
-    overflow: hidden;
-border-bottom: 1px solid gray ;
-}
-.gallery-page-view .gallery-page-container .details-section .description.short p {
+/* position: sticky !important; */
     width: 60%;
-    height: auto;
-    line-height: 18px ;
-    max-height: 52px;
-    padding: 3px 0 3px 0 ;
-    overflow: hidden;
-border-bottom: 1px solid gray ;
+height: 100% !important;
+    line-height: 15px ;
+    max-height: 17px !important;  
+     min-height: 17px !important;
+/* top: -100px !important; */
+margin-bottom: 20px !important;
+    padding: 3px 0 14px 0 ;
+    overflow: hidden !important;
+/* border-bottom: 1px solid red ; */
+/* background-image: linear-gradient(0deg, red 10px, rgba(15, 15, 16, 0.8) 30px) !important; */
+/* background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.3) 5px, rgba(0, 0, 0, 0.5) 13px) !important; */
 }
-.gallery-page-view .gallery-page-container .details-section .description p {
-    height: auto;
-    max-height: 100% ;
-    overflow: hidden;
-border-bottom: 1px solid gray ;
+.gallery-page-view .gallery-page-container .details-section .description:not(.short) p {
+    height: 100% !important;
+min-height: 400px !important;
+    max-height: 400px !important;
+padding-bottom: 30px !important;
+    overflow-y: auto ;
+background: black !important;
+/* border-bottom: 1px solid green ; */
 }
-.gallery-page-view .gallery-page-container .details-section .description p {
-    margin: 0 0 5px;
-    width: 100%;
-background: #222  !important;
+
+.gallery-page-view .gallery-page-container .details-section .description .read-less-button, 
+.gallery-page-view .gallery-page-container .details-section .description .read-more-button {
+    margin-top: -10px ;
+    padding: 5px ;
+    border-radius: 0 0 5px 5px ;
+    font-size: 13px ;
+border: 1px solid #222 ;
+background: black !important;
+}
+.gallery-page-view .gallery-page-container .details-section .description .read-less-button {
+    margin-top: -5px  !important;
+    opacity: 1 ;
+}
+.gallery-page-view .gallery-page-container .details-section .description .read-more-button {
+    margin-top: -18px ;
+    padding: 1px ;
+    border-radius:  5px ;
+    opacity: 0.5 ;
 }
 .gallery-page-view .gallery-page-container .details-section header h1 {
     float: left ;
@@ -849,7 +1106,6 @@ background: #333 !important;
 .gallery-page-view .gallery-page-container .details-section header p {
     float: right ;
     width: 49%;
-    color: #212124;
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
@@ -857,6 +1113,12 @@ background: #333 !important;
     text-align: left !important;
 color: gray ;
 }
+.gallery-page-view .gallery-page-container .details-section .description.short p >a {
+    display: inline-block;
+    width: 100%;
+}
+
+
 .gallery-page-view .gallery-page-container .stats {
     position: fixed !important;
     display: inline-block !important;
@@ -923,6 +1185,7 @@ background: gold ;
 /* GAL - LIST - THUMBNAIL - INFO BACKGROUND / FAV STAR - === */
 .gallery-page-view .gallery-page-container .photos-section {
     width: 100% !important;
+    border-top: 1px solid #333;
 }
 .html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .view.photo-list-view  .view.photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar {
     opacity: 1 !important;
@@ -2411,6 +2674,11 @@ outline: 1px solid TAN ;
     overflow: visible !important;
     transform: scale(0.4) !important;
 }
+.super-liquid #contacts-thumbs-wrapper .ju.photo-display-container .photo-display-item .meta {
+/*     padding: 5px 0 10px 8px; */
+/* font-size: 26px !important; */
+}
+
 /* CONTACTS FOLLOW THUMBNAIL - BUT OPTION LIGHT BOX - === */
 .searchified-options .searchified-options-view {
     position: relative !important;
@@ -3665,6 +3933,7 @@ background-color: #333 !important;
     left: 620px !important;
     border-radius: 5px !important;
     opacity: 1 !important;
+z-index: 50000 !important;
 }
 .fluid.html-group-pool-page-view .with-fluid-subnav .group-pool-subheader-view > .at-right + #topPaginationContainer ,
 .fluid.html-group-pool-page-view .group-pool-subheader-view .at-right + #topPaginationContainer {
@@ -3863,13 +4132,15 @@ body.flickrfixruserscript .view.photo-license-view {
     top: 0px !important;
     left: -20px !important;
 }
-/* (new107) DATE */
+/* (new159) DATE */
+body.flickrfixrwebextension .date-license-container .view.sub-photo-date-view.has-date-info ,
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-date-view.has-date-info ,
 body.flickrfixruserscript .sub-photo-right-view .sub-photo-date-view.has-date-info {
     position: absolute ;
     top: -24px ;
     right: 242px;
 }
+
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-date-view.has-date-info > .date-taken ,
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-right-row1 .sub-photo-date-view > .date-taken ,
 body.flickrfixruserscript .sub-photo-right-view .sub-photo-date-view.has-date-info > .date-taken ,
@@ -3917,6 +4188,7 @@ body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1  .sub-ph
     visibility: visible ;
 color: gold ;
 }
+
 body.flickrfixrwebextension .sub-photo-right-view > .sub-photo-right-row1  .sub-photo-date-view .date-taken.clear-float span:after ,
 body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1  .sub-photo-date-view .date-taken.clear-float span:after   {
     content: "▲" ;
@@ -4623,35 +4895,31 @@ a[id^="CFS"] span:only-child:not(.avatar) {
     padding: 0 7px !important;
     border-radius: 2px !important;
 }
-/*  GALL */
+/*  (new159) GALL */
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:not(.avatar) {
-    vertical-align: bottom !important;
-    height: 14px !important;
-    line-height: 14px !important;
+    vertical-align: middle !important;
+    height: 15px !important;
+    line-height: 15px !important;
     min-width: 5px ! important;
 }
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:first-of-type:not(.avatar) {
     display: inline-block  !important;
-    vertical-align: bottom !important;
+height: 100% !important;
+    height: 16px !important;
+    line-height: 16px !important;
     width: 100% ! important;
-    height: 14px !important;
-    line-height: 14px !important;
     min-width: 4px ! important;
     max-width: 4px ! important;
 }
 
-/* GM - "F.F.S" - PHOTO PAGE - SOLVE EMPY SPAN - === */
+/* (new159) GM - "F.F.S" - PHOTO PAGE - SOLVE EMPY SPAN - === */
 #photo-details.clearfix #sidebar.wide-sidebar #photo-story #photo-story-attribution.clearfix p.flickr-user span.name span.photo-name-line-1 a[id^="CFS"] span {
     display: inline-block !important;
     min-width: 5px ! important;
     min-height: 18.5px ! important;
     margin-bottom: -4px ! important;
 }
-.photo-display-container.ju .photo-display-item .meta a:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline)[id^="CFS"] span {
-    display: inline-block !important;
-    height: 30px !important;
-    line-height: 30px !important;
-}
+
 /* SMALL */
 #pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a.owner {
     position: relative !important;
@@ -4754,12 +5022,14 @@ a[id^="CFS"] span:only-child:not(.avatar) {
     padding: 0 0 0 4px !important;
     border-radius: 2px 0px 0px 2px !important;
 }
-.photo-display-container.ju .photo-display-item .meta a:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline)[id^="CFS"] span:last-of-type {
+
+#pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a[id^="CFS"] span:last-of-type  {
     display: inline-block !important;
-    height: 31px !important;
-    line-height: 31px !important;
+    min-width: 10px !important;
+    height: 15px !important;
+    line-height: 15px !important;
     padding-right: 7px !important;
-    border-radius: 0px 5px 5px 0px !important;
+    border-radius: 0px 2px 2px 0px !important;
 }
 #pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a[id^="CFS"] span:last-of-type  {
     display: inline-block !important;
@@ -6535,13 +6805,60 @@ a.poplnk:link {
     transform: rotate(-90deg) ;
 color: red ;
 }
-/* GM - "F.F.S-  - PHOTFRIENDS pages - SUPP POINTER EVENTS */
+/* GM - "F.F.S- From CONTACTS - PHOT FRIENDS pages - SUPP POINTER EVENTS */
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .attribution a.owner[id^="CFS_"]  ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution a,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a.owner[id^="CFS_"] ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a[id^="CFS_"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) {
+font-size: 25px !important;
      pointer-events: none !important;
+}
+
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta {
+    bottom: -11px !important;
+    opacity: 0.7 !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item:hover .meta {
+    opacity: 1 !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .title {
+    font-size: 24px !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution {
+    margin-left: -36px !important;
+}
+/* #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution a.owner[id^="CFS_"] */
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons {
+    height: 26px !important;
+    line-height: 24px !important;
+    margin-top: 0 !important;
+    top: 95% !important;
+    font-size: 24px !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons a {
+    height: 26px !important;
+    line-height: 27px !important;
+font-size: 24px !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons a img {
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 10px !important;
+font-size: 24px !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span {
+    display: inline-block;
+    height: 28px !important;
+    line-height: 26px !important;
+font-size: 25px !important;
+color: white !important;
+outline: 1px solid violet !important;
+}
+#contacts-thumbs-wrapper .photo-display-container.ju .row  .contact [id^="FCO-photo-"] {
+    left: 0px !important;
+    margin-top: 12px !important;
+    transform: scale(1.4) !important;
 }
 /* END - ==== URL PREF - GM - "F.F.S" - SUPP TOOLTIP where it's not USABLE ==== */
 }

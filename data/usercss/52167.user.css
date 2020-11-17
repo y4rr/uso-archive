@@ -1,17 +1,17 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 1)  v.158
+@name           Flickr Widescreen - ALLinONE (Part 1)  v.160
 @namespace      USO Archive
 @author         decembre
 @description    `<b><i>It's ONLY for a WIDESCREEN(1920x1080)!</i></b><b>► The Goal: use at its maximum my WideScreen:</b>- for the shots (Maximize the number of shots visible in the window)- for the Info (scroll list and hover)- for an admin happy life (adaptation for selected Greasemonkey scripts)- Less scrolling with a compact and useful styled interface.- Less "IN THE FACE" style (Smaller version of the shots in Photo Page and Justified Views).<mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201029.11.16
+@version        20201117.12.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com"), domain("na.ads.yahoo.com") {
 
-/* ====   FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 1) v.158 (new158) ===== */
+/* ====   FLICKR - TEST - 00 - Flickr WideScreen - ALLinONE (Part 1) v.160 - NORMAL NO BETA/BETA ===== */
 
-/* (new152)SUPP PUBS / / GEO YAHOO / SPONSORED ETC... - === */
+/* SUPP PUBS / / GEO YAHOO / SPONSORED ETC... */
 .sub-photo-left-view > .sub-photo-fave-view.faves-present svg.icon ,
 .opt-out-widget .feedback ,
 .opt-out-widget .optout-toggle .divider ,
@@ -125,8 +125,6 @@ img[width="1"] ,
     display: none !important;
 }
 
-
-
 /* ADDS PHOTO PAGE - add txt" RELOAD" */
 .view.photo-page-ad-scrappy-view .view.sub-photo-moola-view {
     opacity: 1 !important;
@@ -151,14 +149,9 @@ img[width="1"] ,
     font-size: 40px;
 color: gray;
 }
-
-
-
-/* (new141) TEST VIEWPORT for POOL PAGE LAZY LOAD - TEST ANTI JUMP - ===  */
+/* TEST VIEWPORT for POOL PAGE LAZY LOAD - TEST ANTI JUMP - ===  */
 body {
-/* min-height: 300vh !important; */
 height: auto !important;
-/* background-color : red !important; */
 }
 
 /* LOAD BAR */
@@ -166,16 +159,15 @@ height: auto !important;
     opacity: 0.2 !important;
 }
 /* POSS PUB - ARROW INDIC */
-/* FAV/PHOSTREAM/POOL/  - === */
+/* FAV/PHOSTREAM/POOL/ */
 .fluid.html-photo-page-ad-scrappy-view .view.photo-page-ad-scrappy-view .photo-well-scrappy-view .height-controller > .navigate-target[href*="/in/"] span.hide-text  {
     border: 1px solid rgba(255, 0, 0, 0.5) !important;
     border-radius: 3px;
     box-shadow: -5px 3px 10px rgba(255, 0, 0, 0.5) !important;
 }
 
-/* (new134) START == DARK MINIMAL (D/M)- === */
+/* ==== START == DARK MINIMAL (D/M) ==== */
 /* (D/M) PHOTO - #222 */
-/* html.styleguide , */
 .fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view .droparound.subview-droparound ,
 .fluid.html-photo-page-scrappy-view.scrolling-layout  {
     background: #222 ;
@@ -189,7 +181,7 @@ height: auto !important;
 .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item:hover .selection-item-content {
     background-color: #222 !important;
 }
-/* (D/M) PHOTO - === */
+/* (D/M) PHOTO */
 .stuff-selection-view .stuff-selection .stuff-selection-search-container input.stuff-selection-search ,
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments-form .comment-form-field textarea {
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -234,18 +226,16 @@ h1 ,
 p {
     color: gray ;
 }
-/* (D/M) == END == TEST DARK MINIMAL - ===== */
+/* (D/M) == END == TEST DARK MINIMAL ==== */
 
-/* (new138) START === NEW FEEDS PAGES ===== */
+/* START === NEW FEEDS PAGES ==== */
 
-/* (new138) ==== NEW FEEDS ==== */
-
-/*  NEW FEEDS - SUPP ADDS - === */
+/*  NEW FEEDS - SUPP ADDS */
 .ad-card ,
 .html-feed-new-page-view .feed-b {
     display: none ;
 }
-/* (new142) NEW FEEDS - COMPACT - DUMMY - === */
+/* NEW FEEDS - COMPACT - DUMMY */
 .dummy-loader-container ,
 .dummy-loader-container.fading {
     display: inline-block !important;
@@ -266,399 +256,16 @@ p {
 border: 1px solid #333 !important;
 } 
 
-/* NEW FEEDS - WIDE - === */
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container ,
-html.scrolling-layout.html-feed-new-page-view  .fluid-centered {
-display: inline-block !important;
-    margin-right: auto ;
-    min-width: 100% ;
-    max-width: 100% ;
-   padding: 0 10px ;
-}
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column {
-display: inline-block !important;
-    width: 99.9% !important;
-}
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-new-tools-container {
-    position: fixed ;
-    width: 1748px ;
-    left: 0 ;
-    top: -20px ;
-    margin-top: 20px ;
-    padding: 16px 80px;
-    z-index: 5000 ;
-background: #333 ;
-border-bottom: 1px solid red ;
-}
-
-/* (new138) NEW FEEDS - RIGHT INFOS */
-.html-feed-new-page-view .feed-new-page-content-container .info-column {
-    position: fixed !important;
-    float: right ;
-    width: 300px ;
-    height: 800px ;
-    left: 1868px !important;
-    top: 70px ;
-    padding: 5px ;
-    border-radius: 5px 0 0 5px ;
-    z-index: 500 ;
-    transition: all ease 1s ;
-background: black ;
-border: 1px solid red ;
-}
-.html-feed-new-page-view  .feed-new-page-content-container .info-column:hover {
-    left: 1550px !important;
-    transition: all ease 2s !important;
-}
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container {
-    height: 800px ;
-    overflow: hidden ;
-    overflow-y: auto ;
-}
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container[style="top: -480px; bottom: initial;"] ,
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .info-column .info-content-container[style="bottom: -549px; top: initial;"] {
-    height: 800px ;
-    bottom: 0 !important;
-    top: -10px !important;
-}
-.html-feed-new-page-view  .feed-new-page-content-container .info-column:before {
-    content: "🔺" ;
-    position: absolute ;
-    right: 310px ;
-    top: 0 ;
-    transform: rotate(-90deg) ;
-    z-index: 600 ;
-    transition: right ease 1s ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .info-column:hover:before {
-    right: 0px ;
-    transform: rotate(90deg) ;
-    transition: right ease 1s ;
-}
-
-/* (new138) NEW FEEDS - CONTAINER - ITEMS */
-
-/* (new138) NEW FEEDS - PUB ? */
-.feed-layout[style="margin-bottom: 40px;"] ,
-.feed-layout[style="margin-bottom: 32px;"] ,
-.html-feed-new-page-view .feed-new-page-content-container  .feed-item:only-of-type {
-    display: none !important;
-}
-
-/* (new138) NEW FEEDS - ERROR MESSS (PB Friends / Familly ?) */
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container {
-    width: 97% !important;
-border: 1px solid red !important;
-}
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container  .error-message {
-    color: red ;
-}
-
-/* (new138) NEW FEEDS - DEFERED */
-.html-feed-new-page-view .feed-new-page-content-container .photo-card-view .photo-card .photo-card-content .photo-card-photo .photo.contain[data-defer-src*="staticflickr.com"] {
-background-color: blue !important;
-    opacity: 1 !important;
-}
-/* (new138) NEW FEEDS - FEEDS CONTAINER */
-.feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content {
-    top: 57px ;
-}
-
-/* ==== FEEDS ALL  ====== */
-.feed-layout{
-display: inline-block !important;
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 5px !important;
-/* border: 1px solid yellow; */
-}
-
-/* NEW FEEDS - RADIUS */
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view ,
-.html-feed-new-page-view .photo-card-view .photo-card ,
-.html-feed-new-page-view .photo-card-view .photo-card .photo-card-content ,
-.html-feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-layout .feed-item  {
-    border-radius: 5px !important;
-}
-.html-feed-new-page-view .photo-card-view .photo-card .link-footer {
-    border-radius: 0 0 5px 5px !important;
-}
-
-/* (new138) NEW FEEDS - OVERLAY VIEW */
-.feed-new-page-view .batch-overlay {
-    top: 53px ;
-}
-/* (new138) NEW FEEDS - SMALL */
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) {
-    display: inline-block ;
-    width: 49% ;
-    min-height: 350px ;
-    margin-right: 3px ;
-    padding: 5px ;
-} 
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view  {
-    display: inline-block ;
-    height: auto ;
-    width: 100% !important;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card {
-    display: flex;
-    justify-content: center ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .view.photo-card-view >.photo-card.theme-flat.layout-compact {
-    text-align: center ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .header {
-    position: relative ;
-    height: 30px ;
-    line-height: 30px ;
-    margin-bottom: 0px ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view .photo-card .photo-card-content {
-    flex: 1 1 auto ;
-    flex-direction: row ;
-    width: 100% ;
-    height: 100%;
-    min-height: 0;
-    align-items: center ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view .photo-card .photo-card-content .card-batch-layout {
-    flex-direction:  row !important;
-    min-height: 400px ;
-    width: 100% !important;
-}
- 
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .photo-card-photo {
-    flex: 1 1 300px ;
-    height: 100% ;
-    width: 100% ;
-}
-/* (new152) TEST VISITED */
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link {
-border: 1px solid gray!important;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link:visited {
-border: 1px solid red!important;
-}
-
-/* (new138) NEW FEEDS - ONLY ONE PHOTO ITEM */
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type {
-    position: absolute ;
-    display: flex ;
-    flex-direction: row ;
-    min-width: 100% ;
-    height: 400px ;
-    left: 0 ;
-    top: 0 ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  {
-    height: 400px ;
-    min-width: 100% ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card {
-    height: 400px ;
-    min-width: 100% ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content {
-    height: auto ;
-    min-width: 100% ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content .photo-card-photo {
-/* background: green !important; */
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content .photo-card-photo .photo {
-    height: 100% ;
-    max-height: 400px ;
-    width: auto ;
-    background-size: contain ;
-}
-/* ONLY ONE HOVER HEADER USER*/
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container {
-    display: inline-block ;
-    min-width: 40% ;
-    padding: 0 ;
-    text-align: center ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay {
-    display: inline-block ;
-    width: 100% ;
-    text-align: center ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container {
-    display: inline-block ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .avatar {
-    display: inline-block ;
-    float: left ;
-}
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .attribution {
-    display: inline-block ;
-    height: 24px;
-    line-height: 24px;
-}
-
-/* (new143) NEW FEEDS - OPTIONS */
-.fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view {
-    position: absolute ;
-    top: 0px ;
-}
-/* (new143) NEW FEEDS - MENU CONTEXT - === */
-.html-feed-new-page-view .droparound.menu.photo-card-header-context-menu {
-margin-top: 0px ;
-}
-
-
-/* ==== END - NEW FEEDS COMPACT ==== */
-
-/* (new138) END ===  TNEW FEEDS PAGES ===== */
-
-
-/* POOL INVIT CONFIR - === */
+/* POOL INVIT CONFIR */
 .group-18-plus-confirmation-view {
     position: absolute !important;
     top: 99px !important;
     left: 274px !important;
 }
 
-/* (new140) JU - POOL no BETA - ROWS - TEST ANTI JUMP - - === */
-#pool-photos.ju {
-    display: inline-block !important;
-    min-width: 1898px !important;
-    max-width: 1898px !important;
-/* height: 100vh !important; */
-/* min-height: 300vh !important; */
-    margin: 85px 0 0 0 !important;
-    left: 0 !important;
-    padding-left: 0 !important;
-    overflow: hidden !important;
-    overflow-y: auto !important;
-/* overscroll-behavior: none !important; */
-}
-/* JU ROW - SIDEBAR - CLOSE red */
-#pool-photos.ju .row:not(:empty) ,
-#pool-photos.ju.photo-display-container .row:not(:empty) {
-    display: inline-block !important;
-    width: 650px !important;
-    min-height: 280px !important;
-    max-height: 280px !important;
-    margin: 0px 200px -105px 70px !important;
-    overflow: visible !important;
-    transform: scale(0.47) !important;
-    transform-origin: top left !important;
-background: transparent !important;
-}
+/* JU POOL - CONTAINER */
 
-/* (new143) JU ROW - SIDEBAR - OPEN green */
-#pool-photos.ju[style*="padding-left: 345px;"] .row:not(:empty) ,
-#pool-photos.ju.photo-display-container[style*="padding-left: 345px;"] .row:not(:empty)  {
-    display: inline-block !important;
-    width: 100% !important;
-    min-width: 1200px !important;
-    max-width: 1200px !important;
-    min-height: 290px !important;
-    max-height: 290px !important;
-    margin: 0px -350px -100px 83px !important;
-    overflow: visible !important;
-    transform: scale(0.47) !important;
-    transform-origin: top left !important;
-background: transparent !important;
-}
-
-/* JU POOL - SIDEBAR OPEN - CONTAINER + PAGI - === */
-#pool-photos.ju[style*="padding-left: 345px;"] {
-    width: 100% !important;
-    padding-left: 0 !important;
-}
-#pool-photos.ju[style^="padding-left: 345px;"] +div+div +br + #paginator-module.Pages {
-    position: fixed ;
-    display: inline-block ;
-    width: 550px ;
-    float: none ;
-    min-height: 40px ;
-    max-height: 40px ;
-    top: 530px ;
-    margin-top: 0 ;
-    left: -235px ;
-    transform: rotate(90deg) ;
-}
-/* JU - IMAGE TOO NARROW - === */
-#pool-photos.ju .thumb.crazy-narrow  ,
-#pool-photos.ju .thumb.crazy-narrow  > span ,
-#pool-photos.ju .thumb.crazy-narrow  > span  a:first-of-type ,
-#pool-photos.ju .thumb.crazy-narrow  > span  a:first-of-type img ,
-#pool-photos.ju .thumb.too-narrow  ,
-#pool-photos.ju .thumb.too-narrow  > span ,
-#pool-photos.ju .thumb.too-narrow  > span  a:first-of-type ,
-#pool-photos.ju .thumb.too-narrow  > span  a:first-of-type img ,
-#pool-photos.ju .thumb.waytoo-narrow ,
-#pool-photos.ju .thumb.waytoo-narrow span.photo_container a:not(.spaceball) img {
-    min-width: 90px !important;
-}
-/* JU - HIDDEN IMAGE - === */
-#pool-photos.ju .pool-photo.photo-display-item.hideimg {
-    display: inline-block !important;
-    opacity: 1 !important;
-    transition: opacity 0.15s ease-in-out 0s;
-}
-/* JU - STRETCHED IMG PB - POST BUG - === */
-/* ALL */
-#pool-photos.ju .row .pool-photo.photo-display-item {
-    min-height: 365px !important;
-    max-height: 365px !important;
-    margin: 0 8px -10px 3px !important;
-    padding: 2px 2px 20px 2px ;
-}
-#pool-photos.ju .row .pool-photo.photo-display-item .thumb {
-    display: inline-block !important;
-    height: auto !important;
-    min-height: 350px !important;
-    max-height: 350px !important;
-}
-/* (new150) */
-#pool-photos.ju .row .pool-photo.photo-display-item .thumb  > span > a:first-of-type img {
-    display: inline-block !important;
-    height: auto !important;
-    max-height: 300px !important;
-    line-height: 25px !important;
-    white-space: pre-wrap !important;
-    overflow: hidden !important;
-}
-
-/* (new145) JUS - META - OWNER - === */
-.photo-display-container.ju .photo-display-item .meta a:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) {
-    margin-left: -17px ! important;
-}
-.photo-display-container.ju .photo-display-item:hover .meta a:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span {
-    background-color: transparent ;
-color: SlateGray ;
-}
-
-/* (new145) META */
-#pool-photos.ju.photo-display-container .pool-photo.photo-display-item .meta .inline-icons {
-    height: 20px ;
-    line-height: 20px ;
-    top: 75px !important;
-    bottom: 2px !important;
-}
-#pool-photos.ju.photo-display-container .pool-photo.photo-display-item .meta .inline-icons .fave-star-inline {
-    display: inline-block !important;
-    margin-right: 40px !important;
-}
-/* ALL */
-#pool-photos.ju .row .pool-photo.photo-display-item .photo_container a:first-of-type .pc_img.img[style*="background: "]:not([src="/images/spaceout.gif"])   {
-    height: auto !important;
-    background-size: contain !important;
-    background-position: center center !important;
-}
-
-/* ===== END  === JU - POOL no BETA  ==== */
-
-
-/* JU POOL - CONTAINER - === */
-
-/*  MORE SPINNER */
+/* MORE SPINNER */
 .flickr-dialog-infinite-spinner {
     bottom: 5% !important;
     opacity: 1;
@@ -666,8 +273,7 @@ color: SlateGray ;
     top: auto;
     z-index: 20;
 }
-
-/* (new133) SHARE - PHOTO - MODAL - ALL  */
+/* SHARE - PHOTO - MODAL - ALL */
 .modal.subview-modal.modal-restyle .view.fluid-share-panel-view.restyle  ,
 .modal.subview-modal.modal-restyle .share-panel-body ,
 .modal.subview-modal.modal-restyle .share-panels ,
@@ -682,7 +288,7 @@ color: SlateGray ;
     z-index: 5000 !important;
 background: black !important;
 }
-/* (new133) SHARE SOCIAL - ALL */
+/* SHARE SOCIAL - ALL */
 .fluid.html-photo-page-scrappy-view .link-type-contents {
     margin-top: -20px !important;
 }
@@ -702,7 +308,6 @@ background: black !important;
 .fluid.html-photo-page-scrappy-view .network-buttons + .grab-link-text-field  {
     width: 434px !important;
 }
-
 .fluid.html-photo-page-scrappy-view .link-type-contents .grab-link-reminders {
     margin: 10px auto;
     width: 425px !important;
@@ -714,7 +319,6 @@ background: black !important;
     white-space: pre-line !important;
     word-wrap: normal !important;
 }
-
 /* SHARE - EMBED .second-stop */
 .fluid.html-photo-page-scrappy-view .share-link-types.second-stop {
     position: relative !important;
@@ -738,7 +342,6 @@ background: black !important;
     margin-top: 4px !important;
     width: 274px !important;
 }
-
 /* SHARE - EMAIL */
 .fluid.html-photo-page-scrappy-view .link-type-content.email-sharing-panel {
     margin-left: 46px !important;
@@ -809,7 +412,7 @@ border: 1px solid #333;
     margin-top: 50px !important;
     width: 274px;
 }
-/* (new133) SHARE - CHOICE SIZE - MODAL */
+/* SHARE - CHOICE SIZE - MODAL */
 .fluid.html-photo-page-scrappy-view .droparound.over-modal:hover ,
 .fluid.html-photo-page-scrappy-view .droparound.over-modal {
     position: fixed !important;
@@ -820,8 +423,7 @@ border: 1px solid #333;
 border-top: 3px solid red ;
 z-index: 5000000 !important;
 }
-
-/* POP MODAL - ACCOUNT - == */
+/* POP MODAL - ACCOUNT */
 .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.user-account-card-droparound {
     left: 10px !important;
     top: 41px !important;
@@ -829,14 +431,12 @@ z-index: 5000000 !important;
 .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.user-account-card-droparound .droparrow.down {
     margin-right: -20px !important;
 }
-
-/* TOP - NAG LIMIT / LOG BAN  === */
+/* TOP - NAG LIMIT / LOG BAN */
 .featured-toast-view .featured-toast {
     opacity: 0.5 !important;
     box-shadow: none !important;
 }
-
-/* TOP NAV - FLUID TOP HEAD - === */
+/* TOP NAV - FLUID TOP HEAD */
 html.scrolling-layout #content .featured-banner-content.fluid-centered ,
 html.scrolling-layout #content .fluid-subnav-shim .subnav-content.fluid-centered  {
     display: inline-block !important;
@@ -844,7 +444,7 @@ html.scrolling-layout #content .fluid-subnav-shim .subnav-content.fluid-centered
     max-width: 100% !important;
     padding: 0px !important;
 }
-/* MAKE HIDDEN IMAGES VISIBLE - POOL JU - === */
+/* MAKE HIDDEN IMAGES VISIBLE - POOL JU */
 .hideimg .img {
     visibility: visible !important;
 }
@@ -857,7 +457,7 @@ html.scrolling-layout #content .fluid-subnav-shim .subnav-content.fluid-centered
 
 /* START == TEST ZONE ==== */
 
-/* STREAM - EDIT BUT - === */
+/* STREAM - EDIT BUT */
 .secondary-tools .edit-link {
     display: inline-block;
     float: right;
@@ -873,16 +473,15 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/uy/build/images/sprites/ico
     margin-right: 5px !important;
     margin-top: 9px;
 }
-
-/* FIX PB TOP NAV - === */
+/* FIX PB TOP NAV */
 .fluid .view.global-nav-view, .fluid .view.global-nav-view.requiredToShowOnServer ,
 .global-nav-view .global-nav-shim.top-banner {
     height: 50px !important;
 }
 
-/* START=== FLICKR - PHOTO - MINI PHOTO SLIDER ===== */
+/* START === FLICKR - PHOTO - MINI PHOTO SLIDER ===== */
 
-/* (new155) BACK TO */
+/* BACK TO */
 .photo-well-scrappy-view .height-controller .entry-type  {
     position: fixed;
     top: 887px;
@@ -895,9 +494,7 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/uy/build/images/sprites/ico
     opacity: 0.5 ;
     border: 1px solid #404040;
 }
-
-/* (new153) PHOTO - MINI PHOTO SLIDER  - HOVER NAVIGATE TARGET - === */
-
+/* PHOTO - MINI PHOT SLIDER - HOVER NAV TARGET */
 .context-slider-scrappy-view.hover ,
 .context-slider-scrappy-view {
     position: absolute;
@@ -913,7 +510,6 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/uy/build/images/sprites/ico
 background-image: none !important;
 background-color: white;
 }
-
 .context-slider-scrappy-view:hover ,
 .context-slider-scrappy-view.hover:hover {
     position: fixed !important;
@@ -949,7 +545,7 @@ background-color: white;
     top: 14px;
     opacity: 1;
     white-space: nowrap ;
-    transition: none !important;;
+    transition: none !important;
 }
 .context-slider-scrappy-view .context-slider.small-slider ,
 .context-slider-scrappy-view .context-slider.small-slider > .wrapper.is-ready ,
@@ -960,8 +556,6 @@ background-color: white;
 opacity: 1 !important;
     transition: none !important;
 }
-
-
 .context-slider-scrappy-view .context-slider.small-slider > .wrapper.is-ready .slider {
     position: fixed !important;
     min-width: 100px ;
@@ -988,9 +582,6 @@ opacity: 1 !important;
     max-height: 25px ;
 
 }
-/* .context-slider-scrappy-view:not(.hover):not(:hover)  > .wrapper.is-ready ,  ,
-.context-slider-scrappy-view:not(:hover) .wrapper.is-ready.clear-float.small-photos  */
-
 .context-slider-scrappy-view.hover:not(:hover) .context-slider.big-slider > .wrapper ,
 .context-slider-scrappy-view:not(:hover) .context-slider.big-slider > .wrapper {
     min-width: 100px ;
@@ -1038,8 +629,7 @@ border-right: 1px solid yellow !important;
 .context-slider-scrappy-view.hover:hover .context-slider.big-slider > .wrapper .slider {
     transition: none !important;
 }
-
-/* (new153) for INDICATOR ORIGIN */
+/* for INDI ORIGIN */
 .view.photo-well-scrappy-view .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav ,
 .view.photo-well-scrappy-view .context-slider-scrappy-view .context-slider > .nav {
     position: fixed !important;
@@ -1060,7 +650,6 @@ border-right: 1px solid yellow !important;
     display: inline-block !important;
     top: 516px;
 }
-
 .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav.nav-r span ,
 .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav.nav-l span ,
 .context-slider-scrappy-view  .context-slider.big-slider > .nav.nav-r span ,
@@ -1084,9 +673,8 @@ background-image: none;
 }
 .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav.nav-r span ,
 .context-slider-scrappy-view  .context-slider.big-slider > .nav.nav-r span {
-left: 0px !important;
+    left: 0px !important;
     top: 7px !important;
-
 }
 .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav.nav-r span:hover ,
 .context-slider-scrappy-view.hover  .context-slider.big-slider > .nav.nav-l span:hover ,
@@ -1094,7 +682,6 @@ left: 0px !important;
 .context-slider-scrappy-view .context-slider > .nav-r span:hover {
     opacity: 1  !important;
 }
-
 .context-slider-scrappy-view .context-slider > .nav-l span:before ,
 .context-slider-scrappy-view .context-slider > .nav-r span:before {
 position: absolute !important;
@@ -1129,8 +716,7 @@ color: tomato ;
     left: 0 !important;
 transition: none !important;
 }
-
-/* MINI SLIDER THUMB - INDIC - CURRENT PHOTO - ==== */
+/* MINI SLIDER THUMB - INDIC - CURRENT PHOTO */
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage.currentImage {
     outline: 4px dashed red !important;
 }
@@ -1144,7 +730,7 @@ transition: none !important;
     margin-top: 35px ;
     margin-left: -10px ;
     font-size: 10px ;
-    color: red ;
+color: red ;
 }
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage:first-of-type {
     outline: 2px solid blue ;
@@ -1160,19 +746,19 @@ transition: none !important;
     margin-top: 35px ;
     margin-left: -10px ;
     font-size: 10px ;
-    color: red ;
     text-align: center ;
+color: red ;
 }
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage.no-outline {
     outline: 4px dashed black ;
 }
-/* == END == PHOTO - MINI SLIDER THUMB ==== */
+/* == END == PHOT - MINI SLIDER THUMB ==== */
 
-/* A BIT MORE ABOUT YOU - ===*/
+/* A BIT MORE ABOUT YOU */
 #Main>textarea[cols="78"][ rows="7"] {
     margin-left: 77px;
 }
-/* INVITES NO FLICKR MEMBER - SHOW ADVANCED FORM - === */
+/* INVITES NO FLICKR MEMBER - SHOW ADVANCED FORM */
 #advancedInvites {
     position: absolute ;
     display: inline-block !important;
@@ -1219,23 +805,21 @@ textarea#advanced_users {
 /* ====== TEST ZONE ======= */
 
 
-/* FLUID - ALL - === */
+/* FLUID - ALL */
 .fluid h5 {
     line-height: 10px ;
 }
 .fluid.html-profile-page-view.scrolling-layout h1.truncate {
     width: 364px ;
 }
-
-/* PROFILE ABOUT - === */
+/* PROFILE ABOUT */
 .fluid.html-profile-page-view .profile-page-view .profile-container {
     margin-top: -65px ;
 }
 .profile-bio-page-view .bio-description .description::after {
     z-index: 0 !important;
 }
-   
-/* PROFILE ABOUT/STREAM - POPUP MENU - FOLLOW - === */
+/* PROF ABOUT/STREAM - POP MENU - FOL */
 .fluid.html-photostream-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound .view.relationship-menu-view ,
 .fluid.html-profile-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound .view.relationship-menu-view {
     position: fixed !important;
@@ -1244,14 +828,13 @@ textarea#advanced_users {
     right: 20px !important;
     top: 140px !important;
     padding: 5px ;
-    border: 1px solid #404040 ;
-    box-shadow: 3px 3px 2px black ;
+border: 1px solid #404040 ;
+box-shadow: 3px 3px 2px black ;
 }
 .relationship-menu-view ul li label {
     color: gold ;
 }
-
-/* PROFILE ABOUT - FILTER - POPUP MENU - "MOST..." - === */
+/* PROF ABOUT - FILTER - POPUP MENU - "MOST..." */
 .fluid.html-profile-page-view.scrolling-layout .view.fluid-droparound-view .droparound.menu ,
 .fluid.html-profile-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.menu  {
     display: inline-block !important;
@@ -1264,7 +847,7 @@ textarea#advanced_users {
 .fluid.html-profile-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.menu  .droparrow {
     left: 18px !important;
 }
-/* PROFILE ABOUT - STATS: Views / Tags /Geo / FAVS / Groups - === */
+/* PROFILE ABOUT - STATS: Views / Tags /Geo / FAVS / Groups */
 .profile-bio-page-view .general-stats {
     position: absolute ;
     width: 663px;
@@ -1284,8 +867,7 @@ textarea#advanced_users {
 .general-stats ul li span {
     margin-bottom: 14px ;
 }
-
-/* PROFILE ABOUT - PHOTO COUNT - BLOCK / LOCATION / JOINED */
+/* PROF ABOUT - PHOT COUNT - BLOCK/LOCAT/JOIN */
 .profile-bio-page-view .general-stats ul li {
     display: inline-block;
     height: 30px;
@@ -1345,7 +927,6 @@ color: gold !important;
     border-radius: 3px 0 0 3px ;
 border: 1px solid gray ;
 }
-
 /* STREAM - PB PHO COUNT */
 .metadata-flexer p:only-of-type {
     margin-left: 5px !important;
@@ -1383,8 +964,7 @@ border: 1px solid gray ;
     min-height: 100%;
     display: inline-block;
 }
-
-/* (new143) PROF - USER POOLS PAGE - === */
+/* PROF - USER POOLS PAGE */
 .view.person-groups-page-view.flickr-view-root-view .view.fluid-magic-subnav-view {
     margin-bottom: -77px ;
 }
@@ -1479,34 +1059,32 @@ border-bottom: 1px solid red !important;
     white-space: nowrap ;
     overflow: hidden ;
 }
-/* (new143) */
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked ~ td.align-right a:after {
-font-size: 10px ;
+    font-size: 10px ;
 color: gold ;
 }
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked + td.align-right a:after {
-content: "Mbs" ;
+    content: "Mbs" ;
 }
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked + td + td.align-right a:after {
-content: "Phot" ;
+    content: "Phot" ;
 }
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked + td + td + td.align-right a:after {
-content: "Phot Last" ;
+    content: "Phot Last" ;
 }
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked + td  + td + td + td.align-right a:after {
-content: "Disc" ;
+    content: "Disc" ;
 }
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked + td + td  + td + td + td.align-right a:after {
-content: "Last Disc" ;
+    content: "Last Disc" ;
 }
-
-/* FAV BACKGROUND */
+/* FAV BACKG */
 .fluid table tr.show-fave:hover::before {
     margin-left: -25px;
     cursor: pointer ;
 background-position:  97% center;
 }
-/* REMOVE / REDUCE IMAGE IN COMMENTS (SUPP UGLY BADGE) - === */
+/* REMOVE / REDUCE IMG IN COM (SUPP UGLY BADGE) */
 .fluid.html-photo-page-scrappy-view .view.sub-photo-comments-view .comments-holder .comment-content img.notsowide[src*=".gif"] ,
 .sub-photo-comments-view .photosInComments .comments .comment .comment-content img ,
 .sub-photo-comments-view .photosInComments .comments .comment .comment-content a:not([href$=".gif"]) img ,
@@ -1529,12 +1107,11 @@ ul.act-details div.act-content > div img {
 .sub-photo-comments-view .photosInComments .comments .comment .comment-content  img[src*=".gif"] {
     display: inline-block !important;
 }
-/* PHOTO ITEM BACKGROUND - ALL - === */
+/* PHOT ITEM BACKG - ALL */
 .photo-display-item {
     background: transparent !important;
 }
-
-/* GALLERY - CREATE - === */
+/* GAL - CREATE */
 .album-selection .album-selection-list-item.album-selection-create-switch {
     position: fixed !important;
     display: inline-block !important;
@@ -1627,7 +1204,7 @@ background: red !important;
     overflow: hidden ;
     overflow-y: auto ;
 }
-/* SET / ALBUMS (??) - TOP HEADER - TOOL / COLLECTIONS - === */
+/* SET/ALB(??) - TOP HEADER - TOOL/COLL */
 .fluid.html-albums-list-page-view #content .view.album-list-toolbar-view.fluid-centered {
     height: 25px ;
     width: 100% ;
@@ -1657,9 +1234,7 @@ background: red !important;
     top: 10px ;
     right: 0 ;
 }
-
-/* (new134) ALBUM - TOP NAVBAR FIXED - === */
-
+/* ALB - TOP NAV FIXED */
 .html-album-page-view .album-page-view .album-toolbar-view > .album-toolbar-content  ,
 .html-album-page-view .view.album-toolbar-view {
     position: fixed ;
@@ -1694,13 +1269,11 @@ background: red !important;
 .html-album-page-view .view.album-toolbar-view button {
     margin-right: 150px !important;
 }
-
-/* ALBUM - SHOW HIDDEN immediatly when loading- === */
+/* ALB - SHOW HIDDEN immediatly when loading */
 .fluid.html-albums-list-page-view .photo-list-album-view {
     opacity: 1 ;
 }
-
-/* (new141) POOL - SEND INVIT - ==== */
+/* POOL - SEND INVIT */
 #invite-friends {
     margin-top: 80px ;
 }
@@ -1723,8 +1296,7 @@ background: red !important;
 #Main .subnav-refresh.groups.subnav-view.subnav-state-ready + script + script + h1 +  table tbody tr td#Hint  p {
     width: 430px !important;
 }
-
-/* (new141) POOL INVITATION - "The invitatio has been sent to ... " - CONATINER - === */
+/* POOL INVITATION - "The invitatio has been sent to ... " - CONAT */
 #Main > #subnav-template-positionmask + h1#Tertiary +table #GoodStuff {
     position: relative ;
     display: inline-block ;
@@ -1759,8 +1331,7 @@ border: 1px solid gray ;
     overflow: hidden ;
     text-overflow: ellipsis ;
 }
-
-/* VIDEO - === */
+/* VIDEO */
 .videoplayer ,
 .video-js {
     position: relative;
@@ -1774,18 +1345,16 @@ background-color: transparent !important;
     background-position: 50% 50%;
 }
 
-/* VIDEO - CONTROL BAR - ALWAYS VISIBLE - === */
+/* VIDEO - CONTROL BAR - ALWAYS VISIBLE */
 .video-js .vjs-control-bar {
     visibility: visible !important;
     opacity: 1 !important;
     transform: translatey(33px) !important;
 }
+/* (new159) FLUID - DROPAROUD TXT "HELLO ..." - OTHERS */
+.fluid:not(.html-group-discussion-page-view):not(.html-group-admin-pending-page-view):not(.html-feed-new-page-view):not(.html-profile-page-view):not(.html-gallery-page-view):not(.html-group-discussions-list-page-view):not(.html-photo-page-scrappy-view):not(.html-group-home-page-view):not(.html-group-pool-page-view):not(.html-photostream-page-view):not(.html-favorites-page-view):not(.html-empty-page-view):not(.html-albums-list-page-view):not(.html-album-page-view):not(.html-photostream-page-view):not(.html-search-photos-unified-page-view):not(.html-search-groups-page-view):not(.html-photostream-edit-page-view) .view.fluid-droparound-view.flickr-view-root-view .droparound:not(.download-dialog-tooltip):not(.gallery-photo-remark):not(.notifs-droparound),
 
-
-/* (new144) FLUID - DROPAROUD TXT "HELLO ..." - OTHERS - === */
-.fluid:not(.html-group-admin-pending-page-view):not(.html-feed-new-page-view):not(.html-profile-page-view):not(.html-gallery-page-view):not(.html-group-discussions-list-page-view):not(.html-photo-page-scrappy-view):not(.html-group-home-page-view):not(.html-group-pool-page-view):not(.html-photostream-page-view):not(.html-favorites-page-view):not(.html-empty-page-view):not(.html-albums-list-page-view):not(.html-album-page-view):not(.html-photostream-page-view):not(.html-search-photos-unified-page-view):not(.html-search-groups-page-view):not(.html-photostream-edit-page-view) .view.fluid-droparound-view.flickr-view-root-view .droparound:not(.download-dialog-tooltip):not(.gallery-photo-remark),
-
-.fluid:not(.html-group-admin-pending-page-view):not(.html-feed-new-page-view):not(.html-profile-page-view):not(.html-gallery-page-view):not(.html-group-discussions-list-page-view):not(.html-photo-page-scrappy-view):not(.html-group-home-page-view):not(.html-group-pool-page-view):not(.html-photostream-page-view):not(.html-favorites-page-view):not(.html-empty-page-view):not(.html-albums-list-page-view):not(.html-album-page-view):not(.html-photostream-page-view):not(.html-search-photos-unified-page-view):not(.html-search-groups-page-view):not(.html-photostream-edit-page-view) .view.fluid-droparound-view.flickr-view-root-view .droparound:not(.download-dialog-tooltip):not(.gallery-photo-remark) {
+.fluid:not(.html-group-discussion-page-view):not(.html-group-admin-pending-page-view):not(.html-feed-new-page-view):not(.html-profile-page-view):not(.html-gallery-page-view):not(.html-group-discussions-list-page-view):not(.html-photo-page-scrappy-view):not(.html-group-home-page-view):not(.html-group-pool-page-view):not(.html-photostream-page-view):not(.html-favorites-page-view):not(.html-empty-page-view):not(.html-albums-list-page-view):not(.html-album-page-view):not(.html-photostream-page-view):not(.html-search-photos-unified-page-view):not(.html-search-groups-page-view):not(.html-photostream-edit-page-view) .view.fluid-droparound-view.flickr-view-root-view .droparound:not(.download-dialog-tooltip):not(.gallery-photo-remark):not(.notifs-droparound) {
     margin-left: -79.6% !important; 
     margin-top: 35px !important;
     z-index: 500000 !important;
@@ -1794,8 +1363,7 @@ background-color: transparent !important;
     left: auto;
     right: 298px !important;
 }
-
-/* FAVS / STREAM - HELLO MENU - === */
+/* FAVS / STREAM - HELLO MENU */
 .fluid.html-photostream-page-view  .view.fluid-droparound-view.flickr-view-root-view .droparound.html ,
 .fluid.html-favorites-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.html {
     position: absolute !important;
@@ -1808,20 +1376,18 @@ background-color: transparent !important;
     left: 25px !important;
     right: 10px;
 }
-
-/* FAVS - MORE DROPAROUND MENU - === */
+/* FAVS - MORE DROP MENU */
 .fluid.html-favorites-page-view .view.fluid-droparound-view .droparound.menu  {
     margin-left: -20px !important;
     margin-top: 5px !important;
     z-index: 500000 !important;
 }
-/* FAVS - BETA GOUPE ABOUT - SHOWING XX ROWS MENU - CARRET  - === */
+/* FAVS - BETA POOL ABOUT - SHOW XX ROWS MENU - CARRET  */
 .fluid.html-favorites-page-view .view.fluid-droparound-view .droparound.menu .droparrow.down ,
 .fluid.html-group-home-page-view .view.fluid-droparound-view .droparound.menu .droparrow.down {
     right: 10px !important;
 }
-
-/* ALL SIZE MENU - === */
+/* ALL SIZE MENU  */
 .fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.html.download-dialog-tooltip.auto-size {
     position: fixed !important;
     display: inline-block !important;
@@ -1891,18 +1457,17 @@ background: white !important;
     width: 10px !important;
 background-position: 0.5px -22px !important;
 }
-
-/* NAVBAR OPTIONS - FAVs/ARCHIVEs/YOURS CONTACTS - ALL - === */
+/* NAVBAR OPT - FAVs/ARCH/YOURS CTS - ALL */
 .searchified-options .item-divider {
     border-right: 2px solid #656c7a;
     width: 1px;
 }
-/* NAVBAR OPTIONS - ARCHIVES - BLOCK "DATE TAKEN" (NB items)" - === */
+/* NAVBAR OPT - ARCH - BLOCK "DATE TAKEN" (NB items)" */
 #archives-navigation {
     border-radius: 3px !important;
     padding: 1px 5px 2px !important;
 }
-/* NAVBAR OPTIONS - DIVERS - === */
+/* NAVBAR OPT - DIVERS */
 .searchified-options-view ,
 .searchified-options-sort  ,
 #archives-navigation  ,
@@ -1910,13 +1475,13 @@ background-position: 0.5px -22px !important;
     border-radius: 3px !important;
     padding: 1px 5px 2px !important;
 }
-/* POOLS - TITLE - TXT " This group is for member only " - === */
+/* POOLS - TITLE - TXT " This group is for member only " */
 #main > #subnav-refresh + script#subnav-template-photopicker + script#subnav-template-positionmask +  h2 {
     height: 22px !important;
     margin-top: 81px !important;
     text-align: center !important;
 }
-/* MAPS PAGES - === */
+/* MAPS PAG */
 #whole_holder {
     height: 958px;
     width: 1908px;
@@ -1953,8 +1518,7 @@ background-position: 0.5px -22px !important;
     background: none !important;
     background-image: none !important;
 }
-
-/* (new155) CAMERA ROLL - === */
+/* (CAMERA ROLL */
 .cameraroll-tools-view.restyle .toolbar {
     border-top: 1px solid gray !important;
     border-bottom: 1px solid gray !important;
@@ -1968,7 +1532,7 @@ background-position: 0.5px -22px !important;
 .fluid .cameraroll-edit-dialog .cameraroll-edit-photos-meta-container > .tags-container {
     width: 100% !important;
 }
-/* ORGANIZE - === */
+/* ORGANIZE */
 .gray_menu_buttons li span.button {
     padding: 1px 0 !important;
 }
@@ -1976,8 +1540,7 @@ li.no_menu_li .button span:hover {
     border-radius: 6px !important;
     padding: 3px 6px 1px 6px !important;
 }
-
-/* STATS - NO PRO - === */
+/* STATS - NO PRO */
 .empty-page-view .empty-page-stats .pro-badge {
     width: 50px !important;
     height: 50px !important;
@@ -2000,11 +1563,10 @@ background: transparent !important;
     left: 0 ;
     font-size: 50px ;
     text-align: center ;
-    color: red ;
     opacity: 1 ;
     z-index: 500 ;
+color: red ;
 }
-
 /* (new143) POOL SMALL */
 #pool-photos.sm.photo-display-container ~ #feeds.clearfix.next-to-slideshow-link {
     position: absolute ;
@@ -2016,7 +1578,7 @@ background: transparent !important;
     bottom: 0px;
     margin-left: 20px ;
 }
-/* POOL - QUITT BUTTON - ==== */
+/* POOL - QUITT BUT */
 #group-sidebar .DeleteButt {
     position: fixed !important;
     float: none !important;
@@ -2030,7 +1592,7 @@ background: transparent !important;
     transform: rotate(90deg) !important;
     z-index: 80000 !important;
 }
-/* EDIT REALTION SHIP - === */
+/* EDIT REALTION SHIP */
 #editRelationshipDialog {
     position: absolute;
     display: inline-block;
@@ -2042,7 +1604,7 @@ background: transparent !important;
     box-shadow: 3px 5px 3px black !important;
     z-index: 20 !important;
 }
-/* (new14 !imp) VISITED INDICATOR - IMAGE IN POOL - === */
+/* VISITED INDICATOR - IMAGE IN POOL */
 /* JU */
 .photo-display-container.ju .photo_container a:not(.spaceball):before {
     content: "" ;
@@ -2058,8 +1620,7 @@ background: #222 ;
     opacity: 1 ;
 background: green !important;
 }
-
-/* PHOTO OFF - VISITED */
+/* PHOT OFF - VISITED */
 .PhotosOfList {
     font-size: 0px!important;
 }
@@ -2075,7 +1636,7 @@ background: green !important;
     opacity:1!important;
     outline: 1px solid green!important;
 }
-/* (new152) VISITED - Sm/Sq */
+/* VISITED - Sm/Sq */
 .photo-display-container .photo_container >a:before {
     content: ". " ;
     position: absolute ;
@@ -2094,11 +1655,9 @@ background: black ;
     opacity:1 ;
 background: green ;
 }
-
-
-/* (new149)  TOGGLE POOL BETA - SUPP TXT "GO BACK POOL NEW  EXPERIENCE" -  === */
+/* (new159)  TOGGLE POOL BETA - SUPP TXT "GO BACK POOL NEW  EXP" */
 .opt-out-bug {
-    position: absolute !important;
+    position: fixed !important;
     display: inline-block ;
     width: 190px ;
     height: 20px !important;
@@ -2106,27 +1665,40 @@ background: green ;
     top: 35px  !important;
     padding: 2px ;
     border-radius: 5px ;
-    z-index: 2000 ;
     opacity: 0.4 ;
+    z-index: 70000 !important;
 }
 .opt-out-bug:hover {
     opacity: 1 ;
 }
+/* (new159) BETA TOOGLE - POOL HOME/DISC - POLL */
+.fluid.html-group-discussion-page-view   .view.opt-out-widget-view ,
+.fluid.html-group-discussions-list-page-view .view.opt-out-widget-view ,
+.fluid.html-group-pool-page-view .view.opt-out-widget-view  ,
+.fluid.html-group-home-page-view .view.opt-out-widget-view {
+    position: fixed !important;
+    top: 27px  !important;
+z-index: 5000 !important;
+}
+.fluid.html-group-discussions-list-page-view  .view.opt-out-widget-view .opt-out-widget,
+.fluid.html-group-pool-page-view .view.opt-out-widget-view .opt-out-widget.hugging-footer {
+    width: 142px !important;
+    bottom: 0px !important;
+}
 /* BETA */
+.opt-out-widget.hugging-footer ,
 .view.opt-out-widget-view  {
     position: absolute !important;
     display: inline-block ;
-    width: auto;
+    width: 150px !important;
     height: 20px ;
     right: 10px !important;
     top: 55px  !important;
     border-radius: 5px !important;
 }
-.fluid.html-group-pool-page-view .view.opt-out-widget-view {
-    top: 75px  !important;
-}
-.fluid.html-group-home-page-view .view.opt-out-widget-view {
-    top: 115px  !important;
+.opt-out-widget.hugging-footer  {
+    right: 5px !important;
+    top: 10px  !important;
 }
 .opt-out-widget {
     position: relative ;
@@ -2144,7 +1716,6 @@ background: green ;
     padding: 0 3px ;
     border-radius: 5px ;
 border: none ;
-
 }
 .opt-out-bug button {
     border-radius: 5px !important;
@@ -2200,8 +1771,7 @@ background: red !important;
     transform: scale(0.32) ;
 background: green !important;
 }
-
-/* (new149) FLUID - POOL BETA - BUTTON TOOGLE BETA - === */
+/* FLUID - POOL BETA - BUTTON TOOGLE BETA - === */
 .fluid .label-beta {
     padding: 1px 45px 1px 3px !important;
 }
@@ -2248,24 +1818,22 @@ background: green !important;
     opacity: 1 ;
     transform: scale(1.4) ;
 }
-
-
-/* WHO FAVED - === */
+/* WHO FAVED */
 #faves-right {
     float: left ! important;
     width: 900px ! important;
     margin-left: 225px!important;
 }
-/* OVERLAY - POINTER EVENTS - === */
+/* OVERLAY - POINTER EVENTS */
 #global-dialog-background {
     display: none;
     pointer-events: none !important;
 }
-/* PHOTO - VID WRAPPER - === */
+/* PHOT - VID WRA */
 .video-wrapper {
     width: 1160px !important;
 }
-/* COMMENTS DELETE - POPUP CONFIRMATION - === */
+/* COM DEL - POPUP CONFIR */
 .flickr-dialog.flickr-dialog-confirmation[role="alertdialog" ] {
     position: absolute ! important;
     width: 238px !important;
@@ -2293,11 +1861,11 @@ background: green !important;
 .flickr-dialog .button-container{
     background: transparent ! important;
 }
-/* USER BUDY MENU - === */
+/* USER BUDY MENU */
 .personmenu .personmenu-bd ul li {
     height: 18px!important;
 }
-/* MENU ITEM - BLOCK - === */
+/* MENU ITEM - BLOCK */
 .personmenu .personmenu-bd ul li.personmenu-block a ,
 #personmenu_block_link {
     text-align: center !important;
@@ -2305,8 +1873,7 @@ background: green !important;
 .personmenu .personmenu-bd {
     top: 60px !important;
 }
-
-/* HELP - MESSAGE HIGT TOP - === */
+/* HELP - MESS HIGT TOP */
 #photogne-bucket-help {
 	position: absolute!important;
     line-height: 1.4;
@@ -2317,7 +1884,7 @@ background: green !important;
     padding: 1px 5px 1px 30px !important;
     opacity: 0.7 !important;
 }
-/* POOL MANAGE - REMOVE MEMBER - === */
+/* POOL MANAGE - REMOVE MEMBER */
 .char_search + #MemberList tr td[colspan="3"] form {
     position: absolute !important;
     display: inline-block !important;
@@ -2329,7 +1896,6 @@ background: green !important;
 .char_search + #MemberList tr td[colspan="3"] form #photo_remove{
     margin-left: -2px !important;
 }
-
 .char_search + #MemberList tr td[colspan="3"] form .Butt {
     display: inline-block !important;
     padding: 0 !important;
@@ -2342,14 +1908,11 @@ background: green !important;
     margin-left: -57px !important;
     padding: 0 !important;
 }
-
-/* PAGINATOR POOL TOPIC - === */
+/* PAGI POOL TOPIC */
 .group-topics #paginator-module.Pages {
     margin-top: 98px !important;
 }
-
-
-/* SEARCH PAGES - ADVANCED PANEL - === */
+/* SEARCH PAG - ADVANCED PANEL */
 .fluid.html-search-photos-unified-page-view .search-photos-unified-page-view .search-subnav.using-slender-advanced-panel {
     position: fixed;
     box-sizing: border-box;
@@ -2458,7 +2021,7 @@ ul.size-list li:not(.selected) {
     margin-top: 32px !important;
     margin-bottom: -90px !important;
 }
-/* SEARCH - PHOTO ==== */
+/* SEARCH - PHOTO */
 .ui-display-wrapper {
     position: absolute;
     display: inline-block !important;
@@ -2513,7 +2076,6 @@ body.zeus #Main #BodyContainer.noPivots .AboutResults {
     top: -32px!important;
     left: 300px ! important;
 }
-/* (new134) */
 #Main > table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing):not(.acct-sett).DiscussionResults {
     display: inline-block ! important;
     width: 100%;
@@ -2583,7 +2145,7 @@ outline: 1px solid gray ! important;
     margin: 0;
     padding-left: 9px !important;
 }
-/* COLUMN - SEARCH - === */
+/* COLUMN - SEARCH */
 body.zeus #Main #BodyContainer.noPivots #ResultsContainer table.GroupsResults tbody {
     -moz-column-count: 5 ! important;
     -moz-column-gap: 20px !important;
@@ -2660,8 +2222,7 @@ body.zeus #Main #BodyContainer.noPivots #ResultsContainer table.GroupsResults tb
     height: 77px ! important;
     outline: 1px solid gray ! important;
 }
-
-/* FORUM SEARCH - === */
+/* FORUM SEARCH */
 .Areas {
     margin-top: -15px !important;
 }
@@ -2670,8 +2231,7 @@ body.zeus #Main #BodyContainer.noPivots #ResultsContainer table.GroupsResults tb
     top: 15px ;
     right: 59px ;
 }
-
-/* SEARCH - === */
+/* SEARCH */
 #Main div.forced-width {
     width: 1920px ;
 }
@@ -2691,14 +2251,13 @@ body.zeus #Main #BodyContainer.noPivots #ResultsContainer table.GroupsResults tb
     margin-left: -485px ;
     top: -109px ;
 }
-
-/* TOPIC LAST PAGI - === */
+/* TOPIC LAST PAGI */
 #DiscussTopic + #paginator-module:last-child {
     display: inline-block ;
     position: relative ;
     width: 700px ;
 }
-/* (new141) STICK - FORUM HELP -  TOPIC TOP LEFT PANEL - === */
+/* STICK - FORUM HELP -  TOPIC TOP LEFT PANEL */
 #Main table tbody tr td#Hint {
     position: sticky ;
     display: inline-block  ;
@@ -2736,11 +2295,9 @@ border: 1px solid tan ;
     overflow: hidden ;
     overflow-y: auto ;
 }
-
 #Main table tbody tr td#Hint .TopicListing:first-of-type tbody {
     padding-top: 45px ;
 }
-/* (new143) */
 #Main table tbody tr td#Hint .TopicListing:last-of-type tbody {
     min-height: 460px ;
     max-height: 460px ;
@@ -2762,7 +2319,7 @@ border: 1px solid tan ;
     text-align: center ;
 border-bottom: 1px solid red ;
 }
-/* (new143) BOT */
+/* BOT */
 #Main table tbody tr td#Hint .TopicListing:last-of-type h4 {
     top: 5px ;
 }
@@ -2776,15 +2333,14 @@ border-bottom: 1px solid red ;
 #Main table tbody tr td#Hint .TopicListing:last-of-type tr:first-of-type td {
     top: 75px ;
 }
-/* (new143) TOP */
+/* TOP */
 #Main table tbody tr td#Hint .TopicListing:first-of-type tr:first-of-type td {
     top: 5px ;
 }
 #Main table tbody tr td#Hint .TopicListing:first-of-type tr:first-of-type td  h4 {
     top: 0px ;
 }
-
-/* FORUM HELP - HINT TOP TOPIC LEFT PANEL - TABLE HEAD - === */
+/* FORUM HELP - HINT TOP TOPIC LEFT PANEL - TABLE HEAD */
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) tbody > tr:first-of-type td:first-of-type {
     width: 800px ;
 }
@@ -2792,10 +2348,10 @@ border-bottom: 1px solid red ;
     width: 90px ;
     text-align: center ;
 }
-/* FORUM HELP - HINT TOP TOPIC LEFT PANEL - USER PRO BADGE - === */
+/* FORUM HELP - HINT TOP TOPIC LEFT PANEL - USER PRO BADGE */
 
 
-/* (new156) POOL - MESS EMTY POOL - "NOTHING" - === */
+/* POOL - MESS EMTY POOL - "NOTHING" */
 #pool-photos #empty-state ,
 /* SM */
 #pool-photos.sm.photo-display-container #empty-state {
@@ -2818,7 +2374,6 @@ border: 1px solid peru ;
     transform: scale(2) ;
 border: 1px solid peru ;
 }
-
 #pool-photos #empty-state p a ,
 #pool-photos #empty-state p  ,
 #pool-photos #empty-state h2 {
@@ -2829,8 +2384,7 @@ border: 1px solid peru ;
     white-space: pre-wrap ;
     text-align: center ;
 }
-
-/* MY STREAM - STAT IN NAV BAR - === */
+/* MY STREAM - STAT IN NAV BAR */
 #subnav-refresh.subnav-refresh .subnav-middle .subnav-holder ul#button-bar.nav-links li.sn-navitem:nth-child(1) ,
 #subnav-refresh.subnav-refresh .subnav-middle .subnav-holder ul#button-bar.nav-links li.sn-navitem:nth-child(2),
 #subnav-refresh.subnav-refresh .subnav-middle .subnav-holder ul#button-bar.nav-links li.sn-navitem:nth-child(3),
@@ -2845,7 +2399,7 @@ border: 1px solid peru ;
     top: -7px !important;
     padding: 0 3px 0 4px !important;
 }
-/* POOL ADMIN - MEMBER LIST (with ADIMS )- === */
+/* POOL ADMIN - MEMBER LIST (with ADIMS ) */
 .MembersList {
     margin-left: 575px !important;
     width: 720px !important;
@@ -2854,7 +2408,7 @@ border: 1px solid peru ;
     text-align: center;
     vertical-align: top;
 }
-/* POOL ADMIN  - MODERATORS LIST - === */
+/* POOL ADMIN  - MODER LIST */
 .Tab +#MemberList >tbody {
     position: relative!important;
     display: inline-block !important;
@@ -2872,7 +2426,7 @@ border: 1px solid peru ;
 .Tab +#MemberList >tbody tr>td:nth-child(2) {
     width: 550px !important;
 }
-/* POOL INVITATION / ADMINISTRATION / (NOT) MAIL - MESSAGE / - === */
+/* POOL INVI/ADMIN/ (NOT) MAIL - MES */
 #global-nav.styleguide-global-nav + #Main  #subnav-refresh  + script#subnav-template-photopicker + script#subnav-template-positionmask + h1#Tertiary {
     position: relative !important;
     display: inline-block !important;
@@ -2885,7 +2439,7 @@ border: 1px solid peru ;
     padding: 0 !important;
     text-align: center !important;
 }
-/* POOL INVITATION - CHECK THE INVITATION - === */
+/* POOL INVIT - CHECK INVIT */
 #Main> #subnav-template-positionmask + h1 {
     position: relative !important;
     display: inline-block !important;
@@ -2915,7 +2469,7 @@ border: 1px solid peru ;
     margin-bottom: -77px !important;
     text-align: left !important;
 }
-/* (new136) POOL DISC/"NO TOPICS "/ MAIL INBOX - CONTAINER - === */
+/* POOL DISC/"NO TOPICS "/ MAIL INBOX - CONT */
 .ThinCase {
     position: relative ;
     display: inline-block !important;
@@ -2925,11 +2479,11 @@ border: 1px solid peru ;
     padding: 40px 0px 20px 10px !important;
 text-align: center !important;
 }
-/* (new135) MAP MES - NOTHING - === */
+/* MAP MES - NOTHING */
 #subnav-template-positionmask + .ThinCase {
     margin-top: 40px !important;
 }
-/* (new143) POOL - IINVIT - CONTACT ADMIN - === */
+/* POOL - IINVIT - CTS ADMIN */
 #Tertiary + .ThinCase>form[action="/groups_join.gne"] {
     display: inline-block ;
     padding: 5px ;
@@ -2937,8 +2491,7 @@ text-align: center !important;
     border-radius: 5px;
 border: 1px solid gray;
 }
-
-/* MAIL MES/POOL SEND INVIT/DEL COMMENT - === */
+/* MAIL MES/POOL SEND INVIT/DEL COM */
 #GoodStuff>form {
     display: inline-block !important;
     width: 100% !important;
@@ -2948,7 +2501,7 @@ border: 1px solid gray;
     padding: 15px 0px 5px 20px !important;
 border: 1px solid gray ;
 }
-/* (new144) POOL ADMIN RULES*/
+/* POOL ADMIN RULES*/
 #GoodStuff>form[action$="/admin/rules/"] {
     margin-top: 20px ;
 }
@@ -2956,7 +2509,7 @@ border: 1px solid gray ;
 #GoodStuff > form[action="groups_newtopic.gne"] {
     margin-left: 537px !important;
 }
-/* PREVIEW POOL NEW DISCUSS */
+/* PREVIEW POOL NEW DISC */
 #GoodStuff > form[action="groups_newtopic.gne"]>table .Preview  {
     position: absolute ;
     width: 400px ;
@@ -2966,7 +2519,7 @@ border: 1px solid gray ;
     padding: 15px ;
 border: 1px solid blue ;
 }
-/* (new1569) */
+/* (new159) */
 .FlickrMailMessage ,
 #GoodStuff>form[action="groups_invite.gne"]  {
     display: inline-block ;
@@ -2986,7 +2539,6 @@ border: 1px solid blue ;
     margin-left: 700px ;
     padding: 20px ;
 }
-
 #GoodStuff>form[action*="deletecomment"] {
     margin-left: 0px ;
     width: 400px ;
@@ -2995,7 +2547,7 @@ border: 1px solid blue ;
 #group-invite-form>p>textarea {
     padding: 10px ;
 }
-/* MAIL MESSAGE */
+/* MAIL MESS */
 .ThinCase.mail-write .Problem {
     position: relative ;
     display: inline-block ;
@@ -3007,7 +2559,7 @@ border: 1px solid blue ;
     margin-bottom: -27px ;
     text-align: left ;
 }
-/* EDIT TOPIC - for FORUM - EDIT TOPIC - SUBJECT / EDIT POOL RULES - - === */
+/* EDIT TOPIC - for FORUM - SUBJECT / EDIT POOL RULES */
 #Main #Tertiary + script + table tbody tr td#Hint ,
 #Main #Tertiary + table tbody tr td#Hint {
     display: inline-block;
@@ -3021,7 +2573,6 @@ border: 1px solid blue ;
     border: none !important;
 background: blue !important;
 }
-
 #global-nav.styleguide-global-nav + #Main table tbody tr td#Hint p:only-of-type {
     position: fixed !important;
     display: inline-block !important;
@@ -3037,7 +2588,7 @@ background: blue !important;
     text-align: center !important;
     overflow: hidden !important;
 }
-/* EDIT - POOL MODERATING / DISCUSS - === */
+/* EDIT - POOL MODERAT/DISC */
 #global-nav.styleguide-global-nav + #Main h1#Tertiary + table tbody tr td#Hint p:only-of-type {
     position: absolute !important;
     display: inline-block !important;
@@ -3053,7 +2604,7 @@ background: blue !important;
     text-align: center !important;
     overflow: hidden !important;
 }
-/* EDIT TOPIC - REPLY TOPIC - CENTER - === */
+/* EDIT TOPIC - REPLY TOPIC - CENTER */
 #GoodStuff > form > p:first-of-type {
     display: inline-block !important;
     width: 634px;
@@ -3068,9 +2619,7 @@ background: blue !important;
     width: 650px !important;
 }
 
-
-/* A VOIR == FLICKR - Header  ==== */
-
+/* FLICKR - Header */
 #main {
     position: relative !important;
     display: inline-block !important;
@@ -3078,7 +2627,7 @@ background: blue !important;
     width: 1920px !important;
     top: 0 !important;
 }
-/* #Main - POOL PEND / ADD RULE */ 
+/* #Main - POOL PEND/ADD RULE */ 
 #Main {
     min-height: 100% !important;
     height: 1000px ;
@@ -3086,7 +2635,7 @@ background: blue !important;
     width: 1908px !important;
     z-index: 0 !important;
 }
-/* HEADER - PHOT COVER - HOVER / DISPLAY NONE - === */
+/* HEADER - PHOT COVER - HOVER/DISP NONE */
 .subnav-refresh .cover-photo-holder {
     height: 75px !important;
 }
@@ -3145,7 +2694,7 @@ background-color: red !important;
     left: 120px !important;
     top: 8px !important;
 }
-/* HELP - API FAQ - === */
+/* HELP - API FAQ */
 #faq-category-page.ThinCase {
     width: 900px  !important;
     margin-top: -50px !important;
@@ -3155,7 +2704,7 @@ background-color: red !important;
     border-radius: 5px !important;
 border: 1px solid gray ;
 }
-/* HELP - API FAQ - ==== */
+/* HELP - API FAQ */
 .help_main {
     float: right;
     margin-bottom: 20px;
@@ -3174,16 +2723,17 @@ border: 1px solid gray ;
 
 /* TOP NAV HEADER - ALL */
 .subnav-refresh .subnav-middle {
-    position: absolute !important;
+    position: fixed !important;
     display: inline-block !important;
     width: 1926px !important;
     height: 85px!important;
-    top: -6px !important;
+    top: 0px !important;
     left: -6px !important;
+    z-index: 50000 ;
 }
 /* ALL JU */
 .breakout.breakout-justified .subnav-middle {
-    top: -10px !important;
+    top: 0px !important;
 }
 /* EXPLORE - NO .subnav-middle*/
 .breakout.ad-free #searchified-header {
@@ -3195,10 +2745,10 @@ border: 1px solid gray ;
     top: 60px !important;
 }
 
-/* START == SETS / COLL ==== */
+/* ==== START == SETS / COLL ==== */
 
 /* SET Thumbnail*/
-/* COLLECTION /SET - === */
+/* COLL /SET */
 .Coll-l {
     float: left;
     height: 220px;
@@ -3234,7 +2784,7 @@ border: 1px solid gray ;
     margin-left: 10px !important;
 border: 1px solid red ;
 }
-/* SETS - BIG THUMB - === */
+/* SETS - BIG THUMB */
 .SetCase {
     width: 141px !important;
     height: 130px !important;
@@ -3272,9 +2822,9 @@ background-image: none ! important;
     margin-top: 103px !important;
 }
 
-/* END == SETS/COL ==== */
+/* ==== END == SETS/COL ==== */
 
-/* == START == FLICKR - HEAD ==== */
+/* ==== START == FLICKR - HEAD ==== */
 .breakout.header-underlap.photostream .subnav-middle {
     top: -19px !important;
 }
@@ -3299,9 +2849,9 @@ background-image: none ! important;
 .breakout.header-underlap.photostream .subnav-middle {
     margin-top: 23px !important;
 }
-/* === END === FLICKR - HEADER ==== */
+/* ==== END === FLICKR - HEADER ==== */
 
-/* ==== ARCHIVES ==== */
+/* ==== ARCH ==== */
 #archives-tabs {
     width: 100%;
     height: 16px;
@@ -3322,7 +2872,7 @@ background: black;
 }
 /* ===== POOL PENDING PAGE ====== */
 
-/* POOL PEND PHO - OLD - THUMB ZOOM PLUS - === */
+/* POOL PEND PHO - OLD - THUMB ZOOM PLUS */
 .photo-list-photo-interaction .interaction-bar .tool .fave-area i.fave-star:before , 
 .gPendWho > a:first-of-type:before {
     position: absolute ;
@@ -3338,7 +2888,7 @@ background: transparent ;
 .photo-list-photo-interaction .interaction-bar .tool .fave-area i.fave-star:before  {
     margin-left: -12px !important;
 }
-/* (new139) LEFT SID - PEND - POOL PHO - OLD - === */
+/* LEFT SID - PEND - POOL PHO - OLD */
 #group-sidebar.open:not(:hover) .pending.sec ,
 #group-sidebar:not(:hover) .pending.sec {
     position: absolute ;
@@ -3391,11 +2941,9 @@ background: transparent ;
     text-align: center ;
     transition: all ease 0s ;
 }
-/*  (new144) */
 .breakout-justified #group-sidebar:hover .pending.sec {
     top: 0px !important;
 }
-/* (new139) !imp)*/
 #group-sidebar .pending.sec h3.group-subhead {
     width: 55px !important;
     height: 19px ;
@@ -3599,8 +3147,7 @@ border: 1px solid gray ;
     text-align: left ;
     cursor: pointer ;
 }
-
-/* POOL PENDING PHOTO - NEW - ORDER SORT - === */
+/* POOL PEND PHOTO - NEW - ORDER SORT */
 .fluid.html-group-admin-pending-page-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view  {
     position: absolute ;
     display: inline-block ;
@@ -3614,9 +3161,7 @@ border: 1px solid gray ;
     margin-top: 0px ;
     z-index: 500000 ;
 }
-
-/* (new139) POOL PENDING PHOTO - NEW - DELETE IMAGE - ALL POOLS - remove - === */
-
+/* POOL PEND PHOT - NEW - DEL IM - ALL POOL - remove */
 .fluid.html-group-admin-pending-page-view .group-admin-pending-page-view .group-admin-pending-page-container {
     max-width: 100% ;
     margin-top: 93px ;
@@ -3678,7 +3223,6 @@ border: 1px solid gray ;
     width: 100% ;
     text-align: center ;
 }
-/* (new139) !imp */
 .group-admin-pending-item-view .group-admin-pending-item .item-content-container .photo-column .photo {
     display: inline-block !important;
     max-height: 250px ;
@@ -3698,7 +3242,6 @@ border: 1px solid gray ;
 .group-admin-pending-item-view .group-admin-pending-item .item-content-container:hover .action-column .batch-check {
     transition: all ease 0.7s ;
 }
-/* (new139) */
 .group-admin-pending-item-view .group-admin-pending-item .item-content-container .details-column {
     display: inline-block ;
     width: 96% ;
@@ -3737,7 +3280,7 @@ position: relative ;
     max-width: 300px ;
     text-align: left ;
 }
-/* (new139) SAVE FOR LATER - Tranform in Bouton */
+/* SAVE FOR LATER */
 .group-admin-pending-item-view .group-admin-pending-item .item-content-container .action-column .batch-check {
     position: absolute ;
     display: inline-block ;
@@ -3780,8 +3323,7 @@ color: red ;
     opacity: 0.3 ;
     pointer-events: auto ;
 }
-
-/* POOL PEND MEMB LIST - === */
+/* POOL PEND MEMB LIST */
 #Main table tbody tr #GoodStuff table#InBox {
     position: relative ;
     display: inline-block ;
@@ -3789,7 +3331,7 @@ color: red ;
     margin-left: 10px ;
     margin-top: 0px ;
 }
-/* POOL PEND LIST - EDIT MEMB DECL - TEXTAREA - === */
+/* POOL PEND LIST - EDIT MEMB DECL - TEXTAREA */
 #GoodStuff table#InBox tbody {
     width: 1850px ;
     counter-reset: li ; 
@@ -3833,8 +3375,7 @@ border: 1px solid gray ;
     padding: 0 ;
     font-size: 10px ;
 }
-
-/* (new134) MAIN - TITLE HEAD - MESS/MAIL/FORUM/PEND - STICKY - === */
+/* MAIN - TITLE HEAD - MESS/MAIL/FORUM/PEND - STICKY */
 #Main>h1 {
 position: sticky ;
     display: inline-block ;
@@ -3851,10 +3392,9 @@ border-bottom: 1px solid gray ;
 background: white ;
 }
 
-
 /* ======= JU CONTAINER =============== */
 
-/* JU - POOL - POOL SIDEBAR HIDDEN / OPEN - === */
+/* JU - POOL - POOL SIDEBAR HIDDEN / OPEN */
 #group-sidebar,
 #group-sidebar.sm,
 #group-sidebar.open {
@@ -3876,7 +3416,6 @@ border: 1px solid red !important;
     overflow-y: auto !important;
 border-bottom: 1px solid red !important;
 }
-
 #group-sidebar .discussions .topic[style="display: none;"] {
     display: inline-block ! important;
 }
@@ -3919,8 +3458,7 @@ background: green !important;
     padding: 40px 5px 20px 20px !important;
 overflow: hidden ;
 }
-
-/* JU - ALL - CONTAINER - === */
+/* JU - ALL - CONTAINER */
 .ju {
     width: 1900px !important;
     height: 100% !important;
@@ -3930,8 +3468,7 @@ overflow: hidden ;
     padding-bottom: 200px !important;
     padding-left: 0 !important;
 }
-
-/* JU - FAVS - CONTAINER - === */
+/* JU - FAVS - CONTAINER */
 #faves  {
     padding-top: 0px !important;
 }
@@ -3943,8 +3480,7 @@ overflow: hidden ;
     left: 0 !important;
     padding-left: 0 !important;
 }
-
-/* JU - STREAM - CONTAINER - === */
+/* JU - STREAM - CONTAINER */
 .js #photo-list-holder.loaded, 
 .js #photo-list-holder.pre-loaded {
     margin-top: -67px !important;
@@ -3960,7 +3496,7 @@ overflow: hidden ;
 
 /* ====== JU - ROWS =============== */
 
-/* JU - ALL USERS + MY FAVS - ROWS - === */
+/* JU - ALL USERS + MY FAVS - ROWS */
 #faves.photo-display-container.clearfix .row ,
 #faves.ju.is_own.photo-display-container.clearfix .row {
     position: relative !important;
@@ -3978,7 +3514,7 @@ overflow: hidden ;
     vertical-align: top !important;
 background: transparent !important;
 }
-/* JU - EXPL - STREAM/SET - CONTAINER - === */
+/* JU - EXPL - STREAM/SET - CONTAINER */
 #thumb-wrapper #thumbnails.ju .row {
     position: relative !important;
     display: inline-block !important;
@@ -3995,7 +3531,7 @@ background: transparent !important;
     vertical-align: bottom !important;
 background: transparent !important;
 }
-/* JU - CAMERA FINDER - ROW - === */
+/* JU - CAMERA FINDER - ROW */
 #camera-finder-content.model-page {
     padding-top: 0px !important;
 }
@@ -4065,7 +3601,6 @@ border: 1px solid #333 !important;
     right: 411px;
     top: 120px;
 }
-
 /* CAMERA FINDER - MARQUES  */
 #camera-finder-content:not(.model-page) h3 {
     width: 98%;
@@ -4084,8 +3619,7 @@ table#all-cameras.camera-table {
     margin: 0 auto;
     width: 50% !important;
 }
-
-/* BLURY THUMBS ??? - IMAGE RENDERING - POOL JU ROW - EMPTY - === */
+/* BLURY THUMBS ??? - IMAGE RENDERING - POOL JU ROW - EMPTY */
 .app-summary.big.clearfix .span.photo_container a img {
     display: inline-block;
     position: relative;
@@ -4094,100 +3628,14 @@ table#all-cameras.camera-table {
     height: 215px ;
     width: auto ;
 }
-
-/* JU - META - GENERAL - LINK (NAME + INLINE ICONS) - === */
+/* JU - META - GENERAL - LINK (NAME + INLINE ICONS) */
 .ju a:link,
 .ju a:visited {
     color: #FFFFFF;
     top: -8px ! important;
     font-size: 22px !important;
 }
-/* JU - PAGINATOR - ALL NUMBERS - === */
-#main.clearfix .ju.photo-display-container ~ #paginator-module.Pages .Paginator span.pages span ,
-#main.clearfix .ju.photo-display-container ~ #paginator-module.Pages .Paginator span.pages a {
-    position: relative !important;
-    display: inline-block !important;
-    width: 100% !important;
-    min-width: 20px !important;
-    max-width: 20px !important;
-    height: 100% !important;
-    min-height: 21px !important;
-    max-height: 21px !important;
-    line-height: 21px !important;
-    padding: 0px 5px 0px 5px  !important;
-    text-align: center !important;
-    vertical-align: middle !important;
-    transform: rotate(-90deg) !important;
-}
-/* JU - PAGINATOR - ALL - "..." BREAK into numbers  "..." - === */
-#main.clearfix .ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator span.pages .break {
-    display: inline-block !important;
-    position: relative !important;
-    width: 100% !important;
-    min-width: 26px !important;
-    max-width: 26px !important;
-    height: 100% !important;
-    min-height: 20px !important;
-    max-height: 20px !important;
-    text-align: center !important;
-    vertical-align: middle !important;
-    padding: 2px 2px !important;
-}
-
-/* JU - POOL (POOL SIDEBAR CLOSED/OPEN) - CONTAINER + PAGI - === */
-.ju.photo-display-container.clearfix[style^="padding-left: 345px;"]  {
-    width: 100% !important;
-    padding-left: 0 !important;
-}
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages  {
-    position: fixed ;
-    display: inline-block ;
-    width: 550px ;
-    float: none ;
-    min-height: 40px ;
-    max-height: 40px ;
-    top: 530px ;
-    margin-top: 0 ;
-    left: -235px ;
-    transform: rotate(90deg) ;
-}
-
-/* JU - POOL (CLOSED OPEN) - PAGI ELEM- === */
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .Prev ,
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages .Paginator .Next.rapidnofollow ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .Next.rapidnofollow ,
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages .Paginator .AtStart ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .AtStart {
-    display: inline-block !important;
-    transform: rotate(-90deg) !important;
-    color: transparent ! important;
-    font-size: 0px ! important;
-}
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages .Paginator span.pages span ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator span.pages span ,
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages .Paginator span.pages a ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator span.pages a {
-    display: inline-block !important;
-    color: gray !important;
-}
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .Prev:before ,
-.ju.photo-display-container +div+div +br+ #apBreakEnd + #paginator-module.Pages .Paginator .AtStart:before ,
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .AtStart:before {
-    display: inline-block ;
-    transform: rotate(-90deg) ;
-    content: "▶" ;
-    color: red ;
-    font-size: 15px ;
-}
-.ju.photo-display-container +div+div +br + #paginator-module.Pages .Paginator .Next:before {
-    display: inline-block ;
-    transform: rotate(90deg) ;
-    content: "▶" ;
-    color: red ;
-    font-size: 15px ;
-}
-/* JU - PAGI - FAV/STREAM - === */
+/* JU - PAGI - FAV/STREAM */
 body.breakout-justified .infinite-pages .Pages {
     position: fixed !important;
     display: inline-block !important;
@@ -4210,7 +3658,7 @@ body.breakout-justified .infinite-pages .Pages .Paginator .Results {
     right: -20px !important;
     transform: rotate(90deg) !important;
 }
-/*"◄ PREV"*/
+/* "◄ PREV" */
 body.breakout-justified .infinite-pages .Pages .Paginator .Prev ,
 body.breakout-justified .infinite-pages .Pages .Paginator .AtStart {
     display: inline-block !important;
@@ -4234,7 +3682,7 @@ body.breakout-justified .infinite-pages .Pages .Paginator .AtStart:before {
     font-size: 12px ;
     letter-spacing: 2px ;
 }
-/*"NEXT ►"*/
+/* "NEXT ►" */
 body.breakout-justified .infinite-pages .Pages .Paginator .Next {
     display: inline-block !important;
     position: absolute !important;
@@ -4278,7 +3726,7 @@ body.breakout-justified .infinite-pages .Pages .Paginator .Next:before {
     color: #CCC7C7 !important;
     letter-spacing: 2px !important;
 }
-/*"◄ PREV"*/
+/* "◄ PREV" */
 #view-holder + script +  #paginator-module.Pages .Paginator .AtStart  ,
 #view-holder + #paginator-module.Pages .Paginator .AtStart ,
 #view-holder +script +  #paginator-module .Paginator .Prev , 
@@ -4303,7 +3751,7 @@ body.breakout-justified .infinite-pages .Pages .Paginator .Next:before {
     font-size: 12px ;
     letter-spacing: 1px ;
 }
-/*"NEXT ►"*/
+/* "NEXT ►" */
 #view-holder +script +  #paginator-module .Paginator .Next ,
 #view-holder + #paginator-module.Pages .Paginator span.AtEnd ,
 #view-holder + #paginator-module.Pages .Paginator .Next {
@@ -4332,7 +3780,7 @@ body.breakout-justified .infinite-pages .Pages .Paginator .Next:before {
     display: inline-block !important;
     transform: rotate(-90deg) !important;
 }
-/* JU - ALL - ROW COUNTER - === */
+/* JU - ALL - ROW COUNTER */
 .ju .row:not(:empty) {
     counter-increment: myIndex !important;
 }
@@ -4352,7 +3800,7 @@ color: gray ;
 border: 1px solid gray ;
 background: transparent ;
 }
-/* JU - META - ALL + OTHERS - SUPP(shadow:none/color:transprent) TXT "by"  - === */
+/* JU - META - ALL + OTHERS  TXT "by" */
 .photo-display-container.ju .photo-display-item {
     opacity: 1 !important;
 }
@@ -4367,7 +3815,7 @@ background: transparent ;
     opacity: 1 !important;
 /* color: white !important; */
 }
-/* JU - META - ALL - LIGHTBOX ICON === */
+/* JU - META - ALL - LIGHTBOX ICON */
 .ju .lightbox-inline {
     display: inline-block !important;
     margin-top: 4px ! important;
@@ -4381,7 +3829,7 @@ background: transparent ;
     margin-top: -1px ! important;
     width: 20px ! important;
 }
-/* JU - META - AUTHOR - === */
+/* JU - META - AUTHOR */
 .ju .row .meta span.attribution {
     display: inline-block !important;
     width: auto !important;
@@ -4401,8 +3849,7 @@ background: transparent ;
     display: inline-block !important;
     max-width: 160px !important;
 }
-
-/* JU - META - ALL - ICON FAV + DELETE CROSS - RED/WHITE - === */
+/* (new159) JU - POOL NO BEAT - META - ALL - ICON FAV + DELETE CROSS - RED/WHITE */
 .ju .fave-star-inline img {
     margin-top: 4px ! important;
     transform: scale(1.3) !important;
@@ -4415,7 +3862,7 @@ background: transparent ;
     padding: 3px !important;
     transform: scale(2) !important;
 }
-/* (new143) JU - META - POOL/FAV +(#faves.sm.is_own) - INLINE ICONS - DELETE "X" + HOVER - === */
+/* (new159) JU - POOL NO BEAT - META - POOL/FAV +(#faves.sm.is_own) - INLINE ICONS - DELETE "X" + HOVER */
 #pool-photos.ju .photo-display-item .remove-from-group {
     position: absolute ! important;
     display: inline-block !important;
@@ -4423,10 +3870,10 @@ background: transparent ;
     height: 30px ! important;
     line-height: 24px ! important;
     margin-bottom: 0 !important;
-    top: 100% !important;
-    left: 1% !important;
+    top: 0% !important;
+    left: 0% !important;
     right: 1% !important;
-    opacity: 0.2 !important;
+    opacity: 1!important;
     font-size: 20px ! important;
     text-align: center ! important;
     overflow: visible !important;
@@ -4435,10 +3882,9 @@ background: transparent ;
 #pool-photos.ju .photo-display-item .remove-from-group:hover {
     opacity: 1 !important;
 }
-/* JU - POOL - DELETE IMG - NO MUSTACHE - === */
+/* (new159) JU - POOL NO BEAT - DELETE IMG - NO MUSTACHE */
 #pool-photos.ju .photo-display-item .remove-from-group img {
     transform: scale(1.8) !important;
-    margin-left: -50% !important;
     visibility: hidden !important;
 }
 #pool-photos.ju .photo-display-item .remove-from-group:before {
@@ -4464,23 +3910,21 @@ background: red !important;
 
 #pool-photos.ju .photo-display-item .remove-from-group:hover:before {
     transform: scale(1.8) !important;
-    margin-top: -8px !important;
+    margin-top: 3px !important;
 }
 
 #pool-photos.ju .photo-display-item .remove-from-group:hover img {
     transform: scale(2.8) !important;
 }
-
-
-/* JU - META - DELETE "X" - POOL/FAV +(#faves.sm.is_own) - COMMENT ICON + HOVER - === */
+/* (new159) JU - POOL NO BEAT - META - DELETE "X" - POOL/FAV +(#faves.sm.is_own) - COMMENT ICON + HOVER */
 .ju .meta a.comments-icon img {
     margin-top: 5px !important;
 }
-/* META - DELETE "X" - POOL SMALL - === */
+/* META - DELETE "X" - POOL SMALL */
 .photo-display-item .remove-from-group:hover img {
     transform: scale(1.5) !important;
 }
-/* HOVER TITLE - === */
+/* HOVER TITLE */
 .photo-display-container.ju .photo-display-item .meta a.title   {
     display: inline-block;
     max-width: 100%;
@@ -4488,28 +3932,19 @@ background: red !important;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 13px;
-/* color: white !important; */
-/* background: transparent !important; */
+    font-size: 13px ;
 }
+
 /* ==== END === JU - META ==== */
 
 /* ===== END ==== JU THUMBNAILS (without POOLSIDEBAR) ===== */
 
 /* ==== DELETE "X" - POOL (sq / sm /ju / Prentation Page) ==== */
-/* DELETE "X" - GENERAL - HOVER ROUNDED - === */
+/* DELETE "X" - GENERAL - HOVER ROUNDED */
 .delete-x:hover, .delete-x-inline:hover img {
     border-radius: 5px 5px 5px 5px !important;
 }
-/* DELETE "X" - POOL/FAV +(#faves.sm.is_own) - JU - === */
-#pool-photos.ju .photo-display-item .remove-from-group {
-    display: inline-block !important;
-    margin-left: -2px !important;
-    opacity: 0.5 !important;
-}
-#pool-photos.ju .photo-display-item .remove-from-group:hover {
-    opacity: 1 !important;
-}
+
 /* POOL SMALL - DELETE - NO MUSTACHE */
 #pool-photos.sm .photo-display-item:hover .remove-from-group {
     position: absolute;
@@ -4540,8 +3975,7 @@ background: red !important;
 color: white !important;
 background: red !important;
 }
-
-/* DELETE "X" - POOL - MAIN PAGE - === */
+/* DELETE "X" - POOL - MAIN PAGE */
 .group-content-wrapper #div_hold_photos.HoldPhotos .photo-display-item .meta a.delete-x-inline img {
     position: absolute !important;
     display: inline-block !important;
@@ -4559,18 +3993,156 @@ background: url("http://l.yimg.com/g/images/flickr-sprite.png.v4") no-repeat scr
 
 /* ======== END = META + COUNTER + DELET "X" ====== */
 
-/* ==== TOP HEADER ===== */
-/* TOP HEADER ALL - OVERFLOW HIDDEN - ==== */
+/* === FLICKR - POOL no BETA - NORMAL v.159 === */
+
+/* (new159) POOL no BETA - HEADER FIXED */
+body.breakout-justified .group-content-wrapper.group-cover-photo #subnav-refresh.subnav-refresh.groups.subnav-view  .cover-photo-holder {
+    position: fixed;
+}
+/* (new159) POOL no BETA - THUMBNAIL PADDING LEFT - SIDEBAR - OPEN  */
+#pool-photos.photo-display-container.ju[style*="padding-left: 345px;"] {
+    display: inline-block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 80px !important;
+    padding-left: 196px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: left !important;
+background: #222 !important;
+}
+#pool-photos.photo-display-container.ju[style*="padding-left: 345px;"] .row {
+    display: inline-block !important;
+    min-width: 90% !important;
+    max-width: 90% !important;
+    margin-left: -96px !important;
+    padding-left: 60px !important;
+    padding-bottom: 25px;
+}
+/* (new159) POOL no BETA - SIDEBAR - CLOSE */
+#pool-photos.photo-display-container.ju:not([style*="padding-left: 345px;"]) {
+    display: inline-block !important;
+    width: 1867px !important;
+    margin-top: 80px !important;
+    margin-left: 0px !important;
+    padding-left: 38px !important;
+    padding-right: 0px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: left !important;
+    overflow: hidden !important;
+}
+#pool-photos.photo-display-container.ju:not([style*="padding-left: 345px;"]) .row {
+    display: inline-block !important;
+    margin-left: -96px;
+    max-width: 105% !important;
+    min-width: 105% !important;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    text-align: center !important;
+}
+
+/* (new159) POOL no BETA - METAS */
+.super-liquid #pool-photos.photo-display-container.ju .photo-display-item .meta {
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 96.3% !important;
+    min-width: 96.3% !important;
+    padding: 5px 8px 10px 8px;
+    text-align: left !important;
+    opacity: 0.3 !important;
+}
+.super-liquid #pool-photos.photo-display-container.ju .photo-display-item:hover .meta {
+opacity: 1 !important;
+}
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item .thumb.wide .meta a.owner, 
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item .thumb.wide .meta a.owner[id^="CFS"] {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-left: -20px !important;
+    padding-left: 0px !important;
+}
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item .thumb .photo_container.pc_l + .meta a.owner ,
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item .thumb .photo_container.pc_n + .meta a.owner{
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin-left: -20px !important;
+    padding-left: 2px !important;
+}
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item .thumb.too-narrow .photo_container.pc_n + .meta a.owner{
+    max-width: 95% !important;
+    min-width: 95% !important;
+    margin-left: -20px !important;
+    padding-left: 2px !important;
+}
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item a.owner, 
+.photo-display-container.ju > span ~ .row .pool-photo.photo-display-item a.owner[id^="CFS"] ,
+.photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span:last-of-type  ,
+.photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span:first-of-type  ,
+.photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span {
+    display: inline-block;
+    height: 15px !important;
+    line-height: 15px !important;
+    font-size: 15px !important;
+}
+.photo-display-container.ju .photo-display-item .meta .inline-icons, 
+.photo-display-container.ju .hoverzoom .meta .inline-icons {
+    margin-top: -19px !important;
+    font-size: 15px !important;
+}
+.photo-display-container.ju .photo-display-item .meta a ,
+.photo-display-container.ju .photo-display-item .meta a.fave-star-inline, 
+.zoomer .meta a.fave-star-inline, 
+.photo-display-container.ju .photo-display-item .meta a.delete-x-inline, 
+.photo-display-container.ju .zoomer .meta a.fave-star-inline {
+    font-size: 15px !important;
+}
+
+.photo-display-container.ju .row [id^="FCO-photo-"] {
+    display: inline-block;
+    height: 11px;
+    left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    position: absolute;
+    top: 100% !important;
+    transform: scale(0.8) !important;
+    width: 17px;
+    z-index: 10000;
+}
+/* (new159) POOL no BETA - TOGGLE BUTTON */
+body.super-liquid.extras.breakout.breakout-justified .group-content-wrapper.group-cover-photo .opt-out-bug {
+    position: fixed !important;
+    z-index: 70000 !important;
+}
+/* (new159) POOL no BETA - PAGINATION STICKY */
+#pool-photos.ju.photo-display-container ~#paginator-module.Pages {
+    position: sticky;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 50000;
+background: black !important;
+}
+
+/* ==== END = FLICKR - TEST - POOL no BETA - NORMAL v.159 ==== */
+
+
+
+/* ==== TOP HEADER ==== */
+/* TOP HEADER ALL - OVERFLOW HIDDEN */
 body.new-header {
     overflow: hidden !important;
     overflow-x: hidden!important;
     overflow-y: auto !important;
 }
-/* HEADER - PHOTO + ALL INFOS/POOL / COMMENTS - TOTAL CONTAINER - SUPP BACKGROUND GRADIENT - === */
+/* HEADER - PHOT + ALL INF/POOL/COMM - TOTAL CONT - SUPP BACKG GRADT */
 body.new-header {
     background: none !important;
 }
-/* HEADER - PHOTO - ==== */
+/* HEADER - PHOT */
 body.new-header.has-free-refresh-banner #photo {
     margin-left: 1% !important;
     padding-top: 36px! important;
@@ -4581,7 +4153,7 @@ body.new-header.has-free-refresh-banner #photo {
     width: 62% !important;
 background: none !important;
 }
-/* HEADER - TITLE / DESC POOL CONTAINER - === */
+/* HEADER - TITLE/ DESC POOL CONT */
 .set-wrap .group-meta {
     position: absolute;
     top: 5px !important;
@@ -4611,7 +4183,7 @@ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     top: 8px !important;
 }
 /* TOP HEADER - PHOTO - GROUPS / POOL  */
-/* TOP HEADER - POOL - STATS - === */
+/* TOP HEADER - POOL - STATS*/
 .subnav-refresh .stats {
     display: inline-block ! important;
     width: 100%! important;
@@ -4649,9 +4221,8 @@ border: 1px solid grey ;
 color: gray ;
 }
 
-/* TOP HEADER / ETC - POOL DISC/HELP FORUM - ===  */
-
-/* (new141) POOL TOPIC - === */
+/* TOP HEADER / ETC - POOL DISC/HELP FORUM */
+/* POOL TOPIC */
 #subnav-refresh + script + script +   p.Confirm + .group-topics ,
 #subnav-refresh + script + script + .group-topics {
     width: 969px ;
@@ -4702,7 +4273,6 @@ border: 1px solid red ;
     overflow: hidden ;
 border: 1px solid gray ;
 }
-/* (new146) */
 .group-topics + .group-topics ul.topic-list {
     height: 775px ;
     overflow: hidden ;
@@ -4715,7 +4285,6 @@ border-bottom: 1px solid red ;
     margin-bottom: 2px ;
 border-bottom: 1px solid gray ;
 }
-/* (new152) */
 .group-topics ul.topic-list li p{
     width: 905px;
     padding-bottom: 38px;
@@ -4729,26 +4298,21 @@ border-bottom: 1px solid gray ;
 .group-topics ul.topic-list li .bd {
     margin-top: -5px ;
 }
-/* (new152) - IMG */
+/* IMG */
 .group-topics .topic-list .bd .message p a {
     display: inline-block;
-
 }
 .group-topics .topic-list .bd .message p a img {
     max-width: 899px;
     margin-bottom: 20px;
 border: 1px solid gray;
 }
-
-
-/* (new147) */
 .group-topic-detail-col {
     min-width: 750px ;
     left: 475px ;
     top: 73px ;
 }
-
-/* (new147) SEARCH in POOL TOP */
+/* SEARCH in POOL TOP */
 .topic-list.narrow-list > p + p {
     position: fixed;
     width: 178px;
@@ -4775,7 +4339,153 @@ background: #333;
     border-radius: 0 ;
 border: 1px solid gray ;
 }
-/* (new152) + POOL BETA - VOIR DUPLICATE */
+/* (new159) POOL BETA - COVER PHOT */
+.fluid.html-group-home-page-view #content .group-home-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
+.fluid.html-group-pool-page-view #content .group-pool-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
+.fluid.html-group-discussion-page-view #content .group-discussion-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed {
+    position: fixed !important;
+    display: inline-block !important;
+    top: 50px;
+    z-index: 5000000 !important;
+/* background: green !important; */
+}
+/* Z-INDEX MOINS */
+.fluid.html-group-discussions-list-page-view #content .group-discussions-list-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
+.fluid.html-group-home-page-view #content .group-home-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed  {
+    position: fixed !important;
+    top: 50px;
+    z-index: 5000 !important;
+background: white ;
+}
+/* (new160) POOL BETA - HOME / DISC LIST PG */
+.fluid.html-group-home-page-view .fluid-group-coverphoto-view ,
+.fluid.html-group-discussions-list-page-view .fluid-group-coverphoto-view {
+    position: fixed !important;
+    width: 100% !important;
+    height: 170px !important;
+    top: 0px !important;
+    width: 100%;
+    z-index: 100 !important;
+border-bottom: 1px solid gray ;
+background: white ;
+}
+.fluid.html-group-discussions-list-page-view .group-discussion-view {
+    margin-top: 135px;
+    top: 0;
+    border-top: 1px solid gray;
+}
+.fluid.html-group-discussions-list-page-view .fluid-magic-groups-subnav-view .fluid-subnav-shim {
+    position: relative !important;
+    height: 40px !important;
+    top: 0;
+    margin-bottom: 0 !important;
+    z-index: 100 !important;
+/* background: tan !important; */
+}
+.fluid.html-group-discussions-list-page-view .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed {
+    position: sticky !important;
+    height: 50px !important;
+    top: 0;
+    z-index: 100 !important;
+background: white ;
+}
+/* SHARE */
+.fluid.html-group-pool-page-view .groups-toolbar-view  ,
+.fluid.html-group-home-page-view .groups-toolbar-view  ,
+.fluid.html-group-discussion-page-view .groups-toolbar-view  ,
+.fluid.html-group-discussions-list-page-view .groups-toolbar-view {
+    position: fixed;
+    right: 6px;
+    top: 114px;
+    width: 200px;
+    z-index: 200;
+}
+.fluid.html-group-pool-page-view .groups-toolbar-view   {
+    position: fixed !important;
+    left: 1406px !important;
+    top: 10px !important;
+}
+.fluid.html-group-pool-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content  ,
+.fluid.html-group-home-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content  ,
+.fluid.html-group-discussion-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content  ,
+.fluid.html-group-discussions-list-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content {
+    height: 25px;
+    margin-top: 0;
+}
+.fluid.html-group-pool-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content .groups-toolbar-share-content ,
+.fluid.html-group-home-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content .groups-toolbar-share-content ,
+.fluid.html-group-discussion-page-view .groups-toolbar-view .groups-toolbar-content.groups-toolbar-content .groups-toolbar-share-content  ,
+.fluid.html-group-discussions-list-page-view .groups-toolbar-view .groups-toolbar-content .groups-toolbar-share-content {
+    margin-top: 0px !important;
+}
+
+
+/* (new159) BETA POOL DISC LIST */
+.fluid.html-group-discussion-page-view #content {
+    padding-bottom: 0 !important;
+    border-bottom: 1px solid red !important;
+}
+.fluid.html-group-discussion-page-view .centered-content {
+    width: 1060px;
+    height: 100% !important;
+    min-height: 1124px !important;
+    margin-top: -40px !important;
+padding-bottom: 100px !important;
+}
+.fluid.html-group-discussion-page-view .fluid .fluid-subnav-shim {
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: -151px !important;
+}
+.fluid.html-group-discussion-page-view .view.fluid-group-coverphoto-view  {
+    position: sticky !important;
+    height: 170px !important;
+    top: 0 !important; 
+    z-index: 1 !important;
+border-bottom: 1px solid gray !important;
+background: white ;
+}
+.fluid.html-group-discussion-page-view .view.fluid-group-coverphoto-view  + .fluid-magic-groups-subnav-view {
+    position: fixed !important;
+    height: 50px;
+    width: 100% !important;
+    top: 0 !important;
+    z-index: 1 !important;
+}
+.fluid.html-group-discussion-page-view #content .group-discussion-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu {
+    position: fixed;
+    top: 50px;
+    z-index: 82;
+/* background: blue !important; */
+}
+
+/* (new159) POOL BETA - TOPIC - FOOTER */
+.fluid.html-group-discussion-page-view .footer-full-view:before {
+    content: "Fickr About" ;
+    position: absolute !important;
+    top: -15px ;
+    left: 1242px ;
+    padding: 2px 4px ;
+border-radius: 3px 3px 0 0 ;
+background: black !important;
+}
+.fluid.html-group-discussion-page-view .footer-full-view {
+    position: fixed;
+    bottom: -112px;
+    transition: bottom ease 0.7s ;
+}
+.fluid.html-group-discussion-page-view .footer-full-view:hover {
+    bottom: 0px;
+    transition: bottom ease 0.7s ;
+}
+
+/* FLUID - POOL TOPIC - ==== */
+.fluid .group-discussion-topic-view .message-text, 
+.fluid .group-discussion-topic-view .preview-block {
+    line-height: 18px !important;
+}
+
+/* (new159) + POOL BETA - VOIR DUPLICATE */
 .group-discussion-topic-view .topic ,
 .group-topic-detail-col #DiscussTopic table:first-of-type {
     position: fixed ;
@@ -4794,50 +4504,54 @@ border: 1px solid gray ;
     position: fixed;
     float: none;
     width: 400px;
-    height: 730px;
-     left: 10px;
-
-    margin-top: 40px;
+    height: 780px;
+    left: 5px;
+    margin-top: 0px;
     padding: 0 5px;
-overflow: hidden ;
-overflow-y: auto ;
-
-border: 1px solid yellow ;
+    overflow: hidden ;
+    overflow-y: auto ;
+border: 1px solid gray ;
 }
 .fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column {
-/* position: sticky !important; */
     width: 810px ;
     margin-left: 0;
-    margin-top: 40px;
-/* top: 0 !important; */
-border: 1px solid green ;
+    margin-top: 42px;
+border: 1px solid gray ;
 }
 .fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic {
-    height: 750px;
-    width: 660px;
-overflow: hidden ;
-/* overflow-y: auto ; */
+    height: 747px !important;
+    width: 665px !important;
+    top: 173px !important;
+    overflow: hidden ;
+border: 1px solid gray ;
 }
 .fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic .message {
     position: relative;
-    height: 730px;
+    height: 732px !important;
     width: 575px;
-overflow: hidden ;
-overflow-y: auto ;
     margin-left: 88px;
-    padding-top: 5px;
-border-bottom: 1px solid red ;
+    margin-top: 0px;
+    padding-top: 1px;
+    overflow: hidden ;
 }
-
+.fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic .message  .message-text, 
+.fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic .message  .preview-block {
+    height: 645px !important;
+    line-height: 15px;
+    padding-bottom: 50px !important;
+    overflow: hidden ;
+    overflow-y: auto ;
+border-top: 1px solid gray ;
+border-bottom: 1px solid gray ;
+}
 #GoodStuff #DiscussTopic table:first-of-type  {
     position: fixed ;
     padding: 30px 10px 0px 5px ;
 }
-
 .group-topic-detail-col #DiscussTopic {
     min-width: 750px ;
 }
-/* (new134) POOL/FORUM  TOPIC FIRST (right side) */
+/* POOL/FORUM  TOPIC FIRST (right side) */
 #DiscussTopic .Said p {
     min-width: 480px ;
     max-width: 480px ;
@@ -4847,7 +4561,6 @@ border-bottom: 1px solid red ;
     float: left ;
     width: 45px ;
 }
-
 #GoodStuff #DiscussTopic table:first-of-type  h4 ,
 .group-topic-detail-col #DiscussTopic table:first-of-type .Who:first-of-type +.Said h4 ,
 #DiscussTopic table:first-of-type .Who:first-of-type +.Said h4 {
@@ -4861,11 +4574,9 @@ border-bottom: 1px solid red ;
     z-index: 5000000 ;
 border: 1px solid red ;
 }
-
 #GoodStuff #DiscussTopic table:first-of-type  h4  {
     top: 101px ;
 }
-/* (new141) !imp */
 .group-topic-detail-col #DiscussTopic table:first-of-type .Who:first-of-type +.Said h4 {
     left: 1288px !important;
     top: 105px !important;
@@ -4877,7 +4588,6 @@ border: 1px solid red ;
     width: 505px ;
     padding: 0px 5px 0px 10px ;
 }
-/* (new152)*/
 #DiscussTopic table:first-of-type .Said > p {
     display: inline-block ;
     max-height: 768px ;
@@ -4889,7 +4599,7 @@ border: 1px solid red ;
     overflow-y: auto ;
 border-top: 1px solid gray ;
 }
-/* BLOQUOTE after P - === */
+/* BLOQUOTE after P */
 #DiscussTopic table:first-of-type .Said  > p + blockquote ~ blockquote ,
 #DiscussTopic table:first-of-type .Said  > p + blockquote {
     position: relative;
@@ -4915,14 +4625,13 @@ color: #666;
     margin-top: 20px ;
     width: 700px ;
 }
-/* POOL / FORUM - TOPIC FIRST (right side) - BR - === */
+/* POOL / FORUM - TOPIC FIRST (right) - BR*/
  #DiscussTopic .Said p > br {
     content: "A" ;
     display: block ;
     margin-bottom: 4px ;
 }
-
-/* (new141) TOPIC REPLY - COMMENT FORM - === */
+/* TOPIC REPLY - COMMENT FORM */
 #GoodStuff #DiscussTopic table.TopicReply tbody tr:last-of-type td:not(.Said):not(.Who) {
     right: -614px ;
 }
@@ -4970,8 +4679,7 @@ background: white ;
     min-height: 200px ;
     margin-top: -20px ;
 }
-
-/* (new134) FORUM - TEXTARERA - REZIZE */
+/* FORUM - TEXTARERA - REZIZE */
 #DiscussTopic .TopicReply tr td[colspan="2"] form p textarea {
     display: inline-block ;
     resize: vertical ;
@@ -4980,7 +4688,7 @@ background: white ;
     max-height: 600px ;
     margin-left: 10px ;
 }
-/* COMM REPLY - POOL/HELP - ALL - PREV REPLY - ===c*/
+/* COM REPLY - POOL/HELP - ALL - PREV REPLY */
 #GoodStuff .Preview ,
 #DiscussTopic .Preview {
     position: absolute;
@@ -4989,7 +4697,7 @@ background: white ;
     overflow-x: hidden ;
     overflow-y: auto ;
 }
-/* (new140) RE-EDIT POST POSTED - EDIT PAGE */
+/* RE-EDIT POST POSTED - EDIT PAGE */
 #GoodStuff .Preview {
     position: absolute ;
     width: 500px ;
@@ -4998,7 +4706,7 @@ background: white ;
     right: -532px ;
     padding: 15px ;
 }
-/* (new140) DISC - REPLY PREV - FIRST POST */
+/* (DISC - REPLY PREV - FIRST POST */
 #GoodStuff .TopicReply > tbody > tr:last-of-type td:not(.Said):not(.Who):not(:hover) .Preview  {
     right: -190px ;
 }
@@ -5042,8 +4750,7 @@ position: absolute !important;
     margin: 0;
     text-align: center;
 }
-
-/* HELP FORUM - ALL - ===  */
+/* HELP FORUM - ALL  */
 .forumIntro .forumIntroText {
     float: left;
     width: 390px ;
@@ -5067,8 +4774,7 @@ position: absolute !important;
     width: 375px ;
     margin-top: 9px ;
 }
-
-/* (new138) INTRO */
+/* INTRO */
 #Main > .forumIntro ~ h3 {
     position: relative ;
     height: 22px ;
@@ -5107,7 +4813,7 @@ border: 1px solid red ;
     margin-bottom: -18px ;
     padding: 5px ;
 }
-/* (new136) FORUM - WIDTH/HIGHT - CONT - ===  */
+/* FORUM - WIDTH/HIGHT - CONT */
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) ,
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) tbody {
     display: inline-block ;
@@ -5121,7 +4827,7 @@ overflow-y: auto ;
 max-height: 180px !important;
 border-bottom: 1px solid red !important;
 }
-/* (newx138) STICKY - FORUM - TOP TOPICS - CONT - ===  */
+/* STICKY - FORUM - TOP TOPICS - CONT */
 .TopicListing:not([cellspacing="0"]):first-of-type  {
     margin-top: -80px ;
     margin-left: 8px ;
@@ -5156,9 +4862,7 @@ border: 1px solid gray ;
     top: -127px ;
     margin-bottom: -140px ;
 }
-
-
-/* FORUMS - ITEMS - === */
+/* FORUMS - ITEMS */
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) td +td > a:not(.pro-badge-new)  {
     float: right ;
     width: 130px ;
@@ -5166,7 +4870,7 @@ border: 1px solid gray ;
     text-overflow: ellipsis ;
     white-space: nowrap ;
 }
-/* FORUMS - USERS - PRO BADGE - === */
+/* FORUMS - USERS - PRO BADGE */
 .TopicListing a  +.pro-badge {
     position: relative ;
     display: inline-block ;
@@ -5189,15 +4893,13 @@ background: transparent ;
     opacity: 1 ;
 background: transparent ;
 }
-
-
 /* PAGI */
 #paginator-module.Pages {
     margin-bottom: 0px ;
     margin-top: 20px ;
     text-align: center ;
 }
-/* FORUM HELPH - SEARCH RES - === */
+/* FORUM HELPH - SEARCH RES */
 #Main>form[action="/search/forum/"] .For {
     float: left;
     vertical-align: middle ;
@@ -5234,7 +4936,7 @@ background-image: none ! important;
 border-left: 3px solid gray ;
 }
 
-/* (new136) FORUM - YOUR TOPIC */
+/* FORUM - YOUR TOPIC */
 .ForumPost {
     width: 32% !important;
 height: 230px !important;
@@ -5268,9 +4970,7 @@ overflow: hidden ;
     overflow: hidden;
     overflow-y: auto;
 }
-
-
-/* (new137)PHOT OFF/HELP/PEOPLE Follow + LOCKED - === */
+/* HOT OFF/HELP/PEOPLE Follow + LOCKED */
 #Main > table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing):not(.acct-sett)  {
     position: relative ;
     display: inline-block ;
@@ -5279,7 +4979,6 @@ overflow: hidden ;
 #Main > p.Locked + table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing):not(.acct-sett)  {
     margin-top: 50px !important;
 }
-
  #Main > table.TopicListing  {
     position: relative ;
     display: inline-block ;
@@ -5295,10 +4994,7 @@ overflow: hidden ;
     display: inline-block ;
     margin-top: 64px ;
 }
-
-
-
-/* ACCOUNT SETTINGS - === */
+/* ACCOUNT SETTINGS */
 .Tab > span.TabOut:first-of-type {
     margin-left: 358px !important;
     font-size: 13px;
@@ -5337,7 +5033,7 @@ overflow: hidden ;
     width: 1900px ;
     margin-top: -20px ;
 }
-/* (new141) FORUM HELP/POOL  TOPICS - MIDDLE PANEL (mactch Check Invit too ) */
+/* FORUM HELP/POOL  TOPICS - MIDDLE PANEL (mactch Check Invit too) */
 #Main table tbody tr td#Hint + #GoodStuff:not(.admin_moderation)  {
     position: relative ;
     display: inline-block ;
@@ -5353,11 +5049,12 @@ position: relative !important;
 #Main table tbody tr #GoodStuff h3 {
     text-align: center ;
 }
+/* (new159) */
 #main  .group-topics-col + .group-topic-detail-col > h2,
 #Main table tbody tr #GoodStuff h2 {
     position: sticky ;
     width: 1420px ;
-    top: 0px ;
+    top: 85px !important;
     margin: 0px 0 0px -20px ;
     padding: 1px 8px ;
     z-index: 500 ;
@@ -5372,20 +5069,11 @@ border-bottom: 1px solid red ;
     margin-left: 220px ;
     margin-top: 20px ;
 }
-/* FORUM - PHOT OF - THUMB - CENTER - === */
+/* FORUM - PHOT OF - THUMB - CENTER */
 #GoodStuff .Said>div span.photo_container.pc_m.bbml_img {
     text-align: center ;
 }
-/* FORUM HELP - SEARCH RES : PAGE from #DiscussTopic - ===  */
-/* #Main table tbody tr #GoodStuff div:first-of-type[style^="font-weight"] {
-    width: 835px ;
-    padding: 2px 0 ;
-    margin-top: -20px ;
-    margin-bottom: 45px ;
-    margin-left: -135px ;
-    text-align: center ;
-} */
-/* (new147) POOL TOPIC - FORUM HELP - SEARCH TERM */
+/* POOL TOPIC - FORUM HELP - SEARCH TERM */
 #Main table tbody tr #GoodStuff div:first-of-type[style^="font-weight"] ,
 .group-topic-detail-col > div:first-of-type:not(#DiscussTopic) {
     position: absolute;
@@ -5404,7 +5092,7 @@ background: gold ;
     right: -610px ;
     top: 8px ;
 }
-/* FORUM HELP - LOOCKED/CLOSED THREAD - === */
+/* FORUM HELP - LOOCKED/CLOSED THREAD */
 .Locked  {
     display: inline-block ;
     height: 15px ;
@@ -5428,13 +5116,13 @@ background: gold ;
     margin-left: 0px ;
     margin-top: -25px ;
 }
-/* HELP - PRO BADGE - ALL DISC - === */
+/* HELP - PRO BADGE - ALL DISC */
 #GoodStuff #DiscussTopic .pro-badge {
     display: inline-block ;
     line-height: 15px ;
     left: 0px ;
 }
-/* (new134) POOL/HELP - ALL DISC - === */
+/* POOL/HELP - ALL DISC */
 #GoodStuff #DiscussTopic table.TopicReply  ,
 #DiscussTopic table.TopicReply {
     position: relative ;
@@ -5459,7 +5147,6 @@ background: gold ;
     min-width: 780px ;
     max-width: 780px ;
 }
-
 #DiscussTopic table.TopicReply tbody tr  td.Said ,
 #GoodStuff #DiscussTopic table.TopicReply tbody tr  td.Said {
     display: inline-block ;
@@ -5469,17 +5156,15 @@ background: gold ;
     margin-left: 63px ;
     margin-top: -58px ;
 }
-/* (new136) */
 #DiscussTopic table.TopicReply tbody tr td.Said  p  {
     min-width: 705px ;
     max-width: 705px ;
 }
-
 #DiscussTopic table.TopicReply blockquote .linkifyplus img {
     max-width: 605px !important;
     border: 1px dotted gray ;
 }
-/* FORUM - STAFF POST - === */
+/* FORUM - STAFF POST */
 table:last-of-type .staffPost {
     width: 505px ;
 }
@@ -5498,13 +5183,13 @@ table:last-of-type .staffPost .Said {
     top: -20px ;
 border: 1px solid red !important;
 }
-/* FORUM - PRO BADGE - === */
+/* FORUM - PRO BADGE */
 #DiscussTopic .ProIcon {
     background-size: contain ;
     background-color: white ;
     opacity: 0.5 ;
 }
-/* EDIT POOL - ABOUT  - TOP HEADER + JOIN AGREE - === */
+/* EDIT POOL - ABOUT - TOP HEADER + JOIN AGREE */
 h3#Tertiary ,
 .group-subhead {
     width: 590px !important;
@@ -5582,7 +5267,7 @@ border: 1px solid gray ;
     padding: 5px !important;
     text-align: center !important;
 }
-/* EDIT POOL - ABOUT - === */
+/* EDIT POOL - ABOUT */
 .about_group_edit>tbody>tr>td>label {
     display: inline-block !important;
     min-width: 705px !important;
@@ -5599,15 +5284,13 @@ border: 1px solid gray ;
     max-width: 692px !important;
     min-height: 400px !important;
 }
-/* (new144) POOL - ADMIN PGE - === */
+/* POOL - ADMIN PGE */
 .group-admin-page-view .group-admin-page-container {
     margin-top: 90px ;
     padding: 5px ;
 border-top: 1px solid gray;
 }
-
-
-/* EDIT POOL - MODERATING - === */
+/* EDIT POOL - MODER */
 #Main table tbody tr td#Hint + #GoodStuff.admin_moderation {
     position: relative !important;
     display: inline-block !important;
@@ -5623,10 +5306,9 @@ border-top: 1px solid gray;
     max-width: 97%  !important;
     min-width: 97%  !important;
     right: 35px !important;
-padding: 10px !important;
-
+    padding: 10px !important;
 }
-/* POOL EDIT ABOUT - === */
+/* POOL EDIT ABOUT */
 table#rulesbody tbody {
     display: inline-block !important;
     width: 732px !important;
@@ -5642,16 +5324,14 @@ table#rulesbody tbody tr td textarea {
     border: 1px solid red!important;
 background: green !important;
 }
-
-/* MAIL - TAB - === */
+/* MAIL - TAB */
 [id^="mouse_tip_div_toggler_"] ~ #global-nav + #Main h3.Tab {
     position: relative !important;
     display: inline-block !important;
     width: 47% !important;
     margin-left: 450px !important;
 }
-
-/* (new142) MAIL - MESSAGE - === */
+/* MAIL - MES */
 .ThinCase > table ,
 .ThinCase table.FlickrMailMessage  {
     display: inline-block ;
@@ -5677,7 +5357,6 @@ border: 1px solid gray ;
     margin-left: -100px ;
     width: 1375px ;
 }
-
 h1.mail-header {
     text-align: center;
 }
@@ -5697,7 +5376,6 @@ h1.mail-header {
     border-radius: 5px ;
 border: 1px solid gray ;
 }
-
 /* MAIL LIST */
 form#MessagesForm {
     position: relative ;
@@ -5713,8 +5391,7 @@ table#mail {
     margin: auto;
 border: 1px solid gray ;
 }
-
-/* TOP HEADER -  NAV BAR RIGHT (Photostream Sets Favorites - PB Collections / POOLs ) - === */
+/* TOP HEADER -  NAV BAR RIGHT (Phostream SET/FAV/ POOL - PB COL ) */
 .subnav-refresh .subnav-holder {
     width: auto !important;
     min-width: 1050px !important;
@@ -5729,7 +5406,7 @@ border: 1px solid gray ;
 border: 1px solid gray ;
 background: none !important;
 }
-/* TOP HEADER - NAV LINKS - POOLS / INVIT PAGES */
+/* TOP HEADER - NAV LINKS - POOLS/INVIT PAG */
 .subnav-refresh ul.nav-links {
     display: inline-block ;
     height: 20px !important;
@@ -5748,7 +5425,7 @@ background: none !important;
     top: 0px !important;
     border-radius: 5px 0 0 5px ;
 }
-/* COLLECTIONS PAGES - PB - USER POOL PAGES - === */
+/* COLL - PB - USER POOL PAG - === */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar.nav-links.nav-links-tools.clearfix {
     position: absolute;
     display: inline-block;
@@ -5778,8 +5455,7 @@ background: none !important;
     min-width: 45px !important;
     max-width: 45px !important;
 }
-
-/* COLLECTIONS */
+/* COLL */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar ul.sn-dropdown .sn-dropdownitem:nth-child(3):not(.sn-divider) {
     display: inline-block !important;
     width: 100% ;
@@ -5793,7 +5469,7 @@ background: none !important;
     min-width: 70px !important;
     max-width: 70px !important;
 }
-/* ARCHIVES */
+/* ARCH */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar ul.sn-dropdown .sn-dropdownitem:nth-child(4):not(.sn-divider) {
     display: inline-block !important;
     width: 100% ;
@@ -5821,7 +5497,7 @@ background: none !important;
     min-width: 45px !important;
     max-width: 45px !important;
 }
-/* PHOTO OF */
+/* PHOT OF */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar ul.sn-dropdown .sn-dropdownitem:nth-child(6):not(.sn-divider) {
     min-width: 70px !important;
     max-width: 70px !important;
@@ -5831,7 +5507,7 @@ background: none !important;
     min-width: 70px !important;
     max-width: 70px !important;
 }
-/* PROFILE */
+/* PROF */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar ul.sn-dropdown .sn-dropdownitem:nth-child(7):not(.sn-divider) {
     min-width: 65px !important;
     max-width: 65px !important;
@@ -5861,7 +5537,7 @@ background: none !important;
     min-width: 50px !important;
     max-width: 50px !important;
 }
-/* MY RECENT ACTIVITY */
+/* MY REC ACT */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar ul.sn-dropdown .sn-dropdownitem:nth-child(8).sn-divider + .sn-dropdownitem {
     min-width: 100px !important;
     max-width: 100px !important;
@@ -5881,7 +5557,7 @@ background: none !important;
     min-width: 65px !important;
     max-width: 65px !important;
 }
-/* HEADER - TOP NAV BAR RIGHT - OK for Profile (Photostream / Sets / Favorites ??? ) - NAV ITEMS in one line - === */
+/* HEADER - TOP NAV BAR RIGHT - OK for Profile (PHOSTR/SET/FAV ??? ) - NAV ITEMS */
 .sn-navitem  {
     display: inline-block !important;
     height: 20px !important;
@@ -5931,7 +5607,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider):nth-child(9) {
     max-width: 20px !important;
     top: -32px !important;
 }
-/* recent activity */
+/* REC ACT */
 ul.sn-dropdown .sn-dropdownitem.sn-divider + .sn-dropdownitem {
     display: inline-block !important;
     width: 100% !important;
@@ -5949,12 +5625,12 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     content: "✉" ;
     font-size: 20px ;
 }
-/* COLLECTION - HEADER NAV BAR - 3 DOTS MENU === */
+/* COLL - HEADER NAV BAR - 3 DOTS MENU === */
 .subnav-refresh .sn-dropdowntarget ul.sn-dropdown {
     width: 722px !important;
     top: 24px !important;
 }
-/* VIEW MODE BUTTONS */
+/* VIEW MODE BUT */
 .subnav-refresh ul.nav-links li.sn-navitem.sn-active, 
 .subnav-refresh ul.nav-links li.sn-navitem:hover {
     border-radius: 5px !important;
@@ -5965,7 +5641,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
 .subnav-refresh ul.nav-links li.sn-navitem a.sn-ico.sn-ico-group-list-view-list-active {
     background-position: 2px -2575px !important;
 }
-/* HEADER -  NAV BAR RIGHT (Photostream Sets Favorites POOL ) - RIGHT BUTTON-BAR - BLOCK CONTAINER - === */
+/* HEADER -  NAV BAR RIGHT (Photostream Sets Favorites POOL ) - RIGHT BUTTON-BAR - BLOCK CONTAINER */
 #button-bar.nav-links.nav-links-tools {
     position: absolute !important;
     display: inline-block !important;
@@ -5984,7 +5660,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     top: -33px !important;
     left: 1130px !important;
 }
-/* from NEW ABOUT - USER POOL PAGE / GALLERY / FAV - NOT BETA - === */
+/* from NEW ABOUT - USER POOL PAG/GAL/FAV - NOT BETA - === */
 #global-nav.styleguide-global-nav + #Main #subnav-refresh .subnav-middle  .subnav-holder #button-bar.nav-links.nav-links-tools.clearfix:not(:empty) ,
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder #button-bar.nav-links.nav-links-tools.clearfix:not(:empty)  {
     display: inline-block !important;
@@ -6011,8 +5687,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     padding-bottom: 0 !important;
     padding-top: 2px !important;
 }
-
-/* TOP HEADER - NAVBAR - EDIT DETAIL STREAM - UPLOAD - === */
+/* TOP HEADER - NAVBAR - EDIT DETAIL STREAM - UPLOAD */
 #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle  .subnav-holder .nav-links.extraitems + #button-bar.nav-links.nav-links-tools.clearfix:not(:empty){
     position: absolute  !important;
     display: inline-block !important;
@@ -6020,9 +5695,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     max-width: 22px !important;
     margin-left: 107px !important;
 }
-
-
-/* TOP HEADER - POOL NAVBAR - VIEW THUMBNAIL SMALL ICON - === */
+/* TOP HEADER - POOL NAVBAR - VIEW THUMB SMALL ICON */
 .subnav-refresh ul.nav-links li.sn-navitem a.sn-ico.sn-ico-group-pool-justified-view {
     background-position: 0px -2435px !important;
 }
@@ -6035,7 +5708,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
 .subnav-refresh ul.nav-links li.sn-navitem a.sn-ico.sn-ico-group-list-view-list-inactive {
     background-position: 2px -2540px !important;
 }
-/* HEADER - DOUBLE BUDDY ICON - BLOCK CONTAINER - FAV - === */
+/* HEADER - DOUBLE BUD ICON - BLOCK CONT - FAV */
 .subnav-refresh .sn-avatar {
     transform: scale(0.6) !important;
     width: 110px;
@@ -6048,9 +5721,9 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
 
 
 
-/* ==== SMALL THUMBNAIL ===== */
+/* ==== SMALL THUMB ===== */
 
-/* SMALL THUMBNAIL - POOL - === */
+/* SMALL THUMB - POOL */
 #pool-photos.sm {
     position: relative !important;
     display: inline-block !important;
@@ -6084,7 +5757,7 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     margin-top: 0;
     vertical-align: top;
 }
-/* SMALL VIEW - PAGINATOR - ==== */
+/* SMALL VIEW - PAGI */
 .sm.photo-display-container ~ #paginator-module.Pages {
     display: inline-block !important;
     position: absolute !important;
@@ -6096,25 +5769,19 @@ ul.sn-dropdown .sn-dropdownitem:not(.sn-divider) a[href^="/mail/write/"]:before 
     margin-top: -90px !important;
 }
 
-/* ==== END === SMALL THUMBNAIL ===== */
+/* ==== END === SMALL THUMB ===== */
 
-
-/* USER GENERIC ICON - GRAYSCALE FILTER - === */
+/* USER GEN ICON - GRAYSCALE FILTER - === */
 .avatar.group.tiny.tiny[style*="/pw/images/buddyicon"] ,
-
 *[style*="background-image: url(//combo.staticflickr.com/pw/images/buddyicon"][style*=".png"] ,
-
 .context-list>li a[style^='background-image: url("//combo.staticflickr.com/pw/images/buddyicon'] ,
 a[style^='background-image: url("//combo.staticflickr.com/pw/images/buddyicon'] ,
 *[style^='background-image: url("//combo.staticflickr.com/pw/images/buddyicon'] ,
-
 [style^='background-image: url(https://combo.staticflickr.com/pw/images/buddyicon'][style*=".png"] ,
 a[style*=".png"][style*="https://combo.staticflickr.com/pw/images/buddyicon"] ,
 [style^='background-image: url("https://s.yimg.com/pw/images/buddyicon'] ,
 *[style*="https://s.yimg.com/pw/images/buddyicon"] ,
-
 a[style*="/buddyicon"][style*=".png"] ,
-
 img[src*=".png"][src^="https://flimg.flickr.com/?"][src*="buddyicon"] ,
 img[src*=".png"][src*="buddyicon"] ,
 .avatar.person[style*=".png);"] ,
@@ -6123,15 +5790,14 @@ img[src*=".png"][src*="buddyicon"] ,
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
-
 /* GENERIC ICON - STAFF */
 .staffPost img[alt="Flickr Staff"] {
     filter:  invert(.8) grayscale(1) saturate(48) sepia(1)  ;
 }
 
-/* ==== END ==== DIVERS ======================== */
+/* ==== END ==== DIV ==== */
 
-/* ============ BUTTONS - CURSOR - GENERAL ====== */
+/* ==== BUTT - CURSOR - GEN ==== */
 .DeleteButt,
 .CancelButt,
 .SmallButt,
@@ -6141,13 +5807,12 @@ img[src*=".png"][src*="buddyicon"] ,
 .DeleteButt:visited {
     cursor: pointer !important;
 }
-/* END ============= BUTTONS - CURSOR - GENERAL ====== */
+/* END ==== BUTT - CURSOR - GENERAL ==== */
 
 
-/*START ========================================================== */
-/* ======= GENERAL - LINK COLOR + OTHERS THINGS ================== */
+/* START ==== GEN - LINK COLOR + OTHERS THINGS ===== */
 
-/* LINK + VISITED + VISITER HOVER- === */
+/* LINK + VISITED + VISITED HOVER */
 a {
     color: peru !important;
     text-decoration: none !important;
@@ -6169,11 +5834,11 @@ a:active {
 .sub-photo-date-view >  .date-taken +  .date-info>p>a:visited {
     color: tan !important;
 }
-/* === END - LINK COLOR GENERAL - === */
+/* ==== END - LINK COLOR GENERAL ==== */
 
-/* ============= OTHERS THINGS - ALL ================ */
+/* ==== OTHERS THINGS - ALL ===== */
 
-/* BLOCKQUOTE - === */
+/* BLOCKQUOTE */
 blockquote{
 quotes: "\201C" "\201D";
     font-size: 15px !important;
@@ -6202,10 +5867,10 @@ table td {
 
 /* END ==== ALL - LINK COLOR + OTHERS THINGS ===== */
 
-/* STYLE 0 == END == ALLinONE - NO GM Adaptation  ===  */
+/* STYLE 0 == END == ALLinONE - NO GM Adaptation  ====  */
 
 
-/* STYLE 1 == START == FLICKR - NEW Photo Page + NOTES === */
+/* STYLE 1 == START == FLICKR - NEW Photo Page + NOTES ==== */
 
 /* PHOTO - GLOBAL SIZE - === */
 .fluid.html-photo-page-scrappy-view.scrolling-layout #content  {
@@ -6221,8 +5886,8 @@ table td {
 }
 
 
-/* FOOT - ALL - HIDDEN / VISBLE HOVER - === */
-/* FOOT - PHOTO - HIDDEN / VISBLE HOVER - === */
+/* FOOT - ALL - HIDDEN / VISBLE HOVER */
+/* FOOT - PHOTO - HIDDEN / VISBLE HOVER */
 .html-photo-page-scrappy-view .view.footer-full-view ,
 .html-photo-page-scrappy-view.fluid.scrolling-layout.yui3-js-enabled .view.footer-full-view {
     position: fixed !important;
@@ -6271,9 +5936,9 @@ table td {
     color: gold ;
     transition: all ease 0.1s ;
 }
-/* END ===  TEST - FOOTER ======= */
+/* END ===  TEST - FOOTER ==== */
 
-/* PHOTO - NOTES COUNTER - === */
+/* PHOTO - NOTES COUNTER */
 .photo-notes-scrappy-view.box-hovered ,
 .photo-notes-scrappy-view {
     content: counter(myIndex, decimal);
@@ -6321,7 +5986,6 @@ table td {
     z-index: 50000 !important;
 background: transparent !important;
 }
-
 .photo-notes-scrappy-view:not(.box-hovered) span {
     opacity: 1 !important;
     visibility: hidden !important;
@@ -6371,7 +6035,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 color: white !important;
 background: rgba(0, 0, 0, 0.2) !important;
 }
-/* PHOT - NOTE - EDIT - === */
+/* PHOT - NOTE - EDIT */
 .photo-notes-scrappy-view .note-text.adding .text-alignment-fix, .photo-notes-scrappy-view .note-text.editing .text-alignment-fix {
     min-width: 317px !important;
     max-height: none;
@@ -6382,14 +6046,14 @@ background: rgba(0, 0, 0, 0.2) !important;
     min-width: 307px !important;
     margin-top: 5px;
 }
-/* PHOT - KEEP RATIO - CONTAINER - VERY LARGE IMAGE - ===  */
+/* PHOT - KEEP RATIO - CONTAINER - VERY LARGE IMAGE */
 html.fluid.html-photo-page-scrappy-view #content .view.sub-photo-view {
     margin-top: 200px !important;
 }
 
-/* == START == PHO - TITLE/DESC cf STREAM EDIT COMPAT ==== */
+/* ==== START == PHO - TITLE/DESC cf STREAM EDIT COMPAT ==== */
 
-/* (new136) STREAM EDIT - TITLE DESC - === */
+/* STREAM EDIT - TITLE DESC */
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view {
     position: absolute ;
     display: inline-block ;
@@ -6413,7 +6077,7 @@ html.fluid.html-photo-page-scrappy-view #content .view.sub-photo-view {
     overflow: visible ;
     z-index: 200 ;
 }
-/* PHOTO - TITLE - PB SELECT just TXT - */
+/* PHOTO - TITLE - PB SELECT just TXT */
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.photo-title {
     position: fixed ;
     display: inline-block ;
@@ -6461,7 +6125,7 @@ border-bottom: 4px solid peru ;
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.photo-desc > p {
     color: white !important;
 }
-/* PHOTO - DESCRIPTION - INDICATOR - 🔺 - === */
+/* PHOTO - DESCRIPTION - INDICATOR - 🔺 */
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.photo-desc:not(.show-editable):before {
     content: "🔺" ;
     position: fixed ;
@@ -6482,7 +6146,7 @@ color: red ;
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.photo-desc:not(.show-editable):hover:before {
     opacity: 0.05 ;
 }
-/* PHOTO - TITLE + DESC EDIT  */
+/* PHOTO - TITLE + DESC EDIT */
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block .title-desc-edit.ui-icon-title-desc-edit {
     position: fixed ;
     display: inline-block ;
@@ -6498,7 +6162,7 @@ color: red ;
     margin-top: -75px ;
     margin-right: -35px ;
 }
-/* (new136) TITLE + DESC INPUT FIELDS */
+/* TITLE + DESC INPUT FIELDS */
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.edit-meta-field.edit-photo-desc ,
 .fluid.html-photo-page-scrappy-view .sub-photo-title-desc-view > .title-desc-block > .meta-field.edit-meta-field.edit-photo-title {
     position: fixed ;
@@ -6521,12 +6185,12 @@ color: red ;
     text-align: center;
 }
 
-/* === END === PHOTO - TITLE/DES ==== */
+/* ==== END === PHOTO - TITLE/DES ==== */
 
 
-/* == START == STREAM EDIT === *
+/* ==== START == STREAM EDIT ==== *
 
-/* STREAM EDIT - TITLE + DESC - === */
+/* STREAM EDIT - TITLE + DESC */
 .html-photostream-edit-page-view .interaction-view .photo-list-photo-edit-interaction .interaction-bar:hover {
     opacity: 1 !important;
 }
@@ -6538,7 +6202,6 @@ background-position: center center !important;
 background-repeat: no-repeat;
 background-size: contain !important;
 }
-
 /* STREAM EDIT - PORTRAIT */
 .fluid.html-photostream-edit-page-view .photo-list-photo-view.edit.portrait {
     background-position-y: calc(0% - 0px) !important;
@@ -6555,8 +6218,7 @@ background-size: contain !important;
 .fluid.html-photostream-edit-page-view .photo-list-photo-view.edit.portrait .interaction-bar .view.sub-photo-title-desc-view.photostream-edit  {
     margin-top: -85px !important;
 }
-
-/* TEST - SMALL PHOTO (e.g. icons) - === */
+/* SMALL PHOTO (e.g. icons) */
 .fluid.html-photostream-edit-page-view .photolist-container.fluid-centered .photo-list-photo-view.edit.portrait.awake[style*="_s.jpg"] ,
 .fluid.html-photostream-edit-page-view .photolist-container.fluid-centered .photo-list-photo-view.edit.portrait.awake[style*="_t.jpg"] {
     background-position: center center !important;
@@ -6573,9 +6235,9 @@ background-size: contain !important;
     background-position-y: calc(50% - 45px) !important;
 }
 
-/* == END == STEREAM EDITABLE ==== *
+/* ==== END == STEREAM EDITABLE ==== *
 
-/* PHOTO - IMAGE CONTAINER - === */
+/* PHOTO - IMAGE CONTAINER */
 
 html.fluid.html-photo-page-scrappy-view #content .centered-content {
     width: 0 !important;
@@ -6588,7 +6250,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     max-width: 1250px !important;
     z-index: 0 !important;
 }
-/* COPYRIGHT INFRINGEMENT */
+/* COPYRIGHT INFR */
 .main-photo[src^="//combo.staticflickr.com/pw/images/en-us/photo_unavailable_copyright_"] {
     filter: opacity(0.3)
 }
@@ -6599,7 +6261,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     width: 100% !important;
     z-index: 0 !important;
 }
-/* PHOTO - ZOOM PHOTO - === */
+/* PHOTO - ZOOM PHOTO */
 .zoom-modal {
     z-index: 550000 !important;
 }
@@ -6609,7 +6271,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
 .zoom-modal .zoom-photo-container img {
     opacity: 1 !important;
 }
-/* == PHOTO  - TOOLTIP / POPUP / MENU ETC  === */
+/* PHOTO  - TOOLTIP / POPUP / MENU ETC */
 .fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-modal-view.flickr-view-root-view  ,
 .fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-modal-view.flickr-view-root-view .modal.html-modal.scrappy-dialog   {
     z-index: 50000 !important;
@@ -6618,7 +6280,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     color: gray !important;
 }
 
-/* PHOTO - ADULT CONTENT - MESSAGE - === */
+/* PHOTO - ADULT CONTENT - MESSAGE */
 .photo-well-scrappy-view .height-controller .photo-well-media-scrappy-view > .restricted-interstitial {
     margin: 0 !important;
     padding: 20px !important;
@@ -6641,7 +6303,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     top: -250px !important;
     left: 0px !important;
 }
-/* COMMENTS - TOTAL CONTAINER - === */
+/* COMMENTS - TOTAL CONTAINER */
 .sub-photo-comments-view {
     position: fixed !important;
     display: inline-block !important;
@@ -6661,7 +6323,7 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     z-index: 5000 !important;
     transition: all ease 1s !important;
 }
-/* PHOTO / GALLERIES PAGE - COMMENTS CONTAINER - REVERSE ORDER - === */
+/* PHOT/GAL - COMM CONT - REVERSE ORDER */
 .html-gallery-page-view .comments-section .view.gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list ,
 .comments-holder.order-chronological.photosInComments ul.comments {
     display: flex !important;
@@ -6687,14 +6349,11 @@ html.fluid.html-photo-page-scrappy-view #content .centered-content {
     visibility: visible !important;
     transition: all 1s linear !important;
 }
-
-/* PHOTO - COMMENTS - PB BUDDY ICON / ACTIONS - === */
-
+/* PHOT - COM - PB BUDDY ICON / ACTIONS */
 .fluid.html-photo-page-scrappy-view.scrolling-layout .sub-photo-comments-view .comments li.comment:hover .comment-author > a {
     color: peru !important;
 }
-
-/* PHOTO - COMMENTS - CONTAINER - ADD ICON TO SHOW COMMENTS CONTAINER (on HOVER) - NEAR TOP RIGHT PANEL - === */
+/* PHOT - COMM - CONT - ADD ICON SHOW COM CONT (on HOVER) */
 .sub-photo-comments-view .comments-holder.order-chronological.photosInComments ul.comments:before  {
     content: " " ;
     position: fixed ;
@@ -6723,7 +6382,7 @@ background-color: red ;
 .sub-photo-comments-view .comments-holder.order-chronological.photosInComments ul.comments .comment:hover:before {
     border-radius: 2px;
 }
-/* PHOTO - COMMENTS - CONTAINER - ADD ICON TO SHOW COMMENTS CONTAINER (on HOVER) - SECOND PLACE ON COMMENTS COUNTER - === */
+/* PHOT - COM - CONTR - ADD ICON SHOW COMM CONT (on HOVER) - SECOND PLACE ON COMM COUNT */
 .sub-photo-comments-view .comments-holder.order-chronological.photosInComments ul.comments .comment:first-of-type:after  {
     content: "🗨" ;
     position: fixed ;
@@ -6742,8 +6401,7 @@ background-color: red ;
     opacity: 0.3 ;
 background-color: rgba(0, 0, 0, 0.7) ;
 }
-
-/* VIEW MORE STATS - === */
+/* VIEW MORE STATS */
 .sub-photo-right-view > .sub-photo-right-row1 > .sub-photo-right-stats-view .show-more-stats {
     position: absolute !important;
     width: 90px!important;
@@ -6799,7 +6457,7 @@ background-color: #3D3E3E !important;
     padding: 0px 5px !important;
     font-size: 15px !important;
 }
-/* PHOTO - EXIF INFO - === */
+/* PHOTO - EXIF INFO */
 .sub-photo-right-view > .photo-charm-exif-scrappy-view .ui-menu.exif-charm-list ul .exif-column-1:before   {
     content: "▼ EXIF infos" ;
     position: absolute ;
@@ -6816,7 +6474,6 @@ background-color: #3D3E3E !important;
     background-color: transparent;
     color: gray !important;
 }
-
 /* PHOTO - LICENSE */
 .sub-photo-right-view > .sub-photo-right-row1 > .photo-license-view ul ,
 .photo-license-view .ui-dropdown:not(.ui-dropdown-closed) > ul {
@@ -6830,7 +6487,7 @@ background-color: #3D3E3E !important;
     line-height: 24px;
     padding: 0 15px;
 }
-/* AUTHOR INFOS TOOLTIP - === */
+/* AUTHOR INFOS TOOLTIP */
 .html-photo-page-scrappy-view.scrolling-layout.yui3-js-enabled .view.fluid-droparound-view.flickr-view-root-view .person-card-view h3.fade-out {
     width: 420px !important;
     text-overflow: ellipsis !important;
@@ -6873,7 +6530,7 @@ outline: 1px solid gray !important;
 .html-photo-page-scrappy-view.scrolling-layout.yui3-js-enabled .person-card-view .recent-photos a:visited {
 outline: 1px solid violet !important;
 }
-/* PHOTO - PRO BADGE - ==== */
+/* PHOTO - PRO BADGE */
 .avatar.person.medium + .pro-badge-inline {
     display: inline-block !important;
     vertical-align: middle !important;
@@ -6890,7 +6547,12 @@ outline: 1px solid violet !important;
 color: #888A8C !important;
 background: transparent;
 }
-/* PHOTO - FAVED BY - TOOLTIP - ====*/
+
+/* (new159) FAV STAR - NEAR FAVED BY - SUPP */
+.sub-photo-left-view > .sub-photo-fave-view i {
+    display: none !important;
+}
+/* (new159) PHOTO - FAVED BY - TOOLTIP */
 .ui-dialog-modal-curtain.ui-dialog-modal-curtain-clear {
     background: transparent;
     transition: none 0s ease 0s ;
@@ -6920,6 +6582,7 @@ background: transparent;
     font-size: 0px !important;
     font-weight: 400;
 }
+/* (new159) */
 .sub-photo-left-view > .sub-photo-fave-view > .faved-by > .initial-faved-by-display a:not(:last-of-type) {
     position: relative !important;
     display: inline-block !important;
@@ -6929,7 +6592,7 @@ background: transparent;
     min-width: 85px !important;
     max-width: 85px !important;
     top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 7px !important;
     font-size: 14px !important;
     text-align: center !important;
     text-overflow: ellipsis !important;
@@ -6955,6 +6618,9 @@ background: transparent;
 .sub-photo-left-view > .sub-photo-fave-view > .faved-by > .initial-faved-by-display a:last-of-type {
     display: inline-block !important;
     max-width: 135px !important;
+height: 15px !important;
+line-height: 15px !important;
+    margin-top: 0px !important;
     font-size: 14px !important;
     white-space: nowrap !important;
     overflow: hidden !important;
@@ -7138,7 +6804,7 @@ background: #2b2b2b;
 .fluid.html-photo-page-scrappy-view .modal .stuff-selection-list-container ol.stuff-selection-list {
     overflow-x: hidden !important;
 }
-/* (new142) ALL */
+/* (new159) NEW ADD TO POOL/GALL - ALL - NOT BELL NOTIF - ALL */
 .view.add-to-stuff-view .add-to-stuff-container .nav {
     height: 20px !important;
 }
@@ -7154,53 +6820,16 @@ background: #2b2b2b;
 border-top: 1px solid red !important;
 }
 
-/* OK SMALL - NEW ADD TO POOL+GALLERIES - in POOL BETA / ALBUM / GALLERIES / FAV / - === */
- 
-.fluid.html-group-pool-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item  ,
-.fluid.html-album-page-view .subview-droparound.droparound.auto-size .stuff-selection-view  .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item ,
-.fluid.html-gallery-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item ,
-.fluid.html-favorites-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item {
-  padding: 0 1px !important;
-  width: 47.3% !important;
-}
-
-.fluid.html-group-pool-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
-.fluid.html-album-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
-.fluid.html-gallery-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
-.fluid.html-favorites-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels {
-  margin-right: -99% !important;
-  max-width: 79% !important;
-  min-width: 79% !important;
-}
-
-/* NEW ADD TO POOL+GALLERIES - in ALBUM - OVERLAY - === */
-.fluid.html-album-page-view .fluid-droparound-overlay.transparent ,
-.fluid.html-album-page-view .fluid-droparound-overlay {
-    position: fixed !important;
-    display: inline-block !important;
-    left: 0px !important;
-    right: 0 !important;
-    top: 0px !important;
-    width: 100% !important;
-}
-.add-to-stuff-view .nav ul li  {
-    height: 36px !important;
-}
-.add-to-stuff-view .nav ul li span {
-    padding-bottom: 0;
-    padding-top: 12px;
-
-}
-/* NEW ADD TO POOL+GALL - ALL - PB - POOL BETA DISC BELL NOTIF  - === */
-
-.view.fluid-droparound-view.flickr-view-root-view  .droparound.subview-droparound.auto-size {
+/* (new159) NEW ADD TO POOL/GALL - ALL - NOT BELL NOTIF  - === */
+.view.fluid-droparound-view.flickr-view-root-view  .droparound.subview-droparound.auto-size:not(.notifs-droparound) {
     min-height: auto ;
     min-width: 500px ;
     top: 20% ;
     z-index: 5000000 ;
     opacity: 1 ;
 }
-.view.fluid-droparound-view.flickr-view-root-view  .droparound.subview-droparound.auto-size .stuff-selection-view .stuff-selection .stuff-selection-list-container ol.stuff-selection-list{
+/* (new159) MODAL - ADD TO POOL/  GAL  ??? */
+.view.fluid-droparound-view.flickr-view-root-view  .droparound.subview-droparound.auto-size  .stuff-selection .stuff-selection-list-container ol.stuff-selection-list {
     height: 350px ;
     overflow: hidden ;
     overflow-y: auto ;
@@ -7248,6 +6877,75 @@ outline: 1px solid tomato !important;
 outline: none !important;
 color: red !important;
 }
+
+
+/* OK SMALL - NEW ADD TO POOL+GALLERIES - in POOL BETA / ALBUM / GALLERIES / FAV / - === */
+ 
+.fluid.html-group-pool-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item  ,
+.fluid.html-album-page-view .subview-droparound.droparound.auto-size .stuff-selection-view  .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item ,
+.fluid.html-gallery-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item ,
+.fluid.html-favorites-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item {
+  padding: 0 1px !important;
+  width: 47.3% !important;
+}
+
+.fluid.html-group-pool-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
+.fluid.html-album-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
+.fluid.html-gallery-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels ,
+.fluid.html-favorites-page-view .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels {
+  margin-right: -99% !important;
+  max-width: 79% !important;
+  min-width: 79% !important;
+}
+
+/* NEW ADD TO POOL/GALLERIES - in ALBUM - OVERLAY - === */
+.fluid.html-album-page-view .fluid-droparound-overlay.transparent ,
+.fluid.html-album-page-view .fluid-droparound-overlay {
+    position: fixed !important;
+    display: inline-block !important;
+    left: 0px !important;
+    right: 0 !important;
+    top: 0px !important;
+    width: 100% !important;
+}
+.add-to-stuff-view .nav ul li  {
+    height: 36px !important;
+}
+.add-to-stuff-view .nav ul li span {
+    padding-bottom: 0;
+    padding-top: 12px;
+
+}
+
+/* (new159) POOL BETA - NOTIF PANEL - HOME */
+.fluid.html-group-discussions-list-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound ,
+.fluid.html-group-pool-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound ,
+.fluid.html-group-discussion-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound ,
+.fluid.html-group-home-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound {
+    position: fixed;
+    min-height: 19px !important;
+    max-height: 19px !important;
+    min-width: 19px !important;
+    max-width: 19px !important;
+    left: 1882px !important;
+    top: 3px !important;
+    overflow: hidden !important;
+    opacity: 0;
+    z-index: 5000000;
+transition: opacity ease 0.7s !important;
+}
+.fluid.html-group-discussions-list-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound:hover ,
+.fluid.html-group-pool-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound:hover ,
+.fluid.html-group-discussion-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound:hover ,
+.fluid.html-group-home-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.notifs-droparound:hover {
+    min-height: auto;
+    min-width: 500px;
+    left: 403px !important;
+    opacity: 1;
+transition: opacity ease 0.7s, left ease 0.7s !important;
+}
+
+
 /* INVIT ERROR */
 .stuff-selection-view .stuff-selection .stuff-selection-list-container .stuff-selection-list li.selection-item .selection-item-content .item-labels .item-stats.error-message {
     line-height: 11px;
@@ -7297,7 +6995,7 @@ border: 1px solid gray ;
 background: rgba(62, 59, 59, 0.6) ;
 }
 
-/* PHOTO - LIGHTBOX - === */
+/* (new159) PHOTO - LIGHTBOX - A VOIR FAV STAR === */
 body > #content > .view.photo-page-lightbox-scrappy-view > div {
     display: flex !important;
     float: none !important;
@@ -7449,13 +7147,13 @@ background: rgba(0, 0, 0, 0) url("https://combo.staticflickr.com/ap/build/images
     width: 140px!important;
     width: 170px;
     top: 124px !important;
-    right: 345px ! important;
+    right: 349px ! important;
     margin-right: 40px !important;
     z-index: 0 !important;
     transform: scale(0.7) !important;
 }
 
-/* PHOTO - ALL USERS - ACTION BAR - ICONs FAV/SHARE/ALL SIZE - === */
+/* (new159) PHOTO - ALL USERS - ACTION BAR - ICONs FAV/SHARE/ALL SIZE - === */
 .photo-engagement-view > div a {
     padding: 8px 1px !important;
 }
@@ -7466,25 +7164,133 @@ background: rgba(0, 0, 0, 0) url("https://combo.staticflickr.com/ap/build/images
 .photo-engagement-view .fave-view {
     display: inline-block !important;
     height: 30px !important;
-    width: 25px !important;
+    width: 30px !important;
+    top: 0px;
 }
 .view.fave-view .button {
     display: inline-block !important;
     height: 30px !important;
-    width: 25px !important;
+    line-height: 15px !important;
+    width: 32px !important;
     padding: 0 !important;
     text-align: center !important;
+/* border: 1px solid violet !important; */
 }
-/* (new154) */
-.fave-view .fave-star {
+/* (new159) */
+.fave-view .fave-star,
+.fave-view .fave-star.animated {
     display: inline-block !important;
     min-height: 30px !important;
-    width: 43px !important;
-    top: -9px !important;
-    left: -22px !important;
-    transform: scale(0.5, 0.5);
-    transform-origin: right 27px !important;
+    width: 30px !important;
+    top: 4px !important;
+    left: 4px !important;
+    padding: 0 !important;
 }
+
+/* (new159) PHOT - FAV STAR - COUNT (PB WRONG COUNT)*/
+
+.view.photo-page-scrappy-view .view.photo-engagement-view .view.fave-view .button > span.fave-count {
+    position: absolute !important;
+    display: inline-block !important;
+    top: -1px  !important;
+    left: 19px ;
+    font-size: 15px !important;
+    transition: all ease 0.7s !important;
+    opacity: 0.3 !important;
+color: gray !important;
+}
+.view.photo-page-scrappy-view .view.photo-engagement-view .view.fave-view .button:hover > span.fave-count {
+    transition: all ease 0.7s !important;
+    opacity: 1 !important;
+color: gold !important;
+}
+
+/* (new159) PHOT - FAV STAR - NOT ANIMATED - GENERAL */
+.fave-star i.animated-fave-star ,
+.fave-star.animated.is-faved i.animated-fave-star ,
+
+/* (new159) FAV STAR - PHOT */
+.fave-view .fave-star i.animated-fave-star ,
+.fave-view .fave-star.animated.is-faved i.animated-fave-star{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0px;
+    top: 0;
+background-image: none !important;
+}
+
+/* (new159) FAV STAR - GAL / POOL BETA / FAV */
+.photo-list-photo-interaction .engagement-item.fave .engagement-icon i.animated-fave-star ,
+.photo-list-gallery-photo-view .engagement-item.fave .engagement-icon i.animated-fave-star ,
+.engagement-item.fave.faved.last .engagement-icon i.animated-fave-star {
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    top: 0;
+background-image: none !important;
+}
+/* (new159) FAV STAR - ADD FAV ICON */
+.fave-star i.animated-fave-star:before ,
+.fave-star.animated.is-faved i.animated-fave-star:before ,
+
+/* (new159) FAV STAR - ADD FAV ICON - PHOT */
+.fave-view .fave-star i.animated-fave-star:before ,
+.fave-view .fave-star.animated.is-faved i.animated-fave-star:before {
+    display: inline-block ;
+    height: 30px !important;
+    line-height: 28px !important;
+    width: 30px;
+    margin-left: -4px;
+    margin-top: -2px;
+    font-size: 29px !important;
+    font-style: normal !important;
+    text-align: center ;
+}
+/* (new159) FAV STAR - ADD FAV ICON - GAL / POOL BETA / FAV */
+.photo-list-photo-interaction .engagement-item.fave .engagement-icon i.animated-fave-star:before ,
+.photo-list-gallery-photo-view .engagement-item.fave .engagement-icon i.animated-fave-star:before ,
+.engagement-item.fave.faved.last .engagement-icon i.animated-fave-star:before {
+    display: inline-block ;
+    height: 24px !important;
+    line-height: 20px !important;
+    width: 24px;
+    margin-left: -4px;
+    margin-top: -2px;
+    font-size: 20px !important;
+    font-style: normal !important;
+    text-align: center ;
+}
+
+/* (new159) FAV STAR - ADD FAV ICON - NOT FAVED */
+/* FAV*/
+.photo-list-photo-interaction .engagement-item.fave .engagement-icon i.animated-fave-star:before ,
+/*GAL */
+.photo-list-gallery-photo-view .engagement-item.fave .engagement-icon i.animated-fave-star:before ,
+.fave-star i.animated-fave-star:before ,
+.fave-view .fave-star i.animated-fave-star:before {
+    content: "✩" ;
+color: gray !important;
+/* background: green ; */
+}
+
+
+
+/* (new159) FAV STAR - ADD FAV ICON - FAVED */
+
+/* GAL / POOL BETA */
+.engagement-item.fave.faved.last .engagement-icon i.animated-fave-star:before ,
+/* PHOT */
+.fave-star.animated.is-faved i.animated-fave-star:before ,
+.fave-view .fave-star.animated.is-faved i.animated-fave-star:before {
+    content: "★" ;
+color: red !important;
+/* background: blue ; */
+}
+
+
+
+/* SHARE */
 .photo-engagement-view > div.fluid-share-photo-view {
     margin-right: 0px !important;
 }
@@ -7554,12 +7360,19 @@ color: transparent ;
 .sub-photo-left-view > .attribution-view.photo-attribution > .attribution-info a.owner-name span ,
 .sub-photo-left-view > .attribution-view.photo-attribution > .attribution-info a.owner-name:visited ,
 .sub-photo-left-view > .attribution-view.photo-attribution > .attribution-info a.owner-name {
-    max-width: 380px !important;
+/* display: inline-block !important; */
+    max-width: 480px !important;
     top: 6px !important;
     opacity: 0.94 !important;
 text-shadow: 1px 1px 4px #000 !important;
 color: white !important;
 overflow: hidden !important;
+}
+/* (new159 ) */
+.sub-photo-left-view > .attribution-view.photo-attribution > .attribution-info a.owner-name[id^="CFS"] span ,
+.sub-photo-left-view > .attribution-view.photo-attribution > .attribution-info a.owner-name[id^="CFS"]{
+    display: inline-block !important;
+    white-space: nowrap !important;
 }
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment .comment-author ,
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment .comment-author:visited ,
@@ -7804,7 +7617,7 @@ border: 1px solid gray ;
     border-top: none ;
 }
 
-/* PHOTO - PEOPLE + PEOPLE EMPTY */
+/* (new159) PHOTO - PEOPLE + PEOPLE EMPTY */
 .view.sub-photo-tags-view.people-is-empty {
     position: relative ;
     display: inline-block ;
@@ -7812,7 +7625,7 @@ border: 1px solid gray ;
     max-height: 18px ;
     min-height: 18px ;
     line-height: 18px ;
-    margin-top: 0px !important;
+    margin-top: 10px !important;
     margin-left: -3px !important;
     margin-bottom: 40px !important;
     padding-top: 0 !important;
@@ -8850,7 +8663,7 @@ background: black ;
     right: 5px ;
 }
 
-/* (new137) PHOTO - POOL EMPTY */
+/* (new159) PHOTO - POOL EMPTY */
 .sub-photo-contexts-view .sub-photo-context-groups.empty {
     display: inline-block ;
     width: 483px ;
@@ -8882,6 +8695,22 @@ border: 1px solid green !important;
     display: inline-block ;
     margin-top: 0px ;
     right: 5px ;
+}
+
+/* (new159)  ADAP LANG */
+html[lang="fr-fr"] .sub-photo-contexts-view .sub-photo-context-groups.empty p:first-child  {
+    width: 345px ;
+    font-size: 14px !important;
+}
+html[lang="fr-fr"] .sub-photo-contexts-view .sub-photo-context-groups.empty p:last-child  {
+    min-width: 140px;
+    max-width: 140px;
+    line-height: 13px !important;
+}
+/* NBR in POLL */
+html[lang="ko-kr"] .sub-photo-contexts-view .sub-photo-context.sub-photo-context-groups h5 ,
+html[lang="fr-fr"] .sub-photo-contexts-view .sub-photo-context.sub-photo-context-groups h5 {
+    font-size: 12px !important;
 }
 
 /*  GALLERIES - EMPTY */
@@ -9466,14 +9295,7 @@ background: red !important;
     height: 68px ;
 }
 
-/* FLUID - POOL TOPIC - ==== */
-.fluid.html-group-discussion-page-view .main.centered-content {
-    margin-top: 42px;
-}
-.fluid .group-discussion-topic-view .message-text, 
-.fluid .group-discussion-topic-view .preview-block {
-    line-height: 18px !important;
-}
+
 
 /* NEW ABOUT - FOLLOW BUTTON */
 .fluid .coverphoto-content .title-block-content .title .follow-view button, 
@@ -9499,65 +9321,12 @@ background: red !important;
     display: block !important;
     margin-bottom: 4px !important;
 }
-/* FLUID - TAGS PAGES - === */
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .cover {
-    height: 145px !important;
-    margin-bottom: -147px !important;
-    opacity: 1 !important;
-    background-size: cover;
-}
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .sizer-cropper {
-    position: relative;
-    display: inline-block !important;
-    height: 186px !important;
-    width: 364px !important;
-    top: 0px !important;
-    text-align: center !important;
-}
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .avatar-content {
-    position: absolute !important;
-    display: inline-block !important;
-    height: 143px !important;
-    top: 0px !important;
-    left: 145px !important;
-}
-
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .avatar-content a {
-    display: inline-block !important;
-    margin-top: 45px !important;
-}
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .text-content {
-    position: relative !important;
-    display: inline-block !important;
-    min-width: 345px !important;
-    max-width: 345px !important;
-    top: 60px !important;
-    margin-left: -4px !important;
-    padding: 5px !important;
-    text-align: center !important;
-    overflow: hidden !important;
-}
-.fluid .tag-page-view .related-groups-view .result-cards .result-card .text-content .title {
-    position: relative !important;
-    display: inline-block !important;
-    min-width: 335px !important;
-    max-width: 335px !important;
-    height: 22px !important;
-    line-height: 26px !important;
-    text-align: center !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-}
-.fluid .tag-page-view .related-groups-view .view-more-link {
-    margin-top: -24px !important;
-}
 
 /* FLUID BETA - POOL - PENDING MEMBERS PAGE - === */
 .fluid .view.group-members-admins-view {
     margin-top: 48px !important;
     color: peru !important;
 }
-
 /*  FLUID BETA - POOL TOP NAV BAR  - === */
 .fluid.html-group-pool-page-view  .view.group-pool-page-view  .view.fluid-magic-groups-subnav-view {
     position: fixed;
@@ -9565,25 +9334,27 @@ background: red !important;
     height: 50px;
     width: 100% !important;
     top: 0px;
-    z-index: 1 !important;
-    background-color: rgba(45, 43, 43, 0.9) ;
+    z-index: 100 !important;
+background-color: rgba(45, 43, 43, 0.9) ;
 }
-.fluid.html-group-pool-page-view  .view.group-pool-page-view  .view.fluid-magic-groups-subnav-view  + .fluid-centered.with-fluid-subnav {
-    width: 100%;
-    max-width: 1900px;
-    min-height: 100%;
-    min-width: 1900px;
-    padding-left: 0;
-    padding-right: 0;
+.fluid.html-group-pool-page-view  .view.group-pool-page-view .groups-toolbar-content  {
+    margin-top: 0px ;
 }
-.fluid.html-group-pool-page-view  .view.group-pool-page-view .groups-toolbar-content {
-    margin-top: 0 !important;
-}
-.fluid.html-group-discussions-list-page-view .view.groups-toolbar-view .groups-toolbar-content ,
-.fluid.html-group-pool-page-view  .view.group-pool-page-view  .view.fluid-magic-groups-subnav-view  + .fluid-centered.with-fluid-subnav  .view.group-pool-subheader-view {
+.fluid.html-group-discussions-list-page-view .view.groups-toolbar-view .groups-toolbar-content.fluid.html-group-discussions-list-page-view .view.groups-toolbar-view .groups-toolbar-content ,
+.fluid.html-group-pool-page-view  .view.group-pool-page-view  .view.fluid-magic-groups-subnav-view  + .fluid-centered.with-fluid-subnav  .view.group-pool-subheader-view  {
     height: 105px ;
     margin-top: 0px ;
 border-bottom: 1px solid gray ;
+}
+/* (new160) POOL BETA - TOP THUMBNAIL INFOS */
+.fluid.html-group-pool-page-view .group-pool-subheader-view{
+    top: -5px !important;
+}
+.fluid.html-group-pool-page-view .group-pool-subheader-view .at-right {
+    position: fixed;
+    right: 470px !important;
+    top: 12px;
+    z-index: 500 !important;
 }
 
 /* FLUID - TOP HEADER - INFO - ALL - === */
@@ -9612,7 +9383,7 @@ border-bottom: 1px solid gray ;
 html.fluid.scrolling-layout #content  .coverphoto-content.fluid-centered {
     position: relative !important;
     display: inline-block !important;
-    height: 67px;
+    height: 112px;
     width: 100% !important;
     min-width: 1470px !important;
     top: 0px !important;
@@ -9687,25 +9458,27 @@ background: rgba(0, 0, 0, 0.77) !important;
 .fluid .coverphoto-content .avatar .edit .edit-icon {
     top: 6px !important;
 }
-/* (new149) FLUID - TOP HEAD - PHOTO - 5 MATCHS - ALL - PHOTO / POLL BETA HOME -  - === */
+/* FLUID - TOP HEAD - PHOTO - 5 MATCHS - ALL - PHOTO / POLL BETA HOME */
 html.fluid.html-group-home-page-view.scrolling-layout #content[style="padding-bottom: 111px;"] {
     display: inline-block !important;
     width: 100% !important;
     height: auto !important;
     padding-bottom: 151px !important;
 }
-html.fluid.html-group-pool-page-view.scrolling-layout #content  .fluid-centered.with-fluid-subnav ,
-html.fluid.html-group-home-page-view.scrolling-layout #content .main.fluid-centered,
-html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centered {
+html.fluid.html-group-pool-page-view #content  .fluid-centered.with-fluid-subnav ,
+html.fluid.html-group-home-page-viewt #content .main.fluid-centered,
+html.fluid.html-photo-page-scrappy-view #content .fluid-centered {
     width: 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
     min-height: 100% !important;
+    margin-top: 117px !important;
     left: 0 !important;
     right: 0 !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
 /* FLUID - TOP HEADER - ALBUM / SET */
 .album-page-view .album-toolbar-view > .album-toolbar-content > .story  {
     background: rgba(0, 0, 0, 0) url("https://s.yimg.com/ap/build/images/sprites/icons-9441054a.png") no-repeat scroll -459px -447px !important;
@@ -9719,7 +9492,7 @@ html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centere
 /* FLUID - TOP HEADER + THUMBNAIL - ALL - === */
 .fluid .title-block-content {
     display: inline-block !important;
-    height: 50px !important;
+    height: 76px !important;
     margin-top: -57px !important;
     padding-left: 70px !important;
 }
@@ -9732,6 +9505,7 @@ html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centere
     line-height: 50px !important;
     margin-top: -10px !important;
     font-size: 22px !important;
+z-index: 50000;
 }
 .fluid .coverphoto-content .send-flickr-mail {
     min-width: 31px ;
@@ -9743,6 +9517,7 @@ html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centere
     float: left !important;
     height: 20px !important;
     margin-top: 0px !important;
+    z-index: 5000 !important;
 }
 .fluid.html-group-pool-page-view .group-pool-subheader-view h2 {
     position: relative !important;
@@ -9769,16 +9544,14 @@ html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centere
     right: -135px !important;
     top: 25px !important;
 }
-
-/* FLUID - TOP HEAD - MAGIC TOOL - CONTAINER - ALL - === */
+/* FLUID - TOP HEAD - MAGIC TOOL - CONTAINER - ALL */
 .fluid .fluid-magic-tools-view {
     position: relative;
     height: 1px !important;
     width: 100%;
     top: -55px !important;
 }
-
-/* FLUID - TOP HEAD - USER INFO - SECONDY TOOL CONTAINER - ALL - === */
+/* FLUID - TOP HEAD - USER INFO - SECONDY TOOL CONTAINER - ALL */
 .fluid .fluid-magic-tools-view .secondary-tools {
     position: absolute;
     width: 15% !important;
@@ -9789,15 +9562,15 @@ html.fluid.html-photo-page-scrappy-view.scrolling-layout #content .fluid-centere
     padding: 0 5px !important;
 }
 
-/* FLUID - TOP HEAD - FLUID MAGIC TOOL - STREAM/FAVORIS - (with TOP PAGI) - === */
+/* FLUID - TOP HEAD - FLUID MAGIC TOOL - STR/FAV - (with TOP PAGI) */
 
-/* FLUID - TOP HEAD - STREAM / FAVS - MAGIC FILTERS - === */
+/* FLUID - TOP HEAD - STREAM / FAVS - MAGIC FILTERS */
 .fluid.html-favorites-page-view .fluid-magic-tools-view ,
 .fluid.html-photostream-page-view .fluid-magic-tools-view {
     position: fixed;
     height: 30px !important;
     top: 32px !important;
-z-index: 5000 !important;
+    z-index: 5000 !important;
 }
 .fluid.html-photostream-page-view .fluid-magic-tools-view {
     width: 220px ;
@@ -9818,7 +9591,6 @@ background: transparent !important;
     position: relative;
     max-width: 100%;
 }
-
 .fluid.html-favorites-page-view  .fluid-magic-tools-view .secondary-tools ,
 .fluid.html-photostream-page-view  .view.photostream-filter-tools-view.primary-tools ,
 .fluid.html-photostream-page-view  .fluid-magic-tools-view .secondary-tools {
@@ -9847,7 +9619,7 @@ background: transparent !important;
     left: -20px !important;
     top: -15px !important;
 }
-/* FLUID - TOP HEAD - FILT - DATE TAKEN - ALL  */
+/* FLUID - TOP HEAD - FILT - DATE TAKEN - ALL */
 .fluid .fluid-magic-tools-view .primary-tools .dropdown-link:last-of-type {
     position: relative !important;
     float: right !important;
@@ -9855,7 +9627,7 @@ background: transparent !important;
     top: -90px !important;
     padding: 0 !important;
 }
-/* FLUID - TOP HEAD - MAGIC TOOL - STREAM/FAV - (with TOP PAGI) - === */
+/* FLUID - TOP HEAD - MAGIC TOOL - STREAM/FAV - (with TOP PAGI) */
 .fluid.html-favorites-page-view .fluid-magic-tools-view ,
 .fluid.html-photostream-page-view .fluid-magic-tools-view {
     position: fixed !important;
@@ -9878,7 +9650,7 @@ background: transparent !important;
 .fluid.html-favorites-page-view  .fluid-magic-tools-view .secondary-tools ,
 .fluid.html-photostream-page-view  .view.photostream-filter-tools-view.primary-tools ,
 .fluid.html-photostream-page-view  .fluid-magic-tools-view .secondary-tools {
-float: none !important;
+    float: none !important;
     height: 30px !important;
     top: 0px !important;
 }
@@ -9894,8 +9666,7 @@ float: none !important;
     left: 620px !important;
     top: -15px !important;
 }
-
-/* FLUID - TOP HEAD - FILTER - DATE TAK - ALL - === */
+/* FLUID - TOP HEAD - FILTER - DATE TAK - ALL */
 .fluid .fluid-magic-tools-view .primary-tools .dropdown-link:last-of-type {
     position: relative !important;
     float: right !important;
@@ -9907,7 +9678,7 @@ float: none !important;
     float: left !important;
     top: 0px !important;
 }
-/* FLUID - TOP HEAD - STREAM - MAGIC - FILTERS - (cf GM "STIG")- SORT by photostream - === */
+/* FLUID - TOP HEAD - STR - MAGIC - FILTERS - (cf GM "STIG")- SORT by */
 .fluid.html-photostream-page-view .fluid-magic-tools-view {
     width: auto  !important;
     max-width: 550px  !important;
@@ -9928,7 +9699,6 @@ background: transparent !important;
 .fluid.html-photostream-page-view .fluid-magic-tools-view .fluid-magic-toolbar:hover {
     background: black !important;
 }
-
 .fluid.html-photostream-page-view.is-old-windows .fluid-magic-tools-view .primary-tools-container{
     width: auto  !important;
     height: 15px !important;
@@ -9967,14 +9737,13 @@ background: transparent !important;
 .fluid.html-photostream-page-view  .droparound.menu .droparrow.down {
     left: 107px !important;
 }
-
-/* FLUID - TOP HEADER - POOL HOME - OVERVIEW - BLAST INFO ADMIN- === */
+/* FLUID - TOP HEADER - POOL HOME - OVERVIEW - BLAST INFO ADMIN */
 .fluid.html-group-home-page-view .group-blast-view > .blast-block {
     margin-bottom: 10px;
     margin-top: 50px;
     padding: 5px 30px;
 }
-/* FLUID - BETA POOL - HOME PAGE - === */
+/* FLUID - BETA POOL - HOME PAGE */
 .html-group-home-page-view .with-fluid-subnav .group-pool-preview-view h2 {
     width: 100% ;
     height: 36px ;
@@ -9991,7 +9760,7 @@ background: transparent !important;
     right: 30px;
     margin-top: -37px;
 }
-/* FLUID - POOL BETA - PEND MEMB / PHOT - === */
+/* FLUID - POOL BETA - PEND MEMB / PHOT */
 .fluid.html-group-home-page-view .notification-block.move-to-top  {
     position: absolute;
     display: inline-block;
@@ -10015,12 +9784,12 @@ background: transparent !important;
     padding-right: 0px !important;
     text-align: right !important;
 }
-/* FLUID - TOP HEAD - USER INFOS - CONTAINER - === */
+/* FLUID - TOP HEAD - USER INFOS - CONTAINER */
   .view.fluid-magic-subnav-view.requiredToShowOnServer {
     display: inline-block !important;
 }
 
-/* STREAM - FIX SEARCH PB - cf GM "STIG" - === */
+/* STREAM - FIX SEARCH PB - cf GM "STIG" */
 .fluid.html-photostream-page-view.scrolling-layout.yui3-js-enabled {
     position: absolute !important;
     display: inline-block !important;
@@ -10037,7 +9806,6 @@ background: transparent !important;
     left: 0 !important;
     right: 0 !important;
 }
-
 /* SEARCH FAVORIS - PB STIG for TOP PAGINATON(exclude on it) */
 .fluid.html-favorites-page-view .view.favorites-page-view .view.global-nav-view ul.gn-tools {
     position: absolute !important;
@@ -10089,7 +9857,6 @@ background: transparent !important;
 color: aqua ;
 border: 1px solid gray ;
 }
-
 .fluid.html-favorites-page-view .view.favorites-page-view  .global-nav-view  .global-nav.search-open  .gn-tools .gn-search-box {
     position: fixed !important;
     height: 33px;
@@ -10127,7 +9894,6 @@ html.html-favorites-page-view.scrolling-layout   #content  {
 html.html-favorites-page-view.scrolling-layout   #content  .view.favorites-page-view {
     margin-left: 0px;
 }
-
 .fluid.html-favorites-page-view  .global-nav.search-open  .global-nav-content.styleguide-global-nav.fluid>div:last-of-type:not(.global-nav-container) {
     position: absolute !important;
     display: inline-block !important;
@@ -10145,11 +9911,18 @@ html.html-favorites-page-view.scrolling-layout   #content  .view.favorites-page-
     outline: none !important;
     z-index: 50000000 !important;
 }
-
-/* FLUID (NO BETA??) - FAV/ALBUM - THUMB - TWEAK - for THUMB ZOOM PLUS - cf STREAM EDIT - ==== */
+/* (new159) FLUID (NO BETA??) - FAV/ALBUM - THUMB - TWEAK - for THUMB ZOOM PLUS - cf STREAM EDIT - STRANGE PB for hover IMG POSITION when opacity 0.7  */
 .fluid:not(.html-photostream-edit-page-view) .photo-list-photo-view .interaction-view {
-    opacity: 0.7 !important;
+    opacity: 1 !important;
 }
+.fluid:not(.html-photostream-edit-page-view) .photo-list-photo-view .interaction-view .interaction-bar {
+    opacity: 0.5 !important;
+}
+.fluid:not(.html-photostream-edit-page-view) .photo-list-photo-view .interaction-view:hover .interaction-bar {
+    opacity: 1 !important;
+transition: opacity ease 0.7s !important;
+}
+
 .fluid:not(.html-photostream-edit-page-view) .photo-list-photo-view .interaction-view:hover, 
 .fluid:not(.html-photostream-edit-page-view) .photo-list-photo-view .interaction-view.manual-hover  ,
 
@@ -10158,7 +9931,7 @@ html.html-favorites-page-view.scrolling-layout   #content  .view.favorites-page-
     background-image: none !important;
 }
 
-/* (new145) VOIR NOT PHOTO STREAM - FROM FAV SMALL */
+/* VOIR NOT PHOTO STREAM - FROM FAV SMALL */
 .fluid:not(.html-photostream-edit-page-view)  #content .view.photo-list-view .view.photo-list-photo-view .photo-list-photo-interaction {
     position: relative;
     width: 100%;
@@ -10193,16 +9966,17 @@ color: gray;
 .photo-list-photo-interaction .interaction-bar .engagement {
     pointer-events: auto !important;
 }
-
 .photo-list-photo-interaction .interaction-bar .text {
     width: 100% !important;
     min-width: 100% !important;
     margin-bottom: -12px ;
 }
+/*(new159) */
 .photo-list-photo-interaction .interaction-bar .text .title, 
 .photo-list-photo-interaction .interaction-bar .text .attribution {
     display: inline-block  !important;
-    line-height: 10px !important;
+    height: 15px !important;
+    line-height: 15px !important;
     margin: 2px 0 0;
     margin-bottom: 8px ;
     text-align: center !important;
@@ -10211,13 +9985,9 @@ color: gray;
 text-shadow: none !important;
 color: white !important;
 }
-
 .photo-list-photo-interaction .interaction-bar .text .attribution {
     margin-bottom: 18px ;
 }
-
-
-
 .photo-list-photo-interaction .interaction-bar .text .title ,
 .fluid.html-favorites-page-view .photo-list-photo-interaction .interaction-bar .text .title {
     display: inline-block  !important;
@@ -10232,7 +10002,6 @@ color: white !important;
     z-index: 2;
 text-shadow: none !important;
 color: white !important;
-
 }
 .photo-list-photo-interaction:hover  .interaction-bar.text .title {
     display: inline-block ;
@@ -10247,8 +10016,7 @@ color: white !important;
 text-shadow: none !important;
 color: white !important;
 }
-/* (new145)  ATTRIB */
-
+/* ATTRIB */
 .photo-list-photo-interaction:hover  .interaction-bar .text .attribution {
     display: inline-block  !important;
     height: 100% ;
@@ -10293,15 +10061,11 @@ color: gold !important;
     height: 15px !important;
     line-height: 15px !important;
 }
-/* (new145) */
 .photo-list-photo-interaction .interaction-bar .engagement:hover .engagement-item  ,
 .photo-list-photo-interaction .interaction-bar:hover .engagement .engagement-item {
     cursor: pointer;
     display: inline-flex !important;
-/*     margin-right: 12px; */
-/* color: #fff; */
 }
-
 /* POOL NO BETA - VISITED */
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view .overlay  ,
 .photo-list-photo-interaction a.overlay {
@@ -10312,12 +10076,11 @@ opacity: 1 !important;
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view .overlay:visited {
     outline: 1px solid green !important;
 }
-/* FLUID - FAVED - RED STAR - === */
+/* FLUID - FAVED - RED STAR */
 .photo-list-photo-interaction .interaction-bar .engagement .engagement-item.fave.faved .engagement-icon svg.filled {
     fill: red ;
 }
-
-/* FLUID - NAVBAR TOP HEADER - FIXED TOP - === */
+/* FLUID - NAVBAR TOP HEADER - FIXED TOP */
 .fluid .fluid-subnav {
     position: absolute !important;
     top: 0px !important;
@@ -10327,8 +10090,7 @@ opacity: 1 !important;
     top: 0px !important;
     z-index: 20 !important;
 }
-
-/* FLUID - ICON FAV RED - === */
+/* FLUID - ICON FAV RED */
 .photo-list-photo-interaction .interaction-bar .tool .fave-area i.fave-star.fave {
     cursor: pointer;
     height: 22px !important;
@@ -10347,7 +10109,7 @@ background-color: rgba(10, 10, 10, 0.92) !important;
 background-color: rgba(10, 10, 10, 0.92) !important;
 }
 
-/*  FLUID - FAVORITES / FAV MY - ====*/
+/*  FLUID - FAVORITES / FAV MY */
 .html-favorites-page-view .view.fluid-magic-tools-view  + .fluid-centered {
     max-width: 100% !important;
     margin-top: 27px;
@@ -10360,9 +10122,7 @@ background-color: rgba(10, 10, 10, 0.92) !important;
     margin-top: -40px !important;
     padding: 0 30px !important;
 }
-
-
-/* FLUID - POOL - === */
+/* FLUID - POOL */
 .fluid .group-description {
     display: inline-block !important;
 }
@@ -10384,11 +10144,17 @@ background-color: rgba(10, 10, 10, 0.92) !important;
     visibility: visible !important;
     opacity: 1 !important;
 }
+/* (new160) FLUID - POOL BETA ON -  POOL THUM  */
 .fluid .view.group-pool-page-view.flickr-view-root-view .view.fluid-group-coverphoto-view {
-    border-bottom: 1px solid gray !important;
+    position: sticky;
+    top: -130px;
+    height: 170px;
+    z-index: 1;
+}
+html.fluid.html-group-pool-page-view #content  .fluid-centered.with-fluid-subnav {
+    margin-top: -100px !important;
 }
 
-/* FLUID - POOL BETA ON -  POOL THUMBNAIL - not POOL HOME PAGE - With Black pagination on left ??? - === */
 .fluid.html-group-pool-page-view.scrolling-layout .view.photo-list-view {
     display: inline-block ;
     width: 96% ;
@@ -10433,7 +10199,7 @@ border: 1px solid rgba(12, 12, 13, 0.9) !important;
 background: red ;
 }
 
-/* TOP NAV - POOL BETA/ NO BETA - BETA SEARCH (HOVER) / BETA SHARE / DISCUSSION / TOP CONTRIB / RULES /ADDITIONAL INFO - === */
+/* TOP NAV - POOL BETA/ NO BETA - BETA SEARCH (HOVER) / BETA SHARE / DISC / TOP CONTRIB / RULES /ADD INFO */
  #global-nav  #gn-wrap.gn-wrap .search-icon.fluid.html-group-home-page-view  .view.group-home-page-view .with-fluid-subnav .group-pool-preview-view ul.pool-overview-actions li .search-icon {
     position: fixed;
     right: 270px !important;
@@ -10450,16 +10216,14 @@ opacity: 0 !important;
 outline: 1px solid violet !important;
 }
 
-/* FLUID - POOL BETA - for BETA SEARCH (HOVER) / BETA SHARE / DISCUSSION / TOP CONTRIB / RULES /ADDITIONAL INFO - === */
-.fluid.html-group-home-page-view  .view.groups-toolbar-view {
-    margin-bottom: 55px ;
-}
+/* FLUID - POOL BETA - for BETA SEARCH (HOVER) / BETA SHARE / DISCUSSION / TOP CONTRIB / RULES /ADDITIONAL INFO */
+
 .fluid.html-group-home-page-view  .view.groups-toolbar-view .groups-toolbar-share-content{
     height: 20px ;
     margin-top: 10px;
     right: 10px;
 }
-/* (new149) FLUID POOL BETA - HOME */
+/* FLUID POOL BETA - HOME */
 .fluid.html-group-home-page-view  .view.group-blast-view .blast-empty .empty-state{
     margin-top: 0 ;
     padding-top: 0 ;
@@ -10485,12 +10249,12 @@ border: 1px solid gray ;
     margin-left: 0px;
 }
 
-/* FLUID - POOL - HOME - 5 INFOS BLOCKS - LAST ONE NO MARGIN LEFT - === */
+/* FLUID - POOL - HOME - 5 INFOS BLOCKS - LAST ONE NO MARGIN LEFT */
 .fluid.html-group-home-page-view .group-rules +.additional-info {
     margin-left: 0px;
 }
 
-/* FLUID - POOL - OTHER BETA ON - AWAKE THUMBNAIL - FIRST VIEW after BETA presntaion - NEED TO RELOAD the Page to have the GooD thumbnail with pagination - === */
+/* FLUID - POOL - OTHER BETA ON - AWAKE THUMBNAIL - FIRST VIEW after BETA presentation - NEED TO RELOAD the Page to have the GooD thumbnail with pagi */
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view + .view.photo-list-view:before  ,
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer):before {
     content: 'Beta "ON"' ;
@@ -10500,14 +10264,14 @@ border: 1px solid gray ;
     left: 1010px ;
     padding: 1px 5px ;
     border-radius: 5px ;
-    color: gold ;
-    background: rgba(255, 0, 0, 0.7);
-opacity: 0.2 !important;
+    opacity: 0.2 !important;
+color: gold ;
+background: rgba(255, 0, 0, 0.7);
 }
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer):hover + .view.photo-list-view:not(.requiredToShowOnServer):before {
     content: "Reload the page to have the other FLUID Thumbnail view (If Pool Beta OFF)" ;
     left: 720px ;
-opacity: 1 !important;
+    opacity: 1 !important;
 }
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view ,
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view.awake {
@@ -10539,15 +10303,10 @@ opacity: 1 !important;
     right: 0 !important;
     top: 0 !important;
 }
-/* (new145) POOL BETA - A SUPP ?*/
+/* POOL BETA - A SUPP ? */
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view .overlay {
     opacity: 1 !important;
  }
-
-
-
-
-
 /* FLUID - POOL - OTHER BETA ON - PAGI */
 .fluid.html-group-pool-page-view .pagination-view:not(:empty) {
     position: fixed !important;
@@ -10608,6 +10367,58 @@ opacity: 1 !important;
     margin-top: 720px;
 }
 
+/* FLUID - TAGS PAGES - === */
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .cover {
+    height: 145px !important;
+    margin-bottom: -147px !important;
+    opacity: 1 !important;
+    background-size: cover;
+}
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .sizer-cropper {
+    position: relative;
+    display: inline-block !important;
+    height: 186px !important;
+    width: 364px !important;
+    top: 0px !important;
+    text-align: center !important;
+}
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .avatar-content {
+    position: absolute !important;
+    display: inline-block !important;
+    height: 143px !important;
+    top: 0px !important;
+    left: 145px !important;
+}
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .avatar-content a {
+    display: inline-block !important;
+    margin-top: 45px !important;
+}
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .text-content {
+    position: relative !important;
+    display: inline-block !important;
+    min-width: 345px !important;
+    max-width: 345px !important;
+    top: 60px !important;
+    margin-left: -4px !important;
+    padding: 5px !important;
+    text-align: center !important;
+    overflow: hidden !important;
+}
+.fluid .tag-page-view .related-groups-view .result-cards .result-card .text-content .title {
+    position: relative !important;
+    display: inline-block !important;
+    min-width: 335px !important;
+    max-width: 335px !important;
+    height: 22px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.fluid .tag-page-view .related-groups-view .view-more-link {
+    margin-top: -24px !important;
+}
+
 /* FLUID - ALBUM/SET - === */
 .fluid .fluid-modal-view .album-full-description{
     left: 50%;
@@ -10618,13 +10429,12 @@ opacity: 1 !important;
     overflow: visible;
     top: 20%!important;
 }
-
 /* === SLIDESHOW === */
 .slideshow-view {
     z-index: 50000000 !important;
 }
 
-/* LIGHTBOX - CLOSE / SLIDESHOW BUTTONS - === */
+/* LIGHTBOX - CLOSE / SLIDESHOW BUTTONS */
 #lightbox .hd {
     top: 39px;
 }
@@ -10640,14 +10450,14 @@ opacity: 1 !important;
     content: "Play Slideshow" ;
     margin-top: 0px ;
 }
-/* (new143) S.SHOW BUTTON - === */
+/* S.SHOW BUTTON */
 .slideshow-bottom {
     position: absolute ;
     vertical-align: middle ;
     bottom: -230px ;
     left: 0 ;
 }
-/* S.SHOW BUTTON - POOL JU - === */
+/* S.SHOW BUTTON - POOL JU */
 .ju.photo-display-container ~  .slideshow-bottom ,
 .ju.photo-display-container + div + div + br + #paginator-module.Pages + #feeds + .slideshow-bottom  {
     position: fixed !important;
@@ -10664,7 +10474,7 @@ opacity: 1 !important;
 /* STYLE 2 == END == FLICKR - 2 - NEW -  Flickr Widescreen - FLUID BETA  === */
 
 
-/* STYLE 3 == START == FLICKR - 3 - NEW -  Flickr WideScreen - Hidden Top NavBar - OK STANDALONE  ====== */
+/* STYLE 3 == START == FLICKR - 3 - Hidden Top NavBar  ====== */
 
 /* TOP NAV - BUDDY POPUP - IMAGE COVER - USAGE etc ... NEW MAIL - (SUPP DOUBLE BUDDY ICON)- OTHERS - === */
 #global-nav:hover .gn-account .account {
@@ -10680,9 +10490,7 @@ outline: 1px solid peru !important;
 #global-nav #gb-ac-panel.arrow_box::before {
     right: 275px ;
 }
-
-
-/* TOP NAV - YOU / RECENT ACTIVITY  / CONTACT / POOL / GALLERIES /  FORUM / HELP / - === */
+/* TOP NAV - YOU / RECENT ACTIVITY  / CONTACT / POOL / GALLERIES /  FORUM / HELP */
 
 /* TOP NAV - YOU / EXPLORE / CREATE - OTHERS - === */
 #global-nav #gn-wrap .nav.small-logo {
@@ -10705,7 +10513,7 @@ outline: 1px solid peru !important;
     left: 10px;
     top: 17px ;
 }
-/* TOP NAV - RELATED SEARCH - FROM BETA ON - HOVER / NOT HOVER (move SHARE BUTTON - === */
+/* TOP NAV - RELATED SEARCH - FROM BETA ON - HOVER / NOT HOVER - move SHARE */
 .groups-toolbar-content .groups-toolbar-share-content {
     position: absolute ;
     height: 26px;
@@ -10722,7 +10530,7 @@ outline: 1px solid peru !important;
     right: -4px ;
 }
 
-/* TOP NAV - SEARCH CONTAINER INPUT - SEARCH PAGE - === */
+/* TOP NAV - SEARCH CONT INPUT - SEARCH PAGE */
 /* NORMAL */
 .search-slender-advanced-panel-view .advanced-panel .quick-filter {
     left: -600px !important;
@@ -10735,11 +10543,9 @@ outline: 1px solid peru !important;
 .fluid.html-search-photos-unified-page-view  .view.global-nav-view:hover .gn-search-box {
     position: fixed !important;
     margin-left: -10px !important;
-/* margin-top: 35px !important; */
     top: 0px !important;
     right: 130px !important;
 }
-/* (new130) */
 .fluid.html-search-groups-page-view .view.global-nav-view:not(:hover) .gn-search-box {
     margin-left: -200px ;
     margin-top: 195px ;
@@ -10760,7 +10566,6 @@ outline: 1px solid peru !important;
     margin-left: 0px !important;
     margin-top: 33px !important;
 }
-
 /* TOP NAV - SEARCH HOVER / EXPANDED */
 .fluid .view.global-nav-view:not(:hover) .search-autosuggest-field-view.expanded.focus {
     position: relative;
@@ -10836,7 +10641,7 @@ outline: 1px solid peru !important;
     width: 220px;
     margin-left: -51px !important;
 }
-/* TOP NAV - SEARCH - FORM / INPUT - === */
+/* TOP NAV - SEARCH - FORM / INPUT */
 #global-nav .tools form {
     position: relative;
     float: left;
@@ -10866,7 +10671,7 @@ outline: 1px solid peru !important;
     margin-left: -123px !important;
 }
 
-/* TOP NAV - SEARCH FIELD - ALL - PHOTO/ALBUM/SET / SEARCH PAGES - === */
+/* TOP NAV - SEARCH FIELD - ALL - PHOT/ALB/SET / SEARCH */
 .global-nav .global-nav-content .gn-tools.with-upload-icon .gn-search-box {
     position: relative !important;
     display: inline-block !important;
@@ -10875,8 +10680,7 @@ outline: 1px solid peru !important;
     right: 20px;
     margin-top: 5px !important;
 }
-
-/* TOP NAV - SEARCH FIELD - ALL -=== */
+/* TOP NAV - SEARCH FIELD - ALL */
 .search-autosuggest-field-view .search-form {
     height: 25px !important;
     line-height: 25px !important;
@@ -10912,13 +10716,11 @@ outline: 1px solid peru !important;
     top: 43px !important;
     left: -34px !important;
 }
-
-/* TOP NAV - SEARCH ICON - ALL  - === */
+/* TOP NAV - SEARCH ICON - ALL */
 .search-autosuggest-field-view .search-form .search-icon-button {
     margin: 3px 0 7px -5px !important;
 }
-
-/* TOP NAV - SEARCH ICON - GALLERIE / ALBUM - Not HOVER - === */
+/* TOP NAV - SEARCH ICON - GAL / ALB - Not HOVER */
 .fluid.html-album-page-view .view.global-nav-view:not(:hover) .global-nav .search-autosuggest-field-view .search-form .search-icon-button ,
 .fluid.html-gallery-page-view .view.global-nav-view:not(:hover) .global-nav .search-autosuggest-field-view .search-form .search-icon-button  {
     position: fixed;
@@ -10926,13 +10728,12 @@ outline: 1px solid peru !important;
     right: 0px !important;
     top: 190px !important;
 }
-/* TOP NAV - SEARCH ICON - FLUID ALBUM - Not HOVER - === */
+/* TOP NAV - SEARCH ICON - FLUID ALB - Not HOVER */
 .fluid.html-album-page-view .view.global-nav-view:not(:hover) .global-nav .search-autosuggest-field-view .search-form .search-icon-button   {
     left: -8px !important;
     top: 187px !important;
 }
-
-/* TOP NAV - SEARCH - FLUID POOL BETA - :not(:hover) / hover === */
+/* TOP NAV - SEARCH - FLUID POOL BETA - :not(:hover) / hover */
 .fluid.html-group-pool-page-view  .view.group-pool-page-view   .view.global-nav-view:not(:hover)  .search-autosuggest-field-view .search-form label:before {
     content: " 🔻 " ;
     position: fixed ;
@@ -10951,13 +10752,9 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/ap/build/images/sprites/ico
     opacity: 0 !important;
     z-index: 500;
 }
-
-
-
-
 /* ==== TOP NAV - NEW BELL NOTIFICATION MENU VIEWER 2016 ==== */
 
-/* TOP NAV - NOTIF BELL - ALL - === */
+/* TOP NAV - NOTIF BELL - ALL */
 .view.notifications-menu-view  {
     position: absolute !important;
     display: inline-block !important;
@@ -10994,7 +10791,6 @@ background: black !important;
 .notifications-menu-view .gn-title.c-notifications-menu[aria-haspopup="true"][aria-expanded="true"] {
 outline: 1px solid blue !important;
 }
-
 .c-notification-icon .c-notification-unseencount:not(.hidden) {
     position: absolute;
     display: inline-block !important;
@@ -11064,8 +10860,7 @@ background: #9A2222 url("https://combo.staticflickr.com/ap/build/images/sprites/
 .fluid.html-photo-page-scrappy-view .global-nav-view:hover .gn-tools > li.gn-search-box + li + li:not(.gn-signin) {
     left: -202px !important; 
 }
-
-/* (new155) TOP NAV - NOTIF BELL - POPUP - ALL - === */
+/* TOP NAV - NOTIF BELL - POPUP - ALL */
 .fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow  ,
 .fluid.html-group-admin-pending-page-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow ,
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound ,
@@ -11086,6 +10881,10 @@ background: #9A2222 url("https://combo.staticflickr.com/ap/build/images/sprites/
 overflow: hidden !important;
 z-index: 5000000 !important;
 }
+/* (new159) GALL */
+.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow  {
+    left: 1883px !important;
+}
 .fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow ,
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound ,
 .fluid.html-photo-page-scrappy-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound {
@@ -11105,7 +10904,7 @@ z-index: 5000000 !important;
     z-index: 5000000 ;
 background: #333 ;
 }
-/* (new134) BELL PHOT */
+/* BELL PHOT */
 .fluid.html-photo-page-scrappy-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound:hover {
     left: 1455px ;
 }
@@ -11113,8 +10912,6 @@ background: #333 ;
 .fluid.html-group-admin-pending-page-view .droparound.subview-droparound.auto-size.notifs-droparound.no-border.big-shadow {
     left: 1882px !important;
 }
-
-
 /* BELL ALB */
 .fluid.html-album-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound:hover {
     left: 1460px ;
@@ -11125,8 +10922,7 @@ background: #333 ;
     max-height: 100% ;
     padding: 0px ;
 }
-
-/* (new143) NOTIF BELL - FAVS - !imp */
+/* BELL - FAVS */
 .fluid.html-favorites-page-view .view.global-nav-view:not(:hover) .gn-tools .view.notifications-menu-view {
     position: fixed ;
     display: inline-block ;
@@ -11135,9 +10931,8 @@ background: #333 ;
     top: -55px  ;
     transform: scale(0.7) ;
     z-index: 50000 !important;
-opacity: 1 !important;
-visibility: visible ;
-/* background: red !important; */
+    opacity: 1 !important;
+    visibility: visible ;
 }
 .fluid.html-favorites-page-view .view.global-nav-view .view.notifications-menu-view:hover, 
 .fluid.html-favorites-page-view .view.global-nav-view:hover .view.notifications-menu-view {
@@ -11184,7 +10979,7 @@ visibility: visible ;
 .fluid.html-favorites-page-view .fluid-droparound-overlay.transparent{
     z-index: -1 !important;
 }
-/* (new143) BELL FEEDS */
+/* BELL FEEDS */
 .fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound {
     width: 100% ;
     min-width: 18px ;
@@ -11200,7 +10995,7 @@ visibility: visible ;
     max-width: 498px ;
     left: 1450px !important;
 }
-/* TOP NAV - ACCOUNT MENU - ALL - === */
+/* TOP NAV - ACCOUNT MENU - ALL */
 .global-nav .global-nav-content .gn-tools li:last-of-type .view.account-menu-view {
     margin-left: -15px !important;
 }
@@ -11211,7 +11006,7 @@ visibility: visible ;
     top: -7px !important;
     cursor: pointer !important;
 }
-/* TOP NAV - SEARCH PAGE - === */
+/* TOP NAV - SEARCH PAGE */
 .view.global-nav-view + .view.search-subnav-slender-view .search-subnav.using-slender-advanced-panel {
     height: 42px !important;
     top: 0px !important;
@@ -11220,9 +11015,9 @@ visibility: visible ;
 .view.global-nav-view:hover + .view.search-subnav-slender-view .search-subnav.using-slender-advanced-panel {
     top: 0px !important;
 }
-/* TOP NAV - SEARCH CONTAINER / UPLOAD ICON AVATAR / MAIL - OTHERS - ALL - === */
+/* TOP NAV - SEARCH CONT / UP ICON AVATAR / MAIL - OTHERS - ALL */
 
-/* TOP NAV - AVAT / MAIL - PHOT/ALB/SET - === */
+/* TOP NAV - AVAT / MAIL - PHOT/ALB/SET */
 global-nav-content .gn-tools li:last-of-type .view.account-menu-view {
     margin-left: -15px !important;
 }
@@ -11241,14 +11036,14 @@ global-nav-content .gn-tools li:last-of-type .view.account-menu-view {
     right: 45px ;
     cursor: pointer ;
 }
-/* TOP NAV - AVAT / MAIL - PHOT/ALB/GAL - === */
+/* TOP NAV - AVAT / MAIL - PHOT/ALB/GAL */
 .fluid.html-galleries-list-page-view .c-account-buddyicon ,
 .fluid.html-gallery-page-view .c-account-buddyicon ,
 .fluid.html-albums-list-page-view .c-account-buddyicon ,
 .fluid.html-photo-page-scrappy-view .c-account-buddyicon  {
     top: 0px !important;
 }
-/* TOP NAV - MENU - YOU / EXPL / CREATE  - PHOT/ALBUM/SET - === */
+/* TOP NAV - MENU - YOU / EXPL / CREATE - PHOT/ALB/SET */
 .global-nav .global-nav-content .nav-menu {
     display: inline-block !important;
     min-width: 200px !important;
@@ -11287,7 +11082,6 @@ border: 1px dashed red !important;
     max-height: 20px !important;
     padding: 0 !important;
 }
-
 /* TOP NAV - MENU - LABEL NEW */
 .fluid .global-nav .global-nav-content .nav-menu > li.gn-create > a .label-beta.new {
     display: inline-block;
@@ -11299,8 +11093,7 @@ border: 1px dashed red !important;
     transform: scale(0.5) !important;
 background-color: #ff9f00 !important;
 }
-
-/* TOP NAV - UPLOAD ICON - NO FLUID - CONTAINER - === */
+/* TOP NAV - UPLOAD ICON - NO FLUID - CONT */
 #global-nav .gn-wrap .tools.with-upload-icon {
     position: absolute;
     width: 392px;
@@ -11320,7 +11113,7 @@ background-color: #ff9f00 !important;
 }
 .gn-upload {
     position: absolute;
-left: -1305px !important;
+    left: -1305px !important;
     top: 9px !important;
     opacity: 0.6 !important;
     transform: scale(0.7);
@@ -11339,8 +11132,7 @@ left: -1305px !important;
     height: 25px !important;
     padding: 3px !important;
 }
-
-/* TOP NAV - NEW MAIL COUNT - FORUM - === */
+/* TOP NAV - NEW MAIL COUNT - FORUM  */
 #global-nav #gn-wrap .tools.with-upload-icon .top-nav .gn-menu-parent.toplink.gn-account .gn-link.account + #header-mailcount + #gb-ac-wrap {
     left: -25px !important;
     top: 45px !important;
@@ -11417,8 +11209,7 @@ background: transparent !important;
     text-align: center ;
 background: yellow ;
 }
-
-/* TOP NAV - PHOTO/ALBUM/SET + OTHERS - === */
+/* TOP NAV - PHOT/ALB/SET + OTHERS */
 #global-nav.styleguide-global-nav ,
 .global-nav-restyle .global-nav-content {
     position: absolute !important;
@@ -11429,9 +11220,9 @@ background: yellow ;
     top: -50px !important;
     left: 0px !important;
     padding: 0 !important;
-color: peru !important;
     text-align: center !important;
     z-index: 5000000 !important;
+color: peru !important;
 border-bottom: 1px solid red !important;
 }
 #global-nav.styleguide-global-nav:hover {
@@ -11444,8 +11235,7 @@ border-bottom: 1px solid red !important;
     min-width: 800px;
     position: relative;
 }
-
-/* TOP NAV - WELCOM / STOR === */
+/* TOP NAV - WELCOM / STOR */
 #global-nav.styleguide-global-nav #gb-ac-wrap {
     position: absolute;
     right: 237px ;
@@ -11460,7 +11250,7 @@ border-bottom: 1px solid red !important;
 #global-nav #gb-ac-wrap.droparound-with-storage #gb-ac-panel .usage {
     padding: 0px 20px ;
 }
-/* (new134) TOP NAV - PHOTO */
+/* TOP NAV - PHOTO */
 .fluid .view.global-nav-view ,
 .fluid .view.global-nav-view.requiredToShowOnServer {
     position: absolute !important;
@@ -11471,9 +11261,9 @@ border-bottom: 1px solid red !important;
     top: -50px !important;
     left: 0px !important;
     padding: 0 !important;
-color: peru !important;
     text-align: center !important;
     z-index: 50000 !important;
+color: peru !important;
 }
 .fluid .global-nav-content.styleguide-global-nav.fluid.sohp-mobile-navable {
     position: absolute !important;
@@ -11484,20 +11274,11 @@ color: peru !important;
     top: -106px !important;
     left: 0px !important;
     padding: 0 !important;
-    color: peru !important;
     text-align: center !important;
+color: peru !important;
 }
 .fluid .view.global-nav-view:hover .fluid.sohp-mobile-navable {
-    position: absolute !important;
-    display: inline-block !important;
-    height: 45px !important;
-    width: 1920px !important;
-    min-width: 100% !important;
     top: 0px !important;
-    left: 0px !important;
-    padding: 0 !important;
-color: peru !important;
-    text-align: center !important;
 border-bottom: 1px solid red !important;
 }
 .global-nav-container.fluid-centered {
@@ -11509,8 +11290,8 @@ border-bottom: 1px solid red !important;
     top: -48px !important;
     left: 0px !important;
     padding: 0 !important;
-color: peru !important;
     text-align: center !important;
+color: peru !important;
 }
 .fluid .view.global-nav-view:hover .global-nav-container.fluid-centered {
     top: 0px !important;
@@ -11525,10 +11306,11 @@ color: peru !important;
     left: 0px !important;
     margin: 0 !important;
     padding: 0 !important;
-color: peru !important;
     text-align: center !important;
+    z-index: 5000000 !important;
+color: peru !important;
 border-bottom: 1px solid red !important;
-z-index: 5000000 !important;
+
 }
 .fluid .view.global-nav-view:hover .global-nav {
     top: 50px !important;
@@ -11553,7 +11335,6 @@ z-index: 5000000 !important;
 .fluid .view.global-nav-view:hover:after {
      content: "🔺" ;
 }
-
 /* TOP NAV - SEARCH - ALL + POOL BETA / NO BETA - HOME === */
 #global-nav  #gn-wrap.gn-wrap .search-icon  {
     position: fixed ;
@@ -11570,23 +11351,20 @@ z-index: 5000000 !important;
     display: inline-block;
     height: 18px ;
     line-height: 18px ;
-    width: 18px ;
-    top: 64px ;
-    right: 282px;
+    width: 18px !important;
+    top: 50px !important;
+    right: 70px !important;
     font-size: 15px;
     cursor: pointer;
     text-indent: 20px ;
     background: rgba(0, 0, 0, 0) url("https://s.yimg.com/ap/build/images/sprites/icons-938e2840.png") no-repeat scroll -413px -218px ;
-outline: 1px solid red  ;
 }
 .fluid.html-group-home-page-view .view.global-nav-view:not(:hover) .global-nav::after {
     width: 18px ;
     top: 64px ;
     right: 55px;
 }
- 
 /* ==== TOP NAV BAR - SIGN IN / UP(NOT Bell) ==== */
-
 /* TOP NAV - SIGN IN - PHOTO */
 .fluid .view.global-nav-view:hover .gn-tools > li.gn-search-box + li + li.gn-signin {
     position: absolute !important;
@@ -11620,7 +11398,6 @@ outline: 1px solid red  ;
     top: -15px ;
     border-radius: 5px ;
 }
-
 /* TOP NAV - BAR - SIGN UP - PHOTO */
 .fluid .view.global-nav-view:hover .gn-tools > li.gn-search-box + li + li.gn-signin +  li.gn-signup {
     position: absolute !important;
@@ -11651,8 +11428,9 @@ outline: 1px solid red  ;
     width: 1900px !important;
     height: 20px !important;
     line-height: 20px !important;
-    top: 70px !important;
+    top: 68px !important;
     left: 10px !important;
+    margin: 20px  !important;
     padding: 0px !important;
     text-align: center !important;
     opacity: 1 !important;
@@ -11667,22 +11445,24 @@ outline: 1px solid red  ;
     transform: translate(-800px, -2px) scale(0.7) !important;
     transform-origin:  top center !important;
 }
+/* (new159) */
+body.breakout-justified .group-content-wrapper.group-cover-photo .Invited.info +  .group-pool-header.standard-head {
+    margin-top: 23px;
+}
 
 /* STYLE 3 == END == FLICKR - 3 - Hidden Top NavBar  ==== */
 
 
-
 /* STYLE 4 == SART === FLICKR - 4 - PHOTO - Com Reverse Order FLEX + Counter === */
 
-/* COM - CONT - REVERSE ORDER - === */
+/* COM - CONT - REVERSE ORDER */
 .comments-holder.order-chronological.photosInComments .comments {
     padding-bottom: 200px !important;
     display: flex ! important;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
 }
-
-/* COM ITEMS - === */
+/* COM ITEMS */
 .sub-photo-comments-view .comments .comment ,
 #comments .comment-block {
     flex-basis: 300px;
@@ -11701,7 +11481,7 @@ border: 1px solid gray ;
     max-height: 200px !important;
     transition: all ease 0.7s !important;
 }
-/* COM ITEMS - EDIT - === */
+/* COM ITEMS - EDIT */
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments-holder.order-chronological.photosInComments ul.comments:hover .comment.editing:hover {
     height: auto;
     max-height: 300px !important;
@@ -11713,8 +11493,7 @@ border: 1px solid gray ;
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment.editing {
     height: auto !important;
 }
-
-/* COM ITEMS - DEL MODAL - === */
+/* COM ITEMS - DEL MODAL */
 .fluid.html-photo-page-scrappy-view .modal.html-modal.scrappy-dialog {
     position: absolute;
     min-width: 500px !important;
@@ -11756,20 +11535,19 @@ background: red;
     height: 23px !important;
     line-height: 23px !important;
 }
-
-/* COM ITEMS - BR SPACE - === */
+/* COM ITEMS - BR SPACE */
 .sub-photo-comments-view .comments .comment .comment-content>br {
     display: block !important;
     margin-bottom: -1px !important;
 }
-
-/* PHOTO - COUNTER COM ITEMS + NUMB COM BY ME on TOP RIGHT PANEL / BUD ICON - ===  */
+/* (new159) PHOTO - COUNTER COM ITEMS + NUMB COM BY ME on TOP RIGHT PANEL / BUD ICON  */
 .comments-holder.order-chronological.photosInComments .comments ,
 #photo-activity {
     counter-reset: myIndex2 00 !important;
     counter-increment: myIndex  0 !important;
 }
-.sub-photo-comments-view .comments .comment:before ,
+/* (new159) A SUPP ??? */
+/* .sub-photo-comments-view .comments .comment:before ,
 #comments #comments-list .comment-block:before {
     counter-increment: myIndex ;
     content: counter(myIndex, decimal-leading-zero) ;
@@ -11778,15 +11556,16 @@ background: red;
     min-width: 17px ;
     margin-left: 1px ;
     margin-top: -5px ;
-    background: rgba(62, 59, 59, 0.6) ;
     border-radius: 10px ;
     box-shadow: 0 0 2px rgba(162, 160, 160, 0.6) inset ;
     font-size: 10px ;
     text-align: center ;
 color: white ;
-}
+background: rgba(62, 59, 59, 0.6) ;
+background: blue !important;
+} */
 
-/* PHOTO - COM - MORE - === */
+/* PHOTO - COM - MORE */
 .sub-photo-comments-view .order-chronological .comments-more {
     font-size: 14px;
     text-align: left;
@@ -11823,9 +11602,9 @@ background: rgba(0, 0, 0, 0.63) !important;
     cursor: pointer ;
 }
 
-/* STYLE 4 == END == FLICKR - 4 - NEW - Flickr Widescreen - Comments  Reverse Order FLEX + Counter ==== */
+/* STYLE 4 == END == FLICKR - 4 - Comments  Reverse Order FLEX + Counter ==== */
 
-/* END FINAL ====   FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL (GM NO) ==== */
+/* END FINAL ====   FLICKR - 00 - ALLinONE TOTAL (GM NO) ==== */
 }
 
 @-moz-document url-prefix("https://www.flickr.com/help/forum/") {

@@ -11,19 +11,19 @@
     "about": "Hi! I love custom themes :)",
     "license": "ccbync"
   },
-  "updated": "2020-11-16T22:53:37.000Z",
-  "weekly_install_count": 0,
-  "total_install_count": 0,
+  "updated": "2020-11-17T11:50:48.000Z",
+  "weekly_install_count": 13,
+  "total_install_count": 13,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/192736_after.jpeg?r=1605567218",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/192736_after.jpeg?r=1605613850",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/192736_additional_37433.jpeg?r=1605567218",
-    "https://userstyles.org/style_screenshots/192736_additional_37434.jpeg?r=1605567218"
+    "https://userstyles.org/style_screenshots/192736_additional_37433.jpeg?r=1605613850",
+    "https://userstyles.org/style_screenshots/192736_additional_37434.jpeg?r=1605613850"
   ],
   "license": "arr",
   "created": "2020-11-16T11:29:28.000Z",
@@ -49,7 +49,7 @@
         {
           "id": 1665174,
           "style_setting_id": 469283,
-          "label": "Daylight",
+          "label": "Daylight (Default)",
           "value": "background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgba(137,206,248,1) 100%) fixed",
           "default": true,
           "ordinal": 0,
@@ -90,6 +90,52 @@
           "default": false,
           "ordinal": 4,
           "install_key": "5"
+        },
+        {
+          "id": 1665184,
+          "style_setting_id": 469283,
+          "label": "Blizzard",
+          "value": "background: linear-gradient(0deg, #97A2B7 0%, #1B3048 100%) fixed",
+          "default": false,
+          "ordinal": 5,
+          "install_key": "6"
+        },
+        {
+          "id": 1665185,
+          "style_setting_id": 469283,
+          "label": "Blizzard Inverted",
+          "value": "background: linear-gradient(0deg, #1B3048 0%, #97A2B7 100%) fixed",
+          "default": false,
+          "ordinal": 6,
+          "install_key": "7"
+        }
+      ]
+    },
+    {
+      "id": 469287,
+      "style_id": 192736,
+      "install_key": "bttnshadow",
+      "label": "Button Text Shadow",
+      "ordinal": 1,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1665186,
+          "style_setting_id": 469287,
+          "label": "OFF (Default)",
+          "value": "/*text-shadow: 0 2px 0px #00000061*/",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "bttnOFF"
+        },
+        {
+          "id": 1665187,
+          "style_setting_id": 469287,
+          "label": "ON",
+          "value": "text-shadow: 0 2px 0px #00000061",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "bttnON"
         }
       ]
     },
@@ -98,7 +144,7 @@
       "style_id": 192736,
       "install_key": "holdercolor",
       "label": "White Background Custom Color (Use #fff0 for invisible))",
-      "ordinal": 1,
+      "ordinal": 2,
       "setting_type": "color",
       "style_setting_options": [
         {
@@ -117,7 +163,7 @@
       "style_id": 192736,
       "install_key": "prmyColor",
       "label": "NavBar Primary Color",
-      "ordinal": 2,
+      "ordinal": 3,
       "setting_type": "color",
       "style_setting_options": [
         {
@@ -136,7 +182,7 @@
       "style_id": 192736,
       "install_key": "scndColor",
       "label": "NavBar Secondary Color",
-      "ordinal": 3,
+      "ordinal": 4,
       "setting_type": "color",
       "style_setting_options": [
         {

@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
-@version        20201016.12.55
+@version        20201117.12.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("music.yandex.ru") {
 body:after {
-    content: 'Урезанный стиль Яндекс.Музыка из расширения "ExNight"'!important;
+    content: 'Тёмный стиль Яндекс.Музыка из расширения "ExNight"'!important;
     position: fixed!important;
     border: 1px solid #fff!important;
     color: #FFF!important;
@@ -73,7 +73,7 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 .deco-toggler-btn {
 	border-color: #000!important;
 }
-.d-track_selectable.d-track_hover:after, .playlist_selectable.playlist:hover:before, .playlist_selectable.playlist_hover:before, .playlist_selectable.playlist_selected:before, .d-tooltip__content.deco-tooltip, .album_selectable.album:hover:before, .album_selectable.album_hover:before, .album_selectable.album_selected:before {
+.d-track_selectable.d-track_hover:after, .playlist_selectable.playlist:hover:before, .playlist_selectable.playlist_hover:before, .playlist_selectable.playlist_selected:before, .d-tooltip__content.deco-tooltip, .album_selectable.album:hover:before, .album_selectable.album_hover:before, .album_selectable.album_selected:before, .d-tabs {
 	border: none!important;
 }
 .d-track__chart-position .d-chart-position, .deco-popup-menu__item-group, .volume_bottom.volume_open .volume__control, .button2, .multi-auth__menu, .popup, .d-tooltip.deco-tooltip.popup.deco-pane-popup, .deco-button-group .d-button > span {

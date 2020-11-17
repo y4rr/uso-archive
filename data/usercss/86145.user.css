@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra <i>is</i> necessary for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. <a href="https://userstyles.org/styles/169748/">Easily changeable background</a>, <a href="https://userstyles.org/styles/119959/">lowercase text</a>, et cetera.</a><b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201015.23.50
+@version        20201117.6.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1952,7 +1952,8 @@ a.icon-team-title.forum {font-style: normal !important;color: white !important;}
 .icon-team-title.anime_db_moderator,
 .icon-team-title.manga_db_moderator {background: rgba(var(--colorOrange)) !important;} /* Orange */
 .icon-team-title.site_administrator,
-.icon-team-title.database_administrator {background: rgba(var(--colorPink)) !important;} /* Red */
+.icon-team-title.database_administrator,
+.icon-team-title.community_administrator {background: rgba(var(--colorPink)) !important;} /* Red */
 
 /* 'Colour Admin' */
 .forum_topic_message div + a[href="/profile/sunnysummerday"]:before {
@@ -1966,6 +1967,7 @@ a.icon-team-title.forum {font-style: normal !important;color: white !important;}
 
 /* Hide Manga Store */
 .top-ranking-table .title .manga-store-information, .index-manga-store-description {display: none !important;}
+div[style="width: 439px;"] + .pt24.pb24.mt24.mb24 {display: none !important;} /* Bottom of forum posts */
 
 /* Hide holiday banners */
 #nav li > a[href*="topicid"][class^="pt0"] {display: none !important;}
@@ -2195,11 +2197,10 @@ td[width="225"] .picSurround + div[style*="center;"] a {
     background: rgba(var(--colorPink),0.7) !important;
     color: white !important;
     padding: 3px 2px 5px;
-    border-radius: 3px;
+    border-radius: 0 0 3px 3px;
     margin-top: -3px;
     font-size: 15px;
-    font-style: normal !important;
-    box-shadow: var(--colorLightShadow); }
+    font-style: normal !important; }
 td[width="225"] .picSurround:hover + div[style*="center;"],
 td[width="225"] .picSurround + div[style*="center;"]:hover {opacity: 1 !important;}
 
@@ -2487,10 +2488,12 @@ select[name="sy"] + small, select[name="ey"] + small {display: none !important;}
 .icon-about-recommendations {color: rgba(var(--colorBlue)) !important;line-height: 10px !important;}
 
 /* 'MAL Search Filter' script fix */
-script + .normal_header.clearfix.pt16 br, script + .ad-tag + .normal_header.clearfix.pt16 br {display: none !important;}
-script + .normal_header.clearfix.pt16 input, script + .ad-tag + .normal_header.clearfix.pt16 input {margin-left: 8px !important;vertical-align: inherit;}
-.ml8.mr8 + .normal_header.ml8.mr8 input {position: relative;top: -102px;left: -5px;}
-input + label[for="firstName"] {display: none !important;}
+script + .normal_header.clearfix.pt16 br {display: none !important;} /* /anime.php? */
+script + .normal_header.clearfix.pt16 input {vertical-align: inherit;}
+script + .normal_header.clearfix.pt16 input:first-of-type {margin-left: 8px !important;}
+.ml8.mr8 + .normal_header.ml8.mr8 input {position: relative;top: -102px;left: -5px;} /* /anime/genre/ */
+input + label[for="firstName"] {display: none !important;} /* Hide text */
+.normal_header.pt24.mb0 > input.filterbox, .normal_header.pt24.mb0 > label[for="firstName"] {display: none !important;} /* /anime.php (first load only) */
 }
 
 @-moz-document url-prefix("https://myanimelist.net/manga.php"), url-prefix("https://myanimelist.net/manga/genre"), url-prefix("https://myanimelist.net/manga/magazine") {
@@ -2759,6 +2762,7 @@ a[href*="go=report&type=club"] {font-style: normal !important;color: rgba(var(--
     background: #f8f8f8 !important;
     border: none !important;
     border-top: 1px solid #e4e4e4 !important; }
+.forum_boardrow2[width="75"] {padding: 0 10px !important;} /* Fix for replies section */
 tr[id*="topicRow"]:last-child .forum_boardrow1:last-child {border-radius: 0 0 8px 0;}
 tr[id*="topicRow"]:last-child .forum_boardrow2:first-child {border-radius: 0 0 0 8px;}
 .forum_boardrow2:first-child {padding: 0 !important;}
@@ -3133,6 +3137,10 @@ div[class*="-search-form-search"] + h2 > .floatRightHeader {margin-top: 0 !impor
 .people-search-form-search.pb16, .characters-search-form-search.pb16 {
     margin: 0 auto 8px !important;
     padding-bottom: 1px !important; }
+
+/* 'MAL Search Filter' script fix */
+h2[class*="top-rank-header"] input {position: relative;top: 23px;left: 60px;}
+h2[class*="top-rank-header"] label[for="firstName"] {display: none !important;}
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/?$") {

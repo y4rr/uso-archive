@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         依云
 @description    `Make GitHub like in the old good days: white topbar, square avatars, save spaceNote: Not tested on mobile devices.`
-@version        2020626.13.55
+@version        20201117.7.59
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -193,4 +193,15 @@ h2 ~ .Details--on .Details-content--shown, h2 ~ .Details:not(.Details--on) .Deta
     background-color: #f1f8ff !important;
 }
 
+/* show all nav items, not first three */
+nav > ul > li > a {
+    visibility: visible !important;
 }
+nav > ul  {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #eeeeee transparent;
+}
+
+}
+/* vim:se fdm=marker fmr={,}: */
