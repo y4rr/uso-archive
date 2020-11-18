@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         esvikey
 @description    `Fully edited site.Changed:• Main Page• Song's Page• Album's Page• Annotations• Metadata• Articles• Firehose• 'Add Song' Page• User's Page• All Buttons• Dropdown Menu• ScrollbarEnjoy!`
-@version        2020927.23.12
+@version        20201117.22.5
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,7 +19,7 @@
 
 *::-webkit-scrollbar-thumb{
     background: #303030;
-    border-radius: 15px;
+    border-radius: 15px
 }
 
 body {
@@ -28,7 +28,19 @@ body {
 }
 
 body.ng-scope {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0)
+}
+
+body.act-show.cont-groups.ng-scope {
+    background: #000
+}
+
+.act-index.cont-groups.ng-scope {
+    background: #000
+}
+
+#groups_home {
+    background: #000
 }
 
 a.PageHeaderMenu__Title-sc-13myo8l-2.PageHeaderMenu__Item-sc-13myo8l-3.eWqxlv:hover {
@@ -47,11 +59,11 @@ a.square_button.react_song_page_preview_link:hover {
     color: #fff
 }
 
-.act-new.cont-songs{
-    background: #141414
+.cont-songs.ng-scope{
+    background: #000
 }
 
-.action_summary .actor_and_action {
+.action_summary.actor_and_action {
     color: #fff
 }
 
@@ -65,10 +77,6 @@ a.square_button.react_song_page_preview_link:hover {
 
 .activity_stream_event_unit.active, .activity_stream_event_unit.active:hover {
     background: #303030
-}
-
-.add_song_page{
-    background: #141414
 }
 
 .AegvI svg {
@@ -89,6 +97,18 @@ a.square_button.react_song_page_preview_link:hover {
 
 .annotation_sidebar_unit {
     background: #141414
+}
+
+.annotation_stat-pill{
+    background: #141414
+}
+
+.annotation_stat-pill--green {
+    background: #0ecb27
+}
+
+.annotation_stat-pill--red {
+    background: #ff7070
 }
 
 .apple-music-player.ng-isolate-scope {
@@ -255,11 +275,26 @@ a.square_button.react_song_page_preview_link:hover {
     background: #141414
 }
 
+.cont-discussions.ng-scope{
+    background: #000
+}
+
 .content-inner {
     background: #141414
 }
 
 #content-wrapper .content {
+    background: #141414
+}
+
+.contribution_opportunity {
+    background: #141414;
+    box-shadow: none;
+    border: 1px solid #fff
+}
+
+
+.contribution_opportunity-actions {
     background: #141414
 }
 
@@ -277,10 +312,6 @@ a.square_button.react_song_page_preview_link:hover {
 
 .cziiuX svg:hover {
     fill: #ffff64
-}
-
-div#container.mecha--deprecated {
-    background: #141414
 }
 
 div.PageHeaderMenu__Title-sc-13myo8l-2.PageHeaderMenu__Item-sc-13myo8l-3.eWqxlv:hover {
@@ -348,6 +379,10 @@ div.PageHeaderMenu__Title-sc-13myo8l-2.PageHeaderMenu__Item-sc-13myo8l-3.eWqxlv:
 .fCXxRK {
     background: #141414;
     color: #fff
+}
+
+.feed_dropdown {
+    background: #171717
 }
 
 .feed_dropdown-header {
@@ -460,6 +495,10 @@ div.PageHeaderMenu__Title-sc-13myo8l-2.PageHeaderMenu__Item-sc-13myo8l-3.eWqxlv:
 
 .grid_layout{
     background: #141414
+}
+
+#group_container{
+    background: #000
 }
 
 .gsoAZX {
@@ -633,7 +672,7 @@ input {
 }
 
 .ljPCDr {
-    color: #141414
+    color: #141414;
 }
 
 .lyrics_controls {

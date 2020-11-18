@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ニコニコ動画(く) 広告消し / niconico NoAds for PC
+@name           ニコニコ 広告消し / niconico NoAds for PC
 @namespace      USO Archive
 @author         AgentSmith
 @description    `対象: PCブラウザ版niconico全サービス (Android版はサポートしていません)不要な広告や告知を非表示にし、空いたスペースを詰めたり有効活用します。広告ブロック系の拡張機能と併用して下さい。他のUserStyleとの競合を避けるために動画ページにはほぼノータッチ。Flash版動画ページはCSSだけでどうにかできるレベルではないので、視聴には"<a href="https://greasyfork.org/en/scripts/14391">ZenzaWatch</a>"、"<a href="https://greasyfork.org/en/scripts/15692">kusa5.mod</a>"といったHTML5化スクリプト、又は<a href="http://nicowiki.com/tools.html#q1e393dd">専用ブラウザ</a>を使った方がはるかに賢明です。どうしてもGINZAバージョンで視聴したい場合は"<a href="https://greasyfork.org/en/scripts/453">WatchItLater</a>"や"<a href="https://greasyfork.org/en/scripts/452">ShinjukuWatch</a>"、"<a href="https://greasyfork.org/en/scripts/237">CustomGinzaWatch</a>"といったユーザースクリプトとの併用をお薦めします。要望や不具合は↓のコメント欄か<a href="https://twitter.com/search?q=userstyles.org%2Fstyles%2F64999&f=live&vertical=default">Twitterでここのurl付きで呟いてくれれば</a>確認します。`
-@version        20201030.13.47
+@version        20201117.12.24
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,6 +11,7 @@
 /* ログインページ */
 #ads {display:none!important}
 }
+
 @-moz-document url-prefix("https://www.nicovideo.jp/my"), url-prefix("https://www.nicovideo.jp/user") {
 /* ユーザーページ */
 .PcUniTop468x60NorthAdContainer, /* ヘッダ 広告 */
@@ -18,6 +19,7 @@
 #web_pc_footer /* フッタ 広告 */
  {display:none!important}
 }
+
 @-moz-document regexp("https://www.nicovideo.jp/($|\\?.*)") {
 /* 総合Top */
 .HeaderContainer_Re-ad, /* ヘッダ広告 */
@@ -39,6 +41,7 @@
 .TopPage-section .FooterAreaContainer .FooterAreaContainer-upper .FooterAreaContainer-right {display:none!important}
 .TopPage-section .FooterAreaContainer-right {width:auto!important}
 }
+
 @-moz-document url-prefix("https://www.nicovideo.jp/video_top"), url-prefix("https://www.nicovideo.jp/ranking"), url-prefix("https://www.nicovideo.jp/recommendations") {
 /* 動画トップ, ランキング, あなたへのおすすめ */
 /* 広告要素 */
@@ -102,6 +105,7 @@
 .BaseRankingContentContainer.BaseRankingContentContainer-topics.HotTopicVideosContainer /* flog広告 */
 {display:none!important}
 }
+
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/") {
 /* 動画視聴ページ */
 /* Flash版 */
@@ -135,6 +139,7 @@ a[href*="video_tag_marquee"],a[href*="video_tag_marquee"]+button, /* カテゴ�
 {display:none!important}
 .CommentPanelContainer:not(.is-hiddenMiniBanner) {bottom:0!important} /* コメントパネル下部 再生開始後の広告エリア生成キャンセル */
 }
+
 @-moz-document url-prefix("https://seiga.nicovideo.jp/") {
 /* 静画 */
 /* 広告 */
@@ -169,6 +174,7 @@ a[href*="video_tag_marquee"],a[href*="video_tag_marquee"]+button, /* カテゴ�
 	{display:none!important}
 #main {background-image:none!important} /* Sidewall Ad images */
 }
+
 @-moz-document url-prefix("https://live.nicovideo.jp/") {
 /* 生放送 */
 /* (く)追加分 */
@@ -198,6 +204,7 @@ img[src*="/img/nicolive/bnr_"], /* プレミアム勧誘バナー */
 #live_header .score_search p {float:left!important;display:block!important;padding:7px 10px 7px 0 !important}
 #live_header .score_search form {float:right!important;vertical-align:baseline;}
 }
+
 @-moz-document url-prefix("https://live.nicovideo.jp/watch/") {
 /* 生放送旧配信視聴ページ */
 #jsFollowingAdSide, /* 視聴ゲート 右 広告 */
@@ -209,6 +216,7 @@ body:not([id*="nsen_"]) {background:none!important} /* 背景色クリア */
 #page_header, #page_cover, #watch_player_box, #utility_link {width:auto!important} /* 広告エリア 消去 */
 #watch_player_box {background-color:#000!important} /* プレイヤー背景色 初期化 */
 }
+
 @-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
 /* 生放送新配信視聴ページ(live2) */
 aside[class*="banner-ad"], /* ヘッダ広告 */
@@ -224,6 +232,7 @@ aside[class*="footer-ad"] /* フッタ広告 */
 #live-header .score-search {width:480px!important;top:8px}
 #live-header .score-search .current-score {float:left!important;padding:4px 10px 4px 0!important}
 }
+
 @-moz-document url-prefix("https://ch.nicovideo.jp/") {
 /* ニコニコチャンネル */
 #head_ads_468x60, /* ヘッダー広告 */
@@ -242,10 +251,12 @@ section.site_body section.contents_list.article.tile li.item.big .thumb_wrapper{
 /* グラビアチャンネル */
 div.channels ul.include_adult {padding-right:0!important} /* グラビアチャンネル リスト */
 }
+
 @-moz-document regexp("(http|https)://.*\\.blomaga\\.jp/.*") {
 /* ブロマガ まとめ登録サイト */
 #marqueeWrapper, #matomeSiteHeaderFix, .matomeSiteHeaderPoweredby {display:none!important} /* まとめサイトヘッダ */
 }
+
 @-moz-document url-prefix("http://app.nicovideo.jp/"), url-prefix("https://app.nicovideo.jp/") {
 /* ニコニコアプリ */
 #ad_topright, /* ヘッダ右 広告 */
@@ -255,6 +266,7 @@ div.channels ul.include_adult {padding-right:0!important} /* グラビアチャ�
 	{display:none!important}
 #contents #contents_inr {min-height:0!important} /* コンテンツ要素 高さ修正 */
 }
+
 @-moz-document url-prefix("https://dic.nicovideo.jp/") {
 /* 大百科 */
 #dic_pc_468x60_north, /* ヘッダ 右 広告 */
@@ -275,8 +287,9 @@ div.channels ul.include_adult {padding-right:0!important} /* グラビアチャ�
 #header {justify-content:flex-start}
 #search-form {margin-left:30px}
 /* オススメ記事 一列化 */
-.uz-dic-nicovideo_pc .__uz__widget .__uz__articles-area .__uz__article, .logly-lift-ad  {width:20%!important;} 
+.uz-dic-nicovideo_pc .__uz__widget .__uz__articles-area .__uz__article, .logly-lift-ad  {width:20%!important;}
 }
+
 @-moz-document url-prefix("https://com.nicovideo.jp/") {
 /* コミュニティ */
 #community_pc_top, /* ヘッダ広告 */
@@ -292,6 +305,7 @@ aside#ad_pc_footer, /* フッタ広告 */
     .md-cmn_communities_frm--column_2 .item:nth-child(2n-1) {margin-right:0}
 }
 }
+
 @-moz-document url-prefix("http://commons.nicovideo.jp/"), url-prefix("https://commons.nicovideo.jp/") {
 /* ニコニ・コモンズ */
 #Header #Ad, /* ヘッダ 広告 */
@@ -299,10 +313,13 @@ aside#ad_pc_footer, /* フッタ広告 */
 #sidewall_id_left, #sidewall_id_right /* サイドウォール 広告 */
 {display:none!important}
 }
+
 @-moz-document url-prefix("http://commons.nicovideo.jp/tree"), url-prefix("https://commons.nicovideo.jp/tree") {
+/* ニコニ・コモンズ コンテンツツリー */
 .more.more_button, .more.close {display:none!important}
 .more_area {display:block!important}
 }
+
 @-moz-document url-prefix("https://news.nicovideo.jp/") {
 /* ニコニコニュース */
 div[id*="pc_news_watch_"], /* 記事 広告共通化 */
@@ -324,14 +341,20 @@ div[id*="div-gpt-ad-"], /* 上部 広告コンテナ*/
 #logly-lift-widget .logly-lift-ad-ad /* Logly PRアイテム */
 {display:none!important;}
 /* 広告アイテム除去後の修正 */
-#logly-lift-widget .logly-lift-ad {width:24.25%!important}
-#logly-lift-widget .logly-lift-ad:nth-child(3n) {margin-right:1%!important}
+#logly-lift-widget .logly-lift-article {width:24.25%!important}
+#logly-lift-widget .logly-lift-article:nth-child(3n) {margin-right:1%!important}
+#logly-lift-widget .logly-lift-article:nth-last-of-type(2) {margin-right:0!important}
+
 }
+
 @-moz-document url-prefix("https://speee-ad.akamaized.net/tag/news-nicovideo_pc/article.html"), url-prefix("http://speee-ad.akamaized.net/tag/news-nicovideo_pc/article.html") {
 /* ニコニコニュース&ニコニコニュースオリジナル UZOU広告アイテム除去&表示修正 */
 .ad_response {display:none!important}
 #widget #articles-area .article {width:24.25%}
+#widget #articles-area .article:nth-child(3n) {margin-right:1%!important}
+#widget #articles-area .article_response:last-of-type {margin-right:0!important} 
 }
+
 @-moz-document url-prefix("https://originalnews.nico") {
 /* ニコニコニュースオリジナル */
 /* トップ */
@@ -358,10 +381,12 @@ div[id*="inline_ad"], /* 記事ページ メイン インライン */
 /* LOGLY除去後修正*/
 #logly-lift-widget .logly-lift-ad {width:25%!important}
 }
+
 @-moz-document url-prefix("https://site.nicovideo.jp/game/") {
 /* ニコニコゲームズ */
 .iznm_special_banner, div[class*="iznm_banner"], .row_banner {display:none!important}
 }
+
 @-moz-document url-prefix("https://game.nicovideo.jp/atsumaru/") {
 /* アツマール */
 header .AtsumaruHeader__Main + div, /* ヘッダ 広告 */
@@ -370,6 +395,7 @@ header .AtsumaruHeader__Main + div, /* ヘッダ 広告 */
 .GameDetail__GameDetailAds_pc /* ゲームページ 下段 */ 
 {display:none!important}
 }
+
 @-moz-document regexp("https://www.nicovideo.jp/(search|tag).*") {
 /* 動画キーワード検索&タグ検索 */
 /* 広告 */
@@ -416,6 +442,7 @@ ul.list li.item.nicoadVideoItem {display:none!important}
 /* Nico Nico Ranking NG対応 */
 ul.list .item.nrn-hide {display:none!important}
 }
+
 @-moz-document url-prefix("https://www.nicovideo.jp/newarrival"), url-prefix("https://www.nicovideo.jp/recent"), url-prefix("https://www.nicovideo.jp/related_tag"), url-prefix("https://www.nicovideo.jp/mylist_search") {
 /* 旧デザイン残存ページ: 新着投稿, 新着コメント, 関連タグ, マイリスト検索 */
 /* 広告 */
@@ -444,7 +471,8 @@ td[style*="background"] {background:none!important;border-bottom:2px dotted #ccc
  /* ヘッダロゴ 位置修正 */
 #head_logo {padding:0!important}
 }
-@-moz-document url-prefix("http://blog.nicovideo.jp/"), url-prefix("https://blog.nicovideo.jp/"){
+
+@-moz-document url-prefix("http://blog.nicovideo.jp/"), url-prefix("https://blog.nicovideo.jp/") {
 /* ニコニコインフォ */
 /* 広告 */
 #info_pc_box, /* メイン 下*/

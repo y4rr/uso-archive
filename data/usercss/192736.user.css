@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `A more colorful theme that mimics the new site design, with the current site layout.`
-@version        20201117.11.50
+@version        20201117.16.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bkgColorKey1 "Background Theme" {
@@ -14,11 +14,10 @@
 5 "Legacy" <<<EOT background: radial-gradient(circle, rgba(129,197,247,1) 35%, rgba(61,162,233,1) 100%) fixed EOT;
 6 "Blizzard" <<<EOT background: linear-gradient(0deg, #97A2B7 0%, #1B3048 100%) fixed EOT;
 7 "Blizzard Inverted" <<<EOT background: linear-gradient(0deg, #1B3048 0%, #97A2B7 100%) fixed EOT;
-
-}
-@advanced dropdown bttnshadow "Button Text Shadow" {
-	bttnOFF "OFF (Default)*" <<<EOT /*text-shadow: 0 2px 0px #00000061*\/ EOT;
-bttnON "ON" <<<EOT text-shadow: 0 2px 0px #00000061 EOT;
+8 "______________" <<<EOT background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgba(137,206,248,1) 100%) fixed EOT;
+9 "Simple Gray" <<<EOT background: #ededed EOT;
+10 "Simple Blue" <<<EOT background: #a4cbf5 EOT;
+11 "Simple Pink" <<<EOT background: #f3a4f5 EOT;
 
 }
 @advanced color holdercolor "White Background Custom Color (Use #fff0 for invisible))" #FFFFFF
@@ -69,7 +68,7 @@ nav .info {
 }
 
 .content {
-    border: 1px solid #C3CDD8;
+	/*[[cardType]]*/;
 }
 
 .main-holder {

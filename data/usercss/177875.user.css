@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Pasza
 @description    `Размывает рекламу ВКонтакте (VK) до приемлемого состояния.`
-@version        2020720.10.22
+@version        20201117.23.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,6 +15,8 @@ div[data-ad-stat-click_pretty_card],
 .feed_friends_recomm,
 .ShortVideoFeedBlock,
 .stories_feed_cont,
+.post_videos,
+.post.mark_top_verified, /*Послушайте, это интересно*/
 #ads_left
 {
   opacity: 0.15;

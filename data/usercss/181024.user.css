@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SaruOu2
 @description    `Wanikani Dark Azure theme 2`
-@version        2020328.21.0
+@version        20201117.21.30
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -675,24 +675,10 @@ header.global-header a {
     padding: 0 8px;
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
-}
-.logo__link {
-    margin: -2px 0 0;
-    display: block;
-    height: 46px;
-    overflow: hidden;
-    background: center/contain no-repeat url(https://aws1.discourse-cdn.com/business5/uploads/wanikani_community/original/3X/f/b/fbf554d332d7868b4bfb73a26e42647f4fb44a2f.png);
+
 }
 
-.logo__link h1:after {
-    background: none;
-}
-.global-header {
-    padding-bottom: 2px;
-}
-.global-header {
-    padding-bottom: 2px;
-}
+
 .sitemap__pages--levels .sitemap__page--current-level a {
     border: 2px solid #0af;
     line-height: 40px;
@@ -740,6 +726,7 @@ h1, html#public-profile div.wall-of-shame div.title, h2, h3 {
 }
 .sitemap__section-header {
     color: #0af;
+	text-shadow: 0 1px 0 #000;
 }
 .sitemap__expandable-chunk:before {
     display: block;
@@ -1056,6 +1043,7 @@ element.style {
     padding: 5px;
     color: #0af;
     background: #494d5d;
+	
 }
 
 form label {
