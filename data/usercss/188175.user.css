@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         stylishe
 @description    `去掉百度网盘页面一些无用元素`
-@version        2020819.7.53
+@version        20201118.9.33
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,6 +19,11 @@
 
     /* 动态 */
     .module-header-wrapper[node-type="module-header-wrapper"] [node-type="pan-dynamic"]{
+        display:none
+    }
+
+    /* 一刻相册 */
+    .module-header-wrapper[node-type="module-header-wrapper"] [node-type="photo"]{
         display:none
     }
 

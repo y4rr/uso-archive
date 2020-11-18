@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "rulate",
     "createdAt": "2020-06-04T07:26:09.000Z",
-    "updatedAt": "2020-11-12T00:35:08.000Z",
+    "updatedAt": "2020-11-18T12:19:16.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 490912,
@@ -34,6 +34,47 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document regexp(\".*tl.rulate.ru/book/.*\") {\r\n#reader .text-wrapper {\r\n\tmax-width: 75% !important;\r\n}\r\n\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: #faf8f2 !important;\r\n}\r\n\r\nbody.brightness-1 #readpage .content-text * * {\r\n\tbackground-color: inherit !important;\r\n}\r\n\r\n.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {\r\n\tcolor: #ccc !important;\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: 20px !important;\r\n\tline-height: 24px !important;\r\n}\r\n}"
+    "css": "@-moz-document regexp(\".*tl.rulate.ru/book/.*\") {\r\n:root {\r\n\t--color: /*[[color]]*/;\r\n\t--fontSize: /*[[fSize]]*/;\r\n\t--maxWidth: /*[[mWidth]]*/;\r\n}\r\n#reader .text-wrapper {\r\n\tmax-width: var(--maxWidth) !important;\r\n}\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: var(--color) !important;\r\n}\r\n.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {\r\n\tcolor: #ccc !important\r\n}\r\n#readpage .content-text * {\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: var(--fontSize) !important;\r\n\tline-height: calc(var(--fontSize) + 6px) !important;\r\n}\r\n}",
+    "settings": [
+      {
+        "key": "color",
+        "label": "Background color",
+        "type": "color",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "#FAF8F2",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "fSize",
+        "label": "Font size",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "20px",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "mWidth",
+        "label": "Max width",
+        "type": "text",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "75%",
+            "default": true
+          }
+        ]
+      }
+    ]
   }
 }

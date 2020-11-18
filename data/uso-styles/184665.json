@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccby"
   },
-  "updated": "2020-11-12T00:35:08.000Z",
+  "updated": "2020-11-18T12:19:16.000Z",
   "weekly_install_count": 0,
   "total_install_count": 6,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/184665_after.png?r=1605141308",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/184665_after.png?r=1605701956",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,10 +29,68 @@
   "subcategory": "rulate",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document regexp(\".*tl.rulate.ru/book/.*\") {\r\n#reader .text-wrapper {\r\n\tmax-width: 75% !important;\r\n}\r\n\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: #faf8f2 !important;\r\n}\r\n\r\nbody.brightness-1 #readpage .content-text * * {\r\n\tbackground-color: inherit !important;\r\n}\r\n\r\n.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {\r\n\tcolor: #ccc !important;\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: 20px !important;\r\n\tline-height: 24px !important;\r\n}\r\n}",
+  "css": "@-moz-document regexp(\".*tl.rulate.ru/book/.*\") {\r\n:root {\r\n\t--color: /*[[color]]*/;\r\n\t--fontSize: /*[[fSize]]*/;\r\n\t--maxWidth: /*[[mWidth]]*/;\r\n}\r\n#reader .text-wrapper {\r\n\tmax-width: var(--maxWidth) !important;\r\n}\r\nbody:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {\r\n\tbackground-color: var(--color) !important;\r\n}\r\n.brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {\r\n\tcolor: #ccc !important\r\n}\r\n#readpage .content-text * {\r\n\tfont-family: Arial, serif !important;\r\n\tfont-size: var(--fontSize) !important;\r\n\tline-height: calc(var(--fontSize) + 6px) !important;\r\n}\r\n}",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
   "userjs_url": "/styles/userjs/184665/arpeks-rulate.user.js",
-  "style_settings": []
+  "style_settings": [
+    {
+      "id": 469293,
+      "style_id": 184665,
+      "install_key": "color",
+      "label": "Background color",
+      "ordinal": 0,
+      "setting_type": "color",
+      "style_setting_options": [
+        {
+          "id": 1665198,
+          "style_setting_id": 469293,
+          "label": "placeholder",
+          "value": "#FAF8F2",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469294,
+      "style_id": 184665,
+      "install_key": "fSize",
+      "label": "Font size",
+      "ordinal": 1,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1665199,
+          "style_setting_id": 469294,
+          "label": "placeholder",
+          "value": "20px",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    },
+    {
+      "id": 469295,
+      "style_id": 184665,
+      "install_key": "mWidth",
+      "label": "Max width",
+      "ordinal": 2,
+      "setting_type": "text",
+      "style_setting_options": [
+        {
+          "id": 1665200,
+          "style_setting_id": 469295,
+          "label": "placeholder",
+          "value": "75%",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "placeholder"
+        }
+      ]
+    }
+  ]
 }

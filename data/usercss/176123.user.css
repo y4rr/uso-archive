@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         DaShock
 @description    `Dark mode for OIOIOI interface`
-@version        2020212.22.11
+@version        20201118.9.12
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix('https://szkopul.edu.pl/'), url-prefix('https://wyzwania.programuj.edu.pl/'), url-prefix('https://sio2.mimuw.edu.pl/') {
+@-moz-document url-prefix('https://szkopul.edu.pl/'), url-prefix('https://wyzwania.programuj.edu.pl/'), url-prefix('https://sio2.mimuw.edu.pl/'), url-prefix('https://sio2.staszic.waw.pl/') {
 
 
 /* 19574f73bd56.css | https://szkopul.edu.pl/static/CACHE/css/19574f73bd56.css */
@@ -729,6 +729,13 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
   /* border-top: 1px solid #ddd; */
   border-top: 1px solid #333;
+}
+
+/* 2a3d78fa66d3.css | https://sio2.mimuw.edu.pl/static/CACHE/css/2a3d78fa66d3.css */
+
+.submission--CE.submission__status, .submission--MLE.submission__status, .submission--TLE.submission__status, .submission--OLE.submission__status {
+  /* background: #ffe1ae; */
+  background: #a85;
 }
 
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Some Leo
 @description    `主要说明：1. 针对常用百度页面进行简化和修改，已完成页面可见下方“已完成的工作”；2. 元素风格以圆角矩形为主、阴影为辅，方党退避；3. 网页查询的结果为单栏居中，其它因页面结构原因放弃居中；4. 若页面中屏蔽了你需要的元素，请告知；5. 特殊样式难以及时适配，你可以加QQ群：912825034 进行反馈。已完成的工作：1. 百度首页｜百度知道首页 | 产品大全页2. 百度网页结果页｜知道结果页｜文库结果页｜资讯结果页｜百度汉语结果页3. 知道具体页｜文库具体页 ｜ 百科具体页4. 部分页面的字体略放大半完成的页面：1. 图片结果页2. 百度翻译页面接下去会做的工作：1. 百度网页结果更多特殊情况适配2. Safari浏览器适配（Cascadea）3. 优化样式4. 百度经验“自用”样式，可能有不兼容，但你通过以下途径找到我提出bug或建议：酷安：一位群众 ｜ GitHub：somelou ｜ Jellow：大学杨超越QQ群：912825034曾参考以下内容：1. CWorld：https://userstyles.org/styles/173673/pure（已告知）2. 百度部分新版页面`
-@version        20201114.5.11
+@version        20201118.1.53
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -477,6 +477,7 @@ page {
 	line-height: initial;
 	display: inline-flex;
 	align-items: flex-end;
+	place-items: baseline;
 }
 .new-pmd .op-bk-polysemy-album,
 .new-pmd .op-bk-polysemy-imgWrap {
@@ -518,7 +519,9 @@ page {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 }
-
+#container.sam_newgrid .se_st_footer .c-tools .c-icon {
+	top: -3px;
+}
 /* search form */
 #head_wrapper .s_form_nologin,
 #head_wrapper .s_form_login {
@@ -849,7 +852,6 @@ em {
 /* 模拟下划线 */
 .c-container .m a:hover,
 .c-container .c-abstract a:hover,
-.c-container .f13 a:hover,
 .c-container table a:hover,
 .c-container .c-row a:hover,
 .c-gap-right-small a:hover {
@@ -870,6 +872,12 @@ em {
 a.c-showurl-hover,
 a.c-showurl-hover em.c-showem {
 	text-decoration: none !important;
+}
+.c-container .f13 a {
+	transition: all .3s;
+}
+.c-container .f13 a:hover {
+	mix-blend-mode: darken;
 }
 /* 水波 */
 #content_left .c-container h3 a,

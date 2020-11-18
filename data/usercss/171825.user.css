@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MouShu
 @description    `哔哩哔哩美化脚本⏩<b>因为B站主页更新，请大家将自定义选项里的分区屏蔽中的block改成flex（如果仍未block的话），否则页面会很奇怪！想要屏蔽的话依旧可以写none</b>⏩背景图片三个覆盖模式：cover：图片完全覆盖背景，图片和背景长宽比不能差太大；contain：尽量拉伸图片使得图片能完全看见，不会完全覆盖背景；XX%：百分比缩放图片。========主要功能：✅改变了网页版B站的风格。✅本样式可以高度地自定义，打造属于你自己的风格。✅屏蔽了大部分可见广告，小部分的广告换成了插画。✅屏蔽了直播间的大部分无关信息，清爽的观看体验。✅全屏观看优化，不再因为碰一下鼠标就显示控制栏影响观感。✅大部分内容半透明<strike>（方便看老婆）</strike>。✅去掉了页面底端、APP下载等无关内容，可以自定义。✅主页分区屏蔽，在样式自定义里面设置。========食用须知：🅿本插件随缘更新，如果你遇到了问题，可以留言告诉我。🅿<b>直播间去污代码在代码2，直播间去污代码在代码2。</b>🅿仍然有部分页面没做完，或因网站更新而失效。（本人学生，此前没学过CSS）========🌐灵感及部分代码来源：<a href="https://userstyles.org/styles/169531/g36" target="_blank">百度美化G36</a>🌐我的另一个作品，<a href="https://userstyles.org/styles/172368/theme" target="_blank">百度去广告</a>（兼容性其他样式）🌐<a href="https://afdian.net/@capital" target="_blank">爱发电</a>（我还没有陷入财务危机，请不必担心）🌐邮件地址961857877@qq.com，欢迎指出问题和尬聊`
-@version        20201014.8.9
+@version        20201118.6.15
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown uurl "背景图片" {
@@ -1487,7 +1487,9 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
     background:var(--boxbacks,rgba(255, 255, 255, 0.9));
 }
 /*广告*/
-.slide-gg{
+.slide-gg,
+#slide_ad,
+#slide_ad + a[data-target-url]{
     /*感觉自己有点缺德*/
     display:none;
 }
@@ -2811,6 +2813,14 @@ https://s2.ax1x.com/2019/11/22/M7cC6g.jpg <--这个来源于微博上薯妈的�
 #gift-control-vm{
     z-index: 998;
 }
+.bilibili-live-player-video-area{
+    z-index: -1;
+}
+.bilibili-live-player[data-controller-state="show"]:hover .bilibili-live-player-video-controller,
+.bilibili-live-player[data-controller-state="show"]:hover .bilibili-live-player-video-controller>div,
+.bilibili-live-player[data-controller-state="show"]:hover .bilibili-live-player-video-controller>div>div{
+    opacity: 1 !important;
+} 
 /*
 主播动态下面的评论区
 */
