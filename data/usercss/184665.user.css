@@ -3,32 +3,44 @@
 @namespace      USO Archive
 @author         Arpeks Menetil
 @description    `Изменяет шрифт и фон на rulate (работает только с новой читалкой от сайта)`
-@version        20201118.12.19
+@version        20201118.12.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color color "Background color" #FAF8F2
+@advanced color bgColorLight "Background color (light mode)" #FAF8F2
+@advanced color bgColorDark "Background color (dark mode)" #000000
+@advanced color colorLight "Font color (light mode)" #444444
+@advanced color colorDark "Font color (dark mode)" #CCCCCC
 @advanced text fSize "Font size" "20px"
+@advanced text lHeight "Line height" "26px"
 @advanced text mWidth "Max width" "75%"
+@advanced text fFamily "Font family" "Arial"
 
 ==/UserStyle== */
 @-moz-document regexp(".*tl.rulate.ru/book/.*") {
 :root {
-	--color: /*[[color]]*/;
+	--colorLight: /*[[colorLight]]*/;
+	--colorDark: /*[[colorDark]]*/;
+	--backgroundColorLight: /*[[bgColorLight]]*/;
+	--backgroundColorDark: /*[[bgColorDark]]*/;
 	--fontSize: /*[[fSize]]*/;
 	--maxWidth: /*[[mWidth]]*/;
+	--lineHeight: /*[[lHeight]]*/;
+	--fontFamily: /*[[fFamily]]*/;
 }
 #reader .text-wrapper {
 	max-width: var(--maxWidth) !important;
 }
-body:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * * {
-	background-color: var(--color) !important;
+body:not(.brightness-1) #reader, body:not(.brightness-1) #readpage .content-text * *, body:not(.brightness-1) header {
+	background-color: var(--backgroundColorLight) !important;
+    color: var(--colorLight) !important
 }
 .brightness-1 #reader #text-container p, .brightness-1 #reader #text-container blockquote, .brightness-1 #reader #text-container div {
-	color: #ccc !important
+	background-color: var(--backgroundColorDark) !important;	
+	color: var(--colorDark) !important
 }
 #readpage .content-text * {
-	font-family: Arial, serif !important;
+  	font-family: "var(--fontFamily)", serif !important;
 	font-size: var(--fontSize) !important;
-	line-height: calc(var(--fontSize) + 6px) !important;
+	line-height: var(--lineHeight) !important;
 }
 }

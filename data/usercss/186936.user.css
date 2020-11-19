@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.8
+@name           Compact Tube (White) v1.3.9
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201117.11.20
+@version        20201118.12.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.8 */
+/* CompactTube (White) v1.3.9 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -34,9 +34,26 @@
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
-    /* Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
-    /* Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
+    /* ENG: Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
+    /* RU: Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
     ytd-feed-filter-chip-bar-renderer {display: flow;}
+
+/* █► ENG: Use Classic fonts (excludes the problematic "Roboto" font).
+            to disable, add "x" before the line. to enable, erase "x".
+            example: "  x  body * {font-family: Arial, sans-serif! important;} "
+            ──────────────────────────────────────────────────────────────────
+      RU: Задействовать Классические шрифты (исключает проблемный шрифт "Roboto").
+            для отключения допишите "x" перед строкой, для включения, сотрите "x". 
+            пример: "  x  body * {font-family: Arial, sans-serif !important;} "    */
+     body * {font-family:  Arial, Tahoma, sans-serif !important;} /* "Chrome: font" ver.*/
+  x  body * {font-family:  Tahoma, Arial, sans-serif !important;} /* "Opera: font" ver. */
+                /* note/заметка: 
+                    ENG: Opera uses "Tahoma" as the main font, while Chrome uses "Arial".
+                    choose the one you want by disabling the other one. 
+                    ─────────────────────────────────────────────────────────
+                    RU: Опера использует "Tahoma" как основной шрифт, в то время как Хром использует "Arial".
+                    выберите нужный вам, отключив другой.    ◄█ */
+
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
 ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID] #dismissable.ytd-compact-promoted-item-renderer {display: none;}
 /* убрать неотключаемые РАЗЪЯСНЕНИЯ YouTube о COVID-19 и тд. (под Видео): - "none" - убрать: "flow"- показать */
@@ -912,6 +929,9 @@ ytd-comment-history-entry-renderer {
     margin: 24px 40px 32px 9px;
     display: flex;
     flex-direction: row;}
+
+/* Библиотека(История) - вкладка "ЕЩЁ" : пункт: Посмотреть историю на странице "Мои действия" (размер шрифта) */
+yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
 
 /* ============== ВЫДЕЛИТЕЛИ ================ */
 /* Выделение Болдом шрифта в Комментариях "в Истории" */
@@ -2809,6 +2829,7 @@ ytd-notification-renderer:hover {
     box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer),
     inset 0 -1px 0 0 var(--yt-spec-10-percent-layer),
     0 -1px 0 0 var(--yt-spec-10-percent-layer),
+    0 -0.4px 0 0 var(--yt-spec-10-percent-layer),
     inset -0.5px 0 0 0 var(--yt-spec-10-percent-layer),
     inset 1px 0 0 0 var(--yt-spec-10-percent-layer);}
 

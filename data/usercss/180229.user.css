@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         CoderOffka
 @description    `Sepia view design for the wuxiaworld.co and readlightnovel.cc`
-@version        20201116.8.59
+@version        20201118.19.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,10 +22,12 @@ body, .book-wrapper, .bg-img-dim, .triangle-bg {
     border: none !important;
 }
 
-.section-list {
+.section-list .section .chapter-entity {
     letter-spacing: 0; padding-top: 0;
-    font-size: 20px !important;
+    font-size: 18px !important;
     font-family: Open Sans,Tahoma,sans-serif !important;
+    color: black;
+    line-height: 1.5;
 }
 
 #disqus_thread,

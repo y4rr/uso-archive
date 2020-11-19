@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `A more colorful theme that mimics the new site design, with the current site layout.`
-@version        20201117.16.50
+@version        20201118.12.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bkgColorKey1 "Background Theme" {
@@ -28,7 +28,6 @@
 @-moz-document domain("brick-hill.com") {
 body {
 /*[[bkgColorKey1]]*/;
-    letter-spacing: 0.2px
 }
 
 /* (defaultRGB) background: linear-gradient(0deg, rgba(114,183,227,1) 0%, rgb(5, 100, 157) 100%) fixed; */
@@ -68,7 +67,7 @@ nav .info {
 }
 
 .content {
-	/*[[cardType]]*/;
+    border: 1px solid #C3CDD8;
 }
 
 .main-holder {
@@ -402,7 +401,7 @@ width: 24.3%;
 }
 }
 
-@-moz-document url-prefix("https://www.brick-hill.com/shop/") {
+@-moz-document url-prefix("https://www.brick-hill.com/shop/"), url-prefix("https://www.brick-hill.com/messages") {
 .tabs .tab {    
 width: 49.3%;
 }

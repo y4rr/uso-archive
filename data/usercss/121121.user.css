@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         koeroesi86
 @description    `Dark theme with Star Wars colors and lightsaber effect for YouTube. Enjoy :)Note: for best experience, switch to dark theme on YouTube before installing the theme. This style makes that dark theme even darker.`
-@version        2019515.21.40
+@version        20201118.14.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown element-colors "Element colors" {
@@ -444,6 +444,15 @@ ytd-comment-action-buttons-renderer,
 
 #content.ytd-playlist-video-renderer:last-of-type {
     border-bottom-color: transparent !important;
+}
+
+ytd-rich-grid-media {
+    opacity: 0.7 !important;
+    transition: all .2s ease-in-out !important;
+}
+
+ytd-rich-grid-media:hover {
+    opacity: 1 !important;
 }
 
 /*[[element-colors]]*/

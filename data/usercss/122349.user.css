@@ -1,17 +1,15 @@
 /* ==UserStyle==
-@name           Last.fm - Clean & simple
+@name           Last.fm - Clean & simple (moved to github)
 @namespace      USO Archive
 @author         Chafouinerie
-@description    `A clean and simple theme for Last.fm`
-@version        2020331.19.20
+@description    `A clean and simple theme for Last.fmLast update here.The script is now on <a href="https://github.com/Chafouinerie/Lastfm-cleansimple">github</a> on userccs format.`
+@version        20201118.20.0
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("last.fm") {
-
-  
+@-moz-document domain(last.fm) {
 .header-background {
 background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAwNkM4QzZBQ0FBNzExRTU4QTkwREY5RDhFRTdEQzEyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAwNkM4QzZCQ0FBNzExRTU4QTkwREY5RDhFRTdEQzEyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDA2QzhDNjhDQUE3MTFFNThBOTBERjlEOEVFN0RDMTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDA2QzhDNjlDQUE3MTFFNThBOTBERjlEOEVFN0RDMTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz42pthFAAAABlBMVEU1MS0AAAA/yckEAAAADElEQVR42mJgAAgwAAACAAFPbVnhAAAAAElFTkSuQmCC) !important;
 }
@@ -34,10 +32,6 @@ display:none !important;
 
 .header-scrobble-since {
 color:#ffffff !important;
-}
-
-.hidden-xs {
-display: none !important;
 }
   
 .countbar-bar-slug {
@@ -214,6 +208,34 @@ display: none !important;
 
 .features-footer {
 display: none !important;
+}
+
+.trending-tracks {
+display: none !important;
+}
+
+.lastfm-ad
+{
+  display: none!important;
+}
+
+.full-bleed-ad-container, .sidebar-ad-container
+{
+  display: none!important;
+}
+
+/* Useless things */
+
+.trending-tracks-section-wrapper{
+display:none!important;
+}
+
+.lazy-features-page-bottom{
+display:none!important;
+}
+
+.footer{
+display:none!important;
 }
 
 }

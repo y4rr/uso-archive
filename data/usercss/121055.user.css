@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         manolito
 @description    `- Hides MAIL.COM ads sidebar- Dark Mode (Customizable main colors)`
-@version        20201022.18.46
+@version        20201118.15.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown AdsCols "Choose Ads / Custom Colors" {
-	NoAds "Hide Ads only*" <<<EOT  EOT;
-NoAdsCols "Hide Ads + Custom Colors" <<<EOT /*--------COLORS-----------------------------*\/
+	NoAdsCols "Hide Ads + Custom Colors*" <<<EOT /*--------COLORS-----------------------------*\/
 
 [id^="editor-"],
 [class="cloud-action-bar__list-item"] :not([class*="organizer"]),
@@ -141,6 +140,7 @@ input:not([class="form-submit"]),
   scrollbar-width: thin;          /* "auto" or "thin"  *\/
   scrollbar-color: /*[[ScrThumb]]*\/ rgba(0,0,0,0.5);;   /* scroll thumb & track *\/ 
 } EOT;
+NoAds "Hide Ads only" <<<EOT  EOT;
 
 }
 @advanced color TextColor "Text Color" #EEEEEE
