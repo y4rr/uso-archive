@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `酷狗網頁樣式修改良善`
-@version        2020101.6.22
+@version        20201119.3.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -47,6 +47,10 @@ em {color: #66FF33 !important;}
 深黑色：#080808
 淺黑色：
 ---#####*/
+
+/*#####--- 隱藏上方廣告方框 ---#####*/
+DIV[id="taw"] {display: none !important;}
+
 
 /*#####--- AutoPagerize 網頁自動換頁免點下一頁 (第X頁) ---#####*/
 a[class="autopagerize_link"] {color:   #FFFF00    !important;font-size: 21px !important;}

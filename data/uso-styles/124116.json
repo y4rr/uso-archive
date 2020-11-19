@@ -1,6 +1,6 @@
 {
   "id": 124116,
-  "name": "ALC/pro lite",
+  "name": "完全スッキリ！ALC/pro lite",
   "description": "普通ALCと、pro lite両方の広告を削除",
   "user": {
     "id": 314484,
@@ -11,11 +11,11 @@
     "about": null,
     "license": "publicdomain"
   },
-  "updated": "2020-07-29T02:01:43.000Z",
+  "updated": "2020-11-19T07:26:04.000Z",
   "weekly_install_count": 0,
   "total_install_count": 46,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/124116_after.png?r=1596614733",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/124116_after.png?r=1605770765",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -27,9 +27,9 @@
   "category": "site",
   "raw_subcategory": "alc",
   "subcategory": "alc",
-  "additional_info": null,
+  "additional_info": "2020/11/19 普通ALCのupdateおよび、Pro liteのトップページにも広告が出ていたので対処。",
   "style_tags": [],
-  "css": "@-moz-document url-prefix(\"https://eow.alc.co.jp/\") {\r\n.mb_3 {display:none !important;}\r\n.adSuperBanner {display:none !important;}\r\n#pr {display:none !important;}\r\n#ad_serch_bottom {display:none !important;}\r\ndiv[width*=\"400\"] {display:none !important;}\r\n}\r\n\r\n@-moz-document url-prefix(\"https://eowf.alc.co.jp/\") {\r\n.mb_3 {display:none !important;}\r\n.adSuperBanner {display:none !important;}\r\n#pr {display:none !important;}\r\n#ad_serch_bottom {display:none !important;}\r\n#fluct-pc-sticky-ad {display:none !important;}\r\ndiv[width*=\"400\"] {display:none !important;}\r\n}",
+  "css": "@-moz-document domain(\"eow.alc.co.jp\") {\r\n.mb_3 {display:none !important;}\r\n.adSuperBanner {display:none !important;}\r\n#pr {display:none !important;}\r\n#ad_serch_bottom {display:none !important;}\r\ndiv[width*=\"400\"] {display:none !important;}\r\n.ad_top_enter  {display:none !important;}\r\n#fluct-pc-sticky-ad {display:none !important;}\r\n\r\n.bg_i {display:none !important;}\r\n#AreaHeaderRight,\r\n#AreaUpperRight,\r\n.pr_text,\r\n#tabbodyRight,\r\n#doubleRectangle,\r\n.GoogleActiveViewInnerContainer,\r\n#ad,\r\n.creative-container\r\n{\r\ndisplay:none !important;\r\n}\r\n}\r\n\r\n@-moz-document domain(\"eowf.alc.co.jp\") {\r\n.mb_3 {display:none !important;}\r\n.adSuperBanner {display:none !important;}\r\n#pr {display:none !important;}\r\n#ad_serch_bottom {display:none !important;}\r\n#fluct-pc-sticky-ad {display:none !important;}\r\ndiv[width*=\"400\"] {display:none !important;}\r\n.ad_top_enter  {display:none !important;}\r\n}",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
