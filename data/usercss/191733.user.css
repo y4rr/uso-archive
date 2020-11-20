@@ -3,20 +3,20 @@
 @namespace      USO Archive
 @author         Brecht Van Acker Voorspoels
 @description    `<strong>Smartschool Dark Mode</strong>By <i>Brecht Van Acker Voorspoels</i>`
-@version        20201119.18.25
+@version        20201120.11.1
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("smartschool.be") {
 /*© Brecht Van Acker Voorspoels*/
-
+/*V1.1*/
 /*Global*/
 :root {
     --green: #43b581;
     --blue: #7289da;
     --medium-grey: #2f3136;
     --darkest-grey: #202225;
-    --red: #f04747;
+    --red: #ff0000;
     --light-dark-grey: #292c2e;
     --purple-blue: #5c87ff;
     --light-green: #67db4d;
@@ -26,7 +26,12 @@
 	color: white !important;
     background: var(--purple-blue) !important;
 }
-body, textarea {
+body {
+    font-family: sans-serif;
+	color: white !important;
+    background-color: var(--medium-grey) !important;
+}
+textarea {
 	color: white !important;
     background-color: var(--medium-grey) !important;
 }
@@ -176,6 +181,15 @@ a.smscButton span {
 }
 
 /*Start*/
+.topnav__menuitem--img span:hover {
+	color: white !important;
+}
+.topnav__menu-wrapper {
+	background-color: var(--medium-grey) !important;
+}
+.profile-blocks.js-profile-blocks {
+	display: none !important;
+}
 .course-ico {
 	border-right: 1px solid var(--blue) !important;
 }
@@ -230,6 +244,9 @@ a.smscButton span {
 }
 .course-link__name:hover {
 	color: white !important;
+}
+.js-course-name mark{
+	background: none !important;
 }
 .homepage__block p a img:first-child {
 	display: none !important;
@@ -430,6 +447,9 @@ a.course__block.course__image:hover {
 }
 
 /*messages*/
+.searchInputField, .subjectInput {
+	background-color: var(--medium-grey) !important;
+}
 .tox-tbtn__select-label:hover {
 	cursor: pointer !important;
 }
@@ -1036,7 +1056,40 @@ a.clicked {
 .smsc-dialog {
 	background-color: var(--medium-grey) !important;
 }
-/*Agenda*/
+/*agenda*/
+.momentInfoClose {
+	background-image: url('https://svgshare.com/i/Rdf.svg') !important;/*white*/
+}
+.momentInfoClose:hover {
+	background-image: url('https://svgshare.com/i/Re7.svg') !important;/*red*/
+}
+.wborder {
+	background-image: none !important;
+    background: var(--darkest-grey) !important;
+}
+.lessonFormTitleContainer {
+	color: white !important;
+}
+#infoContainerSubjectTab .current span {
+	border-top: 3px solid white;
+}
+.momentInfo.dr, .momentInfo.ur, .momentInfo.ul, .momentInfo.dl {
+	background-image: none !important;
+    background: var(--darkest-grey) !important;
+    border-radius: 12px;
+}
+.ui-state-default {
+	background-color: var(--medium-grey) !important;
+}
+.ui-state-default.ui-state-hover {
+	color: white !important;
+}
+.ui-icon-circle-triangle-w:hover {
+	background-color: var(--medium-grey) !important;
+}
+.momentInfoContent p img {
+    display: none !important;
+}
 .tasksAndMaterials__loading {
 	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
     min-width: 52px !important;
@@ -1047,6 +1100,7 @@ a.clicked {
 }
 .gridBlock {
 	border-color: white !important;
+    background: none !important;
 }
 .gridBlockContentNoIco {
 	display: none;
@@ -1062,12 +1116,15 @@ a.clicked {
 }
 .studentStartmoment {
 	background-image: url('https://svgur.com/i/RcV.svg') !important;/*green*/
+    background-size: 16px !important;
 }
 .studentTest {
 	background-image: url('https://svgshare.com/i/RbG.svg') !important;/*red*/
+    background-size: 16px !important;
 }
 .infoContainerBlock {
 	background-image: url('https://svgshare.com/i/Rak.svg');/*yellow*/
+    background-size: 16px !important;
 }
 .gridBlockContentNoteStatusYes {
 	background-color: var(--light-blue) !important;
@@ -1092,6 +1149,9 @@ a.clicked {
 }
 .gridBlockContent {
 	background-color: var(--medium-grey) !important;
+}
+.agenda_grid_day_column div {
+	border-radius: 4px !important;
 }
 .agendaGridBlockContentLeft {
 	color: white !important;
@@ -1189,6 +1249,35 @@ body {
 }
 
 /*courses*/
+.nav_loading_layer {
+	display: none !important;
+}
+.loading ins {
+	display: none !important;
+}
+.last .loading {
+	background-image: none !important;
+}
+.smsc-column-nav__button--news {
+	background-image: url('https://svgshare.com/i/RdB.svg') !important;
+    background-size: 28px !important;
+}
+.fileinfowhite, .fileinfogrey, .fileuploadblock, .correctioninfo, .isnew {
+	background-color: var(--medium-grey) !important;
+}
+.fileimg img {
+    visibility: hidden !important;
+}
+.fileimg {
+	background-image: url('https://svgshare.com/i/Rdv.svg') !important;
+    background-size: 16px !important;
+}
+.uploadtitle {
+	color: white !important;
+}
+.htbluelink {
+	text-decoration: none !important;
+}
 .smsc_cm_body_row_block_desc {
 	color: grey !important;
 }
@@ -1294,6 +1383,9 @@ body {
 }
 
 /*Profile*/
+.profile_keyring_formfield_value input {
+	background-color: var(--medium-grey) !important;
+}
 .readonly label:hover, .readonly, .disabled {
 	cursor: not-allowed !important;
     color: white !important;
@@ -1411,5 +1503,8 @@ body {
 .splashscreen__dialog {
 	background-color: #2f3136 !important;
     border-top: 1rem solid #2f3136 !important;
+}
+.float-label__input {
+	background-color: var(--medium-grey) !important;
 }
 }
