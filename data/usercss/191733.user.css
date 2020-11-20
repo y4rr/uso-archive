@@ -3,16 +3,121 @@
 @namespace      USO Archive
 @author         Brecht Van Acker Voorspoels
 @description    `<strong>Smartschool Dark Mode</strong>By <i>Brecht Van Acker Voorspoels</i>`
-@version        2020111.10.2
+@version        20201119.18.25
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain(smartschool.be) {
+@-moz-document domain("smartschool.be") {
 /*© Brecht Van Acker Voorspoels*/
-/*login pagina*/
-.login-app__top {
-	background-color: #2f3136;
+
+/*Global*/
+:root {
+    --green: #43b581;
+    --blue: #7289da;
+    --medium-grey: #2f3136;
+    --darkest-grey: #202225;
+    --red: #f04747;
+    --light-dark-grey: #292c2e;
+    --purple-blue: #5c87ff;
+    --light-green: #67db4d;
+    --light-blue: #2a9df4;
 }
+::selection {
+	color: white !important;
+    background: var(--purple-blue) !important;
+}
+body, textarea {
+	color: white !important;
+    background-color: var(--medium-grey) !important;
+}
+.flexwrap {
+	background-color: var(--medium-grey) !important;
+}
+.modern-ui {
+	background-color: var(--medium-grey) !important;
+}
+fieldset, legend, th {
+	background-color: var(--medium-grey) !important;
+}
+select {
+	background-color: var(--medium-grey) !important;
+    border: var(--medium-grey) !important;
+}
+a, span, legend, button, select {
+	color: white !important;
+}
+a:hover {
+	color: var(--blue) !important;
+    text-decoration: none !important;
+}
+span a:hover {
+    text-decoration: none !important;
+	color: var(--blue) !important;
+}
+a span:hover {
+	color: var(--blue) !important;
+    text-decoration: none !important;
+}
+.action__label {
+	color: white !important;
+}
+.action__label:hover {
+	color: var(--blue) !important;
+} 
+input[type=text] {
+	color: white !important;
+}
+input[type=password] {
+	color: white !important;
+}
+input[type=textfield] {
+	color: white !important;
+}
+input[type=search] {
+	color: white !important;
+    background-color: var(--medium-grey) !important;
+}
+input {
+	color: white !important;
+    border-radius: 3px !important;
+    padding-left: 5px !important;
+}
+.smscselect {
+	background: #202225 !important;
+}
+div a {
+	color: white !important;
+}
+div a:hover {
+	color: #7289da !important;
+    text-decoration: none !important;
+}
+ol, ul {
+	color: white !important;
+}
+img {
+	pointer-events: none;
+}
+div, button {
+	text-shadow: none !important;
+}
+tr {
+	background-color: var(--medium-grey);
+}
+textarea {
+	padding: 5px !important;
+}
+input[type="checkbox"] {
+	background: var(--medium-grey) !important;
+}
+.resize-handle {
+	background-image: url('https://svgshare.com/i/Rc_.svg') !important;
+}
+span:hover {
+	text-decoration: none !important;
+}
+
+/*Login page*/
 .hero-image-- {
 	display: none !important;
 }
@@ -30,27 +135,25 @@ span, a {
 	color: black;
 }
 .login-app__right {
-    margin: auto;
+    margin: auto !important;
+    box-shadow: none !important;
 }
 .login-app .smscButton {
 	background-color: #7289da !important;
-    border: none;
+    border-color: #7289da !important;
 }
 .login-app .smscButton:hover {
 	background-color: #7289da !important;
-    border: none;
+    border-color: #7289da !important;
 }
-.required, span {
+.required span {
 	color: white;
 }
-a.smscButton > span:nth-child(2) {
+a.smscButton span {
 	color: white;
 }
 .login-app__title--or {
 	color: white;
-}
-.float-label__input {
-	background-color: #2f3136;
 }
 .login-app__link {
 	color: white;
@@ -61,7 +164,7 @@ a.smscButton > span:nth-child(2) {
 .login-app__smartschool-app:hover {
 	color: #7289da;
 }
-.modern-ui .float-label__input + label > span {
+.modern-ui .float-label__input + label span {
 	color: white;
 }
 .login-app__platform-indicator {
@@ -71,35 +174,65 @@ a.smscButton > span:nth-child(2) {
 .login-app__left {
 	display: none;
 }
+
 /*Start*/
-.course__block__title {
-	color: white;
+.course-ico {
+	border-right: 1px solid var(--blue) !important;
 }
-.input-search {
-	background-color: #2f3136 !important;
+.module-news--24 {
+	background-image: url('https://svgshare.com/i/RdB.svg') !important;
+} 
+.home__container__content__loading {
+	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
+}
+.scoodle__container {
+	background-color: var(--light-dark-grey) !important;
+}
+.home__container__tab {
+	background: var(--blue) !important;
+    border-radius: none !important;
+    height: 100% !important;
+}
+.home__container__tab::before, .home__container__tab::after {
+    display: none !important;
+}
+.home__container__tab--active {
+	background: var(--light-dark-grey) !important;
+    font-weight: normal !important;
+}
+.home__container__tabs::before {
+	display: none !important;
+}
+.course__block__title:hover {
+	color: white !important;
 }
 .js-search-filter fieldset legend {
 	color: #67db4d !important;
 }
 #topnavSearchFilter {
-	background-color: #2f3136;
+	background-color: #2f3136 !important;
+    color: white !important;
 }
-.news__feed__button__content--title {
-	color: white;
-    text-decoration: none;
+.news__feed__button__content--name-date {
+	color: grey !important;
 }
-.news__feed__button__content--title:hover {
-	color: #7289da;
-    text-decoration: none;
+.course__block__description {
+	color: grey !important;
 }
-.datepicker__cell__content {
-	color: white;
+.course__block__description:hover {
+	color: grey !important;
 }
-body, button, input, select, textarea {
-	color: white;
+.js-course-descr {
+	color: grey !important;
 }
-.homepage__block {
-    background-color: #2f3136;
+.js-course-descr:hover {
+	color: grey !important;
+}
+.course-link__name:hover {
+	color: white !important;
+}
+.homepage__block p a img:first-child {
+	display: none !important;
 }
 .smsc-container--main, homepage__center {
 	background-color: #2f3136;
@@ -116,6 +249,9 @@ body, button, input, select, textarea {
 }
 .datepicker__cell__content:hover {
 	background-color: #202225 !important;
+}
+.datepicker__header td div:hover {
+	background-color: #2f3136 !important;
 }
 .modern-ui .smsc-topnav .topnav, .smsc-topnav .topnav {
 	background: #202225 !important;
@@ -134,21 +270,8 @@ body.modern-ui .homepage__center {
 .datepicker__navigation__label {
 	color: white;
 }
-.scoodle-kit__kit__label {
-	color: white;
-}
-span {
-	color: white;
-}
-span, a {
-	color: white;
-}
-span, a:hover {
-    text-decoration: none;
-	color: #7289da;
-}
-span.scoodle-kit__kit__label:hover {
-	color: #7289da;
+.scoodle-kit__kit img {
+    display: none !important;
 }
 .topnav__badge {
 	color: white;
@@ -156,38 +279,37 @@ span.scoodle-kit__kit__label:hover {
 .smsc-topnav .topnav__badge {
 	background-color: #7289da;
 }
-.datapicker--today .datepicker--bold:hover {
-	background-color: #202225 !important;
-}
 .smsc-title--1 {
-	color: #67db4d !important;
+    color: white !important;
     font-weight: bold !important;
 }
 .ui-widget-content {
 	background: #202225;
     border: none;
 }
-.smscButton.newsbutton.newsbutton--feeds {
-	background-color: #7289da;
-    border-color: #7289da;
-    color: white;
+.smscButton {
+	background: #7289da !important;
+    border-color: #7289da !important;
+    color: white !important;
 }
 .modern-ui .smscButton:hover:not([disabled]) {
 	background-color: #7289da;
 }
-.smsc-topnav .topnav__menu-arrow::after {
-	border-color: #2f3136 transparent;
+.topnav__menu-arrow::before {
+	border-color: #2f3136 transparent !important;
+}
+.topnav__menu-arrow::after {
+	border-color: #2f3136 transparent !important;
 }
 .smsc-contextmenu.position-bottom .smsc-contextmenu-arrow::after {
 	border-color: #2f3136 transparent;
 }
 .smscMain {
-	background-color: #2f3136 !important;
+	background-color: var(--medium-grey) !important;
     height: 100% !important;
 }
-.smsc-inlineeditor__editor:hover {
-	color: #7289da;
-    text-decoration: none !important;
+.smscMain table tr td {
+	background: none !important;
 }
 span {
 	color: white;
@@ -195,9 +317,6 @@ span {
 }
 .js-course-filters {
 	background-color: #2f3136;
-}
-#homepage__block--1489 div p a img {
-	display: none;
 }
 .smsc-contextmenu-bubble {
 	background-color: #2f3136 !important;
@@ -239,9 +358,6 @@ a.course__block.course__image:hover {
 .toolbarright {
 	background-color: #2f3136;
 }
-.resize-handle {
-	background-image: url(https://i.ibb.co/Hg5Dtdn/image.png) !important;
-}
 .postbox_link {
 	color: white;
 }
@@ -279,9 +395,6 @@ a.course__block.course__image:hover {
 .smsc-dropzone--init {
 	background-color: #202225;
 }
-.smsc-dropzone--ellipsis:hover {
-	color: #7289da;
-}
 .smsc-container--grey {
 	background-color: #292c2e !important;
 }
@@ -300,46 +413,99 @@ a.course__block.course__image:hover {
 .menu-linkbutton:hover {
 	background-color: #202225 !important;
 }
-/*Berichten*/
-.msgContent {
-	background-color: #2f3136 !important;
-    background: #2f3136 !important;
+.newsDialog__center p a img:first-child {
+	display: none !important;
 }
-.msgContent strong {
-	background-color: #2f3136 !important;
-    color: white !important;
-}
-.msgContent em {
-	background-color: #2f3136 !important;
-    color: white;
-}
-.msgContent h1 {
-    color: white !important;
-}
-.msgContent h2 {
-    color: white !important;
-}
-.msgContent h3 {
-    color: white !important;
-}
-.msgContent h4 {
-    color: white !important;
-}
-.msgContent h5 {
-    color: white !important;
-}
-.msgContent h6 {
-    color: white !important;
-}
-.msgContent p {
-    color: white !important;
-    background: #2f3136 !important;
-}
-.msgContent span {
-    color: white !important;
-}
-.msgHeaderVal {
+.news__feed__button__content--title {
 	color: white !important;
+}
+.news__feed__button__content--title:hover {
+	color: #7289da !important;
+}
+.topnav__btn {
+	color: white !important;
+}
+.topnav__btn:hover {
+	color: white !important;
+}
+
+/*messages*/
+.tox-tbtn__select-label:hover {
+	cursor: pointer !important;
+}
+.mbselected {
+	background-image: none !important;
+}
+quickreply-menu {
+	background-color: var(--medium-grey) !important;
+}
+.tox-toolbar__primary {
+	background-color: var(--medium-grey) !important;
+}
+.quickReplyMenu__arrow::before {
+    border-color: transparent var(--medium-grey) !important;
+}
+.quickReplyMenu__arrow::after {
+    border-color: transparent var(--medium-grey) !important;
+}
+.folders {
+	background-color: var(--light-dark-grey) !important;
+}
+.helper--height--mega {
+	background-color: var(--light-dark-grey) !important;
+}
+#folders_parent_td {
+	background-color: var(--light-dark-grey) !important;
+}
+.helper--height--mega {
+	background-color: var(--lightgrey) !important;
+}
+#folders_parent_table tbody tr td div:nth-child(1) {
+	background-color: var(--light-dark-grey) !important;
+}
+.tox-selected-menu {
+	background-color: #2f3136 !important;
+}
+.tox-collection__group {
+	background-color: #2f3136 !important;
+}
+.tox-collection__item--active {
+	background-color: #202225 !important;
+}
+.tox-mbtn--active {
+	background-color: #202225 !important;
+}
+.tox-collection__item--enabled {
+	background-color: #2f3136 !important;
+}
+.tox-collection__item-accessory {
+	color: white !important;
+}
+.tox-collection__item-label {
+	color: white !important
+}
+.composeUsers--max-height-limited.ui-droppable:hover {
+	background-color: #2f3136 !important;
+}
+.smsc-table__row {
+	background-color: var(--medium-grey) !important;
+}
+.smsc-table__row:hover {
+	background-color: #2f3136 !important;
+}
+.smartfolderrules_text select {
+	background-color: #2f3136 !important;
+}
+.msgContent * {
+	background-color: #2f3136 !important;
+    background: #2f3136 !important;
+    color: white !important;
+}
+.msgContent a {
+	color : var(--blue) !important;
+}
+.msgHeader {
+	border-bottom: #202225 1px solid !important;
 }
 .msgContentVal div {
 	color: #7289da !important;
@@ -352,9 +518,6 @@ a.course__block.course__image:hover {
 }
 .attachment__title__label {
 	color: white !important;
-}
-.notifs-toaster__toast modern-ui {
-	background-color: #2f3136 !important;
 }
 .topnav__menuitem.topnav__menuitem--icon {
 	color: white;
@@ -399,13 +562,6 @@ a.topnav__menuitem:hover {
 .msgContentVal a {
 	color: #7289da;
 }
-.datepicker__cell__content.datepicker--bold:hover {
-	background-color: #2f3136 !important;
-}
-.smscButton.red {
-	background-color: #f04747 !important;
-    border-color: #f04747 !important;
-}
 .userNotRead {
 	color: #f04747;
 }
@@ -414,8 +570,8 @@ a.topnav__menuitem:hover {
     text-decoration: none !important;
 }
 .menu-item:hover {
-	background-color: #202225 !important;
-    color: #7289da !important;
+	background-color: var(--medium-grey) !important;
+    color: var(--blue) !important;
 }
 .trans-layer {
 	background-color: #2f3136;
@@ -453,14 +609,8 @@ a.topnav__menuitem:hover {
 .message-search__select .smsc-select {
 	background-color: #2f3136;
 }
-.smsc-select-button.smscButton.blue {
-	background-color: #7289da;
-}
 .message-search__button {
 	background-color: #7289da !important;
-}
-.message-search__input {
-	background-color: #2f3136;
 }
 .smsc-topnav [data-notifs] .notifs__hdr [role="switch"] .switch-values::after {
 	background-color: #67db4d;
@@ -471,11 +621,14 @@ a.topnav__menuitem:hover {
 .smsc-topnav [data-notifs] .notifs__list:empty::after {
 	color: white;
 }
+.js-courses-list {
+	background-image: none !important;
+}
 .msgHeaderVal--sender {
 	color: #5c87ff !important;
 }
 .modern-message__name {
-	color: #5c87ff;
+	color: #5c87ff !important;
 }
 .tox-menubar {
 	background-color: #2f3136 !important;
@@ -505,20 +658,11 @@ a.topnav__menuitem:hover {
 .tox-split-button__chevron:hover {
 	border-color: #202225 !important;
 }
-#toInput {
-	background-color: #2f3136;
-}
-.searchInputField {
-	background-color: #2f3136;
-}
-.composeUsers.pointer.composeUsers--max-height-limited.ui-droppable {
-	background-color: #2f3136;
+.ui-droppable {
+	background-color: #2f3136 !important;
 }
 .compose_subject {
-	background-color: #2f3136;
-}
-.subjectInput {
-	background-color: #2f3136;
+	background-color: #2f3136 !important;
 }
 .searchDivContent {
 	background-color: #2f3136;
@@ -529,8 +673,17 @@ a.topnav__menuitem:hover {
 .searchDivResult.selected {
 	background-color: #7289da;
 }
+.selected {
+	background-color: var(--darkest-grey) !important; 
+}
+.smsc-inlineeditor__span--disabled:hover {
+	background-color: var(--darkest-grey) !important;
+}
 .mce-content-body {
 	background-color: #2f3136;
+}
+.mce-content-body div {
+	color: #7289da !important;
 }
 .tox-tbtn--bespoke:hover {
 	background-color: #202225 !important;
@@ -539,7 +692,7 @@ a.topnav__menuitem:hover {
 	border-color: #2f3136 transparent !important;
 }
 .smsc-table__header {
-	background-color: #2f3136 !important;
+	background: #2f3136 !important;
 }
 .tox-tbtn.tox-tbtn--select {
 	color: white;
@@ -569,9 +722,6 @@ a.topnav__menuitem:hover {
 .js-focus-visible.modern-ui {
 	background-color: #2f3136;
 }
-.submit-button .smscButton .blue {
-	background-color: #2f3136;
-}
 .add-btn {
 	color: white !important;
 }
@@ -581,20 +731,11 @@ a.topnav__menuitem:hover {
 .smsc-treeitem__label {
 	color: white !important;
 }
+.smsc-treeitem__label:hover {
+	color: #7289da !important;
+}
 .smsc-tabslist__item {
 	background-color: #2f3136 !important;
-}
-.folders_parent_table {
-	background-color: #202225;
-}
-.folders {
-	background-color: #292c2e;
-}
-#folders_parent_table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > div:nth-child(1) {
-	background-color: #292c2e;
-}
-#folders_parent_td {
-	background-color: #292c2e;
 }
 .modern-message__actions {
 	background-color: #2f3136 !important;
@@ -613,7 +754,7 @@ a.topnav__menuitem:hover {
 	background-color: #202225 !important;
 }
 .smscFrameTitle {
-	color: #67db4d !important;
+	color: white !important;
     padding: 0 !important;
     background: #2f3136 !important;
     border: 0 !important;
@@ -636,41 +777,39 @@ a.topnav__menuitem:hover {
 .smscAdminNav_body_linkdivText {
 	color: white;
 }
-.smscAdminNav_body .smscAdminNav_body_link .smscAdminNav_body_linkdivText.disabled .smscAdminNav_body_linkdivTitle:hover {
-	color: #ddd !important;
-}
 .modern-ui {
 	background-color: #2f3136;
 }
-#msglist > p:nth-child(3) > img:nth-child(1) {
+#msglist p img {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
+    background: url('https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif') no-repeat;
     width: 52px;
     height: 52px;
     padding-left: 52px;
 }
-#msgdetail > p:nth-child(3) > img:nth-child(1) {
+#msgdetail p img {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif") no-repeat;
+    background: url('https://i.ibb.co/1Z9BXm0/Rolling-1s-52px.gif') no-repeat;
     width: 52px;
     height: 52px;
     padding-left: 52px;
 }
-#loadingLayer > img:nth-child(1) {
+#loadingLayer img {
     display: block;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
+    background: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') no-repeat;
     width: 52px;
     height: 52px;
     padding-left: 52px;
 }
 .news--loading {
-	
+	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
+    height: 54px !important;
 }
 .ssLinkBlue {
 	text-decoration: none;
@@ -688,14 +827,11 @@ button.ui-button:hover {
 	background-color: #f04747;
     border-color: #f04747;
 }
-.modern-ui.smscButton.blue {
+.smscButton.blue {
 	background-color: #7289da !important;
 }
-.newsDialog__center > p:nth-child(1) {
-	
-}
 .draftSaved {
-	background-image: none;
+	background-image: none !important;
 }
 .tox .tox-menubar + .tox-toolbar, .tox .tox-menubar + .tox-toolbar-overlord .tox-toolbar__primary {
 	border-top: 1px solid white;
@@ -708,9 +844,6 @@ button.ui-button:hover {
 .forum-row:hover {
 	background-color: #2f3136;
 }
-.margin-top--milli > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) {
-	background-color: #2f3136;
-}
 .forum-link {
 	color: white !important;
 }
@@ -718,7 +851,7 @@ button.ui-button:hover {
 	color: #7289da !important;
 }
 .category-hdr {
-	background: #7289da !important;
+	background: var(--darkest-grey) !important;
     font-weight: normal !important;
     text-shadow: none !important;
 }
@@ -736,16 +869,13 @@ smsc-listview .smsc-table__header tr:hover td:not(.cb-container), smsc-listview 
 	background-color: #202225;
 }
 .loading--x-large {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    width: 52px;
-    height: 52px;
-    padding-left: 52px;
+    background-position: center;
 }
 .action-button {
+    display: flex !important;
 	background-color: #202225 !important;
+    justify-content: center !important;
 }
 .smsc-linkbutton {
 	color: white;
@@ -764,9 +894,48 @@ smsc-listview .smsc-table__header tr:hover td:not(.cb-container), smsc-listview 
 .smsc-contextmenu__arrow--position-right::after {
 	border-color: transparent #2f3136 !important;
 }
+
 /*Leerlingvolgsysteem*/
-.content_container {
-	background-color: #2f3136;
+#leftLVStitle {
+	color: white !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+.resize-handle {
+}
+.pupilInfo_popup {
+	background-color: #2f3136 !important;
+    border-color: #2f3136 !important;
+}
+.teacher a {
+	color: #7289da !important;
+}
+.content_container, .navigation_container, .toolbar {
+	background-color: var(--medium-grey) !important;
+    border: 1px solid white !important;
+}
+.toolbarright {
+	border: none !important;
+}
+.contentFrametitle {
+	background: #2f3136;
+    border: none;
+    box-shadow: none;
+}
+.contentFrametitle span {
+	color: #67db4d;
+}
+.itemSchoolyear {
+	color: white;
+}
+.green {
+	background: #43b581 !important;
+}
+.loading {
+	background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    margin-right: 10px !important;
 }
 .highcharts-background {
 	fill: #2f3136;
@@ -778,22 +947,16 @@ smsc-listview .smsc-table__header tr:hover td:not(.cb-container), smsc-listview 
 	color: white !important;
 }
 .contentLoader {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    width: 52px;
-    height: 52px;
-    padding-left: 52px;
+    background: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') no-repeat;
+    background-position: center;
+}
+.course__block--loading {
+    background: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') no-repeat !important;
+	background-position: center !important;
+    height: 54px !important;
 }
 .toolbarLoader {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: url("https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif") no-repeat;
-    width: 28px;
-    height: 28px;
-    padding-left: 28px;
+	display: none !important;
 }
 .ltr {
 	color: white !important;
@@ -805,8 +968,11 @@ a.clicked {
 	background-color: #2f3136;
 }
 .lvs_item_top {
-	background: #5c80ff;
-    border-color: #5c80ff;
+	background: var(--darkest-grey) !important;
+    border-color: var(--darkest-grey) !important;
+}
+.padding5.bold {
+	color: white !important;
 }
 .personalSettings_content {
 	background-color: #2f3136;
@@ -843,9 +1009,99 @@ a.clicked {
 .voormiddag {
 	color: grey;
 }
+.pointer:hover {
+    text-decoration: none !important;
+    background-color: #202225 !important;
+    background: #202225 !important;
+}
+.smsc-rightclick__menu {
+	background-color: #2f3136 !important;
+}
+.smsc-inlineeditor__editor:hover {
+	color: #7289da;
+    text-decoration: none !important;
+}
+.smsc-rightclick__link:hover {
+	color: #7289da !important;
+}
+.smsc-linkbutton--16:hover {
+	background-color: #2f3136 !important;
+}
+.js-listview-link {
+	color: white !important;
+}
+.js-listview-link:hover {
+	color: #7289da !important;
+}
+.smsc-dialog {
+	background-color: var(--medium-grey) !important;
+}
 /*Agenda*/
+.tasksAndMaterials__loading {
+	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+}
+.agendaGridBlockContentRightButton {
+    background-size: 14px;
+}
+.gridBlock {
+	border-color: white !important;
+}
+.gridBlockContentNoIco {
+	display: none;
+}
+.gridBlockContentBothStartStatus {
+    background-image: url('https://svgur.com/i/RcV.svg') !important;/*green*/
+}
+.gridBlockContentAssignmentEndStatus {
+    background-image: url('https://svgshare.com/i/Rak.svg') !important;/*yellow*/
+}
+.gridBlockContentTestEndStatus {
+    background-image: url('https://svgshare.com/i/RbG.svg') !important;/*red*/
+}
+.studentStartmoment {
+	background-image: url('https://svgur.com/i/RcV.svg') !important;/*green*/
+}
+.studentTest {
+	background-image: url('https://svgshare.com/i/RbG.svg') !important;/*red*/
+}
+.infoContainerBlock {
+	background-image: url('https://svgshare.com/i/Rak.svg');/*yellow*/
+}
+.gridBlockContentNoteStatusYes {
+	background-color: var(--light-blue) !important;
+}
+.infoContainerBlock {
+	background-color: var(--medium-grey) !important;
+}
+.infoContainer {
+	color: white !important;
+    background-color: var(--medium-grey) !important;
+}
+.smsclayerloading {
+	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
+    height: 52px !important;
+    width: 52px !important;
+}
+.tasksAndMaterials__label:hover {
+	text-decoration: none !important;
+}
+.color_snow_white {
+	background-color: var(--light-dark-grey) !important;
+}
+.gridBlockContent {
+	background-color: var(--medium-grey) !important;
+}
+.agendaGridBlockContentLeft {
+	color: white !important;
+}
+.hasDatepicker:hover {
+	color: var(--blue) !important;
+}
 .navTitle {
-	color: #67db4d !important;
+	color: white !important;
+    font-weight: bold !important;
 }
 .border.centerxy {
 	background-color: #2f3136 !important;
@@ -880,41 +1136,44 @@ a.clicked {
 body {
 	background-color: #2f3136;
 }
+
 /*Fotoalbum*/
 .category a {
 	color: white;
+}
+.nav a {
+	color: white !important;
+}
+.nav a:hover {
+	color: #7289da !important;
+    text-decoration: none !important;
 }
 .category a:hover {
 	color: #7289da;
     text-decoration: none;
 }
 .nav {
-	background: #5c80ff;
-    border: #5c80ff;
+	background: #202225 !important;
+    border: #202225 !important;
 }
 .album_title {
 	background: #5c80ff !important;
     border: #5c80ff !important;
 }
 
-/*Mijn leerlingfiche*/
-.smscBlockContainer_top {
-	background-color: #2f3136;
+/*studentcard*/
+.smscBlockContainer_top, .smscBlockContainer_left, .smscBlockContainer_right {
+	border-color: white !important;
+    background-color: #2f3136;
     box-shadow: none;
 }
-.smscBlockContainer_left {
-	background-color: #2f3136;
-    box-shadow: none;
+.studentcard_block.loading {
+	background-image: none !important;
 }
-.smscBlockContainer_right {
-	background-color: #2f3136;
-    box-shadow: none;
+.profile_header_pupilinfo_status {
+	color: grey !important;
 }
-.titleLeft {
-	background-color: #2f3136 !important;
-    color: white !important;
-}
-.titleRight {
+.titleLeft, .titleRight {
 	background-color: #2f3136 !important;
     color: white !important;
     border: none !important;
@@ -928,17 +1187,27 @@ body {
 .lvsitem_title:hover {
     color: #7289da !important;
 }
-/*Vakken*/
+
+/*courses*/
+.smsc_cm_body_row_block_desc {
+	color: grey !important;
+}
 .smscleftnavcontainer {
-	background-color: #2f3136 !important;
-    border-color: #2f3136 !important;
+	background-color: var(--medium-grey) !important;
+    border-color: white !important;
+    box-shadow: none !important;
+}
+.smsc_cm_no_items#nownews {
+	background-image: url('https://svgshare.com/i/RdB.svg') !important;
+    background-size: 64px !important;
 }
 .smsc-column-nav__button {
 	color: white !important;
 }
 .smsc-column-nav__button:hover {
-	background-color: #202225;
-    border: none;
+	background-color: #202225 !important;
+    border: none !important;
+    color: white !important;
 }
 .smsc_cm_link {
 	color: white
@@ -962,13 +1231,185 @@ body {
 	color: #7289da;
 }
 .smscFrameTitleContainer {
-	background-color: #2f3136;
+	background-color: #2f3136 !important;
 }
 .icon-label--16 {
 	color: #7289da !important;
 }
+
 /*Handleiding*/
+.plugin_note {
+	background-color: var(--green) !important;
+}
 #manual_searchbox {
-	background-color: #2f3136;
+	background-color: #2f3136 !important;
+}
+.manual_widgettitle {
+	background: #202225 !important;
+    color: white !important;
+}
+.manual_widgettitleinner {
+	color: white !important;
+}
+.gridview__container {
+	background-color: #202225 !important;
+}
+.manual_widget_href_selectbox {
+	background-color: #202225 !important;
+}
+.manual_widgetcontent {
+	background-color: #202225 !important;
+}
+.kenniscontent h1, h2, h3, h4, h5, h6, span {
+	color: white !important;
+}
+.smscselect_dropdown {
+	background-color: #202225 !important;
+}
+.smscselect_dropdown_item.selected::before {
+	background-image: url("https://sjs.smartschool.be/smsc/img/check_tiny_white/check_tiny_white_8x8.png") !important;
+}
+.li {
+	color: white !important;
+}
+.searchTitle {
+	color: white !important;
+}
+.searchSubTitle {
+	color: white !important;
+}
+.searchSubTitle span {
+	background: none !important;
+}
+
+/*documents*/
+.mydoc__trash-warning-container__label {
+	color: #f04747 !important;
+}
+.smsc-dropzone--ellipsis {
+	font-weight: bold !important;
+}
+.smsc-dropzone--ellipsis:hover {
+	color: #7289da !important;
+}
+
+/*Profile*/
+.readonly label:hover, .readonly, .disabled {
+	cursor: not-allowed !important;
+    color: white !important;
+}
+.center {
+	background-color: var(--light-grey) !important;
+}
+.warning_row {
+	background-color: var(--light-dark-grey) !important;
+    color: white !important;
+    border-color: white !important;
+}
+.ssLink.smscButton:hover {
+	color: white !important;
+}
+.textfield {
+	background-color: #2f3136 !important;
+    border-color: white !important;
+}
+.notifyScreenTitle {
+	color: white;
+}
+.notifyScreenEventOptionLine.cf:hover {
+	background-color: #2f3136 !important;
+}
+.oauth_item_row:hover {
+	background-color: #2f3136 !important;
+}
+
+/*news*/
+.newsGroupTitle {
+	background-image: url('https://svgshare.com/i/RbG.svg') !important;/*red*/
+}
+.newsGroupTitleRow {
+	background-color: var(--medium-grey) !important;
+}
+.groupContainer {
+	background-color: var(--medium-grey) !important;
+}
+.newsTitle {
+	background-color: var(--medium-grey) !important;
+}
+.groupTree {
+	background-color: var(--medium-grey) !important;
+}
+.msgInfoTitle {
+	color: white !important;
+}
+.msgInfoAuthor {
+	color: grey !important;
+}
+.msgInfoSpacer {
+	background-image: none !important;
+    border-bottom: 2px solid #202225 !important;
+}
+.msgInfoMsg p a img{
+	display: none !important;
+}
+.next .icon {
+	background-image: url('https://svgshare.com/i/Rbt.svg') !important;
+    background-size: 48px !important;
+}
+.prev .icon {
+	background-image: url('https://svgshare.com/i/RbK.svg') !important;
+    background-size: 48px !important;
+}
+.toolbar, .toolbar-buttons div, .resize-handle {
+	border: none !important;
+}
+
+/*notifications*/
+.notification__title:hover {
+	color: white !important;
+}
+.notification__info:hover {
+	color: white !important;
+}
+
+/*calender*/
+.toolbar-top, .toolbar-bottom, .calendarDivActive {
+	display: none !important; 
+}
+.propertyButton {
+	background-color: var(--medium-grey) !important;
+    background-image: none !important;
+}
+.propertyButton_hover {
+	background-image: none !important;
+    background-color: var(--darkest-grey) !important;
+}
+.propertyButtonImg_noPointer:hover {
+	background-color: var(--medium-grey) !important;
+}
+.ssLoadingLayerImage {
+	background-image: url('https://i.ibb.co/cwdKk1F/Rolling-1s-52px-transparent.gif') !important;
+}
+.dpHeader {
+	color: white !important;
+}
+.dayBlock, .bold {
+	color: grey !important;
+}
+.inputForm_main600x550 {
+	background-image: none !important;
+    background-color: var(--medium-grey) !important;
+}
+.contentContainer {
+    background-color: var(--medium-grey) !important;
+}
+.ccBackgr {
+	background-color: var(--medium-grey) !important;
+}
+
+/*oauth*/
+.splashscreen__dialog {
+	background-color: #2f3136 !important;
+    border-top: 1rem solid #2f3136 !important;
 }
 }

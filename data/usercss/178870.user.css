@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for AliExpress.com--- AliExpress`
-@version        20201110.21.31
+@version        20201119.15.33
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1038,8 +1038,11 @@ a[href^="//"][target=_blank] [data-exp-s]{
     background-color: #333 !important;
 }
 a[href^="https"][target=_blank] span,
-a[href^="//"][target=_blank] span{
+a[href^="//"][target=_blank] span {
     color: #fff !important;
+}
+#tab-container-id div div div div span.text[numberoflines='1'] {
+    background-color: #555 !important;
 }
 a[href^="https"][target=_blank] span[numberoflines='1'] + span,
 a[href^="//"][target=_blank] span[numberoflines='1'] + span {
@@ -1103,12 +1106,6 @@ li[class^="vertical center flex-auto"] {
 }
 #tab-container-id > div, #tab-container-id > div div {
     background-color: #444 !important;
-}
-#tab-container-id div div span {
-    color: #fff !important;
-}
-[target=_blank] div div div span.text {
-    background-color: rgb(255, 71, 71) !important;
 }
 .base-list .detail-title {
 	color: #eee;
@@ -1392,6 +1389,12 @@ a[clk_trigger=''] span {
 }
 .count-down a.hot-zone {
     background-color: transparent !important
+}
+.next-radio-label {
+    color: #ddd;
+}
+.coupon-routine .voucher .voucher-container {
+    background-color: #444;
 }
 
     .discount-des-hd dt,

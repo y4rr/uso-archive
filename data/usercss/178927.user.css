@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         PersonalPi
 @description    `A dark theme for Reddit that was created with a RES (Reddit Enhancement Suite) Stylesheet that was modified. Looks and feels exactly like RES.`
-@version        202059.0.29
+@version        20201119.17.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,17 +13,34 @@
 
 @-moz-document domain("reddit.com")
 {
+	html,
+	body,
+	body .content,
+	.modal-body,
+	.side,
+	.icon-menu a,
+	.side .leavemoderator,
+	.side .leavecontributor-button,
+	.side .titlebox,
+	.side .spacer .titlebox .redditname,
+	.side .titlebox .flairtoggle,
+	.side .usertext-body .md ol,
+	.side .usertext-body .md ol ol,
+	.side .usertext-body .md ol ol li,
+	.modactionlisting table *,
+	.side .recommend-box .rec-item,
+	.crosspost-preview,
+	.crosspost-thing-preview {
+		background-color: #262626 !important;
+		border-color: #777 !important;
+	}
+	
 	/* Created by /u/PersonalPi @ Reddit */
-	/* Version 1.11 */
+	/* Version 1.12 */
 	
-	/* CONFIGURATION **********************************************************************************
-		 *
-		 *   Change these to your liking
-		 *
-		/**************************************************************************************************/
-	
-	/* Chat is disabled by default.
-		 * Comment out to enable chat. */
+	/************** CONFIGURATION **************/
+	/* Chat is disabled by default. */
+	/* (UNTESTED) Comment out to enable chat (UNTESTED). */
 	#chat,
 	a[target="chat-app"],
 	img[src="//www.redditstatic.com/start_chat.png"],
@@ -31,33 +48,33 @@
 		display: none !important;
 	}
 	
-	/* This disables the tooltip when you hover your mouse over an author for a post.
-		 * Comment out to enable the tooltip. */
+	/* This disables the tooltip when you hover your mouse over an author for a post. */
+	/* Comment out to enable the tooltip. */
 	.author-tooltip {
 		display: none !important;
 	}
 	
-	/* This disables the large pane that shows on the top of the search page. 
-		 * Uncomment to show the pane. */
+	/* This disables the large pane that shows on the top of the search page. */
+	/* Uncomment to show the pane. */
 	.searchpane {
 		/* display: none !important; */
 	}
 	
-	/* This will capitalize the words in titles so that everything looks more uniform.
-		 * Comment out to disable. */
+	/* This will capitalize the words in titles so that everything looks more uniform. */
+	/* Comment out to disable. */
 	.entry a.title {
 		text-transform: capitalize !important;
 	}
 	
-	/* This will remove the domain part next to the title, such as (i.imgur.com)
-		 * Uncomment to hide domains */
+	/* This will remove the domain part next to the title, such as (i.imgur.com). */
+	/* Uncomment to hide domains. */
 	.domain {
 		/* display: none !important; */
 	}
 	
-	/* This will display a red line (or any color you want using the "background:" property)
-		 * between parent comments.
-		 * Comment out to disable */
+	/* This will display a red line (or any color you want using the "background:" property) */
+	/* between parent comments. */
+	/* Comment out to disable the line */
 	.nestedlisting>.comment+.clearleft {
 		height: 2px !important;
 		margin-bottom: 5px !important;
@@ -71,11 +88,25 @@
 		border-color: #555 !important;
 	}
 	
-	/* CONFIGURATION **********************************************************************************
-		 *
-		 *   End of Configuration Section
-		 *
-		/**************************************************************************************************/
+	/* This controls the header section that displays your username,
+	   karma, inbox, preferences, and logout. By default it is on top.
+	   To move it to the bottom, comment out this section */
+	#header-bottom-right {
+		font: normal x-small verdana, arial, helvetica, sans-serif !important;
+		color: rgb(204, 204, 204) !important;
+		margin: 0 !important;
+		position: absolute !important;
+		right: 0px !important;
+		padding: 4px !important;
+		line-height: 12px !important;
+		background-color: rgb(51, 51, 51) !important;
+		top: 19px !important;
+		bottom: auto !important;
+		border-radius: 0px 0px 0px 3px !important;
+		display: block !important;
+	}
+	
+	/************** END CONFIGURATION **************/
 	
 	/* Remove annoying stuff */
 	div.giftgold,
@@ -97,28 +128,6 @@
 	.arrow.up, .arrow.upmod, .arrow.down, .arrow.downmod {
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAMAAADC4sagAAABFFBMVEUjJCQiIiIjIyMkIiIkJCQlJSUlJicmJiYnIyEnJycnKCsoKCgpLC8rIyErKyssMDUvLy8wJCAwMDAxMTEyMjI0NDQ2NjY3JR83Nzc5OTk7Ozs8PDw9PT0+Pj4/Pz9AQEBBQUFCQkJDQ0NGRkZISEhKSkpKV2tLS0tMTExOTk5PT09QYHdSUlJTU1NVVVVWVlZXV1dXaINYWFhaWlpabYlbW1tecpBgYGBhYWFid5dkZGRle5xlfJ1pgKRrhKhshKlshapuLhZwirFyjbV0j7h4lL97mcZ9MBR/nsyCo9OOMxGcNQ+eNg+kNw6sOA2vOAy0OQy7Ogq/OwrBOwrDPAnLPQjPPQfTPgfbPwXjQQTrQgPzQwLKxGgxAAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlJREFUOMu9lF1TwjAQRTcMvmeQOi1QPmxFBQTxW1ERUUFEUVRU/P//w9yGmBTFyZPnpXNmbju76W6IJM8Uw49rLa6Tz4mpq/mCqY3Gvqnj6XQ61lp0mGd8favCwx2tow8wUlpwGWOZrNJKjXO+UVc6fJcMZzV7IswSOU/qej0l0rwyq33wphhAM1kWkcy70GB7mUfUNqG9V02PyPMTMs2Wig5RaTctwzxVXyPqvJh0VkJBIKJ4huncCRAvHOEZyGKegO4a6UDrIdLGCT4C6/QDsE7fA+v0HdAadWqk0SH9D3sgXkm4uJIDYKTFnwwXd3kMrNOnwDp9BmzS5QuTshN1iDRwfkxV9VJTJXLzSWYM+NzEEjWvFE2oGvCE7/2yDeL8riWzM8xmorRazLlNI2rdgNb3ZYLF1Es/t8VE7X6/39Yqlt4tLLwhiLq3XVNLfumP24fo3Opm+wLGCVa252Y8tQAAAABJRU5ErkJggg==) !important;
 		background-repeat: no-repeat !important;
-	}
-	
-	html,
-	body,
-	body .content,
-	.modal-body,
-	.side,
-	.icon-menu a,
-	.side .leavemoderator,
-	.side .leavecontributor-button,
-	.side .titlebox,
-	.side .spacer .titlebox .redditname,
-	.side .titlebox .flairtoggle,
-	.side .usertext-body .md ol,
-	.side .usertext-body .md ol ol,
-	.side .usertext-body .md ol ol li,
-	.modactionlisting table *,
-	.side .recommend-box .rec-item,
-	.crosspost-preview,
-	.crosspost-thing-preview {
-		background-color: #262626 !important;
-		border-color: #777 !important;
 	}
 	
 	.embedded-page .content>.sitetable,
@@ -2039,5 +2048,36 @@
 	.sr-list a {
 		color: #000000 !important;
 	}
+	
 	/******** End Update 1.11 ********/
+	
+	/* Update 1.12 */
+	
+	/* Change subreddit link color */
+	span[class="hover pagename redditname"] a {
+		color: #000000 !important;
+	}
+	
+	/* Fix search box */
+	#search>input[type=submit] {
+		cursor: pointer !important;
+		padding: 2px 6px 3px !important;
+		color: rgb(255, 255, 255) !important;
+		background-color: transparent !important;
+		background-repeat: no-repeat !important;
+		height: 13px !important;
+		width: 13px !important;
+		-webkit-box-sizing: border-box !important;
+		border: none !important;
+		margin: 0 !important;
+		margin-left: -22px !important;
+		vertical-align: middle !important;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAb1BMVEUAAACJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYm4Po3NAAAAJXRSTlMAAQIEDBAREhMUJS0uQ09QV19hZG1udHmbnJ64xMXGx8jOz9DUayO31AAAANNJREFUeAGF0fFugjAUhfGDg3W1blMEC2IV8Lz/My4nEnK7jOz3380nN7XFy0fdJzL1tUeujBMXUyxh7Acaw96UBzPj2sqBmtuDc6Edqe+0U6Km/v01VJ2muJxtUnnDYqc2e0itbRVWlXbWkJ5kC6MleYUkkgcYgWSCkKSD4Uiy+CdpYfi98Pb3MRqS3fbhzxA/61e77C8/vbmorrIXdcmvtwnOhWaknNZH0Zw7mqfcbGWcuXheTqaJr6+JvHVnDxzzJkUBUZNvZGy7Y7PZZH097p8/V4YmEaKXKKIAAAAASUVORK5CYII=') !important;
+		background-size: 13px 13px !important;
+		background-position: 0 0 !important;
+	}
+	
+	/* Moved header bar to top, added configuration option. */
+	/* Added bug fix for style not working on Cascadea 2.0.1/Safari 14.0.1 (16610.2.11.51.8) */
+	/******** End Update 1.12 ********/
 }
