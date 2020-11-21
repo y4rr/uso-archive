@@ -1,14 +1,15 @@
 /* ==UserStyle==
-@name           keybØardking
+@name           keybØardking - Nitro Type green theme
 @namespace      USO Archive
 @author         Tyler Tang
 @description    `This is a style for Nitro Type. I hope you like it!`
-@version        20201120.23.46
+@version        20201121.10.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-/* i really want this to be global */
-body
+@-moz-document domain("www.nitrotype.com")
+{
+  body
   {
     background-color: #2d2e2e;
     overflow-y: scroll;
@@ -119,8 +120,4 @@ body
   {
     background: url("https://wallpaperaccess.com/full/1188230.png") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
   }
-
-  .theme--pDefault.is-guest .profile-bgHead
-  {
-    background: #fff0;
-  }
+}

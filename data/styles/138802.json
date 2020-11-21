@@ -3,11 +3,11 @@
   "info": {
     "name": "no baners.kinogo",
     "description": "Blocking all ads",
-    "additionalInfo": "Removed advertising:\r\n-Central\r\n-Top\r\n-Lower\r\n<a href=\"https://userstyles.org/styles/139247/addition-to-no-baners-kinogo\">Additional blocking</a>\r\nВАЖНАЯ ИНФОРМАЦИЯ:\r\n-<a href=\"https://vk.com/wall-198177088_3\">Опрос VK, из-за зависания сайта</a>\r\nUpdate:\r\n-Background",
+    "additionalInfo": "Removed advertising:\r\n-Central\r\n-Top\r\n-Lower\r\n<a href=\"https://userstyles.org/styles/139247/addition-to-no-baners-kinogo\">Additional blocking</a>\r\nВАЖНАЯ ИНФОРМАЦИЯ:\r\n-<a href=\"https://vk.com/wall-198177088_3\">Опрос VK, из-за зависания сайта</a>\r\nUpdate:\r\n-Fixed",
     "format": "uso",
     "category": "kinogo",
     "createdAt": "2017-02-11T23:30:31.000Z",
-    "updatedAt": "2020-10-14T10:36:02.000Z",
+    "updatedAt": "2020-11-21T00:50:12.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 268970,
@@ -34,7 +34,7 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"kinogo.cc\"){body {background: url(/*[[foto_fon]]*/) 50% 0 no-repeat; background-size: 100%; background-attachment: fixed;}[id*=brnd]{opacity:0 !important;visibility:hidden !important;display: none;}[id*=b769]{opacity:0 !important;visibility:hidden !important;display: none;}[class*=icons3]{opacity:0 !important;visibility:hidden !important;display:none;}[class*=bn]{opacity:0 !important;visibility:hidden !important;display:none;}}",
+    "css": "@-moz-document domain(\"kinogo.cc\"){/*body {background: url(https://kinogo.by/templates/Kinogo/images/IronMan3_.jpg) 50% 0 no-repeat; background-size: 100%; background-attachment: fixed;}#tinymce{background:#fff}/*[id*=brnd],[id*=b769],[class*=icons3],[class*=bn],*/[href*=\"id.co\"],[src*=\"o.pn\"]{display:none!important;}}",
     "settings": [
       {
         "key": "foto_fon",

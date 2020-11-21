@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Павел Зегельман
 @description    `Complete re-design of new.vk.com styleПолный редизайн нового стиля вконтача - new.vk.com.Проработаны динамические размеры по ширине. Почищены лишние пробелы. Убраны круглые рамки у фотографий аватарок.`
-@version        20201011.4.30
+@version        20201121.0.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -699,6 +699,10 @@ input.ui_search_field, input.ui_search_field~.placeholder .ph_input
     right: 80px;
 }
 
+[dir] .flat_button.secondary.button_light,
+[dir] .box_controls .flat_button.secondary{
+    right:1px;
+}
 /*
 .audio_pl_edit_box~.box_body>.box_controls_wrap .box_controls .flat_button
 	{position:fixed!important;
@@ -2089,7 +2093,7 @@ div[id*='_important'] .im-mess .im-mess--text
 .mail_box_cont
 	{padding:1px}
 .mail_box_header_link
-	{padding:4px 0}
+	{padding:4px 0!important}
 #mail_box_controls
 	{padding-top:1px}
 .mail_box_text_wrap
