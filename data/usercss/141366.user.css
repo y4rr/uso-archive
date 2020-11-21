@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Jiří Pavelka
 @description    `Minor Trello visual changes to increase its usability.`
-@version        20171212.6.1
+@version        20201120.17.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("trello.com") {
-a {
-    color: #003858;
+.window-main-col a:not(.button) {
+    color: #2c2cbd;
 }
 .checklist-item-state-complete .checklist-item-details-text {
     color: inherit;
@@ -23,10 +23,14 @@ a {
     border: medium solid transparent;
     padding: 2px;
 }
-.pika-single .is-today.is-selected .pika-button {
+.pika-single .is-today .is-selected .pika-button {
     border-color: #28cd00;
 }
 input:not([type=file]), textarea {
     background-color: white;
+}
+.badge.is-due-complete,
+.badge.is-complete {
+    background-color: #aaa;
 }
 }

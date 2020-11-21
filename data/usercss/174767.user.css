@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have a YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Optional Video Dim (-25% brightness);https://userstyles.org/styles/175380/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        2020116.17.56
+@version        20201120.23.36
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,15 +31,15 @@
 /*                                                              */
 /*         1      Text                                          */
 /*       188      Backgrounds                                   */
-/*       383      Channel (Tabs are here)                       */
-/*       497      Popups                                        */
-/*       552      Menus (Gradients here)                        */
-/*       759      Search                                        */
-/*       916      Buttons                                       */
-/*      1278      Video Player                                  */
-/*      1529      Chat                                          */
-/*      1694      Misc                                          */
-/*      2067      Ads                                           */
+/*       391      Channel (Tabs are here)                       */
+/*       505      Popups                                        */
+/*       560      Menus (Gradients here)                        */
+/*       767      Search                                        */
+/*       924      Buttons                                       */
+/*      1286      Video Player                                  */
+/*      1537      Chat                                          */
+/*      1702      Misc                                          */
+/*      2075      Ads                                           */
 /*                                                              */
 /*                                                              */
 /*      Code #3 - Custom Cursors                                */
@@ -105,7 +105,6 @@ a,
 #main.style-scope.ytd-mealbar-promo-renderer,
 #main.ytd-mealbar-promo-renderer,
 #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer,
-#overlay-button > .style-scope,
 #show-less.ytd-donation-shelf-renderer, #show-more.ytd-donation-shelf-renderer,
 #show-less > yt-formatted-string, #show-more > yt-formatted-string,
 #simplebox-placeholder.ytd-comment-simplebox-renderer,
@@ -159,15 +158,6 @@ ytd-single-option-survey-renderer,
 }
 
     /*Link Transitions*/
-
-#overlay-button:hover > .style-scope
-{
-    
-    color: #fff !important;
-    filter: brightness(1);
-    transition: .4s !important;
-}
-
 #article-container.ytg-box div div#summary ul.square li a,
 #guide-links-primary > a:hover,
 #guide-links-secondary > a:hover,
@@ -407,6 +397,7 @@ ytd-simple-menu-header-renderer,
 #info-bar.ytd-miniplayer,
 #infoDiv0,
 #merch-shelf.style-scope .ytd-watch-flexy,
+#chips-wrapper,#scroll-container,ytd-feed-filter-chip-bar-renderer,#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer,
 a.ytd-search-refinement-card-renderer,
 ytd-info-panel-container-renderer,.ytd-info-panel-content-renderer,
 ytd-clarification-renderer,
@@ -429,7 +420,14 @@ ytd-watch-card-rich-header-renderer,
 {
     background-color: #111 !important;
 }
-
+#right-arrow.ytd-feed-filter-chip-bar-renderer::before
+{
+    background: linear-gradient(to left, #111 20%, rgba(255, 255, 255, 0) 80%) !important;
+}
+#left-arrow.ytd-feed-filter-chip-bar-renderer::after
+{
+    background: linear-gradient(to right, #111 20%, rgba(255, 255, 255, 0) 80%) !important;
+}
 
 ytd-guide-signin-promo-renderer
 {
@@ -475,14 +473,15 @@ Temporary disabled 20200808
 */
 
     /*Header Sunscreen*/
+#chips-wrapper,
 ytd-c4-tabbed-header-renderer,
-ytd-default-promo-panel-renderer,
-ytd-feed-filter-chip-bar-renderer
+ytd-default-promo-panel-renderer
 {
     opacity: .75 !important;
     transition: 1.5s !important;
     transition-delay: 1s !important;
 }
+#chips-wrapper:hover,
 ytd-c4-tabbed-header-renderer:hover,
 ytd-default-promo-panel-renderer:hover,
 ytd-feed-filter-chip-bar-renderer:hover,
@@ -560,7 +559,6 @@ ytd-thumbnail-overlay-side-panel-renderer[bottom-panel]:hover
 
 /*On-click*/
 ytd-default-promo-panel-renderer:active,
-ytd-feed-filter-chip-bar-renderer:active,
 ytd-searchbox.ytd-masthead:focus:active,
 .ytd-interactive-tabbed-header-renderer:active,
 #tabsContent.paper-tabs > :not(#selectionBar):active,
@@ -999,7 +997,7 @@ li.sbsb_c.gsfs:hover
 
 /*ROUND BUTTONS*/
 
-    /*Round - Transparent*/
+    /*Transparent*/
 yt-icon-button,
 ytd-toggle-button-renderer #button.ytd-toggle-button-renderer
 {
@@ -1008,7 +1006,6 @@ ytd-toggle-button-renderer #button.ytd-toggle-button-renderer
     filter: brightness(.75);
     transition: .4s !important;
 }
-
 
     /*Icons*/
 yt-icon,
@@ -1160,9 +1157,7 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]:hover, yt-chip
     transition: .2s !important;
 }
 
-
     /*REGULAR BUTTONS - Transparent -> Grey*/
-
 #yt-masthead-creation-button,
 button,
 paper-button,
@@ -1179,7 +1174,6 @@ ytd-button-renderer,
 #button.ytd-toggle-button-renderer,
 #button.style-scope.yt-button-renderer.style-overlay.size-default,
 #buttons.style-scope.ytd-grid-video-renderer ytd-toggle-button-renderer.style-scope.ytd-grid-video-renderer.style-compact-gray a.yt-simple-endpoint.style-scope.ytd-toggle-button-renderer,
-#overlay-button,
 #primary-links.ytd-c4-tabbed-header-renderer a.yt-simple-endpoint.ytd-c4-tabbed-header-renderer,
 a.ytp-sb-subscribe
 {
@@ -1269,7 +1263,6 @@ ytd-rich-metadata-renderer.style-scope:hover
     transition: .2s !important;
     border-radius: 0px !important;
 }
-#overlay-button:active,
 ytd-rich-metadata-renderer.style-scope:active
 {
     filter: brightness(.6) !important;
@@ -1379,7 +1372,7 @@ ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:active
 .ytp-cued-thumbnail-overlay .ytp-large-play-button-bg,
 .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg
 {
-    filter: brightness(1);
+    /*filter: brightness(1);*/
     transition: .4s;
 }
 .ytp-cued-thumbnail-overlay-image:active,
@@ -2406,8 +2399,7 @@ ul,
 
 
 /* Hover */
-[class*="button"]:hover,
-[class*="Button"]:hover,
+
 [id*="btn"]:hover,
 [id*="btn"]:hover *,
 [id*="btn"] *:hover,
@@ -2486,6 +2478,7 @@ paper-button.yt-next-continuation:hover,
 paper-item:hover,
 paper-tab:hover,
 yt-chip-cloud-chip-renderer,
+yt-formatted-string,
 yt-icon-button:hover,
 ytd-single-option-survey-option-renderer:hover,
 ytd-thumbnail-overlay-toggle-button-renderer,
@@ -2547,8 +2540,6 @@ ytp-bottom:hover,
 
 /* Click */
 
-[class*="button"]:active,
-[class*="Button"]:active,
 [class*="close"]:active,
 [class*="close"]:active *,
 [class*="close"] *:active,
@@ -2632,6 +2623,7 @@ paper-button.yt-next-continuation:active,
 paper-item:active,
 paper-tab:active,
 yt-chip-cloud-chip-renderer:active,
+yt-formatted-string:active,
 yt-icon-button:active,
 ytd-single-option-survey-option-renderer:active,
 ytd-toggle-theme-compact-link-renderer:active,

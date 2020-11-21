@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tukusejssirs
 @description    `Dark theme for workona.com`
-@version        20201031.18.25
+@version        20201120.23.0
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -25,12 +25,14 @@
 }
 
 /* Main foreground colour */
-body, ._1gJ_NYaKZe2lAgqgtY3yDn {
+body, ._1gJ_NYaKZe2lAgqgtY3yDn, .KPACyk1OtTz9LvyR9_T6P {
 	color: #cccccc;
 }
 
 /* Sidebar background */
-._1MqP5l6V_u1Kza6KH4OeI7, .De30U_-srldDdjYCLcN8_ {
+/* Preferences sidebar background */
+/* Add resource sidbar */
+._1MqP5l6V_u1Kza6KH4OeI7, .De30U_-srldDdjYCLcN8_, ._1S2kJtgA8OLNPTN4cbi21R, .tIEHl6uvpqYX65PnAC-DJ {
 	background: #181818;
 }
 
@@ -39,13 +41,8 @@ body, ._1gJ_NYaKZe2lAgqgtY3yDn {
 	background: rgba(0,0,0,.50);
 }
 
-/* Preferences sidebar background */
-._1S2kJtgA8OLNPTN4cbi21R {
-	background: #181818;
-}
-
 /* Preferences main space background */
-._3z-5ASxElLkMufBKh557vK {
+._3z-5ASxElLkMufBKh557vK, ._37cWZUU1YOl71VNsGGW6Tr {
 	background: #1e1e1e;
 }
 
@@ -130,6 +127,26 @@ body, ._1gJ_NYaKZe2lAgqgtY3yDn {
 
 /* Darken the tab images on unnamed workspaces and folder images on workspaces without open tabs */
 ._2XKZpLLi4sxYN4SUe88Ntg, ._3-zAr9MbJSVOGq8zKmW0MM {
-	filter: invert(95%);
+	filter: grayscale(100%) invert(95%) brightness(0.2);
+}
+
+/* Remove opacity of some text foreground colour (e.g. `I’m not sure yet` in `What do you think of Workona?` pop-up) */
+._2rlpEV4yAlaHiNp2fSz3IP {
+	opacity: 1;
+}
+
+/* Material icons foreground colour */
+.material-icons {
+	color: #3370ff !important;
+}
+
+/* Add resource search background colour */
+._3h6NibiE3OxNs7m2ibGCVR, ._3DTu0bRWFH2zoCMBSr3OY6 {
+	background: #252525;
+}
+
+/* Remove new tab addon recommendation */
+.BsMaM9O7k_AslX_3d68A0 {
+	visibility: hidden
 }
 }

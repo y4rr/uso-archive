@@ -1,19 +1,43 @@
 /* ==UserStyle==
-@name           RocketLanguages.com Dark Nightmode
+@name           App.Rocketlanguages.com Dark Nightmode
 @namespace      USO Archive
 @author         slyfox88
-@description    `A Dark style for members.rocketlanguages.com`
-@version        2020911.5.26
+@description    `A Dark style for rocketlanguages.com`
+@version        20201121.0.11
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain(rocketlanguages.com)
 {
-html, body, body.radical, .container, .main-background, #footer, .panel-body, .panel-header div {
+html, body, body.radical, .container, .main-background, #footer, .panel-body, .panel-header div,
+footer[class^='Footer_footer'] {
     background-color: #222 !important;
+    color: #ddd !important;
 }
-.login-heading, .help-links {
+p,
+div[class^='PageUI_heading'] h1,
+.login-heading, .help-links,
+.panel .panel-heading, .card,
+.panel-body, .lesson-type-group div,
+.ng-scope, .testing .panel.rateable-test .panel-heading h2,
+.testing .panel.rateable-test .panel-heading h2,
+div[class^='Phrasebox_phrase'],
+h3[class^='TopBar_navHeaderAlt']
+{
     color: #ddd;
+}
+a[class*='CourseButton_container'],
+div[class^='TopBar_container'],
+div[class^='LessonItem_container'],
+div[class^='LessonComponentHighlightCard']
+{
+    background-color: #333 !important;
+}
+div[class^='LeftHandSideNav_sticky'] {
+    background-color: #122b40 !important;
+}
+h3[class^='TopBar_navHeader_'] {
+    color: #2c90b5 !important;
 }
 .help-links, .checkbox, .page-description, .sidebar .progress-value {
     color: #bbb;
@@ -27,17 +51,8 @@ html, body, body.radical, .container, .main-background, #footer, .panel-body, .p
 .text-center h1, .site-content h1 {
     color: #2189af;
 }
-.panel .panel-heading, .card  {
-	color: #ddd;
-}
-.panel-body, .lesson-type-group div {
-    color: #ddd;
-}
 .panel-body {
 	background-color: #333 !important;
-}
-.ng-scope {
-    color: #ddd;
 }
 .dashboard-content > div {
     background-color: #444;
@@ -51,11 +66,9 @@ html, body, body.radical, .container, .main-background, #footer, .panel-body, .p
 [videogular].videogular-container, videogular.videogular-container, .phrasebox-content {
 	background-color: #444 !important;
 }
-.dashboard .module .panel-body .lesson-description {
+.dashboard .module .panel-body .lesson-description,
+h3[class^='LessonComponent_lead__'] {
 	color: #bbb;
-}
-.testing .panel.rateable-test .panel-heading h2 {
-	color: #ddd;
 }
 .site-header div {
     	background-color: transparent !important;
@@ -157,8 +170,9 @@ html, body, body.radical, .container, .main-background, #footer, .panel-body, .p
 .lesson-content .component.markdown table tr:nth-of-type(2n) {
     background-color: #3a3a3a;
 }
-.lesson-content .component.audio.lesson vg-controls.iac>.controls-container .subtitle-container p {
-    color: #2d9cc5;
+.lesson-content .component.audio.lesson vg-controls.iac>.controls-container .subtitle-container p,
+div[class^='AudioPlayerUI_transcript__'] {
+    color: #2189af !important;
 }
 .course-lesson-menus .product-list .panel.active .panel-heading, .course-lesson-menus .product-list .panel .panel-heading {
     background-color: #2189af;
@@ -166,15 +180,24 @@ html, body, body.radical, .container, .main-background, #footer, .panel-body, .p
 [videogular] vg-controls.audio vg-scrub-bar-current-time, [videogular] vg-controls.iac vg-scrub-bar-current-time, videogular vg-controls.audio vg-scrub-bar-current-time, videogular vg-controls.iac vg-scrub-bar-current-time {
     background-color: #2781a1!important
 }
+div[class^='SeekBar_inner__'] {
+    background-color: #6dbcd9 !important;
+}
 .lesson-content .component.audio.lesson vg-controls.iac>.controls-container vg-time-display,
-[videogular] vg-controls.audio vg-time-display, [videogular] vg-controls.iac vg-time-display, videogular vg-controls.audio vg-time-display, videogular vg-controls.iac vg-time-display {
-    color: #fff !important
+[videogular] vg-controls.audio vg-time-display, [videogular] vg-controls.iac vg-time-display, videogular vg-controls.audio vg-time-display, videogular vg-controls.iac vg-time-display,
+div[class^='SeekBar_container__'] {
+    background-color: #666 !important;
+    color: #ddd !important
 }
 .lesson-content .component.audio.lesson vg-controls.iac>.controls-container .play-skip .skip-button-container .btn,
-.rocket-record .iconButton.pause, .rocket-record .iconButton.play, rocket-record .iconButton.pause, rocket-record .iconButton.play, button[class^="btn btn-primary full-width ng-binding"], .rocket-record-level-selector .rr-levels .rr-level-button
+.rocket-record .iconButton.pause, .rocket-record .iconButton.play, rocket-record .iconButton.pause, rocket-record .iconButton.play, button[class^="btn btn-primary full-width ng-binding"],
+.rocket-record-level-selector .rr-levels .rr-level-button,
+button[class*='Button_secondary'],
+a[class*='Button_secondary']
 {
     background-color: #309cc3 !important;
 }
+
 .lesson-content .component.audio.lesson vg-controls.iac>.controls-container .download .btn {
     background-color: #2781a1 !important;
 }
@@ -184,9 +207,11 @@ html, body, body.radical, .container, .main-background, #footer, .panel-body, .p
     background-color: #206b86 !important;
 }
 .lesson-content .component.audio.lesson vg-controls.iac>.controls-container .play-skip .skip-button-container .btn.hover, .lesson-content .component.audio.lesson vg-controls.iac>.controls-container .play-skip .skip-button-container .btn:active, .lesson-content .component.audio.lesson vg-controls.iac>.controls-container .play-skip .skip-button-container .btn:hover,
-.rocket-record .iconButton.pause:hover, .rocket-record .iconButton.play:hover, rocket-record .iconButton.pause:hover, rocket-record .iconButton.play:hover,
+.rocket-record .iconButton.pause:hover, .rocket-record .iconButton.play:hover, rocket-record .iconButton.pause:hover,
+.rocket-record .iconButton.play:hover,
 button[class^="btn btn-primary full-width ng-binding"]:hover,
-.rocket-record-level-selector .rr-levels .rr-level-button.active, .rocket-record-level-selector .rr-levels .rr-level-button:hover:not(.active) {
+.rocket-record-level-selector .rr-levels .rr-level-button.active,
+.rocket-record-level-selector .rr-levels .rr-level-button:hover:not(.active) {
     background-color: #2781a1 !important;
 }
 .lesson-types-list .lesson-type:active .level-modules-container, .lesson-types-list .lesson-type:hover .level-modules-container {
@@ -198,7 +223,46 @@ h4,
 a {
     color: #ddd;
 }
-.lesson-content .component.audio .play, .btn.btn-danger, .lesson-content .component.audio .pause {
+.lesson-content .component.audio .play, .btn.btn-danger, .lesson-content .component.audio .pause,
+button[class*='Button_primary__'] {
     background-color: #cd403d!important;
+}
+div[class^='TestIcon_container__'][class^='TestIcon'] {
+    background-color: #444 !important;
+}
+a[class*='Button_blue__'] {
+    background-color: #2781a1 !important;
+    box-shadow: 0 2px #206b86 !important;
+}
+section[class^='AudioPopout_container__'] {
+    background-color: #333 !important;
+    border: 1px solid #122b40 !important;
+}
+div[class^='TestUI_container'],
+div[class^='TestUI_container']:focus {
+    border: 2px solid #206b86;
+    outline: none;
+}
+div[class*='LessonComponent_markdownComponent-tip__'] {
+    background-color: #206b86 !important;
+}
+div[class^='PageUI_tagNote__'] {
+    color: #ddd;
+    background-color: #444;
+}
+div[class^='PageUI_tagNote__'] [class*='PageUI_tagNoteTitle__'] strong {
+    color: #eee !important;
+}
+div[class*='LessonComponent_markdownComponent-culture__'] {
+    background-color: #3c643e !important;
+}
+div[class*='LessonComponent_markdownComponent-culture__'] h2 {
+    color: #afcfb1 !important;
+}
+div[class*='LessonComponent_markdownComponent-alt'] {
+    background-color: #65406d !important;
+}
+div[class*='LessonComponent_markdownComponent-alt'] h2 {
+    color: #bb8ec5 !important;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tritium Decay
 @description    `This theme tries to make the new Twitter design look less different from its previous design.The top bar is brought back and colors of things are made to match the older twitter. There is support for all default colour schemes.If you like it, please leave a positive rating.Contact me on  <a href="https://twitter.com/TritiumDecay">My Twitter</a> if you wish to suggest a change.Screenshots<a href="https://userstyles.org/style_screenshots/173651_additional_36525.jpeg?r=1591152038">Dark Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36637.jpeg?r=1592244973">Profile Backgrounds</a><a href="https://userstyles.org/style_screenshots/173651_additional_36528.jpeg?r=1591152038">Light Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36529.jpeg?r=1591152038">Lights Out Mode</a>-Basically all languages are supported`
-@version        2020728.22.13
+@version        20201121.0.28
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown profile "Expanded Profile Banners" {
@@ -168,13 +168,25 @@ profile2 "Default profile banners" <<<EOT  EOT;
 @advanced dropdown scrollbar "Chose Scrollbar" {
 	scrollbar1 "Default Scrollbar*" <<<EOT  EOT;
 scrollbar2 "Dark Scrollbar" <<<EOT html{
-  scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
+	scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
 } EOT;
 scrollbar3 "Light Scrollbar" <<<EOT html{
-  scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
+	scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
 } EOT;
 scrollbar4 "Lights Out Scrollbar" <<<EOT html{
-  scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
+	scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
 } EOT;
 
 }
@@ -401,6 +413,22 @@ html{
 [class="css-1dbjc4n r-z32n2g r-1or9b2r"] {height:1px !important;}
 
 
+[class="css-1dbjc4n r-1uaug3w r-1ila09b r-rull8r r-qklmqi r-1kfrmmb r-1efd50x r-5kkj8d r-1or9b2r"]{
+    height: 1px !important;
+	border-top-width: 0px!important;
+}
+
+[class="css-1dbjc4n r-1ysxnx4 r-1igl3o0 r-rull8r r-qklmqi r-2sztyj r-1efd50x r-5kkj8d r-1or9b2r"]{
+    height: 1px !important;
+	border-top-width: 0px!important;
+    border-bottom-width: 0px!important;
+}
+
+[class="css-1dbjc4n r-1ihkh82 r-j7yic r-rull8r r-qklmqi r-mxfbl1 r-1efd50x r-5kkj8d r-1or9b2r"]{
+    height: 1px !important;
+	border-top-width: 0px!important;
+    border-bottom-width: 0px!important;
+}
 
 
 /*lower the font size*/
@@ -531,7 +559,7 @@ div.r-u8s1d:first-child {
 }
 
 
-[data-testid="DMDrawer"] > [class="css-1dbjc4n r-h06w64 r-uc7nor"]{
+[data-testid="DMDrawer"] > [class="css-1dbjc4n r-h06w64 r-uc7nor r-cgjvx2"]{
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
 	box-shadow: var(--shadowcolour) 0px 0px 15px!important;
@@ -567,6 +595,8 @@ div.r-u8s1d:first-child {
     max-width: 600px !important;
     min-width: 400px !important;
 }
+
+
 
 @media only screen and (min-width: 1921px){
 
@@ -920,7 +950,14 @@ h1.r-1awozwy {
     transition: filter 2s, opacity 2s !important;
     filter: grayscale(80%);
 	opacity: 0.6;
-}  
+} 
+
+
+
+[class="css-1dbjc4n r-zg41ew"]{
+    margin-top: 0px!important;
+	margin-bottom: 0px!important;
+}
 
 [class*="r-n6v787 r-1xvli5t r-dnmrzs r-u8s1d r-1plcrui r-f2s9ia r-lrvibr r-lrsllp"]{
     display: none !important;
@@ -1010,31 +1047,27 @@ h1.r-1awozwy {
 }
 
 
-@media only screen and (max-height: 900px) {
+@media only screen and (min-height: 600px) and (max-height: 900px) {
 
 [data-testid=AppTabBar_Home_Link] {
     position: absolute !important;
     display: block !important;
-	top: 5px !important;
 }
 
 [href="/i/bookmarks"] {
 	position: absolute !important;
     display: block !important;
-	top: 5px !important;
 }
 
 [class*="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21"]+[href*="/lists"]  {
     position: absolute !important;
     display: block !important;
-	top: 5px !important;
 }
 
 
 [data-testid=AppTabBar_Notifications_Link] {
     position: absolute !important;
     display: block !important;
-	top: 5px !important;
 }
 
 [data-testid=AppTabBar_DirectMessage_Link] {
@@ -1052,27 +1085,23 @@ h1.r-1awozwy {
 [data-testid=SideNav_AccountSwitcher_Button] {
     position: absolute !important;
     display: block	!important;
-	top: -41px !important;
     height: 48px !important;
 }
     
 [class="css-1dbjc4n r-aqfbo4 r-1xcajam"]{
     display: block	!important;
     left: calc(100vw - 320px) !important;
-    top: 48px !important;
 }
 
 
 [data-testid="AppTabBar_More_Menu"]  {
     position: absolute !important;
-	top: 5px !important;
     display: block	!important;
 }
 
 
 [href='/compose/tweet'][role='button'] {
 	position: absolute !important;
-	top: 4px !important;
 }
 
 
@@ -1081,11 +1110,217 @@ h1.r-1awozwy {
     position: absolute !important;
     width:45px !important;
     height:50px !important;
+}
+    
+    
+}
+
+
+@media only screen and (max-height: 600px) {
+
+[data-testid=AppTabBar_Home_Link] {
+    position: absolute !important;
+    display: block !important;
+}
+
+
+[data-testid=AppTabBar_Notifications_Link] {
+    position: absolute !important;
+    display: block !important;
+}
+
+[data-testid=AppTabBar_DirectMessage_Link] {
+    position: absolute !important;
+    display: block !important;
 	top: 5px !important;
 }
     
+[data-testid=AppTabBar_Explore_Link] {
+    display: none !important;
+}
+
+
+
+[data-testid=SideNav_AccountSwitcher_Button] {
+    position: absolute !important;
+    display: block	!important;
+    height: 48px !important;
+}
+    
+[class="css-1dbjc4n r-aqfbo4 r-1xcajam"]{
+    display: block	!important;
+    left: calc(100vw - 320px) !important;
+}
+
+
+[data-testid="AppTabBar_More_Menu"]  {
+    position: absolute !important;
+    display: block	!important;
+}
+
+
+[href='/compose/tweet'][role='button'] {
+	position: absolute !important;
+}
+
+
+
+[aria-label="প্রোফাইল"],[aria-label="Προφίλ"],[aria-label="Perfil"],[aria-label="प्रोफ़ाइल"],[aria-label="プロフィール"],[aria-label="프로필"],[aria-label="Профиль"],[aria-label="ข้อมูลส่วนตัว"],[aria-label="Профіль"],[aria-label="Hồ sơ"],[aria-label="个人资料"],[aria-label="個人資料"],[aria-label*=Prof][data-focusable="true"] {
+    position: absolute !important;
+    width:45px !important;
+    height:50px !important;
+}
+    
     
 }
+
+
+
+
+@media only screen and (min-height: 800px) and (max-height: 900px) {
+[data-testid=AppTabBar_Home_Link] {
+	top: 1px !important;
+}
+
+[href="/i/bookmarks"] {
+	top: 1px !important;
+}
+
+[class*="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21"]+[href*="/lists"]  {
+	top: 1px !important;
+}
+
+
+[data-testid=AppTabBar_Notifications_Link] {
+	top: 1px !important;
+}
+
+[data-testid=AppTabBar_DirectMessage_Link] {
+	top: 1px !important;
+}
+
+
+[data-testid=SideNav_AccountSwitcher_Button] {
+	top: -53px !important;
+}
+    
+[class="css-1dbjc4n r-aqfbo4 r-1xcajam"]{
+    top: 52px !important;
+}
+
+
+[data-testid="AppTabBar_More_Menu"]  {
+	top: 1px !important;
+}
+
+
+[href='/compose/tweet'][role='button'] {
+	top: -7px !important;
+}
+    
+    
+[aria-label="প্রোফাইল"],[aria-label="Προφίλ"],[aria-label="Perfil"],[aria-label="प्रोफ़ाइल"],[aria-label="プロフィール"],[aria-label="프로필"],[aria-label="Профиль"],[aria-label="ข้อมูลส่วนตัว"],[aria-label="Профіль"],[aria-label="Hồ sơ"],[aria-label="个人资料"],[aria-label="個人資料"],[aria-label*=Prof][data-focusable="true"] {
+	top: 1px !important;
+}
+         
+    
+}
+    
+@media only screen and (min-height: 700px) and (max-height: 800px) {
+[data-testid=AppTabBar_Home_Link] {
+	top: 5px !important;
+}
+
+[href="/i/bookmarks"] {
+	top: 5px !important;
+}
+
+[class*="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21"]+[href*="/lists"]  {
+	top: 5px !important;
+}
+
+
+[data-testid=AppTabBar_Notifications_Link] {
+	top: 5px !important;
+}
+
+[data-testid=AppTabBar_DirectMessage_Link] {
+	top: 5px !important;
+}
+
+
+[data-testid=SideNav_AccountSwitcher_Button] {
+	top: -53px !important;
+}
+    
+[class="css-1dbjc4n r-aqfbo4 r-1xcajam"]{
+    top: 48px !important;
+}
+
+
+[data-testid="AppTabBar_More_Menu"]  {
+	top: 4px !important;
+}
+
+
+[href='/compose/tweet'][role='button'] {
+	top: 3px !important;
+}
+    
+    
+[aria-label="প্রোফাইল"],[aria-label="Προφίλ"],[aria-label="Perfil"],[aria-label="प्रोफ़ाइल"],[aria-label="プロフィール"],[aria-label="프로필"],[aria-label="Профиль"],[aria-label="ข้อมูลส่วนตัว"],[aria-label="Профіль"],[aria-label="Hồ sơ"],[aria-label="个人资料"],[aria-label="個人資料"],[aria-label*=Prof][data-focusable="true"] {
+	top: 5px !important;
+}
+}
+    
+@media only screen and (max-height: 700px) {
+[data-testid=AppTabBar_Home_Link] {
+	top: 9px !important;
+}
+    
+[href="/i/bookmarks"] {
+	top: 9px !important;
+}
+
+[class*="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21"]+[href*="/lists"]  {
+	top: 9px !important;
+}
+
+[data-testid=AppTabBar_Notifications_Link] {
+	top: 9px !important;
+}
+
+[data-testid=AppTabBar_DirectMessage_Link] {
+	top: 9px !important;
+}
+
+
+[data-testid=SideNav_AccountSwitcher_Button] {
+	top: -53px !important;
+}
+    
+[class="css-1dbjc4n r-aqfbo4 r-1xcajam"]{
+    top: 48px !important;
+}
+
+
+[data-testid="AppTabBar_More_Menu"]  {
+	top: 8px !important;
+}
+
+
+[href='/compose/tweet'][role='button'] {
+	top: 3px !important;
+}
+
+
+[aria-label="প্রোফাইল"],[aria-label="Προφίλ"],[aria-label="Perfil"],[aria-label="प्रोफ़ाइल"],[aria-label="プロフィール"],[aria-label="프로필"],[aria-label="Профиль"],[aria-label="ข้อมูลส่วนตัว"],[aria-label="Профіль"],[aria-label="Hồ sơ"],[aria-label="个人资料"],[aria-label="個人資料"],[aria-label*=Prof][data-focusable="true"] {
+	top: 9px !important;
+}
+    
+}
+
+
 
 
 /*
@@ -1119,6 +1354,7 @@ h1.r-1awozwy {
     
 [data-testid=SideNav_AccountSwitcher_Button] {
     width: 58px !important;
+    margin-top: 2px!important;
 }   
     
     
@@ -1149,6 +1385,7 @@ h1.r-1awozwy {
     
 [data-testid=SideNav_AccountSwitcher_Button] {
     width: 58px !important;
+    margin-top: 10px!important;
 }
     
 }
@@ -1420,7 +1657,7 @@ h1.r-1awozwy {
 	border-color: var(--border2colour)!important;
 }
 
-[class="css-1dbjc4n r-aqfbo4 r-14lw9ot r-my5ep6 r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"]{
+[class="css-1dbjc4n r-aqfbo4 r-14lw9ot r-j7yic r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"]{
     top: 45px!important;
     background-color:  var(--bgcolour)!important;
     border-bottom-width: 1px!important;
@@ -1944,18 +2181,20 @@ a.r-yfoy6g > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-ch
     background-color:  var(--bg2colour)!important;
 }
 
-[class="css-1dbjc4n r-e84r5y r-42olwf r-sdzlij r-1phboty r-rs99b7 r-eqz5dr r-16y2uox r-1wbh5a2 r-1777fci"]{
+[class="css-1dbjc4n r-z1a2ur r-42olwf r-sdzlij r-1phboty r-rs99b7 r-eqz5dr r-16y2uox r-1wbh5a2 r-1777fci"]{
     background-color:  var(--bgcolour)!important;
 	border-width: 1px!important;
 	border-color: var(--bg2colour)!important;
 }
 
 /*theme select menu fix*/
-[class="css-1dbjc4n r-1awozwy r-yfoy6g r-9x6qib r-1f0042m r-rs99b7 r-1loqt21 r-13awgt0 r-18u37iz r-n370w6 r-adacv r-1ny4l3l r-d9fdf6"]{
+
+
+[class="css-1dbjc4n r-1awozwy r-yfoy6g r-1bs4hfb r-z2wwpe r-rs99b7 r-1loqt21 r-13awgt0 r-18u37iz r-n370w6 r-adacv r-1ny4l3l r-d9fdf6"]{
     background-color:  rgb(21, 32, 43) !important;
 }
 
-[class="css-1dbjc4n r-1awozwy r-yfoy6g r-1kqtdi0 r-1f0042m r-rs99b7 r-1loqt21 r-13awgt0 r-18u37iz r-n370w6 r-adacv r-1ny4l3l r-d9fdf6"]{
+[class="css-1dbjc4n r-1awozwy r-yfoy6g r-1kqtdi0 r-z2wwpe r-rs99b7 r-1loqt21 r-13awgt0 r-18u37iz r-n370w6 r-adacv r-1ny4l3l r-d9fdf6"]{
     background-color:  rgb(21, 32, 43) !important;
 }
 

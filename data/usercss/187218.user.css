@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         davdi1337
 @description    `Minimalistic purple spotify theme with rounded buttons.Screenshot(old): <a href="https://i.imgur.com/l6pVqI8.jpg">CLICK HERE!</a>Screenshot(new) <a href="https://i.imgur.com/oLaCxLU.jpg">CLICK HERE!</a>Please send feedback, if you like the theme.`
-@version        20201115.18.48
+@version        20201120.17.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 *** MINIMALISTIC PURPLE SPOTIFY
 *** MADE BY: DAVDI1337
 *** CREATED: 2020. 07. 30
-*** LAST UPDATED: 2020. 11. 15
+*** LAST UPDATED: 2020. 11. 20
 */
 
 @-moz-document domain("open.spotify.com")
@@ -751,8 +751,8 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
     cursor: pointer;
 }
 /* watermark */
-#main > div > div.Root__top-container > div.Root__nav-bar.Root__nav-bar--connect-bar-visible > nav > div:nth-child(4):before {
-    content: "Style Version: 11.15";
+#main > div > div.Root__top-container > div.Root__nav-bar > nav > div:nth-child(4):before {
+    content: "Style Version: 11.20";
     color: #fff;
     opacity: .3;
     font-size: 14px;
@@ -762,5 +762,40 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
     text-align: center;
     left: calc(0% + 21%);
     bottom: calc(0% + 5%);
+}
+/* watermark */
+/* 11.20 */
+.b1b53e70887a91051a9d7dc85160fc6b-scss,
+._235729a60d5e265806e8509d8633b779-scss {
+    background: none;
+}
+.bc0109b875a51728301c6c8714dd62a6-scss {
+    background-color: var(--bg3);
+}
+._7d5cbe075a3190d517615c5e4920fece-scss:focus,
+.aadce2cf337afcd21e5164448c728328-scss:focus {
+    background-color: var(--button);
+    border-color: var(--button2);
+}
+._53198a3e610354cdc38891442b77b9d0-scss {
+    border-radius: 6px;
+    transition: .15s;
+}
+._8e7d398e09c25b24232d92aac8a15a81-scss.e8b2fe03d4e4726484b879ed8ff6f096-scss {
+    backdrop-filter: none;
+    background-color: var(--button2);
+}
+._8e7d398e09c25b24232d92aac8a15a81-scss.e8b2fe03d4e4726484b879ed8ff6f096-scss:hover {
+    background-color: var(--buttonhover2);
+    backdrop-filter: none;
+}
+._43e978b8fbef3b1a5fc86ea29e51a0fd-scss.a4bc298d40e9660cd25cd3ac1a7f9c49-scss {
+    border-radius: 14px;
+}
+._3e75c7f07bdce28b37b45a5cd74ff371-scss {
+    border-radius: 7px;
+}
+._0633a9ba14ac0ee36539331fc7368798-scss {
+    border-radius: 7px;
 }
 }
