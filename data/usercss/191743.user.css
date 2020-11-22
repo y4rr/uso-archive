@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Loc.
 @description    `This theme is a recreation of the default layout of Roblox last year.Dark theme is not complete, but I have an alternate dark theme which is more like the 2019 dark theme.https://userstyles.org/styles/190904P.S This theme is based on GalactiCosmo's Roblox Old Light Theme.check it out here: https://userstyles.org/styles/177302/roblox-old-light-theme-2019`
-@version        20201121.23.14
+@version        20201122.5.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,9 +17,7 @@ body {
 .light-theme .rbx-left-col {
     background-color: #ffffff;
 }
-.text-header.xsmall {
-display: none
-}
+
 .light-theme .content {
     background-color: #e3e3e3;
     color: #000000;
@@ -1319,7 +1317,7 @@ f .light-theme .game-card-container .game-card-thumb-container {
     background-color: #fff;
 }
 
-.light-theme .rbx-header .navbar-search .navbar-search-option.selected,
+
 .light-theme .rbx-header .navbar-search .navbar-search-option a:hover,
 .light-theme .rbx-header .navbar-search .navbar-search-option.selected a:hover {
     box-shadow: inset 4px 0 0 0 #00a2ff;
@@ -1677,8 +1675,14 @@ input[type="range"]::-moz-range-progress {
     max-height: 140px;
     line-break: strict;
 }
-
-.group-list {
+.avatar-card-image.ng-isolate-scope .ng-isolate-scope {
+    background-color: #e3e3e3
+}
+.no-results {
+background-color: #b8b8b8 !important;
+    color: grey !important
+}
+.light-theme .group-list {
     background-color: #e3e3e3 !important;
 }
 .game-card-thumb-container .ng-scope {
@@ -1885,10 +1889,7 @@ a#upgrade-now-button {
     background-color: #3fc679;
     border: 1px solid #3fc679;
 }
-.refresh-link-icon {
-    position: relative;
-    left: -7px
-}
+
 .light-theme .game-card-info .info-label {
     color: #191919 !important;
     font-size: 14px !important;
@@ -1922,9 +1923,6 @@ a#upgrade-now-button {
     color: #191919 !important
 }
 
-
-
-
 .btr-robuxToCash-tile {
     color: #191919
 }
@@ -1942,7 +1940,7 @@ a#upgrade-now-button {
 }
 
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com") {
-Icons .light-theme .icon-default-navigation,
+ .light-theme .icon-default-navigation,
 .light-theme .icon-nav-blog,
 .light-theme .icon-nav-charactercustomizer,
 .light-theme .icon-nav-friends,
@@ -1965,6 +1963,9 @@ Icons .light-theme .icon-default-navigation,
 .light-theme .icon-default-logo,
 .light-theme .icon-logo {
     background-image: url(https://images.rbxcdn.com/1359485336f67d6e7be76b5e8ff4b72c-roblox_logo_11212016.svg);
+}
+.light-theme .icon-logo-r-95 {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjZTIyMzFhIi8+PC9zdmc+)!important;
 }
 .light-theme .text-link,
 .light-theme .text-link.small,
@@ -2524,7 +2525,6 @@ Icons .light-theme .icon-default-navigation,
     background-color: #fff!important;
     border-color: #808080 !important;
 }
-
 }
 
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com") {
@@ -2950,7 +2950,7 @@ div.item-card-container.recommended-item-link > div.item-card-price {
     left: 934px !important;
 }
 .light-theme .ng-pristine.form-control {
-    padding: 8px 15px !important;
+    padding: 8px 15px;
     border-radius: 1px !important;
 }
 .input-group-btn .dropdown-menu  {
@@ -2968,6 +2968,21 @@ position: absolute;
 left: 0px !important;
 bottom: -37px;
 
+}
+.border-bottom .input-number {
+    padding: 1px 10px !important;
+}
+.light-theme .ng-pristine.form-control {
+    padding: 1px 10px !important
+}
+.ng-touched {
+    padding: 1px 10px !important;
+}
+.ng-touched:focus {
+    padding: 1px 10px !important
+}
+.ng-valid.form-control {
+    padding: 1px 10px !important
 }
 }
 

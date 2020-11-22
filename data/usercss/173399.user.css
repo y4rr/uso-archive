@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `LinkedIn Dark ThemeOthers were broken or incomplete, I tried my best to make this not be.To report issues, please use https://github.com/Jordy3D/Jordy3D.github.io/issuesUserStyles is dreadful.`
-@version        20201117.11.22
+@version        20201122.4.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,6 +23,8 @@
 
 .msg-spinmail-thread__top-banner,
 
+.news-storyline__update-outlet,
+
 /*Loading*/
 #app-boot-bg .line, .loading-bg .line,
 #app-boot-bg .circle, #app-boot-bg .rect, .loading-bg .circle, .loading-bg .rect,
@@ -39,6 +41,11 @@
 .site-header .primary-navigation
 {
     background: #162228 !important;
+}
+
+.feed-shared-poll-option__button
+{
+    background: #162228;
 }
 
 .theme--mercado .launchpad,
@@ -90,6 +97,10 @@
 .feed-shared-update-detail-viewer__content,
 
 .org-sticky-top-card--is-showing,
+
+.theme--mercado .pv-accomplishments-block--expanded,
+
+.news-storyline__update-overlay,
 
 /*Loading*/
 #app-boot-bg .feed-profile, .loading-bg .feed-profile,
@@ -250,6 +261,8 @@ select,
 
 .facet-fieldset__toggle-expanded-button,
 
+.news-storyline__info-card,
+
 /*Not Signed In*/
 .results, 
 .description,
@@ -326,6 +339,10 @@ input, textarea,
 {
   background: #ccc5;
 }
+
+.theme--mercado .psa-occupations-card .artdeco-completeness-meter-linear__progress-element::-webkit-progress-bar {background-color: #0d1b22a3;}
+
+
 
 body, h1, h2, h3, h4, h5, h6, p, li, label,
 

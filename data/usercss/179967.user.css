@@ -3,16 +3,16 @@
 @namespace      USO Archive
 @author         nukumori.org
 @description    `make Twitter fast and compact to see timeline smoothly.optimize on narrow window.<b>Try other our userstyles for Twitter works with this completely* <a href="https://userstyles.org/styles/185536/twitter-rt-button-outlined">Twitter RT Button Outlined</a>* <a href="https://userstyles.org/styles/185160/pastel-color-twitter">Pastel Color Twitter</a></b>----------Twitterを見やすくするために高速でコンパクトにします。デスクトップサイトで画面を狭くしてもいい感じにします。`
-@version        20201116.23.11
+@version        20201122.6.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("twitter.com") {
 /* Fast Twitter 2020 */
-/* Ver.20201117 by nukumori.org is licensed under CC BY-NC-SA */
+/* Ver.20201122 by nukumori.org is licensed under CC BY-NC-SA */
 /* https://userstyles.org/styles/179967/ */
 /* Created: February 8, 2020 */
-/* Updated: October 18, 2020 */
+/* Updated: November 22, 2020 */
 /* *** give us your feedback and donate us *** */
 
 /* font-color bright theme or dark theme */
@@ -61,7 +61,9 @@ body[style*="background-color: rgb(21, 32, 43);"] {
 }
 
 /* shrink image */
-[data-testid="tweet"] div:not(:first-child) .css-1dbjc4n .css-1dbjc4n.r-1adg3ll.r-1udh08x {
+[data-testid="tweet"] div:not(:first-child) .css-1dbjc4n :not([role="presentation"]) > .css-1dbjc4n.r-1adg3ll.r-1udh08x,
+[data-testid="tweet"] div:not(:first-child) .css-1dbjc4n > a > .css-1dbjc4n.r-1adg3ll.r-1udh08x,
+[data-testid="tweet"] div:not(:first-child) [data-testid="card.layoutLarge.media"] > a > .css-1dbjc4n.r-1adg3ll.r-1udh08x {
   height: 5em;
   margin-top: auto;
   margin-bottom: auto;
@@ -95,7 +97,8 @@ body[style*="background-color: rgb(21, 32, 43);"] {
 }
 
 /* sidebar */
-[data-testid="sidebarColumn"] .r-1u4rsef,
+/* [data-testid="sidebarColumn"] .r-1u4rsef, */
+[data-testid="sidebarColumn"] .r-1ihkh82,/* 20201121- */
 .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x {
   background-color: transparent;
   border: 1px solid var(--custom-border-color);
@@ -103,20 +106,20 @@ body[style*="background-color: rgb(21, 32, 43);"] {
 /* sidebar/hide & show */
 [data-testid="sidebarColumn"] .r-1ysxnx4,/* dark */
 [data-testid="sidebarColumn"] .r-1uaug3w,/* dim */
-[data-testid="sidebarColumn"] .r-1u4rsef/* default */ {
+[data-testid="sidebarColumn"] .r-1ihkh82/* default */ {
   height: calc(1em * 3);
   min-height: 0;
   opacity: .6;
 }
 [data-testid="sidebarColumn"] .r-1ysxnx4:hover,/* dark */
 [data-testid="sidebarColumn"] .r-1uaug3w:hover,/* dim */
-[data-testid="sidebarColumn"] .r-1u4rsef:hover/* default */ {
+[data-testid="sidebarColumn"] .r-1ihkh82:hover/* default */ {
   height: auto;
   opacity: 1;
 }
 [data-testid="sidebarColumn"] .r-1ysxnx4 h2,/* dark */
 [data-testid="sidebarColumn"] .r-1uaug3w h2,/* dim */
-[data-testid="sidebarColumn"] .r-1u4rsef h2/* default */ {
+[data-testid="sidebarColumn"] .r-1ihkh82 h2/* default */ {
   cursor: default;
 }
 
@@ -184,14 +187,15 @@ iframe[src^="https://cards-frame.twitter.com/"] {
 }
 
 /* make list title area compact to overwrap list information over hero image*/
-.css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 {
+[role="heading"] + div:not([id="layers"]) .css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 0px 1px 0 #fff, 0px -1px 0 #fff, 1px 0px 0 #fff, -1px 0px 0 #fff, 0 0 3px #fff;
 }
-.css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 .css-1dbjc4n.r-hxarbt.r-1444osr {
+[role="heading"] + div:not([id="layers"]) .css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 [role="button"] > :not(.r-daml9f),
+[role="heading"] + div:not([id="layers"]) .css-1dbjc4n.r-1awozwy.r-5f36wq.r-1xtiow5 .css-1dbjc4n.r-hxarbt.r-1444osr {
   text-shadow: none;
   margin-bottom: 0;
 }

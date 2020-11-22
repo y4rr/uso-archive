@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zoga
 @description    `A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.`
-@version        20201110.1.32
+@version        20201122.9.2
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1426,6 +1426,15 @@ div.common-hub-item-description {
     color: #222e3d !important;
 }
 /* Coliseum */
+#coli-organize-abilities-stats-btn {
+    background: url(https://i.imgur.com/n5ZedIn.png) -163px 0px no-repeat;
+}
+#coli-organize-save-party {
+    background: url(https://i.imgur.com/CwPkkES.png) -240px 0px no-repeat;
+}
+#coli-organize-load-party {
+    background: url(https://i.imgur.com/CwPkkES.png) -80px 0px no-repeat;
+}
 div#coli-dragonlist {
     background-color: #14252f !important;
     border-radius: 10px !important;
@@ -1935,6 +1944,20 @@ div.cluetip-inner.ui-cluetip-content div span {
 .user-hoard-dialog-item-frame-error {
     background: linear-gradient(to bottom, rgb(255, 0, 45) 0%, rgb(255, 114, 199) 100%);
 }
+.dragon-picker-preview-bubble {
+        background: linear-gradient(to bottom, #456c93 0%, #001937 100%);
+    border: 1px solid #031224 !important;
+}
+.dragon-picker-preview-bubble-from {
+    color: #6e889b;
+}
+.dragon-picker-preview-bubble-title {
+    color: #75cddd;
+}
+.dragon-picker-preview-bubble-to {
+    color: #00c2ff;
+    font-weight: bold;
+}
 /* User Bio */
 div.clan-information-bio {
     margin-bottom: 0px !important;
@@ -1949,6 +1972,15 @@ textarea#bio {
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+img[src="/static/layout/hoard/buttons/stack-function-apply-to-nest.png"] {
+    content: url(https://i.imgur.com/lQmTfFN.png) !important;
+}
+img[src="/content/battle/images/spr_button_back.png"] {
+    content: url(https://i.imgur.com/2NTzqrG.png) !important;
+}
+img[src="/static/layout/profile/button-cancel-sale.png"] {
+    content: url(https://i.imgur.com/E5PLB4Z.png) !important;
 }
 img[src="/static/layout/hoard/buttons/stack-function-name-dragon.png"] {
     content: url(https://i.imgur.com/0L9yoq6.png) !important;
@@ -2358,9 +2390,6 @@ img[src="/static/layout/auctionhouse/button_close.png"] {
 img[src="/content/battle/images/organize/spr_organize_unit_frame_02.png"] {
     content: url(https://i.imgur.com/3aSGoGx.png) !important;
 }
-img[src="/content/battle/images/organize/bigx.png"] {
-    content: url(https://i.imgur.com/5gjNHRv.png) !important;
-}
 img[src="/static/layout/lair/backgrounds/male.png"] {
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
 }
@@ -2634,7 +2663,7 @@ img[src="/static/icons/eye_open.png"] {
 img[src="/static/icons/eye_close.png"] {
     content: url(https://i.imgur.com/lOtABjO.png) !important;
 }
-img[src="/static/icons/close.png"] {
+img[src="/static/icons/close.png"], img[src="/content/battle/images/organize/bigx.png"] {
     content: url(https://i.imgur.com/QTFJ3I8.gif) !important;
 }
 img[src="/static/layout/profile/button-export-outfit.png"] {

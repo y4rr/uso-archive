@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `NOTE: KICKASSANIME'S DARK MODE HAS TO BE ENABLED IN ORDER FOR THIS THEME TO WORK.Detailed guide on how to use this style is available in this reddit post: https://www.reddit.com/r/KickAssAnime/comments/co5jqh/custom_kickassanime/Customizable KickAssAnime.rsFeatures: Cleaner and better designEasily customizableCustom background imageAlso applies to Dailymotion, Disqus, and other video playersCleaner video player, also matches themeVibrant Video for brighter video (Doesn't work on mobile)Ads are hiddenCheck out my other styles:https://userstyles.org/users/812884DISCORD:Join my Discord server to get notifications when a new update has been released, get direct support from me and others, and it is generally faster than userstyles to get in touch with me : https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        2020114.17.18
+@version        20201122.1.11
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -167,6 +167,7 @@ no3 "No" <<<EOT /*dqdno*\/ EOT;
 --scnr:/*[[scn]]*\/;
 --acnr:/*[[acn]]*\/;
 --txnr:/*[[txn]]*\/;
+--color-primary: /*[[acn]]*\/!important
 }
 /*acntxn*\/
 .jw-button-color, .list-server-items li.active, .list-server-items li:hover, .jw-auto-label, .video-js button, .vjs-control-bar, .vjs-menu li.vjs-selected, .vjs-menu li.vjs-selected:focus, .vjs-menu li.vjs-selected:hover, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-play-control.vjs-paused .vjs-icon-placeholder:before, .vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before, .video-js .icon-download .vjs-icon-placeholder:before, .video-js .vjs-cog-menu-button:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before, .video-js .vjs-menu-settings .vjs-menu-content .vjs-checked:before {
@@ -177,11 +178,11 @@ no3 "No" <<<EOT /*dqdno*\/ EOT;
     background: var(--acnr)!important;
 }
 /*txn*\/
-.list-server-items li, .jw-settings-content-item, .video-js .vjs-control-bar .vjs-button:hover, .video-js .vjs-control-bar .vjs-button .vjs-menu, .text-white, .myConfirm, .button {
+.list-server-items li, .jw-settings-content-item, .video-js .vjs-control-bar .vjs-button:hover, .video-js .vjs-control-bar .vjs-button .vjs-menu, .text-white, .myConfirm, .button, .checkresumetop.clear p, .checkresumebottom.clear button#yesplease, .checkresumebottom.clear button {
     color: #fff!important;
 }
 /*min*\/
-.vjs-menu-button-popup .vjs-menu-content li:hover, .no-touch .video-js .vjs-button:hover, .no-touch .video-js .vjs-menu-settings .vjs-menu-content li:hover, .myConfirm {
+.vjs-menu-button-popup .vjs-menu-content li:hover, .no-touch .video-js .vjs-button:hover, .no-touch .video-js .vjs-menu-settings .vjs-menu-content li:hover, .myConfirm, .checkresumebottom.clear button {
     background: var(--minr);
 }
 /*scn*\/
@@ -189,11 +190,11 @@ no3 "No" <<<EOT /*dqdno*\/ EOT;
     background-color: var(--scnr);
 }
 /*tny*\/
-.list-server-items, .jw-settings-menu, .video-js .vjs-control-bar, .video-js .vjs-menu-button-popup .vjs-menu-content,  .video-js .vjs-control-bar {
+.list-server-items, .jw-settings-menu, .video-js .vjs-control-bar, .video-js .vjs-menu-button-popup .vjs-menu-content,  .video-js .vjs-control-bar, .checkresumearea.clear {
     background: rgba(0,0,0,0.35)!important;
 }
 /*rbrd*\/
-.list-server-items li, .video-js .vjs-progress-control .vjs-progress-holder, .button {
+.list-server-items li, .video-js .vjs-progress-control .vjs-progress-holder, .button, .checkresumearea.clear, .checkresumebottom.clear button#yesplease, .checkresumebottom.clear button#no_thanks {
     border: transparent!important;
     border-radius: 1px!important;
 }
@@ -309,7 +310,7 @@ st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.
 
 ==/UserStyle== */
 @-moz-document domain("kickassanime.rs"), domain("animo-pace-stream.io"), domain("haloani.ru"), domain("kickassanime.io") {
-/*V3.12.16_201104*/
+/*V3.12.17_201122*/
 /*[[th]]*/
 /*[[hah]]*/
 /*[[thh]]*/
@@ -454,7 +455,7 @@ table {
 @-moz-document domain("disqus.com") {
 /*[[dqd]]*/
 }
-@-moz-document domain("vidstreaming.io"), domain("gcloud.live"), domain("streamango.com"), domain("yourupload.com"), domain("mp4upload.com"), domain("openload.co"), domain("playhydrax.com"), domain("cloud9.to"), domain("fcdn.stream"), domain("betaplayer.life"), domain("gogo-stream.com") {
+@-moz-document domain("vidstreaming.io"), domain("gcloud.live"), domain("streamango.com"), domain("yourupload.com"), domain("mp4upload.com"), domain("openload.co"), domain("playhydrax.com"), domain("cloud9.to"), domain("fcdn.stream"), domain("betaplayer.life"), domain("gogo-stream.com"), domain("streamsb.net"), domain("dood.to"), domain("mixdrop.co") {
 /*[[ovd]]*/
 }
 @-moz-document domain("tickcounter.com") {
