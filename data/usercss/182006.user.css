@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `Light makes you blind? Join the darkness!You can easily change the color scheme according to your preference.Constantly updating as the newest WhatsApp web release comes online (last: June 5th 2020)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Even just a coffee worth donation for the staggering amount of hours spent to fix it every time WhatsApp decides to deliver a new version, would be super appreciated!Ooooor... just <b>send me a message / mail at rwndeloused@gmail.com</b> to share your feedback / appreciation. That means a lot to me!N.B.: I suggest uncommenting the line of code below in your Stylish code editor to be able to import the Raleway font. It's unfortunately not allowed to me to publish the skin including external urls for safety reasons.@import url("https://fonts.googleapis.com/css?family=Raleway");`
-@version        20201121.1.45
+@version        20201121.22.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color color "Accent color" #F9AC5E
@@ -32,6 +32,19 @@
   --alertMessageSize: 17x;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
+  --cl-1: #4062BB;
+  --cl-2: #59C3C3;
+  --cl-3: #373F51;
+  --cl-4: #8B2635;
+  --cl-5: #E0479E;
+  --cl-6: #9EBC9E;
+  --cl-7: #5D2A42;
+  --cl-8: #F4D35E;
+  --cl-9: #23967F;
+  --cl-10: #B14AED;
+  --cl-11: #C874D9;
+  --cl-12: #79C99E;
+  --cl-13: #A3320B;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -331,7 +344,16 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 .KpuSa,
 ._3SvgF,
 .gMRg5,
-._3Ceb0 {
+._3Ceb0,
+.i8New,
+.yVipa,
+._3DmTD,
+._2S-RK,
+._1d7uX ._25c1-,
+._1UuMR,
+._3vEz4,
+._3P_7M,
+._2Efpu{
   background-color: var(--darkGray) !important;
 }
 ._3pkkz,
@@ -417,7 +439,6 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._1C9_o,
 ._2S-RK,
 ._3tpsN,
-._1UuMR,
 ._1HX2v {
   border: none !important;
   background: var(--darkerGray) !important;
@@ -565,7 +586,6 @@ html[dir="ltr"] ._1F9Ap,
 .h70RQ:after,
 ._2iML2,
 ._3S3Sz,
-._1UuMR,
 ._26MUt,
 ._3nLE_,
 ._32vnm,
@@ -639,7 +659,9 @@ header span._1wjpf._3NFp9._3FXB1,
 ._1fPA0,
 .IqPek,
 .gMRg5,
-._3ZYWe  ._1VzZY {
+._3ZYWe  ._1VzZY,
+._2a1zO,
+.color-1 ._1VzZY {
   color: var(--mainColor) !important;
 }
 
@@ -708,7 +730,10 @@ input[type="radio"]:checked,
 .VOr2j,
 .gMRg5,
 ._WnqL._3JHdl,
-._2vTBi ._1VzZY{
+._2vTBi ._1VzZY,
+.RXL_k,
+.dark .bg-color-1,
+._3yI1b:before {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: white !important;
@@ -720,6 +745,10 @@ input[type="radio"]:checked,
 
 input[type="range"]::-webkit-slider-runnable-track {
   background-color: white !important;
+  border-color: white !important;
+}
+
+._1hDF {
   border-color: white !important;
 }
 
@@ -766,7 +795,9 @@ span[data-icon="tail-out"] {
 /*======== border color mainColor ========*/
 /*======== border color mainColor ========*/
 
-._1WLC6 ._3tSYy {
+._1WLC6 ._3tSYy,
+._2a1zO,
+._2_g1_ {
   border-color: var(--mainColor) !important;
 }
 
@@ -838,6 +869,47 @@ span[title="typing…"],
 ._1V82l path.primary {
   fill: white !important;
 }
+
+.color-1 ._1o4HO, .color-1 ._1VzZY {
+  color: var(--cl-1) !important;
+}
+.color-2 ._1o4HO, .color-2 ._1VzZY {
+  color: var(--cl-2) !important;
+}
+.color-3 ._1o4HO, .color-3 ._1VzZY {
+  color: var(--cl-3) !important;
+}
+.color-4 ._1o4HO, .color-4 ._1VzZY {
+  color: var(--cl-4) !important;
+}
+.color-5 ._1o4HO, .color-5 ._1VzZY {
+  color: var(--cl-5) !important;
+}
+.color-6 ._1o4HO, .color-6 ._1VzZY {
+  color: var(--cl-6) !important;
+}
+.color-7 ._1o4HO, .color-7 ._1VzZY {
+  color: var(--cl-7) !important;
+}
+.color-8 ._1o4HO, .color-8 ._1VzZY {
+  color: var(--cl-8) !important;
+}
+.color-9 ._1o4HO, .color-9 ._1VzZY {
+  color: var(--cl-9) !important;
+}
+.color-10 ._1o4HO, .color-10 ._1VzZY {
+  color: var(--cl-10) !important;
+}
+.color-11 ._1o4HO, .color-11 ._1VzZY {
+  color: var(--cl-11) !important;
+}
+.color-12 ._1o4HO, .color-12 ._1VzZY {
+  color: var(--cl-12) !important;
+}
+.color-13 ._1o4HO, .color-13 ._1VzZY {
+  color: var(--cl-13) !important;
+}
+
 
 /*========= alert message - maintenance =========*/
 /*========= alert message - maintenance =========*/

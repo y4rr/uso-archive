@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        20201121.12.17
+@version        20201121.15.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1311,6 +1311,88 @@ border: 1px solid #444444 !important;
 border-radius: 6px !important; 
 color: #999999 !important; 
 }
+
+
+* {
+    color: #aaa !important;
+}
+
+a {
+    color: #ccc !important;
+    transition: all 0.4s;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+/* Title */
+
+.MQsxIb:hover .ipQwMb {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+#yDmH0d, header, .zQTmif, .uUmIDd {
+    background-color: #181818 !important;
+}
+
+/* Search */
+
+.gb_5e.gb_Cf {
+-moz-appearance: none !important;
+color: #999999 !important;
+background: linear-gradient(#181818, #333333) !important;
+border: 1px solid #555555 !important;
+opacity: 1 !important;
+font-weight: bold !important;
+box-sizing: border-box;
+border-radius: 24px !important;
+}
+
+.Ax4B8, .VOEIyf, .VOEIyf .jBmls, .oKubKe {
+    color: #aaa !important;
+}
+
+.VOEIyf .jBmls, .de07yb {
+    background: #282828 !important;
+    border-color: #444 !important;
+}
+
+.VOEIyf .jBmls {
+    border-radius: 24px !important;
+}
+
+/* Sidebar Items | Header Title */
+
+.SFllF:hover, .zWHNCf .SFllF.KKjvXb, .YtXOzd, .VxptDf .jKS7Jd, .RF3lAd, .uUmIDd:hover {
+    background: #282828 !important;
+}
+
+.oKubKe[aria-selected="true"] {
+    background-color: #444 !important;
+}
+
+.NiLAwe, .Qo7o0c, .EOlQu .JQQdOc, .lBwEZb>.JQQdOc, .lBwEZb:not(.Au3bp) .TzkJxd {
+    border-color: #333 !important;
+}
+
+.uUmIDd:hover {
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.gb_sc, .gXqRq .zdxZbf .gq1Z8c, .ZqhUjb.lSLCF .aTzV9b, .dIehj::before {
+    filter: grayscale(100%) brightness(110%); 
+    opacity: 0.9;
+}
+
+gb_sc:hover, .gXqRq .zdxZbf .gq1Z8c:hover, .ZqhUjb.lSLCF .aTzV9b:hover, .dIehj::before:hover {
+    opacity: 1;
+}
+
+
+
 
 /* The End */
 }

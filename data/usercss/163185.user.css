@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201016.0.7
+@version        20201121.14.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -272,6 +272,12 @@ h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {
 #addtolist .inputButton:hover, .inputButton + #addtolistresult a:hover, h2.mt8 + #addtolist .inputButton + small a:hover {
     border-bottom: 2px solid white !important; }
 
+/* Reviews ('??? people found this review helpful') */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 362px !important;max-width: 362px !important;} /* Mod */
+
+/* Reviews (Preliminary tag and text) */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {left: 510px !important;} /* Mod */
+
 /* Recommendations (New) */
 .anime-slide-block .btn-anime {width: 98px !important;}
 .anime-slide-block .btn-anime a {max-width: 90px !important;max-height: 140px !important;}
@@ -306,7 +312,7 @@ div.picSurround img[src*="mark_23.gif"] {background: linear-gradient(to bottom r
 .di-tc.va-t[style="width:392px;"] {width: 431px !important;} /* Mod */
 
 /* Footer */
-#footer-block .footer-link.di-ib {left: 154px;}
+#footer-block .footer-link.di-ib {left: 154px;padding: 5px 71px 8px !important; /* Mod */} 
 }
 
 @-moz-document url-prefix("https://myanimelist.net/manga.php?id="), regexp("https://myanimelist.net/manga/(?!genre|magazine).*") {

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.3.9
+@name           Compact Tube (White) v1.4.0
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201118.12.43
+@version        20201121.16.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.3.9 */
+/* CompactTube (White) v1.4.0 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -40,13 +40,14 @@
 
 /* █► ENG: Use Classic fonts (excludes the problematic "Roboto" font).
             to disable, add "x" before the line. to enable, erase "x".
-            example: "  x  body * {font-family: Arial, sans-serif! important;} "
+            example: "  x  body * {font-family: Arial, Tahoma, sans-serif! important;} "
             ──────────────────────────────────────────────────────────────────
       RU: Задействовать Классические шрифты (исключает проблемный шрифт "Roboto").
             для отключения допишите "x" перед строкой, для включения, сотрите "x". 
-            пример: "  x  body * {font-family: Arial, sans-serif !important;} "    */
-     body * {font-family:  Arial, Tahoma, sans-serif !important;} /* "Chrome: font" ver.*/
-  x  body * {font-family:  Tahoma, Arial, sans-serif !important;} /* "Opera: font" ver. */
+            пример: "  x  body * {font-family: Arial, Tahoma, sans-serif! !important;} "    */
+
+      body * {font-family:  Arial, Tahoma, sans-serif !important;} /* "Chrome: font" ver.*/
+  x   body * {font-family:  Tahoma, Arial, sans-serif !important;} /* "Opera: font" ver. */
                 /* note/заметка: 
                     ENG: Opera uses "Tahoma" as the main font, while Chrome uses "Arial".
                     choose the one you want by disabling the other one. 
@@ -933,6 +934,14 @@ ytd-comment-history-entry-renderer {
 /* Библиотека(История) - вкладка "ЕЩЁ" : пункт: Посмотреть историю на странице "Мои действия" (размер шрифта) */
 yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
 
+/* Информация - как попасть в ныне недоступные разделы в Истории */
+#contents.style-scope.ytd-browse-feed-actions-renderer:after
+{display: block; width: 370px; height: 54px; padding: 6px 0px 10px 16px; content: 
+url(https://vk.com/emoji/e/e284b9.png)" Search history:" "      youtube.com/feed/history/search_history"  " "
+url(https://vk.com/emoji/e/e284b9.png)" Comment history:" "  youtube.com/feed/history/comment_history"  ""
+url(https://vk.com/emoji/e/e284b9.png)" LiveChat history:" "    youtube.com/feed/history/live_chat_history"  "";
+font: 1.2rem Tahoma, sans-serif; color: var(--yt-spec-text-secondary); cursor: help;}
+
 /* ============== ВЫДЕЛИТЕЛИ ================ */
 /* Выделение Болдом шрифта в Комментариях "в Истории" */
 .bold.yt-formatted-string {
@@ -950,6 +959,7 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 /* Выделение Болдом тем Истории Поиска "в Истории"*/
 .ytd-search-history-query-renderer {font-weight: bold;}
 /* ============================================ */
+
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
@@ -1221,6 +1231,9 @@ border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
                 top: -2px;} /* компенсация сдвига в 2px  от (ytd-browse[page-subtype=channels]) */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Название Канала под Видео на вкладке с Видео (позицианирование) */
+ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -16px;}
 
 /* толщина шрифта названия каналов */
 #container.ytd-channel-name {display: var(--ytd-channel-name-container-display, inline-block); overflow: hidden; font-weight: bold;}
@@ -2785,7 +2798,7 @@ paper-listbox {
     padding: 8px 0;
     background: var(--paper-listbox-background-color, var(--primary-background-color));
     box-shadow: inset 0px 0px 0px 1px var(--yt-spec-10-percent-layer);
-    border-radius: 3px;
+    -o-border-radius: 3px;
     -o-border: 1px solid #f00; /* для теста Скроллбаров */
     color: var(--paper-listbox-color, var(--primary-text-color));
     overflow: hidden;}

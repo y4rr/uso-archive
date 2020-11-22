@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Dark Twitter++ is a simple dark mode for Twitter that works regardless of whether you have the old or new design that also works well with <a href="https://userstyles.org/styles/155039/a-better-twitter">A Better Twitter</a>.Tell me if anything isn't themed properly, or hard to read; I'll be sure to fix it as soon as possible!Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        2020425.21.26
+@version        20201121.18.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color color "Custom Theme Color" #1DA1F2
@@ -115,6 +115,8 @@ off "Off" <<<EOT ::-webkit-scrollbar {
 .QuoteTweet--sensitive,
 .PageContainer,
 .column-panel,
+.r-1ihkh82,
+.r-z1a2ur,
 .r-e84r5y,
 .r-e84r5y {
 	background: var(--dark50) !important;
@@ -551,6 +553,7 @@ input.light-on-dark,
 .RichEditor,
 .facet-type,
 .QuoteTweet,
+.r-1in3vh1,
 .t1-legend,
 .t1-select,
 .r-13w96dm,
@@ -558,12 +561,17 @@ input.light-on-dark,
 .r-109y4c4,
 .Tombstone,
 .r-1tlfku8,
+.r-1gm7m50,
+.r-1bs4hfb,
 .r-9cbz99,
+.r-mxfbl1,
+.r-aygnpl,
 .r-my5ep6,
 .r-uvzvve,
 .r-my5ep6,
 .r-9x6qib,
 .prf-meta,
+.r-j7yic,
 #caldays,
 textarea,
 .tweet,
@@ -604,6 +612,7 @@ textarea:focus,
 .Form-textbox,
 .Form-select,
 .r-1ncdyz2,
+.r-1panhkp,
 input:focus {
 	border-color: var(--border-medium)
 }
@@ -1097,6 +1106,7 @@ textarea:focus,
 .stream-end,
 .tweet-stat,
 .t1-legend,
+.r-18jsvk2,
 .r-hkyrab,
 .t1-label,
 .fullname,
@@ -1163,6 +1173,7 @@ input {
 .txt-mute,
 .with-icn,
 .nav > li,
+.r-m0bqgq,
 a.caloff,
 .stats a,
 .time a,
@@ -1550,6 +1561,15 @@ button:hover,
 
 .column.is-focused {
 	box-shadow: 0 0 0 5px var(--custom-color);
+}
+
+.r-1upvrn0 {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px,
+		rgba(0, 0, 0, 0.15) 0px 0px 3px 1px;
+}
+
+.r-1227ba4 {
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 1px -1px 1px);
 }
 
 .s-following .follow-btn:hover input.is-active.following-text[type=button],
@@ -2003,6 +2023,10 @@ input:focus,
 [fill="#007aff"],
 .r-13gxpu9 {
 	fill: var(--custom-color)
+}
+
+.r-jwli3a {
+	fill: var(--dark100)
 }
 
 .swiper-pagination-bullet-active,

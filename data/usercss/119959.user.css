@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Doesn't force lowercase (with "<a href="https://userstyles.org/styles/86145/">crayon for mal</a>") for 85% of the site.`
-@version        201922.21.31
+@version        20201121.14.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -41,4 +41,37 @@ h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {left: 351px !important
 #advanced-button .toggle-button {width: 51px !important;}
 #advanced-button .toggle-button .fa {text-indent: 8909px !important;}
 #advanced-button > div:nth-child(2) .fa {text-indent: 8913px !important;}
+}
+
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/recommendations.*"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/clubs.*"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/friends.*") {
+/* Profile button spacing fix */
+.user-status li.icon-history.link {left: 330px !important;} /* History */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {left: 390px !important;} /* Reviews */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 454px !important;} /* Recommendations */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 580px !important;} /* Clubs */
+h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {left: 352px !important;} /* Friends */
+}
+
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
+/* Reviews */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {left: 390px !important;}
+
+/* Recommendations */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 456px !important;}
+}
+
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/clubs.*") {
+/* Recommendations */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 454px !important;}
+
+/* Clubs */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 578px !important;}
+}
+
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/friends.*") {
+/* Clubs */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 578px !important;}
+
+/* Friends */
+h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {left: 350px !important;}
 }

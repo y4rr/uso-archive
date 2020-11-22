@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra <i>is</i> necessary for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. <a href="https://userstyles.org/styles/169748/">Easily changeable background</a>, <a href="https://userstyles.org/styles/119959/">lowercase text</a>, et cetera.</a><b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201117.6.33
+@version        20201121.15.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -836,7 +836,8 @@ tr td:first-child.borderClass[width="225"] + td[style^="padding"] {
     left: -9px;
     position: relative;
     padding-bottom: 10px; }
-tr td:first-child.borderClass[width="225"] + td[style^="padding"] td {max-width: 756px !important;padding-bottom: 0 !important;}
+tr td:first-child.borderClass[width="225"] + td[style^="padding"] td {max-width: 756px !important;}
+tr td:first-child.borderClass[width="225"] + td[style^="padding"] td.pb24 {padding-bottom: 0 !important;} /* Very bottom */
 
 /* Adds left frame padding (non-Profile) */
 tr td:first-child[width="225"][style="border-width: 0 1px 0 0;"] {
@@ -1191,10 +1192,11 @@ input[src*="magnify.gif"], img[src*="rssicon.png"], img[src*="rss_small.gif"] {d
 a[href*="reportreview"] small {margin: 0 3px 0 0 !important;font-style: normal;color: rgba(var(--colorButtonText));display: inline-block;}
 
 /* Overall rating box */
+/* .textReadability div[id*="score"] {display: block !important;} */ /* Always show */
 .textReadability table[border="0"][width="105"] {
-    margin-right: 5px !important;
+    margin: 4px 5px 0 1px !important;
     border-radius: 3px;
-    width: 70px !important;
+    width: 80px !important;
     background: rgba(var(--colorForeground)) !important;
     box-shadow: var(--colorLightShadow); }
 .textReadability table[style$="1px;"] tbody tr td {font-size: 10px !important;}
@@ -1205,6 +1207,8 @@ a[href*="reportreview"] small {margin: 0 3px 0 0 !important;font-style: normal;c
     color: white !important;
     border-radius: 3px 0 0 3px; }
 .textReadability table[style$="1px;"] tbody tr td[class*="bgColor1"]:last-child {border-radius: 0 3px 3px 0;}
+.textReadability table[style$="1px;"] tbody tr td {padding: 1px 3px !important;} /* Reviews on user profiles */
+tr td:first-child.borderClass[width="225"] + td[style^="padding"] .textReadability table[style$="1px;"] tbody tr td {padding: 1px 3px !important;} /* Fix padding */
 
 /* 'Read More' */
 a[onclick*="reviewToggleText"], span[id*="review"] + a, p[class="spaceit"] + p > a[href*="topicid"],
@@ -1246,7 +1250,8 @@ div[id^="ad"] > iframe, div[id^="google_ads"],
 #pc_other_bottom_rec_l, #pc_other_bottom_rec_r,
 div[style="margin:0 padding:0; padding-bottom:20px;"],
 .ad-sticky-wrapper, .ad-tag, .mal-ad-unit, #headerSmall + a,
-div.popup-background, .banner-footer-anime-streaming, #tbl-next-up
+div.popup-background, .banner-footer-anime-streaming, #tbl-next-up,
+.amazon-ads
     {display: none !important;}
 
 #ad-skin-left, #ad-skin-right {height: 0 !important;width: 200px !important;}
@@ -1781,11 +1786,6 @@ div[style*="%; background-color"] {border-radius: 3px;} /* Stats */
 /* Signature colour picker */
 body[bgcolor="#FFFFFF"][onload="initpicker()"] {background: white !important;}
 
-/* Reviews */
-h2 + .borderDark[style^="padding: 4px"] {padding-top: 15px !important;}
-.ml4 + .borderDark[style^="padding: 4px"] {padding-top: 15px !important;}
-.borderDark[style^="padding: 4px"] {padding-bottom: 22px !important;}
-
 /* Login */
 .login-form-block .pt16 > .fl-r.di-ib.fs12.ff-avenir {position: relative;top: 82px;right: 6px;font-size: 13px !important;}
 .login-form-block .pt12.pb8.ac {position: relative;top: 35px;} /* Forgot PW */
@@ -1985,7 +1985,7 @@ iframe.movie.youtube, .news-container iframe.movie.youtube {height: 395px;width:
 body {background: rgba(var(--colorBackground)) !important;}
 }
 
-@-moz-document url-prefix("https://myanimelist.net/anime/"), url-prefix("https://myanimelist.net/manga/"), url-prefix("https://myanimelist.net/anime.php"), url-prefix("https://myanimelist.net/manga.php"), url-prefix("https://myanimelist.net/reviews"), url-prefix("https://myanimelist.net/character"), url-prefix("https://myanimelist.net/people"), url-prefix("https://myanimelist.net/watch"), url-prefix("https://myanimelist.net/reviews.php?"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
+@-moz-document url-prefix("https://myanimelist.net/anime/"), url-prefix("https://myanimelist.net/manga/"), url-prefix("https://myanimelist.net/anime.php"), url-prefix("https://myanimelist.net/manga.php"), url-prefix("https://myanimelist.net/reviews"), url-prefix("https://myanimelist.net/character"), url-prefix("https://myanimelist.net/people"), url-prefix("https://myanimelist.net/watch"), url-prefix("https://myanimelist.net/reviews.php"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
 /* Left frame */
 .js-scrollfix-bottom[style*="width: 225px"] {width: 230px !important;}
 
@@ -2078,6 +2078,150 @@ h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {position: relative;
 .inputButton + #addtolistresult a, h2.mt8 + #addtolist small a {background: none !important; box-shadow: none !important; }
 #addtolist #myinfoDisplay {margin: 10px 0 -5px !important;padding-left: 0 !important;font-size: 10px !important;}
 
+/* User, Helpful, Count, Rating, Date, Preliminary */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr td[valign="top"]:nth-child(2) > a /* User */,
+div[id^="revArea"] + div[style="float: left;"] td + td > a /* reviews.php? */,
+.borderDark > .spaceit > .mb8 + div > strong a /* Title (Profile) */,
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit /* Helpful */,
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit /* Helpful (Profile) */,
+.borderDark > .spaceit > .mb8 > div:nth-child(2) /* Count */,
+.borderDark > .spaceit > .mb8 > div:nth-child(3) /* Rating */,
+.borderDark > .spaceit > .mb8 > div:nth-child(3) a /* Rating */,
+.borderDark > .spaceit > .mb8 > div:first-child /* Date */,
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div /* Preliminary */,
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div /* Preliminary (Profile) */ {
+    color: #808080 !important;
+    padding: 9px 0 !important; position: relative;
+    text-align: center !important; font-size: 10px !important; font-style: normal !important;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Link */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr small,
+div[id^="revArea"] + div[style="float: left;"] td + td small /* reviews.php? */ {
+    font-size: 0 !important; position: relative;
+    top: 6px !important; left: -142px !important; }
+div[id^="revArea"] + div[style="float: left;"] td + td small {top: -42px !important;left: 136px !important;} /* reviews.php? */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr small a,
+div[id^="revArea"] + div[style="float: left;"] td + td small a /* reviews.php? */,
+.borderDark > .spaceit > .mb8 + div > small + a /* Add/Edit (Profile/reviews.php?) */ {
+    background: #e4e4e4 !important;
+    overflow: hidden; 
+    border-radius: 4px 0 0 4px;
+    padding: 31px 10px 0 0 !important;
+    width: 0 !important; height: 0 !important; }
+.borderDark > .spaceit > .mb8 + div > small + a {
+    border-radius: 4px 0 0 4px !important;
+    border: none !important; box-shadow: none !important;
+    position: relative; top: 3px !important; left: -185px !important; } /* Add/Edit (Profile/reviews.php?) */
+
+/* User (or Title if on profiles) */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr td[valign="top"]:nth-child(2) > a,
+div[id^="revArea"] + div[style="float: left;"] td + td > a /* reviews.php? */,
+.borderDark > .spaceit > .mb8 + div > strong a /* Profile */ {
+    background: #f0f0f0 !important;
+    display: inline-block;
+    top: 6px !important; left: 10px !important;
+    font-size: 13px !important; font-weight: bold !important;
+    min-width: 120px !important; max-width: 120px !important;
+    padding: 6px 9px 12px !important; height: 13px !important; }
+.borderDark > .spaceit > .mb8 + div > strong a {
+    top: 0 !important; left: 10px !important;
+    min-width: 160px !important; max-width: 160px !important; } /* Profile/reviews.php? */
+div[id^="revArea"] + div[style="float: left;"] td + td > a {top: -42px !important;left: 288px !important;} /* reviews.php? */
+.borderDark > .spaceit > .mb8 + div > small {display: none !important;} /* 'Anime'/'Manga' text */
+
+/* Helpful */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit,
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit /* Profile */ {
+    background: #f6f6f6 !important;
+    top: -31px !important; left: 148px !important;
+    min-width: 241px !important; max-width: 241px !important; }
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit {
+    top: -37px !important;left: 188px !important;
+    min-width: 225px !important; max-width: 225px !important; } /* Profile */
+div[id^="revArea"] + div[style="float: left;"] {height: 0 !important;} /* Profile */
+
+/* Count */
+.borderDark > .spaceit > .mb8 > div:nth-child(2) {
+    background: #f6f6f6 !important;
+    top: -28px !important; left: -209px !important;
+    min-width: 158px !important; max-width: 158px !important; }
+
+/* Rating */
+.borderDark > .spaceit > .mb8 > div:nth-child(3) {
+    background: #89cce9 !important; color: white !important;
+    font-weight: bold !important; font-size: 17px !important;
+    min-width: 115px !important; max-width: 115px !important;
+    padding: 3px 0 6px !important;
+    top: -62px !important; left: -51px !important; }
+.borderDark > .spaceit > .mb8 > div:nth-child(3) a {
+    color: white !important;
+    font-size: 10px !important;
+    top: -2px !important; }
+
+/* Date */
+.borderDark > .spaceit > .mb8 > div:first-child {
+    background: #6bbfe3 !important; color: white !important;
+    font-weight: bold; border-radius: 0 4px 4px 0;
+    top: 6px !important; left: 64px !important;
+    min-width: 94px !important; max-width: 94px !important; }
+
+/* Preliminary */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div,
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div /* Profile */ {
+    top: -92px; left: 389px; letter-spacing: 1px;
+    min-width: 158px !important; max-width: 158px !important; }
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 389px;}
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div {top: -98px;left: 413px;} /* Profile */
+
+/* User image */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr td[width="60"][valign="top"],
+div[id^="revArea"] + div[style="float: left;"] td[width="60"][valign="top"] /* reviews.php? */ {display: none !important;}
+
+/* Add spacing between top bar and review text */
+.borderDark > div[class|="spaceit"] > div:nth-child(1),
+.borderDark > div[class|="spaceit"] > div:nth-child(2) {max-height: 41px !important;}
+
+/* Add side padding to text portion of reviews */
+div.borderDark div.spaceit.textReadability {padding: 0 8px !important;}
+
+/* Review spacing */
+h2 + .borderDark[style^="padding: 4px"] {padding-top: 15px !important;}
+.ml4 + .borderDark[style^="padding: 4px"] {padding-top: 15px !important;}
+
+/* Review separators */
+.borderDark[style^="padding: 4px"], .profile_leftcell + td .borderDark[style^="padding: 4px"] {border-top: 2px solid #e0dee0 !important;}
+.pb24 .borderDark[style^="padding: 4px"] {padding: 15px 0 27px !important;} /* Anime/Manga */
+.borderDark[style^="padding: 4px"] {padding: 15px 10px 27px !important;} /* reviews.php? */
+.profile_leftcell + td .borderDark[style^="padding: 4px"] {padding: 15px 10px 27px !important;} /* Profile */
+.pb24 br + div + .borderDark[style^="padding: 4px"] /* Anime */,
+.pb24 br + h2 + .borderDark[style^="padding: 4px"] /* Manga */,
+.profile_leftcell + td .mt4 + .borderDark[style^="padding: 4px"] /* Profile */,
+.reviews-horiznav-nav-sort-block + .ml4 + .borderDark[style^="padding: 4px"] /* Reviews tab on Anime/Manga */ {
+    border-top: none !important;
+    padding-top: 0 !important; }
+
+/* 'Helpful' (Button) */
+a.js-vote-review-button.button_form {
+    background: white !important; transition: 0s !important;
+    font-size: 10px; font-weight: normal !important; font-style: normal !important;
+    margin: -2px 7px 2px 2px !important; border-bottom: 1px solid rgba(var(--colorBlue)) !important;
+    border-radius: 3px; box-shadow: var(--colorLightShadow); visibility: visible;
+    position: relative; top: 17px; left: -111px; }
+span[id^="review"] a.js-vote-review-button.button_form {top: 30px;left: -111px;} /* Reviews with 'Read more' */
+a.js-vote-review-button.button_form:hover {
+    border-bottom: 1px solid white !important;
+    background: rgba(var(--colorBlue)) !important;
+    color: white !important; }
+.textReadability div[id*="revhelp_output"] {visibility: hidden;max-height: 0 !important;}
+
+/* 'Undo' (Button) */
+strong + a[data-val="0"].js-vote-review-button.button_form {top: 4px;left: -2px;} /* Reviews without 'Read more' */
+span[id^="review"] strong + a[data-val="0"].js-vote-review-button.button_form {top: 16px;left: -1px;} /* Reviews with 'Read more' */
+a[data-val="0"].js-vote-review-button.button_form {left: -175px;} /* 'Undo' (After page refresh) */
+span[id^="review"] a[data-val="0"].js-vote-review-button.button_form {left: -175px;} /* 'Undo' (After page refresh) */
+.textReadability div[id*="revhelp_output"] strong {display: none !important;} /* 'You've found this helpful' (After initial click of 'Helpful') */
+
 /* 'Permalink' & 'Report' (Area) */
 .textReadability + div > .mt12 {
     background: rgba(var(--colorForeground));
@@ -2088,21 +2232,6 @@ h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {position: relative;
     max-height: 16px !important;
     padding: 8px 7px 6px !important; }
 .textReadability + div > .mt12 > div[style="float: right;"] {position: relative;top: -1px;color: transparent !important;}
-
-/* 'Helpful' (Button) */
-a.js-vote-review-button.button_form {
-    background: white !important; transition: 0s !important;
-    font-size: 10px; font-weight: normal !important; font-style: normal !important;
-    margin: -2px 7px 2px 2px !important; border-bottom: 1px solid rgba(var(--colorBlue)) !important;
-    border-radius: 3px; box-shadow: var(--colorLightShadow); visibility: visible;
-    position: relative; top: 29px; left: -103px; }
-strong + a.js-vote-review-button.button_form {top: 16px;left: 7px;} /* 'Undo' */
-a.js-vote-review-button.button_form:hover {
-    border-bottom: 1px solid white !important;
-    background: rgba(var(--colorBlue)) !important;
-    color: white !important; }
-span[id^="review"] div[id*="revhelp_output"] {visibility: hidden;max-height: 0 !important;}
-span[id^="review"] div[id*="revhelp_output"] strong {display: none !important;}
 
 /* Permalink */
 .mt12 > div[style="float: right;"] > a[href*="/reviews.php?"][class="lightLink"] > small {
@@ -2140,7 +2269,7 @@ a[name="members"] + h2 > span {top: 0;}
 .borderDark[style^="padding: 4px"] .textReadability.word-break {border: none !important;}
 
 /* Bottom of reviews */
-.borderDark[style^="padding: 4px"] + .mt4 {margin-top: -10px !important;}
+.borderDark[style^="padding: 4px"] + .mt4 {margin-top: -17px !important;}
 
 /* Bottom of 'Opening/Ending Theme' */
 div[class^="di-"] + br + br + div + div[style="padding: 20px 0px;display: inline-block;"] + br + h2 {margin-top: -30px !important;}
@@ -2164,26 +2293,17 @@ table[class="mt16 mb8"], div#episode_video.anime-slide-block {display: none !imp
 .page-common h2 + .pb16 {padding-bottom: 0 !important;}
 
 /* Sort Reviews */
-.reviews-horiznav-nav-sort-block.mb4.pb12 .pl4 {
+.reviews-horiznav-nav-sort-block.pb8 {
     background: rgba(var(--colorButton)) !important; color: rgba(var(--colorButtonText)) !important;
-    padding: 3px 4px 4px !important; border-radius: 3px;
+    padding: 3px 4px 4px !important; border-radius: 3px; border: none !important;
     text-align: center; letter-spacing: 1px;
     font-size: 10px !important; }
-
-.reviews-horiznav-nav-sort-block .list-selected .list {
+.review-sort-order-block.show {
     background: rgba(var(--colorLightBlue)) !important; z-index: 2;
-    width: auto !important;
     border-radius: 4px;
     padding: 5px !important;
     box-shadow: 0 0 4px rgba(var(--colorBlue),0.75); }
-
-.reviews-horiznav-nav-sort-block .btn-sort,
-.reviews-horiznav-nav-sort-block .list-selected .list .btn-sort,
-.reviews-horiznav-nav-sort-block .list-selected .btn-sort.selected:after,
-.reviews-horiznav-nav-sort-block .list-selected .list .btn-sort.selected:after,
-.reviews-horiznav-nav-sort-block .list-selected .list .btn-sort:hover {background: none !important;}
-.reviews-horiznav-nav-sort-block .list-selected .btn-sort {padding: 2px !important;border: none !important;}
-.reviews-horiznav-nav-sort-block.mb4.pb12 {display: block !important;border: none !important;padding-bottom: 0 !important;}
+.mr12.js-reviews-chk-preliminary {margin-right: 0 !important;}
 
 /* Hide Videos Section */
 .breadcrumb + table > tbody > tr > td[valign="top"] > h2:nth-of-type(3),
@@ -2274,12 +2394,31 @@ div[style$="border-bottom: solid #cdcdcd 1px"]
 h2 > .floatRightHeader + br + label {position: relative;top: -11px;margin-left: 125px;}
 
 /* 'Anime Recommendations Filter' script fix */
-#RecHeader .checkbox {position: relative;top: -1px;left: 2px;margin-top: -1px;}
-br + #RecHeader .floatRightHeader + .checkbox + .checkbox,
-br + #RecHeader .floatRightHeader + .checkbox {left: -4px;} /* If Recs Are Available (Non-userrecs page) */
+#RecHeader .checkbox {margin-top: -1px;}
 
 /* Enhanced MAL script fix */
 .borderClass[width="225"] > div[style*="width: 225px"] {width: 230px !important;} /* Undo short 'Add to fav' button */
+.floatRightHeader + h2 .floatRightHeader {display: none !important;} /* Hide 'Add/More' */
+}
+
+@-moz-document url-prefix("https://myanimelist.net/reviews.php") {
+/* Reviews page */
+#content > div.borderDark[style^="padding: 4px"]:nth-child(3) {margin-top: 27px !important;}
+
+/* Add/Edit */
+.borderDark > .spaceit > .mb8 + div > small + a {left: -265px !important;}
+
+/* Title */
+.borderDark > .spaceit > .mb8 + div > strong a {border-radius: 0 4px 4px 0;min-width: 240px !important;max-width: 240px !important;}
+
+/* Helpful */
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit {top: -79px !important;left: 426px !important;}
+
+/* Preliminary */
+div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div {top: -140px;left: 651px;}
+
+/* Add spacing between top bar and review text */
+.borderDark[style^="padding: 4px"] .textReadability.word-break {margin-top: -5px !important;min-height: 104px !important;}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/anime.php"), url-prefix("https://myanimelist.net/manga.php"), url-prefix("https://myanimelist.net/anime/genre"), url-prefix("https://myanimelist.net/anime/producer"), url-prefix("https://myanimelist.net/manga/genre"), url-prefix("https://myanimelist.net/manga/magazine"), url-prefix("https://myanimelist.net/search/all?q="), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
@@ -2794,18 +2933,6 @@ tr:nth-child(10) .updatesBar {background: rgba(var(--colorBlue),0.10) !important
 #profileRows + .di-b.mt4.mb16.ac, .slider-wrap {display: none !important;}
 }
 
-@-moz-document url-prefix("https://myanimelist.net/reviews.php"), regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
-#content > div.borderDark[style^="padding: 4px"]:nth-child(3) {margin-top: 16px !important;}
-
-div.borderLight + div.spaceit.textReadability {min-height: 113px !important;}
-
-/* Separators */
-.borderDark[style^="padding: 4px"] {border-top: 2px solid #e0dee0 !important;padding: 15px 10px 20px !important;}
-
-/* User reviews page */
-.profile_leftcell + td .borderDark {margin-left: 9px !important;width: 780px !important;}
-}
-
 @-moz-document url-prefix("https://myanimelist.net/myfriends.php") {
 /* 'My Friends' page */
 script + table[width="100%"] {background: #f8f8f8;margin-top: 15px;border-radius: 0 0 8px 8px;}
@@ -2827,13 +2954,14 @@ div[style="padding: 0 7px;"] > div[style="margin: 9px 0px;"] + div.spaceit /* ??
 div[style="padding: 0 7px;"] .borderDark + div.spaceit /* ??? */,
 .pagination.ac, .forum-topic-sort, .view-style /* New Search */, 
 .container-right > div + .mb20 /* Forum Index (Search) */,
-h2 + div + .ml4 /* More Reviews (Top) */, .mt4 > .ml4 /* More Reviews (Bottom) */,
-#dialog + .ac.mt8.mb8 /* Message History (Bar) */, #dialog + div[style^="width: 810px;"] /* MeHi (Reply) */,
+.reviews-horiznav-nav-sort-block + .ml4 /* More Reviews (Top) */, .mt4 > .ml4 /* More Reviews (Bottom) */,
+#dialog + .ac.mt8.mb8 /* Message History (Bar) */, #dialog + div[style^="width: 810px;"] /* Message History (Reply) */,
 .total_messages + form > .clearfix.po-r /* Messages (Header) */, .badresult + div[style^="margin: 7px 0;"] /* Blogs */,
 .borderClass[style$="10px;"] + div[style^="margin: 7px 0;"] /* Blogs */,
 .profile_leftcell + .pl8 > #horiznav_nav + .mt4 /* Reviews (Profile, Top) */,
 .profile_leftcell + .pl8 > .mt4:last-of-type /* Reviews (Profile, Bottom) */,
-.borderClass[style="margin: 5px 0; font-size: 13px; text-align: left;"] /* People/Char (Search) */ {
+.borderClass[style="margin: 5px 0; font-size: 13px; text-align: left;"] /* People/Char (Search) */,
+.borderDark[style^="padding: 4px"] + .mt4 + div[style="float:right;"] /* Reviews (reviews.php?, Bottom) */ {
     text-align: center !important;
     font-size: 11px !important;
     color: transparent;
@@ -2851,7 +2979,7 @@ a[name="members"] + h2 + .spaceit:hover,
 a[name="members"] + h2 + .spaceit + table + .spaceit:hover,
 div[style="padding: 0 7px;"] > div[style="margin: 9px 0px;"] + div.spaceit:hover,
 div[style="padding: 0 7px;"] .borderDark + div.spaceit:hover,
-h2 + div + .ml4:hover, .mt4 > .ml4:hover, .pagination.ac:hover,
+.reviews-horiznav-nav-sort-block + .ml4:hover, .mt4 > .ml4:hover, .pagination.ac:hover,
 .forum-topic-sort:hover, .view-style:hover,
 #dialog + .ac.mt8.mb8:hover,
 #dialog + div[style^="width: 810px;"]:hover,
@@ -2859,7 +2987,8 @@ h2 + div + .ml4:hover, .mt4 > .ml4:hover, .pagination.ac:hover,
 .borderClass[style$="10px;"] + div[style^="margin: 7px 0;"]:hover,
 .borderClass[style="margin: 5px 0; font-size: 13px; text-align: left;"]:hover,
 .profile_leftcell + .pl8 > #horiznav_nav + .mt4:hover,
-.profile_leftcell + .pl8 > .mt4:last-of-type:hover {
+.profile_leftcell + .pl8 > .mt4:last-of-type:hover,
+.borderDark[style^="padding: 4px"] + .mt4 + div[style="float:right;"]:hover {
     transition: 0.3s;
     background: rgba(var(--colorLightBlue)) !important;
     box-shadow: 0 0 4px rgba(var(--colorBlue),0.75); }
@@ -2895,7 +3024,7 @@ a[name="members"] + h2 + .spaceit + table + .spaceit {margin: 16px 0 -5px !impor
 table[class*="-ranking-table"] + .pagination.ac {margin: 11px 0 0 !important;} /* Top ___ */
 .view-style {margin: 0 !important;padding: 10px 11px 11px !important;} /* New search page */
 
-.page-common h2 + div + .ml4, .page-common .mt4 > .ml4 {margin-left: 0 !important;} /* Reviews */
+.page-common .reviews-horiznav-nav-sort-block + .ml4, .page-common .mt4 > .ml4 {margin-left: 0 !important;} /* Reviews */
 
 /* Blogs */
 .borderClass[style$="10px;"] + div[style^="margin: 7px 0;"] {margin: 8px 0 4px !important;max-height: 14px;}
@@ -2908,6 +3037,10 @@ table[class*="-ranking-table"] + .pagination.ac {margin: 11px 0 0 !important;} /
 /* Reviews (Profile) */
 .profile_leftcell + .pl8 > #horiznav_nav + .mt4 {margin: 14px 11px 4px 15px !important;}
 .profile_leftcell + .pl8 > .mt4:last-of-type {margin: -15px 11px 0 15px !important;}
+
+/* Bottom of reviews.php? */
+.borderDark[style^="padding: 4px"] + .mt4 + div[style="float:right;"] {float: none !important;margin: 8px 0 0px !important;}
+.borderDark[style^="padding: 4px"] + .mt4 + div[style="float:right;"] + br {display: none !important;}
 
 /* Pages */
 .pagination .link {background: none !important;font-weight: normal !important;font-size: 10px !important;}
@@ -4211,12 +4344,12 @@ div.fl-l > .breadcrumb {top: 18px !important;}
     border-radius: 5px; padding: 0 !important;
     border: none !important; }
 
-.title-text, .seasonal-anime, .anime-header,
+.seasonal-anime .title, .seasonal-anime, .anime-header,
 .season .anime-seasonal-byseason td,
 .watch-anime {font-family: Segoe UI !important;}
 .title-text a, .h2_anime_title a {font-size: 15px !important;font-style: normal !important;letter-spacing: 1px;}
 .h2_anime_title a {font-weight: bold !important;} /* h2 fix */
-.title-text, .h2_anime_title {
+.seasonal-anime .title {
     padding: 0 14px !important;
     position: relative; max-width: 306px;
     text-overflow: ellipsis !important;
@@ -4890,6 +5023,9 @@ h4 > a[href$="/friends"] {left: 339px !important;}
 
 /* Recommendations */
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 449px !important;}
+
+/* User reviews page */
+.profile_leftcell + td .borderDark {margin-left: 9px !important;width: 780px !important;}
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/recommendations.*") {

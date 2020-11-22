@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vednoc
 @description    `Dark theme for GitLab and self-hosted instances. Also supports far greater color customization, custom dark and light color-schemes and many custom features in UserCSS format at <a href="https://gitlab.com/vednoc/dark-gitlab">GitLab</a>.`
-@version        20201014.21.23
+@version        20201121.21.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced text gl-notice "Want to customize settings? Install the UserCSS version of this theme from GitHub." "https://gitlab.com/vednoc/dark-gitlab/raw/master/gitlab.user.styl"
@@ -17,7 +17,7 @@
 @homepageURL  https://gitlab.com/vednoc/dark-gitlab
 @supportURL   https://gitlab.com/vednoc/dark-gitlab/issues
 @updateURL    https://gitlab.com/vednoc/dark-gitlab/raw/master/gitlab.user.css
-@version      1.5.5
+@version      1.6.3
 @license      MIT
 ==/UserStyle== */
 
@@ -31,7 +31,6 @@
  *
  * Make sure you have the latest version before submitting bug reports.
  */
-
 
 @-moz-document domain('custom.domain'),
 domain('invent.kde.org'),
@@ -61,6 +60,13 @@ domain('vbscan.fisica.unimib.it'),
 domain('git.cardiff.ac.uk'),
 domain('git.igwn.org'),
 domain('git.ligo.org'),
+domain('forge.tedomum.net'),
+domain('git.callpipe.com'),
+domain('git.happy-dev.fr'),
+domain('source.ind.ie'),
+domain('mau.dev'),
+domain('source.puri.sm'),
+domain('git.oeru.org'),
 regexp('^https?://(www\.)?git\.(gnu|synz)\.io(/.*)?$'),
 regexp('^https?://(www\.)?code\.((videolan|briarproject)\.org|foxkit\.us)(/.*)?$'),
 regexp('^https?://(www\.)?source\.(small-tech|joinmastodon)\.org(/.*)?$'),
@@ -68,7 +74,7 @@ regexp('^https?://(www\.)?git\.(drupalcode|feneas|ouru|pwmt|regardscitoyens)\.or
 regexp('^https?://(www\.)?(joonpc\.skku\.edu/gitlab|mpegx\.int-evry\.fr/software)(/.*)?$'),
 regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   :root {
-    --note: 'Dark-GitLab USo-Lite v1.5.5';
+    --note: 'Dark-GitLab Lite v1.6.3';
     --bshadow: 0 2px 4px var(--shadow);
     --t: transparent !important;
     --avatar: 25%;
@@ -486,10 +492,6 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     color: var(--red) !important;
     fill: var(--red) !important;
   }
-  body .ci-status-text {
-    max-width: 100% !important;
-    margin-right: 35px;
-  }
   .ci-status {
     color: var(--light) !important;
     border-color: var(--darker);
@@ -704,45 +706,6 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     color: var(--light) !important;
     border-color: var(--blue) !important;
   }
-  body input[type = 'checkbox'],
-  body input[type = 'radio'],
-  body input[type = 'checkbox']:focus,
-  body input[type = 'radio']:focus,
-  body input[type = 'checkbox']:hover:active,
-  body input[type = 'radio']:hover:active,
-  body input[type = 'checkbox']:disabled,
-  body input[type = 'radio']:disabled,
-  body input[type = 'checkbox']:hover:active:disabled,
-  body input[type = 'radio']:hover:active:disabled {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    border: 1px solid !important;
-    color: var(--light) !important;
-    border-color: var(--darker) !important;
-    background-color: var(--darker) !important;
-  }
-  body input[type = 'checkbox']:hover,
-  body input[type = 'radio']:hover {
-    box-shadow: 0 0 2px 1px var(--shadow) !important;
-  }
-  body input[type = 'radio'] {
-    border-radius: 100% !important;
-  }
-  body input[type = 'radio']:checked {
-    border-color: var(--accent) !important;
-    background-color: var(--accent) !important;
-  }
-  body input[type = 'checkbox']:checked {
-    border-color: var(--accent) !important;
-    background-color: var(--accent) !important;
-  }
-  body input[type = 'checkbox']:indeterminate {
-    border-color: var(--red) !important;
-    background-color: var(--red) !important;
-  }
   body .border-section {
     border-color: var(--darker) !important;
   }
@@ -771,23 +734,53 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   body .preview.gl-dark {
     border-color: var(--darker) !important;
   }
-  input[type = 'radio']:checked {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="128" fill="white"/></svg>') !important;
+  input:hover {
+    box-shadow: none !important;
+  }
+  input[type='radio'],
+  input[type='checkbox'],
+  input[type='radio']:focus,
+  input[type='checkbox']:focus,
+  input[type='radio']:hover:active,
+  input[type='checkbox']:hover:active,
+  input[type='radio']:disabled,
+  input[type='checkbox']:disabled,
+  input[type='radio']:hover:active:disabled,
+  input[type='checkbox']:hover:active:disabled {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    cursor: pointer !important;
+    height: 1rem !important;
+    width: 1rem !important;
+    border: 1px solid var(--darker) !important;
     background-size: cover !important;
+    color: var(--light) !important;
+    background-color: var(--darken) !important;
   }
-  input[type = 'checkbox']:checked {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M99 213l-1 89 104 102 205-201v-91L203 315 99 213z"/></svg>') !important;
-    background-size: cover !important;
+  input[type='radio']:checked {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="256" cy="256" r="128" fill="white"/></svg>') !important;
+    border-radius: 100% !important;
   }
-  input[type = 'checkbox']:indeterminate {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect x="128" y="192" width="256" height="96" fill="white"/></svg>') !important;
-    background-size: cover !important;
+  input[type='radio']:checked:checked {
+    border-color: var(--accent) !important;
+    background-color: var(--accent) !important;
   }
-  [aria-sort = 'ascending'] {
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="101" height="101" view-box="0 0 101 101" preserveAspectRatio="none"%3e%3cpath fill="orange" d="M51 1l25 23 24 22H1l25-22z"/%3e%3cpath fill="gray" opacity=".6" d="M51 101l25-23 24-22H1l25 22z"/%3e%3c/svg%3e') !important;
+  input[type='checkbox']:checked {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M99 213l-1 89 104 102 205-201v-91L203 315 99 213z"/></svg>') !important;
+    border-color: var(--accent) !important;
+    background-color: var(--accent) !important;
   }
-  [aria-sort = 'descending'] {
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="101" height="101" view-box="0 0 101 101" preserveAspectRatio="none"%3e%3cpath fill="gray" opacity=".6" d="M51 1l25 23 24 22H1l25-22z"/%3e%3cpath fill="orange" d="M51 101l25-23 24-22H1l25 22z"/%3e%3c/svg%3e') !important;
+  input[type='checkbox']:indeterminate {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect x="128" y="192" width="256" height="96" fill="white"/></svg>') !important;
+    border-color: var(--red) !important;
+    background-color: var(--red) !important;
+  }
+  [aria-sort='ascending'] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" view-box="0 0 101 101" preserveAspectRatio="none"><path fill="\%23bf692b" d="M51 1l25 23 24 22H1l25-22z"/><path fill="gray" opacity=".6" d="M51 101l25-23 24-22H1l25 22z"/></svg>') !important;
+  }
+  [aria-sort='descending'] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" view-box="0 0 101 101" preserveAspectRatio="none"><path fill="gray" opacity=".6" d="M51 1l25 23 24 22H1l25-22z"/><path fill="\%23bf692b" d="M51 101l25-23 24-22H1l25 22z"/></svg>') !important;
   }
   .with-performance-bar .production {
     background-color: var(--dark) !important;
@@ -1950,7 +1943,7 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   }
   .btn-missing,
   .stat-text {
-    color: var(--light) !important;
+    color: var(--lighter) !important;
     border-color: var(--darker) !important;
     background-color: var(--darken) !important;
   }
@@ -2277,7 +2270,7 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     border-color: var(--darker) !important;
     background-color: var(--dark) !important;
   }
-  ul.content-list.requirements-list > li:hover {
+  ul.content-list.requirements-list > li:not([class*='gl-bg']):hover {
     background-color: var(--t) !important;
   }
   ul.content-list.members-list li {
@@ -2400,6 +2393,14 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .nav-sidebar .close-nav-button:hover {
     background-color: var(--darker) !important;
   }
+  .nav-sidebar:not(.js-sidebar-collapsed) + .content-wrapper .pipeline-visualization > div[style*='padding-left: 0px'] {
+    padding-left: 0px !important;
+    padding-left: 240px !important;
+  }
+  .nav-sidebar.js-sidebar-collapsed + .content-wrapper .pipeline-visualization > div[style*='padding-left: 0px'] {
+    padding-left: 0px !important;
+    padding-left: 70px !important;
+  }
   .right-sidebar {
     border-color: var(--darker) !important;
     background-color: var(--darken) !important;
@@ -2423,6 +2424,7 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   }
   .gl-drawer {
     color: var(--light) !important;
+    border-color: var(--darker) !important;
     background-color: var(--dark) !important;
     box-shadow: -1px 0 var(--darker), var(--bshadow);
     top: 50px !important;
@@ -2626,9 +2628,12 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .row-content-block.footer-block {
     background-color: var(--t) !important;
   }
-  .row-content-block .btn:not(.btn-link):not(.btn-success):not(.btn-danger):not(.btn-info),
+  .row-content-block .btn:not(.btn-link):not(.btn-success):not(.btn-danger):not(.btn-info):not(.gl-button),
   .row-content-block .btn-default {
     background-color: var(--dark) !important;
+  }
+  .row-content-block .btn.dropdown-toggle {
+    border: 1px solid var(--darker);
   }
   .row-content-block .filtered-search-box:not(#z) {
     background-color: var(--dark) !important;
@@ -3632,7 +3637,8 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   img[src ^= 'img/']:not([src *= 'logo']),
   img[src *= '/help/img/'],
   img[src *= 'assets/promotions/'],
-  img[src *= 'assets/illustrations/'] {
+  img[src *= 'assets/illustrations/'],
+  #oauth-login-github > img {
     filter: invert(0.8) brightness(110%) hue-rotate(180deg);
     box-shadow: none !important;
   }
@@ -3884,7 +3890,7 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     background-color: var(--dark) !important;
   }
   .form-group > label + input {
-    background-color: var(--dark) !important;
+    background-color: var(--darken) !important;
   }
   .gl-filtered-search-scrollable {
     background-color: var(--dark) !important;
@@ -3934,10 +3940,19 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .gl-bg-gray-10 {
     background-color: var(--dark) !important;
   }
+  .gl-bg-gray-50 {
+    background-color: var(--darken) !important;
+  }
+  .bg-secondary-50 {
+    background-color: var(--darken) !important;
+  }
   .gl-bg-green-100.gl-text-green-800 {
     color: var(--white) !important;
     border-color: var(--green) !important;
     background-color: var(--green) !important;
+  }
+  .gl-bg-blue-50 {
+    background-color: var(--blue) !important;
   }
   .gl-border-gray-100,
   .gl-border-gray-200 {
@@ -3946,8 +3961,18 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .border {
     border: 1px solid var(--darker) !important;
   }
+  .gl-border-b-gray-100 {
+    border-color: var(--darker) !important;
+  }
   .gl-inset-border-1-gray-100 {
     box-shadow: inset 0 0 0 1px var(--darker);
+  }
+  .gl-new-dropdown p {
+    color: var(--light) !important;
+  }
+  .gl-new-dropdown button[class*='close'] {
+    border-color: var(--t) !important;
+    background-color: var(--t) !important;
   }
   .gfm {
     color: var(--light) !important;
@@ -3960,8 +3985,7 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   }
   .gfm.gfm-commit,
   .gfm.gfm-commit_range {
-    font-family: var(--ui-font);
-    font-size: 100%;
+    font-family: var(--mono-font);
   }
   .gfm.gfm-commit,
   .gfm.gfm-commit_range > code {
@@ -4130,6 +4154,20 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   }
   #add-projects-modal .gl-infinite-scroll-legend {
     color: var(--lighter) !important;
+  }
+  .modal-doorkeepr-auth > .modal-content {
+    border-color: var(--darker) !important;
+    background-color: var(--dark) !important;
+  }
+  .modal-doorkeepr-auth > .modal-content .modal-header {
+    border-color: var(--darker) !important;
+    background-color: var(--t) !important;
+  }
+  .modal-doorkeepr-auth > .modal-content .modal-body {
+    background-color: var(--t) !important;
+  }
+  .modal-doorkeepr-auth > .modal-content .modal-body .form-actions {
+    background-color: var(--darken) !important;
   }
   .gl-popover {
     font-family: var(--ui-font);
@@ -4502,17 +4540,25 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     font-family: var(--mono-font);
     background-color: var(--t) !important;
   }
+  .ci-job-name-component > .gl-text-truncate {
+    max-width: 100%;
+    margin-right: 35px;
+  }
   .pipeline-graph.pipeline-tab-content {
     background-color: var(--darken) !important;
   }
   .pipeline-graph .build {
     width: 100% !important;
+    margin-bottom: 5px;
   }
   .pipeline-graph .build-content {
     border-color: var(--darker) !important;
     background-color: var(--dark) !important;
+    transition: none !important;
+    padding: 5px 5px !important;
   }
   .pipeline-graph .build-content:hover {
+    color: var(--lighter) !important;
     background-color: var(--bb) !important;
   }
   .pipeline-graph .build .linked-pipeline-content {
@@ -4544,6 +4590,15 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   }
   div[class *= 'mini-pipe'] li:hover [class *= 'dropdown-item'] {
     background-color: var(--darker) !important;
+  }
+  .pipeline-graph .stage-column .curve::before,
+  .pipeline-graph .stage-column .curve::after {
+    top: -24px;
+  }
+  .pipeline-graph .stage-column .build:nth-child(2)::before,
+  .pipeline-graph .stage-column .build:nth-child(2)::after {
+    height: 24px;
+    top: -4px;
   }
   .build-page .top-bar {
     z-index: 99;
@@ -4858,6 +4913,16 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .wiki-page-header + .table-holder > table tbody > tr:hover {
     background-color: var(--bb) !important;
   }
+  .cluster-application-row {
+    background-color: var(--darken) !important;
+  }
+  .cluster-application-row img.avatar:not(.identicon) {
+    background-color: 0 0 unset !important;
+  }
+  .clusters-container .clusters-table {
+    border-color: var(--darker) !important;
+    background-color: var(--darken) !important;
+  }
   .project-visibility-setting,
   .project-feature-settings,
   .sub-section {
@@ -4913,7 +4978,11 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .settings-content .sub-section .btn-warning::before {
     content: unset !important;
   }
-  .project-badge {
+  .project-badges {
+    margin-top: -0.5rem;
+  }
+  .project-badges img {
+    margin-top: 0.5rem;
     border-radius: 4px;
   }
   .file-holder {
@@ -4941,6 +5010,10 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   .file-holder .file-title-flex-parent .btn-danger-secondary {
     color: var(--red) !important;
     border-color: var(--red) !important;
+  }
+  .file-holder .file-title-flex-parent .btn-default-tertiary:not(#z) {
+    border-color: var(--t) !important;
+    background-color: var(--t) !important;
   }
   .file-holder .file-title-flex-parent .btn-primary:not(.btn-inverted),
   .file-holder .file-title-flex-parent .btn-info:not(.btn-inverted) {
@@ -6018,7 +6091,8 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     background-color: var(--darken) !important;
     box-shadow: none;
   }
-  .board-card-header a {
+  .board-card-header a,
+  .board-card-title a {
     color: var(--light) !important;
   }
   .board-card-number {
@@ -7091,6 +7165,18 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
   line[id *= 'dag-'][stroke = '#f2f2f2'] {
     stroke: #808080 !important;
   }
+  .devops-card-high .board-card-score-big {
+    background-color: var(--success) !important;
+  }
+  .devops-card-low .board-card-score-big {
+    background-color: var(--red) !important;
+  }
+  .devops-step {
+    background-color: var(--darken) !important;
+  }
+  .board-card-score-value {
+    color: var(--lighter) !important;
+  }
   [data-page='users:show'] .user-profile .cover-block {
     padding-top: 80px;
   }
@@ -7151,6 +7237,3 @@ regexp('^https?://((next|www)\.)?(gitlab\.(?!(io|biterg)).*)(/.*)?$') {
     background-color: var(--blue) !important;
   }
 }
-
-
-

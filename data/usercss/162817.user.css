@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Slick Boy D
 @description    `This userstyle supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
-@version        2020112.15.21
+@version        20201121.19.57
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown colortheme "Color Theme" {
@@ -69,7 +69,6 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark .nav-group a,
 .site-theme-dark .character .header,
 .site-theme-dark .staff .header,
-.site-theme-dark .role-card,
 .site-theme-dark .el-input-number .el-input,
 .site-theme-dark select,
 .site-theme-dark textarea,
@@ -91,6 +90,8 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark .auth-form-unscoped .al-input,
 .site-theme-dark .settings .button.cancel,
 .site-theme-dark .el-input,
+.site-theme-dark #app > div.page-content > div > div.content.container > div.overview > div.characters > div > div:nth-child(n),
+.site-theme-dark #app > div.page-content > div > div.content.container > div.overview > div.staff > div > div:nth-child(n),
 /*Following selectors only affect browse*\/
 .site-theme-dark #app > div.page-content > div > div > div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap,
 .site-theme-dark #app > div.page-content > div > div > div.filters-wrap.primary-filters > div.filters > div:nth-child(n) > div.select-wrap,
@@ -121,18 +122,12 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark #hohSettings input,
 .site-theme-dark #hohSettings select,
 .site-theme-dark [list="staffRoles"],
-.site-theme-dark #blockInput > button{
-	border: solid 1px rgba(var(--color-foreground-grey))!important;
-	border-radius: 3px;
-}
-.unread, .hohUnread{
-    border-right: solid 6px rgba(var(--color-blue))!important;
-}
-#nav > div.quick-search.visible > div.input > input[type=text]{
-	border: none!important;
-}
-#app > div.page-content > div > div.content.container > div.overview > div.relations > div > div:nth-child(n) > div{
-	background: rgba(var(--color-foreground-grey));
+.site-theme-dark #blockInput > button,
+.site-theme-dark .substitution .media-roles .role-card,
+.site-theme-dark #hoh-character-roles .view-media-character{
+	border-top: solid 1px rgba(var(--color-foreground-grey))!important;
+	border-bottom: solid 1px rgba(var(--color-foreground-grey))!important;
+	border-radius: 0px;
 } EOT;
 gravity "Gravity" <<<EOT /*Gravity Color Theme*\/
 .site-theme-dark {

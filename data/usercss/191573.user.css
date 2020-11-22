@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201120.11.29
+@version        20201121.15.42
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -623,19 +623,19 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
     background: rgb(1 1 1 / 0%);
 }
 .sbsb_a {
-    background-image: linear-gradient(180deg, #520d69c7 0%, #d81b9f6e 100%);
-	border-radius: 0px 0px 24px 24px;
+    background-image: linear-gradient(180deg, #350444 10%, #9a0c90ab 100%);
+	border-radius: 0px 0px 15px 15px;
 	background-color: #32323200;
 	color: #fff;
 }
 .sbdd_b {
     background-color: #32323200;
-    border: 1px solid #f2f2f2b8;
-    border-top-color: #d9d9d9;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 1px solid #7120ab00;
+    border-top-color: #bf45ffc9;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
     cursor: default;
-	border-radius: 0px 0px 24px 24px;
+	border-radius: 0px 0px 15px 15px;
 	backdrop-filter: blur(2px)
 }
 .gsfs {
@@ -647,6 +647,13 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
 }
 .sbsb_d {
     background: #eeeeee59;
+}
+#tooltip.paper-tooltip {
+	background-image: linear-gradient(200deg, #35044480 0%, #d81b9f91 100%);
+    background-color: #5927a2;
+    color: var(--paper-tooltip-text-color, white);
+	border: 1px solid #b84fff;
+	border-radius: 4px
 }
 
 /***************Y****************/
