@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        20201111.14.38
+@version        20201123.12.16
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -282,7 +282,6 @@ url-prefix("http://www.douyu.com/") {
     div[class*="bg-1a1f33"],
     div[class*="closeBg-8c5e18"],
     div[class*="watermark-4231db"],
-    div[class*="PkView-"],
     div[class*="gotoView-"],
     div[class*="recommendApp-"],
     div[class*="maiMaitView-"],
@@ -4741,6 +4740,9 @@ background-position: center!important;
     /* 直播分类 */
     .layout-Main {
         padding-top: 0!important;
+    }
+    .layout-Customize:empty + .layout-Module {
+        margin-top: 80px!important;
     }
 }
 

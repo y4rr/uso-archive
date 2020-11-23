@@ -2,8 +2,8 @@
 @name           App.Rocketlanguages.com Dark Nightmode
 @namespace      USO Archive
 @author         slyfox88
-@description    `A Dark style for rocketlanguages.com`
-@version        20201121.5.25
+@description    `A Dark style for rocketlanguages.com members section.`
+@version        20201123.7.48
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,8 +14,9 @@ footer[class^='Footer_footer'] {
     background-color: #222 !important;
     color: #ddd !important;
 }
-p,
+p, h1,
 div[class^='PageUI_heading'] h1,
+div[class^='_sidebar_notesBar__'],
 .login-heading, .help-links,
 .panel .panel-heading, .card,
 .panel-body, .lesson-type-group div,
@@ -23,7 +24,9 @@ div[class^='PageUI_heading'] h1,
 .testing .panel.rateable-test .panel-heading h2,
 div[class^='Phrasebox_phrase'],
 h3[class^='TopBar_navHeaderAlt'],
-div[class^='LessonComponent_imageComponentCaption']
+div[class^='LessonComponent_imageComponentCaption'],
+div[class^='BadgeNotification_notificationContainer__'] h1,
+div[class^='BadgeNotification_notificationContainer__'] h2
 {
     color: #ddd;
 }
@@ -107,9 +110,18 @@ h3[class^='LessonComponent_lead__'] {
 #email, #password{
     color: #333;
 }
-.notations .notations-container button, .ng-isolate-scope div  button.notation-label{
+button[class*='PhraseStringNotationButtons_notationButton__'] {
+    color: #fff !important;
+    background-color: #444 !important;
+}
+button[class*='PhraseStringNotationButtons_notationButton__']:hover {
     color: #fff !important;
     background-color: #555 !important;
+}
+[class*='TooltipPositioner_container'] {
+    color: #fff !important;
+    background-color: #444 !important;
+    box-shadow:0px 2px 4px #555;
 }
 .popover {
     background-color: #666 !important;
@@ -132,8 +144,9 @@ h3[class^='LessonComponent_lead__'] {
 .lesson-types-list .lesson-type:hover a {
     color: #444;
 }
-.modal-dialog .modal-content .rank-upgrade-modal-container {
-    background-color: #444;
+.modal-dialog .modal-content .rank-upgrade-modal-container,
+div[class^='BadgeNotification_notificationContainer__'] {
+    background: radial-gradient(ellipse 200% 100% at bottom,#333 50%,#444 0)
 }
 [playit] .transcript-content.playing .transcript-line.active-character rocket-record {
     background-color: #1b618b; /* [playit] .transcript-content.playing .transcript-line.active-character rocket-record  #a5d1eb*/
@@ -261,9 +274,9 @@ div[class*='LessonComponent_markdownComponent-culture__'] h2 {
     color: #afcfb1 !important;
 }
 div[class*='LessonComponent_markdownComponent-alt'] {
-    background-color: #65406d !important;
+    background-color: #55285f !important;
 }
 div[class*='LessonComponent_markdownComponent-alt'] h2 {
-    color: #bb8ec5 !important;
+    color: #9b42af !important;
 }
 }

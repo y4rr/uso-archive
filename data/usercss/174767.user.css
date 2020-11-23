@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Black YouTube Theme by KMV.Consider this theme "Clean".Most colours are B/W until hovered.Designed to be easy on the eyes - most distractions have been reduced to a minimum.Works straight out of the box - no "Enable YouTube Dark Theme" again.Note:I do not have a YT account, so there are likely elements within user account-pages not covered.Features custom cursors, -scrollbars, subtle opacities and gradients, hover transitions on Menus, Buttons, Logos and Popups.Dark Theme on reCAPTCHA & YouTube Login page included.All options in separate codes. Delete any of these to disable.Main Player is untouched to accommodate for the many custom interfaces available.Optional Video Dim (-25% brightness);https://userstyles.org/styles/175380/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact;https://old.reddit.com/r/KMV/`
-@version        20201120.23.36
+@version        20201123.7.2
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2478,7 +2478,7 @@ paper-button.yt-next-continuation:hover,
 paper-item:hover,
 paper-tab:hover,
 yt-chip-cloud-chip-renderer,
-yt-formatted-string,
+yt-formatted-string.style-scope.ytd-vertical-list-renderer,
 yt-icon-button:hover,
 ytd-single-option-survey-option-renderer:hover,
 ytd-thumbnail-overlay-toggle-button-renderer,
@@ -2623,7 +2623,7 @@ paper-button.yt-next-continuation:active,
 paper-item:active,
 paper-tab:active,
 yt-chip-cloud-chip-renderer:active,
-yt-formatted-string:active,
+yt-formatted-string.style-scope.ytd-vertical-list-renderer:active,
 yt-icon-button:active,
 ytd-single-option-survey-option-renderer:active,
 ytd-toggle-theme-compact-link-renderer:active,

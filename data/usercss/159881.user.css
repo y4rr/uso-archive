@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.Переключиться на новый дизайн ВК нужно через меню ПОЛЬЗОВАТЕЛЬ -> НАСТРОЙКИ -> ОБЩЕЕ, пункт "Обновлённый дизайн"`
-@version        20201112.10.23
+@version        20201123.9.40
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2631,7 +2631,23 @@ body.new_header_design .top_audio_player {
 	padding-right: 8px;
 }
 body.new_header_design .top_audio_player_title {
-    font-size: 12.8px;
+    font-size: 0.96em;
+}
+/*  old design */
+[dir] .top_nav_link.top_profile_link {
+	padding-left: 80px;
+	margin-right: -150px;
+}
+[dir] #top_profile_menu {
+	margin-right: -150px;
+}
+/* [dir] .HeaderNav__item--player ,  */
+.top_audio_player{
+	max-width: 700px;
+	padding-right: 8px;
+}
+[dir] .top_audio_player .top_audio_player_title {
+    font-size: 0.96em;
 }
 /* -------------------- */
 
@@ -2832,5 +2848,18 @@ body.new_header_design .top_audio_player_title {
 #StickerProductsGiftRecipientsInput {
 	background-color: #16202C;
 	color: #fff;
+}
+[dir] #page_header_cont {
+    background-color: #0E1621;
+    border-bottom-color: #0E1621;
+}
+[dir] .TopSearch__input {
+    background-color: #0E1621;
+}
+[dir] .top_nav_link.active {
+    background-color: hsla(218, 29%, 18%, .4);
+}
+[dir] .top_nav_btn.active {
+    background-color: hsla(218, 29%, 18%, .4);
 }
 }
