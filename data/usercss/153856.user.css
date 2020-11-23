@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         High_village
 @description    `Beinhaltet:</br></br>1. bs.to / burningseries.co - Burning Series - Dark-Red Design</br>2. cine.to - Dark Design</br>3. Dark Design für alle Hoster der beiden Seiten:</br>4. Highlight dich selber im Chat, suche im Code nach "EIGENER-USERNAME" und ersetz dieses mit deinem Usernamen!</br><ul><li>Vivo / Vidto / Streamango / Openload / Streamcherry / Vidoza / Streamplay / FlashX / Streamcloud / Gounlimited / Jetload / Onlystream / Mixdrop / VOE / Streamtape</li></ul></br>Abgeleitet von: https://userstyles.org/styles/138429/burningseries-redblack-akamegakill-theme-by-mekrip</br><b>Nützliche Scripte: https://greasyfork.org/de/users/105914-high-village</br>Support/Discord: https://cutt.ly/bsdiscord</b>`
-@version        20201114.7.24
+@version        20201122.19.44
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2333,39 +2333,18 @@ button:hover {
 
 @-moz-document url-prefix("https://voe.sx/")
 {
-.video-js .vjs-big-play-button:focus, .video-js:hover .vjs-big-play-button {
-    border-color: #ed781e;
-}
-
-.video-js {
-    color: #ed781e;
-}
-
-.video-js .vjs-big-play-button .vjs-icon-placeholder {
+button.plyr__control.plyr__control--overlaid, button.plyr__control.plyr__control--overlaid:hover {
     background-image: url(https://i.imgur.com/w8lm83g.png);
     background-size: 79px;
     zoom: 0.9;
 }
 
-.vjs-loading-spinner {
-    border: 6px solid #ed781e;
-}
-
-.video-js .vjs-play-progress {
-    background-color: #ed781e;
-}
-
-.video-js .vjs-volume-level {
-    background-color: #ed781e;
-}
-
-.video-js .vjs-progress-holder .vjs-play-progress {
-    background-color: #ed781e;
+.plyr--video .plyr__controls {
     color: #ed781e;
 }
 
-button:focus {
-    outline: none;
+:root {
+    --plyr-color-main: #ed781e;
 }
 }
 

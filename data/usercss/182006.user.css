@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `Light makes you blind? Join the darkness!You can easily change the color scheme according to your preference.Constantly updating as the newest WhatsApp web release comes online (last: June 5th 2020)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Even just a coffee worth donation for the staggering amount of hours spent to fix it every time WhatsApp decides to deliver a new version, would be super appreciated!Ooooor... just <b>send me a message / mail at rwndeloused@gmail.com</b> to share your feedback / appreciation. That means a lot to me!N.B.: I suggest uncommenting the line of code below in your Stylish code editor to be able to import the Raleway font. It's unfortunately not allowed to me to publish the skin including external urls for safety reasons.@import url("https://fonts.googleapis.com/css?family=Raleway");`
-@version        20201121.22.3
+@version        20201122.17.35
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color color "Accent color" #F9AC5E
@@ -14,7 +14,7 @@
 /* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
 
 /* ignore the error icon below if using the Stylish code editor*/
-:root {
+:root .dark, :root {
   /* color-scheme n.1 */
   --superLightGray: #9e9e9e;
   --lightGray: rgb(85, 85, 85);
@@ -32,8 +32,8 @@
   --alertMessageSize: 17x;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
-  --cl-1: #4062BB;
-  --cl-2: #59C3C3;
+  --cl-1: var(--mainColor) !important;
+  --cl-2: var(--mainColor) !important;
   --cl-3: #373F51;
   --cl-4: #8B2635;
   --cl-5: #E0479E;
@@ -47,7 +47,8 @@
   --cl-13: #A3320B;
 }
 
-*::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb,
+.dark .bg-color-2 {
   background-color: var(--mainColor) !important;
 }
 *::-webkit-scrollbar-track {
@@ -661,7 +662,9 @@ header span._1wjpf._3NFp9._3FXB1,
 .gMRg5,
 ._3ZYWe  ._1VzZY,
 ._2a1zO,
-.color-1 ._1VzZY {
+.CWVX1 ._1VzZY,
+.color-1 ._1VzZY,
+._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) {
   color: var(--mainColor) !important;
 }
 
@@ -733,7 +736,8 @@ input[type="radio"]:checked,
 ._2vTBi ._1VzZY,
 .RXL_k,
 .dark .bg-color-1,
-._3yI1b:before {
+._3yI1b:before,
+._27KDP:after {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: white !important;

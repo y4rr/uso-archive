@@ -2,8 +2,8 @@
 @name           Anilist Hossori
 @namespace      USO Archive
 @author         Slick Boy D
-@description    `This userstyle supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
-@version        20201121.19.57
+@description    `This userstyle gives the site a slicker look. Also supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
+@version        20201122.16.39
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown colortheme "Color Theme" {
@@ -59,6 +59,8 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark .draggable > span, .filter-group > span,
 .site-theme-dark .submission,
 .site-theme-dark .ranking,
+#app > div.page-content > div > div.content.container > div.media-characters > div.grid-wrap > div:nth-child(n),
+#app > div.page-content > div > div.content.container > div.media-staff > div.grid-wrap > div:nth-child(n),
 .site-theme-dark #app > div.page-content > div > div.content.container > div.sidebar > div.data,
 .site-theme-dark #app > div.page-content > div > div.content.container > div.sidebar > div.tags,
 .site-theme-dark .media-score-distribution .ct-chart-bar,
@@ -82,7 +84,6 @@ charcoal "Charcoal" <<<EOT /*Charcoal Color Theme*\/
 .site-theme-dark #app > div.el-dialog__wrapper.list-editor-wrap > div > div.el-dialog__body > div.body > div.input-wrap.anime > div.form.status > div.el-select > div,
 .site-theme-dark #app > div.page-content > div > div.content.container > div.sidebar > div.tags > div.el-dialog__wrapper > div > div.el-dialog__body > div.el-select > div,
 .site-theme-dark #app > div.el-dialog__wrapper.list-editor-wrap > div > div.el-dialog__body > div.body > div.input-wrap.manga > div.form.status > div.el-select > div,
-.site-theme-dark #app > div.el-dialog__wrapper.list-editor-wrap > div > div.el-dialog__body > div.body > div.checkbox-wrap > div.delete-btn,
 .site-theme-dark #app > div.page-content > div > div.search > div > div.filters-wrap.primary-filters > div.filters > div:nth-child(1) > div.search-wrap,
 .site-theme-dark #app > div.page-content > div > div.search > div > div.filters-wrap.primary-filters > div.filters > div:nth-child(n) > div.select-wrap > div,
 .site-theme-dark #app > div.page-content > div > div.search > div > div.filters-wrap.primary-filters > div.extra-filters-wrap > div,
@@ -557,7 +558,7 @@ h2.section-header .el-dropdown-link.el-dropdown-selfdefine{
 filteroff "Off" <<<EOT /*Extended feed filter off*\/ EOT;
 
 }
-@advanced dropdown hohcorrect "UI correction (ACTIVATE ONLY IF YOU'RE USING HOH'S USERSRIPT / link in discription)" {
+@advanced dropdown hohcorrect "UI correction (ACTIVATE ONLY IF YOU'RE USING HOH'S USERSCRIPT / link in discription)" {
 	hohcorrectoff "Off*" <<<EOT  EOT;
 hohcorrecton "On" <<<EOT /*UI correction(ACTIVATE ONLY IF YOU'RE USING HOH'S USERSRIPT -> https://greasyfork.org/en/scripts/370473-aniscripts)*\/
 #app {
@@ -573,6 +574,39 @@ hohcorrecton "On" <<<EOT /*UI correction(ACTIVATE ONLY IF YOU'RE USING HOH'S USE
 }
 
 ==/UserStyle== */
+@-moz-document url-prefix("http://example.com") {
+/*Code:
+ 2: anilist
+ 3: anilist custom color theme
+ 4: anilist custom nav bar
+ 5: home/social when logged off
+ 6: home custom feed filter
+ 7: user
+ 8: user custom
+ 9: user anime/manga list
+10: user favorites/stats/social/submissions
+11: user favorites overview
+12: user stats
+13: anime/manga
+14: edit anime
+15: edit manga
+16: nofications
+17: activity through direct link
+18: browse
+19: studio
+20: forum
+21: forum thread editor
+22: staff/character
+23: review
+24: front page when logged off
+25: settings
+26: hoh anilist
+27: hoh user stats
+28: hoh settings
+29: hoh compare anime/manga list
+*/
+}
+
 @-moz-document regexp(".*anilist.co.*") {
 /*General Adjustments*/
 ::-webkit-scrollbar {
@@ -586,7 +620,8 @@ hohcorrecton "On" <<<EOT /*UI correction(ACTIVATE ONLY IF YOU'RE USING HOH'S USE
 .site-theme-dark::-webkit-scrollbar-thumb{
 	background: rgba(var(--color-foreground-grey-dark))!important;
 }
-.text ::-webkit-scrollbar, .about ::-webkit-scrollbar, .activity-text ::-webkit-scrollbar, .input.el-textarea ::-webkit-scrollbar{
+.text ::-webkit-scrollbar, .about ::-webkit-scrollbar,
+.activity-text ::-webkit-scrollbar, .input.el-textarea ::-webkit-scrollbar{
 	width: 0px!important;
 }
 .container {
@@ -643,6 +678,9 @@ div,
 	color: rgba(var(--color-blue-dim));
 	font-size: 1rem!important;
 }
+.site-theme-dark .app-section{
+	background: rgba(var(--color-background))!important;
+}
 
 /*Dropdown menus are site theme based*/
 .el-select-dropdown,
@@ -676,6 +714,7 @@ div,
 #nav > div.wrap > div.links > span > div{
 	box-shadow: none!important;
 }
+
 /*User dropdown*/
 #nav > div.wrap > div.user > div > div.dropdown,
 #nav > div.wrap > div.links > span > div{
@@ -703,16 +742,14 @@ div,
 .el-textarea__inner {
 	border-radius: 0;
 }
-.markdown-editor {
-	margin-bottom: 2px;
-}
 .markdown-editor > div > svg {
 	min-width: 1em!important;
 }
+.markdown-editor > [title="Link"],
 .markdown-editor > [title="Image"],
 .markdown-editor > [title="Youtube Video"],
-.markdown-editor > [title="WebM Video"]  {
-	color: rgba(var(--color-blue), .6);
+.markdown-editor > [title="WebM Video"]{
+	color: rgba(var(--color-blue), .8);
 }
 .markdown-editor > [title="Youtube Video"]:hover {
 	color: rgb(255, 0, 0);
@@ -720,33 +757,36 @@ div,
 .activity-entry .details .status:first-letter{
 	text-transform: lowercase;
 }
+.markdown-editor{
+	border-radius: 0;
+	margin: 0px 0px 0px 0px!important;
+	background: rgba(var(--color-foreground-grey))!important;
+}
+.input .el-textarea__inner{
+	background: rgba(var(--color-foreground-grey-dark))!important;
+}
 
 /*Donator Badge alignment*/
-.details > .donator-badge {
-	left: 105px!important;
+.details > .donator-badge{
+	left: 100px!important;
 	padding:3px 5px 3px 5px!important;
-	top: 100%!important;
-    background: rgba(var(--color-foreground-blue));
-	-ms-transform: translate(0px, -34px);
-	/* IE 9 */
-	-webkit-transform: translate(0px, -34px);
-	/* Safari */
+	top: 108%!important;
+	background: rgba(var(--color-foreground-blue))!important;
 	transform: translate(0px, -34px);
 	font-size: 1rem!important;
 }
-.activity-text > div > div > div > .donator-badge {
-	position: relative!important;
-	display: inline-block!important;
-	left: 0px!important;
-	top: 2px!important;
-	-ms-transform: translate(0px, 0px);
-	/* IE 9 */
-	-webkit-transform: translate(0px, 0px);
-	/* Safari */
-	transform: translate(0px, 0px);
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div:nth-child(n) > div.wrap > div.list > div > div.donator-badge,
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div:nth-child(n) > div.wrap > div.text > div.header > div,
+#app > div.page-content > div > div.content.container > div > div:nth-child(n) > div.activity-feed-wrap > div.activity-feed > div:nth-child(n) > div.wrap > div.text > div.header > div,
+#app > div.page-content > div > div > div.wrap > div.text > div.header > div,
+#app > div.page-content > div > div > div.activity-feed-wrap > div.activity-edit > div.activity-entry.preview.activity-text > div > div.text > div.header > div{
+	background: rgba(var(--color-foreground-blue));
+	font-size: 1rem;
+	top: 1px;
 }
-.site-theme-dark .details > .donator-badge {
-	color: #fff;
+#app > div.page-content > div > div.content.container > div.social > div.activity-feed > div:nth-child(n) > div.wrap > div.list > div > div.donator-badge{
+	left: 120px!important;
+	top:100%!important;
 }
 
 /*Keeps long custom list names in the anime/manga editor in container(only works with hoh's script -> https://greasyfork.org/en/scripts/370473-aniscripts)*/
@@ -773,8 +813,7 @@ div.save.button:hover {
 }
 .home .button.cancel,
 .user .button.cancel,
-.activity-entry .button.cancel,
-.forum-thread .button.cancel{
+.activity-entry .button.cancel{
 	color: rgba(var(--color-text))!important;
 	transition: .2s;
 	margin: -5px 10px 0 0;
@@ -824,6 +863,11 @@ div.like-wrap:hover {
 }
 .list-editor-wrap .list-editor .body .custom-lists{
 	margin-bottom: 4px;
+	max-height: 230px;
+	overflow: scroll!important;
+}
+.list-editor-wrap .list-editor .body .custom-lists::-webkit-scrollbar {
+	width: 0px!important;
 }
 body > div.el-picker-panel.el-date-picker.el-popper,
 .el-date-picker__header-label{
@@ -842,6 +886,12 @@ body > div:nth-child(n) > div.popper__arrow{
 }
 .el-date-table td.next-month, .el-date-table td.prev-month {
     color: #606266;
+}
+#app > div.el-dialog__wrapper.list-editor-wrap > div > div.el-dialog__body > div.body > div.checkbox-wrap > div.delete-btn{
+	height: 36px;
+	border-style: solid;
+	border-width: 1px!important;
+	border-color: rgba(var(--color-text),.3)!important;
 }
 }
 
@@ -1002,10 +1052,6 @@ h2.section-header.link:hover {
 .activity-replies {
 	margin-top: 2px!important;
 }
-.reply-wrap .activity-replies .activity-edit .markdown-editor {
-	border-radius: 0;
-	margin: 0px 0px 2px 0px;
-}
 .activity-text .markdown {
 	overflow-wrap: break-word;
 	word-break: normal;
@@ -1112,6 +1158,9 @@ h2.section-header.link:hover {
 }
 .genre:nth-of-type(5)  .name {
     color: rgb(232, 93, 117);
+}
+.overview .content-wrap{
+	border-radius: 0!important;
 }
 
 /*wae's additions (affects genre display on profiles)*/
@@ -1648,6 +1697,95 @@ p{
 }
 }
 
+@-moz-document regexp(".*anilist.co/user/.*/stats") {
+/*Fixed stats distribution on user profiles*/
+.user-stats-unscoped .years-chart .ct-label.ct-horizontal.ct-end {
+	transform: rotate(90deg);
+	padding-top: 0px;
+	padding-left: 8px;
+	margin-left: -12px;
+	margin-top: -6px;
+}
+svg.ct-chart-line {
+	overflow: visible;
+}
+.ct-labels > foreignObject[width="30"] {
+	transform: translate(-8px, 9px);
+}
+.table > .row > div > .image {
+	left: 250px;
+	height: 25px;
+	width: 20px;
+	position: absolute;
+	display: unset;
+}
+.row a[href="/studio/34/Hal-Film-Maker"],
+.row a[href="/studio/18/Toei-Animation"],
+.row a[href="/studio/11/MADHOUSE"],
+.row a[href="/studio/1/Studio-Pierrot"],
+.row a[href="/studio/37/Studio-DEEN"],
+.row a[href="/studio/14/Sunrise"],
+.row a[href="/studio/7/JC-Staff"],
+.row a[href="/studio/6/Gainax"],
+.row a[href="/studio/44/Shaft"],
+.row a[href="/studio/2/Kyoto-Animation"],
+.row a[href="/studio/65/Tokyo-Movie-Shinsha"],
+.row a[href="/studio/10/Production-IG"],
+.row a[href="/studio/561/A1-Pictures"],
+.row a[href="/studio/21/Studio-Ghibli"],
+.row a[href="/studio/68/Mushi-Productions"],
+.row a[href="/studio/48/AIC"],
+.row a[href="/studio/200/Tezuka-Productions"],
+.row a[href="/studio/43/ufotable"],
+.row a[href="/studio/291/CoMix-Wave"],
+.row a[href="/studio/73/TMS-Entertainment"],
+.row a[href="/studio/829/Studio-Jack"],
+.row a[href="/studio/28/Oriental-Light-and-Magic"],
+.row a[href="/studio/27/Xebec"],
+.row a[href="/studio/3/GONZO"],
+.row a[href="/studio/112/Brains-Base"],
+.row a[href="/studio/300/SILVER-LINK"],
+.row a[href="/studio/51/diomeda"],
+.row a[href="/studio/314/White-Fox"],
+.row a[href="/studio/22/Nippon-Animation"],
+.row a[href="/studio/196/Production-Reed"],
+.row a[href="/studio/199/Studio-Nue"],
+.row a[href="/studio/803/Trigger"],
+.row a[href="/studio/132/PA-Works"],
+.row a[href="/studio/95/Doga-Kobo"],
+.row a[href="/studio/287/David-Production"],
+.row a[href="/studio/8/Artland"],
+.row a[href="/studio/569/MAPPA"],
+.row a[href="/studio/858/Wit-Studio"],
+.row a[href="/studio/41/Satelight"],
+.row a[href="/studio/456/Lerche"],
+.row a[href="/studio/91/feel"],
+.row a[href="/studio/290/Kinema-Citrus"],
+.row a[href="/studio/32/Manglobe"],
+.row a[href="/studio/4418/8bit"],
+.row a[href="/studio/555/Studio-Chizu"],
+.row a[href="/studio/45/Pink-Pineapple"],
+.row a[href="/studio/47/Studio-Khara"],
+.row a[href="/studio/13/Studio-4C"],
+.row a[href="/studio/103/Tatsunoko-Production"],
+.row a[href="/studio/6071/Studio-Shuka"],
+.row a[href="/studio/839/LIDENFILMS"],
+.row a[href="/studio/25/Milky-Animation-Label"],
+.row a[href="/studio/6222/CloverWorks"],
+.row a[href="/studio/309/GoHands"],
+.row a[href="/studio/911/Passione"],
+.row a[href="/studio/418/Studio-Gokumi"],
+.row a[href="/studio/365/PoRO"],
+.row a[href="/studio/292/AIC-Plus"],
+.row a[href="/studio/38/Arms"],
+.row a[href="/studio/6069/Studio-3Hz"],
+.row a[href="/studio/541/Seven"],
+.row a[href="/studio/6145/Science-SARU"],
+.row a[href="/studio/4/BONES"]{
+    color:rgba(var(--color-blue));
+}
+}
+
 @-moz-document regexp(".*anilist.co/(anime|manga).*") {
 /*Social*/
 .reply,
@@ -1712,6 +1850,9 @@ p{
 	padding-top: 26.5px!important;
 	padding-bottom: 26.5px!important;
 }
+.overview .content-wrap{
+	border-radius: 0!important;
+}
 .status:nth-of-type(1)  .name {
     color: rgb(104, 214, 57);
 }
@@ -1728,7 +1869,7 @@ p{
     color: rgb(232, 93, 117);
 }
 .percentage-bar .percentage {
-    height: 3px;
+	height: 3px;	
 }
 .media-score-distribution .ct-bar {
     stroke-width: 7px;
@@ -1884,15 +2025,15 @@ h2.link:hover {
 .relations .cover[href^="/manga/"] {
 	border-bottom-style: solid;
 	border-bottom-color: rgba(232, 93, 117);
-	border-bottom-width: 4px;
+	border-bottom-width: 2px;
 }
 .relations .cover[href^="/anime/"] {
 	border-bottom-style: solid;
 	border-bottom-color: rgba(var(--color-blue));
-	border-bottom-width: 4px;
+	border-bottom-width: 2px;
 }
 .relations .cover div.image-text {
-	margin-bottom: 4px!important;
+	margin-bottom: 2px!important;
 	border-radius: 0px!important;
 	padding-bottom: 8px!important;
 	padding-top: 8px!important;
@@ -2079,6 +2220,10 @@ span.active:hover{
 	margin-bottom: 10px!important;
 	bottom: 0!important;
 }
+.details > .donator-badge{
+	top: 110px!important;
+	left: 120px!important;
+}
 }
 
 @-moz-document regexp(".*anilist.co/(search).*"), regexp(".*anilist.co/") {
@@ -2091,6 +2236,9 @@ span.active:hover{
 }
 .results{
 	grid-template-columns: repeat(auto-fill,150px)!important;
+}
+#nav > div.quick-search.visible > div.results{
+	grid-template-columns: 1fr 1fr!important;
 }
 #app > div.page-content > div > div > div.results.chart{
 	grid-template-columns: repeat(2,minmax(390px,760px))!important;
@@ -2134,7 +2282,7 @@ span.active:hover{
 #app > div.page-content > div > div > div.results.chart > div:nth-child(n) > div.data > div.footer{
 	background: rgba(var(--color-foreground-grey-dark));
 }
-.search .results.cover .media-card, .search .results .staff-card, .search-landing .results:not(.table) .media-card {
+.search .results.cover .media-card, .search .results .staff-card, .search-landing .results:not(.table) .media-card{
     width: 150px;
 }
 .search .results.cover .media-card .cover, .search-landing .results:not(.table) .media-card .cover, .search .results .staff-card .cover {
@@ -2157,7 +2305,7 @@ span.active:hover{
 #app > div.page-content > div > div > div.filters-wrap.primary-filters > div.extra-filters-wrap > div.dropdown.anime > div:nth-child(1) > div:nth-child(n) > div.select-wrap > div{
 	background: rgba(var(--color-background))!important;
 }
-.open-btn, .dropdown.anime{
+.open-btn, .dropdown.anime, .dropdown.manga{
 	background-color: rgba(var(--color-foreground),.98)!important;
 	box-shadow: none;
 }
@@ -2270,12 +2418,15 @@ span.active:hover{
 	font-size: 1rem!important;
 	border-radius: 0 0 3px 3px;
 }
+.studio-page-unscoped:not(.cardView) .hohStudioSubstitute .media-card{
+	background:rgba(var(--color-foreground-blue));
+}
 }
 
 @-moz-document regexp(".*anilist.co/forum/.*") {
 /*Forum looks slimmer*/
 .comment-wrap {
-	border-left: solid 5px rgb(159, 173, 189)!important;
+	border-left: solid 2px rgb(159, 173, 189)!important;
 	margin-bottom: 10px!important;
 }
 .el-pager .number {
@@ -2290,6 +2441,32 @@ span.active:hover{
 #app > div.page-content > div > div.body > div.footer{
 	margin-top: 25px!important;
 }
+#app > div.page-content > div > div.comment-editor.active{
+	padding-top: 0!important;
+}
+#app > div.page-content > div > div.comment-editor.active > div > div.editor{
+	padding: 0!important;
+	background: rgba(var(--color-foreground-grey))!important;
+}
+#app > div.page-content > div > div.comment-editor.active > div > div.editor > div.input.el-textarea > textarea,
+#app > div.page-content > div > div.comment-editor.active > div > div.preview{
+	background: rgba(var(--color-foreground-grey-dark))!important;
+	border-radius: 0!important;
+}
+.markdown-editor{
+	margin-bottom: 0!important;
+	background: rgba(var(--color-foreground-grey))!important;
+}
+#app > div.page-content > div > div.comment-editor.active > div > div.editor > div.actions{
+	background: rgba(var(--color-foreground-grey))!important;	
+}
+#app > div.page-content > div > div:nth-child(4) > div.comments > div.nav{
+	background: rgba(var(--color-foreground-grey));
+	right: 1vw;
+}
+.site-theme-dark .reply{
+	border: none!important;
+}
 
 /*Filter modification*/
 .filter-group a {
@@ -2302,7 +2479,7 @@ span.active:hover{
 }
 .filter-group .router-link-active:not(.inactive) {
 	background: rgba(var(--color-blue))!important;
-	color: rgb(255, 255, 255)!important;
+	color: rgba(255, 255, 255)!important;
 	font-weight: 500!important;
 }
 
@@ -2314,7 +2491,7 @@ span.active:hover{
 }
 .like .liked,
 .footer > .actions > .button.like > .like-wrap > .button.liked .icon{
-	color: rgb(232, 93, 117)!important;
+	color: rgba(232, 93, 117)!important;
 }
 .subscribe {
 	transition: .2s;
@@ -2337,24 +2514,44 @@ span.active:hover{
 }
 
 /**/
+.forum-thread .button.cancel{
+	color: rgba(var(--color-text))!important;
+	transition: .2s;
+	margin: -5px 10px 0 0;
+	border-style: solid;
+	border-radius: 3px;
+	border-width: 1px!important;
+	border-color: rgba(var(--color-text),.3);
+	margin-bottom: 5px;
+}
+.forum-thread .button.cancel:hover{
+	background: rgba(var(--color-foreground-blue));
+	transition: .2s;
+	margin: -5px 10px 0 0;
+	box-shadow: none;
+	margin-bottom: 5px;
+}
 div.button.save{
 	color: rgba(var(--color-text))!important;
 	background: rgba(var(--color-foreground))!important;
 	border-color: rgba(var(--color-text));
-		display: grid;
-    text-align: center;
+	display: grid;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-right: 10px;
 }
 div.save.button:hover{
 	background: rgba(var(--color-foreground-blue))!important;
 	transition: .2s;
 	box-shadow: none;
+	margin-bottom: 5px;
 }
 .button.cancel{
 	color: rgba(var(--color-text))!important;
 	background: rgba(var(--color-foreground))!important;
 	border-color: rgba(var(--color-text))!important;
 	display: grid;
-    text-align: center;
+	text-align: center;
 	padding-left: 15px!important;
 }
 .button.cancel:hover {
@@ -2389,7 +2586,7 @@ div.button.save, .save{
 div.save.button:hover, .save:hover {
 	background: rgba(var(--color-foreground-blue))!important;
 	transition: .2s;
-	margin-top: -5px 0 0 0;
+	margin-top: -5px;
 	box-shadow: none;
 }
 .button.cancel{
@@ -2410,97 +2607,54 @@ div.save.button:hover, .save:hover {
 }
 }
 
-@-moz-document regexp(".*anilist.co/user/.*/stats") {
-/*Fixed stats distribution on user profiles*/
-.user-stats-unscoped .years-chart .ct-label.ct-horizontal.ct-end {
-	transform: rotate(90deg);
-	padding-top: 0px;
-	padding-left: 8px;
-	margin-left: -12px;
-	margin-top: -6px;
-}
-svg.ct-chart-line {
-	overflow: visible;
-}
-.ct-labels > foreignObject[width="30"] {
-	transform: translate(-8px, 9px);
-}
-.table > .row > div > .image {
-	left: 250px;
-	height: 25px;
-	width: 20px;
-	position: absolute;
-	display: unset;
-}
-.row a[href="/studio/34/Hal-Film-Maker"],
-.row a[href="/studio/18/Toei-Animation"],
-.row a[href="/studio/11/MADHOUSE"],
-.row a[href="/studio/1/Studio-Pierrot"],
-.row a[href="/studio/37/Studio-DEEN"],
-.row a[href="/studio/14/Sunrise"],
-.row a[href="/studio/7/JC-Staff"],
-.row a[href="/studio/6/Gainax"],
-.row a[href="/studio/44/Shaft"],
-.row a[href="/studio/2/Kyoto-Animation"],
-.row a[href="/studio/65/Tokyo-Movie-Shinsha"],
-.row a[href="/studio/10/Production-IG"],
-.row a[href="/studio/561/A1-Pictures"],
-.row a[href="/studio/21/Studio-Ghibli"],
-.row a[href="/studio/68/Mushi-Productions"],
-.row a[href="/studio/48/AIC"],
-.row a[href="/studio/200/Tezuka-Productions"],
-.row a[href="/studio/43/ufotable"],
-.row a[href="/studio/291/CoMix-Wave"],
-.row a[href="/studio/73/TMS-Entertainment"],
-.row a[href="/studio/829/Studio-Jack"],
-.row a[href="/studio/28/Oriental-Light-and-Magic"],
-.row a[href="/studio/27/Xebec"],
-.row a[href="/studio/3/GONZO"],
-.row a[href="/studio/112/Brains-Base"],
-.row a[href="/studio/300/SILVER-LINK"],
-.row a[href="/studio/51/diomeda"],
-.row a[href="/studio/314/White-Fox"],
-.row a[href="/studio/22/Nippon-Animation"],
-.row a[href="/studio/196/Production-Reed"],
-.row a[href="/studio/199/Studio-Nue"],
-.row a[href="/studio/803/Trigger"],
-.row a[href="/studio/132/PA-Works"],
-.row a[href="/studio/95/Doga-Kobo"],
-.row a[href="/studio/287/David-Production"],
-.row a[href="/studio/8/Artland"],
-.row a[href="/studio/569/MAPPA"],
-.row a[href="/studio/858/Wit-Studio"],
-.row a[href="/studio/41/Satelight"],
-.row a[href="/studio/456/Lerche"],
-.row a[href="/studio/91/feel"],
-.row a[href="/studio/290/Kinema-Citrus"],
-.row a[href="/studio/32/Manglobe"],
-.row a[href="/studio/4418/8bit"],
-.row a[href="/studio/555/Studio-Chizu"],
-.row a[href="/studio/45/Pink-Pineapple"],
-.row a[href="/studio/47/Studio-Khara"],
-.row a[href="/studio/13/Studio-4C"],
-.row a[href="/studio/103/Tatsunoko-Production"],
-.row a[href="/studio/6071/Studio-Shuka"],
-.row a[href="/studio/839/LIDENFILMS"],
-.row a[href="/studio/25/Milky-Animation-Label"],
-.row a[href="/studio/6222/CloverWorks"],
-.row a[href="/studio/309/GoHands"],
-.row a[href="/studio/911/Passione"],
-.row a[href="/studio/418/Studio-Gokumi"],
-.row a[href="/studio/365/PoRO"],
-.row a[href="/studio/292/AIC-Plus"],
-.row a[href="/studio/38/Arms"],
-.row a[href="/studio/6069/Studio-3Hz"],
-.row a[href="/studio/541/Seven"],
-.row a[href="/studio/6145/Science-SARU"],
-.row a[href="/studio/4/BONES"]{
-    color:rgba(var(--color-blue));
-}
-}
-
 @-moz-document regexp(".*anilist.co/(staff|character)/.*") {
 /*Affects staff/character pages only*/
+.container{
+	padding-left: 43px;
+	padding-right:43px;
+}
+.favourite{
+	background: rgba(0,0,0,0)!important;
+	color: rgba(var(--color-text))!important;
+}
+.favourite.isFavourite{
+	color: rgb(232, 93, 117)!important;
+}
+#app > div.page-content > div > div:nth-child(1) > div:nth-child(1) > div > div > div.favourite > svg{
+	height: 35px;
+	width: 35px!important;
+}
+.favourite:hover{
+	color: rgb(232, 93, 117)!important;
+}
+.header{
+	background: rgba(var(--color-background))!important;
+}
+.expand-description{
+	background: linear-gradient(0deg,rgba(var(--color-background),1) 20%,rgba(var(--color-background),0))!important;
+}
+#app > div.page-content > div > div.filters.container > div.mini-select.sort > div{
+	background: rgba(var(--color-foreground-grey));
+	left: -61px!important;
+}
+#app > div.page-content > div > div.filters.container > div.mini-select.sort > div::before,
+#app > div.page-content > div > div.filters.container > div.mini-select.language > div::before{
+	color: rgba(var(--color-foreground-grey))!important;	
+}
+#app > div.page-content > div > div.filters.container > div.mini-select.language > div,
+#app > div.page-content > div > div.filters.container > div.checkbox-wrap.mini > div.checkbox{
+	background: rgba(var(--color-foreground-grey));
+}
+
+/*hohStaffPage*/
+a.content,
+div.image-text {
+	margin-bottom: 4px!important;
+	border-radius: 0px!important;
+	padding-bottom: 8px!important;
+	padding-top: 8px!important;
+	font-weight: 500!important;
+}
 .relations .cover[href^="/manga/"] + div div {
 	color: rgba(232, 93, 117);
 }
@@ -2521,33 +2675,9 @@ a.content[href^="/anime/"], .content {
 #app > div.page-content > div > div:nth-child(n) > div > div > div{
 	border: none;
 }
-a.content,
-div.image-text {
-	margin-bottom: 4px!important;
-	border-radius: 0px!important;
-	padding-bottom: 8px!important;
-	padding-top: 8px!important;
-	font-weight: 500!important;
-}
-.favourite{
-	background: rgba(0,0,0,0)!important;
-	color: rgba(var(--color-text))!important;
-}
-.favourite.isFavourite{
-	color: rgb(232, 93, 117)!important;
-}
-#app > div.page-content > div > div:nth-child(1) > div:nth-child(1) > div > div > div.favourite > svg{
-	height: 35px;
-	width: 35px!important;
-}
-.favourite:hover{
-	color: rgb(232, 93, 117)!important;
-}
-#app > div.page-content > div > div.character-roles.container{
-	margin-bottom: 10px;
-}
-.substitution .character-roles{
-    max-width: 1140px;
+#app > div.page-content > div > div.roles-wrap.substitution > div.character-roles.container{
+	max-width: 1200px!important;
+	margin-bottom: 40px;
 }
 }
 
@@ -2596,10 +2726,26 @@ div#nav.nav{
 	transition: .2s;
 	font-weight: 500;
 }
+.markdown-editor{
+	margin-bottom: 12px!important;
+}
 }
 
 @-moz-document regexp(".*anilist.co.*") {
 /*Only affects hoh's userscripts*/
+#hoh-character-roles > div > div > div.hohStatusDot.hohStatusDotRight{
+	right: 62px;
+	top: 64px;
+}
+.unread, .hohUnread{
+    border-right: solid 6px rgba(var(--color-blue))!important;
+}
+#nav > div.quick-search.visible > div.input > input[type=text]{
+	border: none!important;
+}
+#app > div.page-content > div > div.content.container > div.overview > div.relations > div > div:nth-child(n) > div{
+	background: rgba(var(--color-foreground-grey));
+}
 
 /*hohScript & More stats button*/
 .hohStatsTrigger.hohActive, .hohStatsTrigger.hohActive:hover{
@@ -2741,7 +2887,7 @@ a.tagLess.hohDouble::after{
 	line-height: 12px;
 }
 
-/*hohStaffRoles*/
+/*hohStaffPage*/
 #app > div.page-content > div > div:nth-child(n) > select,
 #app > div.page-content > div > div.media-roles.container > div:nth-child(n) > input,
 #app > div.page-content > div > div:nth-child(n) > input{
@@ -2763,12 +2909,9 @@ a.tagLess.hohDouble::after{
 #statusList{
 	position: relative!important;
 }
-.hohStatusDot.hohStatusDotRight{
-	height: 15px;
-	width: 15px;
-	border-radius: 3px;
-	top: 0;
-	right: 0;
+#app > div.page-content > div > div.roles-wrap.substitution > div.container.hohFilterBar > span:nth-child(6){
+	font-size: 1.3rem;
+	float: right;
 }
 
 /*hohTags on anime/mangalists*/
@@ -2788,7 +2931,7 @@ a.tagLess.hohDouble::after{
 	font-size: 1.3rem;
 	color: rgba(var(--color-text-lighter));
 }
-#Erwin > div.filters-wrap > div.hohExtraFilters > div > span:nth-child(2):before{
+div.filters-wrap > div.hohExtraFilters > div > span:nth-child(2):before{
 	content: "Most entries";
 	font-size: 1.3rem;
 	color: rgba(var(--color-text-lighter));
@@ -2829,10 +2972,10 @@ a.tagLess.hohDouble::after{
 }
 #app > div.page-content > div > div.content.container > div.social > div:nth-child(n) > div:nth-child(n) > div:nth-child(n) > button{
 	align-items: center!important;
-    background: rgba(var(--color-foreground));
-    border-radius: 0 4px 4px 0;
+	background: rgba(var(--color-foreground));
+	border-radius: 0 4px 4px 0;
 	font-size: 15px;
-    padding: 7px 10px;
+	padding: 7px 10px;
 	border-left: solid 2px rgba(var(--color-background))!important;
 	outline-width: 0;
 }
@@ -2860,11 +3003,11 @@ a.tagLess.hohDouble::after{
 }
 .hohThemeSwitch .active{
 	background: transparent!important;
-    color: rgba(var(--color-blue))!important;
+	color: rgba(var(--color-blue))!important;
 }
 .hohThemeSwitch .active:hover{
 	background: transparent!important;
-    color: rgba(var(--color-blue))!important;
+	color: rgba(var(--color-blue))!important;
 }
 
 div.hohMediaScore, span.hohMediaScore{
