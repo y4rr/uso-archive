@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `A more colorful theme that mimics the new site design, with the current site layout.`
-@version        20201118.12.51
+@version        20201124.11.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bkgColorKey1 "Background Theme" {
@@ -95,6 +95,7 @@ nav .info {
     background: linear-gradient(0deg, rgba(69,187,249,1) 0%, rgba(73,208,250,1) 100%);
     border: 1px solid;
     border-color: #46BCF9;
+	letter-spacing: 0.2px;
 }
 
 .thread-label {
@@ -407,7 +408,7 @@ width: 49.3%;
 }
 }
 
-@-moz-document url-prefix("https://www.brick-hill.com/trades/") {
+@-moz-document url-prefix("https://www.brick-hill.com/trades") {
 .tabs .tab {    
 width: 32.8%;
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kajika
 @description    `Dark theme for cppreference/com, made to blend nicely with breeze dark (KDE theme)`
-@version        20201111.8.41
+@version        20201124.4.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -120,9 +120,18 @@ div.vectorTabs ul li a
 /* Content */
 
 div#cpp-content-base,
-.t-navbar-menu > div
+.t-navbar-menu > div,
+table.wikitable
 {
     background: var(--main-bg-color);
+    color: var(--lighter-fg-color);
+}
+
+table.wikitable > tr > th,
+table.wikitable > * > tr > th
+{
+    background: var(--lighter-bg-color);
+    color: var(--lighter-fg-color);
 }
 
 div#content

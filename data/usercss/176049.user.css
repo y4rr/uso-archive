@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           msdn.microsoft.com by BamaBraves
+@name           Microsoft Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020629.5.19
+@version        20201124.2.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -75,8 +75,11 @@
 	text-decoration: none!important;
 }
 
+.issueDate,
 .issueNum,
-.issueDate
+.supHomeAndLandingPageFooterElement .supHomeAndLandingPageFooterElementCallToAction,
+.supHomeAndLandingPageModule .ocpArticleContent .supHomeAndLandingPageCTA,
+.supHomeAndLandingPageModule .ocpArticleContent .supHomeAndLandingPageCTAButton
 {
 	text-transform: capitalize!important;
 }
@@ -86,15 +89,23 @@
 #threadPageSidebarContainer .unified-baseball-card,
 #ux-header header div.toc nav ul.navL1 > li > a:hover,
 #ux-header header div.toc nav ul.navL1 > li.current > a,
+.buttonBorder,
 .c-feature .c-call-to-action:not(.f-primary):not(.f-secondary):active span,
 .c-feature .c-call-to-action:not(.f-primary):not(.f-secondary):focus:not(.x-hidden-focus) span,
 .c-feature .c-call-to-action:not(.f-primary):not(.f-secondary):hover span,
+.c-uhfh .c-me .msame_Header:focus,
+.c-uhfh :not(.x-hidden-focus) a:focus,
+.c-uhfh :not(.x-hidden-focus) button:focus,
+.c-uhfh a:not(.x-hidden-focus):focus,
+.c-uhfh button:not(.x-hidden-focus):focus,
 .country-selector.weglot-dropdown .wgcurrent,
 .m-feature .c-call-to-action:not(.f-primary):not(.f-secondary):active span,
 .m-feature .c-call-to-action:not(.f-primary):not(.f-secondary):focus:not(.x-hidden-focus) span,
 .m-feature .c-call-to-action:not(.f-primary):not(.f-secondary):hover span,
+.ocpArticleContent table.banded,
 .unified-baseball-card .baseball-card-header .baseball-card-summary,
 .unified-baseball-card .baseball-card-header .crop,
+#mwf-compare-ard #compare-accolate .new-sp4-banner, #home-ard #compare-accolate .new-sp4-banner,
 :focus,
 div#footerSock div#footerSockInner div.rating div.buttons > .button:hover,
 div#footerSock div#footerSockInner div.rating div.buttons > div > .button:hover,
@@ -113,15 +124,27 @@ selector
 	font-size: 21px!important;
 }
 
+#topNav .topNav,
+#topNav .topNavActiveCategory>.topNavDropdownTrigger,
+#topNav .topNavDropdownMenu,
+#topNav .topNavDropdownMenuItem a,
+#topNav,
+.c-paragraph-3,
+.c-paragraph-4,
+.c-subheading-5,
+.c-subheading-6,
+body,
 li,
 p
 {
 	font-size: 19px!important;
 }
 
-.mectrl_header .mectrl_headertext,
+#Fragment_Features .DetailedMediaList .block .label,
 #Fragment_Features .block .title,
-#Fragment_Features .DetailedMediaList .block .label
+.mectrl_header .mectrl_headertext,
+.supHomeAndLandingPageModule .ocpArticleContent .supHomeAndLandingPageCTA,
+.supHomeAndLandingPageModule .ocpArticleContent .supHomeAndLandingPageCTAButton
 {
 	font-size: 17px!important;
 }
@@ -147,18 +170,28 @@ selector
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-selector
-{
-	top: 10px!important;
+[data-grid~="container"] {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*___ Margins ______________________________________________________________________*/
 
+#Main,
 #page div#content,
 .codeSnippetContainer,
+.grd,
 .m-additional-information,
 .m-channel-placement,
-.row-layout-container
+.row-layout-container,
+.supHomeAndLandingPageFooter,
+.thread-message.thread-message-enus.threadSeoClass,
+.v3 .threadlist .lower-content .c-subheading-4,
+.v3 .threadlist .lower-content .m-card-group .c-card .thread-summary,
+.v3 .threadlist .lower-content .m-card-group .c-card,
+.v3 .threadlist .lower-content,
+#mwf-compare-ard #compare-accolate .new-sp4-banner, #home-ard #compare-accolate .new-sp4-banner,
+[role="contentinfo"]
 {
 	margin: 12px!important;
 }
@@ -170,13 +203,17 @@ selector
 
 /*___ Paddings _____________________________________________________________________*/
 
+#Main,
 #MainContent label.error,
 .article,
 .m-additional-information,
 .m-channel-placement,
 .m-product-detail-overview .m-product-detail-information.f-detail-only,
 .module-responsive-screenshots,
+.ocpArticleSizingWrapper,
+.ocpArticleContent .ocpAlert,
 .row-layout-container,
+.v3 .threadlist .lower-content,
 div#content
 {
 	padding: 12px!important;
@@ -203,11 +240,19 @@ selector
 /*___ Widths _______________________________________________________________________*/
 
 #JelloSizer,
+.c-uhff-nav,
+.grd,
+.ocpArticleSizingWrapper,
 .r_contributordetailspage .c-pivot .m-product-detail-overview .c-content-toggle .m-product-detail-description,
 .r_contributordetailspage_nolocale .c-pivot .m-product-detail-overview .c-content-toggle .m-product-detail-description,
 .r_pdp .c-pivot .m-product-detail-overview .c-content-toggle .m-product-detail-description,
 .r_pdprouteforsfa .c-pivot .m-product-detail-overview .c-content-toggle .m-product-detail-description,
-div#content
+.supCont .ocpArticleContent,
+.supCont .ocpArticleTitleSection,
+.supCont .supAppliesToSection,
+.supHomeAndLandingPageFooter,
+div#content,
+[data-grid~="container"]
 {
 	max-width: none!important;
 }
@@ -217,7 +262,17 @@ selector
 	width: auto!important;
 }
 
-#JelloSizer
+.ocpArticleContent table,
+.supCont .supAppliesToSection
+{
+    width: 100%!important;
+}
+
+#JelloSizer,
+#Main,
+.imagepriority-container,
+.grd,
+.supHomeAndLandingPageFooter
 {
 	width: 98%!important;
 }
@@ -231,12 +286,18 @@ div#msdn-technet-en-thread div#threadPageContentContainer
 {
 	width: 85%;
 }
+
+.supCont .ocpArticleTitleSection {
+    width: 72%;
+}
 }
 
 @-moz-document domain("microsoft.com") {
 /*__________________________________________________________________________________*/
+
 .c-uhfh > div:first-child .c-uhf-menu a,
 .c-uhfh > div:first-child .c-uhf-menu button,
+.msaActionText,
 a[href],
 td span
 {
@@ -252,10 +313,16 @@ a[href]:visited
 
 /*__________________________________________________________________________________*/
 
-.mectrl_header .mectrl_headertext,
 .c-rating[data-value] div:after,
 .c-uhfh > div:first-child .c-uhf-menu a:hover,
 .c-uhfh > div:first-child .c-uhf-menu button:hover,
+.mectrl_header .mectrl_headertext,
+.msaActionText:focus,
+.msaActionText:hover,
+.selectedPageNumber a,
+.v3 .threadlist .lower-content .m-card-group .c-card .stats-line-container .stats-line .stat-container .stat .stat-value,
+a:focus,
+a:hover,
 a[href]:hover span,
 a[href]:hover,
 h1,
@@ -272,10 +339,14 @@ input[type="radio"]:checked + label
 #MainContent,
 #epb .epb-container.theme-light .c-text-group .epb-text,
 .breadCrumb > span,
+.c-alert[role="alert"].f-information,
 .c-meta-text,
 .cc-banner,
+.home-category-grid-item-text,
 .issueNum,
+.m-alert[role="alert"].f-information,
 .m-immersive-hero-item > div > div .c-subheading,
+.ocpArticleContent table.banded.flipColors tr td:nth-child(2) p,
 .product-identity-root .pi-overflow-ctrl .pi-overflow-btn,
 .unified-baseball-card-mini .profile-mini,
 body,
@@ -290,6 +361,8 @@ p
 
 #epb .epb-container.theme-light .c-text-group .epb-launch,
 .c-uhff-nav .c-heading-4,
+.ocpArticleContent table th p,
+.ocpArticleContent table.banded.flipColors tr td:first-child p,
 h1,
 h2
 {
@@ -301,6 +374,7 @@ h2
 
 #Fragment_Features .DetailedMediaList .block .label,
 #Fragment_Features .block .title,
+#supAppliesToList,
 h3,
 h4,
 strong
@@ -311,8 +385,8 @@ strong
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-.m-social > span,
 .c-social > span,
+.m-social > span,
 h5,
 h6,
 label
@@ -326,6 +400,7 @@ label
 .FeatureTitle p,
 .issueDate,
 .messageContent .messageFooter .date,
+.text-nowrap,
 time
 {
 	color: #07beff!important;
@@ -334,9 +409,10 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
-.c-price span:not([content="Free"]),
 .c-price meta+span,
-.c-price s
+.c-price s,
+.c-price span:not([content="Free"]),
+[name="buttonYes"]
 {
 	color: #07ff24!important;
 	text-shadow: 1px 1px #000!important;
@@ -344,7 +420,9 @@ time
 
 /*___ Red __________________________________________________________________________*/
 
-#epb .epb-container.theme-light .c-group .c-action-trigger
+#epb .epb-container.theme-light .c-group .c-action-trigger,
+.modDeleted,
+[name="buttonNo"]
 {
 	color: #ff0707!important;
 	text-shadow: 1px 1px #000!important;
@@ -396,24 +474,19 @@ pre ::selection
 	color: #fff!important;
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted
-{
-	color: #af0!important;
-}
-
 [style="color:Blue;"]
 {
 	color: #00b3ff!important;
 }
 
+p b,
 pre
 {
 	color: #fffcc4!important;
+}
+
+.ocpArticleContent span {
+    color: #eddbdb!important;
 }
 }
 
@@ -429,6 +502,7 @@ html
 
 /*___ Background Gray ______________________________________________________________*/
 
+#Footer,
 #footerArea,
 .c-uhff-base,
 .c-uhfh > div:first-child,
@@ -439,7 +513,9 @@ div#ux-footer
 }
 
 #Fragment_ResourceBand,
+#topNav,
 .bg_default,
+.supLandingPage-WHATS-NEW #supHomeAndLandingPageHeroContainer,
 div#footerSock
 {
 	background-color: #0a0909!important;
@@ -456,12 +532,14 @@ div#footerSock
 .c-uhfh > div:first-child .c-uhf-menu > button:hover,
 .inner,
 .m-feature.f-background-neutral-10,
+.ocpArticleContent table th,
 .product-identity-root .pi-content .pi-stripe .pi-attach-channel,
 .product-identity-root .pi-content .pi-stripe .pi-edgeextensions-bar,
 .product-identity-root .pi-content .pi-stripe .pi-playbar,
 .product-identity-root .pi-content .pi-stripe .pi-promotion-bar,
 .product-identity-root .pi-content .pi-stripe .sku-remediation-information-module,
 .product-identity-root .pi-overflow-ctrl .pi-overflow-btn,
+.stealth-carousel .stealth-sub-carousel .stealth-sub-carousel-panel .panel-content,
 .weglotWidgetRow,
 a.c-call-to-action.f-secondary,
 button.c-call-to-action.f-secondary
@@ -483,6 +561,10 @@ button.c-call-to-action.f-secondary
 .codeCaption,
 .context-uhf,
 .m-channel-placement-item,
+.ocpArticleContent table.banded.flipColors tr,
+.ocArticle .ocpSection h2.ocpExpandoHead,
+.ocpArticleContent table.banded.flipColors thead tr:first-child,
+.selectedPageNumber,
 .searchbar .searchboxinnercontainer,
 .status.deleted,
 .status.discussion,
@@ -492,11 +574,18 @@ button.c-call-to-action.f-secondary
 .status.unanswered,
 .status.unansweredlocked,
 .status.unansweredprivate,
+.supHomeAndLandingPageModuleThemeWrapper:nth-child(odd):not(.supHomeAndLandingPageFooterWrapper),
 .theme-light,
 .unified-baseball-card .baseball-card-header .baseball-card-summary,
 .unified-baseball-card .baseball-card-header .crop,
 .unified-baseball-card-compact,
 .unified-baseball-card-hover div.unified-baseball-card,
+.v3 .threadlist .lower-content,
+.v3 .threadlist .lower-content .m-card-group .c-card,
+body #Main #PageContent #threadMain #threadMainContent #allRepliesLink.threadSeoClass,
+body #Main #PageContent #threadMain #threadMainContent #threadBottomSection,
+body #Main #PageContent #threadMain #threadMainContent .thread-message .m-card.thread-message-content .thread-message-content-reply-and-message .message-voting-container.threadSeoClass,
+body #Main #PageContent #threadMain #threadMainContent .thread-message .m-card.thread-message-content .thread-message-content-reply-and-message .thread-message-content-reply-action .thread-message-content-reply-action-button.threadSeoClass,
 div#footerSock div#footerSockInner div.rating div.buttons > .button:hover,
 div#footerSock div#footerSockInner div.rating div.buttons > div > .button:hover,
 div#footerSock div#footerSockInner div.userVoice div.buttons > .button:hover,
@@ -527,7 +616,7 @@ selector:hover
 #askaquestion,
 #epb .epb-container.theme-light .c-group .c-action-open,
 .theme-dark a.c-call-to-action,
-button.c-button.f-primary,
+button.c-button[type="submit"],
 div#footerSock div#footerSockInner div.rating div.buttons > .button,
 div#footerSock div#footerSockInner div.rating div.buttons > div > .button,
 div#footerSock div#footerSockInner div.userVoice div.buttons > .button,
@@ -543,7 +632,7 @@ div#footerSock div#footerSockInner div.userVoice div.buttons > div > .button
 #askaquestion:hover,
 #epb .epb-container.theme-light .c-group .c-action-open:hover,
 .theme-dark a.c-call-to-action:hover,
-button.c-button.f-primary:hover,
+button.c-button[type="submit"]:hover,
 div#footerSock div#footerSockInner div.rating div.buttons > .button:hover,
 div#footerSock div#footerSockInner div.rating div.buttons > div > .button:hover,
 div#footerSock div#footerSockInner div.userVoice div.buttons > .button:hover,
@@ -556,7 +645,7 @@ div#footerSock div#footerSockInner div.userVoice div.buttons > div > .button:hov
 #askaquestion:active,
 #epb .epb-container.theme-light .c-group .c-action-open:active,
 .theme-dark a.c-call-to-action:active,
-button.c-button.f-primary:active,
+button.c-button[type="submit"]:active,
 div#footerSock div#footerSockInner div.rating div.buttons > .button:active,
 div#footerSock div#footerSockInner div.rating div.buttons > div > .button:active,
 div#footerSock div#footerSockInner div.userVoice div.buttons > .button:active,
@@ -633,13 +722,17 @@ selector:active
 
 /*___ Plain Black __________________________________________________________________*/
 
+.supHomeAndLandingPageFooter,
 .codeSnippetContainer,
+.grd,
 .m-additional-information,
 .m-channel-placement,
 .m-content-placement,
 .m-product-detail-overview .m-product-detail-information.f-detail-only,
 .module-responsive-screenshots,
 .row-layout-container,
+[data-grid~="container"],
+[role="contentinfo"],
 div#content
 {
 	background-color: #000!important;
@@ -648,13 +741,17 @@ div#content
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.supHomeAndLandingPageFooter:hover,
 .codeSnippetContainer:hover,
+.grd:hover,
 .m-additional-information:hover,
 .m-channel-placement:hover,
 .m-content-placement:hover,
 .m-product-detail-overview .m-product-detail-information.f-detail-only:hover,
 .module-responsive-screenshots:hover,
 .row-layout-container:hover,
+[data-grid~="container"]:hover,
+[role="contentinfo"]:hover,
 div#content:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -662,13 +759,17 @@ div#content:hover
 
 /*___ Plain ________________________________________________________________________*/
 
+#topNav .topNavDropdownMenu,
 #ux-header header div.toc nav ul.navL2,
 #ux-header header div.toc nav ul.navL3,
 .article,
 .product-identity-root .pi-content,
-.theme-dark
+.stealth-carousel .stealth-sub-carousel .stealth-sub-carousel-panel,
+.theme-dark,
+.v3 .threadlist .lower-content .m-card-group .c-card,
+body #Main #PageContent #threadMain #threadMainContent .thread-message .m-card.thread-message-content.threadSeoClass
 {
-	background-color: #111!important;
+	background-color: #1a1919!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgb(86, 73, 73) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -678,7 +779,10 @@ div#content:hover
 #ux-header header div.toc nav ul.navL3:hover,
 .article:hover,
 .product-identity-root .pi-content:hover,
-.theme-dark:hover
+.stealth-carousel .stealth-sub-carousel .stealth-sub-carousel-panel:hover,
+.theme-dark:hover,
+.v3 .threadlist .lower-content .m-card-group .c-card:hover,
+body #Main #PageContent #threadMain #threadMainContent .thread-message .m-card.thread-message-content.threadSeoClass:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -691,7 +795,9 @@ div#content:hover
 #ux-header header div.toc nav ul.navL1 > li.current > a,
 #ux-header header div.toc nav ul.navL2 > li.active > a,
 #ux-header header div.toc nav ul.navL3 > li.active > a,
-.cc-banner
+.c-alert[role="alert"].f-information,
+.cc-banner,
+.m-alert[role="alert"].f-information
 {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -700,7 +806,8 @@ div#content:hover
 
 /*__ Blue Gradient _________________________________________________________________*/
 
-selector
+#static-banner.blue .offer-test,
+#supFeedbackWrapper
 {
 	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -729,7 +836,7 @@ selector
 
 /*__ Orange Gradient _______________________________________________________________*/
 
-selector
+.ocpArticleContent .ocpAlert
 {
 	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -739,8 +846,7 @@ selector
 
 /*__________________________________________________________________________________*/
 
-code,
-pre
+blockquote
 {
 	background: #111!important;
 	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
@@ -758,18 +864,36 @@ code
 
 /*___ Highlight Background _________________________________________________________*/
 
-selector:hover
+.ocpArticleContent table.banded.flipColors tr:hover,
+.ocArticle .ocpSection h2.ocpExpandoHead:hover
 {
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
 }
+
+#topNav .topNavActiveCategory>.topNavDropdownTrigger,
+#topNav .topNavDropdownMenuItem:hover,
+.topNavCategory:not(.topNavActiveCategory) .topNavDropdownTrigger:hover
+{
+	background: linear-gradient(to bottom, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+
+
+
+
 }
 
 @-moz-document domain("microsoft.com") {
 /*__________________________________________________________________________________*/
 
+
 #Fragment_Features .block,
 .col-md-12,
+.ocpArticleContent table.banded.flipColors tr,
+.ocArticle .ocpSection h2.ocpExpandoHead,
+.v3 .threadlist .lower-content .m-card-group .c-card,
 [data-grid~="col-6"]
 {
 	filter: brightness(75%)!important;
@@ -778,7 +902,17 @@ selector:hover
 /*__________________________________________________________________________________*/
 
 #Fragment_Features .block:hover,
+.c-feature > div .c-paragraph,
+.c-hero .c-subheading,
 .col-md-12:hover,
+.m-feature > div .c-paragraph,
+.m-hero-item .c-subheading,
+.m-immersive-hero-item > div > div .c-subheading,
+.ocArticle .ocpSection h2.ocpExpandoHead:hover,
+.ocpArticleContent table th p,
+.ocpArticleContent table.banded.flipColors tr:hover,
+.supARG-column-1-4:hover p,
+.v3 .threadlist .lower-content .m-card-group .c-card:hover,
 [data-grid~="col-6"]:hover
 {
 	filter: brightness(100%)!important;
@@ -786,7 +920,7 @@ selector:hover
 
 /*__________________________________________________________________________________*/
 
-img:not(.rss)
+img:not(.rss):not(.c-image)
 {
 	border-radius: 22px!important;
 }
@@ -800,28 +934,6 @@ img
 
 /*__________________________________________________________________________________*/
 
-li,
-p,
-tr
-{
-	filter: brightness(68%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
-}
-
-.m-immersive-hero-item > div > div .c-subheading,
-.m-hero-item .c-subheading,
-.c-hero .c-subheading,
-.c-feature > div .c-paragraph,
-.m-feature > div .c-paragraph,
-li:hover,
-p:hover,
-tr:hover
-{
-	filter: brightness(100%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
-}
-
-/*__________________________________________________________________________________*/
 selector
 {
 	opacity: .8!important;
@@ -838,6 +950,20 @@ selector:hover
 .c-glyph.glyph-heart-fill:before,
 .c-glyph.glyph-heart:before {
     content: "";
+}
+
+/* Avatar _____________*/
+
+.mectrl_header .mectrl_profilepic {
+	background: url(https://i.ibb.co/g3wQg00/avatar-32x32.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.mectrl_header .mectrl_profilepic {
+    background-size: 27px!important;
+    height: 31px!important;
+    padding-left: 27px!important;
+    width: 10px!important;
 }
 
 /* Comment Logo _______________________________________________________________*/
@@ -1077,17 +1203,21 @@ img.rss
 
 /* Windows Logo _______________________________________________________________*/
 
+[src="/socimages/appicons/windows.64x64x32.png"],
+[src="/static/resourceimages/categories/windows.svg"],
 .windowsBlue:after
 {
-	background: url(https://image.ibb.co/iRW1yw/microsoft-windows81.png) no-repeat!important;
+	background: url(https://i.ibb.co/LCcHqbW/microsoft-windows81.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.windowsBlue:after
-{
-	width: 33px!important;
-	margin-top: 7px;
-	height: 33px!important;
-	background-size: 24px!important;
+[src="/socimages/appicons/windows.64x64x32.png"],
+[src="/static/resourceimages/categories/windows.svg"],
+.windowsBlue:after {
+    background-size: 49px!important;
+    height: 56px!important;
+    padding-left: 52px;
+    margin-top: 7px;
+    width: 1px!important;
 }
 }
