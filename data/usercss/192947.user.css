@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           keybØardking - Nitro Type green theme
+@name           Nitro Type green theme
 @namespace      USO Archive
-@author         Tyler Tang
+@author         keybØardking
 @description    `This is a style for Nitro Type. I hope you like it!`
-@version        20201121.10.47
+@version        20201124.0.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.nitrotype.com")
 {
-  body
+body
   {
     background-color: #2d2e2e;
     overflow-y: scroll;
@@ -113,11 +113,16 @@
 
   .theme--pDefault .profile-bgHead
   {
-    background: url("https://wallpaperaccess.com/full/1188230.png") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+    background: url("https://cdn10.bigcommerce.com/s-raqyrv37/products/94/images/421/lime_colored_sand__37341.1454364400.1280.850.jpg?c=2") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
   }
 
-  .theme--pDefault.is-gold .profile-bg
+        .theme--pDefault.is-gold .profile-bg
   {
-    background: url("https://wallpaperaccess.com/full/1188230.png") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+    background: url("https://cdn10.bigcommerce.com/s-raqyrv37/products/94/images/421/lime_colored_sand__37341.1454364400.1280.850.jpg?c=2") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+  }
+
+  .theme--pDefault.is-guest .profile-bgHead
+  {
+    background: #fff0;
   }
 }

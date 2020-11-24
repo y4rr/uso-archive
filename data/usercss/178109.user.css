@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jan Procházka
 @description    `Šedá verze růžového redesignu Seznam Zprávy https://www.seznamzpravy.cz`
-@version        2020626.11.53
+@version        20201123.14.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,12 +20,18 @@ main, header {
     color: rgb(24,24,24) !important;
 }
 main *, header *, 
+.c_fB, .d_fA+.d_fz .c_fB,
+.d_fo+.d_fn .c_fp,
+.d_fo~.d_fn,
+.d_fq~.d_fn,
+.d_fl+.d_fk .c_fm,
+.d_fe+.d_fd .c_ff,
 .d_fb + .d_fa .c_fc,
 .d_fa + .d_e9 .c_fb,
 .d_fH + .d_fG .c_fI, /* reklama BRAND */
 .d_e6~.d_e5, .d_e8~.d_e5, /* reklama BRAND header */
 .d_e6+.d_e5 .c_e7,  /* reklama BRAND main */
-.d_fG  /* hlavička */ {
+.d_fG, .d_fq, .d_eM .f_a9   /* hlavička */ {
     background-color: rgb(244,244,244);
     color: rgb(24,24,24)
 }
@@ -68,6 +74,7 @@ main *, header *,
 }
 
 /* autor CV */
+.j_iD,
 .j_ia,
 .j_h3,
 .f_dd *  {
@@ -87,6 +94,10 @@ main *, header *,
 .d_gW {
     outline-width: 0 !important;
 }
+/* box Co byste měli vědět */
+.d_fo + .d_fn .c_fp,
+.j_in,
+.f_dN .j_in,
 /* info box */
 .f_dn.f_ed *,
 .j_hY {
@@ -107,7 +118,8 @@ main *, header *,
 ._5e72837e4a9a966730e2652a,
 .d_g8,
 .f_b0,
-.f_ch {
+.f_ch,
+.f_ck{
     outline-color: transparent !important; 
     /*background-color: transparent !important;*/
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201121.15.42
+@version        20201123.22.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -272,7 +272,7 @@ html:not(.style-scope)[dark], :not(.style-scope)[dark] {
 }
 
 .style-scope ytd-rich-metadata-renderer {/*side coloumn*/
-background-color: #601090;
+background-color: #1041909c;
 border-radius: 3px
 }
 ytd-comments {/*comments box*/
@@ -654,6 +654,13 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
     color: var(--paper-tooltip-text-color, white);
 	border: 1px solid #b84fff;
 	border-radius: 4px
+}
+
+ytd-toggle-button-renderer.style-text[is-icon-button] {/*thumbs*/
+    color: #f0f0f0;
+}
+span.yt-view-count-renderer {/*views*/
+    color: #f0f0f0;
 }
 
 /***************Y****************/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Maksim Alyabyshev
 @description    `https://vk.com/redesign.darktheme.telegramstyle   (подпишитесь, что бы группа выпадала в поиске)Сообщения о багах и т.п. , пишите прям под постом с последним обновлением, желательно со скринами.Тёмная тема выполненная в стиле тёмно-синих оттенков Telegram клиента.Если тёмные оттенки слабо различимы, значит выбрано неудобное расположение для работы, бликовый свет и освещение должны быть сбалансированными.Не идеaл, ну почти.Переключиться на новый дизайн ВК нужно через меню ПОЛЬЗОВАТЕЛЬ -> НАСТРОЙКИ -> ОБЩЕЕ, пункт "Обновлённый дизайн"`
-@version        20201123.9.40
+@version        20201123.13.4
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -2862,4 +2862,14 @@ body.new_header_design .top_audio_player_title {
 [dir] .top_nav_btn.active {
     background-color: hsla(218, 29%, 18%, .4);
 }
+[dir] .top_notify_count {
+    border-color: #0e162100;
+    background-color: #eb2241;
+}
+[dir] .top_nav_btn:hover .top_notify_count{
+    border-color: #0e162100;
+}
+/* [dir] .top_notify_count:hover {
+    border-color: transparent;
+} */
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tritium Decay
 @description    `This theme tries to make the new Twitter design look less different from its previous design.The top bar is brought back and colors of things are made to match the older twitter. There is support for all default colour schemes.If you like it, please leave a positive rating.Contact me on  <a href="https://twitter.com/TritiumDecay">My Twitter</a> if you wish to suggest a change.Screenshots<a href="https://userstyles.org/style_screenshots/173651_additional_36525.jpeg?r=1591152038">Dark Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36637.jpeg?r=1592244973">Profile Backgrounds</a><a href="https://userstyles.org/style_screenshots/173651_additional_36528.jpeg?r=1591152038">Light Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36529.jpeg?r=1591152038">Lights Out Mode</a>-Basically all languages are supported`
-@version        20201121.0.28
+@version        20201123.15.53
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown profile "Expanded Profile Banners" {
@@ -351,19 +351,31 @@ body{background-color: var(--bg2colour)!important;}
 
 /*DROPDOWN - Dark Scrollbar - scrollbar2
 html{
-  scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
+	scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(61, 84, 102) rgb(21, 32, 43) !important;
 }
 */
 
 /*DROPDOWN - Light Scrollbar - scrollbar3
 html{
-  scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
+	scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(211, 222, 230) rgb(255, 255, 255) !important;
 }
 */
 
 /*DROPDOWN - Lights Out Scrollbar - scrollbar4
 html{
-  scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
+	scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
+}
+
+[style*="background-color: rgb("]{
+	scrollbar-color: rgb(47, 51, 54) rgb(0, 0, 0) !important;
 }
 */
 
@@ -417,6 +429,7 @@ html{
     height: 1px !important;
 	border-top-width: 0px!important;
 }
+
 
 [class="css-1dbjc4n r-1ysxnx4 r-1igl3o0 r-rull8r r-qklmqi r-2sztyj r-1efd50x r-5kkj8d r-1or9b2r"]{
     height: 1px !important;
