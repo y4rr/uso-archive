@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BillyCurtis
 @description    `This CSS requires the user to have enabled Dark Theme within the Twitch settings as it replaces the default Dark Theme to Lights out.`
-@version        2020113.22.3
+@version        20201124.15.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -80,6 +80,14 @@
     .tw-root--theme-dark .drag-and-drop-theming .mosaic-split.-column {height: 1px;}
     .tw-root--theme-dark .stream-manager--page-view .mosaic-window-body {background-color: var(--color-black);}
     .tw-root--theme-dark .last-stream-summary {background: var(--color-black);}
+    /*Channel*/
+    .tw-root--theme-dark .user-image-uploader__background-container {box-shadow: var(--shadow-elevation-3);}
+    .tw-root--theme-dark .update-profile-picture-modal {box-shadow: var(--shadow-elevation-3);}
+    .tw-root--theme-dark .profile-edit {box-shadow: var(--shadow-elevation-3);}
+    /*Achievements*/
+    .tw-root--theme-dark .ach-sb {background-color: var(--color-black) !important;}
+    .tw-root--theme-dark .ach-card--expanded .ach-card__inner {background-color: var(--color-black) !important;}
+
 /***CHAT***/
     .tw-root--theme-dark .chat-viewers__pane {background: var(--color-black) !important;}
     .tw-root--theme-dark .chat-room {background: var(--color-black) !important;}

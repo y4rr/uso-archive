@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.6
+@name           Youtube WideScreen (New Design Polymer) v.7
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
-@version        20201018.18.0
+@version        20201124.20.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.6 ==== */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.7 ==== */
 
 /* (new5) GM in USE:
 
@@ -32,7 +32,30 @@ https://greasyfork.org/fr/scripts/11486-youtube-progressbar-updater
 GM "Youtube Play Next Queue":
 https://greasyfork.org/fr/scripts/28678-youtube-play-next-queue
 
-Note:
+GM "YouTube Links";
+https://greasyfork.org/en/scripts/5566-youtube-links
+
+For embedded Youtube:
+GM "Allow full screen on embedded Youtube":
+https://greasyfork.org/fr/scripts/398281-allow-full-screen-on-embedded-youtube
+
+Seems work with:
+GM "Youtube polymer engine fixes"
+https://greasyfork.org/en/scripts/405614-youtube-polymer-engine-fixes
+
+VIDEOS Restricted:
+GM "YouTube: Age Verification Bypass > v.1.5.3":
+https://greasyfork.org/en/scripts/375525-youtube-age-verification-bypass
+Work perfecly!important;
+Others Solutions:
+BKLET - Bookmarklet :
+BLET "Bypass YT login!" (watch a protected YouTube):
+https://www.nsfwyoutube.com/
+OR USE this ADDON:
+XPI "Ageless for YouTube" :
+https://addons.mozilla.org/en-US/firefox/addon/ageless/
+
+Note about Waterfox Classic:
 For use with Waterfox Classic and  User Agent Switcher, choose:
 Force for the domain (the first one)
 Robot: Google Bot
@@ -53,7 +76,134 @@ ytd-consent-bump-lightbox#consent-bump ,
     display: none !important;
 }
 
-/* (new6)SECONDARY - TEST LIVE CHAT :
+/* (new7) ADAP GM "YouTube Links"*/
+#masthead-container.ytd-app {
+    z-index: 0;
+}
+ytd-thumbnail .ujs-links-cls.ujs-quality {
+    opacity: 0.2;
+}
+ytd-thumbnail:hover .ujs-links-cls.ujs-quality {
+    opacity: 0.8;
+}
+#ujs-hdr-links-div {
+position: fixed !important;
+display: inline-block !important;
+bottom: -65px ;
+left: 7.5% ; ;
+z-index: 500000000 !important;
+    visibility: hidden ;
+    visibility: visible ;
+}
+#ujs-hdr-links-div:hover {
+    bottom: 0px ;
+    visibility: visible ;
+}
+#ujs-hdr-links-div:hover {
+    visibility: visible ;
+}
+#ujs-hdr-links-div:after {
+    content: "👁" ;
+    position: absolute ;
+    height: 20px ;
+    line-height: 20px ;
+    top: -20px ;
+    right: 20px ;
+    font-size: 25px ;
+    border-radius: 20px 20px 0 0 ;
+    background-color: red;
+    visibility: visible ;
+}
+
+
+/* (new7) TEST VIDEO RESTRICTED:
+GM "YouTube: Age Verification Bypass 
+=== */
+/* (new7) ADD NOTE ON THE RESTICTED PLAYER about Solution */
+#error-screen.ytd-watch-flexy {
+/*     display: inline-block !important; */
+/* visibility: hidden !important; */
+}
+.ytd-page-manager.hide-skeleton[player-unavailable=""]  #player #button.yt-player-error-message-renderer yt-button-renderer a.yt-simple-endpoint:before {
+    content: "Video Restricted \A use addon:\A  Ageless for YouTube" ;
+    position: fixed ;
+    display: inline-block !important;
+    width: 57% ;
+    height: 15% ;
+top: 65px ;
+left: 1.9% ;
+    font-size: 30px ;
+    white-space: pre;
+    text-align: center ;
+    z-index: 50000 ;
+visibility: visible !important;
+color: gold !important;
+background: rgba(255, 0, 0, 0.1);
+}
+
+/* (new7) TEST AIGAINST EMBED YOUTUBE in OTHERS SITES cf REDDIT 
+.html5-video-player.ytp-embed .html5-main-video.video-stream
+*/
+/* html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-fullscreen):not(.ytp-hide-controls):not(.ytp-embed) .html5-main-video, */
+html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video.video-stream {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+}
+html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-fullscreen):not(.ytp-hide-controls) .ytp-tooltip.ytp-preview:not(.ytp-text-detail) {
+/* height: 50px !important; */
+/* width: 120px !important; */
+margin-top: 70px !important;
+/*     background-color: red !important; */
+}
+html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles  {
+    display: none !important;
+}
+
+/* (new7) TEST EMBED YOUTUBE FULL SCREEN - TEST BYPASS AGE RESTRICTION BY ADDING:
+/embed/
+In place of:
+/watch?v=
+TEST LINK VID RESTRICTED NORMAL:
+https://www.youtube.com/watch?v=YgT3e4CMMD4
+TEST LINK VID RESTRICTED URL TWEAKED:
+https://www.youtube.com/embed/YgT3e4CMMD4
+LINK TIPS:
+https://www.wikihow.com/Bypass-Age-Restrictions-on-YouTube-Videos
+==== */
+.html5-video-player.ytp-embed.ytp-large-width-mode.paused-mode:not(.ytp-fullscreen):not(.ytp-hide-controls) .ytp-chrome-bottom{
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 93% !important;
+    opacity: 1;
+/*     background-color: red !important; */
+}
+.ytp-exp-bigger-button .ytp-chrome-controls {
+    height: 40px;
+    line-height: 40px;
+}
+/* TEST EMBED YOUTUBE FULL SCREEN - PAUSE */
+.html5-video-player.ytp-embed.ytp-large-width-mode.playing-mode:not(.ytp-fullscreen):not(.ytp-hide-controls) .ytp-chrome-bottom{
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 96% !important;
+    opacity: 1;
+}
+/* TEST EMBED YOUTUBE FULL SCREEN - PLAY HOVER */
+.html5-video-player.ytp-embed.ytp-large-width-mode.playing-mode:not(.ytp-fullscreen):not(.ytp-hide-controls):hover .ytp-chrome-bottom{
+    top: 93% !important;
+    background-color: transparent!important;
+}
+/* TEST EMBED YOUTUBE FULL SCREEN - ENDED */
+.html5-video-player.ytp-embed.ytp-large-width-mode.ended-mode:not(.ytp-fullscreen):not(.ytp-hide-controls):hover .ytp-chrome-bottom ,
+.html5-video-player.ytp-embed.ytp-large-width-mode.ended-mode:not(.ytp-fullscreen):not(.ytp-hide-controls) .ytp-chrome-bottom{
+    top: 93% !important;
+    background-color: green !important;
+}
+
+/* (new7) SECONDARY - TEST LIVE CHAT :
 CABVIEW: Live chat and Stream from the Bergen Line in Norway
 https://www.youtube.com/watch?v=ZHgXfhiDIIM
 === */
@@ -120,6 +270,11 @@ ytd-live-chat-frame:hover::before {
     border-style: solid;
     border-width: 5px 5px 1px;
 }
+/* NO DARK */
+html:not([dark]):not(.style-scope) ytd-live-chat-frame::before {
+    background-color: white;
+}
+
 iframe.ytd-live-chat-frame {
     flex: 1 1 1e-9px;
     width: 100%;
@@ -153,7 +308,7 @@ ytd-live-chat-frame:hover #message.ytd-message-renderer {
 }
 
 
-#message.ytd-message-renderer:before {
+ytd-live-chat-frame #message.ytd-message-renderer:before {
 content: "⛔" ;
     display: inline-block;
     position: fixed;
@@ -171,6 +326,26 @@ background: black !important;
 opacity: 0.5 ;
 }
 
+/* (new7) COMMENT DISABLE 
+https://www.youtube.com/watch?v=SA0RlGtOCmE
+=== */
+ytd-comments #message.ytd-message-renderer:before {
+content: "⛔" ;
+    display: inline-block;
+    position: fixed;
+width: 15px !important;
+height: 13px !important;
+line-height: 13px ;
+    top: 60px;
+    right: 26.9% ;
+border-radius: 50% ;
+font-size: 10px ;
+text-align: center ;
+    visibility: visible;
+z-index: 5000000 !important;
+background: black !important;
+opacity: 0.5 ;
+}
 
 /* (new5) CHANNEL - SUBSRIBE CARD */
 .ytd-two-column-browse-results-renderer .ytd-channel-video-player-renderer .html5-endscreen.ytp-player-content.subscribecard-endscreen {
@@ -387,13 +562,13 @@ ytd-playlist-panel-renderer[collapsible] #header-description h3 {
     width: 65%;
     float: right;
     font-size: 15px;
-outline: 1px solid yellow ;
+/* outline: 1px solid yellow ; */
 }
 ytd-playlist-panel-renderer[collapsible]  #publisher-container  {
     float: left;
     margin-top: 0px !important;
     font-size: 15px;
-outline: 1px solid violet ;
+/* outline: 1px solid violet ; */
 }
 
 .ytd-playlist-panel-renderer h3 yt-formatted-string a.yt-simple-endpoint.yt-formatted-string  {
@@ -426,13 +601,15 @@ outline: 1px solid violet ;
     top: 83px ;
     left: 60% !important;
     padding-top: 0px;
+    padding-bottom: 0px !important;
     overflow: hidden;
     overflow-y: auto;
 z-index: 500 !important;
 /* border-bottom: 5px solid blue; */
-border-right: 5px solid green;
-border-left: 5px solid green;
-/* background-color: yellow  !important; */
+border-right: 5px solid #333;
+border-left: 5px solid #333;
+border-bottom: 1px solid red;
+background-color: #333  !important;
 }
 
 /* PLAYLIST - TOGGLE ARROW - Change to BAKGROUND color CHANGE */
@@ -447,52 +624,134 @@ background-color: black  !important;
 }
 
 
-/* (new4) LEFT COLUMN - RELATED - === */
-ytd-watch-next-secondary-results-renderer ,
-#related.ytd-watch-flexy {
+/* (new7) LEFT COLUMN - RELATED - GENERAL (AQUA) === */
+
+/* #related.ytd-watch-flexy , */
+ #related.ytd-watch-flexy ytd-watch-next-secondary-results-renderer  {
     position: fixed;
     display: inline-block;
     width: 39.5% ;
-    height: 69vh ;
+    height: 89.8vh !important;
     top: 85px ;
     left: 60% !important;
-    padding-top: 195px;
+/* padding-top: 195px; */
     overflow: hidden;
     overflow-y: auto;
 border-bottom: 1px solid red;
 border-right: 5px solid #222;
 border-left: 5px solid #222;
-/* background-color: yellow  !important; */
+/* background-color: aqua  !important; */
 }
 
 
-#items.ytd-watch-next-secondary-results-renderer {
+/* #items.ytd-watch-next-secondary-results-renderer {
     position: fixed;
     display: inline-block;
     width: 39.5% ;
     height: 69vh ;
+    top: 87px ;
+    left: 60% !important;
+padding-top: 195px !important;
+    overflow: hidden;
+    overflow-y: auto;
+border-top: 1px dashed #222;
+border-bottom: 1px solid #222;
+border-right: 5px solid #222;
+border-left: 5px solid #222;
+background-color: red;
+} */
+
+/* (new7)RIGHT COLUMN - WITH QUEUE TOP (BLUE) - NO normal SEARCH INPUT / NO LECT AUTO:
+https://www.youtube.com/watch?v=C8XGd7Lg5GM
+=== */
+
+#related ytd-watch-next-secondary-results-renderer #items.ytd-watch-next-secondary-results-renderer {
+    position: fixed !important;
+    display: inline-block !important;
+    width: 39.5% ;
+    height: 75.2vh !important;
+top: 87px ;
+    left: 60% !important;
+padding-top: 135px !important;
+/* padding-top: 5px !important; */
+    overflow: hidden;
+    overflow-y: auto;
+border-top: 1px dashed red;
+border-bottom: 1px solid red;
+border-right: 5px solid #222;
+border-left: 5px solid #222;
+/* background-color: violet; */
+}
+/* WITH GM ENABLE - SEACH INPUT */
+#related #suggestions-search.playlist-or-live + ytd-watch-next-secondary-results-renderer {
+    position: fixed;
+    display: inline-block;
+    width: 39.5% ;
+    height: 89.3vh !important;
     top: 85px ;
     left: 60% !important;
-    padding-top: 195px;
+/* padding-top: 195px; */
     overflow: hidden;
     overflow-y: auto;
 border-bottom: 1px solid red;
 border-right: 5px solid #222;
 border-left: 5px solid #222;
-background-color: #333 ;
+/* background-color: aqua  !important; */
 }
+/* (new7) RIGHT COLUMN - PLAYLIST PRESENT (YELLOW) :
+ https://www.youtube.com/watch?v=YqL6stzNsqE&list=RDnHqKu5ofUbY&index=9
+=== */
+ytd-playlist-panel-renderer#playlist[playlist-type_="RDnH"] ~ #related ytd-watch-next-secondary-results-renderer.ytd-watch-flexy #items {
+    position: fixed;
+    display: inline-block;
+    width: 39.5% ;
+    max-height: 68.1vh !important;
+    top: 87px ;
+    left: 60% !important;
+padding-top: 195px !important;
+    overflow: hidden;
+    overflow-y: auto;
+border-top: 1px solid red;
+border-bottom: 1px solid red;
+border-right: 5px solid #222;
+border-left: 5px solid #222;
+/* background-color: yellow ; */
+}
+
 /* NO DARK */
 html:not([dark]):not(.style-scope) #items.ytd-watch-next-secondary-results-renderer {
 background-color: white !important;
 }
 
-/* (new5) TOP RIGHT PANEL */
+/* (new7)RIGHT COLUMN - NO QUEUE / NO PLAY LIST MODE (TAN) :
+https://www.youtube.com/watch?v=SA0RlGtOCmE
+=== */
+#columns #primary.ytd-watch-flexy + #secondary.ytd-watch-flexy #secondary-inner  dom-if + #panels + #donation-shelf  + dom-if +  #playlist.ytd-watch-flexy[disable-upgrade]  + #related input#suggestions-search + ytd-watch-next-secondary-results-renderer #items.ytd-watch-next-secondary-results-renderer {
+    position: fixed;
+    display: inline-block;
+    height: 88.5vh !important;
+    top: 9.3vh !important;
+    left: 60%;
+    padding-top: 5px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: 5px solid #222;
+    border-right: 5px solid #222;
+border-top: 1px solid red;
+border-bottom: 1px solid red;
+/* background: violet !important; */
+/* background: tan !important; */
+}
+
+
+
+/* (new7)RIGHT COLUMN - TOP PANEL  - NO normal SEARCH INPUT / NO LECT AUTO:*/
 #related #items ytd-compact-autoplay-renderer ,
 #related #items ytd-compact-autoplay-renderer.style-scope {
     position: fixed;
     clear: none ;
     width: 39%;
-    height: 175px !important;
+    height: 122px !important;
     top: 85px !important;
     margin-bottom: 0 ;
     padding: 5px !important;
@@ -500,7 +759,7 @@ overflow: hidden !important;
 /*     overflow-y: auto !important; */
 z-index: 5000000 !important;
 background-color: #333;
-border-bottom: 5px solid tan ;
+border-bottom: 5px solid #333 ;
 }
 
 #related #items ytd-compact-autoplay-renderer.style-scope #contents {
@@ -564,25 +823,74 @@ background-color: black !important;
 }
 /* SEARCH - QUEUE */
 #contents + #suggestions-search {
-    position: absolute;
-    width: 99%;
-    top: 22px ;
-    left: 5px !important;
+    position: fixed;
+    width: 18%;
+    top: 44px ;
+    right: 5px !important;
+z-index: 500 !important;
 border: 1px solid tomato !important;
 }
-/* (new2) NO QUEUE */
+/* AUTO PLAY BUTTON */
+#head.ytd-compact-autoplay-renderer {
+    position: fixed !important;
+    display: inline-block !important;
+    vertical-align: top;
+    align-items: center;
+    flex-direction: unset !important;
+    height: 21px !important;
+    line-height: 21px !important;
+    width: 345px !important;
+    margin-bottom: 0;
+    right: 24% !important;
+    top: 35px !important;
+    padding: 2px 5px ;
+    border-radius: 3px !important;
+    transform: scale(0.7) !important;
+    z-index: 6000000 !important;
+background: #111 !important;
+border: 1px solid #333 ;
+}
+/* NO DARK */
+html:not([dark]):not(.style-scope) #head.ytd-compact-autoplay-renderer {
+background: white !important;
+border: 1px solid white ;
+}
+
+
+#upnext {
+    float: right !important;
+    clear: none;
+    height: 20px;
+    line-height: 20px;
+    width: 77px;
+}
+#autoplay {
+    float: left !important;
+    height: 20px;
+    line-height: 20px;
+    width: 163px;
+}
+paper-toggle-button.ytd-compact-autoplay-renderer{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 44px;
+    margin: -0.5px 0 0  0 !important;
+border-radius: 20px ;
+background: #111 !important;
+border: 1px solid #333 ;
+}
+/* (new7) SEARCH TOP/RIGHT FORM (Not Matched by GM)  - NO QUEUE */
 #related #suggestions-search.playlist-or-live  {
     position: fixed ;
-    top: 52px ;
-    right: 0% ;
-    width: 23% ;
+    top: 50px !important;
+    right: 5px ;
+    width: 18% ;
     padding: 1px 2px ;
     z-index: 500 ;
 border: 1px solid #333 !important;
 }
-#head.ytd-compact-autoplay-renderer {
-    margin-bottom: 35px ;
-}
+
 #head + #contents ytd-compact-video-renderer {
     display: inline-block !important;
     float: left;
@@ -608,6 +916,27 @@ background-color: white !important;
 /* border: 1px solid yellow; */
 }
 
+/* (new7) RELATED PANEL - with PARTIAL TWEAK SHOW THE when VIDEO RESTRICTED :
+GM "YouTube: Age Verification Bypass v.1.4r" 
+=== */
+.ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer #items.ytd-watch-next-secondary-results-renderer {
+    height: 89.2vh !important;
+    padding-top: 0px !important;
+/* background-color: green !important; */
+}
+.ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer + #related-skeleton + div {
+    position: fixed;
+    display: inline-block;
+    width: 39.5%;
+    height: 89.2vh;
+    top: 87px;
+    left: 60%;
+    padding-top: 5px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+/* background-color: yellow !important; */
+}
+.ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer + #related-skeleton + div a ,
 #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 
 .style-scope.ytd-watch-next-secondary-results-renderer.suggestion-tag {
 /*     display: inline-block !important; */
@@ -621,9 +950,11 @@ background-color: white !important;
     margin-left: 5px ;
 background-color: black !important;
 }
+
 /* NO DARK */
+.ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer + #related-skeleton + div a , 
 html:not([dark]):not(.style-scope) #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 
-html:not([dark]):not(.style-scope) .style-scope.ytd-watch-next-secondary-results-renderer.suggestion-tag {
+html:not([dark]):not(.style-scope) .ytd-watch-next-secondary-results-renderer.suggestion-tag {
 background-color: white !important;
 }
 
@@ -633,7 +964,9 @@ content: "SR" ;
 position: absolute;
 display: inline-block ;
 min-width: 20px ;
-height: 15px ;
+height: 12px ;
+bottom: 0 !important;
+right: 0 !important;
 text-align: center ;
 z-index: 500 ;
 opacity: 0.5 ;
@@ -798,13 +1131,31 @@ ytd-comments #contents ytd-comment-thread-renderer:before {
 background-color: white !important;
 }
 
-/* PLAYER - CONTAINER */
+/* (new7) PLAYER - CONTAINER  */
 #columns.style-scope.ytd-watch-flexy {
     min-width: 100% !important;
     max-width: 100% !important;
     height: 869px !important;
+    height: 93vh !important;
     margin-left: 0 !important;
-border-bottom: 1px solid violet !important;
+border-bottom: 1px solid red !important;
+}
+/* (new7) PLAYER - THEATER MOD - BOTTOM CONTAINER  */
+ytd-watch-flexy[flexy-large-window_=""] #player-theater-container:not(:empty)  + #ujs-hdr-links-div + #columns  #primary.ytd-watch-flexy {
+    margin-left: 333px !important;
+/* background: red !important; */
+}
+
+
+/* (new7) */
+ytd-watch-flexy[flexy_][is-two-columns_][is-extra-wide-video_] #primary.ytd-watch-flexy, ytd-watch-flexy[flexy_][is-two-columns_][is-four-three-to-sixteen-nine-video_] #primary.ytd-watch-flexy {
+    padding-top: 0;
+}
+
+/* (new7) TEST THEATER MODE (not FULL SCREEN)  - , ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy */
+ytd-watch-flexy[theater]:not([fullscreen]) #player-theater-container.ytd-watch-flexy {
+    left: 9px !important;
+/* border: 1px solid yellow !important; */
 }
 
 /* (new2) FULL SCREEN */
@@ -835,7 +1186,7 @@ ytd-app[is-watch-page=""] app-drawer.ytd-app#guide ~ #page-manager.ytd-app[class
 
 .no-scroll>ytd-app[style*="--ytd-app-fullerscreen-scrollbar-width:12px;"]  .html5-endscreen {
     height: 100vh !important;
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 }
 .no-scroll>ytd-app[style*="--ytd-app-fullerscreen-scrollbar-width:12px;"]   .ytp-endscreen-content{
     height: 80vh !important;
@@ -851,13 +1202,6 @@ border: 1px solid yellow;
 }
 
 /* (new2) END SCREEN */
-/* .ytp-autohide .ytp-player-content:not(.html5-endscreen), 
-.ytp-autohide .ytp-player-content:not(.ytp-upnext), 
-.ytp-hide-info-bar .ytp-player-content {
-    top: 0;
-    transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1) 0s, top 0.1s cubic-bezier(0.4, 0, 1, 1) 0s;
-    background: red !important;
-} */
 .html5-endscreen:not(.subscribecard-endscreen) {
     height: 75vh !important;
     top: 25px !important;
@@ -905,18 +1249,24 @@ border: 1px solid red !important;
 border: 1px solid red !important;
 }
 
-
-
-/* (new6) PLAYER */
+/* (new7) PLAYER */
 #primary.ytd-watch-flexy {
     min-width: 97% !important;
     max-width: 97% !important;
-/*     margin-left: 30% !important; */
     padding: 0;
-/* border: 1px solid tan !important; */
 }
+
 #primary.ytd-watch-flexy #primary-inner.ytd-watch-flexy  {
     height: 845px;
+}
+/* (new7) THEATER - INFOS BOTTOM */
+ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy +#columns #primary.ytd-watch-flexy {
+    height: 72px !important;
+    min-width: 99% !important;
+    max-width: 99% !important;
+    margin-left: 29% !important;
+    padding: 0;
+/* border: 1px solid tan !important; */
 }
 #player-container-inner {
     padding-top: 72vh !important;
@@ -1330,10 +1680,12 @@ a.linkifyplus:visited {
     color: tan !important;
 }
 
-/* VISITED */
+/*(new7)  VISITED */
+
 a#thumbnail {
     border: 1px solid #262626;
 }
+a.ytp-videowall-still.ytp-suggestion-set:visited ,
 a#thumbnail:visited {
     border: 1px solid red !important;
 }

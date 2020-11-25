@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `Light makes you blind? Join the darkness!You can easily change the color scheme according to your preference.Constantly updating as the newest WhatsApp web release comes online (last: June 5th 2020)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Even just a coffee worth donation for the staggering amount of hours spent to fix it every time WhatsApp decides to deliver a new version, would be super appreciated!Ooooor... just <b>send me a message / mail at rwndeloused@gmail.com</b> to share your feedback / appreciation. That means a lot to me!N.B.: I suggest uncommenting the line of code below in your Stylish code editor to be able to import the Raleway font. It's unfortunately not allowed to me to publish the skin including external urls for safety reasons.@import url("https://fonts.googleapis.com/css?family=Raleway");`
-@version        20201122.17.35
+@version        20201124.23.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color color "Accent color" #F9AC5E
@@ -97,6 +97,7 @@ progress[value]::-webkit-progress-value {
 /*========= alert message - maintenance =========*/
 
 .app-wrapper-web:after {
+  display:none;
   color: var(--mainColor);
   content: var(--alertMessage);
   animation: alert 50s infinite linear;
@@ -203,7 +204,9 @@ g[clip-path="url(#rooms-SVGID_2_)"] path,
 
 ._6vYCc,
 ._37Tzw,
-._1b8eK {
+._1b8eK,
+._34Zo9,
+.RXmfT svg path {
   stroke: var(--mainColor) !important;
 }
 
@@ -224,7 +227,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
   display: none;
 }
 ._2vsnU *,
-._1RYPC {
+._1RYPC,
+._3I3b7 {
   background-color: transparent !important;
 }
 ._1FKgS::after,
@@ -354,7 +358,12 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._1UuMR,
 ._3vEz4,
 ._3P_7M,
-._2Efpu{
+._2Efpu,
+._14wV4,
+._fpIW ._25-g1,
+.XukK_,
+.iHaMv,
+.sWE2H {
   background-color: var(--darkGray) !important;
 }
 ._3pkkz,
@@ -440,7 +449,11 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._1C9_o,
 ._2S-RK,
 ._3tpsN,
-._1HX2v {
+._1HX2v,
+._37bbf,
+.mBpSq,
+._1z6YY, ._1gal2,
+._1E4E4 {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -479,7 +492,9 @@ html[dir="ltr"] ._1F9Ap,
 ._3MjzD ._1hI5g,
 ._1VzZY span,
 ._1VzZY,
-._1awRl {
+._1awRl,
+._3guyl:not(.RXmft) svg path {
+    /* fill: #828689 !important; */
   color: var(--superLightGray) !important;
 }
 
@@ -594,7 +609,10 @@ html[dir="ltr"] ._1F9Ap,
 ._2gti7,
 ._1RHZR,
 ._1ij5F.KpuSa ._1VzZY,
-._14pZF{
+._14pZF,
+._3dHYI,
+._3Z2oJ,
+ ._2jYgI {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -664,7 +682,8 @@ header span._1wjpf._3NFp9._3FXB1,
 ._2a1zO,
 .CWVX1 ._1VzZY,
 .color-1 ._1VzZY,
-._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) {
+._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g),
+._2op5b {
   color: var(--mainColor) !important;
 }
 
@@ -737,7 +756,8 @@ input[type="radio"]:checked,
 .RXL_k,
 .dark .bg-color-1,
 ._3yI1b:before,
-._27KDP:after {
+._27KDP:after,
+._14wV4 {
   background-color: var(--mainColor) !important;
   border-color: var(--mainColor) !important;
   color: white !important;
@@ -845,7 +865,9 @@ span[data-icon="msg-check"] svg path {
 ._3hyINm,
 ._3xkAl[data-icon="msg-dblcheck"] svg path,
 ._3hyIN span[data-icon="status-ptt"] svg path,
-._2RFeE span[data-icon="status-dblcheck"] svg path {
+._2RFeE span[data-icon="status-dblcheck"] svg path,
+span[aria-label=" Read "] svg path,
+._-68As span svg path {
   opacity: 1 !important;
 }
 span[data-icon="ptt-out-blue"] svg path:first-child,

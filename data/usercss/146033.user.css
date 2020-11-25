@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         Edhill Anka
 @description    `A smooth semi-dark theme for SweClockers.com`
-@version        201782.15.23
-@license        NO-REDISTRIBUTION
+@version        20201124.16.28
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.sweclockers.com") {
+/* old swec / needs clean-up, (some of it is still in use!) */
 div#siteHeader, .header, div.inner.clear, div#content .fluid {
     background: #56505A;
 }.header>.main {
@@ -63,5 +64,56 @@ div#siteHeader, .header, div.inner.clear, div#content .fluid {
     background-color: inherit;
 }div.pages a.isCurrent {
     background-color: #36303B;
+}
+
+/* new swec: */
+body {
+    color: #222;
+}
+
+.nav-container {
+    background: #36303B;
+}.nav-main {
+    border-top-color: hsl(0, 1%, 50%);
+    border-bottom-color: hsl(0, 2%, 59%);
+}.nav-main ul li a:hover, .nav-main ul li .menu-lock:hover {
+    background: #46404D;
+}.nav-main ul li a span, .nav-main ul li .menu-lock span {
+    color: #E3E3E3;
+}
+
+.nav-top {
+    background-image: -webkit-linear-gradient(top, #2A252E, #2A252E 70%, #3b3541 97%, #36303B);
+}.nav-top .logo img {
+    filter: invert(0.07);
+}.nav-top .profile-wrapper a {
+    background: #2A252E;
+    color: #E0E0E0;
+}
+
+#search-result .ninja-search-result .nsrt-main {
+    background-color: #cecaca;
+}#search-result h6 {
+    color: hsl(26, 90%, 40%);
+}
+
+#header,
+#content, #content>.container>.columns {
+    background: #56505A;
+}
+
+.content-primary {
+    background: #c9c5c7;
+}.bg-grey-primary {
+    background-color: #c9c5c7 !important;
+    color: #282828 !important;
+}
+
+h1 {
+    color: #cdcfcc;
+}.descr {
+    color: #acacac;
+}.card-body .meta a {
+    color: hsl(29, 90%, 40%);
 }
 }
