@@ -2,8 +2,8 @@
 @name           reCAPTCHA Dark Theme - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Dark Theme for reCAPTCHA & hCaptcha.Stylus recommended;https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
-@version        20201020.7.21
+@description    `Dark Theme for reCAPTCHA, hCaptcha & Imunify360.Stylus recommended;https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
+@version        20201125.7.38
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,7 +33,9 @@ body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > h2:nth-child(1),
 h4#text,
 html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div p.cap_mess.cap_text.text-center,
-html body.no-selection div.challenge-modal div.container div.modal.no-outline div.header h2#modal-title
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.header h2#modal-title,
+div.captcha_absolute div.captcha_div p.cap_mess.cap_text.text-center b,
+html body.visible_mode div.wraper div.bottom span.powered_span
 {
     color:#fff!important;
 }
@@ -54,7 +56,8 @@ html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div div.cap
 p.cap_mess:nth-child(5),
 html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.information div.instructions p.copy,
 html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.information div.feedback,
-html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.accessibility p.copy
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.accessibility p.copy,
+p.cap_note.cap_text.count_down
 {
     color:#ccc!important;
 }
@@ -76,7 +79,8 @@ html body.no-selection div.challenge-modal div.container div.modal.no-outline di
 /*hCaptcha Dropdown Menu and Button Text*/
 html body.no-selection div.challenge-interface div.menu div.option.button div.wrapper div.copy,
 html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel div.send-text,
-html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text,
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content li
 {
     color: #aaa !important;
     transition:.4s;
@@ -84,7 +88,8 @@ html body.no-selection div.challenge-interface div.language-selector div#languag
 /*Language Dropdown Text - Hover*/
 html body.no-selection div.challenge-interface div.menu div.option.button div.wrapper div.copy:hover,
 html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel div.send-text:hover,
-html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text:hover
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"] > .text:hover,
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content li:hover
 {
     color: #fff !important;
     transition:.4s;
@@ -119,12 +124,17 @@ body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     background: #0000 !important;
 }
 
-.challenge-modal [class*="header-title"]
+.challenge-modal [class*="header-title"],
+html body.visible_mode div.wraper div.header,
+html body.visible_mode div.wraper div.middle,
+html body.visible_mode div.wraper div.bottom,
+.rc-doscaptcha-header
 {
     background: #000 !important;
 }
 
 html body.invisible_mode div.wraper div.captcha_absolute div.captcha_div,
+html.no-js body div#cf-wrapper div#cf-error-details.p-0 div.my-8.bg-gradient-gray
 body > div:nth-child(1) > div:nth-child(1),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
 body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2),
@@ -138,7 +148,9 @@ body > div:nth-child(3),
 .challenge-modal [class*="container"],
 html body.no-selection,
 html body.no-selection div.challenge-interface div.menu-background,
-html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option,
+.captcha_div,
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content
 {
     background: #111 !important;
     background-color: #111 !important;
@@ -146,7 +158,8 @@ html body.no-selection div.challenge-interface div.language-selector div#languag
 }
 
 html body.no-selection div.challenge-interface div.menu div.option.button div.bg,
-html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option:hover
+html body.no-selection div.challenge-interface div.language-selector div#language-selector.list.button div#options-view.language-view div#options-list.language-list.no-outline div[id*="option-"].option:hover,
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content li:hover
 {
     background-color: #333 !important;
     transition:.4s;
@@ -247,7 +260,8 @@ html body.invisible_mode div.wraper div.bottom
 
 /*Main Border*/
 .anchor.normal.light,
-.challenge-modal [class*="container"]
+.challenge-modal [class*="container"],
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content
 {
     border: 1px solid #444;
     border-radius: 3px;
@@ -320,7 +334,8 @@ input#recaptcha_submit,
 .rc-button-default,
 .rc-doscaptcha-header,
 html body.no-selection div.challenge-interface div.button-submit.button,
-.challenge-modal [class*="button-"]
+.challenge-modal [class*="button-"],
+div.captcha_div div.dropdown button.dropdown-toggle
 {
     background-color: #222 !important;
     border: 1px solid #444 !important;
@@ -334,7 +349,8 @@ html body.no-selection div.challenge-interface div.button-submit.button,
 .submit-background:hover,
 html body.no-selection div.challenge-interface div.button-submit.button:hover,
 html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button:hover,
-html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel:hover
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div#modal-content.content div.software-bug div.buttons div.button-cancel:hover,
+div.captcha_div div.dropdown button.dropdown-toggle:hover
 {
     background-color: #333 !important;
     filter:brightness(1);
@@ -347,7 +363,9 @@ html body.no-selection div.challenge-modal div.container div.modal.no-outline di
 .submit-background:active,
 html body.no-selection div.challenge-interface div.button-submit.button:active,
 html body.no-selection div.challenge-interface div.menu div.option.button div.bg:active,
-html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button:active
+html body.no-selection div.challenge-modal div.container div.modal.no-outline div.button-close.button:active,
+div.captcha_div div.dropdown button.dropdown-toggle:active,
+div.captcha_div div.dropdown.open div.dropdown-menu.dropdown-menu-container ul.dropdown-menu-content li:active
 {
     filter:brightness(.6)!important;
     transition: all 0s ease-in-out !important;

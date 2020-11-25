@@ -2,13 +2,14 @@
 @name           Red and Black for CVM
 @namespace      USO Archive
 @author         Socialix
-@description    `Give CollabVM a new look with this style. Yup, the first style for CVM to be a real style, not a joke one.`
-@version        20201121.16.42
+@description    `Give CollabVM a new look with this style. Yup, the first style for CVM to be a real style, not a joke one.IMPORTANT: The rules and some other pages' backgrounds are glitched. Oh, and the Users Online on hover is white, flashbang.`
+@version        20201125.8.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url("http://computernewb.com/collab-vm/"), url("http://computernewb.com/collab-vm/user-vm/") {
-/* Feel free to edit it, unless you know what you're doing. You can be inspired, but please don't copy paste all code and repost it. */
+@-moz-document url("http://computernewb.com/collab-vm/user-vm/"), regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
+/* Feel free to edit it, unless you know what you're doing. You can be inspired, but please don't copy paste all code and repost it. 
+Yeah, the rules are pretty much broken in the background.*/
 
 .ui.menu, .navbar, .navbar-default {
     background-color: #6a1010 !important;
@@ -159,5 +160,9 @@ ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field, 
         color: gray;
         border:none !important;
         box-shadow:none !important;
+}
+
+* {
+    color: #b3b3b3;
 }
 }

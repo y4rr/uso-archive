@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `自用，上传只为保存。`
-@version        2020117.4.52
+@version        20201125.0.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 /*=== 
  *【自用，上传只为保存】
  * 作者：QIUZAIYOU 
- * 最后更新：20201107
+ * 最后更新：20201125
 ===*/
 /* 垃圾元素屏蔽 */
 .AdblockBanner,
@@ -21,29 +21,29 @@ div[data-za-detail-view-path-module_name="相关推荐"],
 .Pc-card,
 .PlaceHolder,
 .Pc-feedAd-container {
-	display: none!important;
+    display: none!important;
 }
 }
 
 @-moz-document url-prefix("https://www.zhihu.com/"), url-prefix("https://zhuanlan.zhihu.com") {
 /* Chrome - 修改滚动条 */
 ::-webkit-scrollbar {
-	width: 6px!important;
-	height: 6px!important;
+    width: 6px!important;
+    height: 6px!important;
 }
 ::-webkit-scrollbar-track-piece {
-	background-color: #141414!important;
-	-webkit-border-radius: 0!important;
+    background-color: #141414!important;
+    -webkit-border-radius: 0!important;
 }
 ::-webkit-scrollbar-thumb:vertical {
-	height: 5px!important;
-	background-color: #2b94ff!important;
-	-webkit-border-radius: 6px!important;
+    height: 5px!important;
+    background-color: #2b94ff!important;
+    -webkit-border-radius: 6px!important;
 }
 ::-webkit-scrollbar-thumb:horizontal {
-	width: 5px!important;
-	background-color: #2b94ff!important;
-	-webkit-border-radius: 6px!important;
+    width: 5px!important;
+    background-color: #2b94ff!important;
+    -webkit-border-radius: 6px!important;
 }
 /* 样式修改 */
 /* -- 背景色 -- */
@@ -67,12 +67,12 @@ div[class*="ContentItem-module-typeTag-"],
 .PagingButton,
 .AnswerItem-statusContent,
 .QuestionType--active {
-	background: #212121!important;
-	-webkit-tap-highlight-color: rgba(26, 26, 26, 0);
+    background: #212121!important;
+    -webkit-tap-highlight-color: rgba(26, 26, 26, 0);
 }
 div[class*="SectionBar-module-root-"]:before,
 div[class*="SectionBar-module-root-"]:after {
-	background: transparent!important;
+    background: transparent!important;
 }
 .ContentItem-actions,
 .zu-top,
@@ -150,7 +150,7 @@ textarea,
 .css-1pk3pp1,
 .ZVideoLinkCard-info,
 .Question-mainColumnLogin {
-	background: #2c2c2c!important;
+    background: #2c2c2c!important;
 }
 .PushNotifications-item::after,
 .MoreAnswers .List-headerText,
@@ -171,7 +171,7 @@ textarea[class*='FeedbackForm-inputBox-'],
 .ColumnPageHeader-Line,
 div[class*="SectionBar-module-tag-"],
 .css-lbryw4 {
-	background: #424242!important;
+    background: #424242!important;
 }
 .Messages-footer,
 .Notifications-footer,
@@ -221,38 +221,39 @@ a.toggle-expand:hover,
 .SearchTopicHeader-IntroTail,
 .AutoInviteItem-wrapper--desktop,
 .CommentCollapseButton,
-.css-10rt8mt {
-	background: #373737!important;
+.css-10rt8mt,
+.SearchBar-tool input {
+    background: #373737!important;
 }
 .lower {
-	background: #444!important;
+    background: #444!important;
 }
 .ac-renderer .ac-row:last-child,
 .AnswerItem-statusContentdiv,
 div[class*="SectionBar-module-current-"] {
-	background: #242424!important;
+    background: #242424!important;
 }
 html.no-touchevents .zm-item-vote-count:hover {
-	background: #698ebf!important;
+    background: #698ebf!important;
 }
 .ac-active,
 .GlobalSideBar-navLink:hover {
-	background: #363c42!important;
+    background: #363c42!important;
 }
 .UserCoverEditor-leftMasker,
 .UserCoverEditor-rightMasker {
-	background-color: rgba(44, 44, 44, 0.5)!important;
+    background-color: rgba(44, 44, 44, 0.5)!important;
 }
 .SignFlowInput-errorMask::before,
 input[type="range"].RangeInput {
-	background: transparent!important;
+    background: transparent!important;
 }
 .item-collapse.is-sticky {
-	background-color: #0e78e7!important;
+    background-color: #0e78e7!important;
 }
 .WikiBoxHeader-IntroTail:before,
 .SearchTopicHeader-IntroTail:before {
-	background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #373737)!important;
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #373737)!important;
 }
 /* -- 字体颜色 -- */
 body,
@@ -349,13 +350,13 @@ textarea.zg-form-text-input,
 .Question-mainColumnLoginDes,
 .AnswerAuthor-user-name,
 .Modal-title {
-	color: #868686!important;
+    color: #868686!important;
 }
 .ztext blockquote,
 .Search-container,
 .ExploreCollectionCard-contentExcerpt,
 .QuestionRelatedCard-content > a {
-	color: #7c7c7c!important;
+    color: #7c7c7c!important;
 }
 .post-link,
 .question_link,
@@ -428,15 +429,17 @@ div[class*="SectionBar-module-current-"],
 html[data-theme=dark] .TextMessage-sender a,
 .SearchTopicHeader-Meta,
 .SearchTopicHeaderLink,
-.SearchTopicHeader-IntroTail {
-	color: #2b94ff!important;
+.SearchTopicHeader-IntroTail,
+.ThanksForInvitingLabel,
+.AnswerInfo-favlist a {
+    color: #2b94ff!important;
 }
 .tab-navs .tab-nav.active > a,
 .AnswerItem-statusReason {
-	color: #e43!important;
+    color: #e43!important;
 }
 .Qrcode-container p.Qrcode-scanResultTips {
-	color: rgb(45, 179, 112);
+    color: rgb(45, 179, 112);
 }
 .QuestionAnswers-answerTip .Button,
 html[data-theme=dark] .QuestionAnswers-answerTip .Button,
@@ -448,44 +451,44 @@ div[class*="ContentItem-module-title"],
 .PostItem-Title,
 .Messages-item,
 .ActionMenu-item:hover {
-	color: #0084ff!important;
+    color: #0084ff!important;
 }
 .TopSearch-itemText {
-	color: #8590a6;
+    color: #8590a6;
 }
 .Button--primary.Button--blue,
 a.zg-btn-blue,
 .Question-mainColumnLoginButton {
-	color: #fff!important;
+    color: #fff!important;
 }
 .Footer-item:hover,
 .TopSearch-itemText:hover {
-	color: #0084ff!important;
+    color: #0084ff!important;
 }
 .SettingsNav-link.is-active svg,
 .Zi {
-	fill: #2b94ff!important;
+    fill: #2b94ff!important;
 }
-.AuthorInfo-head .Zi {
-	fill: #fff!important;
-}
+
 .Modal-closeIcon,
 .MinorHotSpot-Quote,
 svg.EmptyState-image,
 
 button[class*='Modal-closeButton-'] svg path,
 .EmptyState svg path {
-	fill: #868686!important;
+    fill: #868686!important;
 }
 .FollowButton-icon,
 .Button--primary.Button--blue svg,
 .VoteButton.is-active svg,
 .AccountSocial svg,
-a[data-tooltip="优秀回答者"] svg path[fill="#FFF"] {
-	fill: #fff!important;
+a[data-tooltip="优秀回答者"] svg path[fill="#FFF"],
+.AuthorInfo-head .Zi,
+.AnswerAuthor-item-icon .Zi {
+    fill: #fff!important;
 }
 a[data-tooltip="优秀回答者"] svg path[fill="#FF9500"] {
-	fill: rgb(255, 149, 0)!important;
+    fill: rgb(255, 149, 0)!important;
 }
 /* -- 边框颜色 -- */
 .feed-item + .feed-item,
@@ -637,14 +640,15 @@ div[class*="-module-"]:before,
 .Card-section + .Card-section:after,
 .ztext table[data-draft-type=table] td,
 .ztext table[data-draft-type=table] th,
-.Favlists-item {
-	border-color: #424242!important;
+.Favlists-item,
+.AnswerInfo-favlist:not(:first-child) {
+    border-color: #424242!important;
 }
 .UserAvatar,
 .PushNotifications-count,
 .Messages-count,
 .Question-mainColumnLoginButton {
-	border-color: #2c2c2c!important;
+    border-color: #2c2c2c!important;
 }
 
 .ztext a.external:hover,
@@ -652,24 +656,24 @@ div[class*="-module-"]:before,
 .ztext a.ztext-link:hover,
 .RichText a.UserLink-link:hover,
 html[data-theme=dark] .RichText a.UserLink-link:hover {
-	border-color: #2b94ff!important;
+    border-color: #2b94ff!important;
 }
 .tab-navs .tab-nav.active > a,
 html.no-touchevents .tab-navs .tab-nav.active > a:hover {
-	border-bottom-color: transparent!important;
+    border-bottom-color: transparent!important;
 }
 .popover.top .arrow2,
 .popover.top .arrow {
-	border-top-color: #444!important;
+    border-top-color: #444!important;
 }
 .EmoticonTool-panel:after {
-	border-top-color: #424242!important;
-	;
+    border-top-color: #424242!important;
+    ;
 }
 /* -- 阴影 -- */
 .zu-top,
 .AppHeader {
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7)!important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7)!important;
 }
 .zu-top-search-input,
 .topic-recommend.modal-dialog,
@@ -681,89 +685,89 @@ html.no-touchevents .tab-navs .tab-nav.active > a:hover {
 .CommentsV2-withPagination,
 .Card,
 .QuestionHeader-footer.is-fixed {
-	box-shadow: none!important;
+    box-shadow: none!important;
 }
 /* -- 属性修改 -- */
 .zu-top {
-	border: none!important;
+    border: none!important;
 }
 
 .tab-navs {
-	margin-bottom: 0!important;
+    margin-bottom: 0!important;
 }
 .MoreAnswers .List-headerText {
-	padding: 3px 20px!important;
-	border-radius: 989px!important;
+    padding: 3px 20px!important;
+    border-radius: 989px!important;
 }
 
 .MoreAnswers .List-header::after {
-	top: 28px!important;
+    top: 28px!important;
 }
 span[class*='_CommentBox_dividerText_'] {
-	border-radius: 99px!important;
+    border-radius: 99px!important;
 }
 .Input {
-	box-sizing: border-box!important;
-	padding: 0 5px!important;
+    box-sizing: border-box!important;
+    padding: 0 5px!important;
 }
 .VerificationDialogModal-smsInputButton,
 .SignFlow-smsInputButton {
-	right: 5px!important;
+    right: 5px!important;
 }
 .noti-spinner {
-	filter: invert(50%) sepia(66%) saturate(14%) hue-rotate(337deg) brightness(92%) contrast(94%);
+    filter: invert(50%) sepia(66%) saturate(14%) hue-rotate(337deg) brightness(92%) contrast(94%);
 }
 .Register-content .SignFlow-smsInputErrorMessage,
 .SignFlowInput-errorMask {
-	padding-left: 5px!important;
+    padding-left: 5px!important;
 }
 .Register-smsBackUp {
-	border-top: 1px solid #424242!important;
+    border-top: 1px solid #424242!important;
 }
 .Qrcode-img {
-	padding: 5px!important;
-	background: #fff!important;
+    padding: 5px!important;
+    background: #fff!important;
 }
 .AppBanner-qrcode {
-	padding: 2px!important;
-	background: #fff!important;
+    padding: 2px!important;
+    background: #fff!important;
 }
 .zu-top-search-input {
-	font-weight: bold!important;
+    font-weight: bold!important;
 }
 .RecognizerListModal-header {
-	padding-bottom: 5px!important;
+    padding-bottom: 5px!important;
 }
 code {
-	font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
-	color: #afafaf!important;
-	font-size: .875rem!important;
-	padding: .1875rem .625rem!important;
-	background: #2c2c2c!important;
-	margin: 0 .3125rem!important;
-	border-radius: .25rem!important;
-	border-bottom: .0625rem solid #3072f6!important;
-	box-sizing: border-box!important;
+    font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+    color: #afafaf!important;
+    font-size: .875rem!important;
+    padding: .1875rem .625rem!important;
+    background: #2c2c2c!important;
+    margin: 0 .3125rem!important;
+    border-radius: .25rem!important;
+    border-bottom: .0625rem solid #3072f6!important;
+    box-sizing: border-box!important;
 }
 .highlight pre {
-	width: 100%!important;
-	padding-left: 10px!important;
-	padding-right: 10px!important;
-	background-color: #2c2c2c!important;
+    width: 100%!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    background-color: #2c2c2c!important;
 }
 .highlight pre code,
 .css-1hmxk26 {
-	border: none!important;
+    border: none!important;
 }
 .SignContainer-content .Input-wrapper {
-	height: 49px!important;
+    height: 49px!important;
 }
 .Favlists-item {
-	width: 95%!important;
-	margin: 0 auto!important;
+    width: 95%!important;
+    margin: 0 auto!important;
 }
 /* 首页 */
 .RichContent-cover-inner {
-	z-index: 915049!important;
+    z-index: 915049!important;
 }
 }
