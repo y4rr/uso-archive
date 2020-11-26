@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         Simply13
 @description    `Experimental compact style for new VUT design. Suitable for monitors with low DPI.Not final version, there is a lot of pages which should be compacted as well... I am affraid this style will never be finished...`
-@version        2020730.15.18
+@version        20201126.9.31
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document regexp('(http|https)://.*(vutbr|vut)\.cz/(?!(cviswiki|wiki)).*') {
 
 
@@ -84,6 +83,10 @@ h5, .h5 {
 
 .grid__cell {
     font-size: 12px;
+}
+
+.datagridToolbarVut {
+    line-height: 15px;
 }
 
 .clanek {
@@ -1068,6 +1071,11 @@ div.priloha_inn_b {
     display: block;
 }
 /* Studis, intraportal - leve menu */
+.vut-sidebar-wrap, .vut-head-sidebar {
+    width: 14%;
+    max-width: 150px;
+}
+
 .nav > li > a {
     padding-top: 0px;
     padding-bottom: 0px;

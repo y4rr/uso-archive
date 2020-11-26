@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        20201123.12.16
+@version        20201126.10.52
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -78,7 +78,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 url-prefix("http://www.douyu.com/") {
     /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201105
+    最后更新：20201126
     ===*/
     /*=== 屏蔽元素 ===*/
     .giftbatter-box,
@@ -3404,6 +3404,7 @@ url-prefix("http://www.douyu.com/") {
     .layout-Module {
         margin-top: 20px!important;
     }
+    /* 狗日的背景 */
     .Header-wrap,
     .layout-Aside,
     .Aside-toggle,
@@ -3581,9 +3582,14 @@ url-prefix("http://www.douyu.com/") {
     .NobleRankTips,
     .FansRankInfo,
     .FansRankList-itemRank,
-    .FansRankAllList-itemRank {
+    .FansRankAllList-itemRank,
+    .Header-follow-tab {
         background-color: #373737!important;
     }
+    .Header-follow-tab.is-active {
+        background-color: #f60!important;
+    }
+    /* 狗日的字体 */
     .Header-wrap .EntryNav-desc,
     .Header-wrap .Header-menu-link>a,
     .Header-wrap .public-DropMenu-link,
@@ -3811,7 +3817,8 @@ url-prefix("http://www.douyu.com/") {
     .FansRankList-itemRank,
     .FansRankAllList-itemRank,
     .FansRankAllList-nickName,
-    .FansRankBottom-total {
+    .FansRankBottom-total,
+    .Header-follow-tab {
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -3954,7 +3961,8 @@ url-prefix("http://www.douyu.com/") {
     .HomePageClassify-header-content,
     .HomePageClassify-header-all,
     .YubaMessage .Badge,
-    .SociatyLabel-name.is-special {
+    .SociatyLabel-name.is-special,
+    .Header-follow-tab.is-active {
         color: #fff!important;
     }
     .DyCover-hot,
@@ -4007,6 +4015,7 @@ url-prefix("http://www.douyu.com/") {
         top:50%!important;
         transform: translateY(-50%)!important;
     }
+    /* 狗日的边框 */
     .RoomList-tags li,
     .layout-Module-label,
     .layout-Module-label--hasList,

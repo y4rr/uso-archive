@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name           mwave.com.au - dark
+@namespace      USO Archive
+@author         Thermalzombie
+@description    `A dark style for mwave a computer and electronics retailer in Australia.`
+@version        20201126.8.39
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("mwave.com.au") {
+html, body 
+{
+    background-color:#000000 !important;
+}
+.promotionWrapper, #footer, #top-bar, #logoQuote, #headerContainer, .terms_conditions_footer,
+.secondResultUtils, .firstResultUtils
+{
+    background-color:#443266 !important;
+}
+#core, .productCommon, #PopSliRac div
+{
+    background-color:#000000 !important;
+}
+
+#PopSliRac div li:hover, .btnMain
+{
+    background-color:orange !important;
+}
+
+.categoryMenu dd.on
+{
+    background:orange !important;
+}
+
+.productList .notifyButton .btnRight, .categoryMenu dt
+{
+    background:#443266 !important;
+}
+
+.categoryFilter h3, .wrapper,
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    background:#000000 !important;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    border:1px #000000 solid !important;
+}
+
+#Password, #EmailAddress
+{
+    border:1px orange solid !important;
+}
+
+.productList .name a, .resultStatus,
+.productList .notifyButton .btnMain,
+.categoryFilter li label, .wrapper,
+.categoryFilter h3, .basicInfos h1,
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .mwaveDollars,
+#PopSliRac div li, .login h2, #loginForm .text, h1, h2, p, .label, .majorRow .indent,
+.categoryMenu a
+{
+    color:#FFFFFF !important;
+}
+
+.productList .current
+{
+    color:#00FF00 !important;
+}
+}

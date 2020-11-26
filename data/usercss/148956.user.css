@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        2020117.6.11
+@version        20201126.5.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -503,14 +503,15 @@
   
   /*search tools dropdown*/
   #lb{}
-  #lb ul{background:#333!important;}
-  #lb ul>li{background:#043!important;}
-  #lb ul>li:nth-child(2n){background:#032!important;}
-  #lb ul>li:hover{background:#063!important;}
-  #lb ul>li *{background:transparent!important;color:#c60!important;}
-  #lb ul>li.hdtbSel{color:#ff0!important;}
-  #lb ul>li#cdr_opt{}
-  #lb ul>li#cdr_opt span{color:#a11!important;}
+  #lb g-menu                {background:#555!important;}
+  #lb g-menu>*              {background:#043!important;}
+  #lb g-menu>*:nth-child(2n){background:#032!important;}
+  #lb g-menu>*:hover        {background:#063!important;}
+  #lb g-menu>*>div{}
+  #lb g-menu>*>div>a{background:inherit!important;color:#c60!important;}
+  #lb g-menu>*.hdtbSel{color:#ff0!important;}
+  #lb g-menu>*#cdr_opt{}
+  #lb g-menu>*.nvELY *{color:#a11!important;}
 
   /*left result width parent*/body>#main>#cnt>.mw,div.mw>#rcnt{width:100%!important;max-width:unset!important;}
   /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col{width:100%!important;}

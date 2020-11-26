@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area. The card selection window will not interfere with the card description anymore. And various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page.You have two background options now:-The duel background.-The background for the deck editor.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far, more sections will be designed in time.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201125.23.4
+@version        20201126.11.25
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -410,13 +410,13 @@ NRR "Alternative" <<<EOT  EOT;
 
   #game-field-opponent-deck.game-field-zone,
   #game-field-opponent-extra.game-field-zone {
-    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/3e339f537272929619e4b066c7409b71ffa72dc2/bns.svg)
+    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/b434deb28f7b96ef5d972b86e6152baec71a989c/bns666.svg)
       no-repeat center center;
   }
 
   #game-field-player-deck.game-field-zone,
   #game-field-player-extra.game-field-zone {
-    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/3e339f537272929619e4b066c7409b71ffa72dc2/bns.svg)
+    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/b434deb28f7b96ef5d972b86e6152baec71a989c/bns666.svg)
       no-repeat center center;
   }
 
@@ -522,6 +522,7 @@ NRR "Alternative" <<<EOT  EOT;
     background-color: rgba(0, 0, 0, 0);
   }
 
+  /*
   @keyframes game-field-zone-flash {
     from {
       filter: brightness(80%);
@@ -541,6 +542,7 @@ NRR "Alternative" <<<EOT  EOT;
     cursor: pointer;
     animation: 0.5s game-field-zone-flash infinite alternate linear;
   }
+  */
 
   @keyframes game-field-zone-flash {
     from {
@@ -548,7 +550,7 @@ NRR "Alternative" <<<EOT  EOT;
             filter: brightness(80%);
             -webkit-filter: brightness(80%);
             */
-      box-shadow: inset 0 0 0 #2e86de, 0 0 0 #2e86de;
+      box-shadow: inset 0 0 0.1vw #2e86de, 0 0 0.05vw #2e86de;
       border-radius: 0.4vw;
     }
     to {
@@ -563,18 +565,18 @@ NRR "Alternative" <<<EOT  EOT;
 
   .game-field-zone.game-field-zone-selectable {
     cursor: pointer;
-    animation: 0.5s game-field-zone-flash infinite alternate linear;
+    animation: 0.5s game-field-zone-flash infinite alternate ease-out;
   }
 
   @keyframes game-selectable-border {
     from {
-      outline-color: transparent;
+      outline-color: #f4eeff;
       opacity: 1;
       /*
             filter: brightness(80%);
             -webkit-filter: brightness(80%);
             */
-      box-shadow: 0 0 0 0 transparent;
+      box-shadow: 0 0 0.13vw 0.13vw #f4eeff;
     }
     to {
       outline-color: #bbe1fa;
@@ -860,29 +862,42 @@ NRR "Alternative" <<<EOT  EOT;
 
   #game-avatar-player-image,
   #game-avatar-opponent-image {
-    border: 0px solid #fff;
-    border-radius: 5px;
+    border-radius: 100%;
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    width: 100%;
+    height: 100%;
+  }
+
+  #game-life-bar-opponent,
+  #game-life-bar-player,
+  #game-timer-bar-player-part,
+  #game-timer-bar-opponent-part {
+  box-shadow: inset 0 0 5px 1px black;
   }
 
   .game-life-bar-part {
     height: 100%;
-    box-shadow: 0 0 5px 0px #ee5253;
-    background-color: #ee5253;
+    box-shadow: 0 0 5px 0px rgba(130, 23, 82);
+    background-color: rgba(130, 23, 82);
+    border-radius: 5px;
   }
 
   .game-life-bar {
     margin-top: 8px;
-    background-color: #1e272e;
-    box-shadow: 0 0 5px 0px #1e272e;
+    background-color: black;
     width: 100%;
     height: 10px;
-    border: 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
   }
 
   .game-timer-bar-part {
     height: 100%;
-    box-shadow: 0 0 5px 0px #2e86de;
-    background-color: #2e86de;
+    box-shadow: 0 0 5px 0px rgba(3, 90, 166);
+    background-color: rgba(3, 90, 166);
+    border-radius: 5px;
   }
 
   #game-next-turn-text {

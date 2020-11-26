@@ -2,8 +2,8 @@
 @name           VLIVE Dark Theme
 @namespace      USO Archive
 @author         aqmx
-@description    `Dark theme for the V LIVE website.I've also made a script that <a href="https://greasyfork.org/en/scripts/379342-v-live-video-rotation">lets you rotate the video</a>`
-@version        20201114.6.12
+@description    `Dark theme for the V LIVE website.I've also made a script that <a href="https://greasyfork.org/en/scripts/379342-v-live-video-rotation">lets you rotate the video</a>.`
+@version        20201126.11.22
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -573,6 +573,7 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 [class^="sticker--"] [class*="type_button--"]:hover {
 	background-color: var(--dark-theme-text-color) !important;
 }
+[class^="sticker--"] [class*="sticker_button--"][class*="is_selected--"],
 [class^="sticker--"] [class*="sticker_button--"]:hover {
 	background-color: var(--dark-theme-button-background-hover);
 }
@@ -676,6 +677,8 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 	border-color: var(--dark-theme-border-color);
 }
 
+/*** Channel end ***/
+
 
 /* Video page */
 [class^="video_detail--"],
@@ -715,6 +718,9 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 }
 [class*="video_wrap--"][class*="-live"] [class^="video_chat--"] {
 	border-color: transparent;
+}
+[class^="comment_wrap--"] ~ [class^="comment_wrap--"]::before {
+	background-color: var(--dark-theme-border-color);
 }
 [class^="replay_chat--"] {
 	background-color: var(--dark-theme-background);
@@ -780,47 +786,6 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 }
 [class^="layout_content--"] footer a::before {
 	background-color: #515159;
-}
-
-/*** Channel end ***/
-
-
-
-/*** Video page ***/
-
-.vapp_bridge .btn_vapp .tit {
-	color: var(--dark-theme-text-color);
-}
-
-.video_area.suggest, .video_area.multicam_playlist,
-.cont_section .loading_wrap + .loading_wrap {
-	border-color: var(--dark-theme-border-color);
-}
-.video_area h3.tit, .banner_area h3.tit {
-	color: var(--dark-theme-heading-color);
-}
-
-.vlive_cont {
-	border-color: var(--dark-theme-border-color-dark);
-	background: var(--dark-theme-background);
-}
-.vlive_info {
-	border-color: var(--dark-theme-border-color-dark);
-}
-.vlive_info .tit {
-	color: var(--dark-theme-video-title-color);
-}
-.vlive_info .icon_upcoming, .vlive_info .txt {
-	color: var(--dark-theme-text-color);
-}
-.vlive_info .ico_grey {
-	background-color: var(--dark-theme-video-title-color);
-	color: #111;
-}
-
-.u_rmcplayer .u_rmcplayer_control_bg {
-	height: 0;
-	min-height: 60px !important;
 }
 
 
@@ -946,6 +911,12 @@ ul[class^="board_group_list--"] [class^="board_link--"]:hover,
 	height: 100%;
 }
 
+
+/* Video controls */
+.u_rmcplayer .u_rmcplayer_control_bg {
+	height: 0;
+	min-height: 60px !important;
+}
 
 #video-rotation-controls button {
 	background-color: var(--dark-theme-button-background);

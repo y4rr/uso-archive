@@ -2,8 +2,8 @@
 @name           Eldarya Dark (New Era)
 @namespace      USO Archive
 @author         Ashalinda
-@description    `Changes styles for New EraЗаменяет стили для новой эры Элдарии (инвентарь, чердак, рынок, магазины и т.д.)Также фоновая размытая картинка заменяется на фон с ночным пляжем.UPD: Добавлены мелкие исправления для главной страницы, алхимии, библиотеки, рынка и профиля.На странице фамильяра спрятана кнопка "Убрать в яйцо" (которая срабатывает без подтверждения) - функция доступна на странице "Мои яйца".`
-@version        20201118.12.18
+@description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
+@version        20201126.7.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -368,6 +368,17 @@ a#go-eggs {
 
 .flavr-container.buy-food-popup .flavr-outer .flavr-content .flavr-message p.food-count-text{
     font-size: 18px;
+}
+
+#pet-infos .evolve-info li.fulfilled {
+    color: #188046;
+}
+#pet-infos .evolve-info {
+    padding: 0;
+}
+#pet-infos .evolve-info .cant-evolve{
+    padding: 10px 0;
+    display: inline-block;
 }
 }
 
