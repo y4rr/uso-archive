@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Michał Nowak
 @description    `For Polish users of o2 mail. Based on the Gmail Dark theme. Created for personal purposes, but thought about sharing. Not a complete dark mode conversion, settings remain white, attachments as for now are a bit broken, and jump to date is a little ugly. The CSS contains a few residue obfuscated classes from testing, need to clean them up. Updates will come. Obviously it's all very very very hacky. Naturally, the composer and mail view still have a white background due to the fact that it would be unnatural to display e-mail contents designed to have black text on a dark background. It's a philosophical issue more than anything, but I will be working on it. Maybe as an alternative in style settings.`
-@version        20201124.10.43
+@version        20201125.13.25
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           Dark Gmailification for o2.pl mail
 @namespace      github.com/openstyles/stylus
-@version        0.2.3
+@version        0.2.4
 @description    Dark theme for o2.pl mail based on Gmail. Product Sans is owned by Google LLC. 
 @author         Neoqueto
 ==/UserStyle== */
@@ -848,6 +848,12 @@
 	.sidebar__inner {
 	    top: 141px !important;
 	    position: fixed !important;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: calc(100vh - 141px);
+            width: 256px;
+            margin-left: -24px;
+            padding-left: 24px;
 	}
 
 	.Message-content {

@@ -2,8 +2,8 @@
 @name           Red and Black for CVM
 @namespace      USO Archive
 @author         Socialix
-@description    `Give CollabVM a new look with this style. Yup, the first style for CVM to be a real style, not a joke one.IMPORTANT: The rules and some other pages' backgrounds are glitched. Oh, and the Users Online on hover is white, flashbang.`
-@version        20201125.8.20
+@description    `Give CollabVM a new look with this style. Yup, the first style for CVM to be a real style, not a joke one.IMPORTANT: The rules and some other pages' backgrounds are glitched.`
+@version        20201125.18.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -60,8 +60,9 @@ h4 {
 }
 
 .message-pane > li {
-    border-bottom: 1px solid black;
+    border-bottom: none;
     box-shadow: 0 1px 0 0 #101010;
+    border: none;
 }
 
 .message-pane-wrapper, #username-box {
@@ -74,17 +75,17 @@ h4 {
 }
 
 .message-pane .username {
-    color: #6a6a6a;
+    color: #7b3333 !important;
         font-weight: normal !important;
 }
 
 #online-users > .item.has-turn, .has-turn {
-        background-color: #843131 !important;
+        background-color: #531d1d !important;
     border: none;
 }
 
 #online-users > .item.waiting-turn, .waiting-turn {
-        background-color: #a25858 !important;
+        background-color: #7d2a2a !important;
     border: none;
 }
 
@@ -156,7 +157,7 @@ ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field, 
     }
 
 .list-group-item.disabled, .panel, .list-group-item {
-        background-color: #2e2e2e;
+        background-color: #101010;
         color: gray;
         border:none !important;
         box-shadow:none !important;
@@ -164,5 +165,23 @@ ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field, 
 
 * {
     color: #b3b3b3;
+}
+
+.message-pane .spacer:after {
+    visibility: visible;
+    position: absolute;
+    top: 1;
+    left: 0;
+    color: #8c3e3e;
+    content: "";
+}
+
+.message-pane .spacer {
+    visibility: hidden;
+    position: relative;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+background-color: #101010 !important;
 }
 }

@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           Dark Theme for UserStyles
+@namespace      USO Archive
+@author         Reza Rahemtola
+@description    `A simple Dark Theme for userstyles.org`
+@version        20201125.21.29
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("userstyles.org") {
+/* General */
+div#view-responsive{ background-color: #202020 !important;}
+.navigation{ background-color: #111 !important;}
+.navigation .links-box .navigation-link .navigation-title{ color: #fff;}
+
+h1{ color: #fff !important}
+
+
+/* Style page */
+.style_title, .by-author, #share_div, #headline, #information_key, #information_value, #information_key_left, #infomation_value_left, #applies_link, .text_style_page{ color: #fff !important;}
+
+
+/* AdBlocker */
+.android_button_banner, .walking, .overlay_background{ display: none !important;}
+}

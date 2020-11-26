@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         esvikey
 @description    `Fully edited site.Changed:• Main Page• Song's Page• Album's Page• Annotations• Metadata• Articles• Firehose• 'Add Song' Page• User's Page• All Buttons• Dropdown Menu• ScrollbarEnjoy!`
-@version        20201117.22.5
+@version        20201125.23.55
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -63,7 +63,7 @@ a.square_button.react_song_page_preview_link:hover {
     background: #000
 }
 
-.action_summary.actor_and_action {
+.action_summary .actor_and_action {
     color: #fff
 }
 
@@ -109,6 +109,10 @@ a.square_button.react_song_page_preview_link:hover {
 
 .annotation_stat-pill--red {
     background: #ff7070
+}
+
+.annotation_units{
+    border: solid 1px #222
 }
 
 .apple-music-player.ng-isolate-scope {
@@ -275,6 +279,10 @@ a.square_button.react_song_page_preview_link:hover {
     background: #141414
 }
 
+.cont-activity_streams.ng-scope{
+    background: #141414
+}
+
 .cont-discussions.ng-scope{
     background: #000
 }
@@ -292,7 +300,6 @@ a.square_button.react_song_page_preview_link:hover {
     box-shadow: none;
     border: 1px solid #fff
 }
-
 
 .contribution_opportunity-actions {
     background: #141414
