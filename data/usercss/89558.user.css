@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201116.11.16
+@version        20201127.11.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -138,8 +138,10 @@ h2 .b_secondaryText
 #tta_alttbl td,
 .b_algoArticleTextCarousel .b_slidebar .slide .b_title,
 .b_cnvsug a,
+.b_snippet_expansion,
 .mc_vtvc_title,
-.nwsq_ci_q,.nwsq_ci_st
+.nwsq_ci_q,.nwsq_ci_st,
+table.df_tb
 {
 	font-size: 17px!important;
 }
@@ -638,6 +640,7 @@ input[type="radio"]:checked + label
 .rc_vlHorizontalImage .rc_vlImgFact .b_dataList li a,
 .rel_ent_tw,
 .sb_count,
+.spl-ssentity-table-value,
 .sfisi,
 .t_cookieMsg,
 .vs_cont .vert_make_default .button,.vs_cont .vert_make_default .text .desc,.vs_cont,
@@ -661,6 +664,8 @@ span#fltIdtLnk
 #b_results > .b_top .b_focusTextExtraSmall a,#b_results > .b_top .b_focusTextExtraSmall,#b_results > .b_top .b_focusTextLarge a,#b_results > .b_top .b_focusTextLarge,#b_results > .b_top .b_focusTextMedium a,#b_results > .b_top .b_focusTextMedium,#b_results > .b_top .b_focusTextSmall a,#b_results > .b_top .b_focusTextSmall,#b_results > .b_top .b_prominentFocusLabel,#b_results > .b_top .b_topTitle,
 #detailPage .tit,
 #df_listaa .b_module_expansion .b_expansion_text,
+#df_tb_6d07097b tr td:first-child,
+#df_tb_6d07097b tr:nth-child(2) td:first-child strong,
 #miniheader #miniheader_data .itm>div.it,
 #tt_perajx .b_module_expansion .b_onpage_expansion .b_expansion_text,
 .MicrosoftMap .overlay-taskpane .annotate .nameContainer,.MicrosoftMap .overlay-taskpane .b_subModule .b_entityTitle,
@@ -740,6 +745,7 @@ label
 .b_demoteText,
 .b_listnav .b_ans_stamp,
 .b_topborder .expreftext,
+.df_wdate .rwrl>strong:last-child,
 .epv_Summary, 
 .finnews_f,
 .mc_vtvc_meta_pubdate,.mc_vtvc_meta_row:first-child > span,
@@ -989,6 +995,7 @@ html
 /*___ Background 0000 ______________________________________________________________*/
 
 #b_pole .ent-dtab-content > div:first-child,#b_pole .ent-dtab-content,
+#df_tb_6d07097b tr:nth-child(2),
 #mfa_root .mfa_btn,
 #rfPaneIn .touchQuery .carousel .nav_left>div,#rfPaneIn .touchQuery .carousel .nav_right>div,
 #tta_tgtsl,
@@ -1392,6 +1399,8 @@ a.cbtn:active
 /*___ Highlight Background _________________________________________________________*/
 
 #b_context .b_rrsr>.b_vList>li a:hover,
+#df_tb_6d07097b tr:hover,
+#df_tb_6d07097b tr:nth-child(2):hover,
 #sw_as .sa_hv,
 #tta_alttbl tbody tr:not(:first-child):hover,
 .MicrosoftMap .Light #transientLens .transientLensActions a.directionsAddToRoute.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.nearby.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.saveas.selected,.MicrosoftMap .Light #transientLens .transientLensActions a.savefavorite.selected,.MicrosoftMap a.dropdownEntry:hover,
@@ -1417,7 +1426,6 @@ a.ent-dtab-ovr, a.ent-dtab-rt
 	border: none;
 	border-radius: 22px;
 }
-
 }
 
 @-moz-document domain("bing.com") {
@@ -1429,6 +1437,8 @@ a.ent-dtab-ovr, a.ent-dtab-rt
 #carousel #crs_pane .itile,#carousel #crs_pane .pntile,
 #detailPage a,
 #df_listaa .b_module_expansion .b_expansion_text,
+#df_tb_6d07097b tr,
+#df_tb_6d07097b tr:nth-child(2),
 #rcCalB input,
 .b_overlay .btn.rounded .cr>div,
 .b_scard,
@@ -1469,6 +1479,8 @@ li.tall_m
 #carousel #crs_pane .itile:hover,#carousel #crs_pane .pntile:hover,
 #detailPage a:hover,
 #df_listaa .b_module_expansion .b_expansion_text:hover,
+#df_tb_6d07097b tr:hover,
+#df_tb_6d07097b tr:nth-child(2):hover,
 #rcCalB input:hover,
 .b_overlay .btn.rounded .cr>div:hover,
 .b_scard:hover,

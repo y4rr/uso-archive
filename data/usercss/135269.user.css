@@ -1,12 +1,21 @@
 /* ==UserStyle==
-@name           JVC Black-Red
+@name           Dark & Red JVC
 @namespace      USO Archive
 @author         Super Ramon
 @description    `Version Noire/Rouge avec un fond "Geek" de Jeuxvideo.comCompatible avec la version """""Responsive"""""`
-@version        20201126.10.50
+@version        20201127.9.50
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
+.layout--withBackground .layout__breadcrumb, .layout--withBackground .layout__content, .layout--withBackground .layout__contentAfter, .layout--withBackground .layout__contentAside, .layout--withBackground .layout__contentBefore, .layout--withBackground .layout__contentMain, .layout--withBackground .layout__contentTop, .layout--withBackground .layout__contextBottom {
+    background-color: #F2F2F2;
+}
+.layout--withBackground {
+background-color: #212123 !important;
+background-image: url("http://image.jeuxvideo.com/medias/142494/1424938919-1233-logo.jpg");
+}
+
+
 #header-bottom.affix .bloc-sticker
    {
      position: static;

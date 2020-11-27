@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ashalinda
 @description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
-@version        20201126.7.38
+@version        20201127.8.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -93,6 +93,14 @@ ul#player-stats > * {
 
 .season-s2 .carousel-container .episode .episode-info .pictures.completed {
     color: white;
+}
+
+/* TOP MENU - fix for events*/
+#menu-bar #menu #menu-inner-right {
+    white-space: nowrap;
+}
+#menu-bar #menu #menu-inner-left  {
+    white-space: nowrap;
 }
 }
 

@@ -2,8 +2,8 @@
 @name           Eldarya - Corrections Website [all servers]
 @namespace      USO Archive
 @author         Вика Пименова
-@description    `If you don't know Russian, use a translatorВсе изменения:Текст верхнего меню немного увеличен, а его фон затемнён, так что его теперь проще читатьНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее, чтобы сразу бросаться в глазаВ гардеробе и в магазине одежды сократилось пустое пространство, чтобы вещи было лучше видноИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке (банк) немного увеличены стикеры акций и добавлено белое обрамление для надписей "Мана" и "Золотые монеты" Названия нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеет`
-@version        20201113.19.20
+@description    `If you don't know Russian, use a translatorИзменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке немного увеличены стикеры акций и добавлено белое обрамление для надписейНазвания нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеетФон на главной странице и в гардеробе больше не размытыйМини-игры теперь немного повышеГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайта`
+@version        20201127.10.19
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -52,6 +52,8 @@
 #currencies {
     position: absolute;
     right: 160px;
+    top: 100px !important;
+    padding: 0 50px !important;
 }
 
 #appearance-items #wardrobe-menu {
@@ -178,7 +180,7 @@
 
 /*Банк*/
 
-#bank-page .product-panel h2 {
+#bank-page .product-panel h2, #bank-page.page-main-container.black-friday .bank-level-card {
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 35px;
     box-shadow: 0 0 8px 0 rgba(34, 33, 34, 0.56);
@@ -326,5 +328,53 @@
 
 #minigames-list, #malls-list {
     margin: 70px auto auto;
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.ru") {
+/*Корректировка для Чёрной пятницы*/
+
+#menu-bar #menu li.main-menu-event.selected a:before, #menu-bar #menu li.main-menu-event a:before {
+    content: "ЧП";
+    font-size: 20px;
+    text-shadow: 0 0 12px white;
+    line-height: 38px;
+    font-weight: 900;
+}
+
+#menu-bar #menu li.main-menu-event.selected a, #menu-bar #menu li.main-menu-event a {
+    font-size: 0px;
+}
+
+#timer-help-container #clock-icon{
+    padding: 60px 0px 0px 0px;
+}
+
+#timer-help-container #event-timer {
+    padding: 60px 50px 0px 0px;
+}
+}
+
+@-moz-document url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
+/*Correct for Black friday*/
+
+#menu-bar #menu li.main-menu-event.selected a:before, #menu-bar #menu li.main-menu-event a:before {
+    content: "BF";
+    font-size: 20px;
+    text-shadow: 0 0 12px white;
+    line-height: 38px;
+    font-weight: 900;
+}
+
+#menu-bar #menu li.main-menu-event.selected a, #menu-bar #menu li.main-menu-event a {
+    font-size: 0px;
+}
+
+#timer-help-container #clock-icon{
+    padding: 60px 0px 0px 0px;
+}
+
+#timer-help-container #event-timer {
+    padding: 60px 50px 0px 0px;
 }
 }

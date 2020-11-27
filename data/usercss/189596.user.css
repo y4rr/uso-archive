@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Unleash the Echidnas
 @description    `Less dark than AVEN- Dark, less grey than grey AVEN.`
-@version        2020104.21.30
+@version        20201127.1.55
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,7 +28,7 @@ a:hover /* link response on mouse over */
 
 .ipsType_blendLinks > a:hover /* mouse over user and forum links in activity feed */
 {
-    color: #714fc0 !important; /* forced to use !important tp override AVEN default style */
+    color: #714fc0 !important; /* forced to use !important to override AVEN default style but still gets overridden when linking posts in threads */
 }
 
 a[data-mentionid], /* user tags in posts */
@@ -53,6 +53,7 @@ a[data-mentionid], /* user tags in posts */
 .ipsList_inline, /* report post link */
 .ipsList_reset > li > span, /* post author information */
 .ipsPager_type, /* text for left and right topic navigation arrows at bottom of thread pages */
+.ipsSpoiler_contents.ipsClearfix.cke_widget_editable, /*  */
 .ipsType_center > a, /* all notifications link at bottom of notification dropdown */
 .ipsWidget_statsCount /* total members and max users online numbers at bottom of main page */
 {
@@ -154,12 +155,14 @@ body[data-role="externalEmbed"] /* tweets in posts but, unfortunately, also twee
 .ipsMenu_headerBar, /* header of notification dropdown */
 .ipsQuote_citation, /* header bar for quotes in posts */
 .ipsQuote .ipsQuote_citation > a, /* user profile link in quote header */
+.ipsRichEmbed_openItem, /* header bar link for threads linked in signatures */
 .ipsSpoiler_header /* header bar for spoilers in posts and signatures */
 {
     background: #323131; 
     color: #e0e0e1;  
 }
 
+.ipsAreaBackground_light, /* header bars of threads linked in signatures */
 .ipsQuote, /* quotes in posts in threads */
 .ipsSpoiler /* spoilers in posts */
 {

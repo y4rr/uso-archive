@@ -2,8 +2,8 @@
 @name           Seznam Zprávy 2020 Šedá verze
 @namespace      USO Archive
 @author         Jan Procházka
-@description    `Šedá verze růžového redesignu Seznam Zprávy https://www.seznamzpravy.cz`
-@version        20201123.14.32
+@description    `Šedá verze růžového redesignu Seznam Zprávy <a href="https://www.seznamzpravy.cz" target="_blank">seznamzpravy.cz</a>VYZKOUŠEJTE<a href="https://userstyles.org/styles/182654/seznam-cz-2020-ern-maroon">Seznam.cz 2020 černý+maroon</a> - tmavá verze Seznamu<a href="https://userstyles.org/styles/141337/email-cz-2017-2020-blue">Email.cz 2017-2020 | Blue</a> - šedo-modrá verze, velikost fontu 90%, kompaktní menu složek`
+@version        20201127.10.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,6 +20,7 @@ main, header {
     color: rgb(24,24,24) !important;
 }
 main *, header *, 
+.d_fI + .d_fH .c_fJ,
 .c_fB, .d_fA+.d_fz .c_fB,
 .d_fo+.d_fn .c_fp,
 .d_fo~.d_fn,
@@ -74,6 +75,7 @@ main *, header *,
 }
 
 /* autor CV */
+.j_iE,
 .j_iD,
 .j_ia,
 .j_h3,

@@ -3,23 +3,20 @@
 @namespace      USO Archive
 @author         Thermalzombie
 @description    `A dark style for mwave a computer and electronics retailer in Australia.`
-@version        20201126.8.39
+@version        20201127.6.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("mwave.com.au") {
-html, body 
+html, body, #core, .productCommon, #PopSliRac div, .checkout, .basketItems, .pMessage
 {
     background-color:#000000 !important;
 }
+
 .promotionWrapper, #footer, #top-bar, #logoQuote, #headerContainer, .terms_conditions_footer,
 .secondResultUtils, .firstResultUtils
 {
     background-color:#443266 !important;
-}
-#core, .productCommon, #PopSliRac div
-{
-    background-color:#000000 !important;
 }
 
 #PopSliRac div li:hover, .btnMain
@@ -32,7 +29,9 @@ html, body
     background:orange !important;
 }
 
-.productList .notifyButton .btnRight, .categoryMenu dt
+.productList .notifyButton .btnRight, .categoryMenu dt,
+.basketItems .itemHeader, .basketItems .item,
+.checkoutRight .calculateShippingCost, .checkoutLeft .coupon
 {
     background:#443266 !important;
 }
@@ -53,18 +52,29 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     border:1px orange solid !important;
 }
 
+.pMessage
+{
+    border:1px #443266 solid !important;
+}
+
+.basketItems .itemHeader, .basketItems .item
+{
+    border:1px #000000 solid !important;
+}
+
 .productList .name a, .resultStatus,
 .productList .notifyButton .btnMain,
 .categoryFilter li label, .wrapper,
 .categoryFilter h3, .basicInfos h1,
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .mwaveDollars,
 #PopSliRac div li, .login h2, #loginForm .text, h1, h2, p, .label, .majorRow .indent,
-.categoryMenu a
+.categoryMenu a, .slirecomList .name a, .basketItems .description .name a, #tabAddWhachList a,
+.basketItems .description .skuAndModel
 {
     color:#FFFFFF !important;
 }
 
-.productList .current
+.productList .current, .price .current
 {
     color:#00FF00 !important;
 }
