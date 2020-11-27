@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201120.13.56
+@version        20201126.19.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -559,7 +559,7 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 @advanced color Backgrounds "Menus, Popups, Bars etc." #090909
 @advanced color Notifications "Notifications & Announcements" #090909
 @advanced color Reply "Reply Box" #090909
-@advanced color RESPostHighlight "RES Post Highlight (old.reddit)" #090909
+@advanced color RESPostHighlight "Post Highlight (incl. RES)" #090909
 @advanced color MenuHighlighting "Menu & Dropdown Highlighting" #191919
 @advanced color MenuHighlightingText "Menu Highlighting Text" #FFFFFF
 @advanced color BoxShadows "Box Shadows (Main borders)" #444444
@@ -675,69 +675,6 @@ path,
 {
     filter:brightness(1.25);
     box-shadow: none;
-} EOT;
-
-}
-@advanced dropdown RCAwards "Awards" {
-	RCGold "Enabled*" <<<EOT /*---------------------------------------*\/
-/*                                       *\/
-/*        --- Awards enabled ---         *\/
-/*                                       *\/
-/* To disable, see also separate theme:  *\/
-/*                                       *\/
-/* https://userstyles.org/styles/184078/ *\/
-/*                                       *\/
-/*---------------------------------------*\/
-
-/*
-
-[id*="Award"],
-[id*="Coin"],
-[class*="award"],
-.giftgold,
-
-/*Top Bar "Get Coins" Button
-.jEUbSHJJx8vISKpWirlfx,
-._2LeW9tc_6Fs1n7Ou8uD-70,
-
-/*"Reddit Coins" inside Top Menu
-a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
-
-/*"Give Award" under posts
-.gold-give-gold,
-._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
-
-/*"Give Award" under comments
-div:nth-child(4) > div:nth-child(1) > button:nth-child(2),
-div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(2)
-{
-    display: none !important;
-}
-
-*\/ EOT;
-RCNoGold "Disabled" <<<EOT /*Awards Disabled*\/
-
-[id*="Award"],
-[id*="Coin"],
-[class*="award"],
-.giftgold,
-
-/*Top Bar "Get Coins" Button*\/
-.jEUbSHJJx8vISKpWirlfx,
-._2LeW9tc_6Fs1n7Ou8uD-70,
-
-/*"Reddit Coins" inside Top Menu*\/
-a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
-
-/*"Give Award" under posts*\/
-.gold-give-gold,
-._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
-
-/*"Give Award" under comments*\/
-div:nth-child(4) > div:nth-child(1) > button:nth-child(2),
-div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(2)
-{
-    display: none !important;
 } EOT;
 
 }
@@ -1304,137 +1241,302 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 } EOT;
 
 }
-@advanced dropdown EmailRemoval "E-mail Request Popup" {
-	EmailYes "Leave be*" <<<EOT /*Untouched*\/
+@advanced dropdown RCPostHighlight00 "Highlighted Post Type (expanded) & Hover Effect (New Reddit)" {
+	RCPostHighlight00 "Background & No hover*" <<<EOT /*Option Chosen - [Background & No hover]*\/
 
-/*Enable code to remove:*\/
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+} EOT;
+RCPostHighlight01 "Background & Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Increased Brightness]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    filter:brightness(1.25);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    filter:brightness(1);
+} EOT;
+RCPostHighlight02 "Background & Border" <<<EOT /*Option Chosen - [Posts: Background. Hover: Border]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:.2s;
+} EOT;
+RCPostHighlight03 "Background & Border + Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Border + Increased Brightness]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    filter:brightness(1.25);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    filter:brightness(1);
+} EOT;
+RCPostHighlight04 "Background & Background" <<<EOT /*Option Chosen - [Posts: Background. Hover: Background]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:.2s;
+} EOT;
+RCPostHighlight05 "Background & Background + Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Background + Increased Brightness]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    filter:brightness(1.25);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+{
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    filter:brightness(1);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    filter:brightness(1);
+} EOT;
+RCPostHighlight06 "Border & Border" <<<EOT /*Option Chosen - [Posts: Border. Hover: Border]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+} EOT;
+RCPostHighlight07 "Border & Border + Brighter" <<<EOT /*Option Chosen - [Posts: Border. Hover: Border + Increased Brightness]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    filter:brightness(1.25);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    filter:brightness(1);
+} EOT;
+RCPostHighlight08 "None & Border" <<<EOT /*Option Chosen - [Posts: None. Hover: Border]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    box-shadow:none!important;
+} EOT;
+RCPostHighlight09 "None & Brighter" <<<EOT /*Option Chosen - [Posts: None. Hover: Increased Brightness]*\/
+
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+{
+    filter:brightness(1.25);
+    transition:.2s;
+}
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    filter:brightness(1);
+} EOT;
+RCPostHighlight10 "None" <<<EOT /*Option Chosen - [None]*\/ EOT;
+
+}
+@advanced dropdown RCAwards "Awards" {
+	RCGold "Enabled*" <<<EOT /*---------------------------------------*\/
+/*                                       *\/
+/*        --- Awards enabled ---         *\/
+/*                                       *\/
+/* To disable, see also separate theme:  *\/
+/*                                       *\/
+/* https://userstyles.org/styles/184078/ *\/
+/*                                       *\/
+/*---------------------------------------*\/
 
 /*
 
-#ecb.email-collection-banner,
-.email-collection-banner.footer_2,
-.email-collection-content.footer_2,
-.kEQVd8aneM1tVkcIKUyDT
+[id*="Award"],
+[id*="Coin"],
+[class*="award"],
+.giftgold,
+
+/*Top Bar "Get Coins" Button
+.jEUbSHJJx8vISKpWirlfx,
+._2LeW9tc_6Fs1n7Ou8uD-70,
+
+/*"Reddit Coins" inside Top Menu
+a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
+
+/*"Give Award" under posts
+.gold-give-gold,
+._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
+
+/*"Give Award" under comments
+div:nth-child(4) > div:nth-child(1) > button:nth-child(2),
+div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(2)
 {
-    display:none!important;
+    display: none !important;
 }
 
-*\/
- EOT;
-EmailNo "Hide" <<<EOT /*Removed*\/
+*\/ EOT;
+RCNoGold "Disabled" <<<EOT /*Awards Disabled*\/
 
-#ecb.email-collection-banner,
-.email-collection-banner.footer_2,
-.email-collection-content.footer_2,
-.kEQVd8aneM1tVkcIKUyDT
+[id*="Award"],
+[id*="Coin"],
+[class*="award"],
+.giftgold,
+
+/*Top Bar "Get Coins" Button*\/
+.jEUbSHJJx8vISKpWirlfx,
+._2LeW9tc_6Fs1n7Ou8uD-70,
+
+/*"Reddit Coins" inside Top Menu*\/
+a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
+
+/*"Give Award" under posts*\/
+.gold-give-gold,
+._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
+
+/*"Give Award" under comments*\/
+div:nth-child(4) > div:nth-child(1) > button:nth-child(2),
+div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(2)
 {
-    display:none!important;
+    display: none !important;
 } EOT;
-
-}
-@advanced dropdown RCAds "Ad Removal" {
-	RCLeaveAds "No*" <<<EOT /*Ads left as is*\/
-
-/* Option to activate *\/
-
-/*Ad removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-/*Promotions Removal
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-*\/ EOT;
-RCAdsRemoved "Yes" <<<EOT /*Ads Removed*\/
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-
-/* Optional - Promotions Removal
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-*\/ EOT;
-RCAdsAndPromos "Promotions too" <<<EOT /*Ads and Promotions Removed*\/
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-[class*="promotedlink"]
-{
-    display:none;
-} EOT;
-RCPromosOnly "Promotions Only" <<<EOT /*Promotions Only Removed*\/
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-
-/* Optional - Ad Removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-*\/ EOT;
 
 }
 @advanced dropdown RCScores "Scores & Points" {
@@ -1694,6 +1796,139 @@ div.side div.spacer div.linkinfo div.date span:after
     margin-left:-9rem;
     visibility: visible;
     content: 'This post was submitted on ';
+} EOT;
+
+}
+@advanced dropdown RCAds "Ad Removal" {
+	RCLeaveAds "No*" <<<EOT /*Ads left as is*\/
+
+/* Option to activate *\/
+
+/*Ad removal
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+/*Promotions Removal
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+*\/ EOT;
+RCAdsRemoved "Yes" <<<EOT /*Ads Removed*\/
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+
+/* Optional - Promotions Removal
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+*\/ EOT;
+RCAdsAndPromos "Promotions too" <<<EOT /*Ads and Promotions Removed*\/
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+[class*="promotedlink"]
+{
+    display:none;
+} EOT;
+RCPromosOnly "Promotions Only" <<<EOT /*Promotions Only Removed*\/
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+
+/* Optional - Ad Removal
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+*\/ EOT;
+
+}
+@advanced dropdown EmailRemoval "E-mail Request Popup" {
+	EmailYes "Leave be*" <<<EOT /*Untouched*\/
+
+/*Enable code to remove:*\/
+
+/*
+
+#ecb.email-collection-banner,
+.email-collection-banner.footer_2,
+.email-collection-content.footer_2,
+.kEQVd8aneM1tVkcIKUyDT
+{
+    display:none!important;
+}
+
+*\/
+ EOT;
+EmailNo "Hide" <<<EOT /*Removed*\/
+
+#ecb.email-collection-banner,
+.email-collection-banner.footer_2,
+.email-collection-content.footer_2,
+.kEQVd8aneM1tVkcIKUyDT
+{
+    display:none!important;
 } EOT;
 
 }
@@ -2101,6 +2336,8 @@ such as
 :root
 {
     --RCBackground: /*[[Background]]*/;
+    --RCRESHighlightBox: /*[[RESPostHighlight]]*/;
+    --RCBox-Shadow: /*[[BoxShadows]]*/;
 }
 
 
@@ -2433,6 +2670,31 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /*[[RCScoresEnabled]]*/
 
 /*[[RCScoresDisabled]]*/
+
+
+/* =============== Post Hover on New Reddit =============== */
+
+/*[[RCPostHighlight00]]*/
+
+/*[[RCPostHighlight01]]*/
+
+/*[[RCPostHighlight02]]*/
+
+/*[[RCPostHighlight03]]*/
+
+/*[[RCPostHighlight04]]*/
+
+/*[[RCPostHighlight05]]*/
+
+/*[[RCPostHighlight06]]*/
+
+/*[[RCPostHighlight07]]*/
+
+/*[[RCPostHighlight08]]*/
+
+/*[[RCPostHighlight09]]*/
+
+/*[[RCPostHighlight10]]*/
 
 
 /* ======================= Updating ======================= */
@@ -2900,6 +3162,7 @@ div a,
     transition:.4s;
     filter:brightness(1);
 }
+
 
 a em:hover,
 div a:hover,
@@ -3770,8 +4033,7 @@ article.post,
 ._2sfaZWDVT8JLAt2J9p4IzV,
 ._3ks0MaOGG46svtYF11UgzA,
 ._3nRJIwLuth2pKYrXnr2jPN,
-._3ZTxrJ36ejYA39ZNctzfrx,
-.kEQVd8aneM1tVkcIKUyDT
+._3ZTxrJ36ejYA39ZNctzfrx
 {
     background:
         linear-gradient(90deg, var(--RCBackgrounds) 0%, #0000 30%),
@@ -3977,6 +4239,7 @@ table#srList[style="display: block;"],
 .EjdBJNEwygtHMKiHd3Bnv,
 .HQ2VJViRjokXpRbJzPvvc/*Tool-tip hover*/,
 .K4Eem3pMbRbAYioOfqN5E,
+.kEQVd8aneM1tVkcIKUyDT,
 .nSJCQrnLY07CzwT8tTsNO,
 .TMMvbwyeh9yuHKmQWHrE3
 {
@@ -4361,7 +4624,8 @@ body.res .RES-keyNav-activeElement,
 /*Transition needed*/
 
 .RESDropdownList li div,.res-nightmode .RESDropdownList li div,
-.Header__tooltipItem
+.Header__tooltipItem,
+.vzhy90YD0qH7ZDJi7xMGw
 {
     transition:.4s;
 }
@@ -4395,19 +4659,14 @@ body.res .RES-keyNav-activeElement,
 
 /*RES Filter Dropdown*/
 .res-filterline-dropdown details.res-filterline-external:hover,
-
 .res-filterline-dropdown details.res-filterline-new-basic:hover,
 .res-filterline-dropdown-action.res-filterline-filter-new:hover,
-
 .res-filterline-dropdown details.res-filterline-new-group:hover,
 .res-filterline-dropdown details.res-filterline-new-group-filter:hover,
-
 .res-filterline-dropdown details.res-filterline-set-default:hover,
 .res-filterline-dropdown .res-filterline-dropdown-action:hover,
-
 .res-filterline-dropdown div.res-filterline-dropdown-toggles:hover,
 .res-filterline-dropdown div.res-filterline-dropdown-toggles label:hover,
-
 .res-filterline-dropdown div.res-filterline-show-help:hover,
 /*RES Filter Dropdown - End*/
 
@@ -4430,7 +4689,8 @@ body.res .RES-keyNav-activeElement,
 ._3LwUIE7yX7CZQKmD2L87vf:hover>._2-cXnP74241WI7fpcpfPmg,
 
 ._2Kg5EXAuLcqhsBbdEr4SGZ,._2H29-4MOHAslt1eKYtcGaV,._1ClyNNAK4vP9o_uoSwKe0Q,._1xWVaijFIih7uj-n4FXzH2:hover,
-.jFCRipwFbBNJ4rl18HMK5:hover
+.jFCRipwFbBNJ4rl18HMK5:hover,
+.vzhy90YD0qH7ZDJi7xMGw:hover
 {
     background-color:var(--RCMenuHighlight)!important;
     background:var(--RCMenuHighlight)!important;
@@ -7696,6 +7956,7 @@ body > table tbody img
 }
 
 
+
 /*---------------------- Item Removal ----------------------*/
 
 
@@ -7938,7 +8199,8 @@ p.debuginfo:hover:after{color:var(--RCText)!important;content:"Reddit Custom (RE
 /* Main Cursor */
 
 html,
-body
+body,
+.md-container div.md table thead tr th
 {
   cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/eX9/f3w/f39yz///8A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397glJSXM9/f3w/f39yz///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAoKCswlJSXM9/f3w/f39ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4BwcHzAoKCswlJSXM9/f3w/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gEBATMBwcHzAoKCswlJSXM9/f3w/f395f39/eX9/f3l/f395f39/eX9/f3l////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwZGRnMHR0dzDU1Ncz39/eX////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAICAswEBATMBwcHzAoKCswODg7MERERzBUVFcwvLy/M9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAICAswEBATMBwcHzAoKCswODg7MKCgozPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzAICAswEBATMBwcHzCIiIsz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwAAADMAAAAzAICAswcHBzM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMAAAAzAAAAMwAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uAAAAMwAAADMAAAAzBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e4AAAAzAAAAMwZGRnM9/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397gAAADMGRkZzPf395f39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A9/f3uBkZGcz39/eX9/f3LP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD39/e49/f3l/f39yz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////APf397j39/cs////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////////////////////////////////////////////////////////////////////////////////P////x////8P////B////wAP//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8="), default;
 }
@@ -8140,6 +8402,7 @@ ytp-bottom:hover,
 .style-name:hover,
 .tabmenu li a:hover,.res-nightmode .tabmenu li a:hover,
 .thumbnail,
+.toggleButton,
 .togglecommenthead,
 .TquXA:hover,
 .yt-dropdown-menu:hover,
@@ -8174,6 +8437,7 @@ circle:hover,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYLU
 ._36kpXQ-z7Hr61j8878uRkP:hover,
 ._3BFvyrImF3et_ZF21Xd8SC,
 /*New Reddit Top Bar Buttons*/._3dZnYgFFpifT-M_Vs2FAq6,._2zZ-KGHbWWqrwGlHWXR90y,.PH-V9ggsF2mi5JTDmDqdR,._1x6pySZ2CoUnAfsFhGe7J1,.ra_3TRn5G7dbrfbhx8kYi,
+._3qQRMrsougg399HF8ZDsfl,
 ._3fWuhJ6bVet7XJT5A0mZM2,
 ._3G7xHJZQMrQlpjhNDQI2fe:hover,
 ._3UAl61hrkRAXX5JQ6m_q8R:hover,
@@ -8183,6 +8447,7 @@ circle:hover,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYLU
 ._8ZLJI1-ZiP7pHJ_yO1L4Z._3osxlOKfiylmgqNqsW7erB,
 .Ox8QhMwI_pG4DcRAicFqa:hover,
 .cZPZhMe-UCZ8htPodMyJ5,
+.D3IyhBGwXo9jPwz-Ka0Ve,
 .D3IyhBGwXo9jPwz-Ka0Ve._1poyrkZ7g36PawDueRza-J:hover,
 .Nb7NCPTlQuxN_WDPUg5Q2:hover,
 .ssgs3QQidkqeycI33hlBa:hover,
@@ -8396,6 +8661,7 @@ ytp-bottom:active,
 .style-name:active,
 .tabmenu li a:active,.res-nightmode .tabmenu li a:active,
 .thumbnail:active,
+.toggleButton:active,
 .togglecommenthead:active,
 .TquXA:active,
 .yt-dropdown-menu:active,
@@ -8432,12 +8698,14 @@ circle:active,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYL
 /*New Reddit Top Bar Buttons*/._3dZnYgFFpifT-M_Vs2FAq6:active,._2zZ-KGHbWWqrwGlHWXR90y:active,.PH-V9ggsF2mi5JTDmDqdR:active,._1x6pySZ2CoUnAfsFhGe7J1:active,.ra_3TRn5G7dbrfbhx8kYi:active,
 ._3fWuhJ6bVet7XJT5A0mZM2:active,
 ._3G7xHJZQMrQlpjhNDQI2fe:active,
+._3qQRMrsougg399HF8ZDsfl:active,
 ._3UAl61hrkRAXX5JQ6m_q8R:active,
 ._3u6g9UTYlEOr-yfM5hyq3p:active,
 ._3xuFbFM3vrCqdGuKGhhhn0:active,
 ._6p8buRs-LijHSXx1H4MGe:active,
 .Ox8QhMwI_pG4DcRAicFqa:active,
 .cZPZhMe-UCZ8htPodMyJ5:active,
+.D3IyhBGwXo9jPwz-Ka0Ve:active,
 .D3IyhBGwXo9jPwz-Ka0Ve._1poyrkZ7g36PawDueRza-J:active,
 ._8ZLJI1-ZiP7pHJ_yO1L4Z._3osxlOKfiylmgqNqsW7erB:active,
 .Nb7NCPTlQuxN_WDPUg5Q2:active,

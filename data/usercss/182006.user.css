@@ -2,8 +2,8 @@
 @name           Dark Minimal WhatsApp Web
 @namespace      USO Archive
 @author         Giorgio Adamo
-@description    `Light makes you blind? Join the darkness!You can easily change the color scheme according to your preference.Constantly updating as the newest WhatsApp web release comes online (last: June 5th 2020)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Even just a coffee worth donation for the staggering amount of hours spent to fix it every time WhatsApp decides to deliver a new version, would be super appreciated!Ooooor... just <b>send me a message / mail at rwndeloused@gmail.com</b> to share your feedback / appreciation. That means a lot to me!N.B.: I suggest uncommenting the line of code below in your Stylish code editor to be able to import the Raleway font. It's unfortunately not allowed to me to publish the skin including external urls for safety reasons.@import url("https://fonts.googleapis.com/css?family=Raleway");`
-@version        20201126.3.52
+@description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
+@version        20201126.20.43
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD9777
@@ -13,14 +13,10 @@
 
 /* ignore the error icon below if using the Stylish code editor*/
 :root .dark, :root {
-  /* color-scheme n.1 */
-  --superLightGray: #9e9e9e;
-  --lightGray: rgb(85, 85, 85);
-  --darkGray: #323232;
-  --darkerGray: #292929;
-  --mainColor: #f9ac5e; /* change this line if you'd like a different main color*/
+  --mainColor: /*[[mainColor]]*/;
+  --mainColor: #fd9777;
   
-  /* color-scheme n.2 */
+  /* color-scheme */
   --superLightGray: #9e9e9e;
   --lightGray: rgb(85, 85, 85);
   --darkerGray: #1c1c1c;
@@ -247,7 +243,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._2UaNq._3mMX1:after,
 ._2UaNq._16_lP:after,
 ._2UaNq:hover:after,
-._1WWP0 {
+._1WWP0,
+._3Pwfx:hover:after,
+._3Pwfx._1GGbM:after {
   border: none !important;
 }
 ._1wSzK {
@@ -451,7 +449,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._37bbf,
 .mBpSq,
 ._1z6YY, ._1gal2,
-._1E4E4 {
+._1E4E4,
+._2eUNe {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -610,7 +609,8 @@ html[dir="ltr"] ._1F9Ap,
 ._14pZF,
 ._3dHYI,
 ._3Z2oJ,
- ._2jYgI {
+._2jYgI,
+._27ApE {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -681,7 +681,10 @@ header span._1wjpf._3NFp9._3FXB1,
 .CWVX1 ._1VzZY,
 .color-1 ._1VzZY,
 ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g),
-._2op5b {
+._2op5b,
+._3npkZ ._1VzZY,
+._1WmI4,
+._3Tk1z {
   color: var(--mainColor) !important;
 }
 
@@ -849,23 +852,28 @@ span[data-icon="tail-out"] {
 
 span[data-icon="ptt-out-gray"] svg path,
 span[data-icon="ptt-in-gray"] svg path,
-span[data-icon="msg-dblcheck"] svg path,
-span[data-icon="status-dblcheck"] svg path,
 ._1VfKB span svg path,
 ._1o1sm:hover,
 ._1myj_ span[data-icon="status-ptt"] svg path,
 .zFnXi span[data-icon="status-check"] svg path,
 .zFnXi span[data-icon="status-time"] svg path,
-span[data-icon="msg-check"] svg path {
-  opacity: 0.5 !important;
+._3sDwr span[data-icon="status-ptt"] svg path,
+span[data-icon="status-check"] svg path,
+span[data-icon="msg-check"] svg path,
+._2UQ4S .ptt-status-icon {
+  opacity: 0.3 !important;
 }
 ._2RFeE,
 ._3hyINm,
+span[data-icon="msg-dblcheck"] svg path,
+span[data-icon="status-dblcheck"] svg path,
 ._3xkAl[data-icon="msg-dblcheck"] svg path,
 ._3hyIN span[data-icon="status-ptt"] svg path,
 ._2RFeE span[data-icon="status-dblcheck"] svg path,
 span[aria-label=" Read "] svg path,
-._-68As span svg path {
+._-68As span svg path,
+._37v2u span[data-icon="status-ptt"] svg path,
+._1Fcp3 .ptt-status-icon {
   opacity: 1 !important;
 }
 span[data-icon="ptt-out-blue"] svg path:first-child,

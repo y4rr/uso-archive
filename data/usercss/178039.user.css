@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Faisal Sarosh
 @description    `This has been created to make the data displayed in CARES to fit normal display dimensions and accommodate better Readability in web design.`
-@version        20201112.9.45
+@version        20201126.22.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
    ▓▓ Suggestions and comments are always    ▓▓
    ▓▓ welcome!                               ▓▓
    ▓▓ ---------------------------------------▓▓
-   ▓▓ last modified: 11-12-2020              ▓▓
+   ▓▓ last modified: 11-26-2020              ▓▓
    ▓▓________________________________________▓▓ */
 
 body {
@@ -23,9 +23,15 @@ background-size: auto auto,cover;
 }
 
 @-moz-document url("https://cares.360training.com/ResetQuizAttempts.aspx"), url("https://cares.360training.com/ResetPostAssessmentAttempts.aspx") {
-div.justify-content-start{
- display:inline !important; 
+/*div.d-flex.justify-content-start{
+ 	row-gap: 10% !important;
+	flex-wrap: wrap !important;
+}*/
+
+div.d-flex:nth-child(3){
+	height: 0% !important;
 }
+
 }
 
 @-moz-document url-prefix("https://cares") {
@@ -98,12 +104,12 @@ body {
  margin-bottom:10px;
  font-family: 'Roboto',sans-serif;
 }
-
+/*
 .d-flex{
     padding-top:0px;
     padding-bottom:0px;
     height: 40%;
-}
+}*/
 
 /*/////tweaks for IS APPROVAL ACTIVE ////*/
 

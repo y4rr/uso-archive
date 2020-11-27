@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         lainverse
 @description    `Набор дополнительных стилей, которые невозможно применить средствами Adblock Plus, но которые необходимы для более корректного отображения отдельных сайтов, и блокировки на них рекламы.Рекомендуется использовать совместно с RU AdList JS Fixes: https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixesДля установки данного стиля рекомендую использовать специализированное расширение, а не Tampermonkey, необходимый для корректной работы JS Fixes. Не смотря на то, что в Tampermonkey есть поддержка установки стилей и её даже недавно обновляли, специализированное расширение справляется с работой и загрузкой обновлений лучше. В случае Mozilla Firefox и Google Chrome рекомендую использовать расширение Stylus.`
-@version        20201120.21.25
+@version        20201126.15.25
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201120.1637
+@version        0.20201126.1712
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -177,6 +177,7 @@
   domain("aif.ru"),
   domain("ain.ua"),
   domain("betahdrezka.com"),
+  domain("bit.ua"),
   domain("budport.com.ua"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
@@ -579,6 +580,7 @@
 
 @-moz-document
   domain("allbasketball.org"),
+  domain("bit.ua"),
   domain("freerutor.com"),
   domain("gidonline.fun"),
   domain("kinoboom.su"),
@@ -774,8 +776,8 @@
 }
 
 @-moz-document domain("app2top.ru") {
-    body > .content, body > .content__full {
-        margin-top: 0 !important
+    .page-wrapper {
+        padding-top: 0 !important
     }
 }
 
@@ -1409,6 +1411,24 @@
     }
 }
 
+@-moz-document domain("electric-house.ru") {
+    table[class^="header"] > tbody > tr > td ~ [class] {
+        display: none !important
+    }
+}
+
+@-moz-document
+  domain("electric-house.ru"),
+  domain("helpsetup.ru"),
+  domain("izzylaif.com"),
+  domain("so-wiki.ru"),
+  domain("stroi-help.ru") {
+    .adsbygoogle {
+        height: 1px !important;
+        opacity: 0 !important
+    }
+}
+
 @-moz-document domain("epravda.com.ua") {
     body {
         cursor: auto !important
@@ -1628,15 +1648,6 @@
     }
 }
 
-@-moz-document domain("forums.goha.ru") {
-    .branding-background {
-        background-image: none !important
-    }
-    .branding-background a[href]:not([href="https://www.goha.ru"]) {
-        display: none !important
-    }
-}
-
 @-moz-document domain("forums.overclockers.ru") {
     tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
         color: #004488 !important;
@@ -1725,6 +1736,22 @@
 @-moz-document domain("game2day.ru") {
     body > .container {
         margin-top: 120px !important
+    }
+}
+
+@-moz-document domain("gamebomb.ru") {
+    body {
+        background-color: #303030 !important
+    }
+    body > div[id^="wrapper"] > div[id] {
+        background-image: none !important
+    }
+    body > div[id^="wrapper"] > div[id] > #content {
+        margin-top: 0 !important;
+        pointer-events: none
+    }
+    #basic-content-container > * {
+        pointer-events: auto
     }
 }
 
@@ -1832,12 +1859,6 @@
 @-moz-document domain("goclips.tv") {
     .video_content {
         height: auto !important
-    }
-}
-
-@-moz-document domain("goha.ru") {
-    #banner, .adfox-banner-background, div[class^="foxyad"], div[id^="foxyad"] {
-        display: none !important
     }
 }
 
@@ -1979,16 +2000,6 @@
 @-moz-document domain("helpsetup.ru") {
     #blockajaxdown {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("helpsetup.ru"),
-  domain("izzylaif.com"),
-  domain("so-wiki.ru") {
-    .adsbygoogle {
-        height: 1px !important;
-        opacity: 0 !important
     }
 }
 
@@ -2219,7 +2230,7 @@
 @-moz-document domain("kg-portal.ru") {
     body {
         background-image: none !important;
-        background: #bdbdbd !important
+        background-color: #bdbdbd !important
     }
     .content_wrap > div[class^="content_"] > div > a[href^="/go.php?id="], 
     .ten_topbar + div:not(.ten_ears_wrap), 
@@ -3992,6 +4003,15 @@
     }
 }
 
+@-moz-document domain("vk.com") {
+    .JoinForm__notNow {
+        font-weight: bold !important;
+        color: red !important;
+        border: 3px solid red !important;
+        padding: 6px !important
+    }
+}
+
 @-moz-document domain("vo-dela.su") {
     #sidebar_column .scrolled {
         top: auto !important
@@ -4070,15 +4090,8 @@
 }
 
 @-moz-document domain("www.goha.ru") {
-    #goharu {
-        background-color: transparent !important
-    }
-    #stickybar > div[style^="margin-top"], div[onclick^="truemedia_callback"], 
-    header.header {
-        display: none !important
-    }
-    #site {
-        padding-top: 20px !important
+    #goharu > #site {
+        margin-top: 110px !important
     }
 }
 

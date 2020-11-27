@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kumirei
 @description    `This is the new version of the transparent theme for our beloved Wanikani forums. It makes the forums prettier and allows you to use your own background image (or color).<br>You can find the old one on its <a href="https://community.wanikani.com/t/userstyle-transparent-theme-for-forums/17973?u=kumirei">forum page</a>, or on its <a href="https://userstyles.org/styles/142733/wanikani-forums-transparent-theme">userstyles.org page</a>. <br>For bug reports or suggestions, please contact me either on the forums or through my email address. These are provided below. <br><b>Forums:</b> <a href="https://community.wanikani.com/t/userstyle-forum-transparency-20/32287">https://community.wanikani.com/t/userstyle-forum-transparency-20/32287</a><b>Email:</b> kumi@kumirei.com<br><br>You can find the changelog below.`
-@version        20201028.21.5
+@version        20201126.19.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown background "Background Image" {
@@ -62,9 +62,9 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
 
     Name:           Forum Transparency 2.0
     Author:         Kumirei
-    Version:        2.1.17
-    Total lines:    3348
-    Latest update:  2020-10-28
+    Version:        2.1.19
+    Total lines:    3378
+    Latest update:  2020-11-26
 
     Forum post:     https://community.wanikani.com/t/userstyle-forum-transparency-20/32287
     Theme link:     https://userstyles.org/styles/163317/wanikani-forum-transparency-2-0
@@ -229,8 +229,8 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
     * [3293] Version 2.1.15
     * [3309] Version 2.1.16
     * [3320] Version 2.1.17
-
-
+    * [3350] Version 2.1.18
+    * [3361] Version 2.1.19
 
 
 
@@ -3400,4 +3400,34 @@ default-avatar "Default*" <<<EOT https://aws1.discourse-cdn.com/business5/upload
     .timeline-container.timeline-docked-bottom .timeline-footer-controls {
     	display: none;
     }
+
+
+    /* Version 2.1.18
+    /*_____________________
+
+    Fixed: post widths... Again
+    */
+
+	.container.posts > .row {
+		max-width: calc(1110px - var(--slider-width) - 2*var(--padding-slider));
+	}
+
+
+    /* Version 2.1.19
+    /*_____________________
+
+    Fixed: Menu widgets, settings category color
+    */
+
+	.d-header .menu-panel .glyphs .widget-link .fa {
+		transform: none !important;
+	}
+
+	div.menu-links-header .menu-links-row li a.active {
+		background-color: var(--highlight-background);
+	}
+
+	.category-selector span.category-name {
+		color: var(--main-text) !important;
+	}
 }

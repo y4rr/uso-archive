@@ -2,24 +2,24 @@
 @name           More Dark Inverted Mode
 @namespace      USO Archive
 @author         David Colby
-@description    `This style makes all websites more dark themed by changing as much text and as many borders as possible to gray and makes the Jupyter Notebook localhost server more dark as well. However, this *only* works if you invert all colors on your display first.`
-@version        2020927.11.41
+@description    `This style makes all websites more dark themed by changing as much text as possible to grey, deletes as many borders as possible, and makes the Jupyter Notebook localhost server more dark as well. However, this *only* works if you invert all colors on your display first.`
+@version        20201126.18.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
-* {
-    background: rgba(255, 255, 255, .15);
-}
 .px-3 {
     background: #bbbbbb;
 }
 .dcg-header {
-    border-bottom:3px solid #bbbbbb !important;
+    border-bottom: 3px solid #bbbbbb !important;
     color: #000000 !important; background: #d5d5d5 !important;
 }
+.xterm-cursor-layer {
+	z-index: 0 !important;
+}
 .xterm-viewport, .xterm-screen {
-    background: #979797 !important;
+    background: #e9e9e9 !important;
 }
 .cm-keyword, div.CodeMirror span.CodeMirror-matchingbracket {
     font-weight: bolder !important; color: #00ff00;
@@ -34,7 +34,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket, .cm-error {
     background: rgba(0, 127, 127, .3) !important;
 }
 * {
-    color: #777777; border: none; 
+    color: #777777 !important; border: none; background: rgba(255, 255, 255, .2) !important;
 }
 .cm-atom {
     color: #bb6600 !important;

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.0
+@name           Compact Tube (White) v1.4.1+
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201121.16.9
+@version        20201126.20.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.0 */
+/* CompactTube (White) v1.4.1 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -607,7 +607,7 @@ ytd-grid-movie-renderer {
     left: 6px;
     top: 3px;}
 
-/* Оформление Бэйджа - "Купить или взят ьв Аренду" */
+/* Оформление Бэйджа - "Купить или взять в Аренду" */
 .badge-style-type-ypc.ytd-badge-supported-renderer {
     background: var(--yt-spec-badge-chip-background);
     color: var(--yt-spec-themed-green);
@@ -932,10 +932,10 @@ ytd-comment-history-entry-renderer {
     flex-direction: row;}
 
 /* Библиотека(История) - вкладка "ЕЩЁ" : пункт: Посмотреть историю на странице "Мои действия" (размер шрифта) */
-yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
+-o-yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
 
 /* Информация - как попасть в ныне недоступные разделы в Истории */
-#contents.style-scope.ytd-browse-feed-actions-renderer:after
+-o-#contents.style-scope.ytd-browse-feed-actions-renderer:after
 {display: block; width: 370px; height: 54px; padding: 6px 0px 10px 16px; content: 
 url(https://vk.com/emoji/e/e284b9.png)" Search history:" "      youtube.com/feed/history/search_history"  " "
 url(https://vk.com/emoji/e/e284b9.png)" Comment history:" "  youtube.com/feed/history/comment_history"  ""
@@ -1068,7 +1068,6 @@ a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0
 ytd-author-comment-badge-renderer[creator] {
 padding-right: 6px; padding-left: 6px; background-color: #008BEC;}
 
-
             /* Старый Вариант - отключено*/
         /* НОВИНКА - Цвет:  СУБТИТРЫ, а также надпись [Ограниченный доступ] у плейлистов в Библиотеке(Истории) + размер и позиционирование */
         -o-.badge-style-type-simple.ytd-badge-supported-renderer {color: #676767 !important; background: #f7f6f6 /*#E8E8E8*/ !important; 
@@ -1109,6 +1108,9 @@ ytd-badge-supported-renderer.ytd-rich-grid-video-renderer {margin: 3px -6px 0 5.
 ytd-badge-supported-renderer.ytd-rich-grid-media {margin: 2px 4px 1px 5.5px;}
 /* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире] в Разделе ПОДПИСКИ (отступ Сверху) */
 #video-badges.ytd-grid-video-renderer {margin-top: 4px; -o-margin-left: 0px;}
+
+/* Бэйдж - [НОВИНКА] в правой колонке Видео на вкладке с Видео (позицианирование) */
+ytd-badge-supported-renderer.badges.ytd-compact-video-renderer {position: relative; top: 2px;}
 
         /* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире] в Разделе ПОДПИСКИ (запасной вариант - Отключаю) */
         -o-ytd-badge-supported-renderer.ytd-grid-video-renderer {margin-right: 8px;}
@@ -1285,6 +1287,12 @@ border-radius: 0%; background-color: transparent; overflow: hidden; border: 1px 
 
 /* Квадратные Аватары в ЛайвЧате */
 #author-photo.yt-live-chat-text-message-renderer {display: block; margin-right: 16px; overflow: hidden; border-radius: 0%;}
+
+/* сКВАДРАченные Аватары Донатеров в ЛайвЧате (пусть немного отличаются) */
+#author-photo.yt-live-chat-paid-message-renderer {
+display: block; -o-margin-left: -10px; margin-right: 16px; overflow: hidden; border-radius: 10%;
+flex: var(--layout-flex-none_-_flex); width: 40px; height: 40px;}
+
 
 /* информация */
 #copyright:before {background-color: var(--yt-spec-brand-background-primary); display: block; position: 
@@ -1480,15 +1488,29 @@ ytd-subscribe-button-renderer[button-style=COMPACT_GRAY] paper-button.ytd-subscr
     left: 41px;
     box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5); /* rgb(204, 204, 204) */
     padding: 2px 8px 2px 8px; font-size: 1.1rem;/*xx-small;*/ text-transform: none;}
-/* старый вариант(X) - кнопка Подписки (маленькие, в избранных каналах на главной странице канала) - позиционирование, (размер) и размер шрифта */
-    -o-ytd-subscribe-button-renderer[button-style=COMPACT_GRAY] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_GRAY][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer {
+
+/*кнопка Подписки (маленькие, в избранных каналах на главной странице канала) - позиционирование, (размер) и размер шрифта*/
+        /* после отпускания Кнопки (кейборд сфокуссиролванная) */
+ytd-subscribe-button-renderer[button-style=COMPACT_GRAY][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer {
     -o-padding: 4px 8px; /*4px 8px*/
     margin: 0;
     position: relative;
-    top: -16px;
-    left: 40px;
-    box-shadow: 0px 0px 0px 1px rgb(204, 204, 204) ;
-    padding: 2px 7px 2px 7px; font-size: xx-small;}
+    top: -15px;
+    left: 41px;
+    box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5); /* rgb(204, 204, 204) */
+    padding: 2px 8px 2px 8px; font-size: 1.1rem;}
+
+/* старый вариант(X) - кнопка Подписки (маленькие, в избранных каналах на главной странице канала) - позиционирование, (размер) и размер шрифта - "ИМЕЕТ ОСТАТОЧНЫЙ ЭФФЕКТ ПОСЛЕ ОТЖАТИЯ КНОПКИ" */
+/*    -o-ytd-subscribe-button-renderer[button-style=COMPACT_GRAY] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED] paper-button.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_GRAY][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer, ytd-subscribe-button-renderer[button-style=COMPACT_RED][use-keyboard-focused]:not([keyboard-focused]) paper-button.keyboard-focus.ytd-subscribe-button-renderer {
+   -o-padding: 4px 8px; /*4px 8px*/
+/*  margin: 0;
+    position: relative;
+    top: -15px;
+    left: 41px;
+    box-shadow: 0px 0px 0px 1px rgba(150, 150, 150, .5);
+    padding: 2px 8px 2px 8px; font-size: 1.1rem;}               */
+
+
 
 /* Заголовок над Маленькми Кнопками Подписки на главной тсранице канала - параметры шрифта */
 #title.ytd-vertical-channel-section-renderer {
@@ -2029,6 +2051,8 @@ ytd-comment-action-buttons-renderer.ytd-backstage-post-renderer #reply-button-en
 ytd-backstage-items.ytd-section-list-renderer 
 {margin: -16px 0px 0px 80px;}
 
+/* Опрос в разделе "Сообщество" отступ от левого края рамки */
+paper-listbox#poll-votes.ytd-backstage-poll-renderer {padding-left: 4px;}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
@@ -2232,8 +2256,7 @@ ytd-compact-autoplay-renderer {display: block; padding-bottom: 7px;
 border-bottom: 1px solid var(--yt-spec-10-percent-layer); margin-bottom: 8px;}
 
 /*Название Ролика - позиционирование*/
-.title.ytd-video-primary-info-renderer {
-    margin-left: 10px;} /* 12px */
+.title.ytd-video-primary-info-renderer {margin-left: 10px /* 12px */; padding-right: 10px;}
 
 /* Счётчик Просмотров и Дата публикации - позицианирования */
 #info-text.ytd-video-primary-info-renderer {margin-left: 11px;} /* 12px */
@@ -2464,6 +2487,49 @@ display: block; width: 40px; height: 40px; margin-top: 15px; margin-right: 16px;
 /* Иконка пренадлежности к разделам Видеоигры и тд. - Размер и позиционирование - сделать Квадратной*/
 ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] ytd-thumbnail.ytd-rich-metadata-renderer 
 {--yt-img-border-radius: 3px;} /*56px*/
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/* ©■©■©■© "Данные Лицензирования" под видео (Компания, Исполнитель, Альбом, Лицензиар) ©■©■©■© */
+
+    /* Общий размер Шрифта и % видимости */
+ytd-metadata-row-container-renderer.sticky.ytd-video-secondary-info-renderer * 
+{font-size: 1.1rem; opacity: 0.97;}
+
+    /* (Компания, Исполнитель, Альбом, Лицензиар) - (Цвет шрифта) */
+#title.ytd-metadata-row-renderer {color: var(--yt-spec-text-secondary);}
+    /* Текст описания - (Цвет шрифта) */
+.content.ytd-metadata-row-renderer {color: var(--yt-spec-grey-4);}
+    /* Музыка из этого Видео: , Подробнее...: , Оформите опдписку: - (Цвет шрифта)*/
+ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer * 
+{color: var(--yt-spec-text-secondary) !important; filter: contrast(135%)}
+
+    /* Интервалы между строками информационного поля */
+ytd-metadata-row-renderer.ytd-metadata-row-container-renderer 
+{padding: 0px 0px 0px 0px; margin: -2px 0px -2px 0px;}
+
+    /* Интервалы между полями прочих заголовков */
+ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer
+{padding: 0px 0px 0px 0px;}
+
+    /* Интервал Верхнего поля заголовка "предложено" */
+ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:first-child {padding-top: 11px;}
+    /* Интервал Нижнего поля заголовка */
+ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:last-child {padding-bottom: 2px}
+
+    /* Интервал Нижнего поля заголовка (информация о лицензии) */
+ytd-metadata-row-header-renderer[has-divider-line] {
+    margin-top: 16px; padding-top: 11px;
+    border-top: 1px solid var(--yt-spec-10-percent-layer);}
+
+     /* доп Инфо перед первым полем заголовка */
+/* -o-ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer:first-child:before
+{content: "License information © : "; font: 1.1rem Tahoma, sans-serif; color: var(--yt-spec-text-secondary);
+margin-top: -2px;} */
+    /* Интервал первого поля заголовка(не нужно) */
+/* -o-ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer:first-child
+{padding: 10px 0px 0px 0px;}*/
+/*©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©*/
+
 
 /* кнопка [ПОДПИСАТЬСЯ],[ВЫ ПОДПИСАНЫ] под Видео - Позицианирование */
 #subscribe-button.ytd-video-secondary-info-renderer {margin-right: 5px;}
@@ -2483,6 +2549,7 @@ ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] y
 ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: var(--yt-spec-brand-background-primary);}
 /* Шапка Лайв-Чат'а - Нижний Бордюр */
 yt-live-chat-header-renderer.yt-live-chat-renderer {box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer);}
+
 
 /* ================= чёрный ПЛЕЙЛИСТ под видео ================= */
 /* Цвет Бэкграунда и Рамки Плейлиста под Видео */

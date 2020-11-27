@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sazer
 @description    `Le skin est compatible avec la version responsive du site !Forum : http://i.imgur.com/3Nxq8Fn.pngCdv : http://i.imgur.com/9YPBdjD.jpgExiste aussi en Bleu & Noir : http://userstyles.org/styles/84600/skin-jvc-bleu-noir-respawn-by-tiger`
-@version        20181012.16.51
+@version        20201126.12.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown pub "Supprimer les pubs ?" {
@@ -156,7 +156,7 @@ display: none !important;
 
 
 @-moz-document regexp('http://www.jeuxvideo.com/(?!profil)([^"]*)'), regexp('https://www.jeuxvideo.com/(?!profil)([^"]*)') {
-#content {
+.layout--withBackground {
 background-color: #2a2a2a !important;
 background-image: url("http://i.imgur.com/WmoIHlv.jpg") !important;
 }/* Modifie le fond du site */

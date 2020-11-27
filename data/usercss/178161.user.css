@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area. The card selection window will not interfere with the card description anymore. And various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page.You have two background options now:-The duel background.-The background for the deck editor.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far, more sections will be designed in time.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201126.11.25
+@version        20201126.22.45
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -230,6 +230,36 @@ NRR "Alternative" <<<EOT  EOT;
     margin-right: auto !important;
   }
 
+  @keyframes game-card-hover {
+    from {
+      
+      opacity: 1;
+      /*
+            filter: brightness(80%);
+            -webkit-filter: brightness(80%);
+            */
+      box-shadow: 0 0 0.23vw 0.23vw #f4eeff;
+    }
+    50% {
+      ;
+      opacity: 1;
+      /*
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            */
+      box-shadow: 0 0 0.23vw 0.23vw #bbe1fa;
+    }
+    to {
+      
+      opacity: 1;
+      /*
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            */
+      box-shadow: 0 0 0.23vw 0.23vw #e0fffb;
+    }
+  }
+
   /*testing*/
   .game-selection-card-image,
   #game-position-atk-up,
@@ -244,7 +274,21 @@ NRR "Alternative" <<<EOT  EOT;
   #game-position-def-up:hover,
   #game-position-atk-down:hover,
   #game-position-def-down:hover {
-    box-shadow: 0 0 3px 2px #bbe1fa;
+    outline: 0 solid rgba(0, 0, 0, 0);
+    /*
+    outline: 0.1vw solid rgba(0, 0, 0, 0);
+    */
+    animation-name: game-card-hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    cursor: pointer;
+    filter: none;
+    /*
+        filter: brightness(140%);
+        -webkit-filter: brightness(140%);
+        */
   }
 
   .game-selection-card {
@@ -570,7 +614,9 @@ NRR "Alternative" <<<EOT  EOT;
 
   @keyframes game-selectable-border {
     from {
+      /*
       outline-color: #f4eeff;
+      */
       opacity: 1;
       /*
             filter: brightness(80%);
@@ -579,7 +625,9 @@ NRR "Alternative" <<<EOT  EOT;
       box-shadow: 0 0 0.13vw 0.13vw #f4eeff;
     }
     to {
+      /*
       outline-color: #bbe1fa;
+      */
       opacity: 1;
       /*
             filter: brightness(120%);
@@ -590,7 +638,10 @@ NRR "Alternative" <<<EOT  EOT;
   }
 
   .game-selectable-card {
+    outline: 0 solid rgba(0, 0, 0, 0);
+    /*
     outline: 0.1vw solid rgba(0, 0, 0, 0);
+    */
     animation-name: game-selectable-border;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -599,8 +650,42 @@ NRR "Alternative" <<<EOT  EOT;
     cursor: pointer;
   }
 
+  @keyframes game-selected-card-border {
+    from {
+      /*
+      outline-color: #f6e5f5;
+      */
+      opacity: 1;
+      /*
+            filter: brightness(80%);
+            -webkit-filter: brightness(80%);
+            */
+      box-shadow: 0 0 0.23vw 0.23vw #f6e5f5;
+    }
+    to {
+      /*
+      outline-color: #fbbedf;
+      */
+      opacity: 1;
+      /*
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            */
+      box-shadow: 0 0 0.23vw 0.23vw #fbbedf;
+    }
+  }
+
   .game-selected-card {
-    outline: 2px solid #bbe1fa;
+    outline: 0 solid rgba(0, 0, 0, 0);
+    /*
+    outline: 0.1vw solid rgba(0, 0, 0, 0);
+    */
+    animation-name: game-selected-card-border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    cursor: pointer;
     filter: none;
     /*
         filter: brightness(140%);
