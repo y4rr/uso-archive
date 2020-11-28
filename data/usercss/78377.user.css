@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           google Dark By BamaBraves
+@name           Google Dark By BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020112.7.29
+@version        20201128.9.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -172,12 +172,15 @@ g-inner-card
 
 #res h3,
 .lLrAF,
+.results .item .title,
+.thread-message-header,
 .zW5vrf .riddkc
 {
 	font-size: 21px!important;
 }
 
 #hdtb,
+.results .item .snippet,
 .ILfuVd,
 .gD,
 .hcfe:not(html)
@@ -185,6 +188,7 @@ g-inner-card
 	font-size: 19px!important;
 }
 
+.results .item .subtitle,
 .URIeEf,
 .W4P4ne,
 .WGvvNb,
@@ -194,6 +198,7 @@ g-inner-card
 .knowledge-panel,
 .std,
 .to0cd,
+.thread-last-edited,
 body,
 h1,
 html,
@@ -442,15 +447,9 @@ p
 .aajZCb,
 .bh13Qc.aneZWd,
 .bkWMgd,
-.devsite-article-inner,
-.devsite-main-content,
-.devsite-page-nav,
-.devsite-section-nav,
+.devsite-article-inner,.devsite-main-content,.devsite-page-nav,.devsite-section-nav,
 .g,
-.gws-flights-results__results-container,
-.gws-flights__footer,
-.gws-flights__homepage-body,
-.gws-flights__selection-bar,
+.gws-flights-results__results-container,.gws-flights__footer,.gws-flights__homepage-body,.gws-flights__selection-bar,
 .homepage-content-wrap,
 .ioZgOd,
 .irc_rimask,
@@ -465,12 +464,14 @@ p
 .side-container,
 .vk_c,
 .wFBvj,
+[data-page-type="SUPPORT_FORUM_THREAD"] .page,
 c-wiz.Ubi8Z,
 devsite-toc.devsite-toc
 {
 	padding: 12px!important;
 }
 
+.gb_6e:not(.gb_7e) input::-webkit-input-placeholder,
 .gx4n6c,
 .yvg0ob span
 {
@@ -554,6 +555,7 @@ body.vasq #hdtbSum {
 .gws-flights__header-image,
 .main-content,
 .mw,
+.page-width-container,
 .primary-container,
 .primary-nav,
 .rightPane,
@@ -561,6 +563,7 @@ body.vasq #hdtbSum {
 .section-weather-text,
 .sl-sugg,
 .tlG8q,
+[data-page-type="SUPPORT_FORUM_THREAD"] .page,
 body[layout=docs] devsite-content
 {
 	max-width: none!important;
@@ -666,19 +669,16 @@ body[layout=docs] devsite-content
 {
 	width: 24rem;
 }
-
-
-
 }
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 /*__________________________________________________________________________________*/
 
-.tuPVDR7ouq5__button.tuPVDR7ouq5__text-color-google-blue-600,
 #hdtb .hdtb-mitem a,
 #hdtb-msb #hdtb-tls,
 .LlMFmd,
 .aRq,
+.tuPVDR7ouq5__button.tuPVDR7ouq5__text-color-google-blue-600,
 .x0,
 a[href]
 {
@@ -696,7 +696,6 @@ a[href]:visited
 
 /*__________________________________________________________________________________*/
 
-.section-result-action-wide:hover .section-result-action-text,
 #hdtb .hdtb-mitem a:hover,
 #hdtb-msb #hdtb-tls:hover,
 #hdtb-msb .hdtb-mitem.hdtb-msel,
@@ -713,6 +712,7 @@ a[href]:visited
 .gm2-display-2,
 .gt-card-ttl-txt,
 .language_list_item_wrapper:hover .language_list_item_icon ~ .language_list_item,
+.section-result-action-wide:hover .section-result-action-text,
 .uKOpFp4SF2X__card .uKOpFp4SF2X__deal-badge,
 .zW5vrf .riddkc,
 [aria-checked="true"] div,
@@ -727,7 +727,6 @@ input[type="radio"]:checked + label
 
 /*__________________________________________________________________________________*/
 
-.r9PaP,
 .GlPvmc,
 .Ib8pOd,
 .IsZvec,
@@ -740,14 +739,22 @@ input[type="radio"]:checked + label
 .XrAfOe,
 .bONr3b,
 .eipWBe,
+.footer-notice,
 .fxgdke,
 .gyWzne,
 .hahPbb,
+.hcfe,
+.heading,
+.language-selector .sc-select,
+.material-menu__item,
 .qNPOEc,
+.r9PaP,
+.results .item .snippet,.results .item .subtitle,.results .item .type,
 .sbl2,
-.section-result-text-content,
+.search-results-thread-count,.section-result-text-content,
 .sh-dgr__grid-result a .NzUzee,
 .tD1ls,
+.thread-all-replies__load-more-button,.thread-question__payload,
 .uo4vr,
 .vTtwMg9xIJV__details,
 body
@@ -760,8 +767,7 @@ body
 .A6dC2c,
 .AXnVWe,
 
-.CCb0ac a,
-.CCb0ac,
+.CCb0ac a,.CCb0ac,
 
 .DRolee,
 
@@ -814,8 +820,7 @@ body
 .garHBe,
 .gb_1c .gb_ae,.gb_Kc .gb_ae,.gb_sa svg,.gb_sd,.gb_yc svg,
 .ge-chapter__title,
-.gt-def-row,
-.gt-spell-correct-message,
+.gt-def-row,.gt-spell-correct-message,
 .gtx-language,
 .gws-flights-results__breadcrumb-itinerary,.gws-flights__breadcrumb-popup-info,.gws-flights__title,
 
@@ -837,6 +842,8 @@ body
 
 .qb933,
 .qh,
+
+.results .item .title,
 
 .sh-np__product-title,
 .sbl1,.sbl1p,
@@ -879,12 +886,9 @@ span.Kj-JD-K7-K0
 .azqZUd td,
 
 .fisb_ts,
-.flt-body1,
-.flt-subhead2,
+.flt-body1,.flt-subhead2,
 
-.gt-cd-tl,
-.gt-is-tr,
-.gt-lc.gt-lc-mobile .cd-expand-label,.gt-lc.gt-lc-mobile .gt-def-synonym-title,
+.gt-cd-tl,.gt-is-tr,.gt-lc.gt-lc-mobile .cd-expand-label,.gt-lc.gt-lc-mobile .gt-def-synonym-title,
 .gws-flights-results__price-tracker-title,.gws-flights__footer-picker-title,
 
 .hx .hb,
@@ -894,8 +898,7 @@ span.Kj-JD-K7-K0
 .rymPhb-jyrRxf-tJHJj th,
 
 .sbl1 b,
-.section-result-action-text,
-.section-profile-header-subtext,.section-review-subtitle,
+.section-result-action-text,.section-profile-header-subtext,.section-review-subtitle,
 
 .wfbQZb,
 .wqg8ad,
@@ -905,13 +908,11 @@ span.Kj-JD-K7-K0
 .xXEKkb,
 
 .y2,
-.yJbeqd a,
-.yJbeqd span,
+.yJbeqd a,.yJbeqd span,
 .zW5vrf .to0cd,
 
 b,
-h3,
-h4
+h3,h4
 {
 	color: #e0b880!important;
 }
@@ -921,30 +922,26 @@ h4
 #nygTcd > i,
 .CVIh4c,
 .F0XO1GC-rb-b,
-.IThcWe,
 .IEFhEe,
+.IThcWe,
 .TgMHGc,
 .a,
 .bc a:link,
-.cJzOGc,
-.cJzOGc.Fuybue:visited,
-.cite,
-.cite:link,
+.cJzOGc,.cJzOGc.Fuybue:visited,
+.cite,.cite:link,
 .i4vd5e b,
 .jdjqLd,
 .knFDje,
 .qFiidc,
 .section-tab-info,
 .sllabel,
+.thread-question__details-label,
 .w8qArf .fl,
 .wUrVib,
 .zECGdd.RgAZAc,
-cite a:link,
-cite a:visited,
-cite,
+cite a:link,cite a:visited,cite,
 form,
-h5,
-h6,
+h5,h6,
 label
 {
 	color: #F0A060!important;
@@ -954,17 +951,14 @@ label
 
 .U6puSd,
 .rjmdhd,
-.F0XO1GC-nb-Q,
-.F0XO1GC-rb-g,
+.F0XO1GC-nb-Q,.F0XO1GC-rb-g,
 .FGlSad,
 .Od5Jsd,
 .bq3,
 .f a:link,
 .f,
 .flt-subhead1,
-.gws-flights-form__date-content,
-.gws-flights-results__breadcrumb-date,
-.gws-flights__breadcrumb-popup-date,
+.gws-flights-form__date-content,.gws-flights-results__breadcrumb-date,.gws-flights__breadcrumb-popup-date,
 .hI .g3,
 .i4vd5e,
 .ig .g3,
@@ -974,15 +968,14 @@ label
 .knowledge-finance-wholepage-chart__hover-card-time,
 .lNxjPb,
 .p2TkOb,
-.rymPhb-oKdM2c td:nth-child(7),
-.rymPhb-oKdM2c td:nth-child(8),
-.section-result-opening-hours,
-.section-review-publish-date,
+.rymPhb-oKdM2c td:nth-child(7),.rymPhb-oKdM2c td:nth-child(8),
+.search-results-link__timestamp,
+.section-result-opening-hours,.section-review-publish-date,
+.thread-last-edited,
 .uKOpFp4SF2X__card .uKOpFp4SF2X__info-container,
 .xjvFRe,
 .yO > .xW,
-.zECGdd,
-.zECGdd.Fuybue:visited,
+.zECGdd,.zECGdd.Fuybue:visited,
 time
 {
 	color: #07beff!important;
@@ -990,6 +983,7 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
+.search-results-thread-count--recommended-answers,
 .a8Pemb,
 .T14wmb b,
 .ML43Jb,
@@ -1022,12 +1016,13 @@ time
 
 /*__________________________________________________________________________________*/
 
-.tuPVDR7ouq5__button,
+.gb_6e:not(.gb_7e) input::-webkit-input-placeholder,
 .device-selector-button,
 .gtx-lang-selector,
 .gws-flights-form__menu-button,
 .kd-select,
 .section-filter-user-rating-select,
+.tuPVDR7ouq5__button,
 .yMl7R .gws-flights-form__menu-button,
 chip-button,
 input,
@@ -1046,6 +1041,7 @@ textarea
 }
 
 /*__________________________________________________________________________________*/
+
 ::selection
 {
 	background: #ff9!important;
@@ -1134,6 +1130,7 @@ div.TH
 
 .I7OXgf,
 .nH,
+.thread-all-replies__load-more-button,
 [style="border-collapse:collapse!important;background:#eaeaea"],
 div.Kj-JD-Jh
 {
@@ -1516,9 +1513,11 @@ pre
 
 .RO90o,
 .gws-flights-filter__only-toggle,
+.language-selector .language-selector-select,
 .material2-button--hairline,
 .z0 > .L3,
-a.user-feedback-link
+a.user-feedback-link,
+button.search--view-more
 {
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
 	border-radius: 10px!important;
@@ -1529,19 +1528,23 @@ a.user-feedback-link
 
 .RO90o:hover,
 .gws-flights-filter__only-toggle:hover,
+.language-selector .language-selector-select:hover,
 .material2-button--hairline:hover,
 .z0 > .L3:hover,
-a.user-feedback-link:hover
+a.user-feedback-link:hover,
+button.search--view-more:hover
 {
-	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
+	background-image: linear-gradient(to top right, #eb4b15, #000)!important;
 	color: #ff0!important;
 }
 
 .RO90o:active,
 .gws-flights-filter__only-toggle:active,
+.language-selector .language-selector-select:active,
 .material2-button--hairline:active,
+.user-feedback-link:active,
 .z0 > .L3:active a,
-.user-feedback-link:active
+button.search--view-more:active
 
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
@@ -1760,6 +1763,7 @@ devsite-content:hover,devsite-toc.devsite-toc:hover
 .knowledge-finance-wholepage-chart__hover-card,
 .kp-blk,
 .lV0vqc,
+.material-menu,
 .mSPnZKpnf91__menu,
 .material-card,
 .nlkcvc,
@@ -1819,6 +1823,7 @@ div.Kj-JD
 .kno-vrt-t.MRfBrb:hover,
 .kp-blk:hover,
 .lV0vqc:hover,
+.material-menu:hover,
 .mSPnZKpnf91__menu:hover,
 .material-card:hover,
 .nlkcvc:hover,
@@ -2018,6 +2023,7 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 /*__________________________________________________________________________________*/
 
+.thread-all-replies__message,
 .PKhmud,
 #isr_chc g-right-button,
 .AQabNb,
@@ -2046,6 +2052,7 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 .k2Oeod.eSq3C g-fab,
 .kno-vrt-t.MRfBrb,
 .lsSusc,
+.material-menu__item,
 .mslg td,
 .nlkcvc,
 .related-question-pair,
@@ -2063,6 +2070,7 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 .y8Jpof,
 .zA,
 .zo4Cze,
+.results .item-wrapper,
 [jscontroller="H6eOGe"],
 div.K0In6b
 {
@@ -2071,6 +2079,8 @@ div.K0In6b
 
 /*__________________________________________________________________________________*/
 
+.results .item-wrapper:hover,
+.thread-all-replies__message:hover,
 .PKhmud:hover,
 #isr_chc g-right-button:hover,
 .AQabNb:hover,
@@ -2101,6 +2111,7 @@ div.K0In6b
 .k2Oeod.eSq3C g-fab:hover,
 .kno-vrt-t.MRfBrb:hover,
 .lsSusc:hover,
+.material-menu__item:hover,
 .mslg td:hover,
 .nlkcvc:hover,
 .related-question-pair:hover,
@@ -2166,7 +2177,6 @@ img
 }
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
-
 .gLW9ub {
     padding: 6px 18px 0 0;
     margin-left: 6px;
@@ -2614,6 +2624,7 @@ img
 .gb_uf svg,
 .hdtb-mitem:first-child svg,
 .pmjENe,
+[aria-label="Search Help Center"] svg,
 [aria-label="Google Search"] svg,
 [href*="search"] svg
 {
@@ -2624,6 +2635,7 @@ img
 .gb_uf svg,
 .pmjENe,
 [aria-label="Google Search"] svg,
+[aria-label="Search Help Center"] svg,
 [href*="search"] svg
 {
 	background-size: 19px!important;
@@ -2724,7 +2736,6 @@ img
     padding-left: 33px!important;
     width: 10px!important;
 }
-
 
 /* Social ____________________________________________________________*/
 

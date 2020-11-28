@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201126.19.26
+@version        20201128.5.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -570,116 +570,72 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 @advanced color ButtonTextHover "Buttons Hover Text" #FFFFFF
 @advanced color Links "Links" #DDDDDD
 @advanced color LinksHover "Links Hover" #FFFFFF
+@advanced color Headers "Headers" #BBBBBB
+@advanced color Text "General Text" #989898
 @advanced color Titles "Post Titles" #CCCCCC
 @advanced color Visited "Visited Posts" #777777
 @advanced color LinksUnderPosts "Post Info & Links" #717171
-@advanced color Headers "Headers" #BBBBBB
-@advanced color Text "General Text" #989898
-@advanced dropdown RCNightmode "Media Dim (Nightmode)" {
-	RCNoMediaDim "No*" <<<EOT /*Nighmode disabled*\/
-/*
-/* To install as separate theme:
-/*
-/* https://userstyles.org/styles/176259/
-/*
-/*
-/* Activate to Enable;
+@advanced dropdown RCPostBG00 "Expanded Posts (New Reddit)" {
+	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
-iframe,
-img,
-video,
-path,
-.md-container div.md h5 a,
-.premium-banner-outer
-/*._2MkcR85HDnYngvlVW2gMMa*\/
-
-/* < REMOVE THIS LINE ALSO
-
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
 {
-    filter:brightness(0.75);
-}
+    background:
+        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
+        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
+        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
+    border-radius:4px;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
+} EOT;
+RCPostBG00 "No Background" <<<EOT /*Option Chosen - [No Background]*\/ EOT;
+RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
-
-[style*='background-image: url("https://www.redditstatic.com/'],
-[style*='background-image: url("https://styles.redditmedia.com/'],
-div.post div.file .fileThumb img,
-.thumbnail.default,
-.thumbnail.image,
-.thumbnail.self,
-.thumbnail.spoiler,
-._17nmfaMf1Rq20sVfEmle0O,
-._1g70Ndz7edo5LA6hie1Gkt
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
 {
-    filter:brightness(.75);
-    transition: .4s;
-}
-
-img.middlead, .middlead>div, .middlead a img
-{
-    transition: .4s;
-}
-
-div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
-._1g70Ndz7edo5LA6hie1Gkt:hover
-{
-    filter:brightness(1);
-    transition: .4s!important;
-}
-
-.twitter-tweet-rendered
-{
-    filter:brightness(1.25);
-    box-shadow: none;
-}
-*\/ EOT;
-RCMediaDim "-25% Brightness" <<<EOT /*Media Dim Enabled*\/
-
-iframe,
-img,
-video,
-path,
-.md-container div.md h5 a,
-.premium-banner-outer
-/*._2MkcR85HDnYngvlVW2gMMa*\/
-{
-    filter:brightness(0.75);
-}
-
-[style*='background-image: url("https://www.redditstatic.com/'],
-[style*='background-image: url("https://styles.redditmedia.com/'],
-/*4chan*\/div.post div.file .fileThumb img,
-.thumbnail.default,
-.thumbnail.image,
-.thumbnail.self,
-.thumbnail.spoiler,
-._17nmfaMf1Rq20sVfEmle0O,
-._1g70Ndz7edo5LA6hie1Gkt
-{
-    filter:brightness(.75);
-    transition: .4s;
-}
-
-/*4chan*\/img.middlead, .middlead>div, .middlead a img
-{
-    transition: .4s;
-}
-
-/*4chan*\/div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
-._1g70Ndz7edo5LA6hie1Gkt:hover
-{
-    filter:brightness(1);
-    transition: .4s!important;
-}
-
-.twitter-tweet-rendered
-{
-    filter:brightness(1.25);
-    box-shadow: none;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+    transition:2s;
 } EOT;
 
 }
 @advanced dropdown RCPostHeight "Post Spacing" {
-	RCPostH-0 "Standard*" <<<EOT /* Option chosen: [+0px] *\/
+	RCPostH-3 "+3px (Recommended)*" <<<EOT /* Option chosen: [+3px] *\/
+
+/*old.reddit - Classic - [Default: 0px]*\/
+[id*="thing"]
+{
+    padding-top: 3px;
+}
+
+
+/*New Reddit - Card - [Default: 0px]*\/
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    padding-bottom: 3px;
+}
+
+
+/*----------------- Always adjust together -----------------*\/
+/*New Reddit - Classic - [Default: 0px]*\/
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+{
+    padding-top: 3px;
+}
+/* New Reddit - Classic - Votes - [Default: 8px]*\/
+._23h0-EcaBUorIHC-JZyh6J
+{
+    padding-top: 11px;
+}
+/*----------------------------------------------------------*\/
+
+
+/*New Reddit - Compact - [Default: 0px*\/
+.YA9IzN0YR-G5_oD5EUydl
+{
+    padding-top: 3px;
+} EOT;
+RCPostH-0 "Standard" <<<EOT /* Option chosen: [+0px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
 [id*="thing"]
@@ -783,41 +739,6 @@ RCPostH-2 "+2px" <<<EOT /* Option chosen: [+2px] *\/
 .YA9IzN0YR-G5_oD5EUydl
 {
     padding-top: 2px;
-} EOT;
-RCPostH-3 "+3px (Recommended)" <<<EOT /* Option chosen: [+3px] *\/
-
-/*old.reddit - Classic - [Default: 0px]*\/
-[id*="thing"]
-{
-    padding-top: 3px;
-}
-
-
-/*New Reddit - Card - [Default: 0px]*\/
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
-{
-    padding-bottom: 3px;
-}
-
-
-/*----------------- Always adjust together -----------------*\/
-/*New Reddit - Classic - [Default: 0px]*\/
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
-{
-    padding-top: 3px;
-}
-/* New Reddit - Classic - Votes - [Default: 8px]*\/
-._23h0-EcaBUorIHC-JZyh6J
-{
-    padding-top: 11px;
-}
-/*----------------------------------------------------------*\/
-
-
-/*New Reddit - Compact - [Default: 0px*\/
-.YA9IzN0YR-G5_oD5EUydl
-{
-    padding-top: 3px;
 } EOT;
 RCPostH-4 "+4px" <<<EOT /* Option chosen: [+4px] *\/
 
@@ -1241,33 +1162,10 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 } EOT;
 
 }
-@advanced dropdown RCPostHighlight00 "Highlighted Post Type (expanded) & Hover Effect (New Reddit)" {
-	RCPostHighlight00 "Background & No hover*" <<<EOT /*Option Chosen - [Background & No hover]*\/
+@advanced dropdown RCPostHighlight00 "Post Hover Effect (New Reddit)" {
+	RCPostHighlight00 "None*" <<<EOT /*Option Chosen - [None]*\/ EOT;
+RCPostHighlight01 "Increased Brightness" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
-{
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:2s;
-} EOT;
-RCPostHighlight01 "Background & Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Increased Brightness]*\/
-
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
-{
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:2s;
-}
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem
 {
     filter:brightness(1);
@@ -1284,19 +1182,8 @@ RCPostHighlight01 "Background & Brighter" <<<EOT /*Option Chosen - [Posts: Backg
 {
     filter:brightness(1);
 } EOT;
-RCPostHighlight02 "Background & Border" <<<EOT /*Option Chosen - [Posts: Background. Hover: Border]*\/
+RCPostHighlight02 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
-{
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:2s;
-}
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem
 {
     transition:.4s;
@@ -1306,18 +1193,11 @@ RCPostHighlight02 "Background & Border" <<<EOT /*Option Chosen - [Posts: Backgro
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:.2s;
 } EOT;
-RCPostHighlight03 "Background & Border + Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Border + Increased Brightness]*\/
+RCPostHighlight03 "Border + Increased Brightness" <<<EOT /*Option Chosen - [Border + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
 {
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:2s;
+    transition:2s!important;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem
 {
@@ -1336,7 +1216,7 @@ RCPostHighlight03 "Background & Border + Brighter" <<<EOT /*Option Chosen - [Pos
 {
     filter:brightness(1);
 } EOT;
-RCPostHighlight04 "Background & Background" <<<EOT /*Option Chosen - [Posts: Background. Hover: Background]*\/
+RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem
 {
@@ -1355,16 +1235,9 @@ RCPostHighlight04 "Background & Background" <<<EOT /*Option Chosen - [Posts: Bac
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
 {
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:.2s;
+    transition:.2s!important;
 } EOT;
-RCPostHighlight05 "Background & Background + Brighter" <<<EOT /*Option Chosen - [Posts: Background. Hover: Background + Increased Brightness]*\/
+RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem
 {
@@ -1385,95 +1258,117 @@ RCPostHighlight05 "Background & Background + Brighter" <<<EOT /*Option Chosen - 
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
 {
-    background:
-        linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(180deg, var(--RCRESHighlightBox) 0%, #0000 70%),
-        linear-gradient(270deg, var(--RCRESHighlightBox) 0%, #0000 30%),
-        linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
-    border-radius:4px;
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     filter:brightness(1);
-    transition:.2s;
+    transition:.2s!important;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
 {
     filter:brightness(1);
 } EOT;
-RCPostHighlight06 "Border & Border" <<<EOT /*Option Chosen - [Posts: Border. Hover: Border]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
-{
-    transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
-{
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:.2s;
-}
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
-{
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:2s;
-} EOT;
-RCPostHighlight07 "Border & Border + Brighter" <<<EOT /*Option Chosen - [Posts: Border. Hover: Border + Increased Brightness]*\/
+@advanced dropdown RCNightmode "Media Dim (Nightmode)" {
+	RCNoMediaDim "No*" <<<EOT /*Nighmode disabled*\/
+/*
+/* To install as separate theme:
+/*
+/* https://userstyles.org/styles/176259/
+/*
+/*
+/* Activate to Enable;
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+iframe,
+img,
+video,
+path,
+.md-container div.md h5 a,
+.premium-banner-outer
+/*._2MkcR85HDnYngvlVW2gMMa*\/
+
+/* < REMOVE THIS LINE ALSO
+
+{
+    filter:brightness(0.75);
+}
+
+
+[style*='background-image: url("https://www.redditstatic.com/'],
+[style*='background-image: url("https://styles.redditmedia.com/'],
+div.post div.file .fileThumb img,
+.thumbnail.default,
+.thumbnail.image,
+.thumbnail.self,
+.thumbnail.spoiler,
+._17nmfaMf1Rq20sVfEmle0O,
+._1g70Ndz7edo5LA6hie1Gkt
+{
+    filter:brightness(.75);
+    transition: .4s;
+}
+
+img.middlead, .middlead>div, .middlead a img
+{
+    transition: .4s;
+}
+
+div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
+._1g70Ndz7edo5LA6hie1Gkt:hover
 {
     filter:brightness(1);
-    transition:.4s;
+    transition: .4s!important;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
-{
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    filter:brightness(1.25);
-    transition:.2s;
-}
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
-{
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    filter:brightness(1);
-} EOT;
-RCPostHighlight08 "None & Border" <<<EOT /*Option Chosen - [Posts: None. Hover: Border]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
-{
-    transition:.4s;
-}
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
-{
-    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    transition:.2s;
-}
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
-{
-    box-shadow:none!important;
-} EOT;
-RCPostHighlight09 "None & Brighter" <<<EOT /*Option Chosen - [Posts: None. Hover: Increased Brightness]*\/
-
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
-{
-    filter:brightness(1);
-    transition:.4s;
-}
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.twitter-tweet-rendered
 {
     filter:brightness(1.25);
-    transition:.2s;
+    box-shadow: none;
 }
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+*\/ EOT;
+RCMediaDim "-25% Brightness" <<<EOT /*Media Dim Enabled*\/
+
+iframe,
+img,
+video,
+path,
+.md-container div.md h5 a,
+.premium-banner-outer
+/*._2MkcR85HDnYngvlVW2gMMa*\/
+{
+    filter:brightness(0.75);
+}
+
+[style*='background-image: url("https://www.redditstatic.com/'],
+[style*='background-image: url("https://styles.redditmedia.com/'],
+/*4chan*\/div.post div.file .fileThumb img,
+.thumbnail.default,
+.thumbnail.image,
+.thumbnail.self,
+.thumbnail.spoiler,
+._17nmfaMf1Rq20sVfEmle0O,
+._1g70Ndz7edo5LA6hie1Gkt
+{
+    filter:brightness(.75);
+    transition: .4s;
+}
+
+/*4chan*\/img.middlead, .middlead>div, .middlead a img
+{
+    transition: .4s;
+}
+
+/*4chan*\/div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
+._1g70Ndz7edo5LA6hie1Gkt:hover
 {
     filter:brightness(1);
+    transition: .4s!important;
+}
+
+.twitter-tweet-rendered
+{
+    filter:brightness(1.25);
+    box-shadow: none;
 } EOT;
-RCPostHighlight10 "None" <<<EOT /*Option Chosen - [None]*\/ EOT;
 
 }
 @advanced dropdown RCAwards "Awards" {
@@ -2065,73 +1960,7 @@ RCUpdating03 "3) Click Update above as usual" <<<EOT /*-------------------------
 /*               https://old.reddit.com/r/KMV/              *\/
 /*                                                          *\/
 /*----------------------------------------------------------*\/ EOT;
-RCUpdating04 "Secondly" <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating05 "userstyles.org lacks Alpha Settings." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating06 "These Manual Colour Options can be adjusted in Code #2." <<<EOT /*----------------------------------------------------------*\/
+RCUpdating06 "More Colour Options are available in Code #2." <<<EOT /*----------------------------------------------------------*\/
 /*                                                          *\/
 /*    Due to properties of Custom CSS, one needs uninstall  *\/
 /*                   in order to update.                    *\/
@@ -2586,22 +2415,13 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
                          /*OPTIONS*/
 
 
-/* ======================= Media dim ======================= */
+/* ======= Expanded Posts Background on New Reddit ======= */
 
-/*[[RCNightmode]]*/
+/*[[RCPostBG00]]*/
 
-/*[[RCNoMediaDim]]*/
+/*[[RCPostBG01]]*/
 
-/*[[RCMediaDim]]*/
-
-
-/* ===================== Award Removal ===================== */
-
-/*[[RCAwards]]*/
-
-/*[[RCGold]]*/
-
-/*[[RCNoGold]]*/
+/*[[RCPostBG02]]*/
 
 
 /* ===================== Post Spacing ===================== */
@@ -2641,37 +2461,6 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /*[[RCPostH-15]]*/
 
 
-/* ================= E-Mail Request Popup ================= */
-
-/*[[EmailRemoval]]*/
-
-/*[[EmailYes]]*/
-
-/*[[EmailNo]]*/
-
-
-/* ====================== Ad Removal ====================== */
-
-/*[[RCAds]]*/
-
-/*[[RCLeaveAds]]*/
-
-/*[[RCAdsRemoved]]*/
-
-/*[[RCAdsAndPromos]]*/
-
-/*[[RCPromosOnly]]*/
-
-
-/* ================== Reddit Score Hider ================== */
-
-/*[[RCScores]]*/
-
-/*[[RCScoresEnabled]]*/
-
-/*[[RCScoresDisabled]]*/
-
-
 /* =============== Post Hover on New Reddit =============== */
 
 /*[[RCPostHighlight00]]*/
@@ -2695,6 +2484,55 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /*[[RCPostHighlight09]]*/
 
 /*[[RCPostHighlight10]]*/
+
+
+/* ======================= Media dim ======================= */
+
+/*[[RCNightmode]]*/
+
+/*[[RCNoMediaDim]]*/
+
+/*[[RCMediaDim]]*/
+
+
+/* ===================== Award Removal ===================== */
+
+/*[[RCAwards]]*/
+
+/*[[RCGold]]*/
+
+/*[[RCNoGold]]*/
+
+
+/* ================== Reddit Score Hider ================== */
+
+/*[[RCScores]]*/
+
+/*[[RCScoresEnabled]]*/
+
+/*[[RCScoresDisabled]]*/
+
+
+/* ====================== Ad Removal ====================== */
+
+/*[[RCAds]]*/
+
+/*[[RCLeaveAds]]*/
+
+/*[[RCAdsRemoved]]*/
+
+/*[[RCAdsAndPromos]]*/
+
+/*[[RCPromosOnly]]*/
+
+
+/* ================= E-Mail Request Popup ================= */
+
+/*[[EmailRemoval]]*/
+
+/*[[EmailYes]]*/
+
+/*[[EmailNo]]*/
 
 
 /* ======================= Updating ======================= */
@@ -8445,11 +8283,12 @@ circle:hover,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYLU
 ._3xuFbFM3vrCqdGuKGhhhn0,
 ._6p8buRs-LijHSXx1H4MGe,
 ._8ZLJI1-ZiP7pHJ_yO1L4Z._3osxlOKfiylmgqNqsW7erB,
-.Ox8QhMwI_pG4DcRAicFqa:hover,
 .cZPZhMe-UCZ8htPodMyJ5,
 .D3IyhBGwXo9jPwz-Ka0Ve,
 .D3IyhBGwXo9jPwz-Ka0Ve._1poyrkZ7g36PawDueRza-J:hover,
+.IzSmZckfdQu5YP9qCsdWO,
 .Nb7NCPTlQuxN_WDPUg5Q2:hover,
+.Ox8QhMwI_pG4DcRAicFqa:hover,
 .ssgs3QQidkqeycI33hlBa:hover,
 .TmgZY6tDcdErbE5d7E0HJ:hover,
 .tsl4Q1J90HdQwt_L2rJC9,
@@ -8703,12 +8542,13 @@ circle:active,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYL
 ._3u6g9UTYlEOr-yfM5hyq3p:active,
 ._3xuFbFM3vrCqdGuKGhhhn0:active,
 ._6p8buRs-LijHSXx1H4MGe:active,
-.Ox8QhMwI_pG4DcRAicFqa:active,
+._8ZLJI1-ZiP7pHJ_yO1L4Z._3osxlOKfiylmgqNqsW7erB:active,
 .cZPZhMe-UCZ8htPodMyJ5:active,
 .D3IyhBGwXo9jPwz-Ka0Ve:active,
 .D3IyhBGwXo9jPwz-Ka0Ve._1poyrkZ7g36PawDueRza-J:active,
-._8ZLJI1-ZiP7pHJ_yO1L4Z._3osxlOKfiylmgqNqsW7erB:active,
+.IzSmZckfdQu5YP9qCsdWO:active,
 .Nb7NCPTlQuxN_WDPUg5Q2:active,
+.Ox8QhMwI_pG4DcRAicFqa:active,
 .ssgs3QQidkqeycI33hlBa:active,
 .TmgZY6tDcdErbE5d7E0HJ:active,
 .tsl4Q1J90HdQwt_L2rJC9:active,

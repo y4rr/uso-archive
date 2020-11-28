@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mysteries
 @description    `Sepia view design for the wuxiaworld.co and readlightnovel.cc`
-@version        20201121.14.32
+@version        20201128.7.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -53,5 +53,11 @@ body, .book-wrapper, .bg-img-dim, .triangle-bg {
 
 .chapter-wrapper .chapter-list .chapter-item:nth-child(4n), .chapter-wrapper .chapter-list .chapter-item:nth-child(4n-1) {
     background-color: rgba(0, 0, 0, .05);
+}
+}
+
+@-moz-document regexp("https://www.wuxiaworld.co/.*/.*html"), regexp("https://www.readlightnovel.cc/.*html") {
+.book-wrapper {
+    display: none;
 }
 }

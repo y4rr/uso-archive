@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--修正済み不具合--・ニコニ広告ページがおかしい→ニコニ広告ページのダークテーマ化で対処--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        20201112.14.58
+@version        20201128.12.3
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -149,6 +149,12 @@ body{
 @-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
 /* 視聴ページ */
 
+/* header */
+.nico-CommonHeaderRoot .common-header-juy1p4:hover,.nico-CommonHeaderRoot .common-header-11j62e9:hover{background-color: rgb(58, 58, 58);}
+.nico-CommonHeaderRoot .common-header-juy1p4,.nico-CommonHeaderRoot .common-header-11j62e9{background-color: rgb(95, 95, 95);}
+.nico-CommonHeaderRoot .common-header-11j62e9{color: #ccc;}
+.nico-CommonHeaderRoot .common-header-juy1p4{border-bottom: 1px solid rgb(152, 152, 152);}
+.nico-CommonHeaderRoot .common-header-juy1p4:nth-child(2n){border-left: 1px solid rgb(152, 152, 152);}
 /*背景*/
 .___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{
     background-color: #2b2b2b !important
@@ -188,13 +194,6 @@ body{
     border: solid 2px #5a5a5a;
 }
 
-/* コメント右クリック時メニュー */
-.___menu-item___XRf5G{
-    background: #424242 !important;
-}
-.___menu___2E9GD+.___menu___2E9GD:before{background-color:#000;}
-.___comment-context-menu___1nzl_{background-color:#202020 !important}
-  
 /* フォロー中の番組 */
 .___program-card___2_Exo{
     background: #333;
@@ -202,7 +201,7 @@ body{
 
 /* 障害バナー */
 .___message-anchor___1ShGI{color: #ff0a0a !important;}
-.___date-time___1U91Q{color: #f33 !important;}  
+.___date-time___1U91Q{color: #f33 !important;}
 
 /* フォローしてるチャンネルがどうたらこうたら */
 .___alert-dialog___ZUyHx{
@@ -233,6 +232,16 @@ body{
 .___footer-area___294Um{
     background-color: #252525 !important;
 }
+.___community-page-anchor___3BT8W{background-color: #525252;border: 1px solid rgb(50, 50, 50);}
+.___social-group-information___3Vwle{border: #6f6f6f;}
+.___header-area___FLBI2,.___program-summary___2BVKN{border-bottom: 1px solid #6f6f6f;}
+.___item___3IrXi{border-top: 1px solid #6f6f6f;}
+
+.___description___1jHOS a{color: #3f97d6 !important}
+  
+/* フォローボタン */  
+.___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
+
 
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{
