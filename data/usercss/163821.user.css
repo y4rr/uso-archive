@@ -3,23 +3,23 @@
 @namespace      USO Archive
 @author         _A7med
 @description    `Remove the right ad bar from Outlook.com,Live.com,Hotmail.com and the bottom one`
-@version        2019518.22.35
+@version        20201127.22.11
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("outlook.live.com")
 {
- div[id="app"] > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) {
+ div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) {
     display: none !important;
 }
 
 
-div[id="app"] > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
     display: none !important;
 }
 
 @media only screen and (max-width: 990px) {
-    div[id="app"] > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+    div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
         display: none !important;
     }
 }

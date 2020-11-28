@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
-@version        20201127.4.21
+@version        20201127.16.2
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD9777
@@ -21,11 +21,15 @@
   --lightGray: rgb(85, 85, 85);
   --darkerGray: #1c1c1c;
   --darkGray: #222222;
+  --blackRgb: 0,0,0;
   --mainColor: /*[[mainColor]]*/;
   --alertMessage: "IMPORTANT: whatsapp released a new version of whatsapp web on 19.11.2020 breaking all the custom skins out there. I will release fixes in the next days to make it work again. Keep manually updating!!!";
   --alertMessageSize: 17x;
   --audio-progress-played-incoming: var(--mainColor) !important;
   --audio-progress-played-outgoing: var(--mainColor) !important;
+  --audio-progress-incoming: var(--mainColor) !important;
+  --audio-progress-outgoing: var(--mainColor) !important;
+  --video-primary: var(--mainColor) !important;
   --cl-1: var(--mainColor) !important;
   --cl-2: var(--mainColor) !important;
   --cl-3: #373F51;
@@ -42,9 +46,26 @@
 }
 
 *::-webkit-scrollbar-thumb,
-.dark .bg-color-2 {
+.dark .bg-color-2,
+.piNo6, ._2KNOi {
   background-color: var(--mainColor) !important;
 }
+
+
+.piNo6, ._2KNOi, input[type="range"] {
+  cursor: pointer;
+}
+/*========= video player bar + thumb fix =========*/
+/*========= video player bar + thumb fix =========*/
+
+.piNo6, ._2KNOi, ._3DHGF {
+  z-index: 99999
+}
+._2KNOi {
+  left: -5px !important;
+}
+
+
 *::-webkit-scrollbar-track {
   background: var(--lightGray) !important;
 }
@@ -58,10 +79,13 @@ div {
 body {
   background-image: -webkit-linear-gradient(top, black, black) !important;
 }
+/*======== overlay messages ======== */
+/*======== overlay messages ======== */
+
 ._NAbm.N7Dyd,
 .kA6WR.N7Dyd,
 ._1lcup {
-  background:var(--darkGray) !important;
+  background: linear-gradient(15deg,rgba(var(--lightGray),0),rgba(var(--lightGray),0) 45%,rgba(var(--lightGray),.12) 70%,rgba(var(--lightGray),.33)) !important;
 }
 [data-asset-intro-image-light],
 [data-asset-intro-image-dark] {
@@ -220,11 +244,6 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 .tail-container {
   display: none;
 }
-._2vsnU *,
-._1RYPC,
-._3I3b7 {
-  background-color: transparent !important;
-}
 ._1FKgS::after,
 #app {
   background-color: var(--darkGray) !important;
@@ -359,7 +378,10 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._fpIW ._25-g1,
 .XukK_,
 .iHaMv,
-.sWE2H {
+.sWE2H,
+.message-out ._159mM ._2JswF,
+.message-out ._159mM ._2zab4,
+._1jYaq {
   background-color: var(--darkGray) !important;
 }
 ._3pkkz,
@@ -450,7 +472,9 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 .mBpSq,
 ._1z6YY, ._1gal2,
 ._1E4E4,
-._2eUNe {
+._2eUNe,
+.tSmQ1,
+.ICvlM {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -610,7 +634,12 @@ html[dir="ltr"] ._1F9Ap,
 ._3dHYI,
 ._3Z2oJ,
 ._2jYgI,
-._27ApE {
+._27ApE,
+._1wc4Q._3JHdl,
+._17JJa,
+._2S-RK, 
+._3wdcN, 
+._WnqL._3JHdl {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -684,7 +713,10 @@ header span._1wjpf._3NFp9._3FXB1,
 ._2op5b,
 ._3npkZ ._1VzZY,
 ._1WmI4,
-._3Tk1z {
+._3Tk1z,
+._1WyfI ._1VzZY,
+._1VzZY a,
+._2K5wo ._1VzZY {
   color: var(--mainColor) !important;
 }
 
@@ -752,8 +784,6 @@ input[type="radio"]:checked,
 ._2XAo8:before,
 .VOr2j,
 .gMRg5,
-._WnqL._3JHdl,
-._2vTBi ._1VzZY,
 .RXL_k,
 .dark .bg-color-1,
 ._3yI1b:before,
@@ -785,7 +815,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 .message-in ._2Wx_5,
 .message-in,
 ._2Mg6D .CzI8E,
-._1q11a._2nBjH {
+._1q11a._2nBjH,
+._1ubAk,
+._2vsnU *,
+._1RYPC,
+._3I3b7,
+._1ubAk {
   background-color: transparent !important;
   background: transparent !important;
 }
@@ -862,7 +897,8 @@ span[data-icon="status-check"] svg path,
 span[data-icon="msg-check"] svg path,
 ._2UQ4S .ptt-status-icon,
 ._2v8yt span svg path,
-._3PHHe span svg path {
+._3PHHe span svg path,
+._376MY {
   opacity: 0.3 !important;
 }
 ._2RFeE,
@@ -872,7 +908,8 @@ span[data-icon="msg-check"] svg path,
 span[aria-label=" Read "] svg path,
 ._-68As span svg path,
 ._37v2u span[data-icon="status-ptt"] svg path,
-._1Fcp3 .ptt-status-icon {
+._1Fcp3 .ptt-status-icon,
+.piNo6 {
   opacity: 1 !important;
 }
 span[data-icon="ptt-out-blue"] svg path:first-child,
@@ -939,24 +976,6 @@ span[title="typing…"],
 }
 .color-13 ._1o4HO, .color-13 ._1VzZY {
   color: var(--cl-13) !important;
-}
-
-
-/*========= alert message - maintenance =========*/
-/*========= alert message - maintenance =========*/
-
-._1kdBg:before {
-  content: "IMPORTANT: Whatsapp often releases new versions of the app causing custom skins to break. If that happens, please be patient and keep checking for my skin updates. It normally takes a few hours (a couple of days max) to have it fixed!";
-  position: absolute;
-  top: 0;
-  left: 0%;
-  font-weight: 800;
-  white-space: nowrap;
-  background: var(--mainColor);
-  color: white;
-  padding: 20px;
-  z-index: 9999999999999999;
-  animation: alert 40s linear infinite;
 }
 
 ._1kdBg:after {

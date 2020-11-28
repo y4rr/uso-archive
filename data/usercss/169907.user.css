@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2020111.3.50
+@version        20201127.15.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown doubleList "搜索结果双列显示" {
@@ -384,7 +384,7 @@ body[link*="#"] #s_form_wrapper #form {
 }
 }
 
-@-moz-document url-prefix("https://www.baidu.com/s?"), url-prefix("https://www.baidu.com/sf/vsearch?"), url-prefix("https://www.baidu.com/baidu?wd="), url-prefix("http://www.baidu.com/s?"), url-prefix("http://www.baidu.com/sf/vsearch?"), url-prefix("http://www.baidu.com/baidu?wd="), url-prefix("https://www.baidu.com/s?ie"), url-prefix("https://www.baidu.com/baidu?cl=") {
+@-moz-document url-prefix("https://www.baidu.com/s?"), url-prefix("https://www.baidu.com/sf/vsearch?"), url-prefix("https://www.baidu.com/baidu?wd="), url-prefix("http://www.baidu.com/s?"), url-prefix("http://www.baidu.com/sf/vsearch?"), url-prefix("http://www.baidu.com/baidu?wd="), url-prefix("https://www.baidu.com/s?ie"), url-prefix("https://www.baidu.com/baidu?cl="), url-prefix("https://www.baidu.com/baidu?") {
 /* 搜索结果页样式更改 */
 /* -- 背景色 -- */
 body,
@@ -1063,7 +1063,10 @@ article.wenda-abstract-wrap .wenda-abstract-abstract {
 	border-top-right-radius: 0!important;
 	padding-top: 0!important;
 }
-
+#content_left > div:not(.result):first-child {
+	width: 590px;
+	margin: 0 auto 12px;
+}
 /* 其他 - 5118站长工具箱 */
 #checkkeywordsinfo {
 	margin: 0 auto!important;

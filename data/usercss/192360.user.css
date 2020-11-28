@@ -3,9 +3,93 @@
 @namespace      USO Archive
 @author         Вика Пименова
 @description    `If you don't know Russian, use a translatorИзменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке немного увеличены стикеры акций и добавлено белое обрамление для надписейНазвания нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеетФон на главной странице и в гардеробе больше не размытыйМини-игры теперь немного повышеГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайта`
-@version        20201127.10.19
+@version        20201127.18.16
 @license        CC0-1.0
 @preprocessor   uso
+@advanced dropdown menu_color "Тени слов в меню (Shadows of words in the top menu)" {
+	cyan_pink "Голубой|Розовый (Cyan|Pnk)*" <<<EOT #menu-bar #menu li a {
+    text-shadow: 0 0 8px var(--main-season-color);
+} EOT;
+pink "Розовый (Pink)" <<<EOT #menu-bar #menu li a {
+    text-shadow: 0 0 8px var(--s2-color);
+}
+
+#top-bar h1.s1, #top-bar h1.s2 {
+    text-shadow: 0 0 8px var(--s2-color);
+} EOT;
+cyan "Голубой (Cyan)" <<<EOT #menu-bar #menu li a {
+    text-shadow: 0 0 8px var(--s1-color);
+}
+
+#top-bar h1.s1, #top-bar h1.s2 {
+    text-shadow: 0 0 8px var(--s1-color);
+} EOT;
+
+}
+@advanced dropdown background "Свой фон для... (Your background for...)" {
+	none "Ничего (None)*" <<<EOT  EOT;
+all "Всех страниц (All pages)" <<<EOT /*Фон*\/
+
+.page-main-container, #container .library-main-container{
+    background-image: url(/*[[image]]*\/) !important;
+}
+
+.home-interface-container #left-bg img {
+    width: 0px;
+}
+
+#background-gradient {
+    background: url(/*[[image]]*\/) !important;
+    background-position: center !important;
+    position: fixed !important;
+    background-size: cover !important;
+    min-height: calc(100vh - var(--topbar-height)) !important;
+} EOT;
+somewhere "Всех страниц, кроме банка, фамильяра и магазинов (All pages except bank, familiar, and stores)" <<<EOT /*Фон*\/
+
+.page-main-container, #container .library-main-container{
+    background-image: url(/*[[image]]*\/);
+}
+
+.home-interface-container #left-bg img {
+    width: 0px;
+}
+
+#background-gradient {
+    background: url(/*[[image]]*\/) !important;
+    background-position: center !important;
+    position: fixed !important;
+    background-size: cover !important;
+    min-height: calc(100vh - var(--topbar-height)) !important;
+} EOT;
+somwhere_but "Всех страниц, кроме главной страницы, банка, фамильяра и магазинов (All pages except main page, bank" <<<EOT /*Фон*\/
+
+.page-main-container, #container .library-main-container{
+    background-image: url(/*[[image]]*\/);
+} EOT;
+main_page "Главной страницы (Main page)" <<<EOT /*Фон*\/
+
+.home-interface-container #left-bg img {
+    width: 0px;
+}
+
+#background-gradient {
+    background: url(/*[[image]]*\/) !important;
+    background-position: center !important;
+    position: fixed !important;
+    background-size: cover !important;
+    min-height: calc(100vh - var(--topbar-height)) !important;
+} EOT;
+
+}
+@advanced dropdown image "Фон (Background)" {
+i1 "Центральная беседка (Central gazebo)*" <<<EOT https://i.ibb.co/K58Pgkt/background-2.jpg EOT;
+i2 "Центральная беседка ночь(Central gazebo night)" <<<EOT https://i.ibb.co/ZxWspx0/background-night.jpg EOT;
+
+	image-custom-dropdown "Custom" <<<EOT /*[[image-custom]]*\/ EOT;
+}
+@advanced text image-custom "Фон (Background) (Custom)" "https://example.com/image.png"
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
 /*Основное*/
@@ -21,7 +105,6 @@
 
 #menu-bar #menu li a {
     font-size: 20px;
-    text-shadow: 0 0 8px var(--main-season-color);
     line-height: 38px;
     font-weight: 600;
     color: #FFFFFF;
@@ -31,19 +114,23 @@
     font-size: 30px;
 }
 
+/*[[menu_color]]*/
+
 /*Гг на главной странице не светится при наведении*/
 
 #home-left-container #home-avatar-player canvas{
     pointer-events: none;
 }
 
-/*Скажем  "Нет!" раззмытию фона!*/
+/*Скажем  "Нет!" размытию фона!*/
 
 .appearance-interface-container #avatar-background img, .home-interface-container #left-bg img, .attic-container #avatar-background img {
     filter: none;
     background-position: center;
     position: fixed;
 }
+
+/*[[background]]*/
 
 /*Список вещей в гардеробе и магазине повыше*/
 
@@ -159,19 +246,16 @@
 
 /*Инвентарь*/
 
-#container .inventory-main-container {
-    background-image: url(https://i.ibb.co/g47tg2K/1.png);
-}
 #inventory-menu li {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 9px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.section-content {
-    background: none;
-    border-radius: 0px;
-    border: none;
+.inventory-main-container .section-content {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 35px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .inventory-scroll-wrapper {

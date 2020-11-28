@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SCP ES
 @description    `Modo nocturno para la wiki scp -es`
-@version        20201127.11.15
+@version        20201127.21.6
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -201,4 +201,51 @@ div.yui-navset ul.yui-nav .selected a:hover {
 .content-panel{
       background: url(https://i.ibb.co/JsvgLLt/bg-marbledark.png) repeat !important;
     
+}
+div.content {
+    background: #000000
+}
+::-webkit-scrollbar-thumb {
+    background: #757575;
+}
+::-webkit-scrollbar-track {
+    background: rgb(0 0 0 );
+}
+.section table *:first-child {
+    color: #6d6d6d;
+}
+.section table td:first-child, .section table th:first-child {
+    color: white;
+}
+table.wiki-content-table th {
+    color: white;
+}
+.section {
+ background: #2c2f33
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #fff;
+}
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #fff;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #5a5a5a;
+}
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+     background: #575757;
+    color: white;
+}
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover {
+background: black
+}
+#search-top-box-form input[type=submit] {
+    background: linear-gradient(to bottom, #474747,#030303,#6c6c6c);
+        color: #e8e8e8;
+}
+#search-top-box input.empty {
+    color: #e8e8e8;
+}
+#search-top-box-input {
+    background-color: #1b1b1b;
 }}

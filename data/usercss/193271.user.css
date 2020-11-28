@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Featured Wallpaper: Shakugan No Shana.Use the dark theme in your Appearance settings.`
-@version        20201126.11.44
+@version        20201127.23.25
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchange1 "Background Image" {
@@ -23,6 +23,9 @@
 
 
 
+a.yt-formatted-string {
+    color: #e75e0e!important;
+}
 
 #logo-icon-container.ytd-topbar-logo-renderer {
     width: 80px;
@@ -80,7 +83,7 @@ background-image: url(/*[[yadbgchange1]]*/), linear-gradient(180deg, #1a1a1ac9 0
 background-repeat: no-repeat;
 background-attachment:fixed;
 background-color: #0b0b0be6;
-background-position: 50% 33%, center;
+background-position: center;
 background-size: 100%;
 background-blend-mode: normal;
 }
@@ -348,15 +351,17 @@ text-shadow: #aa0 0 -2px 5px, #bf4600 0 -4px 15px, #a10000 0 -6px 25px;
 	animation-direction: alternate;
 }
 @keyframes yadburnt {
-	0% {box-shadow: 0 0 0px 0px #232323;}
-	100% {box-shadow: 0 0 3px 2px #ff1515;}
+	0% {box-shadow: 0 0 0px 0px #23232380;}
+	100% {box-shadow: 0 0 3px 3px #ff15158c;}
 }
 
 .ytp-swatch-background-color {/*sliderball*/
     background-color: #fff0;
 }
 
-
+.ad-interrupting .ytp-scrubber-button.ytp-swatch-background-color {
+    background-color: #f000;
+}
 .ytp-timed-markers-container {/*riles*/
     background-color: #00000078;
 }
@@ -744,8 +749,17 @@ yt-img-shadow.ytd-channel-list-sub-menu-avatar-renderer {
 /*premiering now*/
 .badge-style-type-live-now.ytd-badge-supported-renderer {
     background: transparent;
-    color: #fdff02;
-    border: 1px dotted #ff7300;
+    color: #fff;
+    border: 1px dashed #8b8b8b00;
+	animation: liveyad 1s infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in
+}
+@keyframes liveyad {
+	25% {border-top: 1px solid #84ff00;}
+	50% {border-left: 1px dashed #ffe600;}
+	75% {border-bottom: 1px solid #ff6200;}
+	90% {border-right: 1px dashed #f00;}
 }
 
 /*user channel*/
@@ -799,6 +813,22 @@ paper-dialog {
 #bar.yt-copy-link-renderer {
     border: 1px solid #f2000033;
     background-color: #070404ab;
+}
+
+/*survey*/
+#star-survey.ytd-inline-survey-renderer {
+    background-color: #2e2533b0;
+}
+
+#inline-survey-compact-video-renderer.ytd-inline-survey-renderer {
+    background-color: #1e131396;
+}
+
+#title.ytd-inline-survey-renderer, #follow-up-title.ytd-inline-survey-renderer {
+    color: #ff8e3ed1;
+}
+#subtitle.ytd-inline-survey-renderer {
+    color: #ffffff;
 }
 /****************************/
 /*2021 Youtube Siklab by YAD*/

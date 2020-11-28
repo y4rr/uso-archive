@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「ブログ管理」「ホーム」「ブログ」ページなどの画面を総合的に改善します。このスタイルは Chrome/Edge/Firefox版「Stylus」の拡張機能で使用することができます。「ブログ管理」▪左メニューのプルダウン化、グローバルヘッダーとメニューヘッダーの一体化、不要なAD等の排除、などによって操作性を向上します。▪特に「アクセス解析」に関しては、細かな部分まで縦サイズのコンパクト化を施しています。▪ブログページ、管理ページのADブロック機能を備えています。「ホーム」ページ▪チェックリストの上位配置など、各表示項目の上下順を変更可能です。 また、記事の新着/既読/未読をマークとタイトル文字色で表示します。このアレンジスタイルの詳細は以下のリンク先以降の関連記事を参照ください。　　　https://ameblo.jp/personwritep/entry-12388415997.html`
-@version        20201127.12.0
+@version        20201127.14.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -3092,7 +3092,7 @@ ins.adsbygoogle {
     display: none; }
 }
 
-@-moz-document domain("premium.ameba.jp"), domain("peta.ameba.jp"), domain("msg.ameba.jp"), domain("amember.ameba.jp") {
+@-moz-document domain("premium.ameba.jp"), domain("msg.ameba.jp"), domain("amember.ameba.jp") {
 /* 各種管理ページ（左メニュー小型タイプ）********************* */
 /* ameba専用フォント */
 @font-face {
@@ -3354,68 +3354,6 @@ body {
 /* メッセージ管理ページ ごみ箱 下部AD */
 div[id^="div-gpt-ad"] {
     display: none; }
-}
-
-@-moz-document url-prefix("https://peta.ameba.jp/p/"), url-prefix("http://peta.ameba.jp/p/") {
-/* ペタ管理ページ **************************************** */
-#ucsMain {
-    min-height: 400px;
-    padding: 0; }
-
-#ucsMainLeft {
-    width: 580px;
-    margin: 0;
-    padding: 15px 30px;
-    border: 1px solid #ccc;
-    background: #fff; }
-
-#ucsMainLeft h1 {
-    display: inline-block;
-    width: 560px;
-    margin: 0;
-    padding: 6px 10px; }
-
-/* 左リスト幅 */
-#mainContentsLi {
-    width: 580px; }
-
-/* リストアイテム */
-#mainContentsLi li li {
-    margin: 0;
-    padding: 4px; }
-
-#mainContentsLi li li:last-child {
-    padding-bottom: 4px; }
-
-#mainContentsLi li li .dateTxt {
-    right: 4px;
-    top: 2px; }
-
-#mainContentsLi .deleteIcon a.btnSmallDelete {
-    height: 24px; }
-
-/* サムネイル画像がリロード時拡大するのを防ぐ */
-.prfImg img {
-    max-width: 40px;
-    max-height: 40px; }
-
-#ucsMainRight {
-    width: 180px;
-    margin: 0; }
-
-/* 迷惑なペタを避けるには */
-p.iconRight {
-    margin: -37px 6px 0; }
-
-#notifyItemArea.boxTop {
-    margin-top: 10px;
-    border: 1px solid #E7E7E7;
-    border-radius: 5px !important; }
-
-#notifyItemArea.boxBtm {
-    margin: -45px 0 30px 250px !important;
-    white-space: nowrap;
-    background: none !important; }
 }
 
 @-moz-document domain("msg.ameba.jp") {
@@ -5208,6 +5146,7 @@ body {
 
 /* メッセージ */
 .PcProfile_Links {
+    padding: 8px 0 0;
     border: none; }
 
 .PcProfile_Links .Tap_Transparent:hover {
@@ -5232,6 +5171,7 @@ body {
 
 /* 「いいね!」「フォロー」「メッセージ」「コメント」 等の告知 =共通= */
 .HomeRedNotification {
+    margin: 12px 0 -6px;
     padding: 0;
     border: none; }
 
@@ -5987,7 +5927,7 @@ footer {
 /* 「ホーム 表示項目の設定方法」チュートリアル ***************** */
 @media screen and (min-width: 850px) {
 #basic-info-name > a[href*="158183"]::before {
-    content: "●ホーム画面の表示項目設定方法●\A Code30 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 30 を参照ください";
+    content: "●ホーム画面の表示項目設定方法●\A Code29 で左列・右列の表示項目の\A上下の順を指定することが出来ます\A詳しくは Code 29 を参照ください";
     position: absolute;
     font-size: 16px;
     top: 44em;
