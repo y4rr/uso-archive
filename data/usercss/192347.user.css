@@ -3,13 +3,11 @@
 @namespace      USO Archive
 @author         Loplo
 @description    `FR: Modifie la nouvelle apparence du site pour la rendre plus lisible.-> Texte du menu en foncé-> <strong>Retour à l'ancien marché</strong>-> Agrandissement de l'armoire-> Agrandissement du texte + couleurs moins flash-> Agrandissement de la messagerieEN: Modification of the new site's appereance:-> Menu's text in dark purple instead of white-> <strong>Back to the previous market</strong>-> Every text on the website is wider-> The wardrobe is wider and the blur on the background is disabled-> Messaging is wider`
-@version        20201111.21.3
+@version        20201129.0.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("eldarya.fr"), domain("eldarya.com"), domain("eldarya.com.br"), domain("eldarya.pl"), domain("eldarya.de"), domain("eldarya.dk"), domain("eldarya.es"), domain("eldarya.hu"), domain("eldarya.it"), domain("eldarya.nl"), domain("eldarya.ro"), domain("eldarya.ru"), domain("eldarya.se"), domain("eldarya.uk") {
-
-
 /**
 
 
@@ -190,10 +188,11 @@ body.season-s2 .nl-button {
 }
 }
 
-@-moz-document domain("eldarya.fr"), domain("eldarya.com"), domain("eldarya.com.br"), domain("eldarya.pl"), domain("eldarya.de"), domain("eldarya.dk"), domain("eldarya.es"), domain("eldarya.hu"), domain("eldarya.it"), domain("eldarya.nl"), domain("eldarya.ro"), domain("eldarya.ru"), domain("eldarya.se"), domain("eldarya.uk") {
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace") {
 /* CODE ANCIEN MARCHE */
 #layout-2col > div {
     flex: 2 !important;
+    padding: 100px 30px 30px 30px;
 }
 
 .marketplace-main-container .page {
@@ -273,7 +272,7 @@ body.season-s2 .nl-button {
     color: rgb(52, 56, 111);
     position: absolute;
     padding: 5px;
-    bottom: 20px;
+    bottom: 15px;
     left: 80px;
 }
 
@@ -316,18 +315,18 @@ body.season-s2 .nl-button {
 }
 
 .marketplace-abstract .abstract-time {
+    width: 260px;
     font-family: Rubik, cursive;
     font-size: 14px;
     color: rgb(196, 103, 188)!important;
     font-weight: bold;
+    display: block;
     position: absolute!important;
-    top: 45px!important;
-    right: 220px!important;
+    top: 50px!important;
     border: none;
     background: #fff0!important;
     box-shadow: inset 0 0 27px rgba(255, 255, 255, 0), 0 5px 4px 1px rgba(255, 255, 255, 0)!important;
 }
-
 
 .marketplace-abstract .abstract-price {
     font-family: Rubik, cursive;
@@ -422,8 +421,7 @@ li.marketplace-itemsForSale-item {
 
 
 #layout-2col #layout-2col-right {
-    height: 1050px;
-    padding: 30px;
+    height: 1125px;
 }
 
 #marketplace-main-content {
@@ -437,12 +435,6 @@ li.marketplace-itemsForSale-item {
 #marketplace-abstract-purchases,
 #marketplace-abstract-sales {
     height: 490px;
-}
-
-.abstract-currentPrice {
-    font-size: 12px;
-    font-weight: bold;
-    position: absolute;
 }
 
 #marketplace-abstract-sales .abstract-time,
@@ -679,6 +671,8 @@ img.abstract-icon {
     position: absolute;
     right: -10px;
     top: 45px!important;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .price-info {
@@ -694,30 +688,97 @@ img.abstract-icon {
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace/auctions") {
+li.marketplace-search-item,
+li.marketplace-sales-item,
+li.marketplace-auctions-item,
+li.marketplace-itemsForSale-item,
+li.marketplace-historic-item {
+    position: relative;
+}
+
 #marketplace-abstract-sales .marketplace-abstract .abstract-container,
 #marketplace-abstract-purchases .marketplace-abstract .abstract-container {
     position: absolute!important;
     bottom: 45px!important;
     left: 10px;
+    width: 330px;
+}
+
+.marketplace-abstract .abstract-name {
+    font-weight: bold!important;
+    font-size: 18px!important;
+    color: rgb(52, 56, 111)!important;
+    position: absolute!important;
+    padding: 5px!important;
+    bottom: 21px!important;
+    left: 80px!important;
+}
+
+
+.marketplace-abstract .abstract-time {
+    width: 260px!important;
+    font-size: 15px!important;
+    font-weight: bold!important;
+    display: block!important;
+    position: absolute!important;
+    top: 10px!important;
+    border: none!important;
+    background: #fff0!important;
+    box-shadow: inset 0 0 27px rgba(255, 255, 255, 0), 0 5px 4px 1px rgba(255, 255, 255, 0)!important;
+}
+
+#marketplace-abstract-purchases .abstract-time {
+    position: absolute!important;
+    left: -235px!important;
+}
+
+
+#marketplace-abstract-sales .abstract-time{
+    position: absolute;
+    top: 100px!important;
+    left: -70px!important;
+}
+
+.marketplace-abstract .abstract-content {
+    padding: 0 5px;
+    z-index: 10;
+    border-radius: 15px;
+    right: -50px;
+    box-shadow: none;
 }
 
 .marketplace-abstract li {
     position: relative;
     top: 30px;
     left: -40px;
+    width: 420px;
+    margin: 10px;
+    height: 95px;
 }
 
 .marketplace-abstract .abstract-icon {
-    left: 10px;
+    left: 5px;
     top: 5px;
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 2px black;
+    float: left;
+    border-radius: 22px;
+    margin: 0;
 }
 
-#marketplace-abstract-sales .abstract-time,
-#marketplace-abstract-purchases .abstract-time {
-    position: absolute;
-    left: -60px!important;
-    top: 110px!important;
+.marketplace-abstract .abstract-icon > img {
+    width: 75px;
 }
+
+.marketplace-search-items li, .marketplace-itemsForSale-items li, .marketplace-auctions-item, .marketplace-sales-item {
+    width: 500px;
+    height: 85px;
+    margin: 5px;
+    border-radius: 22px;
+}
+
+
 
 .nl-button.nl-button-sm.marketplace-itemDetail-bid-prepare {
     position: absolute;
@@ -725,8 +786,26 @@ img.abstract-icon {
     top: 90px;
 }
 
+#marketplace-abstract-purchases .abstract-actions {
+	position: absolute;
+	top: 55px;
+    left: 250px;
+	display: block;
+	height: 80px;
+}
+
 .abstract-currentPrice {
-    top: 90px!important;
+    text-align: right;
+    position: absolute;
+    right: -10px;
+    top: 38px!important;
+    font-size: 15px!important;
+    font-weight: bold;
+}
+
+.price-item {
+    font-size: 17px;
+    margin: 0 3px 0 3px;
 }
 
 .nl-button.nl-button-sm.marketplace-itemDetail-cancel {
@@ -735,112 +814,11 @@ img.abstract-icon {
     left: 70px;
 }
 
-.abstract-currentPrice {
-    top: 80px!important;
-}
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace/sell") {
-.marketplace-abstract .abstract-icon > img {
-    width: 100px!important;
-    border-radius: 22px!important;
-}
-
-.marketplace-abstract .abstract-icon {
-    width: 100px!important;
-    height: 100px!important;
-    background: white!important;
-    margin: 4px!important;
-    display: inline-block!important;
-    position: relative!important;
-    top: -30px!important;
-    border-radius: 22px!important;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 2px rgba(0, 0, 0, 0.08)!important;
-    float: none;
-}
-
-.marketplace-abstract .abstract-container {
-    position: absolute!important;
-    float: left!important;
-    width: 250px!important;
-    min-height: 50px!important;
-    display: flex!important;
-    flex-direction: column!important;
-    justify-content: space-evenly!important;
-    top: 105px;
-    left: -77px;
-}
-
-#layout-2col #layout-2col-right {
-    background: rgba(255, 255, 255, 0.9)!important;
-    z-index: 2!important;
-    height: 980px;
-}
-
-.marketplace-main-container #layout-2col-right {
-    min-width: 727px!important;
-    align-items: inherit!important;
-}
-
-#layout-2col > div {
-    box-sizing: border-box!important;
-    position: relative!important;
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
-    padding: 110px 30px 30px!important;
-}
-
-
-#marketplace-menu {
-    margin: 10px 0!important;
-}
-
-ol,
-ul {
-    list-style: none!important;
-}
-
-.marketplace-itemsForSale-items li.marketplace-itemsForSale-item {
-    height: 140px!important;
-}
-
-.marketplace-search-items li,
-.marketplace-itemsForSale-items li,
-.marketplace-auctions-item,
-.marketplace-sales-item {
-    height: 250px!important;
-    width: 170px!important;
-    border-radius: 40px!important;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3)!important;
-    position: relative!important;
-    text-align: center!important;
-    margin: 20px 5px!important;
-    padding: 5px!important;
-    box-sizing: border-box!important;
-    cursor: pointer!important;
-    display: inline-block!important;
-    vertical-align: top!important;
-    background-color: #fff!important;
-}
-
-.marketplace-abstract .abstract-name {
-    font-family: Rubik, cursive;
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(52, 56, 111);
-}
-
-#layout-2col-left::before {
-    content: '';
-    background: url(https://www.eldarya.fr/static/img/home/wave.png) no-repeat right;
-    background-size: 100% 100%;
-    width: 149px;
-    height: 980px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0.9;
-    z-index: 2;
+.marketplace-main-container .page{
+    font-size: 18px;
+    width: 30px;
 }
 }

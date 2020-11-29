@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `Go back to the past with this theme!Default Settings:Theme Color: #000097Background Color: #008080Font: Arial`
-@version        202048.0.15
+@version        20201129.0.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color BkgColor "Background Color" #008080
@@ -53,7 +53,7 @@ body {
     background-color: /*[[mColor]]*/;
     border-radius: 0px; }
 
-.button,.button.blue,button.blue,.button.red,button.red,.button.green,button.green,.button.orange,button.orange,.modal .cancel-button, .input-group .input-button  {
+button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .button:not(.plain).red, button:not(.plain).green, .button:not(.plain).green, button:not(.plain).orange, .button:not(.plain).orange, .modal .cancel-button, .input-group .input-button  {
     color: #000;
     background-color: #C0C0C0;
     border-color: #0000;
@@ -177,9 +177,6 @@ body {
     border-top: 1px solid #808080;
     border-bottom: 1px solid #FFFFFF; }
 
-.thread-row {
-    border-bottom: 2px solid #808080; }
-
 .divide {
     width: 1px;
     height: 100%;
@@ -255,14 +252,9 @@ body {
 .favorite-text {
     color: #fff700; }
 
-.mint-membership {
-    color: #000097; }
-
-.ace-membership {
-    color: #9e0000; }
-
-.royal-membership {
-    color: #a96704; }
+.membership-buttons .membership-button.ace, .membership-buttons .membership-button.royal, .membership-buttons .membership-button.mint {
+    font-family: arial;
+}
 
 
 .mem-cols .col {

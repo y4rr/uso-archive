@@ -2,12 +2,12 @@
   "id": 192360,
   "info": {
     "name": "Eldarya - Corrections Website [all servers]",
-    "description": "If you don't know Russian, use a translator\r\n\r\nИзменения:\r\n\r\nТекст верхнего меню немного увеличен, а его фон затемнён\r\nНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее\r\nВ гардеробе и в магазине одежды сократилось пустое пространство\r\nИконки на чердаке теперь занимают не только правую сторону\r\nГлавная героиня больше не светится при наведении и не перенаправляет в гардероб\r\nВ банке немного увеличены стикеры акций и добавлено белое обрамление для надписей\r\nНазвания нарядов в магазине написаны обычным текстом\r\nЦены в магазинах и названия вещей написаны более жирным шрифтом\r\nКогда открываешь мешок и забираешь вещь текст розовой кнопки \"Хорошо\" больше не синеет\r\nФон на главной странице и в гардеробе больше не размытый\r\nМини-игры теперь немного повыше\r\nГардероб теперь не прыгает\r\nИнвентарь теперь похож на чердак\r\nИконки на рынке не выходят за рамки\r\nИконки во вкладке \"Мои торги\" расположены горизонтально, как это было в старой версии сайта",
-    "additionalInfo": "Новые изменения: \r\n\r\nВкладка \"Чёрная пятница\" в верхнем меню подстроена под стиль\r\nТаймер на странице эвента передвинут пониже, чтобы не было проблем с отображением маны и ЗМ, когда после перехода на страницу эвента идёт переход на любую другую страницу\r\n\r\nПримечание: я буду редактировать стиль под каждый эвент. Если на следующем событии у Вас будет надпись \"ЧП\", Вы можете удалить отдельные разделы в стайлусе, пока я не обновлю стиль",
+    "description": "All Eldarya locations: https://vk.com/album-56022934_208393093\r\n\r\nОсновные изменения:\r\n\r\nТекст верхнего меню немного увеличен, а его фон затемнён\r\nНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнее\r\nВ гардеробе и в магазине одежды сократилось пустое пространство\r\nИконки на чердаке теперь занимают не только правую сторону\r\nГлавная героиня больше не светится при наведении и не перенаправляет в гардероб\r\nВ банке добавлено белое обрамление для надписей\r\nФон на главной странице и в гардеробе больше не размытый\r\nГардероб теперь не прыгает\r\nИнвентарь теперь похож на чердак\r\nИконки на рынке не выходят за рамки\r\nИконки во вкладке \"Мои торги\" расположены горизонтально, как это было в старой версии сайта",
+    "additionalInfo": "Новые изменения: \r\n\r\nВкладка \"Чёрная пятница\" в верхнем меню подстроена под стиль\r\nТаймер на странице эвента передвинут пониже, чтобы не было проблем с отображением маны и ЗМ, когда после перехода на страницу эвента идёт переход на любую другую страницу\r\nДобавлена возможность изменить фон и цвет тени букв верхнего меню\r\n\r\nПримечание: я буду редактировать стиль под каждый эвент. Если на следующем событии у Вас будет надпись \"ЧП\", Вы можете удалить отдельные разделы в стайлусе, пока я не обновлю стиль",
     "format": "uso",
     "category": "eldarya",
     "createdAt": "2020-11-09T22:52:48.000Z",
-    "updatedAt": "2020-11-27T18:16:26.000Z",
+    "updatedAt": "2020-11-28T18:07:40.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 363431,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 265,
-      "weekly": 29
+      "total": 268,
+      "weekly": 27
     }
   },
   "screenshots": {
@@ -89,7 +89,7 @@
           {
             "key": "all",
             "label": "Всех страниц (All pages)",
-            "value": "/*Фон*/\r\n\r\n.page-main-container, #container .library-main-container{\r\n    background-image: url(/*[[image]]*/) !important;\r\n}\r\n\r\n.home-interface-container #left-bg img {\r\n    width: 0px;\r\n}\r\n\r\n#background-gradient {\r\n    background: url(/*[[image]]*/) !important;\r\n    background-position: center !important;\r\n    position: fixed !important;\r\n    background-size: cover !important;\r\n    min-height: calc(100vh - var(--topbar-height)) !important;\r\n}",
+            "value": "/*Фон*/\r\n\r\n.page-main-container, #container .library-main-container{\r\n    background-image: url(/*[[image]]*/) !important;\r\n}\r\n\r\n.home-interface-container #left-bg img {\r\n    width: 0px;\r\n}\r\n\r\n#background-gradient {\r\n    background: url(/*[[image]]*/) !important;\r\n    background-position: center !important;\r\n    position: fixed !important;\r\n    background-size: cover !important;\r\n    min-height: calc(100vh - var(--topbar-height)) !important;\r\n}\r\n\r\n#alchemy-interface .card-face {\r\n    background: #1e01319c;\r\n}",
             "default": false
           },
           {
@@ -118,15 +118,63 @@
         "type": "image",
         "options": [
           {
-            "key": "i1",
-            "label": "Центральная беседка (Central gazebo)",
-            "value": "https://i.ibb.co/K58Pgkt/background-2.jpg",
+            "key": "i5",
+            "label": "День (Day)",
+            "value": "https://i.ibb.co/RSNqPhC/day.jpg",
             "default": true
           },
           {
+            "key": "i5blur",
+            "label": "Размытый день (Day blur)",
+            "value": "https://i.ibb.co/HPLs9WZ/day2.jpg",
+            "default": false
+          },
+          {
+            "key": "i4",
+            "label": "Старый фон (Old background)",
+            "value": "https://i.ibb.co/cYYWzm7/background.jpg",
+            "default": false
+          },
+          {
+            "key": "i4blur",
+            "label": "Размытый старый фон (Old blur background)",
+            "value": "https://i.ibb.co/qpsQ46s/background22.jpg",
+            "default": false
+          },
+          {
+            "key": "i1",
+            "label": "Центральная беседка (Central gazebo)",
+            "value": "https://i.ibb.co/K58Pgkt/background-2.jpg",
+            "default": false
+          },
+          {
+            "key": "i1blur",
+            "label": "Размытая (Blur)",
+            "value": "https://i.ibb.co/nLrMxBN/background-3.jpg",
+            "default": false
+          },
+          {
             "key": "i2",
-            "label": "Центральная беседка ночь(Central gazebo night)",
+            "label": "Центральная беседка ночь (Central gazebo night)",
             "value": "https://i.ibb.co/ZxWspx0/background-night.jpg",
+            "default": false
+          },
+          {
+            "key": "i2blur",
+            "label": "Размытая ночь (Blur night)",
+            "value": "https://i.ibb.co/XVdph99/background-night2.jpg",
+            "default": false
+          },
+          {
+            "key": "i3",
+            "label": "Убежище Эль (El's Hideout)",
+            "value": "https://i.ibb.co/HB9pDBB/966-V6s7y-Sl-A.jpg",
+            "default": false
+          },
+          {
+            "key": "i3blur",
+            "label": "Размытое (Blur)",
+            "value": "https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2.jpg",
             "default": false
           }
         ]

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
-@version        20201127.16.2
+@version        20201128.18.51
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD9777
@@ -474,7 +474,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 ._1E4E4,
 ._2eUNe,
 .tSmQ1,
-.ICvlM {
+.ICvlM,
+._3k8SE {
   border: none !important;
   background: var(--darkerGray) !important;
   color: var(--superLightGray) !important;
@@ -874,12 +875,12 @@ span[data-icon="tail-out"] {
   background-color: var(--darkGray) !important;
 }
 
-/*======== input background transparent, light border ========*/
-/*======== input background transparent, light border ========*/
+/*======== input background darkerGray, light border ========*/
+/*======== input background darkerGray, light border ========*/
 
 .DuUXI,
 ._2Evw0 {
-  background-color: transparent !important;
+  background-color: var(--darkerGray) !important;
 }
 
 /*========= seen messages icons =========*/

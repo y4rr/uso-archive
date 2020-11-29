@@ -2,8 +2,8 @@
 @name           Eldarya - Corrections Website [all servers]
 @namespace      USO Archive
 @author         Вика Пименова
-@description    `If you don't know Russian, use a translatorИзменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке немного увеличены стикеры акций и добавлено белое обрамление для надписейНазвания нарядов в магазине написаны обычным текстомЦены в магазинах и названия вещей написаны более жирным шрифтомКогда открываешь мешок и забираешь вещь текст розовой кнопки "Хорошо" больше не синеетФон на главной странице и в гардеробе больше не размытыйМини-игры теперь немного повышеГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайта`
-@version        20201127.18.16
+@description    `All Eldarya locations: https://vk.com/album-56022934_208393093Основные изменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке добавлено белое обрамление для надписейФон на главной странице и в гардеробе больше не размытыйГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайта`
+@version        20201128.18.7
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown menu_color "Тени слов в меню (Shadows of words in the top menu)" {
@@ -44,6 +44,10 @@ all "Всех страниц (All pages)" <<<EOT /*Фон*\/
     position: fixed !important;
     background-size: cover !important;
     min-height: calc(100vh - var(--topbar-height)) !important;
+}
+
+#alchemy-interface .card-face {
+    background: #1e01319c;
 } EOT;
 somewhere "Всех страниц, кроме банка, фамильяра и магазинов (All pages except bank, familiar, and stores)" <<<EOT /*Фон*\/
 
@@ -83,8 +87,16 @@ main_page "Главной страницы (Main page)" <<<EOT /*Фон*\/
 
 }
 @advanced dropdown image "Фон (Background)" {
-i1 "Центральная беседка (Central gazebo)*" <<<EOT https://i.ibb.co/K58Pgkt/background-2.jpg EOT;
-i2 "Центральная беседка ночь(Central gazebo night)" <<<EOT https://i.ibb.co/ZxWspx0/background-night.jpg EOT;
+i5 "День (Day)*" <<<EOT https://i.ibb.co/RSNqPhC/day.jpg EOT;
+i5blur "Размытый день (Day blur)" <<<EOT https://i.ibb.co/HPLs9WZ/day2.jpg EOT;
+i4 "Старый фон (Old background)" <<<EOT https://i.ibb.co/cYYWzm7/background.jpg EOT;
+i4blur "Размытый старый фон (Old blur background)" <<<EOT https://i.ibb.co/qpsQ46s/background22.jpg EOT;
+i1 "Центральная беседка (Central gazebo)" <<<EOT https://i.ibb.co/K58Pgkt/background-2.jpg EOT;
+i1blur "Размытая (Blur)" <<<EOT https://i.ibb.co/nLrMxBN/background-3.jpg EOT;
+i2 "Центральная беседка ночь (Central gazebo night)" <<<EOT https://i.ibb.co/ZxWspx0/background-night.jpg EOT;
+i2blur "Размытая ночь (Blur night)" <<<EOT https://i.ibb.co/XVdph99/background-night2.jpg EOT;
+i3 "Убежище Эль (El's Hideout)" <<<EOT https://i.ibb.co/HB9pDBB/966-V6s7y-Sl-A.jpg EOT;
+i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2.jpg EOT;
 
 	image-custom-dropdown "Custom" <<<EOT /*[[image-custom]]*\/ EOT;
 }

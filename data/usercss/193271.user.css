@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Featured Wallpaper: Shakugan No Shana.Use the dark theme in your Appearance settings.`
-@version        20201127.23.25
+@version        20201128.13.32
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchange1 "Background Image" {
@@ -12,6 +12,11 @@
 	yadbgchange1-custom-dropdown "Custom" <<<EOT /*[[yadbgchange1-custom]]*\/ EOT;
 }
 @advanced text yadbgchange1-custom "Background Image (Custom)" "https://example.com/image.png"
+@advanced dropdown YcoAlorD "Logo Animation" {
+	1 "ON*" <<<EOT YcoAlorD EOT;
+2 "OFF" <<<EOT OFF EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -395,7 +400,7 @@ ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-fl
     background: #26151500;
 }
 
-@-webkit-keyframes YcoAlorD {
+@-webkit-keyframes /*[[YcoAlorD]]*/ {
   0% {
     fill: #f5940f; transform: translatey(-8px); 
   }
@@ -412,7 +417,7 @@ ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-fl
     fill: #ffdcad; transform: translatey(8px);
   }
 }
-@keyframes YcoAlorD {
+@keyframes /*[[YcoAlorD]]*/ {
   0% {
     fill: #f5940f; transform: translatey(-8px); 
   }

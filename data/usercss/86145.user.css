@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra <i>is</i> necessary for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. <a href="https://userstyles.org/styles/169748/">Easily changeable background</a>, <a href="https://userstyles.org/styles/119959/">lowercase text</a>, et cetera.</a><b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201121.15.9
+@version        20201128.20.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -392,23 +392,23 @@ td[width="225"] + td .js-scrollfix-bottom-rel #horiznav_nav + div + h2 {margin-t
 .arrow_box .inner a[href*="/profile/"].fl-l.mr4 {border-bottom: none;} /* IMG */
 
 /* Search bar */
-#searchBar {
+form[id^="searchBar"] {
     background: none !important;
     height: 22px !important;
     width: 125px !important;
     position: relative !important;
     padding: 12px 0 !important; }
 
-#searchBar .form-select-outer {
+form[id^="searchBar"] .form-select-outer {
     height: 18px !important; width: 96px !important;
     position: absolute; top: 12px; left: -78px;
     border-radius: 3px !important;
     border: 2px solid rgba(var(--colorLessDark));
     opacity: 0; z-index: 1; transition: 0.5s; transition-delay: 5s;}
-#searchBar .form-select-outer:hover {opacity: 1;transition: 0.2s;}
+form[id^="searchBar"] .form-select-outer:hover {opacity: 1;transition: 0.2s;}
 
 /* Search arrow */
-#searchBar:before {
+form[id^="searchBar"]:before {
     font-family: FontAwesome; font-size: 10px;
     content: ""; position: absolute;
     height: 19px; width: 22px;
@@ -418,29 +418,29 @@ td[width="225"] + td .js-scrollfix-bottom-rel #horiznav_nav + div + h2 {margin-t
     top: 12px !important; right: 103px !important; }
 
 /* Hovered arrow */
-#searchBar .form-select-outer:after {
+form[id^="searchBar"] .form-select-outer:after {
     background: rgba(var(--colorLessDark)); color: rgba(var(--colorLessDarkText));
     content: ""; z-index: 2;
     padding: 1px 6px 0 4px; 
     position: absolute; top: 0; right: 0;
     font-family: FontAwesome; font-size: 10px; }
 
-#searchBar #topSearchValue {
+form[id^="searchBar"] #topSearchValue, form[id^="searchBar"] #topSearchValuePc {
     background: rgba(var(--colorLessDark)) !important; color: rgba(var(--colorLessDarkText)) !important;
     display: block !important; padding: 0 10px !important;
     margin: -3px 0 0 -2px !important; border: none !important;
     height: 23px !important; width: 100px !important;
     font-size: 13px !important; font-weight: bold;
     text-transform: lowercase; box-shadow: none !important; }
-#searchBar option {background: rgba(var(--colorLessDark)) !important;text-align: center !important;}
+form[id^="searchBar"] option {background: rgba(var(--colorLessDark)) !important;text-align: center !important;}
 
-#topSearchText {
+#topSearchText, #topSearchTextPc {
     background: rgba(var(--colorLessDark)) !important; color: rgba(var(--colorLessDarkText)) !important;
     float: right !important; padding: 3px 5px 5px !important;
     height: 14px !important; width: 85px !important;
     font-size: 11px !important; text-indent: 0 !important;
     border-style: none !important; border-radius: 3px !important; }
-#topSearchText:focus {box-shadow: none !important;}
+#topSearchText:focus, #topSearchTextPc:focus {box-shadow: none !important;}
 
 #topSearchButon, #topSearchButton {display: none !important;}
 
@@ -448,44 +448,44 @@ td[width="225"] + td .js-scrollfix-bottom-rel #horiznav_nav + div + h2 {margin-t
 ::-moz-placeholder {color: transparent;opacity: 1;}
 
 /* Dropdown Search */
-.incrementalSearchResultList {
+div[class^="incrementalSearchResultList"] {
     z-index: 400 !important;
     border: none !important;
     box-shadow: 0 0 10px rgba(var(--colorDarkShadow),0.25) !important; }
-#topSearchResultList {
+div[id^="topSearchResultList"] {
     width: 277px !important;
     top: 56px !important;
     left: -87px !important;
     border-radius: 4px 4px 8px 8px !important;
     box-shadow: 0 0 10px rgba(var(--colorHeaderShadow),0.5) !important; }
 #advancedSearchResultList {top: 32px !important;border-radius: 8px !important;}
-.incrementalSearchResultList .list.separator {text-transform: lowercase !important;}
+div[class^="incrementalSearchResultList"] .list.separator {text-transform: lowercase !important;}
 
-.incrementalSearchResultList .list.list-bottom {
+div[class^="incrementalSearchResultList"] .list.list-bottom {
     background: white !important;
     color: rgba(var(--colorText)) !important;
     text-align: center;
     border-radius: 0 0 8px 8px !important; }
-.page-common .incrementalSearchResultList .list.list-bottom.focus a span {text-decoration: none !important;}
-.incrementalSearchResultList .list.list-bottom a {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-.incrementalSearchResultList .list.focus .extra-info {white-space: normal;} /* People/Char */
+.page-common div[class^="incrementalSearchResultList"] .list.list-bottom.focus a span {text-decoration: none !important;}
+div[class^="incrementalSearchResultList"] .list.list-bottom a {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+div[class^="incrementalSearchResultList"] .list.focus .extra-info {white-space: normal;} /* People/Char */
 
-.incrementalSearchResultList .list {
+div[class^="incrementalSearchResultList"] .list {
     background: none !important;
     border: none !important;
     padding: 5px !important; }
-.incrementalSearchResultList .off .info {padding-left: 47px !important;}
-.incrementalSearchResultList .info {font-style: normal !important;padding-left: 67px !important;}
-.incrementalSearchResultList .media-type, .incrementalSearchResultList .extra-info {letter-spacing: 1px;}
-.incrementalSearchResultList .list.focus .media-type {display: none !important;}
-.incrementalSearchResultList .name {color: rgba(var(--colorTextLink)) !important;font-weight: bold !important;font-size: 13px !important;}
-.incrementalSearchResultList .list.focus .name {color: rgba(var(--colorBlue)) !important;}
+div[class^="incrementalSearchResultList"] .off .info {padding-left: 47px !important;}
+div[class^="incrementalSearchResultList"] .info {font-style: normal !important;padding-left: 67px !important;}
+div[class^="incrementalSearchResultList"] .media-type, div[class^="incrementalSearchResultList"] .extra-info {letter-spacing: 1px;}
+div[class^="incrementalSearchResultList"] .list.focus .media-type {display: none !important;}
+div[class^="incrementalSearchResultList"] .name {color: rgba(var(--colorTextLink)) !important;font-weight: bold !important;font-size: 13px !important;}
+div[class^="incrementalSearchResultList"] .list.focus .name {color: rgba(var(--colorBlue)) !important;}
 
-.incrementalSearchResultList .list:nth-last-of-type(-n+2):not(.list-bottom):not(.focus) {padding-bottom: 9px !important;}
-.incrementalSearchResultList .list:last-of-type {border-radius: 4px 4px 8px 8px !important;}
-.incrementalSearchResultList .list .extra-info {color: rgba(var(--colorText)) !important;}
-.incrementalSearchResultList .list .off .image {width: 38px !important;border-radius: 5px !important;}
-.incrementalSearchResultList .list .image {
+div[class^="incrementalSearchResultList"] .list:nth-last-of-type(-n+2):not(.list-bottom):not(.focus) {padding-bottom: 9px !important;}
+div[class^="incrementalSearchResultList"] .list:last-of-type {border-radius: 4px 4px 8px 8px !important;}
+div[class^="incrementalSearchResultList"] .list .extra-info {color: rgba(var(--colorText)) !important;}
+div[class^="incrementalSearchResultList"] .list .off .image {width: 38px !important;border-radius: 5px !important;}
+div[class^="incrementalSearchResultList"] .list .image {
     left: 8px !important;
     top: 8px !important;
     border-radius: 3px;
@@ -510,7 +510,7 @@ input[type="submit"][value="Find User"] + #advancedSearchResultList {left: 0 !im
 .search_all #advancedSearchResultList {width: 998px !important;}
 
 /* Dropdown Headers */
-.incrementalSearchResultList .list.separator span {
+div[class^="incrementalSearchResultList"] .list.separator span {
     background: rgba(var(--colorBlue)); color: white; display: block;
     font-size: 10px !important; font-weight: normal !important;
     letter-spacing: 1px; text-align: center;
@@ -605,7 +605,7 @@ body.featured-news h3.header3.header3-underline,
     padding: 3px 0 !important; margin: 4px 0 5px 0 !important; }
 
 .normal_header, .normal_header strong, h2, .normal_header[colspan="2"],
-.normal_header[align="center"] a, #panel_left div.normal_header, .header,
+.normal_header[align="center"] a, #panel_left div.normal_header, /* .header, (Breaks new History page) */
 body.featured-news h3.header3.header3-underline, .user-profile h4, h5,
 #advancedSearch .fs12.fw-b.mt24.mb8, .video-menu-category .btn-category,
 .widget .widget-header, .widget .ranking-header, .border_solid {
@@ -641,7 +641,7 @@ body.featured-news h3.header3.header3-underline, .user-profile h4, h5,
     margin-top: 2px !important; }
 
 /* Lower navigation */
-#contentWrapper > div .h1 {
+#contentWrapper > div .h1, .for-pc + div #contentWrapper > .h1 /* History page */ {
     font-family: Segoe UI !important;
     background: rgba(var(--colorLessDark)) !important; color: rgba(var(--colorLessDarkText)) !important;
     font-size: 15px !important; font-weight: bold !important;
@@ -1884,7 +1884,7 @@ div[class*="-search-form-search"] .inputButton {
     height: 23px !important; width: 25px !important; }
 
 /* Separate days (History page) */
-#horiznav_nav[style$="bottom: 15px;"] + div[style$="15px;"] table[width="100%"] tr td[style="border-width: 1px 0;"] {
+#horiznav_nav[style$="bottom: 15px;"] + .history_content_wrapper tr td[style="border-width: 1px 0;"] {
     border-top: 2px dashed rgba(var(--colorGreen)) !important; }
 
 /* Advanced edit button (Edit entry page) */
@@ -5307,4 +5307,19 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 #contentWrapper {background: white;border-radius: 0 0 18px 18px;padding: 23px !important;}
 #horiznav_nav {margin: -2px 0 18px 0 !important;}
 .goodresult {margin: 25px 0 -20px !important;}
+}
+
+@-moz-document url-prefix("https://myanimelist.net/history/") {
+/* Fixes for code changes to History page */
+
+.for-pc + #wrapper > #header {border: none !important;height: auto !important;margin: inherit !important;padding: inherit !important;}
+.for-pc + #wrapper > #header a {font-size: inherit !important;line-height: inherit !important;letter-spacing: inherit !important;}
+.for-pc + #wrapper > #header .non-link, .for-pc + #wrapper > #header .header-profile .header-profile-dropdown ul li:first-child a {font-size: 14px !important;}
+.for-pc + #wrapper > #header #nav li a {line-height: 36px !important;}
+
+.page-history #contentWrapper, .h1 a, .page-rwd .rwd-font-verdana ul a {font-family: Segoe UI !important;}
+
+#contentWrapper + #menu {display: none !important;} /* Appears at bottom of page */
+
+.history_content_wrapper .normal_header {height: 16px !important;} /* Header text alignment fix */
 }

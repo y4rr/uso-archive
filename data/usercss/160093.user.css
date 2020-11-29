@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Phoenix616
 @description    `A style to revert the latest change to GitHub's dashboard/homepage/startpage/notifications with the following options:- Centered to remove full width- Centered top bar (optional) - Centered notification view (optional)- Moves the now left bar back to the right where it belongs! (optional)- Remove discovery (optional)Source: <a href="https://gist.github.com/Phoenix616/d3d890b03892b799bf42a1d72c31fcd3">Gist</a>Revert even more:- <a href="http://userstyles.org/styles/130078">Font</a>- <a href="http://userstyles.org/styles/138766">Make dark header light again</a>- <a href="http://userstyles.org/styles/139586">Use old, softer blue color for links</a>`
-@version        2020915.16.15
+@version        20201128.13.51
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown leftcolumn "Team/Repo column" {
 	leftcolumn-right "Right*" <<<EOT /* Move left column to right *\/
-/*.page-dashboard*\//*.min-width-0*\/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main div.d-flex.flex-wrap.bg-gray .team-left-column:first-child {
+/*.page-dashboard*\//*.min-width-0*\/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main div.d-flex.flex-wrap.color-bg-canvas-inset .team-left-column:first-child {
 	position: absolute;
     margin-left: 650px;	
 } EOT;
@@ -29,7 +29,7 @@ header-full-width "Full width" <<<EOT  EOT;
 }
 @advanced dropdown background "Background color" {
 	background-white "White*" <<<EOT /* White background *\/
-/*.page-dashboard*\//*.min-width-0*\/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main .bg-gray {
+/*.page-dashboard*\//*.min-width-0*\/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main .color-bg-canvas-inset {
 	background-color: #fff!important;
 } EOT;
 background-default "Default gray" <<<EOT  EOT;
@@ -101,7 +101,7 @@ fbw-disabled "Default Github Design" <<<EOT  EOT;
 
 ==/UserStyle== */
 @-moz-document domain("github.com") {
-/** v1.2.7
+/** v1.2.9
 Changelog:
 v1.1: Add support for new full width dashboard
 v1.2: Fix header and discovery removal
@@ -112,12 +112,14 @@ v1.2.4: Fix dashboard.
 v1.2.5: Improve notification view (center it)
 v1.2.6: Improve head and commit log width
 v1.2.7: Fix head changes
+v1.2.8: Fix centered dashboard applying to blame and other wide views
+v1.2.9: Fix dashboard left bar not being moved to right anymore
 **/
 
 /*[[leftcolumn]]*/
 
 /* Still show alert boxes */
-/*.page-dashboard*//*.min-width-0*/.logged-in.env-production.page-responsive.full-width:not(.project-page) div.d-flex.flex-wrap.bg-gray .team-left-column ~ .team-left-column {
+/*.page-dashboard*//*.min-width-0*/.logged-in.env-production.page-responsive.full-width:not(.project-page) div.d-flex.flex-wrap.color-bg-canvas-inset .team-left-column ~ .team-left-column {
 	position: absolute;
     margin-left: 1000px;
 	border-bottom: 0px!important;
@@ -125,7 +127,7 @@ v1.2.7: Fix head changes
 
 
 /* Remove border */
-/*.page-dashboard*//*.min-width-0*/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main div.d-flex.flex-wrap.bg-gray .team-left-column.border-right:first-child {
+/*.page-dashboard*//*.min-width-0*/.logged-in.env-production.page-responsive.full-width:not(.project-page) .application-main div.d-flex.flex-wrap.color-bg-canvas-inset .team-left-column.border-right:first-child {
 	border-right: 0px!important;
 }
 

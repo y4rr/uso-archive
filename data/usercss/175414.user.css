@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Brick-Hill 2019 Christmas Theme!
+@name           Brick-Hill 2020 Christmas Theme!
 @namespace      USO Archive
 @author         rowbot
 @description    `The classic Brick-Hill Christmas theme in 2019!Made by rowbot on Brick-Hill.`
-@version        20191213.0.21
+@version        20201129.0.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,11 +33,6 @@ nav .info {
 
 .card .content {
     background-color: #E9EBF3;
-}
-
-.thread-row {
-    position: relative;
-    border-bottom: 2px solid #c1c4ce;
 }
 
 .line, hr {
@@ -133,19 +128,20 @@ nav .info {
 .card .top:not(.absolute) {
     color: #f2f2f2;
     background-color: #007D1F;
+    border-bottom: 2px solid;
     border-color: #C51105;
 }
 
 .card .top:not(.absolute).blue {
     color: #f2f2f2;
     background-color: #C51105;
-    border-color: #007D1F
+    border-color: #880c04
 }
 
 .card .top:not(.absolute).green {
     color: #f2f2f2;
     background-color: #007D1F;
-    border-color: #C51105;
+    border-color: #004611;
 }
 
 .card .top:not(.absolute).orange {
@@ -178,25 +174,26 @@ nav .info {
 
 /*buttons*/
 
-.button.blue, button.blue {
+
+button:not(.plain).blue, .button:not(.plain).blue {
     color: #fff;
     background-color: #C51105;
     border-color: #950e05;
 }
 
-.button.red, button.red {
+button:not(.plain).red, .button:not(.plain).red  {
     color: #fff;
     background-color: #C51105;
     border-color: #950e05;
 }
 
-.button.green, button.green {
+button:not(.plain).green, .button:not(.plain).green {
     color: #fff;
     background-color: #009f28;
     border-color: #007D1F;
 }
 
-.button.orange, button.orange {
+button:not(.plain).orange, .button:not(.plain).orange {
     color: #fff;
     background-color: #009f28;
     border-color: #007D1F;
@@ -220,11 +217,12 @@ nav .info {
 .tabs .tab-body {
     border: 1px solid #c1c4ce;
     background-color: #E9EBF3;
+    border-top: 0px;
 }
 
 .tabs .tab.active {
     background-color: #E9EBF3;
-    border-bottom: 1px solid #c1c4ce;
+    border-bottom: 1px solid #E9EBF3;
 }
 
 .tabs .tab {

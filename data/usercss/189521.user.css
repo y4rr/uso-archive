@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        20201118.6.40
+@version        20201128.21.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,11 +28,30 @@
 			 -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, .6);
         }
 
-body, .content, .wrapper {
+body, .wrapper {
 	background-color: #121212;
 }
-.product-tile--list:not(.product-tile--active) {
-	border-color: #151515;
+.dropdown.dropdown--top.galaxy-tooltip.js-galaxy-tooltip.dropdown--is-open, .dropdown.dropdown--top.galaxy-tooltip.js-galaxy-tooltip {
+	background: #0000 !important;
+}
+.cc-fill-secondary {
+    fill: #771c80 !important;
+}
+.custom-section:nth-of-type(n) .product-tile--triplet > .product-tile__content:nth-child(n) {
+	background: #280644 !important;
+}
+.content {
+    background-color: #120124;
+}
+.product-tile--active .product-tile__content {
+	background: #1c1c1c;
+}
+.product-tile__content {
+    background: #0a0a0a99;
+    box-shadow: 0 1px 4px 0 rgba(255, 255, 255, .15);
+}
+.dlcs > .product-tile--list:not(.product-tile--active) {
+	border-color: #151515 !important;
 }
 .section-title--with-border, .tabbed-section__head {
 	border-color: #171717;
@@ -70,9 +89,6 @@ body, .productcard-basics__title, .review__text, .review__title, .review__profil
 .dropdown__layer, .menu-submenu, .product-actions {
 	background-color: #0e0e0e;
 }
-.product-tile--active .product-tile__content, .product-tile--list.product-tile--active .product-tile__content, .product-tile__content {
-	background-color: #0e0e0ee0;
-}
 .product-tile--list.product-tile--active {
     border-bottom: 1px solid #111;
 }
@@ -88,6 +104,9 @@ body, .productcard-basics__title, .review__text, .review__title, .review__profil
 .menu-triangle {
     border-bottom: 9px solid #0e0e0e;
 }
+.product-tile--list.product-tile--active .product-tile__content {
+	background: #1c1c1c;
+}
 .menu-submenu-item.is-active .menu-submenu-link, .menu-submenu-item.menu-submenu-item--hover:hover .menu-submenu-link {
 	background-color: #111;
 	color: #eee;
@@ -99,6 +118,15 @@ body, .productcard-basics__title, .review__text, .review__title, .review__profil
 .product-tile__price {
 	color: #777;
 }
+.tabbed-section__tab, .discover-games-more__text, .product-tile__price:nth-child(n), .product-tile__no-buy-block-slug:nth-child(n) {
+    color: #771c80;
+}
+.goodies__cell.is-selected .goodies__icon--tick {
+    filter: inherit;
+}
+.tabbed-section__head, .section-title--with-border, .discover-games-more, .carousel-pagination__page {
+    border-color: #45167E !important;
+}
 .big-thingy__button {
     border: 1px solid #000;
     background: hsla(0, 0%, 0%, .16);
@@ -109,7 +137,6 @@ body, .productcard-basics__title, .review__text, .review__title, .review__profil
 }
 .arrow-icon {
     fill: rgba(255, 255, 255, .3);
-    stroke: #111;
 }
 .discover-games-more:hover {
     background-color: hsla(0, 0%, 0%, .15);
@@ -282,7 +309,7 @@ svg.ic-svg.system-requirements-selector__icon > use  {
 	color: #eee;
 }
 .dropdown, .dropdown__button {
-	background: #111;
+	background-color: #111;
 	color: #ccc;
 	border-color: #111;
 }
