@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
-@version        20201128.18.51
+@version        20201129.3.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD9777
@@ -32,17 +32,14 @@
   --video-primary: var(--mainColor) !important;
   --cl-1: var(--mainColor) !important;
   --cl-2: var(--mainColor) !important;
-  --cl-3: #373F51;
-  --cl-4: #8B2635;
-  --cl-5: #E0479E;
-  --cl-6: #9EBC9E;
-  --cl-7: #5D2A42;
-  --cl-8: #F4D35E;
-  --cl-9: #23967F;
-  --cl-10: #B14AED;
-  --cl-11: #C874D9;
-  --cl-12: #79C99E;
-  --cl-13: #A3320B;
+  --cl-3: #B14AED;
+  --cl-4: #4474e4;
+  --cl-5: #34d3b3;
+  --cl-6: #2add7e;
+  --cl-7: #f5f12f;
+  --cl-8: #f69d37;
+  --cl-9: #f32d4b;
+  --cl-10: #e73287;
 }
 
 *::-webkit-scrollbar-thumb,
@@ -379,9 +376,11 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 .XukK_,
 .iHaMv,
 .sWE2H,
+._1jYaq,
 .message-out ._159mM ._2JswF,
 .message-out ._159mM ._2zab4,
-._1jYaq {
+.message-in ._159mM ._2JswF,
+.message-in ._159mM ._2zab4 {
   background-color: var(--darkGray) !important;
 }
 ._3pkkz,
@@ -931,52 +930,72 @@ span[title="typing…"],
 .zGvn8 span {
   color: inherit !important;
 }
-.NRCvf:before {
-  content: "~ ";
+._2KXjI:before {
+  content: "@ ";
   margin-right: 5px;
 }
 ._1V82l path.primary {
   fill: white !important;
 }
-
-.color-1 ._1o4HO, .color-1 ._1VzZY {
+.color-1 ._1o4HO, .color-1 ._1VzZY, .color-11 ._1o4HO, .color-11 ._1VzZY, .color-21 ._1o4HO, .color-21 ._1VzZY, .color-31 ._1o4HO, .color-31 ._1VzZY, .color-41 ._1o4HO, .color-41 ._1VzZY, .color-51 ._1o4HO, .color-51 ._1VzZY {
   color: var(--cl-1) !important;
 }
-.color-2 ._1o4HO, .color-2 ._1VzZY {
+.dark .bg-color-1, .dark .bg-color-11, .dark .bg-color-21, .dark .bg-color-31, .dark .bg-color-41, .dark .bg-color-51 {
+  background-color: var(--cl-1) !important;
+}
+.color-2 ._1o4HO, .color-2 ._1VzZY, .color-12 ._1o4HO, .color-12 ._1VzZY, .color-22 ._1o4HO, .color-22 ._1VzZY, .color-32 ._1o4HO, .color-32 ._1VzZY, .color-42 ._1o4HO, .color-42 ._1VzZY, .color-52 ._1o4HO, .color-52 ._1VzZY {
   color: var(--cl-2) !important;
 }
-.color-3 ._1o4HO, .color-3 ._1VzZY {
+.dark .bg-color-2, .dark .bg-color-12, .dark .bg-color-22, .dark .bg-color-32, .dark .bg-color-42, .dark .bg-color-52 {
+  background-color: var(--cl-2) !important;
+      }
+.color-3 ._1o4HO, .color-3 ._1VzZY, .color-13 ._1o4HO, .color-13 ._1VzZY, .color-23 ._1o4HO, .color-23 ._1VzZY, .color-33 ._1o4HO, .color-33 ._1VzZY, .color-43 ._1o4HO, .color-43 ._1VzZY, .color-53 ._1o4HO, .color-53 ._1VzZY {
   color: var(--cl-3) !important;
 }
-.color-4 ._1o4HO, .color-4 ._1VzZY {
+.dark .bg-color-3, .dark .bg-color-13, .dark .bg-color-23, .dark .bg-color-33, .dark .bg-color-43, .dark .bg-color-53 {
+  background-color: var(--cl-3) !important;
+      }
+.color-4 ._1o4HO, .color-4 ._1VzZY, .color-14 ._1o4HO, .color-14 ._1VzZY, .color-24 ._1o4HO, .color-24 ._1VzZY, .color-34 ._1o4HO, .color-34 ._1VzZY, .color-44 ._1o4HO, .color-44 ._1VzZY, .color-54 ._1o4HO, .color-54 ._1VzZY {
   color: var(--cl-4) !important;
 }
-.color-5 ._1o4HO, .color-5 ._1VzZY {
+.dark .bg-color-4, .dark .bg-color-14, .dark .bg-color-24, .dark .bg-color-34, .dark .bg-color-44, .dark .bg-color-54 {
+  background-color: var(--cl-4) !important;
+      }
+.color-5 ._1o4HO, .color-5 ._1VzZY, .color-15 ._1o4HO, .color-15 ._1VzZY, .color-25 ._1o4HO, .color-25 ._1VzZY, .color-35 ._1o4HO, .color-35 ._1VzZY, .color-45 ._1o4HO, .color-45 ._1VzZY, .color-55 ._1o4HO, .color-55 ._1VzZY {
   color: var(--cl-5) !important;
 }
-.color-6 ._1o4HO, .color-6 ._1VzZY {
+.dark .bg-color-5, .dark .bg-color-15, .dark .bg-color-25, .dark .bg-color-35, .dark .bg-color-45, .dark .bg-color-55 {
+  background-color: var(--cl-5) !important;
+      }
+.color-6 ._1o4HO, .color-6 ._1VzZY, .color-16 ._1o4HO, .color-16 ._1VzZY, .color-26 ._1o4HO, .color-26 ._1VzZY, .color-36 ._1o4HO, .color-36 ._1VzZY, .color-46 ._1o4HO, .color-46 ._1VzZY, .color-56 ._1o4HO, .color-56 ._1VzZY {
   color: var(--cl-6) !important;
 }
-.color-7 ._1o4HO, .color-7 ._1VzZY {
+.dark .bg-color-6, .dark .bg-color-16, .dark .bg-color-26, .dark .bg-color-36, .dark .bg-color-46, .dark .bg-color-56 {
+  background-color: var(--cl-6) !important;
+      }
+.color-7 ._1o4HO, .color-7 ._1VzZY, .color-17 ._1o4HO, .color-17 ._1VzZY, .color-27 ._1o4HO, .color-27 ._1VzZY, .color-37 ._1o4HO, .color-37 ._1VzZY, .color-47 ._1o4HO, .color-47 ._1VzZY, .color-57 ._1o4HO, .color-57 ._1VzZY {
   color: var(--cl-7) !important;
 }
-.color-8 ._1o4HO, .color-8 ._1VzZY {
+.dark .bg-color-7, .dark .bg-color-17, .dark .bg-color-27, .dark .bg-color-37, .dark .bg-color-47, .dark .bg-color-57 {
+  background-color: var(--cl-7) !important;
+      }
+.color-8 ._1o4HO, .color-8 ._1VzZY, .color-18 ._1o4HO, .color-18 ._1VzZY, .color-28 ._1o4HO, .color-28 ._1VzZY, .color-38 ._1o4HO, .color-38 ._1VzZY, .color-48 ._1o4HO, .color-48 ._1VzZY, .color-58 ._1o4HO, .color-58 ._1VzZY {
   color: var(--cl-8) !important;
 }
-.color-9 ._1o4HO, .color-9 ._1VzZY {
+.dark .bg-color-8, .dark .bg-color-18, .dark .bg-color-28, .dark .bg-color-38, .dark .bg-color-48, .dark .bg-color-58 {
+  background-color: var(--cl-8) !important;
+      }
+.color-9 ._1o4HO, .color-9 ._1VzZY, .color-19 ._1o4HO, .color-19 ._1VzZY, .color-29 ._1o4HO, .color-29 ._1VzZY, .color-39 ._1o4HO, .color-39 ._1VzZY, .color-49 ._1o4HO, .color-49 ._1VzZY, .color-59 ._1o4HO, .color-59 ._1VzZY {
   color: var(--cl-9) !important;
 }
-.color-10 ._1o4HO, .color-10 ._1VzZY {
+.dark .bg-color-9, .dark .bg-color-19, .dark .bg-color-29, .dark .bg-color-39, .dark .bg-color-49, .dark .bg-color-59 {
+  background-color: var(--cl-9) !important;
+      }
+.color-10 ._1o4HO, .color-10 ._1VzZY, .color-20 ._1o4HO, .color-20 ._1VzZY, .color-30 ._1o4HO, .color-30 ._1VzZY, .color-40 ._1o4HO, .color-40 ._1VzZY, .color-50 ._1o4HO, .color-50 ._1VzZY, .color-60 ._1o4HO, .color-60 ._1VzZY {
   color: var(--cl-10) !important;
 }
-.color-11 ._1o4HO, .color-11 ._1VzZY {
-  color: var(--cl-11) !important;
-}
-.color-12 ._1o4HO, .color-12 ._1VzZY {
-  color: var(--cl-12) !important;
-}
-.color-13 ._1o4HO, .color-13 ._1VzZY {
-  color: var(--cl-13) !important;
+.dark .bg-color-10, .dark .bg-color-20, .dark .bg-color-30, .dark .bg-color-40, .dark .bg-color-50, .dark .bg-color-60 {
+  background-color: var(--cl-10) !important;
 }
 
 ._1kdBg:after {

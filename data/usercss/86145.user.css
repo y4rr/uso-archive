@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra <i>is</i> necessary for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. <a href="https://userstyles.org/styles/169748/">Easily changeable background</a>, <a href="https://userstyles.org/styles/119959/">lowercase text</a>, et cetera.</a><b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201128.20.18
+@version        20201129.8.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -425,7 +425,7 @@ form[id^="searchBar"] .form-select-outer:after {
     position: absolute; top: 0; right: 0;
     font-family: FontAwesome; font-size: 10px; }
 
-form[id^="searchBar"] #topSearchValue, form[id^="searchBar"] #topSearchValuePc {
+form[id^="searchBar"] select[id^="topSearchValue"] {
     background: rgba(var(--colorLessDark)) !important; color: rgba(var(--colorLessDarkText)) !important;
     display: block !important; padding: 0 10px !important;
     margin: -3px 0 0 -2px !important; border: none !important;

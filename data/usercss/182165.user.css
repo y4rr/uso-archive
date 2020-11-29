@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201128.5.56
+@version        20201129.9.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -2607,8 +2607,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCRESFiltered: #55221144;
     
     /*RES Dropdown Night/Day Toggle Icon*/
-    --RCRESDayToggle: #ff9999;
-    --RCRESNightToggle: #9999ff;
+    --RCRESDayToggle: #fff;
+    --RCRESNightToggle: #999;
 
     /*RES Tag Icon*/
     --RCRESUserTaggerDay:#6a98af;
@@ -2662,8 +2662,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCRESFiltered: #55221144;
     
     /*RES Dropdown Night/Day Toggle Icon/
-    --RCRESDayToggle: #ff9999;
-    --RCRESNightToggle: #9999ff;
+    --RCRESDayToggle: #fff;
+    --RCRESNightToggle: #999;
 
     /*RES Tag Icon/
     --RCRESUserTaggerDay:#6a98af;
@@ -2990,7 +2990,7 @@ a ._12FoOEddL7j_RgMQN0SNeU
 
 /*Transitions needed for below*/
 
-div a,
+/*div a,*/
 .dropdown.lightdrop .selected,
 /*4chan*/.hand,
 .read-next-title,
@@ -3003,7 +3003,7 @@ div a,
 
 
 a em:hover,
-div a:hover,
+/*div a:hover,*/
 /*Observe*/
 /*li a:hover,*/
 h1 a:hover,
@@ -3720,21 +3720,6 @@ table.flashListing tr,
 
 /* ------------------------ Alpha ------------------------- */
 
-/*New Reddit Post Format Buttons. Sidebars*/
-
-#bladeContainer,
-#DIVALREADY,
-.App__sidebar,
-/*4chan*/.jss261,.jss299,.jss606,
-._12UrKOfuM441n-zHotruas,._2xA0SygQ9V-9Vkdad_4tnh,
-._2vR2-7URvDAFSwQjhcvJ7m.r7zyyy152ZTdiHhea0cIj
-{
-    background:#00000070!important;
-    background-color:#00000070!important;
-    border-radius:0px;
-}
-
-
 /*Overlays*/
 
 #overlayScrollContainer
@@ -3743,6 +3728,22 @@ Credit to u/CedricDur, 20201011*/
 {
     background:#00000044!important;
     transition:.4s;
+}
+
+
+/*New Reddit Post Format Buttons. Sidebars*/
+
+#bladeContainer,
+#DIVALREADY,
+.App__sidebar,
+.ReactModal__Overlay,
+/*4chan*/.jss261,.jss299,.jss606,
+._12UrKOfuM441n-zHotruas,._2xA0SygQ9V-9Vkdad_4tnh,
+._2vR2-7URvDAFSwQjhcvJ7m.r7zyyy152ZTdiHhea0cIj
+{
+    background:#00000070!important;
+    background-color:#00000070!important;
+    border-radius:0px;
 }
 
 
@@ -4044,6 +4045,7 @@ table#srList[style="display: block;"],
 .nav-center .navbar-nav > li,
 .navbar .navbar-nav > li,
 .publisher-link li a,
+.ReactModal__Content,
 .report-modal .modal-content,
 .res #srList,
 .res-commentNavToggle-choices,

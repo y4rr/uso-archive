@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name           TheCoinTribune Dark Theme & AdBlocker
+@namespace      USO Archive
+@author         Reza Rahemtola
+@description    `A simple Dark Theme & Ad Blocker for thecointribune.com`
+@version        20201129.10.52
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("thecointribune.com") {
+
+  /* General background */
+  div#page.site, div#content.site-content{ background: #202020;}
+  
+  
+  /* Title & text colors */
+  h1, h2, h3, h4, h5, h6, .TCT_list_articles_widget ul li a, h2.entry-title a{ color: #1678c1 !important;}
+  p{ color: #eee;}
+  
+  
+  /* Crypto prices */
+  .mcw-tab-content.active, .mcw-white-theme .mcw-tabs, .mcw-tabs .mcw-tab.active .mcw-tab-bg{ background: #202020;}
+  .mcw-multi-tabs .mcw-list-column{ color: #fff;}
+  
+  /* Removing ads */
+  .ad_width_100, .abonnez-vous-form, .TCT_buy_btn_sidebar_widget_wrap{ display: none;}
+}
