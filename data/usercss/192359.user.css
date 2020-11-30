@@ -3,9 +3,24 @@
 @namespace      USO Archive
 @author         Ashalinda
 @description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
-@version        20201129.17.11
+@version        20201130.9.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
+@advanced dropdown background "Background (Фоновая картинка)" {
+summer "Summer 2020 (Лето 2020)*" <<<EOT https://s8.hostingkartinok.com/uploads/images/2020/08/2398fd7db04e333ce533dbf3a23b9eb5.jpg EOT;
+corridor "Long corridor (Длинный коридор)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/866c518ae55596a6aff60f125f03c9b1~1595422445.jpg EOT;
+crystallHall "Hall with Crystal (Зал с Кристаллом)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/e9b585d4f48cf9a565a83625ca7ab747~1595422322.jpg EOT;
+doorsHall "Hall with doors (Холл с дверьми)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/92b0afc4a7095c6102eeecaf18245f21~1595422209.jpg EOT;
+myRoom "My room (Моя комната)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/8ff0e65dbdb21d7c4d0aa0cf9b881082~1595421925.jpg EOT;
+gazebo "Central gazebo (Центральная беседка)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/91a060ff406709187da1bf98b658c509~1595421737.jpg EOT;
+musicGarden "Music Garden (Сад музыки)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/c88a19e81dcf9b4ad133ac9bd743d20a~1595421611.jpg EOT;
+cherry "Centenary cherry (Столетняя вишня)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/5c986bc68d9afc7a9562f8cba874b26e~1595421435.jpg EOT;
+library "Library (Библиотека)" <<<EOT https://www.eldarya.fr/assets/img/item/player/web_hd/6b433454b653a8accf326b0000047fb2~1595420937.png EOT;
+
+	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
+}
+@advanced text background-custom "Background (Фоновая картинка) (Custom)" "https://example.com/image.png"
+
 ==/UserStyle== */
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk).*") {
 /*ОБЩИЙ РАЗДЕЛ (COMMON)*/
@@ -19,8 +34,7 @@
     filter: none;
 }
 .page-main-container {
-    /*фоновая картинка - ночной пляж (background - night beach 2020)*/
-    background-image: url(https://s8.hostingkartinok.com/uploads/images/2020/08/2398fd7db04e333ce533dbf3a23b9eb5.jpg) !important;
+    background-image: url(/*[[background]]*/) !important;
 }
 /*меняет цвет основных кнопок*/
 .flavr-button, .nl-button,
@@ -54,7 +68,7 @@
     color:  rgb(255, 255, 255);
 }
 
-/*Банк*/
+/*Банк - код банка взят у Вика Пименова */
 #bank-page .product-panel h2 {
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 35px;
@@ -101,6 +115,30 @@ ul#player-stats > * {
 }
 #menu-bar #menu #menu-inner-left  {
     white-space: nowrap;
+}
+/* TOP MENU - icon */
+li.main-menu-event:after {
+    box-shadow: 0 0 23px #e6e4e4;
+}
+#menu-bar #menu #menu-inner-left {
+    display: flex;
+    align-items: center;
+}
+li.main-menu-event a {              
+    background-image: url(https://www.eldarya.fr/static/img/mall/categories/event.png);
+    height: 34px;
+    width: 29px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent !important;
+    display: inline-block;
+    background-repeat: no-repeat;        
+}
+/* уменьшает высоту верхнего всплывающего сообщения */
+.flavr-container .flavr-fixer .flavr-outer .flavr-content  .flavr-message {
+    padding: 5px 30px;
+    font-size: 16px;
 }
 }
 
@@ -335,6 +373,35 @@ div#marketplace-itemDetail > *:first-child{
     left: 0; 
     right: auto;*/
 }
+
+/* Горизонтальный раздел Покупок/Продаж */
+.marketplace-auction-container ul.marketplace-purchases-items,
+.marketplace-auction-container ul.marketplace-sales-items {
+    display: flex;
+    flex-direction: column;
+}
+.marketplace-auction-container li.marketplace-abstract.marketplace-auctions-item,
+.marketplace-auction-container li.marketplace-abstract.marketplace-sales-item{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    min-width: 400px;
+}
+.marketplace-auction-container .marketplace-abstract .abstract-icon {
+    top: -10px;
+}
+.marketplace-auction-container .marketplace-abstract .abstract-container {
+    top: 0px;
+}
+.marketplace-auction-container #marketplace-abstract-sales .abstract-actions, 
+.marketplace-auction-container #marketplace-abstract-purchases .abstract-actions {
+    top: 0px !important;
+    margin-left: 10px;
+}
+.marketplace-auction-container #marketplace-abstract-purchases:before {
+    right: -65px;
+}
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/pet.*") {
@@ -413,5 +480,20 @@ a#go-eggs {
     padding: 2px 10px;
     border-radius: 10px;
     font-size: 16px;
+}
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/forum.*") {
+/* FORUM */
+#currencies {
+    display: none;
+}
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/minigames.*") {
+/* MINIGAMES */
+/* мини-игры повыше */	
+div#main-section {
+    padding: 90px 40px 30px;
 }
 }

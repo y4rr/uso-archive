@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `The classic Brick-Hill Christmas theme in 2019!Made by rowbot on Brick-Hill.`
-@version        20201129.23.53
+@version        20201130.11.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bkgtype "Cards Type" {
-	1 "Simple*" <<<EOT /*no-background go brr*\/ EOT;
-2 "Detailed" <<<EOT background: url(https://i.imgur.com/4ss1lgm.png);
+	2 "Detailed*" <<<EOT background: url(https://i.imgur.com/4ss1lgm.png);
     background-position: left;
     background-blend-mode: overlay;  EOT;
+1 "Simple" <<<EOT /*no-background go brr*\/ EOT;
 
 }
 @advanced dropdown bkgquote "Blockquote Background" {

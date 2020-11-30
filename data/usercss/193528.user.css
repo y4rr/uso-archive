@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for ENT Île-de-France.`
-@version        20201129.20.52
+@version        20201130.9.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,6 +12,11 @@
 html, body, div.material.main.wrapper, body .material section.main{ background-color: #111 !important;}
 .notification, popover popover-content, .more, article, textarea{ background-color: #202020 !important;}
 textarea, input{ color: #fff !important;}
+
+
+/* Login page */
+.absolute{ background-color: #111 !important;}
+.panel.login .welcome-text+form, .panel.activation .welcome-text+form, .panel.login .welcome-text, .panel.activation .welcome-text{ background-color: #202020 !important;}
 
 
 /* Timeline widgets */

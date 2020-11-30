@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         HolyShit
 @description    `RSLoad.net в серых тонах`
-@version        2020117.9.38
-@license        NO-REDISTRIBUTION
+@version        20201130.8.35
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("rsload.net") {
@@ -65,7 +65,7 @@ a.logotype > img, div#dle-content>center, article.full > div > div:nth-child(2) 
     display: none !important;
 }
 a.logotype:before {
-    content: URL('https://i.ibb.co/JcM747S/logo201803-009-bird.png') !important;
+    content: URL('https://i.ibb.co/Hq6wm1P/logo-virus.png') !important;
 }
 a.orating_m {
     background: URL('https://i.ibb.co/n7qF4B7/oicons.png') !important;
@@ -211,7 +211,7 @@ span[style="color:green"] {
 div.fr-input-line>label {
     display: none !important;
 }
-.fr-active {
+.fr-active, a[itemprop="item"] {
     color: white !important;
 }
 .sres-text>h2 {
@@ -243,5 +243,11 @@ select, :selection {
 }
 a{
     color: black !important;
+}
+.bb-pane {
+    color: black !important;
+}
+.status-online::after {
+    background-color: black !important;
 }
 }

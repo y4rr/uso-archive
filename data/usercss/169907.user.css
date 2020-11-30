@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        20201127.15.18
+@version        20201130.12.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown doubleList "搜索结果双列显示" {
@@ -78,7 +78,7 @@ doubleList_ON "开" <<<EOT /* 调整搜索结果样式以适配双列 *\/
 @-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 /*=== 
 作者：QIUZAIYOU 
-最后更新：20201101
+最后更新：20201130
 ===*/
 /* 垃圾元素屏蔽 */
 .qrcodeCon,
@@ -861,7 +861,7 @@ form[name="f"] {
 	width: 640px;
 }
 .s_form {
-	height: 45px!important;
+	height: 50px!important;
 }
 .bdsug li {
 	padding: 3px 8px;
@@ -890,8 +890,10 @@ div[mu*="http://tieba.baidu.com"] td,
 .s_logo {
 	width: 101px!important;
 	height: 33px!important;
-	background: url(http://asifadeaway.com/NightMode/baidu/logo.png) no-repeat scroll left center!important;
-	margin-top: 1px!important;
+	background: url("http://asifadeaway.com/web/baidu/simple_baidu_logo.png") no-repeat scroll left center!important;
+	margin-top: 0!important;
+	margin-left: 40px!important;
+	background-size: cover!important;
 }
 #s_tab {
 	height: 35px!important;

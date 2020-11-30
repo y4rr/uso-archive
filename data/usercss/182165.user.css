@@ -3,559 +3,22 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201129.9.10
+@version        20201130.11.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
-@advanced dropdown Wallpaper "Wallpaper - One order of magnitude above native resolution recommended (for zoom purposes)" {
-	WPBlackWoodQHD "Black Wood - QHD (2560 x 1440)*" <<<EOT /*[Black Wood - QHD (2560 x 1440)]*\/
+@advanced dropdown RCWallpaper "Wallpaper" {
+WPBlackWood1K "Black Wood - 1K (1920 x 1080)*" <<<EOT https://i.redd.it/5hvfny0bxh151.jpg EOT;
+WPNone "None" <<<EOT http://DISABLED_REPLACE_URL_TO_ENABLE.kmv EOT;
+WPBlackWoodQHD "Black Wood - QHD (2560 x 1440)" <<<EOT https://i.redd.it/sph92752zc351.jpg EOT;
+WPBlackWood4K "Black Wood - 4K (3840 x 2160)" <<<EOT https://i.redd.it/p7grzmgozc351.jpg EOT;
+WPBlackWood8K "Black Wood - 8K (7680 x 4320)" <<<EOT https://i.redd.it/0lq1kpp10d351.jpg EOT;
+WPBlackWood16K "Black Wood - 16K (15360 x 8640)" <<<EOT https://i.redd.it/1t1w6y51qxt51.jpg EOT;
+WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64,INSERT_BASE64-CODE_HERE EOT;
 
-:root
-{
-    --RCWPURL: url("https://i.redd.it/sph92752zc351.jpg");
+	RCWallpaper-custom-dropdown "Custom" <<<EOT /*[[RCWallpaper-custom]]*\/ EOT;
 }
-
-html
-{
-    background:
-
-        var(--RCWPURL)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPURL)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-
-        var(--RCWPURL)
-        
-	    #0000 fixed !important;
-} EOT;
-WPColour "None" <<<EOT /*[None] (Colour only)*\/
-
-/* Options available *\/
-
-/*
-:root
-{
-    --RCWPURL: url("INSERT_URL_HERE");
-
-    or
-
-    --RCWPBASE64: url("data:image/png;base64,INSERT_BASE64-CODE_HERE");
-}
-*\/
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        /*Choose one:*\/
-        
-        /*var(--RCWPURL)
-
-        or
-
-        /*var(--RCWPBASE64)*\/
-        
-	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        /*Choose one:*\/
-        
-        /*var(--RCWPURL)
-
-        or
-
-        /*var(--RCWPBASE64)*\/
-        
-        #0000 /*if WP is on, enable--->*\/ /*fixed*\/ !important;
-    
-    --pseudo-before-background:
-
-        /*Choose one:*\/
-       
-        /*var(--RCWPURL)
-
-        or
-
-        /*var(--RCWPBASE64)*\/
-        
-	    var(--RCBackground) /*if WP is on, enable--->*\/ /*fixed*\/ !important;
-} EOT;
-WPBlackWood1K "Black Wood - 1K (1920 x 1080)" <<<EOT /*[Black Wood - 1K (1920 x 1080)]*\/
-
-:root
-{
-    --RCWPURL: url("https://i.redd.it/5hvfny0bxh151.jpg");
-}
-
-html
-{
-    background:
-
-        var(--RCWPURL)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPURL)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-
-        var(--RCWPURL)
-        
-	    #0000 fixed !important;
-} EOT;
-WPBlackWood4K "Black Wood - 4K (3840 x 2160)" <<<EOT /*[Black Wood - 4K (3840 x 2160)]*\/
-
-:root
-{
-    --RCWPURL: url("https://i.redd.it/p7grzmgozc351.jpg");
-}
-
-html
-{
-    background:
-
-        var(--RCWPURL)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPURL)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-
-        var(--RCWPURL)
-        
-	    #0000 fixed !important;
-} EOT;
-WPBlackWood8K "Black Wood - 8K (7680 x 4320)" <<<EOT /*[Black Wood - 8K (7680 x 4320)]*\/
-
-:root
-{
-    --RCWPURL: url("https://i.redd.it/0lq1kpp10d351.jpg");
-}
-
-html
-{
-    background:
-
-        var(--RCWPURL)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPURL)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-
-        var(--RCWPURL)
-        
-	    #0000 fixed !important;
-} EOT;
-WPBlackWood16K "Black Wood - 16K (15360 x 8640)" <<<EOT /*[Black Wood - 16K (15360 x 8640)]*\/
-
-:root
-{
-    --RCWPURL: url("https://i.redd.it/1t1w6y51qxt51.jpg");
-}
-
-html
-{
-    background:
-
-        var(--RCWPURL)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPURL)
-        
-	    var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPURL)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-
-        var(--RCWPURL)
-        
-	    #0000 fixed !important;
-} EOT;
-WPBASE64 "BASE64 - (Inject in Code #1)" <<<EOT /*[Manual BASE64 Setup]*\/
-
-
-    /* Inject BASE64 in url below *\/
-
-:root
-{
-    --RCWPBASE64:
-        
-        url("data:image/jpeg;base64,INSERT_BASE64-CODE_HERE");
-}
-
-/* And that's it *\/
-
-/* Further Guide in paragraph below *\/
-
-/* =================== Wallpaper Defaults =================== *\/
-
-html
-{
-    background:
-
-        var(--RCWPBASE64)
-
-        var(--RCBackground) fixed !important;
-}
-
-html[class*="res-b"],
-html[class*="res-nightmode"][class*="res-b"],
-html[class*="res-v"],
-html[class*="res-nightmode"][class*="res-v"],
-html[class*="res-accountSwitcher"][class*="res-v"],
-html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
-html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
-._1npCwF50X2J7Wt82SZi6J0,
-._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
-{
-    background:
-
-        var(--RCWPBASE64)
-
-        var(--RCBackground) fixed !important;
-}
-
-body[class*="res-d2x"],
-body[class*="res-d2x"][class*="res-v"],
-body[class*="res-d2x-nightmode"][class*="res-v"],
-body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-v"],
-body[class*="res-nightmode"][class*="res-v"],
-body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
-body[class*="listing-page"][class*="loggedin"][class*="res-v"],
-body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
-body[class*="loggedin"][class*="res-v"],
-body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
-#siteTable,
-#siteTable.sitetable.linklisting,
-body[class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-body[class*="res-nightmode"][class*="res-v"][class*="res-"],
-body[class*="res-nightmode"][class*="res-v"] #siteTable,
-body[class*="res-nightmode"][class*="res-v"] .content,
-body[class*="res-nightmode"][class*="res-v"] .footer-parent,
-._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
-{
-    background:
-
-        var(--RCWPBASE64)
-
-        #0000 fixed !important;
-    
-    --pseudo-before-background:
-        
-        var(--RCWPBASE64)
-        
-	    #0000 fixed !important;
-} EOT;
-
-}
+@advanced text RCWallpaper-custom "Wallpaper (Custom)" "https://example.com/image.png"
 @advanced color Backgrounds "Menus, Popups, Bars etc." #090909
 @advanced color Notifications "Notifications & Announcements" #090909
 @advanced color Reply "Reply Box" #090909
@@ -575,7 +38,7 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 @advanced color Titles "Post Titles" #CCCCCC
 @advanced color Visited "Visited Posts" #777777
 @advanced color LinksUnderPosts "Post Info & Links" #717171
-@advanced dropdown RCPostBG00 "Expanded Posts (New Reddit)" {
+@advanced dropdown RCPostBG00 "Post Highlight (New Reddit)" {
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
@@ -1371,6 +834,111 @@ path,
 } EOT;
 
 }
+@advanced dropdown RCAds "Ad Removal" {
+	RCAdsAndPromos "Promotions too*" <<<EOT /*Ads and Promotions Removed*\/
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+[class*="promotedlink"]
+{
+    display:none;
+} EOT;
+RCLeaveAds "No" <<<EOT /*Ads left as is*\/
+
+/* Option to activate *\/
+
+/*Ad removal
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+/*Promotions Removal
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+*\/ EOT;
+RCAdsRemoved "Yes" <<<EOT /*Ads Removed*\/
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+
+/* Optional - Promotions Removal
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+*\/ EOT;
+RCPromosOnly "Promotions Only" <<<EOT /*Promotions Only Removed*\/
+
+[class*="promotedlink"]
+{
+    display:none;
+}
+
+
+/* Optional - Ad Removal
+
+div[data-slot],
+[class*="ArticleAd"],
+[class*="GoogleAd"],
+[class*="HomeAds"],
+[class*="LeftAd"],
+[class*="RightAd"],
+[data-before-content*="advertisement"],
+[id*="google_ads_iframe"],
+.ad-container,
+.NqMdak8MgbuSVZAABdAw9
+._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+
+*\/ EOT;
+
+}
 @advanced dropdown RCAwards "Awards" {
 	RCGold "Enabled*" <<<EOT /*---------------------------------------*\/
 /*                                       *\/
@@ -1694,113 +1262,17 @@ div.side div.spacer div.linkinfo div.date span:after
 } EOT;
 
 }
-@advanced dropdown RCAds "Ad Removal" {
-	RCLeaveAds "No*" <<<EOT /*Ads left as is*\/
-
-/* Option to activate *\/
-
-/*Ad removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-/*Promotions Removal
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-*\/ EOT;
-RCAdsRemoved "Yes" <<<EOT /*Ads Removed*\/
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-
-/* Optional - Promotions Removal
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-*\/ EOT;
-RCAdsAndPromos "Promotions too" <<<EOT /*Ads and Promotions Removed*\/
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-[class*="promotedlink"]
-{
-    display:none;
-} EOT;
-RCPromosOnly "Promotions Only" <<<EOT /*Promotions Only Removed*\/
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-
-/* Optional - Ad Removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-*\/ EOT;
-
-}
 @advanced dropdown EmailRemoval "E-mail Request Popup" {
-	EmailYes "Leave be*" <<<EOT /*Untouched*\/
+	EmailNo "Hide*" <<<EOT /*Removed*\/
+
+#ecb.email-collection-banner,
+.email-collection-banner.footer_2,
+.email-collection-content.footer_2,
+.kEQVd8aneM1tVkcIKUyDT
+{
+    display:none!important;
+} EOT;
+EmailYes "Leave be" <<<EOT /*Untouched*\/
 
 /*Enable code to remove:*\/
 
@@ -1816,15 +1288,6 @@ div[data-slot],
 
 *\/
  EOT;
-EmailNo "Hide" <<<EOT /*Removed*\/
-
-#ecb.email-collection-banner,
-.email-collection-banner.footer_2,
-.email-collection-content.footer_2,
-.kEQVd8aneM1tVkcIKUyDT
-{
-    display:none!important;
-} EOT;
 
 }
 @advanced dropdown RCUpdating "Updating:" {
@@ -2169,77 +1632,14 @@ such as
     --RCBox-Shadow: /*[[BoxShadows]]*/;
 }
 
-
-/* ================ Wallpaper Option chosen ================ */
-
-/*[[Wallpaper]]*/
-
-/*[[WPColour]]*/
-
-/*[[WPBlackWood1K]]*/
-
-/*[[WPBlackWoodQHD]]*/
-
-/*[[WPBlackWood4K]]*/
-
-/*[[WPBlackWood8K]]*/
-
-/*[[WPBlackWood16K]]*/
-
-/*[[WPBASE64]]*/
-
-
-/* =================== GUIDE TO WALLPAPERS =================== 
-
-First of all; pardon for not having upload option available on
-userstyles.org;
--I haven't figured out to get passed an error.
-
-
-Manual installation of custom Wallpapers;
-
-Formats used in CSS:
-
-    1) BASE64
-    2) url
-
---------------------------------------------------------------
-BASE64:
-
-What is it?
------------
-BASE64 is simply an image encrypted to code.
-This code is stored in the CSS injector with the rest of the
-theme, and is used to render images.
-
-All decryption takes place on the computer, thus reducing
-overall digital footprints.
-
-
---------------
-Example Setup:
---------------
-Insert these two values into url used below:
-
-    1) Change file-type accordingly (bmp/gif/jpeg/png etc.)
-    2) Inject BASE64 Code into url where defined
-
-
-:root
-{
-    --RCWPBASE64: url("data:image/jpeg;base64,INSERT_BASE64-CODE_HERE");
-}
-
-
---------------------------
-Default settings (ignore):
---------------------------
+   
+/* ===================== Wallpaper ===================== */
 
 html
 {
     background:
 
-        var(--RCWPBASE64)
+        var(--RCWPURL)
 
         var(--RCBackground) fixed !important;
 }
@@ -2256,7 +1656,122 @@ html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
 {
     background:
 
-        var(--RCWPBASE64)
+        var(--RCWPURL)
+        
+	    var(--RCBackground) fixed !important;
+}
+
+body[class*="res-d2x"],
+body[class*="res-d2x"][class*="res-v"],
+body[class*="res-d2x-nightmode"][class*="res-v"],
+body[class*="res-d2x"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-d2x-nightmode"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-v"],
+body[class*="res-nightmode"][class*="res-v"],
+body[class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-commentBoxes res-commentBoxes-rounded"],
+body[class*="listing-page"][class*="loggedin"][class*="res-v"],
+body[class*="listing-page"][class*="loggedin"][class*="res-nightmode"][class*="res-v"],
+body[class*="loggedin"][class*="res-v"],
+body[class*="res-nightmode"][class*="loggedin"][class*="res-v"],
+#siteTable,
+#siteTable.sitetable.linklisting,
+body[class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+body[class*="res-nightmode"][class*="res-v"][class*="res-"],
+body[class*="res-nightmode"][class*="res-v"] #siteTable,
+body[class*="res-nightmode"][class*="res-v"] .content,
+body[class*="res-nightmode"][class*="res-v"] .footer-parent,
+._33erTQ46yfKeF2B6B-ooMJ.ListingLayout-backgroundContainer
+{
+    background:
+
+        var(--RCWPURL)
+
+        #0000 fixed !important;
+    
+    --pseudo-before-background:
+
+        var(--RCWPURL)
+        
+	    #0000 fixed !important;
+}
+
+:root
+{
+    --RCWPURL: url("/*[[RCWallpaper]]*/");
+}
+
+    
+/* =================== GUIDE TO WALLPAPERS =================== 
+
+Manual installation of custom Wallpapers;
+
+Formats used in CSS:
+
+    1) BASE64
+    2) url
+
+--------------------------------------------------------------
+BASE64:
+
+What is it?
+-----------
+BASE64 is simply an image encrypted to code.
+This code is stored in the CSS injector with the rest of the
+theme, and is used to render images on the fly.
+
+All decryption takes place on the computer, thus reducing
+overall online digital footprints.
+
+
+--------------
+Example Setup:
+--------------
+Insert these two values into url as used in example below to enable proper functionality:
+
+    1) Change file-type accordingly (bmp/gif/jpeg/png etc.)
+    2) Inject BASE64 Code into url where defined
+
+
+:root                         Filetype
+{                                |
+    --RCWPURL: url("data:image/jpeg;base64,INSERT_BASE64-CODE_HERE");
+}
+
+
+--------------------------
+Default settings (ignore):
+--------------------------
+
+html
+{
+    background:
+
+        var(--RCWPURL)
+
+        var(--RCBackground) fixed !important;
+}
+
+html[class*="res-b"],
+html[class*="res-nightmode"][class*="res-b"],
+html[class*="res-v"],
+html[class*="res-nightmode"][class*="res-v"],
+html[class*="res-accountSwitcher"][class*="res-v"],
+html[class*="res-nightmode"][class*="res-accountSwitcher"][class*="res-v"],
+html[class*="accountSwitcher"][class*="res-nightmode"][class*="res-v"],
+._1npCwF50X2J7Wt82SZi6J0,
+._1npCwF50X2J7Wt82SZi6J0._3OGqXkiUb_0ZMlksb26boO
+{
+    background:
+
+        var(--RCWPURL)
 
         var(--RCBackground) fixed !important;
 }
@@ -2292,13 +1807,13 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 {
     background:
 
-        var(--RCWPBASE64)
+        var(--RCWPURL)
 
         #0000 fixed !important;
     
     --pseudo-before-background:
         
-        var(--RCWPBASE64)
+        var(--RCWPURL)
         
 	    #0000 fixed !important;
 }
@@ -2415,7 +1930,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
                          /*OPTIONS*/
 
 
-/* ======= Expanded Posts Background on New Reddit ======= */
+/* ============= Post Highlight - New Reddit ============= */
 
 /*[[RCPostBG00]]*/
 
