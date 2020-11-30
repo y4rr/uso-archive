@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ashalinda
 @description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
-@version        20201127.8.26
+@version        20201129.17.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk).*") {
-/*ОБЩИЙ РАЗДЕЛ*/
+/*ОБЩИЙ РАЗДЕЛ (COMMON)*/
 #home-left-container #home-avatar-player canvas{
     pointer-events: none;
 }
@@ -19,7 +19,7 @@
     filter: none;
 }
 .page-main-container {
-    /*фоновая картинка - ночной пляж*/
+    /*фоновая картинка - ночной пляж (background - night beach 2020)*/
     background-image: url(https://s8.hostingkartinok.com/uploads/images/2020/08/2398fd7db04e333ce533dbf3a23b9eb5.jpg) !important;
 }
 /*меняет цвет основных кнопок*/
@@ -105,7 +105,7 @@ ul#player-stats > * {
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/player/wardrobe.*") {
-/*ЧЕРДАК*/
+/*ЧЕРДАК (WARDROBE)*/
 #main-section {
     padding-left: 15px;
     padding-right: 15px;
@@ -209,7 +209,7 @@ a.nl-button.nl-button-back {
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/mall.*") {
-/*МАГАЗИНЫ*/
+/*МАГАЗИНЫ (MALL)*/
 .appearance-interface-container #avatar-background img {
     filter: none;
     width: auto;
@@ -278,7 +278,7 @@ a.nl-button.nl-button-back {
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace.*") {
-/*РЫНОК*/
+/*РЫНОК (MARKETPLACE)*/
 .marketplace-main-container h1.section-title {
     display: none
 }
@@ -338,7 +338,7 @@ div#marketplace-itemDetail > *:first-child{
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/pet.*") {
-/*СТРАНИЦА ФАМИЛЬЯРА*/
+/*СТРАНИЦА ФАМИЛЬЯРА (PET)*/
 /*фон для таймера*/
 p.timer {
     background: antiquewhite;
@@ -387,6 +387,14 @@ a#go-eggs {
 #pet-infos .evolve-info .cant-evolve{
     padding: 10px 0;
     display: inline-block;
+}
+/* Изменяет размеры окна поимки фама */
+.flavr-container.new-layout-popup .flavr-overlay .flavr-fixer {
+    margin: 100px 30px 30px;
+}
+.flavr-container.new-layout-popup .flavr-outer {
+    max-width: 85%;
+    min-width: 535px;
 }
 }
 

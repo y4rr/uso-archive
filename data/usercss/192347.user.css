@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Loplo
 @description    `FR: Modifie la nouvelle apparence du site pour la rendre plus lisible.-> Texte du menu en foncé-> <strong>Retour à l'ancien marché</strong>-> Agrandissement de l'armoire-> Agrandissement du texte + couleurs moins flash-> Agrandissement de la messagerieEN: Modification of the new site's appereance:-> Menu's text in dark purple instead of white-> <strong>Back to the previous market</strong>-> Every text on the website is wider-> The wardrobe is wider and the blur on the background is disabled-> Messaging is wider`
-@version        20201129.0.38
+@version        20201129.13.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -781,9 +781,9 @@ li.marketplace-historic-item {
 
 
 .nl-button.nl-button-sm.marketplace-itemDetail-bid-prepare {
-    position: absolute;
-    left: 170px;
-    top: 90px;
+    position: relative;
+    left: 0px;
+    top: 3px;
 }
 
 #marketplace-abstract-purchases .abstract-actions {
@@ -813,7 +813,6 @@ li.marketplace-historic-item {
     top: 70px;
     left: 70px;
 }
-
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/marketplace/sell") {

@@ -3,11 +3,11 @@
   "info": {
     "name": "Dark Theme for UserStyles",
     "description": "A simple Dark Theme for userstyles.org",
-    "additionalInfo": null,
+    "additionalInfo": "Style cards support added",
     "format": "uso",
     "category": "userstyles.org",
     "createdAt": "2020-11-25T20:56:01.000Z",
-    "updatedAt": "2020-11-28T15:08:51.000Z",
+    "updatedAt": "2020-11-29T23:14:10.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 1068424,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 5,
-      "weekly": 5
+      "total": 7,
+      "weekly": 7
     }
   },
   "screenshots": {
@@ -35,6 +35,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"userstyles.org\") {\r\n/* General */\r\ndiv#view-responsive{ background-color: #202020 !important;}\r\n.navigation{ background-color: #111 !important;}\r\n.navigation .links-box .navigation-link .navigation-title{ color: #fff;}\r\n\r\nh1{ color: #fff !important}\r\n\r\n\r\n/* Style page */\r\n.style_title, .by-author, #share_div, #headline, #information_key, #information_value, #information_key_left, #infomation_value_left, #applies_link, .text_style_page{ color: #fff !important;}\r\n\r\n\r\n/* AdBlocker */\r\n.android_button_banner, .android_button_button, .walking, .overlay_background{ display: none !important;}\r\n}"
+    "css": "@-moz-document domain(\"userstyles.org\") {\r\n/* General */\r\ndiv#view-responsive{ background-color: #202020 !important;}\r\n.navigation{ background-color: #111 !important;}\r\n.navigation .links-box .navigation-link .navigation-title, label{ color: #fff;}\r\n  .linking-note{ color: #5B6472 !important;}\r\n\r\nh1{ color: #fff !important}\r\n\r\n\r\n/* Style page */\r\n.style_title, .by-author, #share_div, #headline, #information_key, #information_value, #information_key_left, #infomation_value_left, #applies_link, .text_style_page{ color: #fff !important;}\r\n\r\n\r\n/* Style card */\r\n.us-stylecard--long{ background-color: #191919 !important;}\r\n.us-stylecard--long .us-title a{ color: #fff !important;}\r\n  \r\n/* User personal page */\r\n  table.author-styles, dt{ color: #fff !important;}\r\n  body{ background-color: #202020 !important;}\r\n\r\n/* AdBlocker */\r\n.android_button_banner, .android_button_button, .walking, .overlay_background{ display: none !important;}\r\n}"
   }
 }

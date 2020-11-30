@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for userstyles.org`
-@version        20201128.15.8
+@version        20201129.23.14
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,8 @@
 /* General */
 div#view-responsive{ background-color: #202020 !important;}
 .navigation{ background-color: #111 !important;}
-.navigation .links-box .navigation-link .navigation-title{ color: #fff;}
+.navigation .links-box .navigation-link .navigation-title, label{ color: #fff;}
+  .linking-note{ color: #5B6472 !important;}
 
 h1{ color: #fff !important}
 
@@ -19,6 +20,14 @@ h1{ color: #fff !important}
 /* Style page */
 .style_title, .by-author, #share_div, #headline, #information_key, #information_value, #information_key_left, #infomation_value_left, #applies_link, .text_style_page{ color: #fff !important;}
 
+
+/* Style card */
+.us-stylecard--long{ background-color: #191919 !important;}
+.us-stylecard--long .us-title a{ color: #fff !important;}
+  
+/* User personal page */
+  table.author-styles, dt{ color: #fff !important;}
+  body{ background-color: #202020 !important;}
 
 /* AdBlocker */
 .android_button_banner, .android_button_button, .walking, .overlay_background{ display: none !important;}

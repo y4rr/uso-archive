@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Dark Theme for archive.orgLink Colours are customizable.Includes smooth hovers, transitions, Media Dim, eBook Dark Mode (colour inversion), custom scrollbars and cursors;https://userstyles.org/styles/176247/https://userstyles.org/styles/177189/https://userstyles.org/styles/182441/https://userstyles.org/styles/175086/To easily switch from eBook inversion to normal, see the complimentary theme;https://userstyles.org/styles/179071/archive-org-disable-ebook-inversion-kmvAll options are in separate codes. Delete any of them to disable.PS: Due to properties of Custom CSS, one needs uninstall in order to Update.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
-@version        2020911.16.35
+@version        20201129.13.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color ArchiveLinks "Links Colour" #9B8440
@@ -39,15 +39,6 @@
 }
 
 /* --------------------- BAK Defaults ---------------------
-
-:root
-{
-    --ArchiveLinks: #9B8440;
-    --ArchiveLinksHover: #DABD73;
-}
-
-/* --------------------- BAK Defaults --------------------- */
-
 
 :root
 {
@@ -122,6 +113,13 @@ p .show-all,
     color: #000 !important;
     background: var(--ArchiveLinksHover) !important;
 }
+.btn-info:active,
+body.navia .searchbar .btn-gray:active
+{
+    filter: brightness(.6) !important;
+    transition: 0s !important
+}
+
 
 /*Links & Logos*/
 a,
@@ -175,7 +173,8 @@ body.top center.mt-big div.mt-big:hover .micro-label,
 
 
 /*Text*/
-label
+label,
+.BRtc .BRfloatBody
 {
     color: #999 !important;
 }
@@ -199,6 +198,11 @@ h4,
     transition: all 0.4s ease-in-out !important;
 }
 
+th,
+.BRtc .BRfloatHead
+{
+    color: #ccc !important;
+}
 
 /*Text with Background*/
 #maincontent,
@@ -216,6 +220,7 @@ h4,
 /*Text with background + Border*/
 /*html,*/
 body,
+#colorbox,
 #wrap,
 #wrapper,
 #metadata,
@@ -243,6 +248,15 @@ body.navia .navbar .dropdown-ia.hatted,
 {
     transition:.4s;
 }
+
+tbody,
+tr,
+td,
+h1.article-header
+{
+    background-color: #0000 !important;
+}
+
 
 body.navia .navbar #nav-search > div,
 pre,
@@ -294,6 +308,40 @@ body.ia-module #morf-paging,
     background: #eee;
     filter:invert(1);
 }
+
+/*Video and Audio Pre-load Grid*/
+#thumbnail-container,
+#jw-holder,
+.alert-info
+{
+    background-color: #111;
+}    
+    
+/*
+{
+    background:
+        linear-gradient(90deg, #111 0%, #0000 30%),
+        linear-gradient(180deg, #111 0%, #0000 70%),
+        linear-gradient(270deg, #111 0%, #0000 30%),
+        linear-gradient(360deg, #111 0%, #0000 70%);
+}
+*/
+
+/*Audio Spectrogram Color
+#jw-holder
+{
+    /*Vanilla:
+    background-color: rgb(221, 221, 221);
+    background-color: [insert_color_here] !important;
+}
+/*Audio Spectrogram Progress Color
+#waveformer
+{
+    /*Vanilla:
+    background-color: rgb(19, 160, 216);
+    background-color: [insert_color_here] !important;
+}*/
+
 
 /*Search suggestions*/
 .ui-menu .ui-menu-item-wrapper:hover
@@ -827,9 +875,6 @@ body.ia-module.tiles .item-ia.collection-ia:active .collection-stats
 
 
 .about-box,
-tbody,
-tr,
-td,
 .well,
 .white-box,
 .toolbar-wrap
@@ -882,6 +927,7 @@ ia-wayback-search:hover
 {
     filter: invert(0) Grayscale(0) brightness(.7) !important;
     transition:1s!important;
+    transition-delay:.2s!important;
 }
 #logoHome:active,
 .wayback-main:active,
@@ -1103,6 +1149,18 @@ a .view-navbar .selected-option,
     Background: #444 !important;
     Background-color: #444 !important;
     border-color: #444!important;
+}
+.btn-primary:active,
+.beta_button:active,
+.label-success:active,
+.btn-success:hover,
+.iconochive-download:active,
+.boxy-ttl.hover-badge:active,
+.item-download-options .show-all:active .hover-badge:active,
+.ui-menu .ui-menu-item-wrapper:active
+{
+    filter: brightness(.6);
+    transition: 0s !important;
 }
 
 

@@ -3,17 +3,40 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `The classic Brick-Hill Christmas theme in 2019!Made by rowbot on Brick-Hill.`
-@version        20201129.0.12
+@version        20201129.23.53
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
+@advanced dropdown bkgtype "Cards Type" {
+	1 "Simple*" <<<EOT /*no-background go brr*\/ EOT;
+2 "Detailed" <<<EOT background: url(https://i.imgur.com/4ss1lgm.png);
+    background-position: left;
+    background-blend-mode: overlay;  EOT;
+
+}
+@advanced dropdown bkgquote "Blockquote Background" {
+	3 "ON*" <<<EOT     border-radius: 0px 5px 5px 0px;
+    background-color: #DEE0E5; EOT;
+4 "OFF" <<<EOT /*blockquote is OFF, disgusting...*\/ EOT;
+
+}
+@advanced dropdown bkgsnow "Falling Snow" {
+	5 "ON*" <<<EOT     background-image: url("https://img1.picmix.com/output/stamp/normal/3/1/2/5/365213_759c6.gif"); EOT;
+6 "OFF" <<<EOT /* you now live in Equator!*\/ EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document domain("brick-hill.com") {
 body {
     color: #000;
     background-color: #71BAED;
-    background-image: url("https://img1.picmix.com/output/stamp/normal/3/1/2/5/365213_759c6.gif");
+/*[[bkgsnow]]*/
 }
 
+  /*this theme was made with love by rowbot :^) 
+     if you need to use it for some reason, please contact me and we can talk about it
+     you can edit this theme for yourself though*/
+  
 /* navBar */
 nav div.primary {
     background-color: #a81005;
@@ -57,8 +80,7 @@ nav .info {
 }
 
 .blockquote,blockquote {
-    border-radius: 0px 5px 5px 0px;
-    background-color: #DEE0E5;
+/*[[bkgquote]]*/
 }
 
 .blockquote.blue, blockquote.blue {
@@ -79,20 +101,8 @@ nav .info {
 }
 
 
-.pages .page.active {
+.pages .page.active, .pages.green .page.active, .pages.red .page.active, .pages.orange .page.active {
     color: #C51105;
-}
-
-.pages.green .page.active {
-    color: #c51105;
-}
-
-.pages.red .page.active {
-    color: #c51105;
-}
-
-.pages.orange .page.active {
-    color: #c51105;
 }
 
 .pages .page {
@@ -103,19 +113,7 @@ nav .info {
     background-color: #D9DBE2
 }
 
-.hover-card:hover {
-    background-color: #DEE0E5
-}
-
-.profile-card:hover {
-    background-color: #DEE0E5
-}
-
-.friend-card:hover {
-    background-color: #DEE0E5
-}
-
-.crate-types :hover {
+.hover-card:hover, .profile-card:hover, .friend-card:hover, .crate-types :hover  {
     background-color: #DEE0E5
 }
 
@@ -130,6 +128,7 @@ nav .info {
     background-color: #007D1F;
     border-bottom: 2px solid;
     border-color: #C51105;
+    /*[[bkgtype]]*/
 }
 
 .card .top:not(.absolute).blue {
@@ -207,7 +206,7 @@ button:not(.plain).orange, .button:not(.plain).orange {
 
 .input-group .input-button {
     border-left: 1px solid #007D1F;
-    color: #cbcbcb;
+    color: #ffffff;
     background-color: #009f28;
 }
 
@@ -230,20 +229,21 @@ button:not(.plain).orange, .button:not(.plain).orange {
     border: 1px solid #c1c4ce;
 }
 
-/*membership*/
+/*alerts*/
 
-.mint-gradient {
-    background-image: -webkit-gradient(linear,right top,left top,from(#e5f2f7),to(#fefefe));
-    background-image: linear-gradient(270deg,#e5f2f7,#0000);
+.alert.warning {
+    background-color: #ef9526;
+    border: 1px solid #d0780c;
 }
-
-.ace-gradient {
-    background-image: -webkit-gradient(linear,right top,left top,from(#fededb),to(#fefefe));
-    background-image: linear-gradient(270deg,#fededb,#fefefe00);
+  
+.alert.error {
+    background-color: #ef263d;
+    border: 1px solid #bd0e22;
 }
-
-.royal-gradient {
-    background-image: -webkit-gradient(linear,right top,left top,from(#fdf1d8),to(#fefefe));
-    background-image: linear-gradient(270deg,#fdf1d8,#fefefe00);
+  
+.alert.success {
+    background-color: #23d160;
+    border: 1px solid #07a03d;
 }
+  
 }
