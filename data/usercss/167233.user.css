@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cybernetic
 @description    `Extended Monopoly One StyleРасширенная тема для сайта Monopoly One`
-@version        2020116.12.14
+@version        20201130.16.51
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -113,6 +113,15 @@ div.block._nomarginbottom.profile-body-note{
 .profile-top-stat-actions-dropdown-list {
     background: var(--color-block-bg);
     color: var(--color-font); }
+/*MMR*/.GamesNewroom-modes-one._competitive._selected {
+    background: var(--color-sunflower-500); }
+/*Ретро*/.GamesNewroom-modes-one._retro._selected {
+    background: linear-gradient(45deg, var(--color-font) , var(--color-font-2)); }
+.games-disconnect-message:before {
+    content: none;}
+.games-disconnect-button>.button.button-grass {
+    color: var(--color2);
+    background-color: var(--color-grapefruit-600); }
 /* body_dark */
 body[theme=dark] .dropdown-list,
 body[theme=dark] .selecter-options {
@@ -130,6 +139,11 @@ body[theme=dark] .footer,
 body[theme=dark] .HeaderUser-menu, body[theme=dark] .VueHeaderSearch-block {
     background-color: var(--color-block-bg);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.8); }
+body[theme=dark] .VueGamesRoomsOne._game_mode_4 {
+    background-image: var(--color1); }
+body[theme=dark] .VueGamesRoomsOne._game_mode_4 ._time span {
+    background: var(--color4);
+    color: var(--color2); }
 
 /* buttons */
 body:not([theme]) .button.button-grass,
@@ -204,6 +218,16 @@ body[theme=dark] .selecter-options-value:not(._selected):hover {
 body[theme=dark] .profile-top-stat-actions-button:hover {
     background: var(--color9);
     color: var(--color2); }
+body[theme=dark] .VueGamesRooms #create-room.button-competitive {
+    --color-this-font: var(--color5); }
+.GamesNewroomMaxplayers>div>div._selected {
+    background: var(--color2); }
+body[theme=dark] .GamesNewroomMaxplayers>div>div._selected {
+    background: var(--color1);
+    color: var(--color5); }
+.games-disconnect-button>.button.button-grass {
+    color: var(--color2);
+    background-color: var(--color-grapefruit-600); }
 
 /* market_block */
 body[theme=dark] div.games-market-list-one {

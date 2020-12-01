@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ashalinda
 @description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
-@version        20201130.9.32
+@version        20201130.13.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown background "Background (Фоновая картинка)" {
@@ -20,6 +20,18 @@ library "Library (Библиотека)" <<<EOT https://www.eldarya.fr/assets/im
 	background-custom-dropdown "Custom" <<<EOT /*[[background-custom]]*\/ EOT;
 }
 @advanced text background-custom "Background (Фоновая картинка) (Custom)" "https://example.com/image.png"
+@advanced dropdown titles "Header colors (Цвета заголовков)" {
+	light "Light (Светлые)*" <<<EOT background: linear-gradient(0deg, rgb(199 143 212) 22%, rgb(176 176 191) 60%, rgb(121 202 218) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent ;
+color: transparent !important; EOT;
+dark "Dark (Темные)" <<<EOT color: #321540; EOT;
+violet "Violet" <<<EOT color: #ac26b1; EOT;
+magenta "Dark magenta" <<<EOT color: #a91aa9; EOT;
+yellow "Yellow" <<<EOT color: #f7cb2b; EOT;
+blue "Blue" <<<EOT color: #2185ec; EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk).*") {
@@ -36,12 +48,40 @@ library "Library (Библиотека)" <<<EOT https://www.eldarya.fr/assets/im
 .page-main-container {
     background-image: url(/*[[background]]*/) !important;
 }
+
+/* Цвет заголовков страниц */
+.episode-main-container .section-title, 
+.eggs-interface .section-title,
+.eggs-interface h2,
+.inventory-main-container .section-title,
+.inventory-main-container .section-subtitle,
+.player-main-container h1,
+.library-main-container .section-title,
+.library-main-container .section-subtitle,
+.library-main-container #library-npc-crush > div,
+.minigames-main-container .section-title,
+.mall-choice-container .section-title,
+#bank-page .section-title,
+#name-container h1,
+#name-container h2.section-title,
+#name-container h3,
+#name-container h4.gender{
+    line-height: 45px;
+
+    /*[[titles]]*/
+}
+
 /*меняет цвет основных кнопок*/
 .flavr-button, .nl-button,
 .maana-button, .purropass-button{
     background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%) !important;
-    box-shadow: inset 0 0 27px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36) !important;
+    box-shadow: inset 0 0 27px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36) !important; 
 }
+#library-npc-crush-change{
+    -webkit-text-fill-color: white !important;
+}
+
+
 #right-bg::before {
     /*убирает "волну"*/
     display: none;
@@ -140,6 +180,7 @@ li.main-menu-event a {
     padding: 5px 30px;
     font-size: 16px;
 }
+
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/player/wardrobe.*") {
@@ -462,6 +503,16 @@ a#go-eggs {
 .flavr-container.new-layout-popup .flavr-outer {
     max-width: 85%;
     min-width: 535px;
+}
+
+#name-container h2 {
+    margin-bottom: -10px;
+}
+.gender {
+    margin-top: -16px;
+}
+.eggs-interface h2 {
+    line-height: 20px !important;
 }
 }
 

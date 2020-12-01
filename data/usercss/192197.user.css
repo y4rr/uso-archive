@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Oscar TM
 @description    `Visually enhances the web player look of Spotify, while being very subtle and staying close to how it already is.These changes mostly include fade-in/out animations, adds a bit of color and uniforms the overall look.Please contact me on discord (Oscar#5067) if you have ideas of other visual tweaks I could add!`
-@version        2020117.23.52
+@version        2020121.0.45
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,16 +45,10 @@ div[role="row"][aria-selected="true"] > div[data-testid="tracklist-row"] {
     background-color: hsla(0,0%,100%,.24);
 }
 
-/* Keep liked songs button green unless hovered (below) */
-div[role="row"] > div[data-testid="tracklist-row"] > div:last-child > button[title="Remove from Your Library"] > svg {
-    color: #1db954;
-}
-
 /* Add green to various elements */
 li._0787ecf44d56591be72b1f2c0e2f2320-scss:hover > a > span, /* Library top sections */
 button.ff6a86a966a265b5a51cf8e30c6c52f4-scss:hover, /* Follow button */
 button[title="Save to Your Library"]:hover > svg, /* Like button */
-button.picture-in-picture-button:hover, /* PIP button */
 button[title="More"]:hover > svg /* More button */
 {
     color: #1ed760 !important;
@@ -78,10 +72,8 @@ button.picture-in-picture-button.control-button--active:focus {
     opacity: 0.85 !important;
 }
 
-/* Center like and log out buttons properly everywhere */
-button._8e566af0d3a8e6834c933615bbb634ba-scss, 
-button[title="Remove from Your Library"] > *,
-button[title="Save to Your Library"] > *
+/* Center log out button properly */
+button._8e566af0d3a8e6834c933615bbb634ba-scss
 {
     margin-top: 4px;
 }
@@ -90,8 +82,8 @@ button[title="Save to Your Library"] > *
 button.ff6a86a966a265b5a51cf8e30c6c52f4-scss._888a8dffe06d27b161f0258c2769069e-scss:hover, /* Unfollow button */
 a.standalone-ellipsis-one-line._9a78420cc4a863b2f413ce55e759a321-scss, /* Playlists */
 button.ff6a86a966a265b5a51cf8e30c6c52f4-scss:hover, /* Follow button */
-ul._60cb742e518d084c3c959007b9463b51-scss > li > button, /* ??? */
-ul._60cb742e518d084c3c959007b9463b51-scss > li > a /* ??? */
+ul._60cb742e518d084c3c959007b9463b51-scss > li > button, /* Log out button */
+ul._60cb742e518d084c3c959007b9463b51-scss > li > a /* Account & Profile buttons */
 {
     cursor: pointer;
 }
@@ -153,5 +145,15 @@ a[href="/browse/newreleases"] {
     font-weight: 500;
     font-size: 14px;
     color: white;
+}
+
+/* Better looking album art shadows */
+._4c838ef3d2b6da1a61669046bbfae3d1-scss {
+    box-shadow: 0 4px 40px rgb(0 0 0 / 25%);
+}
+
+/* Fix stupidugly gradient transition headers (playlists, artists, albums, etc.) */
+div.main-view-container__scroll-node-child > section > div:first-child > div:first-child {
+    opacity: 0.8;
 }
 }

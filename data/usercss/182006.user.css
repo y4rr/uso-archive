@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
-@version        20201129.3.40
+@version        20201130.18.23
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color mainColor "Accent color" #FD9777
@@ -14,7 +14,6 @@
 /* ignore the error icon below if using the Stylish code editor*/
 :root .dark, :root {
   --mainColor: /*[[mainColor]]*/;
-  --mainColor: #fd9777;
   
   /* color-scheme */
   --superLightGray: #9e9e9e;
@@ -380,7 +379,8 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 .message-out ._159mM ._2JswF,
 .message-out ._159mM ._2zab4,
 .message-in ._159mM ._2JswF,
-.message-in ._159mM ._2zab4 {
+.message-in ._159mM ._2zab4,
+.ItuW3 {
   background-color: var(--darkGray) !important;
 }
 ._3pkkz,
@@ -639,7 +639,8 @@ html[dir="ltr"] ._1F9Ap,
 ._17JJa,
 ._2S-RK, 
 ._3wdcN, 
-._WnqL._3JHdl {
+._WnqL._3JHdl,
+._3RFYA {
   background-color: var(--darkerGray) !important;
   color: var(--mainColor) !important;
 }
@@ -709,14 +710,14 @@ header span._1wjpf._3NFp9._3FXB1,
 ._2a1zO,
 .CWVX1 ._1VzZY,
 .color-1 ._1VzZY,
-._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g),
 ._2op5b,
 ._3npkZ ._1VzZY,
 ._1WmI4,
 ._3Tk1z,
 ._1WyfI ._1VzZY,
 ._1VzZY a,
-._2K5wo ._1VzZY {
+._2K5wo ._1VzZY,
+._1XH7x ._1VzZY {
   color: var(--mainColor) !important;
 }
 
@@ -920,13 +921,16 @@ span[data-icon="ptt-in-gray"] svg path:first-child {
 }
 
 span[title="typing…"],
-._2a1Yw {
-  color: var(--mainColor) !important;
+._2a1Yw
+
+/*========= group chat names =========*/
+/*========= group chat names =========*/
+
+
+._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g), ._3MjzD ._1XH7x[dir="auto"]:not(._1hI5g) + span, span[title="typing…"],
+._2a1Yw, span._2NMQ2._1hI5g._1VzZY {
+  color: white !important;
 }
-
-/*========= group chat names =========*/
-/*========= group chat names =========*/
-
 .zGvn8 span {
   color: inherit !important;
 }

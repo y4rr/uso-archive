@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devin Doucette
 @description    `A dark theme for Helix (Perforce) Swarm. Tested on Swarm 2019.3.`
-@version        2020119.22.14
+@version        20201130.15.42
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -107,7 +107,7 @@ textarea:required:invalid
 .table th,
 .table td
 {
-    border-color: var(--swarm-foreground-low);
+    border-color: var(--swarm-foreground-min);
 }
 
 .table th
@@ -616,15 +616,23 @@ div[class*='toolbar'] .btn:hover,
     background-color: var(--swarm-foreground-min);
 }
 
-.projects-sidebar tbody
+#notificationTable tr.level1,
+#settingsTable tr.toprow,
+#groupNotificationSettingPanel tbody th
 {
-    background-color: var(--swarm-foreground-min);
+    border-color: var(--swarm-foreground-low);
 }
 
+#notifications .preferencesBox,
 #settings .preferencesBox
 {
     background-color: var(--swarm-primary-background);
     border-color: var(--swarm-foreground-low);
+}
+
+.projects-sidebar tbody
+{
+    background-color: var(--swarm-foreground-min);
 }
 
 

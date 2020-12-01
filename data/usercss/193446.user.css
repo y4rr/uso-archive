@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         InsanityDevice
 @description    `Enhancements to dark mode and various "fixes".My theme doesn't mess with the light theme's colors, so you have to enable dark mode at the bottom of the page to make full use of it.`
-@version        20201130.2.17
+@version        20201130.17.7
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -43,7 +43,7 @@
     --time-new-badge-color: #fff;
     --class-badge-front-color: #b4b4b4;
     --class-time-new-badge-background-color: #7289da;
-    --alert-color: #25252e;
+    --alert-color: #262632;
     --alert-border-color: #33333c;
     --kbd-box-shadow-color: rgba(0, 0, 0, 0.25);
     --forms-input-textarea-background-color: rgba(0, 0, 0, 0);
@@ -62,9 +62,19 @@
     opacity: 1;
 }
 
-[data-theme="dark"] .site-description, [data-theme="dark"] button, [data-theme="dark"] input[type="button"], 
-[data-theme="dark"] input[type="reset"], [data-theme="dark"] input[type="submit"], [data-theme="dark"] #latest-load-more span {
+[data-theme="dark"] .site-description {
     color: var(--main-color);
+}
+
+[data-theme="dark"] button, [data-theme="dark"] input[type="button"], [data-theme="dark"] input[type="reset"], 
+[data-theme="dark"] input[type="submit"], [data-theme="dark"] #latest-load-more span {
+    color: var(--main-color);
+}
+
+[data-theme="dark"] input[type="text"], [data-theme="dark"] input[type="number"], [data-theme="dark"] input[type="email"], 
+[data-theme="dark"] input[type="url"], [data-theme="dark"] input[type="password"], [data-theme="dark"] input[type="search"], 
+[data-theme="dark"] select, [data-theme="dark"] textarea {
+    border: none;
 }
 
 ::placeholder {

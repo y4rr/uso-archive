@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201130.10.32
+@version        2020121.0.33
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -107,9 +107,29 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
 @-moz-document url-prefix("https://duelingnexus.com/game/") {
   @font-face {
     font-family: "Source Sans Pro";
-    src: url("https://raw.githubusercontent.com/sefeiba/duelingnexus/master/SourceSansPro-Regular.ttf")
-      format("truetype");
-    font-style: normal;
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+  
+ @font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
+    font-weight: 900;
     text-rendering: optimizeLegibility;
   }
 
@@ -209,17 +229,37 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
   }
 
   .game-selection-card {
-    width: 6vw;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    margin-left: 0px;
+  }
+
+  #game-selection-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7vw, 1fr));
   }
 
   .game-field-zone-content {
     height: 96% !important;
   }
+  
+  .game-field-zone-content p,
+  #game-player-name,
+  #game-opponent-name,
+  .game-avatar-area,
+  #card-if-monster,
+  #card-if-spell {
+    font-weight: 600;
+  }
+
+  #card-id {
+    margin: 0px 0px 0px 0px;
+  }
 
   #game-option-list {
     display: grid;
+    /*
     grid-template-columns: repeat(2, 1fr);
+    */
   }
 
   #game-option-list > button:nth-child(n) {
@@ -320,6 +360,7 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
   }
   #card-name {
     padding: 0px 0px 0px 0px;
+    font-weight: 600;
   }
   #card-column {
     background-color: rgba(0, 0, 0, 0.8);
@@ -783,6 +824,7 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
 
   .engine-button {
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
     border: 1px solid rgba(187, 225, 250, 0.7);
     background-color: rgb(10, 10, 10, 0.5);
     transition: 0.2s;
@@ -797,8 +839,12 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
   #game-yesno-yes-button,
   #game-yesno-no-button {
     border-radius: 10px;
-    width: 40%;
-    margin: 4px;
+    margin: 6px;
+  }
+
+  #game-yesno-window > p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #options-reset-button,
@@ -1256,9 +1302,29 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
 @-moz-document url-prefix("https://duelingnexus.com/editor/") {
   @font-face {
     font-family: "Source Sans Pro";
-    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__5d_s___city_square_bg_by_maxiuchiha22_dd6elm6.jpg")
-      format("truetype");
-    font-style: normal;
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+  
+ @font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
+    font-weight: 900;
     text-rendering: optimizeLegibility;
   }
 

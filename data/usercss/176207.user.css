@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         lastuser
 @description    `Alternative dark style for the forum CryptoTalk.P.S.: For the forum skin: "Main (Default)".`
-@version        2020108.9.31
+@version        20201130.15.43
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -104,6 +104,10 @@ ipsBox:not(.ipsBox_transparent):not(.ipsModerated), .ipsBox, .ipsPageHeader, .fo
 
 .ipsType_light {
     color: var(--text-color-lv2);
+}
+
+.ipsTruncate_line {
+	color: var(--text-color-lv2);
 }
 
 .ipsButtonBar .ipsPagination .ipsPagination_page.ipsPagination_active a, .ipsButtonBar .ipsButtonRow li > a.ipsButtonRow_active, .ipsButtonBar .ipsButtonRow li > button.ipsButtonRow_active {

@@ -2,8 +2,8 @@
 @name           old reddit dark mode
 @namespace      USO Archive
 @author         tanko
-@description    `simple, quick & rough dark mode for old reddit`
-@version        20201130.11.22
+@description    `simple dark mode for old reddit`
+@version        20201130.20.23
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -60,7 +60,7 @@
 	.md pre > :last-child,
 	.md blockquote > :last-child,
 	.md table > :last-child,
-	.md p > :last-child,
+	.md p > :not(a):last-child,
 	.md ul > :last-child,
 	.md ol > :last-child,
 	.roundfield,
@@ -69,6 +69,12 @@
 	.message.new > .entry,
 	.usertext.border .usertext-body,
 	.crosspost-preview,
+	.new-comment .md :not(pre) > code,
+	.link .md :not(pre) > code,
+	.usertext.border .md :not(pre) > code,
+	.new-comment .md pre,
+	.link .md pre,
+	.usertext.border .md pre,
 	#header {
 		background-color: var(--bg);
 		color: var(--txt);
@@ -77,8 +83,7 @@
 	.tabmenu li a {
 		background-color: var(--bg-light);
 	}
-
-	.thing.link.promoted.odd.locked.promotedlink.promotedlink,
+	.thing.link.promoted.promotedlink,
 	.nub {
 		display: none;
 	}
@@ -96,6 +101,11 @@
 		margin: auto;
 		background-color: black;
 		opacity: .5;
+	}
+	.default-header#header-img {
+	    background-image: url(https://bit.ly/2VgdFpT);
+	    background-position: center;
+	    background-size: 95%;
 	}
 	.thing .title {
 		color: var(--link);

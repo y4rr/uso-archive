@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         krravvi
 @description    `easy redesign sites:grouple.coreadmanga.livemintmanga.livefindanime.netdoramatv.livelibrebook.meselfmanga.ruselflib.memose.live`
-@version        20201023.23.37
+@version        20201130.20.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("grouple.co"), domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.ru"), domain("selflib.me"), domain("mose.live") {
+@-moz-document domain("grouple.co"), domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.live"), domain("selflib.me"), domain("mose.live") {
 /* grouple all sites light theme v.2.0 by krravvi */
 
 /* ============ NONE ============ */
@@ -874,7 +874,6 @@ span.social-likes__button.social-likes__button_pinterest {
 /*============ FORM: FORM CONTROL ============ */
 
 .form-control {
-    z-index: auto !important;
     height: 30px !important;
     box-shadow: none !important;
     font-size: 12px !important;
@@ -1643,10 +1642,15 @@ div.subject-meta.col-sm-7 > h4 {
 
 .manga-description, .manga-description *,
 .manga-description p, .manga-description span {
-	font-family: "Calibri" !important;
-	font-size: 16px !important;
-	color: #595959 !important;
-    text-align: justify;}
+    background: none;
+    text-transform: none !important;
+    font-family: "Calibri" !important;
+    font-size: 16px !important;
+    color: #595959 !important;
+    text-align: left !important;
+    border: none !important;
+    font-weight: normal;
+    padding: 0;}
 
 /*============ DESCRIPTION: VIDEO INFO ============ */
 
@@ -1920,7 +1924,7 @@ div.rightBlock.icon-link > a > i {
 
 div.rightBlock.icon-link > a > i.fa.fa-lg.fa-fw.text-success.fa-file-alt,
 div.rightBlock.icon-link > a > i.fa.fa-lg.fa-fw.fa-exclamation-circle.text-danger {
-    margin: 15px 5px 2px 5px;}
+    margin: 2px 5px;}
 
 i.far.fa-birthday-cake.text-danger,
 i.fa.fa-cogs.fa-lg.text-success.bookmark-menu {
@@ -2111,7 +2115,7 @@ i.fa-chart-bar:before {
     display: none !important;}
 }
 
-@-moz-document domain("grouple.co"), domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.ru"), domain("selflib.me"), domain("mose.live") {
+@-moz-document domain("grouple.co"), domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.live"), domain("selflib.me"), domain("mose.live") {
 /*============ OTHER: COLOR TEXT ============ */
 
 .text-default {color: #7BD6C7;}
@@ -2955,7 +2959,7 @@ span.js-link.exclude:before {
     vertical-align: -1px;}
 }
 
-@-moz-document domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.ru"), domain("selflib.me"), domain("mose.live") {
+@-moz-document domain("readmanga.live"), domain("mintmanga.live"), domain("doramatv.live"), domain("librebook.me"), domain("findanime.net"), domain("selfmanga.live"), domain("selflib.me"), domain("mose.live") {
 /*============ SUB SITES ============ */
 
 .rightContent {
@@ -3237,8 +3241,8 @@ div.rightContent > div > ul > li > a {
 .navbar-brand:hover {opacity: 1 !important;}
 }
 
-@-moz-document domain("selfmanga.ru") {
-/*============ LOGO selfmanga.ru ============*/
+@-moz-document domain("selfmanga.live") {
+/*============ LOGO selfmanga.live ============*/
 
 @media (min-width: 300px) {
 .navbar-brand > img {display: none;}
