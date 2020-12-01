@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netsteemit.comvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201130.11.37
+@version        2020121.6.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -59,6 +59,12 @@ RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:2s;
+}
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+{
+    background:none!important;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
 } EOT;
 
 }
@@ -723,11 +729,6 @@ RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [
 {
     filter:brightness(1);
     transition:.2s!important;
-}
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
-{
-    filter:brightness(1);
 } EOT;
 
 }

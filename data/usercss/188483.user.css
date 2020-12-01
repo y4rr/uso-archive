@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201118.5.53
+@version        2020121.8.37
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v5.0*/
+/* Dark Creator Studio v6.0*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -535,7 +535,7 @@ ytcp-icon-button.ytcp-quick-actions{ /*Quick action position*/
 .card, ytcp-entity-card{
 	background-color: var(--bg2-color) !important;
 	border-radius: 5px;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color) !important;
 	transition: .1s;
 }
 
@@ -1202,6 +1202,92 @@ ytcp-bulk-actions-collapsible-editor{
     background-color: var(--bg3-color);
 }
 
+/*Content Tab - Posts*/
+
+ytcp-post-filter{
+    background-color: var(--bg2-color);
+}
+
+#row-container.ytcp-post-row, #row-container.ytcp-post-row .floating-column.ytcp-post-row{
+    background-color: var(--bg2-color);
+}
+
+.tablecell-post.cell-body.ytcp-post-row .post-context-text.ytcp-post-row, .tablecell-type.cell-body.ytcp-post-row .post-type-name.ytcp-post-row, ytcp-metadata-visibility[icon-text-only] #text-container.ytcp-metadata-visibility, .style-scope.ytcp-post-row, .no-content-header.ytcp-post-section-content, .post-metadata-container.ytcp-post-metadata-editor .value.ytcp-post-metadata-editor, #text-container.ytcp-metadata-visibility, .icon-and-type.ytcp-post-metadata-editor .post-type-name.ytcp-post-metadata-editor, .vote-count-label.ytcp-post-metadata-editor{
+    color: var(--text-color);
+}
+
+.tablecell-date.cell-body.ytcp-post-row .date-description.ytcp-post-row, .post-metadata-container.ytcp-post-metadata-editor .label.ytcp-post-metadata-editor, #label.ytcp-metadata-visibility, .attachment-label.ytcp-post-metadata-editor{
+    color: var(--text-darken2-color);
+}
+
+.style-scope.iron-icon [d="M16.6 10.8V8h-1.2v2.8H13v1.4h2.4V15h1.2v-2.8H19v-1.4h-2.4M14 1.07c0-.6-.43-1.07-.96-1.07H.96C.43 0 0 .48 0 1.07v9.86c0 .6.43 1.07.96 1.07h10.86V9.57H14v-8.5zM.85 9.12h1.43v1.6H.85v-1.6zm0-2.6h1.43V8.1H.85V6.5zm0-2.62h1.43v1.6H.85V3.9zm0-2.6h1.43v1.6H.85V1.3zm10.97 5.2h1.42v1.6h-1.42V6.5zm0-2.6h1.42v1.6h-1.42V3.9zm0-2.6h1.42v1.6h-1.42V1.3z"]{
+    fill: var(--item-active-color) !important;
+}
+
+.style-scope.iron-icon [d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"]{
+    fill: var(--item-active-color) !important;
+}
+
+.style-scope.iron-icon [d="M21 19V5C21 3.9 20.1 3 19 3L5 3C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19ZM7 9V7L14 7V9H7ZM7 13V11H17V13H7ZM7 17V15H11V17H7Z"]{
+    fill: var(--item-active-color) !important;
+    fill-opacity: 1;
+}
+
+ytcp-post-thumbnail{
+    background-color: var(--item-color);
+}
+
+iron-icon.ytcp-post-thumbnail{
+    color: var(--accent-color);
+}
+
+#row-container.row-highlighted.ytcp-post-row, #row-container.row-highlighted.ytcp-post-row .floating-column.ytcp-post-row{
+    background-color: var(--bg3-color);
+    transition: .09s;
+}
+
+.post-metadata-container-wrapper.ytcp-post-metadata-editor, .post-attachment-container.ytcp-post-metadata-editor, ytcp-form-input-container.disabled #outer.ytcp-form-input-container, ytcp-form-input-container.disabled #outer.ytcp-form-input-container:hover, ytcp-metadata-visibility.ytcp-post-metadata-editor{
+    border: 1px solid var(--border-color);
+}
+
+.subheading-row-text.style-scope.ytcp-video-section-content{
+    color: var(--text-color);
+}
+
+ytcp-post-poll-attachment[full-size] .option-container.ytcp-post-poll-attachment{
+    background-color: var(--bg2-color);
+}
+
+ytcp-post-poll-attachment[full-size] .vote-percent-bar.ytcp-post-poll-attachment{
+    background-color: #e02222;
+}
+
+/*Playlists*/
+#new-playlist-button.style-scope.ytcp-app{
+    color: var(--accent-color);
+}
+
+ytcp-playlist-filter{
+    background-color: var(--bg2-color);
+}
+      
+.playlist-title.ytcp-playlist-row, .visibility-label.ytcp-playlist-row, .videos-count-cell.ytcp-playlist-row, .last-time-updated-cell.ytcp-playlist-row{
+    color: var(--text-color);
+}
+
+#create-button.style-scope.ytcp-playlist-creation-dialog{
+    color: var(--accent-color);
+}
+
+paper-dialog.ytcp-dialog > *.ytcp-dialog, paper-dialog.ytcp-dialog > *.ytcp-dialog:first-child, paper-dialog.ytcp-dialog > *.ytcp-dialog:last-child{
+    border: 1px solid var(--border-color);
+}
+
+#row-container.row-highlighted.ytcp-playlist-row{
+    background-color: var(--bg3-color);
+    transition: .09s;
+}
+
 /*Subtitles*/
 
 #row-container.ytgn-video-row.row-highlighted, #row-container.ytgn-video-row.row-highlighted .floating-column.ytgn-video-row{
@@ -1567,6 +1653,12 @@ ytve-timeline-horizontal-scrollbar.track{
 #unavailable-video-placeholder.ytcr-history-complaint-row{
     background-color: var(--item-color);
 }
+
+#row-container.row-highlighted.ytcr-history-complaint-row, #row-container.row-highlighted.ytcc-archive-row{
+    background-color: var(--bg3-color);
+    transition: .09s;
+}
+    
 
 /*Channel Monetisation (Not eligible)*/
 #notify-eligibility-button.style-scope.ytpp-signup-overview{
@@ -3863,10 +3955,6 @@ h1{
 
 .second-row.ytcc-discovered-reuploads-row, .section-subtext.ytcr-takedown-webform{
     color: var(--text-darken-color);
-}
-
-#row-container.row-highlighted.ytcc-discovered-reuploads-row ytcp-hover-anchor.ytcc-discovered-reuploads-row, .learn-more-link.ytcr-takedown-webform, #row-container.row-highlighted .text.ytcp-hover-anchor{
-    color: var(--accent-color);
 }
 
 ytcp-icon-button#takedown-button iron-icon svg g polygon{

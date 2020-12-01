@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        2020121.0.33
+@version        2020121.10.57
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -100,6 +100,644 @@ sbg40 "Background P4 10" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/
 @advanced dropdown animation_hot_fix "Browser" {
 	chr_ome "Any Chromium based browser, basically all browsers.*" <<<EOT animation-name: game-selectable-border; EOT;
 fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-border-firefox; EOT;
+
+}
+@advanced dropdown deck_editor-toggle "Deck editor theme" {
+	DE-enable "Enable*" <<<EOT @-moz-document url-prefix("https://duelingnexus.com/editor/") {
+  @font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+  
+ @font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
+    font-weight: 900;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+    color: #f0f0f0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+  }
+
+  html {
+    background: url("/*[[sitebackground]]*\/") no-repeat center center fixed;
+    background-size: cover;
+
+    /*
+        background-position: 2.5% 50%;
+        background-size: 120%;
+        *\/
+  }
+
+  *:focus {outline: none;}
+
+  @keyframes game-card-hover {
+    from {
+      outline-color: #f4eeff;
+      opacity: 1;
+      /*
+            filter: brightness(80%);
+            -webkit-filter: brightness(80%);
+            *\/
+      box-shadow: 0 0 0.23vw 0.23vw #f4eeff;
+    }
+    50% {
+      outline-color: #bbe1fa;
+      opacity: 1;
+      /*
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            *\/
+      box-shadow: 0 0 0.23vw 0.23vw #bbe1fa;
+    }
+    to {
+      outline-color: #e0fffb;
+      opacity: 1;
+      /*
+            filter: brightness(120%);
+            -webkit-filter: brightness(120%);
+            *\/
+      box-shadow: 0 0 0.23vw 0.23vw #e0fffb;
+    }
+  }
+
+  #editor-search-column {
+    padding-top: 0px !important;
+    float: right;
+    width: 25%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 17px;
+    min-height: calc(100vh - 5vh - 24px);
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 16px 16px 16px 16px;
+    height: 100vh;
+    max-height: 100vh;
+    border-bottom-style: solid;
+    backdrop-filter: blur(7px);
+    border-left: 1px solid rgba(187, 225, 250, 0.6);
+    border-bottom-width: 0px;
+  }
+  
+  #editor-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #editor-menu-container {
+    margin-bottom: 0px;
+    border: 0px;
+    box-shadow: 0 0 3px 0px black;
+    z-index: 1000;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: rgba(50, 50, 50, 1);
+    border-color: transparent;
+    border-bottom: 1px solid rgba(187, 225, 250, 0.6);
+    height: auto;
+  }
+
+  #editor-menu-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: right;
+    padding: 12px 0px 12px 0px;
+  }
+
+  #editor-menu-title:nth-child(1) {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    position: absolute;
+    margin-top: 7px;
+  }
+
+  #editor-menu-title:nth-child(2) {
+    display: none;
+  }
+
+  #editor-menu-title:nth-child(3) {
+    display: none;
+  }
+
+  #editor-menu-spacer {
+    width: 0;
+  }
+
+  #editor-sort-button,
+  #editor-shuffle-button,
+  #rs-ext-editor-export-button,
+  #rs-ext-show-help {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(10, 10, 10, 0.5);
+  }
+
+  #editor-sort-button:hover,
+  #editor-shuffle-button:hover,
+  #rs-ext-editor-export-button:hover,
+  #rs-ext-show-help:hover {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(50, 50, 50, 0.7);
+  }
+
+  #editor-save-button {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(5, 102, 116, 0.5);
+  }
+
+  #editor-save-button:hover {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(5, 102, 116, 0.7);
+  }
+
+  #editor-clear-button {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(130, 23, 82, 0.5);
+  }
+
+  #editor-clear-button:hover {
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 5vh;
+    margin-right: 16px;
+    width: 8vw;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background-color: rgba(130, 23, 82, 0.7);
+  }
+
+  #editor-save-button:disabled,
+  #editor-clear-button:disabled,
+  #editor-sort-button:disabled,
+  #editor-shuffle-button:disabled,
+  #rs-ext-editor-export-button:disabled,
+  #rs-ext-show-help:disabled {
+    height: 100%;
+    margin-right: 16px;
+    width: 8vw;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    background-color: rgb(10, 10, 10, 0.5);
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+  }
+
+  #editor-select-cardpool,
+  #rs-ext-banlist {
+    margin-right: 16px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/e8d1666b6b28b47628be9b8d801073809d610eeb/arrow_drop_down_white_192x192.png)
+      94% / 10% no-repeat #f0f0f0;
+    
+    height: 5vh !important;
+    width: 14vw;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    background-color: rgba(10, 10, 10, 0.5);
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    border-radius: 10px;
+  }
+
+  #editor-select-cardpool:hover,
+  #rs-ext-banlist:hover {
+    margin-right: 16px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/e8d1666b6b28b47628be9b8d801073809d610eeb/arrow_drop_down_white_192x192.png)
+      94% / 10% no-repeat #b2bec3;
+    
+    height: 5vh !important;
+    width: 14vw;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 1px solid rgba(187, 225, 250, 0.7);
+    background-color: rgba(50, 50, 50, 0.7);
+    transition: 0.2s;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    border-radius: 10px;
+  }
+
+  #editor-menu-spacer-small {
+    width: 0;
+    display: none;
+  }
+
+  #card-description-box {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid;
+    padding: 4px;
+  }
+
+  #card-name.engine-dark-box {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #card-name {
+    padding: 0px 0px 0px 0px;
+  }
+
+  #card-column {
+    min-height: 100vh;
+    padding: 16px 16px 16px 16px;
+    height: 100vh;
+    max-height: calc(100vh - 70px);
+    border-bottom-style: solid;
+    border-bottom-width: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: transparent;
+    backdrop-filter: blur(7px);
+    border-right: 1px solid rgba(187, 225, 250, 0.6);
+  }
+
+  #editor-deck-main-title,
+  #editor-search-title {
+    background: transparent;
+    padding-top: 16px;
+  }
+
+  #rs-ext-navigation {
+    background: transparent !important;
+  }
+
+  #editor-deck-extra-title,
+  #editor-deck-side-title {
+    background: transparent;
+    padding-top: 4px;
+  }
+
+  .editor-card-small {
+    width: 10%;
+    max-width: 177px;
+    cursor: pointer;
+  }
+  .editor-card-small:hover {
+    outline: 0.1vw solid rgba(0, 0, 0, 0);
+    animation-name: game-card-hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    cursor: pointer;
+    filter: none;
+  }
+
+  #editor-decks-column {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 5vh - 24px);
+    overflow-y: auto;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0 10px 0 10px;
+  }
+
+  #editor-main-deck {
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 14px;
+    padding: 3px;
+    box-shadow: black 0px 0px 8px 0px;
+    border-radius: 3px;
+    border: 0px solid;
+    background-color: rgb(255, 255, 255, 0.5);
+    height: auto !important;
+  }
+
+  #editor-extra-deck {
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 14px;
+    box-shadow: black 0px 0px 8px 0px;
+    border: 0px solid;
+    border-radius: 3px;
+    padding: 3px 0px 3px 3px;
+    background-color: rgb(255, 255, 255, 0.5);
+    height: auto !important;
+  }
+
+  #editor-side-deck {
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 14px;
+    box-shadow: black 0px 0px 8px 0px;
+    border: 0px solid;
+    border-radius: 3px;
+    padding: 3px 0px 1px 3px;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin-bottom: 14px;
+  }
+
+  #card-picture {
+    box-shadow: black 0px 0px 8px 0px;
+    border-radius: 3px;
+    max-width: /*[[crdpctrsz]]*\/;
+  }
+
+  #editor-search-box {
+    text-align: center;
+  }
+
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-box
+    div,
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-box
+    div
+    table {
+    background: transparent !important;
+    text-align: center;
+  }
+
+  #rs-ext-monster-toggle,
+  #rs-ext-spell-toggle,
+  #rs-ext-trap-toggle,
+  #rs-ext-sort-toggle,
+  #rs-ext-clear-filter {
+    background-color: transparent;
+    border: 0px solid #2d3436;
+    height: 100%;
+    color: #f0f0f0;
+  }
+
+  #rs-ext-add-random-card {
+    background-color: transparent;
+    border: 0px solid #2d3436;
+    color: #f0f0f0;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #rs-ext-navigate-left {
+    text-align: center;
+
+    border-radius: 5px;
+    border: 0px solid;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 2px 0px white, 0 0 1px 0px white;
+    padding-bottom: 4px;
+    padding-right: 9px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+  #rs-ext-navigate-right {
+    text-align: center;
+
+    border-radius: 5px;
+    border: 0px solid;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 2px 0px white, 0 0 1px 0px white;
+    padding-bottom: 4px;
+    padding-right: 9px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+  #editor-search-text,
+  #editor-search-effect {
+    margin-top: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid rgba(187, 225, 250, 0.6);
+    background-color: rgba(10, 10, 10, 0.5);
+    transition: 0.2s;
+  }
+
+  #editor-search-text:hover,
+  #editor-search-effect:hover {
+    margin-top: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid rgba(187, 225, 250, 0.6);
+    background-color: rgba(50, 50, 50, 0.7);
+  }
+
+  #editor-search-results {
+    margin-top: 24px;
+    background: transparent;
+  }
+
+  #editor-search-results > div:nth-child(n) {
+    border: 1px solid rgba(187, 225, 250, 0.7) !important;
+    border-radius: 10px;
+
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background: rgba(10, 10, 10, 0.5);
+  }
+
+  #editor-search-results > div:nth-child(n):hover {
+    border: 1px solid rgba(187, 225, 250, 0.7) !important;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
+    background: rgba(50, 50, 50, 0.7);
+  }
+
+  #editor-search-results > div:nth-child(n) > .editor-search-description {
+     margin: auto;
+     padding: 12px;
+     font-size: 14px !important;
+  }
+
+  #editor-search-results > div:nth-child(n) > .editor-search-description > .template-name {
+     font-weight: bold;
+  }
+
+#editor-search-results > div:nth-child(n) > .template-picture {
+     width: 20%;
+     border-radius: 10px 1px 1px 10px;
+  }
+
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-results.engine-dark-box
+    div.editor-search-result,
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-results.engine-dark-box
+    table.rs-ext-card-entry-table
+    tr
+    td.rs-ext-table-button {
+    border: 0px solid transparent;
+    margin-bottom: 10px;
+    padding-top: 0px;
+  }
+
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-results.engine-dark-box
+    div.editor-search-result
+    p.editor-search-description {
+    padding-left: 10px;
+  }
+
+  #editor-search-box
+    > div:nth-child(2)
+    > table:nth-child(1)
+    > tr:nth-child(1)
+    > td:nth-child(1)
+    > span:nth-child(1) {
+    display: none;
+  }
+
+  #editor-search-box
+    > div:nth-child(2)
+    > table:nth-child(1)
+    > tr:nth-child(1)
+    > td:nth-child(2) {
+    width: 100%;
+  }
+
+  html
+    body
+    div#editor-container
+    div#editor-search-column
+    div#editor-search-box
+    div#rs-ext-advanced-search-bar
+    div#rs-ext-advanced-pop-outs
+    div#rs-ext-monster.rs-ext-shrinkable.rs-ext-activated
+    table#rs-ext-link-arrows.rs-ext-left-float.rs-ext-table
+    tbody
+    tr
+    td
+    button.rs-ext-toggle-button {
+    border: 0px solid;
+    border-radius: 3px;
+
+  }
+
+  #rs-ext-monster-category,
+  #rs-ext-monster-ability,
+  #rs-ext-monster-type,
+  #rs-ext-monster-attribute,
+  #rs-ext-spell-type,
+  #rs-ext-trap-type {
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #212121;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0px solid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/a31386cbd0f9ecf566e497f767b22c8d88a2b639/icons8-sort-down-26_2.png)
+      94% / 6% no-repeat #f0f0f0;
+    width: 80%;
+
+  }
+
+  #rs-ext-def,
+  #rs-ext-atk,
+  #rs-ext-scale,
+  #rs-ext-level,
+  #rs-ext-monster-limit,
+  #rs-ext-spell-limit,
+  #rs-ext-trap-limit {
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #2d3436;
+    border-radius: 3px;
+    border: 0px solid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 79%;
+
+  }
+
+  #rs-ext-spacer-right,
+  #rs-ext-spacer-left {
+    display: none;
+  }	
+} EOT;
+DE-disable "Disable" <<<EOT  EOT;
 
 }
 
@@ -235,7 +873,7 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
 
   #game-selection-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
   }
 
   .game-field-zone-content {
@@ -1299,637 +1937,4 @@ fire_fox "Firefox (animation lag fix)" <<<EOT animation-name: game-selectable-bo
   /*personal stuff that you can remove*/
 }
 
-@-moz-document url-prefix("https://duelingnexus.com/editor/") {
-  @font-face {
-    font-family: "Source Sans Pro";
-    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-  }
-  
- @font-face {
-    font-family: "Source Sans Pro";
-    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
-  }
-
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Bold.ttf") format("truetype");
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-  }
-
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url("https://rawcdn.githack.com/sefeiba/duelingnexus/c46f2a745dbf849dff5bccbebb792e5d63fcd60d/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
-    font-weight: 900;
-    text-rendering: optimizeLegibility;
-  }
-
-  body {
-    margin: 0;
-    overflow: hidden;
-    color: #f0f0f0;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 14px;
-  }
-
-  html {
-    background: url("/*[[sitebackground]]*/") no-repeat center center fixed;
-    background-size: cover;
-
-    /*
-        background-position: 2.5% 50%;
-        background-size: 120%;
-        */
-  }
-
-  *:focus {outline: none;}
-
-  @keyframes game-card-hover {
-    from {
-      outline-color: #f4eeff;
-      opacity: 1;
-      /*
-            filter: brightness(80%);
-            -webkit-filter: brightness(80%);
-            */
-      box-shadow: 0 0 0.23vw 0.23vw #f4eeff;
-    }
-    50% {
-      outline-color: #bbe1fa;
-      opacity: 1;
-      /*
-            filter: brightness(120%);
-            -webkit-filter: brightness(120%);
-            */
-      box-shadow: 0 0 0.23vw 0.23vw #bbe1fa;
-    }
-    to {
-      outline-color: #e0fffb;
-      opacity: 1;
-      /*
-            filter: brightness(120%);
-            -webkit-filter: brightness(120%);
-            */
-      box-shadow: 0 0 0.23vw 0.23vw #e0fffb;
-    }
-  }
-
-  #editor-search-column {
-    padding-top: 0px !important;
-    float: right;
-    width: 25%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding-right: 17px;
-    min-height: calc(100vh - 5vh - 24px);
-    padding-left: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 16px 16px 16px 16px;
-    height: 100vh;
-    max-height: 100vh;
-    border-bottom-style: solid;
-    backdrop-filter: blur(7px);
-    border-left: 1px solid rgba(187, 225, 250, 0.6);
-    border-bottom-width: 0px;
-  }
-  
-  #editor-container {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  #editor-menu-container {
-    margin-bottom: 0px;
-    border: 0px;
-    box-shadow: 0 0 3px 0px black;
-    z-index: 1000;
-    position: relative;
-    overflow-x: auto;
-    white-space: nowrap;
-    background-color: rgba(50, 50, 50, 1);
-    border-color: transparent;
-    border-bottom: 1px solid rgba(187, 225, 250, 0.6);
-    height: auto;
-  }
-
-  #editor-menu-content {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-align: right;
-    padding: 12px 0px 12px 0px;
-  }
-
-  #editor-menu-title:nth-child(1) {
-    width: 25%;
-    display: inline-block;
-    text-align: center;
-    left: 0;
-    position: absolute;
-    margin-top: 7px;
-  }
-
-  #editor-menu-title:nth-child(2) {
-    display: none;
-  }
-
-  #editor-menu-title:nth-child(3) {
-    display: none;
-  }
-
-  #editor-menu-spacer {
-    width: 0;
-  }
-
-  #editor-sort-button,
-  #editor-shuffle-button,
-  #rs-ext-editor-export-button,
-  #rs-ext-show-help {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    border-radius: 10px;
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(10, 10, 10, 0.5);
-  }
-
-  #editor-sort-button:hover,
-  #editor-shuffle-button:hover,
-  #rs-ext-editor-export-button:hover,
-  #rs-ext-show-help:hover {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(50, 50, 50, 0.7);
-  }
-
-  #editor-save-button {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    border-radius: 10px;
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(5, 102, 116, 0.5);
-  }
-
-  #editor-save-button:hover {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(5, 102, 116, 0.7);
-  }
-
-  #editor-clear-button {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    border-radius: 10px;
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(130, 23, 82, 0.5);
-  }
-
-  #editor-clear-button:hover {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    height: 5vh;
-    margin-right: 16px;
-    width: 8vw;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background-color: rgba(130, 23, 82, 0.7);
-  }
-
-  #editor-save-button:disabled,
-  #editor-clear-button:disabled,
-  #editor-sort-button:disabled,
-  #editor-shuffle-button:disabled,
-  #rs-ext-editor-export-button:disabled,
-  #rs-ext-show-help:disabled {
-    height: 100%;
-    margin-right: 16px;
-    width: 8vw;
-    font-family: "Source Sans Pro", sans-serif;
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    background-color: rgb(10, 10, 10, 0.5);
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-  }
-
-  #editor-select-cardpool,
-  #rs-ext-banlist {
-    margin-right: 16px;
-    text-align: center;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/e8d1666b6b28b47628be9b8d801073809d610eeb/arrow_drop_down_white_192x192.png)
-      94% / 10% no-repeat #f0f0f0;
-    
-    height: 5vh !important;
-    width: 14vw;
-    font-family: "Source Sans Pro", sans-serif;
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    background-color: rgba(10, 10, 10, 0.5);
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    border-radius: 10px;
-  }
-
-  #editor-select-cardpool:hover,
-  #rs-ext-banlist:hover {
-    margin-right: 16px;
-    text-align: center;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/e8d1666b6b28b47628be9b8d801073809d610eeb/arrow_drop_down_white_192x192.png)
-      94% / 10% no-repeat #b2bec3;
-    
-    height: 5vh !important;
-    width: 14vw;
-    font-family: "Source Sans Pro", sans-serif;
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    background-color: rgba(50, 50, 50, 0.7);
-    transition: 0.2s;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    border-radius: 10px;
-  }
-
-  #editor-menu-spacer-small {
-    width: 0;
-    display: none;
-  }
-
-  #card-description-box {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px solid;
-    padding: 4px;
-  }
-
-  #card-name.engine-dark-box {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  #card-name {
-    padding: 0px 0px 0px 0px;
-  }
-
-  #card-column {
-    min-height: 100vh;
-    padding: 16px 16px 16px 16px;
-    height: 100vh;
-    max-height: calc(100vh - 70px);
-    border-bottom-style: solid;
-    border-bottom-width: 52px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-color: transparent;
-    backdrop-filter: blur(7px);
-    border-right: 1px solid rgba(187, 225, 250, 0.6);
-  }
-
-  #editor-deck-main-title,
-  #editor-search-title {
-    background: transparent;
-    padding-top: 16px;
-  }
-
-  #rs-ext-navigation {
-    background: transparent !important;
-  }
-
-  #editor-deck-extra-title,
-  #editor-deck-side-title {
-    background: transparent;
-    padding-top: 4px;
-  }
-
-  .editor-card-small {
-    width: 10%;
-    max-width: 177px;
-    cursor: pointer;
-  }
-  .editor-card-small:hover {
-    outline: 0.1vw solid rgba(0, 0, 0, 0);
-    animation-name: game-card-hover;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    cursor: pointer;
-    filter: none;
-  }
-
-  #editor-decks-column {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: calc(100vh - 5vh - 24px);
-    overflow-y: auto;
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    padding: 0 10px 0 10px;
-  }
-
-  #editor-main-deck {
-    margin-top: 14px;
-    margin-right: 14px;
-    margin-left: 14px;
-    padding: 3px;
-    box-shadow: black 0px 0px 8px 0px;
-    border-radius: 3px;
-    border: 0px solid;
-    background-color: rgb(255, 255, 255, 0.5);
-    height: auto !important;
-  }
-
-  #editor-extra-deck {
-    margin-top: 14px;
-    margin-right: 14px;
-    margin-left: 14px;
-    box-shadow: black 0px 0px 8px 0px;
-    border: 0px solid;
-    border-radius: 3px;
-    padding: 3px 0px 3px 3px;
-    background-color: rgb(255, 255, 255, 0.5);
-    height: auto !important;
-  }
-
-  #editor-side-deck {
-    margin-top: 14px;
-    margin-right: 14px;
-    margin-left: 14px;
-    box-shadow: black 0px 0px 8px 0px;
-    border: 0px solid;
-    border-radius: 3px;
-    padding: 3px 0px 1px 3px;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-bottom: 14px;
-  }
-
-  #card-picture {
-    box-shadow: black 0px 0px 8px 0px;
-    border-radius: 3px;
-    max-width: /*[[crdpctrsz]]*/;
-  }
-
-  #editor-search-box {
-    text-align: center;
-  }
-
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-box
-    div,
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-box
-    div
-    table {
-    background: transparent !important;
-    text-align: center;
-  }
-
-  #rs-ext-monster-toggle,
-  #rs-ext-spell-toggle,
-  #rs-ext-trap-toggle,
-  #rs-ext-sort-toggle,
-  #rs-ext-clear-filter {
-    background-color: transparent;
-    border: 0px solid #2d3436;
-    height: 100%;
-    color: #f0f0f0;
-  }
-
-  #rs-ext-add-random-card {
-    background-color: transparent;
-    border: 0px solid #2d3436;
-    color: #f0f0f0;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  #rs-ext-navigate-left {
-    text-align: center;
-
-    border-radius: 5px;
-    border: 0px solid;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 2px 0px white, 0 0 1px 0px white;
-    padding-bottom: 4px;
-    padding-right: 9px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-  }
-
-  #rs-ext-navigate-right {
-    text-align: center;
-
-    border-radius: 5px;
-    border: 0px solid;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 2px 0px white, 0 0 1px 0px white;
-    padding-bottom: 4px;
-    padding-right: 9px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-  }
-
-  #editor-search-text,
-  #editor-search-effect {
-    margin-top: 4px;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    border-radius: 10px;
-    color: white;
-    border: 1px solid rgba(187, 225, 250, 0.6);
-    background-color: rgba(10, 10, 10, 0.5);
-    transition: 0.2s;
-  }
-
-  #editor-search-text:hover,
-  #editor-search-effect:hover {
-    margin-top: 4px;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    border-radius: 10px;
-    color: white;
-    border: 1px solid rgba(187, 225, 250, 0.6);
-    background-color: rgba(50, 50, 50, 0.7);
-  }
-
-  #editor-search-results {
-    margin-top: 24px;
-    background: transparent;
-  }
-
-  #editor-search-results > div:nth-child(n) {
-    border: 1px solid rgba(187, 225, 250, 0.7) !important;
-    border-radius: 10px;
-
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background: rgba(10, 10, 10, 0.5);
-  }
-
-  #editor-search-results > div:nth-child(n):hover {
-    border: 1px solid rgba(187, 225, 250, 0.7) !important;
-    border-radius: 10px;
-    box-shadow: 0 0 3px 0px black, inset 0 0 10px 1px black;
-    background: rgba(50, 50, 50, 0.7);
-  }
-
-  #editor-search-results > div:nth-child(n) > .editor-search-description {
-     margin: auto;
-     padding: 12px;
-     font-size: 14px !important;
-  }
-
-  #editor-search-results > div:nth-child(n) > .editor-search-description > .template-name {
-     font-weight: bold;
-  }
-
-#editor-search-results > div:nth-child(n) > .template-picture {
-     width: 20%;
-     border-radius: 10px 1px 1px 10px;
-  }
-
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-results.engine-dark-box
-    div.editor-search-result,
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-results.engine-dark-box
-    table.rs-ext-card-entry-table
-    tr
-    td.rs-ext-table-button {
-    border: 0px solid transparent;
-    margin-bottom: 10px;
-    padding-top: 0px;
-  }
-
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-results.engine-dark-box
-    div.editor-search-result
-    p.editor-search-description {
-    padding-left: 10px;
-  }
-
-  #editor-search-box
-    > div:nth-child(2)
-    > table:nth-child(1)
-    > tr:nth-child(1)
-    > td:nth-child(1)
-    > span:nth-child(1) {
-    display: none;
-  }
-
-  #editor-search-box
-    > div:nth-child(2)
-    > table:nth-child(1)
-    > tr:nth-child(1)
-    > td:nth-child(2) {
-    width: 100%;
-  }
-
-  html
-    body
-    div#editor-container
-    div#editor-search-column
-    div#editor-search-box
-    div#rs-ext-advanced-search-bar
-    div#rs-ext-advanced-pop-outs
-    div#rs-ext-monster.rs-ext-shrinkable.rs-ext-activated
-    table#rs-ext-link-arrows.rs-ext-left-float.rs-ext-table
-    tbody
-    tr
-    td
-    button.rs-ext-toggle-button {
-    border: 0px solid;
-    border-radius: 3px;
-
-  }
-
-  #rs-ext-monster-category,
-  #rs-ext-monster-ability,
-  #rs-ext-monster-type,
-  #rs-ext-monster-attribute,
-  #rs-ext-spell-type,
-  #rs-ext-trap-type {
-    text-align: center;
-    background-color: #f0f0f0;
-    color: #212121;
-    border-radius: 3px;
-    cursor: pointer;
-    border: 0px solid;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/a31386cbd0f9ecf566e497f767b22c8d88a2b639/icons8-sort-down-26_2.png)
-      94% / 6% no-repeat #f0f0f0;
-    width: 80%;
-
-  }
-
-  #rs-ext-def,
-  #rs-ext-atk,
-  #rs-ext-scale,
-  #rs-ext-level,
-  #rs-ext-monster-limit,
-  #rs-ext-spell-limit,
-  #rs-ext-trap-limit {
-    text-align: center;
-    background-color: #f0f0f0;
-    color: #2d3436;
-    border-radius: 3px;
-    border: 0px solid;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 79%;
-
-  }
-
-  #rs-ext-spacer-right,
-  #rs-ext-spacer-left {
-    display: none;
-  }
-}
+/*[[deck_editor-toggle]]*/

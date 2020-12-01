@@ -2,8 +2,8 @@
 @name           Cursor - Skyrim - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Skyrim Cursor by KMV.Global.32x32.Includes two additional cursors; Black :hover and :active.Integrated into CSS (base64) - No external mirror utilized.Source:1) https://tes-mods.fandom.com/wiki/The_Elder_Scrolls_Mods_Wiki2) https://images.wikia.nocookie.net/__cb20110213131405/elderscrolls/es/images/9/91/CursorSkyrim.pngFor Skyrim Cursor only (without extra Pointers :hover & :active), see:https://userstyles.org/styles/176290/Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://old.reddit.com/r/KMV/`
-@version        20201129.9.26
+@description    `Skyrim Cursor by KMV.Global.32x32.Includes black pointers - :hover & :active.No external mirror utilized - Integrated into BASE64.Skyrim Cursor only (without Pointers):https://userstyles.org/styles/176290/Source:1) https://tes-mods.fandom.com/wiki/The_Elder_Scrolls_Mods_Wiki2) https://images.wikia.nocookie.net/__cb20110213131405/elderscrolls/es/images/9/91/CursorSkyrim.pngStylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://old.reddit.com/r/KMV/`
+@version        2020121.6.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -132,6 +132,7 @@ select:hover,
 selected:hover,
 span a,
 span a:hover,
+span.editable,
 summary:hover,
 svg:hover,
 use:hover,
@@ -397,6 +398,7 @@ path:active,
 select:active,
 selected:active,
 span a:active,
+span.editable:active,
 summary:active,
 svg:active,
 use:active,

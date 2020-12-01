@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pgain2004
 @description    `相对熟悉CSS后新写的主题，窄屏自适应，适配度高。依赖一些CSS3特性和emoji库，较老系统(如Win7)显示效果可能打折扣。tag:S1 stage1st stage1 saraba1st 泥潭 婆罗门论坛`
-@version        20201029.14.22
+@version        2020121.6.54
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown chromium "Chromium系浏览器适配" {
@@ -2808,6 +2808,7 @@ a[onclick="refreshMsg();"]:before{display:inline-block;content:"⭯";color:var(-
 	#darkroomtable th{background-color:var(--prid);border-color:var(--prid)}
 	#darkroomtable td{border-color:var(--prid)}
 	.alt, .alt th, .alt td{background-color:var(--pril)}
+	.tdat th, .tdat td{border-color:var(--prid)}
 	/*1-4-12 头像*/
 	.avt img{background-color:var(--pril);border:0}
 	/*1-4-13 用户卡片*/
@@ -3170,6 +3171,14 @@ a[onclick="refreshMsg();"]:before{display:inline-block;content:"⭯";color:var(-
 	.buddy_group li{border-bottom:1px solid var(--pri)}
 	.bmn{background:0;border:0}
 	.bm.mtm{background:0;border-color:var(--prid)}
+	.pg_invite .bm{background-color:var(--pri);border:0}
+	#invitelist .bbda{border:1px solid var(--pri);padding:4px 6px}
+	hr.da{display:none}
+	.buddy_group .b{background:0;line-height:normal;font-size:0;text-decoration:none;overflow:visible}
+	.buddy_group .b:before{display:block;content:"";width:12px;height:12px;border:2px solid var(--sec);border-radius:12px}
+	.buddy_group .b:after{display: block;content: "";width: 2px;height: 14px;background: var(--sec); transform: rotate(135deg);position: relative;bottom:15px;left:7px}
+	.buddy_group .b:hover:before{border-color:firebrick}
+	.buddy_group .b:hover:after{background:firebrick}
 	/*6-4 用户组*/
 	#gupgrade,#guser,#gadmin{order:1;margin:0}
 	#gmy a,#gupgrade a,#guser a,#gadmin a{background:0}

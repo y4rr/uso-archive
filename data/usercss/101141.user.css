@@ -2,14 +2,14 @@
 @name           RU AdList CSS Fixes
 @namespace      USO Archive
 @author         lainverse
-@description    `Набор дополнительных стилей, которые невозможно применить средствами Adblock Plus, но которые необходимы для более корректного отображения отдельных сайтов, и блокировки на них рекламы.Рекомендуется использовать совместно с RU AdList JS Fixes: https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixesДля установки данного стиля рекомендую использовать специализированное расширение, а не Tampermonkey, необходимый для корректной работы JS Fixes. Не смотря на то, что в Tampermonkey есть поддержка установки стилей и её даже недавно обновляли, специализированное расширение справляется с работой и загрузкой обновлений лучше. В случае Mozilla Firefox и Google Chrome рекомендую использовать расширение Stylus.`
-@version        20201126.15.25
+@description    `Набор дополнительных стилей, которые невозможно применить средствами Adblock Plus, но которые необходимы для более корректного отображения отдельных сайтов, и блокировки на них рекламы.Рекомендуется использовать совместно с <a href="https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixes">RU AdList JS Fixes</a>.`
+@version        2020121.3.31
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201126.1712
+@version        0.20201201.416
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -583,12 +583,14 @@
   domain("bit.ua"),
   domain("freerutor.com"),
   domain("gidonline.fun"),
+  domain("greenpost.ua"),
   domain("kinoboom.su"),
   domain("oblozhki.net"),
   domain("repackov.net"),
   domain("sportarena.com"),
   domain("sportboom.info"),
   domain("uateam.tv"),
+  domain("urologypro.ru"),
   domain("virusinfo.info") {
     body:not(#id) {
         margin-top: 0 !important
@@ -772,6 +774,16 @@
 @-moz-document domain("anti-malware.ru") {
     #header-bg-enf {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("apnews.com.ua") {
+    .reveal-overlay {
+        display: none !important
+    }
+    html {
+        position: relative !important;
+        top: 0 !important
     }
 }
 
@@ -1743,14 +1755,17 @@
     body {
         background-color: #303030 !important
     }
-    body > div[id^="wrapper"] > div[id] {
+    #ssdfsd {
         background-image: none !important
     }
-    body > div[id^="wrapper"] > div[id] > #content {
+    #ssdfsd > a, .atblock {
+        display: none !important
+    }
+    #content.site-max-width {
         margin-top: 0 !important;
         pointer-events: none
     }
-    #basic-content-container > * {
+    #basic-content-container > :not(.grid-150-100p), .grid-150-100p > * {
         pointer-events: auto
     }
 }
@@ -1831,16 +1846,6 @@
     }
     #header-wrapper > header, body {
         pointer-events: none !important
-    }
-}
-
-@-moz-document domain("glav.su") {
-    #js-l-h ~ div[class] > div:not([id]):not([class]):not([style]) {
-        display: none !important
-    }
-    #js-l-h ~ div[class] {
-        padding-top: unset !important;
-        padding-bottom: unset !important
     }
 }
 
@@ -2639,31 +2644,34 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, body > .grid .grid__rcol, 
-    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
+    #bubble-home, #mailbox-container ~ div > .horoscope ~ div, 
+    #mailbox-container ~ div > .ok, .grid__lcol_mailbox .horoscope ~ div, 
+    body > .grid .grid__rcol, body > .grid .news-item_tgb, 
+    body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
+    body > .zeropixel ~ * .searchContainer ~ div > a.dmb, 
     body > .zeropixel ~ * div .covid, body > .zeropixel ~ * div .eventbar, 
     body > .zeropixel ~ * div a[href*="aliexpress.com"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > div > .pulse {
         display: none !important
     }
-    .grid .tabs-content__item > .news-main {
+    body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] {
         max-height: 80px !important;
         position: static !important
     }
-    .grid .tabs-content__item > .news-main > .news-main__text-wrapper {
+    body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__text-wrapper {
         max-height: 80px !important;
         white-space: pre-wrap !important
     }
-    .grid .tabs-content__item > .news-main > .news-main__img {
+    body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__img {
         max-width: unset !important;
         height: 80px !important
     }
-    .grid .grid__ccol {
+    body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] {
         min-width: 640px !important
     }
 }
@@ -3848,6 +3856,13 @@
     }
     .tPechenkiInfoblock {
         display: none !important
+    }
+}
+
+@-moz-document domain("trashbox.ru") {
+    body:not(#id) {
+        background-color: #202030 !important;
+        background-image: none !important
     }
 }
 

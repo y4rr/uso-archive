@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordan Tucker
 @description    `Changes the typography of theoldreader.com for easier reading.`
-@version        20201020.3.57
+@version        2020121.3.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -306,8 +306,18 @@ div.well.clearfix.post {
   color: #d4d4d4 !important;
 }
 
+.hero-unit.posts-filler span {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
 code {
   background-color: #555;
   color: #d4d4d4;
+}
+
+.content-body p {
+  font-size: inherit;
+  line-height: inherit;
 }
 }

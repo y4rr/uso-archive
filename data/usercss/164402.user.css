@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forums`
-@version        20201114.8.40
+@version        2020121.9.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -74,11 +74,20 @@ section.ed__news__panel {
     text-decoration: none;
     color: #f5a623;
 }
+.g2__o-scta-ctn {
+    border: .125rem solid #edaf00;
+    background-color: #030000;
+}
 
 .g2__gka-rslt-nw__goty__frst > figure > figcaption > span {
     color: #dcdcdc;
 }
-
+.g2__m-h-s-cta {
+    background-color: #030000;
+}
+.g2__m-h-s-cta__nb {
+    color: #000;
+}
 .gk__text__blockquote {
     color: #838383;
 }
@@ -460,8 +469,12 @@ label,
 .us__subnav__inner__list__item__link:visited {
     color: #fff;
 }
-.g2__a-faq-ans__a {color:#dadada;}
-a.g2__font-codgray--has-hover {color:#f5a623;}
+.g2__a-faq-ans__a {
+    color: #dadada;
+}
+a.g2__font-codgray--has-hover {
+    color: #f5a623;
+}
 .g2__gka-rslt-nw__goty__lst > div > figure > figcaption,
 .co__main__section__title,
 .co__main__section__title--maxwidth,
@@ -1241,10 +1254,17 @@ span.highlighted {
 .g2__lyt__ctnr {
     background-color: #111;
 }
-.g2__a-faq-ans__a, .g2__i-acs__lgt--bg__desc, .g2__i-gm__lgt--bg__vrdct, .g2__i-ptfrm__lgt--bg__desc {
+.g2__a-faq-ans__a,
+.g2__i-acs__lgt--bg__desc,
+.g2__i-gm__lgt--bg__vrdct,
+.g2__i-ptfrm__lgt--bg__desc {
     color: #d5d5d5;
 }
-.g2__a-bcrmb>li>a, .g2__a-bcrmb>li>span, .g2__a-btn-cls:before, .g2__font-codgray, .g2__font-codgray--has-hover {
+.g2__a-bcrmb > li > a,
+.g2__a-bcrmb > li > span,
+.g2__a-btn-cls:before,
+.g2__font-codgray,
+.g2__font-codgray--has-hover {
     color: #fcfcfc;
 }
 .g2__sb {
@@ -1290,5 +1310,110 @@ span.highlighted {
     border-top: 1px solid #f5a623;
     border-left: 1px solid #f5a623;
     background-color: #f5a623;
+}
+
+#inreadContainer {
+    display: none;
+}
+#pegasus_banner_atf {
+    display: none;
+}
+#pegasus_banner_mtf {
+    display: none;
+}
+#pegasus_banner_btf {
+    display: none;
+}
+#pegasus_300_atf {
+    display: none;
+}
+/*abo*/
+.pm__body,
+.pm__body--dark,
+.pm__body--background,
+.pm__body--background--dark {
+    background-color: #191919;
+}
+.pm__t1,
+.pm__t1--line,
+.pm__t1--center,
+.pm__t1--underline {
+    color: #edaf00;
+}
+.pm__pricing__item__offer-title {
+    border: solid 2px #edaf00;
+    background-color: #030000;
+}
+.pm__pricing__item,
+.pm__pricing__item.is--fw {
+    border-color: #edaf00;
+    background-color: #030000;
+}
+.pm__pricing__item__infos {
+    color: #fcfcfc;
+    border: solid 2px #edaf00;
+    background-color: #030000;
+}
+.pm__about__tab__desktop__line {
+    background-color: #030000;
+}
+.pm__about__tab__desktop__line:nth-child(even) {
+    background-color: #111;
+}
+.pm__about__tab__desktop__line__item:nth-child(2),
+.pm__about__tab__desktop__line__item:nth-child(3) {
+    border-left: 1px solid #edaf00;
+}
+.pm__about__footer {
+    background-color: #030000;
+}
+.pm__about__separator {
+    background-color: #edaf00;
+}
+.pm__about__tunnel__button:link,
+.pm__about__tunnel__button:visited,
+.pm__about__tunnel__button:focus,
+.pm__about__tunnel__button:active {
+    color: #030000;
+    border: solid 1px #edaf00;
+    background-color: #edaf00;
+}
+.pm__about__alert {
+    color: #edaf00;
+    background-color: #030000;
+}
+.pm__about__alert:after {
+    border-color: #030000 transparent transparent transparent;
+}
+.ed__tn__n--ad:link,
+.ed__tn__n--ad--r:link,
+.ed__tn__n--ad:visited,
+.ed__tn__n--ad--r:visited {
+    border-bottom: 1px solid #edaf00;
+}
+.g2__pnl--na {
+    background-color: #edaf00;
+}
+.g2__o-hnws__n-a {
+    border-top: .0625rem solid #edaf00;
+}
+.g2__a-btn-cls {
+    background-color: #030000;
+}
+.ed__news-h--native {
+    background-color: #edaf00;
+}
+.gk__close,
+.gk__close--dark,
+.gk__close--light,
+.gk__close--md,
+.gk__close--md-dark,
+.gk__close--md-light,
+.gk__close--lg,
+.gk__close--lg-dark {
+    color: #030000;
+}
+.gk__close--light {
+    color: #edaf00;
 }
 }

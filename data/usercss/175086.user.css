@@ -2,8 +2,8 @@
 @name           Cursor - Black - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Black Cursors.-Global.Includes Pointer and Clicker (:hover + :active) - all base64 (non-url).Code is provided to the Public Domain.Feel free to copy, - (re-)distribute, edit &/or include it in your own Themes without asking.Stylus recommended:https://add0n.com/stylus.htmlFor Black cursor without pointers;https://userstyles.org/styles/185630/For use in OS:https://archive.org/details/KMV-Resources.cur located in .zipThe rest of my themes:https://userstyles.org/users/370722/Contact:https://old.reddit.com/r/KMV/`
-@version        20201129.9.29
+@description    `Black Cursors.-Global.Includes Pointer and Clicker (:hover + :active) - all base64 (non-url).Code is provided to the Public Domain.Feel free to copy, - (re-)distribute, edit &/or include it in your own Themes without asking.Black cursor without pointers;https://userstyles.org/styles/185630/Also available for OS (.cur):https://archive.org/details/KMV-ResourcesLocated in .zipStylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://old.reddit.com/r/KMV/`
+@version        2020121.5.50
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -136,6 +136,7 @@ select:hover,
 selected:hover,
 span a,
 span a:hover,
+span.editable,
 summary:hover,
 svg:hover,
 use:hover,
@@ -401,6 +402,7 @@ path:active,
 select:active,
 selected:active,
 span a:active,
+span.editable:active,
 summary:active,
 svg:active,
 use:active,

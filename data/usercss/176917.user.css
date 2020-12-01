@@ -3,17 +3,23 @@
 @namespace      USO Archive
 @author         Izheil
 @description    `This is an updated version of <a href="https://userstyles.org/styles/128883">W3Schools Dark Sublime</a> style.Fixed the search popup, updated the page link to apply, themed some missing panels, the "try it" examples, and some buttons.Comment any missing element below and I'll try to fix it.`
-@version        2020619.19.24
+@version        2020121.2.23
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.w3schools.com/") {
-/**
- * W3Schools Sublime Theme v1.4.4
- * Created by LeoTM, updated by Izheil
- * License: https://creativecommons.org/licenses/by-sa/4.0/
- */
+/* ==UserStyle==
+@name         W3Schools Sublime Theme (Fixed)
+@description  Dark style for W3Schools. Created by LeoTM, updated by Izheil.
+@namespace    https://github.com/Izheil/Dark-userstyles
+@version      1.4.5
+@author       LeoTM, Izheil
+@homepageURL  https://github.com/Izheil/Dark-userstyles/tree/master/Specific%20site%20themes
+@supportURL   https://github.com/Izheil/Dark-userstyles/tree/master/Specific%20site%20themes
+@license      BY-SA-4.0
+@preprocessor stylus
+==/UserStyle== */
 
+@-moz-document url-prefix("https://www.w3schools.com/") {
 /* 'w3schools' */
 body > div.w3-container.top > a {
     color: #F8F8F2 !important;
@@ -104,7 +110,7 @@ td, #main > div.w3-example > p {
 
 .howtopag_item:not(.pagactive):hover {background: rgba(0,0,0,0.2) !important}
 
- /* Links */
+/* Links */
 a:not(.w3-btn):not(.w3-button):not(.pagactive), .w3-bar-block .w3-bar-item { color: #66D9EF !important; }
 a:not(.w3-btn):not(.w3-button):not(.pagactive):visited, .w3-bar-block .w3-bar-item:hover { color: #139db9 !important; }
 a:not(.w3-btn):not(.w3-button):not(.pagactive):not(.active):not(.tabactive):hover { color: #A6E22E !important; }
@@ -120,7 +126,7 @@ body > ul.w3-navbar.w3-theme.w3-card-2.w3-wide > li > a.w3-hover-white.w3-paddin
 #main > table > tbody > tr > td > a:not(.w3-btn):visited {
     color: #1189a2 !important;
 }
- 
+
 #leftmenuinnerinner > a {
     color: red;
 }
@@ -245,4 +251,10 @@ hr, #main, .w3-bordered tr, .w3-table-all tr,
 /* Fix for other widgets white background */
 #googleSearch, .gsc-search-box tbody td, .gsc-cursor-page, 
 #google_translate_element, .tab {background-color: transparent !important}
+
+/* Warning banners */
+.w3-warning {
+    background-color: #733 !important;
+    color: #ddd !important;
+}
 }
