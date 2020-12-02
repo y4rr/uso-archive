@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Nate-Dogg
 @description    `Red Background With Text`
-@version        2020413.16.49
+@version        2020121.15.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,16 +18,15 @@
     position: relative;
   }
 
-
   .card--grit
   {
-    background-image: url("https://wallpapersite.com/images/wallpapers/red-2560x1600-curves-hd-10107.jpg");
+    background-image: url("https://i.imgur.com/Wb74pnx.jpg");
+      background-size: 500%
   }
-
 
   html
   {
-    background: fixed url("https://wallpaperplay.com/walls/full/2/c/c/153654.jpg") no-repeat, #2d2e2e;
+    background: fixed url("https://imgur.com/hqKlkng.jpg") no-repeat, #2d2e2e;
     box-sizing: border-box;
     color: #2d2e2e;
     font-family: "Montserrat", sans-serif;
@@ -37,12 +36,10 @@
     background-size: 120%;
   }
 
-
   .bg--gradient
   {
     background: top left repeat, linear-gradient(90deg, #101010 60%, #1f2021 100%);
   }
-
 
   .card--a
   {
@@ -50,7 +47,31 @@
     color: #fefeff;
     background-size: 130%;
   }
+  .theme--pDefault .profile-bg
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 60%, #ffffff 100%);
+    color: #d3d3d3;
+  }
 
+  .btn--inky, .btn--inky:focus:not(:hover)
+  {
+    color: #ffffff;
+  }
+
+  .theme--pDefault .profile-bgHead
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+  }
+
+  .theme--pDefault.is-gold .profile-bg
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+  }
+
+  .theme--pDefault.is-guest .profile-bgHead
+  {
+    background: #fff0;
+  }
 
   .btn--primary
   {
@@ -58,35 +79,22 @@
     color: #ff0000;
   }
 
-
   .theme--pDefault .profile-title
   {
-    color: #FFFFFF; 
+    color: #FFFFFF;
     text-shadow: 0 2px 2px rgba(2, 2, 2, 0.25);
   }
-
 
   .theme--pDefault .profile-levelNum
   {
     color: #FFFFFF;
     text-shadow: 0 2px 2px rgba(2, 2, 2, 0.25);
   }
-  
-  .tc-t {
-    color: #ffffff;
-  }
-  
 
   .theme--pDefault .profile-body
   {
     color: #FFFFFF;
   }
-}
-
-
-@-moz-document domain(nitrotype.com)
-{
-
 
   .dash-copyContainer
   {
@@ -100,7 +108,6 @@
     display: flex;
   }
 
-
   .dash-copy
   {
     color: #FF0000;
@@ -108,49 +115,14 @@
     font-size: 28px;
   }
 
-
   ::selection
   {
     background-color: #1976c6;
     color: white;
   }
 
-
   .bg--gradient
   {
-    background: url(https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg) no-repeat;
-  }
-
-
-  .theme--pDefault .profile-bg
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 60%, #ffffff 100%);
-    color: #d3d3d3;
-  }
-
-
-  .btn--inky, .btn--inky:focus:not(:hover)
-  {
-    color: #ffffff;
-  }
-  .tsxxs {
-    font-size: 10px;
-  }
-
-  .theme--pDefault .profile-bgHead
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
-  }
-
-
-  .theme--pDefault.is-gold .profile-bg
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
-  }
-
-
-  .theme--pDefault.is-guest .profile-bgHead
-  {
-    background: #fff0;
+    background: none;
   }
 }

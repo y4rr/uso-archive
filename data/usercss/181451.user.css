@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Nate-Dogg
 @description    `FIRE Nitrotype Theme`
-@version        2020324.13.32
+@version        2020121.14.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.nitrotype.com")
 {
-  body
+    body
   {
     background-color: #2d2e2e;
     overflow-y: scroll;
@@ -20,12 +20,13 @@
 
   .card--grit
   {
-    background-image: url("https://wallpapersite.com/images/wallpapers/red-2560x1600-curves-hd-10107.jpg");
+    background-image: url("https://i.imgur.com/Wb74pnx.jpg");
+      background-size: 500%
   }
 
   html
   {
-    background: fixed url("https://wallpaperplay.com/walls/full/2/c/c/153654.jpg") no-repeat, #2d2e2e;
+    background: fixed url("https://imgur.com/hqKlkng.jpg") no-repeat, #2d2e2e;
     box-sizing: border-box;
     color: #2d2e2e;
     font-family: "Montserrat", sans-serif;
@@ -42,9 +43,34 @@
 
   .card--a
   {
-    background-image: url("https://media.giphy.com/media/6wpHEQNjkd74Q/200.gif");
+    background-image: url("https://i.imgur.com/QUcPiuv.gif");
     color: #fefeff;
-    background-size: 150%;
+    background-size: 100%;
+  }
+  .theme--pDefault .profile-bg
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 60%, #ffffff 100%);
+    color: #d3d3d3;
+  }
+
+  .btn--inky, .btn--inky:focus:not(:hover)
+  {
+    color: #ffffff;
+  }
+
+  .theme--pDefault .profile-bgHead
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+  }
+
+  .theme--pDefault.is-gold .profile-bg
+  {
+    background: url("https://i.imgur.com/Wb74pnx.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
+  }
+
+  .theme--pDefault.is-guest .profile-bgHead
+  {
+    background: #fff0;
   }
 
   .btn--primary
@@ -69,11 +95,6 @@
   {
     color: #FFFFFF;
   }
-}
-
-@-moz-document domain(nitrotype.com)
-{
-
 
   .dash-copyContainer
   {
@@ -102,32 +123,6 @@
 
   .bg--gradient
   {
-    background: url(https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg) no-repeat;
-  }
-
-  .theme--pDefault .profile-bg
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 60%, #ffffff 100%);
-    color: #d3d3d3;
-  }
-
-  .btn--inky, .btn--inky:focus:not(:hover)
-  {
-    color: #ffffff;
-  }
-
-  .theme--pDefault .profile-bgHead
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
-  }
-
-  .theme--pDefault.is-gold .profile-bg
-  {
-    background: url("https://wallpapersite.com/images/wallpapers/red-1920x1080-curves-hd-10107.jpg") top left repeat, linear-gradient(0deg, #2d2e2e 10%, #ffffff 100%);
-  }
-
-  .theme--pDefault.is-guest .profile-bgHead
-  {
-    background: #fff0;
+    background: none;
   }
 }

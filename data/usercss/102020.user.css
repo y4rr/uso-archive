@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         牛牛的约定
 @description    `[2014年12月19日]重写了百度首页样式。本样式支持百度首页自定义背景（<a href="http://www.baidu.com/index.php" >www.baidu.com</a>），搜索结果页可自定义纯色背景。样式问题请到<a href="https://tieba.baidu.com/%E7%89%9B%E7%89%9B%E7%9A%84%E7%BA%A6%E5%AE%9A" >牛牛牛的约定</a>个人贴吧反馈。一些壁纸<a href="https://tieba.baidu.com/f?kw=%E7%89%9B%E7%89%9B%E7%9A%84%E7%BA%A6%E5%AE%9A&tab=album&subtab=album_good&cat_id=87c71030e924b899f7694d086e061d950b7bf6ac</a>——————————————————————————★本样式中自定义部分，如果您不了解它们的含义，请勿修改★★如修改后导致样式出错，请将其卸载，刷新页面后重新安装即可★★下方内容区看不清，请在“换肤”里调整透明度★★请使用<a href="http://pan.baidu.com/s/1c0nLTNa" >【屏幕取色器】</a>选取自己需要的发光颜色代码★<a href="https://userstyles.org/styles/97199/blue-scrollbar-simple" >【淡蓝色透明滚动条】</a><a href="https://userstyles.org/styles/96820/theme" >【贴吧素雅样式】</a><a href="https://userstyles.org/styles/104175/kill-tieba-ad" >【kill-tieba-ad 单独去广告样式】</a><a href="https://userstyles.org/styles/107006/xiami-player" >【XiaMi player】虾米音乐盒透明化 </a>`
-@version        201842.15.33
+@version        2020121.18.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color color-1 "搜索结果页背景色（默认白，护眼建议#EEE）" #FFFFFF
@@ -225,7 +225,7 @@ img:hover{transition-duration: 0.32s;-webkit-transition-duration:
 .res_top_banner /*百度安全检测*/,
 .icon-hui /*下部内容区“惠”小图标*/,
 #sui-dialog-mask /*全屏暗色限制*/ ,
-#bottom_container,#ftCon /*底部版权*/
+#bottom_container,#ftCon,#bottom_layer /*底部版权*/
 
 {display:none !important;} 
 

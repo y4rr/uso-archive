@@ -2,12 +2,14 @@
 @name           Frelancehunt.com Dark theme
 @namespace      USO Archive
 @author         Greedy Wizard
-@description    `Dark theme for freelancehunt.comProfile Plus`
-@version        20201112.14.16
+@description    `Dark theme for freelancehunt.comhttps://freelancehunt.com/freelancer/andygroove.htmlProfile Plus`
+@version        2020121.23.39
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://freelancehunt.com/"), url-prefix("https://freelancehunt.work/") {
+.table-double-striped tbody tr:nth-child(4n+3),
+.table-double-striped tbody tr:nth-child(4n+1),
 .qq-gallery.qq-uploader,
 .btn-default.active.focus,
 .btn-default.active:focus,
@@ -83,7 +85,7 @@ body:not(.frontpage),
 body,
 #top-nav,
 .sidenav {
-	background-color: #222;
+	background-color: #222 !important;
 	color: #ddd;
 }
 
@@ -234,5 +236,14 @@ body:not(.frontpage) {
 }
 .alert-warning {
 	border-color: #e08a10;
+}
+.blur{
+	pointer-events: all; 
+    opacity: 1;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+     filter: none;
 }
 }

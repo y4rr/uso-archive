@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Relashia
 @description    `Style shows on the map items that can be found in the specific locations.<br/>Style is global, it works on every language version of Eldarya.<br/>--------------------------------------------------------<br/>Styl pokazuje na mapie przedmioty możliwe do znalezienia w danych lokacjach.<br/>Styl jest globalny, działa na każdej wersji językowej Eldaryi.`
-@version        20201126.19.1
+@version        2020122.0.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1661,3 +1661,5 @@ background-position:
 height: 185px!important;
 width: 210px!important;
 background-size : 40px 40px !important ;}
+div.map-location-tooltip [data-id="112"]:after { content: "-❤";
+position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }

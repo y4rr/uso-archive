@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        20201128.10.7
+@version        2020121.19.45
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -105,6 +105,7 @@
 #wk_content .audio_row__current{background-color:rgba(0,0,0,.25)!important}
 #wk_content .audio_row__current:hover{background-color:rgba(0,0,0,.5)!important}
 #wk_content .audio_row:hover{background-color:rgba(0,0,0,.4)!important}
+.audio_page__audio_rows .audio_row.audio_has_lyrics .audio_row__title_inner,.ap_layer__content .audio_row.audio_has_lyrics .audio_row__title_inner,._playlist_page_content_block .audio_row.audio_has_lyrics .audio_row__title_inner,._audio_section__search .audio_row.audio_has_lyrics .audio_row__title_inner,.audio_section_global_search__audios_block .audio_row.audio_has_lyrics .audio_row__title_inner{color:var(--color2)}
 
 /* плейлисты в ленте, диалогах и комментах */
 [dir] .AudioPlaylistSnippet{background-color:rgba(0,0,0,.75)!important}
@@ -939,7 +940,7 @@ a .app_widget_tiles_title{color:#bbb}
 [dir] .stats_cont_browse_tile:hover .stats_cont_browse_tile_desc {background-color:rgba(127, 127, 127, .37)}
 [dir] .stats_cont_browse_tile .browse_stat_chart > svg > g > path[stroke="#5C9CE6"]{stroke:var(--color1)}
 
-/* менюшки шапки */ 
+/* менюшки шапки */
 #ts_cont_wrap.ts_cont_wrap,#top_notify_wrap,#top_profile_menu,.tt_w.top_notify_tt{background-color:rgba(0,0,0,.9)!important;border:1px solid var(--color5)!important}
 #top_notify_wrap::after,#top_profile_menu::after,.tt_w.top_notify_tt::after{border-color:transparent transparent rgba(0,0,0,.9) transparent !important}
 #top_profile_menu::before,#top_notify_wrap::before,.tt_w.top_notify_tt::before{border-color:transparent transparent var(--color3) transparent !important}
@@ -952,6 +953,7 @@ a .app_widget_tiles_title{color:#bbb}
 .top_notify_cont ._notify_unread .feed_row:first-child .feedback_row_wrap{box-shadow:0px -1px 0 0 #353535}
 .top_notify_cont .ui_scroll_content > .pr{filter:none!important}
 .top_notify_cont{color:#ccc}
+[dir] .top_notify_cont .feedback_row:not(.dld).hover,[dir] .top_notify_cont .feedback_row:not(.dld):hover{background-color:transparent}
 
 /* серые иконки доступа приложений */ 
 .apps_access_icon{filter:saturate(0)brightness(.3)contrast(1.25)!important}
@@ -1412,13 +1414,13 @@ img.sticker_img.im_gift,img.im_gift,.emoji_sticker_image,.sticker_img{filter:non
 .ui_tab_count{font-size:12px;color:var(--color1)}
 .wall_module .dld_text{color:var(--color8)}
 
-/* управление архивом */ 
-.wk_wall_archive__tabs .ui_tabs{border-bottom:1px solid var(--color3)}
-.wk_wall_archive__tabs{background:transparent}
-.wk_wall_archive__tabs_menu,.wk_wall_archive__month_menu{color:var(--color2)}
-.wk_wall_archive__tabs_menu:hover,.wk_wall_archive__month_menu:hover{color:var(--color1)}
-.wk_wall_archive__posts_month_name{color:#aaa}
-.wk_wall_archive__post--archived{background:var(--color5)!important}
+/* управление архивом */
+[dir] .wk_wall_archive__tabs .ui_tabs{border-bottom:1px solid var(--color3)}
+[dir] .wk_wall_archive__tabs{background: transparent}
+[dir] .wk_wall_archive__tabs_menu,.wk_wall_archive__month_menu{color:var(--color2)}
+[dir] .wk_wall_archive__tabs_menu:hover,.wk_wall_archive__month_menu:hover{color:var(--color1)}
+[dir] .wk_wall_archive__posts_month_name{color:#aaa}
+[dir] .wk_wall_archive__post--archived{background:var(--color5)!important}
 
 /* напоминалка блога в ленте */
 .feed_blog_reminder_large .feed_blog_reminder_title{color:var(--color1)}

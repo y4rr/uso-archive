@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Oscar TM
 @description    `Visually enhances the web player look of Spotify, while being very subtle and staying close to how it already is.These changes mostly include fade-in/out animations, adds a bit of color and uniforms the overall look.Please contact me on discord (Oscar#5067) if you have ideas of other visual tweaks I could add!`
-@version        2020121.0.45
+@version        2020121.21.9
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -153,7 +153,7 @@ a[href="/browse/newreleases"] {
 }
 
 /* Fix stupidugly gradient transition headers (playlists, artists, albums, etc.) */
-div.main-view-container__scroll-node-child > section > div:first-child > div:first-child {
+div.main-view-container__scroll-node-child > section > div:first-child > div:first-child:not(.contentSpacing) {
     opacity: 0.8;
 }
 }

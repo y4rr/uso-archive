@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.1+
+@name           Compact Tube (White) v1.4.2
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201126.20.41
+@version        2020121.22.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.1 */
+/* CompactTube (White) v1.4.2 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -80,7 +80,7 @@ ytd-banner-promo-renderer {display: none;}
     ytd-compact-promoted-video-renderer {display: none}
 
 /* убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
-yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}
+ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;}
 
 /* убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
 .ytp-fullerscreen-edu-button.ytp-button {display: none;}
@@ -634,8 +634,8 @@ ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {margin-
 /* Контур - Плейлистов "Yutube Music" - на Странице с Видео */
 ytd-compact-playlist-renderer:not([watch-feed-big-thumbs]) ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
 margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
-/* подгонка Обложек Плейлистов "Yutube Music" - на Странице с Видео  (при сильном увеличении значения влияет на прочие изображения)*/
-yt-img-shadow.ytd-playlist-custom-thumbnail-renderer.no-transition:after {margin-left: 98.5px; content: " ";}
+/* подгонка Обложек Плейлистов "Yutube Music" - на Странице с Видео  (при сильном увеличении значения влияет на прочие изображения) (□) */
+yt-img-shadow.ytd-playlist-custom-thumbnail-renderer.no-transition:after {margin-left: 94.3px /*98.5px*/; content: " ";}
 
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
@@ -1569,24 +1569,30 @@ ytd-playlist-thumbnail.ytd-grid-playlist-renderer {width: 202px;/*202px*/ height
 /* Центровка ВСЕХ надписей под Плейлистами и под Видео на ГЛАВНОЙ странице  - СМОТРИ в разделе: " ГЛАВНАЯ " !!! */
 
 /*╔════════════════════════════════════ БОКОВЫЕ и НИЖНИЕ ПАНЕЛИ на(в) Плейлистах ════════════════════════════════════╗*/
-/* боковые Панели на горизонтальных Превью плейлистов: - УМЕНЬШЕНИЕ к правому краю (очень криво) */
-ytd-thumbnail-overlay-side-panel-renderer {-o-width: 41.5% ! important; -o-margin-right: 0px; -o-padding: 0px 0px 0px 0px;
--o-max-height: 100%; -o-font-size: 1.2rem ! important; -o-opacity: 1; max-width: 41.5%;}
+/* Фикс пропорций Обложек Плейлистов (□) V */
+#playlist-thumbnails.ytd-playlist-thumbnail * {
+    width: auto;
+    height: 100% !important;}
 
-        /* Нижняя Панель под Превью Плейлиста на странице плейлиста */
+
+/* боковые Панели на горизонтальных Превью плейлистов: - УМЕНЬШЕНИЕ к правому краю (очень криво) (□) */
+ytd-thumbnail-overlay-side-panel-renderer {-o-width: 41.5% ! important; -o-margin-right: 0px; -o-padding: 0px 0px 0px 0px;
+-o-max-height: 100%; -o-font-size: 1.2rem ! important; -o-opacity: 1; max-width: 43.9%;}/*max-width: 41.5%*/
+
+        /* Нижняя Панель под Превью Плейлиста на странице плейлиста (□) */
 /* Значёк "►" - компенсационное опзиционирование после использования: ytd-thumbnail-overlay-side-panel-renderer */
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] yt-formatted-string.ytd-thumbnail-overlay-side-panel-renderer {
     -o-margin-right: -44px;
     margin: 0px -44px 0px 0px;}
-        /* Нижняя Панель под Превью Плейлиста на странице плейлиста */
+        /* Нижняя Панель под Превью Плейлиста на странице плейлиста (□) */
 /* "Текст ВОСПРОИЗВЕСТИ ВСЕ" - компенсационное опзиционирование после использования: ytd-thumbnail-overlay-side-panel-renderer */
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] yt-icon.ytd-thumbnail-overlay-side-panel-renderer {
     margin: 0px 8px 0px -50px;}
 
-/* Нижняя Панель под Превью Плейлиста на странице плейлиста: 
+/* Нижняя Панель под Превью Плейлиста на странице плейлиста: (□)
 - компенсацию положения панели после использования: ytd-thumbnail-overlay-side-panel-renderer*/
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] {
-    margin: 0px 0px 0px 0px;    padding: 0px 105px 0px 105px;
+    margin: 0px 0px 0px 0px;    padding: 0px 101px 0px 101px; /*0px 105px 0px 105px*/
     bottom: 0px;                height: 40px;
     top: auto;                  width: 100%;
     display: flex; flex-direction: row-reverse;
@@ -2189,6 +2195,7 @@ ytd-comments {
                     -o-overflow-x: hidden; /* test : нужен (а может и нет), решает проблему заступов */
         background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
+    -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
 -o-position: relative; -o-top: 21px; -o-left: 0px;
     margin-top: 21px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
@@ -2196,6 +2203,7 @@ ytd-comments {
 ytd-video-primary-info-renderer {background: var(--yt-spec-brand-background-primary);
                     -o-overflow: hidden; /* test : НЕ нужен, вредит меню для скачивания видео */
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
+    -o-border-bottom: solid 1px rgba(128, 128, 128, .14);
 position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
     margin-left: 80px; margin-right: -0px; /*-12px ,v2: -9px*/}
 
@@ -2515,6 +2523,7 @@ ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:first-child {padding-top: 11px;}
     /* Интервал Нижнего поля заголовка */
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:last-child {padding-bottom: 2px}
+
 
     /* Интервал Нижнего поля заголовка (информация о лицензии) */
 ytd-metadata-row-header-renderer[has-divider-line] {
