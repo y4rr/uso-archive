@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         2014215070@qq.com
 @description    `浏览器扩展xStyle的主题，把原来的亮色主题改为暗色，把代码区域拓宽，把字体放大。由于xStyle是扩展，它的地址有点特殊，需要把第一行括号里的"hncgkmhphmncjohllpoleelnibpmccpj"修改为实际的地址，不同浏览器地址不同，把主题改为erlang-dark效果更佳`
-@version        2020922.14.24
+@version        2020122.8.6
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,9 +11,9 @@
 	/*亮度★★★ ★★★ ★★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★★ ★ ★ ★ ★ ★ */
 	html,
 	body {
-		background: rgb(48, 48, 53)!important;
-		-webkit-filter: brightness(89%)!important;
-		filter: brightness(89%)!important;
+		background: #213132!important;
+		-webkit-filter: brightness(70%)!important;
+		filter: brightness(70%)!important;
 		overflow: hidden!important;
 		/*亮度★★★ ★★★ ★★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★★ ★ ★ ★ ★ ★ */
 	}
@@ -68,24 +68,32 @@
 	}
 	/*代码窗口*/
 	.CodeMirror-wrap {
+		font-size: 26px!important;
+		line-height: 38px!important;
+		font-weight: bold!important;
 		border: none!important;
-		min-height: 850px!important;
-		max-height: 890px!important;
+		/*min-height: 850px!important;
+		max-height: 890px!important;*/
+		height: 92.6vh!important;
+		/*height: 100%!important;用这个属性插件会变卡*/
+	}
+	pre span {
+		font-size: 30px!important;
 	}
 	/*滚动条*/
 	::-webkit-scrollbar {
-		width: 10px!important/*垂直滚动条的宽*/
+		width: 14px!important/*垂直滚动条的宽*/
 		;
-		height: 10px!important/*水平滚动条的高*/
+		height: 14px!important/*水平滚动条的高*/
 		;
 		background-color: rgba(13, 173, 253, 0)!important;
 	}
 	::-webkit-scrollbar-thumb {
-		background-color: rgb(31, 106, 234)!important;
-		border-radius: 50px!important;
+		background-image: linear-gradient(150deg, rgb(107, 75, 181) 0, rgb(196, 48, 211));
+		border-radius: 0px!important;
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background-color: rgb(24, 90, 202)!important;
+		background-image: linear-gradient(150deg, rgb(134, 96, 224) 0, rgb(206, 72, 219));
 	}
 	::-webkit-scrollbar-button {
 		display: none!important;
@@ -100,11 +108,19 @@
 ::-webkit-scrollbar-track-piece — 滚动条没有滑块的轨道部分.
 ::-webkit-scrollbar-corner — 当同时有垂直滚动条和水平滚动条时交汇的部分.
 ::-webkit-resizer — 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).*/
+	/*	::selection {
+		background: #e0ab0d!important;
+		color: #e1dede!important;
+	}
+	.cm-s-erlang-dark .CodeMirror-line::selection,
+	.cm-s-erlang-dark .CodeMirror-line > span::selection,
+	.cm-s-erlang-dark .CodeMirror-line > span > span::selection {
+		background: #e0ab0d!important;
+	}*/
 	html,
 	a,
 	p,
 	span,
-	pre,
 	em,
 	label,
 	button {
@@ -124,7 +140,8 @@
 	/*代码窗口颜色*/
 	#main-content > div.left-section > div.mdl-card.mdl-shadow--2dp.code-area > div > div > div.CodeMirror-scroll,
 	#main-content > div.left-section > div.mdl-card.mdl-shadow--2dp.code-area > div > div > div.CodeMirror-scroll > div.CodeMirror-gutters {
-		background: #042e51!important;
+		/*background: #042e51!important;*/
+		background: #0b2f4d!important;
 	}
 	#main-content > div.left-section > div.mdl-card.mdl-shadow--2dp.code-area > div > div > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code > div.CodeMirror-activeline > pre {
 		background: rgba(16, 87, 213, 0.25)!important;
@@ -143,16 +160,38 @@
 	#cloud_filelist > tr,
 	#cloud_loaded:hover,
 	#installed {
-		background: rgb(48, 48, 53)!important;
+		background: #213132!important;
 		border: none!important;
 		box-shadow: none!important;
 	}
 	/*行号右边的边框*/
 	.CodeMirror-gutters {
-		border-right: 2px solid #626262!important;
+		border-right: 2px solid #a6a6a6!important;
 	}
 	.CodeMirror-lint-markers {
 		width: 12px!important;
+	}
+	#style-panel > div > div.action > div > div,
+	#style-panel > div > div.action > div > ul {
+		width: 157px!important;
+	}
+	.mdl-menu__item {
+		color: rgb(187, 187, 187)!important;
+	}
+	.mdl-menu .mdl-menu__item.active {
+		color: #ff4081!important;
+	}
+	#style-panel > div > div.action > div > ul > li {
+		width: 125px!important;
+	}
+	.mdl-menu__outline,
+	#style-panel > div > div.action > div > ul > li.mdl-menu__item.mdl-js-ripple-effect.active {
+		background: rgb(85, 85, 85)!important;
+	}
+	#style-panel > div > div.action > div > ul > li:hover,
+	#style-panel > div > div.action > div > ul > li.mdl-menu__item.mdl-js-ripple-effect.active:hover {
+		background: rgb(75, 75, 75)!important;
+		width: 157px!important;
 	}
 	/*样式列表*/
 	#installed > section {
@@ -167,21 +206,55 @@
 		margin-left: 12px!important;
 	}
 	#installed .mdl-list__item {
-		width: calc(100% - 15px)!important;
+		width: calc(100% - 14px)!important;
 		background: rgb(85, 85, 85)!important;
 		border-radius: 10px!important;
 		margin-bottom: 15px!important;
 		margin-left: 7px!important;
 		transition: all .25s!important;
 	}
+	#installed .mdl-list__item:nth-child(1) {
+		margin-top: 13px!important;
+	}
+	#installed .mdl-list__item-avatar {
+		width: 60px!important;
+		height: 60px!important;
+		color: #89d719!important;
+		font-size: 35px!important;
+		line-height: 60px!important;
+		margin-top: 3px!important;
+		border-radius: 10px!important;
+		font-weight: bold!important;
+	}
+	span.mdl-list__item-primary-content > span.mdl-list__item-sub-title > a.mdl-button.mdl-js-button.mdl-button--icon.delete:hover,
+	span.mdl-list__item-primary-content > span.mdl-list__item-sub-title > a.mdl-button.mdl-js-button.mdl-button--icon.edit {
+		background: transparent!important;
+	}
+	span.mdl-list__item-primary-content > span.mdl-list__item-sub-title > a.mdl-button.mdl-js-button.mdl-button--icon.edit > i:hover {
+		color: #ffc524!important;
+	}
+	span.mdl-list__item-primary-content > span.mdl-list__item-sub-title > a.mdl-button.mdl-js-button.mdl-button--icon.delete > i:hover,
+	#installed > section > div.mdl-card__actions.mdl-card--border > a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.delete:hover {
+		color: rgb(255, 0, 0)!important;
+		background: transparent!important;
+	}
 	#installed .mdl-list__item:hover,
 	#installed > section:hover {
 		background: rgb(77, 77, 77)!important;
 		transition: all .25s!important;
 	}
-	code,
+	.mdl-list::-webkit-scrollbar {
+		width: 0px!important/*垂直滚动条的宽*/
+		;
+		height: 0px!important/*水平滚动条的高*/
+		;
+		background-color: rgba(13, 173, 253, 0)!important;
+	}
+	code {
+		background: rgba(255, 255, 255, 0)!important;
+	}
 	#cloud_filelist > tr:hover {
-		background: rgb(68, 68, 68)!important;
+		background: rgba(63, 82, 181, 0.3)!important;
 	}
 	#disable-all-container,
 	#header > div > nav > div.mdl-menu__container.is-upgraded.is-visible > div {
@@ -231,6 +304,14 @@
 	span.CodeMirror-matchingbracket,
 	a.style-name {
 		color: #89d719!important
+	}
+	#disable-all-container > label > div.mdl-switch__track {
+		position: absolute;
+		left: -4px!important;
+	}
+	#disable-all-container > label > div.mdl-switch__thumb {
+		position: absolute!important;
+		left: 14px!important;
 	}
 	.close,
 	#help-popup {
@@ -332,7 +413,7 @@
 	,
 	#gt_connect/*连接*/
 		{
-		border-radius: 15px!important;
+		border-radius: 8px!important;
 		background-image: linear-gradient(90deg, rgb(107, 75, 181) 0, rgb(196, 48, 211));
 		transition: all 0.5s!important;
 	}

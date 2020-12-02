@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Dark Twitch -by NORWIN-10.2020
+@name           Dark Twitch -by NORWIN-12.2020
 @namespace      USO Archive
 @author         Norwin
 @description    `Dark Twitch -by NORWIN--testet with Chrome & Firefox-`
-@version        2020105.22.13
+@version        2020122.10.39
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,8 +72,7 @@ input.text, input.countries-input, input.string, textarea, .tw-input, .tw-textar
 
 /***top nav***/
 #root .top-nav__menu, #root .minimal-top-nav__menu{background:#212121 url(https://file1.hpage.com/010270/19/bilder/commentsback1.jpg)!important;border-bottom: none!important;box-shadow:none!important;}
-.prime-offer-list--vertical .prime-offer-list__content:after, .prime-offer, .search-result-section__titlesep, .tw-pill--brand, .bits-buy-card-offer-row{background: transparent!important;border:none!important;}
-[data-a-target="user-menu-toggle"]:hover{background: #212121!important;box-shadow:none!important;border:none!important;}
+.prime-offer-list--vertical .prime-offer-list__content:after, .prime-offer, .search-result-section__titlesep, .tw-pill--brand, .bits-buy-card-offer-row, html body #root [data-test-selector="user-menu__toggle"] div{background: transparent!important;border:none!important;background-color: transparent!important;}
 .tw-interactable--alpha:hover:not([data-a-target="whisper-box-button"]){background: #333!important;box-shadow:none!important;border:none!important;}
 :focus {outline:none!important}
 /***left nav***/
@@ -92,6 +91,7 @@ input.text, input.countries-input, input.string, textarea, .tw-input, .tw-textar
 .chat-line__message .mention-fragment, .chat-room, .rooms-header, .stream-chat-header {background: transparent !important;}
 .tw-tooltip, .tw-tooltip:after {background:#0e0c13!important}
 .chat-line__message-body--highlighted {background: #444!important;border: 4px solid #444!important;}
+.reply-context-pill{background: #444!important;}
     /*chatpopup*/
     .popout-chat-page, [data-a-page-loaded-name="PopoutChatPage"] .room-selector{background:#212121 url(https://file1.hpage.com/010270/19/bilder/commentsback1.jpg)!important;}
     .tw-root--hover .tw-c-background-alt, .chat-room__content.tw-c-text-base{background: transparent!important;border:none!important;}
@@ -142,7 +142,7 @@ main *{border:none!important;}
 .channel-header__user-avatar:after, .channel-header__item--selected:after, .channel-header__item--selected:hover:after, .channel-header__item:active:after{border-bottom-color: #bbb!important;}
 
 .channel-info-bar{background: #333!important;box-shadow:none!important;border: none!important;}
-#root .tw-c-background-accent-alt-2, #root .tw-c-background-base:not(.whispers-threads-box__container):not(.top-nav__menu):not(.rooms-header):not(.stream-chat-header), .tw-c-background-base:not(.whispers-threads-box__container):not(.top-nav__menu):not(.rooms-header):not(.stream-chat-header), .modal__backdrop .tw-c-background-base, .tw-balloon, [data-a-target="threads-box-open"]{background-color: #212121!important;box-shadow:none!important;border: none!important;}
+#root .tw-c-background-accent-alt-2, .tw-c-background-base:not(.whispers-threads-box__container):not(.top-nav__menu):not(.rooms-header):not(.stream-chat-header), .tw-c-background-base:not(.whispers-threads-box__container):not(.top-nav__menu):not(.rooms-header):not(.stream-chat-header), .modal__backdrop .tw-c-background-base, .tw-balloon, [data-a-target="threads-box-open"]{background-color: #212121!important;box-shadow:none!important;border: none!important;}
 #root .tw-c-background-alt-2, #root .tw-c-background-alt, [data-a-target="threads-box-closed"]{background: transparent!important;box-shadow:none!important;border: none!important;}
 
 .tw-interactable--alt, .tw-tag{background:transparent!important; box-shadow:none!important;border:none!important}

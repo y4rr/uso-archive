@@ -2,454 +2,339 @@
 @name           eVirtual - UTM Modo Oscuro
 @namespace      USO Archive
 @author         Señor C.
-@description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        20201121.2.18
+@description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
+@version        2020122.2.29
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-/*okey, primero antes que nada, este código css esta muy desorganizado xd, gracis por su atención xD*/
-
-@-moz-document url("https://evirtual.utm.edu.ec/my/") {
-#page-my-index {
-
-    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
-
-}
-}
-
-@-moz-document url("https://evirtual.utm.edu.ec/my/index.php") {
-#page-my-index {
-
-    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
-
-}
-}
-
-@-moz-document url("https://evirtual.utm.edu.ec/?redirect=0") {
-body{
-
-    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
-	color: #f8f8f8;
-}
-}
-
 @-moz-document domain("evirtual.utm.edu.ec") {
-
-
-
-.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well{
-
-        background-color: #121212;
-	border: 1px solid #d1d8e0;
+body {
+    color: #d1d8e0 !important;
+    background:#000!important;
+    background:url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg) !important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-attachment: fixed !important;
 }
-
-body{
-
-    color: #d1d8e0;
-        background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
+/*----------Login----------*/
+.card-header {
+    background-color: #121212!important;
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
-
-#region-main{
-background-color: #121212;
-    border: 1px solid #d1d8e0;
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x200/1605811633/logo_utm_evirtual.png"]{
+		box-sizing:border-box!important;
+        width: 266px!important;
+        height:200px!important;
+        padding-left:266px!important; 
+        background: 		 	url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg)!important;
+        background-size: contain!important;
 }
-
-a{
-    color: #b2eb83;
+.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well {
+    background-color: #111111!important;
+    border: 1px solid rgba(0,0,0,.125);
 }
-
-a:hover{
-color: #fcffff;
-}
-
-[data-region="drawer"] {
-background-color: #252525;
-}
-
-.bg-white{
-background-color: #2e2e2e !important;
-}
-
-.bg-gray{
-background-color: #252525 !important;
-}
-
-.btn, #page-grade-grading-manage .actions .action{
-color: #eef3f9;
-}
-
-
-.btn-light{
-border-color: #252525;
-}
-
-
-a.bg-gray:hover, button.bg-gray:hover, a.bg-gray:focus, button.bg-gray:focus {
-    background-color: gray !important;
-}
-
-
-
-.btn-light:hover {
-    color: #d1d8e0;
-
-    border-color: gray;
-}
-
-.navbar-light .navbar-brand {
-    color: #ececec;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #8d8d8d;
-}
-
-.usermenu .login a {
-    color: #a9e899;
-}
-
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: white;
-}
-
-
-.dropdown-menu {
-	color: white;
-    background-color: #2e2e2e;
-    border: 1px solid gray;
-    
-
-}
-
-.dropdown-item {
-	
-    color: white;
-
-}
-
-
-.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-    color: white;
-}
-
-
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: #ececec;
-}
-
-
-.usermenu .login a:hover, .usermenu .login a:focus {
-    color: white;
-}
-
-
-.list-group-item {
-    position: relative;
-    display: block;
-    padding: .75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: #121212;
-    border: 1px solid #d1d8e0;
-}
-
-
-.list-group-item-action {
-
-    color: #d1d8e0;;
-
-}
-
-
-.list-group-item-action:hover, .list-group-item-action:focus {
-    color: black;
-    background-color: grey;
-}
-
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: #d1d8e0;
-    background-color: #121212;
-    border-color: #dee2e6 #dee2e6 #121212 #dee2e6;
-}
-
-
-.btn-secondary, .btn-default {
-
-    background-color: black;
-
-}
-
-
-.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
-    color: #ffffdd;
-    background-color: black;
-}
-
-
-
-
-.cell{
-color: #d1d8e0;
-}
-
-
-
-/*--------UPDATE XD---------*/
-
-
-.no-overflow div h2 span{
-color: #D1d8e0 !important;
-}
-
-.no-overflow p{
-color: #B4B4B4 !important;
-}
-
-.no-overflow td{
-color: #B4B4B4 !important;
-}
-
-.no-overflow div{
-color: #b2eb83 !important;
-}
-
-.no-overflow .editor-indent{
-color: #B4B4B4 !important;
-}
-.no-overflow .editor-indent b{
-color: #B4B4B4 !important;
-}
-.no-overflow .editor-indent ul li{
-color: #B4B4B4 !important;
-}
-
-
-.editor-indent table{
-color: #F5F5F5 !important;
-}
-.editor-indent{
-color: #D1d8e0 !important;
-}
-.editor-indent p{
-color: #B4B4B4 !important;
-}
-
-
-.mb-3 .nav-item .nav-link div{
-background:#121212 !important;
-}
-
-
-
-.sectionname{
-color: #b2eb83;
-}
-
-
-
-.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {
-    color: rgb(222,222,222);
-    background-color: #19331b;
-}
-
-/*------------------------------*/
-.custom-select.urlselect{
-filter: invert(100%);
-}
-
-.custom-select:focus {
-    border-color: #EC70E0;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0,70,0,.25);
-    box-shadow: 0 0 0 0.2rem #FFD3FB;
-}
-
-.custom-select.urlselect option{
-background: black;
-    color: #D1d8e0 !important;
-}
-.region_main_settings_menu_proxy {
-    background-color: #121212;
-}
-.form-control{
-background:#585858;
-    border: #1a1a1a
+.form-control {
+    color: #b6bec6!important;
+    background-color: #121212!important;
+   /* border: 1px solid #ced4da;*/
 }
 .form-control:focus {
-    color: white;
-    background-color: #767676;
-    border-color: #D1d8e0;
-    box-shadow: 0 0 0 0.2rem rgba(209,216,224,.25);
+    color: #b6bec6!important;
+    background-color: #121212!important;
+    /*border-color: #00c600;*/
 }
-.gameattemptsummary .header{
-color: rgb(222,222,222);
+a {
+    color: #a6e496!important;
 }
-.generaltable.gameattemptsummary{
-border: 1px solid gray;
+a:hover {
+    color: #fff!important;
 }
-
-.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
-    color: rgb(225,225,225);
-    background-color: #19331b;
+.alert-danger, #page-admin-index .adminerror {
+    color: #ffb9ab!important;
+    background-color: #422d2c!important;
 }
 
-.gradingform_rubric .criterion.even {
-    background: #3B7340;
+/*----------Area Personal----------*/
+.col-12 > .card.border-0.bg-transparent{
+background-color: transparent !important;
 }
 
-.gradingform_rubric .criterion .levels .level .score {
-    color: white;
+.btn-secondary, .btn-default {
+    color: #eef3dc!important;
+    background-color: #383d42!important;
+    border-color: #383d42!important;
+}
+.btn-secondary:hover, .btn-default:hover {
+    color: #212529!important;
+    background-color: #b8c1ca!important;
+    border-color: #b1bbc4!important;
+}
+.bg-white { 									/*la barra de navegación*/
+    background-color: #121212!important;
+}
+.navbar-light .navbar-brand {
+    color: #e8e8e8!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #868686!important;
 }
 
-.table-hover tbody tr:hover, table.grading-report tbody tr:hover, .forumheaderlist tbody tr:hover, .generaltable tbody tr:hover, table.flexible tbody tr:hover, .category_subcategories tbody tr:hover, table#modules tbody tr:hover, table#permissions tbody tr:hover {
-    color: white;
-    background-color: rgba(0,0,0,.080);
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logocompact/300x300/1605811633/logo_utm_evirtual.png"]{
+	box-sizing:border-box!important;
+    width: 300px!important;
+    max-width: 47px !important;
+    height:225px!important;			/*logotipo de la barr de navegación*/
+  	max-height: 35px !important;
+    padding-left:47px!important; 
+    background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg)!important;
+        background-size: contain!important;
 }
-
-.db textarea{
-background: black;
-    color: rgb(222,222,222) !important;
+.bg-gray {
+    background-color: #272a2c!important;
 }
-
-.table, table.collection, table.flexible, .generaltable {
-    color: rgb(225,225,225);
+.btn-light {
+    color: #eef3f9!important;
+    border-color: #1f2021!important;
 }
-
-.select.custom-select.cal_courses_flt{
-filter: invert(100%);
+a.bg-gray:hover, button.bg-gray:hover, a.bg-gray:focus, button.bg-gray:focus {
+    background-color: #383e44!important;
 }
-.select.custom-select.cal_courses_flt option{
-background: black;
-    color:rgb(222,222,222);
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #e8e8e8!important;
 }
-
-.modal-content, .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content {
-    background-color: black;
+.dropdown-menu {				/*menú de idioma*/
+    color: #fdfff1 !important;
+    background-color: #121212 !important;
+    border: 1px solid #1a1b1c !important;
 }
-
-.custom-select{
-filter:invert(100%);
-}
-.custom-select option{
-background:black;
-    color:rgb(222,222,222);
-}
-.close{
-color:white;
-}
-
-.close:hover, .moodle-dialogue-base .closebutton:hover {
-    color: white;
-}
-
-.icon.fa.fa-eye.fa-fw{
-color: black
-} 
-
-.fp-content-center{
-background: black;
-}
-
-.file-picker .fp-content {
-    background: black;
-}
-
-.fp-iconview .fp-filename-field .fp-filename {
-    background: black;
-}
-
-.yui3-skin-sam .yui3-datatable-odd .yui3-datatable-cell {
-    background-color: #1A1919;
-}
-
-.yui3-skin-sam .yui3-datatable-even .yui3-datatable-cell {
-    background-color: #3F3F3F;
-}
-
-.yui3-datatable-columns tr{
-filter:invert(100%);
-}
-.yui3-skin-sam .yui3-datatable-data .yui3-datatable-even .yui3-datatable-sorted {
-    background-color: #3F3F3F;
-}
-
-.yui3-skin-sam .yui3-datatable-data .yui3-datatable-odd .yui3-datatable-sorted {
-    background-color: #1A1919;
-}
-
-/*-----fin de la updte xd--------*/
-
-/*------------------------miniagregadoxd--------------------------------*/
-.dropdown-menu.dropdown-menu-right.menu.align-tr-br.show .dropdown-item a{
-color:rgb(222,222,222);
+.dropdown-item {
+     color: #fdfff1 !important;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-    color: rgb(222,222,222);
-    text-decoration: none;
-    background-color: black;
+    background-color: #1f2021!important;
 }
-.row-fluid {
- background:black;
+.popover-region-container {				
+    border: 1px solid #343434 !important;			/*notificaciones*/
+    background-color: #121212 !important;
 }
-.bg-light {
-    background-color: #1a1a1a!important;
+.popover-region-header-container {
+    border-bottom: 1px solid #343434 !important;
+}
+.popover-region-footer-container {
+    border-top: 1px solid #343434 !important;
+    background-color: #121212 !important;
+}
+.popover-region-toggle::after {
+    border-bottom: 9px solid #121212 !important;
+}
+.popover-region-toggle::before {
+    border-bottom: 10px solid #343434 !important;
 }
 
-.message-app .message.send {
-    background-color: gray;
-    color: black;
+.border-bottom {									/*mensajes*/
+    border-bottom: 1px solid #2e3235!important;
 }
-.message-app .message.send .tail {
-    border-bottom-color: gray;
+.message-app {
+    background-color: #242627 !important;
+}
+.list-group-item {
+    background-color: #121212 !important;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.list-group-item-action {
+    color: #d1d8e0 !important;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    color: #b6bec6!important;
+    background-color: #1f2021!important; 
+}
+.list-group-item-action:active {
+    color: #d1d8e0 !important;
+    background-color: #272a2c !important;
+}
+.message-app a, .message-app .btn-link, .message-app .btn.btn-icon, .message-app #page-grade-grading-manage .actions .btn-icon.action, #page-grade-grading-manage .actions .message-app .btn-icon.action {
+    color: #d1d8e0 !important;
+}
+#view-overview-messages-toggle{
+background: #101010 !important;
 }
 .message-app .btn.btn-link.btn-icon:hover, .message-app #page-grade-grading-manage .actions .btn-link.btn-icon.action:hover, .message-app #page-grade-grading-manage .actions .btn-icon.action.btn:hover, .message-app #page-grade-grading-manage .actions #page-grade-grading-manage .actions .btn-icon.action:hover, #page-grade-grading-manage .actions .message-app #page-grade-grading-manage .actions .btn-icon.action:hover, #page-grade-grading-manage .actions .message-app .btn-link.btn-icon.action:hover, .message-app .btn.btn-icon:hover, .message-app #page-grade-grading-manage .actions .btn-icon.action:hover, #page-grade-grading-manage .actions .message-app .btn-icon.action:hover, .message-app .btn.btn-link.btn-icon:focus, .message-app #page-grade-grading-manage .actions .btn-link.btn-icon.action:focus, .message-app #page-grade-grading-manage .actions .btn-icon.action.btn:focus, .message-app #page-grade-grading-manage .actions #page-grade-grading-manage .actions .btn-icon.action:focus, #page-grade-grading-manage .actions .message-app #page-grade-grading-manage .actions .btn-icon.action:focus, #page-grade-grading-manage .actions .message-app .btn-link.btn-icon.action:focus, .message-app .btn.btn-icon:focus, .message-app #page-grade-grading-manage .actions .btn-icon.action:focus, #page-grade-grading-manage .actions .message-app .btn-icon.action:focus {
-    background-color: #e9ecef;
-    color:black;
+    background-color: #272a2c !important;
+    color: #d1d2d3 !important;
+}
+.message-app .message.received {
+    background-color: #121212!important;
+    color: #eef3f9!important;
+}
+.message-app .message.received .tail {
+    border-bottom-color: #121212 !important;
+}
+.message-app .message.send {
+    background-color: #4d4d4d !important;
+    color: #eef3f9!important;
+}
+.message-app .message.send .tail {
+    border-bottom-color: #2e3235 !important;
+}
+.message-app .message.send .time {
+    color: #eef3d9 !important;
+}
+.message-app .day {
+    color: #eef3d9 !important;
+}
+.border-top {
+    border-top: 1px solid #2e3235!important;
+}
+span > .fa-star:before {
+    color: #a6e496!important;
+}
+a.mail-navbar-menu-item {
+    border-bottom: 1px solid #343434;				/*mail*/
+    color: #e5e8ea !important;
+}
+a.mail-navbar-menu-item:focus, a.mail-navbar-menu-item:hover {
+    background-color: #343434!important;
+}
+[data-region="drawer"] {				/*----barra lateral izquierda----*/
+    background-color: #252525!important;
+}
+.list-group-item.active {
+    color: #fff!important;
+    background-color: #004600 !important;
+    border-color: #004600!important;
+}
+/*----------inicio del sítio----------*/
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x150/1605811633/logo_utm_evirtual.png"]{
+	box-sizing:border-box!important;
+    width: 200px!important;
+    max-width: 100px !important;
+    height:150px!important;
+  	max-height: 75px !important;
+    padding-left:100px!important; 
+    background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg)!important;
+        background-size: contain!important;
+}
+.pb-3 > div #region-main {
+    border: 1px solid #101010!important;
+    background-color: #121212!important;
+}
+.courses .coursebox.even {
+    background-color: rgba(0,0,0,.2) !important;
+}
+/*-----------calendario----------*/
+.cal_courses_flt {
+    color: #747c84 !important;
+    background: #121212 !important;
+    border: 1px solid #383d42!important;
+}
+.modal-content, .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content {
+    background-color: #121212 !important;
+    border: 1px solid rgba(0,0,0,.2);
+}
+.calendar_event_course {
+    color: black !important;
+}
+.modal-footer, .moodle-dialogue-base .moodle-dialogue .moodle-dialogue-content .moodle-dialogue-ft {
+    border-top: 1px solid #2e3235 !important;
+}
+.modal-header, .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd, .path-mod-assign [data-region="grade-panel"] .popout>.col-md-3 {
+    border-bottom: 1px solid #2e3235 !important;
+}
+.fa-eye:before {
+    color: black !important;
+}
+.calendar_event_course a {
+    color: black !important;
+}
+.custom-select {
+    color: #b6bebb !important;
+    background-color: #121212 !important;
+    border: 1px solid #383d42 !important;
+}
+.mform fieldset {
+    border-bottom: 1px solid #2e3235 !important;
+}
+.close, .moodle-dialogue-base .closebutton {
+    color: gray !important;
+    opacity: .5;
+}
+.close, .moodle-dialogue-base .closebutton :hover{
+    color: green !important;
+    opacity: .5;
+}
+/*----------MATERIAS----------*/
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #b6bec6 !important;
+    background-color: #121212!important;
+    border-color: #dee2e6 #dee2e6 transparent #dee2e6 !important;
+}
+p{
+color: #d5d7d5 !important;
+}
+strong {
+color: #8f9693 !important;
+}
+td > strong {
+color: #d5d7d5 !important;
+}
+td{
+color: #d5d7d5 !important;
 }
 
-
-.content-message-container{
-background:black;
+.editor-indent{
+color: #d5d7d5 !important;
 }
-
-.border-bottom {
-background:black;
+h2> span > b {
+color: #8f9693 !important;
 }
-
-.h-100.view-overview-body{
-background:black;
+h2> span > strong {
+color: #8f9693 !important;
 }
-
-.footer-container{
-background:#1a1a1a;
+ol{
+color: #a6e496!important;
 }
-
-.tab-pane.fade.show.active{
-background:black;
+.region_main_settings_menu_proxy {
+    background-color: #121212 !important;
 }
-body:not(.behat-site) .switch input:checked+label::before {
-    background-color: #b2eb83;
+p > span {
+color: #d5d7d5 !important;
 }
-
-.body-container{
-background: black;
+/*-----*/
+.table, table.collection, table.flexible, .generaltable {
+    color: #d5d7d5 !important;
 }
-
-.icon.fa.fa-star.fa-fw {
-color: #b2eb83;
+/*----------deberes----------*/
+.table-hover tbody tr:hover, table.grading-report tbody tr:hover, .forumheaderlist tbody tr:hover, .generaltable tbody tr:hover, table.flexible tbody tr:hover, .category_subcategories tbody tr:hover, table#modules tbody tr:hover, table#permissions tbody tr:hover {
+    color: #d1d8e0 !important;
+    background-color: rgba(255,255,255,.075)!important;
 }
-.icon.fa.fa-microphone-slash.fa-fw {
-color: #b2eb83;
+.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {
+    color: #fff!important;
+    background-color: #000!important;
 }
-
-
-/*-------------------findel mini agrgado xd--------------------------------*/
-
-
-
+.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded {
+   color: #fff!important;
+    background-color: #000!important;
+}
+.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
+   color: #fff!important;
+    background-color: #000!important;
+}
+textarea{
+ color: #fff!important;
+    background-color: #000!important;
+}
+.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
+    color: #fff!important;
+    background-color: rgba(100,100,100,1)!important;
+}
+/*----------TESTE-----------*/
+.moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
+    color: white !important;
+}
 /*AGREGADO PARA LOS EXAMENES xd*/
-.que .info {
+
+ .que .info {
     background-color: black;
 }  
 
@@ -459,27 +344,13 @@ color: #b2eb83;
     border-color: #d1edf6;
 }
 
-.path-mod-quiz #mod_quiz_navblock .qnbutton {
-    
-    background-color: #000000;
-    
-}
+
 
 .path-mod-quiz #mod_quiz_navblock .qnbutton.notyetanswered .trafficlight, .path-mod-quiz #mod_quiz_navblock .qnbutton.invalidanswer .trafficlight {
     background-color: #1a2a2f;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: black;
-    border-color: white;
-}
 
-.btn-primary:hover {
-    color: #212529;
-    background-color: #b8c1ca;
-    border-color: #b1bbc4;
-}
 
 .alert-info a, #page-admin-index .releasenoteslink a, #adminsettings .form-overridden a, .que .formulation a, .assignfeedback_editpdf_widget .label a {
     color: #82b6c6;
@@ -511,144 +382,32 @@ background: rgb(30,30,30);
 .message-app .message.received .tail {
     border-bottom-color: rgb(30,30,30);
 }
+.btn-secondary, .btn-default {
+    color: #eef3dc!important;
+    background-color: #004600!important;
+    border-color: #383d42!important;
+}
+.btn-secondary:hover, .btn-default:hover {
+    color: #fff!important;
+    background-color: #002000!important;
+    border-color: #001300!important;
+}
+.btn-secondary, .btn-default {
+    color: #eef3dc!important;
+    background-color: #383d42!important;
+    border-color: #383d42!important;
+}
 
+.path-mod-quiz #mod_quiz_navblock .qnbutton {
+    background-color: #000 !important;
+}
+.btn-secondary, .btn-default {
+    color: #fff!important;
+    background-color: #004600!important;
+    border-color: #001300!important;
+}
 /*fin del agregado xd*/
 
 
-/*-----*/
-.filepicker-filelist .dndupload-target, .filemanager-container .dndupload-target {
-    background: rgb(30,30,30);
-       border: 2px dashed #b2eb83;
-}
-.btn-secondary, .btn-default {
-  
-    border-color: white;
-}
-
-.btn, #page-grade-grading-manage .actions .action {
-    color: white;
-}
-
-
-
-.form-control {
-    color: white;
-}
-
-/*Actualizacion que hicieron estos cabros xd*/
-
-.box .search-block h2 {
-color: #b2eb83;
-}
-.box .search-block form#coursesearch {
-    background: #424242;
-}
-#coursesearch .coursesearchbox {
-    background: #121212;
-    border: 1px solid black;
-}
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .atto_form textarea.fullwidth, .atto_form input.fullwidth {
-    border: 1px solid black;
-     background: #424242;
-    color:white;
-}
-.pagelayout-login #region-main .card form input:focus {
-    background: #424242;
-}
-label {
-    font-size: 16px;
-    color: #999999;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: #999999;
-}
-
-.icon-no-margin .icon {
-  /* color:black;*/
-}
-.dropdown-toggle::after {
-   /* color: black !important;*/
-}
-.btn-outline-secondary {
-    border-color: white;
-}
-.duration_finish a{
-color: black !important; 
-}
-.breadcrumb>li>a {
-   color: #b2eb83;
-}
-/*-fin de actualizacion xd-*/
-
-/*la nueva imagen que pusieron xd*/
-img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logocompact/300x300/1605811633/logo_utm_evirtual.png"]{
-box-sizing:border-box;
-       
-    	    width: 300px;
-    max-width: 47px !important;
-        height:225px;
-  		  max-height: 35px !important;
-        padding-left:47px; 
-        background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
-        background-size: contain;
-}
-
- img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x150/1605811633/logo_utm_evirtual.png"]{
-box-sizing: border-box;
-    width: 200px;
-    max-width: 100px;
-    height: 150px;
-    max-height: 75px !important;
-    padding-left: 100px;
-    background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
-    background-size: contain;
-}
-
-
-img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x200/1605811633/logo_utm_evirtual.png"]{
-
-box-sizing:border-box;
-       
-    	    width: 266px;
-        height:200px;
-        padding-left:266px; 
-        background: url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg);
-        background-size: contain;
-}
-
-.btn, #page-grade-grading-manage .actions .action {
-    background-color: #004600;
-}
-/**/
-
-
-
-
-
-
-
-
-
-
-
-}
-
-@-moz-document url-prefix("https://evirtual.utm.edu.ec/course") {
-body{
-
-    background: url(https://raw.githubusercontent.com/vednoc/dark-whatsapp/master/images/bg-blur-high.jpg);
-
-}
-
-p {
- 
-    color: #d1d8e0;
-}
-
-
-
-
-strong{
- color: #d1d8e0;
-}
+/*Angie, si lees esto, TE AMOO <3!!!!!!!!*/
 }
