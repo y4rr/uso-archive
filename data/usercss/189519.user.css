@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         moonflame
 @description    `BaiduXs - 多栏卡片样式，自动调整 1~4 列。清爽简洁，无广告。与其他多列样式有何不同？简洁克制的动画；适配更多类型的搜索卡片，如：购物、oschina 开源项目、招聘等；保留部分实用信息，不过度隐藏内容以达到简洁；更加紧凑，多数情况下无需滚轮就能看完一页结果。本样式仅适用于【百度搜索结果页】，但通过百度首页右上角的设置，实现简洁的【百度首页】：设置 - 搜索设置 - 首页设置 - 关闭天气模块，换肤活动；设置 - 隐藏资讯；设置 - 更换皮肤 - 不使用换肤。请随意留下意见或建议。如果喜欢，也请登录打好评，感谢支持。站在巨人的肩膀上：本样式基于 BaiduX，但该样式很久没更新了：<a href="http://userstyles.org/styles/158871">BaiduX 极简百度</a>BaiduX 基于百度多栏，原作者诈尸更新了：<a href="https://userstyles.org/styles/158844">百度多栏卡片搜索</a>`
-@version        2020122.3.29
+@version        2020123.1.29
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown direction "卡片排列方向（横/竖）" {
@@ -308,8 +308,8 @@ a:hover {
 /* 缩小条目纵向间距 */
 #container.sam_newgrid #content_left .result-op,
 #container.sam_newgrid #content_left .result {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 /* 底部相关搜索样式 */
 #rs .new-pmd .tt {

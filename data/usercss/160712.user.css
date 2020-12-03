@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         依云
 @description    `Make GitHub like in the old good days: white topbar, square avatars, save spaceNote: Not tested on mobile devices.`
-@version        20201117.7.59
+@version        2020123.5.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("github.com"), regexp("^https://github\\.com/.*") {
+@-moz-document domain("gist.github.com"), regexp("^https://github\\.com/.*") {
 [role=banner], body > div:first-of-type {
   border-bottom: 1px solid #E5E5E5 !important;
   background-color: #F5F5F5 !important;

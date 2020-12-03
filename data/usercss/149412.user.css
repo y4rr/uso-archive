@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ghost_throw
 @description    `Something Awful Dark Theme (by Grump on SA say hi or somethin)`
-@version        2020122.23.55
+@version        2020123.0.58
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -132,6 +132,7 @@
   .forumlist_container div,
   .mainbodytextsmall,
   #copyright a,
+  #nav_purchase a,
   .threadlist td.views,
   .search_container #search_info {
     color: #d6d5d5 !important;
@@ -152,6 +153,7 @@
   }
 
   .navigation li a,
+  #nav_purchase a,
   #usercpnav a {
     font-weight: normal !important;
   }
@@ -185,10 +187,10 @@
   }
   /* start annoucements styles */
   .announcement .postbody,
-  #nav_purchase,
   .forumlist_container,
   .forumlist_container .hover,
   .search_container #search_info,
+  #nav_purchase,
   .navigation {
     background: #363636 !important;
     color: wheat !important;

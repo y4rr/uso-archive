@@ -3,43 +3,44 @@
 @namespace      USO Archive
 @author         Cyrille Jouineau
 @description    `Make the number of days in a column explicitly shown on every card`
-@version        201928.11.41
+@version        2020123.9.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://jira") {
-.ghx-issue {
-    margin-bottom: 6px;
+.ghx-issue .ghx-days {
+    width: 0;
+    height: 0;
 }
 
 .ghx-issue:hover .ghx-days::before {
     opacity: 1;
-}
-
-.ghx-extra-field[data-tooltip="Labels: None"] {
-    display: none !important;
+    right: 0;
 }
 
 .ghx-days::before {
-    content: attr(title);
+    content: attr(data-tooltip);
+    position: absolute;
+    right: -8px;
+    top: 0;
     display: block;
-    padding: 2px 6px 1px;
+    padding: 2px 2px 2px 4px;
     background: #d00;
     color: #fff;
+    border-bottom-left-radius: 4px;
     font: 11px/1 arial, sans-serif;
     text-align: center;
-    opacity: .5;
+    opacity: 0;
+    transition: opacity .3s, right .3s;
 }
 
-.ghx-days[title="0 days in this column"]::before,
-.ghx-days[title="1 day in this column"]::before,
-.ghx-days[title="2 days in this column"]::before,
-.ghx-days[title="3 days in this column"]::before {
+.ghx-days[data-tooltip="0 days in this column"]::before,
+.ghx-days[data-tooltip="1 day in this column"]::before,
+.ghx-days[data-tooltip="2 days in this column"]::before,
+.ghx-days[data-tooltip="3 days in this column"]::before,
+.ghx-days[data-tooltip="4 days in this column"]::before,
+.ghx-days[data-tooltip="5 days in this column"]::before {
     background: #999;
 }
 
-
-.ghx-days > b {
-    display: none;
-}
 }

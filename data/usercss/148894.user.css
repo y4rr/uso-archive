@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ウインドウ幅に応じてエディタの幅が変化します。 このため、ブログ本文幅を720px以上に拡張したスキンを余裕を持って編集出来ます。 また「新タグ編集エディタ」の3画面表示を使う場合などにも有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2020116.2.46
+@version        2020123.5.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete.do") {
-/* Ameblo Writer ver.40a 基本CSS ************************/
+/* Ameblo Writer ver.41 基本CSS ************************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -18,7 +18,7 @@ html {
     background: var(--bgc1) !important;
     box-shadow: 0 0 0 100vh var(--bgc1); }
 
-/* グローバルヘッダー */
+/* グローバルヘッダー *************************/
 .l-body #globalHeader {
     position: absolute;
     height: 0;
@@ -80,7 +80,7 @@ html {
     top: 7px;
     left: 0.2em; }
 
-/* 編集ヘッダー */
+/* 編集ヘッダー ******************************/
 #js-header-bar {
     position: absolute;
     top: 18px;
@@ -198,7 +198,7 @@ html {
     margin: 0;
     padding: 9px 25px 0 0; }
 
-/* 編集コンテナ メインフォーム */
+/* 編集コンテナ メインフォーム ******************/
 .l-form {
     position: relative;
     margin: 0 auto;
@@ -223,7 +223,7 @@ html {
 .l-main {
     margin-bottom: 0; }
 
-/* 編集枠 左パレット *********************/
+/* 編集枠 左パレット **************************/
 .l-editor {
     height: 576px;
     margin: 0 8px 8px 0;
@@ -266,7 +266,7 @@ html {
     background: #fff !important;
     border-color: var(--bdc2) !important; }
 
-/* 文字・段落 ダイアログ */
+/* 文字・段落 ダイアログ ***********************/
 .cke_combo {
     margin: 2px 6px 0 0; }
 
@@ -304,7 +304,7 @@ html {
 .cke_panel_listItem a:hover {
     background-color: #bbdefb; }
 
-/* カラー設定ダイアログ */
+/* カラー設定ダイアログ ***********************/
 .ck-p-colorPalette__separator,
 .ck-p-colorGenerator__Result,
 .ck-p-palette__button {
@@ -328,7 +328,7 @@ html {
     opacity: 1;
     filter: brightness(0%); }
 
-/* リンク設定ダイアログ */
+/* リンク設定ダイアログ ***********************/
 .ck-l-linkDialog {
     min-height: 200px;
     width: 480px;
@@ -375,7 +375,7 @@ html {
 .l-linkInfoBubble {
     z-index: 6; }
 
-/* 画像配置ダイアログ */
+/* 画像配置ダイアログ *************************/
 #js-ck-imgBalloon {
     border-color: var(--bdc1);
     background: #edf0f2;
@@ -405,7 +405,7 @@ html {
 .c-modal__inner {
     border-color: var(--bdc1); }
 
-/* 編集枠 */
+/* 編集枠 ***********************************/
 #cke_1_contents {
     height: 498px !important; }
 
@@ -516,7 +516,7 @@ html {
 .CodeMirror-gutters {
     background: var(--bgc2); }
 
-/* 右パレット ***************************/
+/* 右パレット ********************************/
 .l-sideModule {
     margin-top: 2px; }
 
@@ -767,7 +767,7 @@ html {
 .p-twitter__item:hover {
     background: #eee; }
 
-/* ハッシュタグ */
+/* ハッシュタグ *****************************/
 .l-hashtag {
     position: absolute;
     min-width: 310px;
@@ -866,7 +866,7 @@ html {
     height: 30px;
     line-height: 31px; }
 
-/* テーマ */
+/* テーマ **********************************/
 .p-theme {
     position: absolute;
     right: 0;
@@ -921,7 +921,7 @@ html {
     font-size: 16px;
     line-height: 31px; }
 
-/* カバー画像 */
+/* カバー画像 *******************************/
 .p-cover {
     display: flex;
     flex-direction: column;
@@ -1003,7 +1003,7 @@ html {
 #js-coverDelete:focus {
     box-shadow: none; }
 
-/* カバー設定ダイアログ */
+/* カバー設定ダイアログ ***********************/
 .CoverSelectModal__body {
     border: 1px solid var(--bdc1);
     background: #edf0f2; }
@@ -1014,11 +1014,12 @@ html {
 .CoverSelectModal__close__icon {
     font-size: 16px; }
 
-.CoverSelectContent {
-    border: none;
-    border-bottom: 1px solid #aaa; }
+/* カバー設定枠全体 */
+.CoverSelectContent__content,
+.CoverConfirmModalContent__content {
+    overflow-y: auto; }
 
-.CoverSelectContent__selectArea {
+.CoverEditor__selectArea {
     border-color: var(--bdc1); }
 
 /* 月選択ドロップダウンリスト */
@@ -1029,33 +1030,37 @@ html {
     height: 29px;
     padding: 3px 16px 0;
     border-radius: 4px;
-    border-color: #aaa; }
+    border-color: #aaa;
+    background: #fff; }
 
 .dropDown__selectWrapper:after {
     top: 15px;
     right: 6px; }
 
 /* サムネイル画像リスト */
-.CoverSelectContent__image {
+.CoverEditor__image {
     padding: 8px 4px;
     width: 476px;
     border-color: #aaa;
     background: #fff; }
 
-.CoverSelectContent__imageItem {
+.CoverEditor__imageList {
+    width: 460px; }
+
+.CoverEditor__imageItem {
     margin: 4px;
     border: 1px solid #ccc; }
 
-.CoverSelectContent__imageItem--selected:before {
+.CoverEditor__imageItem--selected:before {
     border: 4px solid red; }
 
 /* ブログプレビュー表示 */
-.CoverSelectContent__entryListPreview {
+.CoverEditor__entryListPreview {
     border-color: #aaa;
     background: #f8f8f8; }
 
 /* SNSブレビュー表示 */
-.CoverSelectContent__snsPreview {
+.CoverEditor__snsPreview {
     border-color: #aaa;
     background: #f8f8f8; }
 
@@ -1073,11 +1078,11 @@ html {
     background: #fff; }
 
 /* 投稿画像が無い場合の表示 */
-.CoverSelectContent__entryListPreview__empty,
-.CoverSelectContent__snsPreview__empty {
+.CoverEditor__entryListPreview__empty,
+.CoverEditor__snsPreview__empty {
     background-color: #fff; }
 
-/* 下部モジュール */
+/* 下部モジュール ****************************/
 .l-under-module {
     position: relative;
     min-width: 650px;
@@ -1121,7 +1126,7 @@ html {
     position: relative;
     top: 6px; }
 
-/* カレンダー */
+/* カレンダー *******************************/
 .l_calendar {
     top: -360px;
     left: -20px;
@@ -1177,7 +1182,7 @@ html {
     height: 30px;
     border-radius: 4px; }
 
-/* SNSボタン など */
+/* SNSボタン など ***************************/
 .l-communication {
     position: absolute;
     top: 38px;
@@ -1217,7 +1222,7 @@ html {
 a.p-communication__text {
     font-size: 14px; }
 
-/* 公開ボタン */
+/* 公開ボタン *******************************/
 .l-footer {
     padding: 0;
     border: none; }
@@ -1251,7 +1256,7 @@ a.p-communication__text {
 #globalFooter {
     display: none; }
 
-/* 同じウインドウ表示のプレビュー画面の修復 */
+/* 同じウインドウ表示のプレビュー画面の修復 *******/
 .p-preview {
     width: auto;
     background: none; }
@@ -1274,7 +1279,7 @@ a.p-communication__text {
 #js-preview-sp {
     background: var(--bgc1); }
 
-/* 入力枠フォーカス時のアウトライン色 */
+/* 入力枠フォーカス時のアウトライン色 ************/
 .editor-scope:focus,
 .editor-scope input:focus,
 .editor-scope select:focus,
@@ -1286,7 +1291,7 @@ a.p-communication__text {
 .l-hashtag button:focus {
     outline: none; }
 
-/* 黒背景バルーンのアレンジ */
+/* 黒背景バルーンのアレンジ ********************/
 .p-tooltip {
     margin-top: -13px;
     background-color: #03a9f4; }
@@ -1296,7 +1301,7 @@ a.p-communication__text {
     border-top: 11px solid #03a9f4;
     border-bottom: 0; }
 
-/* 編集データの無い特殊な状態でのエラー表示 */
+/* 編集データの無い特殊な状態でのエラー表示 *******/
 form > .error {
     position: absolute;
     top: 30px;
@@ -1315,7 +1320,7 @@ form > .error:after {
     left: 300px;
     white-space: nowrap; }
 
-/* 画像削除時のダイアログ */
+/* 画像削除時のダイアログ *********************/
 .imageDelete,
 .imageDelete__title,
 .imageDelete__button--delete,
@@ -2106,31 +2111,28 @@ i.p-cover__button__image {
 
 /* カバー設定ダイアログ */
 .CoverSelectModal__body,
-.dropDown__select {
+.dropDown__select,
+.CoverEditor__image {
     background: #0f5172; }
 
-.CoverSelectModal__close__icon {
-    color: #ccc; }
-
-.CoverSelectContent {
-    border-bottom: 1px solid var(--bdc1); }
-
+.CoverSelectContent__content,
 .dropDown__select,
-.CoverSelectContent__image,
-.CoverSelectContent__entryListPreview,
-.CoverSelectContent__snsPreview {
+.CoverEditor__image,
+.CoverEditor__entryListPreview,
+.CoverEditor__snsPreview {
     border-color: var(--bdc1); }
 
-.CoverSelectContent__title,
-.CoverSelectContent__description,
+.CoverEditor__title,
+.CoverEditor__description,
 .dropDown__selectWrapper:after,
-.CoverSelectContent__previewTitle {
+.CoverEditor__previewTitle {
     color: #eee; }
 
-.CoverSelectContent__yearLabel,
-.CoverSelectContent__icon,
-.CoverSelectContent__year,
-.dropDown__select {
+.CoverEditor__yearLabel,
+.CoverEditor__icon,
+.CoverEditor__year,
+.dropDown__select,
+.CoverSelectModal__close__icon {
     color: #fff; }
 
 .CoverSelectContent__actionButton {
@@ -2145,8 +2147,8 @@ i.p-cover__button__image {
     background: none; }
 
 /* 投稿画像が無い場合の表示 */
-.CoverSelectContent__empty__title,
-.CoverSelectContent__empty__description {
+.CoverEditor__empty__title,
+.CoverEditor__empty__description {
     color: #fff; }
 
 /* SNS */

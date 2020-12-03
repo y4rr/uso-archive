@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         蔡易翔
 @description    `動畫瘋夜間模式2020.11.22重大更新`
-@version        20201121.23.34
+@version        2020123.12.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -327,6 +327,16 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 }
 
 #BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > section.season > ul > li > a:hover{
+	border-radius: 3px !important;
+    background: #469BBC !important;
+}
+
+#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > div > section > ul > li.playing > a{
+	border-radius: 3px !important;
+    background: #469BBC !important;
+}
+
+#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > div > section > ul > li > a:hover{
 	border-radius: 3px !important;
     background: #469BBC !important;
 }

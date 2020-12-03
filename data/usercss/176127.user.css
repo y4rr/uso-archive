@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Crystal for ROBLOX (Pre 2017 UI for ROBLOX)
+@name           Crystal for ROBLOX (2016 UI for Roblox)
 @namespace      USO Archive
 @author         John R.
-@description    `The 2016 colors, fonts and UI because Gotham and a white top bar really does look bland.<b><i>developed by iiboiis on roblox<i/><b><div></div>Features included:- ROBLOX 2016 logo in header- White text- Chat & Party fixed- Blue chat bubbles with white text- Dark received bubbles- Removed age text- Removed Shop from header- Restored text to 'Play' button- Replace Roblox Premium logo with BC.- Old Colors Restored- Old Robux Icon- Colored BC icons- Notifications in red- Shadows on games page, home page and catalog!`
-@version        2020526.17.51
+@description    `The first 2016 recreation for Roblox beating the others by a month. Also the most feature-packed. :)<b><i>developed by iiboiis on roblox<i/><b><div></div>Features included:- ROBLOX 2016 logo in header- White text- Chat & Party fixed- Blue chat bubbles with white text- Dark received bubbles- Removed age text- Removed Shop from header- Restored text to 'Play' button- Replace Roblox Premium logo with BC.- Old Colors Restored- Old Robux Icon- Colored BC icons- Notifications in red- Shadows on games page, home page and catalog!`
+@version        2020123.1.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -86,7 +86,7 @@
 {
   font-family: 'Source Sans Pro', 'Source Sans Pro-ExtraLight', 'default-icons-desktop', 'FontAwesome', 'ac_iconset', 'fontello', 'pictonic', 'Noticons', 'Dashicons', 'consumer-icons', 'Elusive-Icons', 'Material Icons Extended'!important;
 }
-.details-info li div {
+/* .details-info li div {
     font-size: 16px !important;
 }
 .details-info li a {
@@ -241,6 +241,20 @@ body {
 .friend-name {
     font-size: 16px !important;
     font-weight: 300 !important;
+}
+*/
+/* this fixes the awful source sans that i previously had */
+* {
+    font-family:"Source Sans Pro" !important;
+}
+h1.user-name-container {
+    font-weight: 500;
+}
+h2 {
+    font-weight: 500 !important;
+}
+span.text-robux-lg.wait-for-i18n-format-render {
+    font-weight: 500 !important;
 }
 .icon-default-premium-medium, .icon-premium-medium {
   background-image: url(http://web.archive.org/web/20170923053816im_/https://static.rbxcdn.com/images/Shared/bc_06282017.svg)!important;
@@ -400,7 +414,7 @@ a#nav-giftcards {
 }
 .game-card-container {
     background-color: white!important;
-    radius: 3px;
+    border-radius: 3px;
 }
 .light-theme .btn-buy-md {
     background-color: #3fc679;
@@ -695,5 +709,144 @@ span.show-in-multiview-mode-only.see-all-button.games-filter-changer.btn-min-wid
 }
 .icon-chat-info-white {
     background-position: 0 -100px;
+}
+li.game-follow-button-container {
+    display: none;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container .icon-favorite {
+    float: left;
+}
+div#game-favorite-icon-label {
+    padding: 6px 58px 0px;
+    color: #f5b805;
+    font-weight: 600!important;
+}
+li.game-favorite-button-container {
+    padding: 8px 0px 0px;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container {
+    width: 156px!important;
+}
+li.social-media-share {
+    display: none;
+}
+.light-theme .section-content.remove-panel {
+    background-color: #ffffff;
+    padding: 17px;
+}
+span#vote-up-text {
+    font-weight: 600;
+    color: #1bb757;
+}
+.vote-mask {
+    display: none;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .voting-panel .users-vote .vote-details .vote-container {
+    height: 5px;
+}
+span#vote-down-text {
+    font-weight: 600;
+    color: #d86e6e;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share {
+    position: relative;
+    width: 100%;
+    padding-top: 16px;
+}
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .voting-panel {
+    width: 110px;
+    bottom: -19px;
+    float: left;
+}
+li.list-item.real-game-pass {
+    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.3);
+    margin: 0px 15px 0 0;
+    background-color: white;
+}
+.game-card-thumb-container:before
+{
+    border-radius: 0px;
+    display: none;
+}
+.game-card-thumb-container:before
+{
+    border-radius: 0px;
+    display: none;
+}
+
+.game-card-container:hover .rplus-game-card-position
+{
+    display: none;
+}
+.light-theme .carousel-control
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all,0.2s,ease-in-out;
+    -o-transition: all,0.2s,ease-in-out;
+    transition: all,0.2s,ease-in-out;
+    background-color: #191919;
+    background-color: rgba(25,25,25,0.3);
+    top: 40%;
+    top: calc(50% - 24px);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: none;
+    height: 48px;
+    position: absolute;
+    text-align: center;
+    width: 48px;
+    z-index: 1000;
+}
+.light-theme .rbx-header .rbx-navbar li:hover, .dark-theme .rbx-header .rbx-navbar li:hover
+{
+    border: 0;
+}
+span.icon-play-game {
+    display: none;
+}
+.light-theme a.btn-common-play-game-lg {
+    border-radius: 5px;
+}
+a.btn-common-play-game-lg::after {
+    content: "Play";
+    font-weight: 500;
+    font-size: 25px;
+}
+.gotham-font .btn-common-play-game-lg, .gotham-font a.btn-common-play-game-lg {
+    padding: 18px 12px !important;
+}
+a.font-header-2.nav-menu-title.text-header[href="/catalog"]::before {
+    font-size: 16px;
+    content: "Catalog";
+    visibility: visible;
+    border-radius: 5px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/catalog"] {
+    visibility: hidden;
+    font-size: 0px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/develop"]::before {
+    font-size: 16px;
+    content: "Develop";
+    visibility: visible;
+    border-radius: 5px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/develop"] {
+    visibility: hidden;
+    font-size: 0px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/robux"]::before {
+    font-size: 16px;
+    content: "ROBUX";
+    visibility: visible;
+    border-radius: 5px;
+    
+}
+a.font-header-2.nav-menu-title.text-header[href="/robux"] {
+    visibility: hidden;
+    font-size: 0px;
 }
 }

@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         markymawk
 @description    `Dark theme for smash.gg, unfinished but workin' on it`
-@version        2020821.7.40
+@version        2020123.8.52
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("smash.gg") {
 /* 
-Last updated Aug 2020
+Last updated Dec 2020
 work in progress
 mawwwk#1068
 */
@@ -17,14 +17,16 @@ mawwwk#1068
 :root {
     --bg-dark: hsl(222, 17%, 22%);
     --bg-dark-2: hsl(222, 17%, 29%);
-    --bg-dark-2b: hsl(222, 17%, 30%);
-     --bg-dark-2c: hsl(222, 17%, 33%);
+    --bg-dark-2b: hsl(222, 17%, 31%);
+    --bg-dark-2c: hsl(222, 17%, 33%);
     --bg-dark-3: hsl(222, 17%, 36%);
     --text-field-box: hsl(222, 17%, 43%);
     --border-color: hsl(222, 12%, 37%);
+    --border-color-1b: hsl(222, 12%, 45%);
     --border-color-2: hsl(222, 12%, 53%);
     --text-white: hsl(222, 14%, 85%);
     --text-white-2: hsl(222, 14%, 76%);
+    --text-white-3: hsl(222, 14%, 66%);
     --blue-url: hsl(208, 100%, 71%);
 }
 
@@ -68,6 +70,10 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
     color: var(--text-white);
 }
 
+/* Event name (bar hover) */
+.sgg1yOFc:active a.sgg3TG_H .sgg__om6 .sgg3g3Br .sgg2pphX, .sgg1yOFc:hover a.sgg3TG_H .sgg__om6 .sgg3g3Br .sgg2pphX {
+    color: var(--text-white)
+}
 /* Event listings on tourney page */
 .sgg2DEbQ, .sgg2DEbQ .sgg2NOuX .sgg2RaXF .sgg1tPMW {
     background-color: var(--bg-dark-2);
@@ -84,13 +90,74 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
 }
 
 /* Entrants */
-.sgg1kPUs, .sgg15Vs9 table th, .regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-gamerTag-makeStyles-jss117 {
+.sgg1kPUs, .sgg15Vs9 table th, [class*=".regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-gamerTag"], [class*="APP_TOURNAMENT_PAGE_WITH_BANNER-FeatureCanvas-gamerTag-"] {
     background: var(--bg-dark-2);
     color: var(--text-white);
 }
+/* Attendees bg hover */
+.sgg15Vs9.sgg2TeZ2 tbody tr:nth-child(2n):hover, .sgg15Vs9.sgg2TeZ2 tbody tr:nth-child(odd):hover {
+    background-color: var(--bg-dark-3)
+}
+/* Attendees > entrant tag */
+.regionWrapper-APP_TOURNAMENT_PAGE-DesktopProfileNav-body16-makeStyles-jss12, [class*="regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-gamerTag"], [class*="regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-title"] {
+    color: var(--text-white);
+}
 
+/* Attendees > entrant IRL name */
+[class*="-GlobalNav-nameSection"], [class*="-FeatureCanvas-nameSection"], [class*="GlobalNav-nameContainer-"] {
+    color: var(--text-white-3)
+}
+/* Attendees > page number on hover*/
+.sgg1u0BK .sgg2vKef .sggkdq1U:hover {
+    background: var(--bg-dark-3)
+}
+
+/* Empty text box placeholder text (Details > Rules), "Teams" text */
+.sgg1mzlH::placeholder, .empty-state-container {
+    color: var(--text-white-3) !important;
+}
+
+/* */
+.sgg3NREJ .sgg1oTKb {
+    background-color: var(--bg-dark-3)
+}
+/* Loading rectangle fill */
+rect {
+    fill: var(--bg-dark-3) !important
+}
+
+.match .match-spacer {
+    border-color: var(--bg-dark-3)
+}
+/* "Match is coming up" blue text */
+.sggK8ZeW.sgg2jTHe, .sggK8ZeW.sgg3As8U {
+    color: hsl(210, 86%, 68%)   
+}
+
+/* Match button text */
+.match-quick-options {
+    background: hsl(220, 20%, 42%);
+    border: 0.2rem solid hsl(220, 30%, 28%) !important;
+}
+
+/* Match buttons text */
+.match-quick-container .btn {
+    color:var(--text-white-2);
+}
+/* Button text hover */
+.regionWrapper-APP_TOURNAMENT_PAGE-NavTray-outlinedPrimary-makeStyles-jss8:hover {
+    color:var(--text-white);
+}
+.match-quick-options .btn {
+    border-color: hsl(220, 30%, 25%) !important
+}
+
+/* Bottom border of matches */
+.border-bottom-items:not(.no-line) {
+    border-color: var(--bg-dark-2);
+}
 /* Sidebar options text (Home, Attendees, ...) */
-.sgg1Ff3D, label {
+.sgg1Ff3D, label, .sgg1OAFg .sgg13k6s.sgg22Qh1 .sggxbi5m .sgg1Ff3D, .sgg1OAFg .sgg13k6s.sgg22Qh1 .sggxbi5m .sgg2p_3v, .sgg1OAFg .sgg13k6s.sgg22Qh1 .sggxbi5m .sgg3YjBM {
     color: var(--text-white-2) !important;
 }
 
@@ -135,17 +202,27 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
 }
 
 /* Player tags in event page */
-.regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-gamerTag-makeStyles-jss261 {
+.regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-gamerTag-makeStyles-jss261, .regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-gamerTag-makeStyles-jss137 {
     color: var(--text-white);
+}
+
+/* Player avatar border */
+[class*="regionWrapper-APP_TOURNAMENT_PAGE-GlobalNav-avatar-makeStyles-jss13"] {
+    border-color: var(--border-color)
 }
 
 /* Text field (uneditable), i.e. "Short slug smash.gg/" */
 .regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-MuiTypography-colorTextSecondary {
     color: var(--text-white-2);
 }
+
 /* Grey text (time zones, player names etc) */
 .regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-MuiFormHelperText-root, .regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-nameSection-makeStyles-jss240 {
-    color:hsl(222, 17%, 67%);
+    color:hsl(222, 17%, 67%)
+}
+
+.regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-nameContainer-makeStyles-jss115 {
+    color:hsl(222, 17%, 67%)
 }
 
 /* Yellow warning text (e.g. region-restricted tourney text) */
@@ -184,7 +261,7 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
     border-color: var(--border-color);
 }
 
-/* Seed generator and misc tables*/
+/* Seed generator and misc tables */
 .table .table, .shadow-box, .wave-group-list.full-width .phase-seeding-group-item .seed-panel-body {
     background-color:var(--bg-dark-3);
 }
@@ -194,11 +271,6 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
     background-color: hsl(222, 18%, 38%);
     border-top-color: hsl(222, 18%, 59%);
     color: var(--text-white);
-}
-
-/* Circle border around pfp */
-.regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-GlobalNav-avatar-makeStyles-jss66 {
-    border: 1px solid var(--bg-dark);
 }
 
 /* "Not publically visible" lock */
@@ -223,20 +295,95 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
     background: var(--bg-dark-2)
 }
 
+/* Page buttons table border, Attendees table border, Details > Rules text box border, Details > Images border */
+.sgg1u0BK .sgg2vKef .sggkdq1U, .tappable-component, sgg15Vs9 table tbody td, .sgg3NREJ .sgg3E9Qz, .sggZ4yaW .sgg2VBor, .sggZ4yaW .sggIlIQ7, .sgg2Fv5m, .gg-form-box .gg-form-box-section+.gg-form-box-section:not(.no-line), div#gg-form-box {
+    border-color: var(--border-color-2) !important
+}
 
+/* forgot what this one is */
+.profileBelowHeader, .sgg2Qglf, .sgg1apK4, .profileLayout:not(.usesJsScroller) .admin-page-header, .flex-pane-container .flex-pane-main {
+    border-color: var(--border-color-2) !important
+}
+
+/* Sub text (Registration Settings > Fields */
+.gg-list-group-item-text {
+    color: var(--text-white-3)
+}
+/* Bar at the top of event sidebar "*/
+.navBanner, .desktopProfileNav .profileNavBanner::after {
+    background: var(--bg-dark-2);
+    background-color: var(--border-color);
+}
+.desktopProfileNav .profileNavBanner::after {
+    bottom: 0px;
+    height: 2px;
+}
+
+/* "Public" tab on event sidebar */
+.sgg1Do28.sgg1-zJm .sgg3snLL.sgg21Zoj {
+    color: var(--text-white)
+}
 /* "Edit" big overlay (e.g. registration settings) */
 .item-overlay, .gg-list-group-item-overlay {
      color: hsla(222, 100%, 30%, .76);
 }
+
 /* Blue button ("Add admin") */
 .regionWrapper-APP_TOURNAMENT_PAGE-FeatureCanvas-MuiButton-outlinedPrimary {
     color: var(--blue-url);
 }
-/* Border color in "Details" WIP */
+
+/* Attendees via event page front, fill color */
+[class*="regionWrapper-APP_TOURNAMENT_PAGE-GlobalNav-passportWithAvatar"],  [class*="regionWrapper-APP_TOURNAMENT_PAGE_WITH_BANNER-FeatureCanvas-passportWithAvatar"] {
+    background-color: var(--bg-dark-2)    
+}
+/* Border color in "Details" */
 .sgg1k35w.sgg30sfD+.sgg1k35w.sgg30sfD, .sgg1k35w.sgg30sfD+.sgg1XZEH, .sgg15V3Y+.sgg1k35w.sgg30sfD, .sggnakGZ {
     border-color: var(--border-color) !important;
 }
 
+/* Border below Settings > Dashboard */
+.sggnakGZ:after {
+    background-color: var(--bg-dark-3) !important;
+}
+
+/* Tournament details > Short slug */
+.regionWrapper-APP_TOURNAMENT_PAGE-GlobalNav-MuiTypography-colorTextSecondary {
+    color:var(--text-white-2);
+}
+
+/* Annoying "looking to customize your page" block */
+div#TournamentDetails-details {
+    display:none;
+}
+/* Bracket setup > progressions */
+.gg-well-warning, .bracket-setup-page .phase-setup-list .gg-form-box-section.active .gg-well, .bracket-setup-page .phase-setup-list .gg-form-box-section.editing .gg-well {
+    background-color: var(--bg-dark-2b);
+    border-color: var(--border-color-2)
+}
+
+/* Brackets "breadcrumb" at top of page (Brackets / Melee Singles / Pools) */
+.breadcrumb, .sgg38NX3 {
+    background-color:var(--bg-dark-3) !important;
+}
+
+/* Match dashboard */
+.filters-container.table-filter {
+    background-color: var(--bg-dark-3);
+    border-color: var(--border-color-2)
+}
+
+.flex-box.flex-align-center.flex-space-between.padding-sm.toggle-filter-button-body {
+    background-color:var(--bg-dark-3);
+    color:var(--text-white);
+}
+
+/* Light blue notice bar */
+[class*="appEntry-MuiPaper-elevation1 appEntry-MuiPaper-rounded"] {
+    border-top: 0.2rem solid hsla(205, 62%, 50%, .43);
+    background-color: hsla(209, 36%, 37%, .46);
+    color:var(--text-white)
+}
 /* Events card */
 .Card, .ObjectCard, .EventCard, .MatchCard, .EventCardV2, .TournamentCard, .TournamentEventCard, .ResultsCard, .ShopCard, .CircuitCard, .DeckSummaryCard, .LoadingCard, .PoolCard, .FantasyCard, .NotifCard, .HelpCard {
     background-color: var(--bg-dark-2);
@@ -257,5 +404,103 @@ a:-webkit-any-link, .sgg3Kw9L.sgg3DBTA, .sgg3Kw9L.sgg3DBTA:hover {
 /* Tourney set card text */
 .gg-card, .match .match-player.entrant, .rr-match .match-player.entrant {
     color: var(--text-white);
+}
+
+/****
+*****
+* Pools & Seeding player table
+*****
+*/
+/* Background */
+.expanded .seed-panel .phase-seed-list, .full-width.wave-group-list .phase-seed-list, .scrollbar-container.seed-panel-body.ps-container.ps-theme-default {
+    background-color:hsl(222, 17%, 23%) !important;
+}
+
+/* Divider */
+.player-avatar .avatar-body.has-attachment:not(.no-border) {
+    border-color: hsl(220, 14%, 10%);
+}
+
+/* Cell colors */
+ul.striped>li:nth-of-type(even) {
+    background-color: var(--bg-dark-2)
+}
+ul.striped>li:nth-of-type(odd) {
+    background-color: hsl(222, 17%, 26%);
+}
+
+.seed-panel .phase-seed-row .player-avatar {
+    color: var(--text-white);
+}
+
+/* Green divider */
+.seed-panel .phase-seed-row.line-below {
+    border-color: hsl(138, 68%, 33%)
+}
+
+/* Unseeded icon */
+.text-danger-brand {
+    color: hsl(222, 16%, 73%)
+}
+
+/* Drop player */
+.text-primary-brand {
+    color:hsl(0, 46%, 54%);
+}
+/* MATCH WINDOW */
+.MatchHeader, .report-modal .modal-container {
+    background: var(--bg-dark)
+}
+.report-modal .modal-tabs .tab-pane, .match-display .modal-tabs .tab-pane, .team-roster-cell {
+    background-color: var(--bg-dark-2);
+    border-color: var(--border-color-1b)
+}
+
+/* Active tab text color */
+.report-modal .modal-tabs .navbar-nav li.active>a, .match-display .modal-tabs .navbar-nav li.active>a {
+    color: var(--text-white)
+}
+
+/* Inactive tab hover color */
+.nav>li>a:hover, .Nav>li>a:hover, .nav>li>a:focus, .Nav>li>a:focus {
+    border-color: var(--bg-dark-3) !important
+}
+/* "Help with brackets" delet */
+.sgg2h1cC.DEPRECATED_bootstrap_container.undefined.top-spacer {
+    display: none   
+}
+
+/* Match round (not started) */
+.sggjooyc.sgg2jTHe, .sggjooyc.sgg3As8U {
+    background-color: hsl(210, 40%, 37%)
+}
+/* Match round (started) */
+.sggjooyc.sgg7a-5i {
+    background-color: hsl(125, 40%, 27%)
+}
+
+/* Match round header, entrant score */
+.gg-color-white, .EntrantScore {
+    color: var(--text-white)
+}
+
+/* Summary > stage name */
+.GameStat__title {
+    color: var(--text-white-2)
+}
+
+/* Player header before reporting game */
+.report-modal .player-report.player-report-columns, .match-display .player-report.player-report-columns {
+    background: none;
+    border: none;
+}
+
+/* Report > winner overlay color */
+.gg-list-group-item-success {
+    background-color: hsl(125, 17%, 33%)
+}
+/* Messenger button in bottom-right */
+.intercom-lightweight-app {
+    display:none;
 }
 }
