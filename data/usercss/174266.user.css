@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201110.16.50
+@version        2020122.13.1
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fix for search bar after news ticker change */
+/*Last update: Un-inverted the attacking page */
 
 
 html:not([stylus-iframe]):after {
@@ -1422,20 +1422,11 @@ div.reply-mail-container img{
 }
 
 @-moz-document url-prefix("https://www.torn.com/loader.php?sid=attack") {
-div.players___KDUMK img {
+div.playerArea___1mCwz {
     filter: invert(1)hue-rotate(180deg)
 }
 
-div.stealthBarWrap___1fXus {
-    filter: brightness(0)
-}
-
-div.armoursWrap___HemjH img {
-    filter: invert(0)hue-rotate(180deg)
-}
-
-
-div.armour___3G2s9 img {
+div.modal___2U60q.transBg___3mOAj {
     filter: invert(1)hue-rotate(180deg)
 }
 }

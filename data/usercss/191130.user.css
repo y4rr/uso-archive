@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Nate-Dogg
 @description    `Animated Christmas 2020 Theme`
-@version        20201127.22.23
+@version        2020122.15.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -152,6 +152,10 @@ body {
 .seasonCallout.is-active {
     background: none;
 
+}
+.event--holiday .header:before, .event--holiday .header-core::before, .event--holiday .header-core::after 
+{
+    display: none;
 }
 .profile.is-gold .mysteryBox.is-coming .mysteryBox-copy {
     background: none;
