@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.2
+@name           Compact Tube (White) v1.4.3
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020121.22.36
+@version        2020123.12.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.2 */
+/* CompactTube (White) v1.4.3 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -69,6 +69,8 @@ ytd-banner-promo-renderer {display: none;}
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
 /* убрать партнёрскую рекламу на вкладке с Видео */
 .ytd-companion-slot-renderer {display: none;}
+/* отключить Опросы YouTube : - "none" - убрать: "flow"- показать */
+ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 
 /* Оповещения Снизу экрана (paper-toast): - ● ОТКЛЮЧЕНИЕ НЕ ЖЕЛАТЕЛЬНО! ● так как пропадут 
 и оповещения о добавлении в плейлисты, НО, если YouTube будет сильно задалбывать, можно отключить. */
@@ -459,6 +461,35 @@ padding: 0 10px 0 4px; font-size: 1.3rem; font-weight: 500;
 letter-spacing: 0.007px; text-transform: uppercase;}
 
 
+/* Одиночное Видео в Поиске - Справа */
+/* Картинка Одиночного Видео*/
+ytd-single-hero-image-renderer {
+    max-width: 286px; /*386px;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: block;
+    height: 158px; /*216px;*/
+    width: 286px;} /*386px;*/
+/* Затенение Одиночного Видео*/
+.title-fade.ytd-watch-card-hero-video-renderer {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    bottom: 0;
+    box-sizing: border-box;
+    padding:50px 11px 2px; /*100px 16px 16px;*/
+    position: inherit;
+    width: inherit;
+    color: var(--yt-spec-static-overlay-text-primary);
+    max-height: 158px;}
+/* Размеры шрифта Заголовка и информации Одиночного Видео */
+#watch-card-title.ytd-watch-card-hero-video-renderer {font-size: 1.4rem !important;} /* заголовок */
+#watch-card-subtitle.ytd-watch-card-hero-video-renderer {font-size: 1.1rem !important;} /* информация */
+/* Счётчик времени на Одиночном Видео */
+ytd-thumbnail-overlay-time-status-renderer[overlay-type=WATCH_CARD_HERO] {
+    margin: 6px; padding: 6px; z-index: 1;}
+
+
 /* Размер Превью в Правой половине "collage-hero" */
 yt-img-shadow.ytd-collage-hero-image-renderer.no-transition {height: 77.5px; width: 123px;}
 
@@ -553,6 +584,9 @@ ytd-game-card-renderer.ytd-horizontal-card-list-renderer {
     position: relative;
     top: 8px;
     margin-left: 7px;}
+
+/* Вкладка "ещё" в разделе: Gaming - Темы в Сетке Игр */
+ytd-grid-channel-renderer.ytd-grid-renderer {margin-top: 8px;}
 
 /* ╔═════════════ Стилизация Верхнего МЕНЮ информации об игре: ══════════════╗ 
    ║ Главная, В Эфире, Недавние, Обзор, Летсплеи, Официальные Видео, Об Игре ║ */
@@ -658,6 +692,16 @@ yt-music-pass-small-feature-info-renderer.ytd-grid-renderer  {
 yt-music-pass-small-feature-info-renderer.ytd-grid-renderer:not(:last-child) {
     margin-right: 24px; /* Сдвиг СРЕДНЕГО элемента + сдвиг всей линии! -126*/
     margin-left: 0px;} /* Сдвиг ЛЕВОГО элемента + сдвиг всей линии 150*/
+
+/* Специальные предложения YouTube: youtube.com/paid_memberships?ybp=mAEK */
+        /* Специальные предложения YouTube - Заголовок */
+yt-card-item-renderer[top-margin="CARD_ITEM_UX_SPACE_14"]{margin-top: var(--ytd-margin-14x); margin-left: 6px;}
+
+        /* Специальные предложения YouTube - Итемы */
+yt-offer-item-renderer {margin-left: 6px; /*test*/
+    display: inline-block; max-width: 221px;
+    margin-right: 12px; /*18px*/ vertical-align: top;
+    margin-bottom: var(--ytd-margin-3x);}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
@@ -932,7 +976,14 @@ ytd-comment-history-entry-renderer {
     flex-direction: row;}
 
 /* Библиотека(История) - вкладка "ЕЩЁ" : пункт: Посмотреть историю на странице "Мои действия" (размер шрифта) */
--o-yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
+yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
+
+/* Информация - как попасть в ныне недоступные разделы в Истории */
+#contents.style-scope.ytd-browse-feed-actions-renderer:after
+{display: block; width: 370px; height: 44px; padding: 6px 0px 2px 16px; content: 
+url(https://vk.com/emoji/e/e284b9.png)" Comment history:" "  youtube.com/feed/history/comment_history"  ""
+url(https://vk.com/emoji/e/e284b9.png)" LiveChat history:" "    youtube.com/feed/history/live_chat_history"  "";
+font: 1.2rem Tahoma, sans-serif; color: var(--yt-spec-text-secondary); cursor: help;}
 
 /* Информация - как попасть в ныне недоступные разделы в Истории */
 -o-#contents.style-scope.ytd-browse-feed-actions-renderer:after

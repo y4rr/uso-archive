@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Cactusorange
 @description    `Adds extra text to options in Port Carnelian, detailing their Striped Delight (SD), Silver Horseheads (SH), Imperial Legitimacy (IL) and other impacts. Also disables four generally harmful options: Honoured with a State dinner (resets both SD and SH without a scaling reward), leaving prematurely, and the +5 IL options that cost 10 SD or SH.`
-@version        2019820.4.3
+@version        2020123.22.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("fallenlondon.com") {
 /* Blocks harmful options */
-.branch[data-branch-id="154998"] button, /* Honoured with a State Dinner                    */
+.branch[data-branch-id="245548"] button, /* Honoured with a State Dinner                    */
 .branch[data-branch-id="155532"] button, /* Make for your ship while the citizenry sleeps   */
 .branch[data-branch-id="154736"] button, /* A plea for pardon: Give the executioner the nod */
 .branch[data-branch-id="154738"] button  /* Within their rights: "Quickly, sir - in, in!"   */
@@ -45,7 +45,7 @@
 .branch[data-branch-id="154996"] h2::after {font-size: 70%; content: " [+10 IL]"}                               /* Orders from on high                                  */
 .branch[data-branch-id="154993"] h2::after {font-size: 70%; content: " [+38 SD, -30 SH]"}                       /* Balancing the desires of the locals                  */
 .branch[data-branch-id="154992"] h2::after {font-size: 70%; content: " [-30 SD, +38 SH]"}                       /* Negotiating the rights of the Earth                  */
-.branch[data-branch-id="154998"] h2::after {font-size: 70%; content: " [Reset SD and SH, flat reward]"}         /* Honoured with a State Dinner                         */
+.branch[data-branch-id="245548"] h2::after {font-size: 70%; content: " [Reset SD and SH, flat reward]"}         /* Honoured with a State Dinner                         */
 .branch[data-branch-id="211747"] h2::after {font-size: 70%; content: " [Reset SD, +5 tribute, scaling reward]"} /* An audience with the Banded Prince                   */
 .branch[data-branch-id="154999"] h2::after {font-size: 70%; content: " [Reset SH, scaling reward]"}             /* An equine festival                                   */
 .branch[data-branch-id="210537"] h2::after {font-size: 70%; content: " [Reset SD and SH, flat reward, unlocks the Empress' Court]"}     /* Host a State Dinner          */

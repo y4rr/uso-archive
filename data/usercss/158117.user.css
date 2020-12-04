@@ -2,8 +2,8 @@
 @name           夜间斗鱼 NightMode For Douyu.com
 @namespace      USO Archive
 @author         QIUZAIYOU
-@description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1.常用页面夜间模式全覆盖2.去除广告3.去除导航栏中游戏等无用杂项4.部分icon更换使之更符合当前主题5.优化弹幕去掉等级、铭牌、欢迎信息等垃圾元素`
-@version        2020122.11.53
+@description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
+@version        2020123.13.27
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -3465,7 +3465,6 @@ url-prefix("http://www.douyu.com/") {
     .DyListCover-pic,
     .head .game_cas .game_btn a,
     .head .game_cas .all_btn,
-    .DyLiveCover-content,
     .layout-List--cover--single .layout-List-item,
     .layout-List--activity--official .layout-List-item,
     .layout-Footer,
@@ -3590,6 +3589,10 @@ url-prefix("http://www.douyu.com/") {
     }
     .Header-follow-tab.is-active {
         background-color: #f60!important;
+    }
+    .DyLiveCover-content,
+    .DyLiveCover-pic{
+        background:transparent!important;
     }
     /* 狗日的字体 */
     .Header-wrap .EntryNav-desc,

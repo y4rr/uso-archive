@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        2020121.19.45
+@version        2020123.21.47
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1578,7 +1578,7 @@ div:not(.replies_list) .submit_post_field,div:not(.replies_list) .ph_input{paddi
 .reply_fakebox_wrap .reply_send_button.reply_send_disabled{border-bottom:2px solid transparent}
 .reply_fake_more_attaches{filter:var(--filt2)}
 .post_replies_header{border-top:1px solid var(--color3)!important}
-.replies_deep_collapse:before{background-color:#000!important}
+.deep_active .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .replies .replies_wrap_deep .replies_deep_collapse::before,.deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_deep_collapse::before{background-color:rgba(100,100,100,.17) !important}
 .replies_deep_collapse_icon{filter:var(--filt2)brightness(3)saturate(.5)}
 
 /* сжимаем поле под фоткой и закрытое поле комментирования */   

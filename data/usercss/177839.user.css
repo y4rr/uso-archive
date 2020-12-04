@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mortyobnoxious
 @description    `IMDb Night Mode- Works on Mobile, too. I guess.`
-@version        2020817.22.1
+@version        2020123.16.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -264,7 +264,7 @@ a h1:hover, a h2:hover, a h3:hover, a h4:hover, #sidebar a h2:hover, #sidebar a 
 div[data-is-watchlisted="false"] .ipc-button.uc-add-wl-button-icon--add.watchlist--title-main-desktop-standalone.ipc-button--base.ipc-button--single-padding.ipc-button--default-height, .ipc-html-content--base { color: #8798A5; }
 .heroic-overview .plot_summary_wrapper .watchlist--title-main-desktop-standalone { background: #376C0C; color: #8798A5; min-height: auto; min-width: auto; }
 .item.avatar.ok { border: none !important; }
-.user-profile .histogram-horizontal .bar, .user-profile .histogram-vertical .bar { background: #1f1f1f; }
+.user-profile .histogram-horizontal .bar, .user-profile .histogram-vertical .bar { background: #5B6369; }
 .badge-frame .name { color: #8798A5; }
 li { color: #8798A5; }
 .ice-star-bar { border: 1px solid #1a1a1a; }
@@ -303,7 +303,7 @@ li { color: #8798A5; }
 .btn-raised--primary:focus { background-color: #090909; }
 input, button, select, textarea { background: #1f1f1f; border: 1px solid black; color: #8798A5; }
 .text-primary { color: #8798A5; }
-.modal__video-container { color: #8798A5; }
+.modal__video-container, .ipc-secondary-button.ipc-button--core-base.ipc-button--on-textPrimary:not(:disabled) { color: #8798A5; }
 .video-player__video-panel .video-player__sidebar { background: #121212; }
 .video-player__video-panel .video-player__sidebar .sidebar-header { border-bottom: 1px solid #000; }
 .video-player__video-panel .video-player__sidebar .sidebar-video-description { border-top: 1px solid #000; }
@@ -397,6 +397,9 @@ a.a-link-section-expander:focus { color: #8798A5; background-color: #000; }
 .ipc-list--base .ipc-list__item {color: #8798A5;}
 .ipc-menu--on-base {background: #000000;}
 .ipc-list--base .ipc-list__item:hover {background: #202021;}
+.user-profile .widget.ratings .sharing.unshared {
+	background-color: #000;
+}
 }
 
 @-moz-document domain("imdb.com") {

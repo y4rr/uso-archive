@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        20201127.18.59
+@version        2020123.22.7
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -662,10 +662,6 @@ a.scCTtb:visited,
     border: none !important;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .2) !important;
 }
-._OKe,
-.rl_item {
-    background: var(--pop-card-bg-col) !important;
-}
 .rg_fbl,
 .rg_fbl:hover {
     border: 1px solid #2C2C2C !important;
@@ -1316,7 +1312,8 @@ g-fab._jAg._uqh,
 ._Phb.rhsvw .vkc_np,
 #center_col .kp-blk,
 .cMjHbjVt9AZ__button:active {
-    background: var(--card-bg-col) !important;
+    background: none !important;
+    box-shadow: none !important;
 }
 .lr_dct_spkr_off input[type="image"],
 .lr_dct_spkr_on input[type="image"] {
@@ -1568,8 +1565,6 @@ a.gb_4.gb_7f.gbp1.gb_Qe.gb_tb/*My account button fix*/
 .gb_Hb,
 .gb_sb,
 .gb_ob.gb_ob,
-.gb_l .gb_fb/* accounts / bottom section thing */
-,
 .gb_yb.gb_yb {
     background-color: var(--pop-card-bg-col) !important;
     border-color: var(--border-main-col) !important;
@@ -1584,7 +1579,6 @@ a.gb_4.gb_7f.gbp1.gb_Qe.gb_tb/*My account button fix*/
 .gb_Fb.gb_Fb,
 .gb_ub.gb_ub/*Buttons: Add account&Logout*/
 {
-    background: var(--search-bar-bg);
     border-color: var(--border-main-col);
 }
 .gb_Ib .gb_Hb:hover,
@@ -1617,9 +1611,7 @@ a#gb_71/* sign out */
 .gb_wb,
 .gb_Db,
 .gb_B,
-.gb_Lb,
-.gb_vb.gb_vb/* card body here */
-{
+.gb_Lb {
     /*background: var(--card-bg-col);*/
     background: var(--pop-card-bg-col);
     border-top-color: var(--border-main-col);
@@ -1655,11 +1647,6 @@ a.gb_Ab:hover,
 ,
 .gb_Eb {
     border-color: var(--border-main-col)/*!important*/;
-}
-/*.gb_Ea, .gb_Qb, */
-.gb_qb {
-    background-color: var(--pop-card-bg-col) !important;
-    border-top-color: var(--pop-card-bg-col) !important;
 }
 .gb_Vb,
 .gb_Vb/* google apps icon */
@@ -3372,17 +3359,14 @@ ul.gb_D.gb_v,
 .WGYX8,
 .dkw61e,
 g-card,
-.gb_Db.gb_Db,
-.gb_Db.gb_Db,
-.gb_Kb,
-.gb_ub,
-.gb_Mb,
-.gb_Ib,
-.gb_wb,
-.gb_Db,
 .gb_B,
-.gb_Lb,
+.gb_wb,
+.gb_Ib,
+.gb_Mb,
 .gb_vb.gb_vb,
+
+.gb_ub,
+.gb_Kb,
 .Lj9fsd,
 .cbjjnc,
 .MXl0lf,
@@ -3397,7 +3381,11 @@ body,
 .EsIlz,
 .s8GCU,
 .Gfzyee.jREHUb,
-.Gfzyee.sgivpd {
+.Gfzyee.sgivpd,
+.InkVs,
+.NGwAH:first-child,
+.dGIF9:first-child,
+.gb_zb.gb_zb {
 
     background: #101010 !important;
 }
@@ -3449,7 +3437,10 @@ body,
 .a9v0ne,
 .a9v0ne:link,
 .a9v0ne:visited,
-.fs5Qwd {
+.fs5Qwd,
+.cfBJGe,
+.NGwAH,
+.ogvxFb {
     color: #D3D3D3 !important;
 }
 
@@ -3472,22 +3463,9 @@ body,
 }
 
 /* account menue */
-.gb_l.gb_5a.gb_6a,
-.gb_wb.gb_wb,
-.gb_Ab.gb_Ab,
-.gb_Ib.gb_Ib,
-.gb_Jb.gb_Jb {
-    background-color: #1A1A1A !important;
-}
-
-/* white border */
-.kp-blk,
-.cv2VAd {
-    border: 1px solid white;
-}
-
 .sfbg,
-._-kp {
+._-kp,
+.KGahvc {
     background: var(--card-bg-col) !important
 }
 
@@ -3507,13 +3485,19 @@ body,
 .Gr43w,
 ._-ct,
 ._-dr,
-._-dr td {
+._-dr td,
+.ygdOJd,
+.HNdZMe, .mus_tt17 {
     color: #808080 !important;
 }
 
 .vnLNtd.mnr-c.B03h3d,
 .wXlZre.B03h3d {
     box-shadow: none !important;
+}
+
+.gb_Pb:hover {
+    background: none !important;
 }
 }
 
