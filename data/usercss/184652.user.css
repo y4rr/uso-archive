@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Scott Collins
 @description    `Dark Style For Loblaws National Shunt`
-@version        2020826.4.21
+@version        2020124.6.22
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -78,18 +78,22 @@ span.trailer[taskStatus="shuttle"] {
 span.trailer[taskStatus="queued"] {
     /*color: #000000!important;*/
     background-color: #7cd25c!important;
-    text-shadow: 2px 1px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 span.trailer[taskStatus="assigned"] {
     background-color: #ff8000!important;
-    text-shadow: 2px 1px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 span.trailer[taskStatus="accepted"] {
     background-color: #0BEEF0!important;
-    text-shadow: 2px 1px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 span.trailer[taskStatus="pinned"] {
     background-color: #8533ff;
+    text-shadow: 2px 2px 2px black;
+}
+span.trailer[taskStatus="rejected"] {
+    background-color: #f22;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -225,6 +229,9 @@ div.vehicle span[status="ONLINE"] {
 /*Trailer Status*/
 div.task[taskStatus="queued"] span[label="status"] {
     color: #99dd7f!important;
+}
+div.task[taskStatus="assigned"] span[label="status"] {
+    color: #ff8000;
 }
 div.task[taskStatus="accepted"] span[label="status"] {
     color: #85f6f7;

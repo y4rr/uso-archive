@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         anxiety is cute
 @description    `Basic dark mode, colors main colors are; 32, 32, 32 and 42, 42, 42.`
-@version        2020123.23.9
+@version        2020124.6.56
 @license        CC-BY-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain(pcgamer.buzz) {
+
 .css-1n85d9b {
     height: 64px;
     background: rgb(40 40 40);
@@ -336,6 +337,47 @@ a {
     transform: translateX(-50%);
     top: 100%;
 }
+
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textarea;
+    background-color: rgb(42 42 42) !important;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+}
+
+.link-tool__content--rendered {
+    background: rgb(42 42 42 / 1);
+    border: 1px solid rgb(32 32 32 / 0.48);
+    box-shadow: 0 1px 3px rgba(0,0,0, .1);
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+
+.css-r44ym2 {
+    padding: 24px 24px 0px;
+    background: rgb(42 42 42 / 1) !important;
+}
+
 
 .holders-dapplet { background: rgb(32 32 32 / 1) !important; }
 }

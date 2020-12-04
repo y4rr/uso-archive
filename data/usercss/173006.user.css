@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `酷狗網頁樣式修改良善`
-@version        20201119.3.9
+@version        2020124.1.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,11 +45,11 @@ em {color: #66FF33 !important;}
 /*#####--- 
 *Background Color  網頁背景顏色(黑色)
 深黑色：#080808
-淺黑色：
+淺黑色：#262A31
 ---#####*/
 
 /*#####--- 隱藏上方廣告方框 ---#####*/
-DIV[id="taw"] {display: none !important;}
+DIV[id="taw"],DIV[class="Rn1jbe"] {display: none !important;}
 
 
 /*#####--- AutoPagerize 網頁自動換頁免點下一頁 (第X頁) ---#####*/

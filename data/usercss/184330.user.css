@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Biller
 @description    `A clean dark orange theme for youtube.<b>[MAKE SURE TO <u>ENABLE DARK THEME</u> FROM YOUTUBE]</b>Feel free to leave a feedback and any donation will be appreciated.Thank you very much for your support!`
-@version        2020114.13.8
+@version        2020124.11.6
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1098,6 +1098,56 @@ ytd-section-list-renderer:not([hide-bottom-separator]):not([page-subtype="histor
 
 .ytp-ce-website-title, .ytp-ce-website-metadata{
     color: #ff8100 !important;
+}
+
+#time.ytd-macro-markers-list-item-renderer{
+    color: #ff8100 !important;
+    background-color: rgba(255, 129, 0, 0.2) !important;
+}
+
+#active-indicator.ytd-macro-markers-list-item-renderer{
+    background: #ff8100 !important;
+}
+
+ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer{
+    outline: 2px solid #ff8100 !important;
+}
+
+#sync-button.ytd-macro-markers-list-renderer{
+    background: rgba(255, 129, 0) !important;
+}
+
+#time.ytd-macro-markers-list-item-renderer::selection, #sync-button.ytd-macro-markers-list-renderer::selection, h4.ytd-macro-markers-list-item-renderer::selection, #message.yt-live-chat-text-message-renderer::selection, #author-name.yt-live-chat-author-chip::selection, #timestamp.yt-live-chat-text-message-renderer::selection, ytd-compact-radio-renderer.use-ellipsis #video-title.ytd-compact-radio-renderer::selection, .ytd-thumbnail-overlay-hover-text-renderer::selection, .ytd-badge-supported-renderer::selection, .iv-drawer-header-text::selection, .iv-card-video-duration::selection, .iv-card-video h2::selection, .iv-drawer-content *::selection, #text.ytd-notification-multi-action-renderer::selection, #title.ytd-rich-shelf-renderer::selection, .ytd-backstage-post-renderer::selection, .ytd-post-renderer::selection{
+    color: #ff8100 !important;
+    background-color: #323232 !important;
+}
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox{
+    background-color: #ff8100 !important;
+}
+
+ytd-notification-renderer.unread #new.ytd-notification-renderer{
+    background-color: #ff8100 !important;
+}
+
+.iv-card-content{
+    background-color: #323232 !important;
+}
+
+.iv-card h2{
+    color: #ff8100 !important;
+}
+
+.iv-card:hover .iv-card-primary-link{
+    color: white !important;
+}
+
+.ytp-autonav-toggle-button[aria-checked="true"]::after{    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZjgxMDAiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDE3IDE3IiB3aWR0aD0iMTAwJSI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTcgOC41YTguNSA4LjUgMCAxMS0xNyAwIDguNSA4LjUgMCAwMTE3IDB6bS01IDBMNi41IDV2N0wxMiA4LjV6bS0xLjg2IDBMNy41IDYuODJ2My4zNmwyLjY0LTEuNjh6TTguNSAxNmE3LjUgNy41IDAgMTAwLTE1IDcuNSA3LjUgMCAwMDAgMTV6IiBmaWxsPSIjZmY4MTAwIiBmaWxsLW9wYWNpdHk9Ii4xNSIgZmlsbC1ydWxlPSJldmVub2RkIiAvPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2IDguNWE3LjUgNy41IDAgMTEtMTUgMCA3LjUgNy41IDAgMDExNSAwem0tNCAwTDYuNSAxMlY1TDEyIDguNXoiIGZpbGw9IiNmZjgxMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgLz48L3N2Zz4=) !important;
+}
+
+ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"]{
+    background-color: #323232 !important;
 }
 }
 

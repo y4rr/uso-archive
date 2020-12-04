@@ -3,14 +3,12 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        2020123.18.43
+@version        2020124.5.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("evirtual.utm.edu.ec") {
-html{
- background:#000!important;
-}
+
 body {
     color: #d1d8e0 !important;
     background:#000!important;
@@ -331,6 +329,13 @@ textarea{
     color: #fff!important;
     background-color: rgba(100,100,100,1)!important;
 }
+
+
+.alert-success, .que .comment {
+    color: #a5dea0!important;
+    background-color: #283428!important;
+}
+
 /*----------TESTE-----------*/
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd {
     color: white !important;

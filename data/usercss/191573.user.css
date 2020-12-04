@@ -2,20 +2,21 @@
 @name           Youtube RetroWave
 @namespace      USO Archive
 @author         YAD
-@description    `YOUTUBE RetroWave ThemeUse the dark theme in your Appearance settings`
-@version        20201129.11.40
+@description    `Note: Use the dark theme in your Appearance settingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        2020124.10.17
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
 1 "Default*" <<<EOT https://i.ibb.co/d7j0KjB/retrowave.png EOT;
-2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
+3 "CyberPunk" <<<EOT https://i.ibb.co/CKs830t/cyberpunk.jpg EOT;
+2 "None" <<<EOT http://yad EOT;
 
 	yadbgchanger-custom-dropdown "Custom" <<<EOT /*[[yadbgchanger-custom]]*\/ EOT;
 }
 @advanced text yadbgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
 @advanced dropdown araw "Sun" {
 1 "Default*" <<<EOT https://i.ibb.co/rs1HkNp/wave.gif EOT;
-2 "None" <<<EOT https://i.postimg.cc/SRNPyMjb/none.png EOT;
+2 "None" <<<EOT http://yad EOT;
 
 	araw-custom-dropdown "Custom" <<<EOT /*[[araw-custom]]*\/ EOT;
 }
@@ -238,7 +239,7 @@ background-blend-mode: screen;
 
 /*BG CHANGER*/
 ytd-app {
-	background-image: url(/*[[araw]]*/), url(/*[[yadbgchanger]]*/);
+	background-image: url(/*[[araw]]*/), url(/*[[yadbgchanger]]*/)!important;
 }
 
 .html5-video-player {/*glow on player*/
