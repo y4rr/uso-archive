@@ -2,42 +2,23 @@
 @name           巴哈姆特動畫瘋 深色主題 夜間模式 重大更新
 @namespace      USO Archive
 @author         蔡易翔
-@description    `動畫瘋夜間模式2020.11.22重大更新`
-@version        2020123.12.13
+@description    `如果你發現比這個更好用的，請告訴我:)2020.12.04更新動畫瘋影片底下Facebook留言目前沒有完美CSS解決方案，但可以讓它完全消失看不見，只需將程式碼第5行取消註解其可，將/*display:none;*/改成display:none;`
+@version        2020124.15.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("ani.gamer.com.tw") {
-html {background: 
+html {background: #000000 !important}
 
-     /***** COPY AND PASTE THE URL OF YOUR BACKROUND-IMAGE INSIDE THE url("") *****/
-
-url("data:image/png;base64,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")
-
-     /***** FOR A SIMPLE BLACK BACKGROUND JUST REMOVE THE URL LINE ABOVE *****/
-     /***** Some background-images (you can also use your own url):
-
-  default:      https://abload.de/img/bg_digital94uzx.png
-  old default1: https://abload.de/img/b1fgs11.png
-  old default2: https://abload.de/img/ultra_x2vm9k.jpg
-                https://abload.de/img/b2w4shd.png
-                https://abload.de/img/b3qrs99.png
-                https://abload.de/img/b4zcse8.png
-                https://abload.de/img/b5b1s7x.png
-                https://abload.de/img/b6umsmy.png
-                https://abload.de/img/b7ars8c.png
-                https://abload.de/img/kubrickbgcolor2darkr8skc.png
-                https://abload.de/img/xpattern_darkq8s3i.png
-                https://abload.de/img/mainpatternolxcq.png
-
-*/ #1A1A1A /* fixed */ !important}
+#BH_background > div.whilebg > div > div, #BH_background > div.whilebg > div > div *{
+	background: #FFFFFF !important;
+	/*display:none;*/
+	width: 550px !important;
+	border-radius:5px !important;
+}
 
 body > div.top_sky > div > div > ul > li.head > a > img{
 	border-radius:3px !important;
-}
-
-#BH_background > div.whilebg > div > div{
-	background: #FFFFFF !important;
 }
 
 #BH_background > div.whilebg > div > h1 *, #BH_background > div.whilebg > div > h1{
@@ -355,7 +336,8 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 
 #BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > div.ACG-score{
     color: #FFFFFF !important;
-    border-color: #5555FF !important;
+    border-color: #469BBC !important;
+	/*border-color: #5555FF !important;*/
 }
 
 #BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > div.ACG-score > span{
@@ -367,9 +349,9 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 }
 
 #BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > p{
-	color: #000000 !important;
-	background: #FFFFFF !important;
-	border-radius: 3px !important;
+	color: #92E2D6 !important;
+	background: #000000 !important;
+	border-radius: 10px !important;
 }
 
 #BH_background > div.container-player.fullwindow > section.data > div.data_intro, #BH_background > div.container-player.fullwindow > section.data > div.data_intro > div.intro_title{
@@ -428,11 +410,14 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 	background: #333333 !important;
 }
 
-
 #BH_background > div > section > ul.news_big > li > a > div:hover > div.readmore{
 	color: #FFFFFF !important;
 	border: transparent !important;
 	background: #469BBC !important;
+}
+
+#BH_background > div > section > ul.news_big > li > a > div:hover > div.news_title{
+	text-decoration:underline !important;
 }
 
 .news_big li a span p {

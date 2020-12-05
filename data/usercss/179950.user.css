@@ -2,8 +2,8 @@
 @name           BBS.IO-TECH.fi Classic Dark Theme - Xenforo 2.1
 @namespace      USO Archive
 @author         johnnymadrid
-@description    `Install stylus extension: Chromium based: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=enFirefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/Classic gray theme for bbs.io-tech.fi Xenforo 2.1 update. Select classic dark as a selected theme on the site first (though it should work pretty similarly with both dark themes now).`
-@version        2020109.18.55
+@description    `BBS.IO-TECH.fi Classic Dark Theme - Xenforo 2.1Install stylus extension: Chromium based: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=enFirefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/Classic gray theme for bbs.io-tech.fi Xenforo 2.1 update. Select classic dark as a selected theme on the site first (though it should work pretty similarly with both dark themes now).`
+@version        2020124.21.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -519,8 +519,9 @@ article.message {
 }
 
 .XenBase .block--messages .message .message-content .bbCodeBlock-title a:before {
-    content: "\2605";
+    content: "\21EA";
     margin-right: 3px !important;
+    margin-top: -1px !important;
 }
 
 .XenBase .block--messages .message .message-content .bbCodeBlock-title a:hover {
@@ -1095,6 +1096,10 @@ input.hntf-s-i {
 .bbCodeBlock-sourceJump {
     font-weight: 600 !important;
     font-size: 90% !important;
+}
+
+.bbCodeBlock-sourceJump:after {
+    content: "" !important;
 }
 
 .tooltip--basic .tooltip-content {

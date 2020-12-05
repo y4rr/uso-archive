@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        2020123.22.7
+@version        2020124.17.20
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -658,9 +658,9 @@ a.scCTtb:visited,
 .rg_fbl,
 .rg_fbl:hover,
 .kp-blk._Jw._Rqb._RJe {
-    background: var(--card-bg-col) !important;
+    background: none !important;
     border: none !important;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2) !important;
+    box-shadow: none !important;
 }
 .rg_fbl,
 .rg_fbl:hover {
@@ -3487,7 +3487,8 @@ body,
 ._-dr,
 ._-dr td,
 .ygdOJd,
-.HNdZMe, .mus_tt17 {
+.HNdZMe,
+.mus_tt17 {
     color: #808080 !important;
 }
 
