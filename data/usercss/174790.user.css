@@ -1,13 +1,14 @@
 /* ==UserStyle==
-@name           OZ Gamez Remember Edition
+@name           OZ Gamez! Remember Edition
 @namespace      USO Archive
 @author         RemberMe
-@description    `Мрачная как Римембер тема для портала Oz Gamez———————————————————————————————28.08.19 — Первый релиз• Переработан дизайн по умолчанию• Убраны лишние элементы (все правое меню)• Убрана реклама (соц. сети и прочее)`
-@version        2020114.20.12
+@description    `Мрачная как Римембер тема для портала Oz Gamez———————————————————————————————05.12.2020 Обновление`
+@version        2020125.5.33
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("forum.onligamez.ru") {#logo, .PanelScroller, .titleBar, .siropuChat_h3, footer, .uSocial-Share, #siropuChatHeader, .sidebar, #Block1st, .home, .pageNavHeader {
+@-moz-document domain("forum.onligamez.ru") {
+  #logo, .PanelScroller, .siropuChat_h3, footer, .uSocial-Share, #siropuChatHeader, .sidebar, #Block1st, .home, .pageNavHeader {
 	display: none !important;
 }
 html#XenForo {
@@ -22,17 +23,17 @@ html#XenForo {
 .xenForm {
 	color: white;
 }
-.siropuChatMessages > li[data-author='Unicorn-Sun'] .siropuChatContentLeft::after {
-	content:'я глупый русик и еду на кораблике'
+.titleBar h1{
+	color: red;
 }
-.siropuChatMessages > li[data-author='Unicorn-Sun'] .siropuChatMessage {
-	display: none
+.pageContent .breadcrumb{
+	background: #333641;
 }
-.siropuChatMessages > li[data-author='Bcex.3ae6y'] .siropuChatContentLeft::after {
-	content:'я глупый русик и сделал себе новое лицо'
+.linkGroup a{
+	color: white;
 }
-.siropuChatMessages > li[data-author='Bcex.3ae6y'] .siropuChatMessage {
-	display: none
+#siropuChatBannedMessage{
+	color: white;
 }
 #moderatorBar {
 	background: none;
@@ -46,6 +47,9 @@ html#XenForo {
 	padding: 5px;
 }
 .OverlayCloser {
+	color: white;
+}
+.siropuChatUsers > li:last-child{
 	color: white;
 }
 .redactor_box .redactor_smilies .tabs {
@@ -127,12 +131,9 @@ html#XenForo {
 .siropuChatMessages .avatar img {
 	width: 30px !important;
 	height: 30px !important;
-	-webkit-box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.75);
-	-moz-box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.75);
-	box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.75);
 }
 .siropuChatMaximized #siropuChatContent {
-	height: 650px;
+	height: 640px;
 }
 .bbCodeQuote .quoteContainer, .bbCodeBlock .type {
 	background: none;
