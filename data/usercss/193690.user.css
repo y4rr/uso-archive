@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Peeps
 @description    `Dark theme for Radarr version 3.`
-@version        2020123.5.47
+@version        2020125.19.24
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -283,6 +283,23 @@ select {
 
 .Settings-summary-3KPAv {
     color: var(--color-White);
+}
+
+/* Media Management */
+.NamingOption-token-1y5bz {
+    background-color: var(--color-DarkBG);
+}
+
+.NamingOption-option-giCGd:hover .NamingOption-token-1y5bz {
+    background-color: var(--color-Grey);
+}
+
+.NamingOption-example-RNR6x {
+    background-color: var(--color-DarkBG);
+}
+
+.NamingOption-option-giCGd:hover .NamingOption-example-RNR6x {
+    background-color: var(--color-Grey);
 }
 
 /* Titles */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ylian Sidre
 @description    `It's a Youtube Background of Hype Chan in the end of The World Ends with You`
-@version        20191019.15.47
+@version        2020125.22.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,37 +18,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-}
+
 
 @-moz-document regexp("https?://www.youtube.com?/(?!my_videos|ad_companion|subscribe_embed|account|yt|red).*")
 {
   html:not(#⁠),body>div,body>table,[role="navigation"],[role="dialog"],#body-container>div,[aria-expanded="true"]:not(.ytp-button),[class*="tooltip"]:not(.ytp-tooltip-duration):not(.ytp-tooltip-bg):not(.ytp-tooltip-text-wrapper):not([class*="arrow"]):not(button),[role="menu"],.ytp-popup,.videoAdUiPreSkipButton,.videoAdUiAdInfoPopup
   {
-    background: url(https://image.noelshack.com/fichiers/2019/30/5/1564126928-maxresdefault-1.png)fixed #000!important;
+    background: url(https://www.4gamer.net/games/406/G040676/20180626118/SS/008.jpg)fixed #000!important;
     background-size: cover!important;
-  }
-  
-/*search bar*/  #search-terms, #search-input.ytd-searchbox-spt, #container.ytd-searchbox
-  {
-    border: 1px solid!important;
-    color: #ea1d07!important;
-  }
-
-  #masthead-search-terms.gsfe_a
-  {
-    border: 2px solid!important;
-    color: #ea1d07!important;
-  }
-
-  #masthead-search-terms.gsfe_b
-  {
-    border: 4px solid!important;
-    color: #ea1d07!important;
-  }
-
-  :not(textarea):not(input):not([contenteditable])
-  {
-    text-shadow: 0 0.05em rgba(0,0,0,.5),0 -0.05em rgba(0,0,0,.5),0.05em 0 rgba(0,0,0,.5),-0.05em 0 rgba(0,0,0,.5)!important;
   }
 
   :not([class*="video-extras-sparkbar"]):not([class^="ytp-"]):not(.sidebar):not(.video-time):not([class^="html5-"]):not(.yt-uix-button-primary):not(label):not(.toggle):not(.branding-context-container-inner):not(.iv-drawer)
@@ -74,29 +51,6 @@ html:not(.style-scope)
     --text-primary-color: #ffffff;
      }
     
-
-
-[role="alert"],.content-region,.yt-uix-checkbox-on-off .checked:after
-  {
-    display: block!important;
-    background-color: white
-  }
-
-  :not(#​) :link
-  {
-    color:  #99CCFF!important;
-  }
-
-  :not(#​) :visited
-  {
-    color: #CC99FF!important;
-  }
-
-  :not(#​) select
-  {
-    background: #ea1110!important;
-  }
-
  [href="/"][id*="logo"],:not(.ytp-volume-slider-handle):not(.yt-uix-playlistlike):before,.yt-uix-button-icon-material-upload,.yt-uix-button-icon-bell,.yt-uix-button-icon-wrapper>.yt-sprite,.autoplay-info-icon,.autoplay-button,.search-button>.yt-uix-button-content,#appbar-guide-button,.toggle-button.paper-toggle-button,ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer
   {
     -webkit-filter: invert(1)hue-rotate(180deg);
@@ -129,12 +83,6 @@ html:not(.style-scope)
     filter: invert(1)hue-rotate(180deg);
     color: #ea1d07!important;
   }
-  
-  [class$="container"],#yt-comments
-  {
-    background-color: #a5a5a5!important;
-    display: block;
-  }
 
   :not(h2):not(button):not(.comment-simplebox-renderer-collapsed-content),#footer-container button,.yt-uix-button-shelf-slider-pager
   {
@@ -157,8 +105,45 @@ html:not(.style-scope)
 {
   *
   {
-    background-color: #000!important;
+    background-color: transparent!important;
     color: #fff!important;
     border-color: #000!important;
   }
+}
+
+
+ytd-comments
+{
+/*comments box*/
+  display: block;
+  background-color: #ea1d07;
+}
+
+#container.ytd-searchbox
+{
+/*search bar*/
+  background-color: #801308;
+  border-left: 1px solid #ffffff70;
+  border-top: 1px solid #ffffff70;
+  border-bottom: 1px solid #ffffff70;
+  border-right: 0px solid #ffffff70;
+  border-radius: 17px 0 0 17px;
+}
+
+#search-icon-legacy.ytd-searchbox
+{
+  cursor: pointer;
+  width: 65px;
+  border: 1px solid #ffffff6b;
+  background-color: #ea1d07;
+  border-radius: 0px 17px 17px 0px;
+}
+
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox
+{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  opacity: 1;
+}
 }

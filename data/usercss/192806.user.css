@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devista
 @description    `If you always wanted Ashkore to give you your daily maana, you've come to the right place.`
-@version        20201117.21.37
+@version        2020126.0.43
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,11 +12,13 @@
 
 /*daily maana popup - Ash*/
 
-div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message h1 {
+  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message h1
+  {
     display: none;
-    }
+  }
 
-div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message:after {
+  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message:after
+  {
     content: ' in exchange for a nice frying pan... Do we have a deal?';
     margin-left: auto;
     margin-right: auto;
@@ -24,37 +26,46 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
     font-size: 1.4rem;
     color: #fff;
     line-height: 0.9;
-}
+  }
 
-div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-content {
+  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-content
+  {
     margin-right: -300px;
-    margin-top: 145px;
-    }
+    margin-top: 125px;
+  }
 
-body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer {
-     background: none;
-    }
-
-body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer {
+  body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer
+  {
     background: none;
-    }
+  }
 
-body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after {
+  body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer
+  {
+    background: none;
+  }
+
+  body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after
+  {
     background: url("https://64.media.tumblr.com/425e3343b693239416cf9c2188c76994/tumblr_p4cpk2zCTe1wmapvzo4_500.png");
-     }
+         background-repeat: no-repeat;
+     margin-left: 170px;
+  }
 
-body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after {
+  body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after
+  {
     background: url("https://64.media.tumblr.com/425e3343b693239416cf9c2188c76994/tumblr_p4cpk2zCTe1wmapvzo4_500.png");
-     }
+       background-repeat: no-repeat;
+      margin-left: 170px;
+  }
 
-
-div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button {
+  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button
+  {
     visibility: hidden;
-}
+  }
 
-
-div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button:after {
-    content: '*take your daily maana and run*!'; 
+  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button:after
+  {
+    content: '*take your daily maana and run*!';
     visibility: visible;
     background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%);
     box-shadow: inset 0 0 21px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36);
@@ -72,21 +83,24 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
     position: relative;
     cursor: pointer;
     margin-left: -80px;
-}
+  }
 
-.flavr-container .flavr-overlay {
+  .flavr-container .flavr-overlay
+  {
     margin: -120px;
-}
+  }
 
-.flavr-container.first-connexion #first-connexion-reward {
+  .flavr-container.first-connexion #first-connexion-reward
+  {
     padding: 0 50px;
     margin-left: 20px;
-     margin-right: 70px;
-}
+    margin-right: 70px;
+  }
 
-.flavr-container.new-layout-popup .flavr-outer::after {
-     animation: popup-skew alternate infinite 7000ms linear, show-popup forwards 1000ms ease-in-out 950ms;
-}
+  .flavr-container.new-layout-popup .flavr-outer::after
+  {
+    animation: popup-skew alternate infinite 8000ms linear, show-popup forwards 1000ms ease-in-out 950ms;
+  }
   
   
   }
