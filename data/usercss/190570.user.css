@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--修正済み不具合--・ニコニ広告ページがおかしい→ニコニ広告ページのダークテーマ化で対処--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        20201128.12.3
+@version        2020126.12.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -400,8 +400,24 @@ html{
     background-color: linear-gradient(#4f4f4f,#5b5b5b 10%,#595959 80%,#4f4f4f);
 }
 .c3-axis text{fill: #fdfdfd;}
-[data-v-3351af76]{color: #b8bee8 !important;}
+.currently-advertising[data-v-3351af76]{color: #313131 !important;background-color: rgba(48, 142, 48, 0.8);}
+p > [data-v-3351af76]{color: #ddd !important;}
+.publish-type-label[data-v-174af068]{color: #4f4f4f !important;}
+.period > strong[data-v-3351af76]{color: #aaa !important;}
+.info > strong[data-v-3351af76]{color: #d0d0d0 !important;}
+.tag > li[data-v-3351af76]{color: #cecece !important;}
+
+.my-simple-button[data-v-7bcf0951]:hover{color: #3747b0 !important;}
+.my-simple-button[data-v-7bcf0951]{color: #ccc !important;}
+
+.open-result-button[data-fixed][data-v-3351af76]:hover{color: #3747b0 !important;}
+.open-result-button[data-fixed][data-v-3351af76]{color: #ccc !important;}
+
+/* 広告結果のあたり */
+[data-v-3351af76]{color: #b8bee8 !important;background: #333;}
 .opener[data-v-1d3d7103]:hover, .option[data-v-1d3d7103]:hover{background-color: #6f6f6f;}
+.result-content[data-v-3351af76]{background-image: linear-gradient(#393939,#404040 10%,#3e3e3e 80%,#4a4a4a);}
+.result-content[data-v-3351af76]::before{border-top: #868686;}
 
 /* チケットページ */
 .items > dt > span[data-v-f25416d8]{background-image: linear-gradient(#464646 50%,#464646 50.1%);}

@@ -11,29 +11,46 @@
     "about": null,
     "license": null
   },
-  "updated": "2020-10-14T15:30:23.000Z",
-  "weekly_install_count": 13,
-  "total_install_count": 13,
-  "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/190507_after.jpeg?r=1602689424",
+  "updated": "2020-12-06T12:25:14.000Z",
+  "weekly_install_count": 1,
+  "total_install_count": 27,
+  "rating": 3,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/190507_after.jpeg?r=1607257515",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/190507_additional_37196.jpeg?r=1602689424"
+    "https://userstyles.org/style_screenshots/190507_additional_37196.jpeg?r=1607257515"
   ],
   "license": null,
   "created": "2020-10-09T14:13:29.000Z",
   "category": "site",
   "raw_subcategory": "youtube",
   "subcategory": "youtube",
-  "additional_info": null,
+  "additional_info": "Added skeleton screen style (the skeleton screen adjusts to the settings).",
   "style_tags": [],
-  "css": "@-moz-document url-prefix(\"https://www.youtube.com/\") {\r\n#dismissable #avatar-link{display: none !important}#dismissable #details #video-title.ytd-rich-grid-media{font-size: 1.4rem !important;line-height: 1.6rem !important}#title.ytd-rich-shelf-renderer{color: var(--yt-spec-text-primary);font-size: 1.6rem}ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block,ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}#rich-shelf-header.ytd-rich-shelf-renderer{margin: 14px 0 14px 0px !important}ytd-rich-shelf-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer)}#show-more-button.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{margin-bottom: 24px}ytd-rich-item-renderer{margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;width: calc(100% / var(--ytd-rich-grid-items-per-row) - 4px - 0.01px)}ytd-rich-section-renderer{width: 100%;margin-left: calc(4px / 2);margin-right: calc(4px / 2)}#grid-header.ytd-rich-grid-renderer{margin: 24px 0 24px 4px}h3.ytd-rich-grid-video-renderer{margin: 8px 0 8px!important}ytd-primetime-promo-renderer.ytd-rich-section-renderer,ytd-inline-survey-renderer.ytd-rich-section-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer);border-bottom: 1px solid var(--yt-spec-10-percent-layer)}html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[size]]*/;--ytd-rich-grid-item-margin: 4px !important;}#contents.ytd-rich-grid-renderer, #grid-header.ytd-rich-grid-renderer{width: calc(100% + 4px + 0.01px) !important;max-width: calc( var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin))) !important}@media (max-width:456px){ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 1 !important;--ytd-rich-grid-posts-per-row: 1 !important}}@media (min-width:457px){ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 2 !important;--ytd-rich-grid-posts-per-row: 2 !important}}@media (min-width:671px){ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 3 !important;--ytd-rich-grid-posts-per-row: 3 !important}}@media screen and (min-width: 957px){ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 4 !important;--ytd-rich-grid-posts-per-row: 2 !important;--ytd-rich-grid-movies-per-row: 5 !important}}@media screen and (min-width: 1171px){ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 5 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 6 !important}}@media screen and (min-width: 1600px){ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 6 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 9 !important}}ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: /*[[quantity]]*/;}\r\n\r\n/*Размер - Size*/\r\nhtml:not(.style-scope) {\r\n    --ytd-rich-grid-item-max-width: /*[[sizes]]*/; /*250px !important*/\r\n}\r\n\r\n/*Строки - Lines*/\r\nytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n    --ytd-rich-grid-items-per-row: /*[[quan]]*/; /*8 !important*/\r\n}\r\n}",
-  "discussions": [],
-  "discussionsCount": 0,
+  "css": "@-moz-document url-prefix(\"https://www.youtube.com/\") {\r\n#dismissable #avatar-link{display: none !important}#dismissable #details #video-title.ytd-rich-grid-media{font-size: 1.4rem !important;line-height: 1.6rem !important}#title.ytd-rich-shelf-renderer{color: var(--yt-spec-text-primary);font-size: 1.6rem}ytd-video-meta-block[rich-meta] #channel-name.ytd-video-meta-block,ytd-video-meta-block[rich-meta] #metadata-line.ytd-video-meta-block{font-size: 1.3rem !important}#rich-shelf-header.ytd-rich-shelf-renderer{margin: 14px 0 14px 0px !important}ytd-rich-shelf-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer)}#show-more-button.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}ytd-rich-shelf-renderer[is-show-more-hidden] #dismissable.ytd-rich-shelf-renderer{border-bottom: 1px solid var(--yt-spec-10-percent-layer)}#contents.ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer{margin-bottom: 24px}ytd-rich-item-renderer{margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;width: calc(100% / var(--ytd-rich-grid-items-per-row) - 4px - 0.01px)}ytd-rich-section-renderer{width: 100%;margin-left: calc(4px / 2);margin-right: calc(4px / 2)}#grid-header.ytd-rich-grid-renderer{margin: 24px 0 24px 4px}h3.ytd-rich-grid-video-renderer{margin: 8px 0 8px!important}ytd-primetime-promo-renderer.ytd-rich-section-renderer,ytd-inline-survey-renderer.ytd-rich-section-renderer{border-top: 1px solid var(--yt-spec-10-percent-layer);border-bottom: 1px solid var(--yt-spec-10-percent-layer)}/*and: skeleton-loading*/.rich-grid-media-skeleton {margin-left: calc(4px / 2);margin-right: calc(4px / 2);margin-bottom: 24px;\r\n}.rich-grid-media-skeleton {flex-basis: var(--ytd-rich-grid-item-max-width) !important;min-width: var(--ytd-rich-grid-item-max-width) !important;max-width: var(--ytd-rich-grid-item-max-width) !important;}.shelf-skeleton .channel-avatar {display: none;}.rich-shelf-videos .text-shell {height: 16px !important;}/*end: skeleton-loading*/html:not(.style-scope){--ytd-rich-grid-item-max-width: /*[[size]]*/;--ytd-rich-grid-item-margin: 4px !important;}#contents.ytd-rich-grid-renderer, .rich-shelf-videos, #grid-header.ytd-rich-grid-renderer{width: calc(100% + 4px + 0.01px) !important;max-width: calc( var(--ytd-rich-grid-items-per-row) * (var(--ytd-rich-grid-item-max-width) + var(--ytd-rich-grid-item-margin))) !important}@media (max-width:456px){.rich-shelf-videos, ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 1 !important;--ytd-rich-grid-posts-per-row: 1 !important}}@media (min-width:457px){.rich-shelf-videos, ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 2 !important;--ytd-rich-grid-posts-per-row: 2 !important}}@media (min-width:671px){.rich-shelf-videos, ytd-rich-grid-renderer{--ytd-rich-grid-items-per-row: 3 !important;--ytd-rich-grid-posts-per-row: 3 !important}}@media screen and (min-width: 957px){.rich-shelf-videos, ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 4 !important;--ytd-rich-grid-posts-per-row: 2 !important;--ytd-rich-grid-movies-per-row: 5 !important}}@media screen and (min-width: 1171px){.rich-shelf-videos, ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 5 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 6 !important}}@media screen and (min-width: 1600px){.rich-shelf-videos, ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: 6 !important;--ytd-rich-grid-posts-per-row: 3 !important;--ytd-rich-grid-movies-per-row: 9 !important}}.rich-shelf-videos, ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{--ytd-rich-grid-items-per-row: /*[[quantity]]*/;}\r\n\r\n/*Размер - Size*/\r\nhtml:not(.style-scope) {\r\n    --ytd-rich-grid-item-max-width: /*[[sizes]]*/; /*250px !important*/\r\n}\r\n\r\n/*Строки - Lines*/\r\n.rich-shelf-videos, ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {\r\n    --ytd-rich-grid-items-per-row: /*[[quan]]*/; /*8 !important*/\r\n}\r\n}",
+  "discussions": [
+    {
+      "id": 89596,
+      "name": "THNX",
+      "rating": 0,
+      "created": "2020-10-29T10:10:31.000Z",
+      "author_name": "mr_dry",
+      "author_id": 420360
+    },
+    {
+      "id": 89597,
+      "name": "THNX",
+      "rating": 3,
+      "created": "2020-10-29T10:10:37.000Z",
+      "author_name": "mr_dry",
+      "author_id": 420360
+    }
+  ],
+  "discussionsCount": 2,
   "commentsCount": 0,
   "userjs_url": "/styles/userjs/190507/video-size-on-the-youtube-home-page.user.js",
   "style_settings": [

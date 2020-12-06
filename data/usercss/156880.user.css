@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MetalTxus
 @description    `Allows the customization of the game's layout and responsive behavior.<a href="https://imgur.com/a/kud5i">> Previews album <</a>`
-@version        2020818.19.7
+@version        2020126.11.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color bg-color "Background color" #150F0F
@@ -615,18 +615,16 @@ body,
 
 /* fix weapon and summon grid BGs */
 .cnt-weapon-list {
-  background-position: -2px 0;
-  background-size: 324px 661px;
+  background-position: -2.5px -423px;
+}
+
+.cnt-summon-list {
+  background-position: -2.5px -755px;
 }
 
 /* fix crew chest overlapping pictures */
 #submenu-general-chat #chat-body #chat-log .lis-log .txt-log {
   padding-left: 52px;
-}
-
-.cnt-summon-list {
-  background-position: -2px -332px;
-  background-size: 324px 661px;
 }
 
 /* prevent horizontal scrollbar */
