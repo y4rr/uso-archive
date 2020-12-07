@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devista
 @description    `Nevra daily maana popup`
-@version        20201118.23.56
+@version        2020126.23.30
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,7 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
     }
 
 div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message:after {
-    content: '..................................... Leave, I am playing hard to get.';
+    content: '....Leave, I am playing hard to get.';
     margin: 2px;
     font-size: 1.5rem;
     color: #fff;
@@ -26,7 +26,7 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
 
 div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-content {
     margin-right: -300px;
-    margin-top: 160px;
+    margin-top: 130px;
 }
 
 body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer {
@@ -43,21 +43,25 @@ body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after 
 
 body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after {
     background: url("https://www.eldarya.pl/assets/img/npc/library/mood/1899d2acedadc185c381859106956247.png");
+    background-size: cover;
+    margin-left: 120px;
 }
 
 
 div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button {
-    visibility: hidden;
+       display: block;
+     	padding: 0px;
+    	border: 0px;
 }
 
 
 div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button:after {
-    content: 'Love you!';
+    content: 'Love you too!';
     visibility: visible;
     background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%);
     box-shadow: inset 0 0 21px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36);
     font-size: 1.2rem;
-    padding: 0rem 0.6rem;
+    padding: 0.1rem 0.6rem;
     display: inline-block;
     font-weight: bold;
     text-align: center;
@@ -66,14 +70,14 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
     color: #fff;
     line-height: 1.8;
     font-family: "Alegreya Sans SC", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     position: relative;
     cursor: pointer;
-    margin-left: -60px;
+    margin-left: -80px;
 }
 
 .flavr-container .flavr-overlay {
-    margin: -120px;
+    margin: -80px;
 }
 
 .flavr-container.first-connexion #first-connexion-reward {
@@ -82,9 +86,8 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
 }
 
 .flavr-container.new-layout-popup .flavr-outer::after {
-     animation: popup-skew alternate infinite 7000ms linear, show-popup forwards 200ms ease-in-out 95ms;
-}.flavr-container.new-layout-popup .flavr-outer::after {
-     animation: popup-skew alternate infinite 9000ms linear, show-popup forwards 600ms ease-in-out 95ms;
+     animation: popup-skew alternate infinite 11000ms linear, show-popup forwards 200ms ease-in-out 95ms;
+
 }
 }
 

@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         AN drew
 @description    `淘宝、天猫、爱淘宝  首页仅保留导航栏、logo、搜索框。`
-@version        20201030.2.53
+@version        2020126.12.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name        Pithy TaoBao/Tmall | 简洁 淘宝/天猫
 @description 首页仅保留导航栏、logo、搜索框。
-@version     1.0.6
+@version     1.0.7
 @namespace https://greasyfork.org/users/472487
 ==/UserStyle== */
 
@@ -240,7 +240,7 @@ html, body{
 html,body{
     background:#FF5000;
 }
-.mui-zebra-page{
+.mui-zebra-page, .zebra-oversea-dropbanner{
     display:none!important;
 }
 .s-hqHd-menuitem, .more.more-with-border{

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        2020124.17.20
+@version        2020126.14.18
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -658,9 +658,9 @@ a.scCTtb:visited,
 .rg_fbl,
 .rg_fbl:hover,
 .kp-blk._Jw._Rqb._RJe {
-    background: none !important;
+    background: var(--card-bg-col) !important;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2) !important;
 }
 .rg_fbl,
 .rg_fbl:hover {
@@ -939,15 +939,7 @@ li.ed-sug:hover,
 .commercial-unit-desktop-top .v7hl4d {
     color: var(--label-text-col2);
 }
-._pbb,
-a._pbb,
-._oc,
-._oc .muse-wta,
-._oc .richlist-wta,
-._oc ._Sb,
-.vk_c .Sjzt1b {
-    background-color: var(--card-bg-col) !important;
-}
+
 .ptJHdc .v7hl4d {
     background: var(--main-bg-col);
 }
@@ -3385,7 +3377,8 @@ body,
 .InkVs,
 .NGwAH:first-child,
 .dGIF9:first-child,
-.gb_zb.gb_zb {
+.gb_zb.gb_zb,
+.mIKy0c.dGWpb {
 
     background: #101010 !important;
 }
@@ -3440,7 +3433,7 @@ body,
 .fs5Qwd,
 .cfBJGe,
 .NGwAH,
-.ogvxFb {
+.ogvxFb, .mmxugd {
     color: #D3D3D3 !important;
 }
 

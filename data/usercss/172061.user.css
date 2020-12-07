@@ -1,15 +1,14 @@
 /* ==UserStyle==
-@name           TWEWY Youtube Hype Chan
+@name           TWEWY Youtube Hype Chan, The World Ends With You
 @namespace      USO Archive
 @author         Pop the butterfly
-@description    `It's a Youtube Background of Hype Chan in the end of The World Ends with You`
-@version        2020126.10.57
+@description    `It's a Youtube Background of Hype Chan in the end of The World Ends with You. If you have any problems like color correction, please send a feedback and i will check this. The style is still in WIP...`
+@version        2020126.19.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com")
 {
-
 #account-name.ytd-active-account-header-renderer {/*name*/
     text-shadow: 0 0 8px var(--paper-purple-a200);
 }
@@ -54,24 +53,67 @@ border-radius: 3px
 }
 ytd-comments {/*comments box*/
     display: block;
-    background-color: #ea1d07;
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+    background-color: #ea1d077d;
+	background-image: linear-gradient(180deg, #ea1d07 100%);
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
 }
 
+.style-scope ytd-watch-next-secondary-results-renderer {/*recommandation*/
+    display: block;
+    background-color: #ea1d077d;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+
+#info.ytd-watch-flexy {/*title video*/
+    display: block;
+    background-color: #ea1d077d;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 0px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+
+.style-scope ytd-rich-item-renderer {/*ytb video page*/
+    display: block;
+    background-color: #ea1d07;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+
+.style-scope ytd-post-renderer {/*ytb chl post*/
+    display: block;
+    background-color: #ea1d07;
+}
+
+.style-scope ytd-video-secondary-info-renderer {/*description*/
+    display: block;
+    background-color: #ea1d077d;
+    border-left: 4px solid #fff394;
+	border-top: 0px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+  
 #container.ytd-searchbox {/*search bar*/
     background-color: #801308;
-    border-left: 1px solid #ffffff70;
-	border-top: 1px solid #ffffff70;
-	border-bottom: 1px solid #ffffff70;
-	border-right: 0px solid #ffffff70;
-    border-radius: 17px 0 0 17px;
+    border-left: 2px solid #fff394;
+	border-top: 2px solid #fff394;
+	border-bottom: 2px solid #fff394;
+	border-right: 2px solid #fff394;
 }
 #search-icon-legacy.ytd-searchbox {
     cursor: pointer;
-    width: 65px;
-    border: 1px solid #ffffff;
+    width: 60px;
+    border: 2px solid #fff394;
     background-color: #ea1d07;
-    border-radius: 0px 17px 17px 0px;
 }
 #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
     width: 30px;
@@ -82,14 +124,6 @@ ytd-comments {/*comments box*/
 ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 1px solid #fff;
     box-shadow: inset 0 0px 6px #ea1d07;
-	animation: yadsearch;
-	animation-iteration-count: 1;
-	animation-duration: 2s
-}
-
-@keyframes yadsearch { 
-	0% {box-shadow: inset 0 0px 9px 12px #f0f}
-    
 }
 
 .ytp-scrubber-pull-indicator::after {
@@ -107,11 +141,11 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
 }
 
 paper-button.ytd-subscribe-button-renderer {/*sub button*/
-    background-color: #ea1d07;
+    background-color: #ffc60d;
     border-radius: 5px;
 }
 .ytp-sb-subscribe, a.ytp-sb-subscribe {
-    background-color: #ea1d07;
+    background-color: #ffc60d;
     color: #fff;
 }
 
@@ -122,42 +156,51 @@ paper-button.ytd-subscribe-button-renderer {/*sub button*/
     display: none;
 }
 
+.style-scope ytd-multi-page-menu-renderer {
+	display: block;
+    background-color: #ea1d07;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+
+.style-scope ytd-simple-menu-header-renderer {
+    background-color: #ea1d07;
+}
+
+
 ytd-multi-page-menu-renderer {/*right dropdown notif*/
-    background: #570c04;
-	border-radius: 10px;
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+    background: #c9b04d;
 }
 
 #guide-content.ytd-app {
-    background-image: linear-gradient(180deg, #2f033ea8 0%, #ff00b240 100%);
+    background-image: linear-gradient(180deg, #e04d28 100%);
 }
 yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
     color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));
 }
 paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {/*toggle button*/
-    background-color: #fff;
-	box-shadow: 0 0 10px 5px #ff6959;
+    background-color: #ffc60d;
 }
 paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
     opacity: 1;
-    background-color: #fff;
-	box-shadow: 0 0 10px 5px #ff6959;
+    background-color:#ffc60d;
 }
 
 .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {/*toggle button2*/
     background: #ffffff;
-    box-shadow: 0 0 10px 5px #ff6959;
+    box-shadow: 0 0 10px 5px #ffc60d;
 }
 
 .ytp-volume-slider-handle {/*volume buttom*/
     position: absolute;
     top: 50%;
-    width: 13px;
-    height: 13px;
-    border-radius: 7px;
-    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    margin-top: -5px;
     background: #ffffff;
-    box-shadow: 0 0 12px 5px #eb1700;
 }
 
 .badge-style-type-live-now.ytd-badge-supported-renderer {/*live now*/
@@ -220,13 +263,6 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
   box-shadow: 0 0 9px 2px #5e5e5e;
 }
 
-/*bg vids and settings*/
-#primary.ytd-two-column-browse-results-renderer {
-    max-width: 100%;
-    min-width: 0;
-    background-color: #4008027d;
-}
-
 ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer {
     border: 1px solid #fff;
     padding: var(--yt-button-padding-minus-border);
@@ -245,33 +281,30 @@ paper-listbox {
     padding: 8px 0;
     background-color: #570505;
     color: var(--paper-listbox-color, var(--primary-text-color));
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+	background-image: linear-gradient(180deg, #ea1d07 100%);
 }
 
 /*drop menu BG*/
 paper-listbox.yt-dropdown-menu {
     background-color: #570505;
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+	background-image: linear-gradient(180deg, #ea1d07 100%);
 }
 
 
 .ytp-popup {
     position: absolute;
     overflow: hidden;
-    border-radius: 2px;
-    background: rgba(67, 8, 81, .9);
-    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    background: rgba(234, 30, 7, .9);
     -moz-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
     -webkit-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
     transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+	background-image: linear-gradient(180deg, #ea1e07 100%);
 }
 .html5-video-info-panel {
-    background: rgba(67, 8, 81, .9);
-    border-radius: 4px;
+    background: rgba(234, 30, 7, .9);
     color: #fff;
     left: 10px;
     position: absolute;
@@ -295,15 +328,13 @@ paper-listbox.yt-dropdown-menu {
 
 /*subpop*/
 paper-toast {
-    background-color: var(--paper-toast-background-color, #3808532b);
-	background-image: linear-gradient(140deg, #40095285 0%, #600e69c4 100%);
-	border-radius: 5px;
+    background-color: var(--paper-toast-background-color, #c22727);
+	background-image: linear-gradient(140deg, #c22727 100%);
 }
 yt-confirm-dialog-renderer[dialog][dialog][dialog] {
-    background-color: var(--paper-toast-background-color, #240237f2);
-	background-image: linear-gradient(180deg, #520d693d 0%, #ff00b240 100%);
+    background-color: var(--paper-toast-background-color, #c22727);
+	background-image: linear-gradient(180deg, #c22727 100%);
 	text-align: center;
-	border-radius: 5px;
 }
 
 /*live indicator home*/
@@ -385,17 +416,16 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
     color: #dfdfdf;
 }
 .sbpqs_a {
-    color: #2dbbde;
+    color: #fcffc4;
 }
 .sbsb_d {
     background: #eeeeee59;
 }
 #tooltip.paper-tooltip {
-	background-image: linear-gradient(200deg, #35044480 0%, #d81b9f91 100%);
-    background-color: #5927a2;
+	background-image: linear-gradient(200deg, #c22727 100%);
+    background-color: #c22727;
     color: var(--paper-tooltip-text-color, white);
-	border: 1px solid #b84fff;
-	border-radius: 4px
+	border: 3px solid #fff394;
 }
 
 ytd-toggle-button-renderer.style-text[is-icon-button] {/*thumbs*/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tyf
 @description    `for RAW LH (loveheaven.net, loveha.net, 18lhplus.com, batoscan.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2020126.9.16
+@version        2020126.14.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -891,28 +891,34 @@
 
 @-moz-document domain("loveheaven.net")
 {
+	.chapter-content {
+		font-size: 0;
+	}
+	
 	.chapter-content .chapter-img {
 		display: block;
-	}
-	
-	font[color="white"] .chapter-img {
-		float: right;
-	}
-	
-	.chapter-content .chapter-img:nth-last-of-type(1),
-	.chapter-content .chapter-img:nth-last-of-type(2) {
-		float: none;
 	}
 	
 	@media screen and (max-width: 133vh) {
 	
 		#content,
 		.chapter-content {
-			max-width: calc((100vh - 27mm)/1.4)
+			max-width: calc((100vh - 25mm)/1.4);
+			direction: rtl;
+			font-size: 0;
 		}
 	}
 	
 	@media screen and (min-width: 133vh) {
+		font[color="white"] .chapter-img {
+			max-width: 50%;
+			float: right;
+		}
+	
+		.chapter-content .chapter-img:nth-last-of-type(1),
+		.chapter-content .chapter-img:nth-last-of-type(2) {
+			float: none;
+		}
 	
 		.chapter-content .chapter-img:first-of-type,
 		.chapter-content .chapter-img:last-of-type {

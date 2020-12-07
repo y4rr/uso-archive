@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devista
 @description    `A pack of styles for Eldarya New Era:- Lance daily maana reward pop-up,- Lance as a companion (on profile and on pet page),- Pet page with additional Lance image,- change of background, colors & font sizes.`
-@version        2020126.0.54
+@version        2020126.23.35
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,8 +11,6 @@
 {
 
 /*daily maana popup - Ash*/
-
-  /*daily maana popup - Ash*/
 
   div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message h1
   {
@@ -62,13 +60,14 @@
 
   div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button
   {
-    visibility: hidden;
+     display: block;
+      	padding: 0px;
+    	border: 0px;
   }
 
   div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button:after
   {
     content: '*take your daily maana and run*!';
-    visibility: visible;
     background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%);
     box-shadow: inset 0 0 21px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36);
     font-size: 1.2rem;
@@ -81,7 +80,7 @@
     color: #fff;
     line-height: 1.8;
     font-family: "Alegreya Sans SC", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     position: relative;
     cursor: pointer;
     margin-left: -80px;
@@ -89,7 +88,7 @@
 
   .flavr-container .flavr-overlay
   {
-    margin: -120px;
+   margin: -80px;
   }
 
   .flavr-container.first-connexion #first-connexion-reward
