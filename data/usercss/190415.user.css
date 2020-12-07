@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `U2網頁樣式修改良善`
-@version        20201111.1.26
+@version        2020127.1.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -36,6 +36,9 @@ html:not([style-scope]):not(.style-scope){background:#000000 url(https://sites.g
 
 /*#####--- 左下留言區的背景顏色 ---#####*/
 DIV[id="contents"][class="style-scope ytd-item-section-renderer"] {background-color: #262A31 !important;}
+
+/*#####--- 隱藏上方廣告方框 ---#####*/
+DIV[class*="style-scope ytd-display-ad-renderer"] {display: none !important;}
 
 
 }

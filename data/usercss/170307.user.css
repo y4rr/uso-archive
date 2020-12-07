@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tyf
 @description    `for RAW LH (loveheaven.net, loveha.net, 18lhplus.com, batoscan.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2020126.14.52
+@version        2020127.5.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -221,7 +221,7 @@
 	.chapter-content {
 		font-size: 0;
 		width: calc(100% - 4mm) !important;
-		max-width: calc((100vh - 22mm)*1.414);
+		max-width: calc((100vh - 22mm)*1.5);
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -267,7 +267,7 @@
 	#content>img,
 	.chapter-content .chapter-img {
 		min-width: 45vh;
-		max-width: 98vw;
+		max-width: 100%;
 		height: calc(100vh - 22mm);
 		background-color: rgba(255, 255, 255, .4);
 		border: none;
@@ -791,7 +791,7 @@
 	
 		.itemupdate,
 		.row-list {
-			width: calc(100% / 2 - 6px);
+			width: calc(100% / 2 - 7px);
 		}
 	}
 	
@@ -799,7 +799,7 @@
 	
 		.itemupdate,
 		.row-list {
-			width: calc(100% / 3 - 6px);
+			width: calc(100% / 3 - 7px);
 		}
 	}
 	
@@ -807,7 +807,7 @@
 	
 		.itemupdate,
 		.row-list {
-			width: calc(100% / 4 - 6px);
+			width: calc(100% / 4 - 7px);
 		}
 	}
 	
@@ -815,7 +815,7 @@
 	
 		.itemupdate,
 		.row-list {
-			width: calc(100% / 5 - 6px);
+			width: calc(100% / 5 - 7px);
 		}
 	
 		.itemupdate,
@@ -834,7 +834,7 @@
 	
 		.itemupdate,
 		.row-list {
-			width: calc(100% / 7 - 6px);
+			width: calc(100% / 7 - 7px);
 		}
 	
 		.itemupdate,
@@ -880,6 +880,9 @@
 	}
 	
 	@media screen and (min-width: 133vh) {
+		.chapter-content .chapter-img {
+			max-width: 50%;
+		}
 	
 		.chapter-content .chapter-img:first-of-type,
 		.chapter-content .chapter-img:last-of-type {
