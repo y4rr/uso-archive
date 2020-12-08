@@ -2,8 +2,8 @@
 @name           巴哈姆特動畫瘋 深色主題 夜間模式 重大更新
 @namespace      USO Archive
 @author         蔡易翔
-@description    `如果你發現比這個更好用的，請告訴我:)2020.12.04更新動畫瘋影片底下Facebook留言目前沒有完美CSS解決方案，但可以讓它完全消失看不見，只需將程式碼第5行取消註解其可，將/*display:none;*/改成display:none;`
-@version        2020124.15.46
+@description    `如果你發現比這個更好用的，請告訴我:)2020.12.07更新動畫瘋影片底下Facebook留言目前沒有完美CSS解決方案，但可以讓它完全消失看不見，只需將程式碼第5行取消註解其可，將/*display:none;*/改成display:none;`
+@version        2020127.15.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -302,22 +302,22 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 	background: #FF0044 !important;
 }
 
-#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > section.season > ul > li.playing > a{
+#BH_background > div.container-player > div.anime-title > div.anime-option > section.season > ul > li.playing > a{
 	border-radius: 3px !important;
     background: #469BBC !important;
 }
 
-#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > section.season > ul > li > a:hover{
+#BH_background > div.container-player > div.anime-title > div.anime-option > section.season > ul > li > a:hover{
 	border-radius: 3px !important;
     background: #469BBC !important;
 }
 
-#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > div > section > ul > li.playing > a{
+#BH_background > div.container-player > div.anime-title > div.anime-option > div > section > ul > li.playing > a{
 	border-radius: 3px !important;
     background: #469BBC !important;
 }
 
-#BH_background > div.container-player.fullwindow > div.anime-title > div.anime-option > div > section > ul > li > a:hover{
+#BH_background > div.container-player > div.anime-title > div.anime-option > div > section > ul > li > a:hover{
 	border-radius: 3px !important;
     background: #469BBC !important;
 }
@@ -333,44 +333,50 @@ body > div.top_sky > nav > div > ul > li > a:hover{
 	border-color: transparent !important;
 	background: #469BBC !important;
 }
-
-#BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > div.ACG-score{
-    color: #FFFFFF !important;
-    border-color: #469BBC !important;
+/*作品簡介&評價整體背景*/
+#BH_background > div.container-player > section.data{
+	color: #92E2D6 !important;
+	background: #000000 !important;
+}
+/*作品簡介*/
+#BH_background > div.container-player > section.data > div.data_intro > div.intro_title{
+	color: #92E2D6 !important;
+	border-color: transparent !important;
+	background: transparent !important;
+}
+/*作品簡介文*/
+#BH_background > div.container-player > section.data > div.data_intro{
+	color: #FFFFFF !important;
+	border-color: transparent !important;
+	background: transparent !important;
+}
+/*評價總分*/
+#BH_background > div.container-player > section.data > div.data_acgbox > div > div.ACG-score{
+    color: #92E2D6 !important;
+    border-color: #92E2D6 !important;
 	/*border-color: #5555FF !important;*/
 }
 
-#BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > div.ACG-score > span{
-	color: #FFFFFF !important;
+#BH_background > div.container-player > section.data > div.data_acgbox > div > div.ACG-score > span{
+	color: #92E2D6 !important;
 }
 
-#BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > div.ACG-data > ul.ACG-persent > li > span{
-	color: #FFFFFF !important;
+#BH_background > div.container-player > section.data > div.data_acgbox > div > div.ACG-data > ul.ACG-persent > li > span{
+	color: #92E2D6 !important;
 }
 
-#BH_background > div.container-player.fullwindow > section.data > div.data_acgbox > div > p{
+#BH_background > div.container-player > section.data > div.data_acgbox > div > p{
 	color: #92E2D6 !important;
 	background: #000000 !important;
 	border-radius: 10px !important;
 }
 
-#BH_background > div.container-player.fullwindow > section.data > div.data_intro, #BH_background > div.container-player.fullwindow > section.data > div.data_intro > div.intro_title{
-	color: #FFFFFF !important;
-	border-color: transparent !important;
-	background: transparent !important;
-}
-
-#BH_background > div.container-player.fullwindow > section.data{
-	color: #FFFFFF !important;
-	background: #000000 !important;
-}
-
-#BH_background > div.container-player.fullwindow > section.data > div.data_intro > div.link > a{
+#BH_background > div.container-player > section.data > div.data_intro > div.link > a{
 	color: #FFFFFF !important;
 	background: #333333 !important;
 }
 
-#BH_background > div.container-player.fullwindow > section.data > div.data_intro > div.link > a:hover{
+#BH_background > div.container-player > section.data > div.data_intro > div.link > a:hover{
 	color: #FFFFFF !important;
 	background: #469BBC !important;
 }

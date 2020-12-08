@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to a style size limit Darkest Fusion has been divided into 2 parts. That one contains dark theme for most common used Google sites: <strong>About, Account management, Alerts, Books, Calendar, Contacts, Drive, Finance, Groups, Hangouts, Maps, My Activity, One, Patents, Payments, Passwords, Photos, Scholar, Search, Sheets, Tasks, Translate, Travel and Trends</strong>.<strong><mark>Second style is available >>> <a href="https://userstyles.org/styles/180430/google-darkest-fusion-2-2">there</a> <<<</mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        2020126.20.31
+@version        2020127.21.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown google_logo "Google logo color" {
@@ -116,8 +116,8 @@ T2 "Stretch (for wallpapers)" <<<EOT background-size: cover !important;
 
 }
 @advanced dropdown gmail "Dark e-mails for Gmail" {
-	G2 "Disabled*" <<<EOT  EOT;
-G1 "Enabled (Default)" <<<EOT .Bu, .bAn, .bAt, .nr.wR, .bAt > tbody, .bAt > tbody > tr,  .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb
+	G2 "Disabled*" <<<EOT /*_[[gmail]]_*\/ EOT;
+G1 "Enabled Full (Default)" <<<EOT .Bu, .bAn, .bAt, .nr.wR, .bAt > tbody, .bAt > tbody > tr,  .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb
 {
   background-color: #131313 !important;
 }
@@ -173,7 +173,7 @@ hr
 	color: #FAFAFA !important;
 }
 
-.J-JN-M-I-Jm, .hx .gD, .amn > .ams, .ig .g3, .hI .g3, .iv .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc
+.J-JN-M-I-Jm, .hx .gD, .amn > .ams, .ig .g3, .hI .g3, .iv .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd
 {
 	color: #CCC !important;
 }
@@ -249,6 +249,139 @@ button[name="cancel"]
 }
 
 /*_[[gmail]]_*\/ EOT;
+G3 "Enabled without dark e-mails" <<<EOT .Bu, .bAn, .bAt, .nr.wR, .bAt > tbody, .bAt > tbody > tr,  .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb
+{
+  background-color: #131313 !important;
+}
+
+.alO, .agd .J-M-JJ input, .a8B, .a8F, .g-gmail-main, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Fi-ie, .ve-Ci-Zb-Di-Yb-ih, .ve-Gf-Lf, button[name="cancel"], .Nd-eg-Gf, .Nd-hg-Kc
+{
+	background-color: #1C1C1C !important;
+}
+
+.adI, .hU, .bzx, .h9.gt, .J-M, .g-gmail-hero, .section--secure, .section--organize .content--organize, .To.Ze, .Kj-JD, .KA.Kj-JD-Jh, .vO, .wO, .J-Z, .aaZ, .ah.aiv, .ah.uR, .aFf .ak[style*="background-image"], .aaZ .dC, .aaZ .J-M, .aaZ .vN.vQ, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .aoT, .aoP .Ar, .Am.editable, .aDg > .aDj, .aXjCH > .et > div.ah.aiv, .GQ, .IG, .azX, .aNU, .Ap, .aNQ, .Od-kh-lh, .ve-Kj-Qc-qb, .ve-Mi-ie, .LW-KX-Jm, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX .J-KU, .Nd-Zf-Bf, .Nd-Zf-Kc .Nd-cg-Kc,.quantumWizMenuPaperselectPopup, .d-Qs-Jh-JF, .d-Qs-Md, .qY, .ve-Ym-kf-Ym-mh, .d-u-Q, [aria-selected="false"] > .Od-lh-mh, .a-R-kb-u, .Nd-eg-nc, .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il
+{
+	background-color: #2C2C2C !important;
+}
+
+.ams.bkH, .ams.bkG, .hV, .bzx .bzr:hover, .bzx .bzr:focus, .J-N-JT, .J-N-JW, .alB, .alD, .T-I-KE, .J-JB-KA, .J-JB-KA-JS, .J-JB-KA-Jk, .J-JB-KA-LG, .ah .Jd-Je, .Od-kh-w, div.Kj-JD-Jl > button.J-at1-atl:disabled, .Nd-Zf-nc-w, .quantumWizMenuPaperselectOption.isSelected, .appsShareTeamdriveAclfixerButton:hover .exportOverlay, .J-ayz-axF.KO, .ve-Ym-kf-Ym-mh:hover, .d-u-Q:hover, button[name="cancel"]:hover, .Od-lh-mh[aria-selected="true"] > div, [aria-selected="true"] > .Od-lh-mh, .Nd-eg-nc-w
+{
+	background-color: #3C3C3C !important;
+}
+
+.ams.bkH:hover, .ams.bkG:hover, .rZ, .TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW
+{
+	background-color: #4C4C4C !important;
+}
+
+.vN.vQ.a3q
+{
+	background-color: #D93025 !important;
+}
+
+.nY, .aDj.aDi::after
+{
+	background: transparent !important;
+}
+
+.d-u-Q, .a-R-kb-u
+{
+    background-image: none !important
+}
+
+hr
+{
+	display: block; height: 1px !important;
+    border: 0; border-top: 1px solid #4C4C4C !important;
+}
+
+[style*="border:1px solid #eee"], [style*="border:1px solid #fafafa"], [style*="border:1px solid #ffffff"], .J-Kh, .alB, .alD, .r7 td.r8, .r7 td.r9, .r7 td.r5, .qV, .qX, .al8, .al7, .PS, .Az.AM, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .KA.Kj-JD, .a8F, .HM .I5, .HM .aDi::before, .Od-kh-Ld, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Mi-ie, .Od-kh-lh, .ve-Ue-Nd-Nf .ve-eb-Kc, .ve-Ii-Ue .ve-Nd-Rl-Sl .ve-eb-Kc, .Nd-Zf-lg, .Nd-Zf-Bf, .quantumWizTogglePaperradioOffRadio, .d-Qs-M8-ayz, .d-Qs-KO-ayz, .d-Qs-RG, .ve-Ci-Zb-ie, .ve-Fi-ie, .ve-Ym-kf-Ym-mh, .ve-nj-Qc, .ve-Fc-Ye-Fo-qg, .d-u-Q:hover, .d-u-Q, .Od-lh-mh, .a-R-kb-u, .Nd-eg-Gf, .Nd-eg-qg, .ve-eb-Kc, .d-Rb:not(:focus), .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .Nd-jg-ig-Gf
+{
+	border-color: #4C4C4C !important;
+}
+
+.ha > .hP, .J-JN-M-I-Jm:hover, .Kj-JD-K7-K0, .bzs > h2.bzu, .bzs > p.bzD, .J-N-JT .J-N-Jz, .J-N-JW .J-N-Jz, .h-c-headline, .h-c-header__cta-li-link--primary, .alB, .alD, .zw .nY .nU, .zw .nY .n0, .nY .nU, .nY .n0, .T-I.J-J5-Ji, .Az .Aj, .J-JB-KA-JB:not(.J-JB-KA-Ku-Kk):not(.J-JB-KA-a1R-JB), .J-JB-KA-Kl, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .agd .J-M-JJ input, .J-Ks-KO .J-N-Jz, .aoT, .vO, .az9, .J-J5-Ji .J-Z-M-I-Jm:hover, .aiv .am > .ao5 .Jd-JU, .J-JB-KA-LG, .a-Ki-w, .Od-kh-cb, .J-KU.J-KU-KO, .ve-Kk-ff-cb, .Nd-Zf-Bf-ng:focus, .Nd-Zf-Bf-ng:hover, .Od-Ef-Oc-tc, .appsShareTeamdriveAclfixerTitleText .appsShareTeamdriveAclfixerTitleHeader, .appsShareTeamdriveAclfixerChipsContainer .appsShareTeamdriveAclfixerChip > span, .appsShareTeamdriveAclfixerFixOptionPrimaryText, .L3, .J-ayz-J8-J9, .t0 > .t1, .tg > .vL, .yv > .t2, .ve-Ci-Zb-Di-Yb-ih .a-Di, .ve-Ci-Zb-Di-Yb-ih .a-kb-u, .ve-Ym-kf-cb, .ve-nj-Gf, .Nd-eg-Gf-cb, .a-Di, .a-Di-w
+{
+	color: #FAFAFA !important;
+}
+
+.J-JN-M-I-Jm, .hx .gD, .amn > .ams, .ig .g3, .hI .g3, .iv .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd
+{
+	color: #CCC !important;
+}
+
+.J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .Sr, .acP
+{
+	color: #AAA !important;
+}
+
+.vN.vQ.a3q .vT, .a-Cb-w > .a-ub-eb
+{
+	color: #000 !important;
+}
+
+.aAi
+{
+    color: inherit;
+}
+
+.Kj-JD-Jz .e, .Kj-JD-Jz a, .sA, .r4 .e, .Od-kh-w .Od-kh-cb
+{
+	color: #4285F4 !important
+}
+
+.qu > .go, .hx .hb, div.Kj-JD-Jl > button, .bBh .Kj-JD-Jl > .J-at1-auR, .g6
+{
+	color: #AAA !important;
+}
+
+.bzQ > .bzs *
+{
+	color: #0A0A0A !important;
+}
+
+.ams.bkH, .ams.bkG, .bzx .bzr, .bzx .bzr:hover, .bzx .bzr:focus
+{
+	box-shadow: inset 0 0 0 1px #4C4C4C !important;
+}
+
+.ve-Ci-Zb-ie, .ve-Ym-kf-Ym-mh {
+    box-shadow: none !important;
+}
+
+.h-c-header__bar
+{
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #4C4C4C !important;
+}
+
+.SD > [class*="g"], .T-I > [class*="h"], .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before, .adK > .zzm .ha .pH-A7, .ha .aoj, .f.gW, :not(.pG) > .a9q, .J-N-Jz div.J-N-JX.aDE, .J-Ph-hFsbo, .J-Ks-KO .J-N-Jo, .aaA.eY, .J-Z-M-I-J6-H > .J-Z-M-I-JG, .aaA.eS, .ve-fk-b-xh, .ve-fk-mk-nk, .ve-Nd-Sf-ei-u, .ve-fk-Nd-gk-df, .a-Cb-w
+{
+	filter: invert(85%) !important;
+}
+
+.adJ > .hc, .zi > .hc, .ajy > .ajz, .J-JN-M-I-JG, .ob > .adG, span.Kj-JD-K7-Jq, .aeu, .zz, .asi .J-Ks-KO::before, .J-M-JJ .A0, .J-Z-I-J6-H, .J-Z-M-I .aUI.Y1, .a8E, .biy.Je, .hB, .mL, .Un::after, .mI, .SB, div.J-J5-Ji.J-Z-M-I-Jm > div.aaA.aaB.e4, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.eP, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.fc, .vv-vk-Jq-JX, .byd, .byf::before, .ve-nk-db-Ki, .ve-nk-uk-vk, .J-LC-Jo, .ve-nk-Nd-ok-zg, .Nd-ke-I-kf-re, .ve-zj-kh-Nf, .quantumWizMenuPaperselectDropDown, .d-Na-J3, .tk > .W2, .tk > .W3, .tk > .W4, .ve-fk-db-Di, .Nd-ke-I-pf-re
+{
+	filter: invert(100%) !important;
+}
+
+button[name="cancel"]
+{
+	opacity: 1 !important;
+	transform: scale(1) !important;
+}
+
+/*_[[gmail]]_*\/ EOT;
+G4 "Dark e-mails only" <<<EOT .gs > div:not(.gE):not(.ajx):not([id]):not(.wj)
+{
+	filter: invert(92%) hue-rotate(180deg) saturate(100%) !important;
+}
+
+.gs > div:not(.gE):not(.wj) img:not(.ajT)
+{
+	filter: invert(100%) hue-rotate(180deg) contrast(110%) saturate(90%);
+}
+
+/*_[[gmail]]_*\/ EOT;
 
 }
 @advanced dropdown custom_wallpaper "Background Image" {
@@ -268,8 +401,8 @@ C5 "Lake" <<<EOT https://i.imgur.com/EMalQHU.jpg EOT;
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v6.24
-* Updated: 		06.12.2020
+* Version:		v6.31
+* Updated: 		07.12.2020
 */
 
 activating_style_indicator
@@ -989,11 +1122,11 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	background-color: #161616 !important;
 }
 
-.VfPpkd-WsjYwc, .Y653g, .sy3Oxe:not(:disabled), .oI76Ne, .wLhdzf:focus, .NbhQYc:focus, .VCNZl, .MocG8c, .xPnGFc .nMBhmd, .zF5Ln {
+.VfPpkd-WsjYwc, .Y653g, .sy3Oxe:not(:disabled), .oI76Ne, .wLhdzf:focus, .NbhQYc:focus, .VCNZl, .MocG8c, .xPnGFc .nMBhmd, .zF5Ln, .g3VIld, .wTlO9d, .Akhvdf, .yT1kKd, .pLU7g, .VfPpkd-P5QLlc {
 	background-color: #2C2C2C !important;
 }
 
-.MocG8c.KKjvXb, .u3Gjuf:hover {
+.MocG8c.KKjvXb, .u3Gjuf:hover, .ksBjEc:not(:disabled) {
 	background-color: #3C3C3C !important;
 }
 
@@ -1005,11 +1138,11 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	background-color: rgba(44, 44, 44, 0.5) !important;
 }
 
-.Qnu87d, .e4sqP, .NUiOB, .lEoPHd, .ByuQmf, .zAkhMb, .yjn2bf, .PhVj2e, .QmPrs, .wT8Mjb, .MocG8c, .nMBhmd, .q2syxd, h1, h2, .Yc8uD {
+.Qnu87d, .e4sqP, .NUiOB, .lEoPHd, .ByuQmf, .zAkhMb, .yjn2bf, .PhVj2e, .QmPrs, .wT8Mjb, .MocG8c, .nMBhmd, .q2syxd, h1, h2, .Yc8uD, .A49fxe, .JxdCGc, .pb5oVd, .qN8oze, .zWu4Ze, h5, h3, .HjyTG, .mgTetd, .M99Hnd {
 	color: #FAFAFA !important;
 }
 
-.mjO7gf, .zb9ZCe, .DLsyv, .fKz7Od, .ryGQRb .fBn0Qb, .VfPpkd-vQzf8d, .LjifFb, .ZI49d, .Z1is9, .tNjlP, .RaN4Jc, .C0sdme, .d1ssif, .dVvuYe, .pUc9qd, .NbhQYc, .Jl0LTb, .pY417b, .CbU6xd, .tKV7vb, .PKlnze, .QXEulb, .vcGo8 {
+.mjO7gf, .zb9ZCe, .DLsyv, .fKz7Od, .ryGQRb .fBn0Qb, .VfPpkd-vQzf8d, .LjifFb, .ZI49d, .Z1is9, .tNjlP, .RaN4Jc, .C0sdme, .d1ssif, .dVvuYe, .pUc9qd, .NbhQYc, .Jl0LTb, .pY417b, .CbU6xd, .tKV7vb, .PKlnze, .QXEulb, .vcGo8, .K8LxIe, .opolue, .OC2CJd, .zsySCd, .fcy9qf, .FND7Ae, .DeADAf, .J14TO, .qT09ad, .vsaK6b {
 	color: #CCC !important;
 }
 
@@ -1017,12 +1150,16 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	color: #777 !important;
 }
 
-.I8MVFf, .hxvKGd, .sy3Oxe:not(:disabled), .Rj2Mlf, .VCNZl, .u3Gjuf:hover, .zdYl9e {
+.I8MVFf, .hxvKGd, .sy3Oxe:not(:disabled), .Rj2Mlf, .VCNZl, .u3Gjuf:hover, .zdYl9e, .wTlO9d, .wMO4Hd, .slhDY, .Akhvdf, .qSGZBb {
 	border-color: #4C4C4C !important;
 }
 
 .NbhQYc:focus {
 	outline-color: #2C2C2C !important;
+}
+
+.n5kzDf {
+    filter: invert(100%) !important;
 }
 }
 
@@ -1602,7 +1739,7 @@ body.main-body.billing-seamless.popup-mode {
 	background: #1C1C1C !important;
 }
 
-.b3-inline-tooltip-popup-wrapper, .help-Helpwidgets-TooltipWidget-content-html, .goog-menu, .ac-renderer, .b3-standalone-container-navigation-option.selected, .b3-widget-table-data-row, .b3-widget-table-header-row, .b3-widget-table-header-row, .b3-widget-table-data-row, .b3-section.card, .b3-modal-dialog-quantum.b3-modal-dialog.modal-dialog-bg, .popup-mode .b3-page-header {
+.b3-inline-tooltip-popup-wrapper, .help-Helpwidgets-TooltipWidget-content-html, .goog-menu, .ac-renderer, .b3-standalone-container-navigation-option.selected, .b3-widget-table-data-row, .b3-widget-table-header-row, .b3-widget-table-header-row, .b3-widget-table-data-row, .b3-section.card, .b3-modal-dialog-quantum.b3-modal-dialog.modal-dialog-bg, .popup-mode .b3-page-header, .b3-payment-methods-card, .b3-balance-card,  .b3-header-container, .modal-dialog-bg, .modal-dialog, .modal-dialog-content, .modal-dialog-title {
 	background-color: #2C2C2C !important;
 }
 
@@ -1622,11 +1759,11 @@ body.main-body.billing-seamless.popup-mode {
 	background-image: none !important;
 }
 
-hr.b3-separator.b3-separator-insert, .b3-widget-table-data-cell, .b3-widget-table-message-cell, .b3-data-row-checkbox, .b3-receipt-total-row, .b3-checkbox-check-container, .b3-section.card, .b3-section.card .b3-section-inner-content .b3-action-bar, .b3-input-accent, .b3-address-book .b3-address-book-add-address-button .b3-button, .zO8NTc, .NoiTBc {
+hr.b3-separator.b3-separator-insert, .b3-widget-table-data-cell, .b3-widget-table-message-cell, .b3-data-row-checkbox, .b3-receipt-total-row, .b3-checkbox-check-container, .b3-section.card, .b3-section.card .b3-section-inner-content .b3-action-bar, .b3-input-accent, .b3-address-book .b3-address-book-add-address-button .b3-button, .zO8NTc, .NoiTBc, .b3-balance-card,  .b3-header-container, .b3-payment-methods-card, .b3-instrument-details-actions-bar {
 	border-color: #4C4C4C !important;
 }
 
-.b3-section .b3-section-header, strong, b, .b3-standalone-container-footer a, .b3-info-message-body1, .b3-info-message-subhead1, .b3-widget-table-header-cell, .b3-card-header .b3-card-header-title, .b3-breadcrumb.plaintext .b3-breadcrumb-nav-link:last-child, .b3-address-line, .b3-collapsing-section-collapsed-title-primary, .b3-collapsing-section-subheader, .b3-add-instrument-card-header {
+.b3-section .b3-section-header, strong, b, .b3-standalone-container-footer a, .b3-info-message-body1, .b3-info-message-subhead1, .b3-widget-table-header-cell, .b3-card-header .b3-card-header-title, .b3-breadcrumb.plaintext .b3-breadcrumb-nav-link:last-child, .b3-address-line, .b3-collapsing-section-collapsed-title-primary, .b3-collapsing-section-subheader, .b3-add-instrument-card-header, .b3-instrument-details-label, .b3-info-message-html span, [class^="b3-existing-instrument"], .modal-dialog-title, .modal-dialog-title-text {
 	color: #FAFAFA !important;
 }
 
@@ -1634,7 +1771,7 @@ hr.b3-separator.b3-separator-insert, .b3-widget-table-data-cell, .b3-widget-tabl
 	color: #CCC !important;
 }
 
-.b3-input.populated .b3-input-label, .b3-input.invalid .b3-input-label, .b3-input.autofilled .b3-input-label, .b3-input-field > .b3-input-label, .b3-input-field > .b3-input-label.accessible {
+.b3-input.populated .b3-input-label, .b3-input.invalid .b3-input-label, .b3-input.autofilled .b3-input-label, .b3-input-field > .b3-input-label, .b3-input-field > .b3-input-label.accessible, .Foqxif {
 	color: #777 !important;
 }
 
@@ -1654,7 +1791,7 @@ a:visited {
 	fill: #4285F4 !important;
 }
 
-.b3-inline-tooltip-default-icon, .help-Helpwidgets-TooltipWidget, .help-Helpwidgets-TooltipWidget-over {
+.b3-inline-tooltip-default-icon, .help-Helpwidgets-TooltipWidget, .help-Helpwidgets-TooltipWidget-over, .b3-svg-icon, .modal-dialog-title-close {
 	filter: invert(100%) !important;
 }
 }
@@ -1832,11 +1969,11 @@ div[role="navigation"], .JPdR6b, textarea:not([jsname="YPqjbf"]), .rPYW7c, .VfPp
     background-color: transparent !important;
 }
 
-.EIug8e, .GYJCSd, .obNJBf.wH28vf, .mSbCD, .mfQCMe, .PNenzf, .ex6r4d, .Tx3RVd, .Yzdhqd, .WUbige, .cL5NYb, .Y596od, .j8QBce, .M9qPhf, .hPriQc, .vUbGoc, .Qizfvf, .eLFytf, .z80M1, .qGGF1b, .CgsFie, .x1vyqd, a > span, .section__display, .ycKFmf, .xyy4Pc, .Xbx9pd, .q20Fs, .I7yCae, .eFLo1d, .hCN9Md, .yL6Afe, .R5XrWc, .Udl2rb .VNJHc.LcqyIb:hover .snByac, .v8h7Rd, .dhzwN {
+.EIug8e, .GYJCSd, .obNJBf.wH28vf, .mSbCD, .mfQCMe, .PNenzf, .ex6r4d, .Tx3RVd, .Yzdhqd, .WUbige, .cL5NYb, .Y596od, .j8QBce, .M9qPhf, .hPriQc, .vUbGoc, .Qizfvf, .eLFytf, .z80M1, .qGGF1b, .CgsFie, .x1vyqd, a > span, .section__display, .ycKFmf, .xyy4Pc, .Xbx9pd, .q20Fs, .I7yCae, .eFLo1d, .hCN9Md, .yL6Afe, .R5XrWc, .Udl2rb .VNJHc.LcqyIb:hover .snByac, .v8h7Rd, .dhzwN, .qJ3sed {
 	color: #FAFAFA !important;
 }
 
-.gb_Wa svg, .gb_Fc svg, .xA0gfb, .G7ubtf, .Gyl1rf, .bFJFBf, .IGdgBf, .rWd3Kd, .rN6Qmb, .o7Osof .oJeWuf, .Yyy4Hc, .Ja4Wfd, .sd2Ow, .aP5QJc, .FfYVOe, .lY31xf, .hvQUI, .BXFOce, [jsname="V67aGc"], .v1262d.JUQOtc, .tRTVSe, .hAt1wf, .RwVyJb, .jMchje, .b25S2, .DOAbib .HLOCEe, .RwVyJb, .Aul2T .cI2tlc .ZAGvjd, .P72lEd, .USUr0d, .Ecvatc, .UV4Xae, .rWyLGb, .Y95CAf, .nCD66e .sWtJyb, .iO7J1d, .pfyIe, .np3Q7c, .ZEmz6b, .AJM7gb, .R9U8ab, .sprMUb, .a6dNre, .Z9Az9, .xmeYof, .J1HfDb, .CBDf0d, .BnQsec, .LAL5ie .ZAGvjd, .section__header--light, .section__header, .section__subheader, .nzRLqf, .WBfbmd, .whsOnd, .vRMGwf, .viaTeb .wkrEK, .bQXFd, .ubsg2b, .WLLPqb, .Fd2t4d, .zKT0yd, .Q53E8c, .H9eFkc, .vB8bIb, .Ebw6d::placeholder, .k4Or1e, .bCPWJc, .SqxZMb, .HiceN, .DOAbib:not(.ixImeb) .OOX9bc, .tLNx2, .x1LMef, .WYhgcb, .kzRzlf, .Wo4qXc, .y3l11d, .wjDi1d, .NW8xMc, .B5UQdc, .DcsHOb, .ZLRk4e, .nAfFgf, .yERkJe, .RLo1Hf, .Udl2rb .VNJHc.LcqyIb .snByac {
+.gb_Wa svg, .gb_Fc svg, .xA0gfb, .G7ubtf, .Gyl1rf, .bFJFBf, .IGdgBf, .rWd3Kd, .rN6Qmb, .o7Osof .oJeWuf, .Yyy4Hc, .Ja4Wfd, .sd2Ow, .aP5QJc, .FfYVOe, .lY31xf, .hvQUI, .BXFOce, [jsname="V67aGc"], .v1262d.JUQOtc, .tRTVSe, .hAt1wf, .RwVyJb, .jMchje, .b25S2, .DOAbib .HLOCEe, .RwVyJb, .Aul2T .cI2tlc .ZAGvjd, .P72lEd, .USUr0d, .Ecvatc, .UV4Xae, .rWyLGb, .Y95CAf, .nCD66e .sWtJyb, .iO7J1d, .pfyIe, .np3Q7c, .ZEmz6b, .AJM7gb, .R9U8ab, .sprMUb, .a6dNre, .Z9Az9, .xmeYof, .J1HfDb, .CBDf0d, .BnQsec, .LAL5ie .ZAGvjd, .section__header--light, .section__header, .section__subheader, .nzRLqf, .WBfbmd, .whsOnd, .vRMGwf, .viaTeb .wkrEK, .bQXFd, .ubsg2b, .WLLPqb, .Fd2t4d, .zKT0yd, .Q53E8c, .H9eFkc, .vB8bIb, .Ebw6d::placeholder, .k4Or1e, .bCPWJc, .SqxZMb, .HiceN, .DOAbib:not(.ixImeb) .OOX9bc, .tLNx2, .x1LMef, .WYhgcb, .kzRzlf, .Wo4qXc, .y3l11d, .wjDi1d, .NW8xMc, .B5UQdc, .DcsHOb, .ZLRk4e, .nAfFgf, .yERkJe, .RLo1Hf, .Udl2rb .VNJHc.LcqyIb .snByac, .aDUoef, .FkWMmd, .FtiXNe {
 	color: #CCC !important;
 }
 
@@ -1856,7 +1993,7 @@ a, .ksBjEc:not(:disabled) {
 	fill: #CCC !important;
 }
 
-.R4TmW, .t5nRo, .Rj2Mlf:not(:disabled), .X0f2Ie, .QfyHQc, .URCQde.CWVNI, .wQjIgb, .b98gu, .cI2tlc .jBmls, .Usd1Ac, .yMuq9d, .CrDAje, .uAJfId .tEQo7b, .uFjcbe, .Yvat7e, .mboUdc, .pAlvYe::after, .aMW3Dc, .vN5iFf, .DcsHOb, .lDDKpd .hi7xwe .Fmedib::after, .lDDKpd .hi7xwe .biyFUd::after, .GlFjCc, .qURWqc .ajQY2, .QtDoYb, .eReC4e.FbgB9, .kCtYwe {
+.R4TmW, .t5nRo, .Rj2Mlf:not(:disabled), .X0f2Ie, .QfyHQc, .URCQde.CWVNI, .wQjIgb, .b98gu, .cI2tlc .jBmls, .Usd1Ac, .yMuq9d, .CrDAje, .uAJfId .tEQo7b, .uFjcbe, .Yvat7e, .mboUdc, .pAlvYe::after, .aMW3Dc, .vN5iFf, .DcsHOb, .lDDKpd .hi7xwe .Fmedib::after, .lDDKpd .hi7xwe .biyFUd::after, .GlFjCc, .qURWqc .ajQY2, .QtDoYb, .eReC4e.FbgB9, .kCtYwe, .lnQi4 {
 	border-color: #4C4C4C !important;
 }
 
@@ -2552,7 +2689,7 @@ img[src="/textinputassistant/tia.png"], .A9x0mb, .dir-tt .img, .MOIkmc, .tdu-tra
 }
 }
 
-@-moz-document regexp("https:\\/\\/(www\\.)?mail\\.google\\.com.*"), regexp("https:\\/\\/(www\\.)?docs\\.google\\.com\\/picker.*"), regexp("https:\\/\\/(www\\.)?google\\.(com|([a-z]{2}))(\\.[a-z]{2})?\\/gmail\\/about\\/.*") {
+@-moz-document regexp("https:\\/\\/(www\\.)?mail\\.google\\.com.*"), regexp("https:\\/\\/(www\\.)?docs\\.google\\.com\\/picker.*"), regexp("-zhttps:\\/\\/(www\\.)?google\\.(com|([a-z]{2}))(\\.[a]{2})?\\/gmail\\/about\\/.*") {
 /*[[gmail]]*/
 
 /*_[[gmail]]_*/
@@ -2580,7 +2717,7 @@ body:not([jsaction^="LhiQec"]):not(.qJTHM), body#gsr div#cnt,  html, .freebirdFo
     display: none !important;
 }
 
-div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, a[href*="brandaccounts?authuser"]:hover, a[href^="/settings/storage?authuser"]:hover, a[href^="?authuser"]:hover, div[aria-label="Account Information"] > div > div > a[href*="authuser="]:hover, div[aria-label] > ul[class^="gb_"]:not([aria-dropeffect="move"]), .minidiv .sfbg, input:not(.goog-toolbar-combo-button-input).jfk-textinput:not(.docs-charts-editor-material-combo-box-input), .gb_ia, .gb_4, .gb_T:hover .gb_Z, .gb_qb, .gb_z.gb_U > .gb_C, .gb_z.gb_U, .EHzcec, .gb_xb:hover, .gs_md_d, .vk-box, .gb_sb, [class^="gb_"] > a[href^="/document/u/0/"], .gb_I, .gb_Sa > .gb_ob, ul[aria-dropeffect="move"], .gb_ub, .gb_zb, .gb_F, .gb_yb, .gb_Bb, .gb_Fc, .jZWadf, .qcTKEe, #kO001e, .FtRlBe, .ooPrBf, .sfbg, .gb_Db.gb_Db, .OvJdSb, .MUxCJc, .gb_Ab.gb_Ab, header > div > div[role="navigation"], .s8GCU, .Pvpvv {
+div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, a[href*="brandaccounts?authuser"]:hover, a[href^="/settings/storage?authuser"]:hover, a[href^="?authuser"]:hover, div[aria-label="Account Information"] > div > div > a[href*="authuser="]:hover, div[aria-label] > ul[class^="gb_"]:not([aria-dropeffect="move"]), .minidiv .sfbg, input:not(.goog-toolbar-combo-button-input).jfk-textinput:not(.docs-charts-editor-material-combo-box-input), .gb_ia, .gb_4, .gb_T:hover .gb_Z, .gb_qb, .gb_z.gb_U > .gb_C, .gb_z.gb_U, .EHzcec, .gs_md_d, .vk-box, .gb_sb, [class^="gb_"] > a[href^="/document/u/0/"], .gb_I, .gb_Sa > .gb_ob, ul[aria-dropeffect="move"], .gb_ub, .gb_zb, .gb_F, .gb_yb, .gb_Bb, .gb_Fc, .jZWadf, .qcTKEe, #kO001e, .FtRlBe, .ooPrBf, .sfbg, .gb_Db.gb_Db, .OvJdSb, .MUxCJc, .gb_Ab.gb_Ab, header > div > div[role="navigation"], .s8GCU, .Pvpvv {
 	background-color: #161616 !important;
 }
 
@@ -2588,11 +2725,11 @@ div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, 
 	background-color: #1C1C1C !important;
 }
 
-.gb_k:not(.gb_l):hover .gb_t, .gb_ub:focus, .gb_ub:hover:focus,  [class*="gb_"] > a[href*="https://policies.google.com/privacy"]:hover, [class*="gb_"] > a[href*="https://myaccount.google.com/termsofservice"]:hover, .gb_lb, .gb_mb, .vk-btn, .NQV3m, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):hover, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):focus, :not(.gb_va).gb_6c, :not(.gb_Fe).gb_7c, .gb_l .gb_nb, .gb_Ib, .LpN4Jc, .IyGLgf {
+.gb_k:not(.gb_l):hover .gb_t, .gb_ub:focus, .gb_ub:hover:focus, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:hover, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:focus, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:hover, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:focus,  .gb_lb, .gb_mb, .vk-btn, .NQV3m, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):hover, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):focus, :not(.gb_va).gb_6c, .gb_l .gb_nb, .gb_Ib, .LpN4Jc, .IyGLgf, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"], [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_sourc"] {
 	background-color: #2C2C2C !important;
 }
 
-.gb_lb:hover, .vk-btn:hover, :not(.gb_va).gb_6c:hover, .gb_7c:hover, .gb_l .gb_nb:hover, .gb_ob:hover,  .gb_Ib:hover {
+.gb_lb:hover, .vk-btn:hover, :not(.gb_va).gb_6c:hover, .gb_l .gb_nb:hover, .gb_ob:hover, .gb_Ib:hover, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"]:hover, [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_source"]:hover {
 	background-color: #3C3C3C !important;
 }
 
@@ -2617,7 +2754,7 @@ div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="f
 	/*keep old color for "Google Account" button*/;
 }
 
-div[class^="gb_"], span[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib, .PNgVMb {
+[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib, .PNgVMb {
 	color: #FAFAFA !important;
 }
 

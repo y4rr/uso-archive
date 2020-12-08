@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         SaberSpeed77
 @description    `This is a dark theme for Aspen. I hope you like it. Any sort of feedback is appreciated.`
-@version        20201117.5.35
+@version        2020127.20.58
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("aspen.cps.edu") {
 .bodyBackground 
   {
-    background-color: #000000d6 !important; 
+    background-color: #292929 !important; 
           }
   
 .contentContainer 
@@ -200,7 +200,7 @@
 
 .menuImageContainer:hover 
  {
-    border-left: 3px solid grey !important;
+    border-left: 3px solid #585858 !important;
     border-right: 3px solid #585858 !important;
           }
 
@@ -347,4 +347,22 @@ pre
     background-color: #292929 !important;
     content: url("https://i.imgur.com/qFmcbT0.png");
           }
+
+div.timeline-viewport, div.timeline-Header, div.timeline-Body, footer, #groupRepositoryContent .repositoryListClass, .timeline-Tweet:hover, .jstree-hovered {
+    background-color: #000000 !important;
+    border: #000000 !important;
+          }   
+
+.timeline-Tweet-text, .SandboxRoot.env-bp-330 .TweetAuthor-name, .SandboxRoot.env-bp-430 .TweetAuthor-name, .SandboxRoot.env-bp-550 .TweetAuthor-name, .TwitterCard .SummaryCard-content .TwitterCard-title, .TwitterCard .SummaryCard--large .SummaryCard-content p, .timeline-Header-title, .jstree a {
+	color: #FFFFFF !important;
+    font: monospace !important;
+          }
+
+.jstree-0 li[rel="cttWebLink"] > a > .jstree-icon {
+    background-image: url('https://creazilla-store.fra1.digitaloceanspaces.com/emojis/45970/black-medium-small-square-emoji-clipart-md.png');
+          }
+
+Style Attribute {
+    color: #FFFFFF; 
+}
 }

@@ -2,17 +2,13 @@
 @name           TWEWY Youtube Hype Chan, The World Ends With You
 @namespace      USO Archive
 @author         Pop the butterfly
-@description    `It's a Youtube Background of Hype Chan in the end of The World Ends with You. If you have any problems like color correction, please send a feedback and i will check this. The style is still in WIP...`
-@version        2020126.19.49
+@description    `It's a Youtube Background of Hype Chan in the end of The World Ends with You. If you have any problems like color correction, please send a feedback and i will check this. I have finish all i want to do, now I need to use the style to make next update and the feedback to make some changes.`
+@version        2020127.18.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com")
 {
-#account-name.ytd-active-account-header-renderer {/*name*/
-    text-shadow: 0 0 8px var(--paper-purple-a200);
-}
-
 #logo-icon-container.ytd-topbar-logo-renderer {/*logo*/
     animation-name: logoyad;
 	filter: none;
@@ -31,13 +27,13 @@
 }
 
 ytd-app {
-background-image: url(https://i.postimg.cc/nV7tJYJK/maxresdefault-1.png);
-background-repeat: no-repeat;
-background-attachment:fixed;
-background-color: #14031E;
-background-position: 50% 33%, center;
-background-size: cover!important;
-background-blend-mode: screen;	
+	background-image: url(https://i.postimg.cc/nV7tJYJK/maxresdefault-1.png);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-color: #14031E;
+	background-position: 50% 33%, center;
+	background-size: cover!important;
+	background-blend-mode: screen;	
 }
 
 
@@ -140,6 +136,37 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
     border-color: #e70b0b;
 }
 
+.style-scope ytd-expanded-shelf-contents-renderer {/*tendance*/
+    display: block;
+    background-color: #ea1d0790;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;   
+}
+
+.style-scope ytd-grid-renderer {/*abonnement*/
+    display: block;
+    background-color: #ea1d0790;
+    border-left: 4px solid #fff394;
+	border-top: 4px solid #fff394;
+	border-bottom: 4px solid #fff394;
+	border-right: 4px solid #fff394;
+}
+
+ytd-sentiment-bar-renderer[activated_] #like-bar.ytd-sentiment-bar-renderer
+  { /*like*/
+    background-color: #ffc60d!important;
+  }
+ytd-menu-renderer ytd-toggle-button-renderer.style-default-active[is-icon-button]:nth-of-type(1)
+  { /*like*/
+    color: #ffc60d;
+  }
+ytd-menu-renderer ytd-toggle-button-renderer.style-default-active[is-icon-button]:nth-of-type(2)
+  { /*dislike*/
+    color: var(--yt-spec-icon-inactive);
+  }
+
 paper-button.ytd-subscribe-button-renderer {/*sub button*/
     background-color: #ffc60d;
     border-radius: 5px;
@@ -165,12 +192,18 @@ paper-button.ytd-subscribe-button-renderer {/*sub button*/
 	border-right: 4px solid #fff394;
 }
 
+.style-scope ytd-active-account-header-renderer {
+	display: block;
+    background-color: #ff9c8f;
+    background-image: linear-gradient(180deg, #423737 27%, #ea1d07 100%);
+}
+
 .style-scope ytd-simple-menu-header-renderer {
     background-color: #ea1d07;
 }
 
 
-ytd-multi-page-menu-renderer {/*right dropdown notif*/
+headerytd-multi-page-menu-renderer {/*right dropdown notif*/
     background: #c9b04d;
 }
 
@@ -181,7 +214,7 @@ yt-icon.ytd-compact-link-renderer {/*dropdown yt icons*/
     color: var(--yt-compact-link-icon-color, var(--yt-spec-icon-inactive));
 }
 paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {/*toggle button*/
-    background-color: #ffc60d;
+    background-color: #ffffff;
 }
 paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
     opacity: 1;
@@ -189,8 +222,7 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
 }
 
 .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {/*toggle button2*/
-    background: #ffffff;
-    box-shadow: 0 0 10px 5px #ffc60d;
+    background: #ffc60d;
 }
 
 .ytp-volume-slider-handle {/*volume buttom*/
@@ -211,12 +243,12 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
 }
 
 ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
-    background-color: #ea1d07;
+    background-color: #423737;
 }
 
 /*watched video bar*/
 #progress.ytd-thumbnail-overlay-resume-playback-renderer {
-    background-color: #ea1d07;
+    background-color: #423737;
     height: 100%;
 }
 
@@ -316,14 +348,11 @@ paper-listbox.yt-dropdown-menu {
 /*cc color under*/
 .ytp-chrome-controls .ytp-button[aria-pressed]:after {
     background-color: #fff;
-	box-shadow: 0 0 9px 3px #ff0000;
 }
 
 /*hd text color*/
 .ytp-swatch-color {
-    color: #ffffff;
-    text-shadow: 0 0 9px #ff0000;
-
+    color: #7affa4;
 }
 
 /*subpop*/
@@ -343,8 +372,8 @@ ytd-badge-supported-renderer.ytd-rich-grid-media {
 }
 
 .ytp-spinner-circle {
-    border-style: dotted;
-    border-color: #fff0 #ff00e6fa #fff0 #bd00ff;
+    border-style: dashed solid;
+    border-color: #fff0 #fffda1 #fff0 #fffa00;
     border-radius: 50%;
 }
 
@@ -363,13 +392,13 @@ ytd-playlist-panel-renderer[hide-header-text] .header.ytd-playlist-panel-rendere
 .ytp-settings-button.ytp-hd-quality-badge:after {
     height: 12px;
     width: 16px;
-    background-color: #a400ff;
+    background-color: #ff4400;
 }
 
 /*4k 8k indicator*/
 .ytp-settings-button.ytp-4k-quality-badge:after, .ytp-settings-button.ytp-5k-quality-badge:after, .ytp-settings-button.ytp-8k-quality-badge:after {
-    background-color: #05d0da;
-    box-shadow: 0 0 7px 1px #04fff3;
+    background-color: #ffed4f;
+    box-shadow: 0 0 7px 1px #fff173;
     transform: scale(1.3);
 }
 
@@ -385,7 +414,7 @@ ytd-clarification-renderer[background-style=info] {
 }
 yt-live-chat-renderer {
     background: #a87614;
-	background-image: linear-gradient(130deg, #520d693d 0%, #ff00b240 100%);
+	background-image: linear-gradient(130deg, #ffed4f 0%, #fff173 100%);
 }
 
 html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
@@ -396,9 +425,9 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
     background: rgb(1 1 1 / 0%);
 }
 .sbsb_a {
-    background-image: linear-gradient(180deg, #350444 10%, #9a0c90ab 100%);
+    background-image: linear-gradient(180deg, #2b2424 10%, #423737 100%);
 	border-radius: 0px 0px 15px 15px;
-	background-color: #a87614;
+	background-color: #fad955;
 	color: #fff;
 }
 .sbdd_b {

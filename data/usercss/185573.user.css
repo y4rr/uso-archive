@@ -3,15 +3,36 @@
 @namespace      USO Archive
 @author         \0_0/
 @description    `Shop with dark environment. Relax the eyes.`
-@version        202075.23.50
+@version        2020127.12.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("lazada.com.my") {
-a, .condition, .package-title-brand, button.next-pagination-item {
+a, .condition, .package-title-brand, button.next-pagination-item , .shipping-time {
     color:yellow !important;
     background-color:#000 !important;
 }
+.delivery-option-item__shipping-fee {
+    font-weight: bold;
+    font-family: Roboto-Medium;
+    padding-left: 5px;
+    display: table-cell;
+    text-align: right;
+    white-space: nowrap;
+    color: yellow !important;
+    -moz-transform: rotate(356deg);
+-webkit-transform: rotate(356deg);
+-o-transform: rotate(356deg);
+-ms-transform: rotate(356deg);
+transform: rotate(356deg);
+    font-size: 28px;
+}
+.pdp-price_size_xl {
+    font-size: 48px;
+    font-weight: bold;
+}
+.shipping-status-box .status-list .status-item .status-line {
+    border: 1px dashed #f57224;}
 .search-box__input--O34g {
     color:lime;
     background-color:transparent
@@ -99,7 +120,7 @@ a:hover {
 .seller-name__detail {
     animation: blinker 1s step-start infinite;
 }
-textarea, iframe, .image, html, table, [class*='bar'], [class*='item'], [class*='shop'], [class*='breadcrumb'], [class*='popup'], [class*='delivery'], [class*='guideApp'], [class*='table'], [class*='logo'], [class*='nav'], [class*='playground'], [class*='size'], [class*='footer'], [class*='recommend'], .page-root, [class*='package'], [class*='reviews'], [class*='wishlist'], [class*='shipping'], [class*='order'], [class*='profile'], [class*='header'], [class*='address'], [class*='message'], [class*='tracking'], [class*='wrapper'], [class*='summary'], [class*='location'], [class*='container'] {
+textarea, .shipping-timeline-box, .shipping-status-box,.delivery-proof-box, .delivery, .delivery__option, .delivery__options, .warranty__option-item, iframe, .image, html, table, [class*='bar'], [class*='shop'], [class*='breadcrumb'], [class*='popup'], [class*='guideApp'], [class*='table'], [class*='logo'], [class*='nav'], [class*='playground'], [class*='size'], [class*='footer'], [class*='recommend'], .page-root, [class*='package'], [class*='reviews'], [class*='wishlist'],  [class*='order'], [class*='profile'], [class*='header'], [class*='address'], [class*='message'], [class*='tracking'], [class*='wrapper'], [class*='summary'], [class*='location'], [class*='container'] {
     background-color:#000 !important;
     color:#fff !important
 }

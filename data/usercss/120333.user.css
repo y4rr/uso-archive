@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Johny Bartholdy Jensen (Jonner)
 @description    `Removes advertising and wake up message on www.9gag.com.Can be used with other styles.`
-@version        2020318.12.12
+@version        2020127.21.28
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,8 +12,9 @@
 @-moz-document domain("9gag.com") {
 
 /* Disable ads */
-.video-ads,.naughty-box,.block-ad,#jsid-sticky-button,#jsid-idle-popup-container,.topBannerAd-container{display:none!important;}
+.cp-background,.video-ads,.naughty-box,.block-ad,#jsid-sticky-button,#jsid-idle-popup-container,.topBannerAd-container{display:none!important;}
 div[style="width: 500px; height: 281px; z-index: 1; position: relative; overflow: hidden;"]{display:none!important;}
+
 
 /* remove space */
 post-comment{margin-top:0!important;}
@@ -31,8 +32,8 @@ section[class=""] {display:none!important;}
 /* disable multi color bagground */
 .gif-post,.post-container,.video-post {background-color: transparent !important;}
 
-/* annoying videos */
-iframe{display:none!important;}
+/* annoying videos 
+iframe{display:none!important;}*/
 article > div.post-container:first-child{display:none!important;}
 
 /* test */
