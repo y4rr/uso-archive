@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         iwyvi
 @description    `Google column card search. Remove some ads and the right panel.谷歌多栏卡片搜索，移走了右侧信息框以及部分广告。带有响应式，不同宽度具有不同的栏数，建议三栏以上设置每页显示20条结果。`
-@version        20201118.2.46
+@version        2020128.9.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,6 +17,10 @@
 .mw #rhs {
   display: none;
 }
+#top_nav {
+  display: flex;
+  justify-content: center;
+}
 #rhs .rhsvw {
   width: 457px;
 }
@@ -27,7 +31,8 @@
 .kno-ftr {
   margin-top: 5px;
 }
-#rcnt > .col:nth-child(2) {
+#rcnt > .col:nth-child(2),
+#rcnt > .D6j0vc {
   width: 100% !important;
   box-sizing: border-box;
 }
@@ -56,6 +61,7 @@
   position: relative;
   box-sizing: border-box;
   transform: translateZ(0);
+  z-index: 1;
 }
 .ts {
   padding: 20px;
