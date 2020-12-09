@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         RiKEZ
 @description    `Dark-red theme for VK`
-@version        2020107.5.37
+@version        2020128.20.38
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -467,9 +467,24 @@ background: rgba(140, 0, 0);
 background: rgba(140, 0, 0);
 }
 /*--------------------ИКОНКИ МУЗЫКИ И ОПОВЕЩЕНИЙ--------------------*/
-[dir] .top_nav_btn.active {
-color: rgba(140, 0, 0, .9);
-background-color: rgba(140, 0, 0, .9);
+[dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon {
+background-image: url(https://vk.com/images/svg_icons/ic_head_notify.svg);
+}
+
+[dir] body.new_header_design .top_nav_btn.active {
+background-color: rgb(140, 0, 0);
+}
+
+[dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon {
+background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22m16%2012.625v3.8653505c0%20.2819967.2259549.5096495.5046844.5096495h.9906312c.2906494%200%20.5046844-.2281779.5046844-.5096495v-8.98070098c0-.28199673-.2259549-.50964952-.5046844-.50964952h-.9906312c-.2906494%200-.5046844.22817786-.5046844.50964952v3.86535048l-6.56988525-4.10617828c-.23754582-.14846614-.43011475-.04116893-.43011475.2408278v8.98070098c0%20.2814716.19775391.3860533.43011475.2408278z%22%20fill%3D%22%23fff%22%20transform%3D%22matrix(-1%200%200%201%2027%200)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon {
+background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22m7%2018.9991283c0%20.5527662.3722949.7526751.8248086.4509993l10.3503828-6.9002552c.4555292-.3036861.4525137-.798069%200-1.0997448l-10.3503828-6.9002552c-.45552921-.30368614-.8248086-.10524154-.8248086.45099926z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+[dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon {
+background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22m13%2012.625v3.8653505c0%20.2819967.2259549.5096495.5046844.5096495h.9906312c.2906494%200%20.5046844-.2281779.5046844-.5096495v-8.98070098c0-.28199673-.2259549-.50964952-.5046844-.50964952h-.9906312c-.2906494%200-.5046844.22817786-.5046844.50964952v3.86535048l-6.56988525-4.10617828c-.23754582-.14846614-.43011475-.04116893-.43011475.2408278v8.98070098c0%20.2814716.19775391.3860533.43011475.2408278z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
 }
 
 .checkbox {
@@ -613,7 +628,11 @@ border-radius: 10px;
 }
 
 /*--------------------ЦВЕТ ШРИФТА МУЗЫКИ--------------------*/
-.top_audio_player .top_audio_player_title {
+body.new_header_design .top_audio_player:hover .top_audio_player_title {
+color: #ffffff;
+}
+
+body.new_header_design .top_audio_player_title {
 color: #ffffff;
 }
 
@@ -627,18 +646,14 @@ background: rgba(255, 0, 0, .5) !important;
 background: #4a4a4a !important; 
 }
 
-[dir] .left_count_wrap {
+[dir] body.new_header_design .left_count_wrap {
 background: rgba(0, 0, 0, .5);
 color:#ffffff; 
 }
 
-[dir] .left_count_wrap.left_count_wrap_hovered:hover {
+[dir] body.new_header_design .left_count_wrap_hovered:hover {
 background: rgba(0, 0, 0, .9);
 color:#ffffff; 
-}
-
-.left_row .left_count_wrap {
---left-menu-counter-background: rgb(0, 0, 0);
 }
 
 .friends_phonebook .friends_field {
@@ -654,6 +669,10 @@ border: 2px rgba(255, 255, 255, .9) solid;
 border-radius: 10px; 
 margin-left: -14px;
 margin-top: 58px;
+}
+
+body.new_header_design #side_bar .left_label {
+color: #ffffff;
 }
 
 .left_fixer:hover {
@@ -950,13 +969,33 @@ background-color: rgba(16, 0, 0, .7) !important;
 border: 1px rgba(255, 255, 255, .9) solid;
 }
 
+[dir] body.new_header_design #page_header_cont {
+background: rgb(170, 0, 0);
+}
+
+[dir] body.new_header_design .top_nav_link:hover, [dir] body.new_header_design .top_nav_btn:hover {
+background: rgb(140, 0, 0);
+}
+
+[dir] body.new_header_design .top_audio_player:hover {
+background: rgb(140, 0, 0);
+}
+
+[dir] body.new_header_design .top_nav_link.active {
+background: rgb(140, 0, 0);
+}
+
+body.new_header_design .top_nav_link {
+color: #ffffff;
+}
+
 [dir] #side_bar ol li .left_row:hover {
 background: rgb(40, 40, 40);
 }
 
 [dir] .TopSearch__input {
 border-top: 8px solid transparent;
-background: rgb(140, 0, 0) url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat
+background: rgb(140, 0, 0) url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat;
 }
 
 h1.page_name {

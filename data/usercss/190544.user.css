@@ -3,10 +3,12 @@
 @namespace      USO Archive
 @author         Christopher Haws
 @description    `Custom dark theme for Thingiverse.Complete:- Search Page- Thing Page`
-@version        20201010.20.34
+@version        2020128.20.26
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
+/* i really want this to be global */
+
 :root {
 	/* Main Variables*/
 	--primaryColor: #248bfb;
@@ -34,7 +36,7 @@
 }
 
 html, body, .edit-section, .submit-buttons {
-	background-color: var(--bodyBackground) !important;
+	background: var(--bodyBackground) !important;
 }
 
 a:link, a:visited {
@@ -46,7 +48,7 @@ div[class^="SearchPage__buttonWrapper"],
 div[class^="ThingPage__buttonWrapperDesktop"],
 div[class^="EducationPage__buttonWrapper"],
 div[class^="ScrollUpButton__button"] {
-	background-color: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0);
 	padding: 0px;
 }
 
@@ -55,8 +57,10 @@ div[class^="ScrollUpButton__button"] {
 div[class^="ThingPage__gallery"],
 div[class^="WidgetContainer__widget"],
 section[class^="SignUp__formSection"],
-div[class^="ThingComment__thingComment"] {
-	background-color: var(--cardBackground);
+div[class^="ThingComment__thingComment"],
+div[class^="ShareThingBlock__shareWindowContainer"],
+div[class^="UserProfileCard__container"] {
+	background: var(--cardBackground);
 	box-shadow: var(--cardShadow);
 }
 
@@ -87,18 +91,18 @@ div[class^="Filters__filterTitle"] {
 }
 
 div[class^="MetricButton__tabButton"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	box-shadow: var(--cardShadow);
 }
 
 div[class^="ThingPage__mainColumn"],
 div[class^="SidebarMenu__sidebarMenu"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	box-shadow: var(--cardShadow);
 }
 
 div[class^="ReportWidget__reportContainer"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	box-shadow: var(--cardShadow);
 }
 
@@ -106,7 +110,7 @@ div[class^="ReportWidget__reportContainer"] {
 button[class^="Sort__dropdownButton"],
 button[class^="CategorySort__dropdownButton"],
 button[class^="FilterBySort__dropdownButton"] {
-	background-color: var(--menuBackground);
+	background: var(--menuBackground);
 	box-shadow: var(--cardShadow);
 }
 
@@ -114,12 +118,14 @@ button[class^="FilterBySort__dropdownButton"] {
 div[class^="Sort__dropdownItems"],
 div[class^="CategorySort__dropdownItems"],
 div[class^="FilterBySort__dropdownContent"] {
-	background-color: var(--submenuBackground);
+	background: var(--submenuBackground);
 	box-shadow: var(--cardShadow);
 }
 
 
 div[class^="SideMenuItem__itemContainer"],
+div[class^="UserProfileCard__container"] > *,
+div[class^="UserProfileItems__container"] > *,
 div[class^="ThingCardActions__rightActionsContainer"],
 div[class^="ThingCardActions__rightActionsContainer"] > * {
 	border-color: var(--cardActionBorderColor) !important;
@@ -130,19 +136,19 @@ div[class^="ThingCardActions__rightActionsContainer"] > * {
 *******************************************/
 /* Header Menus */
 div[class^="PageHeader__dropdownItems"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 }
 
 /*******************************************
 * Card
 *******************************************/
 div[class^="ThingCard__thingCard"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	box-shadow: var(--cardShadow);
 }
 
 a[class^="ThingCardBody__cardBodyWrapper"] {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 }
 
 a[class^="ThingCardBody__cardBodyWrapper"] img {
@@ -188,14 +194,14 @@ div[class^="LegalLinks__"] a {
 * Footer
 *******************************************/
 .site-footer {
-	background-color: var(--bodyBackground) !important;
+	background: var(--bodyBackground) !important;
 }
 
 /*******************************************
 * Inputs
 *******************************************/
 button#google-sso-btn {
-	background-color: var(--defaultButtonBackground) !important;
+	background: var(--defaultButtonBackground) !important;
 }
 
 form input[type="text"],
@@ -207,14 +213,18 @@ form input[type="date"],
 form input[type="month"],
 form select,
 form textarea {
-	background-color: var(--inputBackground) !important;
+	background: var(--inputBackground) !important;
 	color: var(--inputForeground) !important;
 }
 
 textarea[class^="ThingComment__commentTextArea"] {
-	background-color: var(--inputBackground);
+	background: var(--inputBackground);
 	box-shadow: 0px 0 25px #00000075;
 	color: var(--inputForeground);
+}
+
+#username {
+	background: var(--inputBackground) !important;
 }
 
 
@@ -222,13 +232,13 @@ textarea[class^="ThingComment__commentTextArea"] {
 * Dashboard
 *******************************************/
 .dashboard_button {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	border-color: var(--cardActionBorderColor);
 	color: var(--secondaryTextColor);
 }
 
 .content-box {
-	background-color: var(--cardBackground);
+	background: var(--cardBackground);
 	border-color: var(--cardActionBorderColor);
 	color: var(--secondaryTextColor);
 }
@@ -239,14 +249,24 @@ textarea[class^="ThingComment__commentTextArea"] {
 
 .pagination-view-more {
 	color: var(--textColor);
-	background-color: var(--primaryButtonBackground);
+	background: var(--primaryButtonBackground);
 	border-color: var(--cardActionBorderColor);
 }
 
 .pagination-view-more:hover:not(.disabled) {
 	color: var(--textColor);
-	background-color: var(--primaryButtonHoverBackground);
+	background: var(--primaryButtonHoverBackground);
 	border-color: var(--cardActionBorderColor);
 }
 
-/* i really want this to be global */
+/*******************************************
+* Social Media Block
+*******************************************/
+div[class^="SharePageBlock__sharePageContainer"] {
+	background: var(--inputBackground);
+	box-shadow: 0px 0 25px #00000075;
+}
+
+div[class^="CreateIcon__icon"] {
+	filter: invert(75%);
+}

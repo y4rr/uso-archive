@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheKangang YT
 @description    `Simple Pink Palette for people who like cute things.`
-@version        2020127.20.20
+@version        2020128.14.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,5 +33,15 @@
 ::moz-selection { /* Custom Selection Color - Firefox */
   color: white;
   background: #ff4477;
+}
+
+.gt2-legacy-profile-info { /* Legacy Profile Fixes */
+  padding-left:12px !important;
+  border: solid 1px var(--color-gray-dark) !important;
+  border-radius: 0 !important;
+  background-color: var(--color-elem) !important;
+}
+.gt2-legacy-profile-description{
+  margin-top:11px !important;
 }
 }

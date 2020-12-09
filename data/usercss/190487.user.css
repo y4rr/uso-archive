@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        2020124.18.43
+@version        2020129.0.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -340,6 +340,32 @@ textarea{
 .alert-success, .que .comment {
     color: #a5dea0!important;
     background-color: #283428!important;
+}
+
+/*--------------------FOROS--------------------*/
+.btn-link, .btn.btn-icon, #page-grade-grading-manage .actions .btn-icon.action {
+    color: #a6e496!important;
+}
+div.editor_atto_toolbar {
+    background: #252525 !important;
+    border: 1px solid #bbbbbb !important;
+}
+div.editor_atto_toolbar div.atto_group {
+    border: 1px solid #cccccc !important;
+    border-bottom: 1px solid #cccccc !important;
+    background: #121212 !important;
+}
+div.editor_atto_toolbar button .icon {
+    color: #b6bec6 !important;
+}
+.editor_atto_notification .atto_info {
+    background-color: #252525 !important;
+}
+body:not(.behat-site) .switch input:checked+label::before {
+    background-color: #a6e496!important;
+}
+body:not(.behat-site) .switch input:checked+label::after {
+    background-color: #016b01 !important;
 }
 
 /*----------TESTE-----------*/
