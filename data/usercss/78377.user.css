@@ -3,72 +3,73 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201128.9.4
+@version        2020129.3.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 ::-webkit-scrollbar
- {
- 	/* Width */
- 	width: 1.2em!important;
- }
+{
+	/* Width */
+	width: 1.2em!important;
+}
 
- /* Color of handle ___________________________________________________________________________*/
- ::-webkit-scrollbar-thumb
- {
- 	background: #580303!important;
- 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
- 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
- 	border-radius: 22px!important;
- 	border: 1px solid rgba(0, 0, 0, .25)!important;
- }
+/* Color of handle ___________________________________________________________________________*/
+::-webkit-scrollbar-thumb
+{
+	background: #580303!important;
+	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+	border-radius: 22px!important;
+	border: 1px solid rgba(0, 0, 0, .25)!important;
+}
 
- ::-webkit-scrollbar-thumb:hover
- {
- 	background: #580303!important;
- 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
- 	border-radius: 22px!important;
- 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
- }
+::-webkit-scrollbar-thumb:hover
+{
+	background: #580303!important;
+	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+	border-radius: 22px!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+}
 
- /* Color of Track ______________________________________________________________________________*/
- ::-webkit-scrollbar-track
- {
- 	background: #170000!important;
- 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
- 	border: 1px solid rgba(0, 0, 0, .25)!important;
- }
+/* Color of Track ______________________________________________________________________________*/
+::-webkit-scrollbar-track
+{
+	background: #170000!important;
+	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+	border: 1px solid rgba(0, 0, 0, .25)!important;
+}
 
- /* Color of handles at top and bottom ___________________________________________________________*/
- ::-webkit-scrollbar-button
- {
- 	background: #4c0707!important;
- 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
- }
+/* Color of handles at top and bottom ___________________________________________________________*/
+::-webkit-scrollbar-button
+{
+	background: #4c0707!important;
+	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+}
 
- ::-webkit-scrollbar-button:hover
- {
- 	border-radius: 22px!important;
- 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
- }
+::-webkit-scrollbar-button:hover
+{
+	border-radius: 22px!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+}
 
- /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
- ::-webkit-scrollbar-corner
- {
- 	background: #530205!important;
- 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
- }
+/* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+::-webkit-scrollbar-corner
+{
+	background: #530205!important;
+	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+}
 
- ::-webkit-scrollbar-corner:hover
- {
- 	border-radius: 22px!important;
- 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
- }
+::-webkit-scrollbar-corner:hover
+{
+	border-radius: 22px!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+}
 }
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 /*__________________________________________________________________________________*/
+
 *
 {
 	text-decoration: none!important;
@@ -104,22 +105,17 @@
 .Rj2Mlf:not(:disabled),
 .Sx9Kwc-haAclf,
 .TieM1d,
-.XD1Bsc,
-.XD1Bsc:hover,
+.XD1Bsc,.XD1Bsc:hover,
 .YcWSDf,
 .ZXJQ7c:hover,
-.aHS-bnr .qj::after,
-.aHS-bnr .qj::before,
+.aHS-bnr .qj::after,.aHS-bnr .qj::before,
 .aJ7 .aI0,
-.alias-input-container,
-.alias-input-focus,
+.alias-input-container,.alias-input-focus,
 .cbphWd,
 .cv2VAd,
 .dw-sb-cont .dw-sb-btn,
 .gbqfqw,
-.gt-lc.gt-lc-mobile .gt-cd,
-.gt-lc.gt-lc-mobile .gt-cd-cl,
-.gt-lc.gt-lc-mobile .gt-cd-ncl,
+.gt-lc.gt-lc-mobile .gt-cd,.gt-lc.gt-lc-mobile .gt-cd-cl,.gt-lc.gt-lc-mobile .gt-cd-ncl,
 .gwGW9e,
 .k2Oeod.eSq3C g-fab,
 .kp-blk,
@@ -133,7 +129,8 @@
 .widget-directions-input-underline,
 .zthhpf,
 :focus,
-a.user-feedback-link
+a.user-feedback-link,
+devsite-thumb-rating .devsite-thumb-rating[tabindex]
 {
 	border: none!important;
 	outline: none!important;
@@ -151,8 +148,9 @@ a.user-feedback-link
 	white-space: pre-wrap!important;
 }
 
-.WGvvNb {
-    white-space: pre-line;
+.WGvvNb
+{
+	white-space: pre-line;
 }
 
 .ellip,
@@ -162,8 +160,8 @@ g-inner-card
 	overflow: visible;
 }
 
-.tl-sugg,
-.sl-sugg-button-container
+.sl-sugg-button-container,
+.tl-sugg
 {
 	overflow-x: hidden;
 }
@@ -172,22 +170,27 @@ g-inner-card
 
 #res h3,
 .lLrAF,
+.pre-style,
 .results .item .title,
 .thread-message-header,
-.zW5vrf .riddkc
+.zW5vrf .riddkc,
+code,
+p,
+pre
 {
 	font-size: 21px!important;
 }
 
 #hdtb,
-.results .item .snippet,
 .ILfuVd,
 .gD,
-.hcfe:not(html)
+.hcfe:not(html),
+.results .item .snippet
 {
 	font-size: 19px!important;
 }
 
+.devsite-nav,
 .results .item .subtitle,
 .URIeEf,
 .W4P4ne,
@@ -222,10 +225,10 @@ input
 .scene-footer
 {
 	font-size: 14px!important;
-	line-height: 19px!important;
 }
 
 .ILfuVd,
+.devsite-nav-item,
 .hcfe:not(html),
 .rc .s,
 p
@@ -234,6 +237,7 @@ p
 }
 
 /*___ Remove Items _________________________________________________________________*/
+
 .ls-wrap .sugg-fade,
 .sbib_b::after
 {
@@ -243,9 +247,14 @@ p
 }
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
+
 .mw #rhs
 {
 	margin-left: 100%!important;
+}
+
+body[layout=docs] devsite-content {
+    margin: 24px 0 0 23px;
 }
 
 .DAVP1
@@ -253,8 +262,7 @@ p
 	padding-left: 0px;
 }
 
-.widget-pane-content,
-.widget-pane-content-shim
+.widget-pane-content,.widget-pane-content-shim
 {
 	top: 71px!important;
 }
@@ -283,8 +291,9 @@ p
 	margin-left: 12px;
 }
 
-.N3nEGc {
-    margin: 4px 13px;
+.N3nEGc
+{
+	margin: 4px 13px;
 }
 
 .aHS-bnr
@@ -303,8 +312,9 @@ p
 	margin-right: 0!important;
 }
 
-#hdtb {
-    margin-top: -35px!important;
+#hdtb
+{
+	margin-top: -35px!important;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -327,20 +337,13 @@ p
 .ab_tnav_wrp,
 .bh13Qc.aneZWd,
 .bkWMgd,
-.devsite-article-inner,
-.devsite-main-content,
-.devsite-page-nav,
-.devsite-section-nav,
+.devsite-article-inner,.devsite-main-content,.devsite-page-nav,.devsite-section-nav,
 .g,
 .gb_xc,
 .ge-section__item,
-.gws-flights-results__results-container,
-.gws-flights__footer,
-.gws-flights__homepage-body,
-.gws-flights__selection-bar,
+.gws-flights-results__results-container,.gws-flights__footer,.gws-flights__homepage-body,.gws-flights__selection-bar,
 .ioZgOd,
-.irc_b,
-.irc_rimask,
+.irc_b,.irc_rimask,
 .kno-vrt-t.MRfBrb,
 .knowledge-finance-wholepage__section:not(:first-of-type):not(#fw-sec-compare-result),
 .leftPane,
@@ -372,6 +375,10 @@ p
 .source-target-row
 {
 	margin: 52px 0!important;
+}
+
+.devsite-main-content[has-book-nav]~.devsite-footer, .devsite-main-content[has-book-nav]~devsite-footer-promos, .devsite-main-content[has-book-nav]~devsite-footer-utility {
+    margin: 0 0 0 404px;
 }
 
 .ls-wrap
@@ -426,8 +433,7 @@ p
 }
 
 .bRMDJf.islir,
-[style*="margin-left:"],
-[style*="margin-right:"]
+[style*="margin-left:"],[style*="margin-right:"]
 {
 	margin: 0!important;
 }
@@ -437,8 +443,7 @@ p
 #extrares,
 #rhs .rhsvw:not(.g),
 .AQabNb,
-.F0XO1GC-b-D,
-.F0XO1GC-f-v,
+.F0XO1GC-b-D,.F0XO1GC-f-v,
 .P94G9b,
 .QG6Xbc,
 .So9e7d,
@@ -465,6 +470,7 @@ p
 .vk_c,
 .wFBvj,
 [data-page-type="SUPPORT_FORUM_THREAD"] .page,
+body[layout=docs] .devsite-article,
 c-wiz.Ubi8Z,
 devsite-toc.devsite-toc
 {
@@ -483,8 +489,9 @@ devsite-toc.devsite-toc
 	padding: 0 19px!important;
 }
 
-.sMi44c.lNHeqe {
-    padding: 0 12px;
+.sMi44c.lNHeqe
+{
+	padding: 0 12px;
 }
 
 #omnibox .tactile-searchbox-input,
@@ -495,8 +502,9 @@ devsite-toc.devsite-toc
 	padding: 0 1rem !important;
 }
 
-#hplogo {
-    padding-top: 0;
+#hplogo
+{
+	padding-top: 0;
 }
 
 /*___ Heights ______________________________________________________________________*/
@@ -516,8 +524,9 @@ img
 	height: auto!important;
 }
 
-body.vasq #hdtbSum {
-    height: 68px;
+body.vasq #hdtbSum
+{
+	height: 68px;
 }
 
 #hplogo
@@ -551,13 +560,11 @@ body.vasq #hdtbSum {
 .IsZvec,
 .UTg3hd,
 .devsite-main-content,
-.gws-flights-results__results-container,
-.gws-flights__header-image,
+.gws-flights-results__results-container,.gws-flights__header-image,
 .main-content,
 .mw,
 .page-width-container,
-.primary-container,
-.primary-nav,
+.primary-container,.primary-nav,
 .rightPane,
 .s,
 .section-weather-text,
@@ -573,7 +580,9 @@ body[layout=docs] devsite-content
 #cnt #foot,
 .isv-r,
 .kno-vrt-t.MRfBrb,
-.side-container
+.side-container,
+.devsite-book-nav-bg,
+devsite-book-nav
 {
 	width: auto!important;
 }
@@ -645,12 +654,12 @@ body[layout=docs] devsite-content
 	width: 21%;
 }
 
-.nlkcvc {
-    width: 33.5%;
+.nlkcvc
+{
+	width: 33.5%;
 }
 
-#cnt #center_col,
-#cnt #foot
+#cnt #center_col,#cnt #foot
 {
 	width: 988px;
 }
@@ -673,7 +682,6 @@ body[layout=docs] devsite-content
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 /*__________________________________________________________________________________*/
-
 #hdtb .hdtb-mitem a,
 #hdtb-msb #hdtb-tls,
 .LlMFmd,
@@ -738,6 +746,9 @@ input[type="radio"]:checked + label
 .W8wzH,
 .XrAfOe,
 .bONr3b,
+.beta :link,.beta :visited,.beta code,.beta,
+.devsite-banner-announcement,
+.devsite-nav-title,
 .eipWBe,
 .footer-notice,
 .fxgdke,
@@ -747,16 +758,23 @@ input[type="radio"]:checked + label
 .heading,
 .language-selector .sc-select,
 .material-menu__item,
+.note :link,.note :visited,.note code,.note,
 .qNPOEc,
 .r9PaP,
 .results .item .snippet,.results .item .subtitle,.results .item .type,
 .sbl2,
-.search-results-thread-count,.section-result-text-content,
+.search-results-thread-count,
+.section-result-text-content,
 .sh-dgr__grid-result a .NzUzee,
+.special :link,.special :visited,.special code,.special,
 .tD1ls,
 .thread-all-replies__load-more-button,.thread-question__payload,
 .uo4vr,
 .vTtwMg9xIJV__details,
+aside :link,
+aside :visited,
+aside code,
+aside,
 body
 {
 	color: #fff!important;
@@ -767,11 +785,13 @@ body
 .A6dC2c,
 .AXnVWe,
 
-.CCb0ac a,.CCb0ac,
+.CCb0ac a,
+.CCb0ac,
 
 .DRolee,
 
-.F0XO1GC-F-a,.F0XO1GC-b-bc,
+.F0XO1GC-F-a,
+.F0XO1GC-b-bc,
 .Fmgc2c,
 
 .IqJTee,
@@ -846,7 +866,8 @@ body
 .results .item .title,
 
 .sh-np__product-title,
-.sbl1,.sbl1p,
+.sbl1,
+.sbl1p,
 .section-destination-via-line-text,.section-info-secondary-text .widget-pane-link,.section-info-secondary-text,
 .sh-sr__shop-result-header,
 
@@ -869,50 +890,43 @@ span.Kj-JD-K7-K0
 /*___ Burlywood ____________________________________________________________________*/
 
 #swml-loc,
-
-.Mu7UF,
 .BgcNfc,
 .G1Rrjc b,
 .GzbC1b,
 .J-N,
 .JgXcPd,
+.Mu7UF,
 .NDTw3e,
 .PtFZn,
 .SQJAwb,
 .Ss2Faf,
 .Zt,
-
 .aI5 b,
 .azqZUd td,
-
 .fisb_ts,
 .flt-body1,.flt-subhead2,
-
 .gt-cd-tl,.gt-is-tr,.gt-lc.gt-lc-mobile .cd-expand-label,.gt-lc.gt-lc-mobile .gt-def-synonym-title,
 .gws-flights-results__price-tracker-title,.gws-flights__footer-picker-title,
-
 .hx .hb,
 .j7FfMb,
 .nJGrxf.FnqxG,
+.pre-style,
 .purchase-header .subtitle,
 .rymPhb-jyrRxf-tJHJj th,
-
 .sbl1 b,
-.section-result-action-text,.section-profile-header-subtext,.section-review-subtitle,
-
+.section-profile-header-subtext,.section-result-action-text,.section-review-subtitle,
 .wfbQZb,
 .wqg8ad,
 .wx62f,
-
 .x7 .y2,
 .xXEKkb,
-
 .y2,
 .yJbeqd a,.yJbeqd span,
 .zW5vrf .to0cd,
-
 b,
-h3,h4
+code,
+h3,h4,
+pre
 {
 	color: #e0b880!important;
 }
@@ -927,8 +941,10 @@ h3,h4
 .TgMHGc,
 .a,
 .bc a:link,
-.cJzOGc,.cJzOGc.Fuybue:visited,
-.cite,.cite:link,
+.cJzOGc,
+.cJzOGc.Fuybue:visited,
+.cite,
+.cite:link,
 .i4vd5e b,
 .jdjqLd,
 .knFDje,
@@ -942,19 +958,20 @@ h3,h4
 cite a:link,cite a:visited,cite,
 form,
 h5,h6,
-label
+label,
+p strong
 {
 	color: #F0A060!important;
 }
 
 /*___ Blue _________________________________________________________________________*/
 
-.U6puSd,
-.rjmdhd,
 .F0XO1GC-nb-Q,.F0XO1GC-rb-g,
 .FGlSad,
 .Od5Jsd,
+.U6puSd,
 .bq3,
+.rjmdhd,
 .f a:link,
 .f,
 .flt-subhead1,
@@ -983,18 +1000,17 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
-.search-results-thread-count--recommended-answers,
-.a8Pemb,
-.T14wmb b,
 .ML43Jb,
 .NprOob,
 .O8U6h,
+.T14wmb b,
+.a8Pemb,
 .drrice .i5DZme,
 .iOKZ6j4kQLMw-n5OlYrWonUQ,
 .iyjjgb,
 .knowledge-finance-wholepage-chart__hover-card-value,
 .ojzJac,
-.section-result-cost,
+.search-results-thread-count--recommended-answers,.section-result-cost,
 .slp.f,
 .z235y
 {
@@ -1003,11 +1019,11 @@ time
 
 /*___ Red __________________________________________________________________________*/
 
-.nSfGAb,
 .Ca,
 .alert-locked-alert,
 .irc-acn,
 .irc_ft,
+.nSfGAb,
 .rmd_ft,
 .sbdb
 {
@@ -1016,8 +1032,8 @@ time
 
 /*__________________________________________________________________________________*/
 
-.gb_6e:not(.gb_7e) input::-webkit-input-placeholder,
 .device-selector-button,
+.gb_6e:not(.gb_7e) input::-webkit-input-placeholder,
 .gtx-lang-selector,
 .gws-flights-form__menu-button,
 .kd-select,
@@ -1025,13 +1041,7 @@ time
 .tuPVDR7ouq5__button,
 .yMl7R .gws-flights-form__menu-button,
 chip-button,
-input,
-input[type=email],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
+input,input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],
 select,
 textarea
 {
@@ -1061,6 +1071,7 @@ pre ::selection
 }
 
 /*___ Code _________________________________________________________________________*/
+
 .token.punctuation
 {
 	color: #fff!important;
@@ -1101,7 +1112,10 @@ pre ::selection
 	color: #05ffbc!important;
 }
 
-.devsite-search-image
+.devsite-search-image,
+.pre-style,
+code,
+pre
 {
 	color: rgb(245, 131, 131);
 }
@@ -1118,11 +1132,9 @@ html
 }
 
 #hdtb-tls:hover,
-
 .cqtbn,
 .f3Fr9d,
 .sfbgg,
-
 div.TH
 {
 	background-image: none!important;
@@ -1153,35 +1165,29 @@ div.Kj-JD-Jh
 #appbar,
 #fbar,
 #hdtbSum,
-
 .F0XO1GC-b-o,
 .Lj9fsd,
 .TAviAb,
-
 .aKh,
 .aeJ,
-
 .bkK,
 .devsite-top-logo-row-wrapper,
 .e69Aj,
 .footer-notice,
-
 .gb_Ce,.gb_Cf,.gb_Rf,
 .gws-flights__footer-row,.gws-flights__form,
-
 .hcfe > header,
 .joJglb,
 .minidiv .sfbg,
-
 .sIIDsc,
-.section-compact-filters,.section-compact-filters-compact-footer,.section-compact-filters-controls,
-.section-directions-options,.section-header,.section-hero-header,.section-omnibox-spacer-blue,
+.section-compact-filters,.section-compact-filters-compact-footer,.section-compact-filters-controls,.section-directions-options,.section-header,.section-hero-header,.section-omnibox-spacer-blue,
 .sfbgg,
-
 .yyjhs,
-
 [style="background-color:rgba(255,255,255,1)"],
 body[theme=google-blue] devsite-header .devsite-top-logo-row,body[theme=google-blue] devsite-header cloudx-tabs-nav.upper-tabs .devsite-tabs-wrapper,body[theme=google-blue] devsite-header devsite-tabs.upper-tabs .devsite-tabs-wrapper,
+devsite-book-nav,
+devsite-footer-utility,
+devsite-footer-linkboxes,
 footer
 {
 	background-color: #060505!important;
@@ -1194,17 +1200,17 @@ footer
 .qcTKEe,
 .t5eBue,
 
-body[theme=google-blue] .devsite-collapsible-section
+body[theme=google-blue] .devsite-collapsible-section,
+devsite-footer-promos
 {
 	background-color: #0e0d0d!important;
 }
 
 /*___ Background 0000 ______________________________________________________________*/
 
-.XD1Bsc,
-.XD1Bsc:hover,
 #gbqfb,
-#irc_bg,#irc_bgl,#irc_cc,
+#irc_bg,#irc_bgl,
+#irc_cc,
 #res a,
 .GL7Kod:hover,
 .I6TXqe,
@@ -1216,51 +1222,43 @@ body[theme=google-blue] .devsite-collapsible-section
 .SmeuHe,
 .VmOpGe,
 .W4P4ne,
+.XD1Bsc,
+.XD1Bsc:hover,
 .Z4o1ee:hover,
 .ZXJQ7c:hover,
-
 .a4r .a39.J-R-JW,
 .accordion-homepage .parent a:hover,.accordion-homepage .parent,
 .bRMDJf,
 .cqtbn,
-
-.device-selector-dropdown-child:hover,
-.devsite-banner-announcement :link,.devsite-banner-announcement :visited,.devsite-search-form,
+.device-selector-dropdown-child:hover,.devsite-banner-announcement :link,.devsite-banner-announcement :visited,.devsite-search-form,
 .dw-sb-cont,
-
-.gb_5e,.gb_6e,.gb_1e,.gb_Te,.gb_me.gb_la,
+.gb_1e,.gb_5e,.gb_6e,.gb_Te,.gb_me.gb_la,
 .gbqfqw,
-.gt-is-itm-hover,.gt-lc.gt-lc-mobile .gt-cd-cl,.gt-lc.gt-lc-mobile .gt-cd-ncl,
+.gt-is-itm-hover,
+.gt-lc.gt-lc-mobile .gt-cd-cl,.gt-lc.gt-lc-mobile .gt-cd-ncl,
 .gws-flights-results__itinerary-card-summary,.gws-flights-results__result-item-summary,.gws-flights-results__results,
-
 .hcfe,
 .iY .Bu,
 .iqq6Hc,
 .jfk-button-standard.jfk-button-disabled,
-
 .lCoei[role="button"]:hover,.lCoei[role="link"]:hover,
 .language-list-search-box,.language_list_item_wrapper,.language_list_section,.language_list_sl_list,.language_list_tl_list,
-
 .sbdd_b,
 .sbhl,
 .sbib_a,
 .searchbox,
-.section-directions-omnibox,
-.section-profile-header-background,
-
+.section-directions-omnibox,.section-profile-header-background,
 .vR13fe[role="button"]:hover,.vR13fe[role="link"]:hover,
-
-.widget-directions-dragger,.widget-directions-omnibox .searchbox,.widget-directions-omnibox,.widget-pane-visible,
-
+.widget-directions-dragger,.widget-directions-omnibox .searchbox,.widget-directions-omnibox,
+.widget-pane-visible,
 .zE,
 .zthhpf,
 .zzpvMc:hover,
-
+[data-title="Helpful"],
+[data-title="Not helpful"],
 [style="background:rgb(104,75,85)"],[style="background:rgb(216,197,101)"],[style="background:rgb(240,179,93)"],[style="background:rgb(248,165,69)"],
-
 body[theme=google-blue] cloudx-tabs-nav.lower-tabs a,body[theme=google-blue] cloudx-tabs-nav.lower-tabs tab[active] > a::after,body[theme=google-blue] devsite-tabs.lower-tabs a,body[theme=google-blue] devsite-tabs.lower-tabs tab[active] > a::after,
-
-devsite-search .devsite-searchbox,
+devsite-search .devsite-searchbox,devsite-user .devsite-devprofile-wrapper .devsite-devprofile-button,
 g-img[style*="background: rgb(216, 228, 232)"]
 {
 	background: rgba(0, 0, 0, 0)!important;
@@ -1269,67 +1267,50 @@ g-img[style*="background: rgb(216, 228, 232)"]
 /*___ Background-color 0000 ________________________________________________________*/
 
 #hdtb-tls:hover,
-
 .BlOseb.eSq3C g-fab,
-
 .F0XO1GC-d-q:hover,.F0XO1GC-q-W tr,.F0XO1GC-q-o tr,
 .F9PbJd,
 .FeVW5,
-
 .J-N-JT,
 .KNcnob,
-
 .LXrl4c,
 .LkLjZd,.LkLjZd:visited,
-
 .Mf-iq-Md,
 .N9c7d,
 .Rd246b,
 .Sx9Kwc-haAclf,
 .Uo6gve,
 .YcWSDf,
-
 .aT5-aOt-I-JX-Jw:hover,
 .accordion-homepage h2,
 .action-menu-item:hover,
 .alias-input-container,
-
 .bm7Wje,
 .buPxGf,
-
 .c7cjWc,
 .dw-sb-cont .dw-sb-btn,
 .eOnYEd,
-
 .gt-lc.gt-lc-mobile .gt-cd,
 .gws-flights-filter__filter-dialog-header,.gws-flights-results__price-tracker,
-
 .k2Oeod.eSq3C g-fab,
 .kLhEKe,
 .ls-wrap,
 .mMbopd,
-
 .n6 .ah9.aiu:hover,
 .nr,
-
 .qKjvAb .S6Rud,
 .result,
-
 .sbibod,
-.section-result-action-icon-container:hover,
-.section-result-action:focus .section-result-action-icon-container,
-.section-omnibox-spacer,
-.section-filters-toggle-options,
-.source-input,.source-wrap,
+.section-filters-toggle-options,.section-omnibox-spacer,.section-result-action-icon-container:hover,.section-result-action:focus .section-result-action-icon-container,
+.source-input,
+.source-wrap,
 .swap-wrap,.swap.jfk-button,.swap.jfk-button-disabled,
-
 .tj3PF.i88iIb,
 .tuPVDR7ouq5__button:hover,
-
 .websky-modal-dialog-overlay,
 .widget-pane-content,
-
-body:not(.with-lang-list) .results-container.empty,body[layout=docs] .devsite-article,
+body:not(.with-lang-list) .results-container.empty,
+body[layout=docs] .devsite-article,
 g-inner-card
 {
 	background-color: rgba(0, 0, 0, 0)!important;
@@ -1338,9 +1319,7 @@ g-inner-card
 /*__________________________________________________________________________________*/
 
 .note :link,.note :visited,.note code,.note,
-
 .special :link,.special :visited,.special code,.special,
-
 aside :link,aside :visited,aside code,aside,
 code,
 pre
@@ -1353,37 +1332,29 @@ pre
 
 /*__ Blue __________________________________________________________________________*/
 
-.MXl0lf,
 .LgbsSe-ssJRIf,
 .LoDsGd-Nw8Uuc > .LgbsSe-ssJRIf,
+.MXl0lf,
 .Rj2Mlf:not(:disabled),
 .U8Ww7d,
-
 .cta-button--fill,
 .d-u-F.d-u-D,
+.devsite-select-toggle,
 .eE8hUfzg9Na__blue,
-
 .gb_ed a.gb_4,
 .gbqfba,
 .ge-button--fill,
 .gws-flights-results__dominated-toggle,
-
 .header-button,
-
 .jfk-button-action,
 .jhp input[type="submit"],
-
 .lrxkzc,
-
 .material2-button--filled,
 .mye4qd,
-
 .nDKKZc.zZhnYe:not(.RDPZE),
 .notification-container .acknowledge-button,
-
 .sbdd_a input,
 .section-back-to-list-button,
-
 [name="save"]
 {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
@@ -1393,74 +1364,58 @@ pre
 	color: #fff!important;
 }
 
-.MXl0lf:hover,
 .LgbsSe-ssJRIf:hover,
 .LoDsGd-Nw8Uuc > .LgbsSe-ssJRIf:hover,
+.MXl0lf:hover,
 .Rj2Mlf:not(:disabled):hover,
 .U8Ww7d:hover,
-
 .cta-button--fill:hover,
 .d-u-F.d-u-D:hover,
+.devsite-select-toggle:hover,
 .eE8hUfzg9Na__blue:hover,
-
 .gb_ed a.gb_4:hover,
 .gbqfba:hover,
 .ge-button--fill:hover,
 .gws-flights-results__dominated-toggle:hover,
-
 .header-button:hover,
-
 .jfk-button-action:hover,
 .jhp input[type="submit"]:hover,
-
 .lrxkzc:hover,
-
 .material2-button--filled:hover,
 .mye4qd:hover,
-
 .nDKKZc.zZhnYe:not(.RDPZE):hover,
 .notification-container .acknowledge-button:hover,
-
 .sbdd_a input:hover,
 .section-back-to-list-button:hover,
-
 [name="save"]:hover
 {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
-.MXl0lf:active,
 .LgbsSe-ssJRIf:active,
 .LoDsGd-Nw8Uuc > .LgbsSe-ssJRIf:active,
+.MXl0lf:active,
 .Rj2Mlf:not(:disabled):active,
 .U8Ww7d:active,
-
 .cta-button--fill:active,
 .d-u-F.d-u-D:active,
+.devsite-select-toggle:active,
 .eE8hUfzg9Na__blue:active,
-
 .gb_ed a.gb_4:active,
 .gbqfbaselector:active,
 .ge-button--fill:active,
 .gws-flights-results__dominated-toggle:active,
-
 .header-button:active,
-
 .jfk-button-action:active,
 .jhp input[type="submit"]:active,
-
 .lrxkzc:active,
-
 .material2-button--filled:active,
 .mye4qd:active,
-
 .nDKKZc.zZhnYe:not(.RDPZE):active,
 .notification-container .acknowledge-button:active,
-
 .sbdd_a input:active,
 .section-back-to-list-button:active,
-
 [name="save"]:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
@@ -1475,6 +1430,7 @@ pre
 .gb_0.gb_jd.gb_kd,
 .jfk-button-standard,
 .loonie-cancel-button,
+.devsite-tracking-question .gc-analytics-event:nth-child(3) .devsite-tracking-question-choice-button,
 [name="cancel"]
 {
 	background-image: linear-gradient(to bottom right, #f00, #000)!important;
@@ -1488,6 +1444,7 @@ pre
 .Q4S6re:hover,
 .a-b-c.d-u.d-u-Q:hover,
 .as .as-button[data-value="1"]:hover,
+.devsite-tracking-question .gc-analytics-event:nth-child(3) .devsite-tracking-question-choice-button:hover,
 .gb_0.gb_jd.gb_kd:hover,
 .jfk-button-standard:hover,
 .loonie-cancel-button:hover,
@@ -1501,6 +1458,7 @@ pre
 .Q4S6re:active,
 .a-b-c.d-u.d-u-Q:active,
 .as .as-button[data-value="1"]:active,
+.devsite-tracking-question .gc-analytics-event:nth-child(3) .devsite-tracking-question-choice-button:active,
 .gb_0.gb_jd.gb_kd:active,
 .jfk-button-standard:active,
 .loonie-cancel-button:active,
@@ -1545,7 +1503,6 @@ button.search--view-more:hover
 .user-feedback-link:active,
 .z0 > .L3:active a,
 button.search--view-more:active
-
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -1556,6 +1513,7 @@ button.search--view-more:active
 .H73aad,
 .as .as-button[data-value="5"],
 .drrice .IfEcue,
+.devsite-tracking-question .gc-analytics-event:nth-child(2) .devsite-tracking-question-choice-button,
 .loonie-ok-button
 {
 	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
@@ -1568,6 +1526,7 @@ button.search--view-more:active
 .GHDvEf:hover,
 .H73aad:hover,
 .as .as-button[data-value="5"]:hover,
+.devsite-tracking-question .gc-analytics-event:nth-child(2) .devsite-tracking-question-choice-button:hover,
 .drrice .IfEcue:hover,
 .loonie-ok-button:hover
 {
@@ -1579,6 +1538,7 @@ button.search--view-more:active
 .GHDvEf:active,
 .H73aad:active,
 .as .as-button[data-value="5"]:active,
+.devsite-tracking-question .gc-analytics-event:nth-child(2) .devsite-tracking-question-choice-button:active,
 .drrice .IfEcue:active,
 .loonie-ok-button:active
 {
@@ -1635,50 +1595,39 @@ button.search--view-more:active
 #center_col,
 #collapsedCard,
 #rhs .rhsvw:not(.g),
-
 .AQabNb,
 .ETRkCe,
-.F0XO1GC-b-D,.F0XO1GC-f-v,
+.F0XO1GC-b-D,
+.F0XO1GC-f-v,
 .JNury,
 .P94G9b,
 .QG6Xbc,
 .RAYh1e,
 .So9e7d,
 .T4LgNb,
-
 .accordion-homepage,
 .aeN,
-
 .bkWMgd .g,
 .brC-aT5-aOt-Jw,
-
 .devsite-article-inner,.devsite-book-nav-bg,.devsite-page-nav,.devsite-section-nav,
 .fixed-sidebar-container,
-
-.gb_ed .gb_F,
-.gb_xc,
-.gb_yc,
+.gb_ed .gb_F,.gb_xc,.gb_yc,
 .ge-section-showcase,.ge-section__item--order-2,
-.gws-flights-results__results-container,.gws-flights__footer,.gws-flights__homepage-body,.gws-flights__selection-bar,
-.gws-travel-calendar__month,
-
+.gws-flights-results__results-container,.gws-flights__footer,.gws-flights__homepage-body,.gws-flights__selection-bar,.gws-travel-calendar__month,
 .homepage-content-wrap,
-
 .ioZgOd,
 .irc_rimask,
-
 .knowledge-finance-wholepage__section:not(:first-of-type):not(#fw-sec-compare-result),
-
 .language-list,
 .leftPane,
-
 .page,
 .permissions-runtime-info .permissions-container,
 .rightPane,
 .srg .g,
 .widget-pane-visible,.widget-settings-pane,
 c-wiz.Ubi8Z,
-devsite-content,devsite-toc.devsite-toc
+devsite-content,
+devsite-toc.devsite-toc
 {
 	background-color: #000!important;
 	border-radius: 22px!important;
@@ -1705,9 +1654,9 @@ devsite-content,devsite-toc.devsite-toc
 .devsite-article-inner:hover,.devsite-book-nav-bg:hover,.devsite-page-nav:hover,.devsite-section-nav:hover,
 .fixed-sidebar-container:hover,
 .gb_ed .gb_F:hover,.gb_xc:hover,.gb_yc:hover,
-.ge-section-showcase:hover,.ge-section__item--order-2:hover,
-.gws-flights-results__results-container:hover,.gws-flights__footer:hover,.gws-flights__homepage-body:hover,.gws-flights__selection-bar:hover,
-.gws-travel-calendar__month:hover,
+.ge-section-showcase:hover,
+.ge-section__item--order-2:hover,
+.gws-flights-results__results-container:hover,.gws-flights__footer:hover,.gws-flights__homepage-body:hover,.gws-flights__selection-bar:hover,.gws-travel-calendar__month:hover,
 .homepage-content-wrap:hover,
 .ioZgOd:hover,
 .irc_rimask:hover,
@@ -1721,7 +1670,8 @@ devsite-content,devsite-toc.devsite-toc
 .widget-pane-visible:hover,.widget-settings-pane:hover,
 body:not(.with-lang-list) .results-container.empty:hover,
 c-wiz.Ubi8Z:hover,
-devsite-content:hover,devsite-toc.devsite-toc:hover
+devsite-content:hover,
+devsite-toc.devsite-toc:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -1751,8 +1701,7 @@ devsite-content:hover,devsite-toc.devsite-toc:hover
 .device-selector-dropdown-children,
 .gBPM8 .PNCib,
 .goog-menu,
-.gt-edit,.gt-is-mobile,.gt-lc.gt-lc-mobile .gt-cc-r-i,.gt-related-suggest-message,
-.gt-spell-correct-message,
+.gt-edit,.gt-is-mobile,.gt-lc.gt-lc-mobile .gt-cc-r-i,.gt-related-suggest-message,.gt-spell-correct-message,
 .gws-flights-results__price-finder-tip,.gws-flights-widgets-callout__callout,.gws-flights__modal-dialog,
 .hbZTIc,
 .i0X6df,
@@ -1782,9 +1731,11 @@ devsite-content:hover,devsite-toc.devsite-toc:hover
 .websky-modal-dialog,
 .widget-homescreen-card-display .widget-homescreen-card,
 .y8Jpof,
-div.Kj-JD
+div.Kj-JD,
+devsite-tabs .devsite-tabs-dropdown-content,
+devsite-tracking-question
 {
-	background-color: #1f1c1c!important;
+	background-color: #1a1a1a!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -1812,8 +1763,7 @@ div.Kj-JD
 .device-selector-dropdown-children:hover,
 .gBPM8 .PNCib:hover,
 .goog-menu:hover,
-.gt-edit:hover,.gt-is-mobile:hover,.gt-lc.gt-lc-mobile .gt-cc-r-i:hover,.gt-related-suggest-message:hover,
-.gt-spell-correct-message:hover,
+.gt-edit:hover,.gt-is-mobile:hover,.gt-lc.gt-lc-mobile .gt-cc-r-i:hover,.gt-related-suggest-message:hover,.gt-spell-correct-message:hover,
 .gws-flights-results__price-finder-tip:hover,.gws-flights-widgets-callout__callout:hover,.gws-flights__modal-dialog:hover,
 .hbZTIc:hover,
 .i0X6df:hover,
@@ -1842,7 +1792,9 @@ div.Kj-JD
 .websky-modal-dialog:hover,
 .widget-homescreen-card-display .widget-homescreen-card:hover,
 .y8Jpof:hover,
-div.Kj-JD:hover
+div.Kj-JD:hover,
+devsite-tabs .devsite-tabs-dropdown-content:hover,
+devsite-tracking-question:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -1870,19 +1822,13 @@ div.Kj-JD:hover
 .TD,
 .bm7Wje:hover,
 .flt-show-focus .mSPnZKpnf91__menu-item:focus,
-.goog-menuitem-highlight,
-.goog-menuitem-hover,
-.goog-menuitem:hover,
-.gws-flights-results__breadcrumb,
-.gws-flights-results__itinerary-card-summary:hover,
-.gws-flights-results__result-item-summary:hover,
+.goog-menuitem-highlight,.goog-menuitem-hover,.goog-menuitem:hover,
+.gws-flights-results__breadcrumb,.gws-flights-results__itinerary-card-summary:hover,.gws-flights-results__result-item-summary:hover,
 .iF8z4d tr:hover,
 .kd-menulistitem:hover,
-.mSPnZKpnf91__menu-item:active,
-.mSPnZKpnf91__menu-item:hover,
+.mSPnZKpnf91__menu-item:active,.mSPnZKpnf91__menu-item:hover,
 .screen-mode .section-result:hover,
-.section-editorial-button:hover,
-.section-review-clickable:hover
+.section-editorial-button:hover,.section-review-clickable:hover
 {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -1909,8 +1855,7 @@ div.Kj-JD:hover
 .qd,
 .uKOpFp4SF2X__card .uKOpFp4SF2X__deal-badge,
 .wT > .n3 .byl:first-child .aim:first-child .nZ,
-body[theme=google-blue] cloudx-tabs-nav.lower-tabs tab[active] > a,
-body[theme=google-blue] devsite-tabs.lower-tabs tab[active] > a
+body[theme=google-blue] cloudx-tabs-nav.lower-tabs tab[active] > a,body[theme=google-blue] devsite-tabs.lower-tabs tab[active] > a
 {
 	background: linear-gradient(to bottom, #0d3413 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -1919,7 +1864,8 @@ body[theme=google-blue] devsite-tabs.lower-tabs tab[active] > a
 
 .CL:active,
 .TK .TO:active,
-.TO.nZ,.TO.ol,
+.TO.nZ,
+.TO.ol,
 .gws-travel-calendar__focused-range,.gws-travel-calendar__selected-range,
 .n6 .ah9.aiu:active,
 .section-filters-toggle-option,
@@ -1974,22 +1920,16 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 
 /*___ Highlight Background _________________________________________________________*/
 
-.Vwmzxb,
 .PfSDnb:hover,
 .VibNM:hover,
+.Vwmzxb,
 .Xi8cpb:hover,
-
 .accordion-homepage .parent:hover,
-
 .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):hover,
 .qmv19b div:hover,
-
 .related-question-pair:hover,
-
 .thread-list-thread:hover,
-
 .uMdZh:hover,
-
 .z80M1.FwR7Pc:hover
 {
 	background: linear-gradient(to right, #383838, #0000)!important;
@@ -2023,8 +1963,6 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
 /*__________________________________________________________________________________*/
 
-.thread-all-replies__message,
-.PKhmud,
 #isr_chc g-right-button,
 .AQabNb,
 .BlOseb.eSq3C g-fab,
@@ -2034,6 +1972,7 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 .Mw2I7,
 .N9wOvf,
 .P94G9b,
+.PKhmud,
 .So9e7d,
 .aT5-aOt-I-JX-Jw,
 .bh13Qc.aneZWd,
@@ -2056,13 +1995,13 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 .mslg td,
 .nlkcvc,
 .related-question-pair,
+.results .item-wrapper,
 .rg_bx,
 .rymPhb-oKdM2c,
 .screen-mode .section-result,
-.section-filters-toggle-option,.section-info,.section-related-place-container,.section-review-snippet,
-.section-result-action,
+.section-filters-toggle-option,.section-info,.section-related-place-container,.section-result-action,.section-review-snippet,
 .sh-dlr__list-result,
-.thread-list-thread,
+.thread-all-replies__message,.thread-list-thread,
 .uKOpFp4SF2X__card,
 .uMConb,
 .vk_c,
@@ -2070,7 +2009,6 @@ body devsite-book-nav .devsite-nav-title.devsite-nav-active
 .y8Jpof,
 .zA,
 .zo4Cze,
-.results .item-wrapper,
 [jscontroller="H6eOGe"],
 div.K0In6b
 {
@@ -2079,9 +2017,6 @@ div.K0In6b
 
 /*__________________________________________________________________________________*/
 
-.results .item-wrapper:hover,
-.thread-all-replies__message:hover,
-.PKhmud:hover,
 #isr_chc g-right-button:hover,
 .AQabNb:hover,
 .BlOseb.eSq3C g-fab:hover,
@@ -2091,6 +2026,7 @@ div.K0In6b
 .Mw2I7:hover,
 .N9wOvf:hover,
 .P94G9b:hover,
+.PKhmud:hover,
 .So9e7d:hover,
 .aT5-aOt-I-JX-Jw:hover,
 .bh13Qc.aneZWd:hover,
@@ -2102,8 +2038,7 @@ div.K0In6b
 .gBPM8 .PNCib:hover,
 .gXGikb:hover,
 .gt-is-itm-hover,
-.gws-flights-results__itinerary-card-summary:hover,.gws-flights-results__price-finder-tip:hover,.gws-flights-results__result-item-summary:hover,
-.gws-travel-calendar__flipper:hover,
+.gws-flights-results__itinerary-card-summary:hover,.gws-flights-results__price-finder-tip:hover,.gws-flights-results__result-item-summary:hover,.gws-travel-calendar__flipper:hover,
 .hNW13c:hover,
 .hhvWNc:hover,
 .i0X6df:hover,
@@ -2115,13 +2050,13 @@ div.K0In6b
 .mslg td:hover,
 .nlkcvc:hover,
 .related-question-pair:hover,
+.results .item-wrapper:hover,
 .rg_bx:hover,
 .rymPhb-oKdM2c:hover,
 .screen-mode .section-result:hover,
-.section-filters-toggle-option:hover,.section-info:hover,.section-related-place-container:hover,.section-review-snippet:hover,
-.section-result-action:hover,
+.section-filters-toggle-option:hover,.section-info:hover,.section-related-place-container:hover,.section-result-action:hover,.section-review-snippet:hover,
 .sh-dlr__list-result:hover,
-.thread-list-thread:hover,
+.thread-all-replies__message:hover,.thread-list-thread:hover,
 .uKOpFp4SF2X__card:hover,
 .uMConb:hover,
 .vk_c:hover,
@@ -2177,28 +2112,32 @@ img
 }
 
 @-moz-document domain("google.com"), domain("developers.google.com"), domain("earth.google.com") {
-.gLW9ub {
-    padding: 6px 18px 0 0;
-    margin-left: 6px;
+.gLW9ub
+{
+	padding: 6px 18px 0 0;
+	margin-left: 6px;
 }
 
-.m3kSL {
-    height: 20px;
-    margin-right: 17px;
+.m3kSL
+{
+	height: 20px;
+	margin-right: 17px;
 }
 
 /* Apps _______________________________________________________________*/
 
-.gb_wc {
+.gb_wc
+{
 	background: url(https://i.ibb.co/mTh1Fsr/app-draw.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.gb_wc {
-    background-size: 25px!important;
-    height: 26px!important;
-    padding-left: 26px!important;
-    width: 10px!important;
+.gb_wc
+{
+	background-size: 25px!important;
+	height: 26px!important;
+	padding-left: 26px!important;
+	width: 10px!important;
 }
 
 /* Archived Classes ____________________________________________________________*/
@@ -2284,15 +2223,17 @@ img
 
 /* Books _______________________________________________________________*/
 
-.hdtb-mitem:nth-child(5) svg {
+.hdtb-mitem:nth-child(5) svg
+{
 	background: url(https://i.ibb.co/qg3qFnR/book-stack-png-16.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.hdtb-mitem:nth-child(5) svg {
-    background-size: 28px!important;
-    height: 29px;
-    padding-left: 29px!important;
+.hdtb-mitem:nth-child(5) svg
+{
+	background-size: 28px!important;
+	height: 29px;
+	padding-left: 29px!important;
 }
 
 /* Calendar ____________________________________________________________*/
@@ -2388,16 +2329,18 @@ img
 
 /* Direction _______________________________________________________________*/
 
-[src="//www.gstatic.com/images/icons/material/system/1x/directions_gm_blue_20dp.png"] {
+[src="//www.gstatic.com/images/icons/material/system/1x/directions_gm_blue_20dp.png"]
+{
 	background: url(https://i.ibb.co/K9MrMR5/Directions.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="//www.gstatic.com/images/icons/material/system/1x/directions_gm_blue_20dp.png"] {
-    background-size: 35px!important;
-    height: 33px!important;
-    padding-left: 36px!important;
-    width: 10px!important;
+[src="//www.gstatic.com/images/icons/material/system/1x/directions_gm_blue_20dp.png"]
+{
+	background-size: 35px!important;
+	height: 33px!important;
+	padding-left: 36px!important;
+	width: 10px!important;
 }
 
 /* Draft ____________________________________________________________*/
@@ -2435,16 +2378,18 @@ img
 
 /* Globe _______________________________________________________________*/
 
-[src="//www.gstatic.com/images/icons/material/system_gm/1x/public_gm_blue_20dp.png"] {
+[src="//www.gstatic.com/images/icons/material/system_gm/1x/public_gm_blue_20dp.png"]
+{
 	background: url(https://i.ibb.co/NjnZr3y/globe3.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="//www.gstatic.com/images/icons/material/system_gm/1x/public_gm_blue_20dp.png"] {
-    background-size: 35px!important;
-    height: 33px!important;
-    padding-left: 36px!important;
-    width: 10px!important;
+[src="//www.gstatic.com/images/icons/material/system_gm/1x/public_gm_blue_20dp.png"]
+{
+	background-size: 35px!important;
+	height: 33px!important;
+	padding-left: 36px!important;
+	width: 10px!important;
 }
 
 /* Help ____________________________________________________________*/
@@ -2524,14 +2469,16 @@ img
 	padding-left: 37px;
 }
 
-.hdtb-mitem:nth-child(3) svg {
-    background-size: 28px!important;
-    height: 29px;
-    padding-left: 29px!important;
+.hdtb-mitem:nth-child(3) svg
+{
+	background-size: 28px!important;
+	height: 29px;
+	padding-left: 29px!important;
 }
 
-.HF9Klc {
-    height: 25px!important;
+.HF9Klc
+{
+	height: 25px!important;
 	margin-right: 16px!important;
 }
 
@@ -2552,16 +2499,18 @@ img
 
 /* List _______________________________________________________________*/
 
-.qa708e {
+.qa708e
+{
 	background: url(https://i.ibb.co/S7cxqkF/genres-20x20.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.qa708e {
-    background-size: 19px!important;
-    height: 26px!important;
-    padding-left: 22px!important;
-    width: 10px!important;
+.qa708e
+{
+	background-size: 19px!important;
+	height: 26px!important;
+	padding-left: 22px!important;
+	width: 10px!important;
 }
 
 /* Maps ____________________________________________________________*/
@@ -2581,19 +2530,22 @@ img
 
 /* More _______________________________________________________________*/
 
-.more-vert svg {
+.more-vert svg
+{
 	background: url(https://i.ibb.co/W6Hyht4/action.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.more-vert svg {
-    background-size: 8px!important;
-    height: 29px!important;
-    padding-left: 58px!important;
+.more-vert svg
+{
+	background-size: 8px!important;
+	height: 29px!important;
+	padding-left: 58px!important;
 }
 
-.more-vert {
-    height: 28px;
+.more-vert
+{
+	height: 28px;
 }
 
 /* News ____________________________________________________________*/
@@ -2618,7 +2570,7 @@ img
 .OWOjU,
 [href*="search"] svg
 {
-    color: #4285f400;
+	color: #4285f400;
 }
 
 .gb_uf svg,
@@ -2645,12 +2597,13 @@ img
 
 .hdtb-mitem:first-child svg
 {
-    background-size: 22px!important;
-    height: 29px;
-    padding-left: 29px!important;
+	background-size: 22px!important;
+	height: 29px;
+	padding-left: 29px!important;
 }
 
 /* Sent ____________________________________________________________*/
+
 
 .aHS-bnu .qj
 {
@@ -2667,10 +2620,19 @@ img
 
 /* Setting ____________________________________________________________*/
 
+devsite-user .devsite-devprofile-wrapper .devsite-devprofile-button svg,
 [aria-label="Settings "] svg
 {
 	background: url(https://i.ibb.co/YtNHHpK/Setting-icon-32x32.png) no-repeat!important;
 	box-sizing: border-box;
+}
+
+devsite-user .devsite-devprofile-wrapper .devsite-devprofile-button svg
+{
+	background-size: 30px!important;
+	height: 28px!important;
+	padding-left: 26px;
+	width: 26px!important;
 }
 
 [aria-label="Settings "] svg
@@ -2717,24 +2679,27 @@ img
 	padding-left: 37px;
 }
 
-.hdtb-mitem:nth-child(4) svg {
-    background-size: 28px!important;
-    height: 29px;
-    padding-left: 29px!important;
+.hdtb-mitem:nth-child(4) svg
+{
+	background-size: 28px!important;
+	height: 29px;
+	padding-left: 29px!important;
 }
 
 /* Shopping Cart _______________________________________________________________*/
 
-.PqBvCe {
+.PqBvCe
+{
 	background: url(https://i.ibb.co/42GPC9s/shoppingcart.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.PqBvCe {
-    background-size: 26px!important;
-    height: 26px!important;
-    padding-left: 33px!important;
-    width: 10px!important;
+.PqBvCe
+{
+	background-size: 26px!important;
+	height: 26px!important;
+	padding-left: 33px!important;
+	width: 10px!important;
 }
 
 /* Social ____________________________________________________________*/
@@ -2829,6 +2794,29 @@ img
 	background-size: 19px!important;
 }
 
+/* Thumbs _______________________________________________________________*/
+
+/* Up __________________*/
+
+[data-title="Helpful"] svg {
+	background: url(https://i.ibb.co/MpqLxDN/Thumbs-Up-Skin-Color.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+/* Down __________________*/
+
+[data-title="Not helpful"] svg {
+	background: url(https://i.ibb.co/6XfG8VP/thumbs-dowm.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[data-title="Helpful"] svg,
+[data-title="Not helpful"] svg {
+    background-size: 22px!important;
+    height: 26px!important;
+    padding-left: 23px!important;
+}
+
 /* Video ________________________________________________________*/
 
 [href*="vid"] svg,
@@ -2841,9 +2829,9 @@ img
 [href*="vid"] svg,
 .hdtb-mitem:nth-child(2) .HF9Klc svg
 {
-    background-size: 28px!important;
-    height: 29px;
-    padding-left: 29px!important;
+	background-size: 28px!important;
+	height: 29px;
+	padding-left: 29px!important;
 }
 
 /* World ____________________________________________________________*/

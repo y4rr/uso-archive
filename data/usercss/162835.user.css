@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201114.13.22
+@version        2020129.7.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-
 .html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar,
 ::-webkit-scrollbar
  {
@@ -82,6 +81,7 @@
 	text-decoration: none!important;
 }
 
+paper-tab.ytu-selectable-section,
 #icon-label.yt-dropdown-menu,
 #view-more.ytd-grid-playlist-renderer,
 #view-more.ytd-playlist-renderer,
@@ -128,19 +128,24 @@ ytu-two-column-browse-results
 
 /*___ Fonts ________________________________________________________________________*/
 
-.ytp-videowall-still-info-title,
+#content-text.ytd-backstage-post-renderer,
 #content-text.ytd-comment-renderer,
 #description-text.ytd-video-renderer,
 #description.ytd-playlist-sidebar-primary-info-renderer,
 .content.ytd-video-secondary-info-renderer,
 .expanded-state-text.ytu-compact-video,
-.secondary-text.ytu-compact-video
+.network-title.ytu-epg-row,
+.name.ytu-person,
+.number.ytu-person,
+.secondary-text.ytu-compact-video,
+.ytp-videowall-still-info-title,
+paper-tab.ytu-selectable-section
  {
 	font-size: 19px!important;
 }
 
-.ytp-videowall-still-info-author,
 .secondary-text.ytu-home-item,
+.ytp-videowall-still-info-author,
 yt-tooltip-renderer
  {
 	font-size: 17px!important;
@@ -148,12 +153,18 @@ yt-tooltip-renderer
 
 .less-button.ytd-video-secondary-info-renderer,
 .more-button.ytd-video-secondary-info-renderer,
+.secondary-text.ytu-grid-video,
+.tertiary-text.ytu-grid-video,
 .tertiary-text.ytu-home-item,
-.tertiary-text.ytu-suggestion-card > yt-formatted-string.ytu-suggestion-card
+.tertiary-text.ytu-suggestion-card > yt-formatted-string.ytu-suggestion-card,
+.time-text.ytu-epg-airing,
+ytu-browse-item.home .quaternary-text.ytu-browse-item,
+ytu-browse-item.home .tertiary-text.ytu-browse-item
  {
 	font-size: 15px!important;
 }
 
+#content-text.ytd-backstage-post-renderer,
 #description-text.ytd-video-renderer,
 .content.ytd-video-secondary-info-renderer,
 yt-tooltip-renderer
@@ -195,6 +206,10 @@ ytd-browse[guide-persistent-and-visible] ytd-playlist-sidebar-renderer.ytd-brows
     left: 25px!important;
 }
 
+.rows-container.ytu-epg-section {
+    margin-left: -1rem;
+}
+
 ytd-playlist-video-list-renderer {
     margin-left: 7rem;
 }
@@ -204,24 +219,40 @@ ytd-playlist-video-list-renderer {
     margin-left: 77%!important;
 }
 
+.tertiary-text.ytu-home-item {
+    margin-bottom: -30px;
+	margin-top: 30px!important;
+}
+
+ytu-epg-row {
+    padding-top: 2rem;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
+.header.ytu-search-section,
 ytd-comment-renderer,
 ytd-guide-section-renderer,
 ytd-playlist-sidebar-renderer,
 ytd-watch-flexy[flexy_] #primary.ytd-watch-flexy,
-ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy
+ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy,
+ytu-browse-item,
+ytu-home-item
  {
 	margin: 12px!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
+.items.ytu-vertical-list > *.ytu-vertical-list,
 #contents.ytd-rich-grid-renderer,
 .decorative-container.ytu-browse-dialog,
+.rows-container.ytu-epg-section,
 ytd-comment-renderer,
 ytd-watch-flexy[flexy_] #primary.ytd-watch-flexy,
-ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy
+ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy,
+ytu-browse-item,
+ytu-home-item
  {
 	padding: 12px!important;
 }
@@ -244,6 +275,7 @@ ytd-expander[collapsed] > #content.ytd-expander
 	max-height: none!important;
 }
 
+yt-icon-button.ytd-button-renderer,
 .html5-video-player .video-click-tracking,
 .html5-video-player .video-stream,
 [style="filter: brightness(100%) contrast(100%) saturate(71%) grayscale(0%) invert(0%) sepia(0%) hue-rotate(0deg) blur(0px); width: 1920px; height: 1080px; left: 0px; top: 0px;"],
@@ -254,10 +286,15 @@ ytd-settings-sidebar-renderer.ytd-browse
 	height: auto!important;
 }
 
+ytu-epg-row {
+    height: 10rem;
+}
+
 /*___ Widths _______________________________________________________________________*/
 
 #description.ytd-video-secondary-info-renderer,
 .decorative-container.ytu-browse-dialog,
+.text-wrapper.ytd-video-renderer,
 ytd-backstage-items,
 ytd-two-column-browse-results-renderer.grid:not(.grid-disabled)
  {
@@ -279,6 +316,11 @@ ytd-guide-section-renderer
 
 ytd-two-column-browse-results-renderer.grid:not(.grid-disabled) {
     width: 94%!important;
+}
+
+.small-items.ytu-horizontal-list > *.ytu-horizontal-list,
+.large-items.ytu-horizontal-list > *.ytu-horizontal-list {
+    width: 18%;
 }
 
 #contentContainer.app-drawer,
@@ -304,12 +346,13 @@ a[href]:visited {
 /*__________________________________________________________________________________*/
 
 #title.ytd-rich-list-header-renderer,
-a[href]:hover span,
+.time-subtext.ytu-epg-airing,
 a[href]:hover,
 h1,
 html.lqRCAz #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:hover .title,
 input[type="checkbox"]:checked+label,
 input[type="radio"]:checked+label,
+paper-tab.iron-selected.ytu-selectable-section,
 paper-tab.iron-selected.ytd-c4-tabbed-header-renderer,
 paper-tab.ytd-c4-tabbed-header-renderer:hover,
 yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:hover #text,
@@ -324,8 +367,13 @@ ytu-chip:hover .ytu-chip
 
 /*__________________________________________________________________________________*/
 
+paper-tab.ytu-selectable-section,
+.number.ytu-person,
+.row.ytu-table-section-team-stats-row td.ytu-table-section-team-stats-row,
+.row.ytu-table-section-team-stats-row th.ytu-table-section-team-stats-row,
 #autoplay.ytd-compact-autoplay-renderer,
 #content-text.ytd-comment-renderer,
+#content-text.ytd-backstage-post-renderer,
 #description-text.ytd-video-renderer,
 #description.ytd-channel-renderer,
 #description.ytd-playlist-sidebar-primary-info-renderer,
@@ -344,6 +392,7 @@ ytu-chip:hover .ytu-chip
 .content.ytd-video-secondary-info-renderer,
 .description.ytu-content-details-about-fields,
 .expanded-state-text.ytu-compact-video,
+.filter-sort-title-annotation.ytu-selectable-section,
 .index-message-wrapper.ytd-playlist-panel-renderer,
 .less-button.ytd-video-secondary-info-renderer,
 .more-button.ytd-video-secondary-info-renderer,
@@ -351,16 +400,20 @@ ytu-chip:hover .ytu-chip
 .secondary-text.ytu-browse-item,
 .secondary-text.ytu-compact-video,
 .secondary-text.ytu-grid-video,
+.summary.ytu-setting-read-only-item,
+.station-name.ytu-liveguide-management-station,
 .tertiary-text.ytu-grid-video,
 .tertiary-text.ytu-home-item,
 .tertiary-text.ytu-promo-dialog,
 .title.ytd-guide-entry-renderer,
 a.ytu-endpoint,
+iron-selector.ytu-settings-base-dialog yt-formatted-string.ytu-settings-base-dialog,
 li,
 p,
 paper-tab.ytd-c4-tabbed-header-renderer,
 paper-tab.ytu-two-column-browse-results,
 span.yt-view-count-renderer,
+ytu-game-card,
 yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"],
 yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"],
 yt-formatted-string.ytd-comments-header-renderer,
@@ -376,6 +429,8 @@ ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-re
 
 /*___ Khaki ________________________________________________________________________*/
 
+.row.ytu-table-section-team-stats-header-row td.ytu-table-section-team-stats-header-row,
+.row.ytu-table-section-team-stats-header-row th.ytu-table-section-team-stats-header-row,
 #author-name.yt-live-chat-author-chip,
 #card-title.ytd-search-refinement-card-renderer,
 #guide-section-title.ytd-guide-section-renderer,
@@ -386,6 +441,7 @@ ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-re
 #video-title-link #video-title.ytd-rich-grid-video-renderer,
 #video-title.ytd-playlist-panel-video-renderer,
 #video-title.ytd-rich-grid-media,
+.network-title.ytu-epg-row,
 .primary-text.ytu-browse-item,
 .primary-text.ytu-content-details-header,
 .primary-text.ytu-grid-video,
@@ -393,6 +449,7 @@ ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-re
 .primary-text.ytu-suggestion-card > yt-formatted-string.ytu-suggestion-card,
 .secondary-text.ytu-promo-dialog,
 .style-scope.ytd-comment-renderer,
+.title-container.ytu-selectable-section,
 .title.ytd-mini-channel-renderer,
 .title.ytd-video-primary-info-renderer,
 h1,
@@ -414,10 +471,12 @@ html.ppkZ ytd-app h3
 #text-container.ytd-channel-name a,
 #text.ytd-channel-name,
 .badge-style-type-collection.ytd-badge-supported-renderer,
+.primary-text.ytu-epg-airing,
 .sbqs_c b,
 .secondary-text.ytu-home-item,
 .secondary-text.ytu-suggestion-card,
 .title.ytu-compact-link,
+.title.ytu-liveguide-setting-category,
 h3,
 h4,
 ytd-playlist-panel-video-renderer[watch-color-update_] #byline.ytd-playlist-panel-video-renderer,
@@ -430,6 +489,11 @@ ytd-post-renderer[uses-compact-lockup_] #author-text.yt-simple-endpoint.ytd-post
 /*___ Sandy Brown __________________________________________________________________*/
 
 #icon-label.yt-dropdown-menu,
+.prefix-label.ytu-dropdown,
+.prefix-label.ytu-filter-sort-selector,
+.quaternary-text.ytu-browse-item,
+.station.ytu-game-card, 
+.style-scope.ytu-formatted-string,
 h5,
 h6,
 label
@@ -446,9 +510,12 @@ label
 #published-time-text.ytd-post-renderer a,
 #stats.ytd-playlist-sidebar-primary-info-renderer span:nth-child(2),
 #timestamp.yt-live-chat-text-message-renderer,
+.game-time.ytu-game-card,
 .next-airing-text.ytu-content-details-header,
 .secondary-text.ytu-content-details-header,
+.tertiary-text.ytu-grid-video,
 .tertiary-text.ytu-suggestion-card > yt-formatted-string.ytu-suggestion-card,
+.time-text.ytu-epg-airing,
 html.ppkZ #content.ytd-channel-video-player-renderer,
 html.ppkZ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string,
 html.ppkZ ytd-app #buttons.ytd-masthead [is-icon-button].ytd-masthead,
@@ -498,13 +565,14 @@ pre ::selection {
 	color: #fff!important;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
   color: #f48f8f;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 /*___ Misc _________________________________________________________________________*/
 
+.league-text.ytu-game-card,
 .ytp-bound-time-left,
 .ytp-bound-time-right,
 .ytp-time-display,
@@ -519,12 +587,13 @@ pre ::selection {
     color: #dcc7f1;
 }
 
+.name.ytu-person {
+    color: #e9ff9c;
+}
 
-
-
-
-
-
+.query-input.ytu-search-section {
+    text-shadow: 0px 0px 0px #ffcaca;
+}
 }
 
 @-moz-document domain("youtube.com") {
@@ -571,6 +640,7 @@ ytd-watch-card-rich-header-renderer
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.network.ytu-epg-row,
 #scrim.app-drawer,
 .badge-style-type-featured.ytd-badge-supported-renderer,
 .sbfl_b,
@@ -589,6 +659,9 @@ ytd-page-manager > *.ytd-page-manager
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+.header-container.ytu-search-section,
+.overlay.watched.ytu-thumbnail,
+#content-attachment.ytd-backstage-post-renderer ytd-video-renderer.ytd-backstage-post-renderer, #content-attachment.ytd-backstage-post-renderer ytd-playlist-renderer.ytd-backstage-post-renderer,
 #card.ytd-miniplayer,
 #chips-wrapper.ytd-feed-filter-chip-bar-renderer,
 #container.ytd-searchbox,
@@ -597,10 +670,14 @@ ytd-page-manager > *.ytd-page-manager
 #search-icon-legacy.ytd-searchbox,
 .channel-owner.ytd-comment-renderer,
 .content-container.ytu-browse-dialog,
+.game-details-container.ytu-game-card,
+.header.ytu-game-card,
 .header.ytu-browse-dialog,
+.text.ytu-home-item,
 .text-container.ytu-suggestion-card,
 .thumb-box-outer.ytu-browse-item,
 yt-live-chat-header-renderer,
+ytu-browse-item.home .info.ytu-browse-item,
 ytd-author-comment-badge-renderer,
 ytd-browse[page-subtype=playlist] ytd-two-column-browse-results-renderer.ytd-browse,
 ytd-playlist-sidebar-renderer,
@@ -684,6 +761,8 @@ ytu-chip:active
 
 /*___ Plain Black __________________________________________________________________*/
 
+.header.ytu-search-section,
+.rows-container.ytu-epg-section,
 #contents.ytd-rich-grid-renderer,
 #guide-content.ytd-app,
 #page-manager.ytd-app,
@@ -699,6 +778,8 @@ ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.header.ytu-search-section:hover,
+.rows-container.ytu-epg-section:hover,
 #contents.ytd-rich-grid-renderer:hover,
 #guide-content.ytd-app:hover,
 #page-manager.ytd-app:hover,
@@ -717,7 +798,6 @@ ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy:hover
 .decorative-container.ytu-browse-dialog,
 .playlist-items.ytd-playlist-panel-renderer,
 .sbdd_b,
-.yt-simple-endpoint.browse.ytu-home-item,
 a.ytd-search-refinement-card-renderer,
 paper-dialog,
 yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"],
@@ -725,9 +805,13 @@ yt-tooltip-renderer,
 ytd-backstage-post-thread-renderer[enable-borders-on-community],
 ytd-guide-section-renderer,
 ytd-miniplayer,
-ytd-post-renderer[uses-compact-lockup_]
+ytd-post-renderer[uses-compact-lockup_],
+ytu-browse-item,
+ytu-epg-row,
+ytu-game-card,
+ytu-home-item
  {
-	background-color: #252323!important;
+	background-color: #1a1a1a!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -738,7 +822,6 @@ ytd-post-renderer[uses-compact-lockup_]
 .decorative-container.ytu-browse-dialog:hover,
 .playlist-items.ytd-playlist-panel-renderer:hover,
 .sbdd_b:hover,
-.yt-simple-endpoint.browse.ytu-home-item:hover,
 a.ytd-search-refinement-card-renderer:hover,
 paper-dialog:hover,
 yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]:hover,
@@ -746,7 +829,11 @@ yt-tooltip-renderer:hover,
 ytd-backstage-post-thread-renderer[enable-borders-on-community]:hover,
 ytd-guide-section-renderer:hover,
 ytd-miniplayer:hover,
-ytd-post-renderer[uses-compact-lockup_]:hover
+ytd-post-renderer[uses-compact-lockup_]:hover,
+ytu-browse-item:hover,
+ytu-epg-row:hover,
+ytu-game-card:hover,
+ytu-home-item:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -760,9 +847,9 @@ ytd-post-renderer[uses-compact-lockup_]:hover
 
 /*__ Blue Gradient _________________________________________________________________*/
 
-selector
+paper-icon-button
  {
-	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
+	background: radial-gradient(ellipse at center, #356aa0 0%,#356aa0 11%,#090e1c 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 }
@@ -779,7 +866,14 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]
 
 /*___ Highlight Background _________________________________________________________*/
 
+ytu-epg-row:hover
+ {
+	background: linear-gradient(to right, #383838, #000)!important;
+	border-left-color: #434343!important;
+}
+
 .sbsb_d,
+.tab-container.ytu-liveguide-setting-category > ytu-liveguide-management-station.ytu-liveguide-setting-category:hover,
 html.lqRCAz #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:hover,
 ytd-comment-thread-renderer:hover,
 ytd-guide-entry-renderer:hover,
@@ -794,18 +888,24 @@ ytd-playlist-video-renderer:hover
 	background: linear-gradient(to left, #383838, #0000)!important;
 	border-left-color: #434343!important;
 }
+
+
+
+
+
 }
 
 @-moz-document domain("youtube.com") {
 /*__________________________________________________________________________________*/
 
-.ytp-show-tiles .ytp-videowall-still,
 .items.ytu-grid > *.ytu-grid,
 .items.ytu-vertical-list > *.ytu-vertical-list,
 .large-items.ytu-horizontal-list > *.ytu-horizontal-list,
 .sbsb_c,
 .small-items.ytu-horizontal-list > *.ytu-horizontal-list,
+.yt-simple-endpoint.style-scope.ytu-endpoint,
 .ytp-chrome-controls .ytp-button,
+.ytp-show-tiles .ytp-videowall-still,
 a.ytd-search-refinement-card-renderer,
 html.lqRCAz #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer,
 yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"],
@@ -819,20 +919,25 @@ ytd-playlist-panel-video-renderer,
 ytd-playlist-video-renderer,
 ytd-rich-item-renderer,
 ytd-video-renderer,
-ytu-chip
+ytu-browse-item,
+ytu-chip,
+ytu-epg-row,
+ytu-game-card
  {
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-.ytp-show-tiles .ytp-videowall-still:hover,
 .items.ytu-grid > *.ytu-grid:hover,
 .items.ytu-vertical-list > *.ytu-vertical-list:hover,
 .large-items.ytu-horizontal-list > *.ytu-horizontal-list:hover,
+.network.ytu-epg-row .yt-simple-endpoint.style-scope.ytu-endpoint,
 .sbsb_d,
 .small-items.ytu-horizontal-list > *.ytu-horizontal-list:hover,
+.yt-simple-endpoint.style-scope.ytu-endpoint:hover,
 .ytp-chrome-controls .ytp-button:hover,
+.ytp-show-tiles .ytp-videowall-still:hover,
 a.ytd-search-refinement-card-renderer:hover,
 html.lqRCAz #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:hover,
 yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:hover,
@@ -848,14 +953,17 @@ ytd-playlist-panel-video-renderer:hover,
 ytd-playlist-video-renderer:hover,
 ytd-rich-item-renderer:hover,
 ytd-video-renderer:hover,
-ytu-chip:hover
+ytu-browse-item:hover,
+ytu-chip:hover,
+ytu-epg-row:hover,
+ytu-game-card:hover
  {
 	filter: brightness(100%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
-img
+img:not(.ytu-img)
  {
 	border-radius: 22px!important;
 }
@@ -1068,7 +1176,7 @@ ppp[aria-label="Comment"] svg
 
 [aria-label="Comment"] svg {
     background-size: 29px!important;
-    height: 18px!important;
+    height: 24px!important;
     margin-left: 12rem;
     padding-left: 39px!important;
     width: 6px!important;
@@ -1737,4 +1845,732 @@ ytu-logo svg.ytu-logo
 	padding-left: 39px!important;
 	width: 25px!important;
 }
+}
+
+@-moz-document domain("youtube.com") {
+
+
+/* ABC News Live _______________________________________________________________*/
+
+[alt="ABC News Live"] {
+	background: url(https://i.ibb.co/4K2h6qc/ABC-News-Live.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="ABC News Live"] {
+    background-size: 90px!important;
+    height: 81px!important;
+    padding-left: 91px!important;
+    width: 10px!important;
+}
+
+/* ACC _______________________________________________________________*/
+
+[alt*="ACC"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* AMC _______________________________________________________________*/
+
+[alt="AMC"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Animal Planet _______________________________________________________________*/
+
+[alt="Animal Planet"] {
+	background: url(https://i.ibb.co/QHp0NMY/Animal-Planet.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Animal Planet"] {
+    background-size: 60px!important;
+    height: 87px!important;
+	margin-top: 2rem;
+    padding-left: 61px!important;
+    width: 10px!important;
+}
+
+/* BBC America _______________________________________________________________*/
+
+[alt="BBC America"] {
+	background: url(https://i.ibb.co/Jj947tC/BBC-America.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="BBC America"] {
+    background-size: 70px!important;
+    height: 37px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+[alt="BBC World News"] {
+    background-size: 70px!important;
+    height: 57px!important;
+    width: 66px!important;
+}
+
+/* BET _______________________________________________________________*/
+
+[alt="BET"] {
+	background: url(https://i.ibb.co/WfHvchZ/bet.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="BET"] {
+    background-size: 83px!important;
+    height: 29px!important;
+    padding-left: 84px!important;
+    width: 10px!important;
+}
+
+/* Big 10 Network _______________________________________________________________*/
+
+[alt="BTN"] {
+	background: url(https://i.ibb.co/sg1LVwM/BTN.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="BTN"] {
+    background-size: 70px!important;
+    height: 43px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* Bravo _______________________________________________________________*/
+
+[alt="Bravo"] {
+	background: url(https://i.ibb.co/M9Nbs5L/Bravo.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Bravo"] {
+    background-size: 89px!important;
+    height: 68px!important;
+    padding-left: 90px!important;
+    width: 10px!important;
+}
+
+/* CBS _______________________________________________________________*/
+
+[alt*="CBS"] {
+	background: url(https://i.ibb.co/v4fsvnn/cbs.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt*="CBS"] {
+    background-size: 70px!important;
+    height: 26px!important;
+	margin-top: 2rem;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* Cheddar _______________________________________________________________*/
+
+[alt="Cheddar"] {
+    background-size: 50px!important;
+    height: 112px!important;
+    width: 87px!important;
+}
+
+/* CNBC _______________________________________________________________*/
+
+[alt="CNBC"] {
+	background: url(https://i.ibb.co/PG19chm/CNBC.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="CNBC World"] {
+	background: url(https://i.ibb.co/GxQDLMM/CNBC-World.png) no-repeat!important;
+	box-sizing: border-box;
+}
+[alt="CNBC World"],
+[alt="CNBC"] {
+    background-size: 84px!important;
+    height: 69px!important;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* Comedy Central _______________________________________________________________*/
+
+[alt="Comedy Central"] {
+	background: url(https://i.ibb.co/Lr45gMn/Comedy-Central-logo.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Comedy Central"] {
+    background-size: 84px!important;
+    height: 32px!important;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* Comet TV _______________________________________________________________*/
+
+[alt="Comet TV"] {
+    background-size: 64px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Court TV _______________________________________________________________*/
+
+[alt="Court TV"] {
+	background: url(https://i.ibb.co/TPwnstw/Court-TV.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Court TV"] {
+    background-size: 89px!important;
+    height: 49px!important;
+    padding-left: 90px!important;
+    width: 10px!important;
+}
+
+/* CW _______________________________________________________________*/
+
+[alt*="CW"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Discovery Channel _______________________________________________________________*/
+
+[alt="Discovery Channel"] {
+    background-size: 36px!important;
+    height: 112px!important;
+	margin-top: 2rem;
+    width: 87px!important;
+}
+
+/* Disney _______________________________________________________________*/
+
+[alt="Disney Junior"],
+[alt="Disney Channel"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* E! _______________________________________________________________*/
+
+[alt="E!"] {
+	background: url(https://i.ibb.co/YTmyLpp/E.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="E!"] {
+    background-size: 24px!important;
+    height: 83px!important;
+    padding-left: 25px!important;
+    width: 10px!important;
+}
+
+/* ESPN _______________________________________________________________*/
+
+[alt*="ESPN"] {
+    background-size: 70px!important;
+    height: 88px!important;
+	margin-top: 2rem;
+    width: 87px!important;
+}
+
+/* Food Network _______________________________________________________________*/
+
+[alt="Food Network"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* FOX _______________________________________________________________*/
+
+[alt*="FOX"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Freeform _______________________________________________________________*/
+
+[alt="Freeform"] {
+	background: url(https://i.ibb.co/WtdrPjT/freeform.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Freeform"] {
+    background-size: 70px!important;
+    height: 82px!important;
+	margin-top: 2rem;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* FX _______________________________________________________________*/
+
+[alt="FX"] {
+	background: url(https://i.ibb.co/T2xwdCF/FX.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="FXX"] {
+	background: url(https://i.ibb.co/N9Dw157/FXX-Logo.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="FXM"] {
+	background: url(https://i.ibb.co/y0GK70K/FXM.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="FX"],
+[alt="FXM"] {
+    background-size: 70px!important;
+    height: 44px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+[alt="FXX"] {
+    background-size: 70px!important;
+    height: 60px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* Golf Channel _______________________________________________________________*/
+
+[alt="Golf Channel"] {
+	background: url(https://i.ibb.co/K7LF0qx/golf-channel.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Golf Channel"] {
+    background-size: 70px!important;
+    height: 51px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* HGTV _______________________________________________________________*/
+
+[alt="HGTV"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* IFC _______________________________________________________________*/
+
+[alt="IFC"] {
+	background: url(https://i.ibb.co/R3L4BDK/IFC.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="IFC"] {
+    background-size: 88px!important;
+    height: 51px!important;
+    padding-left: 89px!important;
+    width: 10px!important;
+}
+
+/* MotorTrend _______________________________________________________________*/
+
+[alt="MotorTrend"] {
+	background: url(https://i.ibb.co/zFTNY1y/Motor-Trend.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="MotorTrend"] {
+    background-size: 90px!important;
+    height: 30px!important;
+    padding-left: 91px!important;
+    width: 10px!important;
+}
+
+/* MTV _______________________________________________________________*/
+
+[alt="MTV"] {
+	background: url(https://i.ibb.co/PWwL1BZ/MTV.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="MTV"] {
+    background-size: 88px!important;
+    height: 67px!important;
+    padding-left: 89px!important;
+    width: 10px!important;
+}
+
+/* My68 _______________________________________________________________*/
+
+[alt="My68"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Nat Geo _______________________________________________________________*/
+
+[alt="Nat Geo"] {
+	background: url(https://i.ibb.co/c3Z4f2y/National-Geographic.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Nat Geo Wild"] {
+	background: url(https://i.ibb.co/3M0FjK8/NAT-Geo-Wild.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Nat Geo Wild"] {
+    background-size: 94px!important;
+    height: 54px!important;
+	margin-top: 2rem;
+    padding-left: 95px!important;
+    width: 10px!important;
+}
+
+[alt="Nat Geo"] {
+    background-size: 94px!important;
+    height: 32px!important;
+    padding-left: 95px!important;
+    width: 10px!important;
+}
+
+/* NBC _______________________________________________________________*/
+
+[alt="WVTM 13"] {
+	background: url(https://i.ibb.co/Ks68jBn/NBC.png) no-repeat!important;
+	box-sizing: border-box;
+}
+[alt="WVTM 13"] {
+    background-size: 66px!important;
+    height: 61px!important;
+    padding-left: 67px!important;
+    width: 10px!important;
+}
+
+/* NBCSN _______________________________________________________________*/
+
+[alt="NBCSN"] {
+	background: url(https://i.ibb.co/sjkwV46/NBCSN.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="NBCSN"] {
+    background-size: 79px!important;
+    height: 61px!important;
+    padding-left: 84px!important;
+    width: 10px!important;
+}
+
+/* NFL Network _______________________________________________________________*/
+
+[alt="NFL Network"] {
+	background: url(https://i.ibb.co/qmmQ52Q/NFL-Network.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="NFL Network"] {
+    background-size: 79px!important;
+    height: 37px!important;
+    padding-left: 84px!important;
+    width: 10px!important;
+}
+
+/* Nickelodeon _______________________________________________________________*/
+
+[alt="Nickelodeon"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Olympic Channel _______________________________________________________________*/
+
+[alt="Olympic Channel"] {
+    background-size: 35px!important;
+    height: 112px!important;
+    margin-top: 2rem;
+    width: 109px!important;
+}
+
+/* OWN _______________________________________________________________*/
+
+[alt="OWN"] {
+    background-size: 64px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Oxygen _______________________________________________________________*/
+
+[alt="Oxygen"] {
+    background-size: 64px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Paramount _______________________________________________________________*/
+
+[alt="Paramount"] {
+    background-size: 70px!important;
+    height: 94px!important;
+    margin-top: 2rem;
+    width: 87px!important;
+}
+
+/* PBS _______________________________________________________________*/
+
+[alt*="PBS"] {
+	background: url(https://i.ibb.co/F4dLP6n/pbs.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt*="PBS"] {
+    background-size: 70px!important;
+    height: 40px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* Pop _______________________________________________________________*/
+
+[alt="Pop"] {
+	background: url(https://i.ibb.co/f1vkGDT/pop.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Pop"] {
+    background-size: 88px!important;
+    height: 35px!important;
+    padding-left: 89px!important;
+    width: 10px!important;
+}
+
+/* SEC Network _______________________________________________________________*/
+
+[alt="SEC Network"] {
+    background-size: 64px!important;
+    height: 84px!important;
+	margin-top: 2rem;
+    width: 87px!important;
+}
+
+/* Smithsonian Channel _______________________________________________________________*/
+
+[alt="Smithsonian Channel"] {
+	background: url(https://i.ibb.co/b1FWtYL/Smithsonian-Channel.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Smithsonian Channel"] {
+    background-size: 85px!important;
+    height: 37px!important;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* Start TV _______________________________________________________________*/
+
+[alt="Start TV"] {
+	background: url(https://i.ibb.co/J5V27H8/Start-TV.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Start TV"] {
+    background-size: 84px!important;
+    height: 21px!important;
+	margin-top: 2rem;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* SundanceTV _______________________________________________________________*/
+
+[alt="SundanceTV"] {
+	background: url(https://i.ibb.co/xJPFYkr/Sundance-TV.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="SundanceTV"] {
+    background-size: 84px!important;
+    height: 21px!important;
+	margin-top: 2rem;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* Tastemade _______________________________________________________________*/
+
+[alt="Tastemade"] {
+	background: url(https://i.ibb.co/Rbn01G4/Tastemade.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Tastemade"] {
+    background-size: 90px!important;
+    height: 25px!important;
+    padding-left: 91px!important;
+    width: 10px!important;
+}
+
+/* TBS _______________________________________________________________*/
+
+[alt*="TBS"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Telemundo Houston _______________________________________________________________*/
+
+[alt="Telemundo Houston"] {
+	background: url(https://i.ibb.co/BK8gVhZ/Telemundo-Houston.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Telemundo Houston"] {
+    background-size: 84px!important;
+    height: 81px!important;
+	margin-top: 2rem;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* TLC _______________________________________________________________*/
+
+[alt="TLC"] {
+    background-size: 64px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* Turner Classic Movies _______________________________________________________________*/
+
+[alt="Turner Classic Movies"] {
+	background: url(https://i.ibb.co/CQGhh3w/TCM.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="Turner Classic Movies"] {
+    background-size: 98px!important;
+    height: 44px!important;
+	margin-top: 2rem;
+    padding-left: 99px!important;
+    width: 10px!important;
+}
+
+/* TNT _______________________________________________________________*/
+
+[alt*="TNT"] {
+	background: url(https://i.ibb.co/9HmMNFz/tnt.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt*="TNT"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    padding-left: 71px!important;
+    width: 10px!important;
+}
+
+/* Travel Channel _______________________________________________________________*/
+
+[alt="Travel Channel"] {
+    background-size: 54px!important;
+    height: 53px!important;
+    width: 87px!important;
+}
+
+/* truTV _______________________________________________________________*/
+
+[alt="truTV"] {
+	background: url(https://i.ibb.co/y6thJzZ/truTV.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="truTV"] {
+    background-size: 98px!important;
+    height: 44px!important;
+    padding-left: 99px!important;
+    width: 10px!important;
+}
+
+/* TV Land _______________________________________________________________*/
+
+[alt="TV Land"] {
+    background-size: 54px!important;
+    height: 53px!important;
+    width: 87px!important;
+}
+
+/* TYT Network _______________________________________________________________*/
+
+[alt="TYT Network"] {
+	background: url(https://i.ibb.co/Y8Wnn8C/TYT-Network.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="TYT Network"] {
+    background-size: 84px!important;
+    height: 32px!important;
+    padding-left: 86px!important;
+    width: 10px!important;
+}
+
+/* Universal Kids _______________________________________________________________*/
+
+[alt="Universal Kids"] {
+    background-size: 25px!important;
+    height: 112px!important;
+    margin-top: 2rem!important;
+    width: 109px!important;
+}
+
+/* USA _______________________________________________________________*/
+
+[alt="USA"] {
+    background-size: 70px!important;
+    height: 73px!important;
+    width: 87px!important;
+}
+
+/* VH1 _______________________________________________________________*/
+
+[alt="VH1"] {
+	background: url(https://i.ibb.co/dW94qSn/VH1.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="VH1"] {
+    background-size: 88px!important;
+    height: 53px!important;
+    padding-left: 89px!important;
+    width: 10px!important;
+}
+
+/* WE tv _______________________________________________________________*/
+
+[alt="WE tv"] {
+	background: url(https://i.ibb.co/SfpX3vk/WE-tv.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[alt="WE tv"] {
+    background-size: 90px!important;
+    height: 37px!important;
+    padding-left: 91px!important;
+    width: 10px!important;
+}
+
 }

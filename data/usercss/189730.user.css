@@ -2,8 +2,8 @@
 @name           ニコニコ動画(Re) 動画ページダークテーマ for HTML5
 @namespace      USO Archive
 @author         Azuma
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。またインストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。かんたんコメントエリアは初期では非表示にしています。カスタマイズ機能で表示を選ぶと表示されるようになります。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。更新の再開、もしくは対応不可能な仕様変更が行われた場合には公開を停止する予定です。`
-@version        2020116.10.51
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。もとになっているCSS通り動画部分を上に移動することでスクロールすることなく動画視聴が可能になっています。インストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。`
+@version        2020129.11.52
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -219,8 +219,14 @@ order:5!important
     height: 45px
 }
 
+/* NG登録タブ */
+.ViewerNGRegister{background: #373737;}
+.ViewerNGRegister.is-notPremium.ViewerNGRegister.is-notPremium .ViewerNGRegister-trimTrailingItemCheckbox{opacity: 1;}
+.ViewerNGRegister-cancelButton,.ViewerNGRegister-submitButton:disabled,.ViewerNGRegister-submitButton,.NGSettingPanelContainer-openViewerNGRegisterButton,.NGSettingPanelContainer-removeButton{color: #dbdbdb;background: #6a6a6a;}
+
 /* スクロールバーを細く(Firefoxのみ) */
-.DataGrid-Body.CommentPanelDataGrid-Body {
+.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body
+{
     scrollbar-color: #1b1b1b #7a7a7a;
     scrollbar-width: thin;
     background: #333;

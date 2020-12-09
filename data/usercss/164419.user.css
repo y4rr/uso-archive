@@ -1,64 +1,69 @@
 /* ==UserStyle==
-@name           colorzilla.com By BamaBraves
+@name           Colorzilla Dark By BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2019818.4.57
+@version        2020129.8.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("colorzilla.com") {
-::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-ol::-webkit-scrollbar-thumb,
-ul::-webkit-scrollbar-thumb,
-#transcript-scrollbox::-webkit-scrollbar-thumb {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border-radius: 22px!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-ol::-webkit-scrollbar-thumb:hover,
-ul::-webkit-scrollbar-thumb:hover,
-#transcript-scrollbox::-webkit-scrollbar-thumb:hover {
-    /* Color of handle */
-    background: #580303!important;
-    background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-track,
-#messages div::-webkit-scrollbar-track {
-    /* Color of slider */
-    background: #170000!important;
-    box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-    border: 1px solid rgba(0, 0, 0, .25)!important;
-}
- 
-::-webkit-scrollbar,
-#messages div::-webkit-scrollbar {
-    /* Width */
-    width: .8em!important;
-}
- 
-::-webkit-scrollbar-button,
-#messages div::-webkit-scrollbar-button {
-    /* Color of handles at top and bottom */
-    background: #4c0707!important;
-    box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
-}
- 
-::-webkit-scrollbar-button:hover,
-#messages div::-webkit-scrollbar-button:hover {
-    border-radius: 22px!important;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-}
+ ::-webkit-scrollbar {
+ 	/* Width */
+ 	width: 1.2em!important;
+ }
+
+ /* Color of handle ___________________________________________________________________________*/
+
+ ::-webkit-scrollbar-thumb {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to right, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border-radius: 22px!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+ 	background: #580303!important;
+ 	background-image: linear-gradient(to left, rgba(93, 6, 6, 0.95), rgba(255, 4, 4, 0.1)), url(https://image.ibb.co/hCq4n5/Carbon_Fiber_2.jpg)!important;
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of Track ______________________________________________________________________________*/
+
+ ::-webkit-scrollbar-track {
+ 	background: #170000!important;
+ 	box-shadow: inset 8px 0 13px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
+ 	border: 1px solid rgba(0, 0, 0, .25)!important;
+ }
+
+ /* Color of handles at top and bottom ___________________________________________________________*/
+
+ ::-webkit-scrollbar-button {
+ 	background: #4c0707!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+ ::-webkit-scrollbar-button:hover {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("colorzilla.com") {
@@ -73,30 +78,44 @@ ul::-webkit-scrollbar-thumb:hover,
 }
 
 .menu.desktop a,
-body #hd,
-:focus {
+.pane,
+.stop-details .opacity-adjust-open-button,
+:focus,
+body #hd
+{
 	border: none!important;
 	outline: none!important;
 	box-shadow: none!important;
 }
 
+.gradient-name .name-input,
+.preview .output-options .dimension,
+.stop-details .opacity-value,
+.stop-details .position {
+    text-align: center;
+}
+
 /*___ Fonts ________________________________________________________________________*/
 
-body,
-.css-output div.css-output-text {
+.css-output div.css-output-text,
+.gradient-name .name-input,
+body {
 	font-size: 19px!important;
 }
 
 .browser-compatibility td .more-info,
-
-button {
+button,
+input,
+select
+{
 	font-size: 15px!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
 
-.share-links,
-.gradient-ad-panel {
+.gradient-ad-panel,
+.share-links
+{
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
@@ -122,32 +141,44 @@ button {
 
 /*___ Margins ______________________________________________________________________*/
 
-ppp {
+.css-output div.css-output-text {
 	margin: 12px!important;
 }
 
-.info-panel,
+#editor-heading,
 .gradient-control,
-#editor-heading {
+.info-panel
+{
 	margin: 12px auto!important;
+}
+
+.css-output div.css-output-text div {
+    margin: 12px 0!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
-.presets .presets-container,
-.column.right,
+#doc2,
 .column.left,
-#doc2 {
+.column.right,
+.presets .presets-container
+{
 	padding: 12px!important;
 }
 
-.browser-compatibility td .more-info .syntax {
+.browser-compatibility td .more-info .syntax,
+.browser-compatibility td .more-info,
+.stop-details .delete-button button,
+button,
+input,
+select
+{
 	padding: 3px 6px!important;
 }
 
 /*___ Heights ______________________________________________________________________*/
 
-selector {
+.css-output div.css-output-text {
 	max-height: none!important;
 }
 
@@ -166,22 +197,32 @@ selector {
 	width: auto!important;
 }
 
-.permalink-panel,
-.dialog-panel {
+.dialog-panel,
+.permalink-panel
+{
     width: 100%;
 }
 
-.info-panel,
+#editor-heading,
 .gradient-control,
-#editor-heading {
+.info-panel
+{
 	width: 98%!important;
 }
 
-.column.right,
-.column.left {
+#doc2 {
+	width: 96%!important;
+}
+
+.column.left,
+.column.right
+{
 	width: 46%!important;
 }
 
+.preview .output-options .dimension {
+    width: 3em;
+}
 
 
 
@@ -203,12 +244,13 @@ a[href]:visited {
 
 /*________________________________________________________________________________________________________*/
 
+.gradient-adjustments-panel .adjustment-ops-panel a:hover,
 .gradient-name .save-new-preset:hover,
-a[href]:hover span,
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
 input[type="radio"]:checked+label {
+	color: #ff0!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -250,7 +292,6 @@ p strong {
 
 /*__ Sandy Brown _________________________________________________________________________________________*/
 
-html,
 .css-output .css-options,
 .label,
 .preview .output-options,
@@ -259,7 +300,9 @@ html,
 .stop-details .stop-type-label,
 h5,
 h6,
-label {
+html,
+label
+{
 	color: #F0A060!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
@@ -322,32 +365,54 @@ html {
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.pane,
 body #hd {
 	background: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-.menu.desktop a.enabled:hover {
+.menu.desktop a.enabled:hover,
+.stop-details .opacity-adjust-open-button.disabled
+{
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Green ________________________________________________________________________*/
 
-button {
-	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
+.gradient-name button {
+	background-image: linear-gradient(to bottom right, #5dbc2e, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
-button:hover {
-	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
+.gradient-name button:hover {
+	background-image: linear-gradient(to bottom right, #6ecd3f, #000)!important;
 	color: #ff0!important;
 }
 
-button:active {
+.gradient-name button:active {
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*___ Red ________________________________________________________________________*/
+
+.stop-details .delete-button button {
+	background-image: linear-gradient(to bottom right, #bc2e2e, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+.stop-details .delete-button button:hover {
+	background-image: linear-gradient(to bottom right, #cd3f3f, #000)!important;
+	color: #ff0!important;
+}
+
+.stop-details .delete-button button:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
@@ -355,8 +420,10 @@ button:active {
 
 #doc2,
 #editor-heading,
+.css-output div.css-output-text,
 .gradient-control,
 .info-panel,
+.inner-sub-panel,
 .menu.desktop,
 .presets .presets-container
 {
@@ -368,8 +435,10 @@ button:active {
 
 #doc2:hover,
 #editor-heading:hover,
+.css-output div.css-output-text:hover,
 .gradient-control:hover,
 .info-panel:hover,
+.inner-sub-panel:hover,
 .menu.desktop:hover,
 .presets .presets-container:hover
 {
@@ -382,7 +451,7 @@ button:active {
 .column.right,
 .column.left,
 body .product {
-	background-color: #111!important;
+	background-color: #1a1a1a!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -470,9 +539,10 @@ body .product:hover
 
 /*___________________________________________________________________________________________*/
 
-.presets .preset-item,
 .gradient-background,
-.presets .preset-item-background {
+.presets .preset-item,
+.presets .preset-item-background
+{
 	border-radius: 22px!important;
 }
 
@@ -493,4 +563,23 @@ p:hover {
 	filter: brightness(100%)!important;
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
+}
+
+@-moz-document domain("colorzilla.com") {
+
+/* Arrows _______________________________________________________________*/
+
+.stop-details .opacity-adjust-open-button {
+	background: url(https://i.ibb.co/LQDKzQT/right-arrow-30x30.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.stop-details .opacity-adjust-open-button {
+    background-size: 21px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
+
 }
