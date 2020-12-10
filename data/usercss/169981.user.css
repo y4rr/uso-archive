@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         flatron4eg
 @description    `Fresh look for one of the popular torrent trackers in CIS - rutor.`
-@version        201954.15.40
+@version        20201210.9.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("http://rutor") {
-
 @font-face{
     font-family:"Font Awesome 5 Brands";
     font-style:normal;
@@ -88,11 +87,12 @@ a:hover, .fake_link:hover {color:#555; text-decoration: none !important}
 
 * {font-family: 'Montserrat', sans-serif !important;}
 body {background:#f7f8fc}
-input[type=text], input[type=password] {background:transparent; border:0; border-bottom:2px solid #f4f5f8; padding:8px 0; outline: none !important; font-weight: bold; color:#828893}
+input[type=text], input[type=password], select {background:transparent; border:0; border-bottom:2px solid #f4f5f8; padding:8px 0; outline: none !important; font-weight: bold; color:#828893}
 input[type=text]:hover, input[type=password]:hover {border-color:#ccc}
 input[type=text]:focus, input[type=password]:focus {border-color:#828893}
 input[type=submit] {background:#d6662a; padding:12px 20px;border:0;border-radius:14px;color:#fff;font-weight:bold;font-size:16px;margin-top:10px}
 input[type=submit]:hover {background:#ee7534}
+select {border: 1px solid white; border-bottom:2px solid #f4f5f8}
 #up {background:#e39d40; padding:20px 80px; height:190px;box-sizing:border-box}
 #menu {background:transparent; position:absolute; top: 30px; left: 380px; right:80px;width:auto}
 #menu a {color:#ffebcb; font-size:16px; padding: 14px 20px; border-radius:28px;font-weight:900; margin: 0 !important }
@@ -116,10 +116,10 @@ div#index tr td {padding:10px 28px;font-weight: bold;position:relative;}
 div#index tr td:first-child {border-radius:14px 0 0 14px}
 div#index tr td:last-child {border-radius:0 14px 14px 0}
 #index table {border-spacing: 0 14px;table-layout: fixed;}
-div#index tr a {font-size: 16px; display:block; margin-top:-10px; height:38px; text-overflow: ellipsis; overflow: hidden; line-height: 38px; white-space: nowrap; padding-top:10px; margin-left: -255px; padding-left:255px; margin-bottom:-10px; padding-bottom:10px;margin-right:-300px; padding-right:300px; border-radius:16px}
+div#index tr a {font-size: 16px; display:block; margin-top:-10px; height:38px; text-overflow: ellipsis; overflow: hidden; line-height: 38px; white-space: nowrap; padding-top:10px; margin-left: -255px; padding-left:255px; margin-bottom:-10px; padding-bottom:10px;margin-right:-320px; padding-right:320px; border-radius:16px}
 div#index tr a:hover {text-decoration: none;}
 #index tr:hover a[href^="/torrent"] {background:rgba(0,0,0,0.05)}
-#index tr td:nth-child(2):not([colspan="2"]) a {padding-right:358px;width:200%}
+#index tr td:nth-child(2):not([colspan="2"]) a {padding-right:376px;width:200%}
 #index tr td:before {color:#c3cad0; display:block; margin-bottom:6px}
 #index tr td:first-child {padding-left:140px; width:227px; box-sizing: border-box}
 #index tr td:first-child:before {content:'Дата';}
@@ -129,7 +129,7 @@ div#index tr a:hover {text-decoration: none;}
 #index tr td:nth-child(2):not([colspan="2"]) + td[align="right"] img {display:none}
 #index tr td:nth-child(2):not([colspan="2"]) + td[align="right"]:before {font-family:"Font Awesome 5 Free";content:'\f075'; display:inline-block; font-size: 12px; margin: 0;margin-right:5px; }
 #index tr td:nth-child(2) {box-sizing:border-box;z-index:2}
-#index tr td:last-child {width:100px}
+#index tr td:last-child {width:120px}
 #index a[href*="/download/"], #index a[href^="magnet"] {position:absolute; top:10px; left:-202px; padding:0 !important; margin:0 !important; width: auto !important}
 a[href*="/download/"]:hover, a[href^="magnet"]:hover {text-decoration: none !important}
 #index a[href^="magnet"] {left:-154px }
@@ -224,8 +224,11 @@ fieldset {margin:-1px; padding:0; background: #f7f8fc}
 fieldset legend {background: #f7f8fc; display:block; width:100%; margin: 0; padding: 10px 40px; font-size: 20px; font-weight: bold}
 #download {background:transparent; border: 0; text-align:right; margin:0; padding: 0 20px; position: relative; top: -74px; bottom: -74px; height:10px}
 #download a {display:inline-block; text-decoration: none; vertical-align: top; margin-bottom:22px; font-size:0 }
-#download a.d_small, [style='width: 100%; text-align: right; margin-top: 4px; margin-bottom: -5px;'] a {text-decoration: none; color:#888; font-weight: 900; font-size:16px; margin-left:20px}
-#download a.d_small:hover, [style='width: 100%; text-align: right; margin-top: 4px; margin-bottom: -5px;'] a:hover {color:#4F4F4F}
+#download a.d_small, [style='width: 100%; text-align: right; margin-top: 4px; margin-bottom: -5px;'] a, #cem a {text-decoration: none; color:#888; font-weight: 900; font-size:16px; margin-left:20px}
+#download a.d_small:hover, [style='width: 100%; text-align: right; margin-top: 4px; margin-bottom: -5px;'] a:hover, #cem a:hover {color:#4F4F4F}
+#cem {text-align:right !important; font-size: 0}
+#cem a[href^="/comment/"]::before {content:'\f075'; font-family:"Font Awesome 5 Free"; margin-right:10px}
+#cem a[href^="/edit"]::before {content:'\f304'; font-family:"Font Awesome 5 Free"; margin-right:10px}
 
 a[href="#up"] {position:fixed; left:0; top: 0; height:100%; width:60px; transition: background-color 0.2s ease-out; color:#777}
 a[href="#up"]:hover {background:rgba(0,0,0,0.05); color:#000}
@@ -263,4 +266,24 @@ td[width='49%'] h3, td[width='49%']+td h3 {font-weight: bold; color:#4f4f4f; mar
 td[width='49%'] table, td[width='49%']+td table, td[width='49%'] input, td[width='49%']+td input {width:100%}
 form+tbody td[align='right'] {display:block;font-weight: bold; color:#a8aab4;text-align:left;margin-top:10px}
 form+tbody td[align='right']+td {display:block;width:100%}
+
+form[onsubmit="search_submit(); return false;"] {background: #fff; padding: 20px; border-radius: 16px}
+form[onsubmit="search_submit(); return false;"] {position:relative}
+form[onsubmit="search_submit(); return false;"] td {font-weight: bold; color: #808682}
+form[onsubmit="search_submit(); return false;"] tr:last-child {position: absolute; right: 20px; bottom: 20px}
+form[onsubmit="search_submit(); return false;"] input[type="radio"] {visibility: hidden; width:20px}
+form[onsubmit="search_submit(); return false;"] input[type="radio"]::before {visibility: visible; display:inline-block; width: 6px; height:6px; border-radius:50%; border: 5px solid #f4f5f8; content: ''; margin-right: 20px; background:#f4f5f8}
+form[onsubmit="search_submit(); return false;"] label:hover input[type="radio"]::before {border-color:#ccc;background:#fff}
+form[onsubmit="search_submit(); return false;"] label input[type="radio"]:checked::before {border-color:#828893; background:#fff}
+
+#content>p[align="center"] {font-size: 0}
+#content>p[align="center"]>b, #content>p[align="center"] a {color:#808682; font-size: 14px; padding: 12px 20px; display:inline-block; margin: 5px}
+#content>p[align="center"]>b {color:#a8aab4}
+#content>p[align="center"] a {background:#fff; border-radius: 16px; display:inline-block}
+#content>p[align="center"] a:hover {background:rgba(0,0,0,0.05)}
+#content>p[align="center"] br {display:none}
+fieldset + p[align="center"]>*:first-child, #index + p[align="center"]>*:nth-last-child(2) {float:left; margin-left:0 !important; font-size: 0 !important}
+fieldset + p[align="center"]>*:nth-child(2), #index + p[align="center"]>*:last-child {float:right; margin-right: 0 !important; font-size: 0 !important}
+fieldset + p[align="center"]>*:first-child::before, fieldset + p[align="center"]>*:nth-child(2)::before, #index + p[align="center"]>*:nth-last-child(2)::before, #index + p[align="center"]>*:last-child::before {content:'\f100'; font-weight: bold; font-family:"Font Awesome 5 Free"; font-size:16px !important;}
+fieldset + p[align="center"]>*:nth-child(2)::before, #index + p[align="center"]>*:last-child::before {content:'\f101'}
 }

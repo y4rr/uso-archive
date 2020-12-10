@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        2020126.3.47
+@version        20201210.11.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -524,14 +524,14 @@
   /*search result*/
   #main>#cnt{overflow:hidden!important;}
   #main>#cnt>#sfcnt{background:#000!important;}
-  #main>#cnt>.mw                      {width:1000px!important;max-width:initial!important;background:#030!important;margin:0 auto!important;}
-  #main>#cnt>.mw>#rcnt                {width:100%!important;  max-width:initial!important;}
-  #main>#cnt>.mw>#rcnt>div            {width:100%!important;  max-width:initial!important;}
-  #main>#cnt>.mw>#rcnt>div>#center_col{width:100%!important;  max-width:initial!important;margin:0!important;padding:0!important;}
-  #main>#cnt>.mw>#rcnt>div>#center_col>#res{padding:0px!important;}
-  #main>#cnt>.mw>#rcnt>div>#center_col>#taw{display:none!important;}
-  #main>#cnt>.mw>#rcnt>div>#center_col>#bottomads{display:none!important;}
-  #main>#cnt>.mw>#rcnt>#rhs{display:none!important;}
+  #main>#cnt>div                  {width:100%!important;  max-width:initial!important;background:#030!important;margin:0 auto!important;}
+  #main>#cnt #rcnt                {width:1000px!important;max-width:initial!important;margin:0 auto!important;}
+  #main>#cnt #rcnt>div            {width:100%!important;  max-width:initial!important;}
+  #main>#cnt #rcnt>div>#center_col{width:100%!important;  max-width:initial!important;margin:0!important;padding:0!important;}
+  #main>#cnt #rcnt>div>#center_col>#res{padding:0px!important;}
+  #main>#cnt #rcnt>div>#center_col>#taw{display:none!important;}
+  #main>#cnt #rcnt>div>#center_col>#bottomads{display:none!important;}
+  #main>#cnt #rcnt>#rhs{display:none!important;}
   /*People also ask*/._NId>.g.kno-kp.mnr-c.g-blk{display:none!important;}
   
   /*result*/#res{margin:0px!important;}
