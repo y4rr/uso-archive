@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vartan Bagdasaryan
 @description    `Transparent chat Feel Free to leave comment about improvements (code examples appreciated).FACEBOOK.com/Vartan.bg`
-@version        2020710.5.10
+@version        2020129.20.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,8 +15,12 @@ ytd-live-chat-frame {
     height: 702px!important;
     background: transparent;
 }
+
+#message.yt-live-chat-text-message-renderer, #author-name.yt-live-chat-author-chip{
+    color: #ffffff;
+}
 yt-live-chat-renderer{
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%,rgba(255, 255, 255, .30) 25%,rgba(255, 255, 255, 0.35) 75%)!important;
+        background: linear-gradient(to right, rgba(0,0,0,0) 5%,rgba(0,0,0,0.20) 30%,rgba(0,0,0,0.75) 75%)!important;
 }
 #show-hide-button{
         z-index: 111111;

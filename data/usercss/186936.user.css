@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.4
+@name           Compact Tube (White) v1.4.5
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020128.12.37
+@version        2020129.23.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.4 */
+/* CompactTube (White) v1.4.5 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -54,6 +54,10 @@
                     ─────────────────────────────────────────────────────────
                     RU: Опера использует "Tahoma" как основной шрифт, в то время как Хром использует "Arial".
                     выберите нужный вам, отключив другой.    ◄█ */
+
+            /* Christmas Socks/Рождественские Носки :D */
+ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content:                                               url("https://psv4.userapi.com/c856428/u135428081/docs/d3/9f56d0f2261d/christmas_socks3.png");
+    margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px;} 
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
 ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID] #dismissable.ytd-compact-promoted-item-renderer {display: none;}
@@ -1283,6 +1287,68 @@ border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
                 top: -2px;} /* компенсация сдвига в 2px  от (ytd-browse[page-subtype=channels]) */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓ */
+
+/* Отметки просмотренных Видео (✓) */
+    /* обычное состояние (✓) */
+ytd-thumbnail-overlay-resume-playback-renderer:after {
+    content: url("https://vk.com/emoji/e/e29c94.png");
+    filter: contrast(350%);
+    border-radius: 0px 0px 60% 0px / 0px 0px 100% 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -55%;
+    margin-right: 0px;
+    color: var(--yt-spec-static-brand-white); /*var(--yt-spec-static-brand-white)*/
+    background-color: rgba(0, 0, 0, .7); /*var(--yt-spec-static-overlay-background-heavy)*/
+    -o-padding: 0.2em 0.15em 0.03em 0.01em;
+    padding: 3px 1% 3px 0.1%;
+    height: auto;
+    max-height: 17px;
+    letter-spacing: 0.6px/*0.5px*/;
+    font-size: 1.1rem;
+    font-weight: var(--ytd-badge_-_font-weight);
+    line-height: var(--ytd-badge_-_line-height);
+    flex-direction: row;
+    align-items: center;
+    text-align: center; /* Выравнивание по центру */
+    display: block;
+    width: 14%;
+    -o-overflow: hidden;
+    -o-height: 100%;
+    text-transform: lowercase;
+    transition: opacity 0.3s;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;}
+
+    /* подсвеченное состояние (✓) */
+ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
+    content: url("https://vk.com/emoji/e/e29c94.png");
+    filter: contrast(350%);
+    opacity: 0;
+    border-radius: 0px 0px 60% 0px / 0px 0px 100% 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -55%;
+    margin-right: 0px;
+    color: var(--yt-spec-static-brand-white); /*var(--yt-spec-static-brand-white)*/
+    background-color: rgba(0, 0, 0, .7); /*var(--yt-spec-static-overlay-background-heavy)*/
+    -o-padding: 0.2em 0.15em 0.03em 0.01em;
+    padding: 3px 1% 3px 0.1%;
+    height: auto;
+    max-height: 17px;
+    letter-spacing: 0.6px/*0.5px*/;
+    font-size: 1.1rem;
+    font-weight: var(--ytd-badge_-_font-weight);
+    line-height: var(--ytd-badge_-_line-height);
+    flex-direction: row;
+    display: block;
+    width: 14%;}
+/* ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓ */
 
 /* Название Канала под Видео на вкладке с Видео (позицианирование) */
 ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -16px;}
@@ -1453,7 +1519,7 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
     -o-margin-top: -38px; /* for testing */ -o-background-color: #f73384; /* for testing */} /*другой вариант: width: 3.8em; height: 3em; */
 
 /* отступ Шестерёнки в меню Колокольчика (исправление бага горизонтального скроллбара) /было замечено из за вмешательства Гугла/ */
-#buttons.ytd-simple-menu-header-renderer {margin-right: 1.2em !important;} /*24px,12px, 8px(def.) */
+#buttons.ytd-simple-menu-header-renderer {position: absolute !important; left: 431px !important; margin-right: 1.2em !important;} /*24px,12px, 8px(def.) */
     /* Размер Шестерёнки  в меню Колокольчика */
     ytd-button-renderer.ytd-simple-menu-header-renderer.style-default.size-default {-o-pointer-events: auto; /*none*/
     display: block; width: 44px !important;/*def. 100%*/ /*v2. 40px*/    height: 4.1rem !important;}/*def. 100%*//*v2. 40px*/

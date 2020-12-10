@@ -1,16 +1,19 @@
 /* ==UserStyle==
-@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.187
+@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.188
 @namespace      USO Archive
 @author         decembre
-@description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a><mark>NOTE  (12.2019):</mark><b>Workaround about it and User CSS  JS (a New Functionality of GreasyFork).To see the SELECT LANGUAGE (CSS or JS) : </b> You need Edit the script  :remove line (or better, put // before it)//        TSL.removeNode("script-list-option-groups");▶ You can test too my Userscript:<a href="https://greasyfork.org/fr/scripts/29452-userstyles-tables-sorter-simple">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
-@version        2020926.15.47
+@description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a>Broken since 2020.12., but there is a fix:<b><a href="https://greasyfork.org/en/scripts/4336-ts-citrus-gfork/discussions/69927">If you want a temporary fix (before its author come back to us), try :  Unofficial fix of the &quot;Citrus GFork&quot; script</a></b>▶ You can test too my Userscript:<a href="https://greasyfork.org/fr/scripts/29452-userstyles-tables-sorter-simple">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
+@version        2020129.21.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://greasyfork.org/forum/"), url-prefix("https://74.86.192.75/"), domain("userstyles.org"), domain("greasyfork.org"), domain("sleazyfork.org") {
 
 
-/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  187 (new187)  - TEST NEW FORUM GREASYFORK ==== */
+/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  188  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
+/* CITRUS FIX by Konf(2020.12.09) :
+https://greasyfork.org/en/discussions/requests/69803-help-to-fix-ts-citrus-gfork#comment-173029
+=================== */
 
 /* SUPPORT: ========
 GM "Greasyfork - Add notes to the script"
@@ -57,7 +60,7 @@ background: black;
 
 /* (new187) SUPERLOADER - SCRIPT LIST - === */
 #sp-fw-container ~ iframe[name="superpreloader-iframe"] {
-    position: absolute !important;
+position: absolute !important;
     display: inline-block !important;
     height: auto !important;
     min-height: 100% !important;
@@ -93,8 +96,9 @@ display: inline-block !important;
     mask-image: linear-gradient(to top, transparent 5%, black 70%);
 border-right: 1px solid yellow !important;
 }
+/* (new188) */
 .discussion-list-container .discussion-list-item:not(.filtered) .rating-icon + .discussion-snippet {
-    width: 98.6% !important;
+    width: 98.2% !important;
 border-right: 1px solid aqua !important;
 /* background: green !important; */
 }
@@ -150,7 +154,7 @@ border: 1px solid #333;
 #sp-fw-rect:not(:hover) {
     visibility: visible ;
 }
-/* (new187) SUPER LOADER - DISC - === */
+/* (new187) SUPER LOADER - ALL */
 .sp-separator {
     width: 39% ;
     left: 33% !important;
@@ -158,6 +162,7 @@ border: 1px solid #333;
     margin-top: -15px ;
     filter: invert(1);
 }
+/* (new188) SUPER LOADER - DISC */
 .sp-separator ~.width-constraint .sidebarred .discussion-list {
     margin-top: 0px !important;
 }
@@ -753,114 +758,7 @@ html>body[pagetype="ListingPage"] #script-list-sort {
     float: right ;
 }
 
-/* (new187) USERCSS -  TOGGLE LANGUAGE - Showing results for all languages/ show only in your language - CITRUS === */
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p:first-of-type {
-    position: fixed;
-    height: 15px ;
-    line-height: 15px ;
-    top: 42px ;
-    left: 26% ;
-    font-size: 0px ;
-    z-index: 50 !important;
-}
-/* (new187) Script Language */
-body[pagetype="ListingPage"] #script-table + .width-constraint  .sidebarred-main-content>p:first-of-type ,
-body[pagetype="ListingPage"] .width-constraint  .sidebarred-main-content>p:first-of-type {
-    z-index: 500000 !important;
-font-size: 20px ;
-}
-/* (new187) FOR NO RESULTS  + With PAGI CITR TWEAK */
-body[pagetype="ListingPage"] #script-table ~.pagination + .width-constraint  .sidebarred-main-content>p:first-of-type  ,
-body[pagetype="ListingPage"] #script-table + .width-constraint  .sidebarred-main-content>p:first-of-type {
-font-size: 0px ;
-}
 
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p  {
-    left: 27%!important;
-    top: 25px !important;
-    z-index: 500000 !important;
-}
-
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p a ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p a ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p a ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p:first-of-type  a{
-    font-size: 11px !important;
-    color: gold !important;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p a:hover ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p a:hover ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p a:hover ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p:first-of-type a:hover {
-    color: tomato !important;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p a:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p a:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p:first-of-type  a:before {
-    content: "►  " ;
-    font-size: 13px ;
-color: red ;
-}
-
-/* Publish/write*/
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p {
-    height: 15px ;
-    line-height: 15px ;
-    left: 42% ;
-top: 25px ;
-    font-size: 11px !important;
-visibility: hidden ;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p {
-    height: 15px ;
-    line-height: 15px ;
-    left: 39% ;
-top: 30px ;
-visibility: hidden ;
-z-index: 50000000 !important;
-}
-
-
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p:hover ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p:hover {
-visibility: visible ;
-background: #333 ;
-}
-/* LIST GEN */
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p a:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p:before {
-    content: "�  " ;
-    font-size: 13px ;
-color: gold ;
-visibility: visible ;
-}
-
-/* (new183) LEARN SCRIPT - Cf with/without PAGINATION */
-body[pagetype="ListingPage"] #script-table +.width-constraint .sidebarred-main-content  .open-sidebar.sidebar-collapsed  + h3 ~ p:last-of-type:before {
-    content: "�  " ;
-    font-size: 13px ;
-color: red ;
-visibility: visible ;
-}
-
-
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p a:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p a:before {
-    content: "►  " ;
-color: green ;
-visibility: hidden ;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content  .open-sidebar.sidebar-collapsed + p + p:hover a:before ,
-body[pagetype="ListingPage"] .sidebarred-main-content h3 + p + p + p:hover a:before {
-    content: "►  " ;
-color: green ;
-visibility: visible ;
-}
 
 
 /* FOR SUPERLOADER */
@@ -898,20 +796,14 @@ body[pagetype="ListingPage"]  .sp-separator ~ .width-constraint .sidebarred  .si
     overflow-y: auto ;
 background: #222 ;
 }
-/* (new182) GREASY -  SET - LISTING PAGE - DESCRIPTION - === */
-body[pagetype="ListingPage"] .sidebarred  .sidebarred-main-content .open-sidebar.sidebar-collapsed  + h3 + p ,
-body[pagetype="ListingPage"] #main-header +  #script-table +.width-constraint h3 + p ,
-body[pagetype="ListingPage"]  #script-table +.width-constraint h3 + p ,
-body[pagetype="ListingPage"]  .width-constraint h3 + p {
-    display: inline-block ;
-}
+
 /* (new187) SET - FROM USER TITLE - CIT */
 body[pagetype="ListingPage"] .width-constraint .sidebarred .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 {
     position: fixed ;
     height: 17px ;
     line-height: 15px ;
     width: 473px ;
-    margin-left: 0% ;
+    margin-left: 6.2% ;
     top: 40px ;
     padding: 1px 1px 1px 20px ;
     border-radius: 5px 5px 0 0 ;
@@ -925,62 +817,6 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 2%, rgba(17, 17, 17, 1) 
 body[pagetype="ListingPage"] #script-table +.width-constraint h3> a {
     z-index: 100 ;
     pointer-events: auto ;
-}
-/* (new182) SET NAME (PB with TOGGLE LANG?) */
-body[pagetype="ListingPage"] .width-constraint .sidebarred .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3:before {
-     content: "▼" ;
-     position: absolute ;
-     right: 20px ;
-     color: gold ;
-     pointer-events: auto ;
-
-border: 1px solid red !important;
-}
-body[pagetype="ListingPage"] .width-constraint .sidebarred .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3:hover:before {
-     content: "🔻" ;
-font-size: 15px ;
-/*      z-index: 5000000 ; */
-}
-
-body[pagetype="ListingPage"] .width-constraint .sidebarred .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 > a:last-of-type {
-color: gold ;
-background: green ;
-}
-body[pagetype="ListingPage"] .width-constraint .sidebarred .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 > a:last-of-type:hover {
-color: red ;
-background: black ;
-}
-/*(new182)!imp*/
-body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed  + h3 + p {
-    position: fixed;
-    width: 23.8% ;
-    height: 23px ;
-    line-height: 15px ;
-    top: 25px ;
-    left: 26.6% !important;
-    padding: 2px 5px ;
-    border-radius: 0px 0px 5px 5px ;
-    font-size: 15px ;
-    pointer-events: auto ;
-
-overflow: hidden !important;
-opacity: 0 !important;
-visibility: hidden !important;
-background: black ;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed  + h3 + p:hover ,
-body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed  + h3:hover + p {
-    height: auto ;
-    top: 45px ;
-
-    font-size: 15px !important;
-opacity: 1 !important;
-visibility: visible !important;
-border-top: 1px solid red ;
-}
-body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 + p:not(:only-of-type):before {
-    content: "Set description: " ;
-color: gold ;
 }
 
 /* PB - CREATE SET PAGE - SCROLL */
@@ -1477,6 +1313,7 @@ height: 15px !important;
 line-height: 15px !important;
 left: 14.3% !important;
 top: 110px !important;
+z-index: 5000000 !important;
 background: green ;
 }
 body[pagetype="PersonalProfile"] .with-submenu > a  ,
@@ -1498,8 +1335,10 @@ li.with-submenu a:hover + nav {
     padding: 5px 5px 5px 15px !important;
     text-align: left !important;
     z-index: 50000000 !important;
-box-shadow: 3px 3px 2px black !important;
+opacity: 1 !important;
+visibility: visible !important;
 background: #333 !important;
+box-shadow: 3px 3px 2px black !important;
 }
 li.with-submenu a + nav li {
     height: 20px !important;
@@ -1792,6 +1631,24 @@ body[pagetype="ListingPage"] #script-table tr.filtered {
     width: 100% !important;
     height: 10px!important;
 }
+.discussion-list-item.filtered  {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 10px!important;
+    font-size: 7px !important;
+}
+.discussion-list-container .discussion-list-item.filtered  a.discussion-title  {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 10px!important;
+    max-height: 10px!important;
+    line-height: 10px!important;
+    padding: 0 !important;
+    font-size: 7px !important;
+/* background-color: #F7F6E9 !important; */
+}
+
 #script-table tr.filtered:hover td ,
 body[pagetype="ListingPage"] #script-table tr.filtered:hover td {
     background: black !important;
@@ -1861,7 +1718,21 @@ body[pagetype="ListingPage"] #script-table tr.filtered > td > span.total-rating-
     padding: 0 !important;
     font-size: 9px !important;
 }
-
+/* (new188) FILTER - SCRIPT FEEDBAK  */
+.discussion-list-container .discussion-list-item.filtered  a.discussion-title .rating-icon:before {
+    position: relative !important;
+    display: inline-block !important;
+    line-height: 0px!important;
+    top: 0px !important;
+    margin-left: 0;
+    font-size: 7px !important;
+}
+.discussion-list-container .discussion-list-item.filtered  a.discussion-title .discussion-snippet {
+    position: relative !important;
+    display: inline-block !important;
+    line-height: 0px!important;
+    font-size: 7px !important;
+}
 
 /* FILTER - ALL COMMENTS (on top)  */
 .dropdown:hover   #myDropdown.dropdown-content>a[onclick="showOnly('All')"] ,
@@ -1959,200 +1830,7 @@ li.greazy-forq-hiden ,
     border-radius: 2px!important;
 }
 
-/* GREASY/USERSTY - POST COMMENT - FIRST (cf #Form_Body) + RE EDIT */
-/* FIRST - GREASY / USERTYLES */
-textarea#Form_Body.textarea-autosize {
-    height: 138px;
-    min-height: 50px;
-    min-width: 670px !important;
-    overflow: hidden;
-    resize: vertical !important;
-    word-wrap: break-word;
-}
-.FormWrapper>form {
-    width: 681px !important;
-    margin-left: -23px;
-    margin-top: 27px;
-}
-/* FIRST */
-#vanilla_post_discussion #DiscussionForm {
-    position: relative;
-    display: inline-block;
-    width: 682px ;
-    top: 25px ;
-    margin-top: -144px !important;
-}
-#vanilla_post_discussion .FormWrapper {
-    margin-top: -8px ;
-}
-/* (new167) GREASY/ USERS - RE EDIT/MODIF -  */
-#vanilla_post_editdiscussion #DiscussionForm {
-    position: relative;
-    display: inline-block;
-    width: 100% !important;
-    top: 0px ;
-    margin-top: -50px ;
-    left: 0px;
-}
-/* (new167) GREASY/USERSTY - TEXTAREA + FORMAT BAR alway VISIBLE */
-#vanilla_post_editdiscussion  .FormWrapper>form {
-    width: 100% ;
-    margin-left: 0px ;
-}
-#vanilla_post_editdiscussion  .FormWrapper>form  .bodybox-wrap .TextBoxWrapper textarea#Form_Body  {
-    min-width: 100% ; 
-    max-height: 576px ;
-    overflow: hidden ;
-    overflow-wrap: break-word ;
-    resize: horizontal ;
-    overflow-y: auto ;
-}
-/* LARGE - HTLM EDIT COM - FORUM USERST - HELPER on HOVER -  GM - === */
-.RadioLabel[for="Form_Format"] {
-    display: inline-block!important;
-    width: 116px !important;
-    border: 1px solid green !important;
-    margin-bottom: 2px !important;
-}
-/* NEDD CONVERT for Addstylish lib -  HTLM - WITHOUT GM */
-.bodybox-wrap > .RadioLabel[for="Form_Format"]:hover:after {
-    content: "Les éléments et attributs suivants sont autorisés.  \A  \A Cela s'applique à la fois au HTML et au Markdown \A (après conversion en HTML)  \A  \A * (name, title) | a (href) | abbr | b | \A  blockquote (cite) | br | center | cite |  \A code | dd | del | dfn |  div | dl | dt | em |  \A  h1 | h2 | h3 | h4 | h5 | h6 | hr | i | ins | \A   img (alt, height, src (https), width) |  \A  kbd | li | mark | ol | p | pre | q (cite) |  \A  rp | rt | ruby | s | samp | small | span | strike |  \A  strong | tt | table | tbody | tfoot | thead | \A   td | th | tr | sub | sup |  \A  time (datetime, pubdate) | u | ul | var \A  \A  Les sauts de ligne seront transformés en éléments <p> ou <br>. \A   \A Les URL seront automatiquement transformées en liens." !important;
-    position: absolute !important;
-    display: inline-block !important;
-    width: 659px !important;
-    height: 325px !important;
-    margin-top: -338px !important;
-    margin-left: -40px !important;
-    padding: 5px !important;
-    border-radius: 4px 4px 20px 20px !important;
-    white-space: pre-line !important;
-    z-index: 500 !important;
-    opacity: 1 !important;
-    overflow:hidden !important;
-    overflow-y: auto !important;
-    transition: all 0.7s!important;
-    transition: all ease 0.7s !important;
-color: peru !important;
-border: 4px solid GREEN !important;
-background: black !important;
-}
 
-/* HTLM - WITHOUT GM - OPEN A NEW DISCUSSION */
-#vanilla_post_discussion .bodybox-wrap > .RadioLabel[for="Form_Format"]:hover:after {
-    position: absolute !important;
-    display: inline-block !important;
-    width: 430px !important;
-    height: 500px !important;
-    top: 460px !important;
-    left: 40px !important;
-border: 4px DOTTED GREEN !important;
-}
-
-/* HTLM WITH GM */
-.bodybox-wrap .Button +  .RadioLabel[for="Form_Format"]:hover:after {
-    display: none !important;
-}
-/* .bodybox-wrap:hover:after , */
-.bodybox-wrap .Button +  .RadioLabel[for="Form_Format"] a:hover:after {
-    content: "Les éléments et attributs suivants sont autorisés.  \A  \A Cela s'applique à la fois au HTML et au Markdown \A (après conversion en HTML)  \A  \A * (name, title) | a (href) | abbr | b | \A  blockquote (cite) | br | center | cite |  \A code | dd | del | dfn |  div | dl | dt | em |  \A  h1 | h2 | h3 | h4 | h5 | h6 | hr | i | ins | \A   img (alt, height, src (https), width) |  \A  kbd | li | mark | ol | p | pre | q (cite) |  \A  rp | rt | ruby | s | samp | small | span | strike |  \A  strong | tt | table | tbody | tfoot | thead | \A   td | th | tr | sub | sup |  \A  time (datetime, pubdate) | u | ul | var \A  \A  Les sauts de ligne seront transformés en éléments <p> ou <br>. \A   \A Les URL seront automatiquement transformées en liens." !important;
-    position: absolute !important;
-    display: inline-block !important;
-    width: 638px !important;
-    height: 400px !important;
-    margin-top: -398px !important;
-    margin-left: -40px !important;
-    padding: 5px !important;
-    border-radius: 4px 4px 0px 20px !important;
-    white-space: pre-line !important;
-    z-index: 500 !important;
-    opacity: 1 !important;
-    overflow:hidden !important;
-    overflow-y: auto !important;
-    transition: all 0.7s!important;
-    transition: all ease 0.7s !important;
-color: peru !important;
-border: 1px dotted GREEN !important;
-background: black !important;
-}
-
-/* LARGE - MARKDOWN - Hover on (?)  FOR for GM "Markdown toolbar for GreasyFork and UserStyles" - === */
-.RadioLabel[for="Form_Format1"] {
-    position: relative !important;
-    display: inline-block !important;
-    width: 130px !important;
-border: 1px solid YELLOW !important;
-}
-
-/* NEED CONVERT for Addstylish lib -  MARKDOWN - WITH GM - === */
-.editor-help-text>a[href="http://fr.wikipedia.org/wiki/Markdown"]:hover:after ,
-.bodybox-wrap .Button + .RadioLabel[for="Form_Format"] + .RadioLabel[for="Form_Format1"] a:hover:after {
-    content: "Quick reference guide to the rest of the Markdown syntax.  \A  \25B6  HEADERS with ( # ):   \A  # Level one header #   \A  ### Level three header ###  \A  Headers continue as you’d imagine, with extra hashes.  \A  \25B6  LINKS  WITH TEXT ( [ ...] ):   \A  [This is a link](http://www.darkcoding.net)  \A  \25B6  BLOCKQUOTE with ( > ) and for Long BLOCKQUOTE, break line by adding other ( > ):  \A  > This is quoted.     \A  \25B6  CODE :   \A  Need to Indent Code at least 4 spaces for all formatting in it to be ignored.  \A  # This isn't displayed as header, because it is indented 4 spaces  \A  Or CODE INLINE:  \A  Inline code is `escaped` with backticks (`) \A  \25B6  LISTS  \A  \25B6  UNORDERED LISTS : with *, + or - :  \A  * This  \A  * is  \A  * a list  \A  \25B6  ORDERED LISTS : with number followed by period (.)  \A  1. with  \A  1. numbers  \A   \25B6  HORIZONTAL LINES with ( - )  : \A  Three or more dashes ( - ) ----   \A  \25B6  Emphasis   \A  ITALIC with a single underscore ( _ )or ONE asterix ( * ) , BOLD with TWO ( * )  :   \A  _italic_ or *italic*  \A  __bold__ or **bold**  \A  \25B6  ESCAPING :  \A  If you don’t want some of these rules to apply,   \A  they can be escaped   \A by preceding the special character with a backslash ( /\ ):  \A  This is /\*/\*not/\*/\* in bold." !important;
-    position: absolute ;
-    display: inline-block ;
-    width: 500px ;
-    height: 410px ;
-    line-height: 15px ;
-    margin-top: -428px ;
-    margin-left: -66px ;
-    padding: 16px ;
-    border-radius: 4px 4px 0px 20px ;
-    white-space: pre-line ;
-    z-index: 500 ;
-    opacity: 1 ;
-    visibility: visible ;
-    overflow: hidden ;
-    overflow-y: auto ;
-    transition: all 0.7s ;
-color: peru ;
-border: 1px dotted YELLOW ;
-background: black ;
-}
-
-/* HTLM WITH GM */
-.bodybox-wrap .Button + .RadioLabel[for="Form_Format"] + .RadioLabel[for="Form_Format1"]:hover:after {
-    display: none ;
-}
-/* NEDD CONVERT for Addstylish lib -  HTLM WITHOUT GM */
-.bodybox-wrap .RadioLabel[for="Form_Format1"]:hover:after {
-    content: "Quick reference guide to the rest of the Markdown syntax.  \A  \25B6  Headers with ( # )  :   \A  # Level one header #   \A  ### Level three header ###  \A  Headers continue as you’d imagine, with extra hashes.  \A  \25B6  Links  with ( [ ...] ):   \A  [This is a link](http://www.darkcoding.net)  \A  \25B6  Blockquote with ( > ):  \A  > This is quoted   \A  \25B6  Code :   \A  Indent text at least 4 spaces for all formatting in it to be ignored.  \A  # This isn't displayed as header, because it is indented 4 spaces  \A  Or inline:  \A  Inline code is `escaped` with backticks (`) \A  \25B6  Lists  \A  \25B6  Unordered lists : use *, + or - :  \A  * This  \A  * is  \A  * a list  \A  \25B6  Ordered lists : use number followed by period.  \A  1. with  \A  1. numbers  \A   \25B6  Horizontal lines with ( - )  : \A  Three or more dashes ( - ) ----   \A  \25B6  Emphasis   \A  A single underscore ( _ )or asterix ( * ) is italic, two is bold :   \A  _italic_ or *italic*  \A  __bold__ or **bold**  \A  \25B6  Escaping :  \A  If you don’t want some of these rules to apply,   \A  they can be escaped   \A by preceding the special character with a backslash ( /\ ):  \A  This is /\*/\*not/\*/\* in bold." !important;
-    position: absolute ;
-    display: inline-block ;
-    width: 520px ;
-    height: 320px ;
-    margin-top: -342px !important;
-    margin-left: -66px ;
-    padding: 10px ;
-    border-radius: 4px 4px 20px 20px ;
-    white-space: pre-line ;
-    z-index: 500 ;
-    opacity: 1 ;
-    visibility: visible ;
-    overflow: hidden ;
-    overflow-y: auto ;
-    transition: all 0.7s ;
-color: peru !important;
-border: 4px solid YELLOW ;
-background: black ;
-}
-/* HTLM - WITHOUT GM - OPEN A NEW DISCUSSION */
-#vanilla_post_discussion .bodybox-wrap .RadioLabel[for="Form_Format1"]:hover:after {
-    position: absolute ;
-    display: inline-block ;
-    width: 420px ;
-    height: 500px ;
-    margin-left: 80px ;
-    top: 255px ;
-    left: -525px ;
-    font-size: 12px ;
-border: 4px DOTTED YELLOW ;
-}
-
-.bodybox-wrap .RadioLabel[for="Form_Format2"] a:after ,
-.bodybox-wrap .RadioLabel[for="Form_Format2"]:after ,
-.bodybox-wrap .RadioLabel[for="Form_Format1"]:after {
-visibility: hidden ;
-    opacity: 0 ;
-}
 
 /*PROFILE - CONTROL PANEL - HEADER - with CITRUS */
 body[pagetype="UserProfile"] #main-header + .width-constraint .text-content #user-profile + section header {
@@ -2781,7 +2459,7 @@ body[pagetype="PersonalProfile"] #user-discussions:hover ul {
     width: 100% ;
     height: auto ;
     line-height: 13px ;
-    margin-top: 25px !important;
+    margin-top: 0px !important;
     padding: 0 ;
     font-size: 13px ;
     overflow: hidden ;
@@ -2933,9 +2611,10 @@ body[pagetype="UserProfile"] #user-discussions:not(:empty) {
     z-index: 500 ;
 border: 1px solid red ;
 }
+/* (new188) */
 body[pagetype="UserProfile"]  #user-discussions:not(:empty):hover , 
 body[pagetype="UserProfile"] #user-discussions:not(:empty):hover {
-    min-height: 400px ;
+    min-height: 465px ;
 background: blue ; 
 }
 /* DISC - NORMAL */
@@ -4521,11 +4200,13 @@ background-image: linear-gradient(#670000, #900) ;
     margin: 0 auto ;
     max-width: 960px ;
 }
-/* (new187) CIT */
+/* (new188) CIT */
 body[pagetype="ListingPage"] #script-table {
     margin-top: 85px ;
     z-index: 0 !important;
 }
+
+
 body[pagetype="ListingPage"] #script-table thead {
     position: fixed ;
     max-width: 970px ;
@@ -4538,11 +4219,13 @@ body[pagetype="ListingPage"] #script-table thead {
 }
 
 /* USER  PERS PROFI - CIT - TOP HEADER (mask Discuss) - CITRUS === */
-/* (new187) !imp - PROF INFOS - WITH CITRUS  - PERS/USER PROF - === */
+/* (new188) !imp - PROF INFOS - WITH CITRUS  - PERS/USER PROF - === */
 body[pagetype="PersonalProfile"] #main-header + .width-constraint ,
 #main-header + .width-constraint  {
-    height: 25px !important;
-    margin-top: 75px !important;
+/*     position: relative !important; */
+    display: inline-block !important;
+/*     height: 25px !important; */
+    margin-top: 155px !important;
     max-width: 970px ;
     margin-bottom: 0 ;
     padding: 0 ;
@@ -4550,27 +4233,22 @@ body[pagetype="PersonalProfile"] #main-header + .width-constraint ,
     box-shadow: none ;
     z-index: 0 !important;
 background: #222 ;
+/* border: 1px solid yellow !important; */
+}
+body[pagetype="PersonalProfile"] #main-header + .width-constraint {
+    top: 10px !important;
 }
 body[pagetype="PersonalProfile"] #main-header + .width-constraint:hover ,
 #main-header + .width-constraint:hover  {
     z-index: 50 !important;
 }
 /* (new187) */
-body[pagetype="UserProfile"] #main-header + .width-constraint   {
-    height: 25px !important;
-    margin-top: 61px !important;
-    max-width: 970px ;
-    margin-bottom: 0 ;
-    padding: 0 ;
-    text-align: left !important;
-    box-shadow: none ;
-background: red !important;
-}
+
 /* (new182)  - NO CITR */
 #about-user.text-content.reportable {
     position: fixed ;
     height: 35px ;
-    margin-top: 0px !important;
+    margin-top: -7px !important;
     max-width: 1030px ;
     margin-bottom: 0 ;
     margin-left: -2.5% !important;
@@ -4579,19 +4257,20 @@ background: red !important;
     box-shadow: none ;
     z-index: 50 !important;
 }
-/* (new182) */
+/* (new188) */
 body[pagetype="UserProfile"] #main-header + .width-constraint >  .text-content.reportable ,
 body[pagetype="PersonalProfile"] #main-header + .width-constraint >  .text-content.reportable {
     max-width: 969px ;
     height: 25px !important;
     margin-left: 0.7% !important;
-    top: 62px !important;
+    top: 68px !important;
 }
+/* (new188) */
 #main-header + .width-constraint .sidebarred-main-content > .open-sidebar.sidebar-collapsed  + section {
     display: inline-block ;
     height: auto !important;
     width: 100% ;
-    max-width: 970px ;
+    max-width: 100% ;
     margin-bottom: 0 ;
     padding: 0 ;
     text-align: left !important;
@@ -4609,10 +4288,10 @@ text-align: left !important;
 box-shadow: none ;
 background: #222 ;
 }
-
+/* new188) */
 body[pagetype="PersonalProfile"]  > .width-constraint ,
 body[pagetype="UserProfile"]  > .width-constraint {
-    position: fixed ;
+/*     position: fixed ; */
     display: inline-block ;
     width: 100% ;
     right: 0 ;
@@ -4621,6 +4300,8 @@ body[pagetype="UserProfile"]  > .width-constraint {
     z-index: 1 ;
 }
 body[pagetype="PersonalProfile"]  > .width-constraint {
+    position: fixed ;
+    max-height: 20px !important;
     top: -12px ;
 }
 /* (new184) */
@@ -4662,9 +4343,14 @@ body[pagetype="UserProfile"] #script-table  {
     height: 100% ;
     min-width: 970px ;
     max-width: 970px ;
-    margin-top: 112px !important;
     margin-left: 24% ;
     z-index: 500 ;
+}
+body[pagetype="UserProfile"] #script-table  {
+    margin-top: 13px !important;
+}
+body[pagetype="PersonalProfile"] #script-table   {
+    margin-top: 115px !important;
 }
 body[pagetype="PersonalProfile"] #script-table thead ,
 body[pagetype="UserProfile"] #script-table thead  {
@@ -4686,19 +4372,34 @@ body[pagetype="UserProfile"] #main-header + .width-constraint > section.text-con
     top: 62px !important;
     left: 25% ;
 }
-/* (new187) */
+/* (new188)  CIT FIX */
 body[pagetype="UserProfile"] #main-header + .width-constraint > section.text-content #user-profile:not(:empty) {
     left: 25.3% ;
     top: 62px ;
     z-index: 500 ;
 background: #333 !important;
 }
+/* #script-table tbody td:nth-child(2) .thetitle> a {
+    display: inline-block ;
+    width: 100% ;
+    max-width: 450px ;
+    min-width: 450px ;
+    height: auto !important;
+    word-wrap: break-word ;
+border: 1px solid red !important;
+} */
 #script-table tbody td:nth-child(2) .thetitle>a>b {
     display: inline-block ;
     width: 100% ;
     max-width: 450px ;
     min-width: 450px ;
+    height: auto !important;
     word-wrap: break-word ;
+/* border: 1px solid red !important; */
+}
+#script-table tbody td:nth-child(2) .thetitle>a>b iframe{
+    display: none !important;
+border: 1px solid red !important;
 }
 /* CIT */
 body[pagetype="ListingPage"] #script-table thead tr {
@@ -5121,17 +4822,32 @@ opacity: 0.5 ;
     left: 2px  ;
     margin-top: 0px ;
 }
-/* SUPER LOAD PLU -DISC + NEW FORUM - ===  */
-.sp-separator ~.width-constraint ,
-body header#main-header + .width-constraint {
+/* (new188) SUPER LOAD PLU -DISC + NEW FORUM - ===  */
+body header#main-header + .width-constraint:first-of-type {
     display: inline-block !important;
-    float: left !important;
-    clear: both !important;
+/*     float: left !important; */
+/*     clear: both !important; */
     height: auto !important;
     min-width: 984px ;
     max-width: 984px ;
-    margin: 48px 0 0 23.4% !important;
+    margin: 55px 0 10px 23.4% !important;
     padding: 0;
+/* background-color: aqua !important; */
+}
+/* (new188)  A VOIR */
+.sp-separator ~ .width-constraint ,
+body header#main-header + .width-constraint {
+    display: inline-block !important;
+/* display: none !important; */
+/*     float: left !important; */
+/*     clear: both !important; */
+    height: auto !important;
+/* height: 20px !important; */
+    min-width: 985px ;
+    max-width: 985px ;
+    margin: 90px 0 20px 23.4% !important;
+    padding: 0;
+/* background-color: violet !important; */
 }
 
 /* TEST FOR SUPER LOADER */
@@ -5454,6 +5170,7 @@ border: 1px solid gray ;
     margin-right: 0px ;
     border-radius: 3px ;
 }
+/* (new188) */
 #script-applies-to dd.script-show-applies-to ul.inline-list {
     display: inline-block ;
     width: 98% ;
@@ -5461,6 +5178,7 @@ border: 1px solid gray ;
     padding: 2px 2px 20px 2px ;
     border-radius: 3px ;
     overflow: hidden ;
+   overflow-y: auto ;
 }
 #script-meta>div code {
     position: relative ;
@@ -5565,11 +5283,17 @@ color: red !important;
 background: #222 ;
 border: 1px solid red ;
 }
-/* (new187) */
+/* (new188) */
+.width-constraint #script-info > #script-content h3 ,
 .width-constraint #script-info > #script-content #additional-info h5 ,
 .width-constraint #script-info > #script-content #additional-info h6{
     margin-bottom: 5px;
     margin-top: 5px;
+    font-size: 15px;
+}
+/* (new188) */
+#additional-info>sub>sup ,
+#additional-info>sub {
     font-size: 15px;
 }
 
@@ -6152,8 +5876,10 @@ background-color: #2d2d2d ;
 box-shadow: 3px 3px 2px black ;
 background-color: transparent ;
 }
+/* (new188) */
 .width-constraint  #browse-script-list {
     float: left ;
+    width: 99% ;
     margin-left: 10px ;
 }
 .list-option-group .list-current {
@@ -6161,11 +5887,22 @@ background-color: transparent ;
     line-height: 15px ;
     margin-bottom: 2px ;
     padding: 2px 0 0 0 ;
+
 }
 .list-option-group .list-option {
     height: 19px ;
     line-height: 9px ;
 border: 1px solid #404040 ;
+}
+
+.list-option-group .list-option.list-current {
+    height: 19px ;
+    line-height: 19px ;
+    margin-left: 0;
+    padding-left: 20px;
+border: 1px solid red ;
+color: gold;
+background: #111;
 }
 .list-option-group .list-option a {
     white-space: nowrap ;
@@ -6189,7 +5926,7 @@ background: #222 ;
 border-bottom: 1px solid gray ;
 }
 
-/* (new187) PANEL LAGUE CSS / JAV ... - === */
+/* (new187) PANEL LANGUE CSS / JAV ... - === */
 
 .width-constraint  #script-list-option-groups.list-option-groups {
     position: fixed ;
@@ -6198,46 +5935,64 @@ border-bottom: 1px solid gray ;
     top: 80px ;
     visibility: visible;
     z-index: 0 !important;
-background: red ;
+/* background: red ; */
 }
 /* (new187) CIT */
 [pagetype="UserProfile"] .width-constraint  #script-list-option-groups.list-option-groups {
     left: 13.4% !important;
 top: 120px ;
     z-index: 5 !important;
-background: red ;
+/* background: red ; */
 } 
 [pagetype="PersonalProfile"] .width-constraint  #script-list-option-groups.list-option-groups {
     left: 13.4% ;
 top: 120px ;
     z-index: 5 !important;
-background: red ;
+/* background: red ; */
 } 
 body[pagetype="UserProfile"] .width-constraint  #script-list-option-groups.list-option-groups {
     left: 12.4% ;
-    z-index: 5 !important;
-background: red ;
+    z-index: 0 !important;
+/* background: red ; */
 }
 body[pagetype="ListingPage"] .width-constraint  #script-list-option-groups.list-option-groups {
     left: 14.3% ;
 top: 120px ;
-background: blue ;
+/* background: blue ; */
 }
 
-/* (new187) PUB /Learn NEwscript */
+/* (new188) SHOW ALL LANG */
+body[pagetype="ListingPage"] .sidebarred-main-content>p {
+    font-size: 0px !important;
+}
+body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?per_page="]  ,
+body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&page="] ,
+body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&per_page="] ,
+body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="scripts?set=100"] ,
+body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 + p:not(:only-of-type) +p a[href*="scripts?filter_locale="] {
+    position: fixed !important;
+    display: inline-block !important;
+    top: 25px !important;
+left: 25% !important;
+    font-size: 11px !important;
+opacity: 1 !important;
+z-index: 500000 !important;
+color: gold ;
+}
+
+/* (new187) PUB /Learn New script */
 .sidebarred-main-content .pagination + p  {
     display: none ;
 }
 
-/* (new181) NEW FORUM - DISC LIST */
+/* (new188) NEW FORUM - DISC LIST */
 .width-constraint .sidebarred .sidebarred-main-content {
     display: inline-block !important;
-/* witdh: 0 !important;
-height: 0 !important; */
-
-/*     padding: 5px 5px 5px 180px ; */
-/* border: 1px solid red !important; */
+    min-width: 100%;
 }
+.width-constraint .sidebarred .sidebarred-main-content >p{
+    margin: 0;
+} 
 .width-constraint .sidebarred .sidebarred-main-content h3 {
     margin: 0;
 }
@@ -6282,6 +6037,11 @@ border: 1px solid red !important;
 border-bottom: 4px solid orange;
 border-top: 4px solid orange;
 background: black;
+}
+
+/* (new188) TEST FOR SuperLoader*/
+html .width-constraint:not(:first-of-type) .discussion-list-header{
+    display: none !important;;
 }
 
 
@@ -10714,51 +10474,7 @@ border: 1px solid red ;
 .Flyout::after {
     display: none ;
 }
-/* GREAS - NEW FORUM - EDIT COM -  MARKDOWN NAV BAR - === */
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown:not(.editor-dropdown-open) .editor-insert-dialog.Flyout ,
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown:not(.editor-dropdown-open) .editor-insert-dialog  {
-    visibility: hidden ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown:not(.editor-dropdown-open) .editor-insert-dialog.Flyout.MenuItems.editor-file-image {
-    display: none ;
-    visibility: hidden ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image{
-    display: inline-block ;
-    width: 320px ;
-    min-height: 100px ;
-    max-height: 100px ;
-    visibility: visible ;
-background: #333 ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image .file-title {
-    display: inline-block ;
-    height: 70px ;
-    width: 316px ;
-    padding: 2px ;
-    visibility:visible ;
-background: black ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image   .image-input ,
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image  .file-input{
-    position: absolute ;
-    display: inline-block ;
-    height: 100px ;
-    width: 296px ;
-    top: 0 ;
-    padding: 2px ;
-    visibility: visible ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image   .image-input  .InputBox.editor-input-image ,
-.editor-file-image .file-input input[type="file"] {
-    position: absolute ;
-    display: inline-block ;
-    top: 30px ;
-    visibility: visible ;
-}
-.MessageForm.EditCommentForm  .bodybox-wrap  .editor-dropdown.editor-dropdown-open .editor-insert-dialog.Flyout.MenuItems.editor-file-image {
-    height: 80px ;
-}
+
 /* USERTY/GREAS OK === */
 .MessageList.Discussion {
     margin-top: 42px;
@@ -11932,6 +11648,17 @@ border: 1px solid gray !important;
 
 /* END === URL-PREF - USERSTYLES CREATE NEUSERSTYLES ==== */
 }
+
+@-moz-document url-prefix("https://greasyfork.org/fr/scripts?q="), url-prefix("https://greasyfork.org/fr/scripts?q=") {
+/* START ==== (new119) URL-PREF - USERSTYLES FORUM (FORUM DISCUSSION - GREASYFORK different than USERSTYLES) ==== */
+
+ body[pagetype="ListingPage"] .width-constraint ~ #sp-fw-container + .sp-separator{
+    display: none !important;
+}
+}
+
+
+
 
 @-moz-document url-prefix("https://forum.userstyles.org") {
 /* START ==== (new119) URL-PREF - USERSTYLES FORUM (FORUM DISCUSSION - GREASYFORK different than USERSTYLES) ==== */
