@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         ThePastaNebula
 @description    `This goes with the Summary Tab Dark Mode - get it here!https://userstyles.org/styles/194169/roblox-summary-tab-dark-mode`
-@version        20201210.18.30
-@license        CC0-1.0
+@version        20201211.11.0
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://www.roblox.com/My/Money.aspx#/#MyTransactions_tab") {
@@ -155,10 +155,23 @@ a:visited {
 }
 
 #MyTransactions_tab .loading, #TradeItems_tab .loading {
-    background: #232527 url(https://www.roblox.com/images/ProgressIndicator4.gif) no-repeat center;
+    background: #232527 url(https://www.roblox.com/images/ProgressIndicator4.gif) no-repeat center !important;
     height: 150px;
     position: relative;
     width: 780px;
+}
+
+.dark-theme .input-group-btn .input-dropdown-btn {
+    background-color: transparent;
+    border-color: #bdbebe;
+    color: hsla(0,0%,100%,.7);
+    border-radius: 0;
+}
+
+.text-footer-nav:focus, .text-footer-nav:hover {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .rbx-body {

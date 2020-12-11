@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tanko
 @description    `simple dark mode for old reddit`
-@version        2020129.1.45
+@version        20201211.8.12
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -78,12 +78,15 @@
 	.usertext-body.may-blank-within.md-container,
 	.redditname a,
 	.redditname .hover,
+	.searchpane.raisedbox,
+	.previoussearch #search input[type="text"],
+	.usertext-body.may-blank-within.md-container .md,
 	.md pre,
 	.link,
 	.comment,
 	#header {
 		background-color: var(--bg);
-		color: var(--txt);
+		color: var(--txt)!important;
 	}
 	#header-bottom-right,
 	.tabmenu li a {

@@ -3,15 +3,15 @@
 @namespace      USO Archive
 @author         ThePastaNebula
 @description    `This goes along with the Transactions Dark Mode - get it here!https://userstyles.org/styles/194168/roblox-transactions-dark-mode`
-@version        20201210.12.23
-@license        CC0-1.0
+@version        20201211.10.58
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://www.roblox.com/My/Money.aspx#/#Summary_tab") {
 /* script made by ThePastaNebula */
 
 .icon-default-economy-small, .icon-robux-16x16, .icon-robux-gold-16x16, .icon-robux-gray-16x16, .icon-robux-white-16x16 {
-    background-image: url(https://images.rbxcdn.com/e3fed0d20e85a51518b2756e66343a5e-economy_small_dark.svg);
+    background-image: url(https://images.rbxcdn.com/e3fed0d20e85a51518b2756e66343a5e-economy_small_dark.svg)!important;
     background-repeat: no-repeat;
     background-size: auto auto;
     width: 20px;
@@ -19,18 +19,48 @@
     display: inline-block;
     vertical-align: middle;
 }
+/*
+.Categories {
+    margin-left:3993px;
 
+}
+*/
+
+td.Categories img.TipsyImg {
+    content: url("https://i.ibb.co/xfsfPr7/download-1.png");
+}
+
+
+
+
+.text-footer-nav:focus, .text-footer-nav:hover {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
 .form-label {
     color:white!important;
 }
+
 
 a:link, a:active {
     color: #3979bf;
 }
 
+#Summary_tab .loading {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    background: #232527 url(https://www.roblox.com/images/ProgressIndicator4.gif) no-repeat center;
+    width: 100%;
+    height: 100%;
+}
+
 a:visited {
     color:#29578a
 }
+
+
 
 .container-footer {
     background-color: #232527;
@@ -118,17 +148,12 @@ a:visited {
     background-color:#232527!important;    
 }
 
-.table-header th {
-    background-color: #232527!important;  
-}
+
 
 .SortsAndFilters {
     background-color: #232527!important;     
 }
 
-.Summary_tab {
-    background-color: #232527!important;     
-}
 
 #Summary_tab .Categories {
     background-color: #232527!important; 
@@ -136,7 +161,12 @@ a:visited {
 }
 
 #Summary_tab .table-header th.Credit {
-    background-color: #232527!important; 
+    background-color: #3e3e3e!important; 
+    color:white!important
+}
+
+#Summary_tab .table-header th.Categories {
+    background-color: #3e3e3e!important; 
     color:white!important
 }
 
@@ -168,15 +198,4 @@ h2.light {
     font-size: 14px;
     line-height: 1.428;
 }
-
-#tooltip-right {
-        background: url(https://i.ibb.co/xfsfPr7/download-1.png);
-}
-
-
-
-
-
-
-
 }
