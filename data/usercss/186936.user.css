@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.5
+@name           Compact Tube (White) v1.4.5+
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2020129.23.51
+@version        20201210.12.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.5 */
+/* CompactTube (White) v1.4.5+ */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -34,6 +34,11 @@
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
+/* Watched Videos Mark / Отметка просмотренных Видео (✓) */
+        /* ENG: to disable, delete " x " symbol before the line.
+           RU: для отключения, сотрите символ " х " перед строкой. */
+   x  ytd-thumbnail-overlay-resume-playback-renderer:after {display: none !important;}
+
     /* ENG: Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
     /* RU: Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
     ytd-feed-filter-chip-bar-renderer {display: flow;}
@@ -56,7 +61,7 @@
                     выберите нужный вам, отключив другой.    ◄█ */
 
             /* Christmas Socks/Рождественские Носки :D */
-ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content:                                               url("https://psv4.userapi.com/c856428/u135428081/docs/d3/9f56d0f2261d/christmas_socks3.png");
+ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url(https://psv4.userapi.com/c856428/u135428081/docs/d3/57134996454b/christmas_socks3.png?extra=BjKYpn6yD32zBWdWoHEMM8ERTgRKYTewhICcbS4d75vQ2_FkuwjtbFC7ubpUUPR9TzXqXenC4jRZL4ph-EzXnD6Y0a_0mn2zJY_6T2qDm-i-bsPMgt1AhmSEmbwQWJwaR64lMUkJaaN668n0pot-IE1q4w);
     margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px;} 
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */

@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.34
+@name           GooGle - Multi-Columns Dark and Gray v.35
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        202077.6.57
+@version        20201210.19.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.34 (new34) - ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.35 (new35) - ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -60,7 +60,8 @@ https://greasyfork.org/en/scripts/31256-google-search-various-ranges
 
 ======================================================= */
 
-/* (new32A) - SUPP ADDS - === */
+/* (new35) - SUPP ADDS and OTHERS - === */
+#hdtb-msb .hdtb-mitem .favicon ,
 #tvcap ,
 #foot .SJajHc ,
 .szppmdbYutt__middle-slot-promo ,
@@ -77,7 +78,106 @@ https://greasyfork.org/en/scripts/31256-google-search-various-ranges
     display: none !important;
 }
 
-/* START ============== TEST  ====================*/
+/* START ============== TEST  ==================== */
+
+/* (new35) IMAGE ALT - === */
+#yDmH0d .mJxzWe .rg_i  {
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    text-align: center;
+color: gold;
+background: black ;
+}
+
+
+/* (new35) TEST ACTUALITY */
+/* #res.eqAnXb #search #rso > div g-card  */
+/* html.idc8_326 #res.eqAnXb #search #rso > div:not(.g) , */
+/* #cnt>style="1607614754256"] ~ .lEXIrb:not(:empty) #rcnt .D6j0vc #center_col #search #rso >div , */
+/* .lEXIrb:not(:empty) #rcnt .D6j0vc #center_col style ~ #res #search #rso >div , */
+/* #cnt>style[data-iml] ~ .lEXIrb:not(:empty) #rcnt .D6j0vc #center_col #search #rso >div , */
+
+/* #searchform.big:not(.minidiv) ~ #main.main #cnt .lEXIrb:not(:empty) #rcnt .D6j0vc #center_col #search #rso >div{
+    display: inline-block !important;
+    width: 33% !important;
+height: 100% !important;
+min-height: 200px !important;
+max-height: 200px !important;
+overflow: hidden !important;
+background: red !important;
+} */
+.nChh6e.DyOREb {
+    margin-bottom: 16px;
+    width: 60% !important;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+    margin-left: 17% !important;
+}
+.KWQBje .JheGif {
+color: peru !important;
+}
+.KWQBje .XTjFC g-img.QyR1Ze {
+    width: 20px !important;
+}
+.KWQBje .XTjFC  .action-menu-item a.fl {
+    display: inline-block !important;
+    padding: 0px 18px !important;
+}
+
+
+/* (new35)  BOTTOM ASSOCATED SEARCH */
+#botstuff {
+    display: inline-block;
+    width: 96%;
+    padding: 5px;
+    border-radius: 5px !important;
+
+background: #111 !important;
+}
+#botstuff h3 {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px !important;
+    text-align: center !important;
+color: gray !important;
+background: #222 !important;
+}
+
+
+
+/* (new35) "Jump to" link - === */
+.f a.fl[href$="_sources"]{
+height: 15px ;
+line-height: 15px ;
+    padding: 1px 3px 1px 10px ;
+    border-radius: 3px ;
+overflow: visible !important;
+background: #2C4F2B ;
+}
+.f a.fl[href$="_sources"]:before{
+    content: "▶" ;
+/* position: fixed ; */
+position: relative !important;
+/* display: inline-block ; */
+/* float: left ; */
+height: 15px ;
+line-height: 15px ;
+width: 15px ;
+margin: -5px 5px 0 -5px ;
+    padding: 0px 3px ;
+font-size: 14px !important;
+    border-radius: 3px;
+background: gold ;
+color: red !important;
+visibility: visible ;
+opacity: 1 ;
+z-index: 5000 ;
+}
+
 
 /* (new32A) GOOGLE PALY STORE - SHOW SCREENSHOT on HOVER with Addon IMAGE PREVIEW -
 https://play.google.com/store
@@ -131,7 +231,7 @@ body {
 }
 .gsc-webResult.gsc-result:hover, 
 .gsc-imageResult:hover {
-    background-color: #333 !important;;
+    background-color: #333 !important;
     border-color: #ffffff;
 }
 
@@ -219,11 +319,24 @@ https://forum.userstyles.org/discussion/84139/pagination-not-appearing-on-the-ri
     margin-top: 50px !important;
 }
 
-/* (new30A) TEST - ALL - POSITION / WIDTH */
+/* (new35) TEST - ALL - POSITION / WIDTH */
+.big .lEXIrb {
+    min-width: 100%;
+    max-width: 100%;
+}
+.D6j0vc {
+    display: inline-block !important;
+    float: none;
+    width: 100% !important;
+
+    max-width: 100% !important;
+}
 #res {
     margin-left: 0 !important;
 }
 #rso {
+    display: inline-block !important;
+    min-width: 100% !important;
     max-width: 100% !important;
     margin-left: -25px !important;
     margin-top: -20px !important;
@@ -427,30 +540,30 @@ border: 1px solid green !important;
 g-section-with-header g-scrolling-carousel .mR2gOd .pp29mf a {
     display: inline-block !important;
     width: 100% !important;
-
 border: 1px dotted red !important;
 }
  g-section-with-header g-scrolling-carousel .mR2gOd .pp29mf>div g-inner-card.jD0Pye {
-    height: auto !important;
+/*     height: auto !important; */
+    height: 85px !important;
     padding: 5px !important;
     position: relative;
     width: 96% !important;
-    height: 85px !important;
+
 }
 g-section-with-header #iur g-scrolling-carousel#isr_chc .mR2gOd {
     min-height: 20px !important;
     overflow: hidden !important;
 }
-/* (new32A) */
+/* (new35)  COR */
 #rso .LnbJhc g-section-with-header #iur .ySu5Fc g-scrolling-carousel#isr_chc .mR2gOd .EDblX.DAVP1 .dgdd6c.VM9Z5b {
     display: inline-block !important;
     height: 36px !important;
     line-height: 36px !important;
     vertical-align: top !important;
-    margin-right: -4px !important;
+/*     margin-right: -4px !important;
     margin-left: -9px !important;
     margin-bottom: 0px !important;
-    margin-bottom: -5px !important;
+    margin-bottom: -5px !important; */
     margin: 0px -4px -2px -9px !important;
     padding: 5px 10px !important;
 }
@@ -586,7 +699,7 @@ line-height: 110px !important;
     margin: auto !important;
     text-align: center !important;
 }
-#rso > div > g-section-with-header .rISBZc {
+#rso > div > g-section-with-header img.rISBZc:not([src="null"]) {
     display: inline-block !important;
 vertical-align: bottom !important;
     max-width: 99% !important;
@@ -597,6 +710,19 @@ height: auto !important;
     text-align: center !important;
 /* border: 1px solid red !important; */
 }
+/* NO IMG */
+#rso > div > g-section-with-header img.rISBZc[src="null"] {
+    display: inline-block !important;
+vertical-align: middle !important;
+    max-width: 99% !important;
+height: auto !important;
+max-height: 50px !important;
+line-height: 20px !important;
+    margin: auto !important;
+    text-align: center !important;
+/* border: 1px solid red !important; */
+}
+
 
 #rso > div > g-section-with-header[data-hveid^="C"] g-inner-card .jBgGLd {
     white-space: pre-line !important;
@@ -699,13 +825,51 @@ color: rgb(255, 255, 255);
 
 
 
-/* (new32A) SPECIAL */
-#search #rso >div:not(.srg):not(.g):not([data-hveid^="C"]) {
+/* (new35) SPECIAL */
+/* #search #rso >div:not(.srg):not(.g):not([data-hveid^="C"]) {
     display: inline-block !important;
     width: 94% !important;
     max-height: 100% !important;
     margin-left: 0.5% !important;
     margin-bottom: 10px !important;
+} */
+
+/* (new35) VIDEOS */
+.HD8Pae {
+    width: 94%;
+}
+.Xeztj {
+    position: absolute;
+    width: calc(100% + 16px) !important;
+    height: calc(100% + 13px) !important;
+    margin: 0 -8px;
+    overflow: hidden;
+    transform-origin: center top 0;
+
+    background: #222 !important;
+}
+.YSlUOe {
+background: #222 !important;
+}
+.LMMXP {
+    padding: 5px !important;
+color: peru !important;
+}
+
+.MGqjK {
+    background-color: #111 !important;
+    border: 1px solid #333 !important;
+}
+.VibNM {
+    position: relative;
+    display: inline-block !important;
+    width: 33% !important;
+    margin: 5px 2px 0 1px !important;
+    border-radius: 5px;
+border: 1px solid #222 !important;
+}
+.WpKAof:hover {
+    background-color: #333 !important;
 }
 /* (new30A) ALL - CAROUSEL BORDER */
 g-section-with-header {
@@ -903,13 +1067,14 @@ border-bottom: 1px dotted gray !important;
     padding-right: 0.65em;
 
 }
+/* (new35)COR */
 #rso [data-hveid^="CA"] .g g-section-with-header g-inner-card .favicon ,
 #rso [data-hveid^="CA"] .g g-section-with-header g-inner-card .favicon:first-of-type ,
 #rso [data-hveid="CAQQAA"] .g g-section-with-header g-inner-card .favicon:first-of-type {
     position: unset !important;
     float: left !important;
-    left: 0 !important;
     height: 1.3em;
+/*     left: 0 !important; */
     left: 0em !important;
     padding-bottom: 0em !important;
     padding-right: 0.5em !important;
@@ -1758,14 +1923,13 @@ background: #365 !important;
     right: 3px !important;
 }
 
-/* (new32A) QUESTION - .related-question-pair .g  */
+/* (new35) COR -  QUESTION - .related-question-pair .g  */
 #search #rso .g.kno-kp.mnr-c.g-blk[data-hveid^="C"] ,
 #search #rso .g.knavi.obcontainer.mod  + .g.kno-kp.mnr-c.g-blk[data-hveid^="C"] {
     display: inline-block !important;
     width: 30.3% !important;
     float: left !important;
     clear: left !important;
-    min-height: 347px !important;
     min-height: 347px !important;
     max-height: 100% !important;
     margin-left: 0.5% !important;
@@ -2088,7 +2252,6 @@ border: 1px solid red !important;
     border-radius: 5px !important;
 border: 1px solid gray !important;
 }
-
 
 #media_result_group{
     display: inline-block;
@@ -2716,8 +2879,19 @@ background: red !important;
 /*  TOP - SEARCH FORM - NORMAL + SCROLL FIXED */
 .srp #searchform.big {
     position: absolute;
+    height: 45px !important;
     top: -5px !important;
+background: aqua !important;
 }
+.sfbg {
+    position: absolute;
+    height: 69px;
+    left: 0;
+    width: 100%;
+background: red !important;
+}
+
+
 #searchform.big.minidiv {
     position: fixed;
     top: -7px !important;
@@ -2784,11 +2958,11 @@ background-position: 20px 15px !important;
 }
 
 #searchform form#tsf {
-    height: 51px !important;
-    margin-top: 10px !important;
+    height: 37px !important;
+    margin-top: -2px !important;
 }
 .FtRlBe {
-    height: 51px !important;
+    height: 31px !important;
     margin-top: 5px !important;
 }
 input.gLFyf {
@@ -3695,13 +3869,24 @@ background: green !important;
 
 /* =================== */
 
-/* (newGOGLE) TOP HEADER - SEARCH TOOL BAR */
+/* (new35) TOP HEADER - SEARCH TOOL BAR */
 
 #hdtb{
-width: 100% !important;
-    height: 31px !important;
-    margin-top: -30px !important;
+    display: inline-block !important;
+    width: 100% !important;
+    height: 0px !important;
+    margin-top: 10px !important;
 color: #666666;
+/* background: red !important; */
+}
+.yg51vc {
+    float: left !important;
+    width: 50% !important;
+    height: 25px !important;
+    padding: 0;
+    z-index: 126;
+background: #222 !important;
+/* background: green !important; */
 }
 body.vasq #hdtbSum ,
 #hdtbSum {
@@ -3721,12 +3906,14 @@ body.vasq #hdtbSum ,
     position: relative !important;
     display: inline-block !important;
 }
-
+/* (new35) */
 #hdtb-msb-vis {
     position: relative !important;
     display: inline-block !important;
-    margin-left: 155px;
-    top: -10px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    margin-left: 0 !important;
+    top: 0px !important;
     margin-left: 0px !important;
 }
 g-header-menu.hdtb-mitem{
@@ -3738,33 +3925,116 @@ position: relative !important;
 #hdtb-s{
     white-space: nowrap;
 }
-#hdtb #hdtb-s #hdtb-msb{
-    min-width: 582px !important;
+#hdtb #hdtb-s #hdtb-msb {
+    min-width: 602px !important;
     height: 20px !important;
     line-height: 20px !important;
-    top: 3px !important;
+    top: 2px !important;
+}
+#hdtb #hdtb-s #hdtb-msb >div {
+    height: 20px !important;
+    line-height: 20px !important;
 }
 
+
+/* .hdtb-mitem , */
+/* #hdtb-s #hdtb-msb-vis +span.hdtb-mitem  , */
 #hdtb-more ,
 .hdtb-mitem.hdtb-imb ,
 body.vasq #hdtb-msb .hdtb-mitem.hdtb-msel, 
 body.vasq #hdtb-msb .hdtb-mitem.hdtb-msel-pre{
+    position: relative !important;
+    display: inline-block !important;
     height: 18px !important;
     line-height: 18px !important;
     margin-left: 4px !important;
     margin-top: -2px !important;
+    top: 0px !important;
     padding: 0 2px 0 2px !important;
     border-radius: 3px !important;
-background: black !important;
+background: #111 !important;
 }
 #hdtb-more{
     padding: 0 9px 0 2px !important;
 }
+#hdtb #hdtb-s #hdtb-msb > div:last-of-type ,
+#hdtb-s #hdtb-msb-vis + span.hdtb-mitem  {
+    position: relative !important;
+    display: inline-block !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    top: 0px !important;
+    margin-top: 0 !important;
+    padding: 0 3px !important;
+    border-radius: 3px !important;
+background: #111 !important;
+}
+#hdtb #hdtb-s #hdtb-msb > div:last-of-type {
+display: inline-block;
+    top: 0px !important;
+    margin-top: 0 !important;
+    padding: 0 3px !important;
+    border-radius: 3px !important;
+background: #111 !important;
+}
+#hdtb #hdtb-s #hdtb-msb > div:last-of-type span.hdtb-mitem {
+display: inline-block;
+    height: 18px;
+    margin-top: 0 !important;
+}
 
-/* (new25) TOP HEADER - SEARCH TOOLS - === */
+#hdtb-s #hdtb-msb-vis + span.hdtb-mitem .rIbAWc {
+    display: inline-block;
+    height: 18px;
+}
+#hdtb-s #hdtb-msb-vis + span.hdtb-mitem .hdtb-dd-b.sqXXR{
+    padding: 0 !important;
+}
+
+#hdtb #hdtb-s #hdtb-msb > div:last-of-type:hover , 
+#hdtb-s #hdtb-msb-vis + span.hdtb-mitem:hover , 
+#hdtb #hdtb-s #hdtb-msb > div:last-of-type:hover , 
+#hdtb-more:hover ,
+.hdtb-mitem.hdtb-imb:hover ,
+body.vasq #hdtb-msb .hdtb-mitem.hdtb-msel:hover, 
+body.vasq #hdtb-msb .hdtb-mitem.hdtb-msel-pre:hover{
+background: #222 !important;
+}
+
+/* (new35) TOP HEADER - SEARCH TOOLS - === */
 #top_nav  {
-    margin-bottom: 61px;
-    margin-top: 17px;
+    position: relative !important;
+    display: inline-block !important ;
+    height: 0px !important;
+    width: 100% !important;
+    min-width: 100%;
+    margin-bottom: 68px;
+    top: -31px !important;
+/* background: yellow !important; */
+}
+#top_nav>div[jscontroller="qik19b"] ,
+#top_nav>div[jscontroller="qik19b"] {
+    margin-bottom: 63px;
+}
+.aUVJ0c {
+    position: relative !important;
+    display: inline-block !important ;
+    width: 100% !important;
+top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 5px !important;
+    z-index: 103;
+}
+.guuoLb {
+    width: 100% !important;
+height: 15px !important;
+    color: #202124;
+    font-size: 14px;
+    line-height: 1.14286;
+    margin-left: 0px !important;
+/* top: 20px !important; */
+/*     margin-bottom: 20px !important; */
+    text-align: center !important;
 }
 
 #hdtb-tls  {
@@ -3776,23 +4046,32 @@ background: black !important;
 color: white !important;
 }
 #hdtbMenus {
-    display: inline-block !important;
-    min-width: 22.5% !important;
-    max-width: 99% !important;
-    height: 18px !important;
-    line-height: 18px !important;
-    left: 0% !important;
-    top: 30px !important;
-    margin-top: 3px !important;
-    padding: 2px !important;
-    overflow: visible !important;
+    position: relative !important;
+display: inline-block !important;
+/*     float: right !important; */
+width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 26px !important;
+    max-height: 26px !important;
+    line-height: 20px !important;
+    top: -26px !important;
+    margin-top: 0px !important;
+    padding: 0px !important;
+/*     overflow: visible !important; */
     border: 1px solid gray !important;
-    text-align: center !important;
-    z-index: 5000 !important;
-background-color: transparent !important;
+    text-align: right !important;
+z-index: 100 !important;
+background-color: #111 !important;
 }
 #hdtbMenus .hdtb-mn-cont {
-    background-color: transparent !important;
+    display: inline-block;
+    height: 22px;
+    width: 50% !important;
+    white-space: nowrap;
+    text-align: left !important;
+background-color: transparent !important;
 }
 .hdtb-mn-hd {
     line-height: 18px !important;
@@ -4650,7 +4929,7 @@ color: tomato !important;
     border: 1px solid rgb(0, 0, 0) !important;
 }
 
-/* (new7) COLOR - RESULTS CONTAINER - === */
+/* (new35) COLOR - RESULTS CONTAINER - === */
 #cnt ,
 #rcnt  {
     width: 100% !important;
@@ -4658,7 +4937,9 @@ color: tomato !important;
     clear: both;
     position: relative;
 }
-
+#cnt {
+    padding-top: 0 !important;
+}
 /* (newGOGLE)COLOR - BUTTONS - === */
 .kpbb , /* SEARCH BUTTON*/
 #gb a.gb_6.gb_6 , /* CONNEXTION BUTTON */
@@ -4759,7 +5040,10 @@ color: gray !important;
 /* (new34) - TEST PANEL RIGHT for -
 https://www.google.com/search?q=FreeStyler&ie=utf-8&oe=utf-8
 === */
-#rso> .g + div[data-hveid^="CG"] ,
+
+/* #rso> .g + div[data-hveid^="CG"] , */
+/* div[data-hveid^="CG"] , */
+#rhs ,
 #rso .rhsvw.g  {
     position: fixed !important;
     max-width: 24% !important;
@@ -4776,21 +5060,24 @@ https://www.google.com/search?q=FreeStyler&ie=utf-8&oe=utf-8
 border-bottom: 1px solid red !important;
 background: black !important;
 }
-#rso> .g + div[data-hveid^="CG"]:hover ,
+/* #rso> .g + div[data-hveid^="CG"]:hover , */
+/* div[data-hveid^="CG"]:hover , */
+#rhs:hover ,
 #rso .rhsvw.g:hover {
     left: 75.9% !important;
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-#rso> .g + div[data-hveid^="CG"]::before ,
+/* (new35) COR */
+/* #rso> .g + div[data-hveid^="CG"]::before , */
+/* div[data-hveid^="CG"]::before , */
+#rhs::before ,
 #rso .rhsvw.g::before {
-    background-image: none;
-    border: 1px solid red;
-    border-radius: 5px 0 0 5px;
     content: "◀";
+    position: absolute;
     left: -12px;
     line-height: 50px;
-    position: absolute;
+    border-radius: 5px 0 0 5px;
     text-align: left;
     z-index: 5000000 !important;
 background-image: none;
@@ -4802,15 +5089,38 @@ background-color: gold !important;
 border: 1px solid red !important;
 }
 
+/* (new35) IMAGES GALL*/
+#rhs .VjDLd {
+    position: relative;
+    min-width: 100% !important;
+    margin-left: 0 !important;
+    padding: 5px !important;
+border: 1px solid #f8f9fa;
+background: #111 !important;
+}
+.kp-blk ,
+#rhs .VjDLd .I6TXqe {
+    padding: 0 0 5px !important;
+    background: #222 !important;
+    border: 1px solid gray !important;
+}
 
-/*(new33) TEST - PANEL RIGHT -  WITH GALLERY - === */
+#rhs .VjDLd #media_result_group .kno-fiu.kno-liu  > div > div > div div.eA0Zlc {
+    display: inline-block !important;
+}
 
-/* (new33) PANEL RIGHT - TEST - EXTERNAL CONTAINER */
+
+
+/*(new35) TEST - PANEL RIGHT -  WITH GALLERY - === */
+
+/* (new35) PANEL RIGHT - TEST - EXTERNAL CONTAINER */
 /* .g.mnr-c.g-blk[data-hveid^="C"] .kp-blk.c2xzTb.Wnoohf.OJXvsb , */
 /* .g.mnr-c.g-blk[data-hveid^="C"]:first-of-type ,*/ 
 /* #rso .g + [data-hveid^="C"] , */
 
 /* #rso .liYKde.rhsvw.g , */
+
+#rso>div[data-hveid="CFEQAA"] ,
 
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"] ,
 #rso .g.mnr-c.g-blk[data-hveid^="C"]:first-of-type ,
@@ -4851,15 +5161,14 @@ background: black !important;
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-/* (new34) */
+/* (new35)*/
+#rso>div[data-hveid="CFEQAA"]::before ,
 #cnt.big #rcnt #bcenter + .col + style +#rhs.rhscol.col.rhstc5::before {
-    background-image: none;
-    border: 1px solid red;
-    border-radius: 5px 0 0 5px;
     content: "◀";
+    position: absolute;
     left: -12px;
     line-height: 50px;
-    position: absolute;
+    border-radius: 5px 0 0 5px;
     text-align: left;
     z-index: 5000000 !important;
 background-image: none;
@@ -4867,14 +5176,15 @@ background-color: green !important;
 border: 1px solid red !important;
 }
 
-/* (new32A) PANEL RIGHT - TEST - INDICATOR  GEN - === */
+/* (new35) PANEL RIGHT - TEST - INDICATOR  GEN - === */
 /* NOT */
 #cnt.big #rcnt #bcenter + .col + style +#rhs.rhscol.col.rhstc5 .g.rhsvw.kno-kp.mnr-c.g-blk:before ,
 .g.mnr-c.g-blk[data-hveid^="C"]:not(.rhsvw):first-of-type:before ,
 #bres .g.mnr-c.g-blk[data-hveid^="C"]:first-of-type:before  {
     content: none !important;
 }
-/* PANEL RIGHT - TEST - MAP+ INFO - INDICATOR  MAP */
+/* (new35) PANEL RIGHT - TEST - MAP+ INFO - INDICATOR  MAP */
+#rso>div[data-hveid^="C"]:before ,
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"]:before {
     content: " " ;
     position: absolute;
@@ -4891,7 +5201,8 @@ border: 1px solid red !important;
     background-color: black !important;
 border: 1px solid red !important;
 }
-/* (new32A) PANEL RIGHT - TEST - MAP + INFO */
+/* (new35) PANEL RIGHT - TEST - MAP + INFO */
+#rso>div[data-hveid^="C"] ,
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"] {
     position: fixed !important;
     max-width: 95% !important;
@@ -4994,7 +5305,10 @@ border: 1px solid red;
 
 
 
-/* PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
+/* (new35) PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
+
+#rso>div[data-hveid="C"]:hover ,
+
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"]:hover ,
 #rso .g.mnr-c.g-blk[data-hveid^="C"]:first-of-type:hover ,
 #rhs.rhscol.col.rhstc5:hover {
@@ -5008,6 +5322,7 @@ background-color: #222 !important;
 }
 
 /* MAP HOVER */
+#rso>div[data-hveid^="C"]:hover ,
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"]:hover {
     left: 65.5% !important;
     height: 100%;
@@ -5078,6 +5393,22 @@ g-img:not(.hvFKJe)  {
 
 /* ========= (new32A)  COLORS ========= */
 
+/* (new35) BACKGROUND - ZEBBRA */
+.k8XOCe:nth-child(even) ,
+a.dgdd6c:nth-child(even) .WGYX8 ,
+.g:nth-child(even) {
+    background: #222 !important;
+}
+.k8XOCe:nth-child(odd) ,
+a.dgdd6c:nth-child(odd) .WGYX8 ,
+.g:nth-child(odd) {
+    background: #333 !important;
+}
+.k8XOCe .s75CSd ,
+a.dgdd6c:nth-child(even) .WGYX8 ,
+a.dgdd6c:nth-child(odd) .WGYX8  {
+    color: peru !important;
+}
 /* (new30A) COLOR - BACKROUND - BLACK */
 
 #appbar.appbar ,
@@ -5085,6 +5416,10 @@ div[class*="__section-topappbar"] {
     background-color: black !important;
 }
 
+/* (new35) COLOR - BACKGROUND - BLACK LIGHT - #111 */
+.kp-blk {
+    background: #111;
+}
 
 /* (new30A) COLOR - BACKGROUND - #222 */
 body ,
@@ -5126,7 +5461,11 @@ div[class*="__section-topappbar"] + div {
 }
 
 
-/* (new30A) COLOR - BACKGROUND-COLOR - #222 */
+/* (new35) COLOR - BACKGROUND-COLOR - #222 */
+
+.Lj9fsd ,
+#yDmH0d>c-wiz ,
+.s8GCU ,
 div.rl_feature .rl_container .gic.rl_center .rl_slider_container g-scrolling-carousel  .EDblX.DAVP1 .rlc__slider-page .h998We .rl_item_base  ,
 #extrares  #botstuff #bres .g.mnr-c.g-blk .kp-blk ,
 #res + #bottomads + #extrares .uOaWdb ,
@@ -5198,8 +5537,10 @@ form .RNNXgb ,
     background: #333 !important;
 }
 
-/* (new30A) COLOR - BACKGROUD-COLOR - #333 */
+/* (new35) COLOR - BACKGROUD-COLOR - #333 */
 
+.aUVJ0c ,
+.MXl0lf ,
 #res + #bottomads + #extrares .UPIZab .j0gXJ g-inner-card.cv2VAd ,
 #extrares  #botstuff #bres .g.mnr-c.g-blk ,
 .rllh__header-container .yyjhs ,
@@ -5257,6 +5598,8 @@ span.f {
 }
 
 /* (new32A) COLOR - LINK / TEXT - GRAY - === */
+.guuoLb ,
+.IsZvec ,
 .y8Jpof .k4DMHe > div {
     color: gray !important;
 }
@@ -5403,11 +5746,15 @@ input.gLFyf ,
 .gb_qb ,
 #epbar ,
 .uMdZh ,
-#ofr ,
-em {
+#ofr  {
     color: gold !important;
 }
 
+/* (new35) COLOR - RESULTS MATCH */
+
+em {
+    color: tan !important;
+}
 
 /* (new30A) COLOR - SELECTED */
 

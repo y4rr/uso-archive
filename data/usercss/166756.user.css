@@ -2,8 +2,8 @@
 @name           Yandex Dark Theme
 @namespace      USO Archive
 @author         AlexPS
-@description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        2020129.18.26
+@description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
+@version        20201210.15.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -249,7 +249,7 @@ img[style="height:100px;width:140px;margin-left:-8px;margin-top:3px;"], img[styl
 
 /* ===== Fav Panel ===== */
 
-.favorites__icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="36" viewBox="0 0 36 36" width="36"><path d="m0 0h36v36h-36z" fill="%23222"/><g clip-rule="evenodd" fill="%23fff" fill-rule="evenodd"><path d="m1.7798.4664c.32668-.211037.84956-.4664 1.50174-.4664h17.71846c1.1046 0 2 .89543 2 2s-.8954 2-2 2h-15.4c-.88366 0-1.6.71634-1.6 1.6v20.8103c0 1.1045-.89543 2-2 2s-2-.8955-2-2v-22.70726c0-.99627.429203-1.85014.888832-2.42276.239978-.298986.538978-.586499.890968-.81388z"/><path d="m30.1423 7h-20.1423c-1.65685 0-3 1.34315-3 3v21c0 1.6569 1.34315 3 3 3h20.1423c2.6789 0 4.0146-3.2442 2.1122-5.1304l-7.7252-7.6595c-.3945-.3912-.3945-1.029 0-1.4202l7.7252-7.6595c1.9024-1.8862.5667-5.1304-2.1122-5.1304z"/></g></svg>'); opacity: .3;}
+.favorites__icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><path fill-rule="evenodd" fill="white" d="M15 11a1 1 0 0 1 1-1h5.87c1.79 0 2.43.19 3.08.53a3.6 3.6 0 0 1 1.52 1.52c.34.65.53 1.3.53 3.08V25a1 1 0 1 1-2 0v-9.8c0-1.11-.12-1.51-.33-1.92-.22-.4-.54-.73-.95-.95-.4-.21-.81-.33-1.92-.33H16a1 1 0 0 1-1-1zm4.8 3c1.11 0 1.51.12 1.92.33.4.22.73.54.95.95.21.4.33.81.33 1.92v11.72a1 1 0 0 1-1.62.78L17 26.2l-4.38 3.5a1 1 0 0 1-1.62-.78V17.2c0-1.11.12-1.51.33-1.92.22-.4.54-.73.95-.95.4-.21.81-.33 1.92-.33h5.6z"/></svg>'); opacity: .3;}
 .favorites__icon:hover {opacity: .5;}
 .notifier__icon {fill: #fff; opacity: .3;}
 .notifier:hover .notifier__icon {opacity: .5;}
@@ -334,6 +334,18 @@ img[style="height:100px;width:140px;margin-left:-8px;margin-top:3px;"], img[styl
 .input__control {color: #eee;}
 .button_theme_websearch .button__text {background-color: #444; border-color: #444; color: #fc0;}
 .button_theme_websearch.button_hovered_yes .button__text {background-color: #555; border-color: #555;}
+
+.document_new-search_yes .search2 {background: #444;}
+.document_new-search_yes .input_size_ws-head {background: #222; border-color: #444;}
+.search2__placeholder {color: #eee;}
+.document_new-search_yes .button_theme_websearch {background: #444; color: #fc0;}
+.document_new-search_yes .button_theme_websearch.button_hovered_yes {background: #555;}
+.document_new-search_yes .search__rounded-arrow {fill: #444; stroke: #444;}
+.document_new-search_yes .button_theme_websearch.button_hovered_yes .search__rounded-arrow {fill: #555; stroke: #555;}
+
+.document_new-search_yes .mini-suggest__popup_theme_flat .mini-suggest__popup-content {background: #333;}
+.mini-suggest__popup_theme_flat:before {background: #333 !important;}
+.mini-suggest__popup_theme_flat:after {background: #333 !important;}
 
 .document_alt-arrow_yes .input_size_ws-head:before {border-color: #444;}
 .document_alt-arrow_yes .input_size_ws-head:after {border-color: #444;}

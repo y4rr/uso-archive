@@ -2,9 +2,9 @@
 @name           ROBLOX Transactions Dark Mode
 @namespace      USO Archive
 @author         ThePastaNebula
-@description    `Since ROBLOX hasn't taken the liberty of keeping their pages up to date, I decided to aid user's eyes by making these pages dark! Thank me later when you're not blind.`
-@version        20201210.12.18
-@license        NO-REDISTRIBUTION
+@description    `This goes with the Summary Tab Dark Mode - get it here!https://userstyles.org/styles/194169/roblox-summary-tab-dark-mode`
+@version        20201210.18.30
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://www.roblox.com/My/Money.aspx#/#MyTransactions_tab") {
@@ -16,6 +16,10 @@
 
 #Body {
     background-color:#232527   
+}
+
+.empty {
+    color:white!important
 }
 
 .StandardPanelWhite {
@@ -148,6 +152,13 @@ a:visited {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+}
+
+#MyTransactions_tab .loading, #TradeItems_tab .loading {
+    background: #232527 url(https://www.roblox.com/images/ProgressIndicator4.gif) no-repeat center;
+    height: 150px;
+    position: relative;
+    width: 780px;
 }
 
 .rbx-body {

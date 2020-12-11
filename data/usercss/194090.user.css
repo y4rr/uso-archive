@@ -2,21 +2,21 @@
 @name           DarkTree
 @namespace      USO Archive
 @author         firefoxic
-@description    `Fresh GitHub Dark theme for OctoTree extension`
-@version        2020129.20.44
+@description    `Fresh GitHub Dark theme for OctoTree extension.More consistent colors than those offered by the extension itself.`
+@version        20201210.14.36
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("github.com") {
 /* Sidebar */
-.octotree-sidebar.octotree-github-sidebar .octotree-views {
+html[data-octotree-theme="sidebar"][data-color-mode="auto"] .octotree-sidebar.octotree-github-sidebar .octotree-views.octotree-views {
 	background-color: var(--color-bg-canvas) !important;
 	color: var(--color-text-primary) !important;
 	border-right: 1px solid var(--color-border-primary) !important;
 }
 
 /* Header */
-.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view .octotree-view-header {
+html[data-octotree-theme] .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-view-header.octotree-view-header {
 	background-color: var(--color-header-bg) !important;
 	border-right: 1px solid var(--color-border-primary) !important;
 }
@@ -30,10 +30,10 @@
 }
 
 /* Links */
-.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-anchor.jstree-anchor {
+html[data-octotree-theme] .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view li[role].jstree-node .jstree-anchor.jstree-anchor {
 	color: var(--color-text-primary) !important;
 }
-.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-anchor.jstree-clicked {
+html[data-octotree-theme] .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view li[role].jstree-node .jstree-anchor.jstree-clicked {
 	color: var(--color-header-logo) !important;
 }
 
@@ -42,13 +42,14 @@
 	color: currentcolor !important;
 }
 
-/* Substrate */
-.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-wholerow {
-	display: none;
+/* Selected point */
+html[data-octotree-theme] .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-wholerow-clicked.jstree-wholerow-clicked {
+	background-color: var(--color-btn-bg) !important;
 }
-.octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-default .jstree-wholerow-clicked {
-	display: block;
-	background-color: var(--color-btn-hover-bg) !important;
+
+/* Hovered point */
+html[data-octotree-theme] .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .jstree-wholerow-hovered.jstree-wholerow-hovered {
+background-color: var(--color-btn-hover-bg) !important;
 }
 
 /* Toggle-button */

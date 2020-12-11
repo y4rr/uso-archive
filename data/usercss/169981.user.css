@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         flatron4eg
 @description    `Fresh look for one of the popular torrent trackers in CIS - rutor.`
-@version        20201210.9.37
+@version        20201210.15.41
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -87,7 +87,8 @@ a:hover, .fake_link:hover {color:#555; text-decoration: none !important}
 
 * {font-family: 'Montserrat', sans-serif !important;}
 body {background:#f7f8fc}
-input[type=text], input[type=password], select {background:transparent; border:0; border-bottom:2px solid #f4f5f8; padding:8px 0; outline: none !important; font-weight: bold; color:#828893}
+input[type=text], input[type=password], select, textarea {background:transparent; border:0; border-bottom:2px solid #f4f5f8; padding:8px 0; outline: none !important; font-weight: bold; color:#828893}
+textarea {background:#fefefe}
 input[type=text]:hover, input[type=password]:hover {border-color:#ccc}
 input[type=text]:focus, input[type=password]:focus {border-color:#828893}
 input[type=submit] {background:#d6662a; padding:12px 20px;border:0;border-radius:14px;color:#fff;font-weight:bold;font-size:16px;margin-top:10px}
@@ -104,11 +105,11 @@ select {border: 1px solid white; border-bottom:2px solid #f4f5f8}
 #logo a {text-decoration: none !important; color:#f7f8fc; font-size:30px; font-weight: bold; display:block; width:260px; margin-right:40px; text-align:center; padding:10px 0; outline: none !important}
 #logo a:after {content: 'rutor.org';}
 #news_table {display:none}
-#content {position:static !important; margin: 80px; margin-top:-25px; border-radius:14px; margin-bottom: 0}
-#down {margin:0; box-sizing: border-box; padding:20px 0 !important; margin-bottom:-5px; font-weight: bold; font-size: 12px;text-align:center !important}
+#content {position:static !important; margin: 80px; margin-top:-25px; border-radius:14px; margin-bottom: 0;}
+#down {margin:0; box-sizing: border-box; padding:20px 0 !important; margin-bottom:-5px; font-weight: bold; font-size: 12px;text-align:center !important; clear: both}
 #all h1 {margin: 0 80px; margin-top:-25px; margin-bottom: 50px;}
-#index h2, #all h1 {background:#fff; padding:20px 40px; border-radius:16px; font-weight: bold}
-#index h2 {margin:0; margin-bottom:20px}
+#index h2, #all h1, #content>h2 {background:#fff; padding:20px 40px; border-radius:16px; font-weight: bold}
+#index h2 {margin:0; margin-bottom:20px;}
 tr.backgr {display:none}
 
 div#index tr {background:#fff !important}
@@ -135,7 +136,7 @@ a[href*="/download/"]:hover, a[href^="magnet"]:hover {text-decoration: none !imp
 #index a[href^="magnet"] {left:-154px }
 a[href*="/download/"] img, a[href^="magnet"] img {display:none}
 a[href*="/download/"]:before, a[href^="magnet"]:before {font-family:"Font Awesome 5 Free";content:'\f063'; width:38px; height:38px; display:block; text-align:center; line-height:40px; font-size:24px; color:#8ec54d; border-radius:50%; background:rgb(235, 251, 216); font-weight:900}
-#index>h2:nth-child(n+2) {background:transparent; padding-bottom:0;}
+#index>h2:nth-child(n+2), #content>h2:nth-child(n+2) {background:transparent; padding-bottom:0;}
 #index>h2:nth-child(n+2) a {color:#777}
 #index>h2:nth-child(n+2) a:hover {color:#555}
 
@@ -181,7 +182,7 @@ img[title="LiveInternet"] {display:none}
 #details>tbody>tr:first-child td:first-child {display:none}
 #details>tbody>tr:first-child td:nth-child(2) {width:100%; box-sizing:border-box; border-radius:14px}
 #details>tbody>tr {display:inline-block; vertical-align:top; min-width:33.33%; box-sizing:border-box; padding-right:20px; padding-bottom:20px}
-#details>tbody>tr>td {padding: 20px 40px; border-radius:0 0 14px 14px; width:100%; box-sizing: border-box; display:block; font-size: 14px}
+#details>tbody>tr>td {padding: 20px 40px; border-radius:0 0 14px 14px; width:100%; box-sizing: border-box; display:block; font-size: 14px; font-weight: bold; color:#505652}
 #details tr:first-child {margin-bottom:20px; padding:0}
 #details tr:nth-child(3n+1) {padding-right: 0}
 #details td.header {margin: 0; border-radius: 14px 14px 0 0; padding-bottom: 0; display:block;color:#a3a9ae; font-size:14px}
@@ -189,7 +190,7 @@ img[title="LiveInternet"] {display:none}
 #details hr {background:transparent; border: 0; border-bottom:2px dashed #ddd}
 
 
-#details>tbody>tr>td[colspan="2"] {padding:0;width:100%}
+#details>tbody>tr>td[colspan="2"] {padding:0;width:100%;}
 #details>tbody>tr:nth-child(11)>td[colspan="2"] {width:calc(100% + 20px)}
 #details>tbody>tr:nth-last-child(1) {width: 100% !important; display:block; padding:0}
 #details>tbody>tr:nth-last-child(1)>td:first-child {padding:0; border-radius: 14px}
@@ -219,8 +220,7 @@ table#files td {border: 0; padding:4px 40px; font-size:14px; font-weight: bold; 
 .hidehead[style='background-image: url("data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw==");'] {border-radius: 14px 14px 0 0}
 .hidehead[style='background-image: url("data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw==");']:before {content: '\f068'}
 
-fieldset {border: 0 !important}
-fieldset {margin:-1px; padding:0; background: #f7f8fc}
+fieldset {border: 0 !important; padding:0; margin:0; background: #f7f8fc}
 fieldset legend {background: #f7f8fc; display:block; width:100%; margin: 0; padding: 10px 40px; font-size: 20px; font-weight: bold}
 #download {background:transparent; border: 0; text-align:right; margin:0; padding: 0 20px; position: relative; top: -74px; bottom: -74px; height:10px}
 #download a {display:inline-block; text-decoration: none; vertical-align: top; margin-bottom:22px; font-size:0 }
@@ -260,30 +260,71 @@ fieldset[style="border: 1px dashed black;"]:after {content:'\f10d'; right:8px; b
 .c_h td:nth-child(2):before, .c_h_a td:nth-child(2):before {content:'\f017'; font-weight: normal; font-family:"Font Awesome 5 Free"; margin-right: 4px}
 .c_h_a td:first-child b {color:#c51f1f}
 
-td[width='49%'], td[width='49%']+td {background:#fff; border-radius:14px;padding:20px;vertical-align:top;font-weight: bold; color:#808682; box-sizing:border-box;display:inline-block;width:calc(50% - 10px) !important}
+td[width='49%'], td[width='49%']+td {background:#fff; border-radius:14px;padding:20px;vertical-align:top;font-weight: bold; color:#808682; box-sizing:border-box;display:inline-block;width:calc(50% - 10px) !important; font-size: 14px}
 td[width='49%'] {margin-right:20px}
 td[width='49%'] h3, td[width='49%']+td h3 {font-weight: bold; color:#4f4f4f; margin-top:6px}
 td[width='49%'] table, td[width='49%']+td table, td[width='49%'] input, td[width='49%']+td input {width:100%}
-form+tbody td[align='right'] {display:block;font-weight: bold; color:#a8aab4;text-align:left;margin-top:10px}
+form+tbody td[align='right'] {display:block;font-weight: bold; color:#a8aab4;text-align:left;margin-top:10px; font-size: 14px}
 form+tbody td[align='right']+td {display:block;width:100%}
 
-form[onsubmit="search_submit(); return false;"] {background: #fff; padding: 20px; border-radius: 16px}
+form[onsubmit="search_submit(); return false;"] {background: #fff; padding: 20px; border-radius: 16px;}
 form[onsubmit="search_submit(); return false;"] {position:relative}
-form[onsubmit="search_submit(); return false;"] td {font-weight: bold; color: #808682}
+form[onsubmit="search_submit(); return false;"] td {font-weight: bold; color: #808682; font-size: 14px}
 form[onsubmit="search_submit(); return false;"] tr:last-child {position: absolute; right: 20px; bottom: 20px}
-form[onsubmit="search_submit(); return false;"] input[type="radio"] {visibility: hidden; width:20px}
-form[onsubmit="search_submit(); return false;"] input[type="radio"]::before {visibility: visible; display:inline-block; width: 6px; height:6px; border-radius:50%; border: 5px solid #f4f5f8; content: ''; margin-right: 20px; background:#f4f5f8}
-form[onsubmit="search_submit(); return false;"] label:hover input[type="radio"]::before {border-color:#ccc;background:#fff}
-form[onsubmit="search_submit(); return false;"] label input[type="radio"]:checked::before {border-color:#828893; background:#fff}
+input[type="radio"] {visibility: hidden; width:20px}
+input[type="radio"]::before {visibility: visible; display:inline-block; width: 6px; height:6px; border-radius:50%; border: 5px solid #f4f5f8; content: ''; margin-right: 20px; background:#f4f5f8}
+label:hover input[type="radio"]::before, input[type="radio"]:hover::before {border-color:#ccc;background:#fff}
+input[type="radio"]:checked::before {border-color:#828893; background:#fff}
 
-#content>p[align="center"] {font-size: 0}
-#content>p[align="center"]>b, #content>p[align="center"] a {color:#808682; font-size: 14px; padding: 12px 20px; display:inline-block; margin: 5px}
+#content>p[align="center"] {font-size: 0;min-height: 52px}
+#content>p[align="center"]>b, #content>p[align="center"] a, #index>b>a {color:#808682; font-size: 16px; padding: 12px 20px; display:inline-block; margin: 5px}
 #content>p[align="center"]>b {color:#a8aab4}
-#content>p[align="center"] a {background:#fff; border-radius: 16px; display:inline-block}
-#content>p[align="center"] a:hover {background:rgba(0,0,0,0.05)}
+#content>p[align="center"] a, #index>b>a {background:#fff; border-radius: 16px; display:inline-block}
+#content>p[align="center"] a:hover, #index>b>a:hover {background:rgba(0,0,0,0.05)}
 #content>p[align="center"] br {display:none}
-fieldset + p[align="center"]>*:first-child, #index + p[align="center"]>*:nth-last-child(2) {float:left; margin-left:0 !important; font-size: 0 !important}
-fieldset + p[align="center"]>*:nth-child(2), #index + p[align="center"]>*:last-child {float:right; margin-right: 0 !important; font-size: 0 !important}
-fieldset + p[align="center"]>*:first-child::before, fieldset + p[align="center"]>*:nth-child(2)::before, #index + p[align="center"]>*:nth-last-child(2)::before, #index + p[align="center"]>*:last-child::before {content:'\f100'; font-weight: bold; font-family:"Font Awesome 5 Free"; font-size:16px !important;}
-fieldset + p[align="center"]>*:nth-child(2)::before, #index + p[align="center"]>*:last-child::before {content:'\f101'}
+script + p[align="center"]>*:first-child,
+fieldset + p[align="center"]>*:first-child,
+#index + p[align="center"]>*:nth-last-child(2),
+table + p[align="center"]>*:nth-last-child(2) {float:left; margin-left:0 !important; font-size: 0 !important}
+script + p[align="center"]>*:nth-child(2),
+fieldset + p[align="center"]>*:nth-child(2),
+#index + p[align="center"]>*:last-child,
+table + p[align="center"]>*:last-child {float:right; margin-right: 0 !important; font-size: 0 !important}
+script + p[align="center"]>*:first-child::before,
+fieldset + p[align="center"]>*:first-child::before,
+fieldset + p[align="center"]>*:nth-child(2)::before,
+script + p[align="center"]>*:nth-child(2)::before,
+#index + p[align="center"]>*:nth-last-child(2)::before,
+#index + p[align="center"]>*:last-child::before ,
+table + p[align="center"]>*:nth-last-child(2)::before,
+table + p[align="center"]>*:last-child::before {content:'\f100'; font-weight: bold; font-family:"Font Awesome 5 Free"; font-size:16px !important;}
+fieldset + p[align="center"]>*:nth-child(2)::before,
+#index + p[align="center"]>*:last-child::before,
+table + p[align="center"]>*:last-child::before,
+script + p[align="center"]>*:nth-child(2)::before {content:'\f101'}
+#index>b {float:left; word-spacing: 30px;}
+#index>b>a {margin: 5px -10px}
+#index {text-align: right; font-weight: bold; padding-top: 20px; color: #808682; font-size: 16px;}
+#index>*:first-child {margin-top:-20px}
+#index>* {text-align: left}
+
+fieldset[style="width: 300px;"] {display: inline-block; width: calc(33.33% - 16px) !important; margin-right: 20px; background:#fff;vertical-align: top; border-radius: 16px; box-sizing: border-box; padding: 20px; position: relative}
+fieldset[style="width: 300px;"] legend {background:#fff; width: calc(100% - 40px); padding-top:20px;border-radius: 16px 16px 0 0; position:relative; left: -20px;}
+#content fieldset[style="width: 300px;"]:nth-of-type(3) {margin-right: 0}
+fieldset[style="width: 300px;"] td {font-weight: bold; color: #808682}
+fieldset[style="width: 300px;"] td, fieldset[style="width: 300px;"] a {font-size: 14px}
+
+fieldset + h1 { font-weight: bold; text-align:center; color:#d6662a; border: 3px solid #d6662a; padding: 20px; border-radius: 16px}
+fieldset + h1 a {color:#e39d40;}
+
+form[action^="/comment"] + tbody {display:block; background:#fff; width: calc(100% - 200px); position: absolute; border-radius: 16px; padding: 20px; }
+form[action^="/comment"] + tbody td {font-size: 14px; font-weight: bold; color:#808682;}
+form[action^="/comment"] + tbody input[type="button"] {border:0; padding: 6px 10px; border-radius: 8px; margin-bottom: 10px}
+form[action^="/comment"] + tbody input[type="button"]:hover {background: rgba(0,0,0,0.1) !important}
+#vkb_callVirt {display:none}
+
+h2 + h3, h3 + h3 {background:#fff; border-radius: 16px; padding: 20px; font-weight: bold; color:#808682}
+h3 + h3 {margin-top: -60px}
+h2 small {font-size:0 !important;}
+h2 small a::before {content:'\f059'; font-size: 20px; font-family:"Font Awesome 5 Free"; font-weight: normal; margin-left: 5px}
 }
