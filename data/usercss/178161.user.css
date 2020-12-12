@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201211.2.54
+@version        20201211.22.52
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -1048,6 +1048,7 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   }
   
   .engine-window-frame {
+    padding: 6px;
     padding-right: 1vw;
     padding-left: 1vw;
   }
@@ -1130,6 +1131,7 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   #game-option-list > button:nth-child(n) {
     border-radius: 10px;
     margin: 6px;
+    margin-bottom: 3px;
   }
   
   *:focus {outline: none;}
@@ -1716,7 +1718,7 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
     border-radius: 10px;
     margin: 6px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
   }
 
   #game-end-button,
@@ -1725,9 +1727,12 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   #game-not-ready-button,
   #game-ready-button,
   #game-start-button,
-  #game-deck-dropdown,
-  #game-deck-template {
+  #game-deck-dropdown {
     border-radius: 10px;
+    width: -webkit-fill-available;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-bottom: 3px;
   }
 
     .game-field-zone-activate {
@@ -1764,8 +1769,8 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
     border-radius: 10px;
     padding-right: 1vw;
     padding-left: 1vw;
-    padding-top: 1.5vh;
-    padding-bottom: 2vh;
+    padding-top: 6px;
+    padding-bottom: 6px;
     box-shadow: 0 0 3px 0px black;
     backdrop-filter: blur(7px);
     background-color: rgba(0, 0, 0, 0.7);
@@ -1776,14 +1781,57 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   }
   
   #game-deck-selection {
-    border: 1px solid rgba(187, 225, 250, 0.7);
-    border-radius: 10px;
+    border: 0;
+    border-top: 1px solid rgba(187, 225, 250, 0.7);
+    border-radius: 0;
     padding-right: 1vw;
     padding-left: 1vw;
     padding-top: 1.5vh;
     padding-bottom: 2vh;
-    box-shadow: 0 0 3px 0px black;
-    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 0px black;
+    background-color: transparent;
+    max-width: none;
+    width: 97.5%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: grid;
+    margin-top: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 0fr));
+    justify-items: center;
+    justify-content: center;
+  }
+
+  #game-room-players-table > tbody > tr:nth-child(n) {
+    border-top: 1px solid rgba(187, 225, 250, 0.7);
+    border-bottom: 1px solid rgba(187, 225, 250, 0.7);
+  }
+
+  #game-room-information-table > tbody > tr:nth-child(n) {
+    border-top: 1px solid rgba(187, 225, 250, 0.7);
+    border-bottom: 1px solid rgba(187, 225, 250, 0.7);
+  }
+
+  #game-deck-selection > div:nth-child(n) {
+    text-align: center;
+    width: -webkit-fill-available;
+  }
+
+  #game-deck-template {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    height: 22px;
+  }
+
+  #game-deck-template:hover {
+    background: linear-gradient(90deg, rgba(187, 225, 250,0) 0%, rgba(187, 225, 250,0.7) 50%, rgba(187, 225, 250,0) 100%);
+    color: black;
+  }
+  
+  #game-deck-template:active {
+    background: linear-gradient(90deg, rgba(187, 225, 250,0) 0%, rgba(187, 225, 250,0.9) 50%, rgba(187, 225, 250,0) 100%);
+    color: black;
   }
 
   .engine-dark-box-border {
@@ -1898,6 +1946,8 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
     -webkit-text-stroke-width: 0px;
     white-space: nowrap;
     margin: 0;
+    text-align: center;
+    margin-bottom: 1vh;
   }
 
   #game-next-turn {
@@ -1906,11 +1956,9 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     left: 50% !important;
-    border-top : 1px solid rgba(187, 225, 250, 0.7);
-    border-bottom : 1px solid rgba(187, 225, 250, 0.7);
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7469188358937324) 25%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.7469188358937324) 75%, rgba(0,0,0,0) 100%);
-    height: 12vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    width: 50vw;
     }
 
   #game-life-change-text {
@@ -1951,10 +1999,15 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   }
 
   #game-room-container {
+    width: 75%;
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.8);
     backdrop-filter: blur(7px);
     border: 1px solid rgba(187, 225, 250, 0.7);
+    height: 82.5vh;
+    margin-top: 5vh;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   #siding-main-deck {

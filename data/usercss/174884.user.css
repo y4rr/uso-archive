@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Dark Theme for archive.orgLink Colours are customizable.Includes smooth hovers, transitions, Media Dim, eBook Dark Mode (colour inversion), custom scrollbars and cursors;https://userstyles.org/styles/176247/https://userstyles.org/styles/177189/https://userstyles.org/styles/182441/https://userstyles.org/styles/175086/To easily switch from eBook inversion to normal, see the complimentary theme;https://userstyles.org/styles/179071/archive-org-disable-ebook-inversion-kmvAll options are in separate codes. Delete any of them to disable.PS: Due to properties of Custom CSS, one needs uninstall in order to Update.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
-@version        20201129.13.37
+@version        20201211.15.19
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color ArchiveLinks "Links Colour" #9B8440
@@ -36,6 +36,7 @@
 {
     --ArchiveLinks: /*[[ArchiveLinks]]*/;
     --ArchiveLinksHover: /*[[ArchiveLinksHover]]*/;
+    --formSectionContentBackgroundColor: #111;
 }
 
 /* --------------------- BAK Defaults ---------------------
@@ -44,6 +45,7 @@
 {
     --ArchiveLinks: #9B8440;
     --ArchiveLinksHover: #DABD73;
+    --formSectionContentBackgroundColor: #111;
 }
 
 /* --------------------- BAK Defaults --------------------- */
@@ -880,7 +882,7 @@ body.ia-module.tiles .item-ia.collection-ia:active .collection-stats
 .toolbar-wrap
 {
     color: #999!important;
-    background: #000!important;
+    background: #111!important;
     border-color: #333!important;
     text-shadow: none !important;
 }
@@ -1040,7 +1042,10 @@ body.ia-module .welcome .tabby.in a.stealth
     transition: all 0.4s ease-in-out !important;
 }
 
+
+
 /*BUTTONS*/
+
 /* Buttons Border Removal */
 .btn
 {
@@ -1053,6 +1058,30 @@ img.password_icon
 {
     filter: invert(70%) !important;
 }
+
+/*Donation Banner*/
+/*Close Button*/
+#donate_banner .desktop-view-close
+{
+    background-color: #111;
+}
+.iconochive-remove-circle::before
+{
+    filter:brightness(.75);
+    transition:.4s;
+}
+.iconochive-remove-circle:hover::before
+{
+    filter:brightness(1);
+    transition:.4s;
+}
+.iconochive-remove-circle:active::before
+{
+    filter:brightness(.6);
+    transition:0s;
+}
+
+
 
 .web_button:hover
 {
@@ -1413,6 +1442,7 @@ div[onclick]:hover,
 [role="menuitem"]:hover *,
 .BRpageimage,
 body.ia-module.tiles .item-ia .collection-title,
+.calendar-day,.calendar-day.highlighted,.calendar-day-reference,
 .jw-slider-time,
 .jw-slider-time *,
 .jw-video.jw-reset,
@@ -1445,6 +1475,7 @@ div[onclick]:active,
 [role="menuitem"]:active *,
 .BRpagecontainer.BRmode2up:active,.BRpageimage:active,
 body.ia-module.tiles .item-ia .collection-title:active,
+.calendar-day:active,.calendar-day.highlighted:active,.calendar-day-reference:active,
 .jw-video.jw-reset:active,
 .link:active,
 .link:active *,
