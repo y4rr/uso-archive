@@ -3,25 +3,42 @@
 @namespace      USO Archive
 @author         ThePastaNebula
 @description    `This goes with the Summary Tab Dark Mode - get it here!https://userstyles.org/styles/194169/roblox-summary-tab-dark-mode`
-@version        20201211.15.49
-@license        CC-BY-4.0
+@version        20201212.10.22
+@license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url("https://www.roblox.com/My/Money.aspx#/#MyTransactions_tab") {
+@-moz-document url-prefix("https://www.roblox.com/My/Money.aspx#/#") {
 /* Script made by ThePastaNebula */
 
 #MasterContainer {
-    background-color:#232527
+    background-color:#232527!important;
 }
 
 html {
-    background-color: #232527;
+    background-color: #232527!important;
 }
 
 
 
+.btn-control.btn-control-small {
+    height: 18px;
+    line-height: 18px;
+    font-size: 11px;
+    background-image: url(https://i.ibb.co/vdHKyt2/gifgit.png);
+    color:white!important
+}
+
+body {
+    background-color: #232527!important;
+    margin: 0;
+}
+
+.loading {
+    background-color:#232527!important
+}
+
 #Body {
-    background-color:#232527   
+    background-color:#232527!important;  
 }
 
 .empty {
@@ -56,7 +73,7 @@ html {
 .table-header th {
 
     font-weight: 600;
-    background-color: #3e3e3e;
+    background-color: #3e3e3e!important;
     border-top: none;
 }
 
@@ -158,6 +175,11 @@ a:visited {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+}
+
+body {
+    background-color: #232527!important;
+    margin: 0;
 }
 
 #MyTransactions_tab .loading, #TradeItems_tab .loading {
