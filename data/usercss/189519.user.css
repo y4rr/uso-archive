@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         moonflame
 @description    `BaiduXs - 多栏卡片样式，自动调整 1~4 列。清爽简洁，无广告。*** 与其他多列样式有何不同简洁克制的动画；更多卡片适配，如：购物、oschina 开源项目、招聘等；紧凑，无需滚轮就能看完一页结果。*** 反馈与好评不定时更新修复。如果喜欢，也请登录打好评，感谢支持。腾讯问卷反馈入口：<a href="https://wj.qq.com/s2/7652132/1cdf/" target="_blank">BaiduXs 样式意见反馈</a>本站反馈入口：在本网站论坛发送新主题，可反馈问题，或点亮绿色大拇指打好评：<a href="https://forum.userstyles.org/post/discussion?Discussion/StyleID=189519" target="_blank">Send Feedback</a>在本网站论坛查看已有主题，可以点击主题右上角齿轮编辑主题：<a href="https://forum.userstyles.org/?Discussion/StyleID=189519" target="_blank">See More</a>本站发帖注意事项发送后大概率会弹框报错，但实际上很可能已经成功发帖了，请勿重复点击 Post Discussion。*** 站在巨人的肩膀上：本样式基于 BaiduX，但该样式很久没更新了：<a href="http://userstyles.org/styles/158871">BaiduX 极简百度</a>BaiduX 基于百度多栏，原作者诈尸更新了：<a href="https://userstyles.org/styles/158844">百度多栏卡片搜索</a>*** 无需样式，简洁版【百度首页】设置方法：设置 - 搜索设置 - 首页设置 - 关闭天气模块，换肤活动；设置 - 隐藏资讯；设置 - 更换皮肤 - 不使用换肤。`
-@version        2020124.9.1
+@version        2020127.9.7
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown direction "卡片排列方向（横/竖）" {
@@ -87,7 +87,7 @@ landscape "横向" <<<EOT /* 横向 landscape *\/
 }
 @advanced dropdown bg-color-overall "背景颜色" {
 	light-gray "浅灰（默认）*" <<<EOT /* 浅灰背景 light-gray *\/
-html, .wrapper_new #s_tab, #wrapper_wrapper, #rs .new-pmd {
+html, #wrapper_wrapper, #rs .new-pmd {
     background-color: #F5F5F6;
 } EOT;
 white "白色" <<<EOT /* 白色背景 white *\/ EOT;

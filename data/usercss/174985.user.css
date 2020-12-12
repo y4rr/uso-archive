@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ekted
 @description    `Returns the BGG homepage to a more compact view.`
-@version        202039.0.39
+@version        20201210.22.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -43,6 +43,18 @@ gg-header header, .global-header, .media-header, .legacy .moduletable th, .legac
     background-color: #306090 !important;
 }
 
+.home-tab__inner-container {
+    display: none;
+}
+
+footer.mt-5 {
+    margin-top: 0 !important;
+}
+
+.footer__container {
+    display: none;
+}
+
 .global-header-logo, .menu-logo-inner {
     display: flex;
     align-items: center;
@@ -74,6 +86,14 @@ gg-menu-nav-user span.count, a.global-header-icon span.badge, button.btn.global-
 
 .nav-tabs-more-dropdown a:visited, .summary-image-item .summary-item-title a:visited, .panel-body-toolbar > a:visited, .advertisement-text-body a:visited, ul.global-secondary-nav-links a:visited, .link-text-color:visited {
     color: #4080c0;
+}
+
+.homepage-container.global-body-content-primary {
+    background-color: transparent;
+}
+
+.homepage-container {
+    padding-top: 0 !important;
 }
 
 .geekcentral {

@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         Rizzie
 @description    `Данная тема предназначена только для сайта https://forum.vimeworld.ru/Сделано игроком Rizzie.VK: www.vk.com/rizzieVimeTop: www.vimetop.ru/p/rizzie`
-@version        2020923.8.10
+@version        2020128.20.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://forum.vimeworld.ru/") {
+
 /* ТЕМА ДЛЯ ФОРУМА ОТ RIZZIE
 ВК: https://vk.com/rizzie
 VimeTop: https://vimetop.ru/player/rizzie*/
@@ -834,5 +835,20 @@ p.rep_highlight {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+}
+
+.ipbmenu_content, .ipb_autocomplete {
+    background-color: #191a1b;
+    border: 1px solid #91c0e3;
+    -webkit-box-shadow: rgba(0,0,0,.3) 0 6px 6px;
+    box-shadow: rgba(0,0,0,.3) 0 6px 6px;
+}
+
+.ipbmenu_content a:hover {
+    background: #000a15;
+}
+
+.cke_skin_ips textarea.cke_dialog_ui_input_textarea {
+    background-color: #2d2d2e;
 }
 }

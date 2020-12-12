@@ -3,11 +3,11 @@
   "info": {
     "name": "BaiduXs百度多栏12月更新 百度Xs-简洁 多栏 卡片",
     "description": "BaiduXs - 多栏卡片样式，自动调整 1~4 列。清爽简洁，无广告。\r\n\r\n\r\n\r\n*** 与其他多列样式有何不同\r\n简洁克制的动画；\r\n更多卡片适配，如：购物、oschina 开源项目、招聘等；\r\n紧凑，无需滚轮就能看完一页结果。\r\n\r\n\r\n\r\n*** 反馈与好评\r\n不定时更新修复。如果喜欢，也请登录打好评，感谢支持。\r\n\r\n腾讯问卷反馈入口：<a href=\"https://wj.qq.com/s2/7652132/1cdf/\" target=\"_blank\">BaiduXs 样式意见反馈</a>\r\n\r\n本站反馈入口：\r\n在本网站论坛发送新主题，可反馈问题，或点亮绿色大拇指打好评：<a href=\"https://forum.userstyles.org/post/discussion?Discussion/StyleID=189519\" target=\"_blank\">Send Feedback</a>\r\n在本网站论坛查看已有主题，可以点击主题右上角齿轮编辑主题：<a href=\"https://forum.userstyles.org/?Discussion/StyleID=189519\" target=\"_blank\">See More</a>\r\n\r\n本站发帖注意事项\r\n发送后大概率会弹框报错，但实际上很可能已经成功发帖了，请勿重复点击 Post Discussion。\r\n\r\n\r\n\r\n*** 站在巨人的肩膀上：\r\n本样式基于 BaiduX，但该样式很久没更新了：<a href=\"http://userstyles.org/styles/158871\">BaiduX 极简百度</a>\r\nBaiduX 基于百度多栏，原作者诈尸更新了：<a href=\"https://userstyles.org/styles/158844\">百度多栏卡片搜索</a>\r\n\r\n\r\n\r\n*** 无需样式，简洁版【百度首页】设置方法：\r\n设置 - 搜索设置 - 首页设置 - 关闭天气模块，换肤活动；\r\n设置 - 隐藏资讯；\r\n设置 - 更换皮肤 - 不使用换肤。",
-    "additionalInfo": "2020-12-04 优化背景，现在背景可以全屏浅灰色。\r\n\r\n2020-12-03 修复特定情况下部分搜索结果卡片不显示的问题。\r\n\r\n2020-12-02 修复特定情况下指向搜索结果标题时，部分卡片出现闪烁的问题。\r\n\r\n2020-11-22 优化底部“相关搜索”样式，缩小卡片纵向间距。\r\n\r\n2020-09-29 显示热点新闻类卡片。\r\n\r\n       2020-09-28 添加背景颜色设置，默认浅灰色背景。\r\n\r\n       2020-09-27 调整卡片圆角，阴影，编号等细节，修复超宽屏显示错误，优化购物结果卡片，隐藏混在结果中的搜索推荐，隐藏底部有奖问卷链接。\r\n\r\nv0.2.0 2020-09-23 添加纵横方向自定义选项。\r\nv0.1.1 2020-09-23 优化阴影样式，纵向间距，显示底部相关搜索。\r\nv0.1.0 2020-09-17 初次发布。",
+    "additionalInfo": "2020-12-07 优化背景，解决部分区域显示效果不和谐的情况。\r\n\r\n2020-12-04 优化背景，现在背景可以全屏浅灰色。\r\n\r\n2020-12-03 修复特定情况下部分搜索结果卡片不显示的问题。\r\n\r\n2020-12-02 修复特定情况下指向搜索结果标题时，部分卡片出现闪烁的问题。\r\n\r\n2020-11-22 优化底部“相关搜索”样式，缩小卡片纵向间距。\r\n\r\n2020-09-29 显示热点新闻类卡片。\r\n\r\n       2020-09-28 添加背景颜色设置，默认浅灰色背景。\r\n\r\n       2020-09-27 调整卡片圆角，阴影，编号等细节，修复超宽屏显示错误，优化购物结果卡片，隐藏混在结果中的搜索推荐，隐藏底部有奖问卷链接。\r\n\r\nv0.2.0 2020-09-23 添加纵横方向自定义选项。\r\nv0.1.1 2020-09-23 优化阴影样式，纵向间距，显示底部相关搜索。\r\nv0.1.0 2020-09-17 初次发布。",
     "format": "uso",
     "category": "baidu",
     "createdAt": "2020-09-17T14:35:05.000Z",
-    "updatedAt": "2020-12-04T09:01:50.000Z",
+    "updatedAt": "2020-12-07T09:07:21.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 1011254,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 610,
-      "weekly": 50
+      "total": 633,
+      "weekly": 51
     },
     "rating": 3
   },
@@ -110,7 +110,7 @@
           {
             "key": "light-gray",
             "label": "浅灰（默认）",
-            "value": "/* 浅灰背景 light-gray */\r\nhtml, .wrapper_new #s_tab, #wrapper_wrapper, #rs .new-pmd {\r\n    background-color: #F5F5F6;\r\n}",
+            "value": "/* 浅灰背景 light-gray */\r\nhtml, #wrapper_wrapper, #rs .new-pmd {\r\n    background-color: #F5F5F6;\r\n}",
             "default": true
           },
           {

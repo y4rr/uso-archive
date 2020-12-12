@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         doublehelix
 @description    `A dark green terminal like theme for pi-hole servers`
-@version        2020910.4.1
+@version        2020127.10.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("https?://pi[.-]?hole/admin.*") {
+@-moz-document regexp("https?://pi[.-]?hole(\.[^/]+)?/admin.*") {
 body {
     font-size: 12px;
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Nate-Dogg
 @description    `Not Animated: Meaning the text color while racing does not change. The background is a GIF, but it doesn't change images.`
-@version        20201130.14.35
+@version        2020124.21.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -67,6 +67,10 @@ html {
 }
 .card--shadow-l {
     box-shadow: none;
+}
+.event--holiday .header:before, .event--holiday .header-core::before, .event--holiday .header-core::after 
+{
+    display: none;
 }
 .btn--inky {
     color: #fff;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forums`
-@version        2020121.9.24
+@version        2020127.9.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -77,6 +77,7 @@ section.ed__news__panel {
 .g2__o-scta-ctn {
     border: .125rem solid #edaf00;
     background-color: #030000;
+    display: none!important;
 }
 
 .g2__gka-rslt-nw__goty__frst > figure > figcaption > span {
@@ -1415,5 +1416,16 @@ span.highlighted {
 }
 .gk__close--light {
     color: #edaf00;
+}
+.gk__helpers__p {
+    color: #aeaeae;
+}
+.pegasus_skinMask,
+.OUTBRAIN {
+    display: none!important
+}
+.gk__poool-pw:after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(#111));
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0, #111 100%);
 }
 }

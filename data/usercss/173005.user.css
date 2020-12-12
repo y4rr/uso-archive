@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         天下王
 @description    `瀏覽網頁黑底樣式`
-@version        20201116.3.38
+@version        20201211.6.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,6 +42,8 @@ DIV[id="pilot"] {display: none !important;}
 DIV[class="selectbar"] {display: none !important;}
 /*#####--- 隱藏 網路攻略 net·work·er 右側邊欄 ---#####*/
 DIV[id*="essb_displayed_sidebar_"][class*="essb_links essb_counters essb_displayed_sidebar essb_"] {display: none !important;}
+/*#####--- 隱藏 Mobile 右側方框 ---#####*/
+DIV[class="ad_left_bottom"] {display: none !important;}
 
 
 }

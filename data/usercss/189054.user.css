@@ -2,8 +2,8 @@
 @name           netflix round
 @namespace      USO Archive
 @author         Nick Weaver
-@description    `this taked me 3day to make so leave what you think about it`
-@version        202097.13.35
+@description    `new update width will now adjust to you device`
+@version        2020124.21.29
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -107,11 +107,15 @@ background:transparent!important;
 .main-header.has-billboard.menu-navigation,.pinning-header .main-header.menu-navigation:not(.has-billboard):not(.solid){
 border: solid 0px black!important;
 border-radius:10px!important;
-width:1409px!important;
+max-width:2209px!important;
+min-width:800px!important;
+margin-right:3px!important;
 padding-left:40px!important;
 margin-top:3px!important;
 margin-left:4px!important;
-margin-right:0px!important;
+}
+.main-header.has-billboard.menu-navigation{
+width:auto!important;
 }
 .akira-header .account-dropdown-button .profile-icon, .pinning-header .account-dropdown-button .profile-icon{
 border: solid 0px black!important;

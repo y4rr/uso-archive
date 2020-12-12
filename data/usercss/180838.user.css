@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Тёмная тема для Яндекс.Дзена`
-@version        2020914.14.2
+@version        2020128.21.12
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -268,15 +268,15 @@ a.zen-ui-button._view-type_yellow, button.zen-ui-button._view-type_yellow:not([d
 .article-link {color: #7d9dc7;}
 
 /* Left Article */
-.mittens {background-color: hsl(212,10%,20%);}
+.mittens__mitten {background-color: hsl(212,10%,20%);}
 .ui-lib-mitten__icon {fill: #fff;}
 .ui-lib-mitten._state_active .ui-lib-mitten__icon {fill: #7d9dc7;}
 .mittens__divider {background-color: #222;}
 
-.share-left-block__more, .share-left-block__network {background-color: hsl(40,10%,20%);}
+.share-left-block__background {background-color: hsl(40,10%,20%);}
 .share-left-block__more:hover, .share-left-block__network:hover {background-color: hsl(40,10%,23%);}
 .share-button .zen-icon[style="fill: black;"] {filter: invert(1);}
-.share-left-block__more {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="-7 -12 32 28"><path fill-rule="evenodd" fill="white" d="M2 4a2 2 0 110-4 2 2 0 010 4zm7 0a2 2 0 110-4 2 2 0 010 4zm7 0a2 2 0 110-4 2 2 0 010 4z"/></svg>');}
+.share-left-block__more:after {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="-7 -12 32 28"><path fill-rule="evenodd" fill="white" d="M2 4a2 2 0 110-4 2 2 0 010 4zm7 0a2 2 0 110-4 2 2 0 010 4zm7 0a2 2 0 110-4 2 2 0 010 4z"/></svg>');}
 
 .share-left-block__comments {background-color: hsl(40,10%,20%);}
 .share-left-block__comments:hover {background-color: hsl(40,10%,23%);}
@@ -327,9 +327,10 @@ a.ui-lib-button._is-hovered:before, button.ui-lib-button:not([disabled])._is-hov
 .zen-tag-publishers {color: #7d9dc7;}
 .zen-tag-publishers_type_regular.zen-tag-publishers:hover {color: #90acd0;}
 .zen-tag-publishers:before {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.242v-.484c-2.888-.175-4.522-.553-5.879-1.88C9.795 5.523 9.417 3.889 9.241 1h-.483c-.175 2.888-.553 4.522-1.88 5.879C5.523 8.205 3.889 8.583 1 8.759v.483c2.888.175 4.522.553 5.879 1.88 1.326 1.356 1.704 2.99 1.88 5.878h.483c.175-2.888.553-4.522 1.88-5.879 1.356-1.326 2.99-1.704 5.878-1.88z" fill="%237d9dc7"/></svg>');}
+.theme-tags__more-button {color: #eee;}
 
-.likes-count__avatar {background-color: #222;}
-.likes-count__count {color: #eee;}
+.ui-lib-likes-count__avatar {background-color: #222;}
+.ui-lib-likes-count__count {color: #eee;}
 
 .socials__comments-share-divider {background: rgba(255,255,255,.2);}
 
@@ -361,9 +362,9 @@ textarea::placeholder {color: rgba(255,255,255,.4) !important;}
 .comment-time {color: rgba(255,255,255,.5);}
 .comment-header__info {color: rgba(255,255,255,.5);}
 
-.comment-footer__reply-button {color: rgba(255,255,255,.5); fill: rgba(255,255,255,.5);}
-.comment-footer__reply-button:hover {color: rgba(255,255,255,.7); fill: rgba(255,255,255,.7);}
-.comment-footer__reply-button:active {color: #eee; fill: #eee;}
+.comment-footer__reply-button, .comment-footer__send-message-button {color: rgba(255,255,255,.5); fill: rgba(255,255,255,.5);}
+.comment-footer__reply-button:hover, .comment-footer__send-message-button:hover {color: rgba(255,255,255,.7); fill: rgba(255,255,255,.7);}
+.comment-footer__reply-button:active, .comment-footer__send-message-button:active {color: #eee; fill: #eee;}
 .comment-like__button {color: rgba(255,255,255,.4); fill: rgba(255,255,255,.4);}
 .comment-like__button:hover {color: rgba(255,255,255,.7); fill: rgba(255,255,255,.7);}
 .comment-like__button._active._new .comment-like__icon {fill: #7cb73c;}

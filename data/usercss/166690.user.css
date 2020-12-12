@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `GYAO! 動画をフル画面表示させます。 このスタイルは、Chrome版または Firefox版の「Stylus」で使用出来ます。 また、他の拡張機能上でも利用できる可能性があります。◎ サイト側のシステム変更などで動画の全画面表示ができない仕様になった場合でも、強制的に全画面表示に出来ます。 動画プレーヤーの全画面ボタンの操作が不要で、ブラウザの「F11」ボタンを使用して「全画面表示」「通常表示」を切り換えます。◎ ブラウザウインドウ幅を 1200px未満にすると「通常表示」になります。 動画の選択や動画データの閲覧は、この状態で行います。◎ ブラウザウインドウ幅を 1200px以上でウインドウ全体がプレイヤーになります。 好みのサイズで動画表示が可能で、更に「F11」でモニター全域を使った全画面表示になります。◎ 切り換わる仕切り幅の 1200pxは、オプション選択で 1024px に変更が可能です。このスタイルの詳細は、以下のリンク先を参照ください。　　https://ameblo.jp/personwritep/entry-12424796231.html`
-@version        2020327.15.30
+@version        20201210.9.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://gyao.yahoo.co.jp") {
-/* GYAO動画のフル画面表示 ver. 2020.03.27 **************************/
+/* GYAO動画のフル画面表示 ver. 2020.12.10 **************************/
 /**/
 /* GYAO 全ページ共通のスタイル ***********************************/
 /* 基本配色 */
@@ -63,16 +63,9 @@ body {
     color: #000; }
 
 /* 横スライド枠 ボタンデザイン =全ページ共通= */
-.button-arrow {
-    outline: none;
-    box-shadow: 0 0 0 4px #fff; }
-
-.item-carousel .button-arrow.dir-right {
-    right: 20px; }
-
-.button-arrow .button-arrow-content {
-    width: 36px;
-    height: 36px; }
+.arrow-button_arrowButton__ya44G,
+.arrow-button_arrowButton__ya44G:focus {
+   box-shadow: 0 0 0 4px #fff; }
 
 /* 動画一覧アイテム 説明 =全ページ共通= */
 .item-carousel .item-carousel-item-details {

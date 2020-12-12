@@ -1,0 +1,344 @@
+/* ==UserStyle==
+@name           Старый Дизайн ВКонтакте 2016 | Актуально в 2020
+@namespace      USO Archive
+@author         AshDefenders
+@description    `Стиль возращает старый дизайн ВКонтакте который был до редизайна в 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.dom/defenders08 или в тг @defenders08k1`
+@version        20201211.11.34
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("vk.com") {
+body {
+    font-family: var(--palette-vk-font),"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai";
+}
+
+[dir] body.new_header_design #page_header_cont {
+    background-color: var(--blue_420);
+    border-bottom: 1px solid var(--blue_420);
+}
+[dir=ltr] #page_header_wrap {
+    background-color: var(--blue_420);
+    border-bottom: 1px solid var(--blue_420);
+}
+
+[dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
+    background-image: url(http://svgur.com/i/QQF.svg);
+    background-size: 32px;
+    margin-top: 7px;
+}
+body.new_header_design .top_home_link .top_home_logo, body.new_header_design.WideScreenAppPage .top_home_link .top_home_logo {
+    width: 34px;
+    height: 19px;
+}
+body.new_header_design {
+    --header-height: 42px;
+    --left-menu-row-height: 32px;
+}
+[dir] body.new_header_design .TopSearch__input {
+    background-color: var(--blue_640);
+    border-radius: 14px;
+    background-image: url(https://vk.com/images/svg_icons/ic_head_loupe.svg);
+    height: 28px;
+    width: 230px;
+    padding: 6px 6px 6px 19px;
+    font-size: 13px;
+    color: #2a5885 /* qualified */ !important;
+}
+[dir] body.new_header_design .TopSearch__input #text{
+    font-size: 13px;
+    color: #2a5885 /* qualified */ !important;
+}
+[dir] body.new_header_design .TopSearch__input:focus {
+    background-color: #fff;
+    padding: 6px 6px 6px 33px;
+    font-size: 13px;
+}[dir] body.new_header_design .TopSearch__input {
+    background-color: var(--blue_640);
+    border-radius: 14px;
+    background-image: url(https://vk.com/images/svg_icons/ic_head_loupe.svg);
+    height: 28px;
+    width: 230px;
+    padding: 6px 6px 6px 19px;
+    font-size: 13px;
+    color: #2a5885;
+}
+[dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon {
+    background-image: url(https://svgshare.com/i/QP0.svg);
+    width: 20px;
+    height: 20px;
+    color: #1e3c5f;
+}
+[dir] body.new_header_design .top_notify_count {
+    background-color: var(--orange_prominent);
+    height: 10px;
+}
+[dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon svg{
+    color: #1e3c5f;
+}
+[dir] body.new_header_design .top_nav_btn#top_notify_btn:hover {
+        background-color: var(--blue_980_alpha12);
+}
+[dir] body.new_header_design .top_nav_btn#top_notify_btn.active {
+        background-color: var(--blue_600);
+}
+[dir] body.new_header_design .top_nav_btn .top_notify_count {
+    border: #4a76a8;
+}
+[dir] body.new_header_design .top_nav_btn .top_notify_count:hover {
+    border: #4a76a8;
+}
+body.new_header_design .top_nav_btn {
+    width: 46px;
+}
+[dir] body.new_header_design .top_nav_btn#top_audio .top_nav_btn_icon {
+    background-image: url(http://svgur.com/i/SEo.svg);
+}
+[dir] body.new_header_design .top_nav_btn.active {
+    background-color: #2a588561;
+}
+body.new_header_design .top_audio_player_title {
+    color: var(--light_blue_100);
+    line-height: 24px;
+    font-size: 13px;
+    position: initial;
+    padding-top: 1px;
+}
+body.new_header_design .top_audio_player_title:hover {
+    color: var(--light_blue_100);
+}
+body.new_header_design .top_audio_player:hover .top_audio_player_title {
+    color: var(--light_blue_100);
+}
+[dir] body.new_header_design .top_audio_player:hover {
+        background-color: var(--blue_980_alpha12);
+}
+[dir] body.new_header_design .top_audio_player {
+    width: 300px;
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon {
+    background-image: url(http://svgur.com/i/QYS.svg);
+}
+[dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22m13%2012.625v3.8653505c0%20.2819967.2259549.5096495.5046844.5096495h.9906312c.2906494%200%20.5046844-.2281779.5046844-.5096495v-8.98070098c0-.28199673-.2259549-.50964952-.5046844-.50964952h-.9906312c-.2906494%200-.5046844.22817786-.5046844.50964952v3.86535048l-6.56988525-4.10617828c-.23754582-.14846614-.43011475-.04116893-.43011475.2408278v8.98070098c0%20.2814716.19775391.3860533.43011475.2408278z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+[dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon {
+    background-image: url(http://svgur.com/i/QQy.svg);
+}
+[dir] body.new_header_design .top_audio_player_playing .top_audio_player_play .top_audio_player_btn_icon {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20opacity%3D%22.2%22%2F%3E%3Cpath%20d%3D%22m7%204.7081449c0-.39109763.31387329-.7081449.69674683-.7081449h2.60650637c.3848026%200%20.6967468.30533409.6967468.7081449v14.5837102c0%20.3910976-.3138733.7081449-.6967468.7081449h-2.60650637c-.38480265%200-.69674683-.3053341-.69674683-.7081449zm6%200c0-.39109763.3138733-.7081449.6967468-.7081449h2.6065064c.3848026%200%20.6967468.30533409.6967468.7081449v14.5837102c0%20.3910976-.3138733.7081449-.6967468.7081449h-2.6065064c-.3848026%200-.6967468-.3053341-.6967468-.7081449z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+[dir=ltr] body.new_header_design .top_audio_player>button:not(:last-child), [dir=ltr] body.new_header_design .top_audio_player>div:not(:last-child) {
+    margin: 0px;
+}
+body.new_header_design .top_audio_player {
+    gap: 0px;
+}
+body.new_header_design .top_nav_link {
+    color: #fff;
+    padding-top: 1px;
+    font-size: 13px;
+}
+body.new_header_design .top_profile_img {
+    height: 28px;
+    width: 28px;
+}
+body.new_header_design .top_nav_link.top_profile_link.active {
+        background-color: var(--blue_600);
+}
+body.new_header_design .top_nav_link.top_profile_link:hover {
+    background-color: var(--blue_980_alpha12);
+}
+
+
+[dir] body.new_header_design #side_bar #l_pr .left_icon {
+        background: url(https://i.imgur.com/VmF1YJT.png) no-repeat;
+    background-position: center;
+    margin-left: 1px;
+    
+}
+[dir] body.new_header_design #side_bar #l_nwsf .left_icon {
+    background-image: url(https://i.imgur.com/6RYj9MG.png);
+    height: 14px;
+    background-position: center;
+    margin-left: -1px;
+}
+[dir] body.new_header_design #side_bar #l_msg .left_icon {
+    background-image: url(https://i.imgur.com/tT2HtaX.png);
+    height: 12px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_fr .left_icon {
+    background-image: url(https://i.imgur.com/y0r0w4T.png);
+    height: 13px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_gr .left_icon, [dir] body.new_header_design #side_bar .l_comm .left_icon {
+    background-image: url(https://i.imgur.com/dmDyd5n.png);
+    height: 11px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_ph .left_icon {
+    background-image: url(https://i.imgur.com/kYwQCgi.png);
+    height: 13px;
+    background-position: center;
+    }
+[dir] body.new_header_design #side_bar #l_aud .left_icon {
+    background-image: url(https://i.imgur.com/qSyj9ND.png);
+    height: 16px;
+    background-position: center;
+    margin-left: -1px;
+}
+[dir] body.new_header_design #side_bar #l_vid .left_icon {
+    background-image: url(https://i.imgur.com/P0Fy0pR.png);
+    height: 14px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar .genre10 .left_icon, [dir] body.new_header_design #side_bar #l_ap .left_icon {
+    background-image: url(https://i.imgur.com/JvkCkCR.png);
+    height: 11px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_mk .left_icon {
+    background-image: url(https://i.imgur.com/Gf5CdtQ.png);
+    height: 15px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_fav .left_icon {
+    background-image: url(https://i.imgur.com/qX7Lpa7.png);
+    height: 13px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_doc .left_icon {
+    background-image: url(https://i.imgur.com/rOV0bpk.png);
+    height: 14px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar .left_icon, [dir] body.new_header_design #l_frb_rgstr .left_icon {
+    background-image: url(https://i.imgur.com/o1RNyfP.png);
+    height: 15px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_svd .left_icon {
+    background-image: url(http://svgur.com/i/QS3.svg);
+    height: 16px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_vkp .left_icon {
+    background-image: url(https://i.imgur.com/QLrIKPG.png);
+    height: 16px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_job .left_icon {
+    background-image: url(https://i.imgur.com/qtCqxnX.png);
+    height: 13px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_fortune .left_icon {
+    background-image: url(http://svgur.com/i/QTT.svg);
+    height: 16px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_ads .left_icon {
+    background-image: url(https://i.imgur.com/keVvCFe.png);
+    height: 13px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar #l_covid19 .left_icon {
+    background-image: url(http://svgur.com/i/QSD.svg);
+    height: 16px;
+    background-position: center;
+}
+[dir] body.new_header_design #side_bar ol li .left_row {
+    border-radius: 2px;
+    padding: 0 6px;
+    height: 28px;
+    width: 145px;
+}
+[dir] body.new_header_design #side_bar .genre10 .left_icon, [dir] body.new_header_design #side_bar .genre11 .left_icon, [dir] body.new_header_design #side_bar .genre12 .left_icon, [dir] body.new_header_design #side_bar .genre14 .left_icon, [dir] body.new_header_design #side_bar .genre15 .left_icon, [dir] body.new_header_design #side_bar .genre16 .left_icon, [dir] body.new_header_design #side_bar .genre17 .left_icon, [dir] body.new_header_design #side_bar .genre18 .left_icon, [dir] body.new_header_design #side_bar .genre19 .left_icon, [dir] body.new_header_design #side_bar .genre20 .left_icon, [dir] body.new_header_design #side_bar .genre21 .left_icon, [dir] body.new_header_design #side_bar .genre22 .left_icon, [dir] body.new_header_design #side_bar .genre23 .left_icon, [dir] body.new_header_design #side_bar #l_ap .left_icon {
+    background-image: url(https://i.imgur.com/JvkCkCR.png);
+    height: 11px;
+}
+[dir] body.new_header_design #side_bar #l_apm .left_icon, [dir] body.new_header_design #side_bar #l_mini_apps .left_icon {
+    background-image: url(https://i.imgur.com/mEmRJy7.png);
+    height: 15px;
+}
+body.new_header_design #side_bar .left_label {
+    color: #2a5885;
+    font-size: 12.5px;
+    margin-left: -1px;
+}
+[dir] body.new_header_design #side_bar .left_icon {
+    margin-bottom: 2px;
+}
+body.new_header_design .side_bar_inner {
+    width: 164px;
+    margin-left: -2px;
+}
+[dir] body.new_header_design #side_bar .left_count_wrap .left_count {
+    padding: 1.5px 7px;
+    color: var(--steel_gray_A540);
+}
+[dir] body.new_header_design .left_count_wrap {
+    border-radius: 2px;
+    background-color: #d3d9de;
+    padding: 0;
+}
+[dir] .post_settings .checkbox_pic {
+    background: url(https://i.imgur.com/tgJ01hb.png) center no-repeat;
+}
+[dir] .media_selector .ms_item.ms_item_photo:before {
+    background-image: url(https://i.imgur.com/kYwQCgi.png);
+}
+[dir] .media_selector .ms_item.ms_item_video:before {
+    background-image: url(https://i.imgur.com/P0Fy0pR.png);
+}
+[dir] .media_selector .ms_item.ms_item_audio:before {
+    background-image: url(https://i.imgur.com/qSyj9ND.png);
+}
+[dir] .media_selector .ms_item.ms_item_doc:before {
+    background-image: url(https://i.imgur.com/rOV0bpk.png);
+}
+[dir] .media_selector .ms_item.ms_item_map:before {
+    background-image: url(https://i.imgur.com/uwo8KO5.png);
+}
+[dir] .media_selector .ms_item.ms_item_poll:before {
+    background-image: url(https://i.imgur.com/dZT8eRJ.png);
+}
+[dir] .media_selector .ms_item.ms_item_market:before {
+    background-image: url(https://i.imgur.com/Gf5CdtQ.png);
+}
+[dir] .media_selector .ms_item.ms_item_graffiti:before {
+    background-image: url(https://i.imgur.com/1y3QEiY.png);
+}
+[dir] .media_selector .ms_item.ms_item_money:before {
+    background-image: url(https://i.imgur.com/QLrIKPG.png);
+}
+body.new_header_design .audio_page_player2.audio_page_player_fixed {
+    top: 0px;
+}
+[dir] .im-action_media::before {
+    background-image: url(https://i.imgur.com/p3GfsxI.png);
+}
+[dir] .im-action_search::before {
+    background-image: url(https://i.imgur.com/dtyKhKw.png);
+}
+[dir] .im-action_unread::before {
+    background-image: url(https://i.imgur.com/cwAqY7Q.png);
+}
+[dir] .im-action_unmute::before {
+    background-image: url(https://i.imgur.com/PETqC6t.png);
+}
+[dir] .im-action_pin_hide::before {
+    background-image: url(https://i.imgur.com/SWb7yau.png);
+}
+
+[dir] .im-action_clear::before {
+    background-image: url(https://i.imgur.com/GLLI58H.png);
+}
+[dir] .im-action_leave::before {
+    background-image: url(https://i.imgur.com/kuGUGq1.png);
+}
+[dir] .im-page--redesigned-menu .ui_actions_menu_sep {
+    margin: 4px 4px;
+}
+}

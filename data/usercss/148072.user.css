@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mjbaldwin
 @description    `Remove the floating buttons that pollute Google Docs' simple interface:- Hide the circular comment buttons that hover over the right-hand margin- Hide the "Explore" call-to-action in the bottom-right hand corner- Hide the lower-right button to show Companion (if you've hidden Companion and want to re-show it, disable Stylus temporarily to access the button)- Hide the "Outline" button in top left corner- No more floating message to press Esc to leave full screen, every time you enter full screen`
-@version        2020716.18.5
+@version        2020125.17.46
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,9 +14,10 @@
 }
 
 /* Hide the annoying comments buttons */
-#docs-instant-button-bubble {
+#docs-instant-button-bubble, #docs-instant-bubble {
     display: none;
 }
+
 
 /* Need both these -- one for print layout, the other for not */
 .kix-page-paginated,

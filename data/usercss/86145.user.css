@@ -2,8 +2,8 @@
 @name           crayon for mal
 @namespace      USO Archive
 @author         pajamapop
-@description    `Comes in various parts! An extra <i>is</i> necessary for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. <a href="https://userstyles.org/styles/169748/">Easily changeable background</a>, <a href="https://userstyles.org/styles/119959/">lowercase text</a>, et cetera.</a><b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201129.8.13
+@description    `Comes in various parts! An extra is <i>only sorta</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
+@version        2020128.23.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,7 +21,6 @@ body {
     margin: 0 !important;
     font-size: 13px !important;
     font-family: Segoe UI !important;
-    text-transform: lowercase !important;
     background-color: rgba(var(--colorLightGray)) !important;
     background-image: url(http://static.colourlovers.com/images/patterns/3518/3518772.png) !important;
     background-size: auto !important;
@@ -31,6 +30,13 @@ body {
 @keyframes pattern {
     from{background-position: 0 0;}
     to{background-position: var(--size);}}
+
+/* Animated pattern */
+body {background-attachment: fixed !important;}
+:root {
+    --size: 200px 200px;
+    --speed: 25s;
+}
 
 /* Colours */
 :root {
@@ -65,7 +71,6 @@ body {
 
 a img:hover {opacity: 0.8 !important;}
 a img:active {opacity: 1 !important;}
-img, .image {image-rendering:-webkit-optimize-contrast !important;} /* Undo blurry/smoothed images in Chrome */
 a, a:visited {color: rgba(var(--colorTextLink)) !important;text-decoration: none !important;font-style: italic !important;}
 a:hover, a > span[style^="color:"]:hover {color: rgba(var(--colorBlue)) !important;transition: 0.2s;}
 .link1 {color: #818081;} /* ??? */
@@ -261,7 +266,7 @@ td[width="225"] + td .js-scrollfix-bottom-rel #horiznav_nav + div + h2 {margin-t
 .header-notification-button.new .fa, .header-message-button.has-unread .fa {color: white !important;}
 
 /* Lists (Dropdown) */
-.header-list {top: 77px !important;left: 546px !important;}
+.header-list {top: 77px !important;left: 552px !important;}
 .header-list-button {display: none !important;}
 .header-list .header-list-dropdown {
     background: none !important; display: block !important;
@@ -431,7 +436,7 @@ form[id^="searchBar"] select[id^="topSearchValue"] {
     margin: -3px 0 0 -2px !important; border: none !important;
     height: 23px !important; width: 100px !important;
     font-size: 13px !important; font-weight: bold;
-    text-transform: lowercase; box-shadow: none !important; }
+    box-shadow: none !important; }
 form[id^="searchBar"] option {background: rgba(var(--colorLessDark)) !important;text-align: center !important;}
 
 #topSearchText, #topSearchTextPc {
@@ -569,6 +574,7 @@ body.notification .notification-section:last-child {margin-bottom: 2px !importan
 
 #horiznav_nav ul li a {margin-right: 3px !important;}
 .btn-seasonal .btn-type {margin-right: 6px !important;}
+.btn-seasonal .btn-type.on {margin-top: 1px !important;}
 
 /* Spacing fixes */
 #horiznav_nav ul li:nth-child(4) a[href$="/reviews"] {margin: 0 2px 0 1px !important;} /* Ep + Reviews */
@@ -1159,7 +1165,7 @@ div[style="width:60%;float:left"] > form + div[style|="width:35%;float:right"] {
     width: 20.6% !important; }
 
 /* Make a Rec, Profile rec total, Write a review, Quick add, Total Messages, Search All 'Jump To' */
-form a[onclick*="addRec"], #horiznav_nav + div[style$="8px;"] > .spaceit.borderClass:first-child,
+form a[onclick*="addRec"], .container-right #horiznav_nav + div > .pt4 .spaceit,
 div[style$="9px 0px;"] > a[href*="&go=write"], div[style$="5px 0px;"] > a[href*="&go=write"],
 #pollView.spaceit a, div.picSurround + div > a[href$="/pics"],
 td[valign="top"][style="padding-left: 5px;"] div + a[href$="?go=favorites"],
@@ -1172,6 +1178,7 @@ td[valign="top"][width="50%"][class="borderClass"] div > a[href$="?go=favorites"
     display: block !important;
     border-radius: 3px;
     text-align: center;
+    letter-spacing: 1px;
     font-size: 10px !important; }
 
 div.picSurround + div > a[href$="/pics"] {margin-top: 3px;} /* All reviews 'more pics' */
@@ -1299,7 +1306,7 @@ div[id*="simaid"] div[class*="bgColor"] .spaceit_pad:nth-child(2),
 div.spaceit.borderClass div.lightLink.spaceit,
 .borderDark > table + .borderClass .spaceit_pad:nth-child(2) {
     background: rgba(var(--colorBlue)); color: white !important;
-    font-size: 10px; text-transform: lowercase;
+    font-size: 10px;
     box-shadow: 0 0 2px #bcbcbc;
     border-bottom: 2px solid white; border-radius: 3px;
     padding: 4px 7px 5px !important; margin: 2px 0 !important; }
@@ -1453,9 +1460,10 @@ a[href*="true&detailedaid="] > small:hover, a[href*="true&detailedmid="] > small
     position: relative;
     float: right !important;
     top: -43px !important;
-    right: 95px !important;
+    right: 98px !important;
     color: rgba(var(--colorLessDarkText)) !important; }
-.container-right > div.mt8.mb24 {top: -29px !important;right: 105px !important;margin: 0 !important;} /* Forum index */
+.clearfix.mt4 > div.fl-r.ar > p:first-of-type, #content a[name="top"] + div.fl-r.ar > p:first-of-type {padding-right: 3px !important;}
+.container-right > div.mt8.mb24 {top: -29px !important;right: 108px !important;margin: 0 !important;} /* Forum index */
 .clearfix.mt4 > div.fl-r.ar a, #content a[name="top"] + div.fl-r.ar a, a.btn-rect-grey1 {font-style: normal !important;}
 .clearfix.mt4 > div.fl-r.ar a:hover, #content a[name="top"] + div.fl-r.ar a:hover, a.btn-rect-grey1:hover {color: rgba(var(--colorLessDarkTextAlt)) !important;}
 .clearfix.mt4.after {display: none !important;}
@@ -1658,12 +1666,11 @@ div.forum_category {padding-top: 2px !important;height: 36px !important;}
 form div.forum_category {margin-top: 0 !important;}
 a[class="postnum"] {color: white !important;}
 
-/* Profile Recs */
-div.spaceit.borderClass > table + p {
-    font-size: 11px !important;
-    text-transform: none !important;
-    margin-bottom: 5px !important;
-    margin-top: 5px !important; }
+/* User recommendations (Rec page and Profile page) */
+.recommendations-user-recs-text, .profile-user-recs-text {
+    margin: 5px 8px 10px !important;
+    padding: 0 !important;
+    text-align: justify; }
 
 /* Com-to-com */
 #content > .borderClass[style="text-align: right; margin-bottom: 5px; height: 16px;"],
@@ -1890,12 +1897,12 @@ div[class*="-search-form-search"] .inputButton {
 /* Advanced edit button (Edit entry page) */
 #advanced-button .toggle-button {
     background: rgba(var(--colorButton)) !important; color: rgba(var(--colorButtonText)) !important;
-    height: 24px !important; width: 50px !important;
+    height: 24px !important; width: 51px !important;
     line-height: 22px !important; top: 3px;
     box-shadow: var(--colorLightShadow);
     border-radius: 3px; text-indent: -9000px; }
-#advanced-button .toggle-button .fa {text-indent: 8910px;}
-#advanced-button > div:nth-child(2) .fa {text-indent: 8915px;}
+#advanced-button .toggle-button .fa {text-indent: 8909px;}
+#advanced-button > div:nth-child(2) .fa {text-indent: 8913px;}
 #advanced-button .separator {border-bottom: 2px solid #e0dee0 !important;border-radius: 4px;}
 
 /* Notification Settings */
@@ -2019,9 +2026,8 @@ td[valign="top"] + td[valign="top"] > div + .borderClass.bgColor1, div[id*="sima
 td[width="55"][valign="top"] + td > p {text-transform: none;margin-bottom: 5px !important;}
 
 /* Fixes synopsis header, left frame, voice actors (from justify modification) */
-tr:first-child > td[valign="top"]:first-child h2 {text-transform: lowercase;}
-tr:first-child > td[valign="top"][width="225"]:first-child {text-align: left;text-transform: lowercase;}
-tr:first-child > td[valign="top"][align="right"]:first-child {text-align: right;text-transform: lowercase;}
+tr:first-child > td[valign="top"][width="225"]:first-child {text-align: left;}
+tr:first-child > td[valign="top"][align="right"]:first-child {text-align: right;}
 
 /* Voice actors */
 tr td[align="right"][valign="top"][class="borderClass bgColor1"] {border-radius: 0 3px 3px 0;}
@@ -2171,7 +2177,7 @@ div[id^="revArea"] + div[style="float: left;"] {height: 0 !important;} /* Profil
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div /* Profile */ {
     top: -92px; left: 389px; letter-spacing: 1px;
     min-width: 158px !important; max-width: 158px !important; }
-.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 389px;}
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 369px;}
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div {top: -98px;left: 413px;} /* Profile */
 
 /* User image */
@@ -2732,8 +2738,6 @@ td[width="48%"] {padding-right: 6px !important;} /* Group page */
 
 @-moz-document url-prefix("https://myanimelist.net/character"), url-prefix("https://myanimelist.net/people") {
 /* Character description */
-td[style^="pad"] {text-transform: none;}
-td[style^="pad"] small {text-transform: lowercase;}
 tr td:first-child.borderClass[width="225"] + td[style^="padding"] {text-align: justify;}
 
 /* Staff (Director, Storyboard, etc.) */
@@ -2741,11 +2745,6 @@ td[valign="top"][style="padding-left: 5px;"] > .normal_header + table[width="100
 td[valign="top"][style="padding-left: 5px;"] > .normal_header + table[width="100%"] a + .spaceit_pad + .spaceit_pad,
 td[valign="top"][style="padding-left: 5px;"] > .normal_header + table[width="100%"] a + .spaceit_pad + .spaceit_pad + .spaceit_pad
     {font-size: 10px !important;}
-
-/* Undo text transform */
-td[style^="pad"] #horiznav_nav, td[style^="pad"] .normal_header, td[style^="pad"] div .normal_header,
-td[style^="pad"] table, td[style^="pad"] h2, td[style^="pad"] a, td[style^="pad"] .spaceit
-	{text-transform: lowercase;}
 
 /* People comments */
 a[name*="com"] + table[width="100%"] + br {display: none !important;}
@@ -3650,7 +3649,7 @@ h4.icon-rss::after {
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important;
     padding: 7px 8px 8px !important; letter-spacing: 0 !important;
     font-style: italic !important; font-size: 13px !important;
-    width: 31px !important; height: 17px !important; line-height: 17px !important;
+    width: 33px !important; height: 17px !important; line-height: 17px !important;
     position: absolute !important; top: 20px !important; left: 280px !important;
     z-index: 100 !important; }
 h4.icon-rss::after {content: "Home  " !important;color: white !important;}
@@ -3658,7 +3657,7 @@ h4.icon-rss::after {content: "Home  " !important;color: white !important;}
 /* History */
 .user-status li.icon-history.link {
     background: none !important; z-index: 100 !important;
-    position: absolute !important; top: 16px; left: 329px;
+    position: absolute !important; top: 16px; left: 331px;
     width: auto !important; }
 .user-status li.icon-history.link span[class$="w100"] {width: auto !important;}
 .user-status li.icon-history.link span {color: rgba(var(--colorButtonText)) !important;font-weight: normal !important;}
@@ -3666,28 +3665,28 @@ h4.icon-rss::after {content: "Home  " !important;color: white !important;}
 /* Reviews */
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {
     background: none !important; z-index: 100 !important;
-    position: absolute !important; top: 11px; left: 387px; }
+    position: absolute !important; top: 11px; left: 391px; }
 .user-status.border-top.mt12.mb12 a[href$="/reviews"] {width: 0 !important;}
 .user-status.border-top.mt12.mb12 a[href$="/reviews"] span + span {display: none !important;}
 
 /* Recommendations */
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {
     background: none !important; z-index: 100 !important;
-    position: absolute !important; top: 11px; left: 448px; }
+    position: absolute !important; top: 11px; left: 455px; }
 .user-status.border-top.mt12.mb12 a[href$="/recommendations"] {width: 0 !important;}
 .user-status.border-top.mt12.mb12 a[href$="/recommendations"] span + span {display: none !important;}
 
 /* Clubs */
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {
     background: none !important; z-index: 100 !important;
-    position: absolute !important; top: 11px; left: 569px; }
+    position: absolute !important; top: 11px; left: 579px; }
 .user-status.border-top.mt12.mb12 a[href$="/clubs"] {width: 0 !important;}
 .user-status.border-top.mt12.mb12 a[href$="/clubs"] span + span {display: none !important;}
 
 /* Friends */
 h4 > a[href$="/friends"] {
     color: transparent !important; letter-spacing: 0 !important;
-    position: absolute !important; top: 1px; left: 338px;
+    position: absolute !important; top: 1px; left: 351px;
     width: 37px; height: 17px; z-index: 100 !important;
     overflow: hidden; white-space: nowrap; }
 h4 > a.fl-r.fs11.fw-n.ff-Verdana {font-size: 13px !important;}
@@ -4304,7 +4303,7 @@ div.fl-l > .breadcrumb {position: relative;top: 14px !important;padding-bottom: 
 .pt4, .pt8 {padding: 0 !important;}
 
 /* Post New Reply, Create New Topic, Ignore Board (Buttons), Post 'Top' */
-.mt4.mb4.pl0.pb0.pt4.pb4 {padding: 10px 0 21px 7px !important;}
+.mt4.mb4.pl0.pb0.pt4.pb4 {padding: 6px 0 21px 7px !important;}
 .fl-l.pb8 {padding: 4px 0 23px 7px !important;}
 #iBoardId a[onclick*="ignoreBoard"] {margin-left: 5px !important;}
 a#showQuickReply + a[href="#top"] {margin-left: -2px !important;}
@@ -4315,7 +4314,7 @@ h1 > div[style="float: right; font-weight: normal;"],
 
 /* 'Episode information' + 'Back to Club' */
 .header-right.divider {
-    position: relative; left: -243px;
+    position: relative; left: -252px;
     font-size: 13px; font-weight: bold;
     font-style: normal !important;
     border: none !important; }
@@ -4341,8 +4340,14 @@ div.fl-l > .breadcrumb {top: 18px !important;}
 .anime-header {
     background: rgba(var(--colorBlue)) !important; color: white; font-size: 15px !important;
     line-height: 35px !important; height: 35px !important;
-    border-radius: 5px; padding: 0 !important;
-    border: none !important; }
+    margin: 0 10px 25px !important; padding: 0 !important;
+    border-radius: 5px; border: none !important; }
+
+.anime-header:after {
+    content: ""; display: block;
+    background: linear-gradient(to right, rgba(var(--colorBlue)), rgba(var(--colorLightBlue)));
+    margin: 5px 2.5px; padding: 5px;
+    border-radius: 3px; }
 
 .seasonal-anime .title, .seasonal-anime, .anime-header,
 .season .anime-seasonal-byseason td,
@@ -4378,6 +4383,7 @@ a.navtab {border: none !important;}
     border-top: 22px solid rgba(var(--colorText));
     height: 92px; padding-top: 10px;
     border-bottom: 2px solid #e0dee0; }
+.navi-seasonal.fixed:after {display: none !important;} /* Remove white fade */
 .horiznav-nav-seasonal {border: none !important;padding: 0 10px 3px !important;}
 .btn-show-r18, .btn-show-kids, .btn-show-sort {
     position: relative;
@@ -4457,8 +4463,8 @@ select#filterByType.inputtext.mr4 + input[name="year"] {height: 18px !important;
 .seasonal-anime .button_add, .seasonal-anime .button_edit,
 .watch-anime .button_add, .watch-anime .button_edit {
     background: rgba(231,231,231,0.75) !important; color: rgba(var(--colorButtonDarkText)) !important;
-    float: none !important; text-indent: -9999px; display: inline-block !important;
-    position: relative !important; top: 254px !important; left: -9px !important; z-index: 100 !important;
+    float: none !important; text-indent: -9999px; display: inline-block !important; z-index: 100 !important;
+    position: relative !important; top: 254px !important; left: -9px !important;
     margin: 3px !important; padding: 18px 167px !important;
     box-shadow: none !important; transition: 0s !important;
     border: none !important; border-radius: 0 !important; }
@@ -4466,32 +4472,32 @@ select#filterByType.inputtext.mr4 + input[name="year"] {height: 18px !important;
 .seasonal-anime-list .seasonal-anime .prodsrc .btn-anime-watch-status:after {display: none !important;} /* Hide custom button titles (Now, Done, etc) */
 .seasonal-anime .button_add:hover, .seasonal-anime .button_edit:hover,
 .watch-anime .button_add:hover, .watch-anime .button_edit:hover {opacity: 1 !important;box-shadow: none !important;}
-.seasonal-anime .button_edit.plantowatch, .seasonal-anime .button_edit.plantoread {background: rgba(134,120,199,0.75) !important;} /* Purple */
-.seasonal-anime .button_edit.dropped {background: rgba(var(--colorPink),0.75) !important;} /* Pink */
-.seasonal-anime .button_edit.completed {background: rgba(var(--colorBlue),0.75) !important;} /* Blue */
-.seasonal-anime .button_edit.on-hold {background: rgba(var(--colorOrange),0.75) !important;} /* Orange */
-.seasonal-anime .button_edit.watching {background: rgba(var(--colorGreen),0.75) !important;} /* Green */
+.seasonal-anime .button_edit.plantowatch, .seasonal-anime .button_edit.plantoread {background: rgba(var(--colorPurple),.75) !important;} /* Purple */
+.seasonal-anime .button_edit.dropped {background: rgba(var(--colorPink),.75) !important;} /* Pink */
+.seasonal-anime .button_edit.completed {background: rgba(var(--colorBlue),.75) !important;} /* Blue */
+.seasonal-anime .button_edit.on-hold {background: rgba(var(--colorOrange),.75) !important;} /* Orange */
+.seasonal-anime .button_edit.watching {background: rgba(var(--colorGreen),.75) !important;} /* Green */
 .watch-anime .prodsrc .btn-anime-watch-status {margin-top: 3px !important;}
 
-/* Showing */
+/* 'Showing: 134/183' */
 .horiznav-nav-seasonal + .fs11.ar.fn-grey2.pt8.pr4 {
     background: rgba(var(--colorGreen)); color: white !important;
-    border-radius: 3px; padding: 5px !important;
-    display: block; float: right;
-    font-size: 10px !important;
-    letter-spacing: 1px;
-    position: relative; top: -32px; left: -260px; }
+    border-radius: 3px; padding: 5px !important; display: block;
+    font-size: 10px !important; letter-spacing: 1px;
+    position: absolute; top: 60px; right: 270px; }
 
 /* Preview video */
 .seasonal-anime .title .icon-watch-pv {
     background: rgba(var(--colorBlue)) !important; margin: 0 !important;
     border-radius: 10px 10px 0 0; opacity: 0 !important;
     height: 5px !important; width: 100% !important;
-    position: absolute !important; top: 0 !important; }
+    position: absolute !important; top: 0 !important; left: 0 !important; }
 .seasonal-anime .title:hover .icon-watch-pv {opacity: 1 !important;}
 
 /* Junk */
-.di-ib.mr4, .member::after, .score::after, .seasonal-anime .title .icon-watch, .icon-add-episode, .seasonal-anime + article {display: none !important;}
+.di-ib.mr4, .member::after, .score::after, .seasonal-anime .title .icon-watch,
+.icon-add-episode, .seasonal-anime + article, .seasonal-anime-list + article
+    {display: none !important;}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/news") {
@@ -4597,7 +4603,7 @@ body.news .news-side-block {padding-top: 7px !important;}
 
 body.news h2 {margin: 4px 3px 5px 0 !important;} /* "Related News" 3px fix */
 
-.news-container .title {margin: 6px 0 16px !important;padding: 3px 0 0 !important;text-transform: lowercase !important;}
+.news-container .title {margin: 6px 0 16px !important;padding: 3px 0 0 !important;}
 .news-container .title a {
     font-style: normal !important; font-weight: normal !important;
     font-size: 15px !important; letter-spacing: 2px;
@@ -4712,8 +4718,8 @@ a, .featured-side-block .header, .featured-list, .name, .header, .news-container
     font-style: normal !important; font-weight: normal !important;
     font-size: 15px !important; letter-spacing: 2px;
     height: 12px !important; line-height: 12px !important;
-    padding-top: 11px !important; text-transform: lowercase !important;
-    position: relative; top: 3px !important; margin: 0 0 17px !important; }
+    padding-top: 11px !important; margin: 0 0 17px !important;
+    position: relative; top: 3px !important; }
 
 /* Multiline headers */
 .featured-article-body h2, .featured-article-body h2 a {
@@ -4874,14 +4880,6 @@ div[style="width: 550px;"] .userimg {max-width: 465px;}
 #content .goodresult + .clearfix.mt4 > div.fl-r {top: -89px !important;} /* Links */
 }
 
-@-moz-document url-prefix("https://myanimelist.net/recommendations") {
-/* Recs, Reviews (undo lowercase) */
-div.spaceit.borderClass div.spaceit:first-of-type, .borderDark > table + .borderClass .spaceit_pad:nth-child(1) {
-    text-align: justify;
-    font-size: 11px !important;
-    text-transform: none !important; }
-}
-
 @-moz-document url-prefix("https://myanimelist.net/editprofile.php?"), url-prefix("https://myanimelist.net/notifications/settings") {
 /* Nav */
 #horiznav_nav + div {padding: 10px 0 0 !important;margin: 0 16px !important;}
@@ -4997,19 +4995,19 @@ h4.icon-rss::after {display: none !important;}
 #contentWrapper > div .h1 a[href*="/profile/"]::after {content: "Home  " !important;color: rgba(var(--colorButtonText)) !important;}
 
 /* History */
-.user-status li.icon-history.link {left: 328px !important;}
+.user-status li.icon-history.link {left: 330px !important;}
 
 /* Reviews */
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {left: 386px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {left: 390px !important;}
 
 /* Recommendations */
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 447px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 454px !important;}
 
 /* Clubs */
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 570px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 580px !important;}
 
 /* Friends */
-h4 > a[href$="/friends"] {left: 339px !important;}
+h4 > a[href$="/friends"] {left: 352px !important;}
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/reviews.*") {
@@ -5019,13 +5017,24 @@ h4 > a[href$="/friends"] {left: 339px !important;}
     background: rgba(var(--colorPink)) !important; color: white !important;
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {top: 9px !important;left: 386px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {top: 9px !important;left: 390px !important;}
 
 /* Recommendations */
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 449px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 456px !important;}
 
 /* User reviews page */
 .profile_leftcell + td .borderDark {margin-left: 9px !important;width: 780px !important;}
+
+/* 'No reviews were found' */
+#horiznav_nav + div[style="margin: 10px 5px;"] {
+    background: rgba(var(--colorButton)) !important;
+    color: rgba(var(--colorButtonText)) !important;
+    padding: 3px 4px 4px !important;
+    margin: 10px 11px 10px 15px !important;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 10px !important; }
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/recommendations.*") {
@@ -5035,7 +5044,17 @@ h4 > a[href$="/friends"] {left: 339px !important;}
     background: rgba(var(--colorPink)) !important; color: white !important;
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {top: 9px !important;left: 447px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {top: 10px !important;left: 455px !important;}
+
+/* Fixes for code being different on recommendations page */
+.container-left {display: table-cell !important;position: relative;top: -11px;left: -9px;}
+.container-right {left: 0 !important;padding: 0 3px !important;}
+.container-right #horiznav_nav + div > .pt4 {padding: 0 0 4px !important;} /* Total recs */
+.container-right #horiznav_nav + div > .pt4 + br {display: none !important;}
+.user-status li.icon-history.link {left: 331px !important;top: 17px !important;} /* History */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {left: 391px !important;top: 12px !important;} /* Reviews */
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 581px !important;top: 12px !important;} /* Clubs */
+h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {left: 353px !important;top: 2px !important;} /* Friends */
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/clubs.*") {
@@ -5045,19 +5064,19 @@ h4 > a[href$="/friends"] {left: 339px !important;}
     background: rgba(var(--colorPink)) !important; color: white !important;
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {top: 9px !important;left: 568px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {top: 9px !important;left: 578px !important;}
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/friends.*") {
 /* Clubs */
-.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 568px !important;}
+.user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {left: 578px !important;}
 
 /* Friends */
 h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {
     background: rgba(var(--colorPink)) !important;
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
-h4 > a[href$="/friends"] {top: -1px !important;left: 337px !important;}
+h4 > a[href$="/friends"] {top: -1px !important;left: 350px !important;}
 h4 > a[href$="/friends"]:before {color: white !important;}
 }
 
@@ -5322,4 +5341,100 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 #contentWrapper + #menu {display: none !important;} /* Appears at bottom of page */
 
 .history_content_wrapper .normal_header {height: 16px !important;} /* Header text alignment fix */
+}
+
+@-moz-document url-prefix("https://myanimelist.net/anime/season"), url-prefix("https://myanimelist.net/anime/genre"), url-prefix("https://myanimelist.net/anime/producer"), url-prefix("https://myanimelist.net/manga/genre"), url-prefix("https://myanimelist.net/manga/magazine") {
+/* Widen MAL by 80px */
+#myanimelist, #menu {width: 1140px !important;}
+.header-notification {left: 1103px !important;}
+.header-message {left: 1073px !important;}
+.header-menu-login .btn-signup {left: 1072px;}
+.navi-seasonal {width: auto !important;}
+.navi-seasonal.fixed, form#advancedsearch, .anime-search-form-block {width: 1118px !important;}
+.anime-search-form-search .inputtext {width: 1026px !important;}
+.anime-search-form-block a[onclick*="showAdvanced"] {left: 1092px;}
+
+/* Compact card view for seasonal page and anime search (6 entries per row) */
+.seasonal-anime .synopsis, .seasonal-anime .producer,
+.seasonal-anime .icon-watch, .seasonal-anime .icon-watch-pv {display: none !important;}
+.seasonal-anime, .seasonal-anime .image, .seasonal-anime .image .link-image,
+.seasonal-anime .image .info, .seasonal-anime .information,
+.seasonal-anime .information .info,
+.seasonal-anime .information .scormem {width: 167px !important;}
+.seasonal-anime-list {margin: 10px 10px !important;}
+.seasonal-anime-list .anime-header {line-height: 35px !important;height: 35px !important;margin: 0 5px 25px !important;}
+.seasonal-anime {
+    background: url(https://i.imgur.com/9o1ZkSS.png);
+    box-shadow: 3px 3px 5px rgba(50,55,65,.2); border-radius: 4px 4px 6px 6px;
+    border: none !important; height: 260px !important; margin: 4px 9px 16px 10px !important; }
+.seasonal-anime > div:first-of-type {height: 0;}
+
+/* Cover image */
+.seasonal-anime .image {top: 0 !important;}
+.seasonal-anime .image img {border-radius: 4px 4px 10px 10px;}
+.seasonal-anime .image img:hover {opacity: 1 !important;}
+
+/* Title */
+.seasonal-anime .title, .seasonal-anime .h2_anime_title {width: 139px !important;max-width: 139px !important;}
+.seasonal-anime .h2_anime_title a {font-size: 14px !important;font-weight: normal !important;letter-spacing: 0;}
+/* .seasonal-anime .h2_anime_title a {font-size: 13px !important;font-weight: bold !important;} */ /* Bold title */
+.seasonal-anime .title {height: 40px !important;text-align: left !important;pointer-events: none;z-index: 2;}
+.seasonal-anime .title, .seasonal-anime .h2_anime_title a {color: white !important;}
+
+/* Air date, Score, Members */
+.seasonal-anime .information {top: 40px !important;height: 0 !important;z-index: 1 !important;}
+.seasonal-anime .information .info, .seasonal-anime .information .scormem {
+    background: rgba(35,35,35,.35) !important; color: white !important;
+    padding-top: 0 !important; height: 20px !important; line-height: 19px !important;
+    font-family: Segoe UI Semibold, Segoe UI !important;
+    font-weight: 500 !important; letter-spacing: .05em; }
+.seasonal-anime .information .scormem {top: -20px !important;}
+.seasonal-anime .information .scormem span {height: 20px !important; line-height: 19px !important;}
+.seasonal-anime .information .scormem .score {margin-left: 10px !important;}
+.seasonal-anime .information .scormem .member {margin-right: 10px !important;}
+.seasonal-anime .information .scormem {visibility: hidden;}
+.seasonal-anime .information:hover .scormem {visibility: visible;}
+.seasonal-anime .information:hover .info {visibility: hidden;}
+
+/* Episodes, Source */
+.seasonal-anime .prodsrc {background: rgb(230,230,230) !important;}
+.seasonal-anime .prodsrc, .seasonal-anime .genres {top: 170px;}
+.seasonal-anime .prodsrc {line-height: 20px !important;padding: 4px 0 5px !important;z-index: 1;}
+.seasonal-anime .eps a, .seasonal-anime .eps:after, .seasonal-anime .eps span, .seasonal-anime .source, .seasonal-anime .genre a {
+    font-family: Segoe UI Semibold, Segoe UI !important;
+    color: rgb(165,165,165) !important;
+    font-weight: 500 !important; }
+.seasonal-anime .eps {border: none !important;text-align: right !important;padding: 0 !important;}
+.seasonal-anime .eps, .seasonal-anime .source {width: auto !important;letter-spacing: .05em;}
+.seasonal-anime .eps:after {content: "•";}
+.seasonal-anime .source {border: none !important;padding: 0 !important;}
+
+/* Genres */
+.seasonal-anime .genres {background: rgb(245,245,245) !important;}
+.seasonal-anime .genres .genre {
+    background: none !important;
+    margin: 1px 4px 6px !important;
+    font-family: Segoe UI !important;
+    font-size: 10px !important;
+    letter-spacing: .05em; }
+.seasonal-anime .genres {padding: 4px 10px 12px !important;width: 147px !important;z-index: 1;}
+.seasonal-anime .genres.open {top: 146px;height: 50px !important;}
+.seasonal-anime .btn-more-genre {top: 6px !important;}
+
+/* Hide 'more genres' button (because it shows on every entry) */
+.seasonal-anime .btn-more-genre {display: none !important;}
+
+/* Coloured bars */
+.seasonal-anime-list .seasonal-anime .prodsrc .btn-anime-watch-status {position: absolute !important;top: -213px !important;}
+.seasonal-anime .button_add, .seasonal-anime .button_edit {top: 0 !important;padding: 20px 89px !important;}
+.seasonal-anime .button_add:hover {padding-top: 20px !important;} /* Weird fix */
+.seasonal-anime .button_add {background: rgba(35,35,35,.7) !important;}
+.seasonal-anime .button_edit.plantowatch, .seasonal-anime .button_edit.plantoread {background: rgba(var(--colorPurple),.8) !important;}
+.seasonal-anime .button_edit.dropped {background: rgba(var(--colorPink),.8) !important;}
+.seasonal-anime .button_edit.completed {background: rgba(var(--colorBlue),.8) !important;}
+.seasonal-anime .button_edit.on-hold {background: rgba(var(--colorOrange),.8) !important;}
+.seasonal-anime .button_edit.watching {background: rgba(var(--colorGreen),.8) !important;}
+
+/* Move 'top' button to the side */
+.season .btn-top {margin-left: 140px;}
 }

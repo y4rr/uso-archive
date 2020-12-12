@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Денисов Ярослав
 @description    `За основу взят https://userstyles.org/styles/127431/newvk-dark-themeИзменены цвета, исправлены ошибки и верхняя панель.Наслаждайтесь~О багах пишите сюда:vk.com/whitebrim`
-@version        20201111.19.26
+@version        20201211.12.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -8681,7 +8681,7 @@
     background-color: #373b3e;
 }
 
-[dir=ltr] a.ts_contact.active, [dir] a.ts_search_link.active{
+[dir=ltr] a.ts_contact.active, [dir=ltr] a.ts_search_link.active{
     background: #494D50;
 }
 
@@ -8792,6 +8792,51 @@
 
 [dir=ltr] .left_menu_nav_show_menu.left_menu_nav_show_menu_link_visible{
     display: none;
+}
+
+[dir=ltr] .AudioPlaylistSnippet{
+    background: #373B3E;
+}
+
+[dir=ltr] ._playlist_page_content_block{
+    box-shadow: 0 1px 0 0 #484B4E,0 0 0 1px #484B4E;
+}
+
+[dir=ltr] .AudioPlaylistSnippet h1.AudioPlaylistSnippet__title--main{
+	color: #F8F8F8;
+}
+
+[dir=ltr] .AudioPlaylistSnippet__actionButton{
+    color: #C0C0C0;
+}
+
+[dir=ltr] .AudioPlaylistSnippet .ActionButton--shuffle__text{
+    color: #E0E0E0;
+}
+
+[dir=ltr] .ActionButton--shuffle:before, [dir=ltr] .ActionButton--add:before, [dir=ltr] .ActionButton--share:before, [dir=ltr] .ActionButton--more:after{
+    filter: grayscale(100%);
+}
+
+[dir=ltr] .AudioPlaylistSnippet .ActionButton--shuffle:hover{
+    background-color: #494d50;
+}
+
+[dir=ltr] .ActionsMenu__inner{
+    background: #494d50;
+    border: 1px solid #595d60;
+}
+
+[dir=ltr] .ActionsMenu__item:hover, [dir=ltr] .ActionsMenu__item--hover{
+    background-color: #595d60;
+}
+
+[dir=ltr] .ActionsMenu__item{
+    color: #E0E0E0;
+}
+
+[dir=ltr] .ActionsMenu__inner:before{
+    border-bottom-color: #595d60;
 }
 }
 

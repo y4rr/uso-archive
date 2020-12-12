@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Over 2700 lines of code.Its isn't 100% complete but most of the features are supported(fe. google translate widget, weather etc.)Supports:-Google Maps-Google Maps iframe-Captcha-News-SettingsPartial Support:-Flights-Books-Shopping-Finance`
-@version        2020122.0.8
+@version        20201211.8.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,7 +42,7 @@ body, html { /*put link to your image there V*/
 	border-radius: 10px;
 	backdrop-filter: blur(1px);
 }
-#hdtbSum {
+#hdtbSum, .Xeztj, .YSlUOe {
 	background: #0000;
 }
 #hdtb {
@@ -66,8 +66,11 @@ body, html { /*put link to your image there V*/
 	border-color: #2f3031b8;
 	backdrop-filter: blur(1px);
 }
-.lst-c .sbib_a {
+.lst-c .sbib_a, .minidiv .lst-c .sbib_a, .lst-c .sbib_a:hover {
 	background: #0000;
+}
+.minidiv .sbibod, #searchform .sbfcn, #searchform .sbhcn {
+	background: #000000b8;
 }
 .gsfi, .lst {
     color: rgba(255, 255, 255, .87);
@@ -123,8 +126,21 @@ body, html { /*put link to your image there V*/
     border-color: #383838b8;
     color: #ddd;
 }
-.hdtb-mitem a, .hdtb-mitem a, .GshZze, .gb_ta svg, .gb_Fc svg, .gb_2c .gb_he, .gb_Rc .gb_he, .dyjrff, .aCOpRe em, .st em, .iv236, .smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a, .wwUB2c, .PNyWAd, .NZmxZe, .fxgdke, .WuA9jb, span.lPqy4c, .VZTCjd h3, .VZTCjd:link, .VZTCjd:visited, .hBUZL, .Y6Fvnc, #res a.bVUuXc, .il8Sef a.f9UGee, .hdtbItm.hdtbSel, .hdtbItm a, #cdrlnk, .m0RhYb, .sh-dgr__grid-result, .sh-dgr__grid-result a, .VQN8fd:link, .VQN8fd h4, .gb_l .gb_sb, .gb_7b, .gb_ob>svg.gb_pb, .gb_Bb>svg.gb_Cb, .gb_Db>svg.gb_Eb, .gb_9b, .gb_yb.gb_yb, .gb_xb, .sh-ds__desc, ._-8, ._-cF span, #res a._-ks, .hdtb-mitem .hdtb-dd-b, .hdtb-mitem a, .GshZze, a.ab_button, a.ab_button:visited, .gb_nb>svg.gb_ob, .gb_Ab>svg.gb_Bb, .gb_Cb>svg.gb_Db, .gb_l .gb_rb, .gb_6b, .gb_8b, .gb_xb.gb_xb, .travel-disclaimer, .gb_sa svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .zriOQb g-menu-item, .h-c-header__product-logo-text, .h-c-footer__link:visited, .h-c-footer__link {
+.hdtb-mitem a, .hdtb-mitem a, .GshZze, .gb_ta svg, .gb_Fc svg, .gb_2c .gb_he, .gb_Rc .gb_he, .dyjrff, .aCOpRe em, .st em, .iv236, .smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a, .wwUB2c, .PNyWAd, .NZmxZe, .fxgdke, .WuA9jb, span.lPqy4c, .VZTCjd h3, .VZTCjd:link, .VZTCjd:visited, .hBUZL, .Y6Fvnc, #res a.bVUuXc, .il8Sef a.f9UGee, .hdtbItm.hdtbSel, .hdtbItm a, #cdrlnk, .m0RhYb, .sh-dgr__grid-result, .sh-dgr__grid-result a, .VQN8fd:link, .VQN8fd h4, .gb_l .gb_sb, .gb_7b, .gb_ob>svg.gb_pb, .gb_Bb>svg.gb_Cb, .gb_Db>svg.gb_Eb, .gb_9b, .gb_yb.gb_yb, .gb_xb, .sh-ds__desc, ._-8, ._-cF span, #res a._-ks, .hdtb-mitem .hdtb-dd-b, .hdtb-mitem a, .GshZze, a.ab_button, a.ab_button:visited, .gb_nb>svg.gb_ob, .gb_Ab>svg.gb_Bb, .gb_Cb>svg.gb_Db, .gb_l .gb_rb, .gb_6b, .gb_8b, .gb_xb.gb_xb, .travel-disclaimer, .gb_sa svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .zriOQb g-menu-item, .h-c-header__product-logo-text, .h-c-footer__link:visited, .h-c-footer__link, .sMi44c:hover .fxgdke, .gb_qa svg, .gb_Cc svg, .gb_Zc .gb_fe, .gb_Oc .gb_fe, .gRqDMe {
     color: #afb9c6;
+}
+.fSXkBc {
+	color: #afb9c6;
+}
+.wob_ds {
+	background: #000000b8;
+	border-color: #08090ab8;
+}
+svg#wob_gsvg > text {
+	fill: #454545;
+}
+.QrNVmd {
+	color: #4a4a4a;
 }
 .h-c-footer__lang-dropdown {
 	background-color: #08090ab8;
@@ -186,7 +202,7 @@ span.EZRelc {
 .cbL4Ld {
 	background: #000;
 }
-.a, cite, cite a:link, cite a:visited, .s75CSd, ._-ct, a.ab_button:hover, .h-c-icon--footer, a:visited .zTpPx, a .zTpPx, .Vouh6c, .nzKMdd, .L04Uw {
+.a, cite, cite a:link, cite a:visited, .s75CSd, ._-ct, a.ab_button:hover, .h-c-icon--footer, a:visited .zTpPx, a .zTpPx, .Vouh6c, .nzKMdd, .L04Uw, .mmxugd {
 	color: #d0d1d4;
 }
 .IsZvec, .s, .hb8SAc, .WF4CUc, .o5GQac img, .lr_c_stnl, #rcnt .action-menu-item a.fl, .action-menu-item a.fl, .gb_4b, .jEdCLc, .u1M3kd.g6Ealc, .e1fR0c, .e1fR0c:hover {
@@ -223,7 +239,7 @@ a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs
 .uMdZh {
     color: rgba(255, 255, 255, .54);
 }
-.GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover {
+.GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover, .yg51vc {
 	background: #0000;
 }
 .action-menu .mn-dwn-arw {
@@ -251,16 +267,6 @@ a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs
 }
 .cbphWd {
 	border-color: #151515b8;
-}
-.fSXkBc {
-	color: #afb9c6;
-}
-.wob_ds {
-	background: #000000b8;
-	border-color: #08090ab8;
-}
-svg#wob_gsvg > text {
-	fill: #454545;
 }
 .LMMXP, .hDeAhf, .k8XOCe:hover, .k8XOCe:active {
 	color: #d0d1d4;
@@ -357,6 +363,9 @@ g-fab.CNf3nf.wecD1d {
 }
 .JSAgYe {
     color: rgba(255, 255, 255, .87);
+}
+.RNNXgb:hover, .sbfc .RNNXgb, .minidiv .RNNXgb {
+	background: #000000b8;
 }
 .zthhpf {
 	background: #000000b8;
@@ -575,7 +584,7 @@ title-with-lhs-icon .ekf0x {
 .BP43u {
     color: rgba(255, 255, 255, .62);
 }
-.sTx6hd[data-s="e"] span, .aM01wc[data-s="e"], .XCKyNd, .OPkOif {
+.sTx6hd[data-s="e"] span, .aM01wc[data-s="e"], .XCKyNd, .OPkOif, [src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARklEQVQ4jWNgGAWMDAwM/ylRy0QNV6Cb+h8HjVUtE5IEIa8gGwhXi+wFdD8y4jEMrpYJSQCZxuciFIuIiQW8aqgSCyMdAACpxRQBxhqZCQAAAABJRU5ErkJggg=='] {
 	filter: invert(100);
 }
 .VuHq7, #rhs .kp-blk, .y8Jpof.pPLc9e.kpQuGf, .nm6nmc.l0jSyf.kpQuGf {
@@ -1337,7 +1346,7 @@ a.sh-t__title-pdp, .rYVYn {
 	background: #000000b8;
 }
 .sh-fp__container.xt8sXe > button > div:nth-of-type(1) {
-	background: #adb7c4 !important;
+	background: #adb7c4b8 !important;
 }
 .sh-fp__container.xt8sXe > button > div:nth-of-type(2) {
 	filter: invert(100);
@@ -1349,7 +1358,7 @@ a.b8Q8Dd, .HErPfe, .Qs5XEb {
 	color: #adb7c4;
 }
 .lx_ctl .kxctl-dd-arrow {
-	border-top-color: #adb7c4;
+	border-top-color: #adb7c4b8;
 }
 .sh-fp__container.xt8sXe > button {
 	color: #adb7c4 !important;
@@ -2200,6 +2209,28 @@ img.XqHOTb.IGEbUc, img.ZFAGbf {
 .gmlSVb .yWIKfb {
     background: rgba(0, 0, 0, .84);
     color: #adb7c4;
+}
+.GHuRVb {
+	border-color: #1b1b1bb8 !important;
+}
+.hqwb1b {
+    color: rgba(255, 255, 255, .87);
+}
+.gLOl5e, .DFDLnc {
+	border-color: #1b1b1bb8;
+}
+.QXzCSe, .SvKTZc {
+    color: rgba(255, 255, 255, .87);
+}
+.tw-bilingual-marked {
+	background: #08090ab8;
+}
+.MaH2Hf, .tw-bilingual-pos {
+    color: rgba(255, 255, 255, .54);
+}
+.bHOicb {
+	color: #d0d1d4;
+	border-color: #1b1b1bb8;
 }
 
 /*Google Maps*/

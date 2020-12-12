@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Note: Use the dark theme in your Appearance settingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2020124.10.17
+@version        2020129.7.58
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -45,6 +45,16 @@
 4 "Groove" <<<EOT groove EOT;
 5 "Solid" <<<EOT solid EOT;
 6 "Ridge" <<<EOT ridge EOT;
+
+}
+@advanced dropdown ampoge "Videos Per Row" {
+	1 "Default*" <<<EOT 4 EOT;
+2 "5" <<<EOT 5 EOT;
+3 "6" <<<EOT 6 EOT;
+4 "7" <<<EOT 7 EOT;
+5 "8" <<<EOT 8 EOT;
+6 "9" <<<EOT 9 EOT;
+7 "10" <<<EOT 10 EOT;
 
 }
 
@@ -550,6 +560,11 @@ paper-listbox.yt-dropdown-menu {
     color: #ffffff;
     text-shadow: 0 0 9px #ff00d0;
 
+}
+
+/*hoy kopya pa haha!*/
+ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
+	--ytd-rich-grid-items-per-row: /*[[ampoge]]*/!important;
 }
 
 /*subpop*/

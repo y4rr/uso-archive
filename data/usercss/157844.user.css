@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SLTW
 @description    `A Theme for 9gag to make it dark and overall a very nice experience.Added a few little Details and improvements.Has the Horizontal MenuThis is still a work in progress - so if you find any issues or have troubles with the theme please let me know.`
-@version        20201110.13.40
+@version        2020127.14.52
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -289,6 +289,13 @@ textarea {background-color: black; color: white; border-color: #0f0;}
 
 
 .topBannerAd-container {display: none;}
+
+
+
+
+/* adapt cyberpunk theme*/ 
+
+.cp-background {filter: invert();}
 }
 
 @-moz-document domain("9gag.com") {
@@ -351,4 +358,11 @@ textarea {background-color: black; color: white; border-color: #0f0;}
 .boards-footer[data-v-d9f9214e] {border-top: 2px solid black;}
 
 .board-system__wrapper.board-system__state_opened[data-v-0938f772],.board-system__wrapper.board-system__state_closed[data-v-0938f772] {box-shadow: 0px 0px 50px 2px black}
+
+
+
+/*pinned messages*/
+.boards-headers-base[data-v-c62fe374], .pinned-message[data-v-c62fe374]{background: black; border-bottom: 1px solid #009dff;}
+.pinned-message_content{height: 80px;}
+
 }

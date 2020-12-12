@@ -2,14 +2,14 @@
 @name           metrika.yandex.ru FIX
 @namespace      USO Archive
 @author         foxss
-@description    `Fix`
-@version        20201016.19.28
+@description    `Fix dashboard yandex metrika.1.0.3исправлен цвет даты событий в баллонах1.0.2баллоны теперь всегда полностью в верхнем слое`
+@version        2020125.3.23
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("metrika.yandex.ru") {
 	/*цвет заголовка болонов*/
-	.report-chart__date.chart-tooltip__date {
+	.report-chart__date.chart-tooltip__date, .chart-tooltip__annotation-date.chart-tooltip__date {
 		color: greenyellow;
 		font-size: 11pt;
 	}

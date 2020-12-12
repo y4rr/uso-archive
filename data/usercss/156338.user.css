@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         mortyobnoxious
 @description    `ekşisözlük night modeekşişeyler'de de çalışır`
-@version        2020429.19.26
+@version        2020128.17.13
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -305,7 +305,7 @@ li.new-update:hover { background: #141D26 !important; text-decoration: none !imp
 .sub-title-menu > div, .sub-title-menu > a, .sub-title-menu > div > a { margin-right: 5px; }
 #entry-item-list a, #draft-content a, #disambiguations a { color: #81C14B; }
 #entry-item-list footer .eksico, #entry-item-list footer .other .eksico { fill: #8798A5; }
-a[href*="/basliklar/adtitles"], li a[class^="ads-"], #yeni-reklam, .bottom-ads { display: none!important; }
+a[href*="/basliklar/adtitles"], a[href*="utm_campaign=eksisozluk"], li a[class^="ads-"], #yeni-reklam, .bottom-ads { display: none!important; }
 article.unread { background: #151f29; }
 .pena-logo-container > a { background-image: url(https://eksisozluk.com/Content/img/new-design/pena_logo.png) !important; background-size: 25px !important; margin: 2px 0 0 -12px !important; width: 25px !important; }
 .eksiseyler-logo-container > a { background-image: url(https://eksisozluk.com/Content/img/new-logos/eksiseyler-logo.svg) !important; background-size: 15px !important; margin: 2px 0 0 -60px !important; width: 20px !important; }
@@ -317,6 +317,7 @@ mark { background-color: #1b7a44; }
 .sub-title-menu .matter-answer-info { color: #8798A5; }
 #matter-answer-list li { padding: 1px 8px; }
 #matter-index h1, #matter-detail-info h1 { border-bottom: 1px solid #141D26; border-top: 1px solid #141D26; border-left: 1px solid #388E3C; padding: 0 0 0 7px; }
+.channel-filter-toggle-mobile:hover svg {fill: #A9894F;}
 #matter-index-filter-options, #matter-filter-options { background-color: #151f29; border: 1px solid #141e28; color: #9daab1; }
 #matter-index-filter-options a, #matter-filter-options a { color: #9daab1; }
 #preview-area { background: #141d26; padding: 5px 10px; margin: 5px 0 0 0; }
@@ -325,12 +326,13 @@ iframe[data-src*="seyler.eksisozluk.com"], #networkad-inread-video-ad, li[id*="n
 h2 + .topic-list li a[href*="/entry/"]::before { counter-increment: debe; content: counter(debe)")"; color: #81c14b; }
 #user-badges li.muted { background-color: #1B2836; border: 1px solid #141D26; padding: 2px 6px; opacity: 0.6; }
 .index-cookie-filter > li > #filter-index-channel.passive { color: rgba(189, 189, 189, 0.2); }
+.index-channel-filter > li > #filter-index-channel.active { color: #81c14b; }
 #index-filter-prefs, #index-filter-prefs-mobile { background: #151f29; }
-.index-cookie-filter > li > #filter-index-channel.passive::before { content: "X"; }
-.index-cookie-filter > li > #filter-index-channel.active::before { content: "✓"; }
-.index-cookie-filter > li > #filter-index-channel { background: #1b2836; margin: 0 1px; }
-#mobile-index .index-cookie-filter > li > #filter-index-channel { margin: 0 4px; }
-.index-cookie-filter > li > #filter-index-channel:hover { background: #2c3b4c; }
+.index-channel-filter > li > #filter-index-channel.passive::before { content: "X"; }
+.index-channel-filter > li > #filter-index-channel.active::before { content: "✓"; }
+.index-channel-filter > li > #filter-index-channel { background: #1b2836; margin: 0 1px; }
+#mobile-index .index-channel-filter > li > #filter-index-channel { margin: 0 4px; }
+.index-channel-filter > li > #filter-index-channel:hover { background: #2c3b4c; }
 #matter-index-filter-options > li:hover { background-color: #111922!important; }
 .profile-buttons .flat-button.wtfbutton, a[href*="adidastab"], .sponsored.index-sponsored-item { display: none !important; }
 button[onclick*="/basliklar/set-ad"] { display: none !important; }
@@ -340,16 +342,16 @@ button[onclick*="/basliklar/set-ad"] { display: none !important; }
 .topic-list .seperator span { padding: 0 5px; }
 html.no-touch #threads li article:hover .delete, html.no-touch #threads li article:hover .archive { background-color: #1b2836; }
 button[style="color:#53a245;"] { color: #8798A5 !important; }
-#img-row li { border: 5px solid #141D26;}
-#img-row li a div {border: 1px solid #11131a;}
-a.pinned::before {color: #81C14B;}
-
+#img-row li { border: 5px solid #141D26; }
+#img-row li a div { border: 1px solid #11131a; }
+a.pinned::before { color: #81C14B; }
+#editbox, .edittextbox {resize: vertical;}
 @media handheld, only screen and (max-width: 1265px) {
-  html.no-touch .theme-enabled #main {
-    padding-top: 0;
-  }
+    html.no-touch .theme-enabled #main { padding-top: 0; }
 }
-
+@media handheld,only screen and (max-width:850px) {
+ .pager {display:inherit!important;}
+}
 /* Bazı Linkler için İkonlar */
 a.url[href*="twitter.com"]::after, a.url[href*="twimg"]::after { content: ""; background-image: url(https://www.google.com/s2/favicons?domain=mobile.twitter.com); background-repeat: no-repeat; padding: 0 0 0 17px; margin: 0 0 0 3px; }
 a.url[href*="google.com"]:not([href*="google.com/amp"])::after { content: ""; background-image: url(https://www.google.com/s2/favicons?domain=google.com); background-repeat: no-repeat; padding: 0 0 0 17px; margin: 0 0 0 5px; }
@@ -424,9 +426,8 @@ search-container { background-color: #1d2029; }
 .favorite-list-popup div ul li a { margin: 0 !important; }
 span[style="background-color: rgb(255, 255, 255);"] { background: #1d2029 !important; }
 .sponsored-content { display: none!important; }
-.medium-insert-embeds, .mediumInsert-embeds {background: #11131a;}
-.b[style="background-color: rgb(255, 255, 255);"] {background: #11131a !important;}
-
+.medium-insert-embeds, .mediumInsert-embeds { background: #11131a; }
+.b[style="background-color: rgb(255, 255, 255);"] { background: #11131a !important; }
 @media only screen and (max-width: 920px) {
     .content-heading .content-meta { background-color: #203041!important; } }
 @media (max-width: 767px) {
@@ -439,7 +440,7 @@ body, select, #reasonNotes, #leftwrap { background-color: #141D26; }
 aside, footer, #bgright, #rightwrap { background-color: #141D26; }
 #download, #vw-download, #delete { background: #141d26; opacity: 0.5; border: 1px solid #11131a; margin: 0 0 0 12px; }
 #delete:hover, #download:hover, #vw-download:hover { background: #11131a; }
-#content { background: #11131a;  margin: 10px 0 0 0!important; }
+#content { background: #11131a; margin: 10px 0 0 0!important; }
 #owner { margin: 0; width: 100%; }
 #owner #download { margin-right: 12px; }
 #viewer { opacity: 0.4; position: absolute; bottom: -100%; }
@@ -452,4 +453,8 @@ header, header div[id^="ad-wrapper"], div[id^="ad-wrapper"] { display: none!impo
 footer, #content { margin: 0 0px 0 0px; }
 #delete-form { background-color: #11131a; border: 1px solid #000; }
 #cancel { border: 1px solid #000; background: #BE1E2D; }
+.lightbox .lb-image { border: 4px solid #11131a; }
+.lb-outerContainer { background-color: #11131a; }
+.lb-dataContainer { background: #11131a; }
+#image {z-index: 1;position: relative;}
 }

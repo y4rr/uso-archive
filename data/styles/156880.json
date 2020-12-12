@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "granbluefantasy",
     "createdAt": "2018-03-10T00:05:16.000Z",
-    "updatedAt": "2020-08-18T16:07:59.000Z",
+    "updatedAt": "2020-12-06T11:07:15.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 230312,
@@ -18,8 +18,8 @@
   },
   "stats": {
     "installs": {
-      "total": 383,
-      "weekly": 2
+      "total": 385,
+      "weekly": 0
     }
   },
   "screenshots": {
@@ -36,7 +36,7 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"granbluefantasy.jp\") {\r\n\r\n/* font */\r\nbody,\r\n.prt-status .prt-user-name .txt-user-name {\r\n  /* 'FOT-テロップ明朝 Pro D' */\r\n  font-family: '/*[[font-family]]*/', 'Average Sans', sans-serif !important;\r\n}\r\n\r\n/* hide sidebar */\r\nbody.jssdk > div:first-child > div:first-child {\r\n  display: none;\r\n}\r\n\r\nbody,\r\n.cnt-raid,\r\n.cnt-raid .cnt-multi,\r\n.prt-mask-job,\r\n.prt-scene-comment-after-mask {\r\n  background: /*[[bg-color]]*/ !important;\r\n}\r\n.mask {\r\n  background: /*[[bg-color]]*/B3 !important;\r\n}\r\n\r\n/* fix font sizes */\r\n.prt-supporter-info .prt-supporter-detail .prt-summon-skill.text-small {\r\n  font-size: 8.25px !important;\r\n  font-weight: 500;\r\n}\r\n\r\n/* fix poker BG */\r\n.cnt-poker {\r\n  background: #000;\r\n}\r\n\r\n/* fix user info BG */\r\n.prt-user-info::before {\r\n  border-image-repeat: stretch stretch;\r\n}\r\n\r\n/* fix weapon and summon grid BGs */\r\n.cnt-weapon-list {\r\n  background-position: -2px 0;\r\n  background-size: 324px 661px;\r\n}\r\n\r\n/* fix crew chest overlapping pictures */\r\n#submenu-general-chat #chat-body #chat-log .lis-log .txt-log {\r\n  padding-left: 52px;\r\n}\r\n\r\n.cnt-summon-list {\r\n  background-position: -2px -332px;\r\n  background-size: 324px 661px;\r\n}\r\n\r\n/* prevent horizontal scrollbar */\r\nbody {\r\n  overflow-x: hidden;\r\n}\r\n\r\n/*[[center-content]]*/\r\n\r\n/*[[center-popups]]*/\r\n\r\n/*[[hide-scrollbars]]*/\r\n\r\n/*[[compact-gacha]]*/\r\n\r\n/*[[compact-raids]]*/\r\n\r\n/*[[compact-summons]]*/\r\n\r\n/*[[fit-crew-chat]]*/\r\n\r\n/*[[fix-header-menu]]*/\r\n\r\n/*[[hide-event-load]]*/\r\n\r\n/*[[hide-crystal-count]]*/\r\n\r\n/*[[hide-gacha-banner]]*/\r\n\r\n/*[[hide-outfit-sets]]*/\r\n\r\n/*[[hide-pinboard]]*/\r\n\r\n/*[[hide-quest-comment]]*/\r\n\r\n/*[[hide-size]]*/\r\n\r\n/*[[hide-special-draw]]*/\r\n\r\n/*[[hide-submenu]]*/\r\n\r\n/*[[hide-support-plus]]*/\r\n\r\n/*[[keep-extras-open]]*/\r\n\r\n/*[[sort-summons]]*/\r\n\r\n/*[[submenu-on-left]]*/\r\n\r\n/*[[selectable-text]]*/\r\n\r\n}\r\n\r\n/*[[compact-lists]]*/\r\n\r\n/*[[compact-upgrade]]*/\r\n\r\n/*[[reorder-coop]]*/",
+    "css": "@-moz-document domain(\"granbluefantasy.jp\") {\r\n\r\n/* font */\r\nbody,\r\n.prt-status .prt-user-name .txt-user-name {\r\n  /* 'FOT-テロップ明朝 Pro D' */\r\n  font-family: '/*[[font-family]]*/', 'Average Sans', sans-serif !important;\r\n}\r\n\r\n/* hide sidebar */\r\nbody.jssdk > div:first-child > div:first-child {\r\n  display: none;\r\n}\r\n\r\nbody,\r\n.cnt-raid,\r\n.cnt-raid .cnt-multi,\r\n.prt-mask-job,\r\n.prt-scene-comment-after-mask {\r\n  background: /*[[bg-color]]*/ !important;\r\n}\r\n.mask {\r\n  background: /*[[bg-color]]*/B3 !important;\r\n}\r\n\r\n/* fix font sizes */\r\n.prt-supporter-info .prt-supporter-detail .prt-summon-skill.text-small {\r\n  font-size: 8.25px !important;\r\n  font-weight: 500;\r\n}\r\n\r\n/* fix poker BG */\r\n.cnt-poker {\r\n  background: #000;\r\n}\r\n\r\n/* fix user info BG */\r\n.prt-user-info::before {\r\n  border-image-repeat: stretch stretch;\r\n}\r\n\r\n/* fix weapon and summon grid BGs */\r\n.cnt-weapon-list {\r\n  background-position: -2.5px -423px;\r\n}\r\n\r\n.cnt-summon-list {\r\n  background-position: -2.5px -755px;\r\n}\r\n\r\n/* fix crew chest overlapping pictures */\r\n#submenu-general-chat #chat-body #chat-log .lis-log .txt-log {\r\n  padding-left: 52px;\r\n}\r\n\r\n/* prevent horizontal scrollbar */\r\nbody {\r\n  overflow-x: hidden;\r\n}\r\n\r\n/*[[center-content]]*/\r\n\r\n/*[[center-popups]]*/\r\n\r\n/*[[hide-scrollbars]]*/\r\n\r\n/*[[compact-gacha]]*/\r\n\r\n/*[[compact-raids]]*/\r\n\r\n/*[[compact-summons]]*/\r\n\r\n/*[[fit-crew-chat]]*/\r\n\r\n/*[[fix-header-menu]]*/\r\n\r\n/*[[hide-event-load]]*/\r\n\r\n/*[[hide-crystal-count]]*/\r\n\r\n/*[[hide-gacha-banner]]*/\r\n\r\n/*[[hide-outfit-sets]]*/\r\n\r\n/*[[hide-pinboard]]*/\r\n\r\n/*[[hide-quest-comment]]*/\r\n\r\n/*[[hide-size]]*/\r\n\r\n/*[[hide-special-draw]]*/\r\n\r\n/*[[hide-submenu]]*/\r\n\r\n/*[[hide-support-plus]]*/\r\n\r\n/*[[keep-extras-open]]*/\r\n\r\n/*[[sort-summons]]*/\r\n\r\n/*[[submenu-on-left]]*/\r\n\r\n/*[[selectable-text]]*/\r\n\r\n}\r\n\r\n/*[[compact-lists]]*/\r\n\r\n/*[[compact-upgrade]]*/\r\n\r\n/*[[reorder-coop]]*/",
     "settings": [
       {
         "key": "bg-color",

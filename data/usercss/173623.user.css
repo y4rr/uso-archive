@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jeff Gauthier
 @description    `When switching your wrike theme, this uses the colors to call all the panels.This theme works best on the themes with the dark colors as the text is a light #CCC- fixed - Some of the color may be hard-coded to a purple hue, working on that. sorry- gnatt charts are rendered on a canvas with javascript, not sure where to get colors here, so an invert and opacity change- 7/25/19 - updated more nested menus, and more areas i found i missed. seems a new style went in to place so touched that up to.-01/02/20 - fixed some inverted colors and a few missing panels.`
-@version        202012.23.53
+@version        2020127.22.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,7 +14,7 @@
     --darker-color: #1E0B27; */
     --darker-color: var(--theme-background-color);
     --dark-color: rgba(255,255,255,.12);
-    --dark2-color: rgba(30,30,30,.78);
+    --dark2-color: rgba(55, 55, 55, .4);
     --light-color: #454545;
     --light-color-mid: #555;
     --light-color-code: rgba(162, 162, 162, .14);
@@ -27,11 +27,144 @@
     --border-color: rgba(240,240,240, .18);
     --lighter-border-color: rgba(240,240,240, .28);
     --light-background: rgba(240,240,240, .1);
+    --light-neutral-50-textColor: var(--text-color);
+    --grid-cell-bg-color: var(--input-color);
+    
     
 }
+
+label span svg,
+label span svg g
+{
+    color: var(--text-color) !important;   
+    fill: var(--text-color) !important;
+    stroke: var(--text-color) !important;
+
+}
+
+/* shitty hard coded colors */
+[style*="color: rgb(104, 159, 56); border-color: rgb(227, 235, 217); background-color: rgb(241, 248, 233);"]
+{
+    background: hsl(88, 52%, 19%) !important;
+    border-color: hsl(87, 31%, 14%) !important;
+}
+
+[style="color: rgb(175, 180, 43); border-color: rgb(236, 239, 214); background-color: rgb(249, 251, 231);"]
+{
+    border-color: hsl(67, 44%, 19%)!important;
+    background-color: hsl(66, 71%, 15%)!important;
+}
+
+[style="color: rgb(194, 24, 91); border-color: rgb(241, 210, 221); background-color: rgb(252, 228, 236);"],
+[style="color: rgb(194, 24, 91);border-color: rgb(241, 210, 221);background-color: #fce4ec;"],
+[style="color: rgb(194, 24, 91); border-color: rgb(241, 210, 221); background-color: rgb(252, 228, 236);"]
+{
+    border-color: hsl(339, 53%, 28%) !important;
+    background-color: hsl(340, 80%, 24%) !important;
+}
+[style*="rgb(25, 118, 210); border-color: rgb(211, 228, 242); background-color: rgb(227, 242, 253);"]
+{
+    background: hsl(205, 91%, 18%) !important;
+    border-color: hsl(207, 39%, 35%) !important;
+}
+[style*="color: rgb(0, 151, 167); border-color: rgb(206, 234, 238); background-color: rgb(224, 247, 250);"]
+{
+    
+    border-color:#31808c !important;
+    background-color: #093339 !important;
+}
+[style="color: rgb(245, 124, 0); border-color: rgb(244, 229, 206); background-color: rgb(255, 243, 224);"],
+[style*="color: rgb(245, 124, 0);border-color: hsla(36, 63%, 28%, 1);background-color: hsla(37, 100%, 14%, 1);"]
+{
+    border-color: #74501a !important;
+    background-color: #472c00 !important;
+}
+[style*="color: rgb(194, 24, 91);border-color: hsla(339, 53%, 38%, 1);background-color: hsla(340, 80%, 14%, 1);"]
+{
+    border-color: #942e51 !important;
+    background-color: #40071a !important;
+}
+[style*="color: rgb(123, 31, 162); border-color: rgb(229, 212, 232); background-color: rgb(243, 229, 245);"]
+{
+    border-color: #53305a !important;
+    background-color: #3d1a42 !important;
+}
+[style*="color: rgb(97, 97, 97); border-color: rgb(229, 229, 229); background-color: rgb(250, 250, 250);"]
+{
+    border-color: hsl(0, 30%, 27%) !important;
+    background-color: hsl(0, 38%, 17%) !important;
+}
+status-widget-completer__checkbox,
+.status-widget-completer
+{
+    background: var(--input-color) !important;
+    border-color: #375e7d !important;
+}
+._nghost-pyg-114.is-marked-inherited wrike-tag .tag-body::before
+{
+    background: var(--light-color-code);
+}
+
+
+
+._nghost-ukc-3.skin-pseudo.button-style-highlighted, .button-style-highlighted .skin-pseudo._nghost-ukc-3
+{
+    color: var(--link-color);
+}
+
+redirect-app-body._ngcontent-ukc-0._nghost-ukc-2,
+redirect,
+redirect-app,
+._nghost-ukc-0
+{
+    background: var(--darker-color) !important;
+}
+.product-details__type
+{
+    color: var(--text-color-dim) !important;
+}
+.task-card__title,
+._nghost-ukc-2 .app-message-line-secondary,
+._nghost-ukc-2 .app-message-line-secondary__title,
+._nghost-ukc-2 .app-message-line
+{
+    color: var(--text-color) !important;
+}
+._nghost-uvc-144 .multiple-select-cf__screen:hover
+{
+    background: var(--input-color);
+}
+/*._nghost-uzy-30,
+._nghost-vav-30,
+[class*="_nghost-vav-30"] */
+/* ulgy shading on timesheet */
+grid-computed-cell
+{
+    --grid-cell-bg-color: transparent !important;
+}
+._nghost-mxl-50 .grid-cell--row-selector .grid-cell__checkbox
+{
+    filter: invert(90%);
+    opacity: .8;
+}
+
+/* trying to mask weird white thing on timesheet bottom left */
+.grid__header, 
+.grid__footer,
+.grid-sticky-box-layer__block--with-back
+{
+    border-color: transparent !important;
+    background: transparent !important;
+}
+
 *{
     text-shadow: 0 0 0 transparent !important;
     box-shadow: none !important;
+}
+._nghost-ulp-29
+{
+    --grid-cell-bg-color: #0f0f0f00;
+    --grid-cell-bg-color-transparent: rgba(255,255,255,0);
 }
 /*._nghost-usy-27.ws-navigation-button--active .ws-navigation-button__text::before,
 ._nghost-lqh-27.ws-navigation-button--active .ws-navigation-button__text::before,*/
@@ -56,6 +189,7 @@ table-toolbar,
 {
     background-color: var(--light-background) !important;
 }
+
 .load-mask::after {
     content: "";
     position: absolute;
@@ -75,6 +209,7 @@ table-toolbar,
     color: var(--text-color) !important;;
     background-color: var(--dark-color) !important;
 }
+grid-custom-cell div,
 em { 
     color: var(--text-color) !important;;
     background-color: var(--dark2-color) !important;
@@ -106,6 +241,7 @@ em {
     margin-right: 6px
 }
 
+grid-total-cell,
 .count,
 [class*="description"],
 [zero-description=""],
@@ -132,6 +268,7 @@ h1,h2,h3,h4,h5,h6
     color: var(--text-color-light);
 }
 
+.timesheet-editable-time-entries__container,
 .timesheet-time-entries__container {
     background: var(--light-background);
     border: 1px solid var(--border-color);
@@ -187,8 +324,12 @@ wrike-list,
     scrollbar-color: var(--border-color) var(--dark-color);
     scrollbar-width: thin ;
 }
-._nghost-hod-15 .buttons,
-._nghost-hod-25 .view-selector-btn,
+
+[class*="nghost"] .view-selector-btn:hover {
+    border-color: var(--lighter-border-color);
+}
+[class*="nghost"] .view-selector-btn,
+[class*="nghost"] .buttons,
 .user-card__inner,
 users-and-groups,
 button._ngcontent-drp-261,
@@ -212,15 +353,27 @@ wrike-zero-state,
 .stream-view .wrike-panel-header,
 .x-menu-list
 {
+    border-color: var(--border-color);
     color: var(--text-color) !important;
     background: var(--dark-color) !important;
     background-color: var(--dark-color) !important;
 }
+.task-card__info-container {
+    border-color: transparent !Important;
+}
+.subtasks__list::after,
+task-creation-form::before,
+task-creation-form::after
+{
+    background: rgba(240,240,240, .13) !important;
+}
+task-creation-form,
 ._nghost-dyq-259,
 wrike-folder-picker-item.selected .picker-item,
 wrike-browse-view-task-creation,
 wrike-task-creation-form
 {
+    border-color: var(--border-color) !important;
    background-color: rgba(240,240,240, .13) !important;
 }
 .menu-item.active::before
@@ -236,6 +389,8 @@ wrike-task-creation-form
    background: rgba(240,170,240, .7) !important;
    background-color: rgba(240,170,240, .7) !important;
 }
+/* get rid of white gradient */
+._nghost-uxv-17 .grid-complex-cell__self_value_container::before,
 .form-wrapper,
 .buttons._ngcontent-drp-253,
 users-groups-search-field,
@@ -249,6 +404,7 @@ ws-timesheet
     background-color: transparent !important;
 }
 
+refresh-date,
 .button-text,
 .ql-editor ol li,
 .ql-editor ul li,
@@ -401,6 +557,7 @@ guide-view,
 wrike-folder-picker,
 header-search-dropdown,
 .wspace-task-widgets-comment .main-ct,
+[class*="base-page__main"],
 .pm-base__main-content 
 {
     /*
@@ -534,8 +691,10 @@ timelog-toolbar,
     border-bottom: 1px solid var(--border-color)!important;
 }
 
-.grid_cell
-{
+
+._nghost-mxl-50 .grid-cell,
+.grid-cell { 
+    border-color: var(--border-color) !important;
     border-width: 0 1px 1px 0 !important
 }
 iframe,
@@ -841,6 +1000,98 @@ wrike-task-title
 {
     padding-bottom: 3px;
 }
+button:disabled, a._nghost-tbx-6.disabled
+{
+    opacity: .4;
+}
+::before,
+::after
+{
+    border-color: var(--border-color) !important;
+}
+[class*="status-widget-trigger__anchor"]
+{
+    color: var(--text-color) !important;
+}
+.task-author__task-id
+{
+    color: #19b3b0;
+}
+.grid-cell__checkbox
+{
+    background: transparent !important;   
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4gIDxwYXRoIGZpbGw9IiNDQ0MiIGZpbGwtb3BhY2l0eT0iLjQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNC4wMUEyLjAxIDIuMDEgMCAwIDEgMi4wMSAyaDcuOThBMi4wMSAyLjAxIDAgMCAxIDEyIDQuMDF2Ny45OEEyLjAxIDIuMDEgMCAwIDEgOS45OSAxNEgyLjAxQTIuMDEgMi4wMSAwIDAgMSAwIDExLjk5VjQuMDF6bTEtLjAxNXY4LjAxYzAgLjU0LjQ0Ni45OTUuOTk1Ljk5NWg4LjAxYy41NCAwIC45OTUtLjQ0Ni45OTUtLjk5NXYtOC4wMWMwLS41NC0uNDQ2LS45OTUtLjk5NS0uOTk1aC04LjAxQzEuNDU1IDMgMSAzLjQ0NiAxIDMuOTk1eiIvPjwvc3ZnPg==") !important;
+    background-repeat: no-repeat !important;
+    background-position: 13px 7px !important;
+}
+._nghost-fet-67 .grid-cell--row-selector .grid-cell__checkbox--checked
+{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4gIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgIDxwYXRoIGZpbGw9IiNDQ0MiIGZpbGwtb3BhY2l0eT0iLjQiIGQ9Ik0wIDQuMDFDMCAyLjkuOSAyIDEuOTkyIDJIMTFsLTEgMUgxLjk5OEMxLjQ0OCAzIDEgMy40NTYgMSAzLjk5NXY4LjAxYzAgLjU1LjQ1Ni45OTUuOTk1Ljk5NWg4LjAxYy41NSAwIC45OTUtLjQ1OC45OTUtLjk5NFY5LjVsMS0xVjEyYTIuMDA3IDIuMDA3IDAgMCAxLTIuMDEgMkgyLjAxQTIuMDEgMi4wMSAwIDAgMSAwIDExLjk5VjQuMDF6Ii8+ICAgIDxwYXRoIGZpbGw9IiM5OUYiIGQ9Ik0zLjUgNmwzIDMgNy03TDE1IDMuNSA2LjUgMTIgMiA3LjV6Ii8+ICA8L2c+PC9zdmc+") !important;
+}
+._nghost-fet-36
+{
+    background: var(--darker2-color);
+}
+._nghost-mjy-26 .workweek-day,
+.workweek-day
+{
+    color: var(--text-color) !important;
+}
+._nghost-mjy-26 .workweek-day-disabled,
+.workweek-day-disabled
+{
+    color: var(--text-dim) !important;
+}
+
+/* the pdf - doc viewer gets jacked 
+
+the pdfview canvas... give text a shadow
+*/
+.pdf-viewer__canvas
+{
+    display:none !important;
+}
+.pdf-viewer__page
+{
+    background: var(--dark-color) !important;
+}
+ws-notification-detail,
+wrike-zero-state
+{
+    background: transparent !important;
+}
+wrike-board-toolbar,
+.board__scrollable-container
+{
+    border-color: var(--border-color) !important;
+    background: transparent !important;    
+}
+
+.folder-item
+{
+    border-color: var(--border-color) !important;
+    background: var(--interest) !important;
+    color: var(--text-color) !important;
+}
+[style*="background: none rgb(255, 255, 255)"]
+{
+    background: transparent !important;
+}
+[src="https://s3.walkmeusercontent.com/c143062958644f319356bd7201286303/Gif 1 (2x) (2).gif"]
+{
+    filter: invert(100%) hue-rotate(180deg);
+}
+.walkme-custom-balloon-mid-div
+{
+    background: var(--darker-color) !important;
+}
+
+.theme-default
+{
+    background-color: var(--theme-background-color) !important;
+    filter: hue-rotate(-10deg);
+}
+
 }
 
 @-moz-document url-prefix("https://www.wrike.com/") {
@@ -1081,7 +1332,21 @@ wrike-task-multi-selector {
     color: var(--text-color) !important;
     border: 0px solid transparent !important;
 }
-
+.walkme-survey-answer-textarea,
+textarea
+{
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+    background: var(--input-color) !important;
+}
+[style*="background-color:#f9fafb"]
+{
+    background: transparent !important;
+}
+[style*="background-color:#ffffff"]
+{
+    background: var(--darker-color) !important;
+}
 }
 
 @-moz-document url-prefix("https://www.wrike.com/frontend/requestforms") {

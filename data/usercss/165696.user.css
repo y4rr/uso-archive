@@ -3,21 +3,21 @@
 @namespace      USO Archive
 @author         HoBaR
 @description    `This style makes google.com a way more simpler.You must try this one.`
-@version        2020926.21.40
+@version        20201210.21.59
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix(https://www.google.) {
   
 /*Gmail Images Notifications & all apps opacity*/
-.gb_Ag.gb_Ua, .gb_Ra {opacity: 0.3; transition: .3s ease-out !important;}
-.gb_Ag.gb_Ua:hover, .gb_Ra:hover {opacity: 1; transition: .6s ease-out !important;}
+.gb_Ag.gb_Ua, .gb_Ra, .gb_Hg.gb_Ta {opacity: 0.3; transition: .3s ease-out !important;}
+.gb_Hg.gb_Ta:hover, .gb_Ag.gb_Ua:hover, .gb_Ra:hover {opacity: 1; transition: .6s ease-out !important;}
 
 /*Hide Crap*/
 .b0KoTc, #SIvCob, .Q8LRLc, .FPdoLc, #fsl, #fsr > a {display: none !important;}
 
 /*Search Bar simplify*/
-body, #appbar, .big .mw, #cnt, .srp #gs_st0, #searchform.big .RNNXgb, .RNNXgb, #hdtbSum, .sfbg, .Lj9fsd {background: #fafafa !important;}
+body, #appbar, .big .mw, #cnt, .srp #gs_st0, #searchform.big .RNNXgb, .RNNXgb, #hdtbSum, .sfbg, .Lj9fsd, .yg51vc {background: #fafafa !important;}
 
 a.aciXEb {background: transparent !important;}
 
@@ -34,7 +34,7 @@ a.aciXEb {background: transparent !important;}
 .jhp input[type="submit"], .sbdd_a input, .gbqfba {background-image: none !important;}
 
 /*Footer*/
-#fbar {opacity: 0.3; transition: .3s ease-out !important; background: #fafafa !important; border-top: 0 !important; padding-bottom: 10px !important; padding-right: 10px !important;}
+#fbar {opacity: 0.3; transition: .3s ease-out !important; background: #fafafa !important; border-top: 0 !important; padding-bottom: 10px !important;}
 #fbar:hover {opacity: 1; transition: .6s ease-out !important;}
 .b2hzT {border-bottom: 0 !important;}
 }

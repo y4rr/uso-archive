@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           bedbathandbeyond.com by BamaBraves
+@name           Bed Bath & Beyond Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20191114.5.33
+@version        2020126.12.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,6 +49,21 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("bedbathandbeyond.com") {
@@ -63,7 +78,7 @@
 	text-decoration: none!important;
 }
 
-selector
+.TabButton-inline_2JAVgA
  {
 	text-transform: capitalize!important;
 }
@@ -85,24 +100,31 @@ selector
 	outline: none!important;
 }
 
+
+.StyledImageList-inline_553n3M.StyledImageList-inline_4wioqS .StyledImageList-inline_3VDdTV,
+.StyledImageList-inline_553n3M.StyledImageList-inline_5CCshc:hover .StyledImageList-inline_3VDdTV {
+	border-color: #000;
+}
+
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-head-to-head .bv-content-item p {
     overflow: visible!important;
 }
 
 /*___ Fonts ________________________________________________________________________*/
 
-selector
+.CertonaProductTile_70Qhok
  {
-	font-size: 21px!important;
+	font-size: 23px!important;
 }
 
 .bv-cv2-cleanslate h3,
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-author,
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author
  {
-	font-size: 19px!important;
+	font-size: 21px!important;
 }
 
+.PDPPrice-inline_2AWINM,
 .PrimaryLink_1RLwvm,
 .baseAppContainer .cmsContent .oc-accordion.oc-accordion-style1 dd a,
 .baseAppContainer .cmsContent .oc-accordion.oc-accordion-style1 dd li,
@@ -114,7 +136,7 @@ selector
 li,
 p
  {
-	font-size: 17px!important;
+	font-size: 19px!important;
 }
 
 selector
@@ -129,6 +151,12 @@ li,
 	line-height: 23px!important;
 }
 
+.CertonaProductTile_70Qhok,
+.PDPPrice-inline_2AWINM,
+.cParaH2 {
+    font-weight: bold;
+}
+
 /*___ Remove Items _________________________________________________________________*/
 
 .ShowMore_1YNd1B
@@ -140,9 +168,9 @@ li,
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-selector
- {
-    top: 10px!important;
+[class*="AcrossTile-inline_"] {
+    margin-left: 13%!important;
+    margin-right: 13%!important;
 }
 
 /*___ Margins ______________________________________________________________________*/
@@ -278,7 +306,6 @@ a[href]:visited {
 a.Button_1Y0bDo:hover,
 a[aria-current="true"],
 a[aria-label*="Current Page"],
-a[href]:hover span,
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
@@ -289,6 +316,8 @@ input[type="radio"]:checked+label {
 
 /*__________________________________________________________________________________*/
 
+[style="color:#000000"],
+.bxc.bx-brand-18308 .bx-row-text-subheadline> *:first-child,
 #BVRRContainer div,
 #BVRRContainer p,
 .BPlusMessage_4dtgXf,
@@ -330,6 +359,9 @@ p {
 
 /*___ Khaki ________________________________________________________________________*/
 
+[style="color:#1A4E8A"],
+.cpb24.m0 span,
+.bxc.bx-brand-18308 .bx-row-text-headline> *:first-child,
 .Breadcrumbs-inline_3KNEPP .Breadcrumbs-inline_1p5dgk,
 .FooterColumns_1JAEVO button,
 .SubCategoryList-inline_2iBxRt p,
@@ -361,6 +393,7 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+.cParaH1.cPx24.cPt16b8 span,
 .FormInput_49Vbxy label,
 .FormInput_49Vbxy span.FormInput_4XF8j2,
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-content-btn,
@@ -379,6 +412,8 @@ label {
 
 /*___ Blue _________________________________________________________________________*/
 
+[style="color: #1A4E8A"],
+.cPx24.cParaH2 span,
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-content-data-summary .bv-content-meta .bv-content-datetime-stamp,
 time {
 	color: #07beff!important;
@@ -388,6 +423,7 @@ time {
 /*___ Green ________________________________________________________________________*/
 
 .BPlusMessage_2Yx9b2,
+#item-price span,
 [class*="Price_"] {
 	color: #07ff24!important;
 	text-shadow: 1px 1px #000!important;
@@ -399,7 +435,7 @@ time {
 .Price_7x1BMJ,
 [data-locator="pdp-waspricingcrossedlabel"]
 {
-	color: #ff0707!important;
+	color: #ff1b1b!important;
 	text-shadow: 1px 1px #000!important;
 }
 
@@ -482,6 +518,10 @@ pre ::selection {
 	background-image: none!important;
 }
 
+.center.heroPanel.absolute.bottomCenterMob.midRight {
+    background: rgba(28, 28, 28, .85)!important;
+	border-radius: 55px;
+}
 /*___ Background Gray ______________________________________________________________*/
 
 .Footer_2nMEAP,
@@ -491,6 +531,7 @@ pre ::selection {
 	background-color: #060505!important;
 }
 
+.Header-inline_5pkUNQ, .hNav,
 .PDPNavigations_5uQpkI,
 .Filters-inline_67ENjT,
 .Header-inline_5pkUNQ
@@ -517,6 +558,9 @@ pre ::selection {
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+.relative.cCol3,
+.cFullScreen,
+.HPCallOut,
 .AppliedFiltersComponent_73sr7e,
 .CustomSelect-inline_44X7cp>button,
 .CustomSelect-inline_6VmUjO>button,
@@ -552,30 +596,42 @@ selector:hover {
 /*__ Blue __________________________________________________________________________*/
 
 #s22_see_all_gallery,
+.Button-inline_3ibmO2,
 .Button_1uVtj9,
 .Button_lzViVt,
-.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review
+.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review,
+.bxc.bx-brand-18308 .bx-row-submit-default> *:first-child,
+a.Button-inline_3ibmO2,
+span.Button-inline_3ibmO2
  {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 55px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
 #s22_see_all_gallery:hover,
+.Button-inline_3ibmO2:hover,
 .Button_1uVtj9:hover,
 .Button_lzViVt:hover,
-.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review:hover
+.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review:hover,
+.bxc.bx-brand-18308 .bx-row-submit-default> *:first-child:hover,
+a.Button-inline_3ibmO2:hover,
+span.Button-inline_3ibmO2:hover
  {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
 #s22_see_all_gallery:active,
+.Button-inline_3ibmO2:active,
 .Button_1uVtj9:active,
 .Button_lzViVt:active,
-.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review:active
+.bv-cv2-cleanslate .bv-core-container-1090 button.bv-write-review:active,
+.bxc.bx-brand-18308 .bx-row-submit-default> *:first-child:active,
+a.Button-inline_3ibmO2:active,
+span.Button-inline_3ibmO2:active
  {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -648,6 +704,7 @@ selector:active
 
 /*___ Plain Black __________________________________________________________________*/
 
+.bxc.bx-base .bx-creative,
 .MenuPanel_3ob0BT,
 .ProductDetailsLayout-inline_53SAaC,
 .ProductDetailsLayout-inline_6DZQ2P,
@@ -660,6 +717,7 @@ selector:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.bxc.bx-base .bx-creative:hover,
 .MenuPanel_3ob0BT:hover,
 .ProductDetailsLayout-inline_53SAaC:hover,
 .ProductDetailsLayout-inline_6DZQ2P:hover,
@@ -671,6 +729,9 @@ selector:active
 
 /*___ Plain ________________________________________________________________________*/
 
+
+.relative.cCol2,
+.relative.cCol4,
 .Card-inline_7jD6Jt,
 .Features_41DNOA,
 .FilterList_3dQFIW,
@@ -680,12 +741,14 @@ selector:active
 .bv-cv2-cleanslate .bv-core-container-1090 .bv-section-summary-block,
 .rclModal
  {
-	background-color: #111!important;
+	background-color: #1a1a1a!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.relative.cCol2:hover,
+.relative.cCol4:hover,
 .Card-inline_7jD6Jt:hover,
 .Features_41DNOA:hover,
 .FilterList_3dQFIW:hover,
@@ -789,46 +852,53 @@ code
 @-moz-document domain("bedbathandbeyond.com") {
 /*__________________________________________________________________________________*/
 
+.BrandsWeLove-inline_4hnAmS,
+.Card-inline_7jD6Jt,
+.Features_US1FNi,
+.SingleBrandSpotlight_fgkbs3 .SingleBrandSpotlight_4OcWvN .SingleBrandSpotlight_7bDAvB,
+.Specs_2u7UG5,
 .SubCategoryList-inline_2iBxRt,
 .VisualFacets-inline_65fJoJ,
-.BrandsWeLove-inline_4hnAmS,
-.grid-x>.large-4,
-.grid-x>.large-3,
-.SingleBrandSpotlight_fgkbs3 .SingleBrandSpotlight_4OcWvN .SingleBrandSpotlight_7bDAvB,
 .baseAppContainer .cmsContent .oc-accordion.oc-accordion-style1 dt,
+.bv-cv2-cleanslate .bv-core-container-1090 .bv-content-item.bv-content-review,
+.bv-cv2-cleanslate .bv-core-container-1090 .bv-flex-container-column .bv-flex-container,
 .grid-margin-x>.medium-4,
+.grid-x>.large-3,
+.grid-x>.large-4,
 .ml0,
 .ml2,
 .mx2,
-.slick-initialized .slick-slide,
-.bv-cv2-cleanslate .bv-core-container-1090 .bv-content-item.bv-content-review,
-.Card-inline_7jD6Jt,
-.Features_US1FNi,
-.Specs_2u7UG5,
-.bv-cv2-cleanslate .bv-core-container-1090 .bv-flex-container-column .bv-flex-container
+.relative.cCol2,
+.relative.cCol3,
+.relative.cCol4,
+.slick-initialized .slick-slide
  {
 	filter: brightness(75%)!important;
 }
 
 /*__________________________________________________________________________________*/
 
+
+.BrandsWeLove-inline_4hnAmS:hover,
+.Card-inline_7jD6Jt:hover,
+.Features_US1FNi:hover,
+.SingleBrandSpotlight_fgkbs3 .SingleBrandSpotlight_4OcWvN .SingleBrandSpotlight_7bDAvB:hover,
+.Specs_2u7UG5:hover,
 .SubCategoryList-inline_2iBxRt:hover,
 .VisualFacets-inline_65fJoJ:hover,
-.BrandsWeLove-inline_4hnAmS:hover,
-.grid-x>.large-4:hover,
-.grid-x>.large-3:hover,
-.SingleBrandSpotlight_fgkbs3 .SingleBrandSpotlight_4OcWvN .SingleBrandSpotlight_7bDAvB:hover,
 .baseAppContainer .cmsContent .oc-accordion.oc-accordion-style1 dt:hover,
+.bv-cv2-cleanslate .bv-core-container-1090 .bv-content-item.bv-content-review:hover,
+.bv-cv2-cleanslate .bv-core-container-1090 .bv-flex-container-column .bv-flex-container:hover,
 .grid-margin-x>.medium-4:hover,
+.grid-x>.large-3:hover,
+.grid-x>.large-4:hover,
 .ml0:hover,
 .ml2:hover,
 .mx2:hover,
-.slick-initialized .slick-slide:hover,
-.bv-cv2-cleanslate .bv-core-container-1090 .bv-content-item.bv-content-review:hover,
-.Card-inline_7jD6Jt:hover,
-.Features_US1FNi:hover,
-.Specs_2u7UG5:hover,
-.bv-cv2-cleanslate .bv-core-container-1090 .bv-flex-container-column .bv-flex-container:hover
+.relative.cCol2:hover,
+.relative.cCol3:hover,
+.relative.cCol4:hover,
+.slick-initialized .slick-slide:hover
  {
 	filter: brightness(100%)!important;
 }
@@ -849,7 +919,7 @@ img
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
-/*__________________________________________________________________________________*/
+/*__________________________________________________________________________________
 
 .Overview_18CMhs li,
 .ProductMediaCarouselStyle_2Ys9tp li,
@@ -872,7 +942,7 @@ tr:hover
 	filter: brightness(100%)!important;
 	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
 }
-
+*/
 /*__________________________________________________________________________________*/
 
 selector
@@ -941,11 +1011,19 @@ path {
 
 /* Bed Bath & Beyond Logo _______________________________________________________________*/
 
-.site-logo svg {
+.site-logo svg,
+[src="//assets.bounceexchange.com/assets/uploads/clients/3315/creatives/e4bbf964a0d2987543a84983b2d754e1.png"] {
 	background: url(https://i.ibb.co/QvWxCsk/bed-bath-and-beyond-logo.png) no-repeat!important;
 }
 
-.site-logo svg {
+[src="//assets.bounceexchange.com/assets/uploads/clients/3315/creatives/e4bbf964a0d2987543a84983b2d754e1.png"] {
+    background-size: 221px!important;
+    height: 91px!important;
+    padding-left: 221px!important;
+    width: 168px!important;
+}
+
+.site-logo svg  {
     background-size: 170px!important;
     height: 91px!important;
     width: 168px!important;
@@ -997,6 +1075,20 @@ path {
 
 .bv-content-data-recommend-no .bv-content-data-label {
     font-size: 15px!important;
+}
+
+
+/* X _______________________________________________________________*/
+
+.bxc.bx-base .bx-close svg {
+	background: url(https://i.ibb.co/kxQCnBQ/close-48x48.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.bxc.bx-base .bx-close svg {
+    background-size: 24px!important;
+    height: 22px!important;
+    padding-left: 22px!important;
 }
 
 

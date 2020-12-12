@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         EotT
 @description    `Opvolger van https://userstyles.org/styles/162546/tweakers-dark-by-eott.Deze versie is helemaal herschreven, en zou beter moeten zijn dan de eerste versie.Ik heb deze style gemaakt, aangezien de huidige reeds bestaande stylen niet helemaal aan mijn wensen voldeden. Indien er problemen zouden zijn (bv elementen die niet goed gestyled zijn), laat het me hier weten (of per pm op Tweakers), en ik zal het zo snel mogelijk proberen op te lossen. (Pm's via Tweakers zullen sneller beantwoord worden, aangezien ik dagelijks op Tweakers kom.)In a nutshell:* Volledige donkere site, inclusief forum en mobiel (responsive).* Tweakblogs niet inbegrepen* Ondersteuning. Bij bugs of nieuwigheden op tweakers -> Meestal binnen de dag aangepast.`
-@version        2020121.19.35
+@version        2020127.8.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -148,9 +148,14 @@ body.fullFocusView #fullFocusButtons .button,
 .careerPortal section.elect,
 #categoryBrowser li a,
 body.fullFocusView #fullFocusBody,
-body.fullFocusView #fullFocusHeader
+body.fullFocusView #fullFocusHeader,
+.premium-notice
 {
     background-color: rgb(27,27,27);
+}
+
+.infoBox{
+    background-color:rgb(27,27,27) !important;
 }
 
 #tracker .fakeTop .toggleVisibility .corner::before, #tracker .fakeTop .toggleVisibility .corner::after
@@ -420,7 +425,8 @@ body.fullFocusView .pageIndexWrapper .pageIndex,
 #menu>ul>li.more.dropdown>a.trigger,
 .vraagAanbodContent .vraagAanbodForm .relationeditor .relationWidget .label label,
 #ub-premium-fallback:only-child h2,
-.tabbedContentWrapper.display-tags > ul.tabbedContent li.active{
+.tabbedContentWrapper.display-tags > ul.tabbedContent li.active,
+.premium-notice .notice-header h2{
     color: rgb(200,200,200);
 }
 

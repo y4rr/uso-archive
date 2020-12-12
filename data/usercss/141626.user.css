@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         akrozzz
 @description    `Dark and simple theme for 4chan. I made it from scratch. If you notice any error or want to see a feature please contact me.Please leave some feedback so I can improve!`
-@version        2019316.12.27
+@version        2020128.11.5
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -180,7 +180,11 @@
   
  /* captcha */
   #g-recaptcha,  #qrCaptchaContainer { filter: invert(100%) hue-rotate(180deg) !important; }
-  
+
+/* code */
+.pln { color: #eaeaea; }
+.prettyprint { background-color: #191919; border: 1px solid black !important; }
+.kwd { color: #4c4ccb; }
       /*-----------------------*/
      /* END OF CSS FOR BOARDS */
     /*-----------------------*/

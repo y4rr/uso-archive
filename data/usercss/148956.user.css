@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        20201126.5.2
+@version        20201210.11.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -469,8 +469,11 @@
   /**/#hdtb-msb .hdtb-mitem,#hdtb-msb>div:nth-child(2)>*{font-size:20px!important;}
   /**/.o2ji6GoAIDp__menu{background:#333!important;}
 
-  /*top search option bar - tools*/  /*top search option bar - tools*/  /*top search option bar - tools*/
-  /**/#hdtb{}
+  /*top search option bar - tools*/
+  /*top search option bar - tools*/
+  /*top search option bar - tools*/
+  /**/#hdtb{background:#000!important;}
+  /**/#hdtb>div{background:transparent!important;}
   /**/#hdtb>#hdtbSum{}
   /**/#hdtb>#hdtbSum>#hdtb-s{}
   /**/#hdtb>#hdtbSum>#hdtb-s>#hdtb-msb{}
@@ -512,37 +515,25 @@
   #lb g-menu>*.hdtbSel{color:#ff0!important;}
   #lb g-menu>*#cdr_opt{}
   #lb g-menu>*.nvELY *{color:#a11!important;}
-
-  /*left result width parent*/body>#main>#cnt>.mw,div.mw>#rcnt{width:100%!important;max-width:unset!important;}
-  /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col{width:100%!important;}
-  /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col>#center_col{width:100%!important;max-width:1000px!important;}
-  /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col>#center_cola{margin-left:0px!important;margin-right:0px!important;padding:0px 25%!important;}
-  /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col>#center_col{margin:0 auto!important;padding:0!important;}
-  /*left result width*/body#gsr>#main>#cnt>.mw>#rcnt>.col>#center_col>#res{padding:0px!important;}
-  /*left result page*/#cnt #center_col{width:initial!important;font-size:50px!important;}
-  /*left result page*/#cnt #foot{width:initial!important;font:50px/100% arial!important;padding:10px 0 100px!important;}
-  /*left result page*/#cnt #foot *{font-size:inherit!important;line-height:inherit!important;background:transparent!important;}
-  /*left result page*/#cnt #foot td{}
-  /*left result page*/#cnt #foot td:hover{background:#000!important;}
-  /*left result page*/#cnt #foot td.YyVfkd{color:#a11!important;}
-  /*left result page*/#foot #navcnt a:hover{background:#000!important;}
-
-  /*right wiki*/#rcnt>#rhs{display:none!important;}
-  /*right wiki*/a#rhscol.col{width:50%!important;}
-  /*right wiki*/#rhscol.col>#rhs{margin:0px!important;}
-  /*right wiki*/#rhscol.col>#rhs#rhs .rhsvw{width:800px!important;margin:auto!important;}
-  /*right wiki font*/#rhscol.col ._Jw{font-size:26px!important;line-height:120%!important;}
-  /*right wiki font*/#rhscol.col .kno-ecr-pt{color:#a11!important;}
-  /* width fix */.s{max-width:none!important;}
-
-
-  /*result ad top*/   #center_col>#taw,
-  /*result ad bottom*/#center_col>#res~#bottomads{display:none!important;}
-  /*result useless top link - People also ask*/._NId>.g.kno-kp.mnr-c.g-blk{display:none!important;}
   
+  
+
+  
+  /*search result*/
+  /*search result*/
+  /*search result*/
   #main>#cnt{overflow:hidden!important;}
   #main>#cnt>#sfcnt{background:#000!important;}
-  #main>#cnt>.mw{background:#030!important;}
+  #main>#cnt>div                  {width:100%!important;  max-width:initial!important;background:#030!important;margin:0 auto!important;}
+  #main>#cnt #rcnt                {width:1000px!important;max-width:initial!important;margin:0 auto!important;}
+  #main>#cnt #rcnt>div            {width:100%!important;  max-width:initial!important;}
+  #main>#cnt #rcnt>div>#center_col{width:100%!important;  max-width:initial!important;margin:0!important;padding:0!important;}
+  #main>#cnt #rcnt>div>#center_col>#res{padding:0px!important;}
+  #main>#cnt #rcnt>div>#center_col>#taw{display:none!important;}
+  #main>#cnt #rcnt>div>#center_col>#bottomads{display:none!important;}
+  #main>#cnt #rcnt>#rhs{display:none!important;}
+  /*People also ask*/._NId>.g.kno-kp.mnr-c.g-blk{display:none!important;}
+  
   /*result*/#res{margin:0px!important;}
   /*   top*/#res>#topstuff{}
   /*   top*/#res>#topstuff>.card-section{}
@@ -565,6 +556,7 @@
   /*site*/  #res .g .rc>div:nth-child(1)>a>div>cite *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;}
   /*title*/ #res .g .rc>div:nth-child(1)>a>h3        {font:30px/100% arial!important;color:#c60!important;padding:0px!important;margin:0px!important;white-space:nowrap!important;display:block!important;overflow:visible!important;}
   /*title*/ #res .g .rc>div:nth-child(1)>a:visited>h3{color:#860!important;}
+  /*title*/ #res .g .rc>div:nth-child(1)>a>h3 *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;display:block!important;overflow:visible!important;}
   /*btn*/   #res .g .rc>div:nth-child(1)>div{display:none!important;}
   /*desc*/  #res .g .rc>div:nth-child(2){max-width:initial!important;padding:3px 0 0!important;}
   /*date*/  #res .g .rc>div:nth-child(2)>div{}
@@ -586,6 +578,13 @@
   /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf     {}
   /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf>span{font:22px/100% arial!important;color:#727!important;}
   /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf>s   {font:22px/100% arial!important;color:#ff0!important;}
+  
+  /*result*/#cnt #foot{width:initial!important;font:50px/100% arial!important;padding:10px 0 100px!important;}
+  /*result*/#cnt #foot *{font-size:inherit!important;line-height:inherit!important;background:transparent!important;}
+  /*result*/#cnt #foot td{}
+  /*result*/#cnt #foot td:hover{background:#000!important;}
+  /*result*/#cnt #foot td.YyVfkd{color:#a11!important;}
+  /*result*/#foot #navcnt a:hover{background:#000!important;}
   
   
   /*result mini video list*/.MGqjK{background:#333!important;}

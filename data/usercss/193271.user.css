@@ -2,8 +2,8 @@
 @name           Youtube Siklab 🔥
 @namespace      USO Archive
 @author         YAD
-@description    `Featured Wallpaper: Shakugan No Shana.Use the dark theme in your Appearance settings.`
-@version        2020122.9.9
+@description    `Featured Wallpaper: Shakugan No Shana.Use the dark theme in your Appearance settings.More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        2020129.4.18
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchange1 "Background Image" {
@@ -17,6 +17,7 @@
 2 "OFF" <<<EOT OFF EOT;
 
 }
+@advanced text ampoge "Videos Per Row" "4"
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -188,6 +189,11 @@ ytd-toggle-button-renderer.style-default-active[is-icon-button] {
 	text-shadow: 0 0 4px #000;  
 }
 
+/*hoy kopya pa haha!*/
+ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer
+{
+  --ytd-rich-grid-items-per-row: /*[[ampoge]]*/!important;
+}
 
 paper-toast {
     background: #0b0b0b75;

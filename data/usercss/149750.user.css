@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ブログを編集する際に、ウインドウ幅に係らず エディタの幅が980pxから変化しません。 デスクトップを広く使いたい場合や、エディタを拡大して使う場合は、このコンパクトサイズが有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2020124.6.7
+@version        2020127.13.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete") {
-/* Ameblo Writer Compact ver.41 基本CSS ****************/
+/* Ameblo Writer Compact ver.42 基本CSS ****************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -636,10 +636,11 @@ html {
 /* 月選択ボックス */
 .p-images__header__photoDate__month::after {
     top: 14px;
-    right: 10px;
-    width: 10px;
+    right: 6px;
+    width: 15px;
     background-position: -92px 0;
-    color: #333; }
+    color: #333;
+    background: var(--bgc2); }
 
 #js-photos-month-list {
     height: 27px;
@@ -1419,6 +1420,13 @@ form > .error:after {
     width: 62px;
     margin-left: -5px; }
 
+#js-photos-month-list {
+    min-width: unset;
+    padding: 0 0 0 4px; }
+
+.p-images__header__photoDate__month::after {
+    right: 1px; }
+
 .p-images-imageList__body {
     padding: 5px 0 10px 6px; }
 
@@ -1869,7 +1877,7 @@ form > .error:after {
     background: #0f5171; }
 
 .p-images__header__photoDate__month:after {
-    filter: brightness(10); }
+    color: #fff; }
 
 .c-richComboBox__list ul li > a.is-selected {
     background-color: #1976d2; }

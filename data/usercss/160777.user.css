@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         Kajika
 @description    `Dark theme for LWN, made to blend nicely with breeze dark (KDE theme).Also include small changes in layout for better readability.`
-@version        2018726.18.45
-@license        NO-REDISTRIBUTION
+@version        2020125.12.19
+@license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://lwn.net") {
@@ -99,7 +99,8 @@ font.Subscription
     border-color: var(--lighter-bg-color);
 }
 
-table.OddEven tr:nth-child(2n+1)
+table.OddEven tr:nth-child(2n+1),
+table.OddEven th
 {
     background-color: var(--highlight-bg-color);
     color: var(--lighter-fg-color);
@@ -124,7 +125,6 @@ TD.CalMDate
     background-color: var(--lighter-bg-color);
     color: var(--lighter-fg-color);
 }
-
 }
 
 @-moz-document url-prefix("https://lwn.net/Distributions/"), url-prefix("https://lwn.net/Reviews/"), url-prefix("https://lwn.net/Gallery/") {
